@@ -1,0 +1,55 @@
+---
+import Icon from "@icons/index.astro";
+import SuccessRatesChart from "../SuccessRatesChart.astro";
+import CTA from "../global/CTA.astro";
+import Section from "../global/Section.astro";
+import Title from "../global/Title.astro";
+import Row from "./Row.astro";
+---
+
+<Row>
+  <Section class="success-rates">
+    <Title size="big">Başarı Oranları</Title>
+    <div class="columns">
+      <div class="column chart-shadow" dir="ltr">
+        <SuccessRatesChart />
+      </div>
+      <div class="column">
+        <p class="text">Text</p>
+
+        <p>
+          <CTA
+            href="/success-rates"
+            variant="secondary"
+            size="small"
+            title="Learn more about our success rates"
+          >
+            Devamı
+            <Icon name="arrowRight" />
+          </CTA>
+        </p>
+      </div>
+    </div>
+  </Section>
+</Row>
+<style lang="scss">
+  .columns {
+    display: grid;
+    align-items: center;
+    gap: var(--spacing-large);
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
+
+  @media screen and (min-width: 1024px) {
+    .chart-shadow {
+      border-radius: var(--spacing-medium);
+      box-shadow:
+        0px 18px 36px -18px rgba(0, 0, 0, 0.1),
+        0px 30px 45px -30px rgba(50, 50, 93, 0.25);
+    }
+  }
+
+  .column p:first-child {
+    margin: 0;
+  }
+</style>

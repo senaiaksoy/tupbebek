@@ -1,0 +1,47 @@
+---
+import classnames from "classnames";
+
+const { variant = "primary", href, size = "medium", title } = Astro.props;
+const classNames = classnames("cta", variant, size);
+---
+
+<a href={href} class={classNames} title={title}><slot /></a>
+
+<style>
+  .cta {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-medium);
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    color: white;
+    text-wrap: nowrap;
+    padding: var(--spacing-medium) var(--spacing-large);
+    text-decoration: none;
+    border-radius: 0.25rem;
+    transition: box-shadow 0.3s cubic-bezier(0.25, 0, 0.2, 1);
+    box-shadow:
+      0 3px 5px -2px #efefef,
+      0 1px #dee2e6,
+      0 0 0 var(--highlight-size, 0) rgb(173 181 189 / 25%);
+  }
+
+  .cta:hover,
+  .cta:focus {
+    --highlight-size: 0.5rem;
+  }
+
+  .primary {
+    background-color: var(--color-secondary-light);
+  }
+
+  .secondary {
+    background-color: white;
+    border: 1px solid var(--color-secondary-light);
+    color: var(--color-secondary-light);
+  }
+
+  .small {
+    padding: var(--spacing-small) var(--spacing-medium);
+  }
+</style>

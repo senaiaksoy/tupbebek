@@ -1,0 +1,46 @@
+---
+import { contact } from "../data/index.json";
+import Icon from "../icons/index.astro";
+
+const whatsAppNumber = contact.phone.replace(/\s/g, "");
+const whatsappMessage = contact.whatsappMessage;
+---
+
+<div class="quick-contact">
+  <a
+    href={`https://api.whatsapp.com/send?phone=${whatsAppNumber}&text=${whatsappMessage}`}
+    title="Contact Us via WhatsApp"
+  >
+    <Icon name="whatsapp" size="large" /></a
+  >
+</div>
+
+<style lang="scss">
+  .quick-contact {
+    position: fixed;
+    background-color: #4dc247;
+    border-radius: 50%;
+    bottom: var(--spacing-medium);
+    right: var(--spacing-medium);
+    width: max-content;
+    transition: transform 0.2s;
+    aspect-ratio: 1;
+    transition: box-shadow 0.3s cubic-bezier(0.25, 0, 0.2, 1);
+    box-shadow:
+      0 3px 5px -2px #efefef,
+      0 1px #dee2e6,
+      0 0 0 var(--highlight-size, 0) rgb(77 193 71 / 25%);
+
+    &:hover,
+    &:focus-within {
+      --highlight-size: 0.5rem;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      padding: var(--spacing-medium);
+      color: white;
+    }
+  }
+</style>

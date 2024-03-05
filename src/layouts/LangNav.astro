@@ -1,0 +1,72 @@
+---
+import Icon from "@icons/index.astro";
+import classnames from "classnames";
+import { langs } from "../data/index.json";
+const { class: className = "mobile" } = Astro.props;
+
+const classNames = classnames("languages", className);
+---
+
+<ul class={classNames}>
+  <li>
+    <Icon name="globe" />
+  </li>
+  {
+    langs.map((l) => (
+      <li>
+        <a href={`https://draksoyivf.com/${l.url}/`} title={l.name}>
+          {l.lang}
+        </a>
+      </li>
+    ))
+  }
+</ul>
+
+<style lang="scss">
+  .languages {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    list-style: none;
+
+    li {
+      display: inline-flex;
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--color-gray-60);
+      font-weight: 500;
+      background-color: transparent;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-color: transparent;
+      text-decoration-thickness: 2px;
+      transition: all 0.3s ease;
+
+      &.active,
+      &:hover,
+      &:focus {
+        text-decoration-color: var(--color-gray-70);
+      }
+
+      &.active {
+        color: #111;
+      }
+    }
+
+    :global(svg) {
+      color: var(--color-secondary-light);
+    }
+
+    &.desktop {
+      @media screen and (min-width: 1280px) {
+        grid-column: 3/5;
+      }
+
+      @media screen and (max-width: 480px) {
+        display: none;
+      }
+    }
+  }
+</style>

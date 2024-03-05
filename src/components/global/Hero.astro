@@ -1,0 +1,93 @@
+---
+import { Image } from "astro:assets";
+
+import Icon from "../../icons/index.astro";
+import CTA from "./CTA.astro";
+import Title from "./Title.astro";
+import heroImage from "/public/home-hero.webp";
+---
+
+<div class="hero">
+  <div class="container">
+    <div class="text">
+      <Title size="large">IVF yolculuğunuza şimdi başlayın</Title>
+      <p>IVF yolculuğunuza şimdi başlayın</p>
+      <p>
+        <CTA
+          href="/iletisim"
+          size="large"
+          title="IVF yolculuğunuza şimdi başlayın"
+        >
+          İletişim
+          <Icon name="arrowRight" />
+        </CTA>
+      </p>
+    </div>
+
+    <div class="image">
+      <Image
+        src={heroImage}
+        width={heroImage.width}
+        height={heroImage.height}
+        alt="Dr. Senai Aksoy Tüpbebek Merkezi"
+      />
+    </div>
+  </div>
+</div>
+
+<style lang="scss">
+  .hero {
+    grid-column: span 3;
+    padding: var(--spacing-large);
+
+    .container {
+      max-width: calc(var(--container-width) - 12rem);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--spacing-large);
+      place-items: center;
+      margin: auto;
+
+      :global(h1) {
+        color: #5a6db4;
+      }
+
+      p {
+        font-family: var(--font-secondary);
+        font-size: 1.5rem;
+      }
+    }
+
+    .image {
+      max-width: 500px;
+      height: auto;
+      aspect-ratio: 1;
+
+      img {
+        display: block;
+        height: auto;
+        aspect-ratio: 1;
+        object-fit: cover;
+        -webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDQ4IiBoZWlnaHQ9IjEwNTIiIGZpbGw9Im5vbmUiPjxwYXRoIGZpbGw9IiNBNDk1RkIiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTU3MC45MDUgMTUyLjM0OEM2ODguNDQxIDE0MC4zMyA3NzEuMTg3LTI3LjkxNSA4ODQuOTQxIDQuMDI2IDk4Ny45OTcgMzIuOTYyIDEwMDYuMjMgMTc4LjE4OCAxMDMyLjYgMjgxLjk4NWMyMy4xNiA5MS4xNjkgMTkuNjUgMTg2LjE0OS02Ljg0IDI3Ni40MDMtMjQuMDYgODEuOTQ4LTg1LjQ2MiAxNDIuMTUxLTEzNi4yMDggMjEwLjgzMS01NS41MyA3NS4xNTYtOTQuMjUyIDE2NS4yNDEtMTc1LjYwMiAyMTEuMTc4LTkxLjYzMiA1MS43NDMtMjAzLjg0MiA5My4xMDMtMzAzLjUxNCA1OS4zNzMtOTkuMjUtMzMuNTktMTM0LjUwOS0xNTIuMzY1LTIwMy43NTktMjMxLjAzMy02OS45NzQtNzkuNDg5LTE5Mi4wMjMtMTI4Ljc1OS0yMDUuNDUzLTIzMy44My0xMy40MzktMTA1LjE0NCA4Ny4wNjYtMTg2LjQ3NCAxMzkuOTk3LTI3OC4yOTUgNDcuMzk1LTgyLjIxOCA2NC40MjItMjAyLjEzIDE1NC4zNTQtMjMyLjMyNCA5My4yMzQtMzEuMzAzIDE3Ny40OTYgOTguMDYzIDI3NS4zMyA4OC4wNloiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==");
+        mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDQ4IiBoZWlnaHQ9IjEwNTIiIGZpbGw9Im5vbmUiPjxwYXRoIGZpbGw9IiNBNDk1RkIiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTU3MC45MDUgMTUyLjM0OEM2ODguNDQxIDE0MC4zMyA3NzEuMTg3LTI3LjkxNSA4ODQuOTQxIDQuMDI2IDk4Ny45OTcgMzIuOTYyIDEwMDYuMjMgMTc4LjE4OCAxMDMyLjYgMjgxLjk4NWMyMy4xNiA5MS4xNjkgMTkuNjUgMTg2LjE0OS02Ljg0IDI3Ni40MDMtMjQuMDYgODEuOTQ4LTg1LjQ2MiAxNDIuMTUxLTEzNi4yMDggMjEwLjgzMS01NS41MyA3NS4xNTYtOTQuMjUyIDE2NS4yNDEtMTc1LjYwMiAyMTEuMTc4LTkxLjYzMiA1MS43NDMtMjAzLjg0MiA5My4xMDMtMzAzLjUxNCA1OS4zNzMtOTkuMjUtMzMuNTktMTM0LjUwOS0xNTIuMzY1LTIwMy43NTktMjMxLjAzMy02OS45NzQtNzkuNDg5LTE5Mi4wMjMtMTI4Ljc1OS0yMDUuNDUzLTIzMy44My0xMy40MzktMTA1LjE0NCA4Ny4wNjYtMTg2LjQ3NCAxMzkuOTk3LTI3OC4yOTUgNDcuMzk1LTgyLjIxOCA2NC40MjItMjAyLjEzIDE1NC4zNTQtMjMyLjMyNCA5My4yMzQtMzEuMzAzIDE3Ny40OTYgOTguMDYzIDI3NS4zMyA4OC4wNloiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==");
+        -webkit-mask-position: center;
+        mask-position: center;
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-size: 100% 100%;
+      }
+    }
+
+    @media screen and (max-width: 1023px) {
+      padding: var(--spacing-medium);
+
+      .container {
+        grid-template-columns: 1fr;
+      }
+
+      .image {
+        order: -1;
+      }
+    }
+  }
+</style>

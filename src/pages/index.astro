@@ -1,0 +1,27 @@
+---
+import Hero from "@components/Hero.astro";
+import Layout from "@layouts/Layout.astro";
+import IvfExplained from "../components/home/IvfExplained.astro";
+import IvfInTurkey from "../components/home/IvfInTurkey.astro";
+import Posts from "../components/home/Posts.astro";
+import SuccessRates from "../components/home/SuccessRates.astro";
+import WhoWeAre from "../components/home/WhoWeAre.astro";
+---
+
+<Layout
+  title="Start your IVF journey now"
+  page="home"
+  description="Dr. Senai Aksoy"
+>
+  <Hero />
+
+  <IvfInTurkey />
+
+  <WhoWeAre />
+
+  <SuccessRates />
+
+  <IvfExplained />
+
+  <Posts />
+</Layout>

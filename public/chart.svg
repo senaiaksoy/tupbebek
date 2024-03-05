@@ -1,0 +1,446 @@
+<svg
+version="1.1"
+xmlns="http://www.w3.org/2000/svg"
+width="500"
+height="400"
+viewBox="0 0 500 400"
+>
+    <style>
+        .chart {
+          border: 1px solid var(--color-gray-10);
+          border-radius: var(--spacing-medium);
+          padding: var(--spacing-medium);
+      
+          @media screen and (min-width: 1024px) {
+            box-shadow:
+              0px 18px 36px -18px rgba(0, 0, 0, 0.1),
+              0px 30px 45px -30px rgba(50, 50, 93, 0.25);
+          }
+      
+          svg {
+            font-family: var(--font-primary);
+            height: auto;
+            max-width: 100%;
+          }
+        }
+      
+        .legend {
+          font-family: var(--font-primary);
+          font-size: 0.825rem;
+          font-weight: 500;
+        }
+      
+        .bar-label {
+          font-family: var(--font-primary);
+          font-weight: 500;
+          font-size: 0.675rem;
+          cursor: pointer;
+        }
+      
+        .chart-label {
+          font-family: var(--font-primary);
+          font-size: 0.825rem;
+          color: var(--color-gray-70);
+          fill: var(--color-gray-70);
+          cursor: pointer;
+        }
+      </style>
+<rect
+  fill="#ffffff"
+  x="0"
+  y="0"
+  width="500"
+  height="400"
+  rx="0"
+  ry="0"
+  aria-hidden="true"></rect><rect
+  fill="none"
+  x="36"
+  y="46"
+  width="454"
+  height="280"
+  aria-hidden="true"></rect><g data-z-index="0" aria-hidden="true"></g><rect
+  fill="none"
+  data-z-index="1"
+  x="36"
+  y="46"
+  width="454"
+  height="280"
+  aria-hidden="true"></rect><g data-z-index="1" aria-hidden="true"
+  ><path
+    fill="none"
+    stroke-dasharray="none"
+    data-z-index="1"
+    d="M 126.5 46 L 126.5 326"
+    opacity="1"></path><path
+    fill="none"
+    stroke-dasharray="none"
+    data-z-index="1"
+    d="M 217.5 46 L 217.5 326"
+    opacity="1"></path><path
+    fill="none"
+    stroke-dasharray="none"
+    data-z-index="1"
+    d="M 307.5 46 L 307.5 326"
+    opacity="1"></path><path
+    fill="none"
+    stroke-dasharray="none"
+    data-z-index="1"
+    d="M 398.5 46 L 398.5 326"
+    opacity="1"></path><path
+    fill="none"
+    stroke-dasharray="none"
+    data-z-index="1"
+    d="M 489.5 46 L 489.5 326"
+    opacity="1"></path><path
+    fill="none"
+    stroke-dasharray="none"
+    data-z-index="1"
+    d="M 35.5 46 L 35.5 326"
+    opacity="1"></path></g
+><g data-z-index="1" aria-hidden="true"
+  ><path
+    fill="none"
+    stroke="#e6e6e6"
+    stroke-width="1"
+    stroke-dasharray="none"
+    data-z-index="1"
+    d="M 36 326.5 L 490 326.5"
+    opacity="1"></path><path
+    fill="none"
+    stroke="#e6e6e6"
+    stroke-width="1"
+    stroke-dasharray="none"
+    data-z-index="1"
+    d="M 36 256.5 L 490 256.5"
+    opacity="1"></path><path
+    fill="none"
+    stroke="#e6e6e6"
+    stroke-width="1"
+    stroke-dasharray="none"
+    data-z-index="1"
+    d="M 36 186.5 L 490 186.5"
+    opacity="1"></path><path
+    fill="none"
+    stroke="#e6e6e6"
+    stroke-width="1"
+    stroke-dasharray="none"
+    data-z-index="1"
+    d="M 36 116.5 L 490 116.5"
+    opacity="1"></path><path
+    fill="none"
+    stroke="#e6e6e6"
+    stroke-width="1"
+    stroke-dasharray="none"
+    data-z-index="1"
+    d="M 36 45.5 L 490 45.5"
+    opacity="1"></path></g
+><g data-z-index="2" aria-hidden="true"
+  ><path
+    fill="none"
+    stroke="#ccd6eb"
+    stroke-width="1"
+    data-z-index="7"
+    d="M 36 326.5 L 490 326.5"></path></g
+><g data-z-index="2" aria-hidden="true"
+  ><path fill="none" data-z-index="7" d="M 36 46 L 36 326"></path></g
+><g data-z-index="3" aria-hidden="false"
+  ><g
+    data-z-index="0.1"
+    opacity="1"
+    transform="translate(36,46) scale(1 1)"
+    clip-path="url(#highcharts-89ob745-557-)"
+    style="cursor: pointer; outline: none;"
+    aria-hidden="false"
+    role="region"
+    tabindex="-1"
+    aria-label="Fresh Embryo, bar series 1 of 2 with 5 bars."
+    ><rect
+      x="24"
+      y="79"
+      width="17"
+      height="202"
+      fill="#d82097"
+      opacity="1"
+      tabindex="-1"
+      role="img"
+      aria-label="Under 35, 57.6. Fresh Embryo."
+      style="outline: none;"></rect><rect
+      x="114"
+      y="88"
+      width="17"
+      height="193"
+      fill="#d82097"
+      opacity="1"
+      tabindex="-1"
+      role="img"
+      aria-label="35-37, 55.2. Fresh Embryo."
+      style="outline: none;"></rect><rect
+      x="205"
+      y="106"
+      width="17"
+      height="175"
+      fill="#d82097"
+      opacity="1"
+      tabindex="-1"
+      role="img"
+      aria-label="38-39, 50. Fresh Embryo."
+      style="outline: none;"></rect><rect
+      x="296"
+      y="167"
+      width="17"
+      height="114"
+      fill="#d82097"
+      opacity="1"
+      tabindex="-1"
+      role="img"
+      aria-label="40-41, 32.7. Fresh Embryo."
+      style="outline: none;"></rect><rect
+      x="387"
+      y="213"
+      width="17"
+      height="68"
+      fill="#d82097"
+      opacity="1"
+      tabindex="-1"
+      role="img"
+      aria-label="42 and over, 19.4. Fresh Embryo."
+      style="outline: none;"></rect></g
+  ><g
+    data-z-index="0.1"
+    opacity="1"
+    transform="translate(36,46) scale(1 1)"
+    clip-path="none"
+    aria-hidden="true"></g><g
+    data-z-index="0.1"
+    opacity="1"
+    transform="translate(36,46) scale(1 1)"
+    clip-path="url(#highcharts-89ob745-557-)"
+    style="cursor: pointer; outline: none;"
+    aria-hidden="false"
+    role="region"
+    tabindex="-1"
+    aria-label="Frozen Embryo, bar series 2 of 2 with 5 bars."
+    ><rect
+      x="51"
+      y="48"
+      width="17"
+      height="233"
+      fill="#28409d"
+      opacity="1"
+      tabindex="-1"
+      role="img"
+      aria-label="Under 35, 66.7. Frozen Embryo."
+      style="outline: none;"></rect><rect
+      x="142"
+      y="40"
+      width="17"
+      height="241"
+      fill="#28409d"
+      opacity="1"
+      tabindex="-1"
+      role="img"
+      aria-label="35-37, 68.9. Frozen Embryo."
+      style="outline: none;"></rect><rect
+      x="232"
+      y="74"
+      width="17"
+      height="207"
+      fill="#28409d"
+      opacity="1"
+      tabindex="-1"
+      role="img"
+      aria-label="38-39, 59.2. Frozen Embryo."
+      style="outline: none;"></rect><rect
+      x="323"
+      y="111"
+      width="17"
+      height="170"
+      fill="#28409d"
+      opacity="1"
+      tabindex="-1"
+      role="img"
+      aria-label="40-41, 48.5. Frozen Embryo."
+      style="outline: none;"></rect><rect
+      x="414"
+      y="184"
+      width="17"
+      height="97"
+      fill="#28409d"
+      opacity="1"
+      tabindex="-1"
+      role="img"
+      aria-label="42 and over, 27.8. Frozen Embryo."
+      style="outline: none;"></rect></g
+  ><g
+    data-z-index="0.1"
+    opacity="1"
+    transform="translate(36,46) scale(1 1)"
+    clip-path="none"
+    aria-hidden="true"></g></g
+><text
+  x="250"
+  text-anchor="middle"
+  data-z-index="4"
+  style="color: rgb(51, 51, 51); font-size: 18px; fill: rgb(51, 51, 51);"
+  y="24"
+  aria-hidden="true">Clinical Pregnancy Rates</text
+><text
+  x="250"
+  text-anchor="middle"
+  data-z-index="4"
+  style="color: rgb(102, 102, 102); fill: rgb(102, 102, 102);"
+  y="45"
+  aria-hidden="true"></text><text
+  x="10"
+  text-anchor="start"
+  data-z-index="4"
+  style="color: rgb(102, 102, 102); fill: rgb(102, 102, 102);"
+  y="397"
+  aria-hidden="true"></text><g
+  data-z-index="6"
+  opacity="1"
+  transform="translate(36,46) scale(1 1)"
+  aria-hidden="true"
+  ><g data-z-index="1" transform="translate(18,56)"
+    ><text x="3" data-z-index="1" y="16" class="bar-label">57.6</text></g
+  ><g data-z-index="1" transform="translate(108,65)"
+    ><text x="3" data-z-index="1" y="16" class="bar-label">55.2</text></g
+  ><g data-z-index="1" transform="translate(203,83)"
+    ><text x="3" data-z-index="1" y="16" class="bar-label">50</text></g
+  ><g data-z-index="1" transform="translate(290,144)"
+    ><text x="3" data-z-index="1" y="16" class="bar-label">32.7</text></g
+  ><g data-z-index="1" transform="translate(381,190)"
+    ><text x="3" data-z-index="1" y="16" class="bar-label">19.4</text></g
+  ></g
+><g
+  data-z-index="6"
+  opacity="1"
+  transform="translate(36,46) scale(1 1)"
+  aria-hidden="true"
+  ><g data-z-index="1" transform="translate(45,25)"
+    ><text x="3" data-z-index="1" y="16" class="bar-label">66.7</text></g
+  ><g data-z-index="1" transform="translate(136,17)"
+    ><text x="3" data-z-index="1" y="16" class="bar-label">68.9</text></g
+  ><g data-z-index="1" transform="translate(226,31)"
+    ><text x="3" data-z-index="1" y="36" class="bar-label">59.2</text></g
+  ><g data-z-index="1" transform="translate(317,88)"
+    ><text x="3" data-z-index="1" y="16" class="bar-label">48.5</text></g
+  ><g data-z-index="1" transform="translate(408,161)"
+    ><text x="3" data-z-index="1" y="16" class="bar-label">27.8</text></g
+  ></g
+><g data-z-index="7" aria-hidden="true" transform="translate(134,359)"
+  ><rect fill="none" rx="0" ry="0" x="0" y="0" width="232" height="26"
+  ></rect><g data-z-index="1"
+    ><g
+      ><g data-z-index="1" transform="translate(8,3)"
+        ><text
+          x="21"
+          text-anchor="start"
+          data-z-index="2"
+          y="15"
+          class="legend">Fresh Embryo</text
+        ><rect
+          x="2"
+          y="4"
+          width="12"
+          height="12"
+          fill="#d82097"
+          rx="6"
+          ry="6"
+          data-z-index="3"></rect></g
+      ><g data-z-index="1" transform="translate(123.1171875,3)"
+        ><text
+          x="21"
+          y="15"
+          text-anchor="start"
+          data-z-index="2"
+          class="legend">Frozen Embryo</text
+        ><rect
+          x="2"
+          y="4"
+          width="12"
+          height="12"
+          fill="#28409d"
+          rx="6"
+          ry="6"
+          data-z-index="3"></rect></g
+      ></g
+    ></g
+  ></g
+><g data-z-index="7" aria-hidden="true"
+  ><text
+    x="81.4"
+    class="chart-label"
+    text-anchor="middle"
+    transform="translate(0,0)"
+    y="345"
+    opacity="1">Under 35</text
+  ><text
+    x="172.2"
+    class="chart-label"
+    text-anchor="middle"
+    transform="translate(0,0)"
+    y="345"
+    opacity="1">35-37</text
+  ><text
+    x="263"
+    class="chart-label"
+    text-anchor="middle"
+    transform="translate(0,0)"
+    y="345"
+    opacity="1">38-39</text
+  ><text
+    x="353.8"
+    class="chart-label"
+    text-anchor="middle"
+    transform="translate(0,0)"
+    y="345"
+    opacity="1">40-41</text
+  ><text
+    x="444.6"
+    class="chart-label"
+    text-anchor="middle"
+    transform="translate(0,0)"
+    y="345"
+    opacity="1">42 and over</text
+  ></g
+><g data-z-index="7" aria-hidden="true"
+  ><text
+    x="21"
+    class="chart-label"
+    text-anchor="end"
+    transform="translate(0,0)"
+    y="331"
+    opacity="1">0</text
+  ><text
+    x="21"
+    text-anchor="end"
+    transform="translate(0,0)"
+    class="chart-label"
+    y="261"
+    opacity="1">20</text
+  ><text
+    x="21"
+    text-anchor="end"
+    transform="translate(0,0)"
+    class="chart-label"
+    y="191"
+    opacity="1">40</text
+  ><text
+    x="21"
+    text-anchor="end"
+    transform="translate(0,0)"
+    class="chart-label"
+    y="121"
+    opacity="1">60</text
+  ><text
+    x="21"
+    text-anchor="end"
+    transform="translate(0,0)"
+    y="51"
+    opacity="1"
+    class="chart-label">80</text
+  ></g
+></svg
+>

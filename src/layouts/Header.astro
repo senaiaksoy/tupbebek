@@ -1,0 +1,87 @@
+---
+import Logo from "../logo.astro";
+import LangNav from "./LangNav.astro";
+import Navigation from "./Navigation.astro";
+import NavigationMobile from "./NavigationMobile.astro";
+---
+
+<header class="header" id="header">
+  <div class="inner">
+    <div class="logo">
+      <a href="/" title="Home"><Logo /></a>
+    </div>
+
+    <Navigation />
+
+    <LangNav class="desktop" />
+
+    <div class="menu">
+      <button type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <NavigationMobile />
+</header>
+
+<script>
+  let header = document.getElementById("header");
+
+  document.addEventListener("astro:after-swap", () => {
+    header = document.getElementById("header");
+  });
+
+  document.addEventListener(
+    "astro:page-load",
+    () => {
+      if (!header) return;
+
+      let scrollPos = window.scrollY;
+      if (scrollPos > header.getBoundingClientRect().height * 2) {
+        header.classList.add("stuck");
+      }
+      const scrollDirection = () => {
+        if (!header) return;
+
+        if (window.scrollY < header.getBoundingClientRect().height * 2) {
+          header.classList.remove("stuck");
+        } else {
+          header.classList.add("stuck");
+        }
+        scrollPos = window.scrollY;
+      };
+
+      window.addEventListener("scroll", scrollDirection);
+    },
+    { once: true }
+  );
+</script>
+
+<style lang="scss">
+  .menu {
+    button {
+      cursor: pointer;
+      width: 24px;
+      aspect-ratio: 1;
+      padding: 0;
+      border: none;
+      background: none;
+      display: block;
+    }
+
+    @media screen and (min-width: 1280px) {
+      display: none;
+    }
+  }
+</style>

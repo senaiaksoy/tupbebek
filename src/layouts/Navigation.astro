@@ -1,0 +1,62 @@
+---
+import styles from "@styles/navigation.module.scss";
+import classnames from "classnames";
+import { nav } from "../data/index.json";
+
+const { position, id } = Astro.props;
+const classNames = classnames(
+  styles.nav,
+  position === "mobile"
+    ? styles.mobile
+    : position === "footer"
+      ? styles.footer
+      : styles.desktop
+);
+---
+
+<nav class={classNames} aria-label="primary" id={id}>
+  <ul>
+    {
+      nav.map((item) => (
+        <li
+          class={classnames(styles["list-item"], item.items ? styles.sub : "")}
+          data-sub={item.items && item.items.length > 0 ? "true" : "false"}
+          aria-expanded="false"
+        >
+          <a href={item.slug} class={styles["list-link"]}>
+            <span>{item.name}</span>
+          </a>
+          {item.items && (
+            <div class={styles.subnav}>
+              <ul>
+                {item.items.map((subItem) => (
+                  <li>
+                    <a href={subItem.slug}>
+                      <span>{subItem.name}</span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+
+              {item.extras && (
+                <div class={styles.extras}>
+                  <ul>
+                    {item.extras.map((subItem) => (
+                      <li>
+                        <a href={subItem.slug}>
+                          <span>{subItem.name}</span>
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </div>
+          )}
+        </li>
+      ))
+    }
+  </ul>
+
+  <slot />
+</nav>

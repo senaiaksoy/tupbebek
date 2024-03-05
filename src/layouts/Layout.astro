@@ -1,0 +1,48 @@
+---
+import { ViewTransitions } from "astro:transitions";
+import Analytics from "integrations/Analytics.astro";
+import "../styles/main.scss";
+import Footer from "./Footer.astro";
+import Header from "./Header.astro";
+
+interface Props {
+  title: string;
+  description: string;
+  page?: string;
+}
+const pathName = Astro.url.pathname;
+
+const { title, page, description } = Astro.props;
+const canonicalURL = import.meta.env.URL + pathName;
+const pageTitle = [title, "Dr. Senai Aksoy"].filter(Boolean).join(" - ");
+---
+
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="canonical" href={canonicalURL} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="/global.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Playfair:opsz,wght@5..1200,400;5..1200,700&display=swap"
+      rel="stylesheet"
+    />
+    <ViewTransitions />
+    <Analytics />
+  </head>
+  <body class:list={[page]}>
+    <Header />
+
+    <main>
+      <slot />
+    </main>
+
+    <Footer />
+  </body>
+</html>

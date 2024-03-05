@@ -1,0 +1,60 @@
+---
+import classnames from "classnames";
+
+import Icon from "../icons/index.astro";
+const { variant } = Astro.props;
+const classNames = classnames("social", variant);
+---
+
+<div class={classNames}>
+  <a
+    href="https://www.youtube.com/channel/UC51eCoXFnN1DiBd1dWcJpPQ"
+    target="_blank"
+    title="Follow us on Youtube"
+  >
+    <Icon name="youtube" size="large" />
+  </a>
+
+  <a
+    href="https://www.instagram.com/drsenaiaksoy/"
+    target="_blank"
+    title="Follow us on Instagram"
+  >
+    <Icon name="instagram" size="large" />
+  </a>
+
+  <a
+    href="https://www.facebook.com/FIVETEenTurquie"
+    target="_blank"
+    title="Follow us on Facebook"
+  >
+    <Icon name="facebook" size="large" />
+  </a>
+</div>
+<style is:global lang="scss">
+  .social {
+    color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-small);
+
+    a {
+      color: inherit;
+
+      &:hover,
+      &:focus {
+        color: white;
+        transition: color 0.3s ease;
+      }
+    }
+
+    &.primary {
+      color: var(--color-secondary-light);
+
+      a:hover,
+      a:focus {
+        color: var(--color-brand-secondary);
+      }
+    }
+  }
+</style>

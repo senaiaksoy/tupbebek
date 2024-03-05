@@ -1,0 +1,61 @@
+---
+import SocialMedia from "./SocialMedia.astro";
+
+import LangNav from "./LangNav.astro";
+import Navigation from "./Navigation.astro";
+---
+
+<Navigation position="mobile" id="mobile-nav">
+  <SocialMedia variant="primary" />
+
+  <LangNav />
+</Navigation>
+
+<script>
+  let svgIconPath = document.querySelector(".header .menu svg path");
+
+  const defaultIconPath = svgIconPath?.getAttribute("d");
+  const closeIconPath = "M6 18L18 6M6 6l12 12";
+
+  const togglePath = (menu) => {
+    svgIconPath = document.querySelector(".header .menu svg path");
+    if (!svgIconPath) return;
+
+    if (menu.classList.contains("visible")) {
+      svgIconPath.setAttribute("d", closeIconPath);
+    } else {
+      svgIconPath.setAttribute("d", defaultIconPath || closeIconPath);
+    }
+  };
+
+  const toggleMenu = () => {
+    const mobileMenu = document.getElementById("mobile-nav");
+    mobileMenu?.classList.toggle("visible");
+
+    togglePath(mobileMenu);
+
+    document.body.classList.toggle("nav-open");
+  };
+
+  function toggleSubmenus() {
+    const subMenus = document.querySelectorAll("[data-sub='true']");
+    subMenus.forEach((sub) => {
+      const link = sub.querySelector(":scope > a");
+
+      link?.addEventListener("click", (e) => {
+        e.preventDefault();
+        const expanded =
+          sub.getAttribute("aria-expanded") === "false" ? "true" : "false";
+
+        sub?.setAttribute("aria-expanded", expanded);
+      });
+    });
+  }
+
+  document.addEventListener("astro:page-load", () => {
+    const toggleMenuButton = document.getElementById("toggle-menu");
+    toggleMenuButton?.addEventListener("click", toggleMenu);
+
+    toggleSubmenus();
+  });
+</script>

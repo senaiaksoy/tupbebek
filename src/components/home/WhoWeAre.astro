@@ -1,0 +1,63 @@
+---
+import Icon from "@icons/index.astro";
+import { Image } from "astro:assets";
+import CTA from "../global/CTA.astro";
+import Section from "../global/Section.astro";
+import Title from "../global/Title.astro";
+import Row from "./Row.astro";
+import image from "/public/senai-aksoy.webp";
+---
+
+<Row>
+  <Section class="who-we-are">
+    <div class="column">
+      <Image
+        src={image}
+        width={image.width}
+        height={image.height}
+        alt="Dr. Senai Aksoy"
+      />
+    </div>
+
+    <div class="column">
+      <Title size="big">Biz Kimiz</Title>
+      <p class="text">Summary</p>
+      <p>
+        <CTA
+          href="/about-us"
+          variant="secondary"
+          size="small"
+          title="Learn more about us"
+        >
+          Devamı
+          <Icon name="arrowRight" />
+        </CTA>
+      </p>
+    </div>
+  </Section>
+</Row>
+
+<style lang="scss">
+  .column {
+    img {
+      object-fit: contain;
+      -webkit-mask-image: url("/drawing.svg");
+      mask-image: url("/drawing.svg");
+      -webkit-mask-position: center;
+      mask-position: center;
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-size: 100% 100%;
+      margin: auto;
+      height: auto;
+    }
+
+    @media screen and (min-width: 768px) {
+      grid-template-columns: 1fr 380px;
+
+      &:last-child {
+        order: -1;
+      }
+    }
+  }
+</style>

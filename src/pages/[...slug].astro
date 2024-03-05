@@ -1,0 +1,54 @@
+---
+import { Picture } from "astro:assets";
+
+import { getCollection, type CollectionEntry } from "astro:content";
+
+import Title from "@components/Title.astro";
+import Layout from "@layouts/Layout.astro";
+import styles from "@styles/article.module.scss";
+
+export interface Props {
+  page: CollectionEntry<"en">;
+}
+
+export async function getStaticPaths() {
+  const pages = await getCollection("en");
+  const page = pages.map((page) => ({
+    params: { slug: page.slug },
+    props: { page },
+  }));
+
+  return [...page];
+}
+const { page } = Astro.props;
+const { Content } = await page.render();
+---
+
+<Layout title={page.data.title} description={page.data.description}>
+  <Head slot="head" slug={Astro.params.slug} />
+
+  <article class={styles.article}>
+    <header class={styles.header}>
+      <Title size="large">
+        {page.data.title}
+      </Title>
+    </header>
+
+    {
+      page.data.image && (
+        <div class={styles.media}>
+          <Picture
+            src={page.data.image}
+            widths={[240, 540, 720, page.data.image.width]}
+            width={page.data.image.width}
+            height={page.data.image.height}
+            sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${page.data.image.width}px`}
+            alt={page.data.title}
+          />
+        </div>
+      )
+    }
+
+    <Content />
+  </article>
+</Layout>

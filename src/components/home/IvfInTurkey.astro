@@ -1,0 +1,37 @@
+---
+import Icon from "@icons/index.astro";
+import CTA from "../global/CTA.astro";
+import Section from "../global/Section.astro";
+import Title from "../global/Title.astro";
+import Row from "./Row.astro";
+---
+
+<Row>
+  <Section class="ivf-in-turkey">
+    <div class="column">
+      <Title size="big">IVF</Title>
+      <p class="text">Summary</p>
+      <p>
+        <CTA
+          href="/ivf-in-turkey"
+          variant="secondary"
+          size="small"
+          title="Learn more about IVF in Turkey"
+        >
+          Türkiye'de Tüpbebek
+          <Icon name="arrowRight" />
+        </CTA>
+      </p>
+    </div>
+    <div class="column">
+      <Title size="big">IVF Ücreti</Title>
+      <p class="text">Ücret</p>
+      <p>
+        <CTA href="/cost-of-ivf" variant="secondary" size="small">
+          Devamı
+          <Icon name="arrowRight" />
+        </CTA>
+      </p>
+    </div>
+  </Section>
+</Row>

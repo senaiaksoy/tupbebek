@@ -1,0 +1,39 @@
+---
+import styles from "../../styles/article.module.scss";
+---
+
+<div class={styles.media}>
+  <div id="art-map" class="map"></div>
+</div>
+
+<script is:inline>
+  function initMap() {
+    var myLatLng = {
+      lat: 41.048047,
+      lng: 28.993149,
+    };
+    var map = new google.maps.Map(document.getElementById("art-map"), {
+      zoom: 15,
+      center: myLatLng,
+    });
+    var image = "/marker.png";
+    var marker = new google.maps.Marker({
+      position: myLatLng,
+      map: map,
+      icon: image,
+      title: "Dr. Senai Aksoy",
+    });
+  }
+</script>
+<script
+  async
+  defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaVZ7D5dfzb1JIr53bZ90oGAaQocbmhu0&callback=initMap"
+></script>
+
+<style lang="scss">
+  .map {
+    width: 100%;
+    aspect-ratio: 16/9;
+  }
+</style>

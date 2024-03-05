@@ -1,0 +1,66 @@
+---
+import Icon from "@icons/index.astro";
+import { getCollection } from "astro:content";
+import Section from "../global/Section.astro";
+import Title from "../global/Title.astro";
+import Row from "./Row.astro";
+
+const posts = (await getCollection("blog"))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+  .slice(0, 5);
+---
+
+<Row>
+  <Section class="articles">
+    <div class="head">
+      <a href="/blog/"><Title size="big">Blog</Title></a>
+      <a href="/blog/">Tüm makaleler <Icon name="arrowRight" /></a>
+    </div>
+
+    <div class="articles">
+      {
+        posts.map((post) => (
+          <article>
+            <Title size="medium">
+              <a href={`/blog/${post.slug}/`}>{post.data.title}</a>
+            </Title>
+          </article>
+        ))
+      }
+    </div>
+  </Section>
+</Row>
+
+<style lang="scss">
+  .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-medium);
+  }
+
+  .articles {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: var(--spacing-large);
+
+    h3 {
+      font-size: 1.5rem;
+      line-height: 1.5;
+      font-weight: 500;
+      font-family: var(--font-secondary);
+    }
+  }
+
+  a {
+    display: flex;
+    color: var(--color-text);
+    text-decoration: none;
+    gap: var(--spacing-small);
+
+    &:focus,
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+</style>

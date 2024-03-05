@@ -1,0 +1,102 @@
+{
+    "langs": [
+        {
+            "url": "en",
+            "lang": "EN",
+            "name": "English"
+        },
+        {
+            "url": "fr",
+            "lang": "FR",
+            "name": "Français"
+        },
+        {
+            "url": "ar",
+            "lang": "AR",
+            "name": "عربي"
+        }
+    ],
+    "nav": [
+        {
+            "slug": "/about-us/",
+            "name": "About Us"
+        },
+        {
+            "slug": "/dr-senai-aksoy",
+            "name": "Dr. Senai Aksoy"
+        },
+        {
+            "slug": "/treatment",
+            "name": "Treatment",
+            "items": [
+                {
+                    "slug": "/treatment/pre-ivf-testing",
+                    "name": "Pre IVF testing"
+                },
+                {
+                    "slug": "/treatment/stimulation-of-the-ovaries",
+                    "name": "Stimulation of the Ovaries"
+                },
+                {
+                    "slug": "/treatment/egg-retrieval",
+                    "name": "Egg Retrieval"
+                },
+                {
+                    "slug": "/treatment/embryo-transfer",
+                    "name": "Embryo Transfer"
+                },
+                {
+                    "slug": "/treatment/fertilization-ivf-and-icsi",
+                    "name": "Fertilization IVF and ICSI"
+                },
+                {
+                    "slug": "/treatment/sperm-retrieval-in-azoospermic-subjects",
+                    "name": "Sperm Retrieval in Azoospermic Subjects"
+                },
+                {
+                    "slug": "/treatment/embryo-freezing",
+                    "name": "Embryo Freezing"
+                },
+                {
+                    "slug": "/treatment/preimplantation-genetic-diagnosis",
+                    "name": "Preimplantation Genetic Diagnosis"
+                }
+            ],
+            "extras": [
+                {
+                    "slug": "/treatment/causes-and-diagnosis-of-infertility",
+                    "name": "Causes and Diagnosis of Infertility"
+                },
+                {
+                    "slug": "/treatment/do-i-need-treatment",
+                    "name": "Do I Need  Treatment?"
+                },
+                {
+                    "slug": "/treatment/reasons-for-cancellation-of-treatment",
+                    "name": "Reasons for Cancellation of Treatment"
+                }
+            ]
+        },
+        {
+            "slug": "/success-rates",
+            "name": "Success Rates"
+        },
+        {
+            "slug": "/cost-of-ivf",
+            "name": "Cost of IVF"
+        },
+        {
+            "slug": "/services",
+            "name": "Services"
+        },
+        {
+            "slug": "/contact-us",
+            "name": "Contact"
+        }
+    ],
+    "contact": {
+        "phone": "+90 507 380 28 05",
+        "whatsappMessage": "Hello, I would like to get information about your services.",
+        "email": "contact@artivfcenter.com"
+    }
+}

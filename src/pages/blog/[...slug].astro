@@ -1,0 +1,49 @@
+---
+import Breadcrumbs from "@components/Breadcrumbs.astro";
+import Title from "@components/Title.astro";
+import Icon from "@icons/index.astro";
+import Layout from "@layouts/Layout.astro";
+import styles from "@styles/article.module.scss";
+import { Image } from "astro:assets";
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+  const blogEntries = await getCollection("blog");
+  return blogEntries.map((post) => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+const { post } = Astro.props;
+const { Content } = await post.render();
+---
+
+<Layout title={post.data.title} description={post.data.description}>
+  <article class={styles.article}>
+    <header class={styles.header}>
+      <Breadcrumbs>
+        <a href="/blog/"><Icon name="arrowLeft" size="small" /> Back to Blog</a>
+      </Breadcrumbs>
+      <Title size="large">
+        {post.data.title}
+      </Title>
+    </header>
+
+    {
+      post.data.image && (
+        <div class={styles.media}>
+          <Image
+            src={post.data.image}
+            width={post.data.image.width}
+            height={post.data.image.height}
+            alt={post.data.title}
+            widths={[240, 540, 720, post.data.image.width]}
+            sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${post.data.image.width}px`}
+          />
+        </div>
+      )
+    }
+
+    <Content />
+  </article>
+</Layout>

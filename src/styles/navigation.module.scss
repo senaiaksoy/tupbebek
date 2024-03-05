@@ -1,0 +1,222 @@
+.nav {
+  ul,
+  li {
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    list-style: none;
+    position: relative;
+
+    a {
+      display: block;
+      color: var(--color-text);
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 500;
+      padding: var(--spacing-medium) var(--spacing-xsmall);
+      transition: color 0.25s;
+      &:hover,
+      &:focus {
+        color: var(--color-gray-80);
+      }
+    }
+  }
+}
+
+.mobile {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--spacing-large);
+  z-index: 98;
+  right: -100%;
+  top: 60px;
+  width: 100%;
+  height: calc(100% - 60px);
+  background-color: white;
+  padding: var(--spacing-large);
+  transition: right 0.3s ease;
+  backdrop-filter: saturate(180%) blur(5px);
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+
+  &:global(.visible) {
+    right: 0;
+  }
+
+  .list-link {
+    display: block;
+    text-align: right;
+    padding: var(--spacing-small);
+    font-size: 1.24rem;
+    text-decoration: none;
+    color: var(--color-secondary-light);
+  }
+
+  .subnav {
+    display: none;
+    padding-block-end: var(--spacing-medium);
+
+    li a {
+      padding: var(--spacing-small);
+      text-align: right;
+    }
+  }
+
+  .sub > a {
+    display: flex;
+    gap: var(--spacing-medium);
+    justify-content: flex-end;
+    align-items: center;
+
+    &:after {
+      content: "";
+      display: inline-flex;
+      width: 10px;
+      height: 10px;
+      border: 2px solid var(--color-secondary-light);
+      transform: translateY(-2px) rotate(-45deg);
+      border-color: transparent transparent var(--color-secondary-light)
+        var(--color-secondary-light);
+      transition: transform 0.2s;
+    }
+  }
+
+  .sub[aria-expanded="true"] {
+    .subnav {
+      display: block;
+    }
+
+    & > a:after {
+      transform: translateY(4px) rotate(135deg);
+    }
+  }
+}
+
+.desktop {
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media screen and (min-width: 1280px) {
+    display: block;
+  }
+
+  ul {
+    display: flex;
+    gap: 1rem;
+
+    li {
+      &:hover,
+      &:focus {
+        .subnav {
+          display: flex;
+        }
+      }
+    }
+  }
+
+  .subnav {
+    display: none;
+    position: absolute;
+    left: 0;
+    width: max(100% - 1rem, 360px);
+    background: #fff;
+    border-radius: var(--spacing-xsmall);
+    flex-wrap: wrap;
+
+    ul {
+      flex-direction: column;
+      gap: 0;
+      padding: var(--spacing-medium) var(--spacing-small);
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -6px;
+      left: 0;
+      z-index: -1;
+      width: 12px;
+      height: 12px;
+      background-color: #fff;
+      border-radius: 2px;
+      transform: translateX(1rem) rotate(45deg);
+      box-shadow: 0 0 3px rgb(0 0 0 / 0.12);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      inset: 0;
+      z-index: -2;
+      border-radius: var(--spacing-xsmall);
+      box-shadow: 0 0 3px rgb(0 0 0 / 0.12);
+    }
+
+    li {
+      a {
+        display: block;
+        padding: var(--spacing-small) var(--spacing-medium);
+      }
+    }
+
+    .extras {
+      width: 100%;
+      background-color: var(--color-gray-10);
+      border-radius: 0 0 var(--spacing-xsmall) var(--spacing-xsmall);
+    }
+  }
+}
+
+.footer {
+  li a {
+    color: #fff;
+    padding-block: var(--spacing-small);
+  }
+}
+
+.languages {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 1rem;
+  margin-top: auto;
+
+  li {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  svg {
+    width: 1.5rem;
+    aspect-ratio: 1;
+    color: var(--color-gray-70);
+  }
+
+  a {
+    text-decoration: none;
+    color: #888;
+    font-weight: 500;
+    background-color: transparent;
+    padding-inline-end: var(--spacing-small);
+
+    &.active {
+      color: #111;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-color: #aaa;
+    }
+  }
+
+  @media screen and (min-width: 480px) {
+    display: none;
+  }
+}

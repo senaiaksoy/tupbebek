@@ -1,0 +1,95 @@
+---
+import { contact } from "../data/index.json";
+import Logo from "../logo.astro";
+import QuickContact from "./QuickContact.astro";
+import SocialMedia from "./SocialMedia.astro";
+---
+
+<footer>
+  <div class="container">
+    <div class="logo light">
+      <a href="/" title="Ana Sayfa"><Logo /></a>
+      <SocialMedia />
+    </div>
+
+    <nav>
+      <div class="">
+        <h4>Hakkımızda</h4>
+        <ul>
+          <li>
+            <a href="/hakkimizda">Hakkımızda</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="">
+        <h4>Tedavi</h4>
+        <ul>
+          <li>
+            <a href="test"> Test</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="">
+      <h4>İletişim</h4>
+      <ul>
+        <li>
+          <a href={`mailto: ${contact.email}`}>{contact.email}</a>
+        </li>
+        <li><a href={`tel:${contact.phone}`}>{contact.phone}</a></li>
+        <li>
+          Abdi Ipekci Caddesi Reassurans Han 2 No: 61 / Kat: 5 Nisantasi /
+          Istanbul / Turkey
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<QuickContact />
+
+<style lang="scss">
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-medium);
+    max-width: min(var(--container-width) - 2rem, 100vw - 2rem);
+    padding: var(--spacing-medium);
+    margin: auto;
+    color: #fff;
+
+    @media screen and (min-width: 768px) {
+      grid-template-columns: 260px 1fr;
+    }
+
+    h4 {
+      margin-bottom: var(--spacing-small);
+    }
+
+    nav {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        a {
+          display: block;
+          color: #fff;
+          padding-block: var(--spacing-small);
+          text-decoration: none;
+          font-size: 1rem;
+
+          &:hover,
+          &:focus {
+            text-decoration: underline;
+            text-underline-offset: 2px;
+          }
+        }
+      }
+    }
+  }
+</style>

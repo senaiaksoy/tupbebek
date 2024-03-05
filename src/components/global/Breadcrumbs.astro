@@ -1,0 +1,21 @@
+<div class="breadcrumbs">
+  <slot />
+</div>
+
+<style>
+  .breadcrumbs {
+    margin-block-end: var(--spacing-medium);
+
+    a {
+      display: flex;
+      align-items: center;
+      gap: var(--spacing-small);
+    }
+
+    a,
+    a:visited,
+    a:active {
+      color: var(--color-text);
+    }
+  }
+</style>

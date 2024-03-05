@@ -1,0 +1,53 @@
+---
+import ArrowLeft from "./ArrowLeft.astro";
+import ArrowRight from "./ArrowRight.astro";
+import Envelope from "./Envelope.astro";
+import Facebook from "./Facebook.astro";
+import Globe from "./Globe.astro";
+import Instagram from "./Instagram.astro";
+import Whatsapp from "./Whatsapp.astro";
+import Youtube from "./Youtube.astro";
+
+const Icons = {
+  arrowLeft: ArrowLeft,
+  arrowRight: ArrowRight,
+  envelope: Envelope,
+  globe: Globe,
+  instagram: Instagram,
+  facebook: Facebook,
+  youtube: Youtube,
+  whatsapp: Whatsapp,
+};
+
+const { name = "arrowRight", size = "medium" } = Astro.props;
+const Icon = Icons[name];
+const classNames = `icon ${size}`;
+---
+
+<span class={classNames}><Icon /></span>
+
+<style is:global lang="scss">
+  .icon {
+    width: 100%;
+    display: inline-flex;
+    aspect-ratio: 1;
+    width: var(--spacing-medium);
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    &.medium {
+      width: var(--spacing-medium);
+    }
+
+    &.big {
+      width: var(--spacing-big);
+    }
+
+    &.large {
+      width: var(--spacing-large);
+    }
+  }
+</style>

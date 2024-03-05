@@ -1,0 +1,35 @@
+---
+import classnames from "classnames";
+const { size = "medium", ...rest } = Astro.props;
+
+const sizes = {
+  large: "h1",
+  big: "h2",
+  medium: "h3",
+  small: "h4",
+  xsmall: "h5",
+};
+const TitleElement = sizes[size];
+const classNames = classnames("title", size);
+---
+
+<TitleElement class={classNames} {...rest}><slot /></TitleElement>
+
+<style>
+  .title {
+    font-family: var(--font-primary);
+    font-weight: 700;
+    line-height: 1.25;
+    text-wrap: balance;
+    margin: 0;
+  }
+
+  .title span:target {
+    margin-top: 2rem;
+  }
+
+  .large {
+    font-size: 4rem;
+    font-size: clamp(2.25rem, 2vw + 1.5rem, 4rem);
+  }
+</style>
