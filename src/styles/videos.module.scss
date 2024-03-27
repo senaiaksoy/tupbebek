@@ -1,0 +1,51 @@
+.videos {
+  grid-column: 1/4;
+  display: grid;
+  grid-template-columns: 1fr min(var(--container-width), calc(100% - 2rem)) 1fr;
+  grid-row-gap: var(--spacing-big);
+  width: 100%;
+  padding-block: var(--spacing-large);
+  margin: auto;
+
+  .posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--spacing-medium);
+
+    article {
+      .image {
+        margin-bottom: var(--spacing-medium);
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+
+      a,
+      a:visited {
+        color: var(--color-link);
+      }
+    }
+  }
+
+  & > * {
+    grid-column: 2;
+  }
+
+  .header {
+    margin-bottom: var(--spacing-medium);
+  }
+
+  a,
+  a:visited {
+    color: var(--color-text);
+    text-decoration: none;
+  }
+
+  a:hover,
+  a:active {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+}

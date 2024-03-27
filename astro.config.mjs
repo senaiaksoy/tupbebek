@@ -6,6 +6,6 @@ export default defineConfig({
   output: "static",
   integrations: [mdx()],
   image: {
-    domains: ["tupbebek.com"],
+    domains: ["tupbebek.com", "img.youtube.com"],
   },
 });

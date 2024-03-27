@@ -1,7 +1,7 @@
 ---
 import Title from "@components/Title.astro";
 import Layout from "@layouts/Layout.astro";
-import styles from "@styles/blog.module.scss";
+import styles from "@styles/videos.module.scss";
 import { Image } from "astro:assets";
 import { getCollection } from "astro:content";
 
@@ -14,26 +14,30 @@ const posts = (await getCollection("videos")).sort(
   title="Videolar"
   description="Dr. Senai Aksoy tüp bebek tedavisi, aşamaları ve bağlantılı konularda bilgilerini sizlerle paylaşıyor."
 >
-  <div class={styles.blog}>
+  <div class={styles.videos}>
     <header class={styles.header}>
       <Title size="large">Videolar</Title>
     </header>
 
-    {
-      posts.map((post) => (
-        <article>
-          <Image
-            src={`https://img.youtube.com/vi/${post.data.id}/0.jpg`}
-            width={480}
-            height={360}
-            alt={post.data.title}
-          />
-          <Title size="big">
-            <a href={`/videolar/${post.slug}`}>{post.data.title}</a>
-          </Title>
-          <p>{post.data.description}</p>
-        </article>
-      ))
-    }
+    <div class={styles.posts}>
+      {
+        posts.map((post) => (
+          <article>
+            <a href={`/videolar/${post.slug}`}>
+              <div class={styles.image}>
+                <Image
+                  src={`https://img.youtube.com/vi/${post.data.id}/0.jpg`}
+                  width={480}
+                  height={360}
+                  alt={post.data.title}
+                />
+              </div>
+
+              <Title size="big">{post.data.title}</Title>
+            </a>
+          </article>
+        ))
+      }
+    </div>
   </div>
 </Layout>
