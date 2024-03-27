@@ -18,85 +18,179 @@
     ],
     "nav": [
         {
-            "slug": "/about-us/",
-            "name": "About Us"
+            "slug": "/hakkimizda",
+            "name": "Hakkımızda"
         },
         {
             "slug": "/dr-senai-aksoy",
             "name": "Dr. Senai Aksoy"
         },
         {
-            "slug": "/treatment",
-            "name": "Treatment",
+            "slug": "/hizmetler",
+            "name": "Hizmetler",
             "items": [
                 {
-                    "slug": "/treatment/pre-ivf-testing",
-                    "name": "Pre IVF testing"
+                    "slug": "/tup-bebek-ve-mikroenjeksiyon/",
+                    "name": "Tüp Bebek ve Mikroenjeksiyon"
                 },
                 {
-                    "slug": "/treatment/stimulation-of-the-ovaries",
-                    "name": "Stimulation of the Ovaries"
+                    "slug": "/asilama",
+                    "name": "Aşılama"
                 },
                 {
-                    "slug": "/treatment/egg-retrieval",
-                    "name": "Egg Retrieval"
+                    "slug": "/yumurtlama-takibi",
+                    "name": "Yumurtlama Takibi"
                 },
                 {
-                    "slug": "/treatment/embryo-transfer",
-                    "name": "Embryo Transfer"
+                    "slug": "/kisirlik-tanisi-konmasi",
+                    "name": "Kısırlık Tanısı Konması"
                 },
                 {
-                    "slug": "/treatment/fertilization-ivf-and-icsi",
-                    "name": "Fertilization IVF and ICSI"
+                    "slug": "/sperm-analizi",
+                    "name": "Sperm Analizi"
                 },
                 {
-                    "slug": "/treatment/sperm-retrieval-in-azoospermic-subjects",
-                    "name": "Sperm Retrieval in Azoospermic Subjects"
+                    "slug": "/histeroskopi",
+                    "name": "Histeroskopi"
                 },
                 {
-                    "slug": "/treatment/embryo-freezing",
-                    "name": "Embryo Freezing"
+                    "slug": "/laparoskopi",
+                    "name": "Laparoskopi"
                 },
                 {
-                    "slug": "/treatment/preimplantation-genetic-diagnosis",
-                    "name": "Preimplantation Genetic Diagnosis"
-                }
-            ],
-            "extras": [
-                {
-                    "slug": "/treatment/causes-and-diagnosis-of-infertility",
-                    "name": "Causes and Diagnosis of Infertility"
+                    "slug": "/tesatese",
+                    "name": "TESA-TESE"
                 },
                 {
-                    "slug": "/treatment/do-i-need-treatment",
-                    "name": "Do I Need  Treatment?"
+                    "slug": "/preimplantasyon-genetik-tani",
+                    "name": "Preimplantasyon Genetik Tanı"
                 },
                 {
-                    "slug": "/treatment/reasons-for-cancellation-of-treatment",
-                    "name": "Reasons for Cancellation of Treatment"
+                    "slug": "/embriyo-dondurma",
+                    "name": "Embriyo Dondurma"
+                },
+                {
+                    "slug": "/dogurganligin-korunmasi",
+                    "name": "Doğurganlığın Korunması"
                 }
             ]
         },
         {
-            "slug": "/success-rates",
-            "name": "Success Rates"
+            "slug": "/tedaviniz",
+            "name": "Tedaviniz",
+            "items": [
+                {
+                    "slug": "/tup-bebek-tedavisinde-nelere-dikkat-etmelisiniz",
+                    "name": "Tüp Bebek Tedavisinde Nelere Dikkat Etmelisiniz"
+                },
+                {
+                    "slug": "/tup-bebek-asamalari",
+                    "name": "Tüp Bebek Aşamaları"
+                },
+                {
+                    "slug": "/yumurtaliklarin-asiri-uyarilmasi",
+                    "name": "Yumurtalıkların Aşırı Uyarılması"
+                },
+                {
+                    "slug": "/tup-bebek-tedavisinde-catlatma-ignesi",
+                    "name": "Tüp Bebek Tedavisinde Çatlatma İğnesi"
+                },
+                {
+                    "slug": "/embriyo-transferi-sonrasi-neler-yapmaliyim",
+                    "name": "Embriyo Transferi Sonrası Neler Yapmalıyım?"
+                },
+                {
+                    "slug": "/embriyo-transferi-sonrasi-kanama",
+                    "name": "Embriyo Transferi Sonrası Kanama"
+                },
+                {
+                    "slug": "/tup-bebek-tedavim-tuttu-mu",
+                    "name": "Tüp Bebek Tedavim 'Tuttu mu'?"
+                },
+                {
+                    "slug": "/tup-bebek-tedavisinde-preimplantasyon-genetik-tani",
+                    "name": "Tüp Bebek Tedavisinde Preimplantasyon Genetik Tanı"
+                },
+                {
+                    "slug": "/tup-bebekte-ozel-uygulamalar",
+                    "name": "Tüp Bebek'te Özel Uygulamalar"
+                },
+                {
+                    "slug": "/tedavi-sirasinda-karsilasilan-sorunlar",
+                    "name": "Tedavi Sırasında Karşılaşılan Sorunlar"
+                }
+            ]
         },
         {
-            "slug": "/cost-of-ivf",
-            "name": "Cost of IVF"
+            "slug": "/baslarken",
+            "name": "Başlarken",
+            "items": [
+                {
+                    "slug": "/tedaviye-baslamadan-once",
+                    "name": "Tedaviye Başlamadan Önce"
+                },
+                {
+                    "slug": "/sik-sorulan-sorular",
+                    "name": "Sık Sorulan Sorular"
+                },
+                {
+                    "slug": "/tup-bebek-fiyatlari",
+                    "name": "Tüp Bebek Fiyatları"
+                },
+                {
+                    "slug": "/tup-bebek-basari-oranlari",
+                    "name": "Tüp Bebek Başarı Oranları"
+                },
+                {
+                    "slug": "/tup-bebek-evraklari-ve-testleri",
+                    "name": "Tüp Bebek Evrakları ve Testleri"
+                },
+                {
+                    "slug": "/aciklanamayan-kisirlik",
+                    "name": "Açıklanamayan Kısırlık"
+                },
+                {
+                    "slug": "/yasiniz-ve-kisirlik",
+                    "name": "Yaşınız ve Kısırlık"
+                },
+                {
+                    "slug": "/kadinda-kisirlik-nedenleri",
+                    "name": "Kadında Kısırlık Nedenleri"
+                },
+                {
+                    "slug": "/kadinin-degerlendirilmesi",
+                    "name": "Kadının Değerlendirilmesi"
+                },
+                {
+                    "slug": "/yumurtalik-rezervi-degerlendirme",
+                    "name": "Yumurtalık Rezervi Değerlendirme"
+                },
+                {
+                    "slug": "/erkekte-kisirlik-nedenleri",
+                    "name": "Erkekte Kısırlık Nedenleri"
+                },
+                {
+                    "slug": "/erkegin-degerlendirilmesi",
+                    "name": "Erkeğin Değerlendirilmesi"
+                }
+            ]
         },
         {
-            "slug": "/services",
-            "name": "Services"
+            "slug": "/blog",
+            "name": "Blog"
         },
         {
-            "slug": "/contact-us",
-            "name": "Contact"
+            "slug": "/videolar",
+            "name": "Videolar"
+        },
+        {
+            "slug": "/iletisim",
+            "name": "İletişim"
         }
     ],
     "contact": {
-        "phone": "+90 507 380 28 05",
-        "whatsappMessage": "Hello, I would like to get information about your services.",
-        "email": "contact@artivfcenter.com"
+        "phone": "+90 553 277 77 22",
+        "whatsappMessage": "Merhabalar, tüpbebek servisleriniz hakkında bilgi almak istiyorum.",
+        "email": "sa@senaiaksoy.net"
     }
 }

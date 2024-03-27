@@ -8,11 +8,11 @@ import Layout from "@layouts/Layout.astro";
 import styles from "@styles/article.module.scss";
 
 export interface Props {
-  page: CollectionEntry<"en">;
+  page: CollectionEntry<"pages">;
 }
 
 export async function getStaticPaths() {
-  const pages = await getCollection("en");
+  const pages = await getCollection("pages");
   const page = pages.map((page) => ({
     params: { slug: page.slug },
     props: { page },
@@ -25,8 +25,6 @@ const { Content } = await page.render();
 ---
 
 <Layout title={page.data.title} description={page.data.description}>
-  <Head slot="head" slug={Astro.params.slug} />
-
   <article class={styles.article}>
     <header class={styles.header}>
       <Title size="large">

@@ -14,7 +14,10 @@ const classNames = classnames("languages", className);
   {
     langs.map((l) => (
       <li>
-        <a href={`https://draksoyivf.com/${l.url}/`} title={l.name}>
+        <a
+          href={`https://draksoyivf.com/${l.url === "en" ? "" : l.url + "/"}`}
+          title={l.name}
+        >
           {l.lang}
         </a>
       </li>

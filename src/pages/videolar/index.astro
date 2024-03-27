@@ -1,0 +1,39 @@
+---
+import Title from "@components/Title.astro";
+import Layout from "@layouts/Layout.astro";
+import styles from "@styles/blog.module.scss";
+import { Image } from "astro:assets";
+import { getCollection } from "astro:content";
+
+const posts = (await getCollection("videos")).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+);
+---
+
+<Layout
+  title="Videolar"
+  description="Dr. Senai Aksoy tüp bebek tedavisi, aşamaları ve bağlantılı konularda bilgilerini sizlerle paylaşıyor."
+>
+  <div class={styles.blog}>
+    <header class={styles.header}>
+      <Title size="large">Videolar</Title>
+    </header>
+
+    {
+      posts.map((post) => (
+        <article>
+          <Image
+            src={`https://img.youtube.com/vi/${post.data.id}/0.jpg`}
+            width={480}
+            height={360}
+            alt={post.data.title}
+          />
+          <Title size="big">
+            <a href={`/videolar/${post.slug}`}>{post.data.title}</a>
+          </Title>
+          <p>{post.data.description}</p>
+        </article>
+      ))
+    }
+  </div>
+</Layout>

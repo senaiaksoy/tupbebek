@@ -1,11 +1,19 @@
 ---
 import { contact } from "../data/index.json";
+import Icon from "../icons/index.astro";
 import Logo from "../logo.astro";
 import QuickContact from "./QuickContact.astro";
 import SocialMedia from "./SocialMedia.astro";
 ---
 
 <footer>
+  <div class="disclaimer">
+    <Icon name="exclamation" size="big" />
+
+    Sayfa içeriği sadece bilgilendirme amaçlıdır, tanı ve tedavi için mutlaka
+    doktorunuza başvurunuz.
+  </div>
+
   <div class="container">
     <div class="logo light">
       <a href="/" title="Ana Sayfa"><Logo /></a>
@@ -19,6 +27,15 @@ import SocialMedia from "./SocialMedia.astro";
           <li>
             <a href="/hakkimizda">Hakkımızda</a>
           </li>
+          <li>
+            <a href="/dr-senai-aksoy">Dr. Senai Aksoy</a>
+          </li>
+          <li>
+            <a href="/tup-bebek-basari-oranlari">Başarı Oranları</a>
+          </li>
+          <li>
+            <a href="/hizmetler">Hizmetlerimiz</a>
+          </li>
         </ul>
       </div>
 
@@ -26,30 +43,86 @@ import SocialMedia from "./SocialMedia.astro";
         <h4>Tedavi</h4>
         <ul>
           <li>
-            <a href="test"> Test</a>
+            <a href="/tup-bebek-tedavisinde-nelere-dikkat-etmelisiniz"
+              >Tüp Bebek Tedavisinde Nelere Dikkat Etmelisiniz
+            </a>
+          </li>
+          <li><a href="/tup-bebek-asamalari">Tüp Bebek Aşamaları</a></li>
+          <li>
+            <a href="/yumurtaliklarin-asiri-uyarilmasi"
+              >Yumurtalıkların Aşırı Uyarılması
+            </a>
+          </li>
+          <li>
+            <a href="/tup-bebek-tedavisinde-catlatma-ignesi"
+              >Tüp Bebek Tedavisinde Çatlatma İğnesi</a
+            >
+          </li>
+          <li>
+            <a href="/embriyo-transferi-sonrasi-neler-yapmaliyim"
+              >Embriyo Transferi Sonrası Neler Yapmalıyım?</a
+            >
+          </li>
+          <li>
+            <a href="/embriyo-transferi-sonrasi-kanama"
+              >Embriyo Transferi Sonrası Kanama</a
+            >
+          </li>
+          <li>
+            <a href="/tup-bebek-tedavim-tuttu-mu"
+              >Tüp Bebek Tedavim 'Tuttu mu'?</a
+            >
+          </li>
+          <li>
+            <a href="/tup-bebek-tedavisinde-preimplantasyon-genetik-tani"
+              >Tüp Bebek Tedavisinde Preimplantasyon Genetik Tanı</a
+            >
+          </li>
+          <li>
+            <a href="/tup-bebekte-ozel-uygulamalar"
+              >Tüp Bebek'te Özel Uygulamalar</a
+            >
+          </li>
+          <li>
+            <a href="/tedavi-sirasinda-karsilasilan-sorunlar"
+              >Tedavi Sırasında Karşılaşılan Sorunlar</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="">
+        <h4>İletişim</h4>
+        <ul>
+          <li>
+            <a href={`mailto: ${contact.email}`}>{contact.email}</a>
+          </li>
+          <li><a href={`tel:${contact.phone}`}>{contact.phone}</a></li>
+          <li>
+            Abdi İpekçi Caddesi Reassürans Han 2 No: 61 / Kat: 5 Nişantaşı /
+            İstanbul / Türkiye
           </li>
         </ul>
       </div>
     </nav>
-    <div class="">
-      <h4>İletişim</h4>
-      <ul>
-        <li>
-          <a href={`mailto: ${contact.email}`}>{contact.email}</a>
-        </li>
-        <li><a href={`tel:${contact.phone}`}>{contact.phone}</a></li>
-        <li>
-          Abdi Ipekci Caddesi Reassurans Han 2 No: 61 / Kat: 5 Nisantasi /
-          Istanbul / Turkey
-        </li>
-      </ul>
-    </div>
   </div>
 </footer>
 
 <QuickContact />
 
 <style lang="scss">
+  .disclaimer {
+    display: flex;
+    gap: var(--spacing-medium);
+    align-items: center;
+    max-width: min(var(--container-width) - 2rem, 100vw - 2rem);
+    padding: var(--spacing-medium);
+    margin: auto;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 0.875rem;
+  }
+
   .container {
     display: grid;
     grid-template-columns: 1fr;
@@ -70,6 +143,7 @@ import SocialMedia from "./SocialMedia.astro";
     nav {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: var(--spacing-medium);
 
       ul {
         list-style: none;

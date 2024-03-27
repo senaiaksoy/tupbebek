@@ -1,5 +1,4 @@
 ---
-import Head from "@components/Head.astro";
 import Map from "@components/Map.astro";
 import Title from "@components/Title.astro";
 import Icon from "@icons/index.astro";
@@ -11,17 +10,16 @@ import styles from "@styles/article.module.scss";
 const phoneNumber = contact.phone;
 const whatsAppNumber = phoneNumber.replace(/\s/g, "");
 const whatsappMessage = contact.whatsappMessage;
+const email = contact.email;
 ---
 
 <Layout
-  title="Contact Us"
-  description="We're excited to assist and address all your needs!"
+  title="Bize Ulaşın"
+  description="Tedavinize hemen başlamak, randevu veya fiyat bilgisi almak için bize ulaşın."
 >
-  <Head slot="head" slug="contact-us" />
-
   <article class={styles.article}>
     <header class={styles.header}>
-      <Title size="large">Contact Us</Title>
+      <Title size="large">İletişim</Title>
     </header>
 
     <div class="contact-online">
@@ -31,7 +29,7 @@ const whatsappMessage = contact.whatsappMessage;
         </div>
 
         <Title size="small">
-          Reach out directly, give us a ring or leave a message:
+          Direkt arayın veya WhatsApp'dan mesaj yazın:
         </Title>
 
         <a
@@ -45,20 +43,23 @@ const whatsappMessage = contact.whatsappMessage;
         <div class="icon">
           <Icon name="envelope" size="big" />
         </div>
-        <Title size="small">Share your thoughts and queries, write us:</Title>
+        <Title size="small"
+          >Düşüncelerinizi paylaşmak veya diğer talepleriniz için:</Title
+        >
 
-        <a href="mailto: contact@artivfcenter.com">contact@artivfcenter.com</a>
+        <a href={`mailto: ${email}`}>{email}</a>
       </div>
     </div>
 
-    <p>We’re excited to assist and address all your needs!</p>
-    <p></p>
-    <Title size="small">
-      Experience our clinic firsthand, drop by and visit us at:
-    </Title>
     <p>
-      Abdi Ipekci Caddesi Reassurans Han 2 No: 61 / Kat: 5 Nisantasi / Istanbul
-      / Turkey
+      Sorularınızı yanıtlamak, ve her konuda sizlere yardımcı olmak için
+      sabırsızlanıyoruz.
+    </p>
+    <p></p>
+    <Title size="small"> Tüp bebek merkezimizi ziyaret edin: </Title>
+    <p>
+      Abdi İpekçi Caddesi Reassürans Han 2 No: 61 / Kat: 5 Nişantaşı / İstanbul
+      / Türkiye
     </p>
     <p></p>
     <Map />
