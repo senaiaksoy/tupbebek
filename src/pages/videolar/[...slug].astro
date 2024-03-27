@@ -1,6 +1,7 @@
 ---
 import Breadcrumbs from "@components/Breadcrumbs.astro";
 import Title from "@components/Title.astro";
+import Video from "@components/Video.astro";
 import Icon from "@icons/index.astro";
 import Layout from "@layouts/Layout.astro";
 import styles from "@styles/article.module.scss";
@@ -30,16 +31,8 @@ const videoSource = `https://www.youtube.com/embed/${post.data.id}`;
       </Title>
     </header>
 
-    <div class="video">
-      <iframe
-        width="640"
-        src={videoSource}
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        loading="lazy"
-        allowfullscreen></iframe>
-    </div>
+    <Video id={post.data.id} />
+
     <p>{post.data.description}</p>
   </article>
 </Layout>

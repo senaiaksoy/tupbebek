@@ -149,3 +149,34 @@ footer {
     transform: scale(0.85);
   }
 }
+
+.media {
+  border-radius: var(--spacing-small);
+  aspect-ratio: 16/9;
+  overflow: hidden;
+
+  iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+  }
+}
+
+.table {
+  border: 0;
+  font-family: var(--font-primary);
+  width: 100%;
+
+  thead tr {
+    background-color: #f3c2ee;
+    font-weight: 700;
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: var(--color-gray-10);
+  }
+
+  td {
+    padding: var(--spacing-small) var(--spacing-medium);
+  }
+}
