@@ -37,20 +37,6 @@ const classNames = classnames(
                   </li>
                 ))}
               </ul>
-
-              {item.extras && (
-                <div class={styles.extras}>
-                  <ul>
-                    {item.extras.map((subItem) => (
-                      <li>
-                        <a href={subItem.slug}>
-                          <span>{subItem.name}</span>
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
             </div>
           )}
         </li>
