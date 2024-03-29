@@ -13,7 +13,7 @@ interface Props {
 const pathName = Astro.url.pathname;
 
 const { title, page, description } = Astro.props;
-const canonicalURL = import.meta.env.URL + pathName;
+const canonicalURL = "https://tupbebek.com" + pathName;
 const pageTitle = [title, "Dr. Senai Aksoy"].filter(Boolean).join(" - ");
 ---
 
