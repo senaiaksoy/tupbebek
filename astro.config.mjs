@@ -1,5 +1,5 @@
 import mdx from "@astrojs/mdx";
-import { defineConfig } from "astro/config";
+import { defineConfig, squooshImageService } from "astro/config";
 
 // https://astro.build/config
 export default defineConfig({
@@ -7,5 +7,6 @@ export default defineConfig({
   integrations: [mdx()],
   image: {
     domains: ["tupbebek.com", "img.youtube.com"],
+    service: squooshImageService(),
   },
 });

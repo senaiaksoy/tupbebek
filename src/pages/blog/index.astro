@@ -1,12 +1,15 @@
 ---
+import Pagination from "@components/Pagination.astro";
 import Title from "@components/Title.astro";
 import Layout from "@layouts/Layout.astro";
+
 import styles from "@styles/blog.module.scss";
 import { getCollection } from "astro:content";
 
-const posts = (await getCollection("blog")).sort(
+const allPosts = (await getCollection("blog")).sort(
   (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
 );
+const posts = allPosts.slice(0, 10);
 ---
 
 <Layout title="Blog" description="Dr. Senai Aksoy Blog'u: Tüm Makaleler">
@@ -25,5 +28,7 @@ const posts = (await getCollection("blog")).sort(
         </article>
       ))
     }
+
+    <Pagination next="/blog/sayfa/2" />
   </div>
 </Layout>

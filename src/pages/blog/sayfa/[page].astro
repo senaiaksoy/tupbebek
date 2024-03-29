@@ -1,0 +1,43 @@
+---
+import Pagination from "@components/Pagination.astro";
+import Title from "@components/Title.astro";
+import Layout from "@layouts/Layout.astro";
+
+import styles from "@styles/blog.module.scss";
+import type { GetStaticPaths } from "astro";
+import { getCollection } from "astro:content";
+
+export const getStaticPaths = (async ({ paginate }) => {
+  const posts = (await getCollection("blog")).sort(
+    (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+  );
+
+  return paginate(posts, { pageSize: 10 });
+}) satisfies GetStaticPaths;
+
+const { page } = Astro.props;
+---
+
+<Layout
+  title="Blog"
+  description={`Dr. Senai Aksoy Blog Sayfa ${page.currentPage}`}
+>
+  <div class={styles.blog}>
+    <header class={styles.header}>
+      <Title size="large">Blog</Title>
+    </header>
+
+    {
+      page.data.map((post) => (
+        <article>
+          <Title size="big">
+            <a href={`/blog/${post.slug}`}>{post.data.title}</a>
+          </Title>
+          <p>{post.data.description}</p>
+        </article>
+      ))
+    }
+
+    <Pagination next={page.url.next} prev={page.url.prev} />
+  </div>
+</Layout>

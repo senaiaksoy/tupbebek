@@ -1,0 +1,35 @@
+---
+import Icon from "../../icons/index.astro";
+import CTA from "./CTA.astro";
+
+const { prev, next } = Astro.props;
+---
+
+<section class="pagination" aria-label="Blog Navigasyon">
+  {
+    prev && (
+      <CTA variant="secondary" size="small" href={prev} title="Önceki Sayfa">
+        <Icon name="arrowLeft" />
+        Önceki Sayfa
+      </CTA>
+    )
+  }
+  {
+    next && (
+      <CTA variant="secondary" size="small" href={next} title="Sonraki Sayfa">
+        Sonraki Sayfa
+        <Icon name="arrowRight" />
+      </CTA>
+    )
+  }
+</section>
+
+<style lang="scss">
+  .pagination {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-medium);
+    justify-content: space-between;
+    margin-top: var(--spacing-medium);
+  }
+</style>

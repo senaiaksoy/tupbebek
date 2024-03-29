@@ -15,15 +15,17 @@
     margin-bottom: var(--spacing-medium);
   }
 
-  a,
-  a:visited {
-    color: var(--color-text);
-    text-decoration: none;
-  }
+  article {
+    a,
+    a:visited {
+      color: var(--color-text);
+      text-decoration: none;
+    }
 
-  a:hover,
-  a:active {
-    text-decoration: underline;
-    text-underline-offset: 2px;
+    a:hover,
+    a:active {
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
   }
 }
