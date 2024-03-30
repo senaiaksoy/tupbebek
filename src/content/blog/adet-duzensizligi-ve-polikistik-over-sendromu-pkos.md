@@ -10,7 +10,7 @@ date: 2013-01-07
 
 Adet düzensizliği genç kızların yeni adet görmeye başladıkları dönemde ve kadınlarda menopoza yaklaşıldığı dönemlerde normal kabul edilir. Bunun sebebi bu her iki dönemde de yumurtlamanın düzenli olmaması. Yumurtlamanın olmaması bir hormon düzensizliği yaratarak adet düzensizliğine neden olur. Genç kızlarda üreme organlarının gelişimi 18-20 yaşına kadar devam eder. Bu yaştan sonra normalde adetler artık düzenli olmaya başlayacaktır.
 
-**Adet düzensizliği ve Polikistik Over Sendromu (PKOS)**
+### Adet düzensizliği ve Polikistik Over Sendromu (PKOS)
 
 Bazı kadınlarda ise adetler bu dönemden sonra da senede 2-3 adet olacak adet düzensizliği devam eder. Üreme çağındaki kadınlarda adet düzensizliğinin en önemli nedeni kadınların %10'unda görülen [polikistik over](/makaleler/kisirlik/polikistik-over-sendromu-nedenleri-ve-tedavisi "polikistik over") sendromudur (PKOS).
 
