@@ -2,7 +2,7 @@
 slug: kimyasal-gebelik
 title: Kimyasal Gebeliklerin Gölgedeki Yüzü. Anlam, İyileşme ve Umut Peşinde
 description: Kimyasal gebelik, adından da anlaşılacağı gibi, kimyasalların sebep olduğu bir gebelik kaybını ifade etmez; erken dönemde, henüz ultrasonda görüntülenemeyecek kadar küçükken sonlanan gebelikleri tanımlar.
-image: /src/images/blog/kimyasal gebelik.jpg
+image: /src/images/blog/kimyasal-gebelik.jpg
 date: 2024-04-14
 ---
 
