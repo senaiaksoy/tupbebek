@@ -21,6 +21,7 @@ Myom, ya da bilinen diğer adıyla uterin myom, rahimde veya onun çevresinde ge
 - **Basınç Hissi**: Karın alt bölgesinde sürekli bir rahatsızlık veya ağrı hissi.
 
 Myomların yerleşim yerine göre belirtiler değişebilir:
+
 - **Submukozal**: Rahim iç yüzeyinin altında bulunur, sık sık kanama ve üreme problemlerine neden olur.
 - **İntramural**: En yaygın tür olan bu myomlar, rahim duvarının içinde yer alır ve büyüklüklerine göre çeşitli semptomlar gösterebilir.
 - **Subserozal**: Rahim dışında gelişir ve genellikle saplı yapıdadır.
