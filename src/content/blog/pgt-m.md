@@ -32,7 +32,9 @@ Döllenme sonrası embriyolar, kontrol altında birkaç gün boyunca gelişir. B
 
 ### 4. Embriyo Seçimi ve Transferi
 
-Genetik test sonuçlarına göre, istenmeyen genetik hastalıklardan arınmış embriyolar seçilir ve transfer için hazırlanır. Bu süreç, sadece sağlıklı embriyoların rahme yerleştirilmesini sağlar. Seçilen embriyolar, genellikle ince bir kateter aracılığıyla kadının rahmine aktarılır. Bu adım, standart bir IVF işlemine benzer. Transfer sonrası, implantasyonun başarılı olup olmadığı gebelik testi ile belirlenir.## Genetik Test İçin Laboratuvar Hazırlığı
+Genetik test sonuçlarına göre, istenmeyen genetik hastalıklardan arınmış embriyolar seçilir ve transfer için hazırlanır. Bu süreç, sadece sağlıklı embriyoların rahme yerleştirilmesini sağlar. Seçilen embriyolar, genellikle ince bir kateter aracılığıyla kadının rahmine aktarılır. Bu adım, standart bir IVF işlemine benzer. Transfer sonrası, implantasyonun başarılı olup olmadığı gebelik testi ile belirlenir.
+
+## Genetik Test İçin Laboratuvar Hazırlığı
 
 PGT-M'de genetik test için laboratuvar hazırlığı, bir dizi kritik süreci içerir. Bu süreçler, hastalık ve mutasyonun belirlenmesi, genetik belirteçlerin seçimi, referans DNA'nın hazırlanması, PCR'ın optimize edilmesi, probların tasarlanması ve optimizasyonu, deneyin doğrulanması ve kalite kontrolü ile raporlama aşamalarını kapsar.
 
@@ -40,15 +42,15 @@ PGT-M'de genetik test için laboratuvar hazırlığı, bir dizi kritik süreci i
 
 Laboratuvar hazırlık sürecinin diğer önemli adımları şunlardır:
 
-**- Polimeraz Zincir Reaksiyonu (PCR) teknolojisinin optimizasyonu:** Bu adım, embriyonun hücrelerinden alınan genetik materyalin güvenilir ve doğru bir şekilde çoğaltılmasını sağlar.
+- **Polimeraz Zincir Reaksiyonu (PCR) teknolojisinin optimizasyonu:** Bu adım, embriyonun hücrelerinden alınan genetik materyalin güvenilir ve doğru bir şekilde çoğaltılmasını sağlar.
 
-**- Genetik belirteçlere özgü probların tasarlanması ve optimizasyonu:** Bu kısa DNA dizileri, genetik test sürecinde hedeflenen genetik durumları belirlemeye yardımcı olur.
+- **Genetik belirteçlere özgü probların tasarlanması ve optimizasyonu:** Bu kısa DNA dizileri, genetik test sürecinde hedeflenen genetik durumları belirlemeye yardımcı olur.
 
-**- Doğrulama deneylerinin hazırlanması ve uygulanması:** Bu, bilinen genetik belirteçlere sahip örneklerin test edilerek sistemin doğru çalıştığını doğrulama işlemini içerir.
+- **Doğrulama deneylerinin hazırlanması ve uygulanması:** Bu, bilinen genetik belirteçlere sahip örneklerin test edilerek sistemin doğru çalıştığını doğrulama işlemini içerir.
 
-**- Kalite kontrol önlemleri:** Tüm laboratuvar süreci boyunca uygulanır ve sonuçların doğruluğunu ve tutarlılığını garantiler.
+- **Kalite kontrol önlemleri:** Tüm laboratuvar süreci boyunca uygulanır ve sonuçların doğruluğunu ve tutarlılığını garantiler.
 
-**- Raporlama:** Genetik test tamamlandığında, sonuçlar ve yorumlar detaylı bir raporla açıklanır.
+- **Raporlama:** Genetik test tamamlandığında, sonuçlar ve yorumlar detaylı bir raporla açıklanır.
 
 Bu titiz laboratuvar hazırlık süreci, PGT-M'nin başarısı ve güvenilirliği için hayati önem taşır. Deneyimli laboratuvar personeli tarafından yürütülen bu adımlar, çiftlere genetik olarak sağlıklı embriyoları seçme ve bilinçli üreme kararları alma konusunda yardımcı olur. PGT-M, genetik hastalıkların gelecek nesillere aktarılma riskini azaltarak, çiftlerin üreme sağlığını güçlendirmelerine imkan tanır.
 
