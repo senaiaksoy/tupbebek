@@ -6,11 +6,11 @@ image: /src/images/blog/72.jpg
 date: 2013-01-06
 ---
 
-**Miyom nedir ve görülme sıklığı ne kadardır?** 
+**Miyom nedir ve görülme sıklığı ne kadardır?**
 
 [Miyomlar](/blog/myomektomi-myom-nedir "miyom nedir") rahim düz kaslarından gelişen iyi huylu urlardır. Fibroid ya da leiomiyoma adı da verilen **miyom**lar, düz kas ve bağ dokusu içeren iyi huylu (kanser olmayan) kitlelerdir. Gebelik kontrolüne gelen hastaların yaklaşık olarak %4 ünde **miyom** saptanmaktadır. Gebelikte miyomların saptanması bu hastaların daha düzenli ve özenli olarak izlenmelerini gerektirir. Gebe kadında hem miyomun gebelik üzerine olumsuz etkileri olmaktadır hem de gebeliğin miyom üzerine olumsuz etkileri olmaktadır.
 
-**Miyom neden olur?** 
+**Miyom neden olur?**
 
 Hormonal ve genetik faktörler miyom oluşumundan sorumlu tutulmaktadır. Bu genetik değişiklikler rahim dokusunun östrojen ve progesteron gibi hormonlara cevabını etkiler. Kanıtlar östrojen ve progesteron hormonunun artması ile miyomun büyümesi arasındaki ilişkiyi desteklemektedir. Gebelikte miyomların etkilenmesinin altındaki neden, artan hormon salgıları, özellikle gebeliğe özgü 'human koryonik gonodatropin hormonu'nun salgılanması ve rahimin artan kan akımıyla birlikte büyümesidir.
 
