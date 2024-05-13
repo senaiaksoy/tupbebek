@@ -10,6 +10,8 @@ date: 2024-04-17
 
 Merhaba, Dr. Senai Aksoy ben. Jinekoloji ve üreme sağlığı alanlarında uzmanım. Birçok kadının hayatını etkileyen rahim myomları hakkında güvenilir ve doğru bilgiler vermek istiyorum.
 
+[![Video Thumbnail](https://img.youtube.com/vi/R0mi5CpAVrM/0.jpg)](https://www.youtube.com/watch?v=R0mi5CpAVrM)
+
 #### Myom Nedir?
 
 Myom, ya da bilinen diğer adıyla uterin myom, rahimde veya onun çevresinde gelişebilen iyi huylu bir tümördür. "Tümör" kelimesi kulağa korkutucu gelse de, myomlar genellikle kanserli değildir ve kas hücreleri ile lifli dokuların birleşiminden oluşur. Boyutları ve yerleşim yerlerine göre farklılık gösterir ve çeşitli belirtilere yol açabilir.
