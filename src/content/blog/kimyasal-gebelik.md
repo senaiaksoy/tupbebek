@@ -12,6 +12,8 @@ date: 2024-04-14
 
 Pozitif bir gebelik testi gözlerinizin önünde belirdiğinde kalbinizin ritmi değişir; sevinç, heyecan ve umut bir anda yükselir. Ancak bu duygular bazen beklenmedik bir şekilde kaybolabilir. Kimyasal gebelik, adından da anlaşılacağı gibi, kimyasalların sebep olduğu bir gebelik kaybını ifade etmez; erken dönemde, henüz ultrasonda görüntülenemeyecek kadar küçükken sonlanan gebelikleri tanımlar. Bu durum, oldukça yaygın olmasına rağmen, nadiren üzerinde durulur veya tartışılır. Bu yazımızda, kimyasal gebeliklerin ne olduğunu, nedenlerini ve belirtilerini ele alacağız; aynı zamanda bu zorlu deneyimden geçenler için bir rehber niteliğinde olmayı hedefliyoruz.
 
+[![Video Thumbnail](https://img.youtube.com/vi/fcFHl6WU2AE/0.jpg)](https://youtu.be/fcFHl6WU2AE)
+
 ## Kimyasal Gebelik Nedir?
 
 Kimyasal gebelik, döllenmiş bir yumurtanın implantasyonu sonrası hCG hormonu (insan koryonik gonadotropini) seviyelerindeki artışla gebelik testinin pozitif çıkması; ancak gebeliğin ultrason görüntüleri ile teyit edilemeden sonlanması durumudur. Bu tür gebelikler genellikle çok erken safhalarda sonlandığı için, pek çok kadın bu durumu normal bir adet dönemiyle karıştırabilir.
