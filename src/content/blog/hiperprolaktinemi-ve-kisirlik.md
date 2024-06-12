@@ -12,6 +12,8 @@ date: 2024-06-11
 
 Hayalinizdeki aileyi kurmaya çalışırken, pek farkında olmadığınız bir hormon bu süreci sekteye uğratabilir: Prolaktin. Bu hormonun seviyesi normalin üzerine çıktığında, hiperprolaktinemi olarak adlandırılan bir durum ortaya çıkar. Prolaktin, süt üretimini ve meme bezlerinin gelişimini destekleyen önemli bir hormondur. Ancak, bu hormonun dengesizliği, hem kadınların hem de erkeklerin doğurganlığını olumsuz etkileyebilir. Bu makalede, hiperprolaktinemi ve kısırlık arasındaki karmaşık ilişkiyi, bu durumun nedenlerini, belirtilerini ve tedavi seçeneklerini ele alacağız.
 
+[![Watch the Video](https://img.youtube.com/vi/tbylB6hjioE/0.jpg)](https://www.youtube.com/watch?v=tbylB6hjioE)
+
 ## Hiperprolaktineminin Gizemli Nedenleri
 
 Hiperprolaktinemi, beynimizdeki bazı bölgeler ve hormon bezlerimizle bağlantılı birçok nedenden kaynaklanabilir. Hipotalamus ve hipofiz bezi hastalıkları, örneğin prolaktinoma (hipofiz bezinde iyi huylu bir tümör), bu duruma yol açabilir. Bu tür tümörler, özellikle kadınları ve 40 yaş altındaki kişileri daha çok etkiler.
