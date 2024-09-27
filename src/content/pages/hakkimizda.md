@@ -1,17 +1,17 @@
 ---
 slug: hakkimizda
-title: Dr. Senai Aksoy Tüp Bebek Merkezi
-description: Dr. Senai Aksoy Tüp Bebek Merkezi
+title: Doç.Dr.Senai Aksoy Tüp Bebek Merkezi
+description: Doç.Dr.Senai Aksoy Tüp Bebek Merkezi
 image: /src/images/2.jpg
 ---
 
  Türkiye'nin üreme sağlığı, infertilite ve tüp bebek alanındaki lider online platformuna Tupbebek.com'a hoş geldiniz. 1996 yılından beri kesintisiz yayın yapmanın gururu içinde, bu önemli sağlık konularında bilinç, eğitim ve desteği artırma misyonumuzla, alandaki öncü çabalarımızı sürdürmenin mutluluğunu yaşıyoruz.
 
-Platformumuzun başında, üreme sağlığı üzerine uzmanlaşmış değerli bir profesyonel, Doç. Dr. Senai Aksoy bulunmaktadır. Dr. Aksoy, alanındaki bilgisiyle sadece bir uzman değil, aynı zamanda ebeveyn olma yolculuğunda bireylere ve çiftlere derin bir tutkuyla yardımcı olmaya adanmış biridir. Onun geniş bilgi birikimi ve şefkat dolu yaklaşımı, platformumuzun temel taşlarındandır.
+Platformumuzun başında, üreme sağlığı üzerine uzmanlaşmış değerli bir profesyonel, Doç. Dr. Senai Aksoy bulunmaktadır. Doç.Dr.Aksoy, alanındaki bilgisiyle sadece bir uzman değil, aynı zamanda ebeveyn olma yolculuğunda bireylere ve çiftlere derin bir tutkuyla yardımcı olmaya adanmış biridir. Onun geniş bilgi birikimi ve şefkat dolu yaklaşımı, platformumuzun temel taşlarındandır.
 
 Misyonumuz, üreme sağlığı, kısırlık ve IVF hakkında açık, doğru ve güvenilir bilgiler sunmak üzerine kuruludur. Amacımız, yanlış bilgileri düzeltmek, karmaşık tıbbi terimleri anlaşılır kılmak ve bu konularda zorluk yaşayan kişilere destek olacak bir ortam sağlamaktır.
 
-Dr. Aksoy'un sunduğu profesyonel danışmanlık, terapi ve tedavilerle, hastalara alanındaki uzmanlık bilgisinin verdiği güven ve huzuru sunuyoruz. Ancak Tupbebek.com, sadece bir web sitesinden çok daha fazlası; birbirlerinin doğurganlık yolculuklarında destek ve ilham kaynağı olan bireyler ve ailelerden oluşan bir topluluktur.
+Doç.Dr.Aksoy'un sunduğu profesyonel danışmanlık, terapi ve tedavilerle, hastalara alanındaki uzmanlık bilgisinin verdiği güven ve huzuru sunuyoruz. Ancak Tupbebek.com, sadece bir web sitesinden çok daha fazlası; birbirlerinin doğurganlık yolculuklarında destek ve ilham kaynağı olan bireyler ve ailelerden oluşan bir topluluktur.
 
 İçeriğimiz, üreme sağlığı ve IVF alanındaki en güncel bilgileri yansıtacak şekilde sürekli güncellenmektedir. Ziyaretçilerimize en doğru ve güncel bilgileri sunabilmek için bilimsel araştırmalara, tıbbi çalışmalara ve alanında uzman kişilere başvuruyoruz.
 
