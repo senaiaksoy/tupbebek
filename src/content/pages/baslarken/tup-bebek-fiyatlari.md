@@ -3,6 +3,7 @@ slug: tup-bebek-fiyatlari
 title: Tüp Bebek fiyatları nedir?
 description: Tüp bebek fiyatları merkezden merkeze ve kullanılan ilacın dozuna bağlı olarak değişmektedir.
 image: /src/images/25.jpg
+date: 2024-09-27
 ---
 
 ## Tüp Bebek Maliyeti: Hayallerinize Yatırım Yapmanın İncelikleri
