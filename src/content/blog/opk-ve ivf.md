@@ -1,6 +1,6 @@
 ---
 slug: opk-ve ivf
-title: Polikistik Over Sendromu (PCOS). IVF Yolculuğunuzun Gizli Başrolü mü?
+title: Polikistik Over Sendromu (PCOS). IVF Yolculuğunuzun Gizli Başrolü mü
 description: Polikistik Over Sendromu (PCOS), üreme çağındaki kadınlarda en sık görülen endokrin bozukluklardan biridir. PCOS’lu hastalarda hormonal dengesizlik, insülin direnci ve ovulasyon bozuklukları IVF başarısını etkileyebilmektedir. Bu metaanalizin amacı, PCOS’un IVF sonuçlarına etkisini inceleyen güncel çalışmaları kısaca özetlemektir.
 image: /src/images/blog/opkveivf.jpg
 date: 2025-01-01
