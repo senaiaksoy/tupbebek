@@ -6,7 +6,7 @@ image: /src/images/blog/70.jpg
 date: 2013-01-07
 ---
 
-**Adet düzensizliği ne zaman normaldir?**
+## Adet düzensizliği ne zaman normaldir?
 
 Adet düzensizliği genç kızların yeni adet görmeye başladıkları dönemde ve kadınlarda menopoza yaklaşıldığı dönemlerde normal kabul edilir. Bunun sebebi bu her iki dönemde de yumurtlamanın düzenli olmaması. Yumurtlamanın olmaması bir hormon düzensizliği yaratarak adet düzensizliğine neden olur. Genç kızlarda üreme organlarının gelişimi 18-20 yaşına kadar devam eder. Bu yaştan sonra normalde adetler artık düzenli olmaya başlayacaktır.
 

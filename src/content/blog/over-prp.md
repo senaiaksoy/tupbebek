@@ -10,7 +10,7 @@ date: 2025-01-03
 
 ## Giriş
 
-Kadın doğurganlığının geleceği üzerine yürütülen araştırmaların son yıllarda yeni bir kavşakta yoğunlaştığı gözlenmektedir: Overlere Platelet-Rich Plasma (PRP) enjeksiyonu. Kökünü uzun zamandır tıp pratiğinde kullanılan PRP yönteminden alan bu yaklaşım, özellikle azalmış over rezervine veya erken over yetmezliğine sahip kadınlar için yeni bir seçenek olma potansiyeli taşımaktadır. Kendi kanınızdan elde edilen trombositlerin, yumurtalık dokusunu uyararak yeni yumurta gelişimi ve doku onarımına katkıda bulunabileceği fikri, tıp camiasında olduğu kadar kamuoyunda da merak uyandırmaktadır. 
+Kadın doğurganlığının geleceği üzerine yürütülen araştırmaların son yıllarda yeni bir kavşakta yoğunlaştığı gözlenmektedir: Overlere Platelet-Rich Plasma (PRP) enjeksiyonu. Kökünü uzun zamandır tıp pratiğinde kullanılan PRP yönteminden alan bu yaklaşım, özellikle azalmış over rezervine veya erken over yetmezliğine sahip kadınlar için yeni bir seçenek olma potansiyeli taşımaktadır. Kendi kanınızdan elde edilen trombositlerin, yumurtalık dokusunu uyararak yeni yumurta gelişimi ve doku onarımına katkıda bulunabileceği fikri, tıp camiasında olduğu kadar kamuoyunda da merak uyandırmaktadır.
 
 Bununla birlikte, ilk bulguların heyecan verici niteliğine rağmen, yönteme dair bilimsel veri seti henüz sınırlıdır. Mevcut araştırmalar, PRP uygulamasının olası yararlarına işaret etmekle birlikte, daha geniş ölçekli ve uzun süreli çalışmalara duyulan ihtiyacı da ortaya koymaktadır. Bu makalede, Over PRP uygulamasının arka planını, bilimsel dayanaklarını ve olası gelecek senaryolarını irdelemeye çalışacağız.
 
