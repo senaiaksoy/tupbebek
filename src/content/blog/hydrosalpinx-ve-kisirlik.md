@@ -1,22 +1,22 @@
 ---
 slug: hydrosalpinx-ve-kisirlik
-title: Hydrosalpinx ve Kısırlık
+title: Hidrosalpinx ve Kısırlık
 description: Adet düzensizliği genç kızların yeni adet görmeye başladıkları dönemde ve kadınlarda menopoza yaklaşıldığı dönemlerde normal kabul edilir.
-image: /src/images/blog/hydrosalpinks.jpg
+image: /src/images/blog/hidrosalpinks.jpg
 date: 2025-01-06
 ---
 
-## Hydrosalpinx ve Kısırlık
+## Hidrosalpinx ve Kısırlık
 
-> *Ana Mesaj: Hydrosalpinx, Fallop tüplerinde sıvı birikmesine bağlı olarak oluşan bir blokajdır ve kadınlarda kısırlığın önemli nedenlerinden biridir. Uygun tanı, tedavi ve gerekirse yardımcı üreme teknikleriyle başarılı bir gebelik şansı önemli ölçüde artırılabilir.*
+> *Ana Mesaj: Hidrosalpinx, Fallop tüplerinde sıvı birikmesine bağlı olarak oluşan bir blokajdır ve kadınlarda kısırlığın önemli nedenlerinden biridir. Uygun tanı, tedavi ve gerekirse yardımcı üreme teknikleriyle başarılı bir gebelik şansı önemli ölçüde artırılabilir.*
 
 ---
 
-## 1. Hydrosalpinx Nedir?
+## 1. Hidrosalpinx Nedir?
 
 ### 1.1 Tanım ve Özellikler
 
-Hydrosalpinx, Fallop tüpünün (genellikle her iki tüpün) sıvıyla dolarak genişlemesi sonucu ortaya çıkar. Bu sıvı birikimi, çoğu zaman yumurtaya en yakın kısım olan fimbrial bölgeyi etkiler. Ultrason veya HSG (Histerosalpingografi) sırasında tüp, “sosis” benzeri bir şişkinlik olarak gözlemlenebilir.  
+Hidrosalpinx, Fallop tüpünün (genellikle her iki tüpün) sıvıyla dolarak genişlemesi sonucu ortaya çıkar. Bu sıvı birikimi, çoğu zaman yumurtaya en yakın kısım olan fimbrial bölgeyi etkiler. Ultrason veya HSG (Histerosalpingografi) sırasında tüp, “sosis” benzeri bir şişkinlik olarak gözlemlenebilir.  
 **Önemli Nokta:** Bir tüpteki hasar daha belirgin olsa bile, diğer tüpte de bir miktar yapısal bozulma olma ihtimali yüksektir.
 
 ### 1.2 Belirtiler
@@ -28,7 +28,7 @@ Pek çok kadında hydrosalpinx uzun süre belirti vermeyebilir; bazen kısırlı
 
 ---
 
-## 2. Hydrosalpinx’in Kısırlığa Etkisi
+## 2. Hidrosalpinx’in Kısırlığa Etkisi
 
 ### 2.1 Doğal Dölleme Sürecindeki Aksamalar
 
@@ -44,7 +44,7 @@ Tüp içindeki sıvının rahim içine sızması, endometriyal reseptiviteyi (ö
 
 Kısmi tıkanıklık söz konusu olduğunda, döllenmiş yumurta rahme ilerleyemeyip tüpte implante olabilir. Bu da ciddi sağlık sorunlarına yol açabilecek dış gebelik (ektopik gebelik) anlamına gelir.
 
-**Not:** Sadece bir tüp hydrosalpinx olsa dahi, diğer tüpün de dolaylı olarak etkilenme ve kısırlık ihtimalini artırma olasılığı göz ardı edilmemelidir.
+**Not:** Sadece bir tüp hidrosalpinx olsa dahi, diğer tüpün de dolaylı olarak etkilenme ve kısırlık ihtimalini artırma olasılığı göz ardı edilmemelidir.
 
 ---
 
@@ -110,7 +110,7 @@ IVF sürecinde döllenme laboratuvar ortamında gerçekleşir ve embriyo direkt 
 
 ### 6.2 Yumurtlama Uyarısı Üzerine Etkisi
 
-Araştırmalar, hydrosalpinx’li kadınlarda bazen:
+Araştırmalar, hidrosalpinx’li kadınlarda bazen:
 
 - Daha yüksek FSH seviyeleri,  
 - Daha düşük AMH seviyeleri,  
@@ -134,6 +134,6 @@ görüldüğünü göstermiştir.
 
 ## 8. Sonuç
 
-*Hydrosalpinx, kısırlığın başlıca nedenlerinden biri olsa da aşılmaz bir engel değildir.*
+*Hidrosalpinx, kısırlığın başlıca nedenlerinden biri olsa da aşılmaz bir engel değildir.*
 
-Erken tanı, uygun tedavi (cerrahi veya alternatif yöntemler) ve gerektiğinde Tüp Bebek tedavisi ile başarılı gebelik şansını artırmak mümkündür. Her vakanın kendine özgü dinamikleri olduğundan, bir uzmanla birlikte kişiye özel bir yol haritası belirlemek önemlidir. Tedavi sürecinde destek grupları ve bilgi kaynaklarından yararlanmak, zihinsel ve duygusal açıdan da önemli faydalar sunar. Eğer hydrosalpinx veya kısırlık şüpheniz varsa, erken değerlendirme ve müdahale ile umut verici sonuçlar elde edilebilir.
+Erken tanı, uygun tedavi (cerrahi veya alternatif yöntemler) ve gerektiğinde Tüp Bebek tedavisi ile başarılı gebelik şansını artırmak mümkündür. Her vakanın kendine özgü dinamikleri olduğundan, bir uzmanla birlikte kişiye özel bir yol haritası belirlemek önemlidir. Tedavi sürecinde destek grupları ve bilgi kaynaklarından yararlanmak, zihinsel ve duygusal açıdan da önemli faydalar sunar. Eğer hidrosalpinx veya kısırlık şüpheniz varsa, erken değerlendirme ve müdahale ile umut verici sonuçlar elde edilebilir.
