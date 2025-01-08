@@ -6,11 +6,11 @@ image: /src/images/blog/126.jpg
 date: 2010-01-08
 ---
 
-**Amenore (adet görememe) nedir?**
+## Amenore (adet görememe) nedir?
 
 Adet görmeme sorunu toplumuzda pek çok kadının ortak sorunu. Söz konusu rahatsızlık hormonal olabileceği gibi, strese bağlı da ortaya çıkabilir. Kesin bir teşhisin konabilmesi için mutlaka bir uzmana başvurup gerekli testlerin yaptırılması gerekir. Kısaca amenore sorununu açıklamak gerekirse, adet görememek ikiye ayrılır.
 
-**Primer ve sekonder amenore**
+## Primer ve sekonder amenore
 
 Bir kız çocuğu 14 yaşına geldiği halde göğüs ve tüylenme belirtiler henüz başlamamışsa ve adet görmemişse primer amenoreden söz edilir. Ancak göğüs gelişimi ve tüylenme başlamışsa primer amenore teşhisi koymak yaş sınırı 16’dır. Sekonder amenore ise daha önce adet görmüş bir kadının 3 ay süreyle adetlerinin kesilmesidir.
 
