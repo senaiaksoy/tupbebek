@@ -1,7 +1,7 @@
 ---
 slug: adet-gorememe-amenore
 title: Adet görememe (Amenore)
-description: Adet görmeme, Amenore nedir, nedenleri ve tedavi yöntemleri hakkında detaylı bilgi. Kadın sağlığında adet görmemenin sebeplerini ve çözümlerini öğrenin."
+description: Adet görmeme, Amenore nedir, nedenleri ve tedavi yöntemleri hakkında detaylı bilgi. Kadın sağlığında adet görmemenin sebeplerini ve çözümlerini öğrenin.
 image: /src/images/blog/126.jpg
 date: 2025-01-08
 ---
