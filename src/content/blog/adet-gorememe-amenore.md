@@ -1,81 +1,117 @@
 ---
 slug: adet-gorememe-amenore
-title: Adet görememe (Amenore)
-description: Adet görmeme sorunu toplumuzda pek çok kadının ortak sorunu. Söz konusu rahatsızlık hormonal olabileceği gibi, strese bağlı da ortaya çıkabilir. Kesin bir teşhisin konabilmesi için mutlaka bir uzmana başvurup gerekli testlerin yaptırılması gerekir.
+title: Amenore(Adet görememe): Kadın Sağlığında Sessiz Bir Belirti
+description: Amenore nedir, nedenleri ve tedavi yöntemleri hakkında detaylı bilgi. Kadın sağlığında adet görmemenin sebeplerini ve çözümlerini öğrenin.
 image: /src/images/blog/126.jpg
-date: 2010-01-08
+date: 2025-01-09
 ---
 
-## Amenore (adet görememe) nedir?
+**Amenore: Kadın Sağlığında Sessiz Bir Belirti**
 
-Adet görmeme sorunu toplumuzda pek çok kadının ortak sorunu. Söz konusu rahatsızlık hormonal olabileceği gibi, strese bağlı da ortaya çıkabilir. Kesin bir teşhisin konabilmesi için mutlaka bir uzmana başvurup gerekli testlerin yaptırılması gerekir. Kısaca amenore sorununu açıklamak gerekirse, adet görememek ikiye ayrılır.
+*Amenore, adet görmeme durumu olarak tanımlanır ve üreme çağındaki bir kadında üç adet döngüsünden uzun süreli (genellikle üç aydan fazla) adet görmeme halidir. Bu durum, kendisi bir hastalık olmaktan ziyade altta yatan bir sağlık sorununun belirtisi olabilir. Hamilelik, emzirme ve menopoz dönemlerinde amenore beklenen durumlardır; ancak, bu dışındaki durumlarda sağlık sorunlarına işaret edebilir.*
 
-## Primer ve sekonder amenore
+## Amenore Türleri
 
-Bir kız çocuğu 14 yaşına geldiği halde göğüs ve tüylenme belirtiler henüz başlamamışsa ve adet görmemişse primer amenoreden söz edilir. Ancak göğüs gelişimi ve tüylenme başlamışsa primer amenore teşhisi koymak yaş sınırı 16’dır. Sekonder amenore ise daha önce adet görmüş bir kadının 3 ay süreyle adetlerinin kesilmesidir.
+Amenore genel olarak ikiye ayrılır:
 
-Hipotalamus (beyinde talamusun altında bulunan ve üçüncü ventrikülün tabanını oluşturan önbeyin bölgesidir), hipofiz, over (yumurtalık) ve uterus (rahim) düzenli adet gören bir kadında tamamen normal çalışır. Beyinde bulunan hipotalamus ve hipofiz FSH ve LH hormonları aracılıyla yumurtalıkları uyarır. Bu sayede uyarılan yumurtalıklar östrojen ve progesteron hormonu salgılar. Östrojen ve progesteron hormonu da rahim iç tabakasını yani endometriyumu uyararak adet kanamalarının oluşmasını sağlar. Normal ve her ay düzenli bir adet kanamasının oluşması için bu organlar arasındaki ardışık mekanizma gereklidir. Mekanizma herhangi bir aşamada bozulduğunda adet görememe ya da adet düzensizliği oluşur. Ayrıca bu mekanizmaların dışında adet kanamasının olabilmesi için kanın akış yolunda (rahim ağzında, vajinada, kızlık zarında) herhangi bir nedenle tıkanıklık olmaması gerekir.
+### Primer Amenore
 
-**Primer amenore nedenleri:**
+16 yaşına kadar hiç adet görmemiş olan kızlarda meydana gelir. Bu tür daha nadirdir ve genellikle doğuştan gelen genetik durumlar veya anatomik anormalliklerden kaynaklanır.
 
-\- Hipotalamus ve hipofize ait patolojiler, tümörler
+### Sekonder Amenore
 
-\- İmperfore Hymen (Kızlık zarında açıklık olmaması)
+Daha önce düzenli adet döngülerine sahip olan kadınların üç aydan fazla süreyle adet görmemesi durumudur. Primer amenoreye göre daha yaygındır.
 
-\- Turner sendromu
+## Amenorenin Nedenleri
 
-\- Yapısal gelişme gecikmesi
+Amenorenin nedenleri primer veya sekonder olmasına bağlı olarak değişir.
 
-\- Galaktozemi
+### Primer Amenorenin Nedenleri
 
-\- İmperfore himen (Kızlık zarında hiç açıklık olmaması)
+- **Üreme Organlarının Eksikliği:** Bazı kızlar doğuştan uterus, serviks veya vajina gibi bazı üreme organlarına sahip olmayabilirler.
+- **Hipofiz Bezi Problemleri:** Beyindeki hipofiz bezi, adet döngüsünü düzenleyen hormonları üretir. Hipofiz bezinin düzgün çalışmaması amenoreye yol açabilir.
+- **Genetik Durumlar:** Turner sendromu gibi kromozomal anormallikler yumurtalık gelişimini etkileyebilir.
+- **Yaşam Tarzı Faktörleri:**
+  - **Anoreksi:** Yeme bozuklukları hormon dengesizliklerine neden olabilir.
+  - **Aşırı Egzersiz:** Hormon üretimini bozabilir.
+  - **Yetersiz Beslenme:** Doğru beslenmenin olmaması hormon üretimini etkiler.
+  - **Stres:** Fiziksel veya duygusal stres hormon dengesini bozabilir.
 
-\- Transvers vajinal septum (Vajinada perde olması)
+### Sekonder Amenorenin Nedenleri
 
-\- Vajina, serviks (rahim ağzı) veya rahmin doğuştan gelişmemiş olması
+- **Doğal Nedenler:**
+  - **Hamilelik:** Sekonder amenorenin en yaygın nedenidir.
+  - **Emzirme:** Emzirme dönemindeki hormonal değişiklikler adet görmeyi engelleyebilir.
+  - **Menopoz:** Genellikle 45-55 yaşları arasında doğal olarak gerçekleşir.
+- **Hormonal Bozukluklar:**
+  - **Polikistik Over Sendromu (PCOS):** Düzensiz veya yok adet döngülerine neden olabilir.
+- **Yaşam Tarzı Faktörleri:**
+  - **Aşırı Egzersiz ve Düşük Vücut Ağırlığı:** Hormon üretimini bozabilir.
+  - **Stres:** Yüksek stres seviyeleri hormon dengesini etkileyebilir.
+- **Tıbbi Durumlar:**
+  - **Tiroid Problemleri:** Hipotiroidizm veya hipertiroidizm amenoreye yol açabilir.
+  - **Hipofiz Bezi Tümörü:** Hormon üretimini engelleyebilir.
+  - **Erken Menopoz:** 40 yaşından önce gerçekleşen menopoz.
+  - **Otoimmün Hastalıklar:** Yumurtalıkları etkileyebilir.
+  - **Asherman Sendromu:** Uterusta skar dokusu oluşumu adet görmeyi engeller.
+- **İlaçlar ve Tedaviler:**
+  - **Doğum Kontrol Yöntemleri:** Hormonal İUD'lar ve bazı doğum kontrol hapları amenoreye neden olabilir.
+  - **Bazı İlaçlar:** Antidepresanlar, antipsikotikler ve kemoterapi ilaçları adet döngüsünü bozabilir.
 
-**Sekonder amenore nedenleri:**
+## Amenorenin Belirtileri
 
-\- Fizyolojik: Gebelik, korpus luteum kisti, süt verme, menopoz
+Amenorenin ana belirtisi adet görmemenin yanı sıra altta yatan nedene bağlı olarak çeşitli semptomlar da olabilir:
 
-\- Hipotalamus
+- **Sıcak Basmaları:** Ani ısınma hissi, terleme ve kızarma.
+- **Meme Sızıntısı (Galaktore):** Gebelik veya emzirme dışında meme uçlarından süt benzeri akıntı.
+- **Vajinal Kuruluk:** Cinsel ilişki sırasında rahatsızlık verebilir.
+- **Baş Ağrıları:** Hafiften şiddetliye kadar değişebilir.
+- **Görme Değişiklikleri:** Bulanık veya çift görme.
+- **Sivilce:** Artan sivilce oluşumu.
+- **Aşırı Kıl Büyümesi (Hirsutizm):** Hormon dengesizliğinin belirtisi olabilir.
+- **Saç Dökülmesi:** Saç incelmesi veya saç dökülmesi.
+- **Göğüs Gelişmemesi:** Primer amenorenin bir belirtisi olabilir.
 
-\- Hipofiz aksının baskılanmasına bağlı
+## Amenorenin Sağlık Riskleri
 
-\- Doğum kontrol hapı alımı sonrası amenore
+Amenore genellikle hayatı tehdit etmez, ancak tedavi edilmezse uzun vadeli sağlık sorunlarına yol açabilir:
 
-\- Stres, depresyon
+- **Kısırlık:** Yumurtalıkların ovulasyon yapmaması hamile kalmayı zorlaştırır.
+- **Osteoporoz:** Östrojen eksikliği kemik yoğunluğunu azaltır.
+- **Kardiyovasküler Hastalıklar:** Östrojen, kalp sağlığını korur; eksikliği riskleri artırır.
+- **Hormonal Dengesizlikler:** Adet döngüsü dışında büyüme ve ergenlik süreçlerini etkileyebilir.
+- **Pelvik Ağrı:** Yapısal sorunlar pelvik ağrıya neden olabilir.
+- **Psikolojik Stres:** Adet görmeme duygusal sıkıntıya yol açabilir.
 
-\- Kilo kaybı, aşırı zayıflık, iyi beslenememe
+## Amenore Tedavi Yöntemleri
 
-\- Hipofiz hastalığı: Hipofizin ablasyonu (alınması), Sheehan sendromu,
+Amenorenin tedavisi altta yatan nedene bağlıdır:
 
-\- Prolaktinoma (hiperprolaktinemi, süt hormonunun aşırı üretilmesi)
+- **Yaşam Tarzı Değişiklikleri:** Sağlıklı kilo koruma, stres yönetimi ve egzersiz düzenlemesi.
+- **Hormonal Tedaviler:** Doğum kontrol hapları veya diğer hormon tedavileri adet döngüsünü yeniden başlatabilir.
+- **Altta Yatan Hastalıkların Tedavisi:** Tiroid bozuklukları veya PCOS gibi durumların tedavisi.
+- **Cerrahi Müdahale:** Nadiren, yapısal anormalliklerin düzeltilmesi veya tümörlerin çıkarılması gerekebilir.
 
-\- Kontrol edilmemiş endokrinopatiler: Diyabet, hipotiroidizm ve hipertiroidizm
+## Amenoreyi Önlemek
 
-\- [Polikistik over hastalığı](/blog/polikistik-over-sendromu-nedenleri-ve-tedavisi "polikistik over")
+Amenoreyi tamamen önlemek zor olsa da, özellikle sekonder amenore nedenlerinden bazılarını önlemek mümkündür:
 
-\- Kemoterapi
+- **Sağlıklı Kilo Koruma:** Aşırı kilo kaybı veya fazlalığı hormon dengesini bozabilir.
+- **Dengeli Beslenme:** Hormon üretimi için gerekli besinlerin alınması.
+- **Düzenli Egzersiz:** Aşırıya kaçmadan yapılan egzersiz hormon dengesini korur.
+- **Yeterli Uyku:** Hormon düzenlemesi için önemlidir.
+- **Stres Yönetimi:** Stres seviyelerini kontrol altında tutmak.
+- **Adet Döngüsünü Takip Etmek:** Düzenli takip, erken müdahale imkanı sunar.
 
-\- Radyoterapi
+## Destek Grupları ve Topluluklar
 
-\- Endometrial Ablasyon (ameliyatla rahim iç dokusunun alınması)
+Amenore ile yaşamak fiziksel ve duygusal zorluklar yaratabilir. Aşağıdaki kaynaklar destek sağlayabilir:
 
-\- [Rahim içi yapışıklık](/blog/asherman-sendromu-rahim-ici-yapisiklik "rahim içi yapışıklık") gelişmesi (Asherman sendromu)
+- **RESOLVE: Ulusal Kısırlık Derneği:** Kısırlık yaşayanlar için destek grupları ve kaynaklar sunar.
+- **PCOSAA (Polikistik Over Sendromu Farkındalık Derneği):** PCOS olan kadınlar için destek sağlar.
+- **Endokrin Topluluğu:** Hipotalamik amenore konusunda klinik rehberlik sunar.
+- **Online Destek Toplulukları:** Deneyim paylaşımı ve duygusal destek için ideal platformlar.
 
-\- İlaç tedavisi: Sistemik steroidler, danazol, GnRh Analogları
+## Sonuç
 
-\- Prematür ovaryen yetmezlik, [erken menopoz](/blog/erken-menopoz-nedir "erken menopoz")
-
-\- Sarkoidoz
-
-\- Hiperandrojenemi (Testesteron benzeri erkeklik hormonlarının artması)
-
-**Amenore teşhisi:**
-
-Teşhis koymak için kullanılan en önemli yöntemler FSH, LH, prolaktin, duruma göre troid hormonları, ultrasonografidir. Şayet beyin içerisinde bir patolojiden şüphelenilmişse CT veya MR incelemeleri gerekebilir. Bazı vakalarda ise HSG (histerosalpingografi), SİS (salin infüzyon sonografi) ya da histeroskopi ile rahim içerisinin gözlenmesi gerekebilir.
-
-**Amenore tedavisi nasıl uygulanır:**
-
-Gebelik sekonder amenorede en sık görülen nedenlerden biridir. Bundan dolayı öncelikle kadının hamile olup olmadığı araştırılmalı. Kadının hamile olmadığı durumlarda adet görememe nedenine uygun olan tedavi şekli uygulanır. Ancak öncelikle iyi beslenememe, aşırı zayıflık, stres, depresyon, aşırı egzersiz gibi neden varsa bu durumlar düzeltilmeli. Rahim (uterus), rahim ağzı (serviks) ya da vajen gibi organlarla ilgili bir anatomik bozukluk söz konusu ise tedavi bunu düzeltmeye yönelik ameliyat olarak belirlenir. Beyindeki hipofiz bezinde aşırı prolaktin hormonu (süt hormonu) üretimine neden olan bir tümör mevcutsa, tedavi tümörün boyutuna göre ilaç tedavisi veya ameliyat şeklinde yapılır. Yumurtlama bozukluğu (anovulasyon, polikistik over sendromu) gibi nedenlerden oluşan amenore durumlarında tedavi için östrojen ve progesteron hormonu içeren ilaçlar, doğum kontrol hapları kullanılır.
+Amenore, geniş bir neden yelpazesine sahip karmaşık bir durumdur ve uzun vadeli sağlık riskleri doğurabilir. Hamilelik, emzirme ve menopoz dönemlerinde normal görülse de, bu dışındaki durumlarda altta yatan ciddi sağlık sorunlarının belirtisi olabilir. Erken tanı ve uygun yönetim, infertilite, osteoporoz ve kardiyovasküler hastalıklar gibi komplikasyonların önlenmesi açısından hayati öneme sahiptir. Amenore belirtileri yaşıyorsanız, altta yatan nedeni belirlemek ve uygun tedaviyi almak için bir sağlık profesyoneline danışmanız önemlidir. Hem fiziksel hem de duygusal yönleri ele alan bütüncül bir yaklaşım, sağlığınızı korumanıza ve iyileştirmenize yardımcı olabilir.
