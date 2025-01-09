@@ -1,15 +1,14 @@
 ---
 slug: adet-gorememe-amenore
-title: Amenore(Adet görememe): Kadın Sağlığında Sessiz Bir Belirti
+title: "Amenore(Adet görememe: Kadın Sağlığında Sessiz Bir Belirti"
 description: Amenore nedir, nedenleri ve tedavi yöntemleri hakkında detaylı bilgi. Kadın sağlığında adet görmemenin sebeplerini ve çözümlerini öğrenin.
 image: /src/images/blog/126.jpg
-date: 2025-01-09
 date: 2025-01-09
 ---
 
 ## Amenore: Kadın Sağlığında Sessiz Bir Belirti
 
-*Amenore, adet görmeme durumu olarak tanımlanır ve üreme çağındaki bir kadında üç adet döngüsünden uzun süreli (genellikle üç aydan fazla) adet görmeme halidir. Bu durum, kendisi bir hastalık olmaktan ziyade altta yatan bir sağlık sorununun belirtisi olabilir. Hamilelik, emzirme ve menopoz dönemlerinde amenore beklenen durumlardır; ancak, bu dışındaki durumlarda sağlık sorunlarına işaret edebilir.*
+_Amenore, adet görmeme durumu olarak tanımlanır ve üreme çağındaki bir kadında üç adet döngüsünden uzun süreli (genellikle üç aydan fazla) adet görmeme halidir. Bu durum, kendisi bir hastalık olmaktan ziyade altta yatan bir sağlık sorununun belirtisi olabilir. Hamilelik, emzirme ve menopoz dönemlerinde amenore beklenen durumlardır; ancak, bu dışındaki durumlarda sağlık sorunlarına işaret edebilir._
 
 ## Amenore Türleri
 
