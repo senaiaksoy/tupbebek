@@ -103,15 +103,6 @@ Amenoreyi tamamen önlemek zor olsa da, özellikle sekonder amenore nedenlerinde
 - **Stres Yönetimi:** Stres seviyelerini kontrol altında tutmak.
 - **Adet Döngüsünü Takip Etmek:** Düzenli takip, erken müdahale imkanı sunar.
 
-## Destek Grupları ve Topluluklar
-
-Amenore ile yaşamak fiziksel ve duygusal zorluklar yaratabilir. Aşağıdaki kaynaklar destek sağlayabilir:
-
-- **RESOLVE: Ulusal Kısırlık Derneği:** Kısırlık yaşayanlar için destek grupları ve kaynaklar sunar.
-- **PCOSAA (Polikistik Over Sendromu Farkındalık Derneği):** PCOS olan kadınlar için destek sağlar.
-- **Endokrin Topluluğu:** Hipotalamik amenore konusunda klinik rehberlik sunar.
-- **Online Destek Toplulukları:** Deneyim paylaşımı ve duygusal destek için ideal platformlar.
-
 ## Sonuç
 
 Amenore, geniş bir neden yelpazesine sahip karmaşık bir durumdur ve uzun vadeli sağlık riskleri doğurabilir. Hamilelik, emzirme ve menopoz dönemlerinde normal görülse de, bu dışındaki durumlarda altta yatan ciddi sağlık sorunlarının belirtisi olabilir. Erken tanı ve uygun yönetim, infertilite, osteoporoz ve kardiyovasküler hastalıklar gibi komplikasyonların önlenmesi açısından hayati öneme sahiptir. Amenore belirtileri yaşıyorsanız, altta yatan nedeni belirlemek ve uygun tedaviyi almak için bir sağlık profesyoneline danışmanız önemlidir. Hem fiziksel hem de duygusal yönleri ele alan bütüncül bir yaklaşım, sağlığınızı korumanıza ve iyileştirmenize yardımcı olabilir.
