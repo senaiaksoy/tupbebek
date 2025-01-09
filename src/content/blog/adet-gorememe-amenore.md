@@ -1,8 +1,9 @@
 ---
 slug: adet-gorememe-amenore
-title: Adet görememe (Amenore)
-description: Adet görmeme sorunu toplumuzda pek çok kadının ortak sorunu. Söz konusu rahatsızlık hormonal olabileceği gibi, strese bağlı da ortaya çıkabilir. Kesin bir teşhisin konabilmesi için mutlaka bir uzmana başvurup gerekli testlerin yaptırılması gerekir.
+title: Amenore(Adet görememe): Kadın Sağlığında Sessiz Bir Belirti
+description: Amenore nedir, nedenleri ve tedavi yöntemleri hakkında detaylı bilgi. Kadın sağlığında adet görmemenin sebeplerini ve çözümlerini öğrenin.
 image: /src/images/blog/126.jpg
+date: 2025-01-09
 date: 2025-01-09
 ---
 
