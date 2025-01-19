@@ -1,7 +1,7 @@
 ---
 slug: embriyo-dondurma
 title: Embriyo Dondurma (Embryo Freezing)
-description: **Embriyo vitrifikasyonu**, embriyoların ultra hızlı bir şekilde dondurularak hasarsız şekilde korunmasını sağlayan bir yöntemdir. Bu sayede, oluşabilecek buz kristalleri önlenir ve embriyolar -196°C’de uzun süre saklanabilir. Tüp bebek tedavisinde, fazla embriyoların vitrifikasyonla saklanması hem tedavi maliyetini düşürür hem de çiftlere ileride tekrar deneme şansı sunar.
+description: Embriyo vitrifikasyonu, embriyoların ultra hızlı bir şekilde dondurularak hasarsız şekilde korunmasını sağlayan bir yöntemdir. Bu sayede, oluşabilecek buz kristalleri önlenir ve embriyolar -196°C’de uzun süre saklanabilir. Tüp bebek tedavisinde, fazla embriyoların vitrifikasyonla saklanması hem tedavi maliyetini düşürür hem de çiftlere ileride tekrar deneme şansı sunar.
 image: /src/images/20.jpg
 ---
 
