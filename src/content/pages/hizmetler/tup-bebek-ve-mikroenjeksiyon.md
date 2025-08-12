@@ -104,5 +104,3 @@ Fiyat, merkez, kullanılan ilaç ve ek tekniklere göre değişir.
 
 Mikroenjeksiyon, özellikle sperm kaynaklı sorunlarda gebelik şansını önemli ölçüde artıran, güvenilir ve etkili bir yöntemdir.  
 Unutmayın, **en doğru tedavi seçimi, kişisel tıbbi değerlendirme sonrası yapılır**.  
-
-💬 *Sizin hikâyeniz nedir? Deneyimlerinizi yorumlarda paylaşabilirsiniz.*
