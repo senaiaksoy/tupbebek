@@ -1,7 +1,7 @@
 ---
 slug: tup-bebek-tedavisinde-tekrarlayan-basarisizliklar
 title: Tüp Bebek Tedavisinde Tekrarlayan Başarısızlıklar
-description: "Tüp bebek tedavisindeki başarısızlıkları iki başlık altında inceleyebiliriz: Her denemede embriyo kalitesinin kötü olması ve iyi embriyo kalitesine rağmen gebelik oluşmaması."
+description: "Tüp bebek tedavisindeki başarısızlıkları iki başlık altında inceleyebiliriz. Her denemede embriyo kalitesinin kötü olması ve iyi embriyo kalitesine rağmen gebelik oluşmaması."
 image: /src/images/blog/142.jpg
 date: 2013-01-16
 ---

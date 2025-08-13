@@ -27,7 +27,7 @@ Fetüste gelişme geriliğine yol açan pek çok neden vardır. Bunlardan en ön
 • İkiz gibi çoğul gebelikler  
 • Fetüste enfeksiyonlar
 
-**Gelişme geriliği tedavisi**
+## **Gelişme geriliği tedavisi**
 
 Fetüste IUGG tanısı konduğu takdirde hamilelik daha sıkı takip altına alınır. Hamilelik süresince yapılan ultrason, doppler ve NST, biyofizik profil (BPP) testleri fetüsün tehlike altında olduğuna işaret ederlerse doğum gerçekleştirilir. Her ne kadar gelişme geriliği görülen bebekler normal doğumla dünyaya gelebilseler de sezaryenle alınmaları ihtimali normal hamileliklere göre daha yüksektir.
 
