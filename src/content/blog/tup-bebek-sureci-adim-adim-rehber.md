@@ -32,7 +32,6 @@ Burada doktorunuz (hani şu “sizi kahveyle değil, ultrason probuyla karşıla
 Günlük iğneler başlıyor. Evet, kulağa romantik gelmiyor ama yumurtaların birden fazla gelişmesi için şart.
 📌 **Anahtar nokta:** Doz ve süre kişiye özel ayarlanır.
 
-
 -
 
 ## **3. Yumurtaların Toplanması (OPU – Ovum Pick-Up)**
@@ -46,8 +45,8 @@ Anestezi altında yapılan bu işlem ortalama 15-20 dakika sürer. Karın bölge
 
 Toplanan yumurtalar ile spermler laboratuvarda buluşturulur.
 
-* **Klasik IVF:** Yumurtanın etrafına spermler bırakılır, doğa işini yapar.
-* **ICSI (Mikroenjeksiyon):** Tek bir sperm, doğrudan yumurtanın içine enjekte edilir.
+- **Klasik IVF:** Yumurtanın etrafına spermler bırakılır, doğa işini yapar.
+- **ICSI (Mikroenjeksiyon):** Tek bir sperm, doğrudan yumurtanın içine enjekte edilir.
   📌 **Avantaj:** ICSI, düşük sperm sayısı veya kalitesi olan çiftlerde başarıyı artırır.
 
 ---
