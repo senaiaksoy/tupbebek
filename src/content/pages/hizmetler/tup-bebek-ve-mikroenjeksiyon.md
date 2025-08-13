@@ -2,7 +2,7 @@
 slug: tup-bebek-ve-mikroenjeksiyon
 title: Mikroenjeksiyon (ICSI) ile Tüp Bebek Tedavisi, 2025 Güncel Rehber
 description: Mikroenjeksiyon (ICSI) ile tüp bebek tedavisi kimlere uygulanır? IVF farkı, aşamaları, başarı oranları, maliyet ve yeni teknikler hakkında detaylı rehber.
-image: /src/images/11.jpg
+image: /src/images/ICSI_fertilization.jpg
 ---
 
 
