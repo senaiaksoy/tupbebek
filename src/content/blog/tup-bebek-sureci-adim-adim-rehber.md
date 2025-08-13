@@ -10,9 +10,6 @@ date: 2025-08-12
 
 ## **Tüp Bebek Süreci: İlk Muayeneden Embriyo Transferine Adım Adım Rehber**
 
-**Meta description:**
-Tüp bebek sürecini baştan sona keşfedin: ilk muayene, yumurta toplama, döllenme ve embriyo transferi adımlarını uzman anlatımıyla öğrenin.
-
 ---
 
 ## **Giriş: Yolculuk Başlıyor**
@@ -34,9 +31,9 @@ Burada doktorunuz (hani şu “sizi kahveyle değil, ultrason probuyla karşıla
 
 Günlük iğneler başlıyor. Evet, kulağa romantik gelmiyor ama yumurtaların birden fazla gelişmesi için şart.
 📌 **Anahtar nokta:** Doz ve süre kişiye özel ayarlanır.
-**Cem Yılmaz tarzı not:** “Doktor bana iğne yazdı, dedim ‘Nereye yazayım?’… ‘Kendi üzerine yaz’ dedi.”
 
----
+
+-
 
 ## **3. Yumurtaların Toplanması (OPU – Ovum Pick-Up)**
 
