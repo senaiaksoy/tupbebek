@@ -14,6 +14,8 @@ date: 2025-08-14
 
 Peki, bu protokoller ne anlama geliyor ve hangisi sizin için uygun olabilir? Gelin, bu yol haritalarını birlikte daha yakından tanıyalım.
 
+[![Tüp Bebek Protokolleri – Uzun mu? Kısa mı?](https://img.youtube.com/vi/NLvPH9mZIaE/maxresdefault.jpg)](https://youtu.be/NLvPH9mZIaE)
+
 #### 1. Uzun Protokol: Kontrollü ve Planlı Bir Başlangıç
 
 Bu protokol, adından da anlaşılacağı gibi biraz daha uzun soluklu ama bir o kadar da planlı bir yaklaşımdır. Genellikle yumurta rezervi iyi olan kadınlarda tercih edilir.
