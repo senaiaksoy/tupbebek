@@ -9,6 +9,9 @@ image: /src/images/37.jpg
 
 Tüp bebek (IVF) tedavisi gören çiftler için **embriyo transferi sonrasındaki bekleyiş**, tarifsiz duyguların yaşandığı bir dönemdir. Hemen herkesin aklında tek bir soru vardır: “**Acaba başarılı oldu mu?**” Tam da burada, bu sorunun yanıtını veren en kritik test, **b-hCG (beta-hCG)** testidir. Bu test, gebelik hormonu olarak da bilinen **hCG** seviyelerini ölçer ve embriyonun rahim duvarına tutunup tutunmadığına dair ipuçları sunar. Gelin, bu hormonun ne işe yaradığına, değerlerinin ne anlama geldiğine ve dikkat etmeniz gereken noktalara birlikte göz atalım.
 
+[![Tüp Bebek Sonrası O 12 Gün](https://img.youtube.com/vi/-zljs4t7rrY/maxresdefault.jpg)](https://youtu.be/-zljs4t7rrY)
+**Tüp Bebek Tedavim Tuttu mu? Belirtiler Gerçek mi, Efsane mi?**
+
 ---
 
 ## b-hCG Nedir ve Kaç Olmalıdır?
