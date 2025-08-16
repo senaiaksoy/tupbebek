@@ -1,7 +1,7 @@
 ---
 slug: tup-bebek-tedavim-tuttu-mu
 title: Tüp Bebek Tedavim 'Tuttu mu'?
-description: Embriyo transferi ile gebelik testi arasındaki dönemde görülen kanamalar hasta için çok endişe vericidir ve tedavinin başarısız olduğunu düşündürür.
+description: b‑hCG testi nedir? Tüp bebek tedavisinde beta‑hCG (beta insan koryonik gonadotropin) değerleri nasıl yorumlanır? Embriyo transferi sonrası hamilelik beklentiniz, normal hCG değerleri ve dikkat etmeniz gerekenler Dr. Senai Aksoy’un uzman rehberliğiyle bu yazıda.
 image: /src/images/37.jpg
 ---
 
@@ -76,7 +76,7 @@ Dış gebelikte b-hCG artışı genellikle **beklenenin altında** kalır ya da 
 
 ## Son Söz: Sabırlı ve Pozitif Olun
 
-Tüp bebek tedavisi esnasında en heyecanlı ama bir o kadar da stresli dönem, embriyo transferinden sonra yapılan **b-hCG testini beklemektir**. Unutmayın ki tek bir kan testiyle kesin sonuca varmak çoğu zaman mümkün olmaz. Değerleriniz düşük çıktığında hemen umutsuzluğa kapılmayın, yüksek çıktığında da hemen büyük beklentilere girmeyin. Bu noktada en doğru yaklaşım, doktorunuzun yönlendirmelerini takip etmek ve birkaç gün ara ile yinelenen test sonuçlarını birlikte yorumlamaktır.  
+[Tüp bebek tedavisi](https://tupbebek.com/tup-bebek-tedavisinde-nelere-dikkat-etmelisiniz/) esnasında en heyecanlı ama bir o kadar da stresli dönem, [embriyo transferinden](https://tupbebek.com/embriyo-transferi-sonrasi-neler-yapmaliyim/) sonra yapılan **b-hCG testini beklemektir**. Unutmayın ki tek bir kan testiyle kesin sonuca varmak çoğu zaman mümkün olmaz. Değerleriniz düşük çıktığında hemen umutsuzluğa kapılmayın, yüksek çıktığında da hemen büyük beklentilere girmeyin. Bu noktada en doğru yaklaşım, doktorunuzun yönlendirmelerini takip etmek ve birkaç gün ara ile yinelenen test sonuçlarını birlikte yorumlamaktır.  
 
 Eğer b-hCG’niz beklenen artışı gösteriyorsa, gebeliğin sağlıklı devam ettiğinden bahsedebiliriz. Öte yandan, süreçte herhangi bir pürüz çıksa bile, modern tıbbın olanakları sayesinde erken dönemde müdahale edilebilecek pek çok çözüm yolu bulunuyor. **Bu dönemi daha az stres ve daha çok umutla** yaşamanız, hem bedeniniz hem de ruh haliniz için çok kıymetlidir.  
 
@@ -146,3 +146,5 @@ Eğer b-hCG’niz beklenen artışı gösteriyorsa, gebeliğin sağlıklı devam
     </tr>
   </tbody>
 </table>
+
+*Bu yazı Doç.Dr.Senai AKSOY tarafından hazırlanmış ve tıbbi olarak onaylanmıştır.*
