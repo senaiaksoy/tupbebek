@@ -1,7 +1,7 @@
 ---
 slug: tup-bebek-tedavisinde-catlatma-ignesi
 title: Tüp Bebek Tedavisinde Çatlatma İğnesinin Önemi
-description: Yumurtalıkların Aşırı Uyarılması (Ovarian Hiperstimülasyon Sendromu - OHSS) tüp bebek tedavisinin en önemli komplikasyonudur. Genellikle polikistik over sendromlu (PKOS) kadınlarda ortaya çıkar.
+description: Tüp Bebek tedavinizin başarısı açısından çatlatma iğnenizi tam olarak size ekibimiz tarafından söylenen zamanda yapmanız ve yumurta toplamaya tam zamanında gelmeniz çok önemlidir
 image: /src/images/39.jpg
 ---
 
