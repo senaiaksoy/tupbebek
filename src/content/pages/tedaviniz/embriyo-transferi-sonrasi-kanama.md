@@ -17,6 +17,9 @@ Tüp bebek tedavisinde en heyecanlı fakat belirsizliklerle dolu dönem, embriyo
 
 Bu hafif kanamalar genellikle tedavi başarısının iyi ya da kötü bir göstergesi değildir; pek çok hasta hafif kanama yaşasa da gebelik testi pozitif çıkabilir. Ancak kanamanın özelliklerine dikkat etmek gerekir.
 
+[![Embriyo Transferi Sonrası Kanama](https://img.youtube.com/vi/vwsgOtGVTPY/0.jpg)](https://youtu.be/vwsgOtGVTPY)
+
+
 ## Kanama Ne Zaman ve Nasıl Ortaya Çıkar?
 
 | Zaman aralığı        | Olası sebep                                       | Tipik özellikleri                                      |
