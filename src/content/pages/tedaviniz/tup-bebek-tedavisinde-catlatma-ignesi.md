@@ -36,11 +36,11 @@ hCG ya da çatlatma iğnesi uygulandıktan sonra çok uzun süre beklenirse, fol
 
 Yumurta toplamaya geç gelirseniz foliküllerinizin çatlayarak karın boşluğuna dökülmüş olması çok muhtemeldir. İzlenebilecek yollar şunlardır:
 
-### 1. Yumurta Toplama İşlemini ve Tedaviyi İptal Etmek:
+### 1. Yumurta Toplama İşlemini ve Tedaviyi İptal Etmek
 
 Bu durumda olumlu sonuç alma ihtimali çok düşüktür. Üstelik hastanın anestezi ve operasyon risklerine ve maliyetine katlanması gerekeceğinden tedavinin iptal edilmesi en mantıklı olanıdır. Çatlatma iğnesinden sonra bu kadar geç kalındığında yumurta toplama ihtimali çok düşüktür ve toplanabilse dahi yumurtaların hamileliğin gerçeklemesi için fazla olgunlaşmış olması çok muhtemeldir.
 
-### 2. Yumurtlama Belirtileri Yoksa Yumurta Toplama İşlemini Gerçekleştirmek:
+### 2. Yumurtlama Belirtileri Yoksa Yumurta Toplama İşlemini Gerçekleştirmek
 
 Çatlatma iğnesinden 60 saat sonra foliküllerden veya rahmin arkasında barsaklarla arasındaki boşluktan (douglas boşluğu) yumurta toplanabildiği bazı vakalar bildirilmiş olmakla birlikte bu çok seyrek görülen bir durumdur. Öte yandan bu şekilde yumurta bulunsa dahi, bu yumurtaların döllenme ve bunun sonucunda oluşan embryolardan hamilelik oluşma ihtimali de çok düşüktür. Eğer bu yol izlenecekse, hasta sonucun belirsizliği ve başarı olasılığının düşüklüğü konusunda çok iyi bilgilendirilmiş ve bu durumu tamamen anlamış olmalıdır.
 
