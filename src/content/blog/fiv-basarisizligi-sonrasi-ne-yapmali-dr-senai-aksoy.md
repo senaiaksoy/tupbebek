@@ -2,7 +2,7 @@
 slug: fiv-basarisizligi-sonrasi-ne-yapmali-dr-senai-aksoy
 title: Tüp Bebek Tutmadı, Şimdi Ne Olacak? Dr. Senai Aksoy Anlatıyor
 description: FIV sonrası negatif sonuç mu aldınız? Dr. Senai Aksoy, infertil çiftlere samimi ve umut dolu bir rehber sunuyor. Sonraki adımları öğrenin!”
-image: /src/images/blog/tup-bebek-basarisizligi.jpg
+image: /src/images/blog/tup-bebek-basarizligi-sonrasi.jpg
 date: 2025-04-11
 ---
 
@@ -10,6 +10,7 @@ date: 2025-04-11
 
 (Selam, arkadaşlar! Dr. Senai Aksoy burada. Çayımı aldım, stetoskop boynumda, hazırız! 😎) FIV (tüp bebek) maceranızda test negatif çıktı ve içinizde bir yerlerde “N’oldu şimdi, bu iş bitti mi?” diye bir ses yankılanıyor, değil mi? Hadi gelin, şöyle rahat bir koltuğa yayılın, derin bir nefes alın ve bırakın, ben size bu işin iç yüzünü anlatayım. FIV sonrası başarısızlık, dünya’nın sonu değil; sadece yolculuğunuzda ufak bir mola. Bu yazıda, infertil çiftler için hem duygusal hem de tıbbi olarak neler yapabileceğinizi umutla anlatıyorum. Hazırsanız, başlıyoruz!
 
+[![Tüp Bebek Tutmadı Mı? Sakın Üzülme! İşte Sonraki Adımlar](https://img.youtube.com/vi/sDcaagphlHU/0.jpg)](https://youtu.be/sDcaagphlHU)
 ---
 
 ### **1. Önce Kalbinizi Dinleyin: Üzülmek Yasak Değil!**
