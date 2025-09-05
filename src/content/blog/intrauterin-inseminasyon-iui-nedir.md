@@ -12,7 +12,6 @@ Merhaba, ben Dr. Senai Aksoy, infertilite uzmanı olarak uzun yıllardır çiftl
 
 [![Sperm Sayısı ve Aşılama Başarısı Arasındaki İlişki](https://img.youtube.com/vi/hZrP4-bD2y0/0.jpg)](https://youtu.be/hZrP4-bD2y0)
 
-
 #### İntrauterin İnseminasyon Nedir?
 
 İntrauterin inseminasyon, infertilite tedavisinde kullanılan bir yöntemdir ve halk arasında “aşılama” olarak da bilinir. Bu işlemde, özel olarak hazırlanmış sperm doğrudan rahme yerleştirilir. Rahim, bebeğin geliştiği organdır ve IUI, sağlıklı spermlerin fallop tüplerine ulaşma şansını artırarak gebeliği kolaylaştırmayı amaçlar. Doğal yollarla gebe kalmak için spermin vajina, serviks ve rahim boyunca uzun bir yolculuk yapması gerekir. Ancak IUI, bu mesafeyi kısaltır ve spermin yumurtaya ulaşmasını kolaylaştırır. Özellikle sperm kalitesi veya miktarının düşük olduğu durumlarda bu yöntem oldukça etkili olabilir. Ayrıca, IUI’nin temel hedefi, doğal bariyerleri aşarak daha fazla sayıda sağlıklı spermi yumurtaya yakın bir konuma ulaştırmaktır. Bu, döllenme şansını artıran önemli bir avantaj sağlar.
