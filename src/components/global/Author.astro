@@ -1,0 +1,95 @@
+---
+import Icon from "@icons/index.astro";
+import { Image } from "astro:assets";
+import profileImage from "../../images/sa-profile.jpg";
+const currentLocale = Astro.currentLocale || "en";
+---
+
+<div class="author-card">
+  <Image src={profileImage} alt="Dr. Senai Aksoy" class="author-image" />
+
+  <div class="author-info">
+    <h3 class="author-name">Yazar: Dr. Senai Aksoy</h3>
+    <p class="author-bio">
+      Otuz yılı aşkın süredir kadın hastalıkları, infertilite ve tüp bebek
+      tedavileri alanında çalışan bir hekimim. Bu blogda, mesleki deneyimlerim
+      ve bilimsel birikimimden süzülen bilgileri paylaşarak, çocuk sahibi olma
+      yolunda ilerleyen çiftlere yol göstermeyi amaçlıyorum. Unutmayın, bu
+      yolculukta yalnız değilsiniz.
+    </p>
+
+    <div class="author-socials">
+      <a
+        href="https://www.instagram.com/drsenaiaksoy/"
+        title="Instagram'da takip et"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Icon name="instagram" size="large" />
+      </a>
+      <a
+        href="https://www.youtube.com/senaiaksoy"
+        title="YouTube'da takip et"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Icon name="youtube" size="large" />
+      </a>
+    </div>
+  </div>
+
+  <style>
+    .author-card {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--spacing-large);
+      background-color: var(--color-gray-10);
+      padding: 20px;
+      border-radius: 8px;
+      border: 1px solid var(--color-gray-20);
+      margin-top: var(--spacing-large);
+    }
+
+    .author-socials {
+      display: flex;
+      gap: var(--spacing-medium);
+    }
+
+    .author-image {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .author-info {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      gap: var(--spacing-medium);
+    }
+
+    .author-name {
+      font-size: 1.5em;
+      margin: 0;
+    }
+
+    .author-bio {
+      font-size: 1em;
+      color: #666;
+      margin: 0;
+    }
+
+    @media screen and (max-width: 600px) {
+      .author-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .author-info {
+        align-items: center;
+      }
+    }
+  </style>
+</div>

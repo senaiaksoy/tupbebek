@@ -1,4 +1,5 @@
 ---
+import Author from "@components/Author.astro";
 import Breadcrumbs from "@components/Breadcrumbs.astro";
 import Title from "@components/Title.astro";
 import Icon from "@icons/index.astro";
@@ -22,8 +23,9 @@ const { Content } = await post.render();
   <article class={styles.article}>
     <header class={styles.header}>
       <Breadcrumbs>
-        <a href="/blog/"><Icon name="arrowLeft" size="small" /> Tüm makaleler</a
-        >
+        <a href="/blog/">
+          <Icon name="arrowLeft" size="small" /> Tüm makaleler
+        </a>
       </Breadcrumbs>
       <Title size="large">
         {post.data.title}
@@ -46,5 +48,7 @@ const { Content } = await post.render();
     }
 
     <Content />
+
+    <Author />
   </article>
 </Layout>
