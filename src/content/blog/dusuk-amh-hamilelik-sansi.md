@@ -13,6 +13,8 @@ Selamlar, ben **Doç. Dr. Senai Aksoy**. Uzun zamandır infertilite ve tüp bebe
 
 Öncelikle sakin olalım. **Düşük AMH, her şeyin bittiği anlamına gelmiyor; sadece doğru bir planlama ve zamanlama yapılması gereken bir durum.** Bu yazıda, size seçenekleri en basit ve dürüst şekilde aktaracağım. Biraz da espri yapıp moralinizi yükseltmeye çalışacağım; sonuçta hepimiz insanız, değil mi? 🙂
 
+[![Düşük AMH ile Hamile Kalınır mı?](https://img.youtube.com/vi/LyLGywUUipg/hqdefault.jpg)](https://youtu.be/LyLGywUUipg)
+
 ---
 
 ## AMH Nedir? “Düşük” AMH Ne Anlama Gelir?
