@@ -15,6 +15,8 @@ Selamlar, ben **Doç. Dr. Senai Aksoy**. Uzun zamandır infertilite ve tüp bebe
 
 [![Düşük AMH ile Hamile Kalınır mı?](https://img.youtube.com/vi/LyLGywUUipg/hqdefault.jpg)](https://youtu.be/LyLGywUUipg)
 
+Düşük AMH ile Hamile Kalınır mı? (Youtube'te izle.)
+
 ---
 
 ## AMH Nedir? “Düşük” AMH Ne Anlama Gelir?
