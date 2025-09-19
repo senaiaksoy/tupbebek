@@ -6,7 +6,7 @@ image: /src/images/blog/miyom-ameliyati-ne-zaman-gerekir.jpg
 date: 2025-09-19
 ---
 
-
+*Bu blog yazısı Doç.Dr.Senai AKSOY tarafından en güncel bilgilere dayanarak yazılmış ve onaylanmıştır. Yazının Yayın tarihi: 19 Eylül 2025*
 
 ## Miyom Ne Zaman Ameliyat Edilmeli? Dr. Aksoy'un Trafik Lambası Rehberi
 
@@ -112,3 +112,5 @@ Bu anlattıklarım aklınızdaki sorulara bir nebze olsun ışık tuttuysa ne mu
 Daha detaylı bilgi almak veya o meşhur komşunuzu benimle tanıştırmak isterseniz, randevu için aşağıdaki linklere bakabilirsiniz. Ben, Dr. Senai Aksoy, burada sizi bekliyorum.
 
 Geçmiş olsun ve umutla kalın
+
+*Bu blog yazısı Doç.Dr.Senai AKSOY tarafından en güncel bilgilere dayanarak yazılmış ve onaylanmıştır.*
