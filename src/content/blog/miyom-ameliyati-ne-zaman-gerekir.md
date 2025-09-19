@@ -14,7 +14,11 @@ Merhaba sevgili arkadaşlarım, Dr. Senai Aksoy ben. Yıllardır bu yolda o kada
 
 Sizi o kadar iyi anlıyorum ki... Bir yanda doktorunuz "rahimde miyom var" diyor, diğer yanda internette okuduklarınızla aklınız allak bullak oluyor. Bazen bir kadının içinde greyfurt gibi miyom durur, tık demez, hamile kalır. Bazen de leblebi tanesi kadar bir miyom (bakın nohut bile demiyorum\!) bütün sistemi kilitler, alarm verdirir. Akıl sır eriyor mu? İlk bakışta ermiyor. Ama biz erdireceğiz\!
 
-Bu yazının sonunda, o "ameliyat olsam mı, olmasam mı?" ikileminden çıkıp, "Hocam, ben galiba sarı ışıktayım" diyecek kıvama geleceksiniz. Hazırsanız kontağı çeviriyorum, kemerlerinizi bağlayın\!
+Bu yazının sonunda, o "ameliyat olsam mı, olmasam mı?" ikileminden çıkıp, "Hocam, ben galiba sarı ışıktayım" diyecek kıvama geleceksiniz. Hazırsanız kontağı çeviriyorum, kemerlerinizi bağlayın.
+
+[![Miyomlar Ne Zaman Ameliyat Edilmeli?](https://img.youtube.com/vi/0G7yRX5Op1I/0.jpg)](https://youtu.be/0G7yRX5Op1I)
+
+Youtube'te izleyin: Miyomlar Ne Zaman Ameliyat Edilmeli?
 
 ## Miyom Nedir? Şu Meşhur Komşuyu Bir Tanıyalım
 
