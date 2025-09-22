@@ -14,6 +14,9 @@ Günümüzün tıp dünyasında teknoloji ve zarafetin iç içe geçtiği en ça
 - **Tanısal (Diagnostic) Histeroskopi**: Rahim içindeki anormallikleri net şekilde görmek, polip veya myom gibi lezyonların varlığını teyit etmek için tercih edilir. Ofis histeroskopi, çoğu zaman anesteziye ihtiyaç duymadan, muayenehane ortamında uygulanır.  
 - **Tedavi Edici (Operatif) Histeroskopi**: Rahim boşluğunda saptanan perde (septum), büyük polip veya myom gibi sorunları çözmek ya da aşırı kanaması olan kadınların endometriumunu (rahim iç tabakası) almak amacıyla yapılır. Anestezi altında gerçekleştirilir, işleme “elektrorezektör” adı verilen özel bir alet eşlik eder.
 
+[![Histeroskopi](https://img.youtube.com/vi/hMAjGV6LGCc/hqdefault.jpg)](https://youtu.be/hMAjGV6LGCc)
+Youtube'te seyredin
+
 ---
 
 ## Ofis Histeroskopi: Minimal Dokunuşlarla Kapsamlı Bir Değerlendirme
