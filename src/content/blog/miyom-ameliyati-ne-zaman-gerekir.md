@@ -42,7 +42,7 @@ Eğer teşhisiniz **submüköz miyom** ise, sizin için trafik lambası yeşil y
 * **Neden Harekete Geçilmeli?** Submüköz miyomlar, rahmin en hassas ve fonksiyonel bölgesi olan endometrium tabakasını, yani embriyonun tutunacağı yatağı doğrudan etkiler. Boyutları ne olursa olsun, bu miyomlar genellikle şu sorunlara yol açar:
     * Şiddetli, uzun süren ve pıhtılı adet kanamaları, bu duruma bağlı olarak gelişen demir eksikliği anemisi (kansızlık).
     * Embriyonun rahme tutunmasını engelleyerek kısırlığa neden olma.
-    * https://tupbebek.com/blog/tekrarlayan-dusuklerin-nedenleri/) yol açma.
+    * [Tekrarlayan düşükler](https://tupbebek.com/blog/tekrarlayan-dusuklerin-nedenleri/) yol açma.
     * Tekrarlayan [tüp bebek](https://tupbebek.com/tup-bebek-asamalari/) başarısızlıkları.
 
 Bu nedenlerle, gebelik planı olsun ya da olmasın, semptomlara neden olan bir submüköz miyom tespit edildiğinde genellikle cerrahi müdahale önerilir.
