@@ -7,8 +7,18 @@ date: 2025-09-26
 ---
 
 
-
 ## Tüp Bebekte Kritik Karar: Taze mi, Dondurulmuş Embriyo Transferi mi?
+
+> ## İçindekiler
+
+> * [Tüp Bebekte Kritik Karar: Taze mi, Dondurulmuş Embriyo Transferi mi?](#tüp-bebekte-kritik-karar-taze-mi-dondurulmuş-embriyo-transferi-mi)
+> * [Taze ve Dondurulmuş Embriyo Transferi: Temel Farklar Nelerdir?](#taze-ve-dondurulmuş-embriyo-transferi-temel-farklar-nelerdir)
+> * [Dondurulmuş Embriyo Transferi (FET) Neden Öne Çıkıyor? Avantajları](#dondurulmuş-embriyo-transferi-fet-neden-öne-çıkıyor-avantajları)
+> * [Madalyonun Öteki Yüzü: Göz Önünde Bulundurulması Gerekenler](#madalyonun-öteki-yüzü-göz-önünde-bulundurulması-gerekenler)
+> * [Başarı Oranları Ne Diyor? Rakamlar ve Bireysel Gerçekler](#başarı-oranları-ne-diyor-rakamlar-ve-bireysel-gerçekler)
+> * [Karar Anı: Hangi Yöntem Sizin İçin Daha Uygun?](#karar-anı-hangi-yöntem-sizin-için-daha-uygun)
+> * [Sıkça Sorulan Sorular (SSS)](#sıkça-sorulan-sorular-sss)
+> * [Sonuç ve Kişisel Tavsiyem](#sonuç-ve-kişisel-tavsiyem)
 
 Merhaba, ben Dr. Senai Aksoy. İstanbul'daki kliniğimde uzun yıllardır birçok çiftin anne-baba olma hayallerine ortak oldum. Bu süreçte en çok merak edilen ve biraz da stres yaratan konulardan birinin embriyo transferi olduğuna şahit oldum. Laboratuvarda özenle büyüttüğümüz o küçücük hücrenin anne rahmine yerleşeceği o özel an... İşte burada iki farklı yöntem devreye giriyor: Taze embriyo transferi mi, yoksa dondurulmuş embriyo transferi mi? Bu sorunun net bir cevabı yok. En uygun yöntem, sizin sağlık durumunuza, vücudunuzun tedaviye nasıl cevap verdiğine ve beklentilerinize göre değişen, tamamen size özel bir seçimdir.
 
