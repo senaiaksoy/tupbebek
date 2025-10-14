@@ -1,6 +1,6 @@
 ---
 slug: tup-bebekte-basarili-sonuc-icin-kac-yumurta-gerekir
-title: Tüp Bebek Tedavisinde Başarı İçin **Gerçekten** Kaç Yumurta Gerekir?
+title: Tüp Bebek Tedavisinde Başarı İçin Gerçekten Kaç Yumurta Gerekir?
 description: Tüp bebek tedavisinde başarı şansını artırmak için kaç yumurta gerekir? Yumurta sayısı, kalite ve yaş faktörleri hakkında Dr. Senai Aksoy’dan bilimsel açıklama.
 image: /src/images/blog/yumurta-sayisi.jpg
 date: 2025-10-08
@@ -11,10 +11,10 @@ date: 2025-10-08
 ## 📖 İçindekiler
 
 - [Yumurta Sayısı Neden Önemli?](#yumurta-sayısı-neden-önemli)
-- [Yumurta Sayısı ve Başarı Oranı (Tablo)](#-yumurta-sayısı-ve-başarı-oranı-özet-tablo)
-- [Yumurta Kalitesi mi, Sayısı mı?](#yumurta-kalitesi-mi-sayısı-mı-tek-bir-altın-yumurta-yeterli-olabilir-mi)
-- [Tüp Bebekte İdeal Yumurta Sayısı Var mı?](#tüp-bebekte-ideal-yumurta-sayısı-var-mı)
-- [Düşük Yumurta Rezervi Olanlar İçin Öneriler](#düşük-yumurta-rezervi-olanlar-için-öneriler)
+- [Yumurta Sayısı ve Başarı Oranı](#yumurta-sayısı-ve-başarı-oranı)
+- [Yumurta Kalitesi mi, Sayısı mı?](#yumurta-kalitesi-mi-sayısı-mı)
+- [Tüp Bebekte Kaç Yumurta Gerekir?](#tüp-bebekte-kaç-yumurta-gerekir)
+- [Rezerv Düşükse Ne Yapmalı?](#rezerv-düşükse-ne-yapmalı)
 - [Sıkça Sorulan Sorular (SSS)](#sıkça-sorulan-sorular-sss)
 - [Sonuç ve Tavsiyeler](#sonuç-ve-tavsiyeler)
 
@@ -41,7 +41,7 @@ Bu yüzden, genç ve yumurtalık rezervi iyi bir hastamızdan örneğin 10-15 ci
 
 ---
 
-### 🔹 **Yumurta Sayısı ve Başarı Oranı (Özet Tablo)**
+### **Yumurta Sayısı ve Başarı Oranı**
 
 | Toplanan Yumurta Sayısı | Ortalama Gebelik Oranı | Riskler / Notlar |
 |--------------------------|------------------------|------------------|
@@ -55,7 +55,7 @@ Kaynak: [ESHRE IVF Stimulation Consensus, 2023](https://www.eshre.eu/Guidelines-
 
 ---
 
-## Yumurta Kalitesi mi, Sayısı mı? Tek Bir “Altın Yumurta” Yeterli Olabilir mi?
+## Yumurta Kalitesi mi, Sayısı mı?
 
 Şimdi diyeceksiniz ki: “Madem 15 yumurta ideal, benim ancak 3-4 yumurtam çıkıyorsa hiç umut yok mu?”
 İşte burada **yumurta kalitesi** devreye giriyor. Yumurta sayısı elbette önemli bir faktör, ama **tek başına bir başarı garantisi değil**.
@@ -65,7 +65,7 @@ Gerçekten de, tüp bebek tedavisinde sayısız kalitesiz yumurtadan ziyade, **k
 
 ---
 
-## Tüp Bebekte İdeal Yumurta Sayısı Var mı?
+## Tüp Bebekte Kaç Yumurta Gerekir?
 
 Her hastada hedeflenen yumurta sayısı farklıdır.
 **Genel ortalama 8–15 arası yumurta** gebelik şansını anlamlı şekilde artırır.
@@ -78,7 +78,7 @@ Daha fazla bilgi için:
 
 ---
 
-## Düşük Yumurta Rezervi Olanlar İçin Öneriler
+## Rezerv Düşükse Ne Yapmalı?
 
 Düşük yumurtalık rezervi olanlarda her yumurta altın değerindedir.
 👉 **[Tüp Bebek Tedavisinde Nelere Dikkat Etmelisiniz](https://tupbebek.com/tup-bebek-tedavisinde-nelere-dikkat-etmelisiniz/)** yazısında da anlattığım gibi, beslenme, stres yönetimi ve vitamin desteği büyük fark yaratabilir.
