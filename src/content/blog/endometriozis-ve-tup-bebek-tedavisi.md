@@ -15,6 +15,8 @@ Bu büyük değişimin sebebi, 2025'te ilk sonuçları açıklanan ve ortalığ�
 Eskiden endometriozis ve çikolata kistlerinden kurtulmak için ameliyatın hamilelik için tek yol olduğuna inanırdık. Ama artık bu durumun sadece karın bölgesinde değil, tüm vücudu etkileyen kronik bir rahatsızlık olduğunu biliyoruz. 2025'te geldiğimiz noktada, amacımız artık hastalığı iyileştirmek değil, hastanın asıl isteğine (bebek sahibi olmak veya ağrıdan kurtulmak) odaklanmak.
  Bu yazıda, 2025 itibarıyla endometriozis ve kısırlık tedavisindeki bu devrimi, [Avrupa](https://www.eshre.eu/guideline/endometriosis) ve Amerika'nın en büyük otoritelerinin rehberlerini ve kliniğimizde başarıyı artırmak için uyguladığımız optimize edilmiş tüp bebek protokollerini (PPOS ve mikrobiyota taraması gibi) adım adım açıklayacağım.
 
+ [![Endometriozis ve Kısırlık: 2025'in Yeni Tedavi Stratejileri](https://img.youtube.com/vi/-FxkIwmlO9g/0.jpg)](https://youtu.be/-FxkIwmlO9g)
+
 ## İçindekiler
 
 - [Büyük İkilem Sona Erdi "Önce Cerrahi" mi, "Önce Tüp Bebek" mi?](#büyük-ikilem-sona-erdi-önce-cerrahi-mi-önce-tüp-bebek-mi)
@@ -136,11 +138,11 @@ Endometriozis hastaları için durum biraz farklı: Bu grupta PGT-A yaptırmamak
 
 Peki neden mi? Boş Sepet Riski diyoruz biz buna.
 
-1.  **Embriyo Sayısı Az:** Endometriozis hastaları, özellikle de ameliyat olanlar, genellikle düşük yumurtalık rezervine sahip oluyor ve ellerinde az sayıda embriyo kalıyor.
+1. **Embriyo Sayısı Az:** Endometriozis hastaları, özellikle de ameliyat olanlar, genellikle düşük yumurtalık rezervine sahip oluyor ve ellerinde az sayıda embriyo kalıyor.
 
-2.  **PGT-A'nın Kendisi Riskli:** PGT-A riskli bir işlem. Biyopsi sırasında embriyoya zarar gelebilir. Özellikle mozaik embriyolar (bazı hücreleri normal, bazıları anormal) yanlışlıkla elenebilir. Aslında bu embriyolardan sağlıklı bebekler doğabilir.
+2. **PGT-A'nın Kendisi Riskli:** PGT-A riskli bir işlem. Biyopsi sırasında embriyoya zarar gelebilir. Özellikle mozaik embriyolar (bazı hücreleri normal, bazıları anormal) yanlışlıkla elenebilir. Aslında bu embriyolardan sağlıklı bebekler doğabilir.
 
-3.  **Normal Embriyo Oranı:** 2025 verilerine göre, endometriozis hastalarının yumurtalarının genetik olarak bozuk olma ihtimali diğer hastalardan farklı değil.
+3. **Normal Embriyo Oranı:** 2025 verilerine göre, endometriozis hastalarının yumurtalarının genetik olarak bozuk olma ihtimali diğer hastalardan farklı değil.
 
 **Sonuç:** Riskli bir işlemi (PGT-A), zaten az sayıda embriyosu olan hastalara uygulamak, transfer edecek embriyo bulamama riskini artırıyor. Bu yüzden biz 2025'te bu stratejiden kaçınıyoruz.
 
