@@ -19,9 +19,9 @@ Eskiden endometriozis ve çikolata kistlerinden kurtulmak için ameliyatın hami
 
 ## İçindekiler
 
-- [Büyük İkilem Sona Erdi "Önce Cerrahi" mi, "Önce Tüp Bebek" mi?](#büyük-ikilem-sona-erdi-önce-cerrahi-mi-önce-tüp-bebek-mi)
+- [Büyük İkilem Sona Erdi "Önce Cerrahi" mi, "Önce Tüp Bebek" mi?](#büyük-i̇kilem-sona-erdi-önce-cerrahi-mi-önce-tüp-bebek-mi)
 - [Ama Doktorum Ameliyat Dedi! – 2025'te Cerrahinin Yeni Rolü](#ama-doktorum-ameliyat-dedi--2025te-cerrahinin-yeni-rolü)
-- [Endometriozis Hastaları İçin Optimize Edilmiş Tüp Bebek (2025 Stratejileri)](#endometriozis-hastaları-için-optimize-edilmiş-tüp-bebek-2025-stratejileri)
+- [Endometriozis Hastaları İçin Optimize Edilmiş Tüp Bebek (2025 Stratejileri)](#endometriozis-hastaları-i̇çin-optimize-edilmiş-tüp-bebek-2025-stratejileri)
 - [Başarının Gizli Anahtarları: Hastalığın Kök Nedenlerini Hedeflemek](#başarının-gizli-anahtarları-hastalığın-kök-nedenlerini-hedeflemek)
 - [Dr. Aksoy'dan Yol Haritanız: Hastalığı Değil, Hedefinizi Tedavi Etmek](#dr-aksoydan-yol-haritanız-hastalığı-değil-hedefinizi-tedavi-etmek)
 - [Endometriozis ve Kısırlık Hakkında Sıkça Sorulan Sorular (SSS)](#endometriozis-ve-kısırlık-hakkında-sıkça-sorulan-sorular-sss)
@@ -39,7 +39,7 @@ Sonunda beklenen oldu ve SVIDOE (Yumurtalık ve Derin Endometriozise Bağlı Kı
 Çalışmada ilginç bir detay var: Hastaların %57'si rastgele seçilen tedavi yöntemini kabul etmeyip kendi istediği tedaviyi seçmiş. İlk başta bu durum bir eksiklik gibi görünse de, aslında SVIDOE'nin en can alıcı noktası oldu. Çünkü bu, çalışmanın sadece laboratuvar ortamında değil, gerçek hayatta, hastaların ve doktorların kararlarıyla birlikte yapıldığını gösteriyor. Tercihini kullanan hastaların da dahil olduğu analizle, ilk baştaki analizlerin aynı sonucu vermesi (yani tüp bebeğin daha başarılı olduğunu göstermesi) bu sonucu daha da güvenilir ve uygulanabilir hale getiriyor.
 Peki, sonuçlar ne söylüyordu? Rakamlar çok netti:
 
-**Tablo 1: SVIDOE Denemesi 2025 Ön Sonuçları (Cerrahi vs. Tüp Bebek)**
+- **Tablo 1: SVIDOE Denemesi 2025 Ön Sonuçları (Cerrahi vs. Tüp Bebek)**
 
 | Analiz Türü | Müdahale Grubu | Canlı Doğum Oranı (LBR) | Devam Eden Gebelik Oranı (>20 hft) |
 | :--- | :--- | :--- | :--- |
@@ -86,11 +86,11 @@ Bu risk yüzünden, 2025'te biz şunu yapıyoruz: Eğer ameliyat *mecbursa* (mes
 
 Kısırlık tedavisinde ameliyat ilk akla gelen çözüm olmasa da, bazen tüp bebek tedavisinin yolunu açan bir anahtar gibi olabilir. 2025'te, ameliyatı düşündüğümüz üç durum var:
 
-1.  **Dayanılmaz Ağrı:** Hastanın hayat kalitesi her şeyden önemli. Eğer ağrı çok şiddetliyse, cerrahi müdahale düşünülebilir.
+1. **Dayanılmaz Ağrı:** Hastanın hayat kalitesi her şeyden önemli. Eğer ağrı çok şiddetliyse, cerrahi müdahale düşünülebilir.
 
-2.  **Yumurtalıklara Ulaşmakta Zorluk:** Bazen kistler (endometrioma) çok büyüyebilir ya da yapışıklıklar oluşabilir. Bu durumda, tüp bebek tedavisinde yumurta toplama işlemi sırasında iğnenin yumurtalığa ulaşması riskli olabilir. Tüp bebeğe başlayabilmek için önce bu sorunun ameliyatla çözülmesi gerekebilir.
+2. **Yumurtalıklara Ulaşmakta Zorluk:** Bazen kistler (endometrioma) çok büyüyebilir ya da yapışıklıklar oluşabilir. Bu durumda, tüp bebek tedavisinde yumurta toplama işlemi sırasında iğnenin yumurtalığa ulaşması riskli olabilir. Tüp bebeğe başlayabilmek için önce bu sorunun ameliyatla çözülmesi gerekebilir.
 
-3.  **Ek Sorunlar (Hidrosalpenks):** Bazen endometriozise, tüplerde sıvı birikmesi de eşlik eder (hidrosalpenks). Bu sıvı rahime akarak embriyonun rahme tutunmasını zorlaştırır. Tüp bebekten önce bu hasarlı tüpün (veya tüplerin) laparoskopik yöntemle alınması (salpenjektomi) hamile kalma şansını artırır.
+3. **Ek Sorunlar (Hidrosalpenks):** Bazen endometriozise, tüplerde sıvı birikmesi de eşlik eder (hidrosalpenks). Bu sıvı rahime akarak embriyonun rahme tutunmasını zorlaştırır. Tüp bebekten önce bu hasarlı tüpün (veya tüplerin) laparoskopik yöntemle alınması (salpenjektomi) hamile kalma şansını artırır.
 
 ### Ameliyat Oldum, Şimdi Ne Olacak? Endometriozis Fertilite İndeksi (EFI)
 
@@ -117,7 +117,7 @@ Bu yöntemde, tüm embriyolar donduruluyor ve hemen transfer edilmiyor. Yani emb
 
 2025'te yapılan bazı araştırmalar, PPOS yönteminin endometriozis hastaları için faydalı olduğunu gösterdi.
 
-**Tablo 2: PPOS vs. Antagonist Protokol Karşılaştırması (Endometriozis, 2025)**
+- **Tablo 2: PPOS vs. Antagonist Protokol Karşılaştırması (Endometriozis, 2025)**
 
 | Parametre | Klasik Antagonist Protokol | **PPOS Protokolü** | Avantaj |
 | :--- | :--- | :--- | :--- |
@@ -227,4 +227,4 @@ Daha detaylı bilgi almak ve kişisel durumunuzu değerlendirmek için [tüp beb
 
 *Bu makalede yer alan bilgiler, genel bilgilendirme amaçlıdır ve kişisel tıbbi tavsiye yerine geçmez. Sağlık durumunuzla ilgili her türlü soru ve endişeniz için lütfen doktorunuza danışınız.*
 
-*Son Güncelleme Tarihi: 31 Ekim 2025*
+- *Son Güncelleme Tarihi: 31 Ekim 2025*
