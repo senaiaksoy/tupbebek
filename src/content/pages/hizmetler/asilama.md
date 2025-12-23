@@ -2,84 +2,795 @@
 slug: asilama
 title: Aşılama (IUI) Nedir, Nasıl yapılır?
 description: Nedeni bilinmeyen kısırlık vakalarında, doğal yollarla bebek sahibi olamayan genç çiftlerde gerçekleştirilen ilk uygulama aşılamadır (artifisiyel inseminasyon/IUI).
-image: /src/images/12.jpg
+image: /src/images/blog/embryo_derecelendirme.jpg
 ---
 
-Merhaba, ben [Dr.Senai Aksoy](https://tupbebek.com/hakkimizda/). İstanbul'daki kliniğimde yıllardır çocuk sahibi olma hayali kuran yüzlerce çiftle birlikte yürüyorum. Bu yolculuğun ne kadar hassas ve umut dolu olduğunu biliyorum. Bu yazıda, bu yolculuktaki önemli ve genellikle ilk adımlardan biri olan **aşılama (IUI - Intrauterine Insemination)** tedavisini tüm yönleriyle, samimi ve anlaşılır bir dille ele alacağız.
 
-Aşılama, baba adayından alınan ve laboratuvarda özel işlemlerden geçirilerek kalitesi artırılan spermlerin, doğrudan anne adayının rahmine bırakılması işlemidir ([American Society for Reproductive Medicine](https://www.reproductivefacts.org/news-and-publications/fact-sheets-and-infographics/intrauterine-insemination-iui/)). Özellikle nedeni açıklanamayan kısırlık, hafif erkek faktörü veya rahim ağzı (servikal) problemler gibi durumlarda, [tüp bebek](https://tupbebek.com/tup-bebek-asamalari/) gibi daha karmaşık yöntemlere geçmeden önce denenen, etkili, maliyet-etkin ve hasta dostu bir tedavi yöntemidir ([PubMed](https://pubmed.ncbi.nlm.nih.gov/29162950/)).
+
+
+## ⚡ ÖZET (TLDR)
+
+Aşılama (IUI), kısırlık tedavisinde ilk akla gelen, en doğal ve risksiz yöntemlerden biri. Sebebi belirsiz kısırlık, hafif sperm sorunları veya yumurtlama problemlerinde, her denemede yaklaşık %15-20 hamilelik şansı var. Ama başarıda yaş, sperm kalitesi ve hasta seçimi çok önemli. Yanlış kişiye ısrarla IUI yapmak hem zaman kaybı, hem de hayal kırıklığı yaratabilir.
+
+***
+
+## 📌 Bu Yazıda Ne Öğreneceksiniz?
+
+[**1. Giriş: Bilim ve Şefkatin Buluşması**](#bölüm-1-giriş---bilim-ve-şefkatin-buluşması)
+
+[**2. Doğal Döllenme vs. IUI: Biyolojik Mucize**](#bölüm-2-doğal-döllenmenin-zorlu-parkuru-ve-iuinın-devrimci-dokunuşu)
+
+[**3. Hastanın Seçilmesi: Kimilerde IUI Başarılı, Kimde Başarısız**](#bölüm-3-hasta-seçimi--kimilerde-iui-başarılı-kimde-başarısız)
+
+[**4. Kapsamlı Değerlendirme: Testler ve Hazırlık**](#bölüm-5-kapsamlı-değerlendirme--tedaviye-başlamadan-önce)
+
+[**5. Adım Adım IUI Protokolü**](#adım-5-i̇nseminasyon-aşılamanın-yapılması)
+
+[**6. Başarı Oranları: İstatistikler ve Yaş Faktörü**](#bölüm-7-başarı-oranları--i̇statistikler-ve-yaş-faktörü)
+
+[**7. İnseminasyon Sonrası: Bekleyiş Dönemi**](#bölüm-8-i̇nseminasyon-sonrası-süreç--bekleyiş-ve-yaşam-tarzı)
+
+[**8. Sıkça Sorulan Sorular (SSS)**](#bölüm-9-sıkça-sorulan-sorular-sss)
+
+***
+
+## Bölüm 1: Giriş - Bilim ve Şefkatin Buluşması
+
+Çocuk sahibi olmak, hayatın en güzel isteklerinden biri. Sadece içgüdüsel bir şey değil; aile olmayı tamamlamak, bir öyküyü sürdürmek ve geleceğe dair en saf hayalleri kurmak demek. Ama bazen işler yolunda gitmeyebilir.
+
+**[Doç. Dr. Senai Aksoy](https://tupbebek.com/hakkimizda/) olarak 30 yıldır İstanbul'daki kliniğimde gözlemlediğim bir gerçek var:** Anne baba olma süreci sadece hastane ortamında değil, şefkatin, itimadın ve özenin olduğu bir yerde daha iyi sonuç verir. Benim kliniğime gelen birçok çiftin deneyimlediği şey de bu: Umut, bilgi, zaman ve sabır bir araya gelince güzel şeyler oluyor.
+
+Günümüzdeki üreme tıbbı, doğanın yetersiz kaldığı durumlarda yardımcı olur. Bu konuda en bilinen ve sıkça başvurulan yöntemlerden biri de **İntrauterin İnseminasyon (IUI)**, yani **Aşılama** tedavisidir.
 
 [![Rahim içi aşılama](https://img.youtube.com/vi/-ZGIvKZzG7U/hqdefault.jpg)](https://www.youtube.com/watch?v=-ZGIvKZzG7U)
 
 Youtube Videosu
 
+### Aşılama Nedir? Basit Tanım
 
-### Aşılama Tedavisine Derinlemesine Bakış: Sizin İçin Doğru Adım Mı?
-
-Aşılama tedavisinin temel mantığı, döllenme şansını artırmak için doğanın önüne çıkan bazı engelleri ortadan kaldırmaktır. Normal bir ilişkide spermlerin yumurtaya ulaşmak için kat etmesi gereken uzun ve zorlu bir yol vardır. Aşılama, en sağlıklı ve hareketli spermleri seçerek bu yolculuğu kısaltır ve onları doğrudan hedefe, yani fallop tüplerinin yakınına bırakır ([RMA Network](https://rmanetwork.com/treating-infertility/intrauterine-insemination-iui/)). Bu sayede döllenme olasılığı artırılır.
-
-Bu noktada, aşılamanın tedavi yelpazesindeki yerini doğru anlamak çok önemlidir. Aşılama, zamanlanmış doğal ilişkiden daha etkili bir yöntemken, döllenmenin laboratuvarda gerçekleştirildiği tüp bebek (IVF) tedavisinden daha az invaziv bir adımdır ([American Society for Reproductive Medicine](https://www.reproductivefacts.org/news-and-publications/fact-sheets-and-infographics/intrauterine-insemination-iui/)). Bu durum, tedavinin başarısının büyük ölçüde doğru hasta seçimine bağlı olduğu anlamına gelir. Aşılama, ne doğal yollarla gebelik şansı yüksek olan ne de tüp bebek tedavisi gerektirecek kadar ciddi problemleri olan çiftler için idealdir. Bu sebeple, aşılama yolculuğundaki en kritik adım, tedavinin kendisinden ziyade, başlangıçta yapılan detaylı değerlendirme ve doğru teşhistir. Bu ilk konsültasyon, çiftin zamanını, bütçesini ve en önemlisi umutlarını doğru tedaviye yönlendirmek için hayati önem taşır.
-
-### Aşılama Tedavisi İçin İdeal Adaylar: Başarı Şansının Yüksek Olduğu Durumlar
-
-Aşılama tedavisinin belirli durumlarda oldukça yüz güldürücü sonuçlar verdiğini görüyoruz. Eğer aşağıdaki durumlardan biri sizin için geçerliyse, aşılama tedavisi güçlü bir seçenek olabilir:
-
-* **Açıklanamayan Kısırlık:** Yapılan tüm testlere rağmen gebeliğe engel olan belirgin bir neden bulunamadığında, aşılama (genellikle yumurtalıkların hafifçe uyarılmasıyla birlikte) denenen ilk ve en yaygın yöntemlerden biridir ([American Society for Reproductive Medicine](https://www.reproductivefacts.org/news-and-publications/fact-sheets-and-infographics/intrauterine-insemination-iui/)).
-* **Hafif Erkek Faktörü:** Sperm sayısı, hareketliliği veya şeklinde hafif düşüklükler olduğunda, "sperm yıkama" işlemi ile en kaliteli spermler seçilerek konsantre bir şekilde rahme verilir ve bu sorun aşılmış olur ([PubMed](https://pubmed.ncbi.nlm.nih.gov/29162950/)).
-* **Servikal Faktör:** Rahim ağzındaki yapısal bir sorun veya salgılanan mukusun spermlerin geçişini engellemesi durumunda, aşılama bu bariyeri tamamen ortadan kaldırır ([American Society for Reproductive Medicine](https://www.reproductivefacts.org/news-and-publications/fact-sheets-and-infographics/intrauterine-insemination-iui/)).
-* **Yumurtlama Bozuklukları:** [Polikistik over sendromu](https://tupbebek.com/blog/polikistik-over-sendromu-nedenleri-ve-tedavisi/) gibi durumlarda, ilaçlarla yumurtlama sağlandıktan sonra, döllenme şansını en üst düzeye çıkarmak için zamanlaması mükemmel ayarlanmış bir aşılama işlemi yapılabilir ([American Society for Reproductive Medicine](https://www.reproductivefacts.org/news-and-publications/fact-sheets-and-infographics/intrauterine-insemination-iui/)).
-* **Cinsel İşlev Bozuklukları:** Vajinismus, sertleşme sorunları veya meninin geri boşalması (retrograd ejakülasyon) gibi normal cinsel birleşmeyi engelleyen durumlarda aşılama, gebeliğe ulaşmak için doğrudan bir çözüm sunar ([American Society for Reproductive Medicine](https://www.reproductivefacts.org/news-and-publications/fact-sheets-and-infographics/intrauterine-insemination-iui/)).
-
-### Aşılama Tedavisinin Önerilmediği Durumlar: Ne Zaman Farklı Yöntemler Düşünülmeli?
-
-Bir hekim olarak en önemli görevlerimden biri, hastalarıma karşı dürüst ve şeffaf olmaktır. Aşılama her çift için uygun bir çözüm değildir. Tedavinin başarısız olma ihtimalinin yüksek olduğu durumlarda çiftleri gereksiz yere yormak, hem maddi hem de manevi kayıplara yol açar. Bu nedenle, baştan doğru yolu çizmek esastır. Aşağıdaki durumlarda aşılama tedavisi yerine doğrudan tüp bebek gibi daha ileri teknikleri düşünmek daha mantıklıdır:
-
-* **Tüplerin Tıkalı Olması:** Aşılama, sperm ve yumurtanın buluşacağı fallop tüplerinin en az birinin açık olmasını gerektirir. Eğer her iki tüp de tıkalıysa, aşılama ile gebelik mümkün değildir ([RMA Network](https://rmanetwork.com/treating-infertility/intrauterine-insemination-iui/)).
-* **Şiddetli Erkek Faktörü:** Sperm sayısının çok düşük olduğu, hareketliliğin ileri derecede bozuk olduğu veya spermde ciddi şekil bozukluklarının bulunduğu durumlarda, aşılama yetersiz kalır. Bu vakalarda mikroenjeksiyon (ICSI) ile tüp bebek tedavisi gerekir ([PubMed](https://pubmed.ncbi.nlm.nih.gov/29162950/)).
-* **İleri Kadın Yaşı:** Özellikle 40 yaşından sonra kadınların yumurta kalitesi ve sayısı doğal olarak azaldığı için aşılama ile başarı oranları önemli ölçüde düşer. Bu yaş grubunda, zaman kaybetmemek adına tüp bebek tedavisi daha etkili bir seçenek olabilir ([PubMed](https://pubmed.ncbi.nlm.nih.gov/29162950/)).
-* **Şiddetli Endometriozis:** Rahim iç zarının rahim dışında yerleşmesi olarak bilinen [endometriozisin](https://tupbebek.com/blog/endometriozis-kisirlik-iliskisi/) ileri evreleri, tüplerde ve yumurtalıklarda yapışıklıklara neden olabilir. Bu durumda da tüp bebek tedavisi öncelikli olarak düşünülmelidir.
-
-### Aşılama Tedavisi Süreci: Adım Adım Yolculuğunuz
-
-Aşılama süreci, dikkatli bir planlama ve zamanlama gerektiren, ancak oldukça basit ve ağrısız adımlardan oluşur ([RMA Network](https://rmanetwork.com/treating-infertility/intrauterine-insemination-iui/)). İşte sizi nelerin beklediğine dair adım adım bir rehber:
-
-1. **İlk Değerlendirme ve Hazırlık:** Süreç, çiftin tıbbi öyküsünün alınması ve gerekli testlerin yapılmasıyla başlar. Kadın için hormon testleri ve tüplerin açık olup olmadığını gösteren [rahim filmi (HSG)](https://tupbebek.com/blog/ilacli-rahim-filmi-hsg-nedir/), erkek için ise [sperm analizi (spermiogram)](https://tupbebek.com/sperm-analizi/) temel değerlendirmelerdir ([American Society for Reproductive Medicine](https://www.reproductivefacts.org/news-and-publications/fact-sheets-and-infographics/intrauterine-insemination-iui/)).
-2. **Yumurtalıkların Uyarılması (Ovarian Stimulation):** Adetin 2. veya 3. gününde başlanan hap veya iğne şeklindeki ilaçlarla, o ay birden fazla (genellikle 1-3 arası) yumurtanın olgunlaşması hedeflenir. Bu, gebelik şansını artırır. Bazı durumlarda, kadının kendi doğal döngüsünde de aşılama yapılabilir ([PubMed](https://pubmed.ncbi.nlm.nih.gov/29162950/)).
-3. **Yumurta Gelişiminin Takibi ve Çatlatma İğnesi:** Yumurta keselerinin (folikül) gelişimi, belirli aralıklarla yapılan ultrasonlarla takip edilir. Foliküller istenen büyüklüğe ulaştığında, yumurtlamayı tetiklemek için "çatlatma iğnesi" (hCG) yapılır ([RMA Network](https://rmanetwork.com/treating-infertility/intrauterine-insemination-iui/)).
-4. **Sperm Örneğinin Hazırlanması (Sperm Yıkama):** Çatlatma iğnesinden yaklaşık 36 saat sonra, aşılama günü, baba adayından sperm örneği alınır. Bu örnek laboratuvarda "yıkama" adı verilen özel bir işlemden geçirilir. Bu işlemle menideki prostaglandin gibi rahimde kasılmalara yol açabilecek maddeler, ölü hücreler ve bakteriler temizlenir; geriye sadece en hareketli ve sağlıklı spermlerin yoğunlaştırıldığı bir örnek kalır ([RMA Network](https://rmanetwork.com/treating-infertility/intrauterine-insemination-iui/)).
-5. **Aşılama İşlemi:** Hazırlanan bu değerli sperm örneği, ince ve yumuşak bir kateter (plastik boru) yardımıyla, jinekolojik muayeneye benzer bir pozisyonda, ağrısız bir şekilde doğrudan rahim içine bırakılır. İşlem sadece birkaç dakika sürer ([American Society for Reproductive Medicine](https://www.reproductivefacts.org/news-and-publications/fact-sheets-and-infographics/intrauterine-insemination-iui/)).
-6. **İşlem Sonrası Süreç ve Gebelik Testi:** İşlemden sonra 15-20 dakika kadar dinlenmeniz yeterlidir. Sonrasında günlük hayatınıza dönebilirsiniz. Yaklaşık 14 gün sonra ise gebelik testi yapılarak sonucun heyecanlı bekleyişi sona erer ([American Society for Reproductive Medicine](https://www.reproductivefacts.org/news-and-publications/fact-sheets-and-infographics/intrauterine-insemination-iui/)).
-
-### Başarıyı Etkileyen Faktörler ve Gerçekçi Beklentiler
-
-İnternette aşılama başarı oranlarıyla ilgili çok farklı rakamlar görebilirsiniz. Bilimsel çalışmalar genellikle döngü başına %10-20'lik bir başarıdan bahseder ([PubMed](https://pubmed.ncbi.nlm.nih.gov/29162950/)). Bu farklılığın sebebi, başarının tek bir rakamdan ibaret olmaması, aksine pek çok faktöre bağlı bir olasılık olmasıdır. Gerçekçi beklentiler oluşturmak, bu sürecin en sağlıklı şekilde yönetilmesini sağlar. Başarıyı etkileyen en önemli faktörler şunlardır:
-
-* **Kadın Yaşı:** Bu, başarıyı belirleyen en temel faktördür. Yaş ilerledikçe yumurta kalitesi düştüğü için başarı şansı da azalır.
-* **Kısırlık Süresi ve Nedeni:** Kısırlığın altında yatan neden ve çiftin ne kadar süredir denediği, sonucu doğrudan etkiler ([PubMed](https://pubmed.ncbi.nlm.nih.gov/36983577/)).
-* **Sperm Parametreleri:** Yıkama sonrası elde edilen toplam hareketli sperm sayısı kritik öneme sahiptir. Başarı şansının yüksek olması için bu sayının genellikle 5-10 milyonun üzerinde olması hedeflenir ([PubMed](https://pubmed.ncbi.nlm.nih.gov/29162950/)).
-* **Folikül Sayısı:** Kontrollü bir uyarım ile 1 veya 2 olgun yumurta elde etmek, hem gebelik şansını optimize eder hem de çoğul gebelik riskini en aza indirir. Çoğul gebelik, hem anne hem de bebekler için riskleri artırdığından, kaçınılması gereken bir durumdur ([ESHRE](https://www.eshre.eu/-/media/sitecore-files/Annual-meeting/Virtual2020/QA/Session-70--Answers.pdf)).
-
-Aşağıdaki tablo, yaşın başarı oranları üzerindeki etkisini daha net bir şekilde göstermektedir:
-
-| Yaş Grubu | Ortalama Başarı Şansı (Döngü Başına) |
-| :--- | :--- |
-| < 35 Yaş | %15 - %20 |
-| 35 - 40 Yaş| %10 - %15 |
-| > 40 Yaş | %2 - %5 |
-
-### Aşılama Tedavisinin Riskleri ve Yan Etkileri
-
-Aşılama oldukça güvenli bir prosedür olsa da, her tıbbi müdahale gibi bazı riskleri ve yan etkileri vardır:
-
-* **Çoğul Gebelik:** Özellikle yumurtalıkların uyarılmasıyla yapılan tedavilerde en sık karşılaşılan risk, ikiz veya üçüz gebeliklerdir. Bu riski en aza indirmek için folikül gelişimi yakından takip edilir ve gerekirse tedavi iptal edilebilir ([American Society for Reproductive Medicine](https://www.reproductivefacts.org/news-and-publications/fact-sheets-and-infographics/intrauterine-insemination-iui/)).
-* **Ovaryan Hiperstimülasyon Sendromu (OHSS):** Yumurtalıkların ilaçlara aşırı yanıt vermesi durumudur. Aşılama için kullanılan düşük doz ilaçlarla bu durumun görülmesi çok nadirdir ([PubMed](https://pubmed.ncbi.nlm.nih.gov/29162950/)).
-* **Diğer Yan Etkiler:** İşlem sonrası hafif lekelenme veya kramp yaşanması normal ve geçicidir. Enfeksiyon riski ise steril koşullarda çalışıldığı için son derece düşüktür ([American Society for Reproductive Medicine](https://www.reproductivefacts.org/news-and-publications/fact-sheets-and-infographics/intrauterine-insemination-iui/)).
-
-### Sonuç ve Önemli Hatırlatma
-
-Aşılama tedavisi, doğru seçilmiş çiftler için çocuk sahibi olma yolunda umut verici, erişilebilir ve etkili bir ilk adımdır. Sürecin başarısı, teknolojik donanımdan çok, doğru teşhise, kişiye özel tedavi planlamasına ve gerçekçi beklentilere dayanır. Unutmayın, bu yolculukta yalnız değilsiniz ve her adımda size destek olacak, sorularınızı yanıtlayacak bir hekimle ilerlemek en büyük güvencenizdir.
+Aşılama, spermleri direkt rahme yerleştirerek doğal yoldan döllenmeye destek olan bir işlem. Yani ne tamamen yapay bir yöntem, ne de her şey tesadüfe bağlı; doğaya bilimsel bir el uzatma gibi düşünebiliriz.
 
 ***
-**Düzenleme Tarihi:** 24.9.2025
 
-***Yasal Uyarı:*** *Bu makalede yer alan bilgiler, genel bilgilendirme amaçlıdır ve kişisel tıbbi tavsiye yerine geçmez. Sağlık durumunuzla ilgili her türlü soru ve endişeniz için lütfen doktorunuza danışınız.*
+## Bölüm 2: Doğal Döllenmenin Zorlu Parkuru ve IUI'nın Devrimci Dokunuşu
+
+Aşılama tedavisini anlamak için, ilk önce doğal yoldan döllenmenin nasıl bir şey olduğunu ve IUI'nın bu süreçte neyi değiştiriyor olduğunu bilmek gerekir.
+
+### 2.1. Milyonlarca Spermden Sadece Biricik'in Başarısı
+
+Bu olay, yarıştan ziyade bir eleme sürecine benziyor. Milyonlarca spermden sadece biri hedefe ulaşıyor.
+
+#### 🚧 Spermlerin Katetmesi Gereken Engeller:
+
+| **Engel**                        | **Zorluk Derecesi** | **Mekanizma**                                                                        |
+| -------------------------------- | ------------------- | ------------------------------------------------------------------------------------ |
+| **Vajinal Asidite**              | ⭐⭐⭐⭐⭐               | Vajinanın doğal pH dengesi asidiktir; milyonlarca sperm dakikalar içinde öldürülür   |
+| **Servikal Bariyer**             | ⭐⭐⭐⭐⭐               | Rahim ağzı mukusu bazen spermleri yakalayabilir ve antikorlar da spermlere savaş açabilir.|
+| **Uterus Boşluğu**               | ⭐⭐⭐                 | Doğru fallop tüpüne yönelme zorunludur                                               |
+| **Fallop Tüplerindeki Yolculuk** | ⭐⭐⭐⭐                | Tüpün titreşimli hücreleri ve sıvı akışı kritikdir                                   |
+| **Yumurtaya Yaklaşma**           | ⭐⭐⭐⭐⭐               | Zona pellusida (yumurta zarı) penetrasyonu en zor aşamadır                           |
+
+**Sonuç:** Milyonlarca spermden yalnızca **birkaç yüz** yumurtanın bulunduğu bölgeye ulaşabilir.
+
+> Nitekim [ASRM (American Society for Reproductive Medicine)](https://www.asrm.org/practice-guidance/practice-committee-documents/optimizing-natural-fertility-a-committee-opinion-2021/) kılavuzları, bu doğal eleme sürecinin infertilitenin temel nedenlerinden biri olduğunu vurgular.
+
+### 2.2. IUI'nın Stratejik Avantajları: "Bypass" Felsefesi
+
+**IUI işleminin temel mantığı:** En büyük engelleri ortadan kaldırmak.
+
+#### 🎯 IUI Nasıl Devreye Girer?
+
+    DOĞAL YOL:                    IUI YOLU:
+    Vajina → Serviks → Uterus    Uterus → Fallop Tüpü
+    (200-500M sperm)                 (5-10M seçilmiş sperm)
+
+**Ana Avantajlar:**
+
+1. **Servikal Bariyerin Bypass Edilmesi**
+
+  -Özel olarak hazırlanan spermler doğrudan rahmin içine yerleştiriliyor. Yani, spermler o mukus bariyerine takılmıyor. Bu sayede, enerji harcamadan rahme 5-6 cm daha yakın oluyorlar.
+
+2.**Sperm Kapasitasyonu (Hazırlık)**
+
+Laboratuvarda yapılan sperm yıkama işlemi, spermlerin doğal olarak döllemeye hazırlanma sürecini taklit eder. Bu işlemde, spermlerin hareketini kısıtlayan maddeler temizlenir. Sonuç olarak, yalnızca en hızlı ve döllenme potansiyeli en yüksek spermler seçilir. Bunlara sanki süper askerler diyebiliriz.
+
+   > [ESHRE (Avrupa İnsan Üremesi ve Embriyolojisi Derneği)](https://www.eshre.eu/Guidelines-and-Legal/Guidelines/Unexplained-infertility), bu "hazırlık" sürecinin gebelik şansını %20-30 artırabileceğini belirtmektedir.
+
+3.**Ortam Optimizasyonu**
+
+- Vajina ortamındaki asitlenme bu durumu etkilemez.
+- Sperm, doğrudan hazırlanmış bir şekilde rahim iç yüzeyine ulaşır.
+- Yumurta ve sperm arasındaki mesafe idealdir.
+
+### 2.3. Neden "Aşılama" Denir?
+
+Aslında tıbbi dilde İntrauterin İnseminasyon dediğimiz şeye, insanlar arasında aşılama dememizin tarihi bir sebebi var.
+
+Nasıl ki bir ağacın en iyi dalını alıp başka bir ağaca eklersin ve daha çok meyve alırsın, aynı mantıkla:
+
+*Aşılamada da erkeğin en iyi spermleri seçilir,
+*Kadının en uygun zamanında (yumurtlama zamanı) rahime yerleştirilir,
+*Tam doğru yere (rahmin içine) konur.
+
+Yani, daha iyi hale getirme ve bir araya getirme düşüncesinin tıbbi bir uygulama şekli bu.
+
+***
+
+## Bölüm 3: Hasta Seçimi — Kimilerde IUI Başarılı, Kimde Başarısız?
+
+**Dr. Senai Aksoy'un tedavi felsefesi:** Kişiye özel çözümler üretmek.
+
+Neden mi? Çünkü, doğru hasta seçimi yapmadan sürekli olarak IUI tedavisi uygulamak, sadece zaman ve para kaybına yol açmakla kalmıyor, çiftlerin umutlarını da tüketerek tedavi yorgunluğuna sebep olabiliyor.
+
+### 3.1. IUI İçin İdeal Hasta Profili vs. Kontrendikasyonlar
+
+| **Durum**                                    | **IUI Uygunluğu** | **Neden**                                                         | **Başarı Şansı** |
+| -------------------------------------------- | ----------------- | ----------------------------------------------------------------- | ---------------- |
+| **Açıklanamayan İnfertilite**                | ✅ İdeal           | Tüm testler normal, ancak gebelik yok. IUI "olasılıkları" artırır | %15-20           |
+| **Hafif Erkek Faktörü** (TPMSC 5-10M)        | ✅ İdeal           | Yıkama işlemi kaliteyi artırır                                    | %12-18           |
+| **Servikal Faktör** (sperm düşmanı mukus)    | ✅ Çok Uygun       | Bariyeri tamamen bypass eder                                      | %18-25           |
+| **PCOS (Ovulasyon Bozukluğu)**               | ✅ Uygun           | Sadece uyarım + IUI yüksek başarı sağlar                          | %20-25           |
+| **Ejakülasyon Sorunları**                    | ✅ Uygun           | Retrograd ejakulasyon vb. vakalar                                 | %15-20           |
+| **Hafif Endometriozis (Evre I-II)**          | ⚠️ Orta           | Tüpler açıksa, deneme değer                                       | %10-15           |
+| **Tubal Faktör (İki Tüp Kapalı)**            | ❌ Uygun Değil     | Sperm-yumurta buluşması imkansız. **IVF gerekli**                 | <1               |
+| **Şiddetli Erkek İnfertilitesi** (TPMSC <1M) | ❌ Uygun Değil     | Tek spermin döllemesi gerekir. **ICSI/IVF gerekli**               | <1               |
+| **İleri Kadın Yaşı (>42)**                   | ❌ Önerilmez       | Yumurta kalitesi kritik. Zaman kaybı. **IVF daha mantıklı**       | <1               |
+
+
+### 3.2. Açıklanamayan İnfertilite: IUI'nın Şampiyonluk Alanı
+
+**Tanım:** Çiftlerin %15-30'unda, yapılan standart testlerde (Spermiogram, HSG, hormonlar) hiçbir sorun bulunamaz.
+
+> [ASRM Rehberleri](https://www.asrm.org/practice-guidance/practice-committee-documents/evidence-based-treatments-for-couples-with-unexplained-infertility-a-guideline-2020/), bu grupta **yumurtalık uyarımı ile kombine edilen IUI'nin (OS-IUI)** bekleme tedavisine kıyasla gebelik oranlarını anlamlı ölçüde artırdığını belirtir.
+
+**IUI İşlemi Nasıl İlerliyor?**
+
+IUI'da amaç, hamile kalma ihtimalini artırmak. Bunu yapmak için:
+
+*Önce birden fazla yumurta oluşması sağlanır.
+*Sonra sperm sayısı yükseltiliyor.
+*Böylece yumurta ve spermin bir araya gelme şansı artırılıyor.
+
+***
+
+## Bölüm 4: Erkek Faktörü Değerlendirmesi — Matematiksel Sınırlar
+
+IUI'nın erkek infertilitesi söz konusu olduğunda başarısı tamamen **"matematiğe"** dayalıdır.
+
+### 4.1. Kritik Parametre: TMSC (Toplam Hareketli Sperm Sayısı)
+
+| **Yıkama Sonrası TMSC** | **IUI Uygunluğu** | **Başarı Oranı** | **Tavsiye**                |
+| ----------------------- | ----------------- | ---------------- | -------------------------- |
+| **>15 Milyon**          | ✅ İdeal           | %15-20           | IUI'ye devam edin          |
+| **10-15 Milyon**        | ✅ Yeterli         | %12-18           | IUI'ye devam edin          |
+| **5-10 Milyon**         | ✅ Sınırda-Uygun   | %8-12            | IUI deneyin, 2-3 siklus    |
+| **1-5 Milyon**          | ⚠️ Düşük Şans     | %2-5             | 1-2 deneme, sonra ICSI/IVF |
+| **<1 Milyon**           | ❌ Uygun Değil     | <1%              | **ICSI/IVF zorunlu**       |
+
+> Nitekim, [ESHRE IUI Sistematik Değerlendirmesi](https://www.eshre.eu/-/media/sitecore-files/Accreditation/Nurses/reading-list/Papers/Cohlen_dmx041.pdf) ve [NIH PubMed Meta-analizi](https://pmc.ncbi.nlm.nih.gov/articles/PMC12009002/), toplam spermatozoid sayısı değeri 5 milyonun altına düştüğünde hamile kalma olasılığı ciddi şekilde azalıyor.
+
+### 4.2. Morfoloji (Şekil) Faktörü
+
+- Sperm şekli normalden azsa (Kruger kriterlerine göre %4'ten düşükse), aşılama tutma ihtimali azalabilir.
+- Ama bu, sperm hareketliliği kadar büyük bir sorun teşkil etmez.
+- Toplam sperm sayısı yeterliyse, sperm şekli kötü olsa bile aşılama yapılabilir.
+
+***
+
+## Bölüm 5: Kapsamlı Değerlendirme — Tedaviye Başlamadan Önce
+
+> **Doç. Dr. Senai Aksoy'un dediği gibi:** Yanlış teşhisle başlayan tedavi, haritasız yola çıkmak gibi bir şey.
+
+Aşılama kararı almadan önce çiftin iyice kontrolden geçmesi gerekir. Bu sadece tıbbi testleri değil, hayatlarındaki bazı düzenlemeleri de kapsar.
+
+### 5.1. Kadının Değerlendirilmesi
+
+#### 📋 Temel Testler:
+
+**1.Hormonal Profil (Adetin 2-3. günü)**
+
+- FSH, LH, Estradiol → Yumurtalık rezervi hakkında anlık bilgi
+- TSH → Tiroid bozuklukları (gebeliğin düşmanı)
+- Prolaktin → Süt hormonu yüksekliği (ovulasyon engeller)
+
+**2.AMH (Anti-Müllerian Hormon)**
+
+| **AMH Seviyesi** | **Yumurtalık Rezervi** | **Tedavi Stratejisi**         |
+| ---------------- | ---------------------- | ----------------------------- |
+| **>3 ng/ml**     | ✅ Iyi                  | Normal uyarım dozları         |
+| **1-3 ng/ml**    | ⚠️ Normal              | Normal uyarım dozları         |
+| **0.5-1 ng/ml**  | ⚠️ Sınırda             | Artırılmış dozlar gerekebilir |
+| **<0.5 ng/ml**   | ❌ Düşük                | Zaman yönetimi kritik         |
+
+> **Önemli not:** AMH _yumurta sayısını_ gösterir, **kalitesini değil.** Düşük AMH ile de IUI yapılabilir, ancak **zaman çok daha kritiktir.**
+
+**3.HSG (Histerosalpingografi - Rahim Filmi)**
+
+| **Bulgu**                 | **IUI İçin Anlam**                 |
+| ------------------------- | ---------------------------------- |
+| ✅ Her iki tüp açık        | Gerekli şart. IUI yapılabilir      |
+| ❌ Bir veya iki tüp kapalı | IUI başarı şansı çok düşük         |
+| ✅ Tüpler açık, polip var  | Polip çıkarılırsa IUI yapılabilir  |
+| ✅ Tüpler açık, septum var | Septum çıkarılırsa IUI yapılabilir |
+
+> [ASRM HSG Rehberleri](https://www-reproductivefacts-org.translate.goog/news-and-publications/fact-sheets-and-infographics/hysterosalpingogram-hsg/?_x_tr_sl=en&_x_tr_tl=tr&_x_tr_hl=tr&_x_tr_pto=tc), IUI tedavisine başlamadan önce mutlaka tüplerin kontrol edilmesini öneriyor.
+
+**4.Antral Folikül Sayımı (AFC)**
+
+- Vajinal ultrasonla bunlar belirlenebilir.
+- Yumurtalıkların tedaviye nasıl cevap vereceği tahmin edilebilir.
+- Verilecek ilaç miktarı ve tedavi şekli konusunda yol gösterir.
+
+### 5.2. Erkeğin Değerlendilmesi
+
+**Standart Spermiogram (SAT):**
+
+- Sayı, hareket, şekil, hacim, pH, viskozite
+
+**IUI Öncesi Simülasyon:**
+
+İlk bakışta sperm hareketli değil gibi dursa da, yıkadıktan sonra gayet iyi bir yoğunluk yakalanabilir. Bu da erkeği, aşılama için tekrar uygun bir aday yapabilir.
+
+**Ek Testler:**
+
+- Sperm DNA fragmantasyonu (yüksekse ICSI daha mantıklı)
+- Antisperm antikorları (varsa IUI avantajlı)
+
+
+### 5.3. Yaşam Tarzı Optimizasyonu: Biyolojiyi Desteklemek
+
+**Tedaviye başlamadan önceki 2-3 aylık "hazırlık dönemi" altın değerindedir.**
+
+
+#### 🚬 Sigara ve Alkol
+
+| **Madde**  | **Kadın Üzerindeki Etki**                        | **Erkek Üzerindeki Etki**        |
+| ---------- | ------------------------------------------------ | -------------------------------- |
+| **Sigara** | Rahim kanlanması bozulur; yumurta kalitesi düşer | Sperm DNA hasarı; motilite düşer |
+| **Alkol**  | Ovulasyon düzensizliği; hormon imbalansı         | Sperm üretimi azalır             |
+
+> [ASRM](https://www.reproductivefacts.org/news-and-publications/fact-sheets-and-infographics/smoking-and-infertility/) sigaranın bırakılmasının gebelik şansını artırdığını **kesin bir dille** belirtir.
+
+
+#### ⚖️ Kilo Yönetimi (BMI)
+
+| **BMI Aralığı** | **IUI İçin Etki**                                          |
+| --------------- | ---------------------------------------------------------- |
+| **18.5 - 24.9** | İdeal                                                      |
+| **25 - 29.9**   | Hafif overweight; ilaç yanıtı normal                       |
+| **>30 (Obez)**  | Hormon ilaçlarına yanıt bozulur; %30-40 zayıflama önerilir |
+| **<18.5**       | Beslenme yetersizliği; ovulasyon engellenir                |
+
+**Pratik tavsiye:** %5-10'luk bir kilo kaybı bile **ovulasyonu düzeltebilir.**
+
+
+#### 🥗 Beslenme ve Takviyeler
+
+**REKOMENDE EDİLEN:**
+
+1. **Antioksidanlar (Erkekler için)**
+
+   - CoQ10: 200-300 mg/gün
+   - Çinko: 20-30 mg/gün
+   - Selenyum: 50-100 mcg/gün
+   - L-Karnitin: 1-3 g/gün
+
+   _Etki: Sperm DNA hasarını azaltır_
+
+2. **Folik Asit (Kadınlar)**
+
+   - 400-800 mcg/gün (en az 3 ay öncesinden başla)
+   - _Etki: Nöral tüp defektlerini önler_
+
+3. **D Vitamini (Her iki cinsiyet)**
+
+   - Serum seviyesi 30-50 ng/ml hedefle
+   - _Etki: Yumurta ve sperm kalitesi; implantasyon_
+
+4. **Akdeniz Tipi Beslenme**
+
+   - Taze sebze-meyve, balık, zeytinyağı, ceviz
+   - _Etki: Anti-inflamatuar; genel fertilite_
+
+***
+
+
+## Bölüm 6: Adım Adım IUI Protokolü — Orkestrasyon
+
+Aşılama tedavisi, bir adet döngüsü boyunca süren (yaklaşık **12-14 gün**), titizlikle planlanmış bir süreçtir.
+
+
+### 📊 IUI Süreci Görsel Zaman Çizelgesi
+
+    GÜN 1-2: Tedavi Başlangıcı
+       ↓
+    GÜN 3-7: Yumurtalık Uyarımı (İlaç)
+       ↓
+    GÜN 8-10: Folikülometri (Ultrasonda Takip)
+       ↓
+    GÜN 11: Ovulasyon Tetiklenmesi (Çatlatma İğnesi)
+       ↓
+    GÜN 12: İNSEMİNASYON GÜNÜ
+       ↓
+    GÜN 13-27: Luteal Faz Desteği + Bekleyiş
+       ↓
+    GÜN 28: Gebelik Testi
+
+
+### Adım 1: Yumurtalıkların Uyarılması (Kontrollü Ovulasyon İndüksiyonu - COI)
+
+**Hedef:** Doğal döngüde 1 yumurta yerine, **1-3 olgun yumurta** elde etmek.
+
+
+#### 💊 İlaç Seçenekleri ve Mekanizmalar
+
+**A) ORAL AJANLAR**
+
+| **İlaç**            | **Mekanizma**                              | **Avantaj**                         | **Dezavantaj**                   | **Uygun Hasta**          |
+| ------------------- | ------------------------------------------ | ----------------------------------- | -------------------------------- | ------------------------ |
+| **Klomifen Sitrat** | Östrojen reseptörlerini bloke → FSH artışı | Ucuz; eski; güvenli                 | Rahim iç zarı inceltilebilir     | PCOS, normal rezerv      |
+| **Letrozol**        | Aromataz baskılaması → FSH artışı          | Rahim zarı daha iyi; PCOS'ta tercih | Erkek üzerinde etkisi bilinmiyor | PCOS, rahim zar problemi |
+
+> [ASRM 2020 Rehberleri](https://www.asrm.org/practice-guidance/practice-committee-documents/evidence-based-treatments-for-couples-with-unexplained-infertility-a-guideline-2020/?_t_tags=siteid%3a01216f06-3dc9-4ac9-96da-555740dd020c%2clanguage%3aen&_t_hit.id=ASRM_Models_Pages_ContentPage/_38a3cc13-c43b-437a-a3b2-d3f760d00439_en&_t_hit.pos=47), letrozolün giderek daha fazla tercih edildiğini vurgular.
+
+**B) GONADOTROPİNLER (İĞNELER)**
+
+- **Dış FSH/LH:** Gonal-F, Puregon, Menopur
+- **Kullanım:** Haplara yanıt vermeyen hastalar
+- **Avantaj:** Daha güçlü uyarım
+- **Dezavantaj:** Çoğul gebelik riski biraz daha yüksek; yakın takip gerekli
+
+**C) DOĞAL SIKLUS IUI**
+
+- **Protokol:** İlaç YOK. Sadece doğal yumurtanın takibi.
+- **Avantaj:** Yan etki yok
+- **Dezavantaj:** Başarı şansı daha düşük (\~%5-8)
+
+### ⚠️ Kritik Karar Anı: Çoğul Gebelik Riski
+
+**Ultrasonda 3'ten fazla olgun folikül çıkarsa:**
+
+Senai Aksoy gibi doktorlar genelde şöyle yapar:
+
+***Tedaviyi durdurabilir**
+***Cinsel ilişkiyi yasaklayabilir**
+***Tedavi şeklini değiştirebilir**
+
+**Peki neden?** Çünkü çoğul gebelikler (mesela üçüz, dördüz) çok riskli:
+
+***Anne için:** Gebelik zehirlenmesi, şeker hastalığı, erken doğum gibi sorunlar olabilir.
+***Bebekler için:** Kilo az olabilir, beyin hasarı olabilir, ömür boyu sürecek engeller oluşabilir.
+
+**Senai Hoca'nın dediği gibi:** Bizim için önemli olan her ne olursa olsun hamile kalmak değil, **sağlıklı tek bir bebek** dünyaya getirmek.
+
+### Adım 2: Folikülometri (Ultrasonda Yumurta Takibi)
+
+**Takvim:**
+
+- İlaç başlangıcı: Adetin **2-3. günü**
+- İlaç süresi: **5-7 gün**
+- İlk ultrason: İlaç başlangıcından **5. gün**
+- Ardında: **2-3 günde bir** ultrason
+
+**Hedefler:**
+
+| **Parametre**             | **İdeal Değer** |
+| ------------------------- | --------------- |
+| **Folikül Çapı**          | 17-20 mm        |
+| **Endometrium Kalınlığı** | ≥7 mm           |
+| **Folikül Sayısı**        | 1-3             |
+
+> Rahim iç zarı kalınlığı <7 mm'ye düşerse başarı azalır. Bu durumda E2 takviyesi veya klomifen yerine letrozole geçiş yapılabilir.
+
+### Adım 3: Ovulasyonun Tetiklenmesi (Çatlatma İğnesi)
+
+**İlaç:** hCG (İnsan Koryonik Gonadotropin)
+
+- Markalar: Ovitrelle, Pregnyl, Gonasi gibi.
+- Doz: Genelde 250 mcg yeterli.
+- Nasıl Verilir: İğneyle, ya kasa ya da deri altına.
+
+**Nasıl Çalışır:**
+
+- hCG, vücudun kendi ürettiği LH hormonunun yaptığı işi yapar.
+- Yumurtanın olgunlaşmasını sağlar.
+- Yumurtalıktaki kesenin (folikül) patlamasına ve yumurtanın çıkmasına yardımcı olur.
+
+**Ne Zaman Yapılmalı:**
+
+- hCG iğnesinden **34-40 saat sonra**
+- **AŞILAMA** yapılır.
+- Bu süre, yumurtanın tüplere indiği ve spermleri beklediği en uygun zamandır.
+
+***
+
+## Adım 4: Androloji Laboratuvarı — Spermin Hazırlanması
+
+İnseminasyon günü (genellikle **hCG'den 36 saat sonra**), erkekten **mastürbasyon yoluyla** taze sperm örneği alınır.
+
+
+### 📋 Ön Hazırlık (Erkek için)
+
+| **Husus**                      | **Tavsiye**                                            |
+| ------------------------------ | ------------------------------------------------------ |
+| **Cinsel Perhiz Süresi**       | 2-3 gün (beş günü aşmayın)                             |
+| **Örnek Alma Yöntemi**         | Mastürbasyon (preferensiyel); kondom yok (spermisidal) |
+| **Konteyner**                  | Steril, cam (plastik değil)                            |
+| **Laboraturaya Teslim Süresi** | 15-30 dakika içinde (soğukta değil, oda sıcaklığında)  |
+
+### 🔬 Laboratuvar İşlemi: Sperm Yıkama (Washing)
+
+**Süre:** 1-2 saat
+
+**Neden Gerekli?**
+
+| **Temizlenecek Komponen**     | **Hasar**                                                                |
+| ----------------------------- | ------------------------------------------------------------------------ |
+| **Prostaglandinler**          | Rahimde şiddetli kasılmalara yol açarlar                                 |
+| **Lökositler (Ölü Spermler)** | Reaktif oksijen türleri (ROS) üreterek sağlıklı spermlere zarar verirler |
+| **Seminal Plazma**            | Hareketliliği engelleyici faktörler içerir                               |
+| **Debris/Kirlilik**           | Enfeksiyon riskini artırır                                               |
+
+**Teknik:**
+
+1. **Density Gradient** veya **Swim-up** seçilmiş teknikleri
+
+   - Sadece **en hızlı ve morfolojisi en düzgün** spermler seçilir
+
+2. **Hacim Küçültülür**
+
+   - Öncesi: 2-5 ml ejakülat
+   - Sonrası: 0.3-0.5 ml yoğun konsantrat
+
+**Sonuç:**
+
+- TMSC (Toplam Hareketli Sperm Sayısı) hesaplanır
+- Eğer <1 milyon ise → İşlem **iptal edilerek ICSI** önerilir
+
+***
+
+## Adım 5: İnseminasyon (Aşılamanın Yapılması)
+
+**Süre:** 1-2 dakika | **Anestezi:** Gerek yok
+
+### 📋 Prosedür Adımları
+
+    1. HAZIRLIK
+       - Hasta jinekolojik muayene pozisyonuna alınır
+       - Vajina ve rahim ağzı steril serum fizyolojik ile temizlenir
+
+    2. KATETER İLERLETİLMESİ
+       - İnce, yumuşak, esnek kateter rahim ağzından geçirilir
+       - Ultrason eşliğinde VEYA doktor tecrübesiyle
+       - Rahim boşluğunun üst kısmı hedef
+
+    3. SPERM İNJEKSİYONU
+       - Laboratuvardan gelen yoğunlaştırılmış sperm enjeksiyonu
+       - Yavaş ve dikkatli (rahimi uyarmamak için)
+
+    4. ÇEKILME
+       - Kateter çekilir
+       - İşlem tamamlanır
+
+### ✅ İşlem Sonrası (Önemli Bilgiler)
+
+| **Soru**                 | **Cevap**                                                                                |
+| ------------------------ | ---------------------------------------------------------------------------------------- |
+| **Ağrı var mı?**         | Genellikle HAYIR. Hafif kramp hissedilebilir (adet sancısı gibi)                         |
+| **Kanama normal mi?**    | Hafif pembe/kahverengi lekelenme normaldir. Taze kırmızı kanamaysa doktora danış         |
+| **Ne kadar yatmalıyım?** | 10-15 dakika sırt üstü yeterlidir. **Bilim, uzun yatmanın şansı artırmadığını gösterir** |
+| **Sperm geri akar mı?**  | Evet, vajinadan sıvı gelmesi normaldir. Enjekte edilen spermler rahim içinde güvenlidir  |
+
+***
+
+## Bölüm 7: Başarı Oranları — İstatistikler ve Yaş Faktörü
+
+Çiftlerin en çok sorduğu soru: **"Şansımız nedir?"**
+
+### 🎯 Önemli Uyarı
+
+IUI'nın başarılı olup olmadığını söylemek için sadece bir sayıya bakmak yetmez. Başarı; yaşınız, spermin kalitesi, kısırlık nedeniniz, ne kadar zamandır çocuk sahibi olmaya çalıştığınız ve rahim duvarınızın kalınlığı gibi şeylerin bir araya gelmesiyle belirlenir. Yani, birçok faktörün etkileşimi sonucu ortaya çıkar.
+
+### 7.1. Yaş Faktörü: En Belirleyici Değişken
+
+Kadınların yaşı, yumurtalarının kalitesini ve sayısını etkileyerek hamile kalma şanslarını doğrudan etkiler.
+
+Önemli bir nokta: 35 yaşından sonra hamile kalma ihtimali düşmeye başlar.
+
+#### 📊 Yaşa Göre IUI Başarı Oranları (Siklus Başına)
+
+| **Kadın Yaşı** | **Başarı Oranı** | **Tercih Edilen Sayı** | **Yapılacak İşlem**             |
+| -------------- | ---------------- | ---------------------- | ------------------------------- |
+| **<35**        | %15-20           | 3-4 deneme             | IUI temel tercih                |
+| **35-37**      | %10-15           | 3 deneme               | IUI temel tercih                |
+| **38-40**      | %8-10            | 1-2 deneme             | **2. deneme sonrası IVF düşün** |
+| **40-42**      | %2-5             | Hemen IVF              | **Direkt IVF daha mantıklı**    |
+| **>42**        | <1-2%            | İyi Düşün              | Yumurta donasyonu/IVF öner      |
+
+> **NOT:** Bu sayılar, işlemin sadece bir kez denendiğindeki olasılığını gösteriyor. Ama mesela, aynı şeyi üç kere denerseniz, başarı şansı %30 ile %40'a kadar çıkabiliyor.
+
+### 7.2. Sperm Kalitesi ve Eşik Değerler
+
+[NIH PubMed Meta-analizi](https://pmc.ncbi.nlm.nih.gov/articles/PMC12009002/) ve [ESHRE sistematik değerlendirmesi](https://www.eshre.eu/-/media/sitecore-files/Accreditation/Nurses/reading-list/Papers/Cohlen_dmx041.pdf), yıkama sonrası TMSC'nin kritik eşiklerini gösterir:
+
+| **TMSC (Yıkama Sonrası)** | **Başarı Oranı** | **Karar**                     |
+| ------------------------- | ---------------- | ----------------------------- |
+| **>10 Milyon**            | %12-20           | IUI'ye devam                  |
+| **5-10 Milyon**           | %8-12            | IUI deneyin                   |
+| **1-5 Milyon**            | %1-5             | Max 1 deneme sonrası ICSI/IVF |
+| **<1 Milyon**             | <1%              | **Direkt ICSI/IVF**           |
+
+### 7.3. İnfertilite Süresi
+
+Uzun süren kısırlık (5 yıldan fazla) tedavi başarısını azaltabilir:
+
+- Vücutta psikolojik gerginlik (kortizol hormonunun artması)
+- Belki de fark edilmemiş bir rahatsızlık
+
+### 7.4. Folikül Sayısı'nın Etkisi
+
+| **Folikül Sayısı** | **Başarı Oranı**        | **Not**                          |
+| ------------------ | ----------------------- | -------------------------------- |
+| **1 Folikül**      | %8-10                   | Daha düşük (doğal siklusa yakın) |
+| **2 Folikül**      | %12-16                  | Optimal (çoğul riski minimal)    |
+| **≥3 Folikül**     | Başarı ↑ ancak Çoğul ↑↑ | Risk/fayda analizi gerekir       |
+
+***
+
+## Bölüm 8: İnseminasyon Sonrası Süreç — Bekleyiş ve Yaşam Tarzı
+
+İnseminasyonun yapıldığı andan gebelik testine kadar geçen **yaklaşık 14 günlük süre**, **"İki Haftalık Bekleyiş"** _(Two Week Wait - 2WW)_ olarak bilinir.
+
+### ⚠️ Psikolojik Zorluk
+
+Çiftler için bu dönem, psikolojik açıdan gerçekten zorlu olabilir:
+
+- Her ufak tefek belirti acaba hamile miyim sorusunu akla getiriyor.
+- İçinizde hem umut hem de kaygı aynı anda yaşanıyor.
+- Bir de sosyal medyada sürekli başkalarıyla kıyaslama yapma durumu var (Unutmayın, herkesin deneyimi farklıdır!).
+
+***
+
+## 8.1. Luteal Faz Desteği (LDS)
+
+**Neden İhtiyaç Duyuluyor?**
+
+Yumurta geliştirme tedavisi gördüğünüzde, yumurtalıklardaki sarı cisim bazen yeterli progesteron hormonu salgılamayabilir.
+
+**Ne Yapmalı:** Progesteron Hormonu Desteği Alın.
+
+| **Yol**                         | **Doza**       | **Avantaj/Dezavantaj**        |
+| ------------------------------- | -------------- | ----------------------------- |
+| **Vajinal Jel** (Crinone)       | 90 mg/gün      | Lokal etkili; yan etki az     |
+| **Vaginal Fitil** (Utrogestan)  | 200-400 mg/gün | Ucuz; etkili                  |
+| **Ağız (Duphaston, Progestan)** | 10 mg x 3 kez  | Sistemik etkisi daha az       |
+| **İM İnjeksiyon**               | 50-100 mg/gün  | Serum seviyesi yüksek; ağrılı |
+
+**Süre:**
+
+- Test gününe kadar (genellikle inseminasyondan 14 gün sonra)
+- Eğer gebelik oluşursa → 10. haftaya kadar
+
+> [ASRM](https://www-asrm-org.translate.goog/practice-guidance/practice-committee-documents/diagnosis-and-treatment-of-luteal-phase-deciency-a-committee-opinion-2021/?_x_tr_sl=en&_x_tr_tl=tr&_x_tr_hl=tr&_x_tr_pto=tc), tüm COI sikluslarda luteal faz desteğini önermektedir.
+
+***
+
+## 8.2. Günlük Yaşam: Yasaklar ve Öneriler
+
+### 🛁 Banyo ve Hijyen
+
+| **Aktivite**      | **Durum**   | **Tavsiye**                             |
+| ----------------- | ----------- | --------------------------------------- |
+| **Duş Alma**      | ✅ OK        | Ilık su, 30 dakika yapma                |
+| **Banyo (Küvet)** | ❌ İlk gün   | 1-2 gün sonrası OK                      |
+| **Havuz/Jakuzi**  | ❌ İlk 5 gün | Enfeksiyon riski                        |
+| **Sıcak Banyo**   | ⚠️ Sınırla  | Aşırı sıcaklık rahim kanlanmasını bozar |
+
+### 💑 Cinsel İlişki
+
+- **Çoğu kişi şöyle sanır:** İlişki yasak (Ama bu **yanlış**)
+
+- **Aslında:** İlişki kesinlikle yasak **değil**.
+
+- **Hatta biliyor musun?:** Bazı araştırmalar, prostaglandinlerin iyi bile geldiğini söylüyor.
+
+- **Ama dikkat!:** Eğer kanama veya ağrı olursa, biraz ara verin.
+
+### ✈️ Seyahat
+
+- **Uçak:** ✅ Sorun yok
+
+- **Araba/Otobüs:** ✅ Sorun yok
+
+- **Gemi:** ✅ Sorun yok
+
+> Seyahat etmek, bebeğin yerleşmesine engel değil. Ama stres yapabilir, o yüzden sakin kalmaya çalışın.
+
+### 🏃 Fiziksel Aktivite
+
+| **Aktivite**             | **Durum**                   | **Tavsiye**                              |
+| ------------------------ | --------------------------- | ---------------------------------------- |
+| **Yürüyüş**              | ✅ Tavsiye Edilir            | Günde 30 dk, hafif                       |
+| **Koşu**                 | ❌ Kaçın                     | Şok absorpsiyonu rahim uyarması          |
+| **HIIT/Yüksek Yoğunluk** | ❌ Kaçın                     | Vücut aşırı zorlama                      |
+| **Ağır Kaldırma**        | ❌ Kaçın                     | >5 kg kaldırmayın                        |
+| **Yoga/Pilates**         | ✅ Hafif İnversiyonlar Hariç | Endometrium artış meditasyonları yararlı |
+| **Yatak İstirahati**     | ❌ Önerilmez                 | Kan dolaşımı yavaşlatır; olumsuz etki    |
+
+***
+
+## 8.3. Beslenme: "Doğurganlık Diyeti"
+
+Akdeniz tipi beslenme, **anti-inflamatuar** özelliğiyle bu dönemde en çok önerilen modeldir.
+
+### 🥗 Tüketilmesi Gerekenler
+
+| **Kategori**    | **Gıda Örnekleri**                         | **Etki**                  |
+| --------------- | ------------------------------------------ | ------------------------- |
+| **Sebzeler**    | Yapraklı yeşiller, brokoli, havuç, ıspanak | Antioksidan (Vit A, C)    |
+| **Meyveler**    | Çilek, blueberry, kiwi, portakal           | Antoksidan; Folik asit    |
+| **Balıklar**    | Somon, sazan, uskumru                      | Omega-3; Anti-inflamatuar |
+| **Yağlar**      | Zeytinyağı, ceviz, badem, fındık           | Sağlıklı yağ asitleri     |
+| **Tahıllar**    | Tam buğday, pirinç, yulaf                  | Fiber; B vitaminleri      |
+| **Baklagiller** | Mercimek, fasülye, nohut                   | Protein; Folik asit       |
+
+### 🚫 Kaçınılması Gerekenler
+
+| **Madde**            | **Neden**                               |
+| -------------------- | --------------------------------------- |
+| **İşlenmiş Gıdalar** | Trans yağlar; BPA maruziyeti            |
+| **Aşırı Kafein**     | >200 mg/gün (2 fincan) → Implantasyon ↓ |
+| **Alkol**            | Embriyonun normal gelişimini engeller   |
+| **Sigara**           | Endometrial kan akışı bozulur           |
+| **Fazla Şeker**      | Kan şekeri spike'ı → Hormon imbalansı   |
+
+### 💧 Su Tüketimi
+
+- **Minimum:** 2-2.5 liter/gün
+
+- **Etki:** Rahim kanlanması; metabolizma; uyum
+
+- **İpucu:** Limon, karabiber ilâve edebilirsin (detoks)
+
+***
+
+## Bölüm 9: Sıkça Sorulan Sorular (SSS)
+
+### ❓ "Aşılama ağrılı mı?"
+
+**Cevap:** Hayır. İşlem genellikle **ağrısızdır.** Rahim ağzından kateter geçerken çok hafif, anlık bir kramp hissedilebilir (adet sancısı gibi). Anesteziye gerek **yoktur.**
+
+
+### ❓ "Aşılamadan sonra sperm geri akar mı?"
+
+**Cevap:** Evet, ayağa kalkınca vajinadan sıvı gelmesi normal bir durumdur. Genelde bu sıvılar şunlardan kaynaklanır:
+
+*Serviksi temizleyen serum fizyolojik
+
+*Vajinal akıntılar
+
+**Unutmayın:** Enjekte edilen spermler rahim içine (**daha derine**) bırakıldığı için güvende demektir.
+
+### ❓ "Dondurulmuş sperm kullanılabilir mi?"
+
+**Cevap:** **Evet.** Eğer erkek o gün müsait değilse ya da sperm dondurulması gereken bir sağlık sorunu varsa, önceden dondurulmuş sperm çözülerek aşılama yapılabilir. **Bu şekildeki başarı şansı, taze spermle yapılan aşılamayla neredeyse aynıdır.**
+
+### ❓ "Cinsiyet seçimi yapılabilir mi?"
+
+**Cevap:** **Hayır.** IUI'da spermler yıkanır ama X ve Y kromozomlu olanları ayırmak mümkün değil. Yani **bebeğin cinsiyeti doğal yolla hamile kalmakla aynı olasılıkta, yüzde 50 kız, yüzde 50 erkek** olur.
+
+***
+
+## Bölüm 10: Ekonomik Boyut — Maliyet Dinamiği
+
+Aşılama tedavisinin en büyük artılarından biri, bütçe dostu olmasıdır. Tüp bebeğe göre daha az sayıda laboratuvar işlemi ve daha az ilaç gerektiriyor.
+
+### 📋 Genel Maliyet Kalemleri
+
+| **Kalem**                      | **Açıklama**                               | **Değişkenlik** |
+| ------------------------------ | ------------------------------------------ | --------------- |
+| **Muayene ve Ultrason Takibi** | Tedavi süresince 3-4 kez yapılan takip     | Sabit           |
+| **Hormon İlaçları**            | Klomifen (düşük) vs. Gonadotropin (yüksek) | Yüksek          |
+| **Sperm Yıkama İşlemi**        | Androloji laboratuvarı ücreti              | Sabit           |
+| **İnseminasyon İşlemi**        | Doktorun uygulama ücreti                   | Sabit           |
+| **Progesteron Desteği**        | Luteal faz desteği seçimine göre           | Düşük           |
+
+### 💡 Stratejik Karar: Kaç Deneme Yapılmalı?
+
+**Hesaplama:**
+
+- 1 Başarısız Aşılama = 1 Kat Masraf
+- 5 Başarısız Aşılama = 5 Kat Masraf (Neredeyse 1 Tüp Bebek Tedavisi Parası!)
+- 1 Tüp Bebek Tedavisi = 5-7 Kat Aşılama Masrafı
+
+**Doç. Dr. Aksoy Ne Diyor?**
+
+"Başarı ihtimali az olan birine 4-5 kere aşılama yapmak pek akıllıca değil. Sonunda tüp bebek parasına yakın bir meblağ harcanmış oluyor ve hasta da yoruluyor."
+
+**Özet:** **Doğru hasta seçimi, paradan da önemli.**
+
+***
+
+## Bölüm 11: Kritik Karar — Ne Zaman IVF'e (Tüp Bebeğe) Geçilmeli?
+
+> Doç. Dr. Senai Aksoy'un daima vurguladığı gibi: **"Aşılama bir amaç değil, bir araçtır. Eğer bu araç hedefe ulaştırmıyorsa, strateji değiştirmek gerekir."**
+
+### 🔄 IUI'dan IVF'e Geçiş Kriterleri
+
+| **Kriter**                                             | **Karar**                                 |
+| ------------------------------------------------------ | ----------------------------------------- |
+| **Tekrarlayan Başarısızlıklar (3-4 başarısız deneme)** | IVF'e geç (başarı şansı 3-4 katına çıkar) |
+| **Yaş 38-40**                                          | 1-2 deneme sonrası IVF düşün              |
+| **Yaş >40**                                            | Direkt IVF daha mantıklı                  |
+| **TMSC <1 Milyon (Yıkama Sonrası)**                    | IUI boş zaman kaybı; ICSI/IVF gerekir     |
+| **Tubal Faktör (Kapalı Tüpler)**                       | IVF **ZORUNLU**                           |
+| **AMH Düşük ve Yaş 37+**                               | Hemen IVF (zaman kaybetme)                |
+| **Azalan Sperm Parametreleri**                         | Strateji değiştir                         |
+
+### 📊 Başarı Oranlarının Karşılaştırması
+
+| **Yaş/Durum**          | **IUI (Döngü Başına)** | **IVF (Döngü Başına)** | **Tavsiye**           |
+| ---------------------- | ---------------------- | ---------------------- | --------------------- |
+| **<35, Açıklanamayan** | %15-20                 | %40-50                 | IUI → IVF             |
+| **38-40**              | %8-10                  | %30-40                 | IUI 1-2x → Direkt IVF |
+| **>40**                | <2%                    | %15-25                 | **Direkt IVF**        |
+
+***
+
+## Sonuç: Umut, Bilgi ve Sabırla Dokunan Bir Süreç
+
+Aşılama (IUI), kısırlık tedavisinde ilk akla gelen, vücudu çok yormayan ve doğal yola en yakın yöntemlerden biridir. Çoğu çift için, ufak bir yardımla anne baba olma umudunu gerçeğe dönüştürebilir.
+
+### ✅ IUI'nin Gücü
+
+- Açıklanamayan infertilitede
+- Hafif erkek faktöründe
+- Ovulasyon bozukluklarında
+- Servikal faktörlerde
+- **Güçlü bir seçeneğe dönüşür**
+
+### ⚖️ Ama Gerçekçilik Gerekir
+
+İleri yaş, düşük sperm parametreleri ve tubal patoloji durumlarında, **ısrarcı IUI denemek:**
+
+- Zamanı tüketir
+- Umut kırıklığı yaratır
+- Finansal yükü artırır
+
+### 💙 Doç. Dr. Aksoy'un Felsefesi
+
+Aşılama (IUI) kısırlık tedavisinde en çok tercih edilen yöntemlerden biri çünkü hem doğal yollara yakın, hem de çok karmaşık bir işlem değil. 30 yıllık tecrübem bana şunu öğretti:
+
+***Ne kadar başarılı olma ihtimali olduğunu bilmek**, işler yolunda gitmezse daha kolay başa çıkmanızı sağlar.
+
+***Doğru kişiye doğru tedaviyi vermek**, inanılmaz sonuçlar doğurabilir.
+
+***Her olumsuz sonuç**, başarısızlık demek değil; **vücudunuzu daha iyi tanımak için bir fırsattır.**
+
+***Bazen, en güzel şeyler, en zorlu yollardan sonra gelir.**
+
+***
+
+## 📌 YASAL UYARI VE DİSKLEYMER
+
+**Yayın Tarihi:** Aralık 22, 2025
+
+Bu yazı, **Doç. Dr. Senai Aksoy** tarafından sadece bilgi vermek amacıyla yazılmıştır.
+
+⚠️ **ÖNEMLİ UYARI:**
+
+1. **Herkes farklıdır.** Burada yazılanlar genel bilgilerdir. Sizin için özel bir tedavi planı olmadan bir işe yaramaz.
+
+2. **Tüp bebekte başarı,** yaş, sperm durumu, yumurtalık durumu, rahimin nasıl olduğu ve stres gibi **bir sürü şeye bağlıdır.** Yani sonuçlar kişiden kişiye değişir.
+
+3. **Kendi durumunuz için mutlaka bir doktora gidin.** Bu yazı, doktorun sizi muayene etmesinin ve size özel tavsiyelerde bulunmasının yerine **geçmez.**
+
+4. **Bilimsel kaynaklar:** Bu yazı hazırlanırken ASRM, ESHRE ve PubMed gibi sağlam kaynaklardan yararlanılmıştır. Ancak tıp sürekli değişiyor, bu yüzden tedavi yöntemleri de değişebilir.
+
+5. **Ruhsal destek:** Kısırlık tedavisi insanı psikolojik olarak yorabilir. İhtiyacınız olursa bir psikologdan yardım almanız iyi olur.
+
+***
+
+**© Doç. Dr. Senai Aksoy - Tüm hakları saklıdır.**
+
+_Web sitesi: [tupbebek.com](https://tupbebek.com) 
