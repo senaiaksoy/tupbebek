@@ -6,10 +6,6 @@ image: /src/images/blog/embryo_derecelendirme.jpg
 ---
 
 
-
-
-## ⚡ ÖZET (TLDR)
-
 Aşılama (IUI), kısırlık tedavisinde ilk akla gelen, en doğal ve risksiz yöntemlerden biri. Sebebi belirsiz kısırlık, hafif sperm sorunları veya yumurtlama problemlerinde, her denemede yaklaşık %15-20 hamilelik şansı var. Ama başarıda yaş, sperm kalitesi ve hasta seçimi çok önemli. Yanlış kişiye ısrarla IUI yapmak hem zaman kaybı, hem de hayal kırıklığı yaratabilir.
 
 ***
