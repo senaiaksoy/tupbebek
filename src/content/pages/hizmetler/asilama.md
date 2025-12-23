@@ -38,7 +38,7 @@ Aşılama (IUI), kısırlık tedavisinde ilk akla gelen, en doğal ve risksiz y�
 
 Günümüzdeki üreme tıbbı, doğanın yetersiz kaldığı durumlarda yardımcı olur. Bu konuda en bilinen ve sıkça başvurulan yöntemlerden biri de **İntrauterin İnseminasyon (IUI)**, yani **Aşılama** tedavisidir.
 
-[![Rahim içi aşılama](https://img.youtube.com/vi/-ZGIvKZzG7U/hqdefault.jpg)](https://www.youtube.com/watch?v=-ZGIvKZzG7U)
+[![Rahim içi aşılama](https://img.youtube.com/vi/yT2dmjxZ3Qs/hqdefault.jpg)](https://www.youtube.com/watch?v=yT2dmjxZ3Qs)
 
 Youtube Videosu
 
