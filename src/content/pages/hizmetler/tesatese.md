@@ -4,8 +4,9 @@ title: Azospermik Erkeklerde Cerrahi Yoldan Sperm Elde Etme (TESE, TESA, mikro T
 description: Histeroskopi ışıklı bir teleskop yardımı ile rahim iç boşluğunun görüntülenmesine verilen isimdir. Tanısal veya tedavi edici amaçla yapılabilir.
 image: /src/images/18.jpg
 ---
+Bu sayfa, ejakülatta hiç sperm bulunmayan (azospermi) erkeklerde uygulanan TESA, TESE ve mikro-TESE yöntemlerini açıklar. Amaç, spermi doğrudan testisten veya epididimden cerrahi olarak elde ederek ICSI ile tüp bebek tedavisine imkân sağlamaktır. Sperm elde etme başarısı, azosperminin tipine (obstrüktif veya non-obstrüktif) ve uygulanan tekniğe göre değişir.
 
-### Azospermi Nedir?
+## Azospermi Nedir?
 
 Menide hiç sperm bulunmaması anlamına gelen azospermi erkek kısırlığı olgularının önemli sebeplerinden birisidir. Azospermi tüm erkeklerin %1'inde, infertilite (kısırlık) problemi olan erkeklerin ise %10 – 15'inde görülür. Menide çok az sayıda sperm bulunan ağır oligospermi ile azospermi birbirinden ayırdedilmelidir. Çünkü ağır oligospermide meninin santrifüje edilmesiyle elde edilebilecek az sayıdaki spermin mikroenjeksiyon için kullanımı mümkün olabilir ve böylece ilave testlere veya sperm elde etme girişimlerine (TESE - TESA - mikro TESE) gerek kalmayabilir. Bu amaçla Dünya Sağlık Örgütü en az iki meni örneğinde santrifüj sonrası çökeltinin mikroskopik incelemesi yapılmadan azospermi tanısı koyulamayacağını belirtmiştir.
 
@@ -32,3 +33,7 @@ Testislerin içerisinde bulunduğu kese ve herbir testisi çevreleyen tunika alb
 Testislerin içerisinde bulunduğu kese ve herbir testisi çevreleyen tunika albuginea isimli kılıf küçük bir kesi ile açılır. Testis dokusu mikroskop ile incelenerek geniş görülen kısımlardan örnekler alınır. Kesilen bölümler dikilerek işleme son verilir. Bu yöntemin testis dokusuna daha az zarar verdiğini öne süren yayınlar vardır.
 
 Cerrahi sperm elde etme yöntemleriyle obstrüktif azospermi olgularının %100'ünde, nonobstrüktif azospermi olgularının genel olarak %65'inde sperm bulunabilmektedir.
+
+Dr.Senai AKSOY
+
+Bu yazı ilginizi çektiyse, bu konudaki diğer yazımı da mutlaka [okuyun](https://tupbebek.com/blog/azospermi-mikro-tese-ikinci-deneme/)
