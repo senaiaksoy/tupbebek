@@ -46,7 +46,7 @@ Tüp bebek tedavisinde doktoru, bir **orkestra şefi** gibi düşünmek yanlış
 
 Ne yazık ki bazı büyük merkezlerde hasta yoğunluğu nedeniyle süreç zamanla “fabrikasyon” bir yapıya bürünebilir. Doktorunuza doğrudan ulaşmak zorlaşır, sorularınız çoğu zaman aracı personel üzerinden iletilir. Oysa tüp bebekte ayrıntılar belirleyicidir. Hekimin tahlilleri doğru okumadaki becerisi, tedaviyi kişiye göre anlık olarak ayarlayabilmesi ve laboratuvarla kurduğu güçlü iletişim, sonucu doğrudan etkiler.
 
-**Dr. Aksoy Kriteri** tam da bu noktada devreye girer:
+**[Dr. Aksoy](https://tupbebek.com/dr-senai-aksoy/) Kriteri** tam da bu noktada devreye girer:
 Butik hizmet anlayışında hekim, sürecin hiçbir aşamasında geri planda kalmaz. Tedavinin başından sonuna kadar bizzat işin içindedir. Ben hastalarımı dosya numaralarıyla değil, **hikâyeleriyle** tanırım. Çünkü bu yolculukta başarı, yalnızca tıbbi verilerle değil; güven, süreklilik ve gerçek bir hekim-hasta ilişkisiyle mümkündür.
 
 ### 2.2. Laboratuvar Teknolojisi: Başarının Görünmeyen Kahramanı
