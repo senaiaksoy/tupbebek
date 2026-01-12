@@ -131,7 +131,7 @@ Tüp bebek tedavisinde yalnızca rahme odaklanmakla yetinmeyiz. **Sorunun köken
 
 ---
 
-## İstanbul'da Tüp Bebek Fiyatları 2026: Neye Para Ödüyorsunuz? {#fiyatlandırma}
+## İstanbul'da Tüp Bebek Fiyatları 2026: Neye Para Ödüyorsunuz?
 
 Tüp bebek tedavisinin maliyeti tek bir rakamla ifade edilemez; çünkü birçok değişkene bağlı olarak şekillenir. **2026 yılı itibarıyla** fiyatlar; merkezin teknolojik altyapısına, kullanılan ilaçların dozuna ve tedaviye eklenen yöntemlere (PGT, Embriyoskop, havuz uygulamaları gibi) göre farklılık gösterir. İstanbul’da ortalama maliyetler, tedavinin kapsamına bağlı olarak **geniş bir aralıkta** seyredebilir; örneğin ilaçlar hariç **130.000 TL – 160.000 TL bandında** başlayıp, kullanılan ek teknolojilere göre daha yukarı çıkabilir.
 
