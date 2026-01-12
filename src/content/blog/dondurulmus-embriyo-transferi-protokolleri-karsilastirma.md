@@ -1,6 +1,6 @@
 ---
 slug: dondurulmus-embriyo-transferi-protokolleri-karsilastirma
-title: Dondurulmuş Embriyo Transferi (DET) Protokollerinin Kapsamlı Analizi
+title: Dondurulmuş Embriyo Transferi (DET) öncesi kullanılan ilaçlar
 description: Dondurulmuş embriyo transferinde (DET) doğal, yapay ve letrozol protokollerini karşılaştırıyoruz. PCOS'ta en iyi yaklaşım ve başarıyı artıran yollar burada.
 image: /src/images/blog/70.jpg
 date: 2025-11-27
