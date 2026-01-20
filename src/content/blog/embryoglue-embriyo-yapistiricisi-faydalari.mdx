@@ -6,6 +6,9 @@ image: /src/images/blog/70.jpg
 date: 2026-01-19
 ---
 
+import { Picture } from 'astro:assets';
+import embryoglueImage from "/src/images/blog/embryoglue.jpg";
+
 ## Embriyo Yapıştırıcısı (EmbryoGlue): Tüp Bebekte Tutunma Şansını Artıran Bilimsel "Köprü"
 
 ## Özet
@@ -68,7 +71,7 @@ Ortaya çıkan bu ilk temas, embriyonun rahim duvarına gömülme (implantasyon)
   src={embryoglueImage}
   widths={[240, 540, 720, embryoglueImage.width]}
   width={embryoglueImage.width}
-  height={embryoglue.height}
+  height={embryoglueImage.height}
   sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${embryoglueImage.width}px`}
   alt="Embryo glue ve yapay zeka"
 />
@@ -139,8 +142,17 @@ Bazı düşük kaliteli kanıtlar, EmbryoGlue kullanımının düşük oranları
 
 ---
 
-<script type="application/ld+json">
-{
+## Son Söz
+
+EmbryoGlue bir sihirli değnek değildir; kötü kalitedeki bir embriyoyu genetik olarak düzeltemez. Ancak iyi bir embriyonun, rahminize sıkıca sarılmasına yardımcı olan, bilimsel olarak kanıtlanmış en etkili dostlarımızdan biridir.
+
+---
+
+*Yayın Tarihi: 20 Ocak 2026*  
+*Dr. Senai Aksoy tarafından bilgilendirme amaçlı yazılmıştır*  
+*Her hasta benzersizdir. Tüp bebek sonuçları birçok faktöre göre değişiklik gösterir. Kişisel durumunuz için daima bir uzmana danışın.*
+
+export const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [{
@@ -173,14 +185,5 @@ Bazı düşük kaliteli kanıtlar, EmbryoGlue kullanımının düşük oranları
     }
   }]
 }
-</script>
 
-## Son Söz
-
-EmbryoGlue bir sihirli değnek değildir; kötü kalitedeki bir embriyoyu genetik olarak düzeltemez. Ancak iyi bir embriyonun, rahminize sıkıca sarılmasına yardımcı olan, bilimsel olarak kanıtlanmış en etkili dostlarımızdan biridir.
-
----
-
-*Yayın Tarihi: 20 Ocak 2026*  
-*Dr. Senai Aksoy tarafından bilgilendirme amaçlı yazılmıştır*  
-*Her hasta benzersizdir. Tüp bebek sonuçları birçok faktöre göre değişiklik gösterir. Kişisel durumunuz için daima bir uzmana danışın.*
+<script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
