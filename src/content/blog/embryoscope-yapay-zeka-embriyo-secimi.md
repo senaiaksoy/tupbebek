@@ -29,6 +29,8 @@ Bu ileri teknoloji yaklaşımının amacı; en yüksek gebelik potansiyeline sah
 5. [Klinik Sonuçlar](#klinik-sonuçlar)
 6. [Sıkça Sorulan Sorular](#sıkça-sorulan-sorular)
 
+[![Embriyoskop ve Yapay Zeka tüp bebekte Teknoloji Nasıl Değişiyor](https://img.youtube.com/vi/8Dx-f4ea6h4/0.jpg)](https://www.youtube.com/watch?v=8Dx-f4ea6h4)
+
 ---
 
 ## Giriş
