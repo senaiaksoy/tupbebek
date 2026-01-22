@@ -22,10 +22,10 @@ Bu ileri teknoloji yaklaşımının amacı; en yüksek gebelik potansiyeline sah
 
 ## İçindekiler
 
-1. [Klasik İnkübatörler vs. EmbryoScope](#klasik-inkübatörler-vs-embryoscope)
-2. ["Kapı Açma Etkisi" ve Embriyo Stresi](#kapı-açma-etkisi)
-3. [Yapay Zeka Embriyoyu Nasıl Seçiyor?](#yapay-zeka-embriyoyu-nasıl-seçiyor)
-4. [Morfokinetik: Embriyonun Matematiksel Dili](#morfokinetik)
+1. [Klasik İnkübatörler vs. EmbryoScope](#klasik-i̇nkübatörler-vs-embryoscope)
+2. ["Kapı Açma Etkisi" ve Embriyo Stresi](#kapı-açma-etkisi-door-opening-effect)
+3. [Yapay Zeka Embriyoyu Nasıl Seçiyor?](#yapay-zeka-ai-embriyoyu-nasıl-seçiyor)
+4. [Morfokinetik: Embriyonun Matematiksel Dili](#morfokinetik-embriyonun-matematiksel-dili)
 5. [Klinik Sonuçlar](#klinik-sonuçlar)
 6. [Sıkça Sorulan Sorular](#sıkça-sorulan-sorular)
 
