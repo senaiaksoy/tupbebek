@@ -25,8 +25,8 @@ Paris Rene Descart Üniversitesi'nden de Üreme Sağlığı ve Yardımcı Üreme
   "name": "Dr. Senai Aksoy",
   "givenName": "Senai",
   "familyName": "Aksoy",
-  "url": "https://draksoyivf.com",
-  "image": "https://draksoyivf.com/images/senai-aksoy.jpg",
+  "url": "https://tupbebek.com",
+  "image": "https://tupbebek.com\src\images\senai-aksoy.jpg",
   "description": "Kadın Hastalıkları ve Doğum Uzmanı, tüp bebek (IVF), ICSI, PGT ve fertilite koruma alanlarında 30 yılı aşkın deneyime sahip hekim.",
   "medicalSpecialty": [
     {
