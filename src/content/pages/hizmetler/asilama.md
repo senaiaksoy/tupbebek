@@ -6,17 +6,6 @@ image: /src/images/blog/embryo_derecelendirme.jpg
 ---
 
 
----
-slug: asilama
-title: Aşılama (IUI) Nedir, Nasıl yapılır?
-description: Nedeni bilinmeyen kısırlık vakalarında, doğal yollarla bebek sahibi olamayan genç çiftlerde gerçekleştirilen ilk uygulama aşılamadır (artifisiyel inseminasyon/IUI).
-image: /src/images/blog/embryo_derecelendirme.jpg
----
-
-<!-- SCHEMA: MedicalWebPage + FAQPage JSON-LD aşağıda oluşturuldu -->
-
-## 🔍 Özet (BLUF / TL;DR)
-
 **Aşılama (IUI – intrauterin inseminasyon), kısırlık tedavisinde ilk tercih edilen, vücudu en az zorlayan yöntemlerden biridir.** Açıklanamayan infertilite, hafif erkek faktörü veya ovülasyon bozukluklarında her denemede yaklaşık %15-20 gebelik şansı sunar. Ancak başarı; kadın yaşı, sperm kalitesi ve doğru hasta seçimine doğrudan bağlıdır. Yanlış endikasyonda ısrarcı IUI hem zaman hem de umut kaybına yol açar.
 
 ---
