@@ -213,41 +213,6 @@ Son tıbbi revizyon tarihi: 24 Şubat 2026. Bu makale, Kadın Hastalıkları ve 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "MedicalWebPage",
-  "name": "Embriyo Transferi: 3. Gün mü, 5. Gün mü? | Dr. Senai Aksoy",
-  "description": "Embriyo transferi için 3. gün mü, 5. gün mü sorusunun herkese uyan tek bir cevabı yoktur. 5. gün blastokist transferi transfer başına daha yüksek gebelik oranı sunar; az sayıda embriyosu olan hastalarda 3. gün transferi kümülatif başarıyı korurken iptal riskini azaltır. Doğru karar yaş, embriyo sayısı ve tedavi geçmişine göre kişiselleştirilir.",
-  "url": "https://tupbebek.com/embriyo-transferi-kacinci-gunde-yapilmalidir",
-  "inLanguage": "tr",
-  "datePublished": "2025-08-31",
-  "dateModified": "2026-02-24",
-  "lastReviewed": "2026-02-24",
-  "medicalAudience": { "@type": "Patient" },
-  "author": {
-    "@type": "Physician",
-    "name": "Doç. Dr. Senai Aksoy",
-    "url": "https://tupbebek.com",
-    "sameAs": [
-      "https://orcid.org/0000-0003-4110-5290",
-      "https://www.linkedin.com/in/senai-aksoy-bba69b36/"
-    ]
-  },
-  "reviewedBy": { "@type": "Physician", "name": "Doç. Dr. Senai Aksoy" },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Doç. Dr. Senai Aksoy Tüp Bebek Kliniği",
-    "url": "https://tupbebek.com"
-  },
-  "about": {
-    "@type": "MedicalCondition",
-    "name": "Embriyo Transferi Zamanlaması – Blastokist ve Klivaj Aşaması"
-  },
-  "specialty": "Reproductive Endocrinology and Infertility"
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
     {
@@ -292,7 +257,7 @@ Son tıbbi revizyon tarihi: 24 Şubat 2026. Bu makale, Kadın Hastalıkları ve 
     },
     {
       "@type": "Question",
-      "name": "Dondurulmuş embriyo transferi (FET) taze transferden daha mı iyidir?",
+      "name": "Dondurulmuş embriyo transferi taze transferden daha mı iyidir?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Freeze-all stratejisi rahmin dinlenmesini sağlar ve OHSS riskini ortadan kaldırır. Özellikle iyi prognozlu hastalarda ve PCOS'lu vakalarda avantajlıdır. Ancak yumurtalık rezervi düşük hastalarda taze transferin daha iyi sonuç verebileceğine dair yeni veriler de mevcuttur."
@@ -303,7 +268,7 @@ Son tıbbi revizyon tarihi: 24 Şubat 2026. Bu makale, Kadın Hastalıkları ve 
       "name": "Embriyo kalitesi nasıl değerlendirilir?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "3. gün embriyoları hücre sayısı (ideal 6-10), hücre eşitliği ve fragmentasyon oranıyla değerlendirilir. 5. gün blastokistleri Gardner sistemiyle; gelişim derecesi (1-6), iç hücre kitlesi kalitesi (A/B/C) ve trofektoderm kalitesi (A/B/C) olmak üzere üç parametre ile puanlanır. 4AA en yüksek kalite kategorisini temsil eder."
+        "text": "3. gün embriyoları hücre sayısı, hücre eşitliği ve fragmentasyon oranıyla değerlendirilir. 5. gün blastokistleri Gardner sistemiyle; gelişim derecesi, iç hücre kitlesi kalitesi ve trofektoderm kalitesi olmak üzere üç parametre ile puanlanır. 4AA en yüksek kalite kategorisini temsil eder."
       }
     },
     {
@@ -317,4 +282,3 @@ Son tıbbi revizyon tarihi: 24 Şubat 2026. Bu makale, Kadın Hastalıkları ve 
   ]
 }
 </script>
-```
