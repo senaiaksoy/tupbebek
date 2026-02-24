@@ -351,3 +351,111 @@ Yayın tarihi: 19 Aralık 2025.
 Bu yazı, bilgilendirme amacıyla Dr. Senai Aksoy tarafından hazırlandı. Her hasta farklı olduğu için tüp bebek tedavilerinde sonuçlar kişiden kişiye değişebilir. Kendi durumunuzla ilgili en doğru bilgiyi almak için mutlaka bir uzmana danışın.
 
 © Dr. Senai Aksoy
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "name": "4AA, 3BB veya 5BC. Embriyo Kalite Kodları ve Gebelik Şansınız Hakkında Gerçekler",
+  "description": "Embriyo 4AA, 3BB veya 5BC? Tüp bebek laboratuvar raporunuzu Dr. Senai Aksoy ile çözün. Bebeğinizin genetik potansiyelinin neden dış görünüşten daha önemli olduğunu keşfedin.",
+  "url": "https://tupbebek.com/embriyo-tup-bebek-laboratuvar-raporu-yorumlama",
+  "inLanguage": "tr",
+  "datePublished": "2025-12-22",
+  "dateModified": "2026-02-24",
+  "lastReviewed": "2026-02-24",
+  "medicalAudience": { "@type": "Patient" },
+  "author": {
+    "@type": "Physician",
+    "name": "Doç. Dr. Senai Aksoy",
+    "url": "https://tupbebek.com",
+    "sameAs": [
+      "https://orcid.org/0000-0003-4110-5290",
+      "https://www.linkedin.com/in/senai-aksoy-bba69b36/"
+    ]
+  },
+  "reviewedBy": { "@type": "Physician", "name": "Doç. Dr. Senai Aksoy" },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Doç. Dr. Senai Aksoy Tüp Bebek Kliniği",
+    "url": "https://tupbebek.com"
+  },
+  "about": {
+    "@type": "MedicalCondition",
+    "name": "Embriyo Derecelendirmesi ve Kalite Değerlendirmesi"
+  },
+  "specialty": "Reproductive Endocrinology and Infertility"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "3BB embriyo kötü bir embriyo mu?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hayır, kesinlikle öyle değil. B iyi demektir. 3BB, ortalama kalitede sağlıklı bir embriyodur. Tüp bebekle oluşan hamileliklerin çoğu bu tür embriyolardan gelir. Başarı şansı yaklaşık %40-50 civarındadır."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Embriyom çözüldükten sonra büzüldü. Ölmüş mü?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hayır. Blastokist içi sıvı dolu bir balon gibidir. Dondurmadan önce sıvısı alınır. Çözüldüğü zaman büzülmüş görünmesi normaldir. 2-3 saat içinde tekrar şişmeye başlarsa hayatta kaldığının iyi bir işaretidir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Neden bir yerine iki orta dereceli embriyo transfer edilmiyor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Bu mümkün ama riskleri vardır. İkisi de tutarsa ikiz hamilelikte erken doğum veya gestasyonel diyabet gibi sorunlar daha sık görülür. Genelde genç olmayan veya birkaç kez başarısız denemesi olan hastalar dışında tek embriyo transferi tercih edilir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Bir dahaki sefere embriyolarımın kalitesini artırabilir miyim?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Genetik yapı değiştirilemese de hayat tarzı değişiklikleri yapılabilir. Sigarayı bırakmak, ideal kiloda kalmak, Koenzim Q10 takviyesi almak faydalı olabilir. Ayrıca tedavi protokolünü değiştirmek veya sperm seçiminde daha iyi yöntemler denemek de embriyoların kalitesini artırabilir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Yardımlı kuluçka (Assisted Hatching) ne anlama gelir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Embriyonun zarının özellikle dondurulduktan sonra biraz fazla kalın olması durumunda lazerle zarın üzerine çok küçük bir delik açılarak embriyonun zarın içinden çıkmasına ve rahme daha iyi yerleşmesine yardımcı olunur. Dondurulmuş embriyolar veya ileri yaş hastalar için rutin olarak uygulanır."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "4AA embriyo her zaman hamilelik garantisi midir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hayır. 4AA en yüksek kalite kategorisini temsil eder ve başarı oranı 35 yaş altında %60-70 civarındadır. Ancak dış görünüşü mükemmel olan bir embriyo genetik olarak anormal olabilir. Özellikle 38 yaş üstü hastalarda PGT-A ile genetik kontrol önerilir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "PGT-A testi embriyo derecelendirmesini nasıl etkiler?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "PGT-A, embriyonun genetik yapısını kontrol eder. Euploid (genetik olarak normal) bir 4CC embriyo, anöploid bir 4AA embriyoya kıyasla daha yüksek bebek sahibi olma şansı sunar. Bu nedenle genetik normallik morfolojik görünümden daha önemlidir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Embriyo derecelendirmesinde trofektoderm mi iç hücre kitlesi mi daha önemlidir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Son araştırmalar trofektodermin (ikinci harf) hamilelik için en iyi belirleyici olabileceğini göstermektedir. Trofektoderm embriyonun rahim duvarına yerleşmesini ve plasentanın oluşmasını sağlar. 3AB ve 3BA arasında seçim yapılması gerekirse çoğu uzman artık 3BA'yı tercih etmektedir."
+      }
+    }
+  ]
+}
+</script>
