@@ -58,13 +58,42 @@ Bu olay, yarıştan ziyade bir eleme sürecine benziyor. Milyonlarca spermden sa
 
 #### 🚧 Spermlerin Katetmesi Gereken Engeller:
 
-| **Engel**                        | **Zorluk Derecesi** | **Mekanizma**                                                                        |
-| -------------------------------- | ------------------- | ------------------------------------------------------------------------------------ |
-| **Vajinal Asidite**              | ⭐⭐⭐⭐⭐               | Vajinanın doğal pH dengesi asidiktir; milyonlarca sperm dakikalar içinde öldürülür   |
-| **Servikal Bariyer**             | ⭐⭐⭐⭐⭐               | Rahim ağzı mukusu bazen spermleri yakalayabilir ve antikorlar da spermlere savaş açabilir. |
-| **Uterus Boşluğu**               | ⭐⭐⭐                 | Doğru fallop tüpüne yönelme zorunludur                                               |
-| **Fallop Tüplerindeki Yolculuk** | ⭐⭐⭐⭐                | Tüpün titreşimli hücreleri ve sıvı akışı kritikdir                                   |
-| **Yumurtaya Yaklaşma**           | ⭐⭐⭐⭐⭐               | Zona pellusida (yumurta zarı) penetrasyonu en zor aşamadır                           |
+<table style="width: 100%; border-collapse: collapse; font-family: sans-serif; font-size: 15px; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
+  <thead>
+    <tr style="background-color: #0b5394; color: #ffffff; text-align: left;">
+      <th style="padding: 16px; width: 25%;">Engel</th>
+      <th style="padding: 16px; text-align: center; width: 20%;">Zorluk Derecesi</th>
+      <th style="padding: 16px; width: 55%;">Mekanizma</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="background-color: #ffffff; border-bottom: 1px solid #e9ecef;">
+      <td style="padding: 16px; font-weight: bold; color: #d9534f;">Vajinal Asidite</td>
+      <td style="padding: 16px; text-align: center; color: #f5b041; font-size: 1.2em;">⭐⭐⭐⭐⭐</td>
+      <td style="padding: 16px; color: #495057; line-height: 1.5;">Vajinanın doğal pH dengesi asidiktir; milyonlarca sperm dakikalar içinde öldürülür.</td>
+    </tr>
+    <tr style="background-color: #f8f9fa; border-bottom: 1px solid #e9ecef;">
+      <td style="padding: 16px; font-weight: bold; color: #d9534f;">Servikal Bariyer</td>
+      <td style="padding: 16px; text-align: center; color: #f5b041; font-size: 1.2em;">⭐⭐⭐⭐⭐</td>
+      <td style="padding: 16px; color: #495057; line-height: 1.5;">Rahim ağzı mukusu bazen spermleri yakalayabilir ve antikorlar da spermlere savaş açabilir.</td>
+    </tr>
+    <tr style="background-color: #ffffff; border-bottom: 1px solid #e9ecef;">
+      <td style="padding: 16px; font-weight: bold; color: #e67e22;">Uterus Boşluğu</td>
+      <td style="padding: 16px; text-align: center; color: #f5b041; font-size: 1.2em;">⭐⭐⭐</td>
+      <td style="padding: 16px; color: #495057; line-height: 1.5;">Doğru fallop tüpüne yönelme zorunludur.</td>
+    </tr>
+    <tr style="background-color: #f8f9fa; border-bottom: 1px solid #e9ecef;">
+      <td style="padding: 16px; font-weight: bold; color: #e67e22;">Fallop Tüplerindeki Yolculuk</td>
+      <td style="padding: 16px; text-align: center; color: #f5b041; font-size: 1.2em;">⭐⭐⭐⭐</td>
+      <td style="padding: 16px; color: #495057; line-height: 1.5;">Tüpün titreşimli hücreleri ve sıvı akışı kritikdir.</td>
+    </tr>
+    <tr style="background-color: #ffffff;">
+      <td style="padding: 16px; font-weight: bold; color: #d9534f;">Yumurtaya Yaklaşma</td>
+      <td style="padding: 16px; text-align: center; color: #f5b041; font-size: 1.2em;">⭐⭐⭐⭐⭐</td>
+      <td style="padding: 16px; color: #495057; line-height: 1.5;">Zona pellusida (yumurta zarı) penetrasyonu en zor aşamadır.</td>
+    </tr>
+  </tbody>
+</table>
 
 **Sonuç:** Milyonlarca spermden yalnızca **birkaç yüz** yumurtanın bulunduğu bölgeye ulaşabilir.
 
@@ -76,9 +105,20 @@ Bu olay, yarıştan ziyade bir eleme sürecine benziyor. Milyonlarca spermden sa
 
 #### 🎯 IUI Nasıl Devreye Girer?
 
-    DOĞAL YOL:                    IUI YOLU:
-    Vajina → Serviks → Uterus    Uterus → Fallop Tüpü
-    (200-500M sperm)                 (5-10M seçilmiş sperm)
+<table style="width: 100%; text-align: center; border-collapse: collapse; font-family: sans-serif;">
+  <tr style="background-color: #f4f4f4;">
+    <th style="color: #d9534f; padding: 15px; border-radius: 8px 0 0 0;">DOĞAL YOL</th>
+    <th style="color: #0275d8; padding: 15px; border-radius: 0 8px 0 0;">IUI YOLU</th>
+  </tr>
+  <tr>
+    <td style="padding: 15px 10px 5px 10px; font-weight: bold; color: #333;">Vajina &rarr; Serviks &rarr; Uterus</td>
+    <td style="padding: 15px 10px 5px 10px; font-weight: bold; color: #333;">Uterus &rarr; Fallop Tüpü</td>
+  </tr>
+  <tr>
+    <td style="padding: 5px 10px 15px 10px; color: #5cb85c;">(200-500M sperm)</td>
+    <td style="padding: 5px 10px 15px 10px; color: #f0ad4e;">(5-10M seçilmiş sperm)</td>
+  </tr>
+</table>
 
 **Ana Avantajlar:**
 
@@ -237,21 +277,134 @@ Aşılama kararı almadan önce çiftin iyice kontrolden geçmesi gerekir. Bu sa
 
 #### 🚬 Sigara ve Alkol
 
-| **Madde**  | **Kadın Üzerindeki Etki**                        | **Erkek Üzerindeki Etki**        |
-| ---------- | ------------------------------------------------ | -------------------------------- |
-| **Sigara** | Rahim kanlanması bozulur; yumurta kalitesi düşer | Sperm DNA hasarı; motilite düşer |
-| **Alkol**  | Ovulasyon düzensizliği; hormon imbalansı         | Sperm üretimi azalır             |
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<style>
+    .fertility-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 20px 0;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .fertility-table th {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px;
+        text-align: left;
+    }
+    .fertility-table td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        line-height: 1.5;
+    }
+    .fertility-table tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+    .fertility-table tr:hover {
+        background-color: #f1f1f1;
+    }
+    .category-bold {
+        font-weight: bold;
+        color: #333;
+    }
+</style>
+</head>
+<body>
+
+<table class="fertility-table">
+  <thead>
+    <tr>
+      <th>Madde</th>
+      <th>Kadın Üzerindeki Etki</th>
+      <th>Erkek Üzerindeki Etki</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="category-bold">Sigara</td>
+      <td>Rahim kanlanması bozulur; yumurta kalitesi düşer.</td>
+      <td>Sperm DNA hasarı; motilite (hareketlilik) düşer.</td>
+    </tr>
+    <tr>
+      <td class="category-bold">Alkol</td>
+      <td>Ovulasyon (yumurtlama) düzensizliği; hormon imbalansı.</td>
+      <td>Sperm üretimi ve kalitesi azalır.</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
 
 > [ASRM](https://www.reproductivefacts.org/news-and-publications/fact-sheets-and-infographics/smoking-and-infertility/) sigaranın bırakılmasının gebelik şansını artırdığını **kesin bir dille** belirtir.
 
 #### ⚖️ Kilo Yönetimi (BMI)
 
-| **BMI Aralığı** | **IUI İçin Etki**                                          |
-| --------------- | ---------------------------------------------------------- |
-| **18.5 - 24.9** | İdeal                                                      |
-| **25 - 29.9**   | Hafif overweight; ilaç yanıtı normal                       |
-| **>30 (Obez)**  | Hormon ilaçlarına yanıt bozulur; %30-40 zayıflama önerilir |
-| **<18.5**       | Beslenme yetersizliği; ovulasyon engellenir                |
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<style>
+    .bmi-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-top: 20px;
+    }
+    .bmi-table th {
+        background-color: #2c3e50;
+        color: white;
+        padding: 12px;
+        text-align: left;
+    }
+    .bmi-table td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        vertical-align: middle;
+    }
+    .bmi-table tr:nth-child(even) {
+        background-color: #f8f9fa;
+    }
+    .bmi-badge {
+        font-weight: bold;
+        color: #e67e22;
+    }
+</style>
+</head>
+<body>
+
+<table class="bmi-table">
+  <thead>
+    <tr>
+      <th>BMI Aralığı</th>
+      <th>IUI İçin Etki</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="bmi-badge">18.5 - 24.9</td>
+      <td><strong>İdeal:</strong> En yüksek başarı oranı beklenen aralık.</td>
+    </tr>
+    <tr>
+      <td class="bmi-badge">25 - 29.9</td>
+      <td><strong>Hafif kilolu:</strong> İlaç yanıtı genellikle normaldir.</td>
+    </tr>
+    <tr>
+      <td class="bmi-badge">&gt;30 (Obez)</td>
+      <td><strong>Düşük Yanıt:</strong> Hormon ilaçlarına yanıt bozulur; tedavi öncesi %30-40 zayıflama önerilir.</td>
+    </tr>
+    <tr>
+      <td class="bmi-badge">&lt;18.5</td>
+      <td><strong>Düşük BMI:</strong> Beslenme yetersizliği görülebilir; ovulasyon (yumurtlama) engellenir.</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
 
 **Pratik tavsiye:** %5-10'luk bir kilo kaybı bile **ovulasyonu düzeltebilir.**
 
@@ -286,19 +439,37 @@ Aşılama tedavisi, bir adet döngüsü boyunca süren (yaklaşık **12-14 gün*
 
 ### 📊 IUI Süreci Görsel Zaman Çizelgesi
 
-    GÜN 1-2: Tedavi Başlangıcı
-       ↓
-    GÜN 3-7: Yumurtalık Uyarımı (İlaç)
-       ↓
-    GÜN 8-10: Folikülometri (Ultrasonda Takip)
-       ↓
-    GÜN 11: Ovulasyon Tetiklenmesi (Çatlatma İğnesi)
-       ↓
-    GÜN 12: İNSEMİNASYON GÜNÜ
-       ↓
-    GÜN 13-27: Luteal Faz Desteği + Bekleyiş
-       ↓
-    GÜN 28: Gebelik Testi
+ <div style="font-family: sans-serif; line-height: 1.6; max-width: 500px; padding: 10px;">
+  
+  <div style="border-left: 4px solid #6c757d; padding-left: 15px; margin-bottom: 10px;">
+    <span style="color: #6c757d; font-weight: bold;">GÜN 1-2:</span> Tedavi Başlangıcı
+  </div>
+  
+  <div style="border-left: 4px solid #0d6efd; padding-left: 15px; margin-bottom: 10px;">
+    <span style="color: #0d6efd; font-weight: bold;">GÜN 3-7:</span> Yumurtalık Uyarımı (İlaç)
+  </div>
+  
+  <div style="border-left: 4px solid #0dcaf0; padding-left: 15px; margin-bottom: 10px;">
+    <span style="color: #0dcaf0; font-weight: bold;">GÜN 8-10:</span> Folikülometri (Ultrasonda Takip)
+  </div>
+  
+  <div style="border-left: 4px solid #fd7e14; padding-left: 15px; margin-bottom: 10px;">
+    <span style="color: #fd7e14; font-weight: bold;">GÜN 11:</span> Ovulasyon Tetiklenmesi (Çatlatma İğnesi)
+  </div>
+  
+  <div style="border-left: 4px solid #dc3545; padding-left: 15px; margin-bottom: 10px; background-color: #fff5f5;">
+    <span style="color: #dc3545; font-weight: bold;">GÜN 12: İNSEMİNASYON GÜNÜ</span>
+  </div>
+  
+  <div style="border-left: 4px solid #6f42c1; padding-left: 15px; margin-bottom: 10px;">
+    <span style="color: #6f42c1; font-weight: bold;">GÜN 13-27:</span> Luteal Faz Desteği + Bekleyiş
+  </div>
+  
+  <div style="border-left: 4px solid #198754; padding-left: 15px; margin-bottom: 10px; background-color: #f0fdf4;">
+    <span style="color: #198754; font-weight: bold;">GÜN 28: Gebelik Testi</span>
+  </div>
+
+</div>
 
 ### Adım 1: Yumurtalıkların Uyarılması (Kontrollü Ovulasyon İndüksiyonu - COI)
 
@@ -434,22 +605,24 @@ Senai Aksoy gibi doktorlar genelde şöyle yapar:
 
 ### 📋 Prosedür Adımları
 
-    1. HAZIRLIK
-       - Hasta jinekolojik muayene pozisyonuna alınır
-       - Vajina ve rahim ağzı steril serum fizyolojik ile temizlenir
+  <pre style="background-color: #f8f9fa; padding: 20px; border-radius: 8px; border-left: 5px solid #0d6efd; font-family: monospace; line-height: 1.6;">
+<span style="color: #0d6efd; font-weight: bold; font-size: 1.1em;">  1. HAZIRLIK</span>
+       <span style="color: #495057;">- Hasta jinekolojik muayene pozisyonuna alınır</span>
+       <span style="color: #495057;">- Vajina ve rahim ağzı steril serum fizyolojik ile temizlenir</span>
 
-    2. KATETER İLERLETİLMESİ
-       - İnce, yumuşak, esnek kateter rahim ağzından geçirilir
-       - Ultrason eşliğinde VEYA doktor tecrübesiyle
-       - Rahim boşluğunun üst kısmı hedef
+<span style="color: #198754; font-weight: bold; font-size: 1.1em;">  2. KATETER İLERLETİLMESİ</span>
+       <span style="color: #495057;">- İnce, yumuşak, esnek kateter rahim ağzından geçirilir</span>
+       <span style="color: #495057;">- Ultrason eşliğinde VEYA doktor tecrübesiyle</span>
+       <span style="color: #495057;">- Rahim boşluğunun üst kısmı hedef</span>
 
-    3. SPERM İNJEKSİYONU
-       - Laboratuvardan gelen yoğunlaştırılmış sperm enjeksiyonu
-       - Yavaş ve dikkatli (rahimi uyarmamak için)
+<span style="color: #fd7e14; font-weight: bold; font-size: 1.1em;">  3. SPERM İNJEKSİYONU</span>
+       <span style="color: #495057;">- Laboratuvardan gelen yoğunlaştırılmış sperm enjeksiyonu</span>
+       <span style="color: #495057;">- Yavaş ve dikkatli (rahimi uyarmamak için)</span>
 
-    4. ÇEKILME
-       - Kateter çekilir
-       - İşlem tamamlanır
+<span style="color: #dc3545; font-weight: bold; font-size: 1.1em;">  4. ÇEKİLME</span>
+       <span style="color: #495057;">- Kateter çekilir</span>
+       <span style="color: #495057;">- İşlem tamamlanır</span>
+</pre>
 
 ### ✅ İşlem Sonrası (Önemli Bilgiler)
 
