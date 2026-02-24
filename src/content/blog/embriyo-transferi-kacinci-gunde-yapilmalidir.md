@@ -213,6 +213,46 @@ Son tıbbi revizyon tarihi: 24 Şubat 2026. Bu makale, Kadın Hastalıkları ve 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "name": "Embriyo Transferi: 3. Gün mü, 5. Gün mü? | Dr. Senai Aksoy",
+  "description": "Embriyo transferi için 3. gün mü, 5. gün mü sorusunun herkese uyan tek bir cevabı yoktur. 5. gün blastokist transferi transfer başına daha yüksek gebelik oranı sunar; az sayıda embriyosu olan hastalarda 3. gün transferi kümülatif başarıyı korurken iptal riskini azaltır.",
+  "url": "https://tupbebek.com/blog/embriyo-transferi-kacinci-gunde-yapilmalidir",
+  "inLanguage": "tr",
+  "datePublished": "2025-08-31",
+  "dateModified": "2026-02-24",
+  "lastReviewed": "2026-02-24",
+  "medicalAudience": {
+    "@type": "Patient"
+  },
+  "author": {
+    "@type": "Physician",
+    "name": "Doç. Dr. Senai Aksoy",
+    "url": "https://tupbebek.com",
+    "sameAs": [
+      "https://orcid.org/0000-0003-4110-5290",
+      "https://www.linkedin.com/in/senai-aksoy-bba69b36/"
+    ]
+  },
+  "reviewedBy": {
+    "@type": "Physician",
+    "name": "Doç. Dr. Senai Aksoy"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Doç. Dr. Senai Aksoy Tüp Bebek Kliniği",
+    "url": "https://tupbebek.com"
+  },
+  "about": {
+    "@type": "MedicalCondition",
+    "name": "Embriyo Transferi Zamanlaması"
+  },
+  "specialty": "Reproductive Endocrinology and Infertility"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
     {
