@@ -5,6 +5,9 @@ description: b‑hCG testi nedir? Tüp bebek tedavisinde beta‑hCG (beta insan 
 image: /src/images/37.jpg
 ---
 
+
+**Tüp bebek tedavisinin tutup tutmadığını anlamanın en güvenilir yolu b-hCG kan testidir.** Embriyo transferinden 10–12 gün sonra bakılan beta-hCG değeri, embriyonun rahme tutunup tutunmadığını gösterir. Tek bir sonuçla karar verilmez; 48–72 saatte bir iki katına çıkan artış eğrisi, gebeliğin sağlıklı seyrettiğinin en önemli göstergesidir.
+
 ## Hamilelik Testi Sonuçlarınız Ne Anlama Geliyor?
 
 Tüp bebek (IVF) tedavisi gören çiftler için **embriyo transferi sonrasındaki bekleyiş**, tarifsiz duyguların yaşandığı bir dönemdir. Hemen herkesin aklında tek bir soru vardır: “**Acaba başarılı oldu mu?**” Tam da burada, bu sorunun yanıtını veren en kritik test, **b-hCG (beta-hCG)** testidir. Bu test, gebelik hormonu olarak da bilinen **hCG** seviyelerini ölçer ve embriyonun rahim duvarına tutunup tutunmadığına dair ipuçları sunar. Gelin, bu hormonun ne işe yaradığına, değerlerinin ne anlama geldiğine ve dikkat etmeniz gereken noktalara birlikte göz atalım.
@@ -147,4 +150,114 @@ Eğer b-hCG’niz beklenen artışı gösteriyorsa, gebeliğin sağlıklı devam
   </tbody>
 </table>
 
-*Bu yazı Doç.Dr.Senai AKSOY tarafından hazırlanmış ve tıbbi olarak onaylanmıştır.*
+Yasal Uyarı
+
+Son tıbbi revizyon tarihi: 24 Şubat 2026. Bu makale, Kadın Hastalıkları ve Doğum Uzmanı, Üreme Tıbbı Uzmanı Doç. Dr. Senai Aksoy tarafından yazılmış ve tıbbi açıdan doğrulanmıştır. İçerik yalnızca bilgilendirme amaçlıdır. Her hasta bireyseldir ve tüp bebek sonuçları birçok tıbbi faktöre bağlı olarak değişir. Bu içerik hiçbir koşulda tıbbi muayene ve danışmanlığın yerini almaz. Lütfen kendi durumunuz hakkında her zaman doktorunuza danışın. © Doç. Dr. Senai Aksoy – Tüm hakları saklıdır.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "name": "Tüp Bebek Tedavim 'Tuttu mu'? b-hCG Testi ve Yorumu",
+  "description": "Tüp bebek tedavisinin tutup tutmadığını anlamanın en güvenilir yolu b-hCG kan testidir. Embriyo transferinden 10–12 gün sonra bakılan beta-hCG değeri embriyonun rahme tutunup tutunmadığını gösterir. Tek sonuçla karar verilmez; 48–72 saatte iki katına çıkan artış eğrisi gebeliğin sağlıklı seyrettiğinin en önemli göstergesidir.",
+  "url": "https://tupbebek.com/tup-bebek-tedavim-tuttu-mu",
+  "inLanguage": "tr",
+  "datePublished": "2025-09-16",
+  "dateModified": "2026-02-24",
+  "lastReviewed": "2026-02-24",
+  "medicalAudience": { "@type": "Patient" },
+  "author": {
+    "@type": "Physician",
+    "name": "Doç. Dr. Senai Aksoy",
+    "url": "https://tupbebek.com",
+    "sameAs": [
+      "https://orcid.org/0000-0003-4110-5290",
+      "https://www.linkedin.com/in/senai-aksoy-bba69b36/"
+    ]
+  },
+  "reviewedBy": { "@type": "Physician", "name": "Doç. Dr. Senai Aksoy" },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Doç. Dr. Senai Aksoy Tüp Bebek Kliniği",
+    "url": "https://tupbebek.com"
+  },
+  "about": {
+    "@type": "MedicalCondition",
+    "name": "IVF Sonrası Gebelik Takibi (b-hCG)"
+  },
+  "specialty": "Reproductive Endocrinology and Infertility"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Tüp bebek sonrası b-hCG testi ne zaman yapılır?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Embriyo transferinden genellikle 10–12 gün sonra ilk b-hCG kan testi yapılır. Kesin zamanlama doktorunuzun tedavi takvimine göre belirlenir; doktorunuzun önerisine göre hareket etmek en doğrusudur."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "b-hCG değeri kaç olmalıdır, gebelik tuttu mu?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "5 IU/mL altı genellikle gebelik olmadığını, 5–50 IU/mL çok erken gebeliğe işaret edebileceğini, 50 IU/mL ve üzeri ise olumlu gebelik bulgusunu düşündürür. Tek değerden çok 48–72 saatteki ikiye katlanan artış eğrisi belirleyicidir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "İlk b-hCG testim düşük çıktı, umut kesmeli miyim?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hayır. Bazı gebelikler başlangıçta yavaş gelişir. Doktorunuz 2–3 gün sonra testi tekrarlamanızı isteyecektir. Artış eğrisini görmeden tek sonuçla karar vermek doğru değildir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "b-hCG çok yüksek çıktıysa bu iyi bir işaret midir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yüksek değerler çoğul gebelik ihtimaline işaret edebilir, ancak nadir anormal durumlar da bu tabloyu verebilir. Doktorunuzun ultrason ve ek tetkiklerle değerlendirmesini beklemek en doğru yaklaşımdır."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Dış gebelik b-hCG ile anlaşılır mı?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dış gebelikte b-hCG artışı beklenenin altında kalır ya da değerler dalgalı seyreder. Kesin tanı için ultrason gerekir. Erken dönemde tanı konulması müdahale açısından çok önemlidir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kimyasal gebelik nedir, b-hCG nasıl seyreder?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Kimyasal gebelikte b-hCG önce yükselerek gebeliğe işaret eder, ardından beklenen artış eğrisini göstermeden düşmeye başlar. Erken gebelik kaybı olarak da adlandırılır; doktorunuz ek testlerle durumu netleştirecektir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "b-hCG testini hep aynı laboratuvarda yaptırmak gerekir mi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Evet, mümkünse aynı laboratuvarda yaptırmanız önerilir. Farklı cihaz kalibrasyonları ve kit farklılıkları sonuçlarda küçük sapmalar yaratabilir; seri ölçümlerin karşılaştırılabilir olması için tutarlılık önemlidir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Embriyo transferinden kaç gün sonra eve gebelik testi yapılabilir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Eve gebelik testleri idrardaki hCG'yi ölçer ve transferden en az 10–12 gün geçmeden yapıldığında yanlış negatif sonuç verebilir. Kan b-hCG testi çok daha erken ve hassas sonuç verdiği için doktorunuzun önerdiği zamanda kan testi yaptırmanız daha güvenilirdir."
+      }
+    }
+  ]
+}
+</script>

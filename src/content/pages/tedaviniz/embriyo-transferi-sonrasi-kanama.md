@@ -5,14 +5,17 @@ description: Embriyo transferi sonrası kanama çoğu zaman hafif lekelenme şek
 image: /src/images/37.jpg
 ---
 
-# Embriyo Transferi Sonrası Kanama: Normal mi, Ne Zaman Olur ve Ne Yapmalı?
+
+**Embriyo transferi sonrası hafif kanama veya lekelenme çoğu zaman normaldir ve panik gerektirmez.** İmplantasyon kanaması, luteal faz kanaması veya servikal tahriş en sık nedenlerdir. Progesteron desteği kesinlikle kesilmemeli; kanama parlak kırmızı, yoğun veya şiddetli ağrıyla birlikteyse zaman kaybetmeden doktora başvurulmalıdır.
+
+---
 
 ## Embriyo Transferi Sonrası Kanama Normal midir?
 
 Tüp bebek tedavisinde en heyecanlı fakat belirsizliklerle dolu dönem, embriyo transferi ile gebelik testi arasındaki *iki haftalık bekleme* sürecidir. Bu süreçte görülen hafif lekelenme veya pembe–kahverengi kanama, çiftlerin en çok endişe duyduğu konulardan biridir. Aslında:
 
-- **Yerleşme kanaması** *(implantasyon)* embriyonun rahim duvarına tutunması sırasında oluşur ve genellikle 5–12. günlerde kısa süreli lekelenme olarak ortaya çıkar. Herkeste görülmez ve olmaması gebeliğin oluşmadığı anlamına gelmez.
-- **Luteal faz kanaması**, yumurtalıkların ilaçlarla uyarılması sonucu korpus luteumun işlevinin kısalması nedeniyle meydana gelir ve yumurta toplamadan 7–8 gün sonra hafif kanama şeklinde olabilir. Tüp bebek tedavilerinin yaklaşık %7–%42’sinde görülür. Bu durum gebelik şansının bittiği anlamına gelmediği gibi, destek ilaçları (özellikle progesteron) bırakmamak son derece önemlidir.
+- [**Yerleşme kanaması**](https://my-clevelandclinic-org.translate.goog/health/symptoms/24536-implantation-bleeding?_x_tr_sl=en&_x_tr_tl=tr&_x_tr_hl=tr&_x_tr_pto=tc&_x_tr_hist=true) *(implantasyon)* embriyonun rahim duvarına tutunması sırasında oluşur ve genellikle 5–12. günlerde kısa süreli lekelenme olarak ortaya çıkar. Herkeste görülmez ve olmaması gebeliğin oluşmadığı anlamına gelmez.
+- **Luteal faz kanaması**, yumurtalıkların ilaçlarla uyarılması sonucu korpus luteumun işlevinin kısalması nedeniyle meydana gelir ve yumurta toplamadan 7–8 gün sonra hafif kanama şeklinde olabilir. Tüp bebek tedavilerinin yaklaşık %7–%42'sinde görülür. Bu durum gebelik şansının bittiği anlamına gelmediği gibi, destek ilaçları (özellikle progesteron) bırakmamak son derece önemlidir.
 - **Servikal irritasyon**, vajinal progesteron fitilleri veya embriyo transferi sırasında rahim ağzının tahriş olması nedeniyle hafif kanamaya sebep olabilir. Embriyoya zarar vermez.
 
 Bu hafif kanamalar genellikle tedavi başarısının iyi ya da kötü bir göstergesi değildir; pek çok hasta hafif kanama yaşasa da gebelik testi pozitif çıkabilir. Ancak kanamanın özelliklerine dikkat etmek gerekir.
@@ -59,7 +62,7 @@ Embriyo rahme tutunmadığında veya gebelik sonlandığında rahim duvarı dök
 
 Rahim içi enfeksiyonlar, polip veya miyom gibi yapısal problemler de transfer sonrası kanamaya neden olabilir. Kanamayla birlikte ateş, kötü kokulu akıntı veya şiddetli ağrı varsa mutlaka doktorunuza başvurun.
 
-### 6. Yumurtalık Kisti veya Dış Gebelik
+### 6. Yumurtalık Kisti veya [Dış Gebelik](https://www.ncbi.nlm.nih.gov/books/NBK539860/)
 
 Tedavi sırasında oluşabilen yumurtalık kistleri veya nadiren dış gebelik, şiddetli ağrı ve kanama ile kendini gösterebilir. Bu durum acil müdahale gerektirir; acil servis veya kadın doğum uzmanı ile iletişime geçilmelidir.
 
@@ -106,6 +109,22 @@ Beta hCG kan testi embriyo transferinden 10–12 gün sonra yapılmalıdır. Kan
 
 Progesteron desteği tedavinin önemli bir parçasıdır. Kanamanız olduğunda doz değişikliği yapmak için doktorunuza danışın; kendi başınıza doz değiştirmeyin.
 
+### İmplantasyon (yerleşme) kanaması ne zaman görülür?
+
+Embriyonun rahim duvarına tutunması sırasında oluşur ve genellikle transferden 5–12 gün sonra kısa süreli, pembe veya kahverengi lekelenme şeklinde görülür. Her kadında yaşanmaz; olmaması olumsuz bir işaret değildir.
+
+### Luteal faz kanaması nedir, gebelik şansını etkiler mi?
+
+Luteal faz kanaması, yüksek doz hormon tedavisi sonrası korpus luteum fonksiyonunun kısalması ve progesteron düşüşüyle oluşur. Tüp bebek tedavilerinin yaklaşık %7–42'sinde görülür. Gebelik şansının bittiği anlamına gelmez; progesteron desteğine devam etmek kritiktir.
+
+### Kanama yaşamayanlar için gebelik gerçekleşmedi mi?
+
+Hayır. Birçok kadın transferden sonra hiçbir lekelenme yaşamaz ve sağlıklı gebelik elde eder. Her vücut farklı tepki verir. Kesin sonuç için transferden 10–12 gün sonra b-hCG kan testini beklemek gerekir.
+
+### Hangi durumlarda acil doktora başvurmak gerekir?
+
+Kanama parlak kırmızı, yoğun ve pıhtılıysa; şiddetli karın ağrısı, ateş, titreme veya baş dönmesi eşlik ediyorsa; ya da hamilelik testi pozitif çıktıktan sonra kanama başladıysa vakit kaybetmeden doktorunuza başvurun. Dış gebelik veya enfeksiyon gibi acil durumlar söz konusu olabilir.
+
 ## İç Bağlantılar ve Daha Fazla Okuma
 
 Bu makalede yer alan konular hakkında daha detaylı bilgi almak veya farklı konuları incelemek isterseniz, aşağıdaki yazılarımızı ziyaret edebilirsiniz:
@@ -118,4 +137,115 @@ Bu makalede yer alan konular hakkında daha detaylı bilgi almak veya farklı ko
 
 ---
 
-Bu içerik, Doç.Dr.Senai AKSOY tarafından genel bilgi vermek amacıyla hazırlanmıştır. Kişisel durumunuz için mutlaka **doktorunuzla** görüşünüz. Unutmayın, her tüp bebek yolculuğu benzersizdir; sabır ve doğru destek ile umudunuz hep canlı kalacaktır.
+## ⚖️ Yasal Uyarı
+
+Son tıbbi revizyon tarihi: 24 Şubat 2026. Bu makale, Kadın Hastalıkları ve Doğum Uzmanı, Üreme Tıbbı Uzmanı Doç. Dr. Senai Aksoy tarafından yazılmış ve tıbbi açıdan doğrulanmıştır. İçerik yalnızca bilgilendirme amaçlıdır. Her hasta bireyseldir ve tüp bebek sonuçları birçok tıbbi faktöre bağlı olarak değişir. Bu içerik hiçbir koşulda tıbbi muayene ve danışmanlığın yerini almaz. Lütfen kendi durumunuz hakkında her zaman doktorunuza danışın. © Doç. Dr. Senai Aksoy – Tüm hakları saklıdır.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "name": "Embriyo Transferi Sonrası Kanama – Nedenleri ve Ne Yapmalısınız?",
+  "description": "Embriyo transferi sonrası hafif kanama veya lekelenme çoğu zaman normaldir ve panik gerektirmez. İmplantasyon kanaması, luteal faz kanaması veya servikal tahriş en sık nedenlerdir. Progesteron desteği kesinlikle kesilmemeli; kanama parlak kırmızı, yoğun veya şiddetli ağrıyla birlikteyse zaman kaybetmeden doktora başvurulmalıdır.",
+  "url": "https://tupbebek.com/embriyo-transferi-sonrasi-kanama",
+  "inLanguage": "tr",
+  "datePublished": "2025-09-16",
+  "dateModified": "2026-02-24",
+  "lastReviewed": "2026-02-24",
+  "medicalAudience": { "@type": "Patient" },
+  "author": {
+    "@type": "Physician",
+    "name": "Doç. Dr. Senai Aksoy",
+    "url": "https://tupbebek.com",
+    "sameAs": [
+      "https://orcid.org/0000-0003-4110-5290",
+      "https://www.linkedin.com/in/senai-aksoy-bba69b36/"
+    ]
+  },
+  "reviewedBy": { "@type": "Physician", "name": "Doç. Dr. Senai Aksoy" },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Doç. Dr. Senai Aksoy Tüp Bebek Kliniği",
+    "url": "https://tupbebek.com"
+  },
+  "about": {
+    "@type": "MedicalCondition",
+    "name": "Embriyo Transferi Sonrası Kanama ve İmplantasyon Kanaması"
+  },
+  "specialty": "Reproductive Endocrinology and Infertility"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Embriyo transferi sonrası kanama normal midir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hafif pembe veya kahverengi lekelenme çoğu zaman normaldir. İmplantasyon kanaması, luteal faz kanaması veya servikal tahriş nedeniyle olabilir. Tedavi başarısının olumsuz göstergesi değildir; birçok hasta hafif kanama yaşasa da gebelik testi pozitif çıkabilir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "İmplantasyon (yerleşme) kanaması ne zaman görülür?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Embriyonun rahim duvarına tutunması sırasında oluşur ve genellikle transferden 5–12 gün sonra kısa süreli, pembe veya kahverengi lekelenme şeklinde görülür. Her kadında yaşanmaz; olmaması olumsuz bir işaret değildir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kanama olursa progesteron ilaçlarını kesmeli miyim?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Kesinlikle hayır. Progesteron ve diğer destek ilaçları rahim duvarının sağlıklı kalması için kritiktir. Kanama olsa bile doktorunuz bırakmanızı söyleyene kadar ilaçlara devam edilmelidir. Doz değişikliği için mutlaka doktorunuza danışın."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Embriyo transferi sonrası kanama kaç gün sürer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "İmplantasyon kanaması genellikle birkaç saat ile 1–2 gün arasında sürer. Luteal faz kanaması da çoğunlukla kısa sürelidir. Kanama 2–3 günden fazla uzarsa veya şiddetlenirse doktorunuza başvurun."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hangi durumlarda acil doktora başvurmak gerekir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Kanama parlak kırmızı, yoğun ve pıhtılıysa; şiddetli karın ağrısı, ateş, titreme veya baş dönmesi eşlik ediyorsa; ya da hamilelik testi pozitif çıktıktan sonra kanama başladıysa vakit kaybetmeden doktorunuza başvurun. Dış gebelik veya enfeksiyon gibi acil durumlar söz konusu olabilir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Luteal faz kanaması nedir, gebelik şansını etkiler mi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Luteal faz kanaması, yüksek doz hormon tedavisi sonrası korpus luteum fonksiyonunun kısalması ve progesteron düşüşüyle oluşur. Tüp bebek tedavilerinin yaklaşık %7–42'sinde görülür. Gebelik şansının bittiği anlamına gelmez; progesteron desteğine devam etmek kritiktir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kanama yaşamayanlar için gebelik gerçekleşmedi mi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hayır. Birçok kadın transferden sonra hiçbir lekelenme yaşamaz ve sağlıklı gebelik elde eder. Her vücut farklı tepki verir. Kesin sonuç için transferden 10–12 gün sonra b-hCG kan testini beklemek gerekir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ne zaman gebelik testi yapmalıyım, kanama olursa testi erken yapabilir miyim?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Beta hCG kan testi embriyo transferinden 10–12 gün sonra yapılmalıdır. Kanamanız olsun ya da olmasın erken test yanıltıcı sonuç verebilir. Sonucu almadan ilaçlarınızı kesmemelisiniz."
+      }
+    }
+  ]
+}
+</script>
+```

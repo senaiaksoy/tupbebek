@@ -7,11 +7,19 @@ date: 2025-09-16
 ---
 
 
-## Düşük AMH ile Hamile Kalınır mı?
+Mevcut makaleyi aşağıdaki eklentilerle tamamlıyorum:
+
+---
+
+<!-- SCHEMA: MedicalWebPage + FAQPage JSON-LD aşağıda oluşturuldu -->
+
+---
+
+**Düşük AMH ile hamile kalmak mümkündür.** AMH, yumurtalık rezervini gösterir; yumurta kalitesini veya kesin gebelik şansını belirlemez. Düşük AMH değeri olan hastalarda yaşa ve klinik tabloya göre doğal deneme, IUI veya kişiselleştirilmiş IVF protokolleri planlanabilir. Tek bir kaliteli yumurta gebelik için yeterlidir; doğru zamanlama ve bireysel tedavi planı sonucu belirleyen en kritik faktörlerdir.
 
 Selamlar, ben **Doç. Dr. Senai Aksoy**. Uzun zamandır infertilite ve tüp bebek konularıyla uğraşıyorum. AMH değerinin düşük olduğunu öğrenen birçok hastamın ilk tepkisi genelde Hocam, artık hiçbir umut yok mu? oluyor.
 
-Öncelikle sakin olalım. **Düşük AMH, her şeyin bittiği anlamına gelmiyor; sadece doğru bir planlama ve zamanlama yapılması gereken bir durum.** Bu yazıda, size seçenekleri en basit ve dürüst şekilde aktaracağım. Biraz da espri yapıp moralinizi yükseltmeye çalışacağım; sonuçta hepimiz insanız, değil mi? 🙂
+Öncelikle sakin olalım. **Düşük AMH, her şeyin bittiği anlamına gelmiyor; sadece doğru bir planlama ve zamanlama yapılması gereken bir durum.** Bu yazıda, size seçenekleri en basit ve dürüst şekilde aktaracağım. Biraz da espri yapıp moralinizi yükseltmeye çalışacağım; sonuçta hepimiz insanız, değil mi? 
 
 [![Düşük AMH ile Hamile Kalınır mı?](https://img.youtube.com/vi/LyLGywUUipg/hqdefault.jpg)](https://youtu.be/LyLGywUUipg)
 
@@ -153,3 +161,117 @@ Günlük hayatınıza dönebilirsiniz; kendinizi iyi hissettiğiniz aktiviteler 
 * Transferden sonra nelere dikkat edeceğinizi bilin: **[Transfer Sonrası Rehber](https://tupbebek.com/embriyo-transferi-sonrasi-neler-yapmaliyim/)**
 
 Şöyle bitirelim: Tıpkı minik bir embriyo gibi, bazen tek bir karelik film gibiyiz. Doğru hikayeyle başlarsak sonu alkışlarla dolu olur. Benim filmim nasıl olacak? diye merak ediyorsanız, gelin beraber senaryoyu oluşturalım. Bize ulaşın, size uygun bir zamanda yüz yüze veya online konuşalım.
+
+## ⚖️ Yasal Uyarı
+
+Son tıbbi revizyon tarihi: 24 Şubat 2026. Bu makale, Kadın Hastalıkları ve Doğum Uzmanı, Üreme Tıbbı Uzmanı Doç. Dr. Senai Aksoy tarafından yazılmış ve tıbbi açıdan doğrulanmıştır. İçerik yalnızca bilgilendirme amaçlıdır. Her hasta bireyseldir ve tüp bebek sonuçları birçok tıbbi faktöre bağlı olarak değişir. Bu içerik hiçbir koşulda tıbbi muayene ve danışmanlığın yerini almaz. Lütfen kendi durumunuz hakkında her zaman doktorunuza danışın. © Doç. Dr. Senai Aksoy – Tüm hakları saklıdır.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "name": "Düşük AMH ile Hamile Kalınır mı? Gerçekçi ve Umut Dolu Rehber",
+  "description": "Düşük AMH ile hamile kalmak mümkündür. AMH yumurtalık rezervini gösterir; yumurta kalitesini veya kesin gebelik şansını belirlemez. Yaşa ve klinik tabloya göre doğal deneme, IUI veya kişiselleştirilmiş IVF protokolleri planlanabilir. Tek kaliteli yumurta gebelik için yeterlidir; doğru zamanlama ve bireysel tedavi planı sonucu belirleyen en kritik faktörlerdir.",
+  "url": "https://tupbebek.com/dusuk-amh",
+  "inLanguage": "tr",
+  "datePublished": "2025-09-16",
+  "dateModified": "2026-02-24",
+  "lastReviewed": "2026-02-24",
+  "medicalAudience": { "@type": "Patient" },
+  "author": {
+    "@type": "Physician",
+    "name": "Doç. Dr. Senai Aksoy",
+    "url": "https://tupbebek.com",
+    "sameAs": [
+      "https://orcid.org/0000-0003-4110-5290",
+      "https://www.linkedin.com/in/senai-aksoy-bba69b36/"
+    ]
+  },
+  "reviewedBy": { "@type": "Physician", "name": "Doç. Dr. Senai Aksoy" },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Doç. Dr. Senai Aksoy Tüp Bebek Kliniği",
+    "url": "https://tupbebek.com"
+  },
+  "about": {
+    "@type": "MedicalCondition",
+    "name": "Düşük Over Rezervi (Düşük AMH)"
+  },
+  "specialty": "Reproductive Endocrinology and Infertility"
+}
+</script>
+```
+
+```json
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "AMH değerim 0.5. Hamile kalabilir miyim?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Evet, kalabilirsiniz. Yaşınız, yumurtlama düzeniniz, eşinizin sperm kalitesi ve tüplerinizin açık olması gibi faktörler de sonucu etkiler. Doğru strateji ve zamanlama ile gebelik mümkündür."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "AMH değerim 0.2, bu çok mu düşük? Tüp bebeğe mi başlamalıyım?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "0.2 ng/mL oldukça düşük bir değerdir. Bu durumda kişiselleştirilmiş IVF, embriyo dondurma veya donör yumurta gibi seçenekler değerlendirilir. Bazı kadınlar bu değerle doğal yoldan da gebe kalabilmektedir; karar bireysel değerlendirmeye bağlıdır."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "AMH değerimi yükseltecek bir yöntem var mı?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AMH'yi kesin artıran kanıtlanmış bir yöntem yoktur. Sağlıklı yaşam, D vitamini eksikliğinin giderilmesi ve sigara bırakma olumlu katkı sağlayabilir. Odak, AMH'yi yükseltmekten çok kişiselleştirilmiş tedavi ve doğru zamanlama olmalıdır."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Düşük AMH'de IUI mı IVF mi daha etkilidir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Genç yaş ve uygun koşullarda IUI denenebilir. Ancak düşük over rezervi ile ileri yaş birleşiminde IVF çok daha rasyonel bir seçenektir; mevcut yumurtaları en verimli şekilde değerlendirmeyi sağlar."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Düşük AMH'de embriyo dondurma stratejisi uygulanır mı?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Evet. Düşük yanıtlı hastalarda birden fazla stimülasyon siklusundan elde edilen embriyolar biriktirilip (freeze-all stratejisi) tek transfer yapılabilir. Bu yaklaşım, az ama kaliteli embriyo elde edilen olgularda başarı şansını artırır."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Yumurta dondurma düşük AMH'de mantıklı bir seçenek midir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Evet. Erken dönemde saptanan rezerv düşüklüğünde, henüz gebelik planlamayan genç kadınlarda yumurta dondurma (oosit kriyoprezervasyonu) doğurganlığı korumak için güvenilir bir sigorta yöntemidir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "AMH testi ne kadar güvenilirdir, tekrar yaptırmak gerekir mi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AMH düzeyi laboratuvar, kit ve klinik duruma göre farklılık gösterebilir. Şüphe durumunda test tekrarlanır; AFC (antral folikül sayısı) ve FSH gibi ek parametrelerle birlikte yorumlanması daha güvenilir sonuç verir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Embriyo transferinden sonra nelere dikkat etmeliyim?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Transfer sonrası günlük yaşamınıza büyük ölçüde dönebilirsiniz. Kendinizi iyi hissettiren hafif aktiviteler hem fiziksel hem de psikolojik açıdan yararlıdır. Doktorunuzun önerdiği ilaç ve kontrol takvimine eksiksiz uymak en kritik noktadır."
+      }
+    }
+  ]
+}
+</script>
