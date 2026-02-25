@@ -5,7 +5,6 @@ description: Bebeğin henüz 7-8 hücreli bir embriyo aşamasındayken sağlığ
 image: /src/images/19.jpg
 ---
 
-
 ** Preimplantasyon Genetik Tanı (PGD veya güncel adıyla PGT), tüp bebek tedavisinde elde edilen embriyoların anne rahmine transfer edilmeden önce genetik ve kromozomal açıdan incelenmesi işlemidir. Bu genetik test sayesinde, genetik hastalık taşıyıcılığı, ileri anne yaşı veya tekrarlayan düşük öyküsü olan çiftlerde en sağlıklı embriyo seçilerek sağlıklı gebelik şansı artırılır.
 
 📌 **Bu yazıda öğrenecekleriniz:**
