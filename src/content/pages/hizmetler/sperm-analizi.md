@@ -2,7 +2,7 @@
 slug: sperm-analizi
 title: Spermiyogram (Sperm analizi)
 description: Kısırlık şikayeti ile baş vuran bir çiftte nedenler araştırılırken ilk önce incelenmesi gereken erkektir. Bu aşamadaki ilk ve en ucuz tetkik ise sperm analizidir.
-image: /src/images/histeroskopi_baslik.jpg
+image: /src/images/sperm_analizi.jpg
 ---
 
 
