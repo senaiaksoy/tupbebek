@@ -5,219 +5,285 @@ description: Kısırlık (infertilite) şikayeti ile gelen bir çiftin araştır
 image: /src/images/14.jpg
 ---
 
+**Kısırlık tanısı, çiftin birlikte katıldığı ilk görüşmeyle başlar; semen analizi, ovulasyon değerlendirmesi, yumurtalık kapasitesi ve HSG (rahim tüp filmi) temel tanı adımlarını oluşturur.** İnfertilite araştırmasında gereksiz testlerden kaçınarak hedefe yönelik, kanıta dayalı bir yaklaşım benimsemek hem zaman hem de maddi kayıpları önler. Her çiftin öyküsü bireyseldir; doğru tanı için uzman değerlendirmesi şarttır.
+
+---
+
 ## Kısırlık Değerlendirmesi: İlk Adımlar ve Gözden Geçirme
 
 Bebek sahibi olma hayaliyle gelen bir çiftin kısırlık (infertilite) şikayetinin araştırılmasında; kadın ve erkeğin birlikte katıldığı ilk görüşme, sürecin başlangıcını oluşturur. Bu görüşmede öncelikle:
 
-1. **Önceki Tetkik ve Filmlerin İncelenmesi**  
+1. **Önceki Tetkik ve Filmlerin İncelenmesi**
    Çiftin daha önce yaptırdığı test sonuçları, hormon tahlilleri, görüntüleme (ultrason) veya rahim filmi (HSG) gibi tüm belgeler detaylıca değerlendirilir. Bu sayede, var olan bilgiler ışığında gereksiz test tekrarlarının önüne geçilir ve vakit kaybı engellenmiş olur.
 
-2. **Kadının Dahili ve Jinekolojik Öyküsünün Alınması**  
-   - Daha önce geçirdiği önemli hastalıklar, kullandığı ilaçlar veya cerrahi müdahaleler kayıt altına alınır.  
-   - Adet düzeni, adet kanaması miktarı, varsa ağrı şikayetleri öğrenilir.  
+2. **Kadının Dahili ve Jinekolojik Öyküsünün Alınması**
+   - Daha önce geçirdiği önemli hastalıklar, kullandığı ilaçlar veya cerrahi müdahaleler kayıt altına alınır.
+   - Adet düzeni, adet kanaması miktarı, varsa ağrı şikayetleri öğrenilir.
    - Gebelik, düşük veya dış gebelik gibi geçmiş üreme öyküleri, rahim veya yumurtalıklarla ilgili yaşadığı problemler (örneğin myom, kist vb.) paylaşılır.
 
-3. **Erkeğe Ait Öykü ve Sorunların Değerlendirilmesi**  
-   - Önceki semen analiz sonuçları, varsa ürolojik muayene bulguları ele alınır.  
-   - Sigara, alkol kullanımı veya mesleki faktörler gibi erkeğin yaşam tarzına dair bilgiler de toplanır.  
+3. **Erkeğe Ait Öykü ve Sorunların Değerlendirilmesi**
+   - Önceki semen analiz sonuçları, varsa ürolojik muayene bulguları ele alınır.
+   - Sigara, alkol kullanımı veya mesleki faktörler gibi erkeğin yaşam tarzına dair bilgiler de toplanır.
    - Doktor gerekli görürse, ek tetkiklerin veya ürolojik muayenenin yapılması istenir.
 
-4. **Kadının Jinekolojik Muayenesi ve Ultrasonu**  
-   - Jinekolojik masada yapılan muayene ile rahim ağzı ve vajen incelenir.  
-   - Ardından vajinal ultrason yardımıyla rahim yapısı, endometrium (rahim iç tabakası) kalınlığı, yumurtalıklar ve yumurta rezervi (antral folikül sayısı) değerlendirilebilir.  
+4. **Kadının Jinekolojik Muayenesi ve Ultrasonu**
+   - Jinekolojik masada yapılan muayene ile rahim ağzı ve vajen incelenir.
+   - Ardından vajinal ultrason yardımıyla rahim yapısı, endometrium (rahim iç tabakası) kalınlığı, yumurtalıklar ve yumurta rezervi (antral folikül sayısı) değerlendirilebilir.
    - Bu sayede, polip, myom veya kist gibi gebeliği olumsuz etkileyebilecek olası patolojiler belirlenir.
 
-5. **İleri İnceleme Gerektiğinde Ürolojik Muayene**  
-   - Eğer semen analizinde anormallik tespit edilirse veya öyküde erkeğe dair sorunlar göze çarparsa, bir üroloji uzmanının muayenesi devreye girer.  
+5. **İleri İnceleme Gerektiğinde Ürolojik Muayene**
+   - Eğer semen analizinde anormallik tespit edilirse veya öyküde erkeğe dair sorunlar göze çarparsa, bir üroloji uzmanının muayenesi devreye girer.
    - Özellikle varikosel, hormonal sorunlar veya testisle ilgili problemler açısından değerlendirme yapılır.
 
 ### Özetle
 
-İnfertilite araştırmasında, ilk adım her iki eşin **birlikte** değerlendirilmesidir. Bu yaklaşım, mümkün olabilecek en kısa sürede doğru tanıyı koymaya ve çifti en uygun tedaviye yönlendirmeye yardımcı olur. Erkeğe veya kadına ait faktörler aynı anda gözden geçirildiği için, zaman ve emek kaybı azaltılır. Unutmayın, bebek sahibi olma yolculuğunda atılacak her adımdan önce doğru bilgi, güvenilir tetkik ve uzman desteği almak en önemli anahtardır.
+İnfertilite araştırmasında, ilk adım her iki eşin **birlikte** değerlendirilmesidir. Bu yaklaşım, mümkün olabilecek en kısa sürede doğru tanıyı koymaya ve çifti en uygun tedaviye yönlendirmeye yardımcı olur.
 
-Kısırlık tanı ve araştırmalarında ilk yapılması gereken test [semen analizidir](/sperm-analizi) (spermiyogram- spermlerin sayılması). Bu testte spermlerin sayısı, hareketliliği (motilite) ve şekli (morfoloji) incelenerek erkeğin doğurganlık potansiyeli hakkında önemli ipuçları elde edilir.  
+Kısırlık tanı ve araştırmalarında ilk yapılması gereken test [semen analizidir](/sperm-analizi) (spermiyogram). Bu testte spermlerin sayısı, hareketliliği (motilite) ve şekli (morfoloji) incelenerek erkeğin doğurganlık potansiyeli hakkında önemli ipuçları elde edilir.
 
 ### Semen Analizi Neden Birden Fazla Kez Yapılmalı?
 
-- **Standart Yaklaşım**: Semen analizi, 2 ay arayla **en az iki defa** tekrarlanmalıdır.  
-- **Nedeni**: Erkek üreme sistemi çevresel faktörlerden (ateşli hastalıklar, ilaç kullanımı, stres vb.) kolayca etkilenebilir. Bu nedenle ilk analizde elde edilen sonuçlar, her zaman gerçeği tam yansıtmayabilir.  
+- **Standart Yaklaşım**: Semen analizi, 2 ay arayla **en az iki defa** tekrarlanmalıdır.
+- **Nedeni**: Erkek üreme sistemi çevresel faktörlerden (ateşli hastalıklar, ilaç kullanımı, stres vb.) kolayca etkilenebilir. Bu nedenle ilk analizde elde edilen sonuçlar, her zaman gerçeği tam yansıtmayabilir.
 
 ### Normal Semen Analizi = Erkekte Sorun Yok
 
-- Semen analizi (sperm sayımı) **normal çıkan** bir erkekte, kısırlığa yol açabilecek belirgin bir neden olmadığı kabul edilir.  
-- **Muayene Gerekliliği**: Semen analizi normalse, çoğu durumda ek ürolojik muayene veya ileri tetkik yapılmasına gerek kalmaz.
+Semen analizi **normal çıkan** bir erkekte, kısırlığa yol açabilecek belirgin bir neden olmadığı kabul edilir. Semen analizi normalse, çoğu durumda ek ürolojik muayene veya ileri tetkik yapılmasına gerek kalmaz.
 
 ### Varikosel ve Kısırlık İlişkisi
 
-- **Varikosel**, testis damarlarının genişlemesidir; bazı erkeklerde kısırlığa sebep olabileceği bilinir.  
-- Ancak **normal semen analizi** olan bir erkekte varikosel saptanmış olsa bile, bunun kısırlık üzerinde anlamlı bir etkisi olmayacağı düşünülür.  
-- Yani, semen analizi normal ölçütlerdeyse, varikosel tek başına kayda değer bir sorun yaratmayabilir.
+**Varikosel**, testis damarlarının genişlemesidir; bazı erkeklerde kısırlığa sebep olabileceği bilinir. Ancak **normal semen analizi** olan bir erkekte varikosel saptanmış olsa bile, bunun kısırlık üzerinde anlamlı bir etkisi olmayacağı düşünülür.
 
-Kısırlık araştırmalarına başlarken erkekte atılması gereken ilk ve en önemli adım, **iki ayrı semen analiziyle** erkek faktörünü netleştirmektir. Test sonuçları normal çıktığında, erkeğin doğurganlık kapasitesi yüksek kabul edilir ve kısırlık araştırmalarının seyri daha çok kadına yönelik incelemelerle devam eder. Bu yaklaşım, zaman ve kaynakları doğru yönetmek adına son derece kritiktir. Unutmayın ki her çiftin öyküsü özeldir; hekiminizin önerilerini dinleyerek ilerlemek, sağlıklı sonuçlara ulaşmanın en önemli anahtarlarından biridir.
+---
 
-## Ovulasyon (Yumurtlama) Değerlendirmesi: Gebelik Sürecindeki Kritik Adım
+## Ovulasyon (Yumurtlama) Değerlendirmesi
 
-Kısırlık (infertilite) araştırmasında **semen analizi** yapılırken, eş zamanlı olarak kadının **yumurtlayıp yumurtlamadığının** değerlendirilmesi de büyük önem taşır. Çünkü gebeliğin gerçekleşmesi için kaliteli spermin yanı sıra olgun bir yumurtanın da doğru zamanda döllenme sürecine katılması gerekir.
+Kısırlık araştırmasında semen analizi yapılırken, eş zamanlı olarak kadının **yumurtlayıp yumurtlamadığının** değerlendirilmesi de büyük önem taşır.
 
 ### Yumurtlama Nasıl Anlaşılır?
 
 1. **Progesteron Testi (19-21. Gün Kan Tahlili)**
-   - Düzenli adet gören bir kadında 19-21. günler arasındaki progesteron düzeyi, o ay yumurtlama olup olmadığı hakkında fikir verir.  
-   - Basit bir kan testiyle yapılır ve sonuç, tedavi planlamasına ışık tutar.
+   Düzenli adet gören bir kadında 19-21. günler arasındaki progesteron düzeyi, o ay yumurtlama olup olmadığı hakkında fikir verir.
 
 2. **Ultrasonla Yumurtlama Takibi**
-   - Adet döngüsü içerisinde belirli günlerde yapılan vajinal ultrason, yumurtalıkta folikül gelişimi ve çatlama zamanını net şekilde gösterir.  
-   - Doktorunuz, doğru zamanda yumurtanın olgunlaşıp olgunlaşmadığını yakından takip edebilir.
+   Adet döngüsü içerisinde belirli günlerde yapılan vajinal ultrason, yumurtalıkta folikül gelişimi ve çatlama zamanını net şekilde gösterir.
 
 3. **İdrarda LH (Luteinleştirici Hormon) Ölçümleri**
-   - Evde kullanılan “ovulasyon test çubukları” ile idrarda LH düzeyinin yükseldiği an (LH piki) tespit edilir. Bu genellikle yumurtlamadan yaklaşık 24-36 saat önce gerçekleşir.  
-   - Düzenli adet gören kadınların önemli bir kısmında, bu yöntemle kolayca ovulasyon dönemi saptanabilir.
+   Evde kullanılan "ovulasyon test çubukları" ile LH pikinin tespiti yumurtlamadan yaklaşık 24-36 saat önce gerçekleşir.
 
 ### Düzenli Adet = %95 Ovulasyon
 
-Düzenli adet gören kadınların ortalama **%95’inin** normal şekilde yumurtladığı bilinir. Bu nedenle, düzensiz adet gören kadınlarda daha kapsamlı ovulasyon takibi yapmaya ihtiyaç duyulabilir. Yine de, her kadının metabolik, genetik veya çevresel koşulları farklı olduğu için uzman görüşü ve kişiselleştirilmiş takip son derece önemlidir.
+Düzenli adet gören kadınların ortalama **%95'inin** normal şekilde yumurtladığı bilinir. Düzensiz adet gören kadınlarda daha kapsamlı ovulasyon takibi yapmaya ihtiyaç duyulabilir.
 
 ---
-
-### Neden Eş Zamanlı Değerlendirme?
-
-- **Etkin Zaman Yönetimi**: Kısırlık araştırmasında hem erkek (semen analizi) hem de kadın (ovulasyon) faktörlerini hızlıca değerlendirmek, tedaviye erken başlayabilmek adına kritik önem taşır.
-- **Daha Doğru Tedavi Seçimi**: Eğer sperm analizi normal, ancak yumurtlama sorunu varsa; ilaçla yumurta geliştirici tedaviler gündeme gelebilir. Aksine, yumurtlama normal ancak sperm parametrelerinde sorun varsa farklı yaklaşımlar tercih edilebilir.
-- **Sonuç Odaklı Yaklaşım**: Zamanı ve enerjiyi en verimli şekilde kullanmak için çiftin durumu bütüncül şekilde ele alınmalıdır. Gereksiz testlerden kaçınarak, hızlı ve doğru çözümlere ulaşmak mümkündür.
-
-Yani, kısırlık değerlendirmesinde bir yandan erkeğin semen parametreleri incelenirken, diğer yandan da kadının ovulasyon durumu tespit edilmeli; tüm bu veriler ışığında en uygun tedavi planı belirlenmelidir. Unutmayın, bebek sahibi olma yolculuğunda atılan her adımın doğru zaman ve doğru yöntemlerle gerçekleştirilmesi, başarıyı artıran temel faktörlerden biridir.
 
 ## Yumurtalık Kapasitesi: Doğurganlığın Gizli Işıltısı
 
-Kısırlık (infertilite) tanı ve araştırmalarında, kadında en kritik basamaklardan biri **yumurtalık kapasitesinin** belirlenmesidir. Nasıl ki bir moda tasarımcısı, koleksiyonunu hazırlarken kumaşın dokusu ve kalitesini inceler, kadın doğurganlığında da yumurtalık kapasitesi benzer bir “kalite” ölçütüdür. Bu kapasite azaldığında, gebelik elde etme şansı da düşer.
+### Adet Döneminde Yumurtalıkların Folikül Sayımı
 
-### Adet Döneminde Yumurtalıkların “Primordial Folikül” Sayımı
+- **Vajinal Ultrason**: Adet kanamasının hemen başında (genellikle 2. veya 3. gün), vajinal ultrason yapılarak yumurtalıklardaki minik kistler (primordial foliküller) sayılır.
+- **Tanısal Eşik**: İki yumurtalıkta toplam **6'dan az** primordial folikül bulunması, yumurtalık kapasitesinin azaldığının önemli bir göstergesidir.
 
-- **Vajinal Ultrason**: Adet kanamasının hemen başında (genellikle 2. veya 3. gün), vajinal ultrason yapılarak yumurtalıklardaki minik kistler (primordial foliküller) sayılır. Bu foliküller, ileride gelişip sağlıklı bir yumurta oluşturacak adaylardır.  
-- **Tanısal Eşik**: İki yumurtalıkta toplam **6’dan az** primordial folikül (küçük yumurta kesesi) bulunması, yumurtalık kapasitesinin azaldığının önemli bir göstergesidir.  
+### Yaş Faktörü
 
-### Yaş Faktörü: 37 Sonrası Zaman Daralıyor
+- **37'den Sonra Düşüş**: 37 yaşından itibaren yumurtalık kapasitesi bariz şekilde gerilemeye başlar.
+- **44'ten Sonra Zorluk**: 44 yaşından sonra gebelik şansı dramatik biçimde azalır.
 
-Her kadının doğduğunda sahip olduğu yumurta rezervi, bir moda koleksiyonundaki sınırlı sayıdaki özel parçalar gibidir. Yıllar geçtikçe bu koleksiyon “tükenmeye” başlar:
+### Erken Yumurtalık Yetmezliği Risk Faktörleri
 
-- **37’den Sonra Düşüş**: 37 yaşından itibaren yumurtalık kapasitesi bariz şekilde gerilemeye başlar.  
-- **44’ten Sonra Zorluk**: 44 yaşından sonra gebelik şansı dramatik biçimde azalır. Bilhassa aile planlaması yapmak isteyen kadınların bu zaman aralığını göz önünde bulundurması çok önemlidir.
+- Ailesel erken menopoz öyküsü
+- Yumurtalık cerrahisi geçmişi
+- Endometriozis
+- Açıklanamayan kısırlık veya tekrarlayan düşükler
 
-### Erken Yumurtalık Yetmezliği: Sadece Bir Yaş Miti Değil
+---
 
-Kimi zaman koleksiyonunuzdaki o “özel parçalar” sandığınızdan çok daha erken tükenebilir. Bazı kadınlarda genetik veya çevresel etkenler, yumurtalık rezervinin daha erken yıllarda düşmesine neden olur:
+## HSG: Rahim ve Tüplerin Değerlendirilmesi
 
-- **Ailesel Erken Menopoz Öyküsü**: Annenizde, teyzenizde veya kardeşinizde erken menopoz varsa, sizde de erken yumurtalık yetmezliği gelişme riski daha yüksektir.  
-- **Cerrahi Müdahaleler**: Daha önce yumurtalıktan kist alınması veya tek yumurtalığın cerrahi müdahaleyle çıkarılması, rezervi azaltan önemli faktörlerdir.  
-- **Endometriozis**: Yumurtalıkları etkileyip kistler oluşmasına neden olan bu hastalık da rezervin azalmasına yol açabilir.  
-- **Genç Kısır Çiftler ve Tekrarlayan Düşükler**: Özellikle açıklanamayan kısırlık durumunda veya ardı ardına düşük yaşayan kadınlarda da yumurtalık kapasitesinin erken dönemde titizlikle değerlendirilmesi gerekir.
-
-### Neden Bu Kadar Önemli?
-
-Yumurtalık rezervi, “doğurganlık yolculuğu”nun başlangıcını ve hatta devamını belirleyen kritik bir pusuladır. Rezerv düşükse, standart tedavilerle başarılı bir gebelik elde etmek daha zor olabilir. Bu durum:
-
-1. Tedavi Seçeneklerini Belirler  
-   - Aşılama (IUI) veya tüp bebek (IVF) gibi yöntemlerden hangisinin seçileceği, yumurtalık kapasitesi sonucu şekillenir.  
-2. Tedavi Planlamasını Etkiler  
-   - Rezervi azalmış kadınlarda daha hızlı veya daha yoğun (agresif) tedavi stratejileri gerekebilir.  
-3. Zaman Yönetiminde Yol Gösterir  
-   - Gebelik şansının giderek azalacağı öngörülerek, mümkünse erken yaşta aile planlamasına karar vermek çok önemlidir.
-
-Her kadının “doğurganlık koleksiyonu” kişisel bir hikâyedir: Kimi zaman yaş, kimi zaman genetik, kimi zaman da çevresel faktörler bu hikâyeyi yeniden yazabilir. **Yumurtalık kapasitesi** işte tam da bu noktada en kritik “trend belirleyici” haline gelir. Eğer kısırlık araştırması sürecindeyseniz veya ileride çocuk sahibi olmayı planlıyorsanız, adet döneminde yaptıracağınız bir vajinal ultrason size rehberlik edecektir. Unutmayın, doğru zamanda ve doğru uzmanla görüşerek atacağınız her adım, arzuladığınız mutlu aile tablosuna bir adım daha yaklaştırabilir.
-
-## HSG: Kadın Üreme Dünyasının Işıltılı Röntgeni
-
-Semen analizi, yumurtlaması ve yumurtalık kapasitesi normal olan çiftlerde kadının tüplerinin açık olup olmadığı araştırılır. Bunun için rahim tüp filmi çekilmesi gerekir.
-
-Kadın sağlığında bir kırmızı halı etkinliği kadar göz kamaştıran ama bir o kadar da basit bir tetkik var: **HSG** ([HSG-histerosalpingografi](/blog/ilacli-rahim-filmi-hsg-nedir)). Bu işlem, rahim içi ve tüplerin durumunu gösteren, adeta jinekolojik dünyada “fotoğraf çekimi” niteliğinde bir incelemedir. Gelin, HSG’yi yakından tanıyalım:
+Semen analizi, yumurtlaması ve yumurtalık kapasitesi normal olan çiftlerde kadının tüplerinin açık olup olmadığı araştırılır. Bunun için rahim tüp filmi ([HSG – histerosalpingografi](/blog/ilacli-rahim-filmi-hsg-nedir)) çekilmesi gerekir.
 
 ### Ne Zaman Yapılır?
 
-HSG, adet döneminizin bitiminden hemen sonra yapılmalıdır. Bu zamanlamayla, rahim iç tabakası daha inceyken mükemmel bir görüntü elde edilir. Aynı zamanda, olası bir erken gebelik ihtimali de bu dönemde neredeyse sıfırlanır.
-
-### İşlem Neden “Basit” Sayılır?
-
-Çoğu zaman HSG son derece ağrısız ve konforlu bir şekilde gerçekleşir. Ancak ilaç rahme “hızlı ve basınçlı” verildiğinde, rahmin kasılarak kramp oluşturma ihtimali söz konusudur. Neyse ki bu kramplar, çoğu kadında kısa süreli bir rahatsızlık hissinden öteye geçmez.
+HSG, adet döneminizin bitiminden hemen sonra yapılmalıdır. Bu zamanlamayla rahim iç tabakası daha inceyken mükemmel bir görüntü elde edilir; olası bir erken gebelik ihtimali de neredeyse sıfırlanır.
 
 ### HSG Neleri Gösterir?
 
-- **Rahim içi boşluğu**: Rahminizin şeklinde veya yüzeyinde polip, perde (septum) gibi anormallikler varsa, HSG ile kolaylıkla tespit edilir.  
-- **Tüplerin Açıklığı**: Tüplerinizde herhangi bir tıkanıklık ya da daralma olup olmadığı anlaşılır. Kapalı bölgelerin hangi seviyede olduğu görülür.  
+- **Rahim içi boşluğu**: Polip, perde (septum) gibi anormallikler tespit edilir.
+- **Tüplerin Açıklığı**: Tıkanıklık ya da daralma olup olmadığı ve hangi seviyede olduğu görülür.
 
-#### “Yalancı Tıkanıklık” Nedir?
+### "Yalancı Tıkanıklık" Nedir?
 
-Bazen tüp, rahme bitiştiği noktada kapalı gibi görünebilir. Aslında bu durum, basınçlı verilen ilacın tüpte kasılma yapmasından kaynaklanan **“yalancı tıkanıklık”**tır. Yani tüp gerçekten kapalı değildir; işlem sırasındaki geçici bir spazm, görüntüyü bu şekilde yansıtır.
+Tüp, rahme bitiştiği noktada kapalı gibi görünebilir. Bu durum, basınçlı verilen ilacın tüpte kasılma yapmasından kaynaklanan geçici bir spazmdır; tüp gerçekten kapalı değildir.
 
-### Neler Göstermez?
+### HSG Neler Göstermez?
 
-- **Karın İçi Yapışıklıklar**: Tüplerin çevresinde veya karın içinde bulunan yapışıklıkları ve bunların derecesini net şekilde gösteremez.  
-- **Tüplerin Fonksiyonu**: Tüplerin “çalışır” olup olmadığı, yani yumurtayı taşımada ne kadar başarılı olduğu hakkında da bilgi sunmaz.
+- Karın içi yapışıklıklar
+- Tüplerin fonksiyonel kapasitesi
 
----
-
-## “Işıltılı” Püf Noktalar
-
-1. **Rahatlama İçin Destek**  
-   HSG’den önce doktorunuzun önerisiyle hafif bir ağrı kesici alabilir veya sakinleştirici yöntemler (nefes egzersizleri vb.) uygulayabilirsiniz. Böylece olası krampları en aza indirirsiniz.
-
-2. **Doğru Zamanlama Her Şeydir**  
-   HSG, adet biter bitmez yapıldığında çok daha başarılı sonuçlar verir. Bu, aynı zamanda erken gebelik endişesini de ortadan kaldırır.  
-
-3. **Sonuçlar ve Takip**  
-   HSG sonuçlarınız anormal çıkarsa paniğe kapılmayın. Doktorunuz, gerektiğinde ileri tetkikler veya farklı tedavi yaklaşımları önerebilir. “Yalancı tıkanıklık” şüphesi varsa ek incelemelerle gerçek durum ortaya konur.
+[Laparoskopi](/blog/laparoskopi-nedir) adı verilen, karın içini teleskopla gözlemleme işlemi ise günümüzde yalnızca tedavi edici endikasyonlarda önerilmekte; tanısal kullanımı oldukça kısıtlanmış bulunmaktadır.
 
 ---
 
-HSG, modern kadın sağlığında bir “must-have” gibidir. Tıpkı stilinizin temel parçalarını yenilemeden önce aynada kendinize bakmanız gibi, gebe kalma sürecine adım atmadan önce rahminiz ve tüpleriniz hakkında bilgi edinmek çok değerlidir. Öyleyse, kafanızdaki soru işaretlerini bir kenara bırakın; doğru zamanda ve uzman ellerde yapılan HSG, üreme sağlığınızı aydınlatan en zarif ışıklardan biridir!
-
-Öyküsünde ve fizik muayenesinde herhangi bir bulgusu olmayan kadınlarda karın içinin bir teleskop yardımı ile gözlenmesine olanak tanıyan [laparoskopi](/blog/laparoskopi-nedir) adı verilen bir işlem yapılabilir. Laparoskopi eskiden çok sık kullanılan bir teknik olmasına karşın bugün özellikle tanısal anlamda kullanımı oldukça kısıtlanmıştır. Biz laparoskopiyi ancak tedavi edici anlamda öneriyoruz.
-
-## Minimalist Yaklaşım: Kısırlık Araştırmalarında Gereksiz Testlerden Kaçınmak
-
-Kısırlık (infertilite) araştırmalarında tıbbi literatür ve klinik uygulamalarda sürekli yeni testler ve yaklaşımlar karşımıza çıkar. Ancak her test gerçekten gerekli midir, yoksa yalnızca hastayı zaman ve maddi açıdan yıpratır mı? İşte bu noktada “minimalist” bir yaklaşım benimsemek ve gereksiz tetkiklerden kaçınmak büyük önem taşır. Çünkü çocuk sahibi olmaya çalışmak, başlı başına bir sabır ve umut yolculuğudur; gereksiz testlerse bu süreci daha da zorlaştırabilir.
+## Minimalist Yaklaşım: Gereksiz Testlerden Kaçınmak
 
 ### Sıklıkla Tartışılan ve Önemi Tam Kanıtlanmamış Testler
 
-1. **İmmunolojik Araştırmalar (Antisperm Antikorları)**
-   - Erkeğin spermlerine karşı kadının vücudunda veya spermin kendisinde gelişen antikorların varlığını araştıran testlerdir.  
-   - Pek çok vakada, bu antikorların gerçekten gebelik elde edilmesine engel olduğu kanıtlanamamıştır.  
-   - Çoğu zaman tedavi protokolünü değiştirmediği için rutinde uygulanmasının faydalı olmadığı düşünülür.
+1. **İmmunolojik Araştırmalar (Antisperm Antikorları)**: Tedavi protokolünü nadiren değiştirdiğinden rutin uygulanması önerilmez.
+2. **Postkoital Test (PCT)**: Sonuçları tedaviye nadiren yön verdiğinden gereksiz testler sınıfına girer.
+3. **ERA ve Diğer Receptivity Testleri**: Tekrarlayan tüp bebek başarısızlığı olmayan çiftlerde rutin uygulanması bilimsel açıdan tartışmalıdır.
+4. **Sperm DNA Fragmantasyon Testleri**: Tekrarlayan başarısızlık öyküsü olmayan çiftlerde rutin kullanımı net kanıtlarla desteklenmemektedir.
+5. **Gereksiz Hormon ve Kan Testleri**: Öykü ve önceki tetkik sonuçlarına odaklanarak hedefe yönelik test seçimi yapılmalıdır.
 
-2. **Postkoital Test (PCT)**
-   - Cinsel ilişkiden belli bir süre sonra, rahim ağzındaki sıvıda canlı ve hareketli sperm olup olmadığını değerlendirir.  
-   - Günümüzde sperm hareketliliği, canlılığı gibi parametreleri laboratuvar ortamında daha detaylı ve güvenilir testlerle incelemek mümkündür.  
-   - PCT’nin sonuçları tedavi yaklaşımını nadiren etkiler; bu nedenle gereksiz testler sınıfına girer.
+Metnin sonundaki SSS bölümünü şema ile birebir eşleşecek şekilde aşağıdaki gibi ekleyin — mevcut makale sonuna, Yasal Uyarı'dan **önce** yapıştırın:
 
-3. **ERA (Endometrial Receptivity Analysis) ve Diğer “Receptivity” Testleri**
-   - Embriyonun rahme tutunma zamanlamasını ve rahmin “hazır” olup olmadığını genomik seviyede inceleyen pahalı testlerdir.  
-   - Özellikle tekrarlayan tüp bebek başarısızlığı olmayan çiftlerde gereksiz yere uygulanması önerilmez.  
-   - Bazı hekimlerce seçilmiş olgularda kullanılsa da, herkese rutin uygulanması bilimsel açıdan tartışmalıdır.
+## Sıkça Sorulan Sorular
 
-4. **Sperm Fonksiyon Testleri (Örneğin HBA, Sperm DNA Fragmantasyon Testleri)**
-   - Sperm kalitesini veya genetik bütünlüğünü ölçmek için tasarlanmış ileri seviye testlerdir.  
-   - Özellikle düşük sperm kalitesi, tekrarlayan düşük veya tekrarlayan tüp bebek başarısızlığı olmayan çiftlerde, bu testlerin rutin uygulanması çoğu zaman tedavi stratejisini değiştirmez.  
-   - DNA fragmantasyon testleri gibi pahalı analizlerin yaygın kullanımı hâlâ net kanıtlarla desteklenmemektedir.
+**- Kısırlık tanısı için hangi testler yapılmalıdır?**
 
-5. **Gereksiz Hormon ve Kan Testleri**
-   - Bazı merkezlerde her geldiğinizde detaylı hormon panelleri, vitamin düzeyleri veya “olası her şeyi” kapsayan kan testleri istenebilir.  
-   - Bunun yerine, kişinin hikâyesi (anamnez) ve daha önceki tetkik sonuçlarına odaklanarak hedefe yönelik testler yapmak daha uygundur.
+Kısırlık araştırmasında temel testler şunlardır: erkek için semen analizi (en az iki kez, 2 ay arayla), kadın için ovulasyon değerlendirmesi (progesteron testi veya ultrason takibi), yumurtalık kapasitesi ölçümü (AMH ve antral folikül sayımı) ve tüplerin açıklığını gösteren HSG (histerosalpingografi).
+
+**- Semen analizi neden iki kez yapılmalıdır?**
+
+Erkek üreme sistemi ateşli hastalık, stres veya ilaç kullanımı gibi geçici faktörlerden kolayca etkilenebilir. Tek bir sonuç gerçeği her zaman tam yansıtmayabilir. Bu nedenle semen analizi 2 ay arayla en az iki defa tekrarlanarak erkek faktörü güvenilir biçimde değerlendirilmelidir.
+
+**- Varikosel kısırlığa neden olur mu?**
+
+Varikosel bazı erkeklerde kısırlığa yol açabilir; ancak semen analizi normal çıkan bir erkekte varikosel saptansa bile bunun doğurganlık üzerinde anlamlı bir etkisi olmayacağı düşünülmektedir. Tedavi kararı semen parametrelerine göre değil, bütüncül klinik değerlendirmeye göre verilmelidir.
+
+**- Yumurtalık rezervi nasıl ölçülür?**
+
+Yumurtalık rezervi iki yöntemle değerlendirilir: adet döneminin 2-3. gününde vajinal ultrasonla yapılan antral folikül sayımı ve AMH (Anti-Müllerian Hormon) kan testi. İki yumurtalıkta toplam 6'dan az folikül görülmesi veya düşük AMH değeri, azalmış rezervin göstergesidir.
+
+**- HSG (rahim tüp filmi) ne zaman ve neden yapılır?**
+
+HSG, semen analizi ve ovulasyon değerlendirmesi normal çıkan çiftlerde tüplerin açık olup olmadığını anlamak için yapılır. Adet bittikten hemen sonra uygulanır; rahim iç boşluğundaki polip ve septum gibi patolojileri ve tüp tıkanıklığını gösterir. İşlem genellikle kısa süreli ve hafif rahatsızlık verir.
+
+**- Kısırlık araştırmasında hangi testler gereksizdir?**
+
+Postkoital test (PCT), antisperm antikor testleri, ERA (endometrial reseptivite analizi) ve sperm DNA fragmantasyon testleri tekrarlayan başarısızlık öyküsü olmayan çiftlerde rutin olarak önerilmez. Tedavi protokolünü değiştirmeyen testler, zaman ve maddi kayba yol açar.
+
+**- Kısırlık araştırmasında laparoskopi gerekli midir?**
+
+Laparoskopi günümüzde ağırlıklı olarak tedavi edici endikasyonlarda kullanılmaktadır. Öykü ve fizik muayenesinde belirgin bulgu olmayan kadınlarda yalnızca tanı amacıyla laparoskopi yapılması artık kısıtlı tutulmaktadır; diğer testlerle yeterli bilgiye ulaşılabilen vakalarda gereksiz kabul edilir.
+
+**- Düzenli adet gören kadın mutlaka yumurtluyor mudur?**
+
+Düzenli adet gören kadınların yaklaşık %95'i normal şekilde yumurtlamaktadır. Ancak kesin doğrulama için adetin 19-21. günleri arasında progesteron kan testi yapılması veya ultrasonla folikül takibi gerçekleştirilmesi önerilir. Düzensiz adet varsa daha kapsamlı ovulasyon araştırması gerekir.
 
 ### Minimalist Yaklaşımın Altın Kuralları
 
-1. **Hedefe Yönelik Test Seçimi**  
-   Her çiftin hikâyesi, fizik muayenesi ve daha önce yapılmış tetkik sonuçları dikkate alınarak test seçilmelidir. Gereksiz testler, çiftin hem maddi hem de manevi yükünü artırmaktan başka bir işe yaramaz.
-
-2. **Rutin Uygulamanın Sorgulanması**  
-   Bir testin popüler olması, her zaman gerekli olduğu anlamına gelmez. Bilimsel kanıtlara dayalı protokoller izlenmeli ve “Bu testin sonucu tedavimi nasıl değiştirecek?” sorusu mutlaka sorulmalıdır.
-
-3. **Zaman ve Bütçeyi Etkin Kullanmak**  
-   Infertilite tedavisi, zaten zaman ve sabır isteyen bir yolculuktur. Her ek test, çifte ekstra bekleme süresi ve finansal yük bindirir. “En az ama etkin” test anlayışı, süreci hem psikolojik hem de ekonomik açıdan kolaylaştırır.
-
-4. **Alternatif Çözümler**  
-   Hekiminiz, belirli testlerin yerine daha etkin ve kesin çözümler sunabilir. Örneğin, bazı çiftlerde ileri yaş, düşük rezerv veya belirgin bir neden (örneğin tüplerin tıkalı oluşu) varsa; doğrudan tüp bebek tedavisine geçmek çok sayıda “ara testten” daha faydalı olabilir.
+"Bu testin sonucu tedavimi nasıl değiştirecek?" sorusu her tetkik öncesi sorulmalıdır. Bazı çiftlerde doğrudan tüp bebek tedavisine geçmek, çok sayıda ara testten çok daha faydalı olabilir.
 
 ---
 
-### Son Söz
+## ⚖️ Yasal Uyarı
 
-Kısırlık araştırmasında minimalist yaklaşım, her çiftin özel durumuna göre gerçekten gerekli testleri belirleyip, gereksiz olanları elemekten geçer. Unutmayın ki her testin kendine özgü bir maddi-manevi bedeli vardır. Dolayısıyla, uzman hekiminizle birlikte hangi tetkiklerin gerçekten gerekli olduğunu değerlendirmek, hem zaman hem de ekonomik açıdan en akılcı yoldur. Böylece, bebek hayalinize uzanan bu yolda enerjinizi “asıl yapılması gerekenler”e odaklayabilir, gereksiz detaylarda kaybolmadan kararlı ve sakin adımlarla ilerleyebilirsiniz.
+Son tıbbi revizyon tarihi: 24 Şubat 2026. Bu makale, Kadın Hastalıkları ve Doğum Uzmanı, Üreme Tıbbı Uzmanı Doç. Dr. Senai Aksoy tarafından yazılmış ve tıbbi açıdan doğrulanmıştır. İçerik yalnızca bilgilendirme amaçlıdır. Her hasta bireyseldir ve tüp bebek sonuçları birçok tıbbi faktöre bağlı olarak değişir. Bu içerik hiçbir koşulda tıbbi muayene ve danışmanlığın yerini almaz. Lütfen kendi durumunuz hakkında her zaman doktorunuza danışın. © Doç. Dr. Senai Aksoy – Tüm hakları saklıdır.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  "name": "Kısırlık Tanısı Konması – İnfertilite Araştırması Rehberi",
+  "description": "Kısırlık tanısı, çiftin birlikte katıldığı ilk görüşmeyle başlar; semen analizi, ovulasyon değerlendirmesi, yumurtalık kapasitesi ve HSG temel tanı adımlarını oluşturur. Gereksiz testlerden kaçınarak hedefe yönelik, kanıta dayalı bir yaklaşım benimsemek hem zaman hem de maddi kayıpları önler.",
+  "url": "https://tupbebek.com/kisirlik-tanisi-konmasi",
+  "inLanguage": "tr",
+  "datePublished": "2025-01-01",
+  "dateModified": "2026-02-24",
+  "lastReviewed": "2026-02-24",
+  "medicalAudience": { "@type": "Patient" },
+  "author": {
+    "@type": "Physician",
+    "name": "Doç. Dr. Senai Aksoy",
+    "url": "https://tupbebek.com",
+    "sameAs": [
+      "https://orcid.org/0000-0003-4110-5290",
+      "https://www.linkedin.com/in/senai-aksoy-bba69b36/"
+    ]
+  },
+  "reviewedBy": { "@type": "Physician", "name": "Doç. Dr. Senai Aksoy" },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Doç. Dr. Senai Aksoy Tüp Bebek Kliniği",
+    "url": "https://tupbebek.com"
+  },
+  "about": {
+    "@type": "MedicalCondition",
+    "name": "İnfertilite (Kısırlık) – Tanı ve Değerlendirme"
+  },
+  "specialty": "Reproductive Endocrinology and Infertility"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Kısırlık tanısı için hangi testler yapılmalıdır?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Kısırlık araştırmasında temel testler şunlardır: erkek için semen analizi (en az iki kez, 2 ay arayla), kadın için ovulasyon değerlendirmesi (progesteron testi veya ultrason takibi), yumurtalık kapasitesi ölçümü (AMH ve antral folikül sayımı) ve tüplerin açıklığını gösteren HSG (histerosalpingografi)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Semen analizi neden iki kez yapılmalıdır?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Erkek üreme sistemi ateşli hastalık, stres veya ilaç kullanımı gibi geçici faktörlerden kolayca etkilenebilir. Tek bir sonuç gerçeği her zaman tam yansıtmayabilir. Bu nedenle semen analizi 2 ay arayla en az iki defa tekrarlanarak erkek faktörü güvenilir biçimde değerlendirilmelidir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Varikosel kısırlığa neden olur mu?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Varikosel bazı erkeklerde kısırlığa yol açabilir; ancak semen analizi normal çıkan bir erkekte varikosel saptansa bile bunun doğurganlık üzerinde anlamlı bir etkisi olmayacağı düşünülmektedir. Tedavi kararı semen parametrelerine göre değil, bütüncül klinik değerlendirmeye göre verilmelidir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Yumurtalık rezervi nasıl ölçülür?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yumurtalık rezervi iki yöntemle değerlendirilir: adet döneminin 2-3. gününde vajinal ultrasonla yapılan antral folikül sayımı ve AMH (Anti-Müllerian Hormon) kan testi. İki yumurtalıkta toplam 6'dan az folikül görülmesi veya düşük AMH değeri, azalmış rezervin göstergesidir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "HSG (rahim tüp filmi) ne zaman ve neden yapılır?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "HSG, semen analizi ve ovulasyon değerlendirmesi normal çıkan çiftlerde tüplerin açık olup olmadığını anlamak için yapılır. Adet bittikten hemen sonra uygulanır; rahim iç boşluğundaki polip ve septum gibi patolojileri ve tüp tıkanıklığını gösterir. İşlem genellikle kısa süreli ve hafif rahatsızlık verir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kısırlık araştırmasında hangi testler gereksizdir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Postkoital test (PCT), antisperm antikor testleri, ERA (endometrial reseptivite analizi) ve sperm DNA fragmantasyon testleri tekrarlayan başarısızlık öyküsü olmayan çiftlerde rutin olarak önerilmez. Tedavi protokolünü değiştirmeyen testler, zaman ve maddi kayba yol açar."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kısırlık araştırmasında laparoskopi gerekli midir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Laparoskopi günümüzde ağırlıklı olarak tedavi edici endikasyonlarda kullanılmaktadır. Öykü ve fizik muayenesinde belirgin bulgu olmayan kadınlarda yalnızca tanı amacıyla laparoskopi yapılması artık kısıtlı tutulmaktadır; diğer testlerle yeterli bilgiye ulaşılabilen vakalarda gereksiz kabul edilir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Düzenli adet gören kadın mutlaka yumurtluyor mudur?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Düzenli adet gören kadınların yaklaşık %95'i normal şekilde yumurtlamaktadır. Ancak kesin doğrulama için adetin 19-21. günleri arasında progesteron kan testi yapılması veya ultrasonla folikül takibi gerçekleştirilmesi önerilir. Düzensiz adet varsa daha kapsamlı ovulasyon araştırması gerekir."
+      }
+    }
+  ]
+}
+</script>

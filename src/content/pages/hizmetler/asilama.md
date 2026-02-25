@@ -735,7 +735,7 @@ Yumurta geliştirme tedavisi gördüğünüzde, yumurtalıklardaki sarı cisim b
 
 ### Aşılama (IUI) ağrılı mıdır?
 
-Hayır. İşlem genellikle ağrısızdır. Rahim ağzından kateter geçerken çok hafif, anlık bir kramp hissedilebilir (adet sancısı gibi). Anesteziye gerek yoktur.
+Hayır. İşlem genellikle ağrısızdır. Rahim ağzından kateter geçerken hafif, anlık bir kramp hissedilebilir; bu adet sancısına benzer. Anesteziye gerek yoktur ve işlem 1-2 dakikada tamamlanır.
 
 ### Aşılamadan sonra sperm geri akar mı?
 
@@ -747,7 +747,7 @@ Evet. Erkek o gün müsait değilse ya da sperm dondurulması gereken bir sağl�
 
 ### Aşılama ile cinsiyet seçimi yapılabilir mi?
 
-Hayır. IUI'da spermler yıkanır ama X ve Y kromozomlu olanları ayırmak mümkün değil. Bebeğin cinsiyeti doğal yolla hamile kalmakla aynı olasılıkta, yüzde 50 kız, yüzde 50 erkek olur.
+Hayır. IUI'da spermler yıkansa da X ve Y kromozomlu olanları ayırmak mümkün değildir. Türkiye'de tıbbi endikasyon dışında cinsiyet seçimi yasal olarak yasaktır; bebeğin cinsiyeti doğal olarak %50 kız, %50 erkek olasılığıyla belirlenir.
 
 ### Kaç kez aşılama denemesi yapılmalıdır?
 
