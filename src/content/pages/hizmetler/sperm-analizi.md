@@ -2,14 +2,12 @@
 slug: sperm-analizi
 title: Spermiyogram (Sperm analizi)
 description: Kısırlık şikayeti ile baş vuran bir çiftte nedenler araştırılırken ilk önce incelenmesi gereken erkektir. Bu aşamadaki ilk ve en ucuz tetkik ise sperm analizidir.
-image: /src/images/15.jpg
+image: /src/images/histeroskopi_baslik.jpg
 ---
 
 
 
 **Sperm analizi (spermiyogram), erkek infertilitesini değerlendiren ilk ve en kritik testtir; kısırlık vakalarının yaklaşık %40'ında sorun erkekten kaynaklanır.** Test; sperm sayısı, hareketliliği (motilite) ve şeklini (morfoloji) inceler. Güvenilir sonuç için örnek 2-5 günlük cinsel perhiz sonrası klinikte alınmalı, deneyimli merkezlerde değerlendirilmeli ve en az iki kez tekrarlanmalıdır.
-
----
 
 ## Spermiyogram (Sperm Analizi) Nedir?
 
@@ -51,12 +49,56 @@ Bu şeker, sperm hareketi için enerji sağlar. Fruktozun yokluğu erkek üreme 
 
 ### 5. Sayı (Konsantrasyon)
 
-| **Sperm Sayısı (mL başına)** | **Sınıflandırma** |
-| ---------------------------- | ----------------- |
-| **≥15 milyon**               | Normal |
-| **10-15 milyon**             | Düşük sperm sayısı |
-| **<10 milyon**               | Çok düşük sperm sayısı (Oligospermi) |
-| **Hiç sperm yok**            | [Azospermi](/blog/azospermi-nedir) |
+<div style="overflow-x: auto; margin: 2rem 0;">
+  <table style="width: 100%; border-collapse: collapse; font-family: inherit; font-size: 0.95rem; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.08);">
+    <thead>
+      <tr style="background-color: #1a6b4a; color: white;">
+        <th style="padding: 14px 20px; text-align: left; font-weight: 600; letter-spacing: 0.02em;">Sperm Sayısı (mL başına)</th>
+        <th style="padding: 14px 20px; text-align: left; font-weight: 600; letter-spacing: 0.02em;">Sınıflandırma</th>
+        <th style="padding: 14px 20px; text-align: center; font-weight: 600; letter-spacing: 0.02em;">Durum</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="background-color: #f0faf5;">
+        <td style="padding: 13px 20px; border-bottom: 1px solid #e0ede7; font-weight: 700; font-size: 1rem;">≥ 15 milyon</td>
+        <td style="padding: 13px 20px; border-bottom: 1px solid #e0ede7;">Normal</td>
+        <td style="padding: 13px 20px; border-bottom: 1px solid #e0ede7; text-align: center;">
+          <span style="background-color: #d1fae5; color: #065f46; padding: 3px 12px; border-radius: 20px; font-size: 0.82rem; font-weight: 600;">✓ Normal</span>
+        </td>
+      </tr>
+      <tr style="background-color: #ffffff;">
+        <td style="padding: 13px 20px; border-bottom: 1px solid #e0ede7; font-weight: 700; font-size: 1rem;">10 – 15 milyon</td>
+        <td style="padding: 13px 20px; border-bottom: 1px solid #e0ede7;">Düşük sperm sayısı</td>
+        <td style="padding: 13px 20px; border-bottom: 1px solid #e0ede7; text-align: center;">
+          <span style="background-color: #fef9c3; color: #854d0e; padding: 3px 12px; border-radius: 20px; font-size: 0.82rem; font-weight: 600;">⚠ Düşük</span>
+        </td>
+      </tr>
+      <tr style="background-color: #f0faf5;">
+        <td style="padding: 13px 20px; border-bottom: 1px solid #e0ede7; font-weight: 700; font-size: 1rem;">&lt; 10 milyon</td>
+        <td style="padding: 13px 20px; border-bottom: 1px solid #e0ede7;">Çok düşük sperm sayısı <span style="color: #6b7280; font-size: 0.88rem;">(Oligospermi)</span></td>
+        <td style="padding: 13px 20px; border-bottom: 1px solid #e0ede7; text-align: center;">
+          <span style="background-color: #fee2e2; color: #991b1b; padding: 3px 12px; border-radius: 20px; font-size: 0.82rem; font-weight: 600;">✗ Çok Düşük</span>
+        </td>
+      </tr>
+      <tr style="background-color: #ffffff;">
+        <td style="padding: 13px 20px; font-weight: 700; font-size: 1rem;">Hiç sperm yok</td>
+        <td style="padding: 13px 20px;">
+          <a href="/blog/azospermi-nedir" style="color: #1a6b4a; text-decoration: underline; font-weight: 600;">Azospermi</a>
+        </td>
+        <td style="padding: 13px 20px; text-align: center;">
+          <span style="background-color: #fce7f3; color: #831843; padding: 3px 12px; border-radius: 20px; font-size: 0.82rem; font-weight: 600;">⊘ Azospermi</span>
+        </td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr style="background-color: #f0f7f4;">
+        <td colspan="3" style="padding: 10px 20px; font-size: 0.80rem; color: #6b7280; font-style: italic;">
+          📋 Kaynak: WHO Laboratory Manual, 6. Baskı (2021). Klinik karar tek başına bu tabloya dayandırılmamalıdır.
+        </td>
+      </tr>
+    </tfoot>
+  </table>
+</div>
 
 Azospermi durumunda semen tamamen normal görünebilir; ancak içinde sperm bulunmaz. Bu vakada testis biyopsisiyle sperm aranır ([TESE/MicroTESE](/tesatese)).
 
@@ -69,6 +111,8 @@ Sayıdan daha önemli olan spermin **kalitesidir**. Yumurtaya ulaşabilmek için
 Şekli normal olmayan spermlerin dölleme yeteneği düşüktür. Normal bir örnekte spermlerin **%30'unun** normal şekilli olması gerekir (Kruger kriterlerine göre bu eşik %4'tür).
 
 Bunların dışında spermlerin kümeleşmesi ve örnekteki iltihap hücrelerinin varlığı gibi ek faktörler de kontrol edilir. Ancak hiçbir test spermin dölleme yeteneği hakkında **%100** doğrulukta bilgi sağlayamaz.
+
+Normal Sperm Değerleri ([WHO 2021](https://www.who.int/publications/i/item/9789240030787))
 
 <div style="overflow-x: auto; margin: 2rem 0;">
   <table style="width: 100%; border-collapse: collapse; font-family: inherit; font-size: 0.95rem;">
