@@ -6,7 +6,6 @@ description: "Dr. Senai Aksoy Tüp Bebek Merkezi: Sunduğumuz hizmetler"
 
 **Tüp bebek merkezimizde sunduğumuz hizmetler:**
 
-- [Tüp Bebek Tedavisi Aşamaları](/tup-bebek-tedavisi-asamalari)
 - [Tüp Bebek ve Mikroenjeksiyon](/tup-bebek-ve-mikroenjeksiyon)
 - [Aşılama](/asilama)
 - [Yumurtlama Takibi](/yumurtlama-takibi)

@@ -1,15 +1,13 @@
 ---
-slug: tup-bebek-tedavisi-asamalari
-title: Tüp Bebek Tedavisi Aşamaları
+slug: tup-bebek-asamalari
+title: Tüp Bebek Tedavisinin Aşamaları. Adım Adım IVF Süreci ve Başarı İpuçları
 description: Tüp bebek tedavisi aşamaları; çiftin detaylı muayenesi, tüp bebek ilaçları ile yumurta geliştirme, yumurta toplama işlemi (OPU), laboratuvar ortamında mikroenjeksiyon (ICSI) ile döllenme ve embriyo transferi adımlarından oluşur. Tüp bebek süreci ortalama 15-20 gün sürer.
-image: /src/images/blog/tup_bebek_asamalari.jpg
+image: /src/images/6.jpg
 ---
 
 
 
 <!-- SCHEMA: MedicalWebPage + FAQPage JSON-LD aşağıda oluşturuldu -->
-
-## 🔍 Özet (BLUF / TL;DR)
 
 **Tüp bebek tedavisi aşamaları; çiftin detaylı muayenesi, hormon ilaçlarıyla yumurta geliştirme, yumurta toplama (OPU), mikroenjeksiyon (ICSI) ile laboratuvar döllenme ve embriyo transferinden oluşur.** Tüp bebek süreci ortalama **15-20 gün** sürer. Başarı için standart protokoller yerine hastanın biyolojik ritmine uygun kişiselleştirilmiş tedavi uygulanmalıdır.
 
@@ -35,11 +33,101 @@ Yumurtalıkların uyarılması (ovulasyon indüksiyonu), adetin **2. veya 3. gü
 
 Bu aşamada ultrason ile yumurtaların büyümesi (folikül takibi) izlenir. Kişiye özel dozajlanan tüp bebek ilaçları over hiperstimülasyon sendromu (OHSS) riskini minimuma indirmektedir.
 
-| Tedavi Aşaması | İşlem Günü | Beklenen Süre |
-| --- | --- | --- |
-| **İlaçlara Başlama** | Adetin 2. veya 3. günü | — |
-| **İğne Kullanımı** | Günlük düzenli kullanım | **8–12 Gün** |
-| **Çatlatma İğnesi (hCG)** | Foliküller **17–18 mm**'ye ulaşınca | Tek doz |
+<style>
+  .ivf-table-wrap{
+    max-width: 820px;
+    margin: 16px 0;
+    font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+  }
+  .ivf-table{
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: #fff;
+    border: 1px solid #e6e8ee;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(16,24,40,.06);
+  }
+  .ivf-table thead th{
+    text-align: left;
+    padding: 14px 16px;
+    font-size: 13px;
+    letter-spacing: .02em;
+    text-transform: uppercase;
+    color: #5b667a;
+    background: linear-gradient(180deg, #f8fafc 0%, #f3f5f9 100%);
+    border-bottom: 1px solid #e6e8ee;
+  }
+  .ivf-table tbody td{
+    padding: 14px 16px;
+    font-size: 15px;
+    color: #111827;
+    border-bottom: 1px solid #eef1f6;
+    vertical-align: top;
+  }
+  .ivf-table tbody tr:last-child td{ border-bottom: 0; }
+  .ivf-table tbody tr:hover td{ background: #fafbff; }
+  .ivf-table .stage{
+    font-weight: 700;
+    color: #0f172a;
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .ivf-table .badge{
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+    background: #eef2ff;
+    color: #3730a3;
+    border: 1px solid #e0e7ff;
+    white-space: nowrap;
+  }
+  .ivf-table .muted{ color: #6b7280; }
+  .ivf-table .strong{ font-weight: 800; }
+  /* Mobilde yatay kaydırma */
+  .ivf-table-scroll{ overflow-x: auto; border-radius: 14px; }
+</style>
+
+<div class="ivf-table-wrap">
+  <div class="ivf-table-scroll">
+    <table class="ivf-table" role="table" aria-label="Tüp bebek tedavi aşamaları">
+      <thead>
+        <tr>
+          <th scope="col">Tedavi Aşaması</th>
+          <th scope="col">İşlem Günü</th>
+          <th scope="col">Beklenen Süre</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <span class="stage">İlaçlara Başlama</span>
+          </td>
+          <td>Adetin <span class="strong">2.</span> veya <span class="strong">3.</span> günü</td>
+          <td class="muted">—</td>
+        </tr>
+        <tr>
+          <td>
+            <span class="stage">İğne Kullanımı</span>
+          </td>
+          <td>Günlük düzenli kullanım</td>
+          <td><span class="badge">8–12 Gün</span></td>
+        </tr>
+        <tr>
+          <td>
+            <span class="stage">Çatlatma İğnesi (hCG)</span>
+          </td>
+          <td>Foliküller <span class="strong">17–18 mm</span>'ye ulaşınca</td>
+          <td>Tek doz</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
 
 ---
 
