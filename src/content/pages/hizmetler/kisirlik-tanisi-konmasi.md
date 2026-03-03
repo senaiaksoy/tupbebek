@@ -1,11 +1,11 @@
 ---
 slug: kisirlik-tanisi-konmasi
-title: Kısırlık Tanısı Konması
+title: Kısırlık Nasıl Anlaşılır
 description: Kısırlık (infertilite) şikayeti ile gelen bir çiftin araştırılması, kadın ve erkeğin birlikte geldiği bir öngörüşmeyle başlar. Bu sırada varsa çifte ait önceki tetkik ve filmlerin değerlendirilmesi yapılır.
 image: /src/images/14.jpg
 ---
 
-**Kısırlık tanısı, çiftin birlikte katıldığı ilk görüşmeyle başlar; semen analizi, ovulasyon değerlendirmesi, yumurtalık kapasitesi ve HSG (rahim tüp filmi) temel tanı adımlarını oluşturur.** İnfertilite araştırmasında gereksiz testlerden kaçınarak hedefe yönelik, kanıta dayalı bir yaklaşım benimsemek hem zaman hem de maddi kayıpları önler. Her çiftin öyküsü bireyseldir; doğru tanı için uzman değerlendirmesi şarttır.
+**Kısırlığın anlaşılması, çiftin birlikte katıldığı ilk görüşmeyle başlar; semen analizi, ovulasyon değerlendirmesi, yumurtalık kapasitesi ve HSG (rahim tüp filmi) temel tanı adımlarını oluşturur.** İnfertilite araştırmasında gereksiz testlerden kaçınarak hedefe yönelik, kanıta dayalı bir yaklaşım benimsemek hem zaman hem de maddi kayıpları önler. Her çiftin öyküsü bireyseldir; doğru tanı için uzman değerlendirmesi şarttır.
 
 ---
 
