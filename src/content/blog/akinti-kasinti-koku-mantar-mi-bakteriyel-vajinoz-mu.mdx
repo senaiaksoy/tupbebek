@@ -9,7 +9,7 @@ author: Dr. Senai Aksoy
 
 import MedicalInfoBox from "@components/MedicalInfoBox.astro";
 import QuoteBlock from "@components/QuoteBlock.astro";
-import FaqItem from "@components/FaqItem.astro";
+import Accordion from "@components/Accordion.astro";
 
 <MedicalInfoBox title="30 Saniyede Özet" icon="⏱️" color="blue">
 **Mantar enfeksiyonu** (genellikle *Candida albicans*) ile **bakteriyel vajinoz** (genellikle *Gardnerella vaginalis* artışına bağlı ekosistem bozulması) arasındaki en büyük fark akıntı ve kokudur. Eğer temel sorun **kaşıntı** ise ve akıntı **peynir kesiği** gibi beyaz/yoğunsa bu mantara işaret eder. Akıntı **ince yapılıysa** ve belirgin bir **balık kokusu** eşlik ediyorsa bakteriyel vajinoz olasılığı daha yüksektir. Kesin teşhis için klinik muayene ve vajinal kültür gerekebilir.
@@ -167,17 +167,17 @@ Eğer şikayetleriniz ilk kez oluyorsa, gebelik şüpheniz varsa, karın ağrıs
 
 <h2 id="faq">Sıkça Sorulan Sorular (SSS)</h2>
 
-<FaqItem question="Balık kokusu kesinlikle vajinoz mu demektir?">
+<Accordion title="Balık kokusu kesinlikle vajinoz mu demektir?">
   Büyük olasılıkla evet, ancak bazen paraziter enfeksiyonlar da benzer koku yapabilir. Mutlaka muayene şarttır.
-</FaqItem>
+</Accordion>
 
-<FaqItem question="Mantar varken cinsel ilişki olur mu?">
+<Accordion title="Mantar varken cinsel ilişki olur mu?">
   Zorunlu bir yasak olmasa da, tahriş ve ağrı nedeniyle genellikle konforlu değildir ve iyileşme sürecini uzatabilir.
-</FaqItem>
+</Accordion>
 
-<FaqItem question="Antibiyotik sonrası neden mantar oluruz?">
+<Accordion title="Antibiyotik sonrası neden mantar oluruz?">
   Antibiyotikler sadece kötü bakterileri değil, bizi koruyan iyi bakterileri de öldürdüğü için meydan fırsatçı mantarlara kalır.
-</FaqItem>
+</Accordion>
 
 ---
 
