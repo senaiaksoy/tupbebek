@@ -41,7 +41,7 @@ Adetin **2. veya 3. günü** başlar. Tüp bebek iğneleri (hormon ilaçları) o
 Bu aşamada foliküllerin büyümesi ultrason ile düzenli olarak izlenir. Dozajlamanın kişiye özel yapılması, Over Hiperstimülasyon Sendromu (OHSS) riskini minimuma indirmek için kritiktir.
 </MedicalInfoBox>
 
-<style>
+export const tableStyles = `<style>
   .ivf-table-wrap{
     max-width: 820px;
     margin: 24px 0;
@@ -83,7 +83,9 @@ Bu aşamada foliküllerin büyümesi ultrason ile düzenli olarak izlenir. Dozaj
     background: #dbeafe;
     color: #1e40af;
   }
-</style>
+</style>`;
+
+<Fragment set:html={tableStyles} />
 
 <div class="ivf-table-wrap">
     <table class="ivf-table">
