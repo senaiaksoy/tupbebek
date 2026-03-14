@@ -1,0 +1,29 @@
+---
+interface Props {
+  schema: any;
+}
+
+const { schema } = Astro.props;
+
+// Function to recursively map clean keys to @ keys
+function mapSchema(obj: any): any {
+  if (Array.isArray(obj)) {
+    return obj.map(mapSchema);
+  } else if (obj !== null && typeof obj === 'object') {
+    const newObj: any = {};
+    for (const key in obj) {
+      let newKey = key;
+      if (key === 'context') newKey = '@context';
+      if (key === 'type') newKey = '@type';
+      if (key === 'id') newKey = '@id';
+      newObj[newKey] = mapSchema(obj[key]);
+    }
+    return newObj;
+  }
+  return obj;
+}
+
+const mappedSchema = mapSchema(schema);
+---
+
+<script type="application/ld+json" is:inline set:html={JSON.stringify(mappedSchema)} />

@@ -1,0 +1,28 @@
+---
+---
+<script is:inline>
+  (function() {
+    const observerOptions = { threshold: 0.1 };
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.setAttribute('data-reveal', 'active');
+        }
+      });
+    }, observerOptions);
+
+    function initReveal() {
+      document.querySelectorAll('[data-reveal]').forEach(el => observer.observe(el));
+    }
+
+    // Run on initial load
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initReveal);
+    } else {
+      initReveal();
+    }
+    
+    // Run for view transitions
+    document.addEventListener('astro:after-swap', initReveal);
+  })();
+</script>

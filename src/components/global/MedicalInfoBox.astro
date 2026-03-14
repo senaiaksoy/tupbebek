@@ -30,22 +30,25 @@ const { title = "Özet", icon = "💡", color = "blue" } = Astro.props;
   .info-box {
     position: relative;
     overflow: hidden;
-    border-radius: 12px;
-    border: 1px solid #e2e8f0;
+    border-radius: 16px;
     padding: 24px;
-    margin: 32px 0;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.03);
-    transition: box-shadow 0.3s ease;
+    margin: 40px 0;
+    backdrop-filter: var(--glass-blur);
+    -webkit-backdrop-filter: var(--glass-blur);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
   }
   .info-box:hover {
-    box-shadow: 0 6px 15px rgba(0,0,0,0.06);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.08);
   }
   
-  /* Color Themes - High Contrast */
-  .theme-blue { background-color: #f8fafc; border-left: 4px solid #3b82f6; color: #0f172a; }
-  .theme-rose { background-color: #fffdfd; border-left: 4px solid #f43f5e; color: #0f172a; }
-  .theme-emerald { background-color: #f8fdfa; border-left: 4px solid #10b981; color: #0f172a; }
-  .theme-amber { background-color: #fffcf8; border-left: 4px solid #f59e0b; color: #0f172a; }
+  /* Color Themes - Glass & Gradient Enhancements */
+  .theme-blue { background: rgba(59, 130, 246, 0.05); border-left: 6px solid #3b82f6; }
+  .theme-rose { background: rgba(244, 63, 94, 0.05); border-left: 6px solid #f43f5e; }
+  .theme-emerald { background: rgba(16, 185, 129, 0.05); border-left: 6px solid #10b981; }
+  .theme-amber { background: rgba(245, 158, 11, 0.05); border-left: 6px solid #f59e0b; }
 
   .info-content-wrapper {
     display: flex;

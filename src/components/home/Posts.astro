@@ -11,7 +11,7 @@ const posts = (await getCollection("blog"))
 ---
 
 <Row>
-  <Section class="articles">
+  <Section class="articles" data-reveal>
     <div class="head">
       <a href="/blog/"><Title size="big">Blog</Title></a>
       <a href="/blog/">Tüm makaleler <Icon name="arrowRight" /></a>
@@ -20,7 +20,7 @@ const posts = (await getCollection("blog"))
     <div class="articles">
       {
         posts.map((post) => (
-          <article>
+          <article class="hover-glow">
             <Title size="medium">
               <a href={`/blog/${post.slug}/`}>{post.data.title}</a>
             </Title>
