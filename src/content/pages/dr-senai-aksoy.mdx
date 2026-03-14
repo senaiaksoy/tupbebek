@@ -9,6 +9,7 @@ editor: "Dr. Senai Aksoy"
 
 import MedicalInfoBox from "../../components/global/MedicalInfoBox.astro";
 import QuoteBlock from "../../components/global/QuoteBlock.astro";
+import Accordion from "../../components/global/Accordion.astro";
 
 <MedicalInfoBox title="Hekimlik Yaklaşımım" icon="🩺" color="blue">
 Tıp dünyasındaki 30 yılı aşkın yolculuğumda, her hastanın sadece bir vaka değil; kendine has umutları, kaygıları ve bir hikâyesi olan bir birey olduğunu gördüm. Uzmanlığım olan tüp bebek (IVF), mikroenjeksiyon ve ileri düzey jinekolojik cerrahide temel felsefem; en güncel bilimsel verileri, her çiftin biyolojik ve duygusal gerçeklerine göre kişiselleştirerek sunmaktır.
@@ -17,6 +18,10 @@ Tıp dünyasındaki 30 yılı aşkın yolculuğumda, her hastanın sadece bir va
 <QuoteBlock author="Doç. Dr. Senai Aksoy">
 Doğum odasında bebeklerin ilk ağlamasını duyduğum her an, bilimin neden "insan odaklı" olması gerektiğini bir kez daha anlıyorum. Teknik mükemmellik önemlidir, ancak şefkat ve güvenle birleşmediğinde eksik kalır.
 </QuoteBlock>
+
+<MedicalInfoBox title="Mesleki Özgeçmiş ve Uzmanlık Alanları" icon="🎓" color="slate">
+**Doç. Dr. Senai Aksoy**; Fransa'daki (Paris, Clermont-Ferrand, Strasbourg) bilimsel çalışmalarında edindiği uzmanlık diplomalarıyla tüp bebek (IVF), mikroenjeksiyon (ICSI), laparoskopik jinekolojik cerrahi ve ileri düzey ultrasonografi alanlarında tıbbi faaliyetlerini sürdürmektedir.
+</MedicalInfoBox>
 
 ---
 
@@ -63,6 +68,22 @@ Dr. Aksoy'un akademik çalışmalarına ve bilimsel yayınlarına aşağıdaki p
 
 ---
 
+## Sıkça Sorulan Sorular: Doç. Dr. Senai Aksoy Hakkında
+
+<Accordion title="Dr. Senai Aksoy hangi alanda uzmandır?">
+  Kadın Hastalıkları, Doğum ve Tüp Bebek (İnfertilite) alanında 30 yılı aşkın deneyime sahiptir. Özellikle zorlu vakalarda mikroenjeksiyon (ICSI) ve jinekolojik cerrahi uzmanlıklarıyla tanınır.
+</Accordion>
+
+<Accordion title="Fransa'da hangi eğitimleri almıştır?">
+  Fransa'da Clermont-Ferrand, Strasbourg ve Paris René Descartes Üniversitelerinde; Laparoskopik Cerrahi, Ultrason ve Üreme Sağlığı dallarında uzmanlık ihtisası ve diplomaları almıştır.
+</Accordion>
+
+<Accordion title="Muayenehane adresi neresidir?">
+  Klinik, İstanbul Şişli'de, Halaskargazi Caddesi üzerinde, merkezi bir konumda hastalarına hizmet vermektedir.
+</Accordion>
+
+---
+
 <MedicalInfoBox title="Yasal Bilgilendirme" icon="⚖️" color="amber">
 **Önemli Not:** Bu sayfa yalnızca bilgilendirme amaçlıdır. Sağlık hizmetleri tanıtım yönetmeliklerine uygun olarak düzenlenmiştir. Sayfada yer alan bilgiler doğrudan tıbbi teşhis veya tedavi yerine geçmez. Lütfen tıbbi durumunuzla ilgili profesyonel görüş almak için muayene randevusu oluşturunuz.
 </MedicalInfoBox>
@@ -89,7 +110,18 @@ export const physicianSchema = `<script type="application/ld+json">
     "addressCountry": "TR"
   },
   "telephone": "+90-553-277-7722",
-  "medicalSpecialty": ["Obstetrics and Gynecology", "Reproductive Endocrinology and Infertility"],
+  "medicalSpecialty": ["Obstetrics and Gynecology", "Reproductive Endocrinology and Infertility", "Infertility Specialist"],
+  "knowsAbout": ["IVF", "ICSI", "Infertility Treatments", "Gynecological Surgery", "Laparoscopy"],
+  "alumniOf": [
+    {
+      "@type": "EducationalOrganization",
+      "name": "Istanbul University Cerrahpasa Medical Faculty"
+    },
+    {
+      "@type": "EducationalOrganization",
+      "name": "University of Franche-Comté"
+    }
+  ],
   "sameAs": [
     "https://orcid.org/0000-0003-4110-5290",
     "https://pubmed.ncbi.nlm.nih.gov/?term=Aksoy%2C+Senai%5BAuthor%5D",

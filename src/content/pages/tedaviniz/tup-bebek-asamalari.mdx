@@ -83,6 +83,10 @@ export const tableStyles = `<style>
 
 <Fragment set:html={tableStyles} />
 
+<MedicalInfoBox title="Başarı İpucu: Yaşam Tarzı" icon="🥗" color="amber">
+İlaç kullanım sürecinde dengeli beslenmek, bol su içmek ve stresten uzak durmak, folikül gelişimini destekleyen küçük ama değerli adımlardır.
+</MedicalInfoBox>
+
 <div class="ivf-table-wrap">
     <table class="ivf-table">
       <thead>
@@ -122,6 +126,10 @@ Yumurta toplama işlemi (OPU), çatlatma iğnesinden yaklaşık 34-36 saat sonra
 Hastalarda en çok endişe yaratan OPU aşaması, aslında modern anestezi yöntemleriyle son derece konforlu bir işlemdir. İşlemden 1-2 saat sonra hastalarımız yürüyerek evlerine dönebilirler.
 </QuoteBlock>
 
+<MedicalInfoBox title="Başarı İpucu: İşlem Günü" icon="🛌" color="blue">
+Yumurta toplama günü, işlemden sonra yaklaşık 2 saatlik bir dinlenme ve o günü evde sakin geçirmek, vücudunuzun toparlanması için idealdir.
+</MedicalInfoBox>
+
 ---
 
 <h2 id="icsi-dollenme">Laboratuvar: Mikroenjeksiyon (ICSI) ve Embriyo Gelişimi</h2>
@@ -137,6 +145,10 @@ Döllenen yumurtalarınız, laboratuvarımızdaki özel embriyoskoplarda (yapay 
 <h2 id="embriyo-transferi">Embriyo Transferi: Bebeğe Giden Son Adım</h2>
 
 Anestezi gerektirmeyen, basit ve ağrısız bir işlemdir. En kaliteli embriyo, ultrason eşliğinde rahim içine nazikçe bırakılır. İşlem sonrası kısa bir dinlenme yeterlidir.
+
+<MedicalInfoBox title="Başarı İpucu: Transfer Sonrası" icon="🚶" color="amber">
+Transferden sonra 24 saatlik hafif dinlenme yeterlidir. Sürekli yatak istirahati yerine, evin içinde dolaşmak kan akışını artırarak tutunmaya yardımcı olabilir.
+</MedicalInfoBox>
 
 [Embriyo transferi sonrası kanama](/blog/embriyo-transferi-sonrasi-kanama) gibi konularda endişelenmeyin; hafif lekelenmeler yerleşme belirtisi olabilir.
 
@@ -194,13 +206,34 @@ export const howToSchema = `<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "HowTo",
-  "name": "Tüp Bebek Tedavisi Nasıl Uygulanır?",
+  "name": "Tüp Bebek Tedavisi Nasıl Uygulanır? Adım Adım Süreç Rehberi",
+  "description": "Muayeneden transfere kadar tüp bebek tedavisinin tüm aşamaları hakkında detaylı, bilimsel ve güncel rehber.",
   "step": [
-    { "@type": "HowToStep", "name": " Muayene ve Hazırlık", "text": "Adetin 2-3. günü ultrason ve testlerle tedavi planlanır." },
-    { "@type": "HowToStep", "name": "Yumurtalıkların Uyarılması", "text": "8-12 gün süren hormon iğneleri ile yumurtalar geliştirilir." },
-    { "@type": "HowToStep", "name": "Yumurta Toplama (OPU)", "text": "Anestezi altında yumurtalar laboratuvar için toplanır." },
-    { "@type": "HowToStep", "name": "Mikroenjeksiyon ve Döllenme", "text": "ICSI yöntemiyle sperm ve yumurta döllenir." },
-    { "@type": "HowToStep", "name": "Embriyo Transferi", "text": "Gelişen en iyi embriyo rahim içine nakledilir." }
+    { 
+      "@type": "HowToStep", 
+      "name": "Ön Görüşme ve Kişiye Özel Planlama", 
+      "text": "Tedavinin ilk adımı, adetin 2. veya 3. günü yapılan ultrason ve kan testleriyle hastanın durumuna en uygun protokolün belirlenmesidir." 
+    },
+    { 
+      "@type": "HowToStep", 
+      "name": "Yumurtalıkların Kontrollü Uyarılması", 
+      "text": "8-12 gün süren iğne tedavisi ile yumurtalıklar birden fazla yumurta üretmesi için uyarılır ve gelişim ultrasonla takip edilir." 
+    },
+    { 
+      "@type": "HowToStep", 
+      "name": "Yumurta Toplama ve Sperm Hazırlığı", 
+      "text": "Yumurtalar genel veya lokal anestezi altında toplanır. Aynı gün eşten alınan sperm örnekleri laboratuvar için hazırlanır." 
+    },
+    { 
+      "@type": "HowToStep", 
+      "name": "Mikroenjeksiyon ve Embriyo Laboratuvarı", 
+      "text": "En kaliteli sperm ICSI yöntemiyle yumurtaya nakledilir. Oluşan embriyolar 3-5 gün boyunca ileri teknoloji inkübatörlerde geliştirilir." 
+    },
+    { 
+      "@type": "HowToStep", 
+      "name": "Embriyo Transferi ve Bekleme Süreci", 
+      "text": "Gelişen en iyi embriyo rahim içine nakledilir. Transfer sonrası 10-12 gün içinde kanda gebelik testi ile sonuç teyit edilir." 
+    }
   ]
 }
 </script>`;
