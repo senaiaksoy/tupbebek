@@ -1,0 +1,110 @@
+---
+// src/components/global/MedicalInfoBox.astro
+// Reusable callout box for highlighting key medical takeaways like BLUF.
+const { title = "Özet", icon = "💡", color = "blue" } = Astro.props;
+---
+
+<div class={`info-box theme-${color}`}>
+  <div class="info-content-wrapper">
+    <!-- Icon Container -->
+    <div class="info-icon">
+      {icon}
+    </div>
+    
+    <!-- Content Container -->
+    <div class="info-text">
+      <h3>{title}</h3>
+      <div class="info-body">
+        <slot />
+      </div>
+    </div>
+  </div>
+  
+  <!-- Subtle decorative background element -->
+  <div class="bg-icon" aria-hidden="true">
+    {icon}
+  </div>
+</div>
+
+<style>
+  .info-box {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    padding: 24px;
+    margin: 32px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+    transition: box-shadow 0.3s ease;
+  }
+  .info-box:hover {
+    box-shadow: 0 6px 15px rgba(0,0,0,0.06);
+  }
+  
+  /* Color Themes - High Contrast */
+  .theme-blue { background-color: #f8fafc; border-left: 4px solid #3b82f6; color: #0f172a; }
+  .theme-rose { background-color: #fffdfd; border-left: 4px solid #f43f5e; color: #0f172a; }
+  .theme-emerald { background-color: #f8fdfa; border-left: 4px solid #10b981; color: #0f172a; }
+  .theme-amber { background-color: #fffcf8; border-left: 4px solid #f59e0b; color: #0f172a; }
+
+  .info-content-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    position: relative;
+    z-index: 10;
+  }
+  .info-icon {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    font-size: 24px;
+  }
+  .info-text {
+    flex: 1;
+  }
+  .info-text h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    line-height: 1.3;
+    color: #1e293b;
+  }
+  .info-body {
+    font-size: 15px;
+    color: #334155;
+    line-height: 1.65;
+  }
+  .info-body :global(p) { 
+    margin: 0; 
+    margin-bottom: 0.5rem;
+  }
+  .info-body :global(p:last-child) {
+    margin-bottom: 0;
+  }
+  .info-body :global(strong) { 
+    font-weight: 700;
+    color: #0f172a;
+  }
+  .info-body :global(a) { 
+    font-weight: 600;
+    color: #2563eb;
+    text-decoration: underline;
+  }
+  .bg-icon {
+    position: absolute;
+    bottom: -24px;
+    right: -24px;
+    font-size: 128px;
+    opacity: 0.05;
+    pointer-events: none;
+    user-select: none;
+    line-height: 1;
+  }
+</style>

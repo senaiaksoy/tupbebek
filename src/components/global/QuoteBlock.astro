@@ -1,0 +1,104 @@
+---
+// src/components/global/QuoteBlock.astro
+// A cinematic, premium blockquote component
+const { author } = Astro.props;
+---
+
+<div class="quote-wrapper">
+  <div class="quote-icon-bg">"</div>
+  <blockquote class="cinematic-quote">
+    <div class="quote-content">
+      <slot />
+    </div>
+    {author && (
+      <footer class="quote-author">
+        <span class="author-dash">—</span>
+        <strong>{author}</strong>
+      </footer>
+    )}
+  </blockquote>
+</div>
+
+<style>
+  .quote-wrapper {
+    position: relative;
+    margin: 64px 0;
+    padding: 48px;
+    background: linear-gradient(to right, #ffffff, #ffffff);
+    border-left: 6px solid #2563eb;
+    border-radius: 0 16px 16px 0;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .quote-icon-bg {
+    position: absolute;
+    top: -20px;
+    left: 10px;
+    font-size: 180px;
+    font-family: serif;
+    color: #eff6ff;
+    opacity: 0.15;
+    line-height: 1;
+    z-index: -1;
+    user-select: none;
+    pointer-events: none;
+  }
+
+  .cinematic-quote {
+    margin: 0;
+    position: relative;
+    z-index: 2;
+  }
+
+  .quote-content {
+    font-size: 1.35rem;
+    line-height: 1.7;
+    color: #1e293b;
+    font-style: italic;
+    font-weight: 400;
+  }
+  
+  .quote-content :global(p) {
+    margin: 0 0 16px 0;
+  }
+  .quote-content :global(p:last-child) {
+    margin: 0;
+  }
+
+  .quote-author {
+    margin-top: 28px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    color: #64748b;
+    opacity: 1 !important;
+  }
+  
+  .quote-author strong {
+    color: #2563eb !important;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+  }
+
+  .author-dash {
+    color: #2563eb;
+    margin-right: 12px;
+    font-weight: 900;
+  }
+  
+  @media (max-width: 640px) {
+    .quote-wrapper {
+      padding: 32px 24px;
+      margin: 40px 0;
+    }
+    .quote-content {
+      font-size: 1.15rem;
+    }
+    .quote-icon-bg {
+      font-size: 120px;
+      top: -10px;
+    }
+  }
+</style>
