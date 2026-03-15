@@ -1,4 +1,4 @@
-﻿---
+---
 slug: istanbul-tup-bebek-doktoru-merkezi-secimi-rehberi
 title: İstanbul'da Sizin İçin "En İyi" Tüp Bebek Doktorunu ve Merkezini Bulma Sanatı. 2026 Kapsamlı Rehberi
 description: İstanbul'da en iyi tüp bebek merkezi bulmak zor mu? Doktor seçimi, laboratuvar altyapısı, PGT, fiyatlar ve tedavi sürecini adım adım öğrenin.
@@ -35,14 +35,15 @@ import MedicalInfoBox from '../../components/global/MedicalInfoBox.astro';
 import QuoteBlock from '../../components/global/QuoteBlock.astro';
 import JSONLD from '../../components/global/JSONLD.astro';
 import RevealScript from '../../components/global/RevealScript.astro';
+import Video from '../../components/global/Video.astro';
 
-<div class="mesh-hero pt-12 pb-20 px-4 md:px-0 -mx-4 md:-mx-0 mb-12 rounded-3xl shadow-sm border border-white/40">
+<div class="mesh-hero pt-12 pb-20 px-4 md:px-0 -mx-4 md:-mx-0 mb-12 rounded-3xl shadow-sm border border-white/40" style="background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);">
   <div class="max-w-4xl mx-auto" data-reveal>
     <h1 class="text-4xl md:text-6xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-slate-700 to-indigo-800 leading-tight">
       {frontmatter.title}
     </h1>
     <p class="text-xl md:text-2xl text-slate-700 font-medium max-w-2xl leading-relaxed">
-      {frontmatter.description}
+      Haritasız bir okyanus gibi görünen bu süreçte, bilimsel pusulanız ve güvenilir rehberiniz olmaya adayız.
     </p>
   </div>
 </div>
@@ -50,8 +51,8 @@ import RevealScript from '../../components/global/RevealScript.astro';
 <div class="max-w-4xl mx-auto space-y-12 blog-content-reveal">
 
 <div data-reveal>
-<MedicalInfoBox title="Hızlı Bakış: Doğru Merkez Seçimi" icon="🚀" color="blue">
-İstanbul'da tüp bebek merkezi seçerken **tek bir "en iyi"** yoktur; tıbbi öz geçmişinize en uygun "en iyi" vardır. Başarının gizli kahramanı **laboratuvar kalitesidir** (ESHRE/ASRM standartları). Sadece gebelik testine değil, **eve canlı bebek götürme oranına** odaklanın. "Fabrikasyon" değil, terzi işi (kişiye özel) tedavi arayın. Unutmayın; en ucuz tedavi, yanlış planlandığında en pahalıya mal olandır.
+<MedicalInfoBox title="Hızlı Bakış: Doğru Merkez Seçimi" icon="🤖" color="blue">
+İstanbul'da tüp bebek merkezi seçerken **tek bir "en iyi"** yoktur; tıbbi öz geçmişinize en uygun "en iyi" vardır. Başarının gizli kahramanı **laboratuvar kalitesidir**. Sadece gebelik testine değil, **eve canlı bebek götürme oranına** odaklanın. "Fabrikasyon" değil, terzi işi (kişiye özel) tedavi arayın. Unutmayın; en ucuz tedavi, yanlış planlandığında en pahalıya mal olandır.
 </MedicalInfoBox>
 </div>
 
@@ -72,15 +73,19 @@ Yapay zeka, Embriyoskop ya da PGT gibi teknolojiler elbette değerlidir; ancak b
 <div data-reveal>
 ## 💡 Bu Yazıda Ne Öğreneceksiniz?
 
-1. [Giriş](#giris)
-2. [Kritik Sorular](#kritik-sorular)
-3. [Dr. Aksoy Yaklaşımı](#dr-aksoy-yaklasimi)
-4. [Fiyatlandırma](#fiyatlandirma)
-5. [Tedavi Süreci](#tedavi-sureci)
-6. [Sıkça Sorulan Sorular](#faq)
+1. [Giriş: Pusula ve Okyanus Metaforu](#giris)
+2. [5 Kritik Değerlendirme Sorusu](#kritik-sorular)
+3. [Dr. Aksoy Yaklaşımı: Kişiye Özel Bilim](#dr-aksoy-yaklasimi)
+4. [Maliyet ve Fiyatlandırma Gerçekleri](#fiyatlandirma)
+5. [Adım Adım Tedavi Anatomisi](#tedavi-sureci)
+6. [Sıkça Sorulan Sorular (SSS)](#faq)
 </div>
 
 ---
+
+<div data-reveal>
+<Video id="_YJmXBdAE0c" />
+</div>
 
 <div data-reveal>
 <h2 id="giris">Giriş: Haritasız Okyanusa Açılmamak İçin</h2>
@@ -134,11 +139,13 @@ Kısacası, iyi bir doktor doğru yolu çizer; **iyi bir laboratuvar ise o yolun
 Tüp bebek laboratuvarları, rastgele uygulamalarla değil; **uluslararası kabul görmüş bilimsel standartlar** çerçevesinde yönetilmelidir. Bu alanda referans kabul edilen iki ana otorite vardır: [**ESHRE** (Avrupa İnsan Üreme ve Embriyoloji Derneği)](https://www.eshre.eu/) ve [**ASRM** (Amerikan Üreme Tıbbı Derneği)](https://www.asrm.org/).
 
 <MedicalInfoBox title="Laboratuvar Kalite Kriterleri" icon="🔬" color="emerald">
+<div class="glass p-6 rounded-2xl border border-white/40 shadow-sm transition-all hover:shadow-md">
 | Kriter | Neden Önemli? | İdeal Standart |
 |--------|--------------|----------------|
 | **Embriyolog Deneyimi** | Mikroenjeksiyon (ICSI) işlemi, mikronluk hassasiyet gerektiren bir el sanatıdır. | ESHRE sertifikalı, kıdemli embriyologlar. |
 | **Kalite Kontrol (QC)** | Embriyolar dış ortam koşullarına çok hassastır. | Düzenli hava kalitesi ve gaz ölçümleri. |
 | **Embriyo Skorlama** | Doğru embriyoyu seçmek tutunma şansını artırır. | Gardner kriterlerine göre detaylı sınıflandırma (5AA, 4AB vb.). |
+</div>
 </MedicalInfoBox>
 </div>
 
@@ -154,7 +161,7 @@ Tüp bebek laboratuvarları, rastgele uygulamalarla değil; **uluslararası kabu
 **PGT (Preimplantasyon Genetik Tanı)** embriyodan biyopsi alınarak genetik yapısının incelenmesidir.
 
 **Kime yapılmalı?**
-PGT; özellikle **ileri anne yaşı (38 yaş ve üzeri)**, **tekrarlayan düşük öyküsü**, **tekrarlayan tüp bebek başarısızlıkları** ya da **bilinen genetik hastalık taşıyıcılığı** olan çiftler için anlamlı bir seçenektir.
+PGT; özellikle **ileri anne yaşı (38 yaş ve üzeri)**, **tekrarlayan düşük öyküsü**, **tekrarlayan tüp bebek başarısızlıkları** ya da **bilinen genetik hastalık taşıyıcılığı** olan çiftler için anlamlı bir seçenektir. (Bkz. [PGT Rehberimiz](/tedaviniz/tup-bebek-tedavisinde-preimplantasyon-genetik-tani))
 
 **Amaç nedir?**
 Hedef, "en güzel" ya da "en hızlı gelişen" embriyoyu değil; **genetik olarak sağlıklı embriyoyu** seçmektir. Böylece transfer sonrası hayal kırıklığı riskini azaltmak ve **eve canlı bebek götürme oranını** artırmaktır.
@@ -208,11 +215,13 @@ Bizim yaklaşımımızda sürprizlere yer yoktur. Tedaviye başlamadan önce, **
 <div data-reveal>
 <h2 id="tedavi-sureci">Tüp Bebek Tedavi Sürecinin Anatomisi: Adım Adım Rehber</h2>
 
-1. **Aşama: Tanı ve Strateji** (Kapsamlı değerlendirme)
+<div class="glass p-8 rounded-3xl border border-blue-100 mt-12 mb-12">
+1. **Aşama: Tanı ve Strateji** ([Kapsamlı değerlendirme](/blog/tup-bebek-tedavisine-hazirlik-asamasi-yazi-dizisi-1))
 2. **Aşama: Yumurtalıkların Uyarılması** (8-12 gün süren hormon iğneleri)
 3. **Aşama: Yumurta Toplama (OPU)** (Anestezi altında 10-15 dakikalık işlem)
-4. **Aşama: Laboratuvar ve Döllenme** (Hassas embriyo takibi)
-5. **Aşama: Transfer** (Ağrısız, ultrason eşliğinde yerleştirme)
+4. **Aşama: Laboratuvar ve Döllenme** ([Hassas embriyo takibi](/blog/embriyo-tup-bebek-laboratuvar-raporu-yorumlama))
+5. **Aşama: Transfer** ([Ağrısız, ultrason eşliğinde yerleştirme](/tedaviniz/tup-bebek-asamalari#transfer))
+</div>
 </div>
 
 ---
@@ -238,17 +247,16 @@ Web sitemizdeki [İletişim Formunu](https://tupbebek.com/iletisim/) doldurabili
 </div>
 
 <div data-reveal>
-**İlgili Yazı:** [İyi tüp bebek merkezi nasıl anlaşılır?](https://tupbebek.com/blog/iyi-tup-bebek-merkezi-nasil-anlasilir/)
+**İlgili Yazı:** [İyi tüp bebek merkezi nasıl anlaşılır?](/blog/iyi-tup-bebek-merkezi-nasil-anlasilir)
 
 ---
 
-**Yayın Tarihi:** 12 Ocak 2026
+## Yasal Uyarı
 
-Bu makale **Dr. Senai Aksoy** tarafından **bilgilendirme amaçlı** hazırlanmıştır. Her hasta kendine özgüdür.
-
+**Son Tıbbi Gözden Geçirme: 15 Mart 2026**
+Bu makale **Doç. Dr. Senai Aksoy** (Kadın Hastalıkları ve Doğum Uzmanı) tarafından genel bilgilendirme amacıyla hazırlanmıştır. Her hastanın durumu benzersizdir. Bu bilgiler tıbbi bir muayene, teşhis veya profesyonel görüş yerine geçmez. Şikayetleriniz için mutlaka doktorunuza danışınız.
 © Doç. Dr. Senai Aksoy - Tüm hakları saklıdır.
 </div>
 
-</div>
-
+<JSONLD schema={frontmatter.schema} />
 <RevealScript />
