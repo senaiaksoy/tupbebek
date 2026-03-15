@@ -17,7 +17,7 @@ import Navigation from "./Navigation.astro";
   const defaultIconPath = svgIconPath?.getAttribute("d");
   const closeIconPath = "M6 18L18 6M6 6l12 12";
 
-  const togglePath = (menu) => {
+  const togglePath = (menu: Element) => {
     svgIconPath = document.querySelector(".header .menu svg path");
     if (!svgIconPath) return;
 
@@ -32,7 +32,9 @@ import Navigation from "./Navigation.astro";
     const mobileMenu = document.getElementById("mobile-nav");
     mobileMenu?.classList.toggle("visible");
 
-    togglePath(mobileMenu);
+    if (mobileMenu) {
+      togglePath(mobileMenu);
+    }
 
     document.body.classList.toggle("nav-open");
   };
