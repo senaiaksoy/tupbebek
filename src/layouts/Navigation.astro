@@ -3,7 +3,7 @@ import styles from "@styles/navigation.module.scss";
 import classnames from "classnames";
 import { nav } from "../data/index.json";
 
-const { position, id } = Astro.props;
+const { position, id, "aria-label": ariaLabel = "Ana Navigasyon", role = "navigation" } = Astro.props;
 const classNames = classnames(
   styles.nav,
   position === "mobile"
@@ -14,7 +14,7 @@ const classNames = classnames(
 );
 ---
 
-<nav class={classNames} aria-label="primary" id={id}>
+<nav class={classNames} aria-label={ariaLabel} id={id} role={role}>
   <ul>
     {
       nav.map((item) => (

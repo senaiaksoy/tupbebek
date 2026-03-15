@@ -5,13 +5,13 @@ import Navigation from "./Navigation.astro";
 import NavigationMobile from "./NavigationMobile.astro";
 ---
 
-<header class="header" id="header">
+<header class="header" id="header" role="banner">
   <div class="inner">
     <div class="logo">
-      <a href="/" title="Home"><Logo /></a>
+      <a href="/" title="Home" aria-label="Dr. Senai Aksoy Anasayfa"><Logo /></a>
     </div>
 
-    <Navigation />
+    <Navigation aria-label="Ana Navigasyon" role="navigation" />
 
     <LangNav class="desktop" />
 

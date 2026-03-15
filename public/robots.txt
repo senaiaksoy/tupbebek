@@ -1,4 +1,29 @@
 User-agent: *
 Allow: /
 
+# AI Bot Governance
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Claude-WebCrawler
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: OAI-Search
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
 Sitemap: https://tupbebek.com/sitemap-index.xml
