@@ -6,6 +6,55 @@ import IvfInTurkey from "../components/home/IvfInTurkey.astro";
 import Posts from "../components/home/Posts.astro";
 import SuccessRates from "../components/home/SuccessRates.astro";
 import WhoWeAre from "../components/home/WhoWeAre.astro";
+import JSONLD from "@components/JSONLD.astro";
+
+const homeSchema = {
+  context: "https://schema.org",
+  graph: [
+    {
+      type: "MedicalOrganization",
+      id: "https://tupbebek.com/#organization",
+      name: "Dr. Senai Aksoy Tüp Bebek Merkezi",
+      url: "https://tupbebek.com",
+      logo: "https://tupbebek.com/sa.jpg",
+      image: "https://tupbebek.com/home-hero.webp",
+      address: {
+        type: "PostalAddress",
+        streetAddress: "Lotus Nişantaşı, Halaskargazi Cd. No: 38-66, Kat 5, Office 92",
+        addressLocality: "Şişli",
+        addressRegion: "İstanbul",
+        postalCode: "34371",
+        addressCountry: "TR"
+      },
+      contactPoint: {
+        type: "ContactPoint",
+        telephone: "+90-553-277-77-22",
+        contactType: "customer service",
+        areaServed: "TR",
+        availableLanguage: ["Turkish", "English", "French", "Arabic"]
+      },
+      sameAs: [
+        "https://www.draksoyivf.com",
+        "https://www.facebook.com/tupbebekcom",
+        "https://www.instagram.com/drsenaiaksoy/",
+        "https://www.youtube.com/SenaiAksoy"
+      ]
+    },
+    {
+      type: "Physician",
+      id: "https://tupbebek.com/#physician",
+      name: "Dr. Senai Aksoy",
+      url: "https://tupbebek.com/dr-senai-aksoy",
+      image: "https://tupbebek.com/senai-aksoy.webp",
+      medicalSpecialty: "ObstetricsAndGynecology",
+      memberOf: { "id": "https://tupbebek.com/#organization" },
+      sameAs: [
+          "https://www.draksoyivf.com",
+          "https://www.linkedin.com/in/senaiaksoy/"
+      ]
+    }
+  ]
+};
 ---
 
 <Layout
@@ -24,4 +73,5 @@ import WhoWeAre from "../components/home/WhoWeAre.astro";
   <IvfExplained />
 
   <Posts />
+  <JSONLD schema={homeSchema} />
 </Layout>
