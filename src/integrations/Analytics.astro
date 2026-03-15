@@ -1,12 +1,15 @@
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-K3VE72CSDJ"
-></script>
 <script is:inline>
-  window.dataLayer = window.dataLayer || [];
+  window.addEventListener('load', () => {
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = "https://www.googletagmanager.com/gtag/js?id=G-K3VE72CSDJ";
+    document.head.appendChild(script);
 
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag("js", new Date());
-
-  gtag("config", "G-K3VE72CSDJ");
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-K3VE72CSDJ");
+  }, { once: true });
 </script>
