@@ -6,7 +6,7 @@ image: /src/images/blog/66.jpg
 date: 2013-01-15
 ---
 
-İnsan hücrelerinin kriyoprezervasyonu (dondurulması) yardımcı üreme teknikleri alanında çok önemli bir rol oynamaktadır. Hücre dondurmasında iki temel teknik tanımlanmıştır. Bunlar, insan hücrelerinde ilk uygulanmaya başlayan teknik olan 'yavaş kontrollü [embriyo dondurma](/hizmetler/embryo-dondurma-embryo-freezing "embriyo dondurma") yöntemi' ve daha yeni bir teknik olan 'vitrifikasyon' yöntemidir.
+İnsan hücrelerinin kriyoprezervasyonu (dondurulması) yardımcı üreme teknikleri alanında çok önemli bir rol oynamaktadır. Hücre dondurmasında iki temel teknik tanımlanmıştır. Bunlar, insan hücrelerinde ilk uygulanmaya başlayan teknik olan 'yavaş kontrollü [embriyo dondurma](/embriyo-dondurma "embriyo dondurma") yöntemi' ve daha yeni bir teknik olan 'vitrifikasyon' yöntemidir.
 
 Yavaş kontrollü yöntem halen yaygın olarak tercih edilmekle birlikte özellikle son yıllarda yapılan klinik çalışmalarda ultra hızlı vitrifikasyon tekniğiyle de çok başarılı sonuçlar bildirilmiştir. 2008 yılında yayınlanan ilk meta-analize göre embriyolarda **vitrifikasyon** yöntemiyle daha başarılı canlılık oranları bildirilmiştir.
 

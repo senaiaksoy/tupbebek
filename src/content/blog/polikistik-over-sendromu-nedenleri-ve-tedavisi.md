@@ -62,7 +62,7 @@ Yumurtlama bozukluğuna bağlı infertilite problemi yaşayan kadınların %70'i
 
 Polikistik Over Sendromu (PKOS) hastalarında yumurtlamayı uyarıcı ilaçlardan en etkili olanı klomifen sitratır. Bu ilaç hekim kontrolü altında kullanılır.
 
-Klomifenin başarısız olması durumunda ise iki ana yaklaşım söz konusudur. Bunlardan ilki enjektabl hormonlar ile yumurtalıkları uyarmak. Daha sonra da [aşılama](/hizmetler/asilama-tedavisi-iui "aşılama") (inseminasyon) yapmaktır. Bu tedavi ile %62'ye varan başarı oranları bildirilmiştir. Bu tedavinin en önemli komplikasyonu [ovarian hiperstimülasyon sendromu](/blog/tup-bebek-tedavisinde-yumurtalik-hiperstimulasyon-sendromu-ohss "OHSS") ve çoğul gebeliklerdir. Tedavi son derece titiz bir yakın kontrol altında ve konuya hakim hekimlerce yapılmalı.
+Klomifenin başarısız olması durumunda ise iki ana yaklaşım söz konusudur. Bunlardan ilki enjektabl hormonlar ile yumurtalıkları uyarmak. Daha sonra da [aşılama](/asilama "aşılama") (inseminasyon) yapmaktır. Bu tedavi ile %62'ye varan başarı oranları bildirilmiştir. Bu tedavinin en önemli komplikasyonu [ovarian hiperstimülasyon sendromu](/blog/tup-bebek-tedavisinde-yumurtalik-hiperstimulasyon-sendromu-ohss "OHSS") ve çoğul gebeliklerdir. Tedavi son derece titiz bir yakın kontrol altında ve konuya hakim hekimlerce yapılmalı.
 
 İkinci alternatif ise [laparoskopik](/blog/laparoskopi-nedir "laparoskopi nedir") diatermidir (LOD). Burada laparoskopi ile karın boşluğuna girilir. Yumurtalıklar koter ya da lazer ile yakılarak üzerlerinde küçük delikler açılır. Tedavinin mekanizması bilinmemekle birlikte düzenli yumurtlamayı sağladığı ve klomifene olan cevabı iyileştirdiği gözlendi.
 
