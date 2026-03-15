@@ -28,14 +28,16 @@ schema:
       url: "https://www.tupbebek.com/blog/akinti-kasinti-koku-mantar-mi-bakteriyel-vajinoz-mu/"
       name: "Akıntı, Kaşıntı, Koku: Mantar mı yoksa Bakteriyel Vajinoz mu? | Dr. Senai Aksoy İstanbul"
       description: "Dr. Senai Aksoy, İstanbul'daki kliniğinde vajinal mantar enfeksiyonu ve bakteriyel vajinoz arasındaki temel farkları, belirtileri ve modern tedavi yöntemlerini açıklıyor."
+      author: { id: "https://tupbebek.com/#physician" }
+      publisher: { id: "https://tupbebek.com/#organization" }
       inLanguage: tr-TR
-      author:
-        type: MedicalOrganization
-        name: Dr. Senai Aksoy
-        url: "https://www.tupbebek.com/"
-        location:
-          type: Place
-          name: "İstanbul, Türkiye"
+      about:
+        - type: MedicalCondition
+          name: "Vaginal candidiasis"
+          sameAs: "https://www.wikidata.org/wiki/Q1923483"
+        - type: MedicalCondition
+          name: "Bacterial vaginosis"
+          sameAs: "https://www.wikidata.org/wiki/Q812423"
     - type: ImageObject
       url: "https://www.tupbebek.com/src/images/blog/vajinal-enfeksiyon-karsilastirma-tablosu.jpg"
       caption: "Vajinal Mantar ve Bakteriyel Vajinoz Karşılaştırma Grafiği"

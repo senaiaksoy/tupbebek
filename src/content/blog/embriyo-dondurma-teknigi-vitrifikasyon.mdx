@@ -1,0 +1,119 @@
+---
+slug: embriyo-dondurma-teknigi-vitrifikasyon
+title: "Embriyo Dondurma Tekniği: Vitrifikasyon | Dr. Senai Aksoy"
+description: "Vitrifikasyon (hızlı dondurma) tekniği nedir? Yavaş dondurma ile farkları nelerdir? Başarı oranları ve teknik detaylar Dr. Senai Aksoy'un kaleminden."
+image: /src/images/blog/66.jpg
+date: 2013-01-15
+author: Dr. Senai Aksoy
+schema:
+  context: https://schema.org
+  graph:
+    - type: MedicalWebPage
+      id: "https://www.tupbebek.com/blog/embriyo-dondurma-teknigi-vitrifikasyon/#webpage"
+      url: "https://www.tupbebek.com/blog/embriyo-dondurma-teknigi-vitrifikasyon/"
+      name: "Embriyo Dondurma Tekniği: Vitrifikasyon | Dr. Senai Aksoy"
+      description: "Vitrifikasyon tekniği, dondurma solüsyonları yardımıyla ani ısı düşüşüyle hücre canlılığını korumayı hedefler. Daha yüksek canlılık oranları sunar."
+      author: { id: "https://tupbebek.com/#physician" }
+      publisher: { id: "https://tupbebek.com/#organization" }
+      inLanguage: tr-TR
+      about:
+        - type: MedicalProcedure
+          name: "Vitrification"
+          sameAs: "https://www.wikidata.org/wiki/Q910243"
+        - type: MedicalProcedure
+          name: "Cryopreservation"
+          sameAs: "https://www.wikidata.org/wiki/Q385556"
+    - type: BreadcrumbList
+      itemListElement:
+        - type: ListItem
+          position: 1
+          name: Ana Sayfa
+          item: "https://www.tupbebek.com/"
+        - type: ListItem
+          position: 2
+          name: Blog
+          item: "https://www.tupbebek.com/blog/"
+        - type: ListItem
+          position: 3
+          name: "Vitrifikasyon Tekniği"
+          item: "https://www.tupbebek.com/blog/embriyo-dondurma-teknigi-vitrifikasyon/"
+---
+
+import Accordion from "../../components/global/Accordion.astro";
+import MedicalInfoBox from '../../components/global/MedicalInfoBox.astro';
+import QuoteBlock from '../../components/global/QuoteBlock.astro';
+import JSONLD from '../../components/global/JSONLD.astro';
+import RevealScript from '../../components/global/RevealScript.astro';
+
+<div class="mesh-hero pt-12 pb-20 px-4 md:px-0 -mx-4 md:-mx-0 mb-12 rounded-3xl shadow-sm border border-white/40" style="background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #dbeafe 100%);">
+  <div class="max-w-4xl mx-auto" data-reveal>
+    <div class="inline-block px-4 py-1 rounded-full bg-blue-100 text-blue-700 text-sm font-bold mb-4">
+      Laboratuvar Teknolojileri
+    </div>
+    <h1 class="text-4xl md:text-6xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-800 leading-tight">
+      {frontmatter.title}
+    </h1>
+    <p class="text-xl md:text-2xl text-slate-700 font-medium max-w-2xl leading-relaxed">
+      Zamanı durdurma sanatı: Vitrifikasyon ile biyolojik saati en güvenli şekilde askıya alıyoruz.
+    </p>
+  </div>
+</div>
+
+<div class="max-w-4xl mx-auto space-y-12 blog-content-reveal">
+
+<div data-reveal>
+<MedicalInfoBox title="Hızlı Özet: Vitrifikasyon" icon="❄️" color="blue">
+**Vitrifikasyon**, hücrelerin ultra-hızlı (1.000°C/dk üzeri) soğutularak buz kristali oluşmadan cam benzeri bir yapıya dönüştürülmesidir. Geleneksel "yavaş dondurma" yöntemine göre hücre canlılık oranlarını %90-95 seviyelerine çıkarmış, tüp bebekte "Freeze-All" gibi devrimsel stratejilerin önünü açmıştır.
+</MedicalInfoBox>
+</div>
+
+<div data-reveal class="prose prose-slate max-w-none text-lg">
+İnsan hücrelerinin kriyoprezervasyonu (dondurulması) yardımcı üreme teknikleri alanında çok önemli bir rol oynamaktadır. Hücre dondurmasında iki temel teknik tanımlanmıştır: 'Yavaş kontrollü dondurma' ve 'Vitrifikasyon'. Modern laboratuvarlarda artık altın standart **Vitrifikasyon**'dur.
+</div>
+
+<div data-reveal>
+<div class="glass p-8 rounded-3xl border border-blue-100 shadow-sm mt-6">
+<h3 class="text-xl font-bold mb-6 text-blue-800">📊 Teknik Karşılaştırma</h3>
+
+| Parametre | Yavaş Dondurma | Vitrifikasyon (Hızlı) |
+| :--- | :--- | :--- |
+| **Süre** | ~3 Saat | ~10 Dakika |
+| **Buz Kristali** | Oluşabilir (Hücreye zarar verebilir) | Oluşmaz (Camlaşma) |
+| **Canlılık Oranı** | %70 - 80 | %90 - 95 |
+| **Maliyet** | Yüksek (Cihaz gerektirir) | Daha Ekonomik |
+</div>
+</div>
+
+<div data-reveal>
+<h2 id="mekanizma">Hücre Bütünlüğü Nasıl Korunur?</h2>
+
+Yavaş dondurma yönteminde hücre canlılığı, kademeli olarak soğutma esnasında hücre etrafında buz kristalleri oluşturularak sağlanırken, **vitrifikasyon** tekniğinde konsantrasyonu yüksek dondurma solüsyonları yardımıyla ani ısı düşüşüyle birlikte hücre etrafında cam bir katı yüzey oluşturularak korunmaya çalışılır.
+
+Bu sayede hücrelerin inkübatör dışında geçirdikleri süreç kısalır ve dış etkenlere maruz kalma riski minimize edilir.
+</div>
+
+<div data-reveal>
+<QuoteBlock author="Dr. Senai Aksoy">
+Vitrifikasyon, laboratuvarın başarısını garanti altına alan sessiz bir devrimdir. Artık embriyoları dondururken "Acaba çözününce yaşayacak mı?" endişesini büyük oranda geride bıraktık.
+</QuoteBlock>
+</div>
+
+<div data-reveal>
+## Vitrifikasyonda Başarı Parametreleri
+
+1.  **Hız:** Soğutma ve çözme hızı ultra-yüksek olmalıdır (10.000°C/dk).
+2.  **Konsantrasyon:** dondurma solüsyonlarının (kriyoprotektan) dengesi.
+3.  **Hacim:** Örnek hacminin çok küçük tutulması (mikrolitre düzeyinde).
+</div>
+
+<div data-reveal class="mt-12 pt-8 border-t border-slate-200 text-sm text-slate-500">
+## ⚖️ Yasal Uyarı
+**Son tıbbi revizyon tarihi: 24 Şubat 2026.**
+Bu içerik bilgilendirme amaçlıdır; tıbbi teşhis ve tedavi yerine kesinlikle geçmez. 
+© Doç. Dr. Senai Aksoy – Tüm hakları saklıdır.
+</div>
+
+</div>
+
+<JSONLD schema={frontmatter.schema} />
+<RevealScript />

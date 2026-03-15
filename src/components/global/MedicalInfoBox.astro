@@ -4,7 +4,7 @@
 const { title = "Özet", icon = "💡", color = "blue" } = Astro.props;
 ---
 
-<aside class={`info-box theme-${color}`} role="note" aria-label={title} data-ai-summary="true">
+<aside class={`info-box theme-${color} ai-summary`} role="note" aria-label={title} data-ai-summary="true">
   <div class="info-content-wrapper">
     <!-- Icon Container -->
     <div class="info-icon">

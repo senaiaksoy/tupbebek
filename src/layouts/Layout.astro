@@ -31,6 +31,8 @@ const pageTitle = [title, "Dr. Senai Aksoy"].filter(Boolean).join(" - ");
     <meta property="og:url" content={canonicalURL} />
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={description} />
+    <meta property="og:site_name" content="Dr. Senai Aksoy Tüp Bebek Merkezi" />
+    <meta property="og:locale" content="tr_TR" />
     <meta property="og:image" content="https://tupbebek.com/home-hero.webp" />
 
     <!-- Twitter -->
@@ -38,10 +40,12 @@ const pageTitle = [title, "Dr. Senai Aksoy"].filter(Boolean).join(" - ");
     <meta property="twitter:url" content={canonicalURL} />
     <meta property="twitter:title" content={pageTitle} />
     <meta property="twitter:description" content={description} />
+    <meta property="twitter:site" content="@SenaiAksoy" />
+    <meta property="twitter:creator" content="@SenaiAksoy" />
     <meta property="twitter:image" content="https://tupbebek.com/home-hero.webp" />
 
     <!-- AI/Bot Directives -->
-    <meta name="robots" content="max-image-preview:large" />
+    <meta name="robots" content="max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 
     <link rel="canonical" href={canonicalURL} />
     <link rel="alternate" hreflang="tr" href={canonicalURL} />

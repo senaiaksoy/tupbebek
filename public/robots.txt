@@ -26,4 +26,7 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
+User-agent: YouBot
+Allow: /
+
 Sitemap: https://tupbebek.com/sitemap-index.xml

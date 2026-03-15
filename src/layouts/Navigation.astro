@@ -14,13 +14,14 @@ const classNames = classnames(
 );
 ---
 
-<nav class={classNames} aria-label={ariaLabel} id={id} role={role}>
+<nav class={classNames} aria-label={ariaLabel} id={id} role="navigation">
   <ul>
     {
       nav.map((item) => (
         <li
           class={classnames(styles["list-item"], item.items ? styles.sub : "")}
           data-sub={item.items && item.items.length > 0 ? "true" : "false"}
+          aria-haspopup={item.items && item.items.length > 0 ? "true" : "false"}
           aria-expanded="false"
         >
           <a href={item.slug} class={styles["list-link"]}>
