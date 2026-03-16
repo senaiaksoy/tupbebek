@@ -1,8 +1,12 @@
-<Files "robots.txt">
+# Allow access to robots.txt and XML sitemaps
+<FilesMatch "^(robots\.txt|.*\.xml)$">
     Allow from all
-</Files>
+</FilesMatch>
 
-# Ensure robots.txt is not rewritten
+# Ensure robots.txt and sitemaps are not rewritten by other rules
 RewriteEngine On
-RewriteCond %{REQUEST_URI} ^/robots\.txt$ [NC]
+RewriteCond %{REQUEST_URI} ^/(robots\.txt|sitemap.*\.xml)$ [NC]
 RewriteRule ^ - [L]
+
+# Redirect sitemap.xml to sitemap-index.xml for compatibility
+RewriteRule ^sitemap\.xml$ /sitemap-index.xml [L,R=301]
