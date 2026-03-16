@@ -4,6 +4,17 @@ import classnames from "classnames";
 import { langs } from "../data/index.json";
 const { class: className = "mobile" } = Astro.props;
 
+const pathName = Astro.url.pathname;
+const cleanPath = pathName.replace(/\/$/, "");
+
+const getLangUrl = (lang: string) => {
+  if (lang === "tr") return `https://tupbebek.com${pathName}`;
+  if (lang === "en") return `https://draksoyivf.com${pathName}`;
+  if (lang === "fr") return pathName === "/" ? "https://draksoyivf.com/fr/" : `https://draksoyivf.com${cleanPath}-fr/`;
+  if (lang === "ar") return pathName === "/" ? "https://draksoyivf.com/ar/" : `https://draksoyivf.com${cleanPath}-ar/`;
+  return "#";
+};
+
 const classNames = classnames("languages", className);
 ---
 
@@ -11,13 +22,13 @@ const classNames = classnames("languages", className);
   <li>
     <Icon name="globe" />
   </li>
+  <li>
+    <a href={getLangUrl("tr")} title="Türkçe" class="active">TR</a>
+  </li>
   {
     langs.map((l) => (
       <li>
-        <a
-          href={`https://draksoyivf.com/${l.url === "en" ? "" : l.url + "/"}`}
-          title={l.name}
-        >
+        <a href={getLangUrl(l.url)} title={l.name}>
           {l.lang}
         </a>
       </li>
