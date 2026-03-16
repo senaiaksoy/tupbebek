@@ -40,6 +40,8 @@ const { Content } = await post.render();
             width={post.data.image.width}
             height={post.data.image.height}
             alt={post.data.title}
+            loading="eager"
+            fetchpriority="high"
             widths={[240, 540, 720, post.data.image.width]}
             sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${post.data.image.width}px`}
           />
