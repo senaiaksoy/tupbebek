@@ -94,6 +94,35 @@ export const successPageSchema = `<script type="application/ld+json">
   "author": {
     "@type": "Physician",
     "name": "Doç. Dr. Senai Aksoy"
+  },
+  "mainEntity": {
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Klinik seçimi başarıyı nasıl etkiler?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Laboratuvar donanımı, embriyolog tecrübesi ve kullanılan hava filtrasyon sistemleri gibi teknik detaylar, embriyo gelişimini ve dolayısıyla başarıyı doğrudan etkileyen unsurlardır."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "İlk denemem başarısız oldu, şansım azaldı mı?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Hayır. İlk deneme çoğu zaman hastanın vücut cevabını tanımak için önemli veriler sağlar. İkinci denemede bu veriler ışığında yapılan protokol değişiklikleri başarı şansını artırabilir."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Vitamin destekleri başarıyı artırır mı?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Hekim kontrolünde kullanılan folik asit, D vitamini ve bazen CoQ10 gibi takviyelerin yumurta/sperm kalitesi üzerinde olumlu etkileri olduğunu gösteren çalışmalar mevcuttur."
+        }
+      }
+    ]
   }
 }
 </script>`;

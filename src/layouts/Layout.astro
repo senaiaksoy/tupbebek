@@ -5,6 +5,7 @@ import "../styles/main.scss";
 import Footer from "./Footer.astro";
 import Header from "./Header.astro";
 import RevealScript from "../components/global/RevealScript.astro";
+import SchemaBreadcrumb from "../components/global/SchemaBreadcrumb.astro";
 
 interface Props {
   title: string;
@@ -64,6 +65,7 @@ const pageTitle = [title, "Dr. Senai Aksoy"].filter(Boolean).join(" - ");
     />
     <ViewTransitions />
     <Analytics />
+    <SchemaBreadcrumb />
   </head>
   <body class:list={[page]}>
     <Header />

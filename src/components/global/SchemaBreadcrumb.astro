@@ -1,0 +1,49 @@
+---
+const { url } = Astro;
+const pathSegments = url.pathname.split("/").filter(Boolean);
+
+const breadcrumbList = [
+  {
+    "@type": "ListItem",
+    "position": 1,
+    "name": "Ana Sayfa",
+    "item": "https://tupbebek.com/"
+  }
+];
+
+let currentPath = "https://tupbebek.com/";
+pathSegments.forEach((segment, index) => {
+  currentPath += `${segment}/`;
+  // Simple mapping for common segments to human names
+  const nameMap: Record<string, string> = {
+    "blog": "Blog",
+    "tedaviniz": "Tedaviniz",
+    "hizmetler": "Hizmetlerimiz",
+    "baslarken": "Başlarken",
+    "iletisim": "İletişim",
+    "hakkimizda": "Hakkımızda",
+    "dr-senai-aksoy": "Dr. Senai Aksoy"
+  };
+
+  // Convert kebab-case to Title Case if not in map
+  const name = nameMap[segment] || segment
+    .split("-")
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
+
+  breadcrumbList.push({
+    "@type": "ListItem",
+    "position": index + 2,
+    "name": name,
+    "item": currentPath
+  });
+});
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": breadcrumbList
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />

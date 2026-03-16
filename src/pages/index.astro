@@ -12,12 +12,16 @@ const homeSchema = {
   context: "https://schema.org",
   graph: [
     {
-      type: "MedicalOrganization",
+      type: "MedicalClinic",
       id: "https://tupbebek.com/#organization",
       name: "Dr. Senai Aksoy Tüp Bebek Merkezi",
       url: "https://tupbebek.com",
       logo: "https://tupbebek.com/sa.jpg",
       image: "https://tupbebek.com/home-hero.webp",
+      medicalSpecialty: [
+        "ObstetricsAndGynecology",
+        "ReproductiveEndocrinologyAndInfertility"
+      ],
       address: {
         type: "PostalAddress",
         streetAddress: "Lotus Nişantaşı, Halaskargazi Cd. No: 38-66, Kat 5, Office 92",
@@ -25,6 +29,11 @@ const homeSchema = {
         addressRegion: "İstanbul",
         postalCode: "34371",
         addressCountry: "TR"
+      },
+      geo: {
+        type: "GeoCoordinates",
+        latitude: 41.0506,
+        longitude: 28.9897
       },
       contactPoint: {
         type: "ContactPoint",
@@ -49,8 +58,13 @@ const homeSchema = {
       medicalSpecialty: "ObstetricsAndGynecology",
       memberOf: { "id": "https://tupbebek.com/#organization" },
       sameAs: [
-          "https://www.draksoyivf.com",
-          "https://www.linkedin.com/in/senaiaksoy/"
+        "https://www.draksoyivf.com",
+        "https://www.linkedin.com/in/senai-aksoy-bba69b36/",
+        "https://orcid.org/0000-0003-4110-5290",
+        "https://pubmed.ncbi.nlm.nih.gov/?term=Aksoy%2C+Senai%5BAuthor%5D",
+        "https://scholar.google.com/scholar?hl=tr&as_sdt=0%2C5&q=senai+aksoy",
+        "https://www.instagram.com/drsenaiaksoy/",
+        "https://www.youtube.com/SenaiAksoy"
       ]
     }
   ]
