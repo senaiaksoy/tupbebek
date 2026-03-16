@@ -15,7 +15,7 @@ image: /src/images/blog/tup_bebek_asamalari.jpg
 
 ---
 
-Tüp bebek tedavisi, özenle bestelenmiş bir senfoni gibidir. Cerrahpaşa Tıp Fakültesi'nden Fransa Franche-Comté Üniversitesi'ne uzanan eğitim hayatım ve 30 yılı aşan klinik deneyimimde **10.000'den fazla doğumla** sayısız ailenin mutluluğuna şahit oldum. Kısırlık tedavisi bir umutsuzluk değil, doğru bilimin sıcak bir kalple buluştuğu yepyeni bir başlangıçtır.
+Tüp bebek tedavisi, özenle bestelenmiş bir senfoni gibidir. Cerrahpaşa Tıp Fakültesi'nden Fransa Franche-Comté Üniversitesi'ne uzanan eğitim hayatım ve 30+ yıllık klinik deneyimimde **10.000'den fazla doğumla** sayısız ailenin mutluluğuna şahit oldum. Kısırlık tedavisi bir umutsuzluk değil, doğru bilimin sıcak bir kalple buluştuğu yepyeni bir başlangıçtır.
 
 Bu "ruhlu bilim" yolculuğunda sizi neler bekliyor, adım adım inceleyelim.
 

@@ -6,7 +6,7 @@ image: /src/images/blog/70.jpg
 date: 2025-11-27
 ---
 
-Dondurulmuş embriyo transferi (DET) için üç ana hazırlık yöntemi vardır: **Doğal siklus (NC-FET)**, **Yapay hormonlu siklus (AC-FET)** ve **Letrozol destekli siklus (L-FET)**. Literatürde bu protokoller arasında genel [gebelik oranlarında fark bulunmamakla birlikte](https://www.frontiersin.org/journals/endocrinology/articles/10.3389/fendo.2021.677689/full#:~:text=Nonetheless%2C%20based%20on%20previous%20studies,7%2C%208), seçilecek yöntem hasta özelliklerine göre değişir. Örneğin PCOS’lu veya yüksek OHSS riski taşıyan hastalarda letrozol siklusları daha yüksek canlı doğum şansı ve [daha az komplikasyon riski sunarken](https://rbej.biomedcentral.com/articles/10.1186/s12958-023-01154-x#:~:text=The%20results%20of%20multivariate%20logistic,Subgroup), düzenli adet gören genç hastalarda doğal siklus veya şartlara göre yapay siklus tercih edilebilir. 30 yıllık deneyimimle, her hastanın protokolünü kişiye özel belirlemek esastır.
+Dondurulmuş embriyo transferi (DET) için üç ana hazırlık yöntemi vardır: **Doğal siklus (NC-FET)**, **Yapay hormonlu siklus (AC-FET)** ve **Letrozol destekli siklus (L-FET)**. Literatürde bu protokoller arasında genel [gebelik oranlarında fark bulunmamakla birlikte](https://www.frontiersin.org/journals/endocrinology/articles/10.3389/fendo.2021.677689/full#:~:text=Nonetheless%2C%20based%20on%20previous%20studies,7%2C%208), seçilecek yöntem hasta özelliklerine göre değişir. Örneğin PCOS’lu veya yüksek OHSS riski taşıyan hastalarda letrozol siklusları daha yüksek canlı doğum şansı ve [daha az komplikasyon riski sunarken](https://rbej.biomedcentral.com/articles/10.1186/s12958-023-01154-x#:~:text=The%20results%20of%20multivariate%20logistic,Subgroup), düzenli adet gören genç hastalarda doğal siklus veya şartlara göre yapay siklus tercih edilebilir. 30+ yıllık deneyimimle, her hastanın protokolünü kişiye özel belirlemek esastır.
 
 📌 **Bu Yazıda Ne Öğreneceksiniz?**
 
@@ -93,7 +93,7 @@ Yukarıdaki özetten görüldüğü gibi, hiçbir yöntem her hasta için “oto
 
 - **Takvim Planlama veya Tıbbi Neden:** Tedavi sürecini bölmek isteyen, sürekli şehir dışına çıkması gereken veya gebelik öncesi fizik tedavi gibi ek desteğe ihtiyacı olan hastalar AC-FET ile esnek planlama yapabilir. Yapay siklus, transfer tarihini kesin bilme olanağı sunar.
 
-Her durumda **kişiye özel değerlendirme** şarttır. Ben 30 yılı aşkın klinik deneyimimde, doğru protokol seçiminde annenin yaşı, yumurtalık cevabı, endometrial durumu, deneyimli bir kadının sezgileri kadar bilimsel kanıtları da kullandım. Özetle: _“Her hasta benzersizdir”_; bu yüzden tedavi planı da benzersiz olmalıdır.
+Her durumda **kişiye özel değerlendirme** şarttır. Ben 30+ yıllık klinik deneyimimde, doğru protokol seçiminde annenin yaşı, yumurtalık cevabı, endometrial durumu, deneyimli bir kadının sezgileri kadar bilimsel kanıtları da kullandım. Özetle: _“Her hasta benzersizdir”_; bu yüzden tedavi planı da benzersiz olmalıdır.
 
 ## SSS: Ağrı, Güvenlik, PCOS
 

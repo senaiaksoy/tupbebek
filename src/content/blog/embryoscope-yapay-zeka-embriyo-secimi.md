@@ -35,7 +35,7 @@ Bu ileri teknoloji yaklaşımının amacı; en yüksek gebelik potansiyeline sah
 
 ## Giriş
 
-30 yıllık meslek hayatımda tüp bebek laboratuvarını hep bir **“kara kutu”ya** benzetmişimdir. Eskiden yumurtayla spermi bir araya getirir, onları o kutunun içine koyar ve ertesi sabah büyük bir merakla kapağını açıp *“Acaba içeride neler oldu?”* diye bakardık. Aslında bu durum, 90 dakikalık bir Galatasaray–Fenerbahçe maçının sadece **90. dakikadaki skor tabelasına** bakıp, maçın ne kadar çekişmeli geçtiğini anlamaya çalışmaya çok benzerdi.
+30+ yıllık meslek hayatımda tüp bebek laboratuvarını hep bir **“kara kutu”ya** benzetmişimdir. Eskiden yumurtayla spermi bir araya getirir, onları o kutunun içine koyar ve ertesi sabah büyük bir merakla kapağını açıp *“Acaba içeride neler oldu?”* diye bakardık. Aslında bu durum, 90 dakikalık bir Galatasaray–Fenerbahçe maçının sadece **90. dakikadaki skor tabelasına** bakıp, maçın ne kadar çekişmeli geçtiğini anlamaya çalışmaya çok benzerdi.
 
 Bugün ise tablo tamamen değişti. [**Time-lapse (zaman atlamalı) teknolojisi** ve **yapay zekâ** ](https://pubmed.ncbi.nlm.nih.gov/34521598/) sayesinde artık o maçın her saniyesini izleyebiliyor; hangi oyuncunun (yani hangi hücrenin) ne zaman, nasıl bir performans sergilediğini detaylı şekilde analiz edebiliyoruz.
 
@@ -283,4 +283,4 @@ Bizim görevimiz, en ileri bilimsel araçlarla şansınızı artırmak; sizin ih
 
 **Yayın Tarihi:** 20 Ocak 2026
 
-*Bu makale Doç. [Dr. Senai Aksoy](https://tupbebek.com/dr-senai-aksoy/) tarafından, 2025 yılına ait güncel bilimsel raporlar ve 30 yıllık klinik tecrübe ışığında bilgilendirme amaçlı yazılmıştır. Her hasta benzersizdir. Tüp bebek sonuçları birçok faktöre göre değişiklik gösterir. Kişisel durumunuz için daima bir uzmana danışın.*
+*Bu makale Doç. [Dr. Senai Aksoy](https://tupbebek.com/dr-senai-aksoy/) tarafından, 2025 yılına ait güncel bilimsel raporlar ve 30+ yıllık klinik tecrübe ışığında bilgilendirme amaçlı yazılmıştır. Her hasta benzersizdir. Tüp bebek sonuçları birçok faktöre göre değişiklik gösterir. Kişisel durumunuz için daima bir uzmana danışın.*

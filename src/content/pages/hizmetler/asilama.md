@@ -34,7 +34,7 @@ image: /src/images/blog/embryo_derecelendirme.jpg
 
 Çocuk sahibi olmak, hayatın en güzel isteklerinden biri. Sadece içgüdüsel bir şey değil; aile olmayı tamamlamak, bir öyküyü sürdürmek ve geleceğe dair en saf hayalleri kurmak demek. Ama bazen işler yolunda gitmeyebilir.
 
-**[Doç. Dr. Senai Aksoy](https://tupbebek.com/hakkimizda/) olarak 30 yıldır İstanbul'daki kliniğimde gözlemlediğim bir gerçek var:** Anne baba olma süreci sadece hastane ortamında değil, şefkatin, itimadın ve özenin olduğu bir yerde daha iyi sonuç verir. Benim kliniğime gelen birçok çiftin deneyimlediği şey de bu: Umut, bilgi, zaman ve sabır bir araya gelince güzel şeyler oluyor.
+**[Doç. Dr. Senai Aksoy](https://tupbebek.com/hakkimizda/) olarak 30+ yıldır İstanbul'daki kliniğimde gözlemlediğim bir gerçek var:** Anne baba olma süreci sadece hastane ortamında değil, şefkatin, itimadın ve özenin olduğu bir yerde daha iyi sonuç verir. Benim kliniğime gelen birçok çiftin deneyimlediği şey de bu: Umut, bilgi, zaman ve sabır bir araya gelince güzel şeyler oluyor.
 
 Günümüzdeki üreme tıbbı, doğanın yetersiz kaldığı durumlarda yardımcı olur. Bu konuda en bilinen ve sıkça başvurulan yöntemlerden biri de **İntrauterin İnseminasyon (IUI)**, yani **Aşılama** tedavisidir.
 
@@ -813,7 +813,7 @@ Aşılama tedavisinin en büyük artılarından biri, bütçe dostu olmasıdır.
 
 Aşılama (IUI), kısırlık tedavisinde ilk akla gelen, vücudu çok yormayan ve doğal yola en yakın yöntemlerden biridir. Çoğu çift için, ufak bir yardımla anne baba olma umudunu gerçeğe dönüştürebilir.
 
-Aşılama (IUI) kısırlık tedavisinde en çok tercih edilen yöntemlerden biri çünkü hem doğal yollara yakın, hem de çok karmaşık bir işlem değil. 30 yıllık tecrübem bana şunu öğretti: Ne kadar başarılı olma ihtimali olduğunu bilmek, işler yolunda gitmezse daha kolay başa çıkmanızı sağlar. Doğru kişiye doğru tedaviyi vermek, inanılmaz sonuçlar doğurabilir. Her olumsuz sonuç, başarısızlık demek değil; vücudunuzu daha iyi tanımak için bir fırsattır. Bazen, en güzel şeyler, en zorlu yollardan sonra gelir.
+Aşılama (IUI) kısırlık tedavisinde en çok tercih edilen yöntemlerden biri çünkü hem doğal yollara yakın, hem de çok karmaşık bir işlem değil. 30+ yıllık tecrübem bana şunu öğretti: Ne kadar başarılı olma ihtimali olduğunu bilmek, işler yolunda gitmezse daha kolay başa çıkmanızı sağlar. Doğru kişiye doğru tedaviyi vermek, inanılmaz sonuçlar doğurabilir. Her olumsuz sonuç, başarısızlık demek değil; vücudunuzu daha iyi tanımak için bir fırsattır. Bazen, en güzel şeyler, en zorlu yollardan sonra gelir.
 
 ---
 
