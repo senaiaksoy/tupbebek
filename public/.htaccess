@@ -1,0 +1,8 @@
+<Files "robots.txt">
+    Allow from all
+</Files>
+
+# Ensure robots.txt is not rewritten
+RewriteEngine On
+RewriteCond %{REQUEST_URI} ^/robots\.txt$ [NC]
+RewriteRule ^ - [L]

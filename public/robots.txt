@@ -1,7 +1,16 @@
 User-agent: *
 Allow: /
+Disallow: /.*
+Disallow: /node_modules/
 
-# AI Bot Governance
+# Primary Search Engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: bingbot
+Allow: /
+
+# AI Bot Governance (Explicit Permissions)
 User-agent: GPTBot
 Allow: /
 
@@ -20,7 +29,7 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-User-agent: OAI-Search
+User-agent: OAI-SearchBot
 Allow: /
 
 User-agent: PerplexityBot
