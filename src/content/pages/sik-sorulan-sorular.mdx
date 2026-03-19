@@ -119,7 +119,15 @@ export const faqs = [
   }
 ];
 
-const faqSchema = {
+# {frontmatter.title}
+
+{faqs.map((faq) => (
+  <Accordion title={faq.question}>
+    <p>{faq.answer}</p>
+  </Accordion>
+))}
+
+<JSONLD schema={{
   type: "FAQPage",
   mainEntity: faqs.map(faq => ({
     type: "Question",
@@ -129,14 +137,4 @@ const faqSchema = {
       text: faq.answer
     }
   }))
-};
-
-# {frontmatter.title}
-
-{faqs.map((faq) => (
-  <Accordion title={faq.question}>
-    <p>{faq.answer}</p>
-  </Accordion>
-))}
-
-<JSONLD schema={faqSchema} />
+}} />
