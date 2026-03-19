@@ -201,3 +201,6 @@ Merkezin başarısını ölçmek için sormanız gerekenler:
 Tüp bebek hakkıyla yapıldığında maliyeti oldukça yüksek olan bir uygulamadır. Bu nedenle çok ucuza uygulama vaad eden merkezlerden kaçının!
 
 Başarısız bir tedaviyi tekrarlamak size daha pahalıya mal olacaktır. Başarılı bir dondurma programı olan merkezlerde bir uygulama sonrasında birden fazla embryo transfer hakkınız doğabilir. Bu da bir ödeme sonrasında size birden fazla şans verilebileceği anlamına gelir.
+
+**Bize nasıl ulaşabilirsiniz?**
+Tüp bebek tedavisi ve randevu işlemleri için bize **+90 553 277 77 22** numaralı telefondan ulaşabilir veya iletişim sayfamızı ziyaret edebilirsiniz.
