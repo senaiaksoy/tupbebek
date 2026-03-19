@@ -130,10 +130,6 @@
                     "name": "Tedaviye Başlamadan Önce"
                 },
                 {
-                    "slug": "/sik-sorulan-sorular",
-                    "name": "Sık Sorulan Sorular"
-                },
-                {
                     "slug": "/tup-bebek-fiyatlari",
                     "name": "Tüp Bebek Fiyatları"
                 },
@@ -182,6 +178,10 @@
         {
             "slug": "/videolar",
             "name": "Videolar"
+        },
+        {
+            "slug": "/sik-sorulan-sorular",
+            "name": "Sık Sorulan Sorular"
         },
         {
             "slug": "/iletisim",
