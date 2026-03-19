@@ -126,6 +126,10 @@
             "name": "Başlarken",
             "items": [
                 {
+                    "slug": "/sik-sorulan-sorular",
+                    "name": "Sık Sorulan Sorular"
+                },
+                {
                     "slug": "/tedaviye-baslamadan-once",
                     "name": "Tedaviye Başlamadan Önce"
                 },
@@ -178,10 +182,6 @@
         {
             "slug": "/videolar",
             "name": "Videolar"
-        },
-        {
-            "slug": "/sik-sorulan-sorular",
-            "name": "Sık Sorulan Sorular"
         },
         {
             "slug": "/iletisim",
