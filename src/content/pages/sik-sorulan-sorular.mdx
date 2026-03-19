@@ -1,0 +1,148 @@
+---
+slug: sik-sorulan-sorular
+title: Tüp Bebek ile İlgili Sık Sorulan Sorular
+description: Tüp Bebek hakkında en sık sorulan sorular ve cevaplarını burada bulabilirsiniz.
+image: /src/images/40.jpgimport Accordion from "@components/global/Accordion.astro";
+import JSONLD from "@components/global/JSONLD.astro";
+
+export const faqs = [
+  {
+    question: "Kadınların doğurganlığını etkileyen faktörler nelerdir?",
+    answer: "En önemli faktör yaştır. Kadın yaşı arttıkça gebe kalabilme şansı azalır. 44 yaşından sonra pratik olarak gebelik şansı ihmal edilebilecek kadar azdır. Daha önce geçirilmiş cinsel yolla bulaşan enfeksiyonlar, yumurtalık ve tüpleri etkileyen enfeksiyonlar da gebelik şansını olumsuz olarak etkiler."
+  },
+  {
+    question: "Kadınlar ne sıklıkla jinekolojik muayene olmalılar?",
+    answer: "Cinsel olarak aktif olan kadınlarda jinekolojik muayeneler her yıl yapılmalıdır. Bu muayeneler ile beraber rahim ağzı kanseri taraması için PAP testi de yapılmalıdır."
+  },
+  {
+    question: "Miyomlar ve tüplerin tıkalı olması hamileliği etkiler mi?",
+    answer: "Miyomlar rahim iç tabakasına yani bebeğin gelişeceği yere baskı yapıyorsa gebelik şansını etkiler. Rahim duvarından dışarı doğru büyümüş olan miyomlar ise çok büyük olmadıkça gebelik şansını etkilemezler. Tüplerin tıkalı olması ise gebelik oluşumunu imkansız kılar."
+  },
+  {
+    question: "Düzenli bir beraberliğe rağmen çocuk sahibi olamayan çiftler, ne zaman tedaviye yönelmeliler?",
+    answer: "Kadın yaşı 37 nin altında ve öyküde gebelik oluşumunu etkiyebilecek herhangi bir problem yoksa 1 yıl, yaş 37 nin üzerinde veya geçmişte gebelik oluşumunu etkiyebilecek bir problem varsa 6 ay sonra inceleme ve tedavi başlanmalıdır."
+  },
+  {
+    question: "Tüp Bebek fiyatları nedir?",
+    answer: "Tüp bebek fiyatları merkezden merkeze değişir. Ancak burada unutulmaması gereken en önemli nokta sizin için en maliyetli tedavinin size olumlu sonuç vermeyen tedavi olduğudur. Bu nedenle tecrübesini kanıtlamış, en iyi tüp bebek merkezlerini seçmekte fayda var."
+  },
+  {
+    question: "Tüp bebek kaç yaşına kadar uygulanabilir? İleri yaştaki hastalar ne kadar beklemeli?",
+    answer: "Tüp bebek 44 yaşına kadar uygulanabilir. Ancak 42 yaşından sonra şansın az olduğu bilinmelidir."
+  },
+  {
+    question: "Mikroenjeksiyon nedir?",
+    answer: "Mikroenjeksiyon tek bir spermin yumurta içine zerk edilerek döllenmenin sağlandığı bir tüp bebek yöntemidir."
+  },
+  {
+    question: "Tüp bebek nedir?",
+    answer: "Mikroenjeksiyondan farklı olarak spermler belirli bir sayıda yumurtanın çevresine bırakılır ve spermlerden bir tanesi yumurtanın içine kendiliğinden girer."
+  },
+  {
+    question: "Mikroenjeksiyonun tüp bebek yönteminden farkı nedir?",
+    answer: "Mikroenjeksiyon erkek kısırlığında tüp bebek ise kadına ait kısırlıkta kullanılır."
+  },
+  {
+    question: "Tüp bebek veya mikroenjeksiyon kimlere uygulanır? Nasıl uygulanır?",
+    answer: "Gebe kalamayan ve klasik tedavi yöntemlerinin etkisiz olduğu durumlarda bu yöntemler uygulanır."
+  },
+  {
+    question: "Tüp bebek tedavisi aşamaları nelerdir?",
+    answer: "Yumurtalıkların uyarılması, yumurta toplanması, yumurtaların sperm ile döllenmesi ve döllenmiş yumurtaların nakli (embryo transferi) aşamalarından oluşur."
+  },
+  {
+    question: "Sperm tetkikinde sperm sayısının çok az olması veya sperm bulunmaması durumunda ne yapılmaktadır?",
+    answer: "Sperm sayısı az ise mikroenjeksiyon yapılır. Menide hiç sperm olmaması durumunda ise testis içinde cerrahi olarak sperm aranması gerekir."
+  },
+  {
+    question: "Tüp bebek tedavisinde yumurta nasıl toplanır? Ağrılı bir işlem midir?",
+    answer: "Vajinal ultrason ile genel veya lokal anestezi ile yumurta toplanır. Ağrılı bir işlem değildir."
+  },
+  {
+    question: "Tüp bebek tedavisinde yumurta toplama işlemi sonrasında kişi kendini nasıl hisseder?",
+    answer: "Genellikle işlemden bir süre sonra evine gidebilir ve hatta aynı gün öğleden sonra işine dönebilir."
+  },
+  {
+    question: "Bu tedaviler sonucu yumurtalık rezervi tükeniyor mu?",
+    answer: "Yumurtalıkların tüp bebek amaçlı uyarılması rezervi azaltmaz."
+  },
+  {
+    question: "Her yumurta döllenir mi?",
+    answer: "Yumurtaların döllenmesi için olgun ve yapısal olarak normal olmaları gerekir. Her yumurta döllenmeye müsait değildir. Döllenen her yumurta ise sağlıklı bir embryo haline dönüşmez."
+  },
+  {
+    question: "Yumurtalar döllendikten sonra embryolar rahim içine nasıl yerleştirilir?",
+    answer: "Embryo transferi basit bir işlemdir. Rahim ağzından ince bir plastik katater ile ultrason eşliğinde rahim içine yerleştirilir."
+  },
+  {
+    question: "Transfer sonrası arta kalan embryo olur mu? Olursa bunlara ne yapılır?",
+    answer: "Transfer sonrası arta kalan kaliteli embryolar dondurularak saklanabilir."
+  },
+  {
+    question: "Embryo seçimi nasıl yapılır? Çoğul gebelik nasıl önlenebiliyor?",
+    answer: "Sağlıklı embryolar taze transfer için seçilir. Kadının yaşına göre 1-2 embryo rahim içine yerleştirilir."
+  },
+  {
+    question: "Transfer sonrası istirahat edilmeli mi?",
+    answer: "İstirahatın faydası gösterilmiş değil. Normal yaşama devam edilmesini öneriyoruz."
+  },
+  {
+    question: "Transferden sonra kişi normal aktivitelerine ne zaman döner?",
+    answer: "Cinsel yaşam ve spor dışında normal aktivitelere transfer sonrasında hemen dönebilir."
+  },
+  {
+    question: "Tüp bebek tedavisinde kullanılan hormon ilaçları kanser riskini artırır mı?",
+    answer: "Kanser riskinde artış söz konusu değil. Yumurtalıkların aşırı uyarılması (hiperstimulasyon) en önemli risktir."
+  },
+  {
+    question: "Tüp bebek tedavisi ne kadar sürer?",
+    answer: "Tedavinin başından gebelik testi gününe kadar yaklaşık 30 gün sürer."
+  },
+  {
+    question: "Tüp bebek işleminde başarılı olma şansı nedir?",
+    answer: "Başarı kadının yaşına ve embryo kalitesine bağlıdır. 30 yaşın altında gebelik oranları %50 yi geçer ancak 40 yaşında sonra %10-15'lere düşer."
+  },
+  {
+    question: "Tüp bebek tedavisi süresince hastanede yatmak gerekli midir?",
+    answer: "İşlemin hiçbir aşamasında yatış gerekmez."
+  },
+  {
+    question: "Tüp bebek uygulamalarıyla elde edilen gebeliklerden doğan bebeklerle, normal doğan bebekler arasında fark var mı?",
+    answer: "Herhangi bir fark yok. Sadece testis içinde alınan spermlerin döllenme amaçlı kullanıldığı durumlarda az da olsa bazı anomalilerde artış olabiliyor."
+  },
+  {
+    question: "Bize nasıl ulaşabilirsiniz?",
+    answer: "Tüp bebek tedavisi ve randevu işlemleri için bize +90 553 277 77 22 numaralı telefondan ulaşabilir veya iletişim sayfamızı ziyaret edebilirsiniz."
+  }
+];
+
+const faqSchema = {
+  type: "FAQPage",
+  mainEntity: faqs.map(faq => ({
+    type: "Question",
+    name: faq.question,
+    acceptedAnswer: {
+      type: "Answer",
+      text: faq.answer
+    }
+  }))
+};
+
+# {frontmatter.title}
+
+<div class="faq-accordion-container">
+  {faqs.map((faq) => (
+    <Accordion title={faq.question}>
+      <p>{faq.answer}</p>
+    </Accordion>
+  ))}
+</div>
+
+<JSONLD schema={faqSchema} />
+
+<style>
+  .faq-accordion-container {
+    max-width: 900px;
+    margin: 2rem 0;
+  }
+</style>
