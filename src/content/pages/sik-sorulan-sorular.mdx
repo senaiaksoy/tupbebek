@@ -130,19 +130,10 @@ const faqSchema = {
 
 # {frontmatter.title}
 
-<div class="faq-accordion-container">
-  {faqs.map((faq) => (
-    <Accordion title={faq.question}>
-      <p>{faq.answer}</p>
-    </Accordion>
-  ))}
-</div>
+{faqs.map((faq) => (
+  <Accordion title={faq.question}>
+    <p>{faq.answer}</p>
+  </Accordion>
+))}
 
 <JSONLD schema={faqSchema} />
-
-<style>
-  .faq-accordion-container {
-    max-width: 900px;
-    margin: 2rem 0;
-  }
-</style>
