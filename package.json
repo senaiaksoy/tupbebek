@@ -6,6 +6,7 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro check && astro build",
+    "postbuild": "pagefind --site dist",
     "preview": "astro preview",
     "astro": "astro"
   },
@@ -19,6 +20,7 @@
   },
   "devDependencies": {
     "classnames": "^2.5.1",
+    "pagefind": "^1.4.0",
     "sass": "^1.71.1"
   }
 }

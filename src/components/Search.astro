@@ -1,0 +1,59 @@
+---
+---
+
+<div id="search" class="pagefind-ui"></div>
+
+<script is:inline>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    new PagefindUI({ 
+      element: "#search", 
+      showSubResults: true,
+      translations: {
+        placeholder: "Arama yapın...",
+        clear_search: "Temizle",
+        load_more: "Daha fazla sonuç yükle",
+        search_label: "Site içi arama",
+        filters_label: "Filtreler",
+        zero_results: "[SEARCH_TERM] için sonuç bulunamadı",
+        many_results: "[SEARCH_TERM] için [COUNT] sonuç bulundu",
+        one_result: "[SEARCH_TERM] için [COUNT] sonuç bulundu",
+        alt_search: "[SEARCH_TERM] için sonuç bulunamadı. Bunun yerine [DIFFERENT_TERM] için sonuçlar gösteriliyor",
+        search_suggestion: "[SEARCH_TERM] için sonuç bulunamadı. Şu terimlerden birini deneyebilirsiniz:",
+        searching: "[SEARCH_TERM] aranıyor..."
+      }
+    });
+  });
+</script>
+
+<style is:global>
+  :root {
+    --pagefind-ui-primary: #3d5a80;
+    --pagefind-ui-text: #293241;
+    --pagefind-ui-background: #ffffff;
+    --pagefind-ui-border: #e0e0e0;
+    --pagefind-ui-tag: #eeeeee;
+    --pagefind-ui-border-width: 1px;
+    --pagefind-ui-border-radius: 8px;
+    --pagefind-ui-image-border-radius: 4px;
+    --pagefind-ui-image-box-ratio: 3 / 2;
+    --pagefind-ui-font: sans-serif;
+  }
+
+  .pagefind-ui {
+    width: 100%;
+  }
+
+  .pagefind-ui .pagefind-ui__result-link {
+    color: var(--pagefind-ui-primary);
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .pagefind-ui .pagefind-ui__result-link:hover {
+    text-decoration: underline;
+  }
+
+  .pagefind-ui .pagefind-ui__search-input {
+    font-weight: 400 !important;
+  }
+</style>
