@@ -4,25 +4,30 @@
 <div id="search" class="pagefind-ui"></div>
 
 <script is:inline>
-  window.addEventListener('DOMContentLoaded', (event) => {
-    new PagefindUI({ 
-      element: "#search", 
-      showSubResults: true,
-      translations: {
-        placeholder: "Arama yapın...",
-        clear_search: "Temizle",
-        load_more: "Daha fazla sonuç yükle",
-        search_label: "Site içi arama",
-        filters_label: "Filtreler",
-        zero_results: "[SEARCH_TERM] için sonuç bulunamadı",
-        many_results: "[SEARCH_TERM] için [COUNT] sonuç bulundu",
-        one_result: "[SEARCH_TERM] için [COUNT] sonuç bulundu",
-        alt_search: "[SEARCH_TERM] için sonuç bulunamadı. Bunun yerine [DIFFERENT_TERM] için sonuçlar gösteriliyor",
-        search_suggestion: "[SEARCH_TERM] için sonuç bulunamadı. Şu terimlerden birini deneyebilirsiniz:",
-        searching: "[SEARCH_TERM] aranıyor..."
-      }
-    });
-  });
+  const initSearch = () => {
+    if (typeof PagefindUI !== 'undefined') {
+        new PagefindUI({ 
+            element: "#search", 
+            showSubResults: true,
+            translations: {
+                placeholder: "Arama yapın...",
+                clear_search: "Temizle",
+                load_more: "Daha fazla sonuç yükle",
+                search_label: "Site içi arama",
+                filters_label: "Filtreler",
+                zero_results: "[SEARCH_TERM] için sonuç bulunamadı",
+                many_results: "[SEARCH_TERM] için [COUNT] sonuç bulundu",
+                one_result: "[SEARCH_TERM] için [COUNT] sonuç bulundu",
+                alt_search: "[SEARCH_TERM] için sonuç bulunamadı. Bunun yerine [DIFFERENT_TERM] için sonuçlar gösteriliyor",
+                search_suggestion: "[SEARCH_TERM] için sonuç bulunamadı. Şu terimlerden birini deneyebilirsiniz:",
+                searching: "[SEARCH_TERM] aranıyor..."
+            }
+        });
+    }
+  };
+
+  window.addEventListener('DOMContentLoaded', initSearch);
+  document.addEventListener('astro:page-load', initSearch);
 </script>
 
 <style is:global>
