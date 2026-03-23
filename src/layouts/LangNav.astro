@@ -8,10 +8,10 @@ const pathName = Astro.url.pathname;
 const cleanPath = pathName.replace(/\/$/, "");
 
 const getLangUrl = (lang: string) => {
-  if (lang === "tr") return `https://tupbebek.com${pathName}`;
-  if (lang === "en") return `https://draksoyivf.com${pathName}`;
-  if (lang === "fr") return pathName === "/" ? "https://draksoyivf.com/fr/" : `https://draksoyivf.com${cleanPath}-fr/`;
-  if (lang === "ar") return pathName === "/" ? "https://draksoyivf.com/ar/" : `https://draksoyivf.com${cleanPath}-ar/`;
+  if (lang === "tr") return `https://tupbebek.com/`;
+  if (lang === "en") return `https://draksoyivf.com/`;
+  if (lang === "fr") return `https://draksoyivf.com/fr/`;
+  if (lang === "ar") return `https://draksoyivf.com/ar/`;
   return "#";
 };
 
