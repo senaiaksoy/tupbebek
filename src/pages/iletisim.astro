@@ -20,17 +20,17 @@ const email = contact.email;
 >
   <div class="page-background mesh-hero"></div>
 
-  <Section class="contact-header">
-    <Row>
+  <Row>
+    <Section class="contact-header">
       <div class="header-content">
         <Title size="large">İletişim</Title>
-        <p class="summary">Sorularınızı yanıtlamak ve her konuda sizlere yardımcı olmak için sabırsızlanıyoruz.</p>
+        <p class="contact-summary" style="text-align: center !important; width: 100%;">Sorularınızı yanıtlamak ve her konuda sizlere yardımcı olmak için sabırsızlanıyoruz.</p>
       </div>
-    </Row>
-  </Section>
+    </Section>
+  </Row>
 
-  <Section class="contact-container-section">
-    <Row>
+  <Row>
+    <Section class="contact-container-section">
       <div class="contact-container">
         <!-- Sidebar: Visit Us -->
         <aside class="contact-sidebar">
@@ -89,16 +89,16 @@ const email = contact.email;
           </div>
         </main>
       </div>
-    </Row>
-  </Section>
+    </Section>
+  </Row>
 
-  <Section class="contact-map-section">
-    <Row>
+  <Row>
+    <Section class="contact-map-section">
       <div class="map-wrapper">
         <Map />
       </div>
-    </Row>
-  </Section>
+    </Section>
+  </Row>
 
   <script>
     const copyBtn = document.getElementById('copy-email');
@@ -127,7 +127,11 @@ const email = contact.email;
   }
 
   .contact-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    width: 100%;
     padding-top: var(--spacing-large);
     padding-bottom: var(--spacing-medium);
     
@@ -137,19 +141,32 @@ const email = contact.email;
     }
     
     .header-content {
+      width: 100%;
       max-width: 800px;
       margin: 0 auto;
       padding-inline: var(--spacing-medium);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
     }
 
-    .summary {
+    .contact-summary {
       font-size: clamp(1rem, 1vw + 0.8rem, 1.4rem);
       color: var(--color-gray-60);
       margin-top: var(--spacing-small);
       line-height: 1.5;
       font-family: var(--font-secondary);
       font-style: italic;
+      text-align: center !important;
+      width: 100% !important;
     }
+  }
+
+  :global(.contact-header .title) {
+    text-align: center !important;
+    width: 100% !important;
+    margin-inline: auto !important;
   }
 
   .glass-card {
@@ -243,7 +260,7 @@ const email = contact.email;
       font-weight: 600;
       opacity: 0.8;
       
-      :global(.icon) {
+      .icon {
         color: var(--color-brand-primary, var(--color-primary, #33428a));
       }
     }
