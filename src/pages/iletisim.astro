@@ -1,11 +1,12 @@
 ---
 import Map from "@components/Map.astro";
 import Title from "@components/Title.astro";
-import Icon from "@icons/index.astro";
 import Layout from "@layouts/Layout.astro";
-import { contact } from "../data/index.json";
 
-import styles from "@styles/article.module.scss";
+import Section from "@components/Section.astro";
+import Row from "../components/home/Row.astro";
+import Icon from "@icons/index.astro";
+import { contact } from "../data/index.json";
 
 const phoneNumber = contact.phone;
 const whatsAppNumber = phoneNumber.replace(/\s/g, "");
@@ -17,85 +18,381 @@ const email = contact.email;
   title="Bize Ulaşın"
   description="Tedavinize hemen başlamak, randevu veya fiyat bilgisi almak için bize ulaşın."
 >
-  <article class={styles.article}>
-    <header class={styles.header}>
-      <Title size="large">İletişim</Title>
-    </header>
+  <div class="page-background mesh-hero"></div>
 
-    <div class="contact-online">
-      <div>
-        <div class="icon whatsapp">
-          <Icon name="whatsapp" size="big" />
-        </div>
-
-        <Title size="small">
-          Direkt arayın veya WhatsApp'dan mesaj yazın:
-        </Title>
-
-        <a
-          href={`https://api.whatsapp.com/send?phone=${whatsAppNumber}&text=${whatsappMessage}`}
-        >
-          {phoneNumber}
-        </a>
+  <Section class="contact-header">
+    <Row>
+      <div class="header-content">
+        <Title size="large">İletişim</Title>
+        <p class="summary">Sorularınızı yanıtlamak ve her konuda sizlere yardımcı olmak için sabırsızlanıyoruz.</p>
       </div>
+    </Row>
+  </Section>
 
-      <div>
-        <div class="icon">
-          <Icon name="envelope" size="big" />
-        </div>
-        <Title size="small"
-          >Düşüncelerinizi paylaşmak veya diğer talepleriniz için:</Title
-        >
+  <Section class="contact-container-section">
+    <Row>
+      <div class="contact-container">
+        <!-- Sidebar: Visit Us -->
+        <aside class="contact-sidebar">
+          <div class="glass-card visit-card hover-glow">
+            <div class="icon-header">
+              <div class="icon-wrapper location">
+                <Icon name="map-pin" size="big" />
+              </div>
+              <Title size="small">Muayenehanemizi Ziyaret Edin:</Title>
+            </div>
+            <address>
+              Lotus Nişantaşı, Halaskargazi Mah., Halaskargazi Cad. No: 38-66, İç Kapı No: 92
+              <br />34371 Şişli / İstanbul, Türkiye
+            </address>
+            <a href="https://maps.app.goo.gl/Sshx9S2UvExZtYmB8" target="_blank" class="button secondary full-width">
+              <Icon name="navigation" size="big" />
+              Yol Tarifi Al
+            </a>
+          </div>
+        </aside>
 
-        <a href={`mailto: ${email}`}>{email}</a>
+        <!-- Main: Contact Info -->
+        <main class="contact-main">
+          
+          <div class="contact-group">
+            <div class="group-header">
+              <Icon name="whatsapp" size="medium" />
+              <span>WhatsApp Destek Hattı</span>
+            </div>
+            
+            <div class="contact-grid">
+              <div class="glass-card contact-item hover-glow">
+                <span class="label">Bize Yazın</span>
+                <a href={`https://api.whatsapp.com/send?phone=${whatsAppNumber}&text=${whatsappMessage}`} class="contact-link">
+                  {phoneNumber}
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-group">
+            <div class="group-header">
+              <Icon name="envelope" size="medium" />
+              <span>E-posta Adresimiz</span>
+            </div>
+            
+            <div class="glass-card contact-item email-item hover-glow">
+              <div class="email-content">
+                <span class="label">E-posta</span>
+                <a href={`mailto:${email}`} class="contact-link" id="email-text">{email}</a>
+              </div>
+              <button class="copy-button" id="copy-email" title="E-postayı Kopyala">
+                <Icon name="copy" size="medium" />
+              </button>
+            </div>
+          </div>
+        </main>
       </div>
-    </div>
+    </Row>
+  </Section>
 
-    <p>
-      Sorularınızı yanıtlamak, ve her konuda sizlere yardımcı olmak için
-      sabırsızlanıyoruz.
-    </p>
-    <p></p>
-    <Title size="small"> Sizi muayenehanemize bekliyoruz </Title>
-    <p>
-       Halaskargazi Mah., Halaskargazi Cad., Bina No: 38 -66, İç Kapı No: 92
-ŞİŞLİ/ İSTANBUL
-    </p>
-    <p></p>
-    <Map />
-  </article>
+  <Section class="contact-map-section">
+    <Row>
+      <div class="map-wrapper">
+        <Map />
+      </div>
+    </Row>
+  </Section>
+
+  <script>
+    const copyBtn = document.getElementById('copy-email');
+    const emailText = document.getElementById('email-text');
+
+    if (copyBtn && emailText) {
+      copyBtn.addEventListener('click', () => {
+        navigator.clipboard.writeText(emailText.innerText).then(() => {
+          copyBtn.classList.add('copied');
+          setTimeout(() => copyBtn.classList.remove('copied'), 2000);
+        });
+      });
+    }
+  </script>
 </Layout>
 
 <style lang="scss">
-  .contact-online {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: var(--spacing-medium);
-    grid-template-rows: 48px 1fr max-content;
-    border: 1px solid var(--color-gray-10);
-    border-radius: 4px;
-    padding: var(--spacing-medium);
+  .page-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+  }
 
-    & > div {
-      grid-row: span 3;
-      display: grid;
-      gap: var(--spacing-medium);
-      grid-template-rows: subgrid;
+  .contact-header {
+    text-align: center;
+    padding-top: var(--spacing-large);
+    padding-bottom: var(--spacing-medium);
+    
+    @media (min-width: 1024px) {
+      padding-top: var(--spacing-xlarge);
+      padding-bottom: var(--spacing-large);
+    }
+    
+    .header-content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding-inline: var(--spacing-medium);
     }
 
-    .icon {
+    .summary {
+      font-size: clamp(1rem, 1vw + 0.8rem, 1.4rem);
+      color: var(--color-gray-60);
+      margin-top: var(--spacing-small);
+      line-height: 1.5;
+      font-family: var(--font-secondary);
+      font-style: italic;
+    }
+  }
+
+  .glass-card {
+    background: var(--glass-bg, rgba(255, 255, 255, 0.7));
+    backdrop-filter: var(--glass-blur, blur(10px));
+    -webkit-backdrop-filter: var(--glass-blur, blur(10px));
+    border: 1px solid var(--glass-border, rgba(0, 0, 0, 0.05));
+    box-shadow: var(--glass-shadow, 0 8px 32px rgba(0, 0, 0, 0.05));
+    border-radius: 20px;
+  }
+
+  .contact-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-large);
+    margin-bottom: var(--spacing-large);
+    padding-inline: var(--spacing-medium);
+
+    @media (min-width: 1024px) {
+      grid-template-columns: 350px 1fr;
+      align-items: start;
+      gap: var(--spacing-xlarge);
+      margin-bottom: var(--spacing-xlarge);
+      padding-inline: 0;
+    }
+  }
+
+  .contact-sidebar {
+    @media (min-width: 1024px) {
+      position: sticky;
+      top: 100px;
+    }
+  }
+
+  .visit-card {
+    padding: var(--spacing-medium);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-small);
+    text-align: left;
+
+    @media (min-width: 768px) {
+      padding: var(--spacing-large);
+      gap: var(--spacing-medium);
+    }
+
+    .icon-header {
       display: flex;
       align-items: center;
-      justify-content: center;
-      width: 48px;
-      height: 48px;
-      border-radius: 50%;
-      background-color: #222;
-      color: #fff;
+      gap: var(--spacing-medium);
+      margin-bottom: var(--spacing-xsmall);
+    }
 
-      &.whatsapp {
-        background-color: #4dc247;
+    address {
+      font-style: normal;
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--color-text, #333);
+      opacity: 0.9;
+      
+      @media (min-width: 768px) {
+        font-size: 1.1rem;
       }
     }
+  }
+
+  .contact-main {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-large);
+    
+    @media (min-width: 1024px) {
+      gap: var(--spacing-xlarge);
+    }
+  }
+
+  .contact-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-small);
+
+    @media (min-width: 768px) {
+      gap: var(--spacing-medium);
+    }
+
+    .group-header {
+      display: flex;
+      align-items: center;
+      gap: var(--spacing-small);
+      color: var(--color-brand-secondary, var(--color-secondary, #5a6db4));
+      font-weight: 600;
+      opacity: 0.8;
+      
+      :global(.icon) {
+        color: var(--color-brand-primary, var(--color-primary, #33428a));
+      }
+    }
+  }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-small);
+
+    @media (min-width: 540px) {
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: var(--spacing-medium);
+    }
+  }
+
+  .contact-item {
+    padding: var(--spacing-medium);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xsmall);
+    justify-content: center;
+    min-height: 80px;
+
+    @media (min-width: 768px) {
+       padding: var(--spacing-medium) var(--spacing-large);
+       min-height: 100px;
+    }
+
+    .label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--color-gray-60, #666);
+      font-weight: 500;
+      
+      @media (min-width: 768px) {
+        font-size: 0.85rem;
+      }
+    }
+
+    &.email-item {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--spacing-small);
+    }
+  }
+
+  .contact-link {
+    font-size: clamp(1rem, 1vw + 0.8rem, 1.3rem);
+    font-weight: 700;
+    color: var(--color-brand-secondary, var(--color-secondary, #5a6db4));
+    text-decoration: none;
+    transition: color 0.2s ease;
+    word-break: break-word;
+
+    &:hover {
+      color: var(--color-brand-primary, var(--color-primary, #33428a));
+    }
+  }
+
+  .icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    color: var(--color-brand-primary, var(--color-primary, #33428a));
+
+    @media (min-width: 768px) {
+      width: 54px;
+      height: 54px;
+      border-radius: 16px;
+    }
+
+    &.location {
+      background: var(--color-brand-secondary, var(--color-secondary, #5a6db4));
+      color: white;
+    }
+  }
+
+  .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-small);
+    padding: var(--spacing-medium);
+    border-radius: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+
+    &.secondary {
+      background: var(--color-brand-secondary, var(--color-secondary, #5a6db4));
+      color: white;
+      
+      &:hover {
+        opacity: 0.9;
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+
+  .copy-button {
+    background: transparent;
+    border: none;
+    color: var(--color-gray-60, #666);
+    cursor: pointer;
+    padding: var(--spacing-small);
+    border-radius: 8px;
+    transition: all 0.2s;
+    flex-shrink: 0;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.05);
+      color: var(--color-brand-primary, var(--color-primary, #33428a));
+    }
+
+    &.copied {
+      color: #4dc247;
+      background: rgba(77, 194, 71, 0.1);
+    }
+  }
+
+  .map-wrapper {
+    width: 100%;
+    height: 300px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    
+    @media (min-width: 768px) {
+      height: 450px;
+      border-radius: 24px;
+    }
+  }
+
+  .contact-map-section {
+    padding-bottom: var(--spacing-large);
+  }
+
+  .full-width {
+    width: 100%;
   }
 </style>
