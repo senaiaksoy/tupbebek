@@ -116,6 +116,11 @@ main {
       1fr
     );
   padding-block-end: var(--spacing-large);
+  padding-top: 60px; /* Header height offset */
+
+  @at-root body.home & {
+    padding-top: 0;
+  }
   // view-transition-name: main;
 }
 
