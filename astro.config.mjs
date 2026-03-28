@@ -11,4 +11,7 @@ export default defineConfig({
     domains: ["tupbebek.com", "img.youtube.com"],
     service: squooshImageService(),
   },
+  build: {
+    inlineStylesheets: "always",
+  },
 });
