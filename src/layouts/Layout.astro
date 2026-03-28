@@ -28,12 +28,13 @@ const pageTitle = [title, "Dr. Senai Aksoy"].filter(Boolean).join(" - ");
 <!doctype html>
 <html lang="tr">
   <head>
-    <meta charset="UTF-8" />
-    <title>{pageTitle}</title>
-    <meta name="description" content={description} />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Playfair:opsz,wght@5..1200,400;5..1200,700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
@@ -63,17 +64,88 @@ const pageTitle = [title, "Dr. Senai Aksoy"].filter(Boolean).join(" - ");
     <link rel="alternate" hreflang="ar" href={alternateAR} />
     <link rel="alternate" hreflang="x-default" href={alternateEN} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="stylesheet" href="/global.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Playfair:opsz,wght@5..1200,400;5..1200,700&display=swap"
-      rel="stylesheet"
-    />
-    <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
-    <script src="/pagefind/pagefind-ui.js" is:inline></script>
+    <style is:global>
+      /* Box sizing rules */
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      /* Remove default margin */
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      p,
+      figure,
+      blockquote,
+      dl,
+      dd {
+        margin-block-end: 0;
+      }
+
+      /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+      ul[role="list"],
+      ol[role="list"] {
+        list-style: none;
+      }
+
+      /* Set core root defaults */
+      html:focus-within {
+        scroll-behavior: smooth;
+      }
+
+      /* Set core body defaults */
+      body {
+        min-height: 100vh;
+        text-rendering: optimizeSpeed;
+        line-height: 1.5;
+      }
+
+      /* A elements that don't have a class get default styles */
+      a:not([class]) {
+        text-decoration-skip-ink: auto;
+      }
+
+      /* Make images easier to work with */
+      img,
+      picture {
+        max-width: 100%;
+        display: block;
+      }
+
+      /* Inherit fonts for inputs and buttons */
+      input,
+      button,
+      textarea,
+      select {
+        font: inherit;
+      }
+
+      /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+      @media (prefers-reduced-motion: reduce) {
+        html:focus-within {
+          scroll-behavior: auto;
+        }
+
+        *,
+        *::before,
+        *::after {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+          scroll-behavior: auto !important;
+        }
+      }
+
+      html {
+        height: 100%;
+      }
+    </style>
     <ViewTransitions />
-    <Analytics />
     <SchemaBreadcrumb />
   </head>
   <body class:list={[page]}>
@@ -84,6 +156,9 @@ const pageTitle = [title, "Dr. Senai Aksoy"].filter(Boolean).join(" - ");
     </main>
 
     <Footer />
+    <Analytics />
+    <link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
+    <script src="/pagefind/pagefind-ui.js" is:inline></script>
     <RevealScript />
   </body>
 </html>

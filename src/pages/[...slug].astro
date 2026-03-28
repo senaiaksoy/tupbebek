@@ -20,8 +20,27 @@ export async function getStaticPaths() {
 
   return [...page];
 }
+import JSONLD from "@components/JSONLD.astro";
 const { page } = Astro.props;
 const { Content } = await page.render();
+
+const pageSchema = {
+  context: "https://schema.org",
+  type: "MedicalWebPage",
+  name: page.data.title,
+  description: page.data.description,
+  url: Astro.url.href,
+  lastReviewed: "2024-03-24", // Assuming recent review
+  reviewedBy: {
+    type: "Physician",
+    name: "Dr. Senai Aksoy"
+  },
+  mainEntity: {
+    type: "MedicalProcedure",
+    name: page.data.title,
+    description: page.data.description
+  }
+};
 ---
 
 <Layout title={page.data.title} description={page.data.description}>
@@ -48,5 +67,6 @@ const { Content } = await page.render();
     }
 
     <Content />
+    <JSONLD schema={pageSchema} />
   </article>
 </Layout>
