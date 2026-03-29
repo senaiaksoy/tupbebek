@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Laboratuvar Teknolojileri | tupbebek.com</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-secondary-container": "#455361",
+              "on-error-container": "#752121",
+              "inverse-surface": "#0c0f10",
+              "primary": "#35618f",
+              "on-tertiary-fixed": "#1d5249",
+              "surface-dim": "#d1dce0",
+              "secondary-container": "#d6e4f5",
+              "tertiary-fixed-dim": "#baf0e4",
+              "error": "#9f403d",
+              "secondary-fixed": "#d6e4f5",
+              "on-tertiary-container": "#31645b",
+              "on-surface": "#2b3437",
+              "primary-dim": "#285582",
+              "surface-container-lowest": "#ffffff",
+              "tertiary-dim": "#285c53",
+              "surface-container-high": "#e3e9ec",
+              "on-tertiary": "#e3fff7",
+              "on-surface-variant": "#586064",
+              "primary-fixed": "#d2e4ff",
+              "on-primary-fixed": "#0d416e",
+              "error-dim": "#4e0309",
+              "error-container": "#fe8983",
+              "outline-variant": "#abb3b7",
+              "on-secondary-fixed-variant": "#4f5d6b",
+              "primary-container": "#d2e4ff",
+              "tertiary-container": "#c8fff2",
+              "on-secondary": "#f6f9ff",
+              "on-background": "#2b3437",
+              "inverse-on-surface": "#9b9d9e",
+              "outline": "#737c7f",
+              "secondary-fixed-dim": "#c7d6e7",
+              "tertiary-fixed": "#c8fff2",
+              "secondary-dim": "#475563",
+              "surface-container": "#eaeff1",
+              "surface-container-highest": "#dbe4e7",
+              "surface-container-low": "#f1f4f6",
+              "surface": "#f8f9fa",
+              "on-primary-container": "#275482",
+              "inverse-primary": "#92bcf0",
+              "on-primary-fixed-variant": "#325e8c",
+              "background": "#f8f9fa",
+              "on-tertiary-fixed-variant": "#3c6f65",
+              "secondary": "#53606f",
+              "on-error": "#fff7f6",
+              "surface-bright": "#f8f9fa",
+              "on-secondary-fixed": "#33414e",
+              "primary-fixed-dim": "#b9d7ff",
+              "surface-variant": "#dbe4e7",
+              "tertiary": "#35685e",
+              "on-primary": "#f5f7ff",
+              "surface-tint": "#35618f"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; }
+        h1, h2, h3 { font-family: 'Noto Serif', serif; }
+        .glass-nav { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(16px); }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-white/70 dark:bg-slate-900/70 backdrop-blur-md shadow-sm">
+<nav class="flex justify-between items-center w-full px-8 py-4 max-w-8xl mx-auto">
+<div class="text-2xl font-serif font-bold text-blue-900 dark:text-blue-100 tracking-tighter">tupbebek.com</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors font-body text-sm tracking-tight" href="#">Nedenler</a>
+<a class="text-blue-900 dark:text-blue-200 border-b-2 border-blue-900 dark:border-blue-200 pb-1 font-semibold font-body text-sm tracking-tight" href="#">Tedavi Yöntemleri</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors font-body text-sm tracking-tight" href="#">Tanı Süreci</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors font-body text-sm tracking-tight" href="#">Rehberler</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors font-body text-sm tracking-tight" href="#">SSS</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors font-body text-sm tracking-tight" href="#">Araştırma</a>
+</div>
+<div class="flex items-center space-x-4">
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer">search</span>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-xl text-sm font-medium transition-transform scale-95 active:opacity-80">Randevu Al</button>
+</div>
+</nav>
+<div class="bg-slate-100/50 dark:bg-slate-800/50 h-[1px] w-full"></div>
+</header>
+<main class="pt-32">
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-6 mb-24">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+<div class="md:col-span-7">
+<div class="inline-flex items-center px-3 py-1 bg-secondary-container text-on-secondary-container rounded-full text-xs font-bold mb-6 tracking-widest uppercase">
+                        Bilimsel İnceleme
+                    </div>
+<h1 class="text-5xl md:text-7xl font-headline text-on-surface leading-tight mb-8">Modern Embriyoloji Laboratuvar Teknolojileri</h1>
+<p class="text-lg text-on-surface-variant font-body leading-relaxed max-w-2xl">
+                        Üreme tıbbındaki son gelişmeler, laboratuvar ortamında embriyo gelişimini optimize eden ve seçim kriterlerini hassaslaştıran ileri teknolojileri beraberinde getirmiştir. Bu teknolojiler, canlı doğum oranlarını artırmayı ve sağlıklı gebelik süreçlerini desteklemeyi hedefler.
+                    </p>
+<div class="mt-8 flex items-center space-x-4 border-l-2 border-primary pl-6">
+<div class="flex-shrink-0 w-12 h-12 rounded-full overflow-hidden bg-surface-container">
+<img alt="Doç. Dr. Senai Aksoy" class="w-full h-full object-cover" data-alt="Canvas Image 8446996163648528547" src="https://lh3.googleusercontent.com/aida/ADBb0ugN2RuVVMBTzEJTPfxtQulYSkGH69a4rjWwlRTXUudsppZjdEvLwsQvxtvCbTWMDpOxAUOI190_uOza_LZY6tL-83dMmr6yWFfcO7ZOEIs9GgXHkBXocMUl-9I_X_6dZaPNmoXTjnkfJJ40lOQmtOv8hJfmqB_nr1e6Gz99xEylL89JdZJfHo8p3E8D25gQNwe0y7NmXisjemOihGp80KBs6V_KcFLQOucAkyhjrp5LRcjC1-irGpYU1nKFQrSmK7qxJ81dq1sdSw"/>
+</div>
+<div><p class="text-sm font-semibold text-on-surface">Doç. Dr. Senai Aksoy - Tıbbi İnceleme &amp; Bilimsel Onay</p></div>
+</div>
+</div>
+<div class="md:col-span-5">
+<div class="aspect-square rounded-full overflow-hidden bg-surface-container-high relative">
+<img alt="Microscope" class="w-full h-full object-cover grayscale mix-blend-multiply opacity-80" data-alt="Close-up of a high-tech medical microscope lens focusing on a laboratory specimen with blue ambient clinical lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkHSqWF6Z8z-zOTTig33UDKSj3fzQlRFFS_NHSInzl7_6FMKRWv8_nijRp3LiLMbQ805u2NzXtCC0HmDYCwsnhk0IIkBjnMX9lWXnqb3UxhPyLZfLc-ydCSbjBcmBUb8UVrBvsLI9rRRN6Qidog7akg4toRdjjinU4w9QeRnyEBX0iiDOfL4Tk5spF30eJe03FuS52_untCnTOyRlyEzlLsQUakyyfb6XpWIswtwhlaE6kjisHEVeGL2-wwoXj_3v870UtNkVa908"/>
+<div class="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Bento Grid Sections -->
+<section class="max-w-7xl mx-auto px-6 space-y-24 pb-32">
+<!-- ICSI -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div class="order-2 md:order-1 bg-surface-container-lowest p-8 rounded-xl shadow-sm border-l-4 border-primary">
+<h2 class="text-3xl font-headline text-on-surface mb-6">1. ICSI (İntrasitoplazmik Sperm Enjeksiyonu)</h2>
+<p class="text-on-surface-variant leading-relaxed mb-6">
+                        Özellikle şiddetli erkek faktörlü infertilitede devrim yaratan ICSI, geleneksel IVF yönteminden farklı olarak, tek bir sağlıklı spermin mikromanipülasyon araçları kullanılarak doğrudan oosit (yumurta) sitoplazmasına enjekte edilmesini içerir.
+                    </p>
+<ul class="space-y-4">
+<li class="flex items-start">
+<span class="w-2 h-2 bg-primary mt-2 mr-3 flex-shrink-0"></span>
+<span class="text-sm text-on-surface">Düşük sperm konsantrasyonu veya motilitesi durumlarında yüksek başarı oranı.</span>
+</li>
+<li class="flex items-start">
+<span class="w-2 h-2 bg-primary mt-2 mr-3 flex-shrink-0"></span>
+<span class="text-sm text-on-surface">Mikroskop altında morfolojik olarak en uygun spermin seçimi.</span>
+</li>
+</ul>
+</div>
+<div class="order-1 md:order-2">
+<div class="rounded-xl overflow-hidden shadow-2xl">
+<img alt="ICSI Procedure" class="w-full aspect-[4/3] object-cover" data-alt="Highly detailed microscopic view of an ICSI procedure showing the micro-needle injecting a single sperm cell into a human egg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxU7mm_nZY2Ag6An9u4xp7ef8VPk50qNGaXf46ZJIlf_Ce2CJ-NpG-zqPL2i3msNCjHx_Gzq-uBF_x779pT1wi-Y_pUx4po0n3HB9QgP117I4D-nBI7VUSjVbc0uWq4dxAnSCYqfw5gNVqigwZW1PDPRJCW3uUAg3sZWzONEVaXVMz5pxLj4dlXd4RWz1nu2AqP_dgRf8bNZZMpCD_72oGcDyieY51C1EpRQ6JMQ48Yo5u-3jhmxSWQFolh3sX5Se1dMXojOWLsUc"/>
+</div>
+</div>
+</div>
+<!-- Blastokist -->
+<div class="bg-surface-container-low rounded-[2rem] p-12 md:p-20 overflow-hidden relative">
+<div class="relative z-10 max-w-3xl">
+<h2 class="text-3xl font-headline text-on-surface mb-6">2. Blastokist Kültürü (5. Gün Transferi)</h2>
+<p class="text-on-surface-variant leading-relaxed mb-8">
+                        Embriyoların laboratuvar ortamında 5. veya 6. güne kadar takip edilmesi sürecidir. Bu aşamaya ulaşan embriyolara 'Blastokist' adı verilir. Blastokist transferi, rahim içi ortamla daha doğal bir senkronizasyon sağlar ve genetik olarak daha yetkin embriyoların seçilmesine olanak tanır.
+                    </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+<div class="bg-white/50 backdrop-blur-sm p-6 rounded-xl border border-white/20">
+<p class="font-bold text-primary text-xl mb-2">Seçilim Avantajı</p>
+<p class="text-xs text-on-surface-variant">Gelişim potansiyeli düşük olan embriyolar bu aşamaya ulaşamaz, böylece en sağlıklı olanlar belirlenir.</p>
+</div>
+<div class="bg-white/50 backdrop-blur-sm p-6 rounded-xl border border-white/20">
+<p class="font-bold text-primary text-xl mb-2">Senkronizasyon</p>
+<p class="text-xs text-on-surface-variant">Embriyonun rahim iç tabakasına (endometrium) tutunma zamanlaması ile biyolojik uyum optimize edilir.</p>
+</div>
+</div>
+</div>
+<div class="absolute right-0 top-0 h-full w-1/3 opacity-20 hidden lg:block">
+<img alt="Embryo development" class="h-full object-cover" data-alt="Microscopic time-lapse sequence of a human embryo dividing from two cells into a multicell blastocyst with soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPZljDWgxsACOrHm8yDQqDkMtKiTqL3CKmE359H76WMdgW9PZSNItRXmU98XfguGtQBsDtySUtSkqiNOZzqzGGs569Yq3VFSt1NZONGJf5ITMWIcbk58Q0-B-so9NDrOIBorO0NCqBeG6OHoJw8fDW5aPqOdKNB8QFvE5t_kMJyOSYnAjpnlsSEuNYnBmH3uTBiRi4k3-jqA8yNECEpY9hiujvpeLwpW9p_GCO4kJPONRRL4smVUMDambzOOLgDtEDa68HvmbdbYA"/>
+</div>
+</div>
+<!-- Time-Lapse & Laser -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-surface-container-high p-10 rounded-xl">
+<div class="flex items-center justify-between mb-8">
+<h3 class="text-2xl font-headline">3. Time-Lapse (Embryoscope)</h3>
+<span class="material-symbols-outlined text-primary text-3xl">videocam</span>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-6">
+                        Geleneksel yöntemde embriyolar kontrol edilmek üzere inkübatörden çıkarılır. Time-lapse teknolojisi ise inkübatör içindeki kameralar aracılığıyla embriyoların 7/24 izlenmesini sağlar. Bu sayede embriyolar ısı ve gaz değişimine maruz kalmadan, en detaylı bölünme verileriyle analiz edilir.
+                    </p>
+<div class="h-48 rounded-lg bg-surface-dim overflow-hidden">
+<img alt="Data visualization" class="w-full h-full object-cover opacity-50 grayscale" data-alt="Abstract medical data visualization and monitoring dashboard with glowing nodes and lines in a dark interface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBla5bgFoJJE4HX0Pg0waxCZMRi4nrWxQkiPzw3VhhcjxxMGMQ7Ade3Sj1XWlnuMVOvRWoSVYoE3luGu742Od1IAlXMzeVCPOavIidKak175KqPA0klWyZLwnGM-UTyAnATeu0FugSRv0NLcOXQFgeM9-jAqHW5Z6u5R0p2s2-H-QyulS7bHsVeoC5VWfqEXNp52UpCAv6g4B3l9CI4uu7jf0n8uFvlkEPaqgaPWiNXVuFBun4Q4KvlQoBl1LwSEcluQX6iaFl_3Mk"/>
+</div>
+</div>
+<div class="bg-primary text-on-primary p-10 rounded-xl relative overflow-hidden">
+<div class="flex items-center justify-between mb-8">
+<h3 class="text-2xl font-headline">4. Lazer ile Yardımcı Yuvalama (AH)</h3>
+<span class="material-symbols-outlined text-on-primary text-3xl">bolt</span>
+</div>
+<p class="text-sm opacity-90 leading-relaxed mb-6">
+                        Embriyoyu çevreleyen koruyucu tabakanın (zona pellucida) lazer yardımıyla hassas bir şekilde inceltilmesi işlemidir. Bu işlem, embriyonun transfer sonrası bu tabakadan daha kolay çıkmasını ve rahim duvarına tutunmasını kolaylaştırır.
+                    </p>
+<div class="absolute -bottom-10 -right-10 w-48 h-48 bg-white/10 rounded-full blur-3xl"></div>
+</div>
+</div>
+<!-- PGT -->
+<div class="flex flex-col md:flex-row bg-white border border-outline-variant/20 rounded-xl overflow-hidden shadow-lg">
+<div class="md:w-1/2 p-12">
+<h2 class="text-3xl font-headline text-on-surface mb-6">5. PGT (Preimplantasyon Genetik Test)</h2>
+<p class="text-on-surface-variant leading-relaxed mb-8">
+                        Transfer öncesinde embriyoların sayısal veya yapısal kromozom bozuklukları açısından incelenmesidir. Genetik olarak normal (euploid) bulunan embriyonun seçimi, düşük riskini azaltır ve tek seferde gebelik şansını maksimize eder.
+                    </p>
+<div class="space-y-6">
+<div class="flex items-center p-4 bg-surface-container-low rounded-lg">
+<span class="material-symbols-outlined text-tertiary mr-4">verified</span>
+<div>
+<p class="text-xs font-bold uppercase tracking-wider text-on-surface-variant">Endikasyon</p>
+<p class="text-sm font-semibold">İleri anne yaşı ve tekrarlayan gebelik kayıpları.</p>
+</div>
+</div>
+<div class="flex items-center p-4 bg-surface-container-low rounded-lg">
+<span class="material-symbols-outlined text-tertiary mr-4">genetics</span>
+<div>
+<p class="text-xs font-bold uppercase tracking-wider text-on-surface-variant">Yöntem</p>
+<p class="text-sm font-semibold">Trofektoderm biyopsisi ile embriyoya zarar vermeyen işlem.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="md:w-1/2 bg-surface-container relative">
+<img alt="Genetic testing" class="w-full h-full object-cover" data-alt="A clean sterile laboratory with DNA sequencing equipment and scientific charts on screens in a high-tech medical research facility" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnCKlJNSe7ctsZXd3AqgPGLRJjwddICd8Vopfir67oqxO61CbCyLMZQziSEUrdGR06U6zSpbXE2nFpQ4y07GGHCtl1ZSInwdliZ6mWcnd2Q0N1tM4zDzhZ12-Nf4oJSThiAoOzBju6dYLx5A4998PhfxC6c__PlhkpDh6AHB1MeD-0_sbk8XV5pvNR4KGJfUTDnfsE7hPC8H7LlYCL3G7sPBM5rgb__i7tZ5wTC2_6ZxlvEAU7e6Mhh3TL8Ia1MbIkP2J44RZWNHE"/>
+<div class="absolute inset-0 bg-primary/10"></div>
+</div>
+</div>
+</section>
+<!-- Informational Note -->
+<section class="bg-surface-container-lowest py-20 px-6">
+<div class="max-w-4xl mx-auto text-center">
+<p class="font-serif italic text-xl text-on-surface-variant leading-relaxed">
+                    "Tüm bu teknolojiler, embriyoların genetik potansiyelini değiştirmemekle birlikte, transfer için en doğru embriyonun seçilmesini ve laboratuvar koşullarının anne rahmini en iyi şekilde taklit etmesini sağlamak için tasarlanmıştır."
+                </p>
+<div class="mt-8 h-1 w-24 bg-primary mx-auto opacity-20"></div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950">
+<div class="flex flex-col items-center text-center py-12 px-6 space-y-4">
+<div class="font-serif font-bold text-lg text-slate-900 dark:text-slate-100">tupbebek.com</div>
+<p class="font-sans text-xs leading-relaxed opacity-80 text-slate-700 dark:text-slate-300 max-w-2xl">
+                © 2024 tupbebek.com. Tüm hakları saklıdır. Tıbbi İnceleme: Dr. Senai Aksoy. Bu site bilgilendirme amaçlıdır, tanı ve tedavi yerine geçmez.
+            </p>
+<div class="flex space-x-6">
+<a class="text-slate-500 dark:text-slate-500 hover:text-blue-700 dark:hover:text-blue-400 transition-colors text-xs" href="#">Gizlilik Politikası</a>
+<a class="text-slate-500 dark:text-slate-500 hover:text-blue-700 dark:hover:text-blue-400 transition-colors text-xs" href="#">Kullanım Koşulları</a>
+<a class="text-slate-500 dark:text-slate-500 hover:text-blue-700 dark:hover:text-blue-400 transition-colors text-xs" href="#">Künye</a>
+<a class="text-slate-500 dark:text-slate-500 hover:text-blue-700 dark:hover:text-blue-400 transition-colors text-xs" href="#">İletişim</a>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+
+<html class="light" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Klinik Küratör | Üreme Sağlığı Bilgisi</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-low": "#f1f4f6",
+              "secondary-fixed": "#d6e4f5",
+              "tertiary-dim": "#285c53",
+              "primary-dim": "#285582",
+              "tertiary-fixed": "#c8fff2",
+              "surface": "#f8f9fa",
+              "surface-container-high": "#e3e9ec",
+              "on-secondary": "#f6f9ff",
+              "inverse-surface": "#0c0f10",
+              "secondary": "#53606f",
+              "on-tertiary-container": "#31645b",
+              "primary-fixed-dim": "#b9d7ff",
+              "inverse-primary": "#92bcf0",
+              "tertiary-container": "#c8fff2",
+              "on-secondary-container": "#455361",
+              "on-error": "#fff7f6",
+              "primary-container": "#d2e4ff",
+              "outline-variant": "#abb3b7",
+              "secondary-container": "#d6e4f5",
+              "tertiary-fixed-dim": "#baf0e4",
+              "secondary-fixed-dim": "#c7d6e7",
+              "error-container": "#fe8983",
+              "background": "#f8f9fa",
+              "inverse-on-surface": "#9b9d9e",
+              "surface-tint": "#35618f",
+              "error-dim": "#4e0309",
+              "surface-variant": "#dbe4e7",
+              "tertiary": "#35685e",
+              "on-primary-container": "#275482",
+              "secondary-dim": "#475563",
+              "surface-bright": "#f8f9fa",
+              "on-primary": "#f5f7ff",
+              "on-tertiary": "#e3fff7",
+              "on-tertiary-fixed-variant": "#3c6f65",
+              "outline": "#737c7f",
+              "primary": "#35618f",
+              "error": "#9f403d",
+              "on-tertiary-fixed": "#1d5249",
+              "on-primary-fixed-variant": "#325e8c",
+              "on-surface-variant": "#586064",
+              "primary-fixed": "#d2e4ff",
+              "surface-container-highest": "#dbe4e7",
+              "on-surface": "#2b3437",
+              "on-error-container": "#752121",
+              "on-secondary-fixed": "#33414e",
+              "on-secondary-fixed-variant": "#4f5d6b",
+              "surface-container-lowest": "#ffffff",
+              "on-background": "#2b3437",
+              "on-primary-fixed": "#0d416e",
+              "surface-container": "#eaeff1",
+              "surface-dim": "#d1dce0"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        body { font-family: 'Manrope', sans-serif; }
+        h1, h2, h3 { font-family: 'Noto Serif', serif; }
+        .glass-nav {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full z-50 bg-slate-50/70 dark:bg-slate-900/70 backdrop-blur-md shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<div class="text-xl font-serif font-bold text-slate-800 dark:text-slate-100 tracking-tight">Klinik Küratör</div>
+<div class="hidden md:flex items-center space-x-6">
+<a class="text-blue-800 dark:text-blue-300 font-semibold border-b-2 border-blue-800 dark:border-blue-300 pb-1" href="/conditions">Sorunlar</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 transition-colors" href="/treatment-methods">Tedavi Yöntemleri</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 transition-colors" href="/diagnostics">Tanı Süreci</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 transition-colors" href="/guides">Rehberler</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 transition-colors" href="/research">Makaleler</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 transition-colors" href="/about-us">Hakkımızda</a>
+</div>
+<div class="flex items-center gap-4">
+<div class="relative hidden lg:block">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline">search</span>
+<input class="bg-surface-container-low border-none rounded-xl pl-10 pr-4 py-2 text-sm focus:ring-2 focus:ring-primary/30 w-48" placeholder="Araştırmalarda ara..." type="text"/>
+</div>
+<button class="p-2 hover:bg-slate-100/50 dark:hover:bg-slate-800/50 rounded-lg transition-all">
+<span class="material-symbols-outlined text-blue-800 dark:text-blue-300">account_circle</span>
+</button>
+</div>
+</div>
+<div class="bg-slate-200/50 dark:bg-slate-800/50 h-[1px]"></div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-8 mb-20">
+<div class="grid lg:grid-cols-2 gap-16 items-center py-20">
+<div class="order-2 lg:order-1">
+<h1 class="text-5xl lg:text-6xl font-headline text-on-surface leading-tight mb-8">
+                    Kanıta Dayalı <br/><span class="italic text-primary">Üreme Sağlığı Bilgisi</span>
+</h1>
+<p class="text-lg text-secondary leading-relaxed mb-10 max-w-xl">
+                    İnsan fertilitesi ve üreme bilimi hakkında hakemli klinik bulgular, teknolojik gelişmeler ve temel bilgilerden oluşan kapsamlı bir bilgi havuzu.
+                </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-on-primary px-8 py-3 rounded-xl font-medium hover:bg-primary-dim transition-colors">Sorunları İncele</button>
+<button class="border border-outline-variant/30 text-primary px-8 py-3 rounded-xl font-medium hover:bg-surface-container transition-colors">Metodolojimizi Okuyun</button>
+</div>
+</div>
+<div class="order-1 lg:order-2">
+<div class="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl relative">
+<img alt="temiz ve steril laboratuvar ortamında, mavi klinik ışıklandırma ve tıbbi camlar altında petri kabının mikroskobik yakın çekimi" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1JM1pc-wH6R-U2Uepewi0akcSPR5XYLjm5rqIk453Oimo9T_OmKi8M3DbUsTEsipuVaUpqYKxchzbabTCX9-BccIgs4KcKAjVoFgOy4OLZ79oapwztm5yglJFW_jyFZBFEHFKSWcAInzrCdSpHkPptkig9UYhgdvbuhPMyvn19Cm_4G6hC5FC6TcAHWyl2w_E9TbS4Cn8E5xnBW4OegwNkHbeWYDhYUcMtOB1ZEXz0RBMC_ce1ryJs7QfyWtuT2cllHGjE2eL2qU"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Bento Knowledge Grid -->
+<section class="bg-surface-container-low py-20">
+<div class="max-w-7xl mx-auto px-8">
+<div class="mb-12">
+<h2 class="text-3xl font-headline text-on-surface mb-4 text-center">Temel Eğitim</h2>
+<div class="h-1 w-16 bg-primary mx-auto rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 auto-rows-[300px]">
+<!-- Large Feature: Understanding Infertility -->
+<div class="md:col-span-8 md:row-span-2 bg-surface-container-lowest rounded-3xl p-10 flex flex-col justify-between group cursor-pointer overflow-hidden relative">
+<div class="relative z-10">
+<span class="text-primary font-label uppercase tracking-widest text-xs font-bold mb-4 block">Temeller</span>
+<h3 class="text-4xl font-headline text-on-surface mb-6 max-w-md">İnfertiliteyi Anlamak</h3>
+<p class="text-secondary max-w-md text-lg leading-relaxed">
+                            Gebe kalmanın önündeki fizyolojik ve hormonal engellere kapsamlı bir bakış. Bu bölüm tanı protokollerini, yaşa bağlı düşüşü ve çevresel faktörleri akademik bir netlikle ele almaktadır.
+                        </p>
+</div>
+<div class="mt-8 relative z-10">
+<span class="flex items-center text-primary font-semibold group-hover:gap-4 transition-all">
+                            Öğrenmeye Başla <span class="material-symbols-outlined ml-2">arrow_forward</span>
+</span>
+</div>
+<img alt="tıbbi büyüme ve ilerlemeyi temsil eden beyaz kavisli merdivenlerin ve yumuşak doğal gölgelerin soyut mimari minimalist görünümü" class="absolute -right-20 -bottom-20 w-2/3 opacity-10 group-hover:scale-105 transition-transform duration-700 pointer-events-none" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJeek37Gg1WY1OLCq8fyRdi8bGPYmiT2YVeDKIT4udRKxN4IbypXRat9zgTIdFjC2ftNT_m1FrUzrBAwRTo-QX-QbSJJkgbgmHNS6vXohAaT576aTV3xGa6eNG3vpYy3McoJ3j1AAEPssSuWdxhDn50iJCxkVIMvnuWWkFE7364wnUjPv0V_59xxt1uQHEOWEkdRzGgr8HWBOdgH8xApG50d6xJCr-gTjDaRU0v1fBehy1vDnTJF9vALR1OQ0Bs9VTJhvSMPLXlaE"/>
+</div>
+<!-- Medium Feature: Science of IVF -->
+<div class="md:col-span-4 bg-surface-container-highest rounded-3xl p-8 flex flex-col justify-between group cursor-pointer border border-transparent hover:border-primary/20 transition-all">
+<div>
+<span class="material-symbols-outlined text-primary mb-4" style="font-size: 32px;">biotech</span>
+<h3 class="text-2xl font-headline text-on-surface mb-4">IVF Bilimi</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                            Oosit toplama işleminden blastokist gelişimine kadar laboratuvar sürecinin detaylı incelenmesi.
+                        </p>
+</div>
+<span class="material-symbols-outlined self-end text-outline opacity-40 group-hover:opacity-100 transition-opacity">arrow_outward</span>
+</div>
+<!-- Medium Feature: Reproductive Health -->
+<div class="md:col-span-4 bg-primary text-on-primary rounded-3xl p-8 flex flex-col justify-between group cursor-pointer shadow-lg">
+<div>
+<span class="material-symbols-outlined text-on-primary/70 mb-4" style="font-size: 32px;">microbiology</span>
+<h3 class="text-2xl font-headline mb-4">Güncel Araştırmalar</h3>
+<p class="text-on-primary/80 text-sm leading-relaxed">
+                            Endometriyal reseptivite ve genetik tarama teknolojilerindeki son gelişmeler ve güncel başarı veri setlerinin keşfi.
+                        </p>
+</div>
+<span class="material-symbols-outlined self-end text-on-primary/50 group-hover:translate-x-1 transition-transform">east</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Content Section: Clinical Integrity -->
+<section class="py-24 max-w-7xl mx-auto px-8 overflow-hidden">
+<div class="flex flex-col lg:flex-row gap-20 items-center">
+<div class="lg:w-1/2">
+<div class="relative">
+<div class="absolute -top-10 -left-10 w-40 h-40 bg-secondary-container rounded-full opacity-30 blur-3xl"></div>
+<img alt="tıbbi hassasiyetle tek bir hücre yapısını gösteren bir laboratuvar mikroskop lamının yüksek kaliteli makro fotoğrafı" class="rounded-3xl shadow-xl relative z-10 border-[12px] border-surface-container-lowest" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqA45h7oBwJCkvFjUXmayTi8jWZkjEe3_r_oMB7uYcTPGLfU0NP5FLMqNC-Y8uH9LP19KzprCJy3xoEZ1spbgCuu6ZqYUW_fVjd7mgGPP3qtXuggAnVXsZipYJYC_PW4ZtnHlKUzlZcbPt_xZGVKoKmvIdnzoJcHHNfLdh2gWzWNDv8ChJGF5N4hk9_vyJ_Mo6ClHhM7J3WkhbxUtl7uhn7ChnGeXsjQvUDeVl_17DWQDNc-k5iIdVXcAGWXNBm7Krgt8maovKBu4"/>
+</div>
+</div>
+<div class="lg:w-1/2">
+<h2 class="text-3xl font-headline text-on-surface mb-8">Objektif Klinik Standartlar</h2>
+<div class="space-y-8">
+<div class="flex gap-6">
+<div class="h-10 w-10 shrink-0 bg-tertiary-container text-on-tertiary-container flex items-center justify-center rounded-xl">
+<span class="material-symbols-outlined">verified</span>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-2">Öncelikli Kanıt Metodolojisi</h4>
+<p class="text-secondary leading-relaxed">Bilgiler, kişisel önyargıların anlatıdan dışlanmasını sağlamak amacıyla yalnızca yüksek etkili tıp dergilerinden ve boylamsal çalışmalardan damıtılır.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="h-10 w-10 shrink-0 bg-secondary-container text-on-secondary-container flex items-center justify-center rounded-xl">
+<span class="material-symbols-outlined">menu_book</span>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-2">Tarafsız Dil Hiyerarşisi</h4>
+<p class="text-secondary leading-relaxed">İçerikler, duygusal veya tanıtım amaçlı söylemler yerine yapısal netlik ve bilimsel terminolojiyi önceliklendiren üçüncü şahıs bakış açısıyla oluşturulur.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="h-10 w-10 shrink-0 bg-primary-container text-on-primary-container flex items-center justify-center rounded-xl">
+<span class="material-symbols-outlined">science</span>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-2">Teknolojik Şeffaflık</h4>
+<p class="text-secondary leading-relaxed">ICSI, PGT-A ve kriyoprezervasyon gibi karmaşık prosedürler kimyasal ve biyolojik mekanizmaları üzerinden açıklanır.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Blog/Latest Articles Section -->
+<section class="bg-surface-container py-24">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex justify-between items-end mb-12">
+<div>
+<h2 class="text-3xl font-headline text-on-surface mb-4">Son Araştırmalar</h2>
+<p class="text-secondary">Üreme endokrinolojisi ve bilimindeki güncel yayınlar.</p>
+</div>
+<button class="hidden md:block text-primary font-semibold hover:underline">Bilimsel Arşivi Görüntüle</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Article 1 -->
+<article class="bg-surface-container-lowest rounded-2xl p-6 hover:shadow-lg transition-shadow">
+<div class="aspect-video rounded-xl overflow-hidden mb-6">
+<img alt="bilimsel veri analizi içeren dijital bir ekranı yüksek çözünürlükte gösteren modern tıbbi laboratuvar ekipmanı" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4vZfBF1CsrJjcRDex-X5jGOibdu5XNdSh9Qrqf8SZh8Sz5G9Xwq6kPgxSG3N-XkjRgy8de7AVU2Yy3PrXlw6X7MqOBWmzQtYWyQNEvhmqGQohbjIZe9qW7e7U2Oym4a9GH034ahAzVPL-Roq1oHNZx4uwXAFM7GrRGrrH2m3nrHmVWCDlClA4MymTu7DTk2moMrV4lmFfJmB3_Yh9EOGZTFiPuFCLBN1rvJhdXpwMbjisU6db0f1l2MRUBMeu2KgR4rgj0TsX9Zc"/>
+</div>
+<span class="text-xs font-label font-bold text-tertiary uppercase tracking-tighter mb-3 block">Moleküler Biyoloji</span>
+<h3 class="text-xl font-headline text-on-surface mb-4 line-clamp-2">Erkek Germ Hücre Stabilitesi Üzerindeki Çevresel Etkiler</h3>
+<p class="text-secondary text-sm mb-6 line-clamp-3">Partikül madde maruziyetinin spermatogenez sırasında epigenetik belirteçleri nasıl etkilediğini gösteren güncel çalışmaların incelemesi.</p>
+<div class="flex items-center gap-3 pt-6 border-t border-surface-variant">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center">
+<span class="material-symbols-outlined text-sm">edit</span>
+</div>
+<span class="text-xs text-on-surface-variant font-medium uppercase tracking-widest">Tıbbi İnceleme Kurulu</span>
+</div>
+</article>
+<!-- Article 2 -->
+<article class="bg-surface-container-lowest rounded-2xl p-6 hover:shadow-lg transition-shadow">
+<div class="aspect-video rounded-xl overflow-hidden mb-6">
+<img alt="biyolojik şemalar ve tıbbi görüntülemeye odaklanarak bir ışıklı panoda bilimsel verileri inceleyen bir doktor" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAo7NW04VtMot0rbHBHbyQqDFP2A7qtb6aWg3Z4tynG-KvLuI3ffYPPKzS2c4bdV731HGEclT61aK-OuXh9NRqtdDeidw4eCFbe41QDsvuYuUWU-sIJZQyDikISx7_xF9dHedSfhWn9TSxMiv_ueWGWITCFSi5jG87VvPrJHogLkVnhEgsdwn8wUQLHAb7YM6aw44xB3rjC02-CZHaLicYoPQYNb67BKDplkO8fFWbIqjU-Vxkgz18jOT55gxj_hz6IybiQgoOrBBY"/>
+</div>
+<span class="text-xs font-label font-bold text-tertiary uppercase tracking-tighter mb-3 block">Genetik</span>
+<h3 class="text-xl font-headline text-on-surface mb-4 line-clamp-2">Preimplantasyon Genetik Testlerdeki Gelişmeler</h3>
+<p class="text-secondary text-sm mb-6 line-clamp-3">İnvaziv olmayan PGT yöntemlerinin ve bunların geleneksel trofektoderm biyopsi tekniklerine karşı karşılaştırmalı doğruluğunun analizi.</p>
+<div class="flex items-center gap-3 pt-6 border-t border-surface-variant">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center">
+<span class="material-symbols-outlined text-sm">edit</span>
+</div>
+<span class="text-xs text-on-surface-variant font-medium uppercase tracking-widest">Tıbbi İnceleme Kurulu</span>
+</div>
+</article>
+<!-- Article 3 -->
+<article class="bg-surface-container-lowest rounded-2xl p-6 hover:shadow-lg transition-shadow">
+<div class="aspect-video rounded-xl overflow-hidden mb-6">
+<img alt="profesyonel bir ortamda beyaz yansıtıcı bir yüzey üzerinde düzgünce düzenlenmiş temiz tıbbi şişeler ve cam ekipmanlar" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0ipjPsd21OOMAa8MPNSCQ5G2yMGJN-ebmiE1kcTxwnbyz88kFBzsK6BbFIdM7wXyguatM0cbK1oI8mnNq9VgKxsz3ZajNBw6EcwTcpr5JrS45HJHbJkI_WDeg463q5YOMS5eM_7jJlVWWNoSYVBjLsJnpychJemaAUtuKhR_9nxmpG2AVPIZKfPMlwtzcUmLeXX4aAVyJl9Rgelu5OyALZpkc945zjrvdd6DcyUwUp6UvB50ZNV_hgRJbTjVWZj5mMFOQq0fE6hc"/>
+</div>
+<span class="text-xs font-label font-bold text-tertiary uppercase tracking-tighter mb-3 block">Farmakoloji</span>
+<h3 class="text-xl font-headline text-on-surface mb-4 line-clamp-2">Ovaryan Stimülasyonda Standartlaştırılmış Protokoller</h3>
+<p class="text-secondary text-sm mb-6 line-clamp-3">Antral folikül sayısı yüksek olan hastalarda OHSS riskini azaltmak için antagonist döngülerinde doz optimizasyonunun gelişimi.</p>
+<div class="flex items-center gap-3 pt-6 border-t border-surface-variant">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center">
+<span class="material-symbols-outlined text-sm">edit</span>
+</div>
+<span class="text-xs text-on-surface-variant font-medium uppercase tracking-widest">Tıbbi İnceleme Kurulu</span>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- Medical Reviewer Section -->
+<section class="py-20 bg-surface-container-low">
+<div class="max-w-3xl mx-auto px-8 text-center">
+<div class="mb-8">
+<img alt="profesyonel bir ortamda beyaz önlük giyen, gri saçlı kıdemli bir tıp uzmanının portresi" class="w-24 h-24 rounded-full mx-auto object-cover grayscale brightness-110 mb-6 border-4 border-surface-container-lowest shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHPxuFb-YOsSZZsDKsxEV1sdTKrpkxUiGxkWS70G1s5jRLWDmW8b-88bxvoPtgs6hilxVYwc3Y6B4vIcVTl0QrGhVO9crodkVrxNW6GjK6GDINZvoVbZraFtd_yg3xyc9duGfoO0v6Wr8xBQGtAriuNXS04sLBIsrXFn2_XIK2NmBWHQ9JsIvX-xNXYudzRhdjki1o8VUkubtn8dk_YFdPsHXEVnSGtbVvVbVzy3Jx2W5hbQnGoXAqL-n-qipcvWHKymUkpkuMGp8"/>
+<h3 class="text-xl font-headline text-on-surface">Dr. Senai Aksoy</h3>
+<p class="text-primary font-label uppercase tracking-widest text-xs font-bold mt-1">Tıbbi Editör</p>
+</div>
+<p class="text-secondary italic text-sm leading-relaxed">
+                Klinik Küratör platformundaki bilimsel doğruluk ve klinik dürüstlük, titiz bir editoryal denetimle sürdürülmektedir. Tüm makaleler, üreme tıbbındaki en son yayınlanmış konsensüs ile uyumu sağlamak amacıyla uzman tıp doktorları tarafından incelemeye tabidir.
+            </p>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-slate-200 dark:border-slate-800 mt-20 bg-slate-100 dark:bg-slate-950">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-8 py-12 max-w-7xl mx-auto gap-6">
+<div class="flex flex-col items-center md:items-start gap-4">
+<div class="font-serif italic text-lg text-slate-700 dark:text-slate-300">Klinik Küratör</div>
+<p class="text-xs font-sans tracking-wide uppercase text-slate-500 dark:text-slate-400">
+                © 2024 Klinik Küratör Bilimsel Yayın. Tıbbi Editör: Dr. Senai Aksoy. Tüm tıbbi bilgiler hakem denetiminden geçmiştir.
+            </p>
+</div>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors text-xs font-sans tracking-wide uppercase" href="/medical-disclosure">Tıbbi Sorumluluk Reddi</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors text-xs font-sans tracking-wide uppercase" href="/privacy-policy">Gizlilik Politikası</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors text-xs font-sans tracking-wide uppercase" href="/faq">SSS</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors text-xs font-sans tracking-wide uppercase" href="/editorial-process">Yayın Süreci</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors text-xs font-sans tracking-wide uppercase" href="/terms">Kullanım Koşulları</a>
+</div>
+</div>
+</footer>
+</body></html>

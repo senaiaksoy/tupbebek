@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+
+<html lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Tanı Süreci | tupbebek.com</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-dim": "#d1dce0",
+                        "secondary-container": "#d6e4f5",
+                        "secondary-fixed": "#d6e4f5",
+                        "tertiary-fixed-dim": "#baf0e4",
+                        "error": "#9f403d",
+                        "inverse-surface": "#0c0f10",
+                        "on-secondary-container": "#455361",
+                        "on-error-container": "#752121",
+                        "primary": "#35618f",
+                        "on-tertiary-fixed": "#1d5249",
+                        "on-tertiary": "#e3fff7",
+                        "on-surface-variant": "#586064",
+                        "on-primary-fixed": "#0d416e",
+                        "error-dim": "#4e0309",
+                        "primary-fixed": "#d2e4ff",
+                        "error-container": "#fe8983",
+                        "on-tertiary-container": "#31645b",
+                        "on-surface": "#2b3437",
+                        "primary-dim": "#285582",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-dim": "#285c53",
+                        "surface-container-high": "#e3e9ec",
+                        "on-background": "#2b3437",
+                        "inverse-on-surface": "#9b9d9e",
+                        "outline": "#737c7f",
+                        "secondary-fixed-dim": "#c7d6e7",
+                        "secondary-dim": "#475563",
+                        "tertiary-fixed": "#c8fff2",
+                        "surface-container": "#eaeff1",
+                        "surface-container-low": "#f1f4f6",
+                        "surface-container-highest": "#dbe4e7",
+                        "outline-variant": "#abb3b7",
+                        "primary-container": "#d2e4ff",
+                        "on-secondary-fixed-variant": "#4f5d6b",
+                        "tertiary-container": "#c8fff2",
+                        "on-secondary": "#f6f9ff",
+                        "secondary": "#53606f",
+                        "on-tertiary-fixed-variant": "#3c6f65",
+                        "surface-bright": "#f8f9fa",
+                        "on-secondary-fixed": "#33414e",
+                        "on-error": "#fff7f6",
+                        "surface-variant": "#dbe4e7",
+                        "primary-fixed-dim": "#b9d7ff",
+                        "tertiary": "#35685e",
+                        "surface-tint": "#35618f",
+                        "on-primary": "#f5f7ff",
+                        "surface": "#f8f9fa",
+                        "on-primary-container": "#275482",
+                        "inverse-primary": "#92bcf0",
+                        "background": "#f8f9fa",
+                        "on-primary-fixed-variant": "#325e8c"
+                    },
+                    fontFamily: {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    },
+                    borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Manrope', sans-serif;
+            color: #2b3437;
+            background-color: #f8f9fa;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Noto Serif', serif;
+        }
+        .editorial-shadow {
+            box-shadow: 0 20px 40px rgba(43, 52, 55, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-white/70 dark:bg-slate-900/70 backdrop-blur-md shadow-sm dark:shadow-none">
+<nav class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="font-noto-serif text-2xl font-bold text-slate-800 dark:text-slate-100">tupbebek.com</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 transition-colors font-noto-serif text-lg font-medium tracking-tight" href="#">İnfertilite Nedenleri</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 transition-colors font-noto-serif text-lg font-medium tracking-tight" href="#">Tedavi Yöntemleri</a>
+<a class="text-slate-900 dark:text-white border-b-2 border-slate-600 dark:border-slate-400 pb-1 font-noto-serif text-lg font-medium tracking-tight" href="#">Tanı Süreci</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 transition-colors font-noto-serif text-lg font-medium tracking-tight" href="#">Rehberler</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 transition-colors font-noto-serif text-lg font-medium tracking-tight" href="#">SSS</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 transition-colors font-noto-serif text-lg font-medium tracking-tight" href="#">Araştırma</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-slate-700 p-2 hover:bg-slate-50 rounded-lg">search</button>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-xl font-semibold hover:bg-primary-dim transition-all duration-300">Randevu Al</button>
+</div>
+</nav>
+<div class="bg-slate-100 dark:bg-slate-800 h-[1px] w-full"></div>
+</header>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-8 py-20">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div>
+<span class="text-primary font-semibold tracking-widest text-sm uppercase mb-4 block">Klinik Rehber</span>
+<h1 class="text-5xl lg:text-6xl font-bold text-on-surface leading-tight mb-6">
+                        İnfertilite Tanı Süreci: <span class="text-primary-dim">Adım Adım Yol Haritası</span>
+</h1>
+<p class="text-lg text-on-surface-variant leading-relaxed max-w-xl mb-8">
+                        Doğru tedavi, doğru teşhisle başlar. tupbebek.com olarak, tanı sürecinin her aşamasında bilimsel rigor ve hasta odaklı yaklaşımı birleştiriyoruz.
+                    </p>
+<div class="flex items-center gap-4 p-4 bg-surface-container rounded-xl inline-flex">
+<img alt="Dr. Senai Aksoy" class="w-12 h-12 rounded-full object-cover" data-alt="Professional medical portrait of Dr. Senai Aksoy in a clinical setting with soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0htLszidi4VTu-dtIxC1KMT6tbQaob2zOOKL2uAW14y7ExqIKcnn-4-HrkoS2buExISHOtQqGFGP9eAXmWKlUZ_9g0JKIggeCD7AdG-difUvFX7LNH_PW1a2Z_kk6B_RS-10v_9F0yytD8Dh2qtR_--PHabzLRMeOn4o5m6ze7kFypdcEscNXfS4CHsDL_0mrxluneKvbWzrEXoyx3HFPkOTct4owPf0Z9Zi63JwibUVCh_qoTc61eJiA5E9uyhhJ824xiRRrkls"/>
+<div>
+<p class="text-sm font-bold text-on-surface">Dr. Senai Aksoy</p>
+<p class="text-xs text-on-surface-variant uppercase tracking-tighter">Tıbbi İnceleme</p>
+</div>
+</div>
+</div>
+<div class="relative">
+<div class="aspect-[4/3] rounded-3xl overflow-hidden editorial-shadow bg-surface-container-low">
+<img alt="Medical Diagnosis Illustration" class="w-full h-full object-cover mix-blend-multiply opacity-90" data-alt="High-end medical illustration of a DNA strand and microscopic cells in a clean clinical blue aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrsygM-J93r0Mucttuh7WzxrH0qWv8jixlH24vIf03mXZ5svBqW-p3PaMcp1xsE8M_aoLyOr2stAxJ76Ap2eSJqYeOAAhRWaIIZTmqeU1ZruHrbtiaLAPnyXFgTQmtpJd0_C9b_aCoFlV5PfWyhOx3QO7dAQLiORk1pYPTQrYQVTNYBW43Tqs-OE_RKKfnDG99x6Isf1tF_jALJk-TQW-McwpFNTV8tLGR-EgRM-K2IkjLs_GPlMryQJzLsuT7X3pnZLopLOM7N3c"/>
+</div>
+<div class="absolute -bottom-6 -left-6 bg-surface-container-lowest p-6 rounded-2xl editorial-shadow max-w-xs border border-outline-variant/10">
+<p class="text-primary font-bold text-xl mb-1">98% Doğruluk</p>
+<p class="text-xs text-on-surface-variant font-medium uppercase tracking-wider leading-tight">Modern laboratuvar teknikleri ile kesin sonuçlar</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Process Timeline Section -->
+<section class="bg-surface-container-low py-24">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold text-on-surface mb-4">Tanı Yolculuğunuz</h2>
+<div class="w-24 h-1 bg-primary mx-auto rounded-full"></div>
+</div>
+<!-- Bento Grid Process -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Step 1: Initial Consultation -->
+<div class="md:col-span-2 bg-surface-container-lowest p-10 rounded-3xl editorial-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-4 mb-6">
+<span class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-bold">01</span>
+<h3 class="text-2xl font-bold">İlk Görüşme (Initial Consultation)</h3>
+</div>
+<p class="text-on-surface-variant leading-relaxed mb-6">
+                                Sürecin en kritik aşamasıdır. Doktorunuzla yapacağınız bu görüşmede, tıbbi geçmişiniz, yaşam tarzınız ve önceki denemeleriniz detaylıca analiz edilir. Bu aşama, kişiselleştirilmiş bir tanı planının temelini oluşturur.
+                            </p>
+<ul class="space-y-3 mb-8">
+<li class="flex items-center gap-3 text-sm font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Tıbbi Özgeçmiş Analizi
+                                </li>
+<li class="flex items-center gap-3 text-sm font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Fiziksel Muayene
+                                </li>
+<li class="flex items-center gap-3 text-sm font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Psikolojik Destek Planlaması
+                                </li>
+</ul>
+</div>
+<img alt="Consultation" class="rounded-2xl h-48 w-full object-cover" data-alt="Two healthcare professionals discussing medical records in a bright modern consultation room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBz5zl0yfVcGYBbrzvdbTO5dDPuIPH0mdY7MT8sn8DFl9JsLxFDLP6Fc03MgpgSNcEfvEwDy49DuZvqIV6bxXS4XF3P4lrl8e12YV0Xa--YwBFdPSwZcC4ZFC8qnT3MNfwKbr2lkWZawE8IHijZGZrdL0nrh2igA4Koeqyfy92yCt4XuPo5_cWbYj6f3kz1BamUGE5Kpc2QAjK9JywmygEPYsdNflnrurr-86f73WjgksBJ9estRHJ38FKS-_HUbSpukWn2b80Y58"/>
+</div>
+<!-- Step 2: Male Evaluation -->
+<div class="bg-surface-container-lowest p-10 rounded-3xl editorial-shadow">
+<div class="flex items-center gap-4 mb-6">
+<span class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold">02</span>
+<h3 class="text-2xl font-bold">Erkek Değerlendirmesi</h3>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-6">
+                            Erkek fertilitesi, infertilite vakalarının yaklaşık %40'ını oluşturur. Temel test olan Sperm Analizi (Spermiogram), Dünya Sağlık Örgütü (WHO) kriterlerine göre değerlendirilir.
+                        </p>
+<div class="bg-surface-container p-6 rounded-2xl mb-6">
+<h4 class="text-sm font-bold uppercase tracking-widest mb-3 text-primary">Analiz Parametreleri</h4>
+<div class="space-y-2">
+<div class="flex justify-between text-xs"><span>Sayı</span><span class="font-bold">15 Milyon+</span></div>
+<div class="flex justify-between text-xs"><span>Hareketlilik</span><span class="font-bold">%40+</span></div>
+<div class="flex justify-between text-xs"><span>Morfoloji</span><span class="font-bold">%4+ (Kruger)</span></div>
+</div>
+</div>
+<span class="material-symbols-outlined text-4xl text-primary/30">biotech</span>
+</div>
+<!-- Step 3: Female Evaluation -->
+<div class="md:col-span-3 grid grid-cols-1 lg:grid-cols-3 gap-8">
+<div class="bg-surface-container-lowest p-10 rounded-3xl editorial-shadow">
+<h4 class="text-xl font-bold mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">science</span> Hormon Testleri
+                            </h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">
+                                Adetin 2. veya 3. günü yapılan FSH, LH, Estradiol ve AMH testleri ile yumurtalık rezervi ve hormonal denge haritalanır.
+                            </p>
+</div>
+<div class="bg-surface-container-lowest p-10 rounded-3xl editorial-shadow">
+<h4 class="text-xl font-bold mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">magnification_small</span> HSG (Rahim Filmi)
+                            </h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">
+                                Kanalların (tüplerin) açıklığı ve rahim içi yapının hamileliğe uygunluğu, kontrast madde yardımıyla radyolojik olarak incelenir.
+                            </p>
+</div>
+<div class="bg-surface-container-lowest p-10 rounded-3xl editorial-shadow">
+<h4 class="text-xl font-bold mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">medical_services</span> Ultrasonografi
+                            </h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">
+                                Antral folikül sayımı ve uterus anatomisinin detaylı görselleştirmesi ile dinamik bir değerlendirme sağlanır.
+                            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Next Steps Section -->
+<section class="max-w-7xl mx-auto px-8 py-24">
+<div class="bg-primary rounded-[3rem] p-12 lg:p-20 text-on-primary relative overflow-hidden">
+<!-- Abstract Texture -->
+<div class="absolute top-0 right-0 w-1/2 h-full opacity-10">
+<img alt="Medical Texture" class="w-full h-full object-cover" data-alt="Microscopic view of cellular structures with soft glowing edges and professional clinical lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFZn0dqy1kpR6NKRqKAlLJ2WDACuPH0nx160--pAwNgfpUghdmOE3kPAyY8zbf3bE-iYibMEoXd_ddaTJMA0tVoGEuCmiFe8XSw-RXjkBCW0KTAUwcSPUWcsIAX-kramgTK5Gsh8Gh7BDiL2BITJ5qnncDcHTfLclqx9SomZpt3IB5FGC2KUOWvxFiX0UDzvaBYgspeg8tvtDDU-6JZitZfiVP0nt60Xw-mG6wqwtZSijssia5yqeNaX7gt3x1AvOK1G8KDLmDGoo"/>
+</div>
+<div class="relative z-10 max-w-2xl">
+<h2 class="text-4xl lg:text-5xl font-bold mb-6">Sonraki Adımlar</h2>
+<p class="text-lg opacity-90 mb-10 leading-relaxed">
+                        Tanı süreci tamamlandığında, elde edilen tüm veriler Dr. Senai Aksoy ve ekibimiz tarafından multidisipliner bir yaklaşımla değerlendirilir. Size özel tedavi protokolü (IVF, IUI veya İlaç Tedavisi) bu aşamadan sonra belirlenir.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-surface-container-lowest text-primary px-8 py-4 rounded-xl font-bold hover:bg-surface-bright transition-all">Tedavi Yöntemlerini İncele</button>
+<button class="border border-on-primary/30 text-on-primary px-8 py-4 rounded-xl font-bold hover:bg-on-primary/10 transition-all">Danışmanlık Al</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Scientific Citation -->
+<section class="max-w-7xl mx-auto px-8 pb-24">
+<div class="border-t border-outline-variant/20 pt-12">
+<div class="flex flex-col md:flex-row justify-between gap-8 items-start">
+<div class="max-w-md">
+<p class="font-label text-xs uppercase tracking-widest text-on-surface-variant mb-4">Referanslar &amp; Bilimsel Temel</p>
+<p class="text-xs text-on-surface-variant leading-loose italic">
+                            Bu sayfa; ESHRE (European Society of Human Reproduction and Embryology) ve ASRM (American Society for Reproductive Medicine) kılavuzları temel alınarak hazırlanmıştır. Tıbbi içerikler Dr. Senai Aksoy tarafından güncellenmektedir.
+                        </p>
+</div>
+<div class="flex gap-4">
+<div class="bg-surface-container px-4 py-2 rounded-lg text-xs font-bold text-primary">#ESHRE2024</div>
+<div class="bg-surface-container px-4 py-2 rounded-lg text-xs font-bold text-primary">#ASRM_GUIDELINES</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-10 w-full max-w-7xl mx-auto">
+<div class="mb-6 md:mb-0">
+<div class="font-noto-serif text-lg font-semibold text-slate-700 dark:text-slate-300 mb-2">tupbebek.com</div>
+<p class="font-manrope text-xs tracking-wide text-slate-600 dark:text-slate-400">© 2024 tupbebek.com. Tıbbi İnceleme: Dr. Senai Aksoy.</p>
+</div>
+<div class="flex gap-8">
+<a class="font-manrope text-xs tracking-wide text-slate-500 hover:text-slate-700 dark:hover:text-slate-300 transition-colors" href="#">Hakkımızda</a>
+<a class="font-manrope text-xs tracking-wide text-slate-500 hover:text-slate-700 dark:hover:text-slate-300 transition-colors" href="#">İletişim</a>
+<a class="font-manrope text-xs tracking-wide text-slate-500 hover:text-slate-700 dark:hover:text-slate-300 transition-colors" href="#">Gizlilik Politikası</a>
+<a class="font-manrope text-xs tracking-wide text-slate-500 hover:text-slate-700 dark:hover:text-slate-300 transition-colors" href="#">KVKK</a>
+</div>
+</div>
+</footer>
+</body></html>

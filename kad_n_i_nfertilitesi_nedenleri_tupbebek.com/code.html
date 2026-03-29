@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "secondary-container": "#d6e4f5",
+              "tertiary-fixed-dim": "#baf0e4",
+              "error": "#9f403d",
+              "secondary-fixed": "#d6e4f5",
+              "surface-dim": "#d1dce0",
+              "primary": "#35618f",
+              "on-secondary-container": "#455361",
+              "on-error-container": "#752121",
+              "inverse-surface": "#0c0f10",
+              "on-tertiary-fixed": "#1d5249",
+              "error-container": "#fe8983",
+              "primary-fixed": "#d2e4ff",
+              "on-primary-fixed": "#0d416e",
+              "error-dim": "#4e0309",
+              "on-tertiary": "#e3fff7",
+              "on-surface-variant": "#586064",
+              "surface-container-lowest": "#ffffff",
+              "primary-dim": "#285582",
+              "tertiary-dim": "#285c53",
+              "surface-container-high": "#e3e9ec",
+              "on-surface": "#2b3437",
+              "on-tertiary-container": "#31645b",
+              "tertiary-fixed": "#c8fff2",
+              "secondary-dim": "#475563",
+              "secondary-fixed-dim": "#c7d6e7",
+              "surface-container-highest": "#dbe4e7",
+              "surface-container-low": "#f1f4f6",
+              "surface-container": "#eaeff1",
+              "on-background": "#2b3437",
+              "inverse-on-surface": "#9b9d9e",
+              "outline": "#737c7f",
+              "on-secondary": "#f6f9ff",
+              "on-secondary-fixed-variant": "#4f5d6b",
+              "primary-container": "#d2e4ff",
+              "outline-variant": "#abb3b7",
+              "tertiary-container": "#c8fff2",
+              "tertiary": "#35685e",
+              "primary-fixed-dim": "#b9d7ff",
+              "surface-variant": "#dbe4e7",
+              "on-primary": "#f5f7ff",
+              "surface-tint": "#35618f",
+              "on-tertiary-fixed-variant": "#3c6f65",
+              "secondary": "#53606f",
+              "on-error": "#fff7f6",
+              "surface-bright": "#f8f9fa",
+              "on-secondary-fixed": "#33414e",
+              "on-primary-fixed-variant": "#325e8c",
+              "background": "#f8f9fa",
+              "surface": "#f8f9fa",
+              "on-primary-container": "#275482",
+              "inverse-primary": "#92bcf0"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            vertical-align: middle;
+        }
+        .editorial-content p {
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+        .editorial-content h2 {
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-md shadow-sm transition-colors duration-300 flex justify-between items-center px-8 h-16 max-w-full mx-auto">
+<div class="text-xl font-serif font-bold text-blue-900">
+            Clinical Curator
+        </div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-blue-900 border-b-2 border-blue-800 pb-1 font-semibold transition-all" href="#">Nedenler</a>
+<a class="text-slate-600 font-medium hover:text-blue-700 transition-all" href="#">Tedavi Yöntemleri</a>
+<a class="text-slate-600 font-medium hover:text-blue-700 transition-all" href="#">Tanı Süreci</a>
+<a class="text-slate-600 font-medium hover:text-blue-700 transition-all" href="#">Rehberler</a>
+<a class="text-slate-600 font-medium hover:text-blue-700 transition-all" href="#">SSS</a>
+<a class="text-slate-600 font-medium hover:text-blue-700 transition-all" href="#">Araştırma</a>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-blue-800" data-icon="account_circle">account_circle</span>
+</div>
+</nav>
+<main class="pt-32 pb-24">
+<!-- Hero Section -->
+<header class="max-w-5xl mx-auto px-8 mb-20">
+<div class="flex flex-col md:flex-row gap-12 items-start">
+<div class="flex-1">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-tertiary-container text-on-tertiary-container rounded-full text-xs font-semibold uppercase tracking-wider mb-6">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+                        Akademik Makale
+                    </div>
+<h1 class="font-headline text-5xl md:text-6xl text-on-surface leading-tight mb-8">
+                        Kadın İnfertilitesi: <span class="text-primary italic">Tıbbi Nedenler</span> ve Faktörler
+                    </h1>
+<div class="flex items-center gap-4 p-4 bg-surface-container-low rounded-xl border-l-4 border-primary">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-dim">
+<img class="w-full h-full object-cover" data-alt="professional portrait of a senior medical doctor in clinical attire with a calm and trustworthy expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzuPw-du23BUCUZaer63xoPP5sDNC9wRgkK1DwsWB3O6vnT-8lWBq5qkeu9yxBpw9PGSQ6jSaWUpHQ_eGb8_6A49IB04KNri2D2eJVwi1VxSo0cz1thMxSNGo0QrKRarQ290yQJ1xuUBWLkkkYbToHpKmIBgnjncyxPVj95l6UHfMjSWAuuuugKcTtIudEJE8r5B3qT9ZlAer1OvcjHhLX8_ttewpq1JLOl5BZC2lUk_f6tNrNuwsSlbRNiHEQz5PEdd3Y3nCshkE"/>
+</div>
+<div>
+<p class="font-headline italic text-on-surface text-sm">Tıbbi İnceleme:</p>
+<p class="font-bold text-primary">Dr. Senai Aksoy</p>
+</div>
+</div>
+</div>
+<div class="hidden md:block w-72 shrink-0 aspect-[4/5] bg-surface-container-highest rounded-2xl overflow-hidden shadow-long">
+<img class="w-full h-full object-cover grayscale opacity-80" data-alt="microscopic view of cellular biology showing intricate textures of reproductive cells in soft blue and violet lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbNG0AmIYaxQ7dyNpxA3TGrCmPK-6Mz3UUZeiTGyter931acpDJ1TA42IWBA_Pvp6ZTuy0ZatzaPe_WFVSHpOUpdfuKzsLcgE1q1LFg_sqtRI-pC_LlIq07hq2mTekGVRGZt7ZnLMHc3Q_IGqUAFMs9YCr0XFJZM4l2aAY-ju3WFO7JjYaNWxneKKAnwOXcJt21mkemsVYIdfUONuSUqqlD71Q_ElqLO62SRax6dlf4HMgWVZeUR8EbtDZlCCjjivzpS4vDUhUJFI"/>
+</div>
+</div>
+</header>
+<!-- Scientific Introduction -->
+<section class="max-w-3xl mx-auto px-8 mb-24 editorial-content">
+<p class="text-lg md:text-xl text-on-surface-variant leading-relaxed font-body italic mb-12">
+                Kadın fertilitesi, endokrin sistem, anatomik bütünlük ve hücresel yaşlanma arasındaki hassas bir dengenin ürünüdür. Üreme sağlığı, karmaşık biyolojik süreçlerin senkronize bir şekilde işlemesine dayanır.
+            </p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm border-t-2 border-primary-fixed">
+<span class="material-symbols-outlined text-primary mb-3" data-icon="ovulation">fertile</span>
+<h3 class="font-bold text-sm mb-2">Ovülasyon</h3>
+<p class="text-xs text-on-surface-variant mb-0">Hormonal döngülerin düzenliliği ve yumurta kalitesi.</p>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm border-t-2 border-primary-fixed">
+<span class="material-symbols-outlined text-primary mb-3" data-icon="account_tree">account_tree</span>
+<h3 class="font-bold text-sm mb-2">Anatomik Yapı</h3>
+<p class="text-xs text-on-surface-variant mb-0">Fallop tüpleri, uterus ve servikal kanalın geçirgenliği.</p>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-xl shadow-sm border-t-2 border-primary-fixed">
+<span class="material-symbols-outlined text-primary mb-3" data-icon="hourglass_empty">hourglass_empty</span>
+<h3 class="font-bold text-sm mb-2">Yaş Faktörü</h3>
+<p class="text-xs text-on-surface-variant mb-0">Oosit rezervinin niceliksel ve niteliksel değişimi.</p>
+</div>
+</div>
+<p>
+                İnfertilite, korunmasız düzenli cinsel ilişkiye rağmen bir yıl (35 yaş üstü kadınlarda 6 ay) içerisinde gebelik oluşmaması olarak tanımlanır. Bu süreçte kadın faktörü, vakaların yaklaşık üçte birinde birincil neden olarak karşımıza çıkmaktadır. Modern tıp, bu engellerin çoğunu tanımlayabilmekte ve kanıta dayalı yöntemlerle çözüm sunabilmektedir.
+            </p>
+</section>
+<!-- Section 1: Ovülasyon -->
+<section class="bg-surface-container-low py-24 mb-24">
+<div class="max-w-5xl mx-auto px-8">
+<div class="flex flex-col md:flex-row gap-16 items-center">
+<div class="md:w-1/2">
+<h2 class="font-headline text-3xl text-on-surface mb-6">1. Ovülasyon Bozuklukları</h2>
+<div class="space-y-6 editorial-content text-on-surface-variant">
+<p>Yumurtlama bozuklukları, kadın infertilitesinin en yaygın nedenidir ve vakaların yaklaşık %25'ini oluşturur. Bu durum, yumurtalıklardan yumurta salınımının seyrek olması veya hiç gerçekleşmemesi (anovülasyon) ile karakterizedir.</p>
+<div class="bg-white p-6 rounded-xl shadow-sm space-y-4">
+<div class="flex gap-4">
+<div class="w-1.5 h-1.5 rounded-full bg-primary mt-2"></div>
+<div>
+<h4 class="font-bold text-on-surface">Polikistik Over Sendromu (PCOS)</h4>
+<p class="text-sm">Vücutta aşırı miktarda androjen üretimi ile seyreden hormonal bir dengesizliktir.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-1.5 h-1.5 rounded-full bg-primary mt-2"></div>
+<div>
+<h4 class="font-bold text-on-surface">Hipotalamik Disfonksiyon</h4>
+<p class="text-sm">Aşırı stres, düşük vücut ağırlığı veya yoğun fiziksel aktivite sonucu FSH ve LH hormonlarının üretiminin aksamasıdır.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-1.5 h-1.5 rounded-full bg-primary mt-2"></div>
+<div>
+<h4 class="font-bold text-on-surface">Prematür Over Yetmezliği</h4>
+<p class="text-sm">Yumurtalıkların 40 yaşından önce yumurta üretimini durdurması (erken menopoz).</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md:w-1/2">
+<div class="relative group">
+<img class="rounded-2xl shadow-xl w-full" data-alt="abstract scientific visualization of hormonal cycles with soft glowing nodes and connecting fluid paths in shades of azure and silver" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMMZ24xbuk4qUOi-2v4j2TcqQ6cwVTdpi8tZ8jIlRj9r5aSRlf_iY4MF3UUdFuMzWs1CGqu2V8eLbIYxssD4J6ES9zyyWQq3wT9G0tSJ50V-pl8HNZl7IMoIol9HUNtBokovp6nMfeh3GZO4dQq7FJctPS_bPTyXLI_1jgvExAl6NXZ9x-a8nsgQb67ARYFhqCXEwBt26QkgesvbJNFx3T8LmYu8PD1NihXgnd7ElXwWmHPEEFOd-l7pGghQjbZ1SEF5qRHOvLH_Q"/>
+<div class="absolute -bottom-6 -right-6 bg-surface-container-highest p-4 rounded-lg hidden md:block">
+<p class="text-xs font-bold text-primary tracking-widest uppercase mb-1">Klinik Veri</p>
+<p class="text-2xl font-headline">25%</p>
+<p class="text-[10px] text-on-surface-variant">İnfertilite vakalarında payı</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Anatomik Faktörler -->
+<section class="max-w-5xl mx-auto px-8 mb-24">
+<h2 class="font-headline text-3xl text-on-surface text-center mb-16">2. Anatomik ve Yapısal Faktörler</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Tubal Issues -->
+<div class="bg-surface p-8 rounded-2xl border border-outline-variant/20 hover:bg-surface-container-low transition-colors">
+<div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary" data-icon="cable">cable</span>
+</div>
+<h3 class="font-headline text-xl mb-4">Tubal Faktörler</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">
+                        Hasar görmüş veya tıkanmış Fallop tüpleri, spermin yumurtaya ulaşmasını veya döllenmiş yumurtanın rahme geçişini engeller. Pelvik inflamatuar hastalıklar (PID) sıklıkla bu duruma yol açar.
+                    </p>
+</div>
+<!-- Endometriosis -->
+<div class="bg-surface p-8 rounded-2xl border border-outline-variant/20 hover:bg-surface-container-low transition-colors">
+<div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary" data-icon="layers">layers</span>
+</div>
+<h3 class="font-headline text-xl mb-4">Endometriozis</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">
+                        Rahim içini döşeyen dokunun rahim dışında (yumurtalıklar, tüpler) büyümesidir. Bu durum hem anatomik bozulmalara hem de yumurta kalitesini etkileyen inflamasyona neden olabilir.
+                    </p>
+</div>
+<!-- Uterine Factors -->
+<div class="bg-surface p-8 rounded-2xl border border-outline-variant/20 hover:bg-surface-container-low transition-colors">
+<div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary" data-icon="foundation">foundation</span>
+</div>
+<h3 class="font-headline text-xl mb-4">Uterin Faktörler</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">
+                        Rahimdeki polipler, miyomlar veya doğuştan gelen şekil bozuklukları, embriyonun tutunmasını (implantasyon) zorlaştırarak gebelik kaybına veya infertilitesine yol açabilir.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Section 3: Yaş ve Yaşam Tarzı -->
+<section class="max-w-3xl mx-auto px-8 editorial-content">
+<h2 class="font-headline text-3xl text-on-surface">3. Yaş ve Metabolik Sağlık</h2>
+<p>
+                Kadın infertilitesinde en belirleyici faktör biyolojik yaştır. Kadınlar sınırlı sayıda yumurta ile doğarlar ve bu rezerv yaş ilerledikçe hem sayıca azalır hem de kromozomal olarak kalitesi düşer. 35 yaşından itibaren bu süreç hızlanmakta, 40 yaş sonrasında ise doğal yollarla gebe kalma olasılığı belirgin şekilde minimize olmaktadır.
+            </p>
+<div class="my-12 p-8 bg-surface-container-high rounded-2xl">
+<h4 class="font-bold text-primary mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined" data-icon="health_metrics">health_metrics</span>
+                    Yaşam Tarzı ve Çevresel Etkenler
+                </h4>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-sm">
+<div class="space-y-2">
+<p class="font-semibold text-on-surface">Vücut Kitle İndeksi (VKİ):</p>
+<p class="text-on-surface-variant">Aşırı kilolu veya aşırı zayıf olmak normal ovülasyonu bozabilir.</p>
+</div>
+<div class="space-y-2">
+<p class="font-semibold text-on-surface">Toksik Maruziyet:</p>
+<p class="text-on-surface-variant">Sigara kullanımı oosit yaşlanmasını hızlandırır ve tubal hastalık riskini artırır.</p>
+</div>
+<div class="space-y-2">
+<p class="font-semibold text-on-surface">Metabolik Sağlık:</p>
+<p class="text-on-surface-variant">İnsülin direnci ve kronik stres kortizol seviyelerini etkileyerek üreme döngüsünü baskılar.</p>
+</div>
+<div class="space-y-2">
+<p class="font-semibold text-on-surface">Beslenme Düzeni:</p>
+<p class="text-on-surface-variant">Antioksidanlardan fakir beslenme, üreme hücrelerinde oksidatif strese yol açar.</p>
+</div>
+</div>
+</div>
+<p>
+                Sonuç olarak, kadın infertilitesi çok faktörlü bir durumdur. Çoğu durumda, birden fazla nedenin birleşimi söz konusudur. Doğru tanı ve zamanında müdahale, üreme başarısını optimize etmenin anahtarıdır. Modern tıbbi yaklaşımlar, bireyselleştirilmiş tedavi planları ile bu zorlukların üstesinden gelmeyi hedeflemektedir.
+            </p>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-slate-200 bg-slate-50">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 gap-6 max-w-7xl mx-auto">
+<div class="text-lg font-serif font-bold text-slate-700">
+                Clinical Curator
+            </div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="text-slate-500 hover:text-blue-600 transition-colors text-sm font-body" href="#">Medical Disclaimer</a>
+<a class="text-slate-500 hover:text-blue-600 transition-colors text-sm font-body" href="#">Editorial Policy</a>
+<a class="text-slate-500 hover:text-blue-600 transition-colors text-sm font-body" href="#">Privacy Policy</a>
+<a class="text-slate-500 hover:text-blue-600 transition-colors text-sm font-body" href="#">Contact</a>
+</div>
+<div class="text-slate-500 text-sm font-body text-center md:text-right">
+<p>© 2024 Clinical Curator. <span class="italic font-headline">Medical Reviewer: Dr. Senai Aksoy.</span></p>
+</div>
+</div>
+</footer>
+</body></html>

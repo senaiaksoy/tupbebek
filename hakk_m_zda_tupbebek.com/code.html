@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+
+<html lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-dim": "#d1dce0",
+              "secondary-container": "#d6e4f5",
+              "secondary-fixed": "#d6e4f5",
+              "tertiary-fixed-dim": "#baf0e4",
+              "error": "#9f403d",
+              "inverse-surface": "#0c0f10",
+              "on-secondary-container": "#455361",
+              "on-error-container": "#752121",
+              "primary": "#35618f",
+              "on-tertiary-fixed": "#1d5249",
+              "on-tertiary": "#e3fff7",
+              "on-surface-variant": "#586064",
+              "on-primary-fixed": "#0d416e",
+              "error-dim": "#4e0309",
+              "primary-fixed": "#d2e4ff",
+              "error-container": "#fe8983",
+              "on-tertiary-container": "#31645b",
+              "on-surface": "#2b3437",
+              "primary-dim": "#285582",
+              "surface-container-lowest": "#ffffff",
+              "tertiary-dim": "#285c53",
+              "surface-container-high": "#e3e9ec",
+              "on-background": "#2b3437",
+              "inverse-on-surface": "#9b9d9e",
+              "outline": "#737c7f",
+              "secondary-fixed-dim": "#c7d6e7",
+              "secondary-dim": "#475563",
+              "tertiary-fixed": "#c8fff2",
+              "surface-container": "#eaeff1",
+              "surface-container-low": "#f1f4f6",
+              "surface-container-highest": "#dbe4e7",
+              "outline-variant": "#abb3b7",
+              "primary-container": "#d2e4ff",
+              "on-secondary-fixed-variant": "#4f5d6b",
+              "tertiary-container": "#c8fff2",
+              "on-secondary": "#f6f9ff",
+              "secondary": "#53606f",
+              "on-tertiary-fixed-variant": "#3c6f65",
+              "surface-bright": "#f8f9fa",
+              "on-secondary-fixed": "#33414e",
+              "on-error": "#fff7f6",
+              "surface-variant": "#dbe4e7",
+              "primary-fixed-dim": "#b9d7ff",
+              "tertiary": "#35685e",
+              "surface-tint": "#35618f",
+              "on-primary": "#f5f7ff",
+              "surface": "#f8f9fa",
+              "on-primary-container": "#275482",
+              "inverse-primary": "#92bcf0",
+              "background": "#f8f9fa",
+              "on-primary-fixed-variant": "#325e8c"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(16px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 glass-nav shadow-sm">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="font-headline text-2xl font-bold text-slate-800">tupbebek.com</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-headline text-lg font-medium tracking-tight text-slate-500 hover:text-slate-800 transition-colors" href="#">İnfertilite Nedenleri</a>
+<a class="font-headline text-lg font-medium tracking-tight text-slate-500 hover:text-slate-800 transition-colors" href="#">Tedavi Yöntemleri</a>
+<a class="font-headline text-lg font-medium tracking-tight text-slate-500 hover:text-slate-800 transition-colors" href="#">Tanı Süreci</a>
+<a class="font-headline text-lg font-medium tracking-tight text-slate-500 hover:text-slate-800 transition-colors" href="#">Rehberler</a>
+<a class="font-headline text-lg font-medium tracking-tight text-slate-500 hover:text-slate-800 transition-colors" href="#">SSS</a>
+<a class="font-headline text-lg font-medium tracking-tight text-slate-500 hover:text-slate-800 transition-colors" href="#">Araştırma</a>
+</div>
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-slate-600 cursor-pointer">search</span>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-xl font-semibold duration-300 ease-in-out hover:opacity-80">Randevu Al</button>
+</div>
+</div>
+<div class="bg-slate-100 h-[1px] w-full"></div>
+</nav>
+<main class="pt-32">
+<!-- Hero Section: The Editorial Statement -->
+<section class="max-w-7xl mx-auto px-8 mb-24">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
+<div class="lg:col-span-8">
+<span class="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">HAKKIMIZDA</span>
+<h1 class="font-headline text-5xl lg:text-7xl font-bold leading-tight text-on-surface mb-8">
+                        Bağımsız, Bilimsel ve <br/><span class="text-primary-dim italic">Şeffaf Bilgi Kaynağı.</span>
+</h1>
+<p class="text-xl text-on-surface-variant max-w-2xl leading-relaxed">
+                        tupbebek.com, infertilite yolculuğunda olan bireyler için ticari kaygılardan arındırılmış, akademik titizlikle hazırlanmış bir rehberdir. Biz bir klinik değiliz; doğru bilgiye erişim hakkınızın savunucusuyuz.
+                    </p>
+</div>
+<div class="lg:col-span-4 pb-4">
+<div class="bg-surface-container p-8 rounded-xl border-l-4 border-primary">
+<p class="font-headline text-lg italic text-on-surface">"Bilgi, belirsizliğin panzehiridir."</p>
+<p class="text-sm mt-4 text-on-surface-variant">— Akademik Kurul Misyonu</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Bento Grid: Mission & Existence -->
+<section class="bg-surface-container-low py-24">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Why We Exist -->
+<div class="md:col-span-2 bg-surface-container-lowest p-12 rounded-xl shadow-sm">
+<div class="flex items-center gap-4 mb-6">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="clinical_notes">clinical_notes</span>
+<h2 class="font-headline text-3xl font-bold">Neden Buradayız?</h2>
+</div>
+<p class="text-lg text-on-surface-variant leading-relaxed mb-6">
+                            İnfertilite tedavisi süreci, bilgi kirliliğinin ve duygusal sömürünün en yoğun olduğu alanlardan biridir. tupbebek.com, hastaların "en iyi klinik" reklamları arasında kaybolmadan, kendi tedavi süreçlerini anlayabilmeleri için kuruldu.
+                        </p>
+<ul class="space-y-4">
+<li class="flex items-start gap-3">
+<span class="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>
+<span class="text-on-surface">Karmaşık tıbbi verileri herkesin anlayabileceği bir dile dönüştürmek.</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></span>
+<span class="text-on-surface">Tedavi seçeneklerini ticari bir yönlendirme yapmadan sunmak.</span>
+</li>
+</ul>
+</div>
+<!-- Independent Status -->
+<div class="bg-primary text-on-primary p-12 rounded-xl flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-4xl mb-6" data-icon="verified_user">verified_user</span>
+<h3 class="font-headline text-2xl font-bold mb-4">Tam Bağımsızlık</h3>
+<p class="opacity-90 leading-relaxed">
+                                Bu portal herhangi bir tüp bebek merkezine, ilaç firmasına veya özel sağlık kuruluşuna bağlı değildir. İçeriklerimiz hiçbir sponsorlu yönlendirme içermez.
+                            </p>
+</div>
+<div class="pt-8 border-t border-white/20">
+<p class="text-sm font-bold tracking-wider uppercase">Bağımsızlık Sertifikası 2024</p>
+</div>
+</div>
+<!-- Editorial Policy -->
+<div class="bg-surface-container-high p-12 rounded-xl md:col-span-3">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div>
+<h2 class="font-headline text-3xl font-bold mb-6">Editoryal Politikamız</h2>
+<p class="text-on-surface-variant leading-relaxed mb-8">
+                                    Yayımladığımız her makale, her rehber ve her istatistik, "Kanıta Dayalı Tıp" (Evidence-Based Medicine) prensiplerine dayanır. Akademik kaynaklarımızı her içeriğin sonunda açıkça paylaşıyoruz.
+                                </p>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-surface-container-lowest p-4 rounded-lg">
+<p class="text-primary font-bold text-2xl mb-1">100%</p>
+<p class="text-xs uppercase tracking-tighter text-on-surface-variant font-bold">Akademik Onay</p>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-lg">
+<p class="text-primary font-bold text-2xl mb-1">0%</p>
+<p class="text-xs uppercase tracking-tighter text-on-surface-variant font-bold">Ticari Reklam</p>
+</div>
+</div>
+</div>
+<div class="relative aspect-video rounded-xl overflow-hidden">
+<img alt="Clinical Review" class="object-cover w-full h-full" data-alt="Close-up of medical research papers and a stethoscope on a clean white desk with soft natural window lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7ShpnQdkM9BfAVtS0u-QeehZctep6PfklCp_3AFe0yZ36P_Cnz0CnWq-ZkZwaF7SaQr1HIJaQwkP_ED8GbtAgBtHBR2Pl5XlAcfoK9YG9ep22yfz-Z1WZ739PM5k4T6WC0tsKRFnDC7Gg04q1QrkWhLIheThIfL1KTtHdekF9lVqG6VbNUlSceNTZZT2OaZlQE3izTqz673BoC3CsTyvlgsJMXUax8QkGODLI8J08clRHf16SNJdxemoEutjWMpZNwBSSWE7VUvE"/>
+<div class="absolute inset-0 bg-primary/10"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Medical Reviewer: Dr. Senai Aksoy -->
+<section class="py-32">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center mb-16">
+<span class="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">TIBBİ İNCELEME KURULU</span>
+<h2 class="font-headline text-4xl font-bold">Uzman Denetimi</h2>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm flex flex-col lg:flex-row border border-outline-variant/10">
+<div class="lg:w-1/3 h-[500px]">
+<img alt="Dr. Senai Aksoy" class="w-full h-full object-cover" data-alt="Portrait of an experienced senior male doctor with a kind expression, wearing a white medical coat in a bright modern office" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9B4b3TP7ERVx99jV8ranK1K0Ra6Z1HGIg0hZP8RPtS9ud4e-StaD9_DwCPHgMRIrUWD2lZWAF2c5fgpKqIBp40fA-7wXFc49lVy-dUbzV4Ppt39flgyzJsbH9FwnxmjseO6MXGQ8cRn-XWHc5lTXYn9AtnreRT4ODE_30iFaUlWsN1ptR66dUrtXMYSZkRJz79k6U0VFWIbBjX3BWTiH1fmTLf9S9Ng8Vlnk8DOxgkzF-ogLfkTX4dnoFtOivYaY5f6hn1mlNgns"/>
+</div>
+<div class="lg:w-2/3 p-12 lg:p-20 flex flex-col justify-center">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-tertiary-container text-on-tertiary-container rounded-full text-xs font-bold w-fit mb-6">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">verified</span>
+                            MEDİKAL DİREKTÖR
+                        </div>
+<h3 class="font-headline text-4xl font-bold mb-2 text-on-surface">Dr. Senai Aksoy</h3>
+<p class="text-primary text-xl font-medium mb-8">Tıbbi İnceleme Başkanı</p>
+<p class="text-lg text-on-surface-variant leading-relaxed mb-8">
+                            Dr. Senai Aksoy, tupbebek.com bünyesindeki tüm tıbbi içeriklerin bilimsel doğruluğunu ve güncelliğini denetleyen baş inceleyicimizdir. Yayınlanan her rehber, hastaların en doğru ve güncel tedavi protokollerine erişebilmesi için kendisinin ve ekibinin onayından geçer.
+                        </p>
+<div class="flex flex-wrap gap-4">
+<div class="flex items-center gap-3 bg-surface p-4 rounded-xl border border-outline-variant/20">
+<span class="material-symbols-outlined text-primary" data-icon="school">school</span>
+<span class="text-sm font-semibold">Akademik Doğrulama</span>
+</div>
+<div class="flex items-center gap-3 bg-surface p-4 rounded-xl border border-outline-variant/20">
+<span class="material-symbols-outlined text-primary" data-icon="fact_check">fact_check</span>
+<span class="text-sm font-semibold">Güncel Protokoller</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA / Final Statement -->
+<section class="max-w-7xl mx-auto px-8 mb-32">
+<div class="bg-secondary-container rounded-3xl p-16 text-center relative overflow-hidden">
+<div class="relative z-10 max-w-2xl mx-auto">
+<h2 class="font-headline text-3xl font-bold text-on-secondary-container mb-6">Sağlığınız İçin Bir Not</h2>
+<p class="text-on-secondary-container opacity-80 mb-10 leading-relaxed">
+                        tupbebek.com üzerinde yer alan bilgiler, profesyonel bir tıbbi tavsiye, teşhis veya tedavi yerine geçmez. Lütfen herhangi bir tıbbi karar vermeden önce uzman bir hekime danışınız.
+                    </p>
+<div class="flex flex-col sm:flex-row justify-center gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-xl font-bold hover:bg-primary-dim transition-all">Sıkça Sorulan Sorular</button>
+<button class="bg-surface-container-lowest text-primary px-8 py-4 rounded-xl font-bold border border-primary/10 hover:bg-surface-container-high transition-all">İletişime Geçin</button>
+</div>
+</div>
+<!-- Abstract Texture Background -->
+<div class="absolute inset-0 opacity-10 pointer-events-none">
+<svg height="100%" preserveaspectratio="none" viewbox="0 0 100 100" width="100%">
+<path d="M0 100 C 20 0, 50 0, 100 100 Z" fill="currentColor"></path>
+</svg>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-slate-200 bg-slate-50">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-10 w-full max-w-7xl mx-auto">
+<div class="mb-6 md:mb-0">
+<div class="font-headline text-lg font-semibold text-slate-700">tupbebek.com</div>
+<p class="font-manrope text-xs tracking-wide text-slate-600 mt-2">© 2024 tupbebek.com. Tıbbi İnceleme: Dr. Senai Aksoy.</p>
+</div>
+<div class="flex gap-8">
+<a class="font-manrope text-xs tracking-wide text-slate-500 hover:text-slate-700 transition-colors" href="#">Hakkımızda</a>
+<a class="font-manrope text-xs tracking-wide text-slate-500 hover:text-slate-700 transition-colors" href="#">İletişim</a>
+<a class="font-manrope text-xs tracking-wide text-slate-500 hover:text-slate-700 transition-colors" href="#">Gizlilik Politikası</a>
+<a class="font-manrope text-xs tracking-wide text-slate-500 hover:text-slate-700 transition-colors" href="#">KVKK</a>
+</div>
+</div>
+</footer>
+</body></html>

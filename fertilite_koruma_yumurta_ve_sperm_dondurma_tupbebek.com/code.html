@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+
+<html lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-error": "#fff7f6",
+              "primary-fixed": "#d2e4ff",
+              "surface-bright": "#f8f9fa",
+              "primary": "#35618f",
+              "surface-dim": "#d1dce0",
+              "inverse-primary": "#92bcf0",
+              "on-secondary": "#f6f9ff",
+              "on-tertiary-container": "#31645b",
+              "on-primary": "#f5f7ff",
+              "background": "#f8f9fa",
+              "on-tertiary-fixed": "#1d5249",
+              "error-container": "#fe8983",
+              "secondary-fixed-dim": "#c7d6e7",
+              "on-primary-fixed-variant": "#325e8c",
+              "surface-container-lowest": "#ffffff",
+              "primary-dim": "#285582",
+              "outline": "#737c7f",
+              "surface-container-highest": "#dbe4e7",
+              "surface-container-low": "#f1f4f6",
+              "outline-variant": "#abb3b7",
+              "on-surface-variant": "#586064",
+              "on-secondary-container": "#455361",
+              "tertiary-fixed-dim": "#baf0e4",
+              "tertiary-dim": "#285c53",
+              "tertiary-container": "#c8fff2",
+              "surface": "#f8f9fa",
+              "tertiary-fixed": "#c8fff2",
+              "surface-tint": "#35618f",
+              "primary-fixed-dim": "#b9d7ff",
+              "error-dim": "#4e0309",
+              "surface-container": "#eaeff1",
+              "error": "#9f403d",
+              "inverse-on-surface": "#9b9d9e",
+              "secondary-fixed": "#d6e4f5",
+              "on-secondary-fixed": "#33414e",
+              "surface-container-high": "#e3e9ec",
+              "secondary-container": "#d6e4f5",
+              "on-background": "#2b3437",
+              "primary-container": "#d2e4ff",
+              "on-secondary-fixed-variant": "#4f5d6b",
+              "on-tertiary-fixed-variant": "#3c6f65",
+              "on-primary-container": "#275482",
+              "on-error-container": "#752121",
+              "on-tertiary": "#e3fff7",
+              "inverse-surface": "#0c0f10",
+              "secondary": "#53606f",
+              "surface-variant": "#dbe4e7",
+              "on-surface": "#2b3437",
+              "tertiary": "#35685e",
+              "secondary-dim": "#475563",
+              "on-primary-fixed": "#0d416e"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .serif-italic { font-style: italic; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-md border-b border-slate-200/15 shadow-sm">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-screen-2xl mx-auto">
+<span class="text-2xl font-serif italic text-slate-800">tupbebek.com</span>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-slate-600 hover:text-[#35618f] transition-colors text-xs tracking-wide" href="#">İnfertilite Nedenleri</a>
+<a class="text-slate-600 hover:text-[#35618f] transition-colors text-xs tracking-wide" href="#">Tedavi Yöntemleri</a>
+<a class="text-slate-600 hover:text-[#35618f] transition-colors text-xs tracking-wide" href="#">Tanı Süreci</a>
+<a class="text-[#35618f] font-bold border-b-2 border-[#35618f] pb-1 text-xs tracking-wide" href="#">Rehberler</a>
+<a class="text-slate-600 hover:text-[#35618f] transition-colors text-xs tracking-wide" href="#">SSS</a>
+<a class="text-slate-600 hover:text-[#35618f] transition-colors text-xs tracking-wide" href="#">Araştırma</a>
+</div>
+<div class="flex items-center gap-4">
+<div class="relative hidden sm:block">
+<input class="bg-surface-container-low border-none rounded-xl px-4 py-2 text-sm w-64 focus:ring-2 focus:ring-outline/30" placeholder="Klinik rehberlerde ara..." type="text"/>
+<span class="material-symbols-outlined absolute right-3 top-2 text-outline text-sm">search</span>
+</div>
+<button class="md:hidden">
+<span class="material-symbols-outlined text-on-surface">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="px-8 py-20 max-w-screen-2xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7">
+<div class="flex items-center gap-3 mb-6">
+<span class="px-3 py-1 bg-tertiary-container text-on-tertiary-container rounded-full text-xs font-bold tracking-widest uppercase">Klinik Rehber</span>
+<span class="text-outline-variant text-xs">•</span>
+<span class="text-outline text-xs font-medium">Dr. Senai Aksoy tarafından incelenmiştir.</span>
+</div>
+<h1 class="font-headline text-5xl md:text-6xl text-on-surface mb-8 leading-tight">
+                        Geleceği Dondurmak: <br/>
+<span class="text-primary italic">Fertilite Koruma Nedir?</span>
+</h1>
+<p class="text-lg text-on-surface-variant leading-relaxed mb-10 max-w-2xl">
+                        Fertilite koruma, üreme potansiyelinin biyolojik saatin veya tıbbi zorunlulukların ötesine taşınması sürecidir. Modern tıp, gamet hücrelerini (yumurta ve sperm) vitrifikasyon teknolojisi ile dondurarak, bireylere yaşam planlarını yönetme özgürlüğü tanır.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-xl font-bold flex items-center gap-2 hover:bg-primary-dim transition-all active:scale-[0.99]">
+                            Klinik Süreci Başlat
+                            <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="border border-outline-variant/30 text-primary px-8 py-4 rounded-xl font-bold hover:bg-surface-container transition-all">
+                            Literatür Taraması
+                        </button>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="aspect-[4/5] rounded-[2rem] overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="Microscopic view of a human cell being preserved in a high-tech clinical laboratory setting with cold blue lighting and clinical precision" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDk5V5wqK8An5yYIJIuwZnBGXB0VmbfHJdJvgIJuaV0a1KTBqDFlf_Pb9dwiMvOePtwhEO2n2MwTrLhNEPyWJJ9VTcPSSnJAMp15_O220J50rxY-y2H9J7VlCog9o6Tzcq3K4s70EGjxO7DGH3ECggNoePSv8qugwm6ef2iPcYQ5uhqe_Gcz7l_fANvYsI1R9VWH8FJubKCTWXVwDGuwFytuoYSeD_YNCa4x1CKFCa3GG8jXsHV1qK2H1DAhDVRdaP-UXZXZHBLj5Y"/>
+</div>
+<div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl max-w-xs border border-slate-100">
+<p class="text-primary font-bold text-3xl mb-1">98%</p>
+<p class="text-xs text-on-surface-variant leading-snug">Vitrifikasyon (Hızlı Dondurma) sonrası hücre canlılık oranı.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Process Bento Grid -->
+<section class="bg-surface-container-low py-24">
+<div class="max-w-screen-2xl mx-auto px-8">
+<div class="flex justify-between items-end mb-16">
+<div class="max-w-xl">
+<h2 class="font-headline text-3xl text-on-surface mb-4">Yumurta Dondurma (Oosit Kriyoprezervasyonu)</h2>
+<p class="text-on-surface-variant">Kadın fertilitesinin korunmasında altın standart olan vitrifikasyon yöntemi ile hücre bütünlüğü korunur.</p>
+</div>
+<div class="hidden md:block">
+<span class="material-symbols-outlined text-5xl text-primary-fixed-dim">biotech</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Stimulation -->
+<div class="bg-surface-container-lowest p-8 rounded-3xl col-span-1 border border-outline-variant/10">
+<div class="w-12 h-12 bg-primary-container text-on-primary-container rounded-xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined">medication</span>
+</div>
+<h3 class="text-xl font-bold mb-4">1. Stimülasyon</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-6">
+                            Adet döngüsünün 2. veya 3. günü başlayan hormon terapisi ile birden fazla folikülün gelişimi hedeflenir. Süreç yaklaşık 10-12 gün sürer.
+                        </p>
+<ul class="space-y-3">
+<li class="flex items-center gap-2 text-xs font-medium text-primary">
+<span class="w-2 h-2 bg-primary rounded-sm"></span> Ultrasonik Takip
+                            </li>
+<li class="flex items-center gap-2 text-xs font-medium text-primary">
+<span class="w-2 h-2 bg-primary rounded-sm"></span> Hormonal Monitorizasyon
+                            </li>
+</ul>
+</div>
+<!-- Retrieval -->
+<div class="bg-primary text-on-primary p-8 rounded-3xl col-span-1 flex flex-col justify-between relative overflow-hidden">
+<div class="relative z-10">
+<h3 class="text-xl font-bold mb-4">2. Toplama (OPU)</h3>
+<p class="text-sm opacity-90 leading-relaxed mb-6">
+                                Sedasyon altında gerçekleştirilen, yaklaşık 15 dakika süren minimal invaziv bir işlemdir. Olgun yumurtalar kontrollü bir şekilde aspire edilir.
+                            </p>
+</div>
+<div class="relative z-10">
+<p class="text-xs font-label uppercase tracking-widest opacity-70 mb-2">Başarı Faktörü</p>
+<p class="text-2xl font-headline italic">İdeal Yaş &lt; 35</p>
+</div>
+<span class="material-symbols-outlined absolute -right-4 -bottom-4 text-9xl opacity-10">science</span>
+</div>
+<!-- Vitrification -->
+<div class="bg-surface-container-lowest p-8 rounded-3xl col-span-1 border border-outline-variant/10">
+<div class="w-12 h-12 bg-tertiary-container text-on-tertiary-container rounded-xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined">ac_unit</span>
+</div>
+<h3 class="text-xl font-bold mb-4">3. Vitrifikasyon</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-6">
+                            Hücreler -196°C'de sıvı azot tanklarında 'camlaştırma' yöntemiyle saklanır. Bu yöntem buz kristali oluşumunu engeller.
+                        </p>
+<div class="mt-auto pt-6 border-t border-surface-container">
+<div class="flex items-center gap-4">
+<div class="h-10 w-1 bg-tertiary rounded-full"></div>
+<p class="text-xs italic text-on-surface-variant">Süresiz saklama imkanı, ancak yasal sınırlar 5 yıldır.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Sperm Freezing Section -->
+<section class="py-24 px-8 max-w-screen-2xl mx-auto">
+<div class="bg-surface-container rounded-[2.5rem] overflow-hidden flex flex-col lg:flex-row">
+<div class="lg:w-1/2 p-12 lg:p-20">
+<h2 class="font-headline text-4xl text-on-surface mb-8">Sperm Dondurma</h2>
+<p class="text-on-surface-variant mb-8 leading-relaxed">
+                        Erkek fertilitesini korumak, kadınlara oranla daha hızlı ve non-invaziv bir süreçtir. Klinik endikasyonlar arasında en yaygın olanları onkolojik tedaviler öncesi koruma ve cerrahi operasyonlardır.
+                    </p>
+<div class="space-y-6">
+<div class="flex gap-6 items-start">
+<div class="bg-white p-3 rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-primary">oncology</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface">Onkolojik Tedaviler</h4>
+<p class="text-sm text-on-surface-variant">Kemoterapi veya radyoterapi sperm üretimini kalıcı olarak etkileyebilir.</p>
+</div>
+</div>
+<div class="flex gap-6 items-start">
+<div class="bg-white p-3 rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-primary">precision_manufacturing</span>
+</div>
+<div>
+<h4 class="font-bold text-on-surface">Cerrahi Müdahaleler</h4>
+<p class="text-sm text-on-surface-variant">Testis cerrahisi veya vazektomi öncesi güvenlik önlemi.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:w-1/2 relative min-h-[400px]">
+<img class="w-full h-full object-cover" data-alt="Abstract scientific representation of sperm cells in a cool-toned laboratory digital visualization with light patterns" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPIuRL0Bk1C2sDdbXtlJtrZ-XShQVurypPbmxwcT4CBhJ8VfisZYTH16339cD4ZZgJApEbD3wxejo42n7AeQByewEMbmC8gqNeu-JppJzDznYb__BMM_buEBrC-ri7I1SQU9575cQRW33uwRDKrFqcOvhbo-ZrT3IdegC4TcI-KgaFWTUaDrtVlFW6T6lqcdNZFE89Q21UszxWZM67Udz-HDskAI0n6mU_xFhMHJ_x9dKXZ40AFKKUxHShysdoWtZScFpS9ZKtyoE"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface-container via-transparent to-transparent"></div>
+</div>
+</div>
+</section>
+<!-- Comparison Table (Clinical Design) -->
+<section class="py-24 bg-white">
+<div class="max-w-screen-xl mx-auto px-8">
+<div class="text-center mb-16">
+<h2 class="font-headline text-3xl mb-4">Embriyo vs. Gamet Dondurma</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">Klinik seçeneklerin karşılaştırmalı analizi ve etik çerçevesi.</p>
+</div>
+<div class="overflow-hidden rounded-3xl border border-outline-variant/20 shadow-sm">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low">
+<th class="p-6 font-bold text-sm text-on-surface border-b border-outline-variant/10">Parametre</th>
+<th class="p-6 font-bold text-sm text-primary border-b border-outline-variant/10">Embriyo Dondurma</th>
+<th class="p-6 font-bold text-sm text-primary border-b border-outline-variant/10">Gamet (Yumurta/Sperm)</th>
+</tr>
+</thead>
+<tbody class="text-sm">
+<tr>
+<td class="p-6 border-b border-outline-variant/5 font-medium text-on-surface-variant">Biyolojik Stabilite</td>
+<td class="p-6 border-b border-outline-variant/5">Çok Yüksek (Çok hücreli yapı)</td>
+<td class="p-6 border-b border-outline-variant/5">Yüksek (Hücre spesifik hassasiyet)</td>
+</tr>
+<tr class="bg-surface-container-lowest">
+<td class="p-6 border-b border-outline-variant/5 font-medium text-on-surface-variant">Yasal Statü</td>
+<td class="p-6 border-b border-outline-variant/5">Her iki eşin onayı zorunludur</td>
+<td class="p-6 border-b border-outline-variant/5">Bireysel mülkiyet ve karar</td>
+</tr>
+<tr>
+<td class="p-6 border-b border-outline-variant/5 font-medium text-on-surface-variant">Klinik Hazırlık</td>
+<td class="p-6 border-b border-outline-variant/5">IVF Protokolü + Fertilizasyon</td>
+<td class="p-6 border-b border-outline-variant/5">Stimülasyon + Toplama</td>
+</tr>
+<tr class="bg-surface-container-lowest">
+<td class="p-6 font-medium text-on-surface-variant">Kullanım Esnekliği</td>
+<td class="p-6">Sadece ilgili partner ile</td>
+<td class="p-6">Gelecekteki tüm seçeneklere açık</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- Regulatory & Legal (Neutral/Scientific) -->
+<section class="py-24 bg-surface-container-low border-t border-outline-variant/10">
+<div class="max-w-screen-2xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="font-headline text-3xl mb-8">Yasal Çerçeve ve Süreler</h2>
+<div class="space-y-8">
+<div class="border-l-4 border-primary pl-6">
+<h4 class="font-bold mb-2">Saklama Süresi</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">Türkiye'de üreme hücrelerinin saklanma süresi yönetmeliklerle 5 yıl olarak belirlenmiştir. Bu sürenin uzatılması her yıl yapılacak dilekçe başvurusu ile mümkündür.</p>
+</div>
+<div class="border-l-4 border-outline-variant pl-6">
+<h4 class="font-bold mb-2">Zorunlu Endikasyonlar</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">Tıbbi zorunluluk (kanser tedavisi vb.) veya düşük yumurtalık rezervi raporu ile belgelenen durumlarda uygulama yapılır.</p>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-10 rounded-[2rem] shadow-sm">
+<div class="flex items-center gap-4 mb-8">
+<span class="material-symbols-outlined text-primary scale-125">verified_user</span>
+<h4 class="font-headline text-xl">Klinik Güvence</h4>
+</div>
+<p class="text-sm text-on-surface-variant mb-6 leading-relaxed">
+                        Tüm süreçler Sağlık Bakanlığı ÜYTE (Üremeye Yardımcı Tedavi) yönetmeliğine tam uyumlu olarak, en üst düzey genetik laboratuvar standartlarında yürütülmektedir.
+                    </p>
+<div class="grid grid-cols-2 gap-4">
+<div class="p-4 bg-surface-container rounded-xl text-center">
+<p class="text-xs text-outline mb-1">ISO Sertifikası</p>
+<p class="font-bold text-sm">9001:2015</p>
+</div>
+<div class="p-4 bg-surface-container rounded-xl text-center">
+<p class="text-xs text-outline mb-1">Laboratuvar</p>
+<p class="font-bold text-sm">BSL-2</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 border-t border-slate-200">
+<div class="flex flex-col gap-8 w-full px-8 py-12 max-w-screen-2xl mx-auto text-center">
+<div class="flex flex-col items-center gap-4">
+<span class="text-xl font-serif text-slate-700">tupbebek.com</span>
+<p class="text-slate-500 text-xs max-w-2xl leading-relaxed">
+                    © 2024 tupbebek.com. All Rights Reserved. Medical Reviewer: Dr. Senai Aksoy. This content is for informational purposes only and does not constitute medical advice.
+                </p>
+</div>
+<div class="flex justify-center gap-6">
+<a class="text-slate-500 hover:text-slate-800 transition-all text-xs" href="#">Editorial Policy</a>
+<a class="text-slate-500 hover:text-slate-800 transition-all text-xs" href="#">Privacy Policy</a>
+<a class="text-slate-500 hover:text-slate-800 transition-all text-xs" href="#">Terms of Service</a>
+<a class="text-slate-500 hover:text-slate-800 transition-all text-xs" href="#">Contact</a>
+</div>
+<div class="pt-8 border-t border-slate-200/50 flex flex-col md:flex-row justify-between items-center gap-4">
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-slate-400">social_leaderboard</span>
+<span class="material-symbols-outlined text-slate-400">group</span>
+<span class="material-symbols-outlined text-slate-400">share</span>
+</div>
+<p class="text-[10px] text-slate-400 uppercase tracking-widest">Scientific Editorial Excellence Since 1998</p>
+</div>
+</div>
+</footer>
+</body></html>

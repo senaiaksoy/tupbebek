@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+
+<html class="light" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Tüp Bebek (IVF) Aşamalarını Anlamak | Clinical Curator</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-low": "#f1f4f6",
+              "secondary-fixed": "#d6e4f5",
+              "tertiary-dim": "#285c53",
+              "primary-dim": "#285582",
+              "tertiary-fixed": "#c8fff2",
+              "surface": "#f8f9fa",
+              "surface-container-high": "#e3e9ec",
+              "on-secondary": "#f6f9ff",
+              "inverse-surface": "#0c0f10",
+              "secondary": "#53606f",
+              "on-tertiary-container": "#31645b",
+              "primary-fixed-dim": "#b9d7ff",
+              "inverse-primary": "#92bcf0",
+              "tertiary-container": "#c8fff2",
+              "on-secondary-container": "#455361",
+              "on-error": "#fff7f6",
+              "primary-container": "#d2e4ff",
+              "outline-variant": "#abb3b7",
+              "secondary-container": "#d6e4f5",
+              "tertiary-fixed-dim": "#baf0e4",
+              "secondary-fixed-dim": "#c7d6e7",
+              "error-container": "#fe8983",
+              "background": "#f8f9fa",
+              "inverse-on-surface": "#9b9d9e",
+              "surface-tint": "#35618f",
+              "error-dim": "#4e0309",
+              "surface-variant": "#dbe4e7",
+              "tertiary": "#35685e",
+              "on-primary-container": "#275482",
+              "secondary-dim": "#475563",
+              "surface-bright": "#f8f9fa",
+              "on-primary": "#f5f7ff",
+              "on-tertiary": "#e3fff7",
+              "on-tertiary-fixed-variant": "#3c6f65",
+              "outline": "#737c7f",
+              "primary": "#35618f",
+              "error": "#9f403d",
+              "on-tertiary-fixed": "#1d5249",
+              "on-primary-fixed-variant": "#325e8c",
+              "on-surface-variant": "#586064",
+              "primary-fixed": "#d2e4ff",
+              "surface-container-highest": "#dbe4e7",
+              "on-surface": "#2b3437",
+              "on-error-container": "#752121",
+              "on-secondary-fixed": "#33414e",
+              "on-secondary-fixed-variant": "#4f5d6b",
+              "surface-container-lowest": "#ffffff",
+              "on-background": "#2b3437",
+              "on-primary-fixed": "#0d416e",
+              "surface-container": "#eaeff1",
+              "surface-dim": "#d1dce0"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; }
+        h1, h2, h3 { font-family: 'Noto Serif', serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-shadow { box-shadow: 0 20px 40px rgba(43, 52, 55, 0.05); }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-slate-50/70 dark:bg-slate-900/70 backdrop-blur-md shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<div class="text-xl font-serif font-bold text-slate-800 dark:text-slate-100 tracking-tight">tupbebek.com</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 transition-colors" href="/conditions">Hastalıklar</a>
+<a class="text-blue-800 dark:text-blue-300 font-semibold border-b-2 border-blue-800 dark:border-blue-300 pb-1" href="/treatment-methods">Tedavi Yöntemleri</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 transition-colors" href="/diagnostic-process">Tanı Süreci</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 transition-colors" href="/guides">Rehberler</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 transition-colors" href="/faq">SSS</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 transition-colors" href="/research">Araştırmalar</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 transition-colors" href="/about-us">Hakkımızda</a>
+</nav>
+<div class="flex items-center gap-4">
+<div class="bg-surface-container-low rounded-lg px-3 py-1.5 flex items-center gap-2 group">
+<span class="material-symbols-outlined text-outline text-sm">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm w-40" placeholder="Araştırmalarda ara..." type="text"/>
+</div>
+<span class="material-symbols-outlined text-slate-700 dark:text-slate-300 cursor-pointer">account_circle</span>
+</div>
+</div>
+<div class="bg-slate-200/50 dark:bg-slate-800/50 h-[1px]"></div>
+</header>
+<main class="pt-32 pb-20">
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-8 mb-20">
+<div class="grid lg:grid-cols-12 gap-12 items-end">
+<div class="lg:col-span-7">
+<div class="flex items-center gap-3 mb-6">
+<span class="bg-tertiary-container text-on-tertiary-container px-3 py-1 rounded-full text-xs font-bold tracking-widest uppercase">Eğitici Rehber</span>
+<span class="text-outline text-xs">•</span>
+<span class="text-on-surface-variant text-xs font-medium">Ekim 2024 Güncellemesi</span>
+</div>
+<h1 class="text-5xl lg:text-7xl font-bold text-on-surface leading-tight mb-8">
+                    Tüp Bebek (<span class="italic text-primary">IVF</span>) Aşamalarını Anlamak
+                </h1>
+<p class="text-xl text-on-surface-variant leading-relaxed max-w-2xl font-light">
+                    Yardımcı Üreme Tekniklerinin (ART) dört temel aşamasının klinik incelemesi. Bu rehber, standart bir IVF döngüsündeki fizyolojik ve laboratuvar süreçlerini ana hatlarıyla açıklamaktadır.
+                </p>
+</div>
+<div class="lg:col-span-5 flex flex-col items-start lg:items-end gap-4 border-l lg:border-l-0 lg:border-r border-outline-variant/30 px-6 lg:px-8 py-2">
+<div class="flex items-center gap-4">
+<div class="text-right">
+<p class="text-xs font-bold text-outline uppercase tracking-tighter">Tıbbi Editör</p>
+<p class="text-lg font-serif italic text-on-surface">Dr. Senai Aksoy</p>
+</div>
+<div class="w-14 h-14 rounded-full bg-surface-container overflow-hidden">
+<img alt="Dr. Senai Aksoy profil" data-alt="professional portrait of a senior male physician with a kind expression in a clinical setting with soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuSt7sjJgTDeB-pUaLqfnfHVUciGbbAVErfnAXR393tUmEVkVhWrBCBNeRQRqELGFOvpj2nu-v8yQkTf_WUq3d3xWSwBe0lGdEgw4fqT7p5JurlpgI7uWqACHqoIry_1jM1wjhXqdb2n6KEQxOnKjZCpI8jkgV24wjvY1p6nL79Ok64x2OZImqyy4Ys66xoytMSipopDovucYIStURJC13o4PkYIwJHZNnqjzJiK39WiqxME8MLzD_DPMHphbyEZ-TrUP9UyOM--HM"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Process Content -->
+<section class="max-w-7xl mx-auto px-8">
+<div class="space-y-32">
+<!-- Step 1: Ovarian Stimulation -->
+<div class="grid lg:grid-cols-2 gap-16 items-start">
+<div class="sticky top-32">
+<span class="text-6xl font-serif text-primary-container font-bold mb-4 block">01</span>
+<h2 class="text-4xl font-bold mb-6 text-on-surface">Yumurtalık Stimülasyonu</h2>
+<div class="prose prose-slate prose-lg">
+<p class="text-on-surface-variant leading-relaxed mb-6">
+                            İlk aşama, doğal bir adet döngüsü sırasında salınan tek bir yumurta yerine, yumurtalıkların birden fazla olgun folikül üretmesini sağlamak için gonadotropinlerin uygulanmasını içerir.
+                        </p>
+<ul class="space-y-4 text-on-surface-variant italic">
+<li class="flex gap-3 items-start">
+<span class="w-1.5 h-1.5 rounded-full bg-primary mt-2.5 shrink-0"></span>
+<span>Kan analizi yoluyla hormonal izleme (Estradiol seviyeleri).</span>
+</li>
+<li class="flex gap-3 items-start">
+<span class="w-1.5 h-1.5 rounded-full bg-primary mt-2.5 shrink-0"></span>
+<span>Foliküler büyüme ve çapın takibi için transvajinal ultrason.</span>
+</li>
+<li class="flex gap-3 items-start">
+<span class="w-1.5 h-1.5 rounded-full bg-primary mt-2.5 shrink-0"></span>
+<span>"Çatlatma iğnesi" (hCG veya GnRH agonisti) kullanılarak nihai olgunlaşma tetiklemesi.</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="rounded-2xl overflow-hidden editorial-shadow bg-surface-container-lowest p-4">
+<img alt="Yumurtalık stimülasyonu takibi" class="rounded-xl w-full object-cover aspect-[4/3]" data-alt="microscopic view of human follicles maturing in an ovary with clean blue and white scientific aesthetic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBt4cnwlCqGuJoM0l8WWZH2FgnTVYcbEwE2DeD_TU9zqujg_dpVgU9ZA2noeEPje1Uauum8N_aulzEQ_T1HR8kCT6rI-4szzSqsjhARA8HzDAJJEJpQ1jzaSzsQmPDAuQqM48W3CRNponngt612mnYeCbVebwR1OO_UomDOFub4uapyJBINh5kjPIof3PM9y4Ly8PBoj3wHLDkByhwue-mWJol2bwAlSE1lpjnAYvafLI_YS_6bFBOiEevZU-PoSQzj2hvtnrWUriU"/>
+<div class="p-6">
+<p class="text-xs font-bold text-outline uppercase mb-2">Teknik Bilgi</p>
+<p class="text-sm text-on-surface-variant italic">Transvajinal ultrason görüntülemesi, maksimum oosit canlılığını sağlamak için toplama işleminin zamanlanmasında kritiktir.</p>
+</div>
+</div>
+</div>
+<!-- Step 2: Egg Retrieval -->
+<div class="grid lg:grid-cols-2 gap-16 items-start">
+<div class="lg:order-2 sticky top-32">
+<span class="text-6xl font-serif text-primary-container font-bold mb-4 block">02</span>
+<h2 class="text-4xl font-bold mb-6 text-on-surface">Yumurta Toplama (OPU)</h2>
+<div class="prose prose-slate prose-lg">
+<p class="text-on-surface-variant leading-relaxed mb-6">
+                            Tetikleyici iğneden yaklaşık 34 ila 36 saat sonra, toplama işlemi hafif sedasyon altında gerçekleştirilir. Oositleri içeren folikül sıvısını aspire etmek için ultrason eşliğinde bir iğne kullanılır.
+                        </p>
+<div class="bg-surface-container p-8 rounded-xl border-l-4 border-primary italic text-on-secondary-container">
+                            "Prosedür tipik olarak 20–30 dakika süren küçük bir cerrahi müdahaledir. Hastalar işlem sonrası hafif kramplar hissedebilir, ancak iyileşme genellikle hızlıdır."
+                        </div>
+</div>
+</div>
+<div class="lg:order-1 rounded-2xl overflow-hidden editorial-shadow bg-surface-container-lowest p-4">
+<img alt="Klinik laboratuvar ortamı" class="rounded-xl w-full object-cover aspect-[4/3]" data-alt="high-tech embryology laboratory with clean sterile surfaces and advanced medical equipment in a soft white and blue color palette" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrz0mZNg1SNR1ZY_Ib7QjWO5GuRcCa3aKwOWVvkdNoPGjTAQItwtZREh3BfF_YLWvyOGw6SVbUqeEAg0EZKn0V8uJr7z8eirpFR85aCiC3Thce4EM1TqS7h6TQ-gC5dNQzDlgG889dcMquU4IlNcjcDyxng0lo-68Ie41dxemzXZKfNXhtrzPe7AAnG1hCZpXoWH-IyScKJZK5LNNGfHPPqQAFMqGm1nxD85zAxOsUv2vzoJaccKZyduX4OTXHRxKoX4pgl1Cdwyo"/>
+</div>
+</div>
+<!-- Step 3: Fertilization & Embryo Culture -->
+<div class="grid lg:grid-cols-2 gap-16 items-start">
+<div class="sticky top-32">
+<span class="text-6xl font-serif text-primary-container font-bold mb-4 block">03</span>
+<h2 class="text-4xl font-bold mb-6 text-on-surface">Döllenme ve Embriyo Kültürü</h2>
+<div class="prose prose-slate prose-lg">
+<p class="text-on-surface-variant leading-relaxed mb-6">
+                            Toplanan oositler olgunluk açısından değerlendirilir ve geleneksel inseminasyon veya İntrasitoplazmik Sperm Enjeksiyonu (ICSI) kullanılarak döllenir.
+                        </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+<div class="p-4 rounded-lg bg-surface-container-low">
+<h4 class="font-bold text-sm text-primary mb-2">İnseminasyon</h4>
+<p class="text-xs text-on-surface-variant">Doğal penetrasyona izin vermek için sperm ve yumurta bir kültür kabına yerleştirilir.</p>
+</div>
+<div class="p-4 rounded-lg bg-surface-container-low">
+<h4 class="font-bold text-sm text-primary mb-2">ICSI</h4>
+<p class="text-xs text-on-surface-variant">Spesifik erkek faktörü endikasyonları için kullanılan, tek bir spermin doğrudan oosit içine enjekte edilmesi işlemidir.</p>
+</div>
+</div>
+<p class="text-on-surface-variant leading-relaxed italic">
+                            Döllenmeyi takiben, embriyolar bölünme veya blastokist aşamasına ulaşana kadar 3 ila 5 gün boyunca bir inkübatörde kültüre edilir.
+                        </p>
+</div>
+</div>
+<div class="rounded-2xl overflow-hidden editorial-shadow bg-surface-container-lowest p-4">
+<img alt="Mikroskobik döllenme" class="rounded-xl w-full object-cover aspect-[4/3]" data-alt="extremely close-up microscopic view of a cell under clinical observation with soft diffused lighting and surgical precision" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHbpW0KZ5IAj10An5NFPzBvzupVcusavj0ntP9jKDU0K532gEl09riLkI1UhF1yI3uyiZ03bqfyRafKj-QfunsaMpd-gMefrQ0yxT83unz3WK7dN3PA4eANUI1MrzMAeaYYzMDz6Umj_uUxdzw26hUHG6NjcApTsBRmohzm18brIHhLeJAZlsvIFhHCpQVrNHGn7LWRy90gXKTyZlHE7gHNMfFXKeprfvsdOsGAvbq9WiNlG5ramBP0gFIWeNSCHeXE66x6xYgnfM"/>
+</div>
+</div>
+<!-- Step 4: Embryo Transfer -->
+<div class="grid lg:grid-cols-2 gap-16 items-start">
+<div class="lg:order-2 sticky top-32">
+<span class="text-6xl font-serif text-primary-container font-bold mb-4 block">04</span>
+<h2 class="text-4xl font-bold mb-6 text-on-surface">Embriyo Transferi</h2>
+<div class="prose prose-slate prose-lg">
+<p class="text-on-surface-variant leading-relaxed mb-6">
+                            Son klinik adım, seçilen bir veya daha fazla embriyonun ince, esnek bir kateter kullanılarak hastanın rahmine yerleştirilmesini içerir. Bu işlem genellikle ağrısızdır ve sedasyon olmadan uygulanır.
+                        </p>
+<div class="space-y-4">
+<div class="flex items-center gap-4 border-b border-outline-variant/20 pb-4">
+<span class="material-symbols-outlined text-tertiary">task_alt</span>
+<div>
+<p class="font-bold text-on-surface text-sm">Blastokist Transferi</p>
+<p class="text-xs text-on-surface-variant">Genellikle 5. günde gerçekleşir ve rahim ortamıyla senkronizasyonu destekler.</p>
+</div>
+</div>
+<div class="flex items-center gap-4 border-b border-outline-variant/20 pb-4">
+<span class="material-symbols-outlined text-tertiary">task_alt</span>
+<div>
+<p class="font-bold text-on-surface text-sm">Luteal Destek</p>
+<p class="text-xs text-on-surface-variant">Endometriyal tabakayı desteklemek için genellikle progesteron takviyesi reçete edilir.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:order-1 rounded-2xl overflow-hidden editorial-shadow bg-surface-container-lowest p-4">
+<img alt="Embriyolog çalışırken" class="rounded-xl w-full object-cover aspect-[4/3]" data-alt="professional embryologist in a clean room laboratory wearing sterile scrubs using a high-precision microscope and monitors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5eqrkGMZ6oQbCf_Q9YWFR73k0I-NbcHaeXq25M6byoIgGArmlf3ih-HEPa3q6ZeGy1ZRCI9JgVg1COXVw68CpNCw9iq3e9rZhQ-QzFoMWkHYN6aGgWRNUaRwyPllSlOgvf_scl8PCV6Zwq3atVbQ3Rp9Z3U4rkh4fwJZTqaqgDeMAWddOv5REyuEAuFwW99rEYcT2yx5ay6RUMmaytogOjIcNXnDj4zlC7VU1l42R9KU-3PNK7GO5_ltP7KpWtc1k2eDW_0lpLZM"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Summary Statistics / Success Data Block -->
+<section class="max-w-7xl mx-auto px-8 mt-40">
+<div class="bg-surface-container-low rounded-3xl p-12 md:p-20 relative overflow-hidden">
+<div class="relative z-10 grid md:grid-cols-2 gap-12 items-center">
+<div>
+<h2 class="text-3xl font-bold mb-6">Klinik Hassasiyetin Önemi</h2>
+<p class="text-on-surface-variant leading-relaxed mb-8">
+                        IVF'nin her aşaması titiz çevresel kontroller ve klinik uzmanlık gerektirir. Başarı oranları; anne yaşı, kısırlık etiyolojisi ve laboratuvar koşullarından etkilenen çok faktörlü bir yapıdadır.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<div class="px-6 py-4 bg-surface-container-lowest rounded-2xl shadow-sm">
+<span class="text-2xl font-serif text-primary block">%95+</span>
+<span class="text-xs font-bold text-outline uppercase tracking-wider">Transfer Başına Başarı*</span>
+</div>
+<div class="px-6 py-4 bg-surface-container-lowest rounded-2xl shadow-sm">
+<span class="text-2xl font-serif text-primary block">3-5 Gün</span>
+<span class="text-xs font-bold text-outline uppercase tracking-wider">Kültür Penceresi</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="h-40 bg-surface-variant/40 rounded-2xl flex items-center justify-center p-8">
+<span class="material-symbols-outlined text-primary scale-[2]">science</span>
+</div>
+<div class="h-40 bg-surface-variant/40 rounded-2xl flex items-center justify-center p-8">
+<span class="material-symbols-outlined text-primary scale-[2]">microbiology</span>
+</div>
+<div class="h-40 bg-surface-variant/40 rounded-2xl flex items-center justify-center p-8">
+<span class="material-symbols-outlined text-primary scale-[2]">biotech</span>
+</div>
+<div class="h-40 bg-surface-variant/40 rounded-2xl flex items-center justify-center p-8">
+<span class="material-symbols-outlined text-primary scale-[2]">monitoring</span>
+</div>
+</div>
+</div>
+<!-- Abstract decorative element -->
+<div class="absolute -bottom-20 -right-20 w-80 h-80 bg-primary/5 rounded-full blur-3xl"></div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-slate-200 dark:border-slate-800 mt-20 bg-slate-100 dark:bg-slate-950">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-8 py-12 max-w-7xl mx-auto gap-6">
+<div class="flex flex-col items-center md:items-start gap-4">
+<div class="font-serif italic text-lg text-slate-700 dark:text-slate-300">tupbebek.com</div>
+<p class="text-xs font-sans tracking-wide uppercase text-slate-500 dark:text-slate-400 max-w-lg text-center md:text-left">
+                © 2024 Clinical Curator Bilimsel Dergisi. Tıbbi Editör: Dr. Senai Aksoy. Tüm tıbbi bilgiler hakem onaylıdır.
+            </p>
+</div>
+<div class="flex flex-wrap justify-center gap-6">
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors text-xs font-sans tracking-wide uppercase" href="#">Tıbbi Sorumluluk Reddi</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors text-xs font-sans tracking-wide uppercase" href="#">Gizlilik Politikası</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors text-xs font-sans tracking-wide uppercase" href="#">SSS</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors text-xs font-sans tracking-wide uppercase" href="#">Editoryal Süreç</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors text-xs font-sans tracking-wide uppercase" href="#">Kullanım Koşulları</a>
+</div>
+</div>
+</footer>
+</body></html>

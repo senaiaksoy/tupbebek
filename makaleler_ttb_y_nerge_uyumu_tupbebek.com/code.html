@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+
+<html lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-tertiary-fixed": "#1d5249",
+              "surface-container-lowest": "#ffffff",
+              "primary-container": "#d2e4ff",
+              "primary-fixed": "#d2e4ff",
+              "on-secondary-fixed-variant": "#4f5d6b",
+              "on-tertiary": "#e3fff7",
+              "secondary-dim": "#475563",
+              "inverse-on-surface": "#9b9d9e",
+              "surface-tint": "#35618f",
+              "tertiary-fixed": "#c8fff2",
+              "primary-dim": "#285582",
+              "surface-container-high": "#e3e9ec",
+              "on-secondary-container": "#455361",
+              "error-container": "#fe8983",
+              "primary": "#35618f",
+              "error-dim": "#4e0309",
+              "surface-container": "#eaeff1",
+              "on-primary-container": "#275482",
+              "on-background": "#2b3437",
+              "on-primary-fixed": "#0d416e",
+              "on-primary-fixed-variant": "#325e8c",
+              "surface-bright": "#f8f9fa",
+              "surface-variant": "#dbe4e7",
+              "surface-container-low": "#f1f4f6",
+              "on-secondary-fixed": "#33414e",
+              "inverse-primary": "#92bcf0",
+              "surface-container-highest": "#dbe4e7",
+              "on-surface-variant": "#586064",
+              "background": "#f8f9fa",
+              "primary-fixed-dim": "#b9d7ff",
+              "tertiary": "#35685e",
+              "on-error": "#fff7f6",
+              "on-surface": "#2b3437",
+              "secondary-container": "#d6e4f5",
+              "surface": "#f8f9fa",
+              "outline": "#737c7f",
+              "tertiary-fixed-dim": "#baf0e4",
+              "secondary-fixed-dim": "#c7d6e7",
+              "outline-variant": "#abb3b7",
+              "tertiary-dim": "#285c53",
+              "on-error-container": "#752121",
+              "surface-dim": "#d1dce0",
+              "on-tertiary-fixed-variant": "#3c6f65",
+              "inverse-surface": "#0c0f10",
+              "tertiary-container": "#c8fff2",
+              "on-primary": "#f5f7ff",
+              "error": "#9f403d",
+              "on-secondary": "#f6f9ff",
+              "on-tertiary-container": "#31645b",
+              "secondary": "#53606f",
+              "secondary-fixed": "#d6e4f5"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; background-color: #f8f9fa; color: #2b3437; -webkit-font-smoothing: antialiased; }
+        .font-noto-serif { font-family: 'Noto Serif', serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-md shadow-sm">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-6 h-20">
+<div class="text-2xl font-serif italic text-blue-900 tracking-tighter">tupbebek.com</div>
+<div class="hidden md:flex items-center space-x-8 font-manrope text-sm tracking-wide">
+<a class="text-slate-600 hover:text-blue-800 transition-colors" href="#">Nedenler</a>
+<a class="text-slate-600 hover:text-blue-800 transition-colors" href="#">Tedavi Yöntemleri</a>
+<a class="text-slate-600 hover:text-blue-800 transition-colors" href="#">Tanı Süreci</a>
+<a class="text-slate-600 hover:text-blue-800 transition-colors" href="#">Rehberler</a>
+<a class="text-slate-600 hover:text-blue-800 transition-colors" href="#">SSS</a>
+<a class="text-blue-900 border-b-2 border-blue-800 pb-1 font-bold" href="/makaleler/">Makaleler</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors">search</button>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-xl font-medium text-sm hover:bg-primary-dim transition-all">Randevu Al</button>
+</div>
+</div>
+<div class="bg-slate-100/50 h-[1px] w-full"></div>
+</nav>
+<main class="pt-32 pb-24">
+<!-- Hero Header -->
+<header class="max-w-7xl mx-auto px-6 mb-20">
+<div class="max-w-3xl">
+<nav class="flex items-center gap-2 text-xs font-label text-on-surface-variant mb-6 uppercase tracking-widest">
+<span>Ana Sayfa</span>
+<span class="material-symbols-outlined text-[10px]">chevron_right</span>
+<span class="text-primary font-semibold">Makaleler</span>
+</nav>
+<h1 class="font-headline text-5xl font-bold text-on-surface leading-tight mb-6">Bilimsel Yaklaşımlar ve <br/><span class="italic text-primary">Güncel Literatür</span></h1>
+<p class="font-body text-lg text-on-surface-variant leading-relaxed">Üreme sağlığı ve tüp bebek teknolojilerindeki en son gelişmeleri, klinik araştırmaları ve uzman görüşlerini içeren akademik arşivimiz.</p>
+</div>
+</header>
+<!-- Category Bento Grid -->
+<section class="max-w-7xl mx-auto px-6 mb-24">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<div class="md:col-span-2 bg-surface-container-low rounded-xl p-8 flex flex-col justify-between group cursor-pointer transition-all hover:bg-surface-container">
+<div>
+<span class="material-symbols-outlined text-primary mb-4 text-3xl">biotech</span>
+<h3 class="font-headline text-2xl font-semibold mb-3">İnfertilite Çözümleri</h3>
+<p class="font-body text-sm text-on-surface-variant">Modern tıbbın sunduğu en yeni kısırlık tedavi protokolleri ve başarı oranları analizi.</p>
+</div>
+<div class="mt-8 flex items-center gap-2 text-primary font-semibold text-sm">
+                    Keşfet <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant/10 rounded-xl p-8 flex flex-col justify-between group cursor-pointer transition-all hover:shadow-lg">
+<div>
+<span class="material-symbols-outlined text-tertiary mb-4 text-3xl">science</span>
+<h3 class="font-headline text-xl font-semibold mb-3">Embriyoloji</h3>
+<p class="font-body text-sm text-on-surface-variant">Laboratuvar ortamında yaşamın başlangıcı.</p>
+</div>
+<div class="mt-6 text-tertiary font-semibold text-xs tracking-wider">14 MAKALE</div>
+</div>
+<div class="bg-surface-container-highest rounded-xl p-8 flex flex-col justify-between group cursor-pointer transition-all hover:bg-surface-variant">
+<div>
+<span class="material-symbols-outlined text-secondary-dim mb-4 text-3xl">genetics</span>
+<h3 class="font-headline text-xl font-semibold mb-3">Genetik</h3>
+<p class="font-body text-sm text-on-surface-variant">PGT-A ve kalıtsal tarama teknolojileri.</p>
+</div>
+<div class="mt-6 text-secondary-dim font-semibold text-xs tracking-wider">08 MAKALE</div>
+</div>
+</div>
+</section>
+<!-- Öne Çıkan Bilimsel Makaleler -->
+<section class="bg-surface-container-low py-24">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex items-end justify-between mb-12">
+<div>
+<h2 class="font-headline text-3xl font-bold mb-4">Öne Çıkan Bilimsel Makaleler</h2>
+<div class="h-1 w-20 bg-primary"></div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<!-- Featured Article 1 -->
+<article class="flex flex-col md:flex-row gap-8 items-start">
+<div class="w-full md:w-1/2 aspect-[4/5] rounded-xl overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" data-alt="Close-up of a high-tech laboratory microscope in a clean medical environment with blue lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9ScXIZc3j9jpYPijAH0UIBDehTilFUEpVnZNYRORz0DG09_emqUYfEDchY5h9YKuexPia_MwGnMYjDvJC56Tem6dmytaD-vOIP4cifWE7ECtST-XuhSVqU4SNWy4uh0EtDSMbHp8t69ehUXvIDiTccLMzN3TdPu5WCJnpcafkGdIZpxfxKuU_LAFOSt2Z3R9KJix4cWVan9DOjF8Ia_U-bja-rgsOIcYysIn1E7UWUxCqeuc_AG2RAAX0v2zOjZCA-IVCn6J3Eck"/>
+</div>
+<div class="w-full md:w-1/2">
+<div class="flex items-center gap-3 mb-4">
+<span class="bg-tertiary-container text-on-tertiary-container px-3 py-1 rounded text-[10px] font-bold tracking-widest uppercase">Derin İnceleme</span>
+<span class="text-xs text-on-surface-variant font-label">12 Dakika Okuma</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-2 leading-snug hover:text-primary transition-colors cursor-pointer">Blastokist Transferinde Başarıyı Artıran Yeni Faktörler</h3>
+<p class="text-[10px] text-primary font-bold tracking-widest uppercase mb-4">Son Güncelleme Tarihi: 14 Mayıs 2024</p>
+<p class="font-body text-on-surface-variant mb-6 leading-relaxed">Beşinci gün embriyo transferinde rahim içi reseptivite haritalama sistemlerinin (ERA) klinik sonuçlar üzerindeki etkilerini inceleyen kapsamlı analiz.</p>
+<!-- Compliance Elements -->
+<div class="mb-6">
+<h4 class="text-[10px] font-bold text-on-surface-variant uppercase tracking-widest mb-2">Bilimsel Kaynaklar</h4>
+<ul class="text-[10px] text-outline list-disc list-inside space-y-1">
+<li>PubMed ID: 32456781 - ERA Clinical Outcomes Study</li>
+<li>ESHRE Guidelines 2023 - Embryo Transfer Protocols</li>
+</ul>
+</div>
+<div class="bg-surface-container-low p-4 rounded-lg mb-6 border-l-4 border-primary">
+<p class="text-[10px] font-medium text-on-surface-variant italic">Bu içerik sadece bilgilendirme amaçlıdır, tanı ve tedavi için hekiminize danışınız.</p>
+</div>
+<div class="flex items-center gap-3 bg-surface-container-lowest p-4 rounded-xl border border-outline-variant/10">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">verified_user</span>
+</div>
+<div>
+<p class="text-xs font-bold text-on-surface">İnceleyen: Senai Aksoy</p>
+<p class="text-[10px] text-on-surface-variant">Kadın Hastalıkları ve Doğum Uzmanı</p>
+</div>
+</div>
+</div>
+</article>
+<!-- Featured Article 2 -->
+<article class="flex flex-col md:flex-row-reverse gap-8 items-start">
+<div class="w-full md:w-1/2 aspect-[4/5] rounded-xl overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" data-alt="Scientist working in a sterile laboratory environment with professional laboratory equipment and focused lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7snFtQsF6Fj6zhHqVPlD4WexZmUN_4YyiXNV8U8Q6QuXM922kwpI68rx5TKqez3c-HI_mLaWJ33qT6WSie5Qv_Bgnf00rxlMurLqP1yl8aJ32L0N8-YdlQ3i4Nsy4xHNGnotVwxAVpK_SfiTOZpkJZflYWg9lDmetDcBEyoEC5B0KbygZu2OklC5RLAwBiih41yQ_1kBFsr1qKA5fuuy0rODE2lrznih7KaIB8_bttE1NhtWhhNSTVzQQjeRii6IZXUTUOKu44h0"/>
+</div>
+<div class="w-full md:w-1/2 text-right">
+<div class="flex items-center justify-end gap-3 mb-4">
+<span class="text-xs text-on-surface-variant font-label">8 Dakika Okuma</span>
+<span class="bg-primary-container text-on-primary-container px-3 py-1 rounded text-[10px] font-bold tracking-widest uppercase">Teknoloji</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-2 leading-snug hover:text-primary transition-colors cursor-pointer">Yapay Zeka Destekli Embriyo Seçim Algoritmaları</h3>
+<p class="text-[10px] text-primary font-bold tracking-widest uppercase mb-4">Son Güncelleme Tarihi: 10 Haziran 2024</p>
+<p class="font-body text-on-surface-variant mb-6 leading-relaxed">Time-lapse görüntüleme sistemlerinde derin öğrenme modellerinin kullanımı ve canlı doğum oranlarına yansıması üzerine güncel bulgular.</p>
+<!-- Compliance Elements -->
+<div class="mb-6">
+<h4 class="text-[10px] font-bold text-on-surface-variant uppercase tracking-widest mb-2">Bilimsel Kaynaklar</h4>
+<ul class="text-[10px] text-outline list-none space-y-1">
+<li>ASRM Journal - AI in Assisted Reproductive Technology (2024)</li>
+<li>Fertility and Sterility Vol. 121 - Deep Learning Analysis</li>
+</ul>
+</div>
+<div class="bg-surface-container-low p-4 rounded-lg mb-6 border-r-4 border-primary">
+<p class="text-[10px] font-medium text-on-surface-variant italic">Bu içerik sadece bilgilendirme amaçlıdır, tanı ve tedavi için hekiminize danışınız.</p>
+</div>
+<div class="flex items-center justify-end gap-3 bg-surface-container-lowest p-4 rounded-xl border border-outline-variant/10">
+<div>
+<p class="text-xs font-bold text-on-surface">İnceleyen: Senai Aksoy</p>
+<p class="text-[10px] text-on-surface-variant">Kadın Hastalıkları ve Doğum Uzmanı</p>
+</div>
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">verified_user</span>
+</div>
+</div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- Güncel Araştırmalar Feed -->
+<section class="max-w-7xl mx-auto px-6 py-24">
+<div class="flex flex-col md:flex-row gap-16">
+<!-- Feed Column -->
+<div class="md:w-2/3">
+<h2 class="font-headline text-3xl font-bold mb-12">Güncel Araştırmalar</h2>
+<div class="space-y-16">
+<!-- Article 1 -->
+<div class="group cursor-default">
+<div class="flex items-center gap-4 text-xs font-label text-on-surface-variant mb-2">
+<span class="text-primary font-bold">EMBRİYOLOJİ</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span>14 Ocak 2024</span>
+</div>
+<p class="text-[10px] text-primary font-bold tracking-widest uppercase mb-4">Son Güncelleme Tarihi: 05 Ağustos 2024</p>
+<h3 class="font-headline text-2xl font-bold mb-4 group-hover:text-primary transition-colors">Yumurta Rezervi Düşüklüğünde Yeni Büyüme Faktörleri</h3>
+<p class="font-body text-on-surface-variant leading-relaxed mb-6">Platelet-rich plasma (PRP) uygulamalarının over fonksiyonları üzerindeki potansiyel iyileştirici etkilerini ele alan son meta-analiz sonuçları...</p>
+<div class="mb-6 p-4 bg-surface-container-low rounded-xl">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div>
+<h4 class="text-[10px] font-bold text-on-surface-variant uppercase mb-2">Kaynaklar</h4>
+<p class="text-[10px] text-outline italic leading-tight">Journal of Assisted Reproduction and Genetics (2024), Cochrane Database of Systematic Reviews.</p>
+</div>
+<div class="text-right">
+<p class="text-[10px] font-semibold text-primary uppercase">Bilgilendirme Notu</p>
+<p class="text-[10px] text-on-surface-variant italic leading-tight">Tanı ve tedavi için hekiminize danışınız.</p>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-sm" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="text-xs font-semibold text-on-surface">Yazar: Senai Aksoy (Kadın Hastalıkları ve Doğum Uzmanı)</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+<div class="mt-8 h-[1px] w-full bg-surface-container-high"></div>
+</div>
+<!-- Article 2 -->
+<div class="group cursor-default">
+<div class="flex items-center gap-4 text-xs font-label text-on-surface-variant mb-2">
+<span class="text-primary font-bold">GENETİK</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span>08 Ocak 2024</span>
+</div>
+<p class="text-[10px] text-primary font-bold tracking-widest uppercase mb-4">Son Güncelleme Tarihi: 22 Eylül 2024</p>
+<h3 class="font-headline text-2xl font-bold mb-4 group-hover:text-primary transition-colors">Tek Gen Hastalıklarında PGT-M Yönteminin Hassasiyeti</h3>
+<p class="font-body text-on-surface-variant leading-relaxed mb-6">Haplotipleme tekniklerindeki son ilerlemeler ve nadir görülen genetik bozuklukların embriyo aşamasında taranmasındaki doğruluk oranları...</p>
+<div class="mb-6 p-4 bg-surface-container-low rounded-xl">
+<div class="flex flex-col gap-2">
+<p class="text-[10px] text-outline"><strong class="text-on-surface-variant uppercase">Kaynaklar:</strong> Nature Reviews Genetics (2023), PGT Clinical Standards ASRM.</p>
+<p class="text-[10px] text-on-surface-variant italic">Bu içerik sadece bilgilendirme amaçlıdır, tanı ve tedavi için hekiminize danışınız.</p>
+</div>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-sm" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="text-xs font-semibold text-on-surface">Onaylayan: Senai Aksoy (Kadın Hastalıkları ve Doğum Uzmanı)</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+<div class="mt-8 h-[1px] w-full bg-surface-container-high"></div>
+</div>
+<!-- Article 3 -->
+<div class="group cursor-default">
+<div class="flex items-center gap-4 text-xs font-label text-on-surface-variant mb-2">
+<span class="text-primary font-bold">YAŞAM TARZI</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span>02 Ocak 2024</span>
+</div>
+<p class="text-[10px] text-primary font-bold tracking-widest uppercase mb-4">Son Güncelleme Tarihi: 11 Kasım 2024</p>
+<h3 class="font-headline text-2xl font-bold mb-4 group-hover:text-primary transition-colors">Antioksidan Desteklerinin Erkek Fertilitesi Üzerindeki Etkisi</h3>
+<p class="font-body text-on-surface-variant leading-relaxed mb-6">Sperm DNA fragmantasyonu ve oksidatif stres parametrelerinin beslenme düzeni ile optimize edilmesine dair kanıta dayalı tıp bulguları...</p>
+<div class="mb-6 p-4 border border-outline-variant/10 rounded-xl space-y-2">
+<p class="text-[10px] text-outline"><strong>Referanslar:</strong> WHO Laboratory Manual for Examination and Processing of Human Semen (6th Ed), ASRM Committee Opinion.</p>
+<p class="text-[10px] font-medium text-on-surface-variant italic">Bu içerik sadece bilgilendirme amaçlıdır, tanı ve tedavi için hekiminize danışınız.</p>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-sm" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="text-xs font-semibold text-on-surface">İnceleme: Senai Aksoy (Kadın Hastalıkları ve Doğum Uzmanı)</span>
+</div>
+<span class="material-symbols-outlined text-outline-variant group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</div>
+</div>
+</div>
+<button class="mt-16 w-full py-4 border border-outline-variant/30 rounded-xl font-label text-sm text-on-surface-variant hover:bg-surface-container transition-all">Daha Fazla Makale Yükle</button>
+</div>
+<!-- Sidebar -->
+<aside class="md:w-1/3">
+<div class="sticky top-32 space-y-8">
+<!-- Informative Card -->
+<div class="bg-primary text-on-primary rounded-xl p-8 overflow-hidden relative">
+<div class="relative z-10">
+<h3 class="font-headline text-xl font-bold mb-4 italic">Bilimsel Arşiv</h3>
+<p class="font-body text-sm opacity-90 leading-relaxed">Bu platformda yer alan tüm içerikler, güncel tıbbi literatür ve TTB İnternet Siteleri Yönergesi hükümleri uyarınca, sadece bilgilendirme amacıyla Senai Aksoy (Kadın Hastalıkları ve Doğum Uzmanı) onayıyla hazırlanmaktadır.</p>
+</div>
+<div class="absolute -right-8 -bottom-8 opacity-10">
+<span class="material-symbols-outlined text-[160px]">library_books</span>
+</div>
+</div>
+<div class="bg-surface-container rounded-xl p-8">
+<h3 class="font-headline text-lg font-bold mb-6">Popüler Etiketler</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1.5 bg-surface-container-highest rounded-full text-xs font-label text-on-surface-variant hover:bg-primary-container hover:text-on-primary-container transition-colors cursor-pointer">#tüpbebek</span>
+<span class="px-3 py-1.5 bg-surface-container-highest rounded-full text-xs font-label text-on-surface-variant hover:bg-primary-container hover:text-on-primary-container transition-colors cursor-pointer">#pgs</span>
+<span class="px-3 py-1.5 bg-surface-container-highest rounded-full text-xs font-label text-on-surface-variant hover:bg-primary-container hover:text-on-primary-container transition-colors cursor-pointer">#infertilite</span>
+<span class="px-3 py-1.5 bg-surface-container-highest rounded-full text-xs font-label text-on-surface-variant hover:bg-primary-container hover:text-on-primary-container transition-colors cursor-pointer">#embriyotransferi</span>
+<span class="px-3 py-1.5 bg-surface-container-highest rounded-full text-xs font-label text-on-surface-variant hover:bg-primary-container hover:text-on-primary-container transition-colors cursor-pointer">#ivfbasarisi</span>
+<span class="px-3 py-1.5 bg-surface-container-highest rounded-full text-xs font-label text-on-surface-variant hover:bg-primary-container hover:text-on-primary-container transition-colors cursor-pointer">#eggdonation</span>
+</div>
+</div>
+</div>
+</aside>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 border-t border-slate-200">
+<div class="max-w-7xl mx-auto py-16 px-6">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+<div class="md:col-span-2">
+<div class="text-2xl font-serif italic text-slate-900 mb-6">tupbebek.com</div>
+<p class="font-manrope text-sm text-slate-500 max-w-sm leading-relaxed">Türkiye'nin lider üreme sağlığı portalı. Bilimsel veriler ışığında, etik değerlere bağlı kalarak bilgilendirme amacı gütmektedir.</p>
+</div>
+<div>
+<h4 class="font-headline font-bold text-slate-900 mb-6">Hızlı Bağlantılar</h4>
+<ul class="space-y-3 font-manrope text-sm text-slate-500">
+<li><a class="hover:text-blue-900 transition-colors" href="#">Hakkımızda</a></li>
+<li><a class="hover:text-blue-900 transition-colors" href="#">Tedavi Paketleri</a></li>
+<li><a class="hover:text-blue-900 transition-colors" href="#">Doktorlarımız</a></li>
+<li><a class="hover:text-blue-900 transition-colors" href="#">İletişim</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline font-bold text-slate-900 mb-6">Yasal</h4>
+<ul class="space-y-3 font-manrope text-sm text-slate-500">
+<li><a class="hover:text-blue-900 transition-colors" href="#">KVKK Aydınlatma</a></li>
+<li><a class="hover:text-blue-900 transition-colors" href="#">Gizlilik Politikası</a></li>
+<li><a class="hover:text-blue-900 transition-colors" href="#">Çerez Politikası</a></li>
+</ul>
+</div>
+</div>
+<div class="pt-12 border-t border-slate-200">
+<div class="mb-8 p-6 bg-white border border-slate-100 rounded-xl">
+<p class="font-manrope text-xs text-slate-500 leading-loose italic">
+<span class="font-bold block mb-2">Yasal Uyarı (2026 Sağlık Mevzuatı &amp; TTB Yönergesi Uyumu):</span>
+                    Bu web sitesinde paylaşılan içerikler, 2026 yılı Sağlık Hizmetlerinde Tanıtım ve Bilgilendirme Faaliyetleri Yönetmeliği ve Türk Tabipleri Birliği (TTB) İnternet Siteleri Yönergesi uyarınca sadece toplumu bilgilendirme amaçlıdır. Sayfa içeriği, hiçbir şekilde tıbbi teşhis, tedavi veya kişisel sağlık tavsiyesi niteliği taşımaz. Sitedeki bilgiler, bir hekim muayenesinin yerini tutamaz. Sağlık durumunuzla ilgili en doğru kararı hekiminizle görüşerek alınız. Bu mecrada herhangi bir ticari veya klinik yönlendirme yapılmamaktadır. Makale sonlarında yer alan tıbbi kaynaklar bilimsel doğruluk teyidi içindir.
+                </p>
+</div>
+<div class="flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="font-manrope text-xs text-slate-500">© 2024-2026 tupbebek.com. Tıbbi Editör: Senai Aksoy (Kadın Hastalıkları ve Doğum Uzmanı). Tüm hakları saklıdır.</p>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

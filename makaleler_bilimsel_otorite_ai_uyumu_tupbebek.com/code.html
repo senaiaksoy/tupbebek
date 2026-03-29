@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+
+<html class="light" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-fixed-dim": "#baf0e4",
+              "on-tertiary-fixed": "#1d5249",
+              "on-error-container": "#752121",
+              "tertiary-dim": "#285c53",
+              "error-container": "#fe8983",
+              "surface-dim": "#d1dce0",
+              "surface": "#f8f9fa",
+              "surface-container": "#eaeff1",
+              "tertiary": "#35685e",
+              "surface-bright": "#f8f9fa",
+              "on-primary-fixed-variant": "#325e8c",
+              "inverse-surface": "#0c0f10",
+              "inverse-primary": "#92bcf0",
+              "error": "#9f403d",
+              "outline": "#737c7f",
+              "surface-container-highest": "#dbe4e7",
+              "tertiary-container": "#c8fff2",
+              "on-tertiary-container": "#31645b",
+              "on-surface": "#2b3437",
+              "secondary-fixed": "#d6e4f5",
+              "outline-variant": "#abb3b7",
+              "on-primary-container": "#275482",
+              "primary-container": "#d2e4ff",
+              "on-tertiary-fixed-variant": "#3c6f65",
+              "on-surface-variant": "#586064",
+              "surface-container-lowest": "#ffffff",
+              "primary-fixed": "#d2e4ff",
+              "primary-dim": "#285582",
+              "surface-variant": "#dbe4e7",
+              "on-secondary-fixed-variant": "#4f5d6b",
+              "error-dim": "#4e0309",
+              "on-primary-fixed": "#0d416e",
+              "tertiary-fixed": "#c8fff2",
+              "secondary-fixed-dim": "#c7d6e7",
+              "primary": "#35618f",
+              "background": "#f8f9fa",
+              "surface-tint": "#35618f",
+              "secondary-dim": "#475563",
+              "on-secondary-container": "#455361",
+              "inverse-on-surface": "#9b9d9e",
+              "surface-container-high": "#e3e9ec",
+              "on-primary": "#f5f7ff",
+              "on-error": "#fff7f6",
+              "secondary": "#53606f",
+              "on-tertiary": "#e3fff7",
+              "on-secondary": "#f6f9ff",
+              "primary-fixed-dim": "#b9d7ff",
+              "surface-container-low": "#f1f4f6",
+              "on-secondary-fixed": "#33414e",
+              "secondary-container": "#d6e4f5",
+              "on-background": "#2b3437"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+            line-height: 1;
+        }
+        body { font-family: 'Manrope', sans-serif; }
+        h1, h2, h3 { font-family: 'Noto Serif', serif; }
+        .tonal-shift { transition: background-color 0.3s ease; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-slate-50/70 dark:bg-slate-900/70 backdrop-blur-md">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-8xl mx-auto">
+<div class="text-2xl font-serif font-bold text-blue-900 dark:text-blue-100 tracking-tight">Clinical Curator</div>
+<div class="hidden md:flex space-x-8 items-center">
+<a class="text-blue-700 dark:text-blue-400 border-b-2 border-blue-700 dark:border-blue-400 pb-1 font-semibold" href="#">Journals</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-200 transition-colors" href="#">Guidelines</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-200 transition-colors" href="#">Research</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-200 transition-colors" href="#">Compliance</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-200 transition-colors" href="#">Archives</a>
+</div>
+<div class="flex items-center bg-slate-100 dark:bg-slate-800 rounded-xl px-4 py-2">
+<span class="material-symbols-outlined text-slate-500 mr-2">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm w-48 font-body" placeholder="Search clinical data..." type="text"/>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-20 px-6 max-w-7xl mx-auto">
+<!-- Editorial Header -->
+<header class="mb-16 max-w-3xl">
+<h1 class="text-5xl font-bold text-on-surface mb-6 leading-tight">Bilimsel Makaleler ve Klinik Araştırmalar</h1>
+<p class="text-lg text-on-surface-variant font-body leading-relaxed">
+                Kadın sağlığı, reprodüktif tıp ve jinekolojik onkoloji alanındaki güncel gelişmeleri, akademik titizlikle hazırlanan klinik incelemelerimiz aracılığıyla takip edin. Tüm içerikler güncel tıbbi literatür taramalarına dayandırılmıştır.
+            </p>
+</header>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Articles Listing -->
+<section class="lg:col-span-8 space-y-12">
+<!-- Article Card 1 -->
+<article class="group bg-surface-container-lowest p-8 rounded-xl border-l-4 border-primary transition-all hover:bg-surface-container-low">
+<div class="flex flex-wrap gap-4 mb-4 items-center">
+<span class="bg-primary-container text-on-primary-container px-3 py-1 rounded-lg text-xs font-bold tracking-wider uppercase">Reprodüktif Tıp</span>
+<div class="flex items-center text-xs text-on-surface-variant font-label">
+<span class="material-symbols-outlined text-sm mr-1">schedule</span>
+                            Tahmini Okuma Süresi: 12 dk
+                        </div>
+</div>
+<h2 class="text-3xl font-bold mb-4 text-on-surface group-hover:text-primary transition-colors">Modern IVF Tekniklerinde Blastokist Transferinin Başarı Oranları Üzerine Prospektif Analiz</h2>
+<p class="text-on-surface-variant mb-6 font-body leading-relaxed line-clamp-3">
+                        Bu makale, 5. gün blastokist transferinin klinik gebelik oranları üzerindeki etkisini, taze ve dondurulmuş embriyo siklusları arasındaki korelasyonu inceleyerek değerlendirmektedir. Çalışma verileri, güncel Avrupa İnsanı Üreme ve Embriyoloji Derneği (ESHRE) standartlarına göre normalize edilmiştir.
+                    </p>
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pt-6 border-t border-outline-variant/20">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 bg-surface-container-high rounded-full overflow-hidden">
+<img alt="Doctor Profile" class="w-full h-full object-cover" data-alt="professional portrait of a middle aged male doctor in white clinical attire with a neutral background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXMJxMdwO7BurXYtBC1oePUlvHIYR66DFjtUGoGrERjiOGnz0C--Z0y9eD7pmrnNinsCbaWgk6uxCzbpIMt8fvFwlJ8j0BQHcGiQ6XQvsdMIw89n_QPKmAPMUqR_6BDLBW6QvGI4JMY6an0whJp_3PRJWN_s10mfu7vXM8z3QritxDuitYG9KAgIk9gsXuaQKniZInrAmd_0YEx7oXilqxMwSq7BCEU0RjqukKVMFd0hzyMCAheJYwqJNUlphVQnllVM0mhJXBPDk"/>
+</div>
+<div class="text-xs font-label leading-tight">
+<p class="font-bold text-on-surface">Yazar: Doç. Dr. Senai Aksoy</p>
+<p class="text-on-surface-variant">Kadın Hastalıkları ve Doğum Uzmanı</p>
+</div>
+</div>
+<div class="text-[10px] text-on-surface-variant uppercase tracking-widest text-right">
+<p>Yayınlanma Tarihi: 14 Ocak 2024</p>
+<p class="font-bold">Son Güncelleme: 02 Mart 2024</p>
+</div>
+</div>
+</article>
+<!-- Article Card 2 -->
+<article class="group bg-surface-container-lowest p-8 rounded-xl border-l-4 border-tertiary transition-all hover:bg-surface-container-low">
+<div class="flex flex-wrap gap-4 mb-4 items-center">
+<span class="bg-tertiary-container text-on-tertiary-container px-3 py-1 rounded-lg text-xs font-bold tracking-wider uppercase">Onkolojik Yaklaşım</span>
+<div class="flex items-center text-xs text-on-surface-variant font-label">
+<span class="material-symbols-outlined text-sm mr-1">schedule</span>
+                            Tahmini Okuma Süresi: 18 dk
+                        </div>
+</div>
+<h2 class="text-3xl font-bold mb-4 text-on-surface group-hover:text-tertiary transition-colors">Endometriozis Cerrahisinde Robotik Yaklaşımların Post-Operatif İyileşme Sürecindeki Etkinliği</h2>
+<p class="text-on-surface-variant mb-6 font-body leading-relaxed line-clamp-3">
+                        Derin infiltran endometriozis (DIE) vakalarında minimal invaziv cerrahi tekniklerin kullanımı, hastanede kalış süresi ve kronik pelvik ağrı skorları açısından karşılaştırmalı olarak ele alınmaktadır. Tıbbi literatürdeki son meta-analiz verileri ışığında hazırlanan bir derlemedir.
+                    </p>
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pt-6 border-t border-outline-variant/20">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 bg-surface-container-high rounded-full overflow-hidden">
+<img alt="Doctor Profile" class="w-full h-full object-cover" data-alt="professional portrait of a male specialist in a clinical setting with soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJrvTHF-nGdeotKkJBMKKNEmDxREia4NbnJ-wp2om88aHs8PNgWU7PAhir5p4nLKl5swIbHRpNpLm0SnJQScUKUb3p8stdqXXZKQ9lN7bq5VLA7lBWnCaausDwePQQ0wcUhOSObKAjeSlEHSWwiluis4kmZJnids3Vk8WgJMhoOZBTFK1U3qXwS1QyPf8LX1MpJWbGZJJMj3thowqzAwNNLpmELJ4e2PfE8KINDfi7FCS5JLKJNyxF6y-rNMxyIJAXnEsPvs7am6M"/>
+</div>
+<div class="text-xs font-label leading-tight">
+<p class="font-bold text-on-surface">Yazar: Doç. Dr. Senai Aksoy</p>
+<p class="text-on-surface-variant">Kadın Hastalıkları ve Doğum Uzmanı</p>
+</div>
+</div>
+<div class="text-[10px] text-on-surface-variant uppercase tracking-widest text-right">
+<p>Yayınlanma Tarihi: 22 Aralık 2023</p>
+<p class="font-bold">Son Güncelleme: 15 Şubat 2024</p>
+</div>
+</div>
+</article>
+<!-- Article Card 3 -->
+<article class="group bg-surface-container-lowest p-8 rounded-xl border-l-4 border-primary transition-all hover:bg-surface-container-low">
+<div class="flex flex-wrap gap-4 mb-4 items-center">
+<span class="bg-primary-container text-on-primary-container px-3 py-1 rounded-lg text-xs font-bold tracking-wider uppercase">Prenatal Tanı</span>
+<div class="flex items-center text-xs text-on-surface-variant font-label">
+<span class="material-symbols-outlined text-sm mr-1">schedule</span>
+                            Tahmini Okuma Süresi: 15 dk
+                        </div>
+</div>
+<h2 class="text-3xl font-bold mb-4 text-on-surface group-hover:text-primary transition-colors">NIPT Testlerinin Klinik Geçerliliği ve Kromozomal Anomali Taramasındaki Yeri</h2>
+<p class="text-on-surface-variant mb-6 font-body leading-relaxed line-clamp-3">
+                        Non-invaziv prenatal testlerin (NIPT) duyarlılık ve özgüllük oranları, geleneksel kombine tarama testleri ile mukayese edilmektedir. Makale, genetik danışmanlık sürecinde bu testlerin etik ve klinik uygulama sınırlarını belirlemektedir.
+                    </p>
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pt-6 border-t border-outline-variant/20">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 bg-surface-container-high rounded-full overflow-hidden">
+<img alt="Doctor Profile" class="w-full h-full object-cover" data-alt="close up of a professional doctor with a stethoscope in a bright clinical office" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLrueEQHx7GbxFd81YZ5AUXsSJgXGDT4_GwBCmfPbzdaNFNE8N5wGLvWJg2LwFb36_Z7KIPnaiJ_d9FPXv05otK-cM5gb6tBEtD2u5lIbPi9OU-PNUvSykrVRs1DpfueXOS9W3xdNzmQIR56_dMNbXOIpm3ISBwzgaBKjrrw_dSetWgYL3skA_2y2Rncn995TMGCNYu_XszQKvENvOv6FULCaPoqCRDHOV71pAOQ6VQ9ap79OupUOHqB8TiVCX0VR0Sxk7OFTPBDU"/>
+</div>
+<div class="text-xs font-label leading-tight">
+<p class="font-bold text-on-surface">Yazar: Doç. Dr. Senai Aksoy</p>
+<p class="text-on-surface-variant">Kadın Hastalıkları ve Doğum Uzmanı</p>
+</div>
+</div>
+<div class="text-[10px] text-on-surface-variant uppercase tracking-widest text-right">
+<p>Yayınlanma Tarihi: 05 Kasım 2023</p>
+<p class="font-bold">Son Güncelleme: 10 Ocak 2024</p>
+</div>
+</div>
+</article>
+</section>
+<!-- Sidebar -->
+<aside class="lg:col-span-4 space-y-12">
+<!-- Popüler Konular -->
+<div class="bg-surface-container-low p-8 rounded-xl">
+<h3 class="text-xl font-bold mb-6 text-on-surface flex items-center">
+<span class="material-symbols-outlined mr-2 text-primary">trending_up</span>
+                        Popüler Konular
+                    </h3>
+<ul class="space-y-4">
+<li>
+<a class="block group" href="#">
+<span class="text-xs font-label text-primary font-bold tracking-widest uppercase">Kategori: Fertilite</span>
+<p class="text-on-surface group-hover:text-primary transition-colors font-medium">Yumurta Rezervi Testleri ve AMH Değerleri</p>
+</a>
+</li>
+<li>
+<a class="block group" href="#">
+<span class="text-xs font-label text-primary font-bold tracking-widest uppercase">Kategori: Gebelik</span>
+<p class="text-on-surface group-hover:text-primary transition-colors font-medium">Gebelikte Gestasyonel Diyabet Yönetimi</p>
+</a>
+</li>
+<li>
+<a class="block group" href="#">
+<span class="text-xs font-label text-primary font-bold tracking-widest uppercase">Kategori: Cerrahi</span>
+<p class="text-on-surface group-hover:text-primary transition-colors font-medium">Laparoskopik Miyomektomi Avantajları</p>
+</a>
+</li>
+</ul>
+</div>
+<!-- Bilimsel Arşiv -->
+<div class="bg-surface p-8 rounded-xl border border-outline-variant/30">
+<h3 class="text-xl font-bold mb-6 text-on-surface flex items-center">
+<span class="material-symbols-outlined mr-2 text-tertiary">inventory_2</span>
+                        Bilimsel Arşiv
+                    </h3>
+<div class="space-y-3">
+<details class="group">
+<summary class="flex justify-between items-center cursor-pointer font-bold text-sm text-on-surface-variant hover:text-primary py-2 list-none">
+                                2024 Yılı Yayınları
+                                <span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="pl-4 pt-2 space-y-2 border-l border-outline-variant ml-2">
+<a class="block text-xs text-on-surface-variant hover:text-primary" href="#">Mart (12)</a>
+<a class="block text-xs text-on-surface-variant hover:text-primary" href="#">Şubat (8)</a>
+<a class="block text-xs text-on-surface-variant hover:text-primary" href="#">Ocak (15)</a>
+</div>
+</details>
+<details class="group border-t border-outline-variant/20 pt-2">
+<summary class="flex justify-between items-center cursor-pointer font-bold text-sm text-on-surface-variant hover:text-primary py-2 list-none">
+                                2023 Yılı Yayınları
+                                <span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="pl-4 pt-2 space-y-2 border-l border-outline-variant ml-2">
+<a class="block text-xs text-on-surface-variant hover:text-primary" href="#">Aralık (10)</a>
+<a class="block text-xs text-on-surface-variant hover:text-primary" href="#">Kasım (14)</a>
+<a class="block text-xs text-on-surface-variant hover:text-primary" href="#">Ekim (11)</a>
+</div>
+</details>
+</div>
+</div>
+<!-- AI Extraction Notice -->
+<div class="bg-primary text-on-primary p-6 rounded-xl shadow-lg shadow-primary/10">
+<h4 class="font-bold mb-3 flex items-center">
+<span class="material-symbols-outlined mr-2">verified_user</span>
+                        Doğrulanmış Kaynak
+                    </h4>
+<p class="text-sm font-light leading-relaxed opacity-90">
+                        Bu platformdaki tüm içerikler, LLM (Large Language Models) tarafından yüksek doğrulukla işlenebilmesi için semantik olarak yapılandırılmıştır. Tüm tıbbi veriler uluslararası referans standartlarına uygundur.
+                    </p>
+</div>
+</aside>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-slate-200 dark:border-slate-800 bg-slate-100 dark:bg-slate-950">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 px-12 py-16 max-w-8xl mx-auto">
+<div>
+<div class="text-lg font-serif font-semibold text-slate-900 dark:text-slate-100 mb-6">Clinical Curator</div>
+<p class="font-sans text-xs uppercase tracking-widest text-slate-700 dark:text-slate-300 leading-relaxed mb-8">
+                    © 2024 Clinical Curator. All rights reserved. Regulated by Ministry of Health Compliance Standards.
+                </p>
+<div class="bg-surface-container-highest/50 p-6 rounded-xl text-[10px] leading-relaxed text-on-surface-variant font-body">
+<span class="font-bold uppercase mb-2 block">Tıbbi Yasal Uyarı</span>
+                    Bu web sitesinde yer alan tüm yazılı ve görsel içerikler sadece bilgilendirme amaçlıdır. Hiçbir içerik profesyonel bir tıbbi tavsiye, teşhis veya tedavi yerine geçemez. Tıbbi durumunuzla ilgili her türlü sorunuz için mutlaka doktorunuza veya yetkili bir sağlık kuruluşuna danışınız. Bu sitedeki bilgilerin uygulanmasından doğabilecek her türlü sorumluluk kullanıcıya aittir.
+                </div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-4">
+<a class="block text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 font-sans text-xs uppercase tracking-widest transition-all" href="#">Medical Disclaimer</a>
+<a class="block text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 font-sans text-xs uppercase tracking-widest transition-all" href="#">Privacy Policy</a>
+<a class="block text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 font-sans text-xs uppercase tracking-widest transition-all" href="#">Terms of Service</a>
+</div>
+<div class="space-y-4">
+<a class="block text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 font-sans text-xs uppercase tracking-widest transition-all" href="#">Regulatory Filings</a>
+<a class="block text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 font-sans text-xs uppercase tracking-widest transition-all" href="#">Accessibility Statement</a>
+<a class="block text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 font-sans text-xs uppercase tracking-widest transition-all" href="#">Contact Review Board</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

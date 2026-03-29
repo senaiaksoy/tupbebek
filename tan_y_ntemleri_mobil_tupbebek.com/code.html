@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+
+<html lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface": "#f8f9fa",
+              "on-primary-container": "#275482",
+              "inverse-primary": "#92bcf0",
+              "background": "#f8f9fa",
+              "on-primary-fixed-variant": "#325e8c",
+              "secondary": "#53606f",
+              "on-tertiary-fixed-variant": "#3c6f65",
+              "surface-bright": "#f8f9fa",
+              "on-secondary-fixed": "#33414e",
+              "on-error": "#fff7f6",
+              "tertiary": "#35685e",
+              "surface-variant": "#dbe4e7",
+              "primary-fixed-dim": "#b9d7ff",
+              "surface-tint": "#35618f",
+              "on-primary": "#f5f7ff",
+              "primary-container": "#d2e4ff",
+              "on-secondary-fixed-variant": "#4f5d6b",
+              "outline-variant": "#abb3b7",
+              "tertiary-container": "#c8fff2",
+              "on-secondary": "#f6f9ff",
+              "on-background": "#2b3437",
+              "inverse-on-surface": "#9b9d9e",
+              "outline": "#737c7f",
+              "secondary-dim": "#475563",
+              "tertiary-fixed": "#c8fff2",
+              "secondary-fixed-dim": "#c7d6e7",
+              "surface-container-low": "#f1f4f6",
+              "surface-container-highest": "#dbe4e7",
+              "surface-container": "#eaeff1",
+              "on-surface": "#2b3437",
+              "on-tertiary-container": "#31645b",
+              "surface-container-lowest": "#ffffff",
+              "primary-dim": "#285582",
+              "tertiary-dim": "#285c53",
+              "surface-container-high": "#e3e9ec",
+              "on-tertiary": "#e3fff7",
+              "on-surface-variant": "#586064",
+              "error-container": "#fe8983",
+              "on-primary-fixed": "#0d416e",
+              "error-dim": "#4e0309",
+              "primary-fixed": "#d2e4ff",
+              "primary": "#35618f",
+              "inverse-surface": "#0c0f10",
+              "on-secondary-container": "#455361",
+              "on-error-container": "#752121",
+              "on-tertiary-fixed": "#1d5249",
+              "surface-dim": "#d1dce0",
+              "secondary-container": "#d6e4f5",
+              "secondary-fixed": "#d6e4f5",
+              "tertiary-fixed-dim": "#baf0e4",
+              "error": "#9f403d"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      .editorial-shadow {
+        box-shadow: 0 20px 40px rgba(43, 52, 55, 0.05);
+      }
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-background font-body select-none">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#f8f9fa] transition-colors duration-300 ease-in-out flex items-center justify-between px-6 py-4 h-16 w-full max-w-screen-xl mx-auto shadow-none">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#35618f]" data-icon="menu">menu</span>
+<span class="font-serif italic text-xl text-[#35618f]">Fertility Science</span>
+</div>
+<div class="flex items-center">
+<span class="material-symbols-outlined text-slate-600" data-icon="search">search</span>
+</div>
+</header>
+<main class="pt-20 pb-24 px-4 space-y-10">
+<!-- Hero Section -->
+<section class="space-y-4">
+<div class="inline-flex items-center px-3 py-1 bg-primary-container text-on-primary-container rounded-full text-[10px] font-bold tracking-widest uppercase">
+                Diagnostic Protocols 2026
+            </div>
+<h1 class="font-headline text-3xl font-bold text-on-surface leading-tight">
+                Tanı Yöntemleri &amp; <br/><span class="italic text-primary">Klinik Değerlendirme</span>
+</h1>
+<p class="text-on-surface-variant leading-relaxed text-sm">
+                Fertilite yolculuğunda ilk adım, bilimsel doğruluk ve kişiselleştirilmiş analizdir. Modern tanı protokollerimizi keşfedin.
+            </p>
+</section>
+<!-- Expert Note - Asymmetric Layout -->
+<section class="relative bg-surface-container-lowest p-6 rounded-xl editorial-shadow overflow-hidden">
+<div class="absolute top-0 right-0 w-24 h-24 bg-primary/5 rounded-full -mr-12 -mt-12"></div>
+<div class="flex items-start gap-4 mb-4">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Professional portrait of a middle-aged male doctor in a white medical coat, soft studio lighting, clean professional background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAE0fHOwItNQyk8GcGzFbCUpvV6wWTReHxJWuQPT1-F7_vTLJ5IHdCWgQsqWCkANBWcYf7XkTHsWRnnIy5hseYv6Nax6vB1fkHlo3hxPHUGxOJfpP6h3PN4ixfKwHOVIHJqOmxYbJb7TK6sYNxLaT4jXs-fYTYNGxEcADDezFUDYTghRFu7nZZsXEmdxLVZcxVQqfcdVd5vASXX9U1X12uhPpwLQcKHmLSjlubFEJXn-AOH6-rAIwWNvY0F7puR4olfZHy8oTi_cZc"/>
+</div>
+<div>
+<h3 class="font-bold text-on-surface text-sm">Doç. Dr. Senai Aksoy</h3>
+<p class="text-[11px] text-outline tracking-wide uppercase">Klinik Direktörü</p>
+</div>
+</div>
+<p class="italic font-headline text-on-surface leading-relaxed text-base">
+                "Her hastanın hikayesi benzersizdir. Tanı sürecinde sadece verilere değil, o verilerin sizin hayatınızdaki anlamına odaklanıyoruz."
+            </p>
+</section>
+<!-- Step-by-Step Diagnostic Grid (Bento Style) -->
+<section class="space-y-6">
+<h2 class="font-headline text-xl font-bold px-2">Klinik Tanı Süreci</h2>
+<div class="grid grid-cols-1 gap-4">
+<!-- Step 1 -->
+<div class="bg-surface-container-lowest p-5 rounded-xl space-y-3">
+<div class="flex justify-between items-center">
+<span class="font-serif text-3xl text-surface-variant font-bold">01</span>
+<span class="material-symbols-outlined text-primary" data-icon="history_edu">history_edu</span>
+</div>
+<h4 class="font-bold text-on-surface">İlk Konsültasyon</h4>
+<p class="text-xs text-on-surface-variant leading-relaxed">Tıbbi geçmişin detaylı analizi ve yaşam tarzı faktörlerinin 2026 regülasyonlarına göre değerlendirilmesi.</p>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-lowest p-5 rounded-xl space-y-3">
+<div class="flex justify-between items-center">
+<span class="font-serif text-3xl text-surface-variant font-bold">02</span>
+<span class="material-symbols-outlined text-primary" data-icon="biotech">biotech</span>
+</div>
+<h4 class="font-bold text-on-surface">Hormonal Profilleme</h4>
+<p class="text-xs text-on-surface-variant leading-relaxed">AMH, FSH, LH ve E2 seviyelerinin döngüye uygun zamanlarda hassas ölçümü.</p>
+</div>
+<!-- Step 3 (Visual Offset) -->
+<div class="bg-primary text-on-primary p-6 rounded-xl space-y-4">
+<div class="flex justify-between items-start">
+<div class="space-y-1">
+<span class="font-serif text-3xl text-on-primary/30 font-bold">03</span>
+<h4 class="font-bold text-lg">Görüntüleme Teknikleri</h4>
+</div>
+<span class="material-symbols-outlined text-4xl" data-icon="visibility" style="font-variation-settings: 'FILL' 1;">visibility</span>
+</div>
+<p class="text-xs text-on-primary/80 leading-relaxed">4D Ultrasonografi ve HSG ile rahim ve tüplerin yapısal bütünlüğünün dijital haritalandırılması.</p>
+</div>
+</div>
+</section>
+<!-- Clinical Reference Table -->
+<section class="space-y-4">
+<div class="flex items-center justify-between px-2">
+<h2 class="font-headline text-xl font-bold">Referans Değerler</h2>
+<span class="text-[10px] font-bold text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-xs" data-icon="verified">verified</span> GÜNCEL 2026
+                </span>
+</div>
+<div class="overflow-x-auto no-scrollbar bg-surface-container rounded-xl">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-high">
+<th class="p-4 text-[10px] font-bold uppercase tracking-wider text-on-surface-variant">Parametre</th>
+<th class="p-4 text-[10px] font-bold uppercase tracking-wider text-on-surface-variant">İdeal Aralık</th>
+<th class="p-4 text-[10px] font-bold uppercase tracking-wider text-on-surface-variant">Birim</th>
+</tr>
+</thead>
+<tbody class="text-sm">
+<tr class="border-b border-outline-variant/10">
+<td class="p-4 font-semibold text-on-surface">AMH</td>
+<td class="p-4 text-primary font-medium">1.2 - 3.5</td>
+<td class="p-4 text-on-surface-variant">ng/mL</td>
+</tr>
+<tr class="border-b border-outline-variant/10">
+<td class="p-4 font-semibold text-on-surface">FSH (3. Gün)</td>
+<td class="p-4 text-primary font-medium"> &lt; 10</td>
+<td class="p-4 text-on-surface-variant">mIU/mL</td>
+</tr>
+<tr>
+<td class="p-4 font-semibold text-on-surface">Sperm Kons.</td>
+<td class="p-4 text-primary font-medium"> &gt; 15</td>
+<td class="p-4 text-on-surface-variant">mil/mL</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="text-[10px] text-outline-variant italic px-2">
+                * Bu değerler genel bilgilendirme amaçlıdır. Bireysel klinik durumlar farklılık gösterebilir.
+            </p>
+</section>
+<!-- Compliance & Security Section -->
+<section class="bg-surface-container-low p-6 rounded-xl space-y-4 border border-outline-variant/20">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-tertiary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary text-sm" data-icon="gavel">gavel</span>
+</div>
+<h3 class="font-bold text-sm">2026 Regülasyon Uyumu</h3>
+</div>
+<p class="text-xs text-on-surface-variant leading-relaxed">
+                Tüm tanı ve laboratuvar süreçlerimiz, en güncel sağlık bakanlığı mevzuatları ve uluslararası fertilitie standartlarına (ESHRE) tam uyumludur. Verileriniz uçtan uca şifreli protokollerle korunmaktadır.
+            </p>
+<div class="flex gap-2">
+<div class="px-2 py-1 bg-surface-container-highest rounded text-[9px] font-bold uppercase">KVKK Compliant</div>
+<div class="px-2 py-1 bg-surface-container-highest rounded text-[9px] font-bold uppercase">ISO 27001</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f1f4f6] w-full py-12 px-6 flex flex-col items-center text-center space-y-4 max-w-screen-md mx-auto">
+<div class="bg-slate-200 h-px w-full my-4"></div>
+<p class="font-sans text-[11px] leading-relaxed text-slate-500">© 2024 Clinical Fertility Curator. All data peer-reviewed.</p>
+<div class="flex flex-wrap justify-center gap-4">
+<a class="text-slate-500 font-sans text-[11px] hover:text-[#35618f] transition-opacity opacity-80 hover:opacity-100" href="#">Medical Disclaimer</a>
+<a class="text-slate-500 font-sans text-[11px] hover:text-[#35618f] transition-opacity opacity-80 hover:opacity-100" href="#">Privacy Protocol</a>
+<a class="text-slate-500 font-sans text-[11px] hover:text-[#35618f] transition-opacity opacity-80 hover:opacity-100" href="#">Terms of Use</a>
+</div>
+</footer>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-safe h-20 bg-white/70 backdrop-blur-lg shadow-[0_-4px_12px_rgba(0,0,0,0.03)] border-t border-slate-100">
+<div class="flex flex-col items-center justify-center text-slate-400 tap-highlight-none active:scale-95 duration-150">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-sans text-[10px] font-medium uppercase tracking-widest mt-1">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#35618f] scale-105 transition-transform tap-highlight-none active:scale-95 duration-150">
+<span class="material-symbols-outlined" data-icon="menu_book" style="font-variation-settings: 'FILL' 1;">menu_book</span>
+<span class="font-sans text-[10px] font-medium uppercase tracking-widest mt-1">Research</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400 tap-highlight-none active:scale-95 duration-150">
+<span class="material-symbols-outlined" data-icon="analytics">analytics</span>
+<span class="font-sans text-[10px] font-medium uppercase tracking-widest mt-1">Insights</span>
+</div>
+<div class="flex flex-col items-center justify-center text-slate-400 tap-highlight-none active:scale-95 duration-150">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-sans text-[10px] font-medium uppercase tracking-widest mt-1">Profile</span>
+</div>
+</nav>
+</body></html>

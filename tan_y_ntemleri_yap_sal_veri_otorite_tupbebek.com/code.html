@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+
+<html lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Tanı Yöntemleri | Clinical Curator</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-fixed-dim": "#baf0e4",
+              "on-tertiary-fixed": "#1d5249",
+              "on-error-container": "#752121",
+              "tertiary-dim": "#285c53",
+              "error-container": "#fe8983",
+              "surface-dim": "#d1dce0",
+              "surface": "#f8f9fa",
+              "surface-container": "#eaeff1",
+              "tertiary": "#35685e",
+              "surface-bright": "#f8f9fa",
+              "on-primary-fixed-variant": "#325e8c",
+              "inverse-surface": "#0c0f10",
+              "inverse-primary": "#92bcf0",
+              "error": "#9f403d",
+              "outline": "#737c7f",
+              "surface-container-highest": "#dbe4e7",
+              "tertiary-container": "#c8fff2",
+              "on-tertiary-container": "#31645b",
+              "on-surface": "#2b3437",
+              "secondary-fixed": "#d6e4f5",
+              "outline-variant": "#abb3b7",
+              "on-primary-container": "#275482",
+              "primary-container": "#d2e4ff",
+              "on-tertiary-fixed-variant": "#3c6f65",
+              "on-surface-variant": "#586064",
+              "surface-container-lowest": "#ffffff",
+              "primary-fixed": "#d2e4ff",
+              "primary-dim": "#285582",
+              "surface-variant": "#dbe4e7",
+              "on-secondary-fixed-variant": "#4f5d6b",
+              "error-dim": "#4e0309",
+              "on-primary-fixed": "#0d416e",
+              "tertiary-fixed": "#c8fff2",
+              "secondary-fixed-dim": "#c7d6e7",
+              "primary": "#35618f",
+              "background": "#f8f9fa",
+              "surface-tint": "#35618f",
+              "secondary-dim": "#475563",
+              "on-secondary-container": "#455361",
+              "inverse-on-surface": "#9b9d9e",
+              "surface-container-high": "#e3e9ec",
+              "on-primary": "#f5f7ff",
+              "on-error": "#fff7f6",
+              "secondary": "#53606f",
+              "on-tertiary": "#e3fff7",
+              "on-secondary": "#f6f9ff",
+              "primary-fixed-dim": "#b9d7ff",
+              "surface-container-low": "#f1f4f6",
+              "on-secondary-fixed": "#33414e",
+              "secondary-container": "#d6e4f5",
+              "on-background": "#2b3437"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .tonal-shift { transition: background-color 0.3s ease; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-slate-50/70 dark:bg-slate-900/70 backdrop-blur-md">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-8xl mx-auto">
+<div class="text-2xl font-serif font-bold text-blue-900 dark:text-blue-100 tracking-tight">Clinical Curator</div>
+<div class="hidden md:flex space-x-8">
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-200 transition-colors font-sans" href="#">Journals</a>
+<a class="text-blue-700 dark:text-blue-400 border-b-2 border-blue-700 dark:border-blue-400 pb-1 font-semibold font-sans" href="#">Guidelines</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-200 transition-colors font-sans" href="#">Research</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-200 transition-colors font-sans" href="#">Compliance</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-200 transition-colors font-sans" href="#">Archives</a>
+</div>
+<div class="flex items-center space-x-4">
+<div class="relative hidden sm:block">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline">search</span>
+<input class="pl-10 pr-4 py-2 bg-surface-container-low border-none rounded-xl focus:ring-2 focus:ring-outline/30 text-sm w-64" placeholder="Search clinical data..." type="text"/>
+</div>
+<button class="md:hidden">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="pt-24 pb-20">
+<!-- Hero Section -->
+<header class="max-w-7xl mx-auto px-8 py-20">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div>
+<span class="inline-block px-4 py-1 rounded-full bg-primary-container text-on-primary-container text-xs font-bold tracking-widest uppercase mb-6">Tanı ve Teşhis Rehberi</span>
+<h1 class="font-headline text-5xl md:text-6xl text-on-surface leading-tight mb-8">Reprodüktif Sağlıkta Klinik Tanı Yöntemleri</h1>
+<p class="text-lg text-on-surface-variant leading-relaxed mb-10 max-w-xl">
+                        İnfertilite araştırmalarında kullanılan modern tanı protokolleri, Dünya Sağlık Örgütü (WHO) standartları ve güncel klinik kılavuzlar eşliğinde kapsamlı bir analiz sunar.
+                    </p>
+<div class="flex gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-xl font-semibold hover:bg-primary-dim transition-all flex items-center gap-2">
+<span class="material-symbols-outlined">description</span> Protokolleri İndir
+                        </button>
+<button class="border border-outline-variant/30 text-primary px-8 py-4 rounded-xl font-semibold hover:bg-surface-container-low transition-all">
+                            Referanslar
+                        </button>
+</div>
+</div>
+<div class="relative">
+<div class="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
+<img alt="Klinik Laboratuvar" class="w-full h-full object-cover" data-alt="Modern high-tech medical laboratory with sterile equipment and blue ambient lighting for scientific research" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPHK_zflc9IKi0g1DYZUGKY7SfkITimmdU8avJUcCvj_SrHSp5g0a7DVzOLIm1k7hjrR0DPJ6jsTZXaqh81RXgsHTwEWPUC0u_KDD3R8qb2skNYs8AdPvMphdDD_kVV3hn3YNShk0bL5-_IMovgFWzo8mHhu8iVJLQqBq2mdJsbKBaakWluEAaFSGCB_zYbSlwQ4bEMTROaLmX6rozl2MG8-IgNI2Aq8RmQ9_LckjKnSk8KzMhk0F9WtdJBT6aNq3ejKNmnPknU00"/>
+</div>
+<div class="absolute -bottom-6 -left-6 bg-surface-container-lowest p-6 rounded-2xl shadow-xl border border-outline-variant/10 max-w-xs">
+<div class="flex items-center gap-4 mb-3">
+<div class="w-10 h-10 rounded-full bg-tertiary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-tertiary-container">verified_user</span>
+</div>
+<span class="text-sm font-bold text-on-surface">Akredite Süreçler</span>
+</div>
+<p class="text-xs text-on-surface-variant leading-normal">Tüm tanı yöntemleri JCI (Joint Commission International) standartlarına uygun olarak yürütülmektedir.</p>
+</div>
+</div>
+</div>
+</header>
+<!-- Section: Sperm Analizi -->
+<section class="bg-surface-container-low py-24">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row gap-12 items-start">
+<div class="w-full md:w-1/3 sticky top-32">
+<h2 class="font-headline text-3xl mb-6">01. Sperm Analizi (Spermiyogram)</h2>
+<p class="text-on-surface-variant mb-8 leading-relaxed">Erkek fertilitesi değerlendirmesinin temel taşı olan bu analiz, semen kalitesini makroskobik ve mikroskobik parametrelerle inceler.</p>
+<!-- Klinik İnceleme Notu -->
+<div class="bg-surface-container-highest/50 border-l-4 border-primary p-6 rounded-r-xl">
+<h4 class="font-bold text-sm uppercase tracking-wider mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary scale-75">clinical_notes</span> Klinik İnceleme Notu
+                            </h4>
+<p class="text-sm italic text-on-surface-variant">"Analiz öncesi 2-7 günlük cinsel perhiz süresi, sonuçların standardizasyonu için kritiktir. Tek bir analiz her zaman yeterli olmayabilir; 3-4 hafta arayla tekrarlanan testler daha güvenilir bir klinik tablo sunar."</p>
+</div>
+</div>
+<div class="w-full md:w-2/3">
+<div class="bg-surface-container-lowest rounded-3xl p-8 shadow-sm">
+<h3 class="font-headline text-xl mb-6">WHO 2021 Referans Değerleri (6. Ed.)</h3>
+<div class="overflow-hidden border border-outline-variant/20 rounded-xl">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container">
+<th class="p-4 font-bold text-sm uppercase text-on-surface-variant">Parametre</th>
+<th class="p-4 font-bold text-sm uppercase text-on-surface-variant">Alt Limit (5. Yüzdelik)</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant/10">
+<tr>
+<td class="p-4 font-medium">Semen Hacmi (ml)</td>
+<td class="p-4">1.4 ml</td>
+</tr>
+<tr>
+<td class="p-4 font-medium">Toplam Sperm Sayısı (10^6 / ejakülat)</td>
+<td class="p-4">39 milyon</td>
+</tr>
+<tr>
+<td class="p-4 font-medium">Sperm Konsantrasyonu (10^6 / ml)</td>
+<td class="p-4">15 milyon/ml</td>
+</tr>
+<tr>
+<td class="p-4 font-medium">Toplam Hareketlilik (PR+NP, %)</td>
+<td class="p-4">42 %</td>
+</tr>
+<tr>
+<td class="p-4 font-medium">Progresif Hareketlilik (PR, %)</td>
+<td class="p-4">30 %</td>
+</tr>
+<tr>
+<td class="p-4 font-medium">Canlılık (Vitality, %)</td>
+<td class="p-4">54 %</td>
+</tr>
+<tr>
+<td class="p-4 font-medium">Normal Morfoloji (%)</td>
+<td class="p-4">4 %</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: Histeroskopi -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<div class="order-2 lg:order-1">
+<div class="relative group">
+<div class="aspect-video rounded-3xl overflow-hidden">
+<img alt="Endoskopik Görünüm" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Microscopic view of cellular structures with soft lighting and professional clinical aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpaa7N-jgr6q_t-3Pa_P9azS1zhm_wjjppqvI2VwtcZMwj04KbHvBcDO_5R-8PySKHQhSWYpsSsvdT7pRhVtZWnREzUH-ShTAR9LqpgGu6dAWC9VoRFWDOVjxVOFxQ1tQ8TRqZyOby63-AYhcckS2yBchP97Qz5397C-mFv0jbkwDL4v8L1cAs8Q3Q76PEVvN9pZlSpIK79mW0Lrv6-GLTCZt4N7GO0JoL_VlUfqOW442Fet_e-Kspa9QEByrDxTs0ZqI24KoZtlg"/>
+</div>
+<div class="absolute inset-0 bg-primary/10 rounded-3xl"></div>
+</div>
+</div>
+<div class="order-1 lg:order-2">
+<h2 class="font-headline text-3xl mb-6">02. Histeroskopi</h2>
+<p class="text-on-surface-variant mb-8 leading-relaxed">Uterus (rahim) iç tabakasının endoskopik olarak doğrudan gözlemlenmesidir. Tanısal (diagnostik) veya tedavi edici (operatif) amaçla uygulanabilir.</p>
+<div class="space-y-6 mb-8">
+<div class="flex gap-4">
+<div class="w-8 h-8 rounded bg-primary-container flex-shrink-0 flex items-center justify-center font-bold text-primary">1</div>
+<div>
+<p class="font-bold">Hazırlık:</p>
+<p class="text-sm text-on-surface-variant">Genellikle menstrüasyon bitimini takip eden ilk hafta (proliferatif faz) uygulanır.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-8 h-8 rounded bg-primary-container flex-shrink-0 flex items-center justify-center font-bold text-primary">2</div>
+<div>
+<p class="font-bold">Giriş:</p>
+<p class="text-sm text-on-surface-variant">Optik bir sistem (histeroskop) servikal kanaldan geçirilerek rahim içine ilerletilir.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-8 h-8 rounded bg-primary-container flex-shrink-0 flex items-center justify-center font-bold text-primary">3</div>
+<div>
+<p class="font-bold">Gözlem:</p>
+<p class="text-sm text-on-surface-variant">Rahim içi polip, miyom, yapışıklık veya septum (perde) varlığı değerlendirilir.</p>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-6 rounded-2xl">
+<h4 class="font-bold text-sm uppercase tracking-wider mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary scale-75">clinical_notes</span> Klinik İnceleme Notu
+                            </h4>
+<p class="text-sm italic text-on-surface-variant">"Ofis histeroskopi, anestezi gerektirmeyen ve hastanın sosyal hayatına hızla dönmesini sağlayan minimal invaziv bir altın standarttır."</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: Laparoskopi -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center max-w-3xl mx-auto mb-16">
+<h2 class="font-headline text-3xl mb-4">03. Laparoskopi</h2>
+<p class="text-on-surface-variant">Karın boşluğunun bir kamera yardımıyla incelenmesi, reprodüktif cerrahide "kapalı ameliyat" olarak tanımlanan en gelişmiş tekniktir.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Feature Card 1 -->
+<div class="bg-surface-container-lowest p-8 rounded-3xl shadow-sm border border-outline-variant/10">
+<span class="material-symbols-outlined text-4xl text-primary mb-6">visibility</span>
+<h4 class="font-headline text-xl mb-4">Detaylı Gözlem</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">Overler, fallop tüpleri ve uterus dış yüzeyi yüksek çözünürlüklü optiklerle en ince ayrıntısına kadar incelenir.</p>
+</div>
+<!-- Feature Card 2 -->
+<div class="bg-surface-container-lowest p-8 rounded-3xl shadow-sm border border-outline-variant/10">
+<span class="material-symbols-outlined text-4xl text-primary mb-6">healing</span>
+<h4 class="font-headline text-xl mb-4">Minimal Travma</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">0.5-1 cm'lik küçük kesiler sayesinde doku hasarı minimize edilir, post-operatif ağrı belirgin derecede azdır.</p>
+</div>
+<!-- Feature Card 3 -->
+<div class="bg-surface-container-lowest p-8 rounded-3xl shadow-sm border border-outline-variant/10">
+<span class="material-symbols-outlined text-4xl text-primary mb-6">speed</span>
+<h4 class="font-headline text-xl mb-4">Hızlı İyileşme</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">Hastalar genellikle aynı gün taburcu edilir ve 1 hafta içinde normal rutinlerine dönebilirler.</p>
+</div>
+</div>
+<div class="mt-12 bg-white rounded-3xl p-10 flex flex-col md:flex-row items-center gap-10">
+<div class="flex-1">
+<h4 class="font-bold text-lg mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">clinical_notes</span> Klinik İnceleme Notu
+                        </h4>
+<p class="text-on-surface-variant italic">"Endometriozis tanısında laparoskopi hala tek kesin tanı yöntemidir. Ayrıca tubal faktörlerin (kanalların açıklığı ve fonksiyonelliği) değerlendirilmesinde HSG'den çok daha detaylı veriler sunar."</p>
+</div>
+<div class="w-full md:w-64 aspect-square rounded-2xl overflow-hidden">
+<img alt="Modern Cerrahi" class="w-full h-full object-cover" data-alt="Modern surgical operating room with advanced robotic arms and digital monitoring displays" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCl3v3tnkw5u0K9V766l6H3Wxn1y9Z-1-CaFrSYWu98j9VaQHz6Yzrqul_cFfDvqSFBDMwSdXMpbxLUKKNf2rx6L7PcG32pHi93oHa4DkjheDjjaJ8aa1GojwFSy07nvZsXRuGS7djjg3rHKdFQTYxRajoUfGSa3SyIxyRUj72CTAIxPvfVcvbmHY-AW7HQndanhTwc1T9SS-JbiBgF8AzHUowpblvAQ2PGPUq1oRDrVxbXIQoJO4kbC0Dj8tYMJuvFRI-leV-yWls"/>
+</div>
+</div>
+</div>
+</section>
+<!-- References Section -->
+<section class="max-w-7xl mx-auto px-8 py-20">
+<div class="border-t border-outline-variant/20 pt-12">
+<h5 class="font-bold text-xs uppercase tracking-widest text-on-surface-variant mb-8">Bilimsel Referanslar ve Kaynaklar</h5>
+<ul class="space-y-4">
+<li class="text-sm text-on-surface-variant flex gap-4">
+<span class="text-primary font-bold">1.</span>
+<span>World Health Organization (2021). WHO laboratory manual for the examination and processing of human semen, 6th ed. Geneva: World Health Organization.</span>
+</li>
+<li class="text-sm text-on-surface-variant flex gap-4">
+<span class="text-primary font-bold">2.</span>
+<span>ESHRE Guideline Group on Endometriosis. (2022). ESHRE guideline: endometriosis. Human Reproduction Open.</span>
+</li>
+<li class="text-sm text-on-surface-variant flex gap-4">
+<span class="text-primary font-bold">3.</span>
+<span>The Practice Committee of the American Society for Reproductive Medicine. (2020). Diagnostic evaluation of the infertile female: a committee opinion. Fertility and Sterility.</span>
+</li>
+</ul>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-100 dark:bg-slate-950 w-full border-t border-slate-200 dark:border-slate-800">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 px-12 py-16 max-w-8xl mx-auto">
+<div>
+<div class="text-lg font-serif font-semibold text-slate-900 dark:text-slate-100 mb-4">Clinical Curator</div>
+<p class="font-sans text-xs uppercase tracking-widest text-slate-500 dark:text-slate-400 leading-relaxed mb-6">
+                    © 2024 Clinical Curator. All rights reserved. Regulated by Ministry of Health Compliance Standards.
+                </p>
+<div class="bg-error/5 p-4 border border-error/20 rounded-lg">
+<p class="text-[10px] text-error leading-tight uppercase font-bold tracking-tighter">YASAL UYARI / LEGAL NOTICE:</p>
+<p class="text-[10px] text-on-surface-variant leading-normal mt-1">
+                        Bu sayfada yer alan içerikler yalnızca bilgilendirme amaçlıdır. Hiçbir tıbbi kararın doktor muayenesi ve profesyonel tıbbi danışmanlık yerine geçemeyeceğini unutmayınız. Teşhis ve tedavi için uzman bir hekime başvurunuz.
+                    </p>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="flex flex-col gap-2">
+<a class="text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 font-sans text-xs uppercase tracking-widest hover:underline transition-all" href="#">Medical Disclaimer</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 font-sans text-xs uppercase tracking-widest hover:underline transition-all" href="#">Privacy Policy</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 font-sans text-xs uppercase tracking-widest hover:underline transition-all" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col gap-2">
+<a class="text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 font-sans text-xs uppercase tracking-widest hover:underline transition-all" href="#">Regulatory Filings</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 font-sans text-xs uppercase tracking-widest hover:underline transition-all" href="#">Accessibility Statement</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-slate-800 dark:hover:text-slate-200 font-sans text-xs uppercase tracking-widest hover:underline transition-all" href="#">Contact Review Board</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

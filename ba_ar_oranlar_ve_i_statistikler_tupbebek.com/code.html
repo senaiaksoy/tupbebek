@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+
+<html class="light" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "secondary-container": "#d6e4f5",
+            "tertiary-fixed-dim": "#baf0e4",
+            "error": "#9f403d",
+            "secondary-fixed": "#d6e4f5",
+            "surface-dim": "#d1dce0",
+            "primary": "#35618f",
+            "on-secondary-container": "#455361",
+            "on-error-container": "#752121",
+            "inverse-surface": "#0c0f10",
+            "on-tertiary-fixed": "#1d5249",
+            "error-container": "#fe8983",
+            "primary-fixed": "#d2e4ff",
+            "on-primary-fixed": "#0d416e",
+            "error-dim": "#4e0309",
+            "on-tertiary": "#e3fff7",
+            "on-surface-variant": "#586064",
+            "surface-container-lowest": "#ffffff",
+            "primary-dim": "#285582",
+            "tertiary-dim": "#285c53",
+            "surface-container-high": "#e3e9ec",
+            "on-surface": "#2b3437",
+            "on-tertiary-container": "#31645b",
+            "tertiary-fixed": "#c8fff2",
+            "secondary-dim": "#475563",
+            "secondary-fixed-dim": "#c7d6e7",
+            "surface-container-highest": "#dbe4e7",
+            "surface-container-low": "#f1f4f6",
+            "surface-container": "#eaeff1",
+            "on-background": "#2b3437",
+            "inverse-on-surface": "#9b9d9e",
+            "outline": "#737c7f",
+            "on-secondary": "#f6f9ff",
+            "on-secondary-fixed-variant": "#4f5d6b",
+            "primary-container": "#d2e4ff",
+            "outline-variant": "#abb3b7",
+            "tertiary-container": "#c8fff2",
+            "tertiary": "#35685e",
+            "primary-fixed-dim": "#b9d7ff",
+            "surface-variant": "#dbe4e7",
+            "on-primary": "#f5f7ff",
+            "surface-tint": "#35618f",
+            "on-tertiary-fixed-variant": "#3c6f65",
+            "secondary": "#53606f",
+            "on-error": "#fff7f6",
+            "surface-bright": "#f8f9fa",
+            "on-secondary-fixed": "#33414e",
+            "on-primary-fixed-variant": "#325e8c",
+            "background": "#f8f9fa",
+            "surface": "#f8f9fa",
+            "on-primary-container": "#275482",
+            "inverse-primary": "#92bcf0"
+          },
+          fontFamily: {
+            "headline": ["Noto Serif"],
+            "body": ["Manrope"],
+            "label": ["Manrope"]
+          },
+          borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    body { font-family: 'Manrope', sans-serif; color: #2b3437; background-color: #f8f9fa; }
+    h1, h2, h3 { font-family: 'Noto Serif', serif; }
+  </style>
+</head>
+<body class="bg-surface text-on-surface antialiased">
+<!-- TopNavBar (Shared Component) -->
+<header class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-md shadow-sm transition-colors duration-300">
+<div class="flex justify-between items-center px-8 h-16 max-w-full mx-auto">
+<div class="text-xl font-serif font-bold text-blue-900">Clinical Curator</div>
+<nav class="hidden md:flex items-center space-x-8">
+<a class="text-slate-600 font-medium hover:text-blue-700 transition-all" href="#">Nedenler</a>
+<a class="text-slate-600 font-medium hover:text-blue-700 transition-all" href="#">Tedavi Yöntemleri</a>
+<a class="text-slate-600 font-medium hover:text-blue-700 transition-all" href="#">Tanı Süreci</a>
+<a class="text-slate-600 font-medium hover:text-blue-700 transition-all" href="#">Rehberler</a>
+<a class="text-slate-600 font-medium hover:text-blue-700 transition-all" href="#">SSS</a>
+<a class="text-blue-900 border-b-2 border-blue-800 pb-1 font-semibold transition-all" href="#">Araştırma</a>
+</nav>
+<div class="flex items-center space-x-4">
+<button class="p-2 text-slate-600 hover:text-blue-900">
+<span class="material-symbols-outlined">account_circle</span>
+</button>
+</div>
+</div>
+</header>
+<main class="pt-32 pb-20 max-w-7xl mx-auto px-6 lg:px-8">
+<!-- Hero Section -->
+<section class="mb-20">
+<div class="grid lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7">
+<div class="inline-flex items-center px-3 py-1 bg-tertiary-container text-on-tertiary-container rounded-full text-xs font-semibold tracking-wider mb-6">
+            VERİ ANALİZİ 2024
+          </div>
+<h1 class="text-5xl lg:text-6xl font-headline font-bold text-on-surface leading-tight mb-8">
+            Başarı Oranları ve Klinik Veriler: Bilimsel Bir Analiz.
+          </h1>
+<div class="flex items-center gap-4 text-sm font-label italic text-on-surface-variant mb-8">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+            Tıbbi İnceleme: Dr. Senai Aksoy
+          </div>
+<p class="text-lg text-on-surface-variant leading-relaxed font-body max-w-2xl">
+            Yardımcı üreme tekniklerinde başarı, yalnızca istatistiksel bir çıktı değil, biyolojik ve klinik değişkenlerin karmaşık bir etkileşimidir. Bu analizde, global ESHRE ve ASRM standartlarını temel alarak verilerin nasıl yorumlanması gerektiğini inceliyoruz.
+          </p>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="aspect-[4/5] rounded-xl overflow-hidden shadow-xl">
+<img class="w-full h-full object-cover" data-alt="close-up of a high-tech laboratory microscope in a sterile environment with blue clinical lighting and scientific equipment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCv9IIsvCQTXQzFhdjXQ4oLoHvupudqdPo3FCpGUNJnS_edoA67Mc3yrIJoVKsWR7LMZhwuCmU6aWSTkcDT2RO3erB7U4VEIuIIquty0ZptEBspLLtU2uyHNVcMJmpBfBfHLH3jtBtgaCmUJgVhEHnyz7BZUpylpS6i4AWYJlcleZcGruihoDAhnVG4oPrj2JTFnY-Q1THFWbUvYIx3NuALDZRHpN8M_pEEoRwQEj3Q1Zc2tL-YXZD35NbTuCKe_3FCKtvJ9gYQVRw"/>
+</div>
+<!-- Editorial Floating Card -->
+<div class="absolute -bottom-6 -left-6 bg-surface-container-lowest p-6 rounded-xl shadow-lg max-w-[280px]">
+<p class="text-sm font-body italic text-on-surface-variant leading-relaxed">
+              "İstatistikler, bireysel bir vaka için kesin sonuç değil, bir olasılıklar spektrumudur."
+            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Content Introduction -->
+<section class="mb-20 grid md:grid-cols-2 gap-12">
+<div class="p-10 bg-surface-container-low rounded-xl">
+<h3 class="text-2xl font-headline font-bold mb-4">Metodoloji: Klinik Gebelik vs. Canlı Doğum</h3>
+<p class="text-on-surface-variant leading-relaxed">
+          Başarı oranları incelenirken iki temel parametre dikkate alınır. Klinik gebelik oranı, ultrasonografi ile gebelik kesesinin görülmesini ifade ederken; canlı doğum oranı, sağlıklı bir doğumla sonuçlanan siklusların yüzdesini gösterir. İstatistiklerimizde her zaman "embriyo transferi başına canlı doğum" oranları önceliklendirilir.
+        </p>
+</div>
+<div class="p-10 bg-surface-container-low rounded-xl">
+<h3 class="text-2xl font-headline font-bold mb-4">Etki Faktörleri</h3>
+<p class="text-on-surface-variant leading-relaxed">
+          Veriler; anne yaşı, over rezervi, sperm kalitesi, daha önceki tedavi denemeleri ve genetik tarama (PGT-A) gibi değişkenlere göre normalize edilmiştir. Tek bir yüzde değeri, her hasta profili için geçerli olmayabilir.
+        </p>
+</div>
+</section>
+<!-- Data Visualization Section: Bento Grid Style -->
+<section class="mb-20">
+<h2 class="text-3xl font-headline font-bold mb-10 text-center">Yaş Gruplarına Göre Başarı Oranları (ESHRE/ASRM Standartları)</h2>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<!-- Age Group <35 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border-b-4 border-primary">
+<div class="text-primary font-bold text-sm mb-2">GRUP I</div>
+<div class="text-3xl font-headline font-bold mb-4">&lt;35 Yaş</div>
+<div class="text-5xl font-bold text-primary mb-6">%54.1</div>
+<p class="text-xs text-on-surface-variant uppercase tracking-widest font-semibold">Canlı Doğum Oranı</p>
+<div class="mt-6 h-1 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary" style="width: 54.1%"></div>
+</div>
+</div>
+<!-- Age Group 35-37 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border-b-4 border-primary/70">
+<div class="text-primary/70 font-bold text-sm mb-2">GRUP II</div>
+<div class="text-3xl font-headline font-bold mb-4">35-37 Yaş</div>
+<div class="text-5xl font-bold text-primary/70 mb-6">%38.3</div>
+<p class="text-xs text-on-surface-variant uppercase tracking-widest font-semibold">Canlı Doğum Oranı</p>
+<div class="mt-6 h-1 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary/70" style="width: 38.3%"></div>
+</div>
+</div>
+<!-- Age Group 38-40 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border-b-4 border-primary/50">
+<div class="text-primary/50 font-bold text-sm mb-2">GRUP III</div>
+<div class="text-3xl font-headline font-bold mb-4">38-40 Yaş</div>
+<div class="text-5xl font-bold text-primary/50 mb-6">%24.9</div>
+<p class="text-xs text-on-surface-variant uppercase tracking-widest font-semibold">Canlı Doğum Oranı</p>
+<div class="mt-6 h-1 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary/50" style="width: 24.9%"></div>
+</div>
+</div>
+<!-- Age Group >40 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border-b-4 border-primary/30">
+<div class="text-primary/30 font-bold text-sm mb-2">GRUP IV</div>
+<div class="text-3xl font-headline font-bold mb-4">&gt;40 Yaş</div>
+<div class="text-5xl font-bold text-primary/30 mb-6">%9.1</div>
+<p class="text-xs text-on-surface-variant uppercase tracking-widest font-semibold">Canlı Doğum Oranı</p>
+<div class="mt-6 h-1 w-full bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary/30" style="width: 9.1%"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Detailed Analysis: Success Factors -->
+<section class="mb-20 space-y-12">
+<div class="flex items-center gap-4">
+<h2 class="text-3xl font-headline font-bold">Başarıyı Etkileyen Faktörler</h2>
+<div class="flex-grow h-px bg-outline-variant/30"></div>
+</div>
+<div class="grid lg:grid-cols-3 gap-8">
+<!-- Factor 1 -->
+<div class="flex flex-col">
+<div class="h-64 rounded-xl overflow-hidden mb-6">
+<img class="w-full h-full object-cover" data-alt="microscopic view of high quality human embryo in a Petri dish under clinical laboratory conditions" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5bFdNlp65rUTnpfabI_4akau85akZ1hX2jfsgIF2ioOFixcaiO4qxOe_QzraJRSgdjlXIK47MvKa6kmIk-1Jze1WoxP58Anuxc0D76QysPQJVkT9Q3EHdcAIDqcEregvddOrB52DKU6i-g6y18wyF17jlSV6hGPR1-dnoJw6XeB6cJfrZiW7fDQj_T2UFRGI8rkLP5pRGCDW5FYRNmCNtIj6sPBH9mwU9JzffhoETAoJgEPjvQl5ISS4LEu2e0udpOIKO1xOx4jk"/>
+</div>
+<h4 class="text-xl font-headline font-bold mb-3">Embriyo Kalitesi (Blastokist)</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">
+            5. güne ulaşmış (Blastokist) embriyoların tutunma potansiyeli, 3. gün embriyolarına göre istatistiksel olarak daha yüksektir. Genetik bütünlük (Euploidy), yaş faktöründen bağımsız olarak en kritik belirleyicidir.
+          </p>
+</div>
+<!-- Factor 2 -->
+<div class="flex flex-col">
+<div class="h-64 rounded-xl overflow-hidden mb-6">
+<img class="w-full h-full object-cover" data-alt="scientific illustration of the uterine lining and endometrial environment in soft pastel medical colors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAS5ibTLvDd_KEBrqCqGmRhKh6vrNO3KFM986I7ZxVMPcbz0xiE9X7FvDvQyq8qHDSf9cDDySv3Ue5YWdvUGADqVqfb7GVS0npM8vBiPY0yOFSek9oZlLb8gLh-GaSxlOcR7Um3a_GF_DAfS9h8BEKsQKGCGMh3MuEaiNRkQcBcrvsf-Y8LTVLJMHy2zYDicGIBY8rtGzgXyVe1yMgO_NINJN3V0Tw4u8YrxHCyloExHaYztESfF1cBaQVjaEJUqtsMxDtkGG7YaWU"/>
+</div>
+<h4 class="text-xl font-headline font-bold mb-3">Endometriyal Reseptivite</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">
+            Rahim iç tabakasının (endometrium) kalınlığı ve embriyoyu kabul etme penceresi (Implantation Window), başarılı bir implantasyon için embriyo kalitesi kadar kritiktir.
+          </p>
+</div>
+<!-- Factor 3 -->
+<div class="flex flex-col">
+<div class="h-64 rounded-xl overflow-hidden mb-6">
+<img class="w-full h-full object-cover" data-alt="medical professional in blue scrubs working with precision laboratory tools and glass slides" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1OJLWfRHjrFzZ4dmJ_cuE9BMNTEFWWlrgcApOr8MxAvPt7IwCZyzCSE8TJwfXJUWe10c1fQtT2uu6dTapu79-oStBdPo2W2Vm-jYTgEkX14cp1mlSMvhsa5lNmUg11kb10aYNSEpNQZcenEpjGkB7Ynk-T6E56ks7ukVPTPvxoOZ5UkpaRUteCNa8E_UEDDi0NKiTIf_gc7DoryDE5gS6Vn8llIifKpJomkBFLySEiVBqUXFjz9vM3i96XCLH-CdZc4LA3qG3p2Q"/>
+</div>
+<h4 class="text-xl font-headline font-bold mb-3">Laboratuvar Teknolojileri</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">
+            In-vitro ortamın stabilizasyonu, hava kalitesi ve inkübatör teknolojileri (Time-lapse gibi) embriyo gelişimini doğrudan etkileyerek kümülatif başarı oranlarını %15'e kadar artırabilmektedir.
+          </p>
+</div>
+</div>
+</section>
+<!-- Important Data Table -->
+<section class="mb-20 bg-surface-container-low p-8 lg:p-12 rounded-xl">
+<div class="max-w-3xl mx-auto">
+<h3 class="text-2xl font-headline font-bold mb-8 text-center">Detaylı İstatistiksel Karşılaştırma</h3>
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead>
+<tr class="border-b border-outline-variant/30">
+<th class="py-4 font-headline text-on-surface-variant">Tedavi Değişkeni</th>
+<th class="py-4 font-headline text-on-surface-variant">Taze Transfer Oranı</th>
+<th class="py-4 font-headline text-on-surface-variant">Dondurulmuş (FET) Oranı</th>
+</tr>
+</thead>
+<tbody class="text-sm font-body">
+<tr class="border-b border-outline-variant/10">
+<td class="py-6 font-semibold">Genetik Tarama Olmaksızın</td>
+<td class="py-6">%35 - 45</td>
+<td class="py-6">%40 - 50</td>
+</tr>
+<tr class="border-b border-outline-variant/10">
+<td class="py-6 font-semibold">PGT-A Onaylı Öploid Embriyo</td>
+<td class="py-6">N/A</td>
+<td class="py-6">%60 - 70</td>
+</tr>
+<tr>
+<td class="py-6 font-semibold">Donör Yumurta (Opsiyonel)</td>
+<td class="py-6">%50 - 55</td>
+<td class="py-6">%55 - 65</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- Disclaimer -->
+<section class="max-w-4xl mx-auto">
+<div class="bg-error/5 border-l-4 border-error p-6 flex gap-4 items-start">
+<span class="material-symbols-outlined text-error" style="font-variation-settings: 'FILL' 1;">info</span>
+<div>
+<h4 class="text-sm font-bold text-error uppercase tracking-wider mb-2">Yasal ve Bilimsel Sorumluluk Reddi</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">
+            This data is for informational purposes and does not represent specific clinic guarantees. Paylaşılan veriler, uluslararası literatürde kabul gören ortalama başarı oranlarını yansıtmaktadır. Her bireyin tıbbi geçmişi, yaşı ve fizyolojik yapısı farklı olduğu için gerçek başarı oranları kişiden kişiye değişkenlik gösterir. Spesifik bir tıbbi tanı veya tedavi planı için uzman bir hekime başvurulmalıdır.
+          </p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="w-full border-t border-slate-200 bg-slate-50">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 py-12 gap-6 max-w-7xl mx-auto">
+<div class="flex flex-col gap-2">
+<div class="text-lg font-serif font-bold text-slate-700">Clinical Curator</div>
+<p class="text-xs font-serif italic text-slate-500">Medical Reviewer: Dr. Senai Aksoy.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="text-sm text-slate-500 font-body hover:text-blue-600 transition-colors" href="#">Medical Disclaimer</a>
+<a class="text-sm text-slate-500 font-body hover:text-blue-600 transition-colors" href="#">Editorial Policy</a>
+<a class="text-sm text-slate-500 font-body hover:text-blue-600 transition-colors" href="#">Privacy Policy</a>
+<a class="text-sm text-slate-500 font-body hover:text-blue-600 transition-colors" href="#">Contact</a>
+</div>
+<div class="text-sm font-body text-slate-500">
+        © 2024 Clinical Curator. All rights reserved.
+      </div>
+</div>
+</footer>
+</body></html>
