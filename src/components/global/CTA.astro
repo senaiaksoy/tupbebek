@@ -5,43 +5,71 @@ const { variant = "primary", href, size = "medium", title } = Astro.props;
 const classNames = classnames("cta", variant, size);
 ---
 
-<a href={href} class={classNames} title={title}><slot /></a>
+<a href={href} class={classNames} title={title}>
+  <slot />
+</a>
 
-<style>
+<style lang="scss">
   .cta {
     display: inline-flex;
     align-items: center;
-    gap: var(--spacing-medium);
-    font-family: var(--font-primary);
-    font-size: 1rem;
-    color: white;
-    text-wrap: nowrap;
-    padding: var(--spacing-medium) var(--spacing-large);
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 0.85rem 2.25rem;
+    border-radius: 100px;
+    font-weight: 600;
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
     text-decoration: none;
-    border-radius: 0.25rem;
-    transition: box-shadow 0.3s cubic-bezier(0.25, 0, 0.2, 1);
-    box-shadow:
-      0 3px 5px -2px #efefef,
-      0 1px #dee2e6,
-      0 0 0 var(--highlight-size, 0) rgb(173 181 189 / 25%);
-  }
+    letter-spacing: 0.5px;
+    font-size: 1.05rem;
+    position: relative;
+    overflow: hidden;
 
-  .cta:hover,
-  .cta:focus {
-    --highlight-size: 0.5rem;
-  }
+    &.primary {
+      /* Premium Pink-Tinted Frosted Glass Variant for Main CTA */
+      background: linear-gradient(145deg, var(--color-brand-primary-light) 0%, rgba(255, 255, 255, 0.9) 100%);
+      color: var(--color-brand-secondary); /* Navy text for very high readability */
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(216, 32, 151, 0.15); /* Slight pink border tint */
+      box-shadow: 
+        0 8px 24px rgba(40, 64, 157, 0.08),
+        inset 0 1px 1px rgba(255, 255, 255, 0.8);
 
-  .primary {
-    background-color: var(--color-secondary-light);
-  }
+      &:hover {
+        transform: translateY(-3px) scale(1.02);
+        box-shadow: 
+          0 16px 32px rgba(40, 64, 157, 0.15),
+          inset 0 1px 1px rgba(255, 255, 255, 0.9);
+        /* Deepen the pink tint slightly on hover */
+        background: linear-gradient(145deg, var(--color-brand-primary-light) 0%, rgba(216, 32, 151, 0.08) 100%);
+        color: var(--color-brand-secondary);
+      }
+    }
 
-  .secondary {
-    background-color: white;
-    border: 1px solid var(--color-secondary-light);
-    color: var(--color-secondary-light);
+    &.secondary {
+      background: linear-gradient(145deg, var(--color-brand-secondary-light) 0%, rgba(255, 255, 255, 0.8) 100%);
+      color: var(--color-brand-secondary);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(40, 64, 157, 0.15); /* Slight navy border tint */
+      box-shadow: 
+        0 4px 15px rgba(0, 0, 0, 0.04),
+        inset 0 1px 0 rgba(255, 255, 255, 0.8);
+
+      &:hover {
+        transform: translateY(-3px) scale(1.02);
+        box-shadow: 
+          0 12px 25px rgba(40, 64, 157, 0.12),
+          inset 0 1px 0 rgba(255, 255, 255, 0.9);
+        background: linear-gradient(145deg, var(--color-brand-secondary-light) 0%, var(--color-brand-primary-light) 100%);
+        color: var(--color-brand-secondary);
+      }
+    }
   }
 
   .small {
-    padding: var(--spacing-small) var(--spacing-medium);
+    padding: 0.6rem 1.5rem;
+    font-size: 0.95rem;
   }
 </style>
