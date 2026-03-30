@@ -7,10 +7,13 @@ import SearchComponent from "../components/Search.astro";
 import Icon from "../icons/index.astro";
 ---
 
+<!-- Header component with responsive navigation and scroll behavior -->
 <header class="header" id="header" role="banner">
   <div class="inner">
     <div class="logo">
-      <a href="/" title="Home" aria-label="Dr. Senai Aksoy Anasayfa"><Logo /></a>
+      <a href="/" title="Home" aria-label="Dr. Senai Aksoy Anasayfa">
+        <Logo />
+      </a>
     </div>
 
     <div class="nav-container">
@@ -21,7 +24,13 @@ import Icon from "../icons/index.astro";
       <LangNav class="desktop" />
       <SearchComponent />
       <div class="menu">
-        <button type="button" id="toggle-menu" aria-label="Toggle Menu" class="action-btn" id="mobile-menu-toggle">
+        <button
+          type="button"
+          id="toggle-menu"
+          aria-label="Toggle Menu"
+          class="action-btn"
+          id="mobile-menu-toggle"
+        >
           <Icon name="menu" />
         </button>
       </div>
@@ -61,7 +70,7 @@ import Icon from "../icons/index.astro";
 
       window.addEventListener("scroll", scrollDirection);
     },
-    { once: true }
+    { once: true },
   );
 </script>
 
@@ -107,13 +116,13 @@ import Icon from "../icons/index.astro";
   }
 
   .nav-container {
-      flex: 1;
-      display: flex;
-      justify-content: center;
-      
-      @media (max-width: 1279px) {
-          display: none;
-      }
+    flex: 1;
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: 1279px) {
+      display: none;
+    }
   }
 
   .header-actions {
@@ -147,7 +156,7 @@ import Icon from "../icons/index.astro";
       background: rgba(40, 64, 157, 0.05);
       border-color: var(--glass-border);
     }
-    
+
     :global(.icon) {
       width: 24px;
       height: 24px;
