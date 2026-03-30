@@ -9,5 +9,6 @@
       "@components/*": ["components/global/*"],
       "@styles/*": ["styles/*"]
     }
-  }
+  },
+  "exclude": ["dist", "node_modules", "public"]
 }
