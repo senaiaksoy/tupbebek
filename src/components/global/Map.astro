@@ -23,9 +23,12 @@ import styles from "../../styles/article.module.scss";
       icon: image,
       title: "Dr.Senai Aksoy",
     });
+    console.log("Marker initialized", marker.getTitle());
   }
+  window.initMap = initMap;
 </script>
 <script
+  is:inline
   async
   defer
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaVZ7D5dfzb1JIr53bZ90oGAaQocbmhu0&callback=initMap"

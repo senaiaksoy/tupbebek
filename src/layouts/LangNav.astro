@@ -4,9 +4,6 @@ import classnames from "classnames";
 import { langs } from "../data/index.json";
 const { class: className = "mobile" } = Astro.props;
 
-const pathName = Astro.url.pathname;
-const cleanPath = pathName.replace(/\/$/, "");
-
 const getLangUrl = (lang: string) => {
   if (lang === "tr") return `https://tupbebek.com/`;
   if (lang === "en") return `https://draksoyivf.com/`;

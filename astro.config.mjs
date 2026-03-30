@@ -1,6 +1,6 @@
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
-import { defineConfig, squooshImageService } from "astro/config";
+import { defineConfig } from "astro/config";
 
 // https://astro.build/config
 export default defineConfig({
@@ -9,7 +9,6 @@ export default defineConfig({
   integrations: [mdx(), sitemap()],
   image: {
     domains: ["tupbebek.com", "img.youtube.com"],
-    service: squooshImageService(),
   },
   build: {
     inlineStylesheets: "always",

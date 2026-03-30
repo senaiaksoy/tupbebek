@@ -32,11 +32,9 @@ import Icon from "../icons/index.astro";
 
 <script>
   let header = document.getElementById("header");
-  let toggleButton = document.getElementById("mobile-menu-toggle");
 
   document.addEventListener("astro:after-swap", () => {
     header = document.getElementById("header");
-    toggleButton = document.getElementById("mobile-menu-toggle");
   });
 
   document.addEventListener(
