@@ -30,10 +30,6 @@ const pageTitle = [title, "Dr. Senai Aksoy"].filter(Boolean).join(" - ");
   <head>
     <meta charset="UTF-8" />
     <title>{pageTitle}</title>
-    <meta name="description" content={description} />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
@@ -63,20 +59,67 @@ const pageTitle = [title, "Dr. Senai Aksoy"].filter(Boolean).join(" - ");
     <link rel="alternate" hreflang="ar" href={alternateAR} />
     <link rel="alternate" hreflang="x-default" href={alternateEN} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="stylesheet" href="/global.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Playfair:opsz,wght@5..1200,400;5..1200,700&display=swap"
-      rel="stylesheet"
-    />
-    <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
-    <script src="/pagefind/pagefind-ui.js" is:inline></script>
+    <style is:global>
+      /* Inter Font */
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 300 700;
+        font-display: swap;
+        src: url('/fonts/inter-latin-ext.woff2') format('woff2');
+        unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 300 700;
+        font-display: swap;
+        src: url('/fonts/inter-latin.woff2') format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      /* Playfair Display Font */
+      @font-face {
+        font-family: 'Playfair';
+        font-style: normal;
+        font-weight: 400 700;
+        font-display: swap;
+        src: url('/fonts/playfair-latin-ext.woff2') format('woff2');
+        unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+      @font-face {
+        font-family: 'Playfair';
+        font-style: normal;
+        font-weight: 400 700;
+        font-display: swap;
+        src: url('/fonts/playfair-latin.woff2') format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        text-rendering: optimizeSpeed;
+        line-height: 1.5;
+        overflow-x: hidden;
+      }
+      html { height: 100%; }
+
+      /* Reset list styles */
+      ul[role="list"] { list-style: none; }
+
+      /* Sticky Footer bits */
+      body { display: flex; flex-direction: column; }
+      main { flex: 1 0 auto; width: 100%; position: relative; }
+    </style>
     <ViewTransitions />
-    <Analytics />
     <SchemaBreadcrumb />
   </head>
   <body class:list={[page]}>
+    <div id="top"></div>
+    <div class="luxury-bg"></div>
     <Header />
 
     <main>
@@ -84,6 +127,44 @@ const pageTitle = [title, "Dr. Senai Aksoy"].filter(Boolean).join(" - ");
     </main>
 
     <Footer />
+    <Analytics />
+    <link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
+    <script src="/pagefind/pagefind-ui.js" is:inline></script>
     <RevealScript />
+    <style is:global lang="scss">
+      html { 
+        background-color: rgb(237, 242, 247);
+      }
+
+      .luxury-bg {
+        position: fixed;
+        inset: -10%;
+        z-index: -1;
+        background-color: rgb(237, 242, 247);
+        background-image: radial-gradient(circle at 70% 30%, rgba(216, 32, 151, 0.12) 0%, transparent 50%),
+                          radial-gradient(circle at 30% 70%, rgba(40, 64, 157, 0.1) 0%, transparent 50%);
+        filter: blur(80px);
+        pointer-events: none;
+      }
+
+      .container {
+        width: 100%;
+        max-width: var(--container-width);
+        margin: 0 auto !important;
+        padding: 0 var(--spacing-large);
+        box-sizing: border-box;
+      }
+
+      h1, h2, h3, .premium-title {
+        font-family: var(--font-secondary);
+        font-weight: 700;
+        color: var(--color-brand-secondary);
+        margin-bottom: var(--spacing-medium);
+      }
+
+      .accent-text {
+        color: var(--color-brand-primary);
+      }
+    </style>
   </body>
 </html>

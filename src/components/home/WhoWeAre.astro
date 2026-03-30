@@ -3,83 +3,191 @@ import Icon from "@icons/index.astro";
 import { Image } from "astro:assets";
 import CTA from "../global/CTA.astro";
 import Section from "../global/Section.astro";
-import Title from "../global/Title.astro";
 import Row from "./Row.astro";
-import image from "/public/draksoy-klinik.png";
+import whoWeAreImage from "/public/draksoy-klinik.png";
 ---
 
-<Row>
-  <Section class="who-we-are">
-    <div class="column image-container">
-      <Image
-        src={image}
-        width={image.width}
-        height={image.height}
-        alt="Dr. Senai Aksoy"
-        class="masked-image"
-      />
+<section class="who-we-are" aria-labelledby="who-we-are-title">
+  <div class="container grid">
+    <div class="image-container">
+      <div class="blob-mask shadow-premium">
+        <Image
+          src={whoWeAreImage}
+          alt="Doç. Dr. Senai Aksoy ve Ekibi"
+          width={600}
+          height={800}
+          class="clinician-image"
+        />
+      </div>
+      <div class="experience-badge glass-card">
+        <span class="number">30+</span>
+        <span class="text">Yıl Tecrübe</span>
+      </div>
     </div>
 
-    <div class="column">
-      <Title size="big">Biz Kimiz</Title>
-      <p class="text">
-        Türkiye’nin üreme sağlığı, infertilite ve tüp bebek alanındaki lider
-        online platformuna Tupbebek.com’a hoş geldiniz. 1996 yılından beri
-        kesintisiz yayın yapmanın gururu içinde, bu önemli sağlık konularında
-        bilinç, eğitim ve desteği artırma misyonumuzla, alandaki öncü
-        çabalarımızı sürdürmenin mutluluğunu yaşıyoruz.
+    <div class="content-container">
+      <h2 id="who-we-are-title" class="premium-title">
+        Deneyim ve <span class="accent">Uzmanlık</span> ile Yanınızdayız
+      </h2>
+      <p class="description">
+        Doç. Dr. Senai Aksoy liderliğindeki ekibimiz, üreme sağlığı ve tüp bebek alanında dünya standartlarında bir hizmet sunmaktadır. 30 yılı aşkın süredir binlerce ailenin mutluluğuna ortak olmanın gururunu yaşıyoruz.
       </p>
-      <p>
-        <CTA
-          href="/hakkimizda"
-          variant="secondary"
-          size="small"
-          title="Dr.Senai Aksoy Tüp Bebek Merkezi Hakkında"
-        >
-          Hakkımızda
-          <Icon name="arrowRight" />
-        </CTA>
-      </p>
+      
+      <div class="features-grid">
+        <div class="feature">
+          <div class="icon-circle"><Icon name="globe" /></div>
+          <h3>Uluslararası Standartlar</h3>
+          <p>En modern teknikler ve laboratuvar altyapısı.</p>
+        </div>
+        <div class="feature">
+          <div class="icon-circle"><Icon name="envelope" /></div>
+          <h3>Kişiye Özel Yaklaşım</h3>
+          <p>Her hasta için özel planlanmış tedavi süreçleri.</p>
+        </div>
+      </div>
+
+      <CTA href="/hakkimizda" variant="secondary" title="Hakkımızda Daha Fazla Bilgi">
+        Ekibimizi Tanıyın
+      </CTA>
     </div>
-  </Section>
-</Row>
+  </div>
+</section>
 
 <style lang="scss">
-  .image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    .masked-image {
-      width: 100%;
-      height: auto;
-      max-width: 350px;
-      aspect-ratio: 1;
-      object-fit: cover;
-      /* Odak noktasını fotoğrafın sağında bulunan doktora al altta da offset olmasin */
-      object-position: 70% 15%;
-      
-      /* Artistik kesim (blob shape) */
-      border-radius: 50%;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-      margin: auto;
-      transition: all 0.4s ease;
-      
-      &:hover {
-        /* Hover durumunda artistik form değişimi */
-        border-radius: 45% 55% 50% 50% / 55% 45% 55% 45%;
-        transform: translateY(-5px) scale(1.02);
+  .container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto !important;
+    padding: 0 2rem;
+    box-sizing: border-box;
+  }
+
+  .who-we-are {
+    padding: var(--spacing-xlarge) 0;
+    position: relative;
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: var(--spacing-xlarge);
+      align-items: center;
+
+      @media (max-width: 1024px) {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-large);
       }
     }
   }
 
-  .column {
+  .image-container {
+    position: relative;
+    padding: var(--spacing-big);
+    max-width: 500px; /* Constrain width to prevent overpowering text */
+    margin: 0 auto;
 
-    @media screen and (min-width: 768px) {
-      grid-template-columns: 1fr 380px;
+    .blob-mask {
+      width: 100%;
+      aspect-ratio: 4 / 5.2; /* Taller but more narrow for better framing */
+      overflow: hidden;
+      /* Refined shape: Much flatter at the top (15-20%) to prevent head clipping */
+      border-radius: 40% 60% 50% 50% / 15% 15% 70% 70%; 
+      background: var(--color-brand-secondary-light);
+      box-shadow: var(--glass-shadow);
+      
+      .clinician-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center 5%; /* Higher priority on the head */
+        transform: scale(1.05);
+        transition: transform 0.5s ease;
+      }
+    }
 
-      &:last-child {
-        order: -1;
+    .experience-badge {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      padding: var(--spacing-medium) var(--spacing-large);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-width: 140px;
+
+      .number {
+        font-size: 2rem;
+        font-weight: 800;
+        color: var(--color-brand-secondary);
+        line-height: 1;
+      }
+
+      .text {
+        font-size: 0.8125rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        margin-top: 5px;
+        color: var(--color-brand-primary);
+      }
+    }
+  }
+
+  .content-container {
+    h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      margin-bottom: var(--spacing-medium);
+      
+      .accent {
+        color: var(--color-brand-secondary);
+      }
+    }
+
+    .description {
+      font-size: 1.125rem;
+      line-height: 1.7;
+      color: #555;
+      margin-bottom: var(--spacing-large);
+    }
+  }
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-big);
+    margin-bottom: var(--spacing-large);
+
+    @media (max-width: 640px) {
+      grid-template-columns: 1fr;
+    }
+
+    .feature {
+      .icon-circle {
+        width: 48px;
+        height: 48px;
+        background: var(--color-brand-secondary-light);
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--color-brand-secondary);
+        margin-bottom: var(--spacing-medium);
+        
+        :global(svg) {
+          width: 24px;
+          height: 24px;
+        }
+      }
+
+      h3 {
+        font-size: 1.125rem;
+        margin-bottom: 0.5rem;
+        font-family: var(--font-primary);
+      }
+
+      p {
+        font-size: 0.9375rem;
+        color: #777;
+        line-height: 1.5;
       }
     }
   }

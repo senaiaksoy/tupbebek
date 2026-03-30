@@ -4,95 +4,141 @@ import { Image } from "astro:assets";
 import Icon from "../../icons/index.astro";
 import CTA from "./CTA.astro";
 import Title from "./Title.astro";
-import heroImage from "/public/home-hero.webp";
+const heroImage = "/home-hero.webp";
 ---
 
-<div class="hero mesh-hero">
-  <div class="container" data-reveal>
-    <div class="text">
-      <Title size="large">Tüp bebek yolculuğunuza hemen başlayın</Title>
-      <p>
-        Tedavi sürecinizi hemen başlatmak, bilgi veya randevu almak için bize
-        ulaşın.
+<section class="hero" aria-labelledby="hero-title">
+  <div class="container hero-grid">
+    <div class="hero-content glass-card">
+      <h1 id="hero-title" class="premium-title">
+        Tüp Bebek Yolculuğunuza <br />
+        <span class="accent-text">Güvenle Başlayın</span>
+      </h1>
+      <p class="hero-description">
+        Doç. Dr. Senai Aksoy ve ekibi, 30 yılı aşkın tecrübe ve modern tıp teknikleriyle, ebeveynlik hayalinize giden yolda yanınızda.
       </p>
-      <p>
-        <CTA
-          href="/iletisim"
-          size="large"
-          title="Tüpbebek yolculuğunuza şimdi başlayın"
-        >
-          İletişim
+      <div class="hero-actions">
+        <CTA href="/randevu" variant="primary" size="large" title="Randevu Alın">
+          Süreci Başlatın
           <Icon name="arrowRight" />
         </CTA>
-      </p>
+        <CTA href="/tup-bebek-basari-oranlari" variant="secondary" size="large" title="Başarı Oranlarımız">
+          Başarı Oranları
+        </CTA>
+      </div>
     </div>
-
-    <div class="image">
-      <Image
-        src={heroImage}
-        width={heroImage.width}
-        height={heroImage.height}
-        alt="Dr. Senai Aksoy Tüpbebek Merkezi"
-        loading="eager"
-        fetchpriority="high"
-      />
+    <div class="hero-image-container">
+      <div class="image-mask">
+        <Image
+          src={heroImage}
+          alt="Ebeveynlik Yolculuğu - Dr. Senai Aksoy"
+          width={1200}
+          height={1200}
+          loading="eager"
+        />
+      </div>
     </div>
   </div>
-</div>
+</section>
 
 <style lang="scss">
+  .container {
+    width: 100%;
+    max-width: var(--container-width);
+    margin: 0 auto !important;
+    padding: 0 var(--spacing-large);
+    box-sizing: border-box;
+  }
+
   .hero {
-    grid-column: span 3;
-    padding: var(--spacing-large);
+    position: relative;
+    padding: 160px 0 100px;
+    overflow: hidden;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+  }
 
-    .container {
-      max-width: calc(var(--container-width) - 12rem);
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: var(--spacing-xlarge);
+    align-items: center;
+
+    @media (max-width: 1024px) {
+      grid-template-columns: 1fr;
+      text-align: center;
       gap: var(--spacing-large);
-      place-items: center;
-      margin: auto;
-
-      :global(h1) {
-        color: #5a6db4;
-      }
-
-      p {
-        font-family: var(--font-secondary);
-        font-size: 1.5rem;
-      }
     }
+  }
 
-    .image {
-      max-width: 500px;
-      height: auto;
-      aspect-ratio: 1;
+  .hero-content {
+    background: rgba(255, 255, 255, 0.95); /* Increased opacity for better contrast */
+    backdrop-filter: var(--glass-blur);
+    border: 1px solid var(--glass-border);
+    padding: var(--spacing-xlarge);
+    border-radius: var(--border-radius-premium);
+    box-shadow: 0 12px 40px rgba(40, 64, 157, 0.15); /* Slightly more prominent shadow */
+    z-index: 2;
 
-      img {
+    h1 {
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      line-height: 1.1;
+      margin-bottom: var(--spacing-big);
+      color: var(--color-brand-secondary);
+
+      .accent-text {
+        color: var(--color-brand-primary);
         display: block;
-        height: auto;
-        aspect-ratio: 1;
-        object-fit: cover;
-        -webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDQ4IiBoZWlnaHQ9IjEwNTIiIGZpbGw9Im5vbmUiPjxwYXRoIGZpbGw9IiNBNDk1RkIiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTU3MC45MDUgMTUyLjM0OEM2ODguNDQxIDE0MC4zMyA3NzEuMTg3LTI3LjkxNSA4ODQuOTQxIDQuMDI2IDk4Ny45OTcgMzIuOTYyIDEwMDYuMjMgMTc4LjE4OCAxMDMyLjYgMjgxLjk4NWMyMy4xNiA5MS4xNjkgMTkuNjUgMTg2LjE0OS02Ljg0IDI3Ni40MDMtMjQuMDYgODEuOTQ4LTg1LjQ2MiAxNDIuMTUxLTEzNi4yMDggMjEwLjgzMS01NS41MyA3NS4xNTYtOTQuMjUyIDE2NS4yNDEtMTc1LjYwMiAyMTEuMTc4LTkxLjYzMiA1MS43NDMtMjAzLjg0MiA5My4xMDMtMzAzLjUxNCA1OS4zNzMtOTkuMjUtMzMuNTktMTM0LjUwOS0xNTIuMzY1LTIwMy43NTktMjMxLjAzMy02OS45NzQtNzkuNDg5LTE5Mi4wMjMtMTI4Ljc1OS0yMDUuNDUzLTIzMy44My0xMy40MzktMTA1LjE0NCA4Ny4wNjYtMTg2LjQ3NCAxMzkuOTk3LTI3OC4yOTUgNDcuMzk1LTgyLjIxOCA2NC40MjItMjAyLjEzIDE1NC4zNTQtMjMyLjMyNCA5My4yMzQtMzEuMzAzIDE3Ny40OTYgOTguMDYzIDI3NS4zMyA4OC4wNloiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==");
-        mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDQ4IiBoZWlnaHQ9IjEwNTIiIGZpbGw9Im5vbmUiPjxwYXRoIGZpbGw9IiNBNDk1RkIiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTU3MC45MDUgMTUyLjM0OEM2ODguNDQxIDE0MC4zMyA3NzEuMTg3LTI3LjkxNSA4ODQuOTQxIDQuMDI2IDk4Ny45OTcgMzIuOTYyIDEwMDYuMjMgMTc4LjE4OCAxMDMyLjYgMjgxLjk4NWMyMy4xNiA5MS4xNjkgMTkuNjUgMTg2LjE0OS02Ljg0IDI3Ni40MDMtMjQuMDYgODEuOTQ4LTg1LjQ2MiAxNDIuMTUxLTEzNi4yMDggMjEwLjgzMS01NS41MyA3NS4xNTYtOTQuMjUyIDE2NS4yNDEtMTc1LjYwMiAyMTEuMTc4LTkxLjYzMiA1MS43NDMtMjAzLjg0MiA5My4xMDMtMzAzLjUxNCA1OS4zNzMtOTkuMjUtMzMuNTktMTM0LjUwOS0xNTIuMzY1LTIwMy43NTktMjMxLjAzMy02OS45NzQtNzkuNDg5LTE5Mi4wMjMtMTI4Ljc1OS0yMDUuNDUzLTIzMy44My0xMy40MzktMTA1LjE0NCA4Ny4wNjYtMTg2LjQ3NCAxMzkuOTk3LTI3OC4yOTUgNDcuMzk1LTgyLjIxOCA2NC40MjItMjAyLjEzIDE1NC4zNTQtMjMyLjMyNCA5My4yMzQtMzEuMzAzIDE3Ny40OTYgOTguMDYzIDI3NS4zMyA4OC4wNloiIGNsaXAtcnVsZT0iZXZlbm9kZCIvPjwvc3ZnPg==");
-        -webkit-mask-position: center;
-        mask-position: center;
-        -webkit-mask-repeat: no-repeat;
-        mask-repeat: no-repeat;
-        -webkit-mask-size: 100% 100%;
-      }
-    }
-
-    @media screen and (max-width: 1023px) {
-      padding: var(--spacing-medium);
-
-      .container {
-        grid-template-columns: 1fr;
-      }
-
-      .image {
-        order: -1;
       }
     }
   }
+
+  .hero-image-container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+
+    .image-mask {
+      border-radius: var(--border-radius-premium);
+      overflow: hidden;
+      box-shadow: var(--shadow-xl);
+      transform: perspective(1000px) rotateY(-5deg);
+      transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+      width: 100%;
+      max-width: 600px; /* Constrain size */
+      background: #f0f4f8; /* Placeholder color */
+
+      &:hover {
+        transform: perspective(1000px) rotateY(0deg);
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  }
+
+  .hero-description {
+    font-size: 1.25rem;
+    color: var(--color-text-muted);
+    margin-bottom: var(--spacing-xlarge);
+    max-width: 600px;
+    line-height: 1.6;
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: var(--spacing-medium);
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+
 </style>

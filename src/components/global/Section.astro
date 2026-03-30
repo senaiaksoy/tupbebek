@@ -16,11 +16,26 @@ const classNames = classnames("section", className);
     gap: var(--spacing-xlarge);
     margin: auto;
     max-width: min(calc(var(--container-width) - 2rem), calc(100vw - 2rem));
-    background-color: white;
+    /* Premium Glassmorphism */
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.6) 100%);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 
+      0 12px 32px rgba(40, 64, 157, 0.04),
+      inset 0 1px 0 rgba(255, 255, 255, 0.8);
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
     padding-block: calc(var(--spacing-large) * 1.5);
 
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 
+        0 24px 48px rgba(40, 64, 157, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 1);
+      background: linear-gradient(145deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.75) 100%);
+    }
+
     @media screen and (min-width: 1024px) {
-      border: 1px solid var(--color-gray-10);
+      border: 1px solid rgba(255, 255, 255, 0.5);
       border-radius: 1rem;
       padding-inline: var(--spacing-large);
     }
@@ -66,10 +81,25 @@ const classNames = classnames("section", className);
     gap: var(--spacing-xlarge);
     padding-block: var(--spacing-medium);
     max-width: min(calc(var(--container-width) - 2rem), calc(100vw - 2rem));
-    background-color: white;
+    /* Premium Glassmorphism */
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.6) 100%);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 
+      0 12px 32px rgba(40, 64, 157, 0.04),
+      inset 0 1px 0 rgba(255, 255, 255, 0.8);
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 
+        0 24px 48px rgba(40, 64, 157, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 1);
+      background: linear-gradient(145deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.75) 100%);
+    }
 
     @media screen and (min-width: 1024px) {
-      border: 1px solid var(--color-gray-10);
+      border: 1px solid rgba(255, 255, 255, 0.5);
       border-radius: 1rem;
       padding: calc(var(--spacing-large) * 1.5)
         calc(var(--spacing-xlarge) * 1.5);

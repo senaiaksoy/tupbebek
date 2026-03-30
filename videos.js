@@ -22,13 +22,14 @@ id: ${ytID}
 date: ${video.date}
 ---
 `;
-  const path = `/Users/ee/Work/tupbebek/src/content/videos/${video.nicetitle}.md`;
+  const path = `./src/content/videos/${video.nicetitle}.md`;
 
+  console.log(`Writing file: ${path}`);
   fs.writeFile(path, content, (err) => {
     if (err) {
-      console.error(err);
+      console.error(`Error writing ${path}:`, err);
     } else {
-      // file written successfully
+      console.log(`Successfully wrote: ${path}`);
     }
   });
 });

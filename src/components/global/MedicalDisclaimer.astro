@@ -1,0 +1,78 @@
+---
+interface Props {
+  isPageBottom?: boolean;
+}
+
+const { isPageBottom = false } = Astro.props;
+---
+
+<div class:list={["medical-disclaimer", { "is-bottom": isPageBottom }]}>
+  <div class="container glass-disclaimer">
+    <p>
+      <span class="label">BİLGİLENDİRME:</span> Sitemizdeki içerikler yalnızca ziyaretçilerimizi bilgilendirme amacıyla hazırlanmıştır. 
+      Tanı ve tedavi süreçleri için mutlaka uzman bir hekime başvurunuz. 
+      Platformumuzda reklam, kampanya veya haksız rekabete yol açabilecek herhangi bir ticari ibareye yer verilmemektedir.
+    </p>
+  </div>
+</div>
+
+<style lang="scss">
+  .medical-disclaimer {
+    padding: var(--spacing-medium) 0;
+    font-size: 0.8125rem;
+    color: var(--color-brand-primary);
+    text-align: center;
+    position: relative;
+    z-index: 10;
+
+    .container {
+      max-width: var(--container-width);
+      margin: 0 auto;
+      padding: 0 var(--spacing-large);
+    }
+
+    .glass-disclaimer {
+      background: var(--glass-bg);
+      backdrop-filter: var(--glass-blur);
+      border-radius: 100px;
+      padding: 0.75rem 2rem;
+      border: 1px solid var(--glass-border);
+      display: inline-block;
+      box-shadow: var(--glass-shadow);
+    }
+
+    &.is-bottom {
+      margin-top: var(--spacing-xlarge);
+      border-top: 1px solid rgba(40, 64, 157, 0.05);
+      padding-top: var(--spacing-large);
+      
+      .glass-disclaimer {
+        background: transparent;
+        border: none;
+        backdrop-filter: none;
+        box-shadow: none;
+      }
+    }
+
+    p {
+      margin: 0;
+      line-height: 1.6;
+      opacity: 0.8;
+    }
+
+    .label {
+      font-weight: 700;
+      color: var(--color-brand-secondary);
+      margin-right: 0.25rem;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: 0.75rem;
+      
+      .glass-disclaimer {
+        padding: 0.75rem 1.5rem;
+        border-radius: var(--border-radius-premium);
+      }
+    }
+  }
+</style>

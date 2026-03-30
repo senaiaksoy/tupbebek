@@ -18,9 +18,12 @@
   .media {
     width: 100%;
     grid-column: 1 / 4;
+    display: flex;
+    justify-content: center;
 
     img {
       margin: auto;
+      display: block;
     }
   }
 

@@ -7,19 +7,10 @@ body {
   font-family: var(--font-primary);
   margin: 0;
   padding: 0;
-  background-color: white;
+  background-color: transparent;
   color: #222;
   min-width: 360px;
   overflow-x: hidden;
-
-  &.home {
-    background: linear-gradient(
-      rgb(237, 242, 247) 0%,
-      rgba(237, 242, 247, 0) 100%
-    );
-    background-size: 100%;
-    background-repeat: no-repeat;
-  }
 
   &.nav-open {
     overflow-y: hidden;
@@ -120,6 +111,10 @@ main {
 
   @at-root body.home & {
     padding-top: 0;
+  }
+
+  > * {
+    grid-column: 1 / -1;
   }
   // view-transition-name: main;
 }

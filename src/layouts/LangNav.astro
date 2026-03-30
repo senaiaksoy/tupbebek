@@ -74,12 +74,11 @@ const classNames = classnames("languages", className);
     }
 
     &.desktop {
-      @media screen and (min-width: 1280px) {
-        grid-column: 3/5;
-      }
+      display: none;
 
-      @media screen and (max-width: 480px) {
-        display: none;
+      @media screen and (min-width: 1280px) {
+        display: flex;
+        grid-column: 3/5;
       }
     }
   }

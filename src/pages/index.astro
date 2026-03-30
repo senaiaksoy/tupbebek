@@ -12,11 +12,14 @@ const homeSchema = {
   context: "https://schema.org",
   graph: [
     {
-      type: "MedicalClinic",
+      type: "MedicalBusiness",
       id: "https://tupbebek.com/#organization",
       name: "Dr. Senai Aksoy Tüp Bebek Merkezi",
       url: "https://tupbebek.com",
-      logo: "https://tupbebek.com/sa.jpg",
+      logo: {
+        type: "ImageObject",
+        url: "https://tupbebek.com/sa.jpg"
+      },
       image: "https://tupbebek.com/home-hero.webp",
       medicalSpecialty: [
         "ObstetricsAndGynecology",
@@ -55,26 +58,42 @@ const homeSchema = {
       name: "Dr. Senai Aksoy",
       url: "https://tupbebek.com/dr-senai-aksoy",
       image: "https://tupbebek.com/senai-aksoy.webp",
+      medicalSpecialty: "ReproductiveEndocrinologyAndInfertility",
+      occupationalCategory: "Doctor",
+      knowsAbout: [
+        "IVF",
+        "Infertility",
+        "Gynecology",
+        "Obstetrics",
+        "ICSI"
+      ],
       sameAs: [
         "https://www.draksoyivf.com",
         "https://www.linkedin.com/in/senai-aksoy-bba69b36/",
-        "https://orcid.org/0000-0003-4110-5290",
-        "https://pubmed.ncbi.nlm.nih.gov/?term=Aksoy%2C+Senai%5BAuthor%5D",
-        "https://scholar.google.com/scholar?hl=tr&as_sdt=0%2C5&q=senai+aksoy",
-        "https://www.instagram.com/drsenaiaksoy/",
-        "https://www.youtube.com/@DocentDrSenaiAksoy",
-        "https://www.vaidam.com/doctors/dr-senai-aksoy",
-        "https://www.medsurgeindia.com/dr-senai-aksoy"
+        "https://orcid.org/0000-0003-4110-5290"
       ]
+    },
+    {
+      type: "MedicalProcedure",
+      name: "Tüp Bebek Tedavisi (IVF)",
+      alternateName: "In Vitro Fertilization",
+      description: "Dr. Senai Aksoy tarafından uygulanan kapsamlı tüp bebek tedavi süreci.",
+      procedureType: "SurgicalProcedure",
+      preparation: "Yumurta toplama öncesi hazırlık süreci.",
+      bodyLocation: "Uterus",
+      relevantSpecialty: {
+        type: "MedicalSpecialty",
+        name: "Reproductive Endocrinology and Infertility"
+      }
     }
   ]
 };
 ---
 
 <Layout
-  title="Tüp bebek tedavinize hemen başlayın"
+  title="Tüp Bebek Tedavisi ve Modern Üreme Teknikleri"
   page="home"
-  description="Dr. Senai Aksoy"
+  description="Doç. Dr. Senai Aksoy ve ekibi, 30 yıllık tecrübe ile Lotus Nişantaşı'nda kişiye özel tüp bebek (IVF) tedavisi ve modern üreme çözümleri sunmaktadır."
 >
   <Hero />
 

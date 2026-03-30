@@ -4,208 +4,181 @@ import Icon from "../icons/index.astro";
 import Logo from "../logo.astro";
 import QuickContact from "./QuickContact.astro";
 import SocialMedia from "./SocialMedia.astro";
+import Search from "../components/Search.astro";
 ---
 
-<footer>
+<footer class="footer">
   <div class="disclaimer">
     <Icon name="exclamation" size="big" />
-
-    Sayfa içeriği sadece bilgilendirme amaçlıdır, tanı ve tedavi için mutlaka
-    doktorunuza başvurunuz.
+    <p>Sayfa içeriği sadece bilgilendirme amaçlıdır, tanı ve tedavi için mutlaka doktorunuza başvurunuz.</p>
   </div>
 
-  <div class="container">
-    <div class="logo light">
-      <a href="/" title="Ana Sayfa"><Logo /></a>
+  <div class="container footer-grid">
+    <div class="footer-logo">
+      <div class="logo light">
+        <a href="/" title="Ana Sayfa"><Logo /></a>
+      </div>
       <SocialMedia />
     </div>
 
-    <nav>
-      <div class="">
-        <h4>Hakkımızda</h4>
+    <nav class="footer-nav">
+      <div class="footer-col">
+        <h4>Kurumsal</h4>
         <ul>
-          <li>
-            <a href="/hakkimizda">Hakkımızda</a>
-          </li>
-          <li>
-            <a href="/dr-senai-aksoy">Dr. Senai Aksoy</a>
-          </li>
-          <li>
-            <a href="/tup-bebek-basari-oranlari">Başarı Oranları</a>
-          </li>
-          <li>
-            <a href="/hizmetler">Hizmetlerimiz</a>
-          </li>
+          <li><a href="/hakkimizda">Hakkımızda</a></li>
+          <li><a href="/dr-senai-aksoy">Dr. Senai Aksoy</a></li>
+          <li><a href="/tup-bebek-basari-oranlari">Başarı Oranları</a></li>
+          <li><a href="/iletisim">İletişim</a></li>
         </ul>
       </div>
-      <div class="">
-        <h4>Hizmetlerimiz</h4>
+      <div class="footer-col">
+        <h4>Hizmetler</h4>
         <ul>
-          <li>
-            <a href="/tup-bebek-ve-mikroenjeksiyon"
-              >Tüp Bebek ve Mikroenjeksiyon</a>
-          </li>
+          <li><a href="/tup-bebek-ve-mikroenjeksiyon">Tüp Bebek</a></li>
           <li><a href="/asilama">Aşılama</a></li>
-          <li><a href="/yumurtlama-takibi">Yumurtlama Takibi </a></li>
-          <li>
-            <a href="/kisirlik-tanisi-konmasi">Kısırlık Tanısı Konması</a>
-          </li>
+          <li><a href="/yumurtlama-takibi">Yumurtlama Takibi</a></li>
+          <li><a href="/kisirlik-tanisi-konmasi">Kısırlık Tanısı</a></li>
           <li><a href="/sperm-analizi">Sperm Analizi</a></li>
-          <li><a href="/histeroskopi">Histeroskopi</a></li>
-          <li><a href="/laparoskopi">Laparoskopi</a></li>
-          <li><a href="/tesatese">TESA-TESE</a></li>
-          <li>
-            <a href="/preimplantasyon-genetik-tani"
-              >Preimplantasyon Genetik Tanı</a>
-          </li>
-          <li><a href="/embriyo-dondurma">Embriyo Dondurma </a></li>
-          <li>
-            <a href="/dogurganligin-korunmasi">Doğurganlığın Korunması</a>
-          </li>
         </ul>
       </div>
-      <div class="">
-        <h4>Tedavi</h4>
-        <ul>
-          <li>
-            <a href="/tup-bebek-tedavisinde-nelere-dikkat-etmelisiniz"
-              >Tüp Bebek Tedavisinde Nelere Dikkat Etmelisiniz
-            </a>
-          </li>
-          <li><a href="/tup-bebek-asamalari">Tüp Bebek Aşamaları</a></li>
-          <li>
-            <a href="/yumurtaliklarin-asiri-uyarilmasi"
-              >Yumurtalıkların Aşırı Uyarılması
-            </a>
-          </li>
-          <li>
-            <a href="/tup-bebek-tedavisinde-catlatma-ignesi"
-              >Tüp Bebek Tedavisinde Çatlatma İğnesi</a
-            >
-          </li>
-          <li>
-            <a href="/embriyo-transferi-sonrasi-neler-yapmaliyim"
-              >Embriyo Transferi Sonrası Neler Yapmalıyım?</a
-            >
-          </li>
-          <li>
-            <a href="/embriyo-transferi-sonrasi-kanama"
-              >Embriyo Transferi Sonrası Kanama</a
-            >
-          </li>
-          <li>
-            <a href="/tup-bebek-tedavim-tuttu-mu"
-              >Tüp Bebek Tedavim 'Tuttu mu'?</a
-            >
-          </li>
-          <li>
-            <a href="/tup-bebek-tedavisinde-preimplantasyon-genetik-tani"
-              >Tüp Bebek Tedavisinde Preimplantasyon Genetik Tanı</a
-            >
-          </li>
-          <li>
-            <a href="/tup-bebekte-ozel-uygulamalar"
-              >Tüp Bebek'te Özel Uygulamalar</a
-            >
-          </li>
-          <li>
-            <a href="/tedavi-sirasinda-karsilasilan-sorunlar"
-              >Tedavi Sırasında Karşılaşılan Sorunlar</a
-            >
-          </li>
-        </ul>
+      <div class="footer-col">
+          <h4>Tedavi Süreci</h4>
+          <ul>
+            <li><a href="/tup-bebek-asamalari">Aşamalar</a></li>
+            <li><a href="/embriyo-transferi-sonrasi-neler-yapmaliyim">Transfer Sonrası</a></li>
+            <li><a href="/tup-bebek-tedavisinde-preimplantasyon-genetik-tani">Genetik Tanı (PGT)</a></li>
+            <li><a href="/embriyo-dondurma">Dondurma İşlemi</a></li>
+          </ul>
       </div>
-      <div class="">
-        <h4>Profesyonel Profiller</h4>
-        <ul>
-          <li>
-            <a href="https://www.vaidam.com/doctors/dr-senai-aksoy" target="_blank" rel="me">Vaidam Health Profile</a>
-          </li>
-          <li>
-            <a href="https://www.medsurgeindia.com/dr-senai-aksoy" target="_blank" rel="me">Medsurge India Profile</a>
-          </li>
-          <li>
-            <a href="https://www.draksoyivf.com" target="_blank" rel="me">English Website</a>
-          </li>
-        </ul>
-      </div>
-      <div class="">
+      <div class="footer-col">
         <h4>İletişim</h4>
-        <ul>
-          <li>
-            <a href={`mailto: ${contact.email}`}>{contact.email}</a>
-          </li>
-          <li><a href={`tel:${contact.phone}`}>{contact.phone}</a></li>
-          <li>
-             Lotus Nişantaşı, Halaskargazi, Halaskargazi Cd. No: 38-66, Kat 5, Office 92, Otopark girişi yanı Ofis A Kat 5, 34371 Şişli/
-            İstanbul / Türkiye
+        <ul class="contact-list">
+          <li><a href={`mailto:${contact.email}`}><Icon name="mail" /> {contact.email}</a></li>
+          <li><a href={`tel:${contact.phone}`}><Icon name="phone" /> {contact.phone}</a></li>
+          <li class="address">
+            <Icon name="mapPin" />
+            <span>Lotus Nişantaşı, Şişli, İstanbul</span>
           </li>
         </ul>
       </div>
     </nav>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; {new Date().getFullYear()} Dr. Senai Aksoy. Tüm Hakları Saklıdır.</p>
+    </div>
   </div>
 </footer>
 
 <QuickContact />
 
 <style lang="scss">
+  .footer {
+    background-color: var(--color-brand-secondary);
+    color: #fff;
+    padding-top: 4rem;
+    width: 100%;
+  }
+
   .disclaimer {
     display: flex;
     gap: var(--spacing-medium);
     align-items: center;
-    max-width: min(var(--container-width) - 2rem, 100vw - 2rem);
-    padding: var(--spacing-medium);
-    margin: auto;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.1);
+    max-width: var(--container-width);
+    padding: var(--spacing-medium) var(--spacing-large);
+    margin: 0 auto 3rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: var(--border-radius-medium);
     font-size: 0.875rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
 
-    :global(.icon) {
-      flex-shrink: 0;
+    p { margin: 0; }
+    :global(.icon) { flex-shrink: 0; color: var(--color-brand-primary); }
+  }
+
+  .footer-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    @media (min-width: 1024px) {
+        flex-direction: row;
+        justify-content: space-between;
     }
   }
 
-  .container {
+  .footer-logo {
+    flex: 0 0 260px;
+    
+    .logo {
+      margin-bottom: 2rem;
+      :global(svg) { height: 60px; width: auto; }
+    }
+  }
+
+  .footer-nav {
+    flex: 1;
     display: grid;
-    grid-template-columns: 1fr;
-    gap: var(--spacing-medium);
-    max-width: min(var(--container-width) - 2rem, 100vw - 2rem);
-    padding: var(--spacing-medium);
-    margin: auto;
-    color: #fff;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 2rem;
+  }
 
-    @media screen and (min-width: 768px) {
-      grid-template-columns: 260px 1fr;
-    }
-
+  .footer-col {
     h4 {
-      margin-bottom: var(--spacing-small);
+      color: #fff;
+      font-size: 1.125rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      font-family: var(--font-secondary);
     }
 
-    nav {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: var(--spacing-medium);
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
 
-      ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
+      li { margin-bottom: 0.75rem; }
 
-        a {
-          display: block;
-          color: #fff;
-          padding-block: var(--spacing-small);
-          text-decoration: none;
-          font-size: 1rem;
+      a {
+        color: rgba(255, 255, 255, 0.7);
+        text-decoration: none;
+        transition: color 0.3s ease;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
 
-          &:hover,
-          &:focus {
-            text-decoration: underline;
-            text-underline-offset: 2px;
-          }
-        }
+        &:hover { color: #fff; }
+        :global(.icon) { width: 16px; height: 16px; }
       }
     }
+  }
+
+  .footer-bottom {
+    margin-top: 4rem;
+    padding: 1.5rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.5);
+    
+    p { margin: 0; }
+  }
+
+
+  .address {
+    display: flex;
+    gap: 0.5rem;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.4;
+    :global(.icon) { flex-shrink: 0; margin-top: 4px; }
+  }
+
+  .container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto !important;
+    padding: 0 2rem;
+    box-sizing: border-box;
   }
 </style>
