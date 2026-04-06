@@ -161,6 +161,12 @@ const accordionItems = navigationMenus.map((menu) => ({
             }
         });
 
+        // Search buttons → open search modal
+        const desktopSearchBtn = document.getElementById('desktop-search-btn');
+        const mobileSearchTrigger = document.getElementById('mobile-search-trigger');
+        if (desktopSearchBtn) desktopSearchBtn.addEventListener('click', () => window.__openSearchModal?.());
+        if (mobileSearchTrigger) mobileSearchTrigger.addEventListener('click', () => window.__openSearchModal?.());
+
         // Accordion Logic
         document.querySelectorAll('.mobile-accordion button').forEach(btn => {
             btn.addEventListener('click', () => {

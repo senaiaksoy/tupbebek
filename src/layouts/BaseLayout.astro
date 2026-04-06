@@ -8,6 +8,7 @@ import '../styles/animations.css';
 import '../styles/components.css';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import CookieConsent from '../components/CookieConsent.astro';
+import SearchAutocomplete from '../components/SearchAutocomplete.astro';
 
 interface Props {
 	title: string;
@@ -208,6 +209,7 @@ const medicalWebPageSchema = {
 			<a href="#main-content" class="skip-link">Ana içeriğe geç</a>
 		{!isHome && <Breadcrumbs />}
 		<slot />
+		<SearchAutocomplete />
 		<CookieConsent />
 
 		<!-- Prestige Badge removed — trust indicators now in HeroSection trust bar -->

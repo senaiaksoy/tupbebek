@@ -1,43 +1,18 @@
 ---
 // SearchAutocomplete.astro
-// Search component with autocomplete suggestions
-// Usage: <SearchAutocomplete searchData={allArticles} />
-
-export interface SearchItem {
-  id: string;
-  title: string;
-  description?: string;
-  url: string;
-  category?: string;
-  type?: 'article' | 'guide' | 'question';
-}
+// Pagefind-powered search with modal overlay UI
+// Usage: <SearchAutocomplete />
 
 export interface Props {
-  searchData: SearchItem[];
   placeholder?: string;
-  position?: 'modal' | 'dropdown';
   maxResults?: number;
-  categoryFilter?: string | null;
 }
 
 const {
-  searchData = [],
   placeholder = 'Rehberlerde ara...',
-  position = 'modal',
   maxResults = 8
 } = Astro.props;
-
-// Generate JSON data for client-side search
-const jsonData = JSON.stringify(searchData);
 ---
-
-<!-- Search Button (for modal/overlay) -->
-<button id="search-trigger"
-        class="p-2 text-gray-500 hover:text-primary-600 hover:bg-gray-50
-               rounded-lg transition-all focus:outline-none focus:ring-2 focus:ring-primary"
-        aria-label="Search">
-  <span class="material-symbols-outlined">search</span>
-</button>
 
 <!-- Search Modal/Overlay -->
 <div id="search-modal"
@@ -46,16 +21,15 @@ const jsonData = JSON.stringify(searchData);
      role="dialog"
      aria-modal="true"
      aria-label="Arama"
-     onclick="if(event.target === this) document.getElementById('search-modal').classList.add('hidden')">
+     onclick="if(event.target === this) window.__closeSearchModal?.()">
 
   <div class="relative h-full flex items-start justify-center pt-20">
     <!-- Search Container -->
     <div class="w-full max-w-2xl mx-4 glass-card rounded-3xl shadow-2xl overflow-hidden
                 transform transition-all duration-500 scale-95 opacity-0 active-modal:scale-100 active-modal:opacity-100">
 
-      <!-- Search Input Wrapper with Focus Glow -->
+      <!-- Search Input Wrapper -->
       <div class="relative p-6 border-b border-gray-100/50 bg-white/40">
-        <div class="absolute -inset-1 bg-gradient-to-r from-primary/20 to-secondary/20 blur opacity-0 transition-opacity duration-500 group-focus-within:opacity-100"></div>
         <div class="relative flex items-center gap-4">
           <span class="text-primary-600 animate-pulse-soft">
             <span class="material-symbols-outlined text-3xl">search_spark</span>
@@ -66,14 +40,14 @@ const jsonData = JSON.stringify(searchData);
             placeholder={placeholder}
             class="w-full bg-transparent text-xl font-bold text-gray-800 placeholder-gray-400 focus:outline-none"
             autocomplete="off"
-            aria-label="Search articles and guides"
+            aria-label="Makale ve rehberlerde ara"
             aria-describedby="search-results-label" />
 
           <!-- Clear button -->
           <button
             id="search-clear"
             class="text-gray-400 hover:text-primary-600 transition-colors hidden"
-            aria-label="Clear search">
+            aria-label="Temizle">
             <span class="material-symbols-outlined">close</span>
           </button>
         </div>
@@ -84,13 +58,13 @@ const jsonData = JSON.stringify(searchData);
            class="max-h-[65vh] overflow-y-auto bg-white/30 backdrop-blur-md"
            role="region"
            aria-live="polite"
-           aria-label="Search results">
+           aria-label="Arama sonuçları">
 
         <!-- Loading state -->
         <div id="search-loading"
              class="p-12 text-center text-gray-500 hidden">
           <div class="inline-block w-8 h-8 border-4 border-primary-200 border-t-primary-600 rounded-full animate-spin mb-4"></div>
-          <p class="font-bold tracking-tight">Klinik veri taranıyor...</p>
+          <p class="font-bold tracking-tight">Aranıyor...</p>
         </div>
 
         <!-- Initial state -->
@@ -118,7 +92,7 @@ const jsonData = JSON.stringify(searchData);
       <!-- Footer Help -->
       <div class="px-6 py-4 bg-gray-50/80 backdrop-blur-sm border-t border-gray-100 flex items-center justify-between">
         <span id="search-count" class="text-xs font-bold text-gray-400 uppercase tracking-widest hidden">
-          Bulunan: <span class="text-primary-600">0</span> protokol
+          Bulunan: <span class="text-primary-600">0</span> sonuç
         </span>
         <div class="ml-auto flex items-center gap-3">
           <div class="flex items-center gap-1.5 px-2.5 py-1 bg-white border border-gray-200 rounded shadow-sm text-[10px] font-bold text-gray-500">
@@ -136,12 +110,10 @@ const jsonData = JSON.stringify(searchData);
 </div>
 
 <style>
-  /* Smooth scrolling for results */
   #search-results {
     scroll-behavior: smooth;
   }
 
-  /* Highlight matched text */
   .search-highlight {
     background-color: rgba(53, 97, 143, 0.15);
     color: #35618f;
@@ -150,7 +122,6 @@ const jsonData = JSON.stringify(searchData);
     border-radius: 2px;
   }
 
-  /* Staggered result items */
   .search-result-item {
     opacity: 0;
     transform: translateY(10px);
@@ -164,16 +135,18 @@ const jsonData = JSON.stringify(searchData);
     }
   }
 
-  /* Modal transition helper */
   #search-modal.modal-active .glass-card {
     transform: scale(1);
     opacity: 1;
   }
 </style>
 
-<script define:vars={{ searchData, maxResults }}>
+<script define:vars={{ maxResults }}>
+  let pagefind = null;
+  let searchTimeout;
+  const debounceDelay = 200;
+
   const modal = document.getElementById('search-modal');
-  const trigger = document.getElementById('search-trigger');
   const input = document.getElementById('search-input');
   const clearBtn = document.getElementById('search-clear');
   const resultsList = document.getElementById('search-results-list');
@@ -183,133 +156,170 @@ const jsonData = JSON.stringify(searchData);
   const searchCount = document.getElementById('search-count');
   const resultsContainer = document.getElementById('search-results');
 
-  // Debounce search
-  let searchTimeout;
-  const debounceDelay = 200;
+  // Load Pagefind on first use
+  async function loadPagefind() {
+    if (pagefind) return pagefind;
+    try {
+      pagefind = await import('/pagefind/pagefind.js');
+      await pagefind.init();
+      return pagefind;
+    } catch (e) {
+      console.warn('Pagefind not available:', e);
+      return null;
+    }
+  }
 
   // Open modal
-  trigger?.addEventListener('click', () => {
+  function openSearchModal() {
     modal?.classList.remove('hidden');
     setTimeout(() => {
       modal?.classList.remove('opacity-0', 'invisible');
-      modal?.classList.add('modal-active'); // For glass-card animation
+      modal?.classList.add('modal-active');
       input?.focus();
     }, 10);
-  });
+    loadPagefind(); // Preload
+  }
 
   // Close modal
-  function closeModal() {
+  function closeSearchModal() {
     modal?.classList.add('opacity-0', 'invisible');
     modal?.classList.remove('modal-active');
     setTimeout(() => modal?.classList.add('hidden'), 300);
-    input.value = '';
+    if (input) input.value = '';
     clearBtn?.classList.add('hidden');
-    resultsList.innerHTML = '';
+    if (resultsList) resultsList.innerHTML = '';
     initialState?.classList.remove('hidden');
     noResults?.classList.add('hidden');
     searchCount?.classList.add('hidden');
   }
 
+  // Expose globally for header buttons and backdrop click
+  window.__openSearchModal = openSearchModal;
+  window.__closeSearchModal = closeSearchModal;
+
   // Close on Escape
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && !modal?.classList.contains('hidden')) {
-      closeModal();
+      closeSearchModal();
+    }
+  });
+
+  // Ctrl+K / Cmd+K shortcut
+  document.addEventListener('keydown', (e) => {
+    if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+      e.preventDefault();
+      if (modal?.classList.contains('hidden')) {
+        openSearchModal();
+      } else {
+        closeSearchModal();
+      }
     }
   });
 
   // Clear button
   clearBtn?.addEventListener('click', () => {
-    input.value = '';
-    input.focus();
+    if (input) input.value = '';
+    input?.focus();
     search('');
   });
 
   // Search on input
   input?.addEventListener('input', (e) => {
     const query = e.target.value;
-
-    // Show/hide clear button
     if (query) {
       clearBtn?.classList.remove('hidden');
     } else {
       clearBtn?.classList.add('hidden');
     }
-
-    // Debounce search
     clearTimeout(searchTimeout);
     searchTimeout = setTimeout(() => search(query), debounceDelay);
   });
 
-  // Perform search (matching the premium "live" feel)
-  function search(query) {
-    const trimmed = query.trim().toLowerCase();
+  // Perform search via Pagefind
+  async function search(query) {
+    const trimmed = query.trim();
 
-    // Show initial state if empty
     if (!trimmed) {
       initialState?.classList.remove('hidden');
       noResults?.classList.add('hidden');
       searchCount?.classList.add('hidden');
-      resultsList.innerHTML = '';
+      loadingState?.classList.add('hidden');
+      if (resultsList) resultsList.innerHTML = '';
       return;
     }
 
     initialState?.classList.add('hidden');
+    noResults?.classList.add('hidden');
     loadingState?.classList.remove('hidden');
 
-    // Simulate search delay (optimized 150ms for responsiveness)
-    setTimeout(() => {
+    const pf = await loadPagefind();
+    if (!pf) {
       loadingState?.classList.add('hidden');
+      noResults?.classList.remove('hidden');
+      return;
+    }
 
-      // Filter results
-      const results = searchData
-        .filter((item) => {
-          const titleMatch = item.title.toLowerCase().includes(trimmed);
-          const descMatch = item.description?.toLowerCase().includes(trimmed);
-          const categoryMatch = item.category?.toLowerCase().includes(trimmed);
-          return titleMatch || descMatch || categoryMatch;
-        })
-        .slice(0, maxResults);
+    const searchResult = await pf.search(trimmed);
+    const results = await Promise.all(
+      searchResult.results.slice(0, maxResults).map(r => r.data())
+    );
 
-      // Render results
-      if (results.length === 0) {
-        noResults?.classList.remove('hidden');
-        searchCount?.classList.add('hidden');
-        resultsList.innerHTML = '';
-      } else {
-        noResults?.classList.add('hidden');
-        searchCount?.classList.remove('hidden');
-        searchCount.querySelector('span').textContent = results.length;
+    loadingState?.classList.add('hidden');
 
+    if (results.length === 0) {
+      noResults?.classList.remove('hidden');
+      searchCount?.classList.add('hidden');
+      if (resultsList) resultsList.innerHTML = '';
+    } else {
+      noResults?.classList.add('hidden');
+      searchCount?.classList.remove('hidden');
+      const countSpan = searchCount?.querySelector('span');
+      if (countSpan) countSpan.textContent = String(searchResult.results.length);
+
+      if (resultsList) {
         resultsList.innerHTML = results
           .map((result, index) => {
-            const title = highlightText(result.title, trimmed);
-            const category = result.category || result.type || 'Makale';
+            const title = result.meta?.title || 'Makale';
+            const excerpt = result.excerpt || '';
+            const url = result.url || '#';
+            const category = result.filters?.category?.[0] || result.meta?.category || '';
+            const image = result.meta?.image || '';
 
             return `
               <li class="search-result-item" style="animation-delay: ${index * 0.05}s">
-                <a href="${result.url}"
-                   class="block p-4 bg-white/40 border border-gray-100/50 rounded-2xl 
+                <a href="${url}"
+                   class="block p-4 bg-white/40 border border-gray-100/50 rounded-2xl
                           hover:bg-primary-600 hover:border-primary-200 transition-all duration-300
-                          focus:outline-none focus:ring-2 focus:ring-primary-200 group/item"
-                   onclick="closeModal()">
+                          focus:outline-none focus:ring-2 focus:ring-primary-200 group/item">
                   <div class="flex items-center gap-4">
-                    <div class="w-10 h-10 bg-gray-100 rounded-xl flex items-center justify-center 
-                                group-hover/item:bg-white/20 transition-colors">
-                      <span class="material-symbols-outlined text-gray-400 group-hover/item:text-white">
-                        ${getCategoryIcon(category)}
-                      </span>
-                    </div>
+                    ${image ? `
+                      <div class="w-12 h-12 rounded-xl overflow-hidden flex-shrink-0 border border-gray-100">
+                        <img src="${image}" alt="" class="w-full h-full object-cover" loading="lazy" />
+                      </div>
+                    ` : `
+                      <div class="w-10 h-10 bg-gray-100 rounded-xl flex items-center justify-center
+                                  group-hover/item:bg-white/20 transition-colors flex-shrink-0">
+                        <span class="material-symbols-outlined text-gray-400 group-hover/item:text-white">
+                          ${getCategoryIcon(category)}
+                        </span>
+                      </div>
+                    `}
                     <div class="flex-1 min-w-0">
                       <h3 class="font-bold text-gray-900 text-sm line-clamp-1 group-hover/item:text-white transition-colors">
                         ${title}
                       </h3>
-                      ${result.description ? `
-                        <p class="text-xs text-gray-500 mt-0.5 line-clamp-1 group-hover/item:text-white/80 transition-colors">
-                          ${result.description}
+                      ${excerpt ? `
+                        <p class="text-xs text-gray-500 mt-0.5 line-clamp-2 group-hover/item:text-white/80 transition-colors">
+                          ${excerpt}
                         </p>
                       ` : ''}
+                      ${category ? `
+                        <span class="inline-block text-[10px] font-semibold text-primary-600 mt-1 group-hover/item:text-white/70">
+                          ${category}
+                        </span>
+                      ` : ''}
                     </div>
-                    <span class="material-symbols-outlined text-gray-300 group-hover/item:text-white group-hover/item:translate-x-1 transition-all">
+                    <span class="material-symbols-outlined text-gray-300 group-hover/item:text-white group-hover/item:translate-x-1 transition-all flex-shrink-0">
                       arrow_forward_ios
                     </span>
                   </div>
@@ -318,63 +328,53 @@ const jsonData = JSON.stringify(searchData);
             `;
           })
           .join('');
-
-        // Smooth scroll to top of results
-        resultsContainer?.scrollTo({ top: 0, behavior: 'smooth' });
       }
-    }, 150);
+
+      resultsContainer?.scrollTo({ top: 0, behavior: 'smooth' });
+    }
   }
 
   // Helper: Get icon based on category
   function getCategoryIcon(cat) {
+    if (!cat) return 'description';
     cat = cat.toLowerCase();
     if (cat.includes('kadın')) return 'female';
     if (cat.includes('erkek')) return 'male';
     if (cat.includes('tedavi')) return 'medical_services';
-    if (cat.includes('tüfek')) return 'science'; // for IVF
+    if (cat.includes('tüp bebek')) return 'science';
+    if (cat.includes('genetik')) return 'genetics';
     return 'description';
   }
 
-  // Helper: Highlight matched text
-  function highlightText(text, query) {
-    const regex = new RegExp(`(${query})`, 'gi');
-    return text.replace(regex, '<span class="search-highlight">$1</span>');
-  }
-
-  // Handle keyboard navigation in results
+  // Keyboard navigation in results
   input?.addEventListener('keydown', (e) => {
-    const items = resultsList.querySelectorAll('a');
+    const items = resultsList?.querySelectorAll('a') || [];
     if (items.length === 0) return;
 
-    switch (e.key) {
-      case 'ArrowDown':
-        e.preventDefault();
-        items[0]?.focus();
-        break;
-      case 'ArrowUp':
-        e.preventDefault();
-        items[items.length - 1]?.focus();
-        break;
+    if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      items[0]?.focus();
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      items[items.length - 1]?.focus();
     }
   });
 
-  // Handle arrow navigation in results
   resultsList?.addEventListener('keydown', (e) => {
     const items = Array.from(resultsList.querySelectorAll('a'));
     const current = document.activeElement;
 
     if (e.key === 'ArrowDown') {
       e.preventDefault();
-      const currentIndex = items.indexOf(current);
-      const nextItem = items[currentIndex + 1];
-      nextItem?.focus();
+      const idx = items.indexOf(current);
+      items[idx + 1]?.focus();
     } else if (e.key === 'ArrowUp') {
       e.preventDefault();
-      const currentIndex = items.indexOf(current);
-      if (currentIndex === 0) {
+      const idx = items.indexOf(current);
+      if (idx === 0) {
         input?.focus();
       } else {
-        items[currentIndex - 1]?.focus();
+        items[idx - 1]?.focus();
       }
     }
   });

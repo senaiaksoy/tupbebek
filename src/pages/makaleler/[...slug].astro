@@ -123,7 +123,7 @@ const referenceCount = entry.data.references?.length || 0;
             <div class="lg:grid lg:grid-cols-[minmax(0,_3fr)_minmax(220px,_1fr)] lg:gap-12 xl:gap-16">
 
                 <!-- Main Content Column -->
-                <article class="max-w-3xl">
+                <article class="max-w-3xl" data-pagefind-body data-pagefind-meta={`image:${entry.data.image || ''}, category:${entry.data.category || ''}`}>
                     <!-- Article Content — prose -->
                     <div class="prose-medical">
                         <Content />
