@@ -7,6 +7,22 @@ medicalReviewer: "Yayın Kurulu"
 lastModified: 2026-04-03
 category: "Tüp Bebek"
 image: /images/library/tedavi/post_transfert.webp
+references:
+  - title: "Bed rest after embryo transfer: a systematic review and meta-analysis"
+    authors: "Craciunas L, Tsampras N"
+    journal: "Current Opinion in Obstetrics and Gynecology"
+    year: 2014
+    doi: "10.1097/GCO.0000000000000115"
+  - title: "Physical activity and fertility: a systematic review and meta-analysis"
+    authors: "Rao M, Zeng Z, Tang L"
+    journal: "Reproductive Biology and Endocrinology"
+    year: 2018
+    doi: "10.1186/s12958-018-0433-7"
+  - title: "Progesterone for luteal phase support in assisted reproduction"
+    authors: "van der Linden M, Buckingham K, Farquhar C et al."
+    journal: "Cochrane Database of Systematic Reviews"
+    year: 2015
+    doi: "10.1002/14651858.CD009154.pub3"
 ---
 
 ## Tüp Bebek ve Embriyo Transferi Sonrası Bakım: Başarıya Giden Yol

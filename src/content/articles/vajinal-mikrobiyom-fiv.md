@@ -7,6 +7,24 @@ medicalReviewer: "Yayın Kurulu"
 lastModified: 2026-04-03
 category: "Tüp Bebek"
 image: /images/library/laboratuvar/microbiota.webp
+references:
+  - title: "Evidence that the endometrial microbiota has an effect on implantation success or failure"
+    authors: "Moreno I, Codoñer FM, Vilella F et al."
+    journal: "American Journal of Obstetrics and Gynecology"
+    year: 2016
+    doi: "10.1016/j.ajog.2016.09.075"
+  - title: "Lactobacillus dominance and vaginal pH: why is the human vaginal microbiome unique?"
+    authors: "Miller EA, Beasley DE, Dunn RR, Archie EA"
+    journal: "Frontiers in Microbiology"
+    year: 2016
+    doi: "10.3389/fmicb.2016.01936"
+  - title: "The vaginal microbiome and its relationship to behavior, sexual health, and sexually transmitted diseases"
+    authors: "van de Wijgert JHHM, Borgdorff H, Verhelst R et al."
+    journal: "Journal of Infectious Diseases"
+    year: 2014
+    doi: "10.1093/infdis/jiu694"
+videoId: "-blY0f_9WCE"
+videoTitle: "Vajinal Mikrobiyota ve Tüp Bebek Başarısı"
 ---
 
 Vajinal mikrobiyom (vajinal flora), kadının vajinasında yaşayan yararlı ve zararlı bakterilerin dengesidir. **Sağlıklı bir vajinal flora (eubiyoz)** laktobasil (ör. _Lactobacillus crispatus_) ağırlıklıdır ve vajinayı asidik tutup zararlı mikropları engeller. **Bozulmuş flora (disbiyoz)** ise laktobasiller azalırken zararlı bakteriler (ör. _Gardnerella vaginalis_) çoğalır, pH yükselir. Araştırmalar, **sağlıklı vajinal flora**ya sahip kadınların **Tüp Bebek (IVF)** tedavisinde **daha yüksek başarı oranlarına** ulaştığını; disbiyoz durumunda ise başarı oranlarının önemli ölçüde düştüğünü göstermektedir. İyi haber şu ki vajinal mikrobiyom, test edilip tedavi edilebilen **değiştirilebilir bir faktördür** – yani doğru tedbirlerle IVF başarısını artırma potansiyelimiz vardır.

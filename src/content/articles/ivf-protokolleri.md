@@ -7,6 +7,22 @@ medicalReviewer: "Yayın Kurulu"
 lastModified: 2026-04-03
 category: "Tedavi Yöntemleri"
 image: /images/articles/ivf-protokolleri.webp
+references:
+  - title: "GnRH antagonists for assisted reproductive technology"
+    authors: "Al-Inany HG, Youssef MA, Ayeleke RO et al."
+    journal: "Cochrane Database of Systematic Reviews"
+    year: 2016
+    doi: "10.1002/14651858.CD001750.pub4"
+  - title: "Mild stimulation for in vitro fertilization"
+    authors: "Nargund G, Fauser BC, Macklon NS et al."
+    journal: "Fertility and Sterility"
+    year: 2007
+    doi: "10.1016/j.fertnstert.2007.02.009"
+  - title: "Individualized controlled ovarian stimulation in expected poor-responders: an update"
+    authors: "Humaidan P, Alviggi C, Fischer R, Esteves SC"
+    journal: "Reproductive Biology and Endocrinology"
+    year: 2018
+    doi: "10.1186/s12958-018-0342-1"
 ---
 
 

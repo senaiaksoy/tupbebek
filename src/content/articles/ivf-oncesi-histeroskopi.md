@@ -8,6 +8,24 @@ lastModified: 2026-04-05
 category: "Tüp Bebek"
 image: "/images/articles/ivf-oncesi-histeroskopi.webp"
 imageAlt: "tüp bebek öncesi histeroskopi ve laparoskopi operasyonu illüstrasyonu"
+references:
+  - title: "The role of office hysteroscopy in IVF/ICSI: a systematic review and meta-analysis"
+    authors: "El-Toukhy T, Campo R, Khalaf Y, Tabanelli C, Gianaroli L, Gordts SS et al."
+    journal: "Reproductive BioMedicine Online"
+    year: 2016
+    doi: "10.1016/j.rbmo.2016.06.013"
+  - title: "Routine hysteroscopy prior to a first IVF cycle: a systematic review and meta-analysis"
+    authors: "Di Spiezio Sardo A, Di Carlo C, Minozzi S, Spinelli M, Pistotti V, Alviggi C et al."
+    journal: "Reproductive BioMedicine Online"
+    year: 2016
+    doi: "10.1016/j.rbmo.2016.06.015"
+  - title: "Uterine cavity assessment prior to in vitro fertilization: comparison of hysteroscopy and transvaginal ultrasonography"
+    authors: "El-Toukhy T, Sunkara SK, Coomarasamy A, Grace J, Khalaf Y"
+    journal: "Reproductive BioMedicine Online"
+    year: 2008
+    doi: "10.1016/S1472-6483(10)60398-8"
+videoId: "GP809hiOu_Y"
+videoTitle: "Tüp Bebek Öncesi Histeroskopi Şart mı? Bilimsel Gerçekler"
 ---
 
 ## Neden Tedavi Öncesi Değerlendirme Önemli?

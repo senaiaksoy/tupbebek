@@ -7,6 +7,22 @@ medicalReviewer: "Doç. Dr. Senai Aksoy"
 lastModified: 2026-04-05
 category: "Genetik"
 image: /images/library/embriyo/pgt_sex.webp
+references:
+  - title: "ESHRE Task Force on Ethics and Law 14: equity of access to assisted reproductive technology"
+    authors: "Pennings G, de Wert G, Shenfield F, et al."
+    journal: "Human Reproduction"
+    year: 2008
+    doi: "10.1093/humrep/den037"
+  - title: "Preimplantation genetic testing: a Practice Committee opinion"
+    authors: "Practice Committee of ASRM"
+    journal: "Fertility and Sterility"
+    year: 2008
+    doi: "10.1016/j.fertnstert.2007.10.010"
+  - title: "Sex selection and preimplantation genetic diagnosis"
+    authors: "Robertson JA"
+    journal: "Fertility and Sterility"
+    year: 2003
+    doi: "10.1016/S0015-0282(03)00100-X"
 ---
 
 ## PGT ile Cinsiyet Belirlenebilir mi?

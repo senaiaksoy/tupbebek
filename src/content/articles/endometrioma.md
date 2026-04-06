@@ -7,6 +7,22 @@ medicalReviewer: "Yayın Kurulu"
 lastModified: 2026-04-03
 category: "Kadın Sağlığı"
 image: /images/library/klinik/65.webp
+references:
+  - title: "Oocyte retrieval after endometrioma cystectomy: a systematic review and meta-analysis"
+    authors: "Somigliana E, Berlanda N, Benaglia L et al."
+    journal: "Human Reproduction Update"
+    year: 2012
+    doi: "10.1093/humupd/dms014"
+  - title: "Endometrioma and oocyte quality: effect on in vitro fertilization/intracytoplasmic sperm injection cycles"
+    authors: "Almog B, Shehata F, Sheiner E et al."
+    journal: "Fertility and Sterility"
+    year: 2011
+    doi: "10.1016/j.fertnstert.2010.06.002"
+  - title: "ESHRE guideline: management of women with endometriosis"
+    authors: "Becker CM, Bokor A, Heikinheimo O et al."
+    journal: "Human Reproduction"
+    year: 2022
+    doi: "10.1093/humrep/deac196"
 ---
 
 ## Endometriozis Kistleri (Endometriomalar): Belirtiler, Nedenleri ve Tedavi Yöntemleri

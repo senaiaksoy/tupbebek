@@ -7,6 +7,24 @@ medicalReviewer: "Doç. Dr. Senai Aksoy"
 lastModified: 2026-04-05
 category: "Tedavi Yöntemleri"
 image: /images/articles/ivf-protokolleri.webp
+references:
+  - title: "Local injury to the endometrium doubles the incidence of successful pregnancies in patients undergoing in vitro fertilization"
+    authors: "Barash A, Dekel N, Fieldust S, Segal I, Schechtman E, Granot I"
+    journal: "Fertility and Sterility"
+    year: 2003
+    doi: "10.1016/S0015-0282(03)00260-9"
+  - title: "Endometrial injury in women undergoing assisted reproductive techniques"
+    authors: "Nastri CO, Lensen SF, Gibreel A, Raine-Fenning N, Ferriani RA, Bhattacharya S, Martins WP"
+    journal: "Cochrane Database of Systematic Reviews"
+    year: 2015
+    doi: "10.1002/14651858.CD009517.pub3"
+  - title: "A Randomized Trial of Endometrial Scratching before In Vitro Fertilization"
+    authors: "Lensen S, Osavlyuk D, Armstrong S, Stadelmann C, Healey M, Benschop L et al."
+    journal: "New England Journal of Medicine"
+    year: 2019
+    doi: "10.1056/NEJMoa1808737"
+videoId: "oyBpALzZzEU"
+videoTitle: "Tüp Bebekte Rahim Çizme Gerçekten İşe Yarıyor mu?"
 ---
 
 ### Endometriyal Scratching Nedir?

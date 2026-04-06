@@ -7,6 +7,22 @@ medicalReviewer: "Yayın Kurulu"
 lastModified: 2026-04-03
 category: "Tedavi Yöntemleri"
 image: /images/library/klinik/83.webp
+references:
+  - title: "Office hysteroscopy"
+    authors: "Bettocchi S, Selvaggi L"
+    journal: "Obstetrics and Gynecology Clinics of North America"
+    year: 2004
+    doi: "10.1016/j.ogc.2004.05.007"
+  - title: "The role of hysteroscopy in improving fertility: a systematic review and meta-analysis"
+    authors: "Di Spiezio Sardo A, Di Carlo C, Minozzi S et al."
+    journal: "Human Reproduction Update"
+    year: 2016
+    doi: "10.1093/humupd/dmv068"
+  - title: "Accuracy of hysteroscopy in the diagnosis of endometrial cancer and hyperplasia: a systematic quantitative review"
+    authors: "Clark TJ, Voit D, Gupta JK et al."
+    journal: "JAMA"
+    year: 2002
+    doi: "10.1001/jama.288.13.1610"
 ---
 
 

@@ -7,6 +7,22 @@ medicalReviewer: "Yayın Kurulu"
 lastModified: 2026-04-03
 category: "Tüp Bebek"
 image: /images/library/tedavi/taze-donmus-transfert.webp
+references:
+  - title: "Freeze-only versus fresh embryo transfer in a multicenter matched-cohort study: contribution of progesterone and maternal age to success rates"
+    authors: "Shi Y, Sun Y, Hao C, Zhang H, Wei D, Zhang Y et al."
+    journal: "Fertility and Sterility"
+    year: 2018
+    doi: "10.1016/j.fertnstert.2017.10.019"
+  - title: "Elective frozen versus fresh embryo transfer in in vitro fertilization"
+    authors: "Wei D, Liu JY, Sun Y, Shi Y, Zhang B, Liu JQ et al."
+    journal: "New England Journal of Medicine"
+    year: 2019
+    doi: "10.1056/NEJMoa1817876"
+  - title: "Fresh versus frozen embryo transfers in assisted reproduction"
+    authors: "Roque M, Haahr T, Geber S, Esteves SC, Humaidan P"
+    journal: "Cochrane Database of Systematic Reviews"
+    year: 2019
+    doi: "10.1002/14651858.CD011184.pub2"
 ---
 
 

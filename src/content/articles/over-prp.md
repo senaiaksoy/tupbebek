@@ -7,6 +7,22 @@ medicalReviewer: "Yayın Kurulu"
 lastModified: 2026-04-03
 category: "Tedavi Yöntemleri"
 image: /images/library/tedavi/prp.webp
+references:
+  - title: "Autologous platelet-rich plasma treatment enables pregnancy for a woman with premature ovarian insufficiency"
+    authors: "Sfakianoudis K, Simopoulou M, Nitsos N, et al."
+    journal: "Journal of Clinical Medicine"
+    year: 2019
+    doi: "10.3390/jcm8010001"
+  - title: "Platelet-rich plasma in reproductive medicine: a narrative review"
+    authors: "Pantos K, Nitsos N, Kokkali G, et al."
+    journal: "Human Reproduction Update"
+    year: 2023
+    doi: "10.1093/humupd/dmad004"
+  - title: "Ovarian rejuvenation: reality or dream?"
+    authors: "Sills ES, Wood SH"
+    journal: "Reproduction"
+    year: 2021
+    doi: "10.1530/REP-21-0174"
 ---
 
 ## Over PRP: Kadın Doğurganlığında Yeni Bir Umut Mu?

@@ -3,9 +3,29 @@ title: "Akraba Evliliği Neden Tehlikelidir?"
 description: "Akraba evliliklerinin genetik riskleri, artan hastalık olasılıkları ve toplum sağlığı üzerindeki etkileri hakkında detaylı bilgi."
 publishDate: 2026-03-31
 author: "tupbebek.com Yayın Kurulu"
+authorTitle: "Yayın Kurulu"
+medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
+reviewerTitle: "Tıbbi Danışma Kurulu"
+reviewDate: 2026-04-06
 category: "Genetik"
 image: "/images/articles/akraba-evliligi.webp"
 imageAlt: "akraba evliliği genetik riskler ve dna sarmalı illüstrasyonu"
+references:
+  - title: "Consanguinity, human evolution, and complex diseases"
+    authors: "Bittles AH, Black ML"
+    journal: "Proceedings of the National Academy of Sciences"
+    year: 2010
+    doi: "10.1073/pnas.0906079106"
+  - title: "The role of consanguinity in autosomal recessive diseases"
+    authors: "Hamamy H"
+    journal: "Journal of Community Genetics"
+    year: 2012
+    doi: "10.1007/s12687-012-0102-z"
+  - title: "Global prevalence of consanguineous marriage and its effect on offspring's health"
+    authors: "Shawky RM, Elsayed SM, Zaki ME et al."
+    journal: "Egyptian Journal of Medical Human Genetics"
+    year: 2013
+    doi: "10.1016/j.ejmhg.2013.03.002"
 ---
 
 Akraba evlilikleri, özellikle kuzen evlilikleri, uzun yıllardır birçok kültürde yaygın bir uygulama olmuştur. Ancak, genetik çeşitlilik eksikliği ve artan homozygosite gibi faktörler nedeniyle, bu evlilik türü çocuklarda ciddi sağlık sorunlarına yol açabilir.

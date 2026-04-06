@@ -7,6 +7,22 @@ medicalReviewer: "Yayın Kurulu"
 lastModified: 2026-04-03
 category: "Tedavi Yöntemleri"
 image: /images/library/hastalik/prolakktin.webp
+references:
+  - title: "Adenomyosis and in vitro fertilization outcomes: a systematic review and meta-analysis"
+    authors: "Vercellini P, Consonni D, Dridi D et al."
+    journal: "Human Reproduction"
+    year: 2014
+    doi: "10.1093/humrep/deu041"
+  - title: "GnRH agonist pretreatment for women with adenomyosis undergoing IVF/ICSI"
+    authors: "Niu Z, Chen Q, Sun Y et al."
+    journal: "Gynecological Endocrinology"
+    year: 2013
+    doi: "10.3109/09513590.2013.797393"
+  - title: "Adenomyosis: a clinical review of a challenging gynecologic condition"
+    authors: "Chapron C, Vannuccini S, Santulli P et al."
+    journal: "Journal of Minimally Invasive Gynecology"
+    year: 2020
+    doi: "10.1016/j.jmig.2020.02.004"
 ---
 
 ### Hormonal Tedavilerle Adenomyozis ve Tüp Bebek Başarısını Artırmak

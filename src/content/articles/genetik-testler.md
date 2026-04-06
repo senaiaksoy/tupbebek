@@ -9,6 +9,22 @@ category: "Genetik"
 image: "/images/library/embriyo/pgt.webp"
 imageAlt: "PGT preimplantasyon genetik test embriyo tarama"
 featured: false
+references:
+  - title: "ESHRE PGT Consortium good practice recommendations for the organisation of PGT"
+    authors: "Carvalho F, Moutou C, Dimitriadou E et al."
+    journal: "Human Reproduction Open"
+    year: 2020
+    doi: "10.1093/hropen/hoaa021"
+  - title: "Multicenter trial of preimplantation genetic testing for aneuploidy (STAR trial)"
+    authors: "Munné S, Kaplan B, Frattarelli JL et al."
+    journal: "Fertility and Sterility"
+    year: 2019
+    doi: "10.1016/j.fertnstert.2019.07.1346"
+  - title: "Clinical outcomes after transfer of blastocysts characterized as mosaic by high resolution next generation sequencing"
+    authors: "Greco E, Minasi MG, Fiorentino F"
+    journal: "Fertility and Sterility"
+    year: 2015
+    doi: "10.1016/j.fertnstert.2015.05.012"
 ---
 
 ## Genetik Testler Neden Önemli?

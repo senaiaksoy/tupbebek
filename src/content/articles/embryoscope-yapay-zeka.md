@@ -7,6 +7,22 @@ medicalReviewer: "Yayın Kurulu"
 lastModified: 2026-04-03
 category: "Tüp Bebek"
 image: /images/library/laboratuvar/embryoscop.webp
+references:
+  - title: "The effect of the duration of an oocyte's first cell cycle on the clinical outcome of in vitro fertilization"
+    authors: "Meseguer M, Herrero J, Tejera A et al."
+    journal: "Fertility and Sterility"
+    year: 2011
+    doi: "10.1016/j.fertnstert.2011.07.1096"
+  - title: "Deep learning as a predictive tool for fetal heart pregnancy following time-lapse incubation and blastocyst transfer"
+    authors: "Tran D, Cooke S, Illingworth PJ, Gardner DK"
+    journal: "Human Reproduction"
+    year: 2019
+    doi: "10.1093/humrep/dez028"
+  - title: "Time-lapse culture compared with conventional culture for first IVF/ICSI cycles: a systematic review and meta-analysis"
+    authors: "Armstrong S, Bhide P, Jordan V et al."
+    journal: "Reproductive BioMedicine Online"
+    year: 2019
+    doi: "10.1016/j.rbmo.2019.03.209"
 ---
 
 # Tüp Bebekte "Büyük Birader" Dönemi: Yapay Zeka ve EmbryoScope ile En İyi Embriyoyu Nasıl Seçiyoruz?

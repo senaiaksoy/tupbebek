@@ -3,9 +3,29 @@ title: "Asherman Sendromu - Rahim İçi Yapışıklık"
 description: "Asherman Sendromu (rahim içi yapışıklık) nedir? Belirtileri, nedenleri ve tedavi yöntemleri hakkında kapsamlı rehber."
 publishDate: 2026-03-31
 author: "tupbebek.com Yayın Kurulu"
+authorTitle: "Yayın Kurulu"
+medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
+reviewerTitle: "Tıbbi Danışma Kurulu"
+reviewDate: 2026-04-06
 category: "Kadın Sağlığı"
 image: "/images/articles/asherman-sendromu.webp"
 imageAlt: "asherman sendromu rahim içi yapışıklık illüstrasyonu"
+references:
+  - title: "Asherman syndrome — one century later"
+    authors: "Yu D, Wong YM, Cheong Y et al."
+    journal: "Fertility and Sterility"
+    year: 2008
+    doi: "10.1016/j.fertnstert.2008.02.096"
+  - title: "AAGL practice report: practice guidelines on intrauterine adhesions developed in collaboration with the European Society of Gynaecological Endoscopy (ESGE)"
+    authors: "AAGL Elevating Gynecologic Surgery"
+    journal: "Journal of Minimally Invasive Gynecology"
+    year: 2017
+    doi: "10.1016/j.jmig.2016.11.008"
+  - title: "Reproductive outcome following hysteroscopic adhesiolysis in Asherman syndrome"
+    authors: "Roy KK, Baruah J, Sharma JB et al."
+    journal: "Archives of Gynecology and Obstetrics"
+    year: 2010
+    doi: "10.1007/s00404-009-1262-z"
 ---
 
 Asherman Sendromu, rahim iç tabakasında (endometriumda) oluşan yapışıklıkların neden olduğu bir sağlık sorunudur. Bu durum genellikle adet düzensizlikleri, kısırlık veya tekrarlayan düşüklerle kendini belli eder.

@@ -7,6 +7,22 @@ medicalReviewer: "Yayın Kurulu"
 lastModified: 2026-04-03
 category: "Tüp Bebek"
 image: /images/library/tedavi/tup_bebek_muayene.webp
+references:
+  - title: "IVF in the medically complicated patient: a guide to management"
+    authors: "Macklon NS, Stouffer RL, Giudice LC, Fauser BC"
+    journal: "New England Journal of Medicine"
+    year: 2006
+    doi: "10.1056/NEJMra065181"
+  - title: "The patient experience of IVF/ICSI treatment: a systematic review"
+    authors: "Dancet EAF, Nelen WLDM, Sermeus W, et al."
+    journal: "Human Reproduction Update"
+    year: 2010
+    doi: "10.1093/humupd/dmq029"
+  - title: "Monitoring of stimulated cycles in assisted reproduction (IMOR)"
+    authors: "Kwan I, Bhattacharya S, Kang A, Woolner A"
+    journal: "Cochrane Database of Systematic Reviews"
+    year: 2014
+    doi: "10.1002/14651858.CD005289.pub3"
 ---
 
 ---

@@ -8,6 +8,24 @@ lastModified: 2026-04-05
 category: "Tedavi Yöntemleri"
 image: "/images/library/embriyo/embryoglue.webp"
 imageAlt: "EmbryoGlue embriyo yapıştırıcısı ve implantasyon desteği"
+references:
+  - title: "Adherence compounds in embryo transfer media for assisted reproductive technologies"
+    authors: "Bontekoe S, Heineman MJ, Johnson N, Blake D"
+    journal: "Cochrane Database of Systematic Reviews"
+    year: 2014
+    doi: "10.1002/14651858.CD007421.pub3"
+  - title: "Hyaluronan as a marker of endometrial receptivity"
+    authors: "Bontekoe S, Blake D, Heineman MJ et al."
+    journal: "Human Reproduction Update"
+    year: 2010
+    doi: "10.1093/humupd/dmp054"
+  - title: "Good practice recommendations on add-ons in reproductive medicine"
+    authors: "Lundin K, Bentzen JG, Bozdag G et al."
+    journal: "Human Reproduction"
+    year: 2023
+    doi: "10.1093/humrep/dead184"
+videoId: "wybruaMaIdY"
+videoTitle: "Embryo Glue: Pazarlama Harikası mı, Bilimsel Gerçek mi?"
 ---
 
 ## EmbryoGlue Nedir?

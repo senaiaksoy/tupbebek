@@ -7,6 +7,22 @@ medicalReviewer: "Yayın Kurulu"
 lastModified: 2026-04-03
 category: "Gebelik"
 image: /images/library/embriyo/kimyasal-gebelik.webp
+references:
+  - title: "Conception to ongoing pregnancy: the 'black box' of early pregnancy loss"
+    authors: "Macklon NS, Geraedts JP, Fauser BC"
+    journal: "Human Reproduction Update"
+    year: 2002
+    doi: "10.1093/humupd/8.4.333"
+  - title: "Incidence of early loss of pregnancy"
+    authors: "Wilcox AJ, Weinberg CR, O'Connor JF et al."
+    journal: "New England Journal of Medicine"
+    year: 1988
+    doi: "10.1056/NEJM198807283190401"
+  - title: "Biochemical pregnancy during assisted conception: a little bit pregnant"
+    authors: "Annan JJ, Gudi A, Bhide P et al."
+    journal: "Journal of Clinical Medicine Research"
+    year: 2013
+    doi: "10.4021/jocmr1008w"
 ---
 
 ## Kimyasal Gebeliklerin Gölgedeki Yüzü: Anlam, İyileşme ve Umut Peşinde

@@ -7,6 +7,24 @@ medicalReviewer: "Yayın Kurulu"
 lastModified: 2026-04-03
 category: "Kadın Sağlığı"
 image: /images/library/hastalik/kisirlik_endometriozis.webp
+references:
+  - title: "Endometriosis"
+    authors: "Zondervan KT, Becker CM, Missmer SA"
+    journal: "New England Journal of Medicine"
+    year: 2020
+    doi: "10.1056/NEJMra1810764"
+  - title: "Non-invasive diagnosis of endometriosis: a systematic review and meta-analysis"
+    authors: "Nisenblat V, Bossuyt PM, Farquhar C et al."
+    journal: "Cochrane Database of Systematic Reviews"
+    year: 2016
+    doi: "10.1002/14651858.CD012281"
+  - title: "Deep infiltrating endometriosis: a systematic review of the literature on the impact on fertility"
+    authors: "Ballester M, Oppenheimer A, Mathieu d'Argent E et al."
+    journal: "Journal of Minimally Invasive Gynecology"
+    year: 2012
+    doi: "10.1016/j.jmig.2012.04.006"
+videoId: "-FxkIwmlO9g"
+videoTitle: "Endometriozis ve Kısırlık: 2025'in Yeni Tedavi Stratejileri"
 ---
 
 

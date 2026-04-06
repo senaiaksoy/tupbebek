@@ -8,6 +8,22 @@ lastModified: 2026-04-03
 category: "Tüp Bebek"
 image: "/images/articles/tup-bebek-nedir.webp"
 imageAlt: "tüp bebek tedavisi hakkında doktoruyla görüşen kadın hasta"
+references:
+  - title: "Birth after the reimplantation of a human embryo"
+    authors: "Steptoe PC, Edwards RG"
+    journal: "The Lancet"
+    year: 1978
+    doi: "10.1016/S0140-6736(78)92957-4"
+  - title: "ART in Europe, 2019: results generated from European registries by ESHRE"
+    authors: "Wyns C, De Geyter C, Calhaz-Jorge C et al."
+    journal: "Human Reproduction"
+    year: 2023
+    doi: "10.1093/humrep/dead197"
+  - title: "Infertility prevalence, causes, and treatment: an updated global review"
+    authors: "Agarwal A, Baskaran S, Parekh N et al."
+    journal: "Reproductive Biology and Endocrinology"
+    year: 2021
+    doi: "10.1186/s12958-021-00709-w"
 ---
 
 ### **Hayatımıza son 30 yılda giren ve bizim için hızla sıradan bir yöntem haline gelen tüp bebek nedir ve nasıl yapılır? Sorularınızın cevabını burada bulabilirsiniz.**

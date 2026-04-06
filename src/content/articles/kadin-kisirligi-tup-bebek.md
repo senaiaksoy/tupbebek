@@ -7,6 +7,22 @@ medicalReviewer: "Yayın Kurulu"
 lastModified: 2026-04-03
 category: "Tüp Bebek"
 image: /images/library/laboratuvar/icsicizim.webp
+references:
+  - title: "Diagnostic evaluation of the infertile female: a committee opinion"
+    authors: "Practice Committee of the American Society for Reproductive Medicine"
+    journal: "Fertility and Sterility"
+    year: 2015
+    doi: "10.1016/j.fertnstert.2015.03.019"
+  - title: "Unexplained infertility: a review and meta-analysis of management strategies"
+    authors: "Quaas A, Dokras A"
+    journal: "Fertility and Sterility"
+    year: 2008
+    doi: "10.1016/j.fertnstert.2007.08.073"
+  - title: "Female age-related fertility decline"
+    authors: "American College of Obstetricians and Gynecologists Committee on Gynecologic Practice"
+    journal: "Fertility and Sterility"
+    year: 2014
+    doi: "10.1016/j.fertnstert.2013.12.032"
 ---
 
 ## Kadın Kısırlığı ve Tüp Bebek Tedavisindeki Rolü: Detaylı Bir Kılavuz

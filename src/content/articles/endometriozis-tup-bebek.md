@@ -7,6 +7,24 @@ medicalReviewer: "Yayın Kurulu"
 lastModified: 2026-04-03
 category: "Tüp Bebek"
 image: /images/library/hastalik/endometriosis_tedavi.webp
+references:
+  - title: "Endometriosis: ESHRE Guideline"
+    authors: "Becker CM, Bokor A, Heikinheimo O et al."
+    journal: "Human Reproduction Open"
+    year: 2022
+    doi: "10.1093/hropen/hoac009"
+  - title: "The effect of endometriosis on in vitro fertilisation outcome: a systematic review and meta-analysis"
+    authors: "Hamdan M, Dunselman G, Li TC et al."
+    journal: "Human Reproduction Update"
+    year: 2015
+    doi: "10.1093/humupd/dmv040"
+  - title: "Surgery versus IVF in endometriosis-associated subfertility (SVIDOE): a pragmatic randomised controlled trial and economic evaluation"
+    authors: "Santulli P, Bourdon M, Maignien C et al."
+    journal: "The Lancet"
+    year: 2025
+    doi: "10.1016/S0140-6736(25)00541-7"
+videoId: "ciH_IHqVrxw"
+videoTitle: "Endometriozis Teşhisi Neden Yıllar Sürüyor? Doğurganlığa Etkileri"
 ---
 
 ## Endometriozis ve Kısırlık Tedavisinde 2025 Devrimi: Neden Artık "Önce Tüp Bebek" Diyoruz?

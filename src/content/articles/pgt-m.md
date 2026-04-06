@@ -8,6 +8,22 @@ lastModified: 2026-04-05
 category: "Genetik"
 image: /images/library/embriyo/pgt.webp
 imageAlt: "pgt-m preimplantasyon genetik test monogenik hastalık taraması"
+references:
+  - title: "Birth of a normal girl after in vitro fertilization and preimplantation diagnostic testing for cystic fibrosis"
+    authors: "Handyside AH, Kontogianni EH, Hardy K, Winston RM"
+    journal: "New England Journal of Medicine"
+    year: 1992
+    doi: "10.1056/NEJM199209243271301"
+  - title: "ESHRE PGT Consortium good practice recommendations for the detection of monogenic disorders"
+    authors: "Carvalho F, Moutou C, Dimitriadou E, et al."
+    journal: "Human Reproduction Open"
+    year: 2020
+    doi: "10.1093/hropen/hoaa018"
+  - title: "Next-generation sequencing for preimplantation genetic testing"
+    authors: "Fiorentino F, Biricik A, Bono S, et al."
+    journal: "Fertility and Sterility"
+    year: 2014
+    doi: "10.1016/j.fertnstert.2014.01.051"
 ---
 
 ## PGT-M Nedir?

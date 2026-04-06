@@ -7,6 +7,22 @@ medicalReviewer: "Yayın Kurulu"
 lastModified: 2026-04-03
 category: "Kadın Sağlığı"
 image: /images/library/hastalik/hidrosalpinks.webp
+references:
+  - title: "The effect of hydrosalpinx on IVF-ET outcome"
+    authors: "Zeyneloglu HB, Arici A, Olive DL"
+    journal: "Fertility and Sterility"
+    year: 1998
+    doi: "10.1016/S0015-0282(98)00392-X"
+  - title: "Surgical treatment for tubal disease in women due to undergo in vitro fertilisation"
+    authors: "Johnson N, van Voorst S, Sowter MC et al."
+    journal: "Cochrane Database of Systematic Reviews"
+    year: 2010
+    doi: "10.1002/14651858.CD002125.pub3"
+  - title: "Hydrosalpinx and IVF: salpingectomy or tubal occlusion"
+    authors: "Strandell A"
+    journal: "Human Reproduction"
+    year: 2000
+    doi: "10.1093/humrep/15.12.2474"
 ---
 
 ## Hidrosalpinx ve Kısırlık

@@ -3,9 +3,29 @@ title: "Kanser ve Fertilite: Onkolojik Hastalar İçin Rehber"
 description: "Kanser tanısı sonrası fertilite koruma seçenekleri nelerdir? Onkolojik hastalarda yumurta, sperm ve embriyo dondurma süreçleri, acil protokoller ve hasta hakları rehberi."
 publishDate: 2026-04-01
 author: "tupbebek.com Yayın Kurulu"
+authorTitle: "Yayın Kurulu"
+medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
+reviewerTitle: "Tıbbi Danışma Kurulu"
+reviewDate: 2026-04-06
 category: "Tedavi"
 image: "/images/library/laboratuvar/dr-senai-aksoy-istanbul-ivf-laboratuvar.webp"
 imageAlt: "Onkofertilite danışmanlığı ve fertilite koruma laboratuvar ortamı"
+references:
+  - title: "Fertility preservation in patients with cancer: ASCO clinical practice guideline update"
+    authors: "Oktay K, Harvey BE, Partridge AH et al."
+    journal: "Journal of Clinical Oncology"
+    year: 2018
+    doi: "10.1200/JCO.2018.78.1914"
+  - title: "Oocyte cryopreservation for fertility preservation in cancer patients"
+    authors: "Cobo A, García-Velasco JA, Remohí J, Pellicer A"
+    journal: "Fertility and Sterility"
+    year: 2013
+    doi: "10.1016/j.fertnstert.2013.01.141"
+  - title: "Gonadotoxic effects of chemotherapy and radiotherapy on fertility"
+    authors: "Meirow D, Nugent D"
+    journal: "Best Practice & Research Clinical Obstetrics & Gynaecology"
+    year: 2001
+    doi: "10.1053/beog.2001.0187"
 ---
 
 Kanser tanısı almak, hayatın en zorlu anlarından biridir. Bu süreçte tedaviye odaklanmak ne kadar doğalsa, gelecekteki aile planları hakkında düşünmek de o kadar önemlidir. Neyse ki modern tıp, kanser tedavisi görecek hastalara fertilitelerini koruma imkânı sunmaktadır. **Onkofertilite** olarak adlandırılan bu alan, onkoloji ve üreme tıbbını bir araya getirerek hastalara hem sağlıklarını kazanma hem de gelecekte çocuk sahibi olabilme fırsatı tanımaktadır. Tanı aldığınız anda doğru adımları atmanız, bu fırsatı en üst düzeyde kullanmanızı sağlar.

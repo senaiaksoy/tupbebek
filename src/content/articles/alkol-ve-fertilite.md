@@ -3,9 +3,29 @@ title: "Alkol ve Fertilite: Bebek Hayaliniz İçin Kadehi Bırakma Zamanı mı?"
 description: "Alkol tüketiminin kadın ve erkek üreme sağlığı üzerindeki etkileri. Tüp bebek tedavisi başarısını nasıl etkiler?"
 publishDate: 2026-03-31
 author: "tupbebek.com Yayın Kurulu"
+authorTitle: "Yayın Kurulu"
+medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
+reviewerTitle: "Tıbbi Danışma Kurulu"
+reviewDate: 2026-04-06
 category: "Yaşam Tarzı"
 image: "/images/articles/alkol-ve-fertilite.webp"
 imageAlt: "alkol ve fertilite kısırlık ilişkisi illüstrasyonu"
+references:
+  - title: "Drinking alcohol is associated with variation in the risk of late fetal death among women: a prospective cohort study"
+    authors: "Fan D, Liu L, Xia Q et al."
+    journal: "Journal of Epidemiology and Community Health"
+    year: 2017
+    doi: "10.1136/jech-2016-208191"
+  - title: "Habitual alcohol consumption associated with reduced semen quality and changes in reproductive hormones; a cross-sectional study among 1221 young Danish men"
+    authors: "Jensen TK, Gottschau M, Madsen JO et al."
+    journal: "BMJ Open"
+    year: 2014
+    doi: "10.1136/bmjopen-2014-005462"
+  - title: "Alcohol and fertility: how much is too much?"
+    authors: "Van Heertum K, Rossi B"
+    journal: "Fertility Research and Practice"
+    year: 2017
+    doi: "10.1186/s40738-017-0037-x"
 ---
 
 Günün stresi, yoğun çalışma saatleri veya sosyal buluşmalar... Birçoğumuz akşam yemeklerini bir kadeh şarapla süslemekten mutluluk duyuyoruz. Ancak bebek sahibi olma planlarınız varsa, yaşam tarzınızdaki bu alışkanlığı yeniden gözden geçirmeniz gerekebilir.

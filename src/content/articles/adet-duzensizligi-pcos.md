@@ -3,9 +3,29 @@ title: "Adet Düzensizliği ve Polikistik Over Sendromu (PCOS)"
 description: "Adet düzensizliği ve Polikistik Over Sendromu (PCOS) belirtileri, nedenleri ve tedavi yöntemleri hakkında kapsamlı rehber."
 publishDate: 2026-03-31
 author: "tupbebek.com Yayın Kurulu"
+authorTitle: "Yayın Kurulu"
+medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
+reviewerTitle: "Tıbbi Danışma Kurulu"
+reviewDate: 2026-04-06
 category: "Kadın Sağlığı"
 image: "/images/articles/adet-duzensizligi-pcos.webp"
 imageAlt: "adet düzensizliği ve polikistik over sendromu pcos illüstrasyonu"
+references:
+  - title: "The prevalence and phenotypic features of polycystic ovary syndrome: a systematic review and meta-analysis"
+    authors: "Bozdag G, Mumusoglu S, Zengin D et al."
+    journal: "Human Reproduction"
+    year: 2016
+    doi: "10.1093/humrep/dew218"
+  - title: "Recommendations from the international evidence-based guideline for the assessment and management of polycystic ovary syndrome"
+    authors: "Teede HJ, Misso ML, Costello MF et al."
+    journal: "Human Reproduction"
+    year: 2018
+    doi: "10.1093/humrep/dey256"
+  - title: "Abnormal uterine bleeding in premenopausal women"
+    authors: "Munro MG, Critchley HOD, Fraser IS"
+    journal: "The Lancet"
+    year: 2022
+    doi: "10.1016/S0140-6736(22)01047-5"
 ---
 
 Adet döngüsü, üreme çağındaki kadınların yaşamının önemli bir parçasıdır. Ancak, bu döngü her zaman düzenli olmayabilir ve adet düzensizliği çeşitli sağlık sorunlarının habercisi olabilir. Adet düzensizliği, endometriyal hiperplazi ve obezite gibi birçok farklı nedene bağlı olabileceği gibi, en sık rastlanan nedenlerden biri de Polikistik Over Sendromu (PCOS) olarak bilinir.

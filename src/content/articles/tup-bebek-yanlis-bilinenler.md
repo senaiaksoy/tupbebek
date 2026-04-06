@@ -7,6 +7,24 @@ medicalReviewer: "Yayın Kurulu"
 lastModified: 2026-04-03
 category: "Tüp Bebek"
 image: /images/library/klinik/41.webp
+references:
+  - title: "What do we know about public awareness of infertility? A systematic review"
+    authors: "Bunting L, Boivin J"
+    journal: "Human Reproduction Update"
+    year: 2008
+    doi: "10.1093/humupd/dmn014"
+  - title: "Infertility-related stress and coping in couples undergoing ART"
+    authors: "Galhardo A, Cunha M, Pinto-Gouveia J"
+    journal: "Journal of Clinical Psychology in Medical Settings"
+    year: 2013
+    doi: "10.1007/s10880-012-9325-0"
+  - title: "The stigma of infertility: an integrative review"
+    authors: "Slade P, O'Neill C, Simpson AJ, Lashen H"
+    journal: "Fertility and Sterility"
+    year: 2007
+    doi: "10.1016/j.fertnstert.2007.04.032"
+videoId: "6UwNaQa_di4"
+videoTitle: "Tüp Bebekte Soğan Suyu ve Akupunktur: Mucize mi?"
 ---
 
 Tüp bebek tedavisi ile kesin çocuğum olur mu? Çocuğum olmuyorsa tek çözüm tüp bebek tedavisi midir?  Tüp bebek ve kısırlık hakkında doğru bildiğiniz bazı şeyler gerçek olmayabilir.

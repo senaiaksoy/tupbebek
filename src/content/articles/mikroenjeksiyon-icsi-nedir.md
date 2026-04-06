@@ -7,6 +7,22 @@ medicalReviewer: "Yayın Kurulu"
 lastModified: 2026-04-03
 category: "Tedavi Yöntemleri"
 image: /images/library/klinik/181.webp
+references:
+  - title: "Pregnancies after intracytoplasmic injection of single spermatozoon into an oocyte"
+    authors: "Palermo G, Joris H, Devroey P, Van Steirteghem AC"
+    journal: "The Lancet"
+    year: 1992
+    doi: "10.1016/0140-6736(92)92425-F"
+  - title: "Intracytoplasmic sperm injection versus conventional in vitro fertilisation for non-male factor subfertility"
+    authors: "van Rumste MM, Evers JL, Mol BW"
+    journal: "Cochrane Database of Systematic Reviews"
+    year: 2003
+    doi: "10.1002/14651858.CD001301.pub2"
+  - title: "Use of intracytoplasmic sperm injection for non-male factor infertility"
+    authors: "Practice Committee of the American Society for Reproductive Medicine"
+    journal: "Fertility and Sterility"
+    year: 2020
+    doi: "10.1016/j.fertnstert.2020.09.002"
 ---
 
 ## Mikroenjeksiyon (ICSI): Şiddetli Erkek Kısırlığına Devrim Niteliğinde Çözüm

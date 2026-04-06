@@ -7,6 +7,22 @@ medicalReviewer: "Yayın Kurulu"
 lastModified: 2026-04-03
 category: "Kadın Sağlığı"
 image: /images/library/hastalik/opkveivf.webp
+references:
+  - title: "GnRH agonist trigger and LH activity luteal phase support versus hCG trigger and conventional luteal phase support in fresh embryo transfer IVF/ICSI cycles"
+    authors: "Humaidan P, Kol S, Papanikolaou EG"
+    journal: "Human Reproduction"
+    year: 2011
+    doi: "10.1093/humrep/der277"
+  - title: "In vitro maturation of oocytes from women with polycystic ovary syndrome"
+    authors: "Cha KY, Chian RC"
+    journal: "Fertility and Sterility"
+    year: 1998
+    doi: "10.1016/S0015-0282(98)00055-X"
+  - title: "Prevention and treatment of ovarian hyperstimulation syndrome"
+    authors: "Humaidan P, Quartarolo J, Papanikolaou EG"
+    journal: "Human Reproduction Update"
+    year: 2010
+    doi: "10.1093/humupd/dmq006"
 ---
 
 ## Polikistik Over Sendromu (PCOS): IVF Yolculuğunuzun Gizli Başrolü mü?

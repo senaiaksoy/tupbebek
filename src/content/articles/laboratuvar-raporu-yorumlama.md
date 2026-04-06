@@ -8,6 +8,22 @@ lastModified: 2026-04-05
 category: "Tanı"
 image: "/images/library/laboratuvar/oocytes-prior-to-a-f-and-k-and-after-insemination.webp"
 imageAlt: "Embriyo laboratuvar raporu ve oosit değerlendirmesi"
+references:
+  - title: "The Istanbul consensus workshop on embryo assessment: proceedings of an expert meeting"
+    authors: "Alpha Scientists in Reproductive Medicine and ESHRE Special Interest Group of Embryology"
+    journal: "Human Reproduction"
+    year: 2011
+    doi: "10.1093/humrep/der037"
+  - title: "Blastocyst culture and transfer in clinical-assisted reproduction"
+    authors: "Gardner DK, Schoolcraft WB"
+    journal: "Fertility and Sterility"
+    year: 1999
+    doi: "10.1016/S0015-0282(99)00364-X"
+  - title: "The relationship between blastocyst morphology, chromosomal abnormality, and embryo gender"
+    authors: "Alfarawati S, Fragouli E, Colls P et al."
+    journal: "Fertility and Sterility"
+    year: 2011
+    doi: "10.1016/j.fertnstert.2010.09.015"
 ---
 
 ## Laboratuvar Raporu Elinize Geçtiğinde

@@ -8,6 +8,22 @@ lastModified: 2026-04-05
 category: "Rehber"
 image: "/images/articles/iyi-tup-bebek-merkezi.webp"
 imageAlt: "tüp bebek merkezi seçim kriterleri ve kalite standartları"
+references:
+  - title: "The Istanbul consensus workshop on embryo assessment: proceedings of an expert meeting"
+    authors: "Alpha Scientists in Reproductive Medicine and ESHRE Special Interest Group of Embryology"
+    journal: "Human Reproduction"
+    year: 2011
+    doi: "10.1093/humrep/der037"
+  - title: "Revised guidelines for good practice in IVF laboratories"
+    authors: "ESHRE Guideline Group on Good Practice in IVF Labs"
+    journal: "Human Reproduction"
+    year: 2016
+    doi: "10.1093/humrep/dew128"
+  - title: "Key performance indicators in ART: the ESHRE consensus"
+    authors: "ESHRE Special Interest Group of Embryology, Alpha Scientists"
+    journal: "Human Reproduction Open"
+    year: 2017
+    doi: "10.1093/hropen/hox008"
 ---
 
 ## Neden Bu Kadar Önemli?

@@ -3,9 +3,29 @@ title: "Yumurta Dondurma: Süreç, Başarı Oranları ve Sık Sorulan Sorular"
 description: "Yumurta dondurma (oosit kriyoprezervasyon) süreci nasıl işler? Hormonal stimülasyon, OPU, vitrifikasyon adımları, yaşa göre başarı oranları ve sık sorulan soruların yanıtları."
 publishDate: 2026-04-01
 author: "tupbebek.com Yayın Kurulu"
+authorTitle: "Yayın Kurulu"
+medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
+reviewerTitle: "Tıbbi Danışma Kurulu"
+reviewDate: 2026-04-06
 category: "Tedavi"
 image: "/images/articles/yumurta-dondurma-rehberi.webp"
 imageAlt: "yumurta dondurma süreci vitrifikasyon laboratuvarı"
+references:
+  - title: "Mature oocyte cryopreservation: a guideline"
+    authors: "Practice Committees of ASRM and SART"
+    journal: "Fertility and Sterility"
+    year: 2013
+    doi: "10.1016/j.fertnstert.2012.09.028"
+  - title: "Oocyte vitrification as an efficient option for elective fertility preservation"
+    authors: "Cobo A, García-Velasco JA, Coello A, et al."
+    journal: "Fertility and Sterility"
+    year: 2016
+    doi: "10.1016/j.fertnstert.2015.09.027"
+  - title: "Age and oocyte vitrification: cumulative live birth rate and number of oocytes needed"
+    authors: "Cobo A, García-Velasco JA"
+    journal: "Current Opinion in Obstetrics and Gynecology"
+    year: 2016
+    doi: "10.1097/GCO.0000000000000272"
 ---
 
 Yumurta dondurma, yani **oosit kriyoprezervasyonu**, bir kadının yumurtalarını gelecekte kullanmak üzere dondurarak saklamasına olanak tanıyan modern bir tıp uygulamasıdır. Geçmişte yalnızca kanser tedavisi görecek kadınlar için uygulanan bu yöntem, **vitrifikasyon** teknolojisinin gelişmesiyle birlikte hem medikal hem de sosyal endikasyonlarda yaygın bir tercih haline gelmiştir.

@@ -7,6 +7,22 @@ medicalReviewer: "Yayın Kurulu"
 lastModified: 2026-04-03
 category: "Kadın Sağlığı"
 image: /images/library/hastalik/prolaktin.webp
+references:
+  - title: "Hyperprolactinemia and infertility: new insights"
+    authors: "Majumdar A, Mangal NS"
+    journal: "Journal of Human Reproductive Sciences"
+    year: 2013
+    doi: "10.4103/0974-1208.121400"
+  - title: "Cabergoline versus bromocriptine for the treatment of hyperprolactinemia: a systematic review"
+    authors: "Wang AT, Mullan RJ, Lane MA et al."
+    journal: "Clinical Endocrinology"
+    year: 2012
+    doi: "10.1111/j.1365-2265.2012.04369.x"
+  - title: "Prolactin and its role in reproduction"
+    authors: "Grattan DR"
+    journal: "General and Comparative Endocrinology"
+    year: 2015
+    doi: "10.1016/j.ygcen.2014.11.013"
 ---
 
 ## Hiperprolaktinemi ve Kısırlık: Hormonal Bulmacanın Şifrelerini Çözmek

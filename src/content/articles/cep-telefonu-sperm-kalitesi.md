@@ -7,6 +7,22 @@ medicalReviewer: "Yayın Kurulu"
 lastModified: 2026-04-03
 category: "Erkek Sağlığı"
 image: /images/library/klinik/ceptel.webp
+references:
+  - title: "Effect of mobile telephones on sperm quality: a systematic review and meta-analysis"
+    authors: "Adams JA, Galloway TS, Mondal D et al."
+    journal: "Environment International"
+    year: 2014
+    doi: "10.1016/j.envint.2014.04.015"
+  - title: "Cell phones and male infertility: a review of recent innovations in technology and consequences"
+    authors: "Agarwal A, Singh A, Hamada A et al."
+    journal: "International Brazilian Journal of Urology"
+    year: 2011
+    doi: "10.1590/S1677-55382011000400002"
+  - title: "Lifestyle factors and reproductive health: taking control of your fertility"
+    authors: "Sharma R, Biedenharn KR, Fedor JM et al."
+    journal: "Reproductive Biology and Endocrinology"
+    year: 2013
+    doi: "10.1186/1477-7827-11-66"
 ---
 
 ## Cep Telefonlarının Sperm Kalitesi Üzerindeki Gizli Etkileri: Bilimsel Gerçekler ve Korunma Yolları

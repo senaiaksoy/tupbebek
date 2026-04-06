@@ -3,9 +3,29 @@ title: "Beta-HCG Testi: Hamilelik Sonuçlarını Anlamak"
 description: "Tüp bebek (IVF) tedavisi sonrası beta-hCG test sonuçları nasıl yorumlanmalıdır? İdeal değerler ve artış oranları hakkında bilmeniz gerekenler."
 publishDate: 2026-03-31
 author: "tupbebek.com Yayın Kurulu"
+authorTitle: "Yayın Kurulu"
+medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
+reviewerTitle: "Tıbbi Danışma Kurulu"
+reviewDate: 2026-04-06
 category: "Tüp Bebek"
 image: "/images/articles/beta-hcg-testi.webp"
 imageAlt: "kan tahlili raporu ve beta-hcg hamilelik testi sonuçları"
+references:
+  - title: "Reference ranges and determinants of total hCG levels during pregnancy: the Generation R Study"
+    authors: "Korevaar TIM, Steegers EAP, de Rijke YB et al."
+    journal: "European Journal of Epidemiology"
+    year: 2015
+    doi: "10.1007/s10654-015-0039-0"
+  - title: "Diagnosis and management of ectopic pregnancy"
+    authors: "Barnhart KT"
+    journal: "American Journal of Obstetrics and Gynecology"
+    year: 2009
+    doi: "10.1016/j.ajog.2008.09.007"
+  - title: "Human chorionic gonadotropin doubling time in early viable pregnancies"
+    authors: "Barnhart KT, Sammel MD, Rinaudo PF et al."
+    journal: "Obstetrics & Gynecology"
+    year: 2004
+    doi: "10.1097/01.AOG.0000119546.44810.87"
 ---
 
 Tüp bebek (IVF) yolculuğunun en heyecanlı ve stresli anlarından biri, embriyo transferi sonrası yapılan ilk hamilelik testidir. Kandaki **beta-hCG** (insan koryonik gonadotropin) hormonu seviyesi, beklenen "müjdeli haberin" en somut göstergesidir.

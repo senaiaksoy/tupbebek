@@ -7,6 +7,22 @@ medicalReviewer: "Yayın Kurulu"
 lastModified: 2026-04-03
 category: "Kadın Sağlığı"
 image: /images/library/hastalik/miyom-ameliyati-ne-zaman-gerekir.webp
+references:
+  - title: "Fibroids and infertility: a systematic review of the evidence"
+    authors: "Pritts EA, Parker WH, Olive DL"
+    journal: "Fertility and Sterility"
+    year: 2009
+    doi: "10.1016/j.fertnstert.2008.09.049"
+  - title: "The effect of intramural fibroids without uterine cavity involvement on the outcome of IVF treatment: a systematic review and meta-analysis"
+    authors: "Sunkara SK, Khairy M, El-Toukhy T et al."
+    journal: "Human Reproduction"
+    year: 2010
+    doi: "10.1093/humrep/dep457"
+  - title: "FIGO classification system (PALM-COEIN) for causes of abnormal uterine bleeding in nongravid women of reproductive age"
+    authors: "Munro MG, Critchley HO, Broder MS, Fraser IS"
+    journal: "International Journal of Gynecology & Obstetrics"
+    year: 2011
+    doi: "10.1016/j.ijgo.2010.11.011"
 ---
 
 

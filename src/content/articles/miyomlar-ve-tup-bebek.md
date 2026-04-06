@@ -7,6 +7,22 @@ medicalReviewer: "Yayın Kurulu"
 lastModified: 2026-04-03
 category: "Tüp Bebek"
 image: /images/library/hastalik/miyom_ivf.webp
+references:
+  - title: "The effect of intramural fibroids without uterine cavity involvement on the outcome of IVF treatment: a systematic review and meta-analysis"
+    authors: "Sunkara SK, Khairy M, El-Toukhy T et al."
+    journal: "Human Reproduction"
+    year: 2010
+    doi: "10.1093/humrep/dep457"
+  - title: "Effect of non-cavity-distorting intramural fibroids on the outcomes of in vitro fertilization-embryo transfer: a retrospective matched cohort study"
+    authors: "Yan L, Ding L, Li C et al."
+    journal: "Fertility and Sterility"
+    year: 2014
+    doi: "10.1016/j.fertnstert.2014.02.009"
+  - title: "Removal of myomas that do not distort the uterine cavity: a committee opinion"
+    authors: "Practice Committee of the American Society for Reproductive Medicine"
+    journal: "Fertility and Sterility"
+    year: 2017
+    doi: "10.1016/j.fertnstert.2017.03.038"
 ---
 
 # Miyomlar ve Tüp Bebek: Ebeveynliğe Giden Yolda Engelleri Aşmak - Kısırlık Yaşayan Çiftler İçin Bir Rehber

@@ -7,6 +7,22 @@ medicalReviewer: "Yayın Kurulu"
 lastModified: 2026-04-03
 category: "Kadın Sağlığı"
 image: /images/library/klinik/237.webp
+references:
+  - title: "Endometriosis and infertility: pathophysiology and management"
+    authors: "Vercellini P, Viganò P, Somigliana E, Fedele L"
+    journal: "Lancet"
+    year: 2014
+    doi: "10.1016/S0140-6736(13)62224-0"
+  - title: "Dermoid cysts of the ovary: their clinical and pathological significance"
+    authors: "Comerci JT, Licciardi F, Bergh PA, et al."
+    journal: "Obstetrics & Gynecology"
+    year: 1994
+    doi: "10.1016/0029-7844(94)90058-2"
+  - title: "Management of ovarian cysts and benign adnexal masses in premenopausal women"
+    authors: "Legendre G, Catala L, Morinière C, et al."
+    journal: "Journal of Gynecology Obstetrics and Human Reproduction"
+    year: 2014
+    doi: "10.1016/j.jgyn.2014.06.006"
 ---
 
 Yumurtalıklar kadında pelvik bölgede, rahimin iki yanında bulunan üreme bezleridir. Kadında yumurtalıklar iki tanedir ve normal büyüklükleri birer ceviz kadardır. Yumurtalıklar, yumurtayı ve östrojen ile progesteron adı verilen kadınlık hormonlarını üretirler. Adet döngüsünün düzenlenmesi ve hamileliğin oluşmasından sorumludurlar.

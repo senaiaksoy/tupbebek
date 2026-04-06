@@ -7,6 +7,22 @@ medicalReviewer: "Yayın Kurulu"
 lastModified: 2026-04-03
 category: "Tedavi Yöntemleri"
 image: /images/library/tedavi/iac.webp
+references:
+  - title: "Intrauterine insemination for cervical factor subfertility"
+    authors: "Besselink DE, Farquhar C"
+    journal: "Cochrane Database of Systematic Reviews"
+    year: 2008
+    doi: "10.1002/14651858.CD000317.pub4"
+  - title: "Effectiveness of intrauterine insemination: a systematic review and meta-analysis"
+    authors: "Cohlen BJ, Vandekerckhove P, de Bruin JP et al."
+    journal: "Human Reproduction Update"
+    year: 2018
+    doi: "10.1093/humupd/dmx041"
+  - title: "Ovarian stimulation protocols for IUI: a systematic review and network meta-analysis"
+    authors: "Danhof NA, Wang R, van Wely M et al."
+    journal: "Human Reproduction Update"
+    year: 2020
+    doi: "10.1093/humupd/dmz034"
 ---
 
 ### İntrauterin İnseminasyon (IUI): Kapsamlı Bir Rehber

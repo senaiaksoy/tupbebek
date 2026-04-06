@@ -7,6 +7,22 @@ medicalReviewer: "Yayın Kurulu"
 lastModified: 2026-04-03
 category: "Tüp Bebek"
 image: /images/library/embriyo/yumurta-sayisi.webp
+references:
+  - title: "Association between the number of eggs and live birth in IVF treatment: an analysis of 400 135 treatment cycles"
+    authors: "Sunkara SK, Rittenberg V, Raine-Fenning N et al."
+    journal: "Human Reproduction"
+    year: 2011
+    doi: "10.1093/humrep/der106"
+  - title: "A new more detailed stratification of low responders to ovarian stimulation: from a poor ovarian response to a low prognosis concept (POSEIDON)"
+    authors: "Poseidon Group, Alviggi C, Andersen CY et al."
+    journal: "Reproductive BioMedicine Online"
+    year: 2016
+    doi: "10.1016/j.rbmo.2016.06.013"
+  - title: "Optimal oocyte retrieval and embryo utilization rates in assisted reproduction"
+    authors: "Briggs R, Kovacs G, MacLachlan V et al."
+    journal: "Journal of Assisted Reproduction and Genetics"
+    year: 2015
+    doi: "10.1007/s10815-015-0520-8"
 ---
 
 ## Tüp Bebek Tedavisinde Başarı İçin **Gerçekten** Kaç Yumurta Gerekir?

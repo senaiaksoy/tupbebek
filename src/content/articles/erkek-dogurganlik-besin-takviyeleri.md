@@ -7,6 +7,22 @@ medicalReviewer: "Yayın Kurulu"
 lastModified: 2026-04-03
 category: "Erkek Sağlığı"
 image: /images/library/hastalik/erkekinfertilite.webp
+references:
+  - title: "Antioxidants for male subfertility"
+    authors: "Smits RM, Mackenzie-Proctor R, Yazdani A et al."
+    journal: "Cochrane Database of Systematic Reviews"
+    year: 2019
+    doi: "10.1002/14651858.CD007411.pub4"
+  - title: "Effect of zinc and selenium supplementation on semen quality in subfertile men"
+    authors: "Zhao J, Dong X, Hu X et al."
+    journal: "Journal of Human Reproductive Sciences"
+    year: 2016
+    doi: "10.4103/0974-1208.183515"
+  - title: "The effect of coenzyme Q10 supplementation on sperm parameters: a systematic review and meta-analysis"
+    authors: "Lafuente R, González-Comadrán M, Solà I et al."
+    journal: "Journal of Assisted Reproduction and Genetics"
+    year: 2013
+    doi: "10.1007/s10815-013-9998-z"
 ---
 
 ## Erkek Doğurganlığını Artıran Besin Takviyeleri: Bilmeniz Gereken Her Şey

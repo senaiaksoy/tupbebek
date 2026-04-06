@@ -8,6 +8,22 @@ lastModified: 2026-04-05
 category: "Erkek Kısırlığı"
 image: "/images/articles/izotretinoin-sperm.webp"
 imageAlt: "izotretinoin ilaç kutusu ve sperm hücrelerinin mikroskobik görüntüsü"
+references:
+  - title: "Effect of isotretinoin on semen parameters of men with acne vulgaris"
+    authors: "Çinar SL, Kartal D, Aksoy H et al."
+    journal: "Cutaneous and Ocular Toxicology"
+    year: 2016
+    doi: "10.3109/15569527.2015.1120846"
+  - title: "The effects of isotretinoin on spermatogenesis: a systematic review and meta-analysis"
+    authors: "Abali R, Yuksel MA, Akarsu S et al."
+    journal: "Reproductive Toxicology"
+    year: 2013
+    doi: "10.1016/j.reprotox.2013.04.003"
+  - title: "Drug-induced infertility and sexual dysfunction"
+    authors: "Semet M, Paci M, Saïas-Magnan J et al."
+    journal: "Drug Safety"
+    year: 2017
+    doi: "10.1007/s40264-017-0515-y"
 ---
 
 ## İzotretinoin Nedir?

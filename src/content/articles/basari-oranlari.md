@@ -9,6 +9,22 @@ category: "Tüp Bebek"
 image: "/images/library/istatistik/yas_gebelikorani_ivf.webp"
 imageAlt: "Yaşa göre tüp bebek başarı oranları grafiği"
 featured: true
+references:
+  - title: "ART in Europe, 2019: results generated from European registries by ESHRE"
+    authors: "Wyns C, De Geyter C, Calhaz-Jorge C et al."
+    journal: "Human Reproduction"
+    year: 2023
+    doi: "10.1093/humrep/dead197"
+  - title: "Female age-related fertility decline"
+    authors: "American College of Obstetricians and Gynecologists Committee on Gynecologic Practice"
+    journal: "Fertility and Sterility"
+    year: 2014
+    doi: "10.1016/j.fertnstert.2013.12.032"
+  - title: "The Istanbul consensus workshop on embryo assessment: proceedings of an expert meeting"
+    authors: "Alpha Scientists in Reproductive Medicine and ESHRE Special Interest Group of Embryology"
+    journal: "Human Reproduction"
+    year: 2011
+    doi: "10.1093/humrep/der037"
 ---
 
 ## Başarı Oranları Nasıl Ölçülür?

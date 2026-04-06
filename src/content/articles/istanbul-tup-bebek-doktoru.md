@@ -8,6 +8,22 @@ lastModified: 2026-04-05
 category: "Rehber"
 image: "/images/articles/istanbul-tup-bebek-doktoru.webp"
 imageAlt: "istanbul tüp bebek doktoru seçimi ve danışmanlık süreci"
+references:
+  - title: "Good practice recommendations for pilot introduction of ART outcome quality indicators"
+    authors: "ESHRE Add-Ons Working Group, Mastenbroek S et al."
+    journal: "Human Reproduction"
+    year: 2021
+    doi: "10.1093/humrep/deab181"
+  - title: "Patient satisfaction in a fertility clinic: a systematic review"
+    authors: "Dancet EA, Nelen WL, Sermeus W et al."
+    journal: "Human Reproduction Update"
+    year: 2010
+    doi: "10.1093/humupd/dmp030"
+  - title: "International Committee for Monitoring Assisted Reproductive Technologies world report"
+    authors: "de Mouzon J, Chambers GM, Zegers-Hochschild F et al."
+    journal: "Human Reproduction"
+    year: 2020
+    doi: "10.1093/humrep/deaa090"
 ---
 
 ## İstanbul'da Tüp Bebek Tedavisi

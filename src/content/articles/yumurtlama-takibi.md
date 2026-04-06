@@ -7,6 +7,22 @@ medicalReviewer: "Yayın Kurulu"
 lastModified: 2026-04-03
 category: "Tanı ve Testler"
 image: /images/library/klinik/54.webp
+references:
+  - title: "Timing of sexual intercourse in relation to ovulation: effects on the probability of conception, survival of the pregnancy, and sex of the baby"
+    authors: "Wilcox AJ, Weinberg CR, Baird DD"
+    journal: "New England Journal of Medicine"
+    year: 1995
+    doi: "10.1056/NEJM199512073332301"
+  - title: "Comparison of methods to identify optimal fertile days"
+    authors: "Stanford JB, White GL, Hatasaka H"
+    journal: "Journal of the American Board of Family Practice"
+    year: 2002
+    doi: "10.3122/jabfm.15.2.116"
+  - title: "Urinary luteinizing hormone tests: which concentration threshold best predicts ovulation?"
+    authors: "McGovern PG, Myers ER, Silva S, et al."
+    journal: "Fertility and Sterility"
+    year: 2004
+    doi: "10.1016/j.fertnstert.2004.01.033"
 ---
 
 ## Yumurtlama (Ovülasyon) Takibi: Gebelik Şansınızı Artıran Önemli Bir Yöntem

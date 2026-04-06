@@ -8,6 +8,22 @@ lastModified: 2026-04-05
 category: "Kadın Sağlığı"
 image: "/images/articles/akinti-kasinti-koku.webp"
 imageAlt: "vajinal akıntı kaşıntı mantar enfeksiyonu bakteriyel vajinoz ayırıcı tanı"
+references:
+  - title: "Antibiotics for treating bacterial vaginosis in pregnancy"
+    authors: "Brocklehurst P, Gordon A, Heatley E et al."
+    journal: "Cochrane Database of Systematic Reviews"
+    year: 2013
+    doi: "10.1002/14651858.CD000262.pub4"
+  - title: "Vulvovaginal candidiasis: clinical manifestations, risk factors, management algorithm"
+    authors: "Sobel JD"
+    journal: "The Lancet"
+    year: 2007
+    doi: "10.1016/S0140-6736(07)60917-9"
+  - title: "The vaginal microbiome: new information about genital tract flora using molecular based techniques"
+    authors: "Ma B, Forney LJ, Ravel J"
+    journal: "BJOG: An International Journal of Obstetrics & Gynaecology"
+    year: 2012
+    doi: "10.1111/j.1471-0528.2011.03199.x"
 ---
 
 ## Vajinal Enfeksiyonlar Nedir?

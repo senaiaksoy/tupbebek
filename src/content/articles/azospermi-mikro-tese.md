@@ -3,9 +3,31 @@ title: "Azospermi ve Mikro-TESE: Baba Olma Hayalinde Yeni Bir Başlangıç"
 description: "Menide hiç sperm bulunmaması (azospermi) durumunda en etkili cerrahi yöntem olan Mikro-TESE nedir? Başarı oranları ve süreç hakkında detaylar."
 publishDate: 2026-03-31
 author: "tupbebek.com Yayın Kurulu"
+authorTitle: "Yayın Kurulu"
+medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
+reviewerTitle: "Tıbbi Danışma Kurulu"
+reviewDate: 2026-04-06
 category: "Erkek Kısırlığı"
 image: "/images/articles/azospermi-mikro-tese.webp"
 imageAlt: "azospermi tedavisi ve mikro-tese yöntemi mikroskop altında inceleme"
+references:
+  - title: "Testicular sperm extraction with intracytoplasmic sperm injection for nonobstructive azoospermia"
+    authors: "Schlegel PN"
+    journal: "Urology"
+    year: 1999
+    doi: "10.1016/S0090-4295(99)00301-1"
+  - title: "Micro-dissection testicular sperm extraction (micro-TESE) in non-obstructive azoospermia: a systematic review and meta-analysis"
+    authors: "Bernie AM, Mata DA, Ramasamy R, Schlegel PN"
+    journal: "BJU International"
+    year: 2015
+    doi: "10.1111/bju.12954"
+  - title: "Diagnostic evaluation of the infertile male: a committee opinion"
+    authors: "Practice Committee of the American Society for Reproductive Medicine"
+    journal: "Fertility and Sterility"
+    year: 2015
+    doi: "10.1016/j.fertnstert.2014.12.103"
+videoId: "RRDTPsS8SVc"
+videoTitle: "TESE Sonucu Negatif: Sperm Bulma Umudu Hala Var Mı?"
 ---
 
 Azospermi, yani menide hiç sperm olmaması durumu, çocuk sahibi olmak isteyen birçok çift için sarsıcı bir teşhis olabilir. Ancak modern tıbbın sunduğu **Mikro-TESE** yöntemi, bu durumdaki erkekler için devrim niteliğinde bir çözüm sunmaktadır.
