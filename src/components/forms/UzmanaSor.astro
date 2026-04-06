@@ -209,6 +209,13 @@ import KVKKConsent from './KVKKConsent.astro';
             }
 
             setTimeout(() => {
+                // GA4 Event: Expert Consultation Submission
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'expert_consultation', {
+                        'consultation_type': 'lab_analysis',
+                    });
+                }
+
                 // Show success, hide form fields
                 const fields = form.querySelectorAll('.input-group, fieldset, select, textarea, input, label, [type="submit"], .flex.items-start');
                 fields.forEach(el => {
