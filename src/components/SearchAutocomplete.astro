@@ -3,6 +3,8 @@
 // Pagefind-powered search with modal overlay UI
 // Usage: <SearchAutocomplete />
 
+import { getSearchData } from '../utils/searchData';
+
 export interface Props {
   placeholder?: string;
   maxResults?: number;
@@ -12,6 +14,8 @@ const {
   placeholder = 'Rehberlerde ara...',
   maxResults = 8
 } = Astro.props;
+
+const fallbackData = await getSearchData();
 ---
 
 <!-- Search Modal/Overlay -->
@@ -31,8 +35,8 @@ const {
       <!-- Search Input Wrapper -->
       <div class="relative p-6 border-b border-gray-100/50 bg-white/40">
         <div class="relative flex items-center gap-4">
-          <span class="text-primary-600 animate-pulse-soft">
-            <span class="material-symbols-outlined text-3xl">search_spark</span>
+          <span class="text-primary-600 flex items-center justify-center">
+            <span class="material-symbols-outlined text-[28px]">search</span>
           </span>
           <input
             id="search-input"
@@ -141,7 +145,7 @@ const {
   }
 </style>
 
-<script define:vars={{ maxResults }}>
+<script define:vars={{ maxResults, fallbackData }}>
   let pagefind = null;
   let searchTimeout;
   const debounceDelay = 200;
@@ -253,16 +257,29 @@ const {
     loadingState?.classList.remove('hidden');
 
     const pf = await loadPagefind();
-    if (!pf) {
-      loadingState?.classList.add('hidden');
-      noResults?.classList.remove('hidden');
-      return;
-    }
+    let results = [];
+    let count = 0;
 
-    const searchResult = await pf.search(trimmed);
-    const results = await Promise.all(
-      searchResult.results.slice(0, maxResults).map(r => r.data())
-    );
+    if (pf) {
+      const searchResult = await pf.search(trimmed);
+      results = await Promise.all(
+        searchResult.results.slice(0, maxResults).map(r => r.data())
+      );
+      count = searchResult.results.length;
+    } else {
+      const normalized = trimmed.toLowerCase();
+      const filtered = fallbackData.filter((item) => {
+        return item.title.toLowerCase().includes(normalized) || 
+               (item.description && item.description.toLowerCase().includes(normalized)) ||
+               (item.category && item.category.toLowerCase().includes(normalized));
+      });
+      count = filtered.length;
+      results = filtered.slice(0, maxResults).map(item => ({
+        url: item.url,
+        meta: { title: item.title, category: item.category, image: item.image },
+        excerpt: item.description,
+      }));
+    }
 
     loadingState?.classList.add('hidden');
 
@@ -274,7 +291,7 @@ const {
       noResults?.classList.add('hidden');
       searchCount?.classList.remove('hidden');
       const countSpan = searchCount?.querySelector('span');
-      if (countSpan) countSpan.textContent = String(searchResult.results.length);
+      if (countSpan) countSpan.textContent = String(count);
 
       if (resultsList) {
         resultsList.innerHTML = results
@@ -284,6 +301,7 @@ const {
             const url = result.url || '#';
             const category = result.filters?.category?.[0] || result.meta?.category || '';
             const image = result.meta?.image || '';
+            const style = getCategoryStyle(category);
 
             return `
               <li class="search-result-item" style="animation-delay: ${index * 0.05}s">
@@ -293,14 +311,13 @@ const {
                           focus:outline-none focus:ring-2 focus:ring-primary-200 group/item">
                   <div class="flex items-center gap-4">
                     ${image ? `
-                      <div class="w-12 h-12 rounded-xl overflow-hidden flex-shrink-0 border border-gray-100">
-                        <img src="${image}" alt="" class="w-full h-full object-cover" loading="lazy" />
+                      <div class="w-12 h-12 rounded-xl overflow-hidden flex-shrink-0 shadow-sm border border-gray-100">
+                        <img src="${image}" alt="" class="w-full h-full object-cover group-hover/item:scale-105 transition-transform duration-300" loading="lazy" />
                       </div>
                     ` : `
-                      <div class="w-10 h-10 bg-gray-100 rounded-xl flex items-center justify-center
-                                  group-hover/item:bg-white/20 transition-colors flex-shrink-0">
-                        <span class="material-symbols-outlined text-gray-400 group-hover/item:text-white">
-                          ${getCategoryIcon(category)}
+                      <div class="w-12 h-12 ${style.bg} rounded-xl flex items-center justify-center flex-shrink-0 shadow-sm border border-white transition-all group-hover/item:bg-white/20">
+                        <span class="material-symbols-outlined ${style.color} group-hover/item:text-white transition-colors">
+                          ${style.icon}
                         </span>
                       </div>
                     `}
@@ -335,19 +352,32 @@ const {
   }
 
   // Helper: Get icon based on category
-  function getCategoryIcon(cat) {
-    if (!cat) return 'description';
+  function getCategoryStyle(cat) {
+    if (!cat) return { icon: 'auto_stories', bg: 'bg-primary-50', color: 'text-primary-500' };
     cat = cat.toLowerCase();
-    if (cat.includes('kadın')) return 'female';
-    if (cat.includes('erkek')) return 'male';
-    if (cat.includes('tedavi')) return 'medical_services';
-    if (cat.includes('tüp bebek')) return 'science';
-    if (cat.includes('genetik')) return 'genetics';
-    return 'description';
+    
+    if (cat.includes('kadın')) return { icon: 'female', bg: 'bg-pink-50', color: 'text-pink-600' };
+    if (cat.includes('erkek')) return { icon: 'male', bg: 'bg-blue-50', color: 'text-blue-600' };
+    if (cat.includes('tedavi')) return { icon: 'medical_services', bg: 'bg-teal-50', color: 'text-teal-600' };
+    if (cat.includes('embriyo')) return { icon: 'biotech', bg: 'bg-indigo-50', color: 'text-indigo-600' };
+    if (cat.includes('tüp bebek')) return { icon: 'science', bg: 'bg-cyan-50', color: 'text-cyan-600' };
+    if (cat.includes('genetik')) return { icon: 'genetics', bg: 'bg-purple-50', color: 'text-purple-600' };
+    if (cat.includes('rehber')) return { icon: 'book', bg: 'bg-primary-50', color: 'text-primary-600' };
+    
+    return { icon: 'description', bg: 'bg-gray-50', color: 'text-gray-500' };
   }
 
   // Keyboard navigation in results
   input?.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      const trimmed = input.value.trim();
+      if (trimmed) {
+        window.location.href = `/makaleler?q=${encodeURIComponent(trimmed)}`;
+      }
+      return;
+    }
+
     const items = resultsList?.querySelectorAll('a') || [];
     if (items.length === 0) return;
 

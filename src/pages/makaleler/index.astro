@@ -309,7 +309,7 @@ const categories = Array.from(categoryCounts.entries())
         if (q && banner && filterText) {
           filterText.innerHTML = '<strong>Arama:</strong> "' + q + '"';
           banner.style.display = 'flex';
-          filterByCategory('all');
+          filterByCategory(cat || 'all');
         } else if (cat) {
           filterByCategory(cat);
         }

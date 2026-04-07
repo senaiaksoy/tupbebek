@@ -27,14 +27,14 @@ const {
 <div class="hero-search-wrapper relative" id="hero-search-wrapper">
   <!-- Search Input -->
   <div class="relative search-input-container group/input">
-    <span class="absolute left-4 top-3.5 text-gray-400 transition-colors group-focus-within/input:text-primary-600">
-      <span class="material-symbols-outlined text-lg">search_spark</span>
+    <span class="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 transition-colors group-focus-within/input:text-primary-600 pointer-events-none flex items-center justify-center">
+      <span class="material-symbols-outlined text-[20px]">search</span>
     </span>
     <input
       id="hero-search-input"
       type="text"
       placeholder={placeholder}
-      class="w-full pl-11 pr-4 py-3 rounded-xl border border-gray-200 bg-white/80 focus:border-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-300/40 transition-all text-sm text-gray-800 placeholder-gray-400"
+      class="w-full pl-11 pr-4 py-3.5 rounded-xl border border-gray-200 bg-white/80 focus:border-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-300/40 transition-all text-sm text-gray-800 placeholder-gray-400 shadow-sm"
       autocomplete="off"
       aria-label="Makalelerde ara"
     />
@@ -217,16 +217,24 @@ const {
 
     resultsList.innerHTML = limited.map((result, i) => {
       const category = result.category || result.type || 'Makale';
-      const icon = getCategoryIcon(category);
+      const style = getCategoryStyle(category);
+      const hasImage = !!result.image;
+
       return `
         <li class="search-result-item" style="animation-delay: ${i * 0.04}s">
           <a href="${result.url}"
              class="flex items-center gap-3 px-4 py-3 hover:bg-gray-50 transition-colors focus:bg-gray-50 focus:outline-none group/item"
              tabindex="0">
-            <div class="w-8 h-8 bg-gray-100 rounded-lg flex items-center justify-center flex-shrink-0 group-hover/item:bg-primary-50 transition-colors">
-              <span class="material-symbols-outlined text-gray-400 group-hover/item:text-primary-600 text-base">${icon}</span>
-            </div>
-            <div class="min-w-0 flex-1">
+            ${hasImage ? `
+              <div class="w-10 h-10 rounded-xl flex-shrink-0 overflow-hidden shadow-sm border border-gray-100">
+                <img src="${result.image}" alt="" class="w-full h-full object-cover group-hover/item:scale-105 transition-transform duration-300" loading="lazy" />
+              </div>
+            ` : `
+              <div class="w-10 h-10 ${style.bg} rounded-xl flex items-center justify-center flex-shrink-0 shadow-sm border border-white transition-all group-hover/item:bg-primary-50">
+                <span class="material-symbols-outlined ${style.color} group-hover/item:text-primary-600 text-lg transition-colors">${style.icon}</span>
+              </div>
+            `}
+            <div class="min-w-0 flex-1 ml-1">
               <p class="text-sm font-semibold text-gray-800 truncate group-hover/item:text-primary-600 transition-colors">${highlightText(result.title, trimmed)}</p>
               ${result.description ? `<p class="text-xs text-gray-500 truncate mt-0.5">${truncate(result.description, 60)}</p>` : ''}
             </div>
@@ -262,14 +270,19 @@ const {
     seeAllLink.classList.add('hidden');
   }
 
-  function getCategoryIcon(cat: string): string {
+  function getCategoryStyle(cat: string) {
+    if (!cat) return { icon: 'auto_stories', bg: 'bg-primary-50', color: 'text-primary-500' };
     cat = cat.toLowerCase();
-    if (cat.includes('kadın')) return 'female';
-    if (cat.includes('erkek')) return 'male';
-    if (cat.includes('tedavi')) return 'medical_services';
-    if (cat.includes('tüp')) return 'microbiology';
-    if (cat.includes('embriyo')) return 'biotech';
-    return 'description';
+    
+    if (cat.includes('kadın')) return { icon: 'female', bg: 'bg-pink-50', color: 'text-pink-600' };
+    if (cat.includes('erkek')) return { icon: 'male', bg: 'bg-blue-50', color: 'text-blue-600' };
+    if (cat.includes('tedavi')) return { icon: 'medical_services', bg: 'bg-teal-50', color: 'text-teal-600' };
+    if (cat.includes('embriyo')) return { icon: 'biotech', bg: 'bg-indigo-50', color: 'text-indigo-600' };
+    if (cat.includes('tüp bebek')) return { icon: 'science', bg: 'bg-cyan-50', color: 'text-cyan-600' };
+    if (cat.includes('genetik')) return { icon: 'genetics', bg: 'bg-purple-50', color: 'text-purple-600' };
+    if (cat.includes('rehber')) return { icon: 'book', bg: 'bg-primary-50', color: 'text-primary-600' };
+    
+    return { icon: 'description', bg: 'bg-gray-50', color: 'text-gray-500' };
   }
 
   function highlightText(text: string, query: string): string {
