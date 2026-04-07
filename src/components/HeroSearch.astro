@@ -117,16 +117,16 @@ const {
   const seeAllLink = document.getElementById('hero-search-all');
 
   let activeCategory = null;
-  let searchTimeout: ReturnType<typeof setTimeout>;
+  let searchTimeout;
 
   // Listen for custom category filter event
-  document.addEventListener('hero-filter-change', ((e: Event) => {
-    activeCategory = (e as CustomEvent).detail?.category ?? null;
+  document.addEventListener('hero-filter-change', (e) => {
+    activeCategory = e.detail?.category ?? null;
     // Re-search if there's input text
     if (activeCategory && input?.value.trim()) {
       performSearch(input.value.trim());
     }
-  }) as EventListener, { passive: true });
+  }, { passive: true });
 
   // Focus handling: Show dropdown when input is focused with text
   input?.addEventListener('focus', () => {
@@ -145,7 +145,7 @@ const {
 
   // Search on input
   input?.addEventListener('input', (e) => {
-    const query = (e.target as HTMLInputElement).value.trim();
+    const query = e.target.value.trim();
     clearTimeout(searchTimeout);
     searchTimeout = setTimeout(() => {
       if (query.length >= 2) {
@@ -180,7 +180,7 @@ const {
     }
   });
 
-  function performSearch(query: string) {
+  function performSearch(query) {
     const trimmed = query.toLowerCase();
 
     // Filter results
@@ -270,7 +270,7 @@ const {
     seeAllLink.classList.add('hidden');
   }
 
-  function getCategoryStyle(cat: string) {
+  function getCategoryStyle(cat) {
     if (!cat) return { icon: 'auto_stories', bg: 'bg-primary-50', color: 'text-primary-500' };
     cat = cat.toLowerCase();
     
@@ -285,12 +285,12 @@ const {
     return { icon: 'description', bg: 'bg-gray-50', color: 'text-gray-500' };
   }
 
-  function highlightText(text: string, query: string): string {
+  function highlightText(text, query) {
     const regex = new RegExp(`(${query})`, 'gi');
     return text.replace(regex, '<span class="search-highlight">$1</span>');
   }
 
-  function truncate(text: string, length: number): string {
+  function truncate(text, length) {
     return text.length > length ? text.substring(0, length) + '...' : text;
   }
 </script>
