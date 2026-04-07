@@ -24,7 +24,7 @@ export const getSearchData = async (): Promise<SearchItem[]> => {
     description: article.data.description,
     url: `/makaleler/${article.slug}`,
     category: article.data.category,
-    image: article.data.image,
+    image: article.data.image ? article.data.image.split(',')[0].trim() : '',
     type: 'article',
   }));
 };
