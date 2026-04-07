@@ -1,5 +1,5 @@
 const fs = require('fs');
-const path = 'd:/1web/stitch_tupbebek/public/e-kitap/tup-bebek-beslenme-plani.html';
+const path = 'd:/A-klasör/tupbebek/public/e-kitap/tup-bebek-beslenme-plani.html';
 const content = fs.readFileSync(path, 'utf8');
 
 // Identify <td> or <li> that start with lowercase

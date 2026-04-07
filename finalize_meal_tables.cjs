@@ -1,5 +1,5 @@
 const fs = require('fs');
-const path = 'd:/1web/stitch_tupbebek/public/e-kitap/tup-bebek-beslenme-plani.html';
+const path = 'd:/A-klasör/tupbebek/public/e-kitap/tup-bebek-beslenme-plani.html';
 let content = fs.readFileSync(path, 'utf8');
 
 // Capitalize first letter of text inside <td>
