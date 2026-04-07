@@ -67,7 +67,7 @@ Kısmi tıkanıklık söz konusu olduğunda, döllenmiş yumurta rahme ilerleyem
 
 ---
 
-## 3. Nedenler ve Risk Faktörleri
+## 3. Nedenler ve Risk Etkenleri
 
 ### 3.1 Enfeksiyonlar ve İltihaplar
 

@@ -146,7 +146,7 @@ Endometriozis kistleriyle başa çıkmak için tıbbi tedavilerin yanı sıra ya
 ## Araştırmalar ve Gelecek Perspektifleri
 
 - **Yeni Tedavi Seçenekleri**: Hormon baskılamanın ötesine geçerek ağrıyı hafifletmeyi ve kist oluşumunu önlemeyi hedefleyen ilaç çalışmaları devam etmektedir.
-- **Biyobelirteç ve Genetik Çalışmalar**: Endometriozisin neden bazı kadınlarda daha agresif seyrettiğini anlamak için genetik faktörler ve mikrobiyota üzerine araştırmalar yapılıyor.
+- **Biyobelirteç ve Genetik Çalışmalar**: Endometriozisin neden bazı kadınlarda daha agresif seyrettiğini anlamak için genetik etkenler ve mikrobiyota üzerine araştırmalar yapılıyor.
 - **Yapay Zekâ ve Teşhis**: Yapay zekâ uygulamaları, endometriozis için yeni tanı modelleri geliştirmek amacıyla genetik ve mikroRNA verilerini analiz edebiliyor. Bu sayede daha erken tanı ve etkili tedavi yöntemleri sunulabilecek.
 - **Ekonomik Yük ve Farkındalık**: Endometriozisin yüksek ekonomik maliyetleri, bu alana ayrılan araştırma fonlarının artırılmasını sağladı. Farkındalık kampanyaları ise kadınların belirtileri erken tanımasına ve gecikmiş teşhisin önüne geçilmesine yardımcı oluyor.
 

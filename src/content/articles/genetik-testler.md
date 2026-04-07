@@ -126,7 +126,7 @@ PGT'nin kanıta dayalı başlıca faydaları şunlardır:
 
 PGT çok faydalı bir araçtır ancak bazı sınırlamaları da vardır:
 
-- **%100 garanti vermez:** Öploid embriyo transferi başarıyı artırır ama her transferde gebelik oluşacağı anlamına gelmez. Rahim sağlığı, yaş ve diğer faktörler de etkilidir.
+- **%100 garanti vermez:** Öploid embriyo transferi başarıyı artırır ama her transferde gebelik oluşacağı anlamına gelmez. Rahim sağlığı, yaş ve diğer etkenler de etkilidir.
 - **Embriyo kaybı riski:** Biyopsi sonrası çok küçük bir oranda embriyo zarar görebilir (<%1).
 - **Mozaik sonuçlar:** Biyopsi embriyonun tamamını değil, küçük bir bölümünü temsil eder. Mozaik sonuçlar yorumlanması zor olabilir.
 - **Maliyet:** PGT ek bir maliyet getirir. Embriyo sayısına göre toplam tutar değişir.

@@ -84,14 +84,14 @@ Bu istisnai durumlar dışında, subseröz miyomlar genellikle sadece düzenli j
 
 Eğer teşhisiniz **intramural miyom** ise, en nüanslı ve en çok "hekim deneyimi" gerektiren gruptasınız demektir. Sizin için trafik lambası sarı yanıyor: Dur, düşün ve durumu tüm yönleriyle değerlendir.
 
-Bu miyomlar için ameliyat kararı, tek bir faktöre değil, bir dizi kriterin birleşimine dayanır. "5 cm miyom alınır mı?" sorusunun tek bir doğru cevabı yoktur. Cevap, "Sizin 5 cm'lik miyomunuz, sizin hayat hedefleriniz ve belirtileriniz doğrultusunda alınmalı mı?" sorusunda gizlidir. İşte değerlendirme yaparken göz önünde bulundurduğumuz ana faktörler:
+Bu miyomlar için ameliyat kararı, tek bir etkene değil, bir dizi kriterin birleşimine dayanır. "5 cm miyom alınır mı?" sorusunun tek bir doğru cevabı yoktur. Cevap, "Sizin 5 cm'lik miyomunuz, sizin hayat hedefleriniz ve belirtileriniz doğrultusunda alınmalı mı?" sorusunda gizlidir. İşte değerlendirme yaparken göz önünde bulundurduğumuz ana etkenler:
 
 1.**Belirtilerin Şiddeti:** Miyomunuz hayat kalitenizi düşüren belirtilere neden oluyor mu? Şiddetli adet kanamaları, ara kanamalar, anemiye yol açan kan kaybı, cinsel ilişki sırasında ağrı veya sürekli bir kasık ağrısı var mı? Eğer cevap evet ise, ameliyat önemli bir seçenek haline gelir.
 2.**Boyut ve Büyüme Hızı:** Tek başına boyut bir ameliyat kriteri olmasa da, genellikle 5 cm'yi geçen ve takiplerde hızla büyüdüğü gözlemlenen miyomlar daha yakından ele alınır. Özellikle menopoz sonrası dönemde büyüyen bir miyom, çok nadir de olsa kötü huylu olma şüphesi taşıyabileceğinden mutlaka ameliyatla değerlendirilmelidir.
-3.**Rahim İç Boşluğunu Bozması (Kavite Distorsiyonu):** Bu, sarı ışıktaki en kritik faktördür. Miyom rahim duvarının içinde olsa bile, büyürken rahmin iç boşluğunu (endometrial kavite) iterek şeklinde bozulmaya neden olabilir. Dışarıdan bakıldığında normal görünen bir odanın duvarının, içe doğru bombeleşerek yaşam alanını daraltması gibi düşünebilirsiniz. Bu durum, belirti vermese bile kısırlık veya tekrarlayan düşüklerin gizli nedeni olabilir.
+3.**Rahim İç Boşluğunu Bozması (Kavite Distorsiyonu):** Bu, sarı ışıktaki en kritik etkendir. Miyom rahim duvarının içinde olsa bile, büyürken rahmin iç boşluğunu (endometrial kavite) iterek şeklinde bozulmaya neden olabilir. Dışarıdan bakıldığında normal görünen bir odanın duvarının, içe doğru bombeleşerek yaşam alanını daraltması gibi düşünebilirsiniz. Bu durum, belirti vermese bile kısırlık veya tekrarlayan düşüklerin gizli nedeni olabilir.
 4.  **Gebelik Planı:** Çocuk sahibi olmayı planlıyorsanız, sarı ışık değerlendirmesi çok daha hassas hale gelir. Açıklanamayan kısırlık, tekrarlayan gebelik kayıpları veya başarısız tüp bebek denemeleri öykünüz varsa, rahim iç boşluğunu bozan veya 4-5 cm'yi geçen intramural miyomların gebelik öncesi alınması, gebelik şansını artırmak için güçlü bir şekilde önerilebilir.
 
-Bu dört faktör, bir bütün olarak değerlendirilir ve tedavi planı tamamen kişiye özel olarak çizilir. İşte bu noktada, deneyimli bir hekimle açık bir iletişim kurarak sizin için en doğru kararı vermek hayati önem taşır.
+Bu dört etken, bir bütün olarak değerlendirilir ve tedavi planı tamamen kişiye özel olarak çizilir. İşte bu noktada, deneyimli bir hekimle açık bir iletişim kurarak sizin için en doğru kararı vermek hayati önem taşır.
 
 ## Miyom, Kısırlık ve Gebelik: En Çok Merak Edilenler
 
@@ -184,7 +184,7 @@ Hayır, modern miyom cerrahisinin temel amacı rahmi korumaktır. "Miyomektomi" 
 
 Miyom teşhisi almak kafa karıştırıcı ve endişe verici olabilir. Ancak unutmayın, her miyom bir "düşman" değildir ve her miyom ameliyat gerektirmez. Önemli olan, rahminizdeki bu "komşunun" sizin hayat kalitenizi, sağlığınızı ve gelecek planlarınızı nasıl etkilediğini doğru bir şekilde anlamaktır.
 
-Bu yazıda paylaştığım Trafik Lambası Yöntemi, bu karmaşık süreci anlamanız için bir yol haritası sunmayı amaçlamaktadır. Yeşil ışık yanan submüköz miyomlar genellikle net bir cerrahi kararını işaret ederken, kırmızı ışıktaki subseröz miyomlar çoğunlukla takip edilir. En kritik ve kişiye özel kararlar ise sarı ışık yanan intramural miyomlar için verilir. Bu kararı verirken boyut, belirtiler, rahmin iç yapısı ve en önemlisi sizin anne olma hayalleriniz gibi birçok faktör bir arada değerlendirilir.
+Bu yazıda paylaştığım Trafik Lambası Yöntemi, bu karmaşık süreci anlamanız için bir yol haritası sunmayı amaçlamaktadır. Yeşil ışık yanan submüköz miyomlar genellikle net bir cerrahi kararını işaret ederken, kırmızı ışıktaki subseröz miyomlar çoğunlukla takip edilir. En kritik ve kişiye özel kararlar ise sarı ışık yanan intramural miyomlar için verilir. Bu kararı verirken boyut, belirtiler, rahmin iç yapısı ve en önemlisi sizin anne olma hayalleriniz gibi birçok etken bir arada değerlendirilir.
 
 Doğru teşhis, kişiye özel bir tedavi planı ve modern cerrahi teknikler ile bu süreci güvenle yönetebilirsiniz. Bilgi en büyük gücünüzdür. Bu rehberin, doktorunuzla yapacağınız görüşmede doğru soruları sormanıza ve tedavi yolculuğunuzda bilinçli adımlar atmanıza yardımcı olmasını umuyorum.
 

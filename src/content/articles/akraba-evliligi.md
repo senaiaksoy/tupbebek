@@ -28,7 +28,7 @@ references:
     doi: "10.1016/j.ejmhg.2013.03.002"
 ---
 
-Akraba evlilikleri, özellikle kuzen evlilikleri, uzun yıllardır birçok kültürde yaygın bir uygulama olmuştur. Ancak, genetik çeşitlilik eksikliği ve artan homozygosite gibi faktörler nedeniyle, bu evlilik türü çocuklarda ciddi sağlık sorunlarına yol açabilir.
+Akraba evlilikleri, özellikle kuzen evlilikleri, uzun yıllardır birçok kültürde yaygın bir uygulama olmuştur. Ancak, genetik çeşitlilik eksikliği ve artan homozygosite gibi etkenler nedeniyle, bu evlilik türü çocuklarda ciddi sağlık sorunlarına yol açabilir.
 
 ### Genetik Riskler ve Hastalıklar
 

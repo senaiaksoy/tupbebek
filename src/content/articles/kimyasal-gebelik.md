@@ -45,7 +45,7 @@ Her şeyin mükemmel bir uyum içinde ilerlemesi gereken gebelik sürecinde, kro
 
 ### Uterus Ortamı ve Embriyo Kalitesi
 
-Gebeliğin başarısı, sadece genetik yapıyla sınırlı değildir; uterusun iç yüzeyinin kalitesi ve hormon dengeleri gibi faktörler de büyük önem taşır. Uygun olmayan uterus koşulları veya hormonel dengesizlikler, embriyonun sağlıklı bir şekilde tutunmasını ve gelişimini engelleyebilir.
+Gebeliğin başarısı, sadece genetik yapıyla sınırlı değildir; uterusun iç yüzeyinin kalitesi ve hormon dengeleri gibi etkenler de büyük önem taşır. Uygun olmayan uterus koşulları veya hormonel dengesizlikler, embriyonun sağlıklı bir şekilde tutunmasını ve gelişimini engelleyebilir.
 
 ## Kimyasal Gebelik Belirtileri
 
@@ -74,7 +74,7 @@ Kimyasal gebelik, genellikle döllenmiş bir yumurtanın rahime tutunmasından s
 
 ### Kimyasal Gebelik Nasıl Meydana Gelir?
 
-Kimyasal gebeliklerin en yaygın nedeni, embriyodaki kromozomal anormalliklerdir. Bu genetik bozukluklar, embriyonun sağlıklı bir şekilde gelişimini engeller. Ayrıca, rahim içi ortamın elverişsiz olması veya hormonal dengesizlikler gibi diğer faktörler de kimyasal gebelik riskini artırabilir.
+Kimyasal gebeliklerin en yaygın nedeni, embriyodaki kromozomal anormalliklerdir. Bu genetik bozukluklar, embriyonun sağlıklı bir şekilde gelişimini engeller. Ayrıca, rahim içi ortamın elverişsiz olması veya hormonal dengesizlikler gibi diğer etkenler de kimyasal gebelik riskini artırabilir.
 
 ### Kimyasal Gebelik Belirtileri Nelerdir?
 

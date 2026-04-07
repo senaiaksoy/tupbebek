@@ -67,7 +67,7 @@ Embriyo transferi sonrası hormonal destek, IVF tedavisinin ayrılmaz bir parça
 
 ### Zararlı Maddelerden Uzak Durmak
 
-Çeşitli maddeler ve çevresel faktörlere maruz kalmak, implantasyon ve erken gebeliği tehlikeye atabilir. Hastalara şu önerilerde bulunulmaktadır:
+Çeşitli maddeler ve çevresel etkenlere maruz kalmak, implantasyon ve erken gebeliği tehlikeye atabilir. Hastalara şu önerilerde bulunulmaktadır:
 
 - **Sigara:** Sigara içmenin, doğurganlığı azalttığı ve düşük yapma riskini artırdığı bilinmektedir. Tüp bebek tedavisine başlamadan önce sigarayı bırakmanız kesinlikle önerilir.
 - **Alkol:** Alkol, transfer sonrası dönemde kesinlikle kaçınılması gereken bir maddedir, çünkü implantasyon sürecini ve erken embriyo gelişimini olumsuz etkileyebilir.
@@ -92,4 +92,4 @@ Tüp bebek tedavisi ve iki haftalık bekleme süresi, duygusal açıdan oldukça
 
 ## Sonuç
 
-Embriyo transferini takiben yaşanan dönem, umut ve endişeyle doludur. Tüp bebek başarısını etkileyen birçok faktör hastanın elinde olmasa da, transfer sonrası bakım için yapılan bilimsel önerilere uymak, başarılı bir gebelik şansını artırabilir. Dengeli beslenme, düzenli egzersiz, stres yönetimi ve yakından takip, bu kritik aşamada vücudunuzu desteklemenin anahtarlarıdır. En önemlisi, pozitif bir tutum sergilemek ve duygusal destek aramak, tüp bebek sürecinin getirdiği zorlukları umut ve dayanıklılıkla aşmanın temelidir.
+Embriyo transferini takiben yaşanan dönem, umut ve endişeyle doludur. Tüp bebek başarısını etkileyen birçok etken hastanın elinde olmasa da, transfer sonrası bakım için yapılan bilimsel önerilere uymak, başarılı bir gebelik şansını artırabilir. Dengeli beslenme, düzenli egzersiz, stres yönetimi ve yakından takip, bu kritik aşamada vücudunuzu desteklemenin anahtarlarıdır. En önemlisi, pozitif bir tutum sergilemek ve duygusal destek aramak, tüp bebek sürecinin getirdiği zorlukları umut ve dayanıklılıkla aşmanın temelidir.

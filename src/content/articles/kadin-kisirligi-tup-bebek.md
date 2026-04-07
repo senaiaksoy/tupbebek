@@ -31,7 +31,7 @@ Tüp bebek tedavisi (IVF), kısırlıkla mücadele eden birçok çift için umut
 
 ### Kadın Kısırlığını Anlamak
 
-Kadın kısırlığı, bir yıl boyunca korunmasız ve düzenli cinsel ilişkiye rağmen hamile kalamama durumu olarak tanımlanır. Kısırlık nedenleri arasında yumurtlama bozuklukları, fallop tüplerindeki hasarlar, rahim anomalileri ve yaşla birlikte azalan doğurganlık sayılabilir. Bu faktörler, kadının yumurta kalitesini ve sayısını, fallop tüplerinin işlevini ve rahmin embriyo tutunmasını etkileyebilir.
+Kadın kısırlığı, bir yıl boyunca korunmasız ve düzenli cinsel ilişkiye rağmen hamile kalamama durumu olarak tanımlanır. Kısırlık nedenleri arasında yumurtlama bozuklukları, fallop tüplerindeki hasarlar, rahim anomalileri ve yaşla birlikte azalan doğurganlık sayılabilir. Bu etkenler, kadının yumurta kalitesini ve sayısını, fallop tüplerinin işlevini ve rahmin embriyo tutunmasını etkileyebilir.
 
 ### Yumurtlama Bozuklukları: Temel Sebepler
 
@@ -51,7 +51,7 @@ Tüp kısırlığında fallop tüpleri zarar görmüş ya da tıkanmıştır. Bu
 
 - **Endometriozis:** Bu hastalıkta, rahim iç zarına benzeyen doku, rahim dışındaki organlarda büyür ve inflamasyon, yapışıklıklar ve tıkanıklıklara neden olabilir. Tüp bebek tedavisi, fallop tüplerine zarar vermeden bu sorunu aşmada etkili olabilir.
 
-### Rahim ve Servikal Faktörlerin Rolü
+### Rahim ve Servikal Etkenlerin Rolü
 
 Rahim, embriyonun tutunması ve hamileliğin devamında hayati bir rol oynar. Rahimdeki anormallikler, myomlar, polipler ve doğuştan gelen yapısal bozukluklar bu süreci olumsuz etkileyebilir.
 
@@ -59,11 +59,11 @@ Rahim, embriyonun tutunması ve hamileliğin devamında hayati bir rol oynar. Ra
 
 - **Doğuştan gelen rahim anomalileri:** Bazı kadınlar, septalı rahim veya bikornuat rahim gibi yapısal anormalliklerle doğarlar. Bu tür anomaliler, hamile kalmayı ve hamileliği sürdürmeyi zorlaştırabilir. Sorunun ciddiyetine bağlı olarak, tüp bebek tedavisinden önce cerrahi müdahale gerekebilir.
 
-- **Servikal faktörler:** Serviks, sperm hareketini engelleyen yetersiz ya da düşmanca bir mukus üretirse, bu durum da kısırlığa yol açabilir. Ayrıca servikal darlık, spermin rahme ulaşmasını engelleyebilir. Tüp bebek tedavisi, bu tür durumlarda servikal engeli atlayarak etkili bir tedavi sunar.
+- **Servikal etkenler:** Serviks, sperm hareketini engelleyen yetersiz ya da düşmanca bir mukus üretirse, bu durum da kısırlığa yol açabilir. Ayrıca servikal darlık, spermin rahme ulaşmasını engelleyebilir. Tüp bebek tedavisi, bu tür durumlarda servikal engeli atlayarak etkili bir tedavi sunar.
 
 ### Yaş ve Doğurganlık: Önemli Bir Bağlantı
 
-Yaş, kadın doğurganlığını etkileyen en önemli faktörlerden biridir. Kadınlar, sınırlı sayıda yumurta ile doğarlar ve bu yumurtaların sayısı ve kalitesi yaşla birlikte azalır. 35 yaşından sonra doğal yolla hamile kalma şansı önemli ölçüde düşer. Aynı zamanda, yumurtalardaki kromozomal anormallik riski artar, bu da düşük ve genetik bozukluk riskini artırır.
+Yaş, kadın doğurganlığını etkileyen en önemli etkenlerden biridir. Kadınlar, sınırlı sayıda yumurta ile doğarlar ve bu yumurtaların sayısı ve kalitesi yaşla birlikte azalır. 35 yaşından sonra doğal yolla hamile kalma şansı önemli ölçüde düşer. Aynı zamanda, yumurtalardaki kromozomal anormalllik riski artar, bu da düşük ve genetik bozukluk riskini artırır.
 
 Daha ileri yaşlardaki kadınlar için tüp bebek tedavisi genellikle ilk tercih olur. Ayrıca, preimplantasyon genetik testi (PGT) ile embriyolar transfer edilmeden önce kromozomal anormallikler taranarak tüp bebek tedavisinin başarı oranı artırılabilir.
 
@@ -93,4 +93,4 @@ Tüp bebek, yumurtalıkların uyarılması, yumurtaların toplanması, döllenme
 
 ### Sonuç
 
-Kadın kısırlığı, tüp bebek tedavisinin başarısını etkileyen karmaşık bir sorundur. Yumurtlama bozuklukları, fallop tüplerindeki hasarlar, rahim anomalileri ve yaş gibi faktörlerin anlaşılması, tedavi planlarının kişiye özel olarak şekillendirilmesi açısından hayati önem taşır. Tüp bebek tedavisi, birçok kadın için etkili bir çözüm sunar, özellikle diğer tedaviler başarısız olduğunda. Üreme tıbbındaki gelişmeler, PGT gibi yöntemlerle tüp bebek başarılarını artırarak, kadınlar ve çiftler için ebeveyn olma hayalini gerçeğe dönüştürmektedir.
+Kadın kısırlığı, tüp bebek tedavisinin başarısını etkileyen karmaşık bir sorundur. Yumurtlama bozuklukları, fallop tüplerindeki hasarlar, rahim anomalileri ve yaş gibi etkenlerin anlaşılması, tedavi planlarının kişiye özel olarak şekillendirilmesi açısından hayati önem taşır. Tüp bebek tedavisi, birçok kadın için etkili bir çözüm sunar, özellikle diğer tedaviler başarısız olduğunda. Üreme tıbbındaki gelişmeler, PGT gibi yöntemlerle tüp bebek başarılarını artırarak, kadınlar ve çiftler için ebeveyn olma hayalini gerçeğe dönüştürmektedir.

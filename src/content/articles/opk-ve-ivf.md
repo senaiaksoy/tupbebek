@@ -55,7 +55,7 @@ PCOS (Polikistik Over Sendromu) deyince aklınıza belki sivilceler, hormonal de
 
 ---
 
-## PCOS'un Gizemi: Genetikten Çevresel Faktörlere
+## PCOS'un Gizemi: Genetikten Çevresel Etkenlere
 
 ### 1. Genetik Bağlantılar
 
@@ -67,7 +67,7 @@ PCOS'un en büyük "suç ortakları" yüksek androjen seviyeleri ve insülin dir
 
 ### 3. Yaşam Tarzı ve Çevre
 
-Düzensiz beslenme, hareketsiz bir yaşam ve yüksek stres ortamı, PCOS'u alevlendirebilir. Bu faktörler tek başlarına PCOS'a yol açmayabilir ama mevcut tabloyu ağırlaştırabilir.
+Düzensiz beslenme, hareketsiz bir yaşam ve yüksek stres ortamı, PCOS'u alevlendirebilir. Bu etkenler tek başlarına PCOS'a yol açmayabilir ama mevcut tabloyu ağırlaştırabilir.
 
 ---
 
@@ -121,7 +121,7 @@ Tüp bebek tedavisi, PCOS'lu kadınlar için etkili bir çözüm olarak öne ç�
 
 ### Başarı Oranları
 
-PCOS'lu kadınların tüp bebek tedavisinde başarı şansı oldukça yüksektir. İyi bir tedavi planı ve kişisel sağlık faktörleri göz önünde bulundurularak gebelik oranları %35 ile %50 arasında değişebilmektedir.
+PCOS'lu kadınların tüp bebek tedavisinde başarı şansı oldukça yüksektir. İyi bir tedavi planı ve kişisel sağlık etkenleri göz önünde bulundurularak gebelik oranları %35 ile %50 arasında değişebilmektedir.
 
 ### Gebelik Sürecinde Takip
 

@@ -110,7 +110,7 @@ Asıl fark, belirli hasta gruplarında ortaya çıkar. Dondurulmuş transferin b
 * **Yüksek Yumurtalık Yanıtı Olanlar (Hiper-responderler):** Tedavi sırasında çok sayıda yumurta üreten (genellikle PCOS hastaları gibi) kadınlarda, "tümünü dondurma" stratejisi canlı doğum oranlarını taze transfere göre anlamlı derecede yükseltir([https://doi.org/10.1093/humupd/dmy033](https://doi.org/10.1093/humupd/dmy033)). Bunun nedeni basittir: Yüksek hormon seviyelerinin bozduğu bir rahim ortamına transfer yapmak yerine, embriyolara dinlenmiş ve ideal hale getirilmiş bir rahimde tutunma şansı verilir.
 * **Endometriozis Hastaları:** Yapılan bir meta-analiz, endometriozis tanısı olan kadınlarda dondurulmuş embriyo transferinin daha olumlu gebelik sonuçları verdiğini göstermiştir.
 
-Şunu unutmayalım ki, başarıyı asıl etkileyen şeyler **kadının yaşı, elde edilen embriyonun ne kadar iyi olduğu ve tedavi yapan kliniğin ve laboratuvarın ne kadar deneyimli olduğudur.** Taze mi yoksa dondurulmuş transfer mi yapacağımız, bu önemli faktörlere göre vereceğimiz bir karar.
+Şunu unutmayalım ki, başarıyı asıl etkileyen şeyler **kadının yaşı, elde edilen embriyonun ne kadar iyi olduğu ve tedavi yapan kliniğin ve laboratuvarın ne kadar deneyimli olduğudur.** Taze mi yoksa dondurulmuş transfer mi yapacağımız, bu önemli etkenlere göre vereceğimiz bir karar.
 
 ## Karar Anı: Hangi Yöntem Sizin İçin Daha Uygun?
 

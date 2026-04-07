@@ -42,7 +42,7 @@ Tıbbi veriler kadar, duygusal sağlığın korunması da bir sonraki denemenin 
 ### Yeni Strateji: Kişiselleştirilmiş Yaklaşım
 Başarısızlık sonrası biz ne yapıyoruz?
 - **Derinlemesine Vaka Analizi:** Tüm lab verilerinin yeniden incelenmesi.
-- **Ek Tanısal Araştırmalar:** İmmünolojik faktörlerin veya rahim içi anomali olasılığının elenmesi.
+- **Ek Tanısal Araştırmalar:** İmmünolojik etkenlerin veya rahim içi anomali olasılığının elenmesi.
 - **Yaşam Tarzı Optimizasyonu:** Beslenmeden stres yönetimine kadar 3 aylık bir hazırlık dönemi.
 
 Unutmayın; bilim, her "olmadı" dediğinde bir sonraki "olacak" için yeni bir kapı aralar.

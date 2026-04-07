@@ -27,7 +27,7 @@ references:
 
 ## Erkek Doğurganlığını Artıran Besin Takviyeleri: Bilmeniz Gereken Her Şey
 
-Erkek doğurganlığıyla ilgili sorunlar, düşündüğünüzden çok daha yaygın: Çiftlerin yaklaşık %15'i bebek sahibi olmakta zorluk çekerken, bunların yarısından fazlasında sorun erkek faktöründen kaynaklanır. Yetersiz sperm üretimi, şekil bozuklukları veya sperm geçişini engelleyen tıkanıklıklar gibi durumlar, baba olma hayalinize gölge düşürebilir. Neyse ki, besin takviyelerinin sperm kalitesine olumlu etkileri üzerine giderek daha fazla araştırma yapılıyor. Bu yazıda, CoQ10'dan çinkoya, D vitamininden L-karnitine kadar, erkek doğurganlığınızı desteklemede rol oynayabilecek öne çıkan takviyelere göz atıyoruz.
+Erkek doğurganlığıyla ilgili sorunlar, düşündüğünüzden çok daha yaygın: Çiftlerin yaklaşık %15'i bebek sahibi olmakta zorluk çekerken, bunların yarısından fazlasında sorun erkek kaynaklı etkenlerden kaynaklanır. Yetersiz sperm üretimi, şekil bozuklukları veya sperm geçişini engelleyen tıkanıklıklar gibi durumlar, baba olma hayalinize gölge düşürebilir. Neyse ki, besin takviyelerinin sperm kalitesine olumlu etkileri üzerine giderek daha fazla araştırma yapılıyor. Bu yazıda, CoQ10'dan çinkoya, D vitamininden L-karnitine kadar, erkek doğurganlığınızı desteklemede rol oynayabilecek öne çıkan takviyelere göz atıyoruz.
 
 ---
 
@@ -45,13 +45,13 @@ Bu kapsamlı rehberi hazırlamak için farklı bilimsel makaleler, uzman görü�
 
 ## Erkek Kısırlığının Başlıca Nedenleri
 
-Erkek kısırlığının en yaygın sebebi, sağlıklı sperm üretiminin bozulması. Spermin olgunlaşma, hareket etme ya da doğru şekle sahip olma süreçlerinde sıkıntılar yaşanabiliyor. Bazı genetik veya hormonal rahatsızlıklar, testislerdeki varikosel (genişlemiş damarlar) ya da kanalların tıkanması gibi faktörler de tabloya eşlik edebiliyor. Ayrıca sigara, aşırı alkol, obezite ve çevresel toksinlere maruz kalma gibi yaşam tarzı alışkanlıkları da üreme sağlığını olumsuz yönde etkileyebiliyor.
+Erkek kısırlığının en yaygın sebebi, sağlıklı sperm üretiminin bozulması. Spermin olgunlaşma, hareket etme ya da doğru şekle sahip olma süreçlerinde sıkıntılar yaşanabiliyor. Bazı genetik veya hormonal rahatsızlıklar, testislerdeki varikosel (genişlemiş damarlar) ya da kanalların tıkanması gibi etkenler de tabloya eşlik edebiliyor. Ayrıca sigara, aşırı alkol, obezite ve çevresel toksinlere maruz kalma gibi yaşam tarzı alışkanlıkları da üreme sağlığını olumsuz yönde etkileyebiliyor.
 
 ---
 
 ## Erkek Doğurganlığını Artırmaya Yardımcı Takviyeler
 
-Her kısırlık vakası mutlaka takviyelerle çözülecek diye bir kural yok. Ancak bilimsel çalışmalar, bazı besin desteklerinin spermin sayı, hareket ve şekil gibi kilit faktörlerinde gelişme sağlayabileceğini gösteriyor.
+Her kısırlık vakası mutlaka takviyelerle çözülecek diye bir kural yok. Ancak bilimsel çalışmalar, bazı besin desteklerinin spermin sayı, hareket ve şekil gibi kilit unsurlarında gelişme sağlayabileceğini gösteriyor.
 
 **Dikkat:** Takviyeler, sağlıklı beslenme ve doğru yaşam tarzının yerini tutmaz. Sebzeler, meyveler, kaliteli protein kaynakları ve sağlıklı yağlarla beslenmek hâlâ en önemli nokta. Ayrıca, herhangi bir ek ürüne başlamadan önce mutlaka doktorunuza danışın.
 
@@ -116,9 +116,9 @@ Yağda çözünen bir vitamin olan **D vitamini**, kalsiyum emilimi, bağışık
 
 ## Sonuç
 
-Erkek kısırlığı pek çok farklı nedene dayanabilir. Kimisinde genetik faktörler öne çıkarken, kimisinde hormonsal veya çevresel etkenler devreye girer. Her vakada sihirli bir formül olmamakla birlikte, CoQ10, çinko ve D vitamini gibi besin takviyelerinin, araştırmalar ışığında, sperm kalitesine destek olduğu görülmüştür. Özellikle antioksidan özellikli takviyeler, serbest radikalleri nötralize ederek spermleri oksidatif hasardan koruyabilir.
+Erkek kısırlığı pek çok farklı nedene dayanabilir. Kimisinde genetik etkenler öne çıkarken, kimisinde hormonsal veya çevresel unsurlar devreye girer. Her vakada sihirli bir formül olmamakla birlikte, CoQ10, çinko ve D vitamini gibi besin takviyelerinin, araştırmalar ışığında, sperm kalitesine destek olduğu görülmüştür. Özellikle antioksidan özellikli takviyeler, serbest radikalleri nötralize ederek spermleri oksidatif hasardan koruyabilir.
 
-Bunun yanı sıra L-karnitin, selenyum, likopen, folik asit, omega-3 ve C ile E vitaminleri de "beslenme gardırobunuza" eklemeye değer kahramanlardır. Elbette takviyeler, tek başına tüm sorunları çözmez. Dengeli beslenme, düzenli egzersiz, stresten uzak durma ve tıbbi kontroller, erkek doğurganlığını etkileyen en önemli faktörler arasında yer alır.
+Bunun yanı sıra L-karnitin, selenyum, likopen, folik asit, omega-3 ve C ile E vitaminleri de "beslenme gardırobunuza" eklemeye değer kahramanlardır. Elbette takviyeler, tek başına tüm sorunları çözmez. Dengeli beslenme, düzenli egzersiz, stresten uzak durma ve tıbbi kontroller, erkek doğurganlığını etkileyen en önemli etkenler arasında yer alır.
 
 **Unutmayın:** Hangi takviyeyi seçeceğinize veya hangi dozu uygulayacağınıza dair en doğru kararı vermek için bir sağlık uzmanına danışmanız şart. Her erkeğin metabolizması, yaşam tarzı ve sağlık geçmişi farklıdır. Kendiniz için en iyisini uzman yardımıyla keşfedin, bebek sahibi olma yolculuğunuza kendinden emin bir şekilde devam edin.
 

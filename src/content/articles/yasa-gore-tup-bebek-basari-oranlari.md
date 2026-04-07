@@ -49,7 +49,7 @@ references:
 
 ## Kısa Cevap
 
-Tüp bebek başarısını belirleyen en önemli faktör **kadın yaşıdır**. 35 yaş altında canlı doğum oranı **%50-60** civarındayken, 35-39 yaş aralığında bu oran **%30-40** bandına geriler. 40 yaşından sonra ise şans **%10-20**'lere düşer ve yaş ilerledikçe keskin bir şekilde azalır. Bunun temel nedeni, zamanla yumurta sayısının (rezerv) ve genetik kalitesinin kaçınılmaz olarak düşmesidir.
+Tüp bebek başarısını belirleyen en önemli etken **kadın yaşıdır**. 35 yaş altında canlı doğum oranı **%50-60** civarındayken, 35-39 yaş aralığında bu oran **%30-40** bandına geriler. 40 yaşından sonra ise şans **%10-20**'lere düşer ve yaş ilerledikçe keskin bir şekilde azalır. Bunun temel nedeni, zamanla yumurta sayısının (rezerv) ve genetik kalitesinin kaçınılmaz olarak düşmesidir.
 
 **Bu yazıda:**
 

@@ -1,6 +1,6 @@
 ---
-title: "Tüp Bebek Başarı Oranları ve Etki Eden Faktörler"
-description: "Tüp bebek tedavisinde başarı oranları nedir? Yaşa göre IVF başarısı, başarıyı etkileyen faktörler, laboratuvar teknolojileri ve kümülatif başarı kavramı."
+title: "Tüp Bebek Başarı Oranları ve Etki Eden Etkenler"
+description: "Tüp bebek tedavisinde başarı oranları nedir? Yaşa göre IVF başarısı, başarıyı etkileyen etkenler, laboratuvar teknolojileri ve kümülatif başarı kavramı."
 publishDate: 2026-03-31
 author: "tupbebek.com Yayın Kurulu"
 medicalReviewer: "Doç. Dr. Senai Aksoy"
@@ -43,7 +43,7 @@ references:
 
 ## Yaşa Göre Başarı Oranları
 
-Kadın yaşı, tüp bebek başarısını etkileyen **en kritik faktördür**. Yaşla birlikte hem yumurta sayısı hem de yumurta kalitesi azalır; [kromozom anomali oranı artar](/yas-ve-fertilite).
+Kadın yaşı, tüp bebek başarısını etkileyen **en kritik etkendir**. Yaşla birlikte hem yumurta sayısı hem de yumurta kalitesi azalır; [kromozom anomali oranı artar](/yas-ve-fertilite).
 
 ### Transfer Başına Canlı Doğum Oranları (Genel Ortalamalar)
 
@@ -57,7 +57,7 @@ Aşağıdaki tablo, ESHRE (European Society of Human Reproduction and Embryology
 | **41-42 yaş** | %10-15 | %25-35 |
 | **43 yaş üstü** | %5'in altı | %10-15 |
 
-> **Not:** Bu oranlar uluslararası kayıt sistemlerinden derlenen genel ortalamalardır. Gerçek başarı oranları **merkezden merkeze önemli farklılıklar** gösterebilir — laboratuvar kalitesi, kullanılan protokoller, hasta popülasyonu ve embriyolog deneyimi gibi faktörler sonuçları doğrudan etkiler. Bireysel başarı oranınız ise over rezervi, embriyo kalitesi, rahim sağlığı ve tedavi protokolüne göre bu ortalamalardan farklı olabilir.
+> **Not:** Bu oranlar uluslararası kayıt sistemlerinden derlenen genel ortalamalardır. Gerçek başarı oranları **merkezden merkeze önemli farklılıklar** gösterebilir — laboratuvar kalitesi, kullanılan protokoller, hasta popülasyonu ve embriyolog deneyimi gibi etkenler sonuçları doğrudan etkiler. Bireysel başarı oranınız ise over rezervi, embriyo kalitesi, rahim sağlığı ve tedavi protokolüne göre bu ortalamalardan farklı olabilir.
 
 ### Kümülatif Başarı Neden Önemlidir?
 
@@ -69,7 +69,7 @@ Tek bir transfer denemesinin başarı oranı %40-50 olsa bile, aynı yumurta top
 
 ---
 
-## Başarıyı Etkileyen Faktörler
+## Başarıyı Etkileyen Etkenler
 
 ### 1. Kadın Yaşı ve Over Rezervi
 
@@ -89,7 +89,7 @@ Tek bir transfer denemesinin başarı oranı %40-50 olsa bile, aynı yumurta top
 
 ### 3. Rahim Sağlığı ve Endometriyal Reseptivite
 
-En kaliteli embriyo bile, uygun olmayan bir rahimde tutunamaz. Başarıyı etkileyen rahim faktörleri:
+En kaliteli embriyo bile, uygun olmayan bir rahimde tutunamaz. Başarıyı etkileyen rahim etkenleri:
 
 - **Endometrium kalınlığı:** Transfer günü ideal olarak 7-14 mm arasında olmalıdır
 - **Rahim içi patolojiler:** Polip, miyom veya yapışıklık varsa [histeroskopi ile tedavi](/makaleler/ivf-oncesi-histeroskopi) başarıyı artırabilir
@@ -98,9 +98,9 @@ En kaliteli embriyo bile, uygun olmayan bir rahimde tutunamaz. Başarıyı etkil
 
 ### 4. Sperm Kalitesi
 
-Erkek faktörü, infertilite nedenlerinin yaklaşık %40-50'sinde rol oynar. Sperm parametreleri (sayı, hareketlilik, morfoloji) embriyo kalitesini doğrudan etkiler. Ciddi erkek faktöründe ICSI (intrasitoplazmik sperm enjeksiyonu) başarıyı önemli ölçüde artırır.
+Erkek etkeni, infertilite nedenlerinin yaklaşık %40-50'sinde rol oynar. Sperm parametreleri (sayı, hareketlilik, morfoloji) embriyo kalitesini doğrudan etkiler. Ciddi erkek kaynaklı durumlarda ICSI (intrasitoplazmik sperm enjeksiyonu) başarıyı önemli ölçüde artırır.
 
-### 5. Yaşam Tarzı Faktörleri
+### 5. Yaşam Tarzı Etkenleri
 
 - **Sigara:** Hem yumurta hem sperm kalitesini düşürür; IVF başarısını %30'a kadar azaltabilir
 - **Kilo:** Aşırı kilolu veya düşük kilolu olmak hormonal dengeyi ve yumurta kalitesini etkiler
@@ -109,7 +109,7 @@ Erkek faktörü, infertilite nedenlerinin yaklaşık %40-50'sinde rol oynar. Spe
 
 ---
 
-## Laboratuvar ve Teknolojik Faktörler
+## Laboratuvar ve Teknolojik Etkenler
 
 Başarı oranlarını belirleyen en önemli unsurlardan biri, tedavinin yapıldığı [laboratuvarın kalitesidir](/makaleler/iyi-tup-bebek-merkezi).
 
@@ -146,7 +146,7 @@ Her başarısız deneme yeni bilgiler sağlar. Önceki döngülerden elde edilen
 ## Sık Sorulan Sorular
 
 **İlk denemede başarı oranı nedir?**
-İlk deneme başarı oranı yaşa ve bireysel faktörlere bağlıdır. 35 yaş altında transfer başına %40-50, kümülatif olarak %65-75'e ulaşabilir. Ancak her hasta bireysel olarak değerlendirilmelidir; genel istatistikler kişisel başarı şansını tam olarak yansıtmaz.
+İlk deneme başarı oranı yaşa ve bireysel etkenlere bağlıdır. 35 yaş altında transfer başına %40-50, kümülatif olarak %65-75'e ulaşabilir. Ancak her hasta bireysel olarak değerlendirilmelidir; genel istatistikler kişisel başarı şansını tam olarak yansıtmaz.
 
 **Kaç deneme yapılmalıdır?**
 Kesin bir sınır yoktur; ancak genellikle 3-4 tam siklus (yumurta toplama + tüm transferler) değerlendirilmesi önerilir. Her başarısız denemeden sonra tedavi planı gözden geçirilmeli ve gerekli düzenlemeler yapılmalıdır. Karar doktorunuzla birlikte, kendi tıbbi durumunuza göre verilmelidir.
@@ -164,7 +164,7 @@ Sigarayı bırakmak, sağlıklı kiloya ulaşmak, dengeli beslenmek ve düzenli 
 
 ## Sonuç
 
-Tüp bebek başarı oranları son yıllarda önemli ölçüde artmıştır. Ancak başarı, tek bir faktöre değil birçok değişkenin birlikte optimize edilmesine bağlıdır: kadın yaşı, embriyo kalitesi, rahim sağlığı, laboratuvar kalitesi ve bireyselleştirilmiş tedavi protokolü.
+Tüp bebek başarı oranları son yıllarda önemli ölçüde artmıştır. Ancak başarı, tek bir etkene değil birçok değişkenin birlikte optimize edilmesine bağlıdır: kadın yaşı, embriyo kalitesi, rahim sağlığı, laboratuvar kalitesi ve bireyselleştirilmiş tedavi protokolü.
 
 Başarı oranları hakkında en doğru bilgiyi, **sizin kendi tıbbi durumunuza göre** doktorunuz verebilir. Genel istatistikler yol gösterici olabilir, ancak her tedavi bireyseldir. Önceki deneme sonuçlarınız ve mevcut durumunuz ışığında doktorunuzla birlikte en uygun tedavi planını oluşturmanızı öneririz.
 

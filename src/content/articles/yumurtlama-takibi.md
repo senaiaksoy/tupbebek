@@ -96,7 +96,7 @@ Eczanelerde satılan ev tipi ovülasyon testleri, idrardaki LH (lüteinleştiric
 
 Eskiden kadının sabah uyandığı anda ölçtüğü vücut ısısını (bazal ısı) kaydetmesi ve çizelge oluşturmasıyla ovülasyon takibi yapılırdı. Yumurtlamadan sonra vücut ısısı ortalama 0.3-0.5°C artar. Ancak:
 
-- **Güvenilirliği düşüktür** (Uyku düzensizliği, ateşli hastalık, stres, çevresel etkenler gibi faktörler ölçümleri etkileyebilir).
+- **Güvenilirliği düşüktür** (Uyku düzensizliği, ateşli hastalık, stres, çevresel etkenler gibi etkenler ölçümleri etkileyebilir).
 - **Zahmetlidir** (Her sabah aynı saatte, aynı şartlarda ölçüm gerektirir).
 
 Bu nedenle günümüzde BBT yöntemi terk edilmiş, yerini **ultrason** ve **LH testleri** gibi daha objektif yöntemler almıştır.

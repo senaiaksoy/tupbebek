@@ -1,6 +1,6 @@
 ---
 title: "Tüp Bebek Tedavisinde Başarı İçin Gerçekten Kaç Yumurta Gerekir?"
-description: "Tüp bebek tedavisinde başarı şansını artırmak için kaç yumurta gerekir? Yumurta sayısı, kalite ve yaş faktörleri hakkında tupbebek.com'dan bilimsel açıklama."
+description: "Tüp bebek tedavisinde başarı şansını artırmak için kaç yumurta gerekir? Yumurta sayısı, kalite ve yaş etkenleri hakkında tupbebek.com'dan bilimsel açıklama."
 publishDate: 2025-10-08
 author: "tupbebek.com Yayın Kurulu"
 medicalReviewer: "Yayın Kurulu"
@@ -77,7 +77,7 @@ Kaynak: [ESHRE IVF Stimulation Consensus, 2023](https://www.eshre.eu/Guidelines-
 ## Yumurta Kalitesi mi, Sayısı mı?
 
 Şimdi diyeceksiniz ki: "Madem 15 yumurta ideal, benim ancak 3-4 yumurtam çıkıyorsa hiç umut yok mu?"
-İşte burada **yumurta kalitesi** devreye giriyor. Yumurta sayısı elbette önemli bir faktör, ama **tek başına bir başarı garantisi değil**.
+İşte burada **yumurta kalitesi** devreye giriyor. Yumurta sayısı elbette önemli bir etken, ama **tek başına bir başarı garantisi değil**.
 Önemli olan, toplanan yumurtaların sağlıklı, olgun ve döllenmeye uygun olması.
 İnce bir benzetme yapacak olursak: Bir sepet dolusu çürük yumurtadan size fayda gelmez, ama içlerinde bir tane bile sağlam ve "altın" yumurta varsa, işte bütün mesele o!
 Gerçekten de, tüp bebek tedavisinde sayısız kalitesiz yumurtadan ziyade, **kaliteli yumurtalar çok daha önemlidir**.

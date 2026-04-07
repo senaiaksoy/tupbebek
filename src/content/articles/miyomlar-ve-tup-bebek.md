@@ -92,7 +92,7 @@ Miyomlarınız varsa ve IVF görüyorsanız, başarı şansınızı artırmak i�
 
 ## Karar Verme Süreci
 
-Sizin için en iyi tedavi seçeneği, miyomlarınızın büyüklüğü, konumu ve sayısı gibi çeşitli faktörlere bağlı olacaktır. Dr. Aksoy gibi bir kısırlık uzmanı, ultrason, salin infüzyon sonohisterografi (SIS) ve manyetik rezonans görüntüleme (MRI) gibi gelişmiş görüntüleme tekniklerini kullanarak miyomlarınızı değerlendirecek ve en uygun tedavi planını önerecektir.
+Sizin için en iyi tedavi seçeneği, miyomlarınızın büyüklüğü, konumu ve sayısı gibi çeşitli etkenlere bağlı olacaktır. Dr. Aksoy gibi bir kısırlık uzmanı, ultrason, salin infüzyon sonohisterografi (SIS) ve manyetik rezonans görüntüleme (MRI) gibi gelişmiş görüntüleme tekniklerini kullanarak miyomlarınızı değerlendirecek ve en uygun tedavi planını önerecektir.
 
 Dr. Aksoy, "Her hasta benzersizdir," diyor. "Kapsamlı bir değerlendirme ve kişiselleştirilmiş bir yaklaşım, en iyi sonucu elde etmenin anahtarıdır."
 

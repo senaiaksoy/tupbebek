@@ -186,7 +186,7 @@ Yıllarca "endometriozis yumurta kalitesini bozar" dogmasına inandık. Ancak bi
 
 **Klinik Not:** Buradaki asıl mesele, yumurtanın kendisinden ziyade, içinde bulunduğu pelvik bölgenin adeta zehirli bir ortam olması. İşte çikolata kistlerinin (içi o malum paslı kanla dolu olanlar) yumurtalıklara neden bu denli kötü geldiği de böyle açıklanabilir. Önce Tüp Bebek yaklaşımının ve SVIDOE denemesinin başarısının sırrı da burada saklı: Tüp bebek, yumurtayı bu zehirli havuzdan daha fazla zarar görmeden kapıp kurtarma operasyonu gibi düşünülebilir.
 
-### Başarıyı Yarı Yarıya Düşüren Faktör: Vajinal Mikrobiyota
+### Başarıyı Yarı Yarıya Düşüren Etken: Vajinal Mikrobiyota
 
 Endometriozisin bir kader değil, doğru strateji ile yönetilebilir bir durum olduğunu lütfen unutmayın. Endometrioziyi artık sadece pelvik bir hastalık değil, *sistemik* (tüm vücudu etkileyen) metabolik ve iltihaplı bir hastalık olarak görüyoruz. 2025'teki araştırmalar, bu sistemik iltihabın ana motorlarından birinin **[mikrobiyota](https://pubmed.ncbi.nlm.nih.gov/34718567/)** (bağırsak ve vajinal bakteri dengesi) olduğunu göstermektedir. Mikrobiyotadaki bozulma (disbiyoz), "iki cepheli bir savaş" yürütür:
 
@@ -201,7 +201,7 @@ Rakamlar şaşırtıcı derecede nettir:
 - Mikrobiyotası **Lactobacillus-Baskın (LD)** (İyi Bakteriler) olan kadınlarda IVF sonrası klinik gebelik oranı: **%48.5**
 - Mikrobiyotası **Lactobacillus-Baskın-Olmayan (NLD)** (Kötü Bakteriler, örn. *Gardnerella*) olan kadınlarda IVF sonrası klinik gebelik oranı: **%21.2**.
 
-**Klinik Çıkarım:** Vajinal dengesizlik (NLD), tüp bebek şansını *yarı yarıya* azaltır. Bu, pahalı ve duygusal olarak zorlu bir tüp bebek tedavisine başlamadan önce mutlaka taranması ve düzeltilmesi (gerekirse antibiyotik ve/veya probiyotik tedavisi ile) gereken, *değiştirilebilir* bir faktördür.
+**Klinik Çıkarım:** Vajinal dengesizlik (NLD), tüp bebek şansını *yarı yarıya* azaltır. Bu, pahalı ve duygusal olarak zorlu bir tüp bebek tedavisine başlamadan önce mutlaka taranması ve düzeltilmesi (gerekirse antibiyotik ve/veya probiyotik tedavisi ile) gereken, *değiştirilebilir* bir etkendir.
 
 ### Ufuktaki Yeni Tedaviler: Gebe Kalmayı Engellemeyen İlaçlar
 

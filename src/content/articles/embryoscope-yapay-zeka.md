@@ -302,5 +302,5 @@ Bizim görevimiz, en ileri bilimsel araçlarla şansınızı artırmak; sizin ih
 
 **Yayın Tarihi:** 20 Ocak 2026
 
-*Bu makale Doç. tupbebek.com yayın kurulu tarafından, 2025 yılına ait güncel bilimsel raporlar ve 30+ yıllık klinik tecrübe ışığında bilgilendirme amaçlı yazılmıştır. Her hasta benzersizdir. Tüp bebek sonuçları birçok faktöre göre değişiklik gösterir. Kişisel durumunuz için daima bir uzmana danışın.*
+*Bu makale Doç. tupbebek.com yayın kurulu tarafından, 2025 yılına ait güncel bilimsel raporlar ve 30+ yıllık klinik tecrübe ışığında bilgilendirme amaçlı yazılmıştır. Her hasta benzersizdir. Tüp bebek sonuçları birçok etkene göre değişiklik gösterir. Kişisel durumunuz için daima bir uzmana danışın.*
 

@@ -1,6 +1,6 @@
 ---
 title: "Açıklanamayan İnfertilite: Nedenleri ve Tedavisi"
-description: "Açıklanamayan (idiyopatik) infertilite tanısı, nedenleri, gizli faktörler ve tedavi seçenekleri."
+description: "Açıklanamayan (idiyopatik) infertilite tanısı, nedenleri, gizli etkenler ve tedavi seçenekleri."
 publishDate: 2024-09-27
 author: "tupbebek.com Yayın Kurulu"
 authorTitle: "Editoryal Ekip"
@@ -30,7 +30,7 @@ references:
     doi: "10.1016/j.fertnstert.2020.03.002"
 ---
 
-Açıklanamayan infertilite, standart tanı testlerinde herhangi bir belirgin neden bulunamamasına rağmen gebelik oluşmamasıdır. İnfertilite vakalarının **%10-15**'i bu kategoriye girer. Ancak bu, problemin olmadığı anlamına gelmez; gözardı edilen veya saptanmayan faktörler vardır.
+Açıklanamayan infertilite, standart tanı testlerinde herhangi bir belirgin neden bulunamamasına rağmen gebelik oluşmamasıdır. İnfertilite vakalarının **%10-15**'i bu kategoriye girer. Ancak bu, problemin olmadığı anlamına gelmez; gözardı edilen veya saptanmayan etkenler vardır.
 
 ---
 
@@ -68,7 +68,7 @@ Over stimülasyonu ve yapay inseminasyon (IUI). Başarı oranı döngü başına
 
 ### IVF/ICSI
 
-Gizli faktörleri ortaya çıkarır. Yumurta kalitesi, embriyo gelişimi ve implantasyon değerlendirilir. En etkili tedavi seçeneğidir.
+Gizli etkenleri ortaya çıkarır. Yumurta kalitesi, embriyo gelişimi ve implantasyon değerlendirilir. En etkili tedavi seçeneğidir.
 
 ### Endometriozis Cerrahisi
 

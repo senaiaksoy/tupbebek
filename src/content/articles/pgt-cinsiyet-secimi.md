@@ -45,7 +45,7 @@ Türkiye'de cinsiyet seçimi, **T.C. Sağlık Bakanlığı ÜYTE (Üremeye Yard�
 
 Bazı genetik hastalıklar yalnızca belirli bir cinsiyeti etkiler. Bu hastalıklara **"X'e bağlı hastalıklar"** denir ve genellikle erkek çocuklarda ortaya çıkar. Örnekler:
 
-- **Hemofili (Kan durdurulamama hastalığı):** Kanın pıhtılaşmasını sağlayan faktörlerin eksikliği
+- **Hemofili (Kan durdurulamama hastalığı):** Kanın pıhtılaşmasını sağlayan etkenlerin eksikliği
 - **Duchenne Kas Distrofisi (DMD):** Kasların ilerleyici şekilde güçsüzleşmesi
 - **Fragile X Sendromu:** Zihinsel gelişim geriliğine yol açabilen genetik bozukluk
 

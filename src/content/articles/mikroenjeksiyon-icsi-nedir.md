@@ -122,7 +122,7 @@ Yumurta toplama işlemi, hafif sedasyon veya lokal anesteziyle yapıldığı iç
 **4. Mikroenjeksiyonla döllenen embriyonun sağlığı, doğal döllenme yoluyla gelişen embriyolardan farklı mı?**
 Genel olarak, ICSI ile elde edilen bebeklerin sağlık durumu doğal yollarla doğanlarla benzerdir. Ancak her gebelikte olduğu gibi burada da düzenli doktor takibi ve gerekli testlerin yapılması önemlidir.
 
-**5. İlerleyen yaş faktörü ICSI başarısını etkiler mi?**
+**5. İlerleyen yaş etkeni ICSI başarısını etkiler mi?**
 Kadının yaşı ve yumurtalık rezervi, gebelik şansını belirleyen ana etmenlerden biridir. Erkek yaşı da önemlidir ancak kadın yaşı kadar belirleyici değildir. Yine de şiddetli erkek kısırlığı durumunda dahi ICSI, diğer yöntemlere göre daha avantajlıdır.
 
 ---

@@ -134,13 +134,13 @@ Tüp bebek tedavisi, doğal yollarla gebelik elde edemeyen çiftler için etkili
 - **36-40 Yaş Arası Kadınlar:** Başarı oranları %30-40 aralığındadır.
 - **41 Yaş ve Üzeri Kadınlar:** Başarı oranları %10-20'ye kadar düşebilir.
 
-### Başarıyı Etkileyen Faktörler
+### Başarıyı Etkileyen Etkenler
 
 - **Yumurtalık Rezervi ve Kalitesi**
 - **Sperm Kalitesi**
 - **Embriyo Kalitesi**
 - **Rahim İçinin Uygunluğu**
-- **Yaşam Tarzı Faktörleri:** Sigara kullanımı, alkol tüketimi, stres, beslenme alışkanlıkları.
+- **Yaşam Tarzı Etkenleri:** Sigara kullanımı, alkol tüketimi, stres, beslenme alışkanlıkları.
 
 ---
 

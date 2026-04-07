@@ -34,7 +34,7 @@ references:
 **Soru:** *"Merhaba, erkek kısırlığı konusunda çiftler için besin takviyelerinin önemi nedir?"*
 
 **Uzman Görüşü:**
-Merhaba! Erkek kısırlığı, çiftlerin bebek sahibi olma yolculuğunda önemli bir engel oluşturabiliyor. Birçok faktör—hormonal dengesizlikler, genetik yatkınlık, yaşam tarzı ve çevresel etkiler—sperm kalitesini olumsuz etkileyebilir. Besin takviyeleri, özellikle antioksidan ve belirli mineral/vitamin gruplarını içeren ürünler, sperm sağlığını destekleyici bir rol oynayabilir. Ancak her çiftin durumu farklı olduğu için bu takviyelerin etkinliği de kişiden kişiye değişebilir.
+Merhaba! Erkek kısırlığı, çiftlerin bebek sahibi olma yolculuğunda önemli bir engel oluşturabiliyor. Birçok etken—hormonal dengesizlikler, genetik yatkınlık, yaşam tarzı ve çevresel etkiler—sperm kalitesini olumsuz etkileyebilir. Besin takviyeleri, özellikle antioksidan ve belirli mineral/vitamin gruplarını içeren ürünler, sperm sağlığını destekleyici bir rol oynayabilir. Ancak her çiftin durumu farklı olduğu için bu takviyelerin etkinliği de kişiden kişiye değişebilir.
 
 ---
 
@@ -100,7 +100,7 @@ Takviyeleri kullanırken dikkat edilmesi gereken bir diğer konu da **Minimal Et
 **Soru:** *"Hastalarınızdan ne gibi geri bildirimler alıyorsunuz?"*
 
 **Uzman Görüşü:**
-Bazı hastalar ashwagandha, L-carnitine veya omega-3 takviyeleriyle birlikte önemli ölçüde iyileşme bildirdiler. Sperm hareketliliği, sayısı ve hacminde yükselmeler gördüğümüz vakalar oldu. Ancak herkeste aynı sonucu beklemek doğru değil. Bireysel farklılıklar, genel sağlık durumu ve yaşam tarzı gibi faktörler çok etkili.
+Bazı hastalar ashwagandha, L-carnitine veya omega-3 takviyeleriyle birlikte önemli ölçüde iyileşme bildirdiler. Sperm hareketliliği, sayısı ve hacminde yükselmeler gördüğümüz vakalar oldu. Ancak herkeste aynı sonucu beklemek doğru değil. Bireysel farklılıklar, genel sağlık durumu ve yaşam tarzı gibi etkenler çok etkili.
 
 ---
 

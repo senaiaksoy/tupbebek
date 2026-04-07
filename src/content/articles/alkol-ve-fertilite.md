@@ -53,7 +53,7 @@ Alkol sadece kadınları değil, erkek üreme sağlığını da doğrudan etkile
 ## Öneriler
 
 1. **Gözden Geçirin:** Haftalık alkol tüketiminizi not edin ve miktarı azaltın.
-2. **Profesyonel Destek:** Üreme sağlığı uzmanınızla yaşam tarzı faktörlerinizi detaylıca görüşün.
+2. **Profesyonel Destek:** Üreme sağlığı uzmanınızla yaşam tarzı etkenlerinizi detaylıca görüşün.
 3. **Zamanlama:** Hamilelik planlamasından en az 3 ay önce alkolü bırakın.
 4. **Alternatifler:** Sosyal ortamlarda alkolsüz kokteyller veya bitki çayları gibi sağlıklı alternatifleri tercih edin.
 

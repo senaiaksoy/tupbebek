@@ -55,8 +55,8 @@ Polikistik Over Sendromu (PCOS), üreme çağındaki kadınlarda en sık görül
 
 ### Adet Düzensizliği ve PCOS’un Nedenleri
 
-Kesin nedenler tam olarak bilinmemekle birlikte öne çıkan faktörler şunlardır:
-- **Genetik Faktörler:** Aile öyküsü önemli bir risk faktörüdür.
+Kesin nedenler tam olarak bilinmemekle birlikte öne çıkan etkenler şunlardır:
+- **Genetik Etkenler:** Aile öyküsü önemli bir risk etkenidir.
 - **Hormonal Dengesizlikler:** Androjen seviyesinde artış.
 - **İnsülin Direnci:** Vücudun insülini etkili kullanamaması.
 - **İnflamasyon:** Vücutta kronik düşük düzeyli inflamasyon.
