@@ -18,7 +18,8 @@
       "Bash(convert \"C:/Users/fatboy/Downloads/magnific-W9oRgbxzZPqFjurJgWKm-ChatGPT Image 7 Nis 2026 04_10_31.jpeg\" -resize \"512x512>\" -quality 85 \"D:/A-klasör/tupbebek/public/images/library/istatistik/basari_oranlari_hero.webp\")",
       "Bash(convert:*)",
       "Bash(magick:*)",
-      "Bash(node:*)"
+      "Bash(node:*)",
+      "Bash(curl -s http://localhost:4326/)"
     ]
   }
 }
