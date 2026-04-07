@@ -50,6 +50,24 @@ import DisclaimerBar from '../components/DisclaimerBar.astro';
             ]} />
         </section>
 
+        <!-- Featured Master Guide -->
+        <section class="max-w-5xl mx-auto px-4 md:px-6 lg:px-8 mb-24">
+            <div class="bg-primary-900 rounded-3xl p-8 md:p-12 text-white relative overflow-hidden group">
+                <div class="relative z-10 max-w-2xl">
+                    <span class="inline-block px-3 py-1 bg-white/20 rounded-full text-[10px] font-bold uppercase tracking-widest mb-6">Öne Çıkan Rehber</span>
+                    <h2 class="font-headline text-3xl md:text-4xl mb-6 leading-tight">Tüp Bebek Yolculuğunda Psikolojik Dayanıklılık: <span class="text-primary-300">Stresle Başa Çıkma Master Rehberi</span></h2>
+                    <p class="text-white/70 mb-8 max-w-lg">Doç. Dr. Senai Aksoy'un 30 yıllık klinik tecrübesiyle hazırlanan, tedavi sürecinde stres yönetimi ve duygusal korunma için bilimsel temelli stratejiler.</p>
+                    <a href="/makaleler/duygusal-dayaniklik-rehberi" class="inline-flex items-center gap-2 px-8 py-4 bg-primary-500 hover:bg-primary-600 text-white rounded-xl font-bold transition-all transform hover:scale-105 active:scale-95 shadow-lg shadow-primary-950/20">
+                        Hemen Okuyun
+                        <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+                    </a>
+                </div>
+                <!-- Visual highlight -->
+                <div class="absolute right-0 top-0 bottom-0 w-1/3 bg-gradient-to-l from-white/5 to-transparent hidden lg:block"></div>
+                <span class="absolute -right-16 -bottom-16 material-symbols-outlined text-[240px] text-white/5 rotate-12 group-hover:rotate-0 transition-transform duration-700">psychology</span>
+            </div>
+        </section>
+
         <!-- Quick-Nav -->
         <nav id="quick-nav" class="sticky top-20 z-40 bg-white/90 backdrop-blur-sm border-b border-gray-100 shadow-sm mb-16">
             <div class="max-w-5xl mx-auto px-4 md:px-6 lg:px-8 overflow-x-auto whitespace-nowrap">
@@ -307,11 +325,11 @@ import DisclaimerBar from '../components/DisclaimerBar.astro';
 
         <!-- Related Pages -->
         <RelatedContent items={[
+          { href: '/makaleler/duygusal-dayaniklik-rehberi', icon: 'auto_stories', title: 'Psikolojik Dayanıklılık Rehberi', description: 'Stres yönetimi master rehberi' },
           { href: '/psikolojik-destek', icon: 'psychology', title: 'Psikolojik Destek', description: 'Terapi ve profesyonel kaynaklar' },
           { href: '/rehberler', icon: 'assignment', title: 'Tedavi Rehberleri', description: 'Her aşama adım adım açıklanmıştır' },
           { href: '/sss', icon: 'help', title: 'Sık Sorulan Sorular', description: 'Sorularınızın yanıtları' },
           { href: '/kadin-infertilitesi', icon: 'woman', title: 'Kadın Faktörleri', description: 'Kadın infertilitesinin nedenleri' },
-          { href: '/erkek-infertilitesi', icon: 'man', title: 'Erkek Faktörleri', description: 'Erkek infertilitesinin nedenleri' },
           { href: '/beslenme-yasam', icon: 'nutrition', title: 'Beslenme ve Yaşam', description: 'Yaşam tarzı optimizasyonu' }
         ]} />
 
