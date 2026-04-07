@@ -136,25 +136,27 @@ const {
   });
 
   // Click outside closes dropdown
-  document.addEventListener('click', (e) => {
-    const wrapper = document.getElementById('hero-search-wrapper');
+  document.addEventListener('click', function(e) {
+    var wrapper = document.getElementById('hero-search-wrapper');
     if (wrapper && !wrapper.contains(e.target)) {
       hideDropdown();
     }
   });
 
   // Search on input
-  input?.addEventListener('input', (e) => {
-    const query = e.target.value.trim();
-    clearTimeout(searchTimeout);
-    searchTimeout = setTimeout(() => {
-      if (query.length >= 2) {
-        performSearch(query);
-      } else {
-        resetDropdown();
-      }
-    }, 150);
-  });
+  if (input) {
+    input.addEventListener('input', function(e) {
+      var query = e.target.value.trim();
+      clearTimeout(searchTimeout);
+      searchTimeout = setTimeout(function() {
+        if (query.length >= 2) {
+          performSearch(query);
+        } else {
+          resetDropdown();
+        }
+      }, 150);
+    });
+  }
 
   // Enter key: navigate to search results page
   input?.addEventListener('keydown', (e) => {
@@ -215,10 +217,10 @@ const {
     initialState.classList.add('hidden');
     noResults.classList.add('hidden');
 
-    resultsList.innerHTML = limited.map((result, i) => {
-      const category = result.category || result.type || 'Makale';
-      const style = getCategoryStyle(category);
-      const hasImage = !!result.image;
+    resultsList.innerHTML = limited.map(function(result, i) {
+      var category = result.category || result.type || 'Makale';
+      var style = getCategoryStyle(category);
+      var hasImage = !!result.image;
 
       return `
         <li class="search-result-item" style="animation-delay: ${i * 0.04}s">

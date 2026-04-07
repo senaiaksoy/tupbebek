@@ -125,7 +125,9 @@ const sanitizedImage = sanitizeImage(entry.data.image);
             <div class="lg:grid lg:grid-cols-[minmax(0,_3fr)_minmax(220px,_1fr)] lg:gap-12 xl:gap-16">
 
                 <!-- Main Content Column -->
-                <article class="max-w-3xl" data-pagefind-body data-pagefind-meta={`image:${sanitizedImage}, category:${entry.data.category || ''}`}>
+                <article class="max-w-3xl" data-pagefind-body>
+                    <div class="hidden" data-pagefind-meta={`image:${sanitizedImage}`}></div>
+                    <div class="hidden" data-pagefind-meta={`category:${entry.data.category || ''}`}></div>
                     <!-- Article Content — prose -->
                     <div class="prose-medical">
                         <Content />
