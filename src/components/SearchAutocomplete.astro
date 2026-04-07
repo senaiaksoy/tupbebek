@@ -75,7 +75,7 @@ const fallbackData = await getSearchData();
         <div id="search-initial"
              class="p-12 text-center text-gray-400">
            <div class="w-20 h-20 bg-primary-50 rounded-full flex items-center justify-center mx-auto mb-6">
-              <span class="material-symbols-outlined text-primary-300 text-5xl">manage_search</span>
+              <span class="material-symbols-outlined text-primary-300 text-5xl">search</span>
            </div>
           <p class="font-extrabold text-gray-900 mb-2">Nasıl yardımcı olabiliriz?</p>
           <p class="text-sm max-w-xs mx-auto">Tanı süreçleri, tedavi protokolleri veya makaleler arasında arama yapın.</p>
@@ -300,7 +300,11 @@ const fallbackData = await getSearchData();
             const excerpt = result.excerpt || '';
             const url = result.url || '#';
             const category = result.filters?.category?.[0] || result.meta?.category || '';
-            const image = result.meta?.image || '';
+            
+            // Critical fix: Sanitize image URL from Pagefind metadata (removes stray category tags)
+            const rawImage = result.meta?.image || '';
+            const image = rawImage.split(',')[0].trim();
+            
             const style = getCategoryStyle(category);
 
             return `

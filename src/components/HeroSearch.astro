@@ -50,7 +50,7 @@ const {
   >
     <!-- Initial empty -->
     <div id="hero-search-initial" class="p-8 text-center text-gray-400">
-      <span class="material-symbols-outlined text-4xl block mb-2 opacity-30">manage_search</span>
+      <span class="material-symbols-outlined text-4xl block mb-2 opacity-30">search</span>
       <p class="text-xs">Aramaya başlayın...</p>
     </div>
 
@@ -138,7 +138,7 @@ const {
   // Click outside closes dropdown
   document.addEventListener('click', (e) => {
     const wrapper = document.getElementById('hero-search-wrapper');
-    if (wrapper && !wrapper.contains(e.target as Node)) {
+    if (wrapper && !wrapper.contains(e.target)) {
       hideDropdown();
     }
   });
@@ -175,7 +175,7 @@ const {
       const firstItem = resultsList.querySelector('a');
       if (firstItem) {
         e.preventDefault();
-        (firstItem as HTMLElement).focus();
+        firstItem.focus();
       }
     }
   });

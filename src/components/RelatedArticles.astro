@@ -14,7 +14,7 @@ interface Props {
 
 const { currentSlug, category, limit = 3, variant = 'default' } = Astro.props;
 
-const { getPublishedArticles } = await import('../utils/articles');
+const { getPublishedArticles, sanitizeImage } = await import('../utils/articles');
 const allArticles = await getPublishedArticles();
 const related = allArticles
     .filter(a => a.slug !== currentSlug && a.data.category === category)
@@ -29,7 +29,7 @@ const related = allArticles
                 {article.data.image && (
                     <div class="w-16 h-16 rounded-lg overflow-hidden shrink-0">
                         <img
-                            src={article.data.image}
+                            src={sanitizeImage(article.data.image)}
                             alt={article.data.imageAlt || article.data.title}
                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                             width="64" height="64" loading="lazy"
@@ -56,7 +56,7 @@ const related = allArticles
                     {article.data.image && (
                         <div class="aspect-video overflow-hidden">
                             <img
-                                src={article.data.image}
+                                src={sanitizeImage(article.data.image)}
                                 alt={article.data.imageAlt || article.data.title}
                                 class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500"
                                 width="400" height="225" loading="lazy"

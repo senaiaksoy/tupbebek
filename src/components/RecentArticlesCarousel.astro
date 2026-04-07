@@ -3,7 +3,7 @@
  * Recent Articles — Healthline-inspired clean card grid
  * No carousel, clean 3-column grid with subtle styling
  */
-import { getPublishedArticles } from '../utils/articles';
+import { getPublishedArticles, sanitizeImage } from '../utils/articles';
 
 const articles = (await getPublishedArticles())
     .sort((a, b) => {
@@ -35,7 +35,7 @@ const articles = (await getPublishedArticles())
                     <!-- Image -->
                     <a href={`/makaleler/${article.slug}`} class="block aspect-[16/10] overflow-hidden">
                         <img
-                            src={article.data.image}
+                            src={sanitizeImage(article.data.image)}
                             alt={article.data.imageAlt || article.data.title}
                             class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500"
                             loading="lazy"
@@ -69,6 +69,5 @@ const articles = (await getPublishedArticles())
                 </article>
             ))}
         </div>
-        )}
     </div>
 </section>

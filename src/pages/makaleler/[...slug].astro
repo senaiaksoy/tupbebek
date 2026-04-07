@@ -1,5 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
+import { sanitizeImage } from '../../utils/articles';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
@@ -52,9 +53,10 @@ const reviewDateStr = entry.data.reviewDate
     : null;
 const articleUrl = `https://tupbebek.com/makaleler/${entry.slug}`;
 const referenceCount = entry.data.references?.length || 0;
+const sanitizedImage = sanitizeImage(entry.data.image);
 ---
 
-<BaseLayout title={`${entry.data.title} | tupbebek.com`} description={entry.data.description} image={entry.data.image}>
+<BaseLayout title={`${entry.data.title} | tupbebek.com`} description={entry.data.description} image={sanitizedImage}>
     <Header />
     <ReadingProgress />
 
@@ -99,7 +101,7 @@ const referenceCount = entry.data.references?.length || 0;
             {entry.data.image && (
                 <div class="aspect-video rounded-xl overflow-hidden mb-10 border border-gray-100">
                     <img
-                        src={entry.data.image}
+                        src={sanitizedImage}
                         alt={entry.data.imageAlt || entry.data.title}
                         class="w-full h-full object-cover"
                         width="896" height="504"
@@ -123,7 +125,7 @@ const referenceCount = entry.data.references?.length || 0;
             <div class="lg:grid lg:grid-cols-[minmax(0,_3fr)_minmax(220px,_1fr)] lg:gap-12 xl:gap-16">
 
                 <!-- Main Content Column -->
-                <article class="max-w-3xl" data-pagefind-body data-pagefind-meta={`image:${entry.data.image || ''}, category:${entry.data.category || ''}`}>
+                <article class="max-w-3xl" data-pagefind-body data-pagefind-meta={`image:${sanitizedImage}, category:${entry.data.category || ''}`}>
                     <!-- Article Content — prose -->
                     <div class="prose-medical">
                         <Content />

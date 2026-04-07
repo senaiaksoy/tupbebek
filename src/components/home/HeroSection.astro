@@ -4,7 +4,7 @@
  * Featured article with large image, category badge, bold title, excerpt
  * Clean, content-focused layout with generous whitespace
  */
-import { getPublishedArticles } from '../../utils/articles';
+import { getPublishedArticles, sanitizeImage } from '../../utils/articles';
 import HeroSearch from '../HeroSearch.astro';
 import { getSearchData } from '../../utils/searchData';
 const searchData = await getSearchData();
@@ -34,7 +34,7 @@ const formattedDate = featuredDate ? new Date(featuredDate).toLocaleDateString('
           <!-- Image -->
           <div class="relative rounded-2xl overflow-hidden aspect-[16/10] lg:aspect-[4/3]">
             <img
-              src={featured.data.image}
+              src={sanitizeImage(featured.data.image)}
               alt={featured.data.imageAlt || featured.data.title}
               class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-700"
               width="720"

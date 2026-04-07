@@ -19,3 +19,11 @@ export async function getPublishedArticles() {
 export async function getAllArticles() {
   return getCollection('articles');
 }
+/**
+ * Makale frontmatter'ındaki image alanından (varsa kategori bilgisini ayıklayıp) 
+ * temiz URL'yi döndürür.
+ */
+export function sanitizeImage(imageStr: string | undefined): string {
+  if (!imageStr) return '';
+  return imageStr.split(',')[0].trim();
+}
