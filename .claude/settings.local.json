@@ -12,7 +12,13 @@
       "Bash(\"D:\\\\Microsoft VS Code\\\\code.exe\" --reuse-window test-auto.txt)",
       "Bash(\"D:\\\\Microsoft VS Code\\\\bin\\\\code.exe\" test-auto.txt)",
       "WebFetch(domain:www.healthline.com)",
-      "WebFetch(domain:dashboard.cloudflare.com)"
+      "WebFetch(domain:dashboard.cloudflare.com)",
+      "Bash(magick --version)",
+      "Bash(mkdir -p \"D:/A-klasör/tupbebek/public/images/library/istatistik\")",
+      "Bash(convert \"C:/Users/fatboy/Downloads/magnific-W9oRgbxzZPqFjurJgWKm-ChatGPT Image 7 Nis 2026 04_10_31.jpeg\" -resize \"512x512>\" -quality 85 \"D:/A-klasör/tupbebek/public/images/library/istatistik/basari_oranlari_hero.webp\")",
+      "Bash(convert:*)",
+      "Bash(magick:*)",
+      "Bash(node:*)"
     ]
   }
 }
