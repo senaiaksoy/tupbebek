@@ -3,11 +3,9 @@ import MegaMenuItem from './header/MegaMenuItem.astro';
 import MobileAccordion from './MobileAccordion.astro';
 import { navigationMenus } from '../data/navigation';
 
-interface Props {
-  hideSearch?: boolean;
-}
+interface Props {}
 
-const { hideSearch = false } = Astro.props;
+const {} = Astro.props;
 
 // Transform menu data into accordion format
 const accordionItems = navigationMenus.map((menu) => ({
@@ -37,11 +35,9 @@ const accordionItems = navigationMenus.map((menu) => ({
             <!-- Right Actions -->
             <div class="flex items-center gap-3 ml-auto">
                 <!-- Desktop Search Icon -->
-                {!hideSearch && (
-                    <button id="desktop-search-btn" class="hidden md:flex min-w-[44px] min-h-[44px] items-center justify-center rounded-lg hover:bg-gray-100 transition-colors group" aria-label="Ara">
-                        <span class="material-symbols-outlined text-gray-600 group-hover:text-primary-600">search</span>
-                    </button>
-                )}
+                <button id="desktop-search-btn" class="hidden md:flex min-w-[44px] min-h-[44px] items-center justify-center rounded-lg hover:bg-gray-100 transition-colors group" aria-label="Ara">
+                    <span class="material-symbols-outlined text-gray-600 group-hover:text-primary-600">search</span>
+                </button>
 
                 <!-- Mobile Menu Toggle -->
                 <button id="mobile-menu-toggle" class="lg:hidden min-w-[44px] min-h-[44px] flex items-center justify-center rounded-lg hover:bg-gray-100 transition-colors group" aria-label="Menüyü aç" aria-expanded="false" aria-controls="mobile-menu">
@@ -82,12 +78,10 @@ const accordionItems = navigationMenus.map((menu) => ({
             <span class="material-symbols-outlined">home</span>
             <span class="text-[10px] font-bold uppercase tracking-tighter">Ana Sayfa</span>
         </a>
-        {!hideSearch && (
-            <button id="mobile-search-trigger" class="flex flex-col items-center justify-center gap-1 min-w-[44px] min-h-[44px] text-gray-400 hover:text-primary-600 transition-colors" aria-label="Ara">
-                <span class="material-symbols-outlined">search</span>
-                <span class="text-[10px] font-bold uppercase tracking-tighter">Ara</span>
-            </button>
-        )}
+        <button id="mobile-search-trigger" class="flex flex-col items-center justify-center gap-1 min-w-[44px] min-h-[44px] text-gray-400 hover:text-primary-600 transition-colors" aria-label="Ara">
+            <span class="material-symbols-outlined">search</span>
+            <span class="text-[10px] font-bold uppercase tracking-tighter">Ara</span>
+        </button>
         <button class="flex flex-col items-center justify-center gap-1 min-w-[44px] min-h-[44px] text-gray-400 hover:text-primary-600 transition-colors" aria-label="Menü">
             <span class="material-symbols-outlined">menu</span>
             <span class="text-[10px] font-bold uppercase tracking-tighter">Menü</span>
