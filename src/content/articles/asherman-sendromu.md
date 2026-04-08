@@ -8,7 +8,7 @@ medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Tıbbi Danışma Kurulu"
 reviewDate: 2026-04-06
 category: "Kadın Sağlığı"
-image: "/images/articles/asherman-sendromu.webp"
+image: "/images/makaleler/asherman-sendromu.webp"
 imageAlt: "asherman sendromu rahim içi yapışıklık illüstrasyonu"
 references:
   - title: "Asherman syndrome — one century later"

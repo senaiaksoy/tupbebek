@@ -8,7 +8,7 @@ medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Tıbbi Danışma Kurulu"
 reviewDate: 2026-04-06
 category: "Yaşam Tarzı"
-image: "/images/articles/alkol-ve-fertilite.webp"
+image: "/images/makaleler/alkol-ve-fertilite.webp"
 imageAlt: "alkol ve fertilite kısırlık ilişkisi illüstrasyonu"
 references:
   - title: "Drinking alcohol is associated with variation in the risk of late fetal death among women: a prospective cohort study"

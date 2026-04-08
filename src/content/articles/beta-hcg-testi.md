@@ -8,7 +8,7 @@ medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Tıbbi Danışma Kurulu"
 reviewDate: 2026-04-06
 category: "Tüp Bebek"
-image: "/images/articles/beta-hcg-testi.webp"
+image: "/images/makaleler/beta-hcg-testi.webp"
 imageAlt: "kan tahlili raporu ve beta-hcg hamilelik testi sonuçları"
 references:
   - title: "Reference ranges and determinants of total hCG levels during pregnancy: the Generation R Study"

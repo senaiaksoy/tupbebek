@@ -59,9 +59,9 @@ videoTitle: "Endometriozis ve Kısırlık: 2025'in Yeni Tedavi Stratejileri"
 
 ## Hoş Geldiniz – Endometriozisle Yaşamı Anlamak
 
-Endometriozis, rahmin iç yüzeyine ait dokuların karın boşluğu ve diğer organlarda tutunmasıyla ortaya çıkan kronik ve **östrojene bağımlı** bir hastalıktır. Dünya çapında milyonlarca kadının gündelik yaşamını ve anne olma hayallerini etkiler; bazı tahminler [**tüm kadınların %3–5'inde**](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12414060/) ve **kısırlık yaşayan çiftlerin %40'ında** endometriozis saptandığını bildiriyor.
+Endometriozis, rahmin iç yüzeyine ait dokuların karın boşluğu ve diğer organlarda tutunmasıyla ortaya çıkan kronik ve **östrojene bağımlı** bir hastalıktır. Dünya çapında milyonlarca kadının gündelik yaşamını ve anne olma hayallerini etkiler; bazı tahminler [**tüm kadınların %3–5'inde**](https://www.ncbi.nlm.nih.gov/pmc/makaleler/PMC12414060/) ve **kısırlık yaşayan çiftlerin %40'ında** endometriozis saptandığını bildiriyor.
 
-Bu hastalık, yumurtalıklar üzerinde **çikolata kistleri** oluşturabilir, [kronik inflamasyonun](https://ovarianresearch.biomedcentral.com/articles/10.1186/s13048-023-01095-4) etkileriyle ve bağışıklık düzensizlikleri nedeniyle sperm‑yumurta etkileşimini bozarak gebeliği zorlaştırır.
+Bu hastalık, yumurtalıklar üzerinde **çikolata kistleri** oluşturabilir, [kronik inflamasyonun](https://ovarianresearch.biomedcentral.com/makaleler/10.1186/s13048-023-01095-4) etkileriyle ve bağışıklık düzensizlikleri nedeniyle sperm‑yumurta etkileşimini bozarak gebeliği zorlaştırır.
 
 Ancak moralinizi bozmadan önce şunu unutmayın: endometriozis her zaman kısırlık demek değildir. [tupbebek.com kliniğinde](/) elde edilen deneyimler ve [en yeni bilimsel çalışmalar](https://pubmed.ncbi.nlm.nih.gov/32972732/), doğru teşhis ve kişiselleştirilmiş tedavi ile bebek hayalinin gerçekleşebileceğini gösteriyor. Gelin, bu zorlu yolculuğu adım adım ele alalım.
 
@@ -75,21 +75,21 @@ Endometriozisin en çok görülen belirtileri arasında çok **ağrılı adet d�
 
 ### 1.2 Doğru Teşhise Giden Yol
 
-Kesin tanı için altın standart **[laparoskopi](/laparoskopi/)**dir. Ultrasonda **[endometrioma](/blog/endometrioma/)** tespit edilse bile, karın içindeki küçük odakların görülmesi ve gerekirse aynı seansta tedavi edilmesi için laparoskopi şarttır. [Tanının gecikmesi kronik inflamasyonun sürmesine yol açar](https://pmc.ncbi.nlm.nih.gov/articles/PMC9107540/); uzun vadede bu inflamasyon yumurta hücrelerinizin biyolojik yaşını artırarak fertilitenin azalmasına neden olur.
+Kesin tanı için altın standart **[laparoskopi](/laparoskopi/)**dir. Ultrasonda **[endometrioma](/blog/endometrioma/)** tespit edilse bile, karın içindeki küçük odakların görülmesi ve gerekirse aynı seansta tedavi edilmesi için laparoskopi şarttır. [Tanının gecikmesi kronik inflamasyonun sürmesine yol açar](https://pmc.ncbi.nlm.nih.gov/makaleler/PMC9107540/); uzun vadede bu inflamasyon yumurta hücrelerinizin biyolojik yaşını artırarak fertilitenin azalmasına neden olur.
 
 > **Dr. Senai'nin tavsiyesi:** Şiddetli regl ağrısı, ilişki sırasında ağrı veya sindirim sistemi şikâyetleri hissediyorsanız "herkes böyle" demeyin. Bir [endometriozis uzmanına](/blog/endometriozis-kisirlik-iliskisi/) başvurarak durumunuzu netleştirin. Erken teşhis hem ağrı yönetimini kolaylaştırır hem de yumurtalık rezervinizi koruma şansı verir.
 
 ## 2 Kısırlık Labirenti: Endometriozis Nasıl Bebek Hayalini Etkiler?
 
-Uzun yıllar boyunca endometriozis ve kısırlık arasındaki ilişki **mekanik görüş**le açıklanıyordu: yapışıklıklar tüpleri tıkar ve yumurta‑sperm buluşamaz. [Güncel araştırmalar ise bu tablonun çok daha karmaşık olduğunu](https://ovarianresearch.biomedcentral.com/articles/10.1186/s13048-023-01095-4) gösteriyor.
+Uzun yıllar boyunca endometriozis ve kısırlık arasındaki ilişki **mekanik görüş**le açıklanıyordu: yapışıklıklar tüpleri tıkar ve yumurta‑sperm buluşamaz. [Güncel araştırmalar ise bu tablonun çok daha karmaşık olduğunu](https://ovarianresearch.biomedcentral.com/makaleler/10.1186/s13048-023-01095-4) gösteriyor.
 
 ### 2.1 Pelvik Bölgedeki Kronik inflamasyon
 
-Endometriozisli kadınların [karın boşluğundaki sıvısı, sitokinler, prostaglandinler ve **reaktif oksijen türleri (ROS)** gibi moleküller](https://pmc.ncbi.nlm.nih.gov/articles/PMC9107540/) açısından zengindir. Bu inflamatuar "çorba":
+Endometriozisli kadınların [karın boşluğundaki sıvısı, sitokinler, prostaglandinler ve **reaktif oksijen türleri (ROS)** gibi moleküller](https://pmc.ncbi.nlm.nih.gov/makaleler/PMC9107540/) açısından zengindir. Bu inflamatuar "çorba":
 
 - [Sperm hareketliliğini ve DNA bütünlüğünü bozar](https://pubmed.ncbi.nlm.nih.gov/32972732/).
 - [Yumurtaların olgunlaşmasını engeller ve embriyo kalitesini düşürür](https://www.tandfonline.com/doi/full/10.1080/14647273.2023.2288634).
-- [Rahmin embriyoyu kabul etme yeteneğini azaltır (implantasyon güçlüğü)](https://reproductive-health-journal.biomedcentral.com/articles/10.1186/s12978-025-02166-z).
+- [Rahmin embriyoyu kabul etme yeteneğini azaltır (implantasyon güçlüğü)](https://reproductive-health-journal.biomedcentral.com/makaleler/10.1186/s12978-025-02166-z).
 
 ### 2.2 Oksidatif Stres: Hücresel "Paslanma"
 
@@ -97,15 +97,15 @@ Endometrioma içindeki demir ve serbest radikaller, yumurtalık dokusuna zarar v
 
 ### 2.3 Progesteron Direnci ve Epigenetik Bozukluklar
 
-Endometrioziste [rahim iç duvarı progesteron sinyallerine yeterince cevap vermez](https://mefj.springeropen.com/articles/10.1186/s43043-024-00200-x); bu durum **progesteron direnci** olarak bilinir ve embriyonun rahme tutunmasını zorlaştırır. Epigenetik değişiklikler de implantasyona hazırlık sürecini olumsuz etkileyebilir. Sonuçta laboratuvarda çok kaliteli bir embriyo elde edilse bile rahim kapısını tam açamayabilir.
+Endometrioziste [rahim iç duvarı progesteron sinyallerine yeterince cevap vermez](https://mefj.springeropen.com/makaleler/10.1186/s43043-024-00200-x); bu durum **progesteron direnci** olarak bilinir ve embriyonun rahme tutunmasını zorlaştırır. Epigenetik değişiklikler de implantasyona hazırlık sürecini olumsuz etkileyebilir. Sonuçta laboratuvarda çok kaliteli bir embriyo elde edilse bile rahim kapısını tam açamayabilir.
 
 #### Eski ve Yeni Görüşün Karşılaştırması
 
 | Eski görüş (mekanik odak) | Güncel bilim (moleküler/immün odak) | Dr. Senai'nin yorumu |
 |---|---|---|
-| **Tüpler tıkalı, yapışıklıklar** | **[Kronik inflamasyon ve toksik periton sıvısı](https://pmc.ncbi.nlm.nih.gov/articles/PMC9107540/)** | Pelvik bölge savaş alanı; sadece tüpler değil, sperm ve yumurta da etkilenir. |
-| **Kistin boyutu önemli** | **[Oksidatif stres; gamet ve embriyo kalitesinde düşüş](https://www.nature.com/articles/s41598-023-34045-7)** | Yumurta ve sperm "paslanıyor"; sayıları ve kaliteleri azalıyor. |
-| **Basit anatomik bozukluk** | **[Progesteron direnci ve epigenetik sorunlar](https://mefj.springeropen.com/articles/10.1186/s43043-024-00200-x)** | Rahim kapısı aralık; embriyo kendini evinde hissetmiyor. |
+| **Tüpler tıkalı, yapışıklıklar** | **[Kronik inflamasyon ve toksik periton sıvısı](https://pmc.ncbi.nlm.nih.gov/makaleler/PMC9107540/)** | Pelvik bölge savaş alanı; sadece tüpler değil, sperm ve yumurta da etkilenir. |
+| **Kistin boyutu önemli** | **[Oksidatif stres; gamet ve embriyo kalitesinde düşüş](https://www.nature.com/makaleler/s41598-023-34045-7)** | Yumurta ve sperm "paslanıyor"; sayıları ve kaliteleri azalıyor. |
+| **Basit anatomik bozukluk** | **[Progesteron direnci ve epigenetik sorunlar](https://mefj.springeropen.com/makaleler/10.1186/s43043-024-00200-x)** | Rahim kapısı aralık; embriyo kendini evinde hissetmiyor. |
 
 ## 3 Çikolata Kisti (Endometrioma) ve Yumurtalık Rezervi
 
@@ -134,13 +134,13 @@ Endometrioma ve cerrahi riski nedeniyle yumurtalık rezervi tehlike altında ola
 
 ### 4.2 Taze ve Dondurulmuş Embriyo Transferi Arasında Seçim
 
-Modern IVF pratiğinde **[dondurulmuş embriyo transferi](/blog/taze-dondurulmus-embriyo-transferi/)** (FET) pek çok durumda taze transferle benzer veya daha yüksek başarı sağlayabilir. [Meta‑analizler özellikle **endometriozis hastalarında** ve **hiper‑responder** olarak adlandırılan çok sayıda yumurta üreten kadınlarda FET'in gebelik sonuçlarını belirgin şekilde iyileştirdiğini](https://pmc.ncbi.nlm.nih.gov/articles/PMC9107540/) gösteriyor.
+Modern IVF pratiğinde **[dondurulmuş embriyo transferi](/blog/taze-dondurulmus-embriyo-transferi/)** (FET) pek çok durumda taze transferle benzer veya daha yüksek başarı sağlayabilir. [Meta‑analizler özellikle **endometriozis hastalarında** ve **hiper‑responder** olarak adlandırılan çok sayıda yumurta üreten kadınlarda FET'in gebelik sonuçlarını belirgin şekilde iyileştirdiğini](https://pmc.ncbi.nlm.nih.gov/makaleler/PMC9107540/) gösteriyor.
 
 [Dondurulmuş transferde embriyolar, hormon seviyeleri sakinleşmiş ve rahim ortamı daha uygun hâle gelmiş bir siklusta transfer edilir](https://www.tandfonline.com/doi/full/10.1080/14647273.2023.2288634); bu da tutunma şansını artırır.
 
 ### 4.3 GnRHa Ön Tedavisi: Güncel Durum
 
-Geçmişte embriyo transferi öncesi 3–6 ay süren **GnRH agonisti** tedavilerinin kronik inflamasyonu baskılayarak IVF başarısını artırabileceği düşünülüyordu. Ancak [2019 sonrası çalışmalar, bu yaklaşımın herkes için geçerli bir fayda sağlamadığını](https://www.nature.com/articles/s41598-023-34045-7) ortaya koymuştur. Günümüzde [GnRHa tedavisi, adenomyosis şüphesi olan veya tekrarlayan implantasyon başarısızlığı yaşayan hastalarda, *freeze‑all* (tüm embriyoların dondurulduğu) protokolü sonrası **bireyselleştirilmiş** olarak kullanılmaktadır.](https://reproductive-health-journal.biomedcentral.com/articles/10.1186/s12978-025-02166-z) Yani standart bir kural yerine kişiye özel değerlendirme esastır.
+Geçmişte embriyo transferi öncesi 3–6 ay süren **GnRH agonisti** tedavilerinin kronik inflamasyonu baskılayarak IVF başarısını artırabileceği düşünülüyordu. Ancak [2019 sonrası çalışmalar, bu yaklaşımın herkes için geçerli bir fayda sağlamadığını](https://www.nature.com/makaleler/s41598-023-34045-7) ortaya koymuştur. Günümüzde [GnRHa tedavisi, adenomyosis şüphesi olan veya tekrarlayan implantasyon başarısızlığı yaşayan hastalarda, *freeze‑all* (tüm embriyoların dondurulduğu) protokolü sonrası **bireyselleştirilmiş** olarak kullanılmaktadır.](https://reproductive-health-journal.biomedcentral.com/makaleler/10.1186/s12978-025-02166-z) Yani standart bir kural yerine kişiye özel değerlendirme esastır.
 
 ### 4.4 Tüp Bebek Aşamalarında Dikkat Edilmesi Gerekenler
 

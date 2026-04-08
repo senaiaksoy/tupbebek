@@ -8,7 +8,7 @@ medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Tıbbi Danışma Kurulu"
 reviewDate: 2026-04-06
 category: "Kadın Sağlığı"
-image: "/images/articles/adet-duzensizligi-pcos.webp"
+image: "/images/makaleler/adet-duzensizligi-pcos.webp"
 imageAlt: "adet düzensizliği ve polikistik over sendromu pcos illüstrasyonu"
 references:
   - title: "The prevalence and phenotypic features of polycystic ovary syndrome: a systematic review and meta-analysis"

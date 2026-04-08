@@ -8,7 +8,7 @@ medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Tıbbi Danışma Kurulu"
 reviewDate: 2026-04-06
 category: "Genetik"
-image: "/images/articles/akraba-evliligi.webp"
+image: "/images/makaleler/akraba-evliligi.webp"
 imageAlt: "akraba evliliği genetik riskler ve dna sarmalı illüstrasyonu"
 references:
   - title: "Consanguinity, human evolution, and complex diseases"

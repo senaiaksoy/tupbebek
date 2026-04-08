@@ -8,7 +8,7 @@ medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Tıbbi Danışma Kurulu"
 reviewDate: 2026-04-06
 category: "Kadın Sağlığı"
-image: "/images/articles/adet-gorememe.webp"
+image: "/images/makaleler/adet-gorememe.webp"
 imageAlt: "amenore adet görememe belirtileri ve nedenleri"
 references:
   - title: "Current evaluation of amenorrhea"

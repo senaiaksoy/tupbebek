@@ -6,7 +6,7 @@ author: "tupbebek.com Yayın Kurulu"
 medicalReviewer: "Yayın Kurulu"
 lastModified: 2026-04-03
 category: "Tedavi Yöntemleri"
-image: /images/articles/ivf-protokolleri.webp
+image: /images/makaleler/ivf-protokolleri.webp
 references:
   - title: "GnRH antagonists for assisted reproductive technology"
     authors: "Al-Inany HG, Youssef MA, Ayeleke RO et al."

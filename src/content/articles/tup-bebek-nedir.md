@@ -6,7 +6,7 @@ author: "tupbebek.com Yayın Kurulu"
 medicalReviewer: "Yayın Kurulu"
 lastModified: 2026-04-03
 category: "Tüp Bebek"
-image: "/images/articles/tup-bebek-nedir.webp"
+image: "/images/makaleler/tup-bebek-nedir.webp"
 imageAlt: "tüp bebek tedavisi hakkında doktoruyla görüşen kadın hasta"
 references:
   - title: "Birth after the reimplantation of a human embryo"

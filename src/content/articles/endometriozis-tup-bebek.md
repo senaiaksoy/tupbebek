@@ -132,7 +132,7 @@ Günümüzde, görüntüleme teknikleri sayesinde bu EFI skorunu ameliyattan ön
 
 Yıllarca endometriozis hastalarında klasik "uzun" (agonist) veya "kısa" (antagonist) protokolleri kullandık. Hatta bazen hastaları tüp bebek öncesi 3-6 ay "down-regulation" (ilaçla baskılama) tedavisine aldık. Ancak 2025 verileri, bu uzun baskılamanın canlı doğum oranlarını artırdığına dair net bir kanıt olmadığını ve ESHRE'nin de bunu rutin olarak önermediğini göstermektedir.
 
-Artık elimizde çok daha "hasta dostu" ve etkili bir alternatif var: **[PPOS (Progestin-Primed Ovarian Stimulation)](https://www.frontiersin.org/journals/endocrinology/articles/10.3389/fendo.2025.1492293/full)**. PPOS, yumurta gelişimini (stimülasyon) sağlarken erken çatlamayı önlemek için günlük iğneler yerine progestan (progesteron türevi) hapları kullanan daha yeni bir protokoldür.
+Artık elimizde çok daha "hasta dostu" ve etkili bir alternatif var: **[PPOS (Progestin-Primed Ovarian Stimulation)](https://www.frontiersin.org/journals/endocrinology/makaleler/10.3389/fendo.2025.1492293/full)**. PPOS, yumurta gelişimini (stimülasyon) sağlarken erken çatlamayı önlemek için günlük iğneler yerine progestan (progesteron türevi) hapları kullanan daha yeni bir protokoldür.
 
 Bu yöntemde, tüm embriyolar donduruluyor ve hemen transfer edilmiyor. Yani embriyoları o ay transfer etmek yerine donduruyoruz. Sonraki ay, rahim dinlendikten sonra transfer işlemini yapıyoruz. Endometriozis hastaları için bu durum aslında iyi bir şey. Çünkü endometriozis, rahmin içinde iltihaplı ve östrojen hormonunun yüksek olduğu bir ortama sebep oluyor. Bu yüzden, stimülasyon sonrası hemen transfer yapmak yerine, rahmin bu etkilerden temizlendiği sakin bir dönemde dondurulmuş embriyo transferi yapmak, tutunma şansını yükseltiyor.
 
@@ -177,7 +177,7 @@ Modern tıp, artık sadece semptomları değil, hastalığın *nedenlerini* de a
 
 Yıllarca "endometriozis yumurta kalitesini bozar" dogmasına inandık. Ancak bir çelişki vardı: Bu hastaların yumurtalarını laboratuvar ortamına (ex vivo) aldığımızda, *normal* şekilde döllendiklerini ve sağlıklı embriyolar geliştirdiklerini görüyorduk. Eğer yumurta *kendi içinde* bozuksa, bu nasıl olabilirdi?
 
-2025'te bu çelişkiyi çözen anahtar kavram **[ferroptoz (demir-bağımlı hücre ölümü)](https://www.frontiersin.org/journals/endocrinology/articles/10.3389/fendo.2025.1613334/full)** oldu. Mekanizma şudur:
+2025'te bu çelişkiyi çözen anahtar kavram **[ferroptoz (demir-bağımlı hücre ölümü)](https://www.frontiersin.org/journals/endocrinology/makaleler/10.3389/fendo.2025.1613334/full)** oldu. Mekanizma şudur:
 
 1. Adet kanaması bazen ters yönde akarak karın bölgesine gidebilir.
 2. Bu durumda, kan parçalanır ve leğen kemiği bölgesinde çok fazla demir birikir.
