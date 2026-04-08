@@ -16,6 +16,9 @@ export default defineConfig({
     sitemap(),
     mdx(),
   ],
+  build: {
+    inlineStylesheets: 'always',
+  },
   image: {
     service: {
       entrypoint: 'astro/assets/services/noop'
