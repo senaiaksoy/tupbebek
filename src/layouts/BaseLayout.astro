@@ -98,13 +98,34 @@ const medicalWebPageSchema = {
 		<meta name="twitter:image" content={image ? `https://tupbebek.com${image}` : "https://tupbebek.com/images/home/luxury-embryo.webp"} />
 		<meta name="twitter:site" content="@tupbebek" />
 
-		<!-- Google Analytics (GA4) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-K3VE72CSDJ"></script>
+		<!-- Google Analytics (GA4) - Lazy Loaded -->
 		<script is:inline>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-			gtag('config', 'G-K3VE72CSDJ');
+			function loadGA() {
+				if (window.gaLoaded) return;
+				window.gaLoaded = true;
+				
+				// Load script
+				const script = document.createElement('script');
+				script.async = true;
+				script.src = 'https://www.googletagmanager.com/gtag/js?id=G-K3VE72CSDJ';
+				document.head.appendChild(script);
+
+				// Init GA
+				window.dataLayer = window.dataLayer || [];
+				function gtag(){dataLayer.push(arguments);}
+				gtag('js', new Date());
+				gtag('config', 'G-K3VE72CSDJ');
+				console.log('GA4 Loaded on activity');
+			}
+
+			// Activity events to trigger loading
+			const activityEvents = ['mousedown', 'mousemove', 'keydown', 'scroll', 'touchstart'];
+			activityEvents.forEach(event => {
+				window.addEventListener(event, loadGA, { once: true, passive: true });
+			});
+
+			// Fallback load after 3.5 seconds
+			setTimeout(loadGA, 3500);
 		</script>
 
 		<!-- Preload Fonts -->
