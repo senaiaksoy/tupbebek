@@ -52,7 +52,7 @@ export const navigationMenus: MegaMenuConfig[] = [
       href: '/makaleler/tup-bebek-nedir'
     },
     submenu: [
-      { label: 'Kadın İnfertilitesi', href: '/kadin-infertilitesi', description: 'PCOS, tubal faktör, endometriozis' },
+      { label: 'Kadın İnfertilitesi', href: '/kadin-infertilitesi', description: 'PCOS, tüp kaynaklı nedenler, endometriozis' },
       { label: 'Erkek İnfertilitesi', href: '/erkek-infertilitesi', description: 'Azospermi, varikosel, DNA hasarı' },
       { label: 'Açıklanamayan İnfertilite', href: '/aciklanamayan-infertilite', description: 'Tanısı konulamayan durumlar' },
       { label: 'Yaş ve Fertilite', href: '/yas-ve-fertilite', description: 'Over rezervi ve zamanlama' },
@@ -315,7 +315,7 @@ export const situationOptions: SituationOption[] = [
   },
   {
     id: 'erkek-faktor',
-    label: 'Erkek faktörü araştırıyorum',
+    label: 'Erkek kaynaklı nedenleri araştırıyorum',
     description: 'Sperm kalitesi, azospermi ve erkek tedavileri',
     icon: 'male',
     color: 'primary',

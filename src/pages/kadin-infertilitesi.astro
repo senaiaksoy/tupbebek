@@ -6,7 +6,7 @@ import StatsStrip from '../components/StatsStrip.astro';
 import RelatedContent from '../components/RelatedContent.astro';
 ---
 
-<BaseLayout title="Kadın İnfertilitesi: Tıbbi Nedenler | tupbebek.com" description="Kadın infertilitesi nedenleri: PCOS, endometriozis, tüp faktörü, yumurtalık rezervi ve tanı süreçleri hakkında bilimsel rehber.">
+<BaseLayout title="Kadın İnfertilitesi: Tıbbi Nedenler | tupbebek.com" description="Kadın infertilitesi nedenleri: PCOS, endometriozis, tüp kaynaklı nedenler, yumurtalık rezervi ve tanı süreçleri hakkında bilimsel rehber.">
     <Header />
 
     <main id="main-content" tabindex="-1" class="pt-24 pb-24">
@@ -19,7 +19,7 @@ import RelatedContent from '../components/RelatedContent.astro';
                         Akademik Makale
                     </div>
                     <h1 class="font-headline text-5xl md:text-6xl text-gray-900 leading-tight mb-8">
-                        Kadın İnfertilitesi: <span class="text-primary-600 italic">Tıbbi Nedenler</span> ve Faktörler
+                        Kadın İnfertilitesi: <span class="text-primary-600 italic">Tıbbi Nedenler</span> ve Etkenler
                     </h1>
                     <div class="flex items-center gap-4 p-4 bg-gray-50 rounded-xl border-l-4 border-primary">
                         <div class="w-12 h-12 rounded-full overflow-hidden bg-gray-200">
@@ -45,10 +45,10 @@ import RelatedContent from '../components/RelatedContent.astro';
             <StatsStrip items={[
               { icon: 'fertile', heading: 'Ovülasyon', text: 'Hormonal döngülerin düzenliliği ve yumurta kalitesi.' },
               { icon: 'account_tree', heading: 'Anatomik Yapı', text: 'Fallop tüpleri, uterus ve servikal kanalın geçirgenliği.' },
-              { icon: 'hourglass_empty', heading: 'Yaş Faktörü', text: 'Oosit rezervinin niceliksel ve niteliksel değişimi.' }
+               { icon: 'hourglass_empty', heading: 'Yaş Etkeni', text: 'Oosit rezervinin niceliksel ve niteliksel değişimi.' }
             ]} />
             <p class="text-gray-600 leading-relaxed mb-6">
-                İnfertilite, korunmasız düzenli cinsel ilişkiye rağmen bir yıl (35 yaş üstü kadınlarda 6 ay) içerisinde gebelik oluşmaması olarak tanımlanır. İnfertilite vakalarında kadın faktörü ~%33, erkek faktörü ~%50, çiftin ikisinde de faktör ~%20-30 oranında rol oynar. Bu nedenle <a href="/tani-sureci" class="text-primary-600 hover:underline">tanı süreci</a> her iki partneri de değerlendirmelidir. <a href="/erkek-infertilitesi" class="text-primary-600 hover:underline">Erkek infertilitesi</a> sayfamızda erkek faktörlerini inceleyebilirsiniz.
+                İnfertilite, korunmasız düzenli cinsel ilişkiye rağmen bir yıl (35 yaş üstü kadınlarda 6 ay) içerisinde gebelik oluşmaması olarak tanımlanır. İnfertilite vakalarında kadın kaynaklı nedenler ~%33, erkek kaynaklı nedenler ~%50, çiftin ikisinde de nedenler ~%20-30 oranında rol oynar. Bu nedenle <a href="/tani-sureci" class="text-primary-600 hover:underline">tanı süreci</a> her iki partneri de değerlendirmelidir. <a href="/erkek-infertilitesi" class="text-primary-600 hover:underline">Erkek infertilitesi</a> sayfamızda erkek üreme etkenlerini inceleyebilirsiniz.
             </p>
         </section>
 
@@ -99,15 +99,15 @@ import RelatedContent from '../components/RelatedContent.astro';
             </div>
         </section>
 
-        <!-- Section 2: Anatomik Faktörler -->
+        <!-- Section 2: Anatomik Etkenler -->
         <section class="max-w-5xl mx-auto px-4 md:px-6 lg:px-8 mb-24">
-            <h2 class="font-headline text-3xl text-gray-900 text-center mb-16">2. Anatomik ve Yapısal Faktörler</h2>
+            <h2 class="font-headline text-3xl text-gray-900 text-center mb-16">2. Anatomik ve Yapısal Etkenler</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="bg-white p-8 rounded-2xl border border-gray-200/20 hover:bg-gray-50 transition-colors">
                     <div class="w-12 h-12 bg-primary-50 rounded-xl flex items-center justify-center mb-6">
                         <span class="material-symbols-outlined text-primary-600">cable</span>
                     </div>
-                    <h3 class="font-headline text-xl mb-4">Tubal Faktörler</h3>
+                    <h3 class="font-headline text-xl mb-4">Tüp Kaynaklı Nedenler (Tubal)</h3>
                     <p class="text-sm text-gray-600 leading-relaxed">
                         Hasar görmüş veya tıkanmış Fallop tüpleri, spermin yumurtaya ulaşmasını veya döllenmiş yumurtanın rahme geçişini engeller. Pelvik inflamatuar hastalıklar (PID) sıklıkla bu duruma yol açar.
                     </p>
@@ -125,7 +125,7 @@ import RelatedContent from '../components/RelatedContent.astro';
                     <div class="w-12 h-12 bg-primary-50 rounded-xl flex items-center justify-center mb-6">
                         <span class="material-symbols-outlined text-primary-600">foundation</span>
                     </div>
-                    <h3 class="font-headline text-xl mb-4">Uterin Faktörler</h3>
+                    <h3 class="font-headline text-xl mb-4">Rahim Kaynaklı Nedenler (Uterin)</h3>
                     <p class="text-sm text-gray-600 leading-relaxed">
                         Rahimdeki polipler, miyomlar veya doğuştan gelen şekil bozuklukları, embriyonun tutunmasını (implantasyon) zorlaştırarak gebelik kaybına veya infertilitesine yol açabilir.
                     </p>
@@ -137,7 +137,7 @@ import RelatedContent from '../components/RelatedContent.astro';
         <section class="max-w-3xl mx-auto px-4 md:px-6 lg:px-8">
             <h2 class="font-headline text-3xl text-gray-900 mb-8">3. Yaş ve Metabolik Sağlık</h2>
             <p class="text-gray-600 leading-relaxed mb-12">
-                Kadın infertilitesinde en belirleyici faktör biyolojik yaştır. Kadınlar sınırlı sayıda yumurta ile doğarlar ve bu rezerv yaş ilerledikçe hem sayıca azalır hem de kromozomal olarak kalitesi düşer. 35 yaşından itibaren bu süreç hızlanmakta, 40 yaş sonrasında ise doğal yollarla gebe kalma olasılığı belirgin şekilde minimize olmaktadır.
+                Kadın infertilitesinde en belirleyici etken biyolojik yaştır. Kadınlar sınırlı sayıda yumurta ile doğarlar ve bu rezerv yaş ilerledikçe hem sayıca azalır hem de kromozomal olarak kalitesi düşer. 35 yaşından itibaren bu süreç hızlanmakta, 40 yaş sonrasında ise doğal yollarla gebe kalma olasılığı belirgin şekilde minimize olmaktadır.
             </p>
             <div class="my-12 p-8 bg-gray-200 rounded-2xl">
                 <h4 class="font-bold text-primary-600 mb-6 flex items-center gap-2">
@@ -164,13 +164,13 @@ import RelatedContent from '../components/RelatedContent.astro';
                 </div>
             </div>
             <p class="text-gray-600 leading-relaxed">
-                Sonuç olarak, kadın infertilitesi çok faktörlü bir durumdur. Çoğu durumda, birden fazla nedenin birleşimi söz konusudur. Doğru tanı ve zamanında müdahale, üreme başarısını optimize etmenin anahtarıdır. Modern tıbbi yaklaşımlar, bireyselleştirilmiş tedavi planları ile bu zorlukların üstesinden gelmeyi hedeflemektedir.
+                Sonuç olarak, kadın infertilitesi çok yönlü bir durumdur. Çoğu durumda, birden fazla nedenin birleşimi söz konusudur. Doğru tanı ve zamanında müdahale, üreme başarısını optimize etmenin anahtarıdır. Modern tıbbi yaklaşımlar, bireyselleştirilmiş tedavi planları ile bu zorlukların üstesinden gelmeyi hedeflemektedir.
             </p>
         </section>
 
         <!-- Related Pages -->
         <RelatedContent items={[
-          { href: '/erkek-infertilitesi', icon: 'man', title: 'Erkek İnfertilitesi', description: 'Erkek faktörleri ve tedavi seçenekleri' },
+          { href: '/erkek-infertilitesi', icon: 'man', title: 'Erkek İnfertilitesi', description: 'Erkek üreme etkenleri ve tedavi seçenekleri' },
           { href: '/tani-sureci', icon: 'assignment', title: 'Tanı Süreci', description: 'İnfertilite değerlendirmesi adımları' },
           { href: '/tedavi-yontemleri', icon: 'biotech', title: 'Tedavi Yöntemleri', description: 'IVF, ICSI, IUI ve diğer teknikler' },
           { href: '/hormon-paneli', icon: 'bloodtype', title: 'Hormon Paneli', description: 'AMH, FSH, E2 değerleri ve yorumlama' },

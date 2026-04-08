@@ -7,7 +7,7 @@ import RelatedContent from '../components/RelatedContent.astro';
 import DisclaimerBar from '../components/DisclaimerBar.astro';
 ---
 
-<BaseLayout title="Açıklanamayan İnfertilite: Nedenleri ve Tedavisi | tupbebek.com" description="Açıklanamayan (idiyopatik) infertilite tanısı, nedenleri, gizli faktörler ve tedavi seçenekleri.">
+<BaseLayout title="Açıklanamayan İnfertilite: Nedenleri ve Tedavisi | tupbebek.com" description="Açıklanamayan (idiyopatik) infertilite tanısı, nedenleri, gizli etkenler ve tedavi seçenekleri.">
     <Header />
 
     <main id="main-content" tabindex="-1" class="pb-24">
@@ -41,16 +41,16 @@ import DisclaimerBar from '../components/DisclaimerBar.astro';
         <!-- Introduction -->
         <section class="max-w-3xl mx-auto px-4 md:px-6 lg:px-8 mb-24">
             <p class="text-lg md:text-xl text-gray-600 leading-relaxed font-body italic mb-12">
-                Açıklanamayan infertilite, standart tanı testlerinde herhangi bir belirgin neden bulunamamasına rağmen gebelik oluşmamasıdır. İnfertilite vakalarının %10-15'i bu kategoriye girer. Ancak bu, problemin olmadığı anlamına gelmez; gözardı edilen veya saptanmayan faktörler vardır.
+                Açıklanamayan infertilite, standart tanı testlerinde herhangi bir belirgin neden bulunamamasına rağmen gebelik oluşmamasıdır. İnfertilite vakalarının %10-15'i bu kategoriye girer. Ancak bu, problemin olmadığı anlamına gelmez; gözardı edilen veya saptanmayan nedenler vardır.
             </p>
             <StatsStrip items={[
               { icon: 'question_mark', heading: '%10-15', text: 'İnfertilite vakalarında açıklanamayan durum' },
-              { icon: 'search', heading: 'Gizli Faktörler', text: 'Saptanmayan endometriozis, oosit kalitesi' },
+              { icon: 'search', heading: 'Gizli Etkenler', text: 'Saptanmayan endometriozis, oosit kalitesi' },
               { icon: 'biotech', heading: 'Tedavi', text: 'IVF sıklıkla etkili çözüm sunuyor' }
             ]} />
         </section>
 
-        <!-- Gizli Faktörler -->
+        <!-- Gizli Etkenler -->
         <section class="bg-gray-50 py-24 mb-24">
             <div class="max-w-5xl mx-auto px-4 md:px-6 lg:px-8">
                 <h2 class="font-headline text-3xl text-gray-900 mb-12">Gizli Nedenler</h2>
@@ -123,7 +123,7 @@ import DisclaimerBar from '../components/DisclaimerBar.astro';
                     <div class="bg-white border-l-4 border-primary rounded-xl p-6">
                         <h4 class="font-bold text-gray-900 text-sm mb-3">IVF/ICSI</h4>
                         <p class="text-sm text-gray-600">
-                            Gizli faktörleri ortaya çıkarır. Yumurta kalitesi, embriyo gelişimi ve implantasyon değerlendirilir. <a href="/tedavi-yontemleri" class="text-primary-600 hover:underline">Tedavi yöntemleri</a> sayfasında detaylı bilgi bulabilirsiniz.
+                            Gizli etkenleri ortaya çıkarır. Yumurta kalitesi, embriyo gelişimi ve implantasyon değerlendirilir. <a href="/tedavi-yontemleri" class="text-primary-600 hover:underline">Tedavi yöntemleri</a> sayfasında detaylı bilgi bulabilirsiniz.
                         </p>
                     </div>
 
@@ -141,7 +141,7 @@ import DisclaimerBar from '../components/DisclaimerBar.astro';
         <RelatedContent items={[
           { href: '/tani-sureci', icon: 'assignment', title: 'Tanı Süreci', description: 'Kapsamlı infertilite değerlendirmesi' },
           { href: '/tedavi-yontemleri', icon: 'biotech', title: 'Tedavi Yöntemleri', description: 'IUI, IVF ve diğer seçenekler' },
-          { href: '/kadin-infertilitesi', icon: 'woman', title: 'Kadın Faktörleri', description: 'Endometriozis ve diğer nedenler' }
+          { href: '/kadin-infertilitesi', icon: 'woman', title: 'Kadın Kaynaklı Nedenler', description: 'Endometriozis ve diğer nedenler' }
         ]} />
 
         <!-- Doktor Onay -->

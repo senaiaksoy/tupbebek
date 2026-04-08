@@ -283,7 +283,7 @@ export const glossary: Record<string, GlossaryEntry> = {
   },
   Spermatogenez: {
     term: 'Spermatogenez',
-    definition: 'Testislerde sperm hücrelerinin üretilme süreci. Yaklaşık 74 gün sürer. Hormonal denge, sıcaklık ve beslenme gibi faktörlerden etkilenir.',
+    definition: 'Testislerde sperm hücrelerinin üretilme süreci. Yaklaşık 74 gün sürer. Hormonal denge, sıcaklık ve beslenme gibi etkenlerden etkilenir.',
   },
 
   // ── Anatomi ──

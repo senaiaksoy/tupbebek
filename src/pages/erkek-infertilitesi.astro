@@ -40,10 +40,10 @@ import RelatedContent from '../components/RelatedContent.astro';
         <!-- Scientific Introduction -->
         <section class="max-w-3xl mx-auto px-4 md:px-6 lg:px-8 mb-16">
             <p class="text-lg md:text-xl text-gray-600 leading-relaxed font-body italic mb-12">
-                Erkek infertilitesi, üreme çiftlerinin yaklaşık yarısında rol oynayan bir faktördür. Ancak, erkek infertilitesinin nedenleri tanı ve tedavi edilebilir olduğunda, çoğu çift başarılı gebeliklere ulaşabilmektedir. Bu rehber, erkek üreme sağlığını kapsamlı şekilde inceler.
+                Erkek infertilitesi, üreme çiftlerinin yaklaşık yarısında rol oynayan bir etkendir. Ancak, erkek infertilitesinin nedenleri tanı ve tedavi edilebilir olduğunda, çoğu çift başarılı gebeliklere ulaşabilmektedir. Bu rehber, erkek üreme sağlığını kapsamlı şekilde inceler.
             </p>
             <StatsStrip items={[
-              { icon: 'man', heading: '~%50', text: 'Vakaların yarısında erkek faktörü mevcut' },
+              { icon: 'man', heading: '~%50', text: 'Vakaların yarısında erkek kaynaklı nedenler mevcut' },
               { icon: 'analytics', heading: '%60', text: 'Varikosel en sık erkek infertilite nedeni' },
               { icon: 'science', heading: 'ICSI', text: 'Çok düşük sperm sayılarında bile gebelik mümkün' }
             ]} />
@@ -87,7 +87,7 @@ import RelatedContent from '../components/RelatedContent.astro';
                                 </div>
                                 <div class="flex items-start gap-4 bg-white rounded-xl p-4 shadow-sm">
                                     <span class="font-mono font-bold text-primary-600 shrink-0">→</span>
-                                    <span class="text-gray-600"><strong>Genetik faktörler:</strong> Klinefelter, Y-kromozom mikrodelesyonları. <a href="/genetik-testler" class="text-primary-600 hover:underline">Genetik testler hakkında bilgi</a></span>
+                                    <span class="text-gray-600"><strong>Genetik etkenler:</strong> Klinefelter, Y-kromozom mikrodelesyonları. <a href="/genetik-testler" class="text-primary-600 hover:underline">Genetik testler hakkında bilgi</a></span>
                                 </div>
                                 <div class="flex items-start gap-4 bg-white rounded-xl p-4 shadow-sm">
                                     <span class="font-mono font-bold text-primary-600 shrink-0">→</span>
@@ -177,7 +177,7 @@ import RelatedContent from '../components/RelatedContent.astro';
                         <h2 class="font-headline text-3xl text-gray-900 mb-6">3. Tedavi Seçenekleri</h2>
                         <div class="space-y-4 text-gray-600">
                             <p>
-                                Tedavi, infertilite nedenine göre bireyselleşir. Hafif erkek faktörlerinde yaşam tarzı düzenlemeleri ve IUI yeterli olabilirken, ağır olgularda <a href="/tedavi-yontemleri" class="text-primary-600 hover:underline">IVF ve ICSI</a> gerekebilir.
+                                Tedavi, infertilite nedenine göre bireyselleşir. Hafif erkek kaynaklı durumlarda yaşam tarzı düzenlemeleri ve IUI yeterli olabilirken, ağır olgularda <a href="/tedavi-yontemleri" class="text-primary-600 hover:underline">IVF ve ICSI</a> gerekebilir.
                             </p>
                             <div class="space-y-4 text-sm">
                                 <div class="bg-white border-l-4 border-primary rounded-xl p-6">
@@ -201,7 +201,7 @@ import RelatedContent from '../components/RelatedContent.astro';
                                     <div class="flex items-center gap-2 mb-3"><span class="material-symbols-outlined text-primary-600">vital_signs</span><strong>Yardımcı Üreme Teknikleri</strong></div>
                                     <ul class="space-y-1">
                                         <li>• <strong>IUI (Intrauterin İnseminasyon):</strong> Toplam mobil sperm ≥5-10 milyon ise</li>
-                                        <li>• <strong>IVF/ICSI:</strong> Ciddi erkek faktöründe ilk tercih</li>
+                                        <li>• <strong>IVF/ICSI:</strong> Ciddi erkek kaynaklı infertilitelerde ilk tercih</li>
                                         <li>• <strong>TESE/microTESE + ICSI:</strong> <a href="/makaleler/azospermi-mikro-tese" class="text-primary-600 hover:underline">Azospermi ve microTESE hakkında</a></li>
                                     </ul>
                                 </div>
@@ -232,7 +232,7 @@ import RelatedContent from '../components/RelatedContent.astro';
                     <h2 class="font-headline text-3xl text-gray-900 mb-6">4. Yaşam Tarzı ve Sperm Kalitesi</h2>
                     <div class="space-y-4 text-gray-600">
                         <p>
-                            Sperm üretimi yaklaşık 74 gün sürer. Bu nedenle yaşam tarzı değişikliklerinin etkisi 3 ay sonra görülmeye başlar. Aşağıdaki faktörler sperm kalitesini olumsuz etkiler:
+                            Sperm üretimi yaklaşık 74 gün sürer. Bu nedenle yaşam tarzı değişikliklerinin etkisi 3 ay sonra görülmeye başlar. Aşağıdaki etkenler sperm kalitesini olumsuz etkiler:
                         </p>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <div class="bg-white border-l-4 border-red-500 rounded-xl p-4">
@@ -302,7 +302,7 @@ import RelatedContent from '../components/RelatedContent.astro';
 
         <!-- Related Pages / İlgili Sayfalar -->
         <RelatedContent items={[
-          { href: '/kadin-infertilitesi', icon: 'woman', title: 'Kadın İnfertilitesi', description: 'Kadın faktörleri ve tanı süreçleri' },
+          { href: '/kadin-infertilitesi', icon: 'woman', title: 'Kadın İnfertilitesi', description: 'Kadın kaynaklı nedenler ve tanı süreçleri' },
           { href: '/tani-sureci', icon: 'assignment', title: 'Tanı Süreci', description: 'İnfertilite değerlendirmesi adımları' },
           { href: '/tedavi-yontemleri', icon: 'biotech', title: 'Tedavi Yöntemleri', description: 'IVF, ICSI, IUI ve diğer teknikler' },
           { href: '/beslenme-yasam', icon: 'nutrition', title: 'Beslenme ve Yaşam', description: 'Yaşam tarzı ve doğurganlığın iyileştirilmesi' },

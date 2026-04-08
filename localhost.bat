@@ -1,3 +1,0 @@
-@echo off
-echo Starting Tupbebek.com Local Development Server...
-npm run dev

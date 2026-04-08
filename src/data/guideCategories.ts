@@ -24,7 +24,7 @@ export const guideCategories: GuideCategory[] = [
   {
     id: 'kadin-infertilitesi',
     title: 'Kadın İnfertilitesi',
-    description: 'PCOS, endometriozis, tubal faktörleri ve tedavi seçenekleri',
+    description: 'PCOS, endometriozis, tüp kaynaklı nedenler ve tedavi seçenekleri',
     icon: 'female',
     href: '/kadin-infertilitesi',
     color: 'pink'
