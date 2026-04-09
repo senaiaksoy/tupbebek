@@ -3,7 +3,7 @@ import { Resend } from 'resend';
 
 export const prerender = false;
 
-export const POST: APIRoute = async ({ request }) => {
+export const POST: APIRoute = async ({ request, locals }) => {
   if (request.method !== 'POST') {
     return new Response(JSON.stringify({ error: 'Method not allowed' }), {
       status: 405,
@@ -42,7 +42,8 @@ export const POST: APIRoute = async ({ request }) => {
     });
 
     // Email gönder (Resend API ile)
-    const resendApiKey = import.meta.env.RESEND_API_KEY;
+    const env = (locals as any).runtime?.env;
+    const resendApiKey = env?.RESEND_API_KEY || import.meta.env.RESEND_API_KEY;
 
     if (resendApiKey) {
       try {
