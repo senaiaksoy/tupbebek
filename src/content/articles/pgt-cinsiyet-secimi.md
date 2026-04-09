@@ -3,7 +3,11 @@ title: "PGT ile Cinsiyet Seçimi: Türkiye'de Yasal mı?"
 description: "Tüp bebek tedavisinde PGT ile cinsiyet belirleme mümkün mü? Türkiye'deki yasal düzenlemeler, tıbbi endikasyon istisnaları ve sık sorulan sorular."
 publishDate: 2024-06-22
 author: "tupbebek.com Yayın Kurulu"
-medicalReviewer: "Doç. Dr. Senai Aksoy"
+authorTitle: "Editoryal Ekip"
+authorCredentials: "Doç. Dr. Senai Aksoy editörlüğünde"
+medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
+reviewerTitle: "Tıbbi Danışma Kurulu"
+reviewDate: 2026-04-09
 lastModified: 2026-04-05
 category: "Genetik"
 image: /images/library/embriyo/pgt_sex.webp

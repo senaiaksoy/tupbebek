@@ -3,7 +3,8 @@ title: "Alkol ve Fertilite: Bebek Hayaliniz İçin Kadehi Bırakma Zamanı mı?"
 description: "Alkol tüketiminin kadın ve erkek üreme sağlığı üzerindeki etkileri. Tüp bebek tedavisi başarısını nasıl etkiler?"
 publishDate: 2026-03-31
 author: "tupbebek.com Yayın Kurulu"
-authorTitle: "Yayın Kurulu"
+authorTitle: "Editoryal Ekip"
+authorCredentials: "Doç. Dr. Senai Aksoy editörlüğünde"
 medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Tıbbi Danışma Kurulu"
 reviewDate: 2026-04-06

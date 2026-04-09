@@ -3,7 +3,11 @@ title: "Endometriozis ve Kısırlık Tedavisinde 2025 Devrimi"
 description: "Endometriozis veya çikolata kisti kısırlık yaparsa 'Önce Ameliyat' mı, 'Önce Tüp Bebek' mi? tupbebek.com yayın kurulu, 2025'in yeni altın standardını ve SVIDOE çalışmasını açıklıyor."
 publishDate: 2025-11-01
 author: "tupbebek.com Yayın Kurulu"
-medicalReviewer: "Yayın Kurulu"
+authorTitle: "Editoryal Ekip"
+authorCredentials: "Doç. Dr. Senai Aksoy editörlüğünde"
+medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
+reviewerTitle: "Tıbbi Danışma Kurulu"
+reviewDate: 2026-04-09
 lastModified: 2026-04-03
 category: "Tüp Bebek"
 image: /images/library/hastalik/endometriosis_tedavi.webp

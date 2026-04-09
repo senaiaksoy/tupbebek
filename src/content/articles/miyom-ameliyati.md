@@ -3,7 +3,11 @@ title: "Miyom Ne Zaman Ameliyat Edilmeli? | tupbebek.com"
 description: "Rahminizdeki miyomlar ne zaman ameliyat gerektirir? tupbebek.com'un 'trafik lambası' rehberiyle karar verin. Yeşil, sarı, kırmızı ışık ne anlama geliyor?"
 publishDate: 2025-09-23
 author: "tupbebek.com Yayın Kurulu"
-medicalReviewer: "Yayın Kurulu"
+authorTitle: "Editoryal Ekip"
+authorCredentials: "Doç. Dr. Senai Aksoy editörlüğünde"
+medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
+reviewerTitle: "Tıbbi Danışma Kurulu"
+reviewDate: 2026-04-09
 lastModified: 2026-04-03
 category: "Kadın Sağlığı"
 image: /images/library/hastalik/miyom-ameliyati-ne-zaman-gerekir.webp

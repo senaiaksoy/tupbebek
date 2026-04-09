@@ -3,7 +3,8 @@ title: "Akraba Evliliği Neden Tehlikelidir?"
 description: "Akraba evliliklerinin genetik riskleri, artan hastalık olasılıkları ve toplum sağlığı üzerindeki etkileri hakkında detaylı bilgi."
 publishDate: 2026-03-31
 author: "tupbebek.com Yayın Kurulu"
-authorTitle: "Yayın Kurulu"
+authorTitle: "Editoryal Ekip"
+authorCredentials: "Doç. Dr. Senai Aksoy editörlüğünde"
 medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Tıbbi Danışma Kurulu"
 reviewDate: 2026-04-06

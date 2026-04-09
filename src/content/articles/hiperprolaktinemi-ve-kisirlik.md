@@ -3,7 +3,11 @@ title: "Hiperprolaktinemi ve Kısırlık. Hormonal Bulmacanın Şifrelerini Çö
 description: "Hiperprolaktinemi ve kısırlık arasındaki gizemli bağı keşfedin. Bu hormonal zorlukla başa çıkmanın yollarını öğrenin."
 publishDate: 2024-06-11
 author: "tupbebek.com Yayın Kurulu"
-medicalReviewer: "Yayın Kurulu"
+authorTitle: "Editoryal Ekip"
+authorCredentials: "Doç. Dr. Senai Aksoy editörlüğünde"
+medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
+reviewerTitle: "Tıbbi Danışma Kurulu"
+reviewDate: 2026-04-09
 lastModified: 2026-04-03
 category: "Kadın Sağlığı"
 image: /images/library/hastalik/prolaktin.webp

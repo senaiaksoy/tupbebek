@@ -3,7 +3,11 @@ title: "Vajinal Mikrobiyom ve FIV Başarısı. Sessiz Bir Devrim"
 description: "Vajinal mikrobiyom FIV başarısını %30-40 etkileyebilir. L. crispatus dominasyonu gebelik şansını 6 kat artırır. 2025 verilerine dayalı bilimsel rehber."
 publishDate: 2025-11-12
 author: "tupbebek.com Yayın Kurulu"
-medicalReviewer: "Yayın Kurulu"
+authorTitle: "Editoryal Ekip"
+authorCredentials: "Doç. Dr. Senai Aksoy editörlüğünde"
+medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
+reviewerTitle: "Tıbbi Danışma Kurulu"
+reviewDate: 2026-04-09
 lastModified: 2026-04-03
 category: "Tüp Bebek"
 image: /images/library/laboratuvar/microbiota.webp
