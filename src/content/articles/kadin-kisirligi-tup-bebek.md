@@ -11,6 +11,7 @@ reviewDate: 2026-04-09
 lastModified: 2026-04-03
 category: "Tüp Bebek"
 image: /images/library/laboratuvar/icsicizim.webp
+imageAlt: "kadın kısırlığı tanı süreci ve tüp bebek tedavisi ICSI illüstrasyonu"
 references:
   - title: "Diagnostic evaluation of the infertile female: a committee opinion"
     authors: "Practice Committee of the American Society for Reproductive Medicine"

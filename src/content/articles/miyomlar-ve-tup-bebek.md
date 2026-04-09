@@ -11,6 +11,7 @@ reviewDate: 2026-04-09
 lastModified: 2026-04-03
 category: "Tüp Bebek"
 image: /images/library/hastalik/miyom_ivf.webp
+imageAlt: "miyomlar ve tüp bebek tedavisi sürecindeki etkileri"
 references:
   - title: "The effect of intramural fibroids without uterine cavity involvement on the outcome of IVF treatment: a systematic review and meta-analysis"
     authors: "Sunkara SK, Khairy M, El-Toukhy T et al."

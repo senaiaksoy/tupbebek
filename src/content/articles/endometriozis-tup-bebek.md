@@ -11,6 +11,7 @@ reviewDate: 2026-04-09
 lastModified: 2026-04-03
 category: "Tüp Bebek"
 image: /images/library/hastalik/endometriosis_tedavi.webp
+imageAlt: "endometriozis tedavisi ve tüp bebek sürecinde güncel yaklaşımlar"
 references:
   - title: "Endometriosis: ESHRE Guideline"
     authors: "Becker CM, Bokor A, Heikinheimo O et al."

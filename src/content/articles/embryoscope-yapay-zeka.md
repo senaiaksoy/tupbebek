@@ -11,6 +11,7 @@ reviewDate: 2026-04-09
 lastModified: 2026-04-03
 category: "Tüp Bebek"
 image: /images/library/laboratuvar/embryoscop.webp
+imageAlt: "EmbryoScope time-lapse embriyo izleme sistemi ve yapay zeka destekli embriyo seçimi"
 references:
   - title: "The effect of the duration of an oocyte's first cell cycle on the clinical outcome of in vitro fertilization"
     authors: "Meseguer M, Herrero J, Tejera A et al."

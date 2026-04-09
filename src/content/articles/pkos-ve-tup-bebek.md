@@ -1,6 +1,7 @@
 ---
 title: "PKOS ve Tüp Bebek: Anne Olma Yolculuğunuz"
 description: "Bu içerik PCOS ve IVF rehberimizle birleştirilmiştir."
+status: "draft"
 publishDate: 2024-09-05
 author: "tupbebek.com Yayın Kurulu"
 authorTitle: "Editoryal Ekip"
@@ -11,6 +12,7 @@ reviewDate: 2026-04-09
 lastModified: 2026-04-05
 category: "Kadın Sağlığı"
 image: /images/library/hastalik/pkos-ve-ivf.webp
+imageAlt: "polikistik over sendromu PKOS ve tüp bebek tedavi süreci"
 references:
   - title: "Revised 2003 consensus on diagnostic criteria and long-term health risks related to polycystic ovary syndrome (PCOS)"
     authors: "Rotterdam ESHRE/ASRM-Sponsored PCOS Consensus Workshop Group"

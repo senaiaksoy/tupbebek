@@ -11,6 +11,7 @@ reviewDate: 2026-04-09
 lastModified: 2026-04-03
 category: "Kadın Sağlığı"
 image: /images/library/hastalik/kisirlik_endometriozis.webp
+imageAlt: "endometriozis ve kısırlık ilişkisi tedavi stratejileri illüstrasyonu"
 references:
   - title: "Endometriosis"
     authors: "Zondervan KT, Becker CM, Missmer SA"

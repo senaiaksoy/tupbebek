@@ -11,6 +11,7 @@ reviewDate: 2026-04-09
 lastModified: 2026-04-03
 category: "Kadın Sağlığı"
 image: /images/library/klinik/65.webp
+imageAlt: "endometrioma çikolata kisti ve yumurtalık üzerindeki etkileri illüstrasyonu"
 references:
   - title: "Oocyte retrieval after endometrioma cystectomy: a systematic review and meta-analysis"
     authors: "Somigliana E, Berlanda N, Benaglia L et al."

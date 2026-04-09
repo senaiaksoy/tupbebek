@@ -11,6 +11,7 @@ reviewDate: 2026-04-09
 lastModified: 2026-04-03
 category: "Tüp Bebek"
 image: /images/library/tedavi/taze-donmus-transfert.webp
+imageAlt: "taze ve dondurulmuş embriyo transferi karşılaştırması"
 references:
   - title: "Freeze-only versus fresh embryo transfer in a multicenter matched-cohort study: contribution of progesterone and maternal age to success rates"
     authors: "Shi Y, Sun Y, Hao C, Zhang H, Wei D, Zhang Y et al."

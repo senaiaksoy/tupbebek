@@ -11,6 +11,7 @@ reviewDate: 2026-04-09
 lastModified: 2026-04-05
 category: "Genetik"
 image: /images/library/embriyo/pgt_sex.webp
+imageAlt: "PGT preimplantasyon genetik test ve cinsiyet belirleme embriyo analizi"
 references:
   - title: "ESHRE Task Force on Ethics and Law 14: equity of access to assisted reproductive technology"
     authors: "Pennings G, de Wert G, Shenfield F, et al."

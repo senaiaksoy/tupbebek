@@ -11,6 +11,7 @@ reviewDate: 2026-04-09
 lastModified: 2026-04-03
 category: "Tüp Bebek"
 image: /images/library/tedavi/tup_bebek_muayene.webp
+imageAlt: "tüp bebek süreci ilk muayeneden embriyo transferine adım adım rehber"
 references:
   - title: "IVF in the medically complicated patient: a guide to management"
     authors: "Macklon NS, Stouffer RL, Giudice LC, Fauser BC"

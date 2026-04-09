@@ -11,6 +11,7 @@ reviewDate: 2026-04-09
 lastModified: 2026-04-03
 category: "Tüp Bebek"
 image: /images/library/embriyo/yumurta-sayisi.webp
+imageAlt: "tüp bebek tedavisinde yumurta sayısı ve başarı oranı ilişkisi"
 references:
   - title: "Association between the number of eggs and live birth in IVF treatment: an analysis of 400 135 treatment cycles"
     authors: "Sunkara SK, Rittenberg V, Raine-Fenning N et al."

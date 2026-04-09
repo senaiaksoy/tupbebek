@@ -11,6 +11,7 @@ reviewDate: 2026-04-09
 lastModified: 2026-04-03
 category: "Gebelik"
 image: /images/library/embriyo/kimyasal-gebelik.webp
+imageAlt: "kimyasal gebelik erken gebelik kaybı ve embriyo tutunma süreci"
 references:
   - title: "Conception to ongoing pregnancy: the 'black box' of early pregnancy loss"
     authors: "Macklon NS, Geraedts JP, Fauser BC"

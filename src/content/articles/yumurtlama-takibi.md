@@ -11,6 +11,7 @@ reviewDate: 2026-04-09
 lastModified: 2026-04-03
 category: "Tanı ve Testler"
 image: /images/library/klinik/54.webp
+imageAlt: "yumurtlama takibi ve ovülasyon izleme süreci"
 references:
   - title: "Timing of sexual intercourse in relation to ovulation: effects on the probability of conception, survival of the pregnancy, and sex of the baby"
     authors: "Wilcox AJ, Weinberg CR, Baird DD"

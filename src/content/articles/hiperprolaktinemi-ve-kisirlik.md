@@ -11,6 +11,7 @@ reviewDate: 2026-04-09
 lastModified: 2026-04-03
 category: "Kadın Sağlığı"
 image: /images/library/hastalik/prolaktin.webp
+imageAlt: "hiperprolaktinemi yüksek prolaktin hormonu ve kısırlık ilişkisi"
 references:
   - title: "Hyperprolactinemia and infertility: new insights"
     authors: "Majumdar A, Mangal NS"
