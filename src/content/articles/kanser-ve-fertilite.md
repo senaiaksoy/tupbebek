@@ -2,6 +2,7 @@
 title: "Kanser ve Fertilite: Onkolojik Hastalar İçin Rehber"
 description: "Kanser tanısı sonrası fertilite koruma seçenekleri nelerdir? Onkolojik hastalarda yumurta, sperm ve embriyo dondurma süreçleri, acil protokoller ve hasta hakları rehberi."
 publishDate: 2026-04-01
+lastModified: 2026-04-01
 author: "tupbebek.com Yayın Kurulu"
 authorTitle: "Editoryal Ekip"
 authorCredentials: "Doç. Dr. Senai Aksoy editörlüğünde"
