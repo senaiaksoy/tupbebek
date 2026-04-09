@@ -1,6 +1,7 @@
 ---
 title: "PKOS ve Tüp Bebek: Anne Olma Yolculuğunuz"
 description: "Bu içerik PCOS ve IVF rehberimizle birleştirilmiştir."
+status: "draft"
 publishDate: 2024-09-05
 author: "tupbebek.com Yayın Kurulu"
 medicalReviewer: "Yayın Kurulu"

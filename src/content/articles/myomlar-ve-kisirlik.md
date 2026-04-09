@@ -1,6 +1,7 @@
 ---
 title: "Myomlar ve Kısırlığa Dair A'dan Z'ye Rehber"
 description: "Bu içerik miyomlar ve tüp bebek rehberimizle birleştirilmiştir."
+status: "draft"
 publishDate: 2024-04-17
 author: "tupbebek.com Yayın Kurulu"
 medicalReviewer: "Yayın Kurulu"

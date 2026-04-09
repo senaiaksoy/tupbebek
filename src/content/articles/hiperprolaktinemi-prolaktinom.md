@@ -1,6 +1,7 @@
 ---
 title: "Hiperprolaktinemi ve Prolaktinomu Anlamak"
 description: "Bu içerik hiperprolaktinemi ve kısırlık rehberimizle birleştirilmiştir."
+status: "draft"
 publishDate: 2024-10-29
 author: "tupbebek.com Yayın Kurulu"
 medicalReviewer: "Yayın Kurulu"

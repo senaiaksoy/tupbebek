@@ -8,6 +8,12 @@ import mdx from '@astrojs/mdx';
 export default defineConfig({
   site: 'https://tupbebek.com',
   output: 'hybrid',
+  redirects: {
+    '/makaleler/hiperprolaktinemi-prolaktinom': '/makaleler/hiperprolaktinemi-ve-kisirlik',
+    '/makaleler/myomlar-ve-kisirlik': '/makaleler/miyomlar-ve-tup-bebek',
+    '/makaleler/pkos-ve-tup-bebek': '/makaleler/opk-ve-ivf',
+    '/makaleler/dondurulmus-embriyo-transferi': '/makaleler/taze-dondurulmus-transfer',
+  },
   adapter: cloudflare({
     platformProxy: { enabled: true },
   }),
