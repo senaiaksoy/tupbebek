@@ -316,7 +316,7 @@ const fallbackData = await getSearchData();
                   <div class="flex items-center gap-4">
                     ${image ? `
                       <div class="w-12 h-12 rounded-xl overflow-hidden flex-shrink-0 shadow-sm border border-gray-100">
-                        <img src="${image}" alt="" class="w-full h-full object-cover group-hover/item:scale-105 transition-transform duration-300" loading="lazy" />
+                        <img src="${image}" alt="${title}" class="w-full h-full object-cover group-hover/item:scale-105 transition-transform duration-300" loading="lazy" />
                       </div>
                     ` : `
                       <div class="w-12 h-12 ${style.bg} rounded-xl flex items-center justify-center flex-shrink-0 shadow-sm border border-white transition-all group-hover/item:bg-white/20">

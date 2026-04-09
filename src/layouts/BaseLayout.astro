@@ -292,5 +292,10 @@ const medicalWebPageSchema = {
 		<CookieConsent />
 
 		<!-- Prestige Badge removed — trust indicators now in HeroSection trust bar -->
+
+		<!-- A11y: Hide decorative Material Symbols icons from screen readers -->
+		<script is:inline>
+			document.querySelectorAll('.material-symbols-outlined').forEach(function(el){el.setAttribute('aria-hidden','true')});
+		</script>
 	</body>
 </html>

@@ -2,6 +2,7 @@
 title: "Amenore (Adet Görememe): Kadın Sağlığında Sessiz Bir Belirti"
 description: "Amenore nedir, nedenleri ve tedavi yöntemleri hakkında detaylı bilgi. Kadın sağlığında adet görmemenin sebeplerini ve çözümlerini öğrenin."
 publishDate: 2026-03-31
+lastModified: 2026-03-31
 author: "tupbebek.com Yayın Kurulu"
 authorTitle: "Editoryal Ekip"
 authorCredentials: "Doç. Dr. Senai Aksoy editörlüğünde"

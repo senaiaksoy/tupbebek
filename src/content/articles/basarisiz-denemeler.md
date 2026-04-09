@@ -9,6 +9,7 @@ medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Tıbbi Danışma Kurulu"
 reviewDate: 2026-04-06
 publishDate: 2024-03-31
+lastModified: 2024-03-31
 image: "/images/library/embriyo/yumurta_dna_kalitesi.webp"
 imageAlt: "Embriyo DNA kalitesi ve başarısız deneme analizi"
 references:
