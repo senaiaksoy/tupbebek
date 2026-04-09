@@ -56,7 +56,7 @@ Bu iki yöntemin isimlerini duyunca gözünüz korkabilir, biliyorum. Ama aslın
 
 ### Taze Transfer: "Sıcağı Sıcağına" Yolculuk
 
-Taze transfer, isminden de anlaşılacağı gibi, embriyonun oluşturulduğu tüp bebek döngüsü içinde, "sıcağı sıcağına" yapılan transferdir. Yumurtalarınız toplandıktan sonra laboratuvarda sperm ile döllenir ve gelişen embriyo, [genellikle 3. veya 5. günde](/blog/embriyo-transferi-kacinci-gunde-yapilmalidir/) rahminize transfer edilir. Bu süreçte vücudunuz, yumurtalıkları uyarmak için kullanılan yüksek doz hormon ilaçlarının etkisi altındadır. Yani transfer, fizyolojik olarak normalden çok daha yüksek hormon seviyelerinin olduğu bir dönemde gerçekleşir.
+Taze transfer, isminden de anlaşılacağı gibi, embriyonun oluşturulduğu tüp bebek döngüsü içinde, "sıcağı sıcağına" yapılan transferdir. Yumurtalarınız toplandıktan sonra laboratuvarda sperm ile döllenir ve gelişen embriyo, [genellikle 3. veya 5. günde](/makaleler/embriyo-transferi-gun-secimi/) rahminize transfer edilir. Bu süreçte vücudunuz, yumurtalıkları uyarmak için kullanılan yüksek doz hormon ilaçlarının etkisi altındadır. Yani transfer, fizyolojik olarak normalden çok daha yüksek hormon seviyelerinin olduğu bir dönemde gerçekleşir.
 
 ### Dondurulmuş Transfer (FET): "Zamanlanmış ve Planlı" Bir Başlangıç
 
@@ -64,7 +64,7 @@ Dondurulmuş embriyo transferinde (FET) ise işler biraz farklı yürüyor. Yumu
 
 Birkaç ay sonra, rahminizi embriyo tutunması için en uygun hale getirmek için daha hafif ilaçlar kullanıyoruz. Rahim duvarı (endometrium) doğru kalınlığa ve yapıya ulaştığında, dondurulmuş embriyoyu çözüp transfer ediyoruz.
 
-Bu yöntemin günümüzde bu kadar başarılı ve popüler olmasının ardında yatan teknolojik devrim ise [**vitrifikasyon**](/blog/embriyo-dondurma-teknigi-vitrifikasyon/)'dur. Bu "şok dondurma" tekniği, embriyonun hücrelerinde hasara yol açabilecek buz kristallerinin oluşumunu engelleyerek, embriyoların -196 derecede, sıvı azot içinde yıllarca güvenle saklanmasını sağlar. Bu teknoloji sayesinde, çözülen embriyoların hayatta kalma oranı neredeyse %100'e ulaşmıştır.
+Bu yöntemin günümüzde bu kadar başarılı ve popüler olmasının ardında yatan teknolojik devrim ise [**vitrifikasyon**](/makaleler/taze-dondurulmus-transfer/)'dur. Bu "şok dondurma" tekniği, embriyonun hücrelerinde hasara yol açabilecek buz kristallerinin oluşumunu engelleyerek, embriyoların -196 derecede, sıvı azot içinde yıllarca güvenle saklanmasını sağlar. Bu teknoloji sayesinde, çözülen embriyoların hayatta kalma oranı neredeyse %100'e ulaşmıştır.
 
 ## Dondurulmuş Embriyo Transferi (FET) Neden Öne Çıkıyor? Avantajları
 
@@ -76,7 +76,7 @@ Taze transferlerdeki yüksek hormon seviyeleri bazen rahmin embriyoyu kabul etme
 
 ### OHSS Riskine Karşı Güçlü Kalkan
 
-[Yumurtalıkların Aşırı Uyarılması Sendromu](/blog/ilacsiz-tup-bebek-ivm-yontemi-ne-kadar-basarili/), tüp bebek tedavisinin en ciddi komplikasyonlarından biridir. Özellikle Polikistik Over Sendromu (PCOS) olan veya tedaviye çok sayıda yumurta ile yanıt veren kadınlarda risk artar. Taze transfer yapıldığında, gebeliğin başlamasıyla salgılanan hormonlar mevcut OHSS tablosunu çok daha ağırlaştırabilir. "Tümünü dondurma" (freeze-all) stratejisi ise bu riski neredeyse tamamen ortadan kaldırır. Embriyoları dondurarak transferi ertelediğimizde, vücudun sakinleşmesini bekler ve anne adayının sağlığını ilk sıraya koymuş oluruz. Bu yaklaşım, Amerikan Üreme Tıbbı Derneği (ASRM) gibi önde gelen kuruluşlar tarafından yüksek riskli hastalarda özellikle tavsiye edilmektedir.
+[Yumurtalıkların Aşırı Uyarılması Sendromu](/makaleler/ivf-protokolleri/), tüp bebek tedavisinin en ciddi komplikasyonlarından biridir. Özellikle Polikistik Over Sendromu (PCOS) olan veya tedaviye çok sayıda yumurta ile yanıt veren kadınlarda risk artar. Taze transfer yapıldığında, gebeliğin başlamasıyla salgılanan hormonlar mevcut OHSS tablosunu çok daha ağırlaştırabilir. "Tümünü dondurma" (freeze-all) stratejisi ise bu riski neredeyse tamamen ortadan kaldırır. Embriyoları dondurarak transferi ertelediğimizde, vücudun sakinleşmesini bekler ve anne adayının sağlığını ilk sıraya koymuş oluruz. Bu yaklaşım, Amerikan Üreme Tıbbı Derneği (ASRM) gibi önde gelen kuruluşlar tarafından yüksek riskli hastalarda özellikle tavsiye edilmektedir.
 
 ### Genetik Sağlık ve Planlama Esnekliği (PGT)
 

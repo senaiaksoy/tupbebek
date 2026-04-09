@@ -49,7 +49,7 @@ Karar verme sürecine geçmeden önce, tam olarak neyle karşı karşıya olduğ
 
 Miyomları daha iyi anlamak için onları bir apartmandaki komşulara benzetebiliriz. Bazı komşular sessiz sedasız yaşar, varlıklarını bile hissetmezsiniz. Bazıları ise sürekli gürültü yapar, ortak alanları işgal eder ve apartmanın huzurunu bozar. Miyomlar da tıpkı böyledir. Onların "davranışını" belirleyen şey ise apartmanın, yani rahmin neresinde "oturduklarıdır". Bu konuma göre miyomları üç ana gruba ayırırız:
 
-* **Submüköz Miyom (Salonun Ortasındaki Komşu):** Bu miyomlar, rahmin iç boşluğuna, yani bir bebeğin yerleşip büyüyeceği "salona" doğru büyürler. Apartmanın en kritik yerini işgal ettikleri için genellikle en "sorunlu" komşulardır. Boyutları küçük bile olsa, aşırı adet kanamalarına, düşüklere ve [kısırlığa](/blog/kisirlik-infertilite-nedir-nedenleri-nelerdir/) neden olabilirler.
+* **Submüköz Miyom (Salonun Ortasındaki Komşu):** Bu miyomlar, rahmin iç boşluğuna, yani bir bebeğin yerleşip büyüyeceği "salona" doğru büyürler. Apartmanın en kritik yerini işgal ettikleri için genellikle en "sorunlu" komşulardır. Boyutları küçük bile olsa, aşırı adet kanamalarına, düşüklere ve [kısırlığa](/makaleler/kadin-kisirligi-tup-bebek/) neden olabilirler.
 * **İntramural Miyom (Duvarın İçindeki Komşu):** En sık görülen miyom tipidir. Rahim duvarının içinde, yani "apartmanın duvarları" arasında yer alırlar. Küçükken genellikle sessizdirler. Ancak büyüdükçe hem içeriye (salona) hem de dışarıya (bahçeye) doğru baskı yapabilir, rahmin şeklinde bozulmalara ve ciddi şikayetlere yol açabilirler.
 * **Subseröz Miyom (Bahçedeki Komşu):** Bu miyomlar, rahmin dış yüzeyine, yani "apartmanın bahçesine" doğru büyürler. Rahmin iç işleyişine genellikle karışmadıkları için çoğunlukla en "sessiz" ve en az sorun çıkaran komşulardır. Çok büyük boyutlara ulaşmadıkları sürece belirti vermeyebilirler.
 
@@ -66,7 +66,7 @@ Eğer teşhisiniz **submüköz miyom** ise, sizin için trafik lambası yeşil y
 * **Neden Harekete Geçilmeli?** Submüköz miyomlar, rahmin en hassas ve fonksiyonel bölgesi olan endometrium tabakasını, yani embriyonun tutunacağı yatağı doğrudan etkiler. Boyutları ne olursa olsun, bu miyomlar genellikle şu sorunlara yol açar:
     * Şiddetli, uzun süren ve pıhtılı adet kanamaları, bu duruma bağlı olarak gelişen demir eksikliği anemisi (kansızlık).
     * Embriyonun rahme tutunmasını engelleyerek kısırlığa neden olma.
-    * [Tekrarlayan düşükler](/blog/tekrarlayan-dusuklerin-nedenleri/) yol açma.
+    * [Tekrarlayan düşükler](/makaleler/basarisiz-denemeler/) yol açma.
     * Tekrarlayan [tüp bebek](/tup-bebek-asamalari/) başarısızlıkları.
 
 Bu nedenlerle, gebelik planı olsun ya da olmasın, semptomlara neden olan bir submüköz miyom tespit edildiğinde genellikle cerrahi müdahale önerilir.
@@ -138,7 +138,7 @@ Unutmayın, "miyom ameliyatı" tek bir şey değildir. Cerrahın deneyimi ve kul
 
 Miyomektomi, sadece miyomların alınıp rahmin korunduğu ameliyatın adıdır. Bu ameliyat başlıca üç farklı teknikle yapılabilir:
 
-* **[Laparoskopi (Kapalı Ameliyat)](/blog/laparoskopi-nedir/):** Günümüzde altın standart olarak kabul edilen yöntemdir. Göbek deliğinden ve kasık bölgesinden açılan 3-4 adet küçük (0.5-1 cm) delikten içeriye kamera ve cerrahi aletler yerleştirilerek yapılır. Avantajları saymakla bitmez: daha az ameliyat sonrası ağrı, daha hızlı iyileşme, daha kısa hastanede kalış süresi ve estetik olarak çok daha iyi kozmetik sonuçlar. Deneyimli bir cerrahın elinde, 10-12 cm gibi büyük miyomlar bile bu yöntemle güvenle çıkarılabilir.
+* **[Laparoskopi (Kapalı Ameliyat)](/makaleler/endoskopik-cerrahi-histeroskopi/):** Günümüzde altın standart olarak kabul edilen yöntemdir. Göbek deliğinden ve kasık bölgesinden açılan 3-4 adet küçük (0.5-1 cm) delikten içeriye kamera ve cerrahi aletler yerleştirilerek yapılır. Avantajları saymakla bitmez: daha az ameliyat sonrası ağrı, daha hızlı iyileşme, daha kısa hastanede kalış süresi ve estetik olarak çok daha iyi kozmetik sonuçlar. Deneyimli bir cerrahın elinde, 10-12 cm gibi büyük miyomlar bile bu yöntemle güvenle çıkarılabilir.
 * **[Histeroskopi](/videolar/rahim-ici-yapisikliklarinda-ofis-histeroskopi/):** Sadece submüköz (rahim içine büyüyen) miyomlar için uygun olan, kesisiz bir yöntemdir. Vajinal yoldan rahim içine girilerek miyom alınır ve hasta genellikle aynı gün evine dönebilir.
 * **Açık Ameliyat (Laparotomi):** Sezaryen kesisi gibi karına yapılan daha büyük bir kesi ile gerçekleştirilir. Günümüzde daha nadiren tercih edilir. Genellikle çok sayıda miyomun olduğu, miyomların çok büyük boyutlarda (örneğin 14-15 cm'den büyük) olduğu veya kanser şüphesi gibi özel durumlarda başvurulan bir yöntemdir.
 
