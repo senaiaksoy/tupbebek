@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build && npx pagefind --site dist --glob \"makaleler/**/*.html\" && echo _worker.js > dist/.assetsignore",
+    "build": "astro build && echo _worker.js > dist/.assetsignore && npx pagefind --site dist --glob \"makaleler/**/*.html\"",
     "preview": "astro preview",
     "astro": "astro"
   },
