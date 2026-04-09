@@ -7,6 +7,7 @@ medicalReviewer: "Yayın Kurulu"
 lastModified: 2026-04-05
 category: "Kadın Sağlığı"
 image: /images/library/hastalik/myom.webp
+imageAlt: "myomların kısırlık üzerindeki etkileri ve tedavi seçenekleri"
 references:
   - title: "Uterine fibroid management: from the present to the future"
     authors: "Donnez J, Dolmans MM"

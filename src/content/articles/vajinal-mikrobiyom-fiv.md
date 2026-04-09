@@ -7,6 +7,7 @@ medicalReviewer: "Yayın Kurulu"
 lastModified: 2026-04-03
 category: "Tüp Bebek"
 image: /images/library/laboratuvar/microbiota.webp
+imageAlt: "vajinal mikrobiyom florası ve tüp bebek başarısı üzerindeki etkileri"
 references:
   - title: "Evidence that the endometrial microbiota has an effect on implantation success or failure"
     authors: "Moreno I, Codoñer FM, Vilella F et al."

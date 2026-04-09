@@ -7,6 +7,7 @@ medicalReviewer: "Yayın Kurulu"
 lastModified: 2026-04-03
 category: "Tedavi Yöntemleri"
 image: /images/makaleler/ivf-protokolleri.webp
+imageAlt: "IVF tedavisinde uzun ve kısa protokol karşılaştırması"
 references:
   - title: "GnRH antagonists for assisted reproductive technology"
     authors: "Al-Inany HG, Youssef MA, Ayeleke RO et al."

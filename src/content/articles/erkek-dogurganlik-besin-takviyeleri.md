@@ -7,6 +7,7 @@ medicalReviewer: "Yayın Kurulu"
 lastModified: 2026-04-03
 category: "Erkek Sağlığı"
 image: /images/library/hastalik/erkekinfertilite.webp
+imageAlt: "erkek doğurganlığını destekleyen besin takviyeleri ve vitaminler"
 references:
   - title: "Antioxidants for male subfertility"
     authors: "Smits RM, Mackenzie-Proctor R, Yazdani A et al."

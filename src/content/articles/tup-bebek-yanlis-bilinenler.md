@@ -7,6 +7,7 @@ medicalReviewer: "Yayın Kurulu"
 lastModified: 2026-04-03
 category: "Tüp Bebek"
 image: /images/library/klinik/41.webp
+imageAlt: "tüp bebek ve kısırlık hakkında doğru bilinen yanlışlar"
 references:
   - title: "What do we know about public awareness of infertility? A systematic review"
     authors: "Bunting L, Boivin J"

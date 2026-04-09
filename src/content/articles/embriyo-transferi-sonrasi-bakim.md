@@ -7,6 +7,7 @@ medicalReviewer: "Yayın Kurulu"
 lastModified: 2026-04-03
 category: "Tüp Bebek"
 image: /images/library/tedavi/post_transfert.webp
+imageAlt: "embriyo transferi sonrası bakım ve dinlenme süreci illüstrasyonu"
 references:
   - title: "Bed rest after embryo transfer: a systematic review and meta-analysis"
     authors: "Craciunas L, Tsampras N"

@@ -7,6 +7,7 @@ medicalReviewer: "Yayın Kurulu"
 lastModified: 2026-04-03
 category: "Kadın Sağlığı"
 image: /images/library/hastalik/hidrosalpinks.webp
+imageAlt: "hidrosalpinks tüp tıkanıklığı ve kısırlık üzerindeki etkileri"
 references:
   - title: "The effect of hydrosalpinx on IVF-ET outcome"
     authors: "Zeyneloglu HB, Arici A, Olive DL"

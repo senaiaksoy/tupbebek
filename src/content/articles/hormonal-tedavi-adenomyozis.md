@@ -7,6 +7,7 @@ medicalReviewer: "Yayın Kurulu"
 lastModified: 2026-04-03
 category: "Tedavi Yöntemleri"
 image: /images/library/hastalik/prolakktin.webp
+imageAlt: "adenomyozis hormonal tedavi ve tüp bebek başarısı illüstrasyonu"
 references:
   - title: "Adenomyosis and in vitro fertilization outcomes: a systematic review and meta-analysis"
     authors: "Vercellini P, Consonni D, Dridi D et al."

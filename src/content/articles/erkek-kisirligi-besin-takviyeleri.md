@@ -7,6 +7,7 @@ medicalReviewer: "Yayın Kurulu"
 lastModified: 2026-04-03
 category: "Erkek Sağlığı"
 image: /images/library/tedavi/sperm_supp.webp
+imageAlt: "erkek kısırlığında sperm kalitesini artıran besin takviyeleri"
 references:
   - title: "The role of diet and nutrition in male fertility: a systematic review of observational studies"
     authors: "Salas-Huetos A, Bulló M, Salas-Salvadó J"

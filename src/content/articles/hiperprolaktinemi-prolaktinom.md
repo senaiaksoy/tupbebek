@@ -7,6 +7,7 @@ medicalReviewer: "Yayın Kurulu"
 lastModified: 2026-04-05
 category: "Kadın Sağlığı"
 image: /images/library/klinik/70.webp
+imageAlt: "hiperprolaktinemi ve prolaktinom hormonal dengesizlik illüstrasyonu"
 references:
   - title: "Diagnosis and treatment of hyperprolactinemia: an Endocrine Society clinical practice guideline"
     authors: "Melmed S, Casanueva FF, Hoffman AR et al."

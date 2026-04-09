@@ -7,6 +7,7 @@ medicalReviewer: "Yayın Kurulu"
 lastModified: 2026-04-03
 category: "Tedavi Yöntemleri"
 image: /images/library/klinik/83.webp
+imageAlt: "endoskopik cerrahi histeroskopi işlemi ve rahim içi görüntüleme"
 references:
   - title: "Office hysteroscopy"
     authors: "Bettocchi S, Selvaggi L"

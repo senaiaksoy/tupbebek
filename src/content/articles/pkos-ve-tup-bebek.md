@@ -7,6 +7,7 @@ medicalReviewer: "Yayın Kurulu"
 lastModified: 2026-04-05
 category: "Kadın Sağlığı"
 image: /images/library/hastalik/pkos-ve-ivf.webp
+imageAlt: "polikistik over sendromu PKOS ve tüp bebek tedavi süreci"
 references:
   - title: "Revised 2003 consensus on diagnostic criteria and long-term health risks related to polycystic ovary syndrome (PCOS)"
     authors: "Rotterdam ESHRE/ASRM-Sponsored PCOS Consensus Workshop Group"

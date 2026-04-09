@@ -7,6 +7,7 @@ medicalReviewer: "Yayın Kurulu"
 lastModified: 2026-04-03
 category: "Erkek Sağlığı"
 image: /images/library/klinik/ceptel.webp
+imageAlt: "cep telefonu elektromanyetik dalgaları ve sperm kalitesi üzerine etkisi illüstrasyonu"
 references:
   - title: "Effect of mobile telephones on sperm quality: a systematic review and meta-analysis"
     authors: "Adams JA, Galloway TS, Mondal D et al."

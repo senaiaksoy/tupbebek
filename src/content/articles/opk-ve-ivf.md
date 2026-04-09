@@ -7,6 +7,7 @@ medicalReviewer: "Yayın Kurulu"
 lastModified: 2026-04-03
 category: "Kadın Sağlığı"
 image: /images/library/hastalik/opkveivf.webp
+imageAlt: "polikistik over sendromu PCOS ve IVF tedavi süreci"
 references:
   - title: "GnRH agonist trigger and LH activity luteal phase support versus hCG trigger and conventional luteal phase support in fresh embryo transfer IVF/ICSI cycles"
     authors: "Humaidan P, Kol S, Papanikolaou EG"

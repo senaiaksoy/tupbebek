@@ -7,6 +7,7 @@ medicalReviewer: "Yayın Kurulu"
 lastModified: 2026-04-03
 category: "Tedavi Yöntemleri"
 image: /images/library/klinik/181.webp
+imageAlt: "mikroenjeksiyon ICSI işlemi spermin yumurtaya enjekte edilmesi"
 references:
   - title: "Pregnancies after intracytoplasmic injection of single spermatozoon into an oocyte"
     authors: "Palermo G, Joris H, Devroey P, Van Steirteghem AC"

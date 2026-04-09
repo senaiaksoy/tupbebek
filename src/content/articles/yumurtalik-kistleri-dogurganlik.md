@@ -7,6 +7,7 @@ medicalReviewer: "Yayın Kurulu"
 lastModified: 2026-04-03
 category: "Kadın Sağlığı"
 image: /images/library/klinik/237.webp
+imageAlt: "yumurtalık kistleri ve doğurganlık üzerindeki etkileri"
 references:
   - title: "Endometriosis and infertility: pathophysiology and management"
     authors: "Vercellini P, Viganò P, Somigliana E, Fedele L"

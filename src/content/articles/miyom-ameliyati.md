@@ -7,6 +7,7 @@ medicalReviewer: "Yayın Kurulu"
 lastModified: 2026-04-03
 category: "Kadın Sağlığı"
 image: /images/library/hastalik/miyom-ameliyati-ne-zaman-gerekir.webp
+imageAlt: "miyom ameliyatı gerekliliği ve cerrahi tedavi yöntemleri"
 references:
   - title: "Fibroids and infertility: a systematic review of the evidence"
     authors: "Pritts EA, Parker WH, Olive DL"

@@ -7,6 +7,7 @@ medicalReviewer: "Yayın Kurulu"
 lastModified: 2026-04-03
 category: "Tedavi Yöntemleri"
 image: /images/library/tedavi/prp.webp
+imageAlt: "over PRP tedavisi yumurtalık gençleştirme illüstrasyonu"
 references:
   - title: "Autologous platelet-rich plasma treatment enables pregnancy for a woman with premature ovarian insufficiency"
     authors: "Sfakianoudis K, Simopoulou M, Nitsos N, et al."

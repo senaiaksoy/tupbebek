@@ -7,6 +7,7 @@ medicalReviewer: "Yayın Kurulu"
 lastModified: 2026-04-03
 category: "Tedavi Yöntemleri"
 image: /images/library/tedavi/iac.webp
+imageAlt: "intrauterin inseminasyon IUI aşılama işlemi illüstrasyonu"
 references:
   - title: "Intrauterine insemination for cervical factor subfertility"
     authors: "Besselink DE, Farquhar C"
