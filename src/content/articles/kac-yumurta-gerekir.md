@@ -3,7 +3,11 @@ title: "Tüp Bebek Tedavisinde Başarı İçin Gerçekten Kaç Yumurta Gerekir?"
 description: "Tüp bebek tedavisinde başarı şansını artırmak için kaç yumurta gerekir? Yumurta sayısı, kalite ve yaş etkenleri hakkında tupbebek.com'dan bilimsel açıklama."
 publishDate: 2025-10-08
 author: "tupbebek.com Yayın Kurulu"
-medicalReviewer: "Yayın Kurulu"
+authorTitle: "Editoryal Ekip"
+authorCredentials: "Doç. Dr. Senai Aksoy editörlüğünde"
+medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
+reviewerTitle: "Tıbbi Danışma Kurulu"
+reviewDate: 2026-04-09
 lastModified: 2026-04-03
 category: "Tüp Bebek"
 image: /images/library/embriyo/yumurta-sayisi.webp

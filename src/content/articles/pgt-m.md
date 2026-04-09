@@ -3,7 +3,11 @@ title: "PGT-M Nedir? Tek Gen Hastalıklarını Embriyoda Taramak"
 description: "PGT-M (Preimplantasyon Genetik Test - Monogenik) nedir? Hangi hastalıklar taranır? Kimler için gereklidir? Hazırlık süreci, uygulama adımları ve sık sorulan sorular."
 publishDate: 2024-05-07
 author: "tupbebek.com Yayın Kurulu"
-medicalReviewer: "Doç. Dr. Senai Aksoy"
+authorTitle: "Editoryal Ekip"
+authorCredentials: "Doç. Dr. Senai Aksoy editörlüğünde"
+medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
+reviewerTitle: "Tıbbi Danışma Kurulu"
+reviewDate: 2026-04-09
 lastModified: 2026-04-05
 category: "Genetik"
 image: /images/library/embriyo/pgt.webp

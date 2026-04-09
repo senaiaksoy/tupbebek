@@ -3,7 +3,11 @@ title: "Tüp Bebek ve Embriyo Transferi Sonrası Bakım. Başarıya Giden Yol"
 description: "Embriyo transferi sonrası bakım, beslenme, fiziksel aktivite, stres yönetimi ve hormonal destek hakkında bilimsel verilere dayanan kapsamlı rehber."
 publishDate: 2024-08-28
 author: "tupbebek.com Yayın Kurulu"
-medicalReviewer: "Yayın Kurulu"
+authorTitle: "Editoryal Ekip"
+authorCredentials: "Doç. Dr. Senai Aksoy editörlüğünde"
+medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
+reviewerTitle: "Tıbbi Danışma Kurulu"
+reviewDate: 2026-04-09
 lastModified: 2026-04-03
 category: "Tüp Bebek"
 image: /images/library/tedavi/post_transfert.webp

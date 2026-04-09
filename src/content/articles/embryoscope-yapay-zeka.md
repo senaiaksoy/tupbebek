@@ -3,7 +3,11 @@ title: "Tüp Bebekte Büyük Birader Dönemi. Yapay Zeka ve EmbryoScope ile En �
 description: "EmbryoScope ve Yapay Zeka teknolojileri ile embriyonun matematiksel dilini keşfedin. Time-lapse izleme, morfokinetik analiz ve iDAScore puanlaması ile gebelik şansınızı artırın."
 publishDate: 2026-01-20
 author: "tupbebek.com Yayın Kurulu"
-medicalReviewer: "Yayın Kurulu"
+authorTitle: "Editoryal Ekip"
+authorCredentials: "Doç. Dr. Senai Aksoy editörlüğünde"
+medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
+reviewerTitle: "Tıbbi Danışma Kurulu"
+reviewDate: 2026-04-09
 lastModified: 2026-04-03
 category: "Tüp Bebek"
 image: /images/library/laboratuvar/embryoscop.webp

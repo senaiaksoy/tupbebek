@@ -3,7 +3,11 @@ title: "Tüp Bebek ve Kısırlık Hakkında Yanlış Bilinen Gerçekler"
 description: "Tüp bebek uzmanı tupbebek.com yayın kurulu tüp bebek ve kısırlık hakkında halk arasında yaygın bazı yanlış inanışlar konusunda bilgi veriyor."
 publishDate: 2016-11-13
 author: "tupbebek.com Yayın Kurulu"
-medicalReviewer: "Yayın Kurulu"
+authorTitle: "Editoryal Ekip"
+authorCredentials: "Doç. Dr. Senai Aksoy editörlüğünde"
+medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
+reviewerTitle: "Tıbbi Danışma Kurulu"
+reviewDate: 2026-04-09
 lastModified: 2026-04-03
 category: "Tüp Bebek"
 image: /images/library/klinik/41.webp

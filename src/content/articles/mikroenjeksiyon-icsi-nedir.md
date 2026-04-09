@@ -3,7 +3,11 @@ title: "Mikroenjeksiyon (ICSI) nedir, kimlere uygulanır?"
 description: "Erkek kısırlığında bir devrim sayılan mikroenjeksiyonla sperm sayısı ve hareketliliği az olan veya spermlerinde şekil bozukluğu olan erkeklerde çocuk sahibi olabiliyor."
 publishDate: 2025-01-17
 author: "tupbebek.com Yayın Kurulu"
-medicalReviewer: "Yayın Kurulu"
+authorTitle: "Editoryal Ekip"
+authorCredentials: "Doç. Dr. Senai Aksoy editörlüğünde"
+medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
+reviewerTitle: "Tıbbi Danışma Kurulu"
+reviewDate: 2026-04-09
 lastModified: 2026-04-03
 category: "Tedavi Yöntemleri"
 image: /images/library/klinik/181.webp

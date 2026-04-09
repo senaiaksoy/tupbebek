@@ -3,7 +3,11 @@ title: "Kısırlık ve Endometriozis, tupbebek.com'dan 2025 Vizyonuyla Umut Dolu
 description: "Kısırlık ve Endometriozis arasındaki ilişki, tanı, tedavi seçenekleri ve tüp bebek stratejileri hakkında kapsamlı bir rehber. tupbebek.com yayın kurulunun klinik deneyimleri ve bilimsel araştırmaların ışığında umut dolu çözümler."
 publishDate: 2025-10-21
 author: "tupbebek.com Yayın Kurulu"
-medicalReviewer: "Yayın Kurulu"
+authorTitle: "Editoryal Ekip"
+authorCredentials: "Doç. Dr. Senai Aksoy editörlüğünde"
+medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
+reviewerTitle: "Tıbbi Danışma Kurulu"
+reviewDate: 2026-04-09
 lastModified: 2026-04-03
 category: "Kadın Sağlığı"
 image: /images/library/hastalik/kisirlik_endometriozis.webp

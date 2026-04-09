@@ -9,7 +9,7 @@ author:
   credentials: "Üreme Tıbbı ve Yardımcı Üreme Teknikleri"
 authorTitle: "Kadın Hastalıkları ve Doğum Uzmanı"
 authorCredentials: "Üreme Tıbbı ve Yardımcı Üreme Teknikleri"
-medicalReviewer: "Doç. Dr. Senai Aksoy"
+medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Baş Editör"
 reviewDate: 2026-04-04
 category: "Tüp Bebek"

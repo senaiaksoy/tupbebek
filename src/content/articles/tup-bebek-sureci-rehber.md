@@ -3,7 +3,11 @@ title: "Tüp Bebek Süreci. İlk Muayeneden Embriyo Transferine Adım Adım Rehb
 description: "Tüp bebek sürecini baştan sona keşfedin. ilk muayene, yumurta toplama, döllenme ve embriyo transferi adımlarını uzman anlatımıyla öğrenin."
 publishDate: 2025-08-12
 author: "tupbebek.com Yayın Kurulu"
-medicalReviewer: "Yayın Kurulu"
+authorTitle: "Editoryal Ekip"
+authorCredentials: "Doç. Dr. Senai Aksoy editörlüğünde"
+medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
+reviewerTitle: "Tıbbi Danışma Kurulu"
+reviewDate: 2026-04-09
 lastModified: 2026-04-03
 category: "Tüp Bebek"
 image: /images/library/tedavi/tup_bebek_muayene.webp

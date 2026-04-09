@@ -3,7 +3,11 @@ title: "Tüp Bebekte Kritik Karar. Taze mi, Dondurulmuş Embriyo Transferi mi?"
 description: "Tüp bebekte taze mi, dondurulmuş embriyo transferi mi? Avantajları, riskleri ve başarı oranlarını karşılaştırıyor. Size en uygun yöntemi keşfedin."
 publishDate: 2025-09-26
 author: "tupbebek.com Yayın Kurulu"
-medicalReviewer: "Yayın Kurulu"
+authorTitle: "Editoryal Ekip"
+authorCredentials: "Doç. Dr. Senai Aksoy editörlüğünde"
+medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
+reviewerTitle: "Tıbbi Danışma Kurulu"
+reviewDate: 2026-04-09
 lastModified: 2026-04-03
 category: "Tüp Bebek"
 image: /images/library/tedavi/taze-donmus-transfert.webp

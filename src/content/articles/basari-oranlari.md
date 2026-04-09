@@ -3,7 +3,11 @@ title: "Tüp Bebek Başarı Oranları ve Etki Eden Etkenler"
 description: "Tüp bebek tedavisinde başarı oranları nedir? Yaşa göre IVF başarısı, başarıyı etkileyen etkenler, laboratuvar teknolojileri ve kümülatif başarı kavramı."
 publishDate: 2026-03-31
 author: "tupbebek.com Yayın Kurulu"
-medicalReviewer: "Doç. Dr. Senai Aksoy"
+authorTitle: "Editoryal Ekip"
+authorCredentials: "Doç. Dr. Senai Aksoy editörlüğünde"
+medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
+reviewerTitle: "Tıbbi Danışma Kurulu"
+reviewDate: 2026-04-09
 lastModified: 2026-04-05
 category: "Tüp Bebek"
 image: "/images/library/istatistik/basari_oranlari_hero.webp"
