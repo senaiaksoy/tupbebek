@@ -66,36 +66,43 @@ body {
 @media print {
   body { font-size: 11pt; width: 100%; margin: 0; padding: 0; }
   .container { width: 100% !important; max-width: none !important; margin: 0 !important; padding: 0 1.5rem !important; }
-  .page-break { page-break-before: always; }
   .no-print { display: none !important; }
   .cover-page { height: 100vh; }
 
-  /* Sayfa geçişlerindeki boşlukları azalt */
+  /* Sadece faz bölümleri ve büyük geçişlerde sayfa kırılması */
+  .page-break-phase { page-break-before: always; }
+  .page-break { page-break-before: auto; }
+
+  /* Boşlukları azalt */
   .chapter { padding: 1.5rem 0 1rem; }
-  .chapter-header { margin-bottom: 1.5rem; }
+  .chapter-header { margin-bottom: 1.25rem; }
   .chapter-desc { margin-bottom: 0.5rem; }
-  .phase-header { margin: 1.5rem 0 1rem; padding: 1.5rem; }
-  .image-block { margin: 1rem 0; }
-  .info-box { margin: 1rem 0; padding: 1rem 1.25rem; }
-  .stat-grid { margin: 1rem 0; }
-  .food-grid { margin: 1rem 0; }
-  .avoid-grid { margin: 1rem 0; }
-  .divider { margin: 1rem 0; }
-  .toc { padding: 1.5rem 0; }
+  .phase-header { margin: 1.5rem 0 1rem; padding: 1.25rem; }
+  .image-block { margin: 0.75rem 0; }
+  .info-box { margin: 0.75rem 0; padding: 0.75rem 1rem; }
+  .stat-grid { margin: 0.75rem 0; }
+  .food-grid { margin: 0.75rem 0; gap: 0.5rem; }
+  .avoid-grid { margin: 0.75rem 0; gap: 0.5rem; }
+  .divider { margin: 0.75rem 0; }
+  .toc { padding: 0.75rem 0; }
+  .toc-list li { padding: 0.4rem 1rem; font-size: 10pt; }
+  .chapter-header h2 { font-size: 1.4rem; }
+  .chapter-header .chapter-number { margin-bottom: 0.25rem; }
   h3 { margin-top: 0.75rem; }
+  .nutrient-cards { gap: 0.5rem; }
+  .nutrient-card { padding: 0.75rem; }
 
   /* Tablo optimizasyonu */
-  .meal-table-wrapper { overflow: visible !important; width: 100% !important; margin: 1rem 0; }
+  .meal-table-wrapper { overflow: visible !important; width: 100% !important; margin: 0.75rem 0; }
   .meal-table { width: 100% !important; table-layout: auto !important; border-collapse: collapse !important; border: 1px solid #eee; font-size: 9pt; }
   .meal-table td, .meal-table th { word-wrap: break-word !important; overflow-wrap: break-word !important; padding: 4px 5px !important; }
   .meal-table thead th { padding: 5px 6px !important; font-size: 8pt; }
 
-  /* Sayfa kırılma kontrolü */
-  .info-box, .image-block, .stat-grid, .food-grid, .avoid-grid, .calc-box, .nutrient-cards { page-break-inside: avoid; }
+  /* Sayfa kırılma kontrolü — info-box bölünebilir (orphan sayfa önleme) */
+  .image-block, .stat-grid, .food-grid, .avoid-grid, .calc-box { page-break-inside: avoid; }
   .chapter-header { page-break-inside: avoid; }
   .phase-header { page-break-inside: avoid; }
   h3, h4 { page-break-after: avoid; }
-  .meal-table tr { page-break-inside: avoid; }
 }
 
 /* ===== TYPOGRAPHY ===== */
@@ -805,7 +812,7 @@ strong { color: var(--gray-900); }
 <!-- ============================================ -->
 <!-- ICINDEKILER -->
 <!-- ============================================ -->
-<section class="toc page-break">
+<section class="toc page-break-phase">
   <div class="container">
     <div class="chapter-header">
       <div class="chapter-number">İçindekiler</div>
@@ -832,7 +839,7 @@ strong { color: var(--gray-900); }
 <!-- ============================================ -->
 <!-- BOLUM 1: GIRIS -->
 <!-- ============================================ -->
-<section id="ch1" class="chapter page-break">
+<section id="ch1" class="chapter">
   <div class="container">
     <div class="chapter-header">
       <div class="chapter-number">Bölüm 01</div>
@@ -880,7 +887,7 @@ strong { color: var(--gray-900); }
 <!-- ============================================ -->
 <!-- BOLUM 2: AKDENIZ DIYETI -->
 <!-- ============================================ -->
-<section id="ch2" class="chapter page-break">
+<section id="ch2" class="chapter">
   <div class="container">
     <div class="chapter-header">
       <div class="chapter-number">Bölüm 02</div>
@@ -941,7 +948,7 @@ strong { color: var(--gray-900); }
 <!-- ============================================ -->
 <!-- BOLUM 3: MAKRO BESINLER -->
 <!-- ============================================ -->
-<section id="ch3" class="chapter page-break">
+<section id="ch3" class="chapter">
   <div class="container">
     <div class="chapter-header">
       <div class="chapter-number">Bölüm 03</div>
@@ -1048,7 +1055,7 @@ strong { color: var(--gray-900); }
 <!-- ============================================ -->
 <!-- BOLUM 4: MIKRO BESINLER -->
 <!-- ============================================ -->
-<section id="ch4" class="chapter page-break">
+<section id="ch4" class="chapter">
   <div class="container">
     <div class="chapter-header">
       <div class="chapter-number">Bölüm 04</div>
@@ -1112,7 +1119,7 @@ strong { color: var(--gray-900); }
 <!-- ============================================ -->
 <!-- FAZ 1: Vücudun temizlenmesi (detoks) -->
 <!-- ============================================ -->
-<section id="ch5" class="chapter page-break">
+<section id="ch5" class="chapter page-break-phase">
   <div class="container">
 
     <div class="phase-header phase-1">
@@ -1221,7 +1228,7 @@ strong { color: var(--gray-900); }
 <!-- ============================================ -->
 <!-- FAZ 2: OVARYAN STIMULASYON -->
 <!-- ============================================ -->
-<section id="ch6" class="chapter page-break">
+<section id="ch6" class="chapter">
   <div class="container">
 
     <div class="phase-header phase-2">
@@ -1330,7 +1337,7 @@ strong { color: var(--gray-900); }
 <!-- ============================================ -->
 <!-- FAZ 3: ENDOMETRIAL KALINLASMA -->
 <!-- ============================================ -->
-<section id="ch7" class="chapter page-break">
+<section id="ch7" class="chapter">
   <div class="container">
 
     <div class="phase-header phase-3">
@@ -1439,7 +1446,7 @@ strong { color: var(--gray-900); }
 <!-- ============================================ -->
 <!-- FAZ 4: İMPLANTASYON -->
 <!-- ============================================ -->
-<section id="ch8" class="chapter page-break">
+<section id="ch8" class="chapter">
   <div class="container">
 
     <div class="phase-header phase-4">
@@ -1565,7 +1572,7 @@ strong { color: var(--gray-900); }
 <!-- ============================================ -->
 <!-- BOLUM 9: KACINILACAK GIDALAR -->
 <!-- ============================================ -->
-<section id="ch9" class="chapter page-break">
+<section id="ch9" class="chapter">
   <div class="container">
     <div class="chapter-header">
       <div class="chapter-number">Bölüm 09</div>
@@ -1650,7 +1657,7 @@ strong { color: var(--gray-900); }
 <!-- ============================================ -->
 <!-- BOLUM 10: ERKEK BESLENME -->
 <!-- ============================================ -->
-<section id="ch10" class="chapter page-break">
+<section id="ch10" class="chapter">
   <div class="container">
     <div class="chapter-header">
       <div class="chapter-number">Bölüm 10</div>
@@ -1713,7 +1720,7 @@ strong { color: var(--gray-900); }
 <!-- ============================================ -->
 <!-- BOLUM 11: YASAM TARZI -->
 <!-- ============================================ -->
-<section id="ch11" class="chapter page-break">
+<section id="ch11" class="chapter">
   <div class="container">
     <div class="chapter-header">
       <div class="chapter-number">Bölüm 11</div>
@@ -1782,7 +1789,7 @@ strong { color: var(--gray-900); }
 <!-- ============================================ -->
 <!-- KAYNAKLAR -->
 <!-- ============================================ -->
-<section id="ch12" class="references page-break">
+<section id="ch12" class="references">
   <div class="container">
     <div class="chapter-header">
       <div class="chapter-number">Kaynakça</div>
