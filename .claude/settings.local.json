@@ -8,7 +8,6 @@
       "Bash(git restore:*)",
       "Bash(git commit:*)",
       "Bash(npm run:*)",
-      "Bash(npm install:*)",
       "Bash(code test-auto.txt)",
       "Bash(\"D:\\\\Microsoft VS Code\\\\code.exe\" --reuse-window test-auto.txt)",
       "Bash(\"D:\\\\Microsoft VS Code\\\\bin\\\\code.exe\" test-auto.txt)",
@@ -22,20 +21,8 @@
       "Bash(node:*)",
       "Bash(curl -s http://localhost:4326/)",
       "Bash(curl:*)",
-      "Bash(gh repo:*)"
-    ]
-  },
-  "hooks": {
-    "SessionStart": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "npm install --prefer-offline --no-audit 2>/dev/null || true",
-            "timeout": 60
-          }
-        ]
-      }
+      "Bash(gh repo:*)",
+      "WebFetch(domain:tupbebek.com)"
     ]
   }
 }
