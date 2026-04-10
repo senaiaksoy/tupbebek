@@ -1,14 +1,20 @@
 #!/bin/bash
 # =============================================================================
-# Ollama + Gemma 4 Kurulum Scripti
+# Ollama + Qwen 3.5 Kurulum Scripti
 # VS Code Claude Code eklentisi icin yerel model yapilandirmasi
 # =============================================================================
 #
 # Kullanim:
-#   chmod +x scripts/setup-ollama-gemma4.sh
-#   ./scripts/setup-ollama-gemma4.sh
+#   chmod +x scripts/setup-ollama-qwen.sh
+#   ./scripts/setup-ollama-qwen.sh
 #
 # Not: Bu script yerel makinenizde calistirilmalidir (sunucu degil).
+#
+# Neden Qwen 3.5?
+#   - Gemma 4, Ollama + Claude Code ile tool calling desteklemiyor
+#     (ollama/ollama#15402, #15315)
+#   - Qwen 3.5 tool calling tam destekli, Claude Code agent ozellikleri calisiyor
+#   - 256K context window, ucretsiz ve acik kaynak
 # =============================================================================
 
 set -euo pipefail
@@ -61,12 +67,12 @@ start_ollama() {
 }
 
 # -----------------------------------------------------------------------------
-# 3. Gemma 4 Modelini Indir
+# 3. Qwen 3.5 Modelini Indir
 # -----------------------------------------------------------------------------
-pull_gemma4() {
-    local model="gemma4"
+pull_model() {
+    local model=""
 
-    # RAM kontrolu - model boyutunu secmek icin
+    # RAM kontrolu
     local total_ram_gb
     if [[ "$(uname)" == "Darwin" ]]; then
         total_ram_gb=$(( $(sysctl -n hw.memsize) / 1073741824 ))
@@ -77,35 +83,34 @@ pull_gemma4() {
     info "Toplam RAM: ${total_ram_gb}GB"
 
     if [ "$total_ram_gb" -lt 8 ]; then
-        warn "RAM yetersiz (${total_ram_gb}GB). Gemma 4 icin en az 8GB oneriliyor."
-        model="gemma4:e2b"
-        warn "Kucuk model kullanilacak: $model"
+        model="qwen3.5:0.6b"
+        warn "RAM dusuk (${total_ram_gb}GB). En hafif model kullanilacak: $model"
     elif [ "$total_ram_gb" -lt 16 ]; then
-        model="gemma4:e4b"
-        info "Model secildi: $model (4B parametre - 8-16GB RAM icin uygun)"
-    elif [ "$total_ram_gb" -ge 32 ]; then
-        model="gemma4:26b"
-        info "Model secildi: $model (26B parametre - 32GB+ RAM icin)"
+        model="qwen3.5:9b"
+        info "Model secildi: $model (9B parametre - 8-16GB RAM icin uygun)"
+    elif [ "$total_ram_gb" -lt 32 ]; then
+        model="qwen3.5:9b"
+        info "Model secildi: $model (9B parametre - 16GB RAM icin ideal)"
     else
-        model="gemma4:e4b"
-        info "Model secildi: $model (4B parametre - 16GB RAM icin ideal)"
+        model="qwen3.5:27b"
+        info "Model secildi: $model (27B parametre - 32GB+ RAM icin)"
     fi
 
-    info "Gemma 4 indiriliyor: $model (bu islem birkac dakika surebilir)..."
+    info "Qwen 3.5 indiriliyor: $model (bu islem birkac dakika surebilir)..."
     ollama pull "$model"
     info "Model basariyla indirildi: $model"
 
-    # Context window ayari icin Modelfile olustur (64K token)
+    # Claude Code icin context window ayarli ozel model olustur
     local modelfile_dir="$HOME/.ollama/modelfiles"
     mkdir -p "$modelfile_dir"
-    cat > "$modelfile_dir/gemma4-claude" << EOF
+    cat > "$modelfile_dir/qwen-claude" << EOF
 FROM $model
 PARAMETER num_ctx 65536
 EOF
 
     info "Claude Code icin genisletilmis context window modeli olusturuluyor..."
-    ollama create "gemma4-claude" -f "$modelfile_dir/gemma4-claude"
-    info "Model 'gemma4-claude' olusturuldu (64K context window)."
+    ollama create "qwen-claude" -f "$modelfile_dir/qwen-claude"
+    info "Model 'qwen-claude' olusturuldu (64K context window)."
 
     echo "$model"
 }
@@ -124,9 +129,7 @@ configure_claude_code() {
         cp "$settings_file" "${settings_file}.backup.$(date +%Y%m%d_%H%M%S)"
     fi
 
-    # Mevcut settings'i oku veya bos olustur
     if [ -f "$settings_file" ] && command -v jq &>/dev/null; then
-        # jq ile mevcut ayarlara env ekle
         local tmp_file
         tmp_file=$(mktemp)
         jq '. + {
@@ -137,7 +140,6 @@ configure_claude_code() {
             }
         }' "$settings_file" > "$tmp_file" && mv "$tmp_file" "$settings_file"
     else
-        # jq yoksa veya dosya yoksa, yeni olustur
         cat > "$settings_file" << 'EOF'
 {
     "env": {
@@ -156,7 +158,6 @@ EOF
 # 5. VS Code Workspace Ayarlari
 # -----------------------------------------------------------------------------
 configure_vscode() {
-    # Proje dizinini bul (scriptin bulundugu dizinin bir ust dizini)
     local project_dir
     project_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
     local vscode_dir="$project_dir/.vscode"
@@ -221,7 +222,6 @@ configure_shell_env() {
     fi
 
     if [ -n "$shell_rc" ]; then
-        # Eger zaten eklenmemisse ekle
         if ! grep -q "ANTHROPIC_BASE_URL.*localhost:11434" "$shell_rc" 2>/dev/null; then
             cat >> "$shell_rc" << 'EOF'
 
@@ -245,14 +245,17 @@ EOF
 main() {
     echo ""
     echo "============================================="
-    echo "  Ollama + Gemma 4 Kurulum Araci"
+    echo "  Ollama + Qwen 3.5 Kurulum Araci"
     echo "  VS Code Claude Code Yapilandirmasi"
     echo "============================================="
+    echo ""
+    warn "Gemma 4 yerine Qwen 3.5 kullaniliyor."
+    warn "Sebep: Gemma 4 Ollama+Claude Code ile tool calling desteklemiyor."
     echo ""
 
     install_ollama
     start_ollama
-    pull_gemma4
+    pull_model
     configure_claude_code
     configure_vscode
     configure_shell_env
@@ -265,18 +268,22 @@ main() {
     echo "Kullanim:"
     echo ""
     echo "  Yontem 1 - Otomatik (Ollama v0.14+):"
-    echo "    ollama launch claude --model gemma4-claude"
+    echo "    ollama launch claude --model qwen-claude"
     echo ""
     echo "  Yontem 2 - Manuel:"
     echo "    ollama serve  # (ayri terminalde)"
-    echo "    claude --model gemma4-claude"
+    echo "    claude --model qwen-claude"
     echo ""
     echo "  Yontem 3 - VS Code icinde:"
     echo "    VS Code'u acin, Claude Code eklentisini baslatin"
-    echo "    /model komutuyla gemma4-claude secin"
+    echo "    /model komutuyla qwen-claude secin"
+    echo ""
+    echo "  OpenRouter'a geri donmek icin:"
+    echo "    unset ANTHROPIC_BASE_URL"
+    echo "    unset ANTHROPIC_AUTH_TOKEN"
+    echo "    unset ANTHROPIC_API_KEY"
     echo ""
     echo "  Not: Context window 64K token olarak ayarlanmistir."
-    echo "  OpenRouter ayarlariniz devre disi birakilmistir."
     echo ""
 }
 
