@@ -69,10 +69,33 @@ body {
   .page-break { page-break-before: always; }
   .no-print { display: none !important; }
   .cover-page { height: 100vh; }
-  .meal-table-wrapper { overflow: visible !important; width: 100% !important; }
-  .meal-table { width: 100% !important; table-layout: auto !important; border-collapse: collapse !important; border: 1px solid #eee; }
-  .meal-table td, .meal-table th { word-wrap: break-word !important; overflow-wrap: break-word !important; padding: 6px !important; }
+
+  /* Sayfa geçişlerindeki boşlukları azalt */
+  .chapter { padding: 1.5rem 0 1rem; }
+  .chapter-header { margin-bottom: 1.5rem; }
+  .chapter-desc { margin-bottom: 0.5rem; }
+  .phase-header { margin: 1.5rem 0 1rem; padding: 1.5rem; }
+  .image-block { margin: 1rem 0; }
+  .info-box { margin: 1rem 0; padding: 1rem 1.25rem; }
+  .stat-grid { margin: 1rem 0; }
+  .food-grid { margin: 1rem 0; }
+  .avoid-grid { margin: 1rem 0; }
+  .divider { margin: 1rem 0; }
+  .toc { padding: 1.5rem 0; }
+  h3 { margin-top: 0.75rem; }
+
+  /* Tablo optimizasyonu */
+  .meal-table-wrapper { overflow: visible !important; width: 100% !important; margin: 1rem 0; }
+  .meal-table { width: 100% !important; table-layout: auto !important; border-collapse: collapse !important; border: 1px solid #eee; font-size: 9pt; }
+  .meal-table td, .meal-table th { word-wrap: break-word !important; overflow-wrap: break-word !important; padding: 4px 5px !important; }
+  .meal-table thead th { padding: 5px 6px !important; font-size: 8pt; }
+
+  /* Sayfa kırılma kontrolü */
   .info-box, .image-block, .stat-grid, .food-grid, .avoid-grid, .calc-box, .nutrient-cards { page-break-inside: avoid; }
+  .chapter-header { page-break-inside: avoid; }
+  .phase-header { page-break-inside: avoid; }
+  h3, h4 { page-break-after: avoid; }
+  .meal-table tr { page-break-inside: avoid; }
 }
 
 /* ===== TYPOGRAPHY ===== */
@@ -848,7 +871,7 @@ strong { color: var(--gray-900); }
     <p>Gebelik öncesi hazırlık süreci olarak adlandırılan dönemde anne ve babanın beslenme durumu, yalnızca döllenme şansını değil, aynı zamanda erken fetal gelişimi ve doğacak çocuğun uzun vadeli vücut sağlığını da <strong>epigenetik</strong> aracılığıyla etkilemektedir.</p>
 
     <div class="image-block">
-      <img src="images/hücresel-beslenme.jpg" alt="Görsel 2 - Hücresel Beslenme ve Mitokondriyal Sağlık">
+      <img src="images/hucresel-beslenme.jpg" alt="Görsel 2 - Hücresel Beslenme ve Mitokondriyal Sağlık">
       <div class="image-caption">Görsel 2 - Oksidatif stres, antioksidan savunma ve hücre sağlığı arasındaki ilişki diyagramı</div>
     </div>
   </div>
@@ -1014,6 +1037,10 @@ strong { color: var(--gray-900); }
       </div>
     </div>
 
+    <div class="image-block">
+      <img src="images/saglikli-yaglar.jpg" alt="Sağlıklı Yağ Kaynakları">
+      <div class="image-caption">Omega-3 ve tekli doymamış yağ asitleri açısından zengin besinler: zeytinyağı, ceviz, keten tohumu, avokado</div>
+    </div>
 
   </div>
 </section>
@@ -1438,7 +1465,10 @@ strong { color: var(--gray-900); }
       </div>
     </div>
 
-
+    <div class="image-block">
+      <img src="images/ilik-besinler.jpg" alt="Ilık ve Pişmiş Besinler">
+      <div class="image-caption">İmplantasyon döneminde tercih edilecek ılık, kolay sindirilebilir besinler</div>
+    </div>
 
     <div class="meal-table-wrapper phase-4">
       <table class="meal-table">
