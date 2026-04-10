@@ -79,6 +79,7 @@ const medicalWebPageSchema = {
 
 		<!-- Canonical URL -->
 		<link rel="canonical" href={`https://tupbebek.com${Astro.url.pathname}`} />
+		<meta name="robots" content="index, follow, max-image-preview:large" />
 
 		<!-- RSS Feed -->
 		<link rel="alternate" type="application/rss+xml" title="tupbebek.com RSS" href="/rss.xml" />
@@ -93,6 +94,7 @@ const medicalWebPageSchema = {
 		<meta property="og:image:height" content="630" />
 		<meta property="og:site_name" content="tupbebek.com" />
 		<meta property="og:locale" content="tr_TR" />
+		<meta property="og:image:alt" content={description} />
 
 		<!-- Twitter Card -->
 		<meta name="twitter:card" content="summary_large_image" />

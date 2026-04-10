@@ -233,7 +233,7 @@ Daha detaylı bilgi almak ve kişisel durumunuzu değerlendirmek için [tüp beb
 
 ## Endometriozis ve Kısırlık Hakkında Sıkça Sorulan Sorular (SSS)
 
-**Soru 1: [Çikolata kisti](/blog/endometrioma/) (endometrioma)  olan herkes kısır olur mu?**
+**Soru 1: [Çikolata kisti](/makaleler/endometrioma/) (endometrioma)  olan herkes kısır olur mu?**
 
 **Cevap 1:** Hayır. Endometriozis gebe kalmayı zorlaştırsa da, kısırlık anlamına gelmez. Hastalığın evresi, konumu ve hastanın yaşına bağlı olarak birçok kadın doğal yollarla hamile kalabilir. Ancak zorluk yaşayanlarda, 2025 verilerine göre en etkili yol "Önce Tüp Bebek" tedavisidir.
 

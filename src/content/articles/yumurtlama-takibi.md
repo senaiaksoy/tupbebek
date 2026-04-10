@@ -52,7 +52,7 @@ Beynin alt kısmında yer alan **hipofiz bezi**, yumurtlama döngüsünü düzen
 - **FSH (Folikül Uyarıcı Hormon)**: Foliküllerin büyümesini ve olgunlaşmasını tetikler.
 - **LH (Lüteinleştirici Hormon)**: Folikül belirli bir olgunluğa ulaşınca LH'da ani bir yükselme olur ve bu yükselme, yumurtlamaya (yumurtanın çatlaması) yol açar.
 
-Bu iki hormonun adet döngüsündeki düzenli salınımı, sağlıklı bir ovülasyon sürecini mümkün kılar. [Tüp Bebek Tedavisi](/blog/tup-bebek-nedir-kimlere-uygulanir/) gibi yardımcı üreme yöntemlerinde dışarıdan gonadotropin ilaçları verilerek, bu sürecin kontrollü biçimde yönetilmesi sağlanır.
+Bu iki hormonun adet döngüsündeki düzenli salınımı, sağlıklı bir ovülasyon sürecini mümkün kılar. [Tüp Bebek Tedavisi](/makaleler/tup-bebek-nedir/) gibi yardımcı üreme yöntemlerinde dışarıdan gonadotropin ilaçları verilerek, bu sürecin kontrollü biçimde yönetilmesi sağlanır.
 
 ---
 
