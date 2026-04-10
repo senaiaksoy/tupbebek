@@ -316,14 +316,9 @@ import Footer from '../components/Footer.astro';
                 console.log('Sunucuya kaydedilemedi, ancak indirme devam ediyor.');
             }
 
-            // Statik PDF i doğrudan indir (yüksek kaliteli, formatı ve Türkce karakterleri korunan versiyon)
+            // Statik PDF i doğrudan indir
             const pdfUrl = '/e-kitap/tup-bebek-beslenme-plani.pdf';
-            const link = document.createElement('a');
-            link.href = pdfUrl;
-            link.download = '30_Gunluk_Tup_Bebek_Beslenme_Plani.pdf';
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
+            window.location.href = pdfUrl;
 
             // Success mesajı göster
             document.getElementById('loading-message').style.display = 'none';
