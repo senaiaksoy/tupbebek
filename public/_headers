@@ -11,3 +11,10 @@
 # Image caching
 /images/*
   Cache-Control: public, max-age=604800
+
+# E-kitap image + HTML caching
+/e-kitap/images/*
+  Cache-Control: public, max-age=604800
+
+/e-kitap/*.html
+  Cache-Control: public, max-age=3600
