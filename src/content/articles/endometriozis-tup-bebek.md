@@ -3,10 +3,15 @@ title: "Endometriozis ve Kısırlık Tedavisinde 2025 Devrimi"
 description: "Endometriozis veya çikolata kisti kısırlık yaparsa 'Önce Ameliyat' mı, 'Önce Tüp Bebek' mi? tupbebek.com yayın kurulu, 2025'in yeni altın standardını ve SVIDOE çalışmasını açıklıyor."
 publishDate: 2025-11-01
 author: "tupbebek.com Yayın Kurulu"
-medicalReviewer: "Yayın Kurulu"
+authorTitle: "Editoryal Ekip"
+authorCredentials: "Doç. Dr. Senai Aksoy editörlüğünde"
+medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
+reviewerTitle: "Tıbbi Danışma Kurulu"
+reviewDate: 2026-04-09
 lastModified: 2026-04-03
 category: "Tüp Bebek"
 image: /images/library/hastalik/endometriosis_tedavi.webp
+imageAlt: "endometriozis tedavisi ve tüp bebek sürecinde güncel yaklaşımlar"
 references:
   - title: "Endometriosis: ESHRE Guideline"
     authors: "Becker CM, Bokor A, Heikinheimo O et al."
@@ -228,7 +233,7 @@ Daha detaylı bilgi almak ve kişisel durumunuzu değerlendirmek için [tüp beb
 
 ## Endometriozis ve Kısırlık Hakkında Sıkça Sorulan Sorular (SSS)
 
-**Soru 1: [Çikolata kisti](/blog/endometrioma/) (endometrioma)  olan herkes kısır olur mu?**
+**Soru 1: [Çikolata kisti](/makaleler/endometrioma/) (endometrioma)  olan herkes kısır olur mu?**
 
 **Cevap 1:** Hayır. Endometriozis gebe kalmayı zorlaştırsa da, kısırlık anlamına gelmez. Hastalığın evresi, konumu ve hastanın yaşına bağlı olarak birçok kadın doğal yollarla hamile kalabilir. Ancak zorluk yaşayanlarda, 2025 verilerine göre en etkili yol "Önce Tüp Bebek" tedavisidir.
 

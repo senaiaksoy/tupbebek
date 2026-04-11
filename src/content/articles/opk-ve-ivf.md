@@ -3,10 +3,15 @@ title: "Polikistik Over Sendromu (PCOS). IVF Yolculuğunuzun Gizli Başrolü mü
 description: "Polikistik Over Sendromu (PCOS), üreme çağındaki kadınlarda en sık görülen endokrin bozukluklardan biridir. PCOS'lu hastalarda hormonal dengesizlik, insülin direnci ve ovulasyon bozuklukları IVF başarısını etkileyebilmektedir. Bu metaanalizin amacı, PCOS'un IVF sonuçlarına etkisini inceleyen güncel çalışmaları kısaca özetlemektir."
 publishDate: 2025-01-01
 author: "tupbebek.com Yayın Kurulu"
-medicalReviewer: "Yayın Kurulu"
+authorTitle: "Editoryal Ekip"
+authorCredentials: "Doç. Dr. Senai Aksoy editörlüğünde"
+medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
+reviewerTitle: "Tıbbi Danışma Kurulu"
+reviewDate: 2026-04-09
 lastModified: 2026-04-03
 category: "Kadın Sağlığı"
 image: /images/library/hastalik/opkveivf.webp
+imageAlt: "polikistik over sendromu PCOS ve IVF tedavi süreci"
 references:
   - title: "GnRH agonist trigger and LH activity luteal phase support versus hCG trigger and conventional luteal phase support in fresh embryo transfer IVF/ICSI cycles"
     authors: "Humaidan P, Kol S, Papanikolaou EG"

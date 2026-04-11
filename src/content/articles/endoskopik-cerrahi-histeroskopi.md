@@ -3,10 +3,15 @@ title: "Endoskopik Cerrahi: Histeroskopi Nedir?"
 description: "Modern histeroskopi yöntemiyle rahim içi problemleri güvenli ve minimal invaziv şekilde tanılayıp tedavi edin. Hızlı iyileşme ve etkili sonuçlar için detaylı bilgi edinin."
 publishDate: 2025-03-02
 author: "tupbebek.com Yayın Kurulu"
-medicalReviewer: "Yayın Kurulu"
+authorTitle: "Editoryal Ekip"
+authorCredentials: "Doç. Dr. Senai Aksoy editörlüğünde"
+medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
+reviewerTitle: "Tıbbi Danışma Kurulu"
+reviewDate: 2026-04-09
 lastModified: 2026-04-03
 category: "Tedavi Yöntemleri"
 image: /images/library/klinik/83.webp
+imageAlt: "endoskopik cerrahi histeroskopi işlemi ve rahim içi görüntüleme"
 references:
   - title: "Office hysteroscopy"
     authors: "Bettocchi S, Selvaggi L"

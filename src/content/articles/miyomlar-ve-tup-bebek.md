@@ -3,10 +3,15 @@ title: "Miyomlar ve Tüp Bebek. Ebeveynliğe Giden Yolda Engelleri Aşmak - Kıs
 description: "Miyomlarınız mı var? Tüp bebek (IVF) tedavisi mi düşünüyorsunuz? Bu makalede, miyomların doğurganlığı nasıl etkilediğini ve tedavi seçeneklerinizi keşfedin."
 publishDate: 2025-02-02
 author: "tupbebek.com Yayın Kurulu"
-medicalReviewer: "Yayın Kurulu"
+authorTitle: "Editoryal Ekip"
+authorCredentials: "Doç. Dr. Senai Aksoy editörlüğünde"
+medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
+reviewerTitle: "Tıbbi Danışma Kurulu"
+reviewDate: 2026-04-09
 lastModified: 2026-04-03
 category: "Tüp Bebek"
 image: /images/library/hastalik/miyom_ivf.webp
+imageAlt: "miyomlar ve tüp bebek tedavisi sürecindeki etkileri"
 references:
   - title: "The effect of intramural fibroids without uterine cavity involvement on the outcome of IVF treatment: a systematic review and meta-analysis"
     authors: "Sunkara SK, Khairy M, El-Toukhy T et al."

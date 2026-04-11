@@ -3,7 +3,11 @@ title: "Tüp bebek nedir, kimlere uygulanır?"
 description: "Hayatımıza son 30 yılda giren ve bizim için hızla sıradan bir yöntem haline gelen tüp bebek nedir ve nasıl yapılır? Sorularınızın cevabını burada bulabilirsiniz."
 publishDate: 2024-09-27
 author: "tupbebek.com Yayın Kurulu"
-medicalReviewer: "Yayın Kurulu"
+authorTitle: "Editoryal Ekip"
+authorCredentials: "Doç. Dr. Senai Aksoy editörlüğünde"
+medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
+reviewerTitle: "Tıbbi Danışma Kurulu"
+reviewDate: 2026-04-09
 lastModified: 2026-04-03
 category: "Tüp Bebek"
 image: "/images/makaleler/tup-bebek-nedir.webp"
@@ -275,12 +279,6 @@ Deneyimli bir tıbbi ekibin rehberliğinde ve destekleyici bir sosyal çevre ile
 - **Cevap:** Genel olarak, tüp bebek ile doğan çocukların sağlık durumları doğal yolla doğan çocuklarla benzerdir.
 
 ---
-
-## Kaynaklar ve İleri Okuma
-
-- **Dünya Sağlık Örgütü (WHO):** Kısırlık ve üreme sağlığı hakkında güncel bilgiler.
-- **Türk Jinekoloji ve Obstetrik Derneği:** Tüp bebek tedavisi ve güncel uygulamalar.
-- **Bilimsel Araştırmalar:** Tüp bebek tedavisinde yeni gelişmeler ve teknolojiler.
 
 ---
 

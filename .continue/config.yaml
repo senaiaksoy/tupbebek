@@ -1,0 +1,26 @@
+# Continue + Ollama + DeepSeek Yapılandırması
+# Docs: https://docs.continue.dev/reference
+
+# ── Chat Modeli ──────────────────────────────────────────
+# DeepSeek R1 — reasoning/chat modeli
+models:
+  - name: DeepSeek R1
+    provider: ollama
+    model: deepseek-r1:latest
+    apiBase: http://localhost:11434
+    completionOptions:
+      num_ctx: 32768
+
+# ── Autocomplete (Tab ile Kod Tamamlama) ─────────────────
+# DeepSeek Coder V2 — kod tamamlama için optimize edilmiş
+tabAutocompleteModel:
+  name: DeepSeek Coder
+  provider: ollama
+  model: deepseek-coder-v2:latest
+  apiBase: http://localhost:11434
+
+# ── Embeddings (Codebase indeksleme / @codebase komutu) ──
+embeddingsProvider:
+  provider: ollama
+  model: nomic-embed-text
+  apiBase: http://localhost:11434

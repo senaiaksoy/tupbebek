@@ -3,10 +3,15 @@ title: "Kadın Kısırlığı ve Tüp Bebek Tedavisinin Önemi. Kapsamlı Bir Re
 description: "Kadın kısırlığının nedenleri, tanı yöntemleri ve tüp bebek tedavisinin bu süreçteki rolü hakkında kapsamlı bir rehber."
 publishDate: 2024-09-09
 author: "tupbebek.com Yayın Kurulu"
-medicalReviewer: "Yayın Kurulu"
+authorTitle: "Editoryal Ekip"
+authorCredentials: "Doç. Dr. Senai Aksoy editörlüğünde"
+medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
+reviewerTitle: "Tıbbi Danışma Kurulu"
+reviewDate: 2026-04-09
 lastModified: 2026-04-03
 category: "Tüp Bebek"
 image: /images/library/laboratuvar/icsicizim.webp
+imageAlt: "kadın kısırlığı tanı süreci ve tüp bebek tedavisi ICSI illüstrasyonu"
 references:
   - title: "Diagnostic evaluation of the infertile female: a committee opinion"
     authors: "Practice Committee of the American Society for Reproductive Medicine"

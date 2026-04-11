@@ -152,7 +152,7 @@ export const navigationMenus: MegaMenuConfig[] = [
     },
     submenu: [
       { label: 'Beslenme ve Yaşam', href: '/beslenme-yasam', description: 'Diyet, takviye, egzersiz' },
-      { label: 'Erkek Besin Takviyeleri', href: '/makaleler/erkek-kisirligi-besin-takviyeleri', description: 'Sperm kalitesi için takviyeler' },
+      { label: 'Erkek Besin Takviyeleri', href: '/makaleler/erkek-dogurganlik-besin-takviyeleri', description: 'Sperm kalitesi için takviyeler' },
       { label: 'Erkek Doğurganlık Besinleri', href: '/makaleler/erkek-dogurganlik-besin-takviyeleri', description: 'Erkek fertilitesi ve beslenme' },
       { label: 'Vajinal Mikrobiyom', href: '/makaleler/vajinal-mikrobiyom-fiv', description: 'Mikrobiyom ve IVF başarısı' },
       { label: 'Cep Telefonu ve Sperm', href: '/makaleler/cep-telefonu-sperm-kalitesi', description: 'Radyasyon ve sperm kalitesi' },

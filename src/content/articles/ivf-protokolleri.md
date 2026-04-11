@@ -3,10 +3,15 @@ title: "IVF Tedavisinde Kullanılan Protokoller. Uzun, Kısa ve Yeni Yaklaşıml
 description: "İstanbul'da tüp bebek (IVF) tedavisinde kullanılan uzun, kısa, mini IVF, doğal siklus ve DuoStim protokollerini avantajlarıyla keşfedin. Size en uygun protokolü öğrenin."
 publishDate: 2025-08-14
 author: "tupbebek.com Yayın Kurulu"
-medicalReviewer: "Yayın Kurulu"
+authorTitle: "Editoryal Ekip"
+authorCredentials: "Doç. Dr. Senai Aksoy editörlüğünde"
+medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
+reviewerTitle: "Tıbbi Danışma Kurulu"
+reviewDate: 2026-04-09
 lastModified: 2026-04-03
 category: "Tedavi Yöntemleri"
-image: /images/makaleler/ivf-protokolleri.webp
+image: /images/library/tedavi/ivf_tedavi_sureci.webp
+imageAlt: "IVF tedavisinde uzun ve kısa protokol karşılaştırması"
 references:
   - title: "GnRH antagonists for assisted reproductive technology"
     authors: "Al-Inany HG, Youssef MA, Ayeleke RO et al."
@@ -73,7 +78,7 @@ Her zaman "daha fazla" hormon, "daha iyi" sonuç demek değildir. Bazı durumlar
 
 * **Mikrodoz (Flare) Protokolü:** Bu yaklaşım, vücudun kendi hormon üretiminden kısa bir süreliğine "destek alarak" yumurtalıkları uyarmayı hedefler. Özellikle yumurta rezervi azalmış kadınlarda, mevcut potansiyeli en iyi şekilde kullanmak için tasarlanmıştır.
 
-* **Mini IVF (Hafif Uyarım):** "Az ama öz" felsefesine dayanır. Amaç, onlarca yumurta yerine, daha az sayıda ama en kaliteli yumurtaları elde etmektir. Daha az ilaç kullanımı, daha düşük maliyet ve neredeyse sıfır yan etki riski sunar. [Polikistik Over Sendromu (PCOS)](/blog/adet-duzensizligi-ve-polikistik-over-sendromu-pkos/) olan veya ileri yaştaki kadınlar için ideal bir seçenek olabilir.
+* **Mini IVF (Hafif Uyarım):** "Az ama öz" felsefesine dayanır. Amaç, onlarca yumurta yerine, daha az sayıda ama en kaliteli yumurtaları elde etmektir. Daha az ilaç kullanımı, daha düşük maliyet ve neredeyse sıfır yan etki riski sunar. [Polikistik Over Sendromu (PCOS)](/makaleler/adet-duzensizligi-pcos/) olan veya ileri yaştaki kadınlar için ideal bir seçenek olabilir.
 
 * **Doğal Siklus (İlaçsız Tüp Bebek):** Bu, tedavinin en "doğal" halidir. Vücudunuzun o ay kendi kendine büyüttüğü o tek ve değerli yumurtayı takip ederek çalışır. Hiçbir uyarıcı hormon kullanılmadığı için yan etkileri ve maliyeti en düşük yöntemdir. Ancak tek bir yumurtaya bağlı olduğu için başarı şansı daha düşüktür ve genellikle birkaç deneme gerektirebilir.
 

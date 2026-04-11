@@ -1,10 +1,11 @@
 #!/usr/bin/env node
 
 /**
- * Generate PDF from HTML file using html2pdf
+ * Generate PDF from HTML e-book using Puppeteer
  * Usage: node scripts/generate-pdf.js
  */
 
+import puppeteer from 'puppeteer';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -12,44 +13,69 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Import html2pdf
-let html2pdf;
-try {
-  html2pdf = (await import('html2pdf.js')).default;
-} catch (e) {
-  console.error('Error: html2pdf.js not installed. Run: npm install html2pdf.js');
-  process.exit(1);
-}
-
 const htmlPath = path.join(__dirname, '..', 'public', 'e-kitap', 'tup-bebek-beslenme-plani.html');
 const outputPath = path.join(__dirname, '..', 'public', 'e-kitap', 'tup-bebek-beslenme-plani.pdf');
 
-console.log('📄 PDF oluşturuluyor...');
-console.log(`📂 Input: ${htmlPath}`);
-console.log(`📥 Output: ${outputPath}`);
+console.log('PDF oluşturuluyor...');
+console.log(`Input:  ${htmlPath}`);
+console.log(`Output: ${outputPath}`);
 
-try {
-  // HTML dosyasını oku
-  const htmlContent = fs.readFileSync(htmlPath, 'utf-8');
+async function generatePDF() {
+  const browser = await puppeteer.launch({
+    headless: true,
+    args: [
+      '--no-sandbox',
+      '--disable-setuid-sandbox',
+      '--allow-file-access-from-files',
+      '--disable-web-security'
+    ]
+  });
 
-  // HTML'i parse et ve düzenle
-  const element = document.createElement('div');
-  element.innerHTML = htmlContent;
+  const page = await browser.newPage();
+  page.setDefaultTimeout(120000);
+  page.setDefaultNavigationTimeout(120000);
 
-  // PDF ayarlarını belirle
-  const opt = {
-    margin: 10,
-    filename: 'Tup-Bebek-Beslenme-Plani-30-Gun.pdf',
-    image: { type: 'jpeg', quality: 0.90 },
-    html2canvas: { scale: 1.5, useCORS: true, allowTaint: true },
-    jsPDF: { orientation: 'portrait', unit: 'mm', format: 'a4' }
-  };
+  // Harici ağ isteklerini engelle (Google Fonts vs.)
+  await page.setRequestInterception(true);
+  page.on('request', (req) => {
+    const url = req.url();
+    if (url.startsWith('file://')) {
+      req.continue();
+    } else {
+      // Harici kaynakları (Google Fonts vb.) engelle
+      req.abort();
+    }
+  });
+
+  // HTML dosyasını file:// protokolü ile aç
+  await page.goto(`file://${htmlPath}`, {
+    waitUntil: 'load',
+    timeout: 120000
+  });
 
   // PDF oluştur
-  html2pdf().set(opt).from(element).save();
+  await page.pdf({
+    path: outputPath,
+    format: 'A4',
+    printBackground: true,
+    margin: {
+      top: '15mm',
+      right: '12mm',
+      bottom: '15mm',
+      left: '12mm'
+    },
+    displayHeaderFooter: false,
+    preferCSSPageSize: false
+  });
 
-  console.log('✅ PDF başarıyla oluşturuldu!');
-} catch (error) {
-  console.error('❌ Hata:', error.message);
-  process.exit(1);
+  await browser.close();
+
+  const stats = fs.statSync(outputPath);
+  const sizeMB = (stats.size / (1024 * 1024)).toFixed(1);
+  console.log(`PDF başarıyla oluşturuldu! (${sizeMB} MB)`);
 }
+
+generatePDF().catch(err => {
+  console.error('Hata:', err.message);
+  process.exit(1);
+});

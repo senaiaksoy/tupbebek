@@ -9,85 +9,97 @@ import Footer from '../components/Footer.astro';
     <main id="main-content" tabindex="-1">
 
         <!-- Hero Section -->
-        <section class="bg-gradient-to-br from-primary-50 via-mint-50 to-white py-16 md:py-24">
+        <section class="bg-gradient-to-br from-primary-50 via-mint-50 to-white py-10 md:py-14">
             <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-start">
 
                     <!-- Left: Book Preview/Info -->
                     <div>
-                        <div class="mb-8">
-                            <span class="text-mint-600 font-label uppercase tracking-ultra text-xs font-bold mb-4 block">
+                        <div class="mb-5">
+                            <span class="text-mint-600 font-label uppercase tracking-ultra text-xs font-bold mb-3 block">
                                 📚 ÜCRETSIZ E-KİTAP
                             </span>
-                            <h1 class="text-4xl lg:text-5xl font-headline text-gray-900 leading-tight mb-6">
+                            <h1 class="text-3xl lg:text-4xl font-headline text-gray-900 leading-tight mb-4">
                                 30 Günlük Tüp Bebek Beslenme Planı
                             </h1>
-                            <p class="text-lg text-gray-700 leading-relaxed mb-8">
+                            <p class="text-base text-gray-700 leading-relaxed mb-5">
                                 Doç. Dr. Senai Aksoy ve uzman diyetisyenler tarafından hazırlanan, bilimsel araştırmalara dayalı, 4 klinik fazlı beslenme rehberi. Tüp bebek tedavisinin her aşamasında beslenmenin rolünü, uygun yiyecekleri ve beslenme stratejilerini öğrenin.
                             </p>
                         </div>
 
+                        <!-- Book Cover Image -->
+                        <div class="mb-6 rounded-2xl overflow-hidden shadow-lg border border-gray-200">
+                            <img
+                                src="/e-kitap/images/cover.jpg"
+                                alt="30 Günlük Tüp Bebek Beslenme Planı - E-Kitap Kapağı"
+                                class="w-full h-auto"
+                                width="2816"
+                                height="1536"
+                                loading="eager"
+                            />
+                        </div>
+
                         <!-- Benefits List -->
-                        <div class="space-y-4 mb-10">
+                        <div class="space-y-3 mb-6">
                             <div class="flex gap-3 items-start">
-                                <span class="text-mint-600 text-xl mt-1">✓</span>
+                                <span class="text-mint-600 text-lg mt-0.5">✓</span>
                                 <div>
-                                    <h4 class="font-semibold text-gray-900">4 Klinik Fazlı Beslenme Planı</h4>
-                                    <p class="text-sm text-gray-600">Folikül gelişimi, endometrial kalınlaşma, embriyo transferi ve luteal faz</p>
+                                    <h4 class="font-semibold text-gray-900 text-sm">4 Klinik Fazlı Beslenme Planı</h4>
+                                    <p class="text-xs text-gray-600">Folikül gelişimi, endometrial kalınlaşma, embriyo transferi ve luteal faz</p>
                                 </div>
                             </div>
                             <div class="flex gap-3 items-start">
-                                <span class="text-mint-600 text-xl mt-1">✓</span>
+                                <span class="text-mint-600 text-lg mt-0.5">✓</span>
                                 <div>
-                                    <h4 class="font-semibold text-gray-900">30 Günlük Detaylı Beslenme Tablosu</h4>
-                                    <p class="text-sm text-gray-600">Her günün kahvaltısından akşam yemeğine kadar planlı menü</p>
+                                    <h4 class="font-semibold text-gray-900 text-sm">30 Günlük Detaylı Beslenme Tablosu</h4>
+                                    <p class="text-xs text-gray-600">Her günün kahvaltısından akşam yemeğine kadar planlı menü</p>
                                 </div>
                             </div>
                             <div class="flex gap-3 items-start">
-                                <span class="text-mint-600 text-xl mt-1">✓</span>
+                                <span class="text-mint-600 text-lg mt-0.5">✓</span>
                                 <div>
-                                    <h4 class="font-semibold text-gray-900">Besin Rehberi & Vitamin Tablosu</h4>
-                                    <p class="text-sm text-gray-600">Üreme sağlığı için kritik vitaminler, mineraller ve besin bileşenleri</p>
+                                    <h4 class="font-semibold text-gray-900 text-sm">Besin Rehberi & Vitamin Tablosu</h4>
+                                    <p class="text-xs text-gray-600">Üreme sağlığı için kritik vitaminler, mineraller ve besin bileşenleri</p>
                                 </div>
                             </div>
                             <div class="flex gap-3 items-start">
-                                <span class="text-mint-600 text-xl mt-1">✓</span>
+                                <span class="text-mint-600 text-lg mt-0.5">✓</span>
                                 <div>
-                                    <h4 class="font-semibold text-gray-900">Akdeniz Diyeti Temelli</h4>
-                                    <p class="text-sm text-gray-600">Fertilitede faydalı olduğu bilimsel olarak kanıtlanmış beslenme tarzı</p>
+                                    <h4 class="font-semibold text-gray-900 text-sm">Akdeniz Diyeti Temelli</h4>
+                                    <p class="text-xs text-gray-600">Fertilitede faydalı olduğu bilimsel olarak kanıtlanmış beslenme tarzı</p>
                                 </div>
                             </div>
                             <div class="flex gap-3 items-start">
-                                <span class="text-mint-600 text-xl mt-1">✓</span>
+                                <span class="text-mint-600 text-lg mt-0.5">✓</span>
                                 <div>
-                                    <h4 class="font-semibold text-gray-900">Yaşanması Kolay Tarifler</h4>
-                                    <p class="text-sm text-gray-600">60+ basit ve lezzetli tarif, yaşanması zor olmayan beslenme sistemi</p>
+                                    <h4 class="font-semibold text-gray-900 text-sm">Yaşanması Kolay Tarifler</h4>
+                                    <p class="text-xs text-gray-600">60+ basit ve lezzetli tarif, yaşanması zor olmayan beslenme sistemi</p>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Author Credit -->
-                        <div class="bg-white rounded-2xl p-6 border border-gray-200">
-                            <div class="flex gap-4">
-                                <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
-                                    <span class="text-2xl">👨‍⚕️</span>
+                        <div class="bg-white rounded-2xl p-4 border border-gray-200">
+                            <div class="flex gap-3">
+                                <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <span class="text-xl">👨‍⚕️</span>
                                 </div>
                                 <div>
-                                    <h4 class="font-semibold text-gray-900">Doç. Dr. Senai Aksoy</h4>
-                                    <p class="text-sm text-gray-600">Kadın Hastalıkları ve Doğum Uzmanı</p>
-                                    <p class="text-xs text-gray-500 mt-1">Üreme Tıbbı ve Yardımcı Üreme Teknikleri</p>
+                                    <h4 class="font-semibold text-gray-900 text-sm">Doç. Dr. Senai Aksoy</h4>
+                                    <p class="text-xs text-gray-600">Kadın Hastalıkları ve Doğum Uzmanı</p>
+                                    <p class="text-xs text-gray-500 mt-0.5">Üreme Tıbbı ve Yardımcı Üreme Teknikleri</p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <!-- Right: Download Form -->
-                    <div class="lg:sticky lg:top-32">
-                        <div class="bg-white rounded-3xl shadow-lg p-8 md:p-10 border border-gray-200">
-                            <h2 class="text-2xl font-headline text-gray-900 mb-2">E-Kitabı İndir</h2>
-                            <p class="text-gray-600 mb-8 text-sm">Bilgi formunu doldurarak PDF'i hemen indirebilirsiniz</p>
+                    <div class="lg:sticky lg:top-24">
+                        <div class="bg-white rounded-2xl shadow-lg p-6 md:p-8 border border-gray-200">
+                            <h2 class="text-xl font-headline text-gray-900 mb-1">E-Kitabı İndir</h2>
+                            <p class="text-gray-600 mb-5 text-sm">Bilgi formunu doldurarak PDF'i hemen indirebilirsiniz</p>
 
-                            <form id="ebook-form" class="space-y-6">
+                            <form id="ebook-form" class="space-y-4">
                                 <!-- Ad Soyad -->
                                 <div>
                                     <label for="fullname" class="block text-sm font-semibold text-gray-900 mb-2">
@@ -170,7 +182,7 @@ import Footer from '../components/Footer.astro';
                                 <button
                                     type="submit"
                                     id="download-btn"
-                                    class="w-full bg-mint-600 hover:bg-mint-700 text-white font-bold py-4 px-6 rounded-lg transition-colors duration-300 flex items-center justify-center gap-2 text-lg mt-8"
+                                    class="w-full bg-mint-600 hover:bg-mint-700 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300 flex items-center justify-center gap-2 text-base mt-4"
                                 >
                                     <span>📥 E-Kitabı İndir (PDF)</span>
                                 </button>
@@ -187,7 +199,7 @@ import Footer from '../components/Footer.astro';
                             </form>
 
                             <!-- Trust Badge -->
-                            <div class="mt-8 pt-8 border-t border-gray-200">
+                            <div class="mt-5 pt-5 border-t border-gray-200">
                                 <p class="text-xs text-gray-500 text-center">
                                     🔒 Verileriniz güvenli, hiçbir ücret talep edilmez
                                 </p>
@@ -199,12 +211,12 @@ import Footer from '../components/Footer.astro';
         </section>
 
         <!-- Content Section -->
-        <section class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 py-20">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <section class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 
                 <!-- Content Preview 1 -->
-                <div class="bg-gradient-to-br from-mint-50 to-mint-100 rounded-2xl p-8">
-                    <div class="text-4xl mb-4">📋</div>
+                <div class="bg-gradient-to-br from-mint-50 to-mint-100 rounded-2xl p-6">
+                    <div class="text-3xl mb-3">📋</div>
                     <h3 class="text-xl font-headline text-gray-900 mb-3">Faz 1: Folikül Gelişimi</h3>
                     <p class="text-gray-700 text-sm leading-relaxed">
                         Yumurta kalitesini artıran besinler, antioksidan kaynakları, Akdeniz diyetinin uygulanması. Ruh halini düzenleyen, inflamasyonu azaltan beslenme sistemi.
@@ -212,8 +224,8 @@ import Footer from '../components/Footer.astro';
                 </div>
 
                 <!-- Content Preview 2 -->
-                <div class="bg-gradient-to-br from-primary-50 to-primary-100 rounded-2xl p-8">
-                    <div class="text-4xl mb-4">🔄</div>
+                <div class="bg-gradient-to-br from-primary-50 to-primary-100 rounded-2xl p-6">
+                    <div class="text-3xl mb-3">🔄</div>
                     <h3 class="text-xl font-headline text-gray-900 mb-3">Faz 2 & 3: Transfer Hazırlığı</h3>
                     <p class="text-gray-700 text-sm leading-relaxed">
                         Endometrial kalınlaşmasını destekleyen besinler, kan akışını geliştiren tarifler, implantasyon başarısını artıran vitaminler.
@@ -221,8 +233,8 @@ import Footer from '../components/Footer.astro';
                 </div>
 
                 <!-- Content Preview 3 -->
-                <div class="bg-gradient-to-br from-apricot-50 to-apricot-100 rounded-2xl p-8">
-                    <div class="text-4xl mb-4">🌱</div>
+                <div class="bg-gradient-to-br from-apricot-50 to-apricot-100 rounded-2xl p-6">
+                    <div class="text-3xl mb-3">🌱</div>
                     <h3 class="text-xl font-headline text-gray-900 mb-3">Faz 4: Luteal Faz</h3>
                     <p class="text-gray-700 text-sm leading-relaxed">
                         Gebe kalma şansını artıran besinler, ısıtıcı tatifler, progesteronu destekleyen besinler, beslenme tabloları.
@@ -232,11 +244,11 @@ import Footer from '../components/Footer.astro';
         </section>
 
         <!-- FAQ Section -->
-        <section class="bg-gray-50 py-20">
+        <section class="bg-gray-50 py-12">
             <div class="max-w-4xl mx-auto px-4 md:px-6 lg:px-8">
-                <h2 class="text-3xl font-headline text-center text-gray-900 mb-16">Sık Sorulan Sorular</h2>
+                <h2 class="text-2xl font-headline text-center text-gray-900 mb-8">Sık Sorulan Sorular</h2>
 
-                <div class="space-y-6">
+                <div class="space-y-4">
                     <details class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow cursor-pointer group">
                         <summary class="flex items-center justify-between font-semibold text-gray-900">
                             <span>E-kitap tamamen ücretsiz mi?</span>
@@ -316,14 +328,9 @@ import Footer from '../components/Footer.astro';
                 console.log('Sunucuya kaydedilemedi, ancak indirme devam ediyor.');
             }
 
-            // Statik PDF i doğrudan indir (yüksek kaliteli, formatı ve Türkce karakterleri korunan versiyon)
-            const pdfUrl = '/e-kitap/tup-bebek-beslenme-plani.pdf';
-            const link = document.createElement('a');
-            link.href = pdfUrl;
-            link.download = '30_Gunluk_Tup_Bebek_Beslenme_Plani.pdf';
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
+            // Statik PDF i doğrudan indir (cache-bust ile)
+            const pdfUrl = '/e-kitap/tup-bebek-beslenme-plani.pdf?v=20260411';
+            window.location.href = pdfUrl;
 
             // Success mesajı göster
             document.getElementById('loading-message').style.display = 'none';

@@ -3,10 +3,15 @@ title: "Kısırlık ve Endometriozis, tupbebek.com'dan 2025 Vizyonuyla Umut Dolu
 description: "Kısırlık ve Endometriozis arasındaki ilişki, tanı, tedavi seçenekleri ve tüp bebek stratejileri hakkında kapsamlı bir rehber. tupbebek.com yayın kurulunun klinik deneyimleri ve bilimsel araştırmaların ışığında umut dolu çözümler."
 publishDate: 2025-10-21
 author: "tupbebek.com Yayın Kurulu"
-medicalReviewer: "Yayın Kurulu"
+authorTitle: "Editoryal Ekip"
+authorCredentials: "Doç. Dr. Senai Aksoy editörlüğünde"
+medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
+reviewerTitle: "Tıbbi Danışma Kurulu"
+reviewDate: 2026-04-09
 lastModified: 2026-04-03
 category: "Kadın Sağlığı"
 image: /images/library/hastalik/kisirlik_endometriozis.webp
+imageAlt: "endometriozis ve kısırlık ilişkisi tedavi stratejileri illüstrasyonu"
 references:
   - title: "Endometriosis"
     authors: "Zondervan KT, Becker CM, Missmer SA"
@@ -75,9 +80,9 @@ Endometriozisin en çok görülen belirtileri arasında çok **ağrılı adet d�
 
 ### 1.2 Doğru Teşhise Giden Yol
 
-Kesin tanı için altın standart **[laparoskopi](/laparoskopi/)**dir. Ultrasonda **[endometrioma](/blog/endometrioma/)** tespit edilse bile, karın içindeki küçük odakların görülmesi ve gerekirse aynı seansta tedavi edilmesi için laparoskopi şarttır. [Tanının gecikmesi kronik inflamasyonun sürmesine yol açar](https://pmc.ncbi.nlm.nih.gov/makaleler/PMC9107540/); uzun vadede bu inflamasyon yumurta hücrelerinizin biyolojik yaşını artırarak fertilitenin azalmasına neden olur.
+Kesin tanı için altın standart **[laparoskopi](/laparoskopi/)**dir. Ultrasonda **[endometrioma](/makaleler/endometrioma/)** tespit edilse bile, karın içindeki küçük odakların görülmesi ve gerekirse aynı seansta tedavi edilmesi için laparoskopi şarttır. [Tanının gecikmesi kronik inflamasyonun sürmesine yol açar](https://pmc.ncbi.nlm.nih.gov/makaleler/PMC9107540/); uzun vadede bu inflamasyon yumurta hücrelerinizin biyolojik yaşını artırarak fertilitenin azalmasına neden olur.
 
-> **Dr. Senai'nin tavsiyesi:** Şiddetli regl ağrısı, ilişki sırasında ağrı veya sindirim sistemi şikâyetleri hissediyorsanız "herkes böyle" demeyin. Bir [endometriozis uzmanına](/blog/endometriozis-kisirlik-iliskisi/) başvurarak durumunuzu netleştirin. Erken teşhis hem ağrı yönetimini kolaylaştırır hem de yumurtalık rezervinizi koruma şansı verir.
+> **Dr. Senai'nin tavsiyesi:** Şiddetli regl ağrısı, ilişki sırasında ağrı veya sindirim sistemi şikâyetleri hissediyorsanız "herkes böyle" demeyin. Bir [endometriozis uzmanına](/makaleler/endometriozis-tup-bebek/) başvurarak durumunuzu netleştirin. Erken teşhis hem ağrı yönetimini kolaylaştırır hem de yumurtalık rezervinizi koruma şansı verir.
 
 ## 2 Kısırlık Labirenti: Endometriozis Nasıl Bebek Hayalini Etkiler?
 
@@ -109,14 +114,14 @@ Endometrioziste [rahim iç duvarı progesteron sinyallerine yeterince cevap verm
 
 ## 3 Çikolata Kisti (Endometrioma) ve Yumurtalık Rezervi
 
-Yumurtalıklar üzerinde oluşan endometriozis kistlerine **[çikolata kisti](/blog/endometrioma/)** veya endometrioma denir. Bu kistler yaklaşık **190 milyon kadında** görülür ve kronik ağrı ile kısırlık riskini artırır. Endometriozisli infertil kadınların %20–40'ında endometrioma bulunabilir.
+Yumurtalıklar üzerinde oluşan endometriozis kistlerine **[çikolata kisti](/makaleler/endometrioma/)** veya endometrioma denir. Bu kistler yaklaşık **190 milyon kadında** görülür ve kronik ağrı ile kısırlık riskini artırır. Endometriozisli infertil kadınların %20–40'ında endometrioma bulunabilir.
 
 ### 3.1 Kistin Kendisi mi, Cerrahi mi Daha Tehlikeli?
 
 Endometrioma, yumurtalık rezervini iki yönlü etkileyebilir:
 
 1. **Kistin varlığı:** [Endometrioma bulunan yumurtalıklarda yumurta sayısı azalır ve yumurtaların kalitesi düşer](https://pubmed.ncbi.nlm.nih.gov/38079077/).
-2. **Cerrahi risk:** [Kistin çıkarılması amacıyla yapılan laparoskopi, özellikle tekrarlayan veya büyük kistlerde sağlıklı yumurtalık dokusuna zarar vererek rezervi azaltabilir](https://pubmed.ncbi.nlm.nih.gov/32972732/). Bu nedenle [3 cm'den küçük kistlerde cerrahiden kaçınılması ve düzenli takip önerilir](/blog/endometrioma/).
+2. **Cerrahi risk:** [Kistin çıkarılması amacıyla yapılan laparoskopi, özellikle tekrarlayan veya büyük kistlerde sağlıklı yumurtalık dokusuna zarar vererek rezervi azaltabilir](https://pubmed.ncbi.nlm.nih.gov/32972732/). Bu nedenle [3 cm'den küçük kistlerde cerrahiden kaçınılması ve düzenli takip önerilir](/makaleler/endometrioma/).
 
 ### 3.2 Yumurta Dondurma: Erken Sigorta
 
@@ -130,11 +135,11 @@ Endometrioma ve cerrahi riski nedeniyle yumurtalık rezervi tehlike altında ola
 ### 4.1 Cerrahi mi, Doğrudan IVF mi?
 
 - **Hafif vakalar (Evre I–II) ve iyi yumurtalık rezervi:** [Ağrı şikâyeti varsa laparoskopi ile kistin çıkarılması ve ardından 6 ay boyunca doğal gebelik denenmesi uygundur.](/tup-bebek-asamalari/) Cerrahi sonrası ilk 6 ay gebelik şansının en yüksek olduğu dönemdir. Eğer gebelik oluşmazsa tüp bebek tedavisine geçilir.
-- **İleri evre (Evre III–IV), düşük rezerv veya ileri yaş:** [Pelvik yapışıklıklar, kronik inflamasyon ve azalmış yumurta sayısı nedeniyle zaman kaybetmeden IVF'ye geçmek daha mantıklıdır.](/blog/endometriozis-kisirlik-iliskisi/)
+- **İleri evre (Evre III–IV), düşük rezerv veya ileri yaş:** [Pelvik yapışıklıklar, kronik inflamasyon ve azalmış yumurta sayısı nedeniyle zaman kaybetmeden IVF'ye geçmek daha mantıklıdır.](/makaleler/endometriozis-tup-bebek/)
 
 ### 4.2 Taze ve Dondurulmuş Embriyo Transferi Arasında Seçim
 
-Modern IVF pratiğinde **[dondurulmuş embriyo transferi](/blog/taze-dondurulmus-embriyo-transferi/)** (FET) pek çok durumda taze transferle benzer veya daha yüksek başarı sağlayabilir. [Meta‑analizler özellikle **endometriozis hastalarında** ve **hiper‑responder** olarak adlandırılan çok sayıda yumurta üreten kadınlarda FET'in gebelik sonuçlarını belirgin şekilde iyileştirdiğini](https://pmc.ncbi.nlm.nih.gov/makaleler/PMC9107540/) gösteriyor.
+Modern IVF pratiğinde **[dondurulmuş embriyo transferi](/makaleler/taze-dondurulmus-transfer/)** (FET) pek çok durumda taze transferle benzer veya daha yüksek başarı sağlayabilir. [Meta‑analizler özellikle **endometriozis hastalarında** ve **hiper‑responder** olarak adlandırılan çok sayıda yumurta üreten kadınlarda FET'in gebelik sonuçlarını belirgin şekilde iyileştirdiğini](https://pmc.ncbi.nlm.nih.gov/makaleler/PMC9107540/) gösteriyor.
 
 [Dondurulmuş transferde embriyolar, hormon seviyeleri sakinleşmiş ve rahim ortamı daha uygun hâle gelmiş bir siklusta transfer edilir](https://www.tandfonline.com/doi/full/10.1080/14647273.2023.2288634); bu da tutunma şansını artırır.
 

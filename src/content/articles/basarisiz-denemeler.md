@@ -3,11 +3,13 @@ title: "Başarısız Denemeler ve Psikolojik Destek: Yeni Bir Yol Haritası"
 description: "Tüp bebek tedavisinde olumsuz sonuç almak, yolun sonu değil, stratejinin yeniden kurgulandığı bir duraktır. Bilimsel ve duygusal olarak nasıl ilerlenmeli?"
 category: "Rehber"
 author: "tupbebek.com Yayın Kurulu"
-authorTitle: "Yayın Kurulu"
+authorTitle: "Editoryal Ekip"
+authorCredentials: "Doç. Dr. Senai Aksoy editörlüğünde"
 medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Tıbbi Danışma Kurulu"
 reviewDate: 2026-04-06
 publishDate: 2024-03-31
+lastModified: 2024-03-31
 image: "/images/library/embriyo/yumurta_dna_kalitesi.webp"
 imageAlt: "Embriyo DNA kalitesi ve başarısız deneme analizi"
 references:

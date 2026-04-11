@@ -1,0 +1,20 @@
+# PDF downloads
+/e-kitap/*.pdf
+  Content-Type: application/pdf
+  Content-Disposition: attachment
+  Cache-Control: public, max-age=3600
+
+# Font caching
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Image caching
+/images/*
+  Cache-Control: public, max-age=604800
+
+# E-kitap image + HTML caching
+/e-kitap/images/*
+  Cache-Control: public, max-age=604800
+
+/e-kitap/*.html
+  Cache-Control: public, max-age=3600

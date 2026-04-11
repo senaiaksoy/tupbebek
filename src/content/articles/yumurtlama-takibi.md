@@ -3,10 +3,15 @@ title: "Yumurtlama Takibi ve İlişki Planlaması Nedir?"
 description: "Yumurtlama takibi, yumurtlama zamanının takip edilerek kadının en doğurgan olduğu günlerin belirlenmesi ve ilişkinin buna göre planlanarak gebelik şansının artırılması amacını taşır."
 publishDate: 2025-01-17
 author: "tupbebek.com Yayın Kurulu"
-medicalReviewer: "Yayın Kurulu"
+authorTitle: "Editoryal Ekip"
+authorCredentials: "Doç. Dr. Senai Aksoy editörlüğünde"
+medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
+reviewerTitle: "Tıbbi Danışma Kurulu"
+reviewDate: 2026-04-09
 lastModified: 2026-04-03
 category: "Tanı ve Testler"
 image: /images/library/klinik/54.webp
+imageAlt: "yumurtlama takibi ve ovülasyon izleme süreci"
 references:
   - title: "Timing of sexual intercourse in relation to ovulation: effects on the probability of conception, survival of the pregnancy, and sex of the baby"
     authors: "Wilcox AJ, Weinberg CR, Baird DD"
@@ -47,7 +52,7 @@ Beynin alt kısmında yer alan **hipofiz bezi**, yumurtlama döngüsünü düzen
 - **FSH (Folikül Uyarıcı Hormon)**: Foliküllerin büyümesini ve olgunlaşmasını tetikler.
 - **LH (Lüteinleştirici Hormon)**: Folikül belirli bir olgunluğa ulaşınca LH'da ani bir yükselme olur ve bu yükselme, yumurtlamaya (yumurtanın çatlaması) yol açar.
 
-Bu iki hormonun adet döngüsündeki düzenli salınımı, sağlıklı bir ovülasyon sürecini mümkün kılar. [Tüp Bebek Tedavisi](/blog/tup-bebek-nedir-kimlere-uygulanir/) gibi yardımcı üreme yöntemlerinde dışarıdan gonadotropin ilaçları verilerek, bu sürecin kontrollü biçimde yönetilmesi sağlanır.
+Bu iki hormonun adet döngüsündeki düzenli salınımı, sağlıklı bir ovülasyon sürecini mümkün kılar. [Tüp Bebek Tedavisi](/makaleler/tup-bebek-nedir/) gibi yardımcı üreme yöntemlerinde dışarıdan gonadotropin ilaçları verilerek, bu sürecin kontrollü biçimde yönetilmesi sağlanır.
 
 ---
 

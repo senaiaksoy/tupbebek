@@ -9,11 +9,11 @@ author:
   credentials: "Üreme Tıbbı ve Yardımcı Üreme Teknikleri"
 authorTitle: "Kadın Hastalıkları ve Doğum Uzmanı"
 authorCredentials: "Üreme Tıbbı ve Yardımcı Üreme Teknikleri"
-medicalReviewer: "Doç. Dr. Senai Aksoy"
+medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Baş Editör"
 reviewDate: 2026-04-04
 category: "Tüp Bebek"
-image: "/images/makaleler/yasa-gore-tup-bebek-basari-oranlari.jpg"
+image: "/images/library/istatistik/yas_gebelikorani_ivf.webp"
 imageAlt: "Yaşa göre tüp bebek başarı oranlarını temsil eden, farklı yaş dönemlerini simgeleyen kadın görseli"
 featured: true
 status: published

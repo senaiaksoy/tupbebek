@@ -3,10 +3,15 @@ title: "İntrauterin İnseminasyon (IUI). Kapsamlı Bir Rehber"
 description: "İntrauterin inseminasyon (IUI) nedir? Aşılama yöntemini, kimler için uygun olduğunu ve başarı oranlarını açıklıyor. Detaylı rehber!"
 publishDate: 2025-03-17
 author: "tupbebek.com Yayın Kurulu"
-medicalReviewer: "Yayın Kurulu"
+authorTitle: "Editoryal Ekip"
+authorCredentials: "Doç. Dr. Senai Aksoy editörlüğünde"
+medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
+reviewerTitle: "Tıbbi Danışma Kurulu"
+reviewDate: 2026-04-09
 lastModified: 2026-04-03
 category: "Tedavi Yöntemleri"
 image: /images/library/tedavi/iac.webp
+imageAlt: "intrauterin inseminasyon IUI aşılama işlemi illüstrasyonu"
 references:
   - title: "Intrauterine insemination for cervical factor subfertility"
     authors: "Besselink DE, Farquhar C"

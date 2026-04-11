@@ -3,10 +3,15 @@ title: "Vajinal Mikrobiyom ve FIV Başarısı. Sessiz Bir Devrim"
 description: "Vajinal mikrobiyom FIV başarısını %30-40 etkileyebilir. L. crispatus dominasyonu gebelik şansını 6 kat artırır. 2025 verilerine dayalı bilimsel rehber."
 publishDate: 2025-11-12
 author: "tupbebek.com Yayın Kurulu"
-medicalReviewer: "Yayın Kurulu"
+authorTitle: "Editoryal Ekip"
+authorCredentials: "Doç. Dr. Senai Aksoy editörlüğünde"
+medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
+reviewerTitle: "Tıbbi Danışma Kurulu"
+reviewDate: 2026-04-09
 lastModified: 2026-04-03
 category: "Tüp Bebek"
 image: /images/library/laboratuvar/microbiota.webp
+imageAlt: "vajinal mikrobiyom florası ve tüp bebek başarısı üzerindeki etkileri"
 references:
   - title: "Evidence that the endometrial microbiota has an effect on implantation success or failure"
     authors: "Moreno I, Codoñer FM, Vilella F et al."
@@ -100,7 +105,7 @@ Bunlara ek olarak, bozulmuş vajinal mikrobiyomun **düşük (gebelik kaybı)** 
 
 Bakın, işin özeti aslında şu: Bu "vajinal disbiyoz" meselesi, sadece tüp bebek (IVF) tedavinizin sonucunu etkileyen teknik bir detay değil. Bu, bir **domino taşı** gibi. Bu bozulma başladığında, sadece IVF başarısını değil; doğal yolla hamile kalma ihtimalinizi, hamile kaldığınızda o gebeliğin sağlıklı devam etme (düşük riski) olasılığını, kısacası tüm üreme sağlığınızı etkileyen bir dizi olayı tetikliyor. Bu yüzden, infertilite tedavisinde vajinal floraya bakmak benim için bir "ayrıntı" değil, **bütüncül yaklaşımımızın** en temel parçalarından biri. Hastalarıma hep o meşhur sözü hatırlatırım: **"Şeytan ayrıntıda gizlidir."** İşte bu vajinal flora da, çoğu zaman o gözden kaçan, ama bulunduğunda tüm resmi değiştiren o kritik "ayrıntıdır". Bizim görevimiz de o ayrıntıyı bulup çözmek.
 
-_Endometriozis hakkında detaylı bilgi için tıklayın_ – Vajinal mikrobiyom, endometriozis gibi diğer jinekolojik durumlarda da rol oynayabilir. Örneğin, endometriozis hastalarında hem bağırsak hem vajinal flora dengesizliği sıklıkla görülür ve bu durum vücutta iltihabi yükü artırabilir. Endometriozis ve kısırlık ilişkisi hakkında daha fazlasını yukarıdaki [bağlantıda bulabilirsiniz](/blog/kisirlik-ve-endometriozis-icin-akilli-stratejiler/).
+_Endometriozis hakkında detaylı bilgi için tıklayın_ – Vajinal mikrobiyom, endometriozis gibi diğer jinekolojik durumlarda da rol oynayabilir. Örneğin, endometriozis hastalarında hem bağırsak hem vajinal flora dengesizliği sıklıkla görülür ve bu durum vücutta iltihabi yükü artırabilir. Endometriozis ve kısırlık ilişkisi hakkında daha fazlasını yukarıdaki [bağlantıda bulabilirsiniz](/makaleler/endometriozis-akilli-stratejiler/).
 
 ## Vajinal Mikrobiyom Testi Nasıl Yapılır?
 

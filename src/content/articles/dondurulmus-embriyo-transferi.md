@@ -1,9 +1,12 @@
 ---
 title: "Dondurulmuş Embriyo Transferi (FET): Taze mi, Dondurulmuş mu?"
 description: "Bu içerik taze ve dondurulmuş embriyo transferi karşılaştırması rehberimizle birleştirilmiştir."
+status: "draft"
 publishDate: 2025-11-10
+lastModified: 2025-11-10
 author: "tupbebek.com Yayın Kurulu"
-authorTitle: "Yayın Kurulu"
+authorTitle: "Editoryal Ekip"
+authorCredentials: "Doç. Dr. Senai Aksoy editörlüğünde"
 medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Tıbbi Danışma Kurulu"
 reviewDate: 2026-04-06

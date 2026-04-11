@@ -3,7 +3,11 @@ title: "Tüp Bebekte Genetik Testler: PGT Nedir, Ne Zaman Gerekir?"
 description: "Tüp bebek tedavisinde genetik testler (PGT-A, PGT-M, PGT-SR) nedir? Kimlere önerilir? Nasıl yapılır? Riskleri ve faydaları nelerdir? Sade ve anlaşılır bir rehber."
 publishDate: 2026-03-31
 author: "tupbebek.com Yayın Kurulu"
-medicalReviewer: "Doç. Dr. Senai Aksoy"
+authorTitle: "Editoryal Ekip"
+authorCredentials: "Doç. Dr. Senai Aksoy editörlüğünde"
+medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
+reviewerTitle: "Tıbbi Danışma Kurulu"
+reviewDate: 2026-04-09
 lastModified: 2026-04-05
 category: "Genetik"
 image: "/images/library/embriyo/pgt.webp"
@@ -25,6 +29,16 @@ references:
     journal: "Fertility and Sterility"
     year: 2015
     doi: "10.1016/j.fertnstert.2015.05.012"
+  - title: "The use of preimplantation genetic testing for aneuploidy (PGT-A): a committee opinion"
+    authors: "Practice Committee of ASRM"
+    journal: "Fertility and Sterility"
+    year: 2020
+    doi: "10.1016/j.fertnstert.2020.04.025"
+  - title: "The Istanbul consensus update: a revised ESHRE/ALPHA consensus on oocyte and embryo static and dynamic morphological assessment"
+    authors: "Coticchio G, Ahlström A, Balaban B et al."
+    journal: "Human Reproduction"
+    year: 2025
+    doi: "10.1093/humrep/deaf021"
 ---
 
 ## Genetik Testler Neden Önemli?
@@ -161,9 +175,3 @@ Preimplantasyon genetik testler, tüp bebek tedavisinde embriyo seçimini bilims
 Ancak her hastaya rutin olarak gerekmeyebilir ve bazı sınırlamaları da mevcuttur. PGT'nin sizin durumunuza uygun olup olmadığını doktorunuzla birlikte, kendi tıbbi geçmişinize göre değerlendirmenizi öneririz.
 
 ---
-
-**Kaynaklar:**
-1. ESHRE PGT Consortium Steering Committee. ESHRE PGT Consortium good practice recommendations for the organisation of PGT. *Hum Reprod Open*. 2020;2020(3):hoaa021. [doi:10.1093/hropen/hoaa021](https://doi.org/10.1093/hropen/hoaa021)
-2. Munné S, et al. Preimplantation genetic testing for aneuploidy versus morphology as selection criteria for single frozen-thawed embryo transfer in good-prognosis patients: a multicenter randomized clinical trial. *Fertil Steril*. 2019;112(6):1071-1079. [doi:10.1016/j.fertnstert.2019.07.1346](https://doi.org/10.1016/j.fertnstert.2019.07.1346)
-3. Practice Committee of ASRM. The use of preimplantation genetic testing for aneuploidy (PGT-A): a committee opinion. *Fertil Steril*. 2020;114(2):246-272. [doi:10.1016/j.fertnstert.2020.04.025](https://doi.org/10.1016/j.fertnstert.2020.04.025)
-4. Coticchio G, Ahlström A, Balaban B, et al. The Istanbul consensus update: a revised ESHRE/ALPHA consensus on oocyte and embryo static and dynamic morphological assessment. *Hum Reprod*. 2025;40(6):989-1035. [doi:10.1093/humrep/deaf021](https://doi.org/10.1093/humrep/deaf021)

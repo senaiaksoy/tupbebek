@@ -3,10 +3,15 @@ title: "Tüp Bebek ve Kısırlık Hakkında Yanlış Bilinen Gerçekler"
 description: "Tüp bebek uzmanı tupbebek.com yayın kurulu tüp bebek ve kısırlık hakkında halk arasında yaygın bazı yanlış inanışlar konusunda bilgi veriyor."
 publishDate: 2016-11-13
 author: "tupbebek.com Yayın Kurulu"
-medicalReviewer: "Yayın Kurulu"
+authorTitle: "Editoryal Ekip"
+authorCredentials: "Doç. Dr. Senai Aksoy editörlüğünde"
+medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
+reviewerTitle: "Tıbbi Danışma Kurulu"
+reviewDate: 2026-04-09
 lastModified: 2026-04-03
 category: "Tüp Bebek"
 image: /images/library/klinik/41.webp
+imageAlt: "tüp bebek ve kısırlık hakkında doğru bilinen yanlışlar"
 references:
   - title: "What do we know about public awareness of infertility? A systematic review"
     authors: "Bunting L, Boivin J"
@@ -57,7 +62,7 @@ Yeni hastalarda tüp bebek tedavisine hazırlanmak birkaç hafta sürebilir. Anc
 
 ### 5\. Tüp bebek tedavisi ile hamile kalırsam ikizlerim veya üçüzlerim olur!
 
-Yardımcı üreme teknikleri ile hamile kalındığında [çoğul gebelik riski](/blog/cogul-gebelikler-ve-riskleri "çoğul gebelikler ve riskleri") artmaktadır. Ancak risk kadının yaşı ile ilgilidir ve bu risk doktorunuz tarafından kontrol edilebilir:
+Yardımcı üreme teknikleri ile hamile kalındığında [çoğul gebelik riski](/makaleler/tup-bebek-yanlis-bilinenler "çoğul gebelikler ve riskleri") artmaktadır. Ancak risk kadının yaşı ile ilgilidir ve bu risk doktorunuz tarafından kontrol edilebilir:
 
 \-Tüp bebekte 35 yaşın altındaki hastalara sadece 1 embriyo transfer edilmektedir; bu da ikiz olma riskini %2'nin altına indirmektedir.
 
@@ -83,8 +88,8 @@ Eğer kadın yaş olarak sağlıklı bir hamileliğe uygun bir adaysa hamile kal
 
 Yumurta dondurmayı doğurganlığınız ile ilgili bir sigorta yaptırmaya benzetebiliriz. Belki dondurduğunuz yumurtalara hiç ihtiyacınız olmayabilir ama 'zamanı durdurma'nın tek yolu yumurta dondurmadır.
 
-Ayrıca her kadın hamile kalmayı denemeye karar verdiğinde bir doktorla görüşerek [yumurtalık rezervi ve dolayısıyla doğurganlığı](/blog/kadinlarda-yumurtalik-rezervi-ve-onemi "yumurtalık rezervi belirleme") hakkında bilgi alabilir ve normal yoldan hamile kalmak için yapılması gerekenler konusunda en doğru bilgiye sahip olabilir.
+Ayrıca her kadın hamile kalmayı denemeye karar verdiğinde bir doktorla görüşerek [yumurtalık rezervi ve dolayısıyla doğurganlığı](/makaleler/kac-yumurta-gerekir "yumurtalık rezervi belirleme") hakkında bilgi alabilir ve normal yoldan hamile kalmak için yapılması gerekenler konusunda en doğru bilgiye sahip olabilir.
 
 ### 10\. Hamile kalabiliyorum ama düşük yapıyorum, bir kısırlık uzmanı bana yardımcı olamaz!
 
-Yardımcı üreme teknikleri konusunda uzman bir doktor [tekrar eden düşükler](/blog/tekrarlayan-dusuklerin-nedenleri "tekrarlayan düşükler neden olur") ve [implantasyon sorunları](/blog/tup-bebek-tedavisinde-tekrarlayan-basarisizliklar "embriyonun rahime tutunması sorunu") için de size yardımcı olabilir.
+Yardımcı üreme teknikleri konusunda uzman bir doktor [tekrar eden düşükler](/makaleler/basarisiz-denemeler "tekrarlayan düşükler neden olur") ve [implantasyon sorunları](/makaleler/basarisiz-denemeler "embriyonun rahime tutunması sorunu") için de size yardımcı olabilir.

@@ -3,7 +3,11 @@ title: "Tüp Bebek Başarı Oranları ve Etki Eden Etkenler"
 description: "Tüp bebek tedavisinde başarı oranları nedir? Yaşa göre IVF başarısı, başarıyı etkileyen etkenler, laboratuvar teknolojileri ve kümülatif başarı kavramı."
 publishDate: 2026-03-31
 author: "tupbebek.com Yayın Kurulu"
-medicalReviewer: "Doç. Dr. Senai Aksoy"
+authorTitle: "Editoryal Ekip"
+authorCredentials: "Doç. Dr. Senai Aksoy editörlüğünde"
+medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
+reviewerTitle: "Tıbbi Danışma Kurulu"
+reviewDate: 2026-04-09
 lastModified: 2026-04-05
 category: "Tüp Bebek"
 image: "/images/library/istatistik/basari_oranlari_hero.webp"
@@ -25,6 +29,21 @@ references:
     journal: "Human Reproduction"
     year: 2011
     doi: "10.1093/humrep/der037"
+  - title: "Guidance on the limits to the number of embryos to transfer: a committee opinion"
+    authors: "Practice Committee of ASRM"
+    journal: "Fertility and Sterility"
+    year: 2021
+    doi: "10.1016/j.fertnstert.2021.06.050"
+  - title: "Preimplantation genetic testing for aneuploidy versus morphology as selection criteria for single frozen-thawed embryo transfer in good-prognosis patients"
+    authors: "Munné S, Kaplan B, Frattarelli JL et al."
+    journal: "Fertility and Sterility"
+    year: 2019
+    doi: "10.1016/j.fertnstert.2019.07.1346"
+  - title: "Freeze-all policy: fresh vs. frozen-thawed embryo transfer — a systematic review and meta-analysis"
+    authors: "Roque M, Haahr T, Geber S et al."
+    journal: "Fertility and Sterility"
+    year: 2019
+    doi: "10.1016/j.fertnstert.2018.10.019"
 ---
 
 ## Başarı Oranları Nasıl Ölçülür?
@@ -169,10 +188,3 @@ Tüp bebek başarı oranları son yıllarda önemli ölçüde artmıştır. Anca
 Başarı oranları hakkında en doğru bilgiyi, **sizin kendi tıbbi durumunuza göre** doktorunuz verebilir. Genel istatistikler yol gösterici olabilir, ancak her tedavi bireyseldir. Önceki deneme sonuçlarınız ve mevcut durumunuz ışığında doktorunuzla birlikte en uygun tedavi planını oluşturmanızı öneririz.
 
 ---
-
-**Kaynaklar:**
-1. ESHRE. ART fact sheet 2020. *European IVF Monitoring Consortium (EIM)*. 2024. [eshre.eu](https://www.eshre.eu/Data-collection-and-research/Consortia/EIM)
-2. CDC. *Assisted Reproductive Technology (ART) — National Summary Report*. 2021. [cdc.gov/art](https://www.cdc.gov/art/reports/index.html)
-3. Practice Committee of ASRM. Guidance on the limits to the number of embryos to transfer: a committee opinion. *Fertil Steril*. 2021;116(3):651-654. [doi:10.1016/j.fertnstert.2021.06.050](https://doi.org/10.1016/j.fertnstert.2021.06.050)
-4. Munné S, et al. Preimplantation genetic testing for aneuploidy versus morphology as selection criteria for single frozen-thawed embryo transfer in good-prognosis patients. *Fertil Steril*. 2019;112(6):1071-1079. [doi:10.1016/j.fertnstert.2019.07.1346](https://doi.org/10.1016/j.fertnstert.2019.07.1346)
-5. Roque M, et al. Freeze-all policy: fresh vs. frozen-thawed embryo transfer — a systematic review and meta-analysis. *Fertil Steril*. 2019;111(2):320-340. [doi:10.1016/j.fertnstert.2018.10.019](https://doi.org/10.1016/j.fertnstert.2018.10.019)

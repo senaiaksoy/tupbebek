@@ -3,10 +3,15 @@ title: "Tüp Bebek Tedavisinde Başarı İçin Gerçekten Kaç Yumurta Gerekir?"
 description: "Tüp bebek tedavisinde başarı şansını artırmak için kaç yumurta gerekir? Yumurta sayısı, kalite ve yaş etkenleri hakkında tupbebek.com'dan bilimsel açıklama."
 publishDate: 2025-10-08
 author: "tupbebek.com Yayın Kurulu"
-medicalReviewer: "Yayın Kurulu"
+authorTitle: "Editoryal Ekip"
+authorCredentials: "Doç. Dr. Senai Aksoy editörlüğünde"
+medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
+reviewerTitle: "Tıbbi Danışma Kurulu"
+reviewDate: 2026-04-09
 lastModified: 2026-04-03
 category: "Tüp Bebek"
 image: /images/library/embriyo/yumurta-sayisi.webp
+imageAlt: "tüp bebek tedavisinde yumurta sayısı ve başarı oranı ilişkisi"
 references:
   - title: "Association between the number of eggs and live birth in IVF treatment: an analysis of 400 135 treatment cycles"
     authors: "Sunkara SK, Rittenberg V, Raine-Fenning N et al."
@@ -92,7 +97,7 @@ Her hastada hedeflenen yumurta sayısı farklıdır.
 
 Daha fazla bilgi için:
 🔗 **[Tüp Bebek Tedavisinin Aşamaları](/tup-bebek-asamalari/)**
-🔗 **[Tüp Bebek Tedavisinde Yumurta Toplamanın Gecikmesi](/blog/tup-bebek-tedavisinde-yumurta-toplamanin-gecikmesi/)**
+🔗 **[Tüp Bebek Tedavisinde Yumurta Toplamanın Gecikmesi](/makaleler/kac-yumurta-gerekir/)**
 🔗 **[Tüp Bebek'te Çatlatma İğnesi](/tup-bebek-tedavisinde-catlatma-ignesi/)**
 
 ---
@@ -109,7 +114,7 @@ Ayrıca DHEA gibi takviyeler düşük rezervli hastalarda faydalı olabilir.
 
 **Soru:** Tüp bebekte genellikle kaç yumurta toplanır?
 **Cevap:** Ortalama 8–15 arasıdır. Daha az da olabilir; önemli olan kalitedir.
-Daha fazla bilgi için 👉 [IVF Tedavisinde Kullanılan Protokoller](/blog/ivf-protokolleri-istanbul/).
+Daha fazla bilgi için 👉 [IVF Tedavisinde Kullanılan Protokoller](/makaleler/ivf-protokolleri/).
 
 **Soru:** Çok fazla yumurta toplanırsa zararı olur mu?
 **Cevap:** 20 üzeri yumurta toplandığında **OHSS riski** artabilir ([ESHRE Guideline](https://www.eshre.eu/Guidelines-and-Legal/Guidelines/Ovarian-Stimulation-in-IVF-ICSI)).
@@ -124,7 +129,7 @@ Bir yumurta bile mucizeye dönüşebilir; ben bu mucizelere her gün tanıklık 
 
 Eğer tedaviye yeni başlıyorsanız veya sürecin ortasındaysanız, detaylı bilgi için şu sayfalara mutlaka göz atın:
 
-- 🔗 **[Embriyo Tutunması ve İmplantasyon](/blog/embriyo-tutunmasi-implantasyon-3-tup-bebek-asamalarinda-yapilabilecekler/)**
+- 🔗 **[Embriyo Tutunması ve İmplantasyon](/makaleler/embriyo-transferi-sonrasi-bakim/)**
 - 🔗 **[Tüp Bebek Tedavisinde Nelere Dikkat Etmelisiniz](/tup-bebek-tedavisinde-nelere-dikkat-etmelisiniz/)**
 
 Ve unutmayın:

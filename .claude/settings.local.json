@@ -21,7 +21,8 @@
       "Bash(node:*)",
       "Bash(curl -s http://localhost:4326/)",
       "Bash(curl:*)",
-      "Bash(gh repo:*)"
+      "Bash(gh repo:*)",
+      "WebFetch(domain:tupbebek.com)"
     ]
   }
 }

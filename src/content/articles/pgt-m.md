@@ -3,7 +3,11 @@ title: "PGT-M Nedir? Tek Gen Hastalıklarını Embriyoda Taramak"
 description: "PGT-M (Preimplantasyon Genetik Test - Monogenik) nedir? Hangi hastalıklar taranır? Kimler için gereklidir? Hazırlık süreci, uygulama adımları ve sık sorulan sorular."
 publishDate: 2024-05-07
 author: "tupbebek.com Yayın Kurulu"
-medicalReviewer: "Doç. Dr. Senai Aksoy"
+authorTitle: "Editoryal Ekip"
+authorCredentials: "Doç. Dr. Senai Aksoy editörlüğünde"
+medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
+reviewerTitle: "Tıbbi Danışma Kurulu"
+reviewDate: 2026-04-09
 lastModified: 2026-04-05
 category: "Genetik"
 image: /images/library/embriyo/pgt.webp
@@ -24,6 +28,26 @@ references:
     journal: "Fertility and Sterility"
     year: 2014
     doi: "10.1016/j.fertnstert.2014.01.051"
+  - title: "ESHRE PGT Consortium good practice recommendations for the organisation of PGT"
+    authors: "Carvalho F, Moutou C, Dimitriadou E et al."
+    journal: "Human Reproduction Open"
+    year: 2020
+    doi: "10.1093/hropen/hoaa021"
+  - title: "Preimplantation genetic testing for single-gene disorders: experience with more than 1,000 cycles"
+    authors: "Rechitsky S, Pakhalchuk T, San Ramos G et al."
+    journal: "Fertility and Sterility"
+    year: 2020
+    doi: "10.1016/j.fertnstert.2020.01.033"
+  - title: "Use of preimplantation genetic testing for monogenic defects (PGT-M) for adult-onset conditions: an Ethics Committee opinion"
+    authors: "Practice Committee of ASRM"
+    journal: "Fertility and Sterility"
+    year: 2018
+    doi: "10.1016/j.fertnstert.2018.01.028"
+  - title: "ESHRE PGT Consortium data collection XIV: cycles from January to December 2017 with pregnancy follow-up to October 2018"
+    authors: "De Rycke M, Berckmoes V et al."
+    journal: "Human Reproduction Open"
+    year: 2021
+    doi: "10.1093/hropen/hoab024"
 ---
 
 ## PGT-M Nedir?
@@ -184,9 +208,3 @@ PGT-M, genetik hastalık taşıyıcısı olan çiftlere sağlıklı biyolojik ç
 Tedavi öncesi hazırlık süreci (prob tasarımı) zaman gerektirdiğinden, erken planlama önemlidir. Ailenizde bilinen bir genetik hastalık varsa veya taşıyıcılık konusunda endişeniz varsa, doktorunuz ve genetik danışmanınız size en uygun yaklaşımı belirleyecektir. Genetik testler hakkında detaylı bilgi için [PGT rehberimizi](/makaleler/genetik-testler) inceleyebilirsiniz.
 
 ---
-
-**Kaynaklar:**
-1. ESHRE PGT Consortium Steering Committee. ESHRE PGT Consortium good practice recommendations for the organisation of PGT. *Hum Reprod Open*. 2020;2020(3):hoaa021. [doi:10.1093/hropen/hoaa021](https://doi.org/10.1093/hropen/hoaa021)
-2. Rechitsky S, et al. Preimplantation genetic testing for single-gene disorders: experience with more than 1,000 cycles. *Fertil Steril*. 2020;113(6):1205-1217. [doi:10.1016/j.fertnstert.2020.01.033](https://doi.org/10.1016/j.fertnstert.2020.01.033)
-3. Practice Committee of ASRM. Use of preimplantation genetic testing for monogenic defects (PGT-M) for adult-onset conditions: an Ethics Committee opinion. *Fertil Steril*. 2018;109(6):989-992. [doi:10.1016/j.fertnstert.2018.01.028](https://doi.org/10.1016/j.fertnstert.2018.01.028)
-4. De Rycke M, et al. ESHRE PGT Consortium data collection XIV: cycles from January to December 2017 with pregnancy follow-up to October 2018. *Hum Reprod Open*. 2021;2021(2):hoab024. [doi:10.1093/hropen/hoab024](https://doi.org/10.1093/hropen/hoab024)

@@ -4,8 +4,9 @@ description: "Açıklanamayan (idiyopatik) infertilite tanısı, nedenleri, gizl
 publishDate: 2024-09-27
 author: "tupbebek.com Yayın Kurulu"
 authorTitle: "Editoryal Ekip"
-medicalReviewer: "tupbebek.com Tibbi Danisma Kurulu"
-reviewerTitle: "Ureme Tibbi Uzmanlari"
+authorCredentials: "Doç. Dr. Senai Aksoy editörlüğünde"
+medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
+reviewerTitle: "Tıbbi Danışma Kurulu"
 reviewDate: 2026-04-01
 lastModified: 2026-04-03
 category: "Tanı ve Testler"

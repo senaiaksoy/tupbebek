@@ -1,12 +1,18 @@
 ---
 title: "Hiperprolaktinemi ve Prolaktinomu Anlamak"
 description: "Bu içerik hiperprolaktinemi ve kısırlık rehberimizle birleştirilmiştir."
+status: "draft"
 publishDate: 2024-10-29
 author: "tupbebek.com Yayın Kurulu"
-medicalReviewer: "Yayın Kurulu"
+authorTitle: "Editoryal Ekip"
+authorCredentials: "Doç. Dr. Senai Aksoy editörlüğünde"
+medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
+reviewerTitle: "Tıbbi Danışma Kurulu"
+reviewDate: 2026-04-09
 lastModified: 2026-04-05
 category: "Kadın Sağlığı"
 image: /images/library/klinik/70.webp
+imageAlt: "hiperprolaktinemi ve prolaktinom hormonal dengesizlik illüstrasyonu"
 references:
   - title: "Diagnosis and treatment of hyperprolactinemia: an Endocrine Society clinical practice guideline"
     authors: "Melmed S, Casanueva FF, Hoffman AR et al."

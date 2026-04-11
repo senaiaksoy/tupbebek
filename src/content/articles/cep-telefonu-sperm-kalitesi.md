@@ -3,10 +3,15 @@ title: "Cep Telefonlarının Sperm Kalitesi Üzerindeki Gizli Etkileri"
 description: "Bu blog yazısı, cep telefonlarının erkeklerde sperm kalitesi üzerindeki potansiyel olumsuz etkilerini ele alıyor. Yoğun telefon kullanımının, radyo frekans dalgaları ve ısı artışı yoluyla sperm sayısını, hareketliliğini ve DNA bütünlüğünü nasıl etkileyebileceğini inceliyor. Ayrıca oksidatif stresin rolüne de değiniyor. Korunma yöntemleri olarak, telefonu vücuttan uzak tutmak, kulaklık kullanmak, antioksidan alımını artırmak ve sağlıklı bir yaşam tarzı benimsemek gibi pratik öneriler sunuyor. Sonuç olarak, bilinçli teknoloji kullanımının önemini vurgulayarak, okuyucuları üreme sağlıklarını korumak için önlem almaya teşvik ediyor."
 publishDate: 2025-01-02
 author: "tupbebek.com Yayın Kurulu"
-medicalReviewer: "Yayın Kurulu"
+authorTitle: "Editoryal Ekip"
+authorCredentials: "Doç. Dr. Senai Aksoy editörlüğünde"
+medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
+reviewerTitle: "Tıbbi Danışma Kurulu"
+reviewDate: 2026-04-09
 lastModified: 2026-04-03
 category: "Erkek Sağlığı"
 image: /images/library/klinik/ceptel.webp
+imageAlt: "cep telefonu elektromanyetik dalgaları ve sperm kalitesi üzerine etkisi illüstrasyonu"
 references:
   - title: "Effect of mobile telephones on sperm quality: a systematic review and meta-analysis"
     authors: "Adams JA, Galloway TS, Mondal D et al."

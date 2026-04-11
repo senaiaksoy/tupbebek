@@ -3,10 +3,15 @@ title: "Endometrioma"
 description: "Endometriozis kistleri (endometriomalar), kronik ağrıdan kısırlığa dek yaşam kalitesini etkiler. Belirtiler, nedenler ve tedavi yöntemleri hakkında bilgi edinin."
 publishDate: 2025-01-31
 author: "tupbebek.com Yayın Kurulu"
-medicalReviewer: "Yayın Kurulu"
+authorTitle: "Editoryal Ekip"
+authorCredentials: "Doç. Dr. Senai Aksoy editörlüğünde"
+medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
+reviewerTitle: "Tıbbi Danışma Kurulu"
+reviewDate: 2026-04-09
 lastModified: 2026-04-03
 category: "Kadın Sağlığı"
 image: /images/library/klinik/65.webp
+imageAlt: "endometrioma çikolata kisti ve yumurtalık üzerindeki etkileri illüstrasyonu"
 references:
   - title: "Oocyte retrieval after endometrioma cystectomy: a systematic review and meta-analysis"
     authors: "Somigliana E, Berlanda N, Benaglia L et al."
