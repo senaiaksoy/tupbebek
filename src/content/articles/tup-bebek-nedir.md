@@ -280,12 +280,6 @@ Deneyimli bir tıbbi ekibin rehberliğinde ve destekleyici bir sosyal çevre ile
 
 ---
 
-## Kaynaklar ve İleri Okuma
-
-- **Dünya Sağlık Örgütü (WHO):** Kısırlık ve üreme sağlığı hakkında güncel bilgiler.
-- **Türk Jinekoloji ve Obstetrik Derneği:** Tüp bebek tedavisi ve güncel uygulamalar.
-- **Bilimsel Araştırmalar:** Tüp bebek tedavisinde yeni gelişmeler ve teknolojiler.
-
 ---
 
 **Not:** Bu makale bilgilendirme amaçlıdır ve tıbbi tavsiye niteliği taşımaz. Tedavi seçenekleriniz ve durumunuz hakkında detaylı bilgi için bir sağlık profesyoneline danışınız.
