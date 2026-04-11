@@ -10,6 +10,9 @@ const colorMap = {
   amber: { bg: 'bg-amber-50', icon: 'text-amber-600', badge: 'bg-amber-100 text-amber-700' },
   red: { bg: 'bg-red-50', icon: 'text-red-600', badge: 'bg-red-100 text-red-700' },
   teal: { bg: 'bg-teal-50', icon: 'text-teal-600', badge: 'bg-teal-100 text-teal-700' },
+  blue: { bg: 'bg-blue-50', icon: 'text-blue-600', badge: 'bg-blue-100 text-blue-700' },
+  indigo: { bg: 'bg-indigo-50', icon: 'text-indigo-600', badge: 'bg-indigo-100 text-indigo-700' },
+  rose: { bg: 'bg-rose-50', icon: 'text-rose-600', badge: 'bg-rose-100 text-rose-700' },
 } as const;
 
 const boardMembers = [
@@ -60,6 +63,30 @@ const boardMembers = [
     icon: 'gavel',
     color: 'amber',
     bio: 'Sağlık hukuku alanında uzmanlaşmış avukattır. Üremeye yardımcı tedavi (ÜYTE) mevzuatı, hasta hakları, kişisel verilerin korunması (KVKK) ve sağlık reklamcılığı düzenlemeleri konularında danışmanlık vermektedir. Türk Tabipleri Birliği etik kuralları, Sağlık Bakanlığı yönetmelikleri ve ÜYTE Yönetmeliği çerçevesinde sitede yayımlanan içeriklerin yasal uyumluluğunu denetlemektedir. Hasta bilgilendirme metinlerinin mevzuata uygunluğunun sağlanmasında aktif rol almaktadır.',
+  },
+  {
+    name: 'Prof. Dr. Bülent Urman',
+    role: 'Kurul Üyesi',
+    title: 'Kadın Hastalıkları ve Doğum Uzmanı, Üreme Endokrinolojisi ve İnfertilite',
+    icon: 'medical_services',
+    color: 'blue',
+    bio: 'Ankara Üniversitesi Tıp Fakültesi mezunudur (1982). Kadın hastalıkları ve doğum uzmanlığını Hacettepe Üniversitesi\'nde tamamlamıştır (1989). 1989–1991 yılları arasında Kanada University of British Columbia\'da üreme endokrinolojisi ve infertilite alanında fellowship eğitimi almıştır. 1996 yılından bu yana VKV Amerikan Hastanesi Kadın Hastalıkları ve Doğum Bölüm Başkanı olarak görev yapmakta ve Üreme Sağlığı Merkezi\'ni yönetmektedir. 2011 yılında Koç Üniversitesi Tıp Fakültesi\'nde profesör unvanını almıştır. PubMed\'de 200\'ün üzerinde uluslararası yayını bulunmaktadır; h-indeksi 57\'dir. 2018 yılında "Tıp Bilimine Yön Veren 100 Türk" listesinde yer almıştır. TSRM (Üreme Sağlığı ve İnfertilite Derneği) Başkanlığı (2007–2011) görevinde bulunmuştur. ESHRE, ASRM ve TSRM üyesidir.',
+  },
+  {
+    name: 'Prof. Dr. Faruk Buyru',
+    role: 'Kurul Üyesi',
+    title: 'Kadın Hastalıkları ve Doğum Uzmanı, İnfertilite ve Tüp Bebek',
+    icon: 'gynecology',
+    color: 'indigo',
+    bio: 'İstanbul Üniversitesi İstanbul Tıp Fakültesi\'nden birincilikle mezun olmuştur (1983). Kadın hastalıkları ve doğum uzmanlığını aynı fakültede tamamlamıştır (1990). 1993 yılında Belçika Antwerp Jan Palfijn Hastanesi\'nde operatif laparoskopi ve histeroskopi eğitimi almıştır. 1996 yılında doçent, 2002 yılında profesör unvanını almıştır. İstanbul Tıp Fakültesi Kadın Hastalıkları ve Doğum Anabilim Dalı\'nda uzun yıllar öğretim üyeliği yapmıştır. 2012–2014 yılları arasında TJOD İstanbul Şubesi Başkanlığı görevinde bulunmuştur. Halen Acıbadem Fulya Hastanesi Tüp Bebek ve Üreme Sağlığı Merkezi\'nde hasta kabul etmektedir. IVF, ICSI, PGT, laparoskopik cerrahi ve histeroskopi konularında klinik deneyime sahiptir.',
+  },
+  {
+    name: 'Fzt. Ersin Saraç',
+    role: 'Kurul Üyesi',
+    title: 'Fizyoterapist, Kas-İskelet Sistemi Rehabilitasyonu',
+    icon: 'physical_therapy',
+    color: 'rose',
+    bio: 'Karabük Üniversitesi Fizyoterapi ve Rehabilitasyon Bölümü mezunudur (2018). 2017–2018 yılları arasında Fenerbahçe Erkek Basketbol A Takımı\'nda stajyer fizyoterapist olarak görev yapmıştır. 2018–2021 yılları arasında Assembly Kas-İskelet Ağrı ve Spor Hekimliği Kliniği\'nde fizyoterapist olarak çalışmıştır. IKOMT (Klinik Odaklı Multidimensiyonel Terapi) kas-iskelet ve sinir ağrısı tedavi eğitimini tamamlamıştır (2019–2020). Halen Pain Free Nişantaşı kliniğini yönetmektedir. Kas-iskelet sistemi ve sinir ağrısı tedavisi, spor yaralanmaları rehabilitasyonu, klinik egzersiz, postür düzeltme ve ameliyat öncesi/sonrası rehabilitasyon konularında deneyime sahiptir. Sitede yayımlanan içeriklerde infertilite tedavisi sürecinde pelvik taban rehabilitasyonu, egzersiz ve fiziksel iyileşme konularındaki doğruluğa katkı sağlamaktadır.',
   },
 ];
 ---
