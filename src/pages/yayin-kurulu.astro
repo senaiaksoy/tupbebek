@@ -94,7 +94,7 @@ const boardMembers = [
     bio: 'İstanbul Çapa Tıp Fakültesi mezunudur (1995-2001) ve kadın hastalıkları ve doğum uzmanlık eğitimini Bezmi Alem Eğitim ve Araştırma Hastanesi Kadın Hastalıkları ve Doğum Anabilim Dalı\'nda tamamlamıştır (2004-2006). 2008\'de Londra\'da King\'s College Harris Birthright Research Center for Fetal Medicine\'de bulunmuş, 2009\'da Amerikan Hastanesi\'nde Üremeye Yardımcı Teknolojiler Sertifikasyon Programı\'nı tamamlamıştır. Ayrıca İtalya Cagliari Üniversitesi\'nde endometriozisin ultrasonografik tanısı eğitimi almıştır. 2010-2012 yıllarında McGill Üniversitesi Üreme Endokrinolojisi ve İnfertilite Bölümü\'nde, 2014\'ten bu yana Amerikan Hastanesi Kadın Sağlığı ve Tüp Bebek Merkezi\'nde görev yapmaktadır. Klinik ilgi alanları arasında üreme sağlığı ve endometriozisin ultrasonografik tanısı yer almaktadır.',
   },
   {
-    name: 'Dr. Başak Balaban',
+    name: 'Başak Balaban',
     role: 'Kurul Üyesi',
     title: 'Embriyolog, Tüp Bebek Laboratuvarı Direktörü',
     icon: 'biotech',
@@ -124,19 +124,40 @@ const getLastName = (name: string) => {
   return parts[parts.length - 1] ?? name;
 };
 
-const sortedBoardMembers = [
-  ...boardMembers.filter((member) => member.role === 'Kurul Editörü'),
-  ...boardMembers
-    .filter((member) => member.role !== 'Kurul Editörü')
-    .sort((a, b) => {
-      const titleCompare = a.title.localeCompare(b.title, 'tr');
-      if (titleCompare !== 0) {
-        return titleCompare;
-      }
+const isEditor = (member: (typeof boardMembers)[number]) =>
+  member.role.toLocaleLowerCase('tr').includes('edit');
 
-      return getLastName(a.name).localeCompare(getLastName(b.name), 'tr');
-    }),
-];
+const editorMember = boardMembers.find((member) => isEditor(member));
+
+const sortedBoardMembers = boardMembers
+  .filter((member) => !isEditor(member))
+  .sort((a, b) => {
+    const getGroupOrder = (member: (typeof boardMembers)[number]) => {
+      const name = member.name.toLocaleLowerCase('tr');
+      const title = member.title.toLocaleLowerCase('tr');
+
+      const isProfessor = name.startsWith('prof.');
+      if (isProfessor) return 1;
+
+      const isAssociateProfessor = name.startsWith('doç.') || name.startsWith('doã§.');
+      if (isAssociateProfessor) return 2;
+
+      const isEmbryologist = title.includes('embriyolog') || title.includes('embriyoloji');
+      const isSpecialistDoctor = (name.startsWith('dr.') || title.includes('uzman')) && !isEmbryologist;
+      if (isSpecialistDoctor) return 3;
+
+      if (isEmbryologist) return 4;
+
+      return 5;
+    };
+
+    const groupCompare = getGroupOrder(a) - getGroupOrder(b);
+    if (groupCompare !== 0) {
+      return groupCompare;
+    }
+
+    return getLastName(a.name).localeCompare(getLastName(b.name), 'tr');
+  });
 ---
 
 <BaseLayout title="Yayın Kurulu | tupbebek.com" description="tupbebek.com tıbbi yayın kurulu üyeleri, editöryal sürecimiz ve içerik denetim politikamız hakkında bilgi edinin.">
@@ -155,6 +176,37 @@ const sortedBoardMembers = [
         tupbebek.com&apos;da yayımlanan tüm içerikler, alanında uzman bir yayın kurulu tarafından bilimsel doğruluk, güncellik ve yasal uyumluluk açısından denetlenmektedir.
       </p>
     </section>
+
+    {editorMember && (
+      <section class="max-w-4xl mx-auto px-4 md:px-6 lg:px-8 mb-12">
+        <h2 class="font-headline text-2xl font-bold text-gray-900 mb-8">Kurul Editörü</h2>
+
+        <div class="space-y-6">
+          {(() => {
+            const c = colorMap[editorMember.color as keyof typeof colorMap] || colorMap.primary;
+            return (
+              <div class="bg-white border border-gray-200 rounded-xl p-6 md:p-8 hover:shadow-md transition-shadow">
+                <div class="flex flex-col sm:flex-row items-start gap-5">
+                  <div class:list={['w-14 h-14 rounded-xl flex items-center justify-center shrink-0', c.bg]}>
+                    <span class:list={['material-symbols-outlined text-2xl', c.icon]} style="font-variation-settings: 'FILL' 1;">{editorMember.icon}</span>
+                  </div>
+                  <div class="flex-1 min-w-0">
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-2 mb-2">
+                      <h3 class="font-headline text-lg font-bold text-gray-900">{editorMember.name}</h3>
+                      <span class:list={['inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold w-fit', c.badge]}>
+                        {editorMember.role}
+                      </span>
+                    </div>
+                    <p class="text-sm font-medium text-gray-500 mb-3">{editorMember.title}</p>
+                    <p class="text-sm text-gray-600 leading-relaxed">{editorMember.bio}</p>
+                  </div>
+                </div>
+              </div>
+            );
+          })()}
+        </div>
+      </section>
+    )}
 
     <section class="max-w-4xl mx-auto px-4 md:px-6 lg:px-8 mb-20">
       <div class="bg-gray-50 border border-gray-200 rounded-xl p-6 md:p-8">
