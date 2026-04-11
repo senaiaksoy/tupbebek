@@ -328,8 +328,8 @@ import Footer from '../components/Footer.astro';
                 console.log('Sunucuya kaydedilemedi, ancak indirme devam ediyor.');
             }
 
-            // Statik PDF i doğrudan indir
-            const pdfUrl = '/e-kitap/tup-bebek-beslenme-plani.pdf';
+            // Statik PDF i doğrudan indir (cache-bust ile)
+            const pdfUrl = '/e-kitap/tup-bebek-beslenme-plani.pdf?v=20260411';
             window.location.href = pdfUrl;
 
             // Success mesajı göster
