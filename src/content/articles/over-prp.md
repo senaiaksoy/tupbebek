@@ -1,111 +1,227 @@
 ---
-title: "Over PRP, Kadın Doğurganlığında Yeni Bir Umut Mu?"
-description: "Overlere Platelet-Rich Plasma (PRP) enjeksiyonu, kadının kendi kanından elde edilen trombositlerin yenileyici gücünü kullanarak yumurtalık fonksiyonunu desteklemeyi hedefleyen yeni bir uygulamadır. Düşük yumurtalık rezervi veya erken over yetmezliği gibi zorlu durumlarda umut vadeden bu yaklaşım, henüz araştırma aşamasındadır ve uzun vadeli sonuçlar için daha fazla veriye ihtiyaç duyulmaktadır."
-publishDate: 2025-01-03
-author: "tupbebek.com Yayın Kurulu"
-authorTitle: "Editoryal Ekip"
-authorCredentials: "Doç. Dr. Senai Aksoy editörlüğünde"
+title: "Yumurtalık PRP Enjeksiyonu: Azalmış Over Rezervinde Gerçekçi Bir Değerlendirme"
+description: "İntraovaryen PRP uygulaması azalmış over rezervi ve POI olgularında umut verici ama halen araştırma aşamasında bir yaklaşımdır. 2024-2026 verileriyle etkinlik, güvenlik ve hasta seçimi."
+publishDate: 2026-04-12
+lastModified: 2026-04-12
+category: "Tedavi Yöntemleri"
+status: "published"
+author: "Doç. Dr. Senai Aksoy"
+authorTitle: "Kadın Hastalıkları, Doğum ve Üreme Tıbbı Uzmanı"
+authorCredentials: "Baş Editör, tupbebek.com"
 medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Tıbbi Danışma Kurulu"
-reviewDate: 2026-04-09
-lastModified: 2026-04-03
-category: "Tedavi Yöntemleri"
-image: /images/library/tedavi/prp.webp
-imageAlt: "over PRP tedavisi yumurtalık gençleştirme illüstrasyonu"
+reviewDate: 2026-04-12
+image: "/images/makaleler/over-prp-2026-kapak.jpeg"
+imageAlt: "Kadın hastada over değerlendirmesi için yapılan ultrason muayenesini gösteren klinik görsel"
 references:
-  - title: "Autologous platelet-rich plasma treatment enables pregnancy for a woman with premature ovarian insufficiency"
-    authors: "Sfakianoudis K, Simopoulou M, Nitsos N, et al."
+  - title: "Intraovarian platelet-rich plasma injection for ovarian rejuvenation: a systematic review and meta-analysis"
+    journal: "Human Reproduction"
+    year: 2025
+    url: "https://academic.oup.com/humrep/article/40/4/764/8045480"
+  - title: "Intraovarian platelet-rich plasma for women with diminished ovarian reserve: a systematic review and meta-analysis"
     journal: "Journal of Clinical Medicine"
-    year: 2019
-    doi: "10.3390/jcm8010001"
-  - title: "Platelet-rich plasma in reproductive medicine: a narrative review"
-    authors: "Pantos K, Nitsos N, Kokkali G, et al."
-    journal: "Human Reproduction Update"
-    year: 2023
-    doi: "10.1093/humupd/dmad004"
-  - title: "Ovarian rejuvenation: reality or dream?"
-    authors: "Sills ES, Wood SH"
-    journal: "Reproduction"
-    year: 2021
-    doi: "10.1530/REP-21-0174"
+    year: 2026
+    url: "https://www.mdpi.com/2077-0383/15/7/2482"
+  - title: "The efficacy of platelet rich plasma on women with poor ovarian response: a systematic review and meta-analysis"
+    journal: "Platelets"
+    year: 2024
+    url: "https://www.tandfonline.com/doi/full/10.1080/09537104.2023.2292612"
+  - title: "Platelet-rich plasma in reproductive endocrinology: mechanisms and clinical applications"
+    journal: "Biomedicines"
+    year: 2025
+    doi: "10.3390/biomedicines13102488"
+    url: "https://www.mdpi.com/2227-9059/13/10/2488"
+  - title: "Platelet-rich plasma (PRP) in reproductive medicine: a critical review"
+    journal: "Biomedicines"
+    year: 2025
+    doi: "10.3390/biomedicines13051257"
+    url: "https://www.mdpi.com/2227-9059/13/5/1257"
+  - title: "Evaluation of intraovarian injection of platelet-rich plasma"
+    journal: "BMC Women's Health"
+    year: 2025
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12243372/"
+  - title: "Comparative efficacy of single vs. double autologous PRP ovarian injections"
+    journal: "Journal of Ovarian Research"
+    year: 2025
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12106600/"
+  - title: "Efficacy of intraovarian injection of autologous platelet-rich plasma"
+    journal: "Reproductive Biology and Endocrinology"
+    year: 2025
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12435329/"
+  - title: "ESHRE guideline: ovarian stimulation for IVF/ICSI (2025 update)"
+    journal: "Human Reproduction Open"
+    year: 2025
+    url: "https://pubmed.ncbi.nlm.nih.gov/41732035/"
+  - title: "ASRM evidence-based guideline: Premature Ovarian Insufficiency"
+    journal: "American Society for Reproductive Medicine"
+    year: 2024
+    url: "https://www.asrm.org/practice-guidance/practice-committee-documents/evidence-based-guideline-premature-ovarian-insufficiency--2024/"
+  - title: "NCT05279560 - OPIF Trial"
+    journal: "ClinicalTrials.gov"
+    year: 2025
+    url: "https://clinicaltrials.gov/study/NCT05279560"
+  - title: "NCT05790655 - Ovarian PRP for DOR"
+    journal: "ClinicalTrials.gov"
+    year: 2026
+    url: "https://clinicaltrials.gov/study/NCT05790655"
 ---
 
-## Over PRP: Kadın Doğurganlığında Yeni Bir Umut Mu?
+## Kısa Özet
 
-## Giriş
+Yumurtalık PRP (intraovaryen PRP), hastanın kendi kanından elde edilen trombositten zengin plazmanın ultrason eşliğinde over dokusuna uygulanmasıdır. 2024-2026 döneminde yayımlanan çalışmalar, özellikle azalmış over rezervi (DOR) ve erken over yetmezliği (POI) gruplarında AMH ve antral folikül sayısında artış olabileceğini göstermektedir.  
+Buna karşın canlı doğum üzerindeki net katkı henüz kesinleşmemiştir. Bu nedenle yöntem, güncel uluslararası rehberlerde standart tedavi değil, seçilmiş hastalarda dikkatle değerlendirilen araştırma niteliğinde bir yaklaşım olarak ele alınmaktadır.
 
-Kadın doğurganlığının geleceği üzerine yürütülen araştırmaların son yıllarda yeni bir kavşakta yoğunlaştığı gözlenmektedir: Overlere Platelet-Rich Plasma (PRP) enjeksiyonu. Kökünü uzun zamandır tıp pratiğinde kullanılan PRP yönteminden alan bu yaklaşım, özellikle azalmış over rezervine veya erken over yetmezliğine sahip kadınlar için yeni bir seçenek olma potansiyeli taşımaktadır. Kendi kanınızdan elde edilen trombositlerin, yumurtalık dokusunu uyararak yeni yumurta gelişimi ve doku onarımına katkıda bulunabileceği fikri, tıp camiasında olduğu kadar kamuoyunda da merak uyandırmaktadır.
+## Bu Yazıda Neler Var?
 
-Bununla birlikte, ilk bulguların heyecan verici niteliğine rağmen, yönteme dair bilimsel veri seti henüz sınırlıdır. Mevcut araştırmalar, PRP uygulamasının olası yararlarına işaret etmekle birlikte, daha geniş ölçekli ve uzun süreli çalışmalara duyulan ihtiyacı da ortaya koymaktadır. Bu makalede, Over PRP uygulamasının arka planını, bilimsel dayanaklarını ve olası gelecek senaryolarını irdelemeye çalışacağız.
-
----
-
-## Kapsam ve Arka Plan
-
-### Düşen Over Rezervine Yönelik Arayış
-
-Kadınların 35 yaş sonrası doğurganlık sorunlarıyla karşılaşma olasılığının arttığı bilinen bir gerçektir. Bu yaş eşiği aşıldığında, yumurtalık rezervinde azalma ve daha yüksek bir kısırlık riski söz konusu olmaktadır. Ayrıca stres, yaşam tarzı etkenleri, genetik yatkınlık ve bazı tıbbi geçmişler, rezervdeki bu azalmanın daha erken ve hızlı gelişmesine neden olabilir. Günümüzde tüp bebek (IVF) tedavisi yaygın bir seçenek olsa da, özellikle over rezervi düşük kadınlarda başarı oranları her zaman istenilen düzeyde değildir. İşte bu noktada, yeni ufuklar arama çabası çerçevesinde PRP uygulaması gündeme gelmiştir.
-
-### PRP'nin Tıptaki Evrimi
-
-PRP, sportif sakatlanmalardan ortopedik cerrahiye uzanan geniş bir yelpazede, dokuları onarmayı ve yenilemeyi hedefleyen yardımcı bir yöntem olarak uzun süredir kullanılmaktadır. Bu uygulama, kandan ayrıştırılan trombositlerin ve büyüme etkenlerinin yoğun bir şekilde hedef dokuya verilmesi prensibine dayanmaktadır. Over dokusuna PRP enjeksiyonu fikri, bu güçlü yenileyici potansiyelin üreme tıbbında da kullanılabileceği düşüncesiyle gelişmiştir. Sonuç olarak, tıp dünyasının farklı branşlarında kendini kanıtlamış bir yöntem, yeni bir alanda umut olarak karşımıza çıkmaktadır.
-
-### Kişiye Özel Bir Yaklaşım
-
-PRP'nin öne çıkan özelliği, otolog olmasıdır: Hastanın kendi kanından elde edilen trombosit konsantresi, yine hastanın kendi vücuduna uygulanmaktadır. Bu durum, bağışıklık sistemi reaksiyonlarını ve allerjik riskleri en aza indiren önemli bir avantajdır. Aynı zamanda tedavi, doz ve uygulama sıklığı gibi unsurların kişisel ihtiyaçlara göre düzenlenebilmesine olanak tanımaktadır.
-
-### Öne Çıkan Hedef Gruplar
-
-Over PRP'nin potansiyel kullanım alanları şu başlıklar altında toplanabilir:
--Azalmış over rezervine sahip kadınlar
--Erken over yetmezliği (POI) tanısı almış hastalar
--Tekrarlayan IVF başarısızlığı yaşayanlar
--Menopoza yakın olup doğurganlığını bir süre daha korumak isteyenler
-
-Bu çeşitlilik, PRP uygulamasının üreme tıbbında neden giderek daha fazla gündeme geldiğinin de bir göstergesidir.
-
----
-
-## Bilimsel Mekanizma ve Etkiler
-
-PRP uygulaması, temel olarak over dokusunu iyileştirmeyi ve yenilemeyi amaçlamaktadır. Trombositlerdeki büyüme etkenleri, enjekte edildikleri bölgede doku onarımına ve hücresel uyarılara neden olmaktadır. Bu sürecin yumurtalık dokusunda nasıl işlediğine dair öne çıkan bazı mekanizmalar şunlardır:
-
-1. **Anjiyogenezin Teşviki:** Vasküler endotelyal büyüme etkeni (VEGF) gibi unsurlar, overde yeni damar oluşumunu destekleyerek bölgenin kanlanmasını artırır.
-2. **Folliküllerin Aktive Edilmesi:** PRP içerisinde bulunan bazı proteinler, henüz olgunlaşmamış (uykuda) folliküllerin aktive olmasını tetikleyebilir.
-3. **İnflamasyonun Azaltılması:** Trombosit kaynaklı bileşenler, lokal enflamasyonu sınırlayarak daha elverişli bir mikroçevre oluşturabilir.
-4. **Doku Onarımı:** Platelet kaynaklı büyüme etkenleri (PDGF) ve Transforme Edici Büyüme Etkeni (TGF-β) gibi maddeler, dokunun kendini yenilemesine katkıda bulunur.
-
-Bu mekanizmalar birbirlerini destekler niteliktedir ve hastaya özgü etkenlerden (örneğin yaş, hormon seviyeleri, genel sağlık durumu) etkilenebilmektedir. Dolayısıyla PRP uygulamasına verilen yanıt, kişiden kişiye farklılık gösterebilir.
-
----
-
-## Araştırma Bulguları ve Klinik Sonuçlar
-
-Son yıllarda yayınlanan klinik çalışmalar, Over PRP'nin potansiyeline dair çeşitli ipuçları vermektedir. Birkaç yüz kadını içeren küçük veya orta çaplı araştırmalarda, PRP uygulaması sonrası aşağıdaki olumlu değişimler rapor edilmiştir:
-
-- Anti-Müllerian Hormon (AMH) seviyelerinde artış
-- Folikül Uyarıcı Hormon (FSH) seviyelerinde azalma
-- Adet döngüsünün geri kazanılması (özellikle erken over yetmezliği vakalarında)
-- Spontan gebeliklerin ortaya çıkması
-
-Madrid'de yürütülen bir randomize kontrollü çalışmada, azalmış over rezervine sahip 150 kadında PRP uygulamasıyla antral follikül sayısında ve follikül kalitesinde kayda değer iyileşme saptanmıştır. Bu sonuçlar, araştırmacıları umutlandırmakla birlikte, yöntemin standart tedavi olarak kabulü için daha kapsamlı, uzun süreli ve çok merkezli çalışmalara gereksinim duyulmaktadır. Özellikle farklı protokollerin karşılaştırılması ve uzun vadeli takiplere dair verilerin elde edilmesi, yöntemin gelecek perspektifini belirleyecek unsurlar arasında yer alacaktır.
+1. [Yumurtalık PRP nedir ve nasıl uygulanır?](#nasil-calisir)
+2. [Güncel bilimsel kanıtların özeti](#bilimsel-kanitlar)
+3. [Olası moleküler etkiler](#molekuler-etki)
+4. [Kime uygun, kime uygun değil?](#kime-yapilir)
+5. [Uygulama protokolü ve takip](#protokol)
+6. [ESHRE ve ASRM yaklaşımı](#kilavuzlar)
+7. [Sık sorulan sorular](#sss)
 
 ---
 
-## Güvenlik Değerlendirmesi ve Olası Yan Etkiler
+<h2 id="nasil-calisir">Yumurtalık PRP Nedir ve Nasıl Çalışır?</h2>
 
-Bir tıbbi yöntemin yaygın kabul görmesindeki en kritik unsur, güvenlik profilidir. Bu noktada, PRP'nin otolog yapısı nedeniyle ciddi bir alerjik reaksiyon veya doku reddi riski yaşanmadığı bildirilmektedir. Hastaların sıklıkla deneyimlediği yan etkiler ise genellikle hafif ve geçicidir:
+PRP (Platelet-Rich Plasma), kişiden alınan 30-60 mL kanın santrifüj ile ayrıştırılması ve trombosit açısından zengin bölümün over dokusuna verilmesi esasına dayanır.
 
-- Enjeksiyon bölgesinde ağrı
-- Hafif vajinal kanama
-- Yumurtalık bölgesinde baskı hissi
+Genel işlem akışı:
 
-Enfeksiyon veya diğer ciddi komplikasyonlar ise sterilizasyon ve doğru uygulama prosedürlerine uyulduğu sürece istisnai düzeyde seyretmektedir. Uzun vadede, PRP tedavisinin anne ve bebek sağlığı üzerindeki etkilerine ilişkin araştırmalar ise nispeten kısıtlıdır. Bu nedenle, yöntemi deneyen hastaların yakından izlenmesi ve verilerin kaydedilmesi büyük önem taşımaktadır.
+1. Koldan kan alınır.
+2. Kan, santrifüjle katmanlarına ayrılır.
+3. Trombositten zengin plazma hazırlanır.
+4. Gerekli ise aktivasyon sonrası ultrason rehberliğinde overlere enjeksiyon yapılır.
+
+![PRP hazırlama aşamaları: kan alımı, santrifüj, trombosit zenginleştirme ve yumurtalığa enjeksiyon](/images/makaleler/over-prp-surec-infografik.jpeg)
+
+PRP içindeki büyüme faktörlerinin (ör. PDGF, VEGF, TGF-β, EGF, IGF) lokal mikrodolaşımı, doku onarım süreçlerini ve foliküler çevreyi etkileyebileceği düşünülmektedir. Klinik düzeyde hedef, yeni yumurta üretmek değil, mevcut foliküler havuzun fonksiyonel yanıtını artırmaktır.
+
+| Büyüme faktörü | Olası etkisi |
+|---|---|
+| PDGF | Doku onarımı ve hücresel yenilenme süreçlerine katkı |
+| VEGF | Mikrodolaşım ve damarlaşmanın desteklenmesi |
+| TGF-β | Hücresel sinyal yollarının düzenlenmesi |
+| EGF | Granüloza/cumulus hücre yanıtının desteklenmesi |
+| IGF | Folikül mikroçevresinde metabolik desteğe katkı |
 
 ---
 
-## Sonuç ve Gelecek Perspektifleri
+<h2 id="bilimsel-kanitlar">Bilimsel Kanıtlar: 2024-2026 Özeti</h2>
 
-Over PRP, henüz erken aşamada olmasına karşın, kadın doğurganlığını artırmak amacıyla geliştirilen yenilikçi yöntemler arasında dikkate değer bir konuma yerleşmiştir. Hem klinik bulguların hem de hasta deneyimlerinin ışığında, PRP uygulamasının azalmış over rezervi ya da erken over yetmezliği gibi zorlu durumlarda belirli bir yarar sağlayabileceği düşünülmektedir. Ancak bu heyecan verici görüntüyü güçlü kanıtlara dönüştürmek, daha kapsamlı çalışmalar ve uzun dönemli takip verileriyle mümkün olacaktır.
+Güncel meta-analizlerde en sık bildirilen bulgular:
 
-Gelecekteki araştırmalar, tedavinin hangi hasta grupları için en uygun olduğunu, hangi protokollerin daha verimli sonuçlar sunduğunu ve uzun vadeli etkilerin neler olduğunu daha net biçimde ortaya koyacaktır. Başarılı sonuçlar elde edildiği takdirde, Over PRP uygulaması, mevcut üreme tıbbı yöntemlerine değerli bir katkı sunabilir. Bununla birlikte, sağlık profesyonelleri ve hastalar, yöntemi değerlendirirken bilimsel temkin ve gerçekçi beklentilerle hareket etmelidir. Böylece Over PRP, kadın doğurganlığı üzerinde \"yeni bir umut\" olmaktan öteye geçerek, gelecek nesiller için kalıcı ve güvenilir bir tedavi alternatifi haline gelebilir.
+- AMH düzeyinde sınırlı ama istatistiksel olarak anlamlı artış
+- Antral folikül sayısında artış
+- Bazı serilerde toplanan oosit sayısında artış
+- Klinik gebelik ve canlı doğum sonuçlarında heterojen, yani değişken sonuçlar
+
+Özet yorum:
+
+- Hormon ve rezerv göstergelerinde iyileşme sinyali vardır.
+- Bu sinyalin her hastada embriyo kalitesi veya canlı doğuma aynı ölçüde yansıdığı söylenemez.
+- Kontrollü çalışmalar, plasebo/yalancı girişim etkisinin ayırt edilmesi gerektiğini göstermektedir.
+
+Bu nedenle klinik karar, yalnızca laboratuvar artışlarına göre değil; yaş, POI süresi, bazal over görünümü, önceki IVF öyküsü ve zaman yönetimi birlikte değerlendirilerek verilmelidir.
+
+---
+
+<h2 id="molekuler-etki">Moleküler Düzeyde Olası Etkiler</h2>
+
+Yeni yayınlar PRP'nin yalnızca folikül sayısını değil, folikül çevresindeki destek hücrelerini de etkileyebileceğini düşündürmektedir:
+
+- Cumulus/granüloza hücrelerinde enerji metabolizmasını destekleyen gen ekspresyonunda artış
+- Hücresel stres ve oksidatif hasar belirteçlerinde azalma eğilimi
+- Foliküler mikroçevrede iyileşme olasılığı
+
+Bu bulgular biyolojik olarak anlamlıdır; ancak halen translasyonel düzeydedir. Klinik sonlanım olarak canlı doğuma etkisi için daha güçlü, uzun dönemli randomize veriye ihtiyaç vardır.
+
+---
+
+<h2 id="kime-yapilir">PRP Kime Yapılır, Kime Yapılmaz?</h2>
+
+PRP, seçilmiş hasta grubunda düşünülmelidir.
+
+| Klinik durum | Değerlendirme yaklaşımı |
+|---|---|
+| Düşük AMH ve/veya düşük antral folikül sayısı | Uygun olabilir, bireysel değerlendirme gerekir |
+| Erken over yetmezliği (POI) | Süre ve yaş kritik; erken dönemde yanıt olasılığı daha yüksektir |
+| Tekrarlayan düşük over yanıtı | Standart protokoller sonrası seçenek olarak değerlendirilebilir |
+| Normal over rezervi | Rutin kullanım önerilmez |
+| Aktif enfeksiyon / malignite şüphesi / ciddi hematolojik risk | Uygun değildir |
+
+Hasta seçiminde özellikle şu başlıklar önemlidir:
+
+- Yaş
+- Adet düzensizliği veya amenore süresi
+- Bazal hormon profili (AMH, FSH, E2)
+- Over morfolojisi
+- Önceki IVF yanıtı
+- Eşlik eden sistemik riskler
+
+---
+
+<h2 id="protokol">Protokol: Hazırlık, Seans Sayısı, Takip</h2>
+
+Uygulama merkezine göre protokoller değişebilse de klinik pratikte 1-3 seans yaklaşımı görülmektedir.
+
+Tipik süreç:
+
+1. Ön değerlendirme: AMH, FSH, LH, E2 ve ultrason
+2. Aynı gün PRP hazırlığı (otolog kan, santrifüj, hazırlama)
+3. Sedasyon altında ultrason rehberliğinde over uygulaması
+4. 1-2. aylarda hormon ve ultrason takibi
+5. Yanıt durumuna göre IVF planlaması
+
+| Protokol tipi | Genel amaç |
+|---|---|
+| Tek seans | Hızlı başlangıç ve erken yanıt değerlendirmesi |
+| İki seans | Hormon/folikül yanıtını güçlendirme hedefi |
+| Üç seans | Daha uzun süreli biyolojik etki arayışı |
+
+Klinik hedef, yalnızca sayısal artış değil, embriyo gelişimi ve olası canlı doğum çıktısıdır.
+
+---
+
+<h2 id="kilavuzlar">Uluslararası Kılavuzlar Ne Diyor?</h2>
+
+ESHRE (2025 güncellemesi) ve ASRM (2024 POI kılavuzu), intraovaryen PRP'yi rutin standart tedavi olarak sınıflandırmamaktadır. Ortak yaklaşım:
+
+- Uygulama seçilmiş vakalarda, açık bilgilendirme ile değerlendirilmeli
+- Hastaya yöntemin deneysel/araştırma niteliği net anlatılmalı
+- Merkezler sonuç takibini sistematik şekilde yapmalı
+
+Devam eden klinik çalışmaların sonuçları (ör. OPIF ve diğer NCT kayıtlı çalışmalar), önümüzdeki yıllarda bu yaklaşımın kılavuzlardaki yerini daha net belirleyecektir.
+
+---
+
+<h2 id="sss">Sık Sorulan Sorular</h2>
+
+### Yumurtalık PRP kesin olarak gebelik sağlar mı?
+
+Hayır. PRP bazı biyolojik göstergelerde iyileşme sağlayabilir; ancak canlı doğum üzerinde kesin ve her hastada geçerli bir sonuç garantisi yoktur.
+
+### PRP ağrılı bir işlem midir?
+
+İşlem çoğunlukla sedasyon altında yapıldığı için ağrı algısı sınırlıdır. İşlem sonrası kısa süreli kasık ağrısı veya hafif lekelenme görülebilir.
+
+### Etki ne zaman değerlendirilir?
+
+Genellikle 1-2 ay içinde hormon ve ultrason kontrolleri yapılır. Daha sonra IVF veya diğer seçenekler yeniden planlanır.
+
+### SGK bu işlemi karşılar mı?
+
+Mevcut uygulamada genellikle SGK kapsamı dışındadır. Güncel kapsam bilgisi için ilgili sağlık kurumundan doğrulama yapılmalıdır.
+
+### PRP herkese uygun mudur?
+
+Hayır. Hasta seçimi en kritik aşamadır. Klinik ve laboratuvar bulgularla bireysel değerlendirme yapılmadan karar verilmemelidir.
+
+---
+
+## Sonuç
+
+Yumurtalık PRP, over rezervi düşük hasta grubunda umut verici veriler sunan, ancak henüz kesin standart haline gelmemiş bir yaklaşımdır. En doğru kullanım biçimi, gerçekçi beklenti yönetimi, doğru hasta seçimi ve düzenli klinik takip ile mümkündür.
+
+Bu içerik tıbbi tanı ve tedavi yerine geçmez, mutlaka hekiminize danışınız.
