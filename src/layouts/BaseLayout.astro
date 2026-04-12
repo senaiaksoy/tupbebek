@@ -15,9 +15,11 @@ interface Props {
 	description?: string;
 	/** Optional OG/Twitter image URL (absolute or relative to public/) */
 	image?: string;
+	/** og:type — defaults to "website", article pages should pass "article" */
+	ogType?: string;
 }
 
-const { title, description = "tupbebek.com | Üreme Sağlığı Bilgisi", image } = Astro.props;
+const { title, description = "tupbebek.com | Üreme Sağlığı Bilgisi", image, ogType = "website" } = Astro.props;
 const isHome = Astro.url.pathname === '/';
 const canonicalUrl = `https://tupbebek.com${Astro.url.pathname}`;
 
@@ -87,7 +89,7 @@ const medicalWebPageSchema = {
 		<!-- Open Graph -->
 		<meta property="og:title" content={title} />
 		<meta property="og:description" content={description} />
-		<meta property="og:type" content="website" />
+		<meta property="og:type" content={ogType} />
 		<meta property="og:url" content={`https://tupbebek.com${Astro.url.pathname}`} />
 		<meta property="og:image" content={image ? `https://tupbebek.com${image}` : "https://tupbebek.com/images/home/luxury-embryo.webp"} />
 		<meta property="og:image:width" content="1200" />
