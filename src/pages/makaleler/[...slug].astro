@@ -31,16 +31,36 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { Content } = await entry.render();
 
-// Resolve author name
-const authorName = typeof entry.data.author === 'string'
+// Resolve and normalize author identity
+const DEFAULT_AUTHOR_NAME = 'Doç. Dr. Senai Aksoy';
+const DEFAULT_AUTHOR_TITLE = 'Kadın Hastalıkları ve Doğum Uzmanı';
+const DEFAULT_AUTHOR_CREDENTIALS = 'Üreme Tıbbı ve Yardımcı Üreme Teknikleri';
+const DEFAULT_AUTHOR_YOUTUBE = 'https://www.youtube.com/@DocentDrSenaiAksoy';
+
+const rawAuthorName = typeof entry.data.author === 'string'
     ? entry.data.author
-    : entry.data.author.name;
-const authorTitle = typeof entry.data.author === 'string'
+    : entry.data.author?.name;
+const rawAuthorTitle = typeof entry.data.author === 'string'
     ? entry.data.authorTitle
-    : entry.data.author.title;
-const authorCredentials = typeof entry.data.author === 'string'
+    : entry.data.author?.title;
+const rawAuthorCredentials = typeof entry.data.author === 'string'
     ? entry.data.authorCredentials
-    : entry.data.author.credentials;
+    : entry.data.author?.credentials;
+const rawAuthorUrl = typeof entry.data.author === 'string'
+    ? undefined
+    : entry.data.author?.url;
+
+const isBoardAuthor = !rawAuthorName || /yay[ıi]n kurulu/i.test(rawAuthorName);
+const isEditorialTitle = !rawAuthorTitle || /editoryal ekip/i.test(rawAuthorTitle);
+const isEditorialCredentials = !rawAuthorCredentials || /edit[öo]rl[üu][ğg]ünde/i.test(rawAuthorCredentials);
+
+const authorName = isBoardAuthor ? DEFAULT_AUTHOR_NAME : rawAuthorName;
+const authorTitle = (isBoardAuthor || isEditorialTitle) ? DEFAULT_AUTHOR_TITLE : rawAuthorTitle;
+const authorCredentials = (isBoardAuthor || isEditorialCredentials) ? DEFAULT_AUTHOR_CREDENTIALS : rawAuthorCredentials;
+const authorYoutube =
+    entry.data.authorYoutube
+    || (rawAuthorUrl && /youtube\.com/i.test(rawAuthorUrl) ? rawAuthorUrl : undefined)
+    || (isBoardAuthor ? DEFAULT_AUTHOR_YOUTUBE : undefined);
 
 const publishDateStr = entry.data.publishDate
     ? entry.data.publishDate.toLocaleDateString('tr-TR', { year: 'numeric', month: 'long', day: 'numeric' })
@@ -82,6 +102,7 @@ const sanitizedImage = sanitizeImage(entry.data.image);
                     author={authorName}
                     authorTitle={authorTitle}
                     authorCredentials={authorCredentials}
+                    authorYoutube={authorYoutube}
                     medicalReviewer={entry.data.medicalReviewer}
                     reviewerTitle={entry.data.reviewerTitle}
                     reviewDate={reviewDateStr}
