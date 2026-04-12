@@ -3,3 +3,43 @@
 /yayin-sureci    /editoryal-politika    301
 /kvkk    /gizlilik-politikasi    301
 /makaleler/erkek-kisirligi-besin-takviyeleri    /makaleler/erkek-dogurganlik-besin-takviyeleri    301
+
+# Legacy content paths causing 404
+/tup-bebek-asamalari    /ivf-rehberi    301
+/tup-bebek-tedavisinde-preimplantasyon-genetik-tani    /pgt-merkezi    301
+/dogurganligin-korunmasi    /fertilite-koruma    301
+/embriyo-dondurma    /makaleler/dondurulmus-embriyo-transferi    301
+/tup-bebek-tedavisinde-catlatma-ignesi    /makaleler/ivf-protokolleri    301
+/laparoskopi    /makaleler/endoskopik-cerrahi-histeroskopi    301
+/tup-bebek-ve-mikroenjeksiyon    /makaleler/mikroenjeksiyon-icsi-nedir    301
+/tup-bebek-tedavisinde-nelere-dikkat-etmelisiniz    /makaleler/tup-bebek-sureci-rehber    301
+/tup-bebek-basari-oranlari    /basari-oranlari    301
+/sik-sorulan-sorular    /sss    301
+/tedavi-sureci    /tedavi-yontemleri    301
+/yumurtaliklarin-asiri-uyarilmasi    /makaleler/ivf-protokolleri    301
+/yasiniz-ve-kisirlik    /yas-ve-fertilite    301
+/videolar/rahim-ici-yapisikliklarinda-ofis-histeroskopi    /makaleler/ivf-oncesi-histeroskopi    301
+/tedaviler    /tedavi-yontemleri    301
+/histeroskopi    /makaleler/ivf-oncesi-histeroskopi    301
+/tesatese    /makaleler/cerrahi-sperm-arama-tese    301
+/yumurtlama-takibi    /makaleler/yumurtlama-takibi    301
+
+# Legacy content paths (trailing slash variants)
+/tup-bebek-asamalari/    /ivf-rehberi    301
+/tup-bebek-tedavisinde-preimplantasyon-genetik-tani/    /pgt-merkezi    301
+/dogurganligin-korunmasi/    /fertilite-koruma    301
+/embriyo-dondurma/    /makaleler/dondurulmus-embriyo-transferi    301
+/tup-bebek-tedavisinde-catlatma-ignesi/    /makaleler/ivf-protokolleri    301
+/laparoskopi/    /makaleler/endoskopik-cerrahi-histeroskopi    301
+/tup-bebek-ve-mikroenjeksiyon/    /makaleler/mikroenjeksiyon-icsi-nedir    301
+/tup-bebek-tedavisinde-nelere-dikkat-etmelisiniz/    /makaleler/tup-bebek-sureci-rehber    301
+/tup-bebek-basari-oranlari/    /basari-oranlari    301
+/sik-sorulan-sorular/    /sss    301
+/tedavi-sureci/    /tedavi-yontemleri    301
+/yumurtaliklarin-asiri-uyarilmasi/    /makaleler/ivf-protokolleri    301
+/yasiniz-ve-kisirlik/    /yas-ve-fertilite    301
+/videolar/rahim-ici-yapisikliklarinda-ofis-histeroskopi/    /makaleler/ivf-oncesi-histeroskopi    301
+/tedaviler/    /tedavi-yontemleri    301
+/histeroskopi/    /makaleler/ivf-oncesi-histeroskopi    301
+/tesatese/    /makaleler/cerrahi-sperm-arama-tese    301
+/yumurtlama-takibi/    /makaleler/yumurtlama-takibi    301
