@@ -35,12 +35,12 @@ const accordionItems = navigationMenus.map((menu) => ({
             <!-- Right Actions -->
             <div class="flex items-center gap-3 ml-auto">
                 <!-- Desktop Search Icon -->
-                <button id="desktop-search-btn" class="hidden md:flex min-w-[44px] min-h-[44px] items-center justify-center rounded-lg hover:bg-gray-100 transition-colors group" aria-label="Ara">
+                <button id="desktop-search-btn" type="button" class="hidden md:flex min-w-[44px] min-h-[44px] items-center justify-center rounded-lg hover:bg-gray-100 transition-colors group" aria-label="Ara">
                     <span class="material-symbols-outlined text-gray-600 group-hover:text-primary-600">search</span>
                 </button>
 
                 <!-- Mobile Menu Toggle -->
-                <button id="mobile-menu-toggle" class="lg:hidden min-w-[44px] min-h-[44px] flex items-center justify-center rounded-lg hover:bg-gray-100 transition-colors group" aria-label="Menüyü aç" aria-expanded="false" aria-controls="mobile-menu">
+                <button id="mobile-menu-toggle" type="button" class="lg:hidden min-w-[44px] min-h-[44px] flex items-center justify-center rounded-lg hover:bg-gray-100 transition-colors group" aria-label="Menüyü aç" aria-expanded="false" aria-controls="mobile-menu">
                     <span class="material-symbols-outlined text-gray-600 group-hover:text-primary-600">menu</span>
                 </button>
             </div>
@@ -49,9 +49,9 @@ const accordionItems = navigationMenus.map((menu) => ({
 </header>
 
 <!-- Mobile Sidebar Menu -->
-<div id="mobile-menu" class="fixed right-0 top-20 h-[calc(100vh-80px)] w-80 bg-white shadow-2xl border-l border-gray-100 transform translate-x-full transition-transform duration-300 z-40 overflow-y-auto" role="dialog" aria-label="Mobil menü">
+<div id="mobile-menu" class="fixed right-0 top-20 h-[calc(100vh-80px)] w-80 bg-white shadow-2xl border-l border-gray-100 transform translate-x-full transition-transform duration-300 z-40 overflow-y-auto" role="dialog" aria-label="Mobil menü" aria-hidden="true">
     <div class="p-6 space-y-2">
-        <button id="mobile-close" class="absolute top-4 right-4 min-w-[44px] min-h-[44px] flex items-center justify-center hover:bg-gray-100 rounded-lg transition-colors" aria-label="Menüyü kapat">
+        <button id="mobile-close" type="button" class="absolute top-4 right-4 min-w-[44px] min-h-[44px] flex items-center justify-center hover:bg-gray-100 rounded-lg transition-colors" aria-label="Menüyü kapat">
             <span class="material-symbols-outlined">close</span>
         </button>
 
@@ -78,11 +78,11 @@ const accordionItems = navigationMenus.map((menu) => ({
             <span class="material-symbols-outlined">home</span>
             <span class="text-[10px] font-bold uppercase tracking-tighter">Ana Sayfa</span>
         </a>
-        <button id="mobile-search-trigger" class="flex flex-col items-center justify-center gap-1 min-w-[44px] min-h-[44px] text-gray-400 hover:text-primary-600 transition-colors" aria-label="Ara">
+        <button id="mobile-search-trigger" type="button" class="flex flex-col items-center justify-center gap-1 min-w-[44px] min-h-[44px] text-gray-400 hover:text-primary-600 transition-colors" aria-label="Ara">
             <span class="material-symbols-outlined">search</span>
             <span class="text-[10px] font-bold uppercase tracking-tighter">Ara</span>
         </button>
-        <button class="flex flex-col items-center justify-center gap-1 min-w-[44px] min-h-[44px] text-gray-400 hover:text-primary-600 transition-colors" aria-label="Menü">
+        <button id="mobile-menu-trigger" type="button" class="flex flex-col items-center justify-center gap-1 min-w-[44px] min-h-[44px] text-gray-400 hover:text-primary-600 transition-colors" aria-label="Menü" aria-expanded="false" aria-controls="mobile-menu">
             <span class="material-symbols-outlined">menu</span>
             <span class="text-[10px] font-bold uppercase tracking-tighter">Menü</span>
         </button>
@@ -135,11 +135,14 @@ const accordionItems = navigationMenus.map((menu) => ({
             const nowOpen = !menu.classList.contains('translate-x-full');
             document.body.style.overflow = nowOpen ? 'hidden' : 'auto';
             if (menuToggle) menuToggle.setAttribute('aria-expanded', String(nowOpen));
+            if (menuTrigger) menuTrigger.setAttribute('aria-expanded', String(nowOpen));
             if (nowOpen) {
                 menu.setAttribute('aria-modal', 'true');
+                menu.setAttribute('aria-hidden', 'false');
                 closeBtn && closeBtn.focus();
             } else {
                 menu.removeAttribute('aria-modal');
+                menu.setAttribute('aria-hidden', 'true');
                 menuToggle && menuToggle.focus();
             }
         };

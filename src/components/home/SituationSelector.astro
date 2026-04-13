@@ -42,10 +42,12 @@ const cardColors: Record<string, { bg: string; iconBg: string; icon: string; bor
         const subtitle = empathySubtitles[option.id] || '';
         return (
           <button
+            type="button"
             role="tab"
             aria-selected={index === 0 ? "true" : "false"}
             aria-controls={`panel-${option.id}`}
             id={`tab-${option.id}`}
+            tabindex={index === 0 ? "0" : "-1"}
             data-situation={option.id}
             data-color={option.color}
             class:list={[
@@ -84,6 +86,7 @@ const cardColors: Record<string, { bg: string; iconBg: string; icon: string; bor
         role="tabpanel"
         id={`panel-${option.id}`}
         aria-labelledby={`tab-${option.id}`}
+        aria-hidden={index === 0 ? "false" : "true"}
         data-panel={option.id}
         class:list={[
           "situation-panel transition-all duration-500",
@@ -156,6 +159,7 @@ const cardColors: Record<string, { bg: string; iconBg: string; icon: string; bor
     // Reset all cards
     cards.forEach(function(card) {
       card.setAttribute('aria-selected', 'false');
+      card.setAttribute('tabindex', '-1');
       // Remove active styles
       card.classList.remove('shadow-md');
       var activeBorder = card.dataset.activeBorder;
@@ -173,6 +177,7 @@ const cardColors: Record<string, { bg: string; iconBg: string; icon: string; bor
 
     // Activate selected card
     selectedCard.setAttribute('aria-selected', 'true');
+    selectedCard.setAttribute('tabindex', '0');
     var activeBorder = selectedCard.dataset.activeBorder;
     var activeBg = selectedCard.dataset.activeBg;
     var inactiveBorder = selectedCard.dataset.inactiveBorder;
@@ -189,6 +194,7 @@ const cardColors: Record<string, { bg: string; iconBg: string; icon: string; bor
     panels.forEach(function(panel) {
       if (panel.dataset.panel === situationId) {
         panel.classList.remove('hidden');
+        panel.setAttribute('aria-hidden', 'false');
         panel.style.opacity = '0';
         panel.style.transform = 'translateY(12px)';
         requestAnimationFrame(function() {
@@ -198,6 +204,7 @@ const cardColors: Record<string, { bg: string; iconBg: string; icon: string; bor
         });
       } else {
         panel.classList.add('hidden');
+        panel.setAttribute('aria-hidden', 'true');
       }
     });
   }
@@ -213,6 +220,8 @@ const cardColors: Record<string, { bg: string; iconBg: string; icon: string; bor
       var next = -1;
       if (e.key === 'ArrowRight' || e.key === 'ArrowDown') next = (idx + 1) % arr.length;
       else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') next = (idx - 1 + arr.length) % arr.length;
+      else if (e.key === 'Home') next = 0;
+      else if (e.key === 'End') next = arr.length - 1;
       if (next >= 0) { e.preventDefault(); arr[next].focus(); activateCard(arr[next]); }
     });
   });
