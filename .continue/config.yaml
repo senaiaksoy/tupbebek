@@ -8,6 +8,8 @@ models:
     provider: ollama
     model: deepseek-r1:latest
     apiBase: http://localhost:11434
+    completionOptions:
+      num_ctx: 32768
 
 # ── Autocomplete (Tab ile Kod Tamamlama) ─────────────────
 # DeepSeek Coder V2 — kod tamamlama için optimize edilmiş

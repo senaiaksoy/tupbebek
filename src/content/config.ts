@@ -47,9 +47,10 @@ const articlesCollection = defineCollection({
     lastModified: z.date().optional(),
 
     // --- E-E-A-T Seffaflik ---
-    author: authorSchema.default('tupbebek.com Yayin Kurulu'),
+    author: authorSchema.default('Doç. Dr. Senai Aksoy'),
     authorTitle: z.string().optional(),
     authorCredentials: z.string().optional(),
+    authorYoutube: z.string().url().optional(),
     medicalReviewer: z.string().default('tupbebek.com Yayin Kurulu'),
     reviewerTitle: z.string().optional(),
     reviewDate: z.date().optional(),

@@ -142,6 +142,7 @@ lastModified: 2026-04-03
 author: "Yazar Adi"          # string veya {name, title, credentials} objesi
 authorTitle: "Unvan"
 authorCredentials: "Yeterlilik"
+authorYoutube: "https://www.youtube.com/@DocentDrSenaiAksoy"  # varsa
 medicalReviewer: "Reviewer Adi"
 reviewerTitle: "Reviewer Unvani"
 reviewDate: 2026-04-01
@@ -184,6 +185,13 @@ references:
 1. Kod yazmadan once hedefleri ve mimariyi analiz et
 2. Plan olustur ve onay al
 3. Onayli plana gore kodu yaz
+
+### Yeni Makale Teyitleri
+
+Yeni bir makale eklenirken veya mevcut makale komple yenilenirken, final duzenleme oncesi su iki bilgi mutlaka teyit edilir:
+
+- Yazar adi
+- YouTube adresi (varsa)
 
 ### Kod Kalitesi
 

@@ -28,6 +28,16 @@ references:
     journal: "Fertility and Sterility"
     year: 2003
     doi: "10.1016/S0015-0282(03)00100-X"
+  - title: "The welfare of the child in medically assisted reproduction"
+    authors: "ESHRE Task Force on Ethics and Law"
+    journal: "Human Reproduction"
+    year: 2007
+    doi: "10.1093/humrep/dem237"
+  - title: "Use of preimplantation genetic testing for monogenic defects (PGT-M) for adult-onset conditions: an Ethics Committee opinion"
+    authors: "Practice Committee of ASRM"
+    journal: "Fertility and Sterility"
+    year: 2018
+    doi: "10.1016/j.fertnstert.2018.01.028"
 ---
 
 ## PGT ile Cinsiyet Belirlenebilir mi?
@@ -114,8 +124,3 @@ PGT, tüp bebek tedavisinde genetik hastalıkları önlemek ve sağlıklı embri
 Genetik hastalık taşıyıcılığı konusunda endişeniz varsa, doktorunuz ve genetik danışmanınız size en uygun yaklaşımı belirleyecektir. PGT hakkında detaylı bilgi için [Genetik Testler rehberimizi](/makaleler/genetik-testler) inceleyebilirsiniz.
 
 ---
-
-**Kaynaklar:**
-1. T.C. Sağlık Bakanlığı. Üremeye Yardımcı Tedavi Uygulamaları ve Üremeye Yardımcı Tedavi Merkezleri Hakkında Yönetmelik. *Resmî Gazete*. 2014; Sayı: 29217.
-2. ESHRE Task Force on Ethics and Law. The welfare of the child in medically assisted reproduction. *Hum Reprod*. 2007;22(10):2585-2588. [doi:10.1093/humrep/dem237](https://doi.org/10.1093/humrep/dem237)
-3. Practice Committee of ASRM. Use of preimplantation genetic testing for monogenic defects (PGT-M) for adult-onset conditions: an Ethics Committee opinion. *Fertil Steril*. 2018;109(6):989-992. [doi:10.1016/j.fertnstert.2018.01.028](https://doi.org/10.1016/j.fertnstert.2018.01.028)

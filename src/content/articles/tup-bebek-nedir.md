@@ -280,19 +280,13 @@ Deneyimli bir tıbbi ekibin rehberliğinde ve destekleyici bir sosyal çevre ile
 
 ---
 
-## Kaynaklar ve İleri Okuma
-
-- **Dünya Sağlık Örgütü (WHO):** Kısırlık ve üreme sağlığı hakkında güncel bilgiler.
-- **Türk Jinekoloji ve Obstetrik Derneği:** Tüp bebek tedavisi ve güncel uygulamalar.
-- **Bilimsel Araştırmalar:** Tüp bebek tedavisinde yeni gelişmeler ve teknolojiler.
-
 ---
 
 **Not:** Bu makale bilgilendirme amaçlıdır ve tıbbi tavsiye niteliği taşımaz. Tedavi seçenekleriniz ve durumunuz hakkında detaylı bilgi için bir sağlık profesyoneline danışınız.
 
-### Tüp bebek aşamalarını keyifli bir animasyon olarak izlemek için aşağıdaki videoya tıklayınız
+### Tüp bebek tedavisinin kritik aşaması olan embriyo transferini videodan izleyebilirsiniz
 
-<iframe src="//www.youtube.com/embed/_YJmXBdAE0c" width="560" height="314" allowfullscreen="allowfullscreen"></iframe>
+<iframe src="//www.youtube.com/embed/-1_-iXy0TJ4" width="560" height="314" allowfullscreen="allowfullscreen"></iframe>
 
 #### **Sözlük**
 

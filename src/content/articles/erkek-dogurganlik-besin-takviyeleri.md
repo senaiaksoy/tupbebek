@@ -201,31 +201,4 @@ Bunun yanı sıra L-karnitin, selenyum, likopen, folik asit, omega-3 ve C ile E 
 
 ---
 
-### Kaynaklar
-
-- Male Infertility - Yale Medicine, <https://www.yalemedicine.org/conditions/male-infertility>
-- Male infertility - Symptoms and causes - Mayo Clinic, <https://www.mayoclinic.org/diseases-conditions/male-infertility/symptoms-causes/syc-20374773>
-- Male Infertility - MedlinePlus, <https://medlineplus.gov/maleinfertility.html>
-- The Role of Dietary Nutrients in Male Infertility: A Review - MDPI, <https://www.mdpi.com/2075-1729/13/2/519>
-- Male Infertility | Johns Hopkins Medicine, <https://www.hopkinsmedicine.org/health/conditions-and-diseases/male-infertility>
-- Infertility in men - Better Health Channel, <https://www.betterhealth.vic.gov.au/health/conditionsandtreatments/infertility-in-men>
-- Male Infertility: Symptoms, Diagnosis & Treatment - Urology Care Foundation, <https://www.urologyhealth.org/urology-a-z/m/male-infertility>
-- A Guide To The Best Fertility Supplements And Vitamins For Male Fertility - Jack Fertility, <https://www.jackfertility.co.uk/post/a-guide-to-the-best-fertility-supplements-and-vitamins-for-male-fertility>
-- Treat Male Infertility With 4 Proven Supplements That Support Sperm Health - RMIA, <https://www.rmia.com/fertility-treatments/treat-male-infertility-with-4-proven-supplements-that-support-sperm-health/>
-- Male Fertility Supplements: Evidence Based Review + Recommendations, <https://www.cnyfertility.com/male-fertility-supplements/>
-- CoQ10 and Sperm Health: an Evidenced Based Review - CNY Fertility, <https://www.cnyfertility.com/coq10-sperm/>
-- How Coenzyme Q10 (CoQ10) Affects Sperm Count and Motility | Progyny, <https://progyny.com/education/male-infertility/coenzyme-q10-male-fertility/>
-- CoQ10 (Coenzyme Q10): Health Benefits, Dosage, & Side Effects - WebMD, <https://www.webmd.com/diet/supplement-guide-coenzymeq10-coq10>
-- Coenzyme Q10 (CoQ10) for Fertility - CNY Fertility, <https://www.cnyfertility.com/coq10-fertility/>
-- Coenzyme Q10 (Ubiquinol) Oral: Uses, Side Effects, Interactions ... - WebMD, <https://www.webmd.com/drugs/2/drug-153517/coenzyme-q10-ubiquinol-oral/details>
-- Maximizing Male Fertility | New England Fertility in CT, <https://www.nefertility.com/international-fertility-blog/maximizing-male-fertility>
-- Benefits of Zinc for Sperm Quality and Overall Male Fertility, <https://www.cnyfertility.com/zinc-and-sperm/>
-- Excessive zinc supplementation can be dangerous to your health - Mather Hospital, <https://www.matherhospital.org/related-content/bariatrics/excessive-zinc-supplementation-can-be-dangerous-to-your-health/>
-- How Much Zinc to Increase Sperm Volume: A Comprehensive Guide - MyOva, <https://www.myovacare.com/blogs/news/how-much-zinc-to-increase-sperm-volume-a-comprehensive-guide>
-- Possible Interactions with: Zinc | Complementary and Alternative Medicine, <https://www.stlukes-stl.com/health-content/medicine/33/000999.htm>
-- Vitamin D - Consumer - NIH Office of Dietary Supplements, <https://ods.od.nih.gov/factsheets/VitaminD-Consumer/>
-- The Effects of Vitamin D3 Supplementation in Infertile Men - FACTS ..., <https://www.factsaboutfertility.org/the-effects-of-vitamin-d3-supplementation-in-infertile-men/>
-- Vitamin D and male fertility - Legacy Sperm Testing, <https://www.givelegacy.com/resources/vitamin-d-and-male-fertility/>
-- Vitamin D - Mayo Clinic, <https://www.mayoclinic.org/drugs-supplements-vitamin-d/art-20363792>
-
 ***(Bu içerik genel bilgi vermek amacıyla hazırlanmıştır ve herhangi bir tıbbi tavsiyenin yerini tutmaz. Kendi sağlık koşullarınızı göz önünde bulundurarak mutlaka uzman görüşü alınız.)***
