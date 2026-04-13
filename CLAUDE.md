@@ -193,6 +193,18 @@ Yeni bir makale eklenirken veya mevcut makale komple yenilenirken, final duzenle
 - Yazar adi
 - YouTube adresi (varsa)
 
+### Makale Yazim Sureci — PubMed Research
+
+Yeni bir makale konusu verildiginde, icerik olusturmadan once asagidaki arastirma sureci uygulanir:
+
+1. **PubMed taramasi**: Claude research ile PubMed uzerinden konuyla ilgili en guncel sistematik derlemeler, meta-analizler ve klinik calismalar taranir
+2. **Kaynak secimi**: Son 5 yilin (tercihen son 2-3 yil) yuksek kanitli calismalari oncelikli secilir (RCT, meta-analiz, Cochrane review)
+3. **Bilgi sentezi**: Tarama sonuclari sentezlenerek makalenin bilimsel cercevesi olusturulur
+4. **Makale yazimi**: Icerik, research sonuclarina dayali olarak yazilir; her iddia icin kaynak referansi saglanir
+5. **Referans ekleme**: Kullanilan PubMed calismalari frontmatter `references` alanina eklenir (DOI, yazar, dergi, yil bilgileriyle)
+
+**Arastirma oncelikleri**: ESHRE, ASRM, Cochrane, WHO rehberleri ve Fertility and Sterility, Human Reproduction, RBM Online gibi ust duzey dergilerdeki calismalar tercih edilir.
+
 ### Kod Kalitesi
 
 - Semantic HTML (<nav>, <main>, <article>, <aside>)
