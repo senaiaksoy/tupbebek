@@ -1,0 +1,54 @@
+﻿TÜP BEBEKTE ERA TESTİ: GÜNCEL KANITLARIN NÖTR DEĞERLENDİRMESİ
+
+Yazar: Doç. Dr. Senai Aksoy
+Uzmanlık: Kadın Hastalıkları ve Doğum, Üreme Tıbbı
+Son güncelleme: 12 Nisan 2026
+
+KISA ÖZET
+ERA (Endometrial Receptivity Analysis), embriyo transfer zamanlamasını kişiselleştirmeyi amaçlayan bir testtir.
+Mevcut bağımsız çalışmaların önemli bir bölümü, ERA kullanımının canlı doğum oranlarında tutarlı ve belirgin bir artış göstermediğini bildirmektedir.
+Bu nedenle ERA, rutin uygulama yerine hasta bazlı, hekim değerlendirmesiyle ele alınmalıdır.
+
+1) ERA TESTİ NEDİR?
+ERA, endometriumdan alınan örnekte gen ifadesi analizi yaparak transfer zamanlaması için ek bilgi üretmeyi hedefleyen bir yöntemdir.
+Testin amacı, olası implantasyon penceresi farklılıklarını değerlendirmektir.
+
+2) KLİNİK KANITLARIN GENEL ÇERÇEVESİ
+Bağımsız randomize ve gözlemsel çalışmalarda, ERA ile standart yaklaşım arasında canlı doğum oranları açısından net üstünlük gösterilemeyen sonuçlar bildirilmiştir.
+Yayınlar arasında yöntem, hasta seçimi ve alt grup farklılıkları bulunduğundan, sonuçlar yorumlanırken çalışmanın tasarımı dikkate alınmalıdır.
+
+3) KILAVUZ VE OTORİTE GÖRÜŞLERİ
+HFEA (İngiltere) add-on sınıflamasında ERA için temkinli yaklaşım önermektedir.
+ESHRE add-on önerilerinde ERA’nın rutin kullanımına ilişkin güçlü destek bulunmadığını belirtmektedir.
+Klinik kararlarda güncel kılavuzlar, bireysel hasta özellikleri ve hekim değerlendirmesi birlikte ele alınmalıdır.
+
+4) KLİNİK KARAR VERİRKEN HASTA İÇİN PRATİK NOKTALAR
+Aşağıdaki başlıklar hekimle birlikte değerlendirilmelidir:
+- Önceki deneme sayısı ve embriyo kalitesi
+- Transfer protokolü ve endometrium hazırlık biçimi
+- Eşlik eden uterin faktörler
+- Test sonucunun tedavi planını gerçekten değiştirip değiştirmeyeceği
+- Olası yarar, belirsizlikler ve alternatif yaklaşımlar
+
+5) SIK SORULAN SORULAR
+ERA testi herkese gerekli midir?
+- Hayır. Rutin kullanım için güçlü ve tutarlı üstünlük kanıtı bulunmadığında karar hasta bazlı verilir.
+
+ERA testi gebelik şansını kesin artırır mı?
+- Kesinlik ifadesi doğru değildir. Kanıtlar hasta grubuna ve çalışmaya göre değişkenlik göstermektedir.
+
+ERA testi hiç kullanılmamalı mı?
+- Bu karar kişiye özeldir. Uygulama kararı, hasta öyküsü ve hekim değerlendirmesi ile verilmelidir.
+
+6) SONUÇ
+ERA, üreme tıbbında tartışılan bir add-on yaklaşımıdır.
+En doğru yaklaşım, iddiaları değil güncel kanıtı esas almak; hastayı belirsizlikler konusunda açık biçimde bilgilendirmek ve kararları bireyselleştirmektir.
+
+KAYNAKLAR (ÖRNEK)
+1. Doyle N, et al. JAMA. 2022;328(21):2117-2125. PMID: 36472596.
+2. Richter KS, Richter AS. Hum Reprod. 2023;38(7):1239-1249. PMID: 37119530.
+3. ESHRE Good Practice Recommendations on Add-ons in Reproductive Medicine. 2023.
+4. HFEA Treatment Add-ons: Endometrial receptivity testing.
+
+TIBBİ SORUMLULUK REDDİ
+Bu içerik bilgilendirme amaçlıdır; tıbbi tanı ve tedavi yerine geçmez. Kişisel sağlık durumunuz için mutlaka hekiminize başvurunuz.

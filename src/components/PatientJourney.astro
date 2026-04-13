@@ -2,43 +2,43 @@
 const stages = [
   {
     step: 1,
-    title: "Gebe kalamıyorum, nedenini anlamıyorum",
-    description: "İnfertilite nedenlerini ve ilk adımın ne olması gerektiğini öğrenin.",
+    title: "Gebelik olmuyor, nereden baslamaliyim?",
+    description: "Infertilite nedenleri ve ilk degerlendirme basliklari.",
     link: "/kadin-infertilitesi",
     icon: "psychiatry"
   },
   {
     step: 2,
-    title: "Doktora gittim, testlerim var",
-    description: "Hormon paneli okuma ve laboratuvar raporu yorumlama.",
+    title: "Testlerim var, nasil okumaliyim?",
+    description: "Hormon paneli ve laboratuvar raporu yorumlama temelleri.",
     link: "/tani-sureci",
     icon: "lab_research"
   },
   {
     step: 3,
-    title: "Test sonuçlarımı anlamak istiyorum",
-    description: "Tahlil sonuçlarınızı ve ne anlama geldiklerini öğrenin.",
+    title: "Sonuclar ne anlama geliyor?",
+    description: "Tahlil sonuclarinin klinik karsiliklari.",
     link: "/hormon-paneli",
     icon: "analytics"
   },
   {
     step: 4,
-    title: "Tedavi seçeneklerimi öğrenmek istiyorum",
-    description: "Size en uygun tedavi yöntemlerini (IVF, IUI vb.) karşılaştırın.",
+    title: "Tedavi yontemleri nelerdir?",
+    description: "IVF, IUI ve diger seceneklerin kisa karsilastirmasi.",
     link: "/tedavi-yontemleri",
     icon: "biotech"
   },
   {
     step: 5,
-    title: "Tüp bebeğe başlıyorum",
-    description: "Adım adım IVF rehberi: Hazırlık, ilaçlar ve klinik süreç.",
+    title: "IVF sureci nasil ilerler?",
+    description: "Hazirlik, ilaclar ve laboratuvar surecine toplu bakis.",
     link: "/rehberler",
     icon: "step_into"
   },
   {
     step: 6,
-    title: "Psikolojik olarak çok zorlanıyorum",
-    description: "Psikolojik destek ve duyusal sağlamlık rehberimiz.",
+    title: "Duygusal yukle nasil basa cikilir?",
+    description: "Psikolojik destek ve surec yonetimi kaynaklari.",
     link: "/psikolojik-destek",
     icon: "self_improvement"
   }
@@ -46,40 +46,36 @@ const stages = [
 ---
 
 <section class="py-24 bg-gray-50">
-    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 text-center pb-16">
-        <span class="text-apricot-600 font-label uppercase tracking-[0.3em] text-xs font-bold mb-4 block">YOL HARİTASI</span>
-        <h2 class="text-4xl lg:text-5xl font-headline text-gray-900 mb-6">Hasta Yolculuğu Haritası</h2>
-        <p class="text-gray-600 max-w-2xl mx-auto">Hangi aşamada olursanız olun, bilimsel ve insani derinliğimizle yanınızdayız.</p>
-    </div>
+  <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 text-center pb-16">
+    <span class="text-apricot-600 font-label uppercase tracking-[0.3em] text-xs font-bold mb-4 block">YOL HARITASI</span>
+    <h2 class="text-4xl lg:text-5xl font-headline text-gray-900 mb-6">Bilgi Yol Haritasi</h2>
+    <p class="text-gray-600 max-w-2xl mx-auto">Farkli asamalarda hangi bilgilerin onceliklendirilmesi gerektigini adim adim gorebilirsiniz.</p>
+  </div>
 
-    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 relative">
-        <!-- Connecting Line -->
-        <div class="hidden lg:block absolute top-[120px] left-8 right-8 h-0.5 bg-gradient-to-r from-primary/5 via-primary/40 to-primary/5 z-0"></div>
+  <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 relative">
+    <div class="hidden lg:block absolute top-[120px] left-8 right-8 h-0.5 bg-gradient-to-r from-primary/5 via-primary/40 to-primary/5 z-0"></div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 relative z-10">
-            {stages.map((stage) => (
-                <div class="group">
-                    <a href={stage.link} class="flex flex-col items-center">
-                        <!-- Icon Circle -->
-                        <div class="w-20 h-20 rounded-full bg-white border-2 border-gray-300 flex items-center justify-center mb-8 shadow-sm group-hover:border-primary group-hover:shadow-lg group-hover:scale-110 transition-all duration-500 bg-white">
-                            <span class="material-symbols-outlined text-primary-600 text-3xl">{stage.icon}</span>
-                        </div>
-                        
-                        <!-- Content -->
-                        <div class="text-center px-4">
-                            <h3 class="text-sm font-bold text-gray-900 mb-3 group-hover:text-primary-600 transition-colors h-10 flex items-center justify-center">{stage.title}</h3>
-                            <p class="text-xs text-gray-600 leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                                {stage.description}
-                            </p>
-                        </div>
-                        
-                        <!-- Step Badge -->
-                        <div class="mt-4 px-3 py-1 bg-gray-100 rounded-full text-[10px] font-bold text-gray-500 uppercase tracking-widest">
-                            AŞAMA {stage.step}
-                        </div>
-                    </a>
-                </div>
-            ))}
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 relative z-10">
+      {stages.map((stage) => (
+        <div class="group">
+          <a href={stage.link} class="flex flex-col items-center">
+            <div class="w-20 h-20 rounded-full bg-white border-2 border-gray-300 flex items-center justify-center mb-8 shadow-sm group-hover:border-primary group-hover:shadow-lg group-hover:scale-110 transition-all duration-500 bg-white">
+              <span class="material-symbols-outlined text-primary-600 text-3xl">{stage.icon}</span>
+            </div>
+
+            <div class="text-center px-4">
+              <h3 class="text-sm font-bold text-gray-900 mb-3 group-hover:text-primary-600 transition-colors h-10 flex items-center justify-center">{stage.title}</h3>
+              <p class="text-xs text-gray-600 leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                {stage.description}
+              </p>
+            </div>
+
+            <div class="mt-4 px-3 py-1 bg-gray-100 rounded-full text-[10px] font-bold text-gray-500 uppercase tracking-widest">
+              ASAMA {stage.step}
+            </div>
+          </a>
         </div>
+      ))}
     </div>
+  </div>
 </section>

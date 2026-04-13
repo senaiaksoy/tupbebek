@@ -378,6 +378,12 @@ i {
   top: 1rem;
 }
 
+.skip-link:focus-visible {
+  top: 1rem;
+  outline: 3px solid var(--color-primary-100);
+  outline-offset: 3px;
+}
+
 /* Global Focus Indicator (WCAG 2.1 AA) */
 :focus-visible {
   outline: 2px solid var(--color-primary-600);
@@ -385,8 +391,89 @@ i {
   border-radius: 2px;
 }
 
+:where(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--color-primary-600) 25%, transparent);
+}
+
 :focus:not(:focus-visible) {
   outline: none;
+}
+
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.sr-only-focusable:not(:focus):not(:focus-visible) {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+.sr-only-focusable:focus,
+.sr-only-focusable:focus-visible {
+  position: static !important;
+  width: auto !important;
+  height: auto !important;
+  margin: 0 !important;
+  clip: auto !important;
+  overflow: visible !important;
+  white-space: normal !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    transition-delay: 0ms !important;
+  }
+}
+
+@media (prefers-contrast: more) {
+  :focus-visible {
+    outline-width: 3px;
+  }
+
+  .skip-link {
+    border: 2px solid currentColor;
+  }
+
+  a {
+    text-decoration-thickness: 0.15em;
+    text-underline-offset: 0.2em;
+  }
+}
+
+@media (forced-colors: active) {
+  :focus-visible {
+    outline: 2px solid Highlight;
+    outline-offset: 2px;
+  }
+
+  .skip-link {
+    background-color: Canvas;
+    color: CanvasText;
+    border: 1px solid CanvasText;
+    forced-color-adjust: none;
+  }
 }
 
 /* ─────────────────────────────────────────────────────────────────── */

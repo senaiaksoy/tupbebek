@@ -212,10 +212,13 @@ const medicalWebPageSchema = {
 				font-size: 1rem;
 				font-weight: 700;
 				border-radius: 0.5rem;
-				transition: top 0.15s;
+				transition: top 0.15s ease-out;
 			}
-			.skip-link:focus {
+			.skip-link:focus,
+			.skip-link:focus-visible {
 				top: 1rem;
+				outline: 3px solid #dbeafe;
+				outline-offset: 3px;
 			}
 
 			/* Typography reset */
