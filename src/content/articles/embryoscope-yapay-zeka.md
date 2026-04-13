@@ -342,7 +342,7 @@ Klinik yaklaşımım şudur:
 
 12. Deep learning methods to forecasting human embryo development in time-lapse videos. *PLOS ONE*. [https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0330924](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0330924)
 
-13. Largest international trial of time-lapse imaging systems for embryo incubation and selection in IVF. *Queen Mary University of London*. [https://www.qmul.ac.uk/media/news/2024/fmd/largest-international-trial-of-time-lapse-imaging-systems-for-embryo-incubation-and-selection-in-ivf-finds-it-gives-no-advantage-over-conventional-methods.html](https://www.qmul.ac.uk/media/news/2024/fmd/largest-international-trial-of-time-lapse-imaging-systems-for-embryo-incubation-and-selection-in-ivf-finds-it-gives-no-advantage-over-conventional-methods.html)
+13. Largest international trial of time-lapse imaging systems for embryo incubation and selection in IVF. *Queen Mary University of London*. [https://www.qmul.ac.uk/wiph/news/latest-news/items/no-advantage-to-time-lapse-imaging-of-embryos-in-ivf-pregnancies.html](https://www.qmul.ac.uk/wiph/news/latest-news/items/no-advantage-to-time-lapse-imaging-of-embryos-in-ivf-pregnancies.html)
 
 14. New IVF Method: more expensive, not more effective. *Amsterdam UMC*. [https://www.amsterdamumc.org/en/spotlight/new-ivf-method-more-expensive-not-more-effective-](https://www.amsterdamumc.org/en/spotlight/new-ivf-method-more-expensive-not-more-effective-)
 
