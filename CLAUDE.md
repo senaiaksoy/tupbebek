@@ -15,7 +15,7 @@ Asagidaki icerik ve ozelliklerin sistemde bulunmasi **kesinlikle yasaktir**:
 - Indirim, kampanya, promosyon ifadeleri
 - "Ucretsiz muayene", "ucretsiz konsultasyon" gibi teklifler
 - Tedavi oncesi/sonrasi (before-after) gorselleri
-- Hasta tesekkkur yorumlari, hasta deneyim hikayeleri
+- Hasta tesekkur yorumlari, hasta deneyim hikayeleri
 - "En iyi", "kesin cozum", "garantili" gibi ustunluk iddialari
 - Fiyat tablolari veya maliyet karsilastirmalari
 - Haksiz rekabet unsuru tasiyabilecek herhangi bir ifade
@@ -36,11 +36,16 @@ Her tibbi icerik sayfasinda bulunmasi gereken unsurlar:
 
 ### Teknoloji Yigini
 
-- **Framework**: Astro 4.x (Static Site Generator)
+- **Framework**: Astro 4.x (Hybrid — SSG + SSR)
+- **Adapter**: @astrojs/cloudflare (Cloudflare Workers)
 - **Styling**: Tailwind CSS 3.4.x
-- **Content**: Astro Content Collections (Markdown/MDX)
-- **Fonts**: Inter (headlines + body), Material Symbols Outlined (icons)
-- **Deploy**: Static build, SSG
+- **Content**: Astro Content Collections (Markdown/MDX) + Zod validation
+- **Search**: Pagefind (client-side full-text arama)
+- **Email**: Resend API (iletisim formu + e-kitap)
+- **Fonts**: Inter + Manrope (self-hosted woff2), Material Symbols Outlined (icons)
+- **PDF**: Puppeteer (e-kitap PDF olusturma)
+- **Image**: Sharp (WebP donusum), noop image service
+- **Deploy**: Cloudflare Pages (wrangler.toml)
 
 ### Tasarim Sistemi
 
@@ -55,32 +60,54 @@ Her tibbi icerik sayfasinda bulunmasi gereken unsurlar:
 
 ```
 src/
-├── components/
-│   ├── global/         # Button, Card, Input, MedicalInfoBox, Accordion, etc.
-│   ├── home/           # HeroSection, QuickGuideCards, SituationSelector
-│   ├── header/         # MegaMenuItem
-│   ├── ArticleSchema   # JSON-LD structured data
-│   ├── EEATBadge       # E-E-A-T transparency badge
+├── components/           # 49 Astro component
+│   ├── global/           # ProcedureTabs, MedicalInfoBox, Accordion, Card, Button, Input, ...
+│   ├── home/             # HeroSection, QuickGuideCards, SituationSelector
+│   ├── header/           # MegaMenuItem
+│   ├── ArticleSchema     # JSON-LD structured data
+│   ├── EEATBadge         # E-E-A-T transparency badge
 │   ├── MedicalDisclaimer # Auto-injected legal notice
-│   ├── ReferenceList   # Scientific citations
+│   ├── ReferenceList     # Scientific citations
+│   ├── CookieConsent     # KVKK uyumlu cerez onayi
+│   ├── SearchAutocomplete # Pagefind entegrasyonu
 │   └── ...
 ├── content/
-│   ├── articles/       # 55+ Markdown makaleler
-│   └── config.ts       # Zod schema (E-E-A-T + workflow fields)
+│   ├── articles/         # 62 Markdown/MDX makale
+│   └── config.ts         # Zod schema (E-E-A-T + workflow fields)
 ├── data/
-│   └── glossary.ts     # 25+ tibbi terim sozlugu
+│   ├── navigation.ts     # Ana menu, footer, situation selector, quick guides
+│   ├── glossary.ts       # Tibbi terim tooltip veritabani
+│   └── guideCategories.ts # Homepage quick guide cards
 ├── layouts/
-│   └── BaseLayout.astro
-├── pages/
-│   ├── makaleler/      # Dinamik makale routing
-│   └── [30+ statik sayfa]
+│   └── BaseLayout.astro  # Ana layout wrapper
+├── pages/                # 40 sayfa
+│   ├── makaleler/        # Dinamik makale routing ([...slug].astro)
+│   ├── api/              # contact.ts, ebook-subscribe.ts (SSR)
+│   └── [38 statik sayfa] # Rehberler, kategoriler, politika, ozel sayfalar
 ├── styles/
-│   ├── globals.css     # Prose-medical, base styles
-│   ├── tokens.css      # Design tokens
-│   ├── components.css
-│   └── animations.css
+│   ├── globals.css       # Prose-medical, base styles (662 satir)
+│   ├── tokens.css        # Design tokens (288 satir)
+│   ├── components.css    # Component-specific styles
+│   └── animations.css    # Animasyon tanimlari (471 satir)
 └── utils/
-    └── articles.ts     # getPublishedArticles() — draft filtreleme
+    └── articles.ts       # getPublishedArticles(), getAllArticles()
+
+public/
+├── _headers              # Cloudflare cache-control politikalari
+├── _redirects            # 301 redirect mappings
+├── e-kitap/              # Beslenme plani e-kitap (~9.2 MB)
+│   ├── tup-bebek-beslenme-plani.html   # Kaynak HTML (inline CSS)
+│   ├── tup-bebek-beslenme-plani.pdf    # Puppeteer ile olusturulmus PDF
+│   └── images/           # 11 JPEG gorsel (cover, faz gorselleri, vs.)
+├── fonts/                # Self-hosted woff2 (488 KB)
+├── images/               # Site gorselleri (~9.8 MB, WebP optimize)
+└── robots.txt, favicon.png, site.webmanifest
+
+scripts/
+├── generate-pdf.js       # Puppeteer: HTML → PDF (e-kitap)
+├── convert-to-webp.mjs   # Sharp: batch PNG/JPG → WebP
+├── convert-image.mjs     # Sharp: tekil gorsel donusum
+└── migrate_links.cjs     # Legacy link migration
 ```
 
 ### Editoryal Is Akisi
@@ -95,9 +122,10 @@ Icerik statusleri (content/config.ts):
 
 ### SEO / Yapilandirilmis Veri
 
-- **BaseLayout**: Genel `MedicalWebPage` JSON-LD
+- **BaseLayout**: Genel `MedicalWebPage` JSON-LD + robots max-image-preview + og:image:alt
 - **ArticleSchema**: Makale bazli `["MedicalWebPage", "Article"]` + `reviewedBy` + `citation`
 - **BreadcrumbList**: Otomatik breadcrumb schema
+- **Sitemap**: lastmod tarihleri frontmatter'dan parse edilir
 - Canonical URL, Open Graph meta tags
 
 ### Content Schema (Zod)
@@ -111,7 +139,7 @@ category: "Kategori"
 status: "published"          # draft | in_review | published
 publishDate: 2024-01-01
 lastModified: 2026-04-03
-author: "Yazar Adi"
+author: "Yazar Adi"          # string veya {name, title, credentials} objesi
 authorTitle: "Unvan"
 authorCredentials: "Yeterlilik"
 authorYoutube: "https://www.youtube.com/@DocentDrSenaiAksoy"  # varsa
@@ -121,6 +149,10 @@ reviewDate: 2026-04-01
 image: "/images/..."
 imageAlt: "Gorsel aciklamasi"
 featured: false
+videoId: "YouTube video ID"
+videoTitle: "Video basligi"
+canonical: "Canonical URL"
+noindex: false
 references:
   - title: "Makale adi"
     authors: "Yazar listesi"
@@ -129,6 +161,22 @@ references:
     doi: "10.1234/example"
     url: "https://..."
 ```
+
+### Deploy & Altyapi
+
+- **Platform**: Cloudflare Pages (wrangler.toml)
+- **Build**: `astro build && npx pagefind --site dist --glob "makaleler/**/*.html"`
+- **SSR Routes**: /api/contact, /api/ebook-subscribe (Cloudflare Workers)
+- **CDN Headers**: PDF 1 gun, fontlar 1 yil (immutable), images 7 gun, e-kitap HTML 1 saat
+- **Redirects**: _redirects dosyasi + astro.config.mjs redirects (eski URL cleanup)
+
+### E-Kitap (Beslenme Plani)
+
+- **Kaynak**: `public/e-kitap/tup-bebek-beslenme-plani.html` (inline CSS, 12 bolum)
+- **PDF**: Puppeteer ile olusturulur (`node scripts/generate-pdf.js`)
+- **Indirme**: `/e-kitap-indir` sayfasindan form ile lead yakalama, Resend API ile email
+- **Gorseller**: 11 JPEG (cover, faz gorselleri, besin gorselleri)
+- **Print CSS**: Sayfa kirilma kontrolu, faz bazli page-break, kompakt margin/padding
 
 ## Gelistirme Prensipleri
 
@@ -169,3 +217,13 @@ Yeni bir makale eklenirken veya mevcut makale komple yenilenirken, final duzenle
 - Turkce tibbi terminoloji dogru kullanilir
 - Her iddia icin bilimsel kaynak gosterilebilir olmali
 - "Kesin", "garanti", "en iyi" gibi mutlak ifadelerden kacinilir
+
+### Onemli Komutlar
+
+```bash
+npm run dev          # Gelistirme sunucusu
+npm run build        # Uretim build + Pagefind indexing
+npm run preview      # Build onizleme
+node scripts/generate-pdf.js    # E-kitap PDF olusturma
+node scripts/convert-to-webp.mjs # Toplu WebP donusum
+```
