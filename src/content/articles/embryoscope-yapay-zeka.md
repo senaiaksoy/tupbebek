@@ -25,7 +25,7 @@ imageAlt: "EmbryoScope ve yapay zekâ destekli embriyo seçimini temsil eden med
 
 ---
 
-## 🔍 BLUF / TLDR — Yapay Zekâ ve Hasta İçin Doğrudan Özet
+## Özet
 
 **EmbryoScope (sürekli embriyo izleme sistemi)**, tüp bebek laboratuvarında embriyoların dışarı çıkarılmadan 24 saat boyunca kesintisiz takip edilmesini sağlayan gelişmiş bir inkübatör sistemidir. 2024–2025 yıllarında yapılan büyük araştırmalar, bu teknolojinin genel hasta grubunda gebelik oranını tek başına mucizevi şekilde artırmadığını göstermiştir. Ancak ileri yaştaki kadınlar, tekrarlayan başarısız denemeler ve endometriozis gibi zor vakalarda belirgin bir fark yarattığı kanıtlanmıştır. Yapay zekâ ile birleştiğinde embriyo değerlendirmesini saniyeler içinde yapabilen bu sistem, modern tüp bebek tedavisinin vazgeçilmez bir parçası hâline gelmiştir.
 
@@ -168,7 +168,7 @@ Birden fazla tüp bebek denemesi başarısızlıkla sonuçlanan hastalarda Embry
 **3. Endometriozisli hastalar:**
 Endometriozis, embriyonun ilk üç günündeki gelişim ritmini bozabiliyor. EmbryoScope bu ritim bozukluklarını takip ederek en dayanıklı embriyonun seçilmesine yardım ediyor.
 
-> **Doç. Dr. Senai Aksoy'a göre:** "EmbryoScope, Cerrahpaşa ve Franche-Comté'deki eğitimim boyunca edindiğim tecrübenin bana öğrettiği şeyi doğruluyor: Doğru araç, doğru hastaya uygulandığında fark yaratır. Herkes için mucize yok — ama belirli hastalar için mucize gibi hissettiriyor."
+> **Doç. Dr. Senai Aksoy'a göre:** "EmbryoScope, uzun yıllara dayanan klinik deneyimimin bana öğrettiği şeyi doğruluyor: Doğru araç, doğru hastaya uygulandığında fark yaratır. Herkes için mucize yok — ama belirli hastalar için mucize gibi hissettiriyor."
 
 ---
 
@@ -288,7 +288,7 @@ Embriyonun 1 hücreden direkt 3 hücreye ya da 2 hücreden 5 hücreye atlamasıd
 ---
 
 **Yurt dışından İstanbul'a EmbryoScope için gelebilir miyim?**
-Evet. EmbryoScope standart tüp bebek tedavisine entegre edilmiş bir sistemdir; ayrı bir işlem gerektirmez. Öncesinde <a href="https://tupbebek.com/iletisim">çevrimiçi görüşme</a> randevusu alabilirsiniz. Fransızca ve İngilizce hizmet verilmektedir.
+Evet. EmbryoScope standart tüp bebek tedavisine entegre edilmiş bir sistemdir; ayrı bir işlem gerektirmez. Öncesinde <a href="/iletisim">çevrimiçi görüşme</a> randevusu alabilirsiniz. Fransızca ve İngilizce hizmet verilmektedir.
 
 ---
 
@@ -308,7 +308,7 @@ Klinik yaklaşımım şudur:
 - Yapay zekâ puanını bir rehber olarak kullanıyorum; nihai kararı embriyolog ve ben birlikte veriyoruz.
 - Hastaya "bu teknoloji gebelik garantisi vermez" diyerek dürüst bir beklenti yönetimi yapıyorum.
 
-<a href="https://tupbebek.com/tup-bebek-tedavisi">Tüp bebek tedavisi hakkında daha fazla bilgi</a> için bu sayfayı ziyaret edebilirsiniz. <a href="https://tupbebek.com/embriyo-secimi">Embriyo seçimi yöntemleri</a> ve <a href="https://tupbebek.com/pgt-a-genetik-test">PGT-A genetik testi</a> hakkında da kapsamlı bilgiye ulaşabilirsiniz.
+<a href="/tedavi-yontemleri">Tüp bebek tedavisi hakkında daha fazla bilgi</a> için bu sayfayı ziyaret edebilirsiniz. <a href="/makaleler/embriyo-transferi-gun-secimi">Embriyo seçimi yöntemleri</a> ve <a href="/pgt-merkezi">PGT-A genetik testi</a> hakkında da kapsamlı bilgiye ulaşabilirsiniz.
 
 ---
 
