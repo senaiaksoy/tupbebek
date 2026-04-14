@@ -5,6 +5,7 @@ import Footer from '../components/Footer.astro';
 import YouTubeEmbed from '../components/YouTubeEmbed.astro';
 import ReferenceList from '../components/ReferenceList.astro';
 import MedicalDisclaimer from '../components/MedicalDisclaimer.astro';
+import EEATBadge from '../components/EEATBadge.astro';
 
 const references = [
     {
@@ -164,16 +165,17 @@ const pageDescription = "Vitrifikasyon yöntemiyle yumurta, sperm ve embriyo don
                     <h1 class="font-headline text-5xl md:text-6xl text-gray-900 leading-tight mb-8">
                         Fertilite Koruma: <span class="text-primary-600 italic">Geleceğinizi</span> Güvence Altına Alın
                     </h1>
-                    <div class="flex items-center gap-4 p-4 bg-gray-50 rounded-xl border-l-4 border-primary">
-                        <div class="w-12 h-12 rounded-full overflow-hidden bg-gray-200 flex items-center justify-center">
-                            <span class="material-symbols-outlined text-primary-600 text-2xl" style="font-variation-settings: 'FILL' 1;">verified</span>
-                        </div>
-                        <div>
-                            <p class="font-bold text-gray-900">Doç. Dr. Senai Aksoy</p>
-                            <p class="text-sm text-gray-600">Kadın Hastalıkları, Doğum ve Üreme Tıbbı Uzmanı</p>
-                            <p class="text-xs text-gray-500">Son tıbbi revizyon: 12 Nisan 2026</p>
-                        </div>
-                    </div>
+                    <EEATBadge
+                        author="Doç. Dr. Senai Aksoy"
+                        authorTitle="Kadın Hastalıkları, Doğum ve Üreme Tıbbı Uzmanı"
+                        authorYoutube="https://www.youtube.com/@DocentDrSenaiAksoy"
+                        medicalReviewer="tupbebek.com Tıbbi Danışma Kurulu"
+                        reviewerTitle="Tıbbi Danışma Kurulu"
+                        reviewDate="12 Nisan 2026"
+                        lastModified="3 Nisan 2026"
+                        status="published"
+                        referenceCount={8}
+                    />
                 </div>
                 <div class="hidden md:block w-72 shrink-0 aspect-[4/5] bg-gray-100 rounded-2xl overflow-hidden shadow-2xl">
                     <img class="w-full h-full object-cover grayscale opacity-80" src="/images/fertilite-koruma/hero.webp" alt="Fertilite koruma — vitrifikasyon ile yumurta, sperm ve embriyo dondurma" width="512" height="512" loading="eager" fetchpriority="high"/>
