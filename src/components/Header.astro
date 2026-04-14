@@ -128,9 +128,23 @@ const accordionItems = navigationMenus.map((menu) => ({
         const menuTrigger = document.getElementById('mobile-menu-trigger');
         const closeBtn = document.getElementById('mobile-close');
         const menu = document.getElementById('mobile-menu');
+        let lastFocusedTrigger = null;
 
-        const toggleMenu = () => {
+        const getMenuFocusableElements = () => {
+            if (!menu) return [];
+            return Array.from(
+                menu.querySelectorAll(
+                    'a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])'
+                )
+            ).filter((el) => !el.hasAttribute('hidden') && el.getAttribute('aria-hidden') !== 'true');
+        };
+
+        const toggleMenu = (triggerEl) => {
+            if (!menu) return;
             const isOpen = !menu.classList.contains('translate-x-full');
+            if (!isOpen) {
+                lastFocusedTrigger = triggerEl || document.activeElement;
+            }
             menu.classList.toggle('translate-x-full');
             const nowOpen = !menu.classList.contains('translate-x-full');
             document.body.style.overflow = nowOpen ? 'hidden' : 'auto';
@@ -139,22 +153,40 @@ const accordionItems = navigationMenus.map((menu) => ({
             if (nowOpen) {
                 menu.setAttribute('aria-modal', 'true');
                 menu.setAttribute('aria-hidden', 'false');
-                closeBtn && closeBtn.focus();
+                const focusableElements = getMenuFocusableElements();
+                (focusableElements[0] || closeBtn)?.focus();
             } else {
                 menu.removeAttribute('aria-modal');
                 menu.setAttribute('aria-hidden', 'true');
-                menuToggle && menuToggle.focus();
+                const fallbackTarget = lastFocusedTrigger || menuToggle || menuTrigger;
+                fallbackTarget && fallbackTarget.focus();
             }
         };
 
-        if(menuToggle) menuToggle.addEventListener('click', toggleMenu);
-        if(menuTrigger) menuTrigger.addEventListener('click', toggleMenu);
-        if(closeBtn) closeBtn.addEventListener('click', toggleMenu);
+        if(menuToggle) menuToggle.addEventListener('click', () => toggleMenu(menuToggle));
+        if(menuTrigger) menuTrigger.addEventListener('click', () => toggleMenu(menuTrigger));
+        if(closeBtn) closeBtn.addEventListener('click', () => toggleMenu(closeBtn));
 
         // Escape key closes mobile menu
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape' && menu && !menu.classList.contains('translate-x-full')) {
                 toggleMenu();
+            }
+            if (e.key === 'Tab' && menu && !menu.classList.contains('translate-x-full')) {
+                const focusableElements = getMenuFocusableElements();
+                if (focusableElements.length === 0) return;
+
+                const firstElement = focusableElements[0];
+                const lastElement = focusableElements[focusableElements.length - 1];
+                const activeElement = document.activeElement;
+
+                if (e.shiftKey && activeElement === firstElement) {
+                    e.preventDefault();
+                    lastElement.focus();
+                } else if (!e.shiftKey && activeElement === lastElement) {
+                    e.preventDefault();
+                    firstElement.focus();
+                }
             }
         });
 
