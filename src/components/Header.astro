@@ -49,7 +49,9 @@ const accordionItems = navigationMenus.map((menu) => ({
 </header>
 
 <!-- Mobile Sidebar Menu -->
-<div id="mobile-menu" class="fixed right-0 top-20 h-[calc(100vh-80px)] w-80 bg-white shadow-2xl border-l border-gray-100 transform translate-x-full transition-transform duration-300 z-40 overflow-y-auto" role="dialog" aria-label="Mobil menü" aria-hidden="true">
+<div id="mobile-menu-backdrop" class="hidden lg:hidden fixed inset-0 top-20 bg-black/30 z-[105]" aria-hidden="true"></div>
+
+<div id="mobile-menu" class="fixed right-0 top-20 h-[calc(100vh-80px)] w-80 bg-white shadow-2xl border-l border-gray-100 transform translate-x-full transition-transform duration-300 z-[110] overflow-y-auto" role="dialog" aria-label="Mobil menü" aria-hidden="true">
     <div class="p-6 space-y-2">
         <button id="mobile-close" type="button" class="absolute top-4 right-4 min-w-[44px] min-h-[44px] flex items-center justify-center hover:bg-gray-100 rounded-lg transition-colors" aria-label="Menüyü kapat">
             <span class="material-symbols-outlined">close</span>
@@ -72,7 +74,7 @@ const accordionItems = navigationMenus.map((menu) => ({
 </div>
 
 <!-- Mobile Bottom Bar -->
-<nav class="lg:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 z-40" aria-label="Mobil navigasyon">
+<nav class="lg:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 z-[90]" aria-label="Mobil navigasyon">
     <div class="flex items-center justify-around h-16">
         <a href="/" class="flex flex-col items-center justify-center gap-1 min-w-[44px] min-h-[44px] text-primary-600 transition-colors">
             <span class="material-symbols-outlined">home</span>
@@ -128,6 +130,7 @@ const accordionItems = navigationMenus.map((menu) => ({
         const menuTrigger = document.getElementById('mobile-menu-trigger');
         const closeBtn = document.getElementById('mobile-close');
         const menu = document.getElementById('mobile-menu');
+        const menuBackdrop = document.getElementById('mobile-menu-backdrop');
         let lastFocusedTrigger = null;
 
         const getMenuFocusableElements = () => {
@@ -148,6 +151,9 @@ const accordionItems = navigationMenus.map((menu) => ({
             menu.classList.toggle('translate-x-full');
             const nowOpen = !menu.classList.contains('translate-x-full');
             document.body.style.overflow = nowOpen ? 'hidden' : 'auto';
+            if (menuBackdrop) {
+                menuBackdrop.classList.toggle('hidden', !nowOpen);
+            }
             if (menuToggle) menuToggle.setAttribute('aria-expanded', String(nowOpen));
             if (menuTrigger) menuTrigger.setAttribute('aria-expanded', String(nowOpen));
             if (nowOpen) {
@@ -166,6 +172,18 @@ const accordionItems = navigationMenus.map((menu) => ({
         if(menuToggle) menuToggle.addEventListener('click', () => toggleMenu(menuToggle));
         if(menuTrigger) menuTrigger.addEventListener('click', () => toggleMenu(menuTrigger));
         if(closeBtn) closeBtn.addEventListener('click', () => toggleMenu(closeBtn));
+        if(menuBackdrop) menuBackdrop.addEventListener('click', () => toggleMenu());
+
+        // Close menu after any in-menu link click to prevent overlay trapping.
+        if (menu) {
+            menu.querySelectorAll('a[href]').forEach((link) => {
+                link.addEventListener('click', () => {
+                    if (!menu.classList.contains('translate-x-full')) {
+                        toggleMenu();
+                    }
+                });
+            });
+        }
 
         // Escape key closes mobile menu
         document.addEventListener('keydown', function(e) {
