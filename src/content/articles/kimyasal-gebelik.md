@@ -41,13 +41,13 @@ Pozitif bir gebelik testi gözlerinizin önünde belirdiğinde kalbinizin ritmi 
 
 ## Kimyasal Gebelik Nedir?
 
-Kimyasal gebelik, döllenmiş bir yumurtanın implantasyonu sonrası hCG hormonu (insan koryonik gonadotropini) seviyelerindeki artışla gebelik testinin pozitif çıkması; ancak gebeliğin ultrason görüntüleri ile teyit edilemeden sonlanması durumudur. Bu tür gebelikler genellikle çok erken safhalarda sonlandığı için, pek çok kadın bu durumu normal bir adet dönemiyle karıştırabilir.
+Kimyasal gebelik, döllenmiş bir yumurtanın implantasyonu sonrası hCG hormonu (insan koryonik gonadotropini) seviyelerindeki artışla gebelik testinin pozitif çıkması; ancak gebeliğin ultrason görüntüleri ile teyit edilemeden sonlanması durumudur. {{kanit:B}} Bu tür gebelikler genellikle çok erken safhalarda sonlandığı için, pek çok kadın bu durumu normal bir adet dönemiyle karıştırabilir.
 
 ## Kimyasal Gebeliklerin Nedenleri
 
 ### Kromozomal Anormallikler: Doğanın Seçimi
 
-Her şeyin mükemmel bir uyum içinde ilerlemesi gereken gebelik sürecinde, kromozomal anormallikler bu dengenin bozulmasına neden olabilir. Genetik hatalar, potansiyel bir gebeliği engelleyerek, doğanın belki de en acımasız yüzünü gösterir: sadece en sağlıklı bireylerin hayatta kalmasını sağlama içgüdüsü. Bu durum, her dört gebelikten birinin bu sebeple sona erdiğini öğrenmek üzere olanlar için hem üzücü hem de düşündürücüdür.
+Her şeyin mükemmel bir uyum içinde ilerlemesi gereken gebelik sürecinde, kromozomal anormallikler bu dengenin bozulmasına neden olabilir. {{kanit:B}} Genetik hatalar, potansiyel bir gebeliği engelleyerek, doğanın belki de en acımasız yüzünü gösterir: sadece en sağlıklı bireylerin hayatta kalmasını sağlama içgüdüsü. Bu durum, her dört gebelikten birinin bu sebeple sona erdiğini öğrenmek üzere olanlar için hem üzücü hem de düşündürücüdür. {{kanit:C}}
 
 ### Uterus Ortamı ve Embriyo Kalitesi
 
@@ -80,7 +80,7 @@ Kimyasal gebelik, genellikle döllenmiş bir yumurtanın rahime tutunmasından s
 
 ### Kimyasal Gebelik Nasıl Meydana Gelir?
 
-Kimyasal gebeliklerin en yaygın nedeni, embriyodaki kromozomal anormalliklerdir. Bu genetik bozukluklar, embriyonun sağlıklı bir şekilde gelişimini engeller. Ayrıca, rahim içi ortamın elverişsiz olması veya hormonal dengesizlikler gibi diğer etkenler de kimyasal gebelik riskini artırabilir.
+Kimyasal gebeliklerin en yaygın nedeni, embriyodaki kromozomal anormalliklerdir. {{kanit:B}} Bu genetik bozukluklar, embriyonun sağlıklı bir şekilde gelişimini engeller. Ayrıca, rahim içi ortamın elverişsiz olması veya hormonal dengesizlikler gibi diğer etkenler de kimyasal gebelik riskini artırabilir.
 
 ### Kimyasal Gebelik Belirtileri Nelerdir?
 
@@ -96,7 +96,7 @@ Kimyasal gebelik sonrası duygusal iyileşme süreci, bireyden bireye değişken
 
 ### Kimyasal Gebelik Sonrası Tekrar Hamile Kalınabilir mi?
 
-Evet, kimyasal gebelik sonrası tekrar hamile kalınabilir. Bu tür bir gebelik genellikle kadının uzun vadeli fertilitesini etkilemez. Ancak, birden fazla kimyasal gebelik yaşayan kadınlar, altta yatan sağlık sorunlarının olup olmadığını belirlemek için bir sağlık uzmanına başvurmalıdır.
+Evet, kimyasal gebelik sonrası tekrar hamile kalınabilir. Bu tür bir gebelik genellikle kadının uzun vadeli fertilitesini etkilemez. {{kanit:B}} Ancak, birden fazla kimyasal gebelik yaşayan kadınlar, altta yatan sağlık sorunlarının olup olmadığını belirlemek için bir sağlık uzmanına başvurmalıdır.
 
 ## Sonuç
 

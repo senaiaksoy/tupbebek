@@ -32,7 +32,7 @@ references:
     doi: "10.1016/j.fertnstert.2020.03.002"
 ---
 
-Açıklanamayan infertilite, standart tanı testlerinde herhangi bir belirgin neden bulunamamasına rağmen gebelik oluşmamasıdır. İnfertilite vakalarının **%10-15**'i bu kategoriye girer. Ancak bu, problemin olmadığı anlamına gelmez; gözardı edilen veya saptanmayan etkenler vardır.
+Açıklanamayan infertilite, standart tanı testlerinde herhangi bir belirgin neden bulunamamasına rağmen gebelik oluşmamasıdır. İnfertilite vakalarının **%10-15**'i bu kategoriye girer. {{kanit:B}} Ancak bu, problemin olmadığı anlamına gelmez; gözardı edilen veya saptanmayan etkenler vardır.
 
 ---
 
@@ -48,7 +48,7 @@ Yumurta sayısı normal bile olsa, kalitesi düşük olabilir. Bu, hormon testle
 
 ### Sperm DNA Fragmentasyonu
 
-Semen analizi normal bile olsa, sperm DNA fragmentasyonu yüksek olabilir. Bu, IUI başarısını azaltır ama IVF/ICSI ile çözülebilir. Özel testler gerekir.
+Semen analizi normal bile olsa, sperm DNA fragmentasyonu yüksek olabilir. Bu, IUI başarısını azaltır ama IVF/ICSI ile çözülebilir. {{kanit:B}} Özel testler gerekir.
 
 ### İmplantasyon Kusurları
 
@@ -62,7 +62,7 @@ Açıklanamayan infertilitede kapsamlı tanı süreci sonrası, tedavi seçenekl
 
 ### Bekleme ve İzlem
 
-İlk 2-3 yıl içinde yaklaşık %50 oranında doğal gebelik sağlanabilir. Nispeten genç ve sabırlı çiftler için uygun olabilir.
+İlk 2-3 yıl içinde yaklaşık %50 oranında doğal gebelik sağlanabilir. {{kanit:C}} Nispeten genç ve sabırlı çiftler için uygun olabilir.
 
 ### Clomiphene/Letrozole + IUI
 
@@ -70,7 +70,7 @@ Over stimülasyonu ve yapay inseminasyon (IUI). Başarı oranı döngü başına
 
 ### IVF/ICSI
 
-Gizli etkenleri ortaya çıkarır. Yumurta kalitesi, embriyo gelişimi ve implantasyon değerlendirilir. En etkili tedavi seçeneğidir.
+Gizli etkenleri ortaya çıkarır. Yumurta kalitesi, embriyo gelişimi ve implantasyon değerlendirilir. En etkili tedavi seçeneğidir. {{kanit:B}}
 
 ### Endometriozis Cerrahisi
 

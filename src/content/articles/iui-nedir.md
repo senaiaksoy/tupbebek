@@ -39,11 +39,11 @@ Uzun yıllardır infertilite alanında çiftlerin ebeveynlik hayallerine kavuşm
 
 #### İntrauterin İnseminasyon Nedir?
 
-İntrauterin inseminasyon, infertilite tedavisinde kullanılan bir yöntemdir ve halk arasında "aşılama" olarak da bilinir. Bu işlemde, özel olarak hazırlanmış sperm doğrudan rahme yerleştirilir. Rahim, bebeğin geliştiği organdır ve IUI, sağlıklı spermlerin fallop tüplerine ulaşma şansını artırarak gebeliği kolaylaştırmayı amaçlar. Doğal yollarla gebe kalmak için spermin vajina, serviks ve rahim boyunca uzun bir yolculuk yapması gerekir. Ancak IUI, bu mesafeyi kısaltır ve spermin yumurtaya ulaşmasını kolaylaştırır. Özellikle sperm kalitesi veya miktarının düşük olduğu durumlarda bu yöntem oldukça etkili olabilir. Ayrıca, IUI'nin temel hedefi, doğal bariyerleri aşarak daha fazla sayıda sağlıklı spermi yumurtaya yakın bir konuma ulaştırmaktır. Bu, döllenme şansını artıran önemli bir avantaj sağlar.
+İntrauterin inseminasyon, infertilite tedavisinde kullanılan bir yöntemdir ve halk arasında "aşılama" olarak da bilinir. Bu işlemde, özel olarak hazırlanmış sperm doğrudan rahme yerleştirilir. Rahim, bebeğin geliştiği organdır ve IUI, sağlıklı spermlerin fallop tüplerine ulaşma şansını artırarak gebeliği kolaylaştırmayı amaçlar. {{kanit:B}} Doğal yollarla gebe kalmak için spermin vajina, serviks ve rahim boyunca uzun bir yolculuk yapması gerekir. Ancak IUI, bu mesafeyi kısaltır ve spermin yumurtaya ulaşmasını kolaylaştırır. Özellikle sperm kalitesi veya miktarının düşük olduğu durumlarda bu yöntem oldukça etkili olabilir. Ayrıca, IUI'nin temel hedefi, doğal bariyerleri aşarak daha fazla sayıda sağlıklı spermi yumurtaya yakın bir konuma ulaştırmaktır. Bu, döllenme şansını artıran önemli bir avantaj sağlar.
 
 #### IUI'nin Avantajları Nelerdir?
 
-IUI, diğer infertilite tedavilerine, özellikle tüp bebeğe (IVF) kıyasla daha az invaziv bir seçenektir. İşlem sırasında anesteziye ihtiyaç duyulmaz ve genellikle hasta aynı gün içinde normal hayatına dönebilir. Ayrıca, IUI doğal döllenme sürecine mümkün olduğunca yakın bir yöntemdir; çünkü fertilizasyon (döllenme) kadın bedeninde, fallop tüplerinde gerçekleşir. Bu, bazı çiftler için hem fiziksel hem de duygusal açıdan daha kabul edilebilir bir seçenek olabilir. IVF gibi daha karmaşık tedavilere geçmeden önce, IUI genellikle ilk basamak tedavi olarak önerilir ve birçok çift için umut verici sonuçlar sunar.
+IUI, diğer infertilite tedavilerine, özellikle tüp bebeğe (IVF) kıyasla daha az invaziv bir seçenektir. {{kanit:B}} İşlem sırasında anesteziye ihtiyaç duyulmaz ve genellikle hasta aynı gün içinde normal hayatına dönebilir. Ayrıca, IUI doğal döllenme sürecine mümkün olduğunca yakın bir yöntemdir; çünkü fertilizasyon (döllenme) kadın bedeninde, fallop tüplerinde gerçekleşir. Bu, bazı çiftler için hem fiziksel hem de duygusal açıdan daha kabul edilebilir bir seçenek olabilir. IVF gibi daha karmaşık tedavilere geçmeden önce, IUI genellikle ilk basamak tedavi olarak önerilir ve birçok çift için umut verici sonuçlar sunar.
 
 #### IUI Kimler İçin Uygundur?
 
@@ -89,7 +89,7 @@ IUI'nin başarı oranları birkaç etkene bağlıdır: kadının yaşı, inferti
 - **35-39 yaş**: %10-15
 - **40+ yaş**: %2-5,4
 
-Açıklanamayan infertilitede oran %7-10 iken, ovülasyon ilaçlarıyla %15-25'e yükselebilir. Hafif erkek kaynaklı durumlarda %16,9 civarındadır. Çoğu gebelik ilk 3-4 döngüde gerçekleşir ve genellikle 6 döngüye kadar denenmesi önerilir. Yaş ilerledikçe başarı oranları düşse de, genç çiftlerde ve uygun koşullarda IUI oldukça etkili bir yöntemdir.
+Açıklanamayan infertilitede oran %7-10 iken, ovülasyon ilaçlarıyla %15-25'e yükselebilir. {{kanit:B}} Hafif erkek kaynaklı durumlarda %16,9 civarındadır. {{kanit:B}} Çoğu gebelik ilk 3-4 döngüde gerçekleşir ve genellikle 6 döngüye kadar denenmesi önerilir. {{kanit:B}} Yaş ilerledikçe başarı oranları düşse de, genç çiftlerde ve uygun koşullarda IUI oldukça etkili bir yöntemdir.
 
 #### IUI'nin Riskleri ve Yan Etkileri
 

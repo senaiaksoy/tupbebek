@@ -33,13 +33,13 @@ videoId: "RRDTPsS8SVc"
 videoTitle: "TESE Sonucu Negatif: Sperm Bulma Umudu Hala Var Mı?"
 ---
 
-Azospermi, yani menide hiç sperm olmaması durumu, çocuk sahibi olmak isteyen birçok çift için sarsıcı bir teşhis olabilir. Ancak modern tıbbın sunduğu **Mikro-TESE** yöntemi, bu durumdaki erkekler için devrim niteliğinde bir çözüm sunmaktadır.
+Azospermi, yani menide hiç sperm olmaması durumu, çocuk sahibi olmak isteyen birçok çift için sarsıcı bir teşhis olabilir. Ancak modern tıbbın sunduğu **Mikro-TESE** yöntemi, bu durumdaki erkekler için devrim niteliğinde bir çözüm sunmaktadır. {{kanit:B}}
 
 ## Azospermi Nedir?
 
 Azospermi, menide canlı veya ölü sperm hücresinin bulunmamasıdır. Tedavi yaklaşımı sorunun tipine göre değişir:
 1. **Tıkanıklığa Bağlı (Obstrüktif) Azospermi:** Sperm üretimi vardır ancak kanallardaki tıkanıklık nedeniyle dışarı çıkamaz.
-2. **Üretim Sorununa Bağlı (Non-obstrüktif) Azospermi:** Doğrudan testislerdeki üretim yetersizliğinden kaynaklanır. Mikro-TESE, özellikle bu grup için altın standarttır.
+2. **Üretim Sorununa Bağlı (Non-obstrüktif) Azospermi:** Doğrudan testislerdeki üretim yetersizliğinden kaynaklanır. Mikro-TESE, özellikle bu grup için altın standarttır. {{kanit:B}}
 
 ## Mikro-TESE Nedir?
 
@@ -52,7 +52,7 @@ Mikro-TESE (Mikrocerrahi Testiküler Sperm Ekstraksiyonu), çok gelişmiş bir m
 
 ## Başarı Oranları
 
-İlk kez yapılan bir Mikro-TESE ameliyatında sperm bulma oranı, altta yatan nedene bağlı olarak genellikle **%40 ile %60** arasındadır. Daha önce başarısız klasik TESE operasyonu geçirmiş hastalarda bile Mikro-TESE ile sperm bulma şansı devam etmektedir.
+İlk kez yapılan bir Mikro-TESE ameliyatında sperm bulma oranı, altta yatan nedene bağlı olarak genellikle **%40 ile %60** arasındadır. {{kanit:B}} Daha önce başarısız klasik TESE operasyonu geçirmiş hastalarda bile Mikro-TESE ile sperm bulma şansı devam etmektedir. {{kanit:B}}
 
 ## Süreç Hakkında
 
@@ -60,5 +60,5 @@ Mikro-TESE (Mikrocerrahi Testiküler Sperm Ekstraksiyonu), çok gelişmiş bir m
 - **İyileşme:** Çoğu hasta aynı gün taburcu olur ve birkaç gün içinde günlük hayatına dönebilir.
 - **Sonuç:** Bulunan sağlıklı spermler, tüp bebek tedavisinde (ICSI) kullanılır veya dondurularak saklanır.
 
-Azospermi bir son değil, doğru yöntem ve uzman bir ekiple aşılabilecek bir engeller zinciridir. Baba olma hayalinize doğru bir adım atmak için uzman görüşü almayı unutmayın.
+Azospermi bir son değil, doğru yöntem ve uzman bir ekiple aşılabilecek bir engeller zinciridir. Baba olma hayalinize doğru bir adım atmak için uzman görüşü almayı unutmayın. {{kanit:C}}
 

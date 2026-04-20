@@ -36,13 +36,13 @@ references:
 
 ## Histeroskopi: Yenilikçi Tanı ve Tedavi Yöntemi
 
-Histeroskopi, minimal invaziv yöntemlerle uterus (rahim) iç yapısının incelenmesi, anormal durumların tespiti ve tedavisi için uygulanan modern bir jinekolojik prosedürdür. Bu teknik sayesinde, rahim içindeki polip, miyom, yapışıklık ve diğer sorunlar hızlı ve etkili bir şekilde tanımlanarak gerekli müdahaleler yapılabilir.
+Histeroskopi, minimal invaziv yöntemlerle uterus (rahim) iç yapısının incelenmesi, anormal durumların tespiti ve tedavisi için uygulanan modern bir jinekolojik prosedürdür. {{kanit:B}} Bu teknik sayesinde, rahim içindeki polip, miyom, yapışıklık ve diğer sorunlar hızlı ve etkili bir şekilde tanımlanarak gerekli müdahaleler yapılabilir. {{kanit:B}}
 
 ---
 
 ## Histeroskopi Nedir?
 
-Histeroskopi, ince ve ışıklı bir teleskop yardımıyla vajinadan rahme ulaşarak, uterusun iç yüzeyinin doğrudan görüntülenmesini sağlayan bir tanı ve tedavi yöntemidir. Prosedür, hastaya minimal rahatsızlık vererek, jinekolojik hastalıkların erken teşhis ve tedavisinde önemli rol oynar. Gelişen teknolojiler sayesinde, işlem artık hem ofis ortamında hem de ameliyathanede güvenle uygulanabilmektedir.
+Histeroskopi, ince ve ışıklı bir teleskop yardımıyla vajinadan rahme ulaşarak, uterusun iç yüzeyinin doğrudan görüntülenmesini sağlayan bir tanı ve tedavi yöntemidir. Prosedür, hastaya minimal rahatsızlık vererek, jinekolojik hastalıkların erken teşhis ve tedavisinde önemli rol oynar. {{kanit:B}} Gelişen teknolojiler sayesinde, işlem artık hem ofis ortamında hem de ameliyathanede güvenle uygulanabilmektedir.
 
 ---
 
@@ -179,4 +179,4 @@ Genellikle 20-30 dakika arasında tamamlanır; işlem süresi hastanın durumuna
 
 ## Sonuç: Histeroskopi ile Sağlıklı Bir Geleceğe
 
-Modern histeroskopi teknikleri, minimal invaziv yapısı ve gelişmiş teknolojik alt yapısı sayesinde jinekolojik sorunların hızlı ve güvenilir bir şekilde tanı konulmasını ve tedavi edilmesini sağlamaktadır. Erken teşhis, doğru müdahale ve kısa iyileşme süresi, hastaların yaşam kalitesini artırmaktadır. Histeroskopi hakkında daha fazla bilgi almak ve randevu oluşturmak için kliniğimizle iletişime geçebilirsiniz.
+Modern histeroskopi teknikleri, minimal invaziv yapısı ve gelişmiş teknolojik alt yapısı sayesinde jinekolojik sorunların hızlı ve güvenilir bir şekilde tanı konulmasını ve tedavi edilmesini sağlamaktadır. {{kanit:B}} Erken teşhis, doğru müdahale ve kısa iyileşme süresi, hastaların yaşam kalitesini artırmaktadır. {{kanit:B}} Histeroskopi hakkında daha fazla bilgi almak ve randevu oluşturmak için kliniğimizle iletişime geçebilirsiniz.

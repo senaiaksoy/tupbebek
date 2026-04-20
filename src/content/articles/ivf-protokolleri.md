@@ -43,7 +43,7 @@ Peki, bu protokoller ne anlama geliyor ve hangisi sizin için uygun olabilir? Ge
 
 #### 1. Uzun Protokol: Kontrollü ve Planlı Bir Başlangıç
 
-Bu protokol, adından da anlaşılacağı gibi biraz daha uzun soluklu ama bir o kadar da planlı bir yaklaşımdır. Genellikle yumurta rezervi iyi olan kadınlarda tercih edilir.
+Bu protokol, adından da anlaşılacağı gibi biraz daha uzun soluklu ama bir o kadar da planlı bir yaklaşımdır. Genellikle yumurta rezervi iyi olan kadınlarda tercih edilir. {{kanit:B}}
 
 **Yolculuk Nasıl İlerler?**
 
@@ -59,7 +59,7 @@ Bu protokol, adından da anlaşılacağı gibi biraz daha uzun soluklu ama bir o
 
 #### 2. Kısa Protokol: Daha Hızlı ve Dinamik Bir Yaklaşım
 
-Bu protokol, tedaviye daha hızlı başlamak isteyen veya yumurtalık rezervi daha hassas olan kadınlar için harika bir alternatiftir.
+Bu protokol, tedaviye daha hızlı başlamak isteyen veya yumurtalık rezervi daha hassas olan kadınlar için harika bir alternatiftir. {{kanit:B}}
 
 **Yolculuk Nasıl İlerler?**
 
@@ -79,7 +79,7 @@ Her zaman "daha fazla" hormon, "daha iyi" sonuç demek değildir. Bazı durumlar
 
 * **Mikrodoz (Flare) Protokolü:** Bu yaklaşım, vücudun kendi hormon üretiminden kısa bir süreliğine "destek alarak" yumurtalıkları uyarmayı hedefler. Özellikle yumurta rezervi azalmış kadınlarda, mevcut potansiyeli en iyi şekilde kullanmak için tasarlanmıştır.
 
-* **Mini IVF (Hafif Uyarım):** "Az ama öz" felsefesine dayanır. Amaç, onlarca yumurta yerine, daha az sayıda ama en kaliteli yumurtaları elde etmektir. Daha az ilaç kullanımı, daha düşük maliyet ve neredeyse sıfır yan etki riski sunar. [Polikistik Over Sendromu (PCOS)](/makaleler/adet-duzensizligi-pcos/) olan veya ileri yaştaki kadınlar için ideal bir seçenek olabilir.
+* **Mini IVF (Hafif Uyarım):** "Az ama öz" felsefesine dayanır. Amaç, onlarca yumurta yerine, daha az sayıda ama en kaliteli yumurtaları elde etmektir. Daha az ilaç kullanımı, daha düşük maliyet ve neredeyse sıfır yan etki riski sunar. {{kanit:B}} [Polikistik Over Sendromu (PCOS)](/makaleler/adet-duzensizligi-pcos/) olan veya ileri yaştaki kadınlar için ideal bir seçenek olabilir.
 
 * **Doğal Siklus (İlaçsız Tüp Bebek):** Bu, tedavinin en "doğal" halidir. Vücudunuzun o ay kendi kendine büyüttüğü o tek ve değerli yumurtayı takip ederek çalışır. Hiçbir uyarıcı hormon kullanılmadığı için yan etkileri ve maliyeti en düşük yöntemdir. Ancak tek bir yumurtaya bağlı olduğu için başarı şansı daha düşüktür ve genellikle birkaç deneme gerektirebilir.
 

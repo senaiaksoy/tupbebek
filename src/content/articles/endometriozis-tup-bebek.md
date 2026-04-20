@@ -35,9 +35,9 @@ videoTitle: "Endometriozis Teşhisi Neden Yıllar Sürüyor? Doğurganlığa Etk
 
 ## Endometriozis ve Kısırlık Tedavisinde 2025 Devrimi: Neden Artık "Önce Tüp Bebek" Diyoruz?
 
-İstanbul'daki kliniğimde, endometriozis teşhisi konmuş kadınlarla konuşurken en çok duyduğum, içimi sızlatan iki soru var: Çocuğum hiç olmayacak mı? ve Hamile kalmak için önce ameliyat mı olmam gerekiyor?. Yıllar boyu bu soruların cevapları tıp dünyasında bile net değildi. Ama 2025'teyiz ve artık bilimsel kanıtlara dayalı, kesin bir cevabımız var. Eğer endometriozis yüzünden çocuk sahibi olmakta zorlanan bir kadınsanız ve ağrılarınız da kontrol altındaysa, kısırlık tedavisinde artık ilk seçeneğimiz **Önce Tüp Bebek (IVF-First) yöntemi.**
+İstanbul'daki kliniğimde, endometriozis teşhisi konmuş kadınlarla konuşurken en çok duyduğum, içimi sızlatan iki soru var: Çocuğum hiç olmayacak mı? ve Hamile kalmak için önce ameliyat mı olmam gerekiyor?. Yıllar boyu bu soruların cevapları tıp dünyasında bile net değildi. Ama 2025'teyiz ve artık bilimsel kanıtlara dayalı, kesin bir cevabımız var. Eğer endometriozis yüzünden çocuk sahibi olmakta zorlanan bir kadınsanız ve ağrılarınız da kontrol altındaysa, kısırlık tedavisinde artık ilk seçeneğimiz **Önce Tüp Bebek (IVF-First) yöntemi.** {{kanit:B}}
 
-Bu büyük değişimin sebebi, 2025'te ilk sonuçları açıklanan ve ortalığı kasıp kavuran SVIDOE araştırması gibi önemli bilimsel çalışmalar. Bu çalışmalar gösterdi ki, endometriozisi olan kadınlarda doğrudan tüp bebek tedavisi, Önce Ameliyat seçeneğine göre **bebek sahibi olma şansını tam iki katına çıkarıyor!**
+Bu büyük değişimin sebebi, 2025'te ilk sonuçları açıklanan ve ortalığı kasıp kavuran SVIDOE araştırması gibi önemli bilimsel çalışmalar. Bu çalışmalar gösterdi ki, endometriozisi olan kadınlarda doğrudan tüp bebek tedavisi, Önce Ameliyat seçeneğine göre **bebek sahibi olma şansını tam iki katına çıkarıyor!** {{kanit:B}}
 
 Eskiden endometriozis ve çikolata kistlerinden kurtulmak için ameliyatın hamilelik için tek yol olduğuna inanırdık. Ama artık bu durumun sadece karın bölgesinde değil, tüm vücudu etkileyen kronik bir rahatsızlık olduğunu biliyoruz. 2025'te geldiğimiz noktada, amacımız artık hastalığı iyileştirmek değil, hastanın asıl isteğine (bebek sahibi olmak veya ağrıdan kurtulmak) odaklanmak.
  Bu yazıda, 2025 itibarıyla endometriozis ve kısırlık tedavisindeki bu devrimi, [Avrupa](https://www.eshre.eu/guideline/endometriosis) ve Amerika'nın en büyük otoritelerinin rehberlerini ve kliniğimizde başarıyı artırmak için uyguladığımız optimize edilmiş tüp bebek protokollerini (PPOS ve mikrobiyota taraması gibi) adım adım açıklayacağım.
@@ -77,7 +77,7 @@ Peki, sonuçlar ne söylüyordu? Rakamlar çok netti:
 
 *Kaynak: SVIDOE 2025 ön sonuçları sentezi.*
 
-Bu tablonun klinik tercümesi basittir: Öncelikli hedefi çocuk sahibi olmak olan bir endometriozis hastası için, doğrudan tüp bebeğe başlamak, ameliyatla vakit kaybetmeye göre eve sağlıklı bir bebek götürme şansını **iki katından fazla (%46 vs %23) artırmaktadır**. Bu kanıt, "Önce Tüp Bebek" yaklaşımını 2025 yılı itibarıyla tartışmasız "altın standart" haline getirmiştir.
+Bu tablonun klinik tercümesi basittir: Öncelikli hedefi çocuk sahibi olmak olan bir endometriozis hastası için, doğrudan tüp bebeğe başlamak, ameliyatla vakit kaybetmeye göre eve sağlıklı bir bebek götürme şansını **iki katından fazla (%46 vs %23) artırmaktadır**. {{kanit:B}} Bu kanıt, "Önce Tüp Bebek" yaklaşımını 2025 yılı itibarıyla tartışmasız "altın standart" haline getirmiştir. {{kanit:B}}
 
 ### Uluslararası Otoriteler Ne Diyor? ESHRE ve ASRM Rehberleri (2022-2025)
 

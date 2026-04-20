@@ -53,11 +53,11 @@ references:
 
 ## PGT-M Nedir?
 
-PGT-M (Preimplantation Genetic Testing for Monogenic disorders), tüp bebek tedavisinde embriyoların **bilinen bir tek gen hastalığı** açısından taranmasını sağlayan genetik testtir. Eski adıyla PGD (Preimplantation Genetic Diagnosis) olarak da bilinir.
+PGT-M (Preimplantation Genetic Testing for Monogenic disorders), tüp bebek tedavisinde embriyoların **bilinen bir tek gen hastalığı** açısından taranmasını sağlayan genetik testtir. Eski adıyla PGD (Preimplantation Genetic Diagnosis) olarak da bilinir. {{kanit:B}}
 
-Bu test, anne ve/veya babada daha önceden tespit edilmiş bir genetik hastalık veya taşıyıcılık varsa uygulanır. Amaç, hastalığın embriyoya geçip geçmediğini **transfer öncesinde** belirlemek ve yalnızca hastalıktan etkilenmemiş embriyoları seçerek sağlıklı bir gebelik elde etmektir.
+Bu test, anne ve/veya babada daha önceden tespit edilmiş bir genetik hastalık veya taşıyıcılık varsa uygulanır. Amaç, hastalığın embriyoya geçip geçmediğini **transfer öncesinde** belirlemek ve yalnızca hastalıktan etkilenmemiş embriyoları seçerek sağlıklı bir gebelik elde etmektir. {{kanit:B}}
 
-PGT-M, [PGT-A (anöploidi taraması)](/makaleler/genetik-testler) gibi kromozom sayısı anomalilerini taramaz. PGT-M spesifik olarak **tek bir gen üzerindeki mutasyonu** hedefler.
+PGT-M, [PGT-A (anöploidi taraması)](/makaleler/genetik-testler) gibi kromozom sayısı anomalilerini taramaz. PGT-M spesifik olarak **tek bir gen üzerindeki mutasyonu** hedefler. {{kanit:B}}
 
 ---
 
@@ -189,7 +189,7 @@ Türkiye'de PGT-M uygulaması, T.C. Sağlık Bakanlığı ÜYTE Yönetmeliği ç
 Biyopsi embriyonun dış tabakasından (trofektoderm) yapılır; bebeğe dönüşecek iç hücre kitlesine dokunulmaz. Embriyo hasar riski %1'in altındadır. Modern biyopsi teknikleri güvenli kabul edilmektedir.
 
 **PGT-M ne kadar güvenilirdir?**
-PGT-M'nin doğruluk oranı %98'in üzerindedir. Ancak hiçbir test %100 garanti vermez. Bu nedenle PGT-M sonrası başlayan gebeliklerde de doktorunuz gerekli görürse ek prenatal tarama testleri önerebilir.
+PGT-M'nin doğruluk oranı %98'in üzerindedir. {{kanit:B}} Ancak hiçbir test %100 garanti vermez. Bu nedenle PGT-M sonrası başlayan gebeliklerde de doktorunuz gerekli görürse ek prenatal tarama testleri önerebilir.
 
 **PGT-M ile PGT-A arasındaki fark nedir?**
 [PGT-A](/makaleler/genetik-testler), embriyodaki kromozom sayısı anomalilerini (Down sendromu gibi) tarar. PGT-M ise belirli bir tek gen hastalığını (talasemi, SMA gibi) hedefler. İkisi birlikte uygulanabilir.
@@ -204,7 +204,7 @@ Genetik danışman veya doktorunuz, aile öyküsüne göre taşıyıcılık test
 
 ## Sonuç
 
-PGT-M, genetik hastalık taşıyıcısı olan çiftlere sağlıklı biyolojik çocuk sahibi olma şansı sunan güçlü bir teknolojdir. Tek gen hastalığının embriyoya geçip geçmediğini transfer öncesinde belirleyerek, hastalığın gelecek nesillere aktarılma riskini büyük ölçüde azaltır.
+PGT-M, genetik hastalık taşıyıcısı olan çiftlere sağlıklı biyolojik çocuk sahibi olma şansı sunan güçlü bir teknolojdir. Tek gen hastalığının embriyoya geçip geçmediğini transfer öncesinde belirleyerek, hastalığın gelecek nesillere aktarılma riskini büyük ölçüde azaltır. {{kanit:B}}
 
 Tedavi öncesi hazırlık süreci (prob tasarımı) zaman gerektirdiğinden, erken planlama önemlidir. Ailenizde bilinen bir genetik hastalık varsa veya taşıyıcılık konusunda endişeniz varsa, doktorunuz ve genetik danışmanınız size en uygun yaklaşımı belirleyecektir. Genetik testler hakkında detaylı bilgi için [PGT rehberimizi](/makaleler/genetik-testler) inceleyebilirsiniz.
 

@@ -33,7 +33,7 @@ references:
 
 ## Hidrosalpinx ve Kısırlık
 
-> *Ana Mesaj: Hidrosalpinx, Fallop tüplerinde sıvı birikmesine bağlı olarak oluşan bir blokajdır ve kadınlarda kısırlığın önemli nedenlerinden biridir. Uygun tanı, tedavi ve gerekirse yardımcı üreme teknikleriyle başarılı bir gebelik şansı önemli ölçüde artırılabilir.*
+> *Ana Mesaj: Hidrosalpinx, Fallop tüplerinde sıvı birikmesine bağlı olarak oluşan bir blokajdır ve kadınlarda kısırlığın önemli nedenlerinden biridir. {{kanit:A}} Uygun tanı, tedavi ve gerekirse yardımcı üreme teknikleriyle başarılı bir gebelik şansı önemli ölçüde artırılabilir. {{kanit:A}}*
 
 ---
 
@@ -63,7 +63,7 @@ Pek çok kadında hydrosalpinx uzun süre belirti vermeyebilir; bazen kısırlı
 
 ### 2.2 Endometrium Üzerindeki Olumsuz Etki
 
-Tüp içindeki sıvının rahim içine sızması, endometriyal reseptiviteyi (ör. β-integrin, LIF, HOXA10 mRNA ifadeleri) bozarak embriyonun tutunmasını güçleştirir ve düşük riskini artırır.
+Tüp içindeki sıvının rahim içine sızması, endometriyal reseptiviteyi (ör. β-integrin, LIF, HOXA10 mRNA ifadeleri) bozarak embriyonun tutunmasını güçleştirir ve düşük riskini artırır. {{kanit:A}}
 
 ### 2.3 Dış Gebelik Riski
 
@@ -109,7 +109,7 @@ Minimal invaziv cerrahi tekniğiyle karın içine kamera yerleştirilir; hem tan
 
 ### 5.1 Cerrahi Yöntemler
 
-- Salpenjektomi: Hasarlı Fallop tüpünün (ya da her ikisinin) alınmasıdır. Tüp Bebek (IVF) tedavisinden önce sıkça tercih edilir, çünkü hydrosalpinx varlığı IVF başarı oranlarını ciddi ölçüde düşürebilir.
+- Salpenjektomi: Hasarlı Fallop tüpünün (ya da her ikisinin) alınmasıdır. Tüp Bebek (IVF) tedavisinden önce sıkça tercih edilir, çünkü hydrosalpinx varlığı IVF başarı oranlarını ciddi ölçüde düşürebilir. {{kanit:A}}
 - Salpingostomi: Tıkalı tüpte bir açıklık oluşturularak sıvının dışarı atılması sağlanır. Tekrar hydrosalpinx oluşması riski mevcuttur.
 - Proksimal Tubal Oklüzyon: Tüpün rahme yakın kısmının kapatılmasıyla, tüpteki sıvının rahim içine akması engellenir.
 
@@ -161,4 +161,4 @@ görüldüğünü göstermiştir.
 
 *Hidrosalpinx, kısırlığın başlıca nedenlerinden biri olsa da aşılmaz bir engel değildir.*
 
-Erken tanı, uygun tedavi (cerrahi veya alternatif yöntemler) ve gerektiğinde Tüp Bebek tedavisi ile başarılı gebelik şansını artırmak mümkündür. Her vakanın kendine özgü dinamikleri olduğundan, bir uzmanla birlikte kişiye özel bir yol haritası belirlemek önemlidir. Tedavi sürecinde destek grupları ve bilgi kaynaklarından yararlanmak, zihinsel ve duygusal açıdan da önemli faydalar sunar. Eğer hidrosalpinx veya kısırlık şüpheniz varsa, erken değerlendirme ve müdahale ile umut verici sonuçlar elde edilebilir.
+Erken tanı, uygun tedavi (cerrahi veya alternatif yöntemler) ve gerektiğinde Tüp Bebek tedavisi ile başarılı gebelik şansını artırmak mümkündür. {{kanit:A}} Her vakanın kendine özgü dinamikleri olduğundan, bir uzmanla birlikte kişiye özel bir yol haritası belirlemek önemlidir. Tedavi sürecinde destek grupları ve bilgi kaynaklarından yararlanmak, zihinsel ve duygusal açıdan da önemli faydalar sunar. Eğer hidrosalpinx veya kısırlık şüpheniz varsa, erken değerlendirme ve müdahale ile umut verici sonuçlar elde edilebilir.

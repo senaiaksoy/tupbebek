@@ -31,7 +31,7 @@ references:
     doi: "10.1016/j.rbmo.2013.11.013"
 ---
 
-Tüp bebek tedavisinde negatif sonuç almak, çiftler için en zorlu deneyimlerden biridir. Ancak modern üreme tıbbında, her başarısız deneme bir sonraki adım için kritik veriler sunar.
+Tüp bebek tedavisinde negatif sonuç almak, çiftler için en zorlu deneyimlerden biridir. Ancak modern üreme tıbbında, her başarısız deneme bir sonraki adım için kritik veriler sunar. {{kanit:B}}
 
 ### Neden Olmadı? Bilimsel Sorgulama
 Negatif bir sonuçtan sonra sorulması gereken temel medikal sorular şunlardır:
@@ -40,7 +40,7 @@ Negatif bir sonuçtan sonra sorulması gereken temel medikal sorular şunlardır
 3. **Protokol Uyumu:** Kullanılan ilaç dozları ve zamanlama hastanın biyolojik ritmine uygun muydu?
 
 ### Psikolojik İyileşme Süreci
-Tıbbi veriler kadar, duygusal sağlığın korunması da bir sonraki denemenin başarısını doğrudan etkiler. Bu süreçte "yas" tutmak doğaldır, ancak "umutsuzluk" bilimin dışındadır.
+Tıbbi veriler kadar, duygusal sağlığın korunması da bir sonraki denemenin başarısını doğrudan etkiler. {{kanit:B}} Bu süreçte "yas" tutmak doğaldır, ancak "umutsuzluk" bilimin dışındadır.
 
 ### Yeni Strateji: Kişiselleştirilmiş Yaklaşım
 Başarısızlık sonrası biz ne yapıyoruz?
