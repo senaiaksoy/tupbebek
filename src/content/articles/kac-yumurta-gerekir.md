@@ -56,13 +56,13 @@ references:
 
 Tüp bebek tedavisinde amaç, kadının yumurtalıklarından birden fazla yumurta elde edip bunları laboratuvar ortamında sperm ile dölleyerek embriyolar oluşturmaktır.
 **Peki neden tek yumurta değil de birden fazla?**
-Çünkü her yumurta bir embriyo adayıdır ve ne kadar çok *sağlıklı* embriyo elde edebilirsek, gebelik şansımız o kadar artar. Basitçe söylemek gerekirse, **yumurta sayısı arttıkça seçebileceğimiz embriyo sayısı da artar**, bu da başarı ihtimalini yükseltir ([ASRM Practice Guidance](https://www.asrm.org/practice-guidance/practice-committee-documents/)).
+Çünkü her yumurta bir embriyo adayıdır ve ne kadar çok *sağlıklı* embriyo elde edebilirsek, gebelik şansımız o kadar artar. Basitçe söylemek gerekirse, **yumurta sayısı arttıkça seçebileceğimiz embriyo sayısı da artar**, bu da başarı ihtimalini yükseltir ([ASRM Practice Guidance](https://www.asrm.org/practice-guidance/practice-committee-documents/)). {{kanit:B}}
 
-Yeni araştırmalar da bu içgüdüsel yaklaşımı doğruluyor: Çok sayıda yumurta toplanması, daha fazla **kromozomal olarak normal (sağlıklı)** embriyo elde etme şansı anlamına gelir ve bu da sonunda canlı doğum oranlarını artırır. Özellikle ileri yaştaki kadınlarda, sağlıklı embriyo elde edebilmek için mümkün olduğunca fazla yumurta toplanması gerekebiliyor.
+Yeni araştırmalar da bu içgüdüsel yaklaşımı doğruluyor: Çok sayıda yumurta toplanması, daha fazla **kromozomal olarak normal (sağlıklı)** embriyo elde etme şansı anlamına gelir ve bu da sonunda canlı doğum oranlarını artırır. {{kanit:B}} Özellikle ileri yaştaki kadınlarda, sağlıklı embriyo elde edebilmek için mümkün olduğunca fazla yumurta toplanması gerekebiliyor. {{kanit:B}}
 
 Burada şunu gerçekçi bir şekilde belirtmek önemli: Her elde edilen yumurta kaliteli olmayabilir ve her embriyo da rahime tutunup sağlıklı bir gebelikle sonuçlanmayabilir.
 Tüp bebek bir **ihtimaller oyunu** gibidir; daha çok top ile oynarsanız gol atma şansınız yükselir.
-Bu yüzden, genç ve yumurtalık rezervi iyi bir hastamızdan örneğin 10-15 civarında olgun yumurta topladığımızda, içimiz biraz daha rahattır. Hatta literatürde *"sihirli sayı 15"* diye anılan bir kavram bile var ([ESHRE, 2023](https://www.eshre.eu/Guidelines-and-Legal/Guidelines/Ovarian-Stimulation-in-IVF-ICSI)).
+Bu yüzden, genç ve yumurtalık rezervi iyi bir hastamızdan örneğin 10-15 civarında olgun yumurta topladığımızda, içimiz biraz daha rahattır. Hatta literatürde *"sihirli sayı 15"* diye anılan bir kavram bile var ([ESHRE, 2023](https://www.eshre.eu/Guidelines-and-Legal/Guidelines/Ovarian-Stimulation-in-IVF-ICSI)). {{kanit:B}}
 
 ---
 
@@ -93,8 +93,8 @@ Gerçekten de, tüp bebek tedavisinde sayısız kalitesiz yumurtadan ziyade, **k
 ## Tüp Bebekte Kaç Yumurta Gerekir?
 
 Her hastada hedeflenen yumurta sayısı farklıdır.
-**Genel ortalama 8–15 arası yumurta** gebelik şansını anlamlı şekilde artırır.
-15 üzeri sayılarda başarı plato çizerken, 20'nin üzerinde riskler devreye girer.
+**Genel ortalama 8–15 arası yumurta** gebelik şansını anlamlı şekilde artırır. {{kanit:B}}
+15 üzeri sayılarda başarı plato çizerken, 20'nin üzerinde riskler devreye girer. {{kanit:B}}
 
 Daha fazla bilgi için:
 🔗 **[Tüp Bebek Tedavisinin Aşamaları](/tup-bebek-asamalari/)**
@@ -118,7 +118,7 @@ Ayrıca DHEA gibi takviyeler düşük rezervli hastalarda faydalı olabilir.
 Daha fazla bilgi için 👉 [IVF Tedavisinde Kullanılan Protokoller](/makaleler/ivf-protokolleri/).
 
 **Soru:** Çok fazla yumurta toplanırsa zararı olur mu?
-**Cevap:** 20 üzeri yumurta toplandığında **OHSS riski** artabilir ([ESHRE Guideline](https://www.eshre.eu/Guidelines-and-Legal/Guidelines/Ovarian-Stimulation-in-IVF-ICSI)).
+**Cevap:** 20 üzeri yumurta toplandığında **OHSS riski** artabilir ([ESHRE Guideline](https://www.eshre.eu/Guidelines-and-Legal/Guidelines/Ovarian-Stimulation-in-IVF-ICSI)). {{kanit:B}}
 Detaylı bilgi için 👉 [Yumurtalıkların Aşırı Uyarılması (OHSS)](/yumurtaliklarin-asiri-uyarilmasi/)
 
 ---
@@ -143,4 +143,3 @@ Ve unutmayın:
 
 **Yazar:** tupbebek.com Yayın Kurulu
 **Yayın Tarihi:** 8 Ekim 2025
-

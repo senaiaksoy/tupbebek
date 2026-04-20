@@ -39,17 +39,16 @@ Beta-hCG, embriyonun rahime yerleşmesiyle (implantasyon) birlikte üretilmeye b
 
 ## Test Sonuçlarını Yorumlamak
 
-IVF tedavisi sonrası ilk test genellikle transferden **10-12 gün sonra** yapılır.
+IVF tedavisi sonrası ilk test genellikle transferden **10-12 gün sonra** yapılır. {{kanit:B}}
 
-- **İdeal Başlangıç Değeri:** İlk testte 100 mIU/ml ve üzeri değerler genellikle sağlıklı bir başlangıcın işaretidir.
-- **Takip ve Artış:** Tek bir değerden ziyade, bu değerin zaman içindeki artışı daha kritiktir. Sağlıklı bir gebelikte beta-hCG seviyesi her 48-72 saatte bir yaklaşık olarak iki katına çıkar.
-- **Sağlıklı İlerleme:** Döllenmeden yaklaşık 17 gün sonra değerin 200 mIU/ml üzerinde olması olumlu bir göstergedir.
+- **İdeal Başlangıç Değeri:** İlk testte 100 mIU/ml ve üzeri değerler genellikle sağlıklı bir başlangıcın işaretidir. {{kanit:C}}
+- **Takip ve Artış:** Tek bir değerden ziyade, bu değerin zaman içindeki artışı daha kritiktir. Sağlıklı bir gebelikte beta-hCG seviyesi her 48-72 saatte bir yaklaşık olarak iki katına çıkar. {{kanit:B}}
+- **Sağlıklı İlerleme:** Döllenmeden yaklaşık 17 gün sonra değerin 200 mIU/ml üzerinde olması olumlu bir göstergedir. {{kanit:C}}
 
 ## Farklı Durumlar ve Anlamları
 
-- **Düşük Seviyeler:** Beklenenden düşük veya yavaş artan değerler; biyokimyasal gebelik, dış gebelik veya erken düşük riskini işaret edebilir.
-- **Yüksek Seviyeler:** Beklenenden çok daha hızlı artan değerler genellikle **çoğul gebelik** (ikiz, üçüz) habercisidir.
+- **Düşük Seviyeler:** Beklenenden düşük veya yavaş artan değerler; biyokimyasal gebelik, dış gebelik veya erken düşük riskini işaret edebilir. {{kanit:B}}
+- **Yüksek Seviyeler:** Beklenenden çok daha hızlı artan değerler genellikle **çoğul gebelik** (ikiz, üçüz) habercisidir. {{kanit:C}}
 - **Zirve Noktası:** hCG seviyeleri gebeliğin 8-11. haftalarında zirveye ulaşır ve sonrasında kademeli olarak stabilizese olur.
 
-Beta-hCG değerleri kişiden kişiye ve gebelikten gebeliğe büyük farklılıklar gösterebilir. Bu nedenle sonuçları tek başına değerlendirmek yerine, mutlaka doktorunuzun yorumu ve ilerleyen süreçte yapılacak ultrason kontrolleri ile birleştirmek en sağlıklı yaklaşımdır.
-
+Beta-hCG değerleri kişiden kişiye ve gebelikten gebeliğe büyük farklılıklar gösterebilir. Bu nedenle sonuçları tek başına değerlendirmek yerine, mutlaka doktorunuzun yorumu ve ilerleyen süreçte yapılacak ultrason kontrolleri ile birleştirmek en sağlıklı yaklaşımdır. {{kanit:B}}

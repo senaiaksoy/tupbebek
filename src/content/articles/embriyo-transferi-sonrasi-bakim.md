@@ -45,8 +45,8 @@ Embriyo transferi, genellikle yumurta toplama işleminden üç ila beş gün son
 
 Embriyo transferi sonrasında en çok merak edilen konulardan biri hastaların ne kadar dinlenmesi gerektiğidir.
 
-- **Dinlenme:** Geçmişte önerilen tam yatak istirahati, yeni araştırmalara göre gebelik oranlarını artırmada etkili değildir. Transfer sonrası kısa süreli dinlenme (15-30 dakika) önerilmekte, ancak uzun süreli yatak istirahati önerilmemektedir. Hastaların hafif günlük aktivitelerle normal kan dolaşımını sürdürmeleri gerekirken, aşırı yorucu hareketlerden kaçınmaları önerilir.
-- **Egzersiz:** Embriyo transferi sonrası iki haftalık bekleme süresinde, ağır fiziksel aktiviteler, ağır kaldırma hareketleri ve yüksek etkili egzersizlerden uzak durulmalıdır. Karın üzerinde baskı yaratan yoğun egzersizler, embriyonun yerleşimini olumsuz etkileyebilir. Yürüyüş gibi hafif egzersizler ise güvenlidir ve genel sağlık durumunu destekler.
+- **Dinlenme:** Geçmişte önerilen tam yatak istirahati, yeni araştırmalara göre gebelik oranlarını artırmada etkili değildir. {{kanit:A}} Transfer sonrası kısa süreli dinlenme (15-30 dakika) önerilmekte, ancak uzun süreli yatak istirahati önerilmemektedir. {{kanit:A}} Hastaların hafif günlük aktivitelerle normal kan dolaşımını sürdürmeleri gerekirken, aşırı yorucu hareketlerden kaçınmaları önerilir. {{kanit:B}}
+- **Egzersiz:** Embriyo transferi sonrası iki haftalık bekleme süresinde, ağır fiziksel aktiviteler, ağır kaldırma hareketleri ve yüksek etkili egzersizlerden uzak durulmalıdır. {{kanit:B}} Karın üzerinde baskı yaratan yoğun egzersizler, embriyonun yerleşimini olumsuz etkileyebilir. Yürüyüş gibi hafif egzersizler ise güvenlidir ve genel sağlık durumunu destekler. {{kanit:B}}
 
 ### Beslenme ve Diyet
 
@@ -61,23 +61,23 @@ Embriyo transferi sonrasında en çok merak edilen konulardan biri hastaların n
 
 Embriyo transferi sonrası hormonal destek, IVF tedavisinin ayrılmaz bir parçasıdır ve implantasyon ile embriyo gelişimini destekler.
 
-- **Progesteron Desteği:** Progesteron, rahim duvarının korunması ve erken gebeliğin desteklenmesi için hayati öneme sahiptir. Luteal fazda genellikle enjeksiyonlar, vajinal fitiller veya oral tabletler şeklinde uygulanır. Tedaviye sadık kalmak çok önemlidir; çünkü yetersiz progesteron seviyeleri, implantasyonun başarısız olmasına veya erken düşüğe yol açabilir.
+- **Progesteron Desteği:** Progesteron, rahim duvarının korunması ve erken gebeliğin desteklenmesi için hayati öneme sahiptir. {{kanit:A}} Luteal fazda genellikle enjeksiyonlar, vajinal fitiller veya oral tabletler şeklinde uygulanır. Tedaviye sadık kalmak çok önemlidir; çünkü yetersiz progesteron seviyeleri, implantasyonun başarısız olmasına veya erken düşüğe yol açabilir. {{kanit:A}}
 - **Diğer İlaçlar:** Kişiye özel ihtiyaçlara göre, östrojen, aspirin veya kan sulandırıcılar gibi ek ilaçlar reçete edilebilir. İlaçlar konusunda doktorunuzun önerilerine uymak ve herhangi bir değişiklik yapmadan önce mutlaka doktorunuza danışmak önemlidir.
 
 ## Stresle Nasıl Başa Çıkılır
 
 İki haftalık bekleme süresi, herkes için oldukça gergin ve duygusal bir dönem olabilir. Stresle doğru şekilde başa çıkmak büyük önem taşır çünkü yoğun stres, implantasyon sürecini olumsuz etkileyebilir.
 
-- **Rahatlama Teknikleri:** Derin nefes almak, meditasyon yapmak ve yoga gibi aktiviteler stressiz bir hayat sürmek için birebirdir. Tüp bebek tedavisine eşlik eden akupunktur da genel gevşemeyi destekleyebilir ve rahme olan kan akışını iyileştirebilir, ancak bu yöntemin etkinliğini göstermek için daha fazla araştırmaya ihtiyaç vardır.
+- **Rahatlama Teknikleri:** Derin nefes almak, meditasyon yapmak ve yoga gibi aktiviteler stressiz bir hayat sürmek için birebirdir. Tüp bebek tedavisine eşlik eden akupunktur da genel gevşemeyi destekleyebilir ve rahme olan kan akışını iyileştirebilir, ancak bu yöntemin etkinliğini göstermek için daha fazla araştırmaya ihtiyaç vardır. {{kanit:C}}
 - **Destek Ağları:** Partneriniz, aileniz, arkadaşlarınız veya destek gruplarından alacağınız duygusal destek, bu süreçte paha biçilemezdir. Kaygılarınızı veya depresyonunuzu yönetmekte zorlanıyorsanız, profesyonel bir danışman ya da terapistten yardım almak faydalı olabilir.
 
 ### Zararlı Maddelerden Uzak Durmak
 
 Çeşitli maddeler ve çevresel etkenlere maruz kalmak, implantasyon ve erken gebeliği tehlikeye atabilir. Hastalara şu önerilerde bulunulmaktadır:
 
-- **Sigara:** Sigara içmenin, doğurganlığı azalttığı ve düşük yapma riskini artırdığı bilinmektedir. Tüp bebek tedavisine başlamadan önce sigarayı bırakmanız kesinlikle önerilir.
+- **Sigara:** Sigara içmenin, doğurganlığı azalttığı ve düşük yapma riskini artırdığı bilinmektedir. {{kanit:B}} Tüp bebek tedavisine başlamadan önce sigarayı bırakmanız kesinlikle önerilir. {{kanit:B}}
 - **Alkol:** Alkol, transfer sonrası dönemde kesinlikle kaçınılması gereken bir maddedir, çünkü implantasyon sürecini ve erken embriyo gelişimini olumsuz etkileyebilir.
-- **Kafein:** Orta düzeyde kafein tüketimi genellikle güvenlidir, ancak aşırı miktarda (günde 200-300 mg'dan fazla) tüketim düşük doğurganlık ve yüksek düşük riski ile ilişkilendirilir. İki haftalık bekleme süresinde kafein tüketiminizi sınırlamanız önerilir.
+- **Kafein:** Orta düzeyde kafein tüketimi genellikle güvenlidir, ancak aşırı miktarda (günde 200-300 mg'dan fazla) tüketim düşük doğurganlık ve yüksek düşük riski ile ilişkilendirilir. {{kanit:C}} İki haftalık bekleme süresinde kafein tüketiminizi sınırlamanız önerilir. {{kanit:C}}
 - **Çevresel Toksinler:** Pestisitler, kimyasal maddeler ve kirleticilere maruz kalmaktan kaçınmalısınız. Bu maddeler hormon dengenizi bozabilir ve gelişmekte olan embriyoya zarar verebilir.
 
 ## Takip ve Sonrası Bakım

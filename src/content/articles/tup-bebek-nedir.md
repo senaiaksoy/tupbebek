@@ -61,7 +61,7 @@ Tüp bebek tedavisi, yumurtalıkların uyarılması, yumurta ve sperm hücreleri
 
 ### Neden Tercih Edilir?
 
-Tüp bebek tedavisi, doğal yollarla gebelik elde edemeyen çiftler için etkili bir çözüm sunar. Özellikle kısırlığın nedeni açıklanamıyorsa veya diğer tedavi yöntemleri başarısız olmuşsa, tüp bebek tedavisi başarı şansını artırır.
+Tüp bebek tedavisi, doğal yollarla gebelik elde edemeyen çiftler için etkili bir çözüm sunar. Özellikle kısırlığın nedeni açıklanamıyorsa veya diğer tedavi yöntemleri başarısız olmuşsa, tüp bebek tedavisi başarı şansını artırır. {{kanit:B}}
 
 ---
 
@@ -134,10 +134,10 @@ Tüp bebek tedavisi, doğal yollarla gebelik elde edemeyen çiftler için etkili
 
 ### Yaşa Göre Başarı Oranları
 
-- **20-30 Yaş Arası Kadınlar:** Başarı oranları %50-60 civarındadır.
-- **31-35 Yaş Arası Kadınlar:** Başarı oranları %40-50'ye düşer.
-- **36-40 Yaş Arası Kadınlar:** Başarı oranları %30-40 aralığındadır.
-- **41 Yaş ve Üzeri Kadınlar:** Başarı oranları %10-20'ye kadar düşebilir.
+- **20-30 Yaş Arası Kadınlar:** Başarı oranları %50-60 civarındadır. {{kanit:C}}
+- **31-35 Yaş Arası Kadınlar:** Başarı oranları %40-50'ye düşer. {{kanit:C}}
+- **36-40 Yaş Arası Kadınlar:** Başarı oranları %30-40 aralığındadır. {{kanit:C}}
+- **41 Yaş ve Üzeri Kadınlar:** Başarı oranları %10-20'ye kadar düşebilir. {{kanit:C}}
 
 ### Başarıyı Etkileyen Etkenler
 
@@ -163,7 +163,7 @@ Tedavi sürecinin her aşaması tıbbi olarak kontrol altındadır. Bu sayede, o
 
 #### 3. Genetik Hastalıkların Önlenmesi
 
-**Preimplantasyon Genetik Tanı (PGD)** ile genetik hastalıkların embriyoya geçişi engellenebilir. Bu, sağlıklı bir bebeğe sahip olma ihtimalini artırır.
+**Preimplantasyon Genetik Tanı (PGD)** ile genetik hastalıkların embriyoya geçişi engellenebilir. Bu, sağlıklı bir bebeğe sahip olma ihtimalini artırır. {{kanit:B}}
 
 ### Dezavantajları
 
@@ -177,7 +177,7 @@ Tedavi süreci stresli ve duygusal olarak yorucu olabilir. Başarısız denemele
 
 #### 3. Yan Etkiler ve Riskler
 
-Kullanılan ilaçlar ve yapılan işlemler, bazı yan etkilere ve risklere yol açabilir. Bunlar arasında **Ovarian Hiperstimülasyon Sendromu (OHSS)**, enfeksiyon ve çoklu gebelik riski sayılabilir.
+Kullanılan ilaçlar ve yapılan işlemler, bazı yan etkilere ve risklere yol açabilir. Bunlar arasında **Ovarian Hiperstimülasyon Sendromu (OHSS)**, enfeksiyon ve çoklu gebelik riski sayılabilir. {{kanit:B}}
 
 ---
 
@@ -216,7 +216,7 @@ Kullanılan ilaçlar ve yapılan işlemler, bazı yan etkilere ve risklere yol a
 
 ### 5. Doğumsal Anomaliler
 
-- Genel popülasyona göre hafif bir artış olsa da, risk düşüktür.
+- Genel popülasyona göre hafif bir artış olsa da, risk düşüktür. {{kanit:C}}
 - **Takip:** Düzenli prenatal kontroller ile anomali taramaları yapılır.
 
 ---
