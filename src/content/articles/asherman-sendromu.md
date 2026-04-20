@@ -31,7 +31,7 @@ references:
     doi: "10.1007/s00404-009-1262-z"
 ---
 
-Asherman Sendromu, rahim iç tabakasında (endometriumda) oluşan yapışıklıkların neden olduğu bir sağlık sorunudur. Bu durum genellikle adet düzensizlikleri, kısırlık veya tekrarlayan düşüklerle kendini belli eder.
+Asherman Sendromu, rahim iç tabakasında (endometriumda) oluşan yapışıklıkların neden olduğu bir sağlık sorunudur. {{kanit:B}} Bu durum genellikle adet düzensizlikleri, kısırlık veya tekrarlayan düşüklerle kendini belli eder.
 
 ## Asherman Sendromu Nedir?
 
@@ -54,7 +54,7 @@ Yapışıklığın şiddetine göre şu belirtiler görülebilir:
 
 ## Teşhis ve Tedavi
 
-Teşhis aşamasında altın standart **Histeroskopi**dir. Bu yöntemle rahim içi doğrudan kamera ile görüntülenir. Ayrıca HSG (Rahim Filmi) ve ultrasonografiden de faydalanılır.
+Teşhis aşamasında altın standart **Histeroskopi**dir. {{kanit:B}} Bu yöntemle rahim içi doğrudan kamera ile görüntülenir. Ayrıca HSG (Rahim Filmi) ve ultrasonografiden de faydalanılır.
 
 **Tedavi Seçenekleri:**
 1. **Histeroskopik Cerrahi:** Yapışıklıklar cerrahi olarak açılır ve rahim boşluğu restore edilir.

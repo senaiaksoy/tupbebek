@@ -31,7 +31,7 @@ references:
     doi: "10.1155/2014/735871"
 ---
 
-Amenore, adet görmeme durumu olarak tanımlanır ve üreme çağındaki bir kadında üç adet döngüsünden uzun süreli (genellikle üç aydan fazla) adet görmeme halidir. Bu durum, kendisi bir hastalık olmaktan ziyade altta yatan bir sağlık sorununun belirtisi olabilir.
+Amenore, adet görmeme durumu olarak tanımlanır ve üreme çağındaki bir kadında üç adet döngüsünden uzun süreli (genellikle üç aydan fazla) adet görmeme halidir. {{kanit:B}} Bu durum, kendisi bir hastalık olmaktan ziyade altta yatan bir sağlık sorununun belirtisi olabilir.
 
 ## Amenore Türleri
 
@@ -68,7 +68,7 @@ Adet görmemenin yanı sıra, altta yatan nedene bağlı olarak şu belirtiler e
 - Aşırı tüylenme veya saç dökülmesi
 
 **Sağlık Riskleri:**
-Tedavi edilmeyen amenore; kısırlık, östrojen eksikliğine bağlı osteoporoz (kemik erimesi) ve kardiyovasküler hastalık risklerinde artışa yol açabilir.
+Tedavi edilmeyen amenore; kısırlık, östrojen eksikliğine bağlı osteoporoz (kemik erimesi) ve kardiyovasküler hastalık risklerinde artışa yol açabilir. {{kanit:B}}
 
 ## Tedavi ve Önleme
 

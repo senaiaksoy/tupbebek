@@ -28,7 +28,7 @@ imageAlt: "EmbryoScope ve yapay zekâ destekli embriyo seçimini temsil eden med
 
 ## Özet
 
-**EmbryoScope (sürekli embriyo izleme sistemi)**, tüp bebek laboratuvarında embriyoların dışarı çıkarılmadan 24 saat boyunca kesintisiz takip edilmesini sağlayan gelişmiş bir inkübatör sistemidir. 2024–2025 yıllarında yapılan büyük araştırmalar, bu teknolojinin genel hasta grubunda gebelik oranını tek başına mucizevi şekilde artırmadığını göstermiştir. Ancak ileri yaştaki kadınlar, tekrarlayan başarısız denemeler ve endometriozis gibi zor vakalarda belirgin bir fark yarattığı kanıtlanmıştır. Yapay zekâ ile birleştiğinde embriyo değerlendirmesini saniyeler içinde yapabilen bu sistem, modern tüp bebek tedavisinin vazgeçilmez bir parçası hâline gelmiştir.
+**EmbryoScope (sürekli embriyo izleme sistemi)**, tüp bebek laboratuvarında embriyoların dışarı çıkarılmadan 24 saat boyunca kesintisiz takip edilmesini sağlayan gelişmiş bir inkübatör sistemidir. 2024–2025 yıllarında yapılan büyük araştırmalar, bu teknolojinin genel hasta grubunda gebelik oranını tek başına mucizevi şekilde artırmadığını göstermiştir. {{kanit:A}} Ancak ileri yaştaki kadınlar, tekrarlayan başarısız denemeler ve endometriozis gibi zor vakalarda belirgin bir fark yarattığı kanıtlanmıştır. {{kanit:B}} Yapay zekâ ile birleştiğinde embriyo değerlendirmesini saniyeler içinde yapabilen bu sistem, modern tüp bebek tedavisinin vazgeçilmez bir parçası hâline gelmiştir.
 
 ---
 

@@ -44,6 +44,7 @@ references:
 import { Picture } from "astro:assets";
 import intralipidesImage from "/src/images/library/tedavi/intralipides.webp";
 import haute_coutureImage from "/src/images/library/klinik/haute_couture.webp";
+import InlineEvidence from "../../components/InlineEvidence.astro";
 
 export const medicalSchema = `<script type="application/ld+json">
 {
@@ -110,7 +111,7 @@ export const faqSchema = `<script type="application/ld+json">
 <Fragment set:html={medicalSchema} />
 <Fragment set:html={faqSchema} />
 
-Tüp bebek tedavisinde embriyo tutunmasını artırmak için sunulan intralipid serum ve IVIG gibi bağışıklık tedavilerinin klinik faydası kanıtlanmamıştır. Bilimsel çalışmalara göre (Melo et al., 2022), bu tedaviler tüp bebek başarı oranları üzerinde olumlu bir etki yaratmamakta; aksine karaciğer büyümesi ve alerjik reaksiyonlar gibi ciddi yan etkiler barındırmaktadır. Bu nedenle ESHRE kılavuzları da dahil olmak üzere güncel tıp otoriteleri tüp bebekte bağışıklık tedavisi kullanımını kesinlikle önermemektedir.
+Tüp bebek tedavisinde embriyo tutunmasını artırmak için sunulan intralipid serum ve IVIG gibi bağışıklık tedavilerinin klinik faydası kanıtlanmamıştır. Bilimsel çalışmalara göre (Melo et al., 2022), bu tedaviler tüp bebek başarı oranları üzerinde olumlu bir etki yaratmamakta; aksine karaciğer büyümesi ve alerjik reaksiyonlar gibi ciddi yan etkiler barındırmaktadır. Bu nedenle ESHRE kılavuzları da dahil olmak üzere güncel tıp otoriteleri tüp bebekte bağışıklık tedavisi kullanımını kesinlikle önermemektedir. <InlineEvidence grade="A" />
 
 📌 **Bu yazıda öğrenecekleriniz:**
 
@@ -130,7 +131,7 @@ Kliniğime gelen pek çok çiftin, toplum veya aile baskısının verdiği o ağ
 
 ## İntralipid serum veya IVIG embriyo tutunmasını artırır mı?
 
-Hayır, güncel bilimsel verilere göre intralipid serum veya IVIG tedavileri embriyo tutunmasını veya canlı doğum oranlarını artırmamaktadır. 2022 yılında yapılan çok düşük kalite kanıtlara sahip çalışmaları inceleyen geniş çaplı bir meta-analiz (Melo ve ark.), bu bağışıklık tedavilerinin hiçbirinin kullanılmasını önermemiştir.
+Hayır, güncel bilimsel verilere göre intralipid serum veya IVIG tedavileri embriyo tutunmasını veya canlı doğum oranlarını artırmamaktadır. <InlineEvidence grade="A" /> 2022 yılında yapılan çok düşük kalite kanıtlara sahip çalışmaları inceleyen geniş çaplı bir meta-analiz (Melo ve ark.), bu bağışıklık tedavilerinin hiçbirinin kullanılmasını önermemiştir.
 
 Kanıta dayalı tıp, bizim pusulamızdır. Gelin sayılara birlikte bakalım:
 

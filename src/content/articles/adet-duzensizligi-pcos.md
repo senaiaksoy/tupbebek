@@ -31,7 +31,7 @@ references:
     doi: "10.1016/S0140-6736(22)01047-5"
 ---
 
-Adet döngüsü, üreme çağındaki kadınların yaşamının önemli bir parçasıdır. Ancak, bu döngü her zaman düzenli olmayabilir ve adet düzensizliği çeşitli sağlık sorunlarının habercisi olabilir. Adet düzensizliği, endometriyal hiperplazi ve obezite gibi birçok farklı nedene bağlı olabileceği gibi, en sık rastlanan nedenlerden biri de Polikistik Over Sendromu (PCOS) olarak bilinir.
+Adet döngüsü, üreme çağındaki kadınların yaşamının önemli bir parçasıdır. Ancak, bu döngü her zaman düzenli olmayabilir ve adet düzensizliği çeşitli sağlık sorunlarının habercisi olabilir. Adet düzensizliği, endometriyal hiperplazi ve obezite gibi birçok farklı nedene bağlı olabileceği gibi, en sık rastlanan nedenlerden biri de Polikistik Over Sendromu (PCOS) olarak bilinir. {{kanit:B}}
 
 ### Adet Düzensizliği Nedir?
 
@@ -46,7 +46,7 @@ Adet düzensizliği şu şekilde sınıflandırılabilir:
 
 ### Polikistik Over Sendromu (PCOS) Nedir?
 
-Polikistik Over Sendromu (PCOS), üreme çağındaki kadınlarda en sık görülen hormonal bozukluklardan biridir. PCOS’lu kadınlarda, yumurtalıklarda çok sayıda küçük kist oluşabilir ve bu kistler erkeklik hormonu (androjen) üretimini artırabilir.
+Polikistik Over Sendromu (PCOS), üreme çağındaki kadınlarda en sık görülen hormonal bozukluklardan biridir. {{kanit:B}} PCOS’lu kadınlarda, yumurtalıklarda çok sayıda küçük kist oluşabilir ve bu kistler erkeklik hormonu (androjen) üretimini artırabilir.
 
 **PCOS’un başlıca belirtileri şunlardır:**
 - Adet Düzensizliği

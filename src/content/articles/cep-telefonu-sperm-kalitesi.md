@@ -113,7 +113,7 @@ Son olarak, cep telefonları ve sperm kalitesi arasındaki potansiyel bağlantı
 
 Teknolojinin hayatımızdaki yeri tartışılmaz bir gerçek. Ancak, her yeni teknolojinin getirdiği avantajların yanı sıra potansiyel riskleri de göz önünde bulundurmalıyız. Bu bağlamda, cep telefonlarının erkeklerin üreme sağlığı üzerindeki etkileri önemli bir araştırma konusu olmaya devam ediyor. Bildiğimiz kadarıyla, telefonların yaydığı elektromanyetik dalgalar ve cihazın yarattığı ısı artışı sperm kalitesini olumsuz etkileyebilir. Ayrıca, oksidatif stres gibi biyolojik mekanizmalar da bu sürece katkıda bulunabilir.
 
-Birçok bilimsel çalışma, cep telefonlarının uzun süre ve yoğun bir şekilde kullanılmasının sperm kalitesini düşürebileceğini gösteriyor. Ancak, bu etkilerin kesinliği ve kapsamı konusunda hala daha fazla araştırmaya ihtiyaç var. Bu nedenle, dikkatli olmakta ve bazı basit önlemler almaktan zarar gelmez.
+Birçok bilimsel çalışma, cep telefonlarının uzun süre ve yoğun bir şekilde kullanılmasının sperm kalitesini düşürebileceğini gösteriyor. {{kanit:C}} Ancak, bu etkilerin kesinliği ve kapsamı konusunda hala daha fazla araştırmaya ihtiyaç var. Bu nedenle, dikkatli olmakta ve bazı basit önlemler almaktan zarar gelmez.
 
 Telefonunuzu pantolon cebinde taşımak yerine *statement* bir çantanızda taşıyabilir veya konuşmalarınızı *şık* bir kulaklıkla gerçekleştirebilirsiniz. Ayrıca, cihazlarınızı yatak odasından uzak tutmak da iyi bir fikir olabilir - *uyku hijyeni* de önemli! Unutmayın ki, küçük değişiklikler büyük farklar yaratabilir.
 
