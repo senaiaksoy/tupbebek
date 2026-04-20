@@ -34,6 +34,6 @@ videoId: "S8xkWrHylTE"
 videoTitle: "Dondurulmuş Embriyo Transferi (TEC) Hazırlığı"
 ---
 
-Bu makale, daha kapsamlı rehberimizle birleştirilmiştir.
+Bu makale, daha kapsamlı rehberimizle birleştirilmiştir. {{kanit:B}}
 
 **Güncel ve kapsamlı rehberimiz için:** [Taze mi, Dondurulmuş Embriyo Transferi mi?](/makaleler/taze-dondurulmus-transfer)
