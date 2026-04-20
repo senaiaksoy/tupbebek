@@ -110,6 +110,7 @@ const medicalWebPageSchema = {
 			function loadGA() {
 				if (window.gaLoaded) return;
 				window.gaLoaded = true;
+				window.__loadGA = loadGA;
 				
 				// Load script
 				const script = document.createElement('script');
@@ -119,11 +120,18 @@ const medicalWebPageSchema = {
 
 				// Init GA
 				window.dataLayer = window.dataLayer || [];
-				function gtag(){dataLayer.push(arguments);}
-				gtag('js', new Date());
-				gtag('config', 'G-K3VE72CSDJ');
+				window.gtag = window.gtag || function(){window.dataLayer.push(arguments);};
+				window.gtag('js', new Date());
+				window.gtag('config', 'G-K3VE72CSDJ');
 				console.log('GA4 Loaded on activity');
 			}
+
+			window.__trackGaEvent = function(eventName, params = {}) {
+				loadGA();
+				window.dataLayer = window.dataLayer || [];
+				window.gtag = window.gtag || function(){window.dataLayer.push(arguments);};
+				window.gtag('event', eventName, params);
+			};
 
 			// Activity events to trigger loading
 			const activityEvents = ['mousedown', 'mousemove', 'keydown', 'scroll', 'touchstart'];

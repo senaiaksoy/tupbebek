@@ -14,6 +14,7 @@ const { menu } = Astro.props;
     class="mega-menu-btn px-4 py-3 min-h-[48px] text-sm font-bold text-gray-800 hover:text-primary-600 transition-colors flex items-center gap-1 rounded-lg"
     aria-haspopup="true"
     aria-expanded="false"
+    data-menu-label={menu.label}
   >
     {menu.label}
     <span class="material-symbols-outlined text-xs transition-transform mega-menu-chevron">
@@ -40,6 +41,10 @@ const { menu } = Astro.props;
             <a
               href={item.href}
               class="group/link flex p-3 min-h-[44px] hover:bg-primary-50 rounded-lg transition-colors"
+              data-nav-section={menu.label}
+              data-nav-label={item.label}
+              data-nav-destination={item.href}
+              data-nav-location="mega_menu_submenu"
             >
               <div>
                 <span class="text-sm font-bold text-gray-800 group-hover/link:text-primary-600">
@@ -91,6 +96,10 @@ const { menu } = Astro.props;
             <a
               href={menu.featuredArticle.href}
               class="block mt-3 text-sm font-bold text-gray-800 hover:text-primary-600 transition-colors" style="font-family: var(--font-headline);"
+              data-nav-section={menu.label}
+              data-nav-label={menu.featuredArticle.title}
+              data-nav-destination={menu.featuredArticle.href}
+              data-nav-location="mega_menu_featured"
             >
               {menu.featuredArticle.title}
             </a>
@@ -151,6 +160,11 @@ const { menu } = Astro.props;
         btn.setAttribute('aria-expanded', 'true');
         btn.classList.add('bg-primary-50');
         if (chevron) chevron.classList.add('rotate-180');
+        if (window.__trackGaEvent) {
+          window.__trackGaEvent('navigation_menu_open', {
+            menu_label: btn.dataset.menuLabel || ''
+          });
+        }
       }
 
       function closeMenu() {
@@ -174,6 +188,19 @@ const { menu } = Astro.props;
           closeAllMenus(group);
           openMenu();
         }
+      });
+
+      panel.querySelectorAll('a[data-nav-section]').forEach(function(link) {
+        link.addEventListener('click', function() {
+          if (window.__trackGaEvent) {
+            window.__trackGaEvent('navigation_click', {
+              nav_section: link.dataset.navSection || '',
+              nav_label: link.dataset.navLabel || '',
+              nav_destination: link.dataset.navDestination || '',
+              nav_location: link.dataset.navLocation || ''
+            });
+          }
+        });
       });
 
       btn.addEventListener('keydown', function(e) {

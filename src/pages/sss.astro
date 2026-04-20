@@ -6,7 +6,7 @@ import Footer from '../components/Footer.astro';
 
 <BaseLayout title="Sıkça Sorulan Sorular | tupbebek.com" description="Tüp bebek, IVF süreci, başarı oranları, yaşa bağlı etkenler, infertilite tedavileri ve yaşam tarzı hakkında en çok sorulan soruların bilimsel yanıtları.">
     <Header />
-    
+
     <header class="pt-32 pb-20 px-4 md:px-6 lg:px-8 bg-gray-50 overflow-hidden relative">
         <div class="max-w-7xl mx-auto grid md:grid-cols-2 items-center gap-12 relative z-10">
             <div class="space-y-6">
@@ -42,13 +42,14 @@ import Footer from '../components/Footer.astro';
 
     <main id="main-content" tabindex="-1" class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-24">
         <div class="grid lg:grid-cols-12 gap-12 items-start">
-            <!-- Category Navigation Sidebar -->
             <aside class="lg:col-span-3 sticky top-28 space-y-8">
                 <div>
                     <h3 class="text-xs font-bold text-gray-500 uppercase tracking-widest mb-6">Kategoriler</h3>
                     <nav class="space-y-2">
                         <a href="#maliyet-sgk" class="block w-full text-left px-4 py-3 rounded-xl bg-gray-200 text-primary-600 font-bold transition-all hover:bg-gray-300">Maliyet, SGK ve Haklar</a>
-                        <a href="#genel-sorular" class="block w-full text-left px-4 py-3 rounded-xl hover:bg-gray-100 text-gray-600 transition-all">Genel Sorular</a>
+                        <a href="#tedavi-sureci" class="block w-full text-left px-4 py-3 rounded-xl hover:bg-gray-100 text-gray-600 transition-all">Tedavi Süreci</a>
+                        <a href="#basari-oranlari" class="block w-full text-left px-4 py-3 rounded-xl hover:bg-gray-100 text-gray-600 transition-all">Başarı Oranları</a>
+                        <a href="#yasam-tarzi" class="block w-full text-left px-4 py-3 rounded-xl hover:bg-gray-100 text-gray-600 transition-all">Yaşam Tarzı</a>
                         <a href="#erkek-ureme-etkenleri" class="block w-full text-left px-4 py-3 rounded-xl hover:bg-gray-100 text-gray-600 transition-all">Erkek Üreme Etkenleri</a>
                     </nav>
                 </div>
@@ -56,13 +57,12 @@ import Footer from '../components/Footer.astro';
                     <span class="material-symbols-outlined mb-4 block">clinical_notes</span>
                     <h4 class="font-bold mb-2">Kişisel Danışmanlık</h4>
                     <p class="text-sm opacity-80 mb-4 leading-relaxed">Sizin durumunuza özel bilimsel veriler için uzman ekibimizle görüşün.</p>
-                    <a class="text-sm font-bold flex items-center gap-2 group underline" href="#">
+                    <a class="text-sm font-bold flex items-center gap-2 group underline" href="/iletisim">
                         Uzmanla İletişim <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">trending_flat</span>
                     </a>
                 </div>
             </aside>
 
-            <!-- FAQ Accordion Section -->
             <div class="lg:col-span-9 space-y-20">
                 <section id="maliyet-sgk">
                     <div class="mb-10 flex items-end justify-between">
@@ -131,11 +131,11 @@ import Footer from '../components/Footer.astro';
                     </div>
                 </section>
 
-                <section id="genel-sorular">
+                <section id="tedavi-sureci">
                     <div class="mb-10 flex items-end justify-between">
                         <div>
-                            <h2 class="text-3xl font-headline mb-2 text-gray-900">Genel Sorular</h2>
-                            <p class="text-gray-600 text-sm">Üreme sağlığı ve tüp bebek temelleri hakkında temel bilgiler.</p>
+                            <h2 class="text-3xl font-headline mb-2 text-gray-900">Tedavi Süreci</h2>
+                            <p class="text-gray-600 text-sm">Tüp bebek planlaması, PGT kararı ve transfer sonrası süreç hakkında temel bilgiler.</p>
                         </div>
                         <div class="w-20 h-px bg-outline-variant/30 mb-2"></div>
                     </div>
@@ -149,11 +149,36 @@ import Footer from '../components/Footer.astro';
                                 <div class="w-full h-px bg-gray-100 mb-6"></div>
                                 <div class="text-gray-600 leading-relaxed space-y-4 max-w-4xl">
                                     <p>Standart bir tüp bebek siklusu, adet döneminin ikinci veya üçüncü günü başlar ve yaklaşık 15-20 günlük bir süreci kapsar. Bu süreç; yumurtalıkların uyarılması, yumurta toplama (OPU) ve embriyo transferi aşamalarından oluşur.</p>
-                                    <p>Dondurulmuş embriyo transferi (FET) veya genetik tarama (PGT) gibi ek prosedürler gerektiğinde, toplam süre iki ay veya daha fazlasına yayılabilir. Tedavi planı hastanın hormonal profiline göre kişiselleştirilmektedir.</p>
+                                    <p>Dondurulmuş embriyo transferi (FET) veya genetik tarama (PGT) gibi ek prosedürler gerektiğinde, toplam süre iki ay veya daha fazlasına yayılabilir. Tedavi planı hastanın hormonal profiline göre kişiselleştirilir.</p>
                                 </div>
                             </div>
                         </details>
 
+                        <details class="group bg-gray-50 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+                                <span class="text-lg font-medium text-gray-900 pr-8">PGT testi her hastaya uygulanmalı mıdır?</span>
+                                <span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180">expand_more</span>
+                            </summary>
+                            <div class="px-6 pb-8 pt-2">
+                                <div class="w-full h-px bg-gray-100 mb-6"></div>
+                                <div class="text-gray-600 leading-relaxed max-w-4xl">
+                                    <p>Preimplantasyon Genetik Tanı (PGT), rutin bir uygulama olmayıp endikasyon bazlıdır. Genellikle; ileri anne yaşı, tekrarlayan düşük öyküsü, başarısız tüp bebek denemeleri veya bilinen genetik hastalık taşıyıcılığı durumlarında klinik protokol olarak önerilir.</p>
+                                    <p class="mt-4"><a href="/makaleler/genetik-testler" class="text-primary-600 font-bold hover:underline inline-flex items-center gap-1">İlgili Makale: Genetik Tarama Teknolojileri <span class="material-symbols-outlined text-sm">open_in_new</span></a></p>
+                                </div>
+                            </div>
+                        </details>
+                    </div>
+                </section>
+
+                <section id="basari-oranlari">
+                    <div class="mb-10 flex items-end justify-between">
+                        <div>
+                            <h2 class="text-3xl font-headline mb-2 text-gray-900">Başarı Oranları</h2>
+                            <p class="text-gray-600 text-sm">Yaş, embriyo kalitesi ve kişisel biyolojik faktörlerin başarıya etkisi hakkında sık sorulan sorular.</p>
+                        </div>
+                        <div class="w-20 h-px bg-outline-variant/30 mb-2"></div>
+                    </div>
+                    <div class="space-y-4">
                         <details class="group bg-gray-50 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
                             <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
                                 <span class="text-lg font-medium text-gray-900 pr-8">Yaşın başarı oranları üzerindeki etkisi nedir?</span>
@@ -169,18 +194,29 @@ import Footer from '../components/Footer.astro';
 
                         <details class="group bg-gray-50 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
                             <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
-                                <span class="text-lg font-medium text-gray-900 pr-8">PGT testi her hastaya uygulanmalı mıdır?</span>
+                                <span class="text-lg font-medium text-gray-900 pr-8">Başarı oranlarını en çok hangi faktörler belirler?</span>
                                 <span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180">expand_more</span>
                             </summary>
                             <div class="px-6 pb-8 pt-2">
                                 <div class="w-full h-px bg-gray-100 mb-6"></div>
                                 <div class="text-gray-600 leading-relaxed max-w-4xl">
-                                    <p>Preimplantasyon Genetik Tanı (PGT), rutin bir uygulama olmayıp endikasyon bazlıdır. Genellikle; ileri anne yaşı (37+), tekrarlayan düşük öyküsü, başarısız tüp bebek denemeleri veya bilinen genetik hastalık taşıyıcılığı durumlarında klinik protokol olarak önerilir.</p>
-                                    <p class="mt-4"><a href="/makaleler/genetik-testler" class="text-primary-600 font-bold hover:underline inline-flex items-center gap-1">İlgili Makale: Genetik Tarama Teknolojileri <span class="material-symbols-outlined text-sm">open_in_new</span></a></p>
+                                    <p>En güçlü belirleyiciler kadın yaşı, yumurta rezervi, embriyo kalitesi, rahim içi ortamın uygunluğu ve erkek faktörüdür. Merkez seçimi ve laboratuvar kalitesi de önemlidir; ancak bireysel biyoloji çoğu zaman nihai sonucu daha fazla etkiler.</p>
+                                    <p class="mt-4"><a href="/basari-oranlari" class="text-primary-600 font-bold hover:underline inline-flex items-center gap-1">Detaylı Bilgi: Güncel başarı oranları <span class="material-symbols-outlined text-sm">open_in_new</span></a></p>
                                 </div>
                             </div>
                         </details>
+                    </div>
+                </section>
 
+                <section id="yasam-tarzi">
+                    <div class="mb-10 flex items-end justify-between">
+                        <div>
+                            <h2 class="text-3xl font-headline mb-2 text-gray-900">Yaşam Tarzı</h2>
+                            <p class="text-gray-600 text-sm">Günlük yaşam, dinlenme, beslenme ve stres yönetiminin tedavi üzerindeki etkileri.</p>
+                        </div>
+                        <div class="w-20 h-px bg-outline-variant/30 mb-2"></div>
+                    </div>
+                    <div class="space-y-4">
                         <details class="group bg-gray-50 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
                             <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
                                 <span class="text-lg font-medium text-gray-900 pr-8">Transfer sonrası dinlenme süreci nasıl olmalıdır?</span>
@@ -191,6 +227,20 @@ import Footer from '../components/Footer.astro';
                                 <div class="text-gray-600 leading-relaxed max-w-4xl">
                                     <p>Modern klinik çalışmalar, transfer sonrası günlerce yatak istirahatinin gebelik oranlarını artırmadığını kanıtlamıştır. İşlem günü kısa bir istirahat yeterlidir. Sonraki günlerde aşırı fiziksel efordan kaçınmak kaydıyla günlük sosyal yaşama dönülmesi tavsiye edilir.</p>
                                     <p class="mt-4"><a href="/makaleler/taze-dondurulmus-transfer" class="text-primary-600 font-bold hover:underline inline-flex items-center gap-1">İlgili Makale: Dondurulmuş Embriyo Transferi Rehberi <span class="material-symbols-outlined text-sm">open_in_new</span></a></p>
+                                </div>
+                            </div>
+                        </details>
+
+                        <details class="group bg-gray-50 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+                                <span class="text-lg font-medium text-gray-900 pr-8">Beslenme ve günlük alışkanlıklar tedavi sonucunu etkiler mi?</span>
+                                <span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180">expand_more</span>
+                            </summary>
+                            <div class="px-6 pb-8 pt-2">
+                                <div class="w-full h-px bg-gray-100 mb-6"></div>
+                                <div class="text-gray-600 leading-relaxed max-w-4xl">
+                                    <p>Evet. Uyku düzeni, sigara ve alkol kullanımı, kilo dengesi, fiziksel aktivite ve stres yönetimi hem kadın hem erkek fertilitesi üzerinde etkili olabilir. Yaşam tarzı değişiklikleri tek başına her sorunu çözmez; ama tedavi planını destekleyen önemli bir zemindir.</p>
+                                    <p class="mt-4"><a href="/beslenme-yasam" class="text-primary-600 font-bold hover:underline inline-flex items-center gap-1">Detaylı Bilgi: Beslenme ve yaşam rehberi <span class="material-symbols-outlined text-sm">open_in_new</span></a></p>
                                 </div>
                             </div>
                         </details>
@@ -228,7 +278,7 @@ import Footer from '../components/Footer.astro';
                             <div class="px-6 pb-8 pt-2">
                                 <div class="w-full h-px bg-gray-100 mb-6"></div>
                                 <div class="text-gray-600 leading-relaxed space-y-4 max-w-4xl">
-                                    <p>Evet. Sperm üretimi ~74 gün sürdüğü için yaşam tarzı değişiklikleri 3 ay sonra etkisini gösterir. Sigara, alkol, obezite, aşırı ısı maruziyeti ve stres sperm kalitesini bozar. Antioksidanlardan zengin beslenme ve düzenli egzersiz iyileşme sağlar.</p>
+                                    <p>Evet. Sperm üretimi yaklaşık 74 gün sürdüğü için yaşam tarzı değişiklikleri 3 ay sonra etkisini gösterir. Sigara, alkol, obezite, aşırı ısı maruziyeti ve stres sperm kalitesini bozabilir. Antioksidanlardan zengin beslenme ve düzenli egzersiz iyileşme sağlayabilir.</p>
                                     <p class="mt-4"><a href="/beslenme-yasam" class="text-primary-600 font-bold hover:underline inline-flex items-center gap-1">Detaylı Bilgi: Beslenme ve Yaşam Tarzı <span class="material-symbols-outlined text-sm">open_in_new</span></a></p>
                                 </div>
                             </div>
@@ -242,7 +292,7 @@ import Footer from '../components/Footer.astro';
                             <div class="px-6 pb-8 pt-2">
                                 <div class="w-full h-px bg-gray-100 mb-6"></div>
                                 <div class="text-gray-600 leading-relaxed space-y-4 max-w-4xl">
-                                    <p>Azospermi, obstrüktif (tıkanıklık) veya nonobstrüktif (üretim sorunu) olabilir. Obstrüktif azospermi cerrahi çözüm ile tedavi edilebilir. Nonobstrüktif azospermide TESE/microTESE prosedürü ile testisten sperm çıkartılıp ICSI ile kullanılabilir.</p>
+                                    <p>Azospermi, obstrüktif (tıkanıklık) veya nonobstrüktif (üretim sorunu) olabilir. Obstrüktif azospermi cerrahi çözüm ile tedavi edilebilir. Nonobstrüktif azospermide TESE veya microTESE prosedürü ile testisten sperm çıkarılıp ICSI ile kullanılabilir.</p>
                                     <p class="mt-4"><a href="/makaleler/azospermi-mikro-tese" class="text-primary-600 font-bold hover:underline inline-flex items-center gap-1">İlgili Makale: Azospermi ve microTESE <span class="material-symbols-outlined text-sm">open_in_new</span></a></p>
                                 </div>
                             </div>
@@ -256,7 +306,7 @@ import Footer from '../components/Footer.astro';
                             <div class="px-6 pb-8 pt-2">
                                 <div class="w-full h-px bg-gray-100 mb-6"></div>
                                 <div class="text-gray-600 leading-relaxed space-y-4 max-w-4xl">
-                                    <p>Erkek infertilitesi, erkeklerde yetersizlik hissi, özgüven kaybı ve utanç duyguları yaratabilir. Erkeklerin duygusal destek araması ve profesyonel yardım alması tedavi başarısını ve ilişki kalitesini artırır.</p>
+                                    <p>Erkek infertilitesi, erkeklerde yetersizlik hissi, özgüven kaybı ve utanç duyguları yaratabilir. Erkeklerin duygusal destek araması ve profesyonel yardım alması tedavi başarısını ve ilişki kalitesini artırabilir.</p>
                                     <p class="mt-4"><a href="/duygusal-destek" class="text-primary-600 font-bold hover:underline inline-flex items-center gap-1">Detaylı Bilgi: Duygusal Destek ve Baş Etme <span class="material-symbols-outlined text-sm">open_in_new</span></a></p>
                                 </div>
                             </div>

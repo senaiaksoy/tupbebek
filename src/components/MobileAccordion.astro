@@ -26,10 +26,30 @@ const { items } = Astro.props;
     </button>
     <div id={`mobile-panel-${index}`} class="hidden pl-4 space-y-1 border-l-2 border-gray-100" role="region" aria-label={section.title}>
       {section.items.map((item) => (
-        <a href={item.href} class="block p-2 min-h-[44px] flex items-center text-sm text-gray-600 hover:text-primary-600 hover:bg-primary-50 rounded transition-colors">
+        <a
+          href={item.href}
+          class="block p-2 min-h-[44px] flex items-center text-sm text-gray-600 hover:text-primary-600 hover:bg-primary-50 rounded transition-colors"
+          data-nav-section={section.title}
+          data-nav-label={item.label}
+          data-nav-destination={item.href}
+          data-nav-location="mobile_menu"
+        >
           {item.label}
         </a>
       ))}
     </div>
   </div>
 ))}
+
+<script is:inline>
+  document.querySelectorAll('a[data-nav-location="mobile_menu"]').forEach((link) => {
+    link.addEventListener('click', () => {
+      window.__trackGaEvent?.('navigation_click', {
+        nav_section: link.dataset.navSection || '',
+        nav_label: link.dataset.navLabel || '',
+        nav_destination: link.dataset.navDestination || '',
+        nav_location: link.dataset.navLocation || ''
+      });
+    });
+  });
+</script>
