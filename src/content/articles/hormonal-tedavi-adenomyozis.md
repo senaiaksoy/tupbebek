@@ -37,7 +37,7 @@ Adenomyozis, hormon dengesizliklerinden etkilenerek şiddetini artırabilen bir 
 
 #### Hormon Tedavisinin Temel Mantığı
 
-Adenomyozisin etkilerini azaltmak için östrojen seviyelerini düşürmek kritik bir adımdır. Çünkü östrojen, rahim içi dokusunun kalınlaşmasını ve adenomyozis odaklarının büyümesini destekleyen bir hormondur. Östrojen seviyesinin kontrol altına alınması, rahim kasının yoğunluğunu azaltarak embriyonun tutunma şansını artırır.
+Adenomyozisin etkilerini azaltmak için östrojen seviyelerini düşürmek kritik bir adımdır. Çünkü östrojen, rahim içi dokusunun kalınlaşmasını ve adenomyozis odaklarının büyümesini destekleyen bir hormondur. Östrojen seviyesinin kontrol altına alınması, rahim kasının yoğunluğunu azaltarak embriyonun tutunma şansını artırır {{kanit:B}}.
 
 Bu süreçte, aşağıdaki tedavi yöntemleri öne çıkar:
 
@@ -45,7 +45,7 @@ Bu süreçte, aşağıdaki tedavi yöntemleri öne çıkar:
 
 #### 1. **GnRH Analogları (Gonadotropin Salgılatıcı Hormon Analogları)**
 
-GnRH analogları, vücudun doğal östrojen üretimini baskılar. Bu ilaçlar, geçici bir menopoz etkisi yaratarak rahmin "dinlenmesini" sağlar. Tedavi sırasında rahim duvarındaki kalınlık azalır, bu da embriyonun tutunma ihtimalini artırır.
+GnRH analogları, vücudun doğal östrojen üretimini baskılar. Bu ilaçlar, geçici bir menopoz etkisi yaratarak rahmin "dinlenmesini" sağlar. Tedavi sırasında rahim duvarındaki kalınlık azalır, bu da embriyonun tutunma ihtimalini artırır {{kanit:B}}.
 
 GnRH tedavisi genellikle tüp bebek tedavisinden 2-3 ay önce başlatılır. Bu dönemde rahmin adenomyozise bağlı yoğunluğu azalır, embriyonun tutunması için daha uygun bir ortam oluşur.
 
@@ -86,7 +86,7 @@ Bu tür tedaviler genellikle tüp bebek tedavisine başlamadan önce uygulanır.
 
 #### 5. **GnRH Agonistleri ile Kombine Tedaviler**
 
-Bazı durumlarda, GnRH agonistleri progesteron veya östrojen antagonistleri ile birlikte kullanılır. Bu kombinasyon, rahim dokusunun adenomyozise bağlı değişikliklerini minimize eder ve tüp bebek tedavisinin başarı oranını artırır.
+Bazı durumlarda, GnRH agonistleri progesteron veya östrojen antagonistleri ile birlikte kullanılır. Bu kombinasyon, rahim dokusunun adenomyozise bağlı değişikliklerini minimize eder ve tüp bebek tedavisinin başarı oranını artırır {{kanit:C}}.
 
 ---
 
@@ -111,7 +111,7 @@ Hormon tedavileri, tüp bebek sürecinin farklı aşamalarında kullanılabilir:
 
 #### Hormonal Tedaviler ve Başarı Hikayeleri
 
-Yapılan araştırmalar, hormonal tedavilerin doğru bir şekilde uygulanması durumunda tüp bebek başarı oranlarının anlamlı ölçüde arttığını göstermektedir. Özellikle dondurulmuş embriyo transferi (FET) ile kombine edilen hormonal hazırlık süreçleri, adenomyozis hastalarının gebelik şansını ciddi ölçüde artırabilir.
+Yapılan araştırmalar, hormonal tedavilerin doğru bir şekilde uygulanması durumunda tüp bebek başarı oranlarının anlamlı ölçüde arttığını göstermektedir {{kanit:B}}. Özellikle dondurulmuş embriyo transferi (FET) ile kombine edilen hormonal hazırlık süreçleri, adenomyozis hastalarının gebelik şansını ciddi ölçüde artırabilir {{kanit:B}}.
 
 ---
 

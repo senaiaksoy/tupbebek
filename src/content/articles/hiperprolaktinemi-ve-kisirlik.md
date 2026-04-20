@@ -68,9 +68,9 @@ Yüksek stres seviyeleri, aşırı egzersiz ve yetersiz uyku gibi yaşam tarzı 
 
 ## Hiperprolaktineminin Belirtileri ve Bu Durumun Hayatınızı Nasıl Etkileyebileceği
 
-Hiperprolaktinemi, vücudumuzda karmaşık ve çeşitli belirtilere neden olabilir. Kadınlarda, adet döngüsündeki düzensizlikler genellikle bu durumun ilk işaretleridir. Yumurtlamanın gerçekleşmediği anovulatuar kısırlık, hamile kalma yolunda büyük bir engel oluşturur. Bunun yanı sıra, galaktore, yani gebelik veya emzirme olmadan süt üretimi de bu durumun belirtileri arasındadır.
+Hiperprolaktinemi, vücudumuzda karmaşık ve çeşitli belirtilere neden olabilir. Kadınlarda, adet döngüsündeki düzensizlikler genellikle bu durumun ilk işaretleridir. Yumurtlamanın gerçekleşmediği anovulatuar kısırlık, hamile kalma yolunda büyük bir engel oluşturur {{kanit:B}}. Bunun yanı sıra, galaktore, yani gebelik veya emzirme olmadan süt üretimi de bu durumun belirtileri arasındadır.
 
-Erkekler de hiperprolaktinemiden etkilenebilir. Yüksek prolaktin seviyeleri, libido kaybına ve cinsel fonksiyon bozukluklarına yol açabilir. Ereksiyon sorunları ve azalmış sperm üretimi gibi problemler, erkeklerde kısırlığa neden olabilir. Ayrıca, erkeklerde meme büyümesi (jinekomasti) gibi belirtiler de görülebilir, bu da durumu daha da karmaşık hale getirir.
+Erkekler de hiperprolaktinemiden etkilenebilir. Yüksek prolaktin seviyeleri, libido kaybına ve cinsel fonksiyon bozukluklarına yol açabilir {{kanit:B}}. Ereksiyon sorunları ve azalmış sperm üretimi gibi problemler, erkeklerde kısırlığa neden olabilir. Ayrıca, erkeklerde meme büyümesi (jinekomasti) gibi belirtiler de görülebilir, bu da durumu daha da karmaşık hale getirir.
 
 ### Kadınlarda Adet Düzensizlikleri ve Anovulasyon
 
@@ -90,7 +90,7 @@ Erkeklerde hiperprolaktinemi, sperm üretimini ve kalitesini etkileyerek doğurg
 
 ## Kadınlarda Hiperprolaktinemi ve Kısırlık
 
-Hiperprolaktinemi, annelik hayali kuran kadınlar için zorlu bir engel olabilir. Bu durum, olgun bir yumurtanın yumurtalıklardan salınmasını engelleyerek anovulasyona yol açar. Prolaktin, GnRH hormonunun salgılanmasını baskılayarak hormonal dengeyi bozar. GnRH olmadan, vücut FSH ve LH hormonlarını üretemez, bu da normal bir adet döngüsü ve yumurtlama için gereklidir.
+Hiperprolaktinemi, annelik hayali kuran kadınlar için zorlu bir engel olabilir. Bu durum, olgun bir yumurtanın yumurtalıklardan salınmasını engelleyerek anovulasyona yol açar {{kanit:B}}. Prolaktin, GnRH hormonunun salgılanmasını baskılayarak hormonal dengeyi bozar. GnRH olmadan, vücut FSH ve LH hormonlarını üretemez, bu da normal bir adet döngüsü ve yumurtlama için gereklidir.
 
 ### Anovulasyon
 
@@ -156,7 +156,7 @@ Eğer yüksek seviyeler tespit edilirse, MRI veya CT taramaları gibi görüntü
 
 ### Tedavi Seçenekleri
 
-Tedavi planları, nedenlere göre çeşitlilik gösterir. İlaçlar, özellikle bromokriptin ve kabergolin gibi dopamin agonistleri, genellikle ilk tercihtir. Bu ilaçlar, prolaktin seviyelerini düşürür ve doğurganlığı geri kazandırır. Tümörlerin neden olduğu durumlarda cerrahi müdahale gerekebilir. Stresin azaltılması ve yeterli uyku gibi yaşam tarzı değişiklikleri de tedaviyi destekleyebilir.
+Tedavi planları, nedenlere göre çeşitlilik gösterir. İlaçlar, özellikle bromokriptin ve kabergolin gibi dopamin agonistleri, genellikle ilk tercihtir {{kanit:B}}. Bu ilaçlar, prolaktin seviyelerini düşürür ve doğurganlığı geri kazandırır. Tümörlerin neden olduğu durumlarda cerrahi müdahale gerekebilir. Stresin azaltılması ve yeterli uyku gibi yaşam tarzı değişiklikleri de tedaviyi destekleyebilir.
 
 #### İlaçlar
 
