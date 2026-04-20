@@ -32,6 +32,6 @@ references:
     doi: "10.12998/wjcc.v1.i7.209"
 ---
 
-Bu makale, daha kapsamlı rehberimizle birleştirilmiştir.
+Bu makale, daha kapsamlı rehberimizle birleştirilmiştir. {{kanit:B}}
 
 **Güncel ve kapsamlı rehberimiz için:** [Hiperprolaktinemi ve Kısırlık](/makaleler/hiperprolaktinemi-ve-kisirlik)

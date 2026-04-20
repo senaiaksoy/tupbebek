@@ -65,7 +65,7 @@ videoTitle: "Endometriozis ve Kısırlık: 2025'in Yeni Tedavi Stratejileri"
 
 ## Hoş Geldiniz – Endometriozisle Yaşamı Anlamak
 
-Endometriozis, rahmin iç yüzeyine ait dokuların karın boşluğu ve diğer organlarda tutunmasıyla ortaya çıkan kronik ve **östrojene bağımlı** bir hastalıktır. Dünya çapında milyonlarca kadının gündelik yaşamını ve anne olma hayallerini etkiler; bazı tahminler [**tüm kadınların %3–5'inde**](https://www.ncbi.nlm.nih.gov/pmc/makaleler/PMC12414060/) ve **kısırlık yaşayan çiftlerin %40'ında** endometriozis saptandığını bildiriyor.
+Endometriozis, rahmin iç yüzeyine ait dokuların karın boşluğu ve diğer organlarda tutunmasıyla ortaya çıkan kronik ve **östrojene bağımlı** bir hastalıktır. Dünya çapında milyonlarca kadının gündelik yaşamını ve anne olma hayallerini etkiler; bazı tahminler [**tüm kadınların %3–5'inde**](https://www.ncbi.nlm.nih.gov/pmc/makaleler/PMC12414060/) ve **kısırlık yaşayan çiftlerin %40'ında** endometriozis saptandığını bildiriyor. {{kanit:B}}
 
 Bu hastalık, yumurtalıklar üzerinde **çikolata kistleri** oluşturabilir, [kronik inflamasyonun](https://ovarianresearch.biomedcentral.com/makaleler/10.1186/s13048-023-01095-4) etkileriyle ve bağışıklık düzensizlikleri nedeniyle sperm‑yumurta etkileşimini bozarak gebeliği zorlaştırır.
 
@@ -93,7 +93,7 @@ Uzun yıllar boyunca endometriozis ve kısırlık arasındaki ilişki **mekanik 
 
 Endometriozisli kadınların [karın boşluğundaki sıvısı, sitokinler, prostaglandinler ve **reaktif oksijen türleri (ROS)** gibi moleküller](https://pmc.ncbi.nlm.nih.gov/makaleler/PMC9107540/) açısından zengindir. Bu inflamatuar "çorba":
 
-- [Sperm hareketliliğini ve DNA bütünlüğünü bozar](https://pubmed.ncbi.nlm.nih.gov/32972732/).
+- [Sperm hareketliliğini ve DNA bütünlüğünü bozar](https://pubmed.ncbi.nlm.nih.gov/32972732/). {{kanit:B}}
 - [Yumurtaların olgunlaşmasını engeller ve embriyo kalitesini düşürür](https://www.tandfonline.com/doi/full/10.1080/14647273.2023.2288634).
 - [Rahmin embriyoyu kabul etme yeteneğini azaltır (implantasyon güçlüğü)](https://reproductive-health-journal.biomedcentral.com/makaleler/10.1186/s12978-025-02166-z).
 

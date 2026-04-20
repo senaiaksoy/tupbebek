@@ -33,7 +33,7 @@ references:
 
 ## Endometriozis Kistleri (Endometriomalar): Belirtiler, Nedenleri ve Tedavi Yöntemleri
 
-Endometriozis, rahim içini kaplayan dokuya benzer hücrelerin rahim dışında büyümesiyle karakterize kronik bir rahatsızlıktır. Bu hastalık, yumurtalıklar (overler), fallop tüpleri ve pelvisin iç yüzeyi gibi üreme organlarının bulunduğu bölgelerde lezyonlar ve kistler oluşturabilir. Özellikle yumurtalıklar üzerinde oluşan endometriozis kistlerine "endometrioma" veya halk arasında "çikolata kisti" adı verilir. Dünya genelinde yaklaşık 190 milyon kadını etkileyen endometriozis; kronik pelvik ağrı, adet dönemlerinde şiddetli sancı, ilişki sırasında ağrı ve kısırlık (infertilite) gibi ciddi semptomlara yol açarak yaşam kalitesini belirgin ölçüde düşürebilir.
+Endometriozis, rahim içini kaplayan dokuya benzer hücrelerin rahim dışında büyümesiyle karakterize kronik bir rahatsızlıktır. Bu hastalık, yumurtalıklar (overler), fallop tüpleri ve pelvisin iç yüzeyi gibi üreme organlarının bulunduğu bölgelerde lezyonlar ve kistler oluşturabilir. Özellikle yumurtalıklar üzerinde oluşan endometriozis kistlerine "endometrioma" veya halk arasında "çikolata kisti" adı verilir. Dünya genelinde yaklaşık 190 milyon kadını etkileyen endometriozis; kronik pelvik ağrı, adet dönemlerinde şiddetli sancı, ilişki sırasında ağrı ve kısırlık (infertilite) gibi ciddi semptomlara yol açarak yaşam kalitesini belirgin ölçüde düşürebilir. {{kanit:B}}
 
 Aşağıda, endometriozis kistlerinin ne olduğu, nasıl teşhis edildiği, hangi tedavi yöntemlerinin uygulandığı ve yaşam tarzı önerileriyle birlikte güncel araştırmaların neler sunduğu konusunda kapsamlı bilgileri bulabilirsiniz.
 
@@ -91,7 +91,7 @@ Tanı, birden fazla adımın birleşiminden oluşan kapsamlı bir süreci gerekt
    - **MRI (Manyetik Rezonans Görüntüleme)**: Özellikle derin endometriozis odaklarının belirlenmesinde daha detaylı bilgi sunar.
 
 3. **Laparoskopi**
-   - Kesin tanı için altın standart yöntemdir. Küçük bir kesiyle karın içine kamera (laparoskop) yerleştirilerek kistler ve lezyonlar doğrudan görülür.
+   - Kesin tanı için altın standart yöntemdir. {{kanit:B}} Küçük bir kesiyle karın içine kamera (laparoskop) yerleştirilerek kistler ve lezyonlar doğrudan görülür.
    - Gerekirse aynı seansta cerrahi tedavi veya biyopsi uygulanabilir.
 
 4. **Kan Testleri**

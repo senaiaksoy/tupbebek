@@ -52,7 +52,7 @@ Merhaba! Erkek kısırlığı, çiftlerin bebek sahibi olma yolculuğunda öneml
 **Uzman Görüşü:**
 Besin takviyelerinin amacı vücudun eksik olabilecek bazı vitamin ve mineralleri tamamlamaktır. Bu takviyeler:
 
-- **Spermi oksidatif stresten koruyabilir** (örneğin Vitamin C, E gibi antioksidanlar).
+- **Spermi oksidatif stresten koruyabilir** (örneğin Vitamin C, E gibi antioksidanlar). {{kanit:C}}
 - **Hormonal dengeyi destekleyebilir** (örneğin çinko, selenyum gibi mineraller).
 - **Enerji üretimini artırarak** sperm hareketliliğine katkıda bulunabilir (L-carnitine ve CoQ10).
 
@@ -65,7 +65,7 @@ Tabii ki bu destekler tek başına mucizevi bir sonuç vaat etmez; doktor kontro
 **Soru:** *"Araştırma sonuçları nelerdir? Bazı çalışmalar farklı sonuçlar gösteriyor."*
 
 **Uzman Görüşü:**
-Doğru. Bazı araştırmalar L-carnitine, CoQ10, çinko, vitamin C ve E gibi takviyelerin sperm sayısı, hareketliliği ve hatta DNA bütünlüğü üzerinde olumlu etkiler gösterdiğini ortaya koyuyor. Örneğin:
+Doğru. Bazı araştırmalar L-carnitine, CoQ10, çinko, vitamin C ve E gibi takviyelerin sperm sayısı, hareketliliği ve hatta DNA bütünlüğü üzerinde olumlu etkiler gösterdiğini ortaya koyuyor. {{kanit:C}} Örneğin:
 
 - **Kombinasyon Etkisi:** Çinko ve folik asidin bir arada kullanımıyla sperm sayısında artış görülebiliyor.
 - **Çelişkili Bulgular:** Bazı büyük ölçekli randomize kontrollü çalışmalarda ise bu antioksidan karışımlarının semen parametrelerini veya doğum oranlarını artırmadığı görüldü.

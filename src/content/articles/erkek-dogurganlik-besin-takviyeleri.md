@@ -48,7 +48,7 @@ references:
 
 ## Erkek Doğurganlığını Artıran Besin Takviyeleri: Bilmeniz Gereken Her Şey
 
-Erkek doğurganlığıyla ilgili sorunlar, düşündüğünüzden çok daha yaygın: Çiftlerin yaklaşık %15'i bebek sahibi olmakta zorluk çekerken, bunların yarısından fazlasında sorun erkek kaynaklı etkenlerden kaynaklanır. Yetersiz sperm üretimi, şekil bozuklukları veya sperm geçişini engelleyen tıkanıklıklar gibi durumlar, baba olma hayalinize gölge düşürebilir. Neyse ki, besin takviyelerinin sperm kalitesine olumlu etkileri üzerine giderek daha fazla araştırma yapılıyor. Bu yazıda, CoQ10'dan çinkoya, D vitamininden L-karnitine kadar, erkek doğurganlığınızı desteklemede rol oynayabilecek öne çıkan takviyelere göz atıyoruz.
+Erkek doğurganlığıyla ilgili sorunlar, düşündüğünüzden çok daha yaygın: Çiftlerin yaklaşık %15'i bebek sahibi olmakta zorluk çekerken, bunların yarısından fazlasında sorun erkek kaynaklı etkenlerden kaynaklanır. {{kanit:B}} Yetersiz sperm üretimi, şekil bozuklukları veya sperm geçişini engelleyen tıkanıklıklar gibi durumlar, baba olma hayalinize gölge düşürebilir. Neyse ki, besin takviyelerinin sperm kalitesine olumlu etkileri üzerine giderek daha fazla araştırma yapılıyor. Bu yazıda, CoQ10'dan çinkoya, D vitamininden L-karnitine kadar, erkek doğurganlığınızı desteklemede rol oynayabilecek öne çıkan takviyelere göz atıyoruz.
 
 ---
 
@@ -81,7 +81,7 @@ Her kısırlık vakası mutlaka takviyelerle çözülecek diye bir kural yok. An
 **CoQ10**, hücrelerin enerji üretiminde rol alan güçlü bir antioksidan. Erkek üreme sağlığına dair pek çok uzman, spermin hareketliliği (motilite) ve sayısı üzerindeki olumlu etkileri nedeniyle CoQ10'u öneriyor.
 
 - **Faydaları:**
-  - Sperm hareketliliğini ve sayısını artırabilir.
+  - Sperm hareketliliğini ve sayısını artırabilir. {{kanit:C}}
   - Serbest radikallerin zararına karşı hücreleri korur.
 - **Olası Yan Etkiler:**
   - Hafif sindirim problemleri, mide yanması veya iştah kaybı.
