@@ -50,7 +50,7 @@ references:
 
 ## Kısa Cevap
 
-Tüp bebek başarısını belirleyen en önemli etken **kadın yaşıdır**. 35 yaş altında canlı doğum oranı **%50-60** civarındayken, 35-39 yaş aralığında bu oran **%30-40** bandına geriler. 40 yaşından sonra ise şans **%10-20**'lere düşer ve yaş ilerledikçe keskin bir şekilde azalır. Bunun temel nedeni, zamanla yumurta sayısının (rezerv) ve genetik kalitesinin kaçınılmaz olarak düşmesidir.
+Tüp bebek başarısını belirleyen en önemli etken **kadın yaşıdır** {{kanit:B}}. 35 yaş altında canlı doğum oranı **%50-60** civarındayken, 35-39 yaş aralığında bu oran **%30-40** bandına geriler. 40 yaşından sonra ise şans **%10-20**'lere düşer ve yaş ilerledikçe keskin bir şekilde azalır {{kanit:B}}. Bunun temel nedeni, zamanla yumurta sayısının (rezerv) ve genetik kalitesinin kaçınılmaz olarak düşmesidir.
 
 **Bu yazıda:**
 
@@ -66,19 +66,19 @@ Hepimiz o meşhur *"Yaş sadece bir sayıdır"* lafını çok severiz. Gönül i
 
 ## 30-35 yaş arası tüp bebek başarı oranı nedir?
 
-30-35 yaş aralığı, tüp bebek tedavisi için **en ideal dönemlerden biridir**. Bu yaş grubunda, tek bir tüp bebek süreci (embriyo transferi) ile canlı doğum elde etme şansı **%50 ile %60** arasındadır. Yumurta kalitesinin ve genetik bütünlüğün yüksek olması, bu yüksek başarı oranının ana sebebidir.
+30-35 yaş aralığı, tüp bebek tedavisi için **en ideal dönemlerden biridir**. Bu yaş grubunda, tek bir tüp bebek süreci (embriyo transferi) ile canlı doğum elde etme şansı **%50 ile %60** arasındadır {{kanit:B}}. Yumurta kalitesinin ve genetik bütünlüğün yüksek olması, bu yüksek başarı oranının ana sebebidir.
 
 Bu dönemde vücut, ilaçlara (stimülasyon) çok iyi yanıt verir. Bol miktarda ve kaliteli yumurta toplayabildiğimiz için elimizde transfer edilebilecek, hatta gelecekteki kardeşler için dondurulabilecek harika embriyolarımız olur. Eğer henüz çocuk düşünmüyorsanız ama kariyer/hayat planlarınız varsa, **fertilite koruma** amaçlı [yumurta dondurma](/makaleler/yumurta-dondurma-rehberi) işlemi için de en kıymetli yıllar bu yıllardır.
 
 ## 35-40 yaş arası tüp bebek şansı nasıl değişir?
 
-35 yaşından sonra tüp bebek başarı oranlarında belirgin bir düşüş ivmesi başlar; bu yaş aralığında canlı doğum oranları genellikle **%30 ile %40** civarındadır. **37 yaşından itibaren** ise bu düşüş daha da keskinleşir ve 39 yaşına gelindiğinde şans **%20-25**'lere kadar inebilir.
+35 yaşından sonra tüp bebek başarı oranlarında belirgin bir düşüş ivmesi başlar; bu yaş aralığında canlı doğum oranları genellikle **%30 ile %40** civarındadır {{kanit:B}}. **37 yaşından itibaren** ise bu düşüş daha da keskinleşir ve 39 yaşına gelindiğinde şans **%20-25**'lere kadar inebilir.
 
 Bunun sebebi "Yumurtalarımın sayısı mı bitti?" endişesi değildir sadece. Asıl mesele, kalan yumurtaların **"kalitesidir"**. Zamanla yumurtaların içindeki genetik materyal yorulur. ESHRE 2024 kılavuzuna göre, 35 yaş üstü hastalarda oluşan embriyolarda kromozomal anormallik (anöploidi) riski artmaktadır. Bu da tutunmama veya erken düşük riskini beraberinde getirir.
 
 ## 40 yaşından sonra hamile kalma şansı nedir?
 
-40 yaşını geçtikten sonra kendi yumurtalarınızla tüp bebek tedavisinde canlı doğum şansı **%10-20** aralığındadır. 42-43 yaşlarında bu oran **%5**'lere, 44 yaşından sonra ise **%1-2**'lere kadar gerilemektedir. Bu yaş grubunda tedavi protokolleri tamamen hastaya özel ve çok titizlikle yürütülmelidir.
+40 yaşını geçtikten sonra kendi yumurtalarınızla tüp bebek tedavisinde canlı doğum şansı **%10-20** aralığındadır {{kanit:B}}. 42-43 yaşlarında bu oran **%5**'lere, 44 yaşından sonra ise **%1-2**'lere kadar gerilemektedir {{kanit:B}}. Bu yaş grubunda tedavi protokolleri tamamen hastaya özel ve çok titizlikle yürütülmelidir.
 
 > **Tüp bebek uzmanı Doç. Dr. Senai Aksoy'a göre**, [PGT-A](/pgt-merkezi) taraması kromozomal anomalileri tespit ederek implantasyon başarısını artırmaktadır — bu bulgu ASRM komite görüşleriyle de desteklenmektedir.
 

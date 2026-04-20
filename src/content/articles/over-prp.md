@@ -69,8 +69,8 @@ references:
 
 ## Kısa Özet
 
-Yumurtalık PRP (intraovaryen PRP), hastanın kendi kanından elde edilen trombositten zengin plazmanın ultrason eşliğinde over dokusuna uygulanmasıdır. 2024-2026 döneminde yayımlanan çalışmalar, özellikle azalmış over rezervi (DOR) ve erken over yetmezliği (POI) gruplarında AMH ve antral folikül sayısında artış olabileceğini göstermektedir.  
-Buna karşın canlı doğum üzerindeki net katkı henüz kesinleşmemiştir. Bu nedenle yöntem, güncel uluslararası rehberlerde standart tedavi değil, seçilmiş hastalarda dikkatle değerlendirilen araştırma niteliğinde bir yaklaşım olarak ele alınmaktadır.
+Yumurtalık PRP (intraovaryen PRP), hastanın kendi kanından elde edilen trombositten zengin plazmanın ultrason eşliğinde over dokusuna uygulanmasıdır {{kanit:C}}. 2024-2026 döneminde yayımlanan çalışmalar, özellikle azalmış over rezervi (DOR) ve erken over yetmezliği (POI) gruplarında AMH ve antral folikül sayısında artış olabileceğini göstermektedir {{kanit:C}}.  
+Buna karşın canlı doğum üzerindeki net katkı henüz kesinleşmemiştir {{kanit:C}}. Bu nedenle yöntem, güncel uluslararası rehberlerde standart tedavi değil, seçilmiş hastalarda dikkatle değerlendirilen araştırma niteliğinde bir yaklaşım olarak ele alınmaktadır.
 
 ## Bu Yazıda Neler Var?
 
@@ -187,7 +187,7 @@ Klinik hedef, yalnızca sayısal artış değil, embriyo gelişimi ve olası can
 
 <h2 id="kilavuzlar">Uluslararası Kılavuzlar Ne Diyor?</h2>
 
-ESHRE (2025 güncellemesi) ve ASRM (2024 POI kılavuzu), intraovaryen PRP'yi rutin standart tedavi olarak sınıflandırmamaktadır. Ortak yaklaşım:
+ESHRE (2025 güncellemesi) ve ASRM (2024 POI kılavuzu), intraovaryen PRP'yi rutin standart tedavi olarak sınıflandırmamaktadır {{kanit:C}}. Ortak yaklaşım:
 
 - Uygulama seçilmiş vakalarda, açık bilgilendirme ile değerlendirilmeli
 - Hastaya yöntemin deneysel/araştırma niteliği net anlatılmalı
@@ -201,7 +201,7 @@ Devam eden klinik çalışmaların sonuçları (ör. OPIF ve diğer NCT kayıtl�
 
 ### Yumurtalık PRP kesin olarak gebelik sağlar mı?
 
-Hayır. PRP bazı biyolojik göstergelerde iyileşme sağlayabilir; ancak canlı doğum üzerinde kesin ve her hastada geçerli bir sonuç garantisi yoktur.
+Hayır. PRP bazı biyolojik göstergelerde iyileşme sağlayabilir; ancak canlı doğum üzerinde kesin ve her hastada geçerli bir sonuç garantisi yoktur {{kanit:C}}.
 
 ### PRP ağrılı bir işlem midir?
 

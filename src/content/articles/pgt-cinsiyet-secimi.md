@@ -43,13 +43,13 @@ references:
 
 ## PGT ile Cinsiyet Belirlenebilir mi?
 
-[PGT (Preimplantasyon Genetik Test)](/makaleler/genetik-testler), tüp bebek tedavisinde embriyoların genetik yapısını transfer öncesinde inceleyen bir testtir. Bu test sırasında embriyonun cinsiyet kromozomları da (XX = kız, XY = erkek) tespit edilebilir. Ancak **tespit edebilmek ile cinsiyet seçimi yapabilmek aynı şey değildir.**
+[PGT (Preimplantasyon Genetik Test)](/makaleler/genetik-testler), tüp bebek tedavisinde embriyoların genetik yapısını transfer öncesinde inceleyen bir testtir. Bu test sırasında embriyonun cinsiyet kromozomları da (XX = kız, XY = erkek) tespit edilebilir {{kanit:C}}. Ancak **tespit edebilmek ile cinsiyet seçimi yapabilmek aynı şey değildir.**
 
 ---
 
 ## Türkiye'de Cinsiyet Seçimi Yasaktır
 
-Türkiye'de cinsiyet seçimi, **T.C. Sağlık Bakanlığı ÜYTE (Üremeye Yardımcı Tedavi Uygulamaları) Yönetmeliği** ile açıkça yasaklanmıştır. Bu yasak hem tıbbi olmayan (sosyal) nedenlerle hem de "aile dengesi" gibi gerekçelerle cinsiyet seçimini kapsar.
+Türkiye'de cinsiyet seçimi, **T.C. Sağlık Bakanlığı ÜYTE (Üremeye Yardımcı Tedavi Uygulamaları) Yönetmeliği** ile açıkça yasaklanmıştır {{kanit:C}}. Bu yasak hem tıbbi olmayan (sosyal) nedenlerle hem de "aile dengesi" gibi gerekçelerle cinsiyet seçimini kapsar.
 
 ### Yasal Çerçeve
 
@@ -59,7 +59,7 @@ Türkiye'de cinsiyet seçimi, **T.C. Sağlık Bakanlığı ÜYTE (Üremeye Yard�
 
 ### Tek İstisna: Cinsiyete Bağlı Genetik Hastalıklar
 
-Bazı genetik hastalıklar yalnızca belirli bir cinsiyeti etkiler. Bu hastalıklara **"X'e bağlı hastalıklar"** denir ve genellikle erkek çocuklarda ortaya çıkar. Örnekler:
+Bazı genetik hastalıklar yalnızca belirli bir cinsiyeti etkiler. Bu hastalıklara **"X'e bağlı hastalıklar"** denir ve genellikle erkek çocuklarda ortaya çıkar {{kanit:C}}. Örnekler:
 
 - **Hemofili (Kan durdurulamama hastalığı):** Kanın pıhtılaşmasını sağlayan etkenlerin eksikliği
 - **Duchenne Kas Distrofisi (DMD):** Kasların ilerleyici şekilde güçsüzleşmesi
@@ -114,7 +114,7 @@ Bazı ülkelerde cinsiyet seçimi serbesttir, bazılarında yasaktır. Ancak Tü
 Doktorunuz sizi genetik danışmanlık birimine yönlendirecektir. Taşıyıcılığınız genetik testlerle doğrulandıktan sonra PGT-M ile hastalığın embriyoya geçip geçmediği taranabilir. Bu işlem tamamen yasal ve tıbbi endikasyona dayalıdır.
 
 **PGT embriyoya zarar verir mi?**
-Modern biyopsi tekniklerinde embriyonun bebeğe dönüşecek kısmına dokunulmaz. Dış tabakadan (trofektoderm) birkaç hücre alınır. Embriyo hasar riski %1'in altındadır.
+Modern biyopsi tekniklerinde embriyonun bebeğe dönüşecek kısmına dokunulmaz. Dış tabakadan (trofektoderm) birkaç hücre alınır. Embriyo hasar riski %1'in altındadır {{kanit:C}}.
 
 ---
 

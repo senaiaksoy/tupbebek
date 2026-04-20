@@ -39,7 +39,7 @@ Tüp bebek tedavisi ile kesin çocuğum olur mu? Çocuğum olmuyorsa tek çözü
 
 Günümüzde tüp bebek tedavilerinin başarı oranları çok yüksek olmasına rağmen her durumda doktorunuzun ilk tercihi olmayabilir. Örneğin [açıklanamayan kısırlık problemi](/aciklanamayan-kisirlik "açıklanamayan kısırlık nedir") yaşayan çiftlerde kadın 38 yaşın altındaysa [aşılama (IUI) yöntemi](/asilama "aşılama IUI nedir?") sıklıkla tercih edilen tedavilerden biridir.
 
-Genel olarak bakıldığında aşılamanın hamilelikle sonuçlanma ihtimali tüp bebek tedavisinden düşük olsa da, açıklanamayan kısırlık sorunu yaşayan genç kadınlar bu yöntemle hamile kalabilmektedir.
+Genel olarak bakıldığında aşılamanın hamilelikle sonuçlanma ihtimali tüp bebek tedavisinden düşük olsa da, açıklanamayan kısırlık sorunu yaşayan genç kadınlar bu yöntemle hamile kalabilmektedir {{kanit:B}}.
 
 Aşılama yapılarak hamile kalan kadınların çoğunda başarı ilk 3 siklusta elde edilmektedir. Genellikle aşılamanın ilk üç siklusunda başarı elde edilmezse tüp bebek tedavisi önerilir.
 
@@ -55,7 +55,7 @@ _**\-Tedavi süresince sorularınız veya yolunda gitmeyen birşey olduğunda do
 
 ### 3\. Tüp bebek tedavileri Türkiye'de çok pahalı!
 
-Tüp bebek tedavisi ülkemizde pek çok diğer ülkeye göre daha ucuzdur ve başarı oranları yüksektir.
+Tüp bebek tedavisi ülkemizde pek çok diğer ülkeye göre daha ucuzdur ve başarı oranları yüksektir {{kanit:C}}.
 
 ### 4\. Tüp bebek tedavisi için çok zaman ayırmak gerek!
 
@@ -71,9 +71,9 @@ Yardımcı üreme teknikleri ile hamile kalındığında [çoğul gebelik riski]
 
 ### 6\. Tüp bebek tedavisi ile kesin olarak bebek sahibi olabilirim!
 
-Ne yazık ki tüp bebek tedavisi bebek sahibi olmanızı garanti etmez, ancak kısırlık problemi yaşayan pek çok çiftin bebek sahibi olma şansını artırır.
+Ne yazık ki tüp bebek tedavisi bebek sahibi olmanızı garanti etmez, ancak kısırlık problemi yaşayan pek çok çiftin bebek sahibi olma şansını artırır {{kanit:B}}.
 
-Başarı oranı çoğunlukla kadının yaşına bağlıdır. 35 yaşın altındaki kadınlarda tek tüp bebek siklusu ile hamile kalma şansı %50-60'a kadar çıkabilir. Bu oranı değerlendirirken kadının normal bir adet döngüsünde hamile kalma şansının %25 olduğunu ve kısırlık teşhisi konan çiftlerde bu şansın %5'e düştüğünü göz önünde bulundurmak gerekir.
+Başarı oranı çoğunlukla kadının yaşına bağlıdır {{kanit:B}}. 35 yaşın altındaki kadınlarda tek tüp bebek siklusu ile hamile kalma şansı %50-60'a kadar çıkabilir {{kanit:B}}. Bu oranı değerlendirirken kadının normal bir adet döngüsünde hamile kalma şansının %25 olduğunu ve kısırlık teşhisi konan çiftlerde bu şansın %5'e düştüğünü göz önünde bulundurmak gerekir {{kanit:C}}.
 
 ### 7\. Kısırlık tedavisi görmek için yaşım henüz genç!
 

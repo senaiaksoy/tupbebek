@@ -33,7 +33,7 @@ references:
 
 ## Polikistik Over Sendromu (PCOS): IVF Yolculuğunuzun Gizli Başrolü mü?
 
-PCOS (Polikistik Over Sendromu) deyince aklınıza belki sivilceler, hormonal dengesizlikler ve bitmek bilmeyen adet düzensizlikleri gelebilir. Ama bu tablo bundan çok daha fazlasını içeriyor—özellikle de anne olmaya hazırlanıyorsanız. PCOS, yumurta kalitesini etkileyerek hamileliği adeta bir "catwalk" yerine zorlu bir parkura dönüştürebilir. Gelin, PCOS'u masaya yatıralım: yumurta kalitesinden metabolik etkilerine, IVF başarısına kadar her açıdan mercek altına alıyoruz.
+PCOS (Polikistik Over Sendromu) deyince aklınıza belki sivilceler, hormonal dengesizlikler ve bitmek bilmeyen adet düzensizlikleri gelebilir. Ama bu tablo bundan çok daha fazlasını içeriyor—özellikle de anne olmaya hazırlanıyorsanız. PCOS, yumurta kalitesini etkileyerek hamileliği adeta bir "catwalk" yerine zorlu bir parkura dönüştürebilir {{kanit:B}}. Gelin, PCOS'u masaya yatıralım: yumurta kalitesinden metabolik etkilerine, IVF başarısına kadar her açıdan mercek altına alıyoruz.
 
 ---
 
@@ -81,7 +81,7 @@ Düzensiz beslenme, hareketsiz bir yaşam ve yüksek stres ortamı, PCOS'u alevl
 
 ### Metabolik Dalgalanmalar
 
-PCOS, tip 2 diyabet, yüksek kolesterol ve hipertansiyon gibi metabolik sorunlara davetiye çıkarabilir. Bu konuları es geçmek ileride kalp-damar hastalıklarına kadar uzanan ciddi problemlere yol açabilir.
+PCOS, tip 2 diyabet, yüksek kolesterol ve hipertansiyon gibi metabolik sorunlara davetiye çıkarabilir {{kanit:B}}. Bu konuları es geçmek ileride kalp-damar hastalıklarına kadar uzanan ciddi problemlere yol açabilir.
 
 ### Uyku Apnesi
 
@@ -111,7 +111,7 @@ PCOS'ta hücreleriniz insüline gerektiği gibi yanıt vermez ve daha fazla ins�
 
 ### İnfertilite ve PCOS
 
-PCOS, kadın kısırlığının en yaygın nedenlerinden biridir. Ovülasyon düzensizliği ve düşük yumurta kalitesi, anne olma yolunda ekstra engeller çıkartabilir. Ancak günümüz teknolojisiyle PCOS, anne olma hayalinizi ertelenmesi gereken bir sorun olmaktan çıkıyor.
+PCOS, kadın kısırlığının en yaygın nedenlerinden biridir {{kanit:B}}. Ovülasyon düzensizliği ve düşük yumurta kalitesi, anne olma yolunda ekstra engeller çıkartabilir. Ancak günümüz teknolojisiyle PCOS, anne olma hayalinizi ertelenmesi gereken bir sorun olmaktan çıkıyor.
 
 ### IVF Tedavisi: PCOS'lu Kadınlar İçin Özel Yaklaşım
 
@@ -127,7 +127,7 @@ Tüp bebek tedavisi, PCOS'lu kadınlar için etkili bir çözüm olarak öne ç�
 
 ### Başarı Oranları
 
-PCOS'lu kadınların tüp bebek tedavisinde başarı şansı oldukça yüksektir. İyi bir tedavi planı ve kişisel sağlık etkenleri göz önünde bulundurularak gebelik oranları %35 ile %50 arasında değişebilmektedir.
+PCOS'lu kadınların tüp bebek tedavisinde başarı şansı oldukça yüksektir. İyi bir tedavi planı ve kişisel sağlık etkenleri göz önünde bulundurularak gebelik oranları %35 ile %50 arasında değişebilmektedir {{kanit:C}}.
 
 ### Gebelik Sürecinde Takip
 
