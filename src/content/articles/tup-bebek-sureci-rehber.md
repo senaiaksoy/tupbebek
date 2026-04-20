@@ -46,7 +46,7 @@ Peki, bu yolculukta hangi duraklardan geçeceğiz? İlk muayeneden başlayıp em
 
 ## **1. İlk Muayene ve Değerlendirme**
 
-Burada doktorunuz (hani şu "sizi kahveyle değil, ultrason probuyla karşılayan") tıbbi geçmişinizi, hormon seviyelerinizi, rahim ve yumurtalık yapınızı inceler. Erkek tarafında ise sperm analizi yapılır.
+Burada doktorunuz (hani şu "sizi kahveyle değil, ultrason probuyla karşılayan") tıbbi geçmişinizi, hormon seviyelerinizi, rahim ve yumurtalık yapınızı inceler. Erkek tarafında ise sperm analizi yapılır. {{kanit:B}}
 📌 **Amaç:** Doğru tedavi protokolünü belirlemek.
 **İpucu:** Bu aşamada tahlillerinizi önceden toparlayın, hem zaman kazanırsınız hem de doktorunuzun gözü parlar.
 
@@ -54,7 +54,7 @@ Burada doktorunuz (hani şu "sizi kahveyle değil, ultrason probuyla karşılaya
 
 ## **2. Yumurtalıkların Uyarılması (Ovarian Stimulation)**
 
-Günlük iğneler başlıyor. Evet, kulağa romantik gelmiyor ama yumurtaların birden fazla gelişmesi için şart.
+Günlük iğneler başlıyor. Evet, kulağa romantik gelmiyor ama yumurtaların birden fazla gelişmesi için şart. {{kanit:B}}
 📌 **Anahtar nokta:** Doz ve süre kişiye özel ayarlanır.
 
 -
@@ -72,21 +72,21 @@ Toplanan yumurtalar ile spermler laboratuvarda buluşturulur.
 
 - **Klasik IVF:** Yumurtanın etrafına spermler bırakılır, doğa işini yapar.
 - **ICSI (Mikroenjeksiyon):** Tek bir sperm, doğrudan yumurtanın içine enjekte edilir.
-  📌 **Avantaj:** ICSI, düşük sperm sayısı veya kalitesi olan çiftlerde başarıyı artırır.
+  📌 **Avantaj:** ICSI, düşük sperm sayısı veya kalitesi olan çiftlerde başarıyı artırır. {{kanit:B}}
 
 ---
 
 ## **5. Embriyo Gelişimi ve Takip**
 
 Yumurtanın döllenmesinden sonraki günler, adeta bir reality show: "Big Brother: Embriyo Evi" — Her gün mikroskop başında takip edilir.
-📌 **Blastokist aşaması (5. gün):** Transfer için en yüksek başarı oranına sahip embriyo seçilir.
+📌 **Blastokist aşaması (5. gün):** Transfer için en yüksek başarı oranına sahip embriyo seçilir. {{kanit:B}}
 
 ---
 
 ## **6. Embriyo Transferi**
 
 Ağrısız ve kısa süren bir işlemdir. En kaliteli embriyo, rahme yerleştirilir.
-📌 **İpucu:** İşlem sonrası ayağa kalkmanız bebeğin tutunma şansını düşürmez. "Yat kalk dua et" dönemi biraz mit.
+📌 **İpucu:** İşlem sonrası ayağa kalkmanız bebeğin tutunma şansını düşürmez. {{kanit:A}} "Yat kalk dua et" dönemi biraz mit.
 
 ---
 

@@ -65,7 +65,7 @@ Dondurulmuş embriyo transferinde (FET) ise işler biraz farklı yürüyor. Yumu
 
 Birkaç ay sonra, rahminizi embriyo tutunması için en uygun hale getirmek için daha hafif ilaçlar kullanıyoruz. Rahim duvarı (endometrium) doğru kalınlığa ve yapıya ulaştığında, dondurulmuş embriyoyu çözüp transfer ediyoruz.
 
-Bu yöntemin günümüzde bu kadar başarılı ve popüler olmasının ardında yatan teknolojik devrim ise [**vitrifikasyon**](/makaleler/taze-dondurulmus-transfer/)'dur. Bu "şok dondurma" tekniği, embriyonun hücrelerinde hasara yol açabilecek buz kristallerinin oluşumunu engelleyerek, embriyoların -196 derecede, sıvı azot içinde yıllarca güvenle saklanmasını sağlar. Bu teknoloji sayesinde, çözülen embriyoların hayatta kalma oranı neredeyse %100'e ulaşmıştır.
+Bu yöntemin günümüzde bu kadar başarılı ve popüler olmasının ardında yatan teknolojik devrim ise [**vitrifikasyon**](/makaleler/taze-dondurulmus-transfer/)'dur. Bu "şok dondurma" tekniği, embriyonun hücrelerinde hasara yol açabilecek buz kristallerinin oluşumunu engelleyerek, embriyoların -196 derecede, sıvı azot içinde yıllarca güvenle saklanmasını sağlar. {{kanit:B}} Bu teknoloji sayesinde, çözülen embriyoların hayatta kalma oranı neredeyse %100'e ulaşmıştır. {{kanit:B}}
 
 ## Dondurulmuş Embriyo Transferi (FET) Neden Öne Çıkıyor? Avantajları
 
@@ -77,7 +77,7 @@ Taze transferlerdeki yüksek hormon seviyeleri bazen rahmin embriyoyu kabul etme
 
 ### OHSS Riskine Karşı Güçlü Kalkan
 
-[Yumurtalıkların Aşırı Uyarılması Sendromu](/makaleler/ivf-protokolleri/), tüp bebek tedavisinin en ciddi komplikasyonlarından biridir. Özellikle Polikistik Over Sendromu (PCOS) olan veya tedaviye çok sayıda yumurta ile yanıt veren kadınlarda risk artar. Taze transfer yapıldığında, gebeliğin başlamasıyla salgılanan hormonlar mevcut OHSS tablosunu çok daha ağırlaştırabilir. "Tümünü dondurma" (freeze-all) stratejisi ise bu riski neredeyse tamamen ortadan kaldırır. Embriyoları dondurarak transferi ertelediğimizde, vücudun sakinleşmesini bekler ve anne adayının sağlığını ilk sıraya koymuş oluruz. Bu yaklaşım, Amerikan Üreme Tıbbı Derneği (ASRM) gibi önde gelen kuruluşlar tarafından yüksek riskli hastalarda özellikle tavsiye edilmektedir.
+[Yumurtalıkların Aşırı Uyarılması Sendromu](/makaleler/ivf-protokolleri/), tüp bebek tedavisinin en ciddi komplikasyonlarından biridir. {{kanit:B}} Özellikle Polikistik Over Sendromu (PCOS) olan veya tedaviye çok sayıda yumurta ile yanıt veren kadınlarda risk artar. {{kanit:B}} Taze transfer yapıldığında, gebeliğin başlamasıyla salgılanan hormonlar mevcut OHSS tablosunu çok daha ağırlaştırabilir. {{kanit:B}} "Tümünü dondurma" (freeze-all) stratejisi ise bu riski neredeyse tamamen ortadan kaldırır. {{kanit:B}} Embriyoları dondurarak transferi ertelediğimizde, vücudun sakinleşmesini bekler ve anne adayının sağlığını ilk sıraya koymuş oluruz. Bu yaklaşım, Amerikan Üreme Tıbbı Derneği (ASRM) gibi önde gelen kuruluşlar tarafından yüksek riskli hastalarda özellikle tavsiye edilmektedir. {{kanit:B}}
 
 ### Genetik Sağlık ve Planlama Esnekliği (PGT)
 
@@ -99,7 +99,7 @@ FET'in en büyük eksiği, hamile kalma sürecini uzatması. Taze transfere gör
 
 Bu konu, bilim dünyasında halen aktif olarak araştırılan ve üzerinde tam bir fikir birliğine varılmamış, hassas bir noktadır. Bazı geniş kapsamlı çalışmalar ve meta-analizler, dondurulmuş embriyo transferi sonrası oluşan gebeliklerde, taze transfere ve doğal yolla oluşan gebeliklere kıyasla gebelik tansiyonu (preeklampsi) gibi hipertansif bozuklukların riskinde hafif bir artış olabileceğini göstermektedir([https://doi.org/10.1093/humupd/dmy033](https://doi.org/10.1093/humupd/dmy033)). Yine bazı veriler, bu bebeklerin gebelik haftasına göre daha iri (LGA - Large for Gestational Age) doğma eğiliminde olabileceğine işaret etmektedir.
 
-Öte yandan, aynı bilimsel çalışmalar dondurulmuş transfer sonrası doğan bebeklerde erken doğum ve düşük doğum ağırlığı riskinin taze transfere göre **daha düşük** olduğunu da doğrulamaktadır. Bu karmaşık tablo, her kararın kişiye özel risk ve fayda analizleri ile verilmesi gerektiğini göstermektedir. Bu veriler, FET'in tehlikeli olduğu anlamına gelmez; sadece her hastanın profilini dikkatle değerlendirerek en uygun protokolü seçmemiz gerektiğini hatırlatır.
+Öte yandan, aynı bilimsel çalışmalar dondurulmuş transfer sonrası doğan bebeklerde erken doğum ve düşük doğum ağırlığı riskinin taze transfere göre **daha düşük** olduğunu da doğrulamaktadır. {{kanit:B}} Bu karmaşık tablo, her kararın kişiye özel risk ve fayda analizleri ile verilmesi gerektiğini göstermektedir. {{kanit:B}} Bu veriler, FET'in tehlikeli olduğu anlamına gelmez; sadece her hastanın profilini dikkatle değerlendirerek en uygun protokolü seçmemiz gerektiğini hatırlatır.
 
 ### Embriyo Hayatta Kalma Riski
 
@@ -109,7 +109,7 @@ Günümüzdeki vitrifikasyon yöntemleri sayesinde embriyolar çözüldükten so
 
 "Hocam, peki hangisi daha başarılı?" Bu, bana en sık sorulan sorudur. Cevabı, "kimin için?" sorusunda gizlidir.
 
-Genel olarak, vücudu tedaviye normal yanıt veren (normo-responder) kadınlarda, iyi laboratuvar koşullarında yapılan taze ve dondurulmuş embriyo transferlerinin canlı doğum oranları arasında anlamlı bir fark yoktur; sonuçlar oldukça benzerdir([https://doi.org/10.1093/humupd/dmy033](https://doi.org/10.1093/humupd/dmy033)). Hatta bazı çalışmalar, dondurulmuş transferin %3-5 gibi küçük bir avantaj sağlayabildiğini öne sürmektedir.
+Genel olarak, vücudu tedaviye normal yanıt veren (normo-responder) kadınlarda, iyi laboratuvar koşullarında yapılan taze ve dondurulmuş embriyo transferlerinin canlı doğum oranları arasında anlamlı bir fark yoktur; sonuçlar oldukça benzerdir([https://doi.org/10.1093/humupd/dmy033](https://doi.org/10.1093/humupd/dmy033)). {{kanit:B}} Hatta bazı çalışmalar, dondurulmuş transferin %3-5 gibi küçük bir avantaj sağlayabildiğini öne sürmektedir. {{kanit:C}}
 
 Asıl fark, belirli hasta gruplarında ortaya çıkar. Dondurulmuş transferin başarı oranlarını belirgin şekilde artırdığı durumlar şunlardır:
 

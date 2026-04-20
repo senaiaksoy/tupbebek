@@ -44,7 +44,7 @@ references:
 
 ## Genetik Testler Neden Önemli?
 
-[Tüp bebek tedavisinde](/tedavi-yontemleri) en kritik aşamalardan biri, transfer edilecek embriyonun seçimidir. Embriyonun [dış görünümü (morfolojisi)](/makaleler/laboratuvar-raporu-yorumlama) kalitesi hakkında bilgi verir, ancak **genetik yapısını** göstermez. Dışarıdan mükemmel görünen bir embriyo, kromozom açısından anormal olabilir.
+[Tüp bebek tedavisinde](/tedavi-yontemleri) en kritik aşamalardan biri, transfer edilecek embriyonun seçimidir. Embriyonun [dış görünümü (morfolojisi)](/makaleler/laboratuvar-raporu-yorumlama) kalitesi hakkında bilgi verir, ancak **genetik yapısını** göstermez. {{kanit:B}} Dışarıdan mükemmel görünen bir embriyo, kromozom açısından anormal olabilir. {{kanit:B}}
 
 İşte burada **PGT (Preimplantasyon Genetik Test)** devreye girer. Bu test, embriyoları rahme transfer etmeden önce genetik olarak tarayarak en sağlıklı embriyonun seçilmesini sağlar.
 
@@ -82,7 +82,7 @@ Kromozomlardaki **yapısal bozuklukları** tarar.
 
 ## Kimlere Önerilir?
 
-PGT her hastaya rutin olarak uygulanması gereken bir test değildir. Genellikle şu durumlarda önerilir:
+PGT her hastaya rutin olarak uygulanması gereken bir test değildir. {{kanit:B}} Genellikle şu durumlarda önerilir:
 
 ### PGT-A İçin
 - **[35-37 yaş ve üzeri](/yas-ve-fertilite) hastalar:** Yaşla birlikte kromozomal anomali riski belirgin şekilde artar
@@ -110,7 +110,7 @@ PGT işlemi embriyoya küçük bir biyopsi uygulanarak gerçekleştirilir. Süre
 4. **Genetik analiz:** Alınan hücreler genetik laboratuvarına gönderilir. Sonuçlar genellikle 1-3 hafta içinde çıkar.
 5. **Transfer:** Sonuçlara göre genetik olarak normal bulunan embriyolar, uygun bir siklusta [dondurulmuş embriyo transferi (FET)](/makaleler/taze-dondurulmus-transfer) ile rahme yerleştirilir.
 
-> **Önemli:** Biyopsi embriyonun dış tabakasından yapılır; bebeğe dönüşecek hücrelere müdahale edilmez. Bu nedenle işlem güvenli kabul edilmektedir.
+> **Önemli:** Biyopsi embriyonun dış tabakasından yapılır; bebeğe dönüşecek hücrelere müdahale edilmez. Bu nedenle işlem güvenli kabul edilmektedir. {{kanit:B}}
 
 ---
 
@@ -129,8 +129,8 @@ Genetik laboratuvarından gelen raporda her embriyo için şu sonuçlardan biri 
 
 PGT'nin kanıta dayalı başlıca faydaları şunlardır:
 
-- **Düşük riskini azaltır:** Kromozomal olarak normal embriyo transferi, gebelik kaybı riskini önemli ölçüde düşürür.
-- **Transfer başına gebelik oranını artırır:** Öploid embriyo ile yapılan tek embriyo transferinde başarı oranı %60-70'e ulaşabilir.
+- **Düşük riskini azaltır:** Kromozomal olarak normal embriyo transferi, gebelik kaybı riskini önemli ölçüde düşürür. {{kanit:B}}
+- **Transfer başına gebelik oranını artırır:** Öploid embriyo ile yapılan tek embriyo transferinde başarı oranı %60-70'e ulaşabilir. {{kanit:B}}
 - **Gereksiz transferleri önler:** Anormal embriyoların transferinden kaçınarak hastaya fiziksel ve duygusal yük bindirmez.
 - **Çoğul gebelik riskini azaltır:** Tek embriyo transferi ile sağlıklı sonuç alma olasılığı arttığı için [birden fazla embriyo transfer etme](/transfer-sureci) ihtiyacı azalır.
 - **Tedavi süresini kısaltır:** Daha az başarısız deneme, daha hızlı sonuç.
@@ -141,7 +141,7 @@ PGT'nin kanıta dayalı başlıca faydaları şunlardır:
 
 PGT çok faydalı bir araçtır ancak bazı sınırlamaları da vardır:
 
-- **%100 garanti vermez:** Öploid embriyo transferi başarıyı artırır ama her transferde gebelik oluşacağı anlamına gelmez. Rahim sağlığı, yaş ve diğer etkenler de etkilidir.
+- **%100 garanti vermez:** Öploid embriyo transferi başarıyı artırır ama her transferde gebelik oluşacağı anlamına gelmez. Rahim sağlığı, yaş ve diğer etkenler de etkilidir. {{kanit:B}}
 - **Embriyo kaybı riski:** Biyopsi sonrası çok küçük bir oranda embriyo zarar görebilir (<%1).
 - **Mozaik sonuçlar:** Biyopsi embriyonun tamamını değil, küçük bir bölümünü temsil eder. Mozaik sonuçlar yorumlanması zor olabilir.
 - **Maliyet:** PGT ek bir maliyet getirir. Embriyo sayısına göre toplam tutar değişir.

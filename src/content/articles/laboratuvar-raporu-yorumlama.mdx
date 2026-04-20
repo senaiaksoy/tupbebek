@@ -42,6 +42,7 @@ import QuoteBlock from '../../components/global/QuoteBlock.astro';
 import JSONLD from '../../components/global/JSONLD.astro';
 import RevealScript from '../../components/global/RevealScript.astro';
 import Video from '../../components/global/Video.astro';
+import InlineEvidence from '../../components/InlineEvidence.astro';
 
 <div class="mesh-hero pt-12 pb-20 px-4 md:px-0 -mx-4 md:-mx-0 mb-12 rounded-3xl shadow-sm border border-white/40" style="background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #dbeafe 100%);">
   <div class="max-w-4xl mx-auto" data-reveal>
@@ -61,7 +62,7 @@ import Video from '../../components/global/Video.astro';
 
 <div data-reveal>
 <MedicalInfoBox title="Hızlı Bakış: Embriyo Derecelendirmesi" icon="🔬" color="blue">
-Embriyo derecelendirmesi (4AA, 3BB vb.), embriyoları dış görünüşlerine göre sıralama yöntemidir. **Nicelik (Harfler) her zaman Nitelik (Genetik) demek değildir.** AA embriyoların şansı daha yüksek olsa da, BB ve hatta BC embriyoları sağlıklı bebeklere dönüşebilir. Transfer için en iyi embriyoyu seçerken; gelişim hızı, hücre yapısı ve genetik potansiyel (PGT-A) birlikte değerlendirilir.
+Embriyo derecelendirmesi (4AA, 3BB vb.), embriyoları dış görünüşlerine göre sıralama yöntemidir. **Nicelik (Harfler) her zaman Nitelik (Genetik) demek değildir.** <InlineEvidence grade="B" /> AA embriyoların şansı daha yüksek olsa da, BB ve hatta BC embriyoları sağlıklı bebeklere dönüşebilir. <InlineEvidence grade="C" /> Transfer için en iyi embriyoyu seçerken; gelişim hızı, hücre yapısı ve genetik potansiyel (PGT-A) birlikte değerlendirilir. <InlineEvidence grade="B" />
 </MedicalInfoBox>
 </div>
 
@@ -78,7 +79,7 @@ Ben bu durumu önemli bir derbiye benzetiyorum. Tribünde oturmuş heyecanla bek
 <div data-reveal>
 <h2 id="gardner">Gardner Sistemi: IVF'nin Da Vinci Şifresi</h2>
 
-Dünya standardı olan Gardner sistemi, embriyoyu üç bileşene ayırır. [David Gardner tarafından geliştirilen bu sistem](https://pmc.ncbi.nlm.nih.gov/makaleler/PMC10694400/), blastosistlerin değerlendirilmesinde altın referanstır.
+Dünya standardı olan Gardner sistemi, embriyoyu üç bileşene ayırır. [David Gardner tarafından geliştirilen bu sistem](https://pmc.ncbi.nlm.nih.gov/makaleler/PMC10694400/), blastosistlerin değerlendirilmesinde altın referanstır. <InlineEvidence grade="B" />
 
 <div class="glass p-8 rounded-3xl border border-blue-100 shadow-sm mt-6 overflow-x-auto">
 <h3 class="text-xl font-bold mb-6 text-blue-800">📊 Genişleme Derecesi (Sayılar)</h3>
@@ -125,7 +126,7 @@ Morfometri çalışmaları gösteriyor ki; trofektoderm (2. harf) hamilelik içi
 <h2 id="analiz">Harf ve Sayıların Analizi (4AA, 3BB, 5BC...)</h2>
 
 <Accordion title="En Üst Düzey: 4AA, 5AA, 6AA">
-Bunlar "sınıfın birincileridir". Başarı oranları 35 yaş altında %60-70 civarındadır. Ancak yaş 38 üzerindeyse, "şık bir arabanın motoruna baktırmak gibi" genetik kontrol (PGT-A) şarttır.
+Bunlar "sınıfın birincileridir". Başarı oranları 35 yaş altında %60-70 civarındadır. <InlineEvidence grade="C" /> Ancak yaş 38 üzerindeyse, "şık bir arabanın motoruna baktırmak gibi" genetik kontrol (PGT-A) şarttır. <InlineEvidence grade="B" />
 </Accordion>
 
 <Accordion title="Ortalama ve İyi: 3BB, 4BB, 5BB">
@@ -141,7 +142,7 @@ Yapılardan birinde zayıflık vardır. Başarı şansı %25-35 civarındadır. 
 <h2 id="genetik">Genetik vs Morfoloji: PGT-A Gerçeği</h2>
 
 Dışarıdan gördüğümüz sadece bir görünüş; asıl sır genlerdedir.
-**Altın Kural:** Genetik olarak normal (Euploid) bir **4CC** embriyo, genetik olarak anormal (Anöploit) bir **4AA** embriyodan çok daha kıymetlidir.
+**Altın Kural:** Genetik olarak normal (Euploid) bir **4CC** embriyo, genetik olarak anormal (Anöploit) bir **4AA** embriyodan çok daha kıymetlidir. <InlineEvidence grade="B" />
 
 Özellikle şu durumlarda genetik taramayı tavsiye ediyorum:
 - 38 yaş üstü anne adayları.

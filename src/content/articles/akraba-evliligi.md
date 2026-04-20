@@ -35,7 +35,7 @@ Akraba evlilikleri, özellikle kuzen evlilikleri, uzun yıllardır birçok kült
 
 ### Genetik Riskler ve Hastalıklar
 
-Akraba evliliklerinde, aile fertleri arasında paylaşılan benzer genetik mutasyonlar nedeniyle, çocukların **otosomal resesif hastalıkları** taşıma riski önemli ölçüde artar. Bu durum, her iki ebeveynden gelen hatalı genlerin birleşmesiyle ortaya çıkar.
+Akraba evliliklerinde, aile fertleri arasında paylaşılan benzer genetik mutasyonlar nedeniyle, çocukların **otosomal resesif hastalıkları** taşıma riski önemli ölçüde artar. {{kanit:B}} Bu durum, her iki ebeveynden gelen hatalı genlerin birleşmesiyle ortaya çıkar. {{kanit:B}}
 
 #### Sık Görülen Genetik Bozukluklar:
 - **Kistik Fibrozis:** Akciğer ve sindirim sistemini etkileyen kronik bir hastalık.
@@ -52,9 +52,9 @@ Akraba evliliklerinden doğan çocuklarda, genel popülasyona göre şu durumlar
 
 ### Genetik Danışmanlık ve Korunma
 
-Akraba evliliği yapmış veya yapmayı planlayan çiftler için modern tıbbın sunduğu en önemli çözüm **Genetik Danışmanlık** ve **Taşıyıcılık Testleri**dir.
+Akraba evliliği yapmış veya yapmayı planlayan çiftler için modern tıbbın sunduğu en önemli çözüm **Genetik Danışmanlık** ve **Taşıyıcılık Testleri**dir. {{kanit:B}}
 
-- **Preimplantasyon Genetik Tanı (PGT):** Tüp bebek tedavisi sırasında embriyoların genetik olarak taranması, sağlıklı embriyoların seçilmesini sağlar.
+- **Preimplantasyon Genetik Tanı (PGT):** Tüp bebek tedavisi sırasında embriyoların genetik olarak taranması, sağlıklı embriyoların seçilmesini sağlar. {{kanit:B}}
 - **Eğitim ve Bilinçlendirme:** Toplumda genetik farkındalığın artırılması, riskli evlilik kararlarının önüne geçilmesine yardımcı olur.
 
 İnfertil çiftler ve risk grubundaki aileler, sağlıklı nesiller planlamak için mutlaka uzman bir hekimden genetik danışmanlık hizmeti almalıdır.

@@ -33,7 +33,7 @@ references:
 
 ## Yumurtlama (Ovülasyon) Takibi: Gebelik Şansınızı Artıran Önemli Bir Yöntem
 
-Kadınlarda **yumurtlama (ovülasyon)** sürecinin sağlıklı ve düzenli işlemesi, gebelik elde edilmesinde kritik bir öneme sahiptir. Yumurtlama takibi, kadının en doğurgan olduğu günleri belirleyerek, ilişki zamanlamasını bu döneme göre planlamayı amaçlar. Böylece gebelik elde etme şansı artar. Bu yazımızda, yumurtlama takibinin ne olduğu, neden yapıldığı ve nasıl uygulandığı hakkında merak edilen tüm detayları bulabilirsiniz.
+Kadınlarda **yumurtlama (ovülasyon)** sürecinin sağlıklı ve düzenli işlemesi, gebelik elde edilmesinde kritik bir öneme sahiptir. {{kanit:B}} Yumurtlama takibi, kadının en doğurgan olduğu günleri belirleyerek, ilişki zamanlamasını bu döneme göre planlamayı amaçlar. Böylece gebelik elde etme şansı artar. {{kanit:B}} Bu yazımızda, yumurtlama takibinin ne olduğu, neden yapıldığı ve nasıl uygulandığı hakkında merak edilen tüm detayları bulabilirsiniz.
 
 ---
 
@@ -61,7 +61,7 @@ Bu iki hormonun adet döngüsündeki düzenli salınımı, sağlıklı bir ovül
 
 **Yumurtlama takibi**, kadının en doğurgan olduğu günleri tespit etmek için yumurta gelişiminin izlenmesi ve ovülasyonun (yumurtanın çatlamasının) gerçekleştiği zamanın belirlenmesidir. Amaç, çiftin cinsel ilişki zamanlamasını bu verimli döneme göre ayarlayarak gebelik ihtimalini artırmaktır.
 
-- **Düzenli cinsel ilişki** (haftada 2-3 kez) yaşayan çiftlerin çoğu için yumurtlama takibine gerek kalmayabilir. Çünkü spermler yaklaşık 72 saat (3 gün) canlı kalır ve düzenli ilişkiyle bu "verimli pencere" büyük ölçüde yakalanır.
+- **Düzenli cinsel ilişki** (haftada 2-3 kez) yaşayan çiftlerin çoğu için yumurtlama takibine gerek kalmayabilir. Çünkü spermler yaklaşık 72 saat (3 gün) canlı kalır ve düzenli ilişkiyle bu "verimli pencere" büyük ölçüde yakalanır. {{kanit:B}}
 - **Düzensiz ilişkisi olan** veya **cinsel ilişki sıklığı düşük** çiftlerde ise, yumurtlama takibi ve doğru zamanlamayla ilişki planlaması faydalı olabilir.
 
 ---
@@ -90,7 +90,7 @@ Bu yöntem, özellikle **yumurtlamayı tetikleyici ilaçların** kullanıldığ�
 
 ### 2. Evde Uygulanan Yumurtlama Takip Kiti (LH Testi)
 
-Eczanelerde satılan ev tipi ovülasyon testleri, idrardaki LH (lüteinleştirici hormon) miktarını ölçerek, yumurtlamanın yaklaşmakta olduğunu gösterir. LH hormonunda ani bir yükselme (LH piki) genellikle **yumurtlama öncesi 24-36 saatte** ortaya çıkar. Bu da ilişkide zamanlamayı ayarlamak için çiftlere pratik bir bilgi sunar.
+Eczanelerde satılan ev tipi ovülasyon testleri, idrardaki LH (lüteinleştirici hormon) miktarını ölçerek, yumurtlamanın yaklaşmakta olduğunu gösterir. LH hormonunda ani bir yükselme (LH piki) genellikle **yumurtlama öncesi 24-36 saatte** ortaya çıkar. {{kanit:B}} Bu da ilişkide zamanlamayı ayarlamak için çiftlere pratik bir bilgi sunar.
 
 - **Nasıl Kullanılır?**: Kadın, adet döngüsünün belirli günlerinden itibaren (genellikle 10. ya da 11. günden) itibaren her gün aynı saatte idrar örneğiyle testi yapar. Test pozitif çıkınca (iki çizgi veya dijital testte "pozitif" uyarısı), sonraki 1-2 gün içinde yumurtlamanın olacağı öngörülür.
 - **Avantajları**: Uygulaması kolay ve ev ortamında sonuç alınabilir.
@@ -102,7 +102,7 @@ Eczanelerde satılan ev tipi ovülasyon testleri, idrardaki LH (lüteinleştiric
 
 Eskiden kadının sabah uyandığı anda ölçtüğü vücut ısısını (bazal ısı) kaydetmesi ve çizelge oluşturmasıyla ovülasyon takibi yapılırdı. Yumurtlamadan sonra vücut ısısı ortalama 0.3-0.5°C artar. Ancak:
 
-- **Güvenilirliği düşüktür** (Uyku düzensizliği, ateşli hastalık, stres, çevresel etkenler gibi etkenler ölçümleri etkileyebilir).
+- **Güvenilirliği düşüktür** (Uyku düzensizliği, ateşli hastalık, stres, çevresel etkenler gibi etkenler ölçümleri etkileyebilir). {{kanit:C}}
 - **Zahmetlidir** (Her sabah aynı saatte, aynı şartlarda ölçüm gerektirir).
 
 Bu nedenle günümüzde BBT yöntemi terk edilmiş, yerini **ultrason** ve **LH testleri** gibi daha objektif yöntemler almıştır.
@@ -130,7 +130,7 @@ Adet düzeninde bozukluk varsa veya yumurtlama döngüsü şüpheliyse, kanda ho
 
 ## Yumurtlama Takibi ve Gebelik Şansı
 
-Yumurtlama zamanının saptanması, çiftlere ilişki zamanlamasını en verimli döneme denk getirme fırsatı sunar. Bu dönem, "**folikül çatlaması**" öncesi ve sonrası 1'er gün olmak üzere yaklaşık 2-3 günlük bir pencereyi kapsar. Bu "**en doğurgan günler**" sırasında gerçekleşen ilişkide gebelik şansı maksimuma çıkar.
+Yumurtlama zamanının saptanması, çiftlere ilişki zamanlamasını en verimli döneme denk getirme fırsatı sunar. Bu dönem, "**folikül çatlaması**" öncesi ve sonrası 1'er gün olmak üzere yaklaşık 2-3 günlük bir pencereyi kapsar. {{kanit:B}} Bu "**en doğurgan günler**" sırasında gerçekleşen ilişkide gebelik şansı maksimuma çıkar. {{kanit:B}}
 
 ### Spermlerin Yaşam Süresi
 

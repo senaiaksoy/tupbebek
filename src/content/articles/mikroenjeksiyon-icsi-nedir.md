@@ -33,7 +33,7 @@ references:
 
 ## Mikroenjeksiyon (ICSI): Şiddetli Erkek Kısırlığına Devrim Niteliğinde Çözüm
 
-Erkek kısırlığı, özellikle **sperm sayısı** düşük, **hareketliliği** yetersiz ya da **sperm şekil bozukluğu** (morfoloji) olan erkeklerde, doğal yolla gebelik elde etme şansını ciddi biçimde etkileyebilir. Ancak **mikroenjeksiyon (ICSI)** tekniği, bu sorunlara devrim niteliğinde bir çözüm sunarak birçok çiftin bebek sahibi olabilmesine olanak tanır.
+Erkek kısırlığı, özellikle **sperm sayısı** düşük, **hareketliliği** yetersiz ya da **sperm şekil bozukluğu** (morfoloji) olan erkeklerde, doğal yolla gebelik elde etme şansını ciddi biçimde etkileyebilir. {{kanit:B}} Ancak **mikroenjeksiyon (ICSI)** tekniği, bu sorunlara devrim niteliğinde bir çözüm sunarak birçok çiftin bebek sahibi olabilmesine olanak tanır. {{kanit:B}}
 
 ---
 
@@ -54,8 +54,8 @@ Erkek kısırlığı, özellikle **sperm sayısı** düşük, **hareketliliği**
 ### Neden Devrim Niteliğinde?
 
 - **Hücre Düzeyinde Tedavi:** Klasik erkek kısırlığı tedavilerinde (ilaç, varikosel ameliyatı vb.) başarı sınırlıyken, mikroenjeksiyon soruna **doğrudan hücresel düzeyde** müdahale ederek sorunu kökünden çözebiliyor.
-- **Çok Az Spermle Bile Gebelik:** Sperm sayısı çok düşük olsa bile, elde edilen birkaç sperm hücresi bile döllenme için yeterli oluyor.
-- **Yüksek Döllenme Oranı:** Spermin yumurta zarını aşması gerekiyormuş gibi bir engel kalmıyor. Bir sperm doğrudan yumurtaya enjekte edildiği için döllenme şansı klasik IVF yöntemlerine göre daha yüksek seyredebiliyor.
+- **Çok Az Spermle Bile Gebelik:** Sperm sayısı çok düşük olsa bile, elde edilen birkaç sperm hücresi bile döllenme için yeterli oluyor. {{kanit:B}}
+- **Yüksek Döllenme Oranı:** Spermin yumurta zarını aşması gerekiyormuş gibi bir engel kalmıyor. Bir sperm doğrudan yumurtaya enjekte edildiği için döllenme şansı klasik IVF yöntemlerine göre daha yüksek seyredebiliyor. {{kanit:B}}
 
 ---
 
@@ -65,7 +65,7 @@ Mikroenjeksiyon, başlıca **erkek kısırlığına** bağlı üç temel sorunda
 
 1. **Sperm Sayısının Az Olması**
    - Klasik tüp bebek yönteminde yeterli miktarda sperm bulunamayabilir.
-   - ICSI tekniğiyle, menide yalnızca birkaç tane canlı sperm olsa bile döllenme oranları (%70-80) korunabilir.
+   - ICSI tekniğiyle, menide yalnızca birkaç tane canlı sperm olsa bile döllenme oranları (%70-80) korunabilir. {{kanit:B}}
 
 2. **Sperm Hareketliliğinin Yetersiz Olması**
    - Spermlerin doğal süreçte yumurta zarını aşma güçlüğü bu yöntemle ortadan kalkar, çünkü tek bir sperm direkt olarak yumurtaya enjekte edilir.
@@ -109,7 +109,7 @@ Mikroenjeksiyon, başlıca **erkek kısırlığına** bağlı üç temel sorunda
 
 - **Maliyetli Bir Tedavi:** Mikroenjeksiyon, laboratuvar aşamalarının fazla olması nedeniyle klasik IVF'ten daha yüksek maliyete yol açabilir.
 - **İşlem Riskleri:** Yumurta toplama veya testislerden doku alma işlemi sırasında anestezi riskleri, enfeksiyon ve kanama gibi olasılıklar vardır.
-- **Başarı Garantisi Vermez:** Her çiftin üreme sağlığı farklı olduğu için her denemede kesin gebelik oluşacak diye bir garanti yoktur.
+- **Başarı Garantisi Vermez:** Her çiftin üreme sağlığı farklı olduğu için her denemede kesin gebelik oluşacak diye bir garanti yoktur. {{kanit:B}}
 - **Psikolojik Yük:** Deneme sayısı arttıkça maddi ve manevi yıpranma da artabilir.
 
 ---
@@ -135,7 +135,7 @@ Kadının yaşı ve yumurtalık rezervi, gebelik şansını belirleyen ana etmen
 
 ## Sonuç
 
-**Mikroenjeksiyon (ICSI)** tekniği, sperm sayısı, hareketliliği veya morfolojisi ile ilgili ciddi problemler yaşayan erkeklerin dahi **bebek sahibi olabilmesi** için devrim niteliğinde bir yöntem sunar. Tek bir canlı sperm hücresiyle dahi döllenme sağlanabilir ve gebelik elde edilebilir. Erkek kısırlığında "umutsuz vaka" kabul edilen pek çok durum, bu teknikle başarıya ulaşır.
+**Mikroenjeksiyon (ICSI)** tekniği, sperm sayısı, hareketliliği veya morfolojisi ile ilgili ciddi problemler yaşayan erkeklerin dahi **bebek sahibi olabilmesi** için devrim niteliğinde bir yöntem sunar. {{kanit:B}} Tek bir canlı sperm hücresiyle dahi döllenme sağlanabilir ve gebelik elde edilebilir. {{kanit:B}} Erkek kısırlığında "umutsuz vaka" kabul edilen pek çok durum, bu teknikle başarıya ulaşır. {{kanit:B}}
 
 Yine de her tedavi gibi mikroenjeksiyonun da kendine özgü riskleri, maliyeti ve sınırlılıkları vardır. İyi bir uzman ekiple detaylı değerlendirme yaparak, kişiye özel en doğru tedavi planını oluşturmak başarının anahtarıdır. Bu süreçte en önemli adım, açık iletişim kurmak, sabırlı olmak ve ihtiyaç halinde psikolojik destek almaktan çekinmemektir.
 

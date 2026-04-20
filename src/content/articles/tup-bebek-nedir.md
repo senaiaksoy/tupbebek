@@ -1,4 +1,5 @@
 ---
+
 title: "Tüp bebek nedir, kimlere uygulanır?"
 description: "Hayatımıza son 30 yılda giren ve bizim için hızla sıradan bir yöntem haline gelen tüp bebek nedir ve nasıl yapılır? Sorularınızın cevabını burada bulabilirsiniz."
 publishDate: 2024-09-27
@@ -29,6 +30,7 @@ references:
     journal: "Reproductive Biology and Endocrinology"
     year: 2021
     doi: "10.1186/s12958-021-00709-w"
+
 ---
 
 ### **Hayatımıza son 30 yılda giren ve bizim için hızla sıradan bir yöntem haline gelen tüp bebek nedir ve nasıl yapılır? Sorularınızın cevabını burada bulabilirsiniz.**
@@ -287,7 +289,7 @@ Deneyimli bir tıbbi ekibin rehberliğinde ve destekleyici bir sosyal çevre ile
 
 ### Tüp bebek tedavisinin kritik aşaması olan embriyo transferini videodan izleyebilirsiniz
 
-<iframe src="//www.youtube.com/embed/-1_-iXy0TJ4" width="560" height="314" allowfullscreen="allowfullscreen"></iframe>
+
 
 #### **Sözlük**
 
@@ -297,6 +299,6 @@ Deneyimli bir tıbbi ekibin rehberliğinde ve destekleyici bir sosyal çevre ile
 
 Tüp Bebek Nedir yazısı ilginizi çektiyse şu yazıları da okumanızı öneririz:
 
-[Tüp bebek fiyatları](/tup-bebek-fiyatlari "Tüp Bebek fiyatları nedir?")
+[Tüp bebek fiyatları](/tup-bebek-fiyatlari)
 
-[Tüp bebek tedavisi başarı oranları](/tup-bebek-basari-oranlari "başarı oranları")
+[Tüp bebek tedavisi başarı oranları](/tup-bebek-basari-oranlari)

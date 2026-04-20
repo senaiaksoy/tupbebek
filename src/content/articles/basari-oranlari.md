@@ -57,13 +57,13 @@ references:
 - **Canlı doğum oranı (Live Birth Rate):** Tedavinin gerçek başarı ölçütüdür — sağlıklı bir bebeğin dünyaya gelmesi
 - **Kümülatif başarı oranı:** Tek bir yumurta toplama işleminden elde edilen tüm embriyolarla (taze + dondurulmuş transferler) ulaşılan toplam başarı oranı
 
-> **Önemli:** Başarı oranlarını karşılaştırırken mutlaka **canlı doğum oranına** bakın. Klinik gebelik oranı tek başına yanıltıcı olabilir çünkü erken gebelik kayıplarını hesaba katmaz.
+> **Önemli:** Başarı oranlarını karşılaştırırken mutlaka **canlı doğum oranına** bakın. Klinik gebelik oranı tek başına yanıltıcı olabilir çünkü erken gebelik kayıplarını hesaba katmaz. {{kanit:B}}
 
 ---
 
 ## Yaşa Göre Başarı Oranları
 
-Kadın yaşı, tüp bebek başarısını etkileyen **en kritik etkendir**. Yaşla birlikte hem yumurta sayısı hem de yumurta kalitesi azalır; [kromozom anomali oranı artar](/yas-ve-fertilite).
+Kadın yaşı, tüp bebek başarısını etkileyen **en kritik etkendir**. {{kanit:A}} Yaşla birlikte hem yumurta sayısı hem de yumurta kalitesi azalır; [kromozom anomali oranı artar](/yas-ve-fertilite). {{kanit:A}}
 
 ### Transfer Başına Canlı Doğum Oranları (Genel Ortalamalar)
 
@@ -85,7 +85,7 @@ Tek bir transfer denemesinin başarı oranı %40-50 olsa bile, aynı yumurta top
 
 - İlk denemede başarısız olmak tedavinin başarısız olduğu anlamına gelmez
 - Kaliteli bir laboratuvarda yeterli sayıda embriyo elde edilmişse, kümülatif başarı şansı yüksektir
-- [Dondurulmuş embriyo transferleri (FET)](/makaleler/taze-dondurulmus-transfer) taze transferlerle benzer başarı oranları sunmaktadır
+- [Dondurulmuş embriyo transferleri (FET)](/makaleler/taze-dondurulmus-transfer) taze transferlerle benzer başarı oranları sunmaktadır {{kanit:B}}
 
 ---
 
@@ -105,7 +105,7 @@ Tek bir transfer denemesinin başarı oranı %40-50 olsa bile, aynı yumurta top
 
 - **Morfolojik değerlendirme:** Gardner sistemi ile blastosist derecelendirmesi (AA, AB, BB gibi)
 - **Genetik değerlendirme:** [PGT-A](/makaleler/genetik-testler) ile kromozom sayısı kontrolü
-- Öploid (kromozomal olarak normal) embriyolarla yapılan transferde başarı oranı **%60-70'e** ulaşabilir
+- Öploid (kromozomal olarak normal) embriyolarla yapılan transferde başarı oranı **%60-70'e** ulaşabilir {{kanit:B}}
 
 ### 3. Rahim Sağlığı ve Endometriyal Reseptivite
 
@@ -122,7 +122,7 @@ Erkek etkeni, infertilite nedenlerinin yaklaşık %40-50'sinde rol oynar. Sperm 
 
 ### 5. Yaşam Tarzı Etkenleri
 
-- **Sigara:** Hem yumurta hem sperm kalitesini düşürür; IVF başarısını %30'a kadar azaltabilir
+- **Sigara:** Hem yumurta hem sperm kalitesini düşürür; IVF başarısını %30'a kadar azaltabilir {{kanit:B}}
 - **Kilo:** Aşırı kilolu veya düşük kilolu olmak hormonal dengeyi ve yumurta kalitesini etkiler
 - **Alkol ve kafein:** Aşırı tüketim olumsuz etki gösterebilir
 - **Stres:** Doğrudan başarı oranını değiştirdiğine dair kesin kanıt sınırlı olsa da, tedavi sürecine uyumu ve yaşam kalitesini etkiler
@@ -142,7 +142,7 @@ Başarı oranlarını belirleyen en önemli unsurlardan biri, tedavinin yapıld�
 ### Teknolojik Gelişmeler
 
 - **Time-Lapse (Embriyoskop):** Embriyoların inkübatörden çıkarılmadan 24 saat kesintisiz izlenmesi. Gelişim davranışının detaylı analizi ile en iyi embriyonun seçilmesine yardımcı olur
-- **Vitrifikasyon:** Modern dondurma tekniği sayesinde dondurulmuş embriyoların çözülme sonrası hayatta kalma oranı %95'i aşmaktadır
+- **Vitrifikasyon:** Modern dondurma tekniği sayesinde dondurulmuş embriyoların çözülme sonrası hayatta kalma oranı %95'i aşmaktadır {{kanit:B}}
 - **PGT-A:** Genetik tarama ile kromozomal olarak normal embriyoların seçilmesi, özellikle [ileri yaş grubunda](/yas-ve-fertilite) transfer başına başarı oranını artırır
 - **Yapay Zeka (AI) Destekli Embriyo Seçimi:** Embriyonun gelişim verilerini analiz ederek en yüksek implantasyon potansiyeline sahip embriyonun seçilmesine katkı sağlayan yeni nesil teknoloji
 
