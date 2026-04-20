@@ -37,7 +37,7 @@ Kısırlıkla mücadele eden ve tüp bebek (IVF) tedavisi gören birçok çift i
 
 ## Miyomları Anlamak
 
-Miyomlar (uterus miyomları), rahimde veya çevresinde gelişen iyi huylu tümörlerdir. "Tümör" kelimesi kulağa korkutucu gelse de, miyomlar genellikle kanserli değildir ve kas hücreleri ile lifli dokuların birleşiminden oluşur. Kadınların %80'e varan bir kısmı 50 yaşına kadar miyom geliştirir. Her zaman semptomlara neden olmasalar da, boyutları ve konumları doğurganlığı önemli ölçüde etkileyebilir. Miyomlar küçük bir tohum kadar küçük olabileceği gibi uterus boşluğunu bozacak kadar büyük de olabilir.
+Miyomlar (uterus miyomları), rahimde veya çevresinde gelişen iyi huylu tümörlerdir {{kanit:B}}. "Tümör" kelimesi kulağa korkutucu gelse de, miyomlar genellikle kanserli değildir ve kas hücreleri ile lifli dokuların birleşiminden oluşur. Kadınların %80'e varan bir kısmı 50 yaşına kadar miyom geliştirir {{kanit:B}}. Her zaman semptomlara neden olmasalar da, boyutları ve konumları doğurganlığı önemli ölçüde etkileyebilir. Miyomlar küçük bir tohum kadar küçük olabileceği gibi uterus boşluğunu bozacak kadar büyük de olabilir.
 
 [![Miyomlar ve Kısırlık - Video](https://img.youtube.com/vi/R0mi5CpAVrM/0.jpg)](https://www.youtube.com/watch?v=R0mi5CpAVrM)
 
@@ -59,7 +59,7 @@ Miyomların yerleşim yerine göre türleri ve belirtileri farklılık gösterir
 Tüp bebek (IVF), yumurtaların alınmasını, laboratuvarda döllenmesini ve ardından embriyoların rahme aktarılmasını içerir. Miyomlar bu sürecin çeşitli aşamalarını bozabilir:
 
 * **Yumurta Alımıyla İlgili Sorunlar:** Özellikle yumurtalıklara yakın olan büyük miyomlar, yumurtaların alınmasını zorlaştırabilir. Dr. Aksoy, "Yumurtalıklara erişim engellenirse, başarılı yumurta alımı zorlaşır," diye açıklıyor.
-* **Embriyo İmplantasyonunda Zorluklar:** Embriyoların implante olabilmesi ve büyüyebilmesi için rahmin sağlıklı bir astara sahip olması gerekir. Uterus boşluğuna doğru çıkıntı yapan miyomlar (submukozal miyomlar) bu astarı bozabilir ve embriyonun başarılı bir şekilde implante olmasını zorlaştırabilir. Çalışmalar, submukozal miyomların IVF başarı oranlarını %15 ila %21 oranında azaltabileceğini göstermektedir.
+* **Embriyo İmplantasyonunda Zorluklar:** Embriyoların implante olabilmesi ve büyüyebilmesi için rahmin sağlıklı bir astara sahip olması gerekir. Uterus boşluğuna doğru çıkıntı yapan miyomlar (submukozal miyomlar) bu astarı bozabilir ve embriyonun başarılı bir şekilde implante olmasını zorlaştırabilir. Çalışmalar, submukozal miyomların IVF başarı oranlarını %15 ila %21 oranında azaltabileceğini göstermektedir {{kanit:B}}.
 * **Azalmış Kan Akışı:** Miyomlar ayrıca uterusa giden kan akışını da etkileyerek implante olmuş bir embriyonun gelişimi için gerekli olan besin tedarikini azaltabilir. Dr. Aksoy, "Yeterli kan akışı çok önemlidir ve miyomlar bunu bozabilir, bu da daha az elverişli bir uterus ortamına yol açar," diye ekliyor.
 
 ## Miyomların Üreme ve Gebelik Üzerindeki Etkileri
@@ -70,7 +70,7 @@ Miyomlar, IVF sürecinin ötesinde gebelik ve fertilite üzerinde de önemli etk
 
 * **Tüplerin Tıkanması:** Özellikle submukozal ve bazı intramural miyomlar fallop tüplerini tıkayarak sperm ve yumurta birleşmesini engelleyebilir.
 * **Rahim Boşluğunun Deformasyonu:** Submukozal miyomlar rahim içini deforme ederek döllenmiş yumurtanın yerleşimini ve ilk gelişim aşamalarını zorlaştırabilir.
-* **Kan Akışının Engellenmesi:** Miyomlar, rahim iç yüzeyine olan kan akışını bozarak implantasyon için elverişli ortamın oluşmasını engelleyebilir.
+* **Kan Akışının Engellenmesi:** Miyomlar, rahim iç yüzeyine olan kan akışını bozarak implantasyon için elverişli ortamın oluşmasını engelleyebilir {{kanit:B}}.
 
 ### Gebelik Üzerine Etkileri
 
@@ -108,4 +108,4 @@ Miyomlar ve IVF söz konusu olduğunda, durum umutsuz olmaktan uzaktır. Tıbbi 
 
 ## Sonuç
 
-Miyomlar IVF'ye giden yolda önemli engeller oluşturabilse de, bunlar aşılmaz engeller değildir. Deneyimli kısırlık uzmanlarının rehberliğinde ve tıbbi teknolojideki en son gelişmelerden yararlanarak, kısırlık çeken çiftler zorlukları aşabilir ve ebeveyn olma şanslarını artırabilirler. Unutmayın, kişiselleştirilmiş bir yaklaşım ve doğru tıbbi ekiple, en zorlu durumlarda bile umut vardır.
+Miyomlar IVF'ye giden yolda önemli engeller oluşturabilse de, bunlar aşılmaz engeller değildir. Deneyimli kısırlık uzmanlarının rehberliğinde ve tıbbi teknolojideki en son gelişmelerden yararlanarak, kısırlık çeken çiftler zorlukları aşabilir ve ebeveyn olma şanslarını artırabilirler {{kanit:C}}. Unutmayın, kişiselleştirilmiş bir yaklaşım ve doğru tıbbi ekiple, en zorlu durumlarda bile umut vardır.

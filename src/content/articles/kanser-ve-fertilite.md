@@ -35,9 +35,9 @@ Kanser tanısı almak, hayatın en zorlu anlarından biridir. Bu süreçte tedav
 
 ## Kanser Tanısı ve Fertilite: Neden Acil Hareket Gerekir?
 
-Kanser tedavileri — kemoterapi, radyoterapi ve cerrahi — üreme organlarına ciddi zarar verebilir. Bu nedenle **tedaviye başlamadan önce** fertilite koruma adımlarının atılması büyük önem taşır. Tedavi başladıktan sonra bu fırsat büyük ölçüde kapanabilir.
+Kanser tedavileri — kemoterapi, radyoterapi ve cerrahi — üreme organlarına ciddi zarar verebilir {{kanit:B}}. Bu nedenle **tedaviye başlamadan önce** fertilite koruma adımlarının atılması büyük önem taşır {{kanit:B}}. Tedavi başladıktan sonra bu fırsat büyük ölçüde kapanabilir.
 
-Dünya genelinde tanınan iki büyük onkoloji kuruluşu, **ASCO** (Amerikan Klinik Onkoloji Derneği) ve **ESMO** (Avrupa Medikal Onkoloji Derneği), kılavuzlarında açıkça şunu belirtmektedir: Üreme çağındaki her kanser hastasına, tedaviye başlamadan önce fertilite koruma seçenekleri hakkında bilgi verilmeli ve uzman yönlendirmesi yapılmalıdır. Bu bir öneri değil, standart tıbbi bakımın bir parçasıdır.
+Dünya genelinde tanınan iki büyük onkoloji kuruluşu, **ASCO** (Amerikan Klinik Onkoloji Derneği) ve **ESMO** (Avrupa Medikal Onkoloji Derneği), kılavuzlarında açıkça şunu belirtmektedir: Üreme çağındaki her kanser hastasına, tedaviye başlamadan önce fertilite koruma seçenekleri hakkında bilgi verilmeli ve uzman yönlendirmesi yapılmalıdır {{kanit:B}}. Bu bir öneri değil, standart tıbbi bakımın bir parçasıdır.
 
 **Multidisipliner yaklaşım** bu sürecin merkezindedir. Onkolog, üreme tıbbı uzmanı, psikolog ve hasta bir arada hareket ederek en doğru kararı vermelidir. Zaman kısıtlı olsa da doğru planlamayla fertilite koruma mümkündür.
 
@@ -69,7 +69,7 @@ Kanser tanısı almış kadınlar için birden fazla etkili seçenek mevcuttur. 
 
 **Oosit (Yumurta) Dondurma**
 
-En yaygın ve güvenilir yöntemlerden biridir. Yumurtalıklar hormonal ilaçlarla uyarılır, olgunlaşan yumurtalar toplanarak sıvı azot ortamında dondurulur. Bekâr kadınlar için ideal bir seçenektir. Başarı oranları son yıllarda vitrifikasyon (hızlı dondurma) tekniğiyle belirgin biçimde artmıştır.
+En yaygın ve güvenilir yöntemlerden biridir. Yumurtalıklar hormonal ilaçlarla uyarılır, olgunlaşan yumurtalar toplanarak sıvı azot ortamında dondurulur. Bekâr kadınlar için ideal bir seçenektir. Başarı oranları son yıllarda vitrifikasyon (hızlı dondurma) tekniğiyle belirgin biçimde artmıştır {{kanit:B}}.
 
 **Embriyo Dondurma**
 
@@ -93,7 +93,7 @@ Erkekler için fertilite koruma genellikle daha hızlı ve kolaydır; ancak vaki
 
 **Sperm Dondurma (Sperm Kriyoprezervasyon)**
 
-Orşiektomi veya kemoterapi başlamadan önce semen örneği verilerek spermler dondurulur. İşlem hızlı, invaziv olmayan ve son derece etkili bir yöntemdir. Dondurulmuş spermler onlarca yıl saklanabilir, kalite büyük ölçüde korunur. Her erkek kanser hastasına öncelikle bu seçenek önerilmelidir.
+Orşiektomi veya kemoterapi başlamadan önce semen örneği verilerek spermler dondurulur. İşlem hızlı, invaziv olmayan ve son derece etkili bir yöntemdir {{kanit:B}}. Dondurulmuş spermler onlarca yıl saklanabilir, kalite büyük ölçüde korunur. Her erkek kanser hastasına öncelikle bu seçenek önerilmelidir.
 
 **Testis Doku Dondurma**
 

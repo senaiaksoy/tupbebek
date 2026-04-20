@@ -46,7 +46,7 @@ Youtube'te izleyin: Miyomlar Ne Zaman Ameliyat Edilmeli?
 
 ## Miyom Nedir? Rahminizdeki İyi Huylu "Komşu"yu Tanıyalım
 
-Karar verme sürecine geçmeden önce, tam olarak neyle karşı karşıya olduğumuzu anlamalıyız. Miyomlar, rahmin kas tabakasından (myometrium) kaynaklanan, kanser olmayan, iyi huylu tümörlerdir. Tıbbi literatürde leiomyoma veya fibroid olarak da adlandırılırlar. Bu noktada altını çizmek istediğim en önemli kelime "iyi huylu" olmasıdır. Miyomların kansere, yani "sarkom" adı verilen kötü huylu bir tümöre dönüşme riski istatistiksel olarak oldukça düşüktür, çeşitli yayınlarda yaklaşık 500'de 1 gibi bir orandan bahsedilir. Bu nedenle, "miyom" teşhisi duyduğunuzda aklınıza hemen kanser gelmesin.
+Karar verme sürecine geçmeden önce, tam olarak neyle karşı karşıya olduğumuzu anlamalıyız. Miyomlar, rahmin kas tabakasından (myometrium) kaynaklanan, kanser olmayan, iyi huylu tümörlerdir {{kanit:B}}. Tıbbi literatürde leiomyoma veya fibroid olarak da adlandırılırlar. Bu noktada altını çizmek istediğim en önemli kelime "iyi huylu" olmasıdır. Miyomların kansere, yani "sarkom" adı verilen kötü huylu bir tümöre dönüşme riski istatistiksel olarak oldukça düşüktür, çeşitli yayınlarda yaklaşık 500'de 1 gibi bir orandan bahsedilir {{kanit:B}}. Bu nedenle, "miyom" teşhisi duyduğunuzda aklınıza hemen kanser gelmesin.
 
 Miyomları daha iyi anlamak için onları bir apartmandaki komşulara benzetebiliriz. Bazı komşular sessiz sedasız yaşar, varlıklarını bile hissetmezsiniz. Bazıları ise sürekli gürültü yapar, ortak alanları işgal eder ve apartmanın huzurunu bozar. Miyomlar da tıpkı böyledir. Onların "davranışını" belirleyen şey ise apartmanın, yani rahmin neresinde "oturduklarıdır". Bu konuma göre miyomları üç ana gruba ayırırız:
 
@@ -125,7 +125,7 @@ Birçok kadın, miyomuyla tamamen sağlıklı ve sorunsuz bir gebelik geçirebil
 
 Peki, bu riskler karşısında ne yapmalıyız? İşte bu noktada tıp, varsayımlarla değil, bilimsel kanıtlarla hareket eder. Bu alandaki en saygın kurumlardan biri olan **Amerikan Üreme Tıbbı Derneği (ASRM)**, yayınladığı kılavuzlarda bu konuya net bir şekilde ışık tutmaktadır.
 
-ASRM'in "Fertility and Sterility" dergisinde yayınlanan kılavuzuna göre, rahim iç boşluğunu bozan **submüköz miyomlar** ve **intramural miyomların**, hastada hiçbir belirti (asemptomatik) olmasa bile, gebelik oranlarını artırmak ve düşük riskini azaltmak amacıyla cerrahi olarak çıkarılması (miyomektomi) düşünülmelidir. Subseröz (rahmin dışındaki) miyomların ise doğurganlık üzerinde kanıtlanmış bir olumsuz etkisi olmadığından, genellikle alınmaları önerilmez.
+ASRM'in "Fertility and Sterility" dergisinde yayınlanan kılavuzuna göre, rahim iç boşluğunu bozan **submüköz miyomlar** ve **intramural miyomların**, hastada hiçbir belirti (asemptomatik) olmasa bile, gebelik oranlarını artırmak ve düşük riskini azaltmak amacıyla cerrahi olarak çıkarılması (miyomektomi) düşünülmelidir {{kanit:B}}. Subseröz (rahmin dışındaki) miyomların ise doğurganlık üzerinde kanıtlanmış bir olumsuz etkisi olmadığından, genellikle alınmaları önerilmez {{kanit:B}}.
 
 Bu öneri, miyom ameliyatının gebelik planlayan bir kadın için neden önemli olduğunu özetler: Bu, mevcut bir sorunu çözmekten çok, gelecekteki potansiyel ve ciddi sorunları önlemeye yönelik proaktif bir adımdır. Gebelik yolculuğuna çıkmadan önce "arabanın frenlerini kontrol ettirmek" gibidir. Her araba kaza yapmaz, ama güvenli bir yolculuk için bu kontrolü yapmak akıllıcadır.
 
@@ -164,7 +164,7 @@ Aşağıdaki tablo, bu tedavi seçeneklerini hedeflerinize göre özetlemektedir
 
 ### Miyom kansere dönüşür mü?
 
-Miyomların kansere (sarkom) dönüşme riski oldukça düşüktür, yaklaşık 500'de 1 olarak bildirilmektedir. Ancak özellikle menopoz sonrası dönemde büyümeye devam eden miyomlar, bu nadir risk açısından daha dikkatli bir değerlendirme gerektirir ve genellikle cerrahi olarak çıkarılması önerilir.
+Miyomların kansere (sarkom) dönüşme riski oldukça düşüktür, yaklaşık 500'de 1 olarak bildirilmektedir {{kanit:B}}. Ancak özellikle menopoz sonrası dönemde büyümeye devam eden miyomlar, bu nadir risk açısından daha dikkatli bir değerlendirme gerektirir ve genellikle cerrahi olarak çıkarılması önerilir.
 
 ### Miyom ameliyatından ne kadar sonra hamile kalınabilir?
 

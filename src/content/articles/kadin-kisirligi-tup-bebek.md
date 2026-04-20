@@ -37,11 +37,11 @@ Tüp bebek tedavisi (IVF), kısırlıkla mücadele eden birçok çift için umut
 
 ### Kadın Kısırlığını Anlamak
 
-Kadın kısırlığı, bir yıl boyunca korunmasız ve düzenli cinsel ilişkiye rağmen hamile kalamama durumu olarak tanımlanır. Kısırlık nedenleri arasında yumurtlama bozuklukları, fallop tüplerindeki hasarlar, rahim anomalileri ve yaşla birlikte azalan doğurganlık sayılabilir. Bu etkenler, kadının yumurta kalitesini ve sayısını, fallop tüplerinin işlevini ve rahmin embriyo tutunmasını etkileyebilir.
+Kadın kısırlığı, bir yıl boyunca korunmasız ve düzenli cinsel ilişkiye rağmen hamile kalamama durumu olarak tanımlanır {{kanit:B}}. Kısırlık nedenleri arasında yumurtlama bozuklukları, fallop tüplerindeki hasarlar, rahim anomalileri ve yaşla birlikte azalan doğurganlık sayılabilir. Bu etkenler, kadının yumurta kalitesini ve sayısını, fallop tüplerinin işlevini ve rahmin embriyo tutunmasını etkileyebilir.
 
 ### Yumurtlama Bozuklukları: Temel Sebepler
 
-Kadın kısırlığının %25-30'u yumurtlama bozukluklarından kaynaklanır. Bu durumlar, yumurtalıkların düzenli yumurta bırakmasını engelleyen hormonal dengesizliklerden kaynaklanır. Yumurtlama bozukluklarına neden olan yaygın hastalıklar arasında polikistik over sendromu (PCOS), hipotalamik disfonksiyon ve erken yumurtalık yetmezliği (POF) bulunur.
+Kadın kısırlığının %25-30'u yumurtlama bozukluklarından kaynaklanır {{kanit:B}}. Bu durumlar, yumurtalıkların düzenli yumurta bırakmasını engelleyen hormonal dengesizliklerden kaynaklanır. Yumurtlama bozukluklarına neden olan yaygın hastalıklar arasında polikistik over sendromu (PCOS), hipotalamik disfonksiyon ve erken yumurtalık yetmezliği (POF) bulunur.
 
 - **Polikistik over sendromu (PCOS):** Düzensiz adet döngüleri, yüksek androjen seviyeleri ve polikistik yumurtalıklarla karakterize edilen bu hormonal bozukluk, yumurtlamayı engelleyerek kısırlığa neden olabilir. PCOS'lu kadınlar için, diğer doğurganlık tedavileri başarısız olduğunda tüp bebek tedavisi genellikle etkili bir çözüm sunar.
 
@@ -69,7 +69,7 @@ Rahim, embriyonun tutunması ve hamileliğin devamında hayati bir rol oynar. Ra
 
 ### Yaş ve Doğurganlık: Önemli Bir Bağlantı
 
-Yaş, kadın doğurganlığını etkileyen en önemli etkenlerden biridir. Kadınlar, sınırlı sayıda yumurta ile doğarlar ve bu yumurtaların sayısı ve kalitesi yaşla birlikte azalır. 35 yaşından sonra doğal yolla hamile kalma şansı önemli ölçüde düşer. Aynı zamanda, yumurtalardaki kromozomal anormalllik riski artar, bu da düşük ve genetik bozukluk riskini artırır.
+Yaş, kadın doğurganlığını etkileyen en önemli etkenlerden biridir. Kadınlar, sınırlı sayıda yumurta ile doğarlar ve bu yumurtaların sayısı ve kalitesi yaşla birlikte azalır. 35 yaşından sonra doğal yolla hamile kalma şansı önemli ölçüde düşer {{kanit:B}}. Aynı zamanda, yumurtalardaki kromozomal anormalllik riski artar, bu da düşük ve genetik bozukluk riskini artırır {{kanit:B}}.
 
 Daha ileri yaşlardaki kadınlar için tüp bebek tedavisi genellikle ilk tercih olur. Ayrıca, preimplantasyon genetik testi (PGT) ile embriyolar transfer edilmeden önce kromozomal anormallikler taranarak tüp bebek tedavisinin başarı oranı artırılabilir.
 
