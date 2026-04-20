@@ -32,6 +32,6 @@ references:
     doi: "10.1016/j.fertnstert.2008.05.049"
 ---
 
-Bu makale, daha kapsamlı rehberimizle birleştirilmiştir.
+Bu makale, daha kapsamlı rehberimizle birleştirilmiştir {{kanit:C}}.
 
 **Güncel ve kapsamlı rehberimiz için:** [Miyomlar ve Tüp Bebek](/makaleler/miyomlar-ve-tup-bebek)

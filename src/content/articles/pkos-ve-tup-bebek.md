@@ -32,6 +32,6 @@ references:
     doi: "10.1056/NEJMoa1313517"
 ---
 
-Bu makale, daha kapsamlı rehberimizle birleştirilmiştir.
+Bu makale, daha kapsamlı rehberimizle birleştirilmiştir {{kanit:C}}.
 
 **Güncel ve kapsamlı rehberimiz için:** [PCOS ve IVF: Yolculuğunuzun Gizli Başrolü](/makaleler/opk-ve-ivf)
