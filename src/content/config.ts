@@ -7,6 +7,7 @@ import { defineCollection, z } from 'astro:content';
  * published  → Onaylanmis ve yayinda
  */
 const statusEnum = z.enum(['draft', 'in_review', 'published']).default('published');
+const recommendationGradeEnum = z.enum(['A', 'B', 'C', 'D/E']);
 
 /**
  * Bilimsel Referans Semasi
@@ -57,6 +58,7 @@ const articlesCollection = defineCollection({
     approvedBy: z.string().optional(),
 
     // --- Bilimsel Referanslar ---
+    recommendationGrade: recommendationGradeEnum,
     references: z.array(referenceSchema).optional(),
 
     // --- Video Embed ---

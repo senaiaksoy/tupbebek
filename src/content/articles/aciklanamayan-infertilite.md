@@ -10,6 +10,7 @@ reviewerTitle: "Tıbbi Danışma Kurulu"
 reviewDate: 2026-04-01
 lastModified: 2026-04-03
 category: "Tanı ve Testler"
+recommendationGrade: B
 image: "/images/library/tedavi/tup_bebek_muayene.webp"
 imageAlt: "Açıklanamayan infertilite tanı süreci"
 status: "published"

@@ -10,6 +10,7 @@ reviewerTitle: "Tıbbi Danışma Kurulu"
 reviewDate: 2026-04-09
 lastModified: 2026-04-03
 category: "Kadın Sağlığı"
+recommendationGrade: B
 image: /images/library/klinik/237.webp
 imageAlt: "yumurtalık kistleri ve doğurganlık üzerindeki etkileri"
 references:

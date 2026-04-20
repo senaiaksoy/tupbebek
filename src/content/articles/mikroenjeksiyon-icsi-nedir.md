@@ -10,6 +10,7 @@ reviewerTitle: "Tıbbi Danışma Kurulu"
 reviewDate: 2026-04-09
 lastModified: 2026-04-03
 category: "Tedavi Yöntemleri"
+recommendationGrade: B
 image: /images/library/klinik/181.webp
 imageAlt: "mikroenjeksiyon ICSI işlemi spermin yumurtaya enjekte edilmesi"
 references:

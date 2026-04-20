@@ -10,6 +10,7 @@ reviewerTitle: "Tıbbi Danışma Kurulu"
 reviewDate: 2026-04-09
 lastModified: 2026-04-03
 category: "Tanı ve Testler"
+recommendationGrade: B
 image: /images/library/klinik/54.webp
 imageAlt: "yumurtlama takibi ve ovülasyon izleme süreci"
 references:

@@ -10,6 +10,7 @@ reviewerTitle: "Tıbbi Danışma Kurulu"
 reviewDate: 2026-04-09
 lastModified: 2026-04-03
 category: "Tüp Bebek"
+recommendationGrade: B
 image: /images/library/tedavi/taze-donmus-transfert.webp
 imageAlt: "taze ve dondurulmuş embriyo transferi karşılaştırması"
 references:

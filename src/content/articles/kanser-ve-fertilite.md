@@ -10,6 +10,7 @@ medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Tıbbi Danışma Kurulu"
 reviewDate: 2026-04-06
 category: "Tedavi"
+recommendationGrade: B
 image: "/images/library/laboratuvar/dr-senai-aksoy-istanbul-ivf-laboratuvar.webp"
 imageAlt: "Onkofertilite danışmanlığı ve fertilite koruma laboratuvar ortamı"
 references:

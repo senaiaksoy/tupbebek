@@ -4,6 +4,7 @@ description: "İntraovaryen PRP uygulaması azalmış over rezervi ve POI olgula
 publishDate: 2026-04-12
 lastModified: 2026-04-12
 category: "Tedavi Yöntemleri"
+recommendationGrade: C
 status: "published"
 author: "Doç. Dr. Senai Aksoy"
 authorTitle: "Kadın Hastalıkları, Doğum ve Üreme Tıbbı Uzmanı"

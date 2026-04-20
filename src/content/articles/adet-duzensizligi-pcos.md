@@ -10,6 +10,7 @@ medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Tıbbi Danışma Kurulu"
 reviewDate: 2026-04-06
 category: "Kadın Sağlığı"
+recommendationGrade: B
 image: "/images/makaleler/adet-duzensizligi-pcos.webp"
 imageAlt: "adet düzensizliği ve polikistik over sendromu pcos illüstrasyonu"
 references:

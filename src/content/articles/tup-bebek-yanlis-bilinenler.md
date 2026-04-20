@@ -10,6 +10,7 @@ reviewerTitle: "Tıbbi Danışma Kurulu"
 reviewDate: 2026-04-09
 lastModified: 2026-04-03
 category: "Tüp Bebek"
+recommendationGrade: B
 image: /images/library/klinik/41.webp
 imageAlt: "tüp bebek ve kısırlık hakkında doğru bilinen yanlışlar"
 references:

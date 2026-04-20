@@ -11,6 +11,7 @@ medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Tıbbi Danışma Kurulu"
 reviewDate: 2026-04-06
 category: "Tedavi"
+recommendationGrade: B
 image: "/images/library/tedavi/taze-donmus-transfert.webp"
 imageAlt: "Taze ve dondurulmuş embriyo transferi karşılaştırması"
 references:

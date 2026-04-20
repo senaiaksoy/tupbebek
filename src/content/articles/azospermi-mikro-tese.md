@@ -10,6 +10,7 @@ medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Tıbbi Danışma Kurulu"
 reviewDate: 2026-04-06
 category: "Erkek Kısırlığı"
+recommendationGrade: B
 image: "/images/makaleler/azospermi-mikro-tese.webp"
 imageAlt: "azospermi tedavisi ve mikro-tese yöntemi mikroskop altında inceleme"
 references:

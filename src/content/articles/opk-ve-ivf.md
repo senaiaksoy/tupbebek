@@ -10,6 +10,7 @@ reviewerTitle: "Tıbbi Danışma Kurulu"
 reviewDate: 2026-04-09
 lastModified: 2026-04-03
 category: "Kadın Sağlığı"
+recommendationGrade: B
 image: /images/library/hastalik/opkveivf.webp
 imageAlt: "polikistik over sendromu PCOS ve IVF tedavi süreci"
 references:

@@ -10,6 +10,7 @@ reviewerTitle: "Tıbbi Danışma Kurulu"
 reviewDate: 2026-04-09
 lastModified: 2026-04-03
 category: "Gebelik"
+recommendationGrade: B
 image: /images/library/embriyo/kimyasal-gebelik.webp
 imageAlt: "kimyasal gebelik erken gebelik kaybı ve embriyo tutunma süreci"
 references:

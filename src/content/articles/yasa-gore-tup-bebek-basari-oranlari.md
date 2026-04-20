@@ -13,6 +13,7 @@ medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Baş Editör"
 reviewDate: 2026-04-04
 category: "Tüp Bebek"
+recommendationGrade: B
 image: "/images/library/istatistik/yas_gebelikorani_ivf.webp"
 imageAlt: "Yaşa göre tüp bebek başarı oranlarını temsil eden, farklı yaş dönemlerini simgeleyen kadın görseli"
 featured: true

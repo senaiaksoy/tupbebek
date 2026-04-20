@@ -10,6 +10,7 @@ reviewerTitle: "Tıbbi Danışma Kurulu"
 reviewDate: 2026-04-09
 lastModified: 2026-04-03
 category: "Tüp Bebek"
+recommendationGrade: B
 image: /images/library/tedavi/post_transfert.webp
 imageAlt: "embriyo transferi sonrası bakım ve dinlenme süreci illüstrasyonu"
 references:

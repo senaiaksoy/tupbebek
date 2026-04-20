@@ -2,6 +2,7 @@
 title: "Başarısız Denemeler ve Psikolojik Destek: Yeni Bir Yol Haritası"
 description: "Tüp bebek tedavisinde olumsuz sonuç almak, yolun sonu değil, stratejinin yeniden kurgulandığı bir duraktır. Bilimsel ve duygusal olarak nasıl ilerlenmeli?"
 category: "Rehber"
+recommendationGrade: B
 author: "tupbebek.com Yayın Kurulu"
 authorTitle: "Editoryal Ekip"
 authorCredentials: "Doç. Dr. Senai Aksoy editörlüğünde"

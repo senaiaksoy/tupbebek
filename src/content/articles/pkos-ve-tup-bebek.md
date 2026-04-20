@@ -11,6 +11,7 @@ reviewerTitle: "Tıbbi Danışma Kurulu"
 reviewDate: 2026-04-09
 lastModified: 2026-04-05
 category: "Kadın Sağlığı"
+recommendationGrade: B
 image: /images/library/hastalik/pkos-ve-ivf.webp
 imageAlt: "polikistik over sendromu PKOS ve tüp bebek tedavi süreci"
 references:

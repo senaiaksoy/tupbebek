@@ -136,6 +136,7 @@ Makale frontmatter'da kullanilabilir alanlar:
 title: "Makale Basligi"
 description: "Kisa aciklama"
 category: "Kategori"
+recommendationGrade: "B"     # A | B | C | D/E
 status: "published"          # draft | in_review | published
 publishDate: 2024-01-01
 lastModified: 2026-04-03
@@ -204,6 +205,24 @@ Yeni bir makale konusu verildiginde, icerik olusturmadan once asagidaki arastirm
 5. **Referans ekleme**: Kullanilan PubMed calismalari frontmatter `references` alanina eklenir (DOI, yazar, dergi, yil bilgileriyle)
 
 **Arastirma oncelikleri**: ESHRE, ASRM, Cochrane, WHO rehberleri ve Fertility and Sterility, Human Reproduction, RBM Online gibi ust duzey dergilerdeki calismalar tercih edilir.
+
+### Oneri Derecesi / Kanit Duzeyi
+
+Estranova benzeri kanit sunumu icin her makalede frontmatter icinde `recommendationGrade` alani bulunur ve yazi ustunde gorunur.
+
+Kullanilacak sade siniflandirma:
+
+- `A` - **Cok Guclu**: Birden fazla yuksek kaliteli RKÇ veya meta-analiz ile desteklenmis
+- `B` - **Guclu**: Sinirli sayida RKÇ veya cok iyi tasarlanmis kohort calismalari
+- `C` - **Orta / Zayif**: Vaka-kontrol calismalari veya gozlemsel veriler
+- `D/E` - **Cok Zayif**: Sadece uzman gorusu veya vaka sunumlari
+
+Kurallar:
+
+- Yeni makale eklenirken `recommendationGrade` zorunludur.
+- Derece, yazidaki **ana klinik onerinin** dayandigi en guclu ve en tutarli kanit govdesine gore verilir.
+- Derece verirken Oxford CEBM veya USPSTF benzeri hiyerarsiler referans alinir; ancak sitede kullanilan gorunen dil yukaridaki sade siniflandirmadir.
+- Derece, pazarlama amacli degil; okuyucunun kanit gucunu hizla anlamasi icin kullanilir.
 
 ### Kod Kalitesi
 

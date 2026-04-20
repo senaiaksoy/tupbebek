@@ -10,6 +10,7 @@ reviewerTitle: "Tıbbi Danışma Kurulu"
 reviewDate: 2026-04-09
 lastModified: 2026-04-03
 category: "Tüp Bebek"
+recommendationGrade: B
 image: /images/library/embriyo/yumurta-sayisi.webp
 imageAlt: "tüp bebek tedavisinde yumurta sayısı ve başarı oranı ilişkisi"
 references:

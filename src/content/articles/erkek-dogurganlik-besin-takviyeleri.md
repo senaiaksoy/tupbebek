@@ -10,6 +10,7 @@ reviewerTitle: "Tıbbi Danışma Kurulu"
 reviewDate: 2026-04-09
 lastModified: 2026-04-03
 category: "Erkek Sağlığı"
+recommendationGrade: C
 image: /images/library/hastalik/erkekinfertilite.webp
 imageAlt: "erkek doğurganlığını destekleyen besin takviyeleri ve vitaminler"
 references:

@@ -4,6 +4,7 @@ description: "EmbryoScope sürekli embriyo izleme sistemi, yapay zekâ destekli 
 publishDate: 2026-04-12
 lastModified: 2026-04-12
 category: "Tüp Bebek"
+recommendationGrade: C
 status: "published"
 author: "Doç. Dr. Senai Aksoy"
 authorTitle: "Kadın Hastalıkları, Doğum ve Üreme Tıbbı Uzmanı"

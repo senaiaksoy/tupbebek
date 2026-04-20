@@ -10,6 +10,7 @@ reviewerTitle: "Tıbbi Danışma Kurulu"
 reviewDate: 2026-04-09
 lastModified: 2026-04-05
 category: "Genetik"
+recommendationGrade: B
 image: "/images/library/embriyo/pgt.webp"
 imageAlt: "PGT preimplantasyon genetik test embriyo tarama"
 featured: false

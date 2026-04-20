@@ -10,6 +10,7 @@ reviewerTitle: "Tıbbi Danışma Kurulu"
 reviewDate: 2026-04-09
 lastModified: 2026-04-03
 category: "Erkek Sağlığı"
+recommendationGrade: C
 image: /images/library/klinik/ceptel.webp
 imageAlt: "cep telefonu elektromanyetik dalgaları ve sperm kalitesi üzerine etkisi illüstrasyonu"
 references:

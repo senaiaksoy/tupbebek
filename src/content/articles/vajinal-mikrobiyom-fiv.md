@@ -10,6 +10,7 @@ reviewerTitle: "Tıbbi Danışma Kurulu"
 reviewDate: 2026-04-09
 lastModified: 2026-04-03
 category: "Tüp Bebek"
+recommendationGrade: C
 image: /images/library/laboratuvar/microbiota.webp
 imageAlt: "vajinal mikrobiyom florası ve tüp bebek başarısı üzerindeki etkileri"
 references:

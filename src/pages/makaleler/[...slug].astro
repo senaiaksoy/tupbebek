@@ -10,6 +10,7 @@ import ShareButtons from '../../components/ShareButtons.astro';
 import RelatedArticles from '../../components/RelatedArticles.astro';
 import ArticleSchema from '../../components/ArticleSchema.astro';
 import EEATBadge from '../../components/EEATBadge.astro';
+import EvidenceGradeCard from '../../components/EvidenceGradeCard.astro';
 import ReferenceList from '../../components/ReferenceList.astro';
 import MedicalDisclaimer from '../../components/MedicalDisclaimer.astro';
 import EditorKunyesi from '../../components/EditorKunyesi.astro';
@@ -111,6 +112,8 @@ const sanitizedImage = sanitizeImage(entry.data.image);
                     status={entry.data.status || 'published'}
                     referenceCount={referenceCount}
                 />
+
+                <EvidenceGradeCard grade={entry.data.recommendationGrade} />
 
                 <!-- Editor Kunyesi (compact - makale başı) -->
                 <div class="mt-5">

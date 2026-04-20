@@ -10,6 +10,7 @@ reviewerTitle: "Tıbbi Danışma Kurulu"
 reviewDate: 2026-04-09
 lastModified: 2026-04-03
 category: "Tedavi Yöntemleri"
+recommendationGrade: B
 image: /images/library/hastalik/prolakktin.webp
 imageAlt: "adenomyozis hormonal tedavi ve tüp bebek başarısı illüstrasyonu"
 references:

@@ -10,6 +10,7 @@ reviewerTitle: "Tıbbi Danışma Kurulu"
 reviewDate: 2026-04-09
 lastModified: 2026-04-03
 category: "Tüp Bebek"
+recommendationGrade: B
 image: "/images/makaleler/tup-bebek-nedir.webp"
 imageAlt: "tüp bebek tedavisi hakkında doktoruyla görüşen kadın hasta"
 references:

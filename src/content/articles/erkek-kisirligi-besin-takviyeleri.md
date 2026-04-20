@@ -11,6 +11,7 @@ reviewerTitle: "Tıbbi Danışma Kurulu"
 reviewDate: 2026-04-09
 lastModified: 2026-04-03
 category: "Erkek Sağlığı"
+recommendationGrade: C
 image: /images/library/tedavi/sperm_supp.webp
 imageAlt: "erkek kısırlığında sperm kalitesini artıran besin takviyeleri"
 references:

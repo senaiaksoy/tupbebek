@@ -10,6 +10,7 @@ reviewerTitle: "Tıbbi Danışma Kurulu"
 reviewDate: 2026-04-09
 lastModified: 2026-04-03
 category: "Tüp Bebek"
+recommendationGrade: B
 image: /images/library/laboratuvar/icsicizim.webp
 imageAlt: "kadın kısırlığı tanı süreci ve tüp bebek tedavisi ICSI illüstrasyonu"
 references:

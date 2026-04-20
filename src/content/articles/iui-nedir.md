@@ -10,6 +10,7 @@ reviewerTitle: "Tıbbi Danışma Kurulu"
 reviewDate: 2026-04-09
 lastModified: 2026-04-03
 category: "Tedavi Yöntemleri"
+recommendationGrade: B
 image: /images/library/tedavi/iac.webp
 imageAlt: "intrauterin inseminasyon IUI aşılama işlemi illüstrasyonu"
 references:

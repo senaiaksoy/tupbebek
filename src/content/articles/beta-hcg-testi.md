@@ -10,6 +10,7 @@ medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Tıbbi Danışma Kurulu"
 reviewDate: 2026-04-06
 category: "Tüp Bebek"
+recommendationGrade: B
 image: "/images/makaleler/beta-hcg-testi.webp"
 imageAlt: "kan tahlili raporu ve beta-hcg hamilelik testi sonuçları"
 references:

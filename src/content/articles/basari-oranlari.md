@@ -10,6 +10,7 @@ reviewerTitle: "Tıbbi Danışma Kurulu"
 reviewDate: 2026-04-09
 lastModified: 2026-04-05
 category: "Tüp Bebek"
+recommendationGrade: B
 image: "/images/library/istatistik/basari_oranlari_hero.webp"
 imageAlt: "Yaşa göre tüp bebek başarı oranları grafiği"
 featured: true

@@ -10,6 +10,7 @@ medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Tıbbi Danışma Kurulu"
 reviewDate: 2026-04-06
 category: "Genetik"
+recommendationGrade: B
 image: "/images/makaleler/akraba-evliligi.webp"
 imageAlt: "akraba evliliği genetik riskler ve dna sarmalı illüstrasyonu"
 references:

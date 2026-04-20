@@ -10,6 +10,7 @@ reviewerTitle: "Tıbbi Danışma Kurulu"
 reviewDate: 2026-04-09
 lastModified: 2026-04-03
 category: "Kadın Sağlığı"
+recommendationGrade: A
 image: /images/library/hastalik/hidrosalpinks.webp
 imageAlt: "hidrosalpinks tüp tıkanıklığı ve kısırlık üzerindeki etkileri"
 references:

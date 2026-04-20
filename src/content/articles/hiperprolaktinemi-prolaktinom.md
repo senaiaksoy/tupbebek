@@ -11,6 +11,7 @@ reviewerTitle: "Tıbbi Danışma Kurulu"
 reviewDate: 2026-04-09
 lastModified: 2026-04-05
 category: "Kadın Sağlığı"
+recommendationGrade: B
 image: /images/library/klinik/70.webp
 imageAlt: "hiperprolaktinemi ve prolaktinom hormonal dengesizlik illüstrasyonu"
 references:
