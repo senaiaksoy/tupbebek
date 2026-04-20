@@ -175,12 +175,12 @@ export const navigationMenus: MegaMenuConfig[] = [
       stat: { value: '3 deneme', label: 'SGK kapsamında hak' }
     },
     featuredArticle: {
-      title: 'Sıkça Sorulan Sorular',
-      description: 'Maliyet, SGK, yasal haklar ve süreç hakkında tüm yanıtlar.',
-      href: '/sss'
+      title: 'SSS — Maliyet & SGK',
+      description: 'Maliyet, SGK, yasal haklar ve süreç hakkında ilgili yanıtlar.',
+      href: '/sss#maliyet-sgk'
     },
     submenu: [
-      { label: 'SSS — Maliyet & SGK', href: '/sss', description: 'Ücretler, devlet desteği' },
+      { label: 'SSS — Maliyet & SGK', href: '/sss#maliyet-sgk', description: 'Ücretler, devlet desteği ve hasta hakları' },
       { label: 'Başarı Oranları', href: '/basari-oranlari', description: 'Şeffaf veri ve istatistikler' },
       { label: 'Tıbbi Sorumluluk Reddi', href: '/tibbi-sorumluluk-reddi', description: 'Yasal bilgilendirme' },
       { label: 'Editöryal Politika', href: '/editoryal-politika', description: 'İçerik standartları' },

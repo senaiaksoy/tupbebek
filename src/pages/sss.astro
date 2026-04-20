@@ -47,14 +47,9 @@ import Footer from '../components/Footer.astro';
                 <div>
                     <h3 class="text-xs font-bold text-gray-500 uppercase tracking-widest mb-6">Kategoriler</h3>
                     <nav class="space-y-2">
-                        <button class="w-full text-left px-4 py-3 rounded-xl bg-gray-200 text-primary-600 font-bold flex justify-between items-center group transition-all">
-                            Genel Sorular
-                            <span class="material-symbols-outlined text-sm opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
-                        </button>
-                        <button class="w-full text-left px-4 py-3 rounded-xl hover:bg-gray-100 text-gray-600 transition-all">Tedavi Süreci</button>
-                        <button class="w-full text-left px-4 py-3 rounded-xl hover:bg-gray-100 text-gray-600 transition-all">Başarı Oranları</button>
-                        <button class="w-full text-left px-4 py-3 rounded-xl hover:bg-gray-100 text-gray-600 transition-all">Yaşam Tarzı</button>
-                        <button class="w-full text-left px-4 py-3 rounded-xl hover:bg-gray-100 text-gray-600 transition-all">Erkek Üreme Etkenleri</button>
+                        <a href="#maliyet-sgk" class="block w-full text-left px-4 py-3 rounded-xl bg-gray-200 text-primary-600 font-bold transition-all hover:bg-gray-300">Maliyet, SGK ve Haklar</a>
+                        <a href="#genel-sorular" class="block w-full text-left px-4 py-3 rounded-xl hover:bg-gray-100 text-gray-600 transition-all">Genel Sorular</a>
+                        <a href="#erkek-ureme-etkenleri" class="block w-full text-left px-4 py-3 rounded-xl hover:bg-gray-100 text-gray-600 transition-all">Erkek Üreme Etkenleri</a>
                     </nav>
                 </div>
                 <div class="p-6 rounded-xl bg-mint-100 text-mint-700">
@@ -69,7 +64,74 @@ import Footer from '../components/Footer.astro';
 
             <!-- FAQ Accordion Section -->
             <div class="lg:col-span-9 space-y-20">
-                <section>
+                <section id="maliyet-sgk">
+                    <div class="mb-10 flex items-end justify-between">
+                        <div>
+                            <h2 class="text-3xl font-headline mb-2 text-gray-900">Maliyet, SGK ve Haklar</h2>
+                            <p class="text-gray-600 text-sm">Tüp bebek tedavisinde ücretler, SGK kapsamı ve temel hasta hakları hakkında en sık sorulan sorular.</p>
+                        </div>
+                        <div class="w-20 h-px bg-outline-variant/30 mb-2"></div>
+                    </div>
+                    <div class="space-y-4">
+                        <details class="group bg-gray-50 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+                                <span class="text-lg font-medium text-gray-900 pr-8">SGK tüp bebek tedavisini hangi şartlarda karşılayabilir?</span>
+                                <span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180">expand_more</span>
+                            </summary>
+                            <div class="px-6 pb-8 pt-2">
+                                <div class="w-full h-px bg-gray-100 mb-6"></div>
+                                <div class="text-gray-600 leading-relaxed space-y-4 max-w-4xl">
+                                    <p>SGK desteği; yaş, evlilik durumu, belirli tıbbi raporlar, ön değerlendirme ve başvuru koşullarına bağlıdır. Uygulama şartları dönemsel mevzuat ve kurum sözleşmelerine göre değişebildiği için hastanın güncel evrak ve raporlarıyla birlikte kendi merkezi üzerinden doğrulama yapması gerekir.</p>
+                                    <p>Site üzerindeki bilgiler bilgilendirme amaçlıdır; kesin kapsam bilgisi için başvuru yapılacak merkez ve SGK ile kontrol edilmelidir.</p>
+                                </div>
+                            </div>
+                        </details>
+
+                        <details class="group bg-gray-50 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+                                <span class="text-lg font-medium text-gray-900 pr-8">SGK kapsamında kaç deneme hakkı vardır?</span>
+                                <span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180">expand_more</span>
+                            </summary>
+                            <div class="px-6 pb-8 pt-2">
+                                <div class="w-full h-px bg-gray-100 mb-6"></div>
+                                <div class="text-gray-600 leading-relaxed space-y-4 max-w-4xl">
+                                    <p>Genel bilgilendirme düzeyinde en sık referans verilen çerçeve, uygun koşulları sağlayan hastalarda <strong>3 denemeye kadar</strong> SGK desteği olabileceğidir. Ancak her denemenin aynı kapsamda değerlendirilmesi garanti değildir; rapor yenileme, merkez seçimi ve ilaca ilişkin şartlar etkili olabilir.</p>
+                                    <p class="mt-4"><a href="/tibbi-sorumluluk-reddi" class="text-primary-600 font-bold hover:underline inline-flex items-center gap-1">Yasal uyarı ve kapsam sınırları <span class="material-symbols-outlined text-sm">open_in_new</span></a></p>
+                                </div>
+                            </div>
+                        </details>
+
+                        <details class="group bg-gray-50 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+                                <span class="text-lg font-medium text-gray-900 pr-8">İlaçlar, PGT, EmbryoScope veya benzeri ek işlemler SGK kapsamına girer mi?</span>
+                                <span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180">expand_more</span>
+                            </summary>
+                            <div class="px-6 pb-8 pt-2">
+                                <div class="w-full h-px bg-gray-100 mb-6"></div>
+                                <div class="text-gray-600 leading-relaxed space-y-4 max-w-4xl">
+                                    <p>Standart tüp bebek süreci ile ilişkili bazı kalemler kısmen desteklenebilse de; PGT, EmbryoScope, ERA, bağışıklık tedavileri veya özel laboratuvar uygulamaları gibi ek teknolojiler çoğu zaman ayrı ücretlendirilir ve SGK kapsamı dışında kalabilir.</p>
+                                    <p>Bu nedenle tedavi planı oluşturulurken “hangi işlem temel paket içinde, hangisi ek maliyet” sorusunun yazılı olarak netleştirilmesi hasta açısından önemlidir.</p>
+                                </div>
+                            </div>
+                        </details>
+
+                        <details class="group bg-gray-50 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                            <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+                                <span class="text-lg font-medium text-gray-900 pr-8">Merkezler arasında fiyat neden değişir ve hastanın hangi hakkı vardır?</span>
+                                <span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180">expand_more</span>
+                            </summary>
+                            <div class="px-6 pb-8 pt-2">
+                                <div class="w-full h-px bg-gray-100 mb-6"></div>
+                                <div class="text-gray-600 leading-relaxed space-y-4 max-w-4xl">
+                                    <p>Fiyat farkı; kullanılan laboratuvar altyapısı, hekim ve embriyoloji ekibi deneyimi, ilaç dozu, ek prosedür ihtiyacı ve merkezin fiyatlandırma modeline göre değişebilir. Aynı “tüp bebek” başlığı altında çok farklı kapsamlar sunulabildiği için yalnızca toplam rakama bakmak yanıltıcı olabilir.</p>
+                                    <p>Hastanın temel hakkı; planlanan işlemleri, ek ücretleri, alternatifleri ve tıbbi gerekçeleri anlaşılır biçimde öğrenmektir. En sağlıklı yaklaşım, tedavi öncesinde yazılı kalem kalem maliyet dökümü istemektir.</p>
+                                </div>
+                            </div>
+                        </details>
+                    </div>
+                </section>
+
+                <section id="genel-sorular">
                     <div class="mb-10 flex items-end justify-between">
                         <div>
                             <h2 class="text-3xl font-headline mb-2 text-gray-900">Genel Sorular</h2>
@@ -135,7 +197,7 @@ import Footer from '../components/Footer.astro';
                     </div>
                 </section>
 
-                <section>
+                <section id="erkek-ureme-etkenleri">
                     <div class="mb-10 flex items-end justify-between">
                         <div>
                             <h2 class="text-3xl font-headline mb-2 text-gray-900">Erkek Üreme Etkenleri</h2>
