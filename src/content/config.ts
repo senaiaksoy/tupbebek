@@ -58,6 +58,9 @@ const articlesCollection = defineCollection({
     approvedBy: z.string().optional(),
 
     // --- Bilimsel Referanslar ---
+    // Makale duzeyindeki zorunlu editoryal kanit derecesi.
+    // Yazi ici kritik iddialar icin markdown/MDX icinde {{kanit:A}}, {{kanit:B}},
+    // {{kanit:C}} veya {{kanit:D/E}} inline etiketleri kullanilir.
     recommendationGrade: recommendationGradeEnum,
     references: z.array(referenceSchema).optional(),
 

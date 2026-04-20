@@ -5,6 +5,7 @@ import cloudflare from '@astrojs/cloudflare';
 import mdx from '@astrojs/mdx';
 import fs from 'node:fs';
 import path from 'node:path';
+import remarkInlineEvidence from './src/utils/remarkInlineEvidence.mjs';
 
 // Build article lastmod map from frontmatter
 function getArticleDates() {
@@ -31,6 +32,9 @@ const articleDates = getArticleDates();
 export default defineConfig({
   site: 'https://tupbebek.com',
   output: 'hybrid',
+  markdown: {
+    remarkPlugins: [remarkInlineEvidence],
+  },
   redirects: {
     '/makaleler/hiperprolaktinemi-prolaktinom': '/makaleler/hiperprolaktinemi-ve-kisirlik',
     '/makaleler/myomlar-ve-kisirlik': '/makaleler/miyomlar-ve-tup-bebek',

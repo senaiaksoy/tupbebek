@@ -40,6 +40,7 @@ Her tibbi icerik sayfasinda bulunmasi gereken unsurlar:
 - **Adapter**: @astrojs/cloudflare (Cloudflare Workers)
 - **Styling**: Tailwind CSS 3.4.x
 - **Content**: Astro Content Collections (Markdown/MDX) + Zod validation
+- **Markdown pipeline**: remark tabanli inline kanit etiketi donusumu (`{{kanit:A}}` vb.)
 - **Search**: Pagefind (client-side full-text arama)
 - **Email**: Resend API (iletisim formu + e-kitap)
 - **Fonts**: Inter + Manrope (self-hosted woff2), Material Symbols Outlined (icons)
@@ -223,6 +224,16 @@ Kurallar:
 - Derece, yazidaki **ana klinik onerinin** dayandigi en guclu ve en tutarli kanit govdesine gore verilir.
 - Derece verirken Oxford CEBM veya USPSTF benzeri hiyerarsiler referans alinir; ancak sitede kullanilan gorunen dil yukaridaki sade siniflandirmadir.
 - Derece, pazarlama amacli degil; okuyucunun kanit gucunu hizla anlamasi icin kullanilir.
+- Yazi ici inline gosterim gerekiyorsa su belirtecler kullanilir:
+  - `{{kanit:A}}` -> `(A - cok guclu kanit)`
+  - `{{kanit:B}}` -> `(B - guclu kanit)`
+  - `{{kanit:C}}` -> `(C - orta/zayif kanit)`
+  - `{{kanit:D/E}}` -> `(D/E - cok zayif kanit)`
+- Inline etiketler her cumlede degil, yalnizca kritik klinik iddialarda kullanilir: rutin onerilir / onerilmez, fayda vardir / yoktur, risk olabilir, kanit sinirlidir gibi karar degistirici cumlelerde.
+- Teknik uygulama katmanlari:
+  - Makale ustu genel derece: `src/components/EvidenceGradeCard.astro`
+  - Yazi ici otomatik markdown donusumu: `src/utils/remarkInlineEvidence.mjs`
+  - Manuel Astro/MDX kullanimi: `src/components/InlineEvidence.astro`
 
 ### Kod Kalitesi
 

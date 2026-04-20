@@ -1,0 +1,20 @@
+---
+import { EVIDENCE_GRADE_MAP, type RecommendationGrade } from '../data/evidenceGrades';
+
+interface Props {
+  grade: RecommendationGrade;
+}
+
+const { grade } = Astro.props;
+const config = EVIDENCE_GRADE_MAP[grade];
+const inlineText = `${config.grade} - ${config.inlineLabel}`;
+const tooltip = `Kanit duzeyi: ${config.grade} - ${config.inlineLabel}`;
+---
+
+<span
+  class:list={['inline-evidence', config.inlineClass]}
+  title={tooltip}
+  aria-label={tooltip}
+>
+  ({inlineText})
+</span>

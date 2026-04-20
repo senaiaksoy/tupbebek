@@ -39,6 +39,7 @@ Her tibbi icerik sayfasinda bulunmasi gereken unsurlar:
 - **Framework**: Astro 4.x (Static Site Generator)
 - **Styling**: Tailwind CSS 3.4.x
 - **Content**: Astro Content Collections (Markdown/MDX)
+- **Markdown pipeline**: remark tabanli inline kanit etiketi donusumu (`{{kanit:A}}` vb.)
 - **Fonts**: Inter (headlines + body), Material Symbols Outlined (icons)
 - **Deploy**: Static build, SSG
 
@@ -108,6 +109,7 @@ Makale frontmatter'da kullanilabilir alanlar:
 title: "Makale Basligi"
 description: "Kisa aciklama"
 category: "Kategori"
+recommendationGrade: "B"     # A | B | C | D/E
 status: "published"          # draft | in_review | published
 publishDate: 2024-01-01
 lastModified: 2026-04-03
@@ -129,6 +131,38 @@ references:
     doi: "10.1234/example"
     url: "https://..."
 ```
+
+### Oneri Derecesi / Kanit Duzeyi
+
+Her makalede frontmatter icinde `recommendationGrade` alani bulunur ve makale ustunde gorunur.
+
+Kullanilacak siniflandirma:
+
+- `A` - **Cok Guclu**: Birden fazla yuksek kaliteli RKÇ veya meta-analiz ile desteklenmis
+- `B` - **Guclu**: Sinirli sayida RKÇ veya cok iyi tasarlanmis kohort calismalari
+- `C` - **Orta / Zayif**: Vaka-kontrol calismalari veya gozlemsel veriler
+- `D/E` - **Cok Zayif**: Sadece uzman gorusu veya vaka sunumlari
+
+Yazi ici inline gosterim kurali:
+
+- `{{kanit:A}}` -> `(A - cok guclu kanit)`
+- `{{kanit:B}}` -> `(B - guclu kanit)`
+- `{{kanit:C}}` -> `(C - orta/zayif kanit)`
+- `{{kanit:D/E}}` -> `(D/E - cok zayif kanit)`
+
+Inline etiketler her cumlede kullanilmaz. Yalnizca kritik klinik iddialara eklenir:
+
+- rutin onerilir / onerilmez
+- belirgin fayda vardir / yoktur
+- risk veya zarar olabilir
+- kanit sinirlidir / belirsizdir
+- klinik karari etkileyen temel yargilar
+
+Teknik uygulama:
+
+- Makale uzerindeki genel derece: `src/components/EvidenceGradeCard.astro`
+- Yazi ici inline render: `src/utils/remarkInlineEvidence.mjs`
+- Manuel Astro/MDX kullanimi: `src/components/InlineEvidence.astro`
 
 ## Gelistirme Prensipleri
 

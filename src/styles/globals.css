@@ -236,6 +236,31 @@ tbody tr:hover {
   background-color: var(--color-gray-50);
 }
 
+.inline-evidence {
+  display: inline;
+  white-space: nowrap;
+  font-size: 0.85em;
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.inline-evidence--a {
+  color: #047857;
+}
+
+.inline-evidence--b {
+  color: #1d4ed8;
+}
+
+.inline-evidence--c {
+  color: #b45309;
+}
+
+.inline-evidence--de {
+  color: #be123c;
+}
+
 /* ─────────────────────────────────────────────────────────────────── */
 /* 10. FORM ELEMENTS */
 /* ─────────────────────────────────────────────────────────────────── */
