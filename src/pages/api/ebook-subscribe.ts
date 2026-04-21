@@ -113,7 +113,7 @@ export const POST: APIRoute = async ({ request, locals }) => {
     return new Response(
       JSON.stringify({
         success: true,
-        message: 'E-kitap indirimi başlatıldı. E-posta adresinize gönderildi.'
+        message: 'E-kitap gönderimi başlatıldı. E-posta adresinize gönderildi.'
       }),
       {
         status: 200,

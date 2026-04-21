@@ -20,3 +20,6 @@ lighthouse-report.json
 # Local Codex worktrees
 .claude/worktrees/
 
+# Local temp / logs
+.tmp/
+
