@@ -5,6 +5,13 @@
 # Daha spesifik kurallar önce, wildcard catch-all en sonda.
 
 # --------------------------------------------
+# 0. Host/Protocol canonicalization (single hop)
+# --------------------------------------------
+http://draksoyivf.com/*                            https://www.draksoyivf.com/:splat               301
+http://www.draksoyivf.com/*                        https://www.draksoyivf.com/:splat               301
+https://draksoyivf.com/*                           https://www.draksoyivf.com/:splat               301
+
+# --------------------------------------------
 # 1. Eski site ana sayfa ve kategori redirect'leri
 # --------------------------------------------
 /sorunlar                                       /kadin-infertilitesi                            301

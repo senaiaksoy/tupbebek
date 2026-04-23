@@ -19,11 +19,13 @@ references:
     journal: "Journal of Clinical Oncology"
     year: 2018
     doi: "10.1200/JCO.2018.78.1914"
+    pmid: "29620997"
   - title: "Oocyte cryopreservation for fertility preservation in cancer patients"
     authors: "Cobo A, García-Velasco JA, Remohí J, Pellicer A"
     journal: "Fertility and Sterility"
     year: 2013
     doi: "10.1016/j.fertnstert.2013.01.141"
+    pmid: "23433515"
   - title: "Gonadotoxic effects of chemotherapy and radiotherapy on fertility"
     authors: "Meirow D, Nugent D"
     journal: "Best Practice & Research Clinical Obstetrics & Gynaecology"

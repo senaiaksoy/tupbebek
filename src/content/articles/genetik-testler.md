@@ -20,26 +20,31 @@ references:
     journal: "Human Reproduction Open"
     year: 2020
     doi: "10.1093/hropen/hoaa021"
+    pmid: "32524036"
   - title: "Multicenter trial of preimplantation genetic testing for aneuploidy (STAR trial)"
     authors: "Munné S, Kaplan B, Frattarelli JL et al."
     journal: "Fertility and Sterility"
     year: 2019
     doi: "10.1016/j.fertnstert.2019.07.1346"
+    pmid: "31551155"
   - title: "Clinical outcomes after transfer of blastocysts characterized as mosaic by high resolution next generation sequencing"
     authors: "Greco E, Minasi MG, Fiorentino F"
     journal: "Fertility and Sterility"
     year: 2015
     doi: "10.1016/j.fertnstert.2015.05.012"
+    pmid: "26049056"
   - title: "The use of preimplantation genetic testing for aneuploidy (PGT-A): a committee opinion"
     authors: "Practice Committee of ASRM"
     journal: "Fertility and Sterility"
     year: 2020
     doi: "10.1016/j.fertnstert.2020.04.025"
+    pmid: "32482250"
   - title: "The Istanbul consensus update: a revised ESHRE/ALPHA consensus on oocyte and embryo static and dynamic morphological assessment"
     authors: "Coticchio G, Ahlström A, Balaban B et al."
     journal: "Human Reproduction"
     year: 2025
     doi: "10.1093/humrep/deaf021"
+    pmid: "40288770"
 ---
 
 ## Genetik Testler Neden Önemli?

@@ -19,11 +19,13 @@ references:
     journal: "Human Reproduction"
     year: 2010
     doi: "10.1093/humrep/dep457"
+    pmid: "20089521"
   - title: "Effect of non-cavity-distorting intramural fibroids on the outcomes of in vitro fertilization-embryo transfer: a retrospective matched cohort study"
     authors: "Yan L, Ding L, Li C et al."
     journal: "Fertility and Sterility"
     year: 2014
     doi: "10.1016/j.fertnstert.2014.02.009"
+    pmid: "24613536"
   - title: "Removal of myomas that do not distort the uterine cavity: a committee opinion"
     authors: "Practice Committee of the American Society for Reproductive Medicine"
     journal: "Fertility and Sterility"

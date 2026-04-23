@@ -20,16 +20,19 @@ references:
     journal: "Human Reproduction Update"
     year: 2017
     doi: "10.1093/humupd/dmx006"
+    pmid: "28333357"
   - title: "Effect of omega-3 fatty acids on human sperm quality parameters: a meta-analysis"
     authors: "Hosseini B, Nourmohamadi M, Hajipour S et al."
     journal: "Andrologia"
     year: 2019
     doi: "10.1111/and.13168"
+    pmid: "30298592"
   - title: "Folate and male infertility: a systematic review and meta-analysis"
     authors: "Zheng Y, Zhang J, Zhou H et al."
     journal: "Reproductive BioMedicine Online"
     year: 2015
     doi: "10.1016/j.rbmo.2015.07.003"
+    pmid: "26353913"
 ---
 
 ## Erkek Kısırlığında Besin Takviyeleri Üzerine Sohbet: Bilmeniz Gerekenler

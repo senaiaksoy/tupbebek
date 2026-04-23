@@ -24,11 +24,13 @@ references:
     journal: "Human Reproduction Update"
     year: 2010
     doi: "10.1093/humupd/dmq029"
+    pmid: "20639518"
   - title: "Monitoring of stimulated cycles in assisted reproduction (IMOR)"
     authors: "Kwan I, Bhattacharya S, Kang A, Woolner A"
     journal: "Cochrane Database of Systematic Reviews"
     year: 2014
     doi: "10.1002/14651858.CD005289.pub3"
+    pmid: "25150465"
 ---
 
 ---

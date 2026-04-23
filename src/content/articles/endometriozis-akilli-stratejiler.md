@@ -19,16 +19,19 @@ references:
     journal: "New England Journal of Medicine"
     year: 2020
     doi: "10.1056/NEJMra1810764"
+    pmid: "32212520"
   - title: "Non-invasive diagnosis of endometriosis: a systematic review and meta-analysis"
     authors: "Nisenblat V, Bossuyt PM, Farquhar C et al."
     journal: "Cochrane Database of Systematic Reviews"
     year: 2016
     doi: "10.1002/14651858.CD012281"
+    pmid: "27405583"
   - title: "Deep infiltrating endometriosis: a systematic review of the literature on the impact on fertility"
     authors: "Ballester M, Oppenheimer A, Mathieu d'Argent E et al."
     journal: "Journal of Minimally Invasive Gynecology"
     year: 2012
     doi: "10.1016/j.jmig.2012.04.006"
+    pmid: "22935311"
 videoId: "-FxkIwmlO9g"
 videoTitle: "Endometriozis ve Kısırlık: 2025'in Yeni Tedavi Stratejileri"
 ---

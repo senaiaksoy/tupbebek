@@ -19,16 +19,19 @@ references:
     journal: "Fertility and Sterility"
     year: 2015
     doi: "10.1016/j.fertnstert.2015.03.019"
+    pmid: "25936238"
   - title: "Unexplained infertility: a review and meta-analysis of management strategies"
     authors: "Quaas A, Dokras A"
     journal: "Fertility and Sterility"
     year: 2008
     doi: "10.1016/j.fertnstert.2007.08.073"
+    pmid: "18155706"
   - title: "Female age-related fertility decline"
     authors: "American College of Obstetricians and Gynecologists Committee on Gynecologic Practice"
     journal: "Fertility and Sterility"
     year: 2014
     doi: "10.1016/j.fertnstert.2013.12.032"
+    pmid: "24559617"
 ---
 
 ## Kadın Kısırlığı ve Tüp Bebek Tedavisindeki Rolü: Detaylı Bir Kılavuz

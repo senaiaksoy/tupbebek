@@ -1,0 +1,50 @@
+# Draft rules for coverage issue: "Yönlendirmeli sayfa"
+# Target host assumed: https://www.draksoyivf.com
+# Review on staging before production.
+
+# --------------------------------------------------
+# 1) Canonical host/protocol (single hop)
+# --------------------------------------------------
+http://draksoyivf.com/* https://www.draksoyivf.com/:splat 301
+http://www.draksoyivf.com/* https://www.draksoyivf.com/:splat 301
+https://draksoyivf.com/* https://www.draksoyivf.com/:splat 301
+
+# --------------------------------------------------
+# 2) Language sections retired
+# --------------------------------------------------
+/fr/* / 301
+/ar/* / 301
+
+# --------------------------------------------------
+# 3) Legacy section umbrellas
+# --------------------------------------------------
+/blog/* /makaleler 301
+/treatment/* /tedavi-yontemleri 301
+/ivf-in-turkey/* / 301
+/success-rates /basari-oranlari 301
+/before-you-come/* /tani-sureci 301
+/about-us/* /hakkimizda 301
+/contact-us/* /iletisim 301
+
+# --------------------------------------------------
+# 4) Query parameter policy (edge transform)
+# --------------------------------------------------
+# Remove non-essential tracking params in canonical redirect:
+# - gclid
+# - fbclid
+# - utm_source
+# - utm_medium
+# - utm_campaign
+# - utm_term
+# - utm_content
+#
+# Special case:
+# - ?s={search_term_string} -> redirect to /
+
+# --------------------------------------------------
+# 5) App-level alias source
+# --------------------------------------------------
+# Feed mappings from:
+# reports/gsc-route-aliases-draft.json
+# into:
+# src/utils/routeAliases.mjs

@@ -19,11 +19,13 @@ references:
     journal: "American Journal of Obstetrics and Gynecology"
     year: 2016
     doi: "10.1016/j.ajog.2016.09.075"
+    pmid: "27717732"
   - title: "Lactobacillus dominance and vaginal pH: why is the human vaginal microbiome unique?"
     authors: "Miller EA, Beasley DE, Dunn RR, Archie EA"
     journal: "Frontiers in Microbiology"
     year: 2016
     doi: "10.3389/fmicb.2016.01936"
+    pmid: "28008325"
   - title: "The vaginal microbiome and its relationship to behavior, sexual health, and sexually transmitted diseases"
     authors: "van de Wijgert JHHM, Borgdorff H, Verhelst R et al."
     journal: "Journal of Infectious Diseases"

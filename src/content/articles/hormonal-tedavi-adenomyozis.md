@@ -19,16 +19,19 @@ references:
     journal: "Human Reproduction"
     year: 2014
     doi: "10.1093/humrep/deu041"
+    pmid: "24622619"
   - title: "GnRH agonist pretreatment for women with adenomyosis undergoing IVF/ICSI"
     authors: "Niu Z, Chen Q, Sun Y et al."
     journal: "Gynecological Endocrinology"
     year: 2013
     doi: "10.3109/09513590.2013.797393"
+    pmid: "23772783"
   - title: "Adenomyosis: a clinical review of a challenging gynecologic condition"
     authors: "Chapron C, Vannuccini S, Santulli P et al."
     journal: "Journal of Minimally Invasive Gynecology"
     year: 2020
     doi: "10.1016/j.jmig.2020.02.004"
+    pmid: "32084588"
 ---
 
 ### Hormonal Tedavilerle Adenomyozis ve Tüp Bebek Başarısını Artırmak

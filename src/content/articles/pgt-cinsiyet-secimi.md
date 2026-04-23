@@ -19,11 +19,13 @@ references:
     journal: "Human Reproduction"
     year: 2008
     doi: "10.1093/humrep/den037"
+    pmid: "18321893"
   - title: "Preimplantation genetic testing: a Practice Committee opinion"
     authors: "Practice Committee of ASRM"
     journal: "Fertility and Sterility"
     year: 2008
     doi: "10.1016/j.fertnstert.2007.10.010"
+    pmid: "17945219"
   - title: "Sex selection and preimplantation genetic diagnosis"
     authors: "Robertson JA"
     journal: "Fertility and Sterility"
@@ -34,11 +36,13 @@ references:
     journal: "Human Reproduction"
     year: 2007
     doi: "10.1093/humrep/dem237"
+    pmid: "17728354"
   - title: "Use of preimplantation genetic testing for monogenic defects (PGT-M) for adult-onset conditions: an Ethics Committee opinion"
     authors: "Practice Committee of ASRM"
     journal: "Fertility and Sterility"
     year: 2018
     doi: "10.1016/j.fertnstert.2018.01.028"
+    pmid: "29653707"
 ---
 
 ## PGT ile Cinsiyet Belirlenebilir mi?

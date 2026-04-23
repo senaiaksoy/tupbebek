@@ -19,11 +19,13 @@ references:
     journal: "Human Reproduction"
     year: 2016
     doi: "10.1093/humrep/dew218"
+    pmid: "27664216"
   - title: "Recommendations from the international evidence-based guideline for the assessment and management of polycystic ovary syndrome"
     authors: "Teede HJ, Misso ML, Costello MF et al."
     journal: "Human Reproduction"
     year: 2018
     doi: "10.1093/humrep/dey256"
+    pmid: "30052961"
   - title: "Abnormal uterine bleeding in premenopausal women"
     authors: "Munro MG, Critchley HOD, Fraser IS"
     journal: "The Lancet"

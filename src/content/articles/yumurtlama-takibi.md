@@ -19,6 +19,7 @@ references:
     journal: "New England Journal of Medicine"
     year: 1995
     doi: "10.1056/NEJM199512073332301"
+    pmid: "7477165"
   - title: "Comparison of methods to identify optimal fertile days"
     authors: "Stanford JB, White GL, Hatasaka H"
     journal: "Journal of the American Board of Family Practice"
@@ -29,6 +30,7 @@ references:
     journal: "Fertility and Sterility"
     year: 2004
     doi: "10.1016/j.fertnstert.2004.01.033"
+    pmid: "15302288"
 ---
 
 ## Yumurtlama (Ovülasyon) Takibi: Gebelik Şansınızı Artıran Önemli Bir Yöntem

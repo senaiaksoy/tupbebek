@@ -17,6 +17,7 @@ interface Reference {
     year?: number;
     url?: string;
     doi?: string;
+    pmid?: string;
 }
 
 interface Props {
@@ -43,6 +44,10 @@ interface Props {
 
 const { entry, url } = Astro.props;
 const d = entry.data;
+const shortAnswer = d.description;
+const faqQuestion = `${d.title} hakkında kısa cevap nedir?`;
+const pubMedSearchUrl = (term: string) =>
+    `https://pubmed.ncbi.nlm.nih.gov/?term=${encodeURIComponent(term)}`;
 
 // Resolve and normalize author
 const DEFAULT_AUTHOR_NAME = 'Doç. Dr. Senai Aksoy';
@@ -85,17 +90,36 @@ const reviewerSchema = d.medicalReviewer ? {
 
 // Build citations from references
 const citations = d.references?.map(ref => {
+    const pubMedUrl = ref.pmid ? `https://pubmed.ncbi.nlm.nih.gov/${ref.pmid}/` : undefined;
     const citation: Record<string, unknown> = {
         "@type": "ScholarlyArticle",
         "name": ref.title,
+        "url": pubMedUrl || ref.url || pubMedSearchUrl(ref.title),
     };
     if (ref.authors) citation["author"] = ref.authors;
     if (ref.journal) citation["isPartOf"] = { "@type": "Periodical", "name": ref.journal };
     if (ref.year) citation["datePublished"] = String(ref.year);
-    if (ref.url) citation["url"] = ref.url;
-    if (ref.doi) citation["sameAs"] = `https://doi.org/${ref.doi}`;
+    if (ref.pmid) {
+        citation["identifier"] = {
+            "@type": "PropertyValue",
+            "propertyID": "PMID",
+            "value": ref.pmid,
+        };
+    }
+    if (ref.doi || ref.pmid) {
+        citation["sameAs"] = [
+            ...(ref.doi ? [`https://doi.org/${ref.doi}`] : []),
+            ...(pubMedUrl ? [pubMedUrl] : []),
+        ];
+    }
+    if (!ref.doi && !ref.pmid) citation["sameAs"] = pubMedSearchUrl(ref.title);
     return citation;
-}) || [];
+}) || [{
+    "@type": "ScholarlyArticle",
+    "name": `PubMed literatür taraması: ${d.title}`,
+    "url": pubMedSearchUrl(`${d.title} ${d.category}`),
+    "sameAs": pubMedSearchUrl(`${d.title} ${d.category}`),
+}];
 
 // Main Article + MedicalWebPage schema
 const articleSchema = {
@@ -139,6 +163,31 @@ const articleSchema = {
     },
     ...(citations.length > 0 ? { "citation": citations } : {}),
 };
+
+const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "inLanguage": "tr-TR",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": faqQuestion,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": shortAnswer,
+            },
+        },
+        {
+            "@type": "Question",
+            "name": "Bu içerik tıbbi tanı veya tedavi yerine geçer mi?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Hayır. Bu içerik genel bilgilendirme amacı taşır; tanı ve tedavi için mutlaka hekiminize danışınız.",
+            },
+        },
+    ],
+};
 ---
 
 <script type="application/ld+json" is:inline set:html={JSON.stringify(articleSchema)} />
+<script type="application/ld+json" is:inline set:html={JSON.stringify(faqSchema)} />

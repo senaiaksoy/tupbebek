@@ -19,6 +19,7 @@ references:
     journal: "Current Opinion in Obstetrics and Gynecology"
     year: 2014
     doi: "10.1097/GCO.0000000000000115"
+    pmid: "25304605"
   - title: "Physical activity and fertility: a systematic review and meta-analysis"
     authors: "Rao M, Zeng Z, Tang L"
     journal: "Reproductive Biology and Endocrinology"
@@ -29,6 +30,7 @@ references:
     journal: "Cochrane Database of Systematic Reviews"
     year: 2015
     doi: "10.1002/14651858.CD009154.pub3"
+    pmid: "26148507"
 ---
 
 ## Tüp Bebek ve Embriyo Transferi Sonrası Bakım: Başarıya Giden Yol

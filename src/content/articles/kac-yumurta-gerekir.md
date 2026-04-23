@@ -19,6 +19,7 @@ references:
     journal: "Human Reproduction"
     year: 2011
     doi: "10.1093/humrep/der106"
+    pmid: "21558332"
   - title: "A new more detailed stratification of low responders to ovarian stimulation: from a poor ovarian response to a low prognosis concept (POSEIDON)"
     authors: "Poseidon Group, Alviggi C, Andersen CY et al."
     journal: "Reproductive BioMedicine Online"

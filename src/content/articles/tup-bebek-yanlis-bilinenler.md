@@ -19,16 +19,19 @@ references:
     journal: "Human Reproduction Update"
     year: 2008
     doi: "10.1093/humupd/dmn014"
+    pmid: "18499706"
   - title: "Infertility-related stress and coping in couples undergoing ART"
     authors: "Galhardo A, Cunha M, Pinto-Gouveia J"
     journal: "Journal of Clinical Psychology in Medical Settings"
     year: 2013
     doi: "10.1007/s10880-012-9325-0"
+    pmid: "23104184"
   - title: "The stigma of infertility: an integrative review"
     authors: "Slade P, O'Neill C, Simpson AJ, Lashen H"
     journal: "Fertility and Sterility"
     year: 2007
     doi: "10.1016/j.fertnstert.2007.04.032"
+    pmid: "17681314"
 videoId: "6UwNaQa_di4"
 videoTitle: "Tüp Bebekte Soğan Suyu ve Akupunktur: Mucize mi?"
 ---

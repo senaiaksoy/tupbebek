@@ -20,16 +20,19 @@ references:
     journal: "Cochrane Database of Systematic Reviews"
     year: 2017
     doi: "10.1002/14651858.CD010047.pub2"
+    pmid: "25192224"
   - title: "Transfer of Fresh versus Frozen Embryos in Ovulatory Women"
     authors: "Shi Y, Sun Y, Hao C et al."
     journal: "New England Journal of Medicine"
     year: 2018
     doi: "10.1056/NEJMoa1705334"
+    pmid: "29320646"
   - title: "Endometrial preparation for frozen-thawed embryo transfer cycles: a systematic review"
     authors: "Ghobara T, Gelbaya TA, Ayeleke RO"
     journal: "Cochrane Database of Systematic Reviews"
     year: 2017
     doi: "10.1002/14651858.CD006359.pub3"
+    pmid: "33112418"
 videoId: "S8xkWrHylTE"
 videoTitle: "Dondurulmuş Embriyo Transferi (TEC) Hazırlığı"
 ---

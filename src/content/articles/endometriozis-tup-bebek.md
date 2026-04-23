@@ -19,11 +19,13 @@ references:
     journal: "Human Reproduction Open"
     year: 2022
     doi: "10.1093/hropen/hoac009"
+    pmid: "35350465"
   - title: "The effect of endometriosis on in vitro fertilisation outcome: a systematic review and meta-analysis"
     authors: "Hamdan M, Dunselman G, Li TC et al."
     journal: "Human Reproduction Update"
     year: 2015
     doi: "10.1093/humupd/dmv040"
+    pmid: "26346057"
   - title: "Surgery versus IVF in endometriosis-associated subfertility (SVIDOE): a pragmatic randomised controlled trial and economic evaluation"
     authors: "Santulli P, Bourdon M, Maignien C et al."
     journal: "The Lancet"

@@ -6,6 +6,7 @@ import mdx from '@astrojs/mdx';
 import fs from 'node:fs';
 import path from 'node:path';
 import remarkInlineEvidence from './src/utils/remarkInlineEvidence.mjs';
+import remarkMedicalCompliance from './src/utils/remarkMedicalCompliance.mjs';
 
 // Build article lastmod map from frontmatter
 function getArticleDates() {
@@ -33,7 +34,7 @@ export default defineConfig({
   site: 'https://tupbebek.com',
   output: 'hybrid',
   markdown: {
-    remarkPlugins: [remarkInlineEvidence],
+    remarkPlugins: [remarkMedicalCompliance, remarkInlineEvidence],
   },
   adapter: cloudflare({
     platformProxy: { enabled: true },

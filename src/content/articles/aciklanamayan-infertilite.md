@@ -20,16 +20,19 @@ references:
     journal: "Reproductive BioMedicine Online"
     year: 2012
     doi: "10.1016/j.rbmo.2012.02.020"
+    pmid: "22503276"
   - title: "ESHRE guideline: management of women with endometriosis"
     authors: "Becker CM, Bokor A, Heikinheimo O et al."
     journal: "Human Reproduction"
     year: 2022
     doi: "10.1093/humrep/deac196"
+    pmid: "36112004"
   - title: "Sperm DNA fragmentation and its role in IVF outcome"
     authors: "Agarwal A, Majzoub A, Esteves SC"
     journal: "Fertility and Sterility"
     year: 2020
     doi: "10.1016/j.fertnstert.2020.03.002"
+    pmid: "32622407"
 ---
 
 Açıklanamayan infertilite, standart tanı testlerinde herhangi bir belirgin neden bulunamamasına rağmen gebelik oluşmamasıdır. İnfertilite vakalarının **%10-15**'i bu kategoriye girer. {{kanit:B}} Ancak bu, problemin olmadığı anlamına gelmez; gözardı edilen veya saptanmayan etkenler vardır.

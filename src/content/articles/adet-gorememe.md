@@ -19,11 +19,13 @@ references:
     journal: "Fertility and Sterility"
     year: 2008
     doi: "10.1016/j.fertnstert.2008.09.049"
+    pmid: "18976761"
   - title: "Functional hypothalamic amenorrhea: an Endocrine Society clinical practice guideline"
     authors: "Gordon CM, Ackerman KE, Berga SL et al."
     journal: "The Journal of Clinical Endocrinology & Metabolism"
     year: 2017
     doi: "10.1210/jc.2017-00131"
+    pmid: "28368518"
   - title: "Hypothalamic amenorrhea and its consequences on bone health"
     authors: "Meczekalski B, Katulski K, Czyzyk A et al."
     journal: "International Journal of Endocrinology"

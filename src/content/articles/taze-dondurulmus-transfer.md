@@ -19,6 +19,7 @@ references:
     journal: "Fertility and Sterility"
     year: 2018
     doi: "10.1016/j.fertnstert.2017.10.019"
+    pmid: "29331236"
   - title: "Elective frozen versus fresh embryo transfer in in vitro fertilization"
     authors: "Wei D, Liu JY, Sun Y, Shi Y, Zhang B, Liu JQ et al."
     journal: "New England Journal of Medicine"
@@ -29,6 +30,7 @@ references:
     journal: "Cochrane Database of Systematic Reviews"
     year: 2019
     doi: "10.1002/14651858.CD011184.pub2"
+    pmid: "28349510"
 ---
 
 

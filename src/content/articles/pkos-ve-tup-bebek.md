@@ -20,6 +20,7 @@ references:
     journal: "Human Reproduction"
     year: 2004
     doi: "10.1093/humrep/deh098"
+    pmid: "14688154"
   - title: "IVF outcomes in women with PCOS: a systematic review and meta-analysis"
     authors: "Sha T, Wang X, Cheng W, Yan Y"
     journal: "Reproductive BioMedicine Online"
@@ -30,6 +31,7 @@ references:
     journal: "New England Journal of Medicine"
     year: 2014
     doi: "10.1056/NEJMoa1313517"
+    pmid: "25006718"
 ---
 
 Bu makale, daha kapsamlı rehberimizle birleştirilmiştir {{kanit:C}}.

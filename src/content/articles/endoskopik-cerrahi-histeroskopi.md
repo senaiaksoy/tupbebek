@@ -19,6 +19,7 @@ references:
     journal: "Obstetrics and Gynecology Clinics of North America"
     year: 2004
     doi: "10.1016/j.ogc.2004.05.007"
+    pmid: "15450325"
   - title: "The role of hysteroscopy in improving fertility: a systematic review and meta-analysis"
     authors: "Di Spiezio Sardo A, Di Carlo C, Minozzi S et al."
     journal: "Human Reproduction Update"
@@ -29,6 +30,7 @@ references:
     journal: "JAMA"
     year: 2002
     doi: "10.1001/jama.288.13.1610"
+    pmid: "12350192"
 ---
 
 

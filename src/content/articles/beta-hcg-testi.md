@@ -19,11 +19,13 @@ references:
     journal: "European Journal of Epidemiology"
     year: 2015
     doi: "10.1007/s10654-015-0039-0"
+    pmid: "25963653"
   - title: "Diagnosis and management of ectopic pregnancy"
     authors: "Barnhart KT"
     journal: "American Journal of Obstetrics and Gynecology"
     year: 2009
     doi: "10.1016/j.ajog.2008.09.007"
+    pmid: "19121654"
   - title: "Human chorionic gonadotropin doubling time in early viable pregnancies"
     authors: "Barnhart KT, Sammel MD, Rinaudo PF et al."
     journal: "Obstetrics & Gynecology"

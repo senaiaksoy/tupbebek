@@ -9,6 +9,7 @@ import '../styles/components.css';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import CookieConsent from '../components/CookieConsent.astro';
 import SearchAutocomplete from '../components/SearchAutocomplete.astro';
+import { normalizeInternalPath } from '../utils/routeAliases.mjs';
 
 interface Props {
 	title: string;
@@ -21,7 +22,8 @@ interface Props {
 
 const { title, description = "tupbebek.com | Üreme Sağlığı Bilgisi", image, ogType = "website" } = Astro.props;
 const isHome = Astro.url.pathname === '/';
-const canonicalUrl = `https://tupbebek.com${Astro.url.pathname}`;
+const normalizedPath = normalizeInternalPath(Astro.url.pathname);
+const canonicalUrl = `https://tupbebek.com${normalizedPath}`;
 
 // MedicalWebPage JSON-LD (E-E-A-T + YMYL compliance)
 const medicalWebPageSchema = {
@@ -80,7 +82,9 @@ const medicalWebPageSchema = {
 		<title>{title}</title>
 
 		<!-- Canonical URL -->
-		<link rel="canonical" href={`https://tupbebek.com${Astro.url.pathname}`} />
+		<link rel="canonical" href={canonicalUrl} />
+		<link rel="alternate" hreflang="tr-TR" href={canonicalUrl} />
+		<link rel="alternate" hreflang="x-default" href={canonicalUrl} />
 		<meta name="robots" content="index, follow, max-image-preview:large" />
 
 		<!-- RSS Feed -->
@@ -90,7 +94,7 @@ const medicalWebPageSchema = {
 		<meta property="og:title" content={title} />
 		<meta property="og:description" content={description} />
 		<meta property="og:type" content={ogType} />
-		<meta property="og:url" content={`https://tupbebek.com${Astro.url.pathname}`} />
+		<meta property="og:url" content={canonicalUrl} />
 		<meta property="og:image" content={image ? `https://tupbebek.com${image}` : "https://tupbebek.com/images/home/luxury-embryo.webp"} />
 		<meta property="og:image:width" content="1200" />
 		<meta property="og:image:height" content="630" />

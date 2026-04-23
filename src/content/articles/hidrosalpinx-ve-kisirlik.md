@@ -24,6 +24,7 @@ references:
     journal: "Cochrane Database of Systematic Reviews"
     year: 2010
     doi: "10.1002/14651858.CD002125.pub3"
+    pmid: "20091531"
   - title: "Hydrosalpinx and IVF: salpingectomy or tubal occlusion"
     authors: "Strandell A"
     journal: "Human Reproduction"

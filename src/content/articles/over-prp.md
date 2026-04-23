@@ -32,11 +32,13 @@ references:
     year: 2025
     doi: "10.3390/biomedicines13102488"
     url: "https://www.mdpi.com/2227-9059/13/10/2488"
+    pmid: "41153771"
   - title: "Platelet-rich plasma (PRP) in reproductive medicine: a critical review"
     journal: "Biomedicines"
     year: 2025
     doi: "10.3390/biomedicines13051257"
     url: "https://www.mdpi.com/2227-9059/13/5/1257"
+    pmid: "40427083"
   - title: "Evaluation of intraovarian injection of platelet-rich plasma"
     journal: "BMC Women's Health"
     year: 2025

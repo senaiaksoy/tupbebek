@@ -19,16 +19,19 @@ references:
     journal: "Fertility and Sterility"
     year: 2009
     doi: "10.1016/j.fertnstert.2008.09.049"
+    pmid: "18976761"
   - title: "The effect of intramural fibroids without uterine cavity involvement on the outcome of IVF treatment: a systematic review and meta-analysis"
     authors: "Sunkara SK, Khairy M, El-Toukhy T et al."
     journal: "Human Reproduction"
     year: 2010
     doi: "10.1093/humrep/dep457"
+    pmid: "20089521"
   - title: "FIGO classification system (PALM-COEIN) for causes of abnormal uterine bleeding in nongravid women of reproductive age"
     authors: "Munro MG, Critchley HO, Broder MS, Fraser IS"
     journal: "International Journal of Gynecology & Obstetrics"
     year: 2011
     doi: "10.1016/j.ijgo.2010.11.011"
+    pmid: "21345435"
 ---
 
 

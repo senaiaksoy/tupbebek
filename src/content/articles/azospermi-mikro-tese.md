@@ -24,11 +24,13 @@ references:
     journal: "BJU International"
     year: 2015
     doi: "10.1111/bju.12954"
+    pmid: "25307747"
   - title: "Diagnostic evaluation of the infertile male: a committee opinion"
     authors: "Practice Committee of the American Society for Reproductive Medicine"
     journal: "Fertility and Sterility"
     year: 2015
     doi: "10.1016/j.fertnstert.2014.12.103"
+    pmid: "25597249"
 videoId: "RRDTPsS8SVc"
 videoTitle: "TESE Sonucu Negatif: Sperm Bulma Umudu Hala Var Mı?"
 ---

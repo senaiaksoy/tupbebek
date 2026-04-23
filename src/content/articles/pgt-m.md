@@ -19,36 +19,43 @@ references:
     journal: "New England Journal of Medicine"
     year: 1992
     doi: "10.1056/NEJM199209243271301"
+    pmid: "1381054"
   - title: "ESHRE PGT Consortium good practice recommendations for the detection of monogenic disorders"
     authors: "Carvalho F, Moutou C, Dimitriadou E, et al."
     journal: "Human Reproduction Open"
     year: 2020
     doi: "10.1093/hropen/hoaa018"
+    pmid: "32500103"
   - title: "Next-generation sequencing for preimplantation genetic testing"
     authors: "Fiorentino F, Biricik A, Bono S, et al."
     journal: "Fertility and Sterility"
     year: 2014
     doi: "10.1016/j.fertnstert.2014.01.051"
+    pmid: "24613537"
   - title: "ESHRE PGT Consortium good practice recommendations for the organisation of PGT"
     authors: "Carvalho F, Moutou C, Dimitriadou E et al."
     journal: "Human Reproduction Open"
     year: 2020
     doi: "10.1093/hropen/hoaa021"
+    pmid: "32524036"
   - title: "Preimplantation genetic testing for single-gene disorders: experience with more than 1,000 cycles"
     authors: "Rechitsky S, Pakhalchuk T, San Ramos G et al."
     journal: "Fertility and Sterility"
     year: 2020
     doi: "10.1016/j.fertnstert.2020.01.033"
+    pmid: "32331767"
   - title: "Use of preimplantation genetic testing for monogenic defects (PGT-M) for adult-onset conditions: an Ethics Committee opinion"
     authors: "Practice Committee of ASRM"
     journal: "Fertility and Sterility"
     year: 2018
     doi: "10.1016/j.fertnstert.2018.01.028"
+    pmid: "29653707"
   - title: "ESHRE PGT Consortium data collection XIV: cycles from January to December 2017 with pregnancy follow-up to October 2018"
     authors: "De Rycke M, Berckmoes V et al."
     journal: "Human Reproduction Open"
     year: 2021
     doi: "10.1093/hropen/hoab024"
+    pmid: "34322603"
 ---
 
 ## PGT-M Nedir?

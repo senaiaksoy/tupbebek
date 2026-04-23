@@ -19,11 +19,13 @@ references:
     journal: "Fertility and Sterility"
     year: 2008
     doi: "10.1016/j.fertnstert.2008.02.096"
+    pmid: "18406834"
   - title: "AAGL practice report: practice guidelines on intrauterine adhesions developed in collaboration with the European Society of Gynaecological Endoscopy (ESGE)"
     authors: "AAGL Elevating Gynecologic Surgery"
     journal: "Journal of Minimally Invasive Gynecology"
     year: 2017
     doi: "10.1016/j.jmig.2016.11.008"
+    pmid: "28473177"
   - title: "Reproductive outcome following hysteroscopic adhesiolysis in Asherman syndrome"
     authors: "Roy KK, Baruah J, Sharma JB et al."
     journal: "Archives of Gynecology and Obstetrics"

@@ -115,6 +115,11 @@ const sanitizedImage = sanitizeImage(entry.data.image);
 
                 <EvidenceGradeCard grade={entry.data.recommendationGrade} />
 
+                <section class="mt-5 rounded-2xl border border-primary-100 bg-primary-50/70 p-5" aria-labelledby="short-answer-title">
+                    <h2 id="short-answer-title" class="text-sm font-bold text-primary-900 uppercase tracking-wider mb-2">Kısa cevap</h2>
+                    <p class="text-sm md:text-base text-gray-700 leading-relaxed">{entry.data.description}</p>
+                </section>
+
                 <!-- Editor Kunyesi (compact - makale başı) -->
                 <div class="mt-5">
                     <EditorKunyesi variant="compact" />
@@ -129,8 +134,8 @@ const sanitizedImage = sanitizeImage(entry.data.image);
                         alt={entry.data.imageAlt || entry.data.title}
                         class="w-full h-full object-cover"
                         width="896" height="504"
-                        loading="eager"
-                        fetchpriority="high"
+                        loading="lazy"
+                        decoding="async"
                     />
                 </div>
             )}

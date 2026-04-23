@@ -20,11 +20,13 @@ references:
     journal: "Journal of Clinical Endocrinology & Metabolism"
     year: 2011
     doi: "10.1210/jc.2010-1692"
+    pmid: "21296991"
   - title: "Dopamine agonists for prolactinomas"
     authors: "Gillam MP, Molitch ME, Lombardi G et al."
     journal: "Endocrine Reviews"
     year: 2006
     doi: "10.1210/er.2005-9998"
+    pmid: "16705142"
   - title: "Causes of hyperprolactinemia"
     authors: "Majumdar A, Mangal NS"
     journal: "World Journal of Clinical Cases"

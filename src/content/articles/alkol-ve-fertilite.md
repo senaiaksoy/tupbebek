@@ -24,11 +24,13 @@ references:
     journal: "BMJ Open"
     year: 2014
     doi: "10.1136/bmjopen-2014-005462"
+    pmid: "25277121"
   - title: "Alcohol and fertility: how much is too much?"
     authors: "Van Heertum K, Rossi B"
     journal: "Fertility Research and Practice"
     year: 2017
     doi: "10.1186/s40738-017-0037-x"
+    pmid: "28702207"
 ---
 
 Günün stresi, yoğun çalışma saatleri veya sosyal buluşmalar... Birçoğumuz akşam yemeklerini bir kadeh şarapla süslemekten mutluluk duyuyoruz. Ancak bebek sahibi olma planlarınız varsa, yaşam tarzınızdaki bu alışkanlığı yeniden gözden geçirmeniz gerekebilir.

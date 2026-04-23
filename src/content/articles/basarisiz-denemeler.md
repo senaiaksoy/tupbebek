@@ -19,16 +19,19 @@ references:
     journal: "Human Reproduction"
     year: 2012
     doi: "10.1093/humrep/des227"
+    pmid: "22752612"
   - title: "Routine psychosocial care in infertility and medically assisted reproduction — a guide for fertility staff (ESHRE guideline)"
     authors: "Gameiro S, Boivin J, Dancet E et al."
     journal: "Human Reproduction"
     year: 2015
     doi: "10.1093/humrep/dev177"
+    pmid: "26345684"
   - title: "Recurrent implantation failure: definition and management"
     authors: "Coughlan C, Ledger W, Wang Q et al."
     journal: "Reproductive BioMedicine Online"
     year: 2014
     doi: "10.1016/j.rbmo.2013.11.013"
+    pmid: "24444813"
 ---
 
 Tüp bebek tedavisinde negatif sonuç almak, çiftler için en zorlu deneyimlerden biridir. Ancak modern üreme tıbbında, her başarısız deneme bir sonraki adım için kritik veriler sunar. {{kanit:B}}

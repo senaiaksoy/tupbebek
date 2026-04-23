@@ -19,6 +19,7 @@ references:
     journal: "Proceedings of the National Academy of Sciences"
     year: 2010
     doi: "10.1073/pnas.0906079106"
+    pmid: "19805052"
   - title: "The role of consanguinity in autosomal recessive diseases"
     authors: "Hamamy H"
     journal: "Journal of Community Genetics"

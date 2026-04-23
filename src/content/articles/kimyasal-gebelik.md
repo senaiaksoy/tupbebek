@@ -19,16 +19,19 @@ references:
     journal: "Human Reproduction Update"
     year: 2002
     doi: "10.1093/humupd/8.4.333"
+    pmid: "12206468"
   - title: "Incidence of early loss of pregnancy"
     authors: "Wilcox AJ, Weinberg CR, O'Connor JF et al."
     journal: "New England Journal of Medicine"
     year: 1988
     doi: "10.1056/NEJM198807283190401"
+    pmid: "3393170"
   - title: "Biochemical pregnancy during assisted conception: a little bit pregnant"
     authors: "Annan JJ, Gudi A, Bhide P et al."
     journal: "Journal of Clinical Medicine Research"
     year: 2013
     doi: "10.4021/jocmr1008w"
+    pmid: "23864915"
 ---
 
 ## Kimyasal Gebeliklerin Gölgedeki Yüzü: Anlam, İyileşme ve Umut Peşinde

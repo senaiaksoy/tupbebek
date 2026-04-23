@@ -19,6 +19,7 @@ references:
     journal: "Human Reproduction Update"
     year: 2012
     doi: "10.1093/humupd/dms014"
+    pmid: "22544173"
   - title: "Endometrioma and oocyte quality: effect on in vitro fertilization/intracytoplasmic sperm injection cycles"
     authors: "Almog B, Shehata F, Sheiner E et al."
     journal: "Fertility and Sterility"
@@ -29,6 +30,7 @@ references:
     journal: "Human Reproduction"
     year: 2022
     doi: "10.1093/humrep/deac196"
+    pmid: "36112004"
 ---
 
 ## Endometriozis Kistleri (Endometriomalar): Belirtiler, Nedenleri ve Tedavi Yöntemleri

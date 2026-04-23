@@ -20,16 +20,19 @@ references:
     journal: "Human Reproduction Update"
     year: 2016
     doi: "10.1093/humupd/dmw023"
+    pmid: "27466209"
   - title: "FIGO classification system (PALM-COEIN) for causes of abnormal uterine bleeding"
     authors: "Munro MG, Critchley HOD, Broder MS, Fraser IS"
     journal: "International Journal of Gynecology & Obstetrics"
     year: 2011
     doi: "10.1016/j.ijgo.2010.11.011"
+    pmid: "21345435"
   - title: "Fibroids and infertility: a systematic review of the evidence"
     authors: "Pritts EA, Parker WH, Olive DL"
     journal: "Fertility and Sterility"
     year: 2009
     doi: "10.1016/j.fertnstert.2008.05.049"
+    pmid: "18692796"
 ---
 
 Bu makale, daha kapsamlı rehberimizle birleştirilmiştir {{kanit:C}}.

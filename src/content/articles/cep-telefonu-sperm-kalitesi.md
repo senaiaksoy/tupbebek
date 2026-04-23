@@ -19,16 +19,19 @@ references:
     journal: "Environment International"
     year: 2014
     doi: "10.1016/j.envint.2014.04.015"
+    pmid: "24927498"
   - title: "Cell phones and male infertility: a review of recent innovations in technology and consequences"
     authors: "Agarwal A, Singh A, Hamada A et al."
     journal: "International Brazilian Journal of Urology"
     year: 2011
     doi: "10.1590/S1677-55382011000400002"
+    pmid: "21888695"
   - title: "Lifestyle factors and reproductive health: taking control of your fertility"
     authors: "Sharma R, Biedenharn KR, Fedor JM et al."
     journal: "Reproductive Biology and Endocrinology"
     year: 2013
     doi: "10.1186/1477-7827-11-66"
+    pmid: "23870423"
 ---
 
 ## Cep Telefonlarının Sperm Kalitesi Üzerindeki Gizli Etkileri: Bilimsel Gerçekler ve Korunma Yolları

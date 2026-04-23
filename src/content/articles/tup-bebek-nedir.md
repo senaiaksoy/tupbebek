@@ -20,11 +20,13 @@ references:
     journal: "The Lancet"
     year: 1978
     doi: "10.1016/S0140-6736(78)92957-4"
+    pmid: "79723"
   - title: "ART in Europe, 2019: results generated from European registries by ESHRE"
     authors: "Wyns C, De Geyter C, Calhaz-Jorge C et al."
     journal: "Human Reproduction"
     year: 2023
     doi: "10.1093/humrep/dead197"
+    pmid: "37847771"
   - title: "Infertility prevalence, causes, and treatment: an updated global review"
     authors: "Agarwal A, Baskaran S, Parekh N et al."
     journal: "Reproductive Biology and Endocrinology"

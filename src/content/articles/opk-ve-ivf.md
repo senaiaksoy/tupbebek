@@ -19,6 +19,7 @@ references:
     journal: "Human Reproduction"
     year: 2011
     doi: "10.1093/humrep/der277"
+    pmid: "21896549"
   - title: "In vitro maturation of oocytes from women with polycystic ovary syndrome"
     authors: "Cha KY, Chian RC"
     journal: "Fertility and Sterility"
@@ -29,6 +30,7 @@ references:
     journal: "Human Reproduction Update"
     year: 2010
     doi: "10.1093/humupd/dmq006"
+    pmid: "20354100"
 ---
 
 ## Polikistik Over Sendromu (PCOS): IVF Yolculuğunuzun Gizli Başrolü mü?

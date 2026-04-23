@@ -19,6 +19,7 @@ const referenceSchema = z.object({
   year: z.number().optional(),
   url: z.string().url().optional(),
   doi: z.string().optional(),
+  pmid: z.string().regex(/^\d+$/).optional(),
 });
 
 /**

@@ -20,31 +20,37 @@ references:
     journal: "Human Reproduction"
     year: 2023
     doi: "10.1093/humrep/dead197"
+    pmid: "37847771"
   - title: "Female age-related fertility decline"
     authors: "American College of Obstetricians and Gynecologists Committee on Gynecologic Practice"
     journal: "Fertility and Sterility"
     year: 2014
     doi: "10.1016/j.fertnstert.2013.12.032"
+    pmid: "24559617"
   - title: "The Istanbul consensus workshop on embryo assessment: proceedings of an expert meeting"
     authors: "Alpha Scientists in Reproductive Medicine and ESHRE Special Interest Group of Embryology"
     journal: "Human Reproduction"
     year: 2011
     doi: "10.1093/humrep/der037"
+    pmid: "21502182"
   - title: "Guidance on the limits to the number of embryos to transfer: a committee opinion"
     authors: "Practice Committee of ASRM"
     journal: "Fertility and Sterility"
     year: 2021
     doi: "10.1016/j.fertnstert.2021.06.050"
+    pmid: "34330423"
   - title: "Preimplantation genetic testing for aneuploidy versus morphology as selection criteria for single frozen-thawed embryo transfer in good-prognosis patients"
     authors: "Munné S, Kaplan B, Frattarelli JL et al."
     journal: "Fertility and Sterility"
     year: 2019
     doi: "10.1016/j.fertnstert.2019.07.1346"
+    pmid: "31551155"
   - title: "Freeze-all policy: fresh vs. frozen-thawed embryo transfer — a systematic review and meta-analysis"
     authors: "Roque M, Haahr T, Geber S et al."
     journal: "Fertility and Sterility"
     year: 2019
     doi: "10.1016/j.fertnstert.2018.10.019"
+    pmid: "30691630"
 ---
 
 ## Başarı Oranları Nasıl Ölçülür?
