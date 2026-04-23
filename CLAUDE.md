@@ -4,6 +4,25 @@
 
 tupbebek.com, Turkiye'nin ilk bagimsiz, reklamsiz, bilimsel ureme sagligi ve infertilite referans portalidir. Bas Editor **Doc. Dr. Senai Aksoy** liderliginde, **Egitici Pazarlama** stratejisiyle etik ve organik hasta (lead) uretimi hedeflenmektedir.
 
+## Bagimsizlik Deklarasyonu (HARD CONSTRAINT)
+
+**tupbebek.com BAGIMSIZ bir sitedir.** Dr. Aksoy bas editor olsa da **site ayri bir tuzel kimlige aittir** ve asagidaki Dr. Aksoy klinik sitelerinden **teknik olarak ayridir**:
+
+- `senaiaksoy.net` — Dr. Aksoy'un TR klinik kimlik sitesi (ayri sahiplik/repo)
+- `draksoyivf.com` — Dr. Aksoy'un EN/FR/AR klinik sitesi (ayri sahiplik/repo)
+
+**Regulasyon gerekcesi:** Jenerik domain'ler (tupbebek gibi) doktor klinik sitesi olamaz (SB 12 Kasim 2025 Tanitim Yonetmeligi). Bu yuzden tupbebek.com 2025'te klinik sitesinden bagimsiz yayin portaline donusturuldu.
+
+**Uyulmasi zorunlu kurallar:**
+
+- tupbebek.com'dan senaiaksoy.net veya draksoyivf.com'a **301 redirect yapilmaz** (SEO juice aktarimi yasak — ayri tuzel kimlikler).
+- Bu iki siteden de tupbebek.com'a cross-site 301 beklenmez.
+- "Benim klinigim" / "Bize randevu" gibi **klinik CTA yasak** — portal editor sifatiyle yazilir.
+- Dr. Aksoy'un bas editorlugu **kariyer bilgisi** olarak sunulur; klinik hizmet reklami degil.
+- Dis linkler bilimsel kaynaklara (PubMed, ESHRE, ASRM vb.) — Dr. Aksoy'un klinik sitelerine link verilirse **nofollow** + **pasif kariyer notu** tonunda.
+
+Ekosistem detayi: `D:\A-klasör\obsidian-vaults\draksoyivf-knowledge\wiki\brand\ecosystem.md`
+
 ## Yasal Cerceve
 
 **T.C. Saglik Bakanligi 12 Kasim 2025 Tanitim ve Bilgilendirme Yonetmeligi** ile **TTB (Turk Tabipleri Birligi) Etik Kurallari** tam uyumlu gelistirme yapilir.
