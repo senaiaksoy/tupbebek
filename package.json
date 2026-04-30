@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
+    "prebuild": "node scripts/enrich-pmids.mjs --apply",
     "build": "astro build && echo _worker.js > dist/.assetsignore && npx pagefind --site dist --glob \"makaleler/**/*.html\"",
     "preview": "astro preview",
     "astro": "astro",

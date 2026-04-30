@@ -4,8 +4,11 @@ import path from 'node:path';
 const rootDir = process.cwd();
 const articlesDir = path.join(rootDir, 'src', 'content', 'articles');
 const reportsDir = path.join(rootDir, 'reports');
+const cacheDir = path.join(rootDir, '.cache');
 const reportPath = path.join(reportsDir, 'pmid-enrichment-report.csv');
+const cachePath = path.join(cacheDir, 'pmid-enrichment-cache.json');
 const applyChanges = process.argv.includes('--apply');
+const refreshCache = process.argv.includes('--refresh-cache');
 const eutilsBase = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils';
 const toolName = 'tupbebek_pmid_enrichment';
 
@@ -270,10 +273,39 @@ function csvCell(value) {
   return /[",\r\n]/.test(text) ? `"${text.replace(/"/g, '""')}"` : text;
 }
 
+async function loadCache() {
+  try {
+    return JSON.parse(await fs.readFile(cachePath, 'utf8'));
+  } catch {
+    return {};
+  }
+}
+
+async function saveCache(cache) {
+  await fs.mkdir(cacheDir, { recursive: true });
+  await fs.writeFile(cachePath, JSON.stringify(cache, null, 2), 'utf8');
+}
+
+function referenceSignature(reference) {
+  const { title = '', doi = '', year = '', authors = '', journal = '' } = reference.fields;
+  return JSON.stringify({
+    title: normalizeTitle(title),
+    doi: normalizeDoi(doi),
+    year: String(year).trim(),
+    authors: normalizeTitle(authors),
+    journal: normalizeTitle(journal),
+  });
+}
+
+function cacheKey(file, referenceIndex, reference) {
+  return `${file}#${referenceIndex + 1}:${referenceSignature(reference)}`;
+}
+
 async function main() {
   const files = (await fs.readdir(articlesDir))
     .filter((name) => /\.(md|mdx)$/.test(name))
     .sort();
+  const cache = refreshCache ? {} : await loadCache();
 
   const reportRows = [[
     'file',
@@ -295,6 +327,8 @@ async function main() {
   let alreadyHadPmid = 0;
   let needsReview = 0;
   let notFound = 0;
+  let cacheHits = 0;
+  let cacheWrites = 0;
   const patchesByFile = new Map();
 
   for (const file of files) {
@@ -329,9 +363,45 @@ async function main() {
         continue;
       }
 
+      const key = cacheKey(file, referenceIndex, reference);
+      const cachedCandidate = cache[key];
+      if (cachedCandidate) {
+        cacheHits += 1;
+        const record = cachedCandidate.record || {};
+        if (cachedCandidate.status === 'auto_accept' && record.pmid) {
+          autoAccepted += 1;
+          insertions.push({
+            afterLine: reference.insertAfterLine,
+            line: `    pmid: "${record.pmid}"`,
+          });
+        } else if (cachedCandidate.status === 'needs_review') {
+          needsReview += 1;
+        } else {
+          notFound += 1;
+        }
+
+        reportRows.push([
+          file,
+          referenceIndex + 1,
+          reference.fields.title,
+          reference.fields.doi,
+          '',
+          record.pmid || '',
+          Number(cachedCandidate.confidence || 0).toFixed(2),
+          cachedCandidate.status,
+          `${cachedCandidate.reason}:cache`,
+          record.title || '',
+          record.journal || '',
+          record.year || '',
+        ]);
+        continue;
+      }
+
       try {
         const candidate = await findCandidate(reference);
         const record = candidate.record || {};
+        cache[key] = candidate;
+        cacheWrites += 1;
         if (candidate.status === 'auto_accept' && record.pmid) {
           autoAccepted += 1;
           insertions.push({
@@ -360,6 +430,13 @@ async function main() {
         ]);
       } catch (error) {
         needsReview += 1;
+        cache[key] = {
+          record: undefined,
+          confidence: 0,
+          status: 'needs_review',
+          reason: `lookup_error: ${error.message}`,
+        };
+        cacheWrites += 1;
         reportRows.push([
           file,
           referenceIndex + 1,
@@ -394,6 +471,7 @@ async function main() {
     }
   }
 
+  await saveCache(cache);
   await fs.mkdir(reportsDir, { recursive: true });
   await fs.writeFile(
     reportPath,
@@ -408,6 +486,9 @@ async function main() {
     alreadyHadPmid,
     needsReview,
     notFound,
+    cacheHits,
+    cacheWrites,
+    cachePath,
     reportPath,
   }, null, 2));
 }

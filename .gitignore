@@ -22,4 +22,6 @@ lighthouse-report.json
 
 # Local temp / logs
 .tmp/
+.cache/
+reports/pmid-enrichment-report.csv
 

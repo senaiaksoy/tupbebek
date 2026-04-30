@@ -8,7 +8,6 @@ import path from 'node:path';
 import remarkInlineEvidence from './src/utils/remarkInlineEvidence.mjs';
 import remarkMedicalCompliance from './src/utils/remarkMedicalCompliance.mjs';
 
-// Build article lastmod map from frontmatter
 function getArticleDates() {
   const articlesDir = path.resolve('./src/content/articles');
   const dates = new Map();
@@ -23,13 +22,12 @@ function getArticleDates() {
       if (date) dates.set(slug, date);
     }
   } catch {
-    // Filesystem may not be ready (e.g. WSL2 Plan9 share init)
+    // Filesystem may not be ready
   }
   return dates;
 }
 const articleDates = getArticleDates();
 
-// https://astro.build/config
 export default defineConfig({
   site: 'https://tupbebek.com',
   output: 'hybrid',
