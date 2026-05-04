@@ -44,8 +44,6 @@ interface Props {
 
 const { entry, url } = Astro.props;
 const d = entry.data;
-const shortAnswer = d.description;
-const faqQuestion = `${d.title} hakkında kısa cevap nedir?`;
 const pubMedSearchUrl = (term: string) =>
     `https://pubmed.ncbi.nlm.nih.gov/?term=${encodeURIComponent(term)}`;
 
@@ -163,31 +161,6 @@ const articleSchema = {
     },
     ...(citations.length > 0 ? { "citation": citations } : {}),
 };
-
-const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "inLanguage": "tr-TR",
-    "mainEntity": [
-        {
-            "@type": "Question",
-            "name": faqQuestion,
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": shortAnswer,
-            },
-        },
-        {
-            "@type": "Question",
-            "name": "Bu içerik tıbbi tanı veya tedavi yerine geçer mi?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Hayır. Bu içerik genel bilgilendirme amacı taşır; tanı ve tedavi için mutlaka hekiminize danışınız.",
-            },
-        },
-    ],
-};
 ---
 
 <script type="application/ld+json" is:inline set:html={JSON.stringify(articleSchema)} />
-<script type="application/ld+json" is:inline set:html={JSON.stringify(faqSchema)} />
