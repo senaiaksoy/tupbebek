@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://draksoyivf.com/sitemap-index.xml
+Sitemap: https://tupbebek.com/sitemap-index.xml
 
 # Crawl-delay (onerilen)
 Crawl-delay: 1
