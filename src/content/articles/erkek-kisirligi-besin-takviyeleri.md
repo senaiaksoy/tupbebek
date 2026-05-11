@@ -3,13 +3,14 @@ title: "Erkek Kısırlığında Besin Takviyeleri Üzerine Sohbet. Bilmeniz Gere
 description: "Erkek kısırlığında besin takviyelerinin rolünü keşfedin. Vitamin C, E, CoQ10, L-carnitine ve ashwagandha gibi desteklerin dozları, yan etkileri ve yaşam tarzı önerileriyle ilgili önemli bilgiler bu yazıda."
 status: "draft"
 publishDate: 2025-02-04
-author: "tupbebek.com Yayın Kurulu"
-authorTitle: "Editoryal Ekip"
-authorCredentials: "Doç. Dr. Senai Aksoy editörlüğünde"
+author: "Doç. Dr. Senai Aksoy"
+authorTitle: "Kadın Hastalıkları ve Doğum Uzmanı"
+authorCredentials: "Üreme Tıbbı ve Yardımcı Üreme Teknikleri"
+authorYoutube: "https://www.youtube.com/@DocentDrSenaiAksoy"
 medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Tıbbi Danışma Kurulu"
 reviewDate: 2026-04-09
-lastModified: 2026-04-03
+lastModified: 2026-05-11
 category: "Erkek Sağlığı"
 recommendationGrade: C
 image: /images/library/tedavi/sperm_supp.webp

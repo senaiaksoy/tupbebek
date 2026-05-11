@@ -3,13 +3,14 @@ title: "Myomlar ve Kısırlığa Dair A'dan Z'ye Rehber"
 description: "Bu içerik miyomlar ve tüp bebek rehberimizle birleştirilmiştir."
 status: "draft"
 publishDate: 2024-04-17
-author: "tupbebek.com Yayın Kurulu"
-authorTitle: "Editoryal Ekip"
-authorCredentials: "Doç. Dr. Senai Aksoy editörlüğünde"
+author: "Doç. Dr. Senai Aksoy"
+authorTitle: "Kadın Hastalıkları ve Doğum Uzmanı"
+authorCredentials: "Üreme Tıbbı ve Yardımcı Üreme Teknikleri"
+authorYoutube: "https://www.youtube.com/@DocentDrSenaiAksoy"
 medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Tıbbi Danışma Kurulu"
 reviewDate: 2026-04-09
-lastModified: 2026-04-05
+lastModified: 2026-05-11
 category: "Kadın Sağlığı"
 recommendationGrade: B
 image: /images/library/hastalik/myom.webp

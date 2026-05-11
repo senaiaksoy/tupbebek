@@ -2,18 +2,21 @@
 title: "Açıklanamayan İnfertilite: Nedenleri ve Tedavisi"
 description: "Açıklanamayan (idiyopatik) infertilite tanısı, nedenleri, gizli etkenler ve tedavi seçenekleri."
 publishDate: 2024-09-27
-author: "tupbebek.com Yayın Kurulu"
-authorTitle: "Editoryal Ekip"
-authorCredentials: "Doç. Dr. Senai Aksoy editörlüğünde"
+author: "Doç. Dr. Senai Aksoy"
+authorTitle: "Kadın Hastalıkları ve Doğum Uzmanı"
+authorCredentials: "Üreme Tıbbı ve Yardımcı Üreme Teknikleri"
+authorYoutube: "https://www.youtube.com/@DocentDrSenaiAksoy"
 medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Tıbbi Danışma Kurulu"
 reviewDate: 2026-04-01
-lastModified: 2026-04-03
+lastModified: 2026-05-11
 category: "Tanı ve Testler"
 recommendationGrade: B
 image: "/images/library/tedavi/tup_bebek_muayene.webp"
 imageAlt: "Açıklanamayan infertilite tanı süreci"
-status: "published"
+status: "draft"
+# Disabled 2026-05-11: consolidated to hub /aciklanamayan-infertilite/ via 301 in _redirects
+# (SEO audit S1-2 — duplicate-intent resolution)
 references:
   - title: "Unexplained infertility: a reappraisal"
     authors: "Ray A, Shah A, Gudi A, Homburg R"

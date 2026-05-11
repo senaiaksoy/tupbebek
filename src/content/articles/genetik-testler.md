@@ -2,15 +2,19 @@
 title: "Tüp Bebekte Genetik Testler: PGT Nedir, Ne Zaman Gerekir?"
 description: "Tüp bebek tedavisinde genetik testler (PGT-A, PGT-M, PGT-SR) nedir? Kimlere önerilir? Nasıl yapılır? Riskleri ve faydaları nelerdir? Sade ve anlaşılır bir rehber."
 publishDate: 2026-03-31
-author: "tupbebek.com Yayın Kurulu"
-authorTitle: "Editoryal Ekip"
-authorCredentials: "Doç. Dr. Senai Aksoy editörlüğünde"
+author: "Doç. Dr. Senai Aksoy"
+authorTitle: "Kadın Hastalıkları ve Doğum Uzmanı"
+authorCredentials: "Üreme Tıbbı ve Yardımcı Üreme Teknikleri"
+authorYoutube: "https://www.youtube.com/@DocentDrSenaiAksoy"
 medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Tıbbi Danışma Kurulu"
 reviewDate: 2026-04-09
-lastModified: 2026-04-05
+lastModified: 2026-05-11
 category: "Genetik"
 recommendationGrade: B
+status: "draft"
+# Disabled 2026-05-11: consolidated to hub /genetik-testler/ via 301 in _redirects
+# (SEO audit S1-2 — duplicate-intent resolution)
 image: "/images/library/embriyo/pgt.webp"
 imageAlt: "PGT preimplantasyon genetik test embriyo tarama"
 featured: false
