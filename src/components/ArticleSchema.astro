@@ -36,11 +36,17 @@ interface Props {
             reviewDate?: Date;
             category: string;
             image?: string;
+            imageAlt?: string;
             references?: Reference[];
         };
     };
     url: string;
 }
+
+// Sitewide canonical @ids (mirror src/layouts/BaseLayout.astro — keep in sync)
+const ORG_ID = 'https://tupbebek.com/#organization';
+const WEBSITE_ID = 'https://tupbebek.com/#website';
+const EDITORIAL_BOARD_ID = 'https://tupbebek.com/yayin-kurulu/#editorial-board';
 
 const { entry, url } = Astro.props;
 const d = entry.data;
@@ -119,34 +125,36 @@ const citations = d.references?.map(ref => {
     "sameAs": pubMedSearchUrl(`${d.title} ${d.category}`),
 }];
 
-// Main Article + MedicalWebPage schema
+// Build ImageObject for the article hero image
+const absoluteImageUrl = d.image
+    ? (d.image.startsWith('http') ? d.image : `https://tupbebek.com${d.image}`)
+    : undefined;
+
+const imageObject = absoluteImageUrl ? {
+    "@type": "ImageObject",
+    "url": absoluteImageUrl,
+    "width": 1200,
+    "height": 630,
+    ...(d.imageAlt ? { "caption": d.imageAlt } : {}),
+} : undefined;
+
+// Main Article + MedicalWebPage schema. Publisher + WebSite reference Organization @graph in BaseLayout via @id.
 const articleSchema = {
     "@context": "https://schema.org",
     "@type": ["MedicalWebPage", "Article"],
+    "@id": `${url}#article`,
     "headline": d.title,
     "description": d.description,
     "url": url,
     "inLanguage": "tr-TR",
-    ...(d.image ? { "image": d.image.startsWith('http') ? d.image : `https://tupbebek.com${d.image}` } : {}),
+    ...(imageObject ? { "image": imageObject } : {}),
     ...(d.publishDate ? { "datePublished": d.publishDate.toISOString().split('T')[0] } : {}),
     ...(d.lastModified ? { "dateModified": d.lastModified.toISOString().split('T')[0] } : {}),
     "author": authorSchema,
-    ...(reviewerSchema ? { "reviewedBy": reviewerSchema } : {}),
+    ...(reviewerSchema ? { "reviewedBy": reviewerSchema } : { "reviewedBy": { "@id": EDITORIAL_BOARD_ID } }),
     ...(d.reviewDate ? { "lastReviewed": d.reviewDate.toISOString().split('T')[0] } : {}),
-    "publisher": {
-        "@type": "Organization",
-        "name": "tupbebek.com",
-        "url": "https://tupbebek.com",
-        "logo": {
-            "@type": "ImageObject",
-            "url": "https://tupbebek.com/favicon.svg",
-        },
-    },
-    "isPartOf": {
-        "@type": "WebSite",
-        "name": "tupbebek.com",
-        "url": "https://tupbebek.com",
-    },
+    "publisher": { "@id": ORG_ID },
+    "isPartOf": { "@id": WEBSITE_ID },
     "about": {
         "@type": "MedicalCondition",
         "name": d.category,

@@ -25,17 +25,26 @@ const doctor = {
     youtube: 'https://www.youtube.com/@DocentDrSenaiAksoy',
 };
 
-// Schema.org JSON-LD — Baş Editör & Tıbbi Onay (E-E-A-T)
+// Sitewide canonical @ids (mirror BaseLayout.astro)
+const ORG_ID = 'https://tupbebek.com/#organization';
+const EDITORIAL_BOARD_ID = 'https://tupbebek.com/yayin-kurulu/#editorial-board';
+const EDITOR_ID = 'https://tupbebek.com/yayin-kurulu/#doc-dr-senai-aksoy';
+
+// Schema.org JSON-LD — Baş Editör Person profili (E-E-A-T)
+// NOTE: lastReviewed/reviewedBy at the page level is emitted by ArticleSchema.astro using
+// the article's actual reviewDate frontmatter. We removed the old "new Date()" patch — never
+// claim that "this page was reviewed today" just because today's build ran.
 const editorSchema = {
     "@context": "https://schema.org",
     "@type": "Person",
+    "@id": EDITOR_ID,
     "name": doctor.name,
     "jobTitle": doctor.title,
     "description": doctor.subtitle,
-    "url": "https://tupbebek.com/hakkimizda",
-    "sameAs": [
-        doctor.youtube,
-    ],
+    "url": "https://tupbebek.com/hakkimizda/",
+    "sameAs": [doctor.youtube],
+    "memberOf": { "@id": EDITORIAL_BOARD_ID },
+    "affiliation": { "@id": ORG_ID },
     "worksFor": {
         "@type": "MedicalOrganization",
         "name": doctor.clinic,
@@ -65,23 +74,6 @@ const editorSchema = {
             "name": "Üniversitelerarası Kurul (ÜAK)",
         },
     },
-};
-
-// reviewedBy schema — makale düzeyinde tıbbi onay ilişkisi
-const reviewedBySchema = {
-    "@context": "https://schema.org",
-    "@type": "MedicalWebPage",
-    "reviewedBy": {
-        "@type": "Person",
-        "name": doctor.name,
-        "jobTitle": doctor.title,
-        "sameAs": doctor.youtube,
-        "medicalSpecialty": {
-            "@type": "MedicalSpecialty",
-            "name": "Reproductive Medicine",
-        },
-    },
-    "lastReviewed": new Date().toISOString().split('T')[0],
 };
 ---
 
@@ -168,8 +160,7 @@ const reviewedBySchema = {
                 <span class="material-symbols-outlined text-gray-400 group-hover:text-red-500 group-hover:translate-x-1 transition-all duration-300 shrink-0 text-xl">arrow_forward</span>
             </a>
         </div>
-        <!-- Structured Data: Editor Person + reviewedBy (E-E-A-T) -->
+        <!-- Structured Data: Editor Person profile (E-E-A-T). reviewedBy + lastReviewed handled by ArticleSchema. -->
         <script type="application/ld+json" is:inline set:html={JSON.stringify(editorSchema)} />
-        <script type="application/ld+json" is:inline set:html={JSON.stringify(reviewedBySchema)} />
     </aside>
 )}

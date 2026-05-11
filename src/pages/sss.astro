@@ -2,7 +2,85 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+
+// FAQPage JSON-LD schema — questions mirror the <details> blocks below.
+// Plain-text answers (HTML stripped) for schema. AI Overviews + Perplexity + ChatGPT cite from this.
+const faqItems = [
+	{
+		q: 'SGK tüp bebek tedavisini hangi şartlarda karşılayabilir?',
+		a: 'SGK desteği; yaş, evlilik durumu, belirli tıbbi raporlar, ön değerlendirme ve başvuru koşullarına bağlıdır. Uygulama şartları dönemsel mevzuat ve kurum sözleşmelerine göre değişebildiği için hastanın güncel evrak ve raporlarıyla birlikte kendi merkezi üzerinden doğrulama yapması gerekir. Site üzerindeki bilgiler bilgilendirme amaçlıdır; kesin kapsam bilgisi için başvuru yapılacak merkez ve SGK ile kontrol edilmelidir.',
+	},
+	{
+		q: 'SGK kapsamında kaç deneme hakkı vardır?',
+		a: 'Genel bilgilendirme düzeyinde en sık referans verilen çerçeve, uygun koşulları sağlayan hastalarda 3 denemeye kadar SGK desteği olabileceğidir. Ancak her denemenin aynı kapsamda değerlendirilmesi garanti değildir; rapor yenileme, merkez seçimi ve ilaca ilişkin şartlar etkili olabilir.',
+	},
+	{
+		q: 'İlaçlar, PGT, EmbryoScope veya benzeri ek işlemler SGK kapsamına girer mi?',
+		a: 'Standart tüp bebek süreci ile ilişkili bazı kalemler kısmen desteklenebilse de; PGT, EmbryoScope, ERA, bağışıklık tedavileri veya özel laboratuvar uygulamaları gibi ek teknolojiler çoğu zaman ayrı ücretlendirilir ve SGK kapsamı dışında kalabilir. Tedavi planı oluşturulurken hangi işlemin temel paket içinde, hangisinin ek maliyet olduğu yazılı olarak netleştirilmelidir.',
+	},
+	{
+		q: 'Merkezler arasında fiyat neden değişir ve hastanın hangi hakkı vardır?',
+		a: 'Fiyat farkı; kullanılan laboratuvar altyapısı, hekim ve embriyoloji ekibi deneyimi, ilaç dozu, ek prosedür ihtiyacı ve merkezin fiyatlandırma modeline göre değişebilir. Aynı tüp bebek başlığı altında çok farklı kapsamlar sunulabildiği için yalnızca toplam rakama bakmak yanıltıcı olabilir. Hastanın temel hakkı; planlanan işlemleri, ek ücretleri, alternatifleri ve tıbbi gerekçeleri anlaşılır biçimde öğrenmektir.',
+	},
+	{
+		q: 'Tüp bebek tedavisi ne kadar sürer?',
+		a: 'Standart bir tüp bebek siklusu, adet döneminin ikinci veya üçüncü günü başlar ve yaklaşık 15-20 günlük bir süreci kapsar. Bu süreç; yumurtalıkların uyarılması, yumurta toplama (OPU) ve embriyo transferi aşamalarından oluşur. Dondurulmuş embriyo transferi (FET) veya genetik tarama (PGT) gibi ek prosedürler gerektiğinde, toplam süre iki ay veya daha fazlasına yayılabilir.',
+	},
+	{
+		q: 'PGT testi her hastaya uygulanmalı mıdır?',
+		a: 'Preimplantasyon Genetik Tanı (PGT), rutin bir uygulama olmayıp endikasyon bazlıdır. Genellikle ileri anne yaşı, tekrarlayan düşük öyküsü, başarısız tüp bebek denemeleri veya bilinen genetik hastalık taşıyıcılığı durumlarında klinik protokol olarak önerilir.',
+	},
+	{
+		q: 'Yaşın başarı oranları üzerindeki etkisi nedir?',
+		a: 'Kadın yaşı, tüp bebek başarısındaki en kritik bağımsız değişkendir. Tıbbi literatür, 35 yaş altındaki hastalarda başarı oranlarının en yüksek seviyede olduğunu, 40 yaş ve sonrasında ise over rezervindeki azalma ve oosit kalitesindeki düşüş nedeniyle oranların kademeli olarak azaldığını göstermektedir.',
+	},
+	{
+		q: 'Başarı oranlarını en çok hangi faktörler belirler?',
+		a: 'En güçlü belirleyiciler kadın yaşı, yumurta rezervi, embriyo kalitesi, rahim içi ortamın uygunluğu ve erkek faktörüdür. Merkez seçimi ve laboratuvar kalitesi de önemlidir; ancak bireysel biyoloji çoğu zaman nihai sonucu daha fazla etkiler.',
+	},
+	{
+		q: 'Transfer sonrası dinlenme süreci nasıl olmalıdır?',
+		a: 'Modern klinik çalışmalar, transfer sonrası günlerce yatak istirahatinin gebelik oranlarını artırmadığını kanıtlamıştır. İşlem günü kısa bir istirahat yeterlidir. Sonraki günlerde aşırı fiziksel efordan kaçınmak kaydıyla günlük sosyal yaşama dönülmesi tavsiye edilir.',
+	},
+	{
+		q: 'Beslenme ve günlük alışkanlıklar tedavi sonucunu etkiler mi?',
+		a: 'Evet. Uyku düzeni, sigara ve alkol kullanımı, kilo dengesi, fiziksel aktivite ve stres yönetimi hem kadın hem erkek fertilitesi üzerinde etkili olabilir. Yaşam tarzı değişiklikleri tek başına her sorunu çözmez; ama tedavi planını destekleyen önemli bir zemindir.',
+	},
+	{
+		q: 'Erkek infertilitesi tanısı nasıl konur?',
+		a: 'Erkek infertilitesi tanısı, semen analizi ile başlar. WHO 2021 standartlarına göre en az 15 milyon/mL sperm konsantrasyonu, %40 toplam motilite ve %4 normal morfoloji normal kabul edilir. Analiz abnormal çıktığında hormon paneli (FSH, LH, Testosteron) yapılır.',
+	},
+	{
+		q: 'Sperm kalitesi yaşam tarzından etkilenir mi?',
+		a: 'Evet. Sperm üretimi yaklaşık 74 gün sürdüğü için yaşam tarzı değişiklikleri 3 ay sonra etkisini gösterir. Sigara, alkol, obezite, aşırı ısı maruziyeti ve stres sperm kalitesini bozabilir. Antioksidanlardan zengin beslenme ve düzenli egzersiz iyileşme sağlayabilir.',
+	},
+	{
+		q: 'Azospermi (sperm sayısı sıfır) tedavi edilebilir mi?',
+		a: 'Azospermi, obstrüktif (tıkanıklık) veya nonobstrüktif (üretim sorunu) olabilir. Obstrüktif azospermi cerrahi çözüm ile tedavi edilebilir. Nonobstrüktif azospermide TESE veya microTESE prosedürü ile testisten sperm çıkarılıp ICSI ile kullanılabilir.',
+	},
+	{
+		q: 'Erkek infertilitesinin duygusal etkileri nedir?',
+		a: 'Erkek infertilitesi, erkeklerde yetersizlik hissi, özgüven kaybı ve utanç duyguları yaratabilir. Erkeklerin duygusal destek araması ve profesyonel yardım alması tedavi başarısını ve ilişki kalitesini artırabilir.',
+	},
+];
+
+const faqSchema = {
+	'@context': 'https://schema.org',
+	'@type': 'FAQPage',
+	'@id': 'https://tupbebek.com/sss/#faqpage',
+	mainEntity: faqItems.map((item) => ({
+		'@type': 'Question',
+		name: item.q,
+		acceptedAnswer: {
+			'@type': 'Answer',
+			text: item.a,
+		},
+	})),
+};
 ---
+
+<script type="application/ld+json" is:inline set:html={JSON.stringify(faqSchema)} />
+
 
 <BaseLayout title="Sıkça Sorulan Sorular | tupbebek.com" description="Tüp bebek, IVF süreci, başarı oranları, yaşa bağlı etkenler, infertilite tedavileri ve yaşam tarzı hakkında en çok sorulan soruların bilimsel yanıtları.">
     <Header />

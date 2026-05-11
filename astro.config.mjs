@@ -31,15 +31,39 @@ const articleDates = getArticleDates();
 export default defineConfig({
   site: 'https://tupbebek.com',
   output: 'hybrid',
+  trailingSlash: 'always',
   markdown: {
     remarkPlugins: [remarkMedicalCompliance, remarkInlineEvidence],
   },
   adapter: cloudflare({
     platformProxy: { enabled: true },
+    routes: {
+      extend: {
+        exclude: [
+          { pattern: '/sitemap-index.xml' },
+          { pattern: '/sitemap-0.xml' },
+          { pattern: '/robots.txt' },
+          { pattern: '/llms.txt' },
+        ],
+      },
+    },
   }),
   integrations: [
     tailwind(),
     sitemap({
+      // Exclude pages that 301 to another canonical URL — they should not appear in the sitemap.
+      // See public/_redirects for the matching 301 rules.
+      filter: (page) => {
+        const redirectingPaths = [
+          'https://tupbebek.com/sorunlar/',
+          'https://tupbebek.com/sorunlar',
+          'https://tupbebek.com/yayin-sureci/',
+          'https://tupbebek.com/yayin-sureci',
+          'https://tupbebek.com/kvkk/',
+          'https://tupbebek.com/kvkk',
+        ];
+        return !redirectingPaths.includes(page);
+      },
       serialize(item) {
         const match = item.url.match(/\/makaleler\/([^/]+)/);
         if (match) {
@@ -54,10 +78,5 @@ export default defineConfig({
   ],
   build: {
     inlineStylesheets: 'always',
-  },
-  image: {
-    service: {
-      entrypoint: 'astro/assets/services/noop'
-    }
   },
 });

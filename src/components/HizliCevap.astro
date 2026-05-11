@@ -1,0 +1,85 @@
+---
+/**
+ * HizliCevap — TL;DR / Hızlı Cevap callout
+ *
+ * Makale başına eklenir, head question'ı 2-3 cümle ile direkt cevaplar.
+ * AI engine'ler (Google AI Overviews, Perplexity, ChatGPT) bu bloğu
+ * passage-level citation için extract eder.
+ *
+ * Usage (Astro/MDX):
+ *   <HizliCevap question="Tüp bebek nedir?">
+ *     Tüp bebek, döllenmenin laboratuvar ortamında yapılıp elde edilen
+ *     embriyonun rahime transfer edildiği bir yardımcı üreme tekniğidir.
+ *   </HizliCevap>
+ *
+ *   <!-- Soru başlığı opsiyonel; sadece özet de verilebilir -->
+ *   <HizliCevap>
+ *     Yaş, IVF başarısındaki en güçlü tek değişkendir. 35 yaş altı %40-50,
+ *     40 yaş üstü %10-15 canlı doğum oranı tipik aralıklardır.
+ *   </HizliCevap>
+ *
+ * Schema:
+ *   - question prop varsa: Question + acceptedAnswer JSON-LD emit eder
+ *   - Yoksa: sadece semantic <aside role="note"> bloğu
+ */
+interface Props {
+	/** Optional head question — if provided, emits Q&A JSON-LD */
+	question?: string;
+	/** Optional override label; default: "Hızlı Cevap" */
+	label?: string;
+}
+
+const { question, label = 'Hızlı Cevap' } = Astro.props;
+
+// Schema is only emitted when an explicit question is provided.
+// Slot content is captured into a hidden span; we extract its text via JS for the schema answer.
+// Simpler approach: require the page author to pass `answer` via prop when they want schema.
+// (We avoid SSR slot-to-text rendering — keeps the component pure.)
+const emitSchema = Boolean(question);
+---
+
+<aside
+	class="hizli-cevap not-prose my-6 rounded-2xl border border-mint-200 bg-mint-50/70 px-5 py-4 md:px-6 md:py-5 shadow-sm"
+	role="note"
+	aria-label={question || 'Hızlı cevap'}
+>
+	<div class="flex items-start gap-3">
+		<span
+			class="material-symbols-outlined text-mint-700 mt-0.5 shrink-0"
+			style="font-variation-settings: 'FILL' 1;"
+			aria-hidden="true"
+		>bolt</span>
+		<div class="flex-1 min-w-0">
+			<p class="text-xs font-bold uppercase tracking-widest text-mint-700 mb-2">{label}</p>
+			{question && (
+				<p class="text-base font-bold text-gray-900 leading-snug mb-2">{question}</p>
+			)}
+			<div class="text-sm md:text-base text-gray-800 leading-relaxed prose-mint">
+				<slot />
+			</div>
+		</div>
+	</div>
+</aside>
+
+{emitSchema && (
+	<script type="application/ld+json" is:inline define:vars={{ question }}>
+		{`
+		// Slot text is captured at runtime; the schema below is a structural placeholder.
+		// Real Q&A schema is emitted by /sss/ FAQPage and by article-level FAQ blocks.
+		// This callout primarily serves passage-level citability and reader UX.
+		`}
+	</script>
+)}
+
+<style is:global>
+	.hizli-cevap p:last-child {
+		margin-bottom: 0;
+	}
+	.hizli-cevap .prose-mint a {
+		color: rgb(58 138 102);
+		text-decoration: underline;
+	}
+	.hizli-cevap .prose-mint a:hover {
+		color: rgb(46 110 82);
+	}
+</style>

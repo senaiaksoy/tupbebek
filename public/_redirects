@@ -27,6 +27,17 @@ https://draksoyivf.com/*                           https://www.draksoyivf.com/:s
 /makaleler/dondurulmus-embriyo-transferi        /makaleler/taze-dondurulmus-transfer            301
 /makaleler/erkek-kisirligi-besin-takviyeleri    /makaleler/erkek-dogurganlik-besin-takviyeleri  301
 
+# 2b. Hub / makale duplicate-intent konsolidasyonu (SEO audit 2026-05, S1-2)
+# Yayında olan thin /makaleler/X article'ları hub /X/'e 301; tek kanonik URL.
+/makaleler/aciklanamayan-infertilite            /aciklanamayan-infertilite                      301
+/makaleler/aciklanamayan-infertilite/           /aciklanamayan-infertilite                      301
+/makaleler/basari-oranlari                      /basari-oranlari                                301
+/makaleler/basari-oranlari/                     /basari-oranlari                                301
+/makaleler/basarisiz-denemeler                  /basarisiz-denemeler                            301
+/makaleler/basarisiz-denemeler/                 /basarisiz-denemeler                            301
+/makaleler/genetik-testler                      /genetik-testler                                301
+/makaleler/genetik-testler/                     /genetik-testler                                301
+
 # --------------------------------------------
 # 3. Eski Türkçe sayfa URL'leri (/ana seviye)
 # --------------------------------------------

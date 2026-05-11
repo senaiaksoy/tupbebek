@@ -1,0 +1,38 @@
+# tupbebek.com
+
+> Türkiye'nin bağımsız, reklamsız, bilimsel üreme sağlığı ve infertilite referans portalı. Baş Editör: Doç. Dr. Senai Aksoy. Tıbbi Danışma Kurulu onaylı içerik. Hasta tedavi reklamı içermez; tüm klinik öneriler bilimsel kanıt derecesi (A/B/C/D-E) ile sunulur.
+
+## Hakkında
+
+- [Hakkımızda](https://tupbebek.com/hakkimizda/): Site amacı ve bağımsız yayın profili
+- [Yayın Kurulu](https://tupbebek.com/yayin-kurulu/): 16 üyeli tıbbi danışma kurulu
+- [Editöryal Politika](https://tupbebek.com/editoryal-politika/): İçerik standartları
+- [Yayın Süreci](https://tupbebek.com/yayin-sureci/): Üretim, denetim ve onay akışı
+- [Tıbbi Sorumluluk Reddi](https://tupbebek.com/tibbi-sorumluluk-reddi/): Yasal çerçeve
+
+## Ana Rehberler
+
+- [IVF Rehberi](https://tupbebek.com/ivf-rehberi/): Tüp bebek temel bilgisi
+- [Tanı Süreci](https://tupbebek.com/tani-sureci/): Tetkikler ve değerlendirme
+- [Tedavi Yöntemleri](https://tupbebek.com/tedavi-yontemleri/): IVF, IUI, ICSI ve diğer
+- [Kadın İnfertilitesi](https://tupbebek.com/kadin-infertilitesi/): Kadın faktör
+- [Erkek İnfertilitesi](https://tupbebek.com/erkek-infertilitesi/): Erkek faktör
+- [Yaş ve Fertilite](https://tupbebek.com/yas-ve-fertilite/): Yaşa bağlı etkenler
+- [Hormon Paneli](https://tupbebek.com/hormon-paneli/): AMH, FSH, LH, E2 yorumu
+- [Genetik Testler (PGT)](https://tupbebek.com/genetik-testler/): PGT-A, PGT-M, PGT-SR
+- [Sık Sorulan Sorular](https://tupbebek.com/sss/): 14 yapılandırılmış Q&A
+- [Tıbbi Sözlük](https://tupbebek.com/tibbi-sozluk/): Terim referansı
+
+## Yayın İlkeleri
+
+- Tüm makaleler Tıbbi Danışma Kurulu incelemesinden geçer.
+- Klinik öneriler Oxford CEBM benzeri kanıt hiyerarşisiyle derecelendirilir (A=çok güçlü, B=güçlü, C=orta/zayıf, D/E=çok zayıf).
+- Kaynaklar: ESHRE, ASRM, Cochrane, WHO, PubMed (DOI ile).
+- Klinik reklamı, indirim, garanti, hasta yorumu, öncesi/sonrası fotoğrafı içermez. T.C. Sağlık Bakanlığı 12 Kasım 2025 Tanıtım Yönetmeliği'ne tam uyumludur.
+- Site bağımsızdır; Dr. Aksoy'un klinik sitelerine 301 redirect bulunmaz.
+
+## Optional
+
+- [Sitemap](https://tupbebek.com/sitemap-index.xml)
+- [RSS](https://tupbebek.com/rss.xml)
+- [robots.txt](https://tupbebek.com/robots.txt)

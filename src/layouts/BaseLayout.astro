@@ -25,47 +25,81 @@ const isHome = Astro.url.pathname === '/';
 const normalizedPath = normalizeInternalPath(Astro.url.pathname);
 const canonicalUrl = `https://tupbebek.com${normalizedPath}`;
 
-// MedicalWebPage JSON-LD (E-E-A-T + YMYL compliance)
-const medicalWebPageSchema = {
+// Sitewide @graph: Organization + WebSite + MedicalWebPage with stable @ids.
+// Organization @id is the canonical publisher node that every Article, Person,
+// and WebPage on the site references. Don't rename without updating all schemas.
+const ORG_ID = 'https://tupbebek.com/#organization';
+const WEBSITE_ID = 'https://tupbebek.com/#website';
+const LOGO_ID = 'https://tupbebek.com/#logo';
+const EDITORIAL_BOARD_ID = 'https://tupbebek.com/yayin-kurulu/#editorial-board';
+const pageId = `${canonicalUrl}#webpage`;
+
+const siteGraph = {
   "@context": "https://schema.org",
-  "@type": "MedicalWebPage",
-  "name": title,
-  "description": description,
-  "url": canonicalUrl,
-  "inLanguage": "tr-TR",
-  "isPartOf": {
-    "@type": "WebSite",
-    "name": "tupbebek.com",
-    "url": "https://tupbebek.com",
-    "publisher": {
+  "@graph": [
+    {
       "@type": "Organization",
+      "@id": ORG_ID,
       "name": "tupbebek.com",
-      "url": "https://tupbebek.com",
+      "alternateName": "tupbebek.com Yayın Kurulu",
+      "url": "https://tupbebek.com/",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://tupbebek.com/favicon.svg"
+        "@id": LOGO_ID,
+        "url": "https://tupbebek.com/images/logo-tupbebek.webp",
+        "width": 2201,
+        "height": 964,
+        "caption": "tupbebek.com"
+      },
+      "image": { "@id": LOGO_ID },
+      "description": "Türkiye'nin bağımsız, reklamsız, bilimsel üreme sağlığı ve infertilite referans portalı.",
+      "foundingDate": "2025",
+      "knowsAbout": [
+        "Üreme Tıbbı",
+        "Tüp Bebek (İVF)",
+        "İnfertilite",
+        "Kadın Hastalıkları",
+        "Erkek Üreme Sağlığı",
+        "Embriyoloji"
+      ],
+      "areaServed": { "@type": "Country", "name": "Türkiye" },
+      "ethicsPolicy": "https://tupbebek.com/editoryal-politika/",
+      "publishingPrinciples": "https://tupbebek.com/yayin-sureci/",
+      "diversityPolicy": "https://tupbebek.com/editoryal-politika/",
+      "correctionsPolicy": "https://tupbebek.com/editoryal-politika/",
+      "actionableFeedbackPolicy": "https://tupbebek.com/iletisim/",
+      "subjectOf": { "@id": EDITORIAL_BOARD_ID }
+    },
+    {
+      "@type": "WebSite",
+      "@id": WEBSITE_ID,
+      "url": "https://tupbebek.com/",
+      "name": "tupbebek.com",
+      "description": "Bağımsız üreme sağlığı yayın portalı.",
+      "publisher": { "@id": ORG_ID },
+      "inLanguage": "tr-TR"
+    },
+    {
+      "@type": "MedicalWebPage",
+      "@id": pageId,
+      "name": title,
+      "description": description,
+      "url": canonicalUrl,
+      "inLanguage": "tr-TR",
+      "isPartOf": { "@id": WEBSITE_ID },
+      "publisher": { "@id": ORG_ID },
+      "author": { "@id": ORG_ID },
+      "reviewedBy": { "@id": EDITORIAL_BOARD_ID },
+      "medicalAudience": {
+        "@type": "MedicalAudience",
+        "audienceType": "Patient"
+      },
+      "specialty": {
+        "@type": "MedicalSpecialty",
+        "name": "Üreme Sağlığı"
       }
     }
-  },
-  "author": {
-    "@type": "Organization",
-    "name": "tupbebek.com Yayın Kurulu",
-    "url": "https://tupbebek.com/hakkimizda"
-  },
-  "reviewedBy": {
-    "@type": "Organization",
-    "name": "tupbebek.com Tıbbi Danışma Kurulu",
-    "url": "https://tupbebek.com/hakkimizda#board"
-  },
-  "lastReviewed": "2026-04-07",
-  "medicalAudience": {
-    "@type": "MedicalAudience",
-    "audienceType": "Patient"
-  },
-  "specialty": {
-    "@type": "MedicalSpecialty",
-    "name": "Üreme Sağlığı"
-  }
+  ]
 };
 ---
 
@@ -151,6 +185,9 @@ const medicalWebPageSchema = {
 		<link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin />
 		<link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
 		<link rel="preload" href="/fonts/material-symbols.woff2" as="font" type="font/woff2" crossorigin />
+
+		<!-- LCP preload: hero image. Pages MUST pass `image=` prop and the matching <img> must use fetchpriority="high". -->
+		{image && <link rel="preload" as="image" href={image} fetchpriority="high" />}
 
 
 
@@ -300,8 +337,8 @@ const medicalWebPageSchema = {
 			}
 		</style>
 
-		<!-- MedicalWebPage JSON-LD (E-E-A-T + YMYL) -->
-		<script type="application/ld+json" is:inline set:html={JSON.stringify(medicalWebPageSchema)} />
+		<!-- Sitewide JSON-LD: Organization + WebSite + MedicalWebPage @graph (E-E-A-T + YMYL) -->
+		<script type="application/ld+json" is:inline set:html={JSON.stringify(siteGraph)} />
 	</head>
 	<body class="bg-gray-50 text-gray-900 selection:bg-primary-50 selection:text-primary-800">
 			<a href="#main-content" class="skip-link">Ana içeriğe geç</a>

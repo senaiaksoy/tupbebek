@@ -25,3 +25,9 @@ lighthouse-report.json
 .cache/
 reports/pmid-enrichment-report.csv
 
+# Audit agent temp captures (SEO audit subagents leave these in the project root)
+/html_*.html
+/psi_*.json
+/reports/tmp-*.html
+/reports/capture_all.py
+

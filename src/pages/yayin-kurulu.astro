@@ -151,6 +151,70 @@ const getLastName = (name: string) => {
   return parts[parts.length - 1] ?? name;
 };
 
+// Slug-safe id for each board member (used as schema @id fragment + DOM anchor)
+const memberSlug = (name: string) =>
+  name
+    .toLocaleLowerCase('tr')
+    .replace(/ç/g, 'c').replace(/ğ/g, 'g').replace(/ı/g, 'i')
+    .replace(/ö/g, 'o').replace(/ş/g, 's').replace(/ü/g, 'u')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '');
+
+// Heuristic: derive knowsAbout topics from jobTitle
+const knowsAboutFor = (title: string): string[] => {
+  const t = title.toLocaleLowerCase('tr');
+  const topics: string[] = [];
+  if (t.includes('üreme') || t.includes('infertil') || t.includes('tüp bebek') || t.includes('yardımcı üreme')) {
+    topics.push('Üreme Tıbbı', 'İnfertilite', 'Tüp Bebek (İVF)');
+  }
+  if (t.includes('kadın hastalıkları') || t.includes('doğum')) topics.push('Kadın Hastalıkları ve Doğum');
+  if (t.includes('endokrinol')) topics.push('Endokrinoloji');
+  if (t.includes('embriy')) topics.push('Embriyoloji', 'Embriyo Kültürü', 'Vitrifikasyon');
+  if (t.includes('üroloj') || t.includes('androl') || t.includes('erkek üreme')) topics.push('Üroloji', 'Erkek Üreme Sağlığı');
+  if (t.includes('kardiyoloj')) topics.push('Kardiyoloji');
+  if (t.includes('hukuk')) topics.push('Sağlık Hukuku', 'ÜYTE Mevzuatı', 'KVKK');
+  if (t.includes('fizyoter')) topics.push('Fizyoterapi', 'Pelvik Rehabilitasyon');
+  return topics.length ? topics : ['Üreme Sağlığı'];
+};
+
+// Short bio for schema description — first ~280 chars, no markdown
+const shortBio = (bio: string): string =>
+  bio.length <= 280 ? bio : bio.slice(0, 277).replace(/\s+\S*$/, '') + '...';
+
+const pageUrl = 'https://tupbebek.com/yayin-kurulu/';
+const orgId = 'https://tupbebek.com/#organization';
+
+// Build Person nodes + ItemList wrapper
+const personNodes = boardMembers.map((m) => ({
+  '@type': 'Person',
+  '@id': `${pageUrl}#${memberSlug(m.name)}`,
+  name: m.name,
+  jobTitle: m.title,
+  description: shortBio(m.bio),
+  knowsAbout: knowsAboutFor(m.title),
+  memberOf: { '@id': orgId },
+  affiliation: { '@id': orgId },
+}));
+
+const editorialBoardSchema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'ItemList',
+      '@id': `${pageUrl}#editorial-board`,
+      name: 'tupbebek.com Tıbbi Yayın Kurulu',
+      numberOfItems: boardMembers.length,
+      itemListOrder: 'https://schema.org/ItemListUnordered',
+      itemListElement: boardMembers.map((m, i) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        item: { '@id': `${pageUrl}#${memberSlug(m.name)}` },
+      })),
+    },
+    ...personNodes,
+  ],
+};
+
 const isEditor = (member: (typeof boardMembers)[number]) =>
   member.role.toLocaleLowerCase('tr').includes('edit');
 
@@ -188,6 +252,8 @@ const sortedBoardMembers = boardMembers
 ---
 
 <BaseLayout title="Yayın Kurulu | tupbebek.com" description="tupbebek.com tıbbi yayın kurulu üyeleri, editöryal sürecimiz ve içerik denetim politikamız hakkında bilgi edinin.">
+  <script type="application/ld+json" is:inline set:html={JSON.stringify(editorialBoardSchema)} />
+
   <Header />
 
   <main id="main-content" tabindex="-1" class="pt-32 pb-20">
@@ -212,7 +278,7 @@ const sortedBoardMembers = boardMembers
           {(() => {
             const c = colorMap[editorMember.color as keyof typeof colorMap] || colorMap.primary;
             return (
-              <div class="bg-white border border-gray-200 rounded-xl p-6 md:p-8 hover:shadow-md transition-shadow">
+              <div id={memberSlug(editorMember.name)} class="bg-white border border-gray-200 rounded-xl p-6 md:p-8 hover:shadow-md transition-shadow scroll-mt-32">
                 <div class="flex flex-col sm:flex-row items-start gap-5">
                   <div class:list={['w-14 h-14 rounded-xl flex items-center justify-center shrink-0', c.bg]}>
                     <span class:list={['material-symbols-outlined text-2xl', c.icon]} style="font-variation-settings: 'FILL' 1;">{editorMember.icon}</span>
@@ -277,7 +343,7 @@ const sortedBoardMembers = boardMembers
         {sortedBoardMembers.map((member) => {
           const c = colorMap[member.color as keyof typeof colorMap] || colorMap.primary;
           return (
-            <div class="bg-white border border-gray-200 rounded-xl p-6 md:p-8 hover:shadow-md transition-shadow">
+            <div id={memberSlug(member.name)} class="bg-white border border-gray-200 rounded-xl p-6 md:p-8 hover:shadow-md transition-shadow scroll-mt-32">
               <div class="flex flex-col sm:flex-row items-start gap-5">
                 <div class:list={['w-14 h-14 rounded-xl flex items-center justify-center shrink-0', c.bg]}>
                   <span class:list={['material-symbols-outlined text-2xl', c.icon]} style="font-variation-settings: 'FILL' 1;">{member.icon}</span>
