@@ -1,0 +1,326 @@
+{
+  "home": {
+    "url": "https://tupbebek.com/",
+    "desktop": {
+      "file": "home-desktop.png",
+      "metrics": {
+        "viewport": {
+          "w": 1440,
+          "h": 900
+        },
+        "h1": {
+          "text": "Bilgi Güçtür: Tüp Bebek ve Üreme Sağlığı Rehberiniz",
+          "aboveFold": true,
+          "top": 183
+        },
+        "ctaAboveFold": true,
+        "ctaCount": 22,
+        "trustSignals": [
+          "bilimsel",
+          "editör",
+          "yayın kurulu",
+          "kaynak"
+        ],
+        "navVisible": true,
+        "fontSize": "16px",
+        "title": "tupbebek.com | Ureme Sagligi Bilgi Portali",
+        "hasHScroll": false,
+        "scrollWidth": 1440
+      }
+    },
+    "mobile": {
+      "file": "home-mobile.png",
+      "metrics": {
+        "viewport": {
+          "w": 390,
+          "h": 844
+        },
+        "h1": {
+          "text": "Bilgi Güçtür: Tüp Bebek ve Üreme Sağlığı Rehberiniz",
+          "aboveFold": true,
+          "top": 305
+        },
+        "ctaAboveFold": false,
+        "ctaCount": 22,
+        "trustSignals": [
+          "bilimsel",
+          "editör",
+          "yayın kurulu",
+          "kaynak"
+        ],
+        "navVisible": true,
+        "fontSize": "16px",
+        "title": "tupbebek.com | Ureme Sagligi Bilgi Portali",
+        "hasHScroll": false,
+        "scrollWidth": 390,
+        "touchTargets": {
+          "small": 11,
+          "total": 97,
+          "percentOk": 89,
+          "hamburgerVisible": true,
+          "searchVisible": false
+        }
+      }
+    }
+  },
+  "makaleler": {
+    "url": "https://tupbebek.com/makaleler/tup-bebek-nedir/",
+    "desktop": {
+      "file": "makaleler-desktop.png",
+      "metrics": {
+        "viewport": {
+          "w": 1440,
+          "h": 900
+        },
+        "h1": {
+          "text": "Tüp bebek nedir, kimlere uygulanır?",
+          "aboveFold": true,
+          "top": 288
+        },
+        "ctaAboveFold": true,
+        "ctaCount": 13,
+        "trustSignals": [
+          "bilimsel",
+          "editör",
+          "yayın kurulu",
+          "uzman",
+          "kaynak"
+        ],
+        "navVisible": true,
+        "fontSize": "16px",
+        "title": "Tüp bebek nedir, kimlere uygulanır? | tupbebek.com",
+        "hasHScroll": false,
+        "scrollWidth": 1440
+      }
+    },
+    "mobile": {
+      "file": "makaleler-mobile.png",
+      "metrics": {
+        "viewport": {
+          "w": 390,
+          "h": 844
+        },
+        "h1": {
+          "text": "Tüp bebek nedir, kimlere uygulanır?",
+          "aboveFold": true,
+          "top": 288
+        },
+        "ctaAboveFold": true,
+        "ctaCount": 13,
+        "trustSignals": [
+          "bilimsel",
+          "editör",
+          "yayın kurulu",
+          "uzman",
+          "kaynak"
+        ],
+        "navVisible": true,
+        "fontSize": "16px",
+        "title": "Tüp bebek nedir, kimlere uygulanır? | tupbebek.com",
+        "hasHScroll": false,
+        "scrollWidth": 390,
+        "touchTargets": {
+          "small": 19,
+          "total": 81,
+          "percentOk": 77,
+          "hamburgerVisible": true,
+          "searchVisible": false
+        }
+      }
+    }
+  },
+  "ivf-rehberi": {
+    "url": "https://tupbebek.com/ivf-rehberi/",
+    "desktop": {
+      "file": "ivf-rehberi-desktop.png",
+      "metrics": {
+        "viewport": {
+          "w": 1440,
+          "h": 900
+        },
+        "h1": {
+          "text": "Tüp Bebek (IVF) Adım Adım Rehber",
+          "aboveFold": true,
+          "top": 384
+        },
+        "ctaAboveFold": true,
+        "ctaCount": 11,
+        "trustSignals": [
+          "editör",
+          "yayın kurulu",
+          "kaynak"
+        ],
+        "navVisible": true,
+        "fontSize": "16px",
+        "title": "IVF (Tüp Bebek) Rehberi | tupbebek.com",
+        "hasHScroll": false,
+        "scrollWidth": 1440
+      }
+    },
+    "mobile": {
+      "file": "ivf-rehberi-mobile.png",
+      "metrics": {
+        "viewport": {
+          "w": 390,
+          "h": 844
+        },
+        "h1": {
+          "text": "Tüp Bebek (IVF) Adım Adım Rehber",
+          "aboveFold": true,
+          "top": 384
+        },
+        "ctaAboveFold": false,
+        "ctaCount": 11,
+        "trustSignals": [
+          "editör",
+          "yayın kurulu",
+          "kaynak"
+        ],
+        "navVisible": true,
+        "fontSize": "16px",
+        "title": "IVF (Tüp Bebek) Rehberi | tupbebek.com",
+        "hasHScroll": false,
+        "scrollWidth": 390,
+        "touchTargets": {
+          "small": 7,
+          "total": 54,
+          "percentOk": 87,
+          "hamburgerVisible": true,
+          "searchVisible": false
+        }
+      }
+    }
+  },
+  "e-kitap": {
+    "url": "https://tupbebek.com/e-kitap-indir/",
+    "desktop": {
+      "file": "e-kitap-desktop.png",
+      "metrics": {
+        "viewport": {
+          "w": 1440,
+          "h": 900
+        },
+        "h1": {
+          "text": "30 Günlük Tüp Bebek Beslenme Planı",
+          "aboveFold": true,
+          "top": 244
+        },
+        "ctaAboveFold": true,
+        "ctaCount": 10,
+        "trustSignals": [
+          "bilimsel",
+          "editör",
+          "yayın kurulu",
+          "uzman",
+          "kaynak"
+        ],
+        "navVisible": true,
+        "fontSize": "16px",
+        "title": "30 Günlük Tüp Bebek Beslenme Planı | Bilgilendirici E-Kitap",
+        "hasHScroll": false,
+        "scrollWidth": 1440
+      }
+    },
+    "mobile": {
+      "file": "e-kitap-mobile.png",
+      "metrics": {
+        "viewport": {
+          "w": 390,
+          "h": 844
+        },
+        "h1": {
+          "text": "30 Günlük Tüp Bebek Beslenme Planı",
+          "aboveFold": true,
+          "top": 228
+        },
+        "ctaAboveFold": false,
+        "ctaCount": 10,
+        "trustSignals": [
+          "bilimsel",
+          "editör",
+          "yayın kurulu",
+          "uzman",
+          "kaynak"
+        ],
+        "navVisible": true,
+        "fontSize": "16px",
+        "title": "30 Günlük Tüp Bebek Beslenme Planı | Bilgilendirici E-Kitap",
+        "hasHScroll": false,
+        "scrollWidth": 390,
+        "touchTargets": {
+          "small": 7,
+          "total": 57,
+          "percentOk": 88,
+          "hamburgerVisible": true,
+          "searchVisible": false
+        }
+      }
+    }
+  },
+  "yayin-kurulu": {
+    "url": "https://tupbebek.com/yayin-kurulu/",
+    "desktop": {
+      "file": "yayin-kurulu-desktop.png",
+      "metrics": {
+        "viewport": {
+          "w": 1440,
+          "h": 900
+        },
+        "h1": {
+          "text": "Tıbbi Yayın Kurulu",
+          "aboveFold": true,
+          "top": 348
+        },
+        "ctaAboveFold": true,
+        "ctaCount": 10,
+        "trustSignals": [
+          "bilimsel",
+          "editör",
+          "yayın kurulu",
+          "uzman",
+          "kaynak"
+        ],
+        "navVisible": true,
+        "fontSize": "16px",
+        "title": "Yayın Kurulu | tupbebek.com",
+        "hasHScroll": false,
+        "scrollWidth": 1440
+      }
+    },
+    "mobile": {
+      "file": "yayin-kurulu-mobile.png",
+      "metrics": {
+        "viewport": {
+          "w": 390,
+          "h": 844
+        },
+        "h1": {
+          "text": "Tıbbi Yayın Kurulu",
+          "aboveFold": true,
+          "top": 348
+        },
+        "ctaAboveFold": false,
+        "ctaCount": 10,
+        "trustSignals": [
+          "bilimsel",
+          "editör",
+          "yayın kurulu",
+          "uzman",
+          "kaynak"
+        ],
+        "navVisible": true,
+        "fontSize": "16px",
+        "title": "Yayın Kurulu | tupbebek.com",
+        "hasHScroll": false,
+        "scrollWidth": 390,
+        "touchTargets": {
+          "small": 5,
+          "total": 51,
+          "percentOk": 90,
+          "hamburgerVisible": true,
+          "searchVisible": false
+        }
+      }
+    }
+  }
+}
