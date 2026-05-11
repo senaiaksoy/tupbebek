@@ -32,10 +32,10 @@ interface Props {
 const { question, label = 'Hızlı Cevap' } = Astro.props;
 
 // Schema is only emitted when an explicit question is provided.
-// Slot content is captured into a hidden span; we extract its text via JS for the schema answer.
-// Simpler approach: require the page author to pass `answer` via prop when they want schema.
-// (We avoid SSR slot-to-text rendering — keeps the component pure.)
-const emitSchema = Boolean(question);
+// We do NOT emit JSON-LD here. Real Q&A schema is owned by:
+//   - /sss/ (FAQPage with structured mainEntity array)
+//   - per-article FAQ blocks in MDX
+// This callout serves passage-level reader UX + visual citability, not schema duplication.
 ---
 
 <aside
@@ -60,16 +60,6 @@ const emitSchema = Boolean(question);
 		</div>
 	</div>
 </aside>
-
-{emitSchema && (
-	<script type="application/ld+json" is:inline define:vars={{ question }}>
-		{`
-		// Slot text is captured at runtime; the schema below is a structural placeholder.
-		// Real Q&A schema is emitted by /sss/ FAQPage and by article-level FAQ blocks.
-		// This callout primarily serves passage-level citability and reader UX.
-		`}
-	</script>
-)}
 
 <style is:global>
 	.hizli-cevap p:last-child {
