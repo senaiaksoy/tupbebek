@@ -27,6 +27,10 @@ https://draksoyivf.com/*                           https://www.draksoyivf.com/:s
 /makaleler/dondurulmus-embriyo-transferi        /makaleler/taze-dondurulmus-transfer            301
 /makaleler/erkek-kisirligi-besin-takviyeleri    /makaleler/erkek-dogurganlik-besin-takviyeleri  301
 
+# Optimized asset replacements (SEO audit 2026-05, S0-5)
+# 21 MB PNG was replaced with 39 KB WebP — redirect any external links to the new file.
+/images/makaleler/embryoscope-kapak-2026.png    /images/makaleler/embryoscope-kapak-2026.webp  301
+
 # 2b. Hub / makale duplicate-intent konsolidasyonu (SEO audit 2026-05, S1-2)
 # Yayında olan thin /makaleler/X article'ları hub /X/'e 301; tek kanonik URL.
 /makaleler/aciklanamayan-infertilite            /aciklanamayan-infertilite                      301
