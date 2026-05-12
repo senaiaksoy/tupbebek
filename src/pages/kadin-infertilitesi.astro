@@ -4,10 +4,87 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import StatsStrip from '../components/StatsStrip.astro';
 import RelatedContent from '../components/RelatedContent.astro';
+import MedicalDisclaimer from '../components/MedicalDisclaimer.astro';
+
+const pageTitle = 'Kadın İnfertilitesi: PCOS, Endometriozis, Düşük AMH ve Tüp Faktörü | tupbebek.com';
+const pageDescription = 'Kadın infertilitesi nedenleri: PCOS, endometriozis, düşük AMH, tüp kaynaklı nedenler, miyomlar, hormon paneli ve tanı süreci hakkında bilimsel rehber.';
+
+const clusterLinks = [
+  {
+    href: '/makaleler/adet-duzensizligi-pcos',
+    icon: 'cycle',
+    title: 'PCOS ve adet düzensizliği',
+    description: 'Yumurtlama bozukluğu, hiperandrojenizm ve PCOS tanı yaklaşımı.'
+  },
+  {
+    href: '/makaleler/dusuk-amh-hamilelik',
+    icon: 'egg',
+    title: 'Düşük AMH ve yumurtalık rezervi',
+    description: 'AMH sonucunu doğal gebelik ve IVF planı içinde nasıl okumalı?'
+  },
+  {
+    href: '/makaleler/endometriozis-tup-bebek',
+    icon: 'layers',
+    title: 'Endometriozis ve tüp bebek',
+    description: 'Endometriozis, ağrı, infertilite ve tedavi sıralaması için rehber.'
+  },
+  {
+    href: '/makaleler/hidrosalpinx-ve-kisirlik',
+    icon: 'cable',
+    title: 'Hidrosalpinx ve tüp faktörü',
+    description: 'Tüplerde sıvı birikimi, gebelik şansı ve IVF öncesi değerlendirme.'
+  },
+  {
+    href: '/makaleler/miyomlar-ve-tup-bebek',
+    icon: 'foundation',
+    title: 'Miyomlar ve rahim faktörü',
+    description: 'Miyomun yeri, rahim boşluğu ilişkisi ve embriyo tutunması.'
+  },
+  {
+    href: '/makaleler/yumurtalik-kistleri-dogurganlik',
+    icon: 'radio_button_checked',
+    title: 'Yumurtalık kistleri',
+    description: 'Hangi kistler izlenir, hangileri doğurganlık planını etkileyebilir?'
+  }
+];
+
+const faqItems = [
+  {
+    q: 'Kadın infertilitesi değerlendirmesi ne zaman başlamalıdır?',
+    a: 'Genel yaklaşım, 35 yaş altında 12 ay, 35 yaş ve üzerinde 6 ay düzenli korunmasız ilişkiye rağmen gebelik oluşmadığında değerlendirmeye başlamaktır. Düzensiz adet, bilinen endometriozis, tüp cerrahisi, kemoterapi öyküsü veya çok düşük rezerv şüphesi varsa daha erken değerlendirme gerekebilir.'
+  },
+  {
+    q: 'AMH düşüklüğü tek başına kısırlık tanısı koydurur mu?',
+    a: 'Hayır. AMH yumurtalık rezervi hakkında bilgi verir, ancak tek başına doğal gebelik olasılığını veya tedavi sonucunu kesin belirlemez. Yaş, antral folikül sayısı, adet düzeni, önceki yanıt ve partner değerlendirmesiyle birlikte yorumlanmalıdır.'
+  },
+  {
+    q: 'PCOS olan herkes tüp bebek tedavisine ihtiyaç duyar mı?',
+    a: 'Hayır. PCOS çoğu zaman yumurtlama bozukluğu ile ilişkilidir ve ilk yaklaşım yaşam tarzı, ovülasyon indüksiyonu veya uygun durumlarda IUI olabilir. Tüp bebek, eşlik eden faktörler veya önceki tedavi yanıtlarına göre gündeme gelir.'
+  },
+  {
+    q: 'Endometriozis veya miyom varsa önce ameliyat mı gerekir?',
+    a: 'Her zaman değil. Ameliyat kararı ağrı, kistin/miyomun yeri, rahim boşluğuna etkisi, yumurtalık rezervi, yaş ve IVF planı ile birlikte verilir. Gereksiz cerrahi yumurtalık rezervini azaltabileceği için kişiselleştirilmiş karar önemlidir.'
+  }
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  '@id': 'https://tupbebek.com/kadin-infertilitesi/#faqpage',
+  mainEntity: faqItems.map((item) => ({
+    '@type': 'Question',
+    name: item.q,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: item.a
+    }
+  }))
+};
 ---
 
-<BaseLayout title="Kadın İnfertilitesi: Tıbbi Nedenler | tupbebek.com" description="Kadın infertilitesi nedenleri: PCOS, endometriozis, tüp kaynaklı nedenler, yumurtalık rezervi ve tanı süreçleri hakkında bilimsel rehber.">
+<BaseLayout title={pageTitle} description={pageDescription}>
     <Header />
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(faqSchema)} />
 
     <main id="main-content" tabindex="-1" class="pt-24 pb-24">
         <!-- Hero Section -->
@@ -16,10 +93,10 @@ import RelatedContent from '../components/RelatedContent.astro';
                 <div class="flex-1">
                     <div class="inline-flex items-center gap-2 px-3 py-1 bg-mint-100 text-mint-700 rounded-full text-xs font-semibold uppercase tracking-wider mb-6">
                         <span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">verified</span>
-                        Akademik Makale
+                        Klinik Rehber
                     </div>
                     <h1 class="font-headline text-5xl md:text-6xl text-gray-900 leading-tight mb-8">
-                        Kadın İnfertilitesi: <span class="text-primary-600 italic">Tıbbi Nedenler</span> ve Etkenler
+                        Kadın İnfertilitesi: <span class="text-primary-600 italic">Nedenler</span> ve Tanı Haritası
                     </h1>
                     <div class="flex items-center gap-4 p-4 bg-gray-50 rounded-xl border-l-4 border-primary">
                         <div class="w-12 h-12 rounded-full overflow-hidden bg-gray-200">
@@ -32,54 +109,92 @@ import RelatedContent from '../components/RelatedContent.astro';
                     </div>
                 </div>
                 <div class="hidden md:block w-72 shrink-0 aspect-[4/5] bg-gray-100 rounded-2xl overflow-hidden shadow-2xl">
-                    <img class="w-full h-full object-cover grayscale opacity-80" src="/images/library/hastalik/pkos-ve-ivf.webp" alt="Hücre biyolojisi" width="512" height="512" loading="eager" fetchpriority="high"/>
+                    <img class="w-full h-full object-cover grayscale opacity-80" src="/images/library/hastalik/pkos-ve-ivf.webp" alt="Kadın infertilitesi ve yumurtalık rezervi" width="512" height="512" loading="eager" fetchpriority="high"/>
                 </div>
             </div>
         </header>
 
         <!-- Scientific Introduction -->
-        <section class="max-w-3xl mx-auto px-4 md:px-6 lg:px-8 mb-24">
+        <section class="max-w-3xl mx-auto px-4 md:px-6 lg:px-8 mb-16">
             <p class="text-lg md:text-xl text-gray-600 leading-relaxed font-body italic mb-12">
-                Kadın fertilitesi, endokrin sistem, anatomik bütünlük ve hücresel yaşlanma arasındaki hassas bir dengenin ürünüdür. Üreme sağlığı, karmaşık biyolojik süreçlerin senkronize bir şekilde işlemesine dayanır.
+                Kadın infertilitesi; yumurtlama düzeni, yumurtalık rezervi, fallop tüpleri, rahim içi ortam, endometriozis ve metabolik sağlık gibi birden fazla başlığın birlikte değerlendirilmesini gerektirir. Bu sayfa, ana tabloyu anlamak ve doğru alt rehbere hızlı geçmek için bir merkez sayfadır.
             </p>
             <StatsStrip items={[
-              { icon: 'fertile', heading: 'Ovülasyon', text: 'Hormonal döngülerin düzenliliği ve yumurta kalitesi.' },
-              { icon: 'account_tree', heading: 'Anatomik Yapı', text: 'Fallop tüpleri, uterus ve servikal kanalın geçirgenliği.' },
-               { icon: 'hourglass_empty', heading: 'Yaş Etkeni', text: 'Oosit rezervinin niceliksel ve niteliksel değişimi.' }
+              { icon: 'cycle', heading: 'Ovülasyon', text: 'Adet düzeni, PCOS, prolaktin ve tiroid gibi hormonal etkenler.' },
+              { icon: 'egg', heading: 'Rezerv', text: 'AMH, antral folikül sayısı ve yaş birlikte yorumlanır.' },
+              { icon: 'account_tree', heading: 'Anatomi', text: 'Tüpler, rahim boşluğu, miyomlar ve endometriozis değerlendirilir.' }
             ]} />
-            <p class="text-gray-600 leading-relaxed mb-6">
-                İnfertilite, korunmasız düzenli cinsel ilişkiye rağmen bir yıl (35 yaş üstü kadınlarda 6 ay) içerisinde gebelik oluşmaması olarak tanımlanır. İnfertilite vakalarında kadın kaynaklı nedenler ~%33, erkek kaynaklı nedenler ~%50, çiftin ikisinde de nedenler ~%20-30 oranında rol oynar. Bu nedenle <a href="/tani-sureci" class="text-primary-600 hover:underline">tanı süreci</a> her iki partneri de değerlendirmelidir. <a href="/erkek-infertilitesi" class="text-primary-600 hover:underline">Erkek infertilitesi</a> sayfamızda erkek üreme etkenlerini inceleyebilirsiniz.
+            <p class="text-gray-600 leading-relaxed mt-10">
+                İnfertilite değerlendirmesi yalnızca kadına odaklanmamalıdır. ASRM yaklaşımına göre, sperm katkısı olan bir partner varsa erkek öyküsü ve en az bir semen analizi de başlangıçta ele alınmalıdır. Bu nedenle <a href="/tani-sureci" class="text-primary-600 hover:underline">tanı süreci</a> ve <a href="/erkek-infertilitesi" class="text-primary-600 hover:underline">erkek infertilitesi</a> sayfaları bu rehberle birlikte okunmalıdır.
             </p>
         </section>
 
+        <!-- Topic Cluster -->
+        <section id="konu-haritasi" class="max-w-5xl mx-auto px-4 md:px-6 lg:px-8 mb-16">
+            <div class="bg-white border border-gray-200 rounded-3xl p-6 md:p-8 shadow-sm">
+                <div class="max-w-3xl mb-8">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-primary-600">Konu Haritası</span>
+                    <h2 class="font-headline text-3xl text-gray-900 mt-2 mb-4">Kadın infertilitesi için okuma yolu</h2>
+                    <p class="text-gray-600 leading-relaxed">
+                        Şikayetiniz veya test sonucunuz belliyse doğrudan ilgili alt rehbere geçebilirsiniz. Bu yapı, PCOS, düşük AMH, endometriozis, tüp faktörü ve rahim kaynaklı nedenleri tek merkezde toplar.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    {clusterLinks.map((item) => (
+                        <a href={item.href} class="group rounded-2xl border border-gray-100 bg-gray-50 p-5 hover:border-primary-200 hover:bg-primary-50/40 transition-colors">
+                            <span class="material-symbols-outlined text-primary-600 mb-3">{item.icon}</span>
+                            <h3 class="font-bold text-gray-900 text-sm mb-2 group-hover:text-primary-700">{item.title}</h3>
+                            <p class="text-xs text-gray-600 leading-relaxed">{item.description}</p>
+                        </a>
+                    ))}
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick-Nav -->
+        <nav id="quick-nav" class="sticky top-20 z-40 bg-white/90 backdrop-blur-sm border-b border-gray-100 shadow-sm mb-16">
+            <div class="max-w-5xl mx-auto px-4 md:px-6 lg:px-8 overflow-x-auto whitespace-nowrap">
+                <div class="flex items-center gap-1 py-3">
+                    <a href="#konu-haritasi" class="quick-nav-link px-4 py-2 text-sm font-semibold text-gray-500 hover:text-primary-600 rounded-lg transition-colors shrink-0">Konu Haritası</a>
+                    <a href="#ovulasyon" class="quick-nav-link px-4 py-2 text-sm font-semibold text-gray-500 hover:text-primary-600 rounded-lg transition-colors shrink-0">Ovülasyon</a>
+                    <a href="#rezerv" class="quick-nav-link px-4 py-2 text-sm font-semibold text-gray-500 hover:text-primary-600 rounded-lg transition-colors shrink-0">Rezerv</a>
+                    <a href="#anatomik" class="quick-nav-link px-4 py-2 text-sm font-semibold text-gray-500 hover:text-primary-600 rounded-lg transition-colors shrink-0">Anatomi</a>
+                    <a href="#yasam" class="quick-nav-link px-4 py-2 text-sm font-semibold text-gray-500 hover:text-primary-600 rounded-lg transition-colors shrink-0">Yaşam Tarzı</a>
+                    <a href="#sss" class="quick-nav-link px-4 py-2 text-sm font-semibold text-gray-500 hover:text-primary-600 rounded-lg transition-colors shrink-0">SSS</a>
+                </div>
+            </div>
+        </nav>
+
         <!-- Section 1: Ovülasyon -->
-        <section class="bg-gray-50 py-24 mb-24">
+        <section id="ovulasyon" class="bg-gray-50 py-24 mb-24">
             <div class="max-w-5xl mx-auto px-4 md:px-6 lg:px-8">
                 <div class="flex flex-col md:flex-row gap-16 items-center">
                     <div class="md:w-1/2">
-                        <h2 class="font-headline text-3xl text-gray-900 mb-6">1. Ovülasyon Bozuklukları</h2>
+                        <h2 class="font-headline text-3xl text-gray-900 mb-6">1. Ovülasyon ve Hormon Kaynaklı Nedenler</h2>
                         <div class="space-y-6 text-gray-600">
-                            <p>Yumurtlama bozuklukları, kadın infertilitesinin en yaygın nedenidir ve vakaların yaklaşık %25'ini oluşturur. Bu durum, yumurtalıklardan yumurta salınımının seyrek olması veya hiç gerçekleşmemesi (anovülasyon) ile karakterizedir.</p>
+                            <p>
+                                Düzensiz adet, seyrek yumurtlama veya anovülasyon kadın infertilitesinde sık karşılaşılan başlıklardır. Değerlendirme; adet öyküsü, <a href="/hormon-paneli" class="text-primary-600 hover:underline">hormon paneli</a>, ultrason bulguları ve gerektiğinde metabolik risklerle birlikte yapılır.
+                            </p>
                             <div class="bg-white p-6 rounded-xl shadow-sm space-y-4">
                                 <div class="flex gap-4">
                                     <div class="w-1.5 h-1.5 rounded-full bg-primary-600 mt-2"></div>
                                     <div>
-                                        <h4 class="font-bold text-gray-900">Polikistik Over Sendromu (PCOS)</h4>
-                                        <p class="text-sm">Vücutta aşırı miktarda androjen üretimi ile seyreden hormonal bir dengesizliktir.</p>
+                                        <h3 class="font-bold text-gray-900">PCOS / PKOS</h3>
+                                        <p class="text-sm">Adet düzensizliği, hiperandrojenizm ve polikistik over görünümü birlikte değerlendirilir. <a href="/makaleler/adet-duzensizligi-pcos" class="text-primary-600 hover:underline">PCOS rehberi</a></p>
                                     </div>
                                 </div>
                                 <div class="flex gap-4">
                                     <div class="w-1.5 h-1.5 rounded-full bg-primary-600 mt-2"></div>
                                     <div>
-                                        <h4 class="font-bold text-gray-900">Hipotalamik Disfonksiyon</h4>
-                                        <p class="text-sm">Aşırı stres, düşük vücut ağırlığı veya yoğun fiziksel aktivite sonucu FSH ve LH hormonlarının üretiminin aksamasıdır.</p>
+                                        <h3 class="font-bold text-gray-900">Hiperprolaktinemi ve tiroid</h3>
+                                        <p class="text-sm">Galaktore, adet seyrekliği veya amenore varsa prolaktin ve tiroid başlıkları ayrıca incelenir. <a href="/makaleler/hiperprolaktinemi-ve-kisirlik" class="text-primary-600 hover:underline">Hiperprolaktinemi rehberi</a></p>
                                     </div>
                                 </div>
                                 <div class="flex gap-4">
                                     <div class="w-1.5 h-1.5 rounded-full bg-primary-600 mt-2"></div>
                                     <div>
-                                        <h4 class="font-bold text-gray-900">Prematür Over Yetmezliği</h4>
-                                        <p class="text-sm">Yumurtalıkların 40 yaşından önce yumurta üretimini durdurması (erken menopoz).</p>
+                                        <h3 class="font-bold text-gray-900">Hipotalamik baskılanma</h3>
+                                        <p class="text-sm">Düşük kilo, yoğun egzersiz, enerji açığı veya yoğun stres döngüyü baskılayabilir; yaklaşım altta yatan nedene göre planlanır.</p>
                                     </div>
                                 </div>
                             </div>
@@ -87,11 +202,11 @@ import RelatedContent from '../components/RelatedContent.astro';
                     </div>
                     <div class="md:w-1/2">
                         <div class="relative group">
-                            <img class="rounded-2xl shadow-xl w-full" src="/images/library/hastalik/prolaktin.webp" alt="Hormonal döngüler" width="512" height="512" loading="lazy"/>
+                            <img class="rounded-2xl shadow-xl w-full" src="/images/library/hastalik/prolaktin.webp" alt="Hormonal döngüler ve ovülasyon" width="512" height="512" loading="lazy"/>
                             <div class="absolute -bottom-6 -right-6 bg-gray-100 p-4 rounded-lg hidden md:block">
-                                <p class="text-xs font-bold text-primary-600 tracking-widest uppercase mb-1">Klinik Veri</p>
-                                <p class="text-2xl font-headline">25%</p>
-                                <p class="text-[10px] text-gray-600">İnfertilite vakalarında payı</p>
+                                <p class="text-xs font-bold text-primary-600 tracking-widest uppercase mb-1">İlk Basamak</p>
+                                <p class="text-2xl font-headline">Öykü</p>
+                                <p class="text-[10px] text-gray-600">Adet düzeni kritik ipucudur</p>
                             </div>
                         </div>
                     </div>
@@ -99,85 +214,189 @@ import RelatedContent from '../components/RelatedContent.astro';
             </div>
         </section>
 
-        <!-- Section 2: Anatomik Etkenler -->
-        <section class="max-w-5xl mx-auto px-4 md:px-6 lg:px-8 mb-24">
-            <h2 class="font-headline text-3xl text-gray-900 text-center mb-16">2. Anatomik ve Yapısal Etkenler</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-2xl border border-gray-200/20 hover:bg-gray-50 transition-colors">
-                    <div class="w-12 h-12 bg-primary-50 rounded-xl flex items-center justify-center mb-6">
-                        <span class="material-symbols-outlined text-primary-600">cable</span>
-                    </div>
-                    <h3 class="font-headline text-xl mb-4">Tüp Kaynaklı Nedenler (Tubal)</h3>
-                    <p class="text-sm text-gray-600 leading-relaxed">
-                        Hasar görmüş veya tıkanmış Fallop tüpleri, spermin yumurtaya ulaşmasını veya döllenmiş yumurtanın rahme geçişini engeller. Pelvik inflamatuar hastalıklar (PID) sıklıkla bu duruma yol açar.
+        <!-- Section 2: Ovarian Reserve -->
+        <section id="rezerv" class="max-w-5xl mx-auto px-4 md:px-6 lg:px-8 mb-24">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+                <div>
+                    <h2 class="font-headline text-3xl text-gray-900 mb-6">2. Yaş, AMH ve Yumurtalık Rezervi</h2>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Kadın yaşı, yumurta sayısı ve yumurta kromozomal sağlığı açısından en önemli değişkenlerden biridir. AMH ve antral folikül sayısı yumurtalık yanıtı hakkında fikir verir; ancak tek başına gebelik olasılığını kesin olarak belirlemez.
                     </p>
+                    <div class="bg-primary-50 border border-primary-100 rounded-xl p-5 text-sm text-gray-600">
+                        <h3 class="font-bold text-gray-900 mb-2">Rezerv sonucu nasıl okunmalı?</h3>
+                        <ul class="space-y-1">
+                            <li>• AMH, yaş ve ultrason bulgularıyla birlikte yorumlanır.</li>
+                            <li>• Düşük AMH, “gebelik olmaz” anlamına gelmez; tedavi yanıtını ve zamanlamayı etkileyebilir.</li>
+                            <li>• Kemoterapi, endometrioma cerrahisi veya ailede erken menopoz öyküsü varsa fertilite koruma ayrıca konuşulmalıdır.</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="bg-white p-8 rounded-2xl border border-gray-200/20 hover:bg-gray-50 transition-colors">
-                    <div class="w-12 h-12 bg-primary-50 rounded-xl flex items-center justify-center mb-6">
-                        <span class="material-symbols-outlined text-primary-600">layers</span>
-                    </div>
-                    <h3 class="font-headline text-xl mb-4">Endometriozis</h3>
-                    <p class="text-sm text-gray-600 leading-relaxed">
-                        Rahim içini döşeyen dokunun rahim dışında (yumurtalıklar, tüpler) büyümesidir. Bu durum hem anatomik bozulmalara hem de yumurta kalitesini etkileyen inflamasyona neden olabilir.
-                    </p>
-                </div>
-                <div class="bg-white p-8 rounded-2xl border border-gray-200/20 hover:bg-gray-50 transition-colors">
-                    <div class="w-12 h-12 bg-primary-50 rounded-xl flex items-center justify-center mb-6">
-                        <span class="material-symbols-outlined text-primary-600">foundation</span>
-                    </div>
-                    <h3 class="font-headline text-xl mb-4">Rahim Kaynaklı Nedenler (Uterin)</h3>
-                    <p class="text-sm text-gray-600 leading-relaxed">
-                        Rahimdeki polipler, miyomlar veya doğuştan gelen şekil bozuklukları, embriyonun tutunmasını (implantasyon) zorlaştırarak gebelik kaybına veya infertilitesine yol açabilir.
-                    </p>
+                <div class="grid grid-cols-1 gap-4">
+                    <a href="/makaleler/dusuk-amh-hamilelik" class="rounded-2xl border border-gray-200 p-6 hover:bg-gray-50 transition-colors">
+                        <span class="material-symbols-outlined text-primary-600 mb-2">egg</span>
+                        <h3 class="font-bold text-gray-900 mb-2">Düşük AMH ile hamile kalınır mı?</h3>
+                        <p class="text-sm text-gray-600">AMH sonucunu gerçekçi ama paniğe kapılmadan değerlendirmek için.</p>
+                    </a>
+                    <a href="/fertilite-koruma" class="rounded-2xl border border-gray-200 p-6 hover:bg-gray-50 transition-colors">
+                        <span class="material-symbols-outlined text-primary-600 mb-2">shield</span>
+                        <h3 class="font-bold text-gray-900 mb-2">Fertilite koruma</h3>
+                        <p class="text-sm text-gray-600">Yumurta dondurma, onkolojik tedavi öncesi koruma ve zamanlama kararları.</p>
+                    </a>
                 </div>
             </div>
         </section>
 
-        <!-- Section 3: Yaş ve Yaşam Tarzı -->
-        <section class="max-w-3xl mx-auto px-4 md:px-6 lg:px-8">
-            <h2 class="font-headline text-3xl text-gray-900 mb-8">3. Yaş ve Metabolik Sağlık</h2>
-            <p class="text-gray-600 leading-relaxed mb-12">
-                Kadın infertilitesinde en belirleyici etken biyolojik yaştır. Kadınlar sınırlı sayıda yumurta ile doğarlar ve bu rezerv yaş ilerledikçe hem sayıca azalır hem de kromozomal olarak kalitesi düşer. 35 yaşından itibaren bu süreç hızlanmakta, 40 yaş sonrasında ise doğal yollarla gebe kalma olasılığı belirgin şekilde minimize olmaktadır.
+        <!-- Section 3: Anatomical Factors -->
+        <section id="anatomik" class="bg-gray-50 py-24 mb-24">
+            <div class="max-w-5xl mx-auto px-4 md:px-6 lg:px-8">
+                <h2 class="font-headline text-3xl text-gray-900 text-center mb-16">3. Tüp, Rahim ve Endometriozis Kaynaklı Etkenler</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <a href="/makaleler/hidrosalpinx-ve-kisirlik" class="bg-white p-8 rounded-2xl border border-gray-200 hover:shadow-lg transition-shadow">
+                        <div class="w-12 h-12 bg-primary-50 rounded-xl flex items-center justify-center mb-6">
+                            <span class="material-symbols-outlined text-primary-600">cable</span>
+                        </div>
+                        <h3 class="font-headline text-xl mb-4">Tüp Kaynaklı Nedenler</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Geçirilmiş enfeksiyon, cerrahi veya hidrosalpinx spermin ve embriyonun geçişini etkileyebilir.
+                        </p>
+                    </a>
+                    <a href="/makaleler/endometriozis-tup-bebek" class="bg-white p-8 rounded-2xl border border-gray-200 hover:shadow-lg transition-shadow">
+                        <div class="w-12 h-12 bg-primary-50 rounded-xl flex items-center justify-center mb-6">
+                            <span class="material-symbols-outlined text-primary-600">layers</span>
+                        </div>
+                        <h3 class="font-headline text-xl mb-4">Endometriozis</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Ağrı, endometrioma, inflamasyon ve yumurtalık rezervi birlikte değerlendirilir; cerrahi kararı kişiseldir.
+                        </p>
+                    </a>
+                    <a href="/makaleler/miyomlar-ve-tup-bebek" class="bg-white p-8 rounded-2xl border border-gray-200 hover:shadow-lg transition-shadow">
+                        <div class="w-12 h-12 bg-primary-50 rounded-xl flex items-center justify-center mb-6">
+                            <span class="material-symbols-outlined text-primary-600">foundation</span>
+                        </div>
+                        <h3 class="font-headline text-xl mb-4">Rahim Kaynaklı Nedenler</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Polip, submuköz miyom, yapışıklık veya rahim boşluğu sorunları embriyo tutunmasını etkileyebilir.
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Lifestyle -->
+        <section id="yasam" class="max-w-3xl mx-auto px-4 md:px-6 lg:px-8 mb-16">
+            <h2 class="font-headline text-3xl text-gray-900 mb-8">4. Metabolik Sağlık ve Yaşam Tarzı</h2>
+            <p class="text-gray-600 leading-relaxed mb-8">
+                Kilo dengesi, sigara, alkol, uyku, insülin direnci ve inflamasyon üreme planının destekleyici başlıklarıdır. Bu alanlar tek başına her sorunu çözmez; ancak tanı ve tedavi planının daha güvenli yürütülmesine katkı sağlayabilir.
             </p>
-            <div class="my-12 p-8 bg-gray-200 rounded-2xl">
-                <h4 class="font-bold text-primary-600 mb-6 flex items-center gap-2">
+            <div class="p-8 bg-gray-100 rounded-2xl">
+                <h3 class="font-bold text-primary-600 mb-6 flex items-center gap-2">
                     <span class="material-symbols-outlined">health_metrics</span>
-                    Yaşam Tarzı ve Çevresel Etkenler
-                </h4>
+                    Değerlendirmede sık sorulan başlıklar
+                </h3>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-sm">
                     <div class="space-y-2">
-                        <p class="font-semibold text-gray-900">Vücut Kitle İndeksi (VKİ):</p>
-                        <p class="text-gray-600">Aşırı kilolu veya aşırı zayıf olmak normal ovülasyonu bozabilir.</p>
+                        <p class="font-semibold text-gray-900">VKİ ve insülin direnci</p>
+                        <p class="text-gray-600">Özellikle PCOS ve ovülasyon bozukluklarında metabolik tablo önemlidir.</p>
                     </div>
                     <div class="space-y-2">
-                        <p class="font-semibold text-gray-900">Toksik Maruziyet:</p>
-                        <p class="text-gray-600">Sigara kullanımı oosit yaşlanmasını hızlandırır ve tubal hastalık riskini artırır.</p>
+                        <p class="font-semibold text-gray-900">Sigara ve toksik maruziyet</p>
+                        <p class="text-gray-600">Oosit kalitesi, tüp sağlığı ve gebelik kaybı riski açısından konuşulmalıdır.</p>
                     </div>
                     <div class="space-y-2">
-                        <p class="font-semibold text-gray-900">Metabolik Sağlık:</p>
-                        <p class="text-gray-600">İnsülin direnci ve kronik stres kortizol seviyelerini etkileyerek üreme döngüsünü baskılar.</p>
+                        <p class="font-semibold text-gray-900">Ağrı ve inflamasyon</p>
+                        <p class="text-gray-600">Endometriozis şüphesinde ağrı öyküsü fertilite planından ayrı düşünülmez.</p>
                     </div>
                     <div class="space-y-2">
-                        <p class="font-semibold text-gray-900">Beslenme Düzeni:</p>
-                        <p class="text-gray-600">Antioksidanlardan fakir beslenme, üreme hücrelerinde oksidatif strese yol açar.</p>
+                        <p class="font-semibold text-gray-900">Zamanlama</p>
+                        <p class="text-gray-600">Yaş ve rezerv bulguları bekleme, IUI, IVF veya fertilite koruma kararını etkileyebilir.</p>
                     </div>
                 </div>
             </div>
-            <p class="text-gray-600 leading-relaxed">
-                Sonuç olarak, kadın infertilitesi çok yönlü bir durumdur. Çoğu durumda, birden fazla nedenin birleşimi söz konusudur. Doğru tanı ve zamanında müdahale, üreme başarısını optimize etmenin anahtarıdır. Modern tıbbi yaklaşımlar, bireyselleştirilmiş tedavi planları ile bu zorlukların üstesinden gelmeyi hedeflemektedir.
-            </p>
+        </section>
+
+        <!-- FAQ -->
+        <section id="sss" class="max-w-3xl mx-auto px-4 md:px-6 lg:px-8 mb-16">
+            <div class="mb-8">
+                <span class="text-xs font-semibold uppercase tracking-wider text-primary-600">Sık Sorulanlar</span>
+                <h2 class="font-headline text-3xl text-gray-900 mt-2">Kadın infertilitesi hakkında kısa yanıtlar</h2>
+            </div>
+            <div class="space-y-4">
+                {faqItems.map((item) => (
+                    <details class="group bg-white border border-gray-200 rounded-2xl p-5">
+                        <summary class="cursor-pointer list-none flex items-center justify-between gap-4 font-bold text-gray-900">
+                            <span>{item.q}</span>
+                            <span class="material-symbols-outlined text-primary-600 group-open:rotate-180 transition-transform">expand_more</span>
+                        </summary>
+                        <p class="mt-4 text-sm text-gray-600 leading-relaxed">{item.a}</p>
+                    </details>
+                ))}
+            </div>
+        </section>
+
+        <!-- Kaynaklar -->
+        <section id="kaynaklar" class="max-w-3xl mx-auto px-4 md:px-6 lg:px-8 mb-16">
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-200">
+                <h2 class="font-headline text-2xl text-gray-900 mb-4">Bilimsel dayanak</h2>
+                <ul class="space-y-3 text-sm text-gray-600">
+                    <li>• <a href="https://www.asrm.org/practice-guidance/practice-committee-documents/fertility-evaluation-of-infertile-women-a-committee-opinion-2021/" class="text-primary-600 hover:underline" rel="noopener noreferrer">ASRM Fertility Evaluation of Infertile Women Committee Opinion (2021)</a></li>
+                    <li>• <a href="https://www.eshre.eu/Guideline/Endometriosis" class="text-primary-600 hover:underline" rel="noopener noreferrer">ESHRE Endometriosis Guideline (2022)</a></li>
+                    <li>• <a href="https://research.monash.edu/en/publications/international-evidence-based-guideline-for-the-assessment-and-man/" class="text-primary-600 hover:underline" rel="noopener noreferrer">International Evidence-based Guideline for PCOS (2023)</a></li>
+                    <li>• <a href="https://www.asrm.org/practice-guidance/practice-committee-documents/obesity-and-reproduction-a-committee-opinion-2021/" class="text-primary-600 hover:underline" rel="noopener noreferrer">ASRM Obesity and Reproduction Committee Opinion (2021)</a></li>
+                </ul>
+            </div>
         </section>
 
         <!-- Related Pages -->
         <RelatedContent items={[
-          { href: '/erkek-infertilitesi', icon: 'man', title: 'Erkek İnfertilitesi', description: 'Erkek üreme etkenleri ve tedavi seçenekleri' },
-          { href: '/tani-sureci', icon: 'assignment', title: 'Tanı Süreci', description: 'İnfertilite değerlendirmesi adımları' },
-          { href: '/tedavi-yontemleri', icon: 'biotech', title: 'Tedavi Yöntemleri', description: 'IVF, ICSI, IUI ve diğer teknikler' },
-          { href: '/hormon-paneli', icon: 'bloodtype', title: 'Hormon Paneli', description: 'AMH, FSH, E2 değerleri ve yorumlama' },
-          { href: '/fertilite-koruma', icon: 'shield', title: 'Fertilite Koruma', description: 'Yumurta dondurma ve koruyucu yöntemler' },
-          { href: '/duygusal-destek', icon: 'favorite', title: 'Duygusal Destek', description: 'İnfertilite ve duygusal zorluklar' }
+          { href: '/makaleler/adet-duzensizligi-pcos', icon: 'cycle', title: 'PCOS ve Adet Düzensizliği', description: 'Yumurtlama bozukluğu ve PCOS değerlendirmesi' },
+          { href: '/makaleler/dusuk-amh-hamilelik', icon: 'egg', title: 'Düşük AMH', description: 'Yumurtalık rezervi ve gebelik planı' },
+          { href: '/makaleler/endometriozis-tup-bebek', icon: 'layers', title: 'Endometriozis ve IVF', description: 'Endometriozis ilişkili infertilite yaklaşımı' },
+          { href: '/makaleler/hidrosalpinx-ve-kisirlik', icon: 'cable', title: 'Hidrosalpinx', description: 'Tüp faktörü ve tedavi seçenekleri' },
+          { href: '/hormon-paneli', icon: 'bloodtype', title: 'Hormon Paneli', description: 'AMH, FSH, LH, E2 ve prolaktin' },
+          { href: '/erkek-infertilitesi', icon: 'man', title: 'Erkek İnfertilitesi', description: 'Çift değerlendirmesinin diğer yarısı' }
         ]} />
+
+        <section class="max-w-3xl mx-auto px-4 md:px-6 lg:px-8 mb-16">
+            <div class="bg-gray-50 p-8 rounded-2xl border-l-4 border-primary flex flex-col md:flex-row items-center gap-8">
+                <div class="w-20 h-20 rounded-full overflow-hidden bg-gray-200 shrink-0">
+                    <span class="material-symbols-outlined text-primary-600 text-2xl">verified</span>
+                </div>
+                <div>
+                    <p class="font-headline text-lg text-gray-900 mb-1">Yayın Kurulu</p>
+                    <p class="text-sm text-gray-600">
+                        Bu rehber, tupbebek.com yayın kurulu tarafından güncel kılavuzlar ve kanıta dayalı tıp ilkeleri doğrultusunda hazırlanmıştır. Kişisel tanı ve tedavi planı için hekiminizle görüşünüz.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <MedicalDisclaimer variant="full" />
     </main>
 
     <Footer />
+
+<script is:inline>
+(function() {
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.quick-nav-link');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                navLinks.forEach(link => {
+                    link.classList.remove('text-primary-600', 'border-b-2', 'border-primary');
+                    link.classList.add('text-gray-500');
+                });
+                const activeLink = document.querySelector(`.quick-nav-link[href="#${entry.target.id}"]`);
+                if (activeLink) {
+                    activeLink.classList.add('text-primary-600', 'border-b-2', 'border-primary');
+                    activeLink.classList.remove('text-gray-500');
+                }
+            }
+        });
+    }, { rootMargin: '-20% 0px -70% 0px' });
+
+    sections.forEach(section => observer.observe(section));
+})();
+</script>
 </BaseLayout>
