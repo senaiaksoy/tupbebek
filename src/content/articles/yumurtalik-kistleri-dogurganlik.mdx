@@ -2,6 +2,7 @@
 title: "Yumurtalık Kistleri ve Doğurganlık: Hangi Kist Takip, Hangisi Tedavi?"
 description: "Fonksiyonel kist, endometrioma, dermoid ve kistadenomların doğurganlığa etkisi; ultrason risk değerlendirmesi, AMH, IVF öncesi cerrahi ve fertilite koruyucu yaklaşım."
 publishDate: 2018-01-21
+status: "published"
 lastModified: 2026-05-12
 author: "Doç. Dr. Senai Aksoy"
 authorTitle: "Kadın Hastalıkları ve Doğum Uzmanı"
@@ -13,7 +14,7 @@ reviewDate: 2026-05-12
 category: "Kadın Sağlığı"
 recommendationGrade: A
 image: "/images/library/klinik/237.webp"
-imageAlt: "Yumurtalık kistleri ve doğurganlık karar ağacı"
+imageAlt: "yumurtalık kistleri ve doğurganlık karar ağacı"
 references:
   - title: "Ovarian Cysts"
     authors: "American College of Obstetricians and Gynecologists"
@@ -55,35 +56,28 @@ references:
 import HizliCevap from '../../components/HizliCevap.astro';
 import Accordion from "../../components/global/Accordion.astro";
 import MedicalInfoBox from '../../components/global/MedicalInfoBox.astro';
+import QuoteBlock from '../../components/global/QuoteBlock.astro';
 import InlineEvidence from '../../components/InlineEvidence.astro';
+import EvidenceGradeCard from '../../components/EvidenceGradeCard.astro';
+import RevealScript from '../../components/global/RevealScript.astro';
 
 <HizliCevap question="Yumurtalık kistleri doğurganlığı her zaman bozar mı?">
-Hayır. Yumurtalık kistlerinin çoğu, özellikle fonksiyonel kistler, doğurganlığı kalıcı olarak bozmaz ve çoğu zaman takip yeterlidir. Doğurganlık açısından en dikkatli ele alınması gereken kist tipi endometrioma yani çikolata kistidir; çünkü hem hastalığın kendisi hem de gereksiz cerrahi yumurtalık rezervini etkileyebilir. Karar; kistin tipi, boyutu, ultrason özellikleri, ağrı, yaş, AMH/AFC, gebelik planı ve IVF zamanlamasına göre kişiselleştirilir.
+Hayır. Yumurtalık kistlerinin çoğu, özellikle fonksiyonel kistler, doğurganlığı kalıcı olarak bozmaz ve çoğu zaman takip yeterlidir. Doğurganlık açısından en dikkatli ele alınması gereken kist tipi endometriomadır; çünkü hem hastalığın kendisi hem de gereksiz cerrahi yumurtalık rezervini etkileyebilir.
 </HizliCevap>
 
 <div class="mesh-hero pt-12 pb-20 px-4 md:px-0 -mx-4 md:-mx-0 mb-12 rounded-3xl shadow-sm border border-white/40" style="background: linear-gradient(135deg, #f0fdfa 0%, #fff7ed 48%, #f8fafc 100%);">
   <div class="max-w-4xl mx-auto" data-reveal>
-    <div class="inline-block px-4 py-1 rounded-full bg-teal-100 text-teal-800 text-sm font-bold mb-4">
-      Kist Tipi, Rezerv ve Fertilite Planı
-    </div>
-    <h1 class="text-4xl md:text-6xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-teal-800 to-orange-700 leading-tight">
-      {frontmatter.title}
-    </h1>
-    <p class="text-xl md:text-2xl text-slate-700 font-medium max-w-2xl leading-relaxed">
-      Yumurtalık kistinde iyi karar, yalnızca santimetreye değil kistin karakterine ve gebelik hedefine bakar.
-    </p>
+    <div class="inline-block px-4 py-1 rounded-full bg-teal-100 text-teal-800 text-sm font-bold mb-4">Kist Tipi, Rezerv ve Fertilite Planı</div>
+    <h1 class="text-4xl md:text-6xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-teal-800 to-orange-700 leading-tight">{frontmatter.title}</h1>
+    <p class="text-xl md:text-2xl text-slate-700 font-medium max-w-2xl leading-relaxed">Yumurtalık kistinde doğru karar, yalnızca santimetreye değil kistin karakterine ve gebelik hedefine bakar.</p>
   </div>
 </div>
 
 <div class="max-w-4xl mx-auto space-y-12 blog-content-reveal">
 
-<div data-reveal>
 <MedicalInfoBox title="Hızlı Bakış: Kistin Adı Tedaviyi Belirler" icon="USG" color="emerald">
-“Yumurtalık kisti” tek bir hastalık değildir. Basit/fonksiyonel kistler çoğunlukla izlenirken; endometrioma, dermoid, kistadenom veya şüpheli kompleks kistler farklı değerlendirilir. ACOG, cerrahi kararında kistin boyutu, ultrason görünümü, yaş, gebelik isteği ve kanser riskinin birlikte ele alınması gerektiğini vurgular. <InlineEvidence grade="A" />
+“Yumurtalık kisti” tek bir hastalık değildir. Basit veya fonksiyonel kistler çoğunlukla izlenirken; endometrioma, dermoid, kistadenom veya şüpheli kompleks kistler farklı değerlendirilir. <InlineEvidence grade="A" />
 </MedicalInfoBox>
-</div>
-
-> Bu rehber, [kadın infertilitesi](/kadin-infertilitesi/) konu haritasının yumurtalık ve pelvik faktör bölümünü destekler. Çikolata kisti için [endometrioma](/makaleler/endometrioma/), endometriozis stratejisi için [endometriozis ve kısırlık](/makaleler/endometriozis-akilli-stratejiler/), tüpte sıvı birikimi varsa [hidrosalpinx](/makaleler/hidrosalpinx-ve-kisirlik/) rehberleriyle birlikte okunabilir.
 
 ## İçindekiler
 
@@ -100,150 +94,78 @@ Hayır. Yumurtalık kistlerinin çoğu, özellikle fonksiyonel kistler, doğurga
 
 Ultrason raporunda yalnızca “kist var” yazması yeterli değildir. Doğru karar için kistin iç yapısı, duvarı, solid alan olup olmadığı, papiller çıkıntı, septa, kanlanma, iki taraflılık ve serbest sıvı gibi bulgular birlikte yorumlanır.
 
-<div class="overflow-x-auto my-8">
-
 | Ultrason Bulgusu | Genellikle Ne Düşündürür? | Yaklaşım |
 | --- | --- | --- |
 | **İnce duvarlı, tek odacıklı, berrak sıvılı kist** | Basit/fonksiyonel kist | Çoğu zaman takip |
 | **Buzlu cam görünümü** | Endometrioma olabilir | Rezerv ve gebelik planıyla değerlendirme |
 | **Yağ, saç, akustik gölge** | Dermoid kist olabilir | Boyut ve torsiyon riskine göre karar |
 | **Çok odacıklı ama solid alan yok** | Kistadenom olabilir | Boyut, büyüme ve semptoma göre takip/cerrahi |
-| **Solid alan, papiller yapı, yoğun kanlanma, asit** | İleri değerlendirme gerekir | Jinekolojik onkoloji görüşü gündeme gelir |
+| **Solid alan, papiller yapı, yoğun kanlanma** | İleri değerlendirme gerekir | Onkolojik risk netleştirilir |
 
-</div>
-
-IOTA Simple Rules ve O-RADS gibi sistemler, ultrason bulgularını standartlaştırarak gereksiz ameliyatları azaltmayı ve riskli kistleri daha doğru yönlendirmeyi amaçlar. IOTA meta-analizinde, kurallar uygulanabildiğinde duyarlılık ve özgüllük yüksek bulunmuştur; ancak belirsiz kalan kistlerde uzman ultrason veya ileri görüntüleme gerekebilir. <InlineEvidence grade="A" />
+IOTA Simple Rules ve benzeri sistemler, gereksiz ameliyatı azaltmaya ve riskli kistleri daha doğru ayırmaya yardımcı olur. <InlineEvidence grade="A" />
 
 <h2 id="fonksiyonel">Fonksiyonel Kistler</h2>
 
 Fonksiyonel kistler, normal yumurtlama döngüsünün parçası olarak gelişen follikül veya korpus luteum kaynaklı kistlerdir. Üreme çağında sık görülür ve çoğu birkaç adet döngüsü içinde küçülür ya da kaybolur.
 
-Bu kistler genellikle doğurganlığı kalıcı olarak bozmaz. Hatta korpus luteum erken gebelikte progesteron desteği sağlayan fizyolojik bir yapıdır. Basit kistlerde takip aralığı; yaş, menopoz durumu, kistin boyutu ve ultrason görünümüne göre belirlenir. SRU güncellemesi, iyi tanımlanmış basit kistlerde kanser riskinin çok düşük olduğunu ve birçok durumda gereksiz takip/cerrahiden kaçınılabileceğini vurgular. <InlineEvidence grade="A" />
-
-Doktora daha hızlı başvurmayı gerektiren durumlar şunlardır: ani ve şiddetli tek taraflı kasık ağrısı, bulantı-kusma, bayılma hissi, ateş, gebelik şüphesi veya dış gebelik riski.
+Bu kistler genellikle doğurganlığı kalıcı olarak bozmaz. Basit kistlerde takip aralığı yaş, menopoz durumu, boyut ve ultrason görünümüne göre belirlenir.
 
 <h2 id="endometrioma">Endometrioma</h2>
 
-Endometrioma, endometriozisin yumurtalıkta oluşturduğu çikolata kistidir. Doğurganlık açısından özel bir yere sahiptir; çünkü endometrioma yumurtalık yanıtını etkileyebilir, fakat cerrahi de sağlıklı yumurtalık dokusuna zarar verebilir.
+Endometrioma, endometriozisin yumurtalıkta oluşturduğu çikolata kistidir. Doğurganlık açısından özel bir yere sahiptir; çünkü hem endometriozisin kendisi hem de cerrahi yumurtalık rezervini etkileyebilir.
 
 ESHRE 2022 rehberi, yalnızca IVF sonucunu iyileştirmek amacıyla IVF öncesi rutin endometrioma cerrahisini önermemektedir. Cerrahi daha çok ağrı, şüpheli görüntü, hızlı büyüme veya yumurta toplamayı teknik olarak zorlaştıran kistlerde düşünülür. <InlineEvidence grade="A" />
 
-Endometrioma kararında şu sorular birlikte sorulur:
-
-- AMH ve AFC ile yumurtalık rezervi nasıl?
-- Kist tek taraflı mı, iki taraflı mı?
-- Daha önce yumurtalık ameliyatı oldu mu?
-- Ağrı günlük yaşamı etkiliyor mu?
-- IVF planı yakın mı, yoksa doğal gebelik deneniyor mu?
-- Kist yumurta toplamaya erişimi zorlaştırıyor mu?
-
-Daha ayrıntılı karar rehberi için [endometrioma ve IVF öncesi cerrahi](/makaleler/endometrioma/) sayfasına bakabilirsiniz. Rezerv düşükse [düşük AMH](/makaleler/dusuk-amh-hamilelik/), cerrahi öncesi seçenekler için [fertilite koruma](/fertilite-koruma/) rehberleri tamamlayıcıdır.
-
 <h2 id="dermoid">Dermoid Kist</h2>
 
-Dermoid kist, olgun kistik teratom olarak da adlandırılır. İçinde yağ, saç veya farklı dokular bulunabilir; çoğu iyi huyludur ve doğurganlığı doğrudan bozmaz.
-
-Dermoidlerde karar genellikle boyut, büyüme hızı, ağrı ve torsiyon riski üzerinden verilir. Küçük ve belirtisiz dermoidler bazı hastalarda izlenebilir. Büyük, büyüyen veya ağrı yapan dermoidlerde yumurtalık dokusunu koruyan laparoskopik kistektomi gündeme gelebilir. Fertilite hedefi olan hastada amaç, kisti yönetirken yumurtalık dokusunu mümkün olduğunca korumaktır.
+Dermoid kist, olgun kistik teratom olarak da adlandırılır. Çoğu iyi huyludur ve doğurganlığı doğrudan bozmaz. Karar genellikle boyut, büyüme, ağrı ve torsiyon riski üzerinden verilir.
 
 <h2 id="kistadenom">Seröz ve Müsinöz Kistadenomlar</h2>
 
-Kistadenomlar yumurtalık yüzeyinden kaynaklanan çoğu zaman iyi huylu kistik yapılardır. Seröz kistadenomlar daha berrak sıvılı, müsinöz kistadenomlar daha koyu/jel kıvamlı içerikli olabilir ve bazen daha büyük boyuta ulaşabilir.
-
-Doğurganlığı doğrudan bozması beklenmez; ancak büyük kistler ağrı, baskı, torsiyon riski veya yumurtalık anatomisinde bozulma yaratabilir. Cerrahi gerekiyorsa genç ve gebelik isteyen hastalarda yumurtalık koruyucu yaklaşım tercih edilir. Görüntüleme şüpheli ise standart kistektomi planından önce jinekolojik onkoloji değerlendirmesi önemlidir.
+Kistadenomlar çoğu zaman iyi huylu kistik yapılardır. Doğurganlığı doğrudan bozması beklenmez; ancak büyük kistler ağrı, baskı, torsiyon riski veya yumurtalık anatomisinde bozulma yaratabilir. Cerrahi gerekiyorsa genç ve gebelik isteyen hastalarda yumurtalık koruyucu yaklaşım tercih edilir.
 
 <h2 id="pcos">PCOS Görünümü</h2>
 
-“Polikistik over görünümü” gerçek anlamda kist değildir; yumurtalıkta çok sayıda küçük antral folikül görülmesidir. Tek başına ultrason görüntüsü PCOS tanısı koydurmaz. Adet düzensizliği, yumurtlama sorunu ve androjen fazlalığı bulguları birlikte değerlendirilir.
-
-Bu başlık için ayrıntılı rehber: [PCOS ve adet düzensizliği](/makaleler/adet-duzensizligi-pcos/).
+Polikistik over görünümü gerçek anlamda kist değildir; yumurtalıkta çok sayıda küçük antral folikül görülmesidir. Tek başına ultrason görüntüsü PCOS tanısı koydurmaz. Adet düzensizliği, yumurtlama sorunu ve androjen fazlalığı bulguları birlikte değerlendirilir.
 
 <h2 id="ivf">IVF Öncesi Kist Varsa Ne Yapılır?</h2>
 
 IVF öncesi kist görüldüğünde ilk soru “ameliyat mı?” değil, “bu kist tedavinin hangi aşamasını etkiliyor?” olmalıdır.
 
-<div class="overflow-x-auto my-8">
+| Durum | Olası Yaklaşım |
+| --- | --- |
+| **Basit/fonksiyonel kist** | Hormon düzeyi ve ultrasona göre takip veya siklus planı |
+| **Endometrioma, belirti yok** | Rutin cerrahiden kaçınma; rezerv ve erişim değerlendirmesi |
+| **Endometrioma, düşük rezerv** | Cerrahi riskini özellikle dikkatli tartma |
+| **Kist yumurta toplamayı engelliyor** | Cerrahi veya alternatif girişimlerin kişiselleştirilmesi |
+| **Şüpheli kompleks kist** | Onkolojik risk netleşmeden IVF planı yapılmaz |
 
-| Durum | Olası Yaklaşım | Tamamlayıcı Rehber |
-| --- | --- | --- |
-| **Basit/fonksiyonel kist** | Hormon düzeyi ve ultrasona göre takip veya siklus planı | [IVF rehberi](/ivf-rehberi/) |
-| **Endometrioma, belirti yok** | Rutin cerrahiden kaçınma; rezerv ve erişim değerlendirmesi | [Endometrioma](/makaleler/endometrioma/) |
-| **Endometrioma, düşük rezerv** | Cerrahi riskini özellikle dikkatli tartma | [Düşük AMH](/makaleler/dusuk-amh-hamilelik/) |
-| **Kist yumurta toplamayı engelliyor** | Cerrahi veya alternatif girişimlerin kişiselleştirilmesi | [Endometriozis ve tüp bebek](/makaleler/endometriozis-tup-bebek/) |
-| **Hidrosalpinx eşlik ediyor** | Tüp faktörü transfer öncesi ayrıca ele alınır | [Hidrosalpinx](/makaleler/hidrosalpinx-ve-kisirlik/) |
-| **Şüpheli kompleks kist** | Onkolojik risk netleşmeden IVF planı yapılmaz | [Kadın infertilitesi](/kadin-infertilitesi/) |
+Taze veya dondurulmuş embriyo transferi kararı da bu tabloya eklenir. [Taze ve dondurulmuş transfer](/makaleler/taze-dondurulmus-transfer/) rehberi bu açıdan tamamlayıcıdır.
 
-</div>
+<QuoteBlock author="tupbebek.com Tıbbi Danışma Kurulu">
+Yumurtalık kistinde iyi karar, “hemen ameliyat” ile “tamamen önemsiz” arasında değil; kistin tipi ve doğurganlık hedefi arasında kurulan dengededir.
+</QuoteBlock>
 
-Taze veya dondurulmuş embriyo transferi kararı da bu tabloya eklenir. Örneğin yumurta toplama yapılıp embriyolar dondurulduktan sonra, kist veya tüp faktörü transfer öncesinde ayrıca planlanabilir. Ayrıntılar için [taze ve dondurulmuş transfer](/makaleler/taze-dondurulmus-transfer/) rehberine bakabilirsiniz.
+<EvidenceGradeCard grade={frontmatter.recommendationGrade} />
 
-<div data-reveal>
 <h2 id="faq">Sıkça Sorulan Sorular</h2>
 
 <Accordion title="Yumurtalık kisti varsa hamile kalabilir miyim?">
-Evet, birçok yumurtalık kisti gebeliğe engel değildir. Fonksiyonel kistler çoğu zaman geçicidir. Endometrioma, büyük kistler veya şüpheli kompleks kistler ise yaş, rezerv, ağrı ve gebelik planıyla birlikte değerlendirilmelidir.
+Evet, birçok yumurtalık kisti gebeliğe engel değildir. Fonksiyonel kistler çoğu zaman geçicidir.
 </Accordion>
 
 <Accordion title="Her yumurtalık kisti ameliyat edilmeli mi?">
-Hayır. Basit ve belirtisiz kistlerde takip yeterli olabilir. Ameliyat daha çok şüpheli görüntü, hızlı büyüme, torsiyon riski, belirgin ağrı, yumurta toplamaya erişim sorunu veya büyük kistlerde gündeme gelir.
+Hayır. Basit ve belirtisiz kistlerde takip yeterli olabilir. Ameliyat daha çok şüpheli görüntü, hızlı büyüme, torsiyon riski veya belirgin ağrıda düşünülür.
 </Accordion>
 
 <Accordion title="Endometrioma ameliyatı AMH'yi düşürür mü?">
-Özellikle kistektomi sonrası AMH ve yumurtalık yanıtında azalma görülebilir. Risk iki taraflı endometriomada, tekrarlayan cerrahilerde ve düşük rezervi olan hastalarda daha önemlidir.
+Özellikle kistektomi sonrası AMH ve yumurtalık yanıtında azalma görülebilir. Risk iki taraflı endometriomada ve tekrarlayan cerrahilerde daha önemlidir.
 </Accordion>
 
 <Accordion title="Dermoid kist doğurganlığı bozar mı?">
-Çoğu dermoid kist doğurganlığı doğrudan bozmaz. Ancak büyük veya ağrı yapan dermoidlerde torsiyon riski nedeniyle cerrahi düşünülebilir. Fertilite hedefi olan hastalarda yumurtalık koruyucu cerrahi yaklaşım önemlidir.
+Çoğu dermoid kist doğurganlığı doğrudan bozmaz. Ancak büyük veya ağrı yapan dermoidlerde torsiyon riski nedeniyle cerrahi düşünülebilir.
 </Accordion>
 
-<Accordion title="Kistin boyutu mu, yapısı mı daha önemli?">
-İkisi de önemlidir. Boyut ağrı, baskı ve torsiyon riskini etkiler; kistin yapısı ise iyi huylu veya şüpheli ayrımı için kritiktir. Bu nedenle ultrason raporundaki içerik, duvar, solid alan, papiller yapı ve kanlanma bilgileri birlikte değerlendirilir.
-</Accordion>
 </div>
 
-<div data-reveal class="mt-12 bg-slate-50 p-8 rounded-3xl border border-slate-200">
-**Sizin İçin Seçtiğimiz Diğer Rehberler:**
-- [Kadın infertilitesi: nedenler ve tanı yol haritası](/kadin-infertilitesi/)
-- [Endometrioma: ameliyat, AMH ve IVF kararı](/makaleler/endometrioma/)
-- [Endometriozis ve kısırlık](/makaleler/endometriozis-akilli-stratejiler/)
-- [Hidrosalpinx ve IVF öncesi tedavi](/makaleler/hidrosalpinx-ve-kisirlik/)
-- [Düşük AMH ve yumurtalık rezervi](/makaleler/dusuk-amh-hamilelik/)
-- [Fertilite koruma ve yumurta/embriyo dondurma](/fertilite-koruma/)
-</div>
-
-</div>
-
-export const ovarianCystsFaqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [{
-    "@type": "Question",
-    "name": "Yumurtalık kistleri doğurganlığı her zaman bozar mı?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Hayır. Fonksiyonel kistler çoğu zaman doğurganlığı kalıcı olarak bozmaz. Endometrioma, büyük kistler veya şüpheli kompleks kistler ise yaş, yumurtalık rezervi, ağrı ve gebelik planına göre değerlendirilir."
-    }
-  }, {
-    "@type": "Question",
-    "name": "Her yumurtalık kisti ameliyat edilmeli mi?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Hayır. Basit ve belirtisiz kistlerde takip yeterli olabilir. Ameliyat şüpheli görüntü, hızlı büyüme, belirgin ağrı, torsiyon riski veya IVF'de yumurta toplamaya erişim sorunu olduğunda düşünülür."
-    }
-  }, {
-    "@type": "Question",
-    "name": "Endometrioma ameliyatı AMH değerini düşürür mü?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Endometrioma kistektomisi sonrası AMH ve yumurtalık yanıtında azalma görülebilir. Bu risk bilateral kistlerde, tekrarlayan cerrahilerde ve düşük rezervi olan hastalarda daha önemlidir."
-    }
-  }, {
-    "@type": "Question",
-    "name": "Dermoid kist doğurganlığı bozar mı?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Çoğu dermoid kist doğurganlığı doğrudan bozmaz. Büyük, büyüyen veya ağrı yapan dermoidlerde torsiyon riski nedeniyle cerrahi düşünülebilir."
-    }
-  }]
-};
-
-<script type="application/ld+json" set:html={JSON.stringify(ovarianCystsFaqSchema)} />
+<RevealScript />

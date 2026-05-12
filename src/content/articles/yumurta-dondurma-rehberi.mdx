@@ -1,612 +1,154 @@
 ---
-title: "Yumurta Dondurma: Süreç, Başarı Oranları ve Sık Sorulan Sorular"
-description: "Yumurta dondurma (oosit kriyoprezervasyon) süreci nasıl işler? Hormonal stimülasyon, OPU, vitrifikasyon adımları, yaşa göre başarı oranları ve sık sorulan soruların yanıtları."
+title: "Yumurta Dondurma Rehberi: Ne Zaman Düşünülür, Kaç Yumurta Gerekebilir?"
+description: "Yumurta dondurma nedir, kimler için uygundur, yaşa göre başarı neden değişir ve kaç yumurta hedeflenebilir? Oosit kriyoprezervasyonu için kanıt temelli rehber."
 publishDate: 2026-04-01
+status: "published"
 author: "Doç. Dr. Senai Aksoy"
 authorTitle: "Kadın Hastalıkları ve Doğum Uzmanı"
 authorCredentials: "Üreme Tıbbı ve Yardımcı Üreme Teknikleri"
 authorYoutube: "https://www.youtube.com/@DocentDrSenaiAksoy"
 medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Tıbbi Danışma Kurulu"
-reviewDate: 2026-04-09
-lastModified: 2026-05-11
+reviewDate: 2026-05-12
+lastModified: 2026-05-12
 category: "Fertilite Koruma"
 recommendationGrade: B
 image: "/images/makaleler/yumurta-dondurma-rehberi.webp"
-imageAlt: "yumurta dondurma süreci vitrifikasyon laboratuvarı"
+imageAlt: "yumurta dondurma ve vitrifikasyon sürecini temsil eden laboratuvar görseli"
+references:
+  - title: "Evidence-based outcomes after oocyte cryopreservation for donor oocyte in vitro fertilization and planned oocyte cryopreservation"
+    authors: "ASRM Practice Committee"
+    journal: "Fertility and Sterility"
+    year: 2021
+    url: "https://www.asrm.org/practice-guidance/practice-committee-documents/evidence-based-outcomes-after-oocyte-cryopreservation-for-donor-oocyte-in-vitro-fertilization-and-planned-oocyte-cryopreservation/"
+  - title: "Predicting the likelihood of live birth for elective oocyte cryopreservation"
+    authors: "Goldman RH, Racowsky C, Farland LV, et al."
+    journal: "Fertility and Sterility"
+    year: 2017
+    doi: "10.1016/j.fertnstert.2016.12.127"
+    pmid: "28166330"
+  - title: "Fifteen years of autologous oocyte thaw outcomes from a large university-based fertility center"
+    authors: "Cascante A, et al."
+    journal: "Fertility and Sterility"
+    year: 2022
+    doi: "10.1016/j.fertnstert.2022.03.028"
+    pmid: "35597614"
 ---
 
 import HizliCevap from '../../components/HizliCevap.astro';
+import Accordion from "../../components/global/Accordion.astro";
+import MedicalInfoBox from '../../components/global/MedicalInfoBox.astro';
+import QuoteBlock from '../../components/global/QuoteBlock.astro';
+import InlineEvidence from '../../components/InlineEvidence.astro';
+import EvidenceGradeCard from '../../components/EvidenceGradeCard.astro';
+import RevealScript from '../../components/global/RevealScript.astro';
 
-<HizliCevap question="Yumurta Dondurma nedir, nasıl yönetilir?">
-Yumurta dondurma (oosit kriyoprezervasyon) süreci nasıl işler? Hormonal stimülasyon, OPU, vitrifikasyon adımları, yaşa göre başarı oranları ve sık sorulan soruların yanıtları.
+<HizliCevap question="Yumurta dondurma ne zaman düşünülür?">
+Yumurta dondurma, gelecekte gebelik planı erteleniyorsa veya yumurtalık rezervini etkileyebilecek tıbbi bir süreç gündemdeyse düşünülebilir. Başarıyı en çok dondurma yaşı belirler; daha genç yaşta daha az yumurtayla benzer hedefe ulaşmak mümkündür.
 </HizliCevap>
 
-import { Picture } from 'astro:assets';
-import canliDogumOraniImage from "/src/images/library/istatistik/canli_dogum_orani.webp";
-import dogurganlikImage from "/src/images/library/istatistik/dogurganlik.webp";
-import duostimImage from "/src/images/library/tedavi/duo-stim.webp";
-import idBinaryImage from "/src/images/library/klinik/id_binary.webp";
-import idvfTedaviSureciImage from "/src/images/library/tedavi/ivf_tedavi_sureci.webp";
-import oocytesImage from "/src/images/library/laboratuvar/oocytes-prior-to-a-f-and-k-and-after-insemination.webp";
-import gebelikImage from "/src/images/library/istatistik/yas_gebelikorani_ivf.webp";
-import yumurtaDNAKalitesiImage from "/src/images/library/embriyo/yumurta_dna_kalitesi.webp";
-import InlineEvidence from "../../components/InlineEvidence.astro";
+<div class="mesh-hero pt-12 pb-20 px-4 md:px-0 -mx-4 md:-mx-0 mb-12 rounded-3xl shadow-sm border border-white/40" style="background: linear-gradient(135deg, #eef2ff 0%, #eff6ff 46%, #f8fafc 100%);">
+  <div class="max-w-4xl mx-auto" data-reveal>
+    <div class="inline-block px-4 py-1 rounded-full bg-indigo-100 text-indigo-800 text-sm font-bold mb-4">Fertilite Koruma</div>
+    <h1 class="text-4xl md:text-6xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-indigo-700 to-slate-900 leading-tight">{frontmatter.title}</h1>
+    <p class="text-xl md:text-2xl text-slate-700 font-medium max-w-2xl leading-relaxed">Yumurta dondurma gelecek için bir seçenek yaratır; ama en güçlü belirleyici, dondurulan yumurtaların yaşı ve toplam sayısıdır.</p>
+  </div>
+</div>
 
-Yumurta dondurma işleminde bebek sahibi olma ihtimali yaşa göre çok değişiyor <InlineEvidence grade="B" />. 35 yaşından küçükseniz 6-10 yumurta yeterli olabilirken, 40 yaşındaysanız 16-20, 42 yaşındaysanız ise 30-40 hatta daha fazla yumurtaya ihtiyaç duyabilirsiniz <InlineEvidence grade="B" />. Buradaki rakamlar sadece alınacak yumurta sayısını değil, yaşın yumurta kalitesini ne kadar etkilediğini de gösteriyor.
+<div class="max-w-4xl mx-auto space-y-12 blog-content-reveal">
 
----
+<MedicalInfoBox title="Hızlı Bakış: En Kritik Değişken Yaş" icon="INFO" color="blue">
+**Yumurta dondurmada başarıyı en çok yaş etkiler.** Aynı sayıda dondurulmuş yumurta, 32 yaşında ve 40 yaşında aynı gebelik potansiyeline sahip değildir. <InlineEvidence grade="B" />
+</MedicalInfoBox>
 
-## 📌 Bu Yazıda Ne Öğreneceksiniz?
+## İçindekiler
 
-1. [Yumurta Dondurma: Gerçekler ve Mitler](#yumurta-dondurma-gerçekler-ve-mitler)
-2. [Yaşa Göre Kritik Eşik Değerleri](#yaşa-göre-kritik-eşik-değerleri)
-3. [Yumurta Kalitesinin Yaşla Neden Düştüğü](#yumurta-kalitesinin-yaşla-neden-düştüğü)
-4. [Biyoistatistiksel Tahmin Modelleri](#biyoistatistiksel-tahmin-modelleri)
-5. [Kayıp Hunisi: 15 Yumurtanın Akıbeti](#kayıp-hunisi-15-yumurtanın-akıbeti)
-6. [Stimülasyon Stratejileri ve DuoStim](#stimülasyon-stratejileri-ve-duostim)
-7. [Hasta Danışmanlığı: Gerçekçi Beklentiler](#hasta-danışmanlığı-gerçekçi-beklentiler)
-8. [Sık Sorulan Sorular ve Cevapları](#sık-sorulan-sorular-ve-cevapları)
+- [Yumurta dondurma nedir?](#nedir)
+- [Kimler için düşünülür?](#kimler)
+- [Süreç nasıl işler?](#surec)
+- [Yaş neden bu kadar önemlidir?](#yas)
+- [Kaç yumurta gerekebilir?](#kac)
+- [DuoStim ve birden fazla siklus ne zaman konuşulur?](#duostim)
+- [Sık sorulan sorular](#faq)
 
----
+<h2 id="nedir">Yumurta Dondurma Nedir?</h2>
 
-[![Yumurta Dondurma Süreci ve Başarı Etkenleri](https://img.youtube.com/vi/w29IsrwxHWA/0.jpg)](https://www.youtube.com/watch?v=w29IsrwxHWA)
+Yumurta dondurma, olgun yumurtaların toplanıp vitrifikasyon yöntemiyle dondurulmasıdır. Amaç bugünkü yumurta kalitesini gelecekte kullanabilmek için korumaktır. Bu yöntem özellikle planlı gebelik ertelemesinde ve bazı tıbbi durumlarda fertilite koruma amacıyla kullanılır. <InlineEvidence grade="B" />
 
-## Yumurta Dondurma: Gerçekler ve Mitler
+<h2 id="kimler">Kimler İçin Düşünülür?</h2>
 
-Kliniğimde geçirdiğim 30+ yılda en çok dikkatimi çeken şey, yumurta dondurmaya olan yaklaşımın nasıl değiştiği oldu. Bundan 20 sene önce, bu işleme sanki **kitapta her şey tamam ama gerçek hayatta hiçbir işe yaramaz** gözüyle bakılırdı. Yani teoride her şey mükemmeldi ama laboratuvarda bir türlü başarılı sonuç alınamıyordu, hep bir belirsizlik vardı.
+Yumurta dondurma en sık şu durumlarda gündeme gelir:
 
-Bugün ise, yumurta dondurma artık **standart bir klinik uygulama** <InlineEvidence grade="B" />. Amerikan Üreme Tıbbı Derneği ([ASRM](https://www.asrm.org/practice-guidance/ethics-opinions/planned-oocyte-cryopreservation/)) 2013 yılında bunu "deneysel" kategorisinden çıkarmış, kadınlara biyolojik saatlerini duraklatma imkânı sunmuştur.
+- Gebelik planının birkaç yıl ertelenmesi
+- Kanser tedavisi veya yumurtalığı etkileyebilecek tedaviler
+- Endometriozis veya tekrarlayan yumurtalık cerrahisi riski
+- Düşük rezerv olasılığı nedeniyle zaman kaybını azaltma isteği
+- Henüz partner olmadan fertilite seçeneğini koruma isteği
 
-Ama şunu unutmayın: Yumurta dondurmak, kesin bebek sahibi olacağınız anlamına gelmiyor, sadece olasılıkları artırıyor.
+Bu karar herkes için otomatik doğru değildir. Yaş, AMH, AFC, maliyet, beklenen yumurta sayısı ve kişisel hedef birlikte değerlendirilmelidir.
 
-Hastalarımdan en çok duyduğum soru şu: Doktor, kaç tane yumurta dondurursam içim rahat eder?
+<h2 id="surec">Süreç Nasıl İşler?</h2>
 
-Maalesef bu sorunun yanıtı, sizin rahatınızdan çok, vücudunuzun nasıl çalıştığıyla ilgili.
+Genel akış IVF'e benzer:
 
----
+1. Ön değerlendirme yapılır.
+2. Yumurtalıklar kısa süreli hormonlarla uyarılır.
+3. Foliküller ultrasonla izlenir.
+4. Zamanlama iğnesi sonrası yumurta toplama yapılır.
+5. Olgun yumurtalar vitrifikasyonla dondurulur.
 
-## Yaşa Göre Kritik Eşik Değerleri
+Yumurta toplama günü tüm yumurtalar dondurulmaz; yalnızca olgun oositler kriyoprezervasyona uygundur.
 
-Dünyanın en prestijli fertilite merkezlerinden elde edilen veriler ([Brigham and Women's Hospital](https://www.brighamandwomens.org/obgyn/infertility-reproductive-surgery/egg-freezing), [NYU Langone Health](https://nyulangone.org/locations/fertility-center/in-vitro-fertilization-egg-freezing-embryo-banking/egg-freezing-embryo-banking), [Shady Grove Fertility](https://www.fertstert.org/article/S0015-0282(15)02037-3/fulltext), [IVI Valencia](https://ivi-fertility.com/assisted-reproduction-treatments/vitrification-of-oocytes/)) birleştirilerek, %50 **Kümülatif Canlı Doğum Oranı (CLBR)** için gereken yumurta sayıları belirlenmiştir.
+<h2 id="yas">Yaş Neden Bu Kadar Önemlidir?</h2>
 
-### Tablo 1: %50 ve %70 Başarısı İçin Gereken Yumurta Sayıları
+Dondurulan yumurta sayısı kadar, bu yumurtaların yaşı önemlidir. Yaş ilerledikçe kromozomal uygunluk olasılığı azalır. Bu yüzden ileri yaşta aynı başarı hedefi için daha fazla yumurtaya ihtiyaç duyulabilir. Bu artış yalnızca sayı isteği değil, biyolojik kayıp basamaklarını dengeleme çabasıdır. <InlineEvidence grade="B" />
 
-| **Yaş Grubu** | **%50 için Gereken Yumurta** | **%70 için İdeal** | **Tahmini Siklus Sayısı** | **Klinik Yorum** |
-|---|---|---|---|---|
-| **&lt; 35 Yaş** | 6 - 9 | 15 - 18 | 1 siklus | Yüksek verimlilik. Tek toplama genellikle %50 şansını garanti eder ve %70-80'e yaklaştırır. |
-| **35 - 37 Yaş** | 10 - 12 | 18 - 20 | 1-2 siklus | Kritik geçiş bölgesi. 10 yumurta tam olarak "yazı-tura" (%50) noktasıdır. |
-| **38 - 40 Yaş** | 16 - 20 | 25 - 30 | 2-3 siklus | Verimlilik düşüşü. Çoğu hastanın en az iki kez dondurma yapması gerekir. |
-| **41 - 42 Yaş** | 30 - 40+ | Ulaşılamaz | 4-6+ siklus | Düşük maliyet-etkinlik. %50 şans istatistiksel anomalidir. |
-| **> 42 Yaş** | > 50 | N/A | N/A | Otolog (kendi yumurtasıyla) %50 şans pratikte olanaksızdır. |
+| Dondurma Yaşı | Pratik Yorum |
+| :--- | :--- |
+| **35 yaş altı** | Genellikle en verimli dönem |
+| **35-37 yaş** | Hâlâ anlamlı fırsat penceresi |
+| **38-40 yaş** | Daha fazla yumurta ve bazen birden fazla siklus gerekir |
+| **41 yaş ve üzeri** | Verimlilik belirgin düşer; beklenti çok dikkatli kurulmalıdır |
 
-Bu tablonun mesajı şudur: %50, "yeterli" değildir. Başarı ve başarısızlık burada eşit derecede olasıdır. Hastaya her zaman şu soruyu sorarım: "Hayatınızın en önemli kararında, yazı-tura atmayı kabul eder misiniz?" Çoğu hasta "hayır" der. İşte bu—%50'nin gerçek anlamı budur. "Umarım tutar" diye geçiştirilecek bir orandır, "kesinlikle olur" değil.
+<h2 id="kac">Kaç Yumurta Gerekebilir?</h2>
 
----
+Herkes için tek bir doğru sayı yoktur. Ancak büyük seriler, belirli yaş gruplarında yaklaşık hedef aralıklar sunar:
 
-## Yumurta Kalitesinin Yaşla Neden Düştüğü
+- **35 yaş altı:** Daha düşük sayılarla anlamlı şans elde edilebilir
+- **35-37 yaş:** Çoğu hasta için orta düzey yumurta sayıları konuşulur
+- **38-40 yaş:** Aynı hedef için daha fazla yumurta gerekir
+- **41 yaş ve üzeri:** Çok sayıda yumurta gerekebilir ama başarı yine sınırlı kalabilir
 
-Yumurta dondurma sürecinde başarıyı belirleyen en kritik unsur, yumurta kalitesidir. Kalitenin yaşla birlikte neden azaldığını anlamak, doğru bir beklenti yönetimi için hayati önem taşır.
+Buradaki önemli nokta şudur: Yumurta dondurma bir garanti değil, olasılık yönetimidir. Bu nedenle hedef sayı konuşulurken “kaç yumurta toplandı?” kadar “kaç yaşında donduruldu?” sorusu da yanıtlanmalıdır.
 
-### Anöploidi Tsunamisi: Kromozomal Kaos
+<QuoteBlock author="tupbebek.com Tıbbi Danışma Kurulu">
+Yumurta dondurmada en sık yanlış beklenti, bugünkü kararı gelecekte kesin canlı doğum garantisi gibi yorumlamaktır. Doğrusu, bunun biyolojik bir seçenek oluşturduğunu bilmektir.
+</QuoteBlock>
 
-20 yaşındayken sahip olduğunuz yumurtalar (oositler), aslında siz daha anne karnındayken mayoz bölünmeye başlamış hücrelerdir. Ancak bu süreç tamamlanmaz; yumurtalar yaklaşık 40 yıl boyunca adeta “uyku modunda” bekler. Zaman içinde bu uzun bekleyiş, hücresel düzeyde bazı sorunlara yol açar:
+<h2 id="duostim">DuoStim ve Birden Fazla Siklus Ne Zaman Konuşulur?</h2>
 
-1.Kohezin Kompleksi Zamanla Zayıflar
+Bazı hastalarda tek bir yumurta toplama işlemi hedef sayıya yaklaşmak için yeterli olmayabilir. Özellikle ileri yaşta veya rezerv sınırlıysa, birden fazla siklus ya da seçilmiş olgularda DuoStim konuşulabilir. Bu yaklaşımın amacı daha kısa sürede daha fazla olgun yumurta biriktirmektir; ancak her hasta için gerekli değildir.
 
-Kromozomları birbirine bağlı tutan ve adeta “yapıştırıcı” gibi çalışan kohezin proteinleri, yıllar geçtikçe görevini eskisi kadar iyi yapamaz.
+<EvidenceGradeCard grade={frontmatter.recommendationGrade} />
 
-Sonuç: Yumurtlama sırasında kromozomlar düzgün şekilde ayrılmayabilir.
+<h2 id="faq">Sık Sorulan Sorular</h2>
 
-2.Mayotik İğ İplikçikleri Kararsızlaşır
+<Accordion title="Yumurta dondurmak ileride kesin bebek sahibi olmayı sağlar mı?">
+Hayır. Yumurta dondurma geleceğe yönelik önemli bir seçenek yaratır; ancak gebeliği garanti etmez.
+</Accordion>
 
-Yumurta, bölünmeyi tamamlaması için sinyal aldığında kromozomları kutuplara çeken iğ iplikçikleri devreye girer. Ancak yaşla birlikte bu yapıların çalışması bozulabilir.
+<Accordion title="Yumurta dondurma için en iyi yaş nedir?">
+Genel olarak daha genç yaşlarda verimlilik daha yüksektir. 35 yaş altı ve 35-37 aralığı daha avantajlı kabul edilir.
+</Accordion>
 
-Sonuç: Bazı kromozomlar olması gereken yere gidemez; kimisi eksik kalır, kimisi fazladan taşınır.
+<Accordion title="Kaç yıl saklanabilir?">
+Uygun koşullarda uzun yıllar saklanabilir. Asıl önemli olan saklama süresinden çok dondurulduğu yaştır.
+</Accordion>
 
-3.Nihai Tablo: Yanlış Ayrışma (Non-disjunction)
+<Accordion title="Yumurta toplama ağrılı mıdır?">
+İşlem genellikle sedasyon altında yapılır. Sonrasında hafif ağrı ve şişkinlik olabilir.
+</Accordion>
 
-Bu hatalar nedeniyle oluşan yumurta hücresi, ya eksik (monozomi) ya da fazla (trizomi) kromozom içerebilir.
-Bu mekanizma; Trizomi 21 (Down sendromu), Trizomi 18 ve Trizomi 16 gibi kromozomal anomalilerin temel nedenlerinden biridir.
+</div>
 
-### Matematiksel Gerçeklik:
-
-- **30 yaşında:** Embriyolarınızın %60-70'i genetik olarak **normal (euploid)** <InlineEvidence grade="B" />
-- **40 yaşında:** Bu oran %35-40'a düşer <InlineEvidence grade="B" />
-- **42 yaşında:** Bu oran %15-20'ye iner <InlineEvidence grade="B" />
-
-Anöploid (kromozom sayısı bozuk) embriyoların büyük kısmı rahme tutunamaz ya da tutunsa bile çok erken dönemde düşükle sonuçlanır. Bu biyolojik gerçek, ileri yaşta tüp bebek tedavilerinde neden daha fazla yumurtaya ihtiyaç duyulduğunu açıkça ortaya koyar.
-Örneğin 42 yaşındaki bir hastanın, yaklaşık %50 canlı gebelik şansı yakalayabilmesi için 30–40 yumurtaya ihtiyaç duyması şaşırtıcı değildir. Bu bir “abartı” değil, tamamen istatistiksel bir zorunluluktur. Çünkü toplanan yumurtaların önemli bir kısmı döllenemez, embriyo aşamasına ulaşamaz, ya da kromozomal olarak sağlıksız olduğu için elenir. Sonuçta, bu kadar geniş bir başlangıç havuzu ancak bir ya da iki tane genetik olarak sağlıklı (öploid) embriyo elde edilmesini mümkün kılar. Başarı oranını belirleyen esas etken de tam olarak budur: nicelik değil, içlerinden çıkabilen az sayıdaki nitelikli embriyo.
-
-### Sitoplazmik Yaşlanma ve Mitokondriyal Yetmezlik
-
-Yumurtanın yaşlanması yalnızca çekirdekteki DNA ile sınırlı değildir; en az onun kadar önemli olan sitoplazma da zamanla işlevini kaybeder. Bu durum, embriyonun erken gelişiminde kritik sonuçlar doğurur.
-
-* **Mitokondriyal DNA Hasarı:**
-
-Oosit, insan vücudunda en fazla mitokondri içeren hücredir. Yıllar içinde bu “enerji santrallerinin” DNA’sında biriken hasar, mitokondrilerin verimli çalışmasını engeller.
-
-* **ATP Üretiminin Azalması:**
-
-Döllenmiş bir embriyonun 5. güne kadar ilerleyip blastokist aşamasına ulaşabilmesi için son derece yüksek miktarda enerjiye ihtiyacı vardır. Yaşlı yumurtalarda ATP üretimi düştüğünde, embriyo genetik olarak normal olsa bile bu enerji eşiğini aşamaz ve gelişim yolun ortasında durur.
-
-İşte tam da bu nedenle, 40 yaş üzerindeki kadınlarda blastokist gelişim oranı %30–40 civarındayken, 25 yaşındaki kadınlarda bu oran %55–65’e kadar çıkabilmektedir. Aradaki fark yalnızca kromozom sayısından değil, yumurtanın embriyoyu “besleyip taşıyabilme kapasitesinin” yaşla birlikte azalmasından kaynaklanır.
-
----
-
-## Biyoistatistiksel Tahmin Modelleri
-
-Klinik uygulamalarda dile getirilen bu rakamlar rastgele ya da abartılı değildir. Hiçbiri “ihtiyat payı” adı altında söylenmiş sayılar da değildir. Aksine, bu verilerin her biri dünyanın en saygın merkezlerinde yürütülen, binlerce hastayı kapsayan titiz ve uzun soluklu çalışmaların süzgecinden geçerek oluşmuştur.
-
-Kısacası klinikte kullanılan sayılar, kişisel kanaatlerin değil; istatistiğin, biyolojinin ve gerçek hasta sonuçlarının ortak ürünüdür. Bu yüzden bazen kulağa “fazla” gibi gelen rakamlar, gerçekte biyolojinin dayattığı minimum gereklilikleri yansıtır.
-
-### 1. Goldman Modeli (Brigham and Women's Hospital)
-
-**Çalışma:** ["Predicting the likelihood of live birth for elective oocyte cryopreservation"](https://pubmed.ncbi.nlm.nih.gov/28166330/)
-
-Bu çalışma, 10.000’in üzerinde siklus verisini temel alarak Monte Carlo simülasyonu kullanan ilk araştırma olma özelliğini taşır. Elde edilen sonuçlar yalnızca teorik düzeyde kalmamış; yöntemin güvenilirliği ve öngörü gücü klinik pratikte de karşılık bulmuştur. Nitekim ASRM kılavuzları, bu modeli açıkça referans alarak kullanmaktadır.
-
-**Goldman'ın Bulguları:**
-
-* **35 yaş:**
-  10 yumurta ≈ **%69 canlı doğum olasılığı**
-  → %50 başarı için **yaklaşık 6–8 yumurta** yeterlidir.
-
-* **37 yaş:**
-  10 yumurta ≈ **%50 canlı doğum olasılığı**
-  → **Kritik eşik noktası** tam olarak burasıdır.
-
-* **40 yaş:**
-  10 yumurta ≈ **%30 canlı doğum olasılığı**
-  → %50’ye ulaşabilmek için **yaklaşık 20–22 yumurta** gerekir.
-
-* **42 yaş:**
-  30 yumurta ile bile %50 başarıya ulaşılamayabilir
-  → Bu nedenle **35–40 ve üzeri yumurta** gereksinimi **teorik değil, biyolojik olarak tutarlıdır**.
-
----
-<Picture
-  src={gebelikImage}
-  widths={[240, 540, 720, gebelikImage.width]}
-  width={gebelikImage.width}
-  height={gebelikImage.height}
-  sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${gebelikImage.width}px`}
-  alt="Yaşa göre gebelik oranları grafiği"
-/>
----
-
-Bu modeli klinik pratiğimde kullanmamın temel nedeni, **yaşı sabit kategoriler halinde değil, sürekli bir değişken olarak ele almasıdır**. Böylece 36 ile 37 yaş arasındaki fark “aynı grup” içinde kaybolmaz; **istatistiksel olarak da, biyolojik olarak da** net biçimde görünür hâle gelir.
-
-Bu yaklaşım, hastaya gerçekçi beklenti sunmayı ve tedavi stratejisini kişiselleştirmeyi mümkün kılar; yani sayıların arkasında yalnızca matematik değil, **klinik sezgiyle desteklenmiş biyoloji** vardır.
-
-### 2. Doyle Modeli (Shady Grove Fertility)
-
-**Çalışma:** ["Successful elective and medically indicated oocyte vitrification and warming"](https://pubmed.ncbi.nlm.nih.gov/26604065/)
-
-Bu çalışma **gerçek dünya verileri** kullanmıştır: dondurulmuş yumurtalarını geri alan 128 hasta, yumurtaları çözülmüş, sonuç gözlemlenmiştir.
-
-**Doyle'ün "Oosit Başına Verimlilik" Formülü:**
-
-Her yaş grubu için oosit başına başarı yüzdesini hesaplar ve formülü kullanır: **P = 1 - (1 - E)^n**
-
-* **38 yaş altı:**
-  Oosit başına verimlilik **%7,4–8,2** aralığındadır.
-  → **%50 canlı doğum olasılığı** için **yaklaşık 8–9 yumurta** yeterli olur.
-
-* **38–40 yaş arası:**
-  Oosit başına verimlilik **%4,5–5,2** düzeyine geriler.
-  → Aynı başarı oranını yakalayabilmek için **14–15 yumurta** gerekir.
-
-* **41–42 yaş arası:**
-  Oosit başına verimlilik **yaklaşık %2,5**’e düşer.
-  → **%50 canlı doğum şansı** için **ortalama 27 yumurta** gereklidir.
-
-Bu tablo, yaş ilerledikçe yalnızca **toplanan yumurta sayısının değil**, her bir yumurtanın **tek başına başarıya katkısının** da belirgin biçimde azaldığını gösterir. Klinik karar verirken asıl belirleyici olan da budur: **yaşla birlikte düşen biyolojik verimlilik**.
-
-### 3. Cascante Modeli (NYU Langone Health) - En Güncel Veriler
-
-**Çalışma:** [*"Fifteen years of autologous oocyte thaw outcomes"*](https://pubmed.ncbi.nlm.nih.gov/35597614/) 
-
-Bu çalışma, **15 yıla yayılan** bir zaman diliminde **543 hastadan elde edilen gerçek klinik verileri** analiz etmektedir. Kapsamı, süresi ve veri kalitesiyle bugün elimizdeki **en geniş ve en güncel araştırmalardan biri** olarak öne çıkar.
-
-<p>
-<Picture
-  src={canliDogumOraniImage}
-  widths={[240, 540, 720, canliDogumOraniImage.width]}
-  width={canliDogumOraniImage.width}
-  height={canliDogumOraniImage.height}
-  sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${canliDogumOraniImage.width}px`}
-  alt="Canlı doğum oranları grafiği"
-/>
-</p>
-<p>
-<Picture
-  src={dogurganlikImage}
-  widths={[240, 540, 720, dogurganlikImage.width]}
-  width={dogurganlikImage.width}
-  height={dogurganlikImage.height}
-  sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${dogurganlikImage.width}px`}
-  alt="Doğurganlık oranları grafiği"
-/>
-</p>
-<p>
-<Picture
-  src={yumurtaDNAKalitesiImage}
-  widths={[240, 540, 720, yumurtaDNAKalitesiImage.width]}
-  width={yumurtaDNAKalitesiImage.width}
-  height={yumurtaDNAKalitesiImage.height}
-  sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${yumurtaDNAKalitesiImage.width}px`}
-  alt="Yumurta DNA kalitesi grafiği"
-/>
-</p>
-
-### Cascante’nin Dikkat Çekici Bulguları
-
-* **38 yaş altı:**
-  **20 yumurta → %70 canlı doğum oranı** ✓
-  Bu yaş grubunda yumurta sayısındaki artış, başarıya anlamlı şekilde yansıyor.
-
-* **38–40 yaş arası:**
-  **10–14 yumurta → yalnızca %44 canlı doğum**
-  Bu sonuçlar, Goldman modelinin öngörülerini doğrudan **teyit ediyor**.
-
-* **41 yaş ve üzeri:**
-  **20’nin üzerinde yumurta** toplanmasına rağmen **canlı doğum oranı %40’ın altında** kalıyor.
-
-### Çıkarım (Asıl Mesaj)
-
-Bu veriler çok net bir gerçeğe işaret ediyor:
-**İleri yaşlarda yumurta sayısını artırmak, başarı oranını sınırsız biçimde yükseltemez.** Bir noktadan sonra artan sayı, düşen biyolojik kaliteyi telafi edemiyor. Yani karşımıza kaçınılmaz bir **“biyolojik duvar”** çıkıyor.
-
-Bu nedenle ileri yaş hastalarda strateji yalnızca “daha fazla yumurta” değil; **gerçekçi hedefler, doğru zamanlama ve bireyselleştirilmiş yaklaşım** olmalıdır.
-
-## Kayıp Hunisi: 15 Yumurtanın Akıbeti
-
-Hastalar soruyor: *"Doktor, 15 yumurta dondurdum, demek ki 15 bebek potansiyeli var mı?"*
-
-Keşke öyle olsa ama 15 yumurta = 15 bebek demek değil. Süreç bir huni gibi ilerler; her aşamada bir miktar kayıp olur.”
-
-Aşağıdaki örnek tablo, 38 yaşında 15 oosit ile tipik bir “attrition funnel” akışını adım adım gösterir (rakamlar merkezlere göre değişebilir; amaç mantığı netleştirmektir):
-
-| **Aşama** | **Başarı %** | **Kalan Sayı** | **Açıklama** |
-|---|---|---|---|
-| **Başlangıç** | - | 15 | 15 donmuş yumurta |
-| **Çözülme (Thaw)** | 90% | 13,5 | Vitrifikasyon %90 canlılık sağlar. Ufak kayıp. |
-| **Döllenme (Fertilization)** | 75% | 10,1 | Sperm enjeksiyonuna rağmen bazısı döllenmez. |
-| **Blastokist Gelişimi** | 45% | 4,5 | Döllenen embriyoların yarısı 5. güne ulaşamaz (enerji/genetik hata). |
-| **Genetik Normallik (Euploidlik)** | 40% (38 yaş) | **1,8** | **EN BÜYÜK KIRILMA.** Blastokistlerin %60'ı anöploid ve elenir. |
-| **Transfer & İmplantasyon** | 60% | **~1 Canlı Doğum** | Sağlıklı embriyo transfer edilirse şans %60-65'tir. |
-
-**Yorum:** 15 yumurta ile başlayan hasta, istatistiksel olarak **1.8 sağlıklı embriyo** elde eder. Bu, bazı hastaların 0, bazısının 3 embriyo elde edeceği anlamına gelir. İşte bu varyasyon nedeniyle 15 yumurta, 38 yaşındaki bir hasta için "güvenli bölge" oluşturur.
-
----
-
-## Stimülasyon Stratejileri ve DuoStim
-
-Hedef sayıya ulaşmak (örneğin 38 yaşında 20 yumurta) sadece teori değil, **yönetilen bir klinik süreçtir.**
-
-### Kontrollü Ovaryan Stimülasyon (COS)
-
-Elektif oosit dondurma işlemlerinde güncel ve **standart yaklaşım**, **GnRH antagonisti protokolüdür**. Bunun nedeni, hem biyolojik hem de pratik açıdan önemli avantajlar sunmasıdır:
-
-<p>
-<Picture
-  src={idvfTedaviSureciImage}
-  widths={[240, 540, 720, idvfTedaviSureciImage.width]}
-  width={idvfTedaviSureciImage.width}
-  height={idvfTedaviSureciImage.height}
-  sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${idvfTedaviSureciImage.width}px`}
-  alt="IVF Tedavi Süreci Grafiği"
-/>
-</p>
-<p>
-<Picture
-  src={idBinaryImage}
-  widths={[240, 540, 720, idBinaryImage.width]}
-  width={idBinaryImage.width}
-  height={idBinaryImage.height}
-  sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${idBinaryImage.width}px`}
-  alt="ID Binary grafiği"
-/>
-</p>
-<p>
-<Picture
-  src={oocytesImage}
-  widths={[240, 540, 720, oocytesImage.width]}
-  width={oocytesImage.width}
-  height={oocytesImage.height}
-  sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${oocytesImage.width}px`}
-  alt="Oositlerin F ve K öncesi ve sonrası görüntüsü"
-/>
-</p>
-
-### Neden GnRH Antagonisti Protokolü?
-
-* **Erken ovülasyonu etkin şekilde önler**, siklus kontrolünü artırır.
-* Ortalama **10–12 gün** içinde tamamlanır; hasta için zaman kaybı yaratmaz.
-* **Esnek ve güvenlidir**; farklı hasta profillerine kolayca uyarlanabilir.
-
-### Dual Trigger (Çift Çatlatma) Nedir ve Neden Önemlidir?
-
-Oosit olgunlaşmasını en üst düzeye çıkarmak amacıyla **hem hCG hem de GnRH agonisti (Lupron)** birlikte uygulanır. Bu yaklaşım, özellikle **ASRM rehberleri** tarafından önerilen bir yöntemdir.
-
-Dual trigger’ın klinik kazanımları nettir:
-
-* **“Boş folikül” sendromu riskini azaltır**,
-* **Olgun (MII) oosit oranını %5–10 artırır**,
-* Elektif dondurma gibi “her yumurtanın kritik olduğu” durumlarda **maksimum verim sağlar**.
-
-Bu nedenle elektif oosit dondurma vakalarında dual trigger, bir “seçenek”ten ziyade, **sonucu doğrudan etkileyen temel bir strateji** olarak değerlendirilmelidir.
-
-### DuoStim: 38-40 Yaş Grupları İçin Zaman Sıkıştırma Stratejisi
-
-38 yaşında, **%50 gebelik şansı** için gereken **yaklaşık 20 yumurtaya** tek bir tedaviyle ulaşmak çoğu zaman mümkün değildir. Çünkü birçok kadında **bir siklusta ortalama 6–8 yumurta** elde edilebilir.
-
-Bu durumda kullandığımız etkili yöntem **DuoStim protokolüdür**.
-
-### DuoStim nedir?
-
-<p>
-<Picture
-  src={duostimImage}
-  widths={[240, 540, 720, duostimImage.width]}
-  width={duostimImage.width}
-  height={duostimImage.height}
-  sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${duostimImage.width}px`}
-  alt="ID Binary grafiği"
-/>
-</p>
-
-**Aynı ay içinde iki kez yumurta toplama** yapılan bir tedavi yöntemidir.
-
-**Nasıl uygulanır?**
-
-1. İlk yumurta toplama yapılır.
-2. **3–4 gün sonra**, beklemeden ikinci ilaç tedavisine başlanır.
-3. Aynı ay içinde **ikinci bir yumurta toplama** daha yapılır.
-
-👉 Böylece **tek ayda iki aylık yumurta** elde edilmiş olur.
-
-### Neden tercih edilir?
-
-* **Zaman kazandırır**
-* Kısa sürede daha fazla yumurta biriktirilmesini sağlar
-* Özellikle yaşı ilerlemiş hastalarda tedaviyi yarıda bırakma riskini azaltır
-* Toplam başarı şansını **%15–20 artırabilir**
-
-Bu yüzden **39–40 yaş** grubundaki hastalara DuoStim’i sıklıkla öneriyorum.
-Çünkü bu yaşlarda en önemli etken **zaman**dır — ve zamanı verimli kullanmak sonucu doğrudan etkiler.
-
-## Hasta Danışmanlığı: Gerçekçi Beklentiler
-
-Teknik başarı (%50 CLBR), hasta tatmini ile her zaman eşleşmez. 30+ yıllık deneyimde gördüğüm en büyük problem: **"İyimserlik Farkı" (Optimism Gap).**
-
-### İyimserlik Farkı: NYU Çalışması
-
-**Cascante ve arkadaşlarının çalışması**, yumurta donduran kadınların kendi başarı şanslarını **sistematik olarak olduğundan daha yüksek tahmin ettiğini** net biçimde ortaya koyuyor.
-
-* Hastaların **ortanca (median) tahmini:** **%50**
-* Gerçekleşen başarı oranı: **%20–30** aralığı
-
-**Peki bu fark neden oluşuyor?**
-
-* **Medya dili yanıltıcı olabiliyor**
-  “Yumurta dondurmada yüksek başarı” gibi başlıklar, çoğu zaman **yaş, yumurta sayısı ve süre** gibi kritik detayları içermeden sunuluyor.
-
-* **Genel oranlar kişisel sonuçlarla karıştırılıyor**
-  Hastalar, genç yaş gruplarına veya ideal koşullara ait **genel başarı oranlarını**, kendi bireysel durumlarıyla aynı sanabiliyor.
-
-* **Yanlış güven hissi yaygın**
-  “Gel, yumurtalarını donduralım; sonra için rahat olsun” yaklaşımı, yumurta dondurmayı **kesin bir garanti** gibi algılatabiliyor. Oysa bu işlem, riski azaltır ama **sonucu garanti etmez**.
-
-**Asıl mesaj**
-Yumurta dondurma, **geleceğe yönelik önemli bir fırsat** sunar; ancak bu fırsat **sınırsız bir sigorta poliçesi değildir**. Gerçekçi beklenti, doğru bilgilendirme ve kişiye özel planlama olmadan hayal kırıklığı kaçınılmaz olur.
-
-### Çözüm: Kişiselleştirilmiş Hesaplama
-
-Hastaya [Brigham and Women's Hospital Çevrimiçi Hesaplama Aracı](https://www.mdcalc.com/calc/3937/bwh-egg-freezing-counseling-tool-efct) veya Goldman modelini kullanarak **veriye dayalı bir "gerçeklik kontrolü"** sunmalıyız.
-
-Kliniğimde danışmanlık genelde şu şekilde ilerliyor:
-
-**Hasta:**
-“Doktor, 10 yumurta dondurdum. Bu yeterli mi?”
-
-**Ben:**
-“Kaç yaşındasınız?”
-
-**Hasta:**
-“38.”
-
-**Ben:**
-“Bu yaşta 10 yumurta, yaklaşık **%30–35** canlı doğum şansı demektir.
-**%50’ye yaklaşmak için ideal olarak 16–20 yumurta** gerekir.
-Bu nedenle bir siklus daha yapmanızı öneririm.
-Aksi hâlde size ‘kesin olur’ demiş olmayız, sadece **‘belki olur’ deme ihtimali bırakmış oluruz**.”
-
-### Neden bu kadar net konuşuyorum?
-
-Çünkü bu şeffaflık, **bugün moral bozmak için değil**,
-**10 yıl sonra ‘bana gerçeği söylemediniz’ denmemesi için** gereklidir.
-
-Yumurta dondurma danışmanlığında amaç umut satmak değil;
-**gerçekçi beklenti oluşturmak ve hastayı bilinçli karar verebilir hâle getirmektir**.
-
-### Geri Dönüş ve Kullanım Oranları
-
-Büyük hasta serilerinde, dondurulan yumurtaların **yalnızca %10–20’si** ileride gerçekten kullanılıyor.
-Bu oran ilk bakışta şaşırtıcı görünebilir ama nedenleri oldukça basit:
-
-* En sık neden: **doğal yolla gebe kalınması**
-* Zaman içinde **çocuk isteğinin değişmesi**
-* **Uygun partnerin bulunamaması**
-* **Maddi nedenler**
-
-**Bu tablo bize neyi gösteriyor?**
-
-Yumurta dondurmayı bir **“sigorta”** gibi düşünmek doğru değil.
-Çünkü sigorta **kesin kullanılacakmış gibi** algılanır. Oysa yumurta dondurma daha çok bir:
-
-> **“Biyolojik bir imkân (option value)”**
-
-* Büyük olasılıkla (**%80–85**) hiç kullanılmayabilir
-* Ama **%15’lik bir grupta**, gerçekten ihtiyaç duyulduğunda **son derece değerli** hâle gelir
-
-### Hastadan gelen klasik soru
-
-**32 yaşındaki bir hasta:**
-“Doktor, bu kadar para harcadım. Belki hiç kullanmayacağım. Değer mi?”
-
-**Cevap:**
-👉 **Evet, değer.**
-
-Çünkü aynı kadın **40 yaşına geldiğinde**,
-
-* kendi **32 yaşındaki yumurtalarıyla** canlı doğum elde etme şansı,
-* **40 yaşındaki yumurtalarıyla** sıfırdan başlamaya kıyasla **yaklaşık 10 kat daha yüksektir**.
-
-**Asıl mesaj**
-
-Yumurta dondurma:
-
-* Geleceği garanti etmez
-* Ama **seçeneği elinizde tutmanızı sağlar**
-
-Ve bazı seçenekler vardır ki, **hiç kullanılmasa bile**, varlığı başlı başına rahatlatıcıdır; kullanılması gerektiğinde ise **paha biçilemez** olur.
-
-## Sık Sorulan Sorular ve Cevapları
-
-### S1: "Yumurtaların sayısı değil, kalitesi önemli değil mi?"
-
-**Cevap:** Yumurta dondurmada başarıyı tek bir şey belirlemez. **Hem sayı hem kalite** aynı anda çalışır. Üstelik ikisi de farklı mekanizmalarla sınır koyar:
-
-* **Sayı (olasılık):** Genç yaşta kalite iyi olsa bile 2–3 yumurta “garanti” değildir. Çünkü her aşama bir eleme hunisi gibi ilerler; az sayıda yumurtada istatistik şansı düşer ve başarısızlık tamamen mümkündür.
-* **Kalite (anöploidi):** Yaş ilerledikçe yumurtaların bir kısmı genetik olarak sağlıksız olur. Bu durumda çok sayıda yumurta toplamak “avantaj” sağlar ama bu avantaj **sınırsız değildir**; kalite duvarı bir noktada hissedilir.
-
-Bunu klinikte hastaya şöyle çerçeveliyorum:
-
-> **“Genç yaşta risk, az yumurtadan kaynaklanan olasılık riskidir.
-> İleri yaşta risk, çok yumurta olsa bile kalite riskidir.”**
-
-Tek cümlede toparlarsak:
-
-* **30 yaşında 5 yumurta** → *risk var* (asıl sorun: sayı/olasılık)
-* **40 yaşında 30 yumurta** → *yine risk var* (asıl sorun: kalite/anöploidi)
-
-“Yumurta sayısı ne kadar artarsa şans artar; ama yaş ilerledikçe her yumurtanın ‘işe yarama’ ihtimali düşer. O yüzden bazen genç yaşta az yumurta yetmeyebilir, bazen de ileri yaşta çok yumurta bile garanti vermez. Biz bu işi **sayı + kalite** birlikte düşünerek planlıyoruz.”
-
-### S2: "DuoStim protokolünün yan etkileri nedir?"
-
-**Cevap:** Aynı ay içinde iki kez stimülasyon yapmak (DuoStim), doğal olarak **hormon yükünü artırır**. Ancak pratikte bu artış, **çoğu hasta tarafından tolere edilebilir** düzeydedir. Teorik olarak **ovaryan hiperstimülasyon sendromu (OHSS)** riski biraz artabilir. Ancak klinik deneyimde tablo daha nettir:
-
-* **PCOS’lu hastalarda** daha dikkatli olunmalıdır
-  → Yakın takip ve doz ayarlaması şarttır.
-
-* **Normal over rezervi olan hastalarda**
-  → DuoStim genellikle **güvenle uygulanabilir**.
-
-* **İleri yaş grubunda**
-  → En büyük avantajı **zaman kazandırmasıdır**.
-  Bu yaşlarda zaman kaybının getirdiği risk, çoğu zaman ek hormon yükünden **daha ağır basar**.
-
-Özetle DuoStim her hasta için otomatik bir tercih değildir. Ama doğru hasta seçildiğinde — özellikle **yaşı ilerlemiş ve zamanı kısıtlı** kadınlarda — **fayda–zarar dengesi çoğunlukla pozitiftir**. Yani mesele “iki stimülasyon zararlı mı?” sorusundan çok, **“bu hasta için zaman mı daha riskli, yoksa hormon yükü mü?”** sorusunu doğru sormaktır.
-
-### S3: "42 yaşında yumurta dondurmanın bir anlamı var mı?"
-
-**Cevap:** Evet, bazı yöntemlerle şans **arttırılabilir**, ama **beklentiler mutlaka düşük tutulmalıdır**.
-**42 yaşında, kendi yumurtasıyla %50 canlı doğum hedefi** çoğu hasta için gerçekçi değildir.
-
-Neden?
-
-* **Teorik olarak** bu başarıya yaklaşmak için **30–40 ve üzeri yumurta** gerekir.
-* **Pratikte** ise 42 yaşında over rezervi çoğu zaman bu sayılara **ulaşamaz**.
-* **Finansal açıdan** bakıldığında, bu kadar çok siklus hem **zorlayıcı** hem de **sürdürülemez** olabilir.
-
-
-Asıl mesaj: Bu yaş grubunda sorun “doğru protokolü bulmak” değil, **biyolojinin koyduğu sınırdır**.
-O sınırı bilerek konuşmak, hastaya umut kırmak değil; **yanlış umut vermemektir**. Bu yüzden 42 yaşındaki bir hastayla hedef konuşulurken:
-
-* “%50 olur mu?” değil,
-* **“Bu yolun getirisi, götürüsüne değer mi?”** sorusu soruyorum.
-
-Gerçekçi danışmanlık tam olarak budur.
-
-### S4: "Yumurta dondurma ağrılı mı?"
-
-**Cevap:** Hayır. Toplama işlemi, genel anestezi altında yapıldığından ağrı hissetmezsiniz. Sonrasında hafif karın ağrısı (2-3 gün) olabilir, ama tolere edilir.
-
-### S5: "Kaç yıl saklanabilir?"
-
-**Cevap:** Vitrifikasyon tekniğinde, teorik olarak **sınırsız** (20+ yıl çalışmalar var). Donmuş bir yumurta, hiç yaşlanmaz. 35 yaşında donmuş yumurta, 50 yaşında hala 35 yaşındaki kalitesine sahiptir.
-
-### S6: "DuoStim kaç gün sürer?"
-
-Metni daha **net, kısa ve pratik** olacak şekilde düzenliyorum:
-
----
-
-**DuoStim süreci ne kadar sürer?**
-Toplam süre genellikle **2–3 haftadır**.
-
-* **1. stimülasyon:** 10–12 gün
-* **İlk yumurta toplama:** 1 gün
-* **2. stimülasyon:** 3–5 gün
-  *(ilk toplamadan 3–4 gün sonra, luteal fazda başlar)*
-* **İkinci yumurta toplama:** 1 gün
-
-**Toplam süre:** yaklaşık **2–3 hafta**
-
-**Pratik not**: Çoğu hasta günlük yaşamına devam edebilir; ancak **çalışan kadınlar için** bu süreci daha rahat geçirmek adına **kısa bir tatil ya da izin planlaması** yapmak faydalı olabilir.
-
-**Özetle:** Süre uzun değildir ama **önceden planlama** konforu ciddi şekilde artırır.
-
-## Sonuç: Bilimsel Gerçeklik ve Umut Arasında
-
-30+ yıllık pratiğimde, yumurta dondurma konusunda en sık duyduğum cümle şudur:
-
-> *“Doktor, keşke bana bunu daha erken söyleseydiniz…”*
-
-Aslında o kadar çok söylüyoruz ki, bazen hastalar “tamam, anladık” noktasına gelebiliyor. Bu pişmanlığı anlayabiliyorum. Çünkü yumurta dondurma kararı;
-**yaş, sağlık durumu, partner varlığı, maddi imkânlar ve yaşam hedefleri** gibi pek çok etkenin kesişiminde alınır.
-Kimsenin hayatında “**tam bugün, tam şimdi dondur**” yazan bir takvim yoktur.
-
-Ama şunu **artık biliyoruz**:
-
-* **35 yaş altı yumurta dondurmak**, çoğu zaman **akıllıca bir yatırımdır**
-* **35–37 yaş arası**, gerçek anlamda bir **“altın pencere”dir**
-  → Kariyerin toparlandığı, bütçenin oluştuğu, hayatın hâlâ esnek olduğu dönem
-* **40 yaşından sonra** ise geçen **her gün**, istatistiksel olarak **çok pahalıya mal olur**
-
-Bu yüzden hedefi doğru koymak gerekir.
-Amaç **“%50 yeter”** demek değil; mümkünse **%70’i hedeflemek** olmalıdır.
-Sadece yumurta sayısına değil, **sağlığa, zamana ve yaşam kalitesine** odaklanmak daha doğru bir yaklaşımdır.
-
-### Son söz
-
-Yumurta dondurma bir **teknoloji meselesi değil**, bir **strateji meselesidir**. Doğru yaşta, doğru beklentiyle, doğru merkezde yapıldığında; bu strateji yalnızca bir tedavi değil, **hayatın gidişatını değiştiren bir karar** olabilir.
-
-Ve çoğu zaman en büyük farkı yaratan şey şudur:
-**“Keşke” demek zorunda kalmamak.**
-
----
-
-## İlgili Yazılar
-
-- [Tüp Bebek Başarısızlığı: Neden Olur? Çözüm Nedir?](/makaleler/basarisiz-denemeler/)
-- [AMH Seviyeleri: Over Rezervini Anlamak](/makaleler/dusuk-amh-hamilelik/)
-- [İleri Yaşta Doğurganlık: 40+ Yaşında Gerçekçi Beklentiler](/yasiniz-ve-kisirlik/)
-- [PCOS ve Yumurta Dondurma: Özel Stratejiler](/makaleler/opk-ve-ivf/)
-
----
-
-## Yasal Uyarı
-
-**Yayın Tarihi:** 07 Ocak 2026
-
-Bu makale, tupbebek.com yayın kurulu tarafından eğitim ve bilgilendirme amacıyla hazırlanmıştır. Her hasta benzersizdir; tüp bebek ve yumurta dondurma süreçlerindeki başarı oranları yaş, sağlık durumu, over rezervi ve birçok bireysel etkene bağlı olarak değişkenlik gösterebilir. Burada paylaşılan istatistiksel veriler toplum ortalamalarına dayanmaktadır ve kişisel prognozunuzu bire bir yansıtmayabilir.
-
-Kendi durumunuz, başarı olasılığınız ve size en uygun tedavi planı hakkında mutlaka bir jinekoloji ve üreme tıbbı uzmanına danışmalı, profesyonel tıbbi görüş almalısınız.
-
-Ayrıca vitrifikasyon ve dondurma tekniklerinin başarısı; uygulamayı yapan kliniğin deneyimi, laboratuvar altyapısı ve teknolojik olanaklarına göre farklılık gösterebilir. Bu makale tanı koyma veya tedavi önerisi niteliği taşımaz, yalnızca genel bilgilendirme amacıyla sunulmuştur.
-
-**© tupbebek.com - Tüm hakları saklıdır.**
-
+<RevealScript />
