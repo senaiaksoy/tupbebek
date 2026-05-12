@@ -1,6 +1,6 @@
 ---
-title: "Kadın Kısırlığı ve Tüp Bebek Tedavisinin Önemi. Kapsamlı Bir Rehber"
-description: "Kadın kısırlığının nedenleri, tanı yöntemleri ve tüp bebek tedavisinin bu süreçteki rolü hakkında kapsamlı bir rehber."
+title: "Kadın Kısırlığı ve Tüp Bebek: Nedenler, Tanı ve Tedavi Yolu"
+description: "Kadın kısırlığında yumurtlama, tüpler, rahim, endometriozis ve yaş faktörü nasıl değerlendirilir? Tüp bebek ne zaman gerekir, hangi testler yapılır?"
 publishDate: 2024-09-09
 author: "Doç. Dr. Senai Aksoy"
 authorTitle: "Kadın Hastalıkları ve Doğum Uzmanı"
@@ -8,106 +8,191 @@ authorCredentials: "Üreme Tıbbı ve Yardımcı Üreme Teknikleri"
 authorYoutube: "https://www.youtube.com/@DocentDrSenaiAksoy"
 medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Tıbbi Danışma Kurulu"
-reviewDate: 2026-04-09
-lastModified: 2026-05-11
+reviewDate: 2026-05-12
+lastModified: 2026-05-12
 category: "Tüp Bebek"
 recommendationGrade: B
 image: /images/library/laboratuvar/icsicizim.webp
-imageAlt: "kadın kısırlığı tanı süreci ve tüp bebek tedavisi ICSI illüstrasyonu"
+imageAlt: "kadın kısırlığı tanı süreci, yumurtalık rezervi ve tüp bebek tedavisi"
 references:
-  - title: "Diagnostic evaluation of the infertile female: a committee opinion"
+  - title: "Fertility evaluation of infertile women: a committee opinion"
     authors: "Practice Committee of the American Society for Reproductive Medicine"
     journal: "Fertility and Sterility"
-    year: 2015
-    doi: "10.1016/j.fertnstert.2015.03.019"
-    pmid: "25936238"
-  - title: "Unexplained infertility: a review and meta-analysis of management strategies"
-    authors: "Quaas A, Dokras A"
-    journal: "Fertility and Sterility"
-    year: 2008
-    doi: "10.1016/j.fertnstert.2007.08.073"
-    pmid: "18155706"
+    year: 2021
+    url: "https://www.asrm.org/practice-guidance/practice-committee-documents/fertility-evaluation-of-infertile-women-a-committee-opinion-2021/"
   - title: "Female age-related fertility decline"
     authors: "American College of Obstetricians and Gynecologists Committee on Gynecologic Practice"
     journal: "Fertility and Sterility"
     year: 2014
     doi: "10.1016/j.fertnstert.2013.12.032"
     pmid: "24559617"
+  - title: "Evidence-based treatments for couples with unexplained infertility: a guideline"
+    authors: "Practice Committee of the American Society for Reproductive Medicine"
+    journal: "Fertility and Sterility"
+    year: 2020
+    url: "https://www.asrm.org/practice-guidance/practice-committee-documents/evidence-based-treatments-for-couples-with-unexplained-infertility-a-guideline-2020/"
 ---
 
 import HizliCevap from '../../components/HizliCevap.astro';
+import Accordion from "../../components/global/Accordion.astro";
+import MedicalInfoBox from '../../components/global/MedicalInfoBox.astro';
+import QuoteBlock from '../../components/global/QuoteBlock.astro';
+import RevealScript from '../../components/global/RevealScript.astro';
 import InlineEvidence from '../../components/InlineEvidence.astro';
+import EvidenceGradeCard from '../../components/EvidenceGradeCard.astro';
 
-<HizliCevap question="Kadın Kısırlığı ve Tüp Bebek Tedavisinin Önemi. Kapsamlı Bir Rehber hakkında bilmeniz gerekenler nelerdir?">
-Kadın kısırlığının nedenleri, tanı yöntemleri ve tüp bebek tedavisinin bu süreçteki rolü hakkında kapsamlı bir rehber.
+<HizliCevap question="Kadın kısırlığında tüp bebek ne zaman gerekir?">
+Kadın kısırlığında önce yumurtlama, yumurtalık rezervi, tüpler, rahim içi yapı ve erkek faktörü birlikte değerlendirilir. Tüp bebek; iki tüpün kapalı olması, ileri yaş/azalmış rezerv, ciddi endometriozis, tekrarlayan başarısız tedaviler veya açıklanamayan infertilitede belirli basamaklardan sonra gündeme gelebilir.
 </HizliCevap>
 
-## Kadın Kısırlığı ve Tüp Bebek Tedavisindeki Rolü: Detaylı Bir Kılavuz
+<div class="mesh-hero pt-12 pb-20 px-4 md:px-0 -mx-4 md:-mx-0 mb-12 rounded-3xl shadow-sm border border-white/40" style="background: linear-gradient(135deg, #fdf2f8 0%, #e0f2fe 52%, #f8fafc 100%);">
+  <div class="max-w-4xl mx-auto" data-reveal>
+    <div class="inline-block px-4 py-1 rounded-full bg-pink-100 text-pink-700 text-sm font-bold mb-4">Tanıdan Tedaviye</div>
+    <h1 class="text-4xl md:text-6xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-pink-700 to-slate-900 leading-tight">{frontmatter.title}</h1>
+    <p class="text-xl md:text-2xl text-slate-700 font-medium max-w-2xl leading-relaxed">Kadın kısırlığı tek bir hastalık değildir; yumurta, tüp, rahim, hormonlar ve zamanın birlikte okunduğu bir klinik bulmacadır.</p>
+  </div>
+</div>
 
-Tüp bebek tedavisi (IVF), kısırlıkla mücadele eden birçok çift için umut ışığı olmuştur. Erkek kısırlığı üzerine pek çok araştırma bulunsa da, kadın kısırlığının tüp bebek tedavisindeki başarı oranı üzerindeki etkisi büyük bir öneme sahiptir. Bu yazıda, tüp bebek tedavisi bağlamında kadın kısırlığının nedenleri, tanı yöntemleri ve tedavi seçeneklerini ele alarak bu karmaşık konuyu aydınlatmaya çalışacağız.
+<div class="max-w-4xl mx-auto space-y-12 blog-content-reveal">
 
-### Kadın Kısırlığını Anlamak
+<div data-reveal>
+<MedicalInfoBox title="Hızlı Bakış: İlk Değerlendirme Nasıl Yapılır?" icon="🧭" color="blue">
+Kadın infertilite değerlendirmesi sistematik, hızlı ve gereksiz testlerden kaçınan bir şekilde yapılmalıdır. ASRM; tıbbi öykü, ovulasyon değerlendirmesi, yumurtalık rezervi, rahim/tüp incelemesi ve semen analizinin birlikte ele alınmasını önerir. <InlineEvidence grade="B" />
+</MedicalInfoBox>
+</div>
 
-Kadın kısırlığı, bir yıl boyunca korunmasız ve düzenli cinsel ilişkiye rağmen hamile kalamama durumu olarak tanımlanır <InlineEvidence grade="B" />. Kısırlık nedenleri arasında yumurtlama bozuklukları, fallop tüplerindeki hasarlar, rahim anomalileri ve yaşla birlikte azalan doğurganlık sayılabilir. Bu etkenler, kadının yumurta kalitesini ve sayısını, fallop tüplerinin işlevini ve rahmin embriyo tutunmasını etkileyebilir.
+## İçindekiler
 
-### Yumurtlama Bozuklukları: Temel Sebepler
+- [Kadın kısırlığı ne zaman araştırılır?](#ne-zaman)
+- [Başlıca nedenler nelerdir?](#nedenler)
+- [Hangi testler yapılır?](#testler)
+- [Tüp bebek ne zaman doğru adımdır?](#ivf)
+- [Yaş ve yumurtalık rezervi neden önemlidir?](#yas)
+- [Sıkça sorulan sorular](#faq)
 
-Kadın kısırlığının %25-30'u yumurtlama bozukluklarından kaynaklanır <InlineEvidence grade="B" />. Bu durumlar, yumurtalıkların düzenli yumurta bırakmasını engelleyen hormonal dengesizliklerden kaynaklanır. Yumurtlama bozukluklarına neden olan yaygın hastalıklar arasında polikistik over sendromu (PCOS), hipotalamik disfonksiyon ve erken yumurtalık yetmezliği (POF) bulunur.
+<div data-reveal>
+<h2 id="ne-zaman">Kadın Kısırlığı Ne Zaman Araştırılır?</h2>
 
-- **Polikistik over sendromu (PCOS):** Düzensiz adet döngüleri, yüksek androjen seviyeleri ve polikistik yumurtalıklarla karakterize edilen bu hormonal bozukluk, yumurtlamayı engelleyerek kısırlığa neden olabilir. PCOS'lu kadınlar için, diğer doğurganlık tedavileri başarısız olduğunda tüp bebek tedavisi genellikle etkili bir çözüm sunar.
+Genel kural, 35 yaş altındaysanız 12 ay, 35 yaş ve üzerindeyseniz 6 ay düzenli korunmasız ilişkiye rağmen gebelik olmaması halinde değerlendirmeye başlamaktır. 40 yaş üzeri, adet düzensizliği, bilinen endometriozis, geçirilmiş pelvik enfeksiyon/ameliyat, iki veya daha fazla düşük ya da kanser tedavisi öyküsü varsa daha erken başvurmak gerekir. <InlineEvidence grade="B" />
+</div>
 
-- **Hipotalamik disfonksiyon:** Beyindeki üreme hormonlarını kontrol eden hipotalamusun yeterince gonadotropin salgılatıcı hormon (GnRH) üretmemesi durumudur. Bu da, folikül uyarıcı hormon (FSH) ve luteinize edici hormon (LH) üretimini bozarak düzensiz yumurtlama ya da yumurtlamama sorununa yol açar.
+<div data-reveal>
+<h2 id="nedenler">Kadın Kısırlığının Başlıca Nedenleri</h2>
 
-- **Erken yumurtalık yetmezliği (POF):** Kadının yumurtalıklarının 40 yaşından önce normal fonksiyonunu kaybetmesi durumudur. Bu durumda östrojen üretimi azalır ve yumurtlama durur. POF'li kadınlar için doğal yolla hamile kalma şansı önemli ölçüde azalır; tedavi seçenekleri doktorunuz tarafından kişiye özel olarak değerlendirilir.
+| Neden Grubu | Tipik Bulgular | Tedaviye Etkisi |
+| :--- | :--- | :--- |
+| Yumurtlama bozukluğu | Düzensiz adet, PCOS, prolaktin/tiroid sorunları | Ovulasyon indüksiyonu, IUI veya IVF |
+| Tüp faktörü | HSG'de tıkanıklık, hidrosalpenks, geçirilmiş enfeksiyon | Tüp bebek veya cerrahi değerlendirme |
+| Rahim içi faktör | Polip, submüköz miyom, septum, yapışıklık | Transfer öncesi histeroskopik düzeltme |
+| Endometriozis | Ağrılı adet, çikolata kisti, yapışıklık | Yaş/rezerv ve ağrıya göre cerrahi veya IVF |
+| Yaş ve düşük rezerv | AMH/AFC düşüklüğü, ileri yaş | Zaman kaybetmeden IVF planı |
+| Açıklanamayan infertilite | Temel testler normal | Yaşa göre IUI veya IVF basamakları |
 
-### Fallop Tüpü Kaynaklı Kısırlık Nedir?
+Bu başlıklar birbirinden bağımsız değildir. Örneğin endometriozis hem tüpleri hem yumurtalık rezervini hem de embriyo tutunma ortamını etkileyebilir.
+</div>
 
-Tüp kısırlığında fallop tüpleri zarar görmüş ya da tıkanmıştır. Bu durumda sperm, yumurtaya ulaşamaz ya da döllenmiş yumurta rahme geçemez. Bu hasarın nedenleri arasında pelvik inflamatuar hastalık (PID), önceki ameliyatlar ya da endometriozis gibi hastalıklar yer alır.
+<div data-reveal>
+<QuoteBlock author="tupbebek.com Tıbbi Danışma Kurulu">
+Kadın kısırlığında amaç “çok test” yapmak değil, gebeliğe giden yolu gerçekten değiştirecek bilgiyi zamanında toplamaktır.
+</QuoteBlock>
+</div>
 
-- **Pelvik inflamatuar hastalık (PID):** PID, cinsel yolla bulaşan enfeksiyonlardan (CYBE) kaynaklanan ve fallop tüplerinde yara izleri ve tıkanıklıklara yol açarak doğal yolla hamile kalmayı zorlaştıran bir enfeksiyondur.
+<div data-reveal>
+<h2 id="testler">Kadın Kısırlığında Hangi Testler Yapılır?</h2>
 
-- **Endometriozis:** Bu hastalıkta, rahim iç zarına benzeyen doku, rahim dışındaki organlarda büyür ve inflamasyon, yapışıklıklar ve tıkanıklıklara neden olabilir. Tüp bebek tedavisi, fallop tüplerine zarar vermeden bu sorunu aşmada etkili olabilir.
+İlk değerlendirme çoğu zaman aşağıdaki başlıklarla başlar:
 
-### Rahim ve Servikal Etkenlerin Rolü
+- **Ultrason ve antral folikül sayımı:** Yumurtalık rezervi, kist, miyom ve rahim yapısı hakkında bilgi verir.
+- **AMH, TSH, prolaktin ve seçilmiş hormon testleri:** Rezerv ve hormon dengesini yorumlamaya yardımcı olur.
+- **Ovulasyon değerlendirmesi:** Düzenli yumurtlama olup olmadığı klinik öykü, progesteron veya ultrasonla izlenebilir.
+- **HSG veya benzeri tüp testi:** Fallop tüplerinin açık olup olmadığını gösterir.
+- **Rahim içi değerlendirme:** Polip, septum, miyom veya yapışıklık şüphesinde sonohisterografi veya histeroskopi gündeme gelir.
+- **Semen analizi:** Kadın değerlendirmesiyle eş zamanlı yapılmalıdır; çünkü infertilite çoğu zaman çiftin ortak problemidir.
 
-Rahim, embriyonun tutunması ve hamileliğin devamında hayati bir rol oynar. Rahimdeki anormallikler, myomlar, polipler ve doğuştan gelen yapısal bozukluklar bu süreci olumsuz etkileyebilir.
+Her hastaya aynı test paneli gerekmez. Test seçimi yaş, infertilite süresi, adet düzeni, geçirilmiş ameliyatlar ve önceki tedavi sonuçlarına göre yapılır.
+</div>
 
-- **Myomlar ve polipler:** Myomlar rahim kasında oluşan iyi huylu tümörlerdir, polipler ise rahim iç zarından kaynaklanan büyümelerdir. Her iki durumda da, rahim boşluğu deforme olur ve embriyonun tutunması zorlaşır. Bu tür büyümelerin cerrahi olarak alınması, tüp bebek tedavisinin başarısını artırabilir.
+<div data-reveal>
+<h2 id="ivf">Tüp Bebek Ne Zaman Doğru Adımdır?</h2>
 
-- **Doğuştan gelen rahim anomalileri:** Bazı kadınlar, septalı rahim veya bikornuat rahim gibi yapısal anormalliklerle doğarlar. Bu tür anomaliler, hamile kalmayı ve hamileliği sürdürmeyi zorlaştırabilir. Sorunun ciddiyetine bağlı olarak, tüp bebek tedavisinden önce cerrahi müdahale gerekebilir.
+Tüp bebek, yumurta ve spermin laboratuvarda bir araya getirilip embriyonun rahme transfer edildiği tedavidir. Aşağıdaki durumlarda daha erken düşünülür:
 
-- **Servikal etkenler:** Serviks, sperm hareketini engelleyen yetersiz ya da düşmanca bir mukus üretirse, bu durum da kısırlığa yol açabilir. Ayrıca servikal darlık, spermin rahme ulaşmasını engelleyebilir. Tüp bebek tedavisi, bu tür durumlarda servikal engeli atlayarak etkili bir tedavi sunar.
+- İki tüpün kapalı olması veya hidrosalpenks
+- İleri yaş veya belirgin azalmış yumurtalık rezervi
+- Şiddetli erkek faktörü ile birlikte kadın faktörü
+- Endometriozis nedeniyle anatomik bozulma veya uzun infertilite süresi
+- Tekrarlayan IUI/ovulasyon tedavisi başarısızlığı
+- PGT-M/PGT-SR gibi genetik test gerektiren durumlar
 
-### Yaş ve Doğurganlık: Önemli Bir Bağlantı
+Açıklanamayan infertilitede ASRM, genellikle oral ovulasyon uyarımı ile IUI denemeleri sonrası sonuç alınamazsa IVF'e geçişin makul olduğunu belirtir. <InlineEvidence grade="B" />
+</div>
 
-Yaş, kadın doğurganlığını etkileyen en önemli etkenlerden biridir. Kadınlar, sınırlı sayıda yumurta ile doğarlar ve bu yumurtaların sayısı ve kalitesi yaşla birlikte azalır. 35 yaşından sonra doğal yolla hamile kalma şansı önemli ölçüde düşer <InlineEvidence grade="B" />. Aynı zamanda, yumurtalardaki kromozomal anormalllik riski artar, bu da düşük ve genetik bozukluk riskini artırır <InlineEvidence grade="B" />.
+<div data-reveal>
+<h2 id="yas">Yaş ve Yumurtalık Rezervi Neden Önemlidir?</h2>
 
-Daha ileri yaşlardaki kadınlar için tüp bebek tedavisi genellikle ilk tercih olur. Ayrıca, preimplantasyon genetik testi (PGT) ile embriyolar transfer edilmeden önce kromozomal anormallikler taranarak tüp bebek tedavisinin başarı oranı artırılabilir.
+Kadın doğurganlığında yaş, yalnızca yumurta sayısını değil, yumurta kalitesini ve kromozomal normal embriyo olasılığını da etkiler. 35 yaş sonrası düşüş belirginleşir; 40 yaş sonrası zaman faktörü daha kritik hale gelir. <InlineEvidence grade="B" />
 
-### Kadın Kısırlığının Tanısı Nasıl Konur?
+AMH ve antral folikül sayısı rezerv hakkında bilgi verir; fakat tek başına “gebelik olur/olmaz” hükmü vermez. Düşük AMH, elde edilecek yumurta sayısının az olabileceğini düşündürür; embriyo kalitesi ve gebelik olasılığı ise yaş, sperm, rahim ve tedavi yanıtıyla birlikte değerlendirilir.
+</div>
 
-Kadın kısırlığının tanısında, kadının üreme sağlığını değerlendiren çeşitli testler yapılır. Bunlar arasında:
+<div data-reveal>
+<h2 id="faq">Sıkça Sorulan Sorular</h2>
 
-- **Yumurtlama testleri:** FSH, LH, östradiol ve progesteron gibi hormon seviyelerini belirlemek için kan testleri yapılır. Ayrıca, yumurtalıkların gelişimi ultrason ile izlenebilir.
+<Accordion title="Kadın kısırlığında ilk hangi doktora gidilmeli?">
+Kadın hastalıkları ve doğum uzmanı veya üreme tıbbı/tüp bebek alanında çalışan bir hekimle başlanabilir. Erkek partner için semen analizi de erken dönemde yapılmalıdır.
+</Accordion>
 
-- **Histerosalpingografi (HSG):** Rahim ve fallop tüplerinin şeklinin ve açıklığının kontrol edilmesini sağlayan bir röntgen prosedürüdür. Bu işlem sırasında rahme kontrast madde enjekte edilir ve bu sayede tıkanıklıklar veya anormallikler görünür hale gelir.
+<Accordion title="AMH düşükse mutlaka tüp bebek mi gerekir?">
+Mutlaka değil. AMH rezerv hakkında bilgi verir; karar yaş, infertilite süresi, tüplerin durumu, sperm analizi ve önceki tedavilere göre verilir.
+</Accordion>
 
-- **Ultrason ve sonohisterografi:** Pelvik ultrason, yumurtalıkları, rahmi ve diğer organları incelemek için kullanılır. Sonohisterografi, rahim içine salin çözeltisi enjekte edilerek yapılan bir ultrason testidir ve rahim içi polipler, myomlar veya diğer anormallikleri tespit etmekte etkilidir.
+<Accordion title="Tüpler kapalıysa aşılama yapılır mı?">
+İki tüp de kapalıysa IUI/aşılama işe yaramaz; çünkü sperm ve yumurta tüpte buluşamaz. Bu durumda genellikle tüp bebek değerlendirilir.
+</Accordion>
 
-- **Laparoskopi:** Bu minimal invaziv cerrahi işlem, pelvik organların doğrudan gözlemlenmesini sağlar ve endometriozis, tüp tıkanıklıkları gibi durumların teşhisinde kullanılır.
+<Accordion title="Rahimde polip veya miyom varsa transfer yapılır mı?">
+Rahim boşluğunu bozan polip, submüköz miyom veya yapışıklık varsa transfer öncesi düzeltme gerekebilir. Karar lezyonun yeri ve boyutuna göre verilir.
+</Accordion>
+</div>
 
-### Tüp Bebek Tedavisi: Kadın Kısırlığı İçin Bir Çözüm
+<div data-reveal>
+<EvidenceGradeCard grade={frontmatter.recommendationGrade} />
+</div>
 
-Tüp bebek, yumurtalıkların uyarılması, yumurtaların toplanması, döllenme ve embriyo transferi aşamalarını içeren çok aşamalı bir prosedürdür. Yumurtlama bozukluğu olan kadınlar için, yumurtalıkların ilaçlarla uyarılması, toplanacak çok sayıda yumurta üretmek için gereklidir. Fallop tüpleri veya rahimdeki kısırlık durumlarında, tüp bebek tedavisi bu hasarlı yapıları atlayarak yumurtaların laboratuvarda döllenmesini sağlar.
+<div data-reveal class="mt-12 bg-slate-50 p-8 rounded-3xl border border-slate-200">
+**Sizin İçin Seçtiğimiz Diğer Rehberler:**
+- [Açıklanamayan infertilite](/makaleler/aciklanamayan-infertilite/)
+- [Düşük AMH ve gebelik](/makaleler/dusuk-amh-hamilelik/)
+- [Endometriozis ve tüp bebek](/makaleler/endometriozis-tup-bebek/)
+- [Hidrosalpenks ve kısırlık](/makaleler/hidrosalpinx-ve-kisirlik/)
+- [Miyomlar ve tüp bebek](/makaleler/miyomlar-ve-tup-bebek/)
+</div>
 
-- **Yumurtalıkların uyarılması:** Gonadotropinler gibi doğurganlık ilaçları, yumurtalıkları birden fazla yumurta üretmeye teşvik eder.
+<div data-reveal class="mt-12 pt-8 border-t border-slate-200 text-sm text-slate-600">
+## Yasal Uyarı
+**Son tıbbi revizyon tarihi: 12 Mayıs 2026.**
+Bu makale bilgilendirme amaçlıdır; tıbbi teşhis ve tedavi yerine geçmez. İnfertilite değerlendirmesi çiftin yaşına, tıbbi öyküsüne ve muayene bulgularına göre kişiselleştirilmelidir.
+</div>
 
-- **Yumurta toplama:** Yumurta olgunlaştığında, ultrason rehberliğinde bir iğne yardımıyla yumurtalar toplanır. Bu işlem genellikle sedasyon veya anestezi altında yapılır.
+</div>
 
-- **Döllenme:** Toplanan yumurtalar laboratuvarda sperm ile döllenir. Sperm kalitesi veya miktarı ile ilgili sorun varsa, mikroenjeksiyon (ICSI) yöntemi kullanılabilir.
+export const femaleInfertilityFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "Kadın kısırlığında ilk hangi doktora gidilmeli?",
+    "acceptedAnswer": { "@type": "Answer", "text": "Kadın hastalıkları ve doğum uzmanı veya üreme tıbbı alanında çalışan bir hekimle başlanabilir. Erkek partner için semen analizi de erken dönemde yapılmalıdır." }
+  }, {
+    "@type": "Question",
+    "name": "AMH düşükse mutlaka tüp bebek mi gerekir?",
+    "acceptedAnswer": { "@type": "Answer", "text": "Mutlaka değil. AMH rezerv hakkında bilgi verir; karar yaş, infertilite süresi, tüplerin durumu, sperm analizi ve önceki tedavilere göre verilir." }
+  }, {
+    "@type": "Question",
+    "name": "Tüpler kapalıysa aşılama yapılır mı?",
+    "acceptedAnswer": { "@type": "Answer", "text": "İki tüp de kapalıysa aşılama işe yaramaz; bu durumda genellikle tüp bebek değerlendirilir." }
+  }]
+};
 
-- **Embriyo transferi:** Döllenmeden sonra oluşan embriyolar birkaç gün boyunca kültürlenir ve ardından biri veya birkaçı transfer için seçilir. Geriye kalan uygun embriyolar daha sonra kullanılmak üzere dondurulabilir.
-
-### Sonuç
-
-Kadın kısırlığı, tüp bebek tedavisinin başarısını etkileyen karmaşık bir sorundur. Yumurtlama bozuklukları, fallop tüplerindeki hasarlar, rahim anomalileri ve yaş gibi etkenlerin anlaşılması, tedavi planlarının kişiye özel olarak şekillendirilmesi açısından hayati önem taşır. Tüp bebek tedavisi, birçok kadın için etkili bir çözüm sunar, özellikle diğer tedaviler başarısız olduğunda. Üreme tıbbındaki gelişmeler, PGT gibi yöntemlerle tüp bebek başarılarını artırarak, kadınlar ve çiftler için ebeveyn olma hayalini gerçeğe dönüştürmektedir.
+<script type="application/ld+json" set:html={JSON.stringify(femaleInfertilityFaqSchema)} />
+<RevealScript />

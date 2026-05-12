@@ -1,6 +1,6 @@
 ---
-title: "İstanbul Tüp Bebek Doktoru ve Merkezi Seçimi Rehberi"
-description: "İstanbul'da tüp bebek doktoru ve merkezi seçerken nelere dikkat edilmeli? Başarı oranları, laboratuvar kalitesi ve karar süreci."
+title: "İstanbul Tüp Bebek Doktoru Seçimi: Merkez, Laboratuvar ve İlk Görüşme"
+description: "İstanbul'da tüp bebek doktoru ve merkezi seçerken başarı oranı, laboratuvar kalitesi, iletişim, maliyet ve etik yaklaşım nasıl değerlendirilir?"
 publishDate: 2026-03-31
 author: "Doç. Dr. Senai Aksoy"
 authorTitle: "Kadın Hastalıkları ve Doğum Uzmanı"
@@ -8,12 +8,12 @@ authorCredentials: "Üreme Tıbbı ve Yardımcı Üreme Teknikleri"
 authorYoutube: "https://www.youtube.com/@DocentDrSenaiAksoy"
 medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Tıbbi Danışma Kurulu"
-reviewDate: 2026-04-09
-lastModified: 2026-05-11
+reviewDate: 2026-05-12
+lastModified: 2026-05-12
 category: "Yaşam & Rehber"
 recommendationGrade: D/E
 image: "/images/makaleler/istanbul-tup-bebek-doktoru.webp"
-imageAlt: "istanbul tüp bebek doktoru seçimi ve danışmanlık süreci"
+imageAlt: "İstanbul'da tüp bebek doktoru ve merkezi seçimi için danışmanlık görüşmesi"
 references:
   - title: "The Maribor consensus: report of an expert meeting on the development of performance indicators for clinical practice in ART"
     authors: "Vlaisavljevic V, Apter S, Capalbo A et al."
@@ -36,241 +36,173 @@ references:
 ---
 
 import HizliCevap from '../../components/HizliCevap.astro';
-
-<HizliCevap question="İstanbul Tüp Bebek Doktoru ve Merkezi Seçimi Rehberi hakkında bilmeniz gerekenler nelerdir?">
-İstanbul'da tüp bebek doktoru ve merkezi seçerken nelere dikkat edilmeli? Başarı oranları, laboratuvar kalitesi ve karar süreci.
-</HizliCevap>
-
 import Accordion from "../../components/global/Accordion.astro";
 import MedicalInfoBox from '../../components/global/MedicalInfoBox.astro';
 import QuoteBlock from '../../components/global/QuoteBlock.astro';
-import JSONLD from '../../components/global/JSONLD.astro';
 import RevealScript from '../../components/global/RevealScript.astro';
 import Video from '../../components/global/Video.astro';
 import InlineEvidence from '../../components/InlineEvidence.astro';
+import EvidenceGradeCard from '../../components/EvidenceGradeCard.astro';
 
-<div class="mesh-hero pt-12 pb-20 px-4 md:px-0 -mx-4 md:-mx-0 mb-12 rounded-3xl shadow-sm border border-white/40" style="background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);">
+<HizliCevap question="İstanbul'da tüp bebek doktoru nasıl seçilir?">
+İstanbul'da tüp bebek doktoru seçerken yalnızca lokasyon veya reklam görünürlüğüne bakmayın. Hekimin infertilite deneyimi, laboratuvarın kalite sistemi, embriyoloji ekibi, canlı doğum odaklı başarı raporlaması, şeffaf maliyet ve size ayrılan iletişim zamanı birlikte değerlendirilmelidir.
+</HizliCevap>
+
+<div class="mesh-hero pt-12 pb-20 px-4 md:px-0 -mx-4 md:-mx-0 mb-12 rounded-3xl shadow-sm border border-white/40" style="background: linear-gradient(135deg, #f0f9ff 0%, #e0e7ff 54%, #f8fafc 100%);">
   <div class="max-w-4xl mx-auto" data-reveal>
-    <h1 class="text-4xl md:text-6xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-slate-700 to-indigo-800 leading-tight">
-      {frontmatter.title}
-    </h1>
-    <p class="text-xl md:text-2xl text-slate-700 font-medium max-w-2xl leading-relaxed">
-      Haritasız bir okyanus gibi görünen bu süreçte, bilimsel pusulanız ve güvenilir rehberiniz olmaya adayız.
-    </p>
+    <div class="inline-block px-4 py-1 rounded-full bg-sky-100 text-sky-700 text-sm font-bold mb-4">İstanbul Rehberi</div>
+    <h1 class="text-4xl md:text-6xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-sky-700 to-slate-900 leading-tight">{frontmatter.title}</h1>
+    <p class="text-xl md:text-2xl text-slate-700 font-medium max-w-2xl leading-relaxed">İstanbul seçenek açısından zengin; bu iyi haber. Zor olan, çok seçenek arasından sizin dosyanız için doğru ekibi ayırt etmektir.</p>
   </div>
 </div>
 
 <div class="max-w-4xl mx-auto space-y-12 blog-content-reveal">
 
 <div data-reveal>
-<MedicalInfoBox title="Hızlı Bakış: Doğru Merkez Seçimi" icon="🤖" color="blue">
-İstanbul'da tüp bebek merkezi seçerken **tek bir "ideal merkez"** yoktur; tıbbi öz geçmişinize en uygun merkez vardır. Başarının gizli kahramanı **laboratuvar kalitesidir**. Sadece gebelik testine değil, **eve canlı bebek götürme oranına** odaklanın. "Fabrikasyon" değil, terzi işi (kişiye özel) tedavi arayın. Unutmayın; en ucuz tedavi, yanlış planlandığında en pahalıya mal olandır.
+<MedicalInfoBox title="Hızlı Bakış: İstanbul'da Seçim Yaparken" icon="🗺️" color="blue">
+En iyi doktor sorusu kişisel dosyadan bağımsız cevaplanamaz. İstanbul'da doğru seçim; hekimin sizi ne kadar iyi değerlendirdiği, laboratuvarın embriyoyu nasıl yönettiği ve merkezin başarı/maliyet/riskleri ne kadar şeffaf anlattığıyla ilgilidir. <InlineEvidence grade="D/E" />
 </MedicalInfoBox>
 </div>
 
-<div data-reveal>
-"Tek bir doktor profili" herkese uymaz; asıl önemli olan **sizin tıbbi geçmişinize en uygun doktoru** bulmaktır. <InlineEvidence grade="D/E" /> Bu nedenle seri üretim çözümler yerine, **kişiye özel (terzi işi / haute couture) bir tedavi yaklaşımı** aramak gerekir. <InlineEvidence grade="D/E" />
-</div>
+## İçindekiler
 
-<div data-reveal>
-Tüp bebekte başarının büyük kısmı klinikten çok **laboratuvarda**, yani mutfakta belirlenir. <InlineEvidence grade="B" /> **ESHRE** ve **ASRM** standartlarına uymayan bir laboratuvar, ne kadar iyi olursa olsun hekimin emeğini boşa çıkarabilir. <InlineEvidence grade="C" /> Ayrıca yalnızca "gebelik testi pozitif" demek gerçek başarı değildir. Asıl anlamlı ölçüt, **eve canlı bebek götürme oranıdır (take-home baby rate)**. <InlineEvidence grade="B" />
-</div>
-
-<div data-reveal>
-Yapay zeka, Embriyoskop ya da PGT gibi teknolojiler elbette değerlidir; ancak bunlar sadece **araçtır**. Sonucu belirleyen, bu araçları **doğru zamanda, doğru hasta için** kullanan hekimin tecrübesi ve etik duruşudur. Unutmayın, **ucuz tedavi çoğu zaman en pahalıya mal olanıdır**. Bu yüzden gizli maliyetleri ve gerçekçi başarı ihtimalinizi en baştan açıkça konuşmak, hem maddi hem de duygusal olarak sizi korur.
-</div>
-
----
-
-<div data-reveal>
-## 💡 Bu Yazıda Ne Öğreneceksiniz?
-
-1. [Giriş: Pusula ve Okyanus Metaforu](#giris)
-2. [5 Kritik Değerlendirme Sorusu](#kritik-sorular)
-3. [Dr. Aksoy Yaklaşımı: Kişiye Özel Bilim](#dr-aksoy-yaklasimi)
-4. [Tedavi Planında Maliyet Faktörleri](#fiyatlandirma)
-5. [Adım Adım Tedavi Anatomisi](#tedavi-sureci)
-6. [Sıkça Sorulan Sorular (SSS)](#faq)
-</div>
-
----
+- [Doktor mu merkez mi daha önemli?](#doktor-merkez)
+- [İlk görüşmede ne anlaşılır?](#ilk-gorusme)
+- [Laboratuvar neden belirleyicidir?](#laboratuvar)
+- [Başarı oranı ve maliyet nasıl sorgulanır?](#basari-maliyet)
+- [Kırmızı bayraklar nelerdir?](#kirmizi-bayrak)
+- [Sıkça sorulan sorular](#faq)
 
 <div data-reveal>
 <Video id="9-wC4ttsDyY" />
 </div>
 
 <div data-reveal>
-<h2 id="giris">Giriş: Haritasız Okyanusa Açılmamak İçin</h2>
+<h2 id="doktor-merkez">Doktor mu Merkez mi Daha Önemli?</h2>
 
-30+ yılı aşkın süredir kadın hastalıkları, infertilite ve tüp bebek tedavileriyle ilgilenen bir hekim olarak, kliniğime gelen çiftlerin gözlerindeki o tanıdık bakışı çok iyi bilirim: **umutla iç içe geçmiş derin bir kafa karışıklığı**. İstanbul bugün dünyanın sayılı sağlık turizmi merkezlerinden biri. Ne var ki Google'da "İstanbul tüp bebek doktoru" yazdığınızda karşınıza çıkan binlerce sonuç, sponsorlu reklamlar ve forumlardaki bilgi kirliliği arasında doğru yolu bulmak hiç de kolay değil.
+Tüp bebekte doktor ve merkez birbirinden ayrılmaz. Hekim tanı, strateji, ilaç dozu, yumurta toplama ve transfer kararlarını yönetir. Laboratuvar ise embriyonun ilk günlerini belirleyen ortamı sağlar. İyi hekim, zayıf laboratuvarla; güçlü laboratuvar da özensiz klinik planla potansiyelini kaybedebilir.
+
+Bu nedenle seçim yaparken şu üçlüyü birlikte düşünün:
+
+- **Hekim:** Tanıyı doğru koyuyor mu, planı kişiselleştiriyor mu?
+- **Laboratuvar:** Embriyo kültürü, dondurma/çözme ve kimlik güvenliği nasıl yönetiliyor?
+- **Sistem:** İletişim, maliyet ve acil karar süreçleri şeffaf mı?
 </div>
 
 <div data-reveal>
-Tüp bebek tedavisi, sanıldığı gibi yalnızca bir spermle bir yumurtayı laboratuvar ortamında bir araya getirmekten ibaret değildir. Eğer öyle olsaydı, her merkezde başarı oranları birbirine yakın olurdu. Oysa bu süreç, insan biyolojisinin en mahrem ve en karmaşık alanlarında yürütülen hassas bir **orkestrasyondur**. Yanlış bir teşhisle ya da ezbere seçilmiş bir protokolle yola çıkmak, pusulasız şekilde okyanusa açılmak gibidir.
+<h2 id="ilk-gorusme">İlk Görüşmede Ne Anlaşılır?</h2>
+
+İlk görüşme yalnızca “tedavi anlatımı” değildir; hekimin düşünme biçimini görme fırsatıdır.
+
+| Görüşmede Sorulacak Soru | İyi Yanıt Ne İçermeli? |
+| :--- | :--- |
+| Benim temel infertilite nedenim ne görünüyor? | Yaş, rezerv, sperm, rahim ve tüpler birlikte yorumlanmalı |
+| Neden bu protokol? | Alternatifler ve gerekçe açıklanmalı |
+| Başarı şansım nasıl hesaplanıyor? | Yaşa ve tanıya göre gerçekçi aralık verilmeli |
+| Embriyo raporunu kim açıklayacak? | Embriyoloji bilgisi anlaşılır şekilde paylaşılmalı |
+| Başarısızlık olursa ne değişecek? | “Aynısını tekrarlarız” yerine öğrenme planı olmalı |
+
+İlk görüşmede her şey çözülmeyebilir; ama hekimin belirsizliği nasıl yönettiği anlaşılır.
 </div>
 
 <div data-reveal>
-<h2 id="kritik-sorular">Tüp Bebek Merkezini Değerlendirirken Sorulması Gereken 5 Kritik Soru</h2>
-
-Ailenizin geleceğini emanet edeceğiniz merkezi seçerken nelere bakmalısınız?
-</div>
-
-<div data-reveal>
-### 2.1. Doktorunuz Sürecin Neresinde? (Orkestra Şefi Metaforu)
-
-Tüp bebek tedavisinde doktoru, bir **orkestra şefi** gibi düşünmek yanlış olmaz. Elinizdeki enstrümanlar -ilaçlar, ileri teknoloji ve güçlü bir laboratuvar- ne kadar iyi olursa olsun, şefin zamanlaması ve yorum gücü zayıfsa ortaya bir senfoni değil, yalnızca gürültü çıkar. Bu yüzden başarı şansını belirleyen en kritik unsurlardan biri, **uyumlu, deneyimli ve işi sahiplenen bir ekip**tir.
-</div>
-
-<div data-reveal>
-Ne yazık ki bazı büyük merkezlerde hasta yoğunluğu nedeniyle süreç zamanla "fabrikasyon" bir yapıya bürünebilir. Doktorunuza doğrudan ulaşmak zorlaşır, sorularınız çoğu zaman aracı personel üzerinden iletilir. Oysa tüp bebekte ayrıntılar belirleyicidir. Hekimin tahlilleri doğru okumadaki becerisi, tedaviyi kişiye göre anlık olarak ayarlayabilmesi ve laboratuvarla kurduğu güçlü iletişim, sonucu doğrudan etkiler.
-</div>
-
-<div data-reveal>
-<QuoteBlock author="tupbebek.com Yayın Kurulu">
-**Dr. Aksoy Kriteri:** Butik hizmet anlayışında hekim, sürecin hiçbir aşamasında geri planda kalmaz. Tedavinin başından sonuna kadar bizzat işin içindedir. Ben hastalarımı dosya numaralarıyla değil, **hikâyeleriyle** tanırım. Çünkü bu yolculukta başarı, yalnızca tıbbi verilerle değil; güven, süreklilik ve gerçek bir hekim-hasta ilişkisiyle mümkündür.
+<QuoteBlock author="tupbebek.com Tıbbi Danışma Kurulu">
+Tüp bebekte güven, “garanti veriyorum” cümlesinden değil; olasılıkları dürüstçe anlatan, sınırlarını bilen ve planını kanıtla açıklayan ekipten doğar.
 </QuoteBlock>
 </div>
 
 <div data-reveal>
-### 2.2. Laboratuvar Teknolojisi: Başarının Görünmeyen Kahramanı
+<h2 id="laboratuvar">Laboratuvar Neden Belirleyicidir?</h2>
 
-Bir tüp bebek merkezinde vitrini doktor temsil eder; ancak asıl belirleyici olan **mutfak**, yani laboratuvardır. Çünkü embriyolarınızın oluştuğu ve hayatlarının ilk günlerini geçirdiği bu ortam, tedavinin kaderini sessizce şekillendirir.
+Embriyolarınız yumurta toplama sonrası laboratuvarda gelişir. Bu süreçte hava kalitesi, inkübatör stabilitesi, kültür ortamları, embriyolog deneyimi, dondurma/çözme protokolü ve kimlik doğrulama sistemi kritik önemdedir.
+
+Maribor konsensüsü gibi kalite girişimleri, ART performansının yalnızca tek bir başarı oranıyla değil, süreç göstergeleriyle de izlenmesi gerektiğini vurgular. <InlineEvidence grade="C" /> Bu yüzden merkezden laboratuvar kalite kontrolünü nasıl izlediğini sormak doğaldır.
 </div>
 
 <div data-reveal>
-Laboratuvar; ısından havasına, kullanılan kültür ortamlarından cihazların kalibrasyonuna kadar son derece hassas dengeler üzerine kuruludur. Buradaki en küçük bir aksaklık, dışarıdan fark edilmese bile sonucu doğrudan etkileyebilir. Bu nedenle güçlü bir teknolojik altyapı, güncel bilimsel standartlara uygunluk ve deneyimli bir embriyoloji ekibi, tüp bebek başarısının vazgeçilmez parçalarıdır.
+<h2 id="basari-maliyet">Başarı Oranı ve Maliyet Nasıl Sorgulanır?</h2>
+
+İstanbul'da fiyatlar ve paket içerikleri farklı olabilir. Karar verirken yalnızca toplam rakama değil, nelerin dahil olduğuna bakın:
+
+- İlaçlar dahil mi?
+- Anestezi, yumurta toplama, embriyo dondurma ayrı mı?
+- PGT-A/PGT-M gerekiyorsa ücret nasıl hesaplanıyor?
+- Dondurulmuş embriyo saklama süresi ve ücreti nedir?
+- İptal döngüsünde ücretlendirme nasıl olur?
+
+Başarı oranı için de canlı doğum, klinik gebelik ve beta-hCG pozitifliği ayrımını sorun. Pozitif test güzel bir adımdır; nihai hedef sağlıklı canlı doğumdur.
 </div>
 
-<div data-reveal>
-Kısacası, iyi bir doktor doğru yolu çizer; **iyi bir laboratuvar ise o yolun güvenle tamamlanmasını sağlar**. Gerçek başarı, bu ikisinin kusursuz uyumuyla mümkün olur.
+<div data-reveal class="bg-rose-50 border border-rose-100 rounded-3xl p-8">
+<h2 id="kirmizi-bayrak" class="text-2xl font-bold text-rose-900 mb-4">Kırmızı Bayraklar</h2>
+
+- “Kesin gebelik” veya “garanti başarı” dili
+- Yaş ve tanıdan bağımsız tek başarı oranı
+- Herkese aynı protokol
+- Kanıtı zayıf eklentilerin paket gibi sunulması
+- Embriyo sayısı ve transfer kararı hakkında belirsizlik
+- Maliyet kalemlerinin net anlatılmaması
+- Sorulara erişilebilir ve yazılı yanıt alınamaması
 </div>
-
-<div data-reveal>
-#### Kaliteli Bir Laboratuvarın İşaretleri
-
-Tüp bebek laboratuvarları, rastgele uygulamalarla değil; **uluslararası kabul görmüş bilimsel standartlar** çerçevesinde yönetilmelidir. Bu alanda referans kabul edilen iki ana otorite vardır: [**ESHRE** (Avrupa İnsan Üreme ve Embriyoloji Derneği)](https://www.eshre.eu/) ve [**ASRM** (Amerikan Üreme Tıbbı Derneği)](https://www.asrm.org/).
-
-<MedicalInfoBox title="Laboratuvar Kalite Kriterleri" icon="🔬" color="emerald">
-<div class="glass p-6 rounded-2xl border border-white/40 shadow-sm transition-all hover:shadow-md">
-| Kriter | Neden Önemli? | İdeal Standart |
-|--------|--------------|----------------|
-| **Embriyolog Deneyimi** | Mikroenjeksiyon (ICSI) işlemi, mikronluk hassasiyet gerektiren bir el sanatıdır. | ESHRE sertifikalı, kıdemli embriyologlar. |
-| **Kalite Kontrol (QC)** | Embriyolar dış ortam koşullarına çok hassastır. | Düzenli hava kalitesi ve gaz ölçümleri. |
-| **Embriyo Skorlama** | Doğru embriyoyu seçmek tutunma şansını artırır. | Gardner kriterlerine göre detaylı sınıflandırma (5AA, 4AB vb.). |
-</div>
-</MedicalInfoBox>
-</div>
-
-<div data-reveal>
-**Soru:** Gittiğiniz merkezde mutlaka şunu sorun: *"Embriyolarımı 5. güne, yani blastokist aşamasına taşıma oranınız nedir?"*
-
-İyi yönetilen bir laboratuvar, embriyoların **yaklaşık %50-60'ını blastokist aşamasına** ulaştırabilir. <InlineEvidence grade="C" /> Bu oran laboratuvarın embriyoya ne kadar "iyi baktığının" somut bir göstergesidir. <InlineEvidence grade="C" />
-</div>
-
-<div data-reveal>
-### 2.3. Genetik Tanı (PGT) ve İleri Teknikler Kime Gerekli?
-
-**PGT (Preimplantasyon Genetik Tanı)** embriyodan biyopsi alınarak genetik yapısının incelenmesidir.
-
-**Kime yapılmalı?**
-PGT; özellikle **ileri anne yaşı (38 yaş ve üzeri)**, **tekrarlayan düşük öyküsü**, **tekrarlayan tüp bebek başarısızlıkları** ya da **bilinen genetik hastalık taşıyıcılığı** olan çiftler için anlamlı bir seçenektir. (Bkz. [PGT Rehberimiz](/tup-bebek-tedavisinde-preimplantasyon-genetik-tani))
-
-**Amaç nedir?**
-Hedef, "en güzel" ya da "en hızlı gelişen" embriyoyu değil; **genetik olarak sağlıklı embriyoyu** seçmektir. <InlineEvidence grade="B" /> Böylece transfer sonrası hayal kırıklığı riskini azaltmak ve **eve canlı bebek götürme oranını** artırmaktır. <InlineEvidence grade="B" />
-</div>
-
-<div data-reveal>
-### 2.4. İletişim ve Güven: 24 Saat Ulaşılabilirlik
-
-Tüp bebek tedavisi, doğası gereği mesai saatlerine sığmayan bir süreçtir. Yumurta toplama ya da transfer zamanlaması, sizin vücudunuzun biyolojik saatine göre belirlenir. Bu nedenle seçeceğiniz merkezin ve ekibin size her an destek verebilmesi, her sorunuza yanıt alabilmeniz paha biçilemezdir.
-</div>
-
-<div data-reveal>
-<h2 id="dr-aksoy-yaklasimi">tupbebek.com Yaklaşımı: Matematik ve Şefkatin Buluşması</h2>
-
-Her çifti standart bir şablona yerleştirmek yerine, tıbbi gerçekleri bireysel hikâyelerle birlikte değerlendiririz. Kararlarımızı rakamlarla temellendirir, uygulamalarımızı ise empatiyle şekillendiririz. Çünkü inanıyoruz ki tüp bebek tedavisinde gerçek başarı, **bilimsel doğruluk ile insani yaklaşımın dengede olduğu noktada** ortaya çıkar.
-</div>
-
-<div data-reveal>
-### Hazırlık Dönemi
-
-Tedaviye her zaman otomatik olarak başlamayız. Öncelikle kapsamlı bir değerlendirme yaparız. Eğer bu değerlendirme sırasında başarıyı artırabilecek bir durum saptarsak, **hazırlık süreci**ni bu noktaları iyileştirmek için kullanırız. Ancak herhangi bir engel yoksa, **vakit kaybetmeden** yola çıkarız. Amacımız doğru zamanda, en doğru koşullarda yola çıkmaktır.
-</div>
-
-<div data-reveal>
-### Gerçekçi Beklentiler
-
-Size duymak istediklerinizi değil, **bilmeniz gereken gerçekleri** söylerim. Tüp bebek tedavisinde başarı garantisi vermek hem **etik değildir** hem de **yasal olarak mümkün değildir**. 
-
-Ancak şunun sözünü net bir şekilde verebilirim: **en güncel bilimsel literatür neyi gerektiriyorsa**, hangi yaklaşım sizin için en doğruysa, onu eksiksiz ve şeffaf biçimde uygulayacağız. Kararlarımızı umut tacirliğiyle değil; bilim, deneyim ve dürüstlükle alırız.
-</div>
-
-<div data-reveal>
-### Bütünsel Bakış
-
-Tüp bebek tedavisinde yalnızca rahme odaklanmakla yetinmeyiz. Bağıklık sistemi ve diğer sistemik etkenleri de değerlendiririz. Parça parça değil, **bir bütün olarak** ele alınan tedavi, başarı şansını daha gerçekçi şekilde artırır.
-</div>
-
----
-
-<div data-reveal>
-<h2 id="fiyatlandirma">Tedavi Planında Maliyet Faktörleri: Neye Dikkat Edilmeli?</h2>
-
-Tedavi planının toplam maliyeti; merkezin teknolojik altyapısı, laboratuvar süreçleri, ilaç planı ve hastanın klinik ihtiyacına göre değişir. Bu nedenle ücret bilgisi için merkezden kişisel tedavi planı üzerinden şeffaf bilgilendirme alınmalıdır.
-
-🛡️ **Önemli bir not:**
-Bizim yaklaşımımızda sürprizlere yer yoktur. Tedaviye başlamadan önce, **olası tüm maliyet senaryolarını açık ve net şekilde konuşuruz**.
-</div>
-
----
-
-<div data-reveal>
-<h2 id="tedavi-sureci">Tüp Bebek Tedavi Sürecinin Anatomisi: Adım Adım Rehber</h2>
-
-<div class="glass p-8 rounded-3xl border border-blue-100 mt-12 mb-12">
-1. **Aşama: Tanı ve Strateji** ([Kapsamlı değerlendirme](/makaleler/tup-bebek-sureci-rehber))
-2. **Aşama: Yumurtalıkların Uyarılması** (8-12 gün süren hormon iğneleri)
-3. **Aşama: Yumurta Toplama (OPU)** (Anestezi altında 10-15 dakikalık işlem)
-4. **Aşama: Laboratuvar ve Döllenme** ([Hassas embriyo takibi](/makaleler/laboratuvar-raporu-yorumlama))
-5. **Aşama: Transfer** ([Ağrısız, ultrason eşliğinde yerleştirme](/tup-bebek-asamalari#transfer))
-</div>
-</div>
-
----
 
 <div data-reveal>
 <h2 id="faq">Sıkça Sorulan Sorular</h2>
 
-<Accordion title="Transfer sonrası hemen ayağa kalkabilir miyim?">
-Evet. Transferden sonra merkezimizde **30-45 dakika** dinlenmeniz yeterlidir. Uzun süreli yatak istirahatinin başarıyı artırmadığı bilimsel olarak kanıtlanmıştır.
+<Accordion title="İstanbul'da en iyi tüp bebek doktoru kimdir?">
+Bu soru tek bir isimle yanıtlanamaz. En doğru doktor, sizin yaşınız, tanınız, önceki denemeleriniz ve beklentileriniz için gerçekçi plan kurabilen hekimdir.
 </Accordion>
 
-<Accordion title="Tüp bebek iğneleri çok acıtır mı?">
-Hayır. İğneler **çok ince uçludur** ve genellikle sinek ısırığına benzer hafif bir his verir.
+<Accordion title="Büyük merkez mi butik yaklaşım mı daha iyi?">
+Her ikisinin de avantajı olabilir. Önemli olan laboratuvar kalitesi, hekime erişim, ekip sürekliliği ve kişiselleştirilmiş karar sürecidir.
 </Accordion>
 
-<Accordion title="Dondurulmuş embriyo mu taze embriyo mu?">
-**Dondurulmuş embriyo transferi (Frozen ET)**, rahmin dinlendirilmesine zaman tanıdığı için özellikle PKOS gibi durumlarda başarı şansını artırabilir.
+<Accordion title="İlk görüşmeye hangi belgelerle gitmeliyim?">
+AMH, hormon testleri, HSG, semen analizi, önceki IVF raporları, embriyo kalite raporları, ameliyat notları ve kullanılan ilaç listesi yararlı olur.
 </Accordion>
 
-<Accordion title="Randevu nasıl alabilirim?">
-Web sitemizdeki [İletişim Formunu](/iletisim/) doldurabilir veya kliniğimizi doğrudan arayabilirsiniz.
+<Accordion title="Başarı oranı sorarken ne demeliyim?">
+“Benim yaş ve tanı grubumda, başlanan siklus başına canlı doğum olasılığı nedir?” diye sormak en net başlangıçtır.
 </Accordion>
 </div>
 
 <div data-reveal>
-**İlgili Yazı:** [İyi tüp bebek merkezi nasıl anlaşılır?](/makaleler/iyi-tup-bebek-merkezi)
+<EvidenceGradeCard grade={frontmatter.recommendationGrade} />
+</div>
 
----
+<div data-reveal class="mt-12 bg-slate-50 p-8 rounded-3xl border border-slate-200">
+**İlgili Yazılar:**
+- [İyi tüp bebek merkezi nasıl anlaşılır?](/makaleler/iyi-tup-bebek-merkezi/)
+- [Laboratuvar raporu yorumlama](/makaleler/laboratuvar-raporu-yorumlama/)
+- [Tüp bebek süreci rehberi](/makaleler/tup-bebek-sureci-rehber/)
+- [PGT ve genetik testler](/genetik-testler/)
+- [Embriyo transferi sonrası bakım](/makaleler/embriyo-transferi-sonrasi-bakim/)
+</div>
 
+<div data-reveal class="mt-12 pt-8 border-t border-slate-200 text-sm text-slate-600">
 ## Yasal Uyarı
-
-**Son Tıbbi Gözden Geçirme: 15 Mart 2026**
-Bu makale **tupbebek.com yayın kurulu** tarafından genel bilgilendirme amacıyla hazırlanmıştır. Her hastanın durumu benzersizdir. Bu bilgiler tıbbi bir muayene, teşhis veya profesyonel görüş yerine geçmez. Şikayetleriniz için mutlaka doktorunuza danışınız.
-© tupbebek.com - Tüm hakları saklıdır.
+**Son tıbbi revizyon tarihi: 12 Mayıs 2026.**
+Bu makale bilgilendirme amaçlıdır; herhangi bir doktor veya merkez için kişisel tavsiye, sıralama veya başarı garantisi değildir. Seçim kararınızı kendi tıbbi dosyanız ve yüz yüze uzman değerlendirmesiyle verin.
 </div>
 
 </div>
 
-<JSONLD schema={frontmatter.schema} />
+export const istanbulIvfDoctorFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "İstanbul'da en iyi tüp bebek doktoru kimdir?",
+    "acceptedAnswer": { "@type": "Answer", "text": "Bu soru tek bir isimle yanıtlanamaz. En doğru doktor, kişinin yaşı, tanısı, önceki denemeleri ve beklentileri için gerçekçi plan kurabilen hekimdir." }
+  }, {
+    "@type": "Question",
+    "name": "İlk görüşmeye hangi belgelerle gitmeliyim?",
+    "acceptedAnswer": { "@type": "Answer", "text": "AMH, hormon testleri, HSG, semen analizi, önceki IVF raporları, embriyo kalite raporları, ameliyat notları ve kullanılan ilaç listesi yararlı olur." }
+  }, {
+    "@type": "Question",
+    "name": "Başarı oranı sorarken ne demeliyim?",
+    "acceptedAnswer": { "@type": "Answer", "text": "Benim yaş ve tanı grubumda, başlanan siklus başına canlı doğum olasılığı nedir diye sormak en net başlangıçtır." }
+  }]
+};
+
+<script type="application/ld+json" set:html={JSON.stringify(istanbulIvfDoctorFaqSchema)} />
 <RevealScript />

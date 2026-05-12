@@ -1,6 +1,6 @@
 ---
-title: "İntrauterin İnseminasyon (IUI). Kapsamlı Bir Rehber"
-description: "İntrauterin inseminasyon (IUI) nedir? Aşılama yöntemini, kimler için uygun olduğunu ve başarı oranlarını açıklıyor. Detaylı rehber!"
+title: "IUI Aşılama Nedir? Kimlere Uygun, Başarı Oranı ve Süreç"
+description: "IUI yani aşılama tedavisi nasıl yapılır? Kimlere uygundur, ne zaman IVF'e geçilir, başarı oranları ve çoğul gebelik riski nasıl yönetilir?"
 publishDate: 2025-03-17
 author: "Doç. Dr. Senai Aksoy"
 authorTitle: "Kadın Hastalıkları ve Doğum Uzmanı"
@@ -8,108 +8,190 @@ authorCredentials: "Üreme Tıbbı ve Yardımcı Üreme Teknikleri"
 authorYoutube: "https://www.youtube.com/@DocentDrSenaiAksoy"
 medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Tıbbi Danışma Kurulu"
-reviewDate: 2026-04-09
-lastModified: 2026-05-11
+reviewDate: 2026-05-12
+lastModified: 2026-05-12
 category: "Tedavi Yöntemleri"
 recommendationGrade: B
 image: /images/library/tedavi/iac.webp
-imageAlt: "intrauterin inseminasyon IUI aşılama işlemi illüstrasyonu"
+imageAlt: "IUI aşılama işleminde hazırlanmış spermin rahim içine verilmesi"
 references:
-  - title: "Intrauterine insemination for cervical factor subfertility"
-    authors: "Besselink DE, Farquhar C"
-    journal: "Cochrane Database of Systematic Reviews"
-    year: 2008
-    doi: "10.1002/14651858.CD000317.pub4"
-    pmid: "29368795"
+  - title: "Evidence-based treatments for couples with unexplained infertility: a guideline"
+    authors: "Practice Committee of the American Society for Reproductive Medicine"
+    journal: "Fertility and Sterility"
+    year: 2020
+    url: "https://www.asrm.org/practice-guidance/practice-committee-documents/evidence-based-treatments-for-couples-with-unexplained-infertility-a-guideline-2020/"
   - title: "Effectiveness of intrauterine insemination: a systematic review and meta-analysis"
     authors: "Cohlen BJ, Vandekerckhove P, de Bruin JP et al."
     journal: "Human Reproduction Update"
     year: 2018
     doi: "10.1093/humupd/dmx041"
     pmid: "29452361"
-  - title: "Ovarian stimulation protocols for IUI: a systematic review and network meta-analysis"
-    authors: "Danhof NA, Wang R, van Wely M et al."
-    journal: "Human Reproduction Update"
-    year: 2020
-    doi: "10.1093/humupd/dmz034"
-    pmid: "31821471"
+  - title: "Multiple gestation associated with infertility therapy: a committee opinion"
+    authors: "Practice Committee of the American Society for Reproductive Medicine"
+    journal: "Fertility and Sterility"
+    year: 2022
+    url: "https://www.asrm.org/practice-guidance/practice-committee-documents/multiple-gestation-associated-with-infertility-therapy-a-committee-opinion-2022/"
 ---
 
 import HizliCevap from '../../components/HizliCevap.astro';
+import Accordion from "../../components/global/Accordion.astro";
+import MedicalInfoBox from '../../components/global/MedicalInfoBox.astro';
+import QuoteBlock from '../../components/global/QuoteBlock.astro';
+import RevealScript from '../../components/global/RevealScript.astro';
+import Video from '../../components/global/Video.astro';
 import InlineEvidence from '../../components/InlineEvidence.astro';
+import EvidenceGradeCard from '../../components/EvidenceGradeCard.astro';
 
-<HizliCevap question="İntrauterin İnseminasyon (IUI). Kapsamlı Bir Rehber hakkında bilmeniz gerekenler nelerdir?">
-İntrauterin inseminasyon (IUI) nedir? Aşılama yöntemini, kimler için uygun olduğunu ve başarı oranlarını açıklıyor. Detaylı rehber!
+<HizliCevap question="IUI aşılama nedir?">
+IUI, laboratuvarda hazırlanmış hareketli spermlerin ince bir kateterle rahim içine verilmesidir. Tüplerin açık olduğu, ovulasyonun takip edilebildiği, sperm faktörünün hafif olduğu veya açıklanamayan infertilitede seçilmiş çiftlerde uygulanır. Ciddi erkek faktörü, kapalı tüpler veya ileri yaşta IVF daha uygun olabilir.
 </HizliCevap>
 
-### İntrauterin İnseminasyon (IUI): Kapsamlı Bir Rehber
+<div class="mesh-hero pt-12 pb-20 px-4 md:px-0 -mx-4 md:-mx-0 mb-12 rounded-3xl shadow-sm border border-white/40" style="background: linear-gradient(135deg, #ecfdf5 0%, #dbeafe 52%, #f8fafc 100%);">
+  <div class="max-w-4xl mx-auto" data-reveal>
+    <div class="inline-block px-4 py-1 rounded-full bg-emerald-100 text-emerald-700 text-sm font-bold mb-4">Aşılama Tedavisi</div>
+    <h1 class="text-4xl md:text-6xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-emerald-700 to-slate-900 leading-tight">{frontmatter.title}</h1>
+    <p class="text-xl md:text-2xl text-slate-700 font-medium max-w-2xl leading-relaxed">Aşılama, doğru hastada sade ve erişilebilir bir basamaktır; yanlış hastada ise zaman kaybettiren bir ara durak olabilir.</p>
+  </div>
+</div>
 
-Uzun yıllardır infertilite alanında çiftlerin ebeveynlik hayallerine kavuşmalarına yardımcı oluyorum. Bugün sizlerle infertilite tedavisinde sıkça tercih edilen bir yöntem olan **intrauterin inseminasyon (IUI)** hakkında detaylı bir rehber paylaşacağım. Bu yazıda, IUI'nin ne olduğunu, kimler için uygun olduğunu, nasıl uygulandığını, başarı oranlarını ve bu süreçte dikkat edilmesi gerekenleri anlatacağım. Eğer siz de gebelik planlıyor ve bu yöntemi merak ediyorsanız, doğru yerdesiniz!
+<div class="max-w-4xl mx-auto space-y-12 blog-content-reveal">
 
-[![Sperm Sayısı ve Aşılama Başarısı Arasındaki İlişki](https://img.youtube.com/vi/hZrP4-bD2y0/0.jpg)](https://youtu.be/hZrP4-bD2y0)
+<div data-reveal>
+<MedicalInfoBox title="Hızlı Bakış: IUI İçin 3 Şart" icon="✅" color="emerald">
+IUI için en kritik üç koşul: en az bir tüpün açık olması, ovulasyonun doğru zamanlanması ve yıkama sonrası yeterli hareketli sperm bulunmasıdır. Açıklanamayan infertilitede oral ovulasyon uyarımı ile IUI, belirli sayıda deneme için kanıta dayalı bir basamak olabilir. <InlineEvidence grade="B" />
+</MedicalInfoBox>
+</div>
 
-#### İntrauterin İnseminasyon Nedir?
+## İçindekiler
 
-İntrauterin inseminasyon, infertilite tedavisinde kullanılan bir yöntemdir ve halk arasında "aşılama" olarak da bilinir. Bu işlemde, özel olarak hazırlanmış sperm doğrudan rahme yerleştirilir. Rahim, bebeğin geliştiği organdır ve IUI, sağlıklı spermlerin fallop tüplerine ulaşma şansını artırarak gebeliği kolaylaştırmayı amaçlar. <InlineEvidence grade="B" /> Doğal yollarla gebe kalmak için spermin vajina, serviks ve rahim boyunca uzun bir yolculuk yapması gerekir. Ancak IUI, bu mesafeyi kısaltır ve spermin yumurtaya ulaşmasını kolaylaştırır. Özellikle sperm kalitesi veya miktarının düşük olduğu durumlarda bu yöntem oldukça etkili olabilir. Ayrıca, IUI'nin temel hedefi, doğal bariyerleri aşarak daha fazla sayıda sağlıklı spermi yumurtaya yakın bir konuma ulaştırmaktır. Bu, döllenme şansını artıran önemli bir avantaj sağlar.
+- [IUI nasıl yapılır?](#nasil)
+- [Kimlere uygundur?](#uygun)
+- [Kimlere uygun değildir?](#uygun-degil)
+- [Başarı oranı neye bağlıdır?](#basari)
+- [Kaç kez denenmeli?](#kac-kez)
+- [Riskler nelerdir?](#risk)
+- [Sıkça sorulan sorular](#faq)
 
-#### IUI'nin Avantajları Nelerdir?
+<div data-reveal>
+<Video id="hZrP4-bD2y0" />
+</div>
 
-IUI, diğer infertilite tedavilerine, özellikle tüp bebeğe (IVF) kıyasla daha az invaziv bir seçenektir. <InlineEvidence grade="B" /> İşlem sırasında anesteziye ihtiyaç duyulmaz ve genellikle hasta aynı gün içinde normal hayatına dönebilir. Ayrıca, IUI doğal döllenme sürecine mümkün olduğunca yakın bir yöntemdir; çünkü fertilizasyon (döllenme) kadın bedeninde, fallop tüplerinde gerçekleşir. Bu, bazı çiftler için hem fiziksel hem de duygusal açıdan daha kabul edilebilir bir seçenek olabilir. IVF gibi daha karmaşık tedavilere geçmeden önce, IUI genellikle ilk basamak tedavi olarak önerilir ve birçok çift için umut verici sonuçlar sunar.
+<div data-reveal>
+<h2 id="nasil">IUI Aşılama Nasıl Yapılır?</h2>
 
-#### IUI Kimler İçin Uygundur?
+IUI gününde semen örneği laboratuvarda hazırlanır; hareketli spermler ayrıştırılır ve seminal sıvı uzaklaştırılır. Ardından ince, yumuşak bir kateterle sperm rahim içine verilir. İşlem genellikle birkaç dakika sürer, anestezi gerektirmez ve çoğu kişi aynı gün günlük yaşamına dönebilir.
 
-IUI, farklı infertilite sorunlarına çözüm sunan çok yönlü bir tedavidir. İşte bu yöntemin önerildiği başlıca durumlar:
+Zamanlama en kritik noktadır. IUI, LH artışı veya hCG çatlatma iğnesine göre planlanır. ASRM, uyarılmış IUI döngülerinde tek IUI'nin hCG enjeksiyonuna göre 0-36 saat aralığında yapılmasını destekleyen kanıtlar olduğunu belirtir. <InlineEvidence grade="B" />
+</div>
 
-1. **Açıklanamayan İnfertilite**: Standart testlerde infertilitenin nedeni bulunamazsa, IUI genellikle ilk tercih edilen, az invaziv bir yöntemdir. Ovülasyonu uyarıcı ilaçlarla kombine edildiğinde başarı şansı daha da artar. Bu durum, çiftlerin yaklaşık %15-20'sinde görülür ve IUI, doğal döllenmeyi optimize ederek çözüm sunar.
-2. **Hafif Erkek Kaynaklı İnfertilite**: Sperm sayısı, şekli veya hareketliliği ile ilgili hafif sorunlar varsa, IUI ile sperm yıkama işlemi yapılarak en kaliteli spermler rahme yerleştirilir. Araştırmalar, yıkama sonrası toplam hareketli sperm sayısının en az 9 milyon olması durumunda döngü başına %16,9 gebelik oranı elde edildiğini gösteriyor. Ancak bu sayı 5 milyonun altındaysa, tüp bebek (IVF) önerilir.
-3. **Servikal Etkenli İnfertilite**: Servikste kalın mukus veya yara dokusu gibi sperm geçişini engelleyen durumlar varsa, IUI bu engeli aşarak spermi doğrudan rahme ulaştırır. Örneğin, servikal mukusun sperme karşı "düşmanca" bir ortam oluşturduğu durumlarda bu yöntem oldukça faydalıdır.
-4. **Ovülasyon Sorunları**: Düzensiz veya hiç ovülasyon olmayan kişilerde, yumurta üretimini teşvik eden ilaçlarla birlikte IUI uygulanabilir. Polikistik over sendromu (PCOS) gibi durumlarda ovülasyonu düzenlemek için kullanılan ilaçlarla IUI'nin kombinasyonu sıkça tercih edilir.
-5. **Endometriozis**: Hafif endometriozis vakalarında, IUI ilk tedavi adımı olarak tercih edilir ve genellikle yumurta kalitesini artıran ilaçlarla desteklenir. Endometriozis, rahim dokusunun rahim dışında büyümesiyle karakterizedir ve fertiliteyi etkileyebilir; IUI bu durumda spermin yumurtaya ulaşma şansını artırır.
-6. **Nadir Durumlar**: Semen alerjisi, cinsel ilişkiyi zorlaştıran fiziksel/psikolojik durumlar veya erkek partnerde boşalma/ereksiyon problemleri gibi özel durumlarda IUI kullanılabilir. Bu gibi durumlarda sperm, alternatif yöntemlerle (örneğin vibrasyon stimülasyonu veya elektroejakülasyon) toplanarak inseminasyon için hazırlanabilir. Ayrıca, bazı çiftlerde cinsel ilişki zamanlaması zor olduğunda da IUI pratik bir çözüm sunar.
+<div data-reveal>
+<h2 id="uygun">IUI Kimlere Uygundur?</h2>
 
-#### IUI Kimler İçin Uygun Değildir?
+| Durum | IUI Neden Düşünülebilir? |
+| :--- | :--- |
+| Açıklanamayan infertilite | Oral ilaçla ovulasyon uyarımı + IUI ilk basamak olabilir |
+| Hafif erkek faktörü | Sperm yıkama ile hareketli sperm seçilir |
+| Servikal faktör | Serviks bariyeri atlanır |
+| Ovulasyon düzensizliği | Ovulasyon indüksiyonu ile zamanlama yapılır |
+| Cinsel ilişki/ejakülasyon zorluğu | Uygun sperm elde edilebiliyorsa rahim içine verilebilir |
 
-IUI her durumda etkili bir çözüm değildir ve bazı durumlarda uygulanması mümkün değildir:
+İyi aday seçimi, IUI'nin başarısını belirleyen en önemli adımdır.
+</div>
 
-- **Fallop Tüplerinde Sorunlar**: Fallop tüpleri tıkalıysa veya hasar görmüşse, sperm ve yumurta buluşamaz; bu nedenle IUI önerilmez. Bu durum genellikle geçmişteki pelvik enfeksiyonlar veya cerrahi işlemlerden kaynaklanabilir.
-- **Şiddetli Endometriozis**: Hafif vakalarda IUI denenebilse de, ciddi endometriozis anatomik bozulmalara ve yumurta kalitesinde düşüşe neden olduğundan IVF daha uygun bir seçenektir.
-- **Ciddi Erkek Kaynaklı İnfertilite**: Sperm sayısı veya kalitesi çok düşükse (örneğin toplam hareketli sperm sayısı 5 milyonun altındaysa), IUI yerine IVF ve intrasitoplazmik sperm enjeksiyonu (ICSI) gibi ileri teknikler önerilir.
-- **Yaş Etkeni**: 40 yaş üstü kadınlarda yumurta rezervi ve kalitesi azaldığından IUI'nin başarı oranları düşer. Bu yaş grubunda IVF, döngü başına daha yüksek başarı şansı sunabilir.
+<div data-reveal>
+<h2 id="uygun-degil">IUI Kimlere Uygun Değildir?</h2>
 
-#### IUI Süreci Nasıl İşler?
+IUI aşağıdaki durumlarda genellikle zaman kaybettirir:
 
-IUI, dikkatli bir planlama ve birkaç temel aşamadan oluşan bir tedavi sürecidir:
+- İki fallop tüpünün kapalı olması
+- Ciddi erkek faktörü veya çok düşük yıkama sonrası hareketli sperm sayısı
+- İleri kadın yaşı ve düşük yumurtalık rezerviyle zamanın kritik olması
+- Şiddetli endometriozis veya ileri pelvik yapışıklık
+- Birkaç kaliteli IUI denemesine rağmen sonuç alınamaması
 
-1. **İlk Değerlendirme**: Tedaviye başlamadan önce çiftin tıbbi geçmişi detaylı bir şekilde incelenir. Erkek partnerden semen analizi alınır ve sperm sayısı, hareketliliği ve morfolojisi değerlendirilir. Kadında ise rahim yapısı ve fallop tüplerinin açıklığı, histerosalpingografi (HSG) veya salin infüzyon sonogramı (SIS) gibi testlerle kontrol edilir. Ayrıca, enfeksiyon taramaları ve ovaryen rezerv testleri (örneğin anti-Müllerian hormon seviyesi) yapılır.
-2. **Ovülasyon Takibi**: IUI'nin başarısı, spermin yumurtayla doğru zamanda buluşmasına bağlıdır. Bu nedenle ovülasyonun zamanlaması büyük önem taşır. Evde idrar testleriyle luteinleştirici hormon (LH) artışı takip edilebilir ya da klinikte ultrason ve kan testleriyle folikül gelişimi izlenir. Bazı durumlarda, ovülasyonu teşvik etmek için klomifen sitrat, letrozol veya enjeksiyonla uygulanan gonadotropinler gibi ilaçlar kullanılır. Ovülasyonun tam zamanını belirlemek için insan koryonik gonadotropin (hCG) enjeksiyonu da yapılabilir.
-3. **Sperm Hazırlığı**: İşlem günü erkek partnerden taze sperm örneği alınır. Örnek, genellikle klinikte toplanır ve laboratuvarda "sperm yıkama" işlemine tabi tutulur. Bu süreçte, en hareketli ve sağlıklı spermler ayrıştırılır; hareketsiz spermler, seminal sıvı ve diğer kalıntılar uzaklaştırılır. Bu, rahimde kramp gibi yan etkileri önler ve döllenme şansını artırır.
-4. **İnseminasyon**: İşlem, klinikte kısa ve genellikle ağrısız bir şekilde gerçekleştirilir. Hasta muayene masasına uzanır ve bacakları desteklerle sabitlenir. Vajinaya bir spekulum yerleştirilerek serviks görünür hale getirilir. Ardından, ince ve esnek bir kateterle hazırlanan sperm örneği rahme yavaşça enjekte edilir. İşlem yalnızca birkaç dakika sürer ve anestezi gerektirmez. Hasta, işlem sonrası 10-30 dakika dinlendikten sonra günlük hayatına dönebilir.
+Bu durumlarda doğrudan IVF/ICSI daha rasyonel olabilir.
+</div>
 
-#### IUI Sonrası Süreç ve Beklentiler
+<div data-reveal>
+<h2 id="basari">IUI Başarı Oranı Neye Bağlıdır?</h2>
 
-IUI sonrası iki haftalık bekleme süresi, çiftler için hem heyecanlı hem de duygusal açıdan yoğun bir dönemdir. İşlemden hemen sonra hafif kramp veya lekelenme gibi yan etkiler görülebilir, ancak bunlar genellikle kısa sürelidir. Ovülasyon zamanlamasına bağlı olarak, döllenme ve implantasyon (embriyonun rahme tutunması) 6-12 gün içinde gerçekleşebilir. Bu dönemde bazı kadınlar hafif implantasyon kanaması veya göğüs hassasiyeti gibi erken gebelik belirtileri fark edebilir, ancak bu belirtilerin olmaması gebelik olmadığı anlamına gelmez. Gebeliğin kesinleşmesi için işlemden yaklaşık 14 gün sonra kan testi (beta-hCG) yapılması önerilir. Evde yapılan idrar testleri de kullanılabilir, ancak erken testler yanıltıcı sonuçlar verebilir.
+Başarı; yaş, infertilite nedeni, sperm kalitesi, tüplerin durumu, folikül sayısı ve kullanılan ilaçlara göre değişir. Genel klinik pratikte döngü başına gebelik olasılığı çoğu uygun çiftte kabaca %8-20 aralığında konuşulur; ancak bu sayı kişisel dosyaya göre çok değişebilir. <InlineEvidence grade="B" />
 
-Bu bekleme sürecinde duygusal dalgalanmalar yaşamak oldukça normaldir. Stresi azaltmak için hafif yürüyüşler, meditasyon veya sevdiğiniz bir hobiye yönelmek faydalı olabilir. Eğer test pozitif çıkarsa, gebeliğin sağlıklı ilerlediğini doğrulamak için 4-6 hafta içinde ultrason yapılır. Negatif sonuç durumunda ise bir sonraki adımlar için doktorunuzla görüşerek yeni bir döngü planlanabilir.
+<QuoteBlock author="tupbebek.com Tıbbi Danışma Kurulu">
+IUI'de amaç mümkün olan en yüksek gebelik oranı değil, kabul edilebilir gebelik şansını çoğul gebelik riskini artırmadan yakalamaktır.
+</QuoteBlock>
+</div>
 
-#### IUI Başarı Oranları
+<div data-reveal>
+<h2 id="kac-kez">IUI Kaç Kez Denenmeli?</h2>
 
-IUI'nin başarı oranları birkaç etkene bağlıdır: kadının yaşı, infertilite nedeni, sperm kalitesi ve ovülasyon ilaçlarının kullanımı. Genel olarak:
+Çoğu gebelik ilk 3-4 uygun IUI döngüsünde gerçekleşir. Yaş genç, rezerv iyi ve neden açıklanamayan infertilite/hafif erkek faktörü ise 3-4 deneme makul olabilir. 38 yaş üzeri, düşük rezerv, uzun infertilite süresi veya kötü sperm parametreleri varsa IVF'e daha erken geçmek zaman kazandırabilir.
+</div>
 
-- **30 yaş altı**: Döngü başına %17,6-25
-- **30-35 yaş**: %13,3-20
-- **35-39 yaş**: %10-15
-- **40+ yaş**: %2-5,4
+<div data-reveal class="bg-amber-50 border border-amber-100 rounded-3xl p-8">
+<h2 id="risk" class="text-2xl font-bold text-amber-900 mb-4">Riskler ve İptal Kriterleri</h2>
 
-Açıklanamayan infertilitede oran %7-10 iken, ovülasyon ilaçlarıyla %15-25'e yükselebilir. <InlineEvidence grade="B" /> Hafif erkek kaynaklı durumlarda %16,9 civarındadır. <InlineEvidence grade="B" /> Çoğu gebelik ilk 3-4 döngüde gerçekleşir ve genellikle 6 döngüye kadar denenmesi önerilir. <InlineEvidence grade="B" /> Yaş ilerledikçe başarı oranları düşse de, genç çiftlerde ve uygun koşullarda IUI oldukça etkili bir yöntemdir.
+IUI'nin kendisi düşük riskli bir işlemdir; hafif kramp veya lekelenme olabilir. Asıl dikkat edilmesi gereken risk, ovulasyon ilaçlarıyla gelişen **çoğul gebeliktir**. ASRM, non-ART tedavilerde birden fazla büyük folikül geliştiğinde iptal veya strateji değişikliğinin düşünülmesini önerir. <InlineEvidence grade="B" />
+</div>
 
-#### IUI'nin Riskleri ve Yan Etkileri
+<div data-reveal>
+<h2 id="faq">Sıkça Sorulan Sorular</h2>
 
-IUI genellikle güvenli bir işlemdir, ancak bazı riskler ve yan etkiler içerebilir. İşlem sonrası hafif kramp, lekelenme veya şişkinlik gibi geçici yan etkiler yaygındır. Ovülasyon ilaçları kullanıldığında çoğul gebelik (ikiz, üçüz) riski artabilir; bu, bazı çiftler için olumlu bir sonuç olsa da, erken doğum gibi komplikasyonlara yol açabilir. Nadiren enfeksiyon (%2-4) veya ovaryen hiperstimülasyon sendromu (OHSS) gibi durumlar ortaya çıkabilir. OHSS, yumurtalıkların ilaçlara aşırı tepki vermesiyle oluşur ve ciddi vakalarda tıbbi müdahale gerektirebilir. Bu riskleri en aza indirmek için doktorunuzun talimatlarına uymak ve düzenli takip yapmak önemlidir.
+<Accordion title="IUI ağrılı bir işlem mi?">
+Genellikle hayır. Muayene benzeri kısa bir işlemdir. Bazı kişilerde hafif kramp veya lekelenme olabilir.
+</Accordion>
 
-#### IUI ile IVF Arasındaki Farklar
+<Accordion title="Aşılama için tüplerin açık olması gerekir mi?">
+Evet. En az bir tüp açık ve işlevsel olmalıdır; iki tüp kapalıysa IUI ile sperm ve yumurta buluşamaz.
+</Accordion>
 
-IUI ve tüp bebek (IVF), infertilite tedavisinde sık kullanılan iki yöntemdir, ancak yaklaşımları farklıdır. IUI'de sperm rahme yerleştirilir ve döllenme vücut içinde gerçekleşir; IVF'de ise yumurtalar alınarak laboratuvarda döllenir ve embriyo rahme transfer edilir. IUI daha az invazivdir ve doğal sürece daha yakındır, ancak IVF döngü başına daha yüksek başarı oranları sunar (35 yaş altı için %49-54). IUI genellikle ilk adım olarak denenirken, IVF ciddi infertilite durumlarında veya IUI başarısız olduğunda tercih edilir. Hangi yöntemin uygun olduğuna karar vermek için infertilite uzmanıyla detaylı bir değerlendirme yapılması şarttır.
+<Accordion title="IUI sonrası yatmak gerekir mi?">
+Uzun yatak istirahati gerekmez. Kısa dinlenme sonrası günlük yaşama dönülebilir.
+</Accordion>
 
-#### Sonuç
+<Accordion title="IUI başarısız olursa ne zaman IVF'e geçilir?">
+Genellikle 3-4 iyi planlanmış deneme sonrası gebelik olmazsa, özellikle yaş ve rezerv faktörü varsa IVF değerlendirilir.
+</Accordion>
+</div>
 
-İntrauterin inseminasyon, infertilite ile mücadele eden çiftler için umut verici ve erişilebilir bir seçenektir. Her hastamın durumuna özel bir tedavi planı oluşturarak bu yolculukta yanlarında oluyorum. Türkiye'de IUI, yasal düzenlemeler gereği evli çiftlere kendi gametleriyle uygulanmaktadır. Eğer açıklanamayan infertilite, hafif erkek kaynaklı sorunlar veya ovülasyon problemleri gibi durumlarla karşı karşıyaysanız, IUI sizin için doğru bir başlangıç olabilir. Bu süreçte sabırlı olmak ve bir uzmandan destek almak çok önemlidir. Eğer siz de IUI hakkında daha fazla bilgi almak veya kişiselleştirilmiş bir tedavi planı oluşturmak istiyorsanız, bir infertilite uzmanıyla görüşmenizi öneririm. Hayallerinize bir adım daha yaklaşmanız dileğiyle!
+<div data-reveal>
+<EvidenceGradeCard grade={frontmatter.recommendationGrade} />
+</div>
+
+<div data-reveal class="mt-12 bg-slate-50 p-8 rounded-3xl border border-slate-200">
+**Sizin İçin Seçtiğimiz Diğer Rehberler:**
+- [Açıklanamayan infertilite](/makaleler/aciklanamayan-infertilite/)
+- [Erkek infertilitesi](/erkek-infertilitesi/)
+- [IVF protokolleri](/makaleler/ivf-protokolleri/)
+- [Kaç yumurta gerekir?](/makaleler/kac-yumurta-gerekir/)
+- [Tüp bebek süreci](/makaleler/tup-bebek-sureci-rehber/)
+</div>
+
+<div data-reveal class="mt-12 pt-8 border-t border-slate-200 text-sm text-slate-600">
+## Yasal Uyarı
+**Son tıbbi revizyon tarihi: 12 Mayıs 2026.**
+Bu makale bilgilendirme amaçlıdır; tıbbi teşhis ve tedavi yerine geçmez. IUI veya IVF kararı yaş, rezerv, tüp açıklığı ve semen analizine göre kişiselleştirilmelidir.
+</div>
+
+</div>
+
+export const iuiFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "IUI ağrılı bir işlem mi?",
+    "acceptedAnswer": { "@type": "Answer", "text": "Genellikle hayır. Muayene benzeri kısa bir işlemdir; bazı kişilerde hafif kramp veya lekelenme olabilir." }
+  }, {
+    "@type": "Question",
+    "name": "Aşılama için tüplerin açık olması gerekir mi?",
+    "acceptedAnswer": { "@type": "Answer", "text": "Evet. En az bir tüp açık ve işlevsel olmalıdır; iki tüp kapalıysa IUI ile sperm ve yumurta buluşamaz." }
+  }, {
+    "@type": "Question",
+    "name": "IUI başarısız olursa ne zaman IVF'e geçilir?",
+    "acceptedAnswer": { "@type": "Answer", "text": "Genellikle 3-4 iyi planlanmış deneme sonrası gebelik olmazsa, özellikle yaş ve rezerv faktörü varsa IVF değerlendirilir." }
+  }]
+};
+
+<script type="application/ld+json" set:html={JSON.stringify(iuiFaqSchema)} />
+<RevealScript />
