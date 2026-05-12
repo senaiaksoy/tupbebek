@@ -1,6 +1,6 @@
 ---
-title: "Tüp Bebekte Kritik Karar. Taze mi, Dondurulmuş Embriyo Transferi mi?"
-description: "Tüp bebekte taze mi, dondurulmuş embriyo transferi mi? Avantajları, riskleri ve başarı oranlarını karşılaştırıyor. Size en uygun yöntemi keşfedin."
+title: "Taze mi, Dondurulmuş Embriyo Transferi mi? IVF Karar Rehberi"
+description: "Taze ve dondurulmuş embriyo transferi arasındaki farklar; freeze-all, OHSS riski, PGT, doğal/programlanmış FET, endometrioma ve hidrosalpinx durumlarında karar rehberi."
 publishDate: 2025-09-26
 author: "Doç. Dr. Senai Aksoy"
 authorTitle: "Kadın Hastalıkları ve Doğum Uzmanı"
@@ -8,189 +8,250 @@ authorCredentials: "Üreme Tıbbı ve Yardımcı Üreme Teknikleri"
 authorYoutube: "https://www.youtube.com/@DocentDrSenaiAksoy"
 medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Tıbbi Danışma Kurulu"
-reviewDate: 2026-04-09
-lastModified: 2026-05-11
+reviewDate: 2026-05-12
+lastModified: 2026-05-12
 category: "Tüp Bebek"
-recommendationGrade: B
+recommendationGrade: A
 image: /images/library/tedavi/taze-donmus-transfert.webp
-imageAlt: "taze ve dondurulmuş embriyo transferi karşılaştırması"
+imageAlt: "taze ve dondurulmuş embriyo transferi karar rehberi"
 references:
-  - title: "Freeze-only versus fresh embryo transfer in a multicenter matched-cohort study: contribution of progesterone and maternal age to success rates"
-    authors: "Shi Y, Sun Y, Hao C, Zhang H, Wei D, Zhang Y et al."
-    journal: "Fertility and Sterility"
-    year: 2018
-    doi: "10.1016/j.fertnstert.2017.10.019"
-    pmid: "29331236"
-  - title: "Elective frozen versus fresh embryo transfer in in vitro fertilization"
-    authors: "Wei D, Liu JY, Sun Y, Shi Y, Zhang B, Liu JQ et al."
-    journal: "New England Journal of Medicine"
-    year: 2019
-    doi: "10.1056/NEJMoa1817876"
   - title: "Fresh versus frozen embryo transfers in assisted reproduction"
-    authors: "Roque M, Haahr T, Geber S, Esteves SC, Humaidan P"
+    authors: "Zaat T, Zagers M, Mol F, Goddijn M, van Wely M, Mastenbroek S"
     journal: "Cochrane Database of Systematic Reviews"
+    year: 2021
+    doi: "10.1002/14651858.CD011184.pub3"
+    pmid: "33539543"
+  - title: "Fresh versus elective frozen embryo transfer in IVF/ICSI cycles: a systematic review and meta-analysis of reproductive outcomes"
+    authors: "Roque M, Haahr T, Geber S, Esteves SC, Humaidan P"
+    journal: "Human Reproduction Update"
     year: 2019
-    doi: "10.1002/14651858.CD011184.pub2"
-    pmid: "28349510"
+    doi: "10.1093/humupd/dmy033"
+    pmid: "30388233"
+  - title: "Prevention of moderate and severe ovarian hyperstimulation syndrome: a guideline"
+    authors: "Practice Committee of the American Society for Reproductive Medicine"
+    journal: "Fertility and Sterility"
+    year: 2024
+    doi: "10.1016/j.fertnstert.2023.11.013"
+    pmid: "38099867"
+  - title: "Obstetric and perinatal outcomes following programmed compared to natural frozen-thawed embryo transfer cycles: a systematic review and meta-analysis"
+    authors: "Busnelli A, Somigliana E, Cirillo F et al."
+    journal: "Human Reproduction"
+    year: 2022
+    pmid: "35553678"
+  - title: "Natural ovulation versus programmed regimens before frozen embryo transfer in ovulatory women: multicentre, randomised clinical trial"
+    authors: "Wei D, Qin Y, Sun Y et al."
+    journal: "BMJ"
+    year: 2026
+    doi: "10.1136/bmj-2025-087045"
+    pmid: "41565309"
 ---
 
 import HizliCevap from '../../components/HizliCevap.astro';
+import Accordion from "../../components/global/Accordion.astro";
+import MedicalInfoBox from '../../components/global/MedicalInfoBox.astro';
 import InlineEvidence from '../../components/InlineEvidence.astro';
 
-<HizliCevap question="Tüp Bebekte Kritik Karar. Taze mi, Dondurulmuş Embriyo Transferi mi?">
-Tüp bebekte taze mi, dondurulmuş embriyo transferi mi? Avantajları, riskleri ve başarı oranlarını karşılaştırıyor. Size en uygun yöntemi keşfedin.
+<HizliCevap question="Taze mi, dondurulmuş embriyo transferi mi daha iyidir?">
+Tek bir doğru yoktur. Normal yanıt veren ve rahim içi koşulları uygun olan hastalarda taze ve dondurulmuş transferin kümülatif canlı doğum sonuçları genellikle benzerdir. Dondurulmuş transfer; OHSS riski, yüksek yumurtalık yanıtı, progesteron yüksekliği, PGT planı, hidrosalpinx veya rahim içi hazırlık gerektiren durumlarda daha uygun olabilir. Taze transfer ise uygun hormon ve rahim koşullarında, zaman kaybetmeden ilerlemek isteyen seçilmiş hastalarda değerlendirilebilir.
 </HizliCevap>
 
-## Tüp Bebekte Kritik Karar: Taze mi, Dondurulmuş Embriyo Transferi mi?
+<div class="mesh-hero pt-12 pb-20 px-4 md:px-0 -mx-4 md:-mx-0 mb-12 rounded-3xl shadow-sm border border-white/40" style="background: linear-gradient(135deg, #eef2ff 0%, #ecfeff 48%, #fff7ed 100%);">
+  <div class="max-w-4xl mx-auto" data-reveal>
+    <div class="inline-block px-4 py-1 rounded-full bg-indigo-100 text-indigo-800 text-sm font-bold mb-4">
+      Transfer Zamanlaması, Rahim Hazırlığı ve Güvenlik
+    </div>
+    <h1 class="text-4xl md:text-6xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-indigo-800 to-cyan-700 leading-tight">
+      {frontmatter.title}
+    </h1>
+    <p class="text-xl md:text-2xl text-slate-700 font-medium max-w-2xl leading-relaxed">
+      Transfer tipi, “hangisi daha popüler?” sorusuyla değil; embriyo, rahim, hormonlar ve hasta güvenliği birlikte okunarak seçilir.
+    </p>
+  </div>
+</div>
 
-> ## İçindekiler
+<div class="max-w-4xl mx-auto space-y-12 blog-content-reveal">
 
-> * [Tüp Bebekte Kritik Karar: Taze mi, Dondurulmuş Embriyo Transferi mi?](#tüp-bebekte-kritik-karar-taze-mi-dondurulmuş-embriyo-transferi-mi)
-> * [Taze ve Dondurulmuş Embriyo Transferi: Temel Farklar Nelerdir?](#taze-ve-dondurulmuş-embriyo-transferi-temel-farklar-nelerdir)
-> * [Dondurulmuş Embriyo Transferi (FET) Neden Öne Çıkıyor? Avantajları](#dondurulmuş-embriyo-transferi-fet-neden-öne-çıkıyor-avantajları)
-> * [Madalyonun Öteki Yüzü: Göz Önünde Bulundurulması Gerekenler](#madalyonun-öteki-yüzü-göz-önünde-bulundurulması-gerekenler)
-> * [Başarı Oranları Ne Diyor? Rakamlar ve Bireysel Gerçekler](#başarı-oranları-ne-diyor-rakamlar-ve-bireysel-gerçekler)
-> * [Karar Anı: Hangi Yöntem Sizin İçin Daha Uygun?](#karar-anı-hangi-yöntem-sizin-için-daha-uygun)
-> * [Sıkça Sorulan Sorular (SSS)](#sıkça-sorulan-sorular-sss)
-> * [Sonuç ve Kişisel Tavsiyem](#sonuç-ve-kişisel-tavsiyem)
+<div data-reveal>
+<MedicalInfoBox title="Hızlı Bakış: Freeze-All Herkese Değil, Doğru Hastaya" icon="FET" color="blue">
+Cochrane 2021 derlemesi, freeze-all ve konvansiyonel stratejiler arasında kümülatif canlı doğum açısından belirgin bir üstünlük göstermemiştir; ancak OHSS riski olan hastalarda freeze-all stratejisi riski azaltabilir. Aynı derleme, freeze-all sonrası gebelikte hipertansif bozukluklar ve iri bebek riskinin artabileceğini de not eder. <InlineEvidence grade="A" />
+</MedicalInfoBox>
+</div>
 
-İstanbul'daki kliniğimizde uzun yıllardır birçok çiftin anne-baba olma hayallerine ortak oldum. Bu süreçte en çok merak edilen ve biraz da stres yaratan konulardan birinin embriyo transferi olduğuna şahit oldum. Laboratuvarda özenle büyüttüğümüz o küçücük hücrenin anne rahmine yerleşeceği o özel an... İşte burada iki farklı yöntem devreye giriyor: Taze embriyo transferi mi, yoksa dondurulmuş embriyo transferi mi? Bu sorunun net bir cevabı yok. En uygun yöntem, sizin sağlık durumunuza, vücudunuzun tedaviye nasıl cevap verdiğine ve beklentilerinize göre değişen, tamamen size özel bir seçimdir.
+> Bu rehber, [IVF tedavi yol haritası](/ivf-rehberi/) ve [transfer süreci](/transfer-sureci/) sayfalarını tamamlar. PCOS veya yüksek yanıt varsa [PCOS rehberi](/makaleler/adet-duzensizligi-pcos/), tüpte sıvı birikimi varsa [hidrosalpinx](/makaleler/hidrosalpinx-ve-kisirlik/), çikolata kisti varsa [endometrioma](/makaleler/endometrioma/) sayfası kararın diğer tarafını açıklar.
 
-Bu yazıda, bir doktor olarak tecrübelerimi ve en yeni bilimsel bilgileri bir araya getirerek bu iki yöntemi tüm detaylarıyla açıklayacağım. Hedefim, kafanızdaki soru işaretlerini gidermek ve bu önemli kararı doktorunuzla beraber en iyi şekilde vermenize destek olmak.
+## İçindekiler
 
-[![Tüp Bebekte Kritik Karar: Taze mi, Dondurulmuş Embriyo Transferi mi?](https://img.youtube.com/vi/a1yCSFO24Gs/0.jpg)](https://youtu.be/a1yCSFO24Gs)
+- [Taze ve dondurulmuş transfer farkı](#fark)
+- [Dondurulmuş transfer ne zaman öne çıkar?](#fet-ne-zaman)
+- [Taze transfer ne zaman mantıklıdır?](#taze-ne-zaman)
+- [Karar tablosu](#karar)
+- [FET protokolleri: doğal mı programlanmış mı?](#fet-protokolleri)
+- [Riskler ve yanlış anlaşılmalar](#riskler)
+- [Türkçe kontrol notu](#turkce)
+- [Sık sorulan sorular](#faq)
 
-## Taze ve Dondurulmuş Embriyo Transferi: Temel Farklar Nelerdir?
+<h2 id="fark">Taze ve Dondurulmuş Transfer Farkı</h2>
 
-Bu iki yöntemin isimlerini duyunca gözünüz korkabilir, biliyorum. Ama aslında transfer işlemi, yani embriyonun rahme yerleştirilmesi, her iki yöntemde de aynı şekilde yapılıyor. Ultrasonda görerek, ince bir tüp yardımıyla embriyoyu dikkatlice rahminize bırakıyoruz. Farklı olan tek şey, bu işlemin ne zaman yapıldığı ve o sırada vücudunuzdaki hormonların durumu.
+Taze embriyo transferinde embriyo, yumurta toplama yapılan IVF siklusunda, genellikle 3. veya 5. günde rahme yerleştirilir. Yani yumurtalık uyarımı, yumurta toplama ve transfer aynı tedavi akışı içinde tamamlanır.
 
-### Taze Transfer: "Sıcağı Sıcağına" Yolculuk
+Dondurulmuş embriyo transferinde ise embriyolar vitrifikasyon yöntemiyle dondurulur; transfer daha sonraki bir siklusta yapılır. Bu yaklaşım, yumurtalıkların uyarıldığı yoğun hormon döneminden çıkmayı ve rahim hazırlığını ayrı planlamayı sağlar.
 
-Taze transfer, isminden de anlaşılacağı gibi, embriyonun oluşturulduğu tüp bebek döngüsü içinde, "sıcağı sıcağına" yapılan transferdir. Yumurtalarınız toplandıktan sonra laboratuvarda sperm ile döllenir ve gelişen embriyo, [genellikle 3. veya 5. günde](/makaleler/embriyo-transferi-gun-secimi/) rahminize transfer edilir. Bu süreçte vücudunuz, yumurtalıkları uyarmak için kullanılan yüksek doz hormon ilaçlarının etkisi altındadır. Yani transfer, fizyolojik olarak normalden çok daha yüksek hormon seviyelerinin olduğu bir dönemde gerçekleşir.
+Transfer işleminin kendisi benzerdir: embriyo ince bir kateterle rahim içine bırakılır. Asıl fark, rahmin hangi hormonal ortamda hazırlandığı ve transferin hangi tıbbi gerekçeyle zamanlandığıdır.
 
-### Dondurulmuş Transfer (FET): "Zamanlanmış ve Planlı" Bir Başlangıç
+<h2 id="fet-ne-zaman">Dondurulmuş Transfer Ne Zaman Öne Çıkar?</h2>
 
-Dondurulmuş embriyo transferinde (FET) ise işler biraz farklı yürüyor. Yumurta toplandıktan ve döllendikten sonra elde edilen iyi embriyoları hemen transfer etmek yerine donduruyoruz. Böylece vücudunuz toparlanma fırsatı buluyor. Yumurta geliştirici ilaçların etkisi geçiyor ve hormonlarınız normale dönüyor.
+Dondurulmuş transferin tercih edilebileceği durumlar şunlardır:
 
-Birkaç ay sonra, rahminizi embriyo tutunması için en uygun hale getirmek için daha hafif ilaçlar kullanıyoruz. Rahim duvarı (endometrium) doğru kalınlığa ve yapıya ulaştığında, dondurulmuş embriyoyu çözüp transfer ediyoruz.
+- **OHSS riski:** PCOS, çok sayıda folikül, yüksek estradiol veya yüksek yumurta sayısı beklenen hastalarda taze transfer gebelikle birlikte OHSS tablosunu ağırlaştırabilir. ASRM, OHSS riski olan hastalarda freeze-only ve sonraki dondurulmuş transfer yaklaşımının düşünülmesini güçlü biçimde destekler. <InlineEvidence grade="A" />
+- **PGT planı:** Embriyodan biyopsi alınıp genetik test sonucu beklenecekse transfer genellikle sonraki siklusa bırakılır. Bu başlık için [genetik testler](/genetik-testler/) ve [PGT-M](/makaleler/pgt-m/) rehberleri tamamlayıcıdır.
+- **Progesteron erken yükselmişse:** Yumurta toplama öncesi progesteronun erken yükselmesi rahim-embriyo zamanlamasını bozabilir; bu durumda transferi ertelemek mantıklı olabilir.
+- **Rahim içi hazırlık gerekiyorsa:** Polip, miyom, ince endometrium, adenomyozis şüphesi, hidrosalpinx veya enfeksiyon gibi başlıklar transferden önce ele alınabilir.
+- **Embriyo/gebelik planını aşamalara bölmek isteniyorsa:** Yumurta toplama ve transferi ayrı süreçler halinde planlamak bazı hastalarda tıbbi ve psikolojik yükü azaltabilir.
 
-Bu yöntemin günümüzde bu kadar başarılı ve popüler olmasının ardında yatan teknolojik devrim ise [**vitrifikasyon**](/makaleler/taze-dondurulmus-transfer/)'dur. Bu "şok dondurma" tekniği, embriyonun hücrelerinde hasara yol açabilecek buz kristallerinin oluşumunu engelleyerek, embriyoların -196 derecede, sıvı azot içinde yıllarca güvenle saklanmasını sağlar. <InlineEvidence grade="B" /> Bu teknoloji sayesinde, çözülen embriyoların hayatta kalma oranı neredeyse %100'e ulaşmıştır. <InlineEvidence grade="B" />
+<h2 id="taze-ne-zaman">Taze Transfer Ne Zaman Mantıklıdır?</h2>
 
-## Dondurulmuş Embriyo Transferi (FET) Neden Öne Çıkıyor? Avantajları
+Taze transfer hâlâ geçerli bir seçenektir. Aşağıdaki koşullar uygunsa taze transfer değerlendirilebilir:
 
-Son zamanlarda, tüm dünyada dondurulmuş embriyo transferi giderek daha popüler hale geliyor. Bu durumun bir sebebi var. Dondurulmuş embriyo transferi, hem anne adayları hem de bebekler için büyük faydalar sağlıyor ve tüp bebek tedavisinde bakış açımızı değiştiriyor. Artık sadece hızlıca hamile kalmaya odaklanmıyoruz, en güvenli ve sağlıklı hamileliği hedefliyoruz.
+- OHSS riski düşükse
+- Endometrium kalınlığı ve görünümü uygunsa
+- Progesteron erken yükselmemişse
+- PGT planlanmıyorsa
+- Hidrosalpinx, polip veya transfer öncesi düzeltilmesi gereken rahim içi sorun yoksa
+- Klinik ve laboratuvar koşulları transfer için uygunsa
 
-### Rahim İçin Bir Mola: Endometrial Optimizasyon
+Kısacası taze transfer “eski yöntem”, dondurulmuş transfer de “her zaman daha iyi yöntem” değildir. İkisi de doğru hastada güçlü seçeneklerdir; amaç, embriyoyu en uygun rahim ortamıyla buluşturmaktır.
 
-Taze transferlerdeki yüksek hormon seviyeleri bazen rahmin embriyoyu kabul etme olasılığını düşürebilir. Yani, embriyo ne kadar iyi olursa olsun, rahim hazır değilse gebelik olmaz. Dondurulmuş transfer bu sorunu çözebilir. Vücut dinlendikten sonra, rahim duvarını embriyonun gelişimine uygun hale getiriyoruz. Bu daha doğal ortam, embriyonun tutunma şansını artırır.
+<h2 id="karar">Karar Tablosu</h2>
 
-### OHSS Riskine Karşı Güçlü Kalkan
+<div class="overflow-x-auto my-8">
 
-[Yumurtalıkların Aşırı Uyarılması Sendromu](/makaleler/ivf-protokolleri/), tüp bebek tedavisinin en ciddi komplikasyonlarından biridir. <InlineEvidence grade="B" /> Özellikle Polikistik Over Sendromu (PCOS) olan veya tedaviye çok sayıda yumurta ile yanıt veren kadınlarda risk artar. <InlineEvidence grade="B" /> Taze transfer yapıldığında, gebeliğin başlamasıyla salgılanan hormonlar mevcut OHSS tablosunu çok daha ağırlaştırabilir. <InlineEvidence grade="B" /> "Tümünü dondurma" (freeze-all) stratejisi ise bu riski neredeyse tamamen ortadan kaldırır. <InlineEvidence grade="B" /> Embriyoları dondurarak transferi ertelediğimizde, vücudun sakinleşmesini bekler ve anne adayının sağlığını ilk sıraya koymuş oluruz. Bu yaklaşım, Amerikan Üreme Tıbbı Derneği (ASRM) gibi önde gelen kuruluşlar tarafından yüksek riskli hastalarda özellikle tavsiye edilmektedir. <InlineEvidence grade="B" />
-
-### Genetik Sağlık ve Planlama Esnekliği (PGT)
-
-Eğer embriyolarınıza [genetik bir tarama](/tup-bebek-tedavisinde-preimplantasyon-genetik-tani/) yapılması planlanıyorsa, dondurulmuş transfer tek seçenektir. Embriyodan biyopsi ile alınan hücrelerin genetik analizi birkaç hafta sürebilir. Bu süre zarfında embriyonun güvenle beklemesi için dondurulması zorunludur. Bu sayede sadece genetik olarak sağlıklı olan embriyonun transferini planlayarak gebelik şansını artırabilir ve genetik hastalıkların bebeğe geçişini önleyebiliriz.
-
-### Gelecek İçin Bir Şans
-
-Tüp bebek tedavisinde genellikle transfer edilenden daha fazla sayıda kaliteli embriyo elde ederiz. [Kalan bu embriyoları dondurmak](/embriyo-dondurma/), size gelecek için paha biçilmez bir hediye sunar. İlk deneme başarısız olursa veya ileride ikinci bir çocuk istediğinizde, vücudunuzu yoran ve maliyetli olan yumurta toplama sürecini tekrar yaşamadan, sadece rahim hazırlığı ile yeni bir gebelik şansı elde edebilirsiniz.
-
-## Madalyonun Öteki Yüzü: Göz Önünde Bulundurulması Gerekenler
-
-Dondurulmuş embriyo transferinin bir sürü faydası var ama her tıbbi işlemde olduğu gibi dikkat etmemiz gereken şeyler de var. Açık olmak güvenin şartı, bu yüzden bunları da konuşmalıyız.
-
-### İşlemler ve Beklenti
-
-FET'in en büyük eksiği, hamile kalma sürecini uzatması. Taze transfere göre en az bir iki ay daha beklemeniz gerekiyor. Bu bekleme süresi, hemen sonuç almak isteyenler için moral bozucu olabilir. Üstelik dondurma, saklama ve çözme işlemleri için biraz daha para harcamak gerekebilir.
-
-### Bilimsel Veriler Işığında Olası Gebelik Riskleri
-
-Bu konu, bilim dünyasında halen aktif olarak araştırılan ve üzerinde tam bir fikir birliğine varılmamış, hassas bir noktadır. Bazı geniş kapsamlı çalışmalar ve meta-analizler, dondurulmuş embriyo transferi sonrası oluşan gebeliklerde, taze transfere ve doğal yolla oluşan gebeliklere kıyasla gebelik tansiyonu (preeklampsi) gibi hipertansif bozuklukların riskinde hafif bir artış olabileceğini göstermektedir([https://doi.org/10.1093/humupd/dmy033](https://doi.org/10.1093/humupd/dmy033)). Yine bazı veriler, bu bebeklerin gebelik haftasına göre daha iri (LGA - Large for Gestational Age) doğma eğiliminde olabileceğine işaret etmektedir.
-
-Öte yandan, aynı bilimsel çalışmalar dondurulmuş transfer sonrası doğan bebeklerde erken doğum ve düşük doğum ağırlığı riskinin taze transfere göre **daha düşük** olduğunu da doğrulamaktadır. <InlineEvidence grade="B" /> Bu karmaşık tablo, her kararın kişiye özel risk ve fayda analizleri ile verilmesi gerektiğini göstermektedir. <InlineEvidence grade="B" /> Bu veriler, FET'in tehlikeli olduğu anlamına gelmez; sadece her hastanın profilini dikkatle değerlendirerek en uygun protokolü seçmemiz gerektiğini hatırlatır.
-
-### Embriyo Hayatta Kalma Riski
-
-Günümüzdeki vitrifikasyon yöntemleri sayesinde embriyolar çözüldükten sonra neredeyse %100 canlı kalıyor. Ama çok nadir de olsa, bir embriyonun bu işi başaramama ihtimali var. Bu ufak olasılık bile, o embriyoya bütün umudunu bağlayan çiftler için can sıkıcı olabiliyor.
-
-## Başarı Oranları Ne Diyor? Rakamlar ve Bireysel Gerçekler
-
-"Hocam, peki hangisi daha başarılı?" Bu, bana en sık sorulan sorudur. Cevabı, "kimin için?" sorusunda gizlidir.
-
-Genel olarak, vücudu tedaviye normal yanıt veren (normo-responder) kadınlarda, iyi laboratuvar koşullarında yapılan taze ve dondurulmuş embriyo transferlerinin canlı doğum oranları arasında anlamlı bir fark yoktur; sonuçlar oldukça benzerdir([https://doi.org/10.1093/humupd/dmy033](https://doi.org/10.1093/humupd/dmy033)). <InlineEvidence grade="B" /> Hatta bazı çalışmalar, dondurulmuş transferin %3-5 gibi küçük bir avantaj sağlayabildiğini öne sürmektedir. <InlineEvidence grade="C" />
-
-Asıl fark, belirli hasta gruplarında ortaya çıkar. Dondurulmuş transferin başarı oranlarını belirgin şekilde artırdığı durumlar şunlardır:
-
-* **Yüksek Yumurtalık Yanıtı Olanlar (Hiper-responderler):** Tedavi sırasında çok sayıda yumurta üreten (genellikle PCOS hastaları gibi) kadınlarda, "tümünü dondurma" stratejisi canlı doğum oranlarını taze transfere göre anlamlı derecede yükseltir([https://doi.org/10.1093/humupd/dmy033](https://doi.org/10.1093/humupd/dmy033)). Bunun nedeni basittir: Yüksek hormon seviyelerinin bozduğu bir rahim ortamına transfer yapmak yerine, embriyolara dinlenmiş ve ideal hale getirilmiş bir rahimde tutunma şansı verilir.
-* **Endometriozis Hastaları:** Yapılan bir meta-analiz, endometriozis tanısı olan kadınlarda dondurulmuş embriyo transferinin daha olumlu gebelik sonuçları verdiğini göstermiştir.
-
-Şunu unutmayalım ki, başarıyı asıl etkileyen şeyler **kadının yaşı, elde edilen embriyonun ne kadar iyi olduğu ve tedavi yapan kliniğin ve laboratuvarın ne kadar deneyimli olduğudur.** Taze mi yoksa dondurulmuş transfer mi yapacağımız, bu önemli etkenlere göre vereceğimiz bir karar.
-
-## Karar Anı: Hangi Yöntem Sizin İçin Daha Uygun?
-
-Tüm bu bilgileri bir araya getirdiğimizde, kararınızı kolaylaştıracak bir rehber oluşturabiliriz. Bu tablo, doktorunuzla yapacağınız görüşme için bir başlangıç noktası olabilir.
-
-| Durum / Kriter | Taze Embriyo Transferi (Genellikle Değerlendirilebilir) | Dondurulmuş Embriyo Transferi (Genellikle Önerilir) |
-| :--- | :--- | :--- |
-| **Yumurtalık Cevabı** | Normal sayıda yumurta gelişimi (Normo-responder) | Çok sayıda yumurta gelişimi (Hiper-responder), OHSS riski varlığı |
-| **Progesteron Seviyesi** | Yumurta toplama günü hormon seviyeleri normal aralıkta | Yumurta toplama günü progesteron seviyesinde erken yükselme |
-| **Rahim Duvarı (Endometrium)** | Kalınlığı ve yapısı transfer için ideal | Yetersiz rahim duvarı kalınlığı, polip veya miyom gibi ek sorunlar |
-| **Genetik Tarama (PGT)** | Planlanmıyor | PGT yapılması planlanıyor (zorunlu) |
-| **Zamanlama ve Psikoloji** | Tıbbi bir engel yoksa ve hızlı sonuç isteniyorsa | Tedaviyi aşamalara bölmek, stresi azaltmak ve rahmi dinlendirmek öncelikliyse |
-| **Önceki Deneyimler** | - | Önceki taze transfer denemelerinde rahim kaynaklı bir sorun şüphesi varsa |
-
-## FET Protokolleri: Doğal Siklus mu, Yapay Siklus mu?
-
-Dondurulmuş embriyo transferine karar verildiğinde, bir sonraki adım rahmi hazırlamak için hangi protokolün kullanılacağıdır. FET başarısında en kritik aşama, rahmin embriyoyu kabul edeceği "implantasyon penceresini" doğru yakalamaktır. Günümüzde iki temel yaklaşım kullanılmaktadır:
-
-### 1. Doğal Siklus FET (Natural Cycle)
-
-Vücudun kendi hormonal dengesi kullanılarak yapılır. Ultrason ve kan testleriyle yumurtlama takibi yapılır ve yumurtlamadan belirli bir süre sonra transfer gerçekleştirilir.
-
-* **Avantajları:** Daha az ilaç kullanımı, daha düşük maliyet, daha fizyolojik bir süreç.
-* **Dezavantajları:** Yakın takip gerektirir, düzensiz adet döngüsü olan hastalarda uygulanamayabilir, yumurtlama olmazsa döngü iptal edilebilir.
-
-### 2. İlaçlı (Yapay/Programlanmış) Siklus FET (HRT Cycle)
-
-Östrojen ve progesteron hormonları dışarıdan verilerek rahim hazırlanır. Yumurtlama beklenmez; hormon takviyeleriyle endometrium istenilen kalınlığa getirilir.
-
-* **Avantajları:** Transfer günü önceden planlanabilir, düzensiz adet döngüsü olan hastalarda idealdir, randevu planlaması daha kolaydır.
-* **Dezavantajları:** Daha fazla ilaç kullanımı, uzun süreli hormon desteği gerektirir.
-
-### Hangisi Daha Başarılı?
-
-Bilimsel çalışmalar, her iki yöntemin de **gebelik oranları açısından benzer** sonuçlar verdiğini göstermektedir. Seçim, hastanın adet düzenine, yaşam tarzına ve klinik durumuna göre kişiselleştirilmelidir. Düzenli adet gören kadınlarda doğal siklus tercih edilebilirken, düzensiz adet döngüsü olan hastalarda yapay siklus daha güvenilir bir seçenektir.
-
-## Sıkça Sorulan Sorular (SSS)
-
-**Dondurulmuş embriyoların sağlığı taze embriyolarla aynı mıdır?**
-
-Evet. Çok sayıda kapsamlı bilimsel çalışma, modern vitrifikasyon tekniği ile dondurulup çözülen embriyolardan doğan bebeklerin sağlık açısından taze transferden doğan bebeklerden farksız olduğunu göstermektedir. Doğum kusurları veya genetik anomali riskinde herhangi bir artış saptanmamıştır.
-
-**Embriyo dondurma işlemi embriyoya zarar verir mi?**
-
-Günümüzde kullanılan hızlı dondurma yöntemi sayesinde bu risk neredeyse sıfıra iniyor. Bu yöntemle embriyolar çözüldükten sonra %95 ile %100 oranında canlı kalıyor. Biz de laboratuvarlarımızda sadece en iyi ve güçlü embriyoları donduruyoruz. Böylece bu işlem, aynı zamanda doğal bir embriyo seçimi gibi de oluyor.
-
-**Transfer sonrası "tutunma belirtileri" yaşamazsam bu başarısızlık anlamına mı gelir?**
-
-Kesinlikle hayır. Kasık ağrısı, lekelenme veya yorgunluk gibi şeyler çoğunlukla hamileliğe destek için aldığınız progesteron hormon ilaçlarının yan etkileri. Birçok kadın hiçbir şey hissetmeden de sağlıklı bir hamilelik geçiriyor. En garanti sonuç, transferden 9-12 gün sonra yaptıracağınız kanda gebelik (beta-HCG) testidir.
-
-**Daha önce taze transferde başarısız olduysam, dondurulmuş transfer şansımı artırır mı?**
-
-Evet, arttırabilir. Eğer sorun embriyo kalitesinden değil de, rahim yüzeyinin o anki durumundan kaynaklanıyorsa, dondurulmuş embriyo transferi (FET) ile rahmi doğru zamanda ve hormon seviyelerinde hazırlamak hamile kalma ihtimalini bayağı yükseltebilir.
-
-### Sonuç ve Kişisel Tavsiyem
-
-Tüp bebek süreci; bilim, umut ve sabrın bir araya geldiği özel bir deneyimdir. Taze mi, yoksa dondurulmuş embriyo transferi mi? sorusunun cevabı, bu süreçte size özel bir yol haritası çiziyor. Günümüz tıbbı, eskisinden çok daha güvenli ve işe yarar alternatifler sunuyor. Dondurulmuş embriyo transferi, özellikle anne adayının sağlığını gözetmek ve rahmi en iyi duruma getirmek için iyi bir seçenek. Ama bu, taze transferin kötü olduğu anlamına gelmiyor. Eğer şartlar uygunsa, taze transfer, sonuca daha çabuk ulaşmayı sağlayabilir.
-
-Bu süreçte en büyük yardımcınız bilgi ve doktorunuza olan güveniniz. Tüm seçenekleri net bir şekilde görüşün, aklınıza takılanları sorun ve sizin için en uygun yolu beraber belirleyin. Unutmayın, amacımız sadece bir gebelik testi sonucu değil, sağlıklı bir bebeği kucağınıza almak. Bu amaca ulaşmanın en emniyetli yolu, her zaman sizin için en uygun olanıdır.
-
------
-
-**Yasal Uyarı:** Bu makalede yer alan bilgiler, genel bilgilendirme amaçlıdır ve kişisel tıbbi tavsiye yerine geçmez. Sağlık durumunuzla ilgili her türlü soru ve endişeniz için lütfen doktorunuza danışınız.
-
-**Son Güncelleme Tarihi:** 26 Ekim 2025
-
-Bu makale Dr.Senai AKSOY tarafından yazılmış ve tıbbi olarak onaylanmıştır.
-
+| Klinik Durum | Genellikle Daha Mantıklı Yaklaşım | Neden? |
+| --- | --- | --- |
+| **Normal yanıt, uygun endometrium, düşük OHSS riski** | Taze veya dondurulmuş transfer birlikte tartışılır | Kümülatif canlı doğum benzer olabilir |
+| **PCOS veya yüksek yumurtalık yanıtı** | Freeze-all ve sonraki FET | OHSS riskini azaltabilir |
+| **PGT-A/PGT-M planı** | Dondurulmuş transfer | Genetik sonuç beklenir |
+| **Progesteron erken yükselmiş** | Dondurulmuş transfer | Rahim-embriyo zamanlaması korunur |
+| **Hidrosalpinx var** | Önce tüp faktörünü ele alma, sonra transfer | Tüp sıvısı tutunmayı bozabilir |
+| **Endometrioma veya endometriozis var** | Kişisel karar | Her hastada otomatik FET üstün değildir |
+| **Düşük embriyo sayısı ve uygun rahim koşulu** | Taze transfer düşünülebilir | Zaman kaybı ve ek işlem azaltılabilir |
+
+</div>
+
+Endometrioma, düşük AMH veya hidrosalpinx eşlik ediyorsa transfer kararı tek başına verilmez. [Düşük AMH](/makaleler/dusuk-amh-hamilelik/), [endometrioma](/makaleler/endometrioma/) ve [hidrosalpinx](/makaleler/hidrosalpinx-ve-kisirlik/) sayfaları bu nedenle aynı karar ağacının parçalarıdır.
+
+<h2 id="fet-protokolleri">FET Protokolleri: Doğal mı Programlanmış mı?</h2>
+
+Dondurulmuş transfer kararı verildiğinde ikinci soru, rahmin nasıl hazırlanacağıdır.
+
+### Doğal veya Modifiye Doğal FET
+
+Bu yöntemde hastanın kendi yumurtlaması takip edilir. Yumurtlama olduktan sonra embriyo yaşıyla uyumlu gün hesaplanır ve transfer yapılır. Gerekirse çatlatma iğnesi ve progesteron desteği eklenebilir.
+
+Düzenli adet gören ve yumurtlayan hastalarda daha fizyolojik bir seçenek olabilir. 2026 BMJ randomize çalışmasında, ovulatuar kadınlarda doğal ovulasyon rejimi programlanmış rejime benzer sağlıklı canlı doğum oranı sağlamış; maternal komplikasyonlar açısından daha düşük riskle ilişkilendirilmiştir. <InlineEvidence grade="A" />
+
+### Programlanmış FET
+
+Programlanmış siklusta yumurtlama beklenmez; östrojen ve progesteron dışarıdan verilerek transfer günü planlanır. Düzensiz adet gören, yumurtlaması öngörülemeyen veya takvim planlaması gereken hastalarda pratik olabilir.
+
+Ancak programlanmış FET sikluslarında korpus luteum oluşmadığı için hipertansif gebelik bozuklukları açısından daha dikkatli olunması gerekebilir. 2022 meta-analizi, programlanmış sikluslarda doğal siklusa göre bazı obstetrik risklerin daha yüksek olabileceğini bildirmiştir. <InlineEvidence grade="B" />
+
+<h2 id="riskler">Riskler ve Yanlış Anlaşılmalar</h2>
+
+<div class="grid md:grid-cols-2 gap-6 my-8">
+  <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+    <h3 class="text-lg font-bold text-slate-900 mb-3">Dondurulmuş Transferde Dikkat</h3>
+    <ul>
+      <li>Transfer zamanı ertelenir; bekleme süresi duygusal olarak zorlayabilir.</li>
+      <li>Dondurma, saklama ve çözme ek maliyet oluşturabilir.</li>
+      <li>Freeze-all stratejisinde hipertansif bozukluklar ve iri bebek riski bazı çalışmalarda daha yüksek bildirilmiştir.</li>
+      <li>Çok nadiren embriyo çözme sonrası beklenen kalitede olmayabilir.</li>
+    </ul>
+  </div>
+  <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+    <h3 class="text-lg font-bold text-slate-900 mb-3">Taze Transferde Dikkat</h3>
+    <ul>
+      <li>Yumurtalık uyarımı sonrası yüksek hormon ortamında transfer yapılır.</li>
+      <li>OHSS riski olan hastalarda gebelik tabloyu ağırlaştırabilir.</li>
+      <li>Progesteron erken yükselmişse rahim hazırlığı embriyo ile uyumsuz olabilir.</li>
+      <li>PGT sonucu beklenecekse taze transfer uygun olmayabilir.</li>
+    </ul>
+  </div>
+</div>
+
+Transferden sonra gebelik takibi için [beta-hCG testi](/makaleler/beta-hcg-testi/) rehberine bakabilirsiniz. Beta-hCG sonucu; transfer günü, embriyo yaşı ve transfer tipiyle birlikte yorumlanmalıdır.
+
+<h2 id="turkce">Türkçe Kontrol Notu</h2>
+
+Bu sayfada tek taraflı üstünlük dili yerine hasta profiline göre karar anlatımı kullandık. “Freeze-all” terimini yalnızca klinik kullanım nedeniyle verdik; ana anlatımda “tüm embriyoları dondurma” ifadesini kullandık. “FET” kısaltmasını ilk kullanımda dondurulmuş embriyo transferi olarak açıkladık.
+
+<div data-reveal>
+<h2 id="faq">Sıkça Sorulan Sorular</h2>
+
+<Accordion title="Dondurulmuş embriyo transferi tazeden daha mı başarılıdır?">
+Herkes için değil. Normal yanıt veren hastalarda kümülatif canlı doğum sonuçları genellikle benzerdir. Dondurulmuş transfer; OHSS riski, PGT planı, progesteron yüksekliği veya rahim hazırlığı gereken durumlarda öne çıkar.
+</Accordion>
+
+<Accordion title="Freeze-all ne demektir?">
+Yumurta toplama sonrası elde edilen uygun embriyoların transfer edilmeden dondurulması ve transferin sonraki siklusa bırakılmasıdır. Özellikle OHSS riski olan hastalarda güvenlik için tercih edilebilir.
+</Accordion>
+
+<Accordion title="PGT yapılacaksa neden dondurulmuş transfer gerekir?">
+Embriyo biyopsisi sonrası genetik sonuçların çıkması zaman alır. Bu süre içinde embriyolar güvenle saklanabilsin diye genellikle dondurulur ve sonuçlara göre sonraki siklusta transfer planlanır.
+</Accordion>
+
+<Accordion title="Doğal FET ile programlanmış FET arasında başarı farkı var mı?">
+Düzenli yumurtlayan kadınlarda doğal veya modifiye doğal FET, programlanmış FET'e benzer canlı doğum sonuçları verebilir. Son yıllardaki veriler, doğal ovulasyon içeren siklusların bazı gebelik komplikasyonları açısından avantajlı olabileceğini düşündürmektedir.
+</Accordion>
+
+<Accordion title="Dondurulmuş transfer için kaç ay beklenir?">
+Çoğu hastada transfer bir sonraki uygun siklusta planlanabilir; ancak OHSS, rahim içi işlem, hidrosalpinx tedavisi, PGT sonucu veya tıbbi hazırlık gerekiyorsa süre kişiye göre değişir.
+</Accordion>
+</div>
+
+<div data-reveal class="mt-12 bg-slate-50 p-8 rounded-3xl border border-slate-200">
+**Sizin İçin Seçtiğimiz Diğer Rehberler:**
+- [IVF rehberi: tüp bebek tedavi yol haritası](/ivf-rehberi/)
+- [Transfer süreci](/transfer-sureci/)
+- [PCOS ve adet düzensizliği](/makaleler/adet-duzensizligi-pcos/)
+- [Hidrosalpinx ve IVF öncesi tedavi](/makaleler/hidrosalpinx-ve-kisirlik/)
+- [Endometrioma: ameliyat, AMH ve IVF kararı](/makaleler/endometrioma/)
+- [Beta-hCG testi ve transfer sonrası takip](/makaleler/beta-hcg-testi/)
+</div>
+
+</div>
+
+export const freshFrozenTransferFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "Dondurulmuş embriyo transferi tazeden daha mı başarılıdır?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Herkes için değil. Normal yanıt veren hastalarda taze ve dondurulmuş transferin kümülatif canlı doğum sonuçları genellikle benzerdir. OHSS riski, PGT planı, progesteron yüksekliği veya rahim hazırlığı gereken durumlarda dondurulmuş transfer öne çıkabilir."
+    }
+  }, {
+    "@type": "Question",
+    "name": "Freeze-all ne demektir?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Freeze-all, yumurta toplama sonrası uygun embriyoların transfer edilmeden dondurulması ve transferin sonraki siklusa bırakılmasıdır. Özellikle OHSS riski olan hastalarda güvenlik amacıyla kullanılabilir."
+    }
+  }, {
+    "@type": "Question",
+    "name": "PGT yapılacaksa neden dondurulmuş transfer gerekir?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Embriyo biyopsisi sonrası genetik test sonucunun çıkması zaman alır. Bu süreçte embriyolar dondurulur ve sonuçlara göre sonraki uygun siklusta transfer planlanır."
+    }
+  }, {
+    "@type": "Question",
+    "name": "Doğal FET ile programlanmış FET arasında başarı farkı var mı?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Düzenli yumurtlayan kadınlarda doğal veya modifiye doğal FET, programlanmış FET'e benzer canlı doğum sonuçları verebilir. Protokol seçimi adet düzeni, tıbbi geçmiş ve klinik planlamaya göre yapılır."
+    }
+  }]
+};
+
+<script type="application/ld+json" set:html={JSON.stringify(freshFrozenTransferFaqSchema)} />
