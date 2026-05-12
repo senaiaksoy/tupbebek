@@ -1,6 +1,6 @@
 ---
-title: "Kimyasal Gebeliklerin Gölgedeki Yüzü. Anlam, İyileşme ve Umut Peşinde"
-description: "Kimyasal gebelik, adından da anlaşılacağı gibi, kimyasalların sebep olduğu bir gebelik kaybını ifade etmez; erken dönemde, henüz ultrasonda görüntülenemeyecek kadar küçükken sonlanan gebelikleri tanımlar."
+title: "Kimyasal Gebelik Nedir? Belirtiler, hCG Takibi ve Sonraki Adım"
+description: "Kimyasal gebelik çok erken gebelik kaybıdır. Pozitif test sonrası hCG düşüşü, kanama, ne zaman doktora başvurmalı ve tekrar denemeye ne zaman başlanabilir?"
 publishDate: 2024-04-14
 author: "Doç. Dr. Senai Aksoy"
 authorTitle: "Kadın Hastalıkları ve Doğum Uzmanı"
@@ -8,25 +8,30 @@ authorCredentials: "Üreme Tıbbı ve Yardımcı Üreme Teknikleri"
 authorYoutube: "https://www.youtube.com/@DocentDrSenaiAksoy"
 medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Tıbbi Danışma Kurulu"
-reviewDate: 2026-04-09
-lastModified: 2026-05-11
+reviewDate: 2026-05-12
+lastModified: 2026-05-12
 category: "Gebelik"
 recommendationGrade: B
 image: /images/library/embriyo/kimyasal-gebelik.webp
-imageAlt: "kimyasal gebelik erken gebelik kaybı ve embriyo tutunma süreci"
+imageAlt: "kimyasal gebelikte erken gebelik kaybı, hCG takibi ve embriyo tutunma süreci"
 references:
-  - title: "Conception to ongoing pregnancy: the 'black box' of early pregnancy loss"
-    authors: "Macklon NS, Geraedts JP, Fauser BC"
-    journal: "Human Reproduction Update"
-    year: 2002
-    doi: "10.1093/humupd/8.4.333"
-    pmid: "12206468"
+  - title: "Recurrent pregnancy loss: a committee opinion"
+    authors: "Practice Committee of the American Society for Reproductive Medicine"
+    journal: "Fertility and Sterility"
+    year: 2026
+    url: "https://www.asrm.org/practice-guidance/practice-committee-documents/recurrent-pregnancy-loss-a-committee-opinion-2026/"
   - title: "Incidence of early loss of pregnancy"
     authors: "Wilcox AJ, Weinberg CR, O'Connor JF et al."
     journal: "New England Journal of Medicine"
     year: 1988
     doi: "10.1056/NEJM198807283190401"
     pmid: "3393170"
+  - title: "Conception to ongoing pregnancy: the 'black box' of early pregnancy loss"
+    authors: "Macklon NS, Geraedts JP, Fauser BC"
+    journal: "Human Reproduction Update"
+    year: 2002
+    doi: "10.1093/humupd/8.4.333"
+    pmid: "12206468"
   - title: "Biochemical pregnancy during assisted conception: a little bit pregnant"
     authors: "Annan JJ, Gudi A, Bhide P et al."
     journal: "Journal of Clinical Medicine Research"
@@ -36,81 +41,225 @@ references:
 ---
 
 import HizliCevap from '../../components/HizliCevap.astro';
+import Accordion from "../../components/global/Accordion.astro";
+import MedicalInfoBox from '../../components/global/MedicalInfoBox.astro';
+import QuoteBlock from '../../components/global/QuoteBlock.astro';
+import RevealScript from '../../components/global/RevealScript.astro';
+import Video from '../../components/global/Video.astro';
 import InlineEvidence from '../../components/InlineEvidence.astro';
+import EvidenceGradeCard from '../../components/EvidenceGradeCard.astro';
 
-<HizliCevap question="Kimyasal Gebeliklerin Gölgedeki Yüzü. Anlam, İyileşme ve Umut Peşinde hakkında bilmeniz gerekenler nelerdir?">
-Kimyasal gebelik, adından da anlaşılacağı gibi, kimyasalların sebep olduğu bir gebelik kaybını ifade etmez; erken dönemde, henüz ultrasonda görüntülenemeyecek kadar küçükken sonlanan gebelikleri tanımlar.
+<HizliCevap question="Kimyasal gebelik nedir?">
+Kimyasal gebelik, gebelik testinin hCG nedeniyle pozitifleştiği; ancak gebelik kesesi ultrasonda görülemeden çok erken dönemde sonlanan gebeliktir. Çoğu zaman adet gecikmesi çevresinde kanama ve hCG düşüşüyle fark edilir. Tek bir kimyasal gebelik genellikle uzun vadeli doğurganlığı bozmaz; tekrarlayan kayıplarda ise uzman değerlendirmesi gerekir.
 </HizliCevap>
 
-## Kimyasal Gebeliklerin Gölgedeki Yüzü: Anlam, İyileşme ve Umut Peşinde
+<div class="mesh-hero pt-12 pb-20 px-4 md:px-0 -mx-4 md:-mx-0 mb-12 rounded-3xl shadow-sm border border-white/40" style="background: linear-gradient(135deg, #fff7ed 0%, #ffe4e6 45%, #f8fafc 100%);">
+  <div class="max-w-4xl mx-auto" data-reveal>
+    <div class="inline-block px-4 py-1 rounded-full bg-rose-100 text-rose-700 text-sm font-bold mb-4">
+      Erken Gebelik Kaybı
+    </div>
+    <h1 class="text-4xl md:text-6xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-rose-700 to-slate-900 leading-tight">
+      {frontmatter.title}
+    </h1>
+    <p class="text-xl md:text-2xl text-slate-700 font-medium max-w-2xl leading-relaxed">
+      “Kimyasal” kelimesi bu kaybı küçültmez. Bu, ultrasonda henüz görünmeden sonlanan gerçek ve duygusal olarak etkileyebilen çok erken bir gebelik kaybıdır.
+    </p>
+  </div>
+</div>
 
-## Giriş
+<div class="max-w-4xl mx-auto space-y-12 blog-content-reveal">
 
-Pozitif bir gebelik testi gözlerinizin önünde belirdiğinde kalbinizin ritmi değişir; sevinç, heyecan ve umut bir anda yükselir. Ancak bu duygular bazen beklenmedik bir şekilde kaybolabilir. Kimyasal gebelik, adından da anlaşılacağı gibi, kimyasalların sebep olduğu bir gebelik kaybını ifade etmez; erken dönemde, henüz ultrasonda görüntülenemeyecek kadar küçükken sonlanan gebelikleri tanımlar. Bu durum, oldukça yaygın olmasına rağmen, nadiren üzerinde durulur veya tartışılır. Bu yazımızda, kimyasal gebeliklerin ne olduğunu, nedenlerini ve belirtilerini ele alacağız; aynı zamanda bu zorlu deneyimden geçenler için bir rehber niteliğinde olmayı hedefliyoruz.
+<div data-reveal>
+<MedicalInfoBox title="Hızlı Bakış: Kimyasal Gebelikte En Önemli 5 Nokta" icon="🧭" color="rose">
+**Kimyasal gebelik, pozitif test sonrası hCG'nin beklenen şekilde yükselmemesi veya düşmesiyle anlaşılır.** Çoğu kişi bunu gecikmiş ya da daha yoğun bir adet gibi yaşayabilir. Tek bir erken kayıp çoğu zaman “bir daha olmaz” anlamına gelmez; ancak iki veya daha fazla kayıp, dış gebelik şüphesi, şiddetli ağrı ya da yoğun kanama varsa doktor değerlendirmesi gerekir. <InlineEvidence grade="B" />
+</MedicalInfoBox>
+</div>
 
-[![Video Thumbnail](https://img.youtube.com/vi/fcFHl6WU2AE/0.jpg)](https://youtu.be/fcFHl6WU2AE)
+## İçindekiler
 
-## Kimyasal Gebelik Nedir?
+- [Kimyasal gebelik nedir?](#nedir)
+- [Belirtiler nelerdir?](#belirtiler)
+- [hCG takibi nasıl yorumlanır?](#hcg)
+- [Neden olur?](#nedenler)
+- [Ne zaman doktora başvurmalı?](#doktora)
+- [Tekrar denemek için ne kadar beklenir?](#sonraki-adim)
+- [Sıkça sorulan sorular](#faq)
 
-Kimyasal gebelik, döllenmiş bir yumurtanın implantasyonu sonrası hCG hormonu (insan koryonik gonadotropini) seviyelerindeki artışla gebelik testinin pozitif çıkması; ancak gebeliğin ultrason görüntüleri ile teyit edilemeden sonlanması durumudur. <InlineEvidence grade="B" /> Bu tür gebelikler genellikle çok erken safhalarda sonlandığı için, pek çok kadın bu durumu normal bir adet dönemiyle karıştırabilir.
+<div data-reveal>
+<Video id="fcFHl6WU2AE" />
+</div>
 
-## Kimyasal Gebeliklerin Nedenleri
+<div data-reveal>
+<h2 id="nedir">Kimyasal Gebelik Nedir?</h2>
 
-### Kromozomal Anormallikler: Doğanın Seçimi
+Kimyasal gebelik, gebeliğin yalnızca biyokimyasal olarak, yani kan veya idrar testindeki **hCG pozitifliği** ile saptandığı; gebelik kesesi ultrasonda görülemeden sonlandığı durumdur. Bu nedenle “biyokimyasal gebelik” adı da kullanılır.
 
-Her şeyin mükemmel bir uyum içinde ilerlemesi gereken gebelik sürecinde, kromozomal anormallikler bu dengenin bozulmasına neden olabilir. <InlineEvidence grade="B" /> Genetik hatalar, potansiyel bir gebeliği engelleyerek, doğanın belki de en acımasız yüzünü gösterir: sadece en sağlıklı bireylerin hayatta kalmasını sağlama içgüdüsü. Bu durum, her dört gebelikten birinin bu sebeple sona erdiğini öğrenmek üzere olanlar için hem üzücü hem de düşündürücüdür. <InlineEvidence grade="C" />
+Bu ifade, gebeliğin “gerçek olmadığı” anlamına gelmez. Döllenme ve erken tutunma başlamış, vücut hCG üretmiş, ancak süreç çok erken aşamada devam edememiştir. Erken gebelik kayıplarının önemli bir bölümü klinik gebelik aşamasına ulaşmadan gerçekleşebilir. <InlineEvidence grade="B" />
+</div>
 
-### Uterus Ortamı ve Embriyo Kalitesi
+<div data-reveal>
+<QuoteBlock author="tupbebek.com Tıbbi Danışma Kurulu">
+Kimyasal gebelik tıbben çok erken bir kayıptır; duygusal etkisi ise kişiden kişiye değişir. “Daha çok erkendi” demek, kaybın kişide bıraktığı duyguyu geçersiz kılmaz.
+</QuoteBlock>
+</div>
 
-Gebeliğin başarısı, sadece genetik yapıyla sınırlı değildir; uterusun iç yüzeyinin kalitesi ve hormon dengeleri gibi etkenler de büyük önem taşır. Uygun olmayan uterus koşulları veya hormonel dengesizlikler, embriyonun sağlıklı bir şekilde tutunmasını ve gelişimini engelleyebilir.
+<div data-reveal>
+<h2 id="belirtiler">Kimyasal Gebelik Belirtileri Nelerdir?</h2>
 
-## Kimyasal Gebelik Belirtileri
+Belirtiler bazen çok hafiftir. En sık görülen tablo, pozitif gebelik testinden birkaç gün sonra kanama başlamasıdır.
 
-Kimyasal gebelik belirtileri genellikle çok hafif geçer ve çoğu zaman göz ardı edilir:
+| Belirti | Ne Anlama Gelebilir? |
+| :--- | :--- |
+| Pozitif testin silikleşmesi | hCG'nin düşmeye başladığını gösterebilir |
+| Adet gecikmesi sonrası kanama | Çok erken kaybın ilk fark edilen bulgusu olabilir |
+| Hafif kramp | Adet kramplarına benzeyebilir |
+| Beta-hCG'nin beklenen artışı göstermemesi | Gebeliğin sağlıklı ilerlemediğini düşündürebilir |
 
-- **Hafif Kramplar:** Adet kramplarına benzer, ancak daha hafif olabilir.
-- **Lekeleme veya Hafif Kanama:** Adet başlangıcını andıran, ancak genellikle daha az yoğun olan kanamalar görülebilir.
+Tek başına ev tipi test çizgisiyle kesin karar verilmez. Test markası, idrar yoğunluğu ve test zamanı sonucu etkileyebilir. Kan beta-hCG takibi daha güvenilir bilgi verir.
+</div>
 
-Bu belirtiler, vücudunuzun yaşadığı değişikliklere karşı verdiği tepkilerdir ve çoğu zaman normal adet belirtileri ile karıştırılabilir.
+<div data-reveal>
+<h2 id="hcg">hCG Takibi Nasıl Yorumlanır?</h2>
 
-## Kimyasal Gebeliğin Teşhisi
+Erken gebelikte beta-hCG'nin zaman içindeki seyri önemlidir. Sağlıklı ilerleyen erken gebeliklerde hCG genellikle belirli aralıklarla artar; kimyasal gebelikte ise değerler çoğu zaman düşük kalır, yavaş artar veya düşmeye başlar.
 
-Kimyasal gebelik teşhisi, genellikle evde yapılan bir gebelik testi ile başlar. Pozitif çıkan bu test, hCG hormonunun kan seviyelerindeki değişimlerle desteklenmelidir. Ancak, bu hormon seviyeleri beklenen artışı göstermezse veya düşüş gö
+Doktorunuz genellikle **48 saat arayla beta-hCG** isteyebilir. Amaç tek bir sayıya bakmak değil, eğilimi görmektir. hCG düşüyorsa ve kanama başlamışsa kimyasal gebelik olasılığı güçlenir. hCG beklenen şekilde düşmüyor, ağrı eşlik ediyor veya değerler dalgalanıyorsa dış gebelik gibi durumlar dışlanmalıdır. <InlineEvidence grade="B" />
+</div>
 
-sterirse, kimyasal gebelik ihtimali güçlenir. Bu durum, genellikle kan testleri ile doğrulanır ve doktorunuzla detaylı bir değerlendirme gerektirir.
+<div data-reveal>
+<h2 id="nedenler">Kimyasal Gebelik Neden Olur?</h2>
 
-## Duygusal Etkiler ve Destek
+Çoğu kimyasal gebelikte kesin neden saptanamaz. Bu, kişinin yanlış bir şey yaptığı anlamına gelmez.
 
-Kimyasal gebelik, fiziksel olduğu kadar duygusal bir kayıp da beraberinde getirir. Her bireyin bu süreci yaşama şekli farklıdır; bazıları için kısa süren bir üzüntü olurken, bazıları için daha derin ve uzun süreli bir acıya dönüşebilir. Bu dönemde, sevdiklerinizin, sağlık profesyonellerinin ve destek gruplarının yanı sıra, duygusal destek sağlayan diğer kaynaklardan yardım almak, iyileşme sürecinde büyük önem taşır. Paylaşılan hikayeler ve deneyimler, bu zor zamanlarda yalnız olmadığınızı hissettirir ve iyileşme yolunda size güç verir.
+**Olası nedenler şunlardır:**
 
-## Sıkça Sorulan Sorular
+- Embriyoda kromozomal veya gelişimsel sorunlar
+- Rahim içi polip, miyom, yapışıklık veya septum gibi yapısal faktörler
+- Tiroid, diyabet, prolaktin veya luteal fazla ilişkili hormonal sorunlar
+- Antifosfolipid sendromu gibi pıhtılaşma/otoimmün nedenler
+- Sperm DNA hasarı veya embriyo gelişimini etkileyen erkek faktörleri
+- IVF/FET döngüsünde embriyo, endometrium ve zamanlama uyumsuzluğu
 
-### Kimyasal Gebelik Tanımı Nedir?
+Tek bir kayıpta geniş test paneli her zaman gerekli değildir. Ancak tekrarlayan erken kayıplarda sistematik değerlendirme anlamlı olabilir. ASRM'nin güncel yaklaşımı, biyokimyasal kayıpların tekrarlayan gebelik kaybı risk değerlendirmesinde klinik kayıplar kadar ciddiye alınabileceğini belirtir. <InlineEvidence grade="B" />
+</div>
 
-Kimyasal gebelik, genellikle döllenmiş bir yumurtanın rahime tutunmasından sonra ortaya çıkan, ancak klinik olarak tanımlanamayan bir gebeliktir. Yumurta döllendikten sonra hCG hormonu salgılanır ve gebelik testleri bu hormonu tespit ederek pozitif sonuç verir. Ancak, embriyo gelişimini sürdüremediği için gebelik devam etmez ve genellikle ilk adet dönemi gecikmesinden önce sonlanır.
+<div data-reveal class="bg-rose-50 border border-rose-100 rounded-3xl p-8">
+<h2 id="doktora" class="text-2xl font-bold text-rose-900 mb-4">Ne Zaman Doktora Başvurmalı?</h2>
 
-### Kimyasal Gebelik Nasıl Meydana Gelir?
+Aşağıdaki durumlarda beklemek yerine hekiminizle iletişime geçin:
 
-Kimyasal gebeliklerin en yaygın nedeni, embriyodaki kromozomal anormalliklerdir. <InlineEvidence grade="B" /> Bu genetik bozukluklar, embriyonun sağlıklı bir şekilde gelişimini engeller. Ayrıca, rahim içi ortamın elverişsiz olması veya hormonal dengesizlikler gibi diğer etkenler de kimyasal gebelik riskini artırabilir.
+- Tek taraflı veya giderek artan kasık ağrısı
+- Omuz ağrısı, baygınlık hissi, baş dönmesi
+- Saatte bir pedden fazla kanama veya büyük pıhtılar
+- Ateş, kötü kokulu akıntı veya şiddetli halsizlik
+- Beta-hCG'nin düşmemesi, plato çizmesi veya düzensiz yükselmesi
+- İki veya daha fazla kimyasal gebelik ya da düşük öyküsü
 
-### Kimyasal Gebelik Belirtileri Nelerdir?
+Bu belirtiler her zaman ciddi bir sorun anlamına gelmez; ama özellikle dış gebelik ve yoğun kanama açısından kontrol gerektirir.
+</div>
 
-Çoğu durumda, kimyasal gebelik belirtileri hafif ve belirsizdir. En yaygın belirtiler arasında hafif kramplar, lekeleme veya hafif kanama bulunur. Bu belirtiler, genellikle normal bir menstrüasyonun başlangıcıyla karıştırılabilir.
+<div data-reveal>
+<h2 id="sonraki-adim">Kimyasal Gebelikten Sonra Tekrar Denemek İçin Ne Kadar Beklenir?</h2>
 
-### Kimyasal Gebelik Nasıl Teşhis Edilir?
+Fiziksel olarak çoğu kişi, kanama düzeldikten ve hCG negatife indikten sonra tekrar denemeye uygun hale gelebilir. Yine de zamanlama; kanama miktarı, dış gebelik şüphesi, kullanılan ilaçlar, IVF protokolü, yaş ve duygusal hazır oluşa göre kişiselleştirilmelidir.
 
-Kimyasal gebelik teşhisi, ilk olarak evde yapılan bir gebelik testi ile başlar. Testin pozitif çıkması ve sonrasında yapılan kan testleriyle hCG hormon seviyelerinde beklenen artışın görülmemesi, kimyasal gebelik ihtimalini güçlendirir. Düşük hCG seviyeleri ve bu seviyelerin beklenen şekilde artmaması, gebeliğin kimyasal olduğuna işaret eder.
+Tek bir kimyasal gebelik çoğu zaman gelecekte sağlıklı gebelik olmayacağı anlamına gelmez. IVF tedavisinde ise kimyasal gebelik, embriyonun en azından rahimle biyolojik temas kurabildiğini gösteren ama transfer başarısı için tek başına yeterli olmayan bir bilgidir. <InlineEvidence grade="B" />
+</div>
 
-### Kimyasal Gebelik Sonrası Duygusal İyileşme Nasıl Desteklenir?
+<div data-reveal>
+<h2>Kimyasal Gebelik Sonrası Hangi Testler Gündeme Gelebilir?</h2>
 
-Kimyasal gebelik sonrası duygusal iyileşme süreci, bireyden bireye değişkenlik gösterir. Bu süreçte profesyonel yardım almak, destek gruplarına katılmak ve duygusal deneyimleri paylaşmak önemlidir. Sevdiklerinizden ve sağlık uzmanlarından alacağınız destek, bu zorlu dönemi atlatmanıza yardımcı olabilir.
+Tekrarlayan kayıplarda doktorunuz şu başlıkları değerlendirebilir:
 
-### Kimyasal Gebelik Sonrası Tekrar Hamile Kalınabilir mi?
+| Değerlendirme | Neden İstenebilir? |
+| :--- | :--- |
+| TSH, HbA1c, prolaktin | Hormonal/metabolik riskleri görmek |
+| Antifosfolipid antikorları | Tekrarlayan kayıpta tedavi edilebilir nedenlerden biri |
+| Rahim içi değerlendirme | Polip, septum, miyom veya yapışıklık şüphesi |
+| Karyotip veya genetik danışmanlık | Tekrarlayan kayıplarda seçilmiş durumlarda |
+| Sperm değerlendirmesi | Erkek faktörü veya sperm DNA hasarı şüphesinde |
 
-Evet, kimyasal gebelik sonrası tekrar hamile kalınabilir. Bu tür bir gebelik genellikle kadının uzun vadeli fertilitesini etkilemez. <InlineEvidence grade="B" /> Ancak, birden fazla kimyasal gebelik yaşayan kadınlar, altta yatan sağlık sorunlarının olup olmadığını belirlemek için bir sağlık uzmanına başvurmalıdır.
+Bu testlerin hepsi herkese otomatik yapılmaz. En iyi yaklaşım, kayıp sayısı, yaş, IVF öyküsü ve eşlik eden bulgulara göre seçici davranmaktır.
+</div>
 
-## Sonuç
+<div data-reveal>
+<h2 id="faq">Sıkça Sorulan Sorular</h2>
 
-Kimyasal gebelikler, gizli kalan ve çoğu zaman yeterince anlaşılmayan bir deneyimdir. Ancak bilgi ve uygun destekle, bu durumun üstesinden gelmek mümkündür. Yeniden başlama umuduyla, kimyasal gebelikler üzerine artan farkındalık, daha bilinçli ve destekleyici bir toplum yaratmaya yardımcı olabilir. Bu, sadece bireyler için değil, aynı zamanda toplumun geneli için de umut verici bir yol haritası sunar.
+<Accordion title="Kimyasal gebelik düşük müdür?">
+Evet, çok erken gebelik kaybı olarak değerlendirilir. Gebelik kesesi ultrasonda görülmeden sonlandığı için “biyokimyasal” veya “kimyasal” gebelik denir.
+</Accordion>
 
-Bu yolculukta yalnız olmadığınızı unutmayın; her adımınızda yanınızda olan bir destek ağı olduğunu hatırlayın. Bu bilgi ve destekle, kimyasal gebeliklerin getirdiği duygusal ve fiziksel zorlukların üstesinden gelebilir, sağlıklı ve umut dolu bir geleceğe ilk adımınızı atabilirsiniz. Yeni başlangıçlar her zaman mümkündür ve her son, yeni bir başlangıcın kapısını aralar.
+<Accordion title="Kimyasal gebelikten sonra hemen hamile kalınır mı?">
+Çoğu kişi tekrar hamile kalabilir. Genellikle hCG negatife indikten ve kanama düzeldikten sonra doktorunuz kişisel duruma göre tekrar deneme zamanını konuşur.
+</Accordion>
+
+<Accordion title="Kimyasal gebelik dış gebelikle karışır mı?">
+Evet, erken dönemde karışabilir. hCG'nin düşmemesi, tek taraflı ağrı, baygınlık hissi veya yoğun kanama varsa dış gebelik açısından değerlendirme gerekir.
+</Accordion>
+
+<Accordion title="Tek kimyasal gebelikte tüm testler yapılmalı mı?">
+Her zaman gerekmez. Tek bir erken kayıp sık görülebilir. Ancak iki veya daha fazla kayıp, ileri yaş, IVF başarısızlıkları veya ek bulgular varsa araştırma daha erken gündeme gelebilir.
+</Accordion>
+
+<Accordion title="Kimyasal gebelik benim hatam mı?">
+Hayır. Çoğu erken kayıp kişinin yaptığı veya yapmadığı bir şeyden kaynaklanmaz. Kendinizi suçlamak yerine, gerekiyorsa tıbbi değerlendirme ve duygusal destek almak daha doğru bir adımdır.
+</Accordion>
+</div>
+
+<div data-reveal>
+<EvidenceGradeCard grade={frontmatter.recommendationGrade} />
+</div>
+
+<div data-reveal class="mt-12 bg-slate-50 p-8 rounded-3xl border border-slate-200">
+**Sizin İçin Seçtiğimiz Diğer Rehberler:**
+- [Beta-hCG testi nasıl yorumlanır?](/makaleler/beta-hcg-testi/)
+- [Embriyo transferi sonrası bakım](/makaleler/embriyo-transferi-sonrasi-bakim/)
+- [Tekrarlayan başarısız denemeler](/makaleler/basarisiz-denemeler/)
+- [PGT-A ve genetik testler](/genetik-testler/)
+- [Rahim içi sorunlar ve histeroskopi](/makaleler/ivf-oncesi-histeroskopi/)
+</div>
+
+<div data-reveal class="mt-12 pt-8 border-t border-slate-200 text-sm text-slate-600">
+## Yasal Uyarı
+**Son tıbbi revizyon tarihi: 12 Mayıs 2026.**
+Bu makale bilgilendirme amaçlıdır; tıbbi teşhis ve tedavi yerine geçmez. Pozitif gebelik testi sonrası kanama, ağrı veya beta-hCG belirsizliği yaşıyorsanız kendi hekiminizle görüşün.
+</div>
+
+</div>
+
+export const chemicalPregnancyFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "Kimyasal gebelik düşük müdür?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Evet. Kimyasal gebelik, gebelik kesesi ultrasonda görülmeden önce sonlanan çok erken gebelik kaybıdır."
+    }
+  }, {
+    "@type": "Question",
+    "name": "Kimyasal gebelikten sonra hemen hamile kalınır mı?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Çoğu kişi tekrar hamile kalabilir. Genellikle hCG negatife indikten ve kanama düzeldikten sonra doktor kişisel duruma göre tekrar deneme zamanını belirler."
+    }
+  }, {
+    "@type": "Question",
+    "name": "Kimyasal gebelik dış gebelikle karışır mı?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Evet. hCG düşmüyorsa, tek taraflı ağrı varsa veya yoğun kanama yaşanıyorsa dış gebelik açısından değerlendirme gerekir."
+    }
+  }, {
+    "@type": "Question",
+    "name": "Tek kimyasal gebelikte tüm testler yapılmalı mı?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Her zaman gerekmez. Tek kayıp sık görülebilir; tekrarlayan kayıplarda veya ek risklerde daha ayrıntılı değerlendirme gündeme gelir."
+    }
+  }]
+};
+
+<script type="application/ld+json" set:html={JSON.stringify(chemicalPregnancyFaqSchema)} />
+<RevealScript />

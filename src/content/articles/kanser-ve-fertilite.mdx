@@ -1,32 +1,37 @@
 ---
-title: "Kanser ve Fertilite: Onkolojik Hastalar İçin Rehber"
-description: "Kanser tanısı sonrası fertilite koruma seçenekleri nelerdir? Onkolojik hastalarda yumurta, sperm ve embriyo dondurma süreçleri, acil protokoller ve hasta hakları rehberi."
+title: "Kanser ve Fertilite: Tedavi Öncesi Doğurganlık Koruma Rehberi"
+description: "Kanser tedavisi öncesi yumurta, sperm, embriyo ve over dokusu dondurma seçenekleri; acil zaman planı, çocuk hastalarda yaklaşım ve onkofertilite kararları."
 publishDate: 2026-04-01
-lastModified: 2026-05-11
+lastModified: 2026-05-12
 author: "Doç. Dr. Senai Aksoy"
 authorTitle: "Kadın Hastalıkları ve Doğum Uzmanı"
 authorCredentials: "Üreme Tıbbı ve Yardımcı Üreme Teknikleri"
 authorYoutube: "https://www.youtube.com/@DocentDrSenaiAksoy"
 medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Tıbbi Danışma Kurulu"
-reviewDate: 2026-04-06
+reviewDate: 2026-05-12
 category: "Tedavi"
-recommendationGrade: B
+recommendationGrade: A
 image: "/images/library/laboratuvar/dr-senai-aksoy-istanbul-ivf-laboratuvar.webp"
-imageAlt: "Onkofertilite danışmanlığı ve fertilite koruma laboratuvar ortamı"
+imageAlt: "kanser tedavisi öncesi onkofertilite danışmanlığı ve fertilite koruma laboratuvarı"
 references:
-  - title: "Fertility preservation in patients with cancer: ASCO clinical practice guideline update"
-    authors: "Oktay K, Harvey BE, Partridge AH et al."
+  - title: "Fertility Preservation in People With Cancer: ASCO Guideline Update"
+    authors: "Su HI, Lacchetti C, Letourneau J et al."
     journal: "Journal of Clinical Oncology"
-    year: 2018
-    doi: "10.1200/JCO.2018.78.1914"
-    pmid: "29620997"
-  - title: "Oocyte cryopreservation for fertility preservation in cancer patients"
-    authors: "Cobo A, García-Velasco JA, Remohí J, Pellicer A"
+    year: 2025
+    doi: "10.1200/JCO-24-02782"
+    pmid: "40106739"
+  - title: "Fertility preservation in patients with medical indications: a committee opinion"
+    authors: "Practice Committee of the American Society for Reproductive Medicine"
     journal: "Fertility and Sterility"
-    year: 2013
-    doi: "10.1016/j.fertnstert.2013.01.141"
-    pmid: "23433515"
+    year: 2026
+    url: "https://www.asrm.org/practice-guidance/practice-committee-documents/fertility-preservation-in-patients-with-medical-indications-a-committee-opinion-2026/"
+  - title: "ESHRE guideline: female fertility preservation"
+    authors: "ESHRE Guideline Group on Female Fertility Preservation"
+    journal: "Human Reproduction Open"
+    year: 2020
+    doi: "10.1093/hropen/hoaa052"
+    pmid: "33324624"
   - title: "Gonadotoxic effects of chemotherapy and radiotherapy on fertility"
     authors: "Meirow D, Nugent D"
     journal: "Best Practice & Research Clinical Obstetrics & Gynaecology"
@@ -35,124 +40,236 @@ references:
 ---
 
 import HizliCevap from '../../components/HizliCevap.astro';
+import Accordion from "../../components/global/Accordion.astro";
+import MedicalInfoBox from '../../components/global/MedicalInfoBox.astro';
+import QuoteBlock from '../../components/global/QuoteBlock.astro';
+import RevealScript from '../../components/global/RevealScript.astro';
 import InlineEvidence from '../../components/InlineEvidence.astro';
+import EvidenceGradeCard from '../../components/EvidenceGradeCard.astro';
 
-<HizliCevap question="Kanser ve Fertilite nedir, nasıl yönetilir?">
-Kanser tanısı sonrası fertilite koruma seçenekleri nelerdir? Onkolojik hastalarda yumurta, sperm ve embriyo dondurma süreçleri, acil protokoller ve hasta hakları rehberi.
+<HizliCevap question="Kanser tanısı sonrası fertilite nasıl korunur?">
+Kanser tedavisi başlamadan önce, üreme çağındaki hastalar fertilite riski açısından bilgilendirilmeli ve isteyen ya da kararsız kalan hastalar hızla üreme tıbbı uzmanına yönlendirilmelidir. En yerleşik seçenekler sperm dondurma, yumurta dondurma, embriyo dondurma ve seçilmiş hastalarda over dokusu dondurmadır.
 </HizliCevap>
 
-Kanser tanısı almak, hayatın en zorlu anlarından biridir. Bu süreçte tedaviye odaklanmak ne kadar doğalsa, gelecekteki aile planları hakkında düşünmek de o kadar önemlidir. Neyse ki modern tıp, kanser tedavisi görecek hastalara fertilitelerini koruma imkânı sunmaktadır. **Onkofertilite** olarak adlandırılan bu alan, onkoloji ve üreme tıbbını bir araya getirerek hastalara hem sağlıklarını kazanma hem de gelecekte çocuk sahibi olabilme fırsatı tanımaktadır. Tanı aldığınız anda doğru adımları atmanız, bu fırsatı en üst düzeyde kullanmanızı sağlar.
+<div class="mesh-hero pt-12 pb-20 px-4 md:px-0 -mx-4 md:-mx-0 mb-12 rounded-3xl shadow-sm border border-white/40" style="background: linear-gradient(135deg, #ecfeff 0%, #dbeafe 50%, #f8fafc 100%);">
+  <div class="max-w-4xl mx-auto" data-reveal>
+    <div class="inline-block px-4 py-1 rounded-full bg-cyan-100 text-cyan-800 text-sm font-bold mb-4">
+      Onkofertilite
+    </div>
+    <h1 class="text-4xl md:text-6xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-cyan-800 to-slate-900 leading-tight">
+      {frontmatter.title}
+    </h1>
+    <p class="text-xl md:text-2xl text-slate-700 font-medium max-w-2xl leading-relaxed">
+      Kanser tedavisinde zaman değerlidir; doğurganlık planı da aynı hızla konuşulmalıdır. Amaç, kanser tedavisini geciktirmeden gelecekteki çocuk sahibi olma seçeneklerini korumaktır.
+    </p>
+  </div>
+</div>
 
-## Kanser Tanısı ve Fertilite: Neden Acil Hareket Gerekir?
+<div class="max-w-4xl mx-auto space-y-12 blog-content-reveal">
 
-Kanser tedavileri — kemoterapi, radyoterapi ve cerrahi — üreme organlarına ciddi zarar verebilir <InlineEvidence grade="B" />. Bu nedenle **tedaviye başlamadan önce** fertilite koruma adımlarının atılması büyük önem taşır <InlineEvidence grade="B" />. Tedavi başladıktan sonra bu fırsat büyük ölçüde kapanabilir.
+<div data-reveal>
+<MedicalInfoBox title="Hızlı Bakış: İlk 72 Saatte Sorulacak Sorular" icon="⏱️" color="blue">
+**Tedavi başlamadan önce onkoloğunuza üç soru sorun:** Tedavim yumurtalık/testis fonksiyonunu ne kadar etkiler? Fertilite koruma için kaç günüm var? Üreme tıbbı uzmanına bugün yönlendirilebilir miyim? ASCO 2025, fertilite koruma seçeneklerinin kanser tedavisi başlamadan önce konuşulmasını ve kararsız hastaların bile üreme uzmanına yönlendirilmesini önerir. <InlineEvidence grade="A" />
+</MedicalInfoBox>
+</div>
 
-Dünya genelinde tanınan iki büyük onkoloji kuruluşu, **ASCO** (Amerikan Klinik Onkoloji Derneği) ve **ESMO** (Avrupa Medikal Onkoloji Derneği), kılavuzlarında açıkça şunu belirtmektedir: Üreme çağındaki her kanser hastasına, tedaviye başlamadan önce fertilite koruma seçenekleri hakkında bilgi verilmeli ve uzman yönlendirmesi yapılmalıdır <InlineEvidence grade="B" />. Bu bir öneri değil, standart tıbbi bakımın bir parçasıdır.
+## İçindekiler
 
-**Multidisipliner yaklaşım** bu sürecin merkezindedir. Onkolog, üreme tıbbı uzmanı, psikolog ve hasta bir arada hareket ederek en doğru kararı vermelidir. Zaman kısıtlı olsa da doğru planlamayla fertilite koruma mümkündür.
+- [Neden tedavi öncesi konuşulmalı?](#neden-acil)
+- [Tedaviler doğurganlığı nasıl etkiler?](#etki)
+- [Kadınlar için seçenekler](#kadin)
+- [Erkekler için seçenekler](#erkek)
+- [Çocuk ve ergen hastalarda yaklaşım](#cocuk)
+- [Kanser türüne göre zaman penceresi](#zaman)
+- [Hasta hakları ve ilk adım](#haklar)
+- [Sıkça sorulan sorular](#faq)
 
-## Kanser Tedavilerinin Fertiliteye Etkisi
+<div data-reveal>
+<h2 id="neden-acil">Kanser Tanısında Fertilite Neden Hemen Konuşulmalı?</h2>
 
-Her kanser tedavisi üreme sistemini aynı ölçüde etkilemez. Risk düzeyini anlamak, doğru koruma stratejisini belirlemek açısından kritiktir.
+Kemoterapi, radyoterapi, cerrahi ve bazı hedefe yönelik tedaviler yumurtalık rezervini, sperm üretimini, rahmi veya hormonal fonksiyonları etkileyebilir. Bu risk tedavinin türüne, dozuna, yaşa, başlangıç rezervine ve kanserin aciliyetine göre değişir. <InlineEvidence grade="B" />
 
-### Kemoterapi
+Bu nedenle onkofertilite görüşmesi “tedavi bittiğinde bakarız” başlığı değildir. En doğru zaman, mümkünse **ilk tedavi başlamadan önceki günlerdir**. ASCO 2025 ve ASRM 2026, risk altındaki hastalarda erken danışmanlık ve hızlı yönlendirmeyi standart bakımın parçası olarak ele alır. <InlineEvidence grade="A" />
+</div>
 
-Kemoterapi ilaçları, hızlı çoğalan hücreleri hedef aldığı için yumurtalık ve testis dokusuna zarar verebilir. **Gonadotoksisite riski** ilaca göre büyük farklılıklar gösterir:
+<div data-reveal>
+<QuoteBlock author="tupbebek.com Tıbbi Danışma Kurulu">
+Onkofertilitede temel hedef kanser tedavisini geciktirmek değil; onkoloji ekibiyle aynı masada, güvenli zaman penceresi içinde doğurganlık seçeneklerini netleştirmektir.
+</QuoteBlock>
+</div>
 
-- **Yüksek risk (>%80 infertilite):** Siklofosfamid, busulfan, melfalan, klorambusil — özellikle alkilleyici ajanlar
-- **Orta risk (%40-60):** Cisplatin, karboplatin, doksorubisin
-- **Düşük risk (&lt;%20):** Vincristin, bleomisin, metotreksat, 5-florourasil
+<div data-reveal>
+<h2 id="etki">Kanser Tedavileri Doğurganlığı Nasıl Etkiler?</h2>
 
-Tedavi öncesinde onkolojunuzdan hangi ilaçları alacağınızı öğrenmek ve bu bilgiyi üreme tıbbı uzmanıyla paylaşmak, size özel bir koruma planı hazırlanmasını sağlar.
+Her tedavi aynı riski taşımaz. Risk hesabı kişiseldir ve mutlaka onkoloji planıyla birlikte yapılmalıdır.
 
-### Radyoterapi
+| Tedavi | Olası Fertilite Etkisi | Kritik Soru |
+| :--- | :--- | :--- |
+| Alkilleyici kemoterapiler | Yumurtalık rezervi ve sperm üretiminde kalıcı hasar riski daha yüksek | İlacın adı ve toplam dozu nedir? |
+| Pelvik radyoterapi | Yumurtalık, testis ve rahim dokusunda hasar | Işın alanı ve toplam doz nedir? |
+| Testis/yumurtalık cerrahisi | Doku kaybı nedeniyle doğrudan rezerv azalması | Tek taraflı mı, iki taraflı mı? |
+| Hormon tedavileri | Gebelik planını yıllarca erteleyebilir | Tedavi süresi ve güvenli ara mümkün mü? |
+| Hematolojik aciller | Koruma için zaman çok kısa olabilir | Saatler-günler içinde hangi seçenek yapılabilir? |
 
-Pelvik veya gonadal bölgeye uygulanan radyasyon, yumurtalık ve testis dokusunu kalıcı olarak hasara uğratabilir. **Pelvik ışınlama** alan kadınlarda erken menopoz riski yüksektir; erkeklerde ise sperm üretimi ciddi biçimde azalabilir. Radyasyonun etkisi kümülatiftir — toplam doz ve ışınlama alanı ne kadar büyükse, hasar o kadar fazladır.
+Risk düşük görünse bile doğurganlık isteği olan hastanın bilgilendirilmesi gerekir; çünkü karar yalnızca tıbbi riskle değil, kişinin gelecek planıyla da ilgilidir.
+</div>
 
-### Cerrahi
+<div data-reveal>
+<h2 id="kadin">Kadınlar İçin Fertilite Koruma Seçenekleri</h2>
 
-**Orşiektomi** (testis alınması) erkeklerde, **ooferektomi** (yumurtalık alınması) ise kadınlarda doğrudan fertilite kaybına yol açabilir. Tek taraflı işlemlerde fertilite korunabilir; ancak özellikle iki taraflı müdahalelerde fertilite koruma adımları daha da kritik hale gelir.
+### Yumurta dondurma
 
-## Kadınlar İçin Fertilite Koruma Seçenekleri
+Partner gerektirmez ve güncel kılavuzlarda yerleşik fertilite koruma yöntemlerinden biridir. Yumurtalıklar uyarılır, olgun yumurtalar toplanır ve vitrifikasyonla dondurulur. Random-start protokoller sayesinde adet döngüsünün herhangi bir gününde başlanabilir; çoğu hastada süreç yaklaşık 2 hafta içinde tamamlanabilir. <InlineEvidence grade="A" />
 
-Kanser tanısı almış kadınlar için birden fazla etkili seçenek mevcuttur. Hangisinin uygun olduğu; yaşa, medeni duruma, kanserin türüne ve tedaviye kadar kalan süreye göre belirlenir.
+### Embriyo dondurma
 
-**Oosit (Yumurta) Dondurma**
+Partner veya sperm kaynağı varsa en yerleşik seçeneklerden biridir. Yumurta toplandıktan sonra döllenme yapılır ve embriyolar dondurulur. Karar, kişinin medeni/ilişki durumu, etik tercihleri ve ülkesel mevzuatla birlikte değerlendirilmelidir.
 
-En yaygın ve güvenilir yöntemlerden biridir. Yumurtalıklar hormonal ilaçlarla uyarılır, olgunlaşan yumurtalar toplanarak sıvı azot ortamında dondurulur. Bekâr kadınlar için ideal bir seçenektir. Başarı oranları son yıllarda vitrifikasyon (hızlı dondurma) tekniğiyle belirgin biçimde artmıştır <InlineEvidence grade="B" />.
+### Over dokusu dondurma
 
-**Embriyo Dondurma**
+Over dokusu dondurma, özellikle yumurtalık uyarımı için zamanı olmayan veya ergenlik öncesi kız çocuklarında gündeme gelir. ASCO 2025 ve ASRM 2026, over dokusu dondurmayı seçilmiş hastalarda yerleşik fertilite koruma yöntemleri arasında ele almaktadır; ancak etkinlik, kanser türüne bağlı dokuya hastalık bulaşma riski ve merkez deneyimi mutlaka tartışılmalıdır. <InlineEvidence grade="A" />
 
-Partneri olan kadınlar için en yerleşik yöntemdir. Yumurtalar toplandıktan sonra spermle döllenerek embriyo elde edilir ve dondurulur. Gebelik başarı oranları yüksektir.
+### GnRH agonistleri
 
-**Over Doku Dondurma**
+GnRH agonistleri bazı hastalarda, özellikle meme kanseri kemoterapisi sırasında yumurtalık fonksiyonunu korumaya yardımcı ek yaklaşım olarak düşünülebilir. Ancak kılavuzlar, bu yöntemin yumurta/embriyo/over dokusu dondurma gibi yerleşik yöntemlerin yerine geçmemesi gerektiğini vurgular. <InlineEvidence grade="A" />
 
-Henüz deneysel kabul edilse de dünyada yüzlerce başarılı gebelik vakası bildirilmiştir. Yumurtalığın bir parçası laparoskopik yöntemle alınarak dondurulur; tedavi sonrasında ise geri nakledilir. Kemoterapi için zaman olmayan veya prepubertal kız çocukları için özellikle değerlidir.
+### Over transpozisyonu ve koruyucu cerrahi
 
-**GnRH Agonist ile Over Koruma**
+Pelvik radyoterapi planlanan seçilmiş hastalarda yumurtalıkların ışın alanı dışına taşınması veya fertilite koruyucu jinekolojik cerrahi seçenekleri değerlendirilebilir. Bu karar mutlaka kanser evresi, tedavi güvenliği ve multidisipliner kurul görüşüyle verilmelidir.
+</div>
 
-Kemoterapi süresince GnRH agonistleri kullanarak yumurtalıkların geçici olarak "uyutulması" sağlanabilir. Bu yöntem, diğer koruma stratejilerine ek olarak uygulanabilir; ancak tek başına yeterli bir koruma sağlamadığı için diğer yöntemlerle birlikte düşünülmelidir.
+<div data-reveal>
+<h2 id="erkek">Erkekler İçin Fertilite Koruma Seçenekleri</h2>
 
-**Acil Stimülasyon Protokolü (Random-Start)**
+### Sperm dondurma
 
-Geleneksel yumurta toplama protokolleri adet döngüsünün belirli günlerinde başlar. Ancak **random-start protokolü**, döngünün herhangi bir gününde başlatılabildiği için kanser hastalarına büyük kolaylık sağlar. Bu sayede tedaviye başlanmadan önce kısa sürede yumurta toplanması mümkün olur.
+En hızlı, en yerleşik ve çoğu zaman ilk önerilen seçenektir. Mümkünse kemoterapi, radyoterapi veya orşiektomi başlamadan önce yapılmalıdır. ASCO 2025, erkek hastalara kanser tedavisi öncesi sperm dondurmanın teklif edilmesini önerir. <InlineEvidence grade="A" />
 
-## Erkekler İçin Fertilite Koruma Seçenekleri
+### Cerrahi sperm toplama
 
-Erkekler için fertilite koruma genellikle daha hızlı ve kolaydır; ancak vakit kaybetmemek yine de kritik önemdedir.
+Semen örneği veremeyen, azoospermisi olan veya acil cerrahi öncesinde örnek alınamayan seçilmiş hastalarda testisten sperm elde etme yöntemleri gündeme gelebilir. Bu karar üroloji/androloji ve embriyoloji ekibiyle birlikte verilmelidir.
 
-**Sperm Dondurma (Sperm Kriyoprezervasyon)**
+### Testis dokusu dondurma
 
-Orşiektomi veya kemoterapi başlamadan önce semen örneği verilerek spermler dondurulur. İşlem hızlı, invaziv olmayan ve son derece etkili bir yöntemdir <InlineEvidence grade="B" />. Dondurulmuş spermler onlarca yıl saklanabilir, kalite büyük ölçüde korunur. Her erkek kanser hastasına öncelikle bu seçenek önerilmelidir.
+Ergenlik öncesi erkek çocuklarda henüz olgun sperm üretimi olmadığı için testis dokusu dondurma araştırma alanıdır. ASCO 2025 ve ASRM 2026, prepubertal erkeklerde testis dokusu dondurmanın deneysel olduğunu ve klinik çalışma/etik kurul çerçevesinde düşünülmesi gerektiğini belirtir. <InlineEvidence grade="B" />
+</div>
 
-**Testis Doku Dondurma**
+<div data-reveal>
+<h2 id="cocuk">Çocuk ve Ergen Hastalarda Yaklaşım</h2>
 
-Özellikle **prepubertal erkek çocuklar** için gündeme gelir; zira bu yaşta henüz olgun sperm üretilmez. Testis dokusundan alınan örnek dondurularak ileride kullanılmak üzere saklanır. Deneysel statüsünü korusa da gelecek vadeden bir yöntemdir.
+Çocuklarda karar yalnızca teknik bir işlem kararı değildir; etik, psikolojik ve hukuki boyut taşır. Ergenliğe girmiş gençlerde yumurta veya sperm dondurma gibi yerleşik seçenekler, hastanın anlayabileceği şekilde bilgilendirilmesi ve veli/onam süreçleriyle değerlendirilebilir.
 
-**Elektroejekülasyon ve Cerrahi Sperm Toplama**
+Ergenlik öncesi kız çocuklarında over dokusu dondurma, güncel kılavuzlarda yerleşik seçenek olarak kabul edilen başlıca yöntemdir. Ergenlik öncesi erkek çocuklarda testis dokusu dondurma ise halen deneysel kabul edilir. Aileye başarı belirsizliği, gelecekte kullanım koşulları ve saklama sorumlulukları açıkça anlatılmalıdır. <InlineEvidence grade="A" />
+</div>
 
-Sperm veremeyen hastalar (sinir hasarı, retrograd ejekülasyon vb.) için elektroejekülasyon veya doğrudan testisten sperm toplama (TESA/TESE) yöntemleri uygulanabilir.
+<div data-reveal>
+<h2 id="zaman">Kanser Türüne Göre Fertilite Koruma Zaman Penceresi</h2>
 
-## Çocukluk Çağı Kanser Hastaları
+Aşağıdaki tablo genel yönlendirme içindir; kişisel planı onkoloğunuz ve üreme tıbbı uzmanınız birlikte oluşturur.
 
-Çocuklarda kanser tanısı, fertilite koruması açısından özellikle hassas bir durum yaratır. Prepubertal çocuklarda yumurta ya da sperm henüz olgunlaşmadığından standart yöntemler uygulanamaz.
+| Durum | Sıklıkla Uygun Pencere | Öne Çıkan Seçenek |
+| :--- | :--- | :--- |
+| Meme kanseri | Genellikle 2 hafta civarı plan yapılabilir | Yumurta/embriyo dondurma, GnRHa ek yaklaşımı |
+| Lenfoma | Aciliyet değişken; çoğu kez hızlı plan gerekir | Yumurta/embriyo dondurma veya sperm dondurma |
+| Testis kanseri | Orşiektomi öncesi günler kritik olabilir | Sperm dondurma |
+| Lösemi/hematolojik acil | Çok kısa süre olabilir | Acil sperm dondurma, seçilmiş kız çocuklarında over dokusu |
+| Pelvik radyoterapi | Işınlama öncesi plan gerekir | Over transpozisyonu, doku/yumurta/embriyo dondurma |
 
-Kız çocukları için **over doku dondurma** mevcut en umut verici seçenektir. Erkek çocuklar için **testis doku dondurma** araştırma aşamasındadır. Her iki yöntem de dünyada seçilmiş merkezlerde uygulanmaktadır.
+“Zaman yok” denildiğinde bile bazı seçenekler saatler veya günler içinde yapılabilir. Bu nedenle yönlendirme istemek çoğu zaman değerlidir.
+</div>
 
-Bu kararlar beraberinde ciddi **etik ve yasal sorular** getirir: Çocuk adına kim karar verir? Saklanan doku ileride nasıl kullanılacaktır? Türkiye'de bu uygulamalar tıp etiği kurulları ve ilgili mevzuat çerçevesinde değerlendirilmektedir. Aile, çocuk ve sağlık ekibinin birlikte karar vermesi esastır.
+<div data-reveal class="bg-cyan-50 border border-cyan-100 rounded-3xl p-8">
+<h2 id="haklar" class="text-2xl font-bold text-cyan-900 mb-4">Hasta Hakları ve İlk Adım</h2>
 
-## Zaman Çizelgesi: Kanser Türüne Göre Fertilite Koruma Pencereleri
+Kanser tanısı alan üreme çağındaki kişiler, tedavinin doğurganlık üzerindeki olası etkileri ve korunma seçenekleri hakkında açık bilgi alma hakkına sahiptir. Görüşmede şu cümleleri doğrudan kullanabilirsiniz:
 
-Tedaviye kadar kalan süre, hangi koruma yönteminin uygulanabileceğini doğrudan etkiler. Aşağıdaki tablo, yaygın kanser türleri için genel zaman pencerelerini göstermektedir:
+- “Bu tedavi doğurganlığımı nasıl etkiler?”
+- “Fertilite koruma için tedaviden önce zamanımız var mı?”
+- “Bugün üreme tıbbı uzmanına yönlendirme yapabilir misiniz?”
+- “Sperm/yumurta/embriyo/over dokusu dondurma benim için uygun mu?”
+- “Tedavim acilse en hızlı seçenek hangisi?”
 
-| Kanser Türü | Fertilite Koruma için Uygun Süre | Önerilen Yöntem |
-|---|---|---|
-| Meme Kanseri | 2–4 hafta | Oosit veya embriyo dondurma, random-start protokol |
-| Lenfoma (Hodgkin/Non-Hodgkin) | 1–2 hafta (acil) | Oosit dondurma, sperm dondurma |
-| Testis Kanseri | Orşiektomi öncesi (günler) | Sperm dondurma (öncelikli) |
-| Kolorektal Kanser | 2–4 hafta | Oosit/embriyo dondurma, sperm dondurma |
-| Lösemi | Çok kısa (günler-1 hafta) | Acil sperm dondurma, over doku dondurma |
-| Serviks Kanseri | 2–3 hafta | Embriyo/oosit dondurma, over doku |
+Bu konuşma kanser tedavisine karşı çıkmak değildir. Aksine, tedavinin bir parçası olan yaşam kalitesi ve gelecek planı konuşmasıdır.
+</div>
 
-Bu süreler yalnızca genel rehber niteliğindedir. Onkolojiniz ve üreme tıbbı uzmanınız birlikte size özel bir plan hazırlayacaktır.
+<div data-reveal>
+<h2 id="faq">Sıkça Sorulan Sorular</h2>
 
-## Hasta Hakları
+<Accordion title="Kanser tedavisi başlamadan önce fertilite koruma şart mı?">
+Şart değildir; kişisel bir karardır. Ancak doğurganlık isteği olan veya ileride isteyip istemediğinden emin olmayan herkes risk ve seçenekler hakkında bilgilendirilmelidir.
+</Accordion>
 
-**Bilgilendirilme hakkı** onkofertilite alanında temel bir ilkedir. ASCO kılavuzu açıkça şunu belirtmektedir: "Üreme çağındaki her kanser hastası, tedavinin fertilite üzerindeki olası etkileri ve koruma seçenekleri hakkında bilgilendirilmelidir." Bu bir tavsiye değil, standart tıbbi bakımın zorunlu bir parçasıdır.
+<Accordion title="Yumurta dondurma kanser tedavisini geciktirir mi?">
+Her zaman değil. Random-start protokollerle çoğu durumda süreç yaklaşık 2 hafta içinde tamamlanabilir. Güvenli olup olmadığına onkolog ve üreme tıbbı uzmanı birlikte karar verir.
+</Accordion>
 
-Ne var ki gerçekte pek çok hasta bu bilgiyi almadan tedaviye başlamaktadır. Eğer onkolojiniz fertilite konusunu gündirmemişse, **sormaktan çekinmeyin.** Bu hakkınızdır.
+<Accordion title="Over dokusu dondurma deneysel mi?">
+Güncel ASCO ve ASRM kılavuzları, over dokusu dondurmayı seçilmiş hastalarda yerleşik fertilite koruma seçenekleri arasında değerlendirmektedir. Ancak testis dokusu dondurma, özellikle ergenlik öncesi erkek çocuklarda deneysel kabul edilir.
+</Accordion>
 
-**Türkiye'deki yasal çerçeve** açısından bakıldığında, Türk Medeni Kanunu ve Hasta Hakları Yönetmeliği, hastaların tıbbi kararlarında tam bilgilendirilme hakkını güvence altına almaktadır. Üreme tıbbı uygulamaları ise Sağlık Bakanlığı'nın yardımcı üreme teknikleri yönetmeliği kapsamında düzenlenmektedir. Evli çiftler için tüm standart yöntemler yasal olarak uygulanabilmektedir.
+<Accordion title="GnRH iğneleri yumurta dondurmanın yerine geçer mi?">
+Genellikle hayır. GnRH agonistleri bazı hastalarda ek koruma olarak düşünülebilir; ancak yumurta, embriyo veya over dokusu dondurma gibi yerleşik yöntemlerin yerine otomatik olarak geçmez.
+</Accordion>
 
-## İlk Adım: Ne Yapmalı?
+<Accordion title="Tedavi başladıktan sonra sperm dondurulur mu?">
+Mümkünse sperm dondurma tedavi başlamadan önce yapılmalıdır. Tedavi başladıktan sonra spermde genetik hasar riski ve örnek kullanımıyla ilgili belirsizlikler artabileceği için mutlaka uzman değerlendirmesi gerekir.
+</Accordion>
+</div>
 
-Kanser tanısı aldıktan sonra fertilitenizi korumak için şu adımları izleyin:
+<div data-reveal>
+<EvidenceGradeCard grade={frontmatter.recommendationGrade} />
+</div>
 
-1. **Onkolojinizle konuşun.** Hangi ilaçları veya radyasyon tedavisini alacağınızı, bunların fertilite üzerindeki riskini ve tedaviye ne kadar süre kaldığını sorun. "Fertilite koruma için zaman var mı?" diye açıkça sorun.
+<div data-reveal class="mt-12 bg-slate-50 p-8 rounded-3xl border border-slate-200">
+**Sizin İçin Seçtiğimiz Diğer Rehberler:**
+- [Yumurta dondurma rehberi](/makaleler/yumurta-dondurma-rehberi/)
+- [Fertilite koruma merkezi](/fertilite-koruma/)
+- [Embriyo dondurma ve transfer](/makaleler/taze-dondurulmus-transfer/)
+- [Erkek infertilitesi](/erkek-infertilitesi/)
+- [Genetik testler ve PGT](/genetik-testler/)
+</div>
 
-2. **Üreme tıbbı uzmanına yönlendirme isteyin.** Onkolojinizden sizi bir üreme endokrinolojisti veya tüp bebek uzmanına yönlendirmesini talep edin. Bu uzmanlar, kanserin tedavisini geciktirmeden fertilite koruma planı hazırlamanıza yardımcı olabilir.
+<div data-reveal class="mt-12 pt-8 border-t border-slate-200 text-sm text-slate-600">
+## Yasal Uyarı
+**Son tıbbi revizyon tarihi: 12 Mayıs 2026.**
+Bu makale bilgilendirme amaçlıdır; tıbbi teşhis ve tedavi yerine geçmez. Kanser tedavisi ve fertilite koruma kararları onkoloji ekibiniz, üreme tıbbı uzmanınız ve ilgili branş hekimleriyle birlikte verilmelidir.
+</div>
 
-3. **Zaman kaybetmeyin.** Tedaviye kadar geçen süre değerlidir. Oosit veya sperm dondurma işlemleri günler-haftalar içinde tamamlanabilir. Ne kadar erken başvurursanız, seçenekleriniz o kadar genişler.
+</div>
 
-Kanser tanısı almak ağırdır; ancak bu dönemde alınacak küçük ama kararlı adımlar, ileride yaşamak istediğiniz hayatı şekillendirme gücü taşır. Fertilite koruma, hastalıkla mücadelenizden taviz vermeden geleceğe bir kapı aralamaktır. Yalnız değilsiniz — doğru ekip ve doğru bilgiyle bu yolu birlikte yürüyebiliriz.
+export const cancerFertilityFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "Kanser tedavisi başlamadan önce fertilite koruma şart mı?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Şart değildir; kişisel bir karardır. Ancak doğurganlık isteği olan veya ileride isteyip istemediğinden emin olmayan herkes risk ve seçenekler hakkında bilgilendirilmelidir."
+    }
+  }, {
+    "@type": "Question",
+    "name": "Yumurta dondurma kanser tedavisini geciktirir mi?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Her zaman değil. Random-start protokollerle çoğu durumda süreç yaklaşık 2 hafta içinde tamamlanabilir. Güvenli olup olmadığına onkolog ve üreme tıbbı uzmanı birlikte karar verir."
+    }
+  }, {
+    "@type": "Question",
+    "name": "Over dokusu dondurma deneysel mi?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Güncel ASCO ve ASRM kılavuzları, over dokusu dondurmayı seçilmiş hastalarda yerleşik seçenekler arasında değerlendirir. Testis dokusu dondurma ise ergenlik öncesi erkek çocuklarda deneysel kabul edilir."
+    }
+  }, {
+    "@type": "Question",
+    "name": "GnRH iğneleri yumurta dondurmanın yerine geçer mi?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Genellikle hayır. GnRH agonistleri bazı hastalarda ek koruma olarak düşünülebilir; ancak yerleşik dondurma yöntemlerinin yerine otomatik olarak geçmez."
+    }
+  }]
+};
 
+<script type="application/ld+json" set:html={JSON.stringify(cancerFertilityFaqSchema)} />
+<RevealScript />
