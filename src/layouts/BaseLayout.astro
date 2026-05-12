@@ -162,8 +162,14 @@ const siteGraph = {
 
 		<!-- Google Analytics (GA4) - Loads only after cookie consent -->
 		<script is:inline>
-			const analyticsConsentKey = 'cookie-consent-v1.0';
-			const hasAnalyticsConsent = () => localStorage.getItem(analyticsConsentKey) === 'accepted';
+			const analyticsConsentKey = 'cookie-consent-v1.1';
+			const hasAnalyticsConsent = () => {
+				try {
+					return localStorage.getItem(analyticsConsentKey) === 'accepted';
+				} catch {
+					return false;
+				}
+			};
 
 			function loadGA() {
 				if (!hasAnalyticsConsent()) return;
@@ -203,6 +209,12 @@ const siteGraph = {
 
 			// Fallback load after 3.5 seconds, only when consent exists.
 			setTimeout(loadGA, 3500);
+
+			window.addEventListener('cookie-consent:updated', function(event) {
+				if (event.detail?.status === 'accepted') {
+					loadGA();
+				}
+			});
 		</script>
 
 		<!-- Preload Fonts -->

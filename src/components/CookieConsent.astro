@@ -3,7 +3,7 @@ interface Props {
   version?: string;
 }
 
-const { version = "1.0" } = Astro.props;
+const { version = "1.1" } = Astro.props;
 ---
 
 <div
@@ -19,7 +19,7 @@ const { version = "1.0" } = Astro.props;
       <div class="flex-1 min-w-0">
         <h3 id="cookie-title" class="font-bold text-gray-900 text-sm md:text-base mb-1 md:mb-2">Çerez Kullanımı</h3>
         <p id="cookie-description" class="text-xs md:text-sm text-gray-600 leading-snug">
-          Web sitesinin işlevselliğini sağlamak ve kullanıcı deneyimini iyileştirmek için çerezler kullanıyoruz.
+          Zorunlu çerezleri siteyi çalıştırmak için, analitik çerezleri ise yalnızca onayınızla kullanıyoruz.
           <a href="/cerez-politikasi" class="text-primary-600 hover:underline">Çerez Politikası</a>.
         </p>
       </div>
@@ -41,43 +41,72 @@ const { version = "1.0" } = Astro.props;
   </div>
 </div>
 
+<button
+  id="cookie-preferences-toggle"
+  type="button"
+  class="fixed left-3 bottom-3 md:left-5 md:bottom-5 z-40 hidden rounded-full border border-gray-300 bg-white px-4 py-2 text-xs font-bold text-gray-800 shadow-lg transition-colors hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary-300 focus:ring-offset-2"
+  aria-controls="cookie-consent"
+>
+  Çerez tercihleri
+</button>
+
 <script define:vars={{ version }}>
   // Default-hidden via translate-y-full; reveal only if consent missing.
   // Avoids the flash where SSR shows the banner then JS hides it.
   const consentKey = `cookie-consent-v${version}`;
   const banner = document.getElementById('cookie-consent');
-  const hasConsent = localStorage.getItem(consentKey);
+  const toggle = document.getElementById('cookie-preferences-toggle');
+  const readConsent = () => {
+    try {
+      return localStorage.getItem(consentKey);
+    } catch {
+      return null;
+    }
+  };
+  const saveConsent = (status) => {
+    try {
+      localStorage.setItem(consentKey, status);
+    } catch {
+      // If storage is unavailable, keep the visible interaction working.
+    }
+    window.dispatchEvent(new CustomEvent('cookie-consent:updated', { detail: { status } }));
+  };
 
   const hide = () => {
     banner.classList.add('translate-y-full');
     banner.setAttribute('aria-hidden', 'true');
+    toggle.classList.remove('hidden');
     // Remove from layout after slide-out animation
     setTimeout(() => { banner.style.display = 'none'; }, 320);
   };
 
   const show = () => {
+    banner.style.display = '';
+    toggle.classList.add('hidden');
     requestAnimationFrame(() => {
       banner.classList.remove('translate-y-full');
       banner.setAttribute('aria-hidden', 'false');
     });
   };
 
-  if (!hasConsent) {
+  if (!readConsent()) {
     show();
   } else {
     banner.style.display = 'none';
+    toggle.classList.remove('hidden');
   }
 
   document.getElementById('cookie-accept').addEventListener('click', () => {
-    localStorage.setItem(consentKey, 'accepted');
-    window.__loadGA?.();
+    saveConsent('accepted');
     hide();
   });
 
   document.getElementById('cookie-reject').addEventListener('click', () => {
-    localStorage.setItem(consentKey, 'rejected');
+    saveConsent('rejected');
     hide();
   });
+
+  toggle.addEventListener('click', show);
 </script>
 
 <style>
