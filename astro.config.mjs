@@ -59,6 +59,10 @@ export default defineConfig({
           'https://tupbebek.com/sorunlar',
           'https://tupbebek.com/yayin-sureci/',
           'https://tupbebek.com/yayin-sureci',
+          'https://tupbebek.com/aciklanamayan-kisirlik/',
+          'https://tupbebek.com/aciklanamayan-kisirlik',
+          'https://tupbebek.com/tup-bebek-fiyatlari/',
+          'https://tupbebek.com/tup-bebek-fiyatlari',
           'https://tupbebek.com/kvkk/',
           'https://tupbebek.com/kvkk',
         ];

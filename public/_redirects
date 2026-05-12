@@ -11,9 +11,9 @@
 # --------------------------------------------
 # 1. Eski site ana sayfa ve kategori redirect'leri
 # --------------------------------------------
-/sorunlar                                       /kadin-infertilitesi                            301
-/yayin-sureci                                   /editoryal-politika/                            301
-/kvkk                                           /gizlilik-politikasi                            301
+/sorunlar*                                      /kadin-infertilitesi/                           301
+/yayin-sureci*                                  /editoryal-politika/                            301
+/kvkk*                                          /gizlilik-politikasi/                           301
 
 # --------------------------------------------
 # 2. Eski makaleler → Yeni makaleler (kanonik düzeltmeler)
