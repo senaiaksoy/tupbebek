@@ -1,6 +1,6 @@
 ---
-title: "4AA, 3BB veya 5BC: Embriyo Kalite Kodları ve Gebelik Şansınız"
-description: "Embriyo 4AA, 3BB veya 5BC? Tüp bebek laboratuvar raporunuzu Yayın Kurulu ile çözün. Bebeğinizin genetik potansiyelinin neden dış görünüşten daha önemli olduğunu keşfedin."
+title: "4AA, 3BB, 5BC Embriyo Ne Demek? Laboratuvar Raporu Yorumlama"
+description: "Embriyo kalite kodları nasıl okunur? 4AA, 3BB, 5BC, ICM, trofektoderm, blastosist genişleme derecesi, PGT-A ve embriyo transfer önceliğini sade Türkçe ile açıklıyoruz."
 publishDate: 2025-12-22
 author: "Doç. Dr. Senai Aksoy"
 authorTitle: "Kadın Hastalıkları ve Doğum Uzmanı"
@@ -8,12 +8,12 @@ authorCredentials: "Üreme Tıbbı ve Yardımcı Üreme Teknikleri"
 authorYoutube: "https://www.youtube.com/@DocentDrSenaiAksoy"
 medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Tıbbi Danışma Kurulu"
-reviewDate: 2026-04-09
-lastModified: 2026-05-11
+reviewDate: 2026-05-12
+lastModified: 2026-05-12
 category: "Tedavi Yöntemleri"
-recommendationGrade: C
+recommendationGrade: B
 image: "/images/library/laboratuvar/oocytes-prior-to-a-f-and-k-and-after-insemination.webp"
-imageAlt: "embriyo tup bebek laboratuvar raporu yorumlama"
+imageAlt: "tüp bebek laboratuvarında embriyo kalite kodları ve rapor yorumlama"
 references:
   - title: "Morphological parameters of the blastocyst to predict embryo quality: a systematic review and meta-analysis"
     authors: "Zhang L, Li C, Zhu N et al."
@@ -21,50 +21,57 @@ references:
     year: 2025
     doi: "10.1007/s10815-025-03424-6"
     pmid: "40272716"
-  - title: "Pre-Vitrification and Post-Warming Variables of Vitrified-Warmed Blastocysts That Are Predictable for Implantation"
-    authors: "Gabrielsen A, Iversen LH, Fedder J et al."
-    journal: "Journal of Clinical Medicine"
-    year: 2023
-    doi: "10.3390/jcm12196389"
-    pmid: "37835035"
-  - title: "Cleavage-stage versus blastocyst-stage embryo transfer in assisted reproductive technology"
-    authors: "Glujovsky D, Quinteiro Retamar AM, Alvarez Sedo CR et al."
+  - title: "Blastocyst-stage versus cleavage-stage embryo transfer in assisted reproductive technology"
+    authors: "Glujovsky D, Cornelisse S, Blake D et al."
     journal: "Cochrane Database of Systematic Reviews"
-    year: 2022
-    doi: "10.1002/14651858.CD002118.pub6"
-    pmid: "35588094"
-  - title: "ESHRE Clinical Embryologist certification: the first 10 years"
-    authors: "Kovačič B, Prados FJ, Plas C et al."
-    journal: "Human Reproduction Open"
-    year: 2020
-    doi: "10.1093/hropen/hoaa026"
-    pmid: "32864474"
+    year: 2026
+    doi: "10.1002/14651858.CD002118.pub7"
+    url: "https://www.cochrane.org/evidence/CD002118_when-trying-have-baby-through-assisted-conception-it-better-transfer-embryo-womb-day-3-or-day-5"
+    pmid: "41574757"
+  - title: "The use of preimplantation genetic testing for aneuploidy: a committee opinion"
+    authors: "Practice Committee of the American Society for Reproductive Medicine"
+    journal: "Fertility and Sterility"
+    year: 2024
+    url: "https://www.asrm.org/practice-guidance/practice-committee-documents/the-use-of-preimplantation-genetic-testing-for-aneuploidy-a-committee-opinion-2024/"
+  - title: "Blastocyst culture and transfer in clinically assisted reproduction: a committee opinion"
+    authors: "Practice Committee of the American Society for Reproductive Medicine"
+    journal: "Fertility and Sterility"
+    year: 2018
+    url: "https://www.asrm.org/practice-guidance/practice-committee-documents/blastocyst-culture-and-transfer-in-clinically-assisted-reproduction-a-committee-opinion-20182/"
+  - title: "Grading Scales: Gardner Grading Scale"
+    authors: "American Society for Reproductive Medicine"
+    journal: "ASRM Academy"
+    url: "https://www.asrm.org/asrm-academy/asrm-academy-on-the-go/embryo-data-grading--evaluation/grading-scales/"
+  - title: "ESHRE Recommendations on Good Practice in the IVF laboratory"
+    authors: "European Society of Human Reproduction and Embryology"
+    journal: "ESHRE"
+    year: 2026
+    url: "https://www.eshre.eu/Guidelines-and-Legal/Guidelines/Guidelines-in-development/IVF-labs-review"
 ---
 
 import HizliCevap from '../../components/HizliCevap.astro';
-
-<HizliCevap question="4AA, 3BB veya 5BC nedir, nasıl yönetilir?">
-Embriyo 4AA, 3BB veya 5BC? Tüp bebek laboratuvar raporunuzu Yayın Kurulu ile çözün. Bebeğinizin genetik potansiyelinin neden dış görünüşten daha önemli olduğunu keşfedin.
-</HizliCevap>
-
 import Accordion from "../../components/global/Accordion.astro";
 import MedicalInfoBox from '../../components/global/MedicalInfoBox.astro';
 import QuoteBlock from '../../components/global/QuoteBlock.astro';
-import JSONLD from '../../components/global/JSONLD.astro';
 import RevealScript from '../../components/global/RevealScript.astro';
 import Video from '../../components/global/Video.astro';
 import InlineEvidence from '../../components/InlineEvidence.astro';
+import EvidenceGradeCard from '../../components/EvidenceGradeCard.astro';
 
-<div class="mesh-hero pt-12 pb-20 px-4 md:px-0 -mx-4 md:-mx-0 mb-12 rounded-3xl shadow-sm border border-white/40" style="background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #dbeafe 100%);">
+<HizliCevap question="4AA, 3BB veya 5BC embriyo ne demek?">
+Embriyo kalite kodunda sayı blastosistin genişleme aşamasını, ilk harf iç hücre kitlesini (ICM), ikinci harf trofektodermi (TE) anlatır. Örneğin 4AA genişlemiş ve morfolojik olarak çok iyi görünen bir blastosisttir; 3BB orta-iyi bir blastosisttir; 5BC ise kabuktan çıkmaya başlayan ama özellikle trofektoderm tarafında daha zayıf görünen bir embriyodur. Bu kodlar olasılığı anlatır, kesin gebelik sonucu vermez.
+</HizliCevap>
+
+<div class="mesh-hero pt-12 pb-20 px-4 md:px-0 -mx-4 md:-mx-0 mb-12 rounded-3xl shadow-sm border border-white/40" style="background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #f8fafc 100%);">
   <div class="max-w-4xl mx-auto" data-reveal>
     <div class="inline-block px-4 py-1 rounded-full bg-blue-100 text-blue-700 text-sm font-bold mb-4">
       Laboratuvarın Dili
     </div>
-    <h1 class="text-4xl md:text-6xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-slate-800 leading-tight">
+    <h1 class="text-4xl md:text-6xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-slate-900 leading-tight">
       {frontmatter.title}
     </h1>
     <p class="text-xl md:text-2xl text-slate-700 font-medium max-w-2xl leading-relaxed">
-      Embriyo raporunuzdaki karmaşık kodları bir dedektif titizliğiyle çözüyoruz. Görünüş önemli olsa da, asıl güç içeride saklıdır.
+      Embriyo raporundaki sayı ve harfler bir hüküm değil, klinik karar için kullanılan bir yol haritasıdır. Kodları okuyalım; ama kader gibi yorumlamayalım.
     </p>
   </div>
 </div>
@@ -72,145 +79,284 @@ import InlineEvidence from '../../components/InlineEvidence.astro';
 <div class="max-w-4xl mx-auto space-y-12 blog-content-reveal">
 
 <div data-reveal>
-<MedicalInfoBox title="Hızlı Bakış: Embriyo Derecelendirmesi" icon="🔬" color="blue">
-Embriyo derecelendirmesi (4AA, 3BB vb.), embriyoları dış görünüşlerine göre sıralama yöntemidir. **Nicelik (Harfler) her zaman Nitelik (Genetik) demek değildir.** <InlineEvidence grade="B" /> AA embriyoların şansı daha yüksek olsa da, BB ve hatta BC embriyoları sağlıklı bebeklere dönüşebilir. <InlineEvidence grade="C" /> Transfer için en iyi embriyoyu seçerken; gelişim hızı, hücre yapısı ve genetik potansiyel (PGT-A) birlikte değerlendirilir. <InlineEvidence grade="B" />
+<MedicalInfoBox title="Hızlı Bakış: Embriyo Kalite Kodu Nasıl Okunur?" icon="Lab" color="blue">
+**4AA, 3BB veya 5BC gibi kodlar embriyonun mikroskop altındaki görünümünü tarif eder.** Sayı, blastosistin ne kadar genişlediğini; ilk harf bebeğe dönüşecek iç hücre kitlesini; ikinci harf plasentayı oluşturacak trofektodermi gösterir. Morfoloji gebelik şansıyla ilişkilidir; ancak genetik yapı, yaş, rahim hazırlığı ve transfer tekniği de sonucu etkiler. <InlineEvidence grade="B" />
 </MedicalInfoBox>
 </div>
 
-<div data-reveal class="prose prose-slate max-w-none text-lg">
- Kliniğimde 30+ senedir çiftlerin çocuk sahibi olmasına destek oluyorum. Herkes için o beklenen an, embriyo raporunun geldiği zamandır. O rapor, teknik kelimeler ve sayılarla dolu, sanki bir hüküm gibi duran soğuk bir evraktır.
+## İçindekiler
 
-Ben bu durumu önemli bir derbiye benzetiyorum. Tribünde oturmuş heyecanla beklerken, size sadece istatistik raporu verirler: kim daha çok topa sahip olmuş, kaç şut çekilmiş... İşte embriyo derecelendirmesi de böyle bir şey; o an embriyolarınızın nasıl olduğunun bir incelemesi. Ama bu, maçın skorunu, yani sağlıklı bir bebeğinizin olup olmayacağını tam olarak göstermez.
-</div>
+- [Laboratuvar raporundaki kod neyi gösterir?](#kod)
+- [Gardner sistemi nasıl okunur?](#gardner)
+- [4AA, 3BB, 5BC pratikte ne anlama gelir?](#ornekler)
+- [Morfoloji mi, genetik mi daha önemli?](#genetik)
+- [Dondurulmuş embriyoda çözülme sonrası görüntü değişir mi?](#cozulme)
+- [Time-lapse ve yapay zeka raporu nasıl yorumlanır?](#timelapse)
+- [Transfer önceliği nasıl belirlenir?](#transfer)
+- [Türkçe kontrol notu](#turkce)
+- [Sıkça sorulan sorular](#faq)
 
 <div data-reveal>
 <Video id="yT2dmjxZ3Qs" />
 </div>
 
 <div data-reveal>
-<h2 id="gardner">Gardner Sistemi: IVF'nin Da Vinci Şifresi</h2>
+<h2 id="kod">Laboratuvar Raporundaki 4AA, 3BB, 5BC Kodu Neyi Gösterir?</h2>
 
-Dünya standardı olan Gardner sistemi, embriyoyu üç bileşene ayırır. [David Gardner tarafından geliştirilen bu sistem](https://pmc.ncbi.nlm.nih.gov/makaleler/PMC10694400/), blastosistlerin değerlendirilmesinde altın referanstır. <InlineEvidence grade="B" />
+Embriyo kalite kodu, embriyoloğun blastosisti mikroskop altında gördüğü anda yaptığı morfolojik değerlendirmedir. Bu değerlendirme üç parçadan oluşur:
+
+| Kod Parçası | Ne Anlatır? | Örnek |
+| :--- | :--- | :--- |
+| **Sayı** | Blastosistin genişleme ve kabuktan çıkma aşaması | 3, 4, 5, 6 |
+| **İlk harf** | İç hücre kitlesi, yani bebeğe dönüşecek hücre grubu | A, B, C |
+| **İkinci harf** | Trofektoderm, yani plasentayı oluşturacak dış hücre tabakası | A, B, C |
+
+Örneğin **4AA**: genişlemiş bir blastosist, iyi görünen iç hücre kitlesi ve iyi görünen trofektoderm demektir. **3BB**: tam blastosist aşamasında, orta-iyi görünümlü ICM ve TE demektir. **5BC**: kabuktan çıkmaya başlamış, ICM tarafı orta, trofektoderm tarafı daha zayıf görünen blastosist demektir.
+
+Bu kod, embriyonun “görüntü kalitesi”dir. Bir fotoğraf karesi gibidir; embriyonun tüm biyolojik potansiyelini tek başına göstermez.
+</div>
+
+<div data-reveal>
+<h2 id="gardner">Gardner Sistemi Nasıl Okunur?</h2>
+
+Blastosist raporlarında en sık kullanılan sistem Gardner sınıflamasıdır. ASRM eğitim materyalleri de blastosist değerlendirmesinde genişleme aşaması, iç hücre kitlesi ve trofektoderm gibi morfolojik öğelerin kullanıldığını belirtir. <InlineEvidence grade="B" />
 
 <div class="glass p-8 rounded-3xl border border-blue-100 shadow-sm mt-6 overflow-x-auto">
-<h3 class="text-xl font-bold mb-6 text-blue-800">📊 Genişleme Derecesi (Sayılar)</h3>
+<h3 class="text-xl font-bold mb-6 text-blue-800">Genişleme Derecesi: Sayılar</h3>
 
-| Derece | Aşama | Teknik Detay |
+| Derece | Aşama | Pratik Yorum |
 | :--- | :--- | :--- |
-| **1-2** | Erken Blastosist | Boşluk oluşmaya yeni başlamıştır. |
-| **3** | Tam Blastosist | Boşluk tüm embriyoyu doldurur. |
-| **4** | **Genişlemiş** | **İdeal aşama.** Kabuk incelmiştir, çıkmaya hazırdır. |
-| **5-6** | Hatching / Hatched | Kabuktan çıkmaya başlamış veya tamamen çıkmıştır. |
+| **1** | Erken blastosist | Blastosel boşluğu yeni oluşur |
+| **2** | Blastosist | Boşluk embriyonun önemli kısmını kaplar |
+| **3** | Tam blastosist | Boşluk embriyoyu doldurur |
+| **4** | Genişlemiş blastosist | Kabuk incelir, transfer/dondurma için sık görülen güçlü aşamadır |
+| **5** | Hatching blastosist | Embriyo kabuktan çıkmaya başlar |
+| **6** | Hatched blastosist | Embriyo kabuktan tamamen çıkmıştır |
 </div>
 </div>
 
 <div data-reveal>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
   <div class="bg-indigo-50 p-8 rounded-3xl border border-indigo-100">
-    <h3 class="text-xl font-bold mb-4 text-indigo-800">İlk Harf: İç Hücre (ICM)</h3>
-    <p class="text-sm mb-4">Bebeğe dönüşecek olan kısımdır.</p>
+    <h3 class="text-xl font-bold mb-4 text-indigo-800">İlk Harf: ICM</h3>
+    <p class="text-sm mb-4">ICM, bebeğe dönüşecek iç hücre kitlesidir.</p>
     <ul class="space-y-2 text-sm">
-      <li><strong>A:</strong> Sıkı, yoğun ve çok sayıda hücre.</li>
-      <li><strong>B:</strong> Daha gevşek, daha az hücre.</li>
-      <li><strong>C:</strong> Çok az hücre, ayırt edilmesi zor.</li>
+      <li><strong>A:</strong> Sıkı, belirgin ve çok sayıda hücre.</li>
+      <li><strong>B:</strong> Daha gevşek ama seçilebilir hücre grubu.</li>
+      <li><strong>C:</strong> Az sayıda veya zor seçilen hücre grubu.</li>
     </ul>
   </div>
   <div class="bg-emerald-50 p-8 rounded-3xl border border-emerald-100">
-    <h3 class="text-xl font-bold mb-4 text-emerald-800">İkinci Harf: Tropektoderm (TE)</h3>
-    <p class="text-sm mb-4">Plasentayı ve tutunma tabakasını oluşturur.</p>
+    <h3 class="text-xl font-bold mb-4 text-emerald-800">İkinci Harf: TE</h3>
+    <p class="text-sm mb-4">Trofektoderm, plasentayı oluşturacak dış hücre tabakasıdır.</p>
     <ul class="space-y-2 text-sm">
-      <li><strong>A:</strong> Çok sayıda hücreden oluşan kalın bir şerit.</li>
-      <li><strong>B:</strong> Seyrek ama düzenli hücreler.</li>
-      <li><strong>C:</strong> İri, düzensiz ve çok az hücre.</li>
+      <li><strong>A:</strong> Çok sayıda, düzenli ve birbirine tutunan hücre.</li>
+      <li><strong>B:</strong> Daha seyrek ama düzenli hücreler.</li>
+      <li><strong>C:</strong> Az, iri veya düzensiz hücreler.</li>
     </ul>
   </div>
 </div>
 </div>
 
 <div data-reveal>
-<QuoteBlock author="tupbebek.com Yayın Kurulu">
-Morfometri çalışmaları gösteriyor ki; trofektoderm (2. harf) hamilelik için en iyi belirleyici olabilir. Embriyonun iyi yerleşmesi için sağlam bir plasentaya (A derecesi) ihtiyacı vardır.
+<QuoteBlock author="tupbebek.com Tıbbi Danışma Kurulu">
+Embriyo derecesi, transfer sıralaması için yararlıdır; ancak hasta yaşı, embriyonun geliştiği gün, PGT-A sonucu, rahim hazırlığı ve önceki tedavi öyküsü birlikte değerlendirilmeden tek başına karar verdirmez.
 </QuoteBlock>
 </div>
 
 <div data-reveal>
-<h2 id="analiz">Harf ve Sayıların Analizi (4AA, 3BB, 5BC...)</h2>
+<h2 id="ornekler">4AA, 3BB, 5BC Pratikte Ne Anlama Gelir?</h2>
 
-<Accordion title="En Üst Düzey: 4AA, 5AA, 6AA">
-Bunlar "sınıfın birincileridir". Başarı oranları 35 yaş altında %60-70 civarındadır. <InlineEvidence grade="C" /> Ancak yaş 38 üzerindeyse, "şık bir arabanın motoruna baktırmak gibi" genetik kontrol (PGT-A) şarttır. <InlineEvidence grade="B" />
+<Accordion title="4AA embriyo ne demek?">
+4AA, genişlemiş blastosist aşamasında ve iki harfi de A olan embriyodur. Morfolojik olarak güçlü bir adaydır. Yine de 4AA embriyo her zaman gebelik sağlar denemez; özellikle kadın yaşı ve kromozomal yapı belirleyici olabilir.
 </Accordion>
 
-<Accordion title="Ortalama ve İyi: 3BB, 4BB, 5BB">
-Tüp bebekle doğan çoğu bebek buradan çıkar. %40-50 başarı şansı sunarlar. BB embriyo tamamen sağlıklı bir embriyodur, endişelenmeyin.
+<Accordion title="3BB embriyo kötü mü?">
+Hayır. 3BB genellikle orta-iyi kalite kabul edilen, transfer edilebilir bir blastosisttir. “A değilse kötü” düşüncesi doğru değildir. Birçok sağlıklı gebelik BB embriyolardan gelişebilir.
 </Accordion>
 
-<Accordion title="Düşük Ortalama: 3BC, 5BC, 4CB">
-Yapılardan birinde zayıflık vardır. Başarı şansı %25-35 civarındadır. Her üç denemeden birinde başarılı olma ihtimali hiç de küçümsenecek bir oran değildir!
+<Accordion title="5BC embriyo transfer edilir mi?">
+5BC, kabuktan çıkmaya başlamış ama özellikle trofektoderm tarafı daha zayıf görünen bir embriyodur. Transfer kararı; eldeki diğer embriyolar, yaş, PGT-A sonucu, önceki denemeler ve laboratuvarın çözülme sonrası gözlemiyle birlikte verilir.
+</Accordion>
+
+<Accordion title="6AA, 5AA'dan daha mı iyi?">
+Her zaman değil. 5 ve 6, embriyonun kabuktan çıkma aşamasını gösterir. Bazı laboratuvarlar 5AA ve 6AA arasında pratikte çok büyük fark görmeyebilir; transfer önceliği klinik bağlama göre belirlenir.
+</Accordion>
+
+<Accordion title="C harfi gebelik olmaz anlamına mı gelir?">
+Hayır. C harfi daha zayıf morfoloji demektir; imkansızlık demek değildir. Özellikle tek embriyo varsa veya PGT-A sonucu euploid ise, C harfli embriyolar da klinik olarak değerlendirilebilir.
 </Accordion>
 </div>
 
 <div data-reveal>
-<h2 id="genetik">Genetik vs Morfoloji: PGT-A Gerçeği</h2>
+<h2 id="genetik">Morfoloji mi, Genetik mi Daha Önemli?</h2>
 
-Dışarıdan gördüğümüz sadece bir görünüş; asıl sır genlerdedir.
-**Altın Kural:** Genetik olarak normal (Euploid) bir **4CC** embriyo, genetik olarak anormal (Anöploit) bir **4AA** embriyodan çok daha kıymetlidir. <InlineEvidence grade="B" />
+Embriyo derecesi dış görünümü anlatır; PGT-A ise blastosistten alınan hücrelerde kromozom sayısını değerlendirmeye çalışır. Bu iki bilgi aynı şey değildir.
 
-Özellikle şu durumlarda genetik taramayı tavsiye ediyorum:
-- 38 yaş üstü anne adayları.
-- Tekrarlayan tüp bebek başarısızlıkları.
-- Bilinen kromozomal sorunlar.
+**Temel kural:** Genetik olarak normal olduğu bilinen daha düşük morfolojili bir embriyo, genetik olarak anormal olduğu bilinen çok iyi görünümlü embriyodan daha anlamlı bir transfer adayı olabilir. <InlineEvidence grade="B" />
+
+Ama burada denge önemlidir: ASRM’nin 2024 PGT-A komite görüşü, PGT-A’nın her IVF hastasında rutin tarama olarak değerinin kanıtlanmadığını; bazı gruplarda yararlı olabileceğini, ancak tüm hastalara otomatik çözüm gibi sunulmaması gerektiğini vurgular. <InlineEvidence grade="A" />
+
+PGT-A kararı özellikle şu durumlarda daha sık tartışılır:
+
+- İleri anne yaşı
+- Tekrarlayan gebelik kaybı
+- Tekrarlayan başarısız transfer
+- Bilinen kromozomal yeniden düzenlenme öyküsü
+- Çok sayıda blastosist arasından seçim yapma ihtiyacı
+
+Bu nedenle “en iyi embriyo” bazen en güzel görünen embriyo değil, klinik bağlama göre en güvenli ve en anlamlı transfer adayıdır.
+</div>
+
+<div data-reveal>
+<h2 id="cozulme">Dondurulmuş Embriyoda Çözülme Sonrası Görüntü Değişir mi?</h2>
+
+Evet. Blastosist, içinde sıvı bulunan canlı bir yapıdır. Dondurma ve çözme sırasında geçici olarak büzüşebilir; bu tek başına kötüye işaret değildir. Birçok laboratuvar, çözülme sonrası embriyonun yeniden genişlemesini ve hücre bütünlüğünü izler.
+
+Çözülme sonrası raporda şu ifadeler görülebilir:
+
+| Rapor İfadesi | Ne Anlama Gelebilir? |
+| :--- | :--- |
+| **Survived / canlı** | Embriyo çözülmeyi atlatmış |
+| **Re-expanded / yeniden genişledi** | Blastosist boşluğu tekrar genişlemiş |
+| **Collapsed / büzüşmüş** | Geçici olabilir; takipte yeniden genişleme önemlidir |
+| **Degeneration / dejenerasyon** | Hücre kaybı veya canlılık sorunu izlenmiş |
+
+Bu nedenle çözülme sonrası tek bir fotoğraf yerine embriyoloğun takip notu ve transfer öncesi son değerlendirmesi daha değerlidir. <InlineEvidence grade="B" />
 </div>
 
 <div data-reveal class="bg-blue-900 text-white p-10 rounded-3xl shadow-xl">
-<h3 class="text-2xl font-bold mb-6">Yeni Teknoloji: Embryoscope (Time-Lapse)</h3>
+<h2 id="timelapse" class="text-2xl font-bold mb-6 text-white">Time-Lapse, Embryoscope ve Yapay Zeka Raporları</h2>
 <p class="mb-6 opacity-90 text-lg leading-relaxed">
-Geleneksel yöntemde embriyoyu her gün dışarı çıkarıp fotoğraf çekiyoruz. Embryoscope'ta ise her 10 dakikada bir çekim yapılarak bir "film" oluşturulur.
+Time-lapse sistemlerinde embriyo inkübatörden çıkarılmadan aralıklı görüntülenir. Bu sayede bölünme zamanları, düzensiz bölünmeler ve gelişim ritmi daha ayrıntılı izlenebilir.
 </p>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
   <div class="bg-white/10 p-4 rounded-xl border border-white/20">
-    <strong>Sürekli İzleme:</strong> İnkübatörden çıkarılmadan, ortam bozulmadan izlenir.
+    <strong>Sürekli izlem:</strong> Embriyo daha az dış ortam değişimine maruz kalır.
   </div>
   <div class="bg-white/10 p-4 rounded-xl border border-white/20">
-    <strong>Morfokinetik:</strong> Hücre bölünme zamanlamaları saniyelik kaydedilir.
+    <strong>Morfokinetik veri:</strong> Hücre bölünme zamanları rapora ek bilgi sağlar.
   </div>
   <div class="bg-white/10 p-4 rounded-xl border border-white/20">
-    <strong>Yapay Zeka:</strong> KIDScore gibi sistemlerle en başarılı embriyo seçilir.
+    <strong>Karar desteği:</strong> Yapay zeka veya skor algoritmaları embriyo seçimini destekleyebilir.
   </div>
 </div>
+<p class="mt-6 opacity-90 text-sm leading-relaxed">
+Ancak time-lapse ve yapay zeka skorları tek başına “garantili başarı” anlamına gelmez. Kanıt, bu teknolojilerin bazı laboratuvarlarda karar desteği sağlayabileceğini; fakat canlı doğumu kesin artıran evrensel bir çözüm gibi sunulmaması gerektiğini gösterir. <InlineEvidence grade="C" />
+</p>
+</div>
+
+<div data-reveal>
+<h2 id="transfer">Transfer Önceliği Nasıl Belirlenir?</h2>
+
+Embriyo seçimi genellikle tek bir skora göre değil, birkaç bilginin birlikte okunmasıyla yapılır:
+
+1. Kadın yaşı ve tedavi öyküsü
+2. Embriyonun geliştiği gün: 5., 6. veya 7. gün
+3. Blastosist genişleme derecesi
+4. ICM ve trofektoderm kalitesi
+5. Dondurma ve çözülme sonrası canlılık
+6. PGT-A sonucu varsa kromozomal durum
+7. Önceki transfer sonuçları
+8. Rahim içi hazırlık ve transfer tekniği
+
+Cochrane’in güncel derlemesi, blastosist transferinin iyi prognozlu hastalarda taze transfer başına canlı doğum olasılığını artırabileceğini; ancak kümülatif sonuçlar, embriyo dondurma oranı ve transfer edilememe riski gibi başlıkların ayrıca dikkate alınması gerektiğini belirtir. <InlineEvidence grade="A" />
+
+Bu yüzden raporu okurken en iyi soru şudur: “Bu embriyo kodu, benim yaşıma, önceki denemelerime ve toplam embriyo havuzuma göre ne anlama geliyor?”
+</div>
+
+<div data-reveal>
+<h2 id="turkce">Türkçe Kontrol Notu</h2>
+
+Bu rehberde hasta dilini özellikle sade tuttuk. “ICM” için “iç hücre kitlesi”, “TE/trophectoderm” için “trofektoderm”, “hatching” için “kabuktan çıkma”, “blastocyst” için “blastosist” karşılığını kullandık. “Kalitesiz embriyo” gibi moral bozucu ve bilimsel olarak kaba ifadeler yerine “daha zayıf morfoloji” veya “daha düşük transfer önceliği” dilini tercih ettik.
 </div>
 
 <div data-reveal>
 <h2 id="faq">Sıkça Sorulan Sorular</h2>
 
-<Accordion title="3BB embriyo kötü mü?">
-Hayır. B 'iyi' demektir. 3BB ortalamadır ve gayet başarılıdır. A olmamasına takılmayın.
+<Accordion title="4AA embriyo kesin tutar mı?">
+Hayır. 4AA güçlü morfoloji anlamına gelir ama kesin gebelik garantisi değildir. Yaş, kromozomal yapı, rahim hazırlığı, transfer tekniği ve şans faktörü sonucu etkiler.
 </Accordion>
 
-<Accordion title="Embriyo çözüldükten sonra büzülür mü?">
-Evet, blastosist içi su dolu balon gibidir. Çözülürken büzülmesi normaldir, 2-3 saat içinde tekrar şişmesi canlılık işaretidir.
+<Accordion title="3BB embriyo ile gebelik olur mu?">
+Evet, olabilir. 3BB transfer edilebilir ve klinikte sık görülen bir blastosist derecesidir. A harfi olmaması, embriyonun işe yaramaz olduğu anlamına gelmez.
 </Accordion>
 
-<Accordion title="Yardımlı Kuluçka (Assisted Hatching) nedir?">
-Lazerle embriyo zarına küçük bir delik açarak tutunmayı kolaylaştırma işlemidir. Dondurulmuş embriyolarda rutin olarak uyguluyoruz.
+<Accordion title="5BC embriyo kötü mü?">
+5BC daha zayıf morfoloji grubundadır; özellikle trofektoderm C olduğu için transfer önceliği daha düşük olabilir. Yine de eldeki tek embriyo olması, PGT-A sonucu veya hasta öyküsü kararı değiştirebilir.
 </Accordion>
+
+<Accordion title="Embriyo çözüldükten sonra büzülürse transfer iptal edilir mi?">
+Her zaman değil. Blastosist çözülme sonrası geçici olarak büzüşebilir. Yeniden genişleme, hücre bütünlüğü ve embriyoloğun son değerlendirmesi birlikte dikkate alınır.
+</Accordion>
+
+<Accordion title="PGT-A sonucu normal olan düşük dereceli embriyo transfer edilir mi?">
+Bazı durumlarda evet. Euploid olduğu bilinen bir embriyo, morfolojisi çok parlak olmasa bile anlamlı transfer adayı olabilir. Karar, yaş, embriyo sayısı ve klinik öyküyle birlikte verilmelidir.
+</Accordion>
+</div>
+
+<div data-reveal>
+<EvidenceGradeCard grade={frontmatter.recommendationGrade} />
 </div>
 
 <div data-reveal class="mt-12 bg-slate-50 p-8 rounded-3xl border border-slate-200">
-**Bunlar da İlginizi Çekebilir:**
-- [Tüp Bebek Aşamaları](/tup-bebek-asamalari)
-- [Transfer Sonrası Bakım Rehberi](/makaleler/embriyo-transferi-sonrasi-bakim)
-- [IVF Protokolleri ve İlaçlar](/makaleler/ivf-protokolleri)
+**Sizin İçin Seçtiğimiz Diğer Rehberler:**
+- [Embriyo transferi için gün seçimi](/makaleler/embriyo-transferi-gun-secimi/)
+- [Kaç yumurta gerekir?](/makaleler/kac-yumurta-gerekir/)
+- [IVF protokolleri ve ilaçlar](/makaleler/ivf-protokolleri/)
+- [Taze mi, dondurulmuş transfer mi?](/makaleler/taze-dondurulmus-transfer/)
+- [PGT-A ve genetik testler](/genetik-testler/)
+- [Embryoscope ve yapay zeka](/makaleler/embryoscope-yapay-zeka/)
 </div>
 
-<div data-reveal class="mt-12 pt-8 border-t border-slate-200">
-## ⚖️ Yasal Uyarı
-**Son tıbbi revizyon tarihi: 22 Aralık 2025.**
-Bu makale bilgilendirme amaçlıdır; tıbbi teşhis ve tedavi yerine geçmez. Sorularınız için mutlaka doktorunuza danışın.
-© tupbebek.com – Tüm hakları saklıdır.
+<div data-reveal class="mt-12 pt-8 border-t border-slate-200 text-sm text-slate-600">
+## Yasal Uyarı
+**Son tıbbi revizyon tarihi: 12 Mayıs 2026.**
+Bu makale bilgilendirme amaçlıdır; tıbbi teşhis ve tedavi yerine geçmez. Embriyo raporunuzu kendi yaşınız, önceki tedavileriniz ve klinik planınızla birlikte doktorunuz ve embriyoloji ekibinizle değerlendirin.
 </div>
 
 </div>
 
-<JSONLD schema={frontmatter.schema} />
+export const embryoReportFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "4AA embriyo kesin tutar mı?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Hayır. 4AA güçlü morfoloji anlamına gelir ama kesin gebelik garantisi değildir. Yaş, kromozomal yapı, rahim hazırlığı, transfer tekniği ve şans faktörü sonucu etkiler."
+    }
+  }, {
+    "@type": "Question",
+    "name": "3BB embriyo ile gebelik olur mu?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Evet, olabilir. 3BB transfer edilebilir ve klinikte sık görülen bir blastosist derecesidir. A harfi olmaması, embriyonun işe yaramaz olduğu anlamına gelmez."
+    }
+  }, {
+    "@type": "Question",
+    "name": "5BC embriyo kötü mü?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "5BC daha zayıf morfoloji grubundadır; özellikle trofektoderm C olduğu için transfer önceliği daha düşük olabilir. Yine de eldeki tek embriyo olması, PGT-A sonucu veya hasta öyküsü kararı değiştirebilir."
+    }
+  }, {
+    "@type": "Question",
+    "name": "Embriyo çözüldükten sonra büzülürse transfer iptal edilir mi?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Her zaman değil. Blastosist çözülme sonrası geçici olarak büzüşebilir. Yeniden genişleme, hücre bütünlüğü ve embriyoloğun son değerlendirmesi birlikte dikkate alınır."
+    }
+  }, {
+    "@type": "Question",
+    "name": "PGT-A sonucu normal olan düşük dereceli embriyo transfer edilir mi?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Bazı durumlarda evet. Euploid olduğu bilinen bir embriyo, morfolojisi çok parlak olmasa bile anlamlı transfer adayı olabilir. Karar, yaş, embriyo sayısı ve klinik öyküyle birlikte verilmelidir."
+    }
+  }]
+};
+
+<script type="application/ld+json" set:html={JSON.stringify(embryoReportFaqSchema)} />
 <RevealScript />
-
