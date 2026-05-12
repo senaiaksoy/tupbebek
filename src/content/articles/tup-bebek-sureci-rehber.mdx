@@ -1,19 +1,20 @@
 ---
-title: "Tüp Bebek Süreci. İlk Muayeneden Embriyo Transferine Adım Adım Rehber"
-description: "Tüp bebek sürecini baştan sona keşfedin. ilk muayene, yumurta toplama, döllenme ve embriyo transferi adımlarını uzman anlatımıyla öğrenin."
+title: "Tüp Bebek Süreci Nasıl İlerler? İlk Muayeneden Transfere Adım Adım"
+description: "Tüp bebek süreci nasıl ilerler? İlk değerlendirme, yumurtalık uyarımı, yumurta toplama, laboratuvar aşaması, embriyo transferi ve bekleme dönemi için sade rehber."
 publishDate: 2025-08-12
+status: "published"
 author: "Doç. Dr. Senai Aksoy"
 authorTitle: "Kadın Hastalıkları ve Doğum Uzmanı"
 authorCredentials: "Üreme Tıbbı ve Yardımcı Üreme Teknikleri"
 authorYoutube: "https://www.youtube.com/@DocentDrSenaiAksoy"
 medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Tıbbi Danışma Kurulu"
-reviewDate: 2026-04-09
-lastModified: 2026-05-11
+reviewDate: 2026-05-12
+lastModified: 2026-05-12
 category: "Tüp Bebek"
 recommendationGrade: B
 image: /images/library/tedavi/tup_bebek_muayene.webp
-imageAlt: "tüp bebek süreci ilk muayeneden embriyo transferine adım adım rehber"
+imageAlt: "tüp bebek sürecinde doktor görüşmesi ve tedavi planlaması"
 references:
   - title: "IVF in the medically complicated patient: a guide to management"
     authors: "Macklon NS, Stouffer RL, Giudice LC, Fauser BC"
@@ -35,81 +36,119 @@ references:
 ---
 
 import HizliCevap from '../../components/HizliCevap.astro';
+import Accordion from "../../components/global/Accordion.astro";
+import MedicalInfoBox from '../../components/global/MedicalInfoBox.astro';
+import QuoteBlock from '../../components/global/QuoteBlock.astro';
 import InlineEvidence from '../../components/InlineEvidence.astro';
+import EvidenceGradeCard from '../../components/EvidenceGradeCard.astro';
+import RevealScript from '../../components/global/RevealScript.astro';
 
-<HizliCevap question="Tüp Bebek Süreci. İlk Muayeneden Embriyo Transferine Adım Adım Rehber hakkında bilmeniz gerekenler nelerdir?">
-Tüp bebek sürecini baştan sona keşfedin. ilk muayene, yumurta toplama, döllenme ve embriyo transferi adımlarını uzman anlatımıyla öğrenin.
+<HizliCevap question="Tüp bebek süreci nasıl ilerler?">
+Tüp bebek süreci; ilk değerlendirme, yumurtalıkların ilaçlarla uyarılması, yumurta toplama, laboratuvarda döllenme, embriyo gelişimi, transfer ve gebelik testinden oluşur. Süreç kişiye göre değişse de çoğu siklusta aktif tedavi bölümü birkaç haftaya yayılır.
 </HizliCevap>
 
----
+<div class="mesh-hero pt-12 pb-20 px-4 md:px-0 -mx-4 md:-mx-0 mb-12 rounded-3xl shadow-sm border border-white/40" style="background: linear-gradient(135deg, #eff6ff 0%, #eef2ff 46%, #f8fafc 100%);">
+  <div class="max-w-4xl mx-auto" data-reveal>
+    <div class="inline-block px-4 py-1 rounded-full bg-sky-100 text-sky-800 text-sm font-bold mb-4">Adım Adım IVF</div>
+    <h1 class="text-4xl md:text-6xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-sky-800 to-slate-900 leading-tight">{frontmatter.title}</h1>
+    <p class="text-xl md:text-2xl text-slate-700 font-medium max-w-2xl leading-relaxed">İyi planlanmış bir IVF sürecinde amaç yalnızca embriyo oluşturmak değil; doğru zamanlama, güvenli ilaç kullanımı ve gerçekçi beklenti kurmaktır.</p>
+  </div>
+</div>
 
-## **Tüp Bebek Süreci: İlk Muayeneden Embriyo Transferine Adım Adım Rehber**
+<div class="max-w-4xl mx-auto space-y-12 blog-content-reveal">
 
----
+<MedicalInfoBox title="Hızlı Bakış: Süreç Kaç Basamaktan Oluşur?" icon="OPU" color="blue">
+**Çoğu tüp bebek siklusu; değerlendirme, uyarım, yumurta toplama, laboratuvar aşaması, transfer ve gebelik testinden oluşur.** Adımlar benzer olsa da ilaç dozu, transfer zamanı ve embriyo stratejisi kişiye göre değişir. <InlineEvidence grade="B" />
+</MedicalInfoBox>
 
-## **Giriş: Yolculuk Başlıyor**
+## İçindekiler
 
-Hayal edin… Elinizde bavul yok, ama umutla dolu bir valiz taşıyorsunuz. İçinde hem bilim var hem de kalbinizden geçen dilekler. İşte tüp bebek tedavisi, böyle bir yolculuk.
-Peki, bu yolculukta hangi duraklardan geçeceğiz? İlk muayeneden başlayıp embriyo transferine kadar, her adımı net ve anlaşılır şekilde anlatacağız. Yan etkiler? Merak etmeyin, onları da saklamıyoruz.
+- [İlk değerlendirme](#ilk-degerlendirme)
+- [Yumurtalıkların uyarılması](#uyarim)
+- [Yumurta toplama](#opu)
+- [Laboratuvar ve embriyo gelişimi](#laboratuvar)
+- [Embriyo transferi](#transfer)
+- [Bekleme dönemi](#bekleme)
+- [Plan ne zaman değişir?](#plan-degisikligi)
+- [Sıkça sorulan sorular](#faq)
 
----
+<h2 id="ilk-degerlendirme">1. İlk Değerlendirme</h2>
 
-## **1. İlk Muayene ve Değerlendirme**
+Süreç, ayrıntılı öykü ve testlerle başlar. Kadında yaş, AMH, AFC, rahim yapısı ve önceki tedavi öyküsü değerlendirilir; erkekte semen analizi yapılır. Bu adım sadece "IVF yapalım mı?" sorusunu değil, hangi protokolün daha uygun olduğunu da belirler. <InlineEvidence grade="B" />
 
-Burada doktorunuz (hani şu "sizi kahveyle değil, ultrason probuyla karşılayan") tıbbi geçmişinizi, hormon seviyelerinizi, rahim ve yumurtalık yapınızı inceler. Erkek tarafında ise sperm analizi yapılır. <InlineEvidence grade="B" />
-📌 **Amaç:** Doğru tedavi protokolünü belirlemek.
-**İpucu:** Bu aşamada tahlillerinizi önceden toparlayın, hem zaman kazanırsınız hem de doktorunuzun gözü parlar.
+İlk görüşmede genellikle şu başlıklar netleşir:
 
----
+- IVF gerçekten ilk seçenek mi?
+- Taze transfer mi, dondurulmuş transfer mi daha uygun?
+- Erkek faktörü nedeniyle ICSI gerekir mi?
+- PGT veya ek rahim değerlendirmesi gerekir mi?
 
-## **2. Yumurtalıkların Uyarılması (Ovarian Stimulation)**
+<h2 id="uyarim">2. Yumurtalıkların Uyarılması</h2>
 
-Günlük iğneler başlıyor. Evet, kulağa romantik gelmiyor ama yumurtaların birden fazla gelişmesi için şart. <InlineEvidence grade="B" />
-📌 **Anahtar nokta:** Doz ve süre kişiye özel ayarlanır.
+Yumurtalıklar kısa süreli hormon ilaçlarıyla uyarılır. Amaç tek yumurta yerine, güvenli sınırlar içinde daha fazla olgun yumurta elde etmektir. Günlük doz, yaş, rezerv ve önceki yanıta göre belirlenir. Takip ultrason ve gerektiğinde kan testleriyle yapılır. <InlineEvidence grade="B" />
 
--
+Buradaki kritik nokta daha fazla ilaç değil, doğru dozdur. Aşırı yanıt riski olan hastalarda güvenlik; düşük rezervli hastalarda ise verimli planlama önceliklidir.
 
-## **3. Yumurtaların Toplanması (OPU – Ovum Pick-Up)**
+<h2 id="opu">3. Yumurta Toplama (OPU)</h2>
 
-Anestezi altında yapılan bu işlem ortalama 15-20 dakika sürer. Karın bölgesinde değil, vajinal ultrason eşliğinde yapılır.
-📌 **Hastaların merak ettiği:** "Acıyacak mı?" — Hayır, işlem sırasında uyuyorsunuz. Uyandığınızda ise tek hissedeceğiniz şey, "Ee, oldu mu?" sorusu.
+Foliküller yeterince olgunlaştığında zamanlama iğnesi yapılır ve yaklaşık 34-36 saat sonra yumurta toplama uygulanır. İşlem çoğu merkezde sedasyon altında, vajinal ultrason rehberliğinde yapılır. Genellikle kısa sürer ve aynı gün taburculuk mümkündür.
 
----
+Yumurta toplama sonrası hafif kasık ağrısı, lekelenme veya şişkinlik olabilir. Şiddetli ağrı, nefes darlığı ya da hızlı kilo artışı gibi bulgular ise yeniden değerlendirme gerektirir.
 
-## **4. Laboratuvarda Döllenme**
+<h2 id="laboratuvar">4. Laboratuvar Aşaması ve Embriyo Gelişimi</h2>
 
-Toplanan yumurtalar ile spermler laboratuvarda buluşturulur.
+Toplanan yumurtalar aynı gün spermle döllenir. Bazı çiftlerde klasik IVF, bazılarında ICSI tercih edilir. Sonraki günlerde embriyoların döllenme durumu ve gelişimi izlenir. Her yumurta embriyo olmaz; her embriyo da transfer gününe ilerlemez. Bu nedenle süreç, sayıdan çok biyolojik eleme basamaklarıyla anlaşılmalıdır.
 
-- **Klasik IVF:** Yumurtanın etrafına spermler bırakılır, doğa işini yapar.
-- **ICSI (Mikroenjeksiyon):** Tek bir sperm, doğrudan yumurtanın içine enjekte edilir.
-  📌 **Avantaj:** ICSI, düşük sperm sayısı veya kalitesi olan çiftlerde başarıyı artırır. <InlineEvidence grade="B" />
+| Basamak | Ne Olur? |
+| :--- | :--- |
+| **Olgun yumurta** | Toplanan yumurtaların bir kısmı olgun değildir |
+| **Döllenme** | Her olgun yumurta döllenmeyebilir |
+| **Embriyo gelişimi** | Döllenmiş her yumurta blastokiste ulaşmayabilir |
+| **Transfer seçimi** | Ulaşan embriyolar arasından en uygun olan seçilir |
 
----
+<h2 id="transfer">5. Embriyo Transferi</h2>
 
-## **5. Embriyo Gelişimi ve Takip**
+Transfer çoğu zaman kısa ve anestezisiz bir işlemdir. En uygun embriyo, ince bir kateterle rahim içine bırakılır. İşlem sonrası hemen ayağa kalkmak genellikle embriyonun tutunma şansını azaltmaz; uzun süre yatmak zorunlu değildir. <InlineEvidence grade="A" />
 
-Yumurtanın döllenmesinden sonraki günler, adeta bir reality show: "Big Brother: Embriyo Evi" — Her gün mikroskop başında takip edilir.
-📌 **Blastokist aşaması (5. gün):** Transfer için en yüksek başarı oranına sahip embriyo seçilir. <InlineEvidence grade="B" />
+Taze transfer ile dondurulmuş transfer seçimi; progesteron düzeyi, OHSS riski, rahim hazırlığı, PGT planı ve embriyo sayısına göre yapılır.
 
----
+<h2 id="bekleme">6. Bekleme Dönemi</h2>
 
-## **6. Embriyo Transferi**
+Transferden sonra en zor bölüm çoğu zaman bekleme günleridir. Progesteron gibi destek tedavileri sürer ve gebelik testi için doğru gün beklenir. Erken evde test yapmak yanıltıcı olabilir; en doğru değerlendirme genellikle planlanan beta-hCG gününde yapılır.
 
-Ağrısız ve kısa süren bir işlemdir. En kaliteli embriyo, rahme yerleştirilir.
-📌 **İpucu:** İşlem sonrası ayağa kalkmanız bebeğin tutunma şansını düşürmez. <InlineEvidence grade="A" /> "Yat kalk dua et" dönemi biraz mit.
+<QuoteBlock author="tupbebek.com Tıbbi Danışma Kurulu">
+Tüp bebek sürecinde başarıyı yalnızca transfer günü değil; ön değerlendirme, laboratuvar kalitesi ve doğru hasta seçimi birlikte belirler.
+</QuoteBlock>
 
----
+<h2 id="plan-degisikligi">Plan Ne Zaman Değişebilir?</h2>
 
-## **7. Bekleme Süreci (2 Hafta Maratonu)**
+Her siklus baştan çizilmiş tek bir yol değildir. Bazı durumlarda plan değişebilir:
 
-Test gününe kadar geçen süre… İşte burası sabır testi.
-📌 **Tavsiye:** İnternette "hamilelik belirtisi" aramaktan kaçının, her mide bulantısı bir işaret olmayabilir.
+- OHSS riski varsa taze transfer ertelenebilir.
+- Progesteron yükselirse dondurulmuş transfer seçilebilir.
+- Döllenme azsa sonraki siklusta ICSI veya farklı protokol düşünülebilir.
+- Rahim içi sorun saptanırsa transfer öncesi ek tedavi gerekebilir.
 
----
+<EvidenceGradeCard grade={frontmatter.recommendationGrade} />
 
-## **Son Söz**
+<h2 id="faq">Sıkça Sorulan Sorular</h2>
 
-Tüp bebek süreci bilim, sabır ve umut üçlüsünün dans ettiği bir yolculuk. Adımlar karmaşık gibi görünse de doğru ekiple çalıştığınızda, bu dansın ritmine ayak uydurmak çok daha kolay.
+<Accordion title="Tüp bebek süreci kaç gün sürer?">
+Aktif uyarım bölümü çoğu zaman 8-12 gün sürer. Yumurta toplama, embriyo kültürü ve transfer planına göre toplam süre birkaç haftaya yayılır.
+</Accordion>
 
----
+<Accordion title="Yumurta toplama ağrılı mıdır?">
+İşlem genellikle sedasyon altında yapıldığı için çoğu hasta işlem sırasında ağrı hissetmez. Sonrasında hafif kasık ağrısı veya şişkinlik olabilir.
+</Accordion>
 
+<Accordion title="Transferden sonra sürekli yatmak gerekir mi?">
+Hayır. İşlem sonrası normal hafif günlük aktivite genellikle mümkündür. Uzun süre yatmanın gebelik şansını artırdığı güçlü biçimde gösterilmemiştir.
+</Accordion>
+
+<Accordion title="Her embriyo mutlaka 5. güne gider mi?">
+Hayır. Bazı embriyolar daha erken durabilir. Bu durum yaygındır ve yumurta, sperm ve laboratuvar biyolojisinin doğal bir parçasıdır.
+</Accordion>
+
+</div>
+
+<RevealScript />

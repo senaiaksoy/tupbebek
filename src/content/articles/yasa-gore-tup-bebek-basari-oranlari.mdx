@@ -1,23 +1,20 @@
 ---
-title: "Yaşa Göre Tüp Bebek Başarı Oranları: 30, 35, 40 ve Üzeri"
-description: "30-35, 35-40 ve 40 yaş üstü tüp bebek başarı oranları, embriyo kalitesinin yaşla değişimi ve Türkiye'deki yasal embriyo transfer limitleri."
+title: "Yaşa Göre Tüp Bebek Başarı Oranları: 30, 35, 40 Yaş ve Üzeri İçin Gerçekçi Beklenti"
+description: "Yaşa göre tüp bebek başarısı nasıl değişir? 30'lu yaşlar, 35 sonrası düşüş, 40 yaş ve üzeri için embriyo kalitesi, rezerv, transfer stratejisi ve gerçekçi beklenti rehberi."
 publishDate: 2026-04-04
-lastModified: 2026-04-04
-author:
-  name: "Doç. Dr. Senai Aksoy"
-  title: "Kadın Hastalıkları ve Doğum Uzmanı"
-  credentials: "Üreme Tıbbı ve Yardımcı Üreme Teknikleri"
+status: "published"
+lastModified: 2026-05-12
+author: "Doç. Dr. Senai Aksoy"
 authorTitle: "Kadın Hastalıkları ve Doğum Uzmanı"
 authorCredentials: "Üreme Tıbbı ve Yardımcı Üreme Teknikleri"
 medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Tıbbi Danışma Kurulu"
-reviewDate: 2026-04-04
+reviewDate: 2026-05-12
 category: "Tüp Bebek"
 recommendationGrade: B
 image: "/images/library/istatistik/yas_gebelikorani_ivf.webp"
-imageAlt: "Yaşa göre tüp bebek başarı oranlarını temsil eden, farklı yaş dönemlerini simgeleyen kadın görseli"
+imageAlt: "yaşa göre tüp bebek başarısını gösteren istatistik görseli"
 featured: true
-status: published
 videoId: "LyLGywUUipg"
 videoTitle: "Yaşa Göre Tüp Bebek Başarı Oranları"
 references:
@@ -49,67 +46,103 @@ references:
 ---
 
 import HizliCevap from '../../components/HizliCevap.astro';
+import Accordion from "../../components/global/Accordion.astro";
+import MedicalInfoBox from '../../components/global/MedicalInfoBox.astro';
+import QuoteBlock from '../../components/global/QuoteBlock.astro';
 import InlineEvidence from '../../components/InlineEvidence.astro';
+import EvidenceGradeCard from '../../components/EvidenceGradeCard.astro';
+import RevealScript from '../../components/global/RevealScript.astro';
 
-<HizliCevap question="Yaşa Göre Tüp Bebek Başarı Oranları nedir, nasıl yönetilir?">
-30-35, 35-40 ve 40 yaş üstü tüp bebek başarı oranları, embriyo kalitesinin yaşla değişimi ve Türkiye'deki yasal embriyo transfer limitleri.
+<HizliCevap question="Yaşa göre tüp bebek başarısı nasıl değişir?">
+Kadın yaşı, tüp bebek sonucunu etkileyen en güçlü değişkenlerden biridir. Yaş ilerledikçe yumurta sayısı ve özellikle embriyoların kromozomal uygunluk olasılığı azalır; bu nedenle aynı tedavi planı her yaşta aynı sonucu vermez.
 </HizliCevap>
 
-## Kısa Cevap
+<div class="mesh-hero pt-12 pb-20 px-4 md:px-0 -mx-4 md:-mx-0 mb-12 rounded-3xl shadow-sm border border-white/40" style="background: linear-gradient(135deg, #fefce8 0%, #fff7ed 46%, #f8fafc 100%);">
+  <div class="max-w-4xl mx-auto" data-reveal>
+    <div class="inline-block px-4 py-1 rounded-full bg-amber-100 text-amber-800 text-sm font-bold mb-4">Gerçekçi Beklenti</div>
+    <h1 class="text-4xl md:text-6xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-amber-700 to-slate-900 leading-tight">{frontmatter.title}</h1>
+    <p class="text-xl md:text-2xl text-slate-700 font-medium max-w-2xl leading-relaxed">Yaş, IVF sonucunu tek başına açıklamaz; fakat yumurta biyolojisi üzerinde en güçlü belirleyicilerden biridir ve tedavi stratejisini doğrudan değiştirir.</p>
+  </div>
+</div>
 
-Tüp bebek başarısını belirleyen en önemli etken **kadın yaşıdır** <InlineEvidence grade="B" />. 35 yaş altında canlı doğum oranı **%50-60** civarındayken, 35-39 yaş aralığında bu oran **%30-40** bandına geriler. 40 yaşından sonra ise şans **%10-20**'lere düşer ve yaş ilerledikçe keskin bir şekilde azalır <InlineEvidence grade="B" />. Bunun temel nedeni, zamanla yumurta sayısının (rezerv) ve genetik kalitesinin kaçınılmaz olarak düşmesidir.
+<div class="max-w-4xl mx-auto space-y-12 blog-content-reveal">
 
-**Bu yazıda:**
+<MedicalInfoBox title="Hızlı Bakış: En Güçlü Etken Yaş mıdır?" icon="INFO" color="amber">
+**Evet, kadın yaşı IVF sonucunu en güçlü etkileyen değişkenlerden biridir.** Bunun temel nedeni yaşla birlikte yumurta sayısının değil, özellikle embriyoların kromozomal uygunluk olasılığının azalmasıdır. <InlineEvidence grade="B" />
+</MedicalInfoBox>
 
-- 30-35 yaş arası tüp bebek başarı oranı nedir?
-- 35-40 yaş arası tüp bebek şansı nasıl değişir?
-- 40 yaşından sonra hamile kalma şansı nedir?
-- Yaş ilerledikçe embriyo kalitesi neden düşer?
-- Yaşa göre Türkiye'deki yasal embriyo transfer limitleri nelerdir?
+## İçindekiler
 
----
+- [Yaş neden bu kadar önemlidir?](#neden)
+- [30'lu yaşların başında beklenti](#otuz)
+- [35 yaş sonrası ne değişir?](#otuzbes)
+- [40 yaş ve üzeri için nasıl düşünülmeli?](#kirk)
+- [PGT-A yaş etkisini tamamen çözer mi?](#pgta)
+- [Transfer sayısı ve yasal çerçeve](#yasal)
+- [Sık sorulan sorular](#faq)
 
-Hepimiz o meşhur *"Yaş sadece bir sayıdır"* lafını çok severiz. Gönül isterdi ki yumurtalıklarımız da Peter Pan gibi "Ben hiç büyümeyeceğim!" desin ve bu felsefeye katılsın. Ancak tıbbi gerçekler biraz farklı çalışıyor. Biyolojik saatimiz maalesef İsviçre saati gibi tıkır tıkır işlemiyor, yıllar geçtikçe biraz tekliyor. Tüp bebek tedavisinde en çok duyduğum sorulardan biri olan *"Doktor Bey, benim yaşımda şansım ne?"* sorusuna, bilimsel veriler ışığında, şeffaf bir şekilde cevap verelim.
+<h2 id="neden">Yaş Neden Bu Kadar Önemlidir?</h2>
 
-## 30-35 yaş arası tüp bebek başarı oranı nedir?
+Kadın yaşı ilerledikçe hem yumurtalık rezervi azalır hem de elde edilen embriyolarda kromozomal anormallik olasılığı artar. Bu yüzden aynı sayıda yumurta, aynı yaşta olmayan iki hastada farklı gebelik potansiyeli taşıyabilir. ESHRE ve diğer büyük kılavuzların ortak mesajı, yaşın tek başına her şeyi açıklamadığı ama tedavi sonucunu güçlü biçimde yönlendirdiğidir. <InlineEvidence grade="B" />
 
-30-35 yaş aralığı, tüp bebek tedavisi için **en ideal dönemlerden biridir**. Bu yaş grubunda, tek bir tüp bebek süreci (embriyo transferi) ile canlı doğum elde etme şansı **%50 ile %60** arasındadır <InlineEvidence grade="B" />. Yumurta kalitesinin ve genetik bütünlüğün yüksek olması, bu yüksek başarı oranının ana sebebidir.
+<h2 id="otuz">30'lu Yaşların Başında Beklenti</h2>
 
-Bu dönemde vücut, ilaçlara (stimülasyon) çok iyi yanıt verir. Bol miktarda ve kaliteli yumurta toplayabildiğimiz için elimizde transfer edilebilecek, hatta gelecekteki kardeşler için dondurulabilecek harika embriyolarımız olur. Eğer henüz çocuk düşünmüyorsanız ama kariyer/hayat planlarınız varsa, **fertilite koruma** amaçlı [yumurta dondurma](/makaleler/yumurta-dondurma-rehberi) işlemi için de en kıymetli yıllar bu yıllardır.
+30'lu yaşların başında yumurtalık yanıtı ve embriyo potansiyeli çoğu zaman daha iyidir. Bu yaş grubunda tek transfer veya kümülatif sonuçlar, ileri yaş gruplarına göre genellikle daha yüksektir. Ancak başarı yine de merkezden merkeze, embriyo gününe, transfer tipine ve infertilite nedenine göre değişir.
 
-## 35-40 yaş arası tüp bebek şansı nasıl değişir?
+Pratikte bu yaş grubunda şu avantajlar daha sık görülür:
 
-35 yaşından sonra tüp bebek başarı oranlarında belirgin bir düşüş ivmesi başlar; bu yaş aralığında canlı doğum oranları genellikle **%30 ile %40** civarındadır <InlineEvidence grade="B" />. **37 yaşından itibaren** ise bu düşüş daha da keskinleşir ve 39 yaşına gelindiğinde şans **%20-25**'lere kadar inebilir.
+- Daha öngörülebilir yumurtalık yanıtı
+- Daha fazla blastokist seçeneği
+- Daha düşük anöploidi olasılığı
+- Dondurulmuş embriyolarla kümülatif başarıya katkı
 
-Bunun sebebi "Yumurtalarımın sayısı mı bitti?" endişesi değildir sadece. Asıl mesele, kalan yumurtaların **"kalitesidir"**. Zamanla yumurtaların içindeki genetik materyal yorulur. ESHRE 2024 kılavuzuna göre, 35 yaş üstü hastalarda oluşan embriyolarda kromozomal anormallik (anöploidi) riski artmaktadır. Bu da tutunmama veya erken düşük riskini beraberinde getirir.
+<h2 id="otuzbes">35 Yaş Sonrası Ne Değişir?</h2>
 
-## 40 yaşından sonra hamile kalma şansı nedir?
+35 yaş sonrası düşüş bir gecede olmaz; ancak embriyo kromozom sağlığı açısından eğri belirgin şekilde değişmeye başlar. 37-38 yaşlardan sonra bu düşüş daha görünür hale gelebilir. Bu nedenle yalnızca yumurta sayısına değil, embriyo gelişimine ve zaman yönetimine daha dikkatli yaklaşılır.
 
-40 yaşını geçtikten sonra kendi yumurtalarınızla tüp bebek tedavisinde canlı doğum şansı **%10-20** aralığındadır <InlineEvidence grade="B" />. 42-43 yaşlarında bu oran **%5**'lere, 44 yaşından sonra ise **%1-2**'lere kadar gerilemektedir <InlineEvidence grade="B" />. Bu yaş grubunda tedavi protokolleri tamamen hastaya özel ve çok titizlikle yürütülmelidir.
+| Yaş Grubu | Pratik Okuma |
+| :--- | :--- |
+| **35 yaş altı** | Genel olarak en yüksek embriyo potansiyeli |
+| **35-37** | Başarı hâlâ anlamlıdır; fakat düşüş başlamıştır |
+| **38-40** | Embriyo kromozom sağlığı daha belirleyici olur |
+| **40 yaş ve üzeri** | Sonuç daha heterojendir; kişiselleştirme çok önemlidir |
 
-> **Tüp bebek uzmanı Doç. Dr. Senai Aksoy'a göre**, [PGT-A](/pgt-merkezi) taraması kromozomal anomalileri tespit ederek implantasyon başarısını artırmaktadır — bu bulgu ASRM komite görüşleriyle de desteklenmektedir.
+<h2 id="kirk">40 Yaş ve Üzeri İçin Nasıl Düşünülmeli?</h2>
 
-Bu oranlar kimsenin moralini bozmak için değil, tamamen **şeffaf olmamız gerektiği** içindir. 40 yaş üstünde başarıyı yakalamak imkansız mıdır? **Kesinlikle hayır.** Klinik pratiğimizde 40 yaş üstünde sağlıklı bebeklerini kucağına alan pek çok hastamız var. Ancak bu yolculukta daha fazla deneme yapmamız, bazen havuz yöntemi (embriyo biriktirme) uygulamamız ve mutlaka [PGT-A (Genetik Tarama)](/pgt-merkezi) testinden destek almamız gerekebilir.
+40 yaş ve üzerinde gebelik hâlâ mümkündür; fakat hem embriyo sayısı hem de kromozomal uygunluk olasılığı daha sınırlı olabilir. Bu yaş grubunda tek bir deneme yerine kümülatif plan, embriyo biriktirme, transfer zamanlaması ve hastanın genel sağlık durumu daha fazla önem kazanır. Başarıyı abartmak kadar tamamen umutsuz görmek de doğru değildir.
 
-## Yaş ilerledikçe embriyo kalitesi neden düşer?
+<QuoteBlock author="tupbebek.com Tıbbi Danışma Kurulu">
+İleri yaşta doğru hedef, “genç yaş başarısını kopyalamak” değil; mevcut biyolojik koşullarla en verimli ve en dürüst planı kurmaktır.
+</QuoteBlock>
 
-Yaş ilerledikçe embriyo kalitesinin düşmesinin temel nedeni, kadınların doğuştan sahip oldukları yumurtaların (oositlerin) da kendileriyle birlikte yaşlanması ve hücre bölünmesi sırasındaki genetik hata onarım mekanizmalarının zayıflamasıdır.
+<h2 id="pgta">PGT-A Yaş Etkisini Tamamen Çözer mi?</h2>
 
-Bir meta-analize göre, kadın yaşı arttıkça yumurtalardaki **mitokondriyal disfonksiyon** (hücrenin enerji santrallerinin bozulması) artar. Gelin bunu şöyle düşünelim: Yumurta, embriyoyu büyütecek olan yakıt deposudur. Yıllar geçtikçe deponun içindeki yakıtın enerjisi azalır. Enerji azaldığında, embriyo bölünürken kromozomları doğru şekilde paylaştıramaz. Yanlış kromozom sayısına sahip bir embriyonun sağlıklı bir gebeliğe dönüşme şansı maalesef yoktur. Detaylı bilgi için [embriyo transferi](/makaleler/embriyo-transferi-gun-secimi) sayfamızdaki gelişim aşamalarını inceleyebilirsiniz.
+Hayır. PGT-A seçilmiş bazı hastalarda transfer planını düzenlemeye yardımcı olabilir; ancak yeni yumurta oluşturmaz, yaşa bağlı biyolojik sınırlamayı ortadan kaldırmaz ve her hasta için zorunlu değildir. Karar yaş, embriyo sayısı, önceki öykü ve klinik hedefe göre kişiselleştirilmelidir. <InlineEvidence grade="B" />
 
-## Yaşa göre Türkiye'deki yasal embriyo transfer limitleri nelerdir?
+<h2 id="yasal">Transfer Sayısı ve Yasal Çerçeve</h2>
 
-Türkiye'deki Sağlık Bakanlığı **ÜYTE (Üreme Yardımcı Tedavi Merkezleri) Yönetmeliği**'ne göre, embriyo transfer sayıları kadının yaşına ve önceki başarısız deneme sayısına göre yasal olarak sınırlandırılmıştır. Amaç, çoğul gebelik (ikiz, üçüz) risklerini minimize etmektir.
+Türkiye'de embriyo transfer sayısı, çoğul gebeliği azaltmak amacıyla mevzuatla sınırlandırılır. Uygulama yaş ve önceki deneme öyküsüne göre değişebilir. Mevzuat ve uygulama güncellenebileceği için, transfer sayısına ilişkin güncel çerçeve tedavi planı yapılırken merkezinize teyit edilmelidir.
 
-İşte yaşa göre değişen yasal haklarımız ve genel başarı tablosu:
+<EvidenceGradeCard grade={frontmatter.recommendationGrade} />
 
-| Kadın Yaşı | Beklenen Canlı Doğum Oranı | Türkiye Yasal Embriyo Transfer Limiti |
-|---|---|---|
-| **35 Yaş Altı** | %50 - %60 | İlk 2 denemede 1 embriyo. 3. deneme ve sonrasında 2 embriyo. |
-| **35 - 39 Yaş** | %30 - %40 | Doğrudan 2 embriyo transfer edilebilir. |
-| **40 Yaş ve Üzeri** | %5 - %20 | Doğrudan 2 embriyo transfer edilebilir. |
+<h2 id="faq">Sık Sorulan Sorular</h2>
 
----
+<Accordion title="35 yaşından sonra tüp bebek şansı tamamen düşer mi?">
+Hayır. Başarı azalabilir; ancak birçok hasta için anlamlı gebelik olasılığı devam eder. En doğru değerlendirme yaşla birlikte rezerv, embriyo gelişimi ve tedavi öyküsüyle yapılır.
+</Accordion>
 
-Unutmayın, istatistikler ve yüzdeler genel kalabalıkları ifade eder. **Siz bir istatistik değilsiniz, benzersiz bir bireysiniz.** Kapsamlı bir değerlendirme ve size özel tedavi planı için kliniğimizle her zaman iletişime geçebilirsiniz.
+<Accordion title="40 yaşından sonra tüp bebek imkansız mıdır?">
+Hayır. Ancak sonuç daha değişken olur ve beklenti daha gerçekçi kurulmalıdır.
+</Accordion>
 
+<Accordion title="PGT-A yaptırmak başarıyı garanti eder mi?">
+Hayır. PGT-A seçilmiş durumlarda yardımcı olabilir ama gebeliği garanti etmez ve yaş etkisini tamamen ortadan kaldırmaz.
+</Accordion>
+
+<Accordion title="Başarı oranları neden klinikten kliniğe değişir?">
+Hasta seçimi, yaş dağılımı, laboratuvar kalitesi, taze veya dondurulmuş transfer kullanımı ve raporlama biçimi sonuçları etkileyebilir.
+</Accordion>
+
+</div>
+
+<RevealScript />
