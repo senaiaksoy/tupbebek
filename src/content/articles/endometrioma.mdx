@@ -1,6 +1,6 @@
 ---
-title: "Endometrioma"
-description: "Endometriozis kistleri (endometriomalar), kronik ağrıdan kısırlığa dek yaşam kalitesini etkiler. Belirtiler, nedenler ve tedavi yöntemleri hakkında bilgi edinin."
+title: "Endometrioma (Çikolata Kisti): Ameliyat, AMH ve IVF Kararı"
+description: "Endometrioma yani çikolata kisti her zaman ameliyat gerektirir mi? AMH, yumurtalık rezervi, ağrı, IVF öncesi cerrahi ve fertilite koruma kararlarını güvenli biçimde özetleyen rehber."
 publishDate: 2025-01-31
 author: "Doç. Dr. Senai Aksoy"
 authorTitle: "Kadın Hastalıkları ve Doğum Uzmanı"
@@ -8,168 +8,226 @@ authorCredentials: "Üreme Tıbbı ve Yardımcı Üreme Teknikleri"
 authorYoutube: "https://www.youtube.com/@DocentDrSenaiAksoy"
 medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Tıbbi Danışma Kurulu"
-reviewDate: 2026-04-09
-lastModified: 2026-05-11
+reviewDate: 2026-05-12
+lastModified: 2026-05-12
 category: "Kadın Sağlığı"
 recommendationGrade: B
 image: /images/library/klinik/65.webp
 imageAlt: "endometrioma çikolata kisti ve yumurtalık üzerindeki etkileri illüstrasyonu"
 references:
-  - title: "Oocyte retrieval after endometrioma cystectomy: a systematic review and meta-analysis"
-    authors: "Somigliana E, Berlanda N, Benaglia L et al."
-    journal: "Human Reproduction Update"
-    year: 2012
-    doi: "10.1093/humupd/dms014"
-    pmid: "22544173"
-  - title: "Endometrioma and oocyte quality: effect on in vitro fertilization/intracytoplasmic sperm injection cycles"
-    authors: "Almog B, Shehata F, Sheiner E et al."
-    journal: "Fertility and Sterility"
-    year: 2011
-    doi: "10.1016/j.fertnstert.2010.06.002"
-  - title: "ESHRE guideline: management of women with endometriosis"
+  - title: "Endometriosis"
+    authors: "World Health Organization"
+    journal: "WHO Fact Sheet"
+    year: 2023
+    url: "https://www.who.int/news-room/fact-sheets/detail/endometriosis"
+  - title: "ESHRE guideline: endometriosis"
     authors: "Becker CM, Bokor A, Heikinheimo O et al."
-    journal: "Human Reproduction"
+    journal: "Human Reproduction Open"
     year: 2022
-    doi: "10.1093/humrep/deac196"
-    pmid: "36112004"
+    doi: "10.1093/hropen/hoac009"
+    pmid: "35350465"
+  - title: "The impact of endometrioma on IVF/ICSI outcomes: a systematic review and meta-analysis"
+    authors: "Hamdan M, Dunselman G, Li TC, Cheong Y"
+    journal: "Human Reproduction Update"
+    year: 2015
+    doi: "10.1093/humupd/dmv035"
+    pmid: "26168799"
+  - title: "Endometrioma surgery: a systematic review and meta-analysis of the effect on antral follicle count and anti-Müllerian hormone"
+    authors: "Younis JS, Shapso N, Ben-Sira Y, Nelson SM, Izhaki I"
+    journal: "American Journal of Obstetrics and Gynecology"
+    year: 2022
+    doi: "10.1016/j.ajog.2021.06.102"
+    pmid: "34265271"
 ---
 
 import HizliCevap from '../../components/HizliCevap.astro';
+import Accordion from "../../components/global/Accordion.astro";
+import MedicalInfoBox from '../../components/global/MedicalInfoBox.astro';
 import InlineEvidence from '../../components/InlineEvidence.astro';
 
-<HizliCevap question="Endometrioma hakkında bilmeniz gerekenler nelerdir?">
-Endometriozis kistleri (endometriomalar), kronik ağrıdan kısırlığa dek yaşam kalitesini etkiler. Belirtiler, nedenler ve tedavi yöntemleri hakkında bilgi edinin.
+<HizliCevap question="Endometrioma yani çikolata kisti her zaman ameliyat gerektirir mi?">
+Hayır. Endometrioma, yumurtalıkta görülen endometriozis kistidir; ancak her çikolata kisti ameliyat gerektirmez. Karar; ağrı düzeyi, kistin boyutu ve görüntüleme özellikleri, yumurta toplamaya engel olup olmadığı, AMH/AFC ile yumurtalık rezervi, yaş, gebelik planı ve daha önce geçirilmiş yumurtalık cerrahileri birlikte değerlendirilerek verilir.
 </HizliCevap>
 
-## Endometriozis Kistleri (Endometriomalar): Belirtiler, Nedenleri ve Tedavi Yöntemleri
+<div class="mesh-hero pt-12 pb-20 px-4 md:px-0 -mx-4 md:-mx-0 mb-12 rounded-3xl shadow-sm border border-white/40" style="background: linear-gradient(135deg, #fff7ed 0%, #f0fdfa 48%, #eef2ff 100%);">
+  <div class="max-w-4xl mx-auto" data-reveal>
+    <div class="inline-block px-4 py-1 rounded-full bg-orange-100 text-orange-800 text-sm font-bold mb-4">
+      Çikolata Kisti, Rezerv ve Zamanlama
+    </div>
+    <h1 class="text-4xl md:text-6xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-orange-700 to-teal-800 leading-tight">
+      {frontmatter.title}
+    </h1>
+    <p class="text-xl md:text-2xl text-slate-700 font-medium max-w-2xl leading-relaxed">
+      Endometriomada iyi karar, kisti görmekten çok yumurtalığı, ağrıyı ve gebelik hedefini birlikte okumaktır.
+    </p>
+  </div>
+</div>
 
-Endometriozis, rahim içini kaplayan dokuya benzer hücrelerin rahim dışında büyümesiyle karakterize kronik bir rahatsızlıktır. Bu hastalık, yumurtalıklar (overler), fallop tüpleri ve pelvisin iç yüzeyi gibi üreme organlarının bulunduğu bölgelerde lezyonlar ve kistler oluşturabilir. Özellikle yumurtalıklar üzerinde oluşan endometriozis kistlerine "endometrioma" veya halk arasında "çikolata kisti" adı verilir. Dünya genelinde yaklaşık 190 milyon kadını etkileyen endometriozis; kronik pelvik ağrı, adet dönemlerinde şiddetli sancı, ilişki sırasında ağrı ve kısırlık (infertilite) gibi ciddi semptomlara yol açarak yaşam kalitesini belirgin ölçüde düşürebilir. <InlineEvidence grade="B" />
+<div class="max-w-4xl mx-auto space-y-12 blog-content-reveal">
 
-Aşağıda, endometriozis kistlerinin ne olduğu, nasıl teşhis edildiği, hangi tedavi yöntemlerinin uygulandığı ve yaşam tarzı önerileriyle birlikte güncel araştırmaların neler sunduğu konusunda kapsamlı bilgileri bulabilirsiniz.
+<div data-reveal>
+<MedicalInfoBox title="Hızlı Bakış: Kisti Değil, Kararı Yönetiyoruz" icon="AMH" color="orange">
+Endometrioma hem endometriozisin bir bulgusu hem de yumurtalık rezervi açısından dikkat gerektiren bir durumdur. ESHRE rehberi, IVF öncesinde sadece canlı doğum oranını artırmak amacıyla rutin endometrioma cerrahisini önermemektedir; çünkü fayda net değildir ve cerrahi yumurtalık rezervini azaltabilir. <InlineEvidence grade="B" />
+</MedicalInfoBox>
+</div>
 
----
+> Bu rehber, [endometriozis ve kısırlık](/makaleler/endometriozis-akilli-stratejiler/) kümesinin çikolata kisti bölümünü derinleştirir. Genel kadın infertilitesi haritası için [kadın infertilitesi](/kadin-infertilitesi/), cerrahi-IVF sıralaması için [endometriozis ve tüp bebek](/makaleler/endometriozis-tup-bebek/) rehberine bakabilirsiniz.
 
-## Endometriozis ve Endometriozis Kistleri (Endometriomalar) Nedir?
+## İçindekiler
 
-Endometriozis, rahim iç dokusuna benzer hücrelerin rahim dışında büyümesidir. Bu dokular, hormonlara yanıt vererek her adet döngüsünde kalınlaşıp kanama eğilimi gösterir. Ancak bu kanama vücuttan atılamadığı için çevre dokularda iltihaplanma, yapışıklıklar ve ağrı meydana gelir. Yumurtalıklarda oluşan bu endometriozis odakları zamanla sıvı birikimi yaparak kist haline dönüşür. İşte bu kistlere "endometrioma" veya "çikolata kisti" denir.
+- [Endometrioma nedir?](#nedir)
+- [Belirtiler ve tanı](#tani)
+- [AMH ve yumurtalık rezervi](#rezerv)
+- [Ameliyat ne zaman düşünülür?](#ameliyat)
+- [IVF öncesi yaklaşım](#ivf)
+- [Sıkça sorulan sorular](#faq)
 
-Endometriozis kistleri:
+<div data-reveal>
+<h2 id="nedir">Endometrioma Nedir?</h2>
 
-- Yumurtalıkların içinde, kahverengimsi (eski kan) sıvıyla dolu yapılar olarak ortaya çıkar.
-- Kronik pelvik ağrıyı artırabilir, üreme fonksiyonlarını olumsuz etkileyebilir ve kısırlık riskini yükseltebilir.
+Endometrioma, endometriozis dokusunun yumurtalık içinde kistik bir yapı oluşturmasıdır. Halk arasında “çikolata kisti” denmesinin nedeni, kistin içinde eski kan ürünlerine bağlı koyu renkli sıvı bulunabilmesidir. Endometriozis dünya genelinde üreme çağındaki kadınların yaklaşık %10'unu etkiler; ancak her endometriozis hastasında endometrioma olmaz ve her endometrioma infertilite anlamına gelmez. <InlineEvidence grade="B" />
 
----
+Endometrioma değerlendirmesinde iki soru birlikte sorulur:
 
-## Endometriozis Kistlerinin Belirtileri
+- Bu kist ağrı, büyüme, şüpheli görüntü veya teknik sorun yaratıyor mu?
+- Cerrahi yapılırsa yumurtalık rezervine zarar verme riski gebelik hedefini nasıl etkiler?
+</div>
 
-Endometriozis kistleri olan bazı kadınlar belirgin semptomlar yaşarken, bazıları uzun süre fark etmeyebilir. Ancak tipik olarak görülen belirtiler şunları içerir:
+<div data-reveal>
+<h2 id="tani">Belirtiler ve Tanı Nasıl Konur?</h2>
 
-1. **Pelvik Ağrı ve Adet Sancısı**
-   - Adet dönemlerinde şiddetli kasık ağrısı ve kramplar.
-   - Bazı kişilerde ağrı sürekli olabilir ve adet bitiminden sonra da devam edebilir.
+Endometrioma bazen belirti vermeden ultrason sırasında saptanır. Bazı hastalarda ise adet sancısı, kronik kasık ağrısı, ilişki sırasında ağrı, bağırsak/mesane belirtileri veya gebe kalmada gecikme ile birlikte görülür.
 
-2. **Adet Düzensizlikleri**
-   - Aşırı yoğun kanama (menorajisi) veya seyrek ama uzun süren kanamalar görülebilir.
-   - Ara kanamalar veya düzensiz adet döngüleri yaşanabilir.
+Tanıda en sık kullanılan araçlar:
 
-3. **Cinsel İlişkide Ağrı (Dyspareunia)**
-   - Özellikle derin penetrasyon sırasında pelvik bölgede ağrı hissi.
+- **Transvajinal ultrason:** Endometrioma için ilk basamak ve çoğu zaman yeterli görüntüleme yöntemidir.
+- **MR:** Derin endometriozis, çok büyük kistler, kompleks anatomi veya şüpheli bulgular varsa ek bilgi sağlar.
+- **Laparoskopi:** Her hastada tanı için ilk adım değildir; cerrahi karar verildiğinde hem tanı hem tedavi amacıyla kullanılabilir.
+- **CA-125:** Tek başına tanı koydurmaz; yalnızca klinik bağlam içinde yardımcı olabilir.
 
-4. **Sindirim Sistemi Problemleri**
-   - Şişkinlik, kabızlık, ishal veya mide bulantısı gibi bağırsak şikayetleri.
-   - Bu belirtiler, irritabl bağırsak sendromu (IBS) gibi diğer rahatsızlıklarla karışabilir.
+Görüntüleme raporunda kistin boyutu, tek/bilateral olması, duvar yapısı, solid alan, papiller çıkıntı, kanlanma ve eşlik eden yapışıklık şüphesi ayrıca değerlendirilmelidir. Kist tipi net değilse [yumurtalık kistleri ve doğurganlık](/makaleler/yumurtalik-kistleri-dogurganlik/) rehberiyle birlikte düşünmek yararlı olur.
+</div>
 
-5. **Kısırlık (İnfertilite)**
-   - Endometriozis, kısırlık sorunu yaşayan kadınların %20-40'ında görülür.
-   - Yapışıklıklar ve yumurtalık fonksiyonlarının bozulması gebeliği zorlaştırabilir.
+<div data-reveal>
+<h2 id="rezerv">Endometrioma AMH ve Yumurtalık Rezervini Nasıl Etkiler?</h2>
 
-6. **Daha Seyrek Görülen Semptomlar**
-   - Kronik yorgunluk, enerji düşüklüğü ve bel ağrısı gibi belirtiler de eşlik edebilir.
+Endometrioma ve yumurtalık rezervi ilişkisi iki yönlüdür. Kistin kendisi yumurtalık dokusunu etkileyebilir; fakat kisti çıkarmak için yapılan cerrahi de sağlıklı yumurtalık dokusuna veya kanlanmaya zarar verebilir. Bu nedenle tek hedef “kisti yok etmek” değildir.
 
----
+Rezerv kararı için şu testler birlikte okunur:
 
-## Endometriozis Kistlerinde Tanı Yöntemleri
+| Değerlendirme | Ne anlatır? | Neden önemli? |
+| :--- | :--- | :--- |
+| **AMH** | Yumurtalık rezervi hakkında yaklaşık bilgi verir. | Cerrahi öncesi ve IVF planında zamanlamayı etkiler. |
+| **AFC** | Ultrasonda görülen küçük folikül sayısıdır. | Endometrioma olan yumurtalıkta teknik olarak daha zor yorumlanabilir. |
+| **FSH/E2** | Siklus başı hormonal tabloyu gösterir. | AMH/AFC ile uyumsuzluk varsa tabloyu tamamlar. |
+| **Yaş** | Yumurta kalitesi ve zaman penceresiyle ilişkilidir. | Aynı AMH değeri 30 ve 40 yaşta aynı anlamı taşımaz. |
 
-Tanı, birden fazla adımın birleşiminden oluşan kapsamlı bir süreci gerektirir:
+Özellikle bilateral endometrioma, düşük AMH, tekrarlayan kist cerrahisi veya yakın zamanda yumurtalık cerrahisi planı varsa [fertilite koruma](/fertilite-koruma/) seçenekleri erken konuşulmalıdır.
+</div>
 
-1. **Tıbbi Öykü ve Fizik Muayene**
-   - Doktor, hastanın adet döngüsü, ağrı şiddeti, kısırlık öyküsü gibi detayları sorgular.
-   - Pelvik muayenede yumurtalık veya pelvik bölgede kistler, nodüller tespit edilebilir.
+<div data-reveal>
+<h2 id="ameliyat">Endometrioma Ameliyatı Ne Zaman Düşünülür?</h2>
 
-2. **Görüntüleme Teknikleri**
-   - **Ultrason**: Pelvisin görüntülenmesi amacıyla sıklıkla tercih edilir. Kistlerin varlığını ve boyutunu gösterir.
-   - **MRI (Manyetik Rezonans Görüntüleme)**: Özellikle derin endometriozis odaklarının belirlenmesinde daha detaylı bilgi sunar.
+Ameliyat kararı otomatik değildir. Cerrahi, doğru hastada ağrıyı azaltabilir ve şüpheli bulguları netleştirebilir; ancak gebelik planı olan hastada rezerv kaybı riski dikkatle tartılmalıdır.
 
-3. **Laparoskopi**
-   - Kesin tanı için altın standart yöntemdir. <InlineEvidence grade="B" /> Küçük bir kesiyle karın içine kamera (laparoskop) yerleştirilerek kistler ve lezyonlar doğrudan görülür.
-   - Gerekirse aynı seansta cerrahi tedavi veya biyopsi uygulanabilir.
+Cerrahi şu durumlarda daha güçlü biçimde gündeme gelir:
 
-4. **Kan Testleri**
-   - CA-125 gibi tümör belirteçleri endometriozisi destekleyici nitelikte olabilir; ancak tek başına kesin tanı koydurmaz.
+- İlaçla veya takip yaklaşımıyla kontrol edilemeyen ağrı
+- Kistin hızla büyümesi veya görüntülemede şüpheli özellikler
+- Büyük veya uygunsuz konumlu kistin yumurta toplamayı zorlaştırması
+- Torsiyon, rüptür veya enfeksiyon gibi acil/yarı acil sorunlar
+- Derin endometriozis nedeniyle bağırsak, mesane veya üreter tutulumu şüphesi
+- Tanının belirsiz kalması ve yönetimi değiştirecek doku tanısı ihtiyacı
 
----
+Cerrahi gerekiyorsa hedef, mümkün olan en fazla normal yumurtalık dokusunu korumaktır. Tekrarlayan cerrahilerde, bilateral kistlerde ve düşük rezervde karar daha da hassaslaşır.
+</div>
 
-## Endometriozis Kistlerinde Tedavi Yaklaşımları
+<div data-reveal>
+<h2 id="ivf">IVF Öncesi Endometrioma Varsa Ne Yapılır?</h2>
 
-Endometriozis kistlerinin tedavisi, semptomların şiddetine, kistin boyutuna ve hastanın çocuk sahibi olma isteğine göre değişir. Ana amaç, ağrıyı azaltmak ve olası kısırlık riskini minimuma indirmektir.
+IVF öncesi endometrioma saptandığında temel soru “önce ameliyat mı?” değil, “ameliyat gebelik şansını artıracak mı, yoksa rezervi azaltarak zarar mı verebilir?” sorusudur. ESHRE 2022, IVF/ICSI öncesi rutin endometrioma cerrahisini canlı doğumu artırmak için önermemektedir. Cerrahi daha çok ağrı, şüpheli görüntü veya oosit toplamaya erişim sorunu gibi seçilmiş durumlarda değerlendirilir.
 
-### 1. Medikal Tedavi
+Pratik yaklaşım:
 
-- **Hormonal Tedaviler**: Doğum kontrol hapları, progestinler, GnRH agonistleri gibi hormon düzenleyici ilaçlar, endometriozis dokusunun büyümesini yavaşlatarak ağrı ve kist oluşumunu kontrol altına alabilir.
-- **Ağrı Kesiciler**: Nonsteroidal antiinflamatuar ilaçlar (NSAID'ler) adet sancısını ve pelvik ağrıyı hafifletmek için kullanılabilir.
+| Klinik durum | Olası yaklaşım | İlgili rehber |
+| :--- | :--- | :--- |
+| **Küçük, asemptomatik endometrioma** | İzlem ve infertilite planının tamamlanması | [Endometriozis ve kısırlık](/makaleler/endometriozis-akilli-stratejiler/) |
+| **Düşük AMH/AFC veya ileri yaş** | Gereksiz cerrahiden kaçınma, hızlı IVF/fertilite planı | [Düşük AMH](/makaleler/dusuk-amh-hamilelik/) |
+| **Yumurta toplamayı engelleyen kist** | Cerrahi veya alternatif girişimlerin tartışılması | [Endometriozis ve tüp bebek](/makaleler/endometriozis-tup-bebek/) |
+| **Hidrosalpinx eşlik ediyor** | Tüp faktörü IVF öncesi ayrıca ele alınır | [Hidrosalpinx](/makaleler/hidrosalpinx-ve-kisirlik/) |
+| **Gebelik planı yok ama risk yüksek** | Yumurta/embriyo dondurma görüşmesi | [Fertilite koruma](/fertilite-koruma/) |
 
-### 2. Cerrahi Tedavi
+Transferin taze veya dondurulmuş yapılması da kişiye özeldir. Ayrıntılar için [taze ve dondurulmuş embriyo transferi](/makaleler/taze-dondurulmus-transfer/) rehberine bakabilirsiniz.
+</div>
 
-- **Konservatif Cerrahi (Laparoskopik Kistektomi)**: Yumurtalıkları koruyarak sadece kistin çıkarılmasını amaçlar. Bu yöntemle hem ağrı azaltılabilir hem de gebe kalma şansı artabilir.
-- **Histerektomi**: Çok ileri vakalarda ve aile planlamasını tamamlamış kişilerde, rahmin alınması (bazen yumurtalıklarla birlikte) gerekebilir. Ancak bu karar hastanın ihtiyaçlarına ve semptom şiddetine göre bireysel olarak değerlendirilmelidir.
+<div data-reveal>
+<h2 id="faq">Sıkça Sorulan Sorular</h2>
 
-### 3. Kişiselleştirilmiş Tedavi Planları
+<Accordion title="Endometrioma kanser midir?">
+Çoğu endometrioma iyi huyludur. Ancak hızlı büyüme, menopoz sonrası yeni kist, solid alan, papiller yapı, belirgin kanlanma veya görüntüleme uyumsuzluğu varsa ileri değerlendirme gerekir.
+</Accordion>
 
-Her hastanın yaşı, belirtileri, kistin boyutu ve doğurganlık isteği farklı olduğundan, tedavi planları kişiye özel hazırlanır. Tedavi süreci boyunca düzenli takip, semptomların tekrarlamaması ve olası komplikasyonların erken tespiti için önemlidir.
+<Accordion title="Çikolata kisti kendiliğinden geçer mi?">
+Fonksiyonel kistler gibi kısa sürede kaybolması beklenmez. Bazı endometriomalar uzun süre stabil kalabilir; bazıları büyüyebilir veya ağrı yapabilir. İzlem aralığı kistin görünümüne ve hastanın hedeflerine göre belirlenir.
+</Accordion>
 
----
+<Accordion title="Endometrioma varsa doğal gebelik mümkün mü?">
+Evet, bazı hastalarda mümkündür. Olasılık yaş, yumurtalık rezervi, tüplerin durumu, sperm analizi, ağrı düzeyi ve infertilite süresine göre değişir. Uzun süren denemelerde değerlendirme geciktirilmemelidir.
+</Accordion>
 
-## Komplikasyonlar ve Gebelik
+<Accordion title="Endometrioma ameliyatı AMH'yi düşürür mü?">
+Özellikle kistektomi sonrası AMH ve yumurtalık yanıtında azalma görülebilir. Risk bilateral kistlerde, tekrarlayan cerrahilerde ve düşük rezervi olan hastalarda daha önemlidir; bu yüzden ameliyat öncesi rezerv değerlendirmesi yapılmalıdır.
+</Accordion>
 
-Endometriozis kistleri, kronik pelvik ağrı ve kısırlık başta olmak üzere çeşitli komplikasyonlara yol açabilir. Yumurtalıklarda oluşan yapışıklıklar gebe kalmayı zorlaştırır. Bazı vakalarda kist büyüdükçe yumurtalık dönmesi (ovarian torsiyon) riski artar ve bu durum acil cerrahi müdahale gerektirir. Ayrıca endometriozis varlığında hamilelik döneminde de bazı komplikasyonların görülme sıklığı artabilir. Bu nedenle, hamile kalmayı planlayan kadınların düzenli doktor kontrolünde olması önemlidir.
+<Accordion title="IVF öncesi endometrioma her zaman alınmalı mı?">
+Hayır. Sadece IVF başarısını artırmak amacıyla rutin endometrioma cerrahisi önerilmez. Ağrı, şüpheli görüntü veya yumurta toplamaya erişim sorunu varsa karar kişiselleştirilir.
+</Accordion>
+</div>
 
----
+<div data-reveal class="mt-12 bg-slate-50 p-8 rounded-3xl border border-slate-200">
+**Sizin İçin Seçtiğimiz Diğer Rehberler:**
+- [Kadın infertilitesi: nedenler ve tanı yol haritası](/kadin-infertilitesi/)
+- [Endometriozis ve kısırlık](/makaleler/endometriozis-akilli-stratejiler/)
+- [Endometriozis ve tüp bebek: cerrahi mi IVF mi?](/makaleler/endometriozis-tup-bebek/)
+- [Yumurtalık kistleri ve doğurganlık](/makaleler/yumurtalik-kistleri-dogurganlik/)
+- [Düşük AMH ve yumurtalık rezervi](/makaleler/dusuk-amh-hamilelik/)
+- [Fertilite koruma ve yumurta/embriyo dondurma](/fertilite-koruma/)
+</div>
 
-## Yaşam Tarzı ve Yönetim
+</div>
 
-Endometriozis kistleriyle başa çıkmak için tıbbi tedavilerin yanı sıra yaşam tarzı değişiklikleri de büyük fayda sağlar:
+export const endometriomaFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "Endometrioma her zaman ameliyat gerektirir mi?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Hayır. Endometrioma ameliyatı ağrı, şüpheli görüntü, kistin boyutu ve konumu, yumurta toplamaya erişim, yumurtalık rezervi, yaş ve gebelik planına göre kişiselleştirilir."
+    }
+  }, {
+    "@type": "Question",
+    "name": "Endometrioma ameliyatı AMH değerini düşürür mü?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Özellikle kistektomi sonrası AMH ve yumurtalık yanıtında azalma görülebilir. Risk bilateral kistlerde, tekrarlayan cerrahilerde ve düşük rezervde daha önemlidir."
+    }
+  }, {
+    "@type": "Question",
+    "name": "IVF öncesi endometrioma her zaman alınmalı mı?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Hayır. IVF/ICSI öncesi rutin endometrioma cerrahisi canlı doğumu artırmak amacıyla önerilmez. Ağrı, şüpheli görüntü veya yumurta toplamaya erişim sorunu varsa cerrahi düşünülebilir."
+    }
+  }, {
+    "@type": "Question",
+    "name": "Endometrioma varsa yumurta dondurma gerekir mi?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Her hastada gerekmez. Bilateral endometrioma, düşük AMH/AFC, tekrarlayan cerrahi öyküsü veya yaklaşan yumurtalık cerrahisi varsa fertilite koruma seçenekleri erken konuşulmalıdır."
+    }
+  }]
+};
 
-1. **Diyet Düzenlemeleri**
-   - Sebze ve meyve ağırlıklı, işlenmiş gıdalardan uzak bir beslenme düzeni önerilir.
-   - Omega-3 yağ asitleri yönünden zengin balık, ceviz gibi gıdalar iltihap seviyesini azaltmaya yardımcı olabilir.
-   - Trans yağ içeriği yüksek besinler, işlenmiş et ürünleri ve aşırı şeker tüketiminden kaçınmak gerekir.
-   - Bazı kişilerde Akdeniz diyeti veya düşük FODMAP diyeti gibi özel beslenme planları semptomları hafifletebilir.
-
-2. **Egzersiz ve Fiziksel Aktivite**
-   - Düzenli yürüyüş, yüzme, yoga gibi düşük etkili egzersizler hem stresi azaltır hem de dolaşımı iyileştirir.
-   - Ağrılı dönemlerde aşırı yoğun egzersizlerden kaçınarak vücudu dinlemek önemlidir.
-
-3. **Stres Yönetimi**
-   - Meditasyon, derin nefes egzersizleri, yoga ve gevşeme teknikleriyle stres ve ağrı döngüsü hafifletilebilir.
-   - Psikolojik destek, danışmanlık veya terapi, hastalığın duygusal yönüyle başa çıkmada yararlıdır.
-
-4. **Destekleyici Uygulamalar**
-   - Pelvik taban terapisi, endometriozise bağlı ağrıyı ve pelvisteki gerginliği azaltabilir.
-   - Vitamin ve mineral takviyeleri (D, C, E gibi), kurkumin (zerdeçal) gibi doğal destekler ağrıyı ve iltihabı azaltmaya katkı sağlayabilir.
-
----
-
-## Araştırmalar ve Gelecek Perspektifleri
-
-- **Yeni Tedavi Seçenekleri**: Hormon baskılamanın ötesine geçerek ağrıyı hafifletmeyi ve kist oluşumunu önlemeyi hedefleyen ilaç çalışmaları devam etmektedir.
-- **Biyobelirteç ve Genetik Çalışmalar**: Endometriozisin neden bazı kadınlarda daha agresif seyrettiğini anlamak için genetik etkenler ve mikrobiyota üzerine araştırmalar yapılıyor.
-- **Yapay Zekâ ve Teşhis**: Yapay zekâ uygulamaları, endometriozis için yeni tanı modelleri geliştirmek amacıyla genetik ve mikroRNA verilerini analiz edebiliyor. Bu sayede daha erken tanı ve etkili tedavi yöntemleri sunulabilecek.
-- **Ekonomik Yük ve Farkındalık**: Endometriozisin yüksek ekonomik maliyetleri, bu alana ayrılan araştırma fonlarının artırılmasını sağladı. Farkındalık kampanyaları ise kadınların belirtileri erken tanımasına ve gecikmiş teşhisin önüne geçilmesine yardımcı oluyor.
-
----
-
-## Sonuç
-
-Endometriozis kistleri (endometriomalar), kadın sağlığını derinden etkileyen ve kısırlığa kadar uzanan komplikasyonlara yol açabilen ciddi bir sorundur. Ağrı yönetimi, hormonal tedaviler, cerrahi girişimler ve yaşam tarzı değişiklikleriyle semptomların hafifletilmesi mümkündür. Erken tanı ve doğru tedavi yaklaşımları sayesinde, birçok kadın hem ağrıdan kurtulabilir hem de doğurganlığını koruyabilir. Sürekli gelişen araştırma ve tedavi yöntemleri, endometriozis yönetimi konusunda umut vaat etmekte; bu sayede daha erken tanı ve daha etkili tedavilerle hastalara daha kaliteli bir yaşam sunulması hedeflenmektedir.
-
-Unutmayın: Endometriozis semptomları kişiden kişiye değişebilir. Bu nedenle, belirtileri yaşıyorsanız uzman bir doktora başvurarak kişiselleştirilmiş bir tedavi planı almanız büyük önem taşır. Erken tanı ve düzenli takip, endometriozisle mücadelede en önemli adımdır.
+<script type="application/ld+json" set:html={JSON.stringify(endometriomaFaqSchema)} />
