@@ -4,10 +4,87 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import StatsStrip from '../components/StatsStrip.astro';
 import RelatedContent from '../components/RelatedContent.astro';
+import MedicalDisclaimer from '../components/MedicalDisclaimer.astro';
+
+const pageTitle = 'Erkek İnfertilitesi: Semen Analizi, Varikosel, Azospermi ve ICSI | tupbebek.com';
+const pageDescription = 'Erkek infertilitesi nedenleri, semen analizi, varikosel, azospermi, mikro-TESE, ICSI ve yaşam tarzı etkileri hakkında bilimsel rehber.';
+
+const clusterLinks = [
+  {
+    href: '/makaleler/varikosel-nedir-ne-zaman-ameliyat-gerekir',
+    icon: 'health_and_safety',
+    title: 'Varikosel ne zaman önemlidir?',
+    description: 'Palpabl varikosel, bozuk semen analizi ve çocuk isteği birlikte nasıl değerlendirilir?'
+  },
+  {
+    href: '/makaleler/azospermi-mikro-tese',
+    icon: 'biotech',
+    title: 'Azospermi ve mikro-TESE',
+    description: 'Sperm sayısı sıfır olduğunda OA/NOA ayrımı, genetik testler ve ICSI yolu.'
+  },
+  {
+    href: '/makaleler/cerrahi-sperm-arama-tese',
+    icon: 'science',
+    title: 'Cerrahi sperm arama',
+    description: 'TESA, TESE ve mikro-TESE seçeneklerinin hangi durumda gündeme geldiği.'
+  },
+  {
+    href: '/makaleler/mikroenjeksiyon-icsi-nedir',
+    icon: 'precision_manufacturing',
+    title: 'Mikroenjeksiyon (ICSI)',
+    description: 'Ciddi erkek faktöründe spermin yumurtaya tek tek enjekte edildiği laboratuvar tekniği.'
+  },
+  {
+    href: '/makaleler/erkek-dogurganlik-besin-takviyeleri',
+    icon: 'nutrition',
+    title: 'Takviyeler ve yaşam tarzı',
+    description: 'Antioksidanlar, beslenme, egzersiz ve üç aylık sperm üretim döngüsü.'
+  },
+  {
+    href: '/makaleler/cep-telefonu-sperm-kalitesi',
+    icon: 'phone_iphone',
+    title: 'Telefon, ısı ve çevresel etkenler',
+    description: 'Günlük alışkanlıkların sperm parametreleriyle olası ilişkileri.'
+  }
+];
+
+const faqItems = [
+  {
+    q: 'Erkek infertilitesi değerlendirmesi hangi testle başlar?',
+    a: 'İlk basamak genellikle semen analizidir. Sonuç tek başına kesin tanı koydurmaz; en az bir doğru alınmış örnek, tıbbi öykü, fizik muayene ve gerektiğinde hormon ya da genetik testlerle birlikte yorumlanır.'
+  },
+  {
+    q: 'Varikosel her zaman ameliyat gerektirir mi?',
+    a: 'Hayır. Kılavuzlar, özellikle ele gelen klinik varikosel, anormal semen parametreleri ve çocuk isteği birlikte olduğunda varikosel onarımının değerlendirilebileceğini belirtir. Sadece ultrasonla saptanan subklinik varikosel için rutin onarım önerilmez.'
+  },
+  {
+    q: 'Azospermide sperm bulunamazsa tüp bebek imkansız mıdır?',
+    a: 'Azospermi obstrüktif veya nonobstrüktif olabilir. Bazı olgularda cerrahi sperm arama yöntemleriyle sperm elde edilip ICSI sürecinde kullanılabilir; ancak olasılık kişisel tanıya, testis bulgularına ve genetik sonuçlara göre değişir.'
+  },
+  {
+    q: 'Sperm kalitesi yaşam tarzıyla ne kadar sürede değişebilir?',
+    a: 'Sperm üretim döngüsü yaklaşık 74 gün sürdüğü için sigara, alkol, kilo, ısı maruziyeti, uyku ve beslenme gibi düzenlemelerin etkisi genellikle birkaç ay içinde değerlendirilir.'
+  }
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  '@id': 'https://tupbebek.com/erkek-infertilitesi/#faqpage',
+  mainEntity: faqItems.map((item) => ({
+    '@type': 'Question',
+    name: item.q,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: item.a
+    }
+  }))
+};
 ---
 
-<BaseLayout title="Erkek İnfertilitesi: Nedenler ve Tedavi Seçenekleri | tupbebek.com" description="Erkek infertilitesi nedenleri, semen analizi, tedaviler (ICSI, TESE, ilaç), yaşam tarzı etkileri ve başarı oranları.">
+<BaseLayout title={pageTitle} description={pageDescription}>
     <Header />
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(faqSchema)} />
 
     <main id="main-content" tabindex="-1" class="pb-24">
         <!-- Hero Section -->
@@ -40,24 +117,48 @@ import RelatedContent from '../components/RelatedContent.astro';
         <!-- Scientific Introduction -->
         <section class="max-w-3xl mx-auto px-4 md:px-6 lg:px-8 mb-16">
             <p class="text-lg md:text-xl text-gray-600 leading-relaxed font-body italic mb-12">
-                Erkek infertilitesi, üreme çiftlerinin yaklaşık yarısında rol oynayan bir etkendir. Ancak, erkek infertilitesinin nedenleri tanı ve tedavi edilebilir olduğunda, çoğu çift başarılı gebeliklere ulaşabilmektedir. Bu rehber, erkek üreme sağlığını kapsamlı şekilde inceler.
+                Erkek infertilitesi, infertilite yaşayan çiftlerin önemli bir bölümünde tek başına veya kadın faktörüyle birlikte rol oynayabilir. Doğru semen analizi, üroloji/androloji değerlendirmesi ve nedene yönelik planlama ile varikosel, hormonal sorunlar, azospermi ve ciddi sperm parametre bozuklukları daha net yönetilebilir.
             </p>
             <StatsStrip items={[
-              { icon: 'man', heading: '~%50', text: 'Vakaların yarısında erkek kaynaklı nedenler mevcut' },
-              { icon: 'analytics', heading: '%60', text: 'Varikosel en sık erkek infertilite nedeni' },
-              { icon: 'science', heading: 'ICSI', text: 'Çok düşük sperm sayılarında bile gebelik mümkün' }
+              { icon: 'man', heading: '~%50', text: 'Çift infertilitesinde erkek faktörü tek başına veya birlikte rol oynayabilir' },
+              { icon: 'analytics', heading: 'WHO', text: 'Semen analizi standart yöntem ve referans aralıklarla yorumlanır' },
+              { icon: 'science', heading: 'ICSI', text: 'Ciddi erkek faktöründe laboratuvar ve cerrahi seçenekler birlikte planlanır' }
             ]} />
+        </section>
+
+        <!-- Topic Cluster -->
+        <section id="konu-haritasi" class="max-w-5xl mx-auto px-4 md:px-6 lg:px-8 mb-16">
+            <div class="bg-white border border-gray-200 rounded-3xl p-6 md:p-8 shadow-sm">
+                <div class="max-w-3xl mb-8">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-primary-600">Konu Haritası</span>
+                    <h2 class="font-headline text-3xl text-gray-900 mt-2 mb-4">Erkek infertilitesi için okuma yolu</h2>
+                    <p class="text-gray-600 leading-relaxed">
+                        Bu sayfa ana rehberdir. Tanı, varikosel, azospermi, cerrahi sperm arama, ICSI ve yaşam tarzı başlıklarını derinleştirmek için aşağıdaki alt rehberlere geçebilirsiniz.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    {clusterLinks.map((item) => (
+                        <a href={item.href} class="group rounded-2xl border border-gray-100 bg-gray-50 p-5 hover:border-primary-200 hover:bg-primary-50/40 transition-colors">
+                            <span class="material-symbols-outlined text-primary-600 mb-3">{item.icon}</span>
+                            <h3 class="font-bold text-gray-900 text-sm mb-2 group-hover:text-primary-700">{item.title}</h3>
+                            <p class="text-xs text-gray-600 leading-relaxed">{item.description}</p>
+                        </a>
+                    ))}
+                </div>
+            </div>
         </section>
 
         <!-- Quick-Nav -->
         <nav id="quick-nav" class="sticky top-20 z-40 bg-white/90 backdrop-blur-sm border-b border-gray-100 shadow-sm mb-16">
             <div class="max-w-5xl mx-auto px-4 md:px-6 lg:px-8 overflow-x-auto whitespace-nowrap">
                 <div class="flex items-center gap-1 py-3">
+                    <a href="#konu-haritasi" class="quick-nav-link px-4 py-2 text-sm font-semibold text-gray-500 hover:text-primary-600 rounded-lg transition-colors shrink-0">Konu Haritası</a>
                     <a href="#nedenler" class="quick-nav-link px-4 py-2 text-sm font-semibold text-gray-500 hover:text-primary-600 rounded-lg transition-colors shrink-0">Nedenler</a>
                     <a href="#tani" class="quick-nav-link px-4 py-2 text-sm font-semibold text-gray-500 hover:text-primary-600 rounded-lg transition-colors shrink-0">Tanı</a>
                     <a href="#tedaviler" class="quick-nav-link px-4 py-2 text-sm font-semibold text-gray-500 hover:text-primary-600 rounded-lg transition-colors shrink-0">Tedaviler</a>
                     <a href="#yasam" class="quick-nav-link px-4 py-2 text-sm font-semibold text-gray-500 hover:text-primary-600 rounded-lg transition-colors shrink-0">Yaşam Tarzı</a>
                     <a href="#duygusal" class="quick-nav-link px-4 py-2 text-sm font-semibold text-gray-500 hover:text-primary-600 rounded-lg transition-colors shrink-0">Duygusal Boyut</a>
+                    <a href="#sss" class="quick-nav-link px-4 py-2 text-sm font-semibold text-gray-500 hover:text-primary-600 rounded-lg transition-colors shrink-0">SSS</a>
                 </div>
             </div>
         </nav>
@@ -74,12 +175,12 @@ import RelatedContent from '../components/RelatedContent.astro';
                             </p>
                             <div class="space-y-4 text-sm">
                                 <div class="flex items-start gap-4 bg-white rounded-xl p-4 shadow-sm">
-                                    <span class="font-mono font-bold text-red-600 shrink-0">%60</span>
-                                    <span class="text-gray-600"><strong>Varikosel:</strong> Skrotal venlerin genişlemesi, testis sıcaklığını artırarak sperm kalitesini düşürür.</span>
+                                    <span class="font-mono font-bold text-red-600 shrink-0">V</span>
+                                    <span class="text-gray-600"><strong>Varikosel:</strong> Klinik olarak saptandığında sperm parametrelerini etkileyebilen, seçilmiş hastalarda tedavi edilebilir bir nedendir. <a href="/makaleler/varikosel-nedir-ne-zaman-ameliyat-gerekir" class="text-primary-600 hover:underline">Varikosel rehberi</a></span>
                                 </div>
                                 <div class="flex items-start gap-4 bg-white rounded-xl p-4 shadow-sm">
                                     <span class="font-mono font-bold text-amber-600 shrink-0">%</span>
-                                    <span class="text-gray-600"><strong>İnfeksiyon:</strong> Epididimit, orşit, prostatit. Belirti vermeyen infeksiyonlar bile sperm parametrelerini etkileyebilir.</span>
+                                    <span class="text-gray-600"><strong>Enfeksiyon:</strong> Epididimit, orşit, prostatit. Belirti vermeyen enfeksiyonlar bile sperm parametrelerini etkileyebilir.</span>
                                 </div>
                                 <div class="flex items-start gap-4 bg-white rounded-xl p-4 shadow-sm">
                                     <span class="font-mono font-bold text-primary-600 shrink-0">→</span>
@@ -91,7 +192,7 @@ import RelatedContent from '../components/RelatedContent.astro';
                                 </div>
                                 <div class="flex items-start gap-4 bg-white rounded-xl p-4 shadow-sm">
                                     <span class="font-mono font-bold text-primary-600 shrink-0">→</span>
-                                    <span class="text-gray-600"><strong>Tıkanıklık:</strong> Vaz deferens yokluğu (CFTR mutation), postinfeksiyon obstrüksiyon.</span>
+                                    <span class="text-gray-600"><strong>Tıkanıklık:</strong> Vaz deferens yokluğu (CFTR mutasyonu), enfeksiyon sonrası obstrüksiyon.</span>
                                 </div>
                             </div>
                         </div>
@@ -117,7 +218,7 @@ import RelatedContent from '../components/RelatedContent.astro';
                     <h2 class="font-headline text-3xl text-gray-900 mb-6">2. Erkek Değerlendirme ve Tanı</h2>
                     <div class="space-y-4 text-gray-600">
                         <p>
-                            Erkek infertilitesi değerlendirmesi, semen analizi ile başlar. <a href="/makaleler/laboratuvar-raporu-yorumlama" class="text-primary-600 hover:underline">Laboratuvar raporu yorumlama</a> kılavuzumuzda semen analizi parametrelerini detaylı inceleyebilirsiniz. WHO 2021 kriterlerine göre normal değerler:
+                            Erkek infertilitesi değerlendirmesi, doğru koşullarda verilen semen analizi ile başlar. Sonuçlar tek başına "fertil/infertil" etiketi değildir; öykü, fizik muayene ve gerekirse hormon/genetik testlerle birlikte yorumlanır. WHO 2021 kılavuzundaki alt referans aralıkları:
                         </p>
                         <div class="bg-white border-l-4 border-primary rounded-xl p-6">
                             <table class="w-full text-sm">
@@ -130,7 +231,7 @@ import RelatedContent from '../components/RelatedContent.astro';
                                 <tbody>
                                     <tr class="border-b border-gray-200">
                                         <td class="py-2 pr-4 text-gray-600">Sperm konsantrasyonu</td>
-                                        <td class="py-2 pr-4 font-bold text-primary-600">≥15 milyon/mL</td>
+                                        <td class="py-2 pr-4 font-bold text-primary-600">≥16 milyon/mL</td>
                                     </tr>
                                     <tr class="border-b border-gray-200">
                                         <td class="py-2 pr-4 text-gray-600">Toplam sperm sayısı</td>
@@ -138,11 +239,11 @@ import RelatedContent from '../components/RelatedContent.astro';
                                     </tr>
                                     <tr class="border-b border-gray-200">
                                         <td class="py-2 pr-4 text-gray-600">Hareketlilik (total motilite)</td>
-                                        <td class="py-2 pr-4 font-bold text-primary-600">≥40%</td>
+                                        <td class="py-2 pr-4 font-bold text-primary-600">≥42%</td>
                                     </tr>
                                     <tr class="border-b border-gray-200">
                                         <td class="py-2 pr-4 text-gray-600">İleri hareketlilik (progressif)</td>
-                                        <td class="py-2 pr-4 font-bold text-primary-600">≥32%</td>
+                                        <td class="py-2 pr-4 font-bold text-primary-600">≥30%</td>
                                     </tr>
                                     <tr>
                                         <td class="py-2 pr-4 text-gray-600">Normal morfoloji</td>
@@ -152,8 +253,17 @@ import RelatedContent from '../components/RelatedContent.astro';
                             </table>
                         </div>
                         <p>
-                            Semen analizi abnormal çıktığında <a href="/hormon-paneli" class="text-primary-600 hover:underline">hormon paneli</a> (FSH, LH, Testosteron, Prolaktin) ve gerekirse genetik testler istenir. Daha ileri değerlendirme için <a href="/tani-sureci" class="text-primary-600 hover:underline">tanı süreci</a> sayfamıza bakın.
+                            Semen analizi anormal çıktığında <a href="/hormon-paneli" class="text-primary-600 hover:underline">hormon paneli</a> (FSH, LH, testosteron, prolaktin) ve gerekirse <a href="/genetik-testler" class="text-primary-600 hover:underline">genetik testler</a> istenir. Azospermi veya çok ağır oligozoospermi gibi durumlarda <a href="/makaleler/azospermi-mikro-tese" class="text-primary-600 hover:underline">azospermi ve mikro-TESE yol haritası</a> ayrıca değerlendirilmelidir.
                         </p>
+                        <div class="bg-primary-50 border border-primary-100 rounded-xl p-5 text-sm">
+                            <h3 class="font-bold text-gray-900 mb-2">Ne zaman üroloji/androloji değerlendirmesi gerekir?</h3>
+                            <ul class="space-y-1 text-gray-600">
+                                <li>• Semen analizinde belirgin sayı, hareket veya morfoloji bozukluğu varsa</li>
+                                <li>• Sperm hiç görülmüyorsa (azospermi) veya testis hacmi/hormonlar anormalse</li>
+                                <li>• Ele gelen varikosel, geçirilmiş testis cerrahisi, inmemiş testis veya kemoterapi öyküsü varsa</li>
+                                <li>• Tekrarlayan gebelik kaybı ya da tekrarlayan tüp bebek başarısızlığı erkek faktörüyle birlikte düşünülüyorsa</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="md:w-1/2">
@@ -177,37 +287,38 @@ import RelatedContent from '../components/RelatedContent.astro';
                         <h2 class="font-headline text-3xl text-gray-900 mb-6">3. Tedavi Seçenekleri</h2>
                         <div class="space-y-4 text-gray-600">
                             <p>
-                                Tedavi, infertilite nedenine göre bireyselleşir. Hafif erkek kaynaklı durumlarda yaşam tarzı düzenlemeleri ve IUI yeterli olabilirken, ağır olgularda <a href="/tedavi-yontemleri" class="text-primary-600 hover:underline">IVF ve ICSI</a> gerekebilir.
+                                Tedavi, infertilite nedenine göre bireyselleşir. Hafif erkek kaynaklı durumlarda yaşam tarzı düzenlemeleri veya IUI düşünülebilirken, ağır olgularda <a href="/tedavi-yontemleri" class="text-primary-600 hover:underline">IVF ve ICSI</a> gerekebilir.
                             </p>
                             <div class="space-y-4 text-sm">
                                 <div class="bg-white border-l-4 border-primary rounded-xl p-6">
                                     <div class="flex items-center gap-2 mb-3"><span class="material-symbols-outlined text-primary-600">medication</span><strong>İlaç Tedavileri</strong></div>
                                     <ul class="space-y-1">
-                                        <li>• <strong>Klomifen sitrat:</strong> Hipogonadotropik hastalarda alternatif</li>
+                                        <li>• <strong>Klomifen sitrat / anti-östrojenler:</strong> Seçilmiş hormonal profillerde hekim kararıyla kullanılabilir</li>
                                         <li>• <strong>Gonadotropinler (FSH/hCG):</strong> Hipogonadotropik hipogonadizmde</li>
-                                        <li>• <strong>Anti-estrogenler (Tamoksifen):</strong> İdiyopatik infertilitede</li>
-                                        <li>• <strong>Aromataz inhibitörleri (Anastrozole):</strong> T/E2 oranı düşük hastalarda</li>
-                                        <li>• <strong>Ilaç rehberi</strong>: <a href="/ilac-rehberi" class="text-primary-600 hover:underline">Detaylı ilaç bilgileri</a></li>
+                                        <li>• <strong>Aromataz inhibitörleri:</strong> Testosteron/estradiol dengesi belirli durumlarda değerlendirilebilir</li>
+                                        <li>• <strong>İlaç rehberi</strong>: <a href="/ilac-rehberi" class="text-primary-600 hover:underline">Detaylı ilaç bilgileri</a></li>
                                     </ul>
                                 </div>
                                 <div class="bg-white border-l-4 border-primary rounded-xl p-6">
                                     <div class="flex items-center gap-2 mb-3"><span class="material-symbols-outlined text-primary-600">biotech</span><strong>Cerrahi Seçenekler</strong></div>
                                     <ul class="space-y-1">
-                                        <li>• <strong>Varikoselektomi:</strong> Palpabl varikoselde en etkili cerrahi tedavi</li>
-                                        <li>• <strong>Vaz vazostomi / Vazepididimostomi:</strong> Obstrüktif infertilitede</li>
+                                        <li>• <strong>Varikoselektomi:</strong> Ele gelen varikosel, bozuk semen analizi ve çocuk isteği birlikte olduğunda gündeme gelebilir</li>
+                                        <li>• <strong>Vaz vazostomi / vazepididimostomi:</strong> Obstrüktif infertilitede seçilmiş olgularda değerlendirilir</li>
+                                        <li>• <strong>TESA/TESE/mikro-TESE:</strong> <a href="/makaleler/cerrahi-sperm-arama-tese" class="text-primary-600 hover:underline">Cerrahi sperm arama rehberi</a></li>
                                     </ul>
                                 </div>
                                 <div class="bg-white border-l-4 border-primary rounded-xl p-6">
                                     <div class="flex items-center gap-2 mb-3"><span class="material-symbols-outlined text-primary-600">vital_signs</span><strong>Yardımcı Üreme Teknikleri</strong></div>
                                     <ul class="space-y-1">
                                         <li>• <strong>IUI (Intrauterin İnseminasyon):</strong> Toplam mobil sperm ≥5-10 milyon ise</li>
-                                        <li>• <strong>IVF/ICSI:</strong> Ciddi erkek kaynaklı infertilitelerde ilk tercih</li>
-                                        <li>• <strong>TESE/microTESE + ICSI:</strong> <a href="/makaleler/azospermi-mikro-tese" class="text-primary-600 hover:underline">Azospermi ve microTESE hakkında</a></li>
+                                        <li>• <strong>IVF/ICSI:</strong> Ciddi erkek kaynaklı infertilitede sık kullanılan laboratuvar yaklaşımı</li>
+                                        <li>• <strong>TESE/mikro-TESE + ICSI:</strong> <a href="/makaleler/azospermi-mikro-tese" class="text-primary-600 hover:underline">Azospermi ve mikro-TESE hakkında</a></li>
+                                        <li>• <strong>ICSI tekniği:</strong> <a href="/makaleler/mikroenjeksiyon-icsi-nedir" class="text-primary-600 hover:underline">Mikroenjeksiyonun nasıl yapıldığını okuyun</a></li>
                                     </ul>
                                 </div>
                             </div>
                             <p>
-                                Sperm sayısı 15 milyon/mL'nin altında ise (oligozoospermi), hafif (&lt; 5 milyon), orta (5–15 milyon) veya ağır (&lt; 5 milyon) olarak sınıflandırılır. Ciddi oligozoospermide ICSI en etkin yöntemdir. <a href="/basari-oranlari" class="text-primary-600 hover:underline">ICSI ve IVF başarı oranları</a> için verilerimize bakın.
+                                Sperm konsantrasyonu, hareketlilik ve morfoloji birlikte bozulduğunda tedavi seçimi yalnızca sayıya göre yapılmaz; kadın yaşı, yumurtalık rezervi, infertilite süresi ve önceki tedavi öyküsü de plana dahil edilir. <a href="/basari-oranlari" class="text-primary-600 hover:underline">ICSI ve IVF başarı oranları</a> kişisel faktörlere göre değişir.
                             </p>
                         </div>
                     </div>
@@ -215,9 +326,9 @@ import RelatedContent from '../components/RelatedContent.astro';
                         <div class="relative group">
                             <img class="rounded-2xl shadow-xl w-full" src="/images/library/laboratuvar/dr-senai-aksoy-istanbul-ivf-laboratuvar.webp" alt="Sperm mikro enjeksiyonu" width="512" height="512" loading="lazy"/>
                             <div class="absolute -bottom-6 -right-6 bg-gray-100 p-4 rounded-lg hidden md:block">
-                                <p class="text-xs font-bold text-primary-600 tracking-widest uppercase mb-1">Başarı</p>
-                                <p class="text-2xl font-headline">%35-45</p>
-                                <p class="text-[10px] text-gray-600">ICSI canlı doğum oranı (35 yaş altı)</p>
+                                <p class="text-xs font-bold text-primary-600 tracking-widest uppercase mb-1">Kişisel Plan</p>
+                                <p class="text-2xl font-headline">ICSI</p>
+                                <p class="text-[10px] text-gray-600">Başarı yaş ve tanıya göre değişir</p>
                             </div>
                         </div>
                     </div>
@@ -253,10 +364,10 @@ import RelatedContent from '../components/RelatedContent.astro';
                             </div>
                         </div>
                         <p class="text-sm">
-                            <strong>Öneriler:</strong> Antioksidan zengini beslenme (C vitamini, E, çinko, folik asit, koenzim Q10) sperm kalitesini artırabilir. <a href="/beslenme-yasam" class="text-primary-600 hover:underline">Beslenme ve yaşam tarzı önerileri</a> sayfamızı inceleyin.
+                            <strong>Öneriler:</strong> Antioksidan zengini beslenme, kilo yönetimi, sigarayı bırakma ve düzenli uyku sperm sağlığını destekleyebilir; takviyeler ise kişisel eksiklik ve tıbbi öyküye göre planlanmalıdır. <a href="/makaleler/erkek-dogurganlik-besin-takviyeleri" class="text-primary-600 hover:underline">Erkek doğurganlığı ve takviyeler</a> rehberini inceleyin.
                         </p>
                         <p class="text-sm">
-                            Bazı ilaçlar (özellikle SSRIs, kemoterapi ilaçları, <a href="/makaleler/izotretinoin-sperm" class="text-primary-600 hover:underline">izotretinoin</a> gibi ilaçlar) sperm parametrelerini geçici olarak bozabilir. İlaç kullanımı hakkında doktorunuzla konuşun.
+                            Bazı ilaçlar, kemoterapi, anabolik steroidler ve <a href="/makaleler/izotretinoin-sperm" class="text-primary-600 hover:underline">izotretinoin</a> gibi tedaviler sperm parametrelerini etkileyebilir. Telefon/ısı maruziyeti gibi çevresel başlıklar için <a href="/makaleler/cep-telefonu-sperm-kalitesi" class="text-primary-600 hover:underline">sperm kalitesi ve cep telefonu</a> rehberine bakabilirsiniz.
                         </p>
                     </div>
                 </div>
@@ -273,6 +384,37 @@ import RelatedContent from '../components/RelatedContent.astro';
             </div>
         </section>
 
+        <!-- FAQ -->
+        <section id="sss" class="max-w-3xl mx-auto px-4 md:px-6 lg:px-8 mb-16">
+            <div class="mb-8">
+                <span class="text-xs font-semibold uppercase tracking-wider text-primary-600">Sık Sorulanlar</span>
+                <h2 class="font-headline text-3xl text-gray-900 mt-2">Erkek infertilitesi hakkında kısa yanıtlar</h2>
+            </div>
+            <div class="space-y-4">
+                {faqItems.map((item) => (
+                    <details class="group bg-white border border-gray-200 rounded-2xl p-5">
+                        <summary class="cursor-pointer list-none flex items-center justify-between gap-4 font-bold text-gray-900">
+                            <span>{item.q}</span>
+                            <span class="material-symbols-outlined text-primary-600 group-open:rotate-180 transition-transform">expand_more</span>
+                        </summary>
+                        <p class="mt-4 text-sm text-gray-600 leading-relaxed">{item.a}</p>
+                    </details>
+                ))}
+            </div>
+        </section>
+
+        <!-- Kaynaklar -->
+        <section id="kaynaklar" class="max-w-3xl mx-auto px-4 md:px-6 lg:px-8 mb-16">
+            <div class="bg-gray-50 rounded-2xl p-6 border border-gray-200">
+                <h2 class="font-headline text-2xl text-gray-900 mb-4">Bilimsel dayanak</h2>
+                <ul class="space-y-3 text-sm text-gray-600">
+                    <li>• <a href="https://www.who.int/publications/i/item/9789240030787" class="text-primary-600 hover:underline" rel="noopener noreferrer">WHO Laboratory Manual for the Examination and Processing of Human Semen, 6th ed. (2021)</a></li>
+                    <li>• <a href="https://www.auanet.org/guidelines-and-quality/guidelines/male-infertility" class="text-primary-600 hover:underline" rel="noopener noreferrer">AUA/ASRM Diagnosis and Treatment of Infertility in Men Guideline</a></li>
+                    <li>• <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9541878/" class="text-primary-600 hover:underline" rel="noopener noreferrer">WHO 2021 semen referans aralıklarının klinik etkisini inceleyen çalışma</a></li>
+                </ul>
+            </div>
+        </section>
+
         <!-- Section 5: Duygusal Boyut -->
         <section id="duygusal" class="bg-gray-50 py-24 mb-24">
             <div class="max-w-5xl mx-auto px-4 md:px-6 lg:px-8">
@@ -283,13 +425,13 @@ import RelatedContent from '../components/RelatedContent.astro';
                             Erkek infertilitesi, erkeklerde sıklıkla yetersizlik hissi, özgüven kaybı ve utanç duyguları yaratır. Toplumsal beklentiler ve "erkeklik" kavramı ile ilişkilendirilen bu durum, erkeklerin duygusal destek aramalarını da zorlaştırabilir.
                         </p>
                         <p>
-                            Çiftler birlikte bu süreci yönetmelidir. Erkek infertilitesi bir "hata" veya "kusur" değil, tıbbi bir durumdur ve tedavi edilebilir. <a href="/psikolojik-destek" class="text-primary-600 hover:underline">Psikolojik destek ve duygusal rehber</a> sayfamızda bu zorlu süreçte baş etme stratejilerini bulabilirsiniz.
+                            Çiftler birlikte bu süreci yönetmelidir. Erkek infertilitesi bir "hata" veya "kusur" değil, tıbbi olarak değerlendirilebilen bir durumdur; seçenekler tanıya göre değişir. <a href="/psikolojik-destek" class="text-primary-600 hover:underline">Psikolojik destek ve duygusal rehber</a> sayfamızda bu zorlu süreçte baş etme stratejilerini bulabilirsiniz.
                         </p>
                         <div class="bg-white border-l-4 border-primary rounded-xl p-6">
                             <h4 class="font-bold text-gray-900 text-sm mb-3">Baş Etme Stratejileri</h4>
                             <ul class="space-y-2 text-sm">
                                 <li>• <strong>Açık iletişim:</strong> Partnerinizle duygularınızı paylaşın</li>
-                                <li>• <strong>Profesyonel destek:</strong> Bilişsel davranışçı terapi (CBT) infertilite kaygısında etkilidir</li>
+                                <li>• <strong>Profesyonel destek:</strong> Bilişsel davranışçı terapi (CBT) gibi yaklaşımlar infertilite kaygısında destek sağlayabilir</li>
                                 <li>• <strong>Bilgi edinmek:</strong> Durumunuzu anlamak güçsüzlüğü azaltır</li>
                                 <li>• <strong>Yaşam tarzı değişiklikleri:</strong> Aktif olma hissi kontrolü yeniden verir</li>
                                 <li>• <strong>Destek grupları:</strong> Benzer deneyimleri yaşayan diğer erkeklerle bağlantı kurmak</li>
@@ -302,12 +444,12 @@ import RelatedContent from '../components/RelatedContent.astro';
 
         <!-- Related Pages / İlgili Sayfalar -->
         <RelatedContent items={[
-          { href: '/kadin-infertilitesi', icon: 'woman', title: 'Kadın İnfertilitesi', description: 'Kadın kaynaklı nedenler ve tanı süreçleri' },
+          { href: '/makaleler/varikosel-nedir-ne-zaman-ameliyat-gerekir', icon: 'health_and_safety', title: 'Varikosel Rehberi', description: 'Varikosel nedir ve ameliyat ne zaman düşünülür?' },
+          { href: '/makaleler/azospermi-mikro-tese', icon: 'biotech', title: 'Azospermi ve Mikro-TESE', description: 'Sperm bulunmadığında tanı ve tedavi yolu' },
+          { href: '/makaleler/mikroenjeksiyon-icsi-nedir', icon: 'precision_manufacturing', title: 'Mikroenjeksiyon (ICSI)', description: 'Ciddi erkek faktöründe laboratuvar tekniği' },
           { href: '/tani-sureci', icon: 'assignment', title: 'Tanı Süreci', description: 'İnfertilite değerlendirmesi adımları' },
-          { href: '/tedavi-yontemleri', icon: 'biotech', title: 'Tedavi Yöntemleri', description: 'IVF, ICSI, IUI ve diğer teknikler' },
-          { href: '/beslenme-yasam', icon: 'nutrition', title: 'Beslenme ve Yaşam', description: 'Yaşam tarzı ve doğurganlığın iyileştirilmesi' },
-          { href: '/duygusal-destek', icon: 'favorite', title: 'Duygusal Destek', description: 'İnfertilite ve duygusal zorluklar' },
-          { href: '/ilac-rehberi', icon: 'medication', title: 'İlaç Rehberi', description: 'IVF ve erkek infertilitesi ilaçları' }
+          { href: '/makaleler/erkek-dogurganlik-besin-takviyeleri', icon: 'nutrition', title: 'Erkek Doğurganlığı Takviyeleri', description: 'Beslenme ve takviyelere kanıt odaklı bakış' },
+          { href: '/duygusal-destek', icon: 'favorite', title: 'Duygusal Destek', description: 'İnfertilite ve duygusal zorluklar' }
         ]} />
 
         <!-- Doktor Onay Bandı -->
@@ -325,14 +467,7 @@ import RelatedContent from '../components/RelatedContent.astro';
             </div>
         </section>
 
-        <!-- Yasal Uyarı -->
-        <section class="max-w-3xl mx-auto px-4 md:px-6 lg:px-8">
-            <div class="bg-amber-50/50 border border-amber-200/50 rounded-xl p-6 text-sm text-gray-600">
-                <p>
-                    <strong class="text-gray-900">Yasal Uyarı:</strong> Bu rehber yalnızca genel bilgilendirme amaçlıdır ve tıbbi tavsiye niteliği taşımaz. Erkek infertilitesi bireysel bir durumdur ve değerlendirilmesi için uzman bir ürolog veya üreme endokrinologuna başvurulmalıdır. tupbebek.com, bu bilgilere dayanılarak alınan kararlardan sorumlu tutulamaz.
-                </p>
-            </div>
-        </section>
+        <MedicalDisclaimer variant="full" />
     </main>
 
     <Footer />
