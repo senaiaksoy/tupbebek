@@ -1,16 +1,16 @@
 ---
 /**
- * AuthorBox — Yazar guvenilirlik bileseni
+ * AuthorBox — Yazar güvenilirlik bileşeni
  *
- * Makale veya sayfa yazarinin kimlik bilgilerini,
- * tibbi inceleme durumunu ve yeterliliklerini gosterir.
+ * Makale veya sayfa yazarının kimlik bilgilerini,
+ * tıbbi inceleme durumunu ve yeterliliklerini gösterir.
  *
- * Kullanim:
+ * Kullanım:
  *   <AuthorBox
- *     name="Doc. Dr. Senai Aksoy"
- *     title="Ureme Tibbi ve Jinekolojik Endoskopi Uzmani"
- *     credentials="ESHRE Uyeligi"
- *     reviewedBy="tupbebek.com Tibbi Danisma Kurulu"
+ *     name="Doç. Dr. Senai Aksoy"
+ *     title="Üreme Tıbbı ve Jinekolojik Endoskopi Uzmanı"
+ *     credentials="ESHRE Üyeliği"
+ *     reviewedBy="tupbebek.com Tıbbi Danışma Kurulu"
  *   />
  */
 interface Props {
@@ -43,7 +43,7 @@ const {
         <div class="flex-1 min-w-0">
             <div class="flex items-center gap-2 mb-1">
                 <h4 class="font-headline text-base font-bold text-gray-900">{name}</h4>
-                <span class="material-symbols-outlined text-primary-600 text-lg" style="font-variation-settings: 'FILL' 1;" title="Dogrulanmis yazar">verified</span>
+                <span class="material-symbols-outlined text-primary-600 text-lg" style="font-variation-settings: 'FILL' 1;" title="Doğrulanmış yazar">verified</span>
             </div>
             {title && (
                 <p class="text-sm text-gray-600 mb-1">{title}</p>
@@ -59,7 +59,7 @@ const {
         <!-- Medical Review Badge -->
         {reviewedBy && (
             <div class="sm:ml-auto shrink-0 bg-mint-50 border border-mint-200 rounded-xl px-4 py-3 text-center">
-                <p class="text-[10px] text-gray-500 uppercase tracking-wider font-semibold mb-1">Tibbi Inceleme</p>
+                <p class="text-[10px] text-gray-500 uppercase tracking-wider font-semibold mb-1">Tıbbi İnceleme</p>
                 <p class="text-xs font-bold text-mint-700">{reviewedBy}</p>
                 {reviewDate && (
                     <p class="text-[10px] text-gray-400 mt-0.5">{reviewDate}</p>

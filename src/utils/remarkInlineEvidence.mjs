@@ -3,26 +3,26 @@ const INLINE_EVIDENCE_REGEX = /\{\{\s*(?:kanit|kanıt|evidence)\s*:\s*(A|B|C|D\/
 const INLINE_EVIDENCE_MAP = {
   A: {
     cssClass: 'inline-evidence--a',
-    label: 'cok guclu kanit',
+    label: 'çok güçlü kanıt',
   },
   B: {
     cssClass: 'inline-evidence--b',
-    label: 'guclu kanit',
+    label: 'güçlü kanıt',
   },
   C: {
     cssClass: 'inline-evidence--c',
-    label: 'orta/zayif kanit',
+    label: 'orta/zayıf kanıt',
   },
   'D/E': {
     cssClass: 'inline-evidence--de',
-    label: 'cok zayif kanit',
+    label: 'çok zayıf kanıt',
   },
 };
 
 function createEvidenceHtml(grade) {
   const config = INLINE_EVIDENCE_MAP[grade];
   const text = `${grade} - ${config.label}`;
-  const tooltip = `Kanit duzeyi: ${text}`;
+  const tooltip = `Kanıt düzeyi: ${text}`;
 
   return `<span class="inline-evidence ${config.cssClass}" title="${tooltip}" aria-label="${tooltip}">(${text})</span>`;
 }

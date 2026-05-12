@@ -1,24 +1,24 @@
 ---
 /**
- * EvidenceCallout — Bilimsel kanit vurgulama bileseni
+ * EvidenceCallout — Bilimsel kanıt vurgulama bileşeni
  *
- * Makale icerisinde bilimsel arastirma, klinik veri veya
- * ESHRE/ASRM gibi otorite kaynaklarina atif yapan bilgi kutulari.
+ * Makale içerisinde bilimsel araştırma, klinik veri veya
+ * ESHRE/ASRM gibi otorite kaynaklarına atıf yapan bilgi kutuları.
  *
- * Kullanim:
+ * Kullanım:
  *   <EvidenceCallout
- *     title="Bilimsel Kanit"
+ *     title="Bilimsel Kanıt"
  *     source="ESHRE Guidelines 2024"
  *     href="https://..."
  *   >
- *     PGT-A uygulamasi, tekrarlayan basarisiz IVF denemelerinde
- *     canli dogum oranini %15-20 artirabilir.
+ *     PGT-A uygulaması, tekrarlayan başarısız IVF denemelerinde
+ *     canlı doğum oranını %15-20 artırabilir.
  *   </EvidenceCallout>
  *
  * Variants:
- *   - evidence (default): Bilimsel kanit (mint)
+ *   - evidence (default): Bilimsel kanıt (mint)
  *   - guideline: Klinik rehber (primary)
- *   - statistic: Istatistiksel veri (apricot)
+ *   - statistic: İstatistiksel veri (apricot)
  *   - warning: Dikkat gerektiren bilgi (amber)
  */
 interface Props {
@@ -38,7 +38,7 @@ const {
 const variantConfig = {
     evidence: {
         icon: 'science',
-        defaultTitle: 'Bilimsel Kanit',
+        defaultTitle: 'Bilimsel Kanıt',
         borderColor: 'border-mint-400',
         bgColor: 'bg-mint-50',
         iconBg: 'bg-white',
@@ -65,7 +65,7 @@ const variantConfig = {
     },
     warning: {
         icon: 'warning',
-        defaultTitle: 'Onemli Bilgi',
+        defaultTitle: 'Önemli Bilgi',
         borderColor: 'border-amber-400',
         bgColor: 'bg-amber-50',
         iconBg: 'bg-white',
