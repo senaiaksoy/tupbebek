@@ -45,6 +45,12 @@ const clusterLinks = [
     icon: 'radio_button_checked',
     title: 'Yumurtalık kistleri',
     description: 'Hangi kistler izlenir, hangileri doğurganlık planını etkileyebilir?'
+  },
+  {
+    href: '/makaleler/kadin-kisirligi-tup-bebek',
+    icon: 'family_restroom',
+    title: 'Kadın kısırlığı ve IVF',
+    description: 'Ne zaman IUI yerine IVF konuşulur, hangi kadın faktörleri karara daha çok etki eder?'
   }
 ];
 
@@ -126,6 +132,9 @@ const faqSchema = {
             ]} />
             <p class="text-gray-600 leading-relaxed mt-10">
                 İnfertilite değerlendirmesi yalnızca kadına odaklanmamalıdır. ASRM yaklaşımına göre, sperm katkısı olan bir partner varsa erkek öyküsü ve en az bir semen analizi de başlangıçta ele alınmalıdır. Bu nedenle <a href="/tani-sureci" class="text-primary-600 hover:underline">tanı süreci</a> ve <a href="/erkek-infertilitesi" class="text-primary-600 hover:underline">erkek infertilitesi</a> sayfaları bu rehberle birlikte okunmalıdır.
+            </p>
+            <p class="text-gray-600 leading-relaxed mt-4">
+                Değerlendirme sonrasında tedavinin hangi noktada IVF'e kaydığını ayrıca anlamak isterseniz, <a href="/makaleler/kadin-kisirligi-tup-bebek" class="text-primary-600 hover:underline">kadın kısırlığı ve tüp bebek rehberi</a> tanıdan tedavi zamanlamasına geçişi daha ayrıntılı özetler.
             </p>
         </section>
 
@@ -349,10 +358,10 @@ const faqSchema = {
         <!-- Related Pages -->
         <RelatedContent items={[
           { href: '/makaleler/adet-duzensizligi-pcos', icon: 'cycle', title: 'PCOS ve Adet Düzensizliği', description: 'Yumurtlama bozukluğu ve PCOS değerlendirmesi' },
+          { href: '/makaleler/kadin-kisirligi-tup-bebek', icon: 'family_restroom', title: 'Kadın Kısırlığı ve Tüp Bebek', description: 'Tanıdan IVF zamanlamasına geçiş' },
           { href: '/makaleler/dusuk-amh-hamilelik', icon: 'egg', title: 'Düşük AMH', description: 'Yumurtalık rezervi ve gebelik planı' },
           { href: '/makaleler/endometriozis-tup-bebek', icon: 'layers', title: 'Endometriozis ve IVF', description: 'Endometriozis ilişkili infertilite yaklaşımı' },
           { href: '/makaleler/hidrosalpinx-ve-kisirlik', icon: 'cable', title: 'Hidrosalpinx', description: 'Tüp faktörü ve tedavi seçenekleri' },
-          { href: '/hormon-paneli', icon: 'bloodtype', title: 'Hormon Paneli', description: 'AMH, FSH, LH, E2 ve prolaktin' },
           { href: '/erkek-infertilitesi', icon: 'man', title: 'Erkek İnfertilitesi', description: 'Çift değerlendirmesinin diğer yarısı' }
         ]} />
 
