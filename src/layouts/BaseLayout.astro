@@ -160,9 +160,13 @@ const siteGraph = {
 		<meta name="twitter:image" content={socialImageUrl} />
 		<meta name="twitter:site" content="@tupbebek" />
 
-		<!-- Google Analytics (GA4) - Lazy Loaded -->
+		<!-- Google Analytics (GA4) - Loads only after cookie consent -->
 		<script is:inline>
+			const analyticsConsentKey = 'cookie-consent-v1.0';
+			const hasAnalyticsConsent = () => localStorage.getItem(analyticsConsentKey) === 'accepted';
+
 			function loadGA() {
+				if (!hasAnalyticsConsent()) return;
 				if (window.gaLoaded) return;
 				window.gaLoaded = true;
 				window.__loadGA = loadGA;
@@ -181,8 +185,11 @@ const siteGraph = {
 				console.log('GA4 Loaded on activity');
 			}
 
+			window.__loadGA = loadGA;
+
 			window.__trackGaEvent = function(eventName, params = {}) {
 				loadGA();
+				if (!window.gaLoaded) return;
 				window.dataLayer = window.dataLayer || [];
 				window.gtag = window.gtag || function(){window.dataLayer.push(arguments);};
 				window.gtag('event', eventName, params);
@@ -194,7 +201,7 @@ const siteGraph = {
 				window.addEventListener(event, loadGA, { once: true, passive: true });
 			});
 
-			// Fallback load after 3.5 seconds
+			// Fallback load after 3.5 seconds, only when consent exists.
 			setTimeout(loadGA, 3500);
 		</script>
 

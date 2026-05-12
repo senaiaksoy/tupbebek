@@ -4,12 +4,88 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 ---
 
-<BaseLayout title="KVKK Aydınlatma | tupbebek.com" description="Kişisel verilerin korunması ve işlenmesi hakkında aydınlatma metni">
+<BaseLayout title="Gizlilik Politikası ve KVKK Aydınlatma Metni | tupbebek.com" description="tupbebek.com kişisel verilerin işlenmesi, saklanması, aktarılması, çerezler ve KVKK kapsamındaki haklara ilişkin aydınlatma metni.">
     <Header />
-    <main id="main-content" tabindex="-1" class="py-24">
+    <main id="main-content" tabindex="-1" class="py-20 md:py-24 bg-gradient-to-b from-white to-gray-50">
         <section class="max-w-5xl mx-auto px-4 md:px-6 lg:px-8">
-            <h1 class="font-headline text-4xl text-gray-900 mb-8">KVKK Aydınlatma Metni</h1>
-            <p class="text-gray-600">İçerik yakında eklenecek.</p>
+            <p class="text-sm font-semibold uppercase tracking-wider text-primary-700 mb-3">Son güncelleme: 12 Mayıs 2026</p>
+            <h1 class="font-headline text-4xl md:text-5xl text-gray-900 mb-6">Gizlilik Politikası ve KVKK Aydınlatma Metni</h1>
+            <p class="text-lg text-gray-600 max-w-3xl mb-10">
+                Bu metin, tupbebek.com’u ziyaret ettiğinizde veya formlar aracılığıyla bizimle iletişime geçtiğinizde kişisel verilerinizin hangi amaçlarla işlendiğini açıklar.
+            </p>
+
+            <div class="rounded-3xl border border-primary-100 bg-primary-50 p-6 md:p-8 mb-10">
+                <h2 class="text-2xl font-bold text-gray-900 mb-3">Veri sorumlusu</h2>
+                <p class="text-gray-700">
+                    Bu site bakımından veri sorumlusu tupbebek.com’dur. Kişisel verilerinizle ilgili taleplerinizi sitedeki iletişim kanalları veya <a href="mailto:dr@senaiaksoy.net" class="font-semibold text-primary-700 underline underline-offset-4">dr@senaiaksoy.net</a> üzerinden iletebilirsiniz.
+                </p>
+            </div>
+
+            <div class="space-y-8">
+                <section class="rounded-2xl border border-gray-200 bg-white p-6 md:p-8 shadow-sm">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Hangi veriler işlenebilir?</h2>
+                    <ul class="space-y-3 text-gray-600 list-disc pl-5">
+                        <li>Ad, soyad, e-posta adresi, telefon numarası ve iletişim formunda paylaştığınız mesaj bilgileri.</li>
+                        <li>E-kitap, bülten veya rehber taleplerinde ilettiğiniz iletişim ve tercih bilgileri.</li>
+                        <li>Uzmana Sor gibi alanlarda kendi isteğinizle yazdığınız yaş, tahlil değeri, infertilite süresi veya benzeri sağlıkla ilişkili bilgiler.</li>
+                        <li>IP adresi, tarayıcı türü, cihaz bilgisi, ziyaret zamanı, güvenlik logları ve site kullanımına ilişkin teknik kayıtlar.</li>
+                        <li>Çerezler ve benzeri teknolojiler aracılığıyla elde edilen tercih, performans ve analitik veriler.</li>
+                    </ul>
+                </section>
+
+                <section class="rounded-2xl border border-gray-200 bg-white p-6 md:p-8 shadow-sm">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">İşleme amaçları</h2>
+                    <p class="text-gray-600 mb-4">
+                        Kişisel verileriniz aşağıdaki amaçlarla sınırlı olarak işlenebilir:
+                    </p>
+                    <ul class="space-y-3 text-gray-600 list-disc pl-5">
+                        <li>İletişim taleplerinizi yanıtlamak ve gönderdiğiniz formları değerlendirmek.</li>
+                        <li>Talep ettiğiniz dijital rehberleri veya bilgilendirme içeriklerini iletmek.</li>
+                        <li>Site güvenliğini sağlamak, kötüye kullanımı ve spam gönderimleri önlemek.</li>
+                        <li>İçerik kalitesini, teknik performansı ve kullanıcı deneyimini geliştirmek.</li>
+                        <li>Açık rıza verdiğiniz durumlarda ticari elektronik ileti veya bilgilendirme göndermek.</li>
+                        <li>Yasal yükümlülükleri yerine getirmek ve gerektiğinde haklarımızı korumak.</li>
+                    </ul>
+                </section>
+
+                <section class="rounded-2xl border border-gray-200 bg-white p-6 md:p-8 shadow-sm">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Hukuki sebepler</h2>
+                    <p class="text-gray-600">
+                        Verileriniz, 6698 sayılı Kişisel Verilerin Korunması Kanunu’nda yer alan hukuki sebepler kapsamında; bir talebinizin yerine getirilmesi, meşru menfaat, hukuki yükümlülük, hakkın tesisi veya korunması ve açık rıza hallerine dayanılarak işlenebilir. Sağlık verisi niteliğindeki bilgiler özel nitelikli kişisel veri olduğundan, bu tür bilgileri formlara yazmanız halinde yalnızca ilgili talebinizi yanıtlamak amacıyla ve gerekli güvenlik tedbirleri gözetilerek değerlendirilir.
+                    </p>
+                </section>
+
+                <section class="rounded-2xl border border-gray-200 bg-white p-6 md:p-8 shadow-sm">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Aktarım ve hizmet sağlayıcılar</h2>
+                    <p class="text-gray-600">
+                        Kişisel verileriniz; barındırma, güvenlik, e-posta gönderimi, veritabanı, analitik ve teknik bakım hizmeti aldığımız sağlayıcılarla amaçla sınırlı şekilde paylaşılabilir. Cloudflare, Resend, Google Analytics ve benzeri üçüncü taraf hizmetler, kendi altyapıları nedeniyle yurt dışında veri işleyebilir. Yetkili kamu kurumlarına aktarım yalnızca mevzuatın gerektirdiği durumlarda yapılır.
+                    </p>
+                </section>
+
+                <section class="rounded-2xl border border-gray-200 bg-white p-6 md:p-8 shadow-sm">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Saklama süresi ve güvenlik</h2>
+                    <p class="text-gray-600">
+                        Verileriniz işleme amacı için gerekli süre boyunca, ardından yasal zamanaşımı ve saklama yükümlülükleri dikkate alınarak muhafaza edilir. Gereklilik ortadan kalktığında silme, yok etme veya anonimleştirme yöntemleri uygulanır. Yetkisiz erişimi azaltmak için erişim sınırlandırma, güvenli aktarım, loglama ve hizmet sağlayıcı güvenlik önlemleri gibi teknik ve idari tedbirler kullanılır.
+                    </p>
+                </section>
+
+                <section class="rounded-2xl border border-gray-200 bg-white p-6 md:p-8 shadow-sm">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">KVKK kapsamındaki haklarınız</h2>
+                    <p class="text-gray-600 mb-4">
+                        KVKK’nın 11. maddesi kapsamında kişisel verilerinizin işlenip işlenmediğini öğrenme, işlenmişse bilgi talep etme, amacına uygun kullanılıp kullanılmadığını öğrenme, eksik veya yanlış işlenmiş verilerin düzeltilmesini isteme, silme veya yok etme talep etme, aktarıldığı üçüncü kişileri öğrenme, belirli işlemlere itiraz etme ve kanuna aykırı işleme nedeniyle zarara uğramanız halinde tazminat talep etme haklarına sahipsiniz.
+                    </p>
+                    <p class="text-gray-600">
+                        Taleplerinizi iletişim kanallarımız üzerinden iletebilirsiniz. Başvurular, niteliğine göre en kısa sürede ve mevzuatta öngörülen süreler içinde yanıtlanır.
+                    </p>
+                </section>
+
+                <section class="rounded-2xl border border-gray-200 bg-white p-6 md:p-8 shadow-sm">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Çocukların gizliliği</h2>
+                    <p class="text-gray-600">
+                        Site yetişkinlere yönelik sağlık bilgilendirmesi sunar. 18 yaşın altındaki kişilerin, ebeveyn veya yasal temsilci bilgisi olmadan kişisel veri paylaşmamasını öneririz.
+                    </p>
+                </section>
+            </div>
         </section>
     </main>
     <Footer />

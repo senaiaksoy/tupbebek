@@ -4,12 +4,59 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 ---
 
-<BaseLayout title="Tıbbi Sorumluluk Reddi | tupbebek.com" description="Yasal sorumluluk reddi beyanı">
+<BaseLayout title="Tıbbi Sorumluluk Reddi | tupbebek.com" description="tupbebek.com içeriklerinin bilgilendirme amaçlı olduğunu ve doktor muayenesi yerine geçmediğini açıklayan tıbbi sorumluluk reddi.">
     <Header />
-    <main id="main-content" tabindex="-1" class="py-24">
+    <main id="main-content" tabindex="-1" class="py-20 md:py-24 bg-gradient-to-b from-white to-gray-50">
         <section class="max-w-5xl mx-auto px-4 md:px-6 lg:px-8">
-            <h1 class="font-headline text-4xl text-gray-900 mb-8">Tıbbi Sorumluluk Reddi</h1>
-            <p class="text-gray-600">İçerik yakında eklenecek.</p>
+            <p class="text-sm font-semibold uppercase tracking-wider text-primary-700 mb-3">Son güncelleme: 12 Mayıs 2026</p>
+            <h1 class="font-headline text-4xl md:text-5xl text-gray-900 mb-6">Tıbbi Sorumluluk Reddi</h1>
+            <p class="text-lg text-gray-600 max-w-3xl mb-10">
+                tupbebek.com, üreme sağlığı ve tüp bebek konularında güvenilir bilgilendirme sunmayı amaçlayan bir yayın platformudur. Bu sayfadaki açıklamalar, sitedeki içeriklerin hangi sınırlar içinde değerlendirilmesi gerektiğini açıklar.
+            </p>
+
+            <div class="rounded-3xl border border-primary-100 bg-primary-50 p-6 md:p-8 mb-10">
+                <h2 class="text-2xl font-bold text-gray-900 mb-3">Kısa özet</h2>
+                <p class="text-gray-700">
+                    Bu sitedeki hiçbir içerik kişisel tanı, tedavi, reçete, acil yönlendirme veya doktor-hasta ilişkisi oluşturmaz. Sağlığınızla ilgili kararları kendi hekiminizle birlikte vermeniz gerekir.
+                </p>
+            </div>
+
+            <div class="space-y-8">
+                <section class="rounded-2xl border border-gray-200 bg-white p-6 md:p-8 shadow-sm">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Bilgilendirme amaçlı içerik</h2>
+                    <p class="text-gray-600">
+                        Makaleler, sözlük sayfaları, rehberler, videolar, formlar ve diğer tüm yayınlar genel bilgilendirme amacı taşır. İçerikler, okuyucunun sağlık okuryazarlığını artırmayı hedefler; kişisel muayene, laboratuvar değerlendirmesi, görüntüleme incelemesi veya klinik takip yerine geçmez.
+                    </p>
+                </section>
+
+                <section class="rounded-2xl border border-gray-200 bg-white p-6 md:p-8 shadow-sm">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Doktor-hasta ilişkisi oluşturmaz</h2>
+                    <p class="text-gray-600">
+                        Siteyi ziyaret etmeniz, içerik okumanız, iletişim formu göndermeniz veya bir test değeri paylaşmanız tupbebek.com, yayın kurulu, hekimler ya da katkı verenler ile aranızda doktor-hasta ilişkisi kurmaz. Size özel tıbbi kararlar için yüz yüze veya uygun tele-sağlık koşullarında değerlendirme gerekir.
+                    </p>
+                </section>
+
+                <section class="rounded-2xl border border-gray-200 bg-white p-6 md:p-8 shadow-sm">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Acil durumlar</h2>
+                    <p class="text-gray-600">
+                        Şiddetli ağrı, yoğun kanama, bayılma, nefes darlığı, yüksek ateş, gebelikte acil belirti veya benzeri durumlarda bu site üzerinden yanıt beklemeyin. Bulunduğunuz yerdeki acil sağlık hizmetlerine başvurun veya 112 Acil Çağrı Merkezi ile iletişime geçin.
+                    </p>
+                </section>
+
+                <section class="rounded-2xl border border-gray-200 bg-white p-6 md:p-8 shadow-sm">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Tedavi kararları ve başarı oranları</h2>
+                    <p class="text-gray-600">
+                        Tüp bebek, infertilite ve üreme sağlığı tedavilerinde başarı olasılığı yaş, tanı, yumurtalık rezervi, sperm parametreleri, embriyo kalitesi, rahim içi durum ve eşlik eden hastalıklar gibi birçok etkene göre değişir. Sitedeki oranlar, örnekler ve bilimsel çalışma özetleri kişisel sonucunuzu garanti etmez.
+                    </p>
+                </section>
+
+                <section class="rounded-2xl border border-gray-200 bg-white p-6 md:p-8 shadow-sm">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Dış bağlantılar ve güncellik</h2>
+                    <p class="text-gray-600">
+                        İçeriklerde bilimsel kaynaklara, üçüncü taraf sitelere veya video platformlarına bağlantı verilebilir. Bu bağlantıların içeriklerinden veya sonradan yapılabilecek değişikliklerden tupbebek.com sorumlu değildir. Tıbbi bilgi zaman içinde değişebileceği için içerikler düzenli gözden geçirilse de en güncel kişisel değerlendirme hekiminiz tarafından yapılmalıdır.
+                    </p>
+                </section>
+            </div>
         </section>
     </main>
     <Footer />

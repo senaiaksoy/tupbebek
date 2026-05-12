@@ -70,6 +70,7 @@ const { version = "1.0" } = Astro.props;
 
   document.getElementById('cookie-accept').addEventListener('click', () => {
     localStorage.setItem(consentKey, 'accepted');
+    window.__loadGA?.();
     hide();
   });
 

@@ -6,10 +6,80 @@ import Footer from '../components/Footer.astro';
 
 <BaseLayout title="Kullanım Koşulları | tupbebek.com" description="Web sitemizin kullanım koşulları ve hükümleri">
     <Header />
-    <main id="main-content" tabindex="-1" class="py-24">
+    <main id="main-content" tabindex="-1" class="py-20 md:py-24 bg-gradient-to-b from-white to-gray-50">
         <section class="max-w-5xl mx-auto px-4 md:px-6 lg:px-8">
-            <h1 class="font-headline text-4xl text-gray-900 mb-8">Kullanım Koşulları</h1>
-            <p class="text-gray-600">İçerik yakında eklenecek.</p>
+            <p class="text-sm font-semibold uppercase tracking-wider text-primary-700 mb-3">Son güncelleme: 12 Mayıs 2026</p>
+            <h1 class="font-headline text-4xl md:text-5xl text-gray-900 mb-6">Kullanım Koşulları</h1>
+            <p class="text-lg text-gray-600 max-w-3xl mb-10">
+                Bu koşullar, tupbebek.com’u ziyaret ederken uymanız gereken temel kuralları ve sitenin kullanım sınırlarını açıklar.
+            </p>
+
+            <div class="rounded-3xl border border-primary-100 bg-primary-50 p-6 md:p-8 mb-10">
+                <h2 class="text-2xl font-bold text-gray-900 mb-3">Siteyi kullanarak</h2>
+                <p class="text-gray-700">
+                    Bu koşulları, Tıbbi Sorumluluk Reddi’ni, Gizlilik Politikası’nı ve Çerez Politikası’nı okumuş ve kabul etmiş sayılırsınız. Koşulları kabul etmiyorsanız siteyi kullanmamalısınız.
+                </p>
+            </div>
+
+            <div class="space-y-8">
+                <section class="rounded-2xl border border-gray-200 bg-white p-6 md:p-8 shadow-sm">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Kullanım amacı</h2>
+                    <p class="text-gray-600">
+                        tupbebek.com; tüp bebek, infertilite, üreme sağlığı ve ilgili konularda bilimsel kaynaklara dayalı genel bilgilendirme sunar. Siteyi yalnızca hukuka uygun, kişisel ve bilgilendirme amaçlı kullanabilirsiniz.
+                    </p>
+                </section>
+
+                <section class="rounded-2xl border border-gray-200 bg-white p-6 md:p-8 shadow-sm">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Tıbbi içerik sınırları</h2>
+                    <p class="text-gray-600">
+                        Sitedeki bilgiler tanı, tedavi, reçete, ikinci görüş veya acil sağlık hizmeti niteliğinde değildir. Kendi sağlık durumunuzla ilgili kararlar için hekiminize başvurmanız gerekir. Ayrıntılar için <a href="/tibbi-sorumluluk-reddi" class="font-semibold text-primary-700 underline underline-offset-4">Tıbbi Sorumluluk Reddi</a> sayfasını inceleyin.
+                    </p>
+                </section>
+
+                <section class="rounded-2xl border border-gray-200 bg-white p-6 md:p-8 shadow-sm">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Kullanıcı gönderimleri</h2>
+                    <p class="text-gray-600">
+                        İletişim veya değerlendirme formlarında doğru, güncel ve size ait bilgileri paylaşmalısınız. Başkasına ait kişisel veya sağlık verilerini yetkiniz olmadan göndermemelisiniz. Acil veya kişisel tedavi gerektiren durumlarda form yanıtı beklemek yerine sağlık kuruluşuna başvurmalısınız.
+                    </p>
+                </section>
+
+                <section class="rounded-2xl border border-gray-200 bg-white p-6 md:p-8 shadow-sm">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Fikri mülkiyet</h2>
+                    <p class="text-gray-600">
+                        Sitedeki metinler, görseller, tasarım unsurları, marka kullanımları ve derlenmiş içerikler aksi belirtilmedikçe tupbebek.com’a veya ilgili hak sahiplerine aittir. İçerikleri kaynak göstererek sınırlı kişisel kullanım dışında kopyalamak, çoğaltmak, ticari amaçla kullanmak veya yeniden yayımlamak için yazılı izin alınmalıdır.
+                    </p>
+                </section>
+
+                <section class="rounded-2xl border border-gray-200 bg-white p-6 md:p-8 shadow-sm">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Yasaklı kullanımlar</h2>
+                    <ul class="space-y-3 text-gray-600 list-disc pl-5">
+                        <li>Site güvenliğini test etmek, bozmak, aşırı yük oluşturmak veya otomatik kötüye kullanım yapmak.</li>
+                        <li>Yanıltıcı, hukuka aykırı, hak ihlal eden veya üçüncü kişilere ait verileri izinsiz içeren gönderimler yapmak.</li>
+                        <li>İçerikleri tıbbi tavsiye gibi sunmak, bağlamından koparmak veya yanıltıcı şekilde kullanmak.</li>
+                    </ul>
+                </section>
+
+                <section class="rounded-2xl border border-gray-200 bg-white p-6 md:p-8 shadow-sm">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Üçüncü taraf bağlantılar</h2>
+                    <p class="text-gray-600">
+                        Site, bilimsel yayınlara, video platformlarına, sosyal medya hesaplarına veya başka üçüncü taraf sitelere bağlantı verebilir. Bu sitelerin içerikleri, gizlilik uygulamaları ve hizmet şartları üzerinde kontrolümüz yoktur.
+                    </p>
+                </section>
+
+                <section class="rounded-2xl border border-gray-200 bg-white p-6 md:p-8 shadow-sm">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Erişilebilirlik, değişiklik ve sorumluluk sınırı</h2>
+                    <p class="text-gray-600">
+                        Siteyi kesintisiz, hatasız veya her zaman güncel tutmak için makul çaba gösteririz; ancak teknik kesinti, içerik güncellemesi veya üçüncü taraf hizmet kaynaklı aksaklıklar yaşanabilir. Koşullar ve içerikler ihtiyaç halinde güncellenebilir. Mevzuatın izin verdiği ölçüde, sitenin kullanımından doğabilecek dolaylı zararlardan tupbebek.com sorumlu tutulamaz.
+                    </p>
+                </section>
+
+                <section class="rounded-2xl border border-gray-200 bg-white p-6 md:p-8 shadow-sm">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Uygulanacak hukuk ve iletişim</h2>
+                    <p class="text-gray-600">
+                        Bu koşullar Türkiye Cumhuriyeti mevzuatına göre yorumlanır. Sorularınız veya talepleriniz için <a href="mailto:dr@senaiaksoy.net" class="font-semibold text-primary-700 underline underline-offset-4">dr@senaiaksoy.net</a> adresinden bize ulaşabilirsiniz.
+                    </p>
+                </section>
+            </div>
         </section>
     </main>
     <Footer />

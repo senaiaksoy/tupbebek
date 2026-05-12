@@ -6,10 +6,93 @@ import Footer from '../components/Footer.astro';
 
 <BaseLayout title="Çerez Politikası | tupbebek.com" description="Web sitemizde kullanılan çerezler ve veri toplama politikası">
     <Header />
-    <main id="main-content" tabindex="-1" class="py-24">
+    <main id="main-content" tabindex="-1" class="py-20 md:py-24 bg-gradient-to-b from-white to-gray-50">
         <section class="max-w-5xl mx-auto px-4 md:px-6 lg:px-8">
-            <h1 class="font-headline text-4xl text-gray-900 mb-8">Çerez Politikası</h1>
-            <p class="text-gray-600">İçerik yakında eklenecek.</p>
+            <p class="text-sm font-semibold uppercase tracking-wider text-primary-700 mb-3">Son güncelleme: 12 Mayıs 2026</p>
+            <h1 class="font-headline text-4xl md:text-5xl text-gray-900 mb-6">Çerez Politikası</h1>
+            <p class="text-lg text-gray-600 max-w-3xl mb-10">
+                Bu politika, tupbebek.com’da kullanılan çerezleri ve benzeri teknolojileri açıklar. Çerezler; sitenin çalışması, tercihlerin hatırlanması ve açık rıza verdiğinizde kullanımın ölçümlenmesi için kullanılabilir.
+            </p>
+
+            <div class="rounded-3xl border border-primary-100 bg-primary-50 p-6 md:p-8 mb-10">
+                <h2 class="text-2xl font-bold text-gray-900 mb-3">Tercihiniz önemlidir</h2>
+                <p class="text-gray-700">
+                    Zorunlu çerezler siteyi güvenli ve çalışır tutmak için kullanılır. Analitik gibi zorunlu olmayan çerezler ise çerez banner’ında “Kabul Et” seçeneğini kullanmanız halinde çalıştırılır; “Reddet” seçeneğinde analitik çerezleri yüklenmez.
+                </p>
+            </div>
+
+            <div class="space-y-8">
+                <section class="rounded-2xl border border-gray-200 bg-white p-6 md:p-8 shadow-sm">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Çerez nedir?</h2>
+                    <p class="text-gray-600">
+                        Çerezler, ziyaret ettiğiniz web sitesi tarafından tarayıcınıza veya cihazınıza kaydedilen küçük metin dosyalarıdır. Benzer amaçlarla yerel depolama, piksel, etiket veya üçüncü taraf gömülü içerik teknolojileri de kullanılabilir.
+                    </p>
+                </section>
+
+                <section class="rounded-2xl border border-gray-200 bg-white p-6 md:p-8 shadow-sm overflow-hidden">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Kullandığımız çerez kategorileri</h2>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left border-collapse">
+                            <thead>
+                                <tr class="border-b border-gray-200">
+                                    <th class="py-3 pr-4 text-sm font-bold text-gray-900">Kategori</th>
+                                    <th class="py-3 pr-4 text-sm font-bold text-gray-900">Amaç</th>
+                                    <th class="py-3 pr-4 text-sm font-bold text-gray-900">Rıza durumu</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-100 text-sm text-gray-600">
+                                <tr>
+                                    <td class="py-4 pr-4 font-semibold text-gray-900">Zorunlu çerezler</td>
+                                    <td class="py-4 pr-4">Güvenlik, ağ yönetimi, form güvenliği, tercih kaydı ve sitenin temel işlevleri.</td>
+                                    <td class="py-4 pr-4">Site hizmeti için gerekli olduğundan ayrıca açık rıza aranmaz.</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-4 pr-4 font-semibold text-gray-900">Tercih çerezleri</td>
+                                    <td class="py-4 pr-4">Çerez banner’ında verdiğiniz kabul veya red tercihini hatırlamak.</td>
+                                    <td class="py-4 pr-4">Tercihinizi uygulamak için kullanılır.</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-4 pr-4 font-semibold text-gray-900">Analitik çerezleri</td>
+                                    <td class="py-4 pr-4">Google Analytics 4 aracılığıyla sayfa performansını ve anonimleştirilmiş kullanım eğilimlerini anlamak.</td>
+                                    <td class="py-4 pr-4">Yalnızca “Kabul Et” seçeneğiyle açık rıza verdiğinizde çalışır.</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-4 pr-4 font-semibold text-gray-900">Üçüncü taraf içerikler</td>
+                                    <td class="py-4 pr-4">YouTube video bağlantıları, sosyal medya paylaşım bağlantıları ve harici içerik sağlayıcıları.</td>
+                                    <td class="py-4 pr-4">İlgili üçüncü taraf içeriği açtığınızda sağlayıcının kendi politikaları uygulanabilir.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section class="rounded-2xl border border-gray-200 bg-white p-6 md:p-8 shadow-sm">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Kullanılan başlıca teknolojiler</h2>
+                    <ul class="space-y-3 text-gray-600 list-disc pl-5">
+                        <li><strong>cookie-consent-v1.0:</strong> Çerez tercihinin kabul veya red olarak hatırlanması için yerel depolama kaydı.</li>
+                        <li><strong>Google Analytics 4:</strong> Rıza verilirse sayfa ziyaretleri ve kullanım eğilimleri hakkında analitik ölçüm.</li>
+                        <li><strong>Cloudflare:</strong> Güvenlik, performans ve içerik dağıtımı için teknik kayıtlar ve zorunlu güvenlik teknolojileri.</li>
+                        <li><strong>YouTube ve sosyal medya bağlantıları:</strong> Harici bağlantı veya gömülü içerik açıldığında üçüncü taraf sağlayıcıların kendi çerezleri devreye girebilir.</li>
+                    </ul>
+                </section>
+
+                <section class="rounded-2xl border border-gray-200 bg-white p-6 md:p-8 shadow-sm">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Çerez tercihlerinizi nasıl yönetebilirsiniz?</h2>
+                    <p class="text-gray-600 mb-4">
+                        Siteye ilk girişinizde çerez banner’ı üzerinden kabul veya red tercihi verebilirsiniz. Tercihinizi daha sonra değiştirmek isterseniz tarayıcı ayarlarınızdan tupbebek.com’a ait site verilerini temizleyebilir ve siteyi yeniden ziyaret ederek yeni tercih oluşturabilirsiniz.
+                    </p>
+                    <p class="text-gray-600">
+                        Ayrıca tarayıcınızın ayarlarından çerezleri silebilir, engelleyebilir veya belirli siteler için izinleri yönetebilirsiniz. Çerezleri tamamen kapatmanız halinde bazı site işlevleri beklenildiği gibi çalışmayabilir.
+                    </p>
+                </section>
+
+                <section class="rounded-2xl border border-gray-200 bg-white p-6 md:p-8 shadow-sm">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Kişisel verilerle ilişki</h2>
+                    <p class="text-gray-600">
+                        Çerezler aracılığıyla işlenen kişisel verilere ilişkin ayrıntılı bilgi için <a href="/gizlilik-politikasi" class="font-semibold text-primary-700 underline underline-offset-4">Gizlilik Politikası ve KVKK Aydınlatma Metni</a> sayfasını inceleyebilirsiniz.
+                    </p>
+                </section>
+            </div>
         </section>
     </main>
     <Footer />
