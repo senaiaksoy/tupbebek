@@ -1,6 +1,6 @@
 ---
-title: "Mikroenjeksiyon (ICSI) Nedir? Kimlere Uygulanır, IVF'den Farkı"
-description: "Mikroenjeksiyon (ICSI) nedir, nasıl yapılır? Erkek faktörü, azospermi, düşük sperm sayısı, önceki döllenme başarısızlığı ve normal spermde ICSI kararı için güncel rehber."
+title: "Mikroenjeksiyon (ICSI) Nedir? Kimlere Uygulanır?"
+description: "Mikroenjeksiyon ICSI nedir, IVF'den farkı ne, kimlere uygulanır? Erkek faktörü, azospermi, önceki döllenme başarısızlığı ve normal spermde ICSI kararı."
 publishDate: 2025-01-17
 author: "Doç. Dr. Senai Aksoy"
 authorTitle: "Kadın Hastalıkları ve Doğum Uzmanı"
@@ -26,10 +26,9 @@ references:
     journal: "Cochrane Database of Systematic Reviews"
     year: 2023
     doi: "10.1002/14651858.CD001301.pub2"
-    url: "https://www.cochrane.org/evidence/CD001301_intracytoplasmic-sperm-injection-versus-conventional-techniques-oocyte-insemination-during-vitro"
     pmid: "37581383"
   - title: "Intracytoplasmic sperm injection (ICSI) for non-male factor indications: a committee opinion"
-    authors: "Practice Committees of the American Society for Reproductive Medicine and the Society for Assisted Reproductive Technology"
+    authors: "Practice Committees of the ASRM and SART"
     journal: "Fertility and Sterility"
     year: 2020
     doi: "10.1016/j.fertnstert.2020.05.032"
@@ -40,11 +39,6 @@ references:
     journal: "AUA/ASRM Guideline"
     year: 2024
     url: "https://www.auanet.org/guidelines-and-quality/guidelines/male-infertility"
-  - title: "Diagnosis and treatment of infertility in men: AUA/ASRM guideline part II"
-    authors: "Schlegel PN, Sigman M, Collura B et al."
-    journal: "Fertility and Sterility"
-    year: 2021
-    url: "https://www.asrm.org/practice-guidance/practice-committee-documents/diagnosis-and-treatment-of-infertility-in-men-aua-asrm-guideline-part2/"
 ---
 
 import HizliCevap from '../../components/HizliCevap.astro';
@@ -56,21 +50,15 @@ import InlineEvidence from '../../components/InlineEvidence.astro';
 import EvidenceGradeCard from '../../components/EvidenceGradeCard.astro';
 import RevealScript from '../../components/global/RevealScript.astro';
 
-<HizliCevap question="Mikroenjeksiyon (ICSI) nedir, kimlere uygulanır?">
-Mikroenjeksiyon, tek bir spermin mikroskop altında doğrudan yumurtanın içine verilmesidir. En güçlü kullanım alanı ciddi erkek faktörü, azospermi nedeniyle cerrahi sperm kullanımı ve önceki IVF denemesinde düşük ya da hiç döllenme olmamasıdır. Sperm değerleri normalse ICSI her zaman canlı doğumu artırmaz; karar kişisel öykü, yumurta sayısı, PGT planı ve laboratuvar deneyimiyle verilir.
+<HizliCevap question="Mikroenjeksiyon (ICSI) nedir?">
+Mikroenjeksiyon, tek bir spermin mikroskop altında doğrudan yumurtanın içine enjekte edilmesidir. En güçlü kullanım alanı ciddi erkek faktörü, azospermi nedeniyle cerrahi sperm kullanımı ve önceki IVF denemesinde düşük ya da hiç döllenme olmamasıdır. Sperm değerleri normalse ICSI her zaman canlı doğumu artırmaz; karar çiftin öyküsüne göre verilmelidir.
 </HizliCevap>
 
 <div class="mesh-hero pt-12 pb-20 px-4 md:px-0 -mx-4 md:-mx-0 mb-12 rounded-3xl shadow-sm border border-white/40" style="background: linear-gradient(135deg, #ecfeff 0%, #f0f9ff 48%, #f8fafc 100%);">
   <div class="max-w-4xl mx-auto" data-reveal>
-    <div class="inline-block px-4 py-1 rounded-full bg-cyan-100 text-cyan-800 text-sm font-bold mb-4">
-      IVF Laboratuvarı
-    </div>
-    <h1 class="text-4xl md:text-6xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-cyan-800 to-slate-900 leading-tight">
-      {frontmatter.title}
-    </h1>
-    <p class="text-xl md:text-2xl text-slate-700 font-medium max-w-2xl leading-relaxed">
-      ICSI güçlü bir tekniktir; ama “herkese daha iyi” değildir. Doğru soru şu: Bu çiftte döllenme engelini aşmak için gerçekten ICSI gerekiyor mu?
-    </p>
+    <div class="inline-block px-4 py-1 rounded-full bg-cyan-100 text-cyan-800 text-sm font-bold mb-4">IVF Laboratuvarı</div>
+    <h1 class="text-4xl md:text-6xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-cyan-800 to-slate-900 leading-tight">{frontmatter.title}</h1>
+    <p class="text-xl md:text-2xl text-slate-700 font-medium max-w-2xl leading-relaxed">ICSI çok güçlü bir tekniktir; fakat “daha teknolojik olduğu için herkeste daha başarılı” değildir.</p>
   </div>
 </div>
 
@@ -78,18 +66,17 @@ Mikroenjeksiyon, tek bir spermin mikroskop altında doğrudan yumurtanın içine
 
 <div data-reveal>
 <MedicalInfoBox title="Hızlı Bakış: ICSI Ne Zaman Anlamlıdır?" icon="ICSI" color="blue">
-**ICSI, özellikle ciddi erkek faktörü infertilitesinde ve önceki döllenme başarısızlığında güçlü bir laboratuvar seçeneğidir.** <InlineEvidence grade="B" /> Buna karşılık erkek sperm sayısı ve hareketliliği normalse, Cochrane 2023 derlemesi ICSI'nin klasik IVF'ye göre canlı doğumda üstün olduğunu göstermemiştir. <InlineEvidence grade="A" />
+**ICSI özellikle ciddi erkek faktörü ve önceki döllenme başarısızlığında anlamlıdır.** Normal sperm parametreleri olan çiftlerde ise Cochrane 2023 derlemesi ICSI'nin klasik IVF'ye göre canlı doğum üstünlüğünü net göstermemiştir. <InlineEvidence grade="A" />
 </MedicalInfoBox>
 </div>
 
 ## İçindekiler
 
-- [Mikroenjeksiyon ICSI nedir?](#nedir)
-- [ICSI ile klasik IVF arasındaki fark nedir?](#fark)
-- [Kimlere ICSI önerilir?](#kimlere)
-- [Normal spermde ICSI gerekir mi?](#normal-sperm)
-- [ICSI işlemi nasıl yapılır?](#surec)
-- [Azospermi ve cerrahi spermde ICSI](#azospermi)
+- [ICSI nedir?](#nedir)
+- [ICSI ile klasik IVF farkı](#fark)
+- [Kimlere önerilir?](#kimlere)
+- [Normal spermde ICSI gerekir mi?](#normal)
+- [Azospermi ve cerrahi sperm](#azospermi)
 - [Riskler ve yanlış beklentiler](#riskler)
 - [Sıkça sorulan sorular](#faq)
 
@@ -98,204 +85,102 @@ Mikroenjeksiyon, tek bir spermin mikroskop altında doğrudan yumurtanın içine
 </div>
 
 <div data-reveal>
-<h2 id="nedir">Mikroenjeksiyon (ICSI) Nedir?</h2>
+<h2 id="nedir">ICSI Nedir?</h2>
 
-ICSI, İngilizce **Intracytoplasmic Sperm Injection** ifadesinin kısaltmasıdır. Türkçe karşılığı “intrasitoplazmik sperm enjeksiyonu” veya daha anlaşılır adıyla **mikroenjeksiyon**dur.
+ICSI, “intracytoplasmic sperm injection” ifadesinin kısaltmasıdır. Klasik IVF'de yumurta ve sperm aynı ortamda buluşturulur; spermin yumurtayı kendisinin döllemesi beklenir. ICSI'de embriyolog tek bir spermi seçer ve çok ince bir iğneyle yumurtanın içine verir.
 
-Klasik IVF'de yumurta ve sperm aynı laboratuvar ortamında bir araya getirilir; spermin yumurtayı kendisinin döllemesi beklenir. ICSI'de ise embriyolog tek bir spermi seçer ve çok ince bir cam iğneyle doğrudan yumurtanın içine enjekte eder.
-
-Bu teknik 1992'de Palermo ve arkadaşlarının bildirdiği ilk gebeliklerle üreme tıbbında dönüm noktası oldu. Öncesinde ağır erkek faktörü olan birçok çift için döllenme neredeyse imkansızken, ICSI tek bir canlı spermle döllenme şansı yarattı. <InlineEvidence grade="B" />
+Bu yöntem 1990'lı yıllardan beri özellikle erkek faktörü infertilitesinde dönüştürücü bir teknoloji olmuştur. Tekniğin gücü, çok az sayıda sperm olduğunda bile döllenme ihtimalini mümkün kılmasıdır. <InlineEvidence grade="B" />
 </div>
 
 <div data-reveal>
-<h2 id="fark">ICSI ile Klasik IVF Arasındaki Fark Nedir?</h2>
+<h2 id="fark">ICSI ile Klasik IVF Arasındaki Fark</h2>
 
-| Başlık | Klasik IVF | Mikroenjeksiyon (ICSI) |
+| Başlık | Klasik IVF | ICSI |
 | :--- | :--- | :--- |
-| **Döllenme şekli** | Sperm yumurtayı kendi girerek döller | Tek sperm yumurtanın içine enjekte edilir |
-| **En uygun kullanım** | Sperm parametreleri yeterliyse | Ciddi erkek faktörü veya döllenme sorunu varsa |
-| **Laboratuvar müdahalesi** | Daha az müdahaleci | Daha mikrocerrahi ve teknik bir işlem |
-| **Döllenme bilgisi** | Sperm-yumurta etkileşimi doğal seçime daha yakın izlenir | Yumurta olgunluğu ve sperm seçimi daha kontrollüdür |
-| **Canlı doğum üstünlüğü** | Normal spermde benzer olabilir | Erkek faktörü dışı durumlarda rutin üstünlük gösterilmemiştir |
+| **Döllenme şekli** | Sperm yumurtayı kendi döller | Tek sperm yumurtaya enjekte edilir |
+| **Uygun kullanım** | Sperm parametreleri yeterliyse | Erkek faktörü veya döllenme sorunu varsa |
+| **Müdahale düzeyi** | Daha az laboratuvar müdahalesi | Daha teknik ve seçici işlem |
+| **Normal spermde üstünlük** | Benzer olabilir | Rutin üstünlük gösterilmemiştir |
 
-ASRM, ICSI'nin erkek faktörü ve önceki düşük/hiç döllenme durumlarında değerli olduğunu; ancak erkek faktörü yoksa rutin ICSI kullanımını kanıtların desteklemediğini belirtir. <InlineEvidence grade="A" />
+ASRM, ICSI'nin erkek faktörü yokken rutin kullanımını kanıtların desteklemediğini; kararın hasta öyküsü ve laboratuvar bulgularıyla verilmesi gerektiğini belirtir. <InlineEvidence grade="A" />
 </div>
 
 <div data-reveal>
 <h2 id="kimlere">Kimlere ICSI Önerilir?</h2>
 
-ICSI kararını sadece “daha ileri teknoloji” diye vermemek gerekir. En anlamlı kullanım alanları şunlardır:
+ICSI en sık şu durumlarda gündeme gelir:
 
-- Sperm sayısının çok düşük olması
-- Sperm hareketliliğinin belirgin düşük olması
-- Morfoloji bozukluğunun ağır olması
-- Menide sperm yoksa cerrahi yolla sperm elde edilmesi
-- Önceki klasik IVF denemesinde hiç döllenme olmaması
-- Önceki denemede beklenenden düşük döllenme görülmesi
+- Sperm sayısı, hareketi veya morfolojisinde ciddi bozukluk
+- Menide sperm olmaması ve cerrahi sperm kullanılması
+- Önceki IVF denemesinde hiç döllenme olmaması
+- Beklenenden düşük döllenme öyküsü
 - Dondurulmuş yumurta kullanımı
-- Bazı PGT-M/genetik test senaryolarında dış sperm DNA kontaminasyonunu azaltma ihtiyacı
+- Bazı PGT-M/genetik test senaryoları
 
-ASRM'nin 2020 komite görüşü, ICSI'nin düşük veya hiç döllenme riskini azaltabileceği seçilmiş durumları kabul eder; fakat nihai hedefin döllenme oranı değil canlı doğum olduğunu özellikle vurgular. <InlineEvidence grade="A" />
+Burada önemli nokta şudur: ICSI döllenme engelini aşmaya yardım eder; embriyo kalitesi veya canlı doğumu garanti etmez.
 </div>
 
 <div data-reveal>
-<h2 id="normal-sperm">Normal Spermde ICSI Gerekir mi?</h2>
+<h2 id="normal">Normal Spermde ICSI Gerekir mi?</h2>
 
-Her zaman gerekmez. Hatta bu konu güncel üreme tıbbının en sık tartışılan başlıklarından biridir.
+Her zaman gerekmez. Normal sperm sayısı ve hareketliliği olan çiftlerde ICSI'nin klasik IVF'ye göre canlı doğumu artırdığı net değildir. Bu nedenle “ICSI daha ileri teknoloji, o halde daha iyi” cümlesi tıbben eksiktir.
 
-Cochrane 2023 derlemesi, toplam sperm sayısı ve hareketliliği normal olan çiftlerde ICSI ile klasik IVF'yi karşılaştıran üç randomize çalışmayı değerlendirdi. Sonuç: ICSI'nin canlı doğum, klinik gebelik veya düşük açısından klasik IVF'den üstün olduğu gösterilemedi. <InlineEvidence grade="A" />
+Normal spermde ICSI şu özel durumlarda tartışılabilir:
 
-Bu nedenle “ICSI daha teknolojik, o halde daha başarılıdır” cümlesi doğru değildir. Bazı merkezlerde ICSI rutinleşmiş olabilir; ama karar şu sorulara göre verilmelidir:
-
-- Sperm hazırlama sonrası yeterli hareketli sperm kalıyor mu?
-- Önceki denemede döllenme başarısızlığı oldu mu?
-- Yumurta sayısı çok az mı?
-- Dondurulmuş yumurta veya PGT-M gibi özel bir durum var mı?
-- Laboratuvarın klasik IVF ve ICSI sonuçları nasıl?
-
-Normal spermde bazen yarı IVF-yarı ICSI yaklaşımı tartışılabilir; özellikle açıklanamayan infertilite veya önceki belirsiz döllenme öyküsünde bu seçenek çifte daha fazla bilgi verebilir.
-</div>
-
-<div data-reveal>
-<h2 id="surec">ICSI İşlemi Nasıl Yapılır?</h2>
-
-ICSI hastanın üzerinde değil, laboratuvarda yumurta toplama gününde yapılır.
-
-1. Kadında yumurtalık uyarımı ve yumurta toplama yapılır.
-2. Toplanan yumurtaların olgunluğu embriyoloji laboratuvarında değerlendirilir.
-3. Erkekten semen örneği alınır veya cerrahi sperm kullanılır.
-4. Hareket, görünüm ve canlılık açısından uygun sperm seçilir.
-5. Olgun yumurta mikropipetle sabitlenir.
-6. Tek sperm ince cam iğneyle yumurtanın içine verilir.
-7. Ertesi gün normal döllenme, genellikle iki pronükleus görünümüyle değerlendirilir.
-8. Embriyolar 3. gün veya 5.-6. gün blastosist aşamasına kadar izlenir.
-
-ICSI'nin kendisi anne adayına ek ağrı vermez; laboratuvar aşamasıdır. Anne adayının hissettiği tıbbi işlem esas olarak yumurta toplama sürecidir.
+- Önceki döllenme başarısızlığı
+- Çok az yumurta elde edilmesi
+- Açıklanamayan infertiliteyle birlikte yüksek döllenme kaygısı
+- Dondurulmuş yumurta veya özel genetik test planı
+- Laboratuvarın çift özelindeki teknik değerlendirmesi
 </div>
 
 <div data-reveal>
 <h2 id="azospermi">Azospermi ve Cerrahi Spermde ICSI</h2>
 
-Menide hiç sperm görülmemesine azospermi denir. Bu durumda temel ayrım önemlidir:
+Azospermi, menide sperm görülmemesidir. Obstrüktif azospermide sperm üretimi olabilir ama kanalda tıkanıklık vardır; nonobstrüktif azospermide ise üretim çok az veya odaksal olabilir. Cerrahi yolla sperm bulunursa döllenme için genellikle ICSI gerekir.
 
-| Azospermi Tipi | Ne Olur? | ICSI'deki Rolü |
-| :--- | :--- | :--- |
-| **Obstrüktif azospermi** | Sperm üretimi olabilir ama kanal tıkalıdır | Cerrahi sperm elde edilip ICSI ile kullanılabilir |
-| **Nonobstrüktif azospermi** | Testiste sperm üretimi çok az veya odaksaldır | Mikro-TESE ile bulunan sperm ICSI'de kullanılabilir |
-
-AUA/ASRM erkek infertilitesi rehberi, azoospermi ve ağır sperm düşüklüğünde erkek değerlendirmesinin atlanmaması gerektiğini; seçilmiş hastalarda karyotip ve Y kromozomu mikrodelesyon analizinin önemli olduğunu belirtir. <InlineEvidence grade="A" />
-
-Bu nedenle azospermi hastasında “ICSI yapalım” demek tek başına yeterli değildir. Önce tanı, genetik değerlendirme, hormon profili, testis muayenesi ve cerrahi sperm bulma olasılığı konuşulmalıdır. Daha ayrıntılı okuma için [azospermi ve mikro-TESE rehberi](/makaleler/azospermi-mikro-tese/) iyi tamamlayıcıdır.
+AUA/ASRM erkek infertilitesi rehberi, azospermi ve ağır sperm düşüklüğünde erkek değerlendirmesinin atlanmamasını; seçilmiş hastalarda genetik testlerin önemli olabileceğini vurgular. <InlineEvidence grade="A" />
 </div>
 
 <div data-reveal>
-<h2 id="riskler">ICSI'nin Riskleri ve Yanlış Beklentiler</h2>
+<h2 id="riskler">Riskler ve Yanlış Beklentiler</h2>
 
-ICSI çoğu çift için güvenli kullanılan yerleşik bir tekniktir; fakat sıfır risk veya garanti anlamına gelmez.
+ICSI yerleşik ve sık kullanılan bir tekniktir; ancak garanti değildir.
 
-Yanlış beklentiler:
+- ICSI gebelik şansını her hastada artırmaz.
+- Tek sperm kullanılması sperm kalitesini önemsiz yapmaz.
+- Embriyo kalitesini ve kromozomal sağlığı garanti etmez.
+- Ağır erkek faktöründe genetik danışmanlık gerekebilir.
 
-- **“ICSI her zaman gebelik şansını artırır.”** Hayır. Normal spermde canlı doğum üstünlüğü net gösterilmemiştir.
-- **“Tek sperm yeter, o halde sperm kalitesi önemsiz.”** Hayır. Sperm DNA hasarı, genetik nedenler ve erkek faktörünün kökeni önemini korur.
-- **“ICSI embriyo kalitesini garanti eder.”** Hayır. Embriyo gelişimi yumurta kalitesi, sperm, laboratuvar koşulları ve genetik yapı ile belirlenir.
-- **“ICSI yapılırsa tedavi başarısız olmaz.”** Hayır. Döllenme sağlansa bile blastosist gelişimi, rahim hazırlığı ve kromozomal yapı sonucu etkiler.
-
-Olası dezavantajlar:
-
-- Klasik IVF'ye göre daha yüksek laboratuvar maliyeti
-- Yumurta üzerinde daha müdahaleci işlem yapılması
-- Tüm yumurtaların olgun olmaması nedeniyle bazı yumurtalara ICSI yapılamaması
-- Ağır erkek faktöründe genetik sorunların erkek çocuğa aktarılma ihtimali için danışmanlık gereksinimi
-
-ASRM, erkek faktörü dışı durumlarda ICSI'nin maliyet ve potansiyel risklerinin beklenen faydayla dengelenmesi gerektiğini vurgular. <InlineEvidence grade="A" />
-</div>
-
-<div data-reveal>
 <QuoteBlock author="tupbebek.com Tıbbi Danışma Kurulu">
-ICSI doğru hastada çok güçlüdür; yanlış hastada ise pahalı bir alışkanlığa dönüşebilir. Tedavi planı teknolojiye değil, döllenme riskine ve çiftin gerçek klinik tablosuna göre kurulmalıdır.
+ICSI doğru hastada çok güçlüdür; yanlış hastada ise sadece pahalı bir alışkanlığa dönüşebilir.
 </QuoteBlock>
-</div>
-
-<div data-reveal>
-<h2 id="faq">Sıkça Sorulan Sorular</h2>
-
-<Accordion title="ICSI ile IVF arasındaki en temel fark nedir?">
-Klasik IVF'de sperm yumurtayı laboratuvar ortamında kendi döller. ICSI'de embriyolog tek bir spermi seçip doğrudan yumurtanın içine enjekte eder.
-</Accordion>
-
-<Accordion title="Sperm hareketliliği hiç yoksa ICSI yapılabilir mi?">
-Sperm canlıysa, hareket etmese bile bazı durumlarda ICSI için kullanılabilir. Canlılık testleri ve sperm elde etme yöntemi embriyoloji ekibi tarafından değerlendirilir.
-</Accordion>
-
-<Accordion title="Normal spermde ICSI daha mı başarılıdır?">
-Genel olarak hayır. Cochrane 2023 ve ASRM 2020, erkek faktörü yoksa rutin ICSI'nin canlı doğumu artırdığını gösteren güçlü kanıt olmadığını bildirir.
-</Accordion>
-
-<Accordion title="ICSI ile döllenme oranı kaçtır?">
-Oran merkez, yumurta olgunluğu, sperm kalitesi ve hasta profiline göre değişir. Bu nedenle tek bir yüzde vermek doğru değildir; en anlamlı değerlendirme sizin önceki döllenme ve embriyo gelişim sonuçlarınızdır.
-</Accordion>
-
-<Accordion title="ICSI bebeklerinde sağlık riski artar mı?">
-ICSI ile doğan çocukların büyük çoğunluğu sağlıklıdır. Bazı çalışmalarda küçük risk artışları bildirilse de bunun ne kadarının işlemden, ne kadarının altta yatan erkek faktörü ve ebeveyn özelliklerinden kaynaklandığı net değildir. Ağır erkek faktöründe genetik danışmanlık önemlidir.
-</Accordion>
 </div>
 
 <div data-reveal>
 <EvidenceGradeCard grade={frontmatter.recommendationGrade} />
 </div>
 
-<div data-reveal class="mt-12 bg-slate-50 p-8 rounded-3xl border border-slate-200">
-**Sizin İçin Seçtiğimiz Diğer Rehberler:**
-- [Erkek infertilitesi ana rehberi](/erkek-infertilitesi/)
-- [Azospermi ve mikro-TESE](/makaleler/azospermi-mikro-tese/)
-- [Cerrahi sperm arama ve TESE](/makaleler/cerrahi-sperm-arama-tese/)
-- [IVF protokolleri ve tedavi planı](/makaleler/ivf-protokolleri/)
-- [Laboratuvar raporu nasıl yorumlanır?](/makaleler/laboratuvar-raporu-yorumlama/)
-- [Embriyo transferi gün seçimi](/makaleler/embriyo-transferi-gun-secimi/)
+<div data-reveal>
+<h2 id="faq">Sıkça Sorulan Sorular</h2>
+
+<Accordion title="ICSI ağrılı bir işlem mi?">
+ICSI laboratuvarda yumurtalar üzerinde yapılır; anne adayının hissettiği işlem yumurta toplama sürecidir.
+</Accordion>
+
+<Accordion title="ICSI ile döllenme kesin olur mu?">
+Hayır. ICSI döllenme şansını artırabilir ama her yumurta döllenmez ve her döllenen yumurta sağlıklı embriyoya dönüşmez.
+</Accordion>
+
+<Accordion title="Normal spermde klasik IVF mi ICSI mi?">
+Karar çiftin öyküsüne, yumurta sayısına, önceki döllenme deneyimine ve laboratuvar yaklaşımına göre verilir. Rutin ICSI üstünlüğü net değildir.
+</Accordion>
+
+<Accordion title="Azospermide ICSI yapılabilir mi?">
+Cerrahi yolla canlı sperm bulunursa ICSI ile kullanılabilir. Öncesinde erkek infertilitesi değerlendirmesi ve gerekirse genetik danışmanlık önemlidir.
+</Accordion>
 </div>
 
 </div>
 
-export const icsiFaqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [{
-    "@type": "Question",
-    "name": "ICSI ile IVF arasındaki en temel fark nedir?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Klasik IVF'de sperm yumurtayı laboratuvar ortamında kendi döller. ICSI'de embriyolog tek bir spermi seçip doğrudan yumurtanın içine enjekte eder."
-    }
-  }, {
-    "@type": "Question",
-    "name": "Sperm hareketliliği hiç yoksa ICSI yapılabilir mi?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Sperm canlıysa, hareket etmese bile bazı durumlarda ICSI için kullanılabilir. Canlılık testleri ve sperm elde etme yöntemi embriyoloji ekibi tarafından değerlendirilir."
-    }
-  }, {
-    "@type": "Question",
-    "name": "Normal spermde ICSI daha mı başarılıdır?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Genel olarak hayır. Cochrane 2023 ve ASRM 2020, erkek faktörü yoksa rutin ICSI'nin canlı doğumu artırdığını gösteren güçlü kanıt olmadığını bildirir."
-    }
-  }, {
-    "@type": "Question",
-    "name": "ICSI ile döllenme oranı kaçtır?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Oran merkez, yumurta olgunluğu, sperm kalitesi ve hasta profiline göre değişir. Bu nedenle tek bir yüzde vermek doğru değildir; en anlamlı değerlendirme sizin önceki döllenme ve embriyo gelişim sonuçlarınızdır."
-    }
-  }, {
-    "@type": "Question",
-    "name": "ICSI bebeklerinde sağlık riski artar mı?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "ICSI ile doğan çocukların büyük çoğunluğu sağlıklıdır. Bazı çalışmalarda küçük risk artışları bildirilse de bunun ne kadarının işlemden, ne kadarının altta yatan erkek faktörü ve ebeveyn özelliklerinden kaynaklandığı net değildir. Ağır erkek faktöründe genetik danışmanlık önemlidir."
-    }
-  }]
-};
-
-<script type="application/ld+json" set:html={JSON.stringify(icsiFaqSchema)} />
 <RevealScript />

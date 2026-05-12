@@ -1,6 +1,6 @@
 ---
 title: "Miyomlar ve Tüp Bebek: Transfer Öncesi Ameliyat Gerekir mi?"
-description: "Miyomlar tüp bebek başarısını etkiler mi? Submüköz, intramural ve subseröz miyomlarda IVF öncesi ameliyat, takip, transfer erteleme ve rahim içi değerlendirme kararları."
+description: "Miyomlar tüp bebek başarısını etkiler mi? Submüköz, intramural ve subseröz miyomlarda IVF öncesi ameliyat, takip, embriyo dondurma ve transfer kararı."
 publishDate: 2025-02-02
 author: "Doç. Dr. Senai Aksoy"
 authorTitle: "Kadın Hastalıkları ve Doğum Uzmanı"
@@ -28,26 +28,11 @@ references:
     year: 2024
     pmid: "38935974"
     url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11819907/"
-  - title: "Myomectomy for intramural fibroids prior to in vitro fertilization/intracytoplasmic sperm injection cycles, a conundrum: Systematic review and meta-analysis"
-    authors: "Reproductive Medicine and Surgery group"
-    journal: "Reproductive BioMedicine Online"
-    year: 2026
-    pmid: "41408877"
-    url: "https://pubmed.ncbi.nlm.nih.gov/41408877/"
   - title: "Management of Symptomatic Uterine Leiomyomas"
     authors: "American College of Obstetricians and Gynecologists"
     journal: "ACOG Practice Bulletin No. 228"
     year: 2021
     url: "https://www.acog.org/clinical/clinical-guidance/practice-bulletin/articles/2021/06/management-of-symptomatic-uterine-leiomyomas"
-  - title: "Uterine Fibroids"
-    authors: "American College of Obstetricians and Gynecologists"
-    journal: "ACOG Patient FAQ"
-    url: "https://www.acog.org/womens-health/faqs/uterine-fibroids"
-  - title: "Uterine Morcellation for Presumed Leiomyomas"
-    authors: "American College of Obstetricians and Gynecologists"
-    journal: "ACOG Committee Opinion"
-    year: 2021
-    url: "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2021/03/uterine-morcellation-for-presumed-leiomyomas"
 ---
 
 import HizliCevap from '../../components/HizliCevap.astro';
@@ -60,20 +45,14 @@ import EvidenceGradeCard from '../../components/EvidenceGradeCard.astro';
 import RevealScript from '../../components/global/RevealScript.astro';
 
 <HizliCevap question="Miyom varken tüp bebek yapılabilir mi?">
-Evet, miyom varken tüp bebek yapılabilir; ancak transfer öncesi en kritik soru miyomun rahim iç boşluğunu bozup bozmadığıdır. Submüköz veya kaviteyi bozan miyomlarda ameliyat daha güçlü gündeme gelir. Küçük, belirti vermeyen ve rahim dışına büyüyen subseröz miyomlarda çoğu zaman takip yeterlidir.
+Evet, miyom varken tüp bebek yapılabilir. Transfer öncesi en kritik soru miyomun rahim iç boşluğunu bozup bozmadığıdır. Submüköz veya kaviteyi bozan miyomlarda ameliyat daha güçlü gündeme gelir; küçük, belirti vermeyen ve rahim dışına büyüyen subseröz miyomlarda çoğu zaman takip yeterlidir.
 </HizliCevap>
 
 <div class="mesh-hero pt-12 pb-20 px-4 md:px-0 -mx-4 md:-mx-0 mb-12 rounded-3xl shadow-sm border border-white/40" style="background: linear-gradient(135deg, #fff7ed 0%, #fef2f2 44%, #f8fafc 100%);">
   <div class="max-w-4xl mx-auto" data-reveal>
-    <div class="inline-block px-4 py-1 rounded-full bg-orange-100 text-orange-800 text-sm font-bold mb-4">
-      IVF Öncesi Rahim Haritası
-    </div>
-    <h1 class="text-4xl md:text-6xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-orange-700 to-rose-700 leading-tight">
-      {frontmatter.title}
-    </h1>
-    <p class="text-xl md:text-2xl text-slate-700 font-medium max-w-2xl leading-relaxed">
-      Tüp bebekte miyom kararı “miyom var mı?” sorusundan çok “embriyonun yerleşeceği alan etkileniyor mu?” sorusuyla verilir.
-    </p>
+    <div class="inline-block px-4 py-1 rounded-full bg-orange-100 text-orange-800 text-sm font-bold mb-4">IVF Öncesi Rahim Haritası</div>
+    <h1 class="text-4xl md:text-6xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-orange-700 to-rose-700 leading-tight">{frontmatter.title}</h1>
+    <p class="text-xl md:text-2xl text-slate-700 font-medium max-w-2xl leading-relaxed">Tüp bebekte miyom kararı “miyom var mı?” sorusundan çok “embriyonun yerleşeceği alan etkileniyor mu?” sorusuyla verilir.</p>
   </div>
 </div>
 
@@ -81,20 +60,19 @@ Evet, miyom varken tüp bebek yapılabilir; ancak transfer öncesi en kritik sor
 
 <div data-reveal>
 <MedicalInfoBox title="Hızlı Bakış: Transfer Öncesi En Kritik Ayrım" icon="IVF" color="orange">
-**Rahim iç boşluğunu bozan miyomlar IVF sonucunu etkileyebilir; rahim dışına büyüyen, belirti vermeyen subseröz miyomlar ise çoğu zaman transfer öncesi ameliyat gerektirmez.** İntramural miyomlar gri bölgedir: boyut, sayı, kaviteye yakınlık, önceki transfer öyküsü ve cerrahi risk birlikte değerlendirilir. <InlineEvidence grade="B" />
+**Rahim iç boşluğunu bozan miyomlar IVF sonucunu etkileyebilir; rahim dışına büyüyen, belirti vermeyen subseröz miyomlar çoğu zaman transfer öncesi ameliyat gerektirmez.** İntramural miyomlar gri alandır; boyut, kaviteye yakınlık ve önceki transfer öyküsü birlikte değerlendirilir. <InlineEvidence grade="B" />
 </MedicalInfoBox>
 </div>
 
-> Bu rehber, [miyom ameliyatı karar rehberi](/makaleler/miyom-ameliyati/) ile birlikte okunmalıdır. Buradaki odak ameliyat tekniği değil, IVF öncesi transfer zamanlaması ve rahim içi hazırlıktır.
+> Ameliyat tekniği ve genel miyom yönetimi için [miyom ameliyatı karar rehberi](/makaleler/miyom-ameliyati/) tamamlayıcıdır. Bu sayfanın odağı IVF öncesi transfer stratejisidir.
 
 ## İçindekiler
 
-- [Miyom IVF sürecinde neden önemlidir?](#neden-onemli)
-- [Miyom tipine göre IVF kararı](#tipler)
-- [Transferden önce hangi testler yapılır?](#testler)
+- [Miyom IVF sürecinde neden önemlidir?](#neden)
+- [Miyom tipine göre karar](#tipler)
+- [Transfer öncesi hangi testler yapılır?](#testler)
 - [Ameliyat mı, embriyo dondurma mı, takip mi?](#strateji)
 - [İntramural miyomlarda gri alan](#intramural)
-- [Gebelik ve doğum sürecinde riskler](#gebelik)
 - [Sıkça sorulan sorular](#faq)
 
 <div data-reveal>
@@ -102,205 +80,81 @@ Evet, miyom varken tüp bebek yapılabilir; ancak transfer öncesi en kritik sor
 </div>
 
 <div data-reveal>
-<h2 id="neden-onemli">Miyom IVF Sürecinde Neden Önemlidir?</h2>
+<h2 id="neden">Miyom IVF Sürecinde Neden Önemlidir?</h2>
 
-Miyomlar rahmin kas tabakasından gelişen iyi huylu kitlelerdir. Tıbbi raporlarda leiomyom veya fibroid olarak da geçebilir. Çok sık görülürler; fakat her miyom tüp bebek başarısını düşürmez.
-
-IVF açısından önemli olan noktalar şunlardır:
-
-- Embriyonun yerleşeceği rahim iç boşluğu düzgün mü?
-- Endometrium çizgisi miyom nedeniyle bozuluyor mu?
-- Transfer kateterinin geçiş yolu zorlaşıyor mu?
-- Aşırı kanama, anemi veya ağrı tedavi zamanlamasını etkiliyor mu?
-- Miyom yumurta toplama sırasında yumurtalığa erişimi zorlaştırıyor mu?
-- Önceki başarısız transfer veya düşük öyküsü var mı?
-
-Bu nedenle sadece ultrason raporundaki “miyom izlendi” cümlesiyle karar verilmez. Konum, boyut, rahim iç boşluğu ilişkisi ve hastanın IVF planı birlikte okunur.
+IVF açısından önemli olan, miyomun embriyonun tutunacağı rahim iç boşluğunu etkileyip etkilemediğidir. Ultrason raporunda “miyom izlendi” yazması tek başına transferi erteletmez. Konum, boyut, endometrium çizgisi, transfer yolu, kanama ve önceki deneme öyküsü birlikte okunmalıdır.
 </div>
 
 <div data-reveal>
 <h2 id="tipler">Miyom Tipine Göre IVF Kararı</h2>
 
-| Miyom Tipi | Rahim İç Boşluğu İlişkisi | IVF Öncesi Pratik Yaklaşım |
+| Miyom Tipi | Rahim İçi İlişki | IVF Öncesi Yaklaşım |
 | :--- | :--- | :--- |
-| **Submüköz miyom** | Rahim içine doğru büyür | Transfer öncesi histeroskopik çıkarma güçlü biçimde değerlendirilir |
-| **Kaviteyi bozan intramural miyom** | Rahim duvarındadır ama iç boşluğu iter | Cerrahi sık gündeme gelir; yaş ve embriyo planı dikkate alınır |
-| **Kaviteyi bozmayan intramural miyom** | Rahim duvarında kalır | Gri alan; boyut, sayı ve önceki IVF öyküsüyle karar verilir |
-| **Subseröz miyom** | Rahim dışına doğru büyür | Belirti veya teknik sorun yoksa çoğunlukla takip edilir |
+| **Submüköz** | Rahim içine uzanır | Transfer öncesi histeroskopik çıkarma güçlü biçimde değerlendirilir |
+| **Kaviteyi bozan intramural** | Duvar içindedir ama boşluğu iter | Cerrahi sık gündeme gelir |
+| **Kaviteyi bozmayan intramural** | Duvar içinde kalır | Gri alan; boyut ve önceki transferler önemlidir |
+| **Subseröz** | Rahim dışına büyür | Belirti veya teknik sorun yoksa çoğunlukla takip edilir |
 
-ASRM, kaviteyi bozan miyomlarda cerrahinin klinik gebelik oranını iyileştirebileceğine dair orta düzey kanıt olduğunu; subseröz miyomların çıkarılmasının fertiliteyi artırdığına dair yeterli kanıt olmadığını bildirir. <InlineEvidence grade="B" />
-
-<h3>Submüköz miyom: transfer öncesi en net grup</h3>
-
-Submüköz miyom rahim iç boşluğuna uzanır. Küçük bile olsa embriyonun yerleşeceği alanı bozabilir, kanamayı artırabilir ve transfer kararını etkileyebilir. Bu grupta çoğu zaman histeroskopik miyomektomi düşünülür.
-
-<h3>Subseröz miyom: çoğu zaman IVF engeli değildir</h3>
-
-Subseröz miyomlar rahmin dış yüzeyine doğru büyür. Rahim iç boşluğunu bozmadıkları sürece embriyo tutunması üzerinde doğrudan etkileri sınırlıdır. Ancak çok büyük olup ağrı, bası veya yumurta toplama erişim sorunu yaparlarsa karar değişebilir.
+ASRM, kaviteyi bozan miyomlarda cerrahinin klinik gebelik oranını iyileştirebileceğini; subseröz miyomların çıkarılmasının fertiliteyi artırdığına dair yeterli kanıt olmadığını bildirir. <InlineEvidence grade="B" />
 </div>
 
 <div data-reveal>
-<h2 id="testler">Transferden Önce Hangi Testler Yapılır?</h2>
+<h2 id="testler">Transfer Öncesi Hangi Testler Yapılır?</h2>
 
-Tüp bebek öncesi miyom değerlendirmesinde amaç, rahim iç boşluğunu netleştirmektir. Standart ultrason başlangıç için değerlidir; fakat her zaman tek başına yeterli olmaz.
+Amaç rahim iç boşluğunu netleştirmektir. Transvajinal ultrason başlangıç için değerlidir; ancak kavite etkisi şüpheliyse ek test gerekebilir.
 
-| Değerlendirme | Ne İşe Yarar? | Ne Zaman Öne Çıkar? |
-| :--- | :--- | :--- |
-| **Transvajinal ultrason** | Miyomun boyutunu, sayısını ve yerleşimini gösterir | İlk değerlendirme |
-| **SIS / salin sonografi** | Rahim içine sıvı vererek kaviteyi daha net gösterir | Kavite etkisi şüpheliyse |
-| **Histeroskopi** | Rahim içini doğrudan görür, bazı lezyonları aynı seansta tedavi edebilir | Submüköz miyom veya polip şüphesinde |
-| **MRI** | Çok sayıda, büyük veya karmaşık miyomlarda haritalama sağlar | Cerrahi planlama veya atipik görüntü varsa |
-
-Miyomla birlikte polip, septum, adezyon veya hidrosalpinx gibi başka faktörler de varsa, transfer planı tek başına miyoma göre değil tüm rahim-tüp haritasına göre yapılır.
+| Test | Ne İşe Yarar? |
+| :--- | :--- |
+| **Transvajinal ultrason** | Miyomun boyutunu, sayısını ve yerini gösterir |
+| **SIS / salin sonografi** | Rahim iç boşluğunun miyomla bozulup bozulmadığını netleştirir |
+| **Histeroskopi** | Rahim içini doğrudan görür; bazı lezyonları aynı seansta tedavi edebilir |
+| **MRI** | Büyük, çok sayıda veya karmaşık miyomlarda cerrahi haritalama sağlar |
 </div>
 
 <div data-reveal>
 <h2 id="strateji">Ameliyat mı, Embriyo Dondurma mı, Takip mi?</h2>
 
-IVF öncesinde üç ana strateji vardır. Doğru sıra hastanın yaşına, yumurtalık rezervine, embriyo sayısına ve cerrahi riskine göre değişir.
+IVF öncesinde üç pratik yol vardır:
 
-<div class="grid md:grid-cols-3 gap-5 my-8">
-  <div class="bg-white p-5 rounded-2xl border border-rose-200 shadow-sm">
-    <h3 class="text-lg font-bold text-rose-800 mb-2">Önce Ameliyat</h3>
-    <p>Kaviteyi bozan miyom, belirgin kanama, anemi veya transferi zorlaştıracak rahim içi deformasyon varsa düşünülür.</p>
-  </div>
-  <div class="bg-white p-5 rounded-2xl border border-orange-200 shadow-sm">
-    <h3 class="text-lg font-bold text-orange-800 mb-2">Önce Yumurta Toplama</h3>
-    <p>İleri yaş, düşük rezerv veya zaman baskısı varsa embriyo oluşturup dondurmak; transferi rahim hazır olunca yapmak mantıklı olabilir.</p>
-  </div>
-  <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
-    <h3 class="text-lg font-bold text-slate-800 mb-2">Takip ve Transfer</h3>
-    <p>Küçük, stabil, kaviteyi bozmayan ve belirti vermeyen miyomlarda transfer geciktirilmeden planlanabilir.</p>
-  </div>
-</div>
-
-Özellikle yumurtalık rezervi düşükse “önce ameliyat, sonra IVF” her zaman en iyi sıra olmayabilir. Bazı hastalarda önce yumurta toplama ve embriyo dondurma, ardından miyom tedavisi ve sonrasında transfer daha dengeli bir plan sunar.
+- **Önce ameliyat:** Kaviteyi bozan miyom, belirgin kanama/anemi veya transferi zorlaştıracak deformasyon varsa.
+- **Önce yumurta toplama:** İleri yaş, düşük rezerv veya zaman baskısı varsa embriyo oluşturup dondurmak daha dengeli olabilir.
+- **Takip ve transfer:** Küçük, stabil, kaviteyi bozmayan ve belirti vermeyen miyomlarda.
 
 <QuoteBlock author="tupbebek.com Tıbbi Danışma Kurulu">
-Miyom varken IVF kararı iki hedefi aynı anda korumalıdır: embriyonun tutunacağı rahim ortamını bozabilecek gerçek engelleri azaltmak ve gereksiz cerrahiyle zaman, rezerv veya rahim bütünlüğü kaybettirmemek.
+Miyom varken IVF kararı iki hedefi korumalıdır: gereksiz cerrahiden kaçınmak ve embriyonun tutunmasını bozabilecek gerçek engelleri atlamamak.
 </QuoteBlock>
 </div>
 
 <div data-reveal>
 <h2 id="intramural">İntramural Miyomlarda Gri Alan</h2>
 
-İntramural miyomlar rahim duvarının içindedir. Kaviteyi bozuyorsa karar daha nettir; bozmadığında ise kanıtlar daha karışıktır.
-
-2024 sistematik derlemesi intramural leiomyomların fertilite sonuçlarıyla ilişkisini değerlendirmiştir. 2026'da yayımlanan IVF/ICSI odaklı meta-analiz ise intramural miyomlar için miyomektomi kararının hâlâ hasta seçimine bağlı bir soru olduğunu vurgular. Bu nedenle “her intramural miyom alınmalı” veya “hiçbiri önemli değildir” yaklaşımı doğru değildir. <InlineEvidence grade="B" />
-
-Kararı etkileyen pratik faktörler:
-
-- Miyomun 4 cm üzerinde olması
-- Birden fazla intramural miyom bulunması
-- Kaviteye çok yakın yerleşim
-- Endometrium çizgisini itmesi
-- Önceki iyi kalite embriyo transferlerine rağmen tutunma olmaması
-- Tekrarlayan düşük öyküsü
-- Cerrahinin rahim duvarında yaratacağı kesi ve iyileşme ihtiyacı
-
-Bu grupta karar çoğu zaman “ameliyat mı?” sorusundan önce “rahim iç boşluğu gerçekten etkileniyor mu?” sorusuyla başlar.
-</div>
-
-<div data-reveal>
-<h2 id="gebelik">Gebelik ve Doğum Sürecinde Riskler</h2>
-
-Miyomlar gebelikte her zaman sorun çıkarmaz. Ancak boyut, sayı ve yerleşime göre bazı riskler artabilir:
-
-- Ağrı veya miyom dejenerasyonu
-- Düşük veya kanama riski
-- Plasenta yerleşim sorunları
-- Erken doğum veya bebeğin geliş pozisyonunda sorun
-- Sezaryen ihtimalinde artış
-
-Ameliyat edilmiş hastalarda ise ayrı bir konu vardır: rahim duvarının nasıl onarıldığı. Derin intramural miyomektomi sonrası gebelik zamanlaması ve doğum şekli ameliyat notuna göre planlanır. Rahim boşluğuna girilip girilmediği, kesi derinliği ve dikiş tekniği burada önemlidir.
-
-ACOG, semptomatik miyomlarda tedavi seçeneklerinin hastanın semptomları, gebelik isteği ve tercihleriyle birlikte tartışılması gerektiğini vurgular. Morcellation planlanıyorsa, nadir kötü huylu tümör yayılımı riski ve alternatif doku çıkarma yöntemleri ayrıca konuşulmalıdır. <InlineEvidence grade="B" />
-</div>
-
-<div data-reveal>
-<h2 id="faq">Sıkça Sorulan Sorular</h2>
-
-<Accordion title="Miyom varken tüp bebek yapılır mı?">
-Evet. Miyomun varlığı tek başına tüp bebek için engel değildir. Karar, miyomun rahim iç boşluğunu bozup bozmadığına, belirtilere, önceki transfer öyküsüne ve cerrahi risklere göre verilir.
-</Accordion>
-
-<Accordion title="Transferden önce miyom mutlaka alınmalı mı?">
-Hayır. Submüköz veya kaviteyi bozan miyomlarda ameliyat daha güçlü gündeme gelir. Kaviteyi bozmayan küçük intramural veya subseröz miyomlarda takip ve transfer uygun olabilir.
-</Accordion>
-
-<Accordion title="Miyom embriyonun tutunmasını engeller mi?">
-Rahim iç boşluğunu bozan miyomlar tutunmayı zorlaştırabilir. Kaviteyi bozmayan intramural miyomlarda etki daha belirsizdir; boyut, sayı ve önceki IVF sonuçlarıyla birlikte değerlendirilir.
-</Accordion>
-
-<Accordion title="Miyom ameliyatından sonra transfer ne zaman yapılır?">
-Süre ameliyat tipine göre değişir. Histeroskopik küçük işlemlerden sonra bekleme daha kısa olabilir; rahim duvarına derin kesi yapılan miyomektomilerden sonra birkaç aylık iyileşme süresi gerekebilir.
-</Accordion>
-
-<Accordion title="Önce ameliyat mı, önce yumurta toplama mı daha doğru?">
-Yaş ve yumurtalık rezervi düşükse önce yumurta toplama ve embriyo dondurma düşünülebilir. Kaviteyi belirgin bozan miyom varsa transfer genellikle rahim değerlendirmesi ve gerekirse tedavi sonrasına bırakılır.
-</Accordion>
-
-<Accordion title="Subseröz miyom tüp bebek başarısını düşürür mü?">
-Rahim iç boşluğunu bozmayan subseröz miyomların fertiliteyi düşürdüğüne dair güçlü kanıt yoktur. Ancak çok büyük olup ağrı, bası veya yumurta toplama erişim sorunu yapıyorsa ayrı değerlendirilir.
-</Accordion>
+İntramural miyomlar rahim duvarının içindedir. Kaviteyi bozuyorsa karar daha nettir; bozmadığında kanıtlar daha karışıktır. 4 cm üzeri, kaviteye yakın, birden fazla veya önceki iyi kalite embriyo transferlerine rağmen tutunma olmayan hastalarda cerrahi daha ciddi tartışılır. Ancak “her intramural miyom alınmalı” yaklaşımı doğru değildir.
 </div>
 
 <div data-reveal>
 <EvidenceGradeCard grade={frontmatter.recommendationGrade} />
 </div>
 
-<div data-reveal class="mt-12 bg-slate-50 p-8 rounded-3xl border border-slate-200">
-**Sizin İçin Seçtiğimiz Diğer Rehberler:**
-- [Miyom ameliyatı ne zaman gerekir?](/makaleler/miyom-ameliyati/)
-- [IVF öncesi histeroskopi](/makaleler/ivf-oncesi-histeroskopi/)
-- [Endoskopik cerrahi ve histeroskopi](/makaleler/endoskopik-cerrahi-histeroskopi/)
-- [Kadın kısırlığı ve tüp bebek](/makaleler/kadin-kisirligi-tup-bebek/)
-- [Embriyo transferi gün seçimi](/makaleler/embriyo-transferi-gun-secimi/)
-- [Taze ve dondurulmuş embriyo transferi](/makaleler/taze-dondurulmus-transfer/)
+<div data-reveal>
+<h2 id="faq">Sıkça Sorulan Sorular</h2>
+
+<Accordion title="Miyom varsa transfer iptal olur mu?">
+Her zaman olmaz. Karar miyomun rahim iç boşluğunu bozup bozmadığına, kanama yapıp yapmadığına ve transfer yolunu etkileyip etkilemediğine göre verilir.
+</Accordion>
+
+<Accordion title="Subseröz miyom tüp bebek başarısını düşürür mü?">
+Rahim iç boşluğunu bozmadığı ve belirti yapmadığı sürece doğrudan etkisi sınırlıdır; çoğu zaman takip yeterlidir.
+</Accordion>
+
+<Accordion title="Önce miyom ameliyatı mı, önce yumurta toplama mı?">
+Yaş, AMH, embriyo planı ve miyomun kavite etkisine göre değişir. Düşük rezervde önce embriyo dondurma daha mantıklı olabilir.
+</Accordion>
+
+<Accordion title="Miyom ameliyatı sonrası transfer ne zaman yapılır?">
+Ameliyat tipine ve rahim duvarı onarımına göre değişir. Histeroskopik işlemlerden sonra bekleme daha kısa olabilir; derin miyomektomide daha uzun iyileşme gerekir.
+</Accordion>
 </div>
 
 </div>
 
-export const myomaIvfFaqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [{
-    "@type": "Question",
-    "name": "Miyom varken tüp bebek yapılır mı?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Evet. Miyomun varlığı tek başına tüp bebek için engel değildir. Karar, miyomun rahim iç boşluğunu bozup bozmadığına, belirtilere, önceki transfer öyküsüne ve cerrahi risklere göre verilir."
-    }
-  }, {
-    "@type": "Question",
-    "name": "Transferden önce miyom mutlaka alınmalı mı?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Hayır. Submüköz veya kaviteyi bozan miyomlarda ameliyat daha güçlü gündeme gelir. Kaviteyi bozmayan küçük intramural veya subseröz miyomlarda takip ve transfer uygun olabilir."
-    }
-  }, {
-    "@type": "Question",
-    "name": "Miyom embriyonun tutunmasını engeller mi?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Rahim iç boşluğunu bozan miyomlar tutunmayı zorlaştırabilir. Kaviteyi bozmayan intramural miyomlarda etki daha belirsizdir; boyut, sayı ve önceki IVF sonuçlarıyla birlikte değerlendirilir."
-    }
-  }, {
-    "@type": "Question",
-    "name": "Miyom ameliyatından sonra transfer ne zaman yapılır?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Süre ameliyat tipine göre değişir. Histeroskopik küçük işlemlerden sonra bekleme daha kısa olabilir; rahim duvarına derin kesi yapılan miyomektomilerden sonra birkaç aylık iyileşme süresi gerekebilir."
-    }
-  }, {
-    "@type": "Question",
-    "name": "Subseröz miyom tüp bebek başarısını düşürür mü?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Rahim iç boşluğunu bozmayan subseröz miyomların fertiliteyi düşürdüğüne dair güçlü kanıt yoktur. Ancak çok büyük olup ağrı, bası veya yumurta toplama erişim sorunu yapıyorsa ayrı değerlendirilir."
-    }
-  }]
-};
-
-<script type="application/ld+json" set:html={JSON.stringify(myomaIvfFaqSchema)} />
 <RevealScript />
