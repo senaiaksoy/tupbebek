@@ -1,6 +1,6 @@
 ---
-title: "Tüp Bebek Öncesi Histeroskopi ve Laparoskopi Başarıyı Artırır mı?"
-description: "Tüp bebek tedavisine hazırlık sürecinde histeroskopi ve laparoskopinin rolü. Hangi durumlarda uygulanmalıdır? Başarı oranlarına etkisi."
+title: "IVF Öncesi Histeroskopi Gerekir mi? Rahim İçi Değerlendirme Rehberi"
+description: "Tüp bebek öncesi histeroskopi ne zaman gerekir? İlk IVF denemesi, tekrarlayan implantasyon başarısızlığı, polip, miyom, yapışıklık, SIS ve HSG kararlarını kanıta dayalı özetleyen rehber."
 publishDate: 2026-03-31
 author: "Doç. Dr. Senai Aksoy"
 authorTitle: "Kadın Hastalıkları ve Doğum Uzmanı"
@@ -8,599 +8,323 @@ authorCredentials: "Üreme Tıbbı ve Yardımcı Üreme Teknikleri"
 authorYoutube: "https://www.youtube.com/@DocentDrSenaiAksoy"
 medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Tıbbi Danışma Kurulu"
-reviewDate: 2026-04-09
-lastModified: 2026-05-11
+reviewDate: 2026-05-12
+lastModified: 2026-05-12
 category: "Tedavi Yöntemleri"
 recommendationGrade: B
 image: "/images/library/hastalik/histeroskopi_resim.webp"
-imageAlt: "tüp bebek öncesi histeroskopi ve laparoskopi operasyonu illüstrasyonu"
+imageAlt: "tüp bebek öncesi rahim içi değerlendirme ve histeroskopi"
 references:
-  - title: "Uterine cavity assessment prior to IVF"
-    authors: "Pundir J, El Toukhy T"
-    journal: "Women's Health"
-    year: 2010
-    doi: "10.2217/whe.10.61"
-    pmid: "21118042"
-  - title: "Should diagnostic hysteroscopy be performed before in vitro fertilization-embryo transfer?"
-    authors: "Surrey ES"
-    journal: "Journal of Minimally Invasive Gynecology"
-    year: 2012
-    doi: "10.1016/j.jmig.2012.04.003"
-    pmid: "22935306"
-  - title: "Office hysteroscopy in an in vitro fertilization program"
-    authors: "Lorusso F, Ceci O, Bettocchi S et al."
-    journal: "Gynecological Endocrinology"
-    year: 2008
-    doi: "10.1080/09513590802246232"
-    pmid: "18850385"
+  - title: "Screening hysteroscopy in subfertile women and women undergoing assisted reproduction"
+    authors: "Kamath MS, Bosteels J, D'Hooghe TM et al."
+    journal: "Cochrane Database of Systematic Reviews"
+    year: 2019
+    doi: "10.1002/14651858.CD012856.pub2"
+    url: "https://www.cochrane.org/CD012856/MENSTR_screening-hysteroscopy-subfertile-women-trying-conceive-spontaneously-and-vitro-fertilisation"
+    pmid: "30991443"
+  - title: "Hysteroscopy before in-vitro fertilisation (inSIGHT): a multicentre, randomised controlled trial"
+    authors: "Smit JG, Kasius JC, Eijkemans MJC et al."
+    journal: "The Lancet"
+    year: 2016
+    doi: "10.1016/S0140-6736(16)00231-2"
+    pmid: "27132052"
+  - title: "Hysteroscopy in recurrent in-vitro fertilisation failure (TROPHY): a multicentre, randomised controlled trial"
+    authors: "El-Toukhy T, Campo R, Khalaf Y et al."
+    journal: "The Lancet"
+    year: 2016
+    doi: "10.1016/S0140-6736(16)00258-0"
+    url: "https://research.birmingham.ac.uk/en/publications/hysteroscopy-in-recurrent-in-vitro-fertilisation-failure-trophy-a"
+    pmid: "27132053"
+  - title: "ESHRE good practice recommendations on recurrent implantation failure"
+    authors: "ESHRE Working Group on Recurrent Implantation Failure"
+    journal: "Human Reproduction Open"
+    year: 2023
+    doi: "10.1093/hropen/hoad023"
+    url: "https://academic.oup.com/hropen/article/2023/3/hoad023/7198324"
+    pmid: "37332387"
+  - title: "Fertility evaluation of infertile women: a committee opinion"
+    authors: "Practice Committee of the American Society for Reproductive Medicine"
+    journal: "Fertility and Sterility"
+    year: 2021
+    doi: "10.1016/j.fertnstert.2021.08.038"
+    pmid: "34607703"
+    url: "https://www.asrm.org/practice-guidance/practice-committee-documents/fertility-evaluation-of-infertile-women-a-committee-opinion-2021/"
   - title: "Endometrial injury in women undergoing in vitro fertilisation (IVF)"
     authors: "Lensen SF, Armstrong S, Gibreel A et al."
     journal: "Cochrane Database of Systematic Reviews"
     year: 2021
     doi: "10.1002/14651858.CD009517.pub4"
     pmid: "34110001"
+    url: "https://www.cochrane.org/CD009517/MENSTR_endometrial-injury-women-undergoing-vitro-fertilisation-ivf"
 ---
-
-import HizliCevap from '../../components/HizliCevap.astro';
-
-<HizliCevap question="Tüp Bebek Öncesi Histeroskopi ve Laparoskopi Başarıyı Artırır mı?">
-Tüp bebek tedavisine hazırlık sürecinde histeroskopi ve laparoskopinin rolü. Hangi durumlarda uygulanmalıdır? Başarı oranlarına etkisi.
-</HizliCevap>
 
 import { Picture } from "astro:assets";
 import histeroskopi_resimImage from "/src/images/library/hastalik/histeroskopi_resim.webp";
 import histeroskopi_karar_algoritmasiImage from "/src/images/library/diyagram/histeroskopi_karar_algoritmasi.webp";
+import HizliCevap from '../../components/HizliCevap.astro';
+import Accordion from "../../components/global/Accordion.astro";
+import MedicalInfoBox from '../../components/global/MedicalInfoBox.astro';
+import QuoteBlock from '../../components/global/QuoteBlock.astro';
 import InlineEvidence from "../../components/InlineEvidence.astro";
+import EvidenceGradeCard from '../../components/EvidenceGradeCard.astro';
+import RevealScript from '../../components/global/RevealScript.astro';
 
-Tüp bebek tedavisi öncesinde yapılan **tarama histeroskopisi**, ultrason ya da histerosalpingografide (HSG) herhangi bir sorun saptanmayan hastalarda rahim içinin doğrudan gözlemlenmesini amaçlar. Ancak güncel **ESHRE kılavuzları** ve güçlü bilimsel çalışmalar, **ilk tüp bebek denemesi öncesinde rutin olarak histeroskopi yapılmasını önermemektedir**. <InlineEvidence grade="A" />
+<HizliCevap question="Tüp bebek öncesi histeroskopi mutlaka gerekir mi?">
+Hayır. Ultrason veya HSG/SIS ile rahim içi normal görünüyorsa, ilk tüp bebek denemesi öncesinde rutin histeroskopi çoğu hastada gerekli değildir. Histeroskopi; rahim içi patoloji şüphesi, anormal kanama, polip veya submüköz miyom şüphesi, rahim içi yapışıklık riski, ince endometrium veya tekrarlayan implantasyon başarısızlığı gibi seçilmiş durumlarda daha anlamlıdır.
+</HizliCevap>
 
-Buna karşın, **tekrarlayan implantasyon başarısızlığı (RIF)** yaşayan hastalarda histeroskopi önemli bir tanı ve tedavi aracı olabilir; uygun seçilmiş olgularda gebelik şansını artırabildiği gösterilmiştir. Bu nedenle her hastaya aynı yaklaşımı uygulamak yerine, **kişiye özel değerlendirme ve karar verme** süreci esas olmalıdır.
+<div class="mesh-hero pt-12 pb-20 px-4 md:px-0 -mx-4 md:-mx-0 mb-12 rounded-3xl shadow-sm border border-white/40" style="background: linear-gradient(135deg, #eff6ff 0%, #f8fafc 48%, #fff7ed 100%);">
+  <div class="max-w-4xl mx-auto" data-reveal>
+    <div class="inline-block px-4 py-1 rounded-full bg-blue-100 text-blue-800 text-sm font-bold mb-4">
+      Transfer Öncesi Rahim İçi Kontrol
+    </div>
+    <h1 class="text-4xl md:text-6xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-800 to-slate-900 leading-tight">
+      {frontmatter.title}
+    </h1>
+    <p class="text-xl md:text-2xl text-slate-700 font-medium max-w-2xl leading-relaxed">
+      Histeroskopinin değeri, her hastaya yapılmasında değil, embriyonun yerleşeceği alanla ilgili gerçek bir soru olduğunda doğru zamanda kullanılmasındadır.
+    </p>
+  </div>
+</div>
 
----
+<div class="max-w-4xl mx-auto space-y-12 blog-content-reveal">
 
-## 📌 Bu Yazıda Ne Öğreneceksiniz?
+<div data-reveal>
+<MedicalInfoBox title="Hızlı Bakış: Rutin Değil, Seçilmiş Hastada Güçlü" icon="IVF" color="blue">
+**İlk IVF denemesi öncesinde normal rahim içi görüntüleme varsa rutin histeroskopi canlı doğum oranını belirgin artırmış görünmez.** Buna karşılık rahim içi lezyon şüphesi, tekrarlayan başarısız transfer, ince endometrium veya yapışıklık riski varsa histeroskopi tanı ve tedaviyi aynı seansta birleştirebilir. <InlineEvidence grade="B" />
+</MedicalInfoBox>
+</div>
 
-1. [Tarama Histeroskopisi Nedir ve Ne Zaman Yapılır?](#tarama-histeroskopisi-nedir)
-2. [İlk Tüp Bebek Denemesi Öncesinde Histeroskopi Gerekli Mi?](#ilk-deneme)
-3. [Tekrarlayan İmplantasyon Başarısızlığında (RIF) Histeroskopinin Rolü](#rif-hastalari)
-4. [Bilimsel Kanıtlar: ESHRE ve Cochrane Ne Diyor?](#bilimsel-kanitlar)
-5. [Histeroskopi İşlemi: Süreç, Ağrı ve İyileşme](#islem-sureci)
-6. [Komplikasyonlar ve Güvenlik Profili](#komplikasyonlar)
-7. [Histeroskopi Sonrası Tüp Bebek Tedavisine Ne Zaman Başlanır?](#sonrasi)
-8. [Sık Sorulan Sorular (SSS)](#sss)
+> Bu rehber, [IVF öncesi rahim hazırlığı](/ivf-rehberi/) ve [başarısız denemeler](/basarisiz-denemeler/) konu haritalarını tamamlar. Miyom özelinde karar gerekiyorsa [miyomlar ve tüp bebek](/makaleler/miyomlar-ve-tup-bebek/) rehberine bakabilirsiniz.
 
----
+## İçindekiler
 
-<a name="tarama-histeroskopisi-nedir"></a>
+- [Histeroskopi nedir?](#nedir)
+- [İlk IVF denemesinde rutin gerekir mi?](#ilk-deneme)
+- [Kimlerde histeroskopi düşünülür?](#kimlerde)
+- [RIF hastalarında yeri nedir?](#rif)
+- [HSG, SIS ve 3D ultrasonla farkı](#alternatifler)
+- [İşlem süreci, ağrı ve riskler](#surec)
+- [Sonrasında transfer ne zaman yapılır?](#sonrasi)
+- [Sıkça sorulan sorular](#faq)
 
-## Tarama Histeroskopisi Nedir ve Ne Zaman Yapılır?
-
-[Tarama histeroskopisi](/makaleler/endoskopik-cerrahi-histeroskopi/), infertilite nedeniyle değerlendirilen hastalarda, vajinal ultrason ve/veya histerosalpingografi (HSG) ile herhangi bir belirgin patoloji tespit edilmemesine rağmen, endometrial kavite ve endoservikal kanalın doğrudan görüntülenmesine yönelik yapılan bir girişimdir.
-
-Kliniğimde 30+ yılı aşkın süredir, pek lot çiftin tüp bebek yolculuğunda **histeroskopi** ile ilgili sorularını yanıtlıyorum. En sık duyduğum soru ise şu oluyor:
-**“Doktorum, tüp bebek öncesinde mutlaka histeroskopi yaptırmam gerekir mi?”**
-Bu sorunun net bir “evet” ya da “hayır” cevabı yok; çünkü karar, her hastanın **bireysel durumuna** göre değişiyor.
-
-Histeroskopi; ucunda kamera bulunan ince bir teleskop (histeroskop) yardımıyla vajinal yoldan rahim içine girilerek, **rahim boşluğunun**, **rahim iç tabakasının (endometrium)** ve **tüplerin rahme açılan bölümlerinin** doğrudan değerlendirilmesini sağlayan bir işlemdir. Temel olarak iki ana türü bulunur:
-
-**Ofis (Tanısal) Histeroskopi:**
-Genellikle lokal anesteziyle, hatta bazı durumlarda anesteziye gerek duyulmadan muayenehane koşullarında yapılabilir. İnce çaplı histeroskop kullanılır ve amacı rahim içini ayrıntılı biçimde değerlendirmektir. İşlem süresi kısadır; çoğu hasta aynı gün günlük yaşamına rahatlıkla dönebilir.
-
-[**Operatif (Cerrahi) Histeroskopi:**](/histeroskopi/)
-Rahim içinde polip, submüköz miyom, yapışıklık (Asherman sendromu) ya da septum gibi bir sorun saptandığında uygulanır. Bu tür histeroskopi genellikle ameliyathane ortamında ve uygun anestezi altında yapılır; tanı koymanın yanı sıra, aynı seansta tedavi imkânı da sunar.
-
-Özetle, histeroskopi her tüp bebek adayında rutin olarak yapılması gereken bir işlem değildir. Ancak öykü, muayene ve önceki tetkiklere göre **gerektiğinde** başvurulduğunda son derece değerli bilgiler sağlar. En doğru yaklaşım, her hastayı kendi koşulları içinde değerlendirerek **kişiye özel bir karar vermektir**.
-
-### Ne Zaman Yapılmalı?
-
-İdeal zamanlama, adet kanamasının bitiminin hemen ardından (menstrüel siklusun 7-14. günleri), yani endometriumun ince olduğu dönemdir. Bu dönemde rahim içi detaylar çok daha net görülebilir. Böylece küçük polipler, minimal yapışıklıklar veya ince bir septum bile kolaylıkla fark edilir.
-
-<Picture 
-  src={histeroskopi_resimImage} 
-  widths={[240, 540, 720, histeroskopi_resimImage.width]} 
-  width={histeroskopi_resimImage.width} 
-  height={histeroskopi_resimImage.height} 
+<div data-reveal>
+<Picture
+  src={histeroskopi_resimImage}
+  widths={[240, 540, 720, histeroskopi_resimImage.width]}
+  width={histeroskopi_resimImage.width}
+  height={histeroskopi_resimImage.height}
   sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${histeroskopi_resimImage.width}px`}
-  alt="Histeroskopi işlemi sırasında ucunda kamera olan ince histeroskop vajinal yoldan rahim boşluğuna yerleştirilir ve endometrium doğrudan incelenir" 
+  alt="Histeroskopi sırasında ince kamera ile rahim iç boşluğunun değerlendirilmesi"
 />
+</div>
 
----
+<div data-reveal>
+<h2 id="nedir">Histeroskopi Nedir?</h2>
 
-<a name="ilk-deneme"></a>
+Histeroskopi, vajinal yoldan rahim içine ince bir kamera ile girilerek rahim iç boşluğunun doğrudan görülmesidir. İki amaçla yapılabilir:
 
-## İlk Tüp Bebek Denemesi Öncesinde Histeroskopi Gerekli Mi?
+- **Tanısal histeroskopi:** Rahim içini görmek, polip, yapışıklık, septum veya submüköz miyom şüphesini netleştirmek için yapılır.
+- **Operatif histeroskopi:** Saptanan polip, küçük submüköz miyom, yapışıklık veya septum gibi sorunları aynı seansta tedavi etmek için yapılır.
 
-Bu soru, üreme tıbbında yıllardır tartışılan bir konu. Peki güncel bilimsel veriler ne söylüyor?
+Histeroskopi, rahim içi patolojiler için güçlü bir yöntemdir; ancak her tüp bebek adayında otomatik basamak değildir. ASRM, infertilite değerlendirmesinde başlangıçta sistematik ve mümkün olduğunca az invaziv yöntemlerle ilerlemeyi vurgular; histeroskopi rahim içi patolojilerin tanı ve tedavisinde kesin yöntemlerden biridir. <InlineEvidence grade="B" />
+</div>
 
-### ESHRE ve Cochrane'in Net Önerisi: Rutin Kullanım Önerilmez
+<div data-reveal>
+<h2 id="ilk-deneme">İlk IVF Denemesinde Rutin Histeroskopi Gerekli mi?</h2>
 
-2019 yılında yayımlanan kapsamlı bir [Cochrane meta-analizi](https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD012856.pub2/full), tüp bebek tedavisi öncesi tarama histeroskopisinin canlı doğum oranını (LBR) artırıp artırmadığını araştırdı. Çalışma 2745 kadını kapsıyordu ve karışık bir hasta grubunu içeriyordu: ilk IVF denemeleri, seçilmemiş hastalar ve tekrarlayan implantasyon başarısızlığı (RIF) olan hastalar.
+Çoğu hastada hayır. Eğer adet sonrası uygun zamanda yapılan transvajinal ultrason, SIS veya HSG rahim iç boşluğunu normal gösteriyorsa, ilk IVF denemesi öncesinde herkese histeroskopi yapmak için güçlü kanıt yoktur.
 
-İlk değerlendirmelerde, histeroskopi uygulanan grupta **canlı doğum oranında hafif bir artış** olduğu görülse de (RR 1,26), bu etkinin büyük ölçüde **tekrarlayan implantasyon başarısızlığı (RIF)** olan hasta grubundan kaynaklandığı anlaşılıyordu.
+Bu konuda iki önemli kanıt parçası öne çıkar:
 
-Daha da önemlisi, yalnızca **yüksek kaliteli randomize kontrollü çalışmaların (RCT)** dâhil edildiği hassasiyet analizlerinde, histeroskopi yapılan ve yapılmayan gruplar arasında **canlı doğum oranı açısından anlamlı bir fark saptanmadı** (RR 0,99). <InlineEvidence grade="A" />
+- **inSIGHT çalışması:** Normal transvajinal ultrasonu olan ve ilk IVF planlanan 750 kadında rutin histeroskopi canlı doğum oranını artırmadı. <InlineEvidence grade="A" />
+- **Cochrane 2019 derlemesi:** Tüm çalışmalar birlikte alındığında olası fayda sinyali görülse de kanıt kalitesi düşüktü; düşük yanlılık riski olan iki çalışmanın havuzlandığı analizde canlı doğum artışı gösterilmedi. <InlineEvidence grade="A" />
 
-Bu bulgular, ilk tüp bebek denemesi öncesinde **rutin histeroskopinin** genel hasta popülasyonu için belirgin bir fayda sağlamadığını; buna karşılık, seçilmiş hasta gruplarında—özellikle RIF olgularında—**kişiselleştirilmiş bir yaklaşımla** değerlendirilmesi gerektiğini ortaya koymaktadır.
+Bu nedenle soru “histeroskopi iyi bir işlem mi?” değil, “bu hastada transferi etkileyecek bir rahim içi soru var mı?” olmalıdır.
+</div>
 
-2023 yılında güncellenen [ESHRE İyi Uygulama Önerileri](https://academic.oup.com/humrep/article/38/11/2062/7281712), üç yüksek kaliteli çok merkezli RCT'nin sonuçlarına dayanarak şu net tavsiyede bulunuyor:
+<div data-reveal>
+<h2 id="kimlerde">Kimlerde Histeroskopi Düşünülür?</h2>
 
-> **"Tarama histeroskopisi şu anda rutin klinik kullanım için önerilmemektedir."**
+Histeroskopi özellikle şu durumlarda daha anlamlıdır:
 
-### Peki Neden İlk Denemede Rutin Yapılmıyor?
+| Durum | Neden Önemli? | Pratik Yaklaşım |
+| :--- | :--- | :--- |
+| **Ultrason/SIS/HSG'de şüpheli bulgu** | Polip, septum, yapışıklık veya submüköz miyom olabilir | Histeroskopi ile doğrulama ve gerekirse tedavi |
+| **Anormal uterin kanama** | Rahim içi polip, miyom veya endometrium sorunu eşlik edebilir | Görüntüleme ve seçilmiş hastada histeroskopi |
+| **Daha önce kürtaj, enfeksiyon veya rahim içi cerrahi** | Yapışıklık riski artabilir | Rahim içi boşluk netleştirilir |
+| **İnce endometrium** | Asherman/yapışıklık dışlanmalıdır | ESHRE RIF önerilerinde seçilmiş hastada düşünülebilir |
+| **Tekrarlayan iyi kalite embriyo transferine rağmen tutunma olmaması** | Standart görüntüleme küçük lezyonları kaçırabilir | RIF değerlendirmesinin parçası olarak tartışılır |
+| **Submüköz miyom veya polip şüphesi** | Embriyonun tutunacağı alanı bozabilir | Operatif histeroskopi gündeme gelir |
 
-Bunun arkasında birkaç temel gerekçe bulunuyor:
+Bu tablo bir “zorunluluk listesi” değildir. Ama bu başlıklardan biri varsa, histeroskopi artık rutin tarama değil, hedefli bir tanı/tedavi adımı haline gelir.
+</div>
 
-1. **Normal ultrason çoğu zaman yeterlidir:**
-   Düzenli, 28 günlük adet döngüsü olan bir kadında; adet bitimini izleyen 10–14. günler arasında yapılan, deneyimli ellerde ve iyi bir cihazla gerçekleştirilen transvajinal ultrasonografide rahim içi net ve sorunsuz görünüyorsa, çoğu hastada ek bir histeroskopi değerlendirmesine ihtiyaç duyulmaz.
+<div data-reveal>
+<h2 id="rif">Tekrarlayan İmplantasyon Başarısızlığında Yeri Nedir?</h2>
 
-2. **Maliyet–etkinlik açısından soru işaretleri vardır:**
-   Hollanda’da yapılan geniş kapsamlı bir çalışmada (Smit ve ark., 2016), ultrason bulguları normal olan kadınlarda, ilk tüp bebek denemesi öncesinde uygulanan tarama histeroskopisinin gebeliğe ulaşma süresini kısaltmadığı gösterilmiştir. Çalışmada başlangıçta maliyet-etkinlik analizi planlanmış olsa da, klinik fayda ortaya konamadığı için bu aşamaya geçilmemiştir.
+Tekrarlayan implantasyon başarısızlığı (RIF), basit bir “iki deneme olmadı” etiketi değildir; embriyo kalitesi, transfer tekniği, endometrium, yaş, genetik faktörler ve laboratuvar değişkenleri birlikte değerlendirilmelidir.
 
-3. **Histeroskopi de sonuçta bir girişimdir:**
-   Her ne kadar sık ve güvenle uygulanan bir işlem olsa da histeroskopi invazivdir. Çalışmalar, hastaların yaklaşık %87’sinin işlem sırasında ağrı hissettiğini göstermektedir. Tıbbi olarak gerekli olmadığı durumlarda uygulanması, hem hasta konforu hem de sağlık kaynaklarının doğru kullanımı açısından tartışmalıdır.
+ESHRE 2023 iyi uygulama önerileri, RIF şüphesinde rahim içi değerlendirmeyi önemli bir başlık olarak ele alır. Histeroskopinin özellikle ultrasonla rahim anomalisi şüphesi görüldüğünde düşünülebileceğini belirtir. Aynı metin, TROPHY çalışmasında normal ultrasonu ve iki-dört başarısız IVF döngüsü olan hastalarda rutin ofis histeroskopisinin canlı doğumu artırmadığını da vurgular. <InlineEvidence grade="B" />
 
-Özetle; histeroskopi değerli bir tanı ve tedavi aracıdır, ancak **doğru hastada ve doğru zamanda** yapıldığında anlam kazanır. Rutin bir uygulama olmaktan ziyade, bireysel değerlendirme temelinde karar verilmesi en akılcı yaklaşımdır.
+Pratik mesaj:
 
-### O Halde İlk Denemede Kim Düşünebilir?
+- RIF durumunda histeroskopi **düşünülebilir**.
+- Normal ultrasonu olan her RIF hastasında otomatik olarak başarı artırır denemez.
+- Şüpheli kavite bulgusu, ince endometrium, geçirilmiş rahim içi işlem veya açıklanamayan kanama varsa değeri artar.
+- Histeroskopi tek başına “sihirli çözüm” değildir; embriyo ve transfer faktörleriyle birlikte yorumlanmalıdır.
 
-Her kuralda olduğu gibi, bu yaklaşımın da **istisnaları** vardır. İlk tüp bebek denemesi planlanıyor olsa bile, aşağıdaki durumlarda **histeroskopi yapılması akla yatkın ve faydalı** olabilir:
+<QuoteBlock author="tupbebek.com Tıbbi Danışma Kurulu">
+Histeroskopi kararında amaç “bir işlem daha yapmak” değil, embriyonun yerleşeceği rahim içi alan hakkında cevaplanmamış bir soruyu kapatmaktır.
+</QuoteBlock>
+</div>
 
-* **Ultrason veya HSG’de** rahim içiyle ilgili **şüpheli ancak net olmayan bulgular** saptanması
-* **Anormal uterin kanama öyküsü** bulunması (düzensiz adetler, ara kanamalar, beklenmeyen lekelenmeler)
-* Daha önce **rahim içine yönelik girişimler** geçirilmiş olması (kürtaj, miyom ameliyatı, sezaryen gibi)
-* **Açıklanamayan infertilite** tanısı ve **uzun süredir gebe kalamama** öyküsü
-* **Uterus anomalisi** şüphesi (örneğin septum ya da bikornuat uterus)
+<div data-reveal>
+<h2 id="alternatifler">HSG, SIS ve 3D Ultrasonla Farkı Nedir?</h2>
 
-Bu tür olgularda histeroskopi, yalnızca tanı koydurmakla kalmaz; aynı zamanda varsa sorunun **aynı seansta tedavi edilmesine** de olanak tanır. Dolayısıyla amaç, her hastaya rutin olarak aynı işlemi yapmak değil; **doğru hastayı seçmek ve kişiselleştirilmiş bir tedavi planı oluşturmaktır**.
+Rahim içi değerlendirmede tek araç histeroskopi değildir. Çoğu hastada daha az invaziv yöntemlerle başlanır.
 
-**Klinikte Uyguladığım Yaklaşım:** İlk IVF denemesi öncesi rutin histeroskopi yapmıyorum. Ancak yukardaki risk etkenlerinden biri veya birkaçı varsa, hasta ile risk-fayda dengesini tartışıp, bireysel karar veriyoruz.
+| Yöntem | Güçlü Yanı | Sınırlılığı |
+| :--- | :--- | :--- |
+| **Transvajinal ultrason** | Kolay, hızlı, miyom ve yumurtalıkları da değerlendirir | Küçük kavite lezyonlarını kaçırabilir |
+| **3D ultrason** | Septum ve rahim anomalilerinde değerlidir | Her merkezde aynı kaliteyle yapılmayabilir |
+| **SIS / salin sonografi** | Rahim iç boşluğunu sıvıyla netleştirir; polip ve submüköz miyomda yararlı | Tedavi yapmaz; şüpheli bulgu histeroskopi gerektirebilir |
+| **HSG** | Tüp açıklığı ve rahim boşluğu hakkında bilgi verir | Rahim içi küçük lezyonlarda sınırlı olabilir |
+| **Histeroskopi** | Doğrudan görür ve bazı sorunları aynı seansta tedavi edebilir | Girişimseldir; maliyet, ağrı ve nadir riskleri vardır |
 
----
+Bu nedenle ideal sıra çoğu zaman şöyledir: iyi zamanlanmış ultrason, gerekiyorsa SIS/3D ultrason veya HSG, şüphe sürüyorsa histeroskopi.
+</div>
 
-<a name="rif-hastalari"></a>
+<div data-reveal>
+<h2 id="surec">İşlem Süreci, Ağrı ve Riskler</h2>
 
-## Tekrarlayan İmplantasyon Başarısızlığında (RIF) Histeroskopinin Rolü
+Histeroskopi adet kanaması bittikten sonra, endometriumun ince olduğu dönemde daha net değerlendirme sağlar. Ofis histeroskopisi çoğu zaman kısa sürer; operatif işlem planlanıyorsa anestezi ve ameliyathane koşulları gerekebilir.
 
-İşte histeroskopinin gerçekten değer katabileceği hasta grubu burası.
+İşlemden önce genellikle şu başlıklar kontrol edilir:
 
-### RIF Nedir?
+- Gebelik olasılığı
+- Aktif vajinal veya pelvik enfeksiyon
+- Kanama durumu
+- Anestezi gereksinimi
+- Kullanılacak işlem türü: tanısal mı, operatif mi?
 
-[ESHRE'nin 2023 RIF Önerileri](https://academic.oup.com/hropen/article/2023/3/hoad023/7198324)'ne göre, tekrarlayan implantasyon başarısızlığı, kaliteli embriyoların birkaç kez transferine rağmen gebelik oluşmaması durumudur. Tam tanımı tartışmalı olsa da genelde 2 veya daha fazla başarısız transfer sonrası RIF olarak değerlendiriliyor.
+Olası riskler nadirdir ama yok değildir: ağrı, kanama, enfeksiyon, rahim perforasyonu, sıvı yüklenmesi ve anesteziye bağlı sorunlar görülebilir. Bu yüzden histeroskopi güvenli bir işlem olsa da, tıbbi gerekçesi net olduğunda yapılmalıdır.
 
-### RIF Hastalarında Histeroskopi: Kanıtlar
+Endometrial scratch konusunu da ayırmak gerekir: Histeroskopi sırasında oluşan hafif endometrial temas bazen “scratch etkisi” gibi anlatılır; ancak Cochrane 2021 derlemesi, IVF'de rutin endometrial injury/scratch kullanımını desteklemez. <InlineEvidence grade="A" />
+</div>
 
-Birçok çalışma, [RIF](/makaleler/basarisiz-denemeler/) hastalarında histeroskopinin faydalı olabileceğini gösteriyor:
+<div data-reveal>
+<h2 id="sonrasi">Histeroskopi Sonrası Transfer Ne Zaman Yapılır?</h2>
 
-**[Cao ve ark.:**](https://pubmed.ncbi.nlm.nih.gov/29297956/) RIF olan hastalarda histeroskopi yapılan grup ile yapılmayan grup karşılaştırıldığında, histeroskopi yapılan grupta canlı doğum oranı anlamlı derecede yüksekti (RR 1.29).
+Zamanlama, işlem sırasında ne yapıldığına bağlıdır:
 
-**2019 Kapsamlı Sistematik İnceleme (Wang ve ark.):** 3932 RIF hastasını kapsayan analiz, histeroskopi grubunda klinik gebelik oranının %64 daha yüksek olduğunu gösterdi (OR 1.64). İmplantasyon oranı da %22 daha yüksekti.
+- **Sadece tanısal histeroskopi:** Çoğu hastada sonraki adet döngüsünde tedavi planına dönülebilir.
+- **Küçük polip çıkarımı:** Genellikle bir sonraki siklus veya kısa bekleme sonrası transfer planlanabilir.
+- **Submüköz miyom, septum veya yaygın yapışıklık tedavisi:** Rahim içinin iyileşmesi için daha uzun bekleme ve bazen kontrol değerlendirmesi gerekir.
+- **Asherman/yapışıklık tedavisi:** Hormon desteği, bariyer uygulamaları veya ikinci bakış histeroskopi gerekebilir.
 
-**2024 Retrospektif Çalışma (Frontiers in Medicine):** İlk tüp bebek denemesi de dahil olmak üzere histeroskopi yapılan grupta klinik gebelik olasılığı 1.51 kat daha yüksek bulundu.
+Net süreyi işlem notu belirler: lezyonun tipi, rahim içi yüzeyin ne kadar etkilendiği, kanama, enfeksiyon riski ve endometriumun sonraki siklusta görünümü birlikte değerlendirilir.
+</div>
 
-### Peki RIF Hastalarında Neden Faydalı?
-
-RIF yaşayan hastalara baktığımızda, önemli bir bölümünde (%26–50) **ultrason ya da HSG ile fark edilemeyen rahim içi sorunlar** saptanabildiğini görüyoruz. İşte histeroskopinin bu hasta grubunda neden özel bir yere sahip olduğunun temel sebepleri:
-
-* **Küçük endometrial polipler:**
-  Poliplerin embriyonun tutunmasını zorlaştırıcı etkisi yalnızca boyutlarına bağlı değildir. Bulundukları bölgede yarattıkları **lokal inflamasyon** da implantasyonu olumsuz etkileyebilir. Bu nedenle küçük olsalar bile histeroskopi sırasında tespit edilip çıkarılmaları gebelik şansını artırabilir.
-
-* **İnce rahim içi yapışıklıklar (Asherman sendromu):**
-  Daha önce geçirilmiş kürtajlar, enfeksiyonlar ya da miyom ameliyatları sonrası gelişebilir. Ultrasonla çoğu zaman gözden kaçarlar; ancak histeroskopi ile doğrudan görülüp aynı seansta açılabilirler.
-
-* **Septum (rahim içi perde):**
-  Rahmin anne karnındaki gelişimi sırasında iki parçanın tam birleşememesi sonucu oluşur. Erken gebelik kayıpları ve tekrarlayan implantasyon başarısızlığıyla ilişkilidir. Histeroskopik olarak düzeltilmesi, gebelik sonuçlarını belirgin biçimde iyileştirebilir.
-
-* **Kronik endometrit:**
-  Histeroskopi sırasında rahim iç yüzeyinde görülen “çilek/strawberry” benzeri görünüm tanı açısından yol gösterici olabilir. Ardından yapılacak uygun antibiyotik tedavisiyle endometriumun alıcılığı yeniden kazanılabilir.
-
-Bu noktada histeroskopinin en büyük avantajı ortaya çıkıyor:
-Sadece **tanı koymakla yetinmiyor**, çoğu zaman **aynı seansta tedavi imkânı** da sunuyor. Tam da bu yüzden, RIF hastalarında histeroskopi standart bir konfeksiyon değil; adeta **“haute couture”**, yani kişiye özel, incelikli ve hedefe yönelik bir yaklaşım olarak değerlendirilmeli.
-
-### ESHRE'nin RIF İçin Önerisi
-
-> **“Tarama histeroskopisi, tekrarlayan implantasyon başarısızlığı olan hastalarda düşünülebilir.”**
-
-Klinikte benimsediğim yaklaşım da bu yönde. **İki ya da daha fazla başarısız embriyo transferi** yapılmışsa; transfer edilen embriyoların kalitesi iyi olarak değerlendiriliyorsa ve yapılan incelemelere rağmen **başka belirgin bir neden saptanamıyorsa**, bu aşamada rahim içini **histeroskopi ile doğrudan değerlendirmeyi** tercih ediyorum.
-
-Pratikte şunu sık görüyoruz:
-Ultrason ve HSG’nin normal raporlandığı birçok hastada, histeroskopi sırasında **küçük bir endometrial polip**, **minimal bir yapışıklık** ya da **kronik endometriti düşündüren bulgular** ortaya çıkabiliyor. Bunlar tek başına “büyük” sorunlar gibi görünmese de, implantasyon gibi hassas bir süreçte belirleyici olabiliyor.
-
-Bu nedenle RIF olgularında histeroskopi, “herkese yapılan rutin bir test” değil; **doğru zamanda, doğru hastada devreye giren hedefli bir araç** olarak değerlendirilmeli. Çoğu zaman küçük bir müdahale, sonraki denemelerin kaderini değiştirebiliyor.
-
----
-
-<a name="bilimsel-kanitlar"></a>
-
-## Bilimsel Kanıtlar: ESHRE ve Cochrane Ne Diyor?
-
-Bilimsel literatürde 2016-2024 arasında çelişkili sonuçlar olması, konunun karmaşıklığını gösteriyor. Ancak anahtar noktalar şunlar:
-
-### Karşılaştırmalı Tablo: İlk IVF vs RIF Hastalarında Histeroskopi Etkisi
-
-| **Parametre** | **İlk IVF Denemesi** | **RIF Hastaları** |
-|---------------|----------------------|-------------------|
-| **Canlı Doğum Oranı (LBR)** | Anlamlı artış YOK (RR 0.99, yüksek kaliteli RCT'lerde) | Potansiyel fayda VAR (RR 1.29, meta-analizde) |
-| **Klinik Gebelik Oranı** | Sınırlı/çelişkili veri | Anlamlı artış (OR 1.64) |
-| **İmplantasyon Oranı** | Belirsiz | Artış (OR 1.22) |
-| **Düşük Oranı** | Fark yok | Fark yok |
-| **ESHRE Önerisi** | **Rutin kullanım önerilmez** | **Düşünülebilir** |
-| **Kanıt Kalitesi** | Yüksek (Çok merkezli RCT'ler) | Orta-Düşük (Heterojen çalışmalar) |
-
-### Neden Bu Farklılık?
-
-Bu sonuçları anlamlı kılan birkaç temel nokta var:
-
-1. **Hasta seçimi:**
-   RIF hastalarında, altta yatan ve standart görüntüleme yöntemleriyle saptanamayan **rahim içi patoloji olasılığı** belirgin olarak daha yüksektir. Bu da histeroskopinin bu grupta neden daha fazla fayda sağlayabildiğini açıklar.
-
-2. **Endometrial injury (scratch) etkisi:**
-   Tanısal histeroskopi sırasında rahim iç yüzeyinde oluşan minimal “çizik” etkisinin, sonraki siklusta **implantasyonu kolaylaştırabileceği** düşünülmektedir. Bu etkinin özellikle RIF hastalarında daha belirgin olabileceğine dair veriler mevcuttur.
-
-3. **Çalışmalar arası heterojenite:**
-   Meta-analizlerde bildirilen **yüksek I² değerleri**, çalışmalar arasında ciddi farklılıklar olduğunu gösterir. Hasta seçimi, histeroskopi zamanı ve kullanılan yöntemler arasındaki bu çeşitlilik, sonuçların net yorumlanmasını güçleştirmektedir.
-
-**Klinik mesaj net:**
-Mevcut bilimsel veriler kusursuz olmasa da genel eğilim açıktır: **İlk IVF denemesi öncesinde rutin histeroskopi gerekli değildir.** Buna karşılık, **tekrarlayan implantasyon başarısızlığı (RIF)** olan hastalarda, doğru seçilmiş olgularda histeroskopi **değerli ve anlamlı bir araç** olabilir.
-
-Özetle, konu “herkese aynı yaklaşım” değil; **doğru hastaya, doğru zamanda, kişiselleştirilmiş karar** vermektir.
-
----
-
-<a name="islem-sureci"></a>
-
-## Histeroskopi İşlemi: Süreç, Ağrı ve İyileşme
-
-Hastalarım sıklıkla histeroskopi işlemi hakkında endişeli sorular soruyor. İşte gerçekçi bir resim:
-
-### İşlem Öncesi Hazırlık
-
-* **Anestezi:**
-  Ofis (tanısal) histeroskopi çoğu hastada **lokal anestezi** ya da **hafif sedasyon** ile rahatlıkla yapılabilir. Buna karşılık, polip çıkarılması veya yapışıklık açılması gibi girişimlerin planlandığı **operatif histeroskopilerde** genellikle **spinal ya da genel anestezi** tercih edilir.
-
-* **Açlık durumu:**
-  Eğer **genel anestezi** uygulanacaksa, işlemden en az **6 saat önce** yeme–içmenin kesilmesi gerekir. Ofis histeroskopilerde ise çoğu zaman açlık şartı aranmaz.
-
-* **Enfeksiyon taraması:**
-  İşlem öncesinde güvenliğin sağlanması için **idrar yolu enfeksiyonu** ve **vajinal enfeksiyon** açısından değerlendirme yapılır. Aktif bir enfeksiyon saptanırsa, histeroskopi genellikle tedavi tamamlandıktan sonra planlanır.
-
-Bu hazırlıklar sayesinde işlem hem **daha konforlu** hem de **daha güvenli** şekilde gerçekleştirilebilir.
-
-### İşlem Süresi
-
-* **Tanısal (ofis) histeroskopi:**
-  Genellikle **5–15 dakika** sürer. İşlem kısa olduğu için hastaların büyük çoğunluğu aynı gün normal hayatına dönebilir.
-
-* **Operatif histeroskopi (polip veya miyom çıkarılması):**
-  Yapılan girişimin kapsamına bağlı olarak ortalama **20–45 dakika** sürer. Anestezi türüne göre işlem sonrası kısa bir gözlem süresi gerekebilir.
-
-Özetle, histeroskopi çoğu zaman **kısa süren**, iyi tolere edilen ve doğru hastada önemli fayda sağlayan bir işlemdir.
-
-### Ağrı ve Rahatsızlık
-
-Hastalarımdan aldığım geri bildirimler ve mevcut literatür birlikte değerlendirildiğinde, **histeroskopi sırasında ağrı algısının** kişiden kişiye değişmekle birlikte belirli bir çerçevesi olduğu görülüyor.
-
-**VAS (Vizüel Analog Skala) ağrı skoru:**
-0–10 ölçeğinde ortalama **4,69 ± 2,89** olarak bildirilmektedir. Bu değer, genel olarak **orta şiddette ağrı** kategorisine karşılık gelir. Dikkat çekici bir nokta ise, hastaların yaklaşık **%87’sinin işlem sırasında az ya da çok ağrı hissettiğini** ifade etmesidir.
-
-**Ağrıyı etkileyen başlıca etkenler:**
-
-* **Histeroskopun çapı:** İnce çaplı histeroskoplar genellikle daha iyi tolere edilir ve daha az ağrıya yol açar.
-* **Operatör deneyimi:** Deneyimli ellerde işlem süresi kısalır, manipülasyon azalır ve hasta konforu belirgin şekilde artar.
-* **Distansiyon medyumu:** Rahim boşluğunun genişletilmesinde kullanılan **CO₂** ya da **sıvı** ortam, ağrı algısını etkileyebilir.
-* **Hastanın anksiyete düzeyi:** İşlem öncesi kaygı arttıkça, ağrı algısının da yükseldiği iyi bilinen bir gerçektir.
-
-**Ağrı yönetimi:**
-Basit ama etkili önlemlerle hasta konforu ciddi biçimde artırılabilir. İşlem öncesinde **parasetamol/kodein kombinasyonu**, işlem sırasında **lokal anestezi**, ortamın sakinleştirilmesi ve hatta **rahatlatıcı müzik** gibi destekleyici yaklaşımlar ağrıyı azaltmada faydalı olabilir.
-
-Sonuç olarak, histeroskopi çoğu hasta için tolere edilebilir bir işlemdir; ancak **ağrıyı ciddiye alan, önleyici ve bireyselleştirilmiş bir yaklaşım**, hem hasta memnuniyetini hem de işlemin başarısını artırır.
-
-### İşlem Sonrası İyileşme
-
-* **Kanama:**
-  Tanısal (ofis) histeroskopi sonrasında birkaç gün sürebilen, **damlama tarzında hafif kanama** normal kabul edilir. Operatif histeroskopi sonrası—özellikle geniş polip veya miyom çıkarılmışsa—**adet benzeri bir kanama** görülebilir. Bu durum çoğu zaman kendiliğinden azalır.
-
-* **Ağrı:**
-  İlk **24–48 saat** içinde hafif, adet sancısına benzer **kramp tarzı ağrılar** olabilir. Genellikle basit ağrı kesicilerle rahatlıkla kontrol altına alınır.
-
-* **Günlük aktiviteye dönüş:**
-  Ofis histeroskopi sonrası hastaların büyük kısmı **aynı gün** normal yaşamına dönebilir. Operatif histeroskopilerden sonra ise çoğunlukla **1–2 gün içinde** günlük aktivitelere dönüş mümkündür.
-
-* **Tam iyileşme:**
-  Rahim ve rahim ağzının tamamen toparlanması genellikle **yaklaşık 1 ay** içinde gerçekleşir. Bu sürenin sonunda rahim içi ortam gebelik açısından yeniden optimal hâle gelir.
-
-**Klinik deneyimim:**
-Hastalarımın çoğu işlem sonrasında şu cümleyi kuruyor: *“Düşündüğümden çok daha kolaydı.”* Gerçekten de, **iyi bir ön bilgilendirme**, doğru hasta seçimi ve etkili **ağrı yönetimi** ile histeroskopiye bağlı rahatsızlıklar büyük ölçüde minimal düzeyde tutulabiliyor. Bu da hem hasta memnuniyetini hem de sürece olan güveni belirgin şekilde artırıyor.
-
----
-
-<a name="komplikasyonlar"></a>
-
-## Komplikasyonlar ve Güvenlik Profili
-
-Histeroskopi genel olarak güvenli bir işlemdir, ancak hiçbir tıbbi girişim %100 risksiz değildir.
-
-### ESHRE Verilerine Göre Komplikasyon Oranları
-
-Cochrane derlemesine dâhil edilen **4 randomize kontrollü çalışmada (RCT)** histeroskopiye bağlı komplikasyonlar özellikle incelenmiştir. Bulgular genel olarak işlemin **güvenli bir profil**e sahip olduğunu göstermektedir:
-
-* **Üç çalışmada** herhangi bir komplikasyon **bildirilmemiştir**.
-* **Bir çalışmada** ise yalnızca **tek bir endometrit vakası** rapor edilmiştir.
-* Toplamda **genel komplikasyon oranı son derece düşüktür**. Her ne kadar hesaplanan olasılık oranı (OR 7,47) dikkat çekici görünse de, **güven aralığının çok geniş olması** ve **kanıt kalitesinin çok düşük** olarak değerlendirilmesi nedeniyle bu sonucun klinik açıdan güçlü bir anlamı yoktur.
-
-Özetle, mevcut veriler histeroskopinin —özellikle tanısal amaçla yapıldığında— **komplikasyon riskinin oldukça düşük** olduğunu düşündürmektedir. Ancak kanıt kalitesinin sınırlı olması, sonuçların **temkinli yorumlanmasını** ve yine **hasta bazlı karar verilmesini** gerekli kılar.
-
-### Olası Komplikasyonlar
-
-**Çok nadir görülen komplikasyonlar:**
-
-* **Rahim perforasyonu** (rahmin delinmesi)
-* **Ciddi kanama**
-* Özellikle büyük miyomların çıkarılmasından sonra **rahim içi yapışıklık** gelişimi
-* **Enfeksiyon** (endometrit)
-* **Anesteziye bağlı komplikasyonlar**
-
-**Yetkin ellerde:**
-Deneyimli bir histeroskopist tarafından yapıldığında, histeroskopiye bağlı **komplikasyon riski neredeyse yok denecek kadar düşüktür**. Nadir de olsa bir komplikasyon geliştiğinde, çoğu zaman **erken fark edilir** ve **tanı ile tedavisi görece kolaydır**.
-
-Bu nedenle asıl belirleyici olan, işlemin **doğru endikasyonla**, **uygun koşullarda** ve **deneyimli ekipler tarafından** gerçekleştirilmesidir. Bu üçlü sağlandığında, histeroskopi hem güvenli hem de son derece faydalı bir girişimdir.
-
-### Kontraendikasyonlar (Histeroskopi Yapılmaması Gereken Durumlar)
-
-* **Aktif pelvik enfeksiyon:** Enfeksiyon varlığında işlem ertelenmeli, öncelikle uygun tedavi tamamlanmalıdır.
-* **Gebelik:** Histeroskopi gebelikte kontrendikedir.
-* **Ağır servikal stenoz (rahim ağzı darlığı):** İşlemi teknik olarak zorlaştırır ve komplikasyon riskini artırır.
-* **Son dönem malignite:** Bu hastalarda tanı ve tedavi yaklaşımı farklıdır; histeroskopi genellikle uygun değildir.
-
-**Klinikte uyguladığım güvenlik yaklaşımı:**
-Her hasta için işlem öncesinde **detaylı jinekolojik değerlendirme**, **enfeksiyon taraması**, işlemin **tam steril koşullarda** yapılması ve sonrasında **yakın klinik takip** temel prensiplerimdir. Bu adımlar, hem komplikasyon riskini en aza indirir hem de hastanın süreci güvenle ve rahatlıkla geçirmesini sağlar.
-
----
-
-<a name="sonrasi"></a>
-
-## Histeroskopi Sonrası Tüp Bebek Tedavisine Ne Zaman Başlanır?
-
-Bu sorunun cevabı, yapılan işlemin tipine bağlı:
-
-### Tanısal Histeroskopi Sonrası
-
-Eğer işlem sırasında **yalnızca tanısal amaçlı rahim içi değerlendirme yapılmışsa** ve polip çıkarılması, yapışıklık açılması gibi **herhangi bir cerrahi müdahale uygulanmamışsa**, tüp bebek tedavisine geçiş oldukça esnektir:
-
-* **İlk adet sonrası:**
-  Çoğu hastada, histeroskopi sonrası görülen ilk adetle birlikte **tüp bebek tedavisine güvenle başlanabilir**. Rahim içi bu süre içinde kendini toparlamış olur.
-
-* **Hatta aynı siklusta:**
-  Bazı çalışmalarda, tanısal histeroskopi sonrası **aynı siklusta** başlanan tüp bebek tedavilerinde, endometriumda oluşan hafif **“injury/scratch” etkisinin** implantasyonu kolaylaştırabileceği ve başarı oranlarını artırabileceği gösterilmiştir.
-
-Kısacası, cerrahi müdahale yapılmamış tanısal histeroskopiler, tedavi takvimini geciktirmek zorunda değildir. Uygun hastada ve doğru planlamayla, **beklemeden yola devam etmek** çoğu zaman mümkündür.
-
-### Operatif Histeroskopi Sonrası (Polip/Miyom Çıkarımı)
-
-Operatif histeroskopi sonrası tüp bebek tedavisine geçiş süresi, yapılan girişimin **kapsamına ve derinliğine** göre değişir:
-
-* **Küçük polip çıkarımı:**
-  Genellikle **1 ay beklemek** yeterlidir. İlk adetin görülmesinden sonra tüp bebek tedavisine başlanabilir.
-
-* **Geniş tabanlı miyom ameliyatı:**
-  Rahim iç duvarı daha fazla etkilendiği için **2–3 ay bekleme** önerilir. Bu süre, dokunun sağlıklı şekilde onarılması açısından önemlidir.
-
-* **Septum ameliyatı veya rahim içi yapışıklık tedavisi:**
-  Çoğu zaman **2–3 aylık bekleme süresi** gerekir. Bazı hastalarda, endometriumun düzgün iyileşmesini desteklemek ve yeni yapışıklık oluşumunu azaltmak amacıyla **östrojen içeren hormon tedavileri** de eklenebilir.
-
-**Peki neden beklemek gerekir?**
-
-1. **Endometriumun iyileşmesi ve yenilenmesi** için yeterli zaman tanımak
-2. **Yeni yapışıklık oluşumunu önlemek** amacıyla hormonal destekten faydalanmak
-3. **Rahim boşluğunun normal anatomisine** tam olarak dönmesini beklemek
-
-Bu bekleme süreleri, tedaviyi geciktirmek için değil; aksine **sonraki tüp bebek denemesinin daha sağlıklı ve başarılı olması** için planlanır. Doğru zamanlama, çoğu zaman küçük ama kritik bir fark yaratır.
-
-### İkinci Bakış (Second-Look) Histeroskopi
-
-Geniş cerrahi girişimler sonrasında—özellikle **septum rezeksiyonu** ve **rahim içi yapışıklık (Asherman) tedavileri** sonrası—**2–3 ay sonra kontrol histeroskopisi** yapılması yerinde bir yaklaşım olabilir. Bu kontrol, rahim içinin **tam olarak iyileştiğini**, anatomik yapının düzeldiğini ve **yeni yapışıklık oluşmadığını** doğrulamak açısından önem taşır. Gerekirse, sonraki tedavi adımlarına geçmeden önce son bir düzeltme şansı da sunar.
-
-**Klinikte uyguladığım yaklaşım ise şöyle:**
-
-* **Basit tanısal histeroskopi** sonrasında genellikle **1 siklus beklemeyi** tercih ediyorum.
-* **Operatif histeroskopi** sonrasında ise yapılan işlemin kapsamına göre **1–3 ay arasında**, hastaya özel bir planlama yapıyorum.
-
-Özetle, amaç “beklemek” değil; rahme **doğru zamanda**, en sağlıklı koşullarda gebelik şansı verecek bir ortam hazırlamak. Kişiselleştirilmiş zamanlama, çoğu zaman tedavinin sonucunu belirleyen en kritik ayrıntılardan biri oluyor.
-
----
-
-<a name="sss"></a>
-
-## Sık Sorulan Sorular (SSS)
-
-### 1. Tüp bebek öncesi histeroskopi yaptırmak mutlaka gerekli mi?
-
-**Kısa ve net cevap: Hayır.**
-
-İlk tüp bebek denemesi öncesinde; **ultrason ve HSG bulguları normalse**, rutin olarak histeroskopi yapılması **gerekli değildir**. Mevcut bilimsel veriler ve kılavuzlar bu yaklaşımı desteklemektedir.
-
-Ancak şu durumlarda histeroskopi **akla gelmeli ve değerlendirilmelidir**:
-
-* **Tekrarlayan implantasyon başarısızlığı (RIF)**
-* **Anormal uterin kanama öyküsü** (düzensiz adet, ara kanamalar)
-* Ultrason veya HSG’de **şüpheli ancak netleşmeyen bulgular**
-
-Özetle, histeroskopi her hasta için standart bir adım değil; **doğru endikasyonla, doğru hastada** uygulandığında anlamlı fayda sağlayan, **kişiselleştirilmiş** bir değerlendirme aracıdır.
-
-### 2. Histeroskopi tüp bebek başarısını gerçekten artırır mı?
-
-**Kısa cevap: Duruma göre değişir.**
-
-İlk IVF denemelerinde, yüksek kaliteli çalışmalara bakıldığında **rutin histeroskopinin gebelik oranlarını anlamlı biçimde artırdığı gösterilememiştir**. Bu nedenle normal ultrason ve HSG bulguları olan hastalarda, ilk deneme öncesi herkes için standart bir uygulama olarak önerilmez.
-
-Buna karşılık **tekrarlayan implantasyon başarısızlığı (RIF)** yaşayan hastalarda tablo değişir. Bu grupta, ultrasonla saptanamayan **rahim içi anomaliler** daha sık görülür. Histeroskopi ile:
-
-* **Endometrial polipler**
-* **Rahim içi yapışıklıklar**
-* **Septum (rahim içi perde)**
-
-gibi patolojiler tespit edilip aynı seansta tedavi edildiğinde, **gebelik şansının artabildiğine** dair güçlü klinik gözlemler ve destekleyici veriler mevcuttur.
-
-Özetle, histeroskopinin başarısı “herkese yapıldığında” değil; **doğru hasta grubunda, doğru endikasyonla uygulandığında** ortaya çıkar. Bu nedenle karar mutlaka **kişiye özel** verilmelidir.
-
-### 3. Histeroskopi ağrılı bir işlem mi?
-
-**Kısa cevap: Orta düzeyde.**
-
-Histeroskopi sırasında hissedilen ağrı, çoğu hastada **orta şiddet** olarak tanımlanır. Vizüel Analog Skala’ya (VAS) göre ortalama ağrı skoru **yaklaşık 4,7/10**’dur. Evet, hastaların yaklaşık **%87’si işlem sırasında bir miktar ağrı hisseder**, ancak büyük çoğunluğu bunu **“dayanılabilir”** olarak tarif eder.
-
-Ağrının şiddeti; kullanılan histeroskopun inceliğine, işlemi yapan hekimin deneyimine, uygulanan anesteziye ve hastanın kaygı düzeyine bağlı olarak değişebilir. **Uygun anestezi**, işlem öncesi basit ağrı kesiciler ve iyi bir bilgilendirme ile bu rahatsızlık **belirgin şekilde azaltılabilir**.
-
-Ayrıca işlem süreleri de genellikle kısadır:
-
-* **Tanısal (ofis) histeroskopi:** 5–15 dakika
-* **Operatif histeroskopi:** 20–45 dakika
-
-Bu nedenle, doğru koşullarda ve deneyimli ellerde yapıldığında histeroskopi, çoğu hasta için **korkulduğu kadar zor olmayan**, tolere edilebilir bir işlemdir.
-
-### 4. Histeroskopi sonrası ne zaman tüp bebek tedavisine başlanır?
-
-**Özetle tüp bebek tedavisine başlama zamanı, yapılan histeroskopinin türüne göre değişir:**
-
-* **Tanısal histeroskopi sonrası:**
-  Sadece rahim içi değerlendirme yapıldıysa ve cerrahi bir işlem uygulanmadıysa, çoğu hastada **ilk adet sonrasında** tüp bebek tedavisine başlanabilir. Uygun olgularda, bazı merkezlerde **aynı siklusta** başlamak da mümkün olabilir.
-
-* **Operatif histeroskopi sonrası:**
-  Yapılan girişimin kapsamı belirleyicidir.
-
-  * **Küçük polip çıkarımı** sonrası genellikle **1 ay beklemek** yeterlidir.
-  * **Geniş tabanlı miyom**, **septum cerrahisi** veya **yaygın yapışıklık tedavisi** sonrası ise **2–3 aylık bekleme süresi** önerilir.
-
-Sonuç olarak, bu süreler katı kurallar değildir. En doğru zamanlama; yapılan işlemin türü, rahim içinin durumu ve hastanın genel tedavi planı göz önünde bulundurularak **hekiminizle birlikte, bireysel olarak** belirlenmelidir.
-
-### 5. İlk tüp bebek denemesinde ultrason normal ise yine de histeroskopi gerekir mi?
-
-**Kısa cevap: Genelde hayır.**
-
-Adet bitimini izleyen **10–14. günler arasında** yapılan, kaliteli bir transvajinal ultrasonda rahim içi **net ve sorunsuz (“tertemiz”)** görünüyorsa, ek olarak rutin histeroskopi yapılmasının **kanıtlanmış bir faydası yoktur**.
-
-Ancak bazı durumlarda konu **yeniden değerlendirmeye açık** hâle gelir. Özellikle:
-
-* Daha önce **kürtaj** veya rahim içi cerrahi öyküsü varsa
-* **Anormal uterin kanama** (düzensiz adet, ara kanama) bulunuyorsa
-* **Açıklanamayan infertilite** söz konusuysa
-
-bu hastalarda histeroskopi **tartışılabilir ve seçilmiş olgularda anlamlı** olabilir.
-
-Özetle; normal zamanda yapılmış, güvenilir bir ultrason çoğu hasta için yeterlidir. Histeroskopi ise rutin bir adım değil, **risk etkenleri varlığında devreye giren tamamlayıcı bir yöntem** olarak düşünülmelidir.
-
-### 6. Tekrarlayan tüp bebek başarısızlığında histeroskopi her zaman yapılmalı mı?
-
-**Kısa cevap: Çoğunlukla evet, ama her zaman değil.**
-
-ESHRE rehberleri de bu noktaya özellikle vurgu yapıyor: **tekrarlayan implantasyon başarısızlığı (RIF)** yaşayan hastalarda histeroskopi **değerli bir tanı ve tedavi aracı olabilir**. Klinik pratikte, **iki veya daha fazla başarısız embriyo transferi** varsa; transfer edilen embriyolar **iyi kalitedeyse** ve yapılan değerlendirmelerde **başka belirgin bir neden bulunamıyorsa**, rahim içinin histeroskopi ile doğrudan değerlendirilmesi genellikle **mantıklı bir sonraki adım**dır.
-
-Ancak bu, her RIF hastasında otomatik olarak yapılması gereken bir işlem anlamına gelmez.
-Eğer:
-
-* **Embriyo kalitesi belirgin şekilde düşükse**,
-* **Genetik, hormonal, trombofilik ya da erkek kaynaklı etkenlere ait net sorunlar** varsa,
-
-öncelik çoğu zaman bu problemlerin düzeltilmesine verilmelidir. Aksi halde histeroskopi yapmak, asıl sorunu çözmeden sadece süreci uzatabilir.
-
-Özetle; RIF’de histeroskopi çoğu zaman doğru bir hamledir, ancak **tek başına sihirli bir çözüm değildir**. En iyi sonuçlar, **embriyo kalitesi, endometrium ve genel infertilite etkenlerinin birlikte, dengeli ve kişiye özel değerlendirilmesiyle** elde edilir.
-
-### 7. Histeroskopi riskleri nelerdir?
-
-**Kısa cevap: Çok düşük risklidir.**
-
-Histeroskopi, özellikle tanısal amaçla yapıldığında **son derece güvenli** bir işlemdir. Ciddi komplikasyon oranı **%1’in altındadır**. Bildirilen nadir riskler şunlardır:
-
-* **Rahim perforasyonu (delinme)**
-* **Anlamlı kanama**
-* **Enfeksiyon (endometrit)**
-* **Rahim içi yapışıklık gelişimi** (çoğunlukla geniş cerrahiler sonrası)
-
-Ancak bu riskler, **deneyimli ve yetkin ellerde** neredeyse teorik düzeyde kalır.
-
-ESHRE verilerinin de dayandığı Cochrane incelemesinde yer alan **4 randomize kontrollü çalışmanın 3’ünde hiçbir komplikasyon bildirilmemiştir**. Sadece bir çalışmada tek bir enfeksiyon vakası rapor edilmiştir. Bu da histeroskopinin, uygun hasta seçimi ve doğru koşullarda uygulandığında **son derece düşük riskli** bir girişim olduğunu göstermektedir.
-
-Özetle: Histeroskopi korkulacak bir işlem değildir. **Doğru endikasyonla, deneyimli bir ekip tarafından yapıldığında**, faydası riskinin çok önünde olan güvenli bir yöntemdir.
-
-### 8. Histeroskopi yerine hangi alternatif tetkikler yapılabilir?
-
-**Histeroskopiye alternatif yöntemler** elbette vardır ve uygun hastada işe yarayabilirler:
-
-* **3D transvajinal ultrason:**
-  Non-invazivdir ve özellikle **uterus anomalilerini** (septum, bikornuat uterus gibi) göstermede oldukça başarılıdır.
-
-* **Histerosalpingografi (HSG):**
-  Tüplerin açıklığı hakkında bilgi verirken, aynı zamanda **rahim boşluğunun genel şekli** konusunda da fikir sağlar.
-
-* **Salin infüzyon sonografi (SIS):**
-  Rahim içine serum fizyolojik verilerek yapılan ultrason yöntemidir. Özellikle **endometrial poliplerin** saptanmasında duyarlılığı artar.
-
-**Ancak önemli bir fark var:**
-Bu yöntemlerin tamamı **tanı koymaya yöneliktir**. Histeroskopiyi özel kılan ise, rahim içini **doğrudan görerek** değerlendirme imkânı sunmasının yanı sıra, saptanan sorunu **aynı seansta tedavi edebilmesidir**. Yani klasik deyimiyle **“see and treat”** yaklaşımı sağlar.
-
-Bu nedenle alternatif yöntemler tarama ve ön değerlendirme için değerli olsa da, **kesin tanı ve eş zamanlı tedavi** gerektiğinde histeroskopi hâlâ **altın standart** olma özelliğini korur.
-
-### 9. Histeroskopi tüp bebek canlı doğum oranını ne kadar artırır?
-
-**Özet tablo oldukça net:**
-
-* **İlk IVF denemelerinde:**
-  Yüksek kaliteli randomize kontrollü çalışmalarda, histeroskopinin canlı doğum veya gebelik oranlarında **anlamlı bir artış sağladığı gösterilememiştir** (RR 0,99). Yani rutin olarak yapılmasının, bu hasta grubunda ölçülebilir bir faydası yoktur.
-
-* **RIF hastalarında:**
-  Meta-analizlerde, histeroskopi yapılan grupta **yaklaşık %29’luk potansiyel bir artış** bildirilmiştir (RR 1,29). Ancak bu sonucun **kanıt kalitesi orta–düşük düzeydedir** ve çalışmalar arasında belirgin **heterojenite** bulunmaktadır. Bu nedenle sonuçlar temkinli yorumlanmalıdır.
-
-Klinik açıdan önemli nokta şudur:
-Bu olası fayda, her RIF hastasında otomatik olarak ortaya çıkmaz. **Rahim içi bir patoloji saptanıp düzeltilmişse** (polip, yapışıklık, septum gibi), başarı artışı **daha tutarlı ve anlamlı** hâle gelmektedir.
-
-**Sonuç:**
-İlk IVF denemelerinde histeroskopi rutine girmemelidir. RIF hastalarında ise, özellikle **rahim içi anomali şüphesi varsa**, doğru hasta seçimiyle uygulandığında **gerçek bir katkı sağlayabilir**. Yani kazanç, işlemin kendisinden çok **doğru endikasyonla yapılmasından** gelir.
-
-### 10. Normal ultrason varsa RIF durumunda yine de histeroskopi faydalı mı?
-
-**Kısa cevap: Evet, olabilir.**
-
-Çalışmalar şunu net biçimde gösteriyor: **Ultrasonu normal raporlanan RIF hastalarının yaklaşık %26–50’sinde**, histeroskopi sırasında daha önce fark edilemeyen **rahim içi sorunlar** saptanabiliyor. Bunlar çoğu zaman “büyük” lezyonlar değil; ama implantasyon açısından kritik olabilen ayrıntılar:
-
-* **Küçük endometrial polipler**
-* **Minimal rahim içi yapışıklıklar**
-* **Kronik endometrit bulguları**
-
-Bu tür patolojiler ultrason veya HSG ile kolayca gözden kaçabiliyor. Oysa histeroskopiyle **doğrudan görülüp**, çoğu zaman **aynı seansta tedavi edilebiliyorlar**. Klinik deneyim ve literatür birlikte değerlendirildiğinde, bu lezyonların düzeltilmesinin **gebelik şansını artırabildiği** görülüyor.
-
-Özetle:
-Ultrasonun “normal” olması, özellikle **RIF hastalarında**, rahim içinin gerçekten sorunsuz olduğu anlamına her zaman gelmiyor. Bu yüzden histeroskopi bu hasta grubunda rutin değil ama **yüksek katma değerli, hedefli bir araç** olarak önem kazanıyor.
-
----
-
-## Sonuç: Kişiselleştirilmiş Yaklaşım Şart
-
-30+ yılı aşkın süredir tüp bebek yolculuğunda binlerce çiftle yan yana yürüdüm. Bana en çok şunu öğretti: **Tek bir reçete herkes için geçerli değil.** Histeroskopi konusu da tam olarak böyle.
-
-Bilimsel veriler oldukça açık: **İlk tüp bebek denemesinde**, adet sonrası uygun günlerde yapılmış iyi bir ultrasonda rahim içi normal görünüyorsa, **rutin histeroskopinin anlamlı bir faydası gösterilememiştir**. Buna karşın **tekrarlayan başarısızlık** yaşayan hastalarda, rahim içinde ultrasonla kaçabilen küçük sorunlar (polip, minimal yapışıklık, endometrit bulguları gibi) daha sık bulunabildiği için, histeroskopi **değerli bir “hedefli kontrol”** hâline gelebilir.
-
-Karar verirken şu sorular yol gösterir:
-
-* **Kaç kez başarısız deneme** yaşadınız? (Özellikle 2 ve üzeri transfer sonrası önem artar.)
-* Transfer edilen **embriyoların kalitesi** nasıldı?
-* **Ultrason ve HSG** bulgularınız gerçekten net ve güvenilir mi? (Zamanlama, cihaz kalitesi, deneyim fark yaratır.)
-* **Anormal kanama** var mı ya da geçmişte **kürtaj / sezaryen / rahim içi cerrahi** öyküsü bulunuyor mu?
-* Bu süreçte sizin için **maliyet–fayda dengesi** ne ifade ediyor?
-
-Sonuçta en doğru karar, “herkese aynı uygulama” ile değil; **sizin özel durumunuzu ayrıntılı değerlendiren**, güncel verileri bilen ve deneyimiyle doğru endikasyonu koyabilen bir uzmanla birlikte alınır. Histeroskopi; doğru hastada, doğru zamanda yapıldığında gerçekten oyunu değiştirebilir — ama gereksiz olduğunda sadece yük getirir.
-
+<div data-reveal>
 <Picture
   src={histeroskopi_karar_algoritmasiImage}
   widths={[240, 540, 720, histeroskopi_karar_algoritmasiImage.width]}
   width={histeroskopi_karar_algoritmasiImage.width}
   height={histeroskopi_karar_algoritmasiImage.height}
   sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${histeroskopi_karar_algoritmasiImage.width}px`}
-  alt="Tüp bebek öncesi histeroskopi kararı için hasta özelliklerine göre oluşturulmuş karar ağacı: ilk deneme vs RIF, normal vs anormal bulgular"
+  alt="IVF öncesi histeroskopi karar algoritması: ilk deneme, RIF, normal ve şüpheli bulgular"
 />
-## Yasal Uyarı
+</div>
 
-**Yayın Tarihi:** 7 Şubat 2026
+<div data-reveal>
+<h2 id="faq">Sıkça Sorulan Sorular</h2>
 
-Bu makale, **tupbebek.com yayın kurulu** tarafından **bilgilendirme amacıyla** hazırlanmıştır. Her hasta benzersizdir; tüp bebek tedavilerinin sonuçları çok sayıda değişkene bağlı olarak farklılık gösterebilir. Kendi durumunuza özgü en doğru değerlendirme ve yönlendirme için **mutlaka bir uzmana danışınız**.
+<Accordion title="İlk tüp bebek denemesi öncesi histeroskopi şart mı?">
+Genellikle hayır. Rahim içi ultrason, SIS veya HSG ile normal görünüyorsa, ilk IVF öncesinde rutin histeroskopinin canlı doğumu artırdığına dair güçlü kanıt yoktur.
+</Accordion>
 
-© tupbebek.com – **Tüm hakları saklıdır.**
+<Accordion title="Histeroskopi tüp bebek başarısını artırır mı?">
+Seçilmiş hastada artırabilir; herkes için rutin fayda beklenmez. Polip, submüköz miyom, yapışıklık veya septum gibi sorun saptanıp tedavi edilirse katkısı daha mantıklıdır.
+</Accordion>
 
+<Accordion title="Tekrarlayan başarısız transfer sonrası histeroskopi yapılmalı mı?">
+Düşünülebilir, özellikle rahim içi anomaliden şüphe varsa. Ancak normal ultrasonu olan tüm RIF hastalarında otomatik başarı artışı gösterilmiş değildir; embriyo kalitesi, genetik ve transfer faktörleri de değerlendirilmelidir.
+</Accordion>
+
+<Accordion title="SIS normal ise yine de histeroskopi gerekir mi?">
+Çoğu hastada gerekmez. Ancak anormal kanama, ince endometrium, rahim içi cerrahi öyküsü, yapışıklık şüphesi veya tekrarlayan başarısız transfer varsa karar yeniden tartışılabilir.
+</Accordion>
+
+<Accordion title="Histeroskopi ağrılı mı?">
+Ofis histeroskopisinde kramp tarzı ağrı olabilir; çoğu hastada kısa sürer. Operatif histeroskopide sedasyon, spinal veya genel anestezi tercih edilebilir. Ağrı yönetimi kişisel planlanmalıdır.
+</Accordion>
+
+<Accordion title="Histeroskopi sonrası transfer ne zaman yapılır?">
+Sadece tanısal işlem yapıldıysa sonraki siklus yeterli olabilir. Polip, miyom, septum veya yapışıklık tedavisi yapıldıysa bekleme süresi işlemin kapsamına göre değişir.
+</Accordion>
+
+<Accordion title="Laparoskopi de IVF öncesi rutin yapılır mı?">
+Hayır. Laparoskopi, infertilite değerlendirmesinde rutin değildir; endometriozis, hidrosalpinx, ciddi ağrı, pelvik kitle veya cerrahi gerektiren özel bir şüphe varsa düşünülür.
+</Accordion>
+</div>
+
+<div data-reveal>
+<EvidenceGradeCard grade={frontmatter.recommendationGrade} />
+</div>
+
+<div data-reveal class="mt-12 bg-slate-50 p-8 rounded-3xl border border-slate-200">
+**Sizin İçin Seçtiğimiz Diğer Rehberler:**
+- [Endoskopik cerrahi ve histeroskopi](/makaleler/endoskopik-cerrahi-histeroskopi/)
+- [Başarısız denemeler rehberi](/basarisiz-denemeler/)
+- [Miyomlar ve tüp bebek](/makaleler/miyomlar-ve-tup-bebek/)
+- [Hidrosalpinx ve IVF öncesi tedavi](/makaleler/hidrosalpinx-ve-kisirlik/)
+- [Embriyo transferi gün seçimi](/makaleler/embriyo-transferi-gun-secimi/)
+- [ERA testi illüzyonu](/makaleler/era-testi-iluzyon/)
+</div>
+
+</div>
+
+export const hysteroscopyIvfFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "İlk tüp bebek denemesi öncesi histeroskopi şart mı?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Genellikle hayır. Rahim içi ultrason, SIS veya HSG ile normal görünüyorsa, ilk IVF öncesinde rutin histeroskopinin canlı doğumu artırdığına dair güçlü kanıt yoktur."
+    }
+  }, {
+    "@type": "Question",
+    "name": "Histeroskopi tüp bebek başarısını artırır mı?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Seçilmiş hastada artırabilir; herkes için rutin fayda beklenmez. Polip, submüköz miyom, yapışıklık veya septum gibi sorun saptanıp tedavi edilirse katkısı daha mantıklıdır."
+    }
+  }, {
+    "@type": "Question",
+    "name": "Tekrarlayan başarısız transfer sonrası histeroskopi yapılmalı mı?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Düşünülebilir, özellikle rahim içi anomaliden şüphe varsa. Ancak normal ultrasonu olan tüm RIF hastalarında otomatik başarı artışı gösterilmiş değildir; embriyo kalitesi, genetik ve transfer faktörleri de değerlendirilmelidir."
+    }
+  }, {
+    "@type": "Question",
+    "name": "SIS normal ise yine de histeroskopi gerekir mi?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Çoğu hastada gerekmez. Ancak anormal kanama, ince endometrium, rahim içi cerrahi öyküsü, yapışıklık şüphesi veya tekrarlayan başarısız transfer varsa karar yeniden tartışılabilir."
+    }
+  }, {
+    "@type": "Question",
+    "name": "Laparoskopi de IVF öncesi rutin yapılır mı?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Hayır. Laparoskopi, infertilite değerlendirmesinde rutin değildir; endometriozis, hidrosalpinx, ciddi ağrı, pelvik kitle veya cerrahi gerektiren özel bir şüphe varsa düşünülür."
+    }
+  }]
+};
+
+<script type="application/ld+json" set:html={JSON.stringify(hysteroscopyIvfFaqSchema)} />
+<RevealScript />
