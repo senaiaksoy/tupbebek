@@ -1,8 +1,8 @@
 ---
-title: "Yumurtalık PRP Enjeksiyonu: Azalmış Over Rezervinde Gerçekçi Bir Değerlendirme"
-description: "İntraovaryen PRP uygulaması azalmış over rezervi ve POI olgularında umut verici ama halen araştırma aşamasında bir yaklaşımdır. 2024-2026 verileriyle etkinlik, güvenlik ve hasta seçimi."
+title: "Yumurtalık PRP Enjeksiyonu: Düşük Rezervde Gerçekçi Değerlendirme"
+description: "Yumurtalık PRP enjeksiyonu nedir? Düşük AMH, azalmış over rezervi ve erken over yetmezliğinde kanıt düzeyi, güvenlik, hasta seçimi ve gerçekçi beklentiler."
 publishDate: 2026-04-12
-lastModified: 2026-04-12
+lastModified: 2026-05-12
 category: "Tedavi Yöntemleri"
 recommendationGrade: C
 status: "published"
@@ -11,227 +11,132 @@ authorTitle: "Kadın Hastalıkları, Doğum ve Üreme Tıbbı Uzmanı"
 authorCredentials: "Baş Editör, tupbebek.com"
 medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Tıbbi Danışma Kurulu"
-reviewDate: 2026-04-12
+reviewDate: 2026-05-12
 image: "/images/makaleler/over-prp-2026-kapak.jpeg"
-imageAlt: "Kadın hastada over değerlendirmesi için yapılan ultrason muayenesini gösteren klinik görsel"
+imageAlt: "Yumurtalık PRP enjeksiyonu ve düşük over rezervi için klinik değerlendirme"
 references:
   - title: "Intraovarian platelet-rich plasma injection for ovarian rejuvenation: a systematic review and meta-analysis"
     journal: "Human Reproduction"
     year: 2025
     url: "https://academic.oup.com/humrep/article/40/4/764/8045480"
-  - title: "Intraovarian platelet-rich plasma for women with diminished ovarian reserve: a systematic review and meta-analysis"
-    journal: "Journal of Clinical Medicine"
-    year: 2026
-    url: "https://www.mdpi.com/2077-0383/15/7/2482"
   - title: "The efficacy of platelet rich plasma on women with poor ovarian response: a systematic review and meta-analysis"
     journal: "Platelets"
     year: 2024
     url: "https://www.tandfonline.com/doi/full/10.1080/09537104.2023.2292612"
-  - title: "Platelet-rich plasma in reproductive endocrinology: mechanisms and clinical applications"
-    journal: "Biomedicines"
-    year: 2025
-    doi: "10.3390/biomedicines13102488"
-    url: "https://www.mdpi.com/2227-9059/13/10/2488"
-    pmid: "41153771"
-  - title: "Platelet-rich plasma (PRP) in reproductive medicine: a critical review"
-    journal: "Biomedicines"
-    year: 2025
-    doi: "10.3390/biomedicines13051257"
-    url: "https://www.mdpi.com/2227-9059/13/5/1257"
-    pmid: "40427083"
-  - title: "Evaluation of intraovarian injection of platelet-rich plasma"
-    journal: "BMC Women's Health"
-    year: 2025
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12243372/"
-  - title: "Comparative efficacy of single vs. double autologous PRP ovarian injections"
-    journal: "Journal of Ovarian Research"
-    year: 2025
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12106600/"
-  - title: "Efficacy of intraovarian injection of autologous platelet-rich plasma"
-    journal: "Reproductive Biology and Endocrinology"
-    year: 2025
-    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC12435329/"
-  - title: "ESHRE guideline: ovarian stimulation for IVF/ICSI (2025 update)"
-    journal: "Human Reproduction Open"
-    year: 2025
-    url: "https://pubmed.ncbi.nlm.nih.gov/41732035/"
   - title: "ASRM evidence-based guideline: Premature Ovarian Insufficiency"
     journal: "American Society for Reproductive Medicine"
     year: 2024
     url: "https://www.asrm.org/practice-guidance/practice-committee-documents/evidence-based-guideline-premature-ovarian-insufficiency--2024/"
-  - title: "NCT05279560 - OPIF Trial"
-    journal: "ClinicalTrials.gov"
-    year: 2025
-    url: "https://clinicaltrials.gov/study/NCT05279560"
-  - title: "NCT05790655 - Ovarian PRP for DOR"
-    journal: "ClinicalTrials.gov"
-    year: 2026
-    url: "https://clinicaltrials.gov/study/NCT05790655"
 ---
 
 import HizliCevap from '../../components/HizliCevap.astro';
+import Accordion from "../../components/global/Accordion.astro";
+import MedicalInfoBox from '../../components/global/MedicalInfoBox.astro';
+import QuoteBlock from '../../components/global/QuoteBlock.astro';
 import InlineEvidence from '../../components/InlineEvidence.astro';
+import EvidenceGradeCard from '../../components/EvidenceGradeCard.astro';
+import RevealScript from '../../components/global/RevealScript.astro';
 
-<HizliCevap question="Yumurtalık PRP Enjeksiyonu nedir, nasıl yönetilir?">
-İntraovaryen PRP uygulaması azalmış over rezervi ve POI olgularında umut verici ama halen araştırma aşamasında bir yaklaşımdır. 2024-2026 verileriyle etkinlik, güvenlik ve hasta seçimi.
+<HizliCevap question="Yumurtalık PRP düşük rezervde işe yarar mı?">
+Yumurtalık PRP, düşük over rezervi veya erken over yetmezliği olan seçilmiş hastalarda araştırılan deneysel bir yaklaşımdır. Bazı çalışmalarda AMH, antral folikül sayısı veya toplanan yumurta sayısında iyileşme sinyalleri bildirilmiştir; ancak canlı doğumu artırdığı henüz güçlü ve tutarlı biçimde kanıtlanmamıştır. Bu nedenle standart tedavi veya garanti çözüm gibi sunulmamalıdır.
 </HizliCevap>
 
-## Kısa Özet
+<div class="mesh-hero pt-12 pb-20 px-4 md:px-0 -mx-4 md:-mx-0 mb-12 rounded-3xl shadow-sm border border-white/40" style="background: linear-gradient(135deg, #fdf2f8 0%, #fff7ed 48%, #f8fafc 100%);">
+  <div class="max-w-4xl mx-auto" data-reveal>
+    <div class="inline-block px-4 py-1 rounded-full bg-pink-100 text-pink-800 text-sm font-bold mb-4">Deneysel Yaklaşım, Net Bilgilendirme</div>
+    <h1 class="text-4xl md:text-6xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-pink-700 to-slate-900 leading-tight">{frontmatter.title}</h1>
+    <p class="text-xl md:text-2xl text-slate-700 font-medium max-w-2xl leading-relaxed">PRP kararında en önemli cümle şudur: biyolojik sinyal var, ama canlı doğum kanıtı henüz standart tedavi diyecek kadar güçlü değil.</p>
+  </div>
+</div>
 
-Yumurtalık PRP (intraovaryen PRP), hastanın kendi kanından elde edilen trombositten zengin plazmanın ultrason eşliğinde over dokusuna uygulanmasıdır <InlineEvidence grade="C" />. 2024-2026 döneminde yayımlanan çalışmalar, özellikle azalmış over rezervi (DOR) ve erken over yetmezliği (POI) gruplarında AMH ve antral folikül sayısında artış olabileceğini göstermektedir <InlineEvidence grade="C" />.  
-Buna karşın canlı doğum üzerindeki net katkı henüz kesinleşmemiştir <InlineEvidence grade="C" />. Bu nedenle yöntem, güncel uluslararası rehberlerde standart tedavi değil, seçilmiş hastalarda dikkatle değerlendirilen araştırma niteliğinde bir yaklaşım olarak ele alınmaktadır.
+<div class="max-w-4xl mx-auto space-y-12 blog-content-reveal">
 
-## Bu Yazıda Neler Var?
+<MedicalInfoBox title="Hızlı Bakış: PRP Standart IVF Tedavisi Değildir" icon="PRP" color="pink">
+**Yumurtalık PRP halen araştırma niteliği ağır basan bir yöntemdir.** Düşük rezervde bazı laboratuvar ve ultrason göstergelerinde iyileşme sinyali olsa da, her hastada daha iyi embriyo veya canlı doğum sağlayacağı söylenemez. <InlineEvidence grade="C" />
+</MedicalInfoBox>
 
-1. [Yumurtalık PRP nedir ve nasıl uygulanır?](#nasil-calisir)
-2. [Güncel bilimsel kanıtların özeti](#bilimsel-kanitlar)
-3. [Olası moleküler etkiler](#molekuler-etki)
-4. [Kime uygun, kime uygun değil?](#kime-yapilir)
-5. [Uygulama protokolü ve takip](#protokol)
-6. [ESHRE ve ASRM yaklaşımı](#kilavuzlar)
-7. [Sık sorulan sorular](#sss)
+## İçindekiler
 
----
+- [Yumurtalık PRP nedir?](#nedir)
+- [Kanıtlar ne söylüyor?](#kanit)
+- [Kimlerde tartışılabilir?](#kime)
+- [Kimlerde uygun değildir?](#uygun-degil)
+- [Süreç nasıl ilerler?](#surec)
+- [Beklenti nasıl kurulmalı?](#beklenti)
+- [Sıkça sorulan sorular](#faq)
 
-<h2 id="nasil-calisir">Yumurtalık PRP Nedir ve Nasıl Çalışır?</h2>
+<h2 id="nedir">Yumurtalık PRP Nedir?</h2>
 
-PRP (Platelet-Rich Plasma), kişiden alınan 30-60 mL kanın santrifüj ile ayrıştırılması ve trombosit açısından zengin bölümün over dokusuna verilmesi esasına dayanır.
+PRP, kişinin kendi kanından hazırlanan trombositten zengin plazmadır. Yumurtalık PRP uygulamasında bu plazma ultrason eşliğinde over dokusuna verilir. Teorik amaç, büyüme faktörleri aracılığıyla yumurtalık mikroçevresini desteklemek ve mevcut folikül havuzunun yanıtını iyileştirmektir.
 
-Genel işlem akışı:
+Burada kritik ayrım şudur: PRP'nin yeni yumurta “oluşturduğu” kanıtlanmış değildir. Daha gerçekçi ifade, bazı hastalarda mevcut foliküler yanıtı etkileyebilecek biyolojik sinyallerin araştırıldığıdır.
 
-1. Koldan kan alınır.
-2. Kan, santrifüjle katmanlarına ayrılır.
-3. Trombositten zengin plazma hazırlanır.
-4. Gerekli ise aktivasyon sonrası ultrason rehberliğinde overlere enjeksiyon yapılır.
+<h2 id="kanit">Kanıtlar Ne Söylüyor?</h2>
 
-![PRP hazırlama aşamaları: kan alımı, santrifüj, trombosit zenginleştirme ve yumurtalığa enjeksiyon](/images/makaleler/over-prp-surec-infografik.jpeg)
+2024-2026 dönemindeki sistematik derlemeler, PRP sonrası bazı hastalarda AMH, antral folikül sayısı veya toplanan oosit sayısında artış bildirir. Ancak çalışmalar arasında protokol, hasta seçimi, kontrol grubu ve sonuç ölçütleri farklıdır. Canlı doğum gibi hasta için en önemli sonlanımda kanıt daha sınırlı ve heterojendir. <InlineEvidence grade="C" />
 
-PRP içindeki büyüme faktörlerinin (ör. PDGF, VEGF, TGF-β, EGF, IGF) lokal mikrodolaşımı, doku onarım süreçlerini ve foliküler çevreyi etkileyebileceği düşünülmektedir. Klinik düzeyde hedef, yeni yumurta üretmek değil, mevcut foliküler havuzun fonksiyonel yanıtını artırmaktır.
+| Bulgular | Yorum |
+| :--- | :--- |
+| **AMH/AFC artışı** | Biyolojik sinyal olabilir; tek başına başarı anlamına gelmez |
+| **Oosit sayısında artış** | Bazı serilerde bildirilmiştir; her hastada beklenmez |
+| **Embriyo kalitesi** | Kanıt tutarlı değildir |
+| **Canlı doğum** | Standart tedavi diyecek kadar güçlü kanıt yoktur |
 
-| Büyüme faktörü | Olası etkisi |
-|---|---|
-| PDGF | Doku onarımı ve hücresel yenilenme süreçlerine katkı |
-| VEGF | Mikrodolaşım ve damarlaşmanın desteklenmesi |
-| TGF-β | Hücresel sinyal yollarının düzenlenmesi |
-| EGF | Granüloza/cumulus hücre yanıtının desteklenmesi |
-| IGF | Folikül mikroçevresinde metabolik desteğe katkı |
+<h2 id="kime">Kimlerde Tartışılabilir?</h2>
 
----
+PRP en çok şu gruplarda araştırılmaktadır:
 
-<h2 id="bilimsel-kanitlar">Bilimsel Kanıtlar: 2024-2026 Özeti</h2>
+- Düşük AMH ve düşük antral folikül sayısı
+- Tekrarlayan düşük yumurtalık yanıtı
+- Erken over yetmezliği olan seçilmiş hastalar
+- Standart protokollerden sonra sınırlı seçenek kalan hastalar
 
-Güncel meta-analizlerde en sık bildirilen bulgular:
+Yaş, adet düzeni, bazal FSH/E2, önceki IVF yanıtı ve yumurtalıkta görülebilen folikül varlığı karar için belirleyicidir. 43-44 yaş üzeri hastalarda asıl sınırlayıcı faktör çoğu zaman yumurta kromozom sağlığı olduğu için beklenti daha temkinli kurulmalıdır.
 
-- AMH düzeyinde sınırlı ama istatistiksel olarak anlamlı artış
-- Antral folikül sayısında artış
-- Bazı serilerde toplanan oosit sayısında artış
-- Klinik gebelik ve canlı doğum sonuçlarında heterojen, yani değişken sonuçlar
+<h2 id="uygun-degil">Kimlerde Uygun Değildir?</h2>
 
-Özet yorum:
+PRP herkes için uygun değildir. Aktif enfeksiyon, malignite şüphesi, ciddi pıhtılaşma/hematolojik sorun, işlem güvenliğini artıran tıbbi riskler veya gerçekçi olmayan beklenti varsa uygulanmamalıdır. Normal over rezervi olan hastalarda rutin başarı artırıcı yöntem gibi kullanılması da doğru değildir.
 
-- Hormon ve rezerv göstergelerinde iyileşme sinyali vardır.
-- Bu sinyalin her hastada embriyo kalitesi veya canlı doğuma aynı ölçüde yansıdığı söylenemez.
-- Kontrollü çalışmalar, plasebo/yalancı girişim etkisinin ayırt edilmesi gerektiğini göstermektedir.
+<h2 id="surec">Süreç Nasıl İlerler?</h2>
 
-Bu nedenle klinik karar, yalnızca laboratuvar artışlarına göre değil; yaş, POI süresi, bazal over görünümü, önceki IVF öyküsü ve zaman yönetimi birlikte değerlendirilerek verilmelidir.
+Genel akış merkezden merkeze değişebilir:
 
----
+1. AMH, FSH, E2 ve ultrasonla ön değerlendirme yapılır.
+2. Hastadan kan alınır ve PRP hazırlanır.
+3. Uygulama çoğu zaman sedasyon altında, vajinal ultrason rehberliğinde yapılır.
+4. 1-3 ay içinde hormon ve ultrason yanıtı izlenir.
+5. Yanıt varsa IVF protokolü kişiselleştirilir.
 
-<h2 id="molekuler-etki">Moleküler Düzeyde Olası Etkiler</h2>
+İşlem sonrası hafif kasık ağrısı veya lekelenme olabilir. Enfeksiyon ve kanama riski düşük olsa da sıfır değildir.
 
-Yeni yayınlar PRP'nin yalnızca folikül sayısını değil, folikül çevresindeki destek hücrelerini de etkileyebileceğini düşündürmektedir:
+<h2 id="beklenti">Beklenti Nasıl Kurulmalı?</h2>
 
-- Cumulus/granüloza hücrelerinde enerji metabolizmasını destekleyen gen ekspresyonunda artış
-- Hücresel stres ve oksidatif hasar belirteçlerinde azalma eğilimi
-- Foliküler mikroçevrede iyileşme olasılığı
+PRP konuşulurken hastaya üç şey açık anlatılmalıdır: yöntemin deneysel yönü, canlı doğum kanıtının sınırlılığı ve zaman kaybı ihtimali. Özellikle ileri yaş ve düşük rezervde zaman çok değerli olduğu için, PRP beklenirken IVF planının tamamen askıya alınması her hastada doğru olmayabilir.
 
-Bu bulgular biyolojik olarak anlamlıdır; ancak halen translasyonel düzeydedir. Klinik sonlanım olarak canlı doğuma etkisi için daha güçlü, uzun dönemli randomize veriye ihtiyaç vardır.
+<QuoteBlock author="tupbebek.com Tıbbi Danışma Kurulu">
+Yumurtalık PRP, beklentisi abartılacak bir çözüm değil; sınırlı kanıtla, seçilmiş hastada dikkatli tartışılacak deneysel bir seçenektir.
+</QuoteBlock>
 
----
+<EvidenceGradeCard grade={frontmatter.recommendationGrade} />
 
-<h2 id="kime-yapilir">PRP Kime Yapılır, Kime Yapılmaz?</h2>
+<h2 id="faq">Sıkça Sorulan Sorular</h2>
 
-PRP, seçilmiş hasta grubunda düşünülmelidir.
+<Accordion title="Yumurtalık PRP gebeliği garanti eder mi?">
+Hayır. PRP'nin canlı doğumu garanti ettiği veya her hastada artırdığı gösterilmemiştir.
+</Accordion>
 
-| Klinik durum | Değerlendirme yaklaşımı |
-|---|---|
-| Düşük AMH ve/veya düşük antral folikül sayısı | Uygun olabilir, bireysel değerlendirme gerekir |
-| Erken over yetmezliği (POI) | Süre ve yaş kritik; erken dönemde yanıt olasılığı daha yüksektir |
-| Tekrarlayan düşük over yanıtı | Standart protokoller sonrası seçenek olarak değerlendirilebilir |
-| Normal over rezervi | Rutin kullanım önerilmez |
-| Aktif enfeksiyon / malignite şüphesi / ciddi hematolojik risk | Uygun değildir |
+<Accordion title="PRP düşük AMH'yi yükseltir mi?">
+Bazı çalışmalarda AMH artışı bildirilmiştir; ancak AMH artışı doğrudan sağlıklı embriyo veya canlı doğum anlamına gelmez.
+</Accordion>
 
-Hasta seçiminde özellikle şu başlıklar önemlidir:
+<Accordion title="PRP sonrası ne zaman IVF yapılır?">
+Çoğu merkez 1-3 ay içinde yanıtı değerlendirir. Ancak zamanlama yaş, rezerv ve önceki tedavi öyküsüne göre kişiselleştirilmelidir.
+</Accordion>
 
-- Yaş
-- Adet düzensizliği veya amenore süresi
-- Bazal hormon profili (AMH, FSH, E2)
-- Over morfolojisi
-- Önceki IVF yanıtı
-- Eşlik eden sistemik riskler
+<Accordion title="PRP yerine ne düşünülmeli?">
+IVF protokol optimizasyonu, embriyo biriktirme, düşük rezerv stratejileri ve bazı hastalarda donasyonun yasal/etik çerçevede mümkün olduğu ülkelerde danışmanlık seçenekleri tartışılabilir. Türkiye'deki yasal sınırlar ayrıca dikkate alınmalıdır.
+</Accordion>
 
----
+</div>
 
-<h2 id="protokol">Protokol: Hazırlık, Seans Sayısı, Takip</h2>
-
-Uygulama merkezine göre protokoller değişebilse de klinik pratikte 1-3 seans yaklaşımı görülmektedir.
-
-Tipik süreç:
-
-1. Ön değerlendirme: AMH, FSH, LH, E2 ve ultrason
-2. Aynı gün PRP hazırlığı (otolog kan, santrifüj, hazırlama)
-3. Sedasyon altında ultrason rehberliğinde over uygulaması
-4. 1-2. aylarda hormon ve ultrason takibi
-5. Yanıt durumuna göre IVF planlaması
-
-| Protokol tipi | Genel amaç |
-|---|---|
-| Tek seans | Hızlı başlangıç ve erken yanıt değerlendirmesi |
-| İki seans | Hormon/folikül yanıtını güçlendirme hedefi |
-| Üç seans | Daha uzun süreli biyolojik etki arayışı |
-
-Klinik hedef, yalnızca sayısal artış değil, embriyo gelişimi ve olası canlı doğum çıktısıdır.
-
----
-
-<h2 id="kilavuzlar">Uluslararası Kılavuzlar Ne Diyor?</h2>
-
-ESHRE (2025 güncellemesi) ve ASRM (2024 POI kılavuzu), intraovaryen PRP'yi rutin standart tedavi olarak sınıflandırmamaktadır <InlineEvidence grade="C" />. Ortak yaklaşım:
-
-- Uygulama seçilmiş vakalarda, açık bilgilendirme ile değerlendirilmeli
-- Hastaya yöntemin deneysel/araştırma niteliği net anlatılmalı
-- Merkezler sonuç takibini sistematik şekilde yapmalı
-
-Devam eden klinik çalışmaların sonuçları (ör. OPIF ve diğer NCT kayıtlı çalışmalar), önümüzdeki yıllarda bu yaklaşımın kılavuzlardaki yerini daha net belirleyecektir.
-
----
-
-<h2 id="sss">Sık Sorulan Sorular</h2>
-
-### Yumurtalık PRP kesin olarak gebelik sağlar mı?
-
-Hayır. PRP bazı biyolojik göstergelerde iyileşme sağlayabilir; ancak canlı doğum üzerinde kesin ve her hastada geçerli bir sonuç garantisi yoktur <InlineEvidence grade="C" />.
-
-### PRP ağrılı bir işlem midir?
-
-İşlem çoğunlukla sedasyon altında yapıldığı için ağrı algısı sınırlıdır. İşlem sonrası kısa süreli kasık ağrısı veya hafif lekelenme görülebilir.
-
-### Etki ne zaman değerlendirilir?
-
-Genellikle 1-2 ay içinde hormon ve ultrason kontrolleri yapılır. Daha sonra IVF veya diğer seçenekler yeniden planlanır.
-
-### SGK bu işlemi karşılar mı?
-
-Mevcut uygulamada genellikle SGK kapsamı dışındadır. Güncel kapsam bilgisi için ilgili sağlık kurumundan doğrulama yapılmalıdır.
-
-### PRP herkese uygun mudur?
-
-Hayır. Hasta seçimi en kritik aşamadır. Klinik ve laboratuvar bulgularla bireysel değerlendirme yapılmadan karar verilmemelidir.
-
----
-
-## Sonuç
-
-Yumurtalık PRP, over rezervi düşük hasta grubunda umut verici veriler sunan, ancak henüz kesin standart haline gelmemiş bir yaklaşımdır. En doğru kullanım biçimi, gerçekçi beklenti yönetimi, doğru hasta seçimi ve düzenli klinik takip ile mümkündür.
-
-Bu içerik tıbbi tanı ve tedavi yerine geçmez, mutlaka hekiminize danışınız.
+<RevealScript />

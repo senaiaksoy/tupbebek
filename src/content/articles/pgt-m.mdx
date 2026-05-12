@@ -1,6 +1,6 @@
 ---
 title: "PGT-M Nedir? Tek Gen Hastalıklarını Embriyoda Taramak"
-description: "PGT-M (Preimplantasyon Genetik Test - Monogenik) nedir? Hangi hastalıklar taranır? Kimler için gereklidir? Hazırlık süreci, uygulama adımları ve sık sorulan sorular."
+description: "PGT-M nedir, kimlere gerekir, hangi hastalıklar taranır? Prob hazırlığı, IVF süreci, embriyo biyopsisi, sonuçların yorumu ve Türkiye'deki yasal çerçeve."
 publishDate: 2024-05-07
 author: "Doç. Dr. Senai Aksoy"
 authorTitle: "Kadın Hastalıkları ve Doğum Uzmanı"
@@ -8,219 +8,152 @@ authorCredentials: "Üreme Tıbbı ve Yardımcı Üreme Teknikleri"
 authorYoutube: "https://www.youtube.com/@DocentDrSenaiAksoy"
 medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Tıbbi Danışma Kurulu"
-reviewDate: 2026-04-09
-lastModified: 2026-05-11
+reviewDate: 2026-05-12
+lastModified: 2026-05-12
 category: "Genetik"
 recommendationGrade: B
 image: /images/library/embriyo/pgt.webp
-imageAlt: "pgt-m preimplantasyon genetik test monogenik hastalık taraması"
+imageAlt: "PGT-M preimplantasyon genetik test ve tek gen hastalığı taraması"
 references:
-  - title: "Birth of a normal girl after in vitro fertilization and preimplantation diagnostic testing for cystic fibrosis"
-    authors: "Handyside AH, Kontogianni EH, Hardy K, Winston RM"
-    journal: "New England Journal of Medicine"
-    year: 1992
-    doi: "10.1056/NEJM199209243271301"
-    pmid: "1381054"
   - title: "ESHRE PGT Consortium good practice recommendations for the detection of monogenic disorders"
     authors: "Carvalho F, Moutou C, Dimitriadou E, et al."
     journal: "Human Reproduction Open"
     year: 2020
     doi: "10.1093/hropen/hoaa018"
     pmid: "32500103"
-  - title: "Next-generation sequencing for preimplantation genetic testing"
-    authors: "Fiorentino F, Biricik A, Bono S, et al."
-    journal: "Fertility and Sterility"
-    year: 2014
-    doi: "10.1016/j.fertnstert.2014.01.051"
-    pmid: "24613537"
   - title: "ESHRE PGT Consortium good practice recommendations for the organisation of PGT"
     authors: "Carvalho F, Moutou C, Dimitriadou E et al."
     journal: "Human Reproduction Open"
     year: 2020
     doi: "10.1093/hropen/hoaa021"
     pmid: "32524036"
-  - title: "Preimplantation genetic testing for single-gene disorders: experience with more than 1,000 cycles"
-    authors: "Rechitsky S, Pakhalchuk T, San Ramos G et al."
-    journal: "Fertility and Sterility"
-    year: 2020
-    doi: "10.1016/j.fertnstert.2020.01.033"
-    pmid: "32331767"
-  - title: "Use of preimplantation genetic testing for monogenic defects (PGT-M) for adult-onset conditions: an Ethics Committee opinion"
-    authors: "Practice Committee of ASRM"
+  - title: "Use of preimplantation genetic testing for monogenic defects (PGT-M) for adult-onset conditions"
+    authors: "Ethics Committee of ASRM"
     journal: "Fertility and Sterility"
     year: 2018
     doi: "10.1016/j.fertnstert.2018.01.028"
     pmid: "29653707"
-  - title: "ESHRE PGT Consortium data collection XIV: cycles from January to December 2017 with pregnancy follow-up to October 2018"
-    authors: "De Rycke M, Berckmoes V et al."
-    journal: "Human Reproduction Open"
-    year: 2021
-    doi: "10.1093/hropen/hoab024"
-    pmid: "34322603"
 ---
 
 import HizliCevap from '../../components/HizliCevap.astro';
+import Accordion from "../../components/global/Accordion.astro";
+import MedicalInfoBox from '../../components/global/MedicalInfoBox.astro';
+import QuoteBlock from '../../components/global/QuoteBlock.astro';
 import InlineEvidence from '../../components/InlineEvidence.astro';
+import EvidenceGradeCard from '../../components/EvidenceGradeCard.astro';
+import RevealScript from '../../components/global/RevealScript.astro';
 
-<HizliCevap question="PGT-M Nedir? Tek Gen Hastalıklarını Embriyoda Taramak hakkında bilmeniz gerekenler nelerdir?">
-PGT-M (Preimplantasyon Genetik Test - Monogenik) nedir? Hangi hastalıklar taranır? Kimler için gereklidir? Hazırlık süreci, uygulama adımları ve sık sorulan sorular.
+<HizliCevap question="PGT-M nedir?">
+PGT-M, tüp bebek sürecinde embriyoların bilinen bir tek gen hastalığı açısından transfer öncesi test edilmesidir. Anne veya babada taşıyıcılık ya da hastalık mutasyonu önceden gösterilmiş olmalıdır. Amaç cinsiyet seçimi değil, talasemi, SMA, kistik fibrozis, hemofili veya benzeri kalıtsal hastalıkların çocuğa geçme riskini azaltmaktır.
 </HizliCevap>
 
-## PGT-M Nedir?
+<div class="mesh-hero pt-12 pb-20 px-4 md:px-0 -mx-4 md:-mx-0 mb-12 rounded-3xl shadow-sm border border-white/40" style="background: linear-gradient(135deg, #f0fdf4 0%, #ecfeff 50%, #f8fafc 100%);">
+  <div class="max-w-4xl mx-auto" data-reveal>
+    <div class="inline-block px-4 py-1 rounded-full bg-teal-100 text-teal-800 text-sm font-bold mb-4">Genetik Hastalık Önleme</div>
+    <h1 class="text-4xl md:text-6xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-teal-700 to-slate-900 leading-tight">{frontmatter.title}</h1>
+    <p class="text-xl md:text-2xl text-slate-700 font-medium max-w-2xl leading-relaxed">PGT-M, “genel genetik tarama” değil; ailede bilinen mutasyona özel tasarlanan hedefli bir testtir.</p>
+  </div>
+</div>
 
-PGT-M (Preimplantation Genetic Testing for Monogenic disorders), tüp bebek tedavisinde embriyoların **bilinen bir tek gen hastalığı** açısından taranmasını sağlayan genetik testtir. Eski adıyla PGD (Preimplantation Genetic Diagnosis) olarak da bilinir. <InlineEvidence grade="B" />
+<div class="max-w-4xl mx-auto space-y-12 blog-content-reveal">
 
-Bu test, anne ve/veya babada daha önceden tespit edilmiş bir genetik hastalık veya taşıyıcılık varsa uygulanır. Amaç, hastalığın embriyoya geçip geçmediğini **transfer öncesinde** belirlemek ve yalnızca hastalıktan etkilenmemiş embriyoları seçerek sağlıklı bir gebelik elde etmektir. <InlineEvidence grade="B" />
+<MedicalInfoBox title="Hızlı Bakış: Önce Mutasyon, Sonra PGT-M" icon="DNA" color="teal">
+**PGT-M yapılabilmesi için hedef hastalığın ve ailedeki mutasyonun önceden bilinmesi gerekir.** Test çoğu zaman aileye özel hazırlık gerektirir; IVF'e başlamadan önce genetik danışmanlık ve prob tasarımı planlanmalıdır. <InlineEvidence grade="B" />
+</MedicalInfoBox>
 
-PGT-M, [PGT-A (anöploidi taraması)](/makaleler/genetik-testler) gibi kromozom sayısı anomalilerini taramaz. PGT-M spesifik olarak **tek bir gen üzerindeki mutasyonu** hedefler. <InlineEvidence grade="B" />
+## İçindekiler
 
----
+- [PGT-M nedir?](#nedir)
+- [Hangi hastalıklar taranabilir?](#hastaliklar)
+- [Kimlere gerekir?](#kimlere)
+- [Prob hazırlığı neden önemlidir?](#prob)
+- [Süreç nasıl ilerler?](#surec)
+- [Sonuçlar nasıl okunur?](#sonuc)
+- [Sıkça sorulan sorular](#faq)
 
-## Hangi Hastalıklar Taranabilir?
+<h2 id="nedir">PGT-M Nedir?</h2>
 
-PGT-M ile taranabilen hastalıklar, mutasyonu bilinen tek gen hastalıklarıdır. En sık taranan hastalıklar:
+PGT-M, “preimplantation genetic testing for monogenic disorders” ifadesinin kısaltmasıdır. Embriyolar, bilinen tek gen hastalığı açısından test edilir ve hastalıktan etkilenmeyen embriyolar transfer için değerlendirilir.
 
-### Otozomal Resesif Hastalıklar
-Her iki ebeveyn de taşıyıcı olduğunda çocuğa geçme riski %25'tir:
+PGT-M, [PGT-A](/makaleler/genetik-testler/) gibi kromozom sayısı taraması değildir. PGT-A kromozom sayısını, PGT-M ise ailede bilinen belirli mutasyonu hedefler. Bazı çiftlerde ikisi birlikte planlanabilir.
 
-- **Talasemi (Akdeniz anemisi):** Hemoglobin yapısını etkileyen kan hastalığı. Türkiye'de özellikle Akdeniz ve Güneydoğu bölgelerinde taşıyıcılık oranı yüksektir
-- **Kistik Fibrozis:** Akciğer ve sindirim sistemini etkileyen kronik hastalık
-- **SMA (Spinal Müsküler Atrofi):** Motor sinirlerin ilerleyici kaybına yol açan hastalık. Türkiye'de her 40-50 kişiden biri taşıyıcıdır
-- **Orak Hücre Anemisi:** Kırmızı kan hücrelerinin şekillerinin bozulması
+<h2 id="hastaliklar">Hangi Hastalıklar Taranabilir?</h2>
 
-### Otozomal Dominant Hastalıklar
-Ebeveynlerden biri hasta olduğunda çocuğa geçme riski %50'dir:
+PGT-M ile mutasyonu bilinen tek gen hastalıkları taranabilir:
 
-- **Huntington hastalığı:** Sinir sisteminin ilerleyici dejenerasyonu
-- **Marfan sendromu:** Bağ dokusu hastalığı
-- **Nörofibromatozis:** Sinir dokusunda tümör oluşumu
-- **BRCA1/BRCA2 mutasyonları:** Meme ve yumurtalık kanseri riski artışı
+| Kalıtım Tipi | Örnekler | Çocuğa Geçiş Riski |
+| :--- | :--- | :--- |
+| **Otozomal resesif** | Talasemi, SMA, kistik fibrozis | İki taşıyıcı ebeveynde etkilenmiş çocuk riski her gebelikte %25 |
+| **Otozomal dominant** | Huntington, Marfan, nörofibromatozis | Hasta ebeveynden geçiş riski çoğunlukla %50 |
+| **X'e bağlı** | Hemofili, Duchenne kas distrofisi | Erkek çocuklarda etkilenme riski daha yüksek olabilir |
 
-### X'e Bağlı Hastalıklar
-Genellikle erkek çocuklarda ortaya çıkar, kadınlar taşıyıcı olabilir:
+Taramanın yapılabilmesi için genetik tanının belirsiz değil, moleküler olarak doğrulanmış olması gerekir.
 
-- **Hemofili A ve B:** Kanın pıhtılaşma bozukluğu
-- **Duchenne Kas Distrofisi (DMD):** Kasların ilerleyici güçsüzleşmesi
-- **Fragile X Sendromu:** Zihinsel gelişim geriliğine yol açabilen genetik bozukluk
+<h2 id="kimlere">Kimlere Gerekir?</h2>
 
-> **Not:** PGT-M yalnızca mutasyonu önceden bilinen hastalıklar için uygulanabilir. Bu nedenle anne ve babada taşıyıcılığın genetik testlerle doğrulanmış olması ön koşuldur.
+PGT-M şu durumlarda gündeme gelir:
 
----
+- Her iki ebeveyn aynı resesif hastalık için taşıyıcıysa
+- Ebeveynlerden biri dominant genetik hastalığa sahipse
+- Anne X'e bağlı hastalık taşıyıcısıysa
+- Önceki gebelikte veya çocukta genetik hastalık saptandıysa
+- Ailede bilinen mutasyon doğrulanmışsa
 
-## Kimler İçin Gereklidir?
+Sadece “genetik olarak daha sağlıklı embriyo seçmek” isteği PGT-M için yeterli değildir; hedef hastalık ve mutasyon bilinmelidir.
 
-PGT-M şu durumlarda önerilir:
+<h2 id="prob">Prob Hazırlığı Neden Önemlidir?</h2>
 
-- **Her iki ebeveyn de aynı resesif hastalığın taşıyıcısıysa** (ör. talasemi, SMA, kistik fibrozis)
-- **Ebeveynlerden biri dominant bir genetik hastalığa sahipse** (ör. Huntington)
-- **Anne X'e bağlı bir hastalığın taşıyıcısıysa** (ör. hemofili, DMD)
-- **Ailede bilinen bir genetik hastalık öyküsü varsa** ve taşıyıcılık testlerle doğrulanmışsa
-- **Daha önceki gebelikte genetik hastalıklı çocuk dünyaya gelmişse**
+PGT-M çoğu zaman aileye özel test tasarımı gerektirir. Bu hazırlık 4-8 hafta sürebilir. Anne-baba ve bazen yakın akrabalardan örnek alınır; laboratuvar hedef mutasyonu ve çevre genetik belirteçleri kullanarak embriyoda güvenilir analiz yapacak protokolü hazırlar.
 
-### Ne Zaman Gerekmeyebilir?
+Bu nedenle PGT-M planlayan çiftlerde IVF'e başlamadan önce genetik danışmanlık randevusu alınması önemlidir.
 
-- Bilinen bir tek gen hastalığı veya taşıyıcılık yoksa
-- Yalnızca kromozom sayısı taraması isteniyorsa — bu durumda [PGT-A](/makaleler/genetik-testler) yeterlidir
-- Taşıyıcılık testi henüz yapılmamışsa — önce taşıyıcılık doğrulanmalıdır
+<h2 id="surec">Süreç Nasıl İlerler?</h2>
 
----
+1. Genetik danışmanlık ve mutasyon doğrulaması yapılır.
+2. Aileye özel test hazırlığı tamamlanır.
+3. IVF/ICSI ile embriyolar oluşturulur.
+4. Embriyolar blastokist aşamasına kadar izlenir.
+5. Trofektoderm biyopsisi yapılır.
+6. Embriyolar dondurulur ve genetik sonuç beklenir.
+7. Hastalıktan etkilenmeyen embriyo uygun siklusta transfer edilir.
 
-## PGT-M Öncesi Hazırlık: Prob Tasarımı
+Biyopsi embriyonun dış tabakasından yapılır; bebeğe dönüşecek iç hücre kitlesine doğrudan müdahale edilmez.
 
-PGT-M, diğer genetik testlerden farklı olarak tedaviden **önce** bir hazırlık süreci gerektirir. Bu süreç genellikle **4-8 hafta** sürer ve şu adımları içerir:
+<h2 id="sonuc">Sonuçlar Nasıl Okunur?</h2>
 
-### 1. Genetik Danışmanlık
-Çift, genetik danışman ile görüşerek hastalığın kalıtım paterni, çocuğa geçme riski ve PGT-M'nin sağlayacağı koruma hakkında bilgilendirilir.
+PGT-M raporunda sonuçlar şu şekilde gelebilir:
 
-### 2. Taşıyıcılık Doğrulaması
-Anne ve babadan kan örnekleri alınarak hastalık mutasyonu genetik laboratuvarında doğrulanır. Bazı durumlarda yakın aile bireylerinden de kan örneği istenebilir (bilgilendiricilik çalışması).
+- **Etkilenmemiş:** Hedef hastalıktan etkilenmemiştir; transfer için değerlendirilebilir.
+- **Taşıyıcı:** Resesif hastalıklarda hasta değildir; transfer kararı genetik danışmanlıkla verilir.
+- **Etkilenmiş:** Hedef hastalık açısından etkilenmiştir; transfer önerilmez.
+- **Sonuçsuz:** Teknik nedenle net sonuç alınamamıştır; yeniden biyopsi veya farklı plan gerekebilir.
 
-### 3. Aileye Özel Prob Hazırlanması
-Genetik laboratuvarı, **söz konusu aileye özel** bir test protokolü (prob) tasarlar. Bu prob, embriyoda hedeflenen mutasyonu doğru bir şekilde tespit edebilmek için optimize edilir. Bu aşama PGT-M'nin en kritik ve zaman alan bölümüdür.
+Hiçbir genetik test %100 garanti değildir. PGT-M sonrası gebelikte prenatal tarama/tanı seçenekleri ayrıca konuşulmalıdır.
 
-### 4. Doğrulama Testleri
-Hazırlanan prob, bilinen örnekler üzerinde test edilerek doğruluğu ve güvenilirliği doğrulanır. Ancak bu aşamalardan sonra [tüp bebek tedavisi](/tedavi-yontemleri) başlatılır.
+<QuoteBlock author="tupbebek.com Tıbbi Danışma Kurulu">
+PGT-M'nin gücü, doğru ailede doğru mutasyona odaklanmasından gelir; belirsiz hedefle yapılan test güvenli karar üretmez.
+</QuoteBlock>
 
-> **Önemli:** PGT-M planlıyorsanız, tüp bebek tedavisine başlamadan **en az 2 ay önce** genetik danışmanlık randevusu almanız önerilir. Prob hazırlığı tamamlanmadan tedaviye başlanamaz.
+<EvidenceGradeCard grade={frontmatter.recommendationGrade} />
 
----
+<h2 id="faq">Sıkça Sorulan Sorular</h2>
 
-## PGT-M Nasıl Uygulanır?
+<Accordion title="PGT-M ile PGT-A arasındaki fark nedir?">
+PGT-M bilinen tek gen hastalığını hedefler. PGT-A ise embriyonun kromozom sayısını değerlendirir.
+</Accordion>
 
-Prob hazırlığı tamamlandıktan sonra tedavi süreci şu şekilde ilerler:
+<Accordion title="PGT-M için tüp bebek şart mı?">
+Evet. Embriyonun transfer öncesi test edilebilmesi için IVF/ICSI ile embriyo oluşturulması gerekir.
+</Accordion>
 
-1. **IVF/ICSI:** Standart [tüp bebek tedavisi](/tedavi-yontemleri) uygulanarak yumurtalar toplanır ve döllenir
-2. **Embriyo kültürü:** Embriyolar laboratuvarda 5-6. güne (blastosist aşaması) kadar büyütülür
-3. **Trofektoderm biyopsisi:** Her embriyonun dış tabakasından (trofektoderm) 5-10 hücre alınır. Bebeğe dönüşecek iç hücre kitlesine dokunulmaz
-4. **Genetik analiz:** Alınan hücreler, önceden hazırlanan prob ile analiz edilir. Hedeflenen mutasyonun embriyoda bulunup bulunmadığı tespit edilir
-5. **Dondurma:** Biyopsi yapılan embriyolar [vitrifikasyon](/makaleler/yumurta-dondurma-rehberi) ile dondurularak sonuçlar beklenir
-6. **Sonuç ve transfer:** Genetik olarak hastalıktan etkilenmemiş embriyolar belirlenir ve uygun siklusta [dondurulmuş embriyo transferi (FET)](/makaleler/taze-dondurulmus-transfer) yapılır
+<Accordion title="Prob hazırlığı ne kadar sürer?">
+Çoğu zaman 4-8 hafta sürer; aile yapısı ve mutasyonun teknik özelliklerine göre değişebilir.
+</Accordion>
 
----
+<Accordion title="PGT-M cinsiyet seçimi sağlar mı?">
+Hayır. Amaç hastalığın embriyoya geçmesini önlemektir. Tıbbi olmayan cinsiyet seçimi Türkiye'de yasaktır.
+</Accordion>
 
-## PGT-M Sonuçları Nasıl Okunur?
+</div>
 
-Her embriyo için şu sonuçlardan biri bildirilir:
-
-- **Etkilenmemiş (Affected değil):** Embriyo hastalıktan etkilenmemiştir — transfer için uygundur
-- **Etkilenmiş (Affected):** Embriyo hastalıktan etkilenmiştir — transfer önerilmez
-- **Taşıyıcı:** Embriyo hastalığı taşır ama kendisi hasta değildir — resesif hastalıklarda transfer için uygun kabul edilebilir (doktorunuz değerlendirir)
-- **Sonuçsuz:** Analiz yapılamamıştır — yeniden biyopsi gerekebilir
-
-PGT-M, istenirse [PGT-A](/makaleler/genetik-testler) ile birlikte uygulanabilir. Böylece hem tek gen hastalığı hem de kromozom sayısı anomalileri aynı anda taranır.
-
----
-
-## PGT-M'nin Faydaları ve Sınırlamaları
-
-### Faydaları
-- Genetik hastalığın çocuğa geçme riskini **büyük ölçüde azaltır**
-- Gebelik sonlandırma gibi zor kararların önüne geçer — tanı transfer öncesinde konulur
-- Çiftlere sağlıklı biyolojik çocuk sahibi olma imkânı sunar
-- Psikolojik ve duygusal açıdan rahatlama sağlar
-
-### Sınırlamaları
-- Tedavi öncesi **4-8 haftalık hazırlık süresi** gerektirir
-- Ek maliyet getirir (prob hazırlığı + genetik analiz)
-- Her embriyonun hastalıktan arınmış çıkması garanti değildir — yeterli sayıda embriyo elde edilmesi önemlidir
-- Biyopsi sonrası çok düşük oranda embriyo zarar görebilir (&lt;%1)
-- PGT-M yalnızca hedeflenen mutasyonu tarar; diğer genetik sorunları tespit etmez (PGT-A ile kombine edilebilir)
-
----
-
-## Türkiye'de PGT-M ve Yasal Çerçeve
-
-Türkiye'de PGT-M uygulaması, T.C. Sağlık Bakanlığı ÜYTE Yönetmeliği çerçevesinde **yasaldır**. Ancak bazı kurallar geçerlidir:
-
-- PGT-M yalnızca **tıbbi endikasyonla** uygulanabilir — taşıyıcılık genetik testlerle doğrulanmış olmalıdır
-- Tedavi yasal düzenlemeler çerçevesinde evli çiftlere uygulanmaktadır
-- [Cinsiyet seçimi amacıyla](/makaleler/pgt-cinsiyet-secimi) PGT-M kullanılması yasaktır — ancak X'e bağlı hastalıklarda cinsiyet bilgisi hastalık taramasının doğal bir sonucu olarak ortaya çıkabilir
-
----
-
-## Sık Sorulan Sorular
-
-**PGT-M embriyoya zarar verir mi?**
-Biyopsi embriyonun dış tabakasından (trofektoderm) yapılır; bebeğe dönüşecek iç hücre kitlesine dokunulmaz. Embriyo hasar riski %1'in altındadır. Modern biyopsi teknikleri güvenli kabul edilmektedir.
-
-**PGT-M ne kadar güvenilirdir?**
-PGT-M'nin doğruluk oranı %98'in üzerindedir. <InlineEvidence grade="B" /> Ancak hiçbir test %100 garanti vermez. Bu nedenle PGT-M sonrası başlayan gebeliklerde de doktorunuz gerekli görürse ek prenatal tarama testleri önerebilir.
-
-**PGT-M ile PGT-A arasındaki fark nedir?**
-[PGT-A](/makaleler/genetik-testler), embriyodaki kromozom sayısı anomalilerini (Down sendromu gibi) tarar. PGT-M ise belirli bir tek gen hastalığını (talasemi, SMA gibi) hedefler. İkisi birlikte uygulanabilir.
-
-**Prob hazırlığı ne kadar sürer?**
-Aileye özel prob hazırlığı genellikle 4-8 hafta sürer. Bu nedenle PGT-M planlıyorsanız, tüp bebek tedavisine başlamadan en az 2 ay önce genetik danışmanlık randevusu almanız gerekir.
-
-**Taşıyıcı olduğumu nasıl öğrenebilirim?**
-Genetik danışman veya doktorunuz, aile öyküsüne göre taşıyıcılık testleri önerebilir. Basit bir kan testiyle en sık görülen tek gen hastalıkları için taşıyıcılık taranabilir. Türkiye'de özellikle talasemi ve SMA taşıyıcılık taraması yaygın olarak yapılmaktadır.
-
----
-
-## Sonuç
-
-PGT-M, genetik hastalık taşıyıcısı olan çiftlere sağlıklı biyolojik çocuk sahibi olma şansı sunan güçlü bir teknolojdir. Tek gen hastalığının embriyoya geçip geçmediğini transfer öncesinde belirleyerek, hastalığın gelecek nesillere aktarılma riskini büyük ölçüde azaltır. <InlineEvidence grade="B" />
-
-Tedavi öncesi hazırlık süreci (prob tasarımı) zaman gerektirdiğinden, erken planlama önemlidir. Ailenizde bilinen bir genetik hastalık varsa veya taşıyıcılık konusunda endişeniz varsa, doktorunuz ve genetik danışmanınız size en uygun yaklaşımı belirleyecektir. Genetik testler hakkında detaylı bilgi için [PGT rehberimizi](/makaleler/genetik-testler) inceleyebilirsiniz.
-
----
+<RevealScript />

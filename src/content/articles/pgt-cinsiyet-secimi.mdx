@@ -1,6 +1,6 @@
 ---
 title: "PGT ile Cinsiyet Seçimi: Türkiye'de Yasal mı?"
-description: "Tüp bebek tedavisinde PGT ile cinsiyet belirleme mümkün mü? Türkiye'deki yasal düzenlemeler, tıbbi endikasyon istisnaları ve sık sorulan sorular."
+description: "PGT ile cinsiyet seçimi Türkiye'de yasal mı? Tıbbi olmayan cinsiyet seçimi yasağı, X'e bağlı hastalık istisnası, PGT-M ve etik sınırlar."
 publishDate: 2024-06-22
 author: "Doç. Dr. Senai Aksoy"
 authorTitle: "Kadın Hastalıkları ve Doğum Uzmanı"
@@ -8,38 +8,25 @@ authorCredentials: "Üreme Tıbbı ve Yardımcı Üreme Teknikleri"
 authorYoutube: "https://www.youtube.com/@DocentDrSenaiAksoy"
 medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Tıbbi Danışma Kurulu"
-reviewDate: 2026-04-09
-lastModified: 2026-05-11
+reviewDate: 2026-05-12
+lastModified: 2026-05-12
 category: "Genetik"
 recommendationGrade: C
 image: /images/library/embriyo/pgt_sex.webp
-imageAlt: "PGT preimplantasyon genetik test ve cinsiyet belirleme embriyo analizi"
+imageAlt: "PGT ve embriyo genetik testinde cinsiyet kromozomu bilgisi"
 references:
+  - title: "Üremeye Yardımcı Tedavi Uygulamaları ve Üremeye Yardımcı Tedavi Merkezleri Hakkında Yönetmelik"
+    authors: "T.C. Sağlık Bakanlığı"
+    journal: "Resmi/Yasal Düzenleme"
+    url: "https://www.saglik.gov.tr/TR-10515/uremeye-yardimci-tedavi-uygulamalari-ve-uremeye-yardimci-tedavi-merkezleri-hakkinda-yonetmelik.html"
   - title: "ESHRE Task Force on Ethics and Law 14: equity of access to assisted reproductive technology"
     authors: "Pennings G, de Wert G, Shenfield F, et al."
     journal: "Human Reproduction"
     year: 2008
     doi: "10.1093/humrep/den037"
     pmid: "18321893"
-  - title: "Preimplantation genetic testing: a Practice Committee opinion"
-    authors: "Practice Committee of ASRM"
-    journal: "Fertility and Sterility"
-    year: 2008
-    doi: "10.1016/j.fertnstert.2007.10.010"
-    pmid: "17945219"
-  - title: "Sex selection and preimplantation genetic diagnosis"
-    authors: "Robertson JA"
-    journal: "Fertility and Sterility"
-    year: 2003
-    doi: "10.1016/S0015-0282(03)00100-X"
-  - title: "The welfare of the child in medically assisted reproduction"
-    authors: "ESHRE Task Force on Ethics and Law"
-    journal: "Human Reproduction"
-    year: 2007
-    doi: "10.1093/humrep/dem237"
-    pmid: "17728354"
-  - title: "Use of preimplantation genetic testing for monogenic defects (PGT-M) for adult-onset conditions: an Ethics Committee opinion"
-    authors: "Practice Committee of ASRM"
+  - title: "Use of preimplantation genetic testing for monogenic defects (PGT-M) for adult-onset conditions"
+    authors: "Ethics Committee of ASRM"
     journal: "Fertility and Sterility"
     year: 2018
     doi: "10.1016/j.fertnstert.2018.01.028"
@@ -47,93 +34,101 @@ references:
 ---
 
 import HizliCevap from '../../components/HizliCevap.astro';
+import Accordion from "../../components/global/Accordion.astro";
+import MedicalInfoBox from '../../components/global/MedicalInfoBox.astro';
+import QuoteBlock from '../../components/global/QuoteBlock.astro';
 import InlineEvidence from '../../components/InlineEvidence.astro';
+import EvidenceGradeCard from '../../components/EvidenceGradeCard.astro';
+import RevealScript from '../../components/global/RevealScript.astro';
 
-<HizliCevap question="PGT ile Cinsiyet Seçimi: Türkiye'de Yasal mı?">
-Tüp bebek tedavisinde PGT ile cinsiyet belirleme mümkün mü? Türkiye'deki yasal düzenlemeler, tıbbi endikasyon istisnaları ve sık sorulan sorular.
+<HizliCevap question="PGT ile cinsiyet seçimi Türkiye'de yasal mı?">
+Türkiye'de tıbbi olmayan nedenlerle PGT kullanarak cinsiyet seçimi yapılamaz. Sağlık Bakanlığı ÜYTE yönetmeliğinde, cinsiyetle ilgili ciddi kalıtsal hastalıktan kaçınma hali dışında doğacak çocuğun cinsiyetini belirleme amaçlı gonad veya embriyo seçimi ve transferi yasaktır. Bu nedenle “aile dengesi” veya kişisel tercih için cinsiyet seçimi uygulanmaz.
 </HizliCevap>
 
-## PGT ile Cinsiyet Belirlenebilir mi?
+<div class="mesh-hero pt-12 pb-20 px-4 md:px-0 -mx-4 md:-mx-0 mb-12 rounded-3xl shadow-sm border border-white/40" style="background: linear-gradient(135deg, #eef2ff 0%, #f8fafc 48%, #fff7ed 100%);">
+  <div class="max-w-4xl mx-auto" data-reveal>
+    <div class="inline-block px-4 py-1 rounded-full bg-indigo-100 text-indigo-800 text-sm font-bold mb-4">Yasal ve Etik Sınır</div>
+    <h1 class="text-4xl md:text-6xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-indigo-800 to-slate-900 leading-tight">{frontmatter.title}</h1>
+    <p class="text-xl md:text-2xl text-slate-700 font-medium max-w-2xl leading-relaxed">PGT cinsiyet kromozomlarını teknik olarak gösterebilir; ancak bu bilgi sosyal cinsiyet seçimi için kullanılamaz.</p>
+  </div>
+</div>
 
-[PGT (Preimplantasyon Genetik Test)](/makaleler/genetik-testler), tüp bebek tedavisinde embriyoların genetik yapısını transfer öncesinde inceleyen bir testtir. Bu test sırasında embriyonun cinsiyet kromozomları da (XX = kız, XY = erkek) tespit edilebilir <InlineEvidence grade="C" />. Ancak **tespit edebilmek ile cinsiyet seçimi yapabilmek aynı şey değildir.**
+<div class="max-w-4xl mx-auto space-y-12 blog-content-reveal">
 
----
+<MedicalInfoBox title="Hızlı Bakış: Teknik Bilgi ile Seçim Aynı Şey Değildir" icon="PGT" color="indigo">
+**PGT sırasında XX/XY bilgisi teknik olarak görülebilir; fakat Türkiye'de cinsiyet seçimi amacıyla embriyo seçimi yasaktır.** İstisna, cinsiyetle ilişkili ciddi kalıtsal hastalıktan kaçınma gibi tıbbi gerekçelerdir. <InlineEvidence grade="C" />
+</MedicalInfoBox>
 
-## Türkiye'de Cinsiyet Seçimi Yasaktır
+## İçindekiler
 
-Türkiye'de cinsiyet seçimi, **T.C. Sağlık Bakanlığı ÜYTE (Üremeye Yardımcı Tedavi Uygulamaları) Yönetmeliği** ile açıkça yasaklanmıştır <InlineEvidence grade="C" />. Bu yasak hem tıbbi olmayan (sosyal) nedenlerle hem de "aile dengesi" gibi gerekçelerle cinsiyet seçimini kapsar.
+- [PGT cinsiyeti gösterebilir mi?](#gosterebilir-mi)
+- [Türkiye'de yasal çerçeve](#yasal)
+- [Tıbbi istisna ne demektir?](#istisna)
+- [PGT'nin asıl amacı](#amac)
+- [Etik nedenler](#etik)
+- [Sıkça sorulan sorular](#faq)
 
-### Yasal Çerçeve
+<h2 id="gosterebilir-mi">PGT Cinsiyeti Gösterebilir mi?</h2>
 
-- Tüp bebek tedavisinde embriyo seçimi yalnızca **tıbbi endikasyonlarla** yapılabilir
-- Cinsiyet belirleme amacıyla PGT uygulanması **yasaktır**
-- Yönetmeliğe aykırı davranan sağlık kuruluşları hakkında idari ve cezai yaptırımlar uygulanır
+Evet, PGT analizinde embriyonun cinsiyet kromozomları teknik olarak görülebilir. Ancak “cinsiyet bilgisinin elde edilebilmesi” ile “cinsiyet seçimi yapılabilmesi” aynı şey değildir. Türkiye'deki uygulamada PGT'nin amacı embriyo seçimini tıbbi endikasyonlara göre yapmaktır.
 
-### Tek İstisna: Cinsiyete Bağlı Genetik Hastalıklar
+<h2 id="yasal">Türkiye'de Yasal Çerçeve</h2>
 
-Bazı genetik hastalıklar yalnızca belirli bir cinsiyeti etkiler. Bu hastalıklara **"X'e bağlı hastalıklar"** denir ve genellikle erkek çocuklarda ortaya çıkar <InlineEvidence grade="C" />. Örnekler:
+T.C. Sağlık Bakanlığı ÜYTE yönetmeliği, cinsiyetle ilgili ciddi kalıtsal hastalıktan kaçınma hali dışında doğacak çocuğun cinsiyetini belirleme amacıyla gonad veya embriyo seçimi ve transferi yapılamayacağını belirtir. <InlineEvidence grade="C" />
 
-- **Hemofili (Kan durdurulamama hastalığı):** Kanın pıhtılaşmasını sağlayan etkenlerin eksikliği
-- **Duchenne Kas Distrofisi (DMD):** Kasların ilerleyici şekilde güçsüzleşmesi
-- **Fragile X Sendromu:** Zihinsel gelişim geriliğine yol açabilen genetik bozukluk
+Bu şu anlama gelir:
 
-Bu hastalıkların taşıyıcısı olan çiftlerde, **hastalığın embriyoya geçişini önlemek amacıyla** [PGT-M](/pgt-merkezi) uygulanabilir. Bu durumda cinsiyet bilgisi hastalık taramasının doğal bir sonucu olarak ortaya çıkar — amaç cinsiyet seçimi değil, **hastalıktan korunmadır.**
+- Sosyal nedenlerle cinsiyet seçimi yapılamaz.
+- “Aile dengesi” gerekçesiyle cinsiyet seçimi yapılamaz.
+- PGT, tıbbi endikasyon olmadan cinsiyet seçimi için planlanamaz.
+- Cinsiyet bilgisi hasta talebiyle seçim amacıyla paylaşılmaz.
 
-> **Önemli:** Bu istisna yalnızca genetik testlerle doğrulanmış taşıyıcılık durumunda ve tıbbi gerekçeyle uygulanır. Sosyal nedenlerle cinsiyet seçimi hiçbir koşulda yapılmaz.
+<h2 id="istisna">Tıbbi İstisna Ne Demektir?</h2>
 
----
+Bazı ciddi kalıtsal hastalıklar cinsiyetle ilişkilidir. Özellikle X'e bağlı hastalıklarda erkek çocukların etkilenme riski daha yüksek olabilir. Hemofili, Duchenne kas distrofisi ve bazı X'e bağlı tablolar bu başlıkta değerlendirilir.
 
-## PGT'nin Asıl Amacı Nedir?
+Bu durumda amaç “kız/erkek seçmek” değil, ciddi bir genetik hastalığın çocuğa geçmesini önlemektir. Süreç genetik danışmanlık, taşıyıcılık doğrulaması ve çoğu zaman [PGT-M](/makaleler/pgt-m/) planıyla yürütülür.
 
-PGT, cinsiyet seçimi için değil, embriyoların genetik sağlığını değerlendirmek için kullanılan bir araçtır:
+<h2 id="amac">PGT'nin Asıl Amacı</h2>
 
-### [PGT-A (Anöploidi Taraması)](/makaleler/genetik-testler)
-- Kromozom sayısı anomalilerini tespit eder
-- [İleri yaş](/yas-ve-fertilite), tekrarlayan düşükler ve başarısız transferlerde önerilir
-- Amacı: genetik olarak normal embriyoyu seçerek başarı oranını artırmak
+PGT, embriyonun genetik açıdan değerlendirilmesi için kullanılan bir test ailesidir:
 
-### [PGT-M (Monogenik Hastalık Taraması)](/makaleler/genetik-testler)
-- Bilinen tek gen hastalıklarını embriyoda tarar
-- Taşıyıcı çiftlerde hastalığın çocuğa geçmesini önler
-- Kistik fibrozis, talasemi, SMA gibi hastalıklar için uygulanır
+| Test | Amaç |
+| :--- | :--- |
+| **PGT-A** | Kromozom sayısı anomalilerini değerlendirmek |
+| **PGT-M** | Bilinen tek gen hastalığını embriyoda taramak |
+| **PGT-SR** | Yapısal kromozom yeniden düzenlemelerini değerlendirmek |
 
-### PGT-SR (Yapısal Yeniden Düzenleme)
-- Kromozomlardaki yapısal bozuklukları (translokasyon vb.) tarar
-- Anne veya babada yapısal kromozom anomalisi saptanmışsa önerilir
+PGT'nin amacı, tıbbi gerekçeyle daha uygun embriyoyu seçmektir; sosyal tercih yapmak değildir.
 
----
+<h2 id="etik">Etik Nedenler</h2>
 
-## Neden Cinsiyet Seçimi Etik Açıdan Sorunludur?
+Tıbbi olmayan cinsiyet seçimi, cinsiyet ayrımcılığı, toplumsal dengesizlik, tıbbi kaynakların amaç dışı kullanımı ve gelecekte başka özelliklerin seçimine kapı açma gibi etik kaygılar taşır. Bu nedenle birçok meslek örgütü bu konuda dikkatli ve sınırlayıcı yaklaşım önerir.
 
-Dünya genelinde cinsiyet seçimi tartışmalı bir konudur. Uluslararası tıp otoriteleri (ESHRE, ASRM) bu konuda çeşitli kaygılara dikkat çekmektedir:
+<QuoteBlock author="tupbebek.com Tıbbi Danışma Kurulu">
+PGT'de etik sınır, teknolojinin yapabildiği her şeyin tıbben veya hukuken yapılabilir olmadığı gerçeğiyle başlar.
+</QuoteBlock>
 
-- **Cinsiyet ayrımcılığı riski:** Sosyal nedenlerle cinsiyet seçimi, toplumsal cinsiyet eşitsizliğini derinleştirebilir
-- **Demografik dengesizlik:** Bazı toplumlarda belirli bir cinsiyetin tercih edilmesi nüfus dengesini bozabilir
-- **Tıbbi kaynakların amacı dışında kullanımı:** PGT gibi değerli tıbbi araçların sosyal tercihler için kullanılması, asıl ihtiyacı olan hastaların erişimini zorlaştırabilir
-- **Etik sınırların belirsizleşmesi:** Cinsiyet seçimi, gelecekte diğer fiziksel özellik seçimlerine kapı açabilir
+<EvidenceGradeCard grade={frontmatter.recommendationGrade} />
 
----
+<h2 id="faq">Sıkça Sorulan Sorular</h2>
 
-## Sık Sorulan Sorular
+<Accordion title="PGT yaptırınca embriyonun cinsiyetini öğrenebilir miyim?">
+Türkiye'de cinsiyet bilgisi sosyal seçim amacıyla paylaşılmaz. Tıbbi gerekçe varsa genetik danışmanlık çerçevesinde değerlendirilir.
+</Accordion>
 
-**PGT yaptırdığımda embriyomun cinsiyetini öğrenebilir miyim?**
-PGT-A veya PGT-M sonuçlarında cinsiyet bilgisi teknik olarak ortaya çıkar. Ancak Türkiye'de bu bilgi hastalara **cinsiyet seçimi amacıyla** paylaşılmaz. Yasalar gereği, cinsiyet bilgisi yalnızca cinsiyete bağlı genetik hastalık riski olan çiftlere ve tıbbi gerekçeyle iletilir.
+<Accordion title="Aile dengesi için cinsiyet seçimi yapılabilir mi?">
+Hayır. Türkiye'de tıbbi olmayan nedenlerle cinsiyet seçimi yapılamaz.
+</Accordion>
 
-**Yurt dışında cinsiyet seçimi yaptırmak yasal mıdır?**
-Bazı ülkelerde cinsiyet seçimi serbesttir, bazılarında yasaktır. Ancak Türkiye'de faaliyet gösteren sağlık kuruluşlarının hastaları bu amaçla yurt dışına yönlendirmesi de yönetmeliğe aykırıdır.
+<Accordion title="X'e bağlı hastalık taşıyıcısıysak ne olur?">
+Genetik danışmanlık alınır. Taşıyıcılık doğrulanırsa PGT-M ile hastalıktan etkilenmeyen embriyoların seçimi tıbbi amaçla değerlendirilebilir.
+</Accordion>
 
-**Cinsiyete bağlı hastalık taşıyıcısıyız, ne yapmalıyız?**
-Doktorunuz sizi genetik danışmanlık birimine yönlendirecektir. Taşıyıcılığınız genetik testlerle doğrulandıktan sonra PGT-M ile hastalığın embriyoya geçip geçmediği taranabilir. Bu işlem tamamen yasal ve tıbbi endikasyona dayalıdır.
+<Accordion title="PGT-M cinsiyet seçimi midir?">
+Hayır. PGT-M bilinen tek gen hastalığını tarar. X'e bağlı hastalıklarda cinsiyet bilgisi sürecin parçası olabilir; amaç cinsiyet tercihi değil hastalıktan korunmadır.
+</Accordion>
 
-**PGT embriyoya zarar verir mi?**
-Modern biyopsi tekniklerinde embriyonun bebeğe dönüşecek kısmına dokunulmaz. Dış tabakadan (trofektoderm) birkaç hücre alınır. Embriyo hasar riski %1'in altındadır <InlineEvidence grade="C" />.
+</div>
 
----
-
-## Sonuç
-
-PGT, tüp bebek tedavisinde genetik hastalıkları önlemek ve sağlıklı embriyo seçimini sağlamak amacıyla kullanılan bilimsel bir araçtır. **Cinsiyet seçimi amacıyla kullanılması Türkiye'de yasaktır.** Tek istisna, cinsiyete bağlı genetik hastalıkların önlenmesi gibi tıbbi gerekçelerdir.
-
-Genetik hastalık taşıyıcılığı konusunda endişeniz varsa, doktorunuz ve genetik danışmanınız size en uygun yaklaşımı belirleyecektir. PGT hakkında detaylı bilgi için [Genetik Testler rehberimizi](/makaleler/genetik-testler) inceleyebilirsiniz.
-
----
+<RevealScript />
