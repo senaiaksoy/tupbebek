@@ -1,6 +1,6 @@
 ---
-title: "IVF Tedavisinde Kullanılan Protokoller. Uzun, Kısa ve Yeni Yaklaşımlar | İstanbul Tüp Bebek"
-description: "İstanbul'da tüp bebek (IVF) tedavisinde kullanılan uzun, kısa, mini IVF, doğal siklus ve DuoStim protokollerini avantajlarıyla keşfedin. Size en uygun protokolü öğrenin."
+title: "IVF Protokolleri: Antagonist, Uzun, Mini IVF ve DuoStim Rehberi"
+description: "IVF protokolü nasıl seçilir? Antagonist, uzun agonist, mini IVF, doğal siklus, PPOS, DuoStim, düşük AMH ve PCOS/OHSS riskinde güvenli tedavi yol haritası."
 publishDate: 2025-08-14
 author: "Doç. Dr. Senai Aksoy"
 authorTitle: "Kadın Hastalıkları ve Doğum Uzmanı"
@@ -8,99 +8,280 @@ authorCredentials: "Üreme Tıbbı ve Yardımcı Üreme Teknikleri"
 authorYoutube: "https://www.youtube.com/@DocentDrSenaiAksoy"
 medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Tıbbi Danışma Kurulu"
-reviewDate: 2026-04-09
-lastModified: 2026-05-11
+reviewDate: 2026-05-12
+lastModified: 2026-05-12
 category: "Tedavi Yöntemleri"
-recommendationGrade: B
+recommendationGrade: A
 image: /images/library/tedavi/ivf_tedavi_sureci.webp
-imageAlt: "IVF tedavisinde uzun ve kısa protokol karşılaştırması"
+imageAlt: "IVF tedavisinde antagonist, uzun protokol, mini IVF ve DuoStim seçenekleri"
 references:
+  - title: "ESHRE guideline: ovarian stimulation for IVF/ICSI: an update in 2025"
+    authors: "ESHRE Guideline Group on Ovarian Stimulation"
+    journal: "Human Reproduction"
+    year: 2026
+    doi: "10.1093/humrep/deag018"
+    url: "https://academic.oup.com/humrep/article/41/4/498/8495097"
+    pmid: "41732035"
+  - title: "Prevention and treatment of moderate and severe ovarian hyperstimulation syndrome: a guideline"
+    authors: "Practice Committee of the American Society for Reproductive Medicine"
+    journal: "Fertility and Sterility"
+    year: 2024
+    doi: "10.1016/j.fertnstert.2023.11.013"
+    pmid: "38099867"
+    url: "https://www.asrm.org/practice-guidance/practice-committee-documents/prevention-and-treatment-of-moderate-and-severe-ovarian-hyperstimulation-syndrome-a-guideline/"
   - title: "GnRH antagonists for assisted reproductive technology"
     authors: "Al-Inany HG, Youssef MA, Ayeleke RO et al."
     journal: "Cochrane Database of Systematic Reviews"
     year: 2016
     doi: "10.1002/14651858.CD001750.pub4"
     pmid: "27126581"
-  - title: "Mild stimulation for in vitro fertilization"
-    authors: "Nargund G, Fauser BC, Macklon NS et al."
-    journal: "Fertility and Sterility"
-    year: 2007
-    doi: "10.1016/j.fertnstert.2007.02.009"
-    pmid: "17669403"
-  - title: "Individualized controlled ovarian stimulation in expected poor-responders: an update"
-    authors: "Humaidan P, Alviggi C, Fischer R, Esteves SC"
-    journal: "Reproductive Biology and Endocrinology"
-    year: 2018
-    doi: "10.1186/s12958-018-0342-1"
-    pmid: "29523204"
+  - title: "POSEIDON: Patient-Oriented Strategies Encompassing IndividualizeD Oocyte Number"
+    authors: "POSEIDON Group, Alviggi C, Andersen CY, Buehler K, Conforti A, De Placido G et al."
+    journal: "Human Reproduction Open"
+    year: 2016
+    doi: "10.1093/hropen/hox012"
+    pmid: "31486803"
+  - title: "A comparison of progestin-primed ovarian stimulation and GnRH antagonist protocols in ART"
+    authors: "Wang M, Zheng L, Ma S et al."
+    journal: "Journal of Assisted Reproduction and Genetics"
+    year: 2025
+    doi: "10.1007/s10815-025-03612-4"
+    pmid: "40775480"
 ---
 
 import HizliCevap from '../../components/HizliCevap.astro';
+import Accordion from "../../components/global/Accordion.astro";
+import MedicalInfoBox from '../../components/global/MedicalInfoBox.astro';
+import Video from '../../components/global/Video.astro';
 import InlineEvidence from '../../components/InlineEvidence.astro';
 
-<HizliCevap question="IVF Tedavisinde Kullanılan Protokoller. Uzun, Kısa ve Yeni Yaklaşımlar | İstanbul Tüp Bebek hakkında bilmeniz gerekenler nelerdir?">
-İstanbul'da tüp bebek (IVF) tedavisinde kullanılan uzun, kısa, mini IVF, doğal siklus ve DuoStim protokollerini avantajlarıyla keşfedin. Size en uygun protokolü öğrenin.
+<HizliCevap question="IVF protokolü nasıl seçilir?">
+IVF protokolü; yaş, AMH, antral folikül sayısı (AFC), önceki tedavi yanıtı, PCOS/OHSS riski, endometriozis, sperm faktörü, PGT planı ve taze ya da dondurulmuş transfer hedefi birlikte değerlendirilerek seçilir. Güncel rehberlerde GnRH antagonist protokol, benzer etkinlik ve daha iyi güvenlik profili nedeniyle birçok hasta için ana başlangıç seçeneğidir; ancak düşük rezerv, yüksek yanıt, zaman baskısı veya özel tıbbi durumlarda protokol kişiselleştirilir.
 </HizliCevap>
 
-### Tüp Bebek Tedavisindeki Yol Haritanız: Sizin İçin Doğru Protokol Hangisi?
+<div class="mesh-hero pt-12 pb-20 px-4 md:px-0 -mx-4 md:-mx-0 mb-12 rounded-3xl shadow-sm border border-white/40" style="background: linear-gradient(135deg, #ecfeff 0%, #f0fdfa 45%, #fff7ed 100%);">
+  <div class="max-w-4xl mx-auto" data-reveal>
+    <div class="inline-block px-4 py-1 rounded-full bg-teal-100 text-teal-800 text-sm font-bold mb-4">
+      İlaç Şeması Değil, Kişisel Strateji
+    </div>
+    <h1 class="text-4xl md:text-6xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-teal-700 to-amber-700 leading-tight">
+      {frontmatter.title}
+    </h1>
+    <p class="text-xl md:text-2xl text-slate-700 font-medium max-w-2xl leading-relaxed">
+      Doğru protokol, en çok yumurtayı zorlamak değil; güvenlik, embriyo hedefi ve transfer zamanını birlikte planlamaktır.
+    </p>
+  </div>
+</div>
 
-[Tüp bebek tedavisi](/tup-bebek-ve-mikroenjeksiyon/), anne ve baba adayları için umut dolu bir yolculuğun başlangıcıdır. Bu yolculuğun temel adımlarından biri, yumurtalıklarınızı nazikçe uyararak sağlıklı ve kaliteli yumurtalar elde etmektir. Tıpkı her insanın parmak izinin farklı olması gibi, her kadının vücudu da tedaviye farklı yanıt verir. Bu nedenle doktorunuz, size özel bir "yol haritası" çizer. Bu haritaya **tedavi protokolü** diyoruz.
+<div class="max-w-4xl mx-auto space-y-12 blog-content-reveal">
 
-Peki, bu protokoller ne anlama geliyor ve hangisi sizin için uygun olabilir? Gelin, bu yol haritalarını birlikte daha yakından tanıyalım.
+<div data-reveal>
+<MedicalInfoBox title="Hızlı Bakış: Protokol Seçiminin Mantığı" icon="IVF" color="teal">
+**IVF protokolü tek başına başarı vaadi değildir; yumurtalık yanıtını ve güvenliği yöneten bir planlama aracıdır.** <InlineEvidence grade="A" /> Antagonist protokol, yüksek yanıt ve PCOS gibi OHSS riski olan hastalarda özellikle önemlidir. Düşük AMH veya zayıf yanıt öyküsünde ise hedef, gerçekçi yumurta/embriyo sayısına ulaşırken gereksiz ilaç yükünü artırmamaktır.
+</MedicalInfoBox>
+</div>
 
-[![Tüp Bebek Protokolleri – Uzun mu? Kısa mı?](https://img.youtube.com/vi/NLvPH9mZIaE/maxresdefault.jpg)](https://youtu.be/NLvPH9mZIaE)
+> Bu rehber, [IVF rehberi](/ivf-rehberi/) içindeki yumurtalık uyarımı bölümünü derinleştirir. Protokol seçimini transfer kararıyla birlikte okumak için [taze mi, dondurulmuş transfer mi?](/makaleler/taze-dondurulmus-transfer/) rehberine; rezerv değerlendirmesi için [düşük AMH](/makaleler/dusuk-amh-hamilelik/) sayfasına bakabilirsiniz.
 
-#### 1. Uzun Protokol: Kontrollü ve Planlı Bir Başlangıç
+## İçindekiler
 
-Bu protokol, adından da anlaşılacağı gibi biraz daha uzun soluklu ama bir o kadar da planlı bir yaklaşımdır. Genellikle yumurta rezervi iyi olan kadınlarda tercih edilir. <InlineEvidence grade="B" />
+- [IVF protokolü neyi belirler?](#protokol-nedir)
+- [Antagonist protokol](#antagonist)
+- [Uzun agonist protokol](#uzun)
+- [Mini IVF ve doğal siklus](#mini-dogal)
+- [DuoStim ve PPOS](#duostim-ppos)
+- [PCOS, düşük AMH ve endometriozis için karar ağacı](#karar-agaci)
+- [Türkçe kontrol notu](#turkce)
+- [Sıkça sorulan sorular](#faq)
 
-**Yolculuk Nasıl İlerler?**
+<div data-reveal>
+<Video id="NLvPH9mZIaE" />
+</div>
 
-1. **Hazırlık ve "Sıfırlama" Aşaması:** Tedavinin bu ilk adımı, vücudunuzun doğal hormon döngüsünü bir süreliğine "duraklatmak" gibidir. Genellikle bir önceki adet döngünüzün sonlarına doğru başlanan ilaçlarla, hormonlarınızın kontrolü tamamen doktorunuza geçer. Bu sayede, yumurtalarınızın gelişimini en başından itibaren yönetmek ve hepsinin aynı anda büyümesini sağlamak mümkün olur.
-2. **[Yumurtaları Uyarma Aşaması](/yumurtlama-takibi/):** Adet kanamanızla birlikte, yumurtalıklarınızı nazikçe "uyandırmaya" başlarız. Yaklaşık 10-12 gün süren iğnelerle, birden fazla yumurtanın olgunlaşması hedeflenir. Doktorunuz bu süreci ultrason ve kan testleriyle yakından takip ederek her şeyin yolunda gittiğinden emin olur.
-3. **Hasat Zamanı:** Yumurtalarınız (foliküller) istenen olgunluğa ulaştığında, "[çatlatma iğnesi](/tup-bebek-tedavisinde-catlatma-ignesi/)" olarak bilinen son bir dokunuş yapılır. Bu iğneden yaklaşık 34-36 saat sonra, yumurtalarınız nazikçe toplanmaya hazır hale gelir.
+<div data-reveal>
+<h2 id="protokol-nedir">IVF Protokolü Neyi Belirler?</h2>
 
-| Avantajları | Dezavantajları |
-| :--- | :--- |
-| ✅ Yumurtaların birbiriyle uyumlu büyümesi, genellikle daha fazla sayıda olgun yumurta anlamına gelir. | ❌ Hazırlık süreci nedeniyle tedavi toplamda 4-6 hafta sürebilir. |
-| ✅ Yumurtaların erken çatlama riski oldukça düşüktür. | ❌ Kullanılan ilaç miktarı ve süresi biraz daha fazla olduğu için maliyeti yüksek olabilir. |
-| ✅ Süreç daha öngörülebilir olduğu için planlama yapmak daha kolaydır. | ❌ İlaçlara bağlı sıcak basması veya baş ağrısı gibi yan etkiler görülebilir. |
+IVF protokolü, yumurtalıkların hangi ilaçlarla, hangi dozda ve hangi güvenlik önlemleriyle uyarılacağını belirleyen tedavi planıdır. Amaç yalnızca çok yumurta toplamak değildir; **uygun sayıda olgun yumurta**, güvenli süreç, iyi embriyo laboratuvarı planı ve doğru transfer zamanıdır.
 
-#### 2. Kısa Protokol: Daha Hızlı ve Dinamik Bir Yaklaşım
+Protokol seçilirken genellikle şu veriler birlikte değerlendirilir:
 
-Bu protokol, tedaviye daha hızlı başlamak isteyen veya yumurtalık rezervi daha hassas olan kadınlar için harika bir alternatiftir. <InlineEvidence grade="B" />
+- **Yaş ve embriyo hedefi:** Yaş arttıkça embriyo kromozom sağlığı daha belirleyici hale gelir.
+- **AMH ve AFC:** Yumurtalıkların düşük, normal veya yüksek yanıt verebileceğini öngörmeye yardım eder.
+- **Önceki IVF yanıtı:** Kaç folikül büyüdü, kaç yumurta toplandı, olgunluk ve döllenme nasıldı?
+- **PCOS veya yüksek yanıt riski:** OHSS riski nedeniyle antagonist, agonist trigger ve freeze-all planı öne çıkabilir.
+- **Düşük rezerv:** Yüksek dozun her zaman daha iyi sonuç vermediği; doz, zamanlama ve embriyo biriktirme stratejisinin tartışıldığı gruptur.
+- **Transfer planı:** PGT, progesteron yüksekliği, OHSS riski veya rahim hazırlığı varsa [dondurulmuş transfer](/makaleler/taze-dondurulmus-transfer/) gerekebilir.
+</div>
 
-**Yolculuk Nasıl İlerler?**
+<div data-reveal>
+<h2 id="antagonist">Antagonist Protokol: Güncel Pratikte Ana Omurga</h2>
 
-1. **Doğrudan Başlangıç:** Bu protokolde uzun bir "duraklatma" aşaması yoktur. Tedaviye adet döneminizin 2. veya 3. gününde, doğrudan yumurtalıkları uyaran iğnelerle başlanır.
-2. **Koruma ve Büyütme:** Yumurtalarınız büyümeye başladığında, onların kontrolsüz bir şekilde erken çatlamasını önlemek için tedaviye koruyucu bir ilaç daha eklenir. Bu süreç de yaklaşık 8-12 gün sürer.
-3. **Hasat Zamanı:** Tıpkı uzun protokolda olduğu gibi, yumurtalar ideal boyuta ulaştığında olgunlaştırma iğnesi yapılır ve 36 saat sonra toplama işlemi için hazır olursunuz.
+GnRH antagonist protokolünde yumurtalık uyarımı adetin erken günlerinde başlar. Foliküller büyümeye başladığında erken yumurtlamayı önlemek için antagonist ilaç eklenir. Süre genellikle daha kısadır ve özellikle OHSS riskini azaltmaya yönelik manevralara izin verir. <InlineEvidence grade="A" />
 
-| Avantajları | Dezavantajları |
-| :--- | :--- |
-| ✅ Tedavi süresi daha kısadır (yaklaşık 2-3 hafta), bu da daha az stres demektir. | ❌ Bazen yumurtalar farklı hızlarda büyüyebilir, bu da toplanan olgun yumurta sayısını etkileyebilir. |
-| ✅ Daha az ilaç kullanıldığı için yan etkiler ve maliyet genellikle daha düşüktür. | ❌ Koruyucu ilacın zamanlaması çok hassastır ve doktorunuzun takibi büyük önem taşır. |
-| ✅ Yumurtalık rezervi düşük olan kadınlar için daha güvenli ve etkili bir seçenektir. | ❌ Toplanan yumurta sayısı daha az olursa, istenen sayıda embriyo için birden fazla deneme gerekebilir. |
+**Kimlerde sık düşünülür?**
 
-#### 3. Daha Nazik ve Alternatif Yaklaşımlar
+- PCOS veya yüksek AMH/AFC olan hastalar
+- OHSS riski taşıyan yüksek yanıtlı olgular
+- İlk IVF siklusunda güvenli ve esnek başlangıç isteyen hastalar
+- Yumurta/embriyo dondurma veya PGT planı olan hastalar
 
-Her zaman "daha fazla" hormon, "daha iyi" sonuç demek değildir. Bazı durumlarda, daha yumuşak dokunuşlar en doğru tercih olabilir.
+**Neden güvenlik açısından güçlüdür?** Antagonist protokol, gerekli olduğunda hCG yerine GnRH agonist trigger kullanılmasına olanak tanır. ASRM, OHSS riski olan hastalarda GnRH agonist trigger ve gerekirse freeze-only yaklaşımını güçlü güvenlik seçenekleri arasında değerlendirir. <InlineEvidence grade="A" />
 
-* **Mikrodoz (Flare) Protokolü:** Bu yaklaşım, vücudun kendi hormon üretiminden kısa bir süreliğine "destek alarak" yumurtalıkları uyarmayı hedefler. Özellikle yumurta rezervi azalmış kadınlarda, mevcut potansiyeli en iyi şekilde kullanmak için tasarlanmıştır.
+Antagonist protokol “her hastada üstün sonuç verir” anlamına gelmez; ancak güncel kılavuzlarda benzer etkinlik ve daha iyi güvenlik nedeniyle birçok hasta için rasyonel başlangıç noktasıdır.
+</div>
 
-* **Mini IVF (Hafif Uyarım):** "Az ama öz" felsefesine dayanır. Amaç, onlarca yumurta yerine, daha az sayıda ama en kaliteli yumurtaları elde etmektir. Daha az ilaç kullanımı, daha düşük maliyet ve neredeyse sıfır yan etki riski sunar. <InlineEvidence grade="B" /> [Polikistik Over Sendromu (PCOS)](/makaleler/adet-duzensizligi-pcos/) olan veya ileri yaştaki kadınlar için ideal bir seçenek olabilir.
+<div data-reveal>
+<h2 id="uzun">Uzun Agonist Protokol: Daha Fazla Kontrol, Daha Uzun Hazırlık</h2>
 
-* **Doğal Siklus (İlaçsız Tüp Bebek):** Bu, tedavinin en "doğal" halidir. Vücudunuzun o ay kendi kendine büyüttüğü o tek ve değerli yumurtayı takip ederek çalışır. Hiçbir uyarıcı hormon kullanılmadığı için yan etkileri ve maliyeti en düşük yöntemdir. Ancak tek bir yumurtaya bağlı olduğu için başarı şansı daha düşüktür ve genellikle birkaç deneme gerektirebilir.
+Uzun agonist protokolde genellikle önce hipofiz baskılanır, ardından yumurtalık uyarımı başlar. Geçmişte çok yaygın kullanılmıştır; bugün ise hasta profiline göre daha seçici değerlendirilir.
 
-#### 4. Yenilikçi Bir Seçenek: DuoStim (Bir Ayda İki Şans)
+**Olası avantajları**
 
-Özellikle yumurta rezervi kısıtlı olan veya zamanla yarışan kadınlar için geliştirilmiş umut verici bir yöntemdir. DuoStim, aynı adet döngüsü içinde iki kez yumurta toplama imkanı sunarak kısa sürede daha fazla embriyo biriktirme şansı tanır. Bu yöntem, adeta zamanı lehinize çevirmenize yardımcı olur.
+- Folikül gelişimini senkronize etmeye yardım edebilir.
+- Bazı özel hasta gruplarında planlama kolaylığı sağlayabilir.
+- Endometriozis veya adenomyozis gibi durumlarda ön baskılama stratejileriyle birlikte tartışılabilir.
 
-#### Sonuç: Bu Yolculukta Yalnız Değilsiniz
+**Dikkat edilmesi gerekenler**
 
-Tüp bebek tedavisi, her adımı özenle planlanması gereken, kişiye özel bir yolculuktur. Uzun, kısa, mini veya doğal... Hangi protokolün seçileceği; yaşınız, yumurta rezerviniz, önceki tecrübeleriniz ve en önemlisi sizin beklentilerinizle şekillenir.
+- Tedavi süresi daha uzundur.
+- İlaç yükü ve yan etki algısı artabilir.
+- PCOS ve yüksek yanıtlı hastalarda OHSS güvenliği açısından antagonist seçenek çoğu zaman daha pratik olabilir.
 
-Bu süreçteki en önemli rehberiniz doktorunuzdur. Aklınızdaki tüm soruları sormaktan, endişelerinizi paylaşmaktan çekinmeyin. Sizin için en doğru ve en güvenli yol haritasını birlikte çizeceksiniz. Unutmayın, doğru yaklaşımla bu yolculuğun sonunda hayallerinize kavuşma şansınız her zaman vardır.
+Endometriozis veya adenomyozis varlığında protokol seçimi yalnızca hastalık adına göre yapılmaz. Endometrioma, AMH, geçirilmiş cerrahi ve transfer planı birlikte değerlendirilmelidir. Ayrıntılar için [endometrioma](/makaleler/endometrioma/) ve [endometriozis-IVF](/makaleler/endometriozis-tup-bebek/) rehberleri tamamlayıcıdır.
+</div>
 
-*Bu yazı Doç.Dr.Senai AKSOY tarafından yazılmış ve tıbbi yönden onaylanmıştır*
+<div data-reveal>
+<h2 id="mini-dogal">Mini IVF ve Doğal Siklus: Daha Az İlaç, Daha Dar Hedef</h2>
 
+Mini IVF, düşük doz ilaçlarla daha az sayıda yumurta elde etmeyi hedefler. Doğal siklus IVF ise o ay kendiliğinden gelişen folikülün takip edilmesine dayanır. Bu yaklaşımlar bazı hastalarda daha konforlu olabilir; ancak daha az yumurta, daha az embriyo seçeneği anlamına da gelebilir.
+
+| Yaklaşım | Ne Zaman Tartışılır? | Kritik Sınır |
+| :--- | :--- | :--- |
+| **Mini IVF** | Düşük rezerv, ilaç yükünü azaltma isteği, önceki yüksek dozlara zayıf yanıt | Daha az yumurta nedeniyle iptal veya embriyo olmama riski |
+| **Doğal siklus IVF** | Çok düşük rezerv, ilaç kullanımı sınırlı hasta, seçilmiş olgular | Tek yumurtaya bağlı olduğu için siklus iptali daha olasıdır |
+| **Modifiye doğal siklus** | Doğal folikül takibine az destek eklenen plan | Takip zamanlaması çok hassastır |
+
+Bu seçenekler “daha doğal olduğu için daha başarılı” değildir. Özellikle [düşük AMH](/makaleler/dusuk-amh-hamilelik/) durumunda amaç, beklentiyi gerçekçi tutmak ve her siklustan öğrenilen yanıtla sonraki planı iyileştirmektir.
+</div>
+
+<div data-reveal>
+<h2 id="duostim-ppos">DuoStim ve PPOS: Embriyo Biriktirme ve Freeze-All Planları</h2>
+
+**DuoStim**, aynı adet döngüsü içinde iki kez yumurtalık uyarımı ve iki kez yumurta toplama yapılmasıdır. En sık düşük rezerv, ileri yaş, zaman baskısı veya kısa sürede daha fazla oosit/embriyo biriktirme hedefi olan seçilmiş hastalarda tartışılır. Kanıt kalitesi her hasta grubu için aynı değildir; bu nedenle DuoStim standart bir ilk seçenek değil, seçilmiş durumlarda stratejik bir araçtır.
+
+**PPOS (progestin-primed ovarian stimulation)** ise erken yumurtlamayı önlemek için progestin kullanılan bir stimülasyon yaklaşımıdır. Transfer genellikle aynı siklusta yapılmaz; embriyolar dondurulur. Bu nedenle PPOS, özellikle baştan freeze-all veya PGT planlanan hastalarda gündeme gelebilir. <InlineEvidence grade="B" />
+
+Bu iki yaklaşımda ortak nokta şudur: Tedavi planı çoğu zaman [dondurulmuş transfer](/makaleler/taze-dondurulmus-transfer/) stratejisiyle birlikte düşünülür. Taze transfer hedefleniyorsa protokol ve lüteal faz planı ayrıca değerlendirilmelidir.
+</div>
+
+<div data-reveal>
+<h2 id="karar-agaci">Hasta Profiline Göre Protokol Karar Ağacı</h2>
+
+| Hasta Profili | Sık Tartışılan Yaklaşım | Ana Hedef |
+| :--- | :--- | :--- |
+| **PCOS, yüksek AMH/AFC, OHSS riski** | Antagonist protokol, düşük başlangıç dozu, agonist trigger, gerekirse freeze-all | Güvenliği artırmak ve OHSS riskini azaltmak |
+| **Normal rezerv, ilk IVF siklusu** | Antagonist protokol veya seçilmiş olguda agonist protokol | Dengeli yumurta sayısı ve kontrollü takip |
+| **Düşük AMH veya zayıf yanıt öyküsü** | Antagonist, mini IVF, mikrodoz/flare veya kişisel doz ayarı | Gerçekçi yumurta hedefi ve siklus iptalini azaltma |
+| **PGT planı** | Antagonist veya PPOS; çoğunlukla freeze-all | Embriyo biyopsisi ve sonuç bekleme sürecini güvenli yönetmek |
+| **Endometriozis/endometrioma** | Rezerv ve cerrahi öyküye göre kişisel protokol | AMH kaybını gözetmek ve transfer zamanını doğru seçmek |
+| **Acil fertilite koruma** | Random-start veya antagonist temelli hızlı başlangıç | Tedaviyi geciktirmeden yumurta/embriyo dondurmak |
+
+PCOS grubunda [adet düzensizliği ve PCOS](/makaleler/adet-duzensizligi-pcos/) rehberi; düşük rezerv grubunda [kaç yumurta gerekir?](/makaleler/kac-yumurta-gerekir/) ve [laboratuvar raporu yorumlama](/makaleler/laboratuvar-raporu-yorumlama/) sayfaları protokol kararını daha net bağlama oturtur.
+</div>
+
+<div data-reveal>
+<h2 id="riskler">Protokol Seçiminde Güvenlik Başlıkları</h2>
+
+**OHSS riski:** Karın şişliği, ağrı, bulantı, nefes darlığı veya hızlı kilo artışı gibi belirtilerle seyredebilir. Yüksek riskte antagonist protokol, GnRH agonist trigger, cabergoline ve freeze-only stratejileri gündeme gelebilir. <InlineEvidence grade="A" />
+
+**Yüksek doz yanılgısı:** Daha yüksek gonadotropin dozu her zaman daha iyi embriyo sonucu anlamına gelmez. Özellikle düşük rezervde gereksiz doz artışı maliyet ve yan etkiyi artırabilir.
+
+**Takip aralığı:** Ultrason ve gerektiğinde estradiol/progesteron takibi, erken yumurtlama, aşırı yanıt veya yetersiz yanıt riskini yönetmek için önemlidir.
+
+**Taze transfer kararı:** Progesteron yüksekliği, OHSS riski veya endometrium uyumsuzluğu varsa taze transfer ertelenebilir. Bu karar “başarısızlık” değil, bazen güvenli stratejidir.
+</div>
+
+<div data-reveal>
+<h2 id="turkce">Türkçe Kontrol Notu</h2>
+
+Bu sayfada “tek doğru protokol”, iddialı sonuç vaadi veya “herkese uygundur” dili yerine hasta profiline göre karar anlatımı kullandık. İngilizce kısaltmaları ilk kullanımda açıkladık: PPOS, progestin ile baskılanmış ovarian stimülasyon; OHSS, yumurtalıkların aşırı uyarılması sendromu; AFC, antral folikül sayısıdır.
+</div>
+
+<div data-reveal>
+<h2 id="faq">Sıkça Sorulan Sorular</h2>
+
+<Accordion title="IVF'te tek doğru protokol var mı?">
+Tek bir doğru protokol yoktur. Yaş, AMH, AFC, PCOS/OHSS riski, önceki yanıt, sperm faktörü, PGT planı ve transfer hedefi birlikte değerlendirilir. Güncel pratikte antagonist protokol birçok hasta için güvenli başlangıç seçeneğidir; ancak her hastada otomatik tercih değildir.
+</Accordion>
+
+<Accordion title="Antagonist protokol neden sık kullanılır?">
+Tedavi süresi görece kısadır, erken yumurtlamayı kontrol eder ve OHSS riski olan hastalarda GnRH agonist trigger ile güvenlik stratejisi kurmaya olanak tanır. Bu nedenle PCOS ve yüksek yanıtlı hastalarda özellikle değerlidir.
+</Accordion>
+
+<Accordion title="Düşük AMH varsa yüksek doz ilaç daha mı iyi sonuç verir?">
+Her zaman değil. Düşük AMH'de yüksek dozun yumurta sayısını sınırsız artırması beklenmez. Doz, önceki yanıt, AFC, yaş ve embriyo hedefiyle birlikte kişiselleştirilmelidir.
+</Accordion>
+
+<Accordion title="DuoStim herkese uygun mudur?">
+Hayır. DuoStim daha çok düşük rezerv, ileri yaş, zaman baskısı veya embriyo biriktirme hedefi olan seçilmiş hastalarda tartışılır. Daha yoğun bir süreçtir ve çoğu zaman dondurulmuş transfer planıyla birlikte ilerler.
+</Accordion>
+
+<Accordion title="PCOS hastalarında hangi protokol daha güvenlidir?">
+PCOS ve yüksek yanıt riski olan hastalarda antagonist protokol, düşük doz başlangıç, GnRH agonist trigger ve gerekirse freeze-all stratejisi OHSS riskini azaltmak için sık kullanılan güvenlik hattıdır.
+</Accordion>
+</div>
+
+<div data-reveal class="mt-12 bg-slate-50 p-8 rounded-3xl border border-slate-200">
+**Sizin İçin Seçtiğimiz Diğer Rehberler:**
+- [IVF rehberi: tedavi yol haritası](/ivf-rehberi/)
+- [Taze mi, dondurulmuş transfer mi?](/makaleler/taze-dondurulmus-transfer/)
+- [Düşük AMH ile gebelik ve IVF](/makaleler/dusuk-amh-hamilelik/)
+- [PCOS ve adet düzensizliği](/makaleler/adet-duzensizligi-pcos/)
+- [Endometrioma, AMH ve IVF kararı](/makaleler/endometrioma/)
+- [Beta-hCG testi ve transfer sonrası takip](/makaleler/beta-hcg-testi/)
+</div>
+
+</div>
+
+export const ivfProtocolsFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "IVF'te tek doğru protokol var mı?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Tek bir doğru protokol yoktur. Yaş, AMH, AFC, PCOS/OHSS riski, önceki yanıt, sperm faktörü, PGT planı ve transfer hedefi birlikte değerlendirilir. Güncel pratikte antagonist protokol birçok hasta için güvenli başlangıç seçeneğidir; ancak her hastada otomatik tercih değildir."
+    }
+  }, {
+    "@type": "Question",
+    "name": "Antagonist protokol neden sık kullanılır?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Antagonist protokol tedavi süresini kısa tutabilir, erken yumurtlamayı kontrol eder ve OHSS riski olan hastalarda GnRH agonist trigger ile güvenlik stratejisi kurmaya olanak tanır."
+    }
+  }, {
+    "@type": "Question",
+    "name": "Düşük AMH varsa yüksek doz ilaç daha mı iyi sonuç verir?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Her zaman değil. Düşük AMH'de yüksek dozun yumurta sayısını sınırsız artırması beklenmez. Doz, önceki yanıt, AFC, yaş ve embriyo hedefiyle birlikte kişiselleştirilmelidir."
+    }
+  }, {
+    "@type": "Question",
+    "name": "DuoStim herkese uygun mudur?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Hayır. DuoStim daha çok düşük rezerv, ileri yaş, zaman baskısı veya embriyo biriktirme hedefi olan seçilmiş hastalarda tartışılır. Daha yoğun bir süreçtir ve çoğu zaman dondurulmuş transfer planıyla birlikte ilerler."
+    }
+  }, {
+    "@type": "Question",
+    "name": "PCOS hastalarında hangi protokol daha güvenlidir?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "PCOS ve yüksek yanıt riski olan hastalarda antagonist protokol, düşük doz başlangıç, GnRH agonist trigger ve gerekirse freeze-all stratejisi OHSS riskini azaltmak için sık kullanılan güvenlik hattıdır."
+    }
+  }]
+};
+
+<script type="application/ld+json" set:html={JSON.stringify(ivfProtocolsFaqSchema)} />
