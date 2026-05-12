@@ -1,6 +1,6 @@
 ---
-title: "Miyomlar ve Tüp Bebek. Ebeveynliğe Giden Yolda Engelleri Aşmak - Kısırlık Yaşayan Çiftler İçin Bir Rehber"
-description: "Miyomlarınız mı var? Tüp bebek (IVF) tedavisi mi düşünüyorsunuz? Bu makalede, miyomların doğurganlığı nasıl etkilediğini ve tedavi seçeneklerinizi keşfedin."
+title: "Miyomlar ve Tüp Bebek: Transfer Öncesi Ameliyat Gerekir mi?"
+description: "Miyomlar tüp bebek başarısını etkiler mi? Submüköz, intramural ve subseröz miyomlarda IVF öncesi ameliyat, takip, transfer erteleme ve rahim içi değerlendirme kararları."
 publishDate: 2025-02-02
 author: "Doç. Dr. Senai Aksoy"
 authorTitle: "Kadın Hastalıkları ve Doğum Uzmanı"
@@ -8,114 +8,299 @@ authorCredentials: "Üreme Tıbbı ve Yardımcı Üreme Teknikleri"
 authorYoutube: "https://www.youtube.com/@DocentDrSenaiAksoy"
 medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Tıbbi Danışma Kurulu"
-reviewDate: 2026-04-09
-lastModified: 2026-05-11
+reviewDate: 2026-05-12
+lastModified: 2026-05-12
 category: "Tüp Bebek"
 recommendationGrade: B
 image: /images/library/hastalik/miyom_ivf.webp
-imageAlt: "miyomlar ve tüp bebek tedavisi sürecindeki etkileri"
+imageAlt: "miyomlar ve tüp bebek tedavisi öncesinde rahim içi değerlendirme"
 references:
-  - title: "The effect of intramural fibroids without uterine cavity involvement on the outcome of IVF treatment: a systematic review and meta-analysis"
-    authors: "Sunkara SK, Khairy M, El-Toukhy T et al."
-    journal: "Human Reproduction"
-    year: 2010
-    doi: "10.1093/humrep/dep457"
-    pmid: "20089521"
-  - title: "Effect of non-cavity-distorting intramural fibroids on the outcomes of in vitro fertilization-embryo transfer: a retrospective matched cohort study"
-    authors: "Yan L, Ding L, Li C et al."
-    journal: "Fertility and Sterility"
-    year: 2014
-    doi: "10.1016/j.fertnstert.2014.02.009"
-    pmid: "24613536"
-  - title: "Removal of myomas that do not distort the uterine cavity: a committee opinion"
+  - title: "Removal of myomas in asymptomatic patients to improve fertility and/or reduce miscarriage rate: a guideline"
     authors: "Practice Committee of the American Society for Reproductive Medicine"
     journal: "Fertility and Sterility"
     year: 2017
-    doi: "10.1016/j.fertnstert.2017.03.038"
+    doi: "10.1016/j.fertnstert.2017.06.034"
+    pmid: "28865538"
+    url: "https://www.asrm.org/practice-guidance/practice-committee-documents/removal-of-myomas-in-asymptomatic-patients-to-improve-fertility-andor-reduce-miscarriage-rate-a-guideline-2017/"
+  - title: "Intramural Leiomyomas and Fertility: A Systematic Review and Meta-Analysis"
+    authors: "Uterine fibroid meta-analysis group"
+    journal: "Obstetrics & Gynecology"
+    year: 2024
+    pmid: "38935974"
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11819907/"
+  - title: "Myomectomy for intramural fibroids prior to in vitro fertilization/intracytoplasmic sperm injection cycles, a conundrum: Systematic review and meta-analysis"
+    authors: "Reproductive Medicine and Surgery group"
+    journal: "Reproductive BioMedicine Online"
+    year: 2026
+    pmid: "41408877"
+    url: "https://pubmed.ncbi.nlm.nih.gov/41408877/"
+  - title: "Management of Symptomatic Uterine Leiomyomas"
+    authors: "American College of Obstetricians and Gynecologists"
+    journal: "ACOG Practice Bulletin No. 228"
+    year: 2021
+    url: "https://www.acog.org/clinical/clinical-guidance/practice-bulletin/articles/2021/06/management-of-symptomatic-uterine-leiomyomas"
+  - title: "Uterine Fibroids"
+    authors: "American College of Obstetricians and Gynecologists"
+    journal: "ACOG Patient FAQ"
+    url: "https://www.acog.org/womens-health/faqs/uterine-fibroids"
+  - title: "Uterine Morcellation for Presumed Leiomyomas"
+    authors: "American College of Obstetricians and Gynecologists"
+    journal: "ACOG Committee Opinion"
+    year: 2021
+    url: "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2021/03/uterine-morcellation-for-presumed-leiomyomas"
 ---
 
 import HizliCevap from '../../components/HizliCevap.astro';
+import Accordion from "../../components/global/Accordion.astro";
+import MedicalInfoBox from '../../components/global/MedicalInfoBox.astro';
+import QuoteBlock from '../../components/global/QuoteBlock.astro';
+import Video from '../../components/global/Video.astro';
 import InlineEvidence from '../../components/InlineEvidence.astro';
+import EvidenceGradeCard from '../../components/EvidenceGradeCard.astro';
+import RevealScript from '../../components/global/RevealScript.astro';
 
-<HizliCevap question="Miyomlar ve Tüp Bebek. Ebeveynliğe Giden Yolda Engelleri Aşmak - Kısırlık Yaşayan Çiftler İçin Bir Rehber hakkında bilmeniz gerekenler nelerdir?">
-Miyomlarınız mı var? Tüp bebek (IVF) tedavisi mi düşünüyorsunuz? Bu makalede, miyomların doğurganlığı nasıl etkilediğini ve tedavi seçeneklerinizi keşfedin.
+<HizliCevap question="Miyom varken tüp bebek yapılabilir mi?">
+Evet, miyom varken tüp bebek yapılabilir; ancak transfer öncesi en kritik soru miyomun rahim iç boşluğunu bozup bozmadığıdır. Submüköz veya kaviteyi bozan miyomlarda ameliyat daha güçlü gündeme gelir. Küçük, belirti vermeyen ve rahim dışına büyüyen subseröz miyomlarda çoğu zaman takip yeterlidir.
 </HizliCevap>
 
-# Miyomlar ve Tüp Bebek: Ebeveynliğe Giden Yolda Engelleri Aşmak - Kısırlık Yaşayan Çiftler İçin Bir Rehber
+<div class="mesh-hero pt-12 pb-20 px-4 md:px-0 -mx-4 md:-mx-0 mb-12 rounded-3xl shadow-sm border border-white/40" style="background: linear-gradient(135deg, #fff7ed 0%, #fef2f2 44%, #f8fafc 100%);">
+  <div class="max-w-4xl mx-auto" data-reveal>
+    <div class="inline-block px-4 py-1 rounded-full bg-orange-100 text-orange-800 text-sm font-bold mb-4">
+      IVF Öncesi Rahim Haritası
+    </div>
+    <h1 class="text-4xl md:text-6xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-orange-700 to-rose-700 leading-tight">
+      {frontmatter.title}
+    </h1>
+    <p class="text-xl md:text-2xl text-slate-700 font-medium max-w-2xl leading-relaxed">
+      Tüp bebekte miyom kararı “miyom var mı?” sorusundan çok “embriyonun yerleşeceği alan etkileniyor mu?” sorusuyla verilir.
+    </p>
+  </div>
+</div>
 
-Kısırlıkla mücadele eden ve tüp bebek (IVF) tedavisi gören birçok çift için yolculuk duygusal ve fiziksel olarak zorlu olabilir. Sıkça karşılaşılan engellerden biri de uterus miyomlarının varlığıdır. Bu iyi huylu tümörler IVF sürecini karmaşık hale getirebilir, ancak doğru bilgi ve yaklaşımla ebeveynlik hayalinize ulaşmak için seçenekler mevcuttur. Bu makale, kısırlık yaşayan çiftler için özel olarak hazırlanmış olup, miyomların IVF'i nasıl etkilediği, mevcut tedavi seçenekleri ve başarı şansınızı nasıl en üst düzeye çıkarabileceğiniz hakkında netlik sağlamayı amaçlamaktadır.
+<div class="max-w-4xl mx-auto space-y-12 blog-content-reveal">
 
-## Miyomları Anlamak
+<div data-reveal>
+<MedicalInfoBox title="Hızlı Bakış: Transfer Öncesi En Kritik Ayrım" icon="IVF" color="orange">
+**Rahim iç boşluğunu bozan miyomlar IVF sonucunu etkileyebilir; rahim dışına büyüyen, belirti vermeyen subseröz miyomlar ise çoğu zaman transfer öncesi ameliyat gerektirmez.** İntramural miyomlar gri bölgedir: boyut, sayı, kaviteye yakınlık, önceki transfer öyküsü ve cerrahi risk birlikte değerlendirilir. <InlineEvidence grade="B" />
+</MedicalInfoBox>
+</div>
 
-Miyomlar (uterus miyomları), rahimde veya çevresinde gelişen iyi huylu tümörlerdir <InlineEvidence grade="B" />. "Tümör" kelimesi kulağa korkutucu gelse de, miyomlar genellikle kanserli değildir ve kas hücreleri ile lifli dokuların birleşiminden oluşur. Kadınların %80'e varan bir kısmı 50 yaşına kadar miyom geliştirir <InlineEvidence grade="B" />. Her zaman semptomlara neden olmasalar da, boyutları ve konumları doğurganlığı önemli ölçüde etkileyebilir. Miyomlar küçük bir tohum kadar küçük olabileceği gibi uterus boşluğunu bozacak kadar büyük de olabilir.
+> Bu rehber, [miyom ameliyatı karar rehberi](/makaleler/miyom-ameliyati/) ile birlikte okunmalıdır. Buradaki odak ameliyat tekniği değil, IVF öncesi transfer zamanlaması ve rahim içi hazırlıktır.
 
-[![Miyomlar ve Kısırlık - Video](https://img.youtube.com/vi/R0mi5CpAVrM/0.jpg)](https://www.youtube.com/watch?v=R0mi5CpAVrM)
+## İçindekiler
 
-### Miyom Türleri ve Belirtileri
+- [Miyom IVF sürecinde neden önemlidir?](#neden-onemli)
+- [Miyom tipine göre IVF kararı](#tipler)
+- [Transferden önce hangi testler yapılır?](#testler)
+- [Ameliyat mı, embriyo dondurma mı, takip mi?](#strateji)
+- [İntramural miyomlarda gri alan](#intramural)
+- [Gebelik ve doğum sürecinde riskler](#gebelik)
+- [Sıkça sorulan sorular](#faq)
 
-Miyomların yerleşim yerine göre türleri ve belirtileri farklılık gösterir:
+<div data-reveal>
+<Video id="R0mi5CpAVrM" />
+</div>
 
-* **Submukozal Miyomlar:** Rahim iç yüzeyinin altında bulunur. Sık kanama ve üreme problemlerine neden olur. IVF başarısını en çok etkileyen türdür.
-* **İntramural Miyomlar:** En yaygın tür. Rahim duvarının içinde yer alır ve büyüklüğüne göre çeşitli semptomlar gösterebilir.
-* **Subserozal Miyomlar:** Rahim dışında gelişir ve genellikle saplı yapıdadır. Doğrudan rahim boşluğunu etkilemez.
+<div data-reveal>
+<h2 id="neden-onemli">Miyom IVF Sürecinde Neden Önemlidir?</h2>
 
-**Yaygın Belirtiler:**
-* Ağrılı ve şiddetli adet kanamaları
-* Normalden daha uzun süren kanamalar
-* Karın alt bölgesinde basınç hissi ve ağrı
+Miyomlar rahmin kas tabakasından gelişen iyi huylu kitlelerdir. Tıbbi raporlarda leiomyom veya fibroid olarak da geçebilir. Çok sık görülürler; fakat her miyom tüp bebek başarısını düşürmez.
 
-## Miyomlar IVF'i Nasıl Etkiler?
+IVF açısından önemli olan noktalar şunlardır:
 
-Tüp bebek (IVF), yumurtaların alınmasını, laboratuvarda döllenmesini ve ardından embriyoların rahme aktarılmasını içerir. Miyomlar bu sürecin çeşitli aşamalarını bozabilir:
+- Embriyonun yerleşeceği rahim iç boşluğu düzgün mü?
+- Endometrium çizgisi miyom nedeniyle bozuluyor mu?
+- Transfer kateterinin geçiş yolu zorlaşıyor mu?
+- Aşırı kanama, anemi veya ağrı tedavi zamanlamasını etkiliyor mu?
+- Miyom yumurta toplama sırasında yumurtalığa erişimi zorlaştırıyor mu?
+- Önceki başarısız transfer veya düşük öyküsü var mı?
 
-* **Yumurta Alımıyla İlgili Sorunlar:** Özellikle yumurtalıklara yakın olan büyük miyomlar, yumurtaların alınmasını zorlaştırabilir. Dr. Aksoy, "Yumurtalıklara erişim engellenirse, başarılı yumurta alımı zorlaşır," diye açıklıyor.
-* **Embriyo İmplantasyonunda Zorluklar:** Embriyoların implante olabilmesi ve büyüyebilmesi için rahmin sağlıklı bir astara sahip olması gerekir. Uterus boşluğuna doğru çıkıntı yapan miyomlar (submukozal miyomlar) bu astarı bozabilir ve embriyonun başarılı bir şekilde implante olmasını zorlaştırabilir. Çalışmalar, submukozal miyomların IVF başarı oranlarını %15 ila %21 oranında azaltabileceğini göstermektedir <InlineEvidence grade="B" />.
-* **Azalmış Kan Akışı:** Miyomlar ayrıca uterusa giden kan akışını da etkileyerek implante olmuş bir embriyonun gelişimi için gerekli olan besin tedarikini azaltabilir. Dr. Aksoy, "Yeterli kan akışı çok önemlidir ve miyomlar bunu bozabilir, bu da daha az elverişli bir uterus ortamına yol açar," diye ekliyor.
+Bu nedenle sadece ultrason raporundaki “miyom izlendi” cümlesiyle karar verilmez. Konum, boyut, rahim iç boşluğu ilişkisi ve hastanın IVF planı birlikte okunur.
+</div>
 
-## Miyomların Üreme ve Gebelik Üzerindeki Etkileri
+<div data-reveal>
+<h2 id="tipler">Miyom Tipine Göre IVF Kararı</h2>
 
-Miyomlar, IVF sürecinin ötesinde gebelik ve fertilite üzerinde de önemli etkilere sahiptir:
+| Miyom Tipi | Rahim İç Boşluğu İlişkisi | IVF Öncesi Pratik Yaklaşım |
+| :--- | :--- | :--- |
+| **Submüköz miyom** | Rahim içine doğru büyür | Transfer öncesi histeroskopik çıkarma güçlü biçimde değerlendirilir |
+| **Kaviteyi bozan intramural miyom** | Rahim duvarındadır ama iç boşluğu iter | Cerrahi sık gündeme gelir; yaş ve embriyo planı dikkate alınır |
+| **Kaviteyi bozmayan intramural miyom** | Rahim duvarında kalır | Gri alan; boyut, sayı ve önceki IVF öyküsüyle karar verilir |
+| **Subseröz miyom** | Rahim dışına doğru büyür | Belirti veya teknik sorun yoksa çoğunlukla takip edilir |
 
-### Döllenme Üzerine Etkileri
+ASRM, kaviteyi bozan miyomlarda cerrahinin klinik gebelik oranını iyileştirebileceğine dair orta düzey kanıt olduğunu; subseröz miyomların çıkarılmasının fertiliteyi artırdığına dair yeterli kanıt olmadığını bildirir. <InlineEvidence grade="B" />
 
-* **Tüplerin Tıkanması:** Özellikle submukozal ve bazı intramural miyomlar fallop tüplerini tıkayarak sperm ve yumurta birleşmesini engelleyebilir.
-* **Rahim Boşluğunun Deformasyonu:** Submukozal miyomlar rahim içini deforme ederek döllenmiş yumurtanın yerleşimini ve ilk gelişim aşamalarını zorlaştırabilir.
-* **Kan Akışının Engellenmesi:** Miyomlar, rahim iç yüzeyine olan kan akışını bozarak implantasyon için elverişli ortamın oluşmasını engelleyebilir <InlineEvidence grade="B" />.
+<h3>Submüköz miyom: transfer öncesi en net grup</h3>
 
-### Gebelik Üzerine Etkileri
+Submüköz miyom rahim iç boşluğuna uzanır. Küçük bile olsa embriyonun yerleşeceği alanı bozabilir, kanamayı artırabilir ve transfer kararını etkileyebilir. Bu grupta çoğu zaman histeroskopik miyomektomi düşünülür.
 
-* **Mekanik Komplikasyonlar:** Rahim iç yüzeyini deforme eden miyomlar, düşük riskini artırabilir ve doğum esnasında komplikasyonlara yol açabilir.
-* **Plasental Sorunlar:** Plasental ayrılma ve intrauterin büyüme kısıtlılığı gibi durumlara sebep olabilir.
+<h3>Subseröz miyom: çoğu zaman IVF engeli değildir</h3>
 
-## Tedavi Seçenekleri: Miyomektomi ve Cerrahi Yöntemler
+Subseröz miyomlar rahmin dış yüzeyine doğru büyür. Rahim iç boşluğunu bozmadıkları sürece embriyo tutunması üzerinde doğrudan etkileri sınırlıdır. Ancak çok büyük olup ağrı, bası veya yumurta toplama erişim sorunu yaparlarsa karar değişebilir.
+</div>
 
-Miyomlarınız varsa ve IVF görüyorsanız, başarı şansınızı artırmak için çeşitli tedavi seçenekleri mevcuttur. Miyomektomi, rahimi koruyarak gerçekleştirilen cerrahi işlem olup özellikle fertiliteyi artırmak isteyen kadınlar için önerilir.
+<div data-reveal>
+<h2 id="testler">Transferden Önce Hangi Testler Yapılır?</h2>
 
-### Miyomektomi Ne Zaman Gereklidir?
+Tüp bebek öncesi miyom değerlendirmesinde amaç, rahim iç boşluğunu netleştirmektir. Standart ultrason başlangıç için değerlidir; fakat her zaman tek başına yeterli olmaz.
 
-1. **Şiddetli semptomlar:** Ağır adet kanamaları ve şiddetli sancılar yaşam kalitesini etkilediğinde.
-2. **Rahim boşluğunu etkileyen miyomlar:** Submukozal ve büyük intramural miyomlar embriyonun yerleşimini engellediğinde.
-3. **Başarısız medikal tedaviler:** Hormon tedavileri gibi daha az invaziv yöntemler işe yaramadığında.
-4. **Üreme tekniklerine hazırlık:** IVF öncesinde rahim içi bozuklukları düzeltmek gerektiğinde.
-5. **Açıklanamayan infertilite:** Miyomlar dışında başka bir engel tespit edilmediğinde.
-6. **Hızlı büyüyen miyomlar:** Diğer komplikasyonları önlemek için erken müdahale gerektiğinde.
+| Değerlendirme | Ne İşe Yarar? | Ne Zaman Öne Çıkar? |
+| :--- | :--- | :--- |
+| **Transvajinal ultrason** | Miyomun boyutunu, sayısını ve yerleşimini gösterir | İlk değerlendirme |
+| **SIS / salin sonografi** | Rahim içine sıvı vererek kaviteyi daha net gösterir | Kavite etkisi şüpheliyse |
+| **Histeroskopi** | Rahim içini doğrudan görür, bazı lezyonları aynı seansta tedavi edebilir | Submüköz miyom veya polip şüphesinde |
+| **MRI** | Çok sayıda, büyük veya karmaşık miyomlarda haritalama sağlar | Cerrahi planlama veya atipik görüntü varsa |
 
-### Miyomektomi Yöntemleri
+Miyomla birlikte polip, septum, adezyon veya hidrosalpinx gibi başka faktörler de varsa, transfer planı tek başına miyoma göre değil tüm rahim-tüp haritasına göre yapılır.
+</div>
 
-* **Histeroskopik Miyomektomi:** Rahim ağzından yapılan, kesi gerektirmeyen yöntem. Submukozal miyomlar için en ideal seçenektir. Rahim boşluğunu iyileştirerek implantasyon şansını artırır.
-* **Laparoskopik Miyomektomi:** Karında küçük kesilerle yapılır. Az sayıda ve küçük-orta boyutlu miyomlar için idealdir. Daha az ağrı, hızlı iyileşme ve düşük yara izi riski sağlar.
-* **Açık Miyomektomi (Laparotomi):** Miyomlar çok büyük veya çok sayıda olduğunda gerekli olabilir. Karında daha büyük bir kesi yapılır. Minimal invaziv teknikler tercih edilse de, belirli durumlarda en kapsamlı çözümü sunar.
+<div data-reveal>
+<h2 id="strateji">Ameliyat mı, Embriyo Dondurma mı, Takip mi?</h2>
 
-## Karar Verme Süreci
+IVF öncesinde üç ana strateji vardır. Doğru sıra hastanın yaşına, yumurtalık rezervine, embriyo sayısına ve cerrahi riskine göre değişir.
 
-Sizin için en iyi tedavi seçeneği, miyomlarınızın büyüklüğü, konumu ve sayısı gibi çeşitli etkenlere bağlı olacaktır. Dr. Aksoy gibi bir kısırlık uzmanı, ultrason, salin infüzyon sonohisterografi (SIS) ve manyetik rezonans görüntüleme (MRI) gibi gelişmiş görüntüleme tekniklerini kullanarak miyomlarınızı değerlendirecek ve en uygun tedavi planını önerecektir.
+<div class="grid md:grid-cols-3 gap-5 my-8">
+  <div class="bg-white p-5 rounded-2xl border border-rose-200 shadow-sm">
+    <h3 class="text-lg font-bold text-rose-800 mb-2">Önce Ameliyat</h3>
+    <p>Kaviteyi bozan miyom, belirgin kanama, anemi veya transferi zorlaştıracak rahim içi deformasyon varsa düşünülür.</p>
+  </div>
+  <div class="bg-white p-5 rounded-2xl border border-orange-200 shadow-sm">
+    <h3 class="text-lg font-bold text-orange-800 mb-2">Önce Yumurta Toplama</h3>
+    <p>İleri yaş, düşük rezerv veya zaman baskısı varsa embriyo oluşturup dondurmak; transferi rahim hazır olunca yapmak mantıklı olabilir.</p>
+  </div>
+  <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+    <h3 class="text-lg font-bold text-slate-800 mb-2">Takip ve Transfer</h3>
+    <p>Küçük, stabil, kaviteyi bozmayan ve belirti vermeyen miyomlarda transfer geciktirilmeden planlanabilir.</p>
+  </div>
+</div>
 
-Dr. Aksoy, "Her hasta benzersizdir," diyor. "Kapsamlı bir değerlendirme ve kişiselleştirilmiş bir yaklaşım, en iyi sonucu elde etmenin anahtarıdır."
+Özellikle yumurtalık rezervi düşükse “önce ameliyat, sonra IVF” her zaman en iyi sıra olmayabilir. Bazı hastalarda önce yumurta toplama ve embriyo dondurma, ardından miyom tedavisi ve sonrasında transfer daha dengeli bir plan sunar.
 
-## Umut Verici Gelecek
+<QuoteBlock author="tupbebek.com Tıbbi Danışma Kurulu">
+Miyom varken IVF kararı iki hedefi aynı anda korumalıdır: embriyonun tutunacağı rahim ortamını bozabilecek gerçek engelleri azaltmak ve gereksiz cerrahiyle zaman, rezerv veya rahim bütünlüğü kaybettirmemek.
+</QuoteBlock>
+</div>
 
-Miyomlar ve IVF söz konusu olduğunda, durum umutsuz olmaktan uzaktır. Tıbbi teknolojideki ve cerrahi tekniklerdeki gelişmeler, miyomlu kadınlar için sonuçları iyileştirmeye devam etmektedir. Hedefli ilaç tedavileri ve robot destekli cerrahi gibi yeni tedaviler umut vaat etmektedir ve gelecekte daha da iyi başarı oranları sunabilir.
+<div data-reveal>
+<h2 id="intramural">İntramural Miyomlarda Gri Alan</h2>
 
-## Sonuç
+İntramural miyomlar rahim duvarının içindedir. Kaviteyi bozuyorsa karar daha nettir; bozmadığında ise kanıtlar daha karışıktır.
 
-Miyomlar IVF'ye giden yolda önemli engeller oluşturabilse de, bunlar aşılmaz engeller değildir. Deneyimli kısırlık uzmanlarının rehberliğinde ve tıbbi teknolojideki en son gelişmelerden yararlanarak, kısırlık çeken çiftler zorlukları aşabilir ve ebeveyn olma şanslarını artırabilirler <InlineEvidence grade="C" />. Unutmayın, kişiselleştirilmiş bir yaklaşım ve doğru tıbbi ekiple, en zorlu durumlarda bile umut vardır.
+2024 sistematik derlemesi intramural leiomyomların fertilite sonuçlarıyla ilişkisini değerlendirmiştir. 2026'da yayımlanan IVF/ICSI odaklı meta-analiz ise intramural miyomlar için miyomektomi kararının hâlâ hasta seçimine bağlı bir soru olduğunu vurgular. Bu nedenle “her intramural miyom alınmalı” veya “hiçbiri önemli değildir” yaklaşımı doğru değildir. <InlineEvidence grade="B" />
+
+Kararı etkileyen pratik faktörler:
+
+- Miyomun 4 cm üzerinde olması
+- Birden fazla intramural miyom bulunması
+- Kaviteye çok yakın yerleşim
+- Endometrium çizgisini itmesi
+- Önceki iyi kalite embriyo transferlerine rağmen tutunma olmaması
+- Tekrarlayan düşük öyküsü
+- Cerrahinin rahim duvarında yaratacağı kesi ve iyileşme ihtiyacı
+
+Bu grupta karar çoğu zaman “ameliyat mı?” sorusundan önce “rahim iç boşluğu gerçekten etkileniyor mu?” sorusuyla başlar.
+</div>
+
+<div data-reveal>
+<h2 id="gebelik">Gebelik ve Doğum Sürecinde Riskler</h2>
+
+Miyomlar gebelikte her zaman sorun çıkarmaz. Ancak boyut, sayı ve yerleşime göre bazı riskler artabilir:
+
+- Ağrı veya miyom dejenerasyonu
+- Düşük veya kanama riski
+- Plasenta yerleşim sorunları
+- Erken doğum veya bebeğin geliş pozisyonunda sorun
+- Sezaryen ihtimalinde artış
+
+Ameliyat edilmiş hastalarda ise ayrı bir konu vardır: rahim duvarının nasıl onarıldığı. Derin intramural miyomektomi sonrası gebelik zamanlaması ve doğum şekli ameliyat notuna göre planlanır. Rahim boşluğuna girilip girilmediği, kesi derinliği ve dikiş tekniği burada önemlidir.
+
+ACOG, semptomatik miyomlarda tedavi seçeneklerinin hastanın semptomları, gebelik isteği ve tercihleriyle birlikte tartışılması gerektiğini vurgular. Morcellation planlanıyorsa, nadir kötü huylu tümör yayılımı riski ve alternatif doku çıkarma yöntemleri ayrıca konuşulmalıdır. <InlineEvidence grade="B" />
+</div>
+
+<div data-reveal>
+<h2 id="faq">Sıkça Sorulan Sorular</h2>
+
+<Accordion title="Miyom varken tüp bebek yapılır mı?">
+Evet. Miyomun varlığı tek başına tüp bebek için engel değildir. Karar, miyomun rahim iç boşluğunu bozup bozmadığına, belirtilere, önceki transfer öyküsüne ve cerrahi risklere göre verilir.
+</Accordion>
+
+<Accordion title="Transferden önce miyom mutlaka alınmalı mı?">
+Hayır. Submüköz veya kaviteyi bozan miyomlarda ameliyat daha güçlü gündeme gelir. Kaviteyi bozmayan küçük intramural veya subseröz miyomlarda takip ve transfer uygun olabilir.
+</Accordion>
+
+<Accordion title="Miyom embriyonun tutunmasını engeller mi?">
+Rahim iç boşluğunu bozan miyomlar tutunmayı zorlaştırabilir. Kaviteyi bozmayan intramural miyomlarda etki daha belirsizdir; boyut, sayı ve önceki IVF sonuçlarıyla birlikte değerlendirilir.
+</Accordion>
+
+<Accordion title="Miyom ameliyatından sonra transfer ne zaman yapılır?">
+Süre ameliyat tipine göre değişir. Histeroskopik küçük işlemlerden sonra bekleme daha kısa olabilir; rahim duvarına derin kesi yapılan miyomektomilerden sonra birkaç aylık iyileşme süresi gerekebilir.
+</Accordion>
+
+<Accordion title="Önce ameliyat mı, önce yumurta toplama mı daha doğru?">
+Yaş ve yumurtalık rezervi düşükse önce yumurta toplama ve embriyo dondurma düşünülebilir. Kaviteyi belirgin bozan miyom varsa transfer genellikle rahim değerlendirmesi ve gerekirse tedavi sonrasına bırakılır.
+</Accordion>
+
+<Accordion title="Subseröz miyom tüp bebek başarısını düşürür mü?">
+Rahim iç boşluğunu bozmayan subseröz miyomların fertiliteyi düşürdüğüne dair güçlü kanıt yoktur. Ancak çok büyük olup ağrı, bası veya yumurta toplama erişim sorunu yapıyorsa ayrı değerlendirilir.
+</Accordion>
+</div>
+
+<div data-reveal>
+<EvidenceGradeCard grade={frontmatter.recommendationGrade} />
+</div>
+
+<div data-reveal class="mt-12 bg-slate-50 p-8 rounded-3xl border border-slate-200">
+**Sizin İçin Seçtiğimiz Diğer Rehberler:**
+- [Miyom ameliyatı ne zaman gerekir?](/makaleler/miyom-ameliyati/)
+- [IVF öncesi histeroskopi](/makaleler/ivf-oncesi-histeroskopi/)
+- [Endoskopik cerrahi ve histeroskopi](/makaleler/endoskopik-cerrahi-histeroskopi/)
+- [Kadın kısırlığı ve tüp bebek](/makaleler/kadin-kisirligi-tup-bebek/)
+- [Embriyo transferi gün seçimi](/makaleler/embriyo-transferi-gun-secimi/)
+- [Taze ve dondurulmuş embriyo transferi](/makaleler/taze-dondurulmus-transfer/)
+</div>
+
+</div>
+
+export const myomaIvfFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "Miyom varken tüp bebek yapılır mı?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Evet. Miyomun varlığı tek başına tüp bebek için engel değildir. Karar, miyomun rahim iç boşluğunu bozup bozmadığına, belirtilere, önceki transfer öyküsüne ve cerrahi risklere göre verilir."
+    }
+  }, {
+    "@type": "Question",
+    "name": "Transferden önce miyom mutlaka alınmalı mı?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Hayır. Submüköz veya kaviteyi bozan miyomlarda ameliyat daha güçlü gündeme gelir. Kaviteyi bozmayan küçük intramural veya subseröz miyomlarda takip ve transfer uygun olabilir."
+    }
+  }, {
+    "@type": "Question",
+    "name": "Miyom embriyonun tutunmasını engeller mi?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Rahim iç boşluğunu bozan miyomlar tutunmayı zorlaştırabilir. Kaviteyi bozmayan intramural miyomlarda etki daha belirsizdir; boyut, sayı ve önceki IVF sonuçlarıyla birlikte değerlendirilir."
+    }
+  }, {
+    "@type": "Question",
+    "name": "Miyom ameliyatından sonra transfer ne zaman yapılır?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Süre ameliyat tipine göre değişir. Histeroskopik küçük işlemlerden sonra bekleme daha kısa olabilir; rahim duvarına derin kesi yapılan miyomektomilerden sonra birkaç aylık iyileşme süresi gerekebilir."
+    }
+  }, {
+    "@type": "Question",
+    "name": "Subseröz miyom tüp bebek başarısını düşürür mü?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Rahim iç boşluğunu bozmayan subseröz miyomların fertiliteyi düşürdüğüne dair güçlü kanıt yoktur. Ancak çok büyük olup ağrı, bası veya yumurta toplama erişim sorunu yapıyorsa ayrı değerlendirilir."
+    }
+  }]
+};
+
+<script type="application/ld+json" set:html={JSON.stringify(myomaIvfFaqSchema)} />
+<RevealScript />
