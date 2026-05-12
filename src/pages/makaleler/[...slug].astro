@@ -17,6 +17,7 @@ import EditorKunyesi from '../../components/EditorKunyesi.astro';
 import UzmanaSor from '../../components/forms/UzmanaSor.astro';
 import LeadMagnet from '../../components/forms/LeadMagnet.astro';
 import YouTubeEmbed from '../../components/YouTubeEmbed.astro';
+import { resolveCanonicalUrl, resolveSiteUrl } from '../../utils/seo';
 
 export async function getStaticPaths() {
   const articles = await getCollection('articles');
@@ -72,12 +73,24 @@ const lastModifiedStr = entry.data.lastModified
 const reviewDateStr = entry.data.reviewDate
     ? entry.data.reviewDate.toLocaleDateString('tr-TR', { year: 'numeric', month: 'long', day: 'numeric' })
     : null;
-const articleUrl = `https://tupbebek.com/makaleler/${entry.slug}`;
+const siteUrl = resolveSiteUrl(Astro.site);
+const articleUrl = resolveCanonicalUrl({
+    siteUrl,
+    pathname: `/makaleler/${entry.slug}/`,
+    canonical: entry.data.canonical,
+});
 const referenceCount = entry.data.references?.length || 0;
 const sanitizedImage = sanitizeImage(entry.data.image);
 ---
 
-<BaseLayout title={`${entry.data.title} | tupbebek.com`} description={entry.data.description} image={sanitizedImage} ogType="article">
+<BaseLayout
+    title={`${entry.data.title} | tupbebek.com`}
+    description={entry.data.description}
+    image={sanitizedImage}
+    ogType="article"
+    canonical={articleUrl}
+    noindex={entry.data.noindex}
+>
     <Header />
     <ReadingProgress />
 

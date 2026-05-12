@@ -10,6 +10,7 @@ import Breadcrumbs from '../components/Breadcrumbs.astro';
 import CookieConsent from '../components/CookieConsent.astro';
 import SearchAutocomplete from '../components/SearchAutocomplete.astro';
 import { normalizeInternalPath } from '../utils/routeAliases.mjs';
+import { resolveCanonicalUrl, resolveSiteUrl, resolveSocialImageUrl } from '../utils/seo';
 
 interface Props {
 	title: string;
@@ -18,12 +19,28 @@ interface Props {
 	image?: string;
 	/** og:type — defaults to "website", article pages should pass "article" */
 	ogType?: string;
+	canonical?: string;
+	noindex?: boolean;
+	robots?: string;
 }
 
-const { title, description = "tupbebek.com | Üreme Sağlığı Bilgisi", image, ogType = "website" } = Astro.props;
+const {
+	title,
+	description = "tupbebek.com | Üreme Sağlığı Bilgisi",
+	image,
+	ogType = "website",
+	canonical,
+	noindex = false,
+	robots,
+} = Astro.props;
 const isHome = Astro.url.pathname === '/';
 const normalizedPath = normalizeInternalPath(Astro.url.pathname);
-const canonicalUrl = `https://tupbebek.com${normalizedPath}`;
+const siteUrl = resolveSiteUrl(Astro.site);
+const canonicalUrl = resolveCanonicalUrl({ siteUrl, pathname: normalizedPath, canonical });
+const socialImageUrl = resolveSocialImageUrl({ siteUrl, image });
+const robotsContent = noindex
+	? 'noindex, follow, max-image-preview:large'
+	: (robots || 'index, follow, max-image-preview:large');
 
 // Sitewide @graph: Organization + WebSite + MedicalWebPage with stable @ids.
 // Organization @id is the canonical publisher node that every Article, Person,
@@ -64,7 +81,7 @@ const siteGraph = {
       ],
       "areaServed": { "@type": "Country", "name": "Türkiye" },
       "ethicsPolicy": "https://tupbebek.com/editoryal-politika/",
-      "publishingPrinciples": "https://tupbebek.com/yayin-sureci/",
+      "publishingPrinciples": "https://tupbebek.com/editoryal-politika/",
       "diversityPolicy": "https://tupbebek.com/editoryal-politika/",
       "correctionsPolicy": "https://tupbebek.com/editoryal-politika/",
       "actionableFeedbackPolicy": "https://tupbebek.com/iletisim/",
@@ -119,7 +136,7 @@ const siteGraph = {
 		<link rel="canonical" href={canonicalUrl} />
 		<link rel="alternate" hreflang="tr-TR" href={canonicalUrl} />
 		<link rel="alternate" hreflang="x-default" href={canonicalUrl} />
-		<meta name="robots" content="index, follow, max-image-preview:large" />
+		<meta name="robots" content={robotsContent} />
 
 		<!-- RSS Feed -->
 		<link rel="alternate" type="application/rss+xml" title="tupbebek.com RSS" href="/rss.xml" />
@@ -129,7 +146,7 @@ const siteGraph = {
 		<meta property="og:description" content={description} />
 		<meta property="og:type" content={ogType} />
 		<meta property="og:url" content={canonicalUrl} />
-		<meta property="og:image" content={image ? `https://tupbebek.com${image}` : "https://tupbebek.com/images/home/luxury-embryo.webp"} />
+		<meta property="og:image" content={socialImageUrl} />
 		<meta property="og:image:width" content="1200" />
 		<meta property="og:image:height" content="630" />
 		<meta property="og:site_name" content="tupbebek.com" />
@@ -140,7 +157,7 @@ const siteGraph = {
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta name="twitter:title" content={title} />
 		<meta name="twitter:description" content={description} />
-		<meta name="twitter:image" content={image ? `https://tupbebek.com${image}` : "https://tupbebek.com/images/home/luxury-embryo.webp"} />
+		<meta name="twitter:image" content={socialImageUrl} />
 		<meta name="twitter:site" content="@tupbebek" />
 
 		<!-- Google Analytics (GA4) - Lazy Loaded -->

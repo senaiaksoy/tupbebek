@@ -11,30 +11,53 @@ interface SocialImageOptions {
   image?: string;
 }
 
-const DEFAULT_SITE_URL = "https://estranova.com";
-const DEFAULT_SOCIAL_IMAGE_PATH = "/favicon.svg";
+const DEFAULT_SITE_URL = "https://tupbebek.com";
+const DEFAULT_SOCIAL_IMAGE_PATH = "/images/home/luxury-embryo.webp";
 
-function normalizeUrl(value: string): string {
-  const url = new URL(value);
+function hasFileExtension(pathname: string): boolean {
+  return /\.[a-z0-9]+$/iu.test(pathname);
+}
 
-  if (url.pathname !== "/" && url.pathname.endsWith("/")) {
-    url.pathname = url.pathname.slice(0, -1);
+export function normalizeSitePath(pathname: string): string {
+  const normalized = `/${pathname}`.replace(/\/{2,}/g, "/");
+  const trimmed = normalized.replace(/\/+$/g, "") || "/";
+
+  if (trimmed === "/") {
+    return "/";
   }
 
+  if (hasFileExtension(trimmed)) {
+    return trimmed;
+  }
+
+  return `${trimmed}/`;
+}
+
+function normalizePageUrl(value: string): string {
+  const url = new URL(value);
+  url.pathname = normalizeSitePath(url.pathname);
+  url.hash = "";
+  return url.toString();
+}
+
+function normalizeAssetUrl(value: string): string {
+  const url = new URL(value);
   url.hash = "";
   return url.toString();
 }
 
 function ensureAbsoluteUrl(urlOrPath: string, siteUrl: string): string {
   if (/^https?:\/\//iu.test(urlOrPath)) {
-    return normalizeUrl(urlOrPath);
+    return normalizeAssetUrl(urlOrPath);
   }
-  return normalizeUrl(new URL(urlOrPath, siteUrl).toString());
+  return normalizeAssetUrl(new URL(urlOrPath, siteUrl).toString());
 }
 
 export function resolveSiteUrl(site?: URL | string | null): string {
-  if (!site) return DEFAULT_SITE_URL;
-  return normalizeUrl(site.toString());
+  const url = new URL(site?.toString() || DEFAULT_SITE_URL);
+  url.pathname = "/";
+  url.hash = "";
+  return url.toString();
 }
 
 export function resolveCanonicalUrl({
@@ -43,9 +66,9 @@ export function resolveCanonicalUrl({
   canonical,
 }: CanonicalOptions): string {
   if (canonical) {
-    return ensureAbsoluteUrl(canonical, siteUrl);
+    return normalizePageUrl(new URL(canonical, siteUrl).toString());
   }
-  return normalizeUrl(new URL(pathname, siteUrl).toString());
+  return normalizePageUrl(new URL(pathname, siteUrl).toString());
 }
 
 export function resolveSocialImageUrl({ siteUrl, image }: SocialImageOptions): string {

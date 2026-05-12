@@ -49,6 +49,8 @@ const WEBSITE_ID = 'https://tupbebek.com/#website';
 const EDITORIAL_BOARD_ID = 'https://tupbebek.com/yayin-kurulu/#editorial-board';
 
 const { entry, url } = Astro.props;
+const canonicalUrl = new URL(url);
+canonicalUrl.hash = '';
 const d = entry.data;
 const pubMedSearchUrl = (term: string) =>
     `https://pubmed.ncbi.nlm.nih.gov/?term=${encodeURIComponent(term)}`;
@@ -142,10 +144,10 @@ const imageObject = absoluteImageUrl ? {
 const articleSchema = {
     "@context": "https://schema.org",
     "@type": ["MedicalWebPage", "Article"],
-    "@id": `${url}#article`,
+    "@id": `${canonicalUrl.toString()}#article`,
     "headline": d.title,
     "description": d.description,
-    "url": url,
+    "url": canonicalUrl.toString(),
     "inLanguage": "tr-TR",
     ...(imageObject ? { "image": imageObject } : {}),
     ...(d.publishDate ? { "datePublished": d.publishDate.toISOString().split('T')[0] } : {}),

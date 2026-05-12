@@ -12,7 +12,7 @@
 # 1. Eski site ana sayfa ve kategori redirect'leri
 # --------------------------------------------
 /sorunlar                                       /kadin-infertilitesi                            301
-/yayin-sureci                                   /editoryal-politika                             301
+/yayin-sureci                                   /editoryal-politika/                            301
 /kvkk                                           /gizlilik-politikasi                            301
 
 # --------------------------------------------
@@ -46,8 +46,8 @@
 /sperm-analizi*                                  /erkek-infertilitesi                            301
 /tedaviler*                                      /tedavi-yontemleri                              301
 /randevu*                                        /iletisim                                       301
-/aciklanamayan-kisirlik*                         /aciklanamayan-infertilite                      301
-/tup-bebek-fiyatlari*                            /sss                                            301
+/aciklanamayan-kisirlik*                         /aciklanamayan-infertilite/                     301
+/tup-bebek-fiyatlari*                            /sss/                                           301
 /dr-senai-aksoy*                                 /hakkimizda                                     301
 /tedaviye-baslamadan-once*                       /tani-sureci                                    301
 /yumurtalik-rezervi-degerlendirme*               /hormon-paneli                                  301

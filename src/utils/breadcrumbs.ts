@@ -8,6 +8,11 @@ interface BreadcrumbItem {
   href: string;
 }
 
+function normalizeBreadcrumbPath(pathname: string): string {
+  const trimmed = pathname.replace(/\/+$/g, "") || "/";
+  return trimmed === "/" ? "/" : `${trimmed}/`;
+}
+
 // Türkçe label mappings
 const labelMap: Record<string, string> = {
   'index': 'Ana Sayfa',
@@ -66,7 +71,7 @@ export function generateLabel(segment: string): string {
  */
 export function generateBreadcrumbs(pathname: string): BreadcrumbItem[] {
   if (pathname === '/') {
-    return [{ label: 'Ana Sayfa', href: '/' }];
+    return [];
   }
 
   const segments = pathname
@@ -74,9 +79,7 @@ export function generateBreadcrumbs(pathname: string): BreadcrumbItem[] {
     .filter(Boolean)
     .slice(0, 3); // Limit to 3 levels deep
 
-  const breadcrumbs: BreadcrumbItem[] = [
-    { label: 'Ana Sayfa', href: '/' }
-  ];
+  const breadcrumbs: BreadcrumbItem[] = [];
 
   let href = '';
   segments.forEach((segment, index) => {
@@ -85,11 +88,7 @@ export function generateBreadcrumbs(pathname: string): BreadcrumbItem[] {
     // Don't add last segment as link (current page)
     const label = generateLabel(segment);
 
-    if (index === segments.length - 1) {
-      breadcrumbs.push({ label, href });
-    } else {
-      breadcrumbs.push({ label, href });
-    }
+    breadcrumbs.push({ label, href: normalizeBreadcrumbPath(href) });
   });
 
   return breadcrumbs;

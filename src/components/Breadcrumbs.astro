@@ -4,6 +4,7 @@ import { generateBreadcrumbs } from '../utils/breadcrumbs';
 
 const { pathname } = Astro.url;
 const breadcrumbs = generateBreadcrumbs(pathname);
+const siteOrigin = Astro.site?.toString() ?? Astro.url.origin;
 
 // JSON-LD for SEO
 const jsonLd = {
@@ -14,13 +15,13 @@ const jsonLd = {
       "@type": "ListItem",
       "position": 1,
       "name": "Ana Sayfa",
-      "item": Astro.site
+      "item": new URL('/', siteOrigin).toString()
     },
     ...breadcrumbs.map((crumb, index) => ({
       "@type": "ListItem",
       "position": index + 2,
       "name": crumb.label,
-      "item": new URL(crumb.href, Astro.url).toString()
+      "item": new URL(crumb.href, siteOrigin).toString()
     }))
   ]
 };

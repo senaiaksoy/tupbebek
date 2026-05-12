@@ -16,6 +16,40 @@ function visit(node, visitor) {
   }
 }
 
+function normalizeCanonicalPath(url) {
+  if (typeof url !== 'string' || !url.startsWith('/')) {
+    return url;
+  }
+
+  const hashIndex = url.indexOf('#');
+  const queryIndex = url.indexOf('?');
+  const suffixIndex = [hashIndex, queryIndex].filter((index) => index >= 0).sort((a, b) => a - b)[0];
+  const path = suffixIndex >= 0 ? url.slice(0, suffixIndex) : url;
+  const suffix = suffixIndex >= 0 ? url.slice(suffixIndex) : '';
+  const trimmed = path.replace(/\/+$/g, '') || '/';
+
+  if (trimmed === '/' || /\.[a-z0-9]+$/iu.test(trimmed)) {
+    return `${trimmed}${suffix}`;
+  }
+
+  return `${trimmed}/${suffix}`;
+}
+
+function normalizeInternalLink(url) {
+  try {
+    const parsed = new URL(url, 'https://tupbebek.com');
+    if (/(\.|^)tupbebek\.com$/iu.test(parsed.hostname)) {
+      return normalizeCanonicalPath(
+        normalizeInternalPath(`${parsed.pathname}${parsed.search}${parsed.hash}`)
+      );
+    }
+  } catch {
+    // Fall through to direct normalization for relative links.
+  }
+
+  return normalizeCanonicalPath(normalizeInternalPath(url));
+}
+
 export default function remarkMedicalCompliance() {
   return function transformer(tree) {
     visit(tree, (node) => {
@@ -24,7 +58,7 @@ export default function remarkMedicalCompliance() {
       }
 
       if (node.type === 'link' && typeof node.url === 'string') {
-        node.url = normalizeInternalPath(node.url);
+        node.url = normalizeInternalLink(node.url);
       }
 
       if (node.type === 'image' && typeof node.url === 'string') {
