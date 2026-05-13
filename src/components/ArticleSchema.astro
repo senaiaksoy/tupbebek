@@ -47,6 +47,7 @@ interface Props {
 const ORG_ID = 'https://tupbebek.com/#organization';
 const WEBSITE_ID = 'https://tupbebek.com/#website';
 const EDITORIAL_BOARD_ID = 'https://tupbebek.com/yayin-kurulu/#editorial-board';
+const SENAI_AKSOY_PERSON_ID = 'https://tupbebek.com/yazar/senai-aksoy/#person';
 
 const { entry, url } = Astro.props;
 const canonicalUrl = new URL(url);
@@ -78,14 +79,27 @@ const authorYoutube =
     || (rawAuthorUrl && /youtube\.com/i.test(rawAuthorUrl) ? rawAuthorUrl : undefined)
     || (isBoardAuthor ? DEFAULT_AUTHOR_YOUTUBE : undefined);
 
-// Build author schema
-const authorSchema: Record<string, unknown> = {
-    "@type": "Person",
-    "name": authorName,
-};
-if (authorTitle) authorSchema["jobTitle"] = authorTitle;
-if (authorCredentials) authorSchema["qualifications"] = authorCredentials;
-if (authorYoutube) authorSchema["sameAs"] = authorYoutube;
+// Build author schema. For Dr. Aksoy (default editor), reference the canonical
+// Person entity at /yazar/senai-aksoy/ so AI engines can resolve a stable
+// knowledge-graph node across all articles.
+const isSenaiAksoy = /senai\s+aksoy/i.test(authorName || '');
+const authorSchema: Record<string, unknown> = isSenaiAksoy
+    ? {
+        "@type": "Person",
+        "@id": SENAI_AKSOY_PERSON_ID,
+        "name": authorName,
+        ...(authorTitle ? { "jobTitle": authorTitle } : {}),
+        ...(authorCredentials ? { "qualifications": authorCredentials } : {}),
+        ...(authorYoutube ? { "sameAs": authorYoutube } : {}),
+        "url": "https://tupbebek.com/yazar/senai-aksoy/",
+    }
+    : {
+        "@type": "Person",
+        "name": authorName,
+        ...(authorTitle ? { "jobTitle": authorTitle } : {}),
+        ...(authorCredentials ? { "qualifications": authorCredentials } : {}),
+        ...(authorYoutube ? { "sameAs": authorYoutube } : {}),
+    };
 
 // Build reviewer schema
 const reviewerSchema = d.medicalReviewer ? {

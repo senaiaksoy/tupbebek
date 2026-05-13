@@ -77,7 +77,7 @@ export const glossary: Record<string, GlossaryEntry> = {
   'PGT-SR': {
     term: 'PGT-SR',
     definition: 'Preimplantasyon Genetik Test - Yapısal Yeniden Düzenleme. Kromozomlardaki yapısal bozuklukları (translokasyon, inversiyon) taşıyan çiftlerde sağlıklı embriyo seçimi için uygulanan genetik test.',
-    href: '/makaleler/genetik-testler',
+    href: '/pgt-merkezi',
   },
   Karyotip: {
     term: 'Karyotip',
@@ -87,22 +87,22 @@ export const glossary: Record<string, GlossaryEntry> = {
   Anöploidi: {
     term: 'Anöploidi',
     definition: 'Hücrede kromozom sayısının normalden fazla veya eksik olması durumu. Örneğin trizomi 21 (Down sendromu) bir anöploidi türüdür. PGT-A testi embriyolardaki anöploidiyi tespit eder.',
-    href: '/makaleler/genetik-testler',
+    href: '/pgt-merkezi',
   },
   Öploidi: {
     term: 'Öploidi (Euploid)',
     definition: 'Hücrede tüm kromozomların doğru sayıda (46 kromozom, 23 çift) bulunması durumu. Öploid embriyolar genetik olarak normal kabul edilir ve transfer için uygundur.',
-    href: '/makaleler/genetik-testler',
+    href: '/pgt-merkezi',
   },
   Mozaik: {
     term: 'Mozaik Embriyo',
     definition: 'Bir embriyoda bazı hücrelerin normal (öploid), bazılarının ise anormal (anöploid) kromozom yapısına sahip olması durumu. Mozaik embriyoların transferi doktorun değerlendirmesine bağlıdır.',
-    href: '/makaleler/genetik-testler',
+    href: '/pgt-merkezi',
   },
   Translokasyon: {
     term: 'Translokasyon',
     definition: 'Bir kromozomun bir parçasının koparak başka bir kromozoma yapışması. Dengeli translokasyon taşıyıcıları sağlıklıdır ancak embriyolarında kromozom anomalisi riski yüksektir. PGT-SR ile taranır.',
-    href: '/makaleler/genetik-testler',
+    href: '/pgt-merkezi',
   },
 
   // ── Tani ve Cerrahi Yontemler ──

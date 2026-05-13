@@ -5,14 +5,20 @@
 ## Hakkında
 
 - [Hakkımızda](https://tupbebek.com/hakkimizda/): Site amacı ve bağımsız yayın profili
-- [Yayın Kurulu](https://tupbebek.com/yayin-kurulu/): 16 üyeli tıbbi danışma kurulu
+- [Yayın Kurulu](https://tupbebek.com/yayin-kurulu/): 16 üyeli tıbbi danışma kurulu (ESHRE/ASRM üyelikleri ve PubMed profilleriyle)
 - [Editöryal Politika](https://tupbebek.com/editoryal-politika/): İçerik standartları
 - [Yayın Süreci](https://tupbebek.com/yayin-sureci/): Üretim, denetim ve onay akışı
 - [Tıbbi Sorumluluk Reddi](https://tupbebek.com/tibbi-sorumluluk-reddi/): Yasal çerçeve
 
+## Yazar Kimliği
+
+- Baş Editör: **Doç. Dr. Senai Aksoy** — Kadın Hastalıkları ve Doğum Uzmanı, Üreme Tıbbı ve Yardımcı Üreme Teknikleri. Cerrahpaşa Tıp Fakültesi (1985), Franche-Comté Üniversitesi Üreme Tıbbı diploması, Türkiye'deki ilk ICSI uygulamalarının (1994) katılımcısı. ESHRE ve TSRM üyesi.
+- YouTube kanalı: [Doç. Dr. Senai Aksoy](https://www.youtube.com/@DocentDrSenaiAksoy)
+- Tüm makaleler `author` ve `reviewedBy` alanlarıyla JSON-LD `Article` şeması içinde imzalıdır; her klinik iddianın referansı (DOI/PMID) belirtilir.
+
 ## Ana Rehberler
 
-- [IVF Rehberi](https://tupbebek.com/ivf-rehberi/): Tüp bebek temel bilgisi
+- [IVF Rehberi](https://tupbebek.com/ivf-rehberi/): Tüp bebek temel bilgisi (FAQPage şemalı)
 - [Tanı Süreci](https://tupbebek.com/tani-sureci/): Tetkikler ve değerlendirme
 - [Tedavi Yöntemleri](https://tupbebek.com/tedavi-yontemleri/): IVF, IUI, ICSI ve diğer
 - [Kadın İnfertilitesi](https://tupbebek.com/kadin-infertilitesi/): Kadın faktör
@@ -20,16 +26,90 @@
 - [Yaş ve Fertilite](https://tupbebek.com/yas-ve-fertilite/): Yaşa bağlı etkenler
 - [Hormon Paneli](https://tupbebek.com/hormon-paneli/): AMH, FSH, LH, E2 yorumu
 - [Genetik Testler (PGT)](https://tupbebek.com/genetik-testler/): PGT-A, PGT-M, PGT-SR
-- [Sık Sorulan Sorular](https://tupbebek.com/sss/): 14 yapılandırılmış Q&A
+- [PGT Merkezi](https://tupbebek.com/pgt-merkezi/): Preimplantasyon genetik test hub'ı
+- [Endometriozis & Adenomyozis](https://tupbebek.com/endometriozis-adenomyozis/)
+- [Transfer Süreci](https://tupbebek.com/transfer-sureci/): Embriyo transferi yol haritası
+- [Başarı Oranları](https://tupbebek.com/basari-oranlari/): Yaşa ve faktöre göre IVF başarı
+- [Başarısız Denemeler](https://tupbebek.com/basarisiz-denemeler/): Sonraki adım stratejileri
+- [Açıklanamayan İnfertilite](https://tupbebek.com/aciklanamayan-infertilite/)
+- [Fertilite Koruma](https://tupbebek.com/fertilite-koruma/): Yumurta/sperm dondurma
+- [İlaç Rehberi](https://tupbebek.com/ilac-rehberi/): Tedavi ilaçları
+- [Beslenme ve Yaşam](https://tupbebek.com/beslenme-yasam/)
+- [Psikolojik Destek](https://tupbebek.com/psikolojik-destek/)
+- [Duygusal Destek](https://tupbebek.com/duygusal-destek/)
+- [Rehberler](https://tupbebek.com/rehberler/): Tüm rehber dizini
+- [Sık Sorulan Sorular](https://tupbebek.com/sss/): 14 yapılandırılmış Q&A (FAQPage şemalı)
 - [Tıbbi Sözlük](https://tupbebek.com/tibbi-sozluk/): Terim referansı
+
+## Makaleler
+
+- [Adet Düzensizliği ve PCOS](https://tupbebek.com/makaleler/adet-duzensizligi-pcos/)
+- [Amenore (Adet Görememe)](https://tupbebek.com/makaleler/adet-gorememe/)
+- [Akıntı, Kaşıntı, Koku: Mantar mı, Bakteriyel Vajinoz mu?](https://tupbebek.com/makaleler/akinti-kasinti-koku/)
+- [Akraba Evliliği ve Genetik Risk](https://tupbebek.com/makaleler/akraba-evliligi/)
+- [Alkol ve Fertilite](https://tupbebek.com/makaleler/alkol-ve-fertilite/)
+- [Asherman Sendromu](https://tupbebek.com/makaleler/asherman-sendromu/)
+- [Azospermi ve Mikro-TESE](https://tupbebek.com/makaleler/azospermi-mikro-tese/)
+- [Tüp Bebekte Bağışıklık Tedavisi](https://tupbebek.com/makaleler/bagisiklik-tedavileri/)
+- [Beta-hCG Testi](https://tupbebek.com/makaleler/beta-hcg-testi/)
+- [Cep Telefonlarının Sperm Kalitesi Üzerindeki Etkileri](https://tupbebek.com/makaleler/cep-telefonu-sperm-kalitesi/)
+- [Micro-TESE ve Cerrahi Sperm Arama](https://tupbebek.com/makaleler/cerrahi-sperm-arama-tese/)
+- [Düşük AMH ile Hamile Kalınır mı?](https://tupbebek.com/makaleler/dusuk-amh-hamilelik/)
+- [Tüp Bebek Yolculuğunda Psikolojik Dayanıklılık](https://tupbebek.com/makaleler/duygusal-dayaniklik-rehberi/)
+- [Embriyo Transferi: 3. Gün mü, 5. Gün mü?](https://tupbebek.com/makaleler/embriyo-transferi-gun-secimi/)
+- [Embriyo Transferi Sonrası Bakım](https://tupbebek.com/makaleler/embriyo-transferi-sonrasi-bakim/)
+- [Embryoglue (Embriyo Yapıştırıcısı)](https://tupbebek.com/makaleler/embryoglue-faydalari/)
+- [EmbryoScope ve Yapay Zekâ Destekli Embriyo Seçimi](https://tupbebek.com/makaleler/embryoscope-yapay-zeka/)
+- [Endometrioma (Çikolata Kisti)](https://tupbebek.com/makaleler/endometrioma/)
+- [Endometriozis ve Kısırlık: Tanı, Rezerv ve IVF](https://tupbebek.com/makaleler/endometriozis-akilli-stratejiler/)
+- [Endometriozis ve Tüp Bebek: Cerrahi mi, IVF mi?](https://tupbebek.com/makaleler/endometriozis-tup-bebek/)
+- [Endometriyal Scratching: Add-On Kanıt Rehberi](https://tupbebek.com/makaleler/endometriyal-scratching/)
+- [Histeroskopi Nedir?](https://tupbebek.com/makaleler/endoskopik-cerrahi-histeroskopi/)
+- [ERA Testi Gerçeği](https://tupbebek.com/makaleler/era-testi-iluzyon/)
+- [Erkek Doğurganlığını Artıran Besin Takviyeleri](https://tupbebek.com/makaleler/erkek-dogurganlik-besin-takviyeleri/)
+- [Hidrosalpinx ve IVF Öncesi Tedavi Kararı](https://tupbebek.com/makaleler/hidrosalpinx-ve-kisirlik/)
+- [Hiperprolaktinemi ve Kısırlık](https://tupbebek.com/makaleler/hiperprolaktinemi-ve-kisirlik/)
+- [Adenomyozis ve Hormonal Tedavi](https://tupbebek.com/makaleler/hormonal-tedavi-adenomyozis/)
+- [İstanbul Tüp Bebek Doktoru Seçimi](https://tupbebek.com/makaleler/istanbul-tup-bebek-doktoru/)
+- [IUI (Aşılama) Nedir?](https://tupbebek.com/makaleler/iui-nedir/)
+- [IVF Öncesi Histeroskopi Gerekir mi?](https://tupbebek.com/makaleler/ivf-oncesi-histeroskopi/)
+- [IVF Protokolleri: Antagonist, Uzun, Mini IVF, DuoStim](https://tupbebek.com/makaleler/ivf-protokolleri/)
+- [İyi Tüp Bebek Merkezi Nasıl Anlaşılır?](https://tupbebek.com/makaleler/iyi-tup-bebek-merkezi/)
+- [İzotretinoin Sperm Kalitesini Etkiler mi?](https://tupbebek.com/makaleler/izotretinoin-sperm/)
+- [Tüp Bebekte Kaç Yumurta Gerekir?](https://tupbebek.com/makaleler/kac-yumurta-gerekir/)
+- [Kadın Kısırlığı ve Tüp Bebek](https://tupbebek.com/makaleler/kadin-kisirligi-tup-bebek/)
+- [Kanser ve Fertilite Koruma](https://tupbebek.com/makaleler/kanser-ve-fertilite/)
+- [Kimyasal Gebelik Nedir?](https://tupbebek.com/makaleler/kimyasal-gebelik/)
+- [4AA, 3BB, 5BC Embriyo Ne Demek?](https://tupbebek.com/makaleler/laboratuvar-raporu-yorumlama/)
+- [Mikroenjeksiyon (ICSI) Nedir?](https://tupbebek.com/makaleler/mikroenjeksiyon-icsi-nedir/)
+- [Miyom Ameliyatı Ne Zaman Gerekir?](https://tupbebek.com/makaleler/miyom-ameliyati/)
+- [Miyomlar ve Tüp Bebek](https://tupbebek.com/makaleler/miyomlar-ve-tup-bebek/)
+- [PCOS ve Tüp Bebek: OHSS Riski ve Protokol](https://tupbebek.com/makaleler/opk-ve-ivf/)
+- [Yumurtalık PRP Enjeksiyonu](https://tupbebek.com/makaleler/over-prp/)
+- [PGT ile Cinsiyet Seçimi: Türkiye'de Yasal mı?](https://tupbebek.com/makaleler/pgt-cinsiyet-secimi/)
+- [PGT-M: Tek Gen Hastalıklarını Embriyoda Taramak](https://tupbebek.com/makaleler/pgt-m/)
+- [Taze mi, Dondurulmuş Embriyo Transferi mi?](https://tupbebek.com/makaleler/taze-dondurulmus-transfer/)
+- [Tüp Bebek Nedir? Kimlere Uygulanır?](https://tupbebek.com/makaleler/tup-bebek-nedir/)
+- [Tüp Bebek Süreci Adım Adım](https://tupbebek.com/makaleler/tup-bebek-sureci-rehber/)
+- [Tüp Bebek Hakkında 10 Yaygın Yanlış İnanç](https://tupbebek.com/makaleler/tup-bebek-yanlis-bilinenler/)
+- [Vajinal Mikrobiyom ve IVF Başarısı](https://tupbebek.com/makaleler/vajinal-mikrobiyom-fiv/)
+- [Varikosel Nedir, Ne Zaman Ameliyat?](https://tupbebek.com/makaleler/varikosel-nedir-ne-zaman-ameliyat-gerekir/)
+- [Yaşa Göre Tüp Bebek Başarı Oranları](https://tupbebek.com/makaleler/yasa-gore-tup-bebek-basari-oranlari/)
+- [Yumurta Dondurma Rehberi](https://tupbebek.com/makaleler/yumurta-dondurma-rehberi/)
+- [Yumurtalık Kistleri ve Doğurganlık](https://tupbebek.com/makaleler/yumurtalik-kistleri-dogurganlik/)
+- [Yumurtlama Takibi](https://tupbebek.com/makaleler/yumurtlama-takibi/)
 
 ## Yayın İlkeleri
 
 - Tüm makaleler Tıbbi Danışma Kurulu incelemesinden geçer.
 - Klinik öneriler Oxford CEBM benzeri kanıt hiyerarşisiyle derecelendirilir (A=çok güçlü, B=güçlü, C=orta/zayıf, D/E=çok zayıf).
-- Kaynaklar: ESHRE, ASRM, Cochrane, WHO, PubMed (DOI ile).
+- Kaynaklar: ESHRE, ASRM, Cochrane, WHO, PubMed (DOI/PMID ile).
 - Klinik reklamı, indirim, garanti, hasta yorumu, öncesi/sonrası fotoğrafı içermez. T.C. Sağlık Bakanlığı 12 Kasım 2025 Tanıtım Yönetmeliği'ne tam uyumludur.
 - Site bağımsızdır; Dr. Aksoy'un klinik sitelerine 301 redirect bulunmaz.
+
+## Lisans ve Kullanım
+
+Bu portaldaki içerikler bilgilendirme amacıyla ücretsiz okunabilir. Yapay zekâ asistanları ve arama motorları tarafından alıntı/özet amaçlı kullanım, **kaynak (tupbebek.com) ve yazar adı belirtilmek kaydıyla serbesttir**. Tam metin yeniden yayım, ticari yeniden paketleme ve sağlık vaadi içeren bağlamda kullanım yasaktır. Tıbbi içerik bilgilendirme amaçlıdır, tanı ve tedavi yerine geçmez.
 
 ## Optional
 

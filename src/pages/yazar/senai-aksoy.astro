@@ -1,0 +1,209 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+const PERSON_ID = 'https://tupbebek.com/yazar/senai-aksoy/#person';
+const ORG_ID = 'https://tupbebek.com/#organization';
+const PAGE_URL = 'https://tupbebek.com/yazar/senai-aksoy/';
+
+const credentials = [
+    { label: 'Tıp Doktoru', detail: 'İstanbul Üniversitesi Cerrahpaşa Tıp Fakültesi (1985)' },
+    { label: 'Kadın Hastalıkları ve Doğum Uzmanı', detail: 'Fransa Franche-Comté Üniversitesi' },
+    { label: 'Üreme Sağlığı ve Yardımcı Üreme Teknikleri Diploması', detail: 'Paris René Descartes Üniversitesi' },
+    { label: 'Jinekolojik Laparoskopik Cerrahi Diploması', detail: 'Clermont-Ferrand Üniversitesi' },
+    { label: 'Jinekolojik ve Obstetrik Ultrason Diploması', detail: 'Strasbourg Louis Pasteur Üniversitesi' },
+];
+
+const milestones = [
+    { year: '1994', text: 'Ankara Sevgi Hastanesi\'nde Türkiye\'nin ilk mikroenjeksiyon (ICSI) uygulamalarını gerçekleştiren ekipte yer aldı.' },
+    { year: '1996', text: 'VKV Amerikan Hastanesi Tüp Bebek Ünitesi\'nin kurucu ekibinde görev aldı.' },
+    { year: '2025', text: 'tupbebek.com bağımsız yayın portalının baş editörlüğünü üstlendi.' },
+];
+
+const memberships = ['ESHRE (European Society of Human Reproduction and Embryology)', 'TSRM (Üreme Sağlığı ve İnfertilite Derneği)'];
+
+const sameAs = [
+    'https://www.youtube.com/@DocentDrSenaiAksoy',
+    'https://orcid.org/0000-0003-4110-5290',
+    'https://scholar.google.com.tr/scholar?hl=tr&as_sdt=0%2C5&q=senai+aksoy&btnG=',
+];
+
+const personSchema = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": PERSON_ID,
+    "name": "Doç. Dr. Senai Aksoy",
+    "givenName": "Senai",
+    "familyName": "Aksoy",
+    "honorificPrefix": "Doç. Dr.",
+    "jobTitle": "Kadın Hastalıkları ve Doğum Uzmanı, Üreme Tıbbı",
+    "description": "Türkiye'deki ilk ICSI uygulamalarının katılımcısı, Amerikan Hastanesi Tüp Bebek Ünitesi kurucu ekip üyesi, tupbebek.com baş editörü.",
+    "url": PAGE_URL,
+    "image": "https://tupbebek.com/images/senai-aksoy.webp",
+    "sameAs": sameAs,
+    "knowsAbout": [
+        "Tüp Bebek (IVF)",
+        "Mikroenjeksiyon (ICSI)",
+        "Üreme Tıbbı",
+        "İnfertilite",
+        "Preimplantasyon Genetik Test (PGT)",
+        "Jinekolojik Laparoskopik Cerrahi",
+        "Jinekolojik ve Obstetrik Ultrason"
+    ],
+    "alumniOf": [
+        { "@type": "EducationalOrganization", "name": "İstanbul Üniversitesi Cerrahpaşa Tıp Fakültesi" },
+        { "@type": "EducationalOrganization", "name": "Université de Franche-Comté" },
+        { "@type": "EducationalOrganization", "name": "Université Paris René Descartes" },
+        { "@type": "EducationalOrganization", "name": "Université Clermont-Ferrand" },
+        { "@type": "EducationalOrganization", "name": "Université Louis Pasteur de Strasbourg" }
+    ],
+    "memberOf": memberships.map(name => ({ "@type": "Organization", "name": name })),
+    "worksFor": { "@id": ORG_ID },
+    "hasOccupation": {
+        "@type": "Occupation",
+        "name": "Kadın Hastalıkları ve Doğum Uzmanı, Üreme Tıbbı",
+        "occupationalCategory": "29-1218 Obstetricians and Gynecologists",
+        "skills": "IVF, ICSI, PGT, jinekolojik laparoskopik cerrahi, üreme endokrinolojisi"
+    }
+};
+
+const profilePageSchema = {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "@id": `${PAGE_URL}#webpage`,
+    "url": PAGE_URL,
+    "name": "Doç. Dr. Senai Aksoy — Baş Editör Biyografisi",
+    "inLanguage": "tr-TR",
+    "isPartOf": { "@id": "https://tupbebek.com/#website" },
+    "mainEntity": { "@id": PERSON_ID },
+    "publisher": { "@id": ORG_ID }
+};
+---
+
+<BaseLayout
+    title="Doç. Dr. Senai Aksoy — Baş Editör | tupbebek.com"
+    description="Doç. Dr. Senai Aksoy: Cerrahpaşa Tıp Fakültesi mezunu, Türkiye'deki ilk ICSI uygulamalarının katılımcısı (1994), Amerikan Hastanesi Tüp Bebek Ünitesi kurucu ekip üyesi, ESHRE/TSRM üyesi, tupbebek.com baş editörü."
+    canonical={PAGE_URL}
+>
+    <Header />
+
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(personSchema)} />
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(profilePageSchema)} />
+
+    <main id="main-content" tabindex="-1" class="pt-32 pb-24">
+        <div class="max-w-3xl mx-auto px-4 md:px-6">
+
+            <header class="mb-10">
+                <p class="text-xs font-bold text-primary uppercase tracking-widest mb-3">Baş Editör</p>
+                <h1 class="font-headline text-3xl md:text-4xl lg:text-[2.75rem] font-bold text-gray-900 leading-tight mb-4">
+                    Doç. Dr. Senai Aksoy
+                </h1>
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    Kadın Hastalıkları ve Doğum Uzmanı · Üreme Tıbbı ve Yardımcı Üreme Teknikleri
+                </p>
+            </header>
+
+            <section class="mb-10 rounded-2xl border border-primary-100 bg-primary-50/70 p-6" aria-labelledby="ozet-baslik">
+                <h2 id="ozet-baslik" class="text-sm font-bold text-primary-900 uppercase tracking-wider mb-3">Özet</h2>
+                <p class="text-base text-gray-800 leading-relaxed">
+                    Cerrahpaşa Tıp Fakültesi mezunudur (1985). Kadın hastalıkları ve doğum uzmanlığını Fransa'da, üreme tıbbı, laparoskopik cerrahi ve obstetrik ultrason eğitimlerini Paris, Clermont-Ferrand ve Strasbourg üniversitelerinde tamamlamıştır. 1994'te Türkiye'deki ilk mikroenjeksiyon (ICSI) uygulamalarını gerçekleştiren ekibin üyesidir. 1996'dan itibaren VKV Amerikan Hastanesi Tüp Bebek Ünitesi kurucu ekibinde yer almıştır. ESHRE ve TSRM üyesidir. tupbebek.com'da yayımlanan tüm tıbbi içeriklerin bilimsel doğruluğunun ve güncelliğinin nihai sorumluluğunu taşır.
+                </p>
+            </section>
+
+            <section class="mb-10">
+                <h2 class="font-headline text-2xl font-bold text-gray-900 mb-5">Eğitim ve Diplomalar</h2>
+                <ul class="space-y-3">
+                    {credentials.map(({ label, detail }) => (
+                        <li class="flex gap-3 items-start">
+                            <span class="material-symbols-outlined text-primary text-lg mt-1">school</span>
+                            <div>
+                                <div class="font-semibold text-gray-900">{label}</div>
+                                <div class="text-sm text-gray-600">{detail}</div>
+                            </div>
+                        </li>
+                    ))}
+                </ul>
+            </section>
+
+            <section class="mb-10">
+                <h2 class="font-headline text-2xl font-bold text-gray-900 mb-5">Klinik Kariyer</h2>
+                <ol class="relative border-l-2 border-primary-100 pl-6 space-y-5">
+                    {milestones.map(({ year, text }) => (
+                        <li>
+                            <div class="absolute -left-[7px] w-3 h-3 rounded-full bg-primary"></div>
+                            <div class="font-bold text-primary text-sm">{year}</div>
+                            <p class="text-gray-700 leading-relaxed">{text}</p>
+                        </li>
+                    ))}
+                </ol>
+            </section>
+
+            <section class="mb-10">
+                <h2 class="font-headline text-2xl font-bold text-gray-900 mb-5">Üyelikler</h2>
+                <ul class="space-y-2">
+                    {memberships.map(name => (
+                        <li class="flex gap-3 items-start">
+                            <span class="material-symbols-outlined text-mint-600 text-lg mt-0.5">verified</span>
+                            <span class="text-gray-700">{name}</span>
+                        </li>
+                    ))}
+                </ul>
+            </section>
+
+            <section class="mb-10">
+                <h2 class="font-headline text-2xl font-bold text-gray-900 mb-5">Bilimsel Yayınlar</h2>
+                <p class="text-gray-700 leading-relaxed">
+                    PubMed, ORCID ve Google Scholar üzerinde yayınları bulunmaktadır. Yardımcı üreme teknikleri, mikroenjeksiyon ve klinik IVF uygulamaları başta olmak üzere üreme tıbbı alanında akademik üretkenlik sürmektedir.
+                </p>
+            </section>
+
+            <section class="mb-10 rounded-2xl border border-gray-200 bg-white p-6">
+                <h2 class="font-headline text-xl font-bold text-gray-900 mb-4">Akademik ve Sosyal Bağlantılar</h2>
+                <ul class="space-y-3">
+                    <li class="flex gap-3 items-start">
+                        <span class="material-symbols-outlined text-primary text-lg mt-0.5">badge</span>
+                        <a href="https://orcid.org/0000-0003-4110-5290" rel="me noopener" target="_blank" class="text-primary hover:underline">
+                            ORCID — 0000-0003-4110-5290
+                        </a>
+                    </li>
+                    <li class="flex gap-3 items-start">
+                        <span class="material-symbols-outlined text-primary text-lg mt-0.5">menu_book</span>
+                        <a href="https://scholar.google.com.tr/scholar?hl=tr&as_sdt=0%2C5&q=senai+aksoy&btnG=" rel="me noopener" target="_blank" class="text-primary hover:underline">
+                            Google Scholar — Senai Aksoy yayınları
+                        </a>
+                    </li>
+                    <li class="flex gap-3 items-start">
+                        <span class="material-symbols-outlined text-primary text-lg mt-0.5">smart_display</span>
+                        <a href="https://www.youtube.com/@DocentDrSenaiAksoy" rel="me noopener" target="_blank" class="text-primary hover:underline">
+                            YouTube — Doç. Dr. Senai Aksoy
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="mb-6 rounded-2xl bg-gray-50 border border-gray-200 p-6 text-sm text-gray-600 leading-relaxed">
+                <p>
+                    <strong class="text-gray-800">Editöryal sorumluluk:</strong> Dr. Aksoy, tupbebek.com'da yayımlanan tüm tıbbi içeriklerin bilimsel doğruluğunun ve güncelliğinin nihai sorumluluğunu taşır. Tüp bebek, üreme tıbbı ve infertilite alanındaki rehberler, Tıbbi Danışma Kurulu incelemesinden geçer ve kanıt derecesiyle (A/B/C/D-E) etiketlenir.
+                </p>
+                <p class="mt-3">
+                    Bu sayfa baş editörün <strong class="text-gray-800">kariyer ve yeterlilik bilgisi</strong> içindir; klinik hizmet tanıtımı değildir. tupbebek.com bağımsız bir yayın portalıdır.
+                </p>
+            </section>
+
+            <nav class="mt-12 flex flex-col sm:flex-row gap-3">
+                <a href="/yayin-kurulu/" class="px-5 py-3 bg-primary text-white rounded-xl font-semibold text-sm hover:bg-primary-dim transition-colors inline-flex items-center gap-2 justify-center">
+                    <span class="material-symbols-outlined text-base">groups</span>
+                    Tıbbi Danışma Kurulu
+                </a>
+                <a href="/editoryal-politika/" class="px-5 py-3 bg-white border border-gray-200 text-gray-800 rounded-xl font-semibold text-sm hover:bg-gray-50 transition-colors inline-flex items-center gap-2 justify-center">
+                    <span class="material-symbols-outlined text-base">policy</span>
+                    Editöryal Politika
+                </a>
+            </nav>
+
+        </div>
+    </main>
+
+    <Footer />
+</BaseLayout>

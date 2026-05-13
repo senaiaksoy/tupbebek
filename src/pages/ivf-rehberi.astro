@@ -2,10 +2,43 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+
+const faqs = [
+    {
+        q: "IVF tedavisi ağrılı mıdır?",
+        a: "Yumurta toplama işlemi sedasyon altında yapıldığı için ağrı hissedilmez. İğne uygulamaları hafif bir batma hissi verebilir. Embriyo transferi genellikle ağrısızdır."
+    },
+    {
+        q: "Kaç embriyo transfer edilmelidir?",
+        a: "Güncel tıbbi kılavuzlar, çoğul gebelik riskini azaltmak için tek embriyo transferini (eSET) önermektedir. Doktorunuz yaş ve embriyo kalitesine göre en uygun sayıyı belirleyecektir."
+    },
+    {
+        q: "Transfer sonrası yatak istirahati gerekli midir?",
+        a: "Güncel kanıtlar, transfer sonrası uzun süreli yatak istirahatinin gerekli olmadığını göstermektedir. Normal günlük aktivitelere devam edilebilir; ancak ağır egzersizden kaçınılması önerilir."
+    },
+    {
+        q: "IVF kaç kez denenebilir?",
+        a: "Tıbbi bir üst sınır yoktur. Ancak her deneme sonrası doktorunuz tedavi yanıtını değerlendirecek ve en uygun stratejiyi birlikte belirleyeceksiniz. Araştırmalar, kümülatif başarı oranının 3-6 siklusa kadar artmaya devam ettiğini göstermektedir."
+    }
+];
+
+const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "@id": "https://tupbebek.com/ivf-rehberi/#faq",
+    "isPartOf": { "@id": "https://tupbebek.com/ivf-rehberi/#webpage" },
+    "mainEntity": faqs.map(({ q, a }) => ({
+        "@type": "Question",
+        "name": q,
+        "acceptedAnswer": { "@type": "Answer", "text": a }
+    }))
+};
 ---
 
 <BaseLayout title="IVF (Tüp Bebek) Rehberi | tupbebek.com" description="Tüp bebek tedavisi hakkında adım adım rehber: hazırlık, yumurta toplama, embriyo transferi, bekleme süreci ve başarı oranları.">
     <Header />
+
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(faqSchema)} />
 
     <main id="main-content" tabindex="-1" class="pt-20">
         <!-- Hero -->
@@ -137,22 +170,12 @@ import Footer from '../components/Footer.astro';
                     <h2 class="font-headline text-2xl font-bold text-on-surface">Sık Sorulan Sorular</h2>
                 </div>
                 <div class="space-y-6">
-                    <div class="bg-surface-container-lowest border border-outline-variant/15 rounded-xl p-6">
-                        <h3 class="font-bold text-on-surface mb-2">IVF tedavisi ağrılı mıdır?</h3>
-                        <p class="text-on-surface-variant text-sm leading-relaxed">Yumurta toplama işlemi sedasyon altında yapıldığı için ağrı hissedilmez. İğne uygulamaları hafif bir batma hissi verebilir. Embriyo transferi genellikle ağrısızdır.</p>
-                    </div>
-                    <div class="bg-surface-container-lowest border border-outline-variant/15 rounded-xl p-6">
-                        <h3 class="font-bold text-on-surface mb-2">Kaç embriyo transfer edilmelidir?</h3>
-                        <p class="text-on-surface-variant text-sm leading-relaxed">Güncel tıbbi kılavuzlar, çoğul gebelik riskini azaltmak için tek embriyo transferini (eSET) önermektedir. Doktorunuz yaş ve embriyo kalitesine göre en uygun sayıyı belirleyecektir.</p>
-                    </div>
-                    <div class="bg-surface-container-lowest border border-outline-variant/15 rounded-xl p-6">
-                        <h3 class="font-bold text-on-surface mb-2">Transfer sonrası yatak istirahati gerekli midir?</h3>
-                        <p class="text-on-surface-variant text-sm leading-relaxed">Güncel kanıtlar, transfer sonrası uzun süreli yatak istirahatinin gerekli olmadığını göstermektedir. Normal günlük aktivitelere devam edilebilir; ancak ağır egzersizden kaçınılması önerilir.</p>
-                    </div>
-                    <div class="bg-surface-container-lowest border border-outline-variant/15 rounded-xl p-6">
-                        <h3 class="font-bold text-on-surface mb-2">IVF kaç kez denenebilir?</h3>
-                        <p class="text-on-surface-variant text-sm leading-relaxed">Tıbbi bir üst sınır yoktur. Ancak her deneme sonrası doktorunuz tedavi yanıtını değerlendirecek ve en uygun stratejiyi birlikte belirleyeceksiniz. Araştırmalar, kümülatif başarı oranının 3-6 siklusa kadar artmaya devam ettiğini göstermektedir.</p>
-                    </div>
+                    {faqs.map(({ q, a }) => (
+                        <div class="bg-surface-container-lowest border border-outline-variant/15 rounded-xl p-6">
+                            <h3 class="font-bold text-on-surface mb-2">{q}</h3>
+                            <p class="text-on-surface-variant text-sm leading-relaxed">{a}</p>
+                        </div>
+                    ))}
                 </div>
             </section>
 
@@ -168,9 +191,9 @@ import Footer from '../components/Footer.astro';
                         <span class="material-symbols-outlined text-lg">arrow_back</span>
                         Tüm Tedavi Yöntemleri
                     </a>
-                    <a href="/makaleler/basari-oranlari" class="px-6 py-3 bg-surface-container-lowest border border-outline-variant/30 text-on-surface rounded-xl font-semibold text-sm hover:bg-surface-container transition-colors inline-flex items-center gap-2">
+                    <a href="/basari-oranlari/" class="px-6 py-3 bg-surface-container-lowest border border-outline-variant/30 text-on-surface rounded-xl font-semibold text-sm hover:bg-surface-container transition-colors inline-flex items-center gap-2">
                         <span class="material-symbols-outlined text-lg">insights</span>
-                        Başarı Oranları Makalesi
+                        Başarı Oranları
                     </a>
                 </div>
             </section>
