@@ -9,10 +9,24 @@ const articles = await getPublishedArticles();
 // Featured articles
 const featuredArticles = articles.filter(a => a.data.featured).slice(0, 2);
 
+const getUpdatedAt = (article: typeof articles[number]) =>
+    article.data.lastModified || article.data.publishDate;
+
+const recentlyUpdatedArticles = [...articles]
+    .sort((a, b) => {
+        const updatedDiff = (getUpdatedAt(b)?.getTime() ?? 0) - (getUpdatedAt(a)?.getTime() ?? 0);
+        if (updatedDiff !== 0) return updatedDiff;
+        return (b.data.publishDate?.getTime() ?? 0) - (a.data.publishDate?.getTime() ?? 0);
+    })
+    .slice(0, 4);
+
 // All articles sorted by date
-const allArticles = articles.sort((a, b) =>
+const allArticles = [...articles].sort((a, b) =>
     (b.data.publishDate?.getTime() ?? 0) - (a.data.publishDate?.getTime() ?? 0)
 );
+
+const formatShortDate = (date?: Date) =>
+    date?.toLocaleDateString('tr-TR', { day: 'numeric', month: 'short', year: 'numeric' });
 
 // Extract unique categories with counts
 const categoryCounts = new Map<string, number>();
@@ -72,6 +86,46 @@ const categories = Array.from(categoryCounts.entries())
                 ))}
             </div>
         </section>
+
+        {recentlyUpdatedArticles.length > 0 && (
+        <section class="max-w-7xl mx-auto px-6 mb-16" aria-labelledby="recent-updates-title">
+            <div class="border-y border-gray-200 py-8">
+                <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4 mb-6">
+                    <div>
+                        <span class="text-xs font-bold text-primary-600 uppercase tracking-widest mb-2 block">Son Güncellenenler</span>
+                        <h2 id="recent-updates-title" class="font-headline text-2xl font-bold text-gray-900">Yenilenen Rehberler</h2>
+                    </div>
+                    <p class="text-sm text-gray-500 max-w-2xl leading-relaxed">
+                        Editoryal ve tıbbi kontrol sonrası güçlendirilen içerikler burada öne çıkar; yeni eklenen veya kapsamı genişletilen rehberlere hızlı geçiş sağlar.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
+                    {recentlyUpdatedArticles.map(article => {
+                        const updatedAt = getUpdatedAt(article);
+                        return (
+                            <a href={`/makaleler/${article.slug}`} class="group flex flex-col justify-between min-h-[190px] rounded-xl border border-gray-200 bg-white p-5 hover:border-primary-200 hover:shadow-md transition-all">
+                                <div>
+                                    <div class="flex items-center justify-between gap-3 mb-4">
+                                        <span class="text-[10px] font-bold text-primary-600 uppercase tracking-widest">{article.data.category}</span>
+                                        {updatedAt && (
+                                            <time class="text-[10px] font-semibold text-gray-400" datetime={updatedAt.toISOString()}>
+                                                {formatShortDate(updatedAt)}
+                                            </time>
+                                        )}
+                                    </div>
+                                    <h3 class="font-headline text-base font-bold text-gray-900 leading-snug group-hover:text-primary-700 transition-colors line-clamp-2">{article.data.title}</h3>
+                                    <p class="text-xs text-gray-500 leading-relaxed mt-3 line-clamp-3">{article.data.description}</p>
+                                </div>
+                                <span class="inline-flex items-center gap-1 text-xs font-bold text-primary-600 mt-5">
+                                    Rehbere Git <span class="material-symbols-outlined text-sm group-hover:translate-x-0.5 transition-transform">arrow_forward</span>
+                                </span>
+                            </a>
+                        );
+                    })}
+                </div>
+            </div>
+        </section>
+        )}
 
         <!-- Öne Çıkan Bilimsel Makaleler -->
         {featuredArticles.length > 0 && (

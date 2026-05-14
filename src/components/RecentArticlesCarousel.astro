@@ -7,11 +7,15 @@ import { getPublishedArticles, sanitizeImage } from '../utils/articles';
 
 const articles = (await getPublishedArticles())
     .sort((a, b) => {
-        const dateA = a.data.publishDate ? new Date(a.data.publishDate).getTime() : 0;
-        const dateB = b.data.publishDate ? new Date(b.data.publishDate).getTime() : 0;
-        return dateB - dateA;
+        const dateA = (a.data.lastModified || a.data.publishDate)?.getTime() ?? 0;
+        const dateB = (b.data.lastModified || b.data.publishDate)?.getTime() ?? 0;
+        if (dateB !== dateA) return dateB - dateA;
+        return (b.data.publishDate?.getTime() ?? 0) - (a.data.publishDate?.getTime() ?? 0);
     })
     .slice(0, 6);
+
+const formatDate = (date?: Date) =>
+    date?.toLocaleDateString('tr-TR', { day: 'numeric', month: 'short', year: 'numeric' });
 ---
 
 <section class="py-16 lg:py-20">
@@ -20,8 +24,8 @@ const articles = (await getPublishedArticles())
         <!-- Section Header -->
         <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-10 lg:mb-14">
             <div>
-                <h2 class="text-2xl lg:text-3xl font-headline font-bold text-gray-900 mb-2">Güncel Makaleler</h2>
-                <p class="text-base text-gray-500">Bilimsel, güncel ve yayın kurulu onaylı içerikler.</p>
+                <h2 class="text-2xl lg:text-3xl font-headline font-bold text-gray-900 mb-2">Son Güncellenen Rehberler</h2>
+                <p class="text-base text-gray-500">Tıbbi yayın kurulu kontrolüyle yenilenen ve genişletilen içerikler.</p>
             </div>
             <a href="/makaleler" class="text-primary-600 font-semibold text-sm hover:underline flex items-center gap-1.5 shrink-0">
                 Tüm Makaleler <span class="material-symbols-outlined text-base">arrow_forward</span>
@@ -48,6 +52,11 @@ const articles = (await getPublishedArticles())
                         <span class="text-xs font-bold uppercase tracking-wide text-primary-600">
                             {article.data.category}
                         </span>
+                        {(article.data.lastModified || article.data.publishDate) && (
+                            <time class="text-[11px] font-semibold text-gray-500" datetime={(article.data.lastModified || article.data.publishDate)?.toISOString()}>
+                                Güncellendi: {formatDate(article.data.lastModified || article.data.publishDate)}
+                            </time>
+                        )}
 
                         <!-- Title -->
                         <a href={`/makaleler/${article.slug}`}>
