@@ -92,6 +92,7 @@ export const routeAliases = {
   '/makaleler/myomlar-ve-kisirlik': '/makaleler/miyomlar-ve-tup-bebek',
   '/makaleler/pkos-ve-tup-bebek': '/makaleler/opk-ve-ivf',
   '/policy': '/gizlilik-politikasi',
+  '/services': '/tedavi-yontemleri',
   '/step-by-step-ivf-process': '/ivf-rehberi',
   '/treatment': '/tedavi-yontemleri',
   '/treatment/causes-and-diagnosis-of-infertility': '/tedavi-yontemleri',
