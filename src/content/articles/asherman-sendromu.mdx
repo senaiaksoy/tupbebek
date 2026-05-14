@@ -2,14 +2,14 @@
 title: "Asherman Sendromu (Rahim İçi Yapışıklık): Tanı, Histeroskopik Tedavi ve Sonraki Gebelik Yönetimi"
 description: "Asherman sendromu için modern tanı (histeroskopi), AFS-ESGE-March sınıflandırması, histeroskopik adheziolizis sonrası gebelik oranları, rekürrens önleme stratejileri (balon, estrojen, hyaluronik asit) ve plasenta akreta dahil obstetrik risk yönetimi."
 publishDate: 2026-03-31
-lastModified: 2026-05-11
+lastModified: 2026-05-14
 author: "Doç. Dr. Senai Aksoy"
 authorTitle: "Kadın Hastalıkları ve Doğum Uzmanı"
 authorCredentials: "Üreme Tıbbı ve Yardımcı Üreme Teknikleri"
 authorYoutube: "https://www.youtube.com/@DocentDrSenaiAksoy"
 medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Tıbbi Danışma Kurulu"
-reviewDate: 2026-05-11
+reviewDate: 2026-05-14
 category: "Kadın Sağlığı"
 recommendationGrade: A
 image: "/images/makaleler/asherman-sendromu.webp"
@@ -69,6 +69,15 @@ Asherman sendromu, rahim iç boşluğunun **kalıcı yapışıklıklarla (sineş
 Asherman sendromu, ilk olarak 1948 yılında Joseph Asherman tarafından tanımlanmış, rahim iç tabakasının (endometriyum) bazal tabakasının hasar görmesi sonucu **rahim ön ve arka duvarlarının kalıcı olarak yapışması** ile karakterize bir tablodur. Yapışıklıklar (sineşi) hafif filmsi bantlardan, rahim boşluğunu tamamen kapatan yoğun bağ dokusuna kadar geniş bir spektrumda olabilir.
 
 Modern üreme tıbbında Asherman sendromu önemli bir başlık olmaya devam etmektedir çünkü: (1) önlenebilir bir tablodur — çoğu olgu cerrahi travmaya bağlıdır; (2) erken tanı ile büyük çoğunluğu başarıyla tedavi edilebilir; (3) tanı konmadığında tekrarlayan IVF başarısızlığı, sebebi bilinmeyen infertilite ve düşük olarak yanlış değerlendirilebilir.
+
+## Sık Aranan Asherman ve Rahim İçi Yapışıklık Soruları
+
+| Aranan ifade | Kısa cevap |
+| :--- | :--- |
+| **Asherman sendromu nedir?** | Rahim iç duvarlarında yapışıklık gelişmesi ve rahim boşluğunun kısmen veya tamamen etkilenmesidir. |
+| **Rahim içi yapışıklık belirtileri nelerdir?** | Adetin azalması/kesilmesi, infertilite, tekrarlayan gebelik kaybı veya işlem sonrası ağrı ile fark edilebilir. |
+| **Rahim içi yapışıklık ultrasonda görülür mü?** | Bazen şüphe verir; tanıda histeroskopi en doğrudan yöntemdir. SIS/HSG de yardımcı olabilir. |
+| **Asherman sendromu olan hamile kalabilir mi?** | Tedavi sonrası mümkün olabilir; olasılık yapışıklığın şiddetine, endometrium kalitesine ve eşlik eden faktörlere bağlıdır. |
 
 ## Asherman Sendromu Nasıl Oluşur?
 
@@ -304,3 +313,39 @@ Her küretaj kümülatif olarak riski artırır. Birinci küretaj sonrası ~%5-2
 
 **Şiddetli Asherman tedavisi sonrası canlı doğum şansım nedir?**
 Şiddetli olgularda canlı doğum oranı yaklaşık **%32**'dir (Deans 2018, sistematik derleme). Bu oran düşük gibi görünse de tedavi öncesi sıfıra yakın olan şansa kıyasla anlamlı bir iyileşmedir. Çoklu adheziolizis seansları, optimum adjuvan tedavi ve son trimester boyunca yüksek riskli gebelik takibi şansı artırır.
+
+export const ashermanFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "Asherman sendromu nedir?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Asherman sendromu rahim iç duvarlarında yapışıklık gelişmesi ve rahim boşluğunun kısmen veya tamamen etkilenmesidir."
+    }
+  }, {
+    "@type": "Question",
+    "name": "Rahim içi yapışıklık belirtileri nelerdir?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Adetin azalması veya kesilmesi, infertilite, tekrarlayan gebelik kaybı veya rahim içi işlem sonrası ağrı ile fark edilebilir."
+    }
+  }, {
+    "@type": "Question",
+    "name": "Rahim içi yapışıklık ultrasonda görülür mü?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Bazen şüphe verebilir; ancak tanıda histeroskopi en doğrudan yöntemdir. SIS veya HSG de yardımcı olabilir."
+    }
+  }, {
+    "@type": "Question",
+    "name": "Asherman sendromu olan hamile kalabilir mi?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Tedavi sonrası gebelik mümkün olabilir. Olasılık yapışıklığın şiddetine, endometrium kalitesine, yaşa ve eşlik eden infertilite faktörlerine bağlıdır."
+    }
+  }]
+};
+
+<script type="application/ld+json" set:html={JSON.stringify(ashermanFaqSchema)} />

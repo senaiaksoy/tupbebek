@@ -2,14 +2,14 @@
 title: "Beta-hCG Testi: Embriyo Transferi Sonrası Hamilelik Takibinin Kanıt Tabanlı Yorumu"
 description: "Tüp bebek sonrası beta-hCG testi ne zaman yapılır? Taze ve dondurulmuş transfer için cutoff değerleri, doubling time, biyokimyasal gebelik, ektopik ve heterotopik gebelik risklerinin kanıt tabanlı yorumu."
 publishDate: 2026-03-31
-lastModified: 2026-05-11
+lastModified: 2026-05-14
 author: "Doç. Dr. Senai Aksoy"
 authorTitle: "Kadın Hastalıkları ve Doğum Uzmanı"
 authorCredentials: "Üreme Tıbbı ve Yardımcı Üreme Teknikleri"
 authorYoutube: "https://www.youtube.com/@DocentDrSenaiAksoy"
 medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Tıbbi Danışma Kurulu"
-reviewDate: 2026-05-11
+reviewDate: 2026-05-14
 category: "Tüp Bebek"
 recommendationGrade: A
 image: "/images/makaleler/beta-hcg-testi.webp"
@@ -86,6 +86,15 @@ Doğru zamanlama doğru yorumun ön şartıdır. Çok erken yapılan test yanlı
 | Blastokist (5. gün) transfer — taze veya dondurulmuş | 9-10. gün (en erken) — sıklıkla 10-12. gün |
 | Cleavage (2-3. gün) transfer | 12-14. gün |
 | Embriyo bağışı / donör siklusu | 10-12. gün |
+
+### Gün Bazında Sık Aranan β-hCG Soruları
+
+| Arama Sorusu | Güvenli Yorum |
+|---|---|
+| **Tüp bebek 8. gün beta-hCG kaç olmalı?** | Çoğu hasta için erken olabilir; özellikle 5. gün embriyosunda bile tek başına karar verdirmez. |
+| **Tüp bebek 10. gün beta-hCG kaç olmalı?** | Blastokist transferinde anlamlı ilk ölçüm günü olabilir; değeri 48 saat sonraki artışla birlikte yorumlamak gerekir. |
+| **Tüp bebek 12. gün beta-hCG kaç olmalı?** | Taze blastokist transferinde bazı çalışmalarda 12. gün için yaklaşık 205 mIU/mL eşiği öngörü değeri taşır; mutlak karar değildir. |
+| **Tüp bebek 14. gün beta-hCG kaç olmalı?** | Dondurulmuş transferde 14. gün değeri sık kullanılır; tek sayı yerine artış hızı ve ultrason takibi belirleyicidir. |
 
 **Test öncesi tetik iğnesi (hCG triggeri) ile karışıklığa dikkat:** Yumurta toplama gününden önce uygulanan rekombinant veya üriner hCG triggeri (genellikle 250 mcg ya da 5000-10,000 IU) ölçüm sırasında hâlâ kanda saptanabilir; bu yüzden tetik sonrası **en az 10 gün** geçmesi beklenir. Modern IVF protokollerinde özellikle PCOS hastalarında **GnRH agonist trigger** tercih edildiğinde bu sorun ortadan kalkar.
 
@@ -218,3 +227,23 @@ Normal β-hCG eğrisi sağlıklı gebeliğin iyi bir göstergesidir ama **garant
 
 **Düşük β-hCG ile gebelik devam ederse çocuk normal mi olur?**
 β-hCG'nin başlangıç seviyesi, devam eden ve canlı doğumla sonuçlanan gebeliklerde çocuğun sağlığını **belirlemez**. Düşük başlangıç β-hCG'sine rağmen gebeliği devam eden olgularda doğan bebeklerde anomali oranı genel popülasyondan farklı değildir. Önemli olan trimester boyunca normal sonografik bulgular ve standart gebelik takibinin yapılmasıdır.
+
+export const betaHcgFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "Tüp bebek sonrası beta-hCG ne zaman yapılır?",
+    "acceptedAnswer": { "@type": "Answer", "text": "Beta-hCG testi genellikle blastokist transferinden 10-12 gün, 2-3. gün embriyo transferinden 12-14 gün sonra yapılır. Test günü transfer edilen embriyonun gelişim gününe göre değişir." }
+  }, {
+    "@type": "Question",
+    "name": "Tüp bebek 10. gün beta-hCG kaç olmalı?",
+    "acceptedAnswer": { "@type": "Answer", "text": "10. gün özellikle blastokist transferinde anlamlı bir ilk ölçüm günü olabilir; ancak tek bir değerle karar verilmez. Değer, 48 saat sonraki artış hızı ve klinik tabloyla birlikte yorumlanmalıdır." }
+  }, {
+    "@type": "Question",
+    "name": "Beta-hCG iki katına çıkmazsa ne anlama gelir?",
+    "acceptedAnswer": { "@type": "Answer", "text": "48-72 saatlik artışın beklenenden yavaş olması biyokimyasal gebelik, ektopik gebelik veya erken kayıp riskini düşündürebilir; tek başına tanı koydurmaz ve takip ölçümü ile ultrason gerekir." }
+  }]
+};
+
+<script type="application/ld+json" set:html={JSON.stringify(betaHcgFaqSchema)} />

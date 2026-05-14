@@ -1,6 +1,6 @@
 ---
-title: "Taze mi, Dondurulmuş Embriyo Transferi mi? IVF Karar Rehberi"
-description: "Taze ve dondurulmuş embriyo transferi farkı, freeze-all, OHSS riski, PGT, progesteron yüksekliği, doğal ve programlanmış FET için karar rehberi."
+title: "Dondurulmuş Embriyo Transferi mi Taze Transfer mi?"
+description: "Dondurulmuş embriyo transferi ne zaman yapılır? Taze ve dondurulmuş transfer farkı, freeze-all, OHSS riski, PGT, progesteron ve FET hazırlığı."
 publishDate: 2025-09-26
 author: "Doç. Dr. Senai Aksoy"
 authorTitle: "Kadın Hastalıkları ve Doğum Uzmanı"
@@ -8,8 +8,8 @@ authorCredentials: "Üreme Tıbbı ve Yardımcı Üreme Teknikleri"
 authorYoutube: "https://www.youtube.com/@DocentDrSenaiAksoy"
 medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Tıbbi Danışma Kurulu"
-reviewDate: 2026-05-12
-lastModified: 2026-05-12
+reviewDate: 2026-05-14
+lastModified: 2026-05-14
 category: "Tüp Bebek"
 recommendationGrade: A
 image: /images/library/tedavi/taze-donmus-transfert.webp
@@ -59,6 +59,13 @@ Herkes için tek bir doğru yoktur. Normal yanıt veren ve rahim koşulları uyg
 <MedicalInfoBox title="Hızlı Bakış: Freeze-All Herkese Değil, Doğru Hastaya" icon="FET" color="blue">
 Cochrane 2021 derlemesi, freeze-all ve taze transfer stratejileri arasında herkes için net kümülatif canlı doğum üstünlüğü göstermemiştir. Ancak OHSS riski olan hastalarda embriyoları dondurup transferi ertelemek güvenlik açısından önemli olabilir. <InlineEvidence grade="A" />
 </MedicalInfoBox>
+
+| Sık Aranan Soru | Kısa Yanıt |
+| :--- | :--- |
+| **Dondurulmuş embriyo transferi ne zaman yapılır?** | Rahim hazırlığı tamamlandığında ve transfer günü embriyo gelişim gününe göre progesteronla eşleştirildiğinde yapılır. |
+| **Transfer öncesi progesteron kaç olmalı?** | Tek bir evrensel eşik yoktur; doğal ve programlanmış FET protokolüne göre klinik hedef değişir. |
+| **Dondurulmuş transfer sonrası kasık ağrısı normal mi?** | Hafif kasık hissi olabilir; şiddetli ağrı, kanama, ateş veya nefes darlığı değerlendirme gerektirir. |
+| **Dondurulmuş transfer kullanılan ilaçlar nelerdir?** | Programlanmış siklusta östrojen ve progesteron sık kullanılır; doğal siklusta yumurtlama takibi ön plandadır. |
 
 ## İçindekiler
 
@@ -134,6 +141,38 @@ Embriyo biyopsisi sonrası genetik sonuçların çıkması zaman alır. Bu süre
 Çoğu hastada bir sonraki uygun siklus planlanabilir; ancak OHSS, rahim içi işlem, PGT sonucu veya tıbbi hazırlık süreyi değiştirebilir.
 </Accordion>
 
+<Accordion title="Dondurulmuş embriyo transferi ne zaman yapılır?">
+Transfer günü, rahim içi hazırlığın tipine ve embriyonun gelişim gününe göre planlanır. Örneğin blastokist transferinde progesteron maruziyeti ile embriyo günü uyumlu olmalıdır; bu takvim doğal ve programlanmış FET'te farklı kurulabilir.
+</Accordion>
+
+<Accordion title="Dondurulmuş embriyo transferi öncesi progesteron kaç olmalı?">
+Tek bir evrensel progesteron değeri bütün hastalar için geçerli değildir. Değer; doğal siklus, modifiye doğal siklus veya programlanmış FET protokolüne göre yorumlanır. Bu nedenle ölçüm sonucu mutlaka kullanılan protokolle birlikte değerlendirilmelidir.
+</Accordion>
+
+<Accordion title="Dondurulmuş transfer sonrası kasık ağrısı ne zaman önemlidir?">
+Hafif kasık hissi, dolgunluk veya kısa süreli kramp tek başına gebelik sonucu hakkında güvenilir bilgi vermez. Şiddetli ağrı, artan kanama, ateş, bayılma hissi, nefes darlığı veya hızlı kilo artışı varsa tıbbi değerlendirme gerekir.
+</Accordion>
+
 </div>
+
+export const frozenTransferFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "Dondurulmuş embriyo transferi ne zaman yapılır?",
+    "acceptedAnswer": { "@type": "Answer", "text": "Dondurulmuş embriyo transferi, rahim hazırlığı tamamlandığında ve progesteron maruziyeti embriyonun gelişim günüyle uyumlu hale getirildiğinde yapılır. Takvim doğal, modifiye doğal veya programlanmış FET protokolüne göre değişir." }
+  }, {
+    "@type": "Question",
+    "name": "Taze transfer mi dondurulmuş transfer mi daha iyidir?",
+    "acceptedAnswer": { "@type": "Answer", "text": "Herkes için tek bir doğru yoktur. OHSS riski, progesteron yüksekliği, PGT planı veya rahim hazırlığı ihtiyacı varsa dondurulmuş transfer öne çıkabilir; uygun hastada taze transfer de geçerli bir seçenektir." }
+  }, {
+    "@type": "Question",
+    "name": "Dondurulmuş transfer öncesi progesteron kaç olmalı?",
+    "acceptedAnswer": { "@type": "Answer", "text": "Tek bir evrensel eşik yoktur. Progesteron değeri doğal siklus, modifiye doğal siklus veya programlanmış FET protokolüne göre yorumlanmalıdır." }
+  }]
+};
+
+<script type="application/ld+json" set:html={JSON.stringify(frozenTransferFaqSchema)} />
 
 <RevealScript />

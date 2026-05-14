@@ -8,8 +8,8 @@ authorCredentials: "Üreme Tıbbı ve Yardımcı Üreme Teknikleri"
 authorYoutube: "https://www.youtube.com/@DocentDrSenaiAksoy"
 medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Tıbbi Danışma Kurulu"
-reviewDate: 2026-05-12
-lastModified: 2026-05-12
+reviewDate: 2026-05-14
+lastModified: 2026-05-14
 category: "Tüp Bebek"
 recommendationGrade: B
 image: /images/library/hastalik/miyom_ivf.webp
@@ -69,6 +69,7 @@ Evet, miyom varken tüp bebek yapılabilir. Transfer öncesi en kritik soru miyo
 ## İçindekiler
 
 - [Miyom IVF sürecinde neden önemlidir?](#neden)
+- [Sık aranan miyom ve IVF soruları](#arama-niyeti)
 - [Miyom tipine göre karar](#tipler)
 - [Transfer öncesi hangi testler yapılır?](#testler)
 - [Ameliyat mı, embriyo dondurma mı, takip mi?](#strateji)
@@ -83,6 +84,17 @@ Evet, miyom varken tüp bebek yapılabilir. Transfer öncesi en kritik soru miyo
 <h2 id="neden">Miyom IVF Sürecinde Neden Önemlidir?</h2>
 
 IVF açısından önemli olan, miyomun embriyonun tutunacağı rahim iç boşluğunu etkileyip etkilemediğidir. Ultrason raporunda “miyom izlendi” yazması tek başına transferi erteletmez. Konum, boyut, endometrium çizgisi, transfer yolu, kanama ve önceki deneme öyküsü birlikte okunmalıdır.
+</div>
+
+<div data-reveal>
+<h2 id="arama-niyeti">Sık Aranan Miyom ve IVF Soruları</h2>
+
+| Aranan ifade | Kısa cevap |
+| :--- | :--- |
+| **Miyom varken tüp bebek yapılır mı?** | Evet, yapılabilir; asıl soru miyomun rahim iç boşluğunu bozup bozmadığıdır. |
+| **Miyom tüp bebek başarısını etkiler mi?** | Kaviteyi bozan submüköz veya intramural miyomlar etkileyebilir; subseröz miyomların etkisi çoğu zaman sınırlıdır. |
+| **Miyom ameliyatı sonrası tüp bebek ne zaman yapılır?** | Histeroskopik işlem sonrası bekleme kısa olabilir; derin miyomektomide rahim iyileşmesi için daha uzun süre gerekebilir. |
+| **Transfer öncesi miyom ameliyatı gerekir mi?** | Her miyom için gerekmez; boyut, konum, kavite etkisi, kanama ve önceki transfer öyküsüyle karar verilir. |
 </div>
 
 <div data-reveal>
@@ -153,8 +165,44 @@ Yaş, AMH, embriyo planı ve miyomun kavite etkisine göre değişir. Düşük r
 <Accordion title="Miyom ameliyatı sonrası transfer ne zaman yapılır?">
 Ameliyat tipine ve rahim duvarı onarımına göre değişir. Histeroskopik işlemlerden sonra bekleme daha kısa olabilir; derin miyomektomide daha uzun iyileşme gerekir.
 </Accordion>
+
+<Accordion title="İntramural miyom varken transfer yapılır mı?">
+Kaviteyi bozmayan küçük intramural miyomlarda transfer yapılabilir. Kaviteye yakın, büyük, çok sayıda veya önceki iyi kalite embriyo transferlerine rağmen tutunma olmayan olgularda karar yeniden değerlendirilir.
+</Accordion>
+
+<Accordion title="Miyom ameliyatı yumurtalık rezervini etkiler mi?">
+Miyom ameliyatı doğrudan yumurtalık cerrahisi değildir; ancak yaş, kanama, iyileşme süresi ve tedavide zaman kaybı önemlidir. Düşük rezervde önce yumurta toplama veya embriyo dondurma gündeme gelebilir.
+</Accordion>
 </div>
 
 </div>
 
+export const fibroidIvfFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "Miyom varken tüp bebek yapılır mı?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Evet, yapılabilir. En kritik soru miyomun rahim iç boşluğunu bozup bozmadığı, kanama yapıp yapmadığı ve transfer yolunu etkileyip etkilemediğidir."
+    }
+  }, {
+    "@type": "Question",
+    "name": "Miyom tüp bebek başarısını etkiler mi?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Kaviteyi bozan submüköz veya intramural miyomlar IVF sonucunu etkileyebilir. Rahim dışına büyüyen, belirti vermeyen subseröz miyomlarda etki çoğu zaman sınırlıdır."
+    }
+  }, {
+    "@type": "Question",
+    "name": "Miyom ameliyatı sonrası tüp bebek ne zaman yapılır?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Ameliyatın tipine göre değişir. Histeroskopik işlemlerden sonra bekleme daha kısa olabilir; derin miyomektomide rahim iyileşmesi için daha uzun süre gerekebilir."
+    }
+  }]
+};
+
+<script type="application/ld+json" set:html={JSON.stringify(fibroidIvfFaqSchema)} />
 <RevealScript />

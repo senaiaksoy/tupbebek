@@ -9,8 +9,8 @@ authorCredentials: "Üreme Tıbbı ve Yardımcı Üreme Teknikleri"
 authorYoutube: "https://www.youtube.com/@DocentDrSenaiAksoy"
 medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Tıbbi Danışma Kurulu"
-reviewDate: 2026-05-12
-lastModified: 2026-05-12
+reviewDate: 2026-05-14
+lastModified: 2026-05-14
 category: "Tanı ve Testler"
 recommendationGrade: B
 image: /images/library/klinik/54.webp
@@ -64,6 +64,7 @@ Yumurtlama takibi, en verimli günleri belirleyip ilişki zamanlamasını planla
 ## İçindekiler
 
 - [Yumurtlama nedir?](#nedir)
+- [Sık aranan yumurtlama takibi soruları](#arama-niyeti)
 - [Verimli pencere ne zaman?](#pencere)
 - [Yumurtlama nasıl takip edilir?](#takip)
 - [LH testi ne söyler?](#lh)
@@ -74,6 +75,15 @@ Yumurtlama takibi, en verimli günleri belirleyip ilişki zamanlamasını planla
 <h2 id="nedir">Yumurtlama Nedir?</h2>
 
 Yumurtlama, olgunlaşan yumurtanın folikülden çıkmasıdır. Bu süreç FSH ve LH gibi hormonlarla düzenlenir. Düzenli ovülasyon, doğal gebelik şansı için temel basamaklardan biridir. <InlineEvidence grade="B" />
+
+<h2 id="arama-niyeti">Sık Aranan Yumurtlama Takibi Soruları</h2>
+
+| Aranan ifade | Kısa cevap |
+| :--- | :--- |
+| **Yumurtlama takibi nasıl yapılır?** | Adet düzeni, LH testi, servikal akıntı, bazal ısı ve seçilmiş hastada ultrason takibi birlikte kullanılabilir. |
+| **Yumurtlama takibi için doktora ne zaman gidilmeli?** | Düzensiz adet, PCOS, düşük rezerv şüphesi, 35 yaş üstü veya 6-12 ay gebelik olmaması durumunda değerlendirme geciktirilmemelidir. |
+| **Ovulasyon testi pozitifse ne zaman ilişki olmalı?** | Pozitiflikten sonraki gün ve takip eden kısa dönem verimli kabul edilir; çiftin koşullarına göre planlanır. |
+| **Yumurtlama günü hesaplama güvenilir mi?** | Düzenli döngüde fikir verir; düzensiz adetlerde tek başına güvenilir değildir. |
 
 <h2 id="pencere">Verimli Pencere Ne Zaman?</h2>
 
@@ -138,6 +148,38 @@ Genellikle pozitiflik sonrası 1-2 günlük dönem verimli kabul edilir. Tam zam
 Günümüzde pratikte daha az tercih edilir. Ultrason ve LH testleri çoğu zaman daha kullanışlıdır.
 </Accordion>
 
+<Accordion title="Yumurtlama takibi gebeliği kesinleştirir mi?">
+Hayır. Doğru zamanlamaya yardımcı olur; ancak tüpler, sperm analizi, yaş, yumurtalık rezervi ve rahim faktörleri de gebelik olasılığını etkiler.
+</Accordion>
+
 </div>
 
+export const ovulationTrackingFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "Yumurtlama takibi nasıl yapılır?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Adet düzeni, LH testi, servikal akıntı, bazal vücut ısısı ve seçilmiş hastalarda ultrason takibi birlikte kullanılabilir."
+    }
+  }, {
+    "@type": "Question",
+    "name": "Ovulasyon testi pozitifse ne zaman ilişki olmalı?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "LH testi pozitif olduktan sonraki gün ve takip eden kısa dönem verimli kabul edilir. Tam zamanlama çiftin koşullarına göre planlanabilir."
+    }
+  }, {
+    "@type": "Question",
+    "name": "Yumurtlama günü hesaplama güvenilir mi?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Düzenli döngülerde fikir verir; düzensiz adetlerde tek başına güvenilir değildir ve ek değerlendirme gerekebilir."
+    }
+  }]
+};
+
+<script type="application/ld+json" set:html={JSON.stringify(ovulationTrackingFaqSchema)} />
 <RevealScript />

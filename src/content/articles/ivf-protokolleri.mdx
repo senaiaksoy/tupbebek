@@ -8,8 +8,8 @@ authorCredentials: "Üreme Tıbbı ve Yardımcı Üreme Teknikleri"
 authorYoutube: "https://www.youtube.com/@DocentDrSenaiAksoy"
 medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Tıbbi Danışma Kurulu"
-reviewDate: 2026-05-12
-lastModified: 2026-05-12
+reviewDate: 2026-05-14
+lastModified: 2026-05-14
 category: "Tedavi Yöntemleri"
 recommendationGrade: A
 image: /images/library/tedavi/ivf_tedavi_sureci.webp
@@ -86,6 +86,7 @@ IVF protokolü; yaş, AMH, antral folikül sayısı (AFC), önceki tedavi yanıt
 ## İçindekiler
 
 - [IVF protokolü neyi belirler?](#protokol-nedir)
+- [Sık aranan IVF protokol soruları](#arama-niyeti)
 - [Antagonist protokol](#antagonist)
 - [Uzun agonist protokol](#uzun)
 - [Mini IVF ve doğal siklus](#mini-dogal)
@@ -95,6 +96,17 @@ IVF protokolü; yaş, AMH, antral folikül sayısı (AFC), önceki tedavi yanıt
 
 <div data-reveal>
 <Video id="NLvPH9mZIaE" />
+</div>
+
+<div data-reveal>
+<h2 id="arama-niyeti">Sık Aranan IVF Protokol Soruları</h2>
+
+| Aranan ifade | Kısa cevap |
+| :--- | :--- |
+| **IVF protokolleri nelerdir?** | Antagonist, uzun agonist, mini IVF, doğal siklus, PPOS ve seçilmiş olgularda DuoStim en sık konuşulan yaklaşımlardır. |
+| **Tüp bebekte uzun protokol nedir?** | Yumurtalıkların baskılanıp daha kontrollü uyarıldığı, daha uzun hazırlık gerektiren agonist protokoldür. |
+| **Antagonist protokol kimlere uygulanır?** | Kısa ve esnek olduğu için geniş hasta grubunda kullanılır; PCOS/OHSS riski olanlarda güvenlik avantajı sağlayabilir. |
+| **Mini IVF düşük AMH için daha mı iyi?** | Her düşük AMH hastasında otomatik üstün değildir; amaç daha az ilaçla makul sayıda olgun yumurta elde etmek olabilir. |
 </div>
 
 <div data-reveal>
@@ -222,6 +234,14 @@ Hayır. DuoStim daha çok düşük rezerv, ileri yaş, zaman baskısı veya embr
 <Accordion title="PCOS hastalarında hangi protokol daha güvenlidir?">
 PCOS ve yüksek yanıt riski olan hastalarda antagonist protokol, düşük doz başlangıç, GnRH agonist trigger ve gerekirse freeze-all stratejisi OHSS riskini azaltmak için sık kullanılan güvenlik hattıdır.
 </Accordion>
+
+<Accordion title="Tüp bebekte uzun protokol kimlere uygulanır?">
+Endometriozis, adenomyozis, önceki senkronizasyon sorunları veya özel klinik hedefler varsa uzun protokol tartışılabilir. Ancak daha uzun hazırlık gerektirir ve herkes için standart seçenek değildir.
+</Accordion>
+
+<Accordion title="Antagonist protokol kısa protokol mü?">
+Evet, günlük pratikte antagonist protokol çoğu zaman daha kısa ve esnek bir IVF uyarım yaklaşımıdır. Çatlatma iğnesi seçeneği ve freeze-all planı güvenlik açısından avantaj sağlayabilir.
+</Accordion>
 </div>
 
 <div data-reveal class="mt-12 bg-slate-50 p-8 rounded-3xl border border-slate-200">
@@ -273,6 +293,20 @@ export const ivfProtocolsFaqSchema = {
     "acceptedAnswer": {
       "@type": "Answer",
       "text": "PCOS ve yüksek yanıt riski olan hastalarda antagonist protokol, düşük doz başlangıç, GnRH agonist trigger ve gerekirse freeze-all stratejisi OHSS riskini azaltmak için sık kullanılan güvenlik hattıdır."
+    }
+  }, {
+    "@type": "Question",
+    "name": "Tüp bebekte uzun protokol nedir?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Uzun protokol, yumurtalıkların agonist ilaçlarla baskılanıp daha kontrollü uyarıldığı ve daha uzun hazırlık gerektiren IVF yaklaşımıdır. Her hasta için standart değildir."
+    }
+  }, {
+    "@type": "Question",
+    "name": "Antagonist protokol kimlere uygulanır?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Antagonist protokol geniş hasta grubunda kullanılabilir. Kısa ve esnek olması, PCOS veya OHSS riski olan hastalarda güvenlik planı yapmayı kolaylaştırabilir."
     }
   }]
 };

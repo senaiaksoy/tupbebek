@@ -8,8 +8,8 @@ authorCredentials: "Üreme Tıbbı ve Yardımcı Üreme Teknikleri"
 authorYoutube: "https://www.youtube.com/@DocentDrSenaiAksoy"
 medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Tıbbi Danışma Kurulu"
-reviewDate: 2026-05-12
-lastModified: 2026-05-12
+reviewDate: 2026-05-14
+lastModified: 2026-05-14
 category: "Genetik"
 recommendationGrade: C
 image: /images/library/embriyo/pgt_sex.webp
@@ -62,6 +62,7 @@ Türkiye'de tıbbi olmayan nedenlerle PGT kullanarak cinsiyet seçimi yapılamaz
 ## İçindekiler
 
 - [PGT cinsiyeti gösterebilir mi?](#gosterebilir-mi)
+- [Sık aranan cinsiyet seçimi soruları](#arama-niyeti)
 - [Türkiye'de yasal çerçeve](#yasal)
 - [Tıbbi istisna ne demektir?](#istisna)
 - [PGT'nin asıl amacı](#amac)
@@ -71,6 +72,15 @@ Türkiye'de tıbbi olmayan nedenlerle PGT kullanarak cinsiyet seçimi yapılamaz
 <h2 id="gosterebilir-mi">PGT Cinsiyeti Gösterebilir mi?</h2>
 
 Evet, PGT analizinde embriyonun cinsiyet kromozomları teknik olarak görülebilir. Ancak “cinsiyet bilgisinin elde edilebilmesi” ile “cinsiyet seçimi yapılabilmesi” aynı şey değildir. Türkiye'deki uygulamada PGT'nin amacı embriyo seçimini tıbbi endikasyonlara göre yapmaktır.
+
+<h2 id="arama-niyeti">Sık Aranan Cinsiyet Seçimi Soruları</h2>
+
+| Aranan soru | Kısa cevap |
+| :--- | :--- |
+| **Tüp bebekte cinsiyet seçimi var mı?** | Türkiye'de tıbbi olmayan nedenle cinsiyet seçimi yapılamaz. |
+| **PGT ile cinsiyet belirleme yapılır mı?** | PGT cinsiyet kromozomlarını teknik olarak gösterebilir; bu bilgi sosyal seçim amacıyla kullanılamaz. |
+| **Tüp bebekte cinsiyet seçimi nasıl yapılır?** | Sosyal tercih için yapılmaz. Cinsiyetle ilişkili ciddi kalıtsal hastalık varsa süreç genetik danışmanlıkla değerlendirilir. |
+| **PGT-M cinsiyet seçimi midir?** | Hayır. PGT-M bilinen tek gen hastalığını taramak için kullanılır; amaç kız veya erkek çocuk seçmek değildir. |
 
 <h2 id="yasal">Türkiye'de Yasal Çerçeve</h2>
 
@@ -113,6 +123,10 @@ PGT'de etik sınır, teknolojinin yapabildiği her şeyin tıbben veya hukuken y
 
 <h2 id="faq">Sıkça Sorulan Sorular</h2>
 
+<Accordion title="Tüp bebekte cinsiyet seçimi var mı?">
+Türkiye'de tıbbi olmayan nedenlerle tüp bebekte cinsiyet seçimi yapılmaz. PGT veya embriyo seçimi sosyal tercih için kullanılamaz.
+</Accordion>
+
 <Accordion title="PGT yaptırınca embriyonun cinsiyetini öğrenebilir miyim?">
 Türkiye'de cinsiyet bilgisi sosyal seçim amacıyla paylaşılmaz. Tıbbi gerekçe varsa genetik danışmanlık çerçevesinde değerlendirilir.
 </Accordion>
@@ -130,5 +144,38 @@ Hayır. PGT-M bilinen tek gen hastalığını tarar. X'e bağlı hastalıklarda 
 </Accordion>
 
 </div>
+
+export const pgtSexSelectionFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Tüp bebekte cinsiyet seçimi var mı?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Türkiye'de tıbbi olmayan nedenlerle tüp bebekte cinsiyet seçimi yapılmaz. Cinsiyetle ilişkili ciddi kalıtsal hastalık gibi tıbbi gerekçeler genetik danışmanlıkla değerlendirilir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "PGT ile cinsiyet belirleme yapılır mı?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "PGT embriyonun cinsiyet kromozomlarını teknik olarak gösterebilir; ancak Türkiye'de bu bilgi sosyal cinsiyet seçimi amacıyla kullanılamaz."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "PGT-M cinsiyet seçimi midir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hayır. PGT-M bilinen tek gen hastalığını taramak için kullanılır. X'e bağlı hastalıklarda cinsiyet bilgisi sürecin parçası olabilir, fakat amaç cinsiyet tercihi değil hastalıktan korunmadır."
+      }
+    }
+  ]
+};
+
+<script type="application/ld+json" set:html={JSON.stringify(pgtSexSelectionFaqSchema)} />
 
 <RevealScript />

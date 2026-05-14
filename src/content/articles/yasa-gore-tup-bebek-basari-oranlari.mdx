@@ -3,13 +3,13 @@ title: "Yaşa Göre Tüp Bebek Başarı Oranları: 30, 35, 40 Yaş ve Üzeri İ�
 description: "Yaşa göre tüp bebek başarısı nasıl değişir? 30'lu yaşlar, 35 sonrası düşüş, 40 yaş ve üzeri için embriyo kalitesi, rezerv, transfer stratejisi ve gerçekçi beklenti rehberi."
 publishDate: 2026-04-04
 status: "published"
-lastModified: 2026-05-12
+lastModified: 2026-05-14
 author: "Doç. Dr. Senai Aksoy"
 authorTitle: "Kadın Hastalıkları ve Doğum Uzmanı"
 authorCredentials: "Üreme Tıbbı ve Yardımcı Üreme Teknikleri"
 medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Tıbbi Danışma Kurulu"
-reviewDate: 2026-05-12
+reviewDate: 2026-05-14
 category: "Tüp Bebek"
 recommendationGrade: B
 image: "/images/library/istatistik/yas_gebelikorani_ivf.webp"
@@ -70,6 +70,13 @@ Kadın yaşı, tüp bebek sonucunu etkileyen en güçlü değişkenlerden biridi
 <MedicalInfoBox title="Hızlı Bakış: En Güçlü Etken Yaş mıdır?" icon="INFO" color="amber">
 **Evet, kadın yaşı IVF sonucunu en güçlü etkileyen değişkenlerden biridir.** Bunun temel nedeni yaşla birlikte yumurta sayısının değil, özellikle embriyoların kromozomal uygunluk olasılığının azalmasıdır. <InlineEvidence grade="B" />
 </MedicalInfoBox>
+
+| Sık Aranan Soru | Kısa, Güvenli Yanıt |
+| :--- | :--- |
+| **30 yaş civarında tüp bebek başarısı nasıldır?** | Genellikle embriyo potansiyeli daha yüksektir; ancak sonuç rezerv, sperm, rahim ve laboratuvar değişkenleriyle birlikte değerlendirilir. |
+| **35 yaş sonrası başarı düşer mi?** | Düşüş çoğu hastada kademelidir; 35-37 ve 38-40 yaş grupları aynı şekilde yorumlanmaz. |
+| **40 yaş üstü tüp bebek başarı oranı neden değişkendir?** | Embriyo kromozom uygunluğu ve elde edilebilen yumurta sayısı daha sınırlı olabilir; bu nedenle bireysel dosya üzerinden kümülatif plan yapılır. |
+| **Başarı oranı tek transfer mi, toplam deneme mi?** | Tek transfer oranı ile dondurulmuş embriyoların da dahil edildiği kümülatif başarı aynı şey değildir. |
 
 ## İçindekiler
 
@@ -135,6 +142,14 @@ Hayır. Başarı azalabilir; ancak birçok hasta için anlamlı gebelik olasıl�
 Hayır. Ancak sonuç daha değişken olur ve beklenti daha gerçekçi kurulmalıdır.
 </Accordion>
 
+<Accordion title="40 yaş üstü tüp bebek başarı oranı nasıl okunmalı?">
+40 yaş üstünde tek bir yüzde bütün hastaları anlatmaz. AMH/AFC, önceki yanıt, embriyo gelişimi, eşlik eden erkek faktörü ve transfer edilebilir embriyo sayısı birlikte değerlendirilmelidir. Bu yaş grubunda kümülatif plan ve zaman yönetimi, tek deneme sonucundan daha anlamlı olabilir.
+</Accordion>
+
+<Accordion title="35 yaş tüp bebek için kritik sınır mı?">
+35 yaş biyolojik düşüşün daha görünür olmaya başladığı pratik bir eşiktir; ancak keskin bir kırılma noktası değildir. 35 yaşındaki bir hasta ile 39 yaşındaki bir hasta aynı kategoride değerlendirilmemelidir.
+</Accordion>
+
 <Accordion title="PGT-A yaptırmak başarıyı garanti eder mi?">
 Hayır. PGT-A seçilmiş durumlarda yardımcı olabilir ama gebeliği garanti etmez ve yaş etkisini tamamen ortadan kaldırmaz.
 </Accordion>
@@ -144,5 +159,25 @@ Hasta seçimi, yaş dağılımı, laboratuvar kalitesi, taze veya dondurulmuş t
 </Accordion>
 
 </div>
+
+export const ageSuccessFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "Yaşa göre tüp bebek başarısı nasıl değişir?",
+    "acceptedAnswer": { "@type": "Answer", "text": "Kadın yaşı ilerledikçe yumurta sayısı ve özellikle embriyoların kromozomal uygunluk olasılığı azalır. Bu nedenle aynı tedavi planı 30, 35 ve 40 yaş üzerinde aynı sonucu vermez." }
+  }, {
+    "@type": "Question",
+    "name": "40 yaş üstü tüp bebek başarı oranı nasıl yorumlanmalı?",
+    "acceptedAnswer": { "@type": "Answer", "text": "40 yaş üstünde tek bir yüzde bütün hastaları anlatmaz. AMH, AFC, önceki tedavi yanıtı, embriyo gelişimi, sperm ve rahim durumu birlikte değerlendirilmelidir." }
+  }, {
+    "@type": "Question",
+    "name": "PGT-A yaş etkisini tamamen çözer mi?",
+    "acceptedAnswer": { "@type": "Answer", "text": "Hayır. PGT-A seçilmiş hastalarda transfer planına yardımcı olabilir; ancak yeni yumurta oluşturmaz, yaşa bağlı biyolojik sınırları ortadan kaldırmaz ve gebeliği garanti etmez." }
+  }]
+};
+
+<script type="application/ld+json" set:html={JSON.stringify(ageSuccessFaqSchema)} />
 
 <RevealScript />

@@ -8,8 +8,8 @@ authorCredentials: "Üreme Tıbbı ve Yardımcı Üreme Teknikleri"
 authorYoutube: "https://www.youtube.com/@DocentDrSenaiAksoy"
 medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Tıbbi Danışma Kurulu"
-reviewDate: 2026-05-12
-lastModified: 2026-05-12
+reviewDate: 2026-05-14
+lastModified: 2026-05-14
 category: "Genetik"
 recommendationGrade: B
 image: /images/library/embriyo/pgt.webp
@@ -64,6 +64,7 @@ PGT-M, tüp bebek sürecinde embriyoların bilinen bir tek gen hastalığı aç�
 ## İçindekiler
 
 - [PGT-M nedir?](#nedir)
+- [Sık aranan PGT-M soruları](#arama-niyeti)
 - [Hangi hastalıklar taranabilir?](#hastaliklar)
 - [Kimlere gerekir?](#kimlere)
 - [Prob hazırlığı neden önemlidir?](#prob)
@@ -76,6 +77,15 @@ PGT-M, tüp bebek sürecinde embriyoların bilinen bir tek gen hastalığı aç�
 PGT-M, “preimplantation genetic testing for monogenic disorders” ifadesinin kısaltmasıdır. Embriyolar, bilinen tek gen hastalığı açısından test edilir ve hastalıktan etkilenmeyen embriyolar transfer için değerlendirilir.
 
 PGT-M, [PGT-A](/pgt-merkezi/) gibi kromozom sayısı taraması değildir. PGT-A kromozom sayısını, PGT-M ise ailede bilinen belirli mutasyonu hedefler. Bazı çiftlerde ikisi birlikte planlanabilir.
+
+<h2 id="arama-niyeti">Sık Aranan PGT-M Soruları</h2>
+
+| Aranan ifade | Kısa cevap |
+| :--- | :--- |
+| **PGT-M nedir?** | Ailede bilinen tek gen hastalığı için embriyoların transfer öncesi hedefli olarak test edilmesidir. |
+| **Tek gen hastalığı PGT ile taranır mı?** | Hastalık yapıcı mutasyon biliniyor ve teknik hazırlık uygunsa PGT-M ile embriyoda hedefli değerlendirme yapılabilir. |
+| **PGT-M kimlere gerekir?** | Taşıyıcı çiftler, hasta çocuk öyküsü olan aileler veya bilinen tek gen hastalığı riski bulunan çiftlerde gündeme gelir. |
+| **PGT-M sonucu kesin midir?** | Hiçbir genetik test yüzde yüz garanti değildir; gebelikte prenatal tanı/tarama seçenekleri ayrıca konuşulmalıdır. |
 
 <h2 id="hastaliklar">Hangi Hastalıklar Taranabilir?</h2>
 
@@ -156,4 +166,39 @@ Hayır. Amaç hastalığın embriyoya geçmesini önlemektir. Tıbbi olmayan cin
 
 </div>
 
+export const pgtMFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "PGT-M nedir?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "PGT-M, ailede bilinen tek gen hastalığı için embriyoların transfer öncesi hedefli olarak test edilmesidir."
+    }
+  }, {
+    "@type": "Question",
+    "name": "PGT-M kimlere gerekir?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Taşıyıcı çiftler, hasta çocuk öyküsü olan aileler veya bilinen tek gen hastalığı riski bulunan çiftlerde gündeme gelir."
+    }
+  }, {
+    "@type": "Question",
+    "name": "PGT-M ile PGT-A arasındaki fark nedir?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "PGT-M bilinen tek gen hastalığını hedefler. PGT-A ise embriyonun kromozom sayısını değerlendirir."
+    }
+  }, {
+    "@type": "Question",
+    "name": "PGT-M sonucu kesin midir?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Hiçbir genetik test yüzde yüz garanti değildir. PGT-M sonrasında gebelikte prenatal tanı veya tarama seçenekleri ayrıca konuşulmalıdır."
+    }
+  }]
+};
+
+<script type="application/ld+json" set:html={JSON.stringify(pgtMFaqSchema)} />
 <RevealScript />

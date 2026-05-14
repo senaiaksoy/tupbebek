@@ -8,8 +8,8 @@ authorCredentials: "Üreme Tıbbı ve Yardımcı Üreme Teknikleri"
 authorYoutube: "https://www.youtube.com/@DocentDrSenaiAksoy"
 medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Tıbbi Danışma Kurulu"
-reviewDate: 2026-05-12
-lastModified: 2026-05-12
+reviewDate: 2026-05-14
+lastModified: 2026-05-14
 category: "Kadın Sağlığı"
 recommendationGrade: B
 image: /images/library/hastalik/opkveivf.webp
@@ -64,6 +64,13 @@ PCOS'ta tüp bebek yapılabilir; çoğu hastada ana zorluk yumurta elde etmek de
 **PCOS'lu hastalarda yumurtalık rezervi yüksek olabilir; bu iyi bir embriyo havuzu sağlayabilir ama OHSS riskini de artırabilir.** ASRM, OHSS riski olan hastalarda GnRH antagonist protokollerini ve uygun hastada agonist trigger/freeze-all stratejilerini güçlü güvenlik araçları olarak değerlendirir. <InlineEvidence grade="A" />
 </MedicalInfoBox>
 </div>
+
+| Sık Aranan Soru | Kısa Yanıt |
+| :--- | :--- |
+| **PCOS varsa tüp bebek olur mu?** | Evet, gerekli hastalarda yapılabilir; protokol aşırı yanıt ve OHSS riskine göre kişiselleştirilir. |
+| **PCOS tüp bebek başarı oranını düşürür mü?** | Her zaman düşürmez; yumurta sayısı iyi olabilir, fakat güvenli doz ve doğru transfer zamanı kritik hale gelir. |
+| **OHSS nedir?** | Yumurtalıkların uyarıma aşırı yanıt vermesiyle sıvı kayması, şişkinlik ve nadiren ciddi klinik tabloya yol açabilen sendromdur. |
+| **PCOS'ta freeze-all neden yapılır?** | OHSS riski veya hormon ortamı nedeniyle transferi daha güvenli bir siklusa ertelemek için düşünülebilir. |
 
 ## İçindekiler
 
@@ -166,6 +173,10 @@ PCOS'lu hastalarda gebelik oluştuğunda takip bitmez. Kilo, insülin direnci ve
 Her zaman düşük değildir. PCOS'ta yumurta sayısı iyi olabilir; asıl konu aşırı yanıt, OHSS riski, yumurta olgunluğu ve transfer zamanlamasının doğru yönetilmesidir.
 </Accordion>
 
+<Accordion title="Polikistik over varsa tüp bebek olur mu?">
+Evet. PCOS tüp bebeğe engel değildir. Tedavi planı, yumurtalıkların aşırı yanıt verme olasılığına ve metabolik duruma göre daha dikkatli kurulur.
+</Accordion>
+
 <Accordion title="PCOS'ta mutlaka freeze-all yapılır mı?">
 Hayır. Freeze-all kararı folikül sayısı, estradiol, OHSS riski, trigger tipi ve endometrium durumuna göre verilir.
 </Accordion>
@@ -177,8 +188,32 @@ Kesin artırır denemez. Metformin seçilmiş hastalarda metabolik yönetim ve y
 <Accordion title="PCOS'ta OHSS nasıl azaltılır?">
 Düşük/kişiselleştirilmiş doz, antagonist protokol, agonist trigger, cabergoline değerlendirmesi ve gerekirse tüm embriyoları dondurma gibi stratejiler kullanılır.
 </Accordion>
+
+<Accordion title="OHSS belirtileri nelerdir?">
+Belirgin karın şişliği, hızlı kilo artışı, nefes darlığı, şiddetli karın ağrısı, bulantı-kusma veya idrar azalması gibi bulgular acil değerlendirme gerektirir. PCOS'lu hastalarda bu belirtiler özellikle ciddiye alınmalıdır.
+</Accordion>
 </div>
 
 </div>
+
+export const pcosIvfFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "PCOS varsa tüp bebek olur mu?",
+    "acceptedAnswer": { "@type": "Answer", "text": "Evet. PCOS tüp bebeğe engel değildir; ancak yumurtalıkların aşırı yanıt verme ve OHSS riski nedeniyle protokol kişiselleştirilmelidir." }
+  }, {
+    "@type": "Question",
+    "name": "PCOS tüp bebek başarı oranını düşürür mü?",
+    "acceptedAnswer": { "@type": "Answer", "text": "Her zaman düşürmez. PCOS'ta yumurta sayısı iyi olabilir; asıl konu aşırı yanıt, yumurta olgunluğu, OHSS riski ve transfer zamanlamasının güvenli yönetilmesidir." }
+  }, {
+    "@type": "Question",
+    "name": "OHSS nedir?",
+    "acceptedAnswer": { "@type": "Answer", "text": "OHSS, yumurtalıkların uyarı tedavisine aşırı yanıt vermesiyle karında şişlik, sıvı kayması ve nadiren ciddi klinik tabloya yol açabilen ovaryan hiperstimülasyon sendromudur." }
+  }]
+};
+
+<script type="application/ld+json" set:html={JSON.stringify(pcosIvfFaqSchema)} />
 
 <RevealScript />

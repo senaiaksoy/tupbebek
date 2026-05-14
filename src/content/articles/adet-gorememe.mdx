@@ -2,14 +2,14 @@
 title: "Amenore (Adet Görememe): Primer ve Sekonder Tipler, Tanı Algoritması ve Tedavi Yaklaşımı"
 description: "Primer amenore (Mullerian agenesis, Turner sendromu, hipogonadotropik hipogonadizm), sekonder amenore (PCOS, POI, hipotalamik), WHO sınıflandırması, ESHRE 2024 POI rehberi ve fonksiyonel hipotalamik amenore yönetimi."
 publishDate: 2026-03-31
-lastModified: 2026-05-11
+lastModified: 2026-05-14
 author: "Doç. Dr. Senai Aksoy"
 authorTitle: "Kadın Hastalıkları ve Doğum Uzmanı"
 authorCredentials: "Üreme Tıbbı ve Yardımcı Üreme Teknikleri"
 authorYoutube: "https://www.youtube.com/@DocentDrSenaiAksoy"
 medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Tıbbi Danışma Kurulu"
-reviewDate: 2026-05-11
+reviewDate: 2026-05-14
 category: "Kadın Sağlığı"
 recommendationGrade: A
 image: "/images/makaleler/adet-gorememe.webp"
@@ -68,6 +68,15 @@ Amenore bir hastalık değil, **altta yatan endokrin veya anatomik bir bozukluğ
 Adet görmemek (amenore), kadın endokrin sistemi açısından **sessiz bir alarm sinyalidir**. Vücudun karmaşık hormonal mekanizmasında bir noktada bozukluk olduğunu işaret eder ve doğru tanı konulmadığında uzun vadeli üreme, kemik ve kardiyovasküler sağlığa kalıcı zarar verebilir. Bu yazıda amenoreyi sistematik bir tanı algoritması içinde, güncel kanıtlarla ele alıyoruz.
 
 ## Amenore Nedir?
+
+## Sık Aranan Adet Görememe Soruları
+
+| Aranan ifade | Kısa cevap |
+| :--- | :--- |
+| **Amenore nedir?** | Adet kanamasının olmaması veya daha önce düzenli adet gören kişide adetlerin kesilmesidir. |
+| **Sekonder amenore nedir?** | Daha önce adet gören bir kişide adetin 3 ay veya daha uzun süre olmamasıdır; gebelik ilk dışlanması gereken nedendir. |
+| **Adet görememe neden olur?** | Gebelik, PCOS, tiroid/prolaktin bozuklukları, hipotalamik amenore, POI, ilaçlar veya rahim içi yapışıklık neden olabilir. |
+| **Adet görememe karın şişliği yapar mı?** | Şişkinlik eşlik edebilir ama tek başına tanı koydurmaz; gebelik ve hormonal nedenler değerlendirilmelidir. |
 
 Amenore, adet kanamasının olmaması veya kesilmesi durumudur. İki ana kategoriye ayrılır:
 
@@ -362,3 +371,39 @@ Genellikle ilk başvuru **kadın hastalıkları ve doğum uzmanına** olmalıdı
 
 **Pelvik USG'mde her şey normal görünüyor ama hâlâ adet görmüyorum, neden?**
 Pelvik USG anatomik bilgi verir ama hormonal bilgi vermez. Amenorenin çoğu nedeni — FHA, POI, hiperprolaktinemi, hipotiroidi — USG'de görülmez. Bu yüzden **hormonal panel + USG kombinasyonu** standart workup'tır; tek başına USG yeterli değildir.
+
+export const amenorrheaFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "Amenore nedir?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Amenore adet kanamasının olmamasıdır. Primer amenore ilk adetin hiç başlamaması, sekonder amenore ise daha önce adet gören kişide adetlerin kesilmesidir."
+    }
+  }, {
+    "@type": "Question",
+    "name": "Adet görememe neden olur?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Gebelik, PCOS, tiroid bozuklukları, prolaktin yüksekliği, hipotalamik amenore, prematür over yetmezliği, bazı ilaçlar veya rahim içi yapışıklık adet görememeye neden olabilir."
+    }
+  }, {
+    "@type": "Question",
+    "name": "Sekonder amenore nedir?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Sekonder amenore, daha önce adet gören bir kişide adetin 3 ay veya daha uzun süre olmamasıdır. Üreme çağında ilk dışlanması gereken neden gebeliktir."
+    }
+  }, {
+    "@type": "Question",
+    "name": "Adet görmemek kısırlık demek midir?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Hayır. Amenorenin nedeni belirleyicidir. PCOS veya hipotalamik amenore gibi bazı nedenlerde uygun tedaviyle ovulasyon geri dönebilir; POI veya yapısal nedenlerde yaklaşım farklıdır."
+    }
+  }]
+};
+
+<script type="application/ld+json" set:html={JSON.stringify(amenorrheaFaqSchema)} />

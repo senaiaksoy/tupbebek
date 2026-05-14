@@ -2,9 +2,39 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+
+const faqItems = [
+    {
+        q: 'Tüp bebek başarı oranları nasıl yorumlanmalı?',
+        a: 'Başarı oranı tek bir yüzdeyle yorumlanmamalıdır. Kadın yaşı, yumurtalık rezervi, sperm kalitesi, embriyo gelişimi, rahim durumu, transfer tipi ve merkezin hasta profili birlikte değerlendirilmelidir.',
+    },
+    {
+        q: '40 yaş üstü tüp bebek başarı oranı neden daha düşüktür?',
+        a: '40 yaş üstünde yumurta sayısı ve özellikle embriyoların kromozomal uygunluk olasılığı azalabilir. Bu nedenle tek transfer oranı yerine kümülatif plan ve kişisel tıbbi dosya daha anlamlıdır.',
+    },
+    {
+        q: 'Tüp bebek merkezleri başarı oranları karşılaştırılabilir mi?',
+        a: 'Karşılaştırma yapılırken yalnızca açıklanan yüzdeye değil; hasta yaşı, düşük rezervli hasta oranı, kaçıncı deneme olduğu, tekil veya kümülatif başarı tanımı ve çoklu gebelik politikası gibi faktörlere bakılmalıdır.',
+    },
+];
+
+const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    '@id': 'https://tupbebek.com/basari-oranlari/#faq',
+    mainEntity: faqItems.map((item) => ({
+        '@type': 'Question',
+        name: item.q,
+        acceptedAnswer: {
+            '@type': 'Answer',
+            text: item.a,
+        },
+    })),
+};
 ---
 
 <BaseLayout title="Tüp Bebek Başarı Oranları ve Klinik İstatistikler | tupbebek.com" description="Yaş gruplarına göre tüp bebek başarı oranları, döngüye göre kümülatif başarı, tedavi yöntemlerine göre karşılaştırmalar ve uluslararası veriler.">
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(faqSchema)} />
     <Header />
 
     <main id="main-content" tabindex="-1" class="pb-24">
@@ -40,6 +70,36 @@ import Footer from '../components/Footer.astro';
             <p class="text-lg md:text-xl text-gray-600 leading-relaxed font-body italic mb-12">
                 Tüp bebek (IVF) başarı oranları, birçok etkene bağlıdır: yaş, embriyo kalitesi, over rezervi, erkek kaynaklı nedenler ve klinik deneyimi. Aşağıdaki veriler, güncel literatür ve uluslararası veritabanlarına dayalı genel tahminlerdir; bireysel durumunuz için doktorunuza danışınız.
             </p>
+            <div class="bg-primary-50/80 border border-primary-100 rounded-2xl p-6 mb-10">
+                <h2 class="font-headline text-xl text-gray-900 mb-4">Kısa Cevap: Başarı Oranı Tek Bir Yüzde Değildir</h2>
+                <p class="text-sm md:text-base text-gray-700 leading-relaxed mb-4">
+                    Tüp bebek başarı oranı; yaş, yumurtalık rezervi, sperm, embriyo gelişimi, rahim/tüp durumu, transfer tipi ve merkezin hangi hasta grubunu raporladığına göre değişir. Bu nedenle “merkez başarı oranı” karşılaştırılırken tek transfer mi, canlı doğum mu, gebelik testi mi yoksa kümülatif sonuç mu verildiği mutlaka ayrılmalıdır.
+                </p>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-sm">
+                        <thead>
+                            <tr class="border-b border-primary-100">
+                                <th class="text-left py-2 pr-4 font-semibold text-gray-700">Sık Aranan Soru</th>
+                                <th class="text-left py-2 pr-4 font-semibold text-gray-700">Güvenli Yorum</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b border-primary-100">
+                                <td class="py-2 pr-4 font-semibold text-gray-900">40 yaş üstü başarı</td>
+                                <td class="py-2 pr-4 text-gray-600">Embriyo kromozom uygunluğu ve yumurta sayısı nedeniyle kişisel dosya üzerinden yorumlanır.</td>
+                            </tr>
+                            <tr class="border-b border-primary-100">
+                                <td class="py-2 pr-4 font-semibold text-gray-900">Merkez başarı oranı</td>
+                                <td class="py-2 pr-4 text-gray-600">Hasta seçimi, yaş dağılımı ve raporlama yöntemi bilinmeden karşılaştırma yanıltıcı olabilir.</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 pr-4 font-semibold text-gray-900">Kümülatif başarı</td>
+                                <td class="py-2 pr-4 text-gray-600">Aynı yumurta toplama siklusundan elde edilen taze ve dondurulmuş transferlerin toplam etkisini anlatır.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
                 <div class="bg-gray-50 p-6 rounded-xl shadow-sm border-t-2 border-primary-200">
                     <span class="material-symbols-outlined text-primary-600 mb-3">trending_up</span>
@@ -195,7 +255,7 @@ import Footer from '../components/Footer.astro';
                             <p class="text-xs text-gray-600 mt-3">Kaynak: McLernan et al., ESHRE, 2020</p>
                         </div>
                         <p class="text-sm text-gray-600">
-                            Kümülatif gebelik oranları, taze ve dondurulmuş embryo transferlerinin (FET) kombinasyonu ile hesaplanmıştır. Bu veri, "kaç döngüye denemeliyim" sorusuna en iyi cevabı verir.
+                            Kümülatif gebelik oranları, taze ve dondurulmuş embryo transferlerinin (FET) kombinasyonu ile hesaplanmıştır. Bu veri, "kaç döngüye denemeliyim" sorusunu tek transfer oranından daha gerçekçi yorumlamaya yardımcı olur.
                         </p>
                     </div>
                 </div>
@@ -404,6 +464,24 @@ import Footer from '../components/Footer.astro';
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section id="faq" class="max-w-3xl mx-auto px-4 md:px-6 lg:px-8 mb-16">
+            <div class="mb-8">
+                <span class="text-xs font-semibold uppercase tracking-wider text-primary-600">Sık Sorulanlar</span>
+                <h2 class="font-headline text-2xl text-gray-900 mt-2">Başarı Oranları Hakkında Kısa Yanıtlar</h2>
+            </div>
+            <div class="space-y-4">
+                {faqItems.map((item) => (
+                    <details class="group rounded-xl border border-gray-200 bg-white p-5">
+                        <summary class="cursor-pointer list-none font-bold text-gray-900 flex items-center justify-between gap-4">
+                            <span>{item.q}</span>
+                            <span class="material-symbols-outlined text-primary-600 group-open:rotate-180 transition-transform">expand_more</span>
+                        </summary>
+                        <p class="text-sm text-gray-600 leading-relaxed mt-4 mb-0">{item.a}</p>
+                    </details>
+                ))}
             </div>
         </section>
 

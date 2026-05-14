@@ -9,8 +9,8 @@ authorCredentials: "Üreme Tıbbı ve Yardımcı Üreme Teknikleri"
 authorYoutube: "https://www.youtube.com/@DocentDrSenaiAksoy"
 medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Tıbbi Danışma Kurulu"
-reviewDate: 2026-05-12
-lastModified: 2026-05-12
+reviewDate: 2026-05-14
+lastModified: 2026-05-14
 category: "Fertilite Koruma"
 recommendationGrade: B
 image: "/images/makaleler/yumurta-dondurma-rehberi.webp"
@@ -64,6 +64,7 @@ Yumurta dondurma, gelecekte gebelik planı erteleniyorsa veya yumurtalık rezerv
 ## İçindekiler
 
 - [Yumurta dondurma nedir?](#nedir)
+- [Sık aranan yumurta dondurma soruları](#arama-niyeti)
 - [Kimler için düşünülür?](#kimler)
 - [Süreç nasıl işler?](#surec)
 - [Yaş neden bu kadar önemlidir?](#yas)
@@ -74,6 +75,15 @@ Yumurta dondurma, gelecekte gebelik planı erteleniyorsa veya yumurtalık rezerv
 <h2 id="nedir">Yumurta Dondurma Nedir?</h2>
 
 Yumurta dondurma, olgun yumurtaların toplanıp vitrifikasyon yöntemiyle dondurulmasıdır. Amaç bugünkü yumurta kalitesini gelecekte kullanabilmek için korumaktır. Bu yöntem özellikle planlı gebelik ertelemesinde ve bazı tıbbi durumlarda fertilite koruma amacıyla kullanılır. <InlineEvidence grade="B" />
+
+<h2 id="arama-niyeti">Sık Aranan Yumurta Dondurma Soruları</h2>
+
+| Aranan ifade | Güvenli kısa cevap |
+| :--- | :--- |
+| **Yumurta dondurma nedir?** | Olgun yumurtaların toplanıp vitrifikasyonla saklanmasıdır; gelecekte gebelik için seçenek oluşturur, garanti vermez. |
+| **Yumurta dondurma işlemi nasıl yapılır?** | Ön değerlendirme, yumurtalık uyarımı, takip, yumurta toplama ve olgun yumurtaların dondurulması basamaklarından oluşur. |
+| **Yumurta dondurma için kaç yumurta gerekir?** | Yaşa göre değişir; ileri yaşta aynı hedef için daha fazla yumurta gerekebilir ve bazen birden fazla siklus konuşulur. |
+| **Yumurta dondurma fiyatı neden tek rakamla anlatılmaz?** | İlaç dozu, takip, laboratuvar, saklama süresi ve kişisel plan değişebilir; bu portal fiyat yönlendirmesi yapmaz. |
 
 <h2 id="kimler">Kimler İçin Düşünülür?</h2>
 
@@ -139,7 +149,7 @@ Bazı hastalarda tek bir yumurta toplama işlemi hedef sayıya yaklaşmak için 
 Hayır. Yumurta dondurma geleceğe yönelik önemli bir seçenek yaratır; ancak gebeliği garanti etmez.
 </Accordion>
 
-<Accordion title="Yumurta dondurma için en iyi yaş nedir?">
+<Accordion title="Yumurta dondurma için hangi yaş daha avantajlıdır?">
 Genel olarak daha genç yaşlarda verimlilik daha yüksektir. 35 yaş altı ve 35-37 aralığı daha avantajlı kabul edilir.
 </Accordion>
 
@@ -151,6 +161,42 @@ Uygun koşullarda uzun yıllar saklanabilir. Asıl önemli olan saklama süresin
 İşlem genellikle sedasyon altında yapılır. Sonrasında hafif ağrı ve şişkinlik olabilir.
 </Accordion>
 
+<Accordion title="Yumurta dondurma işlemi kaç gün sürer?">
+Çoğu protokolde yumurtalık uyarımı ve takip yaklaşık 10-14 gün sürer; süre kişisel yanıt, başlangıç günü ve tıbbi zamanlamaya göre değişebilir.
+</Accordion>
+
+<Accordion title="Yumurta dondurma başarı oranı nasıl yorumlanır?">
+Başarı oranı en çok dondurma yaşı, çözülen olgun yumurta sayısı, sperm faktörü, embriyo gelişimi ve rahim hazırlığına bağlıdır. Tek bir yüzde herkes için geçerli değildir.
+</Accordion>
+
 </div>
 
+export const eggFreezingFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "Yumurta dondurma işlemi nasıl yapılır?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Ön değerlendirme, kısa süreli yumurtalık uyarımı, ultrason ve hormon takibi, yumurta toplama ve olgun yumurtaların vitrifikasyonla dondurulması basamaklarından oluşur."
+    }
+  }, {
+    "@type": "Question",
+    "name": "Yumurta dondurma için kaç yumurta gerekir?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Tek bir sayı yoktur. Yaş ilerledikçe aynı gebelik hedefi için daha fazla olgun yumurtaya ihtiyaç duyulabilir ve bazı hastalarda birden fazla siklus konuşulabilir."
+    }
+  }, {
+    "@type": "Question",
+    "name": "Yumurta dondurma gebeliği garanti eder mi?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Hayır. Yumurta dondurma gelecekte seçenek oluşturur; ancak canlı doğumu garanti etmez. Dondurma yaşı ve çözülen olgun yumurta sayısı en kritik belirleyicilerdendir."
+    }
+  }]
+};
+
+<script type="application/ld+json" set:html={JSON.stringify(eggFreezingFaqSchema)} />
 <RevealScript />

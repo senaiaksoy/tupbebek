@@ -3,14 +3,14 @@ title: "Varikosel Nedir, Belirtileri Nelerdir ve Ne Zaman Ameliyat Gerekir?"
 description: "Varikosel nedir, her varikosel ameliyat gerektirir mi, sperm testini nasıl etkiler? Varikosel ameliyatının ne zaman gerekli olabileceğini sade bir dille anlattık."
 status: "published"
 publishDate: 2026-05-10
-lastModified: 2026-05-12
+lastModified: 2026-05-14
 author: "Doç. Dr. Senai Aksoy"
 authorTitle: "Kadın Hastalıkları ve Doğum Uzmanı"
 authorCredentials: "Üreme Tıbbı ve Yardımcı Üreme Teknikleri"
 authorYoutube: "https://www.youtube.com/@DocentDrSenaiAksoy"
 medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Tıbbi Danışma Kurulu"
-reviewDate: 2026-05-12
+reviewDate: 2026-05-14
 category: "Erkek Kısırlığı"
 recommendationGrade: B
 image: "/images/makaleler/varikosel-nedir-ne-zaman-ameliyat-gerekir.webp"
@@ -63,6 +63,15 @@ Varikosel, testisin etrafındaki toplardamarların genişlemesidir. Her varikose
 </MedicalInfoBox>
 
 Varikosel, testisin etrafındaki toplardamarların genişlemesidir. Her varikosel ameliyat gerektirmez. Ama muayenede belirgin varikosel varsa, semen analizinde bozulma görülmüşse, çocuk sahibi olma süreci uzamışsa, testiste küçülme varsa ya da ağrı günlük hayatı etkiliyorsa ameliyat düşünülebilir. Bu karar tek bir ultrason sonucuna bakılarak verilmez. Muayene bulgusu, semen analizi ve çiftin çocuk sahibi olma planı birlikte ele alınır. [AUA/ASRM kılavuzu](https://prod.asrm.org/practice-guidance/practice-committee-documents/diagnosis-and-treatment-of-infertility-in-men-aua-asrm-guideline-part2/), [EAU 2025 kılavuzu](https://uroweb.org/guidelines/archive/sexual-and-reproductive-health) ve [Cochrane derlemesi](https://www.cochrane.org/evidence/CD000479_surgery-or-radiological-treatment-varicoceles-subfertile-men) bu yaklaşımı destekler. <InlineEvidence grade="B" />
+
+## Sık Aranan Varikosel Soruları
+
+| Aranan soru | Kısa cevap |
+| :--- | :--- |
+| **Varikosel nedir?** | Testis çevresindeki toplardamarların genişlemesidir; bacak varisine benzer şekilde düşünülebilir. |
+| **Varikosel nasıl anlaşılır?** | Muayenede damar genişlemesi, ağrı/dolgunluk hissi veya semen analizinde bozulma ile fark edilebilir. |
+| **Varikosel kısırlık yapar mı?** | Her erkekte yapmaz; fakat seçilmiş hastalarda sperm sayısı, hareketliliği ve gebelik planını etkileyebilir. |
+| **Varikosel ameliyatı ne zaman gerekir?** | Klinik varikosel, bozuk semen analizi, infertilite veya yaşam kalitesini bozan ağrı birlikte varsa düşünülür. |
 
 **Kısa karar özeti:**
 
@@ -159,7 +168,7 @@ Varikosel ameliyatından sonra herkesin semen analizi aynı şekilde düzelmez. 
 
 Beklentiyi baştan doğru kurmak gerekir:
 
-- Ameliyat bir “bebek garantisi” değildir.
+- Ameliyat kesin gebelik vaadi değildir.
 - Uygun hastada doğal gebelik ya da tedaviyle gebelik şansını artırabilir.
 - Ağrı, enfeksiyon, hidrosel ve nüks gibi riskler cerrahinin tekniğine göre değişebilir.
 - Kontrol semen analizi çoğu zaman ameliyattan birkaç ay sonra anlamlı hale gelir.
@@ -202,6 +211,10 @@ Varikoselde doğru soru “damar var mı” değil, “bu damar üreme planını
 Genellikle hayır. Ancak her varikosel ilerlemez ve her biri tedavi gerektirmez.
 </Accordion>
 
+<Accordion title="Varikosel kısırlık yapar mı?">
+Her varikosel kısırlık yapmaz. Klinik varikosel semen analizinde bozulma ve gebelik gecikmesiyle birlikteyse üreme planını etkileyebilir.
+</Accordion>
+
 <Accordion title="Varikosel tanısı ultrasonda mı, muayenede mi konur?">
 Esas belirleyici muayenedir. Ultrason yardımcı test olabilir; ancak sadece ultrasonda görülen subklinik varikosel tek başına ameliyat nedeni sayılmaz.
 </Accordion>
@@ -227,5 +240,38 @@ Bazı seçilmiş hastalarda düşünülebilir; ancak herkese otomatik önerilmez
 </Accordion>
 
 </div>
+
+export const varicoceleFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Varikosel nedir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Varikosel, testisin etrafındaki toplardamarların genişlemesidir. Her varikosel ameliyat gerektirmez; karar muayene, semen analizi, ağrı ve gebelik planına göre verilir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Varikosel kısırlık yapar mı?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Her varikosel kısırlık yapmaz. Klinik varikosel semen analizinde bozulma ve gebelik gecikmesiyle birlikteyse üreme planını etkileyebilir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Varikosel ameliyatı ne zaman gerekir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Klinik varikosel, bozuk semen analizi, infertilite veya yaşam kalitesini bozan ağrı birlikte varsa ameliyat düşünülebilir. Sadece ultrasonda görülen subklinik varikosel çoğu zaman ameliyat nedeni değildir."
+      }
+    }
+  ]
+};
+
+<script type="application/ld+json" set:html={JSON.stringify(varicoceleFaqSchema)} />
 
 <RevealScript />

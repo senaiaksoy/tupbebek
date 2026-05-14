@@ -1,6 +1,6 @@
 ---
-title: "Tüp Bebek Süreci Nasıl İlerler? İlk Muayeneden Transfere Adım Adım"
-description: "Tüp bebek süreci nasıl ilerler? İlk değerlendirme, yumurtalık uyarımı, yumurta toplama, laboratuvar aşaması, embriyo transferi ve bekleme dönemi için sade rehber."
+title: "Tüp Bebek Süreci ve Aşamaları: Kaç Gün Sürer?"
+description: "Tüp bebek süreci kaç gün sürer, aşamaları nelerdir ve nasıl ilerler? İlk muayene, yumurtalık uyarımı, yumurta toplama, embriyo transferi ve beta-hCG testi."
 publishDate: 2025-08-12
 status: "published"
 author: "Doç. Dr. Senai Aksoy"
@@ -9,8 +9,8 @@ authorCredentials: "Üreme Tıbbı ve Yardımcı Üreme Teknikleri"
 authorYoutube: "https://www.youtube.com/@DocentDrSenaiAksoy"
 medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Tıbbi Danışma Kurulu"
-reviewDate: 2026-05-12
-lastModified: 2026-05-12
+reviewDate: 2026-05-14
+lastModified: 2026-05-14
 category: "Tüp Bebek"
 recommendationGrade: B
 image: /images/library/tedavi/tup_bebek_muayene.webp
@@ -60,6 +60,15 @@ Tüp bebek süreci; ilk değerlendirme, yumurtalıkların ilaçlarla uyarılmas�
 <MedicalInfoBox title="Hızlı Bakış: Süreç Kaç Basamaktan Oluşur?" icon="OPU" color="blue">
 **Çoğu tüp bebek siklusu; değerlendirme, uyarım, yumurta toplama, laboratuvar aşaması, transfer ve gebelik testinden oluşur.** Adımlar benzer olsa da ilaç dozu, transfer zamanı ve embriyo stratejisi kişiye göre değişir. <InlineEvidence grade="B" />
 </MedicalInfoBox>
+
+| Aşama | Yaklaşık Zamanlama | Arama Niyetine Kısa Cevap |
+| :--- | :--- | :--- |
+| İlk değerlendirme | Tedavi öncesi | Hormonlar, ultrason ve semen analiziyle kişisel plan yapılır. |
+| Yumurtalık uyarımı | Genellikle 8-12 gün | İlaç dozu yaş, AMH/AFC ve önceki yanıta göre belirlenir. |
+| Yumurta toplama | Olgunlaşma iğnesinden 34-36 saat sonra | Kısa bir işlemdir; çoğu merkezde sedasyonla yapılır. |
+| Embriyo gelişimi | 2-6 gün | Laboratuvar, döllenme ve embriyo gelişimini izler. |
+| Transfer veya dondurma | Aynı siklus veya sonraki siklus | OHSS, progesteron, PGT veya rahim hazırlığına göre seçilir. |
+| Beta-hCG testi | Transferden yaklaşık 10-14 gün sonra | Gün, embriyonun kaçıncı gün transfer edildiğine göre değişir. |
 
 ## İçindekiler
 
@@ -137,6 +146,14 @@ Her siklus baştan çizilmiş tek bir yol değildir. Bazı durumlarda plan deği
 Aktif uyarım bölümü çoğu zaman 8-12 gün sürer. Yumurta toplama, embriyo kültürü ve transfer planına göre toplam süre birkaç haftaya yayılır.
 </Accordion>
 
+<Accordion title="Tüp bebek aşamaları gün gün aynı mıdır?">
+Hayır. Uyarım süresi, folikül yanıtı, embriyo gelişimi, taze veya dondurulmuş transfer kararı ve PGT planı kişiye göre değişir. Bu nedenle gün gün takvim genel çerçeve verir; bireysel planın yerini tutmaz.
+</Accordion>
+
+<Accordion title="Tüp bebek sonucu kaç günde belli olur?">
+Gebelik sonucu genellikle embriyo transferinden 10-14 gün sonra yapılan beta-hCG kan testiyle değerlendirilir. 5. gün blastokist transferinden sonra test daha erken, 2-3. gün embriyo transferinden sonra biraz daha geç planlanabilir.
+</Accordion>
+
 <Accordion title="Yumurta toplama ağrılı mıdır?">
 İşlem genellikle sedasyon altında yapıldığı için çoğu hasta işlem sırasında ağrı hissetmez. Sonrasında hafif kasık ağrısı veya şişkinlik olabilir.
 </Accordion>
@@ -150,5 +167,25 @@ Hayır. Bazı embriyolar daha erken durabilir. Bu durum yaygındır ve yumurta, 
 </Accordion>
 
 </div>
+
+export const ivfProcessFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "Tüp bebek süreci kaç gün sürer?",
+    "acceptedAnswer": { "@type": "Answer", "text": "Yumurtalık uyarımı çoğu zaman 8-12 gün sürer. Yumurta toplama, embriyo kültürü, transfer kararı ve beta-hCG testiyle birlikte toplam süreç birkaç haftaya yayılabilir." }
+  }, {
+    "@type": "Question",
+    "name": "Tüp bebek aşamaları nelerdir?",
+    "acceptedAnswer": { "@type": "Answer", "text": "Temel aşamalar ön değerlendirme, yumurtalık uyarımı, yumurta toplama, laboratuvarda döllenme, embriyo gelişimi, transfer veya dondurma ve beta-hCG testidir." }
+  }, {
+    "@type": "Question",
+    "name": "Tüp bebek sonucu kaç günde belli olur?",
+    "acceptedAnswer": { "@type": "Answer", "text": "Sonuç genellikle transferden 10-14 gün sonra yapılan beta-hCG kan testiyle değerlendirilir. Test günü, transfer edilen embriyonun gelişim gününe göre değişir." }
+  }]
+};
+
+<script type="application/ld+json" set:html={JSON.stringify(ivfProcessFaqSchema)} />
 
 <RevealScript />

@@ -8,8 +8,8 @@ authorCredentials: "Üreme Tıbbı ve Yardımcı Üreme Teknikleri"
 authorYoutube: "https://www.youtube.com/@DocentDrSenaiAksoy"
 medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Tıbbi Danışma Kurulu"
-reviewDate: 2026-05-12
-lastModified: 2026-05-12
+reviewDate: 2026-05-14
+lastModified: 2026-05-14
 category: "Tüp Bebek"
 recommendationGrade: A
 image: /images/library/embriyo/yumurta-sayisi.webp
@@ -68,6 +68,7 @@ Herkes için geçerli tek bir yumurta sayısı yoktur. Genç ve normal rezervli 
 ## İçindekiler
 
 - [Yumurta sayısı neden önemlidir?](#neden)
+- [Sık aranan yumurta sayısı soruları](#arama-niyeti)
 - [Yaşa göre beklenti nasıl değişir?](#yas)
 - [Kaç yumurta hedeflenir?](#hedef)
 - [Az yumurta çıkarsa ne yapılır?](#az)
@@ -76,6 +77,17 @@ Herkes için geçerli tek bir yumurta sayısı yoktur. Genç ve normal rezervli 
 
 <div data-reveal>
 <Video id="HRYFoDkjohE" />
+</div>
+
+<div data-reveal>
+<h2 id="arama-niyeti">Sık Aranan Yumurta Sayısı Soruları</h2>
+
+| Aranan ifade | Kısa cevap |
+| :--- | :--- |
+| **Tüp bebekte kaç yumurta toplanır?** | Kişiye göre değişir; AMH, AFC, yaş ve kullanılan protokole bağlı olarak birkaç yumurtadan 20 üzeri yanıta kadar geniş aralık görülebilir. |
+| **Tüp bebekte kaç yumurta olmalı?** | Tek eşik yoktur; çoğu normal rezervli hastada 8-15 olgun yumurta dengeli bir çalışma alanı sağlayabilir. |
+| **Tüp bebekte kaç yumurta döllenir?** | Olgun yumurtaların bir kısmı döllenir; oran sperm, yumurta olgunluğu ve IVF/ICSI yöntemine göre değişir. |
+| **Tüp bebekte kaç yumurta transfer edilir?** | Yumurta değil embriyo transfer edilir; embriyo sayısı yaş, embriyo kalitesi ve çoğul gebelik riskine göre belirlenir. |
 </div>
 
 <div data-reveal>
@@ -156,8 +168,44 @@ Her zaman değil. Sayı embriyo adayı havuzunu artırabilir; kalite ise yaş, s
 <Accordion title="Düşük AMH'de kaç yumurta beklenir?">
 Düşük AMH'de daha az yumurta beklenebilir. Amaç belirli bir sayıya ulaşmak değil, mevcut rezervden güvenli şekilde olgun yumurta elde etmektir.
 </Accordion>
+
+<Accordion title="Tüp bebekte 5 yumurta az mı?">
+5 yumurta bazı hastalarda düşük-orta yanıt sayılabilir; ancak yaş gençse ve olgun yumurta/döllenme iyi giderse anlamlı embriyo seçeneği oluşabilir. Tek başına başarısızlık anlamına gelmez.
+</Accordion>
+
+<Accordion title="Toplanan yumurtaların hepsi döllenir mi?">
+Hayır. Yumurta olgun olmayabilir, döllenme olmayabilir veya embriyo gelişimi durabilir. Bu nedenle toplanan yumurta sayısı ile transfer edilebilir embriyo sayısı aynı değildir.
+</Accordion>
 </div>
 
 </div>
 
+export const eggCountFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "Tüp bebekte kaç yumurta olmalı?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Tek bir zorunlu sayı yoktur. Çoğu normal rezervli hastada 8-15 olgun yumurta dengeli bir çalışma alanı sağlayabilir; ancak yaş, AMH, AFC, sperm faktörü ve OHSS riski sonucu değiştirir."
+    }
+  }, {
+    "@type": "Question",
+    "name": "Tüp bebekte 5 yumurta az mı?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "5 yumurta bazı hastalarda düşük-orta yanıt sayılabilir; ancak olgunluk, döllenme, embriyo gelişimi ve yaşla birlikte yorumlanmalıdır. Tek başına başarısızlık anlamına gelmez."
+    }
+  }, {
+    "@type": "Question",
+    "name": "Toplanan yumurtaların hepsi döllenir mi?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Hayır. Yumurtaların bir kısmı olgun olmayabilir, döllenmeyebilir veya embriyo gelişimi durabilir. Toplanan yumurta sayısı ile transfer edilebilir embriyo sayısı aynı değildir."
+    }
+  }]
+};
+
+<script type="application/ld+json" set:html={JSON.stringify(eggCountFaqSchema)} />
 <RevealScript />

@@ -3,14 +3,14 @@ title: "Yumurtalık Kistleri ve Doğurganlık: Hangi Kist Takip, Hangisi Tedavi?
 description: "Fonksiyonel kist, endometrioma, dermoid ve kistadenomların doğurganlığa etkisi; ultrason risk değerlendirmesi, AMH, IVF öncesi cerrahi ve fertilite koruyucu yaklaşım."
 publishDate: 2018-01-21
 status: "published"
-lastModified: 2026-05-12
+lastModified: 2026-05-14
 author: "Doç. Dr. Senai Aksoy"
 authorTitle: "Kadın Hastalıkları ve Doğum Uzmanı"
 authorCredentials: "Üreme Tıbbı ve Yardımcı Üreme Teknikleri"
 authorYoutube: "https://www.youtube.com/@DocentDrSenaiAksoy"
 medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Tıbbi Danışma Kurulu"
-reviewDate: 2026-05-12
+reviewDate: 2026-05-14
 category: "Kadın Sağlığı"
 recommendationGrade: A
 image: "/images/library/klinik/237.webp"
@@ -82,6 +82,7 @@ Hayır. Yumurtalık kistlerinin çoğu, özellikle fonksiyonel kistler, doğurga
 ## İçindekiler
 
 - [Önce risk: basit mi, kompleks mi?](#risk)
+- [Sık aranan yumurtalık kisti soruları](#arama-niyeti)
 - [Fonksiyonel kistler](#fonksiyonel)
 - [Endometrioma](#endometrioma)
 - [Dermoid kist](#dermoid)
@@ -103,6 +104,15 @@ Ultrason raporunda yalnızca “kist var” yazması yeterli değildir. Doğru k
 | **Solid alan, papiller yapı, yoğun kanlanma** | İleri değerlendirme gerekir | Onkolojik risk netleştirilir |
 
 IOTA Simple Rules ve benzeri sistemler, gereksiz ameliyatı azaltmaya ve riskli kistleri daha doğru ayırmaya yardımcı olur. <InlineEvidence grade="A" />
+
+<h2 id="arama-niyeti">Sık Aranan Yumurtalık Kisti Soruları</h2>
+
+| Aranan ifade | Kısa cevap |
+| :--- | :--- |
+| **Yumurtalık kisti hamile kalmayı engeller mi?** | Çoğu kist engellemez; endometrioma, büyük dermoid veya cerrahi gerektiren kistler kişisel değerlendirme ister. |
+| **Dermoid kist hamilelikte zararlı mı?** | Çoğu dermoid izlenebilir; boyut, ağrı ve torsiyon riski varsa gebelik öncesi veya gebelikte özel plan gerekir. |
+| **Yumurtalık kisti doğurganlığı etkiler mi?** | Kistin tipi, cerrahi ihtiyacı ve yumurtalık rezervine etkisi belirleyicidir. |
+| **Yumurtalık kisti ameliyatı sonrası hamilelik mümkün mü?** | Mümkün olabilir; ancak cerrahi tekniği ve sağlam yumurtalık dokusunun korunması önemlidir. |
 
 <h2 id="fonksiyonel">Fonksiyonel Kistler</h2>
 
@@ -166,6 +176,38 @@ Hayır. Basit ve belirtisiz kistlerde takip yeterli olabilir. Ameliyat daha çok
 Çoğu dermoid kist doğurganlığı doğrudan bozmaz. Ancak büyük veya ağrı yapan dermoidlerde torsiyon riski nedeniyle cerrahi düşünülebilir.
 </Accordion>
 
+<Accordion title="Dermoid kist hamilelikte zararlı mı?">
+Çoğu dermoid kist gebelikte izlenebilir; ancak büyüklük, ağrı, torsiyon riski ve görüntüleme özellikleri takip planını değiştirir.
+</Accordion>
+
 </div>
 
+export const ovarianCystFertilityFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "Yumurtalık kisti hamile kalmayı engeller mi?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Çoğu yumurtalık kisti gebeliğe engel değildir. Kistin tipi, büyüklüğü, endometrioma olup olmaması ve cerrahi ihtiyacı doğurganlık açısından önemlidir."
+    }
+  }, {
+    "@type": "Question",
+    "name": "Dermoid kist hamilelikte zararlı mı?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Çoğu dermoid kist gebelikte izlenebilir; ancak büyüklük, ağrı, torsiyon riski ve görüntüleme özellikleri takip planını değiştirir."
+    }
+  }, {
+    "@type": "Question",
+    "name": "Her yumurtalık kisti ameliyat edilmeli mi?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Hayır. Basit ve belirtisiz kistlerde takip yeterli olabilir. Şüpheli görüntü, hızlı büyüme, torsiyon riski veya belirgin ağrı varsa ameliyat değerlendirilir."
+    }
+  }]
+};
+
+<script type="application/ld+json" set:html={JSON.stringify(ovarianCystFertilityFaqSchema)} />
 <RevealScript />

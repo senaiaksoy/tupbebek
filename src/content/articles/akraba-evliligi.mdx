@@ -2,14 +2,14 @@
 title: "Akraba Evliliği ve Genetik Risk: Taşıyıcılık Taraması, Genetik Danışmanlık ve PGT-M Yaklaşımı"
 description: "Akraba evliliklerinde otosomal resesif hastalık riski, Türkiye'de prevalans (%18-24), birinci derece akraba evliliklerinde ek %1-2 mortalite riski, expanded carrier screening, PGT-M endikasyonları ve prenatal tanı seçenekleri."
 publishDate: 2026-03-31
-lastModified: 2026-05-11
+lastModified: 2026-05-14
 author: "Doç. Dr. Senai Aksoy"
 authorTitle: "Kadın Hastalıkları ve Doğum Uzmanı"
 authorCredentials: "Üreme Tıbbı ve Yardımcı Üreme Teknikleri"
 authorYoutube: "https://www.youtube.com/@DocentDrSenaiAksoy"
 medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Tıbbi Danışma Kurulu"
-reviewDate: 2026-05-11
+reviewDate: 2026-05-14
 category: "Genetik"
 recommendationGrade: A
 image: "/images/makaleler/akraba-evliligi.webp"
@@ -72,6 +72,15 @@ Akraba evliliklerinde — özellikle birinci derece kuzen evliliklerinde — oto
 </HizliCevap>
 
 Akraba evlilikleri, özellikle Akdeniz havzası, Orta Doğu, Kuzey Afrika ve Güney Asya'da yaygın bir gelenektir. Türkiye, dünyada akraba evliliği oranının en yüksek olduğu ülkelerden biridir; bu durumun genetik kalıtsal hastalıklar üzerinde belirgin sağlık sonuçları vardır. Aynı zamanda modern üreme genetiği — **expanded carrier screening, PGT-M ve preimplantasyon haplotip analizi** — bu risklerin önlenmesi için güçlü araçlar sunmaktadır. <InlineEvidence grade="A" />
+
+## Sık Aranan Akraba Evliliği ve Genetik Test Soruları
+
+| Aranan soru | Kısa cevap |
+| :--- | :--- |
+| **Akraba evliliği genetik testi nasıl yapılır?** | Genetik danışmanlık, soy ağacı değerlendirmesi ve çoğu zaman her iki eşten kan örneğiyle taşıyıcılık taraması yapılır. |
+| **Akraba evliliğinde hangi hastalıklar görülür?** | En çok otosomal resesif hastalıkların riski artar; talasemi, SMA, kistik fibrozis ve bazı metabolik hastalıklar örnek verilebilir. |
+| **Akraba evliliğinde tüp bebek gerekir mi?** | Her çiftte gerekmez. Her iki eş aynı hastalık genini taşıyorsa PGT-M ile IVF seçeneği gündeme gelebilir. |
+| **Akraba evliliğinde PGT-M ne zaman düşünülür?** | Ailede bilinen tek gen hastalığı varsa veya çift aynı ciddi resesif hastalık için taşıyıcıysa değerlendirilir. |
 
 ## Türkiye'de Akraba Evliliği — Prevalans ve Demografi
 
@@ -282,11 +291,44 @@ Standart hedeflenmiş paneller 5-15 hastalığı kapsar (β-talasemi, SMA, CF, G
 **PGT-M yapmak için akrabamızdan örnek almak gerekir mi?**
 Geleneksel PGT-M tekniklerinde (linkage analizi, haplotyping) hasta veya etkilenmiş aile üyelerinden referans örneği gereklidir. Ancak modern karyomapping yöntemi ve **trio exome sequencing** ile bazen yalnızca çift örneği ve indirekt analiz yeterli olabilir. Hangi yöntemin uygulanabileceği merkez ve mutasyon tipine bağlıdır.
 
-**PGT-M garantili mi? Sonradan tanı değişebilir mi?**
-Modern karyomapping yönteminin doğruluğu %99 üzerindedir; 1000+ unique mutation analizinde detected misdiagnosis bildirilmemiştir. Ancak %100 garanti yoktur. PGT-M sonrası **gebelik sırasında konfirmasyon amaçlı prenatal tanı (CVS veya amniyosentez)** önerilir.
+**PGT-M kesin sonuç verir mi? Sonradan tanı değişebilir mi?**
+Modern karyomapping yönteminin doğruluğu yüksektir; 1000+ unique mutation analizinde detected misdiagnosis bildirilmemiştir. Buna rağmen hiçbir genetik test %100 yanılmaz kabul edilmez. PGT-M sonrası **gebelik sırasında konfirmasyon amaçlı prenatal tanı (CVS veya amniyosentez)** önerilir.
 
 **Ailede genetik hastalık yok, taşıyıcılık taraması yine de gerekli mi?**
 Evet. Çoğu otosomal resesif mutasyon taşıyıcısı **klinik olarak asemptomatiktir**; aile öyküsü olmasa bile taşıyıcılık mümkündür. Bu yüzden ACOG/ACMG taşıyıcılık taramasını aile öyküsü olsun olmasın **tüm gebelik planlayan çiftlere önerir** — akraba evliliğinde önemi katlanır.
 
 **Akraba evliliği yapmadık ama çocuğumuz genetik hastalıkla doğdu. Sonraki gebelik için ne yapmalıyız?**
 Eşler genetik açıdan akraba olmasa bile aynı resesif mutasyonun rastgele taşıyıcısı olabilirler. Etkilenmiş bir çocuğun ardından her iki ebeveynin de o spesifik mutasyonu taşıdığı doğrulanmalıdır. Sonraki gebelikte aynı %25 risk vardır. Bu durumda PGT-M veya prenatal tanı seçenekleri tartışılır. Bu çiftler de "at-risk couple" tanımına girer ve akraba evliliğinden farkı yoktur.
+
+export const consanguinityFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Akraba evliliği genetik testi nasıl yapılır?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Genetik danışmanlık, soy ağacı değerlendirmesi ve çoğu zaman her iki eşten kan örneğiyle taşıyıcılık taraması yapılır. Ailede bilinen hastalık varsa hedeflenmiş gen testi de gerekebilir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Akraba evliliğinde tüp bebek gerekir mi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Her akraba evliliğinde tüp bebek gerekmez. Her iki eş aynı ciddi resesif hastalık için taşıyıcıysa PGT-M ile IVF seçeneği gündeme gelebilir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Akraba evliliğinde PGT-M ne zaman düşünülür?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ailede bilinen tek gen hastalığı varsa veya çift aynı ciddi resesif hastalık için taşıyıcıysa, genetik danışmanlık sonrası PGT-M seçeneği değerlendirilebilir."
+      }
+    }
+  ]
+};
+
+<script type="application/ld+json" set:html={JSON.stringify(consanguinityFaqSchema)} />

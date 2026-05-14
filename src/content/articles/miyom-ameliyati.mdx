@@ -8,8 +8,8 @@ authorCredentials: "Üreme Tıbbı ve Yardımcı Üreme Teknikleri"
 authorYoutube: "https://www.youtube.com/@DocentDrSenaiAksoy"
 medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Tıbbi Danışma Kurulu"
-reviewDate: 2026-05-12
-lastModified: 2026-05-12
+reviewDate: 2026-05-14
+lastModified: 2026-05-14
 category: "Kadın Sağlığı"
 recommendationGrade: B
 image: /images/library/hastalik/miyom-ameliyati-ne-zaman-gerekir.webp
@@ -66,6 +66,7 @@ Miyom ameliyatı en net olarak rahim iç boşluğunu bozan submüköz miyomlarda
 ## İçindekiler
 
 - [Miyom nedir?](#nedir)
+- [Sık aranan miyom ameliyatı soruları](#arama-niyeti)
 - [Trafik lambasıyla ameliyat kararı](#trafik)
 - [Gebelik ve IVF öncesi karar](#gebelik)
 - [Hangi ameliyat yöntemi seçilir?](#yontem)
@@ -80,6 +81,15 @@ Miyom ameliyatı en net olarak rahim iç boşluğunu bozan submüköz miyomlarda
 <h2 id="nedir">Miyom Nedir?</h2>
 
 Miyomlar rahmin kas tabakasından gelişen iyi huylu kitlelerdir. Çok sık görülürler; fakat her miyom hastalık gibi davranmaz. Klinik etkiyi en çok yerleşim belirler: rahim içine uzanan submüköz miyomlar, rahim duvarındaki intramural miyomlar ve rahim dışına büyüyen subseröz miyomlar aynı şekilde yönetilmez.
+
+<h2 id="arama-niyeti">Sık Aranan Miyom Ameliyatı Soruları</h2>
+
+| Aranan ifade | Kısa cevap |
+| :--- | :--- |
+| **Miyom ameliyatı nasıl olur?** | Miyomun yerine göre histeroskopik, laparoskopik, robotik veya açık miyomektomi seçenekleri gündeme gelebilir. |
+| **Miyom ameliyatı sonrası tüp bebek ne zaman yapılır?** | Histeroskopik işlem sonrası bekleme daha kısa olabilir; rahim duvarına kesi yapılan ameliyatlarda daha uzun iyileşme gerekir. |
+| **Miyomektomi sonrası gebelik ne zaman planlanır?** | Süre ameliyat tipine, miyom sayısına, kesi derinliğine ve rahim onarımına göre kişisel belirlenir. |
+| **Miyom ameliyatı nedir?** | Rahmi koruyarak miyomların çıkarılmasıdır; gebelik hedefinde rahim bütünlüğü ve iyileşme süresi önemlidir. |
 </div>
 
 <div data-reveal>
@@ -155,8 +165,44 @@ Rahim iç boşluğuna uzandığı için kanama, embriyo tutunması ve düşük r
 <Accordion title="Miyom kansere dönüşür mü?">
 Miyomlar iyi huyludur; ancak nadir rahim sarkomları ameliyat öncesinde her zaman kesin ayırt edilemeyebilir. Hızlı büyüme veya menopoz sonrası büyüme ciddiye alınır.
 </Accordion>
+
+<Accordion title="Miyom ameliyatı sonrası tüp bebek ne zaman yapılır?">
+Histeroskopik submüköz miyom ameliyatından sonra bekleme daha kısa olabilir. Laparoskopik veya açık miyomektomide rahim duvarı onarımı nedeniyle daha uzun iyileşme süresi gerekebilir.
+</Accordion>
+
+<Accordion title="Miyom ameliyatı nasıl yapılır?">
+Yöntem miyomun yerine ve büyüklüğüne göre seçilir. Rahim içine uzanan miyomlar histeroskopiyle, rahim duvarındaki veya dışa büyüyen miyomlar laparoskopik, robotik ya da açık cerrahiyle çıkarılabilir.
+</Accordion>
 </div>
 
 </div>
 
+export const myomectomyFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "Miyom ameliyatı ne zaman gerekir?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Rahim iç boşluğunu bozan submüköz miyomlar, belirgin kanama/anemi, hızlı büyüme, ağrı veya gebelik/IVF planını etkileyen miyomlarda ameliyat daha güçlü şekilde gündeme gelir."
+    }
+  }, {
+    "@type": "Question",
+    "name": "Miyom ameliyatı sonrası tüp bebek ne zaman yapılır?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Histeroskopik işlem sonrası bekleme daha kısa olabilir. Rahim duvarına kesi yapılan laparoskopik veya açık miyomektomide daha uzun iyileşme süresi gerekebilir."
+    }
+  }, {
+    "@type": "Question",
+    "name": "Miyom ameliyatı nasıl yapılır?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Miyomun yerine ve büyüklüğüne göre histeroskopik, laparoskopik, robotik veya açık miyomektomi seçenekleri değerlendirilir."
+    }
+  }]
+};
+
+<script type="application/ld+json" set:html={JSON.stringify(myomectomyFaqSchema)} />
 <RevealScript />

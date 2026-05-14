@@ -1,6 +1,6 @@
 ---
-title: "Mikroenjeksiyon (ICSI) Nedir? Kimlere Uygulanır?"
-description: "Mikroenjeksiyon ICSI nedir, IVF'den farkı ne, kimlere uygulanır? Erkek faktörü, azospermi, önceki döllenme başarısızlığı ve normal spermde ICSI kararı."
+title: "Mikroenjeksiyon (ICSI) Nedir? IVF'den Farkı Ne?"
+description: "Mikroenjeksiyon ICSI nedir, IVF'den farkı ne ve kimlere uygulanır? Erkek faktörü, azospermi, önceki döllenme başarısızlığı ve normal spermde ICSI kararı."
 publishDate: 2025-01-17
 author: "Doç. Dr. Senai Aksoy"
 authorTitle: "Kadın Hastalıkları ve Doğum Uzmanı"
@@ -8,8 +8,8 @@ authorCredentials: "Üreme Tıbbı ve Yardımcı Üreme Teknikleri"
 authorYoutube: "https://www.youtube.com/@DocentDrSenaiAksoy"
 medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Tıbbi Danışma Kurulu"
-reviewDate: 2026-05-12
-lastModified: 2026-05-12
+reviewDate: 2026-05-14
+lastModified: 2026-05-14
 category: "Tedavi Yöntemleri"
 recommendationGrade: B
 image: /images/library/klinik/181.webp
@@ -69,6 +69,13 @@ Mikroenjeksiyon, tek bir spermin mikroskop altında doğrudan yumurtanın içine
 **ICSI özellikle ciddi erkek faktörü ve önceki döllenme başarısızlığında anlamlıdır.** Normal sperm parametreleri olan çiftlerde ise Cochrane 2023 derlemesi ICSI'nin klasik IVF'ye göre canlı doğum üstünlüğünü net göstermemiştir. <InlineEvidence grade="A" />
 </MedicalInfoBox>
 </div>
+
+| Sık Aranan Terim | Net Cevap |
+| :--- | :--- |
+| **ICSI açılımı nedir?** | Intracytoplasmic sperm injection; Türkçede mikroenjeksiyon olarak kullanılır. |
+| **ICSI tedavisi nedir?** | IVF içinde, tek spermin mikroskop altında doğrudan yumurtaya enjekte edildiği laboratuvar tekniğidir. |
+| **IVF ICSI farkı nedir?** | Klasik IVF'de sperm yumurtayı kendisi döller; ICSI'de embriyolog tek spermi yumurtaya enjekte eder. |
+| **Kimlere uygulanır?** | Ciddi erkek faktörü, cerrahi sperm kullanımı, azospermi veya önceki döllenme başarısızlığında daha güçlü gerekçe vardır. |
 
 ## İçindekiler
 
@@ -172,6 +179,14 @@ ICSI laboratuvarda yumurtalar üzerinde yapılır; anne adayının hissettiği i
 Hayır. ICSI döllenme şansını artırabilir ama her yumurta döllenmez ve her döllenen yumurta sağlıklı embriyoya dönüşmez.
 </Accordion>
 
+<Accordion title="ICSI açılımı nedir?">
+ICSI, intracytoplasmic sperm injection ifadesinin kısaltmasıdır. Türkçede mikroenjeksiyon olarak bilinir ve IVF laboratuvarında tek spermin yumurta içine verilmesini anlatır.
+</Accordion>
+
+<Accordion title="ICSI tedavisi IVF'den ayrı bir tedavi midir?">
+Hayır. ICSI, tüp bebek tedavisinin laboratuvar aşamasında kullanılan bir döllenme tekniğidir. Yumurtalık uyarımı, yumurta toplama ve transfer adımları IVF sürecinin parçası olarak devam eder.
+</Accordion>
+
 <Accordion title="Normal spermde klasik IVF mi ICSI mi?">
 Karar çiftin öyküsüne, yumurta sayısına, önceki döllenme deneyimine ve laboratuvar yaklaşımına göre verilir. Rutin ICSI üstünlüğü net değildir.
 </Accordion>
@@ -182,5 +197,25 @@ Cerrahi yolla canlı sperm bulunursa ICSI ile kullanılabilir. Öncesinde erkek 
 </div>
 
 </div>
+
+export const icsiFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [{
+    "@type": "Question",
+    "name": "Mikroenjeksiyon ICSI nedir?",
+    "acceptedAnswer": { "@type": "Answer", "text": "Mikroenjeksiyon, tek bir spermin mikroskop altında doğrudan yumurta içine enjekte edildiği IVF laboratuvar tekniğidir." }
+  }, {
+    "@type": "Question",
+    "name": "ICSI ile klasik IVF arasındaki fark nedir?",
+    "acceptedAnswer": { "@type": "Answer", "text": "Klasik IVF'de sperm yumurtayı laboratuvar ortamında kendisi döller. ICSI'de embriyolog tek bir spermi seçerek yumurta içine enjekte eder." }
+  }, {
+    "@type": "Question",
+    "name": "ICSI kimlere uygulanır?",
+    "acceptedAnswer": { "@type": "Answer", "text": "ICSI en güçlü olarak ciddi erkek faktörü, azospermi nedeniyle cerrahi sperm kullanımı veya önceki IVF denemesinde döllenme başarısızlığı olan çiftlerde değerlendirilir." }
+  }]
+};
+
+<script type="application/ld+json" set:html={JSON.stringify(icsiFaqSchema)} />
 
 <RevealScript />
