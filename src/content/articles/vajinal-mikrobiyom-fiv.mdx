@@ -9,8 +9,8 @@ authorCredentials: "Üreme Tıbbı ve Yardımcı Üreme Teknikleri"
 authorYoutube: "https://www.youtube.com/@DocentDrSenaiAksoy"
 medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Tıbbi Danışma Kurulu"
-reviewDate: 2026-05-12
-lastModified: 2026-05-12
+reviewDate: 2026-05-14
+lastModified: 2026-05-14
 category: "Tüp Bebek"
 recommendationGrade: C
 image: /images/library/laboratuvar/microbiota.webp
@@ -66,6 +66,7 @@ Vajinal mikrobiyom ile IVF sonuçları arasında ilişki olabileceğini düşün
 ## İçindekiler
 
 - [Vajinal mikrobiyom nedir?](#nedir)
+- [Sık aranan vajinal mikrobiyom soruları](#arama-niyeti)
 - [IVF ile ilişkisi neden konuşuluyor?](#iliski)
 - [Disbiyoz ve kronik endometrit](#disbiyoz)
 - [Hangi testler kullanılabilir?](#testler)
@@ -76,6 +77,15 @@ Vajinal mikrobiyom ile IVF sonuçları arasında ilişki olabileceğini düşün
 <h2 id="nedir">Vajinal Mikrobiyom Nedir?</h2>
 
 Vajinal mikrobiyom, vajinada yaşayan mikroorganizmaların dengesidir. Sağlıklı örüntü çoğu zaman laktobasillerin baskın olduğu, daha asidik bir çevre ile ilişkilidir. Disbiyozda ise bu denge bozulur; bakteriyel vajinozis ile ilişkili türler artabilir. Bu durum her zaman belirti vermez.
+
+<h2 id="arama-niyeti">Sık Aranan Vajinal Mikrobiyom Soruları</h2>
+
+| Aranan soru | Kısa cevap |
+| :--- | :--- |
+| **Vajinal mikrobiyom testi nedir?** | Vajinal flora içindeki baskın mikroorganizmaları değerlendiren testlerdir; her IVF hastasında rutin değildir. |
+| **Vajinal flora tüp bebek başarısını etkiler mi?** | Bazı çalışmalarda ilişki bildirilmiştir; ancak sonuçları tek başına belirleyen faktör değildir. |
+| **Probiyotik tüp bebek başarısını artırır mı?** | Kanıt sınırlıdır; her probiyotik aynı değildir ve kesin fayda gösterilmiş değildir. |
+| **Disbiyoz varsa transfer ertelenir mi?** | Her zaman değil. Semptom, test sonucu ve rahim içi değerlendirme birlikte yorumlanır. |
 
 <h2 id="iliski">IVF ile İlişkisi Neden Konuşuluyor?</h2>
 
@@ -132,7 +142,7 @@ Vajinal mikrobiyom değerlendirmesi en çok şu durumlarda gündeme gelebilir:
 Hayır. Disbiyoz bazen belirti vermeyebilir. Ancak belirtisiz her hastada ileri test gerekli demek de doğru değildir; karar klinik öyküyle verilir.
 </Accordion>
 
-<Accordion title="Probiyotik kullanmak IVF başarısını kesin artırır mı?">
+<Accordion title="Probiyotik kullanmak IVF başarısını artırır mı?">
 Hayır. Bazı ürünler ve bazı hasta grupları için umut verici veriler olsa da, tüm hastalarda kesin fayda gösterilmiş değildir.
 </Accordion>
 
@@ -145,5 +155,38 @@ Her zaman değil. Karar semptom, test sonucu, eşlik eden rahim içi bulgular ve
 </Accordion>
 
 </div>
+
+export const vaginalMicrobiomeFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Vajinal mikrobiyom testi nedir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vajinal mikrobiyom testi, vajinal flora içindeki baskın mikroorganizmaları değerlendiren testler için kullanılan genel ifadedir. Her IVF hastasında rutin değildir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Vajinal flora tüp bebek başarısını etkiler mi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Bazı çalışmalarda laktobasil baskın flora ile daha iyi IVF sonuçları arasında ilişki bildirilmiştir; ancak vajinal flora sonuçları tek başına belirleyen faktör değildir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Probiyotik tüp bebek başarısını artırır mı?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Kanıt sınırlıdır. Her probiyotik aynı değildir ve tüm hastalarda kesin fayda gösterilmiş değildir."
+      }
+    }
+  ]
+};
+
+<script type="application/ld+json" set:html={JSON.stringify(vaginalMicrobiomeFaqSchema)} />
 
 <RevealScript />

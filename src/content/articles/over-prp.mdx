@@ -2,7 +2,7 @@
 title: "Yumurtalık PRP Enjeksiyonu: Düşük Rezervde Gerçekçi Değerlendirme"
 description: "Yumurtalık PRP enjeksiyonu nedir? Düşük AMH, azalmış over rezervi ve erken over yetmezliğinde kanıt düzeyi, güvenlik, hasta seçimi ve gerçekçi beklentiler."
 publishDate: 2026-04-12
-lastModified: 2026-05-12
+lastModified: 2026-05-14
 category: "Tedavi Yöntemleri"
 recommendationGrade: C
 status: "published"
@@ -11,7 +11,7 @@ authorTitle: "Kadın Hastalıkları, Doğum ve Üreme Tıbbı Uzmanı"
 authorCredentials: "Baş Editör, tupbebek.com"
 medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Tıbbi Danışma Kurulu"
-reviewDate: 2026-05-12
+reviewDate: 2026-05-14
 image: "/images/makaleler/over-prp-2026-kapak.jpeg"
 imageAlt: "Yumurtalık PRP enjeksiyonu ve düşük over rezervi için klinik değerlendirme"
 references:
@@ -38,7 +38,7 @@ import EvidenceGradeCard from '../../components/EvidenceGradeCard.astro';
 import RevealScript from '../../components/global/RevealScript.astro';
 
 <HizliCevap question="Yumurtalık PRP düşük rezervde işe yarar mı?">
-Yumurtalık PRP, düşük over rezervi veya erken over yetmezliği olan seçilmiş hastalarda araştırılan deneysel bir yaklaşımdır. Bazı çalışmalarda AMH, antral folikül sayısı veya toplanan yumurta sayısında iyileşme sinyalleri bildirilmiştir; ancak canlı doğumu artırdığı henüz güçlü ve tutarlı biçimde kanıtlanmamıştır. Bu nedenle standart tedavi veya garanti çözüm gibi sunulmamalıdır.
+Yumurtalık PRP, düşük over rezervi veya erken over yetmezliği olan seçilmiş hastalarda araştırılan deneysel bir yaklaşımdır. Bazı çalışmalarda AMH, antral folikül sayısı veya toplanan yumurta sayısında iyileşme sinyalleri bildirilmiştir; ancak canlı doğumu artırdığı henüz güçlü ve tutarlı biçimde kanıtlanmamıştır. Bu nedenle standart tedavi veya sonucu kesinleştiren yöntem gibi sunulmamalıdır.
 </HizliCevap>
 
 <div class="mesh-hero pt-12 pb-20 px-4 md:px-0 -mx-4 md:-mx-0 mb-12 rounded-3xl shadow-sm border border-white/40" style="background: linear-gradient(135deg, #fdf2f8 0%, #fff7ed 48%, #f8fafc 100%);">
@@ -58,6 +58,7 @@ Yumurtalık PRP, düşük over rezervi veya erken over yetmezliği olan seçilmi
 ## İçindekiler
 
 - [Yumurtalık PRP nedir?](#nedir)
+- [Sık aranan yumurtalık PRP soruları](#arama-niyeti)
 - [Kanıtlar ne söylüyor?](#kanit)
 - [Kimlerde tartışılabilir?](#kime)
 - [Kimlerde uygun değildir?](#uygun-degil)
@@ -70,6 +71,15 @@ Yumurtalık PRP, düşük over rezervi veya erken over yetmezliği olan seçilmi
 PRP, kişinin kendi kanından hazırlanan trombositten zengin plazmadır. Yumurtalık PRP uygulamasında bu plazma ultrason eşliğinde over dokusuna verilir. Teorik amaç, büyüme faktörleri aracılığıyla yumurtalık mikroçevresini desteklemek ve mevcut folikül havuzunun yanıtını iyileştirmektir.
 
 Burada kritik ayrım şudur: PRP'nin yeni yumurta “oluşturduğu” kanıtlanmış değildir. Daha gerçekçi ifade, bazı hastalarda mevcut foliküler yanıtı etkileyebilecek biyolojik sinyallerin araştırıldığıdır.
+
+<h2 id="arama-niyeti">Sık Aranan Yumurtalık PRP Soruları</h2>
+
+| Aranan soru | Kısa cevap |
+| :--- | :--- |
+| **Yumurtalık PRP nedir?** | Kişinin kendi kanından hazırlanan trombositten zengin plazmanın over dokusuna verilmesidir. |
+| **Over PRP AMH artırır mı?** | Bazı çalışmalarda AMH artışı bildirilmiştir; bu artış her zaman daha iyi embriyo veya canlı doğum anlamına gelmez. |
+| **Yumurtalık PRP düşük rezervde işe yarar mı?** | Deneysel bir seçenektir; bazı biyolojik sinyaller vardır ama canlı doğum kanıtı sınırlıdır. |
+| **PRP sonrası ne zaman tüp bebek yapılır?** | Çoğu merkez 1-3 ay içinde yanıtı değerlendirir; zamanlama yaş ve rezerv durumuna göre değişir. |
 
 <h2 id="kanit">Kanıtlar Ne Söylüyor?</h2>
 
@@ -121,8 +131,8 @@ Yumurtalık PRP, beklentisi abartılacak bir çözüm değil; sınırlı kanıtl
 
 <h2 id="faq">Sıkça Sorulan Sorular</h2>
 
-<Accordion title="Yumurtalık PRP gebeliği garanti eder mi?">
-Hayır. PRP'nin canlı doğumu garanti ettiği veya her hastada artırdığı gösterilmemiştir.
+<Accordion title="Yumurtalık PRP gebeliği kesinleştirir mi?">
+Hayır. PRP'nin canlı doğumu her hastada artırdığı gösterilmemiştir.
 </Accordion>
 
 <Accordion title="PRP düşük AMH'yi yükseltir mi?">
@@ -138,5 +148,38 @@ IVF protokol optimizasyonu, embriyo biriktirme, düşük rezerv stratejileri ve 
 </Accordion>
 
 </div>
+
+export const ovarianPrpFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Yumurtalık PRP nedir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yumurtalık PRP, kişinin kendi kanından hazırlanan trombositten zengin plazmanın ultrason eşliğinde over dokusuna verilmesiyle yapılan deneysel bir yaklaşımdır."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Over PRP AMH artırır mı?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Bazı çalışmalarda AMH artışı bildirilmiştir; ancak AMH artışı her zaman daha iyi embriyo veya canlı doğum anlamına gelmez."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Yumurtalık PRP düşük rezervde işe yarar mı?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Düşük rezervde araştırılan deneysel bir seçenektir. Bazı biyolojik sinyaller vardır; fakat canlı doğumu artırdığı güçlü ve tutarlı biçimde kanıtlanmamıştır."
+      }
+    }
+  ]
+};
+
+<script type="application/ld+json" set:html={JSON.stringify(ovarianPrpFaqSchema)} />
 
 <RevealScript />

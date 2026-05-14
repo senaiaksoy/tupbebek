@@ -1,6 +1,6 @@
 ---
-title: "Akıntı, Kaşıntı, Koku: Mantar mı? Bakteriyel Vajinoz mu?"
-description: "Vajinal akıntı, koku ve kaşıntı neden olur? Mantar enfeksiyonu ile bakteriyel vajinoz arasındaki farkları Yayın Kurulu anlatıyor."
+title: "Akıntı, Kaşıntı, Koku: Mantar mı Bakteriyel Vajinoz mu?"
+description: "Vajinal akıntı, kaşıntı ve koku neden olur? Mantar enfeksiyonu ile bakteriyel vajinoz farkı, ne zaman muayene gerekir ve kendi kendine tedavinin sınırları."
 publishDate: 2025-01-15
 author: "Doç. Dr. Senai Aksoy"
 authorTitle: "Kadın Hastalıkları ve Doğum Uzmanı"
@@ -8,12 +8,12 @@ authorCredentials: "Üreme Tıbbı ve Yardımcı Üreme Teknikleri"
 authorYoutube: "https://www.youtube.com/@DocentDrSenaiAksoy"
 medicalReviewer: "tupbebek.com Tıbbi Danışma Kurulu"
 reviewerTitle: "Tıbbi Danışma Kurulu"
-reviewDate: 2026-04-09
-lastModified: 2026-05-11
+reviewDate: 2026-05-14
+lastModified: 2026-05-14
 category: "Kadın Sağlığı"
 recommendationGrade: B
 image: "/images/makaleler/akinti-kasinti-koku.webp"
-imageAlt: "akinti kasinti koku mantar mi bakteriyel vajinoz mu"
+imageAlt: "Vajinal akıntı, kaşıntı ve koku nedenleri hakkında tıbbi bilgilendirme"
 references:
   - title: "Vaginitis"
     authors: "Sobel JD"
@@ -40,244 +40,98 @@ references:
 ---
 
 import HizliCevap from '../../components/HizliCevap.astro';
+import Accordion from "../../components/global/Accordion.astro";
+import InlineEvidence from '../../components/InlineEvidence.astro';
+import EvidenceGradeCard from '../../components/EvidenceGradeCard.astro';
 
-<HizliCevap question="Akıntı, Kaşıntı, Koku: Mantar mı? Bakteriyel Vajinoz mu?">
-Vajinal akıntı, koku ve kaşıntı neden olur? Mantar enfeksiyonu ile bakteriyel vajinoz arasındaki farkları Yayın Kurulu anlatıyor.
+<HizliCevap question="Akıntı, kaşıntı ve koku mantar mı bakteriyel vajinoz mu düşündürür?">
+Vajinal mantarda kaşıntı, yanma ve beyaz-parçalı akıntı daha sık görülür; bakteriyel vajinozda ise ince gri-beyaz akıntı ve balık kokusu daha belirgindir. Yine de yalnızca koku veya akıntı görünümüne bakarak kesin tanı konulmaz. Gebelik şüphesi, kasık ağrısı, ateş, kanlı/yeşil akıntı veya tekrarlayan şikayet varsa muayene gerekir.
 </HizliCevap>
 
-import Accordion from "../../components/global/Accordion.astro";
-import MedicalInfoBox from '../../components/global/MedicalInfoBox.astro';
-import QuoteBlock from '../../components/global/QuoteBlock.astro';
-import JSONLD from '../../components/global/JSONLD.astro';
-import RevealScript from '../../components/global/RevealScript.astro';
-import Video from '../../components/global/Video.astro';
-import InlineEvidence from '../../components/InlineEvidence.astro';
+## Akıntı, Kaşıntı ve Koku Ne Anlama Gelir?
 
-<div class="mesh-hero pt-12 pb-20 px-4 md:px-0 -mx-4 md:-mx-0 mb-12 rounded-3xl shadow-sm border border-white/40">
-  <div class="max-w-4xl mx-auto" data-reveal>
-    <h1 class="text-4xl md:text-6xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-pink-600 to-blue-700 leading-tight">
-      {frontmatter.title}
-    </h1>
-    <p class="text-xl md:text-2xl text-slate-700 font-medium max-w-2xl leading-relaxed">
-      {frontmatter.description}
-    </p>
-  </div>
-</div>
+Vajinal akıntı her zaman hastalık anlamına gelmez. Döngü boyunca akıntının miktarı ve kıvamı değişebilir. Ancak koku, yoğun kaşıntı, yanma, ağrı, renk değişikliği veya tekrarlama varsa mantar, bakteriyel vajinoz, trikomonas, servisit, tahriş veya alerji gibi nedenler düşünülür. <InlineEvidence grade="B" />
 
-<div class="max-w-4xl mx-auto space-y-12 blog-content-reveal">
+## Sık Aranan Akıntı, Kaşıntı ve Koku Soruları
 
-<div data-reveal>
-<MedicalInfoBox title="Bakışta Fark" icon="🧐" color="rose">
-**Mantar enfeksiyonu** (genellikle *Candida albicans*) ile **bakteriyel vajinoz** (genellikle *Gardnerella vaginalis* artışına bağlı ekosistem bozulması) arasındaki en büyük fark akıntı ve kokudur. <InlineEvidence grade="B" /> Eğer temel sorun **kaşıntı** ise ve akıntı **peynir kesiği** gibi beyaz/yoğunsa bu mantara işaret eder. Akıntı **ince yapılıysa** ve belirgin bir **balık kokusu** eşlik ediyorsa bakteriyel vajinoz olasılığı daha yüksektir. Kesin teşhis için klinik muayene ve vajinal kültür gerekebilir.
-</MedicalInfoBox>
-</div>
+| Aranan soru | Kısa cevap |
+| :--- | :--- |
+| **Vajinada akıntı kaşıntı koku neden olur?** | Mantar, bakteriyel vajinoz, trikomonas, tahriş, alerji veya cinsel yolla bulaşan enfeksiyonlar neden olabilir. |
+| **Bakteriyel vajinozis ve mantar farkı nedir?** | Mantar daha çok kaşıntı/yanma; vajinoz daha çok ince akıntı ve balık kokusu yapar. |
+| **Kokulu akıntı kaşıntı yapar mı?** | Yapabilir; ancak kokunun baskın olması bakteriyel vajinoz veya başka enfeksiyonları düşündürür. |
+| **Vajinal akıntıda ne zaman doktora gidilmeli?** | İlk kez oluyorsa, gebelik varsa, ağrı/ateş eşlik ediyorsa veya şikayet tekrarlıyorsa muayene gerekir. |
 
-<div data-reveal>
-  <Video id="zGzzDHRkjN4" />
-</div>
+## Mantar ve Bakteriyel Vajinoz Farkı
 
-<div data-reveal>
-Hastalarım bana İstanbul'daki kliniğime gelip *"Doktor bey, sanırım yine mantar oldum"* dediğinde her zaman temkinli yaklaşırım. Çünkü uygulamada, farklı vajinal sorunlar birbirini çok kolay taklit edebilir.
-</div>
+| Özellik | Vajinal mantar | Bakteriyel vajinoz |
+| :--- | :--- | :--- |
+| Baskın belirti | Kaşıntı, yanma, tahriş | Koku ve ince akıntı |
+| Akıntı | Beyaz, yoğun, parçalı olabilir | İnce, gri-beyaz olabilir |
+| Koku | Genellikle belirgin değildir | Balık kokusu tipiktir |
+| pH | Çoğu zaman normal aralıktadır | Genellikle yükselir |
+| Tedavi yaklaşımı | Antifungal ilaçlar | Uygun antibiyotik tedavisi |
 
-<div data-reveal>
-<QuoteBlock author="tupbebek.com Yayın Kurulu">
-İstanbul'daki 30+ yıllık kadın hastalıkları ve tüp bebek pratiğimde bu kafa karışıklığına yüzlerce kez tanık oldum. Bir hasta mantar tedavisi uygular ama aslında sorunu bakteriyel vajinozdur. Bir diğeri enfeksiyon kaptığını sanır ama aslında sadece bir maddeye karşı alerjik reaksiyon gösteriyordur. Önemli olan sadece şikayeti hızlıca dindirmek değil, doğru teşhisle kalıcı rahatlama sağlamaktır.
-</QuoteBlock>
-</div>
+## Ne Zaman Muayene Gerekir?
 
-<div data-reveal>
----
+Şikayet ilk kez oluyorsa, gebelik şüphesi varsa, ateş veya kasık ağrısı eşlik ediyorsa, akıntı yeşil/kanlıysa, cinsel yolla bulaşan enfeksiyon riski varsa veya belirtiler sık tekrarlıyorsa kendi kendine tedavi yerine muayene gerekir. Tekrarlayan mantar veya vajinozda altta yatan diyabet, antibiyotik kullanımı, vajinal duş, irritan ürünler ve mikrobiyom dengesi ayrıca değerlendirilmelidir.
 
-## 📌 Bu Makalede Neler Öğreneceksiniz?
+## Kendi Kendine Tedavinin Sınırı
 
-- [Mantar enfeksiyonu ile bakteriyel vajinoz arasındaki farklar nelerdir?](#mantar-mi-bakteriyel-vajinoz-mu)
-- [Vajinal mantarın belirtileri nelerdir?](#vajinal-mantar-belirtileri)
-- [Bakteriyel vajinozun işaretleri nelerdir?](#bakteriyel-vajinoz-isaretleri)
-- [Koku neden önemli bir ipucudur?](#koku-neden-onemli)
-- [Hangi durumlar mantar veya vajinozu taklit edebilir?](#taklit-eden-durumlar)
-- [Ne zaman mutlaka doktora başvurmalı?](#ne-zaman-doktora-gitmeli)
+Daha önce tanı almış ve aynı belirtileri tanıyan bazı kişilerde kısa süreli tedavi planı hekimle önceden konuşulmuş olabilir. Ancak yanlış tanı, gereksiz ilaç kullanımı ve altta yatan enfeksiyonun gecikmesi sık görülen sorunlardır. Özellikle kötü koku, pelvik ağrı, gebelik ve tekrarlama durumlarında muayene daha güvenlidir.
 
----
-</div>
+<EvidenceGradeCard grade={frontmatter.recommendationGrade} />
 
-<div data-reveal>
-<h2 id="mantar-mi-bakteriyel-vajinoz-mu">Mantar mı yoksa Bakteriyel Vajinoz mu?</h2>
+## Sıkça Sorulan Sorular
 
-![Vajinal Mantar ve Bakteriyel Vajinoz Karşılaştırma Tablosu](/images/blog/vajinal-enfeksiyon-karsilastirma-tablosu.jpg)
-
-Eğer bu farkı en basit haliyle özetlemem gerekirse: **Mantar tahriş eder, vajinoz ise koku yapar.** Tabii ki bu matematiksel bir kural değildir ancak pratik bir başlangıç noktasıdır. Muayene sırasında akıntının görünümü, kokusu, kaşıntının şiddeti, vajinal pH değeri ve mikroskop altındaki inceleme bize gerçek nedeni söyler.
-
-<MedicalInfoBox title="Klinik Karşılaştırma" icon="⚖️" color="blue">
-<table>
-  <thead>
-    <tr>
-      <th>Kriter</th>
-      <th>Mantar Enfeksiyonu</th>
-      <th>Bakteriyel Vajinoz (BV)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Baskın Belirti</td>
-      <td>Kaşıntı, yanma, tahriş</td>
-      <td>Anormal koku, farklı akıntı</td>
-    </tr>
-    <tr>
-      <td>Akıntının Görünümü</td>
-      <td>Beyaz, yoğun, peynir kesiği gibi</td>
-      <td>İnce, grimsi veya sarımsı</td>
-    </tr>
-    <tr>
-      <td>Koku</td>
-      <td>Genellikle yok veya hafif</td>
-      <td>Belirgin "balık kokusu"</td>
-    </tr>
-    <tr>
-      <td>Kaşıntı Şiddeti</td>
-      <td>Çok yoğun olabilir</td>
-      <td>Mümkün ama genellikle daha hafiftir</td>
-    </tr>
-    <tr>
-      <td>Vajinal pH</td>
-      <td>Genellikle &lt; 4.5</td>
-      <td>Genellikle > 4.5</td>
-    </tr>
-    <tr>
-      <td>Standart Tedavi</td>
-      <td>Antifungal (Mantar ilacı)</td>
-      <td>Antibiyotik</td>
-    </tr>
-  </tbody>
-</table>
-</MedicalInfoBox>
-</div>
-
----
-
-<div data-reveal>
-<h2 id="vajinal-mantar-belirtileri">Vajinal Mantar Enfeksiyonunun Belirtileri Nelerdir?</h2>
-
-Klasik bir vajinal mantar enfeksiyonu aslında bir tahriş hikayesidir. Hastalarım genellikle *"Yanıyor," "Şiddetli kaşınıyor," "Her yerim tahriş olmuş gibi hissediyorum"* derler. Akıntı genellikle beyazdır ve çökelek/peynir kesiği görünümündedir.
-
-Mantarın ana işaretleri:
-- Belirgin kaşıntı (Pruritus)
-- Yanma hissi
-- Dış genital bölgede (vulva) kızarıklık ve bazen hafif şişlik
-- Beyaz, parça parça akıntı
-- İdrar yaparken veya cinsel ilişki sırasında sızlama
-
-Unutulmaması gereken nokta; mantarın mutlaka kötü bir koku yaymak zorunda olmadığıdır. Eğer koku çok baskınsa, genellikle başka nedenler aranmalıdır.
-</div>
-
----
-
-<div data-reveal>
-<h2 id="bakteriyel-vajinoz-isaretleri">Bakteriyel Vajinozun İşaretleri Nelerdir?</h2>
-
-![Normal Vajinal Flora ve Bakteriyel Vajinoz Dengesi Şeması](/images/blog/normal-flora-vs-bakteriyel-vajinoz-semasi.png)
-
-Bakteriyel vajinoz (BV), aslında bir enfeksiyondan ziyade vajinal ekosistemin dengesinin bozulmasıdır. Normalde bizi koruyan laktobasillerin yerini başka bakteriler alır ve pH yükselir.
-
-Bu durumda karşımıza çıkan tablo mantardan farklıdır: Daha az kaşıntı, ancak daha fazla akıntı ve özellikle **balık kokusunu** andıran o spesifik koku.
-
-BV belirtileri genellikle şunlardır:
-- İnce, grimsi ve homojen akıntı
-- Özellikle adet sonrası veya cinsel ilişki sonrası artan belirgin koku
-- Vajinal pH'ın 4.5'in üzerine çıkması
-- Kaşıntının hiç olmaması veya çok az olması
-
-Pratikte bizi uyaran ilk detay genellikle hastanın rahatsızlık duyduğu bu kokudur.
-</div>
-
----
-
-<div data-reveal>
-<h2 id="koku-content">Koku Neden Önemli Bir İpucudur?</h2>
-
-Çünkü koku gerçek bir klinik bilgidir. <InlineEvidence grade="B" /> Birçok kadın bu konudan bahsetmeye çekinir ancak bu detay bizim için teşhisteki en değerli ipuçlarından biridir. Balık kokusu, özellikle ince bir akıntı ile birleştiğinde doğrudan bakteriyel vajinozu düşündürür.
-
-Buna karşın, saf bir mantar enfeksiyonu koku değiştirmeden de çok ciddi rahatsızlık ve yanma hissi yaratabilir. Kısacası; jinekolojide koku utanılacak bir konu değil, doğru tedavi için anahtardır.
-</div>
-
----
-
-<div data-reveal>
-<h2 id="taklit-eden-durumlar">Hangi Durumlar Mantar veya Vajinozu Taklit Eder?</h2>
-
-Her kaşınan durum mantar olmadığı gibi, her akıntı da vajinoz değildir. Bazen asıl sorun enfeksiyon değildir; sert sabunlar, parfümlü günlük pedler, sentetik çamaşırların yarattığı sürtünme veya menopoza bağlı kuruluk bu şikayetleri yaratabilir.
-
-Enfeksiyonu taklit eden durumlar:
-- Parfümlü temizlik ürünleri veya jeller
-- Kayganlaştırıcılar veya spermisitler
-- Çok dar giysiler veya naylon iç çamaşırları
-- Menopoza bağlı hormon eksikliği (vajinal atrofi)
-- Egzama veya liken gibi cilt hastalıkları
-
-Kendi kendine teşhisin en büyük hatası burada başlar: Hasta mantar ilacı alır ama asıl sorunu alerjidir. Tedavi işe yaramayınca durumun "çaresiz" olduğunu sanır. Oysa sadece doğru hedef vurulmamıştır.
-</div>
-
----
-
-<div data-reveal>
-<h2 id="ne-zaman-doktora-gitmeli">Ne Zaman Mutlaka Doktora Gitmeli?</h2>
-
-![Vajinal Akıntı Kaşıntı Karar Ağacı - Doktor Danışma Rehberi](/images/blog/vajinal-enfeksiyon-doktor-danisma-karar-agaci.jpg)
-
-Eğer şikayetleriniz ilk kez oluyorsa, gebelik şüpheniz varsa, karın ağrısı veya ateş eşlik ediyorsa veya evde denediğiniz basit yöntemler işe yaramadıysa beklemeden bir uzmana görünmelisiniz. Özellikle tekrarlayan durumlarda yanlış tedavi süreci daha da zorlaştırabilir.
-
-<MedicalInfoBox title="Kendi Kendine Tedavi Uygulanmaması Gereken Durumlar" icon="⚠️" color="blue">
-- **İlk kez** yaşanıyorsa
-- **Gebelikte** veya gebelik şüphesinde
-- Şikayetler **sık sık tekrarlıyorsa**
-- **Diyabet** (Şeker hastalığı) varsa
-- **Karın ağrısı** veya ateş varsa
-- Akıntı **yeşilimsi** veya kanlıysa
-</MedicalInfoBox>
-</div>
-
----
-
-<div data-reveal>
-## Tekrarları Önlemek İçin 5 Tavsiye
-
-1. **Sadece dış bölgeyi yıkayın:** Vajinanın içini asla sabun veya şampuanla yıkamayın. İç yıkama (vajinal duş) ekosistemi tamamen mahveder.
-2. **Nefes alan kumaşlar:** Pamuklu iç çamaşırlarını tercih edin ve çok dar pantolonlardan kaçının.
-3. **Islak kalmayın:** Deniz veya havuz sonrası ıslak mayoyla beklemek mantara davetiye çıkarır.
-4. **Parfümden kaçının:** İntim parfümleri ve kokulu pedler alerjik reaksiyon riskini artırır.
-5. **Dengeli Beslenme:** Şekerli gıdaların aşırı tüketimi bazı bünyelerde mantar riskini artırabilir; probiyotik destekleri ise ekosistemi güçlendirebilir.
-
-**Özetle:** Hızlı tedavi iyidir ama **doğru tedavi** hayati önem taşır.
-
----
-
-<h2 id="faq">Sıkça Sorulan Sorular (SSS)</h2>
-
-<Accordion title="Balık kokusu kesinlikle vajinoz mu demektir?">
-  Büyük olasılıkla evet, ancak bazen paraziter enfeksiyonlar da benzer koku yapabilir. Mutlaka muayene şarttır.
+<Accordion title="Balık kokusu kesinlikle bakteriyel vajinoz mu demektir?">
+Balık kokusu bakteriyel vajinozu düşündürür; ancak trikomonas gibi başka enfeksiyonlar da benzer şikayet yapabilir. Tanı için muayene ve gerekirse test gerekir.
 </Accordion>
 
-<Accordion title="Mantar varken cinsel ilişki olur mu?">
-  Zorunlu bir yasak olmasa da, tahriş ve ağrı nedeniyle genellikle konforlu değildir ve iyileşme sürecini uzatabilir.
+<Accordion title="Mantar enfeksiyonunda koku olur mu?">
+Saf mantar enfeksiyonunda belirgin kötü koku beklenmez. Koku baskınsa bakteriyel vajinoz veya başka nedenler araştırılmalıdır.
 </Accordion>
 
-<Accordion title="Antibiyotik sonrası neden mantar oluruz?">
-  Antibiyotikler sadece kötü bakterileri değil, bizi koruyan iyi bakterileri de öldürdüğü için meydan fırsatçı mantarlara kalır.
+<Accordion title="Antibiyotik sonrası neden mantar olur?">
+Antibiyotikler vajinal floradaki koruyucu bakterileri etkileyebilir. Bu denge bozulunca Candida türleri çoğalabilir ve mantar belirtileri ortaya çıkabilir.
 </Accordion>
-</div>
 
----
+<Accordion title="Tekrarlayan akıntı ve kaşıntıda ne yapılmalı?">
+Tekrarlayan şikayetlerde mantar dışı nedenler, bakteriyel vajinoz, irritan ürünler, diyabet, cinsel yolla bulaşan enfeksiyonlar ve vajinal mikrobiyom dengesi değerlendirilmelidir.
+</Accordion>
 
-<div data-reveal>
-## Yasal Uyarı
+## Tıbbi Uyarı
 
-**Son Tıbbi Gözden Geçirme: 14 Mart 2026**
-Bu makale **tupbebek.com yayın kurulu** tarafından genel bilgilendirme amacıyla hazırlanmıştır. Her hastanın durumu benzersizdir. Bu bilgiler tıbbi bir muayene, teşhis veya profesyonel görüş yerine geçmez. Şikayetleriniz için mutlaka doktorunuza danışınız.
-© tupbebek.com - Tüm hakları saklıdır.
-</div>
+Bu içerik genel bilgilendirme amaçlıdır; muayene, tanı ve tedavi yerine geçmez. Vajinal enfeksiyon şikayetlerinde tedavi kişisel bulgulara göre planlanmalıdır.
 
-</div>
+export const vaginitisFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Bakteriyel vajinozis ve mantar farkı nedir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vajinal mantarda kaşıntı, yanma ve beyaz-parçalı akıntı daha sık görülür. Bakteriyel vajinozda ise ince gri-beyaz akıntı ve balık kokusu daha belirgindir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Vajinada akıntı kaşıntı koku neden olur?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Mantar, bakteriyel vajinoz, trikomonas, tahriş, alerji veya cinsel yolla bulaşan enfeksiyonlar akıntı, kaşıntı ve kokuya neden olabilir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Vajinal akıntıda ne zaman doktora gidilmeli?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "İlk kez oluyorsa, gebelik şüphesi varsa, kasık ağrısı veya ateş eşlik ediyorsa, akıntı yeşil veya kanlıysa ya da şikayetler tekrarlıyorsa muayene gerekir."
+      }
+    }
+  ]
+};
 
-<JSONLD schema={frontmatter.schema} />
-<RevealScript />
-
+<script type="application/ld+json" set:html={JSON.stringify(vaginitisFaqSchema)} />
