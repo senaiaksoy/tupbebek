@@ -90,7 +90,7 @@
 # --------------------------------------------
 
 # Bozuk / kesilmiş URL'ler
-"/blog/opk-ve ivf/"                             /makaleler/opk-ve-ivf                           301
+/blog/opk-ve%20ivf/                             /makaleler/opk-ve-ivf/                          301
 
 # --------------------------------------------
 # 6. /blog/sayfa/N/ pagination
