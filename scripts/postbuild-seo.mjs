@@ -153,6 +153,38 @@ function isPagePath(pathname) {
   return !/\\.[a-z0-9]+$/iu.test(pathname);
 }
 
+function shouldTryStaticAsset(request) {
+  if (request.method !== 'GET' && request.method !== 'HEAD') return false;
+
+  const url = new URL(request.url);
+  if (!isPagePath(url.pathname)) return false;
+  if (url.pathname.startsWith('/_image')) return false;
+
+  return true;
+}
+
+async function fetchStaticAsset(request, env) {
+  const url = new URL(request.url);
+  const candidates = [url.pathname];
+
+  if (url.pathname.endsWith('/')) {
+    candidates.push(url.pathname + 'index.html');
+  } else {
+    candidates.push(url.pathname + '/index.html');
+  }
+
+  for (const pathname of candidates) {
+    const assetUrl = new URL(request.url);
+    assetUrl.pathname = pathname;
+
+    const assetRequest = new Request(assetUrl, request);
+    const response = await env.ASSETS.fetch(assetRequest);
+    if (response.status !== 404) return response;
+  }
+
+  return null;
+}
+
 function canonicalRedirectFor(requestUrl) {
   const url = new URL(requestUrl);
   let changed = false;
@@ -189,9 +221,15 @@ function canonicalRedirectFor(requestUrl) {
 const __astrojsSsrVirtualEntryBase = _exports.default;
 const __astrojsSsrVirtualEntry = {
     ...__astrojsSsrVirtualEntryBase,
-    fetch(request, env, context) {
+    async fetch(request, env, context) {
         const canonicalRedirect = canonicalRedirectFor(request.url);
         if (canonicalRedirect) return canonicalRedirect;
+
+        if (shouldTryStaticAsset(request) && env.ASSETS) {
+            const staticAsset = await fetchStaticAsset(request, env);
+            if (staticAsset) return staticAsset;
+        }
+
         return __astrojsSsrVirtualEntryBase.fetch(request, env, context);
     },
 };`;

@@ -126,6 +126,7 @@ export const routeAliases = {
   '/yasiniz-ve-kisirlik': '/yas-ve-fertilite',
   '/yumurtaliklarin-asiri-uyarilmasi': '/makaleler/ivf-protokolleri',
   '/yumurtlama-takibi': '/makaleler/yumurtlama-takibi',
+  '/yazar': '/yayin-kurulu',
   '/blog/akinti-kasinti-koku-mantar-mi-bakteriyel-vajinoz-mu': '/makaleler/akinti-kasinti-koku',
   '/blog/tup-bebek-bagisiklik-tedavileri-ve-riskler': '/makaleler/bagisiklik-tedavileri',
   '/blog/ivf-oncesi-histeroskopi-rif-hastalari': '/makaleler/ivf-oncesi-histeroskopi',
