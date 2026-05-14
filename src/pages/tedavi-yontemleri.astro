@@ -19,7 +19,7 @@ import Footer from '../components/Footer.astro';
                     </nav>
                     <h1 class="text-5xl lg:text-7xl font-headline text-primary-600 mb-8 tracking-tight leading-tight">Yardımcı Üreme Teknikleri</h1>
                     <p class="text-xl text-gray-600 leading-relaxed max-w-2xl mb-10">
-                        Modern tıbbın sunduğu en ileri reprodüktif teknolojiler, bilimsel protokoller çerçevesinde ve etik standartlara bağlı kalarak uygulanmaktadır. Bilimsel veriye dayalı tedavi metodolojimiz aşağıda detaylandırılmıştır.
+                        Yardımcı üreme teknikleri; tanı, yaş, yumurtalık rezervi, semen analizi, genetik risk ve önceki tedavi öyküsüne göre seçilir. Bu rehber, IVF, ICSI, IUI, PGT, yumurta dondurma ve add-on uygulamaları kanıt düzeyiyle birlikte karşılaştırır.
                     </p>
                     <div class="flex items-center gap-4 py-4 border-l-4 border-tertiary pl-6 bg-gray-50/50 rounded-r-xl inline-flex">
                         <div class="flex flex-col">
@@ -34,11 +34,59 @@ import Footer from '../components/Footer.astro';
                     </div>
                     <div class="absolute -bottom-6 -left-6 bg-gray-50 p-6 rounded-xl shadow-lg max-w-[240px]">
                         <span class="material-symbols-outlined text-mint-600 mb-2 block">verified</span>
-                        <p class="text-xs font-label text-gray-600 italic leading-snug">"Tüm veriler güncel klinik araştırmalar ve ESHRE kılavuzları ile uyumludur."</p>
+                        <p class="text-xs font-label text-gray-600 italic leading-snug">"Bu sayfa klinik araştırmalar ve kılavuzlar ışığında genel bilgilendirme için hazırlanmıştır."</p>
                     </div>
                 </div>
             </div>
         </header>
+
+        <!-- Treatment Decision Hub -->
+        <section class="py-20 px-8 max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-[0.9fr_1.1fr] gap-10 items-start">
+                <div>
+                    <span class="text-primary-600 font-bold tracking-[0.18em] uppercase text-xs mb-4 block">Tedavi Haritası</span>
+                    <h2 class="text-4xl font-headline text-gray-900 mb-6">Hangi tedavi ne zaman gündeme gelir?</h2>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        Tedavi seçimi tek başına yöntem adına göre yapılmaz. Hafif erkek faktörü, yumurtlama düzensizliği, tüp tıkanıklığı, düşük rezerv, ileri yaş veya genetik hastalık riski farklı yollar açabilir.
+                    </p>
+                    <p class="text-sm text-gray-600 leading-relaxed">
+                        Ana süreç için <a href="/ivf-rehberi" class="text-primary-600 hover:underline">IVF rehberi</a>, tanı basamağı için <a href="/tani-sureci" class="text-primary-600 hover:underline">tanı süreci</a>, transfer kararları için <a href="/transfer-sureci" class="text-primary-600 hover:underline">transfer süreci</a> sayfalarıyla birlikte okunmalıdır.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <a href="/makaleler/iui-nedir" class="rounded-2xl border border-gray-100 bg-gray-50 p-5 hover:border-primary-200 hover:bg-primary-50/40 transition-colors">
+                        <span class="material-symbols-outlined text-primary-600 mb-3">medication</span>
+                        <h3 class="font-bold text-gray-900 mb-2">IUI / aşılama</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">Tüpler açıksa, yumurtlama düzenlenebiliyorsa ve sperm faktörü ağır değilse seçilmiş olgularda konuşulur.</p>
+                    </a>
+                    <a href="/makaleler/tup-bebek-nedir" class="rounded-2xl border border-gray-100 bg-gray-50 p-5 hover:border-primary-200 hover:bg-primary-50/40 transition-colors">
+                        <span class="material-symbols-outlined text-primary-600 mb-3">science</span>
+                        <h3 class="font-bold text-gray-900 mb-2">IVF</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">Tüp faktörü, belirli kadın/erkek faktörleri, açıklanamayan infertilite veya başarısız önceki tedavilerde gündeme gelebilir.</p>
+                    </a>
+                    <a href="/makaleler/mikroenjeksiyon-icsi-nedir" class="rounded-2xl border border-gray-100 bg-gray-50 p-5 hover:border-primary-200 hover:bg-primary-50/40 transition-colors">
+                        <span class="material-symbols-outlined text-primary-600 mb-3">biotech</span>
+                        <h3 class="font-bold text-gray-900 mb-2">ICSI / mikroenjeksiyon</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">Ağır sperm faktörü, azospermi sonrası sperm bulunması veya döllenme sorunu öyküsünde laboratuvar kararı olarak öne çıkar.</p>
+                    </a>
+                    <a href="/genetik-testler" class="rounded-2xl border border-gray-100 bg-gray-50 p-5 hover:border-primary-200 hover:bg-primary-50/40 transition-colors">
+                        <span class="material-symbols-outlined text-primary-600 mb-3">genetics</span>
+                        <h3 class="font-bold text-gray-900 mb-2">PGT</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">Tek gen hastalığı, yapısal kromozom riski veya seçilmiş embriyo değerlendirme durumlarında ayrıca ele alınır.</p>
+                    </a>
+                    <a href="/fertilite-koruma" class="rounded-2xl border border-gray-100 bg-gray-50 p-5 hover:border-primary-200 hover:bg-primary-50/40 transition-colors">
+                        <span class="material-symbols-outlined text-primary-600 mb-3">shield_with_heart</span>
+                        <h3 class="font-bold text-gray-900 mb-2">Fertilite koruma</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">Kanser tedavisi, düşük rezerv riski, endometriozis veya kişisel zamanlama planı varsa yumurta/sperm dondurma konuşulabilir.</p>
+                    </a>
+                    <a href="/makaleler/bagisiklik-tedavileri" class="rounded-2xl border border-gray-100 bg-gray-50 p-5 hover:border-primary-200 hover:bg-primary-50/40 transition-colors">
+                        <span class="material-symbols-outlined text-primary-600 mb-3">rule</span>
+                        <h3 class="font-bold text-gray-900 mb-2">Add-on uygulamalar</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">ERA, EmbryoGlue, scratching, time-lapse veya immün yaklaşımlar standart tedavinin yerine geçmez; kanıt düzeyi ayrı okunmalıdır.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
 
         <!-- Treatments Grid -->
         <section class="py-24 px-8 max-w-7xl mx-auto">
@@ -106,6 +154,32 @@ import Footer from '../components/Footer.astro';
                         Bilimsel İnceleme
                         <span class="material-symbols-outlined text-sm">arrow_forward</span>
                     </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 px-8 max-w-7xl mx-auto">
+            <div class="bg-white border border-gray-200 rounded-2xl p-6 md:p-8">
+                <div class="max-w-3xl mb-8">
+                    <span class="text-primary-600 font-bold tracking-[0.18em] uppercase text-xs mb-3 block">Kanıt Düzeyi</span>
+                    <h2 class="text-3xl font-headline text-gray-900 mb-4">Standart tedavi ile add-on uygulamaları ayırmak</h2>
+                    <p class="text-gray-600 leading-relaxed">
+                        Hastalar için en karıştırıcı alan, yerleşik tedavi basamaklarıyla ek uygulamaların aynı cümlede sunulmasıdır. Aşağıdaki ayrım, beklentiyi daha gerçekçi kurmak için hazırlanmıştır.
+                    </p>
+                </div>
+                <div class="divide-y divide-gray-100 overflow-hidden rounded-xl border border-gray-100">
+                    <div class="grid grid-cols-1 md:grid-cols-[0.8fr_1.2fr] gap-4 p-5">
+                        <h3 class="font-bold text-gray-900">Yerleşik ana yöntemler</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">IVF, ICSI, IUI, embriyo dondurma ve fertilite koruma; uygun endikasyonda klinik pratiğin ana basamaklarıdır.</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-[0.8fr_1.2fr] gap-4 p-5">
+                        <h3 class="font-bold text-gray-900">Seçilmiş durumda düşünülenler</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">PGT-M, cerrahi sperm arama, histeroskopi veya taze/dondurulmuş transfer seçimi kişisel tanıya göre anlam kazanır.</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-[0.8fr_1.2fr] gap-4 p-5">
+                        <h3 class="font-bold text-gray-900">Kanıtı sınırlı add-onlar</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">ERA, EmbryoGlue, endometrial scratching, bazı bağışıklık tedavileri ve over PRP rutin çözüm gibi sunulmamalı; hasta öyküsü ve kanıt gücüyle tartışılmalıdır.</p>
+                    </div>
                 </div>
             </div>
         </section>

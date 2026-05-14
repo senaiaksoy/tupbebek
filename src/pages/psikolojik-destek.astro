@@ -54,7 +54,51 @@ import Footer from '../components/Footer.astro';
                 <div class="bg-gray-50 p-6 rounded-xl shadow-sm border-t-2 border-primary-200">
                     <span class="material-symbols-outlined text-primary-600 mb-3">psychology</span>
                     <h3 class="font-bold text-sm mb-2">CBT</h3>
-                    <p class="text-xs text-gray-600 mb-0">Bilişsel Davranışçı Terapi etkili</p>
+                    <p class="text-xs text-gray-600 mb-0">Bilişsel davranışçı terapi destek seçeneklerinden biridir</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="destek-haritasi" class="max-w-5xl mx-auto px-4 md:px-6 lg:px-8 mb-20">
+            <div class="bg-white border border-gray-200 rounded-2xl p-6 md:p-8">
+                <div class="max-w-3xl mb-8">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-primary-600">Destek Haritası</span>
+                    <h2 class="font-headline text-3xl text-gray-900 mt-2 mb-4">Hangi duygusal yükte hangi rehber okunmalı?</h2>
+                    <p class="text-gray-600 leading-relaxed">
+                        Tedavi sürecinde kaygının arttığı anlar genellikle belirli dönemeçlerde yoğunlaşır: transfer sonrası bekleme, beta-hCG sonucu, kimyasal gebelik, başarısız deneme veya yeniden başlama kararı. Bu bölüm, doğru destek içeriğine hızlı geçiş sağlar.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <a href="/transfer-sureci" class="rounded-xl border border-gray-100 bg-gray-50 p-5 hover:border-primary-200 hover:bg-primary-50/40 transition-colors">
+                        <span class="material-symbols-outlined text-primary-600 mb-3">hourglass_top</span>
+                        <h3 class="font-bold text-gray-900 text-sm mb-2">Transfer sonrası bekleme</h3>
+                        <p class="text-xs text-gray-600 leading-relaxed">Belirti takibi, test zamanı ve belirsizlikle baş etme için transfer rehberine geçin.</p>
+                    </a>
+                    <a href="/makaleler/beta-hcg-testi" class="rounded-xl border border-gray-100 bg-gray-50 p-5 hover:border-primary-200 hover:bg-primary-50/40 transition-colors">
+                        <span class="material-symbols-outlined text-primary-600 mb-3">monitor_heart</span>
+                        <h3 class="font-bold text-gray-900 text-sm mb-2">Beta-hCG sonucu beklemek</h3>
+                        <p class="text-xs text-gray-600 leading-relaxed">Düşük, sınırda veya yükselen değerleri acele yorumlamadan takip planını anlamak kaygıyı azaltabilir.</p>
+                    </a>
+                    <a href="/makaleler/kimyasal-gebelik" class="rounded-xl border border-gray-100 bg-gray-50 p-5 hover:border-primary-200 hover:bg-primary-50/40 transition-colors">
+                        <span class="material-symbols-outlined text-primary-600 mb-3">science</span>
+                        <h3 class="font-bold text-gray-900 text-sm mb-2">Kimyasal gebelik sonrası</h3>
+                        <p class="text-xs text-gray-600 leading-relaxed">Erken kayıp, suçluluk hissi ve sonraki deneme kararını tıbbi ve duygusal açıdan birlikte ele alın.</p>
+                    </a>
+                    <a href="/basarisiz-denemeler" class="rounded-xl border border-gray-100 bg-gray-50 p-5 hover:border-primary-200 hover:bg-primary-50/40 transition-colors">
+                        <span class="material-symbols-outlined text-primary-600 mb-3">restart_alt</span>
+                        <h3 class="font-bold text-gray-900 text-sm mb-2">Negatif test veya başarısız deneme</h3>
+                        <p class="text-xs text-gray-600 leading-relaxed">Yas, mola verme, yeniden değerlendirme ve sonraki adımı planlama ayrı ayrı düşünülmelidir.</p>
+                    </a>
+                    <a href="/beslenme-yasam" class="rounded-xl border border-gray-100 bg-gray-50 p-5 hover:border-primary-200 hover:bg-primary-50/40 transition-colors">
+                        <span class="material-symbols-outlined text-primary-600 mb-3">self_improvement</span>
+                        <h3 class="font-bold text-gray-900 text-sm mb-2">Uyku, stres ve günlük rutin</h3>
+                        <p class="text-xs text-gray-600 leading-relaxed">Kontrol edilebilir küçük rutinler, tedavi sonucunu garanti etmez ama dayanıklılığı destekleyebilir.</p>
+                    </a>
+                    <a href="/makaleler/duygusal-dayaniklik-rehberi" class="rounded-xl border border-gray-100 bg-gray-50 p-5 hover:border-primary-200 hover:bg-primary-50/40 transition-colors">
+                        <span class="material-symbols-outlined text-primary-600 mb-3">psychology</span>
+                        <h3 class="font-bold text-gray-900 text-sm mb-2">Profesyonel destek alma zamanı</h3>
+                        <p class="text-xs text-gray-600 leading-relaxed">Kaygı, uyku bozulması, işlev kaybı veya ilişki zorlanması belirginleşirse destek almak geciktirilmemelidir.</p>
+                    </a>
                 </div>
             </div>
         </section>
@@ -63,6 +107,7 @@ import Footer from '../components/Footer.astro';
         <nav id="quick-nav" class="sticky top-20 z-40 bg-white/90 backdrop-blur-sm border-b border-gray-100 shadow-sm mb-16">
             <div class="max-w-5xl mx-auto px-4 md:px-6 lg:px-8 overflow-x-auto whitespace-nowrap">
                 <div class="flex items-center gap-1 py-3">
+                    <a href="#destek-haritasi" class="quick-nav-link px-4 py-2 text-sm font-semibold text-gray-500 hover:text-primary-600 rounded-lg transition-colors shrink-0">Destek Haritası</a>
                     <a href="#duygusal" class="quick-nav-link px-4 py-2 text-sm font-semibold text-gray-500 hover:text-primary-600 rounded-lg transition-colors shrink-0">Duygusal Etki</a>
                     <a href="#cift" class="quick-nav-link px-4 py-2 text-sm font-semibold text-gray-500 hover:text-primary-600 rounded-lg transition-colors shrink-0">Çift İlişkisi</a>
                     <a href="#basetme" class="quick-nav-link px-4 py-2 text-sm font-semibold text-gray-500 hover:text-primary-600 rounded-lg transition-colors shrink-0">Baş Etme</a>
