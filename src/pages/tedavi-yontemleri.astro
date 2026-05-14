@@ -2,6 +2,46 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import { buildHubItemListSchema } from '../utils/hubStructuredData';
+
+const treatmentDecisionLinks = [
+    {
+        href: '/makaleler/iui-nedir',
+        icon: 'medication',
+        title: 'IUI / aşılama',
+        description: 'Tüpler açıksa, yumurtlama düzenlenebiliyorsa ve sperm faktörü ağır değilse seçilmiş olgularda konuşulur.'
+    },
+    {
+        href: '/makaleler/tup-bebek-nedir',
+        icon: 'science',
+        title: 'IVF',
+        description: 'Tüp faktörü, belirli kadın/erkek faktörleri, açıklanamayan infertilite veya başarısız önceki tedavilerde gündeme gelebilir.'
+    },
+    {
+        href: '/makaleler/mikroenjeksiyon-icsi-nedir',
+        icon: 'biotech',
+        title: 'ICSI / mikroenjeksiyon',
+        description: 'Ağır sperm faktörü, azospermi sonrası sperm bulunması veya döllenme sorunu öyküsünde laboratuvar kararı olarak öne çıkar.'
+    },
+    {
+        href: '/genetik-testler',
+        icon: 'genetics',
+        title: 'PGT',
+        description: 'Tek gen hastalığı, yapısal kromozom riski veya seçilmiş embriyo değerlendirme durumlarında ayrıca ele alınır.'
+    },
+    {
+        href: '/fertilite-koruma',
+        icon: 'shield_with_heart',
+        title: 'Fertilite koruma',
+        description: 'Kanser tedavisi, düşük rezerv riski, endometriozis veya kişisel zamanlama planı varsa yumurta/sperm dondurma konuşulabilir.'
+    },
+    {
+        href: '/makaleler/bagisiklik-tedavileri',
+        icon: 'rule',
+        title: 'Add-on uygulamalar',
+        description: 'ERA, EmbryoGlue, scratching, time-lapse veya immün yaklaşımlar standart tedavinin yerine geçmez; kanıt düzeyi ayrı okunmalıdır.'
+    }
+];
 
 const faqs = [
     {
@@ -34,10 +74,19 @@ const faqSchema = {
         }
     }))
 };
+
+const itemListSchema = buildHubItemListSchema({
+    site: Astro.site,
+    pagePath: '/tedavi-yontemleri/',
+    name: 'Tedavi yöntemleri konu haritası',
+    description: 'IUI, IVF, ICSI, PGT, fertilite koruma ve add-on uygulamaları kanıt düzeyi ve kullanım bağlamına göre ayıran tedavi yöntemleri okuma yolu.',
+    items: treatmentDecisionLinks
+});
 ---
 
 <BaseLayout title="Yardımcı Üreme Teknikleri ve Tedavi Yöntemleri | tupbebek.com" description="IVF, ICSI, IUI, aşılama, yumurta dondurma, PGT ve diğer yardımcı üreme tekniklerinin karşılaştırmalı rehberi.">
     <script type="application/ld+json" is:inline set:html={JSON.stringify(faqSchema)} />
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(itemListSchema)} />
     <Header />
     
     <main id="main-content" tabindex="-1" class="pt-20">
@@ -74,7 +123,7 @@ const faqSchema = {
         </header>
 
         <!-- Treatment Decision Hub -->
-        <section class="py-20 px-8 max-w-7xl mx-auto">
+        <section id="konu-haritasi" class="py-20 px-8 max-w-7xl mx-auto">
             <div class="grid grid-cols-1 lg:grid-cols-[0.9fr_1.1fr] gap-10 items-start">
                 <div>
                     <span class="text-primary-600 font-bold tracking-[0.18em] uppercase text-xs mb-4 block">Tedavi Haritası</span>
@@ -87,36 +136,13 @@ const faqSchema = {
                     </p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <a href="/makaleler/iui-nedir" class="rounded-2xl border border-gray-100 bg-gray-50 p-5 hover:border-primary-200 hover:bg-primary-50/40 transition-colors">
-                        <span class="material-symbols-outlined text-primary-600 mb-3">medication</span>
-                        <h3 class="font-bold text-gray-900 mb-2">IUI / aşılama</h3>
-                        <p class="text-sm text-gray-600 leading-relaxed">Tüpler açıksa, yumurtlama düzenlenebiliyorsa ve sperm faktörü ağır değilse seçilmiş olgularda konuşulur.</p>
-                    </a>
-                    <a href="/makaleler/tup-bebek-nedir" class="rounded-2xl border border-gray-100 bg-gray-50 p-5 hover:border-primary-200 hover:bg-primary-50/40 transition-colors">
-                        <span class="material-symbols-outlined text-primary-600 mb-3">science</span>
-                        <h3 class="font-bold text-gray-900 mb-2">IVF</h3>
-                        <p class="text-sm text-gray-600 leading-relaxed">Tüp faktörü, belirli kadın/erkek faktörleri, açıklanamayan infertilite veya başarısız önceki tedavilerde gündeme gelebilir.</p>
-                    </a>
-                    <a href="/makaleler/mikroenjeksiyon-icsi-nedir" class="rounded-2xl border border-gray-100 bg-gray-50 p-5 hover:border-primary-200 hover:bg-primary-50/40 transition-colors">
-                        <span class="material-symbols-outlined text-primary-600 mb-3">biotech</span>
-                        <h3 class="font-bold text-gray-900 mb-2">ICSI / mikroenjeksiyon</h3>
-                        <p class="text-sm text-gray-600 leading-relaxed">Ağır sperm faktörü, azospermi sonrası sperm bulunması veya döllenme sorunu öyküsünde laboratuvar kararı olarak öne çıkar.</p>
-                    </a>
-                    <a href="/genetik-testler" class="rounded-2xl border border-gray-100 bg-gray-50 p-5 hover:border-primary-200 hover:bg-primary-50/40 transition-colors">
-                        <span class="material-symbols-outlined text-primary-600 mb-3">genetics</span>
-                        <h3 class="font-bold text-gray-900 mb-2">PGT</h3>
-                        <p class="text-sm text-gray-600 leading-relaxed">Tek gen hastalığı, yapısal kromozom riski veya seçilmiş embriyo değerlendirme durumlarında ayrıca ele alınır.</p>
-                    </a>
-                    <a href="/fertilite-koruma" class="rounded-2xl border border-gray-100 bg-gray-50 p-5 hover:border-primary-200 hover:bg-primary-50/40 transition-colors">
-                        <span class="material-symbols-outlined text-primary-600 mb-3">shield_with_heart</span>
-                        <h3 class="font-bold text-gray-900 mb-2">Fertilite koruma</h3>
-                        <p class="text-sm text-gray-600 leading-relaxed">Kanser tedavisi, düşük rezerv riski, endometriozis veya kişisel zamanlama planı varsa yumurta/sperm dondurma konuşulabilir.</p>
-                    </a>
-                    <a href="/makaleler/bagisiklik-tedavileri" class="rounded-2xl border border-gray-100 bg-gray-50 p-5 hover:border-primary-200 hover:bg-primary-50/40 transition-colors">
-                        <span class="material-symbols-outlined text-primary-600 mb-3">rule</span>
-                        <h3 class="font-bold text-gray-900 mb-2">Add-on uygulamalar</h3>
-                        <p class="text-sm text-gray-600 leading-relaxed">ERA, EmbryoGlue, scratching, time-lapse veya immün yaklaşımlar standart tedavinin yerine geçmez; kanıt düzeyi ayrı okunmalıdır.</p>
-                    </a>
+                    {treatmentDecisionLinks.map((item) => (
+                        <a href={item.href} class="rounded-2xl border border-gray-100 bg-gray-50 p-5 hover:border-primary-200 hover:bg-primary-50/40 transition-colors">
+                            <span class="material-symbols-outlined text-primary-600 mb-3">{item.icon}</span>
+                            <h3 class="font-bold text-gray-900 mb-2">{item.title}</h3>
+                            <p class="text-sm text-gray-600 leading-relaxed">{item.description}</p>
+                        </a>
+                    ))}
                 </div>
             </div>
         </section>

@@ -5,6 +5,7 @@ import Footer from '../components/Footer.astro';
 import StatsStrip from '../components/StatsStrip.astro';
 import RelatedContent from '../components/RelatedContent.astro';
 import MedicalDisclaimer from '../components/MedicalDisclaimer.astro';
+import { buildHubItemListSchema } from '../utils/hubStructuredData';
 
 const pageTitle = 'Erkek İnfertilitesi: Semen Analizi, Varikosel, Azospermi ve ICSI | tupbebek.com';
 const pageDescription = 'Erkek infertilitesi nedenleri, semen analizi, varikosel, azospermi, mikro-TESE, ICSI ve yaşam tarzı etkileri hakkında bilimsel rehber.';
@@ -92,11 +93,20 @@ const faqSchema = {
     }
   }))
 };
+
+const itemListSchema = buildHubItemListSchema({
+  site: Astro.site,
+  pagePath: '/erkek-infertilitesi/',
+  name: 'Erkek infertilitesi konu haritası',
+  description: 'Semen analizi, varikosel, azospermi, mikro-TESE, ICSI, yaşam tarzı, alkol, ilaç ve takviye başlıklarını bağlayan erkek infertilitesi okuma yolu.',
+  items: clusterLinks
+});
 ---
 
 <BaseLayout title={pageTitle} description={pageDescription}>
     <Header />
     <script type="application/ld+json" is:inline set:html={JSON.stringify(faqSchema)} />
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(itemListSchema)} />
 
     <main id="main-content" tabindex="-1" class="pb-24">
         <!-- Hero Section -->

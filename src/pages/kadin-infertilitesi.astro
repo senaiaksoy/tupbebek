@@ -5,6 +5,7 @@ import Footer from '../components/Footer.astro';
 import StatsStrip from '../components/StatsStrip.astro';
 import RelatedContent from '../components/RelatedContent.astro';
 import MedicalDisclaimer from '../components/MedicalDisclaimer.astro';
+import { buildHubItemListSchema } from '../utils/hubStructuredData';
 
 const pageTitle = 'Kadın İnfertilitesi: PCOS, Endometriozis, Düşük AMH ve Tüp Faktörü | tupbebek.com';
 const pageDescription = 'Kadın infertilitesi nedenleri: PCOS, endometriozis, düşük AMH, tüp kaynaklı nedenler, miyomlar, hormon paneli ve tanı süreci hakkında bilimsel rehber.';
@@ -104,11 +105,20 @@ const faqSchema = {
     }
   }))
 };
+
+const itemListSchema = buildHubItemListSchema({
+  site: Astro.site,
+  pagePath: '/kadin-infertilitesi/',
+  name: 'Kadın infertilitesi konu haritası',
+  description: 'PCOS, düşük AMH, endometriozis, tüp faktörü, rahim içi problemler, mikrobiyom ve over PRP başlıklarını bağlayan kadın infertilitesi okuma yolu.',
+  items: clusterLinks
+});
 ---
 
 <BaseLayout title={pageTitle} description={pageDescription}>
     <Header />
     <script type="application/ld+json" is:inline set:html={JSON.stringify(faqSchema)} />
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(itemListSchema)} />
 
     <main id="main-content" tabindex="-1" class="pt-24 pb-24">
         <!-- Hero Section -->

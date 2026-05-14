@@ -35,6 +35,7 @@ const labelMap: Record<string, string> = {
   'psikolojik-destek': 'Psikolojik Destek',
   'basari-oranlari': 'Başarı Oranları',
   'rehberler': 'Rehberler',
+  'ivf-rehberi': 'IVF Rehberi',
   'tibbi-sozluk': 'Tıbbi Sözlük',
   'hakkimizda': 'Hakkımızda',
   'editoryal-politika': 'Editöryal Politika',
@@ -45,6 +46,17 @@ const labelMap: Record<string, string> = {
   'transfer-sureci': 'Transfer Süreci',
   'basarisiz-denemeler': 'Başarısız Denemeler',
   'yayin-sureci': 'Yayın Süreci'
+};
+
+const customBreadcrumbs: Record<string, BreadcrumbItem[]> = {
+  '/ivf-rehberi/': [
+    { label: 'Tedavi Yöntemleri', href: '/tedavi-yontemleri/' },
+    { label: 'IVF Rehberi', href: '/ivf-rehberi/' }
+  ],
+  '/transfer-sureci/': [
+    { label: 'IVF Rehberi', href: '/ivf-rehberi/' },
+    { label: 'Transfer Süreci', href: '/transfer-sureci/' }
+  ]
 };
 
 /**
@@ -72,6 +84,11 @@ export function generateLabel(segment: string): string {
 export function generateBreadcrumbs(pathname: string): BreadcrumbItem[] {
   if (pathname === '/') {
     return [];
+  }
+
+  const normalizedPath = normalizeBreadcrumbPath(pathname);
+  if (customBreadcrumbs[normalizedPath]) {
+    return customBreadcrumbs[normalizedPath];
   }
 
   const segments = pathname

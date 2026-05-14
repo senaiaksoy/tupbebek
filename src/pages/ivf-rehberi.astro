@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import { buildHubItemListSchema } from '../utils/hubStructuredData';
 
 const faqs = [
     {
@@ -22,6 +23,45 @@ const faqs = [
     }
 ];
 
+const ivfDecisionLinks = [
+    {
+        href: '/tani-sureci',
+        label: '1. Tanı ve uygunluk',
+        title: 'IVF ne zaman gündeme gelir?',
+        description: 'Kadın ve erkek değerlendirmesi, infertilite süresi, yaş, AMH, semen analizi ve rahim/tüp bulguları birlikte okunur.'
+    },
+    {
+        href: '/makaleler/ivf-protokolleri',
+        label: '2. Uyarım planı',
+        title: 'Protokol, ilaç ve yumurta sayısı',
+        description: 'Kısa/uzun protokol, beklenen yanıt ve kaç yumurta gerekir sorusu kişisel rezervle ilişkilidir.'
+    },
+    {
+        href: '/makaleler/laboratuvar-raporu-yorumlama',
+        label: '3. Laboratuvar',
+        title: 'Döllenme, ICSI ve embriyo gelişimi',
+        description: 'IVF/ICSI ayrımı, kültür süreci, embriyo kalitesi ve laboratuvar raporundaki terimler aynı karar zincirinin parçalarıdır.'
+    },
+    {
+        href: '/transfer-sureci',
+        label: '4. Transfer ve takip',
+        title: 'Taze/FET, beta-hCG ve bekleme dönemi',
+        description: 'Transfer günü, dondurulmuş embriyo transferi, progesteron desteği ve beta-hCG sonucu ayrı başlıklarda ele alınır.'
+    },
+    {
+        href: '/basari-oranlari',
+        label: '5. Başarı beklentisi',
+        title: 'Yaş, rezerv ve embriyo kalitesi',
+        description: 'Başarı oranı tek bir yüzdeyle değil; yaş grubu, over rezervi, sperm faktörü ve önceki denemelerle birlikte değerlendirilir.'
+    },
+    {
+        href: '/makaleler/era-testi-iluzyon',
+        label: '6. Add-on kararları',
+        title: 'ERA, EmbryoGlue ve bağışıklık tedavileri',
+        description: 'Ek uygulamalar rutin çözüm gibi değil, kanıt düzeyi ve kişisel öykü üzerinden tartışılması gereken seçeneklerdir.'
+    }
+];
+
 const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -33,12 +73,21 @@ const faqSchema = {
         "acceptedAnswer": { "@type": "Answer", "text": a }
     }))
 };
+
+const itemListSchema = buildHubItemListSchema({
+    site: Astro.site,
+    pagePath: '/ivf-rehberi/',
+    name: 'IVF rehberi konu haritası',
+    description: 'Tüp bebek tanı ve uygunluk, uyarım planı, laboratuvar, transfer, başarı beklentisi ve add-on kararlarını bağlayan ana IVF okuma yolu.',
+    items: ivfDecisionLinks
+});
 ---
 
 <BaseLayout title="IVF (Tüp Bebek) Rehberi | tupbebek.com" description="Tüp bebek tedavisi hakkında adım adım rehber: hazırlık, yumurta toplama, embriyo transferi, bekleme süreci ve başarı oranları.">
     <Header />
 
     <script type="application/ld+json" is:inline set:html={JSON.stringify(faqSchema)} />
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(itemListSchema)} />
 
     <main id="main-content" tabindex="-1" class="pt-20">
         <!-- Hero -->
@@ -66,42 +115,19 @@ const faqSchema = {
         <!-- İçerik -->
         <div class="max-w-4xl mx-auto px-4 md:px-8 py-16 space-y-16">
 
-            <section>
+            <section id="konu-haritasi">
                 <div class="flex items-center gap-3 mb-6">
                     <span class="material-symbols-outlined text-primary text-2xl">account_tree</span>
                     <h2 class="font-headline text-2xl font-bold text-on-surface">IVF Karar ve Okuma Haritası</h2>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <a href="/tani-sureci" class="rounded-2xl border border-outline-variant/15 bg-surface-container-lowest p-6 hover:bg-surface-container-low transition-colors">
-                        <span class="text-xs font-semibold uppercase tracking-wider text-primary">1. Tanı ve uygunluk</span>
-                        <h3 class="font-bold text-on-surface mt-2 mb-2">IVF ne zaman gündeme gelir?</h3>
-                        <p class="text-sm text-on-surface-variant leading-relaxed">Kadın ve erkek değerlendirmesi, infertilite süresi, yaş, AMH, semen analizi ve rahim/tüp bulguları birlikte okunur.</p>
-                    </a>
-                    <a href="/makaleler/ivf-protokolleri" class="rounded-2xl border border-outline-variant/15 bg-surface-container-lowest p-6 hover:bg-surface-container-low transition-colors">
-                        <span class="text-xs font-semibold uppercase tracking-wider text-primary">2. Uyarım planı</span>
-                        <h3 class="font-bold text-on-surface mt-2 mb-2">Protokol, ilaç ve yumurta sayısı</h3>
-                        <p class="text-sm text-on-surface-variant leading-relaxed">Kısa/uzun protokol, beklenen yanıt ve <span class="text-primary">kaç yumurta gerekir?</span> sorusu kişisel rezervle ilişkilidir.</p>
-                    </a>
-                    <a href="/makaleler/laboratuvar-raporu-yorumlama" class="rounded-2xl border border-outline-variant/15 bg-surface-container-lowest p-6 hover:bg-surface-container-low transition-colors">
-                        <span class="text-xs font-semibold uppercase tracking-wider text-primary">3. Laboratuvar</span>
-                        <h3 class="font-bold text-on-surface mt-2 mb-2">Döllenme, ICSI ve embriyo gelişimi</h3>
-                        <p class="text-sm text-on-surface-variant leading-relaxed">IVF/ICSI ayrımı, kültür süreci, embriyo kalitesi ve laboratuvar raporundaki terimler aynı karar zincirinin parçalarıdır.</p>
-                    </a>
-                    <a href="/transfer-sureci" class="rounded-2xl border border-outline-variant/15 bg-surface-container-lowest p-6 hover:bg-surface-container-low transition-colors">
-                        <span class="text-xs font-semibold uppercase tracking-wider text-primary">4. Transfer ve takip</span>
-                        <h3 class="font-bold text-on-surface mt-2 mb-2">Taze/FET, beta-hCG ve bekleme dönemi</h3>
-                        <p class="text-sm text-on-surface-variant leading-relaxed">Transfer günü, dondurulmuş embriyo transferi, progesteron desteği ve beta-hCG sonucu ayrı başlıklarda ele alınır.</p>
-                    </a>
-                    <a href="/basari-oranlari" class="rounded-2xl border border-outline-variant/15 bg-surface-container-lowest p-6 hover:bg-surface-container-low transition-colors">
-                        <span class="text-xs font-semibold uppercase tracking-wider text-primary">5. Başarı beklentisi</span>
-                        <h3 class="font-bold text-on-surface mt-2 mb-2">Yaş, rezerv ve embriyo kalitesi</h3>
-                        <p class="text-sm text-on-surface-variant leading-relaxed">Başarı oranı tek bir yüzdeyle değil; yaş grubu, over rezervi, sperm faktörü ve önceki denemelerle birlikte değerlendirilir.</p>
-                    </a>
-                    <a href="/makaleler/era-testi-iluzyon" class="rounded-2xl border border-outline-variant/15 bg-surface-container-lowest p-6 hover:bg-surface-container-low transition-colors">
-                        <span class="text-xs font-semibold uppercase tracking-wider text-primary">6. Add-on kararları</span>
-                        <h3 class="font-bold text-on-surface mt-2 mb-2">ERA, EmbryoGlue ve bağışıklık tedavileri</h3>
-                        <p class="text-sm text-on-surface-variant leading-relaxed">Ek uygulamalar rutin çözüm gibi değil, kanıt düzeyi ve kişisel öykü üzerinden tartışılması gereken seçeneklerdir.</p>
-                    </a>
+                    {ivfDecisionLinks.map((item) => (
+                        <a href={item.href} class="rounded-2xl border border-outline-variant/15 bg-surface-container-lowest p-6 hover:bg-surface-container-low transition-colors">
+                            <span class="text-xs font-semibold uppercase tracking-wider text-primary">{item.label}</span>
+                            <h3 class="font-bold text-on-surface mt-2 mb-2">{item.title}</h3>
+                            <p class="text-sm text-on-surface-variant leading-relaxed">{item.description}</p>
+                        </a>
+                    ))}
                 </div>
                 <p class="text-xs text-on-surface-variant leading-relaxed mt-4">
                     Bu sayfa, <a href="/kadin-infertilitesi" class="text-primary hover:underline">kadın infertilitesi</a>, <a href="/erkek-infertilitesi" class="text-primary hover:underline">erkek infertilitesi</a>, <a href="/tedavi-yontemleri" class="text-primary hover:underline">tedavi yöntemleri</a> ve <a href="/transfer-sureci" class="text-primary hover:underline">transfer süreci</a> hub sayfalarına bağlanan ana IVF rehberidir.
