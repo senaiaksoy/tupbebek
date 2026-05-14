@@ -73,6 +73,32 @@ function getStaticPageDates() {
 }
 const staticPageDates = getStaticPageDates();
 
+const redirectOnlyRoutePatterns = [
+  // Legacy language/English URLs are not content routes. Let Cloudflare Pages
+  // _redirects handle them before Astro can render a 200 fallback.
+  '/ar',
+  '/ar/*',
+  '/fr',
+  '/fr/*',
+  '/treatment',
+  '/treatment/*',
+  '/ivf-in-turkey',
+  '/ivf-in-turkey/*',
+  '/ivf-explained',
+  '/ivf-explained/*',
+  '/cost-of-ivf',
+  '/cost-of-ivf/*',
+  '/success-rates*',
+  '/before-you-come',
+  '/before-you-come/*',
+  '/about-us',
+  '/about-us/*',
+  '/contact-us',
+  '/contact-us/*',
+  '/aciklanamayan-kisirlik',
+  '/kisirlik-nedenleri/aciklanamayan-kisirlik',
+];
+
 export default defineConfig({
   site: 'https://tupbebek.com',
   output: 'hybrid',
@@ -89,6 +115,7 @@ export default defineConfig({
           { pattern: '/sitemap-0.xml' },
           { pattern: '/robots.txt' },
           { pattern: '/llms.txt' },
+          ...redirectOnlyRoutePatterns.map((pattern) => ({ pattern })),
         ],
       },
     },

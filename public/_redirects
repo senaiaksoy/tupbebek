@@ -118,15 +118,32 @@
 /ar                                             /                                               301
 /fr/*                                           /                                               301
 /fr                                             /                                               301
+/treatment/faq                                  /sss/                                            301
+/treatment/pre-ivf-testing                      /tani-sureci/                                    301
+/treatment/preimplantation-genetic-diagnosis    /pgt-merkezi/                                    301
+/treatment/embryo-freezing                      /makaleler/taze-dondurulmus-transfer/            301
+/treatment/embryo-transfer                      /makaleler/embriyo-transferi-gun-secimi/         301
+/treatment/egg-retrieval                        /tedavi-yontemleri/                              301
+/treatment/causes-and-diagnosis-of-infertility  /tedavi-yontemleri/                              301
+/treatment/do-i-need-treatment                  /tedavi-yontemleri/                              301
+/treatment/reasons-for-cancellation-of-treatment /tedavi-yontemleri/                             301
+/treatment/sperm-retrieval-in-azoospermic-subjects /makaleler/cerrahi-sperm-arama-tese/          301
+/treatment/stimulation-of-the-ovaries           /makaleler/ivf-protokolleri/                     301
 /treatment/*                                    /tedavi-yontemleri/                              301
 /treatment                                      /tedavi-yontemleri/                              301
 /ivf-in-turkey/*                                /                                               301
+/ivf-in-turkey                                  /                                               301
 /ivf-explained/*                                /ivf-rehberi/                                    301
+/ivf-explained                                  /ivf-rehberi/                                    301
 /cost-of-ivf/*                                  /sss/                                            301
+/cost-of-ivf                                    /sss/                                            301
 /success-rates*                                  /basari-oranlari/                                301
 /before-you-come/*                              /tani-sureci/                                    301
+/before-you-come                                /tani-sureci/                                    301
 /about-us/*                                     /hakkimizda/                                     301
+/about-us                                       /hakkimizda/                                     301
 /contact-us/*                                   /iletisim/                                       301
+/contact-us                                     /iletisim/                                       301
 
 # --------------------------------------------
 # 10. /blog/* catch-all fallback (spesifik eşleşme yoksa)

@@ -6,6 +6,28 @@ const rootDir = process.cwd();
 const distDir = path.join(rootDir, 'dist');
 const siteOrigin = 'https://tupbebek.com';
 const allowedNoSlashPaths = new Set(['/']);
+const requiredFunctionExcludes = [
+  '/ar',
+  '/ar/*',
+  '/fr',
+  '/fr/*',
+  '/treatment',
+  '/treatment/*',
+  '/ivf-in-turkey',
+  '/ivf-in-turkey/*',
+  '/ivf-explained',
+  '/ivf-explained/*',
+  '/cost-of-ivf',
+  '/cost-of-ivf/*',
+  '/before-you-come',
+  '/before-you-come/*',
+  '/about-us',
+  '/about-us/*',
+  '/contact-us',
+  '/contact-us/*',
+  '/aciklanamayan-kisirlik',
+  '/kisirlik-nedenleri/aciklanamayan-kisirlik',
+];
 const failures = [];
 
 function walk(dir) {
@@ -130,6 +152,28 @@ function collectLegacyFallbackIssues(filePath) {
   }
 }
 
+function collectRoutesJsonIssues(filePath) {
+  if (!fs.existsSync(filePath)) {
+    failures.push(`Missing Cloudflare routes file: ${path.relative(rootDir, filePath)}`);
+    return;
+  }
+
+  let routes;
+  try {
+    routes = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+  } catch (error) {
+    failures.push(`Could not parse ${path.relative(rootDir, filePath)}: ${error.message}`);
+    return;
+  }
+
+  const excludes = new Set(routes.exclude || []);
+  for (const pattern of requiredFunctionExcludes) {
+    if (!excludes.has(pattern)) {
+      failures.push(`${path.relative(rootDir, filePath)} must exclude single-language legacy route: ${pattern}`);
+    }
+  }
+}
+
 if (!fs.existsSync(distDir)) {
   failures.push('Missing dist directory. Run npm run build first.');
 } else {
@@ -151,6 +195,7 @@ if (!fs.existsSync(distDir)) {
   collectRedirectIssues(path.join(distDir, '_redirects'));
   collectRouteAliasIssues();
   collectLegacyFallbackIssues(path.join(rootDir, 'src', 'pages', '[...legacy].ts'));
+  collectRoutesJsonIssues(path.join(distDir, '_routes.json'));
 }
 
 if (failures.length > 0) {
