@@ -1,53 +1,66 @@
 # GSC Coverage Redirect Analysis
 
-- Source export: `draksoyivf.com-Coverage-Drilldown-2026-04-23`
-- Issue type: `Yönlendirmeli sayfa`
-- Listed URL count: **427** (`Tablo.csv`)
-- Trend (`Grafik.csv`):
-  - Early period baseline: ~241
-  - Peak: **470** (2026-04-11 to 2026-04-13 range)
-  - Latest visible: **427** (2026-04-18 onward)
+- Source: `C:\Users\KC3\Downloads\tupbebek.com-Coverage-Drilldown-2026-05-14`
+- Issue: `Yönlendirmeli sayfa`
+- Listed URLs: **365**
+- Latest affected count (chart): **365**
+- Peak affected count (chart): **381** on `2026-05-02`
 
-## What the list shows
+## Pattern counts
+- blog_prefix: 196 (53.7%)
+- no_trailing_slash: 152 (41.6%)
+- non_www: 7 (1.9%)
+- query: 5 (1.4%)
+- http: 2 (0.5%)
+- ar_prefix: 1 (0.3%)
+- gclid: 0 (0.0%)
+- search_placeholder: 0 (0.0%)
+- fr_prefix: 0 (0.0%)
+- malformed_url: 0 (0.0%)
 
-- Large volume of canonicalization variants:
-  - `http://` vs `https://`
-  - `draksoyivf.com` vs `www.draksoyivf.com`
-  - trailing slash vs no trailing slash
-- Legacy language sections still crawled:
-  - `/fr/*`
-  - `/ar/*`
-- Legacy content paths still discovered:
-  - `/blog/*`
-  - `/treatment/*`
-- Query/noise URLs exist:
-  - `?gclid=...`
-  - `?s={search_term_string}`
-  - malformed/concatenated query URL examples
+## Top hosts
+- tupbebek.com: 358 (98.1%)
+- www.tupbebek.com: 7 (1.9%)
 
-## High-impact examples
+## Top paths
+- /sik-sorulan-sorular: 4 (1.1%)
+- /tup-bebek-tedavim-tuttu-mu: 4 (1.1%)
+- /blog/ofis-histeroskopi-nedir: 3 (0.8%)
+- /: 3 (0.8%)
+- /blog/rahmin-ters-durmasi-kisirliga-neden-olmaz-retrovert-uterus: 2 (0.5%)
+- /tesatese: 2 (0.5%)
+- /blog/tup-bebek-tedavisinde-luteal-faz-kanamalari: 2 (0.5%)
+- /yumurtlama-takibi: 2 (0.5%)
+- /blog/bel-sogukluguna-kadinlar-da-yakalanabilir: 2 (0.5%)
+- /tup-bebek-tedavisinde-catlatma-ignesi: 2 (0.5%)
+- /blog/embriyo-tutunmasi-implantasyon-2-embriyoya-ait-problemler: 2 (0.5%)
+- /tup-bebek-asamalari: 2 (0.5%)
+- /blog/miyomlarin-gebelik-uzerinde-etkileri-nelerdir: 2 (0.5%)
+- /blog/tup-bebekte-basarili-sonuc-icin-kac-yumurta-gerekir: 2 (0.5%)
+- /blog/cikolata-kisti-endometriozis-ameliyati-yumurtalik-veya-rahmin-alinmasini-gerektirmez: 2 (0.5%)
+- /tup-bebek-ve-mikroenjeksiyon: 2 (0.5%)
+- /blog/hamile-kalamiyorsaniz-nedeni-hidrosalpinks-olabilir: 2 (0.5%)
+- /tup-bebek-tedavisinde-nelere-dikkat-etmelisiniz: 2 (0.5%)
+- /tup-bebek-tedavisinde-preimplantasyon-genetik-tani: 2 (0.5%)
+- /embriyo-transferi-sonrasi-neler-yapmaliyim: 2 (0.5%)
 
-- `http://www.draksoyivf.com/` -> should be single-hop canonical to `https://www.draksoyivf.com/`
-- `https://draksoyivf.com/treatment-timeline` -> should resolve to a canonical Turkish path
-- `https://www.draksoyivf.com/fr/blog/...` -> should have deterministic destination (root or mapped article)
-- `https://www.draksoyivf.com/blog/embryo-grading-4aa-3bb-5bc-decoding-ivf-lab-report/` -> should map to a canonical article URL if content exists
+## Canonicalization examples (input -> canonical)
+- https://tupbebek.com/blog/asiri-sut-uretimi-hiperprolaktinemi/ -> https://tupbebek.com/blog/asiri-sut-uretimi-hiperprolaktinemi/
+- https://tupbebek.com/blog/amniyon-sivisinin-azligi-da-coklugu-da-bebek-icin-tehlike-isareti/ -> https://tupbebek.com/blog/amniyon-sivisinin-azligi-da-coklugu-da-bebek-icin-tehlike-isareti/
+- https://tupbebek.com/blog/dogum-sonrasi-vucudumuzda-neler-oluyor/ -> https://tupbebek.com/blog/dogum-sonrasi-vucudumuzda-neler-oluyor/
+- https://tupbebek.com/blog/rahmin-ters-durmasi-kisirliga-neden-olmaz-retrovert-uterus/ -> https://tupbebek.com/blog/rahmin-ters-durmasi-kisirliga-neden-olmaz-retrovert-uterus/
+- https://tupbebek.com/blog/kimyasal-gebelik/ -> https://tupbebek.com/blog/kimyasal-gebelik/
+- https://tupbebek.com/makaleler/kimyasal-gebelik -> https://tupbebek.com/makaleler/kimyasal-gebelik/
+- https://tupbebek.com/blog/prematur-ovarian-yetmezlik-kisirlik-nedeni/ -> https://tupbebek.com/blog/prematur-ovarian-yetmezlik-kisirlik-nedeni/
+- https://tupbebek.com/makaleler/dusuk-amh-hamilelik -> https://tupbebek.com/makaleler/dusuk-amh-hamilelik/
+- https://tupbebek.com/makaleler/azospermi-mikro-tese -> https://tupbebek.com/makaleler/azospermi-mikro-tese/
+- https://tupbebek.com/tesatese/ -> https://tupbebek.com/tesatese/
+- https://tupbebek.com/makaleler/kac-yumurta-gerekir -> https://tupbebek.com/makaleler/kac-yumurta-gerekir/
+- https://tupbebek.com/blog/embriyo-tutunmasi-implantasyon-1-rahime-ait-problemler/ -> https://tupbebek.com/blog/embriyo-tutunmasi-implantasyon-1-rahime-ait-problemler/
 
-## Recommended implementation order
-
-1. Enforce single-hop canonical redirect at edge:
-   - `http` -> `https`
-   - non-`www` -> `www`
-2. Apply deterministic trailing slash policy (same across edge + app).
-3. Strip non-essential marketing params from canonical URLs:
-   - `gclid`, `fbclid`, `utm_*`
-4. Expand legacy path aliases for high-frequency URLs from this export.
-5. Re-submit sitemap, request validation in Search Console, and reassess after 7-14 days.
-
-## Validation checklist after deploy
-
-- Spot test 20 sampled URLs from `Tablo.csv` and confirm:
-  - exactly one `301` hop
-  - final destination is canonical and indexable
-- Verify no redirect chain (`301 -> 301 -> 200`) for top legacy routes.
-- Monitor `Yönlendirmeli sayfa` trend weekly until stable decline.
-
+## Suggested implementation order
+- Enforce single-hop host/protocol canonical redirect (http->https, non-www->www).
+- Normalize trailing slash behavior consistently at edge and app layer.
+- Strip low-value tracking/query parameters from canonical URLs (gclid, utm_*, fbclid).
+- Add high-confidence legacy path aliases generated in `gsc-route-aliases-draft.json`.
+- Re-submit sitemap and validate in GSC after 7-14 days.

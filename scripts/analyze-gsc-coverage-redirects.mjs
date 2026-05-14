@@ -2,7 +2,8 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 
 const rootDir = process.cwd();
-const defaultInputDir = 'C:\\Users\\KC3\\Downloads\\draksoyivf.com-Coverage-Drilldown-2026-04-23';
+const defaultInputDir = 'C:\\Users\\KC3\\Downloads\\tupbebek.com-Coverage-Drilldown-2026-05-14';
+const siteOrigin = 'https://tupbebek.com';
 
 const args = process.argv.slice(2);
 const inputDir = args[0] || defaultInputDir;
@@ -88,7 +89,7 @@ function canonicalize(urlString) {
   try {
     const parsed = new URL(urlString);
     const pathname = normalizePath(parsed.pathname.toLowerCase());
-    return `https://www.draksoyivf.com${pathname}`;
+    return `${siteOrigin}${pathname}`;
   } catch {
     return '';
   }
@@ -186,7 +187,7 @@ async function main() {
       pathCounters.set(keyPath, (pathCounters.get(keyPath) || 0) + 1);
 
       if (parsed.protocol === 'http:') counters.set('http', counters.get('http') + 1);
-      if (host === 'draksoyivf.com') counters.set('non_www', counters.get('non_www') + 1);
+      if (host === 'www.tupbebek.com') counters.set('non_www', counters.get('non_www') + 1);
       if (parsed.search) counters.set('query', counters.get('query') + 1);
       if ((parsed.search || '').toLowerCase().includes('gclid=')) counters.set('gclid', counters.get('gclid') + 1);
       if ((parsed.search || '').includes('{search_term_string}') || (parsed.search || '').includes('%7Bsearch_term_string%7D')) {
@@ -243,21 +244,21 @@ async function main() {
   ].join('\n');
 
   const redirectDraft = [
-    '# Draft redirect rules for draksoyivf.com canonicalization',
+    '# Draft redirect rules for tupbebek.com canonicalization',
     '# Review before applying in production.',
     '',
     '# 1) Host/protocol canonicalization',
-    'http://draksoyivf.com/* https://www.draksoyivf.com/:splat 301',
-    'http://www.draksoyivf.com/* https://www.draksoyivf.com/:splat 301',
-    'https://draksoyivf.com/* https://www.draksoyivf.com/:splat 301',
+    'http://tupbebek.com/* https://tupbebek.com/:splat 301',
+    'http://www.tupbebek.com/* https://tupbebek.com/:splat 301',
+    'https://www.tupbebek.com/* https://tupbebek.com/:splat 301',
     '',
     '# 2) Legacy language sections no longer served',
     '/fr/* / 301',
     '/ar/* / 301',
     '',
     '# 3) Legacy treatment/blog umbrellas',
-    '/treatment/* /tedavi-yontemleri 301',
-    '/blog/* /makaleler 301',
+    '/treatment/* /tedavi-yontemleri/ 301',
+    '/blog/* /makaleler/ 301',
     '',
     '# 4) Query parameter policy (edge transform rule)',
     '# Remove: gclid, fbclid, utm_source, utm_medium, utm_campaign, utm_term, utm_content',

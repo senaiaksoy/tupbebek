@@ -18,11 +18,11 @@
 # --------------------------------------------
 # 2. Eski makaleler → Yeni makaleler (kanonik düzeltmeler)
 # --------------------------------------------
-/makaleler/hiperprolaktinemi-prolaktinom        /makaleler/hiperprolaktinemi-ve-kisirlik        301
-/makaleler/myomlar-ve-kisirlik                  /makaleler/miyomlar-ve-tup-bebek                301
-/makaleler/pkos-ve-tup-bebek                    /makaleler/opk-ve-ivf                           301
-/makaleler/dondurulmus-embriyo-transferi        /makaleler/taze-dondurulmus-transfer            301
-/makaleler/erkek-kisirligi-besin-takviyeleri    /makaleler/erkek-dogurganlik-besin-takviyeleri  301
+/makaleler/hiperprolaktinemi-prolaktinom        /makaleler/hiperprolaktinemi-ve-kisirlik/        301
+/makaleler/myomlar-ve-kisirlik                  /makaleler/miyomlar-ve-tup-bebek/                301
+/makaleler/pkos-ve-tup-bebek                    /makaleler/opk-ve-ivf/                           301
+/makaleler/dondurulmus-embriyo-transferi        /makaleler/taze-dondurulmus-transfer/            301
+/makaleler/erkek-kisirligi-besin-takviyeleri    /makaleler/erkek-dogurganlik-besin-takviyeleri/  301
 
 # Optimized asset replacements (SEO audit 2026-05, S0-5)
 # 21 MB PNG was replaced with 39 KB WebP — redirect any external links to the new file.
@@ -30,54 +30,54 @@
 
 # 2b. Hub / makale duplicate-intent konsolidasyonu (SEO audit 2026-05, S1-2)
 # Yayında olan thin /makaleler/X article'ları hub /X/'e 301; tek kanonik URL.
-/makaleler/aciklanamayan-infertilite*            /aciklanamayan-infertilite                      301
-/makaleler/basari-oranlari*                      /basari-oranlari                                301
-/makaleler/basarisiz-denemeler*                  /basarisiz-denemeler                            301
-/makaleler/genetik-testler*                      /genetik-testler                                301
+/makaleler/aciklanamayan-infertilite*            /aciklanamayan-infertilite/                      301
+/makaleler/basari-oranlari*                      /basari-oranlari/                                301
+/makaleler/basarisiz-denemeler*                  /basarisiz-denemeler/                            301
+/makaleler/genetik-testler*                      /genetik-testler/                                301
 
 # --------------------------------------------
 # 3. Eski Türkçe sayfa URL'leri (/ana seviye)
 # --------------------------------------------
-/erkekte-kisirlik-nedenleri*                     /erkek-infertilitesi                            301
-/kadinin-degerlendirilmesi*                      /kadin-infertilitesi                            301
-/asilama*                                        /makaleler/iui-nedir                            301
-/hizmetler*                                      /tedavi-yontemleri                              301
-/preimplantasyon-genetik-tani*                   /pgt-merkezi                                    301
-/sperm-analizi*                                  /erkek-infertilitesi                            301
-/tedaviler*                                      /tedavi-yontemleri                              301
-/randevu*                                        /iletisim                                       301
+/erkekte-kisirlik-nedenleri*                     /erkek-infertilitesi/                            301
+/kadinin-degerlendirilmesi*                      /kadin-infertilitesi/                            301
+/asilama*                                        /makaleler/iui-nedir/                            301
+/hizmetler*                                      /tedavi-yontemleri/                              301
+/preimplantasyon-genetik-tani*                   /pgt-merkezi/                                    301
+/sperm-analizi*                                  /erkek-infertilitesi/                            301
+/tedaviler*                                      /tedavi-yontemleri/                              301
+/randevu*                                        /iletisim/                                       301
 /aciklanamayan-kisirlik*                         /aciklanamayan-infertilite/                     301
 /tup-bebek-fiyatlari*                            /sss/                                           301
-/dr-senai-aksoy*                                 /hakkimizda                                     301
-/tedaviye-baslamadan-once*                       /tani-sureci                                    301
-/yumurtalik-rezervi-degerlendirme*               /hormon-paneli                                  301
-/kisirlik-tanisi-konmasi*                        /tani-sureci                                    301
-/baslarken*                                      /ivf-rehberi                                    301
-/embriyo-tup-bebek-laboratuvar-raporu-yorumlama /makaleler/laboratuvar-raporu-yorumlama         301
-/tup-bebek-tedavim-tuttu-mu*                     /makaleler/beta-hcg-testi                       301
-/embriyo-transferi-sonrasi-neler-yapmaliyim*     /makaleler/embriyo-transferi-sonrasi-bakim      301
-/embriyo-transferi-sonrasi-kanama*               /makaleler/embriyo-transferi-sonrasi-bakim      301
-/tup-bebek-evraklari-ve-testleri*                /tani-sureci                                    301
+/dr-senai-aksoy*                                 /hakkimizda/                                     301
+/tedaviye-baslamadan-once*                       /tani-sureci/                                    301
+/yumurtalik-rezervi-degerlendirme*               /hormon-paneli/                                  301
+/kisirlik-tanisi-konmasi*                        /tani-sureci/                                    301
+/baslarken*                                      /ivf-rehberi/                                    301
+/embriyo-tup-bebek-laboratuvar-raporu-yorumlama /makaleler/laboratuvar-raporu-yorumlama/         301
+/tup-bebek-tedavim-tuttu-mu*                     /makaleler/beta-hcg-testi/                       301
+/embriyo-transferi-sonrasi-neler-yapmaliyim*     /makaleler/embriyo-transferi-sonrasi-bakim/      301
+/embriyo-transferi-sonrasi-kanama*               /makaleler/embriyo-transferi-sonrasi-bakim/      301
+/tup-bebek-evraklari-ve-testleri*                /tani-sureci/                                    301
 
 # --------------------------------------------
 # 4. Legacy /tup-bebek-* ve ilgili sayfalar
 # --------------------------------------------
-/tup-bebek-asamalari*                            /ivf-rehberi                                    301
-/tup-bebek-tedavisinde-preimplantasyon-genetik-tani*   /pgt-merkezi                              301
-/dogurganligin-korunmasi*                        /fertilite-koruma                               301
-/embriyo-dondurma*                               /makaleler/taze-dondurulmus-transfer            301
-/tup-bebek-tedavisinde-catlatma-ignesi*          /makaleler/ivf-protokolleri                     301
-/laparoskopi*                                    /makaleler/endoskopik-cerrahi-histeroskopi      301
-/tup-bebek-ve-mikroenjeksiyon*                   /makaleler/mikroenjeksiyon-icsi-nedir           301
-/tup-bebek-tedavisinde-nelere-dikkat-etmelisiniz*  /makaleler/tup-bebek-sureci-rehber            301
-/tup-bebek-basari-oranlari*                      /basari-oranlari                                301
-/sik-sorulan-sorular*                            /sss                                            301
-/tedavi-sureci*                                  /tedavi-yontemleri                              301
-/yumurtaliklarin-asiri-uyarilmasi*               /makaleler/ivf-protokolleri                     301
-/yasiniz-ve-kisirlik*                            /yas-ve-fertilite                               301
-/histeroskopi*                                   /makaleler/ivf-oncesi-histeroskopi              301
-/tesatese*                                       /makaleler/cerrahi-sperm-arama-tese             301
-/yumurtlama-takibi*                              /makaleler/yumurtlama-takibi                    301
+/tup-bebek-asamalari*                            /ivf-rehberi/                                    301
+/tup-bebek-tedavisinde-preimplantasyon-genetik-tani*   /pgt-merkezi/                              301
+/dogurganligin-korunmasi*                        /fertilite-koruma/                               301
+/embriyo-dondurma*                               /makaleler/taze-dondurulmus-transfer/            301
+/tup-bebek-tedavisinde-catlatma-ignesi*          /makaleler/ivf-protokolleri/                     301
+/laparoskopi*                                    /makaleler/endoskopik-cerrahi-histeroskopi/      301
+/tup-bebek-ve-mikroenjeksiyon*                   /makaleler/mikroenjeksiyon-icsi-nedir/           301
+/tup-bebek-tedavisinde-nelere-dikkat-etmelisiniz*  /makaleler/tup-bebek-sureci-rehber/            301
+/tup-bebek-basari-oranlari*                      /basari-oranlari/                                301
+/sik-sorulan-sorular*                            /sss/                                            301
+/tedavi-sureci*                                  /tedavi-yontemleri/                              301
+/yumurtaliklarin-asiri-uyarilmasi*               /makaleler/ivf-protokolleri/                     301
+/yasiniz-ve-kisirlik*                            /yas-ve-fertilite/                               301
+/histeroskopi*                                   /makaleler/ivf-oncesi-histeroskopi/              301
+/tesatese*                                       /makaleler/cerrahi-sperm-arama-tese/             301
+/yumurtlama-takibi*                              /makaleler/yumurtlama-takibi/                    301
 
 # --------------------------------------------
 # 5. /blog/ yüksek değerli Türkçe içerik eşleşmeleri
@@ -89,40 +89,40 @@
 # --------------------------------------------
 # 6. /blog/sayfa/N/ pagination
 # --------------------------------------------
-/blog/sayfa/*                                   /makaleler                                      301
+/blog/sayfa/*                                   /makaleler/                                      301
 
 # --------------------------------------------
 # 7. Eski /makaleler/kategori/slug yapısı
 # --------------------------------------------
-/makaleler/endoskopik-cerrahi/endoskopik-cerrahi-histeroskopi-nedir  /makaleler/endoskopik-cerrahi-histeroskopi  301
-/makaleler/kisirlik/*                           /makaleler                                      301
-/makaleler/hamilelik-ve-dogum/*                 /makaleler                                      301
-/makaleler/tup-bebek/*                          /makaleler                                      301
-/makaleler/endoskopik-cerrahi/*                 /makaleler                                      301
+/makaleler/endoskopik-cerrahi/endoskopik-cerrahi-histeroskopi-nedir  /makaleler/endoskopik-cerrahi-histeroskopi/  301
+/makaleler/kisirlik/*                           /makaleler/                                      301
+/makaleler/hamilelik-ve-dogum/*                 /makaleler/                                      301
+/makaleler/tup-bebek/*                          /makaleler/                                      301
+/makaleler/endoskopik-cerrahi/*                 /makaleler/                                      301
 
 # --------------------------------------------
 # 8. Videolar (eski YouTube embed sayfaları)
 # --------------------------------------------
-/videolar/*                                     /makaleler                                      301
+/videolar/*                                     /makaleler/                                      301
 
 # --------------------------------------------
 # 9. Çok dilli eski sürümler (Arapça / Fransızca / İngilizce) — terk edildi
 # --------------------------------------------
 /ar/*                                           /                                               301
 /fr/*                                           /                                               301
-/treatment/*                                    /tedavi-yontemleri                              301
+/treatment/*                                    /tedavi-yontemleri/                              301
 /ivf-in-turkey/*                                /                                               301
-/ivf-explained/*                                /ivf-rehberi                                    301
-/cost-of-ivf/*                                  /sss                                            301
-/success-rates*                                  /basari-oranlari                                301
-/before-you-come/*                              /tani-sureci                                    301
-/about-us/*                                     /hakkimizda                                     301
-/contact-us/*                                   /iletisim                                       301
+/ivf-explained/*                                /ivf-rehberi/                                    301
+/cost-of-ivf/*                                  /sss/                                            301
+/success-rates*                                  /basari-oranlari/                                301
+/before-you-come/*                              /tani-sureci/                                    301
+/about-us/*                                     /hakkimizda/                                     301
+/contact-us/*                                   /iletisim/                                       301
 
 # --------------------------------------------
 # 10. /blog/* catch-all fallback (spesifik eşleşme yoksa)
 # --------------------------------------------
-/blog/*                                         /makaleler                                      301
+/blog/*                                         /makaleler/                                      301
 
 # --------------------------------------------
 # 11. "undefined" içeren bozuk URL'ler

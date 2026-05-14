@@ -4,7 +4,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 ---
 
-<BaseLayout title="Sayfa Bulunamadi | tupbebek.com" description="Aradiginiz sayfa bulunamadi.">
+<BaseLayout title="Sayfa Bulunamadi | tupbebek.com" description="Aradiginiz sayfa bulunamadi." noindex>
     <Header />
 
     <main id="main-content" tabindex="-1" class="pt-32 pb-24">
@@ -37,7 +37,7 @@ import Footer from '../components/Footer.astro';
                     Ana Sayfa
                 </a>
                 <a
-                    href="/makaleler"
+                    href="/makaleler/"
                     class="inline-flex items-center gap-2 px-6 py-3 min-h-[44px] bg-white text-gray-700 font-bold rounded-xl border border-gray-200 hover:border-primary-200 hover:bg-gray-50 transition-all focus:outline-none focus:ring-2 focus:ring-primary-300 focus:ring-offset-2"
                 >
                     <span class="material-symbols-outlined text-xl">library_books</span>
@@ -49,19 +49,19 @@ import Footer from '../components/Footer.astro';
             <div class="border-t border-gray-200 pt-10">
                 <p class="text-sm text-gray-500 mb-6">Yardimci olabilecek sayfalar:</p>
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
-                    <a href="/tani-sureci" class="p-4 bg-gray-50 rounded-xl hover:bg-primary-50 transition-colors group">
+                    <a href="/tani-sureci/" class="p-4 bg-gray-50 rounded-xl hover:bg-primary-50 transition-colors group">
                         <span class="material-symbols-outlined text-gray-400 group-hover:text-primary-600 text-2xl mb-2 block">assignment</span>
                         <span class="text-xs font-semibold text-gray-600 group-hover:text-primary-700">Tani Sureci</span>
                     </a>
-                    <a href="/tedavi-yontemleri" class="p-4 bg-gray-50 rounded-xl hover:bg-primary-50 transition-colors group">
+                    <a href="/tedavi-yontemleri/" class="p-4 bg-gray-50 rounded-xl hover:bg-primary-50 transition-colors group">
                         <span class="material-symbols-outlined text-gray-400 group-hover:text-primary-600 text-2xl mb-2 block">biotech</span>
                         <span class="text-xs font-semibold text-gray-600 group-hover:text-primary-700">Tedavi Yontemleri</span>
                     </a>
-                    <a href="/sss" class="p-4 bg-gray-50 rounded-xl hover:bg-primary-50 transition-colors group">
+                    <a href="/sss/" class="p-4 bg-gray-50 rounded-xl hover:bg-primary-50 transition-colors group">
                         <span class="material-symbols-outlined text-gray-400 group-hover:text-primary-600 text-2xl mb-2 block">help</span>
                         <span class="text-xs font-semibold text-gray-600 group-hover:text-primary-700">SSS</span>
                     </a>
-                    <a href="/tibbi-sozluk" class="p-4 bg-gray-50 rounded-xl hover:bg-primary-50 transition-colors group">
+                    <a href="/tibbi-sozluk/" class="p-4 bg-gray-50 rounded-xl hover:bg-primary-50 transition-colors group">
                         <span class="material-symbols-outlined text-gray-400 group-hover:text-primary-600 text-2xl mb-2 block">menu_book</span>
                         <span class="text-xs font-semibold text-gray-600 group-hover:text-primary-700">Tip Sozlugu</span>
                     </a>

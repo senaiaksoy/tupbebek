@@ -236,14 +236,34 @@ export function normalizeInternalPath(value) {
     return value;
   }
 
-  const hashIndex = value.indexOf('#');
-  const queryIndex = value.indexOf('?');
-  const suffixIndex = [hashIndex, queryIndex].filter((index) => index >= 0).sort((a, b) => a - b)[0];
-  const path = suffixIndex >= 0 ? value.slice(0, suffixIndex) : value;
-  const suffix = suffixIndex >= 0 ? value.slice(suffixIndex) : '';
-  const normalizedPath = path.replace(/\/+$/, '') || '/';
+  const source = splitPathQueryHash(value);
+  const normalizedPath = source.path.replace(/\/+$/, '') || '/';
   const loweredPath = normalizedPath.toLowerCase();
   const target = routeAliases[normalizedPath] || routeAliases[loweredPath];
 
-  return target ? `${target}${suffix}` : value;
+  return target ? normalizeAliasTarget(target, source) : value;
+}
+
+function splitPathQueryHash(value) {
+  const hashIndex = value.indexOf('#');
+  const beforeHash = hashIndex >= 0 ? value.slice(0, hashIndex) : value;
+  const hash = hashIndex >= 0 ? value.slice(hashIndex) : '';
+  const queryIndex = beforeHash.indexOf('?');
+  const path = queryIndex >= 0 ? beforeHash.slice(0, queryIndex) : beforeHash;
+  const query = queryIndex >= 0 ? beforeHash.slice(queryIndex) : '';
+
+  return { path, query, hash };
+}
+
+function normalizeAliasTarget(target, source) {
+  const targetParts = splitPathQueryHash(target);
+  const path = targetParts.path;
+  const query = source.query || targetParts.query;
+  const hash = targetParts.hash || source.hash;
+
+  if (path === '/' || path.endsWith('/') || /\.[a-z0-9]+$/iu.test(path)) {
+    return `${path}${query}${hash}`;
+  }
+
+  return `${path}/${query}${hash}`;
 }
