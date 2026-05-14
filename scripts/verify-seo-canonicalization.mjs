@@ -28,6 +28,14 @@ const requiredFunctionExcludes = [
   '/aciklanamayan-kisirlik',
   '/kisirlik-nedenleri/aciklanamayan-kisirlik',
 ];
+const requiredFunctionIncludes = [
+  '/',
+  '/transfer-sureci',
+  '/erkek-infertilitesi',
+  '/kadin-infertilitesi',
+  '/sss',
+  '/makaleler/beta-hcg-testi',
+];
 const failures = [];
 
 function walk(dir) {
@@ -172,6 +180,24 @@ function collectRoutesJsonIssues(filePath) {
       failures.push(`${path.relative(rootDir, filePath)} must exclude single-language legacy route: ${pattern}`);
     }
   }
+
+  for (const pattern of requiredFunctionIncludes) {
+    if (excludes.has(pattern)) {
+      failures.push(`${path.relative(rootDir, filePath)} must allow worker canonicalization for route: ${pattern}`);
+    }
+  }
+}
+
+function collectWorkerEntrypointIssues(filePath) {
+  if (!fs.existsSync(filePath)) {
+    failures.push(`Missing Cloudflare worker entrypoint: ${path.relative(rootDir, filePath)}`);
+    return;
+  }
+
+  const content = fs.readFileSync(filePath, 'utf8');
+  if (!content.includes('function canonicalRedirectFor')) {
+    failures.push(`${path.relative(rootDir, filePath)} is missing the edge canonical redirect guard`);
+  }
 }
 
 if (!fs.existsSync(distDir)) {
@@ -196,6 +222,7 @@ if (!fs.existsSync(distDir)) {
   collectRouteAliasIssues();
   collectLegacyFallbackIssues(path.join(rootDir, 'src', 'pages', '[...legacy].ts'));
   collectRoutesJsonIssues(path.join(distDir, '_routes.json'));
+  collectWorkerEntrypointIssues(path.join(distDir, '_worker.js', 'index.js'));
 }
 
 if (failures.length > 0) {

@@ -5,6 +5,19 @@ import path from 'node:path';
 const rootDir = process.cwd();
 const distDir = path.join(rootDir, 'dist');
 const siteOrigin = 'https://tupbebek.com';
+const redirectOnlyFunctionExcludes = new Set([
+  '/ar',
+  '/fr',
+  '/treatment',
+  '/ivf-in-turkey',
+  '/ivf-explained',
+  '/cost-of-ivf',
+  '/before-you-come',
+  '/about-us',
+  '/contact-us',
+  '/aciklanamayan-kisirlik',
+  '/kisirlik-nedenleri/aciklanamayan-kisirlik',
+]);
 
 function walk(dir) {
   const entries = fs.readdirSync(dir, { withFileTypes: true });
@@ -80,6 +93,113 @@ function writeSitemapAlias() {
   return true;
 }
 
+function isExtensionlessRoutePattern(pattern) {
+  if (!pattern.startsWith('/')) return false;
+  if (pattern.includes('*')) return false;
+  if (pattern.includes('#')) return false;
+  return !/\.[a-z0-9]+$/iu.test(pattern);
+}
+
+function shouldKeepFunctionExclude(pattern) {
+  if (redirectOnlyFunctionExcludes.has(pattern)) return true;
+  return !isExtensionlessRoutePattern(pattern);
+}
+
+function patchCloudflareRoutes() {
+  const routesPath = path.join(distDir, '_routes.json');
+  if (!fs.existsSync(routesPath)) return { patched: false, removed: 0 };
+
+  const routes = JSON.parse(fs.readFileSync(routesPath, 'utf8'));
+  const originalExcludes = Array.isArray(routes.exclude) ? routes.exclude : [];
+  const nextExcludes = originalExcludes.filter(shouldKeepFunctionExclude);
+
+  routes.exclude = nextExcludes;
+  fs.writeFileSync(routesPath, `${JSON.stringify(routes, null, 2)}\n`, 'utf8');
+
+  return {
+    patched: true,
+    removed: originalExcludes.length - nextExcludes.length,
+  };
+}
+
+function patchWorkerEntrypoint() {
+  const workerPath = path.join(distDir, '_worker.js', 'index.js');
+  if (!fs.existsSync(workerPath)) return false;
+
+  const original = fs.readFileSync(workerPath, 'utf8');
+  if (original.includes('function canonicalRedirectFor')) return true;
+
+  const helper = `
+const TRACKING_QUERY_PARAMS = new Set([
+  'fbclid',
+  'gclid',
+  'msclkid',
+  'ref',
+  'sa',
+  'utm_campaign',
+  'utm_content',
+  'utm_id',
+  'utm_medium',
+  'utm_source',
+  'utm_term',
+  'utc',
+  'v',
+  'ved',
+]);
+
+function isPagePath(pathname) {
+  if (pathname === '/') return true;
+  if (pathname.startsWith('/api/')) return false;
+  return !/\\.[a-z0-9]+$/iu.test(pathname);
+}
+
+function canonicalRedirectFor(requestUrl) {
+  const url = new URL(requestUrl);
+  let changed = false;
+
+  for (const key of [...url.searchParams.keys()]) {
+    if (TRACKING_QUERY_PARAMS.has(key.toLowerCase())) {
+      url.searchParams.delete(key);
+      changed = true;
+    }
+  }
+
+  if (isPagePath(url.pathname) && url.pathname !== '/' && !url.pathname.endsWith('/')) {
+    url.pathname = \`\${url.pathname}/\`;
+    changed = true;
+  }
+
+  if (!changed) return null;
+
+  return new Response(null, {
+    status: 301,
+    headers: {
+      Location: \`\${url.pathname}\${url.search}\`,
+    },
+  });
+}
+`;
+
+  const marker = 'const __astrojsSsrVirtualEntry = _exports.default;';
+  if (!original.includes(marker)) {
+    throw new Error(`Could not patch ${path.relative(rootDir, workerPath)}: worker export marker not found.`);
+  }
+
+  const replacement = `${helper}
+const __astrojsSsrVirtualEntryBase = _exports.default;
+const __astrojsSsrVirtualEntry = {
+    ...__astrojsSsrVirtualEntryBase,
+    fetch(request, env, context) {
+        const canonicalRedirect = canonicalRedirectFor(request.url);
+        if (canonicalRedirect) return canonicalRedirect;
+        return __astrojsSsrVirtualEntryBase.fetch(request, env, context);
+    },
+};`;
+
+  fs.writeFileSync(workerPath, original.replace(marker, replacement), 'utf8');
+  return true;
+}
+
 if (!fs.existsSync(distDir)) {
   throw new Error('dist directory not found. Run astro build before postbuild-seo.');
 }
@@ -87,8 +207,12 @@ if (!fs.existsSync(distDir)) {
 const htmlFiles = walk(distDir).filter((filePath) => filePath.endsWith('.html'));
 const rewrittenHtmlFiles = htmlFiles.reduce((count, filePath) => count + rewriteHtml(filePath), 0);
 const sitemapAliasWritten = writeSitemapAlias();
+const routesPatch = patchCloudflareRoutes();
+const workerPatched = patchWorkerEntrypoint();
 
 console.log(
   `SEO postbuild: normalized links in ${rewrittenHtmlFiles} HTML file(s); ` +
-  `sitemap.xml alias ${sitemapAliasWritten ? 'written' : 'skipped'}.`
+  `sitemap.xml alias ${sitemapAliasWritten ? 'written' : 'skipped'}; ` +
+  `routes ${routesPatch.patched ? `patched (${routesPatch.removed} page exclude(s) removed)` : 'skipped'}; ` +
+  `worker canonicalizer ${workerPatched ? 'patched' : 'skipped'}.`
 );

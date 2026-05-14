@@ -1,6 +1,23 @@
 import { defineMiddleware } from 'astro:middleware';
 import { normalizeInternalPath } from './utils/routeAliases.mjs';
 
+const TRACKING_QUERY_PARAMS = new Set([
+  'fbclid',
+  'gclid',
+  'msclkid',
+  'ref',
+  'sa',
+  'utm_campaign',
+  'utm_content',
+  'utm_id',
+  'utm_medium',
+  'utm_source',
+  'utm_term',
+  'utc',
+  'v',
+  'ved',
+]);
+
 const WILDCARD_FALLBACKS: Array<[string, string]> = [
   ['/blog/sayfa/', '/makaleler/'],
   ['/blog/', '/makaleler/'],
@@ -31,12 +48,47 @@ function withQuery(destination: string, search: string): string {
   return `${destination.slice(0, hashIndex)}${search}${destination.slice(hashIndex)}`;
 }
 
-export const onRequest = defineMiddleware((context, next) => {
-  const source = `${context.url.pathname}${context.url.search}`;
-  const normalized = normalizeInternalPath(source);
+function isPagePath(pathname: string): boolean {
+  if (pathname === '/') return true;
+  if (pathname.startsWith('/api/')) return false;
+  return !/\.[a-z0-9]+$/iu.test(pathname);
+}
 
-  if (normalized !== source) {
+function removeTrackingParams(searchParams: URLSearchParams): boolean {
+  let changed = false;
+
+  for (const key of [...searchParams.keys()]) {
+    if (TRACKING_QUERY_PARAMS.has(key.toLowerCase())) {
+      searchParams.delete(key);
+      changed = true;
+    }
+  }
+
+  return changed;
+}
+
+export const onRequest = defineMiddleware((context, next) => {
+  const canonicalUrl = new URL(context.url);
+  const originalPathSearch = `${canonicalUrl.pathname}${canonicalUrl.search}`;
+  const normalized = normalizeInternalPath(originalPathSearch);
+
+  if (normalized !== originalPathSearch) {
     return context.redirect(normalized, 301);
+  }
+
+  let changed = removeTrackingParams(canonicalUrl.searchParams);
+
+  if (
+    isPagePath(canonicalUrl.pathname) &&
+    canonicalUrl.pathname !== '/' &&
+    !canonicalUrl.pathname.endsWith('/')
+  ) {
+    canonicalUrl.pathname = `${canonicalUrl.pathname}/`;
+    changed = true;
+  }
+
+  if (changed) {
+    return context.redirect(`${canonicalUrl.pathname}${canonicalUrl.search}`, 301);
   }
 
   for (const [prefix, destination] of WILDCARD_FALLBACKS) {
