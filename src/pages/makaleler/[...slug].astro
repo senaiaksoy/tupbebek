@@ -18,6 +18,7 @@ import UzmanaSor from '../../components/forms/UzmanaSor.astro';
 import LeadMagnet from '../../components/forms/LeadMagnet.astro';
 import YouTubeEmbed from '../../components/YouTubeEmbed.astro';
 import { resolveCanonicalUrl, resolveSiteUrl } from '../../utils/seo';
+import { getArticleHub } from '../../utils/articleHub';
 
 export async function getStaticPaths() {
   const articles = await getCollection('articles');
@@ -81,6 +82,7 @@ const articleUrl = resolveCanonicalUrl({
 });
 const referenceCount = entry.data.references?.length || 0;
 const sanitizedImage = sanitizeImage(entry.data.image);
+const articleHub = getArticleHub(entry.slug);
 ---
 
 <BaseLayout
@@ -131,6 +133,15 @@ const sanitizedImage = sanitizeImage(entry.data.image);
                 <section class="mt-5 rounded-2xl border border-primary-100 bg-primary-50/70 p-5" aria-labelledby="short-answer-title">
                     <h2 id="short-answer-title" class="text-sm font-bold text-primary-900 uppercase tracking-wider mb-2">Kısa cevap</h2>
                     <p class="text-sm md:text-base text-gray-700 leading-relaxed">{entry.data.description}</p>
+                </section>
+
+                <section class="mt-5 rounded-2xl border border-gray-200 bg-white p-5" aria-labelledby="topic-hub-title">
+                    <p id="topic-hub-title" class="text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Konu merkezi</p>
+                    <a href={articleHub.href} class="inline-flex items-center gap-2 text-primary-700 font-bold hover:underline">
+                        {articleHub.label}
+                        <span class="material-symbols-outlined text-base">arrow_forward</span>
+                    </a>
+                    <p class="text-sm text-gray-600 leading-relaxed mt-2 mb-0">{articleHub.description}</p>
                 </section>
 
                 <!-- Editor Kunyesi (compact - makale başı) -->
