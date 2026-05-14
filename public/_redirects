@@ -19,10 +19,15 @@
 # 2. Eski makaleler → Yeni makaleler (kanonik düzeltmeler)
 # --------------------------------------------
 /makaleler/hiperprolaktinemi-prolaktinom        /makaleler/hiperprolaktinemi-ve-kisirlik/        301
+/makaleler/hiperprolaktinemi-prolaktinom/       /makaleler/hiperprolaktinemi-ve-kisirlik/        301
 /makaleler/myomlar-ve-kisirlik                  /makaleler/miyomlar-ve-tup-bebek/                301
+/makaleler/myomlar-ve-kisirlik/                 /makaleler/miyomlar-ve-tup-bebek/                301
 /makaleler/pkos-ve-tup-bebek                    /makaleler/opk-ve-ivf/                           301
+/makaleler/pkos-ve-tup-bebek/                   /makaleler/opk-ve-ivf/                           301
 /makaleler/dondurulmus-embriyo-transferi        /makaleler/taze-dondurulmus-transfer/            301
+/makaleler/dondurulmus-embriyo-transferi/       /makaleler/taze-dondurulmus-transfer/            301
 /makaleler/erkek-kisirligi-besin-takviyeleri    /makaleler/erkek-dogurganlik-besin-takviyeleri/  301
+/makaleler/erkek-kisirligi-besin-takviyeleri/   /makaleler/erkek-dogurganlik-besin-takviyeleri/  301
 
 # Optimized asset replacements (SEO audit 2026-05, S0-5)
 # 21 MB PNG was replaced with 39 KB WebP — redirect any external links to the new file.
@@ -109,7 +114,9 @@
 # 9. Çok dilli eski sürümler (Arapça / Fransızca / İngilizce) — terk edildi
 # --------------------------------------------
 /ar/*                                           /                                               301
+/ar                                             /                                               301
 /fr/*                                           /                                               301
+/fr                                             /                                               301
 /treatment/*                                    /tedavi-yontemleri/                              301
 /ivf-in-turkey/*                                /                                               301
 /ivf-explained/*                                /ivf-rehberi/                                    301
