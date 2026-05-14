@@ -52,6 +52,7 @@
 /tedaviler*                                      /tedavi-yontemleri/                              301
 /randevu*                                        /iletisim/                                       301
 /aciklanamayan-kisirlik*                         /aciklanamayan-infertilite/                     301
+/kisirlik-nedenleri/aciklanamayan-kisirlik       /aciklanamayan-infertilite/                     301
 /tup-bebek-fiyatlari*                            /sss/                                           301
 /dr-senai-aksoy*                                 /hakkimizda/                                     301
 /tedaviye-baslamadan-once*                       /tani-sureci/                                    301
@@ -118,6 +119,7 @@
 /fr/*                                           /                                               301
 /fr                                             /                                               301
 /treatment/*                                    /tedavi-yontemleri/                              301
+/treatment                                      /tedavi-yontemleri/                              301
 /ivf-in-turkey/*                                /                                               301
 /ivf-explained/*                                /ivf-rehberi/                                    301
 /cost-of-ivf/*                                  /sss/                                            301
