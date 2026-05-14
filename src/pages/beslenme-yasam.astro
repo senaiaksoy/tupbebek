@@ -2,9 +2,42 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+
+const faqs = [
+    {
+        q: 'IVF öncesi beslenme tedavi sonucunu tek başına belirler mi?',
+        a: 'Hayır. Beslenme ve yaşam tarzı tedavinin yerine geçmez; yaş, yumurtalık rezervi, sperm, embriyo kalitesi ve rahim durumu gibi ana faktörlerle birlikte destekleyici bir alandır.'
+    },
+    {
+        q: 'Tüp bebek öncesi herkes takviye kullanmalı mı?',
+        a: 'Hayır. Takviyeler eksiklik, beslenme düzeni, semen analizi, ilaç kullanımı ve tıbbi öyküye göre planlanmalıdır. Gereksiz veya yüksek doz takviye kullanımı uygun olmayabilir.'
+    },
+    {
+        q: 'Alkol ve sigara IVF sürecinde neden önemlidir?',
+        a: 'Alkol ve sigara hormon dengesi, yumurtlama, sperm parametreleri, DNA hasarı ve genel tedavi hazırlığıyla ilişkilendirilebilir. Bırakma veya azaltma planı kişisel sağlık durumuna göre ele alınmalıdır.'
+    },
+    {
+        q: 'Transfer sonrası özel bir diyet gerekir mi?',
+        a: 'Genellikle kanıtlanmış özel bir transfer diyeti yoktur. Dengeli beslenme, yeterli sıvı, düzenli uyku ve doktorun önerdiği ilaçları aksatmamak daha gerçekçi bir yaklaşımdır.'
+    }
+];
+
+const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map(({ q, a }) => ({
+        '@type': 'Question',
+        name: q,
+        acceptedAnswer: {
+            '@type': 'Answer',
+            text: a
+        }
+    }))
+};
 ---
 
 <BaseLayout title="Beslenme ve Yaşam Tarzı: Doğurganlığın İyileştirilmesi | tupbebek.com" description="IVF için beslenme rehberi, yaşam tarzı değişiklikleri, kilo yönetimi, antioksidanlar, alkol, kafein, sigara ve stres yönetimi.">
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(faqSchema)} />
     <Header />
 
     <main id="main-content" tabindex="-1" class="pb-24">
@@ -204,6 +237,24 @@ import Footer from '../components/Footer.astro';
                     <h3 class="font-bold text-gray-900 text-sm">Vajinal Mikrobiyom ve IVF</h3>
                     <p class="text-xs text-gray-600 mt-1">Mikrobiyom, enfeksiyon ve transfer hazırlığı</p>
                 </a>
+            </div>
+        </section>
+
+        <section class="max-w-5xl mx-auto px-4 md:px-6 lg:px-8 mb-16">
+            <div class="bg-white border border-gray-200 rounded-2xl p-6 md:p-8">
+                <div class="max-w-3xl mb-8">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-primary-600">Kısa Yanıtlar</span>
+                    <h2 class="font-headline text-3xl text-gray-900 mt-2 mb-4">Beslenme ve yaşam tarzı hakkında sık sorulanlar</h2>
+                    <p class="text-gray-600 leading-relaxed">Bu bölüm, tedavi öncesi hazırlık ve transfer sonrası bekleme döneminde en sık karıştırılan noktaları kısa yanıtlarla özetler.</p>
+                </div>
+                <div class="space-y-4">
+                    {faqs.map(({ q, a }) => (
+                        <article class="rounded-xl border border-gray-100 bg-gray-50 p-5">
+                            <h3 class="font-bold text-gray-900 text-sm mb-2">{q}</h3>
+                            <p class="text-sm text-gray-600 leading-relaxed">{a}</p>
+                        </article>
+                    ))}
+                </div>
             </div>
         </section>
 

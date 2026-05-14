@@ -2,9 +2,42 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+
+const faqs = [
+    {
+        q: 'IUI ile IVF arasındaki temel fark nedir?',
+        a: 'IUI, hazırlanmış spermin rahim içine verilmesidir; döllenme vücut içinde olur. IVF’te yumurta ve sperm laboratuvarda bir araya getirilir, oluşan embriyo rahme transfer edilir. Hangi yöntemin uygun olduğu yaş, tüpler, semen analizi, infertilite süresi ve önceki tedavi öyküsüne göre değişir.'
+    },
+    {
+        q: 'ICSI herkese gerekli midir?',
+        a: 'Hayır. ICSI özellikle ağır erkek faktörü, azospermi sonrası sperm bulunması veya önceki döllenme sorunu gibi durumlarda gündeme gelir. Rutin olarak herkese uygulanması kişisel tanı ve laboratuvar kararıyla değerlendirilmelidir.'
+    },
+    {
+        q: 'PGT gebeliği garanti eder mi?',
+        a: 'Hayır. PGT seçilmiş genetik risklerde veya belirli embriyo değerlendirme durumlarında bilgi sağlayabilir; ancak rahim faktörü, embriyo gelişimi, yaş ve biyolojik değişkenler nedeniyle gebeliği garanti etmez.'
+    },
+    {
+        q: 'ERA, EmbryoGlue veya scratching gibi add-on uygulamalar gerekli mi?',
+        a: 'Bu uygulamalar standart tedavinin yerine geçmez. Bazıları seçilmiş hasta gruplarında tartışılabilir; ancak kanıt düzeyi, önceki deneme öyküsü ve olası yük/yarar dengesi hekimle birlikte değerlendirilmelidir.'
+    }
+];
+
+const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map(({ q, a }) => ({
+        '@type': 'Question',
+        name: q,
+        acceptedAnswer: {
+            '@type': 'Answer',
+            text: a
+        }
+    }))
+};
 ---
 
 <BaseLayout title="Yardımcı Üreme Teknikleri ve Tedavi Yöntemleri | tupbebek.com" description="IVF, ICSI, IUI, aşılama, yumurta dondurma, PGT ve diğer yardımcı üreme tekniklerinin karşılaştırmalı rehberi.">
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(faqSchema)} />
     <Header />
     
     <main id="main-content" tabindex="-1" class="pt-20">
@@ -181,6 +214,22 @@ import Footer from '../components/Footer.astro';
                         <p class="text-sm text-gray-600 leading-relaxed">ERA, EmbryoGlue, endometrial scratching, bazı bağışıklık tedavileri ve over PRP rutin çözüm gibi sunulmamalı; hasta öyküsü ve kanıt gücüyle tartışılmalıdır.</p>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section class="py-20 px-8 max-w-5xl mx-auto">
+            <div class="mb-10">
+                <span class="text-primary-600 font-bold tracking-[0.18em] uppercase text-xs mb-3 block">Kısa Yanıtlar</span>
+                <h2 class="text-3xl font-headline text-gray-900 mb-4">Tedavi yöntemleri hakkında sık sorulanlar</h2>
+                <p class="text-gray-600 leading-relaxed">Bu yanıtlar genel bilgilendirme amaçlıdır; kişisel tedavi kararı tanı ve klinik değerlendirmeyle verilir.</p>
+            </div>
+            <div class="space-y-4">
+                {faqs.map(({ q, a }) => (
+                    <article class="rounded-2xl border border-gray-100 bg-gray-50 p-5">
+                        <h3 class="font-bold text-gray-900 mb-2">{q}</h3>
+                        <p class="text-sm text-gray-600 leading-relaxed">{a}</p>
+                    </article>
+                ))}
             </div>
         </section>
 
