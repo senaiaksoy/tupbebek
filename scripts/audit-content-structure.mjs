@@ -4,7 +4,8 @@ import path from 'node:path';
 const root = process.cwd();
 const articleDir = path.join(root, 'src/content/articles');
 const distArticleDir = path.join(root, 'dist/makaleler');
-const reportPath = path.join(root, 'reports/content-structure-audit-2026-05-14.md');
+const reportDate = '2026-05-15';
+const reportPath = path.join(root, `reports/content-structure-audit-${reportDate}.md`);
 
 const hubPaths = [
   '/ivf-rehberi/',
@@ -145,7 +146,7 @@ function buildReport() {
   const lines = [
     '# İçerik Yapısı Audit Raporu',
     '',
-    'Tarih: 2026-05-14',
+    `Tarih: ${reportDate}`,
     '',
     '## Özet',
     '',
@@ -193,6 +194,7 @@ function buildReport() {
     '- IVF rehberine tüp bebekte yanlış bilinenler bağlantısı eklendi.',
     '- Tedavi yöntemleri hubına PGT-M, PGT cinsiyet seçimi yasal/etik sınırları ve akraba evliliği/genetik danışmanlık bağlantıları eklendi.',
     '- Cerrahi sperm arama makalesindeki FAQ schema ile görünür FAQ bölümü eşitlendi.',
+    '- Beslenme-yaşam ve psikolojik destek hub sayfalarına görünür konu haritasıyla uyumlu ItemList schema eklendi.',
     ''
   ];
 

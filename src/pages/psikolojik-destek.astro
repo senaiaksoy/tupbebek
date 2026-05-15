@@ -2,6 +2,46 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import { buildHubItemListSchema } from '../utils/hubStructuredData';
+
+const supportHubLinks = [
+    {
+        href: '/transfer-sureci',
+        icon: 'hourglass_top',
+        title: 'Transfer sonrası bekleme',
+        description: 'Belirti takibi, test zamanı ve belirsizlikle baş etme için transfer rehberine geçin.'
+    },
+    {
+        href: '/makaleler/beta-hcg-testi',
+        icon: 'monitor_heart',
+        title: 'Beta-hCG sonucu beklemek',
+        description: 'Düşük, sınırda veya yükselen değerleri acele yorumlamadan takip planını anlamak kaygıyı azaltabilir.'
+    },
+    {
+        href: '/makaleler/kimyasal-gebelik',
+        icon: 'science',
+        title: 'Kimyasal gebelik sonrası',
+        description: 'Erken kayıp, suçluluk hissi ve sonraki deneme kararını tıbbi ve duygusal açıdan birlikte ele alın.'
+    },
+    {
+        href: '/basarisiz-denemeler',
+        icon: 'restart_alt',
+        title: 'Negatif test veya başarısız deneme',
+        description: 'Yas, mola verme, yeniden değerlendirme ve sonraki adımı planlama ayrı ayrı düşünülmelidir.'
+    },
+    {
+        href: '/beslenme-yasam',
+        icon: 'self_improvement',
+        title: 'Uyku, stres ve günlük rutin',
+        description: 'Kontrol edilebilir küçük rutinler, tedavi sonucunu garanti etmez ama dayanıklılığı destekleyebilir.'
+    },
+    {
+        href: '/makaleler/duygusal-dayaniklik-rehberi',
+        icon: 'psychology',
+        title: 'Profesyonel destek alma zamanı',
+        description: 'Kaygı, uyku bozulması, işlev kaybı veya ilişki zorlanması belirginleşirse destek almak geciktirilmemelidir.'
+    }
+];
 
 const faqs = [
     {
@@ -34,10 +74,20 @@ const faqSchema = {
         }
     }))
 };
+
+const itemListSchema = buildHubItemListSchema({
+    site: Astro.site,
+    pagePath: '/psikolojik-destek/',
+    id: 'destek-haritasi',
+    name: 'Psikolojik destek konu haritası',
+    description: 'Transfer sonrası bekleme, beta-hCG sonucu, kimyasal gebelik, başarısız deneme, günlük rutin ve profesyonel destek kararlarını bağlayan duygusal destek okuma yolu.',
+    items: supportHubLinks
+});
 ---
 
 <BaseLayout title="Psikolojik Destek ve Duygusal Rehber: İnfertilite Yolculuğu | tupbebek.com" description="İnfertilite sürecinin duygusal etkileri, çift ilişkileri, başarısız denemeler ve profesyonel destek alma zamanı. Duygusal rehber ve destek kaynakları.">
     <script type="application/ld+json" is:inline set:html={JSON.stringify(faqSchema)} />
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(itemListSchema)} />
     <Header />
 
     <main id="main-content" tabindex="-1" class="pb-24">
@@ -102,36 +152,13 @@ const faqSchema = {
                     </p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    <a href="/transfer-sureci" class="rounded-xl border border-gray-100 bg-gray-50 p-5 hover:border-primary-200 hover:bg-primary-50/40 transition-colors">
-                        <span class="material-symbols-outlined text-primary-600 mb-3">hourglass_top</span>
-                        <h3 class="font-bold text-gray-900 text-sm mb-2">Transfer sonrası bekleme</h3>
-                        <p class="text-xs text-gray-600 leading-relaxed">Belirti takibi, test zamanı ve belirsizlikle baş etme için transfer rehberine geçin.</p>
-                    </a>
-                    <a href="/makaleler/beta-hcg-testi" class="rounded-xl border border-gray-100 bg-gray-50 p-5 hover:border-primary-200 hover:bg-primary-50/40 transition-colors">
-                        <span class="material-symbols-outlined text-primary-600 mb-3">monitor_heart</span>
-                        <h3 class="font-bold text-gray-900 text-sm mb-2">Beta-hCG sonucu beklemek</h3>
-                        <p class="text-xs text-gray-600 leading-relaxed">Düşük, sınırda veya yükselen değerleri acele yorumlamadan takip planını anlamak kaygıyı azaltabilir.</p>
-                    </a>
-                    <a href="/makaleler/kimyasal-gebelik" class="rounded-xl border border-gray-100 bg-gray-50 p-5 hover:border-primary-200 hover:bg-primary-50/40 transition-colors">
-                        <span class="material-symbols-outlined text-primary-600 mb-3">science</span>
-                        <h3 class="font-bold text-gray-900 text-sm mb-2">Kimyasal gebelik sonrası</h3>
-                        <p class="text-xs text-gray-600 leading-relaxed">Erken kayıp, suçluluk hissi ve sonraki deneme kararını tıbbi ve duygusal açıdan birlikte ele alın.</p>
-                    </a>
-                    <a href="/basarisiz-denemeler" class="rounded-xl border border-gray-100 bg-gray-50 p-5 hover:border-primary-200 hover:bg-primary-50/40 transition-colors">
-                        <span class="material-symbols-outlined text-primary-600 mb-3">restart_alt</span>
-                        <h3 class="font-bold text-gray-900 text-sm mb-2">Negatif test veya başarısız deneme</h3>
-                        <p class="text-xs text-gray-600 leading-relaxed">Yas, mola verme, yeniden değerlendirme ve sonraki adımı planlama ayrı ayrı düşünülmelidir.</p>
-                    </a>
-                    <a href="/beslenme-yasam" class="rounded-xl border border-gray-100 bg-gray-50 p-5 hover:border-primary-200 hover:bg-primary-50/40 transition-colors">
-                        <span class="material-symbols-outlined text-primary-600 mb-3">self_improvement</span>
-                        <h3 class="font-bold text-gray-900 text-sm mb-2">Uyku, stres ve günlük rutin</h3>
-                        <p class="text-xs text-gray-600 leading-relaxed">Kontrol edilebilir küçük rutinler, tedavi sonucunu garanti etmez ama dayanıklılığı destekleyebilir.</p>
-                    </a>
-                    <a href="/makaleler/duygusal-dayaniklik-rehberi" class="rounded-xl border border-gray-100 bg-gray-50 p-5 hover:border-primary-200 hover:bg-primary-50/40 transition-colors">
-                        <span class="material-symbols-outlined text-primary-600 mb-3">psychology</span>
-                        <h3 class="font-bold text-gray-900 text-sm mb-2">Profesyonel destek alma zamanı</h3>
-                        <p class="text-xs text-gray-600 leading-relaxed">Kaygı, uyku bozulması, işlev kaybı veya ilişki zorlanması belirginleşirse destek almak geciktirilmemelidir.</p>
-                    </a>
+                    {supportHubLinks.map((item) => (
+                        <a href={item.href} class="rounded-xl border border-gray-100 bg-gray-50 p-5 hover:border-primary-200 hover:bg-primary-50/40 transition-colors">
+                            <span class="material-symbols-outlined text-primary-600 mb-3">{item.icon}</span>
+                            <h3 class="font-bold text-gray-900 text-sm mb-2">{item.title}</h3>
+                            <p class="text-xs text-gray-600 leading-relaxed">{item.description}</p>
+                        </a>
+                    ))}
                 </div>
             </div>
         </section>

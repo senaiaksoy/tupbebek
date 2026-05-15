@@ -2,6 +2,46 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import { buildHubItemListSchema } from '../utils/hubStructuredData';
+
+const lifestyleHubLinks = [
+    {
+        href: '/makaleler/alkol-ve-fertilite',
+        icon: 'local_bar',
+        title: 'Alkol, sigara ve maruziyetler',
+        description: 'Sperm, hormonlar, yumurtlama ve IVF planı açısından azaltma/bırakma kararları.'
+    },
+    {
+        href: '/makaleler/erkek-dogurganlik-besin-takviyeleri',
+        icon: 'nutrition',
+        title: 'Takviyeler ve antioksidanlar',
+        description: 'Eksiklik, semen analizi ve kanıt düzeyi olmadan her takviye aynı etkiyi göstermez.'
+    },
+    {
+        href: '/makaleler/vajinal-mikrobiyom-fiv',
+        icon: 'microbiology',
+        title: 'Mikrobiyom ve enfeksiyon belirtileri',
+        description: 'Akıntı, koku, kaşıntı, laktobasil dengesi ve transfer öncesi değerlendirme.'
+    },
+    {
+        href: '/makaleler/opk-ve-ivf',
+        icon: 'cycle',
+        title: 'PCOS, insülin direnci ve döngü',
+        description: 'Yumurtlama, metformin, kilo yönetimi ve tedaviye hazırlık aynı çerçevede okunur.'
+    },
+    {
+        href: '/transfer-sureci',
+        icon: 'hourglass_top',
+        title: 'Transfer sonrası bekleme',
+        description: 'Dinlenme, aktivite, beslenme ve belirti takibinde aşırı kısıtlama yerine dengeli yaklaşım.'
+    },
+    {
+        href: '/psikolojik-destek',
+        icon: 'psychology',
+        title: 'Stres ve duygusal dayanıklılık',
+        description: 'Kaygı yönetimi, uyku, sosyal destek ve profesyonel yardım alma zamanları.'
+    }
+];
 
 const faqs = [
     {
@@ -34,10 +74,19 @@ const faqSchema = {
         }
     }))
 };
+
+const itemListSchema = buildHubItemListSchema({
+    site: Astro.site,
+    pagePath: '/beslenme-yasam/',
+    name: 'Beslenme ve yaşam tarzı konu haritası',
+    description: 'Alkol, takviyeler, mikrobiyom, PCOS, transfer sonrası bekleme ve stres yönetimini IVF hazırlığı içinde bağlayan destekleyici okuma yolu.',
+    items: lifestyleHubLinks
+});
 ---
 
 <BaseLayout title="Beslenme ve Yaşam Tarzı: Doğurganlığın İyileştirilmesi | tupbebek.com" description="IVF için beslenme rehberi, yaşam tarzı değişiklikleri, kilo yönetimi, antioksidanlar, alkol, kafein, sigara ve stres yönetimi.">
     <script type="application/ld+json" is:inline set:html={JSON.stringify(faqSchema)} />
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(itemListSchema)} />
     <Header />
 
     <main id="main-content" tabindex="-1" class="pb-24">
@@ -92,7 +141,7 @@ const faqSchema = {
             </div>
         </section>
 
-        <section class="max-w-5xl mx-auto px-4 md:px-6 lg:px-8 mb-20">
+        <section id="konu-haritasi" class="max-w-5xl mx-auto px-4 md:px-6 lg:px-8 mb-20">
             <div class="bg-white border border-gray-200 rounded-2xl p-6 md:p-8">
                 <div class="max-w-3xl mb-8">
                     <span class="text-xs font-semibold uppercase tracking-wider text-primary-600">Destekleyici Hub</span>
@@ -102,36 +151,13 @@ const faqSchema = {
                     </p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    <a href="/makaleler/alkol-ve-fertilite" class="rounded-xl border border-gray-100 bg-gray-50 p-5 hover:border-primary-200 hover:bg-primary-50/40 transition-colors">
-                        <span class="material-symbols-outlined text-primary-600 mb-3">local_bar</span>
-                        <h3 class="font-bold text-gray-900 text-sm mb-2">Alkol, sigara ve maruziyetler</h3>
-                        <p class="text-xs text-gray-600 leading-relaxed">Sperm, hormonlar, yumurtlama ve IVF planı açısından azaltma/bırakma kararları.</p>
-                    </a>
-                    <a href="/makaleler/erkek-dogurganlik-besin-takviyeleri" class="rounded-xl border border-gray-100 bg-gray-50 p-5 hover:border-primary-200 hover:bg-primary-50/40 transition-colors">
-                        <span class="material-symbols-outlined text-primary-600 mb-3">nutrition</span>
-                        <h3 class="font-bold text-gray-900 text-sm mb-2">Takviyeler ve antioksidanlar</h3>
-                        <p class="text-xs text-gray-600 leading-relaxed">Eksiklik, semen analizi ve kanıt düzeyi olmadan her takviye aynı etkiyi göstermez.</p>
-                    </a>
-                    <a href="/makaleler/vajinal-mikrobiyom-fiv" class="rounded-xl border border-gray-100 bg-gray-50 p-5 hover:border-primary-200 hover:bg-primary-50/40 transition-colors">
-                        <span class="material-symbols-outlined text-primary-600 mb-3">microbiology</span>
-                        <h3 class="font-bold text-gray-900 text-sm mb-2">Mikrobiyom ve enfeksiyon belirtileri</h3>
-                        <p class="text-xs text-gray-600 leading-relaxed">Akıntı, koku, kaşıntı, laktobasil dengesi ve transfer öncesi değerlendirme.</p>
-                    </a>
-                    <a href="/makaleler/opk-ve-ivf" class="rounded-xl border border-gray-100 bg-gray-50 p-5 hover:border-primary-200 hover:bg-primary-50/40 transition-colors">
-                        <span class="material-symbols-outlined text-primary-600 mb-3">cycle</span>
-                        <h3 class="font-bold text-gray-900 text-sm mb-2">PCOS, insülin direnci ve döngü</h3>
-                        <p class="text-xs text-gray-600 leading-relaxed">Yumurtlama, metformin, kilo yönetimi ve tedaviye hazırlık aynı çerçevede okunur.</p>
-                    </a>
-                    <a href="/transfer-sureci" class="rounded-xl border border-gray-100 bg-gray-50 p-5 hover:border-primary-200 hover:bg-primary-50/40 transition-colors">
-                        <span class="material-symbols-outlined text-primary-600 mb-3">hourglass_top</span>
-                        <h3 class="font-bold text-gray-900 text-sm mb-2">Transfer sonrası bekleme</h3>
-                        <p class="text-xs text-gray-600 leading-relaxed">Dinlenme, aktivite, beslenme ve belirti takibinde aşırı kısıtlama yerine dengeli yaklaşım.</p>
-                    </a>
-                    <a href="/psikolojik-destek" class="rounded-xl border border-gray-100 bg-gray-50 p-5 hover:border-primary-200 hover:bg-primary-50/40 transition-colors">
-                        <span class="material-symbols-outlined text-primary-600 mb-3">psychology</span>
-                        <h3 class="font-bold text-gray-900 text-sm mb-2">Stres ve duygusal dayanıklılık</h3>
-                        <p class="text-xs text-gray-600 leading-relaxed">Kaygı yönetimi, uyku, sosyal destek ve profesyonel yardım alma zamanları.</p>
-                    </a>
+                    {lifestyleHubLinks.map((item) => (
+                        <a href={item.href} class="rounded-xl border border-gray-100 bg-gray-50 p-5 hover:border-primary-200 hover:bg-primary-50/40 transition-colors">
+                            <span class="material-symbols-outlined text-primary-600 mb-3">{item.icon}</span>
+                            <h3 class="font-bold text-gray-900 text-sm mb-2">{item.title}</h3>
+                            <p class="text-xs text-gray-600 leading-relaxed">{item.description}</p>
+                        </a>
+                    ))}
                 </div>
             </div>
         </section>
