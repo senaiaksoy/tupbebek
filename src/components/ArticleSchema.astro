@@ -47,7 +47,11 @@ interface Props {
 const ORG_ID = 'https://tupbebek.com/#organization';
 const WEBSITE_ID = 'https://tupbebek.com/#website';
 const EDITORIAL_BOARD_ID = 'https://tupbebek.com/yayin-kurulu/#editorial-board';
-const SENAI_AKSOY_PERSON_ID = 'https://tupbebek.com/yazar/senai-aksoy/#person';
+// Canonical Person @id — portföy genelinde Dr. Aksoy tek entity'ye çözülür.
+// senaiaksoy.net Block A'da deklare edilmiş tek kanonik kayıt; bu site
+// yazar/senai-aksoy/ sayfasında tamamlayıcı attributes (alumniOf, memberOf
+// vb.) ile aynı @id'yi extend eder.
+const SENAI_AKSOY_PERSON_ID = 'https://senaiaksoy.net/#person';
 
 const { entry, url } = Astro.props;
 const canonicalUrl = new URL(url);
@@ -84,15 +88,7 @@ const authorYoutube =
 // knowledge-graph node across all articles.
 const isSenaiAksoy = /senai\s+aksoy/i.test(authorName || '');
 const authorSchema: Record<string, unknown> = isSenaiAksoy
-    ? {
-        "@type": "Person",
-        "@id": SENAI_AKSOY_PERSON_ID,
-        "name": authorName,
-        ...(authorTitle ? { "jobTitle": authorTitle } : {}),
-        ...(authorCredentials ? { "qualifications": authorCredentials } : {}),
-        ...(authorYoutube ? { "sameAs": authorYoutube } : {}),
-        "url": "https://tupbebek.com/yazar/senai-aksoy/",
-    }
+    ? { "@id": SENAI_AKSOY_PERSON_ID }
     : {
         "@type": "Person",
         "name": authorName,
@@ -167,7 +163,12 @@ const articleSchema = {
     ...(d.publishDate ? { "datePublished": d.publishDate.toISOString().split('T')[0] } : {}),
     ...(d.lastModified ? { "dateModified": d.lastModified.toISOString().split('T')[0] } : {}),
     "author": authorSchema,
-    ...(reviewerSchema ? { "reviewedBy": reviewerSchema } : { "reviewedBy": { "@id": EDITORIAL_BOARD_ID } }),
+    // Dr. Aksoy yazar ise reviewedBy de canonical @id'ye (hem yazar hem reviewer pattern)
+    ...(reviewerSchema
+        ? { "reviewedBy": reviewerSchema }
+        : isSenaiAksoy
+            ? { "reviewedBy": { "@id": SENAI_AKSOY_PERSON_ID } }
+            : { "reviewedBy": { "@id": EDITORIAL_BOARD_ID } }),
     ...(d.reviewDate ? { "lastReviewed": d.reviewDate.toISOString().split('T')[0] } : {}),
     "publisher": { "@id": ORG_ID },
     "isPartOf": { "@id": WEBSITE_ID },

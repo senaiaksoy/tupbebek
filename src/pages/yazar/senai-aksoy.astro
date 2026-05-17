@@ -3,7 +3,10 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 
-const PERSON_ID = 'https://tupbebek.com/yazar/senai-aksoy/#person';
+// Canonical Person @id — senaiaksoy.net Block A'da deklare edilmiş tek kayıt.
+// Bu sayfa rich attributes (alumniOf, memberOf, hasOccupation, knowsAbout)
+// ekleyerek aynı entity'yi extend eder; Google ve AI motorları @graph birleştirir.
+const PERSON_ID = 'https://senaiaksoy.net/#person';
 const ORG_ID = 'https://tupbebek.com/#organization';
 const PAGE_URL = 'https://tupbebek.com/yazar/senai-aksoy/';
 
