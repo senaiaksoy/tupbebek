@@ -221,10 +221,13 @@ const {
       var category = result.category || result.type || 'Makale';
       var style = getCategoryStyle(category);
       var hasImage = !!result.image;
+      // Guard: skip items with missing URL to avoid emitting href="undefined" or literal template tokens (GSC 404 source).
+      if (!result.url || typeof result.url !== 'string') return '';
+      var safeUrl = result.url;
 
       return `
         <li class="search-result-item" style="animation-delay: ${i * 0.04}s">
-          <a href="${result.url}"
+          <a href="${safeUrl}"
              class="flex items-center gap-3 px-4 py-3 hover:bg-gray-50 transition-colors focus:bg-gray-50 focus:outline-none group/item"
              tabindex="0">
             ${hasImage ? `
