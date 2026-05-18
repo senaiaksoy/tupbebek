@@ -298,7 +298,9 @@ const fallbackData = await getSearchData();
           .map((result, index) => {
             const title = result.meta?.title || 'Makale';
             const excerpt = result.excerpt || '';
-            const url = result.url || '#';
+            // Guard: skip items with missing URL to avoid emitting href="undefined" or literal template tokens (GSC 404 source).
+            if (!result.url || typeof result.url !== 'string') return '';
+            const safeUrl = result.url;
             const category = result.filters?.category?.[0] || result.meta?.category || '';
             
             // Critical fix: Sanitize image URL from Pagefind metadata (removes stray category tags)
@@ -309,7 +311,7 @@ const fallbackData = await getSearchData();
 
             return `
               <li class="search-result-item" style="animation-delay: ${index * 0.05}s">
-                <a href="${url}"
+                <a href="${safeUrl}"
                    class="block p-4 bg-white/40 border border-gray-100/50 rounded-2xl
                           hover:bg-primary-600 hover:border-primary-200 transition-all duration-300
                           focus:outline-none focus:ring-2 focus:ring-primary-200 group/item">
