@@ -220,6 +220,7 @@ export const footerLinks = [
     category: 'Kaynaklar',
     links: [
       { label: 'Makaleler', href: '/makaleler' },
+      { label: 'Baş Editör Köşesi', href: '/bas-editor-kosesi' },
       { label: 'Tıbbi Sözlük', href: '/tibbi-sozluk' },
       { label: 'Sık Sorulan Sorular', href: '/sss' },
       { label: 'Beslenme & Yaşam', href: '/beslenme-yasam' },
@@ -232,6 +233,7 @@ export const footerLinks = [
     links: [
       { label: 'Hakkımızda', href: '/hakkimizda' },
       { label: 'Editöryal Politika', href: '/editoryal-politika' },
+      { label: 'Baş Editör', href: '/yazar/senai-aksoy' },
       { label: 'İletişim', href: '/iletisim' },
     ]
   }

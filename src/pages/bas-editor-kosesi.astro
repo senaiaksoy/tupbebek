@@ -1,0 +1,110 @@
+---
+import { getPublishedArticles, sanitizeImage } from '../utils/articles';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const articles = await getPublishedArticles();
+
+// "Baş Editör Köşesi" kategorisindeki imzalı perspektif yazılarını
+// kronolojik tersten sırala (en yeni en üstte).
+const editorColumns = articles
+    .filter(a => a.data.category === 'Baş Editör Köşesi')
+    .sort((a, b) =>
+        (b.data.publishDate?.getTime() ?? 0) - (a.data.publishDate?.getTime() ?? 0)
+    );
+
+const formatLongDate = (date?: Date) =>
+    date?.toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' });
+---
+
+<BaseLayout
+    title="Baş Editör Köşesi | Doç. Dr. Senai Aksoy'un İmzalı Perspektif Yazıları"
+    description="Doç. Dr. Senai Aksoy'un birinci tekil sesinde, kanıt temelli ve klinik deneyime dayalı imzalı perspektif yazıları. Üreme tıbbı, tüp bebek ve add-on testler üzerine."
+    canonical="https://tupbebek.com/bas-editor-kosesi/"
+>
+    <Header />
+
+    <main id="main-content" tabindex="-1" class="pt-32 pb-24">
+        <!-- Hero Header -->
+        <header class="max-w-7xl mx-auto px-6 mb-16">
+            <div class="max-w-3xl">
+                <nav class="flex items-center gap-2 text-xs font-label text-gray-600 mb-6 uppercase tracking-widest" aria-label="Breadcrumb">
+                    <a href="/" class="hover:text-primary-600 transition-colors">Ana Sayfa</a>
+                    <span class="text-gray-400">/</span>
+                    <span class="text-gray-900">Baş Editör Köşesi</span>
+                </nav>
+                <p class="text-primary-600 font-bold tracking-widest uppercase text-xs mb-4">İmzalı Perspektif</p>
+                <h1 class="text-4xl md:text-5xl font-headline text-gray-900 mb-6 leading-tight">
+                    Baş Editör Köşesi
+                </h1>
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    Doç. Dr. Senai Aksoy'un birinci tekil sesinde, kanıt temelli ve klinik deneyime dayalı yazıları. Üreme tıbbının tartışmalı sınırları, add-on testler, kılavuz güncellemeleri ve klinik kararlar üzerine.
+                </p>
+                <p class="text-sm text-gray-500 mt-4 italic">
+                    Garantiler buzdolabı içindir, biyoloji için değil.
+                </p>
+            </div>
+        </header>
+
+        <!-- Articles list -->
+        <section class="max-w-7xl mx-auto px-6">
+            {editorColumns.length === 0 ? (
+                <div class="text-center py-16 text-gray-500">
+                    <p>Henüz yayımlanmış imzalı perspektif yazısı bulunmuyor.</p>
+                </div>
+            ) : (
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    {editorColumns.map(article => (
+                        <a
+                            href={`/makaleler/${article.slug}/`}
+                            class="group flex flex-col bg-white border border-gray-200 rounded-xl overflow-hidden hover:border-primary-300 hover:shadow-lg transition-all"
+                        >
+                            {article.data.image && (
+                                <div class="aspect-[16/10] overflow-hidden bg-gray-100">
+                                    <img
+                                        src={sanitizeImage(article.data.image)}
+                                        alt={article.data.imageAlt || article.data.title}
+                                        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                        loading="lazy"
+                                    />
+                                </div>
+                            )}
+                            <div class="p-6 flex flex-col flex-grow">
+                                <p class="text-xs uppercase tracking-widest text-primary-600 font-bold mb-3">
+                                    Doç. Dr. Senai Aksoy
+                                </p>
+                                <h2 class="text-xl md:text-2xl font-headline text-gray-900 mb-3 leading-tight group-hover:text-primary-700 transition-colors">
+                                    {article.data.title}
+                                </h2>
+                                <p class="text-gray-600 text-sm leading-relaxed mb-4 flex-grow">
+                                    {article.data.description}
+                                </p>
+                                <div class="flex items-center justify-between text-xs text-gray-500 pt-4 border-t border-gray-100">
+                                    <time datetime={article.data.publishDate?.toISOString()}>
+                                        {formatLongDate(article.data.publishDate)}
+                                    </time>
+                                    <span class="text-primary-600 font-bold group-hover:translate-x-1 transition-transform">
+                                        Oku →
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    ))}
+                </div>
+            )}
+        </section>
+
+        <!-- Editorial policy note -->
+        <section class="max-w-3xl mx-auto px-6 mt-20 text-center">
+            <div class="border-t border-gray-200 pt-12">
+                <p class="text-sm text-gray-600 leading-relaxed">
+                    Baş Editör Köşesi yazıları Doç. Dr. Senai Aksoy'un kişisel klinik ve etik perspektifini taşır. tupbebek.com bağımsız bir editöryal yayın portalıdır; bu yazılar tedavi tavsiyesi yerine geçmez. Editöryal ilkelerimiz için
+                    <a href="/editoryal-politika/" class="text-primary-600 underline hover:text-primary-700">editöryal politika</a> sayfamıza bakılabilir.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <Footer />
+</BaseLayout>
