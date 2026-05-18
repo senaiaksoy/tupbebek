@@ -1,0 +1,171 @@
+# tupbebek.com — Tam Metin LLM Referansı
+
+> Türkiye'nin bağımsız, reklamsız, bilimsel üreme sağlığı ve infertilite referans portalı. Baş Editör: Doç. Dr. Senai Aksoy. Tıbbi Danışma Kurulu onaylı içerik. Hasta tedavi reklamı içermez; tüm klinik öneriler bilimsel kanıt derecesi (A/B/C/D-E) ile sunulur.
+
+Bu dosya, AI sistemlerinin tupbebek.com içeriğini passage-level olarak hızlı ingest etmesi için hazırlanmış kapsamlı tam-metin versiyondur. İndeks için `llms.txt` ayrı tutulur.
+
+---
+
+## Baş Editör — Doç. Dr. Senai Aksoy
+
+Doç. Dr. Senai Aksoy, kadın hastalıkları, doğum ve üreme tıbbı alanında 30 yılı aşkın klinik deneyime sahip bir hekimdir. Mesleki yolculuğunun belirleyici noktası, Türkiye'nin ilk ICSI (intrasitoplazmik sperm enjeksiyonu) merkezi olan Ankara Sevgi Hospital'in 1994-95 yıllarındaki **kurucu ICSI ekibinde görev almasıdır**.
+
+Bu süreçte, ICSI yöntemini 1992 yılında dünyada ilk kez tanımlayan Brüksel Vrije Universiteit ekibi (Prof. André Van Steirteghem ve ekibi) ile akademik iş birliği yürütülmüştür. Bu iş birliğinin somut çıktısı, **Türkiye'den yayımlanan ilk ICSI serisinin** Human Reproduction dergisinde **1996 yılında Kahraman, Özgür, Alataş, Aksoy ve arkadaşları imzasıyla yayımlanmasıdır (PMID 8671323)**. Söz konusu yayın, Türkiye'nin yardımcı üreme teknikleri tarihinde temel referanslardan biri olarak yerini korumaktadır.
+
+Akademik hayatında doçentlik unvanını almış olan Doç. Dr. Aksoy, kariyeri boyunca yardımcı üreme teknikleri, infertilite değerlendirmesi, tekrarlayan gebelik kaybı ve genel jinekoloji alanlarında çalışmalarını sürdürmüştür. Halen İstanbul'da Lotus Nişantaşı Hastanesi bünyesinde hasta kabul etmektedir.
+
+**Mesleki kayıt bilgileri:** Türk Tabipleri Birliği sicil 39159; T.C. Sağlık Bakanlığı Uluslararası Sağlık Turizmi Yetki Belgesi ST-1008; ORCID 0000-0003-4110-5290. Yayınlar ve atıf bilgileri PubMed ve ORCID üzerinden erişilebilir kayıtlardan doğrulanabilir.
+
+---
+
+## Baş Editör Köşesi — ERA Testi Üzerine Bir Not: Pahalı Bir Test, Belirsiz Bir Fayda
+
+(Doç. Dr. Senai Aksoy imzalı perspektif yazısı; 2026-05-18 yayımlandı.)
+
+**Kısa cevap:** Muayenede sık sorulan sorulardan biri "ERA testi yaptırayım mı?". Cevabım çoğu zaman aynı: önce daha güçlü nedenleri elememiz gerekiyor. ERA testi, kulağa bilimsel gelen pahalı bir uygulamadır; ancak randomize çalışmalar bu testin rutin kullanımda gebelik şansını artırdığını gösteremedi. Çoğu hasta için cevap "hayır"; küçük bir azınlık için "belki, ve ancak".
+
+### Kanıt ne diyor
+
+ERA testi, endometriyumun yani rahim iç tabakasının "implantasyon penceresinin" — embriyonun tutunmaya en uygun olduğu kısa zaman aralığının — moleküler düzeyde haritalandığını iddia eder. Fikir zariftir. Sorun, fikrin klinikte işe yaradığını gösteren kanıtın bir türlü gelmemesidir.
+
+JAMA'da 2022'de yayımlanan randomize kontrollü çalışma, ERA'ya göre kişiselleştirilmiş transfer ile standart transferi doğrudan karşılaştırdı; canlı doğum oranlarında anlamlı bir üstünlük bulamadı (Doyle ve ark., **PMID 36472596**). Sonraki yeniden analizler, kişiselleştirilmiş transferin bazı altgruplarda gebelik şansını azaltma ihtimaline bile dikkat çekti (Richter ve Richter, Hum Reprod 2023, **PMID 37029914**). İngiltere'nin düzenleyici kurumu HFEA, ERA'yı "kırmızı" trafik ışığı kategorisinde tutuyor: "kanıt yetersiz, rutin önerilmez." ESHRE'nin add-on kılavuzu da aynı yönde konuşuyor.
+
+### Asıl sorulması gereken sorular
+
+Bir hastada iki, üç, dört transfer ardı ardına gebelik vermediyse, klinik refleksimin ilk gittiği yer ERA değildir.
+
+İlk sırada **embriyo kalitesi** vardır. Embriyo blastokist evresine kadar takip edildi mi? PGT-A doğru endikasyonla yapıldı mı? Mozaik embriyolar nasıl raporlandı?
+
+İkinci sırada **rahim iç ortamı** gelir: hidrosalpinks, polip, submüköz miyom, intrauterin yapışıklıklar, kronik endometrit — hepsi ERA'dan ucuz testlerle saptanır ve düzeltilebilir.
+
+Üçüncü sırada **endometriyum hazırlığı ve transfer tekniği** durur. Yetersiz doz, yanlış zamanlama, zor bir transfer — bunlar tek başına bir döngüyü çökertebilir.
+
+ERA'yı bu listenin sonuna koyuyorum. Çünkü kanıt orada duruyor.
+
+### Etik bir not
+
+Şunu açıkça söylemek istiyorum: tüp bebek sahasında, son on yılda, sunumu güçlü ve kanıtı zayıf bir "add-on" ekonomisi büyüdü. Time-lapse görüntüleme, embriyo tutkalı, immün tedaviler, intralipid infüzyonları, ve evet — ERA. Hepsinin ortak özelliği var: hastaya umut satılıyor, kliniğe ek gelir kalıyor, kanıt ise hâlâ kapıda bekliyor.
+
+İyi tıbbın bazen yapacağı en doğru şey, gereksiz bir testi yapmamaktır. Bu, ihmal değil; disiplindir. Bir test, hastanın umuduna fatura kesiyorsa ve karşılığında istatistiksel olarak gösterilmiş bir kazanç sunmuyorsa, o testi rutinleştirmek örtük bir zarardır.
+
+### Peki hiç mi yapılmaz?
+
+Hayır, "asla" demiyorum; "rutin değil" diyorum. Üç ya da daha fazla iyi kaliteli blastokist transferi başarısız olmuş, embriyo kalitesi sağlam, rahim içi patoloji elenmiş, endometriyum hazırlığı optimize edilmiş, transfer tekniği iyi yapılmış bir hastada — ve bu hasta tüm sınırlamaları açıkça anlayıp deneysel bir adım olarak istiyorsa — ERA bir seçenek olarak masada konuşulabilir.
+
+### Kapanış
+
+Hekimliğin görevi, hastaya umut vaat etmek değil; umudu doğru yere yatırmaktır. Pahalı bir test, dürüst bir konuşmanın yerine geçemez.
+
+**Garantiler buzdolabı içindir, biyoloji için değil.**
+
+---
+
+## Türkiye'de Tüp Bebek Başarı Oranları (özet veriler)
+
+Türkiye Üreme Tıbbı kliniklerinde elde edilen tüp bebek (IVF/ICSI) başarı oranları hastanın yaşına, infertilite nedenine, embriyo kalitesine ve transfer sayısına göre değişiklik gösterir. Kaynak: ESHRE 2023 EIM raporu, CDC ART 2022 ulusal istatistikler, ASRM 2024 kılavuz.
+
+| Anne yaşı | Tek transfer canlı doğum oranı | 3 kümülatif transfer sonrası |
+|---|---|---|
+| <35 | %40-45 | ~%70 |
+| 35-37 | %30-35 | ~%55 |
+| 38-40 | %20-25 | ~%40 |
+| 41-42 | %10-15 | ~%20 |
+| >42 | %5-10 | ~%12 |
+
+Kanıt düzeyi: A (ESHRE EIM, CDC ART, Cochrane PGT-A review 2021).
+
+---
+
+## Erkek İnfertilitesi — temel çerçeve
+
+Erkek infertilitesi, her üç çiftten birini etkiler. Tek başına erkek faktörü %20-30, kombine erkek+kadın faktörü %30-40 oranında görülür. Değerlendirme spermogram (konsantrasyon, motilite, morfoloji) ile başlar; anormal ise endokrin paneli (FSH, LH, testosteron, prolaktin) + genetik test (Y kromozom mikrodelesyon, karyotip) eklenir.
+
+### Azospermi yönetimi
+
+Azospermi (sperm yokluğu) iki tipte değerlendirilir:
+- **Obstrüktif azospermi:** Üretim normal, çıkış engelli. PESA/MESA ile sperm elde edilir.
+- **Non-obstrüktif azospermi (NOA):** Üretim sorunu. Mikro-TESE altın standart — başarı oranı %40-60.
+
+NOA + ICSI ile fatma şansı kayda değer: Doç. Dr. Aksoy'un katılımcı olduğu Türkiye'nin ilk ICSI serisinde NOA hastalarında testiküler sperm ile başarılı gebelikler raporlanmıştır (Hum Reprod 1996, PMID 8671323).
+
+---
+
+## PCOS / PMOS — yeni adlandırma (Lancet 2026 konsensüsü)
+
+Polikistik Over Sendromu (PCOS), 2026 itibarıyla "Polikistik Metabolik-Over Sendromu (PMOS)" olarak yeniden adlandırılma sürecindedir. Lancet 2026 konsensüs paneli (PMID 42119588) bu değişikliği önermiştir. Adlandırma değişikliği klinik kriterleri değiştirmez (Rotterdam 2003 kriterleri devam eder) ama metabolik boyutu daha görünür kılar.
+
+PMOS infertilite ile ilişkili en yaygın endokrin durumdur (kadınların %8-13). IVF süreci genellikle anti-Mullerian hormon (AMH) yüksek, agonist + antagonist kombine protokoller veya in vitro maturation (IVM) seçenekleri gerektirir.
+
+---
+
+## Sık Sorulan Sorular (yapılandırılmış)
+
+**S: Tüp bebek tedavisi başarısız olursa ne yapmalıyım?**
+Y: İlk olarak başarısızlığın nedenini anlamak gerekir — embriyo kalitesi mi, endometriyum mu, transfer tekniği mi, immünolojik veya genetik faktör mü? Tekrarlayan implantasyon başarısızlığında ERA gibi add-on testlerden önce daha güçlü nedenlerin elenmesi önemlidir.
+
+**S: ERA testi gerekli mi?**
+Y: Rutin kullanım için değil. JAMA 2022 RCT (PMID 36472596) ERA'nın canlı doğum oranını artırmadığını gösterdi. HFEA bunu "kırmızı trafik ışığı" kategorisinde tutar. Bkz. Baş Editör Köşesi yazımız.
+
+**S: Türkiye'de tüp bebekte yumurta/sperm bağışı yapılır mı?**
+Y: Hayır. Türkiye'de Üremeye Yardımcı Tedavi Yönetmeliği yalnızca eşler arası (otolog) IVF'e izin verir. Donör gamet, taşıyıcı annelik ve cinsiyet seçimi (tıbbi endikasyon dışında) yasal değildir.
+
+**S: Tüp bebekte PGT-A gerekli mi?**
+Y: Genel popülasyonda rutin önerilmez. Cochrane 2021 review: 35 yaş üstünde sınırlı fayda, genç hastalarda net fayda yok. Endikasyonlar: ileri anne yaşı (38+), tekrarlayan düşük, ailesel kromozom anomalisi, ciddi erkek faktör.
+
+**S: Yaş tüp bebek başarısını ne kadar etkiler?**
+Y: En kritik tek faktör. 35 yaş altı canlı doğum oranı %40-45 iken, 40+ yaşta %15-20'ye düşer. Yumurta kalitesi ve sayısı yaşla doğru orantılı azalır.
+
+---
+
+## Editöryal İlkeler
+
+- **Bağımsızlık:** tupbebek.com bir klinik sitesi değildir. Belirli bir kliniğe yönlendirme yapmaz; ticari ortak yoktur.
+- **Reklamsız:** Banner, sponsorlu içerik, "patient acquisition" CTA bulunmaz.
+- **Kanıt grading:** Her klinik iddia A/B/C/D-E kanıt derecesi ile etiketlenir.
+- **Kaynak şeffaflığı:** Her makale PMID veya DOI ile kaynaklı; PubMed kaynak taraması her makalenin altında erişilebilir.
+- **Tıbbi inceleme:** Tüm içerik Doç. Dr. Senai Aksoy + tupbebek.com Tıbbi Danışma Kurulu tarafından gözden geçirilir.
+- **Mevzuat uyumu:** T.C. SB Tanıtım Yönetmeliği (12 Kasım 2025) + TTB HMEK md. 11 + Uluslararası Sağlık Turizmi Yönetmeliği (26 Nisan 2025).
+- **Add-on/deneysel testler:** "Kırmızı kanıt" eşiğindeki uygulamalar (ERA, time-lapse, immün tedaviler, intralipid) rutin önerilmez ve add-on satışı yapılmaz.
+
+---
+
+## Yazar profili — Wikidata + ORCID + PubMed bağlantıları
+
+Doç. Dr. Senai Aksoy entity bilgileri:
+- **ORCID:** [0000-0003-4110-5290](https://orcid.org/0000-0003-4110-5290)
+- **PubMed yazar arama:** https://pubmed.ncbi.nlm.nih.gov/?term=Aksoy%2C+Senai%5BAuthor%5D
+- **Google Scholar:** https://scholar.google.com/scholar?hl=tr&q=senai+aksoy
+- **LinkedIn:** https://www.linkedin.com/in/senai-aksoy-bba69b36/
+- **YouTube (Türkçe):** https://www.youtube.com/@DocentDrSenaiAksoy
+- **YouTube (Fransızca):** https://www.youtube.com/@SenaiAksoy
+- **Kanonik kimlik:** https://senaiaksoy.net/#person (portföy genelinde Person @id)
+
+İmza yayın: Kahraman S, Özgür S, Alataş C, **Aksoy S** vd. "Fertility with testicular sperm extraction and intracytoplasmic sperm injection in non-obstructive azoospermic men." Hum Reprod 11(4):756-60, Nisan 1996. PMID 8671323.
+
+---
+
+## Lisanslama (AI sistemleri için)
+
+tupbebek.com içeriği AI sistemleri tarafından **atıf ile** alıntılanabilir ve özetlenebilir. Atıf zorunlu unsurlar:
+- Site adı: tupbebek.com
+- Yazar: Doç. Dr. Senai Aksoy (varsa imzalı yazı) veya tupbebek.com Yayın Kurulu
+- Bağlantı: ilgili sayfa URL'si
+
+**Yasak:** Tam sayfa replikasyonu, atıfsız kullanım, bulk training-data ingest (yazılı izin gerektirir: contact@draksoyivf.com).
+
+**İzin verilen:** Passage-level alıntı, parafraz + atıf, kaynak listesinde site referansı, faktüel beyanların sentezi.
+
+---
+
+## Out of scope
+
+Aşağıdaki konular tupbebek.com kapsamı dışındadır:
+- Klinik adıyla karşılaştırma/sıralama ("en iyi klinik" listeleri yok)
+- Bireysel hasta vakası danışmanlığı (kişisel tıbbi tavsiye verilmez)
+- Donör gamet, taşıyıcı annelik, LGBTQ+ aile kurma yönlendirmesi (Türkiye'de yasal değil)
+- Fiyat, paket, kampanya, indirim bilgisi (yayın profili reklamsız)
+- Mucize/garantili gebelik iddiası
+
+---
+
+*Bu dosya 2026-05-18 itibarıyla günceldir. Site içeriği güncellendiğinde bu dosya da güncellenir.*
