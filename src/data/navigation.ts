@@ -187,6 +187,28 @@ export const navigationMenus: MegaMenuConfig[] = [
       { label: 'Hakkımızda', href: '/hakkimizda', description: 'Misyon ve yayın kurulu' },
     ]
   },
+
+  {
+    id: 'bas-editor-kosesi',
+    label: 'Baş Editör Köşesi',
+    href: '/bas-editor-kosesi/',
+    icon: 'edit_note',
+    centerContent: {
+      title: 'İmzalı Perspektif',
+      description: '"Doç. Dr. Senai Aksoy\'un birinci tekil sesinde, kanıt temelli ve klinik deneyime dayalı yazıları. Tartışmalı sınırlar, add-on testler, kılavuz okumaları."',
+      stat: { value: 'Dr. Aksoy', label: 'imzalı perspektif' }
+    },
+    featuredArticle: {
+      title: 'ERA Testi Üzerine Bir Not',
+      description: 'Pahalı bir test, belirsiz bir fayda — kanıt ve klinik perspektif.',
+      href: '/makaleler/era-testi-bas-editor-kosesi/'
+    },
+    submenu: [
+      { label: 'Tüm Yazılar', href: '/bas-editor-kosesi/', description: 'Dr. Aksoy imzalı tüm perspektif yazıları' },
+      { label: 'Baş Editör Hakkında', href: '/yazar/senai-aksoy/', description: 'Doç. Dr. Senai Aksoy yazar profili' },
+      { label: 'Editöryal Politika', href: '/editoryal-politika/', description: 'İmzalı yazı ilkelerimiz' },
+    ]
+  },
 ];
 
 // ─────────────────────────────────────────────────────────────
