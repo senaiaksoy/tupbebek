@@ -37,6 +37,8 @@ interface Props {
             category: string;
             image?: string;
             imageAlt?: string;
+            imageWidth?: number;
+            imageHeight?: number;
             references?: Reference[];
         };
     };
@@ -142,11 +144,13 @@ const absoluteImageUrl = d.image
     ? (d.image.startsWith('http') ? d.image : `https://tupbebek.com${d.image}`)
     : undefined;
 
+// Yeni hero standardı: 1600x900 (16:9). Frontmatter override mümkün
+// (imageWidth/imageHeight). Eski 1200x630 default'tan taşındı.
 const imageObject = absoluteImageUrl ? {
     "@type": "ImageObject",
     "url": absoluteImageUrl,
-    "width": 1200,
-    "height": 630,
+    "width": d.imageWidth ?? 1600,
+    "height": d.imageHeight ?? 900,
     ...(d.imageAlt ? { "caption": d.imageAlt } : {}),
 } : undefined;
 

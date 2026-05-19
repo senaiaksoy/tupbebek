@@ -41,6 +41,10 @@ const articlesCollection = defineCollection({
     category: z.string(),
     image: z.string().optional(),
     imageAlt: z.string().optional(),
+    // Hero görsel intrinsic boyutları (CLS önleme + schema/OG meta için).
+    // Yeni hero standardı: 1600x900 (16:9 master). Boş bırakılırsa varsayılan kullanılır.
+    imageWidth: z.number().int().positive().optional(),
+    imageHeight: z.number().int().positive().optional(),
     featured: z.boolean().default(false),
 
     // --- Editoryal Is Akisi ---

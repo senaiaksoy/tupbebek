@@ -89,6 +89,8 @@ const articleHub = getArticleHub(entry.slug);
     title={`${entry.data.title} | tupbebek.com`}
     description={entry.data.description}
     image={sanitizedImage}
+    imageWidth={entry.data.imageWidth ?? (entry.data.image ? 1600 : undefined)}
+    imageHeight={entry.data.imageHeight ?? (entry.data.image ? 900 : undefined)}
     ogType="article"
     canonical={articleUrl}
     noindex={entry.data.noindex}
@@ -150,17 +152,20 @@ const articleHub = getArticleHub(entry.slug);
                 </div>
             </header>
 
-            <!-- Hero Image -->
+            <!-- Hero Image — 1600x900 master (16:9). Display: aspect-video, object-cover.
+                 Intrinsic boyutlar schema/OG meta ile hizalı (CLS=0). -->
             {entry.data.image && (
                 <div class="aspect-video rounded-xl overflow-hidden mb-10 border border-gray-100">
                     <img
                         src={sanitizedImage}
                         alt={entry.data.imageAlt || entry.data.title}
                         class="w-full h-full object-cover"
-                        width="896" height="504"
+                        width={entry.data.imageWidth ?? 1600}
+                        height={entry.data.imageHeight ?? 900}
                         loading="eager"
                         fetchpriority="high"
                         decoding="async"
+                        sizes="(min-width: 1024px) 768px, 100vw"
                     />
                 </div>
             )}
