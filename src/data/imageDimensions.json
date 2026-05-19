@@ -383,6 +383,14 @@
     "width": 3072,
     "height": 2048
   },
+  "/images/makaleler/embriyo-gardner-sistem-bilesenleri.webp": {
+    "width": 1200,
+    "height": 675
+  },
+  "/images/makaleler/embriyo-timelapse-ai-laboratuvar.webp": {
+    "width": 1200,
+    "height": 675
+  },
   "/images/makaleler/embryoglue-faydalari.webp": {
     "width": 3072,
     "height": 2048
@@ -418,6 +426,10 @@
   "/images/makaleler/izotretinoin-sperm.webp": {
     "width": 3072,
     "height": 2048
+  },
+  "/images/makaleler/laboratuvar-raporu-yorumlama.webp": {
+    "width": 1600,
+    "height": 900
   },
   "/images/makaleler/microscope.webp": {
     "width": 512,
