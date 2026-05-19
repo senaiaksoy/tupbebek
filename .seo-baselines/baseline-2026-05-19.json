@@ -1,0 +1,195 @@
+{
+  "capturedAt": "2026-05-19T16:09:01.122Z",
+  "capturedBy": "manual-baseline-script",
+  "context": "Post-imagery-overhaul + drafts cleanup + medical-reviewer schema change. Branch claude/determined-goldstine-a3e5ae, commit 7ac85de7+.",
+  "urls": [
+    {
+      "url": "https://tupbebek.com/",
+      "status": 200,
+      "title": "tupbebek.com | Ureme Sagligi Bilgi Portali",
+      "description": "Tup bebek (IVF), infertilite nedenleri, tani sureci ve tedavi yontemleri hakkinda bilimsel ve guncel bilgiler.",
+      "canonical": "https://tupbebek.com/",
+      "robots": "index, follow, max-image-preview:large",
+      "og": {
+        "title": "tupbebek.com | Ureme Sagligi Bilgi Portali",
+        "description": "Tup bebek (IVF), infertilite nedenleri, tani sureci ve tedavi yontemleri hakkinda bilimsel ve guncel bilgiler.",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp",
+        "type": "website"
+      },
+      "h1": [],
+      "h2Count": 10,
+      "h3Count": 43,
+      "imgCount": 17,
+      "figureCount": 0,
+      "jsonLdCount": 1,
+      "htmlSizeBytes": 402675,
+      "htmlHash": "89c8e0ac9e2827b2"
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/",
+      "status": 200,
+      "title": "Bilimsel Makaleler ve Yayınlar | tupbebek.com",
+      "description": "Üreme sağlığı, IVF teknolojileri, infertilite tedavileri ve güncel literatür hakkında bilimsel makaleler. Yayın kurulu onaylı.",
+      "canonical": "https://tupbebek.com/makaleler/",
+      "robots": "index, follow, max-image-preview:large",
+      "og": {
+        "title": "Bilimsel Makaleler ve Yayınlar | tupbebek.com",
+        "description": "Üreme sağlığı, IVF teknolojileri, infertilite tedavileri ve güncel literatür hakkında bilimsel makaleler. Yayın kurulu onaylı.",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp",
+        "type": "website"
+      },
+      "h1": [],
+      "h2Count": 3,
+      "h3Count": 68,
+      "imgCount": 61,
+      "figureCount": 0,
+      "jsonLdCount": 2,
+      "htmlSizeBytes": 426812,
+      "htmlHash": "e2d2449181436526"
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/tup-bebek-nedir/",
+      "status": 200,
+      "title": "Tüp Bebek Nedir? Kimlere Uygulanır, Nasıl Yapılır? | tupbebek.com",
+      "description": "Tüp bebek nedir, nasıl yapılır ve kimlere uygulanır? IVF/ICSI farkı, yumurta toplama, embriyo transferi, başarıyı etkileyen faktörler ve riskler.",
+      "canonical": "https://tupbebek.com/makaleler/tup-bebek-nedir/",
+      "robots": "index, follow, max-image-preview:large",
+      "og": {
+        "title": "Tüp Bebek Nedir? Kimlere Uygulanır, Nasıl Yapılır? | tupbebek.com",
+        "description": "Tüp bebek nedir, nasıl yapılır ve kimlere uygulanır? IVF/ICSI farkı, yumurta toplama, embriyo transferi, başarıyı etkileyen faktörler ve riskler.",
+        "image": "https://tupbebek.com/images/makaleler/tup-bebek-nedir.webp",
+        "type": "article"
+      },
+      "h1": [
+        "Tüp Bebek Nedir? Kimlere Uygulanır, Nasıl Yapılır?"
+      ],
+      "h2Count": 11,
+      "h3Count": 11,
+      "imgCount": 11,
+      "figureCount": 2,
+      "jsonLdCount": 5,
+      "htmlSizeBytes": 367270,
+      "htmlHash": "bba338fddbb036e5"
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/pgt-a-bas-editor-kosesi/",
+      "status": 200,
+      "title": "Baş Editör Köşesi — PGT-A Üzerine Bir Not: Genetik Tarama Ne Zaman Yarar, Ne Zaman Pazarlanır? | tupbebek.com",
+      "description": "PGT-A (preimplantasyon genetik tarama) rutin IVF hastasına önerilmeli mi? STAR çalışması, Cochrane 2020 ve ASRM 2024 ışığında bir baş editör notu.",
+      "canonical": "https://tupbebek.com/makaleler/pgt-a-bas-editor-kosesi/",
+      "robots": "index, follow, max-image-preview:large",
+      "og": {
+        "title": "Baş Editör Köşesi — PGT-A Üzerine Bir Not: Genetik Tarama Ne Zaman Yarar, Ne Zaman Pazarlanır? | tupbebek.com",
+        "description": "PGT-A (preimplantasyon genetik tarama) rutin IVF hastasına önerilmeli mi? STAR çalışması, Cochrane 2020 ve ASRM 2024 ışığında bir baş editör notu.",
+        "image": "https://tupbebek.com/images/makaleler/pgt-a-bas-editor-kosesi.webp",
+        "type": "article"
+      },
+      "h1": [
+        "Baş Editör Köşesi — PGT-A Üzerine Bir Not: Genetik Tarama Ne Zaman Yarar, Ne Zaman Pazarlanır?"
+      ],
+      "h2Count": 8,
+      "h3Count": 8,
+      "imgCount": 7,
+      "figureCount": 2,
+      "jsonLdCount": 4,
+      "htmlSizeBytes": 346879,
+      "htmlHash": "b00d8a5e42a56ae0"
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/era-testi-bas-editor-kosesi/",
+      "status": 200,
+      "title": "Baş Editör Köşesi — ERA Testi Üzerine Bir Not: Pahalı Bir Test, Belirsiz Bir Fayda | tupbebek.com",
+      "description": "Doç. Dr. Senai Aksoy",
+      "canonical": "https://tupbebek.com/makaleler/era-testi-bas-editor-kosesi/",
+      "robots": "index, follow, max-image-preview:large",
+      "og": {
+        "title": "Baş Editör Köşesi — ERA Testi Üzerine Bir Not: Pahalı Bir Test, Belirsiz Bir Fayda | tupbebek.com",
+        "description": "Doç. Dr. Senai Aksoy",
+        "image": "https://tupbebek.com/images/makaleler/era-testi-bas-editor-kosesi.webp",
+        "type": "article"
+      },
+      "h1": [
+        "Baş Editör Köşesi — ERA Testi Üzerine Bir Not: Pahalı Bir Test, Belirsiz Bir Fayda"
+      ],
+      "h2Count": 7,
+      "h3Count": 8,
+      "imgCount": 7,
+      "figureCount": 2,
+      "jsonLdCount": 4,
+      "htmlSizeBytes": 345597,
+      "htmlHash": "6b46de7fad4c6990"
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/yumurta-dondurma-rehberi/",
+      "status": 200,
+      "title": "Yumurta Dondurma Rehberi: Ne Zaman Düşünülür, Kaç Yumurta Gerekebilir? | tupbebek.com",
+      "description": "Yumurta dondurma nedir, kimler için uygundur, yaşa göre başarı neden değişir ve kaç yumurta hedeflenebilir? Oosit kriyoprezervasyonu için kanıt temelli rehber.",
+      "canonical": "https://tupbebek.com/makaleler/yumurta-dondurma-rehberi/",
+      "robots": "index, follow, max-image-preview:large",
+      "og": {
+        "title": "Yumurta Dondurma Rehberi: Ne Zaman Düşünülür, Kaç Yumurta Gerekebilir? | tupbebek.com",
+        "description": "Yumurta dondurma nedir, kimler için uygundur, yaşa göre başarı neden değişir ve kaç yumurta hedeflenebilir? Oosit kriyoprezervasyonu için kanıt temelli rehber.",
+        "image": "https://tupbebek.com/images/makaleler/yumurta-dondurma-rehberi.webp",
+        "type": "article"
+      },
+      "h1": [
+        "Yumurta Dondurma Rehberi: Ne Zaman Düşünülür, Kaç Yumurta Gerekebilir?"
+      ],
+      "h2Count": 11,
+      "h3Count": 8,
+      "imgCount": 5,
+      "figureCount": 2,
+      "jsonLdCount": 5,
+      "htmlSizeBytes": 361096,
+      "htmlHash": "a3ca1194868865e3"
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/hidrosalpinx-ve-kisirlik/",
+      "status": 200,
+      "title": "Hidrosalpinx (Hidrosalpinks): IVF Öncesi Tedavi Kararı | tupbebek.com",
+      "description": "Hidrosalpinx tüpte sıvı birikimi demektir. IVF öncesi salpenjektomi, tüp kapatma, aspirasyon, HSG tanısı ve dış gebelik riskini güvenli biçimde özetleyen rehber.",
+      "canonical": "https://tupbebek.com/makaleler/hidrosalpinx-ve-kisirlik/",
+      "robots": "index, follow, max-image-preview:large",
+      "og": {
+        "title": "Hidrosalpinx (Hidrosalpinks): IVF Öncesi Tedavi Kararı | tupbebek.com",
+        "description": "Hidrosalpinx tüpte sıvı birikimi demektir. IVF öncesi salpenjektomi, tüp kapatma, aspirasyon, HSG tanısı ve dış gebelik riskini güvenli biçimde özetleyen rehber.",
+        "image": "https://tupbebek.com/images/library/hastalik/hidrosalpinks.webp",
+        "type": "article"
+      },
+      "h1": [
+        "Hidrosalpinx (Hidrosalpinks): IVF Öncesi Tedavi Kararı"
+      ],
+      "h2Count": 11,
+      "h3Count": 17,
+      "imgCount": 11,
+      "figureCount": 2,
+      "jsonLdCount": 5,
+      "htmlSizeBytes": 369474,
+      "htmlHash": "0ff12f742a7dea3d"
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/pcos-yeni-adi-pmos/",
+      "status": 200,
+      "title": "PCOS&#39;un Yeni Adı PMOS: Ne Değişti? | tupbebek.com",
+      "description": "PCOS için önerilen yeni ad PMOS ne anlama geliyor? Tanı, tedavi ve tüp bebek planı isim değişikliğiyle değişir mi?",
+      "canonical": "https://tupbebek.com/makaleler/pcos-yeni-adi-pmos/",
+      "robots": "index, follow, max-image-preview:large",
+      "og": {
+        "title": "PCOS",
+        "description": "PCOS için önerilen yeni ad PMOS ne anlama geliyor? Tanı, tedavi ve tüp bebek planı isim değişikliğiyle değişir mi?",
+        "image": "https://tupbebek.com/images/makaleler/pcos-yeni-adi-pmos.webp",
+        "type": "article"
+      },
+      "h1": [
+        "PCOS&#39;un Yeni Adı PMOS: Ne Değişti?"
+      ],
+      "h2Count": 11,
+      "h3Count": 11,
+      "imgCount": 11,
+      "figureCount": 2,
+      "jsonLdCount": 5,
+      "htmlSizeBytes": 365272,
+      "htmlHash": "407aefe92d538a83"
+    }
+  ]
+}
