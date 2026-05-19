@@ -16,6 +16,7 @@ node_modules/
 .astro/
 .wrangler/
 lighthouse-report.json
+lh-*.json
 
 # Local Codex worktrees
 .claude/worktrees/
