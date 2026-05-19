@@ -1,0 +1,110 @@
+{
+  "baseline": ".seo-baselines/baseline-2026-05-19.json",
+  "comparedAt": "2026-05-19T16:12:42.204Z",
+  "results": [
+    {
+      "url": "https://tupbebek.com/",
+      "diffs": [
+        {
+          "field": "htmlHash",
+          "before": "89c8e0ac9e2827b2",
+          "after": "e93573342d3449fb"
+        }
+      ],
+      "sizeDelta": 0,
+      "hasNewReviewer": true,
+      "hasOldReviewer": false
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/",
+      "diffs": [
+        {
+          "field": "htmlHash",
+          "before": "e2d2449181436526",
+          "after": "aaf583f936e14cde"
+        }
+      ],
+      "sizeDelta": 0,
+      "hasNewReviewer": true,
+      "hasOldReviewer": false
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/tup-bebek-nedir/",
+      "diffs": [
+        {
+          "field": "htmlHash",
+          "before": "bba338fddbb036e5",
+          "after": "f50626be743bda09"
+        }
+      ],
+      "sizeDelta": 0,
+      "hasNewReviewer": true,
+      "hasOldReviewer": true
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/pgt-a-bas-editor-kosesi/",
+      "diffs": [
+        {
+          "field": "htmlHash",
+          "before": "b00d8a5e42a56ae0",
+          "after": "15c74fe64c193d3b"
+        }
+      ],
+      "sizeDelta": 0,
+      "hasNewReviewer": true,
+      "hasOldReviewer": false
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/era-testi-bas-editor-kosesi/",
+      "diffs": [
+        {
+          "field": "htmlHash",
+          "before": "6b46de7fad4c6990",
+          "after": "2a8fa13881f5efe9"
+        }
+      ],
+      "sizeDelta": 0,
+      "hasNewReviewer": true,
+      "hasOldReviewer": false
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/yumurta-dondurma-rehberi/",
+      "diffs": [
+        {
+          "field": "htmlHash",
+          "before": "a3ca1194868865e3",
+          "after": "9dbf3cdb86f187bb"
+        }
+      ],
+      "sizeDelta": 0,
+      "hasNewReviewer": true,
+      "hasOldReviewer": true
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/hidrosalpinx-ve-kisirlik/",
+      "diffs": [
+        {
+          "field": "htmlHash",
+          "before": "0ff12f742a7dea3d",
+          "after": "89751cd4bf0b7f2e"
+        }
+      ],
+      "sizeDelta": 0,
+      "hasNewReviewer": true,
+      "hasOldReviewer": false
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/pcos-yeni-adi-pmos/",
+      "diffs": [
+        {
+          "field": "htmlHash",
+          "before": "407aefe92d538a83",
+          "after": "18b9c529d061823a"
+        }
+      ],
+      "sizeDelta": 0,
+      "hasNewReviewer": true,
+      "hasOldReviewer": false
+    }
+  ]
+}
