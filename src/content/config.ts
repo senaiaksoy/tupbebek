@@ -57,8 +57,8 @@ const articlesCollection = defineCollection({
     authorTitle: z.string().optional(),
     authorCredentials: z.string().optional(),
     authorYoutube: z.string().url().optional(),
-    medicalReviewer: z.string().default('tupbebek.com Yayin Kurulu'),
-    reviewerTitle: z.string().optional(),
+    medicalReviewer: z.string().default('Doç. Dr. Senai Aksoy'),
+    reviewerTitle: z.string().default('Baş Editör'),
     reviewDate: z.date().optional(),
     approvedBy: z.string().optional(),
 
