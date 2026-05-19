@@ -1,0 +1,506 @@
+{
+  "/images/blog/normal-flora-vs-bakteriyel-vajinoz-semasi.png": {
+    "width": 1024,
+    "height": 682
+  },
+  "/images/blog/vajinal-enfeksiyon-doktor-danisma-karar-agaci.jpg": {
+    "width": 1024,
+    "height": 682
+  },
+  "/images/blog/vajinal-enfeksiyon-karsilastirma-tablosu.jpg": {
+    "width": 682,
+    "height": 1024
+  },
+  "/images/erkek-infertilitesi.webp": {
+    "width": 3072,
+    "height": 2048
+  },
+  "/images/fertilite-koruma/embriyo-dondurma.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "/images/fertilite-koruma/hero.webp": {
+    "width": 1200,
+    "height": 676
+  },
+  "/images/fertilite-koruma/oncofertility.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "/images/fertilite-koruma/sperm-dondurma.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "/images/fertilite-koruma/yumurta-dondurma.webp": {
+    "width": 800,
+    "height": 800
+  },
+  "/images/hakkimizda/clinical-review.webp": {
+    "width": 512,
+    "height": 512
+  },
+  "/images/hakkimizda/senai-aksoy.webp": {
+    "width": 512,
+    "height": 512
+  },
+  "/images/home/duygusal-destek.webp": {
+    "width": 200,
+    "height": 109
+  },
+  "/images/home/erkek-infertilitesi.webp": {
+    "width": 1200,
+    "height": 800
+  },
+  "/images/home/fertilite-koruma.webp": {
+    "width": 200,
+    "height": 109
+  },
+  "/images/home/kadin-infertilitesi.webp": {
+    "width": 1200,
+    "height": 670
+  },
+  "/images/home/luxury-embryo.webp": {
+    "width": 1024,
+    "height": 1024
+  },
+  "/images/home/tani-sureci.webp": {
+    "width": 200,
+    "height": 112
+  },
+  "/images/home/tedavi-yontemleri.webp": {
+    "width": 200,
+    "height": 112
+  },
+  "/images/library/diyagram/histeroskopi_karar_algoritmasi.webp": {
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/library/embriyo/embryoglue.webp": {
+    "width": 1600,
+    "height": 720
+  },
+  "/images/library/embriyo/kimyasal-gebelik.webp": {
+    "width": 1440,
+    "height": 500
+  },
+  "/images/library/embriyo/pgt.webp": {
+    "width": 1440,
+    "height": 500
+  },
+  "/images/library/embriyo/pgt_sex.webp": {
+    "width": 1440,
+    "height": 500
+  },
+  "/images/library/embriyo/schema_implantation.webp": {
+    "width": 758,
+    "height": 505
+  },
+  "/images/library/embriyo/yumurta-sayisi.webp": {
+    "width": 1440,
+    "height": 550
+  },
+  "/images/library/embriyo/yumurta_dna_kalitesi.webp": {
+    "width": 1080,
+    "height": 725
+  },
+  "/images/library/hastalik/dusuk-amh.webp": {
+    "width": 1440,
+    "height": 500
+  },
+  "/images/library/hastalik/endometriosis_tedavi.webp": {
+    "width": 1440,
+    "height": 500
+  },
+  "/images/library/hastalik/endometriyal_scratching_histeroskopi.webp": {
+    "width": 1440,
+    "height": 500
+  },
+  "/images/library/hastalik/erkekinfertilite.webp": {
+    "width": 1440,
+    "height": 500
+  },
+  "/images/library/hastalik/hidrosalpinks.webp": {
+    "width": 1440,
+    "height": 500
+  },
+  "/images/library/hastalik/histeroskopi_resim.webp": {
+    "width": 1408,
+    "height": 736
+  },
+  "/images/library/hastalik/kisirlik_endometriozis.webp": {
+    "width": 1440,
+    "height": 500
+  },
+  "/images/library/hastalik/miyom-ameliyati-ne-zaman-gerekir.webp": {
+    "width": 1440,
+    "height": 500
+  },
+  "/images/library/hastalik/miyom_ivf.webp": {
+    "width": 1440,
+    "height": 500
+  },
+  "/images/library/hastalik/myom.webp": {
+    "width": 1440,
+    "height": 500
+  },
+  "/images/library/hastalik/opkveivf.webp": {
+    "width": 1440,
+    "height": 500
+  },
+  "/images/library/hastalik/pkos-ve-ivf.webp": {
+    "width": 1440,
+    "height": 500
+  },
+  "/images/library/hastalik/prolakktin.webp": {
+    "width": 1440,
+    "height": 500
+  },
+  "/images/library/hastalik/prolaktin.webp": {
+    "width": 1440,
+    "height": 500
+  },
+  "/images/library/hastalik/varikosel.webp": {
+    "width": 5632,
+    "height": 3072
+  },
+  "/images/library/istatistik/basari_oranlari_hero.webp": {
+    "width": 512,
+    "height": 512
+  },
+  "/images/library/istatistik/canli_dogum_orani.webp": {
+    "width": 1080,
+    "height": 882
+  },
+  "/images/library/istatistik/dogurganlik.webp": {
+    "width": 1080,
+    "height": 693
+  },
+  "/images/library/istatistik/yas_gebelikorani_ivf.webp": {
+    "width": 512,
+    "height": 512
+  },
+  "/images/library/klinik/181.webp": {
+    "width": 1440,
+    "height": 500
+  },
+  "/images/library/klinik/203.webp": {
+    "width": 1440,
+    "height": 500
+  },
+  "/images/library/klinik/237.webp": {
+    "width": 1440,
+    "height": 500
+  },
+  "/images/library/klinik/41.webp": {
+    "width": 1440,
+    "height": 497
+  },
+  "/images/library/klinik/42.webp": {
+    "width": 1440,
+    "height": 497
+  },
+  "/images/library/klinik/54.webp": {
+    "width": 1440,
+    "height": 497
+  },
+  "/images/library/klinik/65.webp": {
+    "width": 1440,
+    "height": 500
+  },
+  "/images/library/klinik/70.webp": {
+    "width": 1440,
+    "height": 500
+  },
+  "/images/library/klinik/83.webp": {
+    "width": 1440,
+    "height": 500
+  },
+  "/images/library/klinik/ceptel.webp": {
+    "width": 1440,
+    "height": 500
+  },
+  "/images/library/klinik/era-testi.webp": {
+    "width": 1200,
+    "height": 675
+  },
+  "/images/library/klinik/haute_couture.webp": {
+    "width": 758,
+    "height": 423
+  },
+  "/images/library/klinik/id_binary.webp": {
+    "width": 350,
+    "height": 283
+  },
+  "/images/library/klinik/iletisim-hero.webp": {
+    "width": 3072,
+    "height": 2048
+  },
+  "/images/library/laboratuvar/dr-senai-aksoy-istanbul-ivf-laboratuvar.webp": {
+    "width": 1440,
+    "height": 500
+  },
+  "/images/library/laboratuvar/embryoscop.webp": {
+    "width": 1440,
+    "height": 500
+  },
+  "/images/library/laboratuvar/icsicizim.webp": {
+    "width": 1440,
+    "height": 500
+  },
+  "/images/library/laboratuvar/microbiota.webp": {
+    "width": 1235,
+    "height": 338
+  },
+  "/images/library/laboratuvar/oocytes-prior-to-a-f-and-k-and-after-insemination.webp": {
+    "width": 850,
+    "height": 505
+  },
+  "/images/library/psikoloji/cift-danismanlik.webp": {
+    "width": 2048,
+    "height": 2048
+  },
+  "/images/library/psikoloji/danismanlik-gorusmesi.webp": {
+    "width": 5632,
+    "height": 3072
+  },
+  "/images/library/psikoloji/duygusal-etki.webp": {
+    "width": 2048,
+    "height": 2048
+  },
+  "/images/library/psikoloji/grup-destek.webp": {
+    "width": 3072,
+    "height": 2048
+  },
+  "/images/library/psikoloji/mindfulness-meditasyon.webp": {
+    "width": 2048,
+    "height": 2048
+  },
+  "/images/library/psikoloji/profesyonel-destek.webp": {
+    "width": 2048,
+    "height": 2048
+  },
+  "/images/library/psikoloji/yas-iyilesmeler.webp": {
+    "width": 2048,
+    "height": 2048
+  },
+  "/images/library/psikoloji/yasam-kalitesi-wellness.webp": {
+    "width": 2048,
+    "height": 2048
+  },
+  "/images/library/tedavi/duo-stim.webp": {
+    "width": 3168,
+    "height": 1344
+  },
+  "/images/library/tedavi/iac.webp": {
+    "width": 1440,
+    "height": 500
+  },
+  "/images/library/tedavi/intralipides.webp": {
+    "width": 758,
+    "height": 505
+  },
+  "/images/library/tedavi/ivf_tedavi_sureci.webp": {
+    "width": 1080,
+    "height": 281
+  },
+  "/images/library/tedavi/post_transfert.webp": {
+    "width": 1440,
+    "height": 500
+  },
+  "/images/library/tedavi/prp.webp": {
+    "width": 1440,
+    "height": 500
+  },
+  "/images/library/tedavi/sperm_supp.webp": {
+    "width": 1440,
+    "height": 500
+  },
+  "/images/library/tedavi/taze-donmus-transfert.webp": {
+    "width": 1440,
+    "height": 500
+  },
+  "/images/library/tedavi/tup_bebek_muayene.webp": {
+    "width": 2880,
+    "height": 1000
+  },
+  "/images/logo-tupbebek-sm.webp": {
+    "width": 140,
+    "height": 62
+  },
+  "/images/logo-tupbebek.webp": {
+    "width": 2201,
+    "height": 964
+  },
+  "/images/makaleler/adet-duzensizligi-pcos.webp": {
+    "width": 5504,
+    "height": 3072
+  },
+  "/images/makaleler/adet-gorememe.webp": {
+    "width": 5504,
+    "height": 3072
+  },
+  "/images/makaleler/akinti-kasinti-koku.webp": {
+    "width": 5504,
+    "height": 3072
+  },
+  "/images/makaleler/akraba-evliligi.webp": {
+    "width": 5504,
+    "height": 3072
+  },
+  "/images/makaleler/alkol-ve-fertilite.webp": {
+    "width": 5504,
+    "height": 3072
+  },
+  "/images/makaleler/asherman-sendromu.webp": {
+    "width": 5504,
+    "height": 3072
+  },
+  "/images/makaleler/azospermi-mikro-tese.webp": {
+    "width": 5504,
+    "height": 3072
+  },
+  "/images/makaleler/beta-hcg-testi.webp": {
+    "width": 3072,
+    "height": 2048
+  },
+  "/images/makaleler/duygusal_dayaniklik.webp": {
+    "width": 3072,
+    "height": 2048
+  },
+  "/images/makaleler/embryoglue-faydalari.webp": {
+    "width": 3072,
+    "height": 2048
+  },
+  "/images/makaleler/embryoscope-euploid-aneuploid-gelisim-hizi-3.png": {
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/makaleler/embryoscope-idascore-sema-2.png": {
+    "width": 1536,
+    "height": 1024
+  },
+  "/images/makaleler/embryoscope-isleyis-infografik-1.jpeg": {
+    "width": 5504,
+    "height": 3072
+  },
+  "/images/makaleler/embryoscope-kapak-2026.webp": {
+    "width": 1200,
+    "height": 630
+  },
+  "/images/makaleler/era-testi-bas-editor-kosesi.webp": {
+    "width": 1600,
+    "height": 900
+  },
+  "/images/makaleler/istanbul-tup-bebek-doktoru.webp": {
+    "width": 3072,
+    "height": 2048
+  },
+  "/images/makaleler/iyi-tup-bebek-merkezi.webp": {
+    "width": 3072,
+    "height": 2048
+  },
+  "/images/makaleler/izotretinoin-sperm.webp": {
+    "width": 3072,
+    "height": 2048
+  },
+  "/images/makaleler/microscope.webp": {
+    "width": 512,
+    "height": 512
+  },
+  "/images/makaleler/over-prp-2026-kapak.jpeg": {
+    "width": 3072,
+    "height": 2048
+  },
+  "/images/makaleler/over-prp-surec-infografik.jpeg": {
+    "width": 5504,
+    "height": 3072
+  },
+  "/images/makaleler/pcos-yeni-adi-pmos.webp": {
+    "width": 1600,
+    "height": 873
+  },
+  "/images/makaleler/pgt-a-bas-editor-kosesi.webp": {
+    "width": 1600,
+    "height": 900
+  },
+  "/images/makaleler/scientist.webp": {
+    "width": 512,
+    "height": 512
+  },
+  "/images/makaleler/tup-bebek-nedir.webp": {
+    "width": 3072,
+    "height": 2048
+  },
+  "/images/makaleler/varikosel-nedir-ne-zaman-ameliyat-gerekir.webp": {
+    "width": 5632,
+    "height": 3072
+  },
+  "/images/makaleler/yumurta-dondurma-rehberi.webp": {
+    "width": 5504,
+    "height": 3072
+  },
+  "/images/rehberler/clinical-prep.webp": {
+    "width": 512,
+    "height": 512
+  },
+  "/images/rehberler/hormone-tracking.webp": {
+    "width": 512,
+    "height": 512
+  },
+  "/images/rehberler/senai-aksoy-5.webp": {
+    "width": 512,
+    "height": 512
+  },
+  "/images/senai-aksoy.webp": {
+    "width": 1024,
+    "height": 576
+  },
+  "/images/sorunlar/cell-biology.webp": {
+    "width": 512,
+    "height": 512
+  },
+  "/images/sorunlar/hormonal-cycles.webp": {
+    "width": 512,
+    "height": 512
+  },
+  "/images/sorunlar/senai-aksoy-4.webp": {
+    "width": 512,
+    "height": 512
+  },
+  "/images/sss/scientific-viz.webp": {
+    "width": 512,
+    "height": 512
+  },
+  "/images/sss/senai-aksoy-2.webp": {
+    "width": 512,
+    "height": 512
+  },
+  "/images/tani-sureci/abstract-cells.webp": {
+    "width": 512,
+    "height": 512
+  },
+  "/images/tani-sureci/consultation.webp": {
+    "width": 512,
+    "height": 512
+  },
+  "/images/tani-sureci/dna-cells.webp": {
+    "width": 512,
+    "height": 512
+  },
+  "/images/tani-sureci/senai-aksoy-3.webp": {
+    "width": 512,
+    "height": 512
+  },
+  "/images/tedavi-yontemleri/clinical-lab.webp": {
+    "width": 512,
+    "height": 512
+  },
+  "/images/tedavi-yontemleri/lab-microscope.webp": {
+    "width": 512,
+    "height": 512
+  },
+  "/images/tedavi-yontemleri/petri-dish.webp": {
+    "width": 512,
+    "height": 512
+  }
+}

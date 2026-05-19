@@ -10,6 +10,8 @@
  *   <ArticleSchema entry={entry} url={articleUrl} />
  */
 
+import { resolveImageDimensions } from '../utils/imageMetadata';
+
 interface Reference {
     title: string;
     authors?: string;
@@ -144,13 +146,22 @@ const absoluteImageUrl = d.image
     ? (d.image.startsWith('http') ? d.image : `https://tupbebek.com${d.image}`)
     : undefined;
 
-// Yeni hero standardı: 1600x900 (16:9). Frontmatter override mümkün
-// (imageWidth/imageHeight). Eski 1200x630 default'tan taşındı.
-const imageObject = absoluteImageUrl ? {
+// Boyut çözümleme: frontmatter override > disk metadata > 1600x900 fallback.
+// [...slug].astro hero <img> ile aynı utility çağrıldığı için cache hit olur,
+// disk I/O tek seferdir.
+const heroDims = absoluteImageUrl
+    ? resolveImageDimensions({
+        image: d.image,
+        frontmatterWidth: d.imageWidth,
+        frontmatterHeight: d.imageHeight,
+    })
+    : null;
+
+const imageObject = absoluteImageUrl && heroDims ? {
     "@type": "ImageObject",
     "url": absoluteImageUrl,
-    "width": d.imageWidth ?? 1600,
-    "height": d.imageHeight ?? 900,
+    "width": heroDims.width,
+    "height": heroDims.height,
     ...(d.imageAlt ? { "caption": d.imageAlt } : {}),
 } : undefined;
 
