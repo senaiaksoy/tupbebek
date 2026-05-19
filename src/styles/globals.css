@@ -734,6 +734,25 @@ i {
   margin: 1.5rem 0;
 }
 
+/* Figure / figcaption — gövde görselleri için citable caption */
+.prose-medical figure {
+  margin: 2rem 0;
+}
+.prose-medical figure img {
+  margin: 0;
+  width: 100%;
+  height: auto;
+}
+.prose-medical figcaption {
+  font-size: 0.8125rem;
+  line-height: 1.6;
+  color: var(--color-gray-600, #4b5563);
+  margin-top: 0.75rem;
+  padding-left: 0.75rem;
+  border-left: 3px solid var(--color-primary-100, #dbeafe);
+  font-style: italic;
+}
+
 /* Tables */
 .prose-medical table {
   width: 100%;
