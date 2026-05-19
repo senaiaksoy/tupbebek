@@ -1,0 +1,37 @@
+total 359
+explicit_redirect_rule: 272
+  - https://tupbebek.com/blog/embriyo-tup-bebek-laboratuvar-raporu-yorumlama/
+  - https://tupbebek.com/blog/luteal-faz-defekti-kisirlik-nedeni/
+  - https://tupbebek.com/yumurtlama-takibi/
+  - https://tupbebek.com/tup-bebek-ve-mikroenjeksiyon/
+  - https://tupbebek.com/asilama/
+  - https://tupbebek.com/blog/adet-gorememe-amenore/
+  - https://tupbebek.com/blog/endometriozis-ve-tup-bebek-tedavisi/
+  - https://tupbebek.com/blog/plasentanin-erken-ayrilmasi-dekolman-plasenta/
+trailing_slash_canonicalization: 72
+  - https://tupbebek.com/makaleler/adet-duzensizligi-pcos
+  - https://tupbebek.com/makaleler/endometrioma
+  - https://tupbebek.com/makaleler/varikosel-nedir-ne-zaman-ameliyat-gerekir
+  - https://tupbebek.com/makaleler/bagisiklik-tedavileri
+  - https://tupbebek.com/makaleler/yumurtlama-takibi
+  - https://tupbebek.com/makaleler/adet-gorememe
+  - https://tupbebek.com/makaleler/taze-dondurulmus-transfer
+  - https://tupbebek.com/makaleler/mikroenjeksiyon-icsi-nedir
+host_or_protocol_canonicalization: 8
+  - https://www.tupbebek.com/
+  - http://www.tupbebek.com/
+  - http://tupbebek.com/
+  - https://www.tupbebek.com/blog/ofis-histeroskopi-nedir
+  - https://www.tupbebek.com/sik-sorulan-sorular?utc=dayibilir.com&v=1.0.27
+  - https://www.tupbebek.com/tup-bebek-tedavim-tuttu-mu?sa=X&ved=2ahUKEwiVzozMzpfnAhW4zMQBHSDTB6cQFjAOegQIAxAB
+  - https://www.tupbebek.com/iletisim
+  - https://www.tupbebek.com/blog/kadinlarda-yumurtalik-rezervi-ve-onemi
+route_alias_redirect: 6
+  - https://tupbebek.com/tedaviniz/
+  - https://tupbebek.com/tup-bebekte-ozel-uygulamalar/
+  - https://tupbebek.com/tup-bebekte-ozel-uygulamalar
+  - https://tupbebek.com/tedaviniz
+  - https://tupbebek.com/step-by-step-ivf-process
+  - https://tupbebek.com/policy
+tracking_query_cleanup: 1
+  - https://tupbebek.com/makaleler/beta-hcg-testi?sa=X&ved=2ahUKEwi3oOveufbmAhUPmIsKHb38AGAQFjAGegQIBRAB

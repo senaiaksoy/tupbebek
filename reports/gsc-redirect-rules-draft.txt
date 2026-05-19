@@ -17,3 +17,4 @@ https://www.tupbebek.com/* https://tupbebek.com/:splat 301
 # 4) Query parameter policy (edge transform rule)
 # Remove: gclid, fbclid, utm_source, utm_medium, utm_campaign, utm_term, utm_content
 # Keep only business-critical params.
+
