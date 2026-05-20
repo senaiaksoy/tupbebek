@@ -415,6 +415,10 @@
     "width": 1200,
     "height": 675
   },
+  "/images/makaleler/bagisiklik-tedavileri.webp": {
+    "width": 1600,
+    "height": 900
+  },
   "/images/makaleler/beta-hcg-doubling-egrisi.webp": {
     "width": 1200,
     "height": 675
@@ -431,9 +435,17 @@
     "width": 1200,
     "height": 675
   },
+  "/images/makaleler/cep-telefonu-sperm-kalitesi.webp": {
+    "width": 1600,
+    "height": 900
+  },
   "/images/makaleler/cep-telefonu-sperm-mekanizma.webp": {
     "width": 1200,
     "height": 675
+  },
+  "/images/makaleler/cerrahi-sperm-arama-tese.webp": {
+    "width": 1600,
+    "height": 900
   },
   "/images/makaleler/dusuk-amh-degerlendirme.webp": {
     "width": 1200,
@@ -442,6 +454,10 @@
   "/images/makaleler/dusuk-amh-folikul-havuzu.webp": {
     "width": 1200,
     "height": 675
+  },
+  "/images/makaleler/dusuk-amh-hamilelik.webp": {
+    "width": 1600,
+    "height": 900
   },
   "/images/makaleler/duygusal-dayaniklik-gunluk-rutin.webp": {
     "width": 1200,
@@ -471,6 +487,14 @@
     "width": 1200,
     "height": 675
   },
+  "/images/makaleler/embriyo-transferi-gun-secimi.webp": {
+    "width": 1600,
+    "height": 900
+  },
+  "/images/makaleler/embriyo-transferi-sonrasi-bakim.webp": {
+    "width": 1600,
+    "height": 900
+  },
   "/images/makaleler/embryoglue-embriyolog-hassas-transfer.webp": {
     "width": 1200,
     "height": 675
@@ -495,6 +519,14 @@
     "width": 1200,
     "height": 675
   },
+  "/images/makaleler/endometrioma.webp": {
+    "width": 1600,
+    "height": 900
+  },
+  "/images/makaleler/endometriozis-akilli-stratejiler.webp": {
+    "width": 1600,
+    "height": 900
+  },
   "/images/makaleler/endometriozis-dinlenme-yansima.webp": {
     "width": 1200,
     "height": 675
@@ -502,6 +534,18 @@
   "/images/makaleler/endometriozis-pelvik-tutulum.webp": {
     "width": 1200,
     "height": 675
+  },
+  "/images/makaleler/endometriozis-tup-bebek.webp": {
+    "width": 1600,
+    "height": 900
+  },
+  "/images/makaleler/endometriyal-scratching.webp": {
+    "width": 1600,
+    "height": 900
+  },
+  "/images/makaleler/endoskopik-cerrahi-histeroskopi.webp": {
+    "width": 1600,
+    "height": 900
   },
   "/images/makaleler/era-testi-bas-editor-kosesi.webp": {
     "width": 1600,
@@ -514,6 +558,10 @@
   "/images/makaleler/era-testi-once-bakilacaklar.webp": {
     "width": 1200,
     "height": 675
+  },
+  "/images/makaleler/erkek-dogurganlik-besin-takviyeleri.webp": {
+    "width": 1600,
+    "height": 900
   },
   "/images/makaleler/erkek-takviyeleri-beslenme-sahnesi.webp": {
     "width": 1200,
@@ -531,6 +579,10 @@
     "width": 1200,
     "height": 675
   },
+  "/images/makaleler/hidrosalpinx-ve-kisirlik.webp": {
+    "width": 1600,
+    "height": 900
+  },
   "/images/makaleler/hiperprolaktinemi-aks-diyagram.webp": {
     "width": 1200,
     "height": 675
@@ -539,6 +591,10 @@
     "width": 1200,
     "height": 675
   },
+  "/images/makaleler/hiperprolaktinemi-ve-kisirlik.webp": {
+    "width": 1600,
+    "height": 900
+  },
   "/images/makaleler/histeroskopi-hazirlik-yansima.webp": {
     "width": 1200,
     "height": 675
@@ -546,6 +602,10 @@
   "/images/makaleler/histeroskopi-intrauterin-bulgular.webp": {
     "width": 1200,
     "height": 675
+  },
+  "/images/makaleler/hormonal-tedavi-adenomyozis.webp": {
+    "width": 1600,
+    "height": 900
   },
   "/images/makaleler/istanbul-tup-bebek-doktoru-hazirlik-yurusu.webp": {
     "width": 1200,
@@ -556,6 +616,10 @@
     "height": 675
   },
   "/images/makaleler/istanbul-tup-bebek-doktoru.webp": {
+    "width": 1600,
+    "height": 900
+  },
+  "/images/makaleler/iui-nedir.webp": {
     "width": 1600,
     "height": 900
   },
@@ -595,7 +659,35 @@
     "width": 1600,
     "height": 900
   },
+  "/images/makaleler/kac-yumurta-gerekir.webp": {
+    "width": 1600,
+    "height": 900
+  },
+  "/images/makaleler/kadin-kisirligi-tup-bebek.webp": {
+    "width": 1600,
+    "height": 900
+  },
+  "/images/makaleler/kanser-ve-fertilite.webp": {
+    "width": 1600,
+    "height": 900
+  },
+  "/images/makaleler/kimyasal-gebelik.webp": {
+    "width": 1600,
+    "height": 900
+  },
   "/images/makaleler/laboratuvar-raporu-yorumlama.webp": {
+    "width": 1600,
+    "height": 900
+  },
+  "/images/makaleler/mikroenjeksiyon-icsi-nedir.webp": {
+    "width": 1600,
+    "height": 900
+  },
+  "/images/makaleler/miyom-ameliyati.webp": {
+    "width": 1600,
+    "height": 900
+  },
+  "/images/makaleler/miyomlar-ve-tup-bebek.webp": {
     "width": 1600,
     "height": 900
   },
@@ -606,6 +698,10 @@
   "/images/makaleler/onkofertilite-zaman-penceresi-planlama.webp": {
     "width": 1200,
     "height": 675
+  },
+  "/images/makaleler/opk-ve-ivf.webp": {
+    "width": 1600,
+    "height": 900
   },
   "/images/makaleler/over-prp-2026-kapak.jpeg": {
     "width": 1600,
@@ -663,6 +759,18 @@
     "width": 1200,
     "height": 675
   },
+  "/images/makaleler/pgt-cinsiyet-secimi.webp": {
+    "width": 1600,
+    "height": 900
+  },
+  "/images/makaleler/pgt-m.webp": {
+    "width": 1600,
+    "height": 900
+  },
+  "/images/makaleler/taze-dondurulmus-transfer.webp": {
+    "width": 1600,
+    "height": 900
+  },
   "/images/makaleler/tup-bebek-nedir-ilk-degerlendirme.webp": {
     "width": 1200,
     "height": 675
@@ -672,6 +780,18 @@
     "height": 675
   },
   "/images/makaleler/tup-bebek-nedir.webp": {
+    "width": 1600,
+    "height": 900
+  },
+  "/images/makaleler/tup-bebek-sureci-rehber.webp": {
+    "width": 1600,
+    "height": 900
+  },
+  "/images/makaleler/tup-bebek-yanlis-bilinenler.webp": {
+    "width": 1600,
+    "height": 900
+  },
+  "/images/makaleler/vajinal-mikrobiyom-fiv.webp": {
     "width": 1600,
     "height": 900
   },
@@ -706,6 +826,14 @@
   "/images/makaleler/yumurta-dondurma-vitrifikasyon-akis.webp": {
     "width": 1200,
     "height": 675
+  },
+  "/images/makaleler/yumurtalik-kistleri-dogurganlik.webp": {
+    "width": 1600,
+    "height": 900
+  },
+  "/images/makaleler/yumurtlama-takibi.webp": {
+    "width": 1600,
+    "height": 900
   },
   "/images/rehberler/clinical-prep.webp": {
     "width": 512,
