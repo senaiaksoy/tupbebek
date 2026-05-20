@@ -1,0 +1,2338 @@
+{
+  "capturedAt": "2026-05-19T19:28:42.183Z",
+  "summary": {
+    "total": 93,
+    "missingImage": 0,
+    "missingAlt": 0,
+    "missingDims": 0,
+    "missingTwitter": 0,
+    "uniqueImages": 60
+  },
+  "results": [
+    {
+      "url": "https://tupbebek.com/",
+      "og": {
+        "title": "tupbebek.com | Ureme Sagligi Bilgi Portali",
+        "desc": "Tup bebek (IVF), infertilite nedenleri, tani sureci ve tedavi yontemleri hakkinda bilimsel ve guncel bilgiler.",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp",
+        "type": "website",
+        "width": "1200",
+        "height": "630",
+        "alt": "Tup bebek (IVF), infertilite nedenleri, tani sureci ve tedavi yontemleri hakkinda bilimsel ve guncel bilgiler."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp"
+      },
+      "dims": {
+        "w": 1024,
+        "h": 1024
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 51464
+      }
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/",
+      "og": {
+        "title": "Bilimsel Makaleler ve Yayınlar | tupbebek.com",
+        "desc": "Üreme sağlığı, IVF teknolojileri, infertilite tedavileri ve güncel literatür hakkında bilimsel makaleler. Yayın kurulu onaylı.",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp",
+        "type": "website",
+        "width": "1200",
+        "height": "630",
+        "alt": "Üreme sağlığı, IVF teknolojileri, infertilite tedavileri ve güncel literatür hakkında bilimsel makaleler. Yayın kurulu onaylı."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp"
+      },
+      "dims": {
+        "w": 1024,
+        "h": 1024
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 51464
+      }
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/tup-bebek-nedir/",
+      "og": {
+        "title": "Tüp Bebek Nedir? Kimlere Uygulanır, Nasıl Yapılır? | tupbebek.com",
+        "desc": "Tüp bebek nedir, nasıl yapılır ve kimlere uygulanır? IVF/ICSI farkı, yumurta toplama, embriyo transferi, başarıyı etkileyen faktörler ve riskler.",
+        "image": "https://tupbebek.com/images/makaleler/tup-bebek-nedir.webp",
+        "type": "article",
+        "width": "1600",
+        "height": "900",
+        "alt": "Tüp bebek nedir, nasıl yapılır ve kimlere uygulanır? IVF/ICSI farkı, yumurta toplama, embriyo transferi, başarıyı etkileyen faktörler ve riskler."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/makaleler/tup-bebek-nedir.webp"
+      },
+      "dims": {
+        "w": 1600,
+        "h": 900
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 53446
+      }
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/pgt-a-bas-editor-kosesi/",
+      "og": {
+        "title": "Baş Editör Köşesi — PGT-A Üzerine Bir Not: Genetik Tarama Ne Zaman Yarar, Ne Zaman Pazarlanır? | tupbebek.com",
+        "desc": "PGT-A (preimplantasyon genetik tarama) rutin IVF hastasına önerilmeli mi? STAR çalışması, Cochrane 2020 ve ASRM 2024 ışığında bir baş editör notu.",
+        "image": "https://tupbebek.com/images/makaleler/pgt-a-bas-editor-kosesi.webp",
+        "type": "article",
+        "width": "1600",
+        "height": "900",
+        "alt": "PGT-A (preimplantasyon genetik tarama) rutin IVF hastasına önerilmeli mi? STAR çalışması, Cochrane 2020 ve ASRM 2024 ışığında bir baş editör notu."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/makaleler/pgt-a-bas-editor-kosesi.webp"
+      },
+      "dims": {
+        "w": 1600,
+        "h": 900
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 191382
+      }
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/era-testi-bas-editor-kosesi/",
+      "og": {
+        "title": "Baş Editör Köşesi — ERA Testi Üzerine Bir Not: Pahalı Bir Test, Belirsiz Bir Fayda | tupbebek.com",
+        "desc": "Doç. Dr. Senai Aksoy",
+        "image": "https://tupbebek.com/images/makaleler/era-testi-bas-editor-kosesi.webp",
+        "type": "article",
+        "width": "1600",
+        "height": "900",
+        "alt": "Doç. Dr. Senai Aksoy"
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/makaleler/era-testi-bas-editor-kosesi.webp"
+      },
+      "dims": {
+        "w": 1600,
+        "h": 900
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 161800
+      }
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/yumurta-dondurma-rehberi/",
+      "og": {
+        "title": "Yumurta Dondurma Rehberi: Ne Zaman Düşünülür, Kaç Yumurta Gerekebilir? | tupbebek.com",
+        "desc": "Yumurta dondurma nedir, kimler için uygundur, yaşa göre başarı neden değişir ve kaç yumurta hedeflenebilir? Oosit kriyoprezervasyonu için kanıt temelli rehber.",
+        "image": "https://tupbebek.com/images/makaleler/yumurta-dondurma-rehberi.webp",
+        "type": "article",
+        "width": "1600",
+        "height": "900",
+        "alt": "Yumurta dondurma nedir, kimler için uygundur, yaşa göre başarı neden değişir ve kaç yumurta hedeflenebilir? Oosit kriyoprezervasyonu için kanıt temelli rehber."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/makaleler/yumurta-dondurma-rehberi.webp"
+      },
+      "dims": {
+        "w": 5504,
+        "h": 3072
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 659268
+      }
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/hidrosalpinx-ve-kisirlik/",
+      "og": {
+        "title": "Hidrosalpinx (Hidrosalpinks): IVF Öncesi Tedavi Kararı | tupbebek.com",
+        "desc": "Hidrosalpinx tüpte sıvı birikimi demektir. IVF öncesi salpenjektomi, tüp kapatma, aspirasyon, HSG tanısı ve dış gebelik riskini güvenli biçimde özetleyen rehber.",
+        "image": "https://tupbebek.com/images/library/hastalik/hidrosalpinks.webp",
+        "type": "article",
+        "width": "1440",
+        "height": "500",
+        "alt": "Hidrosalpinx tüpte sıvı birikimi demektir. IVF öncesi salpenjektomi, tüp kapatma, aspirasyon, HSG tanısı ve dış gebelik riskini güvenli biçimde özetleyen rehber."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/library/hastalik/hidrosalpinks.webp"
+      },
+      "dims": {
+        "w": 1440,
+        "h": 500
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 33858
+      }
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/pcos-yeni-adi-pmos/",
+      "og": {
+        "title": "PCOS",
+        "desc": "PCOS için önerilen yeni ad PMOS ne anlama geliyor? Tanı, tedavi ve tüp bebek planı isim değişikliğiyle değişir mi?",
+        "image": "https://tupbebek.com/images/makaleler/pcos-yeni-adi-pmos.webp",
+        "type": "article",
+        "width": "1600",
+        "height": "900",
+        "alt": "PCOS için önerilen yeni ad PMOS ne anlama geliyor? Tanı, tedavi ve tüp bebek planı isim değişikliğiyle değişir mi?"
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/makaleler/pcos-yeni-adi-pmos.webp"
+      },
+      "dims": {
+        "w": 1600,
+        "h": 873
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 72808
+      }
+    },
+    {
+      "url": "https://tupbebek.com/aciklanamayan-infertilite/",
+      "og": {
+        "title": "Açıklanamayan İnfertilite: Nedenleri ve Tedavisi | tupbebek.com",
+        "desc": "Açıklanamayan (idiyopatik) infertilite tanısı, nedenleri, gizli etkenler ve tedavi seçenekleri.",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp",
+        "type": "website",
+        "width": "1200",
+        "height": "630",
+        "alt": "Açıklanamayan (idiyopatik) infertilite tanısı, nedenleri, gizli etkenler ve tedavi seçenekleri."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp"
+      },
+      "dims": {
+        "w": 1024,
+        "h": 1024
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 51464
+      }
+    },
+    {
+      "url": "https://tupbebek.com/bas-editor-kosesi/",
+      "og": {
+        "title": "Baş Editör Köşesi | Doç. Dr. Senai Aksoy",
+        "desc": "Doç. Dr. Senai Aksoy",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp",
+        "type": "website",
+        "width": "1200",
+        "height": "630",
+        "alt": "Doç. Dr. Senai Aksoy"
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp"
+      },
+      "dims": {
+        "w": 1024,
+        "h": 1024
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 51464
+      }
+    },
+    {
+      "url": "https://tupbebek.com/basari-oranlari/",
+      "og": {
+        "title": "Tüp Bebek Başarı Oranları ve Klinik İstatistikler | tupbebek.com",
+        "desc": "Yaş gruplarına göre tüp bebek başarı oranları, döngüye göre kümülatif başarı, tedavi yöntemlerine göre karşılaştırmalar ve uluslararası veriler.",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp",
+        "type": "website",
+        "width": "1200",
+        "height": "630",
+        "alt": "Yaş gruplarına göre tüp bebek başarı oranları, döngüye göre kümülatif başarı, tedavi yöntemlerine göre karşılaştırmalar ve uluslararası veriler."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp"
+      },
+      "dims": {
+        "w": 1024,
+        "h": 1024
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 51464
+      }
+    },
+    {
+      "url": "https://tupbebek.com/basarisiz-denemeler/",
+      "og": {
+        "title": "Başarısız Tüp Bebek Denemesi Sonrası | tupbebek.com",
+        "desc": "Tüp bebek tedavisi başarısız olduysa ne yapmalı? Başarısızlık nedenleri, yeni stratejiler, ikinci deneme planlaması ve psikolojik destek rehberi.",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp",
+        "type": "website",
+        "width": "1200",
+        "height": "630",
+        "alt": "Tüp bebek tedavisi başarısız olduysa ne yapmalı? Başarısızlık nedenleri, yeni stratejiler, ikinci deneme planlaması ve psikolojik destek rehberi."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp"
+      },
+      "dims": {
+        "w": 1024,
+        "h": 1024
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 51464
+      }
+    },
+    {
+      "url": "https://tupbebek.com/beslenme-yasam/",
+      "og": {
+        "title": "Beslenme ve Yaşam Tarzı: Doğurganlığın İyileştirilmesi | tupbebek.com",
+        "desc": "IVF için beslenme rehberi, yaşam tarzı değişiklikleri, kilo yönetimi, antioksidanlar, alkol, kafein, sigara ve stres yönetimi.",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp",
+        "type": "website",
+        "width": "1200",
+        "height": "630",
+        "alt": "IVF için beslenme rehberi, yaşam tarzı değişiklikleri, kilo yönetimi, antioksidanlar, alkol, kafein, sigara ve stres yönetimi."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp"
+      },
+      "dims": {
+        "w": 1024,
+        "h": 1024
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 51464
+      }
+    },
+    {
+      "url": "https://tupbebek.com/cerez-politikasi/",
+      "og": {
+        "title": "Çerez Politikası | tupbebek.com",
+        "desc": "Web sitemizde kullanılan çerezler ve veri toplama politikası",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp",
+        "type": "website",
+        "width": "1200",
+        "height": "630",
+        "alt": "Web sitemizde kullanılan çerezler ve veri toplama politikası"
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp"
+      },
+      "dims": {
+        "w": 1024,
+        "h": 1024
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 51464
+      }
+    },
+    {
+      "url": "https://tupbebek.com/duygusal-destek/",
+      "og": {
+        "title": "İnfertilite ve Duygusal Destek | tupbebek.com",
+        "desc": "İnfertilite tedavi sürecinde duygusal destek, stres yönetimi, psikolojik zorluklar ve baş etme stratejileri.",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp",
+        "type": "website",
+        "width": "1200",
+        "height": "630",
+        "alt": "İnfertilite tedavi sürecinde duygusal destek, stres yönetimi, psikolojik zorluklar ve baş etme stratejileri."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp"
+      },
+      "dims": {
+        "w": 1024,
+        "h": 1024
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 51464
+      }
+    },
+    {
+      "url": "https://tupbebek.com/e-kitap-indir/",
+      "og": {
+        "title": "30 Günlük Tüp Bebek Beslenme Planı | Bilgilendirici E-Kitap",
+        "desc": "Uzman diyetisyen ve üreme endokrinologları tarafından hazırlanan bilimsel tüp bebek beslenme e-kitabını indir. 4 fazlı beslenme planı, 60+ tarif, vitamin rehberi.",
+        "image": "https://tupbebek.com/e-kitap/images/cover-1200.webp",
+        "type": "website",
+        "width": "1200",
+        "height": "630",
+        "alt": "Uzman diyetisyen ve üreme endokrinologları tarafından hazırlanan bilimsel tüp bebek beslenme e-kitabını indir. 4 fazlı beslenme planı, 60+ tarif, vitamin rehberi."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/e-kitap/images/cover-1200.webp"
+      },
+      "dims": {
+        "w": 1200,
+        "h": 655
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 121444
+      }
+    },
+    {
+      "url": "https://tupbebek.com/editoryal-politika/",
+      "og": {
+        "title": "Editöryal Politika | tupbebek.com",
+        "desc": "İçerik üretim ilkelerimiz ve editoryal politikamız",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp",
+        "type": "website",
+        "width": "1200",
+        "height": "630",
+        "alt": "İçerik üretim ilkelerimiz ve editoryal politikamız"
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp"
+      },
+      "dims": {
+        "w": 1024,
+        "h": 1024
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 51464
+      }
+    },
+    {
+      "url": "https://tupbebek.com/endometriozis-adenomyozis/",
+      "og": {
+        "title": "Endometriozis ve Adenomyozis | tupbebek.com",
+        "desc": "Endometriozis ve adenomyozis nedir? Belirtileri, tanı yöntemleri, tedavi seçenekleri ve fertilite üzerindeki etkileri hakkında kapsamlı rehber.",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp",
+        "type": "website",
+        "width": "1200",
+        "height": "630",
+        "alt": "Endometriozis ve adenomyozis nedir? Belirtileri, tanı yöntemleri, tedavi seçenekleri ve fertilite üzerindeki etkileri hakkında kapsamlı rehber."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp"
+      },
+      "dims": {
+        "w": 1024,
+        "h": 1024
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 51464
+      }
+    },
+    {
+      "url": "https://tupbebek.com/erkek-infertilitesi/",
+      "og": {
+        "title": "Erkek İnfertilitesi: Semen Analizi, Varikosel, Azospermi ve ICSI | tupbebek.com",
+        "desc": "Erkek infertilitesi nedenleri, semen analizi, varikosel, azospermi, mikro-TESE, ICSI ve yaşam tarzı etkileri hakkında bilimsel rehber.",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp",
+        "type": "website",
+        "width": "1200",
+        "height": "630",
+        "alt": "Erkek infertilitesi nedenleri, semen analizi, varikosel, azospermi, mikro-TESE, ICSI ve yaşam tarzı etkileri hakkında bilimsel rehber."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp"
+      },
+      "dims": {
+        "w": 1024,
+        "h": 1024
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 51464
+      }
+    },
+    {
+      "url": "https://tupbebek.com/fertilite-koruma/",
+      "og": {
+        "title": "Fertilite Koruma: Yumurta, Sperm ve Embriyo Dondurma | tupbebek.com",
+        "desc": "Vitrifikasyon yöntemiyle yumurta, sperm ve embriyo dondurma; kanser hastalarında fertilite koruma (onkofertilite); yumurtalık doku dondurma ve 2025 ASCO kılavuzu güncellemeleri. Doç. Dr. Senai Aksoy tarafından hazırlanmıştır.",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp",
+        "type": "website",
+        "width": "1200",
+        "height": "630",
+        "alt": "Vitrifikasyon yöntemiyle yumurta, sperm ve embriyo dondurma; kanser hastalarında fertilite koruma (onkofertilite); yumurtalık doku dondurma ve 2025 ASCO kılavuzu güncellemeleri. Doç. Dr. Senai Aksoy tarafından hazırlanmıştır."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp"
+      },
+      "dims": {
+        "w": 1024,
+        "h": 1024
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 51464
+      }
+    },
+    {
+      "url": "https://tupbebek.com/genetik-testler/",
+      "og": {
+        "title": "Genetik Testler: İnfertilite Taraması ve Herediter Hastalıklar | tupbebek.com",
+        "desc": "Klinefelter, Y-kromozom deleterasyonu, CFTR mutasyonu, monogenik hastalık taramaları. Genetik etkenlerin rolü ve tedavi seçenekleri.",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp",
+        "type": "website",
+        "width": "1200",
+        "height": "630",
+        "alt": "Klinefelter, Y-kromozom deleterasyonu, CFTR mutasyonu, monogenik hastalık taramaları. Genetik etkenlerin rolü ve tedavi seçenekleri."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp"
+      },
+      "dims": {
+        "w": 1024,
+        "h": 1024
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 51464
+      }
+    },
+    {
+      "url": "https://tupbebek.com/gizlilik-politikasi/",
+      "og": {
+        "title": "Gizlilik Politikası ve KVKK Aydınlatma Metni | tupbebek.com",
+        "desc": "tupbebek.com kişisel verilerin işlenmesi, saklanması, aktarılması, çerezler ve KVKK kapsamındaki haklara ilişkin aydınlatma metni.",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp",
+        "type": "website",
+        "width": "1200",
+        "height": "630",
+        "alt": "tupbebek.com kişisel verilerin işlenmesi, saklanması, aktarılması, çerezler ve KVKK kapsamındaki haklara ilişkin aydınlatma metni."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp"
+      },
+      "dims": {
+        "w": 1024,
+        "h": 1024
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 51464
+      }
+    },
+    {
+      "url": "https://tupbebek.com/hakkimizda/",
+      "og": {
+        "title": "Hakkımızda | tupbebek.com",
+        "desc": "1996",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp",
+        "type": "website",
+        "width": "1200",
+        "height": "630",
+        "alt": "1996"
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp"
+      },
+      "dims": {
+        "w": 1024,
+        "h": 1024
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 51464
+      }
+    },
+    {
+      "url": "https://tupbebek.com/hormon-paneli/",
+      "og": {
+        "title": "Hormon Paneli Okuma: AMH, FSH, LH, E2, Prolaktin, TSH | tupbebek.com",
+        "desc": "Kadın ve erkek üreme hormonları, normal değerler ve infertilite ile ilişkisi. AMH, FSH, LH, Estradiol, Prolaktin ve TSH testleri ve yorumlama.",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp",
+        "type": "website",
+        "width": "1200",
+        "height": "630",
+        "alt": "Kadın ve erkek üreme hormonları, normal değerler ve infertilite ile ilişkisi. AMH, FSH, LH, Estradiol, Prolaktin ve TSH testleri ve yorumlama."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp"
+      },
+      "dims": {
+        "w": 1024,
+        "h": 1024
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 51464
+      }
+    },
+    {
+      "url": "https://tupbebek.com/ilac-rehberi/",
+      "og": {
+        "title": "İlaç Rehberi: IVF İlaçları, Dozajlar ve Yan Etkiler | tupbebek.com",
+        "desc": "IVF sürecinde kullanılan gonadotropinler, GnRH analogları, progesteron, hCG ve diğer ilaçların detaylı açıklamaları, yan etkileri ve kullanım talimatları.",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp",
+        "type": "website",
+        "width": "1200",
+        "height": "630",
+        "alt": "IVF sürecinde kullanılan gonadotropinler, GnRH analogları, progesteron, hCG ve diğer ilaçların detaylı açıklamaları, yan etkileri ve kullanım talimatları."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp"
+      },
+      "dims": {
+        "w": 1024,
+        "h": 1024
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 51464
+      }
+    },
+    {
+      "url": "https://tupbebek.com/iletisim/",
+      "og": {
+        "title": "İletişim | tupbebek.com",
+        "desc": "tupbebek.com yayın kurulu ile iletişime geçin. İçerik önerisi, düzeltme talebi veya sorularınız için bize yazın.",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp",
+        "type": "website",
+        "width": "1200",
+        "height": "630",
+        "alt": "tupbebek.com yayın kurulu ile iletişime geçin. İçerik önerisi, düzeltme talebi veya sorularınız için bize yazın."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp"
+      },
+      "dims": {
+        "w": 1024,
+        "h": 1024
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 51464
+      }
+    },
+    {
+      "url": "https://tupbebek.com/ivf-rehberi/",
+      "og": {
+        "title": "IVF (Tüp Bebek) Rehberi | tupbebek.com",
+        "desc": "Tüp bebek tedavisi hakkında adım adım rehber: hazırlık, yumurta toplama, embriyo transferi, bekleme süreci ve başarı oranları.",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp",
+        "type": "website",
+        "width": "1200",
+        "height": "630",
+        "alt": "Tüp bebek tedavisi hakkında adım adım rehber: hazırlık, yumurta toplama, embriyo transferi, bekleme süreci ve başarı oranları."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp"
+      },
+      "dims": {
+        "w": 1024,
+        "h": 1024
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 51464
+      }
+    },
+    {
+      "url": "https://tupbebek.com/kadin-infertilitesi/",
+      "og": {
+        "title": "Kadın İnfertilitesi: PCOS, Endometriozis, Düşük AMH ve Tüp Faktörü | tupbebek.com",
+        "desc": "Kadın infertilitesi nedenleri: PCOS, endometriozis, düşük AMH, tüp kaynaklı nedenler, miyomlar, hormon paneli ve tanı süreci hakkında bilimsel rehber.",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp",
+        "type": "website",
+        "width": "1200",
+        "height": "630",
+        "alt": "Kadın infertilitesi nedenleri: PCOS, endometriozis, düşük AMH, tüp kaynaklı nedenler, miyomlar, hormon paneli ve tanı süreci hakkında bilimsel rehber."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp"
+      },
+      "dims": {
+        "w": 1024,
+        "h": 1024
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 51464
+      }
+    },
+    {
+      "url": "https://tupbebek.com/kullanim-kosullari/",
+      "og": {
+        "title": "Kullanım Koşulları | tupbebek.com",
+        "desc": "Web sitemizin kullanım koşulları ve hükümleri",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp",
+        "type": "website",
+        "width": "1200",
+        "height": "630",
+        "alt": "Web sitemizin kullanım koşulları ve hükümleri"
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp"
+      },
+      "dims": {
+        "w": 1024,
+        "h": 1024
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 51464
+      }
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/adet-duzensizligi-pcos/",
+      "og": {
+        "title": "Adet Düzensizliği ve PCOS: Tanı, Gebelik Şansı ve Tedavi Yol Haritası | tupbebek.com",
+        "desc": "Adet düzensizliği ve PCOS ilişkisi: 2023 PCOS tanı kriterleri, AMH/ultrason yorumu, hormon paneli, gebelik isteyenlerde letrozol ve IVF yol haritası.",
+        "image": "https://tupbebek.com/images/makaleler/adet-duzensizligi-pcos.webp",
+        "type": "article",
+        "width": "1600",
+        "height": "900",
+        "alt": "Adet düzensizliği ve PCOS ilişkisi: 2023 PCOS tanı kriterleri, AMH/ultrason yorumu, hormon paneli, gebelik isteyenlerde letrozol ve IVF yol haritası."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/makaleler/adet-duzensizligi-pcos.webp"
+      },
+      "dims": {
+        "w": 5504,
+        "h": 3072
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 1761568
+      }
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/adet-gorememe/",
+      "og": {
+        "title": "Amenore (Adet Görememe): Primer ve Sekonder Tipler, Tanı Algoritması ve Tedavi Yaklaşımı | tupbebek.com",
+        "desc": "Primer amenore (Mullerian agenesis, Turner sendromu, hipogonadotropik hipogonadizm), sekonder amenore (PCOS, POI, hipotalamik), WHO sınıflandırması, ESHRE 2024 POI rehberi ve fonksiyonel hipotalamik amenore yönetimi.",
+        "image": "https://tupbebek.com/images/makaleler/adet-gorememe.webp",
+        "type": "article",
+        "width": "1600",
+        "height": "900",
+        "alt": "Primer amenore (Mullerian agenesis, Turner sendromu, hipogonadotropik hipogonadizm), sekonder amenore (PCOS, POI, hipotalamik), WHO sınıflandırması, ESHRE 2024 POI rehberi ve fonksiyonel hipotalamik amenore yönetimi."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/makaleler/adet-gorememe.webp"
+      },
+      "dims": {
+        "w": 5504,
+        "h": 3072
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 1201660
+      }
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/akinti-kasinti-koku/",
+      "og": {
+        "title": "Akıntı, Kaşıntı, Koku: Mantar mı Bakteriyel Vajinoz mu? | tupbebek.com",
+        "desc": "Vajinal akıntı, kaşıntı ve koku neden olur? Mantar enfeksiyonu ile bakteriyel vajinoz farkı, ne zaman muayene gerekir ve kendi kendine tedavinin sınırları.",
+        "image": "https://tupbebek.com/images/makaleler/akinti-kasinti-koku.webp",
+        "type": "article",
+        "width": "1600",
+        "height": "900",
+        "alt": "Vajinal akıntı, kaşıntı ve koku neden olur? Mantar enfeksiyonu ile bakteriyel vajinoz farkı, ne zaman muayene gerekir ve kendi kendine tedavinin sınırları."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/makaleler/akinti-kasinti-koku.webp"
+      },
+      "dims": {
+        "w": 5504,
+        "h": 3072
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 473428
+      }
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/akraba-evliligi/",
+      "og": {
+        "title": "Akraba Evliliği ve Genetik Risk: Taşıyıcılık Taraması, Genetik Danışmanlık ve PGT-M Yaklaşımı | tupbebek.com",
+        "desc": "Akraba evliliklerinde otosomal resesif hastalık riski, Türkiye",
+        "image": "https://tupbebek.com/images/makaleler/akraba-evliligi.webp",
+        "type": "article",
+        "width": "1600",
+        "height": "900",
+        "alt": "Akraba evliliklerinde otosomal resesif hastalık riski, Türkiye"
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/makaleler/akraba-evliligi.webp"
+      },
+      "dims": {
+        "w": 5504,
+        "h": 3072
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 1490212
+      }
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/alkol-ve-fertilite/",
+      "og": {
+        "title": "Alkol ve Fertilite: Sperm, Yumurtlama, IVF ve Gebelik Planı | tupbebek.com",
+        "desc": "Alkol sperm kalitesini etkiler mi, tüp bebek başarısını düşürür mü, gebelik planlayan çiftler ne yapmalı? Kadın ve erkek fertilitesi için kanıt temelli yaklaşım.",
+        "image": "https://tupbebek.com/images/makaleler/alkol-ve-fertilite.webp",
+        "type": "article",
+        "width": "1600",
+        "height": "900",
+        "alt": "Alkol sperm kalitesini etkiler mi, tüp bebek başarısını düşürür mü, gebelik planlayan çiftler ne yapmalı? Kadın ve erkek fertilitesi için kanıt temelli yaklaşım."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/makaleler/alkol-ve-fertilite.webp"
+      },
+      "dims": {
+        "w": 5504,
+        "h": 3072
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 2255618
+      }
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/asherman-sendromu/",
+      "og": {
+        "title": "Asherman Sendromu (Rahim İçi Yapışıklık): Tanı, Histeroskopik Tedavi ve Sonraki Gebelik Yönetimi | tupbebek.com",
+        "desc": "Asherman sendromu için modern tanı (histeroskopi), AFS-ESGE-March sınıflandırması, histeroskopik adheziolizis sonrası gebelik oranları, rekürrens önleme stratejileri (balon, estrojen, hyaluronik asit) ve plasenta akreta dahil obstetrik risk yönetimi.",
+        "image": "https://tupbebek.com/images/makaleler/asherman-sendromu.webp",
+        "type": "article",
+        "width": "1600",
+        "height": "900",
+        "alt": "Asherman sendromu için modern tanı (histeroskopi), AFS-ESGE-March sınıflandırması, histeroskopik adheziolizis sonrası gebelik oranları, rekürrens önleme stratejileri (balon, estrojen, hyaluronik asit) ve plasenta akreta dahil obstetrik risk yönetimi."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/makaleler/asherman-sendromu.webp"
+      },
+      "dims": {
+        "w": 5504,
+        "h": 3072
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 1053782
+      }
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/azospermi-mikro-tese/",
+      "og": {
+        "title": "Azospermi ve Mikro-TESE: Tanıdan Babalığa Kanıt Tabanlı Yol Haritası | tupbebek.com",
+        "desc": "Azospermi (OA/NOA) ayrımı, AUA/ASRM 2024 değerlendirme protokolü, mikro-TESE sperm bulma oranları, Klinefelter ve Y kromozomu delesyonları, mikro-TESE sonrası ICSI ile kümülatif canlı doğum verileri.",
+        "image": "https://tupbebek.com/images/makaleler/azospermi-mikro-tese.webp",
+        "type": "article",
+        "width": "1600",
+        "height": "900",
+        "alt": "Azospermi (OA/NOA) ayrımı, AUA/ASRM 2024 değerlendirme protokolü, mikro-TESE sperm bulma oranları, Klinefelter ve Y kromozomu delesyonları, mikro-TESE sonrası ICSI ile kümülatif canlı doğum verileri."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/makaleler/azospermi-mikro-tese.webp"
+      },
+      "dims": {
+        "w": 5504,
+        "h": 3072
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 591926
+      }
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/bagisiklik-tedavileri/",
+      "og": {
+        "title": "Tüp Bebekte Bağışıklık Tedavileri: İntralipid, IVIG ve Kanıtlar | tupbebek.com",
+        "desc": "Tüp bebekte bağışıklık tedavisi, intralipid serum, IVIG, NK hücre testleri ve tekrarlayan implantasyon başarısızlığında kanıt düzeyi; kimlerde araştırılır, neden rutinde önerilmez?",
+        "image": "https://tupbebek.com/images/library/klinik/70.webp",
+        "type": "article",
+        "width": "1440",
+        "height": "500",
+        "alt": "Tüp bebekte bağışıklık tedavisi, intralipid serum, IVIG, NK hücre testleri ve tekrarlayan implantasyon başarısızlığında kanıt düzeyi; kimlerde araştırılır, neden rutinde önerilmez?"
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/library/klinik/70.webp"
+      },
+      "dims": {
+        "w": 1440,
+        "h": 500
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 24282
+      }
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/beta-hcg-testi/",
+      "og": {
+        "title": "Beta-hCG Testi: Embriyo Transferi Sonrası Hamilelik Takibinin Kanıt Tabanlı Yorumu | tupbebek.com",
+        "desc": "Tüp bebek sonrası beta-hCG testi ne zaman yapılır? Taze ve dondurulmuş transfer için cutoff değerleri, doubling time, biyokimyasal gebelik, ektopik ve heterotopik gebelik risklerinin kanıt tabanlı yorumu.",
+        "image": "https://tupbebek.com/images/makaleler/beta-hcg-testi.webp",
+        "type": "article",
+        "width": "1600",
+        "height": "900",
+        "alt": "Tüp bebek sonrası beta-hCG testi ne zaman yapılır? Taze ve dondurulmuş transfer için cutoff değerleri, doubling time, biyokimyasal gebelik, ektopik ve heterotopik gebelik risklerinin kanıt tabanlı yorumu."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/makaleler/beta-hcg-testi.webp"
+      },
+      "dims": {
+        "w": 3072,
+        "h": 2048
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 178320
+      }
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/cep-telefonu-sperm-kalitesi/",
+      "og": {
+        "title": "Cep Telefonu Sperm Kalitesini Etkiler mi? Kanıtlar ve Önlemler | tupbebek.com",
+        "desc": "Cep telefonu kullanımı, telefonu cepte taşıma, ısı ve radyofrekans maruziyetinin sperm sayısı, hareketliliği ve DNA bütünlüğüyle olası ilişkisi; kanıt düzeyi ve pratik önlemler.",
+        "image": "https://tupbebek.com/images/library/klinik/ceptel.webp",
+        "type": "article",
+        "width": "1440",
+        "height": "500",
+        "alt": "Cep telefonu kullanımı, telefonu cepte taşıma, ısı ve radyofrekans maruziyetinin sperm sayısı, hareketliliği ve DNA bütünlüğüyle olası ilişkisi; kanıt düzeyi ve pratik önlemler."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/library/klinik/ceptel.webp"
+      },
+      "dims": {
+        "w": 1440,
+        "h": 500
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 34860
+      }
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/cerrahi-sperm-arama-tese/",
+      "og": {
+        "title": "Micro-TESE ve Cerrahi Sperm Arama: TESA, TESE Rehberi | tupbebek.com",
+        "desc": "Micro-TESE, TESE ve TESA nedir, nasıl yapılır, ameliyat ne kadar sürer ve sperm bulunamazsa ne olur? Azospermide cerrahi sperm arama rehberi.",
+        "image": "https://tupbebek.com/images/library/klinik/203.webp",
+        "type": "article",
+        "width": "1440",
+        "height": "500",
+        "alt": "Micro-TESE, TESE ve TESA nedir, nasıl yapılır, ameliyat ne kadar sürer ve sperm bulunamazsa ne olur? Azospermide cerrahi sperm arama rehberi."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/library/klinik/203.webp"
+      },
+      "dims": {
+        "w": 1440,
+        "h": 500
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 36916
+      }
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/dusuk-amh-hamilelik/",
+      "og": {
+        "title": "Düşük AMH ile Hamile Kalınır mı? Yaş, Rezerv ve Tedavi Yol Haritası | tupbebek.com",
+        "desc": "Düşük AMH ne anlama gelir? AMH yumurta sayısını gösterir ama gebelik şansını tek başına belirlemez. Yaş, AFC, FSH, doğal gebelik, IVF ve yumurta dondurma yol haritası.",
+        "image": "https://tupbebek.com/images/library/hastalik/dusuk-amh.webp",
+        "type": "article",
+        "width": "1440",
+        "height": "500",
+        "alt": "Düşük AMH ne anlama gelir? AMH yumurta sayısını gösterir ama gebelik şansını tek başına belirlemez. Yaş, AFC, FSH, doğal gebelik, IVF ve yumurta dondurma yol haritası."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/library/hastalik/dusuk-amh.webp"
+      },
+      "dims": {
+        "w": 1440,
+        "h": 500
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 45612
+      }
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/duygusal-dayaniklik-rehberi/",
+      "og": {
+        "title": "Tüp Bebek Stresi ve Psikolojik Destek: Duygusal Dayanıklılık Rehberi | tupbebek.com",
+        "desc": "Tüp bebek tedavisinde stres, kaygı, transfer sonrası bekleyiş ve psikolojik destek ihtiyacı nasıl yönetilir? Stresin IVF sonucu üzerindeki kanıtları ve pratik öneriler.",
+        "image": "https://tupbebek.com/images/makaleler/duygusal_dayaniklik.webp",
+        "type": "article",
+        "width": "1600",
+        "height": "900",
+        "alt": "Tüp bebek tedavisinde stres, kaygı, transfer sonrası bekleyiş ve psikolojik destek ihtiyacı nasıl yönetilir? Stresin IVF sonucu üzerindeki kanıtları ve pratik öneriler."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/makaleler/duygusal_dayaniklik.webp"
+      },
+      "dims": {
+        "w": 3072,
+        "h": 2048
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 245246
+      }
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/embriyo-transferi-gun-secimi/",
+      "og": {
+        "title": "Embriyo Transferi: 3. Gün mü, 5. Gün mü? | tupbebek.com",
+        "desc": "3. gün embriyosu mu 5. gün blastokist transferi mi? Embriyo sayısı, kalite, yaş, PGT-A ve transfer iptali riskine göre gün seçimini kanıta dayalı özetleyen rehber.",
+        "image": "https://tupbebek.com/images/library/klinik/42.webp",
+        "type": "article",
+        "width": "1440",
+        "height": "497",
+        "alt": "3. gün embriyosu mu 5. gün blastokist transferi mi? Embriyo sayısı, kalite, yaş, PGT-A ve transfer iptali riskine göre gün seçimini kanıta dayalı özetleyen rehber."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/library/klinik/42.webp"
+      },
+      "dims": {
+        "w": 1440,
+        "h": 497
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 30820
+      }
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/embriyo-transferi-sonrasi-bakim/",
+      "og": {
+        "title": "Embriyo Transferi Sonrası Bakım: Ne Yapmalı, Nelerden Kaçınmalı? | tupbebek.com",
+        "desc": "Embriyo transferi sonrası yatmak gerekir mi, kasık ağrısı veya kanama ne anlama gelir, beslenme ve ilaçlar nasıl yönetilir? Kanıta dayalı bakım rehberi.",
+        "image": "https://tupbebek.com/images/library/tedavi/post_transfert.webp",
+        "type": "article",
+        "width": "1440",
+        "height": "500",
+        "alt": "Embriyo transferi sonrası yatmak gerekir mi, kasık ağrısı veya kanama ne anlama gelir, beslenme ve ilaçlar nasıl yönetilir? Kanıta dayalı bakım rehberi."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/library/tedavi/post_transfert.webp"
+      },
+      "dims": {
+        "w": 1440,
+        "h": 500
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 24270
+      }
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/embryoglue-faydalari/",
+      "og": {
+        "title": "EmbryoGlue Nedir? Embriyo Yapıştırıcı Kanıtları ve Sınırları | tupbebek.com",
+        "desc": "EmbryoGlue veya embriyo yapıştırıcı nedir, nasıl çalışır, kimlerde düşünülebilir? Hiyalüronan içeren transfer medyumunun kanıt düzeyi ve gerçekçi beklentiler.",
+        "image": "https://tupbebek.com/images/makaleler/embryoglue-faydalari.webp",
+        "type": "article",
+        "width": "1600",
+        "height": "900",
+        "alt": "EmbryoGlue veya embriyo yapıştırıcı nedir, nasıl çalışır, kimlerde düşünülebilir? Hiyalüronan içeren transfer medyumunun kanıt düzeyi ve gerçekçi beklentiler."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/makaleler/embryoglue-faydalari.webp"
+      },
+      "dims": {
+        "w": 1600,
+        "h": 900
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 52458
+      }
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/embryoscope-yapay-zeka/",
+      "og": {
+        "title": "EmbryoScope ve Yapay Zeka Destekli Embriyo Seçimi: Kanıtlar | tupbebek.com",
+        "desc": "EmbryoScope nedir, time-lapse embriyo izleme ve yapay zeka destekli embriyo seçimi IVF sonuçlarını nasıl etkiler? Kanıt düzeyi, kimlerde düşünülebilir ve sınırlar.",
+        "image": "https://tupbebek.com/images/makaleler/embryoscope-kapak-2026.webp",
+        "type": "article",
+        "width": "1600",
+        "height": "900",
+        "alt": "EmbryoScope nedir, time-lapse embriyo izleme ve yapay zeka destekli embriyo seçimi IVF sonuçlarını nasıl etkiler? Kanıt düzeyi, kimlerde düşünülebilir ve sınırlar."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/makaleler/embryoscope-kapak-2026.webp"
+      },
+      "dims": {
+        "w": 1200,
+        "h": 630
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 38560
+      }
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/endometrioma/",
+      "og": {
+        "title": "Endometrioma (Çikolata Kisti): Ameliyat, AMH ve IVF Kararı | tupbebek.com",
+        "desc": "Endometrioma yani çikolata kisti her zaman ameliyat gerektirir mi? AMH, yumurtalık rezervi, ağrı, IVF öncesi cerrahi ve fertilite koruma kararlarını güvenli biçimde özetleyen rehber.",
+        "image": "https://tupbebek.com/images/library/klinik/65.webp",
+        "type": "article",
+        "width": "1440",
+        "height": "500",
+        "alt": "Endometrioma yani çikolata kisti her zaman ameliyat gerektirir mi? AMH, yumurtalık rezervi, ağrı, IVF öncesi cerrahi ve fertilite koruma kararlarını güvenli biçimde özetleyen rehber."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/library/klinik/65.webp"
+      },
+      "dims": {
+        "w": 1440,
+        "h": 500
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 42980
+      }
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/endometriozis-akilli-stratejiler/",
+      "og": {
+        "title": "Endometriozis ve Kısırlık: Tanı, Rezerv ve IVF Stratejileri | tupbebek.com",
+        "desc": "Endometriozis gebe kalmayı nasıl etkiler? Ağrı, endometrioma, AMH, cerrahi, doğal gebelik ve tüp bebek kararını ESHRE/WHO kaynaklarıyla güvenli şekilde özetleyen rehber.",
+        "image": "https://tupbebek.com/images/library/hastalik/kisirlik_endometriozis.webp",
+        "type": "article",
+        "width": "1440",
+        "height": "500",
+        "alt": "Endometriozis gebe kalmayı nasıl etkiler? Ağrı, endometrioma, AMH, cerrahi, doğal gebelik ve tüp bebek kararını ESHRE/WHO kaynaklarıyla güvenli şekilde özetleyen rehber."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/library/hastalik/kisirlik_endometriozis.webp"
+      },
+      "dims": {
+        "w": 1440,
+        "h": 500
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 115126
+      }
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/endometriozis-tup-bebek/",
+      "og": {
+        "title": "Endometriozis ve Tüp Bebek: Cerrahi mi, IVF mi? | tupbebek.com",
+        "desc": "Endometriozis veya çikolata kisti infertiliteye eşlik ediyorsa cerrahi, doğal deneme, aşılama ve tüp bebek kararı nasıl verilir? ESHRE ve ASRM kaynaklı güvenli yol haritası.",
+        "image": "https://tupbebek.com/images/library/hastalik/endometriosis_tedavi.webp",
+        "type": "article",
+        "width": "1440",
+        "height": "500",
+        "alt": "Endometriozis veya çikolata kisti infertiliteye eşlik ediyorsa cerrahi, doğal deneme, aşılama ve tüp bebek kararı nasıl verilir? ESHRE ve ASRM kaynaklı güvenli yol haritası."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/library/hastalik/endometriosis_tedavi.webp"
+      },
+      "dims": {
+        "w": 1440,
+        "h": 500
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 48706
+      }
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/endometriyal-scratching/",
+      "og": {
+        "title": "Endometriyal Scratching İşe Yarar mı? IVF Add-On Kanıt Rehberi | tupbebek.com",
+        "desc": "Endometriyal scratching veya rahim çizme tüp bebek başarısını artırır mı? Cochrane, HFEA ve güncel meta-analizlere göre rutin kullanım, RIF, ağrı, risk ve alternatifler.",
+        "image": "https://tupbebek.com/images/library/hastalik/endometriyal_scratching_histeroskopi.webp",
+        "type": "article",
+        "width": "1440",
+        "height": "500",
+        "alt": "Endometriyal scratching veya rahim çizme tüp bebek başarısını artırır mı? Cochrane, HFEA ve güncel meta-analizlere göre rutin kullanım, RIF, ağrı, risk ve alternatifler."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/library/hastalik/endometriyal_scratching_histeroskopi.webp"
+      },
+      "dims": {
+        "w": 1440,
+        "h": 500
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 33720
+      }
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/endoskopik-cerrahi-histeroskopi/",
+      "og": {
+        "title": "Histeroskopi Nedir? Rahim İçi Endoskopik Cerrahi Rehberi | tupbebek.com",
+        "desc": "Histeroskopi nedir, ne zaman yapılır? Polip, submüköz miyom, septum, rahim içi yapışıklık, anormal kanama ve IVF öncesi rahim içi değerlendirme için tanı-tedavi rehberi.",
+        "image": "https://tupbebek.com/images/library/klinik/83.webp",
+        "type": "article",
+        "width": "1440",
+        "height": "500",
+        "alt": "Histeroskopi nedir, ne zaman yapılır? Polip, submüköz miyom, septum, rahim içi yapışıklık, anormal kanama ve IVF öncesi rahim içi değerlendirme için tanı-tedavi rehberi."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/library/klinik/83.webp"
+      },
+      "dims": {
+        "w": 1440,
+        "h": 500
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 19154
+      }
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/era-testi-iluzyon/",
+      "og": {
+        "title": "ERA Testi Nedir? Tüp Bebekte Endometriyal Reseptivite Kanıtları | tupbebek.com",
+        "desc": "ERA testi nedir, tüp bebekte gerekli mi, tekrarlayan başarısızlıkta işe yarar mı? JAMA, HFEA ve ESHRE verileriyle endometriyal reseptivite testi değerlendirmesi.",
+        "image": "https://tupbebek.com/images/library/klinik/era-testi.webp",
+        "type": "article",
+        "width": "1200",
+        "height": "675",
+        "alt": "ERA testi nedir, tüp bebekte gerekli mi, tekrarlayan başarısızlıkta işe yarar mı? JAMA, HFEA ve ESHRE verileriyle endometriyal reseptivite testi değerlendirmesi."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/library/klinik/era-testi.webp"
+      },
+      "dims": {
+        "w": 1200,
+        "h": 675
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 50920
+      }
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/erkek-dogurganlik-besin-takviyeleri/",
+      "og": {
+        "title": "Erkek Doğurganlık Takviyeleri: Sperm İçin Vitaminler ve Kanıtlar | tupbebek.com",
+        "desc": "Sperm sayısı, hareketliliği ve DNA bütünlüğü için CoQ10, çinko, folat, omega-3, C ve E vitamini gibi erkek doğurganlık takviyelerinin kanıt düzeyi ve güvenli kullanımı.",
+        "image": "https://tupbebek.com/images/library/hastalik/erkekinfertilite.webp",
+        "type": "article",
+        "width": "1440",
+        "height": "500",
+        "alt": "Sperm sayısı, hareketliliği ve DNA bütünlüğü için CoQ10, çinko, folat, omega-3, C ve E vitamini gibi erkek doğurganlık takviyelerinin kanıt düzeyi ve güvenli kullanımı."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/library/hastalik/erkekinfertilite.webp"
+      },
+      "dims": {
+        "w": 1440,
+        "h": 500
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 32476
+      }
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/hiperprolaktinemi-ve-kisirlik/",
+      "og": {
+        "title": "Hiperprolaktinemi ve Kısırlık: Prolaktin Yüksekliği Gebeliği Etkiler mi? | tupbebek.com",
+        "desc": "Prolaktin yüksekliği hamile kalmaya engel olur mu? Hiperprolaktinemi belirtileri, nedenleri, test tekrarı, ilaçlar, prolaktinoma ve kısırlık tedavisi.",
+        "image": "https://tupbebek.com/images/library/hastalik/prolaktin.webp",
+        "type": "article",
+        "width": "1440",
+        "height": "500",
+        "alt": "Prolaktin yüksekliği hamile kalmaya engel olur mu? Hiperprolaktinemi belirtileri, nedenleri, test tekrarı, ilaçlar, prolaktinoma ve kısırlık tedavisi."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/library/hastalik/prolaktin.webp"
+      },
+      "dims": {
+        "w": 1440,
+        "h": 500
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 33424
+      }
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/hormonal-tedavi-adenomyozis/",
+      "og": {
+        "title": "Adenomyozis ve Tüp Bebek: Hormonal Tedavi Ne Zaman Düşünülür? | tupbebek.com",
+        "desc": "Adenomyozis tedavisi, GnRH analogları, progestinler, hormon spirali ve tüp bebek öncesi rahim hazırlığı hangi hastalarda düşünülür? Güvenli karar rehberi.",
+        "image": "https://tupbebek.com/images/library/hastalik/prolakktin.webp",
+        "type": "article",
+        "width": "1440",
+        "height": "500",
+        "alt": "Adenomyozis tedavisi, GnRH analogları, progestinler, hormon spirali ve tüp bebek öncesi rahim hazırlığı hangi hastalarda düşünülür? Güvenli karar rehberi."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/library/hastalik/prolakktin.webp"
+      },
+      "dims": {
+        "w": 1440,
+        "h": 500
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 53084
+      }
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/istanbul-tup-bebek-doktoru/",
+      "og": {
+        "title": "İstanbul Tüp Bebek Doktoru Seçimi: İlk Görüşme ve Kalite Soruları | tupbebek.com",
+        "desc": "İstanbul",
+        "image": "https://tupbebek.com/images/makaleler/istanbul-tup-bebek-doktoru.webp",
+        "type": "article",
+        "width": "1600",
+        "height": "900",
+        "alt": "İstanbul"
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/makaleler/istanbul-tup-bebek-doktoru.webp"
+      },
+      "dims": {
+        "w": 3072,
+        "h": 2048
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 195868
+      }
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/iui-nedir/",
+      "og": {
+        "title": "IUI Aşılama Nedir? Kimlere Uygun, Başarı Oranı ve Süreç | tupbebek.com",
+        "desc": "IUI yani aşılama tedavisi nasıl yapılır? Kimlere uygundur, ne zaman IVF",
+        "image": "https://tupbebek.com/images/library/tedavi/iac.webp",
+        "type": "article",
+        "width": "1440",
+        "height": "500",
+        "alt": "IUI yani aşılama tedavisi nasıl yapılır? Kimlere uygundur, ne zaman IVF"
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/library/tedavi/iac.webp"
+      },
+      "dims": {
+        "w": 1440,
+        "h": 500
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 67036
+      }
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/ivf-oncesi-histeroskopi/",
+      "og": {
+        "title": "IVF Öncesi Histeroskopi Gerekir mi? Rahim İçi Değerlendirme Rehberi | tupbebek.com",
+        "desc": "Tüp bebek öncesi histeroskopi ne zaman gerekir? İlk IVF denemesi, tekrarlayan implantasyon başarısızlığı, polip, miyom, yapışıklık, SIS ve HSG kararlarını kanıta dayalı özetleyen rehber.",
+        "image": "https://tupbebek.com/images/library/hastalik/histeroskopi_resim.webp",
+        "type": "article",
+        "width": "1408",
+        "height": "736",
+        "alt": "Tüp bebek öncesi histeroskopi ne zaman gerekir? İlk IVF denemesi, tekrarlayan implantasyon başarısızlığı, polip, miyom, yapışıklık, SIS ve HSG kararlarını kanıta dayalı özetleyen rehber."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/library/hastalik/histeroskopi_resim.webp"
+      },
+      "dims": {
+        "w": 1408,
+        "h": 736
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 37922
+      }
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/ivf-protokolleri/",
+      "og": {
+        "title": "IVF Protokolleri: Antagonist, Uzun, Mini IVF ve DuoStim Rehberi | tupbebek.com",
+        "desc": "IVF protokolü nasıl seçilir? Antagonist, uzun agonist, mini IVF, doğal siklus, PPOS, DuoStim, düşük AMH ve PCOS/OHSS riskinde güvenli tedavi yol haritası.",
+        "image": "https://tupbebek.com/images/makaleler/ivf-protokolleri.webp",
+        "type": "article",
+        "width": "1600",
+        "height": "900",
+        "alt": "IVF protokolü nasıl seçilir? Antagonist, uzun agonist, mini IVF, doğal siklus, PPOS, DuoStim, düşük AMH ve PCOS/OHSS riskinde güvenli tedavi yol haritası."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/makaleler/ivf-protokolleri.webp"
+      },
+      "dims": {
+        "w": 1600,
+        "h": 900
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 50636
+      }
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/iyi-tup-bebek-merkezi/",
+      "og": {
+        "title": "Tüp Bebek Merkezi Seçimi: Laboratuvar, Ekip ve Kalite Kontrol Listesi | tupbebek.com",
+        "desc": "Tüp bebek merkezi seçerken başarı oranı, laboratuvar kalitesi, embriyoloji ekibi, etik embriyo transferi, iletişim ve şeffaf bilgilendirme nasıl sorgulanır?",
+        "image": "https://tupbebek.com/images/makaleler/iyi-tup-bebek-merkezi.webp",
+        "type": "article",
+        "width": "1600",
+        "height": "900",
+        "alt": "Tüp bebek merkezi seçerken başarı oranı, laboratuvar kalitesi, embriyoloji ekibi, etik embriyo transferi, iletişim ve şeffaf bilgilendirme nasıl sorgulanır?"
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/makaleler/iyi-tup-bebek-merkezi.webp"
+      },
+      "dims": {
+        "w": 3072,
+        "h": 2048
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 230834
+      }
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/izotretinoin-sperm/",
+      "og": {
+        "title": "İzotretinoin Sperm Kalitesini Etkiler mi? Erkek Fertilitesi ve Güvenlik | tupbebek.com",
+        "desc": "Zoretanin/Roaccutane gibi izotretinoin ilaçları sperm, baba adaylığı ve obstrüktif olmayan azoospermi açısından ne ifade eder? Kanıtlar ve uyarılar.",
+        "image": "https://tupbebek.com/images/makaleler/izotretinoin-sperm.webp",
+        "type": "article",
+        "width": "1600",
+        "height": "900",
+        "alt": "Zoretanin/Roaccutane gibi izotretinoin ilaçları sperm, baba adaylığı ve obstrüktif olmayan azoospermi açısından ne ifade eder? Kanıtlar ve uyarılar."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/makaleler/izotretinoin-sperm.webp"
+      },
+      "dims": {
+        "w": 3072,
+        "h": 2048
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 230858
+      }
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/kac-yumurta-gerekir/",
+      "og": {
+        "title": "Tüp Bebekte Kaç Yumurta Gerekir? Yaşa Göre Gerçekçi Rehber | tupbebek.com",
+        "desc": "Tüp bebekte kaç yumurta yeterli kabul edilir? Yaş, AMH, olgun yumurta, embriyo kaybı, PGT-A, OHSS riski ve düşük rezerv için gerçekçi karar rehberi.",
+        "image": "https://tupbebek.com/images/library/embriyo/yumurta-sayisi.webp",
+        "type": "article",
+        "width": "1440",
+        "height": "550",
+        "alt": "Tüp bebekte kaç yumurta yeterli kabul edilir? Yaş, AMH, olgun yumurta, embriyo kaybı, PGT-A, OHSS riski ve düşük rezerv için gerçekçi karar rehberi."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/library/embriyo/yumurta-sayisi.webp"
+      },
+      "dims": {
+        "w": 1440,
+        "h": 550
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 20742
+      }
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/kadin-kisirligi-tup-bebek/",
+      "og": {
+        "title": "Kadın Kısırlığı ve Tüp Bebek: Nedenler, Tanı ve Tedavi Yolu | tupbebek.com",
+        "desc": "Kadın kısırlığında yumurtlama, tüpler, rahim, endometriozis ve yaş faktörü nasıl değerlendirilir? Tüp bebek ne zaman gerekir, hangi testler yapılır?",
+        "image": "https://tupbebek.com/images/library/laboratuvar/icsicizim.webp",
+        "type": "article",
+        "width": "1440",
+        "height": "500",
+        "alt": "Kadın kısırlığında yumurtlama, tüpler, rahim, endometriozis ve yaş faktörü nasıl değerlendirilir? Tüp bebek ne zaman gerekir, hangi testler yapılır?"
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/library/laboratuvar/icsicizim.webp"
+      },
+      "dims": {
+        "w": 1440,
+        "h": 500
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 112650
+      }
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/kanser-ve-fertilite/",
+      "og": {
+        "title": "Kanser ve Fertilite: Tedavi Öncesi Doğurganlık Koruma Rehberi | tupbebek.com",
+        "desc": "Kanser tedavisi öncesi yumurta, sperm, embriyo ve over dokusu dondurma seçenekleri; acil zaman planı, çocuk hastalarda yaklaşım ve onkofertilite kararları.",
+        "image": "https://tupbebek.com/images/library/laboratuvar/dr-senai-aksoy-istanbul-ivf-laboratuvar.webp",
+        "type": "article",
+        "width": "1440",
+        "height": "500",
+        "alt": "Kanser tedavisi öncesi yumurta, sperm, embriyo ve over dokusu dondurma seçenekleri; acil zaman planı, çocuk hastalarda yaklaşım ve onkofertilite kararları."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/library/laboratuvar/dr-senai-aksoy-istanbul-ivf-laboratuvar.webp"
+      },
+      "dims": {
+        "w": 1440,
+        "h": 500
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 36978
+      }
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/kimyasal-gebelik/",
+      "og": {
+        "title": "Kimyasal Gebelik Nedir? Belirtiler, hCG Takibi ve Sonraki Adım | tupbebek.com",
+        "desc": "Kimyasal gebelik çok erken gebelik kaybıdır. Pozitif test sonrası hCG düşüşü, kanama, ne zaman doktora başvurmalı ve tekrar denemeye ne zaman başlanabilir?",
+        "image": "https://tupbebek.com/images/library/embriyo/kimyasal-gebelik.webp",
+        "type": "article",
+        "width": "1440",
+        "height": "500",
+        "alt": "Kimyasal gebelik çok erken gebelik kaybıdır. Pozitif test sonrası hCG düşüşü, kanama, ne zaman doktora başvurmalı ve tekrar denemeye ne zaman başlanabilir?"
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/library/embriyo/kimyasal-gebelik.webp"
+      },
+      "dims": {
+        "w": 1440,
+        "h": 500
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 23210
+      }
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/laboratuvar-raporu-yorumlama/",
+      "og": {
+        "title": "4AA, 3BB, 5BC Embriyo Ne Demek? Laboratuvar Raporu Yorumlama | tupbebek.com",
+        "desc": "Embriyo kalite kodları nasıl okunur? 4AA, 3BB, 5BC, ICM, trofektoderm, blastosist genişleme derecesi, PGT-A ve embriyo transfer önceliğini sade Türkçe ile açıklıyoruz.",
+        "image": "https://tupbebek.com/images/makaleler/laboratuvar-raporu-yorumlama.webp",
+        "type": "article",
+        "width": "1600",
+        "height": "900",
+        "alt": "Embriyo kalite kodları nasıl okunur? 4AA, 3BB, 5BC, ICM, trofektoderm, blastosist genişleme derecesi, PGT-A ve embriyo transfer önceliğini sade Türkçe ile açıklıyoruz."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/makaleler/laboratuvar-raporu-yorumlama.webp"
+      },
+      "dims": {
+        "w": 1600,
+        "h": 900
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 71090
+      }
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/mikroenjeksiyon-icsi-nedir/",
+      "og": {
+        "title": "Mikroenjeksiyon (ICSI) Nedir? IVF",
+        "desc": "Mikroenjeksiyon ICSI nedir, IVF",
+        "image": "https://tupbebek.com/images/library/klinik/181.webp",
+        "type": "article",
+        "width": "1440",
+        "height": "500",
+        "alt": "Mikroenjeksiyon ICSI nedir, IVF"
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/library/klinik/181.webp"
+      },
+      "dims": {
+        "w": 1440,
+        "h": 500
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 52572
+      }
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/miyom-ameliyati/",
+      "og": {
+        "title": "Miyom Ameliyatı Ne Zaman Gerekir? Gebelik ve IVF İçin Karar Rehberi | tupbebek.com",
+        "desc": "Miyom ameliyatı ne zaman gerekir? Submüköz, intramural ve subseröz miyomlarda ameliyat kararı, gebelik planı, IVF, histeroskopi ve laparoskopi seçenekleri.",
+        "image": "https://tupbebek.com/images/library/hastalik/miyom-ameliyati-ne-zaman-gerekir.webp",
+        "type": "article",
+        "width": "1440",
+        "height": "500",
+        "alt": "Miyom ameliyatı ne zaman gerekir? Submüköz, intramural ve subseröz miyomlarda ameliyat kararı, gebelik planı, IVF, histeroskopi ve laparoskopi seçenekleri."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/library/hastalik/miyom-ameliyati-ne-zaman-gerekir.webp"
+      },
+      "dims": {
+        "w": 1440,
+        "h": 500
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 74138
+      }
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/miyomlar-ve-tup-bebek/",
+      "og": {
+        "title": "Miyomlar ve Tüp Bebek: Transfer Öncesi Ameliyat Gerekir mi? | tupbebek.com",
+        "desc": "Miyomlar tüp bebek başarısını etkiler mi? Submüköz, intramural ve subseröz miyomlarda IVF öncesi ameliyat, takip, embriyo dondurma ve transfer kararı.",
+        "image": "https://tupbebek.com/images/library/hastalik/miyom_ivf.webp",
+        "type": "article",
+        "width": "1440",
+        "height": "500",
+        "alt": "Miyomlar tüp bebek başarısını etkiler mi? Submüköz, intramural ve subseröz miyomlarda IVF öncesi ameliyat, takip, embriyo dondurma ve transfer kararı."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/library/hastalik/miyom_ivf.webp"
+      },
+      "dims": {
+        "w": 1440,
+        "h": 500
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 51080
+      }
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/opk-ve-ivf/",
+      "og": {
+        "title": "PCOS ve Tüp Bebek: OHSS Riski, Protokol ve Transfer Stratejisi | tupbebek.com",
+        "desc": "PCOS tüp bebek başarısını nasıl etkiler? OHSS riski, antagonist protokol, agonist trigger, freeze-all, metformin, letrozol ve gebelik takibi için güncel rehber.",
+        "image": "https://tupbebek.com/images/library/hastalik/opkveivf.webp",
+        "type": "article",
+        "width": "1440",
+        "height": "500",
+        "alt": "PCOS tüp bebek başarısını nasıl etkiler? OHSS riski, antagonist protokol, agonist trigger, freeze-all, metformin, letrozol ve gebelik takibi için güncel rehber."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/library/hastalik/opkveivf.webp"
+      },
+      "dims": {
+        "w": 1440,
+        "h": 500
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 19714
+      }
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/over-prp/",
+      "og": {
+        "title": "Yumurtalık PRP Enjeksiyonu: Düşük Rezervde Gerçekçi Değerlendirme | tupbebek.com",
+        "desc": "Yumurtalık PRP enjeksiyonu nedir? Düşük AMH, azalmış over rezervi ve erken over yetmezliğinde kanıt düzeyi, güvenlik, hasta seçimi ve gerçekçi beklentiler.",
+        "image": "https://tupbebek.com/images/makaleler/over-prp-2026-kapak.jpeg",
+        "type": "article",
+        "width": "1600",
+        "height": "900",
+        "alt": "Yumurtalık PRP enjeksiyonu nedir? Düşük AMH, azalmış over rezervi ve erken over yetmezliğinde kanıt düzeyi, güvenlik, hasta seçimi ve gerçekçi beklentiler."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/makaleler/over-prp-2026-kapak.jpeg"
+      },
+      "dims": {
+        "w": 3072,
+        "h": 2048
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/jpeg",
+        "sizeBytes": 538611
+      }
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/pgt-cinsiyet-secimi/",
+      "og": {
+        "title": "PGT ile Cinsiyet Seçimi: Türkiye",
+        "desc": "PGT ile cinsiyet seçimi Türkiye",
+        "image": "https://tupbebek.com/images/library/embriyo/pgt_sex.webp",
+        "type": "article",
+        "width": "1440",
+        "height": "500",
+        "alt": "PGT ile cinsiyet seçimi Türkiye"
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/library/embriyo/pgt_sex.webp"
+      },
+      "dims": {
+        "w": 1440,
+        "h": 500
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 37710
+      }
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/pgt-m/",
+      "og": {
+        "title": "PGT-M Nedir? Tek Gen Hastalıklarını Embriyoda Taramak | tupbebek.com",
+        "desc": "PGT-M nedir, kimlere gerekir, hangi hastalıklar taranır? Prob hazırlığı, IVF süreci, embriyo biyopsisi, sonuçların yorumu ve Türkiye",
+        "image": "https://tupbebek.com/images/library/embriyo/pgt.webp",
+        "type": "article",
+        "width": "1440",
+        "height": "500",
+        "alt": "PGT-M nedir, kimlere gerekir, hangi hastalıklar taranır? Prob hazırlığı, IVF süreci, embriyo biyopsisi, sonuçların yorumu ve Türkiye"
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/library/embriyo/pgt.webp"
+      },
+      "dims": {
+        "w": 1440,
+        "h": 500
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 27206
+      }
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/taze-dondurulmus-transfer/",
+      "og": {
+        "title": "Dondurulmuş Embriyo Transferi mi Taze Transfer mi? | tupbebek.com",
+        "desc": "Dondurulmuş embriyo transferi ne zaman yapılır? Taze ve dondurulmuş transfer farkı, freeze-all, OHSS riski, PGT, progesteron ve FET hazırlığı.",
+        "image": "https://tupbebek.com/images/library/tedavi/taze-donmus-transfert.webp",
+        "type": "article",
+        "width": "1440",
+        "height": "500",
+        "alt": "Dondurulmuş embriyo transferi ne zaman yapılır? Taze ve dondurulmuş transfer farkı, freeze-all, OHSS riski, PGT, progesteron ve FET hazırlığı."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/library/tedavi/taze-donmus-transfert.webp"
+      },
+      "dims": {
+        "w": 1440,
+        "h": 500
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 29968
+      }
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/tup-bebek-sureci-rehber/",
+      "og": {
+        "title": "Tüp Bebek Süreci ve Aşamaları: Kaç Gün Sürer? | tupbebek.com",
+        "desc": "Tüp bebek süreci kaç gün sürer, aşamaları nelerdir ve nasıl ilerler? İlk muayene, yumurtalık uyarımı, yumurta toplama, embriyo transferi ve beta-hCG testi.",
+        "image": "https://tupbebek.com/images/library/tedavi/tup_bebek_muayene.webp",
+        "type": "article",
+        "width": "2880",
+        "height": "1000",
+        "alt": "Tüp bebek süreci kaç gün sürer, aşamaları nelerdir ve nasıl ilerler? İlk muayene, yumurtalık uyarımı, yumurta toplama, embriyo transferi ve beta-hCG testi."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/library/tedavi/tup_bebek_muayene.webp"
+      },
+      "dims": {
+        "w": 2880,
+        "h": 1000
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 99324
+      }
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/tup-bebek-yanlis-bilinenler/",
+      "og": {
+        "title": "Tüp Bebek Hakkında 10 Yaygın Yanlış İnanç ve Doğruları | tupbebek.com",
+        "desc": "Tüp bebek ve kısırlık hakkında en sık yanlış bilinen konular: IVF herkese zorunlu mu, ilk denemede başarı kesin mi, ikiz riski, yaş ve değerlendirme süreci.",
+        "image": "https://tupbebek.com/images/library/klinik/41.webp",
+        "type": "article",
+        "width": "1440",
+        "height": "497",
+        "alt": "Tüp bebek ve kısırlık hakkında en sık yanlış bilinen konular: IVF herkese zorunlu mu, ilk denemede başarı kesin mi, ikiz riski, yaş ve değerlendirme süreci."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/library/klinik/41.webp"
+      },
+      "dims": {
+        "w": 1440,
+        "h": 497
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 37106
+      }
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/vajinal-mikrobiyom-fiv/",
+      "og": {
+        "title": "Vajinal Mikrobiyom IVF Başarısını Etkiler mi? Kanıtlar Ne Söylüyor? | tupbebek.com",
+        "desc": "Vajinal mikrobiyom, laktobasil baskın flora, disbiyoz, kronik endometrit ve IVF ilişkisi hakkında kanıt temelli rehber. Hangi testler ne zaman düşünülür, ne kesin değildir?",
+        "image": "https://tupbebek.com/images/library/laboratuvar/microbiota.webp",
+        "type": "article",
+        "width": "1235",
+        "height": "338",
+        "alt": "Vajinal mikrobiyom, laktobasil baskın flora, disbiyoz, kronik endometrit ve IVF ilişkisi hakkında kanıt temelli rehber. Hangi testler ne zaman düşünülür, ne kesin değildir?"
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/library/laboratuvar/microbiota.webp"
+      },
+      "dims": {
+        "w": 1235,
+        "h": 338
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 31704
+      }
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/varikosel-nedir-ne-zaman-ameliyat-gerekir/",
+      "og": {
+        "title": "Varikosel Nedir, Belirtileri Nelerdir ve Ne Zaman Ameliyat Gerekir? | tupbebek.com",
+        "desc": "Varikosel nedir, her varikosel ameliyat gerektirir mi, sperm testini nasıl etkiler? Varikosel ameliyatının ne zaman gerekli olabileceğini sade bir dille anlattık.",
+        "image": "https://tupbebek.com/images/makaleler/varikosel-nedir-ne-zaman-ameliyat-gerekir.webp",
+        "type": "article",
+        "width": "1600",
+        "height": "900",
+        "alt": "Varikosel nedir, her varikosel ameliyat gerektirir mi, sperm testini nasıl etkiler? Varikosel ameliyatının ne zaman gerekli olabileceğini sade bir dille anlattık."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/makaleler/varikosel-nedir-ne-zaman-ameliyat-gerekir.webp"
+      },
+      "dims": {
+        "w": 5632,
+        "h": 3072
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 570934
+      }
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/yasa-gore-tup-bebek-basari-oranlari/",
+      "og": {
+        "title": "Yaşa Göre Tüp Bebek Başarı Oranları: 30, 35, 40 Yaş ve Üzeri İçin Gerçekçi Beklenti | tupbebek.com",
+        "desc": "Yaşa göre tüp bebek başarısı nasıl değişir? 30",
+        "image": "https://tupbebek.com/images/makaleler/yasa-gore-tup-bebek-basari-oranlari.webp",
+        "type": "article",
+        "width": "1600",
+        "height": "900",
+        "alt": "Yaşa göre tüp bebek başarısı nasıl değişir? 30"
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/makaleler/yasa-gore-tup-bebek-basari-oranlari.webp"
+      },
+      "dims": {
+        "w": 1600,
+        "h": 900
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 41504
+      }
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/yumurtalik-kistleri-dogurganlik/",
+      "og": {
+        "title": "Yumurtalık Kistleri ve Doğurganlık: Hangi Kist Takip, Hangisi Tedavi? | tupbebek.com",
+        "desc": "Fonksiyonel kist, endometrioma, dermoid ve kistadenomların doğurganlığa etkisi; ultrason risk değerlendirmesi, AMH, IVF öncesi cerrahi ve fertilite koruyucu yaklaşım.",
+        "image": "https://tupbebek.com/images/library/klinik/237.webp",
+        "type": "article",
+        "width": "1440",
+        "height": "500",
+        "alt": "Fonksiyonel kist, endometrioma, dermoid ve kistadenomların doğurganlığa etkisi; ultrason risk değerlendirmesi, AMH, IVF öncesi cerrahi ve fertilite koruyucu yaklaşım."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/library/klinik/237.webp"
+      },
+      "dims": {
+        "w": 1440,
+        "h": 500
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 20024
+      }
+    },
+    {
+      "url": "https://tupbebek.com/makaleler/yumurtlama-takibi/",
+      "og": {
+        "title": "Yumurtlama Takibi Nedir? En Verimli Günler Nasıl Belirlenir? | tupbebek.com",
+        "desc": "Yumurtlama takibi nasıl yapılır? Ovülasyonun ne zaman olduğunu anlamak, LH testi, ultrason takibi, verimli pencere ve ilişki zamanlaması için sade rehber.",
+        "image": "https://tupbebek.com/images/library/klinik/54.webp",
+        "type": "article",
+        "width": "1440",
+        "height": "497",
+        "alt": "Yumurtlama takibi nasıl yapılır? Ovülasyonun ne zaman olduğunu anlamak, LH testi, ultrason takibi, verimli pencere ve ilişki zamanlaması için sade rehber."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/library/klinik/54.webp"
+      },
+      "dims": {
+        "w": 1440,
+        "h": 497
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 25992
+      }
+    },
+    {
+      "url": "https://tupbebek.com/pgt-merkezi/",
+      "og": {
+        "title": "Genetik ve PGT Merkezi: Preimplantasyon Genetik Testler | tupbebek.com",
+        "desc": "PGT-A, PGT-M ve PGT-SR testlerinin farkları, endikasyonları ve sınırlamaları. Kromozomal tarama, monogenik hastalıklar ve yapısal rearranjmanlar için kapsamlı bilgi.",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp",
+        "type": "website",
+        "width": "1200",
+        "height": "630",
+        "alt": "PGT-A, PGT-M ve PGT-SR testlerinin farkları, endikasyonları ve sınırlamaları. Kromozomal tarama, monogenik hastalıklar ve yapısal rearranjmanlar için kapsamlı bilgi."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp"
+      },
+      "dims": {
+        "w": 1024,
+        "h": 1024
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 51464
+      }
+    },
+    {
+      "url": "https://tupbebek.com/psikolojik-destek/",
+      "og": {
+        "title": "Psikolojik Destek ve Duygusal Rehber: İnfertilite Yolculuğu | tupbebek.com",
+        "desc": "İnfertilite sürecinin duygusal etkileri, çift ilişkileri, başarısız denemeler ve profesyonel destek alma zamanı. Duygusal rehber ve destek kaynakları.",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp",
+        "type": "website",
+        "width": "1200",
+        "height": "630",
+        "alt": "İnfertilite sürecinin duygusal etkileri, çift ilişkileri, başarısız denemeler ve profesyonel destek alma zamanı. Duygusal rehber ve destek kaynakları."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp"
+      },
+      "dims": {
+        "w": 1024,
+        "h": 1024
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 51464
+      }
+    },
+    {
+      "url": "https://tupbebek.com/rehberler/",
+      "og": {
+        "title": "Tedavi Süreci: Adım Adım Rehber | tupbebek.com",
+        "desc": "IVF sürecinin hazırlık aşamasından embriyo transferine kadar her adım. İlaçlar, prosedürler ve yaşam tarzı önerileri.",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp",
+        "type": "website",
+        "width": "1200",
+        "height": "630",
+        "alt": "IVF sürecinin hazırlık aşamasından embriyo transferine kadar her adım. İlaçlar, prosedürler ve yaşam tarzı önerileri."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp"
+      },
+      "dims": {
+        "w": 1024,
+        "h": 1024
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 51464
+      }
+    },
+    {
+      "url": "https://tupbebek.com/sss/",
+      "og": {
+        "title": "Sıkça Sorulan Sorular | tupbebek.com",
+        "desc": "Tüp bebek, IVF süreci, başarı oranları, yaşa bağlı etkenler, infertilite tedavileri ve yaşam tarzı hakkında en çok sorulan soruların bilimsel yanıtları.",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp",
+        "type": "website",
+        "width": "1200",
+        "height": "630",
+        "alt": "Tüp bebek, IVF süreci, başarı oranları, yaşa bağlı etkenler, infertilite tedavileri ve yaşam tarzı hakkında en çok sorulan soruların bilimsel yanıtları."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp"
+      },
+      "dims": {
+        "w": 1024,
+        "h": 1024
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 51464
+      }
+    },
+    {
+      "url": "https://tupbebek.com/tani-sureci/",
+      "og": {
+        "title": "İnfertilite Tanı Süreci | tupbebek.com",
+        "desc": "Kadın ve erkek infertilite değerlendirmesi, hormon testleri, semen analizi, genetik tarama ve tanı yöntemleri hakkında adım adım rehber.",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp",
+        "type": "website",
+        "width": "1200",
+        "height": "630",
+        "alt": "Kadın ve erkek infertilite değerlendirmesi, hormon testleri, semen analizi, genetik tarama ve tanı yöntemleri hakkında adım adım rehber."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp"
+      },
+      "dims": {
+        "w": 1024,
+        "h": 1024
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 51464
+      }
+    },
+    {
+      "url": "https://tupbebek.com/tedavi-yontemleri/",
+      "og": {
+        "title": "Yardımcı Üreme Teknikleri ve Tedavi Yöntemleri | tupbebek.com",
+        "desc": "IVF, ICSI, IUI, aşılama, yumurta dondurma, PGT ve diğer yardımcı üreme tekniklerinin karşılaştırmalı rehberi.",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp",
+        "type": "website",
+        "width": "1200",
+        "height": "630",
+        "alt": "IVF, ICSI, IUI, aşılama, yumurta dondurma, PGT ve diğer yardımcı üreme tekniklerinin karşılaştırmalı rehberi."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp"
+      },
+      "dims": {
+        "w": 1024,
+        "h": 1024
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 51464
+      }
+    },
+    {
+      "url": "https://tupbebek.com/tibbi-sorumluluk-reddi/",
+      "og": {
+        "title": "Tıbbi Sorumluluk Reddi | tupbebek.com",
+        "desc": "tupbebek.com içeriklerinin bilgilendirme amaçlı olduğunu ve doktor muayenesi yerine geçmediğini açıklayan tıbbi sorumluluk reddi.",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp",
+        "type": "website",
+        "width": "1200",
+        "height": "630",
+        "alt": "tupbebek.com içeriklerinin bilgilendirme amaçlı olduğunu ve doktor muayenesi yerine geçmediğini açıklayan tıbbi sorumluluk reddi."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp"
+      },
+      "dims": {
+        "w": 1024,
+        "h": 1024
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 51464
+      }
+    },
+    {
+      "url": "https://tupbebek.com/tibbi-sozluk/",
+      "og": {
+        "title": "Tip Terimleri Sozlugu | IVF ve Ureme Tibbi Terimleri | tupbebek.com",
+        "desc": "AMH, FSH, ICSI, blastosist, endometrium gibi medikal terimlerin aciklamalari ve ilgili kaynaklara baglantilar.",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp",
+        "type": "website",
+        "width": "1200",
+        "height": "630",
+        "alt": "AMH, FSH, ICSI, blastosist, endometrium gibi medikal terimlerin aciklamalari ve ilgili kaynaklara baglantilar."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp"
+      },
+      "dims": {
+        "w": 1024,
+        "h": 1024
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 51464
+      }
+    },
+    {
+      "url": "https://tupbebek.com/transfer-sureci/",
+      "og": {
+        "title": "Embriyo Transferi ve Bekleme Süreci | tupbebek.com",
+        "desc": "Embriyo transferi nasıl yapılır? Embriyo kalite dereceleri, transfer sonrası 12 günlük bekleme süreci, belirtiler ve tavsiyeler.",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp",
+        "type": "website",
+        "width": "1200",
+        "height": "630",
+        "alt": "Embriyo transferi nasıl yapılır? Embriyo kalite dereceleri, transfer sonrası 12 günlük bekleme süreci, belirtiler ve tavsiyeler."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp"
+      },
+      "dims": {
+        "w": 1024,
+        "h": 1024
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 51464
+      }
+    },
+    {
+      "url": "https://tupbebek.com/yas-ve-fertilite/",
+      "og": {
+        "title": "Yaş ve Fertilite: Üreme Başarısı Üzerinde Yaşın Etkileri | tupbebek.com",
+        "desc": "Kadın ve erkek yaşının fertilite ve tüp bebek başarısı üzerindeki etkisi, yaşlanma ve oosit kalitesi, erkek yaşının sperm parametrelerine etkisi.",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp",
+        "type": "website",
+        "width": "1200",
+        "height": "630",
+        "alt": "Kadın ve erkek yaşının fertilite ve tüp bebek başarısı üzerindeki etkisi, yaşlanma ve oosit kalitesi, erkek yaşının sperm parametrelerine etkisi."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp"
+      },
+      "dims": {
+        "w": 1024,
+        "h": 1024
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 51464
+      }
+    },
+    {
+      "url": "https://tupbebek.com/yayin-kurulu/",
+      "og": {
+        "title": "Yayın Kurulu | tupbebek.com",
+        "desc": "tupbebek.com tıbbi yayın kurulu üyeleri, editöryal sürecimiz ve içerik denetim politikamız hakkında bilgi edinin.",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp",
+        "type": "website",
+        "width": "1200",
+        "height": "630",
+        "alt": "tupbebek.com tıbbi yayın kurulu üyeleri, editöryal sürecimiz ve içerik denetim politikamız hakkında bilgi edinin."
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp"
+      },
+      "dims": {
+        "w": 1024,
+        "h": 1024
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 51464
+      }
+    },
+    {
+      "url": "https://tupbebek.com/yazar/senai-aksoy/",
+      "og": {
+        "title": "Doç. Dr. Senai Aksoy — Baş Editör | tupbebek.com",
+        "desc": "Doç. Dr. Senai Aksoy: Cerrahpaşa Tıp Fakültesi mezunu, Türkiye",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp",
+        "type": "website",
+        "width": "1200",
+        "height": "630",
+        "alt": "Doç. Dr. Senai Aksoy: Cerrahpaşa Tıp Fakültesi mezunu, Türkiye"
+      },
+      "tw": {
+        "card": "summary_large_image",
+        "image": "https://tupbebek.com/images/home/luxury-embryo.webp"
+      },
+      "dims": {
+        "w": 1024,
+        "h": 1024
+      },
+      "imgInfo": {
+        "ok": true,
+        "contentType": "image/webp",
+        "sizeBytes": 51464
+      }
+    }
+  ]
+}
