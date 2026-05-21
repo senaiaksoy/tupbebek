@@ -98,21 +98,21 @@
 # --------------------------------------------
 # 6. /blog/sayfa/N/ pagination
 # --------------------------------------------
-/blog/sayfa/*                                   /makaleler/                                      301
+# Handled by Astro legacy fallback so /blog exact aliases can win first.
 
 # --------------------------------------------
 # 7. Eski /makaleler/kategori/slug yapısı
 # --------------------------------------------
 /makaleler/endoskopik-cerrahi/endoskopik-cerrahi-histeroskopi-nedir  /makaleler/endoskopik-cerrahi-histeroskopi/  301
 /makaleler/kisirlik/*                           /makaleler/                                      301
-/makaleler/hamilelik-ve-dogum/*                 /makaleler/                                      301
+/makaleler/hamilelik-ve-dogum*                  /makaleler/                                      301
 /makaleler/tup-bebek/*                          /makaleler/                                      301
 /makaleler/endoskopik-cerrahi/*                 /makaleler/                                      301
 
 # --------------------------------------------
 # 8. Videolar (eski YouTube embed sayfaları)
 # --------------------------------------------
-/videolar/*                                     /makaleler/                                      301
+# Handled by Astro legacy fallback.
 
 # --------------------------------------------
 # 9. Çok dilli eski sürümler (Arapça / Fransızca / İngilizce) — terk edildi
@@ -160,3 +160,10 @@
 # --------------------------------------------
 /undefined/*                                    /                                               301
 /*/undefined/*                                  /                                               301
+
+# --------------------------------------------
+# 12. Eski PHP / ASP endpoint fallback'leri
+# --------------------------------------------
+/public/*                                       /makaleler/                                      301
+/modules.php                                    /makaleler/                                      301
+/h2n.php                                        /tani-sureci/                                    301
