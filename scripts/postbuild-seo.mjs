@@ -189,6 +189,38 @@ function canonicalRedirectFor(requestUrl) {
   const url = new URL(requestUrl);
   let changed = false;
 
+  const legacyRedirects = new Map([
+    ['/$%7BsafeUrl%7D/', '/'],
+    ['/$%7Bresult.url%7D/', '/'],
+    ['/$%7Burl%7D/', '/'],
+    ['/public/article.aspx', '/makaleler/'],
+    ['/public/haber.aspx', '/makaleler/'],
+    ['/modules.php', '/makaleler/'],
+    ['/h2n.php', '/tani-sureci/'],
+  ]);
+
+  const legacyDestination = legacyRedirects.get(url.pathname);
+  if (legacyDestination) {
+    return new Response(null, {
+      status: 301,
+      headers: {
+        Location: legacyDestination,
+      },
+    });
+  }
+
+  if (
+    url.pathname === '/makaleler/hamilelik-ve-dogum' ||
+    url.pathname.startsWith('/makaleler/hamilelik-ve-dogum/')
+  ) {
+    return new Response(null, {
+      status: 301,
+      headers: {
+        Location: '/makaleler/',
+      },
+    });
+  }
+
   for (const key of [...url.searchParams.keys()]) {
     if (TRACKING_QUERY_PARAMS.has(key.toLowerCase())) {
       url.searchParams.delete(key);
