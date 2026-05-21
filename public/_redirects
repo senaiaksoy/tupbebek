@@ -150,9 +150,10 @@
 /contact-us                                     /iletisim/                                       301
 
 # --------------------------------------------
-# 10. /blog/* catch-all fallback (spesifik eşleşme yoksa)
+# 10. /blog/* fallback
 # --------------------------------------------
-/blog/*                                         /makaleler/                                      301
+# /blog/* legacy redirects are handled by the Astro legacy route so exact
+# article aliases in src/utils/routeAliases.mjs can win before the fallback.
 
 # --------------------------------------------
 # 11. "undefined" içeren bozuk URL'ler

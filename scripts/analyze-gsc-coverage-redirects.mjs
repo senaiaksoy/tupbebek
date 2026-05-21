@@ -1,5 +1,6 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
+import { normalizeInternalPath } from '../src/utils/routeAliases.mjs';
 
 const rootDir = process.cwd();
 const defaultInputDir = 'C:\\Users\\KC3\\Downloads\\tupbebek.com-Coverage-Drilldown-2026-05-14';
@@ -88,10 +89,21 @@ function normalizePath(pathname) {
 function canonicalize(urlString) {
   try {
     const parsed = new URL(urlString);
-    const pathname = normalizePath(parsed.pathname.toLowerCase());
-    return `${siteOrigin}${pathname}`;
+    const normalized = normalizeInternalPath(`${parsed.pathname}${parsed.search}${parsed.hash}`);
+    const canonical = new URL(normalized, siteOrigin);
+    canonical.pathname = normalizePath(canonical.pathname.toLowerCase());
+    return canonical.toString();
   } catch {
     return '';
+  }
+}
+
+function normalizeComparablePath(value) {
+  try {
+    const parsed = new URL(value, siteOrigin);
+    return normalizePath(parsed.pathname.toLowerCase());
+  } catch {
+    return normalizePath(value.toLowerCase());
   }
 }
 
@@ -199,7 +211,10 @@ async function main() {
       if (keyPath.startsWith('/blog/')) counters.set('blog_prefix', counters.get('blog_prefix') + 1);
 
       const alias = deriveAliasCandidate(pathname, articleSlugs);
-      if (alias && alias.from !== alias.to) {
+      if (
+        alias &&
+        normalizeComparablePath(normalizeInternalPath(alias.from)) !== normalizeComparablePath(alias.to)
+      ) {
         aliasCandidates.set(alias.from, alias.to);
       }
     } catch {
@@ -212,6 +227,7 @@ async function main() {
   const total = tableRows.length;
 
   const aliasObject = Object.fromEntries([...aliasCandidates.entries()].sort((a, b) => a[0].localeCompare(b[0])));
+  const missingAliasCount = Object.keys(aliasObject).length;
 
   const reportMd = [
     '# GSC Coverage Redirect Analysis',
@@ -224,6 +240,8 @@ async function main() {
     '',
     '## Pattern counts',
     toTopLines(counters, total, 20),
+    '',
+    `- Unimplemented high-confidence alias candidates: **${missingAliasCount}**`,
     '',
     '## Top hosts',
     toTopLines(hostCounters, total, 10),
@@ -238,7 +256,9 @@ async function main() {
     '- Enforce single-hop host/protocol canonical redirect (http->https, non-www->www).',
     '- Normalize trailing slash behavior consistently at edge and app layer.',
     '- Strip low-value tracking/query parameters from canonical URLs (gclid, utm_*, fbclid).',
-    '- Add high-confidence legacy path aliases generated in `gsc-route-aliases-draft.json`.',
+    missingAliasCount > 0
+      ? '- Add high-confidence legacy path aliases generated in `gsc-route-aliases-draft.json`.'
+      : '- No unimplemented high-confidence route aliases were detected in this export.',
     '- Re-submit sitemap and validate in GSC after 7-14 days.',
     '',
   ].join('\n');
