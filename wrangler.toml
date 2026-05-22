@@ -1,3 +1,6 @@
+# Canonical Cloudflare Pages project:
+# https://dash.cloudflare.com/4797b38bf5bfb1b15a30ac27f0a9a78f/pages/view/tupbebek
+# Do not deploy this repository to the legacy/wrong `tupbebek-portal` project.
 name = "tupbebek"
 compatibility_date = "2024-09-23"
 compatibility_flags = ["nodejs_compat"]

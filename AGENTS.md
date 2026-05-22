@@ -43,6 +43,15 @@ Her tibbi icerik sayfasinda bulunmasi gereken unsurlar:
 - **Fonts**: Inter (headlines + body), Material Symbols Outlined (icons)
 - **Deploy**: Static build, SSG
 
+### Cloudflare Deploy Hedefi
+
+- **Tek dogru Cloudflare Pages projesi**: `tupbebek`
+- **Dashboard**: https://dash.cloudflare.com/4797b38bf5bfb1b15a30ac27f0a9a78f/pages/view/tupbebek
+- **Production branch**: `main`
+- **Guvenli deploy komutu**: `npm run deploy`
+- **Yasak hedef**: `tupbebek-portal` projesine kesinlikle deploy edilmez.
+- Manuel deploy gerekirse komut mutlaka su hedefle calistirilir: `npx wrangler pages deploy ./dist --project-name tupbebek --branch main`
+
 ### Tasarim Sistemi
 
 - **Primary**: Derin lacivert (#2563a8) — guven rengi

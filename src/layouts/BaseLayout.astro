@@ -185,19 +185,37 @@ const siteGraph = {
 		<meta name="twitter:image" content={socialImageUrl} />
 		<meta name="twitter:site" content="@tupbebek" />
 
-		<!-- Google Analytics (GA4) - Loads only after cookie consent -->
+		<!-- Google Analytics (GA4) - Consent Mode v2 advanced implementation -->
 		<script is:inline>
 			const analyticsConsentKey = 'cookie-consent-v1.2';
-			const hasAnalyticsConsent = () => {
+			const getAnalyticsConsentStatus = () => {
 				try {
-					return localStorage.getItem(analyticsConsentKey) === 'accepted';
+					return localStorage.getItem(analyticsConsentKey);
 				} catch {
-					return false;
+					return null;
 				}
 			};
 
+			window.dataLayer = window.dataLayer || [];
+			window.gtag = window.gtag || function(){window.dataLayer.push(arguments);};
+			window.gtag('consent', 'default', {
+				analytics_storage: 'denied',
+				ad_storage: 'denied',
+				ad_user_data: 'denied',
+				ad_personalization: 'denied',
+				wait_for_update: 500
+			});
+
+			function updateAnalyticsConsent(status) {
+				window.gtag('consent', 'update', {
+					analytics_storage: status === 'accepted' ? 'granted' : 'denied',
+					ad_storage: 'denied',
+					ad_user_data: 'denied',
+					ad_personalization: 'denied'
+				});
+			}
+
 			function loadGA() {
-				if (!hasAnalyticsConsent()) return;
 				if (window.gaLoaded) return;
 				window.gaLoaded = true;
 				window.__loadGA = loadGA;
@@ -209,11 +227,9 @@ const siteGraph = {
 				document.head.appendChild(script);
 
 				// Init GA
-				window.dataLayer = window.dataLayer || [];
-				window.gtag = window.gtag || function(){window.dataLayer.push(arguments);};
 				window.gtag('js', new Date());
+				updateAnalyticsConsent(getAnalyticsConsentStatus());
 				window.gtag('config', 'G-K3VE72CSDJ');
-				console.log('GA4 Loaded on activity');
 			}
 
 			window.__loadGA = loadGA;
@@ -221,24 +237,13 @@ const siteGraph = {
 			window.__trackGaEvent = function(eventName, params = {}) {
 				loadGA();
 				if (!window.gaLoaded) return;
-				window.dataLayer = window.dataLayer || [];
-				window.gtag = window.gtag || function(){window.dataLayer.push(arguments);};
 				window.gtag('event', eventName, params);
 			};
 
-			// Activity events to trigger loading
-			const activityEvents = ['mousedown', 'mousemove', 'keydown', 'scroll', 'touchstart'];
-			activityEvents.forEach(event => {
-				window.addEventListener(event, loadGA, { once: true, passive: true });
-			});
-
-			// Fallback load after 3.5 seconds, only when consent exists.
-			setTimeout(loadGA, 3500);
+			loadGA();
 
 			window.addEventListener('cookie-consent:updated', function(event) {
-				if (event.detail?.status === 'accepted') {
-					loadGA();
-				}
+				updateAnalyticsConsent(event.detail?.status);
 			});
 		</script>
 

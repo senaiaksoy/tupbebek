@@ -7,9 +7,11 @@
     "start": "astro dev",
     "prebuild": "node scripts/enrich-pmids.mjs --apply && node scripts/build-image-manifest.mjs",
     "build": "astro build && node scripts/postbuild-seo.mjs && echo _worker.js > dist/.assetsignore && npx pagefind --site dist --glob \"makaleler/**/*.html\"",
+    "deploy": "node scripts/deploy-pages.mjs",
     "preview": "astro preview",
     "astro": "astro",
     "verify:seo": "node scripts/verify-seo-canonicalization.mjs",
+    "verify:deploy-target": "node scripts/verify-deploy-target.mjs",
     "pmid:enrich": "node scripts/enrich-pmids.mjs",
     "pmid:enrich:apply": "node scripts/enrich-pmids.mjs --apply"
   },
