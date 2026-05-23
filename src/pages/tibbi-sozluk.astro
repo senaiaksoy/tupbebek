@@ -31,7 +31,7 @@ function getIcon(term: string): string {
 }
 ---
 
-<BaseLayout title="Tip Terimleri Sozlugu | IVF ve Ureme Tibbi Terimleri | tupbebek.com" description="AMH, FSH, ICSI, blastosist, endometrium gibi medikal terimlerin aciklamalari ve ilgili kaynaklara baglantilar.">
+<BaseLayout title="Tıp Terimleri Sözlüğü | IVF ve Üreme Tıbbi Terimleri | tupbebek.com" description="AMH, FSH, ICSI, blastosist, endometrium gibi medikal terimlerin açıklamaları ve ilgili kaynaklara bağlantılar.">
     <Header />
 
     <main id="main-content" tabindex="-1" class="pt-32 pb-24">
@@ -41,13 +41,13 @@ function getIcon(term: string): string {
                 <div class="flex-1">
                     <div class="inline-flex items-center gap-2 px-3 py-1 bg-mint-100 text-mint-700 rounded-full text-xs font-semibold uppercase tracking-wider mb-6">
                         <span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">menu_book</span>
-                        Tip Sozlugu
+                        Tıp Sözlüğü
                     </div>
                     <h1 class="font-headline text-4xl md:text-5xl text-gray-900 leading-tight mb-6">
-                        Tip Terimleri Sozlugu
+                        Tıp Terimleri Sözlüğü
                     </h1>
                     <p class="text-lg text-gray-600 leading-relaxed mb-8">
-                        Ureme tibbi ve IVF sureclerinde sikca karsilasilan medikal terimlerin aciklamalari. Her terim klinik baglamda tanimlanmis ve ilgili sayfalara baglanti icermektedir.
+                        Üreme tıbbı ve IVF süreçlerinde sıkça karşılaşılan medikal terimlerin açıklamaları. Her terim klinik bağlamda tanımlanmış ve ilgili sayfalara bağlantı içermektedir.
                     </p>
 
                     <!-- Letter Navigation -->
@@ -213,7 +213,7 @@ function getIcon(term: string): string {
             <!-- No Results -->
             <div id="no-results" class="hidden text-center py-16">
                 <span class="material-symbols-outlined text-gray-300 text-6xl mb-4">search_off</span>
-                <p class="text-gray-500 text-lg">Aradiginiz terim bulunamadi.</p>
+                <p class="text-gray-500 text-lg">Aradığınız terim bulunamadı.</p>
                 <p class="text-gray-400 text-sm mt-1">Farkli bir anahtar kelime deneyin.</p>
             </div>
         </section>
@@ -223,7 +223,7 @@ function getIcon(term: string): string {
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <div class="bg-primary-50 rounded-xl p-5 text-center">
                     <p class="font-headline text-2xl font-bold text-primary-700">{terms.length}</p>
-                    <p class="text-xs text-gray-600 mt-1">Tibbi Terim</p>
+                    <p class="text-xs text-gray-600 mt-1">Tıbbi Terim</p>
                 </div>
                 <div class="bg-mint-50 rounded-xl p-5 text-center">
                     <p class="font-headline text-2xl font-bold text-mint-700">{sortedLetters.length}</p>
@@ -231,7 +231,7 @@ function getIcon(term: string): string {
                 </div>
                 <div class="bg-apricot-50 rounded-xl p-5 text-center">
                     <p class="font-headline text-2xl font-bold text-apricot-700">{terms.filter(t => t.href).length}</p>
-                    <p class="text-xs text-gray-600 mt-1">Baglantili Sayfa</p>
+                    <p class="text-xs text-gray-600 mt-1">Bağlantılı Sayfa</p>
                 </div>
                 <div class="bg-gray-50 rounded-xl p-5 text-center">
                     <p class="font-headline text-2xl font-bold text-gray-700">{videoTerms.length}</p>
@@ -242,37 +242,37 @@ function getIcon(term: string): string {
 
         <!-- Related Pages -->
         <section class="max-w-5xl mx-auto px-6 mb-16">
-            <h2 class="font-headline text-2xl text-gray-900 mb-6">Ilgili Sayfalar</h2>
+            <h2 class="font-headline text-2xl text-gray-900 mb-6">İlgili Sayfalar</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 <a href="/tani-sureci" class="border border-gray-200 rounded-xl p-5 hover:shadow-md hover:border-primary-200 transition-all block group">
                     <span class="material-symbols-outlined text-primary-600 mb-2 text-2xl">assignment</span>
-                    <h3 class="font-bold text-gray-900 text-sm group-hover:text-primary-600 transition-colors">Tani Sureci</h3>
-                    <p class="text-xs text-gray-500 mt-1">Infertilite degerlendirmesi adimlari</p>
+                    <h3 class="font-bold text-gray-900 text-sm group-hover:text-primary-600 transition-colors">Tanı Süreci</h3>
+                    <p class="text-xs text-gray-500 mt-1">İnfertilite değerlendirmesi adımları</p>
                 </a>
                 <a href="/ilac-rehberi" class="border border-gray-200 rounded-xl p-5 hover:shadow-md hover:border-primary-200 transition-all block group">
                     <span class="material-symbols-outlined text-primary-600 mb-2 text-2xl">medication</span>
-                    <h3 class="font-bold text-gray-900 text-sm group-hover:text-primary-600 transition-colors">Ilac Rehberi</h3>
-                    <p class="text-xs text-gray-500 mt-1">IVF ilaclari, dozajlar ve yan etkiler</p>
+                    <h3 class="font-bold text-gray-900 text-sm group-hover:text-primary-600 transition-colors">İlaç Rehberi</h3>
+                    <p class="text-xs text-gray-500 mt-1">IVF ilaçları, dozajlar ve yan etkiler</p>
                 </a>
                 <a href="/tedavi-yontemleri" class="border border-gray-200 rounded-xl p-5 hover:shadow-md hover:border-primary-200 transition-all block group">
                     <span class="material-symbols-outlined text-primary-600 mb-2 text-2xl">biotech</span>
-                    <h3 class="font-bold text-gray-900 text-sm group-hover:text-primary-600 transition-colors">Tedavi Yontemleri</h3>
-                    <p class="text-xs text-gray-500 mt-1">IVF, ICSI, IUI ve diger teknikler</p>
+                    <h3 class="font-bold text-gray-900 text-sm group-hover:text-primary-600 transition-colors">Tedavi Yöntemleri</h3>
+                    <p class="text-xs text-gray-500 mt-1">IVF, ICSI, IUI ve diğer teknikler</p>
                 </a>
                 <a href="/pgt-merkezi" class="border border-gray-200 rounded-xl p-5 hover:shadow-md hover:border-primary-200 transition-all block group">
                     <span class="material-symbols-outlined text-primary-600 mb-2 text-2xl">microscope</span>
                     <h3 class="font-bold text-gray-900 text-sm group-hover:text-primary-600 transition-colors">PGT Merkezi</h3>
-                    <p class="text-xs text-gray-500 mt-1">Genetik tarama ve embriyo secimi</p>
+                    <p class="text-xs text-gray-500 mt-1">Genetik tarama ve embriyo seçimi</p>
                 </a>
                 <a href="/erkek-infertilitesi" class="border border-gray-200 rounded-xl p-5 hover:shadow-md hover:border-primary-200 transition-all block group">
                     <span class="material-symbols-outlined text-primary-600 mb-2 text-2xl">male</span>
-                    <h3 class="font-bold text-gray-900 text-sm group-hover:text-primary-600 transition-colors">Erkek Infertilitesi</h3>
-                    <p class="text-xs text-gray-500 mt-1">Erkek faktor tani ve tedavi</p>
+                    <h3 class="font-bold text-gray-900 text-sm group-hover:text-primary-600 transition-colors">Erkek İnfertilitesi</h3>
+                    <p class="text-xs text-gray-500 mt-1">Erkek faktör tanı ve tedavi</p>
                 </a>
                 <a href="/makaleler" class="border border-gray-200 rounded-xl p-5 hover:shadow-md hover:border-primary-200 transition-all block group">
                     <span class="material-symbols-outlined text-primary-600 mb-2 text-2xl">library_books</span>
                     <h3 class="font-bold text-gray-900 text-sm group-hover:text-primary-600 transition-colors">Makaleler</h3>
-                    <p class="text-xs text-gray-500 mt-1">Terimlerin detayli aciklandigi makaleler</p>
+                    <p class="text-xs text-gray-500 mt-1">Terimlerin detaylı açıklandığı makaleler</p>
                 </a>
             </div>
         </section>
@@ -285,9 +285,9 @@ function getIcon(term: string): string {
                         <span class="material-symbols-outlined text-amber-600">info</span>
                     </div>
                     <div>
-                        <h4 class="text-sm font-bold text-gray-900 mb-2">Tibbi Bilgi Notu</h4>
+                        <h4 class="text-sm font-bold text-gray-900 mb-2">Tıbbi Bilgi Notu</h4>
                         <p class="text-xs text-gray-600 leading-relaxed">
-                            Bu sozluk, tupbebek.com yayin kurulu tarafindan tibbi dogruluk acisindan incelenmistir. Sunulan bilgiler genel bilgilendirme amacidir; kisisel tibbi tani veya tedavi yerine gecmez. Saglik kararlari icin mutlaka bir hekime danisiniz.
+                            Bu sözlük, tupbebek.com yayın kurulu tarafından tıbbi doğruluk açısından incelenmiştir. Sunulan bilgiler genel bilgilendirme amaçlıdır; kişisel tıbbi tanı veya tedavi yerine geçmez. Sağlık kararları için mutlaka bir hekime danışınız.
                         </p>
                     </div>
                 </div>
