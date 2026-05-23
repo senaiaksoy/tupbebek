@@ -101,12 +101,20 @@ const authorSchema: Record<string, unknown> = isSenaiAksoy
         ...(authorYoutube ? { "sameAs": authorYoutube } : {}),
     };
 
-// Build reviewer schema
-const reviewerSchema = d.medicalReviewer ? {
-    "@type": d.medicalReviewer.includes('Kurul') ? "Organization" : "Person",
-    "name": d.medicalReviewer,
-    ...(d.reviewerTitle ? { "jobTitle": d.reviewerTitle } : {}),
-} : undefined;
+// Build reviewer schema — Dr. Aksoy reviewer olduğunda canonical @id'ye
+// resolve et (senaiaksoy.net Block A'daki Person entity'ye). Inline Person
+// üretmek yerine @id referansı, AI engine'lerin reviewer = author = Wikidata
+// Q139893832 entity'sini tek node olarak çözmesini sağlar.
+const isReviewerSenaiAksoy = d.medicalReviewer && /senai\s+aksoy/i.test(d.medicalReviewer);
+const reviewerSchema = d.medicalReviewer
+    ? (isReviewerSenaiAksoy
+        ? { "@id": SENAI_AKSOY_PERSON_ID }
+        : {
+            "@type": d.medicalReviewer.includes('Kurul') ? "Organization" : "Person",
+            "name": d.medicalReviewer,
+            ...(d.reviewerTitle ? { "jobTitle": d.reviewerTitle } : {}),
+        })
+    : undefined;
 
 // Build citations from references
 const citations = d.references?.map(ref => {
