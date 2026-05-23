@@ -7,32 +7,38 @@ const { version = "1.2" } = Astro.props;
 ---
 
 <div
-  id="cookie-consent"
-  class="fixed bottom-0 left-0 right-0 bg-gray-50 border-t border-gray-300 px-3 pt-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))] md:p-6 shadow-2xl z-[120] translate-y-full transition-transform duration-300 ease-out"
-  role="alertdialog"
-  aria-labelledby="cookie-title"
-  aria-describedby="cookie-description"
-  aria-hidden="true"
+  id="cookie-consent-overlay"
+  class="fixed inset-0 z-[120] hidden place-items-center bg-gray-950/55 px-4 py-6 opacity-0 backdrop-blur-sm transition-opacity duration-200"
 >
-  <div class="max-w-5xl mx-auto md:px-8">
-    <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-3 md:gap-4">
-      <div class="flex-1 min-w-0">
-        <h3 id="cookie-title" class="font-bold text-gray-900 text-sm md:text-base mb-1 md:mb-2">Çerez ve Analitik Onayı</h3>
-        <p id="cookie-description" class="text-xs md:text-sm text-gray-600 leading-snug">
+  <div
+    id="cookie-consent"
+    class="w-full max-w-lg rounded-lg border border-gray-200 bg-white p-5 shadow-2xl md:p-6"
+    role="alertdialog"
+    aria-modal="true"
+    aria-labelledby="cookie-title"
+    aria-describedby="cookie-description"
+    aria-hidden="true"
+  >
+    <div class="space-y-4">
+      <div class="space-y-2">
+        <h3 id="cookie-title" class="text-base font-bold text-gray-900 md:text-lg">Çerez ve Analitik Onayı</h3>
+        <p id="cookie-description" class="text-sm leading-relaxed text-gray-600">
           Zorunlu çerezler siteyi çalıştırır. Onay vermediğinizde GA4 çerez kullanmadan sınırlı ölçüm sinyalleri alabilir; analitik çerezler yalnızca “Analitikleri kabul et” seçeneğiyle kullanılır.
-          <a href="/cerez-politikasi" class="text-primary-600 hover:underline">Çerez Politikası</a>.
+          <a href="/cerez-politikasi" class="font-medium text-primary-600 hover:underline">Çerez Politikası</a>.
         </p>
       </div>
-      <div class="grid grid-cols-2 gap-2 md:flex md:gap-4 flex-shrink-0 w-full md:w-auto">
+      <div class="grid grid-cols-1 gap-2 sm:grid-cols-2">
         <button
           id="cookie-reject"
-          class="px-4 md:px-5 py-2.5 md:py-3 min-h-[44px] rounded-lg border border-gray-300 text-gray-900 hover:bg-gray-100 transition-colors text-sm font-medium"
+          type="button"
+          class="min-h-[44px] rounded-lg border border-gray-300 px-4 py-3 text-sm font-medium text-gray-900 transition-colors hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-primary-300 focus:ring-offset-2"
         >
           Reddet
         </button>
         <button
           id="cookie-accept"
-          class="px-4 md:px-5 py-2.5 md:py-3 min-h-[44px] rounded-lg bg-primary-600 text-white hover:opacity-90 transition-opacity text-sm font-semibold"
+          type="button"
+          class="min-h-[44px] rounded-lg bg-primary-600 px-4 py-3 text-sm font-semibold text-white transition-opacity hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-primary-300 focus:ring-offset-2"
         >
           Analitikleri Kabul Et
         </button>
@@ -51,11 +57,17 @@ const { version = "1.2" } = Astro.props;
 </button>
 
 <script define:vars={{ version }}>
-  // Default-hidden via translate-y-full; reveal only if consent missing.
-  // Avoids the flash where SSR shows the banner then JS hides it.
+  // Default-hidden; reveal only if consent is missing.
+  // GA4 loads separately with Consent Mode denied until this choice is made.
   const consentKey = `cookie-consent-v${version}`;
+  const overlay = document.getElementById('cookie-consent-overlay');
   const banner = document.getElementById('cookie-consent');
   const toggle = document.getElementById('cookie-preferences-toggle');
+  const acceptButton = document.getElementById('cookie-accept');
+  const rejectButton = document.getElementById('cookie-reject');
+  let previousBodyOverflow = '';
+  let lastFocusedElement = null;
+
   const readConsent = () => {
     try {
       return localStorage.getItem(consentKey);
@@ -72,36 +84,83 @@ const { version = "1.2" } = Astro.props;
     window.dispatchEvent(new CustomEvent('cookie-consent:updated', { detail: { status } }));
   };
 
+  const getFocusableElements = () => Array.from(
+    banner.querySelectorAll('a[href], button:not([disabled])')
+  );
+
+  const lockPage = () => {
+    previousBodyOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+  };
+
+  const unlockPage = () => {
+    document.body.style.overflow = previousBodyOverflow;
+  };
+
+  const keepFocusInModal = (event) => {
+    if (event.key === 'Escape') {
+      event.preventDefault();
+      return;
+    }
+
+    if (event.key !== 'Tab') return;
+
+    const focusableElements = getFocusableElements();
+    if (focusableElements.length === 0) return;
+
+    const firstElement = focusableElements[0];
+    const lastElement = focusableElements[focusableElements.length - 1];
+
+    if (event.shiftKey && document.activeElement === firstElement) {
+      event.preventDefault();
+      lastElement.focus();
+    } else if (!event.shiftKey && document.activeElement === lastElement) {
+      event.preventDefault();
+      firstElement.focus();
+    }
+  };
+
   const hide = () => {
-    banner.classList.add('translate-y-full');
+    overlay.classList.add('opacity-0');
     banner.setAttribute('aria-hidden', 'true');
     toggle.classList.remove('hidden');
-    // Remove from layout after slide-out animation
-    setTimeout(() => { banner.style.display = 'none'; }, 320);
+    document.removeEventListener('keydown', keepFocusInModal);
+    unlockPage();
+    setTimeout(() => {
+      overlay.classList.add('hidden');
+      overlay.classList.remove('grid');
+      if (lastFocusedElement instanceof HTMLElement) {
+        lastFocusedElement.focus();
+      }
+    }, 220);
   };
 
   const show = () => {
-    banner.style.display = '';
+    lastFocusedElement = document.activeElement;
+    overlay.classList.remove('hidden');
+    overlay.classList.add('grid');
     toggle.classList.add('hidden');
+    lockPage();
     requestAnimationFrame(() => {
-      banner.classList.remove('translate-y-full');
+      overlay.classList.remove('opacity-0');
       banner.setAttribute('aria-hidden', 'false');
+      acceptButton.focus();
+      document.addEventListener('keydown', keepFocusInModal);
     });
   };
 
   if (!readConsent()) {
     show();
   } else {
-    banner.style.display = 'none';
     toggle.classList.remove('hidden');
   }
 
-  document.getElementById('cookie-accept').addEventListener('click', () => {
+  acceptButton.addEventListener('click', () => {
     saveConsent('accepted');
     hide();
   });
 
-  document.getElementById('cookie-reject').addEventListener('click', () => {
+  rejectButton.addEventListener('click', () => {
     saveConsent('rejected');
     hide();
   });

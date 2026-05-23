@@ -243,7 +243,13 @@ const siteGraph = {
 			loadGA();
 
 			window.addEventListener('cookie-consent:updated', function(event) {
-				updateAnalyticsConsent(event.detail?.status);
+				const status = event.detail?.status;
+				updateAnalyticsConsent(status);
+				window.gtag('event', 'cookie_consent_choice', {
+					consent_status: status === 'accepted' ? 'accepted' : 'rejected',
+					event_category: 'privacy',
+					non_interaction: true
+				});
 			});
 		</script>
 
