@@ -30,6 +30,25 @@ const checks = [
       cookieConsent.includes("saveConsent('accepted')") &&
       cookieConsent.includes("saveConsent('rejected')"),
   },
+  {
+    name: 'cookie consent v1.3 forces a fresh accept or reject choice in a modal',
+    pass:
+      baseLayout.includes("const analyticsConsentKey = 'cookie-consent-v1.3'") &&
+      cookieConsent.includes('const { version = "1.3" } = Astro.props') &&
+      cookieConsent.includes('role="alertdialog"') &&
+      cookieConsent.includes('aria-modal="true"') &&
+      cookieConsent.includes("if (!readConsent()) {") &&
+      cookieConsent.includes("document.body.style.overflow = 'hidden'") &&
+      cookieConsent.includes("event.key === 'Escape'") &&
+      !cookieConsent.includes("overlay.addEventListener('click'"),
+  },
+  {
+    name: 'accept and reject choices are both sent to GA4 as privacy events',
+    pass:
+      baseLayout.includes("window.gtag('event', 'cookie_consent_choice'") &&
+      baseLayout.includes("consent_status: status === 'accepted' ? 'accepted' : 'rejected'") &&
+      baseLayout.includes("analytics_consent: status === 'accepted' ? 'granted' : 'denied'"),
+  },
 ];
 
 const failures = checks.filter((check) => !check.pass);

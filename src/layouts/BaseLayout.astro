@@ -187,7 +187,7 @@ const siteGraph = {
 
 		<!-- Google Analytics (GA4) - Consent Mode v2 advanced implementation -->
 		<script is:inline>
-			const analyticsConsentKey = 'cookie-consent-v1.2';
+			const analyticsConsentKey = 'cookie-consent-v1.3';
 			const getAnalyticsConsentStatus = () => {
 				try {
 					return localStorage.getItem(analyticsConsentKey);
@@ -247,6 +247,7 @@ const siteGraph = {
 				updateAnalyticsConsent(status);
 				window.gtag('event', 'cookie_consent_choice', {
 					consent_status: status === 'accepted' ? 'accepted' : 'rejected',
+					analytics_consent: status === 'accepted' ? 'granted' : 'denied',
 					event_category: 'privacy',
 					non_interaction: true
 				});
