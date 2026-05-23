@@ -110,7 +110,7 @@ const reviewerSchema = d.medicalReviewer
     ? (isReviewerSenaiAksoy
         ? { "@id": SENAI_AKSOY_PERSON_ID }
         : {
-            "@type": d.medicalReviewer.includes('Kurul') ? "Organization" : "Person",
+            "@type": /Kurul|Ekip/i.test(d.medicalReviewer) ? "Organization" : "Person",
             "name": d.medicalReviewer,
             ...(d.reviewerTitle ? { "jobTitle": d.reviewerTitle } : {}),
         })

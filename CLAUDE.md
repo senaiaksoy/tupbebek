@@ -47,7 +47,7 @@ Her tibbi icerik sayfasinda bulunmasi gereken unsurlar:
 
 - **Tibbi Sorumluluk Reddi**: "Bu icerik tibbi tani ve tedavi yerine gecmez, mutlaka hekiminize danisiniz"
 - **Yazar Kimligi**: Icerik yazarinin adi, unvani ve yeterlilikleri
-- **Editor Onayi**: Bas Editor (Doc. Dr. Senai Aksoy) onay imzasi — `medicalReviewer: "Doç. Dr. Senai Aksoy"` + `reviewerTitle: "Baş Editör"`. Ayri bir Tibbi Danisma Kurulu zorunlulugu yoktur; Bas Editor onayi yeterlidir
+- **Editor Onayi**: Tum makalelerde standart kunye — `author: "Doç. Dr. Senai Aksoy"`, `medicalReviewer: "tupbebek.com Editöryal Ekip"`, `reviewerTitle: "Tıbbi Yayın Ekibi"`. Kullanici aksini acikca soylemedikce bu uc deger sabit tutulur. Ayri bir Tibbi Danisma Kurulu zorunlulugu yoktur; Bas Editor (Doc. Dr. Senai Aksoy) liderligindeki Editoryal Ekip onayi yeterlidir.
 - **Son Guncelleme Tarihi**: Icerigin en son ne zaman guncellendigi
 - **Bilimsel Kaynaklar**: Atif yapilan bilimsel referanslar (varsa)
 
