@@ -39,7 +39,3 @@ Disallow: /_astro/
 
 # Sitemap
 Sitemap: https://tupbebek.com/sitemap-index.xml
-# Legacy redirect sitemap — lists URLs that 301 to canonical destinations.
-# Kept live ~6 months to accelerate Google reconciliation of "Page with redirect".
-# Remove after 2026-11-25.
-Sitemap: https://tupbebek.com/sitemap-legacy.xml
