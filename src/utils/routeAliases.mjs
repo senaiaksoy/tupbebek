@@ -14,7 +14,8 @@ export const routeAliases = {
   '/${url}': '/',
   '/aciklanamayan-kisirlik': '/aciklanamayan-infertilite',
   '/about-us': '/hakkimizda',
-  '/asilama': '/tedavi-yontemleri#iui',
+  // '/asilama' is handled by public/_redirects (→ /makaleler/iui-nedir/).
+  // Removed conflicting alias that pointed to /tedavi-yontemleri#iui.
   '/before-you-come': '/tani-sureci',
   '/baslarken': '/ivf-rehberi',
   '/blog/azoospermia-and-micro-tese': '/makaleler/azospermi-mikro-tese',
@@ -52,7 +53,8 @@ export const routeAliases = {
   '/dogurganligin-korunmasi': '/fertilite-koruma',
   '/dr-senai-aksoy': '/hakkimizda',
   '/dr-senai-aksoy/undefined/dr-senai-aksoy': '/hakkimizda',
-  '/embriyo-dondurma': '/fertilite-koruma',
+  // '/embriyo-dondurma' is handled by public/_redirects (→ /makaleler/taze-dondurulmus-transfer/).
+  // Removed conflicting alias that pointed to /fertilite-koruma.
   '/hizmetler': '/tedavi-yontemleri',
   '/health-visa': '/tani-sureci',
   '/erkegin-degerlendirilmesi': '/erkek-infertilitesi',
@@ -86,7 +88,8 @@ export const routeAliases = {
   '/fr/blog/traitements-chirurgicaux-douleur-endometriose': '/makaleler/endometriozis-akilli-stratejiler',
   '/fr/blog/transfert-embryons-dans-le-traitement-de-la-fiv': '/makaleler/embriyo-transferi-gun-secimi',
   '/histeroskopi': '/makaleler/ivf-oncesi-histeroskopi',
-  '/laparoskopi': '/endometriozis-adenomyozis',
+  // '/laparoskopi' is handled by public/_redirects (→ /makaleler/endoskopik-cerrahi-histeroskopi/).
+  // Removed conflicting alias that pointed to /endometriozis-adenomyozis.
   '/cost-of-ivf': '/sss',
   '/fr/cost-of-ivf': '/sss',
   '/kadinda-kisirlik-nedenleri': '/kadin-infertilitesi',
@@ -123,7 +126,8 @@ export const routeAliases = {
   '/tedaviler': '/tedavi-yontemleri',
   '/tedaviniz': '/ivf-rehberi',
   '/tesatese': '/makaleler/azospermi-mikro-tese',
-  '/tup-bebek-asamalari': '/transfer-sureci',
+  // '/tup-bebek-asamalari' is handled by public/_redirects (→ /ivf-rehberi/).
+  // Removed conflicting alias that pointed to /transfer-sureci.
   '/tup-bebek-basari-oranlari': '/basari-oranlari',
   '/tup-bebek-evraklari-ve-testleri': '/tani-sureci',
   '/tup-bebek-fiyatlari': '/sss',
@@ -260,7 +264,8 @@ export const routeAliases = {
   '/blog/dogustan-rahmin-olmamasi-mullerian-agnenezi-rokitansky-kuster-hauser-mayer-sendromu-rkm': '/kadin-infertilitesi',
   '/blog/kisirlik-infertilite-nedir-nedenleri-nelerdir': '/kadin-infertilitesi',
   '/blog/embriyo-transferi-kacinci-': '/makaleler/embriyo-transferi-gun-secimi',
-  '/blog/sayfa/*': '/makaleler',
+  // '/blog/sayfa/N/' pagination handled by WILDCARD_FALLBACKS in [...legacy].ts
+  // (the '*' glob key here never matched — exact-string lookup, not pattern).
 };
 
 export function normalizeInternalPath(value) {

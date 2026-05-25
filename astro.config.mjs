@@ -97,6 +97,9 @@ const redirectOnlyRoutePatterns = [
   '/contact-us/*',
   '/aciklanamayan-kisirlik',
   '/kisirlik-nedenleri/aciklanamayan-kisirlik',
+  // /videolar/* legacy YouTube embed pages — handled by _redirects.
+  '/videolar',
+  '/videolar/*',
 ];
 
 export default defineConfig({
@@ -126,19 +129,66 @@ export default defineConfig({
       // Exclude pages that 301 to another canonical URL — they should not appear in the sitemap.
       // See public/_redirects for the matching 301 rules.
       filter: (page) => {
-        const redirectingPaths = [
+        // Exact-URL exclusion list for pages that 301 to a canonical URL.
+        // SSR redirect stubs were deleted from src/pages; the _redirects file
+        // is the single source of truth for these. This list keeps the
+        // sitemap clean even if a static .astro page later collides with a
+        // _redirects source pattern.
+        const redirectingPaths = new Set([
+          // Section 1: Eski site ana sayfa ve kategori redirect'leri
           'https://tupbebek.com/sorunlar/',
-          'https://tupbebek.com/sorunlar',
           'https://tupbebek.com/yayin-sureci/',
-          'https://tupbebek.com/yayin-sureci',
-          'https://tupbebek.com/aciklanamayan-kisirlik/',
-          'https://tupbebek.com/aciklanamayan-kisirlik',
-          'https://tupbebek.com/tup-bebek-fiyatlari/',
-          'https://tupbebek.com/tup-bebek-fiyatlari',
           'https://tupbebek.com/kvkk/',
-          'https://tupbebek.com/kvkk',
-        ];
-        return !redirectingPaths.includes(page);
+          // Section 2b: Hub / makale duplicate-intent konsolidasyonu
+          'https://tupbebek.com/makaleler/aciklanamayan-infertilite/',
+          'https://tupbebek.com/makaleler/basari-oranlari/',
+          'https://tupbebek.com/makaleler/basarisiz-denemeler/',
+          'https://tupbebek.com/makaleler/genetik-testler/',
+          // Section 2: Eski makale -> yeni makale 301'leri
+          'https://tupbebek.com/makaleler/hiperprolaktinemi-prolaktinom/',
+          'https://tupbebek.com/makaleler/myomlar-ve-kisirlik/',
+          'https://tupbebek.com/makaleler/pkos-ve-tup-bebek/',
+          'https://tupbebek.com/makaleler/dondurulmus-embriyo-transferi/',
+          'https://tupbebek.com/makaleler/erkek-kisirligi-besin-takviyeleri/',
+          // Section 3-4: Eski TR sayfa URL'leri (hub/article'a 301)
+          'https://tupbebek.com/aciklanamayan-kisirlik/',
+          'https://tupbebek.com/tup-bebek-fiyatlari/',
+          'https://tupbebek.com/dr-senai-aksoy/',
+          'https://tupbebek.com/erkekte-kisirlik-nedenleri/',
+          'https://tupbebek.com/kadinin-degerlendirilmesi/',
+          'https://tupbebek.com/asilama/',
+          'https://tupbebek.com/hizmetler/',
+          'https://tupbebek.com/preimplantasyon-genetik-tani/',
+          'https://tupbebek.com/sperm-analizi/',
+          'https://tupbebek.com/tedaviler/',
+          'https://tupbebek.com/randevu/',
+          'https://tupbebek.com/tedaviye-baslamadan-once/',
+          'https://tupbebek.com/yumurtalik-rezervi-degerlendirme/',
+          'https://tupbebek.com/kisirlik-tanisi-konmasi/',
+          'https://tupbebek.com/baslarken/',
+          'https://tupbebek.com/tup-bebek-tedavim-tuttu-mu/',
+          'https://tupbebek.com/embriyo-transferi-sonrasi-kanama/',
+          'https://tupbebek.com/embriyo-transferi-sonrasi-neler-yapmaliyim/',
+          'https://tupbebek.com/tup-bebek-evraklari-ve-testleri/',
+          'https://tupbebek.com/tup-bebek-asamalari/',
+          'https://tupbebek.com/tup-bebek-tedavisinde-preimplantasyon-genetik-tani/',
+          'https://tupbebek.com/dogurganligin-korunmasi/',
+          'https://tupbebek.com/embriyo-dondurma/',
+          'https://tupbebek.com/tup-bebek-tedavisinde-catlatma-ignesi/',
+          'https://tupbebek.com/laparoskopi/',
+          'https://tupbebek.com/tup-bebek-ve-mikroenjeksiyon/',
+          'https://tupbebek.com/tup-bebek-tedavisinde-nelere-dikkat-etmelisiniz/',
+          'https://tupbebek.com/tup-bebek-basari-oranlari/',
+          'https://tupbebek.com/sik-sorulan-sorular/',
+          'https://tupbebek.com/tedavi-sureci/',
+          'https://tupbebek.com/yumurtaliklarin-asiri-uyarilmasi/',
+          'https://tupbebek.com/yasiniz-ve-kisirlik/',
+          'https://tupbebek.com/histeroskopi/',
+          'https://tupbebek.com/tesatese/',
+          'https://tupbebek.com/yumurtlama-takibi/',
+          'https://tupbebek.com/videolar/',
+        ]);
+        return !redirectingPaths.has(page);
       },
       serialize(item) {
         const match = item.url.match(/\/makaleler\/([^/]+)/);

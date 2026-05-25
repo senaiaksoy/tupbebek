@@ -226,12 +226,12 @@ export const glossary: Record<string, GlossaryEntry> = {
   KumulatifBasari: {
     term: 'Kümülatif Başarı Oranı',
     definition: 'Tek bir yumurta toplama işleminden elde edilen tüm embriyolarla (taze + dondurulmuş transferler dahil) ulaşılan toplam canlı doğum oranı. Tek transfer başarısından daha yüksek olup tedavinin gerçek potansiyelini gösterir.',
-    href: '/makaleler/basari-oranlari',
+    href: '/basari-oranlari/',
   },
   CanliDogumOrani: {
     term: 'Canlı Doğum Oranı (Live Birth Rate)',
     definition: 'Tüp bebek tedavisinde gerçek başarı ölçütü. Tedavi sonucunda sağlıklı bir bebeğin dünyaya gelmesi oranıdır. Klinik gebelik oranından farklı olarak erken kayıpları da hesaba katar.',
-    href: '/makaleler/basari-oranlari',
+    href: '/basari-oranlari/',
   },
   Vitrifikasyon: {
     term: 'Vitrifikasyon',

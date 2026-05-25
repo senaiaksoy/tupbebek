@@ -7,6 +7,12 @@
 # --------------------------------------------
 # 0. Host/Protocol canonicalization (single hop)
 # --------------------------------------------
+# Without these, www.tupbebek.com/* requires Cloudflare's domain-level
+# redirect (hop 1) + a path-level _redirects rule (hop 2). Explicit
+# absolute-URL rules collapse this into a single 301 hop.
+https://www.tupbebek.com/*                      https://tupbebek.com/:splat                     301
+http://tupbebek.com/*                           https://tupbebek.com/:splat                     301
+http://www.tupbebek.com/*                       https://tupbebek.com/:splat                     301
 
 # --------------------------------------------
 # 1. Eski site ana sayfa ve kategori redirect'leri
@@ -112,7 +118,8 @@
 # --------------------------------------------
 # 8. Videolar (eski YouTube embed sayfaları)
 # --------------------------------------------
-# Handled by Astro legacy fallback.
+/videolar/*                                     /makaleler/                                     301
+/videolar                                       /makaleler/                                     301
 
 # --------------------------------------------
 # 9. Çok dilli eski sürümler (Arapça / Fransızca / İngilizce) — terk edildi
@@ -156,14 +163,17 @@
 # article aliases in src/utils/routeAliases.mjs can win before the fallback.
 
 # --------------------------------------------
-# 11. "undefined" içeren bozuk URL'ler
+# 11. "undefined" içeren bozuk URL'ler — 410 Gone
 # --------------------------------------------
-/undefined/*                                    /                                               301
-/*/undefined/*                                  /                                               301
+# Template rendering bug artifacts; never were real content. 410 signals
+# permanent removal to Google and is processed faster than 301-to-home,
+# which Google can treat as soft 404 (Glenn Gabe documented case).
+/undefined/*                                    /                                               410
+/undefined                                      /                                               410
 
 # --------------------------------------------
-# 12. Eski PHP / ASP endpoint fallback'leri
+# 12. Eski PHP / ASP endpoint fallback'leri — 410 Gone
 # --------------------------------------------
 /public/*                                       /makaleler/                                      301
-/modules.php                                    /makaleler/                                      301
-/h2n.php                                        /tani-sureci/                                    301
+/modules.php                                    /                                               410
+/h2n.php                                        /                                               410
