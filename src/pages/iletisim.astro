@@ -249,13 +249,10 @@ import Footer from '../components/Footer.astro';
                 throw new Error(result.error || 'Bir hata oluştu.');
             }
 
-            // GA4 Event: Contact Form Submission
-            if (typeof gtag !== 'undefined') {
-                gtag('event', 'contact_submission', {
-                    'subject': formData.subject,
-                    'contact_method': 'form',
-                });
-            }
+            window.__trackLeadConversion?.('contact_submission', {
+                subject: formData.subject,
+                contact_method: 'form',
+            });
 
             successMsg?.classList.remove('hidden');
             form.reset();

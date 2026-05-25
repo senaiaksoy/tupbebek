@@ -226,13 +226,10 @@ const t = themeStyles[theme];
             }
 
             setTimeout(() => {
-                // GA4 Event: Lead Magnet Download
-                if (typeof gtag !== 'undefined') {
-                    gtag('event', 'ebook_download', {
-                        'content_name': 'lead_magnet',
-                        'content_type': 'ebook',
-                    });
-                }
+                window.__trackLeadConversion?.('ebook_download', {
+                    content_name: 'lead_magnet',
+                    content_type: 'ebook',
+                });
 
                 // Hide form content, show success
                 const formElements = form.querySelectorAll(':scope > *:not(.lm-success)');

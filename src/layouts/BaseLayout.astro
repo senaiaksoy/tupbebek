@@ -59,6 +59,13 @@ const resolvedSocialDims = (imageWidth && imageHeight)
 const robotsContent = noindex
 	? 'noindex, follow, max-image-preview:large'
 	: (robots || 'index, follow, max-image-preview:large');
+const gaMeasurementId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID || 'G-K3VE72CSDJ';
+const googleAdsId = import.meta.env.PUBLIC_GOOGLE_ADS_ID || '';
+const googleAdsConversionLabels = {
+	expert_consultation: import.meta.env.PUBLIC_GOOGLE_ADS_CONVERSION_LABEL_EXPERT_CONSULTATION || '',
+	contact_submission: import.meta.env.PUBLIC_GOOGLE_ADS_CONVERSION_LABEL_CONTACT_SUBMISSION || '',
+	ebook_download: import.meta.env.PUBLIC_GOOGLE_ADS_CONVERSION_LABEL_EBOOK_DOWNLOAD || '',
+};
 
 // Sitewide @graph: Organization + WebSite + MedicalWebPage with stable @ids.
 // Organization @id is the canonical publisher node that every Article, Person,
@@ -186,8 +193,8 @@ const siteGraph = {
 		<meta name="twitter:site" content="@tupbebek" />
 
 		<!-- Google Analytics (GA4) - Consent Mode v2 advanced implementation -->
-		<script is:inline>
-			const analyticsConsentKey = 'cookie-consent-v1.3';
+		<script define:vars={{ gaMeasurementId, googleAdsId, googleAdsConversionLabels }}>
+			const analyticsConsentKey = 'cookie-consent-v1.4';
 			const getAnalyticsConsentStatus = () => {
 				try {
 					return localStorage.getItem(analyticsConsentKey);
@@ -207,40 +214,62 @@ const siteGraph = {
 			});
 
 			function updateAnalyticsConsent(status) {
+				const isAccepted = status === 'accepted';
 				window.gtag('consent', 'update', {
-					analytics_storage: status === 'accepted' ? 'granted' : 'denied',
-					ad_storage: 'denied',
-					ad_user_data: 'denied',
+					analytics_storage: isAccepted ? 'granted' : 'denied',
+					ad_storage: isAccepted ? 'granted' : 'denied',
+					ad_user_data: isAccepted ? 'granted' : 'denied',
 					ad_personalization: 'denied'
 				});
 			}
 
-			function loadGA() {
+			function loadMeasurement() {
 				if (window.gaLoaded) return;
 				window.gaLoaded = true;
-				window.__loadGA = loadGA;
+				window.__loadGA = loadMeasurement;
 				
 				// Load script
 				const script = document.createElement('script');
 				script.async = true;
-				script.src = 'https://www.googletagmanager.com/gtag/js?id=G-K3VE72CSDJ';
+				script.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(gaMeasurementId || googleAdsId)}`;
 				document.head.appendChild(script);
 
-				// Init GA
+				// Init measurement destinations.
 				window.gtag('js', new Date());
 				updateAnalyticsConsent(getAnalyticsConsentStatus());
-				window.gtag('config', 'G-K3VE72CSDJ');
+				if (gaMeasurementId) {
+					window.gtag('config', gaMeasurementId);
+				}
+				if (googleAdsId) {
+					window.gtag('config', googleAdsId);
+				}
 			}
 
-			window.__loadGA = loadGA;
+			window.__loadGA = loadMeasurement;
 
 			window.__trackGaEvent = function(eventName, params = {}) {
-				loadGA();
+				loadMeasurement();
 				if (!window.gaLoaded) return;
 				window.gtag('event', eventName, params);
 			};
 
-			loadGA();
+			window.__trackLeadConversion = function(eventName, params = {}) {
+				loadMeasurement();
+				if (!window.gaLoaded) return;
+
+				window.gtag('event', eventName, params);
+
+				const conversionLabel = googleAdsConversionLabels[eventName];
+				if (!googleAdsId || !conversionLabel) return;
+
+				window.gtag('event', 'conversion', {
+					...params,
+					send_to: `${googleAdsId}/${conversionLabel}`,
+					event_category: params.event_category || 'lead'
+				});
+			};
+
+			loadMeasurement();
 
 			window.addEventListener('cookie-consent:updated', function(event) {
 				const status = event.detail?.status;
@@ -248,6 +277,7 @@ const siteGraph = {
 				window.gtag('event', 'cookie_consent_choice', {
 					consent_status: status === 'accepted' ? 'accepted' : 'rejected',
 					analytics_consent: status === 'accepted' ? 'granted' : 'denied',
+					ads_consent: status === 'accepted' ? 'granted' : 'denied',
 					event_category: 'privacy',
 					non_interaction: true
 				});

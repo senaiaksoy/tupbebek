@@ -9,8 +9,22 @@ if (process.argv.some((arg) => arg.includes(forbiddenProjectName))) {
 }
 
 function run(command, args) {
-  const executable = process.platform === 'win32' ? `${command}.cmd` : command;
-  const result = spawnSync(executable, args, { stdio: 'inherit' });
+  const quoteWindowsArg = (value) => {
+    const arg = String(value);
+    if (!/[\s"]/u.test(arg)) return arg;
+    return `"${arg.replace(/"/gu, '\\"')}"`;
+  };
+
+  const result = process.platform === 'win32'
+    ? spawnSync([command, ...args].map(quoteWindowsArg).join(' '), {
+        stdio: 'inherit',
+        shell: true,
+      })
+    : spawnSync(command, args, { stdio: 'inherit' });
+  if (result.error) {
+    console.error(`Failed to run ${command}: ${result.error.message}`);
+    process.exit(1);
+  }
   if (result.status !== 0) {
     process.exit(result.status ?? 1);
   }
