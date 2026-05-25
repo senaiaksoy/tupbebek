@@ -23,10 +23,28 @@ const WILDCARD_FALLBACKS: Array<[string, string]> = [
   ['/makaleler/hamilelik-ve-dogum/', '/makaleler/'],
   ['/makaleler/tup-bebek/', '/makaleler/'],
   ['/makaleler/endoskopik-cerrahi/', '/makaleler/'],
-  ['/undefined/', '/'],
 ];
 
+// 410 Gone: paths that never had real content (template-render bug artifacts,
+// legacy PHP probes). Cloudflare Pages _redirects does not support 410, so
+// the Worker returns it directly. 410 is processed faster than 301-to-home
+// by Google and avoids the soft-404 risk Glenn Gabe documented for
+// 301s-to-less-relevant-pages.
+const GONE_410_EXACT = new Set<string>([
+  '/modules.php',
+  '/h2n.php',
+  '/undefined',
+]);
+const GONE_410_PREFIXES: string[] = ['/undefined/'];
+
 const handle: APIRoute = ({ url, redirect }) => {
+  if (GONE_410_EXACT.has(url.pathname) || GONE_410_PREFIXES.some((p) => url.pathname.startsWith(p))) {
+    return new Response('Gone', {
+      status: 410,
+      headers: { 'content-type': 'text/plain; charset=utf-8', 'cache-control': 'public, max-age=86400' },
+    });
+  }
+
   const normalized = normalizeInternalPath(url.pathname);
 
   if (normalized !== url.pathname) {

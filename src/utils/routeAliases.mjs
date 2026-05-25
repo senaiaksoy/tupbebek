@@ -104,8 +104,9 @@ export const routeAliases = {
   '/policy': '/gizlilik-politikasi',
   '/public/article.aspx': '/makaleler',
   '/public/haber.aspx': '/makaleler',
-  '/modules.php': '/makaleler',
-  '/h2n.php': '/tani-sureci',
+  // '/modules.php' and '/h2n.php' return 410 Gone via [...legacy].ts.
+  // Removed 301 aliases to prevent the Worker from redirecting before
+  // GONE_410_EXACT check (it's checked first anyway, but cleaner).
   '/services': '/tedavi-yontemleri',
   '/step-by-step-ivf-process': '/ivf-rehberi',
   '/treatment': '/tedavi-yontemleri',

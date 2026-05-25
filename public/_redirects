@@ -163,17 +163,14 @@ http://www.tupbebek.com/*                       https://tupbebek.com/:splat     
 # article aliases in src/utils/routeAliases.mjs can win before the fallback.
 
 # --------------------------------------------
-# 11. "undefined" içeren bozuk URL'ler — 410 Gone
+# 11. "undefined" içeren bozuk URL'ler — 410 Gone via Worker
+# 12. Eski PHP probe'lari — 410 Gone via Worker
 # --------------------------------------------
-# Template rendering bug artifacts; never were real content. 410 signals
-# permanent removal to Google and is processed faster than 301-to-home,
-# which Google can treat as soft 404 (Glenn Gabe documented case).
-/undefined/*                                    /                                               410
-/undefined                                      /                                               410
+# Cloudflare Pages _redirects does not support 4xx status codes (only
+# 301/302/303/307/308 and 200/404). These paths are handled by the Astro
+# Worker in src/pages/[...legacy].ts (GONE_410_EXACT / GONE_410_PREFIXES).
 
 # --------------------------------------------
-# 12. Eski PHP / ASP endpoint fallback'leri — 410 Gone
+# 13. Other PHP endpoints
 # --------------------------------------------
 /public/*                                       /makaleler/                                      301
-/modules.php                                    /                                               410
-/h2n.php                                        /                                               410

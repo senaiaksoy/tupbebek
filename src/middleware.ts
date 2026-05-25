@@ -36,8 +36,23 @@ const WILDCARD_FALLBACKS: Array<[string, string]> = [
   ['/makaleler/hamilelik-ve-dogum/', '/makaleler/'],
   ['/makaleler/tup-bebek/', '/makaleler/'],
   ['/makaleler/endoskopik-cerrahi/', '/makaleler/'],
-  ['/undefined/', '/'],
 ];
+
+// 410 Gone paths: template-render artifacts and legacy PHP probes that
+// never had real content. Returning 410 (instead of 301-to-home) removes
+// them from Google's index faster and avoids the soft-404 risk Glenn Gabe
+// documented. Must be checked BEFORE WILDCARD_FALLBACKS so '/undefined/'
+// doesn't fall into the '/undefined/' wildcard.
+const GONE_410_EXACT = new Set<string>([
+  '/modules.php',
+  '/h2n.php',
+  '/undefined',
+]);
+const GONE_410_PREFIXES: string[] = ['/undefined/'];
+
+function isGone(pathname: string): boolean {
+  return GONE_410_EXACT.has(pathname) || GONE_410_PREFIXES.some((p) => pathname.startsWith(p));
+}
 
 function withQuery(destination: string, search: string): string {
   if (!search) return destination;
@@ -69,6 +84,14 @@ function removeTrackingParams(searchParams: URLSearchParams): boolean {
 
 export const onRequest = defineMiddleware((context, next) => {
   const canonicalUrl = new URL(context.url);
+
+  if (isGone(canonicalUrl.pathname)) {
+    return new Response('Gone', {
+      status: 410,
+      headers: { 'content-type': 'text/plain; charset=utf-8', 'cache-control': 'public, max-age=86400' },
+    });
+  }
+
   const originalPathSearch = `${canonicalUrl.pathname}${canonicalUrl.search}`;
   const normalized = normalizeInternalPath(originalPathSearch);
 

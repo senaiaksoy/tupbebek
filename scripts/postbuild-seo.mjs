@@ -189,14 +189,26 @@ function canonicalRedirectFor(requestUrl) {
   const url = new URL(requestUrl);
   let changed = false;
 
+  // 410 Gone: template-rendering artifacts and legacy PHP probes that
+  // never had real content. 410 removes from Google's index faster than
+  // 301-to-home and avoids soft-404 risk for less-relevant 301 targets.
+  const gone410Exact = new Set(['/modules.php', '/h2n.php', '/undefined']);
+  if (gone410Exact.has(url.pathname) || url.pathname.startsWith('/undefined/')) {
+    return new Response('Gone', {
+      status: 410,
+      headers: {
+        'content-type': 'text/plain; charset=utf-8',
+        'cache-control': 'public, max-age=86400',
+      },
+    });
+  }
+
   const legacyRedirects = new Map([
     ['/$%7BsafeUrl%7D/', '/'],
     ['/$%7Bresult.url%7D/', '/'],
     ['/$%7Burl%7D/', '/'],
     ['/public/article.aspx', '/makaleler/'],
     ['/public/haber.aspx', '/makaleler/'],
-    ['/modules.php', '/makaleler/'],
-    ['/h2n.php', '/tani-sureci/'],
   ]);
 
   const legacyDestination = legacyRedirects.get(url.pathname);
