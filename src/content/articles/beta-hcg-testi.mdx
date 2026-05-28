@@ -1,5 +1,6 @@
 ---
 title: "Beta-hCG Testi: Embriyo Transferi Sonrası Hamilelik Takibinin Kanıt Tabanlı Yorumu"
+seoTitle: "Beta-hCG Testi ve IVF Takibi"
 description: "Tüp bebek sonrası beta-hCG testi ne zaman yapılır? Taze ve dondurulmuş transfer için cutoff değerleri, doubling time, biyokimyasal gebelik, ektopik ve heterotopik gebelik risklerinin kanıt tabanlı yorumu."
 publishDate: 2026-03-31
 lastModified: 2026-05-14
@@ -19,7 +20,6 @@ references:
     authors: "Barnhart KT, Sammel MD, Rinaudo PF et al."
     journal: "Obstetrics & Gynecology"
     year: 2004
-    doi: "10.1097/01.AOG.0000119546.44810.87"
     pmid: "14990405"
   - title: "Diagnosis and management of ectopic pregnancy"
     authors: "Barnhart KT"
@@ -43,7 +43,6 @@ references:
     authors: "Ergin RN, Yayla M"
     journal: "Journal of Gynecology Obstetrics and Human Reproduction"
     year: 2020
-    doi: "10.1016/j.jogoh.2020.101716"
     pmid: "32321341"
   - title: "The rising incidence of heterotopic pregnancy: Current perspectives and associations with in-vitro fertilization"
     authors: "Maleki A, Khalid N, Rajesh Patel C, El-Mahdi E"
@@ -259,19 +258,16 @@ Normal β-hCG eğrisi sağlıklı gebeliğin iyi bir göstergesidir ama **garant
 export const betaHcgFaqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  "mainEntity": [{
-    "@type": "Question",
-    "name": "Tüp bebek sonrası beta-hCG ne zaman yapılır?",
-    "acceptedAnswer": { "@type": "Answer", "text": "Beta-hCG testi genellikle blastokist transferinden 10-12 gün, 2-3. gün embriyo transferinden 12-14 gün sonra yapılır. Test günü transfer edilen embriyonun gelişim gününe göre değişir." }
-  }, {
-    "@type": "Question",
-    "name": "Tüp bebek 10. gün beta-hCG kaç olmalı?",
-    "acceptedAnswer": { "@type": "Answer", "text": "10. gün özellikle blastokist transferinde anlamlı bir ilk ölçüm günü olabilir; ancak tek bir değerle karar verilmez. Değer, 48 saat sonraki artış hızı ve klinik tabloyla birlikte yorumlanmalıdır." }
-  }, {
-    "@type": "Question",
-    "name": "Beta-hCG iki katına çıkmazsa ne anlama gelir?",
-    "acceptedAnswer": { "@type": "Answer", "text": "48-72 saatlik artışın beklenenden yavaş olması biyokimyasal gebelik, ektopik gebelik veya erken kayıp riskini düşündürebilir; tek başına tanı koydurmaz ve takip ölçümü ile ultrason gerekir." }
-  }]
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Tüp bebek 10. gün beta-hCG kaç olmalı?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "10. gün özellikle blastokist transferinde anlamlı bir ilk ölçüm günü olabilir; ancak tek bir değerle karar verilmez. Değer, 48 saat sonraki artış hızı ve klinik tabloyla birlikte yorumlanmalıdır."
+      }
+    }
+  ]
 };
 
 <script type="application/ld+json" set:html={JSON.stringify(betaHcgFaqSchema)} />

@@ -1,5 +1,6 @@
 ---
 title: "Embriyo Transferi Sonrası Bakım: Ne Yapmalı, Nelerden Kaçınmalı?"
+seoTitle: "Embriyo Transferi Sonrası Bakım"
 description: "Embriyo transferi sonrası yatmak gerekir mi, kasık ağrısı veya kanama ne anlama gelir, beslenme ve ilaçlar nasıl yönetilir? Kanıta dayalı bakım rehberi."
 publishDate: 2024-08-28
 author: "Doç. Dr. Senai Aksoy"
@@ -25,7 +26,6 @@ references:
     authors: "Rao M, Zeng Z, Tang L"
     journal: "Reproductive Biology and Endocrinology"
     year: 2018
-    doi: "10.1186/s12958-018-0433-7"
   - title: "Progesterone for luteal phase support in assisted reproduction"
     authors: "van der Linden M, Buckingham K, Farquhar C et al."
     journal: "Cochrane Database of Systematic Reviews"
@@ -142,35 +142,24 @@ Embriyo transferinden sonraki dönemde hedef, sonucu kontrol etmeye çalışmak 
 export const embryoTransferAftercareFaqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  "mainEntity": [{
-    "@type": "Question",
-    "name": "Embriyo transferi sonrası yatmak gerekir mi?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Uzun yatak istirahati çoğu hastada gebelik olasılığını artırmaz. Kısa dinlenme sonrası hafif günlük aktivite genellikle yeterlidir."
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Embriyo transferi sonrası yatmak gerekir mi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Uzun yatak istirahati çoğu hastada gebelik olasılığını artırmaz. Kısa dinlenme sonrası hafif günlük aktivite genellikle yeterlidir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Transfer sonrası progesteron unutulursa ne yapılmalı?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "İlacı kendi kendinize kesmeyin veya dozu değiştirmeyin. Unutulan doz ve saat bilgisiyle tedavi ekibinizden kişisel talimat alın."
+      }
     }
-  }, {
-    "@type": "Question",
-    "name": "Embriyo transferi sonrası kasık ağrısı normal mi?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Hafif kramp veya dolgunluk olabilir. Şiddetli ağrı, yoğun kanama, ateş veya kötü kokulu akıntı varsa tedavi ekibi aranmalıdır."
-    }
-  }, {
-    "@type": "Question",
-    "name": "Embriyo transferi sonrası beta-hCG ne zaman bakılır?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Genellikle transferden 10-14 gün sonra kan testi planlanır. Daha erken test yapmak yanıltıcı sonuçlara neden olabilir."
-    }
-  }, {
-    "@type": "Question",
-    "name": "Transfer sonrası progesteron unutulursa ne yapılmalı?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "İlacı kendi kendinize kesmeyin veya dozu değiştirmeyin. Unutulan doz ve saat bilgisiyle tedavi ekibinizden kişisel talimat alın."
-    }
-  }]
+  ]
 };
 
 <script type="application/ld+json" set:html={JSON.stringify(embryoTransferAftercareFaqSchema)} />

@@ -74,6 +74,7 @@ const articlesCollection = defineCollection({
     videoTitle: z.string().optional(),
 
     // --- SEO ---
+    seoTitle: z.string().optional(),
     canonical: z.string().url().optional(),
     noindex: z.boolean().default(false),
   }),

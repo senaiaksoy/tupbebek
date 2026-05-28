@@ -1,5 +1,6 @@
 ---
 title: "Düşük AMH ile Hamile Kalınır mı? Yaş, Rezerv ve Tedavi Yol Haritası"
+seoTitle: "Düşük AMH ve Gebelik"
 description: "Düşük AMH ne anlama gelir? AMH yumurta sayısını gösterir ama gebelik şansını tek başına belirlemez. Yaş, AFC, FSH, doğal gebelik, IVF ve yumurta dondurma yol haritası."
 publishDate: 2025-09-16
 author: "Doç. Dr. Senai Aksoy"
@@ -217,42 +218,24 @@ Hayır. AMH daha çok yumurta sayısı ve tedaviye yanıtla ilişkilidir. Yumurt
 export const amhFaqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  "mainEntity": [{
-    "@type": "Question",
-    "name": "Düşük AMH ile hamile kalınır mı?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Düşük AMH ile bazı hastalarda gebelik mümkündür. AMH gebelik şansını tek başına belirlemez; yaş, AFC, yumurtlama, tüpler, rahim ve sperm analizi birlikte değerlendirilmelidir."
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Düşük AMH ile hamile kalınır mı?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Düşük AMH ile bazı hastalarda gebelik mümkündür. AMH gebelik şansını tek başına belirlemez; yaş, AFC, yumurtlama, tüpler, rahim ve sperm analizi birlikte değerlendirilmelidir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "AMH kaç olursa hamile kalınır?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Gebelik için tek bir AMH eşiği yoktur. Düşük AMH ile gebelik mümkün olabilir; normal AMH ise gebeliği garanti etmez. AMH, yaş, AFC, yumurtlama, tüpler, rahim ve sperm analiziyle birlikte yorumlanmalıdır."
+      }
     }
-  }, {
-    "@type": "Question",
-    "name": "AMH yumurta kalitesini gösterir mi?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Hayır. AMH daha çok yumurtalık rezervi ve tedaviye olası yumurta yanıtı hakkında bilgi verir. Yumurta kalitesi özellikle yaş ve embriyo gelişimiyle birlikte değerlendirilir."
-    }
-  }, {
-    "@type": "Question",
-    "name": "AMH düşükse doğrudan tüp bebek gerekir mi?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Her zaman gerekmez. Genç yaş, açık tüpler, düzenli yumurtlama ve normal semen analizi varsa kısa süreli doğal deneme veya aşılama seçilebilir. İleri yaş, uzun infertilite süresi veya çok düşük AFC varsa IVF daha erken gündeme gelebilir."
-    }
-  }, {
-    "@type": "Question",
-    "name": "AMH kaç olursa hamile kalınır?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Gebelik için tek bir AMH eşiği yoktur. Düşük AMH ile gebelik mümkün olabilir; normal AMH ise gebeliği garanti etmez. AMH, yaş, AFC, yumurtlama, tüpler, rahim ve sperm analiziyle birlikte yorumlanmalıdır."
-    }
-  }, {
-    "@type": "Question",
-    "name": "AMH yükseltilebilir mi?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "AMH değerini güvenilir şekilde yükselttiği kanıtlanmış bir tedavi yoktur. Amaç AMH sayısını yükseltmek değil, mevcut rezervi yaş ve klinik tabloyla birlikte doğru zamanda değerlendirmektir."
-    }
-  }]
-}
+  ]
+};
 
 <script type="application/ld+json" set:html={JSON.stringify(amhFaqSchema)} />

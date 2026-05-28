@@ -175,28 +175,24 @@ Hormonlar, genetik testler, patoloji ve önceki işlem tekniği yeniden değerle
 export const surgicalSpermRetrievalFaqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  "mainEntity": [{
-    "@type": "Question",
-    "name": "Mikro TESE nedir?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Mikro TESE, menide sperm bulunmayan azospermi hastalarında mikroskop altında testis dokusu içinden sperm arama işlemidir."
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Mikro TESE nedir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Mikro TESE, menide sperm bulunmayan azospermi hastalarında mikroskop altında testis dokusu içinden sperm arama işlemidir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "TESE nedir, nasıl yapılır?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "TESE testisten küçük doku örnekleri alınarak laboratuvarda sperm aranmasıdır. Uygun teknik azosperminin nedenine ve klinik dosyaya göre seçilir."
+      }
     }
-  }, {
-    "@type": "Question",
-    "name": "TESE nedir, nasıl yapılır?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "TESE testisten küçük doku örnekleri alınarak laboratuvarda sperm aranmasıdır. Uygun teknik azosperminin nedenine ve klinik dosyaya göre seçilir."
-    }
-  }, {
-    "@type": "Question",
-    "name": "Mikro TESE'de sperm bulunmazsa ne olur?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Hormonlar, genetik testler, patoloji ve önceki işlem tekniği yeniden değerlendirilir. Bazı hastalarda ikinci görüş veya farklı strateji konuşulabilir."
-    }
-  }]
+  ]
 };
 
 <script type="application/ld+json" set:html={JSON.stringify(surgicalSpermRetrievalFaqSchema)} />

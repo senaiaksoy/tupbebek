@@ -101,15 +101,14 @@ const thumbnailUrl = `https://i.ytimg.com/vi/${id}/maxresdefault.jpg`;
                 const videoId = figure?.dataset.ytId;
                 if (!player || !videoId) return;
 
-                player.innerHTML = `
-                    <iframe
-                        src="https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0"
-                        title="${figure.getAttribute('aria-label') || 'YouTube video'}"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen
-                        class="absolute inset-0 w-full h-full border-0"
-                    ></iframe>
-                `;
+                const iframe = document.createElement('iframe');
+                iframe.src = 'https://www.youtube.com/embed/' + encodeURIComponent(videoId) + '?autoplay=1&rel=0';
+                iframe.title = figure.getAttribute('aria-label') || 'YouTube video';
+                iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+                iframe.allowFullscreen = true;
+                iframe.className = 'absolute inset-0 w-full h-full border-0';
+
+                player.replaceChildren(iframe);
             });
         });
     }

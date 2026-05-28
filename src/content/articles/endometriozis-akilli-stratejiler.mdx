@@ -218,49 +218,40 @@ Bilateral endometrioma, düşük AMH/AFC, tekrarlayan kist cerrahisi öyküsü, 
 export const endometriosisStrategyFaqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  "mainEntity": [{
-    "@type": "Question",
-    "name": "Endometriozis kısırlık yapar mı?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Endometriozis bazı hastalarda gebe kalmayı zorlaştırabilir; ancak tanı tek başına kısırlık anlamına gelmez. Yaş, rezerv, tüpler, sperm analizi ve hastalığın yaygınlığı birlikte değerlendirilir."
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Endometriozis kısırlık yapar mı?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Endometriozis bazı hastalarda gebe kalmayı zorlaştırabilir; ancak tanı tek başına kısırlık anlamına gelmez. Yaş, rezerv, tüpler, sperm analizi ve hastalığın yaygınlığı birlikte değerlendirilir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Endometriozis tanısı için laparoskopi şart mı?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Her zaman şart değildir. Ultrason ve MR özellikle endometrioma ve derin endometriozis için yararlı olabilir. Laparoskopi kararı belirtiler, görüntüleme ve tedavi hedeflerine göre verilir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Endometriozis tedavisi var mı?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ağrı ve hastalık kontrolü için ilaç ve cerrahi seçenekler vardır. Gebelik hedefinde tedavi sırası yaş, rezerv, tüpler, sperm analizi ve hastalık yaygınlığına göre kişiselleştirilir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Çikolata kisti varken hamile kalmak mümkün mü?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Bazı hastalarda mümkündür. Olasılık yaş, yumurtalık rezervi, tüplerin durumu, sperm analizi, ağrı düzeyi ve infertilite süresine göre değişir."
+      }
     }
-  }, {
-    "@type": "Question",
-    "name": "Endometriozis tanısı için laparoskopi şart mı?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Her zaman şart değildir. Ultrason ve MR özellikle endometrioma ve derin endometriozis için yararlı olabilir. Laparoskopi kararı belirtiler, görüntüleme ve tedavi hedeflerine göre verilir."
-    }
-  }, {
-    "@type": "Question",
-    "name": "Çikolata kisti varsa IVF öncesi ameliyat gerekir mi?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Her hastada gerekmez. Ağrı, şüpheli görüntü, yumurta toplamaya erişim sorunu, kist boyutu, rezerv ve önceki cerrahi öyküsü birlikte değerlendirilir."
-    }
-  }, {
-    "@type": "Question",
-    "name": "Endometrioziste yumurta dondurma ne zaman düşünülür?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Bilateral endometrioma, düşük AMH/AFC, tekrarlayan cerrahi öyküsü, ileride gebelik planı veya yaklaşan yumurtalık cerrahisi varsa fertilite koruma erken dönemde konuşulmalıdır."
-    }
-  }, {
-    "@type": "Question",
-    "name": "Endometriozis tedavisi var mı?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Ağrı ve hastalık kontrolü için ilaç ve cerrahi seçenekler vardır. Gebelik hedefinde tedavi sırası yaş, rezerv, tüpler, sperm analizi ve hastalık yaygınlığına göre kişiselleştirilir."
-    }
-  }, {
-    "@type": "Question",
-    "name": "Çikolata kisti varken hamile kalmak mümkün mü?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Bazı hastalarda mümkündür. Olasılık yaş, yumurtalık rezervi, tüplerin durumu, sperm analizi, ağrı düzeyi ve infertilite süresine göre değişir."
-    }
-  }]
+  ]
 };
 
 <script type="application/ld+json" set:html={JSON.stringify(endometriosisStrategyFaqSchema)} />

@@ -1,5 +1,6 @@
 ---
 title: "Yumurta Dondurma Rehberi: Ne Zaman Düşünülür, Kaç Yumurta Gerekebilir?"
+seoTitle: "Yumurta Dondurma Rehberi"
 description: "Yumurta dondurma nedir, kimler için uygundur, yaşa göre başarı neden değişir ve kaç yumurta hedeflenebilir? Oosit kriyoprezervasyonu için kanıt temelli rehber."
 publishDate: 2026-04-01
 status: "published"
@@ -25,13 +26,11 @@ references:
     authors: "Goldman RH, Racowsky C, Farland LV, et al."
     journal: "Fertility and Sterility"
     year: 2017
-    doi: "10.1016/j.fertnstert.2016.12.127"
     pmid: "28166330"
   - title: "Fifteen years of autologous oocyte thaw outcomes from a large university-based fertility center"
     authors: "Cascante A, et al."
     journal: "Fertility and Sterility"
     year: 2022
-    doi: "10.1016/j.fertnstert.2022.03.028"
     pmid: "35597614"
 ---
 
@@ -184,28 +183,24 @@ Başarı oranı en çok dondurma yaşı, çözülen olgun yumurta sayısı, sper
 export const eggFreezingFaqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  "mainEntity": [{
-    "@type": "Question",
-    "name": "Yumurta dondurma işlemi nasıl yapılır?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Ön değerlendirme, kısa süreli yumurtalık uyarımı, ultrason ve hormon takibi, yumurta toplama ve olgun yumurtaların vitrifikasyonla dondurulması basamaklarından oluşur."
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Yumurta dondurma işlemi nasıl yapılır?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ön değerlendirme, kısa süreli yumurtalık uyarımı, ultrason ve hormon takibi, yumurta toplama ve olgun yumurtaların vitrifikasyonla dondurulması basamaklarından oluşur."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Yumurta dondurma için kaç yumurta gerekir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tek bir sayı yoktur. Yaş ilerledikçe aynı gebelik hedefi için daha fazla olgun yumurtaya ihtiyaç duyulabilir ve bazı hastalarda birden fazla siklus konuşulabilir."
+      }
     }
-  }, {
-    "@type": "Question",
-    "name": "Yumurta dondurma için kaç yumurta gerekir?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Tek bir sayı yoktur. Yaş ilerledikçe aynı gebelik hedefi için daha fazla olgun yumurtaya ihtiyaç duyulabilir ve bazı hastalarda birden fazla siklus konuşulabilir."
-    }
-  }, {
-    "@type": "Question",
-    "name": "Yumurta dondurma gebeliği garanti eder mi?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Hayır. Yumurta dondurma gelecekte seçenek oluşturur; ancak canlı doğumu garanti etmez. Dondurma yaşı ve çözülen olgun yumurta sayısı en kritik belirleyicilerdendir."
-    }
-  }]
+  ]
 };
 
 <script type="application/ld+json" set:html={JSON.stringify(eggFreezingFaqSchema)} />

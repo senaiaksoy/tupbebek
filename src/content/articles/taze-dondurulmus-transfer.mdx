@@ -158,19 +158,16 @@ Hafif kasık hissi, dolgunluk veya kısa süreli kramp tek başına gebelik sonu
 export const frozenTransferFaqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  "mainEntity": [{
-    "@type": "Question",
-    "name": "Dondurulmuş embriyo transferi ne zaman yapılır?",
-    "acceptedAnswer": { "@type": "Answer", "text": "Dondurulmuş embriyo transferi, rahim hazırlığı tamamlandığında ve progesteron maruziyeti embriyonun gelişim günüyle uyumlu hale getirildiğinde yapılır. Takvim doğal, modifiye doğal veya programlanmış FET protokolüne göre değişir." }
-  }, {
-    "@type": "Question",
-    "name": "Taze transfer mi dondurulmuş transfer mi daha iyidir?",
-    "acceptedAnswer": { "@type": "Answer", "text": "Herkes için tek bir doğru yoktur. OHSS riski, progesteron yüksekliği, PGT planı veya rahim hazırlığı ihtiyacı varsa dondurulmuş transfer öne çıkabilir; uygun hastada taze transfer de geçerli bir seçenektir." }
-  }, {
-    "@type": "Question",
-    "name": "Dondurulmuş transfer öncesi progesteron kaç olmalı?",
-    "acceptedAnswer": { "@type": "Answer", "text": "Tek bir evrensel eşik yoktur. Progesteron değeri doğal siklus, modifiye doğal siklus veya programlanmış FET protokolüne göre yorumlanmalıdır." }
-  }]
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Dondurulmuş embriyo transferi ne zaman yapılır?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dondurulmuş embriyo transferi, rahim hazırlığı tamamlandığında ve progesteron maruziyeti embriyonun gelişim günüyle uyumlu hale getirildiğinde yapılır. Takvim doğal, modifiye doğal veya programlanmış FET protokolüne göre değişir."
+      }
+    }
+  ]
 };
 
 <script type="application/ld+json" set:html={JSON.stringify(frozenTransferFaqSchema)} />

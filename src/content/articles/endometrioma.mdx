@@ -217,49 +217,24 @@ Evet. Bazı endometriomalar belirti vermeden rutin ultrason veya infertilite de�
 export const endometriomaFaqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  "mainEntity": [{
-    "@type": "Question",
-    "name": "Endometrioma her zaman ameliyat gerektirir mi?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Hayır. Endometrioma ameliyatı ağrı, şüpheli görüntü, kistin boyutu ve konumu, yumurta toplamaya erişim, yumurtalık rezervi, yaş ve gebelik planına göre kişiselleştirilir."
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "IVF öncesi endometrioma her zaman alınmalı mı?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hayır. IVF/ICSI öncesi rutin endometrioma cerrahisi canlı doğumu artırmak amacıyla önerilmez. Ağrı, şüpheli görüntü veya yumurta toplamaya erişim sorunu varsa cerrahi düşünülebilir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Çikolata kisti belirtileri nelerdir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ağrılı adet, ilişki sırasında ağrı, kronik pelvik ağrı veya gebe kalmada gecikme görülebilir. Bazı hastalarda belirti olmayabilir."
+      }
     }
-  }, {
-    "@type": "Question",
-    "name": "Endometrioma ameliyatı AMH değerini düşürür mü?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Özellikle kistektomi sonrası AMH ve yumurtalık yanıtında azalma görülebilir. Risk bilateral kistlerde, tekrarlayan cerrahilerde ve düşük rezervde daha önemlidir."
-    }
-  }, {
-    "@type": "Question",
-    "name": "IVF öncesi endometrioma her zaman alınmalı mı?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Hayır. IVF/ICSI öncesi rutin endometrioma cerrahisi canlı doğumu artırmak amacıyla önerilmez. Ağrı, şüpheli görüntü veya yumurta toplamaya erişim sorunu varsa cerrahi düşünülebilir."
-    }
-  }, {
-    "@type": "Question",
-    "name": "Endometrioma varsa yumurta dondurma gerekir mi?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Her hastada gerekmez. Bilateral endometrioma, düşük AMH/AFC, tekrarlayan cerrahi öyküsü veya yaklaşan yumurtalık cerrahisi varsa fertilite koruma seçenekleri erken konuşulmalıdır."
-    }
-  }, {
-    "@type": "Question",
-    "name": "Endometrioma USG'de görülür mü?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Tipik endometrioma çoğu zaman ultrasonla tanınabilir. Atipik veya şüpheli görüntü varsa MRI ya da ek değerlendirme gerekebilir."
-    }
-  }, {
-    "@type": "Question",
-    "name": "Çikolata kisti belirtileri nelerdir?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Ağrılı adet, ilişki sırasında ağrı, kronik pelvik ağrı veya gebe kalmada gecikme görülebilir. Bazı hastalarda belirti olmayabilir."
-    }
-  }]
+  ]
 };
 
 <script type="application/ld+json" set:html={JSON.stringify(endometriomaFaqSchema)} />

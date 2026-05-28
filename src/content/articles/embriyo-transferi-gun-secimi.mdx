@@ -207,28 +207,16 @@ Bu içerik bilgilendirme amaçlıdır; tıbbi teşhis ve tedavi yerine geçmez.
 export const transferDayFaqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  "mainEntity": [{
-    "@type": "Question",
-    "name": "3. gün embriyosu mu 5. gün embriyosu mu daha uygundur?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Çok sayıda iyi gelişen embriyo varsa 5. gün blastokist transferi seçim gücünü artırabilir. Az sayıda embriyo varsa 3. gün transferi, hiç transfer edememe riskini azaltmak için daha dengeli olabilir."
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Blastokist transferi her zaman daha mı iyidir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hayır. Blastokist transferi bazı hasta gruplarında transfer başına daha yüksek olasılık sağlayabilir; ancak az sayıda embriyo varsa 5. güne beklemek transfer iptali riskini artırabilir."
+      }
     }
-  }, {
-    "@type": "Question",
-    "name": "Blastokist transferi her zaman daha mı iyidir?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Hayır. Blastokist transferi bazı hasta gruplarında transfer başına daha yüksek olasılık sağlayabilir; ancak az sayıda embriyo varsa 5. güne beklemek transfer iptali riskini artırabilir."
-    }
-  }, {
-    "@type": "Question",
-    "name": "5. güne kadar beklersek embriyo kalmazsa ne olur?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Transfer iptal olabilir veya plan değişebilir. Bu risk özellikle az sayıda embriyosu olan hastalarda transfer günü kararı verilirken önceden konuşulmalıdır."
-    }
-  }]
+  ]
 };
 
 <script type="application/ld+json" set:html={JSON.stringify(transferDayFaqSchema)} />

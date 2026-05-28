@@ -20,7 +20,6 @@ references:
     authors: "Macklon NS, Stouffer RL, Giudice LC, Fauser BC"
     journal: "New England Journal of Medicine"
     year: 2006
-    doi: "10.1056/NEJMra065181"
   - title: "The patient experience of IVF/ICSI treatment: a systematic review"
     authors: "Dancet EAF, Nelen WLDM, Sermeus W, et al."
     journal: "Human Reproduction Update"
@@ -171,19 +170,24 @@ Hayır. Bazı embriyolar daha erken durabilir. Bu durum yaygındır ve yumurta, 
 export const ivfProcessFaqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  "mainEntity": [{
-    "@type": "Question",
-    "name": "Tüp bebek süreci kaç gün sürer?",
-    "acceptedAnswer": { "@type": "Answer", "text": "Yumurtalık uyarımı çoğu zaman 8-12 gün sürer. Yumurta toplama, embriyo kültürü, transfer kararı ve beta-hCG testiyle birlikte toplam süreç birkaç haftaya yayılabilir." }
-  }, {
-    "@type": "Question",
-    "name": "Tüp bebek aşamaları nelerdir?",
-    "acceptedAnswer": { "@type": "Answer", "text": "Temel aşamalar ön değerlendirme, yumurtalık uyarımı, yumurta toplama, laboratuvarda döllenme, embriyo gelişimi, transfer veya dondurma ve beta-hCG testidir." }
-  }, {
-    "@type": "Question",
-    "name": "Tüp bebek sonucu kaç günde belli olur?",
-    "acceptedAnswer": { "@type": "Answer", "text": "Sonuç genellikle transferden 10-14 gün sonra yapılan beta-hCG kan testiyle değerlendirilir. Test günü, transfer edilen embriyonun gelişim gününe göre değişir." }
-  }]
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Tüp bebek süreci kaç gün sürer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yumurtalık uyarımı çoğu zaman 8-12 gün sürer. Yumurta toplama, embriyo kültürü, transfer kararı ve beta-hCG testiyle birlikte toplam süreç birkaç haftaya yayılabilir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Tüp bebek sonucu kaç günde belli olur?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sonuç genellikle transferden 10-14 gün sonra yapılan beta-hCG kan testiyle değerlendirilir. Test günü, transfer edilen embriyonun gelişim gününe göre değişir."
+      }
+    }
+  ]
 };
 
 <script type="application/ld+json" set:html={JSON.stringify(ivfProcessFaqSchema)} />

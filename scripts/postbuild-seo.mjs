@@ -189,6 +189,20 @@ function canonicalRedirectFor(requestUrl) {
   const url = new URL(requestUrl);
   let changed = false;
 
+  const redirectHeaders = (location) => ({
+    Location: location,
+    'Strict-Transport-Security': 'max-age=63072000; includeSubDomains; preload',
+  });
+
+  if (url.hostname === 'www.tupbebek.com') {
+    url.hostname = 'tupbebek.com';
+    url.protocol = 'https:';
+    return new Response(null, {
+      status: 301,
+      headers: redirectHeaders(url.toString()),
+    });
+  }
+
   // 410 Gone: template-rendering artifacts and legacy PHP probes that
   // never had real content. 410 removes from Google's index faster than
   // 301-to-home and avoids soft-404 risk for less-relevant 301 targets.
@@ -215,9 +229,7 @@ function canonicalRedirectFor(requestUrl) {
   if (legacyDestination) {
     return new Response(null, {
       status: 301,
-      headers: {
-        Location: legacyDestination,
-      },
+      headers: redirectHeaders(legacyDestination),
     });
   }
 
@@ -227,9 +239,7 @@ function canonicalRedirectFor(requestUrl) {
   ) {
     return new Response(null, {
       status: 301,
-      headers: {
-        Location: '/makaleler/',
-      },
+      headers: redirectHeaders('/makaleler/'),
     });
   }
 
@@ -249,9 +259,7 @@ function canonicalRedirectFor(requestUrl) {
 
   return new Response(null, {
     status: 301,
-    headers: {
-      Location: \`\${url.pathname}\${url.search}\`,
-    },
+    headers: redirectHeaders(\`\${url.pathname}\${url.search}\`),
   });
 }
 `;

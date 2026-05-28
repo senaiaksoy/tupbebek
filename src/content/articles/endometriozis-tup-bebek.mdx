@@ -241,49 +241,48 @@ Bazı hastalarda olumsuz etkileyebilir; ancak etki tek başına endometriozis ta
 export const endometriosisFaqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  "mainEntity": [{
-    "@type": "Question",
-    "name": "Endometriozis varsa tüp bebekten önce ameliyat gerekir mi?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Her hastada gerekmez. Karar yaş, yumurtalık rezervi, ağrı, kistin boyutu ve konumu, tüplerin durumu, sperm analizi ve önceki tedavi öyküsüne göre kişiselleştirilir."
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Endometriozis varsa tüp bebekten önce ameliyat gerekir mi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Her hastada gerekmez. Karar yaş, yumurtalık rezervi, ağrı, kistin boyutu ve konumu, tüplerin durumu, sperm analizi ve önceki tedavi öyküsüne göre kişiselleştirilir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Endometrioma IVF öncesi mutlaka alınmalı mı?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hayır. ESHRE rehberi, canlı doğum oranını artırmak amacıyla IVF öncesi rutin endometrioma cerrahisini önermemektedir. Ağrı, şüpheli görüntü veya yumurta toplamaya erişim sorunu varsa cerrahi düşünülebilir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Endometriozis PGT-A gerektirir mi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Endometriozis tek başına PGT-A gerektirmez. PGT-A kararı kadın yaşı, embriyo sayısı, tekrarlayan kayıp veya implantasyon başarısızlığı ve genetik risk öyküsüne göre verilir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Çikolata kisti varken tüp bebek yapılır mı?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Evet, seçilmiş hastalarda yapılabilir. Kistin boyutu ve konumu, ağrı düzeyi, şüpheli görüntü olup olmadığı, yumurta toplama güvenliği ve yumurtalık rezervi birlikte değerlendirilir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Endometriozis tüp bebek başarısını etkiler mi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Etkileyebilir; ancak yaş, AMH/AFC, sperm faktörü, embriyo kalitesi, tüp durumu ve önceki cerrahi öyküsünden bağımsız yorumlanmamalıdır."
+      }
     }
-  }, {
-    "@type": "Question",
-    "name": "Endometrioma IVF öncesi mutlaka alınmalı mı?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Hayır. ESHRE rehberi, canlı doğum oranını artırmak amacıyla IVF öncesi rutin endometrioma cerrahisini önermemektedir. Ağrı, şüpheli görüntü veya yumurta toplamaya erişim sorunu varsa cerrahi düşünülebilir."
-    }
-  }, {
-    "@type": "Question",
-    "name": "Endometriozis ameliyatı AMH değerini düşürür mü?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Özellikle endometrioma cerrahisi sonrası AMH ve yumurtalık yanıtı azalabilir. Risk bilateral kistlerde, tekrarlayan cerrahilerde ve düşük rezervi olan hastalarda daha önemlidir."
-    }
-  }, {
-    "@type": "Question",
-    "name": "Endometriozis PGT-A gerektirir mi?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Endometriozis tek başına PGT-A gerektirmez. PGT-A kararı kadın yaşı, embriyo sayısı, tekrarlayan kayıp veya implantasyon başarısızlığı ve genetik risk öyküsüne göre verilir."
-    }
-  }, {
-    "@type": "Question",
-    "name": "Çikolata kisti varken tüp bebek yapılır mı?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Evet, seçilmiş hastalarda yapılabilir. Kistin boyutu ve konumu, ağrı düzeyi, şüpheli görüntü olup olmadığı, yumurta toplama güvenliği ve yumurtalık rezervi birlikte değerlendirilir."
-    }
-  }, {
-    "@type": "Question",
-    "name": "Endometriozis tüp bebek başarısını etkiler mi?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Etkileyebilir; ancak yaş, AMH/AFC, sperm faktörü, embriyo kalitesi, tüp durumu ve önceki cerrahi öyküsünden bağımsız yorumlanmamalıdır."
-    }
-  }]
+  ]
 };
 
 <script type="application/ld+json" set:html={JSON.stringify(endometriosisFaqSchema)} />

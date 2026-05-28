@@ -241,49 +241,48 @@ Zamanlama ameliyatın kapsamına, iyileşmeye, yumurtalık rezervine ve embriyo 
 export const hidrosalpinxFaqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  "mainEntity": [{
-    "@type": "Question",
-    "name": "Hidrosalpinx IVF öncesi tedavi edilmeli mi?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Belirgin hidrosalpinx varsa IVF transferinden önce salpenjektomi veya proksimal tüp kapatma gibi seçenekler sıklıkla değerlendirilir. Amaç, tüp sıvısının rahim içine akarak embriyo tutunmasını bozmasını önlemektir."
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Hidrosalpinx IVF öncesi tedavi edilmeli mi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Belirgin hidrosalpinx varsa IVF transferinden önce salpenjektomi veya proksimal tüp kapatma gibi seçenekler sıklıkla değerlendirilir. Amaç, tüp sıvısının rahim içine akarak embriyo tutunmasını bozmasını önlemektir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hidrosalpinx kendiliğinden geçer mi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Gerçek hidrosalpinx çoğu zaman kalıcı tüp hasarıyla ilişkilidir. Şüpheli ultrason bulguları değişebilir, ancak IVF transferi planlanıyorsa bekleme kararı kişisel risklere göre verilmelidir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "HSG hidrosalpinx tanısı için yeterli mi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "HSG tüp açıklığı ve şekli hakkında önemli bilgi verir, fakat karar genellikle ultrason, klinik öykü ve gerektiğinde ek değerlendirmelerle birlikte verilir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hidrosalpenks tedavisi ilaçla olur mu?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Aktif enfeksiyon varsa antibiyotik gerekir; ancak kalıcı tüp hasarı ve sıvı birikimi çoğu zaman yalnızca ilaçla düzelmez. IVF öncesi cerrahi veya girişimsel seçenekler ayrıca değerlendirilir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hidrosalpinx ameliyatı sonrası IVF ne zaman yapılır?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Zamanlama ameliyatın kapsamına, iyileşmeye, yumurtalık rezervine ve embriyo planına göre değişir. Bazı hastalarda önce yumurta toplama ve embriyo dondurma, sonra tüp tedavisi planlanabilir."
+      }
     }
-  }, {
-    "@type": "Question",
-    "name": "Hidrosalpinx kendiliğinden geçer mi?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Gerçek hidrosalpinx çoğu zaman kalıcı tüp hasarıyla ilişkilidir. Şüpheli ultrason bulguları değişebilir, ancak IVF transferi planlanıyorsa bekleme kararı kişisel risklere göre verilmelidir."
-    }
-  }, {
-    "@type": "Question",
-    "name": "Tek tüpte hidrosalpinx varsa gebelik mümkün mü?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Bazı hastalarda doğal gebelik mümkün olabilir; ancak tek taraflı hidrosalpinx bile IVF sonuçlarını etkileyebilir ve dış gebelik riskini artırabilir. Diğer tüpün durumu, yaş, sperm analizi ve infertilite süresi birlikte değerlendirilir."
-    }
-  }, {
-    "@type": "Question",
-    "name": "HSG hidrosalpinx tanısı için yeterli mi?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "HSG tüp açıklığı ve şekli hakkında önemli bilgi verir, fakat karar genellikle ultrason, klinik öykü ve gerektiğinde ek değerlendirmelerle birlikte verilir."
-    }
-  }, {
-    "@type": "Question",
-    "name": "Hidrosalpenks tedavisi ilaçla olur mu?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Aktif enfeksiyon varsa antibiyotik gerekir; ancak kalıcı tüp hasarı ve sıvı birikimi çoğu zaman yalnızca ilaçla düzelmez. IVF öncesi cerrahi veya girişimsel seçenekler ayrıca değerlendirilir."
-    }
-  }, {
-    "@type": "Question",
-    "name": "Hidrosalpinx ameliyatı sonrası IVF ne zaman yapılır?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Zamanlama ameliyatın kapsamına, iyileşmeye, yumurtalık rezervine ve embriyo planına göre değişir. Bazı hastalarda önce yumurta toplama ve embriyo dondurma, sonra tüp tedavisi planlanabilir."
-    }
-  }]
+  ]
 };
 
 <script type="application/ld+json" set:html={JSON.stringify(hidrosalpinxFaqSchema)} />

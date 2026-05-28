@@ -964,7 +964,7 @@ const pageDescription = "Vitrifikasyon yöntemiyle yumurta, sperm ve embriyo don
                         link.classList.remove('text-primary-600', 'border-primary');
                         link.classList.add('text-gray-500', 'border-transparent');
                     });
-                    const activeLink = document.querySelector(`.quick-nav-link[href="#${entry.target.id}"]`);
+                    const activeLink = document.querySelector('.quick-nav-link[href="#' + entry.target.id + '"]');
                     if (activeLink) {
                         activeLink.classList.add('text-primary-600', 'border-primary');
                         activeLink.classList.remove('text-gray-500', 'border-transparent');

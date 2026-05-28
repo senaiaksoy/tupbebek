@@ -198,6 +198,9 @@ function collectWorkerEntrypointIssues(filePath) {
   if (!content.includes('function canonicalRedirectFor')) {
     failures.push(`${path.relative(rootDir, filePath)} is missing the edge canonical redirect guard`);
   }
+  if (!content.includes("'Strict-Transport-Security': 'max-age=63072000; includeSubDomains; preload'")) {
+    failures.push(`${path.relative(rootDir, filePath)} is missing HSTS on edge redirects`);
+  }
 }
 
 if (!fs.existsSync(distDir)) {

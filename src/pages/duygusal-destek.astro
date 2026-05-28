@@ -370,7 +370,7 @@ import DisclaimerBar from '../components/DisclaimerBar.astro';
                     link.classList.remove('text-primary-600', 'border-b-2', 'border-primary');
                     link.classList.add('text-gray-500');
                 });
-                const activeLink = document.querySelector(`.quick-nav-link[href="#${entry.target.id}"]`);
+                const activeLink = document.querySelector('.quick-nav-link[href="#' + entry.target.id + '"]');
                 if (activeLink) {
                     activeLink.classList.add('text-primary-600', 'border-b-2', 'border-primary');
                     activeLink.classList.remove('text-gray-500');

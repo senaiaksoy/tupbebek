@@ -87,6 +87,13 @@ export function generateBreadcrumbs(pathname: string): BreadcrumbItem[] {
   }
 
   const normalizedPath = normalizeBreadcrumbPath(pathname);
+  if (normalizedPath === '/yazar/senai-aksoy/') {
+    return [
+      { label: 'Yayın Kurulu', href: '/yayin-kurulu/' },
+      { label: 'Doç. Dr. Senai Aksoy', href: '/yazar/senai-aksoy/' }
+    ];
+  }
+
   if (customBreadcrumbs[normalizedPath]) {
     return customBreadcrumbs[normalizedPath];
   }

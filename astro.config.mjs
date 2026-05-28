@@ -267,6 +267,6 @@ export default defineConfig({
     mdx(),
   ],
   build: {
-    inlineStylesheets: 'always',
+    inlineStylesheets: 'never',
   },
 });

@@ -242,5 +242,103 @@ const instagramUrl = 'https://www.instagram.com/tupbebekdergi/';
                 btn.setAttribute('aria-expanded', String(!isOpen));
             });
         });
+
+        function initMegaMenus() {
+            const allGroups = document.querySelectorAll('.mega-menu-group');
+
+            function closeAllMenus(except) {
+                allGroups.forEach((group) => {
+                    if (group === except) return;
+                    const panel = group.querySelector('.mega-menu-panel');
+                    const button = group.querySelector('.mega-menu-btn');
+                    const chevron = group.querySelector('.mega-menu-chevron');
+
+                    panel?.classList.remove('opacity-100', 'visible', 'translate-y-0');
+                    panel?.classList.add('opacity-0', 'invisible', 'translate-y-2');
+                    button?.setAttribute('aria-expanded', 'false');
+                    button?.classList.remove('bg-primary-50');
+                    chevron?.classList.remove('rotate-180');
+                });
+            }
+
+            allGroups.forEach((group) => {
+                if (group.dataset.menuInit) return;
+                group.dataset.menuInit = 'true';
+
+                const button = group.querySelector('.mega-menu-btn');
+                const panel = group.querySelector('.mega-menu-panel');
+                const chevron = group.querySelector('.mega-menu-chevron');
+                if (!button || !panel) return;
+
+                const openMenu = () => {
+                    panel.classList.add('opacity-100', 'visible', 'translate-y-0');
+                    panel.classList.remove('opacity-0', 'invisible', 'translate-y-2');
+                    button.setAttribute('aria-expanded', 'true');
+                    button.classList.add('bg-primary-50');
+                    chevron?.classList.add('rotate-180');
+                    window.__trackGaEvent?.('navigation_menu_open', {
+                        menu_label: button.dataset.menuLabel || ''
+                    });
+                };
+
+                const closeMenu = () => {
+                    panel.classList.remove('opacity-100', 'visible', 'translate-y-0');
+                    panel.classList.add('opacity-0', 'invisible', 'translate-y-2');
+                    button.setAttribute('aria-expanded', 'false');
+                    button.classList.remove('bg-primary-50');
+                    chevron?.classList.remove('rotate-180');
+                };
+
+                button.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    if (button.getAttribute('aria-expanded') === 'true') {
+                        closeMenu();
+                    } else {
+                        closeAllMenus(group);
+                        openMenu();
+                    }
+                });
+
+                panel.querySelectorAll('a[data-nav-section]').forEach((link) => {
+                    link.addEventListener('click', () => {
+                        window.__trackGaEvent?.('navigation_click', {
+                            nav_section: link.dataset.navSection || '',
+                            nav_label: link.dataset.navLabel || '',
+                            nav_destination: link.dataset.navDestination || '',
+                            nav_location: link.dataset.navLocation || ''
+                        });
+                    });
+                });
+
+                button.addEventListener('keydown', (event) => {
+                    if (event.key === 'Enter' || event.key === ' ' || event.key === 'ArrowDown') {
+                        event.preventDefault();
+                        closeAllMenus(group);
+                        openMenu();
+                        panel.querySelector('a')?.focus();
+                    }
+                });
+
+                panel.addEventListener('keydown', (event) => {
+                    if (event.key === 'Escape') {
+                        event.preventDefault();
+                        closeMenu();
+                        button.focus();
+                    }
+                });
+            });
+
+            document.addEventListener('click', (event) => {
+                const clickedInside = Array.from(allGroups).some((group) => group.contains(event.target));
+                if (!clickedInside) closeAllMenus();
+            });
+
+            document.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape') closeAllMenus();
+            });
+        }
+
+        initMegaMenus();
     })();
 </script>

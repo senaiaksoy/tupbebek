@@ -95,7 +95,7 @@ const heroDimensions = resolveImageDimensions({
 ---
 
 <BaseLayout
-    title={`${entry.data.title} | tupbebek.com`}
+    title={`${entry.data.seoTitle || entry.data.title} | tupbebek.com`}
     description={entry.data.description}
     image={sanitizedImage}
     imageWidth={entry.data.image ? heroDimensions.width : undefined}

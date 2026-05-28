@@ -7,7 +7,7 @@ import RelatedContent from '../components/RelatedContent.astro';
 import MedicalDisclaimer from '../components/MedicalDisclaimer.astro';
 import { buildHubItemListSchema } from '../utils/hubStructuredData';
 
-const pageTitle = 'Erkek İnfertilitesi: Semen Analizi, Varikosel, Azospermi ve ICSI | tupbebek.com';
+const pageTitle = 'Erkek İnfertilitesi Rehberi | tupbebek.com';
 const pageDescription = 'Erkek infertilitesi nedenleri, semen analizi, varikosel, azospermi, mikro-TESE, ICSI ve yaşam tarzı etkileri hakkında bilimsel rehber.';
 
 const clusterLinks = [
@@ -545,7 +545,7 @@ const itemListSchema = buildHubItemListSchema({
                     link.classList.remove('text-primary-600', 'border-b-2', 'border-primary');
                     link.classList.add('text-gray-500');
                 });
-                const activeLink = document.querySelector(`.quick-nav-link[href="#${entry.target.id}"]`);
+                const activeLink = document.querySelector('.quick-nav-link[href="#' + entry.target.id + '"]');
                 if (activeLink) {
                     activeLink.classList.add('text-primary-600', 'border-b-2', 'border-primary');
                     activeLink.classList.remove('text-gray-500');

@@ -228,39 +228,32 @@ Bu içerik genel bilgilendirme amaçlıdır; tanı ve tedavi yerine geçmez. Ade
 export const pmosFaqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  "mainEntity": [{
-    "@type": "Question",
-    "name": "PMOS ile PCOS aynı hastalık mı?",
-    "acceptedAnswer": { "@type": "Answer", "text": "Evet. PMOS, PCOS için önerilen yeni addır. Yeni isim, tablonun yalnızca over kistiyle açıklanamayacağını ve hormon-metabolizma boyutunun önemli olduğunu vurgular." }
-  }, {
-    "@type": "Question",
-    "name": "PMOS adı tedaviyi değiştirir mi?",
-    "acceptedAnswer": { "@type": "Answer", "text": "Tek başına değiştirmez. Tedavi; gebelik isteği, adet düzeni, androjen belirtileri, metabolik riskler ve tüp bebek gerekip gerekmediğine göre planlanır." }
-  }, {
-    "@type": "Question",
-    "name": "PMOS yumurtalık kisti anlamına mı gelir?",
-    "acceptedAnswer": { "@type": "Answer", "text": "Hayır. Yeni adın amacı bu yanlış çağrışımı azaltmaktır. PCOS/PMOS'ta polikistik görünüm çoğu zaman çok sayıda küçük folikülü ifade eder; klasik over kistiyle aynı şey değildir." }
-  }, {
-    "@type": "Question",
-    "name": "PCOS tanımım PMOS adıyla geçersiz olur mu?",
-    "acceptedAnswer": { "@type": "Answer", "text": "Hayır. Eski tanı geçersiz olmaz. Hekim değerlendirmesi adet düzeni, androjen bulguları, ultrason veya AMH ve dışlama testleriyle yapılır." }
-  }, {
-    "@type": "Question",
-    "name": "Türkiye'de PCOS yerine PMOS mu kullanılacak?",
-    "acceptedAnswer": { "@type": "Answer", "text": "Geçiş kademeli olacaktır. Bir süre raporlarda, hekim notlarında ve hasta eğitim materyallerinde PCOS ve PMOS terimleri birlikte kullanılabilir." }
-  }, {
-    "@type": "Question",
-    "name": "PMOS adı resmi olarak nereden geliyor?",
-    "acceptedAnswer": { "@type": "Answer", "text": "12 Mayıs 2026'da The Lancet'te yayımlanan global konsensüs raporundan geliyor. Çalışma 56 kuruluşu, 14.360 katılımcıyı ve 90+ uzmanı dahil eden çok aşamalı bir Delphi sürecidir. Avustralya Sağlık Araştırma Konseyi (NHMRC) tarafından finanse edilmiştir." }
-  }, {
-    "@type": "Question",
-    "name": "PMOS açılımı nedir? Türkçe karşılığı doğru mu?",
-    "acceptedAnswer": { "@type": "Answer", "text": "PMOS, polyendocrine metabolic ovarian syndrome ifadesinin kısaltmasıdır. Türkçe karşılığı poliendokrin metabolik over sendromu olarak yerleşmektedir. Üç sıfat hastalığın üç boyutunu anlatır: birden çok hormon sistemini, metabolik etkilerini ve yumurtalık bulgularını." }
-  }, {
-    "@type": "Question",
-    "name": "PKOS ile PCOS aynı şey mi?",
-    "acceptedAnswer": { "@type": "Answer", "text": "Evet, ikisi de polikistik over sendromunu kısaltır. PCOS İngilizce Polycystic Ovary Syndrome ifadesinden gelir; Türkçe sözcüklerden gidersek PKOS (Polikistik Over Sendromu) de geçerli bir kısaltmadır çünkü İngilizce cystic sözcüğündeki C, Türkçe'de K harfine karşılık gelir. Türk tıp literatürü uluslararası uyum için çoğunlukla PCOS kullanır; PKOS özellikle Türkçe ders kitapları ve hasta eğitim materyallerinde görülür. PMOS adlandırmasının bir avantajı hem İngilizce hem Türkçe açılımında aynı dört harfin (P-M-O-S) korunmasıdır." }
-  }]
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "PMOS ile PCOS aynı hastalık mı?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Evet. PMOS, PCOS için önerilen yeni addır. Yeni isim, tablonun yalnızca over kistiyle açıklanamayacağını ve hormon-metabolizma boyutunun önemli olduğunu vurgular."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "PMOS yumurtalık kisti anlamına mı gelir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hayır. Yeni adın amacı bu yanlış çağrışımı azaltmaktır. PCOS/PMOS'ta polikistik görünüm çoğu zaman çok sayıda küçük folikülü ifade eder; klasik over kistiyle aynı şey değildir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "PKOS ile PCOS aynı şey mi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Evet, ikisi de polikistik over sendromunu kısaltır. PCOS İngilizce Polycystic Ovary Syndrome ifadesinden gelir; Türkçe sözcüklerden gidersek PKOS (Polikistik Over Sendromu) de geçerli bir kısaltmadır çünkü İngilizce cystic sözcüğündeki C, Türkçe'de K harfine karşılık gelir. Türk tıp literatürü uluslararası uyum için çoğunlukla PCOS kullanır; PKOS özellikle Türkçe ders kitapları ve hasta eğitim materyallerinde görülür. PMOS adlandırmasının bir avantajı hem İngilizce hem Türkçe açılımında aynı dört harfin (P-M-O-S) korunmasıdır."
+      }
+    }
+  ]
 };
 
 export const pmosConditionSchema = {

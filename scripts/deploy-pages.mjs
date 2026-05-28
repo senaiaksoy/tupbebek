@@ -31,6 +31,7 @@ function run(command, args) {
 }
 
 run('npm', ['run', 'build']);
+run('npm', ['run', 'verify:semrush-audit']);
 run('node', ['scripts/verify-consent-mode-v2.mjs']);
 run('node', ['scripts/verify-deploy-target.mjs']);
 run('npx', [

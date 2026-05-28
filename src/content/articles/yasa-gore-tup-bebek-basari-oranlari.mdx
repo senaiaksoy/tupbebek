@@ -1,5 +1,6 @@
 ---
 title: "Yaşa Göre Tüp Bebek Başarı Oranları: 30, 35, 40 Yaş ve Üzeri İçin Gerçekçi Beklenti"
+seoTitle: "Yaşa Göre Tüp Bebek Başarısı"
 description: "Yaşa göre tüp bebek başarısı nasıl değişir? 30'lu yaşlar, 35 sonrası düşüş, 40 yaş ve üzeri için embriyo kalitesi, rezerv, transfer stratejisi ve gerçekçi beklenti rehberi."
 publishDate: 2026-04-04
 status: "published"
@@ -177,19 +178,24 @@ Hasta seçimi, yaş dağılımı, laboratuvar kalitesi, taze veya dondurulmuş t
 export const ageSuccessFaqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  "mainEntity": [{
-    "@type": "Question",
-    "name": "Yaşa göre tüp bebek başarısı nasıl değişir?",
-    "acceptedAnswer": { "@type": "Answer", "text": "Kadın yaşı ilerledikçe yumurta sayısı ve özellikle embriyoların kromozomal uygunluk olasılığı azalır. Bu nedenle aynı tedavi planı 30, 35 ve 40 yaş üzerinde aynı sonucu vermez." }
-  }, {
-    "@type": "Question",
-    "name": "40 yaş üstü tüp bebek başarı oranı nasıl yorumlanmalı?",
-    "acceptedAnswer": { "@type": "Answer", "text": "40 yaş üstünde tek bir yüzde bütün hastaları anlatmaz. AMH, AFC, önceki tedavi yanıtı, embriyo gelişimi, sperm ve rahim durumu birlikte değerlendirilmelidir." }
-  }, {
-    "@type": "Question",
-    "name": "PGT-A yaş etkisini tamamen çözer mi?",
-    "acceptedAnswer": { "@type": "Answer", "text": "Hayır. PGT-A seçilmiş hastalarda transfer planına yardımcı olabilir; ancak yeni yumurta oluşturmaz, yaşa bağlı biyolojik sınırları ortadan kaldırmaz ve gebeliği garanti etmez." }
-  }]
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Yaşa göre tüp bebek başarısı nasıl değişir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Kadın yaşı ilerledikçe yumurta sayısı ve özellikle embriyoların kromozomal uygunluk olasılığı azalır. Bu nedenle aynı tedavi planı 30, 35 ve 40 yaş üzerinde aynı sonucu vermez."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "PGT-A yaş etkisini tamamen çözer mi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hayır. PGT-A seçilmiş hastalarda transfer planına yardımcı olabilir; ancak yeni yumurta oluşturmaz, yaşa bağlı biyolojik sınırları ortadan kaldırmaz ve gebeliği garanti etmez."
+      }
+    }
+  ]
 };
 
 <script type="application/ld+json" set:html={JSON.stringify(ageSuccessFaqSchema)} />

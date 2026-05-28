@@ -1,5 +1,6 @@
 ---
 title: "Adet Düzensizliği ve PCOS: Tanı, Gebelik Şansı ve Tedavi Yol Haritası"
+seoTitle: "Adet Düzensizliği ve PCOS"
 description: "Adet düzensizliği ve PCOS ilişkisi: 2023 PCOS tanı kriterleri, AMH/ultrason yorumu, hormon paneli, gebelik isteyenlerde letrozol ve IVF yol haritası."
 publishDate: 2026-03-31
 lastModified: 2026-05-14
@@ -61,7 +62,6 @@ references:
     authors: "Munro MG, Critchley HOD, Fraser IS"
     journal: "The Lancet"
     year: 2022
-    doi: "10.1016/S0140-6736(22)01047-5"
 ---
 
 import HizliCevap from '../../components/HizliCevap.astro';
@@ -359,49 +359,40 @@ Hayır. Eşlik eden ciddi erkek faktörü, tüp tıkanıklığı, ileri yaş, d�
 export const pcosFaqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  "mainEntity": [{
-    "@type": "Question",
-    "name": "PCOS tanısı için ultrason şart mı?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Hayır. 2023 PCOS rehberine göre düzensiz adet ile klinik veya biyokimyasal hiperandrojenizm birlikte varsa erişkinlerde tanı için ultrason veya AMH her zaman gerekli olmayabilir. Ancak benzer tablo yapan nedenlerin dışlanması gerekir."
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "PCOS tanısı için ultrason şart mı?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hayır. 2023 PCOS rehberine göre düzensiz adet ile klinik veya biyokimyasal hiperandrojenizm birlikte varsa erişkinlerde tanı için ultrason veya AMH her zaman gerekli olmayabilir. Ancak benzer tablo yapan nedenlerin dışlanması gerekir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "PCOS varsa doğrudan tüp bebek gerekir mi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Çoğu hastada hayır. Başka infertilite faktörü yoksa ilk adım yumurtlamayı düzenlemek olabilir. Tüp bebek, ovülasyon indüksiyonuna yanıt alınamadığında veya erkek faktörü, tüp tıkanıklığı, ileri yaş ya da düşük rezerv gibi ek nedenler olduğunda değerlendirilir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Adet düzensizliği olmadan PCOS olur mu?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Evet, bazı hastalarda adetler görece düzenli olabilir. Tanı hiperandrojenizm, ultrason veya AMH bulguları ve diğer nedenlerin dışlanmasıyla birlikte değerlendirilir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Polikistik over adet gecikmesi yapar mı?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Evet. PCOS ovulasyonun seyrekleşmesine yol açarak adet gecikmesi yapabilir. Ancak gecikme olduğunda gebelik olasılığı varsa ilk adım gebelik testidir."
+      }
     }
-  }, {
-    "@type": "Question",
-    "name": "Adet düzensizliği her zaman PCOS anlamına mı gelir?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Hayır. Tiroid bozuklukları, hiperprolaktinemi, hipotalamik amenore, prematür over yetmezliği ve bazı adrenal hastalıklar da adet düzensizliği yapabilir. Bu nedenle tanı klinik değerlendirme ve gerekli testlerle konur."
-    }
-  }, {
-    "@type": "Question",
-    "name": "PCOS varsa doğrudan tüp bebek gerekir mi?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Çoğu hastada hayır. Başka infertilite faktörü yoksa ilk adım yumurtlamayı düzenlemek olabilir. Tüp bebek, ovülasyon indüksiyonuna yanıt alınamadığında veya erkek faktörü, tüp tıkanıklığı, ileri yaş ya da düşük rezerv gibi ek nedenler olduğunda değerlendirilir."
-    }
-  }, {
-    "@type": "Question",
-    "name": "AMH yüksekliği tek başına PCOS tanısı koydurur mu?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Hayır. AMH erişkinlerde polikistik over morfolojisine alternatif bir araç olarak kullanılabilir; ancak tek başına PCOS tanısı için yeterli değildir. Adet düzeni, hiperandrojenizm ve dışlama tanılarıyla birlikte yorumlanmalıdır."
-    }
-  }, {
-    "@type": "Question",
-    "name": "Adet düzensizliği olmadan PCOS olur mu?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Evet, bazı hastalarda adetler görece düzenli olabilir. Tanı hiperandrojenizm, ultrason veya AMH bulguları ve diğer nedenlerin dışlanmasıyla birlikte değerlendirilir."
-    }
-  }, {
-    "@type": "Question",
-    "name": "Polikistik over adet gecikmesi yapar mı?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Evet. PCOS ovulasyonun seyrekleşmesine yol açarak adet gecikmesi yapabilir. Ancak gecikme olduğunda gebelik olasılığı varsa ilk adım gebelik testidir."
-    }
-  }]
-}
+  ]
+};
 
 <script type="application/ld+json" set:html={JSON.stringify(pcosFaqSchema)} />

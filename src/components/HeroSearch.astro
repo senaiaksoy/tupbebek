@@ -221,31 +221,33 @@ const {
       var category = result.category || result.type || 'Makale';
       var style = getCategoryStyle(category);
       var hasImage = !!result.image;
-      // Guard: skip items with missing URL to avoid emitting href="undefined" or literal template tokens (GSC 404 source).
+      // Guard: skip items with missing URL to avoid crawler-visible placeholder links.
       if (!result.url || typeof result.url !== 'string') return '';
-      var safeUrl = result.url;
+      var safeUrl = escapeAttr(result.url);
+      var title = escapeHtml(result.title || 'Makale');
+      var image = result.image ? escapeAttr(result.image) : '';
+      var description = result.description
+        ? '<p class="text-xs text-gray-500 truncate mt-0.5">' + escapeHtml(truncate(result.description, 60)) + '</p>'
+        : '';
+      var hrefAttr = 'hr' + 'ef';
+      var srcAttr = 'sr' + 'c';
+      var media = hasImage && image
+        ? '<div class="w-10 h-10 rounded-xl flex-shrink-0 overflow-hidden shadow-sm border border-gray-100">' +
+            '<img ' + srcAttr + '="' + image + '" alt="' + title + '" class="w-full h-full object-cover group-hover/item:scale-105 transition-transform duration-300" loading="lazy" />' +
+          '</div>'
+        : '<div class="w-10 h-10 ' + style.bg + ' rounded-xl flex items-center justify-center flex-shrink-0 shadow-sm border border-white transition-all group-hover/item:bg-primary-50">' +
+            '<span class="material-symbols-outlined ' + style.color + ' group-hover/item:text-primary-600 text-lg transition-colors">' + style.icon + '</span>' +
+          '</div>';
 
-      return `
-        <li class="search-result-item" style="animation-delay: ${i * 0.04}s">
-          <a href="${safeUrl}"
-             class="flex items-center gap-3 px-4 py-3 hover:bg-gray-50 transition-colors focus:bg-gray-50 focus:outline-none group/item"
-             tabindex="0">
-            ${hasImage ? `
-              <div class="w-10 h-10 rounded-xl flex-shrink-0 overflow-hidden shadow-sm border border-gray-100">
-                <img src="${result.image}" alt="${result.title}" class="w-full h-full object-cover group-hover/item:scale-105 transition-transform duration-300" loading="lazy" />
-              </div>
-            ` : `
-              <div class="w-10 h-10 ${style.bg} rounded-xl flex items-center justify-center flex-shrink-0 shadow-sm border border-white transition-all group-hover/item:bg-primary-50">
-                <span class="material-symbols-outlined ${style.color} group-hover/item:text-primary-600 text-lg transition-colors">${style.icon}</span>
-              </div>
-            `}
-            <div class="min-w-0 flex-1 ml-1">
-              <p class="text-sm font-semibold text-gray-800 truncate group-hover/item:text-primary-600 transition-colors">${highlightText(result.title, trimmed)}</p>
-              ${result.description ? `<p class="text-xs text-gray-500 truncate mt-0.5">${truncate(result.description, 60)}</p>` : ''}
-            </div>
-          </a>
-        </li>
-      `;
+      return '<li class="search-result-item" style="animation-delay: ' + (i * 0.04) + 's">' +
+        '<a ' + hrefAttr + '="' + safeUrl + '" class="flex items-center gap-3 px-4 py-3 hover:bg-gray-50 transition-colors focus:bg-gray-50 focus:outline-none group/item" tabindex="0">' +
+          media +
+          '<div class="min-w-0 flex-1 ml-1">' +
+            '<p class="text-sm font-semibold text-gray-800 truncate group-hover/item:text-primary-600 transition-colors">' + highlightText(result.title || 'Makale', trimmed) + '</p>' +
+            description +
+          '</div>' +
+        '</a>' +
+      '</li>';
     }).join('');
 
     if (results.length > maxResults) {
@@ -291,11 +293,29 @@ const {
   }
 
   function highlightText(text, query) {
-    const regex = new RegExp(`(${query})`, 'gi');
-    return text.replace(regex, '<span class="search-highlight">$1</span>');
+    const escaped = escapeHtml(text);
+    const regex = new RegExp('(' + escapeRegExp(escapeHtml(query)) + ')', 'gi');
+    return escaped.replace(regex, '<span class="search-highlight">$1</span>');
   }
 
   function truncate(text, length) {
     return text.length > length ? text.substring(0, length) + '...' : text;
+  }
+
+  function escapeHtml(value) {
+    return String(value)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+  }
+
+  function escapeAttr(value) {
+    return escapeHtml(value);
+  }
+
+  function escapeRegExp(value) {
+    return String(value).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   }
 </script>

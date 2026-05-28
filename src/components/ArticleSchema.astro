@@ -63,6 +63,8 @@ canonicalUrl.hash = '';
 const d = entry.data;
 const pubMedSearchUrl = (term: string) =>
     `https://pubmed.ncbi.nlm.nih.gov/?term=${encodeURIComponent(term)}`;
+const doiUrl = (doi: string) =>
+    `https://doi.org/${doi.trim().replace(/[()]/g, (char) => (char === '(' ? '%28' : '%29'))}`;
 
 // Resolve and normalize author
 const DEFAULT_AUTHOR_NAME = 'Doç. Dr. Senai Aksoy';
@@ -136,7 +138,7 @@ const citations = d.references?.map(ref => {
     }
     if (ref.doi || ref.pmid) {
         citation["sameAs"] = [
-            ...(ref.doi ? [`https://doi.org/${ref.doi}`] : []),
+            ...(ref.doi ? [doiUrl(ref.doi)] : []),
             ...(pubMedUrl ? [pubMedUrl] : []),
         ];
     }
