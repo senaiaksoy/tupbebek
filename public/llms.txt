@@ -6,8 +6,7 @@
 
 - [Hakkımızda](https://tupbebek.com/hakkimizda/): Site amacı ve bağımsız yayın profili
 - [Yayın Kurulu](https://tupbebek.com/yayin-kurulu/): 16 üyeli tıbbi danışma kurulu (ESHRE/ASRM üyelikleri ve PubMed profilleriyle)
-- [Editöryal Politika](https://tupbebek.com/editoryal-politika/): İçerik standartları
-- [Yayın Süreci](https://tupbebek.com/yayin-sureci/): Üretim, denetim ve onay akışı
+- [Editöryal Politika](https://tupbebek.com/editoryal-politika/): İçerik standartları, üretim, denetim ve onay akışı
 - [Tıbbi Sorumluluk Reddi](https://tupbebek.com/tibbi-sorumluluk-reddi/): Yasal çerçeve
 
 ## Yazar Kimliği
