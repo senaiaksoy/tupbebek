@@ -7,6 +7,7 @@ import Footer from '../../components/Footer.astro';
 import ReadingProgress from '../../components/ReadingProgress.astro';
 import TableOfContents from '../../components/TableOfContents.astro';
 import ShareButtons from '../../components/ShareButtons.astro';
+import PreferredSourceCTA from '../../components/PreferredSourceCTA.astro';
 import RelatedArticles from '../../components/RelatedArticles.astro';
 import ArticleSchema from '../../components/ArticleSchema.astro';
 import EEATBadge from '../../components/EEATBadge.astro';
@@ -209,6 +210,14 @@ const heroDimensions = resolveImageDimensions({
                     <!-- Share Buttons -->
                     <div class="mt-10 pt-8 border-t border-gray-200">
                         <ShareButtons title={entry.data.title} url={articleUrl} />
+                    </div>
+
+                    <div class="mt-6">
+                        <PreferredSourceCTA
+                            placement="article_end"
+                            pagePath={Astro.url.pathname}
+                            articleSlug={entry.slug}
+                        />
                     </div>
 
                     <!-- Editor Kunyesi (full - makale sonu) -->

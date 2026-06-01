@@ -1,0 +1,80 @@
+---
+interface Props {
+  placement?: string;
+  pagePath?: string;
+  articleSlug?: string;
+  class?: string;
+}
+
+const {
+  placement = 'article_end',
+  pagePath = '',
+  articleSlug = '',
+  class: className = '',
+} = Astro.props;
+
+const preferredSourceUrl = 'https://google.com/preferences/source?q=tupbebek.com';
+const ctaId = `preferred-source-cta-${placement}-${articleSlug || 'site'}`.replace(/[^a-z0-9_-]/gi, '-');
+---
+
+<section
+  class={`preferred-source-cta rounded-lg border border-mint-200 bg-mint-50/70 p-5 ${className}`}
+  aria-labelledby={`${ctaId}-title`}
+>
+  <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+    <div class="flex gap-3">
+      <span
+        class="material-symbols-outlined mt-0.5 flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-white text-mint-700 shadow-sm"
+        aria-hidden="true"
+      >
+        travel_explore
+      </span>
+      <div>
+        <h2 id={`${ctaId}-title`} class="text-base font-bold text-gray-900">
+          Google'da kaynak olarak ekleyin
+        </h2>
+        <p class="mt-1 text-sm leading-relaxed text-gray-600">
+          tupbebek.com'u Google'da tercih ettiğiniz sağlık bilgisi kaynakları arasına ekleyebilirsiniz.
+        </p>
+      </div>
+    </div>
+
+    <a
+      id={ctaId}
+      href={preferredSourceUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      data-preferred-source-cta
+      data-placement={placement}
+      data-domain="tupbebek.com"
+      class="inline-flex min-h-[44px] shrink-0 items-center justify-center gap-2 rounded-lg bg-primary-600 px-4 py-2.5 text-sm font-bold text-white no-underline shadow-sm transition-colors hover:bg-primary-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
+      aria-label="tupbebek.com'u Google tercih edilen kaynaklar listesine ekle"
+    >
+      <span class="material-symbols-outlined text-base" aria-hidden="true">add_circle</span>
+      Google'da ekle
+    </a>
+  </div>
+</section>
+
+<script is:inline define:vars={{ ctaId, placement, pagePath, articleSlug }}>
+  document.addEventListener('DOMContentLoaded', function () {
+    var cta = document.getElementById(ctaId);
+    if (!cta) return;
+
+    cta.addEventListener('click', function () {
+      const eventParams = {
+        event_category: 'engagement',
+        event_label: placement,
+        preferred_source_domain: 'tupbebek.com',
+        placement: placement,
+        page_path: pagePath || window.location.pathname
+      };
+
+      if (articleSlug) {
+        eventParams.article_slug = articleSlug;
+      }
+
+      window.__trackGaEvent?.('add_preferred_source_click', eventParams);
+    });
+  });
+</script>
