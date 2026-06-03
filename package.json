@@ -24,6 +24,7 @@
     "verify:live-semrush": "node scripts/verify-live-semrush.mjs",
     "verify:live-semrush:pending-hsts": "node scripts/verify-live-semrush.mjs --allow-pending-www-hsts",
     "verify:deploy-target": "node scripts/verify-deploy-target.mjs",
+    "verify:agentic-seo": "agentic-seo",
     "pmid:enrich": "node scripts/enrich-pmids.mjs",
     "pmid:enrich:apply": "node scripts/enrich-pmids.mjs --apply"
   },
@@ -39,6 +40,7 @@
     "tailwindcss": "^3.4.10"
   },
   "devDependencies": {
+    "agentic-seo": "^1.0.0",
     "pagefind": "^1.5.0",
     "puppeteer": "^24.40.0",
     "sharp": "^0.34.5"

@@ -103,11 +103,27 @@ Icerik statusleri (content/config.ts):
 
 `getPublishedArticles()` fonksiyonu sadece `published` statusundeki makaleleri dondurur.
 
-### SEO / Yapilandirilmis Veri
+### SEO / Yapilandirilmis Veri & AEO / GEO Kuralları (Kritik - Yapay Zeka Arama Motorları)
 
-- **BaseLayout**: Genel `MedicalWebPage` JSON-LD
-- **ArticleSchema**: Makale bazli `["MedicalWebPage", "Article"]` + `reviewedBy` + `citation`
+- **BaseLayout**: Genel `MedicalWebPage` JSON-LD + robots max-image-preview + og:image:alt
+- **ArticleSchema**: Makale bazlı `["MedicalWebPage", "Article"]` + `reviewedBy` + `citation`
+  - Prosedür içeren `"Tedavi Yöntemleri"` ve `"Tüp Bebek"` kategorileri için `about` alanı otomatik olarak `MedicalProcedure` şemasına, diğer kategoriler ise `MedicalCondition` şemasına map edilir.
+- **Yazar Kimliği E-E-A-T Uyumlaştırması (Kritik AEO/GEO)**:
+  - Doç. Dr. Senai Aksoy'un tüm şemalardaki benzersiz `@id` bilgisi kanonik olarak `https://senaiaksoy.net/#person` olmalıdır. Bu kimlik `ArticleSchema.astro`, `EditorKunyesi.astro` ve `yazar/senai-aksoy.astro` üzerinde ortaktır.
+  - Hekim otoritesini güçlendirmek için biyografi sayfasında `sameAs` array'ine hekimin Wikidata (`Q139893832`), PubMed yazar arama adresi ve Doctoralia bağlantıları eklenmiştir.
+- **Metin İçi Alıntılar (AEO/GEO)**:
+  - AI alıntılarını artırmak için makalelerdeki `<QuoteBlock>` yazarları kurumsal yerine doğrudan hekim ismi (`author="Doç. Dr. Senai Aksoy"`) olarak atanır.
+  - ChatGPT ve Perplexity gibi yapay zeka motorlarının alıntıları çektiği ilk %30 dilimine (HizliCevap / BLUF) birincil kaynak linkleri (PubMed / DOI vb.) serpiştirilir.
+- **Wikidata & Wikipedia Bağlantıları (Semantik Şema)**:
+  - Makalenin konusu olan tıbbi entity (ör. PCOS, Endometriozis, AMH), `ArticleSchema.astro` içinde otomatik olarak eşlenen Wikidata (Wikidata Q-ID ve Wikipedia URL'leri) ile `about` alanı altındaki `sameAs` dizisi üzerinden arama motorlarına bildirilmelidir.
+- **VideoObject Şeması**:
+  - Makalelerin frontmatter alanında `videoId` ve `videoTitle` tanımlanırsa, otomatik olarak `VideoObject` JSON-LD şeması oluşturularak AI ve video arama sonuçları zenginleştirilir.
+- **Sözlük Terimleri (`DefinedTermSet`)**:
+  - Sözlükteki tüm tıbbi kavramlar şema uyumlu `DefinedTerm` olarak işaretlenir.
+- **Link Parantez Hijyeni**:
+  - Markdown formatındaki harici linklerin parantezleri (özellikle PubMed veya DOI linkleri içinde arama sorgusu barındıran `(`, `)` karakterleri) URL içinde düzgün şekilde escape edilmeli (örneğin `(` yerine `%28`, `)` yerine `%29`), böylece Markdown link ayrıştırıcısı parantezleri kırıp bağlantıları bozmamalıdır.
 - **BreadcrumbList**: Otomatik breadcrumb schema
+- **Sitemap**: lastmod tarihleri frontmatter'dan parse edilir
 - Canonical URL, Open Graph meta tags
 
 ### Content Schema (Zod)
@@ -132,6 +148,8 @@ reviewDate: 2026-04-01
 image: "/images/..."
 imageAlt: "Gorsel aciklamasi"
 featured: false
+videoId: "YouTube video ID"   # varsa
+videoTitle: "Video basligi"  # varsa
 references:
   - title: "Makale adi"
     authors: "Yazar listesi"

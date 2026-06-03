@@ -29,9 +29,27 @@ function getIcon(term: string): string {
     if (['endometrium', 'folikul', 'over'].some(k => t.includes(k))) return 'anatomy';
     return 'menu_book';
 }
+
+const glossarySchema = {
+    "@context": "https://schema.org",
+    "@type": "DefinedTermSet",
+    "@id": "https://tupbebek.com/tibbi-sozluk/#definedtermset",
+    "name": "tupbebek.com Tıp Terimleri Sözlüğü",
+    "description": "Üreme tıbbı ve IVF süreçlerinde sıkça karşılaşılan medikal terimlerin açıklamaları.",
+    "url": "https://tupbebek.com/tibbi-sozluk/",
+    "inLanguage": "tr-TR",
+    "hasDefinedTerm": terms.map(entry => ({
+        "@type": "DefinedTerm",
+        "@id": entry.href ? `https://tupbebek.com${entry.href}` : `https://tupbebek.com/tibbi-sozluk/#term-${entry.term.toLowerCase()}`,
+        "name": entry.term,
+        "description": entry.definition,
+        "url": entry.href ? `https://tupbebek.com${entry.href}` : undefined
+    }))
+};
 ---
 
 <BaseLayout title="Tıp Terimleri Sözlüğü | IVF ve Üreme Tıbbi Terimleri | tupbebek.com" description="AMH, FSH, ICSI, blastosist, endometrium gibi medikal terimlerin açıklamaları ve ilgili kaynaklara bağlantılar.">
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(glossarySchema)} />
     <Header />
 
     <main id="main-content" tabindex="-1" class="pt-32 pb-24">

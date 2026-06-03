@@ -175,6 +175,86 @@ const imageObject = absoluteImageUrl && heroDims ? {
     ...(d.imageAlt ? { "caption": d.imageAlt } : {}),
 } : undefined;
 
+const WIKIDATA_MAP: Record<string, string[]> = {
+    'adet-duzensizligi-pcos': ['https://www.wikidata.org/wiki/Q185566', 'https://en.wikipedia.org/wiki/Polycystic_ovary_syndrome'],
+    'adet-gorememe': ['https://www.wikidata.org/wiki/Q193150', 'https://en.wikipedia.org/wiki/Amenorrhea'],
+    'akinti-kasinti-koku': ['https://www.wikidata.org/wiki/Q2615657', 'https://en.wikipedia.org/wiki/Vaginal_discharge'],
+    'akraba-evliligi': ['https://www.wikidata.org/wiki/Q1129330', 'https://en.wikipedia.org/wiki/Consanguinity'],
+    'alkol-ve-fertilite': ['https://www.wikidata.org/wiki/Q28702207'],
+    'asherman-sendromu': ['https://www.wikidata.org/wiki/Q725791', 'https://en.wikipedia.org/wiki/Asherman_syndrome'],
+    'azospermi-mikro-tese': ['https://www.wikidata.org/wiki/Q793935', 'https://en.wikipedia.org/wiki/Azoospermia'],
+    'bagisiklik-tedavileri': ['https://www.wikidata.org/wiki/Q274191', 'https://en.wikipedia.org/wiki/Immunotherapy'],
+    'beta-hcg-testi': ['https://www.wikidata.org/wiki/Q416757', 'https://en.wikipedia.org/wiki/Human_chorionic_gonadotropin'],
+    'cep-telefonu-sperm-kalitesi': ['https://www.wikidata.org/wiki/Q3506173', 'https://en.wikipedia.org/wiki/Semen_quality'],
+    'cerrahi-sperm-arama-tese': ['https://www.wikidata.org/wiki/Q7670183'],
+    'dusuk-amh-hamilelik': ['https://www.wikidata.org/wiki/Q417088', 'https://en.wikipedia.org/wiki/Anti-M%C3%BCllerian_hormone'],
+    'duygusal-dayaniklik-rehberi': ['https://www.wikidata.org/wiki/Q730303', 'https://en.wikipedia.org/wiki/Psychological_resilience'],
+    'embriyo-transferi-gun-secimi': ['https://www.wikidata.org/wiki/Q1782299', 'https://en.wikipedia.org/wiki/Embryo_transfer'],
+    'embriyo-transferi-sonrasi-bakim': ['https://www.wikidata.org/wiki/Q1782299', 'https://en.wikipedia.org/wiki/Embryo_transfer'],
+    'embryoglue-faydalari': ['https://www.wikidata.org/wiki/Q28136365'],
+    'embryoscope-yapay-zeka': ['https://www.wikidata.org/wiki/Q25100619'],
+    'endometrioma': ['https://www.wikidata.org/wiki/Q205318', 'https://en.wikipedia.org/wiki/Endometrioma'],
+    'endometriozis-akilli-stratejiler': ['https://www.wikidata.org/wiki/Q205318', 'https://en.wikipedia.org/wiki/Endometriosis'],
+    'endometriozis-tup-bebek': ['https://www.wikidata.org/wiki/Q205318', 'https://en.wikipedia.org/wiki/Endometriosis'],
+    'endometrium-kalinligi-tup-bebek': ['https://www.wikidata.org/wiki/Q484439', 'https://en.wikipedia.org/wiki/Endometrium'],
+    'endometriyal-scratching': ['https://www.wikidata.org/wiki/Q28454593'],
+    'endoskopik-cerrahi-histeroskopi': ['https://www.wikidata.org/wiki/Q1641031', 'https://en.wikipedia.org/wiki/Hysteroscopy'],
+    'era-testi-bas-editor-kosesi': ['https://www.wikidata.org/wiki/Q25112192'],
+    'era-testi-iluzyon': ['https://www.wikidata.org/wiki/Q25112192'],
+    'erkek-dogurganlik-besin-takviyeleri': ['https://www.wikidata.org/wiki/Q3813735', 'https://en.wikipedia.org/wiki/Male_infertility'],
+    'hidrosalpinx-ve-kisirlik': ['https://www.wikidata.org/wiki/Q1639908', 'https://en.wikipedia.org/wiki/Hydrosalpinx'],
+    'hiperprolaktinemi-ve-kisirlik': ['https://www.wikidata.org/wiki/Q592209', 'https://en.wikipedia.org/wiki/Hyperprolactinaemia'],
+    'hormonal-tedavi-adenomyozis': ['https://www.wikidata.org/wiki/Q356262', 'https://en.wikipedia.org/wiki/Adenomyosis'],
+    'istanbul-tup-bebek-doktoru': ['https://www.wikidata.org/wiki/Q190290', 'https://en.wikipedia.org/wiki/In_vitro_fertilisation'],
+    'iui-nedir': ['https://www.wikidata.org/wiki/Q846279', 'https://en.wikipedia.org/wiki/Artificial_insemination'],
+    'ivf-oncesi-histeroskopi': ['https://www.wikidata.org/wiki/Q1641031', 'https://en.wikipedia.org/wiki/Hysteroscopy'],
+    'ivf-protokolleri': ['https://www.wikidata.org/wiki/Q190290', 'https://en.wikipedia.org/wiki/In_vitro_fertilisation'],
+    'iyi-tup-bebek-merkezi': ['https://www.wikidata.org/wiki/Q190290', 'https://en.wikipedia.org/wiki/In_vitro_fertilisation'],
+    'izotretinoin-sperm': ['https://www.wikidata.org/wiki/Q27357', 'https://en.wikipedia.org/wiki/Isotretinoin'],
+    'kac-yumurta-gerekir': ['https://www.wikidata.org/wiki/Q1936308', 'https://en.wikipedia.org/wiki/Oocyte_retrieval'],
+    'kadin-kisirligi-tup-bebek': ['https://www.wikidata.org/wiki/Q3229606', 'https://en.wikipedia.org/wiki/Female_infertility'],
+    'kanser-ve-fertilite': ['https://www.wikidata.org/wiki/Q1936308', 'https://en.wikipedia.org/wiki/Fertility_preservation'],
+    'kimyasal-gebelik': ['https://www.wikidata.org/wiki/Q5090382', 'https://en.wikipedia.org/wiki/Chemical_pregnancy'],
+    'laboratuvar-raporu-yorumlama': ['https://www.wikidata.org/wiki/Q190290', 'https://en.wikipedia.org/wiki/In_vitro_fertilisation'],
+    'mikroenjeksiyon-icsi-nedir': ['https://www.wikidata.org/wiki/Q1633005', 'https://en.wikipedia.org/wiki/Intracytoplasmic_sperm_injection'],
+    'miyom-ameliyati': ['https://www.wikidata.org/wiki/Q1850125', 'https://en.wikipedia.org/wiki/Myomectomy'],
+    'miyomlar-ve-tup-bebek': ['https://www.wikidata.org/wiki/Q927702', 'https://en.wikipedia.org/wiki/Uterine_fibroid'],
+    'opk-ve-ivf': ['https://www.wikidata.org/wiki/Q7114251'],
+    'over-prp': ['https://www.wikidata.org/wiki/Q1859600', 'https://en.wikipedia.org/wiki/Platelet-rich_plasma'],
+    'pcos-yeni-adi-pmos': ['https://www.wikidata.org/wiki/Q185566', 'https://en.wikipedia.org/wiki/Polycystic_ovary_syndrome'],
+    'pgt-a-bas-editor-kosesi': ['https://www.wikidata.org/wiki/Q386927', 'https://en.wikipedia.org/wiki/Preimplantation_genetic_diagnosis'],
+    'pgt-cinsiyet-secimi': ['https://www.wikidata.org/wiki/Q386927', 'https://en.wikipedia.org/wiki/Preimplantation_genetic_diagnosis'],
+    'pgt-m': ['https://www.wikidata.org/wiki/Q386927', 'https://en.wikipedia.org/wiki/Preimplantation_genetic_diagnosis'],
+    'taze-dondurulmus-transfer': ['https://www.wikidata.org/wiki/Q1782299', 'https://en.wikipedia.org/wiki/Embryo_transfer'],
+    'tup-bebek-nedir': ['https://www.wikidata.org/wiki/Q190290', 'https://en.wikipedia.org/wiki/In_vitro_fertilisation'],
+    'tup-bebek-sureci-rehber': ['https://www.wikidata.org/wiki/Q190290', 'https://en.wikipedia.org/wiki/In_vitro_fertilisation'],
+    'tup-bebek-yanlis-bilinenler': ['https://www.wikidata.org/wiki/Q190290', 'https://en.wikipedia.org/wiki/In_vitro_fertilisation'],
+    'vajinal-mikrobiyom-fiv': ['https://www.wikidata.org/wiki/Q20054707', 'https://en.wikipedia.org/wiki/Vaginal_flora'],
+    'varikosel-nedir-ne-zaman-ameliyat-gerekir': ['https://www.wikidata.org/wiki/Q747754', 'https://en.wikipedia.org/wiki/Varicocele'],
+    'yasa-gore-tup-bebek-basari-oranlari': ['https://www.wikidata.org/wiki/Q3229606', 'https://en.wikipedia.org/wiki/Female_infertility'],
+    'yumurta-dondurma-rehberi': ['https://www.wikidata.org/wiki/Q1936306', 'https://en.wikipedia.org/wiki/Oocyte_cryopreservation'],
+    'yumurtalik-kistleri-dogurganlik': ['https://www.wikidata.org/wiki/Q1144073', 'https://en.wikipedia.org/wiki/Ovarian_cyst'],
+    'yumurtlama-takibi': ['https://www.wikidata.org/wiki/Q208170', 'https://en.wikipedia.org/wiki/Ovulation']
+};
+
+const slug = entry.slug || '';
+const sameAsUrls = WIKIDATA_MAP[slug];
+
+const isProcedure = d.category === 'Tedavi Yöntemleri' || d.category === 'Tüp Bebek';
+const aboutSchema: Record<string, unknown> = isProcedure
+    ? {
+        "@type": "MedicalProcedure",
+        "name": d.title,
+      }
+    : {
+        "@type": "MedicalCondition",
+        "name": d.category,
+      };
+
+if (sameAsUrls && sameAsUrls.length > 0) {
+    aboutSchema["sameAs"] = sameAsUrls;
+}
+
 // Main Article + MedicalWebPage schema. Publisher + WebSite reference Organization @graph in BaseLayout via @id.
 const articleSchema = {
     "@context": "https://schema.org",
@@ -197,10 +277,7 @@ const articleSchema = {
     ...(d.reviewDate ? { "lastReviewed": d.reviewDate.toISOString().split('T')[0] } : {}),
     "publisher": { "@id": ORG_ID },
     "isPartOf": { "@id": WEBSITE_ID },
-    "about": {
-        "@type": "MedicalCondition",
-        "name": d.category,
-    },
+    "about": aboutSchema,
     "medicalAudience": {
         "@type": "MedicalAudience",
         "audienceType": "Patient",
@@ -211,6 +288,20 @@ const articleSchema = {
     },
     ...(citations.length > 0 ? { "citation": citations } : {}),
 };
+
+const videoSchema = d.videoId ? {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": d.videoTitle || d.title,
+    "description": d.description,
+    "thumbnailUrl": [
+        `https://img.youtube.com/vi/${d.videoId}/maxresdefault.jpg`,
+        `https://img.youtube.com/vi/${d.videoId}/hqdefault.jpg`
+    ],
+    "uploadDate": d.publishDate ? d.publishDate.toISOString() : new Date('2026-06-02').toISOString(),
+    "embedUrl": `https://www.youtube.com/embed/${d.videoId}`
+} : null;
 ---
 
 <script type="application/ld+json" is:inline set:html={JSON.stringify(articleSchema)} />
+{videoSchema && <script type="application/ld+json" is:inline set:html={JSON.stringify(videoSchema)} />}

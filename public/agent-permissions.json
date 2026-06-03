@@ -1,0 +1,19 @@
+{
+  "version": "1.0",
+  "description": "Agent access permissions for tupbebek.com",
+  "interactions": {
+    "read": {
+      "allowed": true,
+      "paths": [
+        "/makaleler/*",
+        "/tibbi-sozluk/*",
+        "/llms.txt",
+        "/skill.md"
+      ]
+    }
+  },
+  "rateLimits": {
+    "default": "120/minute"
+  },
+  "contact": "bilgi@tupbebek.com"
+}
