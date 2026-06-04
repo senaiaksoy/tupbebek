@@ -2,6 +2,65 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import HizliCevap from '../components/HizliCevap.astro';
+
+// FAQPage JSON-LD — AI motorlarının (AI Overviews, ChatGPT, Perplexity) "pgt nedir"
+// sorgusunda alıntılayabilmesi için yapılandırılmış Q&A. Yanıtlar ASRM 2024 komite
+// görüşü ve Yan 2021 (NEJM) RKÇ ile uyumlu; PGT-A faydası abartılmadan çerçevelendi.
+const pgtFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "PGT (preimplantasyon genetik test) nedir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "PGT, tüp bebek (IVF) sürecinde elde edilen embriyolardan transfer öncesi alınan birkaç hücrenin (trofektoderm biyopsisi) genetik olarak analiz edilmesidir. Üç tipi vardır: kromozom sayısını tarayan PGT-A, tek gen hastalıklarını tarayan PGT-M ve yapısal kromozom rearanjmanlarını tarayan PGT-SR."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "PGT-A, PGT-M ve PGT-SR arasındaki fark nedir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "PGT-A embriyodaki kromozom sayısı anormalliklerini (aneuploidi) tarar; en sık ileri yaş, tekrarlayan düşük ve başarısız IVF denemelerinde gündeme gelir. PGT-M kistik fibrozis, SMA veya talasemi gibi tek gen kaynaklı kalıtsal hastalıkları tarar. PGT-SR ise translokasyon veya inversiyon gibi yapısal kromozom rearanjmanı taşıyıcılarında dengeli embriyoyu belirlemek için kullanılır."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "PGT-A tüp bebekte canlı doğum oranını artırır mı?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Genel ve iyi prognozlu hasta grubunda artırmaz. Çok merkezli randomize kontrollü çalışmalar (Yan 2021, NEJM) ve ASRM 2024 komite görüşü, PGT-A ile konvansiyonel IVF arasında kümülatif canlı doğum oranının benzer olduğunu bildirir. PGT-A seçilmiş gruplarda (ileri yaş, tekrarlayan düşük veya implantasyon başarısızlığı) transfer başına gebelik şansını ve düşük oranını iyileştirebilir; rutin bir tarama testi değildir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "PGT kimlere önerilir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Karar kişiye özeldir. PGT-A daha çok ileri kadın yaşı, tekrarlayan gebelik kaybı veya tekrarlayan implantasyon başarısızlığında değerlendirilir. PGT-M ailede bilinen tek gen hastalığı taşıyıcılığında, PGT-SR ise yapısal kromozom rearanjmanı taşıyıcılığında önerilir. Endikasyon, hekim değerlendirmesi ve genetik danışmanlıkla birlikte belirlenir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "PGT ile NİPT arasındaki fark nedir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "PGT, embriyo seviyesinde, gebelik öncesinde biyopsi ile yapılır. NİPT (non-invaziv prenatal test) ise gebelik sırasında annenin kanından alınan DNA ile yapılan bir tarama testidir ve kesin tanı değildir. İkisi farklı aşamalarda kullanılır ve aynı hastaya sırayla uygulanabilir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Türkiye'de cinsiyet seçimi amacıyla PGT yapılabilir mi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hayır. Türkiye'de tıbbi gerekçesi olmayan (sosyal) cinsiyet seçimi yasaktır. PGT yalnızca ciddi genetik hastalıkların önlenmesi gibi tıbbi endikasyonlarla, Sağlık Bakanlığı düzenlemeleri çerçevesinde uygulanabilir."
+      }
+    }
+  ]
+};
 ---
 
 <BaseLayout title="Genetik ve PGT Merkezi: Preimplantasyon Genetik Testler | tupbebek.com" description="PGT-A, PGT-M ve PGT-SR testlerinin farkları, endikasyonları ve sınırlamaları. Kromozomal tarama, monogenik hastalıklar ve yapısal rearranjmanlar için kapsamlı bilgi.">
@@ -35,6 +94,13 @@ import Footer from '../components/Footer.astro';
             </div>
         </header>
 
+        <!-- BLUF / Hızlı Cevap — AI Overview / ChatGPT / Perplexity citability -->
+        <div class="max-w-3xl mx-auto px-4 md:px-6 lg:px-8 mb-16">
+            <HizliCevap question="PGT (preimplantasyon genetik test) nedir?">
+            PGT, tüp bebek (IVF) sürecinde elde edilen embriyolardan transfer öncesi alınan birkaç hücrenin (trofektoderm biyopsisi) genetik analizidir. Üç tipi vardır: kromozom sayısını tarayan <strong>PGT-A</strong>, tek gen hastalıklarını tarayan <strong>PGT-M</strong> ve yapısal kromozom rearanjmanlarını tarayan <strong>PGT-SR</strong>. PGT-A öploid (kromozomal olarak normal) embriyoyu seçer; seçilmiş gruplarda transfer başına gebelik şansını ve düşük oranını iyileştirebilir, ancak genel ve iyi prognozlu hastalarda kümülatif canlı doğum oranını artırmadığı çok merkezli randomize çalışmalarda gösterilmiştir (<a href="https://pubmed.ncbi.nlm.nih.gov/38762806/" rel="nofollow">ASRM 2024</a>; <a href="https://pubmed.ncbi.nlm.nih.gov/34818479/" rel="nofollow">Yan 2021, NEJM</a>). Bu nedenle PGT-A rutin değil, seçilmiş endikasyonlarda değerlendirilir.
+            </HizliCevap>
+        </div>
+
         <!-- Scientific Introduction -->
         <section class="max-w-3xl mx-auto px-4 md:px-6 lg:px-8 mb-24">
             <aside class="mb-10 rounded-2xl border border-primary-100 bg-primary-50/70 p-5 text-sm leading-relaxed text-gray-700" aria-label="Sayfa kapsamı">
@@ -42,7 +108,7 @@ import Footer from '../components/Footer.astro';
                 Çiftin kendisinde uygulanan kromozomal/taşıyıcı testler (karyotip, Y-mikrodelezyon, CFTR, talasemi) için <a href="/genetik-testler/" class="text-primary-700 underline hover:no-underline">Genetik Testler</a> sayfasına bakın.
             </aside>
             <p class="text-lg md:text-xl text-gray-600 leading-relaxed font-body italic mb-12">
-                Preimplantasyon genetik testler (PGT), in vitro fertilizasyon (IVF) sürecince elde edilen embriyoların kromozomal veya genetik anormallikleri tespit etmek için kullanılan invaziv olmayan tarama yöntemleridir. Bu testler, sağlıklı gebelik şansını artırmak ve tekrarlayan gebelik kayıplarını önlemek amacıyla uygulanır.
+                Preimplantasyon genetik testler (PGT), tüp bebek (IVF) sürecinde elde edilen embriyolardan transfer öncesi alınan hücre biyopsisiyle yapılan genetik analiz yöntemleridir. Amaç, kromozomal veya tek gen kaynaklı anormallikleri taşıyan embriyoları belirlemektir. Seçilmiş endikasyonlarda transfer başına gebelik şansını ve düşük oranını iyileştirebilir; ancak rutin kullanımda kümülatif canlı doğum oranını artırdığı gösterilmemiştir (ASRM 2024; Yan 2021, NEJM).
             </p>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
                 <div class="bg-gray-50 p-6 rounded-xl shadow-sm border-t-2 border-primary-200">
@@ -87,7 +153,7 @@ import Footer from '../components/Footer.astro';
                                 Preimplantasyon genetik testler (PGT), IVF sürecinde oositlerin döllenmesinden sonra oluşan embriyolardan bir veya birkaç hücre (trofektoderm) biyopsisi alınarak yapılan genetik analizdir. Bu test, embriyoların rahme transfer edilmeden önce kromozomal veya genetik anormallikleri tespit etmek için kullanılır.
                             </p>
                             <p>
-                                PGT, embriyoların genetik olarak normal (euploid) olanların seçilmesini sağlayarak, gebelik oranlarını artırmak ve tekrarlayan gebelik kayıplarını önlemek amacıyla uygulanır. Modern NGS (Next Generation Sequencing) teknolojisi ile doğruluk oranı %98-99 seviyesine ulaşmıştır.
+                                PGT-A, embriyolar arasından öploid (kromozomal olarak normal) olanların belirlenmesini sağlar. Seçilmiş hasta gruplarında transfer başına gebelik şansını ve düşük oranını iyileştirebilir; ancak genel ve iyi prognozlu popülasyonda kümülatif canlı doğum oranını artırmadığı çok merkezli randomize çalışmalarda gösterilmiştir (ASRM 2024; Yan 2021, NEJM). Modern NGS (Next Generation Sequencing) ile analitik doğruluk %98-99 düzeyindedir; bu teknik doğruluk, klinik canlı doğum garantisi anlamına gelmez.
                             </p>
                             <!-- Clinical Info Box -->
                             <div class="bg-white border-l-4 border-primary rounded-xl p-6 mrd-container">
@@ -341,7 +407,7 @@ import Footer from '../components/Footer.astro';
                                             </tr>
                                             <tr>
                                                 <td class="py-2 pr-4 font-semibold text-gray-900">Yararları</td>
-                                                <td class="py-2 pr-4 text-gray-600">Normal gebelik şansı artar</td>
+                                                <td class="py-2 pr-4 text-gray-600">Seçilmiş olguda düşük riskini azaltabilir</td>
                                                 <td class="py-2 pr-4 text-gray-600">Non-invaziv, erken tarama</td>
                                             </tr>
                                         </tbody>
@@ -487,4 +553,6 @@ import Footer from '../components/Footer.astro';
     sections.forEach(section => observer.observe(section));
 })();
 </script>
+
+<script type="application/ld+json" is:inline set:html={JSON.stringify(pgtFaqSchema)} />
 </BaseLayout>
