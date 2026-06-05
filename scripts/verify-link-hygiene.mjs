@@ -34,9 +34,9 @@ if (!fs.existsSync(distDir)) {
 
   for (const filePath of files) {
     const text = fs.readFileSync(filePath, 'utf8');
+    const relativePath = path.relative(rootDir, filePath);
     for (const match of text.matchAll(attrPattern)) {
       const value = match[2];
-      const relativePath = path.relative(rootDir, filePath);
 
       if (placeholderPattern.test(value)) {
         failures.push(`${relativePath} has placeholder link: ${value}`);
@@ -55,7 +55,17 @@ if (!fs.existsSync(distDir)) {
       }
     }
 
-    if (filePath.endsWith('.html') && publicEmailPattern.test(text)) {
+    // Only visible HTML text is at risk: Cloudflare Email Obfuscation rewrites
+    // emails in the rendered body / mailto links, but does NOT touch content
+    // inside <script type="application/ld+json"> blocks. The Organization
+    // ContactPoint email lives there intentionally (E-E-A-T schema, commit
+    // cbe8bc22) and is served raw + intact on production even with obfuscation
+    // active. So strip JSON-LD blocks before checking for exposed email text.
+    const visibleText = text.replace(
+      /<script\b[^>]*type=["']application\/ld\+json["'][^>]*>[\s\S]*?<\/script>/giu,
+      '',
+    );
+    if (filePath.endsWith('.html') && publicEmailPattern.test(visibleText)) {
       failures.push(`${relativePath} exposes public email text that can trigger Cloudflare email protection.`);
     }
   }
