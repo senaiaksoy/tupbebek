@@ -170,6 +170,14 @@ export default defineConfig({
     routes: {
       extend: {
         exclude: [
+          // Pagefind static assets are generated AFTER `astro build` (postbuild
+          // `npx pagefind --site dist`), so they are not in the adapter's auto
+          // static-route list. Without this exclude, requests to /pagefind/*
+          // fall through to the Worker, which applies the `trailingSlash: 'always'`
+          // 301 — e.g. `…​.pf_meta` → `…​.pf_meta/` (404). Pagefind's internal
+          // fetch then hangs, leaving the search UI stuck on "Aranıyor...".
+          // Excluding the prefix makes Cloudflare serve these files statically.
+          { pattern: '/pagefind/*' },
           { pattern: '/sitemap-index.xml' },
           { pattern: '/sitemap-0.xml' },
           { pattern: '/robots.txt' },

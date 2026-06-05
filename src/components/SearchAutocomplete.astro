@@ -259,17 +259,28 @@ const fallbackData = await getSearchData();
     const pf = await loadPagefind();
     let results = [];
     let count = 0;
+    let pagefindOk = false;
 
     if (pf) {
-      const searchResult = await pf.search(trimmed);
-      results = await Promise.all(
-        searchResult.results.slice(0, maxResults).map(r => r.data())
-      );
-      count = searchResult.results.length;
-    } else {
+      // Guard the Pagefind path: if search() ever rejects or hangs on a broken
+      // asset fetch, we must NOT leave the spinner stuck on "Aranıyor...".
+      // On any failure we fall through to the embedded fallback data below.
+      try {
+        const searchResult = await pf.search(trimmed);
+        results = await Promise.all(
+          searchResult.results.slice(0, maxResults).map(r => r.data())
+        );
+        count = searchResult.results.length;
+        pagefindOk = true;
+      } catch (e) {
+        console.warn('Pagefind search failed, using fallback:', e);
+      }
+    }
+
+    if (!pagefindOk) {
       const normalized = trimmed.toLowerCase();
       const filtered = fallbackData.filter((item) => {
-        return item.title.toLowerCase().includes(normalized) || 
+        return item.title.toLowerCase().includes(normalized) ||
                (item.description && item.description.toLowerCase().includes(normalized)) ||
                (item.category && item.category.toLowerCase().includes(normalized));
       });
