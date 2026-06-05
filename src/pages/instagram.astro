@@ -5,15 +5,33 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 // Fetch all published articles
 const articles = await getPublishedArticles();
 
-// Sort by publishDate desc
-const sortedArticles = articles.sort((a, b) => {
-  const dateA = a.data.publishDate?.getTime() ?? 0;
-  const dateB = b.data.publishDate?.getTime() ?? 0;
-  return dateB - dateA;
-});
+// Curated list of slugs representing the exact Instagram publishing calendar sequence
+const instagramSlugs = [
+  'pcos-yeni-adi-pmos',
+  'cep-telefonu-sperm-kalitesi',
+  'azospermi-mikro-tese',
+  'varikosel-nedir-ne-zaman-ameliyat-gerekir',
+  'hidrosalpinx-ve-kisirlik',
+  'embryoscope-yapay-zeka',
+  'embriyo-transferi-gun-secimi',
+  'taze-dondurulmus-transfer',
+  'mikroenjeksiyon-icsi-nedir',
+  'laboratuvar-raporu-yorumlama',
+  'yumurta-dondurma-rehberi',
+  'embriyo-transferi-sonrasi-bakim',
+  'dusuk-amh-hamilelik',
+  'beta-hcg-testi',
+  'kac-yumurta-gerekir',
+  'tup-bebek-yanlis-bilinenler',
+  'tup-bebek-sureci-rehber'
+];
 
-// Latest articles (top 8)
-const latestArticles = sortedArticles.slice(0, 8);
+// Map the slugs to the retrieved article objects in order
+const latestArticles = instagramSlugs
+  .map(slug => articles.find(a => a.slug === slug))
+  .filter((a): a is NonNullable<typeof a> => !!a)
+  .slice(0, 8); // Display top 8 recent Instagram posts
+
 ---
 
 <BaseLayout
