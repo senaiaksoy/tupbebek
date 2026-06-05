@@ -1,0 +1,249 @@
+---
+import { getPublishedArticles, sanitizeImage } from '../utils/articles';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+// Fetch all published articles
+const articles = await getPublishedArticles();
+
+// Sort by publishDate desc
+const sortedArticles = articles.sort((a, b) => {
+  const dateA = a.data.publishDate?.getTime() ?? 0;
+  const dateB = b.data.publishDate?.getTime() ?? 0;
+  return dateB - dateA;
+});
+
+// Latest articles (top 8)
+const latestArticles = sortedArticles.slice(0, 8);
+---
+
+<BaseLayout
+  title="Instagram Bağlantıları | Doç. Dr. Senai Aksoy - tupbebek.com"
+  description="@tupbebekdergi Instagram hesabı üzerinden paylaşılan en son bilimsel üreme sağlığı makaleleri, kılavuzlar ve ücretsiz e-kitap indirme bağlantıları."
+  canonical="https://tupbebek.com/instagram/"
+  hideBreadcrumbs={true}
+  noindex={true}
+>
+  <div class="relative min-h-screen bg-[#070d1e] text-white flex flex-col justify-between selection:bg-mint-500 selection:text-white font-body overflow-x-hidden">
+    <!-- Glowing Background Orbs -->
+    <div class="absolute top-[-10%] left-[-20%] w-[80%] aspect-square rounded-full bg-primary-700/10 blur-[120px] pointer-events-none"></div>
+    <div class="absolute top-[30%] right-[-20%] w-[80%] aspect-square rounded-full bg-mint-700/5 blur-[120px] pointer-events-none"></div>
+    <div class="absolute bottom-[-10%] left-[-10%] w-[60%] aspect-square rounded-full bg-apricot-700/5 blur-[120px] pointer-events-none"></div>
+
+    <div class="relative z-10 w-full max-w-md mx-auto px-4 py-8 flex flex-col items-center">
+      
+      <!-- Profile Section -->
+      <header class="flex flex-col items-center text-center mb-8 w-full">
+        <div class="relative group mb-4">
+          <!-- Golden/Mint breathing gradient border ring -->
+          <div class="absolute inset-0 rounded-full bg-gradient-to-tr from-mint-500 via-primary-500 to-apricot-500 blur-sm opacity-75 group-hover:opacity-100 transition-opacity animate-pulse duration-3000"></div>
+          <div class="relative w-24 h-24 rounded-full overflow-hidden border-2 border-slate-900 bg-slate-900">
+            <img
+              src="/images/senai-aksoy.webp"
+              alt="Doç. Dr. Senai Aksoy"
+              class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+              width="96"
+              height="96"
+            />
+          </div>
+          <span class="absolute bottom-1 right-1 bg-mint-500 border-2 border-slate-950 text-white rounded-full p-1 flex items-center justify-center shadow-lg" title="Doğrulanmış Bilgi Kaynağı">
+            <span class="material-symbols-outlined text-xs font-bold leading-none" style="font-size: 10px;">check</span>
+          </span>
+        </div>
+
+        <div class="inline-flex items-center gap-1 bg-white/5 border border-white/10 rounded-full px-3 py-1 text-xs font-semibold text-slate-300 mb-2.5 backdrop-blur-sm">
+          <span class="text-mint-400 text-xs font-bold font-mono">@tupbebekdergi</span>
+          <span class="text-slate-500">•</span>
+          <span>Instagram</span>
+        </div>
+
+        <h1 class="text-xl font-headline font-bold text-white tracking-tight leading-tight">
+          Doç. Dr. Senai Aksoy
+        </h1>
+        <p class="text-xs font-semibold text-slate-400 mt-1">
+          tupbebek.com Baş Editörü & Kadın Doğum Uzmanı
+        </p>
+        <p class="text-xs text-slate-300 mt-3 leading-relaxed max-w-sm px-4">
+          Bağımsız, bilimsel ve kanıta dayalı üreme sağlığı yayın portalı. Son paylaşılan kılavuzlara ve bilimsel makalelere aşağıdan ulaşabilirsiniz.
+        </p>
+      </header>
+
+      <!-- Search Bar Redirect -->
+      <div class="w-full mb-6">
+        <form action="/" method="GET" class="relative group">
+          <span class="absolute inset-y-0 left-4 flex items-center text-slate-400 group-focus-within:text-mint-400 transition-colors">
+            <span class="material-symbols-outlined text-lg">search</span>
+          </span>
+          <input 
+            type="text" 
+            name="q" 
+            placeholder="Tıbbi konu, semptom veya test ara..." 
+            class="w-full bg-white/5 border border-white/10 rounded-xl py-3 pl-11 pr-4 text-sm text-white placeholder-slate-400 focus:outline-none focus:border-mint-500 focus:ring-1 focus:ring-mint-500 transition-all duration-300 backdrop-blur-sm shadow-inner"
+          />
+        </form>
+      </div>
+
+      <!-- E-Book Banner (Lead Capture) -->
+      <div class="w-full mb-6">
+        <a 
+          href="/e-kitap-indir/" 
+          class="group relative block overflow-hidden rounded-2xl border border-mint-500/30 bg-gradient-to-br from-mint-950/40 via-primary-950/20 to-slate-950/50 p-4 transition-all duration-300 hover:border-mint-400/60 hover:-translate-y-0.5 hover:shadow-[0_8px_30px_rgb(58,138,102,0.15)] shadow-md backdrop-blur-sm"
+        >
+          <!-- Top accent line -->
+          <div class="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-mint-500 via-primary-500 to-apricot-500"></div>
+          
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 rounded-xl bg-mint-500/10 border border-mint-500/20 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform duration-300">
+              <span class="material-symbols-outlined text-mint-400 text-2xl">menu_book</span>
+            </div>
+            <div class="flex-grow min-w-0">
+              <div class="flex items-center gap-2">
+                <span class="bg-apricot-500/25 border border-apricot-400/30 text-[9px] font-bold uppercase tracking-wider text-apricot-300 px-1.5 py-0.5 rounded">
+                  ÜCRETSİZ E-KİTAP
+                </span>
+              </div>
+              <h2 class="text-sm font-bold text-white mt-1 group-hover:text-mint-300 transition-colors">
+                Tüp Bebek Beslenme Planı
+              </h2>
+              <p class="text-xs text-slate-300 line-clamp-1 mt-0.5">
+                Başarı şansını destekleyen 30 günlük beslenme rehberi.
+              </p>
+            </div>
+            <span class="material-symbols-outlined text-slate-400 group-hover:text-mint-400 group-hover:translate-x-0.5 transition-all text-lg shrink-0">
+              arrow_forward
+            </span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Latest Instagram Posts Section -->
+      <div class="w-full mb-8">
+        <div class="flex items-center gap-2 mb-4 px-1">
+          <span class="w-2 h-2 rounded-full bg-mint-400 animate-pulse"></span>
+          <h2 class="text-xs uppercase tracking-widest font-semibold text-slate-300">
+            Son Paylaşılan Makaleler
+          </h2>
+        </div>
+
+        <div class="flex flex-col gap-3">
+          {latestArticles.map(article => {
+            const image = sanitizeImage(article.data.image);
+            return (
+              <a 
+                href={`/makaleler/${article.slug}/`}
+                class="group flex gap-4 bg-white/5 border border-white/10 rounded-xl p-3 hover:bg-white/10 hover:border-primary-400/40 transition-all duration-300 transform hover:-translate-y-0.5 hover:shadow-lg shadow-black/10 backdrop-blur-sm"
+              >
+                {image ? (
+                  <div class="w-16 h-16 rounded-lg overflow-hidden shrink-0 border border-white/5 bg-slate-800">
+                    <img 
+                      src={image} 
+                      alt={article.data.imageAlt || article.data.title}
+                      class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                      width="64"
+                      height="64"
+                    />
+                  </div>
+                ) : (
+                  <div class="w-16 h-16 rounded-lg bg-primary-950/40 border border-white/5 flex items-center justify-center shrink-0 text-primary-400">
+                    <span class="material-symbols-outlined text-xl">article</span>
+                  </div>
+                )}
+                <div class="flex-grow min-w-0 flex flex-col justify-center">
+                  <span class="text-[10px] uppercase font-semibold text-mint-400 tracking-wider">
+                    {article.data.category}
+                  </span>
+                  <h3 class="text-xs font-bold text-white group-hover:text-primary-300 transition-colors leading-snug mt-0.5 line-clamp-2">
+                    {article.data.title}
+                  </h3>
+                  <p class="text-[11px] text-slate-300 line-clamp-1 mt-0.5">
+                    {article.data.description}
+                  </p>
+                </div>
+                <div class="flex items-center shrink-0 text-slate-400 group-hover:text-primary-300 group-hover:translate-x-0.5 transition-all">
+                  <span class="material-symbols-outlined text-base">arrow_forward</span>
+                </div>
+              </a>
+            );
+          })}
+        </div>
+      </div>
+
+      <!-- Quick Access Section -->
+      <div class="w-full mb-8">
+        <h2 class="text-xs uppercase tracking-widest font-semibold text-slate-300 mb-4 px-1">
+          Popüler Kategoriler & Araçlar
+        </h2>
+        <div class="grid grid-cols-2 gap-3">
+          <a 
+            href="/makaleler/tup-bebek-sureci-rehber/" 
+            class="group flex flex-col items-center justify-center text-center p-4 bg-white/5 border border-white/10 rounded-xl hover:bg-white/10 hover:border-primary-400/30 transition-all duration-300 hover:-translate-y-0.5 shadow-sm backdrop-blur-sm"
+          >
+            <span class="material-symbols-outlined text-primary-400 text-lg mb-1 group-hover:scale-110 transition-transform">school</span>
+            <span class="text-xs font-semibold text-white">Tüp Bebek Rehberi</span>
+          </a>
+          <a 
+            href="/bas-editor-kosesi/" 
+            class="group flex flex-col items-center justify-center text-center p-4 bg-white/5 border border-white/10 rounded-xl hover:bg-white/10 hover:border-primary-400/30 transition-all duration-300 hover:-translate-y-0.5 shadow-sm backdrop-blur-sm"
+          >
+            <span class="material-symbols-outlined text-primary-400 text-lg mb-1 group-hover:scale-110 transition-transform">edit_note</span>
+            <span class="text-xs font-semibold text-white">Baş Editör Köşesi</span>
+          </a>
+          <a 
+            href="/tibbi-sozluk/" 
+            class="group flex flex-col items-center justify-center text-center p-4 bg-white/5 border border-white/10 rounded-xl hover:bg-white/10 hover:border-primary-400/30 transition-all duration-300 hover:-translate-y-0.5 shadow-sm backdrop-blur-sm"
+          >
+            <span class="material-symbols-outlined text-primary-400 text-lg mb-1 group-hover:scale-110 transition-transform">menu_book</span>
+            <span class="text-xs font-semibold text-white">Tıbbi Sözlük</span>
+          </a>
+          <a 
+            href="/iletisim/" 
+            class="group flex flex-col items-center justify-center text-center p-4 bg-white/5 border border-white/10 rounded-xl hover:bg-white/10 hover:border-primary-400/30 transition-all duration-300 hover:-translate-y-0.5 shadow-sm backdrop-blur-sm"
+          >
+            <span class="material-symbols-outlined text-primary-400 text-lg mb-1 group-hover:scale-110 transition-transform">location_on</span>
+            <span class="text-xs font-semibold text-white">İletişim & Konum</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Ask a Question Section -->
+      <div class="w-full mb-8">
+        <a 
+          href="/iletisim/" 
+          class="group flex items-center justify-center gap-2 w-full py-3.5 px-4 bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-500 hover:to-primary-600 border border-primary-500/20 text-white rounded-xl text-xs font-bold tracking-wider uppercase text-center shadow-lg transition-all duration-300 transform hover:-translate-y-0.5 hover:shadow-primary-600/15"
+        >
+          <span class="material-symbols-outlined text-sm leading-none">question_answer</span>
+          Tıbbi Yayın Kurulu'na Soru İlet
+        </a>
+      </div>
+
+      <!-- Social Media Links & Disclaimer Footer -->
+      <footer class="w-full mt-4 text-center">
+        <div class="flex items-center justify-center gap-4 mb-6">
+          <a href="https://www.instagram.com/tupbebekdergi/" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-300 hover:bg-white/10 hover:text-white transition-colors" title="Instagram">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+          </a>
+          <a href="https://www.youtube.com/@DocentDrSenaiAksoy" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-300 hover:bg-white/10 hover:text-white transition-colors" title="YouTube">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.163a3.003 3.003 0 0 0-2.11-2.11C19.518 3.545 12 3.545 12 3.545s-7.519 0-9.388.508a3.003 3.003 0 0 0-2.11 2.11C0 8.033 0 12 0 12s0 3.967.502 5.837a3.003 3.003 0 0 0 2.11 2.11c1.87.508 9.388.508 9.388.508s7.519 0 9.388-.508a3.002 3.002 0 0 0 2.11-2.11C24 15.967 24 12 24 12s0-3.967-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/tupbebekdergi" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-300 hover:bg-white/10 hover:text-white transition-colors" title="Facebook">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="/" class="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-300 hover:bg-white/10 hover:text-white transition-colors" title="Web Sitesi">
+            <span class="material-symbols-outlined text-sm leading-none">language</span>
+          </a>
+        </div>
+
+        <!-- Legal Medical Disclaimer -->
+        <div class="border-t border-white/10 pt-6 px-2 text-left">
+          <p class="text-[10px] text-slate-400 leading-relaxed font-sans">
+            <strong>Tıbbi Sorumluluk Reddi:</strong> tupbebek.com bağımsız ve reklamsız bir üreme sağlığı yayın portalıdır. Bu sayfada sunulan tüm makale özetleri, kılavuzlar ve içerikler yalnızca okuyucuyu eğitmek ve bilgilendirmek amacıyla hazırlanmıştır. Burada yer alan hiçbir bilgi tıbbi teşhis, tanı veya tedavi tavsiyesi yerine geçmez. Sağlığınızla ilgili tüm kararlar ve tedavi süreçleriniz için lütfen uzman bir hekime başvurunuz. 
+          </p>
+          <p class="text-[10px] text-slate-500 mt-4 leading-relaxed font-sans text-center">
+            © 2026 <a href="/" class="underline hover:text-slate-300">tupbebek.com</a>. Tüm Hakları Saklıdır.
+          </p>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+</BaseLayout>

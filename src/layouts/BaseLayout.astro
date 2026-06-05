@@ -29,6 +29,7 @@ interface Props {
 	canonical?: string;
 	noindex?: boolean;
 	robots?: string;
+	hideBreadcrumbs?: boolean;
 }
 
 const {
@@ -41,6 +42,7 @@ const {
 	canonical,
 	noindex = false,
 	robots,
+	hideBreadcrumbs = false,
 } = Astro.props;
 const isHome = Astro.url.pathname === '/';
 const normalizedPath = normalizeInternalPath(Astro.url.pathname);
@@ -457,7 +459,7 @@ const siteGraph = {
 	</head>
 	<body class="bg-gray-50 text-gray-900 selection:bg-primary-50 selection:text-primary-800">
 			<a href="#main-content" class="skip-link">Ana içeriğe geç</a>
-		{!isHome && <Breadcrumbs />}
+		{!isHome && !hideBreadcrumbs && <Breadcrumbs />}
 		<slot />
 		<SearchAutocomplete />
 		<CookieConsent />
