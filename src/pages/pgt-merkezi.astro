@@ -138,6 +138,7 @@ const pgtFaqSchema = {
                     <a href="#pgt-sr" class="quick-nav-link px-4 py-2 text-sm font-semibold text-gray-500 hover:text-primary-600 rounded-lg transition-colors shrink-0">PGT-SR</a>
                     <a href="#nipt" class="quick-nav-link px-4 py-2 text-sm font-semibold text-gray-500 hover:text-primary-600 rounded-lg transition-colors shrink-0">NİPT Farkı</a>
                     <a href="#sinirlamalar" class="quick-nav-link px-4 py-2 text-sm font-semibold text-gray-500 hover:text-primary-600 rounded-lg transition-colors shrink-0">Sınırlamalar</a>
+                    <a href="#sss" class="quick-nav-link px-4 py-2 text-sm font-semibold text-gray-500 hover:text-primary-600 rounded-lg transition-colors shrink-0">SSS</a>
                 </div>
             </div>
         </nav>
@@ -472,6 +473,27 @@ const pgtFaqSchema = {
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- Section 7: Sık Sorulan Sorular (FAQ) -->
+        <!-- Görünür Q&A, FAQPage JSON-LD ile birebir aynı kaynaktan (pgtFaqSchema)
+             üretilir; böylece şema ile sayfa içeriği asla birbirinden sapmaz ve
+             AI motorları (AI Overviews / ChatGPT / Perplexity) alıntılayabilir. -->
+        <section id="sss" class="max-w-3xl mx-auto px-4 md:px-6 lg:px-8 mb-24">
+            <h2 class="font-headline text-3xl text-gray-900 mb-8">7. Sık Sorulan Sorular</h2>
+            <div class="space-y-4">
+                {pgtFaqSchema.mainEntity.map((faq) => (
+                    <details class="group bg-gray-50 rounded-xl border border-gray-100 overflow-hidden">
+                        <summary class="flex items-center justify-between gap-4 cursor-pointer list-none p-6 font-bold text-gray-900 text-base hover:text-primary-600 transition-colors">
+                            <span>{faq.name}</span>
+                            <span class="material-symbols-outlined text-primary-600 shrink-0 transition-transform group-open:rotate-180">expand_more</span>
+                        </summary>
+                        <div class="px-6 pb-6 -mt-2 text-gray-600 leading-relaxed">
+                            {faq.acceptedAnswer.text}
+                        </div>
+                    </details>
+                ))}
             </div>
         </section>
 
