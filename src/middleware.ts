@@ -51,7 +51,7 @@ const GONE_410_EXACT = new Set<string>([
 const GONE_410_PREFIXES: string[] = ['/undefined/'];
 
 function isGone(pathname: string): boolean {
-  return GONE_410_EXACT.has(pathname) || GONE_410_PREFIXES.some((p) => pathname.startsWith(p));
+  return GONE_410_EXACT.has(pathname) || GONE_410_PREFIXES.some((p) => pathname.startsWith(p)) || pathname.includes('/undefined');
 }
 
 function withQuery(destination: string, search: string): string {

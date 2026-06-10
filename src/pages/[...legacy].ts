@@ -38,7 +38,7 @@ const GONE_410_EXACT = new Set<string>([
 const GONE_410_PREFIXES: string[] = ['/undefined/'];
 
 const handle: APIRoute = ({ url, redirect }) => {
-  if (GONE_410_EXACT.has(url.pathname) || GONE_410_PREFIXES.some((p) => url.pathname.startsWith(p))) {
+  if (GONE_410_EXACT.has(url.pathname) || GONE_410_PREFIXES.some((p) => url.pathname.startsWith(p)) || url.pathname.includes('/undefined')) {
     return new Response('Gone', {
       status: 410,
       headers: { 'content-type': 'text/plain; charset=utf-8', 'cache-control': 'public, max-age=86400' },

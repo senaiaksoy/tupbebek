@@ -4,7 +4,7 @@ Bu dosya, **tupbebek.com** portalı üzerindeki kritik geliştirme kararlarını
 
 ---
 
-## 📅 Son Güncelleme: 2 Haziran 2026
+## 📅 Son Güncelleme: 7 Haziran 2026
 
 ### 1. Yapılan Güncelleme (AEO/GEO İyileştirmeleri)
 Yapay zeka arama motorlarında (ChatGPT, Perplexity, Gemini, Google AI Overviews) alıntılanma oranını (GEO/AEO) yükseltmek ve E-E-A-T sinyallerini kanonik hale getirmek amacıyla iki faz halinde şu değişiklikler yapıldı:
@@ -28,3 +28,8 @@ Yapay zeka arama motorlarında (ChatGPT, Perplexity, Gemini, Google AI Overviews
 ### Dil ve Bölge Odakları
 - **tupbebek.com:** Sadece **Türkçe** yayındadır ve yerel bilgi aramalarına odaklanır.
 - **draksoyivf.com:** Yabancı dildeki (EN/FR/AR) klinik turizmi bu ayrı depodan yönetilir. Fiyat listeleri ve Kıbrıs mevzuat karşılaştırmaları sadece orada uygulanmalıdır.
+
+### Instagram Yayın Sonrası Link Kuralı
+- `@tupbebekdergi` için her Instagram paylaşımı yayınlandıktan sonra, paylaşımda kullanılan makalenin slug/link'i `tupbebek.com/instagram/` sayfasındaki `src/pages/instagram.astro` içindeki `instagramSlugs` listesinin en üstüne eklenmelidir.
+- Bu güncelleme, sosyal medya takipçisinin profildeki link sayfasında en son paylaşılan makaleyi ilk sırada görmesini sağlar.
+- Paylaşım sonrası rutin: `tupbebekdergi/takvim-tr.md` içinde ilgili içerik `Yayınlandı` yapılır, ardından `D:\A-klasör\tupbebek\src\pages\instagram.astro` güncellenir, build/deploy çalıştırılır ve canlı `https://tupbebek.com/instagram/` üzerinde yeni makalenin ilk sırada olduğu doğrulanır.

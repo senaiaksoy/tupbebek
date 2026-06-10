@@ -1,64 +1,64 @@
 # GSC Coverage Redirect Analysis
 
-- Source: `C:\Users\KC3\Downloads\tupbebek.com-Coverage-Drilldown-2026-05-21`
-- Issue: `Yönlendirmeli sayfa`
-- Listed URLs: **353**
-- Latest affected count (chart): **353**
-- Peak affected count (chart): **381** on `2026-05-02`
+- Source: `C:\Users\KC3\Downloads\tupbebek.com-Coverage-Drilldown-2026-06-10 (1)`
+- Issue: `Bulunamadı (404)`
+- Listed URLs: **157**
+- Latest affected count (chart): **157**
+- Peak affected count (chart): **330** on `2026-04-25`
 
 ## Pattern counts
-- blog_prefix: 180 (51.0%)
-- no_trailing_slash: 132 (37.4%)
-- non_www: 7 (2.0%)
-- query: 6 (1.7%)
-- http: 2 (0.6%)
-- ar_prefix: 1 (0.3%)
+- no_trailing_slash: 76 (48.4%)
+- blog_prefix: 33 (21.0%)
+- ar_prefix: 27 (17.2%)
+- non_www: 18 (11.5%)
+- http: 17 (10.8%)
+- fr_prefix: 16 (10.2%)
+- query: 7 (4.5%)
 - gclid: 0 (0.0%)
 - search_placeholder: 0 (0.0%)
-- fr_prefix: 0 (0.0%)
 - malformed_url: 0 (0.0%)
 
 - Unimplemented high-confidence alias candidates: **0**
 
 ## Top hosts
-- tupbebek.com: 346 (98.0%)
-- www.tupbebek.com: 7 (2.0%)
+- tupbebek.com: 139 (88.5%)
+- www.tupbebek.com: 18 (11.5%)
 
 ## Top paths
-- /tup-bebek-tedavim-tuttu-mu: 4 (1.1%)
-- /sik-sorulan-sorular: 4 (1.1%)
-- /: 3 (0.8%)
-- /blog/ofis-histeroskopi-nedir: 3 (0.8%)
-- /tup-bebek-tedavisinde-catlatma-ignesi: 2 (0.6%)
-- /histeroskopi: 2 (0.6%)
-- /embriyo-transferi-sonrasi-kanama: 2 (0.6%)
-- /blog/embryoglue-embriyo-yapistiricisi-faydalari: 2 (0.6%)
-- /makaleler: 2 (0.6%)
-- /yumurtlama-takibi: 2 (0.6%)
-- /tup-bebek-evraklari-ve-testleri: 2 (0.6%)
-- /tedaviniz: 2 (0.6%)
-- /tup-bebek-asamalari: 2 (0.6%)
-- /blog/istanbul-tup-bebek-doktoru-merkezi-secimi-rehberi: 2 (0.6%)
-- /asilama: 2 (0.6%)
-- /tup-bebek-tedavisinde-preimplantasyon-genetik-tani: 2 (0.6%)
-- /blog/embriyo-tutunmasi-implantasyon-2-embriyoya-ait-problemler: 2 (0.6%)
-- /tup-bebekte-ozel-uygulamalar: 2 (0.6%)
-- /tup-bebek-tedavisinde-nelere-dikkat-etmelisiniz: 2 (0.6%)
-- /tesatese: 2 (0.6%)
+- /modules.php: 4 (2.5%)
+- /ar/blog/endometriosis-infertility-ivf-surgery-2025: 2 (1.3%)
+- /blog/hysteroscopic-cytoreductive-surgery-for-adenomyosis: 2 (1.3%)
+- /ar/blog/isotretinoin-for-azoospermia: 2 (1.3%)
+- /treatment/faq: 2 (1.3%)
+- /ar: 2 (1.3%)
+- /treatment/stimulation-of-the-ovaries: 2 (1.3%)
+- /treatment/embryo-freezing: 2 (1.3%)
+- /treatment/egg-retrieval: 2 (1.3%)
+- /fr/contact-us: 2 (1.3%)
+- /services: 2 (1.3%)
+- /ar/dr-senai-aksoy: 2 (1.3%)
+- /treatment/fertilization-ivf-and-icsi: 2 (1.3%)
+- /treatment: 2 (1.3%)
+- /ar/services: 2 (1.3%)
+- /ar/contact-us: 2 (1.3%)
+- /ar/about-us: 2 (1.3%)
+- /treatment/pre-ivf-testing: 2 (1.3%)
+- /tup-bebekte-ozel-uygulamalar: 1 (0.6%)
+- /policy/undefined/policy: 1 (0.6%)
 
 ## Canonicalization examples (input -> canonical)
-- https://tupbebek.com/tup-bebek-ve-mikroenjeksiyon/ -> https://tupbebek.com/makaleler/mikroenjeksiyon-icsi-nedir/
-- https://tupbebek.com/tup-bebek-basari-oranlari/ -> https://tupbebek.com/basari-oranlari/
-- https://tupbebek.com/tup-bebek-tedavisinde-catlatma-ignesi/ -> https://tupbebek.com/makaleler/ivf-protokolleri/
-- https://tupbebek.com/histeroskopi/ -> https://tupbebek.com/makaleler/ivf-oncesi-histeroskopi/
-- https://tupbebek.com/makaleler/ivf-oncesi-histeroskopi -> https://tupbebek.com/makaleler/ivf-oncesi-histeroskopi/
-- https://tupbebek.com/embriyo-transferi-sonrasi-kanama/ -> https://tupbebek.com/embriyo-transferi-sonrasi-kanama/
-- https://tupbebek.com/makaleler/embriyo-transferi-sonrasi-bakim -> https://tupbebek.com/makaleler/embriyo-transferi-sonrasi-bakim/
-- https://tupbebek.com/tup-bebek-tedavim-tuttu-mu/ -> https://tupbebek.com/tup-bebek-tedavim-tuttu-mu/
-- https://tupbebek.com/blog/bebegin-suyu-fazla-ise/ -> https://tupbebek.com/blog/bebegin-suyu-fazla-ise/
-- https://tupbebek.com/blog/beta-hcg-test-sonuclari/ -> https://tupbebek.com/makaleler/beta-hcg-testi/
-- https://tupbebek.com/blog/embryoglue-embriyo-yapistiricisi-faydalari/ -> https://tupbebek.com/makaleler/embryoglue-faydalari/
-- https://tupbebek.com/blog/hamilelikte-tehlikeli-bir-enfeksiyon-sitomegalovirus/ -> https://tupbebek.com/blog/hamilelikte-tehlikeli-bir-enfeksiyon-sitomegalovirus/
+- http://www.tupbebek.com/modules.php?name=Videolar&file=read&id=127 -> https://tupbebek.com/modules.php/?name=Videolar&file=read&id=127
+- https://tupbebek.com/tup-bebekte-ozel-uygulamalar/ -> https://tupbebek.com/tedavi-yontemleri/
+- https://tupbebek.com/policy/undefined/policy/ -> https://tupbebek.com/policy/undefined/policy/
+- https://tupbebek.com/tedaviniz/ -> https://tupbebek.com/ivf-rehberi/
+- https://tupbebek.com/undefined/ -> https://tupbebek.com/undefined/
+- https://tupbebek.com/${safeUrl}/ -> https://tupbebek.com/
+- https://tupbebek.com/${result.url}/ -> https://tupbebek.com/
+- https://tupbebek.com/${url}/ -> https://tupbebek.com/
+- https://tupbebek.com/makaleler/hiperprolaktinemi-prolaktinom/ -> https://tupbebek.com/makaleler/hiperprolaktinemi-ve-kisirlik/
+- https://tupbebek.com/tup-bebek-tedavim-tuttu-mu/?sa=X&ved=2ahUKEwi3oOveufbmAhUPmIsKHb38AGAQFjAGegQIBRAB -> https://tupbebek.com/tup-bebek-tedavim-tuttu-mu/?sa=X&ved=2ahUKEwi3oOveufbmAhUPmIsKHb38AGAQFjAGegQIBRAB
+- https://tupbebek.com/makaleler/myomlar-ve-kisirlik/ -> https://tupbebek.com/makaleler/miyomlar-ve-tup-bebek/
+- https://tupbebek.com/kadinda-kisirlik-nedenleri/ -> https://tupbebek.com/kadin-infertilitesi/
 
 ## Suggested implementation order
 - Enforce single-hop host/protocol canonical redirect (http->https, non-www->www).
