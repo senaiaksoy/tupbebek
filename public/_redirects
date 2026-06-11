@@ -127,6 +127,45 @@ http://www.tupbebek.com/*                       https://tupbebek.com/:splat     
 # --------------------------------------------
 # 9. Çok dilli eski sürümler (Arapça / Fransızca / İngilizce) — terk edildi
 # --------------------------------------------
+# Specific Arabic legacy blog redirects
+/ar/blog/azoospermia-and-micro-tese             /makaleler/azospermi-mikro-tese/                301
+/ar/blog/bleeding-after-embryo-transfer         /makaleler/embriyo-transferi-sonrasi-bakim/     301
+/ar/blog/endometriosis-infertility-ivf-surgery-2025 /makaleler/endometriozis-tup-bebek/            301
+/ar/blog/vaginal-microbiome-ivf-success-lactobacillus-crispatus /makaleler/vajinal-mikrobiyom-fiv/ 301
+/ar/before-you-come                             /tani-sureci/                                   301
+/ar/dr-senai-aksoy                              /hakkimizda/                                    301
+
+# Specific French legacy blog redirects
+/fr/blog/adenomyose-et-infertilite              /makaleler/hormonal-tedavi-adenomyozis/         301
+/fr/blog/azoospermie-microtese                  /makaleler/azospermi-mikro-tese/                301
+/fr/blog/echec-fiv-que-faire-dr-senai-aksoy     /basarisiz-denemeler/                            301
+/fr/blog/fiv-et-limite-dage-le-point-de-vue-dun-medecin /yas-ve-fertilite/                              301
+/fr/blog/fiv-turquie-securite-qualite-couts     /makaleler/iyi-tup-bebek-merkezi/               301
+/fr/blog/frozen-embryo-transfer-endometrial-preparation-protocols-hrt-natural-hybrid /makaleler/taze-dondurulmus-transfer/   301
+/fr/blog/grossesse-naturelle-apres-fiv-surprise-fertilite /makaleler/tup-bebek-yanlis-bilinenler/ 301
+/fr/blog/diagnostic-preimplantatoire-des-maladies-monogeniques /makaleler/pgt-m/                  301
+/fr/blog/diagnostic-preimplantatoire-et-selection-du-sexe /makaleler/pgt-cinsiyet-secimi/         301
+/fr/blog/embryoglue-fiv-efficacite-taux-reussite /makaleler/embryoglue-faydalari/                301
+/fr/blog/endometrite-chronique-et-fiv            /makaleler/endometriozis-tup-bebek/             301
+/fr/blog/guide-complet-congelation-ovocytes     /makaleler/yumurta-dondurma-rehberi/            301
+/fr/blog/hydrosalpinx-et-infertilite            /makaleler/hidrosalpinx-ve-kisirlik/            301
+/fr/blog/hyperprolaktinemie-et-infertilite      /makaleler/hiperprolaktinemi-ve-kisirlik/       301
+/fr/blog/hysteroscopie-avant-fiv-necessite-recommandations /makaleler/ivf-oncesi-histeroskopi/     301
+/fr/blog/comprendre-infertilite-en-fiv          /makaleler/tup-bebek-nedir/                     301
+/fr/blog/infertilite-inexpliquee                /aciklanamayan-infertilite/                     301
+/fr/blog/isotretinoine-restauration-spermatogenese-noa /makaleler/izotretinoin-sperm/            301
+/fr/blog/le-prp-ovarien                         /makaleler/over-prp/                            301
+/fr/blog/microbiote-vaginal-et-succes-fiv       /makaleler/vajinal-mikrobiyom-fiv/              301
+/fr/blog/moment-optimal-pour-le-transfert-embryons /makaleler/embriyo-transferi-gun-secimi/       301
+/fr/blog/myomectomie-coelioscopie-limites-fertilite /makaleler/miyom-ameliyati/                  301
+/fr/blog/pcos-et-fiv                            /makaleler/opk-ve-ivf/                          301
+/fr/blog/risques-caches-des-grossesses-gemellaires-en-fiv /makaleler/tup-bebek-yanlis-bilinenler/ 301
+/fr/blog/soins-post-transfert-embryons           /makaleler/embriyo-transferi-sonrasi-bakim/     301
+/fr/blog/treatment-pain-associated-endometriosis /makaleler/endometriozis-akilli-stratejiler/    301
+/fr/blog/traitements-chirurgicaux-douleur-endometriose /makaleler/endometriozis-akilli-stratejiler/ 301
+/fr/blog/transfert-embryons-dans-le-traitement-de-la-fiv /makaleler/embriyo-transferi-gun-secimi/ 301
+/fr/cost-of-ivf                                 /sss/                                           301
+
 /ar/*                                           /                                               301
 /ar                                             /                                               301
 /fr/*                                           /                                               301
