@@ -223,6 +223,8 @@ function canonicalRedirectFor(requestUrl) {
     ['/$%7Burl%7D/', '/'],
     ['/public/article.aspx', '/makaleler/'],
     ['/public/haber.aspx', '/makaleler/'],
+    ['/blog', '/makaleler/'],
+    ['/blog/', '/makaleler/'],
   ]);
 
   const legacyDestination = legacyRedirects.get(url.pathname);

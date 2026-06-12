@@ -18,6 +18,8 @@ export const routeAliases = {
   // Removed conflicting alias that pointed to /tedavi-yontemleri#iui.
   '/before-you-come': '/tani-sureci',
   '/baslarken': '/ivf-rehberi',
+  '/blog': '/makaleler',
+  '/blog/': '/makaleler',
   '/blog/azoospermia-and-micro-tese': '/makaleler/azospermi-mikro-tese',
   '/blog/bleeding-after-embryo-transfer': '/makaleler/embriyo-transferi-sonrasi-bakim',
   '/blog/can-preimplantation-genetic-testing-be-used-for-sex-selection': '/makaleler/pgt-cinsiyet-secimi',
@@ -126,6 +128,7 @@ export const routeAliases = {
   '/tedavi-sirasinda-karsilasilan-sorunlar': '/ivf-rehberi',
   '/tedaviler': '/tedavi-yontemleri',
   '/tedaviniz': '/ivf-rehberi',
+  '/tedaviye-baslamadan-once': '/tani-sureci',
   '/tesatese': '/makaleler/azospermi-mikro-tese',
   // '/tup-bebek-asamalari' is handled by public/_redirects (→ /ivf-rehberi/).
   // Removed conflicting alias that pointed to /transfer-sureci.
