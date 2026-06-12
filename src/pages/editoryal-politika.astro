@@ -3,14 +3,214 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import PreferredSourceCTA from '../components/PreferredSourceCTA.astro';
+
+const productionSteps = [
+    {
+        title: 'Konu seçimi',
+        body: 'Editör ekibimiz; okuyucu ihtiyaçları, güncel bilimsel literatür, üreme sağlığı alanındaki gelişmeler ve toplum sağlığı öncelikleri temelinde her yayın dönemi öncesi konu başlıkları belirler. Yazar, sunulan listeden seçim yapabilir veya kendi konu önerisini getirebilir; önerilen konuların yayın çizgisine ve mevzuata uygunluğu editör ekibince değerlendirilir. Konu seçimini yapay zekâ yapmaz; konuyu editör ve yazar belirler.',
+    },
+    {
+        title: 'Literatür taraması',
+        body: 'Seçilen konu için PubMed üzerinden güncel hakemli literatür taranır; son beş yılın yüksek kanıtlı çalışmaları (randomize kontrollü çalışmalar, meta-analizler, Cochrane derlemeleri) ile ESHRE, ASRM ve WHO rehberleri öncelikli kaynaklardır. Her iddia kaynak düzeyinde izlenebilir biçimde derlenir; kanıt gücü düşük veya çelişkili bulgular, metinde abartısız ve koşullu dille aktarılmak üzere işaretlenir. Başarı oranına ilişkin veriler tek merkez deneyimiyle veya pazarlama çerçevesiyle sunulmaz.',
+    },
+    {
+        title: 'Taslak hazırlama',
+        body: 'Yapay zekâ destekli sistemimiz, yalnızca doğrulanmış literatür özetine ve ilgili yazarın onaylı üslup profiline dayanan bir taslak hazırlar. Yapay zekâ bu aşamada bir yazım yardımcısıdır; klinik karar vermez, tıbbi tavsiye üretmez ve kaynak doğrulaması her zaman insan denetimindedir.',
+    },
+    {
+        title: 'Editör onayı (bilimsel denetim)',
+        body: 'Baş editörümüz ve editöryal ekibimiz taslağı klinik doğruluk, güncel literatüre uygunluk ve mevzuata uygunluk açısından inceler. Bu denetim; talep yaratıcı dil, garanti ima eden ifade ve karşılaştırmalı üstünlük iddialarının metinden ayıklanmasını da kapsar.',
+    },
+    {
+        title: 'Yazara sunulma ve yazar onayı',
+        body: 'Editör denetiminden geçen taslak yazara sunulur. Yazar metni bağımsız biçimde değerlendirir, gerekli gördüğü tüm düzeltmeleri talep eder; yazarın açık onayı olmadan süreç ilerlemez. Revizyon istenirse metin güncellenir ve yeniden onaya sunulur.',
+    },
+    {
+        title: 'Yayın',
+        body: 'Yayın öncesi son bir tıbbi ve bilimsel kontrol uygulanır. Onayların ardından makale yazar imzasıyla okuyucuya sunulur; yayın tarihi, son güncelleme bilgisi, kanıt düzeyi (öneri derecesi) etiketi ve bilimsel kaynak listesi metinde görünür biçimde yer alır. Tıbbi sorumluluk reddi her makalede bulunur.',
+    },
+];
+
+const aiUses = [
+    'Yazarın kendi stil profili çerçevesinde taslak metin üretiminde yardımcı olarak.',
+    'Doğrulanmış literatür özetlerinin yapılandırılmasında destek olarak (kaynak doğrulaması insan denetiminde).',
+    'Çok dilli yayında çeviri desteği için.',
+];
+
+const aiLimits = [
+    'Konu seçimi yapmaz — konuyu editör ve yazar belirler.',
+    'Klinik karar vermez; tedavi protokolü, ilaç veya doz önerisi üretmez.',
+    'Tıbbi tavsiye sunmaz.',
+    'Başarı oranı veya sonuç vaadi içeren ifade üretmez.',
+    'İnsan denetimi olmadan yayımlanmaz.',
+    'Yazar adını imza olarak kullanmaz.',
+];
+
+const legalFramework = [
+    'T.C. Sağlık Bakanlığı Sağlık Hizmetlerinde Tanıtım ve Bilgilendirme Faaliyetleri Hakkında Yönetmelik (12 Kasım 2025) — talep yaratıcı tanıtım, kampanya, indirim, öncesi/sonrası görseli ve hasta deneyimi paylaşımı içeriklerimizde yer almaz.',
+    '1219 sayılı Tababet ve Şuabatı San’atlarının Tarzı İcrasına Dair Kanun ve hekimlikte reklam yasağına ilişkin hükümler.',
+    'T.C. Sağlık Bakanlığı Üremeye Yardımcı Tedavi Uygulamaları ve Üremeye Yardımcı Tedavi Merkezleri Hakkında Yönetmelik.',
+    'Türk Tabipleri Birliği (TTB) etik ilkeleri.',
+    'Okuyucu verilerinin işlenmesinde 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK).',
+];
+
+const authorshipBasis = [
+    '5846 sayılı Fikir ve Sanat Eserleri Kanunu md. 1/B’deki “hususiyet” koşuluna,',
+    'ABD Telif Hakkı Ofisi’nin “human authorship” doktrinine,',
+    'Avrupa Birliği Yapay Zekâ Yönetmeliği’nin (AB Yönetmeliği 2024/1689) şeffaflık ilkelerine,',
+    'Reuters Trust Principles ve Associated Press üretken yapay zekâ standartlarına',
+];
 ---
 
-<BaseLayout title="Editöryal Politika | tupbebek.com" description="İçerik üretim ilkelerimiz ve editoryal politikamız">
+<BaseLayout
+    title="Editöryal Politika | tupbebek.com"
+    description="tupbebek.com'un yayın felsefesi, altı aşamalı içerik üretim süreci, eser sahipliği yaklaşımı, yapay zekâ kullanım sınırları ve uyulan mevzuat çerçevesi."
+>
     <Header />
-    <main id="main-content" tabindex="-1" class="py-24">
+    <main id="main-content" tabindex="-1" class="py-20 md:py-24 bg-gradient-to-b from-white to-gray-50">
         <section class="max-w-5xl mx-auto px-4 md:px-6 lg:px-8">
-            <h1 class="font-headline text-4xl text-gray-900 mb-8">Editöryal Politika</h1>
-            <p class="text-gray-600">İçerik yakında eklenecek.</p>
+            <p class="text-sm font-semibold uppercase tracking-wider text-primary-700 mb-3">Son güncelleme: 12 Haziran 2026</p>
+            <h1 class="font-headline text-4xl md:text-5xl text-gray-900 mb-6">Editöryal Politika</h1>
+            <p class="text-lg text-gray-600 max-w-3xl mb-10">
+                tupbebek.com, üreme sağlığı ve tüp bebek tedavileri alanında bilimsel olarak doğrulanmış, güncel ve tarafsız
+                bilgi sunan bağımsız bir yayın platformudur. Bu sayfa; içeriklerimizin nasıl üretildiğini, kimin onayından
+                geçtiğini ve yapay zekâ desteğinin nerede başlayıp nerede bittiğini şeffaf biçimde açıklar.
+            </p>
+
+            <div class="rounded-3xl border border-primary-100 bg-primary-50 p-6 md:p-8 mb-10">
+                <h2 class="text-2xl font-bold text-gray-900 mb-3">Kısa özet</h2>
+                <p class="text-gray-700">
+                    Her makale; editör ve yazar tarafından belirlenen bir konunun hakemli literatür taramasına dayanır,
+                    bilimsel denetimden geçer ve yazarın açık onayı olmadan yayımlanmaz. İçeriklerimiz tedavi pazarlaması
+                    değil, bilgilendirme amacı taşır; hiçbir makale bireysel tıbbi değerlendirme, tanı veya tedavinin yerini
+                    almaz.
+                </p>
+            </div>
+
+            <div class="space-y-8">
+                <!-- 1. Üretim süreci -->
+                <section class="rounded-2xl border border-gray-200 bg-white p-6 md:p-8 shadow-sm">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">İçerik üretim sürecimiz</h2>
+                    <p class="text-gray-600 mb-6">
+                        Her makale, aşağıdaki altı aşamadan geçmeden okuyucuya sunulmaz.
+                    </p>
+                    <ol class="space-y-5">
+                        {productionSteps.map((step, index) => (
+                            <li class="flex gap-4">
+                                <span aria-hidden="true" class="mt-0.5 flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full bg-primary-50 font-bold text-primary-700">
+                                    {index + 1}
+                                </span>
+                                <div>
+                                    <h3 class="font-bold text-gray-900 mb-1">{step.title}</h3>
+                                    <p class="text-gray-600">{step.body}</p>
+                                </div>
+                            </li>
+                        ))}
+                    </ol>
+                </section>
+
+                <!-- 2. Kanıt düzeyi -->
+                <section class="rounded-2xl border border-gray-200 bg-white p-6 md:p-8 shadow-sm">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Kanıt düzeyi etiketlemesi</h2>
+                    <p class="text-gray-600">
+                        Her makalede, ana klinik önerinin dayandığı kanıt gövdesini özetleyen bir öneri derecesi
+                        (A — çok güçlü, B — güçlü, C — orta/zayıf, D/E — çok zayıf) görünür biçimde yer alır. Derecelendirme
+                        Oxford CEBM ve USPSTF benzeri kanıt hiyerarşileri referans alınarak yapılır; amacı pazarlama değil,
+                        okuyucunun kanıt gücünü hızla anlamasıdır. Karar değiştirici cümlelerde kanıt düzeyi metin içinde de
+                        ayrıca belirtilir.
+                    </p>
+                </section>
+
+                <!-- 3. Eser sahipliği -->
+                <section class="rounded-2xl border border-gray-200 bg-white p-6 md:p-8 shadow-sm">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Eser sahipliği</h2>
+                    <p class="text-gray-600 mb-4">
+                        Her makalenin eser sahibi, makalenin altında adı geçen yazardır. Yapay zekâ yalnızca taslak üretim
+                        aracı olarak kullanılır; eser sahibi olarak kabul edilmez. Bu yaklaşım:
+                    </p>
+                    <ul class="mb-4 space-y-2">
+                        {authorshipBasis.map((item) => (
+                            <li class="flex gap-3 text-gray-600">
+                                <span aria-hidden="true" class="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-primary-600"></span>
+                                <span>{item}</span>
+                            </li>
+                        ))}
+                    </ul>
+                    <p class="text-gray-600">
+                        uygundur ve dünya genelinde gazetecilik ile bilimsel yayıncılıkta kabul gören şeffaflık standartlarını
+                        yansıtır.
+                    </p>
+                </section>
+
+                <!-- 4. Yapay zekâ kullanımının sınırları -->
+                <section class="rounded-2xl border border-gray-200 bg-white p-6 md:p-8 shadow-sm">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Yapay zekâ kullanımının sınırları</h2>
+                    <p class="text-gray-600 mb-6">
+                        tupbebek.com'da yapay zekânın hangi işlerde yardımcı olduğunu ve hangi sınırların dışına çıkmadığını
+                        şeffaf biçimde paylaşıyoruz.
+                    </p>
+                    <div class="grid gap-5 md:grid-cols-2">
+                        <div class="rounded-xl border border-mint-200 bg-mint-50 p-5">
+                            <p class="mb-3 text-xs font-bold uppercase tracking-wider text-mint-700">Kullanılır</p>
+                            <ul class="space-y-3 text-sm text-gray-700">
+                                {aiUses.map((item) => (
+                                    <li class="flex gap-2.5">
+                                        <span aria-hidden="true" class="flex-shrink-0 font-bold text-mint-700">+</span>
+                                        <span>{item}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                        <div class="rounded-xl border border-gray-200 bg-gray-50 p-5">
+                            <p class="mb-3 text-xs font-bold uppercase tracking-wider text-gray-500">Asla yapmaz</p>
+                            <ul class="space-y-3 text-sm text-gray-700">
+                                {aiLimits.map((item) => (
+                                    <li class="flex gap-2.5">
+                                        <span aria-hidden="true" class="flex-shrink-0 font-bold text-gray-400">—</span>
+                                        <span>{item}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 5. Tıbbi sorumluluk ve mevzuat -->
+                <section class="rounded-2xl border border-gray-200 bg-white p-6 md:p-8 shadow-sm">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Tıbbi sorumluluk ve mevzuat çerçevesi</h2>
+                    <p class="text-gray-600 mb-4">
+                        İçeriklerin tıbbi ve bilimsel doğruluğundan Baş Editörümüz
+                        <a href="/yazar/senai-aksoy/" class="font-semibold text-primary-700 hover:underline">Doç. Dr. Senai Aksoy</a>
+                        liderliğindeki editöryal ekip birinci derecede sorumludur. Tüm içerikler şu çerçevede hazırlanır:
+                    </p>
+                    <ul class="mb-4 space-y-2">
+                        {legalFramework.map((item) => (
+                            <li class="flex gap-3 text-gray-600">
+                                <span aria-hidden="true" class="mt-2 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-primary-600"></span>
+                                <span>{item}</span>
+                            </li>
+                        ))}
+                    </ul>
+                    <p class="text-gray-600">
+                        Sitedeki hiçbir içerik bireysel tıbbi değerlendirme, tanı veya tedavinin yerini almaz; tedavi
+                        kararları yalnızca hekim-hasta görüşmesinde verilir. Ayrıntılar için
+                        <a href="/tibbi-sorumluluk-reddi/" class="font-semibold text-primary-700 hover:underline">Tıbbi Sorumluluk Reddi</a>
+                        sayfamızı inceleyebilirsiniz.
+                    </p>
+                </section>
+
+                <!-- 6. Bağımsızlık -->
+                <section class="rounded-2xl border border-gray-200 bg-white p-6 md:p-8 shadow-sm">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-4">Bağımsızlık ve finansman</h2>
+                    <p class="text-gray-600">
+                        tupbebek.com bağımsız bir yayın portalıdır; herhangi bir kliniğin, ilaç firmasının veya tedavi
+                        merkezinin tanıtım kanalı değildir. Sitede reklam, sponsorlu içerik, kampanya, indirim veya fiyat
+                        bilgisi yer almaz. Baş editörlük görevi kariyer bilgisi olarak sunulur; klinik hizmet yönlendirmesi
+                        yapılmaz. Dış bağlantılar yalnızca hakemli bilimsel kaynaklara (PubMed, ESHRE, ASRM vb.) verilir.
+                    </p>
+                </section>
+            </div>
+
             <div class="mt-10">
                 <PreferredSourceCTA placement="editorial_policy" pagePath={Astro.url.pathname} />
             </div>
