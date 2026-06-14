@@ -1,0 +1,18 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 720
+PlayResY: 1280
+ScaledBorderAndShadow: yes
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Main,Segoe UI Semibold,62,&H00FFFFFF,&H00FFFFFF,&HAA102033,&H00000000,-1,0,0,0,100,100,0,0,1,4,1,2,42,42,112,1
+Style: Small,Segoe UI Semibold,50,&H00FFFFFF,&H00FFFFFF,&HAA102033,&H00000000,-1,0,0,0,100,100,0,0,1,4,1,2,42,42,112,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:01.45,Main,,0,0,0,,AMH düşük çıktı diye\Npanik mi?
+Dialogue: 0,0:00:01.45,0:00:04.20,Small,,0,0,0,,AMH tek başına\Ngebelik şansı\Ndemek değildir.
+Dialogue: 0,0:00:04.20,0:00:06.75,Small,,0,0,0,,Yaş, ultrason\Nve öyküyle birlikte\Ndeğerlendirilir.
+Dialogue: 0,0:00:06.75,0:00:08.00,Small,,0,0,0,,Sonucunuzu hekiminizle\Ndeğerlendirin.
