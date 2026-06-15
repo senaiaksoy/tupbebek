@@ -32,6 +32,13 @@ Her tibbi icerik sayfasinda bulunmasi gereken unsurlar:
 - **Son Guncelleme Tarihi**: Icerigin en son ne zaman guncellendigi
 - **Bilimsel Kaynaklar**: Atif yapilan bilimsel referanslar (varsa)
 
+### Dr. Senai Aksoy makale stili
+
+Her yeni makale, makale guncellemesi veya humanize isinde once canonical rehber
+okunur: `D:\A-klasör\obsidian-vaults\draksoyivf-knowledge\wiki\brand\senai-aksoy-makale-stil-rehberi.md`.
+Bu rehber tupbebek icin sade Turkce, BLUF, "Kisa cevap:", kanitli ama hasta-dostu
+Dr. Aksoy sesi ve pazarlama dili yasaklarini ust katman olarak tanimlar.
+
 ## Teknik Mimari
 
 ### Teknoloji Yigini
