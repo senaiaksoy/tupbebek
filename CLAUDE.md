@@ -246,6 +246,24 @@ Yeni bir makale eklenirken veya mevcut makale komple yenilenirken, final duzenle
 - Yazar adi
 - YouTube adresi (varsa)
 
+### Ic Link Kapisi — HARD GATE (orphan onleme)
+
+Hicbir yeni makale, **en az 3 ilgili makaleden** gelen contextual ic link
+almadan yayinlanmaz. Orphan (sifir inbound ic link) makaleleri Google tarar
+ama indekslemez ("Crawled - currently not indexed"); 2026-06 GSC teshisinde
+gosterim kaybinin dogrulanan nedenlerinden biri buydu.
+
+Kurallar:
+
+- Link, makale govdesinde dogal bir cumle icine yerlestirilir
+  (`[anchor](/makaleler/slug/)`, trailing slash zorunlu); sadece sondaki
+  "Ilgili" listesine atmak yeterli sayilmaz, en az 1-2'si prose ici olmali.
+- Kaynak makaleler konu olarak gercekten komsu olmali (hub→spoke veya
+  kardes makale); zorlama link yok.
+- Anchor metni nötr ve aciklayici; pazarlama dili veya klinik CTA yok.
+- Yayindan sonra hizli denetim: tum `src` icinde
+  `/makaleler/<slug>` araninca yeni makalenin >=3 dosyada gectigi dogrulanir.
+
 ### Makale Yazim Sureci — PubMed Research
 
 Yeni bir makale konusu verildiginde, icerik olusturmadan once asagidaki arastirma sureci uygulanir:
