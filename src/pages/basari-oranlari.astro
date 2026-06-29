@@ -2,6 +2,8 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import HizliCevap from '../components/HizliCevap.astro';
+import QuoteBlock from '../components/global/QuoteBlock.astro';
 
 const faqItems = [
     {
@@ -65,15 +67,24 @@ const faqSchema = {
             </div>
         </header>
 
+        <div class="max-w-3xl mx-auto px-4 md:px-6 lg:px-8 mb-16">
+            <HizliCevap question="Tüp bebek başarı oranı nasıl yorumlanmalı?">
+                Tüp bebek başarı oranı tek bir yüzde değildir; yaş, yumurtalık rezervi, sperm, embriyo gelişimi, rahim/tüp durumu, transfer tipi ve raporlanan sonucun “gebelik testi”, “klinik gebelik”, “canlı doğum” veya “kümülatif canlı doğum” olup olmadığı birlikte okunmalıdır. CDC’nin ART başarı oranları sayfası, ortalama şansların yaş, tanı ve uygulanan ART işlemine göre değiştiğini belirtir (<a href="https://www.cdc.gov/art/success-rates/index.html" rel="nofollow">CDC ART Success Rates</a>). Avrupa kayıtları da sonuçların ülke, hasta profili ve raporlama biçimine göre değişebildiğini gösterir (<a href="https://pubmed.ncbi.nlm.nih.gov/37847771/" rel="nofollow">ESHRE 2019 Avrupa ART kayıtları</a>). Bu yüzden güvenli yorum, tek bir oran aramak değil; oranı hangi hasta grubuna ve hangi sonuç tanımına ait olduğunu bilerek değerlendirmektir.
+            </HizliCevap>
+        </div>
+
         <!-- Scientific Introduction -->
         <section class="max-w-3xl mx-auto px-4 md:px-6 lg:px-8 mb-24">
             <p class="text-lg md:text-xl text-gray-600 leading-relaxed font-body italic mb-12">
-                Tüp bebek (IVF) başarı oranları, birçok etkene bağlıdır: yaş, embriyo kalitesi, over rezervi, erkek kaynaklı nedenler ve klinik deneyimi. Aşağıdaki veriler, güncel literatür ve uluslararası veritabanlarına dayalı genel tahminlerdir; bireysel durumunuz için doktorunuza danışınız. Yaş gruplarına ve Türkiye'deki yasal çerçeveye göre ayrıntılı değerlendirme için <a href="/makaleler/yasa-gore-tup-bebek-basari-oranlari/" class="text-primary-700 underline hover:no-underline">yasaya göre tüp bebek başarı oranları</a> yazımıza bakabilirsiniz.
+                Başarı oranları çoğu zaman hastanın en hızlı cevap aradığı yerdir; ama aynı zamanda en kolay yanlış anlaşılan başlıktır. Bir oran, kime ait olduğunu bilmeden fazla şey söylemez. 32 yaşında ilk denemesini yapan biriyle, 41 yaşında düşük rezerv ve önceki deneme öyküsü olan biri aynı tabloda yan yana duramaz. Yaş gruplarına ve Türkiye'deki yasal çerçeveye göre ayrıntılı değerlendirme için <a href="/makaleler/yasa-gore-tup-bebek-basari-oranlari/" class="text-primary-700 underline hover:no-underline">yaşa göre tüp bebek başarı oranları</a> yazımıza bakabilirsiniz.
             </p>
+            <QuoteBlock author="Doç. Dr. Senai Aksoy">
+                Tüp bebekte oranlar pusula gibi kullanılmalıdır; haritanın tamamı sanıldığında hastayı ya gereksiz umutlandırır ya da gereksiz korkutur.
+            </QuoteBlock>
             <div class="bg-primary-50/80 border border-primary-100 rounded-2xl p-6 mb-10">
                 <h2 class="font-headline text-xl text-gray-900 mb-4">Kısa Cevap: Başarı Oranı Tek Bir Yüzde Değildir</h2>
                 <p class="text-sm md:text-base text-gray-700 leading-relaxed mb-4">
-                    Tüp bebek başarı oranı; yaş, yumurtalık rezervi, sperm, embriyo gelişimi, rahim/tüp durumu, transfer tipi ve merkezin hangi hasta grubunu raporladığına göre değişir. Bu nedenle “merkez başarı oranı” karşılaştırılırken tek transfer mi, canlı doğum mu, gebelik testi mi yoksa kümülatif sonuç mu verildiği mutlaka ayrılmalıdır.
+                    Tüp bebek başarı oranı; yaş, yumurtalık rezervi, sperm, embriyo gelişimi, rahim/tüp durumu, transfer tipi ve merkezin hangi hasta grubunu raporladığına göre değişir. Bu nedenle önce şu soru sorulmalıdır: bu yüzde tek transferi mi, canlı doğumu mu, gebelik testini mi yoksa aynı yumurta toplama döngüsünden gelen kümülatif sonucu mu anlatıyor?
                 </p>
                 <div class="overflow-x-auto">
                     <table class="w-full text-sm">
@@ -140,7 +151,7 @@ const faqSchema = {
                         <h2 class="font-headline text-3xl text-gray-900 mb-6">Yaşa göre tüp bebek başarı oranı nasıl değişir?</h2>
                         <div class="space-y-6 text-gray-600">
                             <p>
-                                Kadın yaşı, tüp bebek (IVF) başarısını belirleyen en önemli etkendir. Yaşla birlikte oosit sayısı ve kalitesi düşer; bu da embriyo kalitesini ve implantasyon potansiyelini doğrudan etkiler. Her yıl yaşlanma, oosit rezervi ve kromozomal normal oranlarını olumsuz etkiler.
+                                Kadın yaşı, tüp bebek sonucunu en güçlü etkileyen değişkenlerden biridir. Bunun nedeni yalnızca yumurta sayısının azalması değildir; yaş ilerledikçe embriyoların kromozomal olarak uygun olma olasılığı da düşer. Bu yüzden yaş tablosu bir kader tablosu değil, tedavi stratejisini gerçekçi kurmak için kullanılan bir başlangıç bilgisidir.
                             </p>
                             <div class="bg-white border-l-4 border-primary rounded-xl p-6 mrd-container">
                                 <h4 class="font-bold text-gray-900 text-sm mb-4 flex items-center gap-2">
@@ -198,9 +209,9 @@ const faqSchema = {
                         <figure class="relative group">
                             <img class="rounded-2xl shadow-xl w-full" src="/images/library/istatistik/yas_gebelikorani_ivf.webp" alt="Yaşa göre tüp bebek canlı doğum oranları grafiği" width="512" height="512" loading="lazy"/>
                             <div class="absolute -bottom-6 -right-6 bg-gray-100 p-4 rounded-lg hidden md:block">
-                                <p class="text-xs font-bold text-primary-600 tracking-widest uppercase mb-1">İns Oosit</p>
-                                <p class="text-2xl font-headline">15-20</p>
-                                <p class="text-[10px] text-gray-600">35 yaş hedefi canlı doğum için</p>
+                                <p class="text-xs font-bold text-primary-600 tracking-widest uppercase mb-1">Kritik soru</p>
+                                <p class="text-2xl font-headline">Yaş + rezerv</p>
+                                <p class="text-[10px] text-gray-600">Oran ancak dosyayla anlam kazanır</p>
                             </div>
                             <figcaption class="mt-4 text-xs text-gray-600 leading-relaxed">
                                 Yaşa göre tüp bebek canlı doğum oranları: 35 yaş altı %40-45, 35-37 yaş %30-35, 38-40 yaş %20-25, 41-42 yaş %10-15, 42 yaş üstü %5-10. Kaynak: ESHRE EIM 2023 European registry, CDC ART 2022 US national figures.
@@ -218,7 +229,7 @@ const faqSchema = {
                     <h2 class="font-headline text-3xl text-gray-900 mb-6">Birden fazla denemede tüp bebek başarı oranı nasıl artar?</h2>
                     <div class="space-y-6 text-gray-600">
                         <p>
-                            Tek döngüde gebelik oranı düşük görünebilir; ancak kümülatif (toplam) başarı oranı, birden fazla deneme sonrasında çok daha yüksektir. Her döngü, bir öncekinin deneyimiyle optimize edilir.
+                                Tek transfer oranı ile kümülatif oran aynı şey değildir. Kümülatif oran, aynı yumurta toplama döngüsünden elde edilen taze ve dondurulmuş embriyoların toplam katkısını anlatır. Bu nedenle bazen tek bir transfer sonucuna bakmak yerine, eldeki embriyo havuzunu ve sonraki transfer olasılıklarını birlikte düşünmek daha anlamlıdır.
                         </p>
                         <div class="bg-white border-l-4 border-primary rounded-xl p-6 mrd-container">
                             <h4 class="font-bold text-gray-900 text-sm mb-4 flex items-center gap-2">
@@ -258,7 +269,7 @@ const faqSchema = {
                             <p class="text-xs text-gray-600 mt-3">Kaynak: McLernan et al., ESHRE, 2020</p>
                         </div>
                         <p class="text-sm text-gray-600">
-                            Kümülatif gebelik oranları, taze ve dondurulmuş embryo transferlerinin (FET) kombinasyonu ile hesaplanmıştır. Bu veri, "kaç döngüye denemeliyim" sorusunu tek transfer oranından daha gerçekçi yorumlamaya yardımcı olur.
+                            Kümülatif gebelik oranları, taze ve dondurulmuş embriyo transferlerinin (FET) kombinasyonu ile hesaplanmıştır. Bu veri, "kaç döngüye denemeliyim" sorusunu tek transfer oranından daha gerçekçi yorumlamaya yardımcı olur.
                         </p>
                     </div>
                 </div>
@@ -361,7 +372,7 @@ const faqSchema = {
                     <h2 class="font-headline text-3xl text-gray-900 mb-6">Türkiye'nin tüp bebek başarı oranları uluslararası ortalamayla nasıl karşılaştırılır?</h2>
                     <div class="space-y-6 text-gray-600">
                         <p>
-                            Farklı ülkelerdeki IVF başarı oranları, hasta profilleri, klinik protokol ve yasal çerçeveler nedeniyle değişiklik gösterebilir. Türkiye, Avrupa ortalamasına yakın veriler sunmaktadır.
+                                Ülkeler arası karşılaştırmalar ilk bakışta ilgi çekicidir; fakat çoğu zaman en zayıf yorum alanıdır. Hasta yaşı, donör yumurta kullanımı, embriyo transfer politikası, raporlama standardı ve yasal sınırlar farklıysa, yüzdeleri yan yana koymak tek başına güvenli sonuç vermez.
                         </p>
                         <div class="bg-white border-l-4 border-primary rounded-xl p-6 mrd-container">
                             <h4 class="font-bold text-gray-900 text-sm mb-4 flex items-center gap-2">
@@ -412,11 +423,11 @@ const faqSchema = {
                 <div class="md:w-1/2">
                     <figure class="relative group">
                         <img class="rounded-2xl shadow-xl w-full" src="/images/library/laboratuvar/embryoscop.webp" alt="Türkiye, Avrupa ve ABD tüp bebek başarı oranı karşılaştırması" width="512" height="512" loading="lazy"/>
-                        <div class="absolute -bottom-6 -left-6 bg-gray-100 p-4 rounded-lg hidden md:block">
-                            <p class="text-xs font-bold text-primary-600 tracking-widest uppercase mb-1">Klinik Veri</p>
-                            <p class="text-2xl font-headline">40-45</p>
-                            <p class="text-[10px] text-gray-600">ABD en yüksek oranları</p>
-                        </div>
+                            <div class="absolute -bottom-6 -left-6 bg-gray-100 p-4 rounded-lg hidden md:block">
+                                <p class="text-xs font-bold text-primary-600 tracking-widest uppercase mb-1">Dikkat</p>
+                                <p class="text-2xl font-headline">Aynı ölçüt?</p>
+                                <p class="text-[10px] text-gray-600">Karşılaştırma önce tanım ister</p>
+                            </div>
                         <figcaption class="mt-4 text-xs text-gray-600 leading-relaxed">
                             35 yaş altı kadınlarda tüp bebek canlı doğum oranı uluslararası karşılaştırması: ABD (CDC ART) %40-45, Avrupa ortalaması (ESHRE EIM) %35-40, Türkiye %35-42 (T.C. SB ÜYTE verileri). Kaynak: ESHRE EIM 2023, CDC ART 2022, SART US 2023.
                         </figcaption>
@@ -433,7 +444,7 @@ const faqSchema = {
                         <h2 class="font-headline text-3xl text-gray-900 mb-6">Tüp bebek başarısını hangi faktörler etkiler?</h2>
                         <div class="space-y-6 text-gray-600">
                             <p>
-                                IVF başarısını etkileyen etkenler, klinik veriler ve yaşam tarzı etkenleri olarak ikiye ayrılabilir. Aşağıda en önemli etkenler özetlenmiştir.
+                                IVF sonucunu tek bir değişkene bağlamak çoğu zaman yanıltıcıdır. Yaş çok güçlüdür; ama tek başına değildir. Embriyo gelişimi, sperm faktörü, rahim içi durum, tüpler ve önceki tedavi yanıtı aynı dosyada birlikte okunur.
                             </p>
                             <div class="bg-white border-l-4 border-primary rounded-xl p-6 mrd-container">
                                 <h4 class="font-bold text-gray-900 text-sm mb-4 flex items-center gap-2">
@@ -469,9 +480,9 @@ const faqSchema = {
                         <figure class="relative group">
                             <img class="rounded-2xl shadow-xl w-full" src="/images/library/embriyo/schema_implantation.webp" alt="Tüp bebek başarısını etkileyen klinik faktörler şeması" width="512" height="512" loading="lazy"/>
                             <div class="absolute -bottom-6 -right-6 bg-gray-100 p-4 rounded-lg hidden md:block">
-                                <p class="text-xs font-bold text-primary-600 tracking-widest uppercase mb-1">Klinik Veri</p>
-                                <p class="text-2xl font-headline">%10-15</p>
-                                <p class="text-[10px] text-gray-600">Yaşam tarzı iyileştirme etkisi</p>
+                                <p class="text-xs font-bold text-primary-600 tracking-widest uppercase mb-1">Okuma biçimi</p>
+                                <p class="text-2xl font-headline">Birlikte</p>
+                                <p class="text-[10px] text-gray-600">Tek faktör tek karar verdirmez</p>
                             </div>
                             <figcaption class="mt-4 text-xs text-gray-600 leading-relaxed">
                                 Tüp bebek başarısını etkileyen faktörler ağırlıklarıyla: kadın yaşı (en yüksek etki), embriyo kalitesi/blastokist evresi, endometriyal reseptivite, sperm kalitesi (orta etki), yaşam tarzı (BMI/sigara/egzersiz, %10-15 etki, 3 ay üzeri). Kaynak: ASRM 2024 evidence-based guideline.
@@ -513,6 +524,11 @@ const faqSchema = {
                     <span class="material-symbols-outlined text-primary-600 mb-2">hourglass_top</span>
                     <h3 class="font-bold text-gray-900 text-sm">Yaş ve Fertilite</h3>
                     <p class="text-xs text-gray-600 mt-1">Yaşın üreme potansiyeli üzerindeki etkisi</p>
+                </a>
+                <a href="/makaleler/yasa-gore-tup-bebek-basari-oranlari/" class="border rounded-xl p-6 hover:shadow-lg transition-shadow block">
+                    <span class="material-symbols-outlined text-primary-600 mb-2">query_stats</span>
+                    <h3 class="font-bold text-gray-900 text-sm">Yaşa Göre Başarı Oranları</h3>
+                    <p class="text-xs text-gray-600 mt-1">30, 35, 40 yaş ve üzeri için gerçekçi beklenti</p>
                 </a>
                 <a href="/pgt-merkezi" class="border rounded-xl p-6 hover:shadow-lg transition-shadow block">
                     <span class="material-symbols-outlined text-primary-600 mb-2">microscope</span>

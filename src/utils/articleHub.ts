@@ -30,6 +30,11 @@ const HUBS = {
     label: 'Tedavi Yöntemleri',
     description: 'IVF, ICSI, IUI, PGT, fertilite koruma ve add-on uygulamaları kanıt düzeyiyle ayıran merkez sayfa.'
   },
+  pgt: {
+    href: '/pgt-merkezi/',
+    label: 'PGT Merkezi',
+    description: 'PGT-A, PGT-M, PGT-SR ve embriyo genetik testlerinin sınırlarını bir arada açıklayan konu merkezi.'
+  },
   lifestyle: {
     href: '/beslenme-yasam/',
     label: 'Beslenme ve Yaşam',
@@ -102,6 +107,12 @@ const treatmentSlugs = new Set([
   'yumurta-dondurma-rehberi'
 ]);
 
+const pgtSlugs = new Set([
+  'pgt-a-bas-editor-kosesi',
+  'pgt-cinsiyet-secimi',
+  'pgt-m'
+]);
+
 const psychologySlugs = new Set([
   'duygusal-dayaniklik-rehberi'
 ]);
@@ -115,6 +126,7 @@ const lifestyleSlugs = new Set([
 export function getArticleHub(slug: string): ArticleHub {
   if (psychologySlugs.has(slug)) return HUBS.psychology;
   if (transferSlugs.has(slug)) return HUBS.transfer;
+  if (pgtSlugs.has(slug)) return HUBS.pgt;
   if (femaleSlugs.has(slug)) return HUBS.female;
   if (lifestyleSlugs.has(slug)) return HUBS.lifestyle;
   if (maleSlugs.has(slug)) return HUBS.male;

@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import HizliCevap from '../components/HizliCevap.astro';
+import QuoteBlock from '../components/global/QuoteBlock.astro';
 
 // FAQPage JSON-LD — AI motorlarının (AI Overviews, ChatGPT, Perplexity) "pgt nedir"
 // sorgusunda alıntılayabilmesi için yapılandırılmış Q&A. Yanıtlar ASRM 2024 komite
@@ -97,7 +98,7 @@ const pgtFaqSchema = {
         <!-- BLUF / Hızlı Cevap — AI Overview / ChatGPT / Perplexity citability -->
         <div class="max-w-3xl mx-auto px-4 md:px-6 lg:px-8 mb-16">
             <HizliCevap question="PGT (preimplantasyon genetik test) nedir?">
-            PGT, tüp bebek (IVF) sürecinde elde edilen embriyolardan transfer öncesi alınan birkaç hücrenin (trofektoderm biyopsisi) genetik analizidir. Üç tipi vardır: kromozom sayısını tarayan <strong>PGT-A</strong>, tek gen hastalıklarını tarayan <strong>PGT-M</strong> ve yapısal kromozom rearanjmanlarını tarayan <strong>PGT-SR</strong>. PGT-A öploid (kromozomal olarak normal) embriyoyu seçer; seçilmiş gruplarda transfer başına gebelik şansını ve düşük oranını iyileştirebilir, ancak genel ve iyi prognozlu hastalarda kümülatif canlı doğum oranını artırmadığı çok merkezli randomize çalışmalarda gösterilmiştir (<a href="https://pubmed.ncbi.nlm.nih.gov/38762806/" rel="nofollow">ASRM 2024</a>; <a href="https://pubmed.ncbi.nlm.nih.gov/34818479/" rel="nofollow">Yan 2021, NEJM</a>). Bu nedenle PGT-A rutin değil, seçilmiş endikasyonlarda değerlendirilir.
+            PGT, tüp bebek (IVF) sürecinde elde edilen embriyolardan transfer öncesi alınan birkaç hücrenin (trofektoderm biyopsisi) genetik analizidir. Üç tipi vardır: kromozom sayısını tarayan <strong>PGT-A</strong>, tek gen hastalıklarını tarayan <a href="/makaleler/pgt-m/" class="font-semibold text-primary-700 underline hover:no-underline">PGT-M</a> ve yapısal kromozom rearanjmanlarını tarayan <strong>PGT-SR</strong>. PGT-A öploid (kromozomal olarak normal) embriyoyu seçer; seçilmiş gruplarda transfer başına gebelik şansını ve düşük oranını iyileştirebilir, ancak genel ve iyi prognozlu hastalarda kümülatif canlı doğum oranını artırmadığı çok merkezli randomize çalışmalarda gösterilmiştir (<a href="https://pubmed.ncbi.nlm.nih.gov/38762806/" rel="nofollow">ASRM 2024</a>; <a href="https://pubmed.ncbi.nlm.nih.gov/34818479/" rel="nofollow">Yan 2021, NEJM</a>). Bu nedenle PGT-A rutin bir “başarı artırma” testi değil; yaş, embriyo sayısı, genetik risk ve önceki öyküye göre değerlendirilen bir karar aracıdır.
             </HizliCevap>
         </div>
 
@@ -105,11 +106,14 @@ const pgtFaqSchema = {
         <section class="max-w-3xl mx-auto px-4 md:px-6 lg:px-8 mb-24">
             <aside class="mb-10 rounded-2xl border border-primary-100 bg-primary-50/70 p-5 text-sm leading-relaxed text-gray-700" aria-label="Sayfa kapsamı">
                 <strong class="block text-primary-900 mb-2">Bu sayfa: embriyoya uygulanan preimplantasyon genetik testler (PGT-A, PGT-M, PGT-SR).</strong>
-                Çiftin kendisinde uygulanan kromozomal/taşıyıcı testler (karyotip, Y-mikrodelezyon, CFTR, talasemi) için <a href="/genetik-testler/" class="text-primary-700 underline hover:no-underline">Genetik Testler</a> sayfasına bakın.
+                PGT-M özelinde tek gen hastalıkları, prob hazırlığı ve Türkiye'deki yasal çerçeve için <a href="/makaleler/pgt-m/" class="text-primary-700 underline hover:no-underline">PGT-M rehberini</a>; çiftin kendisinde uygulanan kromozomal/taşıyıcı testler (karyotip, Y-mikrodelezyon, CFTR, talasemi) için <a href="/genetik-testler/" class="text-primary-700 underline hover:no-underline">Genetik Testler</a> sayfasını inceleyebilirsiniz.
             </aside>
             <p class="text-lg md:text-xl text-gray-600 leading-relaxed font-body italic mb-12">
-                Preimplantasyon genetik testler (PGT), tüp bebek (IVF) sürecinde elde edilen embriyolardan transfer öncesi alınan hücre biyopsisiyle yapılan genetik analiz yöntemleridir. Amaç, kromozomal veya tek gen kaynaklı anormallikleri taşıyan embriyoları belirlemektir. Seçilmiş endikasyonlarda transfer başına gebelik şansını ve düşük oranını iyileştirebilir; ancak rutin kullanımda kümülatif canlı doğum oranını artırdığı gösterilmemiştir (ASRM 2024; Yan 2021, NEJM).
+                PGT en sık "Embriyoyu daha sağlıklı seçebilir miyiz?" sorusuyla gündeme gelir. Güvenli cevap şudur: PGT tek bir test değildir ve herkese aynı nedenle önerilmez. Kimi zaman kromozom sayısını taramak, kimi zaman ailede bilinen tek gen hastalığını ayırt etmek, kimi zaman da yapısal kromozom taşıyıcılığı olan çiftlerde riski daha doğru okumak için kullanılır. Seçilmiş endikasyonlarda transfer başına gebelik şansını ve düşük oranını iyileştirebilir; ancak rutin kullanımda kümülatif canlı doğum oranını artırdığı gösterilmemiştir (ASRM 2024; Yan 2021, NEJM).
             </p>
+            <QuoteBlock author="Doç. Dr. Senai Aksoy">
+                PGT'nin değeri daha çok test yapmakta değil; doğru soruya doğru testi seçmekte yatar.
+            </QuoteBlock>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
                 <div class="bg-gray-50 p-6 rounded-xl shadow-sm border-t-2 border-primary-200">
                     <span class="material-symbols-outlined text-primary-600 mb-3">science</span>
@@ -119,7 +123,7 @@ const pgtFaqSchema = {
                 <div class="bg-gray-50 p-6 rounded-xl shadow-sm border-t-2 border-primary-200">
                     <span class="material-symbols-outlined text-primary-600 mb-3">biotech</span>
                     <h3 class="font-bold text-sm mb-2">2-3 gün</h3>
-                    <p class="text-xs text-gray-600 mb-0">Biyopsiden sonuç zamanaşımı</p>
+                    <p class="text-xs text-gray-600 mb-0">Biyopsiden sonra sonuç zamanı</p>
                 </div>
                 <div class="bg-gray-50 p-6 rounded-xl shadow-sm border-t-2 border-primary-200">
                     <span class="material-symbols-outlined text-primary-600 mb-3">monitoring</span>
@@ -151,10 +155,10 @@ const pgtFaqSchema = {
                         <h2 class="font-headline text-3xl text-gray-900 mb-6">1. PGT Nedir?</h2>
                         <div class="space-y-6 text-gray-600">
                             <p>
-                                Preimplantasyon genetik testler (PGT), IVF sürecinde oositlerin döllenmesinden sonra oluşan embriyolardan bir veya birkaç hücre (trofektoderm) biyopsisi alınarak yapılan genetik analizdir. Bu test, embriyoların rahme transfer edilmeden önce kromozomal veya genetik anormallikleri tespit etmek için kullanılır.
+                                PGT, embriyodan alınan birkaç hücrenin genetik olarak incelenmesidir. Bu işlem genellikle blastokist evresinde, embriyonun dış hücre tabakasından (trofektoderm) biyopsi alınarak yapılır. Amaç "mükemmel embriyoyu" bulmak değil; belirli bir genetik soruya daha doğru yanıt verebilmektir.
                             </p>
                             <p>
-                                PGT-A, embriyolar arasından öploid (kromozomal olarak normal) olanların belirlenmesini sağlar. Seçilmiş hasta gruplarında transfer başına gebelik şansını ve düşük oranını iyileştirebilir; ancak genel ve iyi prognozlu popülasyonda kümülatif canlı doğum oranını artırmadığı çok merkezli randomize çalışmalarda gösterilmiştir (ASRM 2024; Yan 2021, NEJM). Modern NGS (Next Generation Sequencing) ile analitik doğruluk %98-99 düzeyindedir; bu teknik doğruluk, klinik canlı doğum garantisi anlamına gelmez.
+                                PGT-A, embriyolar arasında kromozom sayısı normal görünenleri belirlemeye çalışır. Bu bilgi özellikle ileri yaş, tekrarlayan düşük veya önceki başarısız denemeler gibi seçilmiş durumlarda klinik karar vermeyi kolaylaştırabilir. Yine de modern NGS (Next Generation Sequencing) ile bildirilen %98-99 analitik doğruluk, canlı doğum garantisi anlamına gelmez; test sonucu her zaman hastanın yaşı, embriyo sayısı ve önceki öyküsüyle birlikte yorumlanır.
                             </p>
                             <!-- Clinical Info Box -->
                             <div class="bg-white border-l-4 border-primary rounded-xl p-6 mrd-container">
@@ -185,7 +189,7 @@ const pgtFaqSchema = {
                                         <tr>
                                             <td class="py-2 pr-4 font-mono font-bold text-primary-600">PGT-SR</td>
                                             <td class="py-2 pr-4 text-gray-600">Yapısal rearanjman</td>
-                                            <td class="py-2 pr-4 text-gray-600">Translokasyon/reversiyon taşıyıcılığı</td>
+                                            <td class="py-2 pr-4 text-gray-600">Translokasyon/inversiyon taşıyıcılığı</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -214,10 +218,10 @@ const pgtFaqSchema = {
                     <h2 class="font-headline text-3xl text-gray-900 mb-6">2. PGT-A (Aneuploidi Taraması)</h2>
                     <div class="space-y-6 text-gray-600">
                         <p>
-                            PGT-A, embriyolarda kromozom sayısı anormalliklerini (aneuploidi) tespit eder. İnsanarda haploid bir embriyoda 23 çift kromozom bulunur; herhangi bir kromozomun eksik veya fazla olması gebelik başarısını ciddi şekilde azaltır.
+                            PGT-A, embriyodaki kromozom sayısı fazlalığı veya eksikliğini (aneuploidi) tarar. Normal insan hücrelerinde 23 çift kromozom bulunur; embriyoda kromozom sayısının eksik ya da fazla olması tutunma şansını azaltabilir, düşük riskini artırabilir veya gebeliğin hiç başlamamasına yol açabilir.
                         </p>
                         <p>
-                            Yaşla birlikte oositlerde kromozomal aneuploidi oranı artar. 25 yaş kadınında %15-20 iken, 40 yaşında bu oran %60-70'lere ulaşır. PGT-A ile aneuploid embriyolar seçilip transferden çıkarılabilir.
+                            Yaş ilerledikçe yumurtalarda kromozomal hata olasılığı artar. Bu nedenle PGT-A özellikle ileri yaşta ya da tekrarlayan kayıp öyküsünde gündeme gelebilir. Buradaki amaç her hastaya test eklemek değil, transfer edilecek embriyoyu seçerken belirsizliği azaltmaktır.
                         </p>
                         <!-- Clinical Info Box -->
                         <div class="bg-gray-50 border-l-4 border-primary rounded-xl p-6 mrd-container">
@@ -269,10 +273,10 @@ const pgtFaqSchema = {
                         <h2 class="font-headline text-3xl text-gray-900 mb-6">3. PGT-M (Monogenik Hastalıklar)</h2>
                         <div class="space-y-6 text-gray-600">
                             <p>
-                                PGT-M, tek gen kaynaklı (monogenik) hastalıkları tespit etmek için kullanılır. Kistik fibrozis, SMA (spinal musküler atrofi), talasemi, Huntington hastalığı gibi yüzlerce hastalık bu test ile taranabilir.
+                                PGT-M, ailede bilinen tek gen hastalığı riski olduğunda kullanılan hedefli bir testtir. Kistik fibrozis, SMA (spinal musküler atrofi), talasemi veya Huntington hastalığı gibi durumlarda amaç, embriyoları genel olarak "iyi-kötü" diye ayırmak değil; ailedeki belirli genetik riski taşıyıp taşımadığını anlamaktır.
                             </p>
                             <p>
-                                Analizde Karyomapping (SNP array) veya PCR tabanlı yöntemler kullanılır. Ebeveynlerden alınan DNA örnekleri ile embriyo DNA'sı karşılaştırılarak hastalık geninin taşınıp taşınmadığı belirlenir. Taşıyıcı embryolar transferden çıkarılır.
+                                Analizde Karyomapping (SNP array) veya PCR tabanlı yöntemler kullanılabilir. Çoğu zaman önce aileye özgü hazırlık yapılır; ebeveynlerden alınan DNA örnekleriyle embriyo DNA'sı karşılaştırılır. Son karar, hastalığın kalıtım modeli, embriyo sayısı, genetik danışmanlık ve Türkiye'deki yasal çerçeveyle birlikte verilir.
                             </p>
                             <!-- Clinical Info Box -->
                             <div class="bg-white border-l-4 border-primary rounded-xl p-6 mrd-container">
@@ -378,7 +382,7 @@ const pgtFaqSchema = {
                                 Non-invazif prenatal test (NİPT), gebelik süresinde annenin kanından alınan DNA fragmentlarını analiz ederek fetüsün kromozomal anomalilerini tarar (örn. Down sendromu). NİPT tarama testidir ve sonuçlar kesin değildir.
                             </p>
                             <p>
-                                PGT ise embriyo seviyesinde invaziv (biyopsi) ile yapılır ve nispeten daha yüksek doğruluk sunar. PGT, gebelik öncesi embryoyu test eder; NİPT ise gebelik sonrasında uygulanır. İkisi de farklı aşamalarda kullanılır ve aynı hastaya sırayla uygulanabilir.
+                                PGT ise embriyo seviyesinde invaziv (biyopsi) ile yapılır ve nispeten daha yüksek doğruluk sunar. PGT, gebelik öncesi embriyoyu test eder; NİPT ise gebelik sonrasında uygulanır. İkisi de farklı aşamalarda kullanılır ve aynı hastaya sırayla uygulanabilir.
                             </p>
                             <!-- Comparison Table -->
                             <div class="bg-white border-l-4 border-primary rounded-xl p-6 mrd-container">
@@ -520,6 +524,11 @@ const pgtFaqSchema = {
                     <span class="material-symbols-outlined text-primary-600 mb-2">science</span>
                     <h3 class="font-bold text-gray-900 text-sm">Genetik Testler</h3>
                     <p class="text-xs text-gray-600 mt-1">Kromozomal tarama ve detaylı bilgiler</p>
+                </a>
+                <a href="/makaleler/pgt-m/" class="border rounded-xl p-6 hover:shadow-lg transition-shadow block">
+                    <span class="material-symbols-outlined text-primary-600 mb-2">genetics</span>
+                    <h3 class="font-bold text-gray-900 text-sm">PGT-M Tek Gen Rehberi</h3>
+                    <p class="text-xs text-gray-600 mt-1">SMA, talasemi ve kalıtsal hastalık riski için hedefli embriyo testi</p>
                 </a>
                 <a href="/tedavi-yontemleri" class="border rounded-xl p-6 hover:shadow-lg transition-shadow block">
                     <span class="material-symbols-outlined text-primary-600 mb-2">biotech</span>
