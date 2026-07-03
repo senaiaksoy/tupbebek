@@ -8,6 +8,10 @@
         "/makaleler/*",
         "/tibbi-sozluk/*",
         "/llms.txt",
+        "/llms-full.txt",
+        "/pgt-merkezi/",
+        "/basari-oranlari/",
+        "/endometriozis-adenomyozis/",
         "/skill.md"
       ]
     }

@@ -4,6 +4,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import HizliCevap from '../components/HizliCevap.astro';
 import QuoteBlock from '../components/global/QuoteBlock.astro';
+import { buildHubItemListSchema } from '../utils/hubStructuredData';
 
 const faqItems = [
     {
@@ -33,10 +34,47 @@ const faqSchema = {
         },
     })),
 };
+
+const successHubLinks = [
+    {
+        href: '/makaleler/yasa-gore-tup-bebek-basari-oranlari/',
+        title: 'Yaşa göre tüp bebek başarı oranları',
+        description: '30, 35, 40 yaş ve üzeri için canlı doğum, embriyo uygunluğu ve gerçekçi beklenti.'
+    },
+    {
+        href: '/makaleler/dusuk-amh-hamilelik/',
+        title: 'Düşük AMH ve başarı beklentisi',
+        description: 'AMH, yaş, antral folikül sayısı ve IVF yanıtının birlikte yorumlanması.'
+    },
+    {
+        href: '/makaleler/kac-yumurta-gerekir/',
+        title: 'Kaç yumurta gerekir?',
+        description: 'Toplanan yumurta sayısı, embriyo havuzu ve kümülatif başarı ilişkisi.'
+    },
+    {
+        href: '/makaleler/embriyo-transferi-sonrasi-bakim/',
+        title: 'Transfer sonrası dönem',
+        description: 'Transfer sonrası aktivite, ilaç takibi ve beta-hCG bekleme sürecinin kanıta dayalı yorumu.'
+    },
+    {
+        href: '/pgt-merkezi/',
+        title: 'PGT Merkezi',
+        description: 'PGT-A, PGT-M ve embriyo genetik testlerinin başarı oranlarıyla ilişkisi.'
+    }
+];
+
+const itemListSchema = buildHubItemListSchema({
+    site: Astro.site,
+    pagePath: '/basari-oranlari/',
+    name: 'Tüp bebek başarı oranları konu haritası',
+    description: 'Yaş, AMH, yumurta sayısı, transfer sonrası takip ve PGT kararlarını başarı oranı okuması içinde bağlayan rehber.',
+    items: successHubLinks
+});
 ---
 
 <BaseLayout title="Tüp Bebek Başarı Oranları ve Klinik İstatistikler | tupbebek.com" description="Yaş gruplarına göre tüp bebek başarı oranları, döngüye göre kümülatif başarı, tedavi yöntemlerine göre karşılaştırmalar ve uluslararası veriler.">
     <script type="application/ld+json" is:inline set:html={JSON.stringify(faqSchema)} />
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(itemListSchema)} />
     <Header />
 
     <main id="main-content" tabindex="-1" class="pb-24">

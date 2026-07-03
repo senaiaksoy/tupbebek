@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import { buildHubItemListSchema } from '../utils/hubStructuredData';
 
 const sections = [
     { id: 'endometriozis', label: 'Endometriozis', icon: 'gynecology', color: 'text-error' },
@@ -11,6 +12,42 @@ const sections = [
     { id: 'yasam-kalitesi', label: 'Yaşam Kalitesi', icon: 'self_improvement', color: 'text-gray-600' },
     { id: 'sss', label: 'SSS', icon: 'help', color: 'text-gray-600' },
 ];
+
+const endometriosisHubLinks = [
+    {
+        href: '/makaleler/endometriozis-tup-bebek/',
+        title: 'Endometriozis ve tüp bebek',
+        description: 'Endometriozis varsa IVF yapılabilir mi, cerrahi ne zaman gerekir ve başarı nasıl yorumlanır?'
+    },
+    {
+        href: '/makaleler/endometrioma/',
+        title: 'Endometrioma',
+        description: 'Çikolata kisti, over rezervi, cerrahi kararı ve IVF öncesi değerlendirme.'
+    },
+    {
+        href: '/makaleler/endometriozis-akilli-stratejiler/',
+        title: 'Endometrioziste akıllı stratejiler',
+        description: 'Yaş, AMH, ağrı, cerrahi geçmiş ve embriyo planını birlikte ele alan karar yaklaşımı.'
+    },
+    {
+        href: '/makaleler/hormonal-tedavi-adenomyozis/',
+        title: 'Adenomyozis ve hormonal tedavi',
+        description: 'Adenomyoziste baskılama, transfer hazırlığı ve kanıt düzeyi.'
+    },
+    {
+        href: '/kadin-infertilitesi/',
+        title: 'Kadın infertilitesi rehberi',
+        description: 'Endometriozis, düşük AMH, tüp faktörü ve rahim içi problemleri bir arada okuma yolu.'
+    }
+];
+
+const itemListSchema = buildHubItemListSchema({
+    site: Astro.site,
+    pagePath: '/endometriozis-adenomyozis/',
+    name: 'Endometriozis ve adenomyozis konu haritası',
+    description: 'Endometriozis, endometrioma, adenomyozis, IVF sıralaması ve kadın infertilitesi rehberlerini bağlayan okuma yolu.',
+    items: endometriosisHubLinks
+});
 ---
 
 <BaseLayout title="Endometriozis ve Adenomyozis | tupbebek.com" description="Endometriozis ve adenomyozis nedir? Belirtileri, tanı yöntemleri, tedavi seçenekleri ve fertilite üzerindeki etkileri hakkında kapsamlı rehber.">
@@ -41,6 +78,7 @@ const sections = [
             "@id": "https://tupbebek.com/endometriozis-adenomyozis"
         }
     })} />
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(itemListSchema)} />
     <Header />
 
     <!-- Floating TOC Navigation -->

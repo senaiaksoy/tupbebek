@@ -16,7 +16,7 @@ const accordionItems = navigationMenus.map((menu) => ({
 const instagramUrl = 'https://www.instagram.com/tupbebekdergi/';
 ---
 
-<header id="main-header" class="fixed top-0 w-full z-[100] transition-all duration-500 bg-white/80 backdrop-blur-md border-b border-gray-100 shadow-sm group/header">
+<header id="main-header" class="fixed top-0 w-full z-[100] transition-all duration-500 bg-white/80 backdrop-blur-md border-b border-gray-100 shadow-sm group/header" data-nosnippet>
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
         <div id="header-inner" class="flex justify-between items-center h-20 transition-all duration-500">
             <!-- Logo Section -->
@@ -64,7 +64,7 @@ const instagramUrl = 'https://www.instagram.com/tupbebekdergi/';
 <!-- Mobile Sidebar Menu -->
 <div id="mobile-menu-backdrop" class="hidden lg:hidden fixed inset-0 top-20 bg-black/30 z-[105]" aria-hidden="true"></div>
 
-<div id="mobile-menu" class="fixed right-0 top-20 h-[calc(100vh-80px)] w-80 bg-white shadow-2xl border-l border-gray-100 transform translate-x-full transition-transform duration-300 z-[110] overflow-y-auto" role="dialog" aria-label="Mobil menü" aria-hidden="true">
+<div id="mobile-menu" class="fixed right-0 top-20 h-[calc(100vh-80px)] w-80 bg-white shadow-2xl border-l border-gray-100 transform translate-x-full transition-transform duration-300 z-[110] overflow-y-auto" role="dialog" aria-label="Mobil menü" aria-hidden="true" data-nosnippet>
     <div class="p-6 space-y-2">
         <button id="mobile-close" type="button" class="absolute top-4 right-4 min-w-[44px] min-h-[44px] flex items-center justify-center hover:bg-gray-100 rounded-lg transition-colors" aria-label="Menüyü kapat">
             <span class="material-symbols-outlined">close</span>
@@ -87,7 +87,7 @@ const instagramUrl = 'https://www.instagram.com/tupbebekdergi/';
 </div>
 
 <!-- Mobile Bottom Bar -->
-<nav class="lg:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 z-[90]" aria-label="Mobil navigasyon">
+<nav class="lg:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 z-[90]" aria-label="Mobil navigasyon" data-nosnippet>
     <div class="flex items-center justify-around h-16">
         <a href="/" class="flex flex-col items-center justify-center gap-1 min-w-[44px] min-h-[44px] text-primary-600 transition-colors">
             <span class="material-symbols-outlined">home</span>

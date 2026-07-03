@@ -237,8 +237,56 @@ const WIKIDATA_MAP: Record<string, string[]> = {
     'yumurtlama-takibi': ['https://www.wikidata.org/wiki/Q208170', 'https://en.wikipedia.org/wiki/Ovulation']
 };
 
+const ABOUT_ENTITY_MAP: Record<string, { type: string; name: string; alternateName?: string[] }> = {
+    'tup-bebek-nedir': {
+        type: 'MedicalProcedure',
+        name: 'Tüp bebek (IVF)',
+        alternateName: ['In vitro fertilizasyon', 'IVF']
+    },
+    'embriyo-transferi-sonrasi-bakim': {
+        type: 'MedicalProcedure',
+        name: 'Embriyo transferi'
+    },
+    'dusuk-amh-hamilelik': {
+        type: 'MedicalTest',
+        name: 'Anti-Müllerian hormon (AMH)',
+        alternateName: ['AMH', 'Yumurtalık rezervi']
+    },
+    'azospermi-mikro-tese': {
+        type: 'MedicalCondition',
+        name: 'Azospermi'
+    },
+    'pgt-a-bas-editor-kosesi': {
+        type: 'MedicalTest',
+        name: 'PGT-A',
+        alternateName: ['Preimplantasyon genetik test', 'Preimplantation genetic testing for aneuploidy']
+    },
+    'pgt-m': {
+        type: 'MedicalTest',
+        name: 'PGT-M',
+        alternateName: ['Preimplantasyon genetik monogenik test']
+    },
+    'pgt-cinsiyet-secimi': {
+        type: 'MedicalTest',
+        name: 'Preimplantasyon genetik test'
+    },
+    'endometriozis-tup-bebek': {
+        type: 'MedicalCondition',
+        name: 'Endometriozis'
+    },
+    'endometrioma': {
+        type: 'MedicalCondition',
+        name: 'Endometrioma'
+    },
+    'yasa-gore-tup-bebek-basari-oranlari': {
+        type: 'MedicalWebPage',
+        name: 'Tüp bebek başarı oranları'
+    }
+};
+
 const slug = entry.slug || '';
 const sameAsUrls = WIKIDATA_MAP[slug];
+const entity = ABOUT_ENTITY_MAP[slug];
 
 const isProcedure = d.category === 'Tedavi Yöntemleri' || d.category === 'Tüp Bebek';
 const aboutSchema: Record<string, unknown> = isProcedure
@@ -250,6 +298,12 @@ const aboutSchema: Record<string, unknown> = isProcedure
         "@type": "MedicalCondition",
         "name": d.category,
       };
+
+if (entity) {
+    aboutSchema["@type"] = entity.type;
+    aboutSchema["name"] = entity.name;
+    if (entity.alternateName) aboutSchema["alternateName"] = entity.alternateName;
+}
 
 if (sameAsUrls && sameAsUrls.length > 0) {
     aboutSchema["sameAs"] = sameAsUrls;

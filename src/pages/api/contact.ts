@@ -75,7 +75,7 @@ export const POST: APIRoute = async ({ request, locals }) => {
 
     // --- E-posta Bildirimi ---
     const resendApiKey = env?.RESEND_API_KEY || import.meta.env.RESEND_API_KEY;
-    const contactEmail = env?.CONTACT_EMAIL || import.meta.env.CONTACT_EMAIL || 'dr@senaiaksoy.net';
+    const contactEmail = env?.CONTACT_EMAIL || import.meta.env.CONTACT_EMAIL || 'bilgi@tupbebek.com';
 
     if (resendApiKey) {
       try {

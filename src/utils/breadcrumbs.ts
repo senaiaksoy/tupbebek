@@ -1,3 +1,5 @@
+import { getArticleHub } from './articleHub';
+
 /**
  * Dynamic Breadcrumb Generation
  * URL'den otomatik breadcrumb oluşturur
@@ -59,6 +61,23 @@ const customBreadcrumbs: Record<string, BreadcrumbItem[]> = {
   ]
 };
 
+const articleTitleMap: Record<string, string> = {
+  'tup-bebek-nedir': 'Tüp Bebek Nedir?',
+  'embriyo-transferi-sonrasi-bakim': 'Embriyo Transferi Sonrası',
+  'dusuk-amh-hamilelik': 'Düşük AMH Nedir?',
+  'azospermi-mikro-tese': 'Azospermi Nedir?',
+  'pgt-a-bas-editor-kosesi': 'PGT-A Nedir?',
+  'pgt-m': 'PGT-M Nedir?',
+  'pgt-cinsiyet-secimi': 'PGT ve Cinsiyet Seçimi',
+  'endometriozis-tup-bebek': 'Endometriozis ve Tüp Bebek',
+  'endometrioma': 'Endometrioma',
+  'cerrahi-sperm-arama-tese': 'Cerrahi Sperm Arama ve TESE',
+  'mikroenjeksiyon-icsi-nedir': 'Mikroenjeksiyon ICSI Nedir?',
+  'embriyo-transferi-gun-secimi': 'Embriyo Transferi Gün Seçimi',
+  'beta-hcg-testi': 'Beta-hCG Testi',
+  'yasa-gore-tup-bebek-basari-oranlari': 'Yaşa Göre Tüp Bebek Başarı Oranları'
+};
+
 /**
  * Smart label generation from URL segment
  * "erkek-infertilitesi" → "Erkek İnfertilitesi"
@@ -96,6 +115,20 @@ export function generateBreadcrumbs(pathname: string): BreadcrumbItem[] {
 
   if (customBreadcrumbs[normalizedPath]) {
     return customBreadcrumbs[normalizedPath];
+  }
+
+  const articleMatch = normalizedPath.match(/^\/makaleler\/([^/]+)\/$/);
+  if (articleMatch) {
+    const articleSlug = articleMatch[1];
+    const hub = getArticleHub(articleSlug);
+
+    return [
+      { label: hub.label, href: hub.href },
+      {
+        label: articleTitleMap[articleSlug] ?? generateLabel(articleSlug),
+        href: `/makaleler/${articleSlug}/`
+      }
+    ];
   }
 
   const segments = pathname

@@ -13,13 +13,60 @@ interface Props {
 }
 
 const { currentSlug, category, limit = 3, variant = 'default' } = Astro.props;
+const clusterPriorityMap: Record<string, string[]> = {
+    'tup-bebek-nedir': [
+        'tup-bebek-sureci-rehber',
+        'embriyo-transferi-sonrasi-bakim',
+        'yasa-gore-tup-bebek-basari-oranlari'
+    ],
+    'embriyo-transferi-sonrasi-bakim': [
+        'embriyo-transferi-gun-secimi',
+        'beta-hcg-testi',
+        'taze-dondurulmus-transfer'
+    ],
+    'dusuk-amh-hamilelik': [
+        'kac-yumurta-gerekir',
+        'yasa-gore-tup-bebek-basari-oranlari',
+        'yumurta-dondurma-rehberi'
+    ],
+    'azospermi-mikro-tese': [
+        'cerrahi-sperm-arama-tese',
+        'mikroenjeksiyon-icsi-nedir',
+        'varikosel-nedir-ne-zaman-ameliyat-gerekir'
+    ],
+    'pgt-a-bas-editor-kosesi': [
+        'pgt-m',
+        'pgt-cinsiyet-secimi',
+        'embryoscope-yapay-zeka'
+    ],
+    'endometriozis-tup-bebek': [
+        'endometrioma',
+        'endometriozis-akilli-stratejiler',
+        'hormonal-tedavi-adenomyozis'
+    ],
+    'endometrioma': [
+        'endometriozis-tup-bebek',
+        'endometriozis-akilli-stratejiler',
+        'hormonal-tedavi-adenomyozis'
+    ],
+    'cerrahi-sperm-arama-tese': [
+        'azospermi-mikro-tese',
+        'mikroenjeksiyon-icsi-nedir',
+        'varikosel-nedir-ne-zaman-ameliyat-gerekir'
+    ]
+};
 
 const { getPublishedArticles, sanitizeImage } = await import('../utils/articles');
 const allArticles = await getPublishedArticles();
-const related = allArticles
-    .filter(a => a.slug !== currentSlug && a.data.category === category)
+const articlesBySlug = new Map(allArticles.map(article => [article.slug, article]));
+const prioritizedRelated = (clusterPriorityMap[currentSlug] ?? [])
+    .map(slug => articlesBySlug.get(slug))
+    .filter((article): article is (typeof allArticles)[number] => Boolean(article));
+const prioritizedSlugs = new Set(prioritizedRelated.map(article => article.slug));
+const categoryRelated = allArticles
+    .filter(a => a.slug !== currentSlug && a.data.category === category && !prioritizedSlugs.has(a.slug))
     .sort((a, b) => (b.data.publishDate?.getTime() ?? 0) - (a.data.publishDate?.getTime() ?? 0))
-    .slice(0, limit);
+const related = [...prioritizedRelated, ...categoryRelated].slice(0, limit);
 ---
 
 {related.length > 0 && variant === 'sidebar' && (

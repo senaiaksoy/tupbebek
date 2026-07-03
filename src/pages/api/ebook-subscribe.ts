@@ -85,7 +85,7 @@ export const POST: APIRoute = async ({ request, locals }) => {
               <hr style="border: none; border-top: 1px solid #e5e7eb; margin: 30px 0;">
 
               <p style="color: #374151; line-height: 1.6;">
-                Sorularınız veya önerileriniz için <a href="mailto:dr@senaiaksoy.net" style="color: #2563a8; text-decoration: none;">bizimle iletişime geçebilirsiniz</a>.
+                Sorularınız veya önerileriniz için <a href="mailto:bilgi@tupbebek.com" style="color: #2563a8; text-decoration: none;">bizimle iletişime geçebilirsiniz</a>.
               </p>
 
               <p style="color: #374151; margin-bottom: 5px;">Sağlıklı kalın,</p>

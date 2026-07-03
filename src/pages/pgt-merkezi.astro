@@ -4,6 +4,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import HizliCevap from '../components/HizliCevap.astro';
 import QuoteBlock from '../components/global/QuoteBlock.astro';
+import { buildHubItemListSchema } from '../utils/hubStructuredData';
 
 // FAQPage JSON-LD — AI motorlarının (AI Overviews, ChatGPT, Perplexity) "pgt nedir"
 // sorgusunda alıntılayabilmesi için yapılandırılmış Q&A. Yanıtlar ASRM 2024 komite
@@ -62,6 +63,42 @@ const pgtFaqSchema = {
     }
   ]
 };
+
+const pgtHubLinks = [
+  {
+    href: '/makaleler/pgt-a-bas-editor-kosesi/',
+    title: 'PGT-A rehberi',
+    description: 'Aneuploidi taraması, mozaiklik, transfer başına ve kümülatif başarı beklentisi.'
+  },
+  {
+    href: '/makaleler/pgt-m/',
+    title: 'PGT-M tek gen rehberi',
+    description: 'SMA, talasemi ve kalıtsal hastalık riski için hedefli embriyo testi.'
+  },
+  {
+    href: '/makaleler/pgt-cinsiyet-secimi/',
+    title: 'PGT ve cinsiyet seçimi',
+    description: 'Türkiye mevzuatı, etik sınırlar ve tıbbi endikasyon dışı seçimin neden yapılamadığı.'
+  },
+  {
+    href: '/genetik-testler/',
+    title: 'Genetik testler',
+    description: 'Karyotip, taşıyıcılık taraması ve çift düzeyinde genetik değerlendirme.'
+  },
+  {
+    href: '/basari-oranlari/',
+    title: 'Başarı oranları',
+    description: 'PGT, yaş ve embriyo sayısı kararlarının başarı oranlarıyla birlikte yorumlanması.'
+  }
+];
+
+const itemListSchema = buildHubItemListSchema({
+  site: Astro.site,
+  pagePath: '/pgt-merkezi/',
+  name: 'PGT merkezi konu haritası',
+  description: 'PGT-A, PGT-M, PGT ve cinsiyet seçimi, çift genetik testleri ve başarı oranları arasındaki okuma yolu.',
+  items: pgtHubLinks
+});
 ---
 
 <BaseLayout title="Genetik ve PGT Merkezi: Preimplantasyon Genetik Testler | tupbebek.com" description="PGT-A, PGT-M ve PGT-SR testlerinin farkları, endikasyonları ve sınırlamaları. Kromozomal tarama, monogenik hastalıklar ve yapısal rearranjmanlar için kapsamlı bilgi.">
@@ -586,4 +623,5 @@ const pgtFaqSchema = {
 </script>
 
 <script type="application/ld+json" is:inline set:html={JSON.stringify(pgtFaqSchema)} />
+<script type="application/ld+json" is:inline set:html={JSON.stringify(itemListSchema)} />
 </BaseLayout>
