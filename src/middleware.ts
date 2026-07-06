@@ -19,11 +19,9 @@ const TRACKING_QUERY_PARAMS = new Set([
 ]);
 
 const WILDCARD_FALLBACKS: Array<[string, string]> = [
-  ['/blog/sayfa/', '/makaleler/'],
   ['/blog/', '/makaleler/'],
   ['/treatment/', '/tedavi-yontemleri/'],
   ['/videolar/', '/makaleler/'],
-  ['/public/', '/makaleler/'],
   ['/ar/', '/'],
   ['/fr/', '/'],
   ['/ivf-in-turkey/', '/'],
@@ -48,7 +46,7 @@ const GONE_410_EXACT = new Set<string>([
   '/h2n.php',
   '/undefined',
 ]);
-const GONE_410_PREFIXES: string[] = ['/undefined/'];
+const GONE_410_PREFIXES: string[] = ['/undefined/', '/public/', '/blog/sayfa/'];
 
 function isGone(pathname: string): boolean {
   return GONE_410_EXACT.has(pathname) || GONE_410_PREFIXES.some((p) => pathname.startsWith(p)) || pathname.includes('/undefined');

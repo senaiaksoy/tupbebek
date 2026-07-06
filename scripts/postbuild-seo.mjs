@@ -206,8 +206,8 @@ function canonicalRedirectFor(requestUrl) {
   // 410 Gone: template-rendering artifacts and legacy PHP probes that
   // never had real content. 410 removes from Google's index faster than
   // 301-to-home and avoids soft-404 risk for less-relevant 301 targets.
-  const gone410Exact = new Set(['/modules.php', '/h2n.php', '/undefined']);
-  if (gone410Exact.has(url.pathname) || url.pathname.startsWith('/undefined/')) {
+  const gone410Exact = new Set(['/modules.php', '/h2n.php', '/undefined', '/public/article.aspx', '/public/haber.aspx']);
+  if (gone410Exact.has(url.pathname) || url.pathname.startsWith('/undefined/') || url.pathname.startsWith('/public/') || url.pathname.startsWith('/blog/sayfa/')) {
     return new Response('Gone', {
       status: 410,
       headers: {
@@ -221,8 +221,6 @@ function canonicalRedirectFor(requestUrl) {
     ['/$%7BsafeUrl%7D/', '/'],
     ['/$%7Bresult.url%7D/', '/'],
     ['/$%7Burl%7D/', '/'],
-    ['/public/article.aspx', '/makaleler/'],
-    ['/public/haber.aspx', '/makaleler/'],
     ['/blog', '/makaleler/'],
     ['/blog/', '/makaleler/'],
   ]);

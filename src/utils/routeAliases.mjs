@@ -104,8 +104,7 @@ export const routeAliases = {
   '/makaleler/myomlar-ve-kisirlik': '/makaleler/miyomlar-ve-tup-bebek',
   '/makaleler/pkos-ve-tup-bebek': '/makaleler/opk-ve-ivf',
   '/policy': '/gizlilik-politikasi',
-  '/public/article.aspx': '/makaleler',
-  '/public/haber.aspx': '/makaleler',
+  // '/public/*' handled by Worker as 410 Gone (GONE_410_PREFIXES).
   // '/modules.php' and '/h2n.php' return 410 Gone via [...legacy].ts.
   // Removed 301 aliases to prevent the Worker from redirecting before
   // GONE_410_EXACT check (it's checked first anyway, but cleaner).
@@ -268,8 +267,60 @@ export const routeAliases = {
   '/blog/dogustan-rahmin-olmamasi-mullerian-agnenezi-rokitansky-kuster-hauser-mayer-sendromu-rkm': '/kadin-infertilitesi',
   '/blog/kisirlik-infertilite-nedir-nedenleri-nelerdir': '/kadin-infertilitesi',
   '/blog/embriyo-transferi-kacinci-': '/makaleler/embriyo-transferi-gun-secimi',
-  // '/blog/sayfa/N/' pagination handled by WILDCARD_FALLBACKS in [...legacy].ts
+  // '/blog/sayfa/N/' pagination handled by Worker as 410 Gone (GONE_410_PREFIXES).
   // (the '*' glob key here never matched — exact-string lookup, not pattern).
+
+  // === 2026-07-06: 50 missing blog slug aliases (GSC redirect drilldown) ===
+  '/blog/amniyon-sivisinin-azligi-da-coklugu-da-bebek-icin-tehlike-isareti': '/makaleler/tup-bebek-sureci-rehber',
+  '/blog/bebegin-gec-dogmasi-surmaturite-gun-asimi': '/makaleler/tup-bebek-sureci-rehber',
+  '/blog/bebegin-suyu-erken-gelirse-erken-membran-rupturu-emr': '/makaleler/tup-bebek-sureci-rehber',
+  '/blog/bebegin-suyu-fazla-ise': '/makaleler/tup-bebek-sureci-rehber',
+  '/blog/cep-telefonları-ve-sperm kalitesi': '/makaleler/cep-telefonu-sperm-kalitesi',
+  '/blog/cogul-gebelikler-ve-riskleri': '/makaleler/tup-bebek-yanlis-bilinenler',
+  '/blog/dis-gebelik-nedir': '/makaleler/kimyasal-gebelik',
+  '/blog/dogum-sonrasi-vucudumuzda-neler-oluyor': '/makaleler/tup-bebek-sureci-rehber',
+  '/blog/dogurganlikbeslenme-iliskisi': '/beslenme-yasam',
+  '/blog/dusuk-abortus-nedir': '/makaleler/kimyasal-gebelik',
+  '/blog/dusuk-amh-hamilelik-sansi': '/makaleler/dusuk-amh-hamilelik',
+  '/blog/endometriyal_scratching_ivf': '/makaleler/endometriyal-scratching',
+  '/blog/endoskopik-cerrahi-histeroskopi-nedir': '/makaleler/endoskopik-cerrahi-histeroskopi',
+  '/blog/erkek-kisirligi-besin-takviyeleri': '/makaleler/erkek-dogurganlik-besin-takviyeleri',
+  '/blog/erkekte-kisirlik-nedenleri': '/erkek-infertilitesi',
+  '/blog/hamilelikte-aspirin-ve-progesteron': '/makaleler/ivf-protokolleri',
+  '/blog/hamilelikte-hepatit-sarilik-ve-tedavisi': '/makaleler/tup-bebek-sureci-rehber',
+  '/blog/hamilelikte-kabizlik-basurlar-hemoroidler-ve-makat-catlaklari': '/makaleler/tup-bebek-sureci-rehber',
+  '/blog/hamilelikte-kabizlik-tehlikeli-midir': '/makaleler/tup-bebek-sureci-rehber',
+  '/blog/hamilelikte-tehlikeli-bir-enfeksiyon-sitomegalovirus': '/makaleler/tup-bebek-sureci-rehber',
+  '/blog/hamilelikte-yuksek-tansiyon-problemi-olan-anne-adaylari-nelere-dikkat-etmeli': '/makaleler/tup-bebek-sureci-rehber',
+  '/blog/ilacsiz-tup-bebek-ivm-yontemi-ne-kadar-basarili': '/makaleler/ivf-protokolleri',
+  '/blog/izsiz-ameliyat-laparoskopi': '/makaleler/endoskopik-cerrahi-histeroskopi',
+  '/blog/kadin-kisirligi-ve-tup-bebek-tedavisinin-onemi': '/kadin-infertilitesi',
+  '/blog/kadinlarda-yumurtalik-rezervi-ve-onemi': '/makaleler/kac-yumurta-gerekir',
+  '/blog/kisirlik-belirtisi-endometriozis-cikolata-kisti-nedir': '/makaleler/endometrioma',
+  '/blog/kisirlik-cozumsuz-degildir5-yazi-dizisi-asilama': '/makaleler/iui-nedir',
+  '/blog/kisirlik-cozumsuz-degildir6-yazi-dizisi-mikroenjeksiyon': '/makaleler/mikroenjeksiyon-icsi-nedir',
+  '/blog/kisirlik-psikolojisi': '/psikolojik-destek',
+  '/blog/kisirlikta-naturel-siklusta-mikroenjeksiyon-icsi': '/makaleler/mikroenjeksiyon-icsi-nedir',
+  '/blog/kisirlikta-yeni-umut-rahim-dokusu-nakli': '/makaleler/tup-bebek-yanlis-bilinenler',
+  '/blog/laparoskopi-nedir': '/makaleler/endoskopik-cerrahi-histeroskopi',
+  '/blog/mikroenjeksiyon-bebekleri-ve-anomaliler': '/makaleler/mikroenjeksiyon-icsi-nedir',
+  '/blog/mikroenjeksiyon-icsi-herkes-icin-uygun-mudur': '/makaleler/mikroenjeksiyon-icsi-nedir',
+  '/blog/mol-gebelik-uzum-gebelik': '/makaleler/kimyasal-gebelik',
+  '/blog/opk-ve ivf': '/makaleler/opk-ve-ivf',
+  '/blog/plasentanin-erken-ayrilmasi-dekolman-plasenta': '/makaleler/tup-bebek-sureci-rehber',
+  '/blog/plasentanin-onde-olmasi-plasenta-previa': '/makaleler/tup-bebek-sureci-rehber',
+  '/blog/polip-nedir-kisirliga-yol-acar-mi': '/makaleler/miyomlar-ve-tup-bebek',
+  '/blog/preimplantasyon-genetik-tani-nedir': '/pgt-merkezi',
+  '/blog/rahmin-ters-durmasi-kisirliga-neden-olmaz-retrovert-uterus': '/kadin-infertilitesi',
+  '/blog/tup-bebek-efsaneler-ve-gercekler': '/makaleler/tup-bebek-yanlis-bilinenler',
+  '/blog/tup-bebek-oncesi-histeroskopi-laparoskopi-basariyi-artirir-mi': '/makaleler/ivf-oncesi-histeroskopi',
+  '/blog/tup-bebek-sureci-adim-adim-rehber': '/makaleler/tup-bebek-sureci-rehber',
+  '/blog/tup-bebek-tedavisine-hazirlik-asamasi-yazi-dizisi-2': '/makaleler/tup-bebek-sureci-rehber',
+  '/blog/tup-bebek-tedavisine-hazirlik-asamasi-yazi-dizisi-3': '/makaleler/tup-bebek-sureci-rehber',
+  '/blog/tup-bebek-tedavisine-hazirlik-asamasi-yazi-dizisi-4': '/makaleler/tup-bebek-sureci-rehber',
+  '/blog/yas-dogurganlik-ve-kisirlik': '/yas-ve-fertilite',
+  '/blog/yumurtalik-kistleri-dogurganligi-etkiler-mi': '/makaleler/yumurtalik-kistleri-dogurganlik',
+  '/blog/yumurtaliklarin-uyarilmasinda-kullanilan-ilaclar-ve-kanser': '/makaleler/ivf-protokolleri',
 };
 
 export function normalizeInternalPath(value) {

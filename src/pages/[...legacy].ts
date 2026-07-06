@@ -7,7 +7,6 @@ export const prerender = false;
 // gets redirected to the destination. Used as a safety net for legacy URLs
 // that aren't covered by specific routeAliases entries.
 const WILDCARD_FALLBACKS: Array<[string, string]> = [
-  ['/blog/sayfa/', '/makaleler/'],
   ['/blog/', '/makaleler/'],
   ['/treatment/', '/tedavi-yontemleri/'],
   ['/videolar/', '/makaleler/'],
@@ -35,7 +34,7 @@ const GONE_410_EXACT = new Set<string>([
   '/h2n.php',
   '/undefined',
 ]);
-const GONE_410_PREFIXES: string[] = ['/undefined/'];
+const GONE_410_PREFIXES: string[] = ['/undefined/', '/public/', '/blog/sayfa/'];
 
 const handle: APIRoute = ({ url, redirect }) => {
   if (GONE_410_EXACT.has(url.pathname) || GONE_410_PREFIXES.some((p) => url.pathname.startsWith(p)) || url.pathname.includes('/undefined')) {

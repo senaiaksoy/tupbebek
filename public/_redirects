@@ -213,6 +213,6 @@ http://www.tupbebek.com/*                       https://tupbebek.com/:splat     
 # Worker in src/pages/[...legacy].ts (GONE_410_EXACT / GONE_410_PREFIXES).
 
 # --------------------------------------------
-# 13. Other PHP endpoints
+# 13. Other PHP endpoints — 410 Gone via Worker
 # --------------------------------------------
-/public/*                                       /makaleler/                                      301
+# /public/* handled by Worker as 410 Gone (src/middleware.ts, src/pages/[...legacy].ts)
