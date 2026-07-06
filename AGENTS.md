@@ -249,3 +249,12 @@ Yeni bir makale eklenirken veya mevcut makale komple yenilenirken, final duzenle
 - "Kesin", "garanti", "en iyi" gibi mutlak ifadelerden kacinilir
 - Kullanicinin verdigi makale metni, acikca istenmedikce degistirilmez; metin birebir korunur.
 - Zorunlu teknik duzenlemeler (frontmatter, gorsel yolu, link, schema yerlesimi) metin govdesine mudahale etmeden uygulanir.
+
+## Windows CLI & PowerShell Compatibility Rules
+
+When running shell commands or scripting on this Windows system:
+- **Avoid Special Tokens in PowerShell**: PowerShell parses `@` as a splatting token. Never run chained command lines containing symbols like `@{u}..HEAD` or other `@` configurations. Run commands individually or avoid `@` tokens when possible.
+- **Avoid Complex Quote Escaping in Shells**: Writing inline Node/Python commands with escaped double quotes (`node -e "const fs=require('fs'); ... \"fr\" ... "`) fails on Windows CLI shells. Instead, write a clean temporary scratch script file and run it.
+- **UTF-8 Output Configuration**: Windows console defaults to Turkish `cp1254` encoding, which crashes on emojis or non-ASCII characters. Always reconfigure script output streams to UTF-8 (e.g. `sys.stdout.reconfigure(encoding='utf-8')` in Python or `process.stdout.setEncoding('utf-8')` in Node) when outputting logs.
+- **File Encoding Warnings**: Be aware that file checking logs might be output in `utf-16le` format, which can cause viewing tool failures. Transcode them to `utf-8` using commands like `Get-Content -Encoding UTF8` if they fail to open.
+

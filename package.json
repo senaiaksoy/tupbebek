@@ -11,6 +11,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "verify:seo": "node scripts/verify-seo-canonicalization.mjs",
+    "verify:preflight": "node scripts/run-qa-preflight.mjs",
     "verify:placeholder-links": "node scripts/verify-no-placeholder-links.mjs",
     "verify:link-hygiene": "node scripts/verify-link-hygiene.mjs",
     "verify:html-weight": "node scripts/verify-html-weight.mjs",
