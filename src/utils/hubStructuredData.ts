@@ -40,7 +40,6 @@ export function buildHubItemListSchema({
     name,
     description,
     url: `${pageUrl}#${id}`,
-    isPartOf: { '@id': `${pageUrl}#webpage` },
     itemListOrder: 'https://schema.org/ItemListOrderAscending',
     numberOfItems: items.length,
     itemListElement: items.map((item, index) => {
@@ -50,7 +49,9 @@ export function buildHubItemListSchema({
         '@type': 'ListItem',
         position: index + 1,
         name: item.title,
-        url: itemUrl,
+        // `item` and `url` are mutually exclusive on ListItem per Google's
+        // Carousel spec — `item` carries the richer WebPage entity, so `url`
+        // is omitted here rather than duplicated.
         item: {
           '@type': 'WebPage',
           '@id': `${itemUrl}#webpage`,

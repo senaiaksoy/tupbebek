@@ -75,7 +75,8 @@ http://www.tupbebek.com/*                       https://tupbebek.com/:splat     
 /tup-bebek-evraklari-ve-testleri*                /tani-sureci/                                    301
 /tedaviniz*                                      /ivf-rehberi/                                    301
 /tup-bebekte-ozel-uygulamalar*                   /tedavi-yontemleri/                              301
-/yazar*                                          /yayin-kurulu/                                   301
+/yazar                                            /yayin-kurulu/                                   301
+/yazar/                                           /yayin-kurulu/                                   301
 
 # --------------------------------------------
 # 4. Legacy /tup-bebek-* ve ilgili sayfalar

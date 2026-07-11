@@ -108,13 +108,15 @@ const authorSchema: Record<string, unknown> = isSenaiAksoy
 // üretmek yerine @id referansı, AI engine'lerin reviewer = author = Wikidata
 // Q139893832 entity'sini tek node olarak çözmesini sağlar.
 const isReviewerSenaiAksoy = d.medicalReviewer && /senai\s+aksoy/i.test(d.medicalReviewer);
+const isReviewerOrg = d.medicalReviewer ? /Kurul|Ekip/i.test(d.medicalReviewer) : false;
 const reviewerSchema = d.medicalReviewer
     ? (isReviewerSenaiAksoy
         ? { "@id": SENAI_AKSOY_PERSON_ID }
         : {
-            "@type": /Kurul|Ekip/i.test(d.medicalReviewer) ? "Organization" : "Person",
+            "@type": isReviewerOrg ? "Organization" : "Person",
             "name": d.medicalReviewer,
-            ...(d.reviewerTitle ? { "jobTitle": d.reviewerTitle } : {}),
+            // jobTitle is a Person-only property in schema.org; Organization reviewers omit it.
+            ...(!isReviewerOrg && d.reviewerTitle ? { "jobTitle": d.reviewerTitle } : {}),
         })
     : undefined;
 
