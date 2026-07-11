@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import MedicalDisclaimer from '../components/MedicalDisclaimer.astro';
 import { buildHubItemListSchema } from '../utils/hubStructuredData';
 
 const supportHubLinks = [
@@ -123,16 +124,16 @@ const itemListSchema = buildHubItemListSchema({
             <p class="text-lg md:text-xl text-gray-600 leading-relaxed font-body italic mb-12">
                 İnfertilite sadece tıbbi bir durum değil; derin duygusal, psikolojik ve ilişkisel bir yolculuktur. Kaygı, üzüntü, öfke, yalnızlık hissi ve güç kaybı deneyimleri yaygındır. Bu rehber, bu zorlu süreçte kendinizi anlamanız ve sağlıklı baş etme stratejileri geliştirmeniz için hazırlanmıştır.
             </p>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-4">
                 <div class="bg-gray-50 p-6 rounded-xl shadow-sm border-t-2 border-primary-200">
                     <span class="material-symbols-outlined text-primary-600 mb-3">favorite_border</span>
-                    <h3 class="font-bold text-sm mb-2">%70</h3>
-                    <p class="text-xs text-gray-600 mb-0">İnfertilite kaygısı yaşayan çiftler</p>
+                    <h3 class="font-bold text-sm mb-2">%78,8</h3>
+                    <p class="text-xs text-gray-600 mb-0">İnfertilite tedavisi gören kadınların yaşadığı stres oranı</p>
                 </div>
                 <div class="bg-gray-50 p-6 rounded-xl shadow-sm border-t-2 border-primary-200">
                     <span class="material-symbols-outlined text-primary-600 mb-3">group</span>
-                    <h3 class="font-bold text-sm mb-2">2-3x</h3>
-                    <p class="text-xs text-gray-600 mb-0">Depresyon riski genel nüfus oranına göre</p>
+                    <h3 class="font-bold text-sm mb-2">%31,6</h3>
+                    <p class="text-xs text-gray-600 mb-0">İnfertilite yaşayan kadınlarda depresyon görülme oranı</p>
                 </div>
                 <div class="bg-gray-50 p-6 rounded-xl shadow-sm border-t-2 border-primary-200">
                     <span class="material-symbols-outlined text-primary-600 mb-3">psychology</span>
@@ -140,6 +141,9 @@ const itemListSchema = buildHubItemListSchema({
                     <p class="text-xs text-gray-600 mb-0">Bilişsel davranışçı terapi destek seçeneklerinden biridir</p>
                 </div>
             </div>
+            <p class="text-xs text-gray-500 mb-12">
+                Kaynak: Salari ve ark., 2024 — 53.300 infertil kadını kapsayan 44 çalışmalık bir meta-analiz (<a href="https://pubmed.ncbi.nlm.nih.gov/38459997/" class="underline hover:no-underline">PubMed, DOI: 10.1007/s00404-024-07444-y</a>).
+            </p>
         </section>
 
         <section id="destek-haritasi" class="max-w-5xl mx-auto px-4 md:px-6 lg:px-8 mb-20">
@@ -188,7 +192,7 @@ const itemListSchema = buildHubItemListSchema({
                                 İnfertilite deneyimi, birçok kişi için güçlü duygusal tepkiler tetikler. Kaygı, umutsuzluk, öfke, suçlama hissi ve özgüven kaybı sık görülür. Bu duygular, süreç ilerledikçe ve tedavi sonuçları belirginleştikçe artabilir.
                             </p>
                             <p>
-                                Araştırmalar, infertilite hastalarının %40-50'sinde orta seviyeli depresif belirtiler, %60-70'inde ise kaygı bozukluğu saptadı. Bu oranlar, kronik hastalıklarla eşdeğer seviyededir.
+                                <a href="https://pubmed.ncbi.nlm.nih.gov/38459997/" class="text-primary-700 underline hover:no-underline">2024'te yayımlanan geniş bir meta-analiz</a>, 53.300 infertil kadını kapsayan 44 çalışmayı bir araya getirdi: kadınların %78,8'i stres, %31,6'sı depresyon belirtileri yaşıyor. Bu oranlar, kronik hastalıklarla eşdeğer bir yük anlamına geliyor.
                             </p>
                             <div class="bg-white border-l-4 border-primary rounded-xl p-6 mrd-container">
                                 <h4 class="font-bold text-gray-900 text-sm mb-4 flex items-center gap-2">
@@ -212,10 +216,10 @@ const itemListSchema = buildHubItemListSchema({
                     <div class="md:w-1/2">
                         <div class="relative group">
                             <img class="rounded-2xl shadow-xl w-full" src="/images/library/psikoloji/duygusal-etki.webp" alt="Duygusal destek, duygu işleme süreci" width="512" height="512" loading="lazy"/>
-                            <div class="absolute -bottom-6 -right-6 bg-gray-100 p-4 rounded-lg hidden md:block">
+                            <div class="absolute -bottom-6 -right-6 bg-gray-100 p-4 rounded-lg hidden md:block max-w-[180px]">
                                 <p class="text-xs font-bold text-primary-600 tracking-widest uppercase mb-1">Klinik Veri</p>
-                                <p class="text-2xl font-headline">%60</p>
-                                <p class="text-[10px] text-gray-600">Anksiyete oranı (infertil çiftler)</p>
+                                <p class="text-2xl font-headline">%78,8</p>
+                                <p class="text-[10px] text-gray-600">İnfertilite tedavisi gören kadınların yaşadığı stres oranı (<a href="https://pubmed.ncbi.nlm.nih.gov/38459997/" class="underline hover:no-underline">Salari ve ark., 2024</a>)</p>
                             </div>
                         </div>
                     </div>
@@ -252,10 +256,10 @@ const itemListSchema = buildHubItemListSchema({
                 <div class="md:w-1/2">
                     <div class="relative group">
                         <img class="rounded-2xl shadow-xl w-full" src="/images/library/psikoloji/cift-danismanlik.webp" alt="Çift danışmanlığı, birlikte baş etme" width="512" height="512" loading="lazy"/>
-                        <div class="absolute -bottom-6 -left-6 bg-gray-100 p-4 rounded-lg hidden md:block">
-                            <p class="text-xs font-bold text-primary-600 tracking-widest uppercase mb-1">Klinik Veri</p>
-                            <p class="text-2xl font-headline">%50</p>
-                            <p class="text-[10px] text-gray-600">Çiftlerde iletişim sorunları</p>
+                        <div class="absolute -bottom-6 -left-6 bg-gray-100 p-4 rounded-lg hidden md:block max-w-[180px]">
+                            <p class="text-xs font-bold text-primary-600 tracking-widest uppercase mb-1">İlişki Etkisi</p>
+                            <p class="text-lg font-headline leading-snug">Kaygı ve gerginlik</p>
+                            <p class="text-[10px] text-gray-600">Çiftler cinsellikte ve iletişimde zorlanma yaşayabiliyor</p>
                         </div>
                     </div>
                 </div>
@@ -308,10 +312,10 @@ const itemListSchema = buildHubItemListSchema({
                     <div class="md:w-1/2">
                         <div class="relative group">
                             <img class="rounded-2xl shadow-xl w-full" src="/images/library/psikoloji/mindfulness-meditasyon.webp" alt="Mindfulness ve meditasyon, baş etme stratejileri" width="512" height="512" loading="lazy"/>
-                            <div class="absolute -bottom-6 -right-6 bg-gray-100 p-4 rounded-lg hidden md:block">
+                            <div class="absolute -bottom-6 -right-6 bg-gray-100 p-4 rounded-lg hidden md:block max-w-[180px]">
                                 <p class="text-xs font-bold text-primary-600 tracking-widest uppercase mb-1">Etkili</p>
-                                <p class="text-2xl font-headline">%40</p>
-                                <p class="text-[10px] text-gray-600">Mindfulness'in anksiyete azaltma oranı</p>
+                                <p class="text-lg font-headline leading-snug">Anlamlı azalma</p>
+                                <p class="text-[10px] text-gray-600">Mindfulness sonrası anksiyete ve depresyon belirtilerinde görülüyor (<a href="https://pubmed.ncbi.nlm.nih.gov/36952004/" class="underline hover:no-underline">Wang ve ark., 2023</a>)</p>
                             </div>
                         </div>
                     </div>
@@ -531,21 +535,15 @@ const itemListSchema = buildHubItemListSchema({
                 </div>
                 <div>
                     <p class="font-headline text-lg text-gray-900 mb-1">Yayın Kurulu</p>
-                    <p class="text-sm text-gray-600">
+                    <p class="text-sm text-gray-600 mb-2">
                         Bu rehber, üreme sağlığı alanında uzman <strong class="text-primary-600">tupbebek.com yayın kurulu</strong> tarafından psikolojik danışmanlık perspektifinden hazırlanmış ve onaylanmıştır.
                     </p>
+                    <p class="text-xs text-gray-500">Son güncelleme: 11 Temmuz 2026</p>
                 </div>
             </div>
         </section>
 
-        <!-- Yasal Uyarı -->
-        <section class="max-w-3xl mx-auto px-4 md:px-6 lg:px-8">
-            <div class="bg-amber-50/50 border border-amber-200/50 rounded-xl p-6 text-sm text-gray-600">
-                <p>
-                    <strong class="text-gray-900">Yasal Uyarı:</strong> Bu içerik, psikolojik danışmanlık yeterliliği olmayan bir kaynaktan almaktadır. Bu sayfadaki bilgiler genel bilgilendirme amaçlıdır ve psikoterapi yerine geçmez. Ciddi psikolojik sıkıntınız varsa, lütfen bir psikolog/psikiyatriste başvurun. tupbebek.com, bu rehbere dayanılarak alınan kararlardan sorumlu tutulamaz.
-                </p>
-            </div>
-        </section>
+        <MedicalDisclaimer variant="full" />
     </main>
 
     <Footer />
