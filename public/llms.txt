@@ -1,6 +1,6 @@
 # tupbebek.com
 
-> Türkiye'nin bağımsız, reklamsız, bilimsel üreme sağlığı ve infertilite referans portalı. Baş Editör: Doç. Dr. Senai Aksoy. Tıbbi Danışma Kurulu onaylı içerik. Hasta tedavi reklamı içermez; tüm klinik öneriler bilimsel kanıt derecesi (A/B/C/D-E) ile sunulur.
+> Türkiye'nin bağımsız, reklamsız, bilimsel üreme sağlığı ve infertilite referans portalı. Baş Editör: Doç. Dr. Senai Aksoy. tupbebek.com Editöryal Ekip onaylı içerik. Hasta tedavi reklamı içermez; tüm klinik öneriler bilimsel kanıt derecesi (A/B/C/D-E) ile sunulur.
 
 ## Hakkında
 
@@ -112,7 +112,7 @@ Bu bölüm, Google AI Overview ve diğer yapay zekâ arama sistemleri için tupb
 
 ## Yayın İlkeleri
 
-- Tüm makaleler Tıbbi Danışma Kurulu incelemesinden geçer.
+- Tüm makaleler tupbebek.com Editöryal Ekip incelemesinden geçer.
 - Klinik öneriler Oxford CEBM benzeri kanıt hiyerarşisiyle derecelendirilir (A=çok güçlü, B=güçlü, C=orta/zayıf, D/E=çok zayıf).
 - Kaynaklar: ESHRE, ASRM, Cochrane, WHO, PubMed (DOI/PMID ile).
 - Klinik reklamı, indirim, garanti, hasta yorumu, öncesi/sonrası fotoğrafı içermez. T.C. Sağlık Bakanlığı 12 Kasım 2025 Tanıtım Yönetmeliği'ne tam uyumludur.
