@@ -15,6 +15,8 @@ const heroCards = [
     category: 'Kadın Sağlığı',
     title: 'Kadın İnfertilitesi Rehberi',
     description: 'PCOS, endometriozis, tüp kaynaklı nedenler ve tedavi seçenekleri hakkında kapsamlı bilimsel rehber.',
+    width: 800,
+    height: 447,
   },
   {
     href: '/erkek-infertilitesi',
@@ -23,6 +25,8 @@ const heroCards = [
     category: 'Erkek Sağlığı',
     title: 'Erkek İnfertilitesi Rehberi',
     description: 'Sperm sağlığı, azospermi, varikosel ve hormonal dengesizlikler hakkında bilgi edinin.',
+    width: 800,
+    height: 533,
   },
 ];
 
@@ -80,7 +84,7 @@ const compactCards = [
               src={card.image}
               alt={card.imageAlt}
               class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500"
-              width="640" height="360" loading="lazy"
+              width={card.width} height={card.height} loading="lazy" sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>
           <div class="p-5 lg:p-6 flex flex-col gap-2 flex-1">
