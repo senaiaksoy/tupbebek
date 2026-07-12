@@ -41,6 +41,8 @@ interface Props {
             imageAlt?: string;
             imageWidth?: number;
             imageHeight?: number;
+            videoId?: string;
+            videoTitle?: string;
             references?: Reference[];
         };
     };
@@ -343,21 +345,27 @@ const articleSchema = {
         "name": "Reproductive Medicine",
     },
     ...(citations.length > 0 ? { "citation": citations } : {}),
+    ...(d.videoId ? {
+        "video": {
+            "@type": "VideoObject",
+            "@id": `${canonicalUrl.toString()}#video`,
+            "name": d.videoTitle || d.title,
+            "description": d.description,
+            "thumbnailUrl": [
+                `https://img.youtube.com/vi/${d.videoId}/maxresdefault.jpg`,
+                `https://img.youtube.com/vi/${d.videoId}/hqdefault.jpg`,
+            ],
+            "uploadDate": d.publishDate
+                ? d.publishDate.toISOString().split('T')[0]
+                : '2026-06-02',
+            "contentUrl": `https://www.youtube.com/watch?v=${d.videoId}`,
+            "embedUrl": `https://www.youtube.com/embed/${d.videoId}`,
+            "inLanguage": "tr-TR",
+            "publisher": { "@id": ORG_ID },
+            "isPartOf": { "@id": `${canonicalUrl.toString()}#article` },
+        },
+    } : {}),
 };
-
-const videoSchema = d.videoId ? {
-    "@context": "https://schema.org",
-    "@type": "VideoObject",
-    "name": d.videoTitle || d.title,
-    "description": d.description,
-    "thumbnailUrl": [
-        `https://img.youtube.com/vi/${d.videoId}/maxresdefault.jpg`,
-        `https://img.youtube.com/vi/${d.videoId}/hqdefault.jpg`
-    ],
-    "uploadDate": d.publishDate ? d.publishDate.toISOString() : new Date('2026-06-02').toISOString(),
-    "embedUrl": `https://www.youtube.com/embed/${d.videoId}`
-} : null;
 ---
 
 <script type="application/ld+json" is:inline set:html={JSON.stringify(articleSchema)} />
-{videoSchema && <script type="application/ld+json" is:inline set:html={JSON.stringify(videoSchema)} />}
