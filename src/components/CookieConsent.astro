@@ -68,7 +68,25 @@ const { version = "1.4" } = Astro.props;
   const acceptButton = document.getElementById('cookie-accept');
   const rejectButton = document.getElementById('cookie-reject');
   let previousBodyOverflow = '';
+  let previousBodyPaddingRight = '';
   let lastFocusedElement = null;
+
+  const getScrollbarWidth = () => Math.max(0, window.innerWidth - document.documentElement.clientWidth);
+
+  const applyScrollbarCompensation = () => {
+    const scrollbarWidth = getScrollbarWidth();
+    if (scrollbarWidth <= 0) return;
+
+    document.body.style.paddingRight = `${scrollbarWidth}px`;
+    document.getElementById('main-header')?.style.setProperty('padding-right', `${scrollbarWidth}px`);
+    document.querySelector('nav[aria-label="Mobil navigasyon"]')?.style.setProperty('padding-right', `${scrollbarWidth}px`);
+  };
+
+  const clearScrollbarCompensation = () => {
+    document.body.style.paddingRight = previousBodyPaddingRight;
+    document.getElementById('main-header')?.style.removeProperty('padding-right');
+    document.querySelector('nav[aria-label="Mobil navigasyon"]')?.style.removeProperty('padding-right');
+  };
 
   const readConsent = () => {
     try {
@@ -92,11 +110,14 @@ const { version = "1.4" } = Astro.props;
 
   const lockPage = () => {
     previousBodyOverflow = document.body.style.overflow;
+    previousBodyPaddingRight = document.body.style.paddingRight;
+    applyScrollbarCompensation();
     document.body.style.overflow = 'hidden';
   };
 
   const unlockPage = () => {
     document.body.style.overflow = previousBodyOverflow;
+    clearScrollbarCompensation();
   };
 
   const keepFocusInModal = (event) => {
@@ -151,8 +172,16 @@ const { version = "1.4" } = Astro.props;
     });
   };
 
+  const scheduleShow = () => {
+    requestAnimationFrame(() => requestAnimationFrame(show));
+  };
+
   if (!readConsent()) {
-    show();
+    if (document.readyState === 'complete') {
+      scheduleShow();
+    } else {
+      window.addEventListener('load', scheduleShow, { once: true });
+    }
   } else {
     toggle.classList.remove('hidden');
   }
