@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "prebuild": "node scripts/enrich-pmids.mjs --apply && node scripts/build-image-manifest.mjs",
+    "prebuild": "node scripts/enrich-pmids.mjs --apply && node scripts/build-image-manifest.mjs && node scripts/build-search-index.mjs",
     "build": "astro build && node scripts/postbuild-seo.mjs && echo _worker.js > dist/.assetsignore && npx pagefind --site dist --glob \"makaleler/**/*.html\"",
     "deploy": "node scripts/deploy-pages.mjs",
     "preview": "astro preview",

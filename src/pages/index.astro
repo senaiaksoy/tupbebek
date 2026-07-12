@@ -10,11 +10,17 @@ import ExpertBoard from '../components/home/ExpertBoard.astro';
 import Methodology from '../components/home/Methodology.astro';
 import PreferredSourceCTA from '../components/PreferredSourceCTA.astro';
 import Footer from '../components/home/Footer.astro';
+import { getPublishedArticles, sanitizeImage } from '../utils/articles';
+
+const articles = await getPublishedArticles();
+const featured = articles.find((article) => article.data.featured) || articles[0];
+const lcpImage = featured ? sanitizeImage(featured.data.image) : undefined;
 ---
 
 <BaseLayout
   title="tupbebek.com | Üreme Sağlığı Bilgi Portalı"
   description="Tüp bebek (IVF), infertilite nedenleri, tanı süreci ve tedavi yöntemleri hakkında bilimsel ve güncel bilgiler."
+  image={lcpImage}
 >
   <Header />
 

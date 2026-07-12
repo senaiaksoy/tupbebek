@@ -12,13 +12,11 @@ export interface SearchItem {
 }
 
 export interface Props {
-  searchData: SearchItem[];
   placeholder?: string;
   maxResults?: number;
 }
 
 const {
-  searchData = [],
   placeholder = 'PCOS, IVF, AMH Testi...',
   maxResults = 6
 } = Astro.props;
@@ -108,7 +106,30 @@ const {
   }
 </style>
 
-<script define:vars={{ searchData, maxResults }}>
+<script define:vars={{ maxResults }}>
+  let searchData = [];
+  let searchDataLoaded = false;
+  let searchDataLoading = null;
+
+  async function ensureSearchData() {
+    if (searchDataLoaded) return searchData;
+    if (!searchDataLoading) {
+      searchDataLoading = fetch('/search-index.json')
+        .then((response) => response.ok ? response.json() : [])
+        .then((data) => {
+          searchData = Array.isArray(data) ? data : [];
+          searchDataLoaded = true;
+          return searchData;
+        })
+        .catch(() => {
+          searchData = [];
+          searchDataLoaded = true;
+          return searchData;
+        });
+    }
+    return searchDataLoading;
+  }
+
   const input = document.getElementById('hero-search-input');
   const dropdown = document.getElementById('hero-search-dropdown');
   const resultsList = document.getElementById('hero-search-results');
@@ -122,14 +143,14 @@ const {
   // Listen for custom category filter event
   document.addEventListener('hero-filter-change', (e) => {
     activeCategory = e.detail?.category ?? null;
-    // Re-search if there's input text
     if (activeCategory && input?.value.trim()) {
-      performSearch(input.value.trim());
+      void performSearch(input.value.trim());
     }
   }, { passive: true });
 
   // Focus handling: Show dropdown when input is focused with text
   input?.addEventListener('focus', () => {
+    ensureSearchData();
     if (input.value.trim()) {
       showDropdown();
     }
@@ -150,7 +171,7 @@ const {
       clearTimeout(searchTimeout);
       searchTimeout = setTimeout(function() {
         if (query.length >= 2) {
-          performSearch(query);
+          void performSearch(query);
         } else {
           resetDropdown();
         }
@@ -182,7 +203,8 @@ const {
     }
   });
 
-  function performSearch(query) {
+  async function performSearch(query) {
+    await ensureSearchData();
     const trimmed = query.toLowerCase();
 
     // Filter results

@@ -275,6 +275,7 @@ export default defineConfig({
     mdx(),
   ],
   build: {
-    inlineStylesheets: 'never',
+    // Inline Tailwind to eliminate render-blocking 100KB+ external CSS (PSI LCP).
+    inlineStylesheets: 'always',
   },
 });

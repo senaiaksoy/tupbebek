@@ -6,8 +6,6 @@
  */
 import { getPublishedArticles, sanitizeImage } from '../../utils/articles';
 import HeroSearch from '../HeroSearch.astro';
-import { getSearchData } from '../../utils/searchData';
-const searchData = await getSearchData();
 
 const articles = await getPublishedArticles();
 const featured = articles.find(a => a.data.featured) || articles[0];
@@ -15,20 +13,12 @@ const featuredDate = featured?.data.lastModified || featured?.data.publishDate;
 const formattedDate = featuredDate ? new Date(featuredDate).toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' }) : '';
 ---
 
-<section class="pt-8 pb-8 lg:pt-12 lg:pb-12">
-  <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+<section class="pt-8 pb-8 lg:pt-12 lg:pb-12 flex flex-col">
+  <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 w-full flex flex-col">
 
-    <!-- Hero Header & Search -->
-    <div class="mb-12 max-w-3xl">
-      <h1 class="text-3xl md:text-5xl font-headline font-bold text-gray-900 mb-8 leading-tight">
-        Bilgi Güçtür: <br/><span class="text-primary-600">Tüp Bebek ve Üreme Sağlığı Rehberiniz</span>
-      </h1>
-      <HeroSearch searchData={searchData} />
-    </div>
-
-    <!-- Featured Article Hero -->
+    <!-- Featured Article Hero (mobile-first for LCP) -->
     {featured && (
-      <a href={`/makaleler/${featured.slug}`} class="group block">
+      <a href={`/makaleler/${featured.slug}`} class="group block order-1 lg:order-2 mb-12">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
 
           <!-- Image -->
@@ -81,6 +71,14 @@ const formattedDate = featuredDate ? new Date(featuredDate).toLocaleDateString('
         </div>
       </a>
     )}
+
+    <!-- Hero Header & Search -->
+    <div class="order-2 lg:order-1 mb-0 lg:mb-12 max-w-3xl">
+      <h1 class="text-3xl md:text-5xl font-headline font-bold text-gray-900 mb-8 leading-tight">
+        Bilgi Güçtür: <br/><span class="text-primary-600">Tüp Bebek ve Üreme Sağlığı Rehberiniz</span>
+      </h1>
+      <HeroSearch />
+    </div>
 
   </div>
 </section>

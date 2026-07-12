@@ -18,6 +18,14 @@
 /fonts/*
   Cache-Control: public, max-age=31536000, immutable
 
+# Astro build assets
+/_astro/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Search fallback index
+/search-index.json
+  Cache-Control: public, max-age=86400
+
 # Image caching
 /images/*
   Cache-Control: public, max-age=604800

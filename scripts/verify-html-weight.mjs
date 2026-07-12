@@ -27,7 +27,8 @@ if (!fs.existsSync(distDir)) {
       .reduce((total, match) => total + match[0].length, 0);
     const megaMenuInitializers = [...html.matchAll(/function initMegaMenus/gu)].length;
 
-    if (inlineStyleBytes > 10_000) {
+    // Tailwind is intentionally inlined (inlineStylesheets: 'always') for LCP.
+    if (inlineStyleBytes > 140_000) {
       failures.push(`${relativePath} has ${inlineStyleBytes} bytes of inline CSS`);
     }
     if (megaMenuInitializers > 1) {

@@ -3,8 +3,6 @@
 // Pagefind-powered search with modal overlay UI
 // Usage: <SearchAutocomplete />
 
-import { getSearchData } from '../utils/searchData';
-
 export interface Props {
   placeholder?: string;
   maxResults?: number;
@@ -14,8 +12,6 @@ const {
   placeholder = 'Rehberlerde ara...',
   maxResults = 8
 } = Astro.props;
-
-const fallbackData = await getSearchData();
 ---
 
 <!-- Search Modal/Overlay -->
@@ -146,10 +142,29 @@ const fallbackData = await getSearchData();
   }
 </style>
 
-<script define:vars={{ maxResults, fallbackData }}>
+<script define:vars={{ maxResults }}>
   let pagefind = null;
+  let fallbackData = null;
+  let fallbackLoading = null;
   let searchTimeout;
   const debounceDelay = 200;
+
+  async function loadFallbackData() {
+    if (fallbackData) return fallbackData;
+    if (!fallbackLoading) {
+      fallbackLoading = fetch('/search-index.json')
+        .then((response) => response.ok ? response.json() : [])
+        .then((data) => {
+          fallbackData = Array.isArray(data) ? data : [];
+          return fallbackData;
+        })
+        .catch(() => {
+          fallbackData = [];
+          return fallbackData;
+        });
+    }
+    return fallbackLoading;
+  }
 
   const modal = document.getElementById('search-modal');
   const input = document.getElementById('search-input');
@@ -279,8 +294,9 @@ const fallbackData = await getSearchData();
     }
 
     if (!pagefindOk) {
+      const data = await loadFallbackData();
       const normalized = trimmed.toLowerCase();
-      const filtered = fallbackData.filter((item) => {
+      const filtered = data.filter((item) => {
         return item.title.toLowerCase().includes(normalized) ||
                (item.description && item.description.toLowerCase().includes(normalized)) ||
                (item.category && item.category.toLowerCase().includes(normalized));
