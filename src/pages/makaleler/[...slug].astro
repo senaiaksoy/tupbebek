@@ -120,6 +120,23 @@ const heroDimensions = resolveImageDimensions({
                     {entry.data.title}
                 </h1>
 
+            <!-- Hero Image — LCP adayı: H1'den hemen sonra (EEAT/kartlar öncesi) -->
+            {entry.data.image && (
+                <div class="aspect-video rounded-xl overflow-hidden mb-8 border border-gray-100">
+                    <img
+                        src={sanitizedImage}
+                        alt={entry.data.imageAlt || entry.data.title}
+                        class="w-full h-full object-cover"
+                        width={heroDimensions.width}
+                        height={heroDimensions.height}
+                        loading="eager"
+                        fetchpriority="high"
+                        decoding="async"
+                        sizes="(min-width: 1024px) 768px, 100vw"
+                    />
+                </div>
+            )}
+
                 <!-- Description -->
                 {entry.data.description && (
                     <p class="text-lg text-gray-500 leading-relaxed mb-8">{entry.data.description}</p>
@@ -161,24 +178,6 @@ const heroDimensions = resolveImageDimensions({
                     <EditorKunyesi variant="compact" />
                 </div>
             </header>
-
-            <!-- Hero Image — 1600x900 master (16:9). Display: aspect-video, object-cover.
-                 Intrinsic boyutlar schema/OG meta ile hizalı (CLS=0). -->
-            {entry.data.image && (
-                <div class="aspect-video rounded-xl overflow-hidden mb-10 border border-gray-100">
-                    <img
-                        src={sanitizedImage}
-                        alt={entry.data.imageAlt || entry.data.title}
-                        class="w-full h-full object-cover"
-                        width={heroDimensions.width}
-                        height={heroDimensions.height}
-                        loading="eager"
-                        fetchpriority="high"
-                        decoding="async"
-                        sizes="(min-width: 1024px) 768px, 100vw"
-                    />
-                </div>
-            )}
 
             <!-- Video Embed (if article has videoId) -->
             {entry.data.videoId && (

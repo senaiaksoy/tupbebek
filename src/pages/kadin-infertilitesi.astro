@@ -5,10 +5,11 @@ import Footer from '../components/Footer.astro';
 import StatsStrip from '../components/StatsStrip.astro';
 import RelatedContent from '../components/RelatedContent.astro';
 import MedicalDisclaimer from '../components/MedicalDisclaimer.astro';
+import HizliCevap from '../components/HizliCevap.astro';
 import { buildHubItemListSchema } from '../utils/hubStructuredData';
 
-const pageTitle = 'Kadın İnfertilitesi Rehberi | tupbebek.com';
-const pageDescription = 'Kadın infertilitesi nedenleri: PCOS, endometriozis, düşük AMH, tüp kaynaklı nedenler, miyomlar, hormon paneli ve tanı süreci hakkında bilimsel rehber.';
+const pageTitle = 'Kadın İnfertilitesi: Nedenler, Tanı ve Tedavi Rehberi | tupbebek.com';
+const pageDescription = 'Kadın infertilitesi nedir? PCOS, endometriozis, düşük AMH, tüp kaynaklı nedenler, miyomlar, hormon paneli ve tanı süreci hakkında bilimsel rehber.';
 
 const clusterLinks = [
   {
@@ -160,6 +161,12 @@ const itemListSchema = buildHubItemListSchema({
                 </div>
             </div>
         </header>
+
+        <div class="max-w-3xl mx-auto px-4 md:px-6 lg:px-8 mb-16">
+            <HizliCevap question="Kadın infertilitesi nedir ve nasıl değerlendirilir?">
+                Kadın infertilitesi; yumurtlama düzeni, yumurtalık rezervi, fallop tüpleri, rahim içi ortam ve endometriozis gibi birden fazla başlığın birlikte incelenmesini gerektirir. Değerlendirme genellikle öykü, hormon paneli, ultrason ve gerektiğinde histerosalpingografi veya histeroskopi ile başlar. <a href="/tani-sureci/" class="font-semibold text-primary-700 underline hover:no-underline">Tanı süreci</a> ve <a href="/hormon-paneli/" class="font-semibold text-primary-700 underline hover:no-underline">hormon paneli</a> sayfaları bu haritanın pratik başlangıç noktalarıdır.
+            </HizliCevap>
+        </div>
 
         <!-- Scientific Introduction -->
         <section class="max-w-3xl mx-auto px-4 md:px-6 lg:px-8 mb-16">
@@ -424,7 +431,7 @@ const itemListSchema = buildHubItemListSchema({
                 <ul class="space-y-3 text-sm text-gray-600">
                     <li>• <a href="https://www.asrm.org/practice-guidance/practice-committee-documents/fertility-evaluation-of-infertile-women-a-committee-opinion-2021/" class="text-primary-600 hover:underline" rel="noopener noreferrer">ASRM Fertility Evaluation of Infertile Women Committee Opinion (2021)</a></li>
                     <li>• <a href="https://www.eshre.eu/Guideline/Endometriosis" class="text-primary-600 hover:underline" rel="noopener noreferrer">ESHRE Endometriosis Guideline (2022)</a></li>
-                    <li>• <a href="https://research.monash.edu/en/publications/international-evidence-based-guideline-for-the-assessment-and-man/" class="text-primary-600 hover:underline" rel="noopener noreferrer">International Evidence-based Guideline for PCOS (2023)</a></li>
+                    <li>• <a href="https://pubmed.ncbi.nlm.nih.gov/37890486/" class="text-primary-600 hover:underline" rel="noopener noreferrer">International Evidence-based Guideline for PCOS (2023)</a></li>
                     <li>• <a href="https://www.asrm.org/practice-guidance/practice-committee-documents/obesity-and-reproduction-a-committee-opinion-2021/" class="text-primary-600 hover:underline" rel="noopener noreferrer">ASRM Obesity and Reproduction Committee Opinion (2021)</a></li>
                 </ul>
             </div>

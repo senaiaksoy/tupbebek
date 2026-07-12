@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import MedicalDisclaimer from '../components/MedicalDisclaimer.astro';
+import HizliCevap from '../components/HizliCevap.astro';
 import { buildHubItemListSchema } from '../utils/hubStructuredData';
 
 const supportHubLinks = [
@@ -86,7 +87,7 @@ const itemListSchema = buildHubItemListSchema({
 });
 ---
 
-<BaseLayout title="Psikolojik Destek ve Duygusal Rehber: İnfertilite Yolculuğu | tupbebek.com" description="İnfertilite sürecinin duygusal etkileri, çift ilişkileri, başarısız denemeler ve profesyonel destek alma zamanı. Duygusal rehber ve destek kaynakları.">
+<BaseLayout title="İnfertilite ve Tüp Bebekte Psikolojik Destek Rehberi | tupbebek.com" description="İnfertilite ve tüp bebek sürecinde kaygı, başarısız deneme, beta-hCG bekleme ve çift ilişkisi için psikolojik destek rehberi. Profesyonel yardım ne zaman gerekir?">
     <script type="application/ld+json" is:inline set:html={JSON.stringify(faqSchema)} />
     <script type="application/ld+json" is:inline set:html={JSON.stringify(itemListSchema)} />
     <Header />
@@ -101,7 +102,7 @@ const itemListSchema = buildHubItemListSchema({
                         Duygusal Rehber
                     </div>
                     <h1 class="font-headline text-5xl md:text-6xl text-gray-900 leading-tight mb-8">
-                        Psikolojik Destek: <span class="text-primary-600 italic">Bu Yolculukta</span> Yalnız Değilsiniz
+                        İnfertilite ve Tüp Bebekte <span class="text-primary-600 italic">Psikolojik Destek</span>
                     </h1>
                     <div class="flex items-center gap-4 p-4 bg-gray-50 rounded-xl border-l-4 border-primary">
                         <div class="w-12 h-12 rounded-full overflow-hidden bg-gray-200">
@@ -119,6 +120,12 @@ const itemListSchema = buildHubItemListSchema({
             </div>
         </header>
 
+        <div class="max-w-3xl mx-auto px-4 md:px-6 lg:px-8 mb-16">
+            <HizliCevap question="İnfertilite sürecinde psikolojik destek ne zaman gerekir?">
+                İnfertilite ve tüp bebek sürecinde kaygı, belirsizlik ve tekrarlayan denemeler duygusal yükü artırabilir; bu normal bir yanıttır. Psikolojik destek, gebelik şansını garanti etmez; ancak uyku bozulması, yoğun çökkünlük, ilişki çatışması veya günlük işlevi etkileyen kaygı birkaç haftadan uzun sürerse geciktirilmemelidir. <a href="/makaleler/duygusal-dayaniklik-rehberi/" class="font-semibold text-primary-700 underline hover:no-underline">Duygusal dayanıklılık rehberi</a> ve <a href="/basarisiz-denemeler/" class="font-semibold text-primary-700 underline hover:no-underline">başarısız denemeler</a> sayfaları bu süreçte tamamlayıcı kaynaklardır.
+            </HizliCevap>
+        </div>
+
         <!-- Introduction - empathetic -->
         <section class="max-w-3xl mx-auto px-4 md:px-6 lg:px-8 mb-24">
             <p class="text-lg md:text-xl text-gray-600 leading-relaxed font-body italic mb-12">
@@ -127,17 +134,17 @@ const itemListSchema = buildHubItemListSchema({
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-4">
                 <div class="bg-gray-50 p-6 rounded-xl shadow-sm border-t-2 border-primary-200">
                     <span class="material-symbols-outlined text-primary-600 mb-3">favorite_border</span>
-                    <h3 class="font-bold text-sm mb-2">%78,8</h3>
+                    <p class="font-bold text-sm mb-2">%78,8</p>
                     <p class="text-xs text-gray-600 mb-0">İnfertilite tedavisi gören kadınların yaşadığı stres oranı</p>
                 </div>
                 <div class="bg-gray-50 p-6 rounded-xl shadow-sm border-t-2 border-primary-200">
                     <span class="material-symbols-outlined text-primary-600 mb-3">group</span>
-                    <h3 class="font-bold text-sm mb-2">%31,6</h3>
+                    <p class="font-bold text-sm mb-2">%31,6</p>
                     <p class="text-xs text-gray-600 mb-0">İnfertilite yaşayan kadınlarda depresyon görülme oranı</p>
                 </div>
                 <div class="bg-gray-50 p-6 rounded-xl shadow-sm border-t-2 border-primary-200">
                     <span class="material-symbols-outlined text-primary-600 mb-3">psychology</span>
-                    <h3 class="font-bold text-sm mb-2">CBT</h3>
+                    <p class="font-bold text-sm mb-2">CBT</p>
                     <p class="text-xs text-gray-600 mb-0">Bilişsel davranışçı terapi destek seçeneklerinden biridir</p>
                 </div>
             </div>
@@ -195,10 +202,10 @@ const itemListSchema = buildHubItemListSchema({
                                 <a href="https://pubmed.ncbi.nlm.nih.gov/38459997/" class="text-primary-700 underline hover:no-underline">2024'te yayımlanan geniş bir meta-analiz</a>, 53.300 infertil kadını kapsayan 44 çalışmayı bir araya getirdi: kadınların %78,8'i stres, %31,6'sı depresyon belirtileri yaşıyor. Bu oranlar, kronik hastalıklarla eşdeğer bir yük anlamına geliyor.
                             </p>
                             <div class="bg-white border-l-4 border-primary rounded-xl p-6 mrd-container">
-                                <h4 class="font-bold text-gray-900 text-sm mb-4 flex items-center gap-2">
+                                <h3 class="font-bold text-gray-900 text-sm mb-4 flex items-center gap-2">
                                     <span class="material-symbols-outlined text-primary-600">psychology</span>
                                     Yaygın Duygusal Belirtiler
-                                </h4>
+                                </h3>
                                 <div class="grid grid-cols-2 gap-4 text-sm">
                                     <div><strong>Kaygı:</strong> Gelecek korkusu, kontrol kaybı</div>
                                     <div><strong>Üzüntü:</strong> Gönül darlığı, hüzün, ağlama</div>
@@ -240,10 +247,10 @@ const itemListSchema = buildHubItemListSchema({
                             Cinsellik, sosyal ilişkiler ve iletişim kalitesi etkilenebilir. Sadece bebek "amaçlı" cinsellik, kaygı ve performans baskısı yaratır. Bazen çiftler birbirinden uzaklaşabilir; bu da gerginliğin artmasına neden olabilir.
                         </p>
                         <div class="bg-white border-l-4 border-primary rounded-xl p-6 mrd-container">
-                            <h4 class="font-bold text-gray-900 text-sm mb-4 flex items-center gap-2">
+                            <h3 class="font-bold text-gray-900 text-sm mb-4 flex items-center gap-2">
                                 <span class="material-symbols-outlined text-primary-600">psychology</span>
                                 İletişim Stratejileri
-                            </h4>
+                            </h3>
                             <div class="space-y-4 text-sm">
                                 <p><strong>Açık İletişim:</strong> Duyguları önyargısız paylaşın. "Ben dili" ifadelerini kullanın. ("Kendimi çaresiz hissediyorum", "Yalnız kalmaktan korkuyorum" gibi).</p>
                                 <p><strong>Empati:</strong> Partnerinizin duygularına alan açın. Onun deneyimini kabul edin, hemen "çözüm bulma" moduna geçmek yerine sadece orada olun.</p>
@@ -277,10 +284,10 @@ const itemListSchema = buildHubItemListSchema({
                                 Bilinçlı baş etme stratejileri, duygusal dayanıklılığınızı artırabilir. Tedavi sürecinde sizin kontrolünüzde olan şeyler (yaşam tarzı, stres yönetimi, sosyal medya kullanımı) odaklanabileceğiniz alanlardır.
                             </p>
                             <div class="bg-white border-l-4 border-primary rounded-xl p-6 mrd-container">
-                                <h4 class="font-bold text-gray-900 text-sm mb-4 flex items-center gap-2">
+                                <h3 class="font-bold text-gray-900 text-sm mb-4 flex items-center gap-2">
                                     <span class="material-symbols-outlined text-primary-600">clinical_notes</span>
                                     Etkili Stratejiler
-                                </h4>
+                                </h3>
                                 <ul class="space-y-4 text-sm">
                                     <li class="flex gap-2">
                                         <span class="material-symbols-outlined text-primary-600 shrink-0">check_circle</span>
@@ -336,10 +343,10 @@ const itemListSchema = buildHubItemListSchema({
                             Yas süreci doğal ve gerekli bir süreçtir. Şok, inkara, öfke, pazarlık, depresyon ve kabul evrelerinden geçersiniz. Bu evreler düzensizdir; bazen aynı gün içinde birden çok evre yaşayabilirsiniz.
                         </p>
                         <div class="bg-gray-50 border-l-4 border-primary rounded-xl p-6 mrd-container">
-                            <h4 class="font-bold text-gray-900 text-sm mb-4 flex items-center gap-2">
+                            <h3 class="font-bold text-gray-900 text-sm mb-4 flex items-center gap-2">
                                 <span class="material-symbols-outlined text-primary-600">history_edu</span>
                                 Ne Zaman Tekrar Denemeliyim?
-                            </h4>
+                            </h3>
                             <div class="space-y-4 text-sm">
                                 <div class="flex items-start gap-4">
                                     <span class="font-mono font-bold text-primary-600 shrink-0">Kişisel karar</span>
@@ -385,10 +392,10 @@ const itemListSchema = buildHubItemListSchema({
                             </p>
                             <div class="bg-white border-l-4 border-primary rounded-xl p-6 mrd-container">
                         <div class="bg-gray-50 border-l-4 border-primary rounded-xl p-6 mrd-container">
-                            <h4 class="font-bold text-gray-900 text-sm mb-4 flex items-center gap-2">
+                            <h3 class="font-bold text-gray-900 text-sm mb-4 flex items-center gap-2">
                                 <span class="material-symbols-outlined text-primary-600">psychology</span>
                                 Kırmızı Bayraklar (Yardım Zamanı)
-                            </h4>
+                            </h3>
                                 <ul class="space-y-2 text-sm">
                                     <li>• Sürekli uykusuzluk, iştahsızlık veya belirgin kilo kaybı</li>
                                     <li>• Kendine zarar verme düşünceleri</li>
@@ -399,7 +406,7 @@ const itemListSchema = buildHubItemListSchema({
                                 </ul>
                             </div>
                             <div class="bg-gray-50 border-l-4 border-primary rounded-xl p-6">
-                                <h4 class="font-bold text-gray-900 text-sm mb-3">Yardımcı Olabilecek Terapiler</h4>
+                                <h3 class="font-bold text-gray-900 text-sm mb-3">Yardımcı Olabilecek Terapiler</h3>
                                 <div class="space-y-4 text-sm">
                                     <div>
                                         <strong>CBT (Bilişsel Davranışçı Terapi):</strong> Olumsuz düşünceleri fark etme ve zihinsel yapılandırma.
@@ -438,10 +445,10 @@ const itemListSchema = buildHubItemListSchema({
                             Benzer deneyimleri yaşayan insanlarla bağlantı kurmak, yalnızlık hissini azaltabilir ve pratik bilgiler edinmenizi sağlayabilir.
                         </p>
                         <div class="bg-white border-l-4 border-primary rounded-xl p-6 mrd-container">
-                            <h4 class="font-bold text-gray-900 text-sm mb-4 flex items-center gap-2">
+                            <h3 class="font-bold text-gray-900 text-sm mb-4 flex items-center gap-2">
                                 <span class="material-symbols-outlined text-primary-600">group</span>
                                 Türkçe Destek Grupları & Kaynaklar
-                            </h4>
+                            </h3>
                             <ul class="space-y-4 text-sm">
                                 <li class="flex gap-2">
                                     <span class="material-symbols-outlined text-primary-600 shrink-0">link</span>

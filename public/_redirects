@@ -105,6 +105,17 @@ http://www.tupbebek.com/*                       https://tupbebek.com/:splat     
 # Bozuk / kesilmiş URL'ler
 /blog/opk-ve%20ivf/                             /makaleler/opk-ve-ivf/                          301
 
+# GSC: hâlâ SERP'te görünen /blog/ URL'leri → kanonik makaleler
+/blog/yumurtlama-takibi-ve-iliski-planlamasi-nedir*  /makaleler/yumurtlama-takibi/              301
+/blog/embriyo-tup-bebek-laboratuvar-raporu-yorumlama*  /makaleler/laboratuvar-raporu-yorumlama/  301
+/blog/akraba-evliligi-neden-tehlikelidir*       /makaleler/akraba-evliligi/                     301
+/blog/tup-bebekte-basarili-sonuc-icin-kac-yumurta-gerekir*  /makaleler/kac-yumurta-gerekir/    301
+/blog/istanbul-tup-bebek-doktoru-merkezi-secimi-rehberi*  /makaleler/istanbul-tup-bebek-doktoru/  301
+
+# Slashsiz makale URL'leri (GSC duplicate)
+/makaleler/pcos-yeni-adi-pmos                   /makaleler/pcos-yeni-adi-pmos/                  301
+/makaleler/izotretinoin-sperm                   /makaleler/izotretinoin-sperm/                  301
+
 # --------------------------------------------
 # 6. /blog/sayfa/N/ pagination
 # --------------------------------------------

@@ -246,6 +246,7 @@ export const footerLinks = [
       { label: 'Tıbbi Sözlük', href: '/tibbi-sozluk' },
       { label: 'Sık Sorulan Sorular', href: '/sss' },
       { label: 'Beslenme & Yaşam', href: '/beslenme-yasam' },
+      { label: 'Instagram Paylaşımları', href: '/instagram/' },
       { label: 'Duygusal Destek', href: '/duygusal-destek' },
       { label: 'E-Kitap İndir', href: '/e-kitap-indir' },
     ]

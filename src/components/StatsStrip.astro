@@ -14,7 +14,7 @@ const { items } = Astro.props;
   {items.map((item) => (
     <div class="bg-gray-50 p-6 rounded-xl shadow-sm border-t-2 border-primary-200">
       <span class="material-symbols-outlined text-primary-600 mb-3">{item.icon}</span>
-      <h3 class="font-bold text-sm mb-2">{item.heading}</h3>
+      <p class="font-bold text-sm mb-2">{item.heading}</p>
       <p class="text-xs text-gray-600 mb-0">{item.text}</p>
     </div>
   ))}

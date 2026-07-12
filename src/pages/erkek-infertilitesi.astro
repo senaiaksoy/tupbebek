@@ -5,10 +5,11 @@ import Footer from '../components/Footer.astro';
 import StatsStrip from '../components/StatsStrip.astro';
 import RelatedContent from '../components/RelatedContent.astro';
 import MedicalDisclaimer from '../components/MedicalDisclaimer.astro';
+import HizliCevap from '../components/HizliCevap.astro';
 import { buildHubItemListSchema } from '../utils/hubStructuredData';
 
-const pageTitle = 'Erkek İnfertilitesi Rehberi | tupbebek.com';
-const pageDescription = 'Erkek infertilitesi nedenleri, semen analizi, varikosel, azospermi, mikro-TESE, ICSI ve yaşam tarzı etkileri hakkında bilimsel rehber.';
+const pageTitle = 'Erkek İnfertilitesi: Nedenler ve Tedavi Rehberi | tupbebek.com';
+const pageDescription = 'Erkek infertilitesi nedir? Semen analizi, varikosel, azospermi, mikro-TESE, ICSI ve yaşam tarzı etkileri hakkında bilimsel rehber.';
 
 const clusterLinks = [
   {
@@ -136,6 +137,12 @@ const itemListSchema = buildHubItemListSchema({
                 </div>
             </div>
         </header>
+
+        <div class="max-w-3xl mx-auto px-4 md:px-6 lg:px-8 mb-16">
+            <HizliCevap question="Erkek infertilitesi nedir ve ilk değerlendirme nasıl yapılır?">
+                Erkek infertilitesi, infertilite yaşayan çiftlerin önemli bir bölümünde tek başına veya kadın faktörüyle birlikte rol oynayabilir. İlk basamak genellikle doğru alınmış bir semen analizi ve üroloji/androloji değerlendirmesidir; ayrıntılı akış için <a href="/tani-sureci/" class="font-semibold text-primary-700 underline hover:no-underline">tanı süreci</a> rehberine bakın. Varikosel, azospermi ve ciddi sperm parametre bozukluklarında <a href="/makaleler/varikosel-nedir-ne-zaman-ameliyat-gerekir/" class="font-semibold text-primary-700 underline hover:no-underline">varikosel</a> veya <a href="/makaleler/azospermi-mikro-tese/" class="font-semibold text-primary-700 underline hover:no-underline">mikro-TESE</a> rehberleri tedavi planını netleştirir.
+            </HizliCevap>
+        </div>
 
         <!-- Scientific Introduction -->
         <section class="max-w-3xl mx-auto px-4 md:px-6 lg:px-8 mb-16">
@@ -469,7 +476,7 @@ const itemListSchema = buildHubItemListSchema({
                 <h2 class="font-headline text-2xl text-gray-900 mb-4">Bilimsel dayanak</h2>
                 <ul class="space-y-3 text-sm text-gray-600">
                     <li>• <a href="https://www.who.int/publications/i/item/9789240030787" class="text-primary-600 hover:underline" rel="noopener noreferrer">WHO Laboratory Manual for the Examination and Processing of Human Semen, 6th ed. (2021)</a></li>
-                    <li>• <a href="https://www.auanet.org/guidelines-and-quality/guidelines/male-infertility" class="text-primary-600 hover:underline" rel="noopener noreferrer">AUA/ASRM Diagnosis and Treatment of Infertility in Men Guideline</a></li>
+                    <li>• <a href="https://prod.asrm.org/practice-guidance/practice-committee-documents/diagnosis-and-treatment-of-infertility-in-men-aua-asrm-guideline-part2/" class="text-primary-600 hover:underline" rel="noopener noreferrer">AUA/ASRM Diagnosis and Treatment of Infertility in Men Guideline</a></li>
                     <li>• <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9541878/" class="text-primary-600 hover:underline" rel="noopener noreferrer">WHO 2021 semen referans aralıklarının klinik etkisini inceleyen çalışma</a></li>
                 </ul>
             </div>
@@ -488,7 +495,7 @@ const itemListSchema = buildHubItemListSchema({
                             Çiftler birlikte bu süreci yönetmelidir. Erkek infertilitesi bir "hata" veya "kusur" değil, tıbbi olarak değerlendirilebilen bir durumdur; seçenekler tanıya göre değişir. <a href="/psikolojik-destek" class="text-primary-600 hover:underline">Psikolojik destek ve duygusal rehber</a> sayfamızda bu zorlu süreçte baş etme stratejilerini bulabilirsiniz.
                         </p>
                         <div class="bg-white border-l-4 border-primary rounded-xl p-6">
-                            <h4 class="font-bold text-gray-900 text-sm mb-3">Baş Etme Stratejileri</h4>
+                            <p class="font-bold text-gray-900 text-sm mb-3">Baş Etme Stratejileri</p>
                             <ul class="space-y-2 text-sm">
                                 <li>• <strong>Açık iletişim:</strong> Partnerinizle duygularınızı paylaşın</li>
                                 <li>• <strong>Profesyonel destek:</strong> Bilişsel davranışçı terapi (CBT) gibi yaklaşımlar infertilite kaygısında destek sağlayabilir</li>
