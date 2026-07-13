@@ -10,7 +10,7 @@ authorYoutube: "https://www.youtube.com/@DocentDrSenaiAksoy"
 medicalReviewer: "tupbebek.com Editöryal Ekip"
 reviewerTitle: "Tıbbi Yayın Ekibi"
 reviewDate: 2026-05-14
-lastModified: 2026-07-12
+lastModified: 2026-07-13
 category: "Tedavi Yöntemleri"
 recommendationGrade: B
 image: "/images/makaleler/laboratuvar-raporu-yorumlama.webp"
@@ -107,6 +107,7 @@ Embriyo kalite kodları [Gardner Sınıflaması](https://www.asrm.org/asrm-acade
 | Aranan ifade | Kısa, güvenli cevap |
 | :--- | :--- |
 | **4AA embriyo ne demek?** | Genişlemiş blastosist, iyi ICM ve iyi trofektoderm görünümü demektir; güçlü morfoloji olsa da gebeliği garanti etmez. |
+| **3BB embriyo ne demek?** | Orta genişlemiş blastokist + orta kalitede ICM ve TE demektir. Genelde transfer edilebilir orta-iyi gruptadır; “kötü embriyo” değildir. |
 | **3BB embriyo kaliteli mi?** | Genellikle transfer edilebilir orta-iyi blastosist olarak yorumlanır; "A değilse kötü" düşüncesi doğru değildir. |
 | **5BC embriyo kaliteli mi?** | Daha zayıf morfoloji grubundadır; karar tek embriyo olup olmadığı, yaş, PGT-A ve çözülme sonrası canlılıkla birlikte verilir. |
 | **Embriyo kalitesi kaç olmalı?** | Tek bir zorunlu kalite yoktur; transfer önceliği embriyo günü, morfoloji, genetik bilgi ve klinik öyküyle belirlenir. |
@@ -196,6 +197,10 @@ Embriyo derecesi, transfer sıralaması için yararlıdır; ancak hasta yaşı, 
 
 <Accordion title="4AA embriyo ne demek?">
 4AA, genişlemiş blastosist aşamasında ve iki harfi de A olan embriyodur. Morfolojik olarak güçlü bir adaydır. Yine de 4AA embriyo her zaman gebelik sağlar denemez; özellikle kadın yaşı ve kromozomal yapı belirleyici olabilir.
+</Accordion>
+
+<Accordion title="3BB embriyo ne demek?">
+Orta genişlemiş blastokist ile orta kalitede ICM ve TE demektir. Çoğu zaman transfer edilebilir orta-iyi gruptadır; tek başına “kötü” veya “kesin tutunur” anlamına gelmez. Transfer günü (3. gün mü 5. gün mü?) ayrı bir karardır — [gün seçimi rehberi](/makaleler/embriyo-transferi-gun-secimi/).
 </Accordion>
 
 <Accordion title="3BB embriyo kötü mü?">
@@ -361,6 +366,13 @@ export const embryoReportFaqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [{
+    "@type": "Question",
+    "name": "3BB embriyo ne demek?",
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Orta genişlemiş blastokist ile orta kalitede ICM ve TE demektir. Çoğu zaman transfer edilebilir orta-iyi gruptadır; tek başına kötü veya kesin tutunur anlamına gelmez."
+    }
+  }, {
     "@type": "Question",
     "name": "4AA embriyo kesin tutar mı?",
     "acceptedAnswer": {
