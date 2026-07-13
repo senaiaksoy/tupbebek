@@ -6,37 +6,43 @@ import { buildHubItemListSchema } from '../utils/hubStructuredData';
 
 const lifestyleHubLinks = [
     {
-        href: '/makaleler/alkol-ve-fertilite',
+        href: '/makaleler/yumurtlama-takibi/',
+        icon: 'calendar_month',
+        title: 'Yumurtlama takibi ve fertil pencere',
+        description: 'Ovülasyon zamanlaması, LH testi ve doğal gebelik penceresi.'
+    },
+    {
+        href: '/makaleler/alkol-ve-fertilite/',
         icon: 'local_bar',
         title: 'Alkol, sigara ve maruziyetler',
         description: 'Sperm, hormonlar, yumurtlama ve IVF planı açısından azaltma/bırakma kararları.'
     },
     {
-        href: '/makaleler/erkek-dogurganlik-besin-takviyeleri',
+        href: '/makaleler/erkek-dogurganlik-besin-takviyeleri/',
         icon: 'nutrition',
         title: 'Takviyeler ve antioksidanlar',
         description: 'Eksiklik, semen analizi ve kanıt düzeyi olmadan her takviye aynı etkiyi göstermez.'
     },
     {
-        href: '/makaleler/vajinal-mikrobiyom-fiv',
+        href: '/makaleler/vajinal-mikrobiyom-fiv/',
         icon: 'microbiology',
         title: 'Mikrobiyom ve enfeksiyon belirtileri',
         description: 'Akıntı, koku, kaşıntı, laktobasil dengesi ve transfer öncesi değerlendirme.'
     },
     {
-        href: '/makaleler/opk-ve-ivf',
+        href: '/makaleler/opk-ve-ivf/',
         icon: 'cycle',
         title: 'PCOS, insülin direnci ve döngü',
         description: 'Yumurtlama, metformin, kilo yönetimi ve tedaviye hazırlık aynı çerçevede okunur.'
     },
     {
-        href: '/transfer-sureci',
+        href: '/transfer-sureci/',
         icon: 'hourglass_top',
         title: 'Transfer sonrası bekleme',
         description: 'Dinlenme, aktivite, beslenme ve belirti takibinde aşırı kısıtlama yerine dengeli yaklaşım.'
     },
     {
-        href: '/psikolojik-destek',
+        href: '/psikolojik-destek/',
         icon: 'psychology',
         title: 'Stres ve duygusal dayanıklılık',
         description: 'Kaygı yönetimi, uyku, sosyal destek ve profesyonel yardım alma zamanları.'
@@ -44,6 +50,10 @@ const lifestyleHubLinks = [
 ];
 
 const faqs = [
+        {
+        q: 'MFK yöntemi nedir?',
+        a: 'MFK yöntemi çoğu zaman adet takvimine göre yumurtlama gününü tahmin edip verimli pencerede ilişkiyi planlamayı anlatır. IVF protokolü değildir. Düzensiz döngüde tek başına güvenilir olmayabilir; ayrıntı için yumurtlama takibi rehberine bakılmalıdır.'
+    },
     {
         q: 'IVF öncesi beslenme tedavi sonucunu tek başına belirler mi?',
         a: 'Hayır. Beslenme ve yaşam tarzı tedavinin yerine geçmez; yaş, yumurtalık rezervi, sperm, embriyo kalitesi ve rahim durumu gibi ana faktörlerle birlikte destekleyici bir alandır.'
@@ -84,7 +94,7 @@ const itemListSchema = buildHubItemListSchema({
 });
 ---
 
-<BaseLayout title="Beslenme ve Yaşam Tarzı: Doğurganlığın İyileştirilmesi | tupbebek.com" description="IVF için beslenme rehberi, yaşam tarzı değişiklikleri, kilo yönetimi, antioksidanlar, alkol, kafein, sigara ve stres yönetimi.">
+<BaseLayout title="Beslenme, Yaşam Tarzı ve Doğal Gebelik Zamanlaması | tupbebek.com" description="Beslenme alışkanlığı, kilo, alkol, sigara ve MFK yöntemi diye aranan fertil pencere: doğal yolla hamile kalma şansını destekleyen yaşam tarzı ve yumurtlama zamanlaması.">
     <script type="application/ld+json" is:inline set:html={JSON.stringify(faqSchema)} />
     <script type="application/ld+json" is:inline set:html={JSON.stringify(itemListSchema)} />
     <Header />
@@ -99,7 +109,7 @@ const itemListSchema = buildHubItemListSchema({
                         Yaşam Tarzı Rehberi
                     </div>
                     <h1 class="font-headline text-5xl md:text-6xl text-gray-900 leading-tight mb-8">
-                        Beslenme ve Yaşam Tarzı: <span class="text-primary-600 italic">Fertiliteyi</span> Güçlendirmek
+                        Beslenme, Yaşam Tarzı ve <span class="text-primary-600 italic">Doğal Gebelik</span> Zamanlaması
                     </h1>
                     <div class="flex items-center gap-4 p-4 bg-gray-50 rounded-xl border-l-4 border-primary">
                         <div class="w-12 h-12 rounded-full overflow-hidden bg-gray-200">
@@ -122,6 +132,20 @@ const itemListSchema = buildHubItemListSchema({
             <p class="text-lg md:text-xl text-gray-600 leading-relaxed font-body italic mb-12">
                 Yaşam tarzı, üreme hormonlarını ve sperm/yumurta kalitesini doğrudan etkileyen dönüştürülebilir etkenlerdir. Etkiler genellikle 3-6 aydan sonra görünür, çünkü spermatogenez ve folikülogenez süreçleri birkaç ay sürer. Beslenme, kilo, fiziksel aktivite, stres yönetimi, alkol ve sigara, üreme sağlığına önemli katkı sağlayabilir veya zarar verebilir.
             </p>
+
+            <section id="mfk" class="mb-12 rounded-2xl border border-primary-100 bg-primary-50/50 p-6 md:p-8" aria-labelledby="mfk-title">
+                <h2 id="mfk-title" class="font-headline text-2xl text-gray-900 mb-4">MFK yöntemi nedir?</h2>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    MFK yöntemi, popüler anlatımda adet takvimine bakıp verimli günleri tahmin etmeye dayanır. Tıbbi bir tedavi protokolü değildir. Asıl soru basittir: yumurtlama çevresinde ilişki zamanlaması nasıl yapılır?
+                </p>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    Bilimsel adı <strong>fertil pencere</strong>dir. Tipik 28 günlük döngüde yumurtlama çoğu zaman bir sonraki adetten yaklaşık 14 gün önceye denk gelir; döngü 21–35 gün arasında değişebilir. En verimli dönem yumurtlama günü ve önceki birkaç gündür. Düzensiz adet, PCOS veya 35 yaş üstünde yalnız takvim yetmeyebilir. <a href="/makaleler/yumurtlama-takibi/" class="text-primary-700 font-semibold hover:underline">Yumurtlama takibi rehberi</a> LH testi ve ultrason seçeneklerini anlatır.
+                </p>
+                <p class="text-sm text-gray-600 leading-relaxed mb-0">
+                    Beslenme, kilo, uyku, sigara ve alkol de zemin faktörüdür. Zamanlama tek başına her sorunu çözmez.
+                </p>
+            </section>
+
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
                 <div class="bg-gray-50 p-6 rounded-xl shadow-sm border-t-2 border-primary-200">
                     <span class="material-symbols-outlined text-primary-600 mb-3">eco</span>

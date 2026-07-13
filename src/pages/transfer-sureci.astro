@@ -7,37 +7,37 @@ import { buildHubItemListSchema } from '../utils/hubStructuredData';
 
 const transferHubLinks = [
     {
-        href: '/makaleler/embriyo-transferi-gun-secimi',
+        href: '/makaleler/embriyo-transferi-gun-secimi/',
         icon: 'event_available',
-        title: 'Transfer günü ve zamanlama',
-        description: '3. gün, 5. gün, blastokist transferi ve rahim hazırlığı aynı zamanlama kararının parçalarıdır.'
+        title: 'Embriyo transferi gün seçimi',
+        description: '3. gün, 5. gün blastokist transferi ve rahim hazırlığı aynı zamanlama kararının parçalarıdır.'
     },
     {
-        href: '/makaleler/laboratuvar-raporu-yorumlama',
+        href: '/makaleler/laboratuvar-raporu-yorumlama/',
         icon: 'grading',
         title: 'Embriyo kalitesi',
         description: 'Hücre sayısı, fragmantasyon, blastokist derecesi ve laboratuvar notları tek başına değil klinik bağlamla okunur.'
     },
     {
-        href: '/makaleler/taze-dondurulmus-transfer',
+        href: '/makaleler/taze-dondurulmus-transfer/',
         icon: 'ac_unit',
         title: 'Taze transfer mi FET mi?',
         description: 'OHSS riski, progesteron düzeyi, endometrium kalınlığı ve embriyo sayısı transfer tipini etkileyebilir.'
     },
     {
-        href: '/makaleler/beta-hcg-testi',
+        href: '/makaleler/beta-hcg-testi/',
         icon: 'monitor_heart',
         title: 'Beta-hCG ve erken sonuçlar',
         description: 'Pozitif, düşük pozitif veya beklenenden yavaş artan beta-hCG değerleri hekim takibiyle yorumlanmalıdır.'
     },
     {
-        href: '/makaleler/kimyasal-gebelik',
+        href: '/makaleler/kimyasal-gebelik/',
         icon: 'labs',
         title: 'Kimyasal gebelik ve erken kayıp',
         description: 'Beta-hCG pozitifliği sonrası erken kayıp, sonraki deneme planı ve duygusal yük ayrı başlıklarda ele alınır.'
     },
     {
-        href: '/makaleler/era-testi-iluzyon',
+        href: '/makaleler/era-testi-iluzyon/',
         icon: 'biotech',
         title: 'ERA, EmbryoGlue ve add-onlar',
         description: 'Transfer çevresi ek uygulamalar, kanıt düzeyi ve kişisel öyküye göre dikkatle tartışılmalıdır.'
@@ -53,7 +53,7 @@ const itemListSchema = buildHubItemListSchema({
 });
 ---
 
-<BaseLayout title="Embriyo Transferi ve Bekleme Süreci | tupbebek.com" description="Embriyo transferi nasıl yapılır? Embriyo kalite dereceleri, transfer sonrası 12 günlük bekleme süreci, belirtiler ve tavsiyeler.">
+<BaseLayout title="Embriyo Transferi Gün Seçimi ve Bekleme Süreci | tupbebek.com" description="Embriyo transferi gün seçimi (3. gün / 5. gün blastokist), transfer sonrası 12 günlük bekleme, belirtiler ve beta-hCG takibi.">
     <Header />
     <script type="application/ld+json" is:inline set:html={JSON.stringify(itemListSchema)} />
 
@@ -62,8 +62,8 @@ const itemListSchema = buildHubItemListSchema({
         <header class="mb-20 grid grid-cols-1 md:grid-cols-[1fr_1.1fr] gap-12 items-start">
             <div class="max-w-2xl">
                 <p class="text-primary-600 font-bold tracking-widest uppercase text-xs mb-4">Transfer Rehberi</p>
-                <h1 class="text-4xl md:text-5xl font-headline text-gray-900 mb-8 leading-tight">Embriyo Transferi ve <span class="italic text-primary-600">Bekleme Süreci</span></h1>
-                <p class="text-gray-600 text-lg leading-relaxed">Transferden beta-hCG testine kadar bilmeniz gereken her şey: işlem detayları, embriyo kaliteleri, 12 günlük bekleme dönemi ve sık yaşanan belirtiler.</p>
+                <h1 class="text-4xl md:text-5xl font-headline text-gray-900 mb-8 leading-tight">Embriyo Transferi Gün Seçimi ve <span class="italic text-primary-600">Bekleme Süresi</span></h1>
+                <p class="text-gray-600 text-lg leading-relaxed">Transferden beta-hCG’ye kadar bilmeniz gerekenler: <a href="/makaleler/embriyo-transferi-gun-secimi/" class="text-primary-600 hover:underline">transfer günü seçimi</a>, embriyo kalitesi, 12 günlük bekleme ve sık belirtiler.</p>
                 <div class="h-1 w-24 bg-primary-600 opacity-30 mt-8"></div>
             </div>
             <div class="md:sticky md:top-24 h-fit">

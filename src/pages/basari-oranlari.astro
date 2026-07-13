@@ -72,7 +72,7 @@ const itemListSchema = buildHubItemListSchema({
 });
 ---
 
-<BaseLayout title="Tüp Bebek Başarı Oranları ve Klinik İstatistikler | tupbebek.com" description="Yaş gruplarına göre tüp bebek başarı oranları, döngüye göre kümülatif başarı, tedavi yöntemlerine göre karşılaştırmalar ve uluslararası veriler.">
+<BaseLayout title="Tüp Bebek Başarı Oranı: Yaş, Rezerv ve Gerçekçi Okuma | tupbebek.com" description="Tüp bebek başarı oranı nasıl okunur? Yaş, yumurta kalitesi, tekrarlayan tüp bebek başarısızlıkları ve kümülatif sonuçlar faktörlere bağlıdır; garanti yüzde yoktur.">
     <script type="application/ld+json" is:inline set:html={JSON.stringify(faqSchema)} />
     <script type="application/ld+json" is:inline set:html={JSON.stringify(itemListSchema)} />
     <Header />
@@ -87,7 +87,7 @@ const itemListSchema = buildHubItemListSchema({
                         Klinik İstatistik
                     </div>
                     <h1 class="font-headline text-5xl md:text-6xl text-gray-900 leading-tight mb-8">
-                        Başarı Oranları: <span class="text-primary-600 italic">Verilerle</span> Gerçekler
+                        Tüp Bebek Başarı Oranı: <span class="text-primary-600 italic">Verilerle</span> Gerçekçi Okuma
                     </h1>
                     <div class="flex items-center gap-4 p-4 bg-gray-50 rounded-xl border-l-4 border-primary">
                         <div class="w-12 h-12 rounded-full overflow-hidden bg-gray-200">
@@ -107,7 +107,7 @@ const itemListSchema = buildHubItemListSchema({
 
         <div class="max-w-3xl mx-auto px-4 md:px-6 lg:px-8 mb-16">
             <HizliCevap question="Tüp bebek başarı oranı nasıl yorumlanmalı?">
-                Tüp bebek başarı oranı tek bir yüzde değildir; yaş, yumurtalık rezervi, sperm, embriyo gelişimi, rahim/tüp durumu, transfer tipi ve raporlanan sonucun “gebelik testi”, “klinik gebelik”, “canlı doğum” veya “kümülatif canlı doğum” olup olmadığı birlikte okunmalıdır. CDC’nin ART başarı oranları sayfası, ortalama şansların yaş, tanı ve uygulanan ART işlemine göre değiştiğini belirtir (<a href="https://www.cdc.gov/art/success-rates/index.html" rel="noopener noreferrer">CDC ART Success Rates</a>). Avrupa kayıtları da sonuçların ülke, hasta profili ve raporlama biçimine göre değişebildiğini gösterir (<a href="https://pubmed.ncbi.nlm.nih.gov/37847771/" rel="noopener noreferrer">ESHRE 2019 Avrupa ART kayıtları</a>). Bu yüzden güvenli yorum, tek bir oran aramak değil; oranı hangi hasta grubuna ve hangi sonuç tanımına ait olduğunu bilerek değerlendirmektir.
+                Tüp bebek başarı oranı tek bir yüzde değildir. Yaş, rezerv, sperm, embriyo gelişimi, rahim durumu, transfer tipi ve raporlanan sonucun “gebelik testi”, “klinik gebelik”, “canlı doğum” veya “kümülatif canlı doğum” olup olmadığı birlikte okunmalıdır. Tekrarlayan başarısızlıklarda tek deneme yüzdesinden çok kümülatif plan daha anlamlıdır. CDC ART verileri yaş ve tanıya göre şansın değiştiğini gösterir (<a href="https://www.cdc.gov/art/success-rates/index.html" rel="noopener noreferrer">CDC ART Success Rates</a>). Avrupa kayıtları da ülke ve hasta profiline göre fark olduğunu belirtir (<a href="https://pubmed.ncbi.nlm.nih.gov/37847771/" rel="noopener noreferrer">ESHRE 2019 Avrupa ART kayıtları</a>). Güvenli yorum, oranı hangi gruba ve hangi sonuca ait bilerek yapmaktır.
             </HizliCevap>
         </div>
 
