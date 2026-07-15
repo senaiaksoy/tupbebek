@@ -36,6 +36,12 @@ function normalizeCanonicalPath(url) {
 }
 
 function normalizeInternalLink(url) {
+  // Sayfa ici bolum baglantilari rota degildir. URL tabanina gore cozulurse
+  // `#bolum` yanlislikla `/#bolum` olur ve makale yerine ana sayfaya gider.
+  if (typeof url !== 'string' || url.startsWith('#')) {
+    return url;
+  }
+
   try {
     const parsed = new URL(url, 'https://tupbebek.com');
     if (/(\.|^)tupbebek\.com$/iu.test(parsed.hostname)) {

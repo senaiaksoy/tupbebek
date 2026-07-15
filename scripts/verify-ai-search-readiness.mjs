@@ -36,6 +36,10 @@ function readScalar(frontmatter, fieldName) {
   return match[1].trim().replace(/^['"]|['"]$/gu, '');
 }
 
+function hasField(frontmatter, fieldName) {
+  return new RegExp(`^${fieldName}:`, 'mu').test(frontmatter);
+}
+
 function readReferenceBlocks(frontmatter) {
   const lines = frontmatter.split(/\r?\n/u);
   const start = lines.findIndex((line) => /^references:\s*$/u.test(line));
@@ -92,6 +96,22 @@ if (!fs.existsSync(articlesDir)) {
       if (!readScalar(frontmatter, fieldName)) {
         failures.push(`${relative(filePath)} is missing ${fieldName}.`);
       }
+    }
+
+    // author may be a scalar or a structured YAML object.
+    if (!hasField(frontmatter, 'author')) {
+      failures.push(`${relative(filePath)} is missing author.`);
+    }
+
+    // contentType marks articles created with the 2026-07 template. These must
+    // use a dedicated BLUF instead of recycling the meta description.
+    const contentType = readScalar(frontmatter, 'contentType');
+    const summary = readScalar(frontmatter, 'summary');
+    if (contentType && !summary) {
+      failures.push(`${relative(filePath)} is missing summary for contentType ${contentType}.`);
+    }
+    if (summary && summary === readScalar(frontmatter, 'description')) {
+      failures.push(`${relative(filePath)} summary must not duplicate description.`);
     }
 
     const grade = readScalar(frontmatter, 'recommendationGrade');

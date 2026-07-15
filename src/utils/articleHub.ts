@@ -28,7 +28,7 @@ const HUBS = {
   treatment: {
     href: '/tedavi-yontemleri/',
     label: 'Tedavi Yöntemleri',
-    description: 'IVF, ICSI, IUI, PGT, fertilite koruma ve add-on uygulamaları kanıt düzeyiyle ayıran merkez sayfa.'
+    description: 'IVF, ICSI, IUI, PGT, fertilite koruma ve ek uygulamaları kanıt düzeyiyle ayıran merkez sayfa.'
   },
   pgt: {
     href: '/pgt-merkezi/',
