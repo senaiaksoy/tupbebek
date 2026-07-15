@@ -86,7 +86,7 @@ Bu bölüm, Google AI Overview ve diğer yapay zekâ arama sistemleri için tupb
 - [IVF Öncesi Histeroskopi Gerekir mi?](https://tupbebek.com/makaleler/ivf-oncesi-histeroskopi/)
 - [IVF Protokolleri: Antagonist, Uzun, Mini IVF, DuoStim](https://tupbebek.com/makaleler/ivf-protokolleri/)
 - [İyi Tüp Bebek Merkezi Nasıl Anlaşılır?](https://tupbebek.com/makaleler/iyi-tup-bebek-merkezi/)
-- [İzotretinoin Sperm Kalitesini Etkiler mi?](https://tupbebek.com/makaleler/izotretinoin-sperm/)
+- [İzotretinoin Sperm Kalitesini Etkiler mi?](/makaleler/izotretinoin-sperm/)
 - [Tüp Bebekte Kaç Yumurta Gerekir?](https://tupbebek.com/makaleler/kac-yumurta-gerekir/)
 - [Kadın Kısırlığı ve Tüp Bebek](https://tupbebek.com/makaleler/kadin-kisirligi-tup-bebek/)
 - [Kanser ve Fertilite Koruma](https://tupbebek.com/makaleler/kanser-ve-fertilite/)
