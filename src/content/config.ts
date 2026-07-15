@@ -10,6 +10,7 @@ const statusEnum = z.enum(['draft', 'in_review', 'published']).default('publishe
 const recommendationGradeEnum = z.enum(['A', 'B', 'C', 'D/E']);
 const contentTypeEnum = z.enum(['portal_article', 'editor_column']).default('portal_article');
 const imageSourceTypeEnum = z.enum(['original', 'licensed', 'ai-assisted']);
+const templateVersionEnum = z.enum(['2026-07']);
 
 /**
  * Bilimsel Referans Semasi
@@ -27,6 +28,15 @@ const referenceSchema = z.object({
 const summaryReferenceSchema = z.object({
   title: z.string(),
   url: z.string().url(),
+});
+
+const videoChapterSchema = z.object({
+  name: z.string(),
+  startOffset: z.number().int().nonnegative(),
+  endOffset: z.number().int().positive(),
+  url: z.string().url().optional(),
+}).refine((chapter) => chapter.endOffset > chapter.startOffset, {
+  message: 'Video chapter endOffset must be greater than startOffset.',
 });
 
 /**
@@ -53,11 +63,16 @@ const articlesCollection = defineCollection({
     summaryReferences: z.array(summaryReferenceSchema).max(2).optional(),
     category: z.string(),
     contentType: contentTypeEnum,
+    // Yeni şablon sözleşmesini açıkça etkinleştirir. Legacy makalelerde opsiyoneldir.
+    templateVersion: templateVersionEnum.optional(),
     image: z.string().optional(),
     imageAlt: z.string().optional(),
     imageCaption: z.string().optional(),
     imageCredit: z.string().optional(),
     imageSourceType: imageSourceTypeEnum.optional(),
+    imageCreator: z.string().optional(),
+    imageLicenseUrl: z.string().url().optional(),
+    imageAcquireLicensePage: z.string().url().optional(),
     // Hero görsel intrinsic boyutları (CLS önleme + schema/OG meta için).
     // Yeni hero standardı: 1600x900 (16:9 master). Boş bırakılırsa varsayılan kullanılır.
     imageWidth: z.number().int().positive().optional(),
@@ -70,6 +85,7 @@ const articlesCollection = defineCollection({
     lastModified: z.date().optional(),
     evidenceAsOf: z.date().optional(),
     reviewScope: z.string().optional(),
+    editorialMethodNote: z.string().optional(),
 
     // --- E-E-A-T Seffaflik ---
     // Yazar açıkça belirtilir; yayın kurulu veya başka bir yazar otomatik olarak
@@ -93,6 +109,11 @@ const articlesCollection = defineCollection({
     // --- Video Embed ---
     videoId: z.string().optional(),
     videoTitle: z.string().optional(),
+    videoUploadDate: z.date().optional(),
+    videoDescription: z.string().optional(),
+    videoDuration: z.string().regex(/^PT(?=.*\d)(?:\d+H)?(?:\d+M)?(?:\d+(?:\.\d+)?S)?$/u).optional(),
+    videoThumbnailUrl: z.string().url().optional(),
+    videoChapters: z.array(videoChapterSchema).optional(),
 
     // --- SEO ---
     seoTitle: z.string().optional(),

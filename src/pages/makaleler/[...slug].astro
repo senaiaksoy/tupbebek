@@ -10,6 +10,7 @@ import ShareButtons from '../../components/ShareButtons.astro';
 import PreferredSourceCTA from '../../components/PreferredSourceCTA.astro';
 import RelatedArticles from '../../components/RelatedArticles.astro';
 import ArticleSchema from '../../components/ArticleSchema.astro';
+import ArticleReviewInfo from '../../components/ArticleReviewInfo.astro';
 import EEATBadge from '../../components/EEATBadge.astro';
 import EvidenceGradeCard from '../../components/EvidenceGradeCard.astro';
 import ReferenceList from '../../components/ReferenceList.astro';
@@ -62,6 +63,9 @@ const authorYoutube =
     entry.data.authorYoutube
     || (rawAuthorUrl && /youtube\.com/i.test(rawAuthorUrl) ? rawAuthorUrl : undefined)
     || (isSenaiAksoy ? DEFAULT_AUTHOR_YOUTUBE : undefined);
+const authorProfileUrl = isSenaiAksoy
+    ? '/yazar/senai-aksoy/'
+    : (rawAuthorUrl && !/youtube\.com/i.test(rawAuthorUrl) ? rawAuthorUrl : undefined);
 
 const publishDateStr = entry.data.publishDate
     ? entry.data.publishDate.toLocaleDateString('tr-TR', { year: 'numeric', month: 'long', day: 'numeric' })
@@ -81,6 +85,14 @@ const articleUrl = resolveCanonicalUrl({
 const referenceCount = entry.data.references?.length || 0;
 const sanitizedImage = sanitizeImage(entry.data.image);
 const articleHub = getArticleHub(entry.slug);
+const imageSourceLabels = {
+    original: 'Özgün görsel',
+    licensed: 'Lisanslı görsel',
+    'ai-assisted': 'AI destekli görsel',
+} as const;
+const imageSourceLabel = entry.data.imageSourceType
+    ? imageSourceLabels[entry.data.imageSourceType]
+    : undefined;
 
 // Hero görsel boyutları: frontmatter override > disk metadata > 1600x900 fallback.
 // Schema/OG/img intrinsic boyutları aynı kaynaktan beslenir — tutarlılık garanti.
@@ -118,19 +130,34 @@ const heroDimensions = resolveImageDimensions({
 
             <!-- Hero Image — LCP adayı: H1'den hemen sonra (EEAT/kartlar öncesi) -->
             {entry.data.image && (
-                <div class="aspect-video rounded-xl overflow-hidden mb-8 border border-gray-100">
-                    <img
-                        src={sanitizedImage}
-                        alt={entry.data.imageAlt || entry.data.title}
-                        class="w-full h-full object-cover"
-                        width={heroDimensions.width}
-                        height={heroDimensions.height}
-                        loading="eager"
-                        fetchpriority="high"
-                        decoding="async"
-                        sizes="(min-width: 1024px) 768px, 100vw"
-                    />
-                </div>
+                <figure class="mb-8">
+                    <div class="aspect-video overflow-hidden rounded-xl border border-gray-100">
+                        <img
+                            src={sanitizedImage}
+                            alt={entry.data.imageAlt || entry.data.title}
+                            class="w-full h-full object-cover"
+                            width={heroDimensions.width}
+                            height={heroDimensions.height}
+                            loading="eager"
+                            fetchpriority="high"
+                            decoding="async"
+                            sizes="(min-width: 1024px) 768px, 100vw"
+                        />
+                    </div>
+                    {(entry.data.imageCaption || entry.data.imageCredit || imageSourceLabel) && (
+                        <figcaption class="mt-2 text-xs leading-relaxed text-gray-500">
+                            {entry.data.imageCaption && <span>{entry.data.imageCaption}</span>}
+                            {entry.data.imageCaption && (entry.data.imageCredit || imageSourceLabel) && <span aria-hidden="true"> · </span>}
+                            {(entry.data.imageCredit || imageSourceLabel) && (
+                                <span>
+                                    {entry.data.imageCredit && <>Görsel: {entry.data.imageCredit}</>}
+                                    {entry.data.imageCredit && imageSourceLabel && <span aria-hidden="true"> · </span>}
+                                    {imageSourceLabel}
+                                </span>
+                            )}
+                        </figcaption>
+                    )}
+                </figure>
             )}
 
                 <!-- Description -->
@@ -143,6 +170,7 @@ const heroDimensions = resolveImageDimensions({
                     author={authorName}
                     authorTitle={authorTitle}
                     authorCredentials={authorCredentials}
+                    authorUrl={authorProfileUrl}
                     authorYoutube={authorYoutube}
                     medicalReviewer={entry.data.medicalReviewer}
                     reviewerTitle={entry.data.reviewerTitle}
@@ -179,6 +207,12 @@ const heroDimensions = resolveImageDimensions({
                     </section>
                 )}
 
+                <ArticleReviewInfo
+                    evidenceAsOf={entry.data.evidenceAsOf}
+                    reviewScope={entry.data.reviewScope}
+                    editorialMethodNote={entry.data.editorialMethodNote}
+                />
+
                 <section class="mt-5 rounded-2xl border border-gray-200 bg-white p-5" aria-labelledby="topic-hub-title">
                     <p id="topic-hub-title" class="text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Konu merkezi</p>
                     <a href={articleHub.href} class="inline-flex items-center gap-2 text-primary-700 font-bold hover:underline">
@@ -199,6 +233,7 @@ const heroDimensions = resolveImageDimensions({
                 <YouTubeEmbed
                     id={entry.data.videoId}
                     title={entry.data.videoTitle || entry.data.title}
+                    caption={entry.data.videoDescription}
                 />
             )}
         </div>

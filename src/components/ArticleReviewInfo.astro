@@ -1,0 +1,50 @@
+---
+interface Props {
+    evidenceAsOf?: Date;
+    reviewScope?: string;
+    editorialMethodNote?: string;
+}
+
+const { evidenceAsOf, reviewScope, editorialMethodNote } = Astro.props;
+const evidenceDate = evidenceAsOf?.toLocaleDateString('tr-TR', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+});
+---
+
+{(evidenceDate || reviewScope || editorialMethodNote) && (
+    <section
+        class="mt-5 rounded-2xl border border-mint-100 bg-mint-50/50 p-5"
+        aria-labelledby="article-review-info-title"
+    >
+        <div class="flex items-start gap-3">
+            <div class="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-white text-mint-700 shadow-sm">
+                <span class="material-symbols-outlined text-xl" aria-hidden="true">fact_check</span>
+            </div>
+            <div class="min-w-0">
+                <h2 id="article-review-info-title" class="text-sm font-bold text-gray-900">Bilimsel inceleme</h2>
+                <dl class="mt-2 space-y-1.5 text-xs leading-relaxed text-gray-600 md:text-sm">
+                    {evidenceDate && (
+                        <div>
+                            <dt class="inline font-semibold text-gray-700">Kanıt tarama tarihi:</dt>{' '}
+                            <dd class="inline">{evidenceDate}</dd>
+                        </div>
+                    )}
+                    {reviewScope && (
+                        <div>
+                            <dt class="inline font-semibold text-gray-700">İnceleme kapsamı:</dt>{' '}
+                            <dd class="inline">{reviewScope}</dd>
+                        </div>
+                    )}
+                    {editorialMethodNote && (
+                        <div>
+                            <dt class="inline font-semibold text-gray-700">Editoryal yöntem:</dt>{' '}
+                            <dd class="inline">{editorialMethodNote}</dd>
+                        </div>
+                    )}
+                </dl>
+            </div>
+        </div>
+    </section>
+)}

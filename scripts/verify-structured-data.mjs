@@ -152,6 +152,25 @@ function validateArticlePage(filePath, nodes) {
     if (!article.citation) {
       failures.push(`${page} Article node is missing citation.`);
     }
+    if (article.image && !article.primaryImageOfPage) {
+      failures.push(`${page} Article node has image but is missing primaryImageOfPage.`);
+    }
+
+    const videos = article.video ? (Array.isArray(article.video) ? article.video : [article.video]) : [];
+    for (const [index, video] of videos.entries()) {
+      const label = `${page} VideoObject #${index + 1}`;
+      if (!typeIncludes(video, 'VideoObject')) {
+        failures.push(`${label} is missing @type VideoObject.`);
+      }
+      for (const property of ['name', 'description', 'thumbnailUrl', 'uploadDate', 'embedUrl']) {
+        if (!video?.[property] || (Array.isArray(video[property]) && video[property].length === 0)) {
+          failures.push(`${label} is missing ${property}.`);
+        }
+      }
+      if (typeof video.contentUrl === 'string' && /youtube\.com\/watch/iu.test(video.contentUrl)) {
+        failures.push(`${label} contentUrl points to a watch page; omit it when media bytes are unavailable.`);
+      }
+    }
   }
 }
 

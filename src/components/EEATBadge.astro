@@ -20,6 +20,7 @@ interface Props {
     author: string;
     authorTitle?: string;
     authorCredentials?: string;
+    authorUrl?: string;
     authorYoutube?: string;
     medicalReviewer?: string;
     reviewerTitle?: string;
@@ -34,6 +35,7 @@ const {
     author,
     authorTitle,
     authorCredentials,
+    authorUrl,
     authorYoutube,
     medicalReviewer,
     reviewerTitle,
@@ -65,7 +67,16 @@ const sc = statusConfig[status];
                 <div class="min-w-0">
                     <p class="text-[10px] uppercase tracking-wider text-gray-400 font-semibold mb-0.5">Yazar</p>
                     <div class="flex items-center gap-1 min-w-0">
-                        <p class="text-sm font-bold text-gray-900 truncate">{author}</p>
+                        {authorUrl ? (
+                            <a
+                                href={authorUrl}
+                                class="truncate text-sm font-bold text-gray-900 underline decoration-gray-300 underline-offset-2 transition-colors hover:text-primary-700 hover:decoration-primary-400"
+                            >
+                                {author}
+                            </a>
+                        ) : (
+                            <p class="text-sm font-bold text-gray-900 truncate">{author}</p>
+                        )}
                         {authorYoutube && (
                             <a
                                 href={authorYoutube}

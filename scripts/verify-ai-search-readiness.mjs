@@ -40,6 +40,33 @@ function hasField(frontmatter, fieldName) {
   return new RegExp(`^${fieldName}:`, 'mu').test(frontmatter);
 }
 
+function readNestedScalar(frontmatter, parentField, childField) {
+  const lines = frontmatter.split(/\r?\n/u);
+  const start = lines.findIndex((line) => new RegExp(`^${parentField}:\\s*$`, 'u').test(line));
+  if (start === -1) return '';
+
+  for (const line of lines.slice(start + 1)) {
+    if (/^\S/u.test(line)) break;
+    const match = line.match(new RegExp(`^\\s+${childField}:\\s*(.+)$`, 'u'));
+    if (match) return match[1].trim().replace(/^['"]|['"]$/gu, '');
+  }
+  return '';
+}
+
+function readListItemValues(frontmatter, fieldName, childField) {
+  const lines = frontmatter.split(/\r?\n/u);
+  const start = lines.findIndex((line) => new RegExp(`^${fieldName}:\\s*$`, 'u').test(line));
+  if (start === -1) return [];
+
+  const values = [];
+  for (const line of lines.slice(start + 1)) {
+    if (/^\S/u.test(line)) break;
+    const match = line.match(new RegExp(`^\\s+(?:-\\s+)?${childField}:\\s*(.+)$`, 'u'));
+    if (match) values.push(match[1].trim().replace(/^['"]|['"]$/gu, ''));
+  }
+  return values;
+}
+
 function readReferenceBlocks(frontmatter) {
   const lines = frontmatter.split(/\r?\n/u);
   const start = lines.findIndex((line) => /^references:\s*$/u.test(line));
@@ -85,6 +112,7 @@ if (!fs.existsSync(articlesDir)) {
     const source = fs.readFileSync(filePath, 'utf8');
     const frontmatter = extractFrontmatter(source, filePath);
     if (!frontmatter) continue;
+    const references = readReferenceBlocks(frontmatter);
 
     const status = readScalar(frontmatter, 'status') || 'published';
     if (status !== 'published') continue;
@@ -114,6 +142,98 @@ if (!fs.existsSync(articlesDir)) {
       failures.push(`${relative(filePath)} summary must not duplicate description.`);
     }
 
+    const templateVersion = readScalar(frontmatter, 'templateVersion');
+    if (templateVersion) {
+      if (templateVersion !== '2026-07') {
+        failures.push(`${relative(filePath)} has unsupported templateVersion: ${templateVersion}.`);
+      }
+
+      const requiredTemplateFields = [
+        'contentType',
+        'summary',
+        'evidenceAsOf',
+        'reviewScope',
+        'image',
+        'imageAlt',
+        'imageCaption',
+        'imageCredit',
+        'imageSourceType',
+        'imageWidth',
+        'imageHeight',
+      ];
+      for (const fieldName of requiredTemplateFields) {
+        if (!readScalar(frontmatter, fieldName)) {
+          failures.push(`${relative(filePath)} is missing template field ${fieldName}.`);
+        }
+      }
+
+      if (!readNestedScalar(frontmatter, 'author', 'name') || !readNestedScalar(frontmatter, 'author', 'url')) {
+        failures.push(`${relative(filePath)} template author must include name and profile url.`);
+      }
+
+      const summaryReferenceUrls = readListItemValues(frontmatter, 'summaryReferences', 'url');
+      const referenceUrls = readListItemValues(frontmatter, 'references', 'url');
+      if (summaryReferenceUrls.length < 1 || summaryReferenceUrls.length > 2) {
+        failures.push(`${relative(filePath)} must include 1-2 summaryReferences.`);
+      }
+      for (const url of summaryReferenceUrls) {
+        if (!referenceUrls.includes(url)) {
+          failures.push(`${relative(filePath)} summary reference URL is missing from references: ${url}.`);
+        }
+      }
+
+      const evidenceAsOf = parseLocalDate(readScalar(frontmatter, 'evidenceAsOf'));
+      const reviewDate = parseLocalDate(readScalar(frontmatter, 'reviewDate'));
+      if (!evidenceAsOf) {
+        failures.push(`${relative(filePath)} has invalid evidenceAsOf.`);
+      } else if (evidenceAsOf > today) {
+        failures.push(`${relative(filePath)} evidenceAsOf is in the future.`);
+      }
+      if (!reviewDate) {
+        failures.push(`${relative(filePath)} has invalid reviewDate.`);
+      } else if (reviewDate > today) {
+        failures.push(`${relative(filePath)} reviewDate is in the future.`);
+      }
+      if (evidenceAsOf && reviewDate && reviewDate < evidenceAsOf) {
+        failures.push(`${relative(filePath)} reviewDate cannot be earlier than evidenceAsOf.`);
+      }
+
+      const imageWidth = Number.parseInt(readScalar(frontmatter, 'imageWidth'), 10);
+      const imageHeight = Number.parseInt(readScalar(frontmatter, 'imageHeight'), 10);
+      if (!(imageWidth > 0 && imageHeight > 0)) {
+        failures.push(`${relative(filePath)} imageWidth and imageHeight must be positive integers.`);
+      }
+
+      const videoId = readScalar(frontmatter, 'videoId');
+      if (videoId) {
+        for (const fieldName of ['videoTitle', 'videoUploadDate', 'videoDescription', 'videoDuration']) {
+          if (!readScalar(frontmatter, fieldName)) {
+            failures.push(`${relative(filePath)} videoId requires ${fieldName}.`);
+          }
+        }
+        const videoUploadDate = parseLocalDate(readScalar(frontmatter, 'videoUploadDate'));
+        if (!videoUploadDate || videoUploadDate > today) {
+          failures.push(`${relative(filePath)} has invalid or future videoUploadDate.`);
+        }
+        if (!/^PT(?=.*\d)(?:\d+H)?(?:\d+M)?(?:\d+(?:\.\d+)?S)?$/u.test(readScalar(frontmatter, 'videoDuration'))) {
+          failures.push(`${relative(filePath)} videoDuration must be an ISO 8601 duration such as PT6M35S.`);
+        }
+      }
+
+      const body = source.replace(/^---\r?\n[\s\S]*?\r?\n---/u, '');
+      const forbiddenLegacyPatterns = [
+        ['manual HizliCevap', /<HizliCevap\b/u],
+        ['manual EvidenceGradeCard', /EvidenceGradeCard/u],
+        ['FAQPage JSON-LD', /["']@type["']\s*:\s*["']FAQPage["']/u],
+        ['body H1', /^#\s+/mu],
+      ];
+      for (const [label, pattern] of forbiddenLegacyPatterns) {
+        if (pattern.test(body)) {
+          failures.push(`${relative(filePath)} templateVersion ${templateVersion} contains ${label}.`);
+        }
+      }
+    }
+
     const grade = readScalar(frontmatter, 'recommendationGrade');
     if (!validGrades.has(grade)) {
       failures.push(`${relative(filePath)} has invalid recommendationGrade: ${grade || '(missing)'}.`);
@@ -134,7 +254,6 @@ if (!fs.existsSync(articlesDir)) {
       }
     }
 
-    const references = readReferenceBlocks(frontmatter);
     stats.lowestReferenceCount = Math.min(stats.lowestReferenceCount, references.length);
     if (references.length < minReferences) {
       failures.push(`${relative(filePath)} has ${references.length} reference(s); minimum is ${minReferences}.`);
@@ -143,6 +262,9 @@ if (!fs.existsSync(articlesDir)) {
     const referencesWithLocator = references.filter((reference) => /^\s*(doi|url|pmid):\s*/imu.test(reference)).length;
     if (references.length > 0 && referencesWithLocator === 0) {
       failures.push(`${relative(filePath)} references should include at least one DOI, URL, or PMID.`);
+    }
+    if (templateVersion && referencesWithLocator !== references.length) {
+      failures.push(`${relative(filePath)} every reference must include DOI, URL, or PMID for templateVersion ${templateVersion}.`);
     }
   }
 }

@@ -40,12 +40,28 @@ interface Props {
             category: string;
             image?: string;
             imageAlt?: string;
+            imageCaption?: string;
+            imageCredit?: string;
+            imageCreator?: string;
+            imageLicenseUrl?: string;
+            imageAcquireLicensePage?: string;
             imageWidth?: number;
             imageHeight?: number;
             videoId?: string;
             videoTitle?: string;
+            videoUploadDate?: Date;
+            videoDescription?: string;
+            videoDuration?: string;
+            videoThumbnailUrl?: string;
+            videoChapters?: Array<{
+                name: string;
+                startOffset: number;
+                endOffset: number;
+                url?: string;
+            }>;
             references?: Reference[];
         };
+        slug?: string;
     };
     url: string;
 }
@@ -170,10 +186,17 @@ const heroDims = absoluteImageUrl
 
 const imageObject = absoluteImageUrl && heroDims ? {
     "@type": "ImageObject",
+    "@id": `${canonicalUrl.toString()}#primaryimage`,
     "url": absoluteImageUrl,
+    "contentUrl": absoluteImageUrl,
     "width": heroDims.width,
     "height": heroDims.height,
-    ...(d.imageAlt ? { "caption": d.imageAlt } : {}),
+    ...(d.imageCaption ? { "caption": d.imageCaption } : {}),
+    ...(d.imageCredit ? { "creditText": d.imageCredit } : {}),
+    ...(d.imageCreator ? { "creator": { "@type": "Person", "name": d.imageCreator } } : {}),
+    ...(d.imageLicenseUrl ? { "license": d.imageLicenseUrl } : {}),
+    ...(d.imageAcquireLicensePage ? { "acquireLicensePage": d.imageAcquireLicensePage } : {}),
+    "representativeOfPage": true,
 } : undefined;
 
 const WIKIDATA_MAP: Record<string, string[]> = {
@@ -310,6 +333,36 @@ if (sameAsUrls && sameAsUrls.length > 0) {
     aboutSchema["sameAs"] = sameAsUrls;
 }
 
+const videoWatchUrl = d.videoId ? `https://www.youtube.com/watch?v=${d.videoId}` : undefined;
+const videoSchema = d.videoId && d.videoUploadDate && videoWatchUrl
+    ? {
+        "@type": "VideoObject",
+        "@id": `${canonicalUrl.toString()}#video`,
+        "name": d.videoTitle || d.title,
+        "description": d.videoDescription || d.description,
+        "thumbnailUrl": [
+            d.videoThumbnailUrl || `https://img.youtube.com/vi/${d.videoId}/maxresdefault.jpg`,
+            `https://img.youtube.com/vi/${d.videoId}/hqdefault.jpg`,
+        ],
+        "uploadDate": d.videoUploadDate.toISOString(),
+        ...(d.videoDuration ? { "duration": d.videoDuration } : {}),
+        "url": videoWatchUrl,
+        "embedUrl": `https://www.youtube.com/embed/${d.videoId}`,
+        "inLanguage": "tr-TR",
+        "publisher": { "@id": SENAI_AKSOY_PERSON_ID },
+        "isPartOf": { "@id": `${canonicalUrl.toString()}#article` },
+        ...(d.videoChapters && d.videoChapters.length > 0 ? {
+            "hasPart": d.videoChapters.map((chapter) => ({
+                "@type": "Clip",
+                "name": chapter.name,
+                "startOffset": chapter.startOffset,
+                "endOffset": chapter.endOffset,
+                "url": chapter.url || `${videoWatchUrl}&t=${chapter.startOffset}s`,
+            })),
+        } : {}),
+    }
+    : undefined;
+
 // Main Article + MedicalWebPage schema. Publisher + WebSite reference Organization @graph in BaseLayout via @id.
 const articleSchema = {
     "@context": "https://schema.org",
@@ -321,6 +374,7 @@ const articleSchema = {
     "url": canonicalUrl.toString(),
     "inLanguage": "tr-TR",
     ...(imageObject ? { "image": imageObject } : {}),
+    ...(imageObject ? { "primaryImageOfPage": { "@id": `${canonicalUrl.toString()}#primaryimage` } } : {}),
     ...(d.publishDate ? { "datePublished": d.publishDate.toISOString().split('T')[0] } : {}),
     ...(d.lastModified ? { "dateModified": d.lastModified.toISOString().split('T')[0] } : {}),
     "author": authorSchema,
@@ -343,26 +397,7 @@ const articleSchema = {
         "name": "Reproductive Medicine",
     },
     ...(citations.length > 0 ? { "citation": citations } : {}),
-    ...(d.videoId ? {
-        "video": {
-            "@type": "VideoObject",
-            "@id": `${canonicalUrl.toString()}#video`,
-            "name": d.videoTitle || d.title,
-            "description": d.description,
-            "thumbnailUrl": [
-                `https://img.youtube.com/vi/${d.videoId}/maxresdefault.jpg`,
-                `https://img.youtube.com/vi/${d.videoId}/hqdefault.jpg`,
-            ],
-            "uploadDate": d.publishDate
-                ? d.publishDate.toISOString().split('T')[0]
-                : '2026-06-02',
-            "contentUrl": `https://www.youtube.com/watch?v=${d.videoId}`,
-            "embedUrl": `https://www.youtube.com/embed/${d.videoId}`,
-            "inLanguage": "tr-TR",
-            "publisher": { "@id": ORG_ID },
-            "isPartOf": { "@id": `${canonicalUrl.toString()}#article` },
-        },
-    } : {}),
+    ...(videoSchema ? { "video": videoSchema } : {}),
 };
 ---
 
