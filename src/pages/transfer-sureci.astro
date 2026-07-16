@@ -53,7 +53,7 @@ const itemListSchema = buildHubItemListSchema({
 });
 ---
 
-<BaseLayout title="Embriyo Transferi Gün Seçimi ve Bekleme Süreci | tupbebek.com" description="Embriyo transferi gün seçimi (3. gün / 5. gün blastokist), transfer sonrası 12 günlük bekleme, belirtiler ve beta-hCG takibi.">
+<BaseLayout title="Embriyo Transferi Süreci: Karar Haritası ve Kaynak Rehberi | tupbebek.com" description="Embriyo transferi sürecinde gün seçimi, embriyo kalitesi, transfer sonrası bakım, bekleme dönemi ve beta-hCG takibini bağlayan konu haritası.">
     <Header />
     <script type="application/ld+json" is:inline set:html={JSON.stringify(itemListSchema)} />
 
@@ -62,7 +62,7 @@ const itemListSchema = buildHubItemListSchema({
         <header class="mb-20 grid grid-cols-1 md:grid-cols-[1fr_1.1fr] gap-12 items-start">
             <div class="max-w-2xl">
                 <p class="text-primary-600 font-bold tracking-widest uppercase text-xs mb-4">Transfer Rehberi</p>
-                <h1 class="text-4xl md:text-5xl font-headline text-gray-900 mb-8 leading-tight">Embriyo Transferi Gün Seçimi ve <span class="italic text-primary-600">Bekleme Süresi</span></h1>
+                <h1 class="text-4xl md:text-5xl font-headline text-gray-900 mb-8 leading-tight">Embriyo Transferi Süreci: <span class="italic text-primary-600">Karar Haritası</span></h1>
                 <p class="text-gray-600 text-lg leading-relaxed">Transferden beta-hCG’ye kadar bilmeniz gerekenler: <a href="/makaleler/embriyo-transferi-gun-secimi/" class="text-primary-600 hover:underline">transfer günü seçimi</a>, embriyo kalitesi, 12 günlük bekleme ve sık belirtiler.</p>
                 <div class="h-1 w-24 bg-primary-600 opacity-30 mt-8"></div>
             </div>
@@ -345,7 +345,7 @@ const itemListSchema = buildHubItemListSchema({
             <div class="text-center mb-12">
                 <span class="text-accent font-label uppercase tracking-[0.3em] text-xs font-bold mb-4 block">Embriyo Değerlendirmesi</span>
                 <h2 class="text-3xl md:text-4xl font-headline text-gray-900 mb-4">Embriyo Kalite Dereceleri</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">Embriyolar hücre sayısı, simetri ve fragmantasyon oranına göre derecelendirilir. Kalite derecesi gebelik şansını doğrudan etkiler.</p>
+                <p class="text-gray-600 max-w-2xl mx-auto">Embriyolar hücre sayısı, simetri ve fragmantasyon oranına göre derecelendirilir. Kalite derecesi gebelik şansını doğrudan etkiler. Kod bazlı ayrıntılı okuma için <a href="/makaleler/laboratuvar-raporu-yorumlama/" class="text-primary-600 hover:underline">embriyo kalite kodları rehberine</a> bakabilirsiniz.</p>
             </div>
 
             <!-- Day 3 Embryos -->
@@ -419,6 +419,7 @@ const itemListSchema = buildHubItemListSchema({
             <div class="text-center mb-12">
                 <span class="text-accent font-label uppercase tracking-[0.3em] text-xs font-bold mb-4 block">Transfer Sonrası</span>
                 <h2 class="text-3xl md:text-4xl font-headline text-gray-900 mb-4">Yapılması ve Yapılmaması Gerekenler</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Lekelenme, kasık ağrısı ve beslenme gibi sık sorulan durumların ayrıntılı yorumu için <a href="/makaleler/embriyo-transferi-sonrasi-bakim/" class="text-primary-600 hover:underline">transfer sonrası bakım rehberine</a> bakabilirsiniz.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -523,7 +524,7 @@ const itemListSchema = buildHubItemListSchema({
             <div class="text-center mb-12">
                 <span class="text-accent font-label uppercase tracking-[0.3em] text-xs font-bold mb-4 block">İki Haftalık Bekleme</span>
                 <h2 class="text-3xl md:text-4xl font-headline text-gray-900 mb-4">12 Günlük Bekleme Süreci</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">Transfer ile beta-hCG testi arasındaki bu dönem, tedavinin en zorlu psikolojik aşamasıdır. Gün gün neler olduğunu bilmek, belirsizliği azaltır.</p>
+                <p class="text-gray-600 max-w-2xl mx-auto">Transfer ile beta-hCG testi arasındaki bu dönem, tedavinin en zorlu psikolojik aşamasıdır. Gün gün neler olduğunu bilmek, belirsizliği azaltır. Değer yorumu ve doubling time için <a href="/makaleler/beta-hcg-testi/" class="text-primary-600 hover:underline">beta-hCG testi rehberine</a> bakabilirsiniz.</p>
             </div>
 
             <!-- Timeline -->
@@ -607,7 +608,7 @@ const itemListSchema = buildHubItemListSchema({
             <div class="text-center mb-12">
                 <span class="text-accent font-label uppercase tracking-[0.3em] text-xs font-bold mb-4 block">Bekleme Döneminde</span>
                 <h2 class="text-3xl md:text-4xl font-headline text-gray-900 mb-4">Sık Yaşanan Belirtiler</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">Bu belirtilerin hem gebelik hem de progesteron ilaçlarının yan etkisi olabileceğini unutmayın. Belirti olmasa da gebelik olabilir.</p>
+                <p class="text-gray-600 max-w-2xl mx-auto">Bu belirtilerin hem gebelik hem de progesteron ilaçlarının yan etkisi olabileceğini unutmayın. Belirti olmasa da gebelik olabilir. Lekelenme ve kasık ağrısının ayrıntılı yorumu için <a href="/makaleler/embriyo-transferi-sonrasi-bakim/" class="text-primary-600 hover:underline">transfer sonrası bakım rehberine</a> bakabilirsiniz.</p>
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -672,7 +673,7 @@ const itemListSchema = buildHubItemListSchema({
                 <div class="md:col-span-7">
                     <span class="text-accent font-label uppercase tracking-[0.3em] text-xs font-bold mb-4 block">Ruhsal Sağlık</span>
                     <h2 class="text-3xl font-headline text-gray-900 mb-6">Bekleme Sürecinde Psikolojik Dayanıklılık</h2>
-                    <p class="text-gray-600 leading-relaxed mb-8">İki haftalık bekleme süreci, tüp bebek tedavisinin en stresli aşamasıdır. Bu süreçte yaşadığınız her duygu geçerlidir. İşte bu dönemi daha sağlıklı geçirmeniz için öneriler:</p>
+                    <p class="text-gray-600 leading-relaxed mb-8">İki haftalık bekleme süreci, tüp bebek tedavisinin en stresli aşamasıdır. Bu süreçte yaşadığınız her duygu geçerlidir. Kapsamlı destek stratejileri için <a href="/makaleler/duygusal-dayaniklik-rehberi/" class="text-primary-600 hover:underline">duygusal dayanıklılık rehberine</a> bakabilirsiniz. İşte bu dönemi daha sağlıklı geçirmeniz için öneriler:</p>
                     <div class="space-y-5">
                         <div class="flex items-start gap-4">
                             <span class="w-8 h-8 bg-primary-50 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
