@@ -73,6 +73,7 @@ const articlesCollection = defineCollection({
     imageCreator: z.string().optional(),
     imageLicenseUrl: z.string().url().optional(),
     imageAcquireLicensePage: z.string().url().optional(),
+    imageCopyrightNotice: z.string().optional(),
     // Hero görsel intrinsic boyutları (CLS önleme + schema/OG meta için).
     // Yeni hero standardı: 1600x900 (16:9 master). Boş bırakılırsa varsayılan kullanılır.
     imageWidth: z.number().int().positive().optional(),

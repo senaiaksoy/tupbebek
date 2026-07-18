@@ -45,6 +45,7 @@ interface Props {
             imageCreator?: string;
             imageLicenseUrl?: string;
             imageAcquireLicensePage?: string;
+            imageCopyrightNotice?: string;
             imageWidth?: number;
             imageHeight?: number;
             videoId?: string;
@@ -75,6 +76,15 @@ const EDITORIAL_BOARD_ID = 'https://tupbebek.com/yayin-kurulu/#editorial-board';
 // yazar/senai-aksoy/ sayfasında tamamlayıcı attributes (alumniOf, memberOf
 // vb.) ile aynı @id'yi extend eder.
 const SENAI_AKSOY_PERSON_ID = 'https://senaiaksoy.net/#person';
+
+// Site geneli görsel telif varsayılanları — tüm hero görselleri tupbebek.com
+// Editöryal Ekip tarafından üretilir/lisanslanır; makale frontmatter'ı bu
+// varsayılanları override edebilir (imageLicenseUrl / imageAcquireLicensePage /
+// imageCopyrightNotice), ama override yoksa GSC'nin eksik saydığı
+// license/acquireLicensePage/copyrightNotice alanları burada dolar.
+const SITE_IMAGE_LICENSE_URL = 'https://tupbebek.com/editoryal-politika';
+const SITE_IMAGE_ACQUIRE_LICENSE_PAGE = 'https://tupbebek.com/editoryal-politika';
+const SITE_IMAGE_COPYRIGHT_NOTICE = '© 2026 tupbebek.com';
 
 const { entry, url } = Astro.props;
 const canonicalUrl = new URL(url);
@@ -194,8 +204,9 @@ const imageObject = absoluteImageUrl && heroDims ? {
     ...(d.imageCaption ? { "caption": d.imageCaption } : {}),
     ...(d.imageCredit ? { "creditText": d.imageCredit } : {}),
     ...(d.imageCreator ? { "creator": { "@type": "Person", "name": d.imageCreator } } : {}),
-    ...(d.imageLicenseUrl ? { "license": d.imageLicenseUrl } : {}),
-    ...(d.imageAcquireLicensePage ? { "acquireLicensePage": d.imageAcquireLicensePage } : {}),
+    "license": d.imageLicenseUrl || SITE_IMAGE_LICENSE_URL,
+    "acquireLicensePage": d.imageAcquireLicensePage || SITE_IMAGE_ACQUIRE_LICENSE_PAGE,
+    "copyrightNotice": d.imageCopyrightNotice || SITE_IMAGE_COPYRIGHT_NOTICE,
     "representativeOfPage": true,
 } : undefined;
 
