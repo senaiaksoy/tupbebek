@@ -2,31 +2,53 @@
 title: "Adet Düzensizliği ve PCOS: Tanı, Gebelik Şansı ve Tedavi Yol Haritası"
 seoTitle: "Adet Düzensizliği ve PCOS"
 description: "Adet düzensizliği ve PCOS ilişkisi: 2023 PCOS tanı kriterleri, AMH/ultrason yorumu, hormon paneli, gebelik isteyenlerde letrozol ve IVF yol haritası."
+summary: "Düzensiz adet tek başına PCOS anlamına gelmez; en sık neden PCOS olsa da ayırıcı tanı gerekir. Tanı; hiperandrojenizm, ovülasyon bozukluğu ve ultrason/AMH bulgularından en az ikisinin birlikte değerlendirilmesiyle konur. Gebelik isteği yoksa tedavi siklus ve metabolik korumaya, gebelik isteğinde ise önce letrozol ile yumurtlama uyarımına odaklanır; tüp bebek yalnızca yetersiz yanıtta gündeme gelir."
+summaryReferences:
+  - title: "2023 Uluslararası PCOS Rehberi"
+    url: "https://pubmed.ncbi.nlm.nih.gov/37580861/"
+  - title: "Legro 2014 PPCOS II (NEJM)"
+    url: "https://pubmed.ncbi.nlm.nih.gov/25006718/"
+category: "Kadın Sağlığı"
+contentType: "portal_article"
+templateVersion: "2026-07"
+status: "published"
 publishDate: 2026-03-31
-lastModified: 2026-05-14
-author: "Doç. Dr. Senai Aksoy"
-authorTitle: "Kadın Hastalıkları ve Doğum Uzmanı"
-authorCredentials: "Üreme Tıbbı ve Yardımcı Üreme Teknikleri"
+lastModified: 2026-07-18
+evidenceAsOf: 2026-05-14
+reviewScope: "Klinik doğruluk, 2023 Rotterdam/uluslararası PCOS tanı kriterleri, hormon paneli önerileri ve gebelik isteyen hastalarda tedavi yol haritası."
+editorialMethodNote: "İçerik hazırlığında dijital editoryal araçlardan yararlanılmış; bilimsel kaynaklar ve klinik ifadeler editoryal ekip tarafından doğrulanmıştır."
+author:
+  name: "Doç. Dr. Senai Aksoy"
+  title: "Kadın Hastalıkları ve Doğum Uzmanı"
+  credentials: "Üreme Tıbbı ve Yardımcı Üreme Teknikleri"
+  url: "https://tupbebek.com/yazar/senai-aksoy/"
 authorYoutube: "https://www.youtube.com/@DocentDrSenaiAksoy"
 medicalReviewer: "tupbebek.com Editöryal Ekip"
 reviewerTitle: "Tıbbi Yayın Ekibi"
 reviewDate: 2026-05-14
-category: "Kadın Sağlığı"
 recommendationGrade: A
 image: "/images/makaleler/adet-duzensizligi-pcos.webp"
 imageAlt: "Polikistik over sendromu (PCOS) tanı ve tedavi rehberi"
+imageCaption: "PCOS tanısı tek bir bulguya değil; adet düzeni, hormon profili ve ultrason bulgularının birlikte değerlendirilmesine dayanır."
+imageCredit: "tupbebek.com Editöryal Ekip"
+imageSourceType: "ai-assisted"
+imageCreator: "tupbebek.com Editöryal Ekip"
+imageWidth: 1600
+imageHeight: 900
 references:
   - title: "Recommendations from the 2023 International Evidence-based Guideline for the Assessment and Management of Polycystic Ovary Syndrome"
     authors: "Teede HJ, Tay CT, Laven JJE et al."
     journal: "Human Reproduction"
     year: 2023
     doi: "10.1093/humrep/dead156"
+    url: "https://pubmed.ncbi.nlm.nih.gov/37580861/"
     pmid: "37580861"
   - title: "Letrozole versus Clomiphene for Infertility in the Polycystic Ovary Syndrome"
     authors: "Legro RS, Brzyski RG, Diamond MP et al."
     journal: "New England Journal of Medicine"
     year: 2014
     doi: "10.1056/NEJMoa1313517"
+    url: "https://pubmed.ncbi.nlm.nih.gov/25006718/"
     pmid: "25006718"
   - title: "Risk of endometrial cancer in patients with polycystic ovarian syndrome: A meta-analysis"
     authors: "Yu HF, Chen HS, Rao DP, Gong J"
@@ -66,13 +88,9 @@ references:
     pmid: "30198563"
 ---
 
-import HizliCevap from '../../components/HizliCevap.astro';
 import InlineEvidence from '../../components/InlineEvidence.astro';
 import MedicalInfoBox from '../../components/global/MedicalInfoBox.astro';
-
-<HizliCevap question="PCOS nedir ve nasıl tanı konur?">
-Polikistik over sendromu (PCOS), adet düzensizliği ve seyrek yumurtlamanın en sık nedenlerinden biridir. 2023 uluslararası PCOS tanı ve tedavi kılavuzuna ([Teede 2023](https://pubmed.ncbi.nlm.nih.gov/37580861/)) göre teşhis; klinik/laboratuvar hiperandrojenizm, ovülasyon disfonksiyonu ve ultrasonografik polikistik over morfolojisi (veya uygun erişkinlerde AMH) bulgularından en az ikisinin bulunmasıyla konur. Gebelik isteyen hastalarda yumurtlama uyarımında ilk basamak tercih olarak letrozol önerilir ([Legro 2014](https://pubmed.ncbi.nlm.nih.gov/25006718/)); tüp bebek ise bu tedavilere yanıt alınamadığında veya ek kısırlık faktörleri varlığında düşünülür.
-</HizliCevap>
+import QuoteBlock from '../../components/global/QuoteBlock.astro';
 
 <MedicalInfoBox title="Terminoloji Güncellemesi (Mayıs 2026)" icon="INFO" color="blue">
 **PCOS, 12 Mayıs 2026'da *The Lancet*'te yayımlanan global konsensüsle "poliendokrin metabolik over sendromu" (PMOS) olarak yeniden adlandırıldı.** Tanı kriterleri ve tedavi yaklaşımı değişmedi; sadece isim güncellendi. Bu rehber PCOS terimini kullanmaya devam ediyor çünkü Türkiye'de geçiş kademeli ilerliyor. İsim değişikliğinin neyi değiştirip neyi değiştirmediği için [PCOS'un yeni adı PMOS](/makaleler/pcos-yeni-adi-pmos/) rehberini okuyun.
@@ -123,6 +141,10 @@ Normal bir adet döngüsü 21-35 gün arasında sürer ve kanama 2-7 gün devam 
 - **Metroraji:** Düzensiz aralıklarla görülen, beklenmedik kanama
 
 Üreme çağında kronik oligomenore veya amenore en sık PCOS'a bağlıdır; ancak hipotiroidi, hiperprolaktinemi, prematür over yetmezliği, hipotalamik amenore ve nadiren konjenital adrenal hiperplazi de benzer tabloya yol açabilir. Bu nedenle "düzensiz adet eşittir PCOS" sloganı doğru değildir — diferansiyel tanı yapılmalıdır.
+
+<QuoteBlock author="Doç. Dr. Senai Aksoy">
+Düzensiz adet, PCOS'un imzası olabilir ama tek başına kimliği değildir. Aynı örüntü tiroidden hipotalamik amenoreye kadar birçok farklı tabloya çıkabilir; asıl iş, adı koymadan önce doğru kapıyı bulmaktır.
+</QuoteBlock>
 
 ## PCOS Tanısı: Rotterdam Kriterleri ve 2023 Güncellemesi
 
@@ -359,44 +381,3 @@ Hayır. Eşlik eden ciddi erkek faktörü, tüp tıkanıklığı, ileri yaş, d�
 - [PCOS ve tüp bebek: OHSS riski ve protokol seçimi](/makaleler/opk-ve-ivf/)
 - [Kadın kısırlığı: nedenler ve tüp bebek zamanlaması](/makaleler/kadin-kisirligi-tup-bebek/)
 - [Tüp bebek aşamaları](/ivf-rehberi/)
-
-export const pcosFaqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "PCOS tanısı için ultrason şart mı?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Hayır. 2023 PCOS rehberine göre düzensiz adet ile klinik veya biyokimyasal hiperandrojenizm birlikte varsa erişkinlerde tanı için ultrason veya AMH her zaman gerekli olmayabilir. Ancak benzer tablo yapan nedenlerin dışlanması gerekir."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "PCOS varsa doğrudan tüp bebek gerekir mi?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Çoğu hastada hayır. Başka infertilite faktörü yoksa ilk adım yumurtlamayı düzenlemek olabilir. Tüp bebek, ovülasyon indüksiyonuna yanıt alınamadığında veya erkek faktörü, tüp tıkanıklığı, ileri yaş ya da düşük rezerv gibi ek nedenler olduğunda değerlendirilir. Tüp bebek planlanırsa PCOS'a özgü OHSS riski ve protokol seçimi ayrı bir değerlendirme konusudur."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Adet düzensizliği olmadan PCOS olur mu?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Evet, bazı hastalarda adetler görece düzenli olabilir. Tanı hiperandrojenizm, ultrason veya AMH bulguları ve diğer nedenlerin dışlanmasıyla birlikte değerlendirilir."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Polikistik over adet gecikmesi yapar mı?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Evet. PCOS ovulasyonun seyrekleşmesine yol açarak adet gecikmesi yapabilir. Ancak gecikme olduğunda gebelik olasılığı varsa ilk adım gebelik testidir."
-      }
-    }
-  ]
-};
-
-<script type="application/ld+json" set:html={JSON.stringify(pcosFaqSchema)} />
