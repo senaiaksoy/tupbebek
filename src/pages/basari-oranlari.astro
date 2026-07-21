@@ -9,15 +9,15 @@ import { buildHubItemListSchema } from '../utils/hubStructuredData';
 const faqItems = [
     {
         q: 'Tüp bebek başarı oranları nasıl yorumlanmalı?',
-        a: 'Başarı oranı tek bir yüzdeyle yorumlanmamalıdır. Kadın yaşı, yumurtalık rezervi, sperm kalitesi, embriyo gelişimi, rahim durumu, transfer tipi ve merkezin hasta profili birlikte değerlendirilmelidir.',
+        a: 'Başarı oranı tek bir yüzdeyle yorumlanmamalıdır. Önce payda sorulmalıdır: transfer işlemi başına mı, transfer edilen embriyo başına mı, yoksa kümülatif canlı doğum mu? Kadın yaşı, rezerv, sperm, embriyo gelişimi, rahim durumu, transfer tipi ve merkezin hasta profili birlikte okunur.',
     },
     {
         q: '40 yaş üstü tüp bebek başarı oranı neden daha düşüktür?',
-        a: '40 yaş üstünde yumurta sayısı ve özellikle embriyoların kromozomal uygunluk olasılığı azalabilir. Bu nedenle tek transfer oranı yerine kümülatif plan ve kişisel tıbbi dosya daha anlamlıdır.',
+        a: '40 yaş üstünde yumurta sayısı ve özellikle embriyoların kromozomal uygunluk olasılığı azalabilir. HFEA 2022 ön verisinde 40–42 yaş grubunda, kendi yumurtasıyla taze IVF’te transfer edilen embriyo başına canlı doğum oranı yaklaşık %10’dur; bu kişisel garanti değildir. Tek yüzde yerine kümülatif plan ve kişisel dosya daha anlamlıdır.',
     },
     {
         q: 'Tüp bebek merkezleri başarı oranları karşılaştırılabilir mi?',
-        a: 'Karşılaştırma yapılırken yalnızca açıklanan yüzdeye değil; hasta yaşı, düşük rezervli hasta oranı, kaçıncı deneme olduğu, tekil veya kümülatif başarı tanımı ve çoklu gebelik politikası gibi faktörlere bakılmalıdır.',
+        a: 'Karşılaştırma yapılırken yalnızca açıklanan yüzdeye değil; hasta yaşı, düşük rezervli hasta oranı, kaçıncı deneme olduğu, payda tanımı (embriyo başına / transfer başına / kümülatif) ve çoklu gebelik politikası gibi faktörlere bakılmalıdır. Farklı paydalar yan yana konmamalıdır.',
     },
 ];
 
@@ -39,7 +39,7 @@ const successHubLinks = [
     {
         href: '/makaleler/yasa-gore-tup-bebek-basari-oranlari/',
         title: 'Yaşa göre tüp bebek başarı oranları',
-        description: '30, 35, 40 yaş ve üzeri için canlı doğum, embriyo uygunluğu ve gerçekçi beklenti.'
+        description: 'HFEA 2022: transfer edilen embriyo başına canlı doğum; 30, 35, 40 yaş ve üzeri.'
     },
     {
         href: '/makaleler/dusuk-amh-hamilelik/',
@@ -72,7 +72,7 @@ const itemListSchema = buildHubItemListSchema({
 });
 ---
 
-<BaseLayout title="Tüp Bebek Başarı Oranı: Kümülatif Veriler ve Gerçekçi Okuma | tupbebek.com" description="Tüp bebek başarı oranı nasıl okunur? Kümülatif sonuçlar, tedavi yöntemi karşılaştırması, uluslararası veriler ve başarıyı etkileyen faktörler; garanti yüzde yoktur.">
+<BaseLayout title="Tüp Bebek Başarı Oranı: Kümülatif Veriler ve Gerçekçi Okuma | tupbebek.com" description="Tüp bebek başarı oranı nasıl okunur? HFEA 2022 payda çerçevesi, kümülatif sonuç, tedavi yöntemi ve uluslararası karşılaştırma; garanti yüzde yoktur.">
     <script type="application/ld+json" is:inline set:html={JSON.stringify(faqSchema)} />
     <script type="application/ld+json" is:inline set:html={JSON.stringify(itemListSchema)} />
     <Header />
@@ -107,7 +107,7 @@ const itemListSchema = buildHubItemListSchema({
 
         <div class="max-w-3xl mx-auto px-4 md:px-6 lg:px-8 mb-16">
             <HizliCevap question="Tüp bebek başarı oranı nasıl yorumlanmalı?">
-                Tüp bebek başarı oranı tek bir yüzde değildir. Yaş, rezerv, sperm, embriyo gelişimi, rahim durumu, transfer tipi ve raporlanan sonucun “gebelik testi”, “klinik gebelik”, “canlı doğum” veya “kümülatif canlı doğum” olup olmadığı birlikte okunmalıdır. Tekrarlayan başarısızlıklarda tek deneme yüzdesinden çok kümülatif plan daha anlamlıdır. CDC ART verileri yaş ve tanıya göre şansın değiştiğini gösterir (<a href="https://www.cdc.gov/art/success-rates/index.html" rel="noopener noreferrer">CDC ART Success Rates</a>). Avrupa kayıtları da ülke ve hasta profiline göre fark olduğunu belirtir (<a href="https://pubmed.ncbi.nlm.nih.gov/37847771/" rel="noopener noreferrer">ESHRE 2019 Avrupa ART kayıtları</a>). Güvenli yorum, oranı hangi gruba ve hangi sonuca ait bilerek yapmaktır.
+                Tüp bebek başarı oranı tek bir yüzde değildir. Önce payda netleşmelidir: transfer işlemi başına mı, transfer edilen embriyo başına mı, yoksa kümülatif canlı doğum mu? Bu sayfadaki yaş özeti <a href="https://www.hfea.gov.uk/about-us/publications/research-and-data/fertility-treatment-2022-preliminary-trends-and-figures/" rel="noopener noreferrer">HFEA 2022</a> ön verisine dayanır: hastanın kendi yumurtasıyla taze IVF’te, transfer edilen embriyo başına canlı doğum (18–34 ≈ %35; 35–37 ≈ %26; 38–39 ≈ %18; 40–42 ≈ %10; 43–44 ≈ %5). <a href="https://www.cdc.gov/art/success-rates/index.html" rel="noopener noreferrer">CDC ART</a> çoğu zaman kümülatif bakış kullanır; paydalar farklı olduğu için HFEA ile yan yana konmamalıdır. Ayrıntılı okuma için <a href="/makaleler/yasa-gore-tup-bebek-basari-oranlari/">yaşa göre başarı oranları</a> yazısına bakın.
             </HizliCevap>
         </div>
 
@@ -121,8 +121,8 @@ const itemListSchema = buildHubItemListSchema({
             </QuoteBlock>
             <div class="bg-primary-50/80 border border-primary-100 rounded-2xl p-6 mb-10">
                 <h2 class="font-headline text-xl text-gray-900 mb-4">Kısa Cevap: Başarı Oranı Tek Bir Yüzde Değildir</h2>
-                <p class="text-sm md:text-base text-gray-700 leading-relaxed mb-4">
-                    Tüp bebek başarı oranı; yaş, yumurtalık rezervi, sperm, embriyo gelişimi, rahim/tüp durumu, transfer tipi ve merkezin hangi hasta grubunu raporladığına göre değişir. Bu nedenle önce şu soru sorulmalıdır: bu yüzde tek transferi mi, canlı doğumu mu, gebelik testini mi yoksa aynı yumurta toplama döngüsünden gelen kümülatif sonucu mu anlatıyor?
+                    <p class="text-sm md:text-base text-gray-700 leading-relaxed mb-4">
+                    Tüp bebek başarı oranı; yaş, yumurtalık rezervi, sperm, embriyo gelişimi, rahim/tüp durumu, transfer tipi ve merkezin hangi hasta grubunu raporladığına göre değişir. Bu nedenle önce şu soru sorulmalıdır: bu yüzde transfer işlemi başına mı, transfer edilen embriyo başına mı, canlı doğumu mu yoksa aynı yumurta toplamadan gelen kümülatif sonucu mu anlatıyor? Bu sayfadaki yaş özeti HFEA 2022 çerçevesine bağlıdır.
                 </p>
                 <div class="overflow-x-auto">
                     <table class="w-full text-sm">
@@ -152,20 +152,24 @@ const itemListSchema = buildHubItemListSchema({
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
                 <div class="bg-gray-50 p-6 rounded-xl shadow-sm border-t-2 border-primary-200">
                     <span class="material-symbols-outlined text-primary-600 mb-3">trending_up</span>
-                    <h3 class="font-bold text-sm mb-2">%40-45</h3>
-                    <p class="text-xs text-gray-600 mb-0">Genel IVF canlı doğum oranı (35 yaş altı)</p>
+                    <h3 class="font-bold text-sm mb-2">≈ %35</h3>
+                    <p class="text-xs text-gray-600 mb-0">18–34 yaş · transfer edilen embriyo başına canlı doğum (HFEA 2022)</p>
                 </div>
                 <div class="bg-gray-50 p-6 rounded-xl shadow-sm border-t-2 border-primary-200">
                     <span class="material-symbols-outlined text-primary-600 mb-3">monitoring</span>
-                    <h3 class="font-bold text-sm mb-2">%30-35</h3>
-                    <p class="text-xs text-gray-600 mb-0">35-38 yaş arası canlı doğum oranı</p>
+                    <h3 class="font-bold text-sm mb-2">≈ %26</h3>
+                    <p class="text-xs text-gray-600 mb-0">35–37 yaş · aynı payda (HFEA 2022)</p>
                 </div>
                 <div class="bg-gray-50 p-6 rounded-xl shadow-sm border-t-2 border-primary-200">
                     <span class="material-symbols-outlined text-primary-600 mb-3">science</span>
-                    <h3 class="font-bold text-sm mb-2">%15-20</h3>
-                    <p class="text-xs text-gray-600 mb-0">&gt;40 yaş canlı doğum oranı</p>
+                    <h3 class="font-bold text-sm mb-2">≈ %10</h3>
+                    <p class="text-xs text-gray-600 mb-0">40–42 yaş · aynı payda (HFEA 2022)</p>
                 </div>
             </div>
+            <p class="text-xs text-gray-500 -mt-8 mb-0">
+                Kaynak: HFEA Fertility treatment 2022 preliminary trends — kendi yumurtası, taze IVF, transfer edilen embriyo başına. Kişisel prognoz değildir.
+                38–39 ≈ %18; 43–44 ≈ %5. Ayrıntı: <a href="/makaleler/yasa-gore-tup-bebek-basari-oranlari/" class="text-primary-700 underline hover:no-underline">yaşa göre başarı oranları</a>.
+            </p>
         </section>
 
         <!-- Quick-Nav Bar -->
@@ -194,52 +198,47 @@ const itemListSchema = buildHubItemListSchema({
                             <div class="bg-white border-l-4 border-primary rounded-xl p-6 mrd-container">
                                 <h4 class="font-bold text-gray-900 text-sm mb-4 flex items-center gap-2">
                                     <span class="material-symbols-outlined text-primary-600">biotech</span>
-                                    Yaş Grubu ve Başarı Oranları (Canlı Doğum / Transfer)
+                                    HFEA 2022 — Canlı doğum / transfer edilen embriyo
                                 </h4>
+                                <p class="text-xs text-gray-600 mb-4">
+                                    Kendi yumurtası · taze IVF · Birleşik Krallık ulusal ön veri. Kişisel şans tahmini değildir.
+                                </p>
                                 <div class="overflow-x-auto">
                                     <table class="w-full text-sm">
                                         <thead>
                                             <tr class="border-b border-gray-200/20">
-                                                <th class="text-left py-2 pr-4 font-semibold text-gray-600">Yaş Grubu</th>
-                                                <th class="text-left py-2 pr-4 font-semibold text-gray-600">Oosit Başkalım</th>
-                                                <th class="text-left py-2 pr-4 font-semibold text-gray-600">Pregnant/Oosit</th>
-                                                <th class="text-left py-2 pr-4 font-semibold text-gray-600">İns Oosit Sayısı</th>
+                                                <th class="text-left py-2 pr-4 font-semibold text-gray-600">Kadın yaşı</th>
+                                                <th class="text-left py-2 pr-4 font-semibold text-gray-600">Canlı doğum oranı</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr class="border-b border-gray-200">
-                                                <td class="py-2 pr-4 font-semibold text-gray-900">&lt;30</td>
-                                                <td class="py-2 pr-4 text-gray-600">%90-97</td>
-                                                <td class="py-2 pr-4 text-gray-600">%8-10</td>
-                                                <td class="py-2 pr-4 text-gray-600">10-15</td>
+                                                <td class="py-2 pr-4 font-semibold text-gray-900">18–34</td>
+                                                <td class="py-2 pr-4 text-gray-600">yaklaşık %35</td>
                                             </tr>
                                             <tr class="border-b border-gray-200">
-                                                <td class="py-2 pr-4 font-semibold text-gray-900">30-34</td>
-                                                <td class="py-2 pr-4 text-gray-600">%90-95</td>
-                                                <td class="py-2 pr-4 text-gray-600">%6-8</td>
-                                                <td class="py-2 pr-4 text-gray-600">15-20</td>
+                                                <td class="py-2 pr-4 font-semibold text-gray-900">35–37</td>
+                                                <td class="py-2 pr-4 text-gray-600">yaklaşık %26</td>
                                             </tr>
                                             <tr class="border-b border-gray-200">
-                                                <td class="py-2 pr-4 font-semibold text-gray-900">35-37</td>
-                                                <td class="py-2 pr-4 text-gray-600">%85-90</td>
-                                                <td class="py-2 pr-4 text-gray-600">%4-6</td>
-                                                <td class="py-2 pr-4 text-gray-600">20-25</td>
+                                                <td class="py-2 pr-4 font-semibold text-gray-900">38–39</td>
+                                                <td class="py-2 pr-4 text-gray-600">yaklaşık %18</td>
                                             </tr>
                                             <tr class="border-b border-gray-200">
-                                                <td class="py-2 pr-4 font-semibold text-gray-900">38-40</td>
-                                                <td class="py-2 pr-4 text-gray-600">%80-85</td>
-                                                <td class="py-2 pr-4 text-gray-600">%2-4</td>
-                                                <td class="py-2 pr-4 text-gray-600">25-30</td>
+                                                <td class="py-2 pr-4 font-semibold text-gray-900">40–42</td>
+                                                <td class="py-2 pr-4 text-gray-600">yaklaşık %10</td>
                                             </tr>
                                             <tr>
-                                                <td class="py-2 pr-4 font-semibold text-gray-900">&gt;40</td>
-                                                <td class="py-2 pr-4 text-gray-600">%75-80</td>
-                                                <td class="py-2 pr-4 text-gray-600">%1-2</td>
-                                                <td class="py-2 pr-4 text-gray-600">Bireysel</td>
+                                                <td class="py-2 pr-4 font-semibold text-gray-900">43–44</td>
+                                                <td class="py-2 pr-4 text-gray-600">yaklaşık %5</td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
+                                <p class="text-xs text-gray-500 mt-3 mb-0">
+                                    Kaynak: <a href="https://www.hfea.gov.uk/about-us/publications/research-and-data/fertility-treatment-2022-preliminary-trends-and-figures/" class="text-primary-700 underline hover:no-underline" rel="noopener noreferrer">HFEA 2022 preliminary trends</a>.
+                                    Donör yumurta ve PGT tedavileri bu özetten dışarıdadır.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -252,7 +251,7 @@ const itemListSchema = buildHubItemListSchema({
                                 <p class="text-[10px] text-gray-600">Oran ancak dosyayla anlam kazanır</p>
                             </div>
                             <figcaption class="mt-4 text-xs text-gray-600 leading-relaxed">
-                                Yaşa göre tüp bebek canlı doğum oranları: 35 yaş altı %40-45, 35-37 yaş %30-35, 38-40 yaş %20-25, 41-42 yaş %10-15, 42 yaş üstü %5-10. Kaynak: ESHRE EIM 2023 European registry, CDC ART 2022 US national figures.
+                                HFEA 2022 ön verisi: kendi yumurtası, taze IVF, transfer edilen embriyo başına canlı doğum — 18–34 ≈ %35; 35–37 ≈ %26; 38–39 ≈ %18; 40–42 ≈ %10; 43–44 ≈ %5. Kişisel sonuç rezerv, sperm, rahim ve laboratuvara göre değişir.
                             </figcaption>
                         </figure>
                     </div>
@@ -267,47 +266,27 @@ const itemListSchema = buildHubItemListSchema({
                     <h2 class="font-headline text-3xl text-gray-900 mb-6">Birden fazla denemede tüp bebek başarı oranı nasıl artar?</h2>
                     <div class="space-y-6 text-gray-600">
                         <p>
-                                Tek transfer oranı ile kümülatif oran aynı şey değildir. Kümülatif oran, aynı yumurta toplama döngüsünden elde edilen taze ve dondurulmuş embriyoların toplam katkısını anlatır. Bu nedenle bazen tek bir transfer sonucuna bakmak yerine, eldeki embriyo havuzunu ve sonraki transfer olasılıklarını birlikte düşünmek daha anlamlıdır.
+                            Tek transfer oranı ile kümülatif oran aynı şey değildir. Kümülatif bakış, aynı yumurta toplama döngüsünden elde edilen taze ve dondurulmuş embriyoların toplam katkısını anlatır. Uygun hastalarda ikinci ve üçüncü yumurta toplama ile de kümülatif canlı doğum şansı artabilir.
                         </p>
                         <div class="bg-white border-l-4 border-primary rounded-xl p-6 mrd-container">
                             <h4 class="font-bold text-gray-900 text-sm mb-4 flex items-center gap-2">
                                 <span class="material-symbols-outlined text-primary-600">monitoring</span>
-                                Kümülatif Gebelik ve Canlı Doğum Oranları
+                                Olasılıklar toplanmaz
                             </h4>
-                            <table class="w-full text-sm">
-                                <thead>
-                                    <tr class="border-b border-gray-200/20">
-                                        <th class="text-left py-2 pr-4 font-semibold text-gray-600">Döngü</th>
-                                        <th class="text-left py-2 pr-4 font-semibold text-gray-600">&lt;35 yaş</th>
-                                        <th class="text-left py-2 pr-4 font-semibold text-gray-600">35-38 yaş</th>
-                                        <th class="text-left py-2 font-semibold text-gray-600">&gt;38 yaş</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="border-b border-gray-200">
-                                        <td class="py-2 pr-4 font-semibold text-gray-900">1. Döngü</td>
-                                        <td class="py-2 pr-4 text-gray-600">%35-40</td>
-                                        <td class="py-2 pr-4 text-gray-600">%25-30</td>
-                                        <td class="py-2 text-gray-600">%15-20</td>
-                                    </tr>
-                                    <tr class="border-b border-gray-200">
-                                        <td class="py-2 pr-4 font-semibold text-gray-900">2. Döngü</td>
-                                        <td class="py-2 pr-4 text-gray-600">%55-60</td>
-                                        <td class="py-2 pr-4 text-gray-600">%45-50</td>
-                                        <td class="py-2 text-gray-600">%25-30</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="py-2 pr-4 font-semibold text-gray-900">3. Döngü</td>
-                                        <td class="py-2 pr-4 text-gray-600">%65-70</td>
-                                        <td class="py-2 pr-4 text-gray-600">%55-60</td>
-                                        <td class="py-2 text-gray-600">%30-35</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <p class="text-xs text-gray-600 mt-3">Kaynak: McLernan et al., ESHRE, 2020</p>
+                            <p class="text-sm text-gray-600 mb-3">
+                                Basit örnek: Her denemede teorik başarı ihtimali %30 olsun. İki denemenin toplamı %60 olmaz. Denemelerin birbirinden bağımsız olduğu basitleştirilmiş modelde en az bir başarı olasılığı yaklaşık %51’dir.
+                            </p>
+                            <ul class="text-sm text-gray-600 space-y-2 list-disc pl-5 mb-0">
+                                <li>Gerçek hayatta IVF denemeleri tamamen bağımsız değildir; yaş, embriyo sayısı ve önceki yanıt sonraki şansı değiştirir.</li>
+                                <li>Yeni yumurta toplama ile dondurulmuş embriyo transferi aynı “deneme” değildir.</li>
+                                <li>CDC ART çoğu zaman bir yumurta toplama sonrası belirli süre içindeki tüm transferleri birlikte raporlar; bu yüzden HFEA embriyo başına oranlarıyla yan yana konmamalıdır.</li>
+                            </ul>
+                            <p class="text-xs text-gray-500 mt-3 mb-0">
+                                Ayrıntılı çerçeve: <a href="/makaleler/yasa-gore-tup-bebek-basari-oranlari/#kumulatif" class="text-primary-700 underline hover:no-underline">yaşa göre makaledeki kümülatif bölüm</a>.
+                            </p>
                         </div>
                         <p class="text-sm text-gray-600">
-                            Kümülatif gebelik oranları, taze ve dondurulmuş embriyo transferlerinin (FET) kombinasyonu ile hesaplanmıştır. Bu veri, "kaç döngüye denemeliyim" sorusunu tek transfer oranından daha gerçekçi yorumlamaya yardımcı olur.
+                            Bu nedenle “kaç döngüye denemeliyim” sorusu tek transfer yüzdesinden değil; eldeki embriyo havuzu, yaş ve her tedaviden sonra yeniden hesaplanan prognoz üzerinden okunmalıdır.
                         </p>
                     </div>
                 </div>
@@ -315,12 +294,12 @@ const itemListSchema = buildHubItemListSchema({
                     <figure class="relative group">
                         <img class="rounded-2xl shadow-xl w-full" src="/images/library/istatistik/dogurganlik.webp" alt="Birden fazla denemede kümülatif tüp bebek başarı oranları" width="512" height="512" loading="lazy"/>
                         <div class="absolute -bottom-6 -left-6 bg-gray-100 p-4 rounded-lg hidden md:block">
-                            <p class="text-xs font-bold text-primary-600 tracking-widest uppercase mb-1">Klinik Veri</p>
-                            <p class="text-2xl font-headline">~70%</p>
-                            <p class="text-[10px] text-gray-600">3. döngüde canlı doğum</p>
+                            <p class="text-xs font-bold text-primary-600 tracking-widest uppercase mb-1">Kritik ayrım</p>
+                            <p class="text-2xl font-headline">Payda</p>
+                            <p class="text-[10px] text-gray-600">Tek transfer ≠ kümülatif</p>
                         </div>
                         <figcaption class="mt-4 text-xs text-gray-600 leading-relaxed">
-                            Kümülatif tüp bebek başarı oranları (35 yaş altı kadınlar): 1. denemede %40-45, 2. kümülatif denemede ~%60, 3. kümülatif denemede ~%70. Kaynak: ESHRE EIM 2023 European registry; taze + dondurulmuş transfer kombinasyonu.
+                            Kümülatif canlı doğum, taze ve dondurulmuş transferlerin toplam etkisini anlatır; deneme yüzdeleri aritmetik toplanmaz. CDC kümülatif raporlama ile HFEA embriyo başına oranlar farklı paydalardır.
                         </figcaption>
                     </figure>
                 </div>
@@ -335,54 +314,44 @@ const itemListSchema = buildHubItemListSchema({
                         <h2 class="font-headline text-3xl text-gray-900 mb-6">IVF, ICSI ve FET arasında başarı oranı farkı nedir?</h2>
                         <div class="space-y-6 text-gray-600">
                             <p>
-                                IVF, ICSI ve dondurulmuş embryio transferleri (FET) farklı prosedürlerdir ve farklı başarı profillerine sahiptir. Aşağıdaki karşılaştırma, her yöntemin genel klinik verilerini gösterir.
+                                IVF, ICSI ve dondurulmuş embriyo transferi (FET) farklı prosedürlerdir; ama “hangi yöntem % kaç?” sorusu yaş, endikasyon ve payda bilinmeden yanıltıcıdır. Aynı yüzde, farklı hasta gruplarını anlatıyor olabilir.
                             </p>
                             <div class="bg-white border-l-4 border-primary rounded-xl p-6 mrd-container">
                                 <h4 class="font-bold text-gray-900 text-sm mb-4 flex items-center gap-2">
                                     <span class="material-symbols-outlined text-primary-600">biotech</span>
-                                    Karşılaştırma: IVF vs ICSI vs FET
+                                    Ne ölçülüyor?
                                 </h4>
                                 <div class="overflow-x-auto">
                                     <table class="w-full text-sm">
                                         <thead>
                                             <tr class="border-b border-gray-200/20">
-                                                <th class="text-left py-2 pr-4 font-semibold text-gray-600">Parametre</th>
-                                                <th class="text-left py-2 pr-4 font-semibold text-gray-600">IVF</th>
-                                                <th class="text-left py-2 pr-4 font-semibold text-gray-600">ICSI</th>
-                                                <th class="text-left py-2 pr-4 font-semibold text-gray-600">FET</th>
+                                                <th class="text-left py-2 pr-4 font-semibold text-gray-600">Yöntem</th>
+                                                <th class="text-left py-2 pr-4 font-semibold text-gray-600">Okuma notu</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr class="border-b border-gray-200">
-                                                <td class="py-2 pr-4 font-semibold text-gray-900">Canlı Doğum / Transfer</td>
-                                                <td class="py-2 pr-4 text-gray-600">%35-40</td>
-                                                <td class="py-2 pr-4 text-gray-600">%35-42</td>
-                                                <td class="py-2 pr-4 text-gray-600">%40-45</td>
+                                                <td class="py-2 pr-4 font-semibold text-gray-900">Klasik IVF</td>
+                                                <td class="py-2 pr-4 text-gray-600">Sonuç yaş ve embriyo potansiyeline bağlıdır; HFEA yaş tablosu kendi yumurtası + taze IVF içindir.</td>
                                             </tr>
                                             <tr class="border-b border-gray-200">
-                                                <td class="py-2 pr-4 font-semibold text-gray-900">Gebelik Oranı</td>
-                                                <td class="py-2 pr-4 text-gray-600">%33-38</td>
-                                                <td class="py-2 pr-4 text-gray-600">%35-40</td>
-                                                <td class="py-2 pr-4 text-gray-600">%40-50</td>
+                                                <td class="py-2 pr-4 font-semibold text-gray-900">ICSI</td>
+                                                <td class="py-2 pr-4 text-gray-600">Erkek faktör endikasyonunda fertilizasyonu destekler; “ICSI herkeste daha yüksek canlı doğum verir” sonucu doğru değildir.</td>
                                             </tr>
                                             <tr class="border-b border-gray-200">
-                                                <td class="py-2 pr-4 font-semibold text-gray-900">Düşük Oranı</td>
-                                                <td class="py-2 pr-4 text-gray-600">%15-20</td>
-                                                <td class="py-2 pr-4 text-gray-600">%12-18</td>
-                                                <td class="py-2 pr-4 text-gray-600">%10-15</td>
+                                                <td class="py-2 pr-4 font-semibold text-gray-900">FET</td>
+                                                <td class="py-2 pr-4 text-gray-600">Daha önce oluşturulmuş embriyonun potansiyelini taşır; belirleyici olan çoğunlukla yumurtanın toplandığı yaştır, transfer sırasındaki yaş değil.</td>
                                             </tr>
                                             <tr>
-                                                <td class="py-2 pr-4 font-semibold text-gray-900">En İyi Kullanım</td>
-                                                <td class="py-2 pr-4 text-gray-600">Normal sperm</td>
-                                                <td class="py-2 pr-4 text-gray-600">Erkek kaynaklı</td>
-                                                <td class="py-2 pr-4 text-gray-600">Önceki başarısız IVF</td>
+                                                <td class="py-2 pr-4 font-semibold text-gray-900">Payda uyarısı</td>
+                                                <td class="py-2 pr-4 text-gray-600">Transfer başına, embriyo başına ve kümülatif oranlar aynı tabloda karıştırılmamalıdır.</td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
                             </div>
                             <p class="text-sm text-gray-600">
-                                Veriler, ortalama klinik verilerdir. Bireysel durumunuz doktorunuz tarafından daha doğru değerlendirilebilir.
+                                Taze ve dondurulmuş transfer ayrımı için <a href="/makaleler/yasa-gore-tup-bebek-basari-oranlari/#taze-fet" class="text-primary-700 underline hover:no-underline">makaledeki taze–FET bölümüne</a> bakabilirsiniz.
                             </p>
                         </div>
                     </div>
@@ -390,12 +359,12 @@ const itemListSchema = buildHubItemListSchema({
                         <figure class="relative group">
                             <img class="rounded-2xl shadow-xl w-full" src="/images/library/tedavi/taze-donmus-transfert.webp" alt="IVF, ICSI ve FET tedavi yöntemleri başarı oranı karşılaştırması" width="512" height="512" loading="lazy"/>
                             <div class="absolute -bottom-6 -right-6 bg-gray-100 p-4 rounded-lg hidden md:block">
-                                <p class="text-xs font-bold text-primary-600 tracking-widest uppercase mb-1">Klinik Veri</p>
-                                <p class="text-2xl font-headline">%45</p>
-                                <p class="text-[10px] text-gray-600">FET canlı doğum oranı</p>
+                                <p class="text-xs font-bold text-primary-600 tracking-widest uppercase mb-1">Kritik soru</p>
+                                <p class="text-2xl font-headline">Hangi payda?</p>
+                                <p class="text-[10px] text-gray-600">Yöntem yüzdesi tek başına yetmez</p>
                             </div>
                             <figcaption class="mt-4 text-xs text-gray-600 leading-relaxed">
-                                Tedavi yöntemine göre canlı doğum oranları: standart IVF ~%35-40, ICSI ~%35-40 (erkek faktör endikasyonunda), Dondurulmuş Embriyo Transferi (FET) ~%45 (segmentasyon protokolü). Kaynak: ESHRE 2023, ASRM/SART 2024.
+                                IVF, ICSI ve FET karşılaştırması yaş, endikasyon ve payda bilinmeden yapılmamalıdır. FET’te embriyo potansiyeli büyük ölçüde yumurtanın toplandığı yaşa bağlıdır.
                             </figcaption>
                         </figure>
                     </div>
@@ -410,51 +379,45 @@ const itemListSchema = buildHubItemListSchema({
                     <h2 class="font-headline text-3xl text-gray-900 mb-6">Türkiye'nin tüp bebek başarı oranları uluslararası ortalamayla nasıl karşılaştırılır?</h2>
                     <div class="space-y-6 text-gray-600">
                         <p>
-                                Ülkeler arası karşılaştırmalar ilk bakışta ilgi çekicidir; fakat çoğu zaman en zayıf yorum alanıdır. Hasta yaşı, donör yumurta kullanımı, embriyo transfer politikası, raporlama standardı ve yasal sınırlar farklıysa, yüzdeleri yan yana koymak tek başına güvenli sonuç vermez.
+                            Ülkeler arası karşılaştırmalar ilk bakışta ilgi çekicidir; fakat çoğu zaman en zayıf yorum alanıdır. Hasta yaşı, donör yumurta kullanımı, embriyo transfer politikası, raporlama standardı ve yasal sınırlar farklıysa, yüzdeleri yan yana koymak tek başına güvenli sonuç vermez.
                         </p>
                         <div class="bg-white border-l-4 border-primary rounded-xl p-6 mrd-container">
                             <h4 class="font-bold text-gray-900 text-sm mb-4 flex items-center gap-2">
                                 <span class="material-symbols-outlined text-primary-600">public</span>
-                                Türkiye vs Diğer Ülkeler (Canlı Doğum / Transfer)
+                                Bu sitede hangi çerçeveyi kullanıyoruz?
                             </h4>
                             <div class="overflow-x-auto">
                                 <table class="w-full text-sm">
                                     <thead>
                                         <tr class="border-b border-gray-200/20">
-                                            <th class="text-left py-2 pr-4 font-semibold text-gray-600">Ülke</th>
-                                            <th class="text-left py-2 pr-4 font-semibold text-gray-600">&lt;35 yaş</th>
-                                            <th class="text-left py-2 pr-4 font-semibold text-gray-600">35-38 yaş</th>
-                                            <th class="text-left py-2 pr-4 font-semibold text-gray-600">&gt;38 yaş</th>
+                                            <th class="text-left py-2 pr-4 font-semibold text-gray-600">Kaynak</th>
+                                            <th class="text-left py-2 pr-4 font-semibold text-gray-600">Ne anlatır?</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr class="border-b border-gray-200">
-                                            <td class="py-2 pr-4 font-semibold text-gray-900">Türkiye</td>
-                                            <td class="py-2 pr-4 text-gray-600">%35-40</td>
-                                            <td class="py-2 pr-4 text-gray-600">%25-30</td>
-                                            <td class="py-2 pr-4 text-gray-600">%15-20</td>
+                                            <td class="py-2 pr-4 font-semibold text-gray-900">HFEA (Birleşik Krallık)</td>
+                                            <td class="py-2 pr-4 text-gray-600">Yaş özetimizde kullanılan çerçeve: kendi yumurtası, taze IVF, transfer edilen embriyo başına canlı doğum (2022 ön veri).</td>
                                         </tr>
                                         <tr class="border-b border-gray-200">
-                                            <td class="py-2 pr-4 font-semibold text-gray-900">ABD</td>
-                                            <td class="py-2 pr-4 text-gray-600">%40-45</td>
-                                            <td class="py-2 pr-4 text-gray-600">%30-35</td>
-                                            <td class="py-2 pr-4 text-gray-600">%20-25</td>
+                                            <td class="py-2 pr-4 font-semibold text-gray-900">CDC ART (ABD)</td>
+                                            <td class="py-2 pr-4 text-gray-600">Çoğu zaman kümülatif bakış: bir yumurta toplama sonrası belirli süre içindeki tüm transferler. HFEA ile aynı tabloda karşılaştırılmaz.</td>
                                         </tr>
                                         <tr class="border-b border-gray-200">
-                                            <td class="py-2 pr-4 font-semibold text-gray-900">İspanya</td>
-                                            <td class="py-2 pr-4 text-gray-600">%38-43</td>
-                                            <td class="py-2 pr-4 text-gray-600">%28-33</td>
-                                            <td class="py-2 pr-4 text-gray-600">%18-22</td>
+                                            <td class="py-2 pr-4 font-semibold text-gray-900">ESHRE EIM (Avrupa)</td>
+                                            <td class="py-2 pr-4 text-gray-600">Ülke ve hasta profiline göre fark gösterir; tek bir “Avrupa yüzdesi” kişisel prognoz değildir.</td>
                                         </tr>
                                         <tr>
-                                            <td class="py-2 pr-4 font-semibold text-gray-900">İngiltere</td>
-                                            <td class="py-2 pr-4 text-gray-600">%32-37</td>
-                                            <td class="py-2 pr-4 text-gray-600">%23-28</td>
-                                            <td class="py-2 pr-4 text-gray-600">%12-18</td>
+                                            <td class="py-2 pr-4 font-semibold text-gray-900">Türkiye</td>
+                                            <td class="py-2 pr-4 text-gray-600">Yasal embriyo transfer üst sınırları ve merkez raporlama farkları karşılaştırma kalitesini etkiler; sahte ülke sıralama tablosu yayınlamıyoruz.</td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
+                            <p class="text-xs text-gray-500 mt-3 mb-0">
+                                HFEA: <a href="https://www.hfea.gov.uk/about-us/publications/research-and-data/fertility-treatment-2022-preliminary-trends-and-figures/" class="text-primary-700 underline hover:no-underline" rel="noopener noreferrer">2022 preliminary trends</a>
+                                · CDC: <a href="https://www.cdc.gov/art/success-rates/index.html" class="text-primary-700 underline hover:no-underline" rel="noopener noreferrer">ART Success Rates</a>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -467,7 +430,7 @@ const itemListSchema = buildHubItemListSchema({
                                 <p class="text-[10px] text-gray-600">Karşılaştırma önce tanım ister</p>
                             </div>
                         <figcaption class="mt-4 text-xs text-gray-600 leading-relaxed">
-                            35 yaş altı kadınlarda tüp bebek canlı doğum oranı uluslararası karşılaştırması: ABD (CDC ART) %40-45, Avrupa ortalaması (ESHRE EIM) %35-40, Türkiye %35-42 (T.C. SB ÜYTE verileri). Kaynak: ESHRE EIM 2023, CDC ART 2022, SART US 2023.
+                            Ülke yüzdelerini yan yana koymak payda, yaş dağılımı ve donör politikası bilinmeden yanıltıcıdır. Bu sitedeki yaş özeti HFEA 2022 embriyo başına canlı doğum çerçevesine bağlıdır.
                         </figcaption>
                     </figure>
                 </div>
@@ -566,7 +529,7 @@ const itemListSchema = buildHubItemListSchema({
                 <a href="/makaleler/yasa-gore-tup-bebek-basari-oranlari/" class="border rounded-xl p-6 hover:shadow-lg transition-shadow block">
                     <span class="material-symbols-outlined text-primary-600 mb-2">query_stats</span>
                     <h3 class="font-bold text-gray-900 text-sm">Yaşa Göre Başarı Oranları</h3>
-                    <p class="text-xs text-gray-600 mt-1">30, 35, 40 yaş ve üzeri için gerçekçi beklenti</p>
+                    <p class="text-xs text-gray-600 mt-1">HFEA 2022: embriyo başına canlı doğum özeti</p>
                 </a>
                 <a href="/pgt-merkezi" class="border rounded-xl p-6 hover:shadow-lg transition-shadow block">
                     <span class="material-symbols-outlined text-primary-600 mb-2">microscope</span>
