@@ -49,7 +49,7 @@ export const navigationMenus: MegaMenuConfig[] = [
     featuredArticle: {
       title: 'Tüp Bebek Nedir?',
       description: 'IVF sürecinin adım adım bilimsel açıklaması.',
-      href: '/makaleler/tup-bebek-nedir'
+      href: '/makaleler/tup-bebek-nedir/'
     },
     submenu: [
       { label: 'Kadın İnfertilitesi', href: '/kadin-infertilitesi', description: 'PCOS, tüp kaynaklı nedenler, endometriozis' },
