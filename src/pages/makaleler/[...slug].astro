@@ -181,7 +181,9 @@ const heroDimensions = resolveImageDimensions({
                     referenceCount={referenceCount}
                 />
 
-                <EvidenceGradeCard grade={entry.data.recommendationGrade} />
+                {!entry.data.hideEvidenceGrade && (
+                    <EvidenceGradeCard grade={entry.data.recommendationGrade} />
+                )}
 
                 {entry.data.summary && (
                     <section class="mt-5 rounded-2xl border border-primary-100 bg-primary-50/70 p-5" aria-labelledby="short-answer-title">
@@ -207,11 +209,13 @@ const heroDimensions = resolveImageDimensions({
                     </section>
                 )}
 
-                <ArticleReviewInfo
-                    evidenceAsOf={entry.data.evidenceAsOf}
-                    reviewScope={entry.data.reviewScope}
-                    editorialMethodNote={entry.data.editorialMethodNote}
-                />
+                {!entry.data.deferEditorialMeta && (
+                    <ArticleReviewInfo
+                        evidenceAsOf={entry.data.evidenceAsOf}
+                        reviewScope={entry.data.reviewScope}
+                        editorialMethodNote={entry.data.editorialMethodNote}
+                    />
+                )}
 
                 <section class="mt-5 rounded-2xl border border-gray-200 bg-white p-5" aria-labelledby="topic-hub-title">
                     <p id="topic-hub-title" class="text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Konu merkezi</p>
@@ -250,6 +254,16 @@ const heroDimensions = resolveImageDimensions({
                     <div class="prose-medical">
                         <Content />
                     </div>
+
+                    {entry.data.deferEditorialMeta && (
+                        <div class="mt-10">
+                            <ArticleReviewInfo
+                                evidenceAsOf={entry.data.evidenceAsOf}
+                                reviewScope={entry.data.reviewScope}
+                                editorialMethodNote={entry.data.editorialMethodNote}
+                            />
+                        </div>
+                    )}
 
                     <!-- Scientific References -->
                     {entry.data.references && (

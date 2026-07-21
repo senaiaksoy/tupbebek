@@ -21,13 +21,19 @@ document.addEventListener('DOMContentLoaded', function() {
     var bar = document.getElementById('reading-progress-bar');
     var badge = document.getElementById('reading-time-badge');
     var timeText = document.getElementById('reading-time-text');
-    var article = document.querySelector('article');
+    var prose = document.querySelector('article .prose-medical');
+    var article = prose || document.querySelector('article');
     if (!bar || !article) return;
 
-    // Calculate estimated reading time (200 words/min for Turkish)
-    const text = article.textContent || '';
-    const wordCount = text.trim().split(/\s+/).length;
-    const totalMinutes = Math.ceil(wordCount / 200);
+    // Ana makale gövdesinden okuma süresi hesapla (Türkçe tıbbi metin için ~160 kelime/dk).
+    // script/style/nav ve yapılandırılmış veri metinlerini hariç tut.
+    var clone = article.cloneNode(true);
+    clone.querySelectorAll('script, style, nav, noscript').forEach(function(node) {
+        node.remove();
+    });
+    var text = (clone.textContent || '').replace(/\s+/g, ' ').trim();
+    var wordCount = text ? text.split(' ').length : 0;
+    var totalMinutes = Math.max(1, Math.ceil(wordCount / 160));
 
     let ticking = false;
     function onScroll() {
@@ -39,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const articleHeight = rect.height;
             const scrolled = window.scrollY - articleTop;
             const viewportHeight = window.innerHeight;
-            const progress = Math.min(Math.max(scrolled / (articleHeight - viewportHeight), 0), 1);
+            const progress = Math.min(Math.max(scrolled / Math.max(articleHeight - viewportHeight, 1), 0), 1);
 
             bar.style.transform = 'scaleX(' + progress + ')';
 

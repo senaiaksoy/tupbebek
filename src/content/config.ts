@@ -105,6 +105,11 @@ const articlesCollection = defineCollection({
     // Yazi ici kritik iddialar icin markdown/MDX icinde {{kanit:A}}, {{kanit:B}},
     // {{kanit:C}} veya {{kanit:D/E}} inline etiketleri kullanilir.
     recommendationGrade: recommendationGradeEnum,
+    // Ulusal kayit / mevzuat / coklu kanit turu iceren makalelerde
+    // tekil "A-B-C oneri derecesi" kartini gizler.
+    hideEvidenceGrade: z.boolean().optional(),
+    // Bilimsel inceleme ve editoryal yontem notunu ustten alta tasiir.
+    deferEditorialMeta: z.boolean().optional(),
     references: z.array(referenceSchema).optional(),
 
     // --- Video Embed ---
