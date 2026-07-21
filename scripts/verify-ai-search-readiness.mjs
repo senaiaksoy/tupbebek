@@ -235,8 +235,13 @@ if (!fs.existsSync(articlesDir)) {
     }
 
     const grade = readScalar(frontmatter, 'recommendationGrade');
-    if (!validGrades.has(grade)) {
-      failures.push(`${relative(filePath)} has invalid recommendationGrade: ${grade || '(missing)'}.`);
+    const hideEvidenceGrade = readScalar(frontmatter, 'hideEvidenceGrade') === 'true';
+    if (grade) {
+      if (!validGrades.has(grade)) {
+        failures.push(`${relative(filePath)} has invalid recommendationGrade: ${grade}.`);
+      }
+    } else if (!hideEvidenceGrade) {
+      failures.push(`${relative(filePath)} has invalid recommendationGrade: (missing).`);
     }
 
     const lastModified = readScalar(frontmatter, 'lastModified');

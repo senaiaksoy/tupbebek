@@ -101,10 +101,11 @@ const articlesCollection = defineCollection({
     approvedBy: z.string().optional(),
 
     // --- Bilimsel Referanslar ---
-    // Makale duzeyindeki zorunlu editoryal kanit derecesi.
+    // Makale duzeyindeki editoryal kanit derecesi (opsiyonel).
+    // hideEvidenceGrade veya karma kanit turu olan makalelerde verilmeyebilir.
     // Yazi ici kritik iddialar icin markdown/MDX icinde {{kanit:A}}, {{kanit:B}},
     // {{kanit:C}} veya {{kanit:D/E}} inline etiketleri kullanilir.
-    recommendationGrade: recommendationGradeEnum,
+    recommendationGrade: recommendationGradeEnum.optional(),
     // Ulusal kayit / mevzuat / coklu kanit turu iceren makalelerde
     // tekil "A-B-C oneri derecesi" kartini gizler.
     hideEvidenceGrade: z.boolean().optional(),

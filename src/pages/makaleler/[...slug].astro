@@ -181,7 +181,7 @@ const heroDimensions = resolveImageDimensions({
                     referenceCount={referenceCount}
                 />
 
-                {!entry.data.hideEvidenceGrade && (
+                {!entry.data.hideEvidenceGrade && entry.data.recommendationGrade && (
                     <EvidenceGradeCard grade={entry.data.recommendationGrade} />
                 )}
 
