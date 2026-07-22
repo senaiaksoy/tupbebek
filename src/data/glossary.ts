@@ -404,9 +404,9 @@ export const glossary: Record<string, GlossaryEntry> = {
     href: '/makaleler/endometrioma',
   },
   PMOS: {
-    term: 'PMOS (Polikistik Morfolojik Over Sendromu)',
-    definition: 'Eski adıyla PCOS. Uluslararası uzman konsensüsü (2024) ile yeni adı PMOS olarak değiştirilmiştir. "Kistik" yerine "morfolojik" terimi kullanılarak yumurtalıklardaki yapıların gerçek kist değil çok sayıda küçük antral folikül olduğu vurgulanmıştır. Hormonal dengesizlik, adet düzensizliği ve insülin direnci ile karakterizedir.',
-    href: '/makaleler/pcos-yeni-adi-pmos',
+    term: 'PMOS (Poliendokrin Metabolik Over Sendromu)',
+    definition: 'Eski adıyla PCOS. Mayıs 2026\'da The Lancet\'te yayımlanan küresel konsensüsle önerilen yeni uluslararası addır (İngilizce: polyendocrine metabolic ovarian syndrome). Tanı kriterleri ve tedavi basamakları tek başına değişmez; hormon ve metabolizma boyutunu daha görünür kılar. Hormonal dengesizlik, adet düzensizliği ve insülin direnci ile karakterizedir.',
+    href: '/makaleler/pcos-yeni-adi-pmos/',
   },
   Asherman: {
     term: 'Asherman Sendromu',

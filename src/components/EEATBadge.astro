@@ -46,6 +46,17 @@ const {
     referenceCount = 0,
 } = Astro.props;
 
+const normalizePerson = (value?: string) =>
+    (value || '')
+        .normalize('NFKC')
+        .replace(/\s+/g, ' ')
+        .trim()
+        .toLocaleLowerCase('tr-TR');
+
+const isSameAuthorAndReviewer =
+    Boolean(medicalReviewer) &&
+    normalizePerson(author) === normalizePerson(medicalReviewer);
+
 const statusConfig = {
     draft: { label: 'Taslak', icon: 'edit_note', color: 'text-gray-500 bg-gray-100' },
     in_review: { label: 'İncelemede', icon: 'pending', color: 'text-amber-700 bg-amber-50' },
@@ -65,7 +76,9 @@ const sc = statusConfig[status];
                     <span class="material-symbols-outlined text-primary-600 text-xl" style="font-variation-settings: 'FILL' 1;">person</span>
                 </div>
                 <div class="min-w-0">
-                    <p class="text-[10px] uppercase tracking-wider text-gray-400 font-semibold mb-0.5">Yazar</p>
+                    <p class="text-[10px] uppercase tracking-wider text-gray-400 font-semibold mb-0.5">
+                        {isSameAuthorAndReviewer ? 'Yazan ve tıbbi olarak gözden geçiren' : 'Yazar'}
+                    </p>
                     <div class="flex items-center gap-1 min-w-0">
                         {authorUrl ? (
                             <a
@@ -93,34 +106,41 @@ const sc = statusConfig[status];
                         )}
                     </div>
                     {authorTitle && <p class="text-xs text-gray-500 truncate">{authorTitle}</p>}
-                </div>
-            </div>
-        </div>
-
-        <!-- Divider -->
-        <div class="hidden sm:block w-px bg-gray-200"></div>
-        <div class="sm:hidden h-px bg-gray-200 mx-4"></div>
-
-        <!-- Medical Reviewer -->
-        <div class="flex-1 p-4 sm:p-5">
-            <div class="flex items-start gap-3">
-                <div class="w-10 h-10 rounded-full bg-mint-50 flex items-center justify-center shrink-0">
-                    <span class="material-symbols-outlined text-mint-600 text-xl" style="font-variation-settings: 'FILL' 1;">verified</span>
-                </div>
-                <div class="min-w-0">
-                    <p class="text-[10px] uppercase tracking-wider text-gray-400 font-semibold mb-0.5">Onay</p>
-                    {medicalReviewer ? (
-                        <>
-                            <p class="text-sm font-bold text-gray-900 truncate">{medicalReviewer}</p>
-                            {reviewerTitle && <p class="text-xs text-gray-500 truncate">{reviewerTitle}</p>}
-                            {reviewDate && <p class="text-[11px] text-gray-400 mt-0.5">{reviewDate}</p>}
-                        </>
-                    ) : (
-                        <p class="text-xs text-gray-400 italic">İnceleme bekleniyor</p>
+                    {isSameAuthorAndReviewer && reviewDate && (
+                        <p class="text-[11px] text-gray-400 mt-0.5">Gözden geçirme: {reviewDate}</p>
                     )}
                 </div>
             </div>
         </div>
+
+        {!isSameAuthorAndReviewer && (
+            <>
+                <!-- Divider -->
+                <div class="hidden sm:block w-px bg-gray-200"></div>
+                <div class="sm:hidden h-px bg-gray-200 mx-4"></div>
+
+                <!-- Medical Reviewer -->
+                <div class="flex-1 p-4 sm:p-5">
+                    <div class="flex items-start gap-3">
+                        <div class="w-10 h-10 rounded-full bg-mint-50 flex items-center justify-center shrink-0">
+                            <span class="material-symbols-outlined text-mint-600 text-xl" style="font-variation-settings: 'FILL' 1;">verified</span>
+                        </div>
+                        <div class="min-w-0">
+                            <p class="text-[10px] uppercase tracking-wider text-gray-400 font-semibold mb-0.5">Onay</p>
+                            {medicalReviewer ? (
+                                <>
+                                    <p class="text-sm font-bold text-gray-900 truncate">{medicalReviewer}</p>
+                                    {reviewerTitle && <p class="text-xs text-gray-500 truncate">{reviewerTitle}</p>}
+                                    {reviewDate && <p class="text-[11px] text-gray-400 mt-0.5">{reviewDate}</p>}
+                                </>
+                            ) : (
+                                <p class="text-xs text-gray-400 italic">İnceleme bekleniyor</p>
+                            )}
+                        </div>
+                    </div>
+                </div>
+            </>
+        )}
     </div>
 
     <!-- Bottom Row: Meta Badges -->
