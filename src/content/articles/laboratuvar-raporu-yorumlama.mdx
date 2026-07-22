@@ -9,13 +9,20 @@ authorCredentials: "Üreme Tıbbı ve Yardımcı Üreme Teknikleri"
 authorYoutube: "https://www.youtube.com/@DocentDrSenaiAksoy"
 medicalReviewer: "tupbebek.com Editöryal Ekip"
 reviewerTitle: "Tıbbi Yayın Ekibi"
-reviewDate: 2026-05-14
-lastModified: 2026-07-13
+reviewDate: 2026-07-22
+lastModified: 2026-07-22
+editorialMethodNote: "Temmuz 2026 güncellemesinde Gardner sınıflaması, PGT terminolojisi, time-lapse kanıtları ve kaynak listesi yeniden değerlendirildi."
 category: "Tedavi Yöntemleri"
 recommendationGrade: B
 image: "/images/makaleler/laboratuvar-raporu-yorumlama.webp"
-imageAlt: "Lacivert ipek gömlekli bir kadın, pencereli ahşap masada elindeki tüp bebek laboratuvar raporunu sakin bir şekilde inceliyor; ön planda hormonal panel başlıklı bir A4 sayfası ve kraft dosya görülüyor."
+imageAlt: "Lacivert ipek gömlekli bir kadın, pencereli ahşap masada elindeki tüp bebek embriyo laboratuvar raporunu sakin bir şekilde inceliyor; ön planda blastosist değerlendirme notları bulunan bir A4 sayfa ve kraft dosya görülüyor."
 references:
+  - title: "The Istanbul consensus update: a revised ESHRE/ALPHA consensus on oocyte and embryo static and dynamic morphological assessment"
+    authors: "Working Group on the update of the ESHRE/ALPHA Istanbul Consensus et al."
+    journal: "Human Reproduction"
+    year: 2025
+    doi: "10.1093/humrep/deaf021"
+    pmid: "40288770"
   - title: "Morphological parameters of the blastocyst to predict embryo quality: a systematic review and meta-analysis"
     authors: "Zhang L, Li C, Zhu N et al."
     journal: "Journal of Assisted Reproduction and Genetics"
@@ -34,20 +41,42 @@ references:
     journal: "Fertility and Sterility"
     year: 2024
     url: "https://www.asrm.org/practice-guidance/practice-committee-documents/the-use-of-preimplantation-genetic-testing-for-aneuploidy-a-committee-opinion-2024/"
+  - title: "American Society for Reproductive Medicine recurrent implantation failure: a committee opinion"
+    authors: "Practice Committee of the American Society for Reproductive Medicine"
+    journal: "Fertility and Sterility"
+    year: 2026
+    url: "https://www.asrm.org/practice-guidance/practice-committee-documents/american-society-for-reproductive-medicine-recurrent-implantation-failure-a-committee-opinion-2026/"
   - title: "Blastocyst culture and transfer in clinically assisted reproduction: a committee opinion"
     authors: "Practice Committee of the American Society for Reproductive Medicine"
     journal: "Fertility and Sterility"
     year: 2018
     url: "https://www.asrm.org/practice-guidance/practice-committee-documents/blastocyst-culture-and-transfer-in-clinically-assisted-reproduction-a-committee-opinion-20182/"
+  - title: "Blastocyst score affects implantation and pregnancy outcome: towards a single blastocyst transfer"
+    authors: "Gardner DK, Lane M, Stevens J, Schlenker T, Schoolcraft WB"
+    journal: "Fertility and Sterility"
+    year: 2000
+    doi: "10.1016/s0015-0282(00)00518-5"
   - title: "Grading Scales: Gardner Grading Scale"
     authors: "American Society for Reproductive Medicine"
     journal: "ASRM Academy"
     url: "https://www.asrm.org/asrm-academy/asrm-academy-on-the-go/embryo-data-grading--evaluation/grading-scales/"
-  - title: "ESHRE Recommendations on Good Practice in the IVF laboratory"
+  - title: "Time-lapse systems for embryo incubation and assessment in assisted reproduction"
+    authors: "Armstrong S, Bhide P, Jordan V, Pacey A, Marjoribanks J, Farquhar C"
+    journal: "Cochrane Database of Systematic Reviews"
+    year: 2019
+    doi: "10.1002/14651858.CD011320.pub4"
+    url: "https://www.cochrane.org/evidence/CD011320_time-lapse-systems-embryo-incubation-and-embryo-assessment-couples-undergoing-vitro-fertilisation"
+    pmid: "31140578"
+  - title: "ESHRE guideline: time-lapse technology"
     authors: "European Society of Human Reproduction and Embryology"
     journal: "ESHRE"
-    year: 2026
-    url: "https://www.eshre.eu/Guidelines-and-Legal/Guidelines/Guidelines-in-development/IVF-labs-review"
+    url: "https://www.eshre.eu/Guidelines-and-Legal/Guidelines/TLT"
+  - title: "ESHRE guideline: add-ons in reproductive medicine"
+    authors: "European Society of Human Reproduction and Embryology"
+    journal: "Human Reproduction"
+    year: 2023
+    doi: "10.1093/humrep/dead184"
+    url: "https://www.eshre.eu/Guidelines-and-Legal/Guidelines/Addons"
 ---
 
 import HizliCevap from '../../components/HizliCevap.astro';
@@ -60,7 +89,7 @@ import InlineEvidence from '../../components/InlineEvidence.astro';
 import EvidenceGradeCard from '../../components/EvidenceGradeCard.astro';
 
 <HizliCevap question="4AA, 3BB veya 5BC embriyo ne demek?">
-Embriyo kalite kodları [Gardner Sınıflaması](https://www.asrm.org/asrm-academy/asrm-academy-on-the-go/embryo-data-grading--evaluation/grading-scales/) baz alınarak okunur: sayı blastosistin genişleme aşamasını, ilk harf iç hücre kitlesini (ICM), ikinci harf trofektodermi (TE) anlatır. Örneğin 4AA genişlemiş ve morfolojik olarak çok iyi görünen bir blastosisttir; 3BB orta-iyi bir blastosisttir; 5BC ise kabuktan çıkmaya başlayan ama özellikle trofektoderm tarafında daha zayıf görünen bir embriyodur. Bu kodlar olasılığı anlatır, kesin gebelik sonucu vermez.
+Embriyo kalite kodları [Gardner Sınıflaması](https://www.asrm.org/asrm-academy/asrm-academy-on-the-go/embryo-data-grading--evaluation/grading-scales/) baz alınarak okunur: sayı blastosistin genişleme aşamasını, ilk harf iç hücre kitlesini (ICM), ikinci harf trofektodermi (TE) anlatır. Örneğin 4AA genişlemiş ve morfolojik olarak çok iyi görünen bir blastosisttir; 3BB orta-iyi bir blastosisttir; 5BC kabuktan çıkmaya başlayan ama özellikle trofektoderm tarafında daha zayıf görünen bir embriyodur. Bu kodlar olasılık anlatır; kesin gebelik sonucu vermez.
 </HizliCevap>
 
 <div class="mesh-hero pt-12 pb-20 px-4 md:px-0 -mx-4 md:-mx-0 mb-12 rounded-3xl shadow-sm border border-white/40" style="background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #f8fafc 100%);">
@@ -81,14 +110,14 @@ Embriyo kalite kodları [Gardner Sınıflaması](https://www.asrm.org/asrm-acade
 
 <div data-reveal>
 <MedicalInfoBox title="Hızlı Bakış: Embriyo Kalite Kodu Nasıl Okunur?" icon="Lab" color="blue">
-**4AA, 3BB veya 5BC gibi kodlar embriyonun mikroskop altındaki görünümünü tarif eder.** Sayı, blastosistin ne kadar genişlediğini; ilk harf bebeğe dönüşecek iç hücre kitlesini; ikinci harf plasentayı oluşturacak trofektodermi gösterir. [Zhang 2025 meta-analizine](https://pubmed.ncbi.nlm.nih.gov/40272716/) göre morfoloji gebelik şansıyla yakından ilişkilidir; ancak genetik yapı, yaş, rahim hazırlığı ve transfer tekniği de sonucu etkiler. <InlineEvidence grade="B" />
+**4AA, 3BB veya 5BC gibi kodlar embriyonun mikroskop altındaki görünümünü tarif eder.** Sayı, blastosistin ne kadar genişlediğini; ilk harf fetüsü oluşturacak hücrelerin geliştiği iç hücre kitlesini (ICM); ikinci harf plasentaya katkı sağlayacak trofektodermi (TE) gösterir. [Zhang 2025 meta-analizine](https://pubmed.ncbi.nlm.nih.gov/40272716/) göre morfoloji gebelik şansıyla ilişkilidir; ancak kromozomal yapı, oositin elde edildiği yaş, rahim hazırlığı ve transfer tekniği de sonucu etkiler. <InlineEvidence grade="B" />
 </MedicalInfoBox>
 </div>
 
 ## İçindekiler
 
-- [Laboratuvar raporundaki kod neyi gösterir?](#kod)
 - [Sık aranan embriyo kalite soruları](#arama-niyeti)
+- [Laboratuvar raporundaki kod neyi gösterir?](#kod)
 - [Gardner sistemi nasıl okunur?](#gardner)
 - [4AA, 3BB, 5BC pratikte ne anlama gelir?](#ornekler)
 - [Morfoloji mi, genetik mi daha önemli?](#genetik)
@@ -107,9 +136,9 @@ Embriyo kalite kodları [Gardner Sınıflaması](https://www.asrm.org/asrm-acade
 | Aranan ifade | Kısa, güvenli cevap |
 | :--- | :--- |
 | **4AA embriyo ne demek?** | Genişlemiş blastosist, iyi ICM ve iyi trofektoderm görünümü demektir; güçlü morfoloji olsa da gebeliği garanti etmez. |
-| **3BB embriyo ne demek?** | Orta genişlemiş blastokist + orta kalitede ICM ve TE demektir. Genelde transfer edilebilir orta-iyi gruptadır; “kötü embriyo” değildir. |
+| **3BB embriyo ne demek?** | Tam blastosist aşamasında + orta kalitede ICM ve TE demektir. Genelde transfer edilebilir orta-iyi gruptadır; “kötü embriyo” değildir. |
 | **3BB embriyo kaliteli mi?** | Genellikle transfer edilebilir orta-iyi blastosist olarak yorumlanır; "A değilse kötü" düşüncesi doğru değildir. |
-| **5BC embriyo kaliteli mi?** | Daha zayıf morfoloji grubundadır; karar tek embriyo olup olmadığı, yaş, PGT-A ve çözülme sonrası canlılıkla birlikte verilir. |
+| **5BC embriyo kaliteli mi?** | Daha zayıf morfoloji grubundadır; karar tek embriyo olup olmadığı, oositin elde edildiği yaş, PGT-A ve çözülme sonrası canlılıkla birlikte verilir. |
 | **Embriyo kalitesi kaç olmalı?** | Tek bir zorunlu kalite yoktur; transfer önceliği embriyo günü, morfoloji, genetik bilgi ve klinik öyküyle belirlenir. |
 | **Embriyo kalitesi sıralaması nasıl yapılır?** | Çoğu merkezde genişleme derecesi, ICM ve trofektoderm birlikte değerlendirilir; laboratuvarlar arası raporlama farkı olabilir. |
 </div>
@@ -122,8 +151,8 @@ Embriyo kalite kodu, embriyoloğun blastosisti mikroskop altında gördüğü an
 | Kod Parçası | Ne Anlatır? | Örnek |
 | :--- | :--- | :--- |
 | **Sayı** | Blastosistin genişleme ve kabuktan çıkma aşaması | 3, 4, 5, 6 |
-| **İlk harf** | İç hücre kitlesi, yani bebeğe dönüşecek hücre grubu | A, B, C |
-| **İkinci harf** | Trofektoderm, yani plasentayı oluşturacak dış hücre tabakası | A, B, C |
+| **İlk harf** | Fetüsü oluşturacak hücrelerin geliştiği iç hücre kitlesi (ICM) | A, B, C |
+| **İkinci harf** | Plasentaya katkı sağlayacak trofektoderm (TE) | A, B, C |
 
 Örneğin **4AA**: genişlemiş bir blastosist, iyi görünen iç hücre kitlesi ve iyi görünen trofektoderm demektir. **3BB**: tam blastosist aşamasında, orta-iyi görünümlü ICM ve TE demektir. **5BC**: kabuktan çıkmaya başlamış, ICM tarafı orta, trofektoderm tarafı daha zayıf görünen blastosist demektir.
 
@@ -136,18 +165,18 @@ Bu kod, embriyonun “görüntü kalitesi”dir. Bir fotoğraf karesi gibidir; e
 <figure>
   <img
     src="/images/makaleler/embriyo-gardner-sistem-bilesenleri.webp"
-    alt="Merkezde stilize bir blastosist ve üç köşeden gelen büyütülmüş kallout daireleri: genişleme aşaması (üst), iç hücre kitlesi (sol) ve trofektoderm (sağ) bileşenleri ayrı ayrı işaretli."
+    alt="Merkezde stilize bir blastosist ve üç köşeden gelen büyütülmüş detay alanları: genişleme aşaması (üst), iç hücre kitlesi (sol) ve trofektoderm (sağ) bileşenleri ayrı ayrı işaretli."
     width="1200"
     height="675"
     loading="lazy"
     decoding="async"
   />
   <figcaption>
-    Gardner sınıflandırma sistemi üç bileşeni birlikte değerlendirir: blastosistin genişleme aşaması (1-6 arası sayı), iç hücre kitlesinin kalitesi (A/B/C) ve trofektodermin yapısı (A/B/C); örneğin "4AA" tam genişlemiş, iyi ICM ve iyi TE anlamına gelir. (Kaynak: Gardner DK, Hum Reprod 1999; ASRM Practice Committee 2024)
+    Gardner sınıflandırma sistemi üç bileşeni birlikte değerlendirir: blastosistin genişleme aşaması (1-6 arası sayı), iç hücre kitlesinin kalitesi (A/B/C) ve trofektodermin yapısı (A/B/C); örneğin "4AA" genişlemiş, iyi ICM ve iyi TE anlamına gelir. (Kaynak: Gardner et al., Fertil Steril 2000; ASRM Academy)
   </figcaption>
 </figure>
 
-Blastosist raporlarında en sık kullanılan sistem Gardner sınıflamasıdır. ASRM eğitim materyalleri de blastosist değerlendirmesinde genişleme aşaması, iç hücre kitlesi ve trofektoderm gibi morfolojik öğelerin kullanıldığını belirtir. <InlineEvidence grade="B" />
+Blastosist raporlarında en sık kullanılan sistem Gardner sınıflamasıdır. 2025’te güncellenen [İstanbul Konsensusu](https://www.eshre.eu/Guidelines-and-Legal/Guidelines/Oocyte-and-embryo-morphology-assessment), oosit ve embriyo morfolojisinde ortak terminoloji ile transfer sıralaması için güncel ESHRE/ALPHA önerilerini sunar. ASRM eğitim materyalleri de genişleme aşaması, ICM ve trofektoderm gibi morfolojik öğelerin birlikte kullanıldığını belirtir. <InlineEvidence grade="B" />
 
 <div class="glass p-8 rounded-3xl border border-blue-100 shadow-sm mt-6 overflow-x-auto">
 <h3 class="text-xl font-bold mb-6 text-blue-800">Genişleme Derecesi: Sayılar</h3>
@@ -160,6 +189,8 @@ Blastosist raporlarında en sık kullanılan sistem Gardner sınıflamasıdır. 
 | **4** | Genişlemiş blastosist | Kabuk incelir, transfer/dondurma için sık görülen güçlü aşamadır |
 | **5** | Hatching blastosist | Embriyo kabuktan çıkmaya başlar |
 | **6** | Hatched blastosist | Embriyo kabuktan tamamen çıkmıştır |
+
+**Sayı tek başına kalite puanı değildir.** 6 numaralı blastosist otomatik olarak 5’ten, 5 de otomatik olarak 4’ten daha “kaliteli” sayılmaz; sayı esas olarak gelişim ve kabuktan çıkma aşamasını gösterir. ICM ve TE harfleriyle birlikte okunur.
 </div>
 </div>
 
@@ -167,7 +198,7 @@ Blastosist raporlarında en sık kullanılan sistem Gardner sınıflamasıdır. 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
   <div class="bg-indigo-50 p-8 rounded-3xl border border-indigo-100">
     <h3 class="text-xl font-bold mb-4 text-indigo-800">İlk Harf: ICM</h3>
-    <p class="text-sm mb-4">ICM, bebeğe dönüşecek iç hücre kitlesidir.</p>
+    <p class="text-sm mb-4">ICM, fetüsü oluşturacak hücrelerin geliştiği iç hücre kitlesidir.</p>
     <ul class="space-y-2 text-sm">
       <li><strong>A:</strong> Sıkı, belirgin ve çok sayıda hücre.</li>
       <li><strong>B:</strong> Daha gevşek ama seçilebilir hücre grubu.</li>
@@ -176,7 +207,7 @@ Blastosist raporlarında en sık kullanılan sistem Gardner sınıflamasıdır. 
   </div>
   <div class="bg-emerald-50 p-8 rounded-3xl border border-emerald-100">
     <h3 class="text-xl font-bold mb-4 text-emerald-800">İkinci Harf: TE</h3>
-    <p class="text-sm mb-4">Trofektoderm, plasentayı oluşturacak dış hücre tabakasıdır.</p>
+    <p class="text-sm mb-4">Trofektoderm, plasentanın önemli bölümüne katkı sağlayacak dış hücre tabakasıdır.</p>
     <ul class="space-y-2 text-sm">
       <li><strong>A:</strong> Çok sayıda, düzenli ve birbirine tutunan hücre.</li>
       <li><strong>B:</strong> Daha seyrek ama düzenli hücreler.</li>
@@ -188,7 +219,7 @@ Blastosist raporlarında en sık kullanılan sistem Gardner sınıflamasıdır. 
 
 <div data-reveal>
 <QuoteBlock author="Doç. Dr. Senai Aksoy">
-Embriyo derecesi, transfer sıralaması için yararlıdır; ancak hasta yaşı, embriyonun geliştiği gün, PGT-A sonucu, rahim hazırlığı ve önceki tedavi öyküsü birlikte değerlendirilmeden tek başına karar verdirmez.
+Embriyo derecesi, transfer sıralaması için yararlıdır; ancak oositin elde edildiği yaş, embriyonun geliştiği gün, PGT sonuçları, rahim hazırlığı ve önceki tedavi öyküsü birlikte değerlendirilmeden tek başına karar verdirmez.
 </QuoteBlock>
 </div>
 
@@ -196,11 +227,11 @@ Embriyo derecesi, transfer sıralaması için yararlıdır; ancak hasta yaşı, 
 <h2 id="ornekler">4AA, 3BB, 5BC Pratikte Ne Anlama Gelir?</h2>
 
 <Accordion title="4AA embriyo ne demek?">
-4AA, genişlemiş blastosist aşamasında ve iki harfi de A olan embriyodur. Morfolojik olarak güçlü bir adaydır. Yine de 4AA embriyo her zaman gebelik sağlar denemez; özellikle kadın yaşı ve kromozomal yapı belirleyici olabilir.
+4AA, genişlemiş blastosist aşamasında ve iki harfi de A olan embriyodur. Morfolojik olarak güçlü bir adaydır. Yine de 4AA her zaman gebelik sağlar denemez; özellikle oositin elde edildiği yaş ve kromozomal yapı belirleyici olabilir. Yıllar önce dondurulmuş veya donör oositinden gelen embriyolarda transfer günündeki yaş değil, oositin alındığı yaş daha anlamlıdır.
 </Accordion>
 
 <Accordion title="3BB embriyo ne demek?">
-Orta genişlemiş blastokist ile orta kalitede ICM ve TE demektir. Çoğu zaman transfer edilebilir orta-iyi gruptadır; tek başına “kötü” veya “kesin tutunur” anlamına gelmez. Transfer günü (3. gün mü 5. gün mü?) ayrı bir karardır — [gün seçimi rehberi](/makaleler/embriyo-transferi-gun-secimi/).
+Tam blastosist aşamasında, orta kalitede ICM ve TE demektir. Çoğu zaman transfer edilebilir orta-iyi gruptadır; tek başına “kötü” veya “kesin tutunur” anlamına gelmez. Buradaki **3** sayısı embriyonun üçüncü günde olduğu anlamına gelmez; blastosistin genişleme aşamasını gösterir. Embriyonun üçüncü veya beşinci günde transfer edilmesi ayrı bir klinik karardır — [gün seçimi rehberi](/makaleler/embriyo-transferi-gun-secimi/).
 </Accordion>
 
 <Accordion title="3BB embriyo kötü mü?">
@@ -208,7 +239,7 @@ Hayır. 3BB genellikle orta-iyi kalite kabul edilen, transfer edilebilir bir bla
 </Accordion>
 
 <Accordion title="5BC embriyo transfer edilir mi?">
-5BC, kabuktan çıkmaya başlamış ama özellikle trofektoderm tarafı daha zayıf görünen bir embriyodur. Transfer kararı; eldeki diğer embriyolar, yaş, PGT-A sonucu, önceki denemeler ve laboratuvarın çözülme sonrası gözlemiyle birlikte verilir.
+5BC, kabuktan çıkmaya başlamış ama özellikle trofektoderm tarafı daha zayıf görünen bir embriyodur. Transfer kararı; eldeki diğer embriyolar, oositin elde edildiği yaş, PGT sonucu, önceki denemeler ve laboratuvarın çözülme sonrası gözlemiyle birlikte verilir.
 </Accordion>
 
 <Accordion title="6AA, 5AA'dan daha mı iyi?">
@@ -223,21 +254,21 @@ Hayır. C harfi daha zayıf morfoloji demektir; imkansızlık demek değildir. �
 <div data-reveal>
 <h2 id="genetik">Morfoloji mi, Genetik mi Daha Önemli?</h2>
 
-Embriyo derecesi dış görünümü anlatır; PGT-A ise blastosistten alınan hücrelerde kromozom sayısını değerlendirmeye çalışır. Bu iki bilgi aynı şey değildir.
+Embriyo derecesi dış görünümü anlatır; PGT-A ise blastosistten alınan birkaç hücrede kromozom sayısının normal mi anormal mi olduğuna bakmaya çalışır. İkisi aynı şey değildir.
 
-**Temel kural:** Genetik olarak normal olduğu bilinen daha düşük morfolojili bir embriyo, genetik olarak anormal olduğu bilinen çok iyi görünümlü embriyodan daha anlamlı bir transfer adayı olabilir. <InlineEvidence grade="B" />
+PGT-A’da euploid olarak raporlanan, morfolojisi daha sönük bir embriyo; yalnızca görünümü parlak olduğu halde aneuploid raporlanan bir embriyodan transfer için genellikle önceliklidir. Aneuploid embriyo standart bir “yedek plan” adayı değildir. Mozaik sonuçlar ise ayrı genetik danışmanlık gerektirir; euploid–aneuploid karşılaştırmasının basit bir istisnası sayılmaz. <InlineEvidence grade="B" />
 
-Ama burada denge önemlidir: ASRM’nin 2024 PGT-A komite görüşü, PGT-A’nın her IVF hastasında rutin tarama olarak değerinin kanıtlanmadığını; bazı gruplarda yararlı olabileceğini, ancak tüm hastalara otomatik çözüm gibi sunulmaması gerektiğini vurgular. <InlineEvidence grade="A" />
+ASRM’nin [2024 PGT-A komite görüşü](https://www.asrm.org/practice-guidance/practice-committee-documents/the-use-of-preimplantation-genetic-testing-for-aneuploidy-a-committee-opinion-2024/), PGT-A’nın her IVF hastasında rutin tarama olarak kanıtlanmış bir yararı olmadığını; seçilmiş senaryolarda bireysel olarak tartışılabileceğini vurgular. Tekrarlayan gebelik kaybı veya başarısız transfer, otomatik olarak “PGT-A yapın” demek anlamına gelmez. <InlineEvidence grade="B" />
 
-PGT-A kararı özellikle şu durumlarda daha sık tartışılır:
+PGT-A bazı durumlarda bireysel olarak konuşulabilir:
 
-- İleri anne yaşı
-- Tekrarlayan gebelik kaybı
-- Tekrarlayan başarısız transfer
-- Bilinen kromozomal yeniden düzenlenme öyküsü
-- Çok sayıda blastosist arasından seçim yapma ihtiyacı
+- Oositin elde edildiği ileri maternal yaş
+- Transfer için çok sayıda blastosist arasından seçim gereksinimi
+- Tekrarlayan gebelik kaybı veya başarısız transfer — kanıt sınırlı; karar öyküye göre verilir
 
-Bu nedenle transfer önceliği bazen en güzel görünen embriyoya değil, klinik bağlama göre en güvenli ve en anlamlı adaya verilir.
+Yapısal kromozom yeniden düzenlemesi (örneğin dengeli translokasyon) ayrı bir başlıktır. Burada konuşulan test genellikle PGT-A değil, **PGT-SR**’dır; genetik danışmanlık önerilir. ASRM, yapısal yeniden düzenleme saptanan çiftlerde PGT-SR’nin sunulabileceğini belirtir. <InlineEvidence grade="B" />
+
+Bu nedenle transfer önceliği bazen en parlak görünen embriyoya değil, klinik bağlama göre en anlamlı adaya verilir.
 </div>
 
 <div data-reveal>
@@ -260,21 +291,21 @@ Bu nedenle çözülme sonrası tek bir fotoğraf yerine embriyoloğun takip notu
 <figure>
   <img
     src="/images/makaleler/embriyo-timelapse-ai-laboratuvar.webp"
-    alt="IVF laboratuvarında embriyolog, time-lapse inkübatöründen alınan blastosist gelişim sekansını monitörde inceliyor; yanında AI değerlendirme ekranı ve modern embryoscope cihazı."
+    alt="IVF laboratuvarında embriyolog, time-lapse inkübatöründen alınan blastosist gelişim sekansını monitörde inceliyor; yanında AI değerlendirme ekranı ve time-lapse inkübatör cihazı."
     width="1200"
     height="675"
     loading="lazy"
     decoding="async"
   />
   <figcaption>
-    Time-lapse görüntüleme ve AI tabanlı değerlendirme algoritmaları, embriyoların geleneksel morfolojik bakının ötesinde sürekli izlenmesini ve gelişim hızının kantitatif puanlanmasını sağlar; tek embriyo transferinde implantasyon olasılığını öngörmede yardımcıdır. (Kaynak: ESHRE Special Interest Group 2024; Tran D et al., Hum Reprod 2019)
+    Time-lapse sistemleri embriyo gelişimini inkübatörden çıkarmadan izleyebilir ve morfokinetik veri sağlayabilir. Ancak time-lapse görüntüleme ve bu sistemlerle kullanılan embriyo seçim yazılımlarının standart değerlendirmeye göre canlı doğum oranını artırdığı kesin olarak gösterilmemiştir. (Kaynak: [ESHRE time-lapse önerileri](https://www.eshre.eu/Guidelines-and-Legal/Guidelines/TLT); [ESHRE add-on önerileri](https://doi.org/10.1093/humrep/dead184); [Cochrane CD011320](https://www.cochrane.org/evidence/CD011320_time-lapse-systems-embryo-incubation-and-embryo-assessment-couples-undergoing-vitro-fertilisation))
   </figcaption>
 </figure>
 
 <div data-reveal class="bg-blue-900 text-white p-10 rounded-3xl shadow-xl">
-<h2 id="timelapse" class="text-2xl font-bold mb-6 text-white">Time-Lapse, Embryoscope ve Yapay Zeka Raporları</h2>
+<h2 id="timelapse" class="text-2xl font-bold mb-6 text-white">Time-Lapse Inkübatörleri ve Yapay Zeka Raporları</h2>
 <p class="mb-6 opacity-90 text-lg leading-relaxed">
-Time-lapse sistemlerinde embriyo inkübatörden çıkarılmadan aralıklı görüntülenir. Bu sayede bölünme zamanları, düzensiz bölünmeler ve gelişim ritmi daha ayrıntılı izlenebilir.
+Time-lapse sistemlerinde — Embryoscope gibi ticari markalar da buna girer — embriyo inkübatörden çıkarılmadan aralıklı görüntülenir. Bölünme zamanları, düzensiz bölünmeler ve gelişim ritmi daha ayrıntılı izlenebilir.
 </p>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
   <div class="bg-white/10 p-4 rounded-xl border border-white/20">
@@ -288,7 +319,7 @@ Time-lapse sistemlerinde embriyo inkübatörden çıkarılmadan aralıklı gör�
   </div>
 </div>
 <p class="mt-6 opacity-90 text-sm leading-relaxed">
-Ancak time-lapse ve yapay zeka skorları tek başına başarı vaadi anlamına gelmez. Kanıt, bu teknolojilerin bazı laboratuvarlarda karar desteği sağlayabileceğini; fakat canlı doğumu kesin artıran evrensel bir çözüm gibi sunulmaması gerektiğini gösterir. <InlineEvidence grade="C" />
+Ancak time-lapse görüntüleme ve bu sistemlerle kullanılan embriyo seçim yazılımları tek başına başarı vaadi anlamına gelmez. [ESHRE time-lapse önerileri](https://www.eshre.eu/Guidelines-and-Legal/Guidelines/TLT) ve [add-on rehberi](https://doi.org/10.1093/humrep/dead184), time-lapse görüntülemenin canlı doğumu artırma aracı olarak önerilmediğini vurgular; [Cochrane derlemesi](https://www.cochrane.org/evidence/CD011320_time-lapse-systems-embryo-incubation-and-embryo-assessment-couples-undergoing-vitro-fertilisation) de bu konuda kanıtın sınırlı olduğunu belirtir. Bu teknolojiler bazı laboratuvarlarda karar desteği sağlayabilir; evrensel bir çözüm gibi sunulmamalıdır. <InlineEvidence grade="C" />
 </p>
 </div>
 
@@ -297,25 +328,25 @@ Ancak time-lapse ve yapay zeka skorları tek başına başarı vaadi anlamına g
 
 Embriyo seçimi genellikle tek bir skora göre değil, birkaç bilginin birlikte okunmasıyla yapılır:
 
-1. Kadın yaşı ve tedavi öyküsü
+1. Oositin elde edildiği yaş, hastanın güncel klinik durumu ve tedavi öyküsü
 2. Embriyonun geliştiği gün: 5., 6. veya 7. gün
 3. Blastosist genişleme derecesi
 4. ICM ve trofektoderm kalitesi
 5. Dondurma ve çözülme sonrası canlılık
-6. PGT-A sonucu varsa kromozomal durum
+6. PGT sonucu varsa kromozomal durum
 7. Önceki transfer sonuçları
 8. Rahim içi hazırlık ve transfer tekniği
 
 Cochrane’in güncel derlemesi, blastosist transferinin iyi prognozlu hastalarda taze transfer başına canlı doğum olasılığını artırabileceğini; ancak kümülatif sonuçlar, embriyo dondurma oranı ve transfer edilememe riski gibi başlıkların ayrıca dikkate alınması gerektiğini belirtir. <InlineEvidence grade="A" />
 
-Bu yüzden raporu okurken daha doğru soru şudur: “Bu embriyo kodu, benim yaşıma, önceki denemelerime ve toplam embriyo havuzuma göre ne anlama geliyor?”
+Bu yüzden raporu okurken daha doğru soru şudur: “Bu embriyo kodu, oositimin elde edildiği yaşa, önceki denemelerime ve toplam embriyo havuzuma göre ne anlama geliyor?”
 </div>
 
 <div data-reveal>
 <h2 id="faq">Sıkça Sorulan Sorular</h2>
 
 <Accordion title="4AA embriyo kesin tutar mı?">
-Hayır. 4AA güçlü morfoloji anlamına gelir ama kesin gebelik garantisi değildir. Yaş, kromozomal yapı, rahim hazırlığı, transfer tekniği ve şans faktörü sonucu etkiler.
+Hayır. 4AA güçlü morfoloji anlamına gelir ama kesin gebelik garantisi değildir. Oositin elde edildiği yaş, kromozomal yapı, rahim hazırlığı, transfer tekniği ve şans faktörü sonucu etkiler.
 </Accordion>
 
 <Accordion title="3BB embriyo ile gebelik olur mu?">
@@ -330,8 +361,8 @@ Evet, olabilir. 3BB transfer edilebilir ve klinikte sık görülen bir blastosis
 Her zaman değil. Blastosist çözülme sonrası geçici olarak büzüşebilir. Yeniden genişleme, hücre bütünlüğü ve embriyoloğun son değerlendirmesi birlikte dikkate alınır.
 </Accordion>
 
-<Accordion title="PGT-A sonucu normal olan düşük dereceli embriyo transfer edilir mi?">
-Bazı durumlarda evet. Euploid olduğu bilinen bir embriyo, morfolojisi çok parlak olmasa bile anlamlı transfer adayı olabilir. Karar, yaş, embriyo sayısı ve klinik öyküyle birlikte verilmelidir.
+<Accordion title="PGT-A’da euploid olarak raporlanan düşük dereceli embriyo transfer edilir mi?">
+Bazı durumlarda evet. Euploid olarak raporlanan bir embriyo, morfolojisi çok parlak olmasa bile anlamlı transfer adayı olabilir. Karar, oositin elde edildiği yaş, embriyo sayısı ve klinik öyküyle birlikte verilmelidir.
 </Accordion>
 
 <Accordion title="Embriyo kalitesi kaç olmalı?">
@@ -345,6 +376,7 @@ Tek bir zorunlu kalite derecesi yoktur. Transfer önceliği embriyonun gelişti�
 
 <div data-reveal class="mt-12 bg-slate-50 p-8 rounded-3xl border border-slate-200">
 **Sizin İçin Seçtiğimiz Diğer Rehberler:**
+
 - [Embriyo transferi için gün seçimi](/makaleler/embriyo-transferi-gun-secimi/)
 - [Transfer sonrası beta-hCG testi](/makaleler/beta-hcg-testi/)
 - [Kaç yumurta gerekir?](/makaleler/kac-yumurta-gerekir/)
@@ -356,8 +388,8 @@ Tek bir zorunlu kalite derecesi yoktur. Transfer önceliği embriyonun gelişti�
 
 <div data-reveal class="mt-12 pt-8 border-t border-slate-200 text-sm text-slate-600">
 ## Yasal Uyarı
-**Son tıbbi revizyon tarihi: 12 Mayıs 2026.**
-Bu makale bilgilendirme amaçlıdır; tıbbi teşhis ve tedavi yerine geçmez. Embriyo raporunuzu kendi yaşınız, önceki tedavileriniz ve klinik planınızla birlikte doktorunuz ve embriyoloji ekibinizle değerlendirin.
+**Son tıbbi revizyon tarihi: 22 Temmuz 2026.**
+Bu makale bilgilendirme amaçlıdır; tıbbi teşhis ve tedavi yerine geçmez. Embriyo raporunuzu oositin elde edildiği yaş, önceki tedavileriniz ve klinik planınızla birlikte doktorunuz ve embriyoloji ekibinizle değerlendirin.
 </div>
 
 </div>
@@ -370,14 +402,14 @@ export const embryoReportFaqSchema = {
     "name": "3BB embriyo ne demek?",
     "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Orta genişlemiş blastokist ile orta kalitede ICM ve TE demektir. Çoğu zaman transfer edilebilir orta-iyi gruptadır; tek başına kötü veya kesin tutunur anlamına gelmez."
+      "text": "Tam blastosist aşamasında, orta kalitede ICM ve TE demektir. Çoğu zaman transfer edilebilir orta-iyi gruptadır; tek başına kötü veya kesin tutunur anlamına gelmez."
     }
   }, {
     "@type": "Question",
     "name": "4AA embriyo kesin tutar mı?",
     "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Hayır. 4AA güçlü morfoloji anlamına gelir ama kesin gebelik garantisi değildir. Yaş, kromozomal yapı, rahim hazırlığı, transfer tekniği ve şans faktörü sonucu etkiler."
+      "text": "Hayır. 4AA güçlü morfoloji anlamına gelir ama kesin gebelik garantisi değildir. Oositin elde edildiği yaş, kromozomal yapı, rahim hazırlığı, transfer tekniği ve şans faktörü sonucu etkiler."
     }
   }, {
     "@type": "Question",
@@ -402,10 +434,10 @@ export const embryoReportFaqSchema = {
     }
   }, {
     "@type": "Question",
-    "name": "PGT-A sonucu normal olan düşük dereceli embriyo transfer edilir mi?",
+    "name": "PGT-A’da euploid olarak raporlanan düşük dereceli embriyo transfer edilir mi?",
     "acceptedAnswer": {
       "@type": "Answer",
-      "text": "Bazı durumlarda evet. Euploid olduğu bilinen bir embriyo, morfolojisi çok parlak olmasa bile anlamlı transfer adayı olabilir. Karar, yaş, embriyo sayısı ve klinik öyküyle birlikte verilmelidir."
+      "text": "Bazı durumlarda evet. Euploid olarak raporlanan bir embriyo, morfolojisi çok parlak olmasa bile anlamlı transfer adayı olabilir. Karar, oositin elde edildiği yaş, embriyo sayısı ve klinik öyküyle birlikte verilmelidir."
     }
   }, {
     "@type": "Question",
