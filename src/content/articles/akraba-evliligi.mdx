@@ -1,18 +1,18 @@
 ---
 title: "Akraba Evliliği ve Genetik Risk: Taşıyıcılık Taraması, Genetik Danışmanlık ve PGT-M Yaklaşımı"
-seoTitle: "Akraba Evliliği Zararları ve Genetik Risk"
-description: "Akraba evliliğinde asıl kaygı genetik risktir; her çocukta hastalık demek değildir. Dereceye göre risk, taşıyıcılık taraması ve PGT-M seçenekleri."
+seoTitle: "Akraba Evliliğinde Genetik Risk, Testler ve PGT-M"
+description: "Akraba evliliğinde genetik risk nasıl artar? Taşıyıcılık taraması, genetik danışmanlık ve PGT-M seçenekleri; her gebelikte hastalık demek değildir."
 publishDate: 2026-03-31
-lastModified: 2026-07-13
+lastModified: 2026-07-23
 author: "Doç. Dr. Senai Aksoy"
 authorTitle: "Kadın Hastalıkları ve Doğum Uzmanı"
 authorCredentials: "Üreme Tıbbı ve Yardımcı Üreme Teknikleri"
 authorYoutube: "https://www.youtube.com/@DocentDrSenaiAksoy"
 medicalReviewer: "tupbebek.com Editöryal Ekip"
 reviewerTitle: "Tıbbi Yayın Ekibi"
-reviewDate: 2026-05-14
+reviewDate: 2026-07-23
+status: "published"
 category: "Genetik"
-recommendationGrade: A
 image: "/images/makaleler/akraba-evliligi.webp"
 imageAlt: "Akraba evliliği genetik riskleri ve DNA kalıtım illüstrasyonu"
 references:
@@ -64,194 +64,131 @@ references:
     year: 2020
     doi: "10.3390/genes11080871"
     pmid: "32752000"
+  - title: "ESHRE good practice recommendations on expanded carrier screening — 2026 yayımlanan özet"
+    authors: "ESHRE Reproductive Genetics Special Interest Group"
+    journal: "Human Reproduction (Supplement abstract)"
+    year: 2026
+    url: "https://academic.oup.com/humrep/article/41/Supplement_1/deag083.113/8727449"
+  - title: "ESHRE Guideline: Recommendations for preimplantation genetic testing"
+    authors: "ESHRE PGT Consortium"
+    journal: "ESHRE"
+    year: 2020
+    url: "https://www.eshre.eu/guideline/PGT"
 ---
 
 import HizliCevap from '../../components/HizliCevap.astro';
-import InlineEvidence from '../../components/InlineEvidence.astro';
 
-<HizliCevap question="Akraba evliliği yapan çiftlerin sağlıklı çocuk sahibi olma riski nedir?">
-Kısa cevap: Akraba evliliğinde, özellikle birinci derece kuzenlerde, otosomal resesif hastalık riski genel popülasyona göre artabilir ([Hamamy 2012](https://pubmed.ncbi.nlm.nih.gov/21671180/). Bu, her gebelikte hastalık çıkacağı anlamına gelmez. Türkiye’de akraba evliliği oranı yaklaşık %18–24’tür ([Kaplan 2016](https://pubmed.ncbi.nlm.nih.gov/26892044/)). Yakın akrabalıkta konjenital anomali riski de yükselebilir ([Bittles ve Black 2010](https://pubmed.ncbi.nlm.nih.gov/20832202/); [Bittles 2010](https://pubmed.ncbi.nlm.nih.gov/19805052/)). Planlı bir gebelikten önce genetik danışmanlık ve taşıyıcılık taraması mantıklı ilk adımdır ([Gregg 2021](https://pubmed.ncbi.nlm.nih.gov/34285390/)). Her iki eş aynı hastalık için taşıyıcıysa, IVF + PGT-M (tek gen taraması) seçenekler arasındadır ([De Rycke 2020](https://pubmed.ncbi.nlm.nih.gov/32752000/)).
+<HizliCevap question="Akraba evliliğinde çocukta genetik hastalık riski ne kadar artar?">
+Kısa cevap: Akraba evliliğinde, özellikle birinci kuzenlerde, otozomal resesif hastalık riski genel popülasyona göre artabilir ([Hamamy 2012](https://pubmed.ncbi.nlm.nih.gov/22109912/)). Bu, her gebelikte hastalık çıkacağı anlamına gelmez. Çocukların büyük çoğunluğu sağlıklı doğar. Genel popülasyonda ciddi doğumsal anomali veya genetik hastalık için yaklaşık %2–3 olan toplam risk, birinci kuzen çiftlerde çoğu danışmanlık kaynağında yaklaşık %4–6 olarak verilir ([Bittles ve Black 2010](https://pubmed.ncbi.nlm.nih.gov/20832202/)). Türkiye'de farklı dönem ve örneklemlerde yapılan araştırmalarda akraba evliliği oranı yaklaşık %18–24 arasında bildirilmiştir ([Kaplan 2016](https://pubmed.ncbi.nlm.nih.gov/26892044/)). Gebelik planından önce genetik danışmanlık ve taşıyıcılık taraması iyi bir başlangıçtır ([Gregg 2021](https://pubmed.ncbi.nlm.nih.gov/34285390/)). Her iki eş aynı ciddi otozomal resesif hastalık için taşıyıcıysa, IVF ile [PGT-M](/makaleler/pgt-m/) seçeneği değerlendirilebilir ([De Rycke 2020](https://pubmed.ncbi.nlm.nih.gov/32752000/)).
 </HizliCevap>
 
 ## Akraba Evliliği Nedir?
 
-Akraba evliliği, aralarında kan bağı olan kişiler (örneğin kuzenler) arasındaki evliliktir; tıbbi adı konsanguinitedir. Ortak atadan gelen genleri paylaşma olasılığı arttığı için otosomal resesif hastalık riski genel popülasyona göre yükselebilir. Bu, her akraba evliliğinde hastalık çıkacağı anlamına gelmez. Risk, akrabalık derecesine, taşınan mutasyona ve aile öyküsüne bağlıdır. <InlineEvidence grade="A" />
+Akraba evliliği, aralarında kan bağı olan kişilerin — örneğin kuzenlerin — evliliğidir. Tıbbi adı konsanguinitedir. Ortak atadan gelen genleri daha fazla paylaştığınız için, otozomal resesif hastalık riski genel popülasyona göre yükselebilir. Yani her akraba evliliğinde hastalık çıkacağı anlamına gelmez.
 
-Akraba evlilikleri Akdeniz havzası, Orta Doğu, Kuzey Afrika ve Güney Asya’da yaygındır. Türkiye’de oran görece yüksektir. Genişletilmiş taşıyıcılık taraması (expanded carrier screening), PGT-M ve haplotip analizi bu riskleri yönetmek için kullanılan araçlardır.
+Risk; ne kadar yakın akraba olduğunuza, hangi gen mutasyonunun taşındığına ve aile öykünüze bağlıdır. Akraba evlilikleri Akdeniz havzası, Orta Doğu, Kuzey Afrika ve Güney Asya'da yaygındır. Türkiye'de de oran görece yüksektir. Bu riski yönetmek için genişletilmiş taşıyıcılık taraması, [PGT-M](/makaleler/pgt-m/) ve haplotip analizi kullanılabilir.
+
+**Önemli ayrım:** Genetik yakınlık ile hukuki hısımlık derecesi aynı şey değildir. Aşağıdaki tablo yalnızca paylaşılan DNA oranını anlatır; evlenme yasağı tablosu değildir.
 
 ## Sık Aranan Akraba Evliliği ve Genetik Test Soruları
 
 | Aranan soru | Kısa cevap |
 | :--- | :--- |
 | **Akraba evliliği nedir?** | Kan bağı olan kişiler arasındaki evliliklerdir; risk artışı özellikle ortak resesif mutasyon taşıyıcılığında belirginleşir. |
-| **Akraba evliliği zararları nelerdir?** | Sık sorulan “zarar” aslında genetik risk artışıdır. Otosomal resesif hastalık ve bazı doğumsal anomali olasılığı yükselebilir; her gebelikte hastalık demek değildir. |
-| **En riskli akraba evliliği hangisi?** | Ne kadar yakın akrabalık varsa risk o kadar artabilir. Pratikte en çok konuşulan grup birinci derece kuzen evlilikleridir. |
+| **Akraba evliliği zararları nelerdir?** | Sık sorulan "zarar" aslında genetik risk artışıdır. Otozomal resesif hastalık ve bazı doğumsal anomali olasılığı yükselebilir; her gebelikte hastalık demek değildir. |
+| **En riskli akraba evliliği hangisi?** | Genetik olarak ne kadar yakınsanız risk o kadar artabilir. Pratikte en çok konuşulan grup birinci kuzen evlilikleridir. |
 | **Akraba evliliği genetik testi nasıl yapılır?** | Genetik danışmanlık, soy ağacı değerlendirmesi ve çoğu zaman her iki eşten kan örneğiyle taşıyıcılık taraması yapılır. |
-| **Akraba evliliğinde hangi hastalıklar görülür?** | En çok otosomal resesif hastalıkların riski artar; talasemi, SMA, kistik fibrozis ve bazı metabolik hastalıklar örnek verilebilir. |
-| **Akraba evliliğinde tüp bebek gerekir mi?** | Her çiftte gerekmez. Her iki eş aynı hastalık genini taşıyorsa PGT-M ile IVF seçeneği gündeme gelebilir. |
+| **Akraba evliliğinde hangi hastalıklar görülür?** | Hangi hastalığın riskinin arttığı ailede taşınan varyanta bağlıdır; talasemi, SMA ve kistik fibrozis sık örnek verilir. |
+| **Akraba evliliğinde tüp bebek gerekir mi?** | Her çiftte gerekmez. Her iki eş aynı ciddi otozomal resesif hastalık için taşıyıcıysa PGT-M ile IVF seçeneği gündeme gelebilir. |
 | **Akraba evliliğinde PGT-M ne zaman düşünülür?** | Ailede bilinen tek gen hastalığı varsa veya çift aynı ciddi resesif hastalık için taşıyıcıysa değerlendirilir. |
 
-## Türkiye'de Akraba Evliliği — Prevalans ve Demografi
+## Türkiye'de Akraba Evliliği — Ne Kadar Yaygın?
 
-Sağlık Bakanlığı destekli ulusal araştırmalarda Türkiye'de akraba evliliği prevalansı:
+Türkiye'de farklı dönem ve örneklemlerde yapılan araştırmalarda akraba evliliği oranı yaklaşık **%18–24** arasında bildirilmiştir ([Kaplan 2016](https://pubmed.ncbi.nlm.nih.gov/26892044/)). Bu çalışmada birinci kuzen evlilikleri, akraba evliliklerinin yaklaşık **%57,8'ini** oluşturuyordu. Eğitim düzeyi yükseldikçe oranın düştüğü de bildirilmiştir.
 
-- **Genel oran: %18-24** <InlineEvidence grade="B" />
-- **Birinci derece kuzen evliliği:** akraba evliliklerinin **%57.8'i** — en sık görülen tip
-- **Bölgesel farklılıklar:** Doğu ve Güneydoğu Anadolu'da %35'e ulaşan oranlar
-- **Eğitim ve sosyoekonomik düzey:** Eğitim seviyesi yükseldikçe oran düşer
-
-Karşılaştırma için: Avrupa Birliği ülkelerinde akraba evliliği oranı %1'in altındadır; ABD'de tahmini %0.2.
-
-## Genetik Risk Nasıl Artar? — Otosomal Resesif Kalıtımın Mantığı
+## Genetik Risk Nasıl Artar? — Otozomal Resesif Kalıtımın Mantığı
 
 <figure>
   <img
     src="/images/makaleler/akraba-otosomal-resesif-punnett.webp"
-    alt="Otosomal resesif kalıtım Punnett karesi: iki taşıyıcı ebeveynden (Aa × Aa) gelen olası kombinasyonlar — %25 sağlıklı (AA), %50 taşıyıcı (Aa) ve %25 hasta (aa) — renk kodlu hücrelerle gösteriliyor."
+    alt="Otozomal resesif kalıtım Punnett karesi: iki taşıyıcı ebeveynden (Aa × Aa) gelen olası kombinasyonlar — %25 etkilenmemiş ve taşıyıcı olmayan (AA), %50 etkilenmemiş taşıyıcı (Aa) ve %25 etkilenmiş (aa) — renk kodlu hücrelerle gösteriliyor."
     width="1200"
     height="675"
     loading="lazy"
     decoding="async"
   />
   <figcaption>
-    Akraba evliliği, çiftin ortak ataya sahip olması nedeniyle aynı otosomal resesif gen mutasyonunu taşıma olasılığını artırır; her iki ebeveyn taşıyıcıysa (Aa × Aa) her gebelikte %25 hasta, %50 taşıyıcı, %25 sağlıklı çocuk olasılığı vardır. (Kaynak: ACMG Practice Resource 2024; ESHG 2022)
+    Akraba evliliği, çiftin ortak ataya sahip olması nedeniyle aynı otozomal resesif gen mutasyonunu taşıma olasılığını artırır. Her iki eş aynı otozomal resesif hastalık için taşıyıcıysa, her gebelikte çocuğun etkilenme olasılığı %25, etkilenmemiş taşıyıcı olma olasılığı %50, etkilenmemiş ve taşıyıcı olmama olasılığı %25'tir. Her gebelikte bu olasılıklar yeniden geçerlidir. (Kaynak: [Gregg ve ark., 2021](https://pubmed.ncbi.nlm.nih.gov/34285390/))
   </figcaption>
 </figure>
 
-İnsan genomunda yaklaşık 20.000 gen bulunur ve her bireyin genomunda **3-7 ciddi otosomal resesif hastalık mutasyonu taşıdığı** tahmin edilir. Bu mutasyonlar tek başına hastalık yaratmaz — çünkü "iyi" gen kopyası onları kompanse eder. Hastalık ancak bir bireyin **aynı genin iki bozuk kopyasını** birden alması durumunda ortaya çıkar.
+İnsan genomunda yaklaşık 20.000 gen vardır. Sağlıklı bireyler de bazı otozomal resesif hastalıklarla ilişkili patojenik varyantların taşıyıcısı olabilir. Taşıyıcılar genellikle hastalık belirtisi göstermez; çünkü genin diğer kopyası işlevini sürdürür. Hastalık ancak bir birey **aynı genin iki bozuk kopyasını** birden aldığında ortaya çıkar.
 
-### Akrabalık Neden Risk Yaratır?
+### Genetik Yakınlık Nasıl Ölçülür?
 
-İki akraba ortak atalardan gelen genleri paylaşır. Ne kadar yakın akrabaysa, paylaşılan genlerin oranı o kadar yüksektir:
+İki akraba ortak atalardan gelen genleri paylaşır. Ne kadar yakın akrabaysanız, paylaştığınız gen oranı o kadar yüksektir. Aşağıdaki yüzdeler **beklenen ortalama değerlerdir**; özellikle kardeşlerde gerçek paylaşım bu ortalamadan sapabilir:
 
-| Akrabalık Derecesi | Paylaşılan Gen Oranı |
-|---|---|
-| Birinci derece (kardeş, anne/baba-çocuk) | %50 |
-| İkinci derece (büyükanne/baba, dayı/teyze) | %25 |
-| Üçüncü derece (kuzen) | **%12.5** |
-| Dördüncü derece (ikinci kuzen) | %3.125 |
+| Akrabalık | Yaklaşık paylaşılan DNA (beklenen ortalama) |
+| :--- | ---: |
+| Ebeveyn–çocuk veya kardeşler | %50 |
+| Büyükanne/büyükbaba–torun veya amca/dayı/hala/teyze–yeğen | %25 |
+| Birinci kuzenler | %12,5 |
+| İkinci kuzenler | %3,125 |
+| Üçüncü kuzenler | %0,78 |
 
-Yani birinci derece kuzenler ortak atalarından gelen genlerinin **1/8'ini** paylaşırlar. Eğer atalardan biri bir resesif mutasyon taşıyorsa, bu mutasyon hem anne hem baba tarafından çocuğa geçme ihtimali katlanır.
+Birinci kuzenler ortak atalarından gelen genlerinin yaklaşık **1/8'ini** paylaşır. Atalardan biri bir resesif mutasyon taşıyorsa, bu mutasyonun her iki ebeveyn yoluyla çocuğa geçme olasılığı artar.
 
-### Sayısal Örnek
+### Genel Risk Mesajı
 
-- Popülasyon genelinde belirli bir resesif hastalık riski: 1/10,000 (sayısız taşıyıcılık × 1/4 kombinasyon kuralı)
-- Birinci derece kuzen evliliğinde aynı hastalığın riski: 1/2,000-3,000
-- Yani **3-5 kat artmış** spesifik hastalık riski
+Çocukların büyük çoğunluğu sağlıklı doğar. Genel popülasyonda ciddi doğumsal anomali veya genetik hastalık için yaklaşık **%2–3** olan toplam risk, birinci kuzen çiftlerde çoğu danışmanlık kaynağında yaklaşık **%4–6** olarak verilir ([Bittles ve Black 2010](https://pubmed.ncbi.nlm.nih.gov/20832202/); [Hamamy 2012](https://pubmed.ncbi.nlm.nih.gov/22109912/)). Bu ortalama bir tahmindir. Ailede bilinen hastalık, daha önce etkilenmiş çocuk veya nesiller boyunca tekrarlayan akrabalık varsa risk çok daha farklı olabilir.
 
-Ancak bu rakamlar tek bir hastalık içindir. Tüm otosomal resesif hastalıkları topladığında akraba evliliğinde **konjenital anomali toplam riski yaklaşık iki katına çıkar**: %2-3 → %4-5. <InlineEvidence grade="A" />
+Akraba evliliği her zaman anomaliyle sonuçlanmaz; yalnızca **göreli risk** artar. Tek bir hastalık için kesin çarpan vermek çoğu çiftte yanıltıcı olur. Hangi mutasyonun paylaşıldığı aileye özeldir.
 
-## Hangi Hastalıkların Riski Artar?
+## Hangi Hastalıkların Riski Artabilir?
 
-Akraba evliliklerinde otosomal resesif (her iki ebeveynden mutant gen gerektiren) tüm hastalıkların riski artar. Türkiye'de özellikle taşıyıcılık oranı yüksek olan ve klinik olarak ağır seyreden başlıca hastalıklar:
+Akraba evliliklerinde otozomal resesif hastalıkların — yani her iki ebeveynden de bozuk gen gerektiren hastalıkların — riski artabilir. Hangi hastalığın riskinin arttığı, ailede taşınan varyanta ve toplumdaki taşıyıcılık sıklığına bağlıdır. Ailede bilinen hastalık varsa genel panelden önce o hastalığın moleküler tanısı doğrulanmalıdır.
 
-### Hemoglobinopatiler
+Sık tartışılan örnekler:
 
-- **β-talasemi** (Akdeniz anemisi) — Türkiye'de taşıyıcılık %2-3, Akdeniz ve Ege bölgelerinde %5'in üzerinde
-- **Orak hücre anemisi** — özellikle Antakya/Çukurova bölgesinde taşıyıcılık yüksek
-- **α-talasemi** — Güney Türkiye'de
+- **Hemoglobinopatiler:** β-talasemi (Akdeniz anemisi), orak hücre anemisi, α-talasemi
+- **Nöromüsküler hastalıklar:** Spinal müsküler atrofi (SMA)
+- **Metabolik hastalıklar:** Konjenital adrenal hiperplazi, fenilketonüri, galaktosemi, lizozomal depo hastalıkları
+- **İmmün yetmezlikler:** Bazı primer immün yetmezlikler
+- **Diğer:** Kistik fibrozis, GJB2 ilişkili işitme kaybı
 
-### Nöromüsküler Hastalıklar
+SMA için kısa not: Tedavi edilmediğinde SMA Tip 1 tarihsel olarak ağır seyirli ve yüksek erken mortaliteyle ilişkiliydi. Günümüzde erken tanı ve tedaviyle hastalığın seyri değişebilmektedir.
 
-- **Spinal Müsküler Atrofi (SMA)** — Tip 1 SMA klasik olarak bir yaş altında ölümcül; SMN1 gen mutasyonu, taşıyıcılık ~%2
-- **Duchenne ve Becker musküler distrofi** — X-linked, ama otosomal resesif formlar da var
-
-### Metabolik Hastalıklar
-
-- **Konjenital adrenal hiperplazi (21-OH eksikliği)**
-- **Fenilketonüri (PKU)** — yenidoğan tarama programı kapsamında
-- **Galaktosemi**
-- **MCAD eksikliği** ve diğer yağ asidi oksidasyon bozuklukları
-- **Lizozomal depo hastalıkları** (Gaucher, Niemann-Pick, Tay-Sachs)
-
-### İmmün Yetmezlikler
-
-- **Primer immün yetmezlikler (PID)** — Türkiye'de yüksek prevalans; çoğu otosomal resesif
-- **Şiddetli kombine immün yetmezlik (SCID)**
-
-### Diğer Önemli Tablolar
-
-- **Kistik fibrozis** — taşıyıcılık ~%2-3
-- **Hereditary sensorinöral işitme kaybı** (özellikle GJB2/Connexin 26 mutasyonları)
-- **Bardet-Biedl, Joubert ve diğer siliopatiler**
-- **Konjenital kalp hastalıkları** (bazı genetik formları)
-- **İnflamatuvar bağırsak hastalıkları (erken başlangıçlı)** — IL-10 reseptör mutasyonları
-
-## Akraba Evliliğinin İnfant ve Çocuk Sağlığı Üzerindeki Etkileri
-
-Geniş çaplı epidemiyolojik veri akraba evliliklerinde aşağıdaki sağlık göstergelerinde anlamlı artış gösterir:
-
-### Mortalite
-
-- **Birinci kuzen evliliğinde infant mortalitesi:** Ek **%1.0-1.5** (genel popülasyondaki temel ölüm oranına eklenen) <InlineEvidence grade="A" />
-- **Pre-reproduktif mortalite RR: 1.41** (meta-analiz) — yani ortalama %41 göreli risk artışı
-- Bazı yüksek-akrabalık popülasyonlarında neonatal/infant mortalite artışı çok daha yüksek (1000 doğumda +15-22)
-
-### Konjenital Anomaliler
-
-- Akraba evliliği çocuklarında **kümülatif konjenital anomali prevalansı yaklaşık iki katına çıkar** (%26 → %40 bazı kohortlarda) <InlineEvidence grade="A" />
-- Bazı popülasyonlarda konjenital anomalilerin **%31'i akraba evliliğine atfedilebilir**
-- Etkilenen sistemler en sık: kalp, merkezi sinir sistemi, ürogenital sistem, ortopedik
-
-### Düşük ve Ölü Doğum
-
-- Spontan düşük ve ölü doğum oranları belirgin artmış
-- Tekrarlayan gebelik kayıpları için akraba evliliği bağımsız risk faktörüdür
-
-### Tarihsel Önemli Nüans
-
-Akraba evliliği "her zaman" anomaliyle sonuçlanmaz — sadece **göreli risk** artar. Akraba çiftlerden doğan çocukların büyük çoğunluğu sağlıklı doğar. Ancak risk düzeyinin %2-3'ten %4-5'e çıkması topluluk düzeyinde anlamlı bir morbidite yükü yaratır.
-
-## Akraba Evliliği Derecesine Göre Risk
-
-| Akrabalık Tipi | Tahmini Konjenital Anomali Risk Artışı | Mortalite Artışı |
-|---|---|---|
-| Birinci derece kuzen | ~%2 mutlak artış (bazal üzerinde) | +%1-1.5 |
-| İkinci derece kuzen | ~%0.5-1 mutlak artış | +%0.5 |
-| Üçüncü derece kuzen | İhmal edilebilir | İhmal edilebilir |
-| Birden fazla nesil akrabalık (endogamik) | Belirgin yüksek | Belirgin yüksek |
-
-**Önemli not:** Bir akraba evliliği eğer **ailede bilinen genetik hastalık varsa** veya **önceki bir çocuk etkilenmişse**, risk yukarıdaki tablodan çok daha yüksektir. Bu durumda spesifik gen taraması zorunludur.
+Bu liste bir hastalık kataloğu değildir. Genetik danışmanlık sırasında aile öykünüze göre panel daraltılır veya genişletilir.
 
 ## Genetik Danışmanlık ve Taşıyıcılık Taraması
 
-### Genetik Danışmanlık — Önceden Mutlaka Yapılmalı
+### Gebelik Planından Önce Genetik Danışmanlık
 
-Genetik danışmanlık akraba evliliği yapan veya yapmayı planlayan çiftler için **öncelikli ve zorunlu** bir adımdır. Süreç şunları kapsar:
+Akraba evliliği yapan veya yapmayı planlayan çiftler için genetik danışmanlık öncelikli bir adımdır. Süreç genelde şunları kapsar:
 
-- Detaylı **soy ağacı (pedigree) analizi** — en az 3 nesil
+- En az üç nesillik **soy ağacı (pedigri) analizi**
 - Ailede bilinen genetik hastalık öyküsü
 - Önceki gebelik öyküsü, düşük ve ölü doğum
-- Etnik köken bazlı risk değerlendirmesi
-- Spesifik test önerileri ve yorumlanması
+- Etnik kökene göre risk değerlendirmesi
+- Hangi testlerin yapılacağı ve sonuçların nasıl yorumlanacağı
 
-### Taşıyıcılık Taraması — Modern Standart
+### Taşıyıcılık Taraması Nedir?
 
-ACOG ve ACMG güncel rehberleri **tüm gebelik planlayan veya gebe çiftlere** taşıyıcılık taramasını önermektedir; bu öneri akraba çiftlerde özellikle güçlüdür. <InlineEvidence grade="A" />
+Taşıyıcılık taraması gebelik öncesinde veya gebeliğin erken döneminde yapılabilir. ACMG, gebelik planlayan ve gebe bireylere etnik kökenden bağımsız geniş bir tarama yaklaşımının sunulmasını destekler ([Gregg 2021](https://pubmed.ncbi.nlm.nih.gov/34285390/)). ACOG ise hedeflenmiş, pan-etnik ve genişletilmiş tarama stratejilerinin klinik bağlama göre kullanılabileceğini belirtir ([ACOG 2017](https://pubmed.ncbi.nlm.nih.gov/28225420/)). Bu nedenle panel kapsamı aile öyküsü, bilinen hastalıklar, testin analitik yeterliliği ve genetik danışmanlıkla belirlenmelidir.
 
-**Hedeflenmiş (Targeted) Taşıyıcılık Taraması:** Etnik köken ve aile öyküsüne göre seçilmiş gen paneli.
+**Hedeflenmiş taşıyıcılık taraması:** Etnik köken ve aile öyküsüne göre seçilmiş gen paneli. Hedeflenmiş panellerde aile öyküsü ve klinik bağlama göre β-talasemi, SMA, kistik fibrozis veya GJB2 ilişkili işitme kaybı gibi hastalıklar değerlendirilebilir.
 
-- Türkiye nüfusu için klasik panel: β-talasemi, SMA, kistik fibrozis, GJB2 (sensorinöral işitme kaybı), bazı bölgelerde orak hücre anemisi
-- Yenidoğan tarama programı kapsamındaki hastalıklar genelde dışlanır (zaten doğum sonrası bakılır)
+**Genişletilmiş taşıyıcılık taraması:** Yüzlerce geni aynı anda test eden, yeni nesil dizileme (NGS) tabanlı yaklaşım. Akraba evliliklerinde hangi resesif mutasyonun paylaşıldığı bilinmediğinde özellikle anlamlı olabilir. 2026 ESHRE iyi uygulama önerilerinin yayımlanan özetinde eşlerin aynı anda test edilmesi, ciddi ve iyi tanımlanmış hastalıkların seçilmesi ve negatif sonucun riski sıfırlamadığının anlatılması vurgulanır ([ESHRE ECS özeti](https://academic.oup.com/humrep/article/41/Supplement_1/deag083.113/8727449)).
 
-**Expanded Carrier Screening (Genişletilmiş Tarama):**
+### Önerilen Test Sırası
 
-- 100-500+ gen aynı anda test edilir
-- NGS (next-generation sequencing) tabanlı
-- ACOG kabul edilebilir bir strateji olarak listeler
-- Maliyet açısından son yıllarda erişilebilir hâle gelmiştir
-- Akraba evlilikleri için **özellikle güçlü** bir araç; çünkü hangi resesif mutasyonun paylaşıldığını bilmiyoruz
+1. Üç nesillik aile öyküsü ve genetik danışmanlık
+2. Ailede bilinen hastalık varsa önce etkilenmiş bireyde moleküler tanının doğrulanması
+3. Bilinen varyanta yönelik hedeflenmiş test
+4. Uygun çiftlerde genişletilmiş taşıyıcılık taraması
+5. Ortak ciddi hastalık riski saptanırsa üreme seçeneklerinin birlikte görüşülmesi
 
-### Test Sırası
-
-İdeal süreç:
-1. Çift birlikte genetik danışmana başvurur
-2. Detaylı aile öyküsü alınır
-3. Expanded carrier screening her iki eşten alınan kandan yapılır
-4. Her iki eş aynı resesif hastalığın taşıyıcısı çıkarsa "at-risk couple" olarak değerlendirilir
-5. Bu noktada üreme seçenekleri tartışılır
-
-## At-Risk Couple — Hangi Seçenekler Vardır?
+## Ortak Hastalık Riski Taşıyan Çiftler — Hangi Seçenekler Var?
 
 <figure>
   <img
@@ -263,79 +200,83 @@ ACOG ve ACMG güncel rehberleri **tüm gebelik planlayan veya gebe çiftlere** t
     decoding="async"
   />
   <figcaption>
-    At-risk çiftlerde dört ana seçenek vardır: doğal gebelik + prenatal tanı (CVS / amniyosentez), preimplantasyon genetik tanı (PGT-M) ile IVF, donör gamet kullanımı veya evlat edinme; karar çiftin değerleri, taşınan hastalığın ağırlığı ve uygulanabilirliğe göre verilir. (Kaynak: ACMG 2024; ESHRE PGT-M Guideline 2023)
+    Üreme seçenekleri arasında doğal gebelik ve prenatal tanı, IVF ile PGT-M, seçeneğin yasal olduğu ülkelerde donör gamet, evlat edinme veya gebelik planlamama bulunabilir. Karar çiftin değerlerine, taşınan hastalığın ağırlığına ve uygulanabilirliğe göre verilir. (Kaynak: [Gregg ve ark., 2021](https://pubmed.ncbi.nlm.nih.gov/34285390/); [ESHRE PGT önerileri](https://www.eshre.eu/guideline/PGT))
   </figcaption>
 </figure>
 
-Eğer her iki eş de aynı resesif hastalığın taşıyıcısı çıkarsa, çocukların hastalık taşıma riski %25, taşıyıcılık riski %50, sağlıklı olma riski %25'tir. Bu noktada bilinçli üreme seçenekleri:
+Her iki eş de aynı otozomal resesif hastalığın taşıyıcısı çıkarsa, her gebelikte çocuğun etkilenme olasılığı %25, etkilenmemiş taşıyıcı olma olasılığı %50, etkilenmemiş ve taşıyıcı olmama olasılığı %25'tir. Bu noktada önünüzde birkaç yol vardır:
 
-### 1. Spontan Gebelik + Prenatal Tanı
+### 1. Doğal Gebelik + Prenatal Tanı
 
-- Doğal yollarla gebelik sonrası **koryon villus örnekleme (CVS)** (10-13. hafta) veya **amniyosentez** (15-20. hafta)
-- Test sonucuna göre çift gebelik devamı veya sonlandırma kararı alabilir
-- Tanı doğruluğu yüksek (%99+) ama gebelik kaybı riski %0.5-1
-- Karar etik ve dini boyutu olan zor bir süreçtir
+- Gebelik oluştuktan sonra **koryon villus örnekleme (CVS)** (10–13. hafta) veya **amniyosentez** (genellikle 15. haftadan sonra) yapılabilir
+- Sonuçlar genetik danışmanlık ve perinatoloji değerlendirmesiyle birlikte yorumlanır. Gebeliğin yönetimine ilişkin seçenekler, hastalığın ağırlığı, gebelik haftası, çiftin değerleri ve yürürlükteki hukuki çerçeve içinde görüşülür
+- CVS ve amniyosentez invaziv tanı testleridir. İşleme bağlı gebelik kaybı riski düşüktür; güncel risk merkezin deneyimine, tekniğe ve başlangıç riskinize göre değişir. Kişisel riski işlemi yapacak perinatoloji ekibiyle görüşmelisiniz
+- Bu karar etik ve dini boyutu olan zor bir süreçtir; acele etmeden değerlendirmek önemlidir
 
 ### 2. Preimplantasyon Genetik Tanı (PGT-M) — IVF ile Birlikte
 
-PGT-M, IVF ile elde edilen embriyolarda gen mutasyonu taraması yapılarak **sadece etkilenmemiş embriyoların** transferine olanak sağlar. <InlineEvidence grade="A" />
+PGT-M, önceden tanımlanmış bir hastalık ve aileye özgü genetik varyant için embriyoların değerlendirilmesini sağlar ([De Rycke 2020](https://pubmed.ncbi.nlm.nih.gov/32752000/)). PGT-M sonuçlarının sınıflandırılması hastalığın kalıtım biçimine bağlıdır. Otozomal resesif bir hastalıkta embriyolar etkilenmiş, etkilenmemiş taşıyıcı, etkilenmemiş ve taşıyıcı olmayan veya sonuçlandırılamayan şeklinde sınıflanabilir. Dominant ve X'e bağlı hastalıklarda sınıflandırma farklıdır. PGT-M, embriyonun tüm genetik hastalıklar açısından "sağlıklı" olduğunu göstermez.
 
-**Süreç:**
-1. Çiftin spesifik mutasyonu (referans aile fertleriyle birlikte) genetic mapping ile belirlenir
-2. IVF siklusunda yumurta toplama → fertilizasyon → blastokist gelişimi
-3. Her embriyodan 5-10 trofoektoderm hücresi alınır (5-6. gün biyopsi)
-4. **Karyomapping veya NGS** ile hedef genin analizi yapılır
-5. Sağlıklı embriyo seçilir, dondurulup transfer edilir
+**Süreç kabaca şöyle işler:**
+1. Önce ailede hastalığa yol açan varyant moleküler olarak doğrulanır
+2. Ardından çift ve gerektiğinde referans aile bireylerinden alınan örneklerle aileye özgü PGT-M test tasarımı ve haplotip analizi hazırlanır. Aileye özgü test tasarımı tamamlanmadan embriyo biyopsisinin planlanması sonuçsuz veya yorumlanamayan test riskini artırabilir
+3. IVF siklusunda yumurta toplanır, döllenme ve blastokist gelişimi sağlanır
+4. Her embriyodan trofoektoderm hücresi alınır (5–6. gün biyopsi)
+5. Laboratuvar, doğrulanmış aile varyantını doğrudan analiz eden yöntemleri ve/veya bağlantı–haplotip analizini kullanır; karyomapping bu amaçla kullanılabilen genom çapında SNP temelli yöntemlerden biridir
+6. Hedef hastalık açısından uygun embriyo değerlendirilir. Taşıyıcı embriyoların transfer edilip edilmeyeceği, sonuçlar çıkmadan önce genetik danışmanlık sırasında konuşulmalı ve mümkünse laboratuvar politikasıyla birlikte kayda geçirilmelidir. Bununla birlikte nihai karar, elde edilen embriyolar ve sonuçlar görüldükten sonra yeniden değerlendirilebilir
 
-**Modern PGT-M Verimliliği:**
-- Karyomapping yöntemi **1000'den fazla farklı tek-gen hastalığı** misdiagnosis olmadan analiz edebilir <InlineEvidence grade="A" />
-- Genel başarı oranları standart IVF ile karşılaştırılabilir düzeydedir
-- Akraba evliliklerinde özel zorluk: homozigot bölgelerin uzunluğu polimorfizm-tabanlı analizi zorlaştırabilir; bu vakalarda NGS tabanlı doğrudan mutasyon analizi tercih edilir
+**Karyomapping hakkında:** 2025 tarihli geniş bir seride karyomapping ile 1.000'den fazla farklı monogenik hastalık için test uygulanmış ve takip edilebilen sonuçlarda saptanmış yanlış tanı bildirilmemiştir ([Schadwell ve ark., 2025](https://doi.org/10.1093/humrep/deaf198)). Bu, yöntemin hata riskinin sıfır olduğu anlamına gelmez. Hangi yöntemin tercih edileceği laboratuvara ve varyant tipine bağlıdır.
+
+Gebelik oluştuğunda CVS veya amniyosentezle doğrulayıcı prenatal tanı seçeneği size sunulmalıdır. PGT'nin danışmanlık ve teknik yönleri birlikte değerlendirilmelidir ([ESHRE PGT önerileri](https://www.eshre.eu/guideline/PGT)).
 
 ### 3. Donör Yumurta veya Sperm
 
-- En tartışmalı seçenek; Türkiye dahil birçok ülkede yasal olarak yasak
-- Genetik açıdan riski sıfıra indirir ama hukuki ve kültürel boyutu çiftin değerlendirmesindedir
+Donör gamet kullanımı bazı ülkelerde yasal bir üreme seçeneğidir; **Türkiye'de uygulanamaz**. Uygun donör eşleştirmesi belirli ortak resesif hastalık riskini azaltabilir; ancak tüm genetik riskleri ortadan kaldırmaz. Türkiye'de yaşayan çiftler için bu, yalnızca sınır ötesi bir seçenektir.
 
 ### 4. Evlat Edinme
 
-- Aile kurma alternatifi; genetik aktarım riski yok
+Aile kurmanın bir başka yoludur; çiftin taşıdığı genetik hastalığın biyolojik olarak aktarılması söz konusu değildir.
 
 ### 5. Çocuk Sahibi Olmama Tercihi
 
-- Bilinçli ve etik bir bireysel karardır; saygıyla karşılanmalıdır
+Bilinçli ve saygı gösterilmesi gereken bir bireysel karardır.
 
 ## Türkiye'de Yasal ve Klinik Çerçeve
 
-Türkiye'de:
-- Akraba evliliği yasal olarak kısıtlı değildir (anne-baba ve kardeş hariç)
-- Üçüncü derece kuzen evliliğinden itibaren yaygın olarak kabul edilir
-- **PGT-M, ÜYTE merkezlerinde tıbbi endikasyonla yapılabilir** (Sağlık Bakanlığı izniyle)
-- Cinsiyet seçimi yalnızca X-linked hastalık önleme amaçlı yapılabilir
-- Akraba evliliği öncesi danışmanlık zorunlu değildir ama önerilir
+Türk Medeni Kanunu; üstsoy–altsoy, kardeşler ve amca/dayı/hala/teyze ile yeğen arasındaki evliliği yasaklar. Kuzen evlilikleri bu yasak kapsamında değildir. Genetik yakınlık ile hukuki hısımlık derecesi aynı sınıflandırma değildir ([TMK Madde 129](https://www.mevzuat.gov.tr/MevzuatMetin/1.5.4721-20070504.doc)).
+
+Türkiye'de özetle:
+
+- **PGT-M**, tıbbi endikasyon bulunan seçilmiş çiftlerde, yetkili ÜYTE ve genetik tanı birimlerinin yürürlükteki mevzuata uygun değerlendirmesiyle uygulanabilir ([ÜYTE Yönetmeliği](https://www.mevzuat.gov.tr/mevzuat?MevzuatNo=20085&MevzuatTertip=5&MevzuatTur=7))
+- Tıbbi olmayan cinsiyet seçimi yasaktır. Cinsiyete bağlı ciddi bir hastalığın önlenmesine yönelik işlemler ise ilgili mevzuat ve yetkili kurullar çerçevesinde değerlendirilir. Ayrıntı için [PGT ile cinsiyet seçiminin yasal ve etik sınırları](/makaleler/pgt-cinsiyet-secimi/) rehberine bakabilirsiniz
+- Donör yumurta, sperm ve embriyo kullanımı Türkiye'de uygulanamaz
+- Akraba evliliği öncesi genetik danışmanlık yasal olarak zorunlu değildir; buna rağmen güçlü biçimde önerilir
 
 ## Sıkça Sorulan Sorular
+tıbbi genetik uzmanı adı koyma
+**Akraba evliliği zararları nelerdir?**
+Çoğu zaman sorulan "zarar", aslında genetik risk artışıdır. Otozomal resesif hastalık ve bazı doğumsal anomali olasılığı yükselebilir; her gebelikte hastalık demek değildir. Çocukların büyük çoğunluğu sağlıklı doğar.
 
-**Üçüncü derece kuzen evliliği ne kadar risklidir?**
-Üçüncü derece kuzenler ortak atalardan gelen genlerinin yaklaşık %3'ünü paylaşırlar. Bu, birinci derece kuzenlere göre çok daha düşük bir orandır ve genel popülasyondan farkları neredeyse istatistiksel olarak anlamsızdır. Ancak ailede bilinen genetik hastalık varsa veya birden fazla nesil akrabalık varsa risk artar. Genetik danışmanlık yine de önerilir.
+**Üçüncü kuzen evliliği ne kadar risklidir?**
+Tek başına üçüncü kuzenlik, birinci kuzenliğe göre çok daha düşük genetik yakınlık gösterir (beklenen ortalama paylaşım yaklaşık %0,78). Ailede bilinen hastalık, etkilenmiş çocuk, tekrarlayan erken ölümler veya nesiller boyunca tekrarlayan akrabalık varsa genetik danışmanlık özellikle anlamlıdır.
 
-**Akraba evliliği yaptık ama sağlıklı çocuğumuz oldu, sonraki gebelikte risk değişir mi?**
-Evet, **her gebelik bağımsız bir olasılıktır**. Bir önceki çocuğun sağlıklı doğması sonraki çocukta riski azaltmaz. Eğer biz çiftin ortak bir resesif mutasyon taşıyıcısı olduğu saptanırsa, her gebelikte %25 etkilenmiş çocuk olma riski devam eder. Bu yüzden hâlâ taşıyıcılık taraması anlamlıdır.
+**Sağlıklı çocuğumuz oldu; sonraki gebelikte risk değişir mi?**
+Hayır. Önceki çocuğun sağlıklı doğması, çiftin ortak bir otozomal resesif hastalık varyantı taşıdığı doğrulanmışsa sonraki gebelikteki %25 etkilenme olasılığını değiştirmez. Her gebelik bağımsızdır. Taşıyıcılık henüz saptanmamışsa otomatik %25 varsayılmaz; genetik danışmanlık ve taşıyıcılık taraması bu yüzden hâlâ anlamlıdır.
 
 **Taşıyıcılık taraması ile kaç hastalık taranabilir?**
-Standart hedeflenmiş paneller 5-15 hastalığı kapsar (β-talasemi, SMA, CF, GJB2 vs.). Expanded carrier screening 100-500+ hastalığı tek seferde tarar. ACMG 2021 framework tier-bazlı yaklaşım önerir; bu sistemde hastalık ciddiyetine ve nüfus prevalansına göre paneller belirlenir.
+Hedeflenmiş paneller genellikle birkaç ila on kadar hastalığı kapsar. Genişletilmiş taşıyıcılık taraması yüzlerce geni tek seferde tarayabilir. ACMG, hastalık ciddiyeti ve nüfus prevalansına göre kademeli bir yaklaşım önerir ([Gregg 2021](https://pubmed.ncbi.nlm.nih.gov/34285390/)).
 
-**PGT-M yapmak için akrabamızdan örnek almak gerekir mi?**
-Geleneksel PGT-M tekniklerinde (linkage analizi, haplotyping) hasta veya etkilenmiş aile üyelerinden referans örneği gereklidir. Ancak modern karyomapping yöntemi ve **trio exome sequencing** ile bazen yalnızca çift örneği ve indirekt analiz yeterli olabilir. Hangi yöntemin uygulanabileceği merkez ve mutasyon tipine bağlıdır.
+**PGT-M için akrabamızdan örnek almak gerekir mi?**
+PGT-M test tasarımında çiftin yanı sıra etkilenmiş veya etkilenmemiş aile bireylerinden referans örneği gerekebilir. Doğrudan varyant analizi bazı durumlarda referans gereksinimini azaltabilir; ancak gerekli örnekler varyanta, aile yapısına ve laboratuvar yöntemine göre belirlenir.
 
-**PGT-M kesin sonuç verir mi? Sonradan tanı değişebilir mi?**
-Modern karyomapping yönteminin doğruluğu yüksektir; 1000+ unique mutation analizinde detected misdiagnosis bildirilmemiştir. Buna rağmen hiçbir genetik test %100 yanılmaz kabul edilmez. PGT-M sonrası **gebelik sırasında konfirmasyon amaçlı prenatal tanı (CVS veya amniyosentez)** önerilir.
+**PGT-M kesin sonuç verir mi?**
+Hiçbir genetik test %100 yanılmaz kabul edilmez. PGT-M sonrası gebelik oluştuğunda CVS veya amniyosentezle doğrulayıcı prenatal tanı seçeneği size sunulmalıdır.
 
-**Ailede genetik hastalık yok, taşıyıcılık taraması yine de gerekli mi?**
-Evet. Çoğu otosomal resesif mutasyon taşıyıcısı **klinik olarak asemptomatiktir**; aile öyküsü olmasa bile taşıyıcılık mümkündür. Bu yüzden ACOG/ACMG taşıyıcılık taramasını aile öyküsü olsun olmasın **tüm gebelik planlayan çiftlere önerir** — akraba evliliğinde önemi katlanır.
+**Ailede genetik hastalık yok; taşıyıcılık taraması yine de gerekli mi?**
+Çoğu otozomal resesif mutasyon taşıyıcısı klinik olarak belirti vermez; aile öyküsü olmasa bile taşıyıcılık mümkündür. Akraba evliliğinde bu nedenle taşıyıcılık taraması özellikle anlamlıdır.
 
-**Akraba evliliği yapmadık ama çocuğumuz genetik hastalıkla doğdu. Sonraki gebelik için ne yapmalıyız?**
-Eşler genetik açıdan akraba olmasa bile aynı resesif mutasyonun rastgele taşıyıcısı olabilirler. Etkilenmiş bir çocuğun ardından her iki ebeveynin de o spesifik mutasyonu taşıdığı doğrulanmalıdır. Sonraki gebelikte aynı %25 risk vardır. Bu durumda PGT-M veya prenatal tanı seçenekleri tartışılır. Bu çiftler de "at-risk couple" tanımına girer ve akraba evliliğinden farkı yoktur.
+**Akraba değiliz ama çocuğumuz genetik hastalıkla doğdu. Sonraki gebelikte ne yapmalıyız?**
+Önce çocukta kesin moleküler tanı ve hastalığın kalıtım biçimi belirlenmelidir. Hastalık otozomal resesifse ve her iki ebeveynde ilgili varyant doğrulanırsa sonraki her gebelikte etkilenme olasılığı %25'tir. Dominant, X'e bağlı, mitokondriyal veya yeni ortaya çıkan varyantlarda tekrarlama riski farklıdır. Bu durumda [PGT-M](/makaleler/pgt-m/) veya prenatal tanı seçenekleri genetik danışmanlıkla birlikte tartışılır.
 
 export const consanguinityFaqSchema = {
   "@context": "https://schema.org",
@@ -346,7 +287,7 @@ export const consanguinityFaqSchema = {
       "name": "Akraba evliliği zararları nelerdir?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sık sorulan zarar aslında genetik risk artışıdır. Otosomal resesif hastalık ve bazı doğumsal anomali olasılığı yükselebilir; her gebelikte hastalık demek değildir."
+        "text": "Çoğu zaman sorulan zarar, aslında genetik risk artışıdır. Otozomal resesif hastalık ve bazı doğumsal anomali olasılığı yükselebilir; her gebelikte hastalık demek değildir. Çocukların büyük çoğunluğu sağlıklı doğar."
       }
     },
     {
@@ -354,7 +295,7 @@ export const consanguinityFaqSchema = {
       "name": "En riskli akraba evliliği hangisi?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Ne kadar yakın akrabalık varsa risk o kadar artabilir. Pratikte en çok konuşulan grup birinci derece kuzen evlilikleridir."
+        "text": "Ne kadar yakın genetik akrabalık varsa risk o kadar artabilir. Pratikte en çok konuşulan grup birinci kuzen evlilikleridir."
       }
     },
     {

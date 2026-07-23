@@ -95,8 +95,8 @@ const articlesCollection = defineCollection({
     authorTitle: z.string().optional(),
     authorCredentials: z.string().optional(),
     authorYoutube: z.string().url().optional(),
-    medicalReviewer: z.string(),
-    reviewerTitle: z.string(),
+    medicalReviewer: z.string().optional(),
+    reviewerTitle: z.string().optional(),
     reviewDate: z.date().optional(),
     approvedBy: z.string().optional(),
 
