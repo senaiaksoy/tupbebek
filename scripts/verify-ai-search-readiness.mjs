@@ -173,8 +173,8 @@ if (!fs.existsSync(articlesDir)) {
 
       const summaryReferenceUrls = readListItemValues(frontmatter, 'summaryReferences', 'url');
       const referenceUrls = readListItemValues(frontmatter, 'references', 'url');
-      if (summaryReferenceUrls.length < 1 || summaryReferenceUrls.length > 2) {
-        failures.push(`${relative(filePath)} must include 1-2 summaryReferences.`);
+      if (summaryReferenceUrls.length < 1 || summaryReferenceUrls.length > 4) {
+        failures.push(`${relative(filePath)} must include 1-4 summaryReferences.`);
       }
       for (const url of summaryReferenceUrls) {
         if (!referenceUrls.includes(url)) {
