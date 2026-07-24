@@ -58,9 +58,9 @@ const articlesCollection = defineCollection({
     // Meta description'dan bağımsız, ilk ekranda tek kez gösterilen 2-3 cümlelik BLUF.
     // Mevcut makaleler gövde içi HizliCevap kullandığı için geçiş sürecinde opsiyoneldir.
     summary: z.string().optional(),
-    // BLUF altinda gosterilen 1-2 guclu bilimsel dayanak. Tam bibliyografik kayit
-    // references alaninda da bulunmalidir; burada yalnizca kisa etiket ve URL tutulur.
-    summaryReferences: z.array(summaryReferenceSchema).max(2).optional(),
+    // BLUF altinda gosterilen guclu bilimsel dayanaklar (en fazla 4).
+    // Tam bibliyografik kayit references alaninda da bulunmalidir; burada yalnizca kisa etiket ve URL tutulur.
+    summaryReferences: z.array(summaryReferenceSchema).max(4).optional(),
     category: z.string(),
     contentType: contentTypeEnum,
     // Yeni şablon sözleşmesini açıkça etkinleştirir. Legacy makalelerde opsiyoneldir.
