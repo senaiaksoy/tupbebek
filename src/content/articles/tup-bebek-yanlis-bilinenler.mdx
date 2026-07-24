@@ -2,7 +2,7 @@
 title: "Tüp Bebek Hakkında 10 Yaygın Yanlış İnanç ve Doğruları"
 seoTitle: "Tüp Bebek Hakkında 10 Yanlış İnanç"
 description: "Tüp bebek ve kısırlık hakkında en sık yanlış bilinen konular: IVF herkese zorunlu mu, ilk denemede başarı kesin mi, ikiz riski, yaş ve değerlendirme süreci."
-summary: "Tüp bebek herkese zorunlu değildir ve ilk denemede kesin sonuç vaat etmez. Çoğul gebelik riski embriyo transfer sayısıyla ilişkilidir; uygun hastada tek embriyo transferi riski azaltır. Klinik olarak asıl fayda, mitlere göre değil; yaş, rezerv, tüpler, sperm ve önceki basamaklara göre ne zaman beklemek, ne zaman aşılama, ne zaman IVF planlamak gerektiğini netleştirmektir."
+summary: "Tüp bebek herkese zorunlu değildir ve ilk denemede kesin sonuç vaat etmez. Çoğul gebelik riskinin temel değiştirilebilir faktörü birden fazla embriyo transferidir; tek embriyo transferi riski belirgin azaltır ama özdeş ikizlik nedeniyle tamamen sıfırlamaz. Klinik olarak asıl fayda, mitlere göre değil; yaş, rezerv, tüpler, sperm ve önceki tedavilere göre ne zaman beklemek, ne zaman aşılama, ne zaman IVF planlamak gerektiğini netleştirmektir."
 summaryReferences:
   - title: "ASRM 2023: İnfertilite tanımı"
     url: "https://pubmed.ncbi.nlm.nih.gov/40991339/"
@@ -15,8 +15,8 @@ status: "published"
 publishDate: 2016-11-13
 lastModified: 2026-07-23
 evidenceAsOf: 2026-07-23
-reviewScope: "IVF mitlerinin klinik karar değeri: basamaklı tedavi vs erken IVF, SET/çoğul gebelik, yaş-süre eşikleri, ilk deneme/kümülatif beklenti, yumurta dondurma farkındalığı, tekrarlayan düşük; ASRM/ESHRE"
-editorialMethodNote: "Temmuz 2026 klinik fayda güncellemesi: karar tablosu, değerlendirme kontrol listesi ve Dr. Aksoy yaklaşım kutusu eklendi; kaynak izleri güçlendirildi."
+reviewScope: "IVF mitlerinin klinik karar değeri: basamaklı tedavi vs erken IVF, SET/çoğul gebelik, yaş-süre eşikleri, düşük AMH nüansı, stimülasyon vs toplam takvim, RPL (NK/IVIG dışı), açıklanamayan infertilite; ASRM/ESHRE"
+editorialMethodNote: "Temmuz 2026 klinik rötuş: RPL immünoloji kapısı kapatıldı; düşük rezerv IVF endikasyonu ayrıldı; SET/monozigotik nüans; stimülasyon–toplam takvim; dil sadeleştirmesi."
 author:
   name: "Doç. Dr. Senai Aksoy"
   title: "Kadın Hastalıkları, Doğum ve Üreme Tıbbı Uzmanı"
@@ -75,6 +75,13 @@ references:
     journal: "Fertility and Sterility"
     year: 2026
     url: "https://www.asrm.org/practice-guidance/practice-committee-documents/recurrent-pregnancy-loss-a-committee-opinion-2026/"
+  - title: "The Maribor consensus: report of an expert meeting on the development of performance indicators for quality control in ART"
+    authors: "Vlaisavljevic V, Apter S, Capalbo A et al"
+    journal: "Human Reproduction Open"
+    year: 2021
+    doi: "10.1093/hropen/hoab022"
+    pmid: "34250273"
+    url: "https://pubmed.ncbi.nlm.nih.gov/34250273/"
   - title: "What do we know about public awareness of infertility? A systematic review"
     authors: "Bunting L, Boivin J"
     journal: "Human Reproduction Update"
@@ -87,22 +94,38 @@ references:
 import Accordion from "../../components/global/Accordion.astro";
 import MedicalInfoBox from '../../components/global/MedicalInfoBox.astro';
 import QuoteBlock from '../../components/global/QuoteBlock.astro';
-import InlineEvidence from '../../components/InlineEvidence.astro';
 
 <MedicalInfoBox title="Hızlı bakış: En sık klinik hata nedir?" icon="INFO" color="amber">
-En zararlı iki uç şudur: IVF’i herkese zorunlu son çare görmek veya ilk denemede kesin sonuç beklemek. Klinik fayda, mitleri çürütmekten çok şunu netleştirmektir: Bu dosyada hangi basamak gerçekçi, hangisi zaman kaybı, hangisi güvenlik riski? <InlineEvidence grade="B" />
+En zararlı iki uç şudur: tüp bebek tedavisini herkese zorunlu son çare görmek veya ilk denemede kesin sonuç beklemek. Klinik fayda, mitleri çürütmekten çok şunu netleştirmektir: Bu çift için hangi tedavi seçeneği gerçekçi, hangisi zaman kaybı, hangisi güvenlik riski?
 </MedicalInfoBox>
 
 ## Sık aranan tüp bebek yanlışları
 
 | Aranan soru | Kısa cevap |
 | :--- | :--- |
-| **Tüp bebek herkese yapılır mı?** | Hayır. Önce neden, yaş, rezerv, tüpler ve sperm birlikte okunur. |
-| **İlk denemede kesin tutar mı?** | Hayır. Tek deneme kişisel garanti değildir; kümülatif plan ayrı düşünülür. |
-| **Mutlaka ikiz olur mu?** | Hayır. Transfer sayısı belirler; uygun hastada tek embriyo tercih edilir. |
-| **Son çare midir?** | Her zaman değil. Bazı çiftlerde basamaklı tedavi, bazılarında erken IVF daha rasyoneldir. |
+| **Tüp bebek herkese yapılır mı?** | Hayır. Karar; yaş, infertilite süresi, over rezervi, tüpler ve sperm bulgularına göre verilir. |
+| **İlk denemede kesin tutar mı?** | Hayır. Tek deneme kişisel garanti değildir; birkaç transferin toplam şansı ayrı düşünülür. |
+| **Mutlaka ikiz olur mu?** | Hayır. Transfer edilen embriyo sayısı çoğul gebelik riskinin temel belirleyicisidir. Tek embriyo transferi riski belirgin azaltır; ancak özdeş ikizlik nedeniyle tamamen sıfırlamaz. |
+| **Son çare midir?** | Her zaman değil. Bazı çiftlerde önce aşılama, bazılarında erken IVF daha uygun olabilir. |
 
 Toplumdaki farkındalık boşlukları karar gecikmesi veya panik yaratabilir ([Bunting 2008](https://pubmed.ncbi.nlm.nih.gov/18499706/)). Aşağıdaki mitler, yalnızca “doğru/yanlış” değil; **hangi bulgunun kararı değiştirdiğini** göstermek için yazıldı.
+
+## İçindekiler
+
+- [Ne zaman beklemek / aşılama / IVF?](#ne-zaman-beklemek--aşılama--ivf)
+- [1. Doktora gidersem beni hemen tüp bebeğe yönlendirirler](#1-doktora-gidersem-beni-hemen-tüp-bebeğe-yönlendirirler)
+- [2. Tüm tüp bebek merkezleri aynıdır](#2-tüm-tüp-bebek-merkezleri-aynıdır)
+- [3. Tüp bebek pahalı olduğu için değerlendirme bile anlamsızdır](#3-tüp-bebek-pahalı-olduğu-için-değerlendirme-bile-anlamsızdır)
+- [4. Tüp bebek için çok uzun süre ayırmak gerekir](#4-tüp-bebek-için-çok-uzun-süre-ayırmak-gerekir)
+- [5. Tüp bebek olursa mutlaka ikiz veya üçüz olur](#5-tüp-bebek-olursa-mutlaka-ikiz-veya-üçüz-olur)
+- [6. IVF yaptırırsam kesin bebek sahibi olurum](#6-ivf-yaptırırsam-kesin-bebek-sahibi-olurum)
+- [7. Gençsem değerlendirme için erken davranmış olurum](#7-gençsem-değerlendirme-için-erken-davranmış-olurum)
+- [8. Yaşım ilerlediyse artık hiçbir şey yapılamaz](#8-yaşım-ilerlediyse-artık-hiçbir-şey-yapılamaz)
+- [9. Şu an gebelik istemiyorsam doğurganlığımı düşünmeme gerek yok](#9-şu-an-gebelik-istemiyorsam-doğurganlığımı-düşünmeme-gerek-yok)
+- [10. Gebe kalabiliyorum ama düşük yapıyorsam infertilite uzmanı yardımcı olamaz](#10-gebe-kalabiliyorum-ama-düşük-yapıyorsam-infertilite-uzmanı-yardımcı-olamaz)
+- [İlk değerlendirmede ne bakılır?](#ilk-değerlendirmede-ne-bakılır)
+- [Ne zaman değerlendirme düşünülür?](#ne-zaman-değerlendirme-düşünülür)
+- [Sıkça sorulan sorular](#sıkça-sorulan-sorular)
 
 ## Ne zaman beklemek / aşılama / IVF?
 
@@ -110,75 +133,79 @@ Kısa cevap: Tek bir sıra herkese uymaz. Amaç, kabul edilebilir gebelik olası
 
 | Klinik tablo | Genellikle daha mantıklı ilk yön |
 | :--- | :--- |
-| Genç yaş, açık tüpler, hafif/açıklanamayan faktör, iyi rezerv | Seçilmiş olgularda yumurtlama tedavisi ± [IUI](/makaleler/iui-nedir/) basamağı ([ESHRE 2023](https://pubmed.ncbi.nlm.nih.gov/37599566/)) |
-| Kapalı tüpler, ciddi erkek faktörü, ileri yaş / düşük rezerv, uzun infertilite | Erken [IVF/ICSI](/makaleler/tup-bebek-nedir/) daha rasyonel olabilir |
-| Birkaç iyi planlanmış IUI sonrası gebelik yok | IVF’e geçiş konuşulur; “birkaç deneme daha” otomatik doğru değildir |
-| Tekrarlayan düşük veya implantasyon şüphesi | Önce neden odaklı değerlendirme; IVF her zaman ilk çözüm değildir |
+| Genç yaş, en az bir işlevsel tüp, uygun semen analizi ve açıklanamayan infertilite | Prognoza göre bekleme veya ovaryan stimülasyonla [IUI](/makaleler/iui-nedir/). İleri yaş, uzun infertilite süresi veya başarısız iyi planlanmış IUI denemeleri IVF kararını öne çekebilir ([ESHRE 2023](https://pubmed.ncbi.nlm.nih.gov/37599566/)) |
+| Bilateral tüp tıkanıklığı, IVF gerektirecek düzeyde erkek faktörü veya zaman kaybının kritik olduğu ileri yaş | Erken [IVF/ICSI](/makaleler/tup-bebek-nedir/) daha uygun olabilir |
+| Düşük AMH veya düşük AFC | Yaş, infertilite süresi, tüpler ve spermle birlikte değerlendirilir; rezerv testi tek başına IVF endikasyonu değildir |
+| Birkaç iyi planlanmış IUI sonrası gebelik yok | IVF’ye geçiş konuşulur; “birkaç deneme daha” otomatik doğru değildir |
+| Tekrarlayan gebelik kaybı | RPL’ye özgü değerlendirme; IVF her zaman ilk çözüm değildir |
+| Birden fazla iyi kaliteli embriyo transferine rağmen gebelik oluşmaması | Embriyo, rahim boşluğu ve transfer/progesteron protokolünün sistematik olarak gözden geçirilmesi; rutin ERA veya immünolojik test yok |
 
-Bu tablo tanı koymaz. Yaş, süre, rezerv, semen analizi ve önceki yanıt birlikte okunur ([ASRM değerlendirme 2021](https://pubmed.ncbi.nlm.nih.gov/34607703/)). <InlineEvidence grade="B" />
+Bu tablo tanı koymaz. Karar; yaş, infertilite süresi, over rezervi, semen analizi ve önceki tedavilere verilen yanıta göre verilir ([ASRM değerlendirme 2021](https://pubmed.ncbi.nlm.nih.gov/34607703/)). AMH ve AFC daha çok tedavi sırasında beklenen yumurta yanıtı hakkında bilgi verir; doğal gebelik şansını tek başına ölçmez.
 
 ## 1. Doktora gidersem beni hemen tüp bebeğe yönlendirirler
 
 **Doğrusu:** Değerlendirme, tedavi kararı değildir. Önce neden aranır; IVF yalnızca uygun endikasyonda gündeme gelir.
 
-Kararı değiştiren noktalar: yaş, infertilite süresi, en az bir açık tüp olup olmadığı, yumurtlama düzeni, semen analizi ve önceki basamakların kalitesi. Seçilmiş genç açıklanamayan infertilitede aşılama hâlâ makul bir basamak olabilir ([ESHRE 2023](https://pubmed.ncbi.nlm.nih.gov/37599566/)). Tüpler kapalıysa veya ciddi erkek faktörü varsa “önce IUI deneyelim” çoğu zaman zaman kaybıdır. <InlineEvidence grade="B" />
+Kararı değiştiren noktalar: yaş, infertilite süresi, en az bir açık tüp olup olmadığı, yumurtlama düzeni, semen analizi ve önceki tedavilerin kalitesi. Seçilmiş genç açıklanamayan infertilitede ovaryan stimülasyonla aşılama hâlâ makul bir basamak olabilir ([ESHRE 2023](https://pubmed.ncbi.nlm.nih.gov/37599566/)). Bilateral tüp tıkanıklığı veya IVF gerektirecek düzeyde erkek faktörü varsa “önce IUI deneyelim” çoğu zaman zaman kaybıdır.
 
 ## 2. Tüm tüp bebek merkezleri aynıdır
 
 **Doğrusu:** Aynı protokol adı, aynı sonucu vermez. Laboratuvar, embriyo kültürü, hasta seçimi, iletişim ve komplikasyon yönetimi fark yaratır.
 
-Klinik olarak bakılacak yer reklam dili değil; yaş grubuna göre sonuç anlatımı, OHSS ve çoğul gebelik yaklaşımı, transfer politikası ve sizin dosyanıza özel planın anlaşılır olup olmadığıdır. Süreç haritası için [tüp bebek nedir](/makaleler/tup-bebek-nedir/) rehberine bakabilirsiniz.
+Klinik olarak bakılacak yer reklam dili değil; yaş grubuna göre sonuç anlatımı, OHSS ve çoğul gebelik yaklaşımı, transfer politikası ve sizin durumunuza özel planın anlaşılır olup olmadığıdır. ART laboratuvarında kalite göstergeleri ve performans izlemi klinik bağlamla birlikte yorumlanmalıdır ([Vlaisavljevic 2021](https://pubmed.ncbi.nlm.nih.gov/34250273/)). Merkez seçimi için [iyi tüp bebek merkezi](/makaleler/iyi-tup-bebek-merkezi/) ve süreç haritası için [tüp bebek nedir](/makaleler/tup-bebek-nedir/) rehberlerine bakabilirsiniz.
 
 ## 3. Tüp bebek pahalı olduğu için değerlendirme bile anlamsızdır
 
-**Doğrusu:** Maliyet önemlidir; ama değerlendirme çoğu zaman maliyeti “artırmaz”, hangi basamağın gereksiz olduğunu gösterir.
+**Doğrusu:** Maliyet önemlidir; ama değerlendirme çoğu zaman maliyeti “artırmaz”, hangi tedavinin gereksiz olduğunu gösterir.
 
-Klinik fayda şudur: Uygun olmayan IUI döngüleri veya gecikmiş IVF, hem zaman hem maliyet kaybı olabilir. Önce nedeni netleştirmek, hangi tedavinin gerçekten aday olduğunu görmeyi kolaylaştırır. Bu yazıda fiyat konuşulmaz; konuşulan şey doğru basamak seçimidir.
+Klinik fayda şudur: Uygun olmayan IUI döngüleri veya gecikmiş IVF, hem zaman hem maliyet kaybı olabilir. Önce nedeni netleştirmek, hangi tedavinin gerçekten uygun olduğunu görmeyi kolaylaştırır.
 
 ## 4. Tüp bebek için çok uzun süre ayırmak gerekir
 
-**Doğrusu:** Aktif stimülasyon çoğu zaman 8–12 gündür; süreç “aylarca hastanede yatmak” değildir.
+**Doğrusu:** Yumurtalık stimülasyonu çoğu hastada yaklaşık 8–12 gün sürer; ancak tüp bebek sürecinin tamamı bundan ibaret değildir.
 
-Kararı etkileyen ayrıntı: Takip sıklığı, yumurta toplama günü, taze mi dondurulmuş transfer mi ve gerekirse freeze-all. Plan kişiye göre uzayabilir; ama çoğu çift için iş/yaşam düzeni önceden konuşulabilir.
+Ön değerlendirme, olası siklus hazırlığı, yumurta toplama, embriyo kültürü ve transfer ayrı aşamalardır. Taze transfer planlanan hastada süreç daha kısa olabilir; freeze-all veya PGT uygulanırsa embriyo transferi daha sonraki bir siklusta yapılır. Bu nedenle hastaya yalnız “kaç gün iğne kullanılacağı” değil, baştan sona kişisel tedavi takvimi verilmelidir.
 
 ## 5. Tüp bebek olursa mutlaka ikiz veya üçüz olur
 
-**Doğrusu:** Çoğul gebelik riski, transfer edilen embriyo sayısıyla ilişkilidir. Uygun hastada tek embriyo transferi, canlı doğum ile güvenlik arasında denge kurmayı hedefler ([ASRM transfer limiti 2021](https://www.asrm.org/practice-guidance/practice-committee-documents/guidance-on-the-limits-to-the-number-of-embryos-to-transfer-a-committee-opinion-2021/); [ASRM çoğul gebelik 2022](https://www.asrm.org/practice-guidance/practice-committee-documents/multiple-gestation-associated-with-infertility-therapy-a-committee-opinion-2022/)). <InlineEvidence grade="B" />
+**Doğrusu:** IVF’de çoğul gebelik riskini artıran başlıca değiştirilebilir faktör birden fazla embriyo transferidir. Uygun hastada tek embriyo transferi çoğul gebelik riskini önemli ölçüde azaltır ve kümülatif başarı planlanırken güvenliği önceliklendirir ([ASRM transfer limiti 2021](https://www.asrm.org/practice-guidance/practice-committee-documents/guidance-on-the-limits-to-the-number-of-embryos-to-transfer-a-committee-opinion-2021/); [ASRM çoğul gebelik 2022](https://www.asrm.org/practice-guidance/practice-committee-documents/multiple-gestation-associated-with-infertility-therapy-a-committee-opinion-2022/)). Tek embriyo transferinden sonra da yaklaşık %1–2 düzeyinde monozigotik (özdeş) ikizlik görülebilir; bu nedenle risk belirgin azalır ama tamamen sıfırlanmaz.
 
-Türkiye’de yasal üst sınırlar ayrıca vardır; iki embriyoya izin verilmesi “iki embriyo daha iyi” demek değildir. Ayrıntı: [yaşa göre başarı oranları](/makaleler/yasa-gore-tup-bebek-basari-oranlari/). Transfer günü seçimi de bu kararla birlikte okunur: [3. gün / 5. gün](/makaleler/embriyo-transferi-gun-secimi/).
+Türkiye’de yasal üst sınırlar ayrıca vardır; iki embriyoya izin verilmesi “iki embriyo daha iyi” demek değildir. Ayrıntı: [yaşa göre başarı oranları](/makaleler/yasa-gore-tup-bebek-basari-oranlari/). Transfer günü ve embriyo sayısı aynı plan içinde değerlendirilir: [3. gün / 5. gün](/makaleler/embriyo-transferi-gun-secimi/).
 
 ## 6. IVF yaptırırsam kesin bebek sahibi olurum
 
 **Doğrusu:** IVF gebelik şansını artırabilir; garanti vermez. Sonuç yaş, rezerv, sperm, embriyo gelişimi ve rahim durumuna bağlıdır.
 
-Klinik olarak daha doğru soru şudur: “Bu denemede yüzde kaç?” değil; “Hangi payda konuşuyoruz ve kümülatif plan ne?” Transfer başına, yumurta toplama başına ve birkaç transferin toplamı aynı şey değildir. İlk denemede gebelik olabilir; olmayınca da “hiç şans yok” anlamına gelmez. <InlineEvidence grade="B" />
+Klinik olarak daha doğru soru şudur: “Bu denemede yüzde kaç?” değil; “Hangi payda konuşuyoruz ve birkaç transferin toplam şansı ne?” Transfer başına, yumurta toplama başına ve birkaç transferin toplamı aynı şey değildir. İlk denemede gebelik olabilir; olmayınca da “hiç şans yok” anlamına gelmez.
 
 ## 7. Gençsem değerlendirme için erken davranmış olurum
 
 **Doğrusu:** Genç yaş avantajdır; değerlendirmeyi gereksiz kılmaz.
 
-Düzenli, korunmasız ilişkiye rağmen 12 ay gebelik yoksa değerlendirme uygundur. 35 yaş ve üzerinde çoğu kılavuzda 6 ay yeterlidir. Adet düzensizliği, bilinen tüp/erkek faktörü veya tekrarlayan düşükte daha erken bakılır ([ASRM 2023](https://pubmed.ncbi.nlm.nih.gov/40991339/)). <InlineEvidence grade="B" />
+35 yaş altında 12 ay, 35–39 yaş arasında 6 ay gebelik oluşmadığında değerlendirme önerilir. Kırk yaş ve üzerinde veya adet düzensizliği, bilinen tüp hastalığı, endometriozis ya da erkek faktörü varsa beklemeden değerlendirme uygundur ([ASRM 2023](https://pubmed.ncbi.nlm.nih.gov/40991339/)).
 
 ## 8. Yaşım ilerlediyse artık hiçbir şey yapılamaz
 
 **Doğrusu:** İleri yaşta olasılık azalır; “sıfır” demek değildir. Asıl mesele rezerv, embriyo potansiyeli, genel sağlık ve zaman yönetimidir.
 
-Faydalı çerçeve: Abartılı vaat de panik de zararlıdır. Gerçekçi beklenti, eldeki embriyo sayısı/kalitesi ve kümülatif planla kurulur. Tek yüzde, dosyanızı anlatmaz.
+Faydalı çerçeve: Abartılı vaat de panik de zararlıdır. Gerçekçi beklenti, eldeki embriyo sayısı/kalitesi ve birkaç transferin toplam şansıyla kurulur. Tek bir başarı yüzdesi kişisel gebelik olasılığınızı bütünüyle göstermez.
 
 ## 9. Şu an gebelik istemiyorsam doğurganlığımı düşünmeme gerek yok
 
-**Doğrusu:** Doğurganlık yaşla değişir. Planlı ertelemede rezerv bilgisi ve seçilmiş hastalarda [yumurta dondurma](/makaleler/yumurta-dondurma-rehberi/) konuşulabilir.
+**Doğrusu:** Doğurganlık yaşla değişir. Planlı ertelemede rezerv bilgisi ve seçilmiş hastalarda [yumurta dondurma](/makaleler/yumurta-dondurma-rehberi/) konuşulabilir. Kanser tedavisi öncesi koruma ise ayrı bir zaman baskısı taşır; [kanser ve fertilite](/makaleler/kanser-ve-fertilite/) rehberi bu kararı onkoloji planıyla birlikte çerçeveler.
 
-Klinik nüans: Yumurta dondurma “sigorta” gibi satılamaz; yumurta sayısı, dondurulduğu yaş ve sonraki kullanım planı sonucu etkiler. Amaç panik yaratmak değil, zamanı görünür kılmaktır.
+Klinik nüans: Yumurta dondurma “sigorta” gibi satılamaz; yumurta sayısı, dondurulduğu yaş ve sonraki kullanım planı sonucu etkiler. Amaç panik yaratmak değil, yaşın doğurganlık üzerindeki etkisini zamanında konuşmaktır.
 
 ## 10. Gebe kalabiliyorum ama düşük yapıyorsam infertilite uzmanı yardımcı olamaz
 
-**Doğrusu:** Tekrarlayan düşük ayrı bir değerlendirme alanıdır. IVF her zaman ilk çözüm olmayabilir; ama neden aramak işe yarar.
+**Doğrusu:** Tekrarlayan gebelik kaybı, infertiliteden ayrı değerlendirilmesi gereken bir durumdur. IVF her zaman ilk çözüm değildir.
 
-Tek kayıpta geniş panel her zaman gerekmez. Tekrarlayan kayıpta rahim faktörü, genetik, hormonal ve tanımlı bağışıklık durumları sistematik bakılır ([ASRM RPL 2026](https://www.asrm.org/practice-guidance/practice-committee-documents/recurrent-pregnancy-loss-a-committee-opinion-2026/)). Erken biyokimyasal kayıp için [kimyasal gebelik](/makaleler/kimyasal-gebelik/) rehberi tamamlayıcıdır. <InlineEvidence grade="B" />
+Tek erken kayıptan sonra herkese geniş test panelleri açmak gerekmez. İki veya daha fazla gebelik kaybında kaybın özellikleri, rahim boşluğu, gebelik materyalinin genetik sonucu ve klinik öyküye göre gerekli hormonal veya metabolik incelemeler değerlendirilir. Antifosfolipid sendromu yalnızca uygun klinik ölçütler varsa araştırılır. NK hücre testi, geniş bağışıklık panelleri, mikrobiyom testleri, ERA, intralipid ve IVIG rutin RPL değerlendirmesinin parçası değildir ([ASRM RPL 2026](https://www.asrm.org/practice-guidance/practice-committee-documents/recurrent-pregnancy-loss-a-committee-opinion-2026/)).
+
+Güncel ASRM tanımı, biyokimyasal gebelikler dâhil iki veya daha fazla gebelik kaybını RPL kapsamında değerlendirir; ancak araştırmanın kapsamı her hastanın öyküsüne göre belirlenir. Erken biyokimyasal kayıp için [kimyasal gebelik](/makaleler/kimyasal-gebelik/) rehberi tamamlayıcıdır.
 
 <MedicalInfoBox title="Dr. Aksoy’un yaklaşımı" icon="INFO" color="blue">
-Mitleri tek tek çürütmekten çok şu üç soruyu sorarım: (1) Bu basamak gerçekten aday mı, yoksa zaman mı kaybettiriyor? (2) Transfer sayısı güvenliği bozar mı? (3) Beklenti tek deneme yüzdesine mi, yoksa kümülatif plana mı kurulu? Karar bu üçlüye oturursa panik ve abartı kendiliğinden azalır.
+Hastaya üç soru üzerinden yaklaşırım: Bu çift için hangi tedavi basamağı gerçekten uygun? Birden fazla embriyo transferi gereksiz bir çoğul gebelik riski yaratıyor mu? Beklentimizi tek bir denemenin sonucuna mı, yoksa elde edilebilecek embriyoların toplam şansına mı göre kuruyoruz? Bu sorular açıkça yanıtlandığında hem gereksiz gecikme hem de gerçekçi olmayan beklentiler azalır.
 </MedicalInfoBox>
 
 ## İlk değerlendirmede ne bakılır?
@@ -186,7 +213,7 @@ Mitleri tek tek çürütmekten çok şu üç soruyu sorarım: (1) Bu basamak ger
 Kısa cevap: Amaç “hemen IVF” demek değil; kararı değiştirecek bulguları toplamaktır ([ASRM 2021](https://pubmed.ncbi.nlm.nih.gov/34607703/)).
 
 1. Öykü: yaş, infertilite süresi, adet düzeni, önceki gebelik/düşük, cerrahi, ilaçlar
-2. Semen analizi (çoğu zaman tekrarlanarak)
+2. Semen analizi; sonuç anormal veya sınırdaysa, geçici etkenlerden şüpheleniliyorsa ya da klinik tabloyla uyumsuzsa uygun aralıkla tekrarlanabilir
 3. Yumurtalık rezervi değerlendirmesi (yaş bağlamında AMH/AFC)
 4. Tüpler ve rahim değerlendirmesi (klinik endikasyona göre)
 5. Gerekirse hormonlar ve eşlik eden hastalıklar
@@ -195,7 +222,7 @@ Bu liste herkese aynı test demek değildir. Test, kararı değiştirecekse iste
 
 ## Ne zaman değerlendirme düşünülür?
 
-Düzenli, korunmasız ilişkiye rağmen gebelik yoksa süre ve yaş birlikte okunur. 35 yaş altında çoğu zaman 12 ay, 35 ve üzerinde çoğu zaman 6 ay sonrasında değerlendirme uygundur. Riskli öyküde daha erken bakılır ([ASRM 2023](https://pubmed.ncbi.nlm.nih.gov/40991339/); [ASRM 2021](https://pubmed.ncbi.nlm.nih.gov/34607703/)). <InlineEvidence grade="B" />
+35 yaş altında 12 ay, 35–39 yaş arasında 6 ay düzenli, korunmasız ilişkiye rağmen gebelik yoksa değerlendirme önerilir. Kırk yaş ve üzerinde veya adet düzensizliği, bilinen tüp hastalığı, endometriozis ya da erkek faktörü varsa beklemeden değerlendirme uygundur ([ASRM 2023](https://pubmed.ncbi.nlm.nih.gov/40991339/); [ASRM 2021](https://pubmed.ncbi.nlm.nih.gov/34607703/)).
 
 <QuoteBlock author="Doç. Dr. Senai Aksoy">
 İnfertilitede en zararlı iki uç düşünce şudur: “Nasıl olsa kendiliğinden olur” ve “Artık hiçbir şey yapılamaz.” Doğru yaklaşım, kişiye özel değerlendirmedir.
@@ -204,25 +231,29 @@ Düzenli, korunmasız ilişkiye rağmen gebelik yoksa süre ve yaş birlikte oku
 ## Sıkça sorulan sorular
 
 <Accordion title="Tüp bebek herkese gerekir mi?">
-Hayır. Karar; süre, yaş, rezerv, tüpler, sperm ve önceki basamaklara göre verilir. Seçilmiş çiftlerde IUI veya başka basamaklar önce düşünülebilir; kapalı tüp veya ciddi erkek faktöründe erken IVF daha mantıklı olabilir.
+Hayır. Karar; süre, yaş, rezerv, tüpler, sperm ve önceki tedavilere göre verilir. Seçilmiş çiftlerde ovaryan stimülasyonla IUI önce düşünülebilir; bilateral tüp tıkanıklığı veya IVF gerektirecek erkek faktöründe erken IVF daha mantıklı olabilir. Düşük AMH tek başına IVF zorunluluğu yaratmaz.
 </Accordion>
 
 <Accordion title="Tüp bebek ilk denemede kesin sonuç verir mi?">
-Hayır. İlk denemede gebelik olabilir; garanti değildir. Daha doğru soru, tek deneme yüzdesi değil, dosyaya uygun kümülatif plandır.
+Hayır. İlk denemede gebelik olabilir; garanti değildir. Daha doğru soru, tek deneme yüzdesi değil, birkaç transferin toplam şansıdır.
 </Accordion>
 
 <Accordion title="Tüp bebekte mutlaka ikiz olur mu?">
-Hayır. Risk transfer edilen embriyo sayısıyla ilişkilidir. Uygun hastada tek embriyo transferi çoğul gebelik riskini azaltmayı hedefler.
+Hayır. Transfer edilen embriyo sayısı çoğul gebelik riskinin temel belirleyicisidir. Tek embriyo transferi riski belirgin azaltır; ancak özdeş ikizlik nedeniyle tamamen sıfırlamaz.
 </Accordion>
 
 <Accordion title="Değerlendirme için ne kadar beklemeliyim?">
-Çoğu kılavuzda 35 yaş altında 12 ay, 35 ve üzerinde 6 ay düzenli ilişkiye rağmen gebelik yoksa değerlendirme önerilir. Adet düzensizliği, bilinen tüp/erkek faktörü veya tekrarlayan düşükte daha erken bakılır.
+35 yaş altında 12 ay, 35–39 yaş arasında 6 ay düzenli ilişkiye rağmen gebelik yoksa değerlendirme önerilir. Kırk yaş ve üzerinde veya adet düzensizliği, bilinen tüp hastalığı, endometriozis ya da erkek faktörü varsa beklemeden bakılır.
 </Accordion>
 
 <Accordion title="Başarı oranı tek bir yüzde midir?">
-Hayır. Payda önemlidir: transfer başına mı, yumurta toplama başına mı, kümülatif mi? Bağlam için yaşa göre başarı oranları rehberine bakabilirsiniz.
+Hayır. Payda önemlidir: transfer başına mı, yumurta toplama başına mı, birkaç transferin toplamı mı? Bağlam için yaşa göre başarı oranları rehberine bakabilirsiniz.
 </Accordion>
 
 <Accordion title="Aşılama başarısız olursa hemen IVF mi gerekir?">
-Her zaman değil; ama birkaç iyi planlanmış IUI sonrası gebelik yoksa, özellikle yaş ve rezerv kritikse IVF’e geçiş konuşulur. “Sonsuz IUI” otomatik doğru değildir.
+Her zaman değil; ama birkaç iyi planlanmış IUI sonrası gebelik yoksa, özellikle yaş kritikse IVF’ye geçiş konuşulur. “Sonsuz IUI” otomatik doğru değildir.
+</Accordion>
+
+<Accordion title="Tekrarlayan düşükte herkese bağışıklık testi gerekir mi?">
+Hayır. Antifosfolipid sendromu yalnızca uygun klinik ölçütlerde araştırılır. NK hücre testi, geniş bağışıklık panelleri, ERA, intralipid ve IVIG rutin RPL değerlendirmesinin parçası değildir.
 </Accordion>
