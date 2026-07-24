@@ -1,8 +1,10 @@
 ---
 /**
- * RelatedArticles — Aynı kategoriden ilgili makaleler
- * Mevcut makaleyle aynı kategorideki diğer makaleleri gösterir.
- * variant="sidebar" ile kompakt sidebar görünümü destekler.
+ * RelatedArticles — Konusal olarak ilişkili makaleler
+ *
+ * Varsa manuel konu kümesindeki makaleleri önceliklendirir,
+ * kalan alanları aynı kategorideki güncel makalelerle tamamlar.
+ * variant="sidebar" ile kompakt görünümü destekler.
  */
 
 interface Props {
@@ -88,28 +90,60 @@ const clusterPriorityMap: Record<string, string[]> = {
         'kanser-ve-fertilite',
         'dusuk-amh-hamilelik',
         'taze-dondurulmus-transfer'
+    ],
+    'akinti-kasinti-koku': [
+        'vajinal-mikrobiyom-fiv',
+        'embriyo-transferi-sonrasi-bakim',
+        'kadin-kisirligi-tup-bebek'
+    ],
+    'alkol-ve-fertilite': [
+        'erkek-dogurganlik-besin-takviyeleri',
+        'embriyo-transferi-sonrasi-bakim',
+        'cep-telefonu-sperm-kalitesi'
     ]
 };
+
+const rawLimit = Number.isFinite(limit) ? limit : 3;
+const normalizedLimit = Math.max(0, Math.floor(rawLimit));
 
 const { getPublishedArticles, sanitizeImage } = await import('../utils/articles');
 const allArticles = await getPublishedArticles();
 const articlesBySlug = new Map(allArticles.map(article => [article.slug, article]));
-const prioritizedRelated = (clusterPriorityMap[currentSlug] ?? [])
+
+const prioritySlugs = clusterPriorityMap[currentSlug] ?? [];
+const missingSlugs = prioritySlugs.filter(
+    slug => slug !== currentSlug && !articlesBySlug.has(slug)
+);
+
+if (missingSlugs.length > 0) {
+    console.warn(
+        `[RelatedArticles] "${currentSlug}" için bulunamayan makaleler: ${missingSlugs.join(', ')}`
+    );
+}
+
+const prioritizedRelated = prioritySlugs
+    .filter(slug => slug !== currentSlug)
     .map(slug => articlesBySlug.get(slug))
     .filter((article): article is (typeof allArticles)[number] => Boolean(article));
+
 const prioritizedSlugs = new Set(prioritizedRelated.map(article => article.slug));
 const categoryRelated = allArticles
-    .filter(a => a.slug !== currentSlug && a.data.category === category && !prioritizedSlugs.has(a.slug))
-    .sort((a, b) => (b.data.publishDate?.getTime() ?? 0) - (a.data.publishDate?.getTime() ?? 0))
-const related = [...prioritizedRelated, ...categoryRelated].slice(0, limit);
+    .filter(a =>
+        a.slug !== currentSlug &&
+        a.data.category === category &&
+        !prioritizedSlugs.has(a.slug)
+    )
+    .sort((a, b) => (b.data.publishDate?.getTime() ?? 0) - (a.data.publishDate?.getTime() ?? 0));
+
+const related = [...prioritizedRelated, ...categoryRelated].slice(0, normalizedLimit);
 ---
 
 {related.length > 0 && variant === 'sidebar' && (
     <div class="space-y-4">
         {related.map(article => (
             <a href={`/makaleler/${article.slug}/`} class="group flex gap-3 items-start">
-                {article.data.image && (
-                    <div class="w-16 h-16 rounded-lg overflow-hidden shrink-0">
+                {article.data.image ? (
+                    <div class="w-16 h-16 rounded-lg overflow-hidden shrink-0 bg-gray-100">
                         <img
                             src={sanitizeImage(article.data.image)}
                             alt={article.data.imageAlt || article.data.title}
@@ -117,12 +151,14 @@ const related = [...prioritizedRelated, ...categoryRelated].slice(0, limit);
                             width="64" height="64" loading="lazy"
                         />
                     </div>
+                ) : (
+                    <div class="w-16 h-16 rounded-lg shrink-0 bg-gray-100" aria-hidden="true"></div>
                 )}
                 <div class="flex-1 min-w-0">
                     <h4 class="text-sm font-bold text-gray-800 leading-snug line-clamp-2 group-hover:text-primary-600 transition-colors">
                         {article.data.title}
                     </h4>
-                    <span class="text-[10px] text-gray-400 mt-1 block">{article.data.category}</span>
+                    <span class="text-xs text-gray-400 mt-1 block">{article.data.category}</span>
                 </div>
             </a>
         ))}
@@ -134,9 +170,9 @@ const related = [...prioritizedRelated, ...categoryRelated].slice(0, limit);
         <h2 class="font-headline text-2xl font-bold text-gray-900 mb-8">İlgili Makaleler</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             {related.map(article => (
-                <a href={`/makaleler/${article.slug}/`} class="group block bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-md hover:border-primary-100 transition-all duration-300">
-                    {article.data.image && (
-                        <div class="aspect-video overflow-hidden">
+                <a href={`/makaleler/${article.slug}/`} class="group flex h-full flex-col bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-md hover:border-primary-100 transition-all duration-300">
+                    {article.data.image ? (
+                        <div class="aspect-video overflow-hidden bg-gray-100">
                             <img
                                 src={sanitizeImage(article.data.image)}
                                 alt={article.data.imageAlt || article.data.title}
@@ -144,9 +180,11 @@ const related = [...prioritizedRelated, ...categoryRelated].slice(0, limit);
                                 width="400" height="225" loading="lazy"
                             />
                         </div>
+                    ) : (
+                        <div class="aspect-video bg-gray-100" aria-hidden="true"></div>
                     )}
-                    <div class="p-5">
-                        <span class="text-[10px] font-bold text-primary-600 uppercase tracking-widest">{article.data.category}</span>
+                    <div class="flex flex-1 flex-col p-5">
+                        <span class="text-xs font-bold text-primary-600 uppercase tracking-widest">{article.data.category}</span>
                         <h3 class="font-headline text-sm font-bold text-gray-900 mt-2 mb-2 group-hover:text-primary-600 transition-colors leading-snug">
                             {article.data.title}
                         </h3>

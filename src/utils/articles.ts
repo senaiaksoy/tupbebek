@@ -1,16 +1,25 @@
 import { getCollection } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
+
+/** Build sırasında aynı koleksiyonun tekrar filtrelenmesini önler. */
+let publishedArticlesPromise: Promise<CollectionEntry<'articles'>[]> | null = null;
 
 /**
  * Yayinlanmis makaleleri dondurur.
  * status === 'published' veya status tanimlanmamis (geriye uyumluluk) makaleleri getirir.
  * Draft ve in_review makaleleri filtrelenir.
+ * Sonuç modül düzeyinde önbelleklenir (RelatedArticles vb. çoklu çağrılar için).
  */
 export async function getPublishedArticles() {
-  const articles = await getCollection('articles');
-  return articles.filter(entry => {
-    const status = entry.data.status;
-    return !status || status === 'published';
-  });
+  if (!publishedArticlesPromise) {
+    publishedArticlesPromise = getCollection('articles').then(articles =>
+      articles.filter(entry => {
+        const status = entry.data.status;
+        return !status || status === 'published';
+      })
+    );
+  }
+  return publishedArticlesPromise;
 }
 
 /**

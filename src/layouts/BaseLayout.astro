@@ -276,19 +276,7 @@ const siteGraph = {
 				});
 			};
 
-			function scheduleMeasurement() {
-				loadMeasurement();
-			}
-
-			if ('requestIdleCallback' in window) {
-				requestIdleCallback(scheduleMeasurement, { timeout: 3500 });
-			} else {
-				setTimeout(scheduleMeasurement, 3500);
-			}
-
-			['pointerdown', 'keydown', 'scroll', 'touchstart'].forEach((eventName) => {
-				window.addEventListener(eventName, scheduleMeasurement, { once: true, passive: true });
-			});
+			loadMeasurement();
 
 			window.addEventListener('cookie-consent:updated', function(event) {
 				const status = event.detail?.status;
@@ -300,13 +288,6 @@ const siteGraph = {
 					event_category: 'privacy',
 					non_interaction: true
 				});
-				if (status === 'accepted') {
-					window.gtag('event', 'page_view', {
-						page_title: document.title,
-						page_location: window.location.href,
-						page_path: window.location.pathname
-					});
-				}
 			});
 		</script>
 

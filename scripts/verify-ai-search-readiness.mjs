@@ -73,9 +73,32 @@ function readReferenceBlocks(frontmatter) {
   if (start === -1) return [];
 
   const blockLines = [];
-  for (const line of lines.slice(start + 1)) {
-    if (/^\S[^:\n]*:\s*/u.test(line)) break;
-    blockLines.push(line);
+  // We'll iterate from start+1 until we hit a line that is not part of the block.
+  // A line is part of the block if:
+  //   - It is empty (only whitespace) -> we keep it? Actually we don't need empty lines for parsing, but we can keep.
+  //   - It starts with a '-' (dash) -> indicates a new list item.
+  //   - It starts with a whitespace (space or tab) -> indicates a continuation line of the previous item.
+  //   - Otherwise, it's a new key (like "summarySources:"), so we stop.
+  for (let i = start + 1; i < lines.length; i++) {
+    const line = lines[i];
+    // If the line is empty (only whitespace), we can still include it? It doesn't affect the split.
+    // We'll include it to be safe.
+    if (/^\s*$/.test(line)) {
+      blockLines.push(line);
+      continue;
+    }
+    // If the line starts with a dash, it's a new list item.
+    if (/^-/.test(line)) {
+      blockLines.push(line);
+      continue;
+    }
+    // If the line starts with whitespace, it's a continuation line.
+    if (/^\s/.test(line)) {
+      blockLines.push(line);
+      continue;
+    }
+    // Otherwise, we've reached a new key (e.g., "summarySources:")
+    break;
   }
 
   return blockLines
@@ -85,6 +108,7 @@ function readReferenceBlocks(frontmatter) {
     .map((block) => block.trim())
     .filter(Boolean);
 }
+
 
 function parseLocalDate(value) {
   if (!/^\d{4}-\d{2}-\d{2}$/u.test(value)) return null;

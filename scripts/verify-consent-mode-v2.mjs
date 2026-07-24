@@ -28,6 +28,16 @@ const checks = [
       !baseLayout.includes('if (!hasAnalyticsConsent()) return;'),
   },
   {
+    name: 'GA4 loads immediately and records only one automatic page view',
+    pass:
+      baseLayout.includes('window.__loadGA = loadMeasurement;') &&
+      baseLayout.includes('window.__loadGA = loadMeasurement;\n\n\t\t\twindow.__trackGaEvent') &&
+      baseLayout.includes('\n\t\t\tloadMeasurement();\n\n\t\t\twindow.addEventListener') &&
+      !baseLayout.includes('requestIdleCallback(scheduleMeasurement') &&
+      !baseLayout.includes('setTimeout(scheduleMeasurement') &&
+      !baseLayout.includes("window.gtag('event', 'page_view'"),
+  },
+  {
     name: 'cookie consent updates analytics and ads measurement consent for accept and reject states',
     pass:
       baseLayout.includes("window.gtag('consent', 'update'") &&
