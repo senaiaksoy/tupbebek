@@ -14,6 +14,7 @@
     "verify:preflight": "node scripts/run-qa-preflight.mjs",
     "verify:placeholder-links": "node scripts/verify-no-placeholder-links.mjs",
     "verify:link-hygiene": "node scripts/verify-link-hygiene.mjs",
+    "verify:broken-links": "node scripts/verify-broken-links.mjs",
     "verify:html-weight": "node scripts/verify-html-weight.mjs",
     "verify:ai-search": "npm run verify:article-template && npm run verify:llms-hygiene && npm run verify:llms-priority-targets && npm run verify:preferred-source-cta",
     "verify:article-template": "node scripts/verify-ai-search-readiness.mjs",
