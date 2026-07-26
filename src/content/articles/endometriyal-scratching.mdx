@@ -1,20 +1,40 @@
 ---
 title: "Endometriyal Scratching İşe Yarar mı? IVF Add-On Kanıt Rehberi"
-seoTitle: "Endometriyal Scratching Kanıtı"
-description: "Endometriyal scratching tüp bebek başarısını artırır mı? Cochrane ve güncel meta-analizlere göre rutin kullanım, RIF, ağrı ve risk değerlendirmesi."
+seoTitle: "Endometriyal Scratching İşe Yarar mı?"
+description: "Endometriyal scratching tüp bebek başarısını artırır mı? Cochrane ve HFEA verileriyle rutin kullanım, tekrarlayan transfer başarısızlığı, ağrı ve riskler."
+summary: "Endometriyal scratching (rahim çizme), rahim iç tabakasında küçük bir mekanik hasar oluşturma işlemidir. Cochrane ve HFEA değerlendirmelerine göre, işlemin canlı doğum oranını güvenilir biçimde artırdığı gösterilememiştir. Bu nedenle rutin bir IVF uygulaması olarak önerilmez; tekrarlayan implantasyon başarısızlığındaki yararı da belirsizdir."
+summaryReferences:
+  - title: "Cochrane: Tüp bebek (IVF) uygulanan kadınlarda endometriyal hasar"
+    url: "https://pubmed.ncbi.nlm.nih.gov/34110001/"
+  - title: "HFEA: Endometriyal scratching tedavi eklentisi rehberi"
+    url: "https://www.hfea.gov.uk/treatments/treatment-add-ons/endometrial-scratching/"
+category: "Tedavi Yöntemleri"
+contentType: "portal_article"
+templateVersion: "2026-07"
+status: "published"
 publishDate: 2026-03-05
-author: "Doç. Dr. Senai Aksoy"
-authorTitle: "Kadın Hastalıkları ve Doğum Uzmanı"
-authorCredentials: "Üreme Tıbbı ve Yardımcı Üreme Teknikleri"
+lastModified: 2026-07-26
+evidenceAsOf: 2026-07-26
+reviewScope: "Tüp bebek (IVF) tedavisi öncesinde uygulanan endometriyal hasar (scratching/rahim çizme) yönteminin canlı doğum, klinik gebelik, düşük ve güvenlik sonuçları üzerindeki etkileri, Cochrane, HFEA ve son dönem meta-analiz verileri ışığında incelenmiştir."
+editorialMethodNote: "İçerik hazırlanırken dijital editoryal araçlardan yararlanılmış; bilimsel kaynaklar, video bilgileri ve klinik ifadeler editoryal ekip tarafından doğrulanmıştır."
+author:
+  name: "Doç. Dr. Senai Aksoy"
+  title: "Kadın Hastalıkları, Doğum ve Üreme Tıbbı Uzmanı"
+  credentials: "Baş Editör, tupbebek.com"
+  url: "https://tupbebek.com/yazar/senai-aksoy/"
 authorYoutube: "https://www.youtube.com/@DocentDrSenaiAksoy"
 medicalReviewer: "tupbebek.com Editöryal Ekip"
 reviewerTitle: "Tıbbi Yayın Ekibi"
-reviewDate: 2026-05-14
-lastModified: 2026-05-14
-category: "Tedavi Yöntemleri"
-recommendationGrade: A
+reviewDate: 2026-07-26
+recommendationGrade: B
 image: "/images/makaleler/endometriyal-scratching.webp"
-imageAlt: "endometriyal scratching rahim çizme işlemi ve implantasyon teorisi"
+imageAlt: "Rahim içi implantasyon (embriyo tutunma) bölgesini gösteren detaylı tıbbi illüstrasyon"
+imageCaption: "Endometriyal scratching, embriyo tutunmasını artırdığına dair güçlü kanıt bulunmadığı için ilk tüp bebek denemesi öncesinde rutin olarak önerilmemektedir."
+imageCredit: "tupbebek.com Editöryal Ekip"
+imageSourceType: "ai-assisted"
+imageCreator: "tupbebek.com Editöryal Ekip"
+imageWidth: 1600
+imageHeight: 900
 references:
   - title: "Endometrial injury in women undergoing in vitro fertilisation (IVF)"
     authors: "Lensen SF, Armstrong S, Gibreel A et al."
@@ -33,33 +53,30 @@ references:
     year: 2019
     doi: "10.1093/hropen/hoy025"
     pmid: "30895265"
+    url: "https://pubmed.ncbi.nlm.nih.gov/30895265/"
   - title: "The impact of endometrial injury on reproductive outcomes: results of an updated meta-analysis"
     authors: "Nahshon C, Sagi-Dain L, Dirnfeld M"
     journal: "Reproductive Medicine and Biology"
     year: 2020
     doi: "10.1002/rmb2.12348"
     pmid: "33071635"
+    url: "https://pubmed.ncbi.nlm.nih.gov/33071635/"
   - title: "The role of endometrial scratching prior to in vitro fertilization: an updated systematic review and meta-analysis"
     authors: "Iakovidou MC, Kolibianakis E, Zepiridis L, Venetis C"
     journal: "Reproductive Biology and Endocrinology"
     year: 2023
     doi: "10.1186/s12958-023-01141-2"
     pmid: "37784097"
+    url: "https://pubmed.ncbi.nlm.nih.gov/37784097/"
 ---
 
 import { Picture } from "astro:assets";
 import schema_implantationImage from "/src/images/library/embriyo/schema_implantation.webp";
-import HizliCevap from '../../components/HizliCevap.astro';
 import Accordion from "../../components/global/Accordion.astro";
 import MedicalInfoBox from '../../components/global/MedicalInfoBox.astro';
 import Video from '../../components/global/Video.astro';
 import InlineEvidence from "../../components/InlineEvidence.astro";
-import EvidenceGradeCard from '../../components/EvidenceGradeCard.astro';
 import RevealScript from '../../components/global/RevealScript.astro';
-
-<HizliCevap question="Endometriyal scratching tüp bebekte işe yarar mı?">
-Hayır. Güncel büyük ölçekli Cochrane derlemelerine ([Lensen 2021](https://pubmed.ncbi.nlm.nih.gov/34110001/)) ve İngiltere Denetleyici Makamı ([HFEA](https://www.hfea.gov.uk/treatments/treatment-add-ons/endometrial-scratching/)) raporlarına göre, "rahim çizme" (endometriyal scratching) işleminin tüp bebekte canlı doğum oranını artırdığına dair yeterli klinik kanıt bulunmamaktadır. Sistematik meta-analizler ([van Hoogenhuijze 2019](https://pubmed.ncbi.nlm.nih.gov/30895265/), [Nahshon 2020](https://pubmed.ncbi.nlm.nih.gov/33071635/), [Iakovidou 2023](https://pubmed.ncbi.nlm.nih.gov/37784097/)) rutin kullanımda işlemin bir katkı sağlamadığını ve tekrarlayan başarısızlık durumunda dahi net bir faydasının olmadığını göstermektedir; bu nedenle ilk deneme öncesi önerilmemektedir.
-</HizliCevap>
 
 <div class="mesh-hero pt-12 pb-20 px-4 md:px-0 -mx-4 md:-mx-0 mb-12 rounded-3xl shadow-sm border border-white/40" style="background: linear-gradient(135deg, #fff7ed 0%, #fef2f2 45%, #f8fafc 100%);">
   <div class="max-w-4xl mx-auto" data-reveal>
@@ -79,16 +96,21 @@ Hayır. Güncel büyük ölçekli Cochrane derlemelerine ([Lensen 2021](https://
 
 <div data-reveal>
 <MedicalInfoBox title="Hızlı Bakış: Rutin Kullanım İçin Yeşil Işık Yok" icon="ADD" color="rose">
-**Endometriyal scratching, canlı doğumu artırdığı net gösterilmiş standart bir IVF uygulaması değildir.** Cochrane 2021 derlemesi, işlemin canlı doğum üzerindeki etkisinin belirsiz olduğunu ve rutin kullanım için güvenilir bir kazanç göstermediğini bildirir. HFEA da bu add-on için kanıtın yeterli olmadığını vurgular. <InlineEvidence grade="A" />
+**Endometriyal scratching, canlı doğumu artırdığı net gösterilmiş standart bir IVF uygulaması değildir.** Cochrane 2021 derlemesi, işlemin canlı doğum üzerindeki etkisinin belirsiz olduğunu ve rutin kullanım için güvenilir bir kazanç göstermediğini bildirir. HFEA da genel IVF/ICSI hasta grubunda sonuçların çelişkili olduğunu, tekrarlayan implantasyon başarısızlığında ise yeterli kaliteli kanıt bulunmadığını belirtir. <InlineEvidence grade="B" />
 </MedicalInfoBox>
 </div>
+
+<MedicalInfoBox title="Dr. Aksoy'un yaklaşımı" icon="INFO" color="blue">
+Endometriyal scratching işlemini rutin ilk tüp bebek tedavisinden önce önermiyorum. Fikir mekanistik olarak cazip görünse de Cochrane derlemesi, işlemin canlı doğum üzerindeki etkisinin belirsiz olduğunu ve rutin kullanımı destekleyen güvenilir bir kazanç göstermediğini bildiriyor. Tekrarlayan başarısız transferlerde önceliğim; embriyo, transfer ve endometriumla ilgili temel faktörleri yeniden değerlendirmek, klinik veya görüntüleme bulgusu varsa polip, submüköz miyom, septum ya da yapışıklık gibi rahim içi patolojileri SIS veya histeroskopiyle araştırmaktır. Scratching’in tekrarlayan implantasyon başarısızlığındaki yararı da kanıtlanmış değildir; bu nedenle araştırma ortamı dışında rutin olarak önermem.
+</MedicalInfoBox>
 
 ## İçindekiler
 
 - [Endometriyal scratching nedir?](#nedir)
+- [Sık aranan rahim çizme soruları](#arama-niyeti)
 - [Teori neden cazip göründü?](#teori)
 - [Kanıtlar ne söylüyor?](#kanit)
-- [Kimlerde önerilmez?](#onerilmez)
+- [Rutin kullanım neden önerilmez?](#onerilmez)
 - [Risk, ağrı ve ek yükler](#risk)
 - [Başarısız transfer sonrası ne yapılmalı?](#alternatif)
 - [Sıkça sorulan sorular](#faq)
@@ -99,6 +121,8 @@ Hayır. Güncel büyük ölçekli Cochrane derlemelerine ([Lensen 2021](https://
 
 <div data-reveal>
 <h2 id="arama-niyeti">Sık Aranan Rahim Çizme Soruları</h2>
+
+Tüp bebekte rahim çizme (scratching) işlemiyle ilgili hastalarımızın en çok merak ettiği soruları ve klinik gerçekleri sizler için derledik.
 
 | Aranan soru | Kısa cevap |
 | :--- | :--- |
@@ -141,34 +165,34 @@ Sorun şu: mantıklı görünen biyolojik teori, iyi tasarlanmış klinik çalı
 <div data-reveal>
 <h2 id="kanit">Kanıtlar Ne Söylüyor?</h2>
 
-Cochrane 2021 derlemesi, IVF uygulanan kadınlarda endometriyal hasarın canlı doğum üzerindeki etkisinin belirsiz olduğunu bildirir; sonuçlar hiç etki olmaması ile hafif fayda veya zarar olasılığı arasında kalır. Bu belirsizlik, işlemi rutin uygulama haline getirmek için yeterli değildir. <InlineEvidence grade="A" />
+Cochrane 2021 derlemesi, IVF uygulanan kadınlarda endometriyal hasarın canlı doğum üzerindeki etkisinin belirsiz olduğunu bildirir; sonuçlar hiç etki olmaması ile hafif fayda veya zarar olasılığı arasında kalır. Bu belirsizlik, işlemi rutin uygulama haline getirmek için yeterli değildir. <InlineEvidence grade="B" />
 
-HFEA, endometriyal scratching'i IVF add-on başlıkları içinde değerlendirir ve canlı doğum oranını artırdığına dair yeterli iyi kalite kanıt olmadığını belirtir. <InlineEvidence grade="A" />
+HFEA, genel IVF/ICSI hasta grubunda endometriyal scratching’i “amber” olarak derecelendirir: orta ve yüksek kaliteli çalışmaların sonuçları çelişkili olduğu için işlemin bebek sahibi olma olasılığını artırıp artırmadığı net değildir. Tekrarlayan implantasyon başarısızlığı olan hastalarda ise yeterli orta veya yüksek kaliteli kanıt bulunmadığından HFEA bir etkinlik derecesi verememekte ve “grey” sınıflamasını kullanmaktadır. <InlineEvidence grade="B" />
 
 Özet tablo:
 
 | Hasta Grubu | Rutin Scratching İçin Kanıt | Pratik Mesaj |
 | :--- | :--- | :--- |
-| **İlk IVF denemesi** | Desteklemiyor | Genellikle önerilmez |
-| **Bir önceki IVF başarısızlığı** | Net fayda yok | Altta yatan nedenler araştırılır |
+| **İlk IVF denemesi** | Rutin kullanımı desteklemiyor | Genellikle önerilmez |
+| **Bir önceki IVF başarısızlığı** | Kanıt belirsiz | Altta yatan nedenler araştırılır |
 | **Tekrarlayan başarısız transfer** | Fayda belirsiz | Rahim içi patoloji hedefli değerlendirilir |
 | **Normal rahim içi bulgular** | Rutin kullanım zayıf | Ek işlem yükünden kaçınılır |
 
-2019 ve 2023 meta-analizleri farklı alt grupları tartışsa da, bugünkü hasta odaklı mesaj değişmez: Scratching, standart IVF hazırlığının güvenilir parçası değildir. <InlineEvidence grade="B" />
+Meta-analizlerin sonuçları tamamen aynı değildir. 2023 tarihli bir meta-analiz, scratching’in embriyo transferinden önceki siklusta uygulanması ve daha önce IVF başarısızlığı bulunması durumunda canlı doğum oranında artış bildirmiştir. Bununla birlikte çalışmaların hasta seçimi, zamanlama ve yöntem açısından heterojen olması, bu sonucun güvenilirliğini ve genellenebilirliğini sınırlar. HFEA, tekrarlayan implantasyon başarısızlığı grubunda etkinliği değerlendirmeye yetecek orta veya yüksek kaliteli kanıt bulunmadığını belirtmektedir. Bu nedenle scratching, standart IVF hazırlığının kanıtlanmış bir parçası olarak kabul edilmemelidir. <InlineEvidence grade="B" />
 </div>
 
 <div data-reveal>
-<h2 id="onerilmez">Kimlerde Özellikle Önerilmez?</h2>
+<h2 id="onerilmez">Rutin Kullanım Neden Önerilmez?</h2>
 
 Şu durumlarda rutin scratching çoğu zaman uygun değildir:
 
 - İlk tüp bebek denemesi planlanıyorsa
 - Rahim içi ultrason/SIS normal görünüyorsa
 - İşlemin yalnızca “şans artsın” diye önerildiği durumlarda
-- Ağrı, enfeksiyon veya kanama riski kişiyi gereksiz strese sokacaksa
+- Ağrı, lekelenme veya enfeksiyon riski kişiyi gereksiz strese sokacaksa
 - Embriyo kalitesi, genetik, sperm veya transfer tekniği gibi daha güçlü sorunlar varken
 
-Tekrarlayan başarısızlıkta bile soru “scratching yapalım mı?” değil, “kaçırılmış rahim içi patoloji var mı?” olmalıdır. Bu durumda [IVF öncesi histeroskopi](/makaleler/ivf-oncesi-histeroskopi/) veya SIS gibi hedefli değerlendirmeler daha anlamlı olabilir.
+Tekrarlayan başarısızlıkta bile soru “scratching yapalım mı?” değil, “kaçırılmış rahim içi patoloji var mı?” olmalıdır. Klinik öyküde, ultrasonda veya SIS değerlendirmesinde rahim içi patoloji kuşkusu varsa, hedefli histeroskopi gündeme gelebilir.
 </div>
 
 <div data-reveal>
@@ -180,7 +204,7 @@ Olası etkiler:
 
 - Kramp tarzı ağrı
 - Lekelenme veya hafif kanama
-- Enfeksiyon riski
+- Nadiren enfeksiyon; özellikle işlem öncesinde servikal enfeksiyon varsa enfeksiyonun rahim içine yayılma riski
 - Vazovagal reaksiyon, baygınlık hissi
 - Ek randevu, işlem yükü ve psikolojik beklenti
 
@@ -207,6 +231,8 @@ Bu yaklaşım, “rahmi çizmek” gibi tek bir add-on'a odaklanmak yerine, ger�
 <div data-reveal>
 <h2 id="faq">Sıkça Sorulan Sorular</h2>
 
+Rahim çizme (scratching) işlemi ve tüp bebek tedavisi ilişkisine dair sıkça sorulan soruların kısa yanıtlarını aşağıda bulabilirsiniz.
+
 <Accordion title="Endometriyal scratching gebelik şansını artırır mı?">
 Güvenilir biçimde artırdığı gösterilmiş değildir. Cochrane 2021 derlemesi canlı doğum üzerindeki etkinin belirsiz olduğunu bildirir; bu nedenle rutin kullanım önerilmez.
 </Accordion>
@@ -228,13 +254,11 @@ Kramp tarzı ağrı ve hafif kanama yapabilir. Ağrı çoğu hastada kısa sürs
 </Accordion>
 
 <Accordion title="HFEA endometriyal scratching için ne diyor?">
-HFEA, endometriyal scratching'i IVF add-on olarak değerlendirir ve canlı doğum oranını artırdığına dair yeterli iyi kalite kanıt olmadığını belirtir.
+HFEA, genel IVF/ICSI hasta grubunda sonuçlar çelişkili olduğu için scratching’i “amber” olarak derecelendirir. Tekrarlayan implantasyon başarısızlığında ise yeterli kaliteli kanıt bulunmadığından değerlendirme “grey” düzeyindedir. Bu sınıflamalar, işlemin canlı doğumu artıran kanıtlanmış bir IVF uygulaması olmadığını gösterir.
 </Accordion>
 </div>
 
-<div data-reveal>
-<EvidenceGradeCard grade={frontmatter.recommendationGrade} />
-</div>
+
 
 <div data-reveal class="mt-12 bg-slate-50 p-8 rounded-3xl border border-slate-200">
 **Sizin İçin Seçtiğimiz Diğer Rehberler:**
@@ -248,39 +272,4 @@ HFEA, endometriyal scratching'i IVF add-on olarak değerlendirir ve canlı doğu
 
 </div>
 
-export const scratchingFaqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [{
-    "@type": "Question",
-    "name": "Endometriyal scratching gebelik şansını artırır mı?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Güvenilir biçimde artırdığı gösterilmiş değildir. Cochrane 2021 derlemesi canlı doğum üzerindeki etkinin belirsiz olduğunu bildirir; bu nedenle rutin kullanım önerilmez."
-    }
-  }, {
-    "@type": "Question",
-    "name": "İlk tüp bebek denemesi öncesi rahim çizme yaptırmalı mıyım?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Genellikle hayır. İlk IVF denemesi öncesinde normal rahim içi değerlendirme varsa scratching eklemek için güçlü kanıt yoktur."
-    }
-  }, {
-    "@type": "Question",
-    "name": "Scratching ile histeroskopi aynı şey mi?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Hayır. Scratching rahim iç tabakasını mekanik olarak tahriş etmeyi amaçlar. Histeroskopi ise rahim içini kamera ile görüp polip, miyom, septum veya yapışıklık gibi sorunları tanıma ve bazen tedavi etme işlemidir."
-    }
-  }, {
-    "@type": "Question",
-    "name": "HFEA endometriyal scratching için ne diyor?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "HFEA, endometriyal scratching'i IVF add-on olarak değerlendirir ve canlı doğum oranını artırdığına dair yeterli iyi kalite kanıt olmadığını belirtir."
-    }
-  }]
-};
-
-<script type="application/ld+json" set:html={JSON.stringify(scratchingFaqSchema)} />
 <RevealScript />
