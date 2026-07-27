@@ -2,19 +2,41 @@
 title: "İzotretinoin Sperm Kalitesini Etkiler mi? Erkek Fertilitesi ve Güvenlik"
 seoTitle: "İzotretinoin ve Sperm Kalitesi"
 description: "Zoretanin/Roaccutane gibi izotretinoin ilaçları sperm, baba adaylığı ve obstrüktif olmayan azoospermi açısından ne ifade eder? Kanıtlar ve uyarılar."
+summary: "İzotretinoin (Roaccutane, Zoretanin, Aknetrent), akne tedavisinde kullanılan bir retinoiddir. Baba adayının kullanımında sperm yoluyla bebeğe taşınan miktar klinik olarak teratojenik bir risk oluşturmaz. Kadın partnerde gebelikte kullanımı kesinlikle yasaktır (kontrendikedir). Obstrüktif olmayan azoospermi (NOA) vakalarında ise hekim kontrolünde deneysel/off-label hazırlık tedavisi olarak araştırılmaktadır."
+summaryReferences:
+  - title: "Panunzio 2026: İzotretinoin ve erkek infertilitesi sistematik derleme ve meta-analiz"
+    url: "https://pubmed.ncbi.nlm.nih.gov/41806242/"
+  - title: "Endo 2015: Spermatogenezde retinoik asit sinyalizasyonu"
+    url: "https://pubmed.ncbi.nlm.nih.gov/25902548/"
+  - title: "Lantsberg 2022: NOA olgularında mikro-TESE sonuçları"
+    url: "https://pubmed.ncbi.nlm.nih.gov/35112341/"
+category: "Erkek Sağlığı"
+contentType: "portal_article"
+templateVersion: "2026-07"
+status: "published"
 publishDate: 2026-03-31
-author: "Doç. Dr. Senai Aksoy"
-authorTitle: "Kadın Hastalıkları ve Doğum Uzmanı"
-authorCredentials: "Üreme Tıbbı ve Yardımcı Üreme Teknikleri"
+lastModified: 2026-07-27
+evidenceAsOf: 2026-07-27
+reviewScope: "İzotretinoin kullanımının erkek fertilitesi, sperm parametreleri, teratojenik risk ayrımı (baba adaylığı vs. gebelikte anne kullanımı) ve obstrüktif olmayan azoospermi (NOA) hazırlığındaki deneysel/off-label rolü Panunzio 2026, Endo 2015 ve Lantsberg 2022 çalışmaları doğrultusunda değerlendirilmiştir."
+editorialMethodNote: "İçerik hazırlanırken dijital editoryal araçlardan yararlanılmış; bilimsel kaynaklar, video bilgileri ve klinik ifadeler editoryal ekip tarafından doğrulanmıştır."
+author:
+  name: "Doç. Dr. Senai Aksoy"
+  title: "Kadın Hastalıkları, Doğum ve Üreme Tıbbı Uzmanı"
+  credentials: "Baş Editör, tupbebek.com"
+  url: "https://tupbebek.com/yazar/senai-aksoy/"
 authorYoutube: "https://www.youtube.com/@DocentDrSenaiAksoy"
 medicalReviewer: "tupbebek.com Editöryal Ekip"
 reviewerTitle: "Tıbbi Yayın Ekibi"
-reviewDate: 2026-05-14
-lastModified: 2026-05-14
-category: "Erkek Sağlığı"
+reviewDate: 2026-07-27
 recommendationGrade: C
 image: "/images/makaleler/izotretinoin-sperm.webp"
 imageAlt: "izotretinoin ve erkek fertilitesi hakkında sperm hücreleri illüstrasyonu"
+imageCaption: "İzotretinoin tedavisinde anne adayı kullanımı kesinlikle sakıncalıdır; baba adayının kullanımında ise teratojenik risk bulunmamakla birlikte klinik takip önemlidir."
+imageCredit: "tupbebek.com Editöryal Ekip"
+imageSourceType: "ai-assisted"
+imageCreator: "tupbebek.com Editöryal Ekip"
+imageWidth: 1600
+imageHeight: 900
 references:
   - title: "Could isotretinoin be a new therapeutic frontier for male infertility? A systematic review and meta-analysis"
     authors: "Panunzio A, Lujan S, Piccinni B et al."
@@ -22,58 +44,41 @@ references:
     year: 2026
     doi: "10.1007/s11255-026-05092-6"
     pmid: "41806242"
+    url: "https://pubmed.ncbi.nlm.nih.gov/41806242/"
   - title: "Periodic retinoic acid-STRA8 signaling intersects with periodic germ-cell competencies to regulate spermatogenesis"
     authors: "Endo T, Romer KA, Anderson EL et al."
     journal: "Proceedings of the National Academy of Sciences"
     year: 2015
     doi: "10.1073/pnas.1505683112"
     pmid: "25902548"
+    url: "https://pubmed.ncbi.nlm.nih.gov/25902548/"
   - title: "Micro-testicular sperm extraction outcomes for non-obstructive azoospermia in a single large clinic in Victoria"
     authors: "Lantsberg D, Mizrachi Y, Katz DJ"
     journal: "Australian & New Zealand Journal of Obstetrics & Gynaecology"
     year: 2022
     doi: "10.1111/ajo.13477"
     pmid: "35112341"
+    url: "https://pubmed.ncbi.nlm.nih.gov/35112341/"
 ---
 
-import HizliCevap from '../../components/HizliCevap.astro';
 import Accordion from "../../components/global/Accordion.astro";
 import MedicalInfoBox from '../../components/global/MedicalInfoBox.astro';
 import QuoteBlock from '../../components/global/QuoteBlock.astro';
 import RevealScript from '../../components/global/RevealScript.astro';
 import Video from '../../components/global/Video.astro';
 import InlineEvidence from '../../components/InlineEvidence.astro';
-import EvidenceGradeCard from '../../components/EvidenceGradeCard.astro';
-
-<HizliCevap question="İzotretinoin sperm kalitesini etkiler mi?">
-Kadın partnerin gebelik planında izotretinoin kullanımı kesinlikle kontrendike olmakla birlikte, baba adayının kullanımında sperm yoluyla bebeğe ulaşan ilaç miktarının anlamlı bir klinik teratojenik risk oluşturmadığı kabul edilir ([Panunzio 2026](https://pubmed.ncbi.nlm.nih.gov/41806242/)). Diğer taraftan, retinoik asit sinyalinin spermatogenez basamaklarındaki fizyolojik rolü ([Endo 2015](https://pubmed.ncbi.nlm.nih.gov/25902548/)) nedeniyle, bu molekül obstrüktif olmayan azoospermi (NOA) vakalarında mikro-TESE başarısını artırmaya yönelik deneysel, hekim kontrolünde bir hazırlık tedavisi olarak da araştırılmaktadır ([Lantsberg 2022](https://pubmed.ncbi.nlm.nih.gov/35112341/)). Erkek infertilitesinde kullanımı halen seçilmiş vakalara özgü, uzman kontrolü gerektiren off-label bir yaklaşımdır.
-</HizliCevap>
-
-<div class="mesh-hero pt-12 pb-20 px-4 md:px-0 -mx-4 md:-mx-0 mb-12 rounded-3xl shadow-sm border border-white/40" style="background: linear-gradient(135deg, #fff7ed 0%, #dbeafe 55%, #f8fafc 100%);">
-  <div class="max-w-4xl mx-auto" data-reveal>
-    <div class="inline-block px-4 py-1 rounded-full bg-orange-100 text-orange-700 text-sm font-bold mb-4">Erkek Fertilitesi</div>
-    <h1 class="text-4xl md:text-6xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-orange-700 to-slate-900 leading-tight">{frontmatter.title}</h1>
-    <p class="text-xl md:text-2xl text-slate-700 font-medium max-w-2xl leading-relaxed">İzotretinoin konusunda iki ayrı soruyu karıştırmamak gerekir: Akne tedavisi alan baba adayının güvenliği ve infertilite tedavisi amacıyla deneysel/off-label kullanım.</p>
-  </div>
-</div>
-
-<div class="max-w-4xl mx-auto space-y-12 blog-content-reveal">
 
 <div data-reveal>
-<MedicalInfoBox title="Hızlı Bakış: Panik Değil, Uzman Takibi" icon="⚠️" color="amber">
-Erkek izotretinoin kullanımı, gebelikte anne tarafından kullanım kadar riskli kabul edilmez. Buna karşılık izotretinoini sperm artırıcı tedavi gibi kendi kendine başlamak doğru değildir; karaciğer enzimleri, kan yağları, ruhsal yan etkiler ve dermatoloji/androloji takibi gerekir. <InlineEvidence grade="C" />
+<MedicalInfoBox title="Dr. Aksoy'un yaklaşımı" icon="INFO" color="blue">
+Akne tedavisi gören bir erkek hastanın gebe kalmayı planlayan eşi için endişelenmesine gerek yoktur; baba adayındaki izotretinoin kullanımı anne karnındaki bebekte teratojenik bir risk oluşturmaz. Ancak anne adayının kendisinin izotretinoin kullanması kesinlikle yasaktır ve gebelikten önce güvenli bekleme süresi geçmelidir. Diğer taraftan, sperm üretimi olmayan bazı özel azospermi vakalarında (NOA) retinoik asidin deneysel bir hazırlık tedavisi olarak hekim kontrolünde araştırıldığını; fakat kesinlikle kendi kendine başlanacak bir takviye olmadığını vurgulamak gerekir.
 </MedicalInfoBox>
 </div>
 
-## İçindekiler
-
-- [İzotretinoin ve sperm ilişkisi nedir?](#iliski)
-- [Sık aranan izotretinoin ve sperm soruları](#arama-niyeti)
-- [Baba adayında bebeğe risk var mı?](#baba-riski)
-- [NOA için umut mu, standart tedavi mi?](#noa)
-- [Kimlerde düşünülebilir?](#aday)
-- [Takipte nelere bakılır?](#takip)
-- [Sıkça sorulan sorular](#faq)
+<div data-reveal>
+<MedicalInfoBox title="Hızlı Bakış: Panik Değil, Uzman Takibi" icon="HYS" color="amber">
+Erkek izotretinoin kullanımı, gebelikte anne tarafından kullanım kadar riskli kabul edilmez. Buna karşılık izotretinoini sperm artırıcı tedavi gibi kendi kendine başlamak doğru değildir; karaciğer enzimleri, kan yağları, ruhsal yan etkiler ve dermatoloji/androloji takibi gerekir. <InlineEvidence grade="C" />
+</MedicalInfoBox>
+</div>
 
 <div data-reveal>
 <Video id="1pXII-iRU-U" />
@@ -82,13 +87,15 @@ Erkek izotretinoin kullanımı, gebelikte anne tarafından kullanım kadar riskl
 <div data-reveal>
 <h2 id="iliski">İzotretinoin ve Sperm İlişkisi Nedir?</h2>
 
-İzotretinoin, A vitamini türevi retinoid ailesindendir. Retinoik asit sinyali, sperm üretiminin bazı basamaklarında biyolojik olarak önemlidir; özellikle germ hücrelerinin mayoz bölünmeye hazırlanması ve olgunlaşma süreçleriyle ilişkilidir. <InlineEvidence grade="C" />
+İzotretinoin, A vitamini türevi retinoid ailesindendir. Retinoik asit sinyali, testislerde sperm üretiminin bazı hassas basamaklarında biyolojik olarak önemli bir rol oynar; özellikle kök hücrelerin mayoz bölünmeye hazırlanması ve olgunlaşma süreçleriyle ilişkilidir. <InlineEvidence grade="C" />
 
-Bu biyolojik gerekçe, bazı araştırmacıların obstrüktif olmayan azoospermi (NOA) ve çok ağır sperm üretim bozukluklarında retinoidleri araştırmasına yol açmıştır. Ancak bu, ilacın erkek infertilitesinde standart tedavi olduğu anlamına gelmez.
+Bu biyolojik gerekçe, bazı araştırmacıların obstrüktif olmayan [azospermi ve mikro-TESE](/makaleler/azospermi-mikro-tese/) ile seyreden çok ağır sperm üretim bozukluklarında retinoidleri araştırmasına yol açmıştır. Ancak bu durum, ilacın [erkek infertilitesi](/erkek-infertilitesi/) vakalarında rutin bir tedavi olduğu anlamına gelmez.
 </div>
 
 <div data-reveal>
 <h2 id="arama-niyeti">Sık Aranan İzotretinoin ve Sperm Soruları</h2>
+
+Baba adaylığı, akne tedavisi ve sperm parametreleri konusunda en çok karşılaşılan soruların özeti aşağıda sunulmuştur.
 
 | Aranan soru | Kısa cevap |
 | :--- | :--- |
@@ -101,31 +108,31 @@ Bu biyolojik gerekçe, bazı araştırmacıların obstrüktif olmayan azoospermi
 <div data-reveal>
 <h2 id="baba-riski">Baba Adayı İzotretinoin Kullanıyorsa Bebeğe Risk Var mı?</h2>
 
-İzotretinoinin **gebelik sırasında anne tarafından kullanımı** ciddi doğumsal anomali riski nedeniyle kesinlikle sakıncalıdır. Baba adayının kullanımı ise farklı bir konudur. Mevcut bilgiler, izotretinoinin sperm aracılığıyla gebeliğe klinik olarak anlamlı miktarda taşındığını veya doğum kusuru riskini belirgin artırdığını göstermemektedir.
+İzotretinoinin **gebelik sırasında anne tarafından kullanımı** ciddi doğumsal anomali riski nedeniyle kesinlikle sakıncalıdır ve yasaktır. Baba adayının kullanımı ise tamamen farklı bir konudur. Mevcut tıbbi veriler, erkek tarafından kullanılan izotretinoinin sperm aracılığıyla gebeliğe klinik olarak anlamlı miktarda taşındığını veya bebeğe doğumsal kusur riski getirdiğini göstermemektedir.
 
-Yine de pratik karar şu üç noktaya göre verilmelidir:
+Yine de klinik yaklaşım şu üç temel kritere göre belirlenir:
 
 - İlacı kim kullanıyor: anne adayı mı, baba adayı mı?
-- Gebelik planı ne zaman?
-- Dermatoloji ve üreme tıbbı uzmanı aynı bilgiyi paylaşıyor mu?
+- Gebelik planlaması ne zaman yapılacak?
+- Dermatoloji ve üreme tıbbı uzmanları süreçten haberdar mı?
 
-Anne adayında izotretinoin kullanımı varsa gebelik planı mutlaka dermatoloji/kadın doğum hekimiyle güvenli bekleme süresi konuşularak yapılmalıdır.
+Anne adayında izotretinoin kullanımı varsa gebelik planı mutlaka dermatoloji ve kadın doğum hekimiyle güvenli bekleme süresi (ilaç kesildikten sonraki koruma dönemi) konuşularak yapılmalıdır.
+</div>
 
 <figure class="my-8">
   <img src="/images/makaleler/izotretinoin-sperm-kim-kullaniyor-akis.webp" alt="İzotretinoin ve gebelik planı karar akışı: anne adayı kullanımında KESİN gebelik öncesi planlama zorunlu, baba adayı kullanımında KARARLI ortak danışma ile sürdürülebilir" width="1200" height="675" loading="lazy" class="rounded-2xl border border-slate-200" />
   <figcaption class="text-sm text-slate-600 mt-3 text-center italic">İzotretinoin kullanımında klinik karar, ilacı kullananın anne adayı mı yoksa baba adayı mı olduğuna göre tamamen farklı yürür.</figcaption>
 </figure>
-</div>
 
 <div data-reveal>
 <h2 id="noa">NOA İçin Umut mu, Standart Tedavi mi?</h2>
 
-NOA yani obstrüktif olmayan azoospermi, menide sperm olmamasının testiste üretim sorunu nedeniyle geliştiği durumdur. Bu tabloda mikro-TESE ile sperm arama halen önemli bir seçenektir. İzotretinoin/retinoid yaklaşımı ise özellikle olgunlaşma durması gibi seçilmiş histolojik tablolar için araştırılmaktadır.
+Obstrüktif olmayan azospermi (NOA), menide hiç canlı sperm olmamasının testislerdeki üretim yetersizliğinden kaynaklandığı ağır bir tablodur. Bu hastalarda gebelik elde etmek için [cerrahi sperm arama TESE](/makaleler/cerrahi-sperm-arama-tese/) işlemi temel seçenektir. İzotretinoin/retinoid yaklaşımı ise ameliyat öncesi testis dokusunda olgunlaşma durması gösteren seçilmiş olgularda deneysel bir doku hazırlığı olarak araştırılmaktadır.
 
-2026 sistematik derleme ve meta-analiz, bu alanın umut verici olduğunu; ancak kanıtın hasta seçimi, çalışma büyüklüğü ve protokol farklılıkları nedeniyle temkinli yorumlanması gerektiğini düşündürür. <InlineEvidence grade="C" />
+2026 yılı sistematik derleme ve meta-analiz sonuçları, bu biyolojik mekanizmanın umut verici olduğunu göstermektedir. Ancak kanıt düzeyi; hasta seçimi, çalışma örneklemi ve doz protokolleri nedeniyle temkinli yorumlanmalıdır. <InlineEvidence grade="C" />
 
 <QuoteBlock author="Doç. Dr. Senai Aksoy">
-İzotretinoini “cerrahinin yerine geçen kesin tedavi” gibi sunmak doğru değildir. Doğru ifade şudur: seçilmiş NOA olgularında araştırılan, uzman kontrolü gerektiren olası bir hazırlık veya tedavi stratejisi.
+İzotretinoini “cerrahinin yerine geçen mucizevi bir tedavi” gibi sunmak doğru değildir. Doğru yaklaşım şudur: seçilmiş NOA olgularında androloji uzmanı kontrolünde araştırılan off-label bir hazırlık stratejisidir.
 </QuoteBlock>
 </div>
 
@@ -141,33 +148,35 @@ NOA yani obstrüktif olmayan azoospermi, menide sperm olmamasının testiste ür
 | Önceki başarısız mikro-TESE | Klinik araştırma/off-label hazırlık olarak tartışılabilir |
 
 Tedavi düşünülüyorsa önce tanı net olmalıdır: semen analizi tekrarı, hormon profili, genetik değerlendirme, testis hacmi, varikosel, ilaç öyküsü ve önceki biyopsi/mikro-TESE bulguları birlikte okunur.
+</div>
 
 <figure class="my-8">
   <img src="/images/makaleler/izotretinoin-sperm-kontemplasyon.webp" alt="Midnight indigo kazaklı erkek sakin bir oturma odasında blister pack ilaç elinde kontemplatif bir şekilde gebelik planı ve dermatoloji kararını değerlendiriyor" width="1200" height="675" loading="lazy" class="rounded-2xl border border-slate-200" />
   <figcaption class="text-sm text-slate-600 mt-3 text-center italic">İzotretinoin kararı, hem dermatoloji hem üreme tıbbı uzmanlarının ortak değerlendirmesiyle alınır; gebelik planı çiftin zamanlamasıyla birlikte konuşulmalıdır.</figcaption>
 </figure>
-</div>
 
 <div data-reveal>
 <h2 id="takip">Takipte Nelere Bakılır?</h2>
 
-İzotretinoin kontrolsüz kullanılacak bir “takviye” değildir. Dermatoloji ve androloji/üroloji gözetiminde şu başlıklar izlenir:
+İzotretinoin kontrolsüz kullanılacak bir “takviye” değildir. Dermatoloji ve üroloji/androloji gözetiminde şu başlıklar izlenir:
 
-- Karaciğer enzimleri
-- Trigliserid ve LDL kolesterol
-- Cilt/kuruluk yan etkileri
+- Karaciğer enzimleri (ALT/AST)
+- Trigliserid ve LDL kolesterol seviyeleri
+- Cilt kuruluğu ve mukoza yan etkileri
 - Ruh hali değişiklikleri
-- Semen analizi ve gerekirse sperm dondurma planı
+- Semen analizi ve gerekirse dondurma planı
 - Kadın partnerin gebelik durumu ve ilaç maruziyeti riski
 
-Sperm üretim döngüsü yaklaşık 3 ay sürdüğü için semen analizindeki olası değişiklikler de haftalar içinde değil, aylar içinde değerlendirilir.
+Sperm üretim döngüsü yaklaşık 74 ila 90 gün sürdüğü için semen analizindeki olası değişiklikler de günler içinde değil, aylar içinde değerlendirilir.
 </div>
 
 <div data-reveal>
 <h2 id="faq">Sıkça Sorulan Sorular</h2>
 
+Hastalarımızın ve baba adaylarının izotretinoin kullanımıyla ilgili en çok merak ettiği sorular ve yanıtları:
+
 <Accordion title="Roaccutane/Zoretanin kullanan erkek çocuk sahibi olabilir mi?">
-Mevcut bilgiler baba adayının izotretinoin kullanımının sperm yoluyla bebekte belirgin doğumsal anomali riski oluşturduğunu göstermemektedir. Yine de gebelik planını dermatoloji ve üreme hekimiyle paylaşmak iyi olur.
+Mevcut bilgiler baba adayının izotretinoin kullanımının sperm yoluyla bebekte belirgin doğumsal anomali riski oluşturduğunu göstermemektedir. Yine de gebelik planını dermatoloji ve üreme hekimiyle paylaşmak yararlıdır.
 </Accordion>
 
 <Accordion title="Aknetrent sperme zarar verir mi?">
@@ -187,51 +196,16 @@ Asıl kritik risk anne adayının izotretinoin kullanmasıdır. Gebelikte izotre
 </Accordion>
 </div>
 
-<div data-reveal>
-<EvidenceGradeCard grade={frontmatter.recommendationGrade} />
-</div>
-
 <div data-reveal class="mt-12 bg-slate-50 p-8 rounded-3xl border border-slate-200">
 **Sizin İçin Seçtiğimiz Diğer Rehberler:**
-- [Erkek infertilitesi](/erkek-infertilitesi/)
+- [Erkek infertilitesi haritası](/erkek-infertilitesi/)
 - [Cerrahi sperm arama TESE](/makaleler/cerrahi-sperm-arama-tese/)
-- [Azospermi ve mikro-TESE](/makaleler/azospermi-mikro-tese/)
-- [Sperm kalitesini etkileyen faktörler](/makaleler/cep-telefonu-sperm-kalitesi/)
+- [Azospermi ve mikro-TESE rehberi](/makaleler/azospermi-mikro-tese/)
+- [Sperm kalitesini etkileyen çevresel faktörler](/makaleler/cep-telefonu-sperm-kalitesi/)
 </div>
 
-<div data-reveal class="mt-12 pt-8 border-t border-slate-200 text-sm text-slate-600">
-## Yasal Uyarı
-**Son tıbbi revizyon tarihi: 14 Mayıs 2026.**
-Bu makale bilgilendirme amaçlıdır; tıbbi teşhis ve tedavi yerine geçmez. İzotretinoin reçeteli bir ilaçtır; dermatoloji, üroloji/androloji ve üreme tıbbı uzmanı kontrolü olmadan kullanılmamalıdır.
+<div data-reveal class="mt-12 bg-slate-50 p-6 rounded-2xl border border-slate-200 text-sm text-slate-700">
+<strong>Tıbbi Sorumluluk Reddi:</strong> Bu makale bilgilendirme amaçlıdır; tıbbi teşhis ve tedavi yerine geçmez. İzotretinoin reçeteli bir ilaçtır; dermatoloji, üroloji/androloji ve üreme tıbbı uzmanı kontrolü olmadan kesinlikle kullanılmamalıdır.
 </div>
 
-</div>
-
-export const isotretinoinFaqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [{
-    "@type": "Question",
-    "name": "Roaccutane sperm etkisi nedir?",
-    "acceptedAnswer": { "@type": "Answer", "text": "Baba adayında Roaccutane veya diğer izotretinoin ilaçlarının sperm yoluyla bebekte belirgin doğumsal anomali riski oluşturduğunu gösteren güçlü kanıt yoktur. Sperm kalitesi ve gebelik planı yine de hekimlerle paylaşılmalıdır." }
-  }, {
-    "@type": "Question",
-    "name": "Aknetrent sperme zarar verir mi?",
-    "acceptedAnswer": { "@type": "Answer", "text": "Aknetrent izotretinoin içerir. Erkekte kullanımın sperm kalitesine etkisi kişiye göre değişebilir; gebelikte anne kullanımındaki ciddi riskle aynı şekilde değerlendirilmemelidir." }
-  }, {
-    "@type": "Question",
-    "name": "Roaccutane/Zoretanin kullanan erkek çocuk sahibi olabilir mi?",
-    "acceptedAnswer": { "@type": "Answer", "text": "Mevcut bilgiler baba adayının izotretinoin kullanımının sperm yoluyla bebekte belirgin doğumsal anomali riski oluşturduğunu göstermemektedir. Gebelik planı yine de hekimlerle paylaşılmalıdır." }
-  }, {
-    "@type": "Question",
-    "name": "İzotretinoin sperm sayısını artırır mı?",
-    "acceptedAnswer": { "@type": "Answer", "text": "Standart bir sperm artırıcı ilaç değildir. Seçilmiş NOA veya ağır erkek faktörü olgularında araştırılan off-label bir yaklaşımdır." }
-  }, {
-    "@type": "Question",
-    "name": "Kadın partner hamileyse izotretinoin kim için tehlikelidir?",
-    "acceptedAnswer": { "@type": "Answer", "text": "Asıl kritik risk anne adayının izotretinoin kullanmasıdır. Gebelikte izotretinoin kesinlikle sakıncalıdır ve acil uzman değerlendirmesi gerekir." }
-  }]
-};
-
-<script type="application/ld+json" set:html={JSON.stringify(isotretinoinFaqSchema)} />
 <RevealScript />
