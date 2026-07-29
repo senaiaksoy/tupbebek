@@ -18,6 +18,8 @@ interface Props {
 	description?: string;
 	/** Optional OG/Twitter image URL (absolute or relative to public/) */
 	image?: string;
+	/** Alt text for OG/Twitter image */
+	imageAlt?: string;
 	/** og:image intrinsic dimensions — defaults match the actual default social image
 	 * (`/images/home/luxury-embryo.webp`, 1024×1024). Article pages override with their
 	 * own hero dimensions resolved from the build-time manifest. Lying about dimensions
@@ -36,6 +38,7 @@ const {
 	title,
 	description = "tupbebek.com | Üreme Sağlığı Bilgisi",
 	image,
+	imageAlt,
 	imageWidth,
 	imageHeight,
 	ogType = "website",
@@ -195,13 +198,14 @@ const siteGraph = {
 		<meta property="og:image:height" content={String(resolvedSocialDims.height)} />
 		<meta property="og:site_name" content="tupbebek.com" />
 		<meta property="og:locale" content="tr_TR" />
-		<meta property="og:image:alt" content={description} />
+		<meta property="og:image:alt" content={imageAlt || title} />
 
 		<!-- Twitter Card -->
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta name="twitter:title" content={title} />
 		<meta name="twitter:description" content={description} />
 		<meta name="twitter:image" content={socialImageUrl} />
+		<meta name="twitter:image:alt" content={imageAlt || title} />
 		<meta name="twitter:site" content="@tupbebek" />
 
 		<!-- Google Analytics (GA4) - Consent Mode v2 advanced implementation -->
