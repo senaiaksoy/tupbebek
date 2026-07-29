@@ -58,14 +58,15 @@ references:
     url: "https://www.uroturk.org.tr/urolojiData/Uploads/files/Selahittin_cayan-Erkek_infertilitesi_degerlendirme_Medikal_ve_Cerrahi_Tedaviler_sertifikasyon.pdf"
 videoId: "5D1sgB_eTbY"
 videoTitle: "Varikosel Nedir ve Ne Zaman Ameliyat Gerekir? — Doç. Dr. Senai Aksoy"
+videoUploadDate: 2024-05-15
+videoDescription: "Varikosel nedir, ne zaman ameliyat gerekir, sperm testini nasıl etkiler? Doç. Dr. Senai Aksoy detaylı anlatıyor."
+videoDuration: "PT6M35S"
 ---
 
-import HizliCevap from '../../components/HizliCevap.astro';
 import Accordion from "../../components/global/Accordion.astro";
 import MedicalInfoBox from '../../components/global/MedicalInfoBox.astro';
 import QuoteBlock from '../../components/global/QuoteBlock.astro';
 import InlineEvidence from '../../components/InlineEvidence.astro';
-import EvidenceGradeCard from '../../components/EvidenceGradeCard.astro';
 import RevealScript from '../../components/global/RevealScript.astro';
 
 <div data-reveal>
@@ -73,10 +74,6 @@ import RevealScript from '../../components/global/RevealScript.astro';
 Varikosel tanısında ultrason raporunda genişlemiş damarlar görmek tek başına ameliyat sebebi değildir. Asıl belirleyici olan, ürolojik muayenede belirgin klinik varikosel (elle hissedilebilir/palpabl) saptanması, semen analizinde sayı veya hareketliliğin bozulması ve çocuk sahibi olma sürecinin etkilenmesidir. Sadece ultrasonda görülen subklinik varikoselde gereksiz cerrahiden kaçınıyor; çiftin yaş, yumurtalık rezervi ve tüp bebek planını bütüncül bir yaklaşımla değerlendiriyoruz.
 </MedicalInfoBox>
 </div>
-
-<HizliCevap question="Varikosel nedir ve ne zaman ameliyat gerekir?">
-Varikosel, testisleri çevreleyen toplardamarların anormal genişlemesidir. Her varikosel ameliyat gerektirmez; güncel kılavuzlara ([AUA/ASRM 2024](https://www.auanet.org/guidelines-and-quality/guidelines/male-infertility), [EAU 2025](https://uroweb.org/guidelines/sexual-and-reproductive-health/chapter/male-infertility)) göre cerrahi tedavi kararı; fizik muayenede belirgin klinik varikosel varlığı, semen analizinde (sperm testinde) bozulma, çocuk sahibi olamama süresi ve ağrı gibi şikayetlerin birlikteliğine göre verilir. Ameliyatın sperm parametreleri üzerindeki olası olumlu etkileri sistematik derlemelerle ([Cochrane 2021](https://pubmed.ncbi.nlm.nih.gov/33728650/)) desteklenmektedir.
-</HizliCevap>
 
 <div class="mesh-hero pt-12 pb-20 px-4 md:px-0 -mx-4 md:-mx-0 mb-12 rounded-3xl shadow-sm border border-white/40" style="background: linear-gradient(135deg, #eff6ff 0%, #eef2ff 48%, #f8fafc 100%);">
   <div class="max-w-4xl mx-auto" data-reveal>
@@ -100,7 +97,7 @@ Varikosel, testisin etrafındaki toplardamarların genişlemesidir. Her varikose
 | :--- | :--- |
 | **Varikosel nedir?** | Testis çevresindeki toplardamarların genişlemesidir; bacak varisine benzer şekilde düşünülebilir. |
 | **Varikosel nasıl anlaşılır?** | Muayenede damar genişlemesi (palpabl), ağrı/dolgunluk hissi veya semen analizinde bozulma ile fark edilebilir. |
-| **Varikosel kısırlık yapar mı?** | Her erkekte yapmaz; fakat seçilmiş hastalarda sperm sayısı, hareketliliği ve gebelik planını etkileyabilir. |
+| **Varikosel kısırlık yapar mı?** | Her erkekte yapmaz; fakat seçilmiş hastalarda sperm sayısı, hareketliliği ve gebelik planını etkileyebilir. |
 | **Varikosel ameliyatı ne zaman gerekir?** | Klinik varikosel, bozuk semen analizi, infertilite veya yaşam kalitesini bozan ağrı birlikte varsa düşünülür. |
 
 **Kısa karar özeti:**
@@ -226,7 +223,7 @@ Destekleyici antioksidan tedavilerin (C, E vitamini, çinko, koenzim Q10 vb.) te
 <a id="varikosel-risk-iyilesme"></a>
 ## Varikosel ameliyatının riskleri ve iyileşme süresi nedir?
 
-Spermatogenez yaklaşık 74 gün sürer; epididimal geçişle birlikte semen analizindeki değişim çoğunlukla yaklaşık 3 ay sonra değerlendirilir. [Cochrane derlemesi](https://pubmed.ncbi.nlm.nih.gov/33728650/), uygun seçilmiş hastalarda cerrahi sonrası gebelik oranlarında artış sağlanabileceğini bildirmektedir. Ameliyat tekniği açısından mikrocerrahi yaklaşımlar ise nüks ve hidrosel gibi komplikasyon oranlarını düşürmede belirgin avantaj sunar. <InlineEvidence grade="B" />
+Spermatogenez yaklaşık 74 gün sürer; epididimal geçişle birlikte semen analizindeki değişim çoğunlikle yaklaşık 3 ay sonra değerlendirilir. [Cochrane derlemesi](https://pubmed.ncbi.nlm.nih.gov/33728650/), uygun seçilmiş hastalarda cerrahi sonrası gebelik oranlarında artış sağlanabileceğini bildirmektedir. Ameliyat tekniği açısından mikrocerrahi yaklaşımlar ise nüks ve hidrosel gibi komplikasyon oranlarını düşürmede belirgin avantaj sunar. <InlineEvidence grade="B" />
 
 Süreç hakkında bilinmesi gerekenler:
 
@@ -289,8 +286,6 @@ Varikosel değerlendirmesinde izlediğimiz yol haritası:
 Varikoselde doğru soru “damar var mı” değil, “bu damar üreme planını gerçekten etkiliyor mu” sorusudur.
 </QuoteBlock>
 
-<EvidenceGradeCard grade={frontmatter.recommendationGrade} />
-
 <a id="sss"></a>
 ## Sık sorulan sorular
 
@@ -332,80 +327,8 @@ Non-obstrüktif azospermide varikoselektominin ejakülatta sperm görülmesi vey
 <strong>Tıbbi Sorumluluk Reddi:</strong> Bu içerik genel bilgilendirme amaçlıdır; tıbbi tanı veya kişisel tedavi yerine geçmez. Varikoselin evresi, semen parametreleri üzerindeki etkisi ve cerrahi endikasyonu kişiye özel olduğu için tedavi planınızı mutlaka hekiminizle değerlendiriniz.
 </div>
 
-export const varicoceleFaqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Varikosel kendiliğinden geçer mi?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Genellikle hayır. Ancak her varikosel zamanla ilerlemez ve her varikosel ameliyat gerektirmez."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Varikosel kısırlık yapar mı?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Her varikosel kısırlık yapmaz. Muayenede hissedilen klinik varikosel, semen analizinde bozulma ve gebelik gecikmesiyle birlikteyse üreme potansiyelini etkileyebilir."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Varikosel tanısı ultrasonda mı, muayenede mi konur?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Esas belirleyici uzman üroloğun yapacağı fizik muayenedir. Ultrason yardımcı bir testtir; ancak varikosel cerrahisi kararı için sadece ultrasonda saptanan subklinik varikosel tek başına ameliyat nedeni sayılmaz."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Varikosel derecesi ne anlama gelir?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Evre/derece, varikoselin muayenede ne kadar belirgin olduğunu gösterir. Ancak ameliyat kararı yalnızca dereceye göre değil; sperm kalitesi ve çiftin gebelik planına göre verilir."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Varikosel ameliyatı semen analizini düzeltir mi?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Doğru seçilmiş klinik varikosel olgularında evet. Ameliyat sonrası 3-6. aylarda yapılan kontrollerde sperm sayısı ve hareketliliğinde anlamlı iyileşmeler gözlenebilir."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Varikosel ameliyatının riskleri nelerdir?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Enfeksiyon, kanama, hidrosel (sıvı toplanması) ve varikoselin tekrarlaması (nüks) gibi riskler bulunur. Mikrocerrahi teknikte bu riskler daha düşüktür."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Varikosel ameliyatından sonra sonuç ne zaman belli olur?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Spermatogenez yaklaşık 74 gün sürer; epididimal geçişle birlikte semen analizindeki değişim çoğunlukla yaklaşık 3 ay sonra değerlendirilir."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Azospermide varikosel ameliyatı mantıklı mı?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Non-obstrüktif azospermide varikoselektominin ejakülatta sperm görülmesi veya canlı doğuma etkisine ilişkin kanıt sınırlı ve heterojendir. Karar, üroloji-androloji değerlendirmesi ve bilgilendirilmiş ortak karar süreciyle verilmelidir."
-      }
-    }
-  ]
-};
-
-<script type="application/ld+json" set:html={JSON.stringify(varicoceleFaqSchema)} />
-
 <RevealScript />
+
 
 
 
