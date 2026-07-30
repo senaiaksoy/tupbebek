@@ -16,6 +16,7 @@ import EvidenceGradeCard from '../../components/EvidenceGradeCard.astro';
 import ReferenceList from '../../components/ReferenceList.astro';
 import MedicalDisclaimer from '../../components/MedicalDisclaimer.astro';
 import EditorKunyesi from '../../components/EditorKunyesi.astro';
+import DoctorNote from '../../components/global/DoctorNote.astro';
 import UzmanaSor from '../../components/forms/UzmanaSor.astro';
 import LeadMagnet from '../../components/forms/LeadMagnet.astro';
 import YouTubeEmbed from '../../components/YouTubeEmbed.astro';
@@ -124,7 +125,7 @@ const heroDimensions = resolveImageDimensions({
         <div class="max-w-3xl mx-auto px-4 md:px-6">
             <header class="mb-10">
                 <!-- Title -->
-                <h1 class="font-headline text-3xl md:text-4xl lg:text-[2.75rem] font-bold text-gray-900 leading-tight mb-5">
+                <h1 class="font-serif text-3xl md:text-4xl lg:text-[2.75rem] font-bold text-gray-900 leading-[1.18] mb-5">
                     {entry.data.title}
                 </h1>
 
@@ -254,6 +255,12 @@ const heroDimensions = resolveImageDimensions({
                     <div class="prose-medical">
                         <Content />
                     </div>
+
+                    <!-- Doctor's Clinical Note (E-E-A-T) -->
+                    <DoctorNote
+                      topic={entry.data.category}
+                      note="İnfertilite değerlendirmesi ve tedavi yolculuğunda en yüksek klinik başarı; hastanın tıbbi geçmişine özel, bilimsel kanıtlara dayalı ve kişiselleştirilmiş hekim takibiyle sağlanır."
+                    />
 
                     {entry.data.deferEditorialMeta && (
                         <div class="mt-10">

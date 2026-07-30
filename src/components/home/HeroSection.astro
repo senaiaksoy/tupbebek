@@ -1,83 +1,135 @@
 ---
 /**
- * Editorial Hero Section — Healthline-inspired
- * Featured article with large image, category badge, bold title, excerpt
- * Clean, content-focused layout with generous whitespace
+ * Asymmetric Newspaper & Magazine Hero Section — NYT Health & The Lancet Style
+ * Featured cover story (65%) + Editorial Side Spotlights (35%)
+ * Serif typography, paper canvas aesthetics, and hairline dividers.
  */
 import { getPublishedArticles, sanitizeImage } from '../../utils/articles';
+import { EVIDENCE_GRADE_MAP, type RecommendationGrade } from '../../data/evidenceGrades';
 import HeroSearch from '../HeroSearch.astro';
 
 const articles = await getPublishedArticles();
 const featured = articles.find(a => a.data.featured) || articles[0];
+const secondarySpotlights = articles.filter(a => a.slug !== featured?.slug).slice(0, 3);
+
 const featuredDate = featured?.data.lastModified || featured?.data.publishDate;
 const formattedDate = featuredDate ? new Date(featuredDate).toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' }) : '';
 ---
 
-<section class="pt-8 pb-8 lg:pt-12 lg:pb-12 flex flex-col">
+<section class="pt-8 pb-12 lg:pt-10 lg:pb-16 flex flex-col paper-canvas">
   <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 w-full flex flex-col">
 
-    <!-- Featured Article Hero (mobile-first for LCP) -->
-    {featured && (
-      <a href={`/makaleler/${featured.slug}`} class="group block order-1 lg:order-2 mb-12">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-
-          <!-- Image -->
-          <div class="relative rounded-2xl overflow-hidden aspect-[16/10] lg:aspect-[4/3]">
-            <img
-              src={sanitizeImage(featured.data.image)}
-              alt={featured.data.imageAlt || featured.data.title}
-              class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-700"
-              width="720"
-              height="540"
-              loading="eager"
-              fetchpriority="high"
-            />
-          </div>
-
-          <!-- Content -->
-          <div class="flex flex-col gap-4 lg:gap-5">
-            <!-- Category Badge -->
-            <span class="inline-flex items-center self-start px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide bg-primary-50 text-primary-700 border border-primary-100">
-              {featured.data.category}
-            </span>
-
-            <!-- Title -->
-            <h2 class="text-2xl md:text-3xl lg:text-4xl font-headline font-bold text-gray-900 leading-tight group-hover:text-primary-700 transition-colors duration-300">
-              {featured.data.title}
-            </h2>
-
-            <!-- Excerpt -->
-            <p class="text-base lg:text-lg text-gray-500 leading-relaxed line-clamp-3">
-              {featured.data.description}
-            </p>
-
-            <!-- Meta -->
-            <div class="flex items-center gap-3 text-sm text-gray-400 pt-1">
-              <span class="font-medium text-gray-600">{typeof featured.data.author === 'string' ? featured.data.author : featured.data.author?.name}</span>
-              {formattedDate && (
-                <>
-                  <span class="w-1 h-1 rounded-full bg-gray-300"></span>
-                  <time datetime={featuredDate instanceof Date ? featuredDate.toISOString() : ''}>{formattedDate}</time>
-                </>
-              )}
-            </div>
-
-            <!-- Read More -->
-            <span class="inline-flex items-center gap-2 text-primary-600 font-bold text-sm pt-2 group-hover:gap-3 transition-all duration-300">
-              Devamını Oku
-              <span class="material-symbols-outlined text-lg">arrow_forward</span>
-            </span>
-          </div>
-        </div>
-      </a>
-    )}
-
     <!-- Hero Header & Search -->
-    <div class="order-2 lg:order-1 mb-0 lg:mb-12 max-w-3xl">
-      <h1 class="text-3xl md:text-5xl font-headline font-bold text-gray-900 mb-8 leading-tight">
-        Bilgi Güçtür: <br/><span class="text-primary-600">Tüp Bebek ve Üreme Sağlığı Rehberiniz</span>
+    <div class="mb-8 lg:mb-12 max-w-4xl">
+      <span class="text-xs font-bold uppercase tracking-[0.25em] text-primary-700 bg-primary-50/80 border border-primary-100/70 px-3 py-1 rounded-sm mb-4 inline-block">
+        BAĞIMSIZ TIBBİ BİLGİ PORTALI
+      </span>
+      <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-gray-900 leading-[1.15] mb-6">
+        Bilgi Güçtür: <br/>
+        <span class="text-primary-700 italic font-serif font-normal">Tüp Bebek ve Üreme Sağlığı Rehberiniz</span>
       </h1>
       <HeroSearch />
+    </div>
+
+    <!-- Asymmetric 12-Column Magazine Grid -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start border-t border-gray-200/80 pt-8">
+
+      <!-- LEFT COLUMN: Featured Cover Story (8 Cols / ~65%) -->
+      {featured && (
+        <article class="lg:col-span-8 group">
+          <a href={`/makaleler/${featured.slug}`} class="block flex flex-col gap-5">
+
+            <!-- Image with tactile subtle shadow and clean rounded edges -->
+            <div class="relative rounded-xl overflow-hidden aspect-[16/9] bg-gray-100 border border-gray-200/70 shadow-sm">
+              <img
+                src={sanitizeImage(featured.data.image)}
+                alt={featured.data.imageAlt || featured.data.title}
+                class="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-700 ease-out"
+                width="840"
+                height="472"
+                loading="eager"
+                fetchpriority="high"
+              />
+              <span class="absolute top-4 left-4 px-3 py-1 rounded-sm text-xs font-bold uppercase tracking-wider bg-white/95 text-primary-800 shadow-xs border border-gray-200/80">
+                {featured.data.category}
+              </span>
+            </div>
+
+            <!-- Story Body -->
+            <div class="flex flex-col gap-3 pt-2">
+              <h2 class="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold text-gray-900 leading-tight group-hover:text-primary-700 transition-colors duration-300">
+                {featured.data.title}
+              </h2>
+
+              <p class="text-base sm:text-lg text-gray-600 leading-relaxed font-sans line-clamp-3">
+                {featured.data.description}
+              </p>
+
+              <!-- Editorial Metadata Ribbon -->
+              <div class="flex flex-wrap items-center gap-3 text-xs sm:text-sm text-gray-500 pt-2 border-t border-gray-200/60 mt-1">
+                <span class="font-bold text-gray-800 flex items-center gap-1.5">
+                  <span class="material-symbols-outlined text-primary-600 text-base">person</span>
+                  {typeof featured.data.author === 'string' ? featured.data.author : featured.data.author?.name}
+                </span>
+                {formattedDate && (
+                  <>
+                    <span class="w-1 h-1 rounded-full bg-gray-300"></span>
+                    <time datetime={featuredDate instanceof Date ? featuredDate.toISOString() : ''}>{formattedDate}</time>
+                  </>
+                )}
+                {featured.data.recommendationGrade && (
+                  <span class="ml-auto inline-flex items-center gap-1.5 px-3 py-1 rounded text-xs font-bold bg-emerald-50 text-emerald-800 border border-emerald-200/90 shadow-2xs">
+                    <span class="material-symbols-outlined text-xs">verified</span>
+                    Kanıt: {featured.data.recommendationGrade} ({EVIDENCE_GRADE_MAP[featured.data.recommendationGrade as RecommendationGrade]?.label || 'Güçlü'})
+                  </span>
+                )}
+              </div>
+            </a>
+        </article>
+      )}
+
+      <!-- RIGHT COLUMN: Editorial Side Spotlights (4 Cols / ~35%) -->
+      <aside class="lg:col-span-4 flex flex-col gap-6 bg-white/70 p-6 rounded-xl border border-gray-200/80 shadow-2xs">
+        <div class="flex items-center justify-between border-b border-gray-200/80 pb-3">
+          <h3 class="text-xs font-bold uppercase tracking-[0.2em] text-primary-800 flex items-center gap-1.5">
+            <span class="material-symbols-outlined text-primary-600 text-lg">auto_stories</span>
+            Öne Çıkan Klinik Başlıklar
+          </h3>
+          <span class="text-[11px] font-bold text-gray-400">GÜNCEL</span>
+        </div>
+
+        <div class="flex flex-col divide-y divide-gray-200/70">
+          {secondarySpotlights.map((article, idx) => {
+            const articleDate = article.data.lastModified || article.data.publishDate;
+            const dateStr = articleDate ? new Date(articleDate).toLocaleDateString('tr-TR', { day: 'numeric', month: 'short' }) : '';
+            return (
+              <article class="py-4 first:pt-0 last:pb-0 group">
+                <a href={`/makaleler/${article.slug}`} class="flex flex-col gap-2">
+                  <div class="flex items-center gap-2 text-[11px] font-bold text-primary-700 uppercase tracking-wider">
+                    <span>{article.data.category}</span>
+                    {dateStr && <span class="text-gray-400 font-normal">• {dateStr}</span>}
+                  </div>
+                  <h4 class="text-base font-serif font-bold text-gray-900 group-hover:text-primary-700 transition-colors leading-snug line-clamp-2">
+                    {article.data.title}
+                  </h4>
+                  <p class="text-xs text-gray-500 line-clamp-2 leading-relaxed font-sans">
+                    {article.data.description}
+                  </p>
+                </a>
+              </article>
+            );
+          })}
+        </div>
+
+        <!-- Editorial Citation Badge -->
+        <div class="mt-2 pt-4 border-t border-gray-200/80 bg-primary-50/50 p-3.5 rounded-lg border border-primary-100/60">
+          <p class="text-xs text-primary-900 leading-relaxed font-sans">
+            <strong class="font-bold block text-primary-800 mb-0.5">Doç. Dr. Senai Aksoy</strong>
+            Tüm içerikler tıbbi danışma kurulu süzgecinden geçmiş olup yasal yönetmeliklere uygun şekilde bağımsız sunulmaktadır.
+          </p>
+        </div>
+      </aside>
+
     </div>
 
   </div>

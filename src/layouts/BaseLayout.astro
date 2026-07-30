@@ -174,8 +174,10 @@ const siteGraph = {
 		     the matching <img> must use fetchpriority="high". -->
 		{image && <link rel="preload" as="image" href={image} fetchpriority="high" />}
 
-		<!-- Preconnect: warm the GA4/gtag connection early without blocking the main thread,
-		     so it doesn't compete cold with the LCP image for the first connection slot. -->
+		<!-- Preconnect: warm connections early -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&display=swap" rel="stylesheet" />
 		<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
 		<link rel="preconnect" href="https://www.google-analytics.com" crossorigin />
 

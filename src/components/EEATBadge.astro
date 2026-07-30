@@ -46,6 +46,9 @@ const {
     referenceCount = 0,
 } = Astro.props;
 
+const effectiveReviewer = medicalReviewer || 'Doç. Dr. Senai Aksoy & Tıbbi Danışma Kurulu';
+const effectiveReviewerTitle = reviewerTitle || (medicalReviewer ? undefined : 'Üreme Tıbbı ve Jinekolojik Endoskopi Uzmanı');
+
 const normalizePerson = (value?: string) =>
     (value || '')
         .normalize('NFKC')
@@ -54,41 +57,41 @@ const normalizePerson = (value?: string) =>
         .toLocaleLowerCase('tr-TR');
 
 const isSameAuthorAndReviewer =
-    Boolean(medicalReviewer) &&
-    normalizePerson(author) === normalizePerson(medicalReviewer);
+    Boolean(effectiveReviewer) &&
+    normalizePerson(author) === normalizePerson(effectiveReviewer);
 
 const statusConfig = {
-    draft: { label: 'Taslak', icon: 'edit_note', color: 'text-gray-500 bg-gray-100' },
-    in_review: { label: 'İncelemede', icon: 'pending', color: 'text-amber-700 bg-amber-50' },
-    published: { label: 'Yayında', icon: 'check_circle', color: 'text-mint-700 bg-mint-50' },
+    draft: { label: 'Taslak', icon: 'edit_note', color: 'text-gray-600 bg-gray-100 border border-gray-200' },
+    in_review: { label: 'İncelemede', icon: 'pending', color: 'text-amber-800 bg-amber-50 border border-amber-200' },
+    published: { label: 'Tıbbi Danışma Kurulu Onaylı', icon: 'verified', color: 'text-emerald-800 bg-emerald-50 border border-emerald-200/90' },
 };
 
 const sc = statusConfig[status];
 ---
 
-<div class="eeat-badge bg-white border border-gray-200 rounded-2xl overflow-hidden">
+<div class="eeat-badge bg-[#fcfaf7] border border-gray-200/80 rounded-xl overflow-hidden shadow-2xs">
     <!-- Top Row: Author + Reviewer -->
     <div class="flex flex-col sm:flex-row">
         <!-- Author -->
         <div class="flex-1 p-4 sm:p-5">
             <div class="flex items-start gap-3">
-                <div class="w-10 h-10 rounded-full bg-primary-50 flex items-center justify-center shrink-0">
-                    <span class="material-symbols-outlined text-primary-600 text-xl" style="font-variation-settings: 'FILL' 1;">person</span>
+                <div class="w-10 h-10 rounded-full bg-primary-50 border border-primary-100 flex items-center justify-center shrink-0">
+                    <span class="material-symbols-outlined text-primary-700 text-xl" style="font-variation-settings: 'FILL' 1;">person</span>
                 </div>
                 <div class="min-w-0">
-                    <p class="text-[10px] uppercase tracking-wider text-gray-400 font-semibold mb-0.5">
+                    <p class="text-[10px] uppercase tracking-wider text-gray-500 font-semibold mb-0.5">
                         {isSameAuthorAndReviewer ? 'Yazan ve tıbbi olarak gözden geçiren' : 'Yazar'}
                     </p>
                     <div class="flex items-center gap-1 min-w-0">
                         {authorUrl ? (
                             <a
                                 href={authorUrl}
-                                class="truncate text-sm font-bold text-gray-900 underline decoration-gray-300 underline-offset-2 transition-colors hover:text-primary-700 hover:decoration-primary-400"
+                                class="truncate text-base font-serif font-bold text-gray-900 underline decoration-gray-300 underline-offset-2 transition-colors hover:text-primary-700 hover:decoration-primary-400"
                             >
                                 {author}
                             </a>
                         ) : (
-                            <p class="text-sm font-bold text-gray-900 truncate">{author}</p>
+                            <p class="text-base font-serif font-bold text-gray-900 truncate">{author}</p>
                         )}
                         {authorYoutube && (
                             <a
@@ -107,7 +110,7 @@ const sc = statusConfig[status];
                     </div>
                     {authorTitle && <p class="text-xs text-gray-500 truncate">{authorTitle}</p>}
                     {isSameAuthorAndReviewer && reviewDate && (
-                        <p class="text-[11px] text-gray-400 mt-0.5">Gözden geçirme: {reviewDate}</p>
+                        <p class="text-[11px] text-gray-500 mt-0.5">Gözden geçirme: {reviewDate}</p>
                     )}
                 </div>
             </div>
@@ -122,20 +125,14 @@ const sc = statusConfig[status];
                 <!-- Medical Reviewer -->
                 <div class="flex-1 p-4 sm:p-5">
                     <div class="flex items-start gap-3">
-                        <div class="w-10 h-10 rounded-full bg-mint-50 flex items-center justify-center shrink-0">
-                            <span class="material-symbols-outlined text-mint-600 text-xl" style="font-variation-settings: 'FILL' 1;">verified</span>
+                        <div class="w-10 h-10 rounded-full bg-emerald-50 border border-emerald-200/80 flex items-center justify-center shrink-0">
+                            <span class="material-symbols-outlined text-emerald-700 text-xl" style="font-variation-settings: 'FILL' 1;">verified</span>
                         </div>
                         <div class="min-w-0">
-                            <p class="text-[10px] uppercase tracking-wider text-gray-400 font-semibold mb-0.5">Onay</p>
-                            {medicalReviewer ? (
-                                <>
-                                    <p class="text-sm font-bold text-gray-900 truncate">{medicalReviewer}</p>
-                                    {reviewerTitle && <p class="text-xs text-gray-500 truncate">{reviewerTitle}</p>}
-                                    {reviewDate && <p class="text-[11px] text-gray-400 mt-0.5">{reviewDate}</p>}
-                                </>
-                            ) : (
-                                <p class="text-xs text-gray-400 italic">İnceleme bekleniyor</p>
-                            )}
+                            <p class="text-[10px] uppercase tracking-wider text-gray-500 font-semibold mb-0.5">Tıbbi İnceleme & Onay</p>
+                            <p class="text-sm font-serif font-bold text-gray-900 truncate">{effectiveReviewer}</p>
+                            {effectiveReviewerTitle && <p class="text-xs text-gray-500 truncate">{effectiveReviewerTitle}</p>}
+                            {reviewDate && <p class="text-[11px] text-gray-500 mt-0.5">Son İnceleme: {reviewDate}</p>}
                         </div>
                     </div>
                 </div>

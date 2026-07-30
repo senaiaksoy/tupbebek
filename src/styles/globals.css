@@ -49,7 +49,23 @@ body {
   line-height: 1.6;
   letter-spacing: -0.005em;
   color: var(--color-gray-900);
-  background-color: var(--color-surface);
+  background-color: var(--color-paper-canvas);
+}
+
+.paper-canvas {
+  background-color: var(--color-paper-canvas);
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.hairline-border {
+  border-color: var(--border-hairline);
+}
+
+.hairline-divider {
+  border-bottom: 1px solid var(--border-hairline);
 }
 
 /* ─────────────────────────────────────────────────────────────────── */
