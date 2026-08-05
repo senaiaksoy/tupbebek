@@ -3,6 +3,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { buildHubItemListSchema } from '../utils/hubStructuredData';
+import { safeJsonLdStringify } from '../utils/seo';
+
 
 const sections = [
     { id: 'endometriozis', label: 'Endometriozis', icon: 'gynecology', color: 'text-error' },
@@ -51,7 +53,7 @@ const itemListSchema = buildHubItemListSchema({
 ---
 
 <BaseLayout title="Endometriozis ve Adenomyozis | tupbebek.com" description="Endometriozis ve adenomyozis nedir? Belirtileri, tanı yöntemleri, tedavi seçenekleri ve fertilite üzerindeki etkileri hakkında kapsamlı rehber.">
-    <script type="application/ld+json" set:html={JSON.stringify({
+    <script type="application/ld+json" set:html={safeJsonLdStringify({
         "@context": "https://schema.org",
         "@type": "MedicalWebPage",
         "headline": "Endometriozis ve Adenomyozis Rehberi",
@@ -78,7 +80,7 @@ const itemListSchema = buildHubItemListSchema({
             "@id": "https://tupbebek.com/endometriozis-adenomyozis"
         }
     })} />
-    <script type="application/ld+json" is:inline set:html={JSON.stringify(itemListSchema)} />
+    <script type="application/ld+json" is:inline set:html={safeJsonLdStringify(itemListSchema)} />
     <Header />
 
     <!-- Floating TOC Navigation -->

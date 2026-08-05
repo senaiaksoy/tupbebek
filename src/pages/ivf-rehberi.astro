@@ -1,4 +1,5 @@
 ---
+import { safeJsonLdStringify } from '../utils/seo';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
@@ -86,8 +87,8 @@ const itemListSchema = buildHubItemListSchema({
 <BaseLayout title="Tüp Bebek (IVF) Nasıl Olur? Adım Adım Rehber | tupbebek.com" description="Tüp bebek nasıl olur? IVF tedavisinin aşamaları: hazırlık, yumurta toplama, embriyo kültürü, transfer işlemleri, bekleme süreci ve üreme sağlığı açısından başarı beklentisi.">
     <Header />
 
-    <script type="application/ld+json" is:inline set:html={JSON.stringify(faqSchema)} />
-    <script type="application/ld+json" is:inline set:html={JSON.stringify(itemListSchema)} />
+    <script type="application/ld+json" is:inline set:html={safeJsonLdStringify(faqSchema)} />
+    <script type="application/ld+json" is:inline set:html={safeJsonLdStringify(itemListSchema)} />
 
     <main id="main-content" tabindex="-1" class="pt-20">
         <!-- Hero -->

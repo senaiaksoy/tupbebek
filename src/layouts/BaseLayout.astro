@@ -10,7 +10,7 @@ import Breadcrumbs from '../components/Breadcrumbs.astro';
 import CookieConsent from '../components/CookieConsent.astro';
 import SearchAutocomplete from '../components/SearchAutocomplete.astro';
 import { normalizeInternalPath } from '../utils/routeAliases.mjs';
-import { resolveCanonicalUrl, resolveSiteUrl, resolveSocialImageUrl } from '../utils/seo';
+import { resolveCanonicalUrl, resolveSiteUrl, resolveSocialImageUrl, safeJsonLdStringify } from '../utils/seo';
 import { getImageDimensions } from '../utils/imageMetadata';
 
 interface Props {
@@ -444,8 +444,9 @@ const siteGraph = {
 		</style>
 
 		<!-- Sitewide JSON-LD: Organization + WebSite + MedicalWebPage @graph (E-E-A-T + YMYL) -->
-		<script type="application/ld+json" is:inline set:html={JSON.stringify(siteGraph)} />
+		<script type="application/ld+json" is:inline set:html={safeJsonLdStringify(siteGraph)} />
 	</head>
+
 	<body class="bg-gray-50 text-gray-900 selection:bg-primary-50 selection:text-primary-800">
 			<a href="#main-content" class="skip-link">Ana içeriğe geç</a>
 		{!isHome && !hideBreadcrumbs && <Breadcrumbs />}

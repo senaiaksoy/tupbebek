@@ -75,3 +75,8 @@ export function resolveSocialImageUrl({ siteUrl, image }: SocialImageOptions): s
   const imagePath = image?.trim() || DEFAULT_SOCIAL_IMAGE_PATH;
   return ensureAbsoluteUrl(imagePath, siteUrl);
 }
+
+export function safeJsonLdStringify(obj: unknown): string {
+  return JSON.stringify(obj, null, 0).replace(/[\u007F-\uFFFF]/g, (c) => "\\u" + ("0000" + c.charCodeAt(0).toString(16)).slice(-4));
+}
+

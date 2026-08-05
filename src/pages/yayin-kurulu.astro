@@ -2,6 +2,8 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import { safeJsonLdStringify } from '../utils/seo';
+
 
 const colorMap = {
   primary: { bg: 'bg-primary-50', icon: 'text-primary-600', badge: 'bg-primary-100 text-primary-700' },
@@ -252,7 +254,8 @@ const sortedBoardMembers = boardMembers
 ---
 
 <BaseLayout title="Yayın Kurulu | tupbebek.com" description="tupbebek.com tıbbi yayın kurulu üyeleri, editöryal sürecimiz ve içerik denetim politikamız hakkında bilgi edinin.">
-  <script type="application/ld+json" is:inline set:html={JSON.stringify(editorialBoardSchema)} />
+  <script type="application/ld+json" is:inline set:html={safeJsonLdStringify(editorialBoardSchema)} />
+
 
   <Header />
 

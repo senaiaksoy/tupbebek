@@ -2,6 +2,8 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
+import { safeJsonLdStringify } from '../../utils/seo';
+
 
 // Canonical Person @id — senaiaksoy.net Block A'da deklare edilmiş tek kayıt.
 // Bu sayfa rich attributes (alumniOf, memberOf, hasOccupation, knowsAbout)
@@ -94,8 +96,9 @@ const profilePageSchema = {
 >
     <Header />
 
-    <script type="application/ld+json" is:inline set:html={JSON.stringify(personSchema)} />
-    <script type="application/ld+json" is:inline set:html={JSON.stringify(profilePageSchema)} />
+    <script type="application/ld+json" is:inline set:html={safeJsonLdStringify(personSchema)} />
+    <script type="application/ld+json" is:inline set:html={safeJsonLdStringify(profilePageSchema)} />
+
 
     <main id="main-content" tabindex="-1" class="pt-32 pb-24">
         <div class="max-w-3xl mx-auto px-4 md:px-6">

@@ -1,4 +1,6 @@
 ---
+import { safeJsonLdStringify } from '../../utils/seo';
+
 interface Props {
   schema: any;
 }
@@ -26,4 +28,5 @@ function mapSchema(obj: any): any {
 const mappedSchema = mapSchema(schema);
 ---
 
-{mappedSchema && <script type="application/ld+json" is:inline set:html={JSON.stringify(mappedSchema)} />}
+{mappedSchema && <script type="application/ld+json" is:inline set:html={safeJsonLdStringify(mappedSchema)} />}
+

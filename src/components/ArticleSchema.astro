@@ -11,6 +11,7 @@
  */
 
 import { resolveImageDimensions } from '../utils/imageMetadata';
+import { safeJsonLdStringify } from '../utils/seo';
 
 interface Reference {
     title: string;
@@ -419,4 +420,4 @@ const articleSchema = {
 };
 ---
 
-<script type="application/ld+json" is:inline set:html={JSON.stringify(articleSchema)} />
+<script type="application/ld+json" is:inline set:html={safeJsonLdStringify(articleSchema)} />

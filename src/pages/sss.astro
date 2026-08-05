@@ -3,6 +3,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import MedicalDisclaimer from '../components/MedicalDisclaimer.astro';
+import { safeJsonLdStringify } from '../utils/seo';
+
 
 // FAQPage JSON-LD schema — questions mirror the <details> blocks below.
 // Plain-text answers (HTML stripped) for schema. AI Overviews + Perplexity + ChatGPT cite from this.
@@ -80,7 +82,7 @@ const faqSchema = {
 };
 ---
 
-<script type="application/ld+json" is:inline set:html={JSON.stringify(faqSchema)} />
+<script type="application/ld+json" is:inline set:html={safeJsonLdStringify(faqSchema)} />
 
 
 <BaseLayout title="Tüp Bebek SSS: IVF ve Tedavi Yanıtları | tupbebek.com" description="Tüp bebek (IVF), başarı oranları, SGK kapsamı, PGT, transfer sonrası bakım ve erkek/kadın fertilitesi hakkında en çok sorulan soruların kanıta dayalı yanıtları.">

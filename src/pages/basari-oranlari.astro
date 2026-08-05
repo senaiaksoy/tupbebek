@@ -5,6 +5,8 @@ import Footer from '../components/Footer.astro';
 import HizliCevap from '../components/HizliCevap.astro';
 import QuoteBlock from '../components/global/QuoteBlock.astro';
 import { buildHubItemListSchema } from '../utils/hubStructuredData';
+import { safeJsonLdStringify } from '../utils/seo';
+
 
 const faqItems = [
     {
@@ -73,9 +75,10 @@ const itemListSchema = buildHubItemListSchema({
 ---
 
 <BaseLayout title="Tüp Bebek Başarı Oranı: Kümülatif Veriler ve Gerçekçi Okuma | tupbebek.com" description="Tüp bebek başarı oranı nasıl okunur? HFEA 2022 payda çerçevesi, kümülatif sonuç, tedavi yöntemi ve uluslararası karşılaştırma; garanti yüzde yoktur.">
-    <script type="application/ld+json" is:inline set:html={JSON.stringify(faqSchema)} />
-    <script type="application/ld+json" is:inline set:html={JSON.stringify(itemListSchema)} />
+    <script type="application/ld+json" is:inline set:html={safeJsonLdStringify(faqSchema)} />
+    <script type="application/ld+json" is:inline set:html={safeJsonLdStringify(itemListSchema)} />
     <Header />
+
 
     <main id="main-content" tabindex="-1" class="pb-24">
         <!-- Hero Section -->

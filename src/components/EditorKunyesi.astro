@@ -14,6 +14,8 @@ interface Props {
     variant?: 'compact' | 'full';
 }
 
+import { safeJsonLdStringify } from '../utils/seo';
+
 const { variant = 'full' } = Astro.props;
 
 const doctor = {
@@ -161,6 +163,7 @@ const editorSchema = {
             </a>
         </div>
         <!-- Structured Data: Editor Person profile (E-E-A-T). reviewedBy + lastReviewed handled by ArticleSchema. -->
-        <script type="application/ld+json" is:inline set:html={JSON.stringify(editorSchema)} />
+        <script type="application/ld+json" is:inline set:html={safeJsonLdStringify(editorSchema)} />
     </aside>
+
 )}
