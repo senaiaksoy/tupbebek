@@ -310,14 +310,25 @@ import Footer from '../components/Footer.astro';
 
 <script>
     // Form submission
-    document.getElementById('ebook-form').addEventListener('submit', async (e) => {
+    const getElement = <T extends HTMLElement>(id: string): T => {
+        const element = document.getElementById(id);
+        if (!element) throw new Error(`Eksik form elementi: ${id}`);
+        return element as T;
+    };
+
+    const form = getElement<HTMLFormElement>('ebook-form');
+    const loadingMessage = getElement<HTMLElement>('loading-message');
+    const successMessage = getElement<HTMLElement>('success-message');
+    const downloadButton = getElement<HTMLButtonElement>('download-btn');
+
+    form.addEventListener('submit', async (e) => {
         e.preventDefault();
 
-        const fullname = document.getElementById('fullname').value;
-        const email = document.getElementById('email').value;
-        const phone = document.getElementById('phone').value || '';
-        const status = document.getElementById('status').value || '';
-        const kvkk = document.getElementById('kvkk').checked;
+        const fullname = getElement<HTMLInputElement>('fullname').value;
+        const email = getElement<HTMLInputElement>('email').value;
+        const phone = getElement<HTMLInputElement>('phone').value || '';
+        const status = getElement<HTMLSelectElement>('status').value || '';
+        const kvkk = getElement<HTMLInputElement>('kvkk').checked;
 
         if (!kvkk) {
             alert('Lütfen KVKK onayını işaretleyiniz');
@@ -325,8 +336,8 @@ import Footer from '../components/Footer.astro';
         }
 
         // Loading göster
-        document.getElementById('loading-message').style.display = 'block';
-        document.getElementById('download-btn').disabled = true;
+        loadingMessage.style.display = 'block';
+        downloadButton.disabled = true;
 
         try {
             // İndirme işlemini kaydet ve e-posta gönder (arka planda)
@@ -345,23 +356,23 @@ import Footer from '../components/Footer.astro';
             window.location.href = pdfUrl;
 
             // Success mesajı göster
-            document.getElementById('loading-message').style.display = 'none';
-            document.getElementById('success-message').style.display = 'block';
+            loadingMessage.style.display = 'none';
+            successMessage.style.display = 'block';
 
             // Form temizle
-            document.getElementById('ebook-form').reset();
+            form.reset();
 
             // 5 saniye sonra success mesajını gizle
             setTimeout(() => {
-                document.getElementById('success-message').style.display = 'none';
-                document.getElementById('download-btn').disabled = false;
+                successMessage.style.display = 'none';
+                downloadButton.disabled = false;
             }, 5000);
 
         } catch (error) {
             console.error('Hata:', error);
             alert('İndirme işlemi sırasında hata oluştu. Lütfen tekrar deneyiniz.');
-            document.getElementById('loading-message').style.display = 'none';
-            document.getElementById('download-btn').disabled = false;
+            loadingMessage.style.display = 'none';
+            downloadButton.disabled = false;
         }
     });
 </script>

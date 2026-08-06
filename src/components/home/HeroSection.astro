@@ -35,7 +35,7 @@ const formattedDate = featuredDate ? new Date(featuredDate).toLocaleDateString('
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start border-t border-gray-200/80 pt-8">
 
       <!-- LEFT COLUMN: Featured Cover Story (8 Cols / ~65%) -->
-      {featured && (
+      {featured &&
         <article class="lg:col-span-8 group">
           <a href={`/makaleler/${featured.slug}`} class="block flex flex-col gap-5">
 
@@ -86,7 +86,7 @@ const formattedDate = featuredDate ? new Date(featuredDate).toLocaleDateString('
               </div>
             </a>
         </article>
-      )}
+      }
 
       <!-- RIGHT COLUMN: Editorial Side Spotlights (4 Cols / ~35%) -->
       <aside class="lg:col-span-4 flex flex-col gap-6 bg-white/70 p-6 rounded-xl border border-gray-200/80 shadow-2xs">

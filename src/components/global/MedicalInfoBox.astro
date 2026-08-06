@@ -13,7 +13,7 @@ const { title = "Özet", icon = "💡", color = "blue" } = Astro.props;
     
     <!-- Content Container -->
     <div class="info-text">
-      <h3>{title}</h3>
+      <p class="info-title">{title}</p>
       <div class="info-body">
         <slot />
       </div>
@@ -72,7 +72,7 @@ const { title = "Özet", icon = "💡", color = "blue" } = Astro.props;
   .info-text {
     flex: 1;
   }
-  .info-text h3 {
+  .info-text .info-title {
     font-size: 1.15rem;
     font-weight: 700;
     margin: 0 0 10px 0;

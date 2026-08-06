@@ -38,7 +38,7 @@ export const POST: APIRoute = async ({ request, locals }) => {
       || request.headers.get('x-forwarded-for')
       || 'unknown';
 
-    const env = (locals as any).runtime?.env;
+    const env = locals.runtime?.env;
     const db = env?.DB;
 
     if (db) {

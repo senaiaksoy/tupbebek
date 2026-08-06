@@ -2,19 +2,29 @@
 title: "Embriyo Transferi Sonrası Bakım ve Transfer Sonrası Lekelenme"
 seoTitle: "Transfer Sonrası Lekelenme ve Bakım"
 description: "Transfer sonrası lekelenme normal mi? Embriyo transferi sonrası bakım, 12 gün sonra beta-hCG, yatak istirahati, kanama ve kasık ağrısı ne anlama gelir?"
+summary: "Embriyo transferi sonrası uzun yatak istirahatinin gebelik şansını artırmadığı gösterilmiştir. İşlem sonrası kısa bir dinlenmenin ardından hafif günlük aktivitelere dönülebilir. En önemli konular; hekimin reçete ettiği progesteron ve hormonal ilaç desteğini aksatmadan sürdürmek, sigara ve alkolden uzak durmak ve gebelik testini (beta-hCG) transferden 10-14 gün sonra planlanan zamanda yaptırmaktır."
 publishDate: 2024-08-28
+status: "published"
 author: "Doç. Dr. Senai Aksoy"
 authorTitle: "Kadın Hastalıkları ve Doğum Uzmanı"
 authorCredentials: "Üreme Tıbbı ve Yardımcı Üreme Teknikleri"
 authorYoutube: "https://www.youtube.com/@DocentDrSenaiAksoy"
-medicalReviewer: "tupbebek.com Editöryal Ekip"
-reviewerTitle: "Tıbbi Yayın Ekibi"
-reviewDate: 2026-05-14
-lastModified: 2026-07-13
+medicalReviewer: "Doç. Dr. Senai Aksoy & Tıbbi Danışma Kurulu"
+reviewerTitle: "Kadın Hastalıkları, Doğum ve Üreme Tıbbı Uzmanı"
+approvedBy: "Doç. Dr. Senai Aksoy"
+reviewDate: 2026-08-06
+lastModified: 2026-08-06
+evidenceAsOf: 2026-08-06
+reviewScope: "ESHRE 2020, Cochrane Luteal Support 2015, Craciunas Meta-Analizi ve Rao Meta-Analizi"
 category: "Tüp Bebek"
-recommendationGrade: B
+hideEvidenceGrade: true
 image: "/images/makaleler/embriyo-transferi-sonrasi-bakim.webp"
 imageAlt: "Sıcak ahşap zeminde sakin oturuş, embriyo transferi sonrası dinlenme ve restorative bekleyiş"
+summaryReferences:
+  - title: "Bed Rest After Embryo Transfer"
+    url: "https://pubmed.ncbi.nlm.nih.gov/25304605/"
+  - title: "Progesterone Luteal Phase Support"
+    url: "https://pubmed.ncbi.nlm.nih.gov/26148507/"
 references:
   - title: "Bed rest after embryo transfer: a systematic review and meta-analysis"
     authors: "Craciunas L, Tsampras N"
@@ -39,13 +49,14 @@ references:
 import HizliCevap from '../../components/HizliCevap.astro';
 import InlineEvidence from '../../components/InlineEvidence.astro';
 import Accordion from "../../components/global/Accordion.astro";
-import QuoteBlock from '../../components/global/QuoteBlock.astro';
+import MedicalInfoBox from '../../components/global/MedicalInfoBox.astro';
+import RevealScript from '../../components/global/RevealScript.astro';
 
 <HizliCevap question="Embriyo transferi sonrası ne yapılmalı?">
 Embriyo transferi sonrası uzun süre yatmanın gebelik olasılığını artırmadığı [Craciunas 2014 meta-analizi](https://pubmed.ncbi.nlm.nih.gov/25304605/) ile gösterilmiştir. Genellikle kısa dinlenme sonrası hafif günlük yaşama dönülebilir; beta-hCG kan testi çoğu protokolde transferden **10–14 gün** sonra planlanır — gün bazlı yorum için [beta-hCG testi rehberine](/makaleler/beta-hcg-testi/) bakın. Ağır egzersiz, sigara, [alkol](/makaleler/alkol-ve-fertilite/), [Cochrane 2015 derlemesinde](https://pubmed.ncbi.nlm.nih.gov/26148507/) önemi belirtilen hormonal destek ilaçlarında doktor onayı olmadan değişiklik yapmaktan ve çok erken gebelik testi yapmaktan kaçınmak daha önemlidir.
 </HizliCevap>
 
-## Embriyo Transferi Sonrası Bakım ve Transfer Sonrası Lekelenme
+<div class="max-w-4xl mx-auto space-y-12 blog-content-reveal">
 
 ## Giriş
 
@@ -134,6 +145,10 @@ Tüp bebek tedavisi ve iki haftalık bekleme süresi, duygusal açıdan oldukça
 - **Partnerinizle iletişim:** Herkes bekleme dönemini aynı şekilde yaşamaz. Hisleri açık konuşmak ve birbirinden “hep güçlü görünmeyi” beklememek daha gerçekçi olur.
 - **Profesyonel yardım:** Kaygı, panik, çökkünlük veya uykusuzluk belirginleşirse psikolojik destek almak tedavi sürecinin doğal bir parçası olarak görülmelidir; ayrıntı için [duygusal dayanıklılık rehberi](/makaleler/duygusal-dayaniklik-rehberi/).
 
+<MedicalInfoBox title="Dr. Aksoy'un yaklaşımı" icon="INFO" color="blue">
+Transfer sonrası en güvenli yaklaşım sonucu sürekli kontrol etmeye çalışmak veya eve kapanıp yatmak değildir. Kısa dinlenme sonrası hafif günlük aktiviteye dönmek, hekimin belirttiği hormonal destek ilaçlarına harfiyen uymak ve gebelik testini sabırla planlanan zamanda yaptırmaktır.
+</MedicalInfoBox>
+
 ## Sıkça Sorulan Sorular
 
 <Accordion title="Embriyo transferi sonrası tutunma belirtileri anlaşılır mı?">
@@ -156,13 +171,11 @@ Hafif kramp veya lekelenme görülebilir. Şiddetli ağrı, artan kanama, ateş,
 Kendi kendinize dozu değiştirmeyin veya ilacı kesmeyin. Unutulan doz ve saat bilgisiyle tedavi ekibinizi arayarak kişisel talimat alın.
 </Accordion>
 
-<QuoteBlock author="Doç. Dr. Senai Aksoy">
-Transfer sonrası en güvenli yaklaşım sonucu kontrol etmeye çalışmak değil; uzun yatak istirahati yerine makul günlük aktivite, ilaçlara sadık kalmak ve gebelik testini erken değil planlanan zamanda yapmaktır.
-</QuoteBlock>
-
 ## Sonuç
 
 Embriyo transferinden sonraki dönemde hedef, sonucu kontrol etmeye çalışmak değil, tedavi planına düzenli uymak ve gereksiz risklerden kaçınmaktır. Uzun yatak istirahati yerine makul günlük aktivite, ilaçların doğru kullanımı, dengeli beslenme ve planlanan zamanda beta-hCG testi daha güvenli bir çerçeve sunar.
+
+</div>
 
 export const embryoTransferAftercareFaqSchema = {
   "@context": "https://schema.org",
@@ -170,18 +183,34 @@ export const embryoTransferAftercareFaqSchema = {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "Transfer sonrası lekelenme tutunmadığı anlamına mı gelir?",
+      "name": "Embriyo transferi sonrası tutunma belirtileri anlaşılır mı?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Hayır. Kısa süreli lekelenme kateter işlemi, progesteron veya implantasyon sürecine bağlı olabilir. Sonuç için planlanan günde beta-hCG gerekir; artan veya yoğun kanamada hekim aranmalıdır."
+        "text": "Hayır, belirtiler tek başına güvenilir değildir. Kasık ağrısı, göğüs hassasiyeti, lekelenme veya belirti olmaması progesteron desteği ve doğal döngü değişiklikleriyle de ilişkili olabilir. Sonuç için beta-hCG testi gerekir."
       }
     },
     {
       "@type": "Question",
-      "name": "Embriyo transferi sonrası yatmak gerekir mi?",
+      "name": "Embriyo transferi sonrası yürüyüş yapılabilir mi?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Uzun yatak istirahati çoğu hastada gebelik olasılığını artırmaz. Kısa dinlenme sonrası hafif günlük aktivite genellikle yeterlidir."
+        "text": "Çoğu hastada hafif yürüyüş ve günlük aktiviteler uygundur. Ağır kaldırma, yoğun egzersiz ve karın içi basıncı artıran aktiviteler için hekiminizin planına uyulmalıdır."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Transfer sonrası lekelenme tutunmadığı anlamına mı gelir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hayır. Kısa süreli lekelenme tarzındaki kanama, kateter işlemi, progesteron veya implantasyon sürecine bağlı olabilir. Sonuç için planlanan günde beta-hCG gerekir; artan veya yoğun kanamada hekim aranmalıdır."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Transfer sonrası kasık ağrısı veya lekelenme olursa ne yapılmalı?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hafif kramp veya lekelenme görülebilir. Şiddetli ağrı, artan kanama, ateş, kötü kokulu akıntı veya nefes darlığı gibi belirtiler varsa gecikmeden tıbbi ekip aranmalıdır."
       }
     },
     {
@@ -189,10 +218,11 @@ export const embryoTransferAftercareFaqSchema = {
       "name": "Transfer sonrası progesteron unutulursa ne yapılmalı?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "İlacı kendi kendinize kesmeyin veya dozu değiştirmeyin. Unutulan doz ve saat bilgisiyle tedavi ekibinizden kişisel talimat alın."
+        "text": "Kendi kendinize dozu değiştirmeyin veya ilacı kesmeyin. Unutulan doz ve saat bilgisiyle tedavi ekibinizi arayarak kişisel talimat alın."
       }
     }
   ]
 };
 
 <script type="application/ld+json" set:html={JSON.stringify(embryoTransferAftercareFaqSchema)} />
+<RevealScript />

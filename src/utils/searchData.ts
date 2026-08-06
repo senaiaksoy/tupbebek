@@ -19,7 +19,7 @@ export const getSearchData = async (): Promise<SearchItem[]> => {
   const articles = await getPublishedArticles();
 
   return articles.map(article => ({
-    id: article.slug || (article as any).id || 'article-' + (article.data?.slug ?? Date.now()),
+    id: article.slug,
     title: article.data.title,
     description: article.data.description,
     url: `/makaleler/${article.slug}`,

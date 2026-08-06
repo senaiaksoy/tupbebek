@@ -118,7 +118,7 @@ const normalizedLimit = Math.max(0, Math.floor(rawLimit));
 
 const { getPublishedArticles, sanitizeImage } = await import('../utils/articles');
 const allArticles = await getPublishedArticles();
-const articlesBySlug = new Map(allArticles.map(article => [article.slug, article]));
+const articlesBySlug = new Map<string, (typeof allArticles)[number]>(allArticles.map(article => [article.slug, article]));
 
 const prioritySlugs = clusterPriorityMap[currentSlug] ?? [];
 const missingSlugs = prioritySlugs.filter(

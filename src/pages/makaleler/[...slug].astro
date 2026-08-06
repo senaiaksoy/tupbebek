@@ -70,13 +70,13 @@ const authorProfileUrl = isSenaiAksoy
 
 const publishDateStr = entry.data.publishDate
     ? entry.data.publishDate.toLocaleDateString('tr-TR', { year: 'numeric', month: 'long', day: 'numeric' })
-    : null;
+    : undefined;
 const lastModifiedStr = entry.data.lastModified
     ? entry.data.lastModified.toLocaleDateString('tr-TR', { year: 'numeric', month: 'long', day: 'numeric' })
-    : null;
+    : undefined;
 const reviewDateStr = entry.data.reviewDate
     ? entry.data.reviewDate.toLocaleDateString('tr-TR', { year: 'numeric', month: 'long', day: 'numeric' })
-    : null;
+    : undefined;
 const siteUrl = resolveSiteUrl(Astro.site);
 const articleUrl = resolveCanonicalUrl({
     siteUrl,
@@ -259,7 +259,7 @@ const heroDimensions = resolveImageDimensions({
                     <!-- Doctor's Clinical Note (E-E-A-T) -->
                     <DoctorNote
                       topic={entry.data.category}
-                      note="İnfertilite değerlendirmesi ve tedavi yolculuğunda en yüksek klinik başarı; hastanın tıbbi geçmişine özel, bilimsel kanıtlara dayalı ve kişiselleştirilmiş hekim takibiyle sağlanır."
+                      note="İnfertilite değerlendirmesi ve tedavi yolculuğunda güvenilir klinik sonuçlar; hastanın tıbbi geçmişine özel, bilimsel kanıtlara dayalı ve kişiselleştirilmiş hekim takibiyle elde edilir."
                     />
 
                     {entry.data.deferEditorialMeta && (
