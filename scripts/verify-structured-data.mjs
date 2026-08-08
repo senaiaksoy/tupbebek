@@ -211,6 +211,7 @@ if (!fs.existsSync(distDir)) {
   stats.htmlFiles = htmlFiles.length;
 
   for (const filePath of htmlFiles) {
+    if (!fs.existsSync(filePath)) continue;
     const html = fs.readFileSync(filePath, 'utf8');
     const visibleText = cleanText(html);
     const nodes = parseJsonLd(html, filePath).flatMap(extractTopLevelNodes);

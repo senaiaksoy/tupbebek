@@ -37,10 +37,10 @@ const jsonLd = {
       </a>
     </li>
     {breadcrumbs.map((crumb, index) => (
-      <li class="flex items-center space-x-2">
+      <li class="flex items-center space-x-2 min-w-0">
         <span class="material-symbols-outlined text-xs text-gray-300">chevron_right</span>
         {index === breadcrumbs.length - 1 ? (
-          <span class="font-bold text-gray-900 truncate max-w-[200px] md:max-w-none" aria-current="page">{crumb.label}</span>
+          <span class="font-bold text-gray-900 truncate max-w-[200px] md:max-w-none min-w-0" aria-current="page">{crumb.label}</span>
         ) : (
           <a href={crumb.href} class="hover:text-primary-600 transition-colors whitespace-nowrap">
             {crumb.label}
@@ -52,4 +52,3 @@ const jsonLd = {
 </nav>
 
 <script type="application/ld+json" is:inline set:html={safeJsonLdStringify(jsonLd)} />
-

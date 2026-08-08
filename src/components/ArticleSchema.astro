@@ -137,7 +137,9 @@ const isReviewerSenaiAksoy = d.medicalReviewer && /senai\s+aksoy/i.test(d.medica
 const isReviewerOrg = d.medicalReviewer ? /Kurul|Ekip/i.test(d.medicalReviewer) : false;
 const reviewerSchema = d.medicalReviewer
     ? (isReviewerSenaiAksoy
-        ? { "@id": SENAI_AKSOY_PERSON_ID }
+        ? (isReviewerOrg
+            ? [{ "@id": SENAI_AKSOY_PERSON_ID }, { "@id": EDITORIAL_BOARD_ID }]
+            : { "@id": SENAI_AKSOY_PERSON_ID })
         : {
             "@type": isReviewerOrg ? "Organization" : "Person",
             "name": d.medicalReviewer,
@@ -222,7 +224,7 @@ const WIKIDATA_MAP: Record<string, string[]> = {
     'bagisiklik-tedavileri': ['https://www.wikidata.org/wiki/Q274191', 'https://en.wikipedia.org/wiki/Immunotherapy'],
     'beta-hcg-testi': ['https://www.wikidata.org/wiki/Q416757', 'https://en.wikipedia.org/wiki/Human_chorionic_gonadotropin'],
     'cep-telefonu-sperm-kalitesi': ['https://www.wikidata.org/wiki/Q3506173', 'https://en.wikipedia.org/wiki/Semen_quality'],
-    'cerrahi-sperm-arama-tese': ['https://www.wikidata.org/wiki/Q7670183'],
+    'cerrahi-sperm-arama-tese': ['https://www.wikidata.org/wiki/Q3733593', 'https://en.wikipedia.org/wiki/Testicular_sperm_extraction'],
     'dhea-buyume-hormonu-tup-bebek': ['https://www.wikidata.org/wiki/Q408376', 'https://en.wikipedia.org/wiki/Dehydroepiandrosterone'],
     'dusuk-amh-hamilelik': ['https://www.wikidata.org/wiki/Q417088', 'https://en.wikipedia.org/wiki/Anti-M%C3%BCllerian_hormone'],
     'duygusal-dayaniklik-rehberi': ['https://www.wikidata.org/wiki/Q730303', 'https://en.wikipedia.org/wiki/Psychological_resilience'],
@@ -293,6 +295,11 @@ const ABOUT_ENTITY_MAP: Record<string, { type: string; name: string; alternateNa
     'azospermi-mikro-tese': {
         type: 'MedicalCondition',
         name: 'Azospermi'
+    },
+    'cerrahi-sperm-arama-tese': {
+        type: 'MedicalProcedure',
+        name: 'Cerrahi sperm arama',
+        alternateName: ['Micro-TESE', 'TESE', 'TESA', 'PESA']
     },
     'pgt-a-bas-editor-kosesi': {
         type: 'MedicalTest',
