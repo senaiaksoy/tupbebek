@@ -2,9 +2,9 @@
 /**
  * ArticleSchema — Makale bazli JSON-LD yapilandirilmis veri
  *
- * Her makale icin MedicalWebPage + Article + reviewedBy + citation
- * schema.org markup'i uretir. BaseLayout'taki genel MedicalWebPage
- * semasinin uzerine makaleye ozel detaylar ekler.
+ * Her makale icin Article + gercek yazar/inceleyen + citation
+ * schema.org markup'i uretir. BaseLayout'taki WebPage dugumune mainEntity
+ * ile baglanir.
  *
  * Kullanim:
  *   <ArticleSchema entry={entry} url={articleUrl} />
@@ -15,6 +15,7 @@ import { safeJsonLdStringify } from '../utils/seo';
 
 interface Reference {
     title: string;
+    type?: 'journalArticle' | 'systematicReview' | 'guideline' | 'regulation' | 'officialWebPage' | 'book' | 'report';
     authors?: string;
     journal?: string;
     year?: number;
@@ -40,6 +41,8 @@ interface Props {
             reviewDate?: Date;
             category: string;
             image?: string;
+            imageSquare?: string;
+            imageFourThree?: string;
             imageAlt?: string;
             imageCaption?: string;
             imageCredit?: string;
@@ -78,21 +81,10 @@ const EDITORIAL_BOARD_ID = 'https://tupbebek.com/yayin-kurulu/#editorial-board';
 // vb.) ile aynı @id'yi extend eder.
 const SENAI_AKSOY_PERSON_ID = 'https://senaiaksoy.net/#person';
 
-// Site geneli görsel telif varsayılanları — tüm hero görselleri tupbebek.com
-// Editöryal Ekip tarafından üretilir/lisanslanır; makale frontmatter'ı bu
-// varsayılanları override edebilir (imageLicenseUrl / imageAcquireLicensePage /
-// imageCopyrightNotice), ama override yoksa GSC'nin eksik saydığı
-// license/acquireLicensePage/copyrightNotice alanları burada dolar.
-const SITE_IMAGE_LICENSE_URL = 'https://tupbebek.com/editoryal-politika';
-const SITE_IMAGE_ACQUIRE_LICENSE_PAGE = 'https://tupbebek.com/editoryal-politika';
-const SITE_IMAGE_COPYRIGHT_NOTICE = '© 2026 tupbebek.com';
-
 const { entry, url } = Astro.props;
 const canonicalUrl = new URL(url);
 canonicalUrl.hash = '';
 const d = entry.data;
-const pubMedSearchUrl = (term: string) =>
-    `https://pubmed.ncbi.nlm.nih.gov/?term=${encodeURIComponent(term)}`;
 const doiUrl = (doi: string) =>
     `https://doi.org/${doi.trim().replace(/[()]/g, (char) => (char === '(' ? '%28' : '%29'))}`;
 
@@ -148,13 +140,32 @@ const reviewerSchema = d.medicalReviewer
         })
     : undefined;
 
-// Build citations from references
+const referenceSchemaTypes: Record<NonNullable<Reference['type']>, string> = {
+    journalArticle: 'ScholarlyArticle',
+    systematicReview: 'ScholarlyArticle',
+    guideline: 'MedicalGuideline',
+    regulation: 'Legislation',
+    officialWebPage: 'WebPage',
+    book: 'Book',
+    report: 'Report',
+};
+
+// Build citations from explicit references. Search-result URLs and synthetic
+// literature records are deliberately not generated.
 const citations = d.references?.map(ref => {
     const pubMedUrl = ref.pmid ? `https://pubmed.ncbi.nlm.nih.gov/${ref.pmid}/` : undefined;
+    const directUrls = [
+        ...(ref.doi ? [doiUrl(ref.doi)] : []),
+        ...(pubMedUrl ? [pubMedUrl] : []),
+        ...(ref.url ? [ref.url] : []),
+    ];
+    const inferredType = ref.type
+        ? referenceSchemaTypes[ref.type]
+        : (ref.pmid || ref.doi || ref.journal ? 'ScholarlyArticle' : 'CreativeWork');
     const citation: Record<string, unknown> = {
-        "@type": "ScholarlyArticle",
+        "@type": inferredType,
         "name": ref.title,
-        "url": pubMedUrl || ref.url || pubMedSearchUrl(ref.title),
+        ...(directUrls[0] ? { "url": directUrls[0] } : {}),
     };
     if (ref.authors) citation["author"] = ref.authors;
     if (ref.journal) citation["isPartOf"] = { "@type": "Periodical", "name": ref.journal };
@@ -166,20 +177,9 @@ const citations = d.references?.map(ref => {
             "value": ref.pmid,
         };
     }
-    if (ref.doi || ref.pmid) {
-        citation["sameAs"] = [
-            ...(ref.doi ? [doiUrl(ref.doi)] : []),
-            ...(pubMedUrl ? [pubMedUrl] : []),
-        ];
-    }
-    if (!ref.doi && !ref.pmid) citation["sameAs"] = pubMedSearchUrl(ref.title);
+    if (directUrls.length > 0) citation["sameAs"] = [...new Set(directUrls)];
     return citation;
-}) || [{
-    "@type": "ScholarlyArticle",
-    "name": `PubMed literatür taraması: ${d.title}`,
-    "url": pubMedSearchUrl(`${d.title} ${d.category}`),
-    "sameAs": pubMedSearchUrl(`${d.title} ${d.category}`),
-}];
+}) || [];
 
 // Build ImageObject for the article hero image
 const absoluteImageUrl = d.image
@@ -207,11 +207,24 @@ const imageObject = absoluteImageUrl && heroDims ? {
     ...(d.imageCaption ? { "caption": d.imageCaption } : {}),
     ...(d.imageCredit ? { "creditText": d.imageCredit } : {}),
     ...(d.imageCreator ? { "creator": { "@type": "Person", "name": d.imageCreator } } : {}),
-    "license": d.imageLicenseUrl || SITE_IMAGE_LICENSE_URL,
-    "acquireLicensePage": d.imageAcquireLicensePage || SITE_IMAGE_ACQUIRE_LICENSE_PAGE,
-    "copyrightNotice": d.imageCopyrightNotice || SITE_IMAGE_COPYRIGHT_NOTICE,
+    ...(d.imageLicenseUrl ? { "license": d.imageLicenseUrl } : {}),
+    ...(d.imageAcquireLicensePage ? { "acquireLicensePage": d.imageAcquireLicensePage } : {}),
+    ...(d.imageCopyrightNotice ? { "copyrightNotice": d.imageCopyrightNotice } : {}),
     "representativeOfPage": true,
 } : undefined;
+
+const toAbsoluteImageUrl = (imagePath?: string) => imagePath
+    ? (imagePath.startsWith('http') ? imagePath : `https://tupbebek.com${imagePath}`)
+    : undefined;
+const alternateImageObjects = [d.imageFourThree, d.imageSquare]
+    .map(toAbsoluteImageUrl)
+    .filter((imageUrl): imageUrl is string => Boolean(imageUrl))
+    .map((imageUrl) => ({
+        "@type": "ImageObject",
+        "url": imageUrl,
+        "contentUrl": imageUrl,
+    }));
+const schemaImages = imageObject ? [imageObject, ...alternateImageObjects] : alternateImageObjects;
 
 const WIKIDATA_MAP: Record<string, string[]> = {
     'adet-duzensizligi-pcos': ['https://www.wikidata.org/wiki/Q500816', 'https://en.wikipedia.org/wiki/Polycystic_ovary_syndrome'],
@@ -324,7 +337,7 @@ const ABOUT_ENTITY_MAP: Record<string, { type: string; name: string; alternateNa
         name: 'Endometrioma'
     },
     'yasa-gore-tup-bebek-basari-oranlari': {
-        type: 'MedicalWebPage',
+        type: 'Thing',
         name: 'Tüp bebek başarı oranları'
     },
     'hidrosalpinx-ve-kisirlik': {
@@ -338,16 +351,10 @@ const slug = entry.slug || '';
 const sameAsUrls = WIKIDATA_MAP[slug];
 const entity = ABOUT_ENTITY_MAP[slug];
 
-const isProcedure = d.category === 'Tedavi Yöntemleri' || d.category === 'Tüp Bebek';
-const aboutSchema: Record<string, unknown> = isProcedure
-    ? {
-        "@type": "MedicalProcedure",
-        "name": d.title,
-      }
-    : {
-        "@type": "MedicalCondition",
-        "name": d.category,
-      };
+const aboutSchema: Record<string, unknown> = {
+    "@type": "Thing",
+    "name": d.category,
+};
 
 if (entity) {
     aboutSchema["@type"] = entity.type;
@@ -389,27 +396,23 @@ const videoSchema = d.videoId && d.videoUploadDate && videoWatchUrl
     }
     : undefined;
 
-// Main Article + MedicalWebPage schema. Publisher + WebSite reference Organization @graph in BaseLayout via @id.
+// Main Article schema. Publisher + WebSite + WebPage live in BaseLayout's graph.
 const articleSchema = {
     "@context": "https://schema.org",
-    "@type": ["MedicalWebPage", "Article"],
+    "@type": "Article",
     "@id": `${canonicalUrl.toString()}#article`,
+    "mainEntityOfPage": { "@id": `${canonicalUrl.toString()}#webpage` },
     "headline": d.title,
     "description": d.description,
     ...(d.summary ? { "abstract": d.summary } : {}),
     "url": canonicalUrl.toString(),
     "inLanguage": "tr-TR",
-    ...(imageObject ? { "image": imageObject } : {}),
+    ...(schemaImages.length > 0 ? { "image": schemaImages } : {}),
     ...(imageObject ? { "primaryImageOfPage": { "@id": `${canonicalUrl.toString()}#primaryimage` } } : {}),
     ...(d.publishDate ? { "datePublished": d.publishDate.toISOString().split('T')[0] } : {}),
     ...(d.lastModified ? { "dateModified": d.lastModified.toISOString().split('T')[0] } : {}),
     "author": authorSchema,
-    // Dr. Aksoy yazar ise reviewedBy de canonical @id'ye (hem yazar hem reviewer pattern)
-    ...(reviewerSchema
-        ? { "reviewedBy": reviewerSchema }
-        : isSenaiAksoy
-            ? { "reviewedBy": { "@id": SENAI_AKSOY_PERSON_ID } }
-            : { "reviewedBy": { "@id": EDITORIAL_BOARD_ID } }),
+    ...(reviewerSchema ? { "reviewedBy": reviewerSchema } : {}),
     ...(d.reviewDate ? { "lastReviewed": d.reviewDate.toISOString().split('T')[0] } : {}),
     "publisher": { "@id": ORG_ID },
     "isPartOf": { "@id": WEBSITE_ID },

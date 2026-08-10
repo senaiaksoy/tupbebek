@@ -1,14 +1,19 @@
 User-agent: *
 Allow: /
+Disallow: /api/
 
-# AI search & discovery crawlers (explicit allow signals intentional indexing)
-User-agent: GPTBot
-Allow: /
-
+# AI search and user-requested retrieval
 User-agent: OAI-SearchBot
 Allow: /
 
 User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# Model training / extended-use crawlers (intentional policy choice)
+User-agent: GPTBot
 Allow: /
 
 User-agent: ClaudeBot
@@ -17,25 +22,13 @@ Allow: /
 User-agent: Claude-Web
 Allow: /
 
-User-agent: PerplexityBot
-Allow: /
-
 User-agent: Google-Extended
 Allow: /
 
 User-agent: Applebot-Extended
 Allow: /
 
-User-agent: Bingbot
-Allow: /
-
-User-agent: YandexBot
-Allow: /
-
-# Disallow admin/draft paths
-User-agent: *
-Disallow: /api/
-Disallow: /_astro/
+# Search crawlers use the wildcard policy above; static assets remain crawlable.
 
 # Sitemap
 Sitemap: https://tupbebek.com/sitemap-index.xml

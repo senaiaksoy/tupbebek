@@ -2,7 +2,7 @@
 /**
  * EEATBadge — E-E-A-T Seffaflik Rozeti
  *
- * Makale basinda yazar kimligi, tibbi onay durumu, son guncelleme
+ * Makale basinda yazar kimligi, kayitli tibbi inceleme, son guncelleme
  * ve bilimsel referans sayisini gosteren guvenilirlik rozeti.
  *
  * Kullanim:
@@ -24,6 +24,7 @@ interface Props {
     authorYoutube?: string;
     medicalReviewer?: string;
     reviewerTitle?: string;
+    approvedBy?: string;
     reviewDate?: string;
     lastModified?: string;
     publishDate?: string;
@@ -39,15 +40,13 @@ const {
     authorYoutube,
     medicalReviewer,
     reviewerTitle,
+    approvedBy,
     reviewDate,
     lastModified,
     publishDate,
     status = 'published',
     referenceCount = 0,
 } = Astro.props;
-
-const effectiveReviewer = medicalReviewer || 'Doç. Dr. Senai Aksoy & Tıbbi Danışma Kurulu';
-const effectiveReviewerTitle = reviewerTitle || (medicalReviewer ? undefined : 'Üreme Tıbbı ve Jinekolojik Endoskopi Uzmanı');
 
 const normalizePerson = (value?: string) =>
     (value || '')
@@ -57,13 +56,16 @@ const normalizePerson = (value?: string) =>
         .toLocaleLowerCase('tr-TR');
 
 const isSameAuthorAndReviewer =
-    Boolean(effectiveReviewer) &&
-    normalizePerson(author) === normalizePerson(effectiveReviewer);
+    Boolean(medicalReviewer) &&
+    normalizePerson(author) === normalizePerson(medicalReviewer);
+const isReviewerAlsoApprover =
+    Boolean(medicalReviewer && approvedBy) &&
+    normalizePerson(medicalReviewer) === normalizePerson(approvedBy);
 
 const statusConfig = {
     draft: { label: 'Taslak', icon: 'edit_note', color: 'text-gray-600 bg-gray-100 border border-gray-200' },
     in_review: { label: 'İncelemede', icon: 'pending', color: 'text-amber-800 bg-amber-50 border border-amber-200' },
-    published: { label: 'Tıbbi Danışma Kurulu Onaylı', icon: 'verified', color: 'text-emerald-800 bg-emerald-50 border border-emerald-200/90' },
+    published: { label: 'Yayımlanmış içerik', icon: 'check_circle', color: 'text-emerald-800 bg-emerald-50 border border-emerald-200/90' },
 };
 
 const sc = statusConfig[status];
@@ -109,6 +111,7 @@ const sc = statusConfig[status];
                         )}
                     </div>
                     {authorTitle && <p class="text-xs text-gray-500 truncate">{authorTitle}</p>}
+                    {authorCredentials && <p class="text-[11px] text-gray-500 leading-relaxed">{authorCredentials}</p>}
                     {isSameAuthorAndReviewer && reviewDate && (
                         <p class="text-[11px] text-gray-500 mt-0.5">Gözden geçirme: {reviewDate}</p>
                     )}
@@ -116,7 +119,7 @@ const sc = statusConfig[status];
             </div>
         </div>
 
-        {!isSameAuthorAndReviewer && (
+        {medicalReviewer && !isSameAuthorAndReviewer && (
             <>
                 <!-- Divider -->
                 <div class="hidden sm:block w-px bg-gray-200"></div>
@@ -129,9 +132,11 @@ const sc = statusConfig[status];
                             <span class="material-symbols-outlined text-emerald-700 text-xl" style="font-variation-settings: 'FILL' 1;">verified</span>
                         </div>
                         <div class="min-w-0">
-                            <p class="text-[10px] uppercase tracking-wider text-gray-500 font-semibold mb-0.5">Tıbbi İnceleme & Onay</p>
-                            <p class="text-sm font-serif font-bold text-gray-900 truncate">{effectiveReviewer}</p>
-                            {effectiveReviewerTitle && <p class="text-xs text-gray-500 truncate">{effectiveReviewerTitle}</p>}
+                            <p class="text-[10px] uppercase tracking-wider text-gray-500 font-semibold mb-0.5">
+                                {isReviewerAlsoApprover ? 'Tıbbi inceleme ve onay' : 'Tıbbi inceleme'}
+                            </p>
+                            <p class="text-sm font-serif font-bold text-gray-900 truncate">{medicalReviewer}</p>
+                            {reviewerTitle && <p class="text-xs text-gray-500 truncate">{reviewerTitle}</p>}
                             {reviewDate && <p class="text-[11px] text-gray-500 mt-0.5">Son İnceleme: {reviewDate}</p>}
                         </div>
                     </div>
@@ -169,6 +174,13 @@ const sc = statusConfig[status];
             <span class="inline-flex items-center gap-1 text-primary-600 font-semibold">
                 <span class="material-symbols-outlined text-[14px]">science</span>
                 {referenceCount} Kaynak
+            </span>
+        )}
+
+        {approvedBy && !isReviewerAlsoApprover && (
+            <span class="inline-flex items-center gap-1 text-gray-500">
+                <span class="material-symbols-outlined text-[14px]">verified</span>
+                Onaylayan: {approvedBy}
             </span>
         )}
     </div>

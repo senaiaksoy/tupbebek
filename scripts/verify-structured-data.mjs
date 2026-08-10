@@ -137,8 +137,11 @@ function validateArticlePage(filePath, nodes) {
   }
 
   for (const article of articleNodes) {
-    if (!typeIncludes(article, 'MedicalWebPage')) {
-      failures.push(`${page} Article node is missing MedicalWebPage type.`);
+    if (typeIncludes(article, 'MedicalWebPage')) {
+      failures.push(`${page} Article node must not mix Article and MedicalWebPage types.`);
+    }
+    if (!article.mainEntityOfPage) {
+      failures.push(`${page} Article node is missing mainEntityOfPage.`);
     }
     if (typeof article.headline !== 'string' || article.headline.trim().length === 0) {
       failures.push(`${page} Article node is missing headline.`);
@@ -151,6 +154,17 @@ function validateArticlePage(filePath, nodes) {
     }
     if (!article.citation) {
       failures.push(`${page} Article node is missing citation.`);
+    }
+    const citations = article.citation
+      ? (Array.isArray(article.citation) ? article.citation : [article.citation])
+      : [];
+    for (const [index, citation] of citations.entries()) {
+      const label = `${page} citation #${index + 1}`;
+      const urls = [citation?.url, ...(Array.isArray(citation?.sameAs) ? citation.sameAs : [citation?.sameAs])]
+        .filter((value) => typeof value === 'string');
+      if (urls.some((value) => /pubmed\.ncbi\.nlm\.nih\.gov\/\?term=/iu.test(value))) {
+        failures.push(`${label} uses a PubMed search-result URL instead of a direct source.`);
+      }
     }
     if (article.image && !article.primaryImageOfPage) {
       failures.push(`${page} Article node has image but is missing primaryImageOfPage.`);
@@ -221,8 +235,8 @@ if (!fs.existsSync(distDir)) {
 
     stats.faqPages += faqPages.length;
 
-    if (faqPages.length > 1) {
-      failures.push(`${relative(filePath)} has multiple FAQPage nodes (${faqPages.length}).`);
+    if (isArticleDetail(filePath) && faqPages.length > 0) {
+      failures.push(`${relative(filePath)} emits deprecated template-level FAQPage JSON-LD.`);
     }
 
     for (const faqPage of faqPages) {

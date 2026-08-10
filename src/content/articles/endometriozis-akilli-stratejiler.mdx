@@ -2,19 +2,40 @@
 title: "Endometriozis ve Kısırlık: Tanı, Rezerv ve IVF Stratejileri"
 seoTitle: "Endometriozis ve Kısırlık: Tanı ve IVF"
 description: "Endometriozis gebe kalmayı nasıl etkiler? Ağrı, endometrioma, AMH, cerrahi ve tüp bebek kararını ESHRE/WHO kaynaklarıyla özetleyen rehber."
+summary: "Endometriozis gebe kalmayı zorlaştırabilir, fakat tanı tek başına kısırlık anlamına gelmez. Değerlendirme ultrason/MRI, ağrı, endometrioma, yaş, rezerv, tüpler ve sperm faktörünü birlikte ele alır; laparoskopi her hastada zorunlu ilk adım değildir. Cerrahi ile doğal gebelik veya IVF arasındaki sıra kişiye göre seçilir."
+summaryReferences:
+  - title: "WHO 2023: Endometriozis bilgi notu"
+    url: "https://www.who.int/news-room/fact-sheets/detail/endometriosis"
+  - title: "Zondervan 2020: Endometriozis derlemesi"
+    url: "https://pubmed.ncbi.nlm.nih.gov/32212520/"
+  - title: "ESHRE 2022: Endometriozis rehberi"
+    url: "https://pubmed.ncbi.nlm.nih.gov/35350465/"
+category: "Kadın Sağlığı"
+contentType: "portal_article"
+templateVersion: "2026-07"
+status: "published"
 publishDate: 2025-10-21
-author: "Doç. Dr. Senai Aksoy"
-authorTitle: "Kadın Hastalıkları ve Doğum Uzmanı"
-authorCredentials: "Üreme Tıbbı ve Yardımcı Üreme Teknikleri"
-authorYoutube: "https://www.youtube.com/@DocentDrSenaiAksoy"
+author:
+  name: "Doç. Dr. Senai Aksoy"
+  title: "Kadın Hastalıkları ve Doğum Uzmanı"
+  credentials: "Üreme Tıbbı ve Yardımcı Üreme Teknikleri"
+  url: "https://tupbebek.com/yazar/senai-aksoy/"
 medicalReviewer: "tupbebek.com Editöryal Ekip"
 reviewerTitle: "Tıbbi Yayın Ekibi"
-reviewDate: 2026-05-14
-lastModified: 2026-05-20
-category: "Kadın Sağlığı"
+reviewDate: 2026-08-10
+lastModified: 2026-08-10
 recommendationGrade: B
+evidenceAsOf: 2026-08-10
+reviewScope: "Endometriozis tanısında ultrason/MRI ve laparoskopinin seçilmiş kullanımı, ağrı ve infertilite ilişkisi, endometrioma ve yumurtalık rezervi, cerrahi–doğal gebelik–IVF sıralaması; WHO 2023, Zondervan 2020, ESHRE 2022, Nisenblat 2016 ve Hamdan 2015 kaynaklarıyla değerlendirildi."
+editorialMethodNote: "10 Ağustos 2026'da kaynak metadata’sı, laparoskopi ve endometrioma iddialarının kapsamı, görünür FAQ–şema ayrımı ve video bilgileri yeniden kontrol edildi; tanı ve IVF sonucuna ilişkin kesinlik dili yumuşatıldı."
 image: "/images/makaleler/endometriozis-akilli-stratejiler.webp"
 imageAlt: "Terrakota ipek gömlekli bir kadın, kitaplıklı bir çalışma odasında ayakta dururken endometriozis tedavi karar ağacının çizildiği bir kağıdı inceliyor; masada brass çalışma lambası, kayısı seramik kâsede iki klemantin ve deri ciltli tıp kitapları görülüyor."
+imageCaption: "Endometrioziste tedavi sırası ağrı, yaş, yumurtalık rezervi ve gebelik hedefi birlikte okunarak seçilir."
+imageCredit: "tupbebek.com Editöryal Ekip"
+imageSourceType: "ai-assisted"
+imageCreator: "tupbebek.com Editöryal Ekip"
+imageWidth: 1600
+imageHeight: 900
 references:
   - title: "Endometriosis"
     authors: "World Health Organization"
@@ -27,12 +48,14 @@ references:
     year: 2020
     doi: "10.1056/NEJMra1810764"
     pmid: "32212520"
+    url: "https://pubmed.ncbi.nlm.nih.gov/32212520/"
   - title: "ESHRE guideline: endometriosis"
     authors: "Becker CM, Bokor A, Heikinheimo O et al."
     journal: "Human Reproduction Open"
     year: 2022
     doi: "10.1093/hropen/hoac009"
     pmid: "35350465"
+    url: "https://pubmed.ncbi.nlm.nih.gov/35350465/"
   - title: "Combination of different types of tests for the non-invasive diagnosis of endometriosis"
     authors: "Nisenblat V, Prentice L, Bossuyt PMM et al."
     journal: "Cochrane Database of Systematic Reviews"
@@ -46,17 +69,15 @@ references:
     doi: "10.1093/humupd/dmv035"
     pmid: "26168799"
 videoId: "-FxkIwmlO9g"
-videoTitle: "Endometriozis ve Kısırlık: Tanı ve Tedavi Stratejileri"
+videoTitle: "Endometriozis ve Kısırlık: 2025 Yeni Tedavi Stratejileri"
+videoDescription: "Endometriozis ve endometriomanın gebelik planına etkisini, cerrahi ile IVF arasındaki karar başlıklarını ve yumurtalık rezervini koruma seçeneklerini ele alan video."
+videoUploadDate: 2025-11-04
+videoDuration: "PT13M46S"
 ---
-
-import HizliCevap from '../../components/HizliCevap.astro';
 import Accordion from "../../components/global/Accordion.astro";
 import MedicalInfoBox from '../../components/global/MedicalInfoBox.astro';
 import InlineEvidence from '../../components/InlineEvidence.astro';
 
-<HizliCevap question="Endometriozis kısırlık yapar mı?">
-Endometriozis, dünya genelinde üreme çağındaki kadınların yaklaşık %10'unu etkileyen kronik inflamatuar bir hastalıktır ([WHO 2023](https://www.who.int/news-room/fact-sheets/detail/endometriosis). Hastalığın klinik yönetimi ve tanısında ultrason veya MRI gibi cerrahi dışı yöntemler öncelikli olarak kullanılır ([Becker 2022](https://pubmed.ncbi.nlm.nih.gov/35350465/)), ancak kesin tanı veya şüpheli durumlarda altın standart laparoskopidir ([Nisenblat 2016](https://pubmed.ncbi.nlm.nih.gov/27405583/)). Endometriozisin yarattığı anatomik bozulmalar veya pelvik inflamasyon fertiliteyi olumsuz etkileyebilir ([Zondervan 2020](https://pubmed.ncbi.nlm.nih.gov/32212520/)), ancak çikolata kisti varlığı tüp bebek canlı doğum oranlarını tek başına düşürmez ([Hamdan 2015](https://pubmed.ncbi.nlm.nih.gov/26168799/)). Tedavi kararı; ağrı düzeyi, yaş ve yumurtalık rezervi dikkate alınarak kişiye özel planlanmalıdır.
-</HizliCevap>
 
 <div class="mesh-hero pt-12 pb-20 px-4 md:px-0 -mx-4 md:-mx-0 mb-12 rounded-3xl shadow-sm border border-white/40" style="background: linear-gradient(135deg, #fefce8 0%, #ecfeff 48%, #f5f3ff 100%);">
   <div class="max-w-4xl mx-auto" data-reveal>
@@ -71,7 +92,6 @@ Endometriozis, dünya genelinde üreme çağındaki kadınların yaklaşık %10'
     </p>
   </div>
 </div>
-
 <div class="max-w-4xl mx-auto space-y-12 blog-content-reveal">
 
 <div data-reveal>
@@ -91,12 +111,6 @@ Endometriozis kronik bir hastalıktır ve dünya genelinde üreme çağındaki k
 - [Doğal gebelik, cerrahi ve IVF sırası](#strateji)
 - [Gebelik ve takip](#gebelik)
 - [Sıkça sorulan sorular](#faq)
-
-<div data-reveal>
-  <a href="https://youtu.be/ciH_IHqVrxw" class="block rounded-3xl overflow-hidden shadow-lg border border-slate-200">
-    <img src="https://img.youtube.com/vi/ciH_IHqVrxw/0.jpg" alt="Endometriozis teşhisi ve doğurganlığa etkileri videosu" class="w-full" loading="lazy" />
-  </a>
-</div>
 
 <div data-reveal>
 <h2 id="tani">Endometriozis Nedir ve Tanı Neden Gecikebilir?</h2>
@@ -215,44 +229,3 @@ Bilateral endometrioma, düşük AMH/AFC, tekrarlayan kist cerrahisi öyküsü, 
 </div>
 
 </div>
-
-export const endometriosisStrategyFaqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Endometriozis kısırlık yapar mı?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Endometriozis bazı hastalarda gebe kalmayı zorlaştırabilir; ancak tanı tek başına kısırlık anlamına gelmez. Yaş, rezerv, tüpler, sperm analizi ve hastalığın yaygınlığı birlikte değerlendirilir."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Endometriozis tanısı için laparoskopi şart mı?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Her zaman şart değildir. Ultrason ve MR özellikle endometrioma ve derin endometriozis için yararlı olabilir. Laparoskopi kararı belirtiler, görüntüleme ve tedavi hedeflerine göre verilir."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Endometriozis tedavisi var mı?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Ağrı ve hastalık kontrolü için ilaç ve cerrahi seçenekler vardır. Gebelik hedefinde tedavi sırası yaş, rezerv, tüpler, sperm analizi ve hastalık yaygınlığına göre kişiselleştirilir."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Çikolata kisti varken hamile kalmak mümkün mü?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Bazı hastalarda mümkündür. Olasılık yaş, yumurtalık rezervi, tüplerin durumu, sperm analizi, ağrı düzeyi ve infertilite süresine göre değişir."
-      }
-    }
-  ]
-};
-
-<script type="application/ld+json" set:html={JSON.stringify(endometriosisStrategyFaqSchema)} />

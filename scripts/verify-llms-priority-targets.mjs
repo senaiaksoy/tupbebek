@@ -53,7 +53,7 @@ const requiredPermissionPaths = [
   '/basari-oranlari/',
   '/endometriozis-adenomyozis/',
 ];
-const priorityHeading = 'AI Overview Oncelikli Kaynaklar';
+const priorityHeading = 'Öne Çıkan Kanonik Rehberler';
 
 const failures = [];
 

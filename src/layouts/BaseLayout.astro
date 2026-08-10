@@ -20,6 +20,9 @@ interface Props {
 	image?: string;
 	/** Alt text for OG/Twitter image */
 	imageAlt?: string;
+	/** Build-time generated responsive variants for the visible hero image. */
+	imageSrcSet?: string;
+	imageSizes?: string;
 	/** og:image intrinsic dimensions — defaults match the actual default social image
 	 * (`/images/home/luxury-embryo.webp`, 1024×1024). Article pages override with their
 	 * own hero dimensions resolved from the build-time manifest. Lying about dimensions
@@ -28,6 +31,8 @@ interface Props {
 	imageHeight?: number;
 	/** og:type — defaults to "website", article pages should pass "article" */
 	ogType?: string;
+	/** Page schema type. MedicalWebPage is reserved for actual medical content. */
+	pageType?: 'WebPage' | 'MedicalWebPage';
 	canonical?: string;
 	noindex?: boolean;
 	robots?: string;
@@ -39,9 +44,12 @@ const {
 	description = "tupbebek.com | Üreme Sağlığı Bilgisi",
 	image,
 	imageAlt,
+	imageSrcSet,
+	imageSizes,
 	imageWidth,
 	imageHeight,
 	ogType = "website",
+	pageType = "WebPage",
 	canonical,
 	noindex = false,
 	robots,
@@ -72,7 +80,7 @@ const googleAdsConversionLabels = {
 	ebook_download: import.meta.env.PUBLIC_GOOGLE_ADS_CONVERSION_LABEL_EBOOK_DOWNLOAD || '',
 };
 
-// Sitewide @graph: Organization + WebSite + MedicalWebPage with stable @ids.
+// Sitewide @graph: Organization + WebSite + the page's truthful schema type.
 // Organization @id is the canonical publisher node that every Article, Person,
 // and WebPage on the site references. Don't rename without updating all schemas.
 const ORG_ID = 'https://tupbebek.com/#organization';
@@ -90,6 +98,7 @@ const siteGraph = {
       "name": "tupbebek.com",
       "alternateName": "tupbebek.com Yayın Kurulu",
       "url": "https://tupbebek.com/",
+      "sameAs": ["https://www.wikidata.org/entity/Q140982722"],
       "logo": {
         "@type": "ImageObject",
         "@id": LOGO_ID,
@@ -135,7 +144,7 @@ const siteGraph = {
       "inLanguage": "tr-TR"
     },
     {
-      "@type": "MedicalWebPage",
+      "@type": pageType,
       "@id": pageId,
       "name": title,
       "description": description,
@@ -143,16 +152,17 @@ const siteGraph = {
       "inLanguage": "tr-TR",
       "isPartOf": { "@id": WEBSITE_ID },
       "publisher": { "@id": ORG_ID },
-      "author": { "@id": ORG_ID },
-      "reviewedBy": { "@id": EDITORIAL_BOARD_ID },
-      "medicalAudience": {
-        "@type": "MedicalAudience",
-        "audienceType": "Patient"
-      },
-      "specialty": {
-        "@type": "MedicalSpecialty",
-        "name": "Üreme Sağlığı"
-      }
+      ...(ogType === 'article' ? { "mainEntity": { "@id": `${canonicalUrl}#article` } } : {}),
+      ...(pageType === 'MedicalWebPage' ? {
+        "medicalAudience": {
+          "@type": "MedicalAudience",
+          "audienceType": "Patient"
+        },
+        "specialty": {
+          "@type": "MedicalSpecialty",
+          "name": "Üreme Sağlığı"
+        }
+      } : {})
     }
   ]
 };
@@ -172,7 +182,16 @@ const siteGraph = {
 		<!-- LCP preload: hero image. Placed first so the browser discovers it before any
 		     other head resource (incl. analytics below). Pages MUST pass `image=` prop and
 		     the matching <img> must use fetchpriority="high". -->
-		{image && <link rel="preload" as="image" href={image} fetchpriority="high" />}
+		{image && (
+			<link
+				rel="preload"
+				as="image"
+				href={image}
+				imagesrcset={imageSrcSet}
+				imagesizes={imageSizes}
+				fetchpriority="high"
+			/>
+		)}
 
 		<!-- Preload critical local fonts (Latin subsets for body and headlines) -->
 		<link rel="preload" as="font" type="font/woff2" href="/fonts/manrope-latin.woff2" crossorigin />

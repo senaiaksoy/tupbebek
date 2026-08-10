@@ -1,92 +1,69 @@
 ---
 /**
- * TableOfContents — Healthline-style sticky sidebar TOC
- * Client-side JS ile <article> icerisindeki h2/h3'lerden otomatik TOC olusturur.
- * Scroll spy ile aktif baslik vurgulanir.
- * Artık fixed değil, sticky sidebar içinde çalışır.
+ * TableOfContents — build sirasinda makale H2 basliklarindan uretilen TOC.
+ *
+ * Linkler istemci JavaScript'i beklemeden HTML'de bulunur. Govdesinde kendi
+ * "Icındekiler" bolumu olan legacy makalelerde ikinci bir TOC uretilmez.
  */
+interface Heading {
+  depth: number;
+  slug: string;
+  text: string;
+}
+
+interface Props {
+  headings?: Heading[];
+  variant?: 'desktop' | 'mobile';
+}
+
+const { headings = [], variant = 'desktop' } = Astro.props;
+const normalizeHeading = (value: string) =>
+  value.normalize('NFKC').trim().toLocaleLowerCase('tr-TR');
+const hasManualToc = headings.some(
+  (heading) => heading.depth === 2 && normalizeHeading(heading.text) === 'içindekiler'
+);
+const tocHeadings = headings.filter(
+  (heading) => heading.depth === 2 && normalizeHeading(heading.text) !== 'içindekiler'
+);
+const shouldRender = !hasManualToc && tocHeadings.length >= 4;
 ---
 
-<nav id="toc-nav" class="hidden lg:block" aria-label="İçerik haritası">
+{shouldRender && variant === 'desktop' && (
+  <nav class="hidden lg:block" aria-label="İçindekiler">
     <div class="border-l-2 border-gray-200 pl-4">
-        <p class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-4">İçindekiler</p>
-        <ul id="toc-list" class="space-y-2">
-            <!-- JS ile doldurulur -->
-        </ul>
+      <p class="mb-4 text-xs font-bold uppercase tracking-widest text-gray-400">İçindekiler</p>
+      <ol class="space-y-2">
+        {tocHeadings.map((heading) => (
+          <li>
+            <a
+              href={`#${heading.slug}`}
+              class="block text-xs font-semibold leading-relaxed text-gray-600 transition-colors hover:text-primary-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
+            >
+              {heading.text}
+            </a>
+          </li>
+        ))}
+      </ol>
     </div>
-</nav>
+  </nav>
+)}
 
-<script is:inline>
-(function() {
-    var nav = document.getElementById('toc-nav');
-    var list = document.getElementById('toc-list');
-    var article = document.querySelector('article .prose-medical');
-    if (!nav || !list || !article) return;
-
-    // Yalnızca H2: gövde içi "İçindekiler" ve SSS H3'leri yan TOC'u şişirmesin.
-    var headings = Array.prototype.slice.call(article.querySelectorAll('h2')).filter(function(h) {
-        var label = (h.textContent || '').trim().toLocaleLowerCase('tr-TR');
-        return label && label !== 'içindekiler';
-    });
-    if (headings.length < 2) { nav.style.display = 'none'; return; }
-
-    // Build TOC items
-    var items = [];
-    headings.forEach(function(h, i) {
-        if (!h.id) {
-            h.id = 'heading-' + i;
-        }
-        var li = document.createElement('li');
-        var a = document.createElement('a');
-        a.href = '#' + h.id;
-        a.textContent = h.textContent;
-        a.className = 'block text-xs leading-relaxed transition-colors duration-200 hover:text-primary-600 text-gray-500 font-semibold';
-        a.dataset.tocTarget = h.id;
-
-        // Smooth scroll
-        a.addEventListener('click', function(e) {
-            e.preventDefault();
-            var target = document.getElementById(h.id);
-            if (target) {
-                var offset = 100;
-                var top = target.getBoundingClientRect().top + window.scrollY - offset;
-                window.scrollTo({ top: top, behavior: 'smooth' });
-                history.replaceState(null, '', '#' + h.id);
-            }
-        });
-
-        li.appendChild(a);
-        list.appendChild(li);
-        items.push({ el: h, link: a });
-    });
-
-    // Scroll spy
-    var ticking = false;
-    function onScroll() {
-        if (ticking) return;
-        ticking = true;
-        requestAnimationFrame(function() {
-            var scrollY = window.scrollY + 120;
-            var active = null;
-            for (var i = 0; i < items.length; i++) {
-                if (items[i].el.getBoundingClientRect().top + window.scrollY <= scrollY) {
-                    active = items[i];
-                }
-            }
-            items.forEach(function(item) {
-                if (item === active) {
-                    item.link.classList.remove('text-gray-500');
-                    item.link.classList.add('text-primary-600');
-                } else {
-                    item.link.classList.remove('text-primary-600');
-                    item.link.classList.add('text-gray-500');
-                }
-            });
-            ticking = false;
-        });
-    }
-
-    window.addEventListener('scroll', onScroll, { passive: true });
-    onScroll();
-})();
-</script>
+{shouldRender && variant === 'mobile' && (
+  <details class="mb-8 rounded-xl border border-gray-200 bg-white p-4 lg:hidden">
+    <summary class="min-h-[44px] cursor-pointer py-2 text-sm font-bold text-gray-800 marker:text-primary-600">
+      İçindekiler
+    </summary>
+    <ol class="mt-2 space-y-2 border-t border-gray-100 pt-3">
+      {tocHeadings.map((heading) => (
+        <li>
+          <a
+            href={`#${heading.slug}`}
+            class="block min-h-[44px] py-2 text-sm font-semibold leading-relaxed text-gray-600 hover:text-primary-700"
+          >
+            {heading.text}
+          </a>
+        </li>
+      ))}
+    </ol>
+  </details>
+)}

@@ -8,6 +8,7 @@ import path from 'node:path';
 import { execSync } from 'node:child_process';
 import remarkInlineEvidence from './src/utils/remarkInlineEvidence.mjs';
 import remarkMedicalCompliance from './src/utils/remarkMedicalCompliance.mjs';
+import remarkRemoveFaqSchema from './src/utils/remarkRemoveFaqSchema.mjs';
 
 function getArticleDates() {
   const articlesDir = path.resolve('./src/content/articles');
@@ -163,7 +164,7 @@ export default defineConfig({
   output: 'hybrid',
   trailingSlash: 'always',
   markdown: {
-    remarkPlugins: [remarkMedicalCompliance, remarkInlineEvidence],
+    remarkPlugins: [remarkMedicalCompliance, remarkRemoveFaqSchema, remarkInlineEvidence],
   },
   adapter: cloudflare({
     platformProxy: { enabled: true },

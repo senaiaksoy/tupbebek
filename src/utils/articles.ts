@@ -6,17 +6,14 @@ let publishedArticlesPromise: Promise<CollectionEntry<'articles'>[]> | null = nu
 
 /**
  * Yayinlanmis makaleleri dondurur.
- * status === 'published' veya status tanimlanmamis (geriye uyumluluk) makaleleri getirir.
+ * Yalnizca status === 'published' makaleleri getirir.
  * Draft ve in_review makaleleri filtrelenir.
  * Sonuç modül düzeyinde önbelleklenir (RelatedArticles vb. çoklu çağrılar için).
  */
 export async function getPublishedArticles() {
   if (!publishedArticlesPromise) {
     publishedArticlesPromise = getCollection('articles').then(articles =>
-      articles.filter(entry => {
-        const status = entry.data.status;
-        return !status || status === 'published';
-      })
+      articles.filter(entry => entry.data.status === 'published')
     );
   }
   return publishedArticlesPromise;

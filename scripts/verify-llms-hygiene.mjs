@@ -35,14 +35,16 @@ function normalizePathname(value) {
 }
 
 function sourceMatches(sourcePattern, pathname) {
-  const source = normalizePathname(sourcePattern.replace(/\*$/u, ''));
-  if (!source) return false;
-
   if (sourcePattern.endsWith('*')) {
+    const source = normalizePathname(sourcePattern.replace(/\*$/u, ''));
+    if (!source) return false;
     return pathname.startsWith(source);
   }
 
-  return pathname === source;
+  // Exact redirect sources preserve their trailing-slash semantics. A rule for
+  // `/path` must not mark the canonical `/path/` URL as redirected.
+  const exactSource = sourcePattern.replace(/^https:\/\/tupbebek\.com/iu, '');
+  return pathname === exactSource;
 }
 
 function extractTupbebekUrls(source) {

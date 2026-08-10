@@ -1,4 +1,5 @@
 import imageDimensions from '../data/imageDimensions.json';
+import imageVariants from '../data/imageVariants.json';
 
 /**
  * Hero görsel boyut çözümleyici.
@@ -16,15 +17,32 @@ interface ImageDimensions {
   height: number;
 }
 
+export interface ResponsiveImageVariant extends ImageDimensions {
+  src: string;
+}
+
 const DEFAULT_FALLBACK: ImageDimensions = { width: 1600, height: 900 };
 
 const manifest: Record<string, ImageDimensions> = imageDimensions as Record<string, ImageDimensions>;
+const responsiveManifest: Record<string, ResponsiveImageVariant[]> =
+  imageVariants as Record<string, ResponsiveImageVariant[]>;
 
 export function getImageDimensions(imagePath: string | undefined): ImageDimensions | null {
   if (!imagePath) return null;
   if (/^https?:\/\//i.test(imagePath)) return null;
   const cleanPath = imagePath.split(',')[0].trim();
   return manifest[cleanPath] ?? null;
+}
+
+export function getResponsiveImageVariants(imagePath: string | undefined): ResponsiveImageVariant[] {
+  if (!imagePath || /^https?:\/\//i.test(imagePath)) return [];
+  return responsiveManifest[imagePath] ?? [];
+}
+
+export function getResponsiveImageSrcSet(imagePath: string | undefined): string | undefined {
+  const variants = getResponsiveImageVariants(imagePath);
+  if (variants.length === 0) return undefined;
+  return variants.map((variant) => `${variant.src} ${variant.width}w`).join(', ');
 }
 
 /**

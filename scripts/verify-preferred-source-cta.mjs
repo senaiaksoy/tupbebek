@@ -73,16 +73,10 @@ const checks = [
     pass: !forbiddenClaims.some((claim) => componentLower.includes(claim)),
   },
   {
-    name: 'Article template imports the CTA component',
-    pass: articleTemplate.includes("import PreferredSourceCTA from '../../components/PreferredSourceCTA.astro';"),
-  },
-  {
-    name: 'Article template renders the CTA after share buttons with article metadata',
+    name: 'Article template stays focused on medical content without a repeated Google CTA',
     pass:
-      articleTemplate.includes('<PreferredSourceCTA') &&
-      articleTemplate.includes('placement="article_end"') &&
-      articleTemplate.includes('pagePath={Astro.url.pathname}') &&
-      articleTemplate.includes('articleSlug={entry.slug}'),
+      !articleTemplate.includes("import PreferredSourceCTA from '../../components/PreferredSourceCTA.astro';") &&
+      !articleTemplate.includes('<PreferredSourceCTA'),
   },
   {
     name: 'Home page renders the CTA near the footer',

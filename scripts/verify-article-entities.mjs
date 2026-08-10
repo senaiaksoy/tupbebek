@@ -47,7 +47,7 @@ const expectations = [
   },
   {
     route: 'makaleler/yasa-gore-tup-bebek-basari-oranlari/index.html',
-    type: 'MedicalWebPage',
+    type: 'Thing',
     name: 'T\u00fcp bebek ba\u015far\u0131 oranlar\u0131',
     sameAsIncludes: 'Q3229606',
   },

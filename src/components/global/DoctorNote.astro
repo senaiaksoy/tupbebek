@@ -1,83 +1,55 @@
 ---
 /**
- * DoctorNote — Doç. Dr. Senai Aksoy Hekim İmzalı Klinik Not Bileşeni
+ * DoctorNote — konuya ozel, imzali uzman katkisi.
  *
- * YMYL ve E-E-A-T uyumlu, sıcak fildişi kağıt zeminli,
- * 1. tekil şahıs klinik tecrübe ve hekim tavsiyesi kutusu.
+ * Bilesen yalnizca frontmatter'da gercek bir uzman katkisi tanimlandiginda
+ * render edilir. Genel klinik deneyim veya kurum baglantisi uretmez.
  */
 interface Props {
   title?: string;
   note: string;
   topic?: string;
+  author: string;
+  authorTitle?: string;
+  authorUrl?: string;
 }
 
 const {
-  title = "Doç. Dr. Senai Aksoy'un Klinik Gözlemi",
+  title = 'Uzman katkısı',
   note,
-  topic
+  topic,
+  author,
+  authorTitle,
+  authorUrl,
 } = Astro.props;
 ---
 
-<div class="my-8 rounded-xl bg-[#fcfaf5] border border-amber-200/80 p-5 md:p-6 shadow-2xs relative overflow-hidden">
-  <!-- Decorative quote symbol placed safely in top right -->
-  <span class="absolute top-2 right-4 text-6xl font-serif text-amber-900/10 select-none pointer-events-none z-0">“</span>
-
-  <div class="flex flex-col sm:flex-row items-start gap-4 relative z-10">
-    <!-- Doctor Avatar / Signature Badge -->
-    <div class="flex items-center gap-3 shrink-0">
-      <div class="w-12 h-12 rounded-full overflow-hidden border-2 border-primary-600/40 bg-white shadow-xs shrink-0">
-        <img
-          src="/images/senai-aksoy.webp"
-          alt="Doç. Dr. Senai Aksoy"
-          class="w-full h-full object-cover"
-          width="48"
-          height="48"
-          loading="lazy"
-        />
-      </div>
-      <div class="sm:hidden">
-        <p class="text-sm font-bold text-gray-900 font-serif">{title}</p>
-        <p class="text-[11px] text-primary-700 font-medium">Kadın Hastalıkları ve Doğum Uzmanı</p>
-      </div>
-    </div>
-
-    <!-- Note Content -->
-    <div class="flex-1 min-w-0">
-      <div class="hidden sm:flex items-center justify-between gap-2 mb-2">
-        <div>
-          <p class="text-base font-bold text-gray-900 font-serif flex items-center gap-2">
-            <span>{title}</span>
-            {topic && (
-              <span class="text-xs font-sans font-semibold px-2 py-0.5 rounded bg-primary-50 text-primary-700 border border-primary-100">
-                {topic}
-              </span>
-            )}
-          </p>
-          <p class="text-xs text-primary-800 font-medium">Doç. Dr. Senai Aksoy • Üreme Tıbbı Uzmanı</p>
-        </div>
-        <span class="inline-flex items-center gap-1 text-[11px] font-bold text-emerald-800 bg-emerald-50 border border-emerald-200/70 px-2.5 py-1 rounded-full shrink-0">
-          <span class="material-symbols-outlined text-xs">verified</span>
-          Klinik Tecrübe
-        </span>
-      </div>
-
-      <p class="text-sm sm:text-base text-gray-700 leading-relaxed font-sans italic border-l-2 border-amber-500/60 pl-3.5 my-2">
-        "{note}"
-      </p>
-
-      <div class="flex items-center justify-between pt-3 border-t border-amber-200/50 text-xs text-gray-500 font-sans">
-        <span class="flex items-center gap-1.5 text-gray-600">
-          <span class="material-symbols-outlined text-amber-600 text-sm">edit_note</span>
-          Lotus Nişantaşı Klinik Notları
-        </span>
-        <a
-          href="/yazar/senai-aksoy"
-          class="font-semibold text-primary-700 hover:text-primary-800 underline underline-offset-2 flex items-center gap-1 shrink-0"
-        >
-          Hekim Özgeçmişi
-          <span class="material-symbols-outlined text-xs">arrow_forward</span>
-        </a>
-      </div>
-    </div>
+<aside class="my-10 rounded-xl border border-amber-200/80 bg-[#fcfaf5] p-5 shadow-2xs md:p-6" aria-label={title}>
+  <div class="mb-3 flex flex-wrap items-center gap-2">
+    <span class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-amber-800">
+      <span class="material-symbols-outlined text-base" aria-hidden="true">edit_note</span>
+      {title}
+    </span>
+    {topic && (
+      <span class="rounded border border-primary-100 bg-primary-50 px-2 py-0.5 text-xs font-semibold text-primary-700">
+        {topic}
+      </span>
+    )}
   </div>
-</div>
+
+  <blockquote class="m-0 border-l-2 border-amber-500/60 pl-4 text-sm leading-relaxed text-gray-700 md:text-base">
+    <p class="m-0">{note}</p>
+  </blockquote>
+
+  <footer class="mt-4 border-t border-amber-200/60 pt-3 text-xs text-gray-600">
+    <span>İmzalayan: </span>
+    {authorUrl ? (
+      <a href={authorUrl} class="font-semibold text-primary-700 underline underline-offset-2 hover:text-primary-800">
+        {author}
+      </a>
+    ) : (
+      <strong class="font-semibold text-gray-800">{author}</strong>
+    )}
+    {authorTitle && <span> · {authorTitle}</span>}
+  </footer>
+</aside>

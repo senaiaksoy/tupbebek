@@ -3,7 +3,7 @@ title: "EmbryoScope ve Yapay Zeka Destekli Embriyo Seçimi: Kanıtlar"
 seoTitle: "EmbryoScope ve Yapay Zeka Destekli Seçim"
 description: "EmbryoScope nedir, time-lapse embriyo izleme ve yapay zeka destekli seçim IVF sonucunu nasıl etkiler? Kanıt düzeyi, kimlerde düşünülebilir ve sınırlar."
 publishDate: 2026-04-12
-lastModified: 2026-06-01
+lastModified: 2026-08-10
 category: "Tüp Bebek"
 recommendationGrade: C
 status: "published"
@@ -11,6 +11,11 @@ author: "Doç. Dr. Senai Aksoy"
 authorTitle: "Kadın Hastalıkları, Doğum ve Üreme Tıbbı Uzmanı"
 authorCredentials: "Üreme Tıbbı ve Yardımcı Üreme Teknikleri"
 authorYoutube: "https://www.youtube.com/@DocentDrSenaiAksoy"
+videoId: "8Dx-f4ea6h4"
+videoTitle: "Embriyoskop ve Yapay Zeka: Tüp Bebekte Ne Değişti?"
+videoUploadDate: 2026-01-19
+videoDescription: "EmbryoScope, time-lapse görüntüleme ve yapay zeka destekli embriyo seçiminin tüp bebekteki rolünü anlatan video."
+videoDuration: "PT7M58S"
 medicalReviewer: "tupbebek.com Editöryal Ekip"
 reviewerTitle: "Tıbbi Yayın Ekibi"
 reviewDate: 2026-05-14
@@ -43,7 +48,7 @@ references:
     journal: "Human Reproduction Open"
     year: 2023
     doi: "10.1093/hropen/hoad031"
-    url: "https://pubmed.ncbi.nlm.nih.gov/37520448/"
+    url: "https://pubmed.ncbi.nlm.nih.gov/37588797/"
     pmid: "37588797"
   - title: "Deep learning versus manual morphology-based embryo selection in IVF: a randomized, double-blind noninferiority trial"
     authors: "Illingworth PJ, et al."
@@ -67,45 +72,47 @@ import InlineEvidence from '../../components/InlineEvidence.astro';
 import EvidenceGradeCard from '../../components/EvidenceGradeCard.astro';
 
 <HizliCevap question="EmbryoScope nedir ve tüp bebek başarısını artırır mı?">
-EmbryoScope, embriyoları inkübatörden çıkarmadan aralıklı görüntüleyen time-lapse embriyo izleme sistemidir. ESHRE iyi uygulama önerilerinde ([ESHRE 2020](https://pubmed.ncbi.nlm.nih.gov/32206731/)) belirtildiği gibi embriyologlara gelişim zamanlaması hakkında stabil kültür ortamı ve veri sağlar. Ancak [Cochrane 2019](https://pubmed.ncbi.nlm.nih.gov/31140578/) derlemesi ve geniş ölçekli TILT RCT çalışmasında ([Lancet 2024](https://pubmed.ncbi.nlm.nih.gov/39033010/)) gösterildiği üzere, her hasta grubunda canlı doğumu tek başına belirgin artırdığına dair kanıtlar sınırlıdır. Yapay zeka destekli embriyo seçimi ise yararlı bir karar desteğidir ([Nature Medicine 2024](https://pubmed.ncbi.nlm.nih.gov/39122964/)); fakat embriyonun genetik olarak normal (euploid) olduğunu tek başına göstermez ([Zhang 2024](https://pubmed.ncbi.nlm.nih.gov/39513188/)).
+EmbryoScope, embriyoları inkübatörden çıkarmadan belirli aralıklarla görüntüleyen time-lapse sistemidir. ESHRE'nin iyi uygulama önerileri ([ESHRE 2020](https://pubmed.ncbi.nlm.nih.gov/32206731/)) bu sistemlerin embriyo gelişimini izlemeye ve embriyoloğa ek bilgi sunmaya yardımcı olabileceğini belirtir. [Cochrane 2019](https://pubmed.ncbi.nlm.nih.gov/31140578/) derlemesi klinik faydanın belirsiz kaldığını, [TILT randomize çalışması](https://pubmed.ncbi.nlm.nih.gov/39033010/) ise time-lapse kullanımının standarda göre canlı doğumu anlamlı olarak artırmadığını gösterdi. Yapay zeka destekli embriyo seçimi, embriyoloğa ek bir karar desteği olarak araştırılmaktadır ([Salih ve ark. 2023](https://pubmed.ncbi.nlm.nih.gov/37588797/)); embriyonun kromozomlarının normal olduğunu tek başına kanıtlamaz ([Zhang 2024](https://pubmed.ncbi.nlm.nih.gov/39513188/)).
 </HizliCevap>
 
 ## EmbryoScope Nedir?
 
-EmbryoScope, embriyoların kültür ortamından çıkarılmadan belirli aralıklarla fotoğraflanmasını ve gelişimlerinin video benzeri kayıtla izlenmesini sağlar. Bu yaklaşım “time-lapse” olarak adlandırılır. Geleneksel değerlendirme belirli zaman noktalarındaki mikroskop görüntüsüne dayanırken, time-lapse gelişim dinamiğini de gösterir. <InlineEvidence grade="C" />
+EmbryoScope, embriyoların kültür ortamından çıkarılmadan belirli aralıklarla görüntülenmesini sağlar. Bu görüntüler birleştirildiğinde gelişim, video benzeri bir akış içinde izlenebilir. Bu yaklaşıma “time-lapse” denir. Klasik değerlendirme belirli zamanlardaki görüntülere dayanır; time-lapse ise gelişimin zaman içindeki seyrine ek bilgi sunar. Bu bilgi, embriyolog değerlendirmesinin yerini almaz. <InlineEvidence grade="C" />
 
 ## Sık Aranan EmbryoScope Soruları
 
 | Aranan soru | Kısa cevap |
 | :--- | :--- |
 | **EmbryoScope nedir?** | Embriyoları inkübatörden çıkarmadan zaman aralıklı görüntüleyen embriyo takip sistemidir. |
-| **EmbryoScope yapay zeka ile aynı şey mi?** | Hayır. EmbryoScope görüntüleme sistemidir; yapay zeka bu görüntüleri yorumlayan karar destek algoritmaları için kullanılır. |
-| **EmbryoScope başarıyı artırır mı?** | Bazı alt gruplarda yarar sinyali olabilir; genel hasta grubunda kesin başarı artırıcı yöntem gibi sunulmamalıdır. |
+| **EmbryoScope yapay zeka ile aynı şey mi?** | Hayır. EmbryoScope görüntüleme sistemidir; yapay zeka ise görüntüleri ve diğer verileri yorumlayan karar destek algoritmaları için kullanılabilir. |
+| **EmbryoScope başarıyı artırır mı?** | Yöntem her hasta için başarıyı artıran bir seçenek olarak sunulmamalıdır. TILT randomize çalışmasında time-lapse kullanımı standarda göre canlı doğumu anlamlı olarak artırmadı. |
 | **PGT yerine geçer mi?** | Hayır. Görüntüleme embriyo gelişimini izler; kromozom yapısını doğrudan göstermez. |
 
 ## Yapay Zeka Embriyo Seçiminde Ne Yapar?
 
-Yapay zeka algoritmaları, embriyo bölünme zamanları, hücre sayısı, fragmentasyon ve morfokinetik örüntüler gibi verileri analiz ederek embriyologlara destek sağlayabilir. Bu sistemler insan değerlendirmesinin yerine geçen bağımsız tanı araçları değil, karar destek araçlarıdır.
+Kullanılan modele göre yapay zeka; embriyo bölünme zamanları, hücre sayısı, fragmentasyon ve morfokinetik (gelişim zamanlamasına ait) örüntüler gibi verileri analiz edebilir. Bazı modeller görüntüleri, bazıları ise görüntü ve klinik bilgileri birlikte değerlendirir. Amaç, embriyoloğun kararına ek bir sıralama veya tahmin sunmaktır. Bu sistemler embriyolog değerlendirmesinin yerine geçen bağımsız tanı araçları değildir; karar destek araçlarıdır.
 
 <figure class="my-8">
   <img src="/images/makaleler/embryoscope-yapay-zeka-akis.webp" alt="Time-lapse görüntüleme ve yapay zeka destekli embriyo seçimi 4 aşama akışı: zaman aralıklı görüntüleme, morfokinetik veriler, yapay zeka analizi, embriyolog kararı" width="1200" height="675" loading="lazy" class="rounded-2xl border border-slate-200" />
-  <figcaption class="text-sm text-slate-600 mt-3 text-center italic">Time-lapse sistemleri embriyoların sürekli gelişim verisini toplar; yapay zeka bu veriyi yorumlamada embriyologa karar destek aracı olarak yardım eder.</figcaption>
+  <figcaption class="text-sm text-slate-600 mt-3 text-center italic">Time-lapse sistemleri embriyo gelişimi hakkında daha fazla veri toplayabilir; yapay zeka bu veriyi yorumlarken embriyologa ek bir karar desteği sunabilir.</figcaption>
 </figure>
 
 ## Kanıtların Sınırı
 
-Time-lapse sistemlerinin embriyo kültürünü daha stabil tutma ve gelişim verisini artırma gibi teorik avantajları vardır. Buna karşın asıl klinik soru canlı doğumdur. Mevcut kanıtlar her hastada belirgin canlı doğum artışı göstermediği için, yöntem “herkese gerekli” ya da “sonucu kesinleştirir” şeklinde anlatılmamalıdır. <InlineEvidence grade="C" />
+Time-lapse sistemlerinin embriyoyu daha az rahatsız ederek kültür koşullarını koruma ve gelişim verisini artırma gibi olası avantajları vardır. Bunlar yöntemin çalışma mantığıyla ilgili avantajlardır; asıl klinik soru ise canlı doğumdur. Mevcut kanıtlar her hastada belirgin canlı doğum artışı göstermiyor. Bu nedenle yöntem “herkese gerekli” veya “sonucu kesinleştirir” diye anlatılmamalıdır. <InlineEvidence grade="C" />
 
-## Kimlerde Daha Anlamlı Tartışılır?
+## Hangi Durumlarda Konuşulabilir?
 
-- Birden fazla embriyo arasında seçim yapılması gereken olgular
-- Önceki döngülerde embriyo gelişimi hakkında daha ayrıntılı bilgi istenen durumlar
-- Laboratuvarın time-lapse kültür protokolünü standart kalite sürecinin parçası olarak kullanması
-- PGT yapılmayan ama embriyo gelişim dinamiğiyle seçim desteği istenen döngüler
+Bu teknoloji için herkese uyan tek bir endikasyon yoktur. Karar; embriyo sayısı, laboratuvarın çalışma sistemi, önceki döngülerden elde edilen bilgiler ve klinik hedef birlikte değerlendirilerek verilir.
+
+- Birden fazla embriyo arasında seçim yapılması gereken durumlar
+- Önceki döngülerde embriyo gelişimi hakkında daha ayrıntılı bilgiye ihtiyaç duyulması
+- Laboratuvarın time-lapse kültür protokolünü kendi kalite sürecinin parçası olarak kullanması
+- PGT uygulanmayan bir döngüde embriyo gelişim dinamiğinin seçime ek bilgi sağlayıp sağlayamayacağının tartışılması
 
 <figure class="my-8">
-  <img src="/images/makaleler/embryoscope-zaman-okuma-ani.webp" alt="Mustard ochre hırkalı kadın sakin bir masada zaman-aralıklı embriyo gelişim frame'lerini gösteren basılı kontakt sayfasını okuyarak veri ve klinik bağlamı birleştiriyor" width="1200" height="675" loading="lazy" class="rounded-2xl border border-slate-200" />
-  <figcaption class="text-sm text-slate-600 mt-3 text-center italic">Time-lapse + AI çıktısı hasta için de paylaşılabilir bir veri haline gelir; ancak bu veri, embriyologun yorumu ve klinik bağlamla birlikte anlam kazanır.</figcaption>
+  <img src="/images/makaleler/embryoscope-zaman-okuma-ani.webp" alt="Hardal sarısı hırka giyen bir kadın, zaman aralıklı embriyo gelişim görüntülerini içeren basılı bir sayfayı inceliyor" width="1200" height="675" loading="lazy" class="rounded-2xl border border-slate-200" />
+  <figcaption class="text-sm text-slate-600 mt-3 text-center italic">Time-lapse ve yapay zeka çıktıları ek bilgi sunabilir; ancak anlamları embriyoloğun yorumu ve klinik bağlamla birlikte değerlendirilir.</figcaption>
 </figure>
 
 <EvidenceGradeCard grade={frontmatter.recommendationGrade} />
@@ -113,19 +120,19 @@ Time-lapse sistemlerinin embriyo kültürünü daha stabil tutma ve gelişim ver
 ## Sıkça Sorulan Sorular
 
 <Accordion title="EmbryoScope PGT yerine geçer mi?">
-Hayır. EmbryoScope embriyonun gelişimini görüntüler; kromozom sayısını veya genetik hastalık durumunu doğrudan göstermez.
+Hayır. EmbryoScope embriyonun gelişimini görüntüler; kromozom sayısını veya belirli genetik hastalıkları doğrudan ölçmez.
 </Accordion>
 
 <Accordion title="Yapay zeka embriyoyu kesin seçer mi?">
-Hayır. Yapay zeka karar destek aracıdır. Embriyolog değerlendirmesi, klinik bilgiler ve gerektiğinde genetik testlerle birlikte yorumlanır.
+Hayır. Yapay zeka bir karar destek aracıdır. Sonuç, embriyolog değerlendirmesi ve klinik bilgilerle birlikte yorumlanır. Gerekli görülen durumlarda genetik testler ayrıca değerlendirilir.
 </Accordion>
 
 <Accordion title="EmbryoScope herkese gerekli mi?">
-Hayır. Her hasta için zorunlu değildir. Laboratuvar protokolü, embriyo sayısı, önceki tedavi öyküsü ve klinik hedefe göre tartışılır.
+Hayır. Her hasta için zorunlu değildir. Embriyo sayısı, laboratuvar protokolü, önceki tedavi öyküsü ve klinik hedefe göre konuşulur.
 </Accordion>
 
 <Accordion title="EmbryoScope embriyoya zarar verir mi?">
-Amaç embriyoyu inkübatörden daha az çıkararak ortam değişimini azaltmaktır. Güvenlik ve fayda laboratuvar protokolüyle birlikte değerlendirilmelidir.
+Time-lapse sistemleri, görüntüleme sırasında embriyoyu inkübatörden çıkarmadan izleme olanağı sunar. Böylece kültür koşullarının daha az değişmesi hedeflenir. Yine de güvenlik ve klinik fayda, cihaz adından bağımsız olarak laboratuvar protokolü ve kalite süreçleriyle birlikte değerlendirilmelidir.
 </Accordion>
 
 ## Tıbbi Uyarı
@@ -149,7 +156,7 @@ export const embryoScopeFaqSchema = {
       "name": "EmbryoScope PGT yerine geçer mi?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Hayır. EmbryoScope embriyonun gelişimini görüntüler; kromozom sayısını veya genetik hastalık durumunu doğrudan göstermez."
+        "text": "Hayır. EmbryoScope embriyonun gelişimini görüntüler; kromozom sayısını veya belirli genetik hastalıkları doğrudan ölçmez."
       }
     },
     {
@@ -157,7 +164,7 @@ export const embryoScopeFaqSchema = {
       "name": "Yapay zeka embriyoyu kesin seçer mi?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Hayır. Yapay zeka karar destek aracıdır. Embriyolog değerlendirmesi, klinik bilgiler ve gerektiğinde genetik testlerle birlikte yorumlanır."
+        "text": "Hayır. Yapay zeka bir karar destek aracıdır. Sonuç, embriyolog değerlendirmesi ve klinik bilgilerle birlikte yorumlanır. Gerekli görülen durumlarda genetik testler ayrıca değerlendirilir."
       }
     }
   ]

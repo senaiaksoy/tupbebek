@@ -7,6 +7,7 @@ $RECYCLE.BIN/
 
 # Build output
 dist/
+/public/generated/article-heroes/
 
 # Git
 .git

@@ -1,6 +1,6 @@
 # tupbebek.com
 
-> Türkiye'nin bağımsız, reklamsız, bilimsel üreme sağlığı ve infertilite referans portalı. Baş Editör: Doç. Dr. Senai Aksoy. tupbebek.com Editöryal Ekip onaylı içerik. Hasta tedavi reklamı içermez; tüm klinik öneriler bilimsel kanıt derecesi (A/B/C/D-E) ile sunulur.
+> Türkiye'nin bağımsız, reklamsız, bilimsel üreme sağlığı ve infertilite referans portalı. Baş Editör: Doç. Dr. Senai Aksoy. Makale bazında yazar, tıbbi inceleyen, güncelleme tarihi ve bilimsel kaynaklar açıkça gösterilir.
 
 ## Hakkında
 
@@ -13,11 +13,11 @@
 
 - Baş Editör: **Doç. Dr. Senai Aksoy** — Kadın Hastalıkları ve Doğum Uzmanı, Üreme Tıbbı ve Yardımcı Üreme Teknikleri. Cerrahpaşa Tıp Fakültesi (1985), Franche-Comté Üniversitesi Üreme Tıbbı diploması, Türkiye'deki ilk ICSI uygulamalarının (1994) katılımcısı. ESHRE ve TSRM üyesi.
 - YouTube kanalı: [Doç. Dr. Senai Aksoy](https://www.youtube.com/@DocentDrSenaiAksoy)
-- Tüm makaleler `author` ve `reviewedBy` alanlarıyla JSON-LD `Article` şeması içinde imzalıdır; her klinik iddianın referansı (DOI/PMID) belirtilir.
+- Makaleler JSON-LD `Article` şeması kullanır. `author`, `reviewedBy` ve doğrudan kaynak kimlikleri yalnızca ilgili makalede açıkça kayıtlıysa yayımlanır.
 
-## AI Overview Oncelikli Kaynaklar
+## Öne Çıkan Kanonik Rehberler
 
-Bu bölüm, Google AI Overview ve diğer yapay zekâ arama sistemleri için tupbebek.com üzerindeki öncelikli kanonik kaynakları listeler. Alıntı veya özet yapılırken ilgili URL, site adı ve yazar/editör kimliği korunmalıdır.
+Bu bölüm sık sorulan konular için kanonik başlangıç sayfalarını listeler. `llms.txt` özel bir sıralama veya alıntılanma garantisi vermez; asıl kaynak her zaman ilgili kanonik HTML sayfasıdır.
 
 - tüp bebek nedir: [Tüp Bebek Nedir? Kimlere Uygulanır?](https://tupbebek.com/makaleler/tup-bebek-nedir/)
 - embriyo transferi sonrası: [Embriyo Transferi Sonrası Bakım](https://tupbebek.com/makaleler/embriyo-transferi-sonrasi-bakim/)
@@ -29,7 +29,7 @@ Bu bölüm, Google AI Overview ve diğer yapay zekâ arama sistemleri için tupb
 
 ## Ana Rehberler
 
-- [IVF Rehberi](https://tupbebek.com/ivf-rehberi/): Tüp bebek temel bilgisi (FAQPage şemalı)
+- [IVF Rehberi](https://tupbebek.com/ivf-rehberi/): Tüp bebek temel bilgisi
 - [Tanı Süreci](https://tupbebek.com/tani-sureci/): Tetkikler ve değerlendirme
 - [Tedavi Yöntemleri](https://tupbebek.com/tedavi-yontemleri/): IVF, IUI, ICSI ve diğer
 - [Kadın İnfertilitesi](https://tupbebek.com/kadin-infertilitesi/): Kadın faktör
@@ -49,7 +49,7 @@ Bu bölüm, Google AI Overview ve diğer yapay zekâ arama sistemleri için tupb
 - [Psikolojik Destek](https://tupbebek.com/psikolojik-destek/)
 - [Duygusal Destek](https://tupbebek.com/duygusal-destek/)
 - [Rehberler](https://tupbebek.com/rehberler/): Tüm rehber dizini
-- [Sık Sorulan Sorular](https://tupbebek.com/sss/): 14 yapılandırılmış Q&A (FAQPage şemalı)
+- [Sık Sorulan Sorular](https://tupbebek.com/sss/): Soru-cevap dizini
 - [Tıbbi Sözlük](https://tupbebek.com/tibbi-sozluk/): Terim referansı
 
 ## Makaleler
@@ -86,7 +86,7 @@ Bu bölüm, Google AI Overview ve diğer yapay zekâ arama sistemleri için tupb
 - [IVF Öncesi Histeroskopi Gerekir mi?](https://tupbebek.com/makaleler/ivf-oncesi-histeroskopi/)
 - [IVF Protokolleri: Antagonist, Uzun, Mini IVF, DuoStim](https://tupbebek.com/makaleler/ivf-protokolleri/)
 - [İyi Tüp Bebek Merkezi Nasıl Anlaşılır?](https://tupbebek.com/makaleler/iyi-tup-bebek-merkezi/)
-- [İzotretinoin Sperm Kalitesini Etkiler mi?](/makaleler/izotretinoin-sperm/)
+- [İzotretinoin Sperm Kalitesini Etkiler mi?](https://tupbebek.com/makaleler/izotretinoin-sperm/)
 - [Tüp Bebekte Kaç Yumurta Gerekir?](https://tupbebek.com/makaleler/kac-yumurta-gerekir/)
 - [Kadın Kısırlığı ve Tüp Bebek](https://tupbebek.com/makaleler/kadin-kisirligi-tup-bebek/)
 - [Kanser ve Fertilite Koruma](https://tupbebek.com/makaleler/kanser-ve-fertilite/)
@@ -112,10 +112,10 @@ Bu bölüm, Google AI Overview ve diğer yapay zekâ arama sistemleri için tupb
 
 ## Yayın İlkeleri
 
-- Tüm makaleler tupbebek.com Editöryal Ekip incelemesinden geçer.
-- Klinik öneriler Oxford CEBM benzeri kanıt hiyerarşisiyle derecelendirilir (A=çok güçlü, B=güçlü, C=orta/zayıf, D/E=çok zayıf).
-- Kaynaklar: ESHRE, ASRM, Cochrane, WHO, PubMed (DOI/PMID ile).
-- Klinik reklamı, indirim, garanti, hasta yorumu, öncesi/sonrası fotoğrafı içermez. T.C. Sağlık Bakanlığı 12 Kasım 2025 Tanıtım Yönetmeliği'ne tam uyumludur.
+- Tıbbi inceleyen ve inceleme tarihi, varsa makale özelinde gösterilir; kimlikler otomatik olarak doldurulmaz.
+- Klinik karar açısından uygun içeriklerde kanıt derecesi kullanılır (A=çok güçlü, B=güçlü, C=orta/zayıf, D/E=çok zayıf).
+- Kaynak türü makaleye göre değişir; doğrudan DOI, PMID veya resmî sayfa bağlantıları tercih edilir.
+- Klinik reklamı, indirim, garanti, hasta yorumu ve öncesi/sonrası fotoğrafı yayımlanmaması editöryal politikanın parçasıdır. Güncel uyum çerçevesi editöryal politika sayfasında açıklanır.
 - Site bağımsızdır; Dr. Aksoy'un klinik sitelerine 301 redirect bulunmaz.
 
 ## Lisans ve Kullanım

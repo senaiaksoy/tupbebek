@@ -34,7 +34,8 @@
     "verify:deploy-target": "node scripts/verify-deploy-target.mjs",
     "verify:agentic-seo": "agentic-seo",
     "pmid:enrich": "node scripts/enrich-pmids.mjs",
-    "pmid:enrich:apply": "node scripts/enrich-pmids.mjs --apply"
+    "pmid:enrich:apply": "node scripts/enrich-pmids.mjs --apply",
+    "indexnow:submit": "node scripts/submit-indexnow.mjs"
   },
   "dependencies": {
     "@astrojs/cloudflare": "^11.2.0",

@@ -2,19 +2,45 @@
 title: "IVF Öncesi Histeroskopi Gerekir mi? Rahim İçi Değerlendirme Rehberi"
 seoTitle: "IVF Öncesi Histeroskopi"
 description: "Tüp bebek öncesi histeroskopi ne zaman gerekir? İlk IVF denemesi, tekrarlayan implantasyon başarısızlığı, polip, miyom, yapışıklık ve SIS/HSG kararları."
+summary: "İlk IVF denemesinde rahim içi ultrason, SIS veya HSG normal görünüyorsa rutin histeroskopinin canlı doğumu artırdığı gösterilmemiştir. Histeroskopi; polip, submüköz miyom, yapışıklık veya şüpheli kavite bulgusu olduğunda ya da seçilmiş RIF değerlendirmesinde hedefli bir tanı/tedavi aracı olarak düşünülür. Endometrial scratch rutin başarı artırıcı bir işlem değildir."
+summaryReferences:
+  - title: "Kamath 2019: Tarama histeroskopisi Cochrane derlemesi"
+    url: "https://pubmed.ncbi.nlm.nih.gov/30991443/"
+  - title: "Smit 2016: inSIGHT randomize çalışması"
+    url: "https://pubmed.ncbi.nlm.nih.gov/27132052/"
+  - title: "ESHRE 2023: RIF iyi uygulama önerileri"
+    url: "https://pubmed.ncbi.nlm.nih.gov/37332387/"
+category: "Tedavi Yöntemleri"
+contentType: "portal_article"
+templateVersion: "2026-07"
+status: "published"
 publishDate: 2026-03-31
-author: "Doç. Dr. Senai Aksoy"
-authorTitle: "Kadın Hastalıkları ve Doğum Uzmanı"
-authorCredentials: "Üreme Tıbbı ve Yardımcı Üreme Teknikleri"
-authorYoutube: "https://www.youtube.com/@DocentDrSenaiAksoy"
+author:
+  name: "Doç. Dr. Senai Aksoy"
+  title: "Kadın Hastalıkları ve Doğum Uzmanı"
+  credentials: "Üreme Tıbbı ve Yardımcı Üreme Teknikleri"
+  url: "https://tupbebek.com/yazar/senai-aksoy/"
+videoId: "GP809hiOu_Y"
+videoTitle: "Tüp Bebek Öncesi Histeroskopi Şart mı?"
+videoDescription: "Normal ultrason veya HSG bulguları varken IVF öncesi histeroskopinin ne zaman gerekli olabileceğini, kanıtları ve seçilmiş hasta yaklaşımını anlatan video."
+videoUploadDate: 2026-02-05
+videoDuration: "PT5M38S"
 medicalReviewer: "tupbebek.com Editöryal Ekip"
 reviewerTitle: "Tıbbi Yayın Ekibi"
-reviewDate: 2026-05-14
-lastModified: 2026-05-14
-category: "Tedavi Yöntemleri"
+reviewDate: 2026-08-10
+lastModified: 2026-08-10
 recommendationGrade: B
+evidenceAsOf: 2026-08-10
+reviewScope: "İlk IVF denemesinde rutin tarama histeroskopisi, inSIGHT ve TROPHY randomize çalışmaları, Cochrane 2019, ESHRE 2023 RIF önerileri, hedefli kavite patolojisi ve endometrial injury/scratch dili değerlendirildi."
+editorialMethodNote: "10 Ağustos 2026'da kaynak metadata’sı, rutin ve hedefli histeroskopi ayrımı, endometrial scratch güvenlik dili, görünür FAQ–şema ayrımı ve video bilgileri yeniden kontrol edildi."
 image: "/images/library/hastalik/histeroskopi_resim.webp"
 imageAlt: "tüp bebek öncesi rahim içi değerlendirme ve histeroskopi"
+imageCaption: "Histeroskopi, herkese rutin olarak değil; rahim içiyle ilgili yanıtlanmamış klinik bir soru olduğunda değerlendirilir."
+imageCredit: "tupbebek.com Editöryal Ekip"
+imageSourceType: "ai-assisted"
+imageCreator: "tupbebek.com Editöryal Ekip"
+imageWidth: 1408
+imageHeight: 736
 references:
   - title: "Screening hysteroscopy in subfertile women and women undergoing assisted reproduction"
     authors: "Kamath MS, Bosteels J, D'Hooghe TM et al."
@@ -29,6 +55,7 @@ references:
     year: 2016
     doi: "10.1016/S0140-6736(16)00231-2"
     pmid: "27132052"
+    url: "https://pubmed.ncbi.nlm.nih.gov/27132052/"
   - title: "Hysteroscopy in recurrent in-vitro fertilisation failure (TROPHY): a multicentre, randomised controlled trial"
     authors: "El-Toukhy T, Campo R, Khalaf Y et al."
     journal: "The Lancet"
@@ -62,17 +89,12 @@ references:
 import { Picture } from "astro:assets";
 import histeroskopi_resimImage from "/src/images/library/hastalik/histeroskopi_resim.webp";
 import histeroskopi_karar_algoritmasiImage from "/src/images/library/diyagram/histeroskopi_karar_algoritmasi.webp";
-import HizliCevap from '../../components/HizliCevap.astro';
 import Accordion from "../../components/global/Accordion.astro";
 import MedicalInfoBox from '../../components/global/MedicalInfoBox.astro';
 import QuoteBlock from '../../components/global/QuoteBlock.astro';
 import InlineEvidence from "../../components/InlineEvidence.astro";
-import EvidenceGradeCard from '../../components/EvidenceGradeCard.astro';
 import RevealScript from '../../components/global/RevealScript.astro';
 
-<HizliCevap question="Tüp bebek öncesi histeroskopi mutlaka gerekir mi?">
-Hayır. Ultrason, HSG veya SIS ile rahim içi normal görünüyorsa, ilk tüp bebek denemesi öncesinde rutin tarama amaçlı histeroskopi yapılması gebelik oranlarını artırmamaktadır ([Kamath 2019 (Cochrane)](https://pubmed.ncbi.nlm.nih.gov/30991443/), [Smit 2016 (Lancet)](https://pubmed.ncbi.nlm.nih.gov/27132052/)). Ancak rahim içi boşluğunda anomaliden (polip, miyom, yapışıklık) şüphelenildiğinde ([ASRM 2021](https://pubmed.ncbi.nlm.nih.gov/34607703/)) veya tekrarlayan tüp bebek başarısızlığı (tekrarlayan implantasyon başarısızlığı - RIF) söz konusu olduğunda ([El-Toukhy 2016 (Lancet)](https://pubmed.ncbi.nlm.nih.gov/27132053/), [ESHRE 2023](https://pubmed.ncbi.nlm.nih.gov/37332387/)) histeroskopi yapılması ve gerekirse rahim içi çizme (endometriyal hasar) gibi işlemler ([Lensen 2021 (Cochrane)](https://pubmed.ncbi.nlm.nih.gov/34110001/)) klinik duruma göre planlanır.
-</HizliCevap>
 
 <div class="mesh-hero pt-12 pb-20 px-4 md:px-0 -mx-4 md:-mx-0 mb-12 rounded-3xl shadow-sm border border-white/40" style="background: linear-gradient(135deg, #eff6ff 0%, #f8fafc 48%, #fff7ed 100%);">
   <div class="max-w-4xl mx-auto" data-reveal>
@@ -308,9 +330,6 @@ Hayır. Laparoskopi, infertilite değerlendirmesinde rutin değildir; endometrio
 </Accordion>
 </div>
 
-<div data-reveal>
-<EvidenceGradeCard grade={frontmatter.recommendationGrade} />
-</div>
 
 <div data-reveal class="mt-12 bg-slate-50 p-8 rounded-3xl border border-slate-200">
 **Sizin İçin Seçtiğimiz Diğer Rehberler:**
@@ -325,53 +344,4 @@ Hayır. Laparoskopi, infertilite değerlendirmesinde rutin değildir; endometrio
 
 </div>
 
-export const hysteroscopyIvfFaqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [{
-    "@type": "Question",
-    "name": "İlk tüp bebek denemesi öncesi histeroskopi şart mı?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Genellikle hayır. Rahim içi ultrason, SIS veya HSG ile normal görünüyorsa, ilk IVF öncesinde rutin histeroskopinin canlı doğumu artırdığına dair güçlü kanıt yoktur."
-    }
-  }, {
-    "@type": "Question",
-    "name": "Histeroskopi tüp bebek başarısını artırır mı?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Seçilmiş hastada artırabilir; herkes için rutin fayda beklenmez. Polip, submüköz miyom, yapışıklık veya septum gibi sorun saptanıp tedavi edilirse katkısı daha mantıklıdır."
-    }
-  }, {
-    "@type": "Question",
-    "name": "Tekrarlayan başarısız transfer sonrası histeroskopi yapılmalı mı?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Düşünülebilir, özellikle rahim içi anomaliden şüphe varsa. Ancak normal ultrasonu olan tüm RIF hastalarında otomatik başarı artışı gösterilmiş değildir; embriyo kalitesi, genetik ve transfer faktörleri de değerlendirilmelidir."
-    }
-  }, {
-    "@type": "Question",
-    "name": "SIS normal ise yine de histeroskopi gerekir mi?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Çoğu hastada gerekmez. Ancak anormal kanama, ince endometrium, rahim içi cerrahi öyküsü, yapışıklık şüphesi veya tekrarlayan başarısız transfer varsa karar yeniden tartışılabilir."
-    }
-  }, {
-    "@type": "Question",
-    "name": "Laparoskopi de IVF öncesi rutin yapılır mı?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Hayır. Laparoskopi, infertilite değerlendirmesinde rutin değildir; endometriozis, hidrosalpinx, ciddi ağrı, pelvik kitle veya cerrahi gerektiren özel bir şüphe varsa düşünülür."
-    }
-  }, {
-    "@type": "Question",
-    "name": "Histeroskopi sonrası tüp bebek ne zaman yapılır?",
-    "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Sadece tanısal işlem yapıldıysa çoğu hastada sonraki siklus konuşulabilir. Polip, miyom, septum veya yapışıklık tedavisi yapıldıysa bekleme süresi işlemin kapsamına ve rahim içi iyileşmeye göre değişir."
-    }
-  }]
-};
-
-<script type="application/ld+json" set:html={JSON.stringify(hysteroscopyIvfFaqSchema)} />
 <RevealScript />

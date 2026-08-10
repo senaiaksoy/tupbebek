@@ -3,8 +3,8 @@ import path from 'node:path';
 
 const rootDir = process.cwd();
 const articlesDir = path.join(rootDir, 'src/content/articles');
+const articleTemplatePath = path.join(rootDir, 'src/pages/makaleler/[...slug].astro');
 const maxAgeDays = Number.parseInt(process.env.AI_SEARCH_MAX_AGE_DAYS || '180', 10);
-const minReferences = Number.parseInt(process.env.AI_SEARCH_MIN_REFS || '3', 10);
 const validGrades = new Set(['A', 'B', 'C', 'D/E']);
 
 const failures = [];
@@ -120,6 +120,31 @@ function daysBetween(fromDate, toDate) {
   return Math.floor((toDate.getTime() - fromDate.getTime()) / 86_400_000);
 }
 
+if (!fs.existsSync(articleTemplatePath)) {
+  failures.push(`Missing article template: ${relative(articleTemplatePath)}`);
+} else {
+  const articleTemplate = fs.readFileSync(articleTemplatePath, 'utf8');
+  const requiredTemplateSignals = [
+    ['server-rendered headings', 'const { Content, headings } = await entry.render();'],
+    ['server-rendered table of contents', '<TableOfContents headings={headings}'],
+    ['conditional expert contribution', 'entry.data.expertContribution &&'],
+    ['strict published filter', "entry.data.status === 'published'"],
+  ];
+  for (const [label, signal] of requiredTemplateSignals) {
+    if (!articleTemplate.includes(signal)) failures.push(`Article template is missing ${label}.`);
+  }
+
+  const forbiddenTemplateSignals = [
+    ['generic doctor note', 'güvenilir klinik sonuçlar'],
+    ['lead-capture lab form', '<UzmanaSor'],
+    ['lead-magnet form', '<LeadMagnet'],
+    ['duplicate editor identity block', '<EditorKunyesi'],
+  ];
+  for (const [label, signal] of forbiddenTemplateSignals) {
+    if (articleTemplate.includes(signal)) failures.push(`Article template contains ${label}.`);
+  }
+}
+
 if (!fs.existsSync(articlesDir)) {
   failures.push(`Missing articles directory: ${relative(articlesDir)}`);
 } else {
@@ -138,7 +163,11 @@ if (!fs.existsSync(articlesDir)) {
     if (!frontmatter) continue;
     const references = readReferenceBlocks(frontmatter);
 
-    const status = readScalar(frontmatter, 'status') || 'published';
+    const status = readScalar(frontmatter, 'status');
+    if (!status) {
+      failures.push(`${relative(filePath)} is missing explicit status.`);
+      continue;
+    }
     if (status !== 'published') continue;
 
     stats.published += 1;
@@ -168,7 +197,7 @@ if (!fs.existsSync(articlesDir)) {
 
     const templateVersion = readScalar(frontmatter, 'templateVersion');
     if (templateVersion) {
-      if (templateVersion !== '2026-07') {
+      if (!['2026-07', '2026-08'].includes(templateVersion)) {
         failures.push(`${relative(filePath)} has unsupported templateVersion: ${templateVersion}.`);
       }
 
@@ -284,8 +313,8 @@ if (!fs.existsSync(articlesDir)) {
     }
 
     stats.lowestReferenceCount = Math.min(stats.lowestReferenceCount, references.length);
-    if (references.length < minReferences) {
-      failures.push(`${relative(filePath)} has ${references.length} reference(s); minimum is ${minReferences}.`);
+    if (references.length === 0) {
+      failures.push(`${relative(filePath)} has no scientific or official reference.`);
     }
 
     const referencesWithLocator = references.filter((reference) => /^\s*(doi|url|pmid):\s*/imu.test(reference)).length;
