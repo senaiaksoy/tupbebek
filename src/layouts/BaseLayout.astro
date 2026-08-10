@@ -281,6 +281,23 @@ const siteGraph = {
 				}
 			}
 
+			function scheduleMeasurement() {
+				const schedule = () => {
+					if (window.gaLoaded) return;
+					if ('requestIdleCallback' in window) {
+						window.requestIdleCallback(loadMeasurement, { timeout: 4000 });
+					} else {
+						window.setTimeout(loadMeasurement, 1500);
+					}
+				};
+
+				if (document.readyState === 'complete') {
+					schedule();
+				} else {
+					window.addEventListener('load', schedule, { once: true });
+				}
+			}
+
 			window.__loadGA = loadMeasurement;
 
 			window.__trackGaEvent = function(eventName, params = {}) {
@@ -305,7 +322,7 @@ const siteGraph = {
 				});
 			};
 
-			loadMeasurement();
+			scheduleMeasurement();
 
 			window.addEventListener('cookie-consent:updated', function(event) {
 				const status = event.detail?.status;

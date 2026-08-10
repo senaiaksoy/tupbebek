@@ -28,13 +28,13 @@ const checks = [
       !baseLayout.includes('if (!hasAnalyticsConsent()) return;'),
   },
   {
-    name: 'GA4 loads immediately and records only one automatic page view',
+    name: 'GA4 waits for idle time or user interaction and records only one automatic page view',
     pass:
       baseLayout.includes('window.__loadGA = loadMeasurement;') &&
       baseLayout.includes('window.__loadGA = loadMeasurement;\n\n\t\t\twindow.__trackGaEvent') &&
-      baseLayout.includes('\n\t\t\tloadMeasurement();\n\n\t\t\twindow.addEventListener') &&
-      !baseLayout.includes('requestIdleCallback(scheduleMeasurement') &&
-      !baseLayout.includes('setTimeout(scheduleMeasurement') &&
+      baseLayout.includes('function scheduleMeasurement()') &&
+      baseLayout.includes('window.requestIdleCallback(loadMeasurement') &&
+      baseLayout.includes('\n\t\t\tscheduleMeasurement();\n\n\t\t\twindow.addEventListener') &&
       !baseLayout.includes("window.gtag('event', 'page_view'"),
   },
   {
