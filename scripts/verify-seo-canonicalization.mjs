@@ -6,7 +6,7 @@ const rootDir = process.cwd();
 const distDir = path.join(rootDir, 'dist');
 const siteOrigin = 'https://tupbebek.com';
 const allowedNoSlashPaths = new Set(['/']);
-const requiredFunctionExcludes = [
+const requiredWorkerLegacyRoutes = [
   '/ar',
   '/ar/*',
   '/fr',
@@ -175,9 +175,9 @@ function collectRoutesJsonIssues(filePath) {
   }
 
   const excludes = new Set(routes.exclude || []);
-  for (const pattern of requiredFunctionExcludes) {
-    if (!excludes.has(pattern)) {
-      failures.push(`${path.relative(rootDir, filePath)} must exclude single-language legacy route: ${pattern}`);
+  for (const pattern of requiredWorkerLegacyRoutes) {
+    if (excludes.has(pattern)) {
+      failures.push(`${path.relative(rootDir, filePath)} must allow Worker handling for legacy route: ${pattern}`);
     }
   }
 

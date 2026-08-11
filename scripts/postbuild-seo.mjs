@@ -5,7 +5,10 @@ import path from 'node:path';
 const rootDir = process.cwd();
 const distDir = path.join(rootDir, 'dist');
 const siteOrigin = 'https://tupbebek.com';
-const redirectOnlyFunctionExcludes = new Set([
+// These legacy namespaces have redirect logic in the Astro Worker. Keeping
+// them out of the Worker route table makes Cloudflare rely on _redirects
+// (which is capped on Pages plans) and can turn valid aliases into 404s.
+const workerHandledLegacyPrefixes = new Set([
   '/ar',
   '/fr',
   '/treatment',
@@ -101,7 +104,12 @@ function isExtensionlessRoutePattern(pattern) {
 }
 
 function shouldKeepFunctionExclude(pattern) {
-  if (redirectOnlyFunctionExcludes.has(pattern)) return true;
+  if (
+    workerHandledLegacyPrefixes.has(pattern) ||
+    (pattern.endsWith('/*') && workerHandledLegacyPrefixes.has(pattern.slice(0, -2)))
+  ) {
+    return false;
+  }
   return !isExtensionlessRoutePattern(pattern);
 }
 
