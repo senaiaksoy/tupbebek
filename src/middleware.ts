@@ -46,7 +46,12 @@ const GONE_410_EXACT = new Set<string>([
   '/h2n.php',
   '/undefined',
 ]);
-const GONE_410_PREFIXES: string[] = ['/undefined/', '/public/', '/blog/sayfa/'];
+const GONE_410_PREFIXES: string[] = [
+  '/undefined/',
+  '/public/',
+  '/blog/sayfa/',
+  '/treatment/embryo-freezing/treatment/',
+];
 
 function isGone(pathname: string): boolean {
   return GONE_410_EXACT.has(pathname) || GONE_410_PREFIXES.some((p) => pathname.startsWith(p)) || pathname.includes('/undefined');
@@ -97,6 +102,16 @@ export const onRequest = defineMiddleware((context, next) => {
     return context.redirect(normalized, 301);
   }
 
+  // Resolve broad legacy namespaces before adding a canonical trailing slash.
+  // Otherwise an unknown `/blog/foo` becomes `/blog/foo/` first and can miss
+  // the legacy catch-all in deployments where the dynamic endpoint is not
+  // selected for the slash-normalized request.
+  for (const [prefix, destination] of WILDCARD_FALLBACKS) {
+    if (canonicalUrl.pathname.startsWith(prefix)) {
+      return context.redirect(withQuery(destination, canonicalUrl.search), 301);
+    }
+  }
+
   let changed = removeTrackingParams(canonicalUrl.searchParams);
 
   if (
@@ -110,12 +125,6 @@ export const onRequest = defineMiddleware((context, next) => {
 
   if (changed) {
     return context.redirect(`${canonicalUrl.pathname}${canonicalUrl.search}`, 301);
-  }
-
-  for (const [prefix, destination] of WILDCARD_FALLBACKS) {
-    if (context.url.pathname.startsWith(prefix)) {
-      return context.redirect(withQuery(destination, context.url.search), 301);
-    }
   }
 
   return next();

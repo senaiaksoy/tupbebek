@@ -139,6 +139,73 @@ http://www.tupbebek.com/*                       https://tupbebek.com/:splat     
 # --------------------------------------------
 # 9. Çok dilli eski sürümler (Arapça / Fransızca / İngilizce) — terk edildi
 # --------------------------------------------
+# GSC 2026-08-11 article and legacy path fixes
+/makaleler/bilimsel-makaleler/tup-bebek-tedavisinde-bos-folikul-sendromu /makaleler/ivf-protokolleri/ 301
+/makaleler/dusuk-amh-                         /makaleler/dusuk-amh-hamilelik/                  301
+/makaleler/embryoscope-                       /makaleler/embryoscope-yapay-zeka/              301
+/makaleler/kisirlik/polikistik-over-sendromu-nedenleri-ve-tedavisi /makaleler/opk-ve-ivf/       301
+/makaleler/kisirlik/polip-nedir-kisirliga-yol-acar-mi /makaleler/miyomlar-ve-tup-bebek/       301
+/makaleler/kisirlik/yumurtalik-donmesi-over-torsiyonu /makaleler/endometrioma/                 301
+/makaleler/tup-bebek/embriyo-transferi-kacinci-gunde-yapilmalidir /makaleler/embriyo-transferi-gun-secimi/ 301
+/makaleler/tup-bebek/tup-bebek-nedir-kimlere-uygulanir /makaleler/tup-bebek-nedir/             301
+/makaleler/tup-bebek/tup-bebek-tedavisinde-yumurtalik-hiperstimulasyon-sendromu-ohss /makaleler/ivf-protokolleri/ 301
+/tup-bebek-tedavim-tuttu-mu                      /basari-oranlari/                               301
+/tedavideki-hastalar/yumurta-toplanamamasi      /makaleler/ivf-protokolleri/                    301
+/randevu*                                        /iletisim/                                      301
+/success-rates                                   /basari-oranlari/                               301
+/ivf-explained                                   /ivf-rehberi/                                   301
+/ivf-in-turkey                                   /                                               301
+/embriyo-tup-bebek-laboratuvar-raporu-yorumlama /makaleler/laboratuvar-raporu-yorumlama/         301
+
+# GSC 2026-08-11 404 drilldown: explicit paths are kept above the broad
+# namespace rules because Pages Functions can otherwise win the match.
+/ar/                                             /                                               301
+/ar/about-us                                     /hakkimizda/                                    301
+/ar/about-us/                                    /hakkimizda/                                    301
+/ar/contact-us                                   /iletisim/                                      301
+/ar/contact-us/                                  /iletisim/                                      301
+/ar/health-visa/                                 /tani-sureci/                                   301
+/ar/ivf-explained/                               /ivf-rehberi/                                   301
+/ar/ivf-in-turkey/                               /                                               301
+/ar/services                                     /tedavi-yontemleri/                             301
+/ar/services/                                    /tedavi-yontemleri/                             301
+/ar/step-by-step-ivf-process                    /ivf-rehberi/                                   301
+/ar/success-rates                                /basari-oranlari/                               301
+/ar/treatment                                    /tedavi-yontemleri/                             301
+/ar/treatment/                                   /tedavi-yontemleri/                             301
+/ar/treatment/causes-and-diagnosis-of-infertility/ /tedavi-yontemleri/                           301
+/ar/treatment/embryo-freezing                   /makaleler/taze-dondurulmus-transfer/           301
+/ar/treatment/stimulation-of-the-ovaries/       /makaleler/ivf-protokolleri/                    301
+/ar/blog/embryo-grading-4aa-3bb-5bc-decoding-ivf-lab-report /makaleler/laboratuvar-raporu-yorumlama/ 301
+/ar/blog/endometrial-scratching-ivf/            /makaleler/endometriyal-scratching/             301
+/ar/blog/hysteroscopy-before-ivf-necessity-recommendations* /makaleler/ivf-oncesi-histeroskopi/    301
+/ar/blog/immunological-treatments-ivf-implantation-failure* /makaleler/bagisiklik-tedavileri/      301
+/ar/blog/isotretinoin-for-azoospermia*          /makaleler/izotretinoin-sperm/                   301
+/fr/                                             /                                               301
+/fr/a-propos-de-nous                             /hakkimizda/                                    301
+/fr/before-you-come/                             /tani-sureci/                                   301
+/fr/contact-us*                                  /iletisim/                                      301
+/fr/cout-de-la-fiv                               /sss/                                           301
+/fr/dr-senai-aksoy                               /hakkimizda/                                    301
+/fr/ivf-in-turkey/                               /                                               301
+/fr/la-fiv-etape-par-etape                       /ivf-rehberi/                                   301
+/fr/taux-de-reussite                             /basari-oranlari/                               301
+/fr/traitement                                   /tedavi-yontemleri/                             301
+/fr/traitement/ai-je-besoin-d-un-traitement      /tedavi-yontemleri/                             301
+/fr/traitement/ponction-ovocytaire               /makaleler/ivf-protokolleri/                    301
+/fr/traitement/tests-pre-fiv                     /tani-sureci/                                   301
+/fr/traitement/transfert-d-embryon               /makaleler/embriyo-transferi-gun-secimi/       301
+/treatment/faq/                                  /sss/                                           301
+/treatment/fertilization-ivf-and-icsi*           /makaleler/ivf-protokolleri/                    301
+/treatment/                                    /tedavi-yontemleri/                               301
+/treatment/embryo-freezing/                      /makaleler/taze-dondurulmus-transfer/           301
+/treatment/embryo-transfer/                      /makaleler/embriyo-transferi-gun-secimi/       301
+/treatment/egg-retrieval*                        /tedavi-yontemleri/                             301
+/treatment/pre-ivf-testing/                      /tani-sureci/                                   301
+/treatment/reasons-for-cancellation-of-treatment* /tedavi-yontemleri/                            301
+/treatment/sperm-retrieval-in-azoospermic-subjects* /makaleler/cerrahi-sperm-arama-tese/         301
+/treatment/stimulation-of-the-ovaries*           /makaleler/ivf-protokolleri/                    301
+
 # Specific Arabic legacy blog redirects
 /ar/blog/azoospermia-and-micro-tese             /makaleler/azospermi-mikro-tese/                301
 /ar/blog/bleeding-after-embryo-transfer         /makaleler/embriyo-transferi-sonrasi-bakim/     301

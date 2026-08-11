@@ -34,7 +34,12 @@ const GONE_410_EXACT = new Set<string>([
   '/h2n.php',
   '/undefined',
 ]);
-const GONE_410_PREFIXES: string[] = ['/undefined/', '/public/', '/blog/sayfa/'];
+const GONE_410_PREFIXES: string[] = [
+  '/undefined/',
+  '/public/',
+  '/blog/sayfa/',
+  '/treatment/embryo-freezing/treatment/',
+];
 
 const handle: APIRoute = ({ url, redirect }) => {
   if (GONE_410_EXACT.has(url.pathname) || GONE_410_PREFIXES.some((p) => url.pathname.startsWith(p)) || url.pathname.includes('/undefined')) {

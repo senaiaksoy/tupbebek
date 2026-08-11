@@ -197,6 +197,10 @@ const heroDims = absoluteImageUrl
     })
     : null;
 
+const imageCreatorSchema = d.imageCreator
+    ? { "@type": "Person", "name": d.imageCreator }
+    : { "@type": "Organization", "name": "tupbebek.com Yayın Kurulu" };
+
 const imageObject = absoluteImageUrl && heroDims ? {
     "@type": "ImageObject",
     "@id": `${canonicalUrl.toString()}#primaryimage`,
@@ -206,7 +210,7 @@ const imageObject = absoluteImageUrl && heroDims ? {
     "height": heroDims.height,
     ...(d.imageCaption ? { "caption": d.imageCaption } : {}),
     "creditText": d.imageCredit || "tupbebek.com Yayın Kurulu",
-    ...(d.imageCreator ? { "creator": { "@type": "Person", "name": d.imageCreator } } : {}),
+    "creator": imageCreatorSchema,
     "copyrightNotice": d.imageCopyrightNotice || "© tupbebek.com - Tüm hakları saklıdır.",
     "license": d.imageLicenseUrl || "https://tupbebek.com/editoryal-politika/",
     "acquireLicensePage": d.imageAcquireLicensePage || "https://tupbebek.com/iletisim/",
@@ -225,6 +229,7 @@ const alternateImageObjects = [d.imageFourThree, d.imageSquare]
         "contentUrl": imageUrl,
         "license": d.imageLicenseUrl || "https://tupbebek.com/editoryal-politika/",
         "acquireLicensePage": d.imageAcquireLicensePage || "https://tupbebek.com/iletisim/",
+        "creator": imageCreatorSchema,
         "creditText": d.imageCredit || "tupbebek.com Yayın Kurulu",
         "copyrightNotice": d.imageCopyrightNotice || "© tupbebek.com - Tüm hakları saklıdır.",
     }));

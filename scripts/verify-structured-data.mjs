@@ -190,6 +190,9 @@ function validateArticlePage(filePath, nodes) {
       if (!img.acquireLicensePage) {
         failures.push(`${label} is missing acquireLicensePage URL.`);
       }
+      if (!img.creator) {
+        failures.push(`${label} is missing creator.`);
+      }
     }
 
     const videos = article.video ? (Array.isArray(article.video) ? article.video : [article.video]) : [];
