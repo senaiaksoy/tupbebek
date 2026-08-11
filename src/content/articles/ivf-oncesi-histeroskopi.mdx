@@ -12,7 +12,7 @@ summaryReferences:
     url: "https://pubmed.ncbi.nlm.nih.gov/37332387/"
 category: "Tedavi Yöntemleri"
 contentType: "portal_article"
-templateVersion: "2026-07"
+templateVersion: "2026-09"
 status: "published"
 publishDate: 2026-03-31
 author:
@@ -27,14 +27,23 @@ videoUploadDate: 2026-02-05
 videoDuration: "PT5M38S"
 medicalReviewer: "tupbebek.com Editöryal Ekip"
 reviewerTitle: "Tıbbi Yayın Ekibi"
-reviewDate: 2026-08-10
-lastModified: 2026-08-10
+expertContribution:
+  title: "Dr. Aksoy'un yaklaşımı"
+  question: "Normal ultrasonu olan bir IVF adayında hangi bulgu histeroskopi önermeniz için yeterlidir?"
+  text: "Normal ultrasonda rutin histeroskopi önermem. Benim için en güçlü gerekçe, iyi kaliteli—özellikle öploid—embriyo transferlerine rağmen tekrarlayan implantasyon başarısızlığıdır. Açıklanamayan uterin kanama, önceki küretaj veya rahim içi cerrahi ya da adezyon öyküsü de eşiği düşürür. Ancak yalnızca IVF yapılacak olması histeroskopi için yeterli değildir; mümkünse önce salin infüzyon sonografisiyle kaviteyi değerlendiririm."
+  author: "Doç. Dr. Senai Aksoy"
+  authorTitle: "Kadın Hastalıkları ve Doğum Uzmanı"
+  authorUrl: "https://tupbebek.com/yazar/senai-aksoy/"
+  answeredAt: 2026-08-11
+  approvalStatus: "approved"
+reviewDate: 2026-08-11
+lastModified: 2026-08-11
 recommendationGrade: B
-evidenceAsOf: 2026-08-10
+evidenceAsOf: 2026-08-11
 reviewScope: "İlk IVF denemesinde rutin tarama histeroskopisi, inSIGHT ve TROPHY randomize çalışmaları, Cochrane 2019, ESHRE 2023 RIF önerileri, hedefli kavite patolojisi ve endometrial injury/scratch dili değerlendirildi."
-editorialMethodNote: "10 Ağustos 2026'da kaynak metadata’sı, rutin ve hedefli histeroskopi ayrımı, endometrial scratch güvenlik dili, görünür FAQ–şema ayrımı ve video bilgileri yeniden kontrol edildi."
+editorialMethodNote: "11 Ağustos 2026'da Cochrane DOI'si, kanıt dereceleri, rutin ve hedefli histeroskopi ayrımı, işlem sonrası zamanlama dili ve yinelenen giriş yüzeyleri gözden geçirildi. Dr. Aksoy'un konuya özel yanıtı, yanıt tarihi ve yayın onayı kaydedildi."
 image: "/images/library/hastalik/histeroskopi_resim.webp"
-imageAlt: "tüp bebek öncesi rahim içi değerlendirme ve histeroskopi"
+imageAlt: "Rahim içi boşluğun histeroskopla değerlendirilmesini gösteren tıbbi çizim"
 imageCaption: "Histeroskopi, herkese rutin olarak değil; rahim içiyle ilgili yanıtlanmamış klinik bir soru olduğunda değerlendirilir."
 imageCredit: "tupbebek.com Editöryal Ekip"
 imageSourceType: "ai-assisted"
@@ -46,7 +55,7 @@ references:
     authors: "Kamath MS, Bosteels J, D'Hooghe TM et al."
     journal: "Cochrane Database of Systematic Reviews"
     year: 2019
-    doi: "10.1002/14651858.CD012856"
+    doi: "10.1002/14651858.CD012856.pub2"
     url: "https://pubmed.ncbi.nlm.nih.gov/30991443/"
     pmid: "30991443"
   - title: "Hysteroscopy before in-vitro fertilisation (inSIGHT): a multicentre, randomised controlled trial"
@@ -87,42 +96,18 @@ references:
 ---
 
 import { Picture } from "astro:assets";
-import histeroskopi_resimImage from "/src/images/library/hastalik/histeroskopi_resim.webp";
 import histeroskopi_karar_algoritmasiImage from "/src/images/library/diyagram/histeroskopi_karar_algoritmasi.webp";
 import Accordion from "../../components/global/Accordion.astro";
-import MedicalInfoBox from '../../components/global/MedicalInfoBox.astro';
 import QuoteBlock from '../../components/global/QuoteBlock.astro';
 import InlineEvidence from "../../components/InlineEvidence.astro";
 import RevealScript from '../../components/global/RevealScript.astro';
 
-
-<div class="mesh-hero pt-12 pb-20 px-4 md:px-0 -mx-4 md:-mx-0 mb-12 rounded-3xl shadow-sm border border-white/40" style="background: linear-gradient(135deg, #eff6ff 0%, #f8fafc 48%, #fff7ed 100%);">
-  <div class="max-w-4xl mx-auto" data-reveal>
-    <div class="inline-block px-4 py-1 rounded-full bg-blue-100 text-blue-800 text-sm font-bold mb-4">
-      Transfer Öncesi Rahim İçi Kontrol
-    </div>
-    <h1 class="text-4xl md:text-6xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-800 to-slate-900 leading-tight">
-      {frontmatter.title}
-    </h1>
-    <p class="text-xl md:text-2xl text-slate-700 font-medium max-w-2xl leading-relaxed">
-      Histeroskopinin değeri, her hastaya yapılmasında değil, embriyonun yerleşeceği alanla ilgili gerçek bir soru olduğunda doğru zamanda kullanılmasındadır.
-    </p>
-  </div>
-</div>
-
 <div class="max-w-4xl mx-auto space-y-12 blog-content-reveal">
-
-<div data-reveal>
-<MedicalInfoBox title="Hızlı Bakış: Rutin Değil, Seçilmiş Hastada Güçlü" icon="IVF" color="blue">
-**İlk IVF denemesi öncesinde normal rahim içi görüntüleme varsa rutin histeroskopi canlı doğum oranını belirgin artırmış görünmez.** Buna karşılık rahim içi lezyon şüphesi, tekrarlayan başarısız transfer, ince endometrium veya yapışıklık riski varsa histeroskopi tanı ve tedaviyi aynı seansta birleştirebilir. <InlineEvidence grade="B" />
-</MedicalInfoBox>
-</div>
 
 > Bu rehber, [IVF öncesi rahim hazırlığı](/ivf-rehberi/) ve [başarısız denemeler](/basarisiz-denemeler/) konu haritalarını tamamlar. Miyom özelinde karar gerekiyorsa [miyomlar ve tüp bebek](/makaleler/miyomlar-ve-tup-bebek/) rehberine bakabilirsiniz.
 
 ## İçindekiler
 
-- [Merak edilen IVF öncesi histeroskopi soruları](#temel-sorular)
 - [Histeroskopi nedir?](#nedir)
 - [İlk IVF denemesinde rutin gerekir mi?](#ilk-deneme)
 - [Kimlerde histeroskopi düşünülür?](#kimlerde)
@@ -133,26 +118,6 @@ import RevealScript from '../../components/global/RevealScript.astro';
 - [Sıkça sorulan sorular](#faq)
 
 <div data-reveal>
-<Picture
-  src={histeroskopi_resimImage}
-  widths={[240, 540, 720, histeroskopi_resimImage.width]}
-  width={histeroskopi_resimImage.width}
-  height={histeroskopi_resimImage.height}
-  sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${histeroskopi_resimImage.width}px`}
-  alt="Histeroskopi sırasında ince kamera ile rahim iç boşluğunun değerlendirilmesi"
-/>
-</div>
-
-<div data-reveal>
-<h2 id="temel-sorular">Merak Edilen IVF Öncesi Histeroskopi Soruları</h2>
-
-| Soru | Klinik olarak güvenli cevap |
-| :--- | :--- |
-| **Tüp bebek öncesi histeroskopi gerekir mi?** | İlk denemede rahim içi normal görünüyorsa çoğu hastada rutin gerekmez; şüpheli bulgu varsa değeri artar. |
-| **Histeroskopi tüp bebek şansını artırır mı?** | Herkeste değil; polip, submüköz miyom, yapışıklık veya septum gibi hedefli sorunlar tedavi edilirse katkısı daha anlamlıdır. |
-| **Histeroskopi sonrası tüp bebek ne zaman yapılır?** | Tanısal işlemden sonra çoğu zaman sonraki siklus konuşulur; operatif işlem yapıldıysa bekleme süresi işlem notuna göre değişir. |
-| **Tüp bebekte histeroskopi nedir?** | Embriyonun yerleşeceği rahim içi boşluğu kamera ile doğrudan değerlendirme ve gerekirse aynı seansta tedavi etme işlemidir. |
-
 <h2 id="nedir">Histeroskopi Nedir?</h2>
 
 Histeroskopi, vajinal yoldan rahim içine ince bir kamera ile girilerek rahim iç boşluğunun doğrudan görülmesidir. İki amaçla yapılabilir:
@@ -170,8 +135,8 @@ Histeroskopi, rahim içi patolojiler için güçlü bir yöntemdir; ancak her t�
 
 Bu konuda iki önemli kanıt parçası öne çıkar:
 
-- **inSIGHT çalışması:** Normal transvajinal ultrasonu olan ve ilk IVF planlanan 750 kadında rutin histeroskopi canlı doğum oranını artırmadı. <InlineEvidence grade="A" />
-- **Cochrane 2019 derlemesi:** Tüm çalışmalar birlikte alındığında olası fayda sinyali görülse de kanıt kalitesi düşüktü; düşük yanlılık riski olan iki çalışmanın havuzlandığı analizde canlı doğum artışı gösterilmedi. <InlineEvidence grade="A" />
+- **inSIGHT çalışması:** Normal transvajinal ultrasonu olan ve ilk IVF planlanan 750 kadında rutin histeroskopi canlı doğum oranını artırmadı. <InlineEvidence grade="B" />
+- **Cochrane 2019 derlemesi:** Tüm çalışmalar birlikte alındığında olası fayda sinyali görülse de kanıt kalitesi düşüktü; düşük yanlılık riski olan iki çalışmanın havuzlandığı analizde canlı doğum artışı gösterilmedi. <InlineEvidence grade="B" />
 
 Bu nedenle soru “histeroskopi iyi bir işlem mi?” değil, “bu hastada transferi etkileyecek bir rahim içi soru var mı?” olmalıdır.
 </div>
@@ -182,14 +147,14 @@ Bu nedenle soru “histeroskopi iyi bir işlem mi?” değil, “bu hastada tran
 <figure>
   <img
     src="/images/makaleler/histeroskopi-intrauterin-bulgular.webp"
-    alt="Histeroskopi ile saptanabilen dört intrauterin bulgu: endometrial polip, submüköz myom, uterin septum ve intrauterin yapışıklık (sineşi) — her biri ayrı rahim kesit görselinde gösteriliyor."
+    alt="Histeroskopiyle değerlendirilebilen polip, submüköz miyom, rahim septumu ve rahim içi yapışıklık"
     width="1200"
     height="675"
     loading="lazy"
     decoding="async"
   />
   <figcaption>
-    Histeroskopi öncelikle dört yapısal sorunun tanı ve tedavisi için kullanılır: endometrial polip, submüköz myom, uterin septum ve intrauterin yapışıklık (sineşi). Hepsi implantasyonu olumsuz etkileyebilir ve aynı seansta operatif olarak tedavi edilebilir. (Kaynak: AAGL Practice Guideline 2017; ESHRE/ESGE 2022)
+    Histeroskopi; polip, submüköz miyom, rahim septumu ve rahim içi yapışıklık gibi yapısal sorunları doğrudan değerlendirebilir. Aynı seansta tedavinin uygun olup olmadığı bulgunun türüne, boyutuna ve işlemin amacına göre değişir; doğurganlık yararı her bulgu için aynı değildir.
   </figcaption>
 </figure>
 
@@ -200,11 +165,11 @@ Histeroskopi özellikle şu durumlarda daha anlamlıdır:
 | **Ultrason/SIS/HSG'de şüpheli bulgu** | Polip, septum, yapışıklık veya submüköz miyom olabilir | Histeroskopi ile doğrulama ve gerekirse tedavi |
 | **Anormal uterin kanama** | Rahim içi polip, miyom veya endometrium sorunu eşlik edebilir | Görüntüleme ve seçilmiş hastada histeroskopi |
 | **Daha önce kürtaj, enfeksiyon veya rahim içi cerrahi** | Yapışıklık riski artabilir | Rahim içi boşluk netleştirilir |
-| **İnce endometrium** | [Asherman](/makaleler/asherman-sendromu/)/yapışıklık dışlanmalıdır | ESHRE RIF önerilerinde seçilmiş hastada düşünülebilir |
+| **İnce endometrium** | [Asherman](/makaleler/asherman-sendromu/)/yapışıklık olasılığı değerlendirilir | ESHRE RIF önerilerinde seçilmiş hastada düşünülebilir |
 | **Tekrarlayan iyi kalite embriyo transferine rağmen tutunma olmaması** | Standart görüntüleme küçük lezyonları kaçırabilir | RIF değerlendirmesinin parçası olarak tartışılır |
 | **Submüköz miyom veya polip şüphesi** | Embriyonun tutunacağı alanı bozabilir | Operatif histeroskopi gündeme gelir |
 
-Bu tablo bir “zorunluluk listesi” değildir. Ama bu başlıklardan biri varsa, histeroskopi artık rutin tarama değil, hedefli bir tanı/tedavi adımı haline gelir.
+Bu tablo bir “zorunluluk listesi” değildir. Bu başlıklardan biri varsa histeroskopi, rutin tarama yerine hedefli bir tanı veya tedavi seçeneği olarak gündeme gelebilir.
 </div>
 
 <div data-reveal>
@@ -219,7 +184,7 @@ Pratik mesaj:
 - RIF durumunda histeroskopi **düşünülebilir**.
 - Normal ultrasonu olan her RIF hastasında otomatik olarak başarı artırır denemez.
 - Şüpheli kavite bulgusu, ince endometrium, geçirilmiş rahim içi işlem veya açıklanamayan kanama varsa değeri artar.
-- Histeroskopi tek başına “sihirli çözüm” değildir; embriyo ve transfer faktörleriyle birlikte yorumlanmalıdır.
+- Histeroskopi tek başına başarı sağlayan bir işlem değildir; embriyo ve transfer faktörleriyle birlikte yorumlanmalıdır.
 
 <QuoteBlock>
 Histeroskopi kararında amaç “bir işlem daha yapmak” değil, embriyonun yerleşeceği rahim içi alan hakkında cevaplanmamış bir soruyu kapatmaktır.
@@ -239,7 +204,7 @@ Rahim içi değerlendirmede tek araç histeroskopi değildir. Çoğu hastada dah
 | **HSG** | Tüp açıklığı ve rahim boşluğu hakkında bilgi verir | Rahim içi küçük lezyonlarda sınırlı olabilir |
 | **Histeroskopi** | Doğrudan görür ve bazı sorunları aynı seansta tedavi edebilir | Girişimseldir; maliyet, ağrı ve nadir riskleri vardır |
 
-Bu nedenle ideal sıra çoğu zaman şöyledir: iyi zamanlanmış ultrason, gerekiyorsa SIS/3D ultrason veya HSG, şüphe sürüyorsa histeroskopi.
+Genellikle iyi zamanlanmış ultrasonla başlanır. Klinik soruya göre SIS, 3D ultrason veya HSG kullanılabilir; şüphe sürüyorsa histeroskopi düşünülür.
 </div>
 
 <div data-reveal>
@@ -248,14 +213,14 @@ Bu nedenle ideal sıra çoğu zaman şöyledir: iyi zamanlanmış ultrason, gere
 <figure>
   <img
     src="/images/makaleler/histeroskopi-hazirlik-yansima.webp"
-    alt="Terracotta duvarlı sıcak tonlu bir oturma alanında kayısı silk gömlek giyen kadın, elinde basılı hazırlık broşürüyle koltukta oturup pencereden dışarı bakıyor; ofis histeroskopisi öncesi sakin hazırlık atmosferi."
+    alt="Histeroskopi öncesi hazırlık broşürünü okuyan bir kadın"
     width="1200"
     height="675"
     loading="lazy"
     decoding="async"
   />
   <figcaption>
-    Tanısal histeroskopi günümüzde anestezisiz veya hafif sedasyonla 10-15 dakikada tamamlanabilen ofis prosedürüdür; mini-histeroskoplar ve "see-and-treat" yaklaşımıyla aynı seansta küçük patolojiler (polip, septum) operatif olarak tedavi edilebilir. (Kaynak: AAGL Practice Guideline 2017; ESGE Office Hysteroscopy Position Paper 2022)
+    Ofis histeroskopisi genellikle kısa süren bir işlemdir. Ağrı kontrolü ve anestezi gereksinimi kişiye ve planlanan işleme göre değişir; operatif tedavi gerekiyorsa ayrıca planlama yapılabilir.
   </figcaption>
 </figure>
 
@@ -277,12 +242,12 @@ Endometrial scratch konusunu da ayırmak gerekir: Histeroskopi sırasında oluş
 <div data-reveal>
 <h2 id="sonrasi">Histeroskopi Sonrası Transfer Ne Zaman Yapılır?</h2>
 
-Zamanlama, işlem sırasında ne yapıldığına bağlıdır:
+Kısa cevap: Transfer zamanlaması, işlem sırasında ne yapıldığına ve rahim içinin iyileşme durumuna bağlıdır.
 
-- **Sadece tanısal histeroskopi:** Çoğu hastada sonraki adet döngüsünde tedavi planına dönülebilir.
-- **Küçük polip çıkarımı:** Genellikle bir sonraki siklus veya kısa bekleme sonrası transfer planlanabilir.
-- **Submüköz miyom, septum veya yaygın yapışıklık tedavisi:** Rahim içinin iyileşmesi için daha uzun bekleme ve bazen kontrol değerlendirmesi gerekir.
-- **[Asherman](/makaleler/asherman-sendromu/)/yapışıklık tedavisi:** Hormon desteği, bariyer uygulamaları veya ikinci bakış histeroskopi gerekebilir.
+- **Sadece tanısal histeroskopi:** Uzun bir bekleme her zaman gerekmez; sonraki adım işlem bulgularına göre planlanır.
+- **Polip, submüköz miyom veya septum tedavisi:** Zamanlama çıkarılan dokunun büyüklüğüne ve rahim içi yüzeyin ne kadar etkilendiğine göre değişir.
+- **Yaygın yapışıklık tedavisi:** İyileşme süreci ve gerekirse kontrol değerlendirmesi tamamlanmadan transfer planlanmayabilir.
+- **[Asherman](/makaleler/asherman-sendromu/) tedavisi:** Ek tedavi veya ikinci bakış histeroskopisi kişisel bulgulara göre planlanabilir.
 
 Net süreyi işlem notu belirler: lezyonun tipi, rahim içi yüzeyin ne kadar etkilendiği, kanama, enfeksiyon riski ve endometriumun sonraki siklusta görünümü birlikte değerlendirilir.
 </div>
@@ -306,7 +271,7 @@ Genellikle hayır. Rahim içi ultrason, SIS veya HSG ile normal görünüyorsa, 
 </Accordion>
 
 <Accordion title="Histeroskopi tüp bebek başarısını artırır mı?">
-Seçilmiş hastada artırabilir; herkes için rutin fayda beklenmez. Polip, submüköz miyom, yapışıklık veya septum gibi sorun saptanıp tedavi edilirse katkısı daha mantıklıdır.
+Herkeste artırdığı gösterilmemiştir. Histeroskopi, polip, submüköz miyom, yapışıklık veya septum şüphesi olduğunda hedefli değerlendirme ve tedavi sağlayabilir; bunun canlı doğuma katkısı bulgunun türüne göre değişir ve garanti edilemez.
 </Accordion>
 
 <Accordion title="Tekrarlayan başarısız transfer sonrası histeroskopi yapılmalı mı?">
