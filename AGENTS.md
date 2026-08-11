@@ -147,6 +147,7 @@ Icerik statusleri (content/config.ts):
   - Eski `<QuoteBlock>` alanları tarafsız klinik çerçevedir; hekim alıntısı veya imzası taşımaz.
   - Dr. Aksoy imzalı bir yaklaşım yalnızca kendisine sorulan konuya özel soru, gerçek yanıt, yanıt tarihi ve açık yayın onayı kaydedildiğinde `expertContribution` üzerinden gösterilir.
   - İlk kısa cevap okurun sorusunu doğal biçimde yanıtlar. Kritik klinik sonuç varsa 1-2 birincil veya güçlü ikincil kaynakla izlenebilir kılınır; sırf alıntılanma amacıyla kaynak ya da anahtar kelime yığılmaz.
+  - Makale audit raporu üç ayrı sonucu açıkça vermelidir: (1) Hasta eğitimi açısından değerli mi? (2) AI/web yanıtlarında ikincil kaynak olarak güvenle alıntılanabilir mi? (3) Akademik kanıt sayılmasını engelleyen eksikler neler? Audit; özgün klinik karar değeri, doğrudan cevap açıklığı, iddia-kaynak yakınlığı ve kaynak/iddia uyumu, sayı ve eşiklerin bağlamı, belirsizlik, tam bibliyografik kimlik, yazar/reviewer/güncelleme izlenebilirliği ve render edilmiş teknik keşfedilebilirliği kapsar. Hasta eğitimi/ikincil kaynak değeri, birincil akademik kanıt yerine geçirilmez; botlar için yapay alıntı kutuları veya metin parçalama eklenmez.
 - **Wikidata & Wikipedia Bağlantıları (Semantik Şema)**:
   - Makalenin konusu olan tıbbi entity (ör. PCOS, Endometriozis, AMH), `ArticleSchema.astro` içinde otomatik olarak eşlenen Wikidata (Wikidata Q-ID ve Wikipedia URL'leri) ile `about` alanı altındaki `sameAs` dizisi üzerinden arama motorlarına bildirilmelidir.
 - **VideoObject Şeması**:

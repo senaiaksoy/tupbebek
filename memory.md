@@ -20,6 +20,16 @@ Yapay zeka arama motorlarında (ChatGPT, Perplexity, Gemini, Google AI Overviews
 
 ## ⚠️ Kritik Kararlar ve Kısıtlamalar
 
+### Makale auditlerinde citability / AI-web raporu (2026-08-11)
+
+Bundan sonraki her makale auditinde, teknik ve tıbbi bulgulara ek olarak şu üç sonuç ayrı ayrı raporlanır:
+
+1. Hasta eğitimi açısından değerli mi?
+2. AI/web yanıtlarında ikincil kaynak olarak güvenle alıntılanabilir mi?
+3. Akademik kanıt sayılmasını engelleyen eksikler neler?
+
+Bu değerlendirme; özgün klinik karar değeri, doğrudan cevap açıklığı, iddia-kaynak yakınlığı ve kaynak/iddia uyumu, eşik ve sayıların bağlamı, belirsizlik, tam bibliyografik kimlik, yazar/reviewer/güncelleme izlenebilirliği ve render edilmiş teknik keşfedilebilirliği kapsar. Hasta eğitimi ve ikincil kaynak olarak alıntılanabilirlik, birincil akademik kanıtın yerine geçirilmez. AI için yapay alıntı kutuları veya bot odaklı metin parçalama eklenmez.
+
 ### Yasal Uyumluluk (T.C. Sağlık Bakanlığı Tanıtım Yönetmeliği)
 - **Tıbbi Referans Portalı Statüsü:** Site hiçbir klinik randevu CTA'i barındıramaz, fiyat karşılaştırması veya hasta yorumu gösteremez.
 - **Klinik Şemaları (Banned):** Teknik GEO playbook'larının önerdiği `MedicalClinic` şeması, siteyi bağımsız referans portalından çıkarıp klinik statüsüne sokacağı için yasal cezalara yol açabilir. Bu nedenle root şema daima **`Organization`** olarak kalmalıdır.
