@@ -59,6 +59,17 @@ function extractTopLevelNodes(data) {
   }).filter((node) => node && typeof node === 'object');
 }
 
+function collectImageObjects(value, images = []) {
+  if (!value || typeof value !== 'object') return images;
+  if (Array.isArray(value)) {
+    for (const item of value) collectImageObjects(item, images);
+    return images;
+  }
+  if (typeIncludes(value, 'ImageObject')) images.push(value);
+  for (const child of Object.values(value)) collectImageObjects(child, images);
+  return images;
+}
+
 function parseJsonLd(html, filePath) {
   const blocks = [];
 
@@ -168,6 +179,17 @@ function validateArticlePage(filePath, nodes) {
     }
     if (article.image && !article.primaryImageOfPage) {
       failures.push(`${page} Article node has image but is missing primaryImageOfPage.`);
+    }
+
+    const images = collectImageObjects(nodes);
+    for (const [index, img] of images.entries()) {
+      const label = `${page} ImageObject #${index + 1}`;
+      if (!img.license) {
+        failures.push(`${label} is missing license URL.`);
+      }
+      if (!img.acquireLicensePage) {
+        failures.push(`${label} is missing acquireLicensePage URL.`);
+      }
     }
 
     const videos = article.video ? (Array.isArray(article.video) ? article.video : [article.video]) : [];
