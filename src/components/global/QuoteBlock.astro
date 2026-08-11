@@ -1,111 +1,24 @@
 ---
-// src/components/global/QuoteBlock.astro
-// A cinematic, premium blockquote component
-const { author } = Astro.props;
+/**
+ * Eski makalelerdeki vurgulu metinler için tarafsız klinik çerçeve.
+ * Hekim imzalı gerçek görüşler yalnızca DoctorNote ile yayımlanır.
+ */
+interface Props {
+  label?: string;
+}
+
+const { label = 'Klinik çerçeve' } = Astro.props;
 ---
 
-<div class="quote-wrapper">
-  <div class="quote-icon-bg">"</div>
-  <blockquote class="cinematic-quote">
-    <div class="quote-content">
-      <slot />
-    </div>
-    {author && (
-      <footer class="quote-author">
-        <span class="author-dash">—</span>
-        <strong>{author}</strong>
-      </footer>
-    )}
-  </blockquote>
-</div>
+<aside class="not-prose my-8 rounded-xl border-l-4 border-primary-500 bg-primary-50/60 px-5 py-4" aria-label={label}>
+  <p class="mb-2 text-xs font-bold uppercase tracking-wider text-primary-700">{label}</p>
+  <div class="text-sm leading-relaxed text-gray-700 md:text-base">
+    <slot />
+  </div>
+</aside>
 
-<style>
-  .quote-wrapper {
-    position: relative;
-    margin: 64px 0;
-    padding: 48px;
-    background: var(--glass-bg);
-    backdrop-filter: var(--glass-blur);
-    -webkit-backdrop-filter: var(--glass-blur);
-    border: 1px solid var(--glass-border);
-    border-left: 8px solid var(--color-brand-primary);
-    border-radius: 0 24px 24px 0;
-    box-shadow: var(--glass-shadow);
-    overflow: hidden;
-    z-index: 1;
-    transition: transform 0.3s ease;
-  }
-  .quote-wrapper:hover {
-    transform: translateX(8px);
-  }
-
-  .quote-icon-bg {
-    position: absolute;
-    top: -40px;
-    left: -10px;
-    font-size: 240px;
-    font-family: var(--font-secondary);
-    color: var(--color-brand-primary);
-    opacity: 0.05;
-    line-height: 1;
-    z-index: -1;
-    user-select: none;
-    pointer-events: none;
-  }
-
-  .cinematic-quote {
-    margin: 0;
-    position: relative;
-    z-index: 2;
-  }
-
-  .quote-content {
-    font-size: 1.35rem;
-    line-height: 1.7;
-    color: #1e293b;
-    font-style: italic;
-    font-weight: 400;
-  }
-  
-  .quote-content :global(p) {
-    margin: 0 0 16px 0;
-  }
-  .quote-content :global(p:last-child) {
-    margin: 0;
-  }
-
-  .quote-author {
-    margin-top: 28px;
-    font-size: 1.2rem;
-    display: flex;
-    align-items: center;
-    color: #64748b;
-    opacity: 1 !important;
-  }
-  
-  .quote-author strong {
-    color: #2563eb !important;
-    font-weight: 800;
-    letter-spacing: 0.02em;
-  }
-
-  .author-dash {
-    color: #2563eb;
-    margin-right: 12px;
-    font-weight: 900;
-  }
-  
-  @media (max-width: 640px) {
-    .quote-wrapper {
-      padding: 32px 24px;
-      margin: 40px 0;
-    }
-    .quote-content {
-      font-size: 1.15rem;
-    }
-    .quote-icon-bg {
-      font-size: 120px;
-      top: -10px;
-    }
+<style is:global>
+  .prose-medical aside[aria-label="Klinik çerçeve"] p:last-child {
+    margin-bottom: 0;
   }
 </style>

@@ -1,20 +1,7 @@
 ---
 /**
- * EEATBadge — E-E-A-T Seffaflik Rozeti
- *
- * Makale basinda yazar kimligi, kayitli tibbi inceleme, son guncelleme
- * ve bilimsel referans sayisini gosteren guvenilirlik rozeti.
- *
- * Kullanim:
- *   <EEATBadge
- *     author="Doc. Dr. Senai Aksoy"
- *     authorTitle="Ureme Tibbi ve Jinekolojik Endoskopi Uzmani"
- *     medicalReviewer="tupbebek.com Tibbi Danisma Kurulu"
- *     reviewDate="3 Nisan 2026"
- *     lastModified="3 Nisan 2026"
- *     status="published"
- *     referenceCount={12}
- *   />
+ * Makale başında yalnızca okurun güven kararına yarayan kimlik bilgilerini
+ * gösterir. Ayrıntılı inceleme yöntemi sayfanın sonunda yer alır.
  */
 interface Props {
     author: string;
@@ -24,12 +11,8 @@ interface Props {
     authorYoutube?: string;
     medicalReviewer?: string;
     reviewerTitle?: string;
-    approvedBy?: string;
     reviewDate?: string;
     lastModified?: string;
-    publishDate?: string;
-    status?: 'draft' | 'in_review' | 'published';
-    referenceCount?: number;
 }
 
 const {
@@ -40,12 +23,8 @@ const {
     authorYoutube,
     medicalReviewer,
     reviewerTitle,
-    approvedBy,
     reviewDate,
     lastModified,
-    publishDate,
-    status = 'published',
-    referenceCount = 0,
 } = Astro.props;
 
 const normalizePerson = (value?: string) =>
@@ -58,130 +37,45 @@ const normalizePerson = (value?: string) =>
 const isSameAuthorAndReviewer =
     Boolean(medicalReviewer) &&
     normalizePerson(author) === normalizePerson(medicalReviewer);
-const isReviewerAlsoApprover =
-    Boolean(medicalReviewer && approvedBy) &&
-    normalizePerson(medicalReviewer) === normalizePerson(approvedBy);
-
-const statusConfig = {
-    draft: { label: 'Taslak', icon: 'edit_note', color: 'text-gray-600 bg-gray-100 border border-gray-200' },
-    in_review: { label: 'İncelemede', icon: 'pending', color: 'text-amber-800 bg-amber-50 border border-amber-200' },
-    published: { label: 'Yayımlanmış içerik', icon: 'check_circle', color: 'text-emerald-800 bg-emerald-50 border border-emerald-200/90' },
-};
-
-const sc = statusConfig[status];
 ---
 
-<div class="eeat-badge bg-[#fcfaf7] border border-gray-200/80 rounded-xl overflow-hidden shadow-2xs">
-    <!-- Top Row: Author + Reviewer -->
-    <div class="flex flex-col sm:flex-row">
-        <!-- Author -->
-        <div class="flex-1 p-4 sm:p-5">
-            <div class="flex items-start gap-3">
-                <div class="w-10 h-10 rounded-full bg-primary-50 border border-primary-100 flex items-center justify-center shrink-0">
-                    <span class="material-symbols-outlined text-primary-700 text-xl" style="font-variation-settings: 'FILL' 1;">person</span>
-                </div>
-                <div class="min-w-0">
-                    <p class="text-[10px] uppercase tracking-wider text-gray-500 font-semibold mb-0.5">
-                        {isSameAuthorAndReviewer ? 'Yazan ve tıbbi olarak gözden geçiren' : 'Yazar'}
-                    </p>
-                    <div class="flex items-center gap-1 min-w-0">
-                        {authorUrl ? (
-                            <a
-                                href={authorUrl}
-                                class="truncate text-base font-serif font-bold text-gray-900 underline decoration-gray-300 underline-offset-2 transition-colors hover:text-primary-700 hover:decoration-primary-400"
-                            >
-                                {author}
-                            </a>
-                        ) : (
-                            <p class="text-base font-serif font-bold text-gray-900 truncate">{author}</p>
-                        )}
-                        {authorYoutube && (
-                            <a
-                                href={authorYoutube}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="shrink-0 inline-flex items-center justify-center w-5 h-5 rounded-full text-red-600 hover:bg-red-50 transition-colors"
-                                aria-label={`${author} YouTube kanalı`}
-                                title="YouTube"
-                            >
-                                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
-                                </svg>
-                            </a>
-                        )}
-                    </div>
-                    {authorTitle && <p class="text-xs text-gray-500 truncate">{authorTitle}</p>}
-                    {authorCredentials && <p class="text-[11px] text-gray-500 leading-relaxed">{authorCredentials}</p>}
-                    {isSameAuthorAndReviewer && reviewDate && (
-                        <p class="text-[11px] text-gray-500 mt-0.5">Gözden geçirme: {reviewDate}</p>
-                    )}
-                </div>
-            </div>
-        </div>
-
-        {medicalReviewer && !isSameAuthorAndReviewer && (
-            <>
-                <!-- Divider -->
-                <div class="hidden sm:block w-px bg-gray-200"></div>
-                <div class="sm:hidden h-px bg-gray-200 mx-4"></div>
-
-                <!-- Medical Reviewer -->
-                <div class="flex-1 p-4 sm:p-5">
-                    <div class="flex items-start gap-3">
-                        <div class="w-10 h-10 rounded-full bg-emerald-50 border border-emerald-200/80 flex items-center justify-center shrink-0">
-                            <span class="material-symbols-outlined text-emerald-700 text-xl" style="font-variation-settings: 'FILL' 1;">verified</span>
-                        </div>
-                        <div class="min-w-0">
-                            <p class="text-[10px] uppercase tracking-wider text-gray-500 font-semibold mb-0.5">
-                                {isReviewerAlsoApprover ? 'Tıbbi inceleme ve onay' : 'Tıbbi inceleme'}
-                            </p>
-                            <p class="text-sm font-serif font-bold text-gray-900 truncate">{medicalReviewer}</p>
-                            {reviewerTitle && <p class="text-xs text-gray-500 truncate">{reviewerTitle}</p>}
-                            {reviewDate && <p class="text-[11px] text-gray-500 mt-0.5">Son İnceleme: {reviewDate}</p>}
-                        </div>
-                    </div>
-                </div>
-            </>
+<div class="border-y border-gray-200 py-3 text-sm text-gray-600" aria-label="Yazar ve tıbbi inceleme bilgileri">
+    <div class="flex flex-wrap items-center gap-x-2 gap-y-1 leading-relaxed">
+        <span class="text-gray-500">{isSameAuthorAndReviewer ? 'Yazan ve tıbben inceleyen' : 'Yazan'}</span>
+        {authorUrl ? (
+            <a href={authorUrl} class="font-semibold text-gray-900 underline decoration-gray-300 underline-offset-2 hover:text-primary-700">
+                {author}
+            </a>
+        ) : (
+            <strong class="font-semibold text-gray-900">{author}</strong>
+        )}
+        {authorTitle && <span>· {authorTitle}</span>}
+        {authorYoutube && (
+            <a
+                href={authorYoutube}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex min-h-11 min-w-11 items-center justify-center rounded-full text-red-600 hover:bg-red-50"
+                aria-label={`${author} YouTube kanalı`}
+                title="YouTube"
+            >
+                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                </svg>
+            </a>
         )}
     </div>
 
-    <!-- Bottom Row: Meta Badges -->
-    <div class="flex flex-wrap items-center gap-3 px-4 sm:px-5 py-3 bg-gray-50 border-t border-gray-200 text-xs">
-        <!-- Status -->
-        <span class:list={["inline-flex items-center gap-1 px-2.5 py-1 rounded-full font-semibold", sc.color]}>
-            <span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">{sc.icon}</span>
-            {sc.label}
-        </span>
+    {authorCredentials && <p class="mt-1 text-xs text-gray-500">{authorCredentials}</p>}
 
-        <!-- Last Modified -->
-        {lastModified && (
-            <span class="inline-flex items-center gap-1 text-gray-500">
-                <span class="material-symbols-outlined text-[14px]">update</span>
-                Güncelleme: {lastModified}
+    <div class="mt-1 flex flex-wrap gap-x-4 gap-y-1 text-xs text-gray-500">
+        {medicalReviewer && !isSameAuthorAndReviewer && (
+            <span>
+                Tıbbi inceleme: <strong class="font-semibold text-gray-700">{medicalReviewer}</strong>
+                {reviewerTitle && <> · {reviewerTitle}</>}
             </span>
         )}
-
-        <!-- Publish Date -->
-        {publishDate && (
-            <span class="inline-flex items-center gap-1 text-gray-500">
-                <span class="material-symbols-outlined text-[14px]">calendar_today</span>
-                {publishDate}
-            </span>
-        )}
-
-        <!-- Reference Count -->
-        {referenceCount > 0 && (
-            <span class="inline-flex items-center gap-1 text-primary-600 font-semibold">
-                <span class="material-symbols-outlined text-[14px]">science</span>
-                {referenceCount} Kaynak
-            </span>
-        )}
-
-        {approvedBy && !isReviewerAlsoApprover && (
-            <span class="inline-flex items-center gap-1 text-gray-500">
-                <span class="material-symbols-outlined text-[14px]">verified</span>
-                Onaylayan: {approvedBy}
-            </span>
-        )}
+        {reviewDate && <span>İnceleme: {reviewDate}</span>}
+        {lastModified && <span>Son güncelleme: {lastModified}</span>}
     </div>
 </div>

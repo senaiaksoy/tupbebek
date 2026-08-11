@@ -7,21 +7,31 @@
  */
 interface Props {
   title?: string;
+  question: string;
   note: string;
   topic?: string;
   author: string;
   authorTitle?: string;
   authorUrl?: string;
+  answeredAt: Date;
 }
 
 const {
   title = 'Uzman katkısı',
+  question,
   note,
   topic,
   author,
   authorTitle,
   authorUrl,
+  answeredAt,
 } = Astro.props;
+
+const answeredAtLabel = answeredAt.toLocaleDateString('tr-TR', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
 ---
 
 <aside class="my-10 rounded-xl border border-amber-200/80 bg-[#fcfaf5] p-5 shadow-2xs md:p-6" aria-label={title}>
@@ -37,6 +47,9 @@ const {
     )}
   </div>
 
+  <p class="mb-2 text-xs font-semibold text-gray-600">Dr. Aksoy'a sorulan soru</p>
+  <p class="mb-4 text-sm font-semibold leading-relaxed text-gray-900 md:text-base">{question}</p>
+
   <blockquote class="m-0 border-l-2 border-amber-500/60 pl-4 text-sm leading-relaxed text-gray-700 md:text-base">
     <p class="m-0">{note}</p>
   </blockquote>
@@ -51,5 +64,7 @@ const {
       <strong class="font-semibold text-gray-800">{author}</strong>
     )}
     {authorTitle && <span> · {authorTitle}</span>}
+    <span> · Yanıt: {answeredAtLabel}</span>
+    <span> · Yayın onayı kayıtlı</span>
   </footer>
 </aside>

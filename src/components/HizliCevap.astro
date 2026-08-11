@@ -2,9 +2,8 @@
 /**
  * HizliCevap — TL;DR / Hızlı Cevap callout
  *
- * Makale başına eklenir, head question'ı 2-3 cümle ile direkt cevaplar.
- * AI engine'ler (Google AI Overviews, Perplexity, ChatGPT) bu bloğu
- * passage-level citation için extract eder.
+ * Eski makalelerde okurun temel sorusunu 2-3 cümlede doğrudan cevaplar.
+ * Yeni şablonda aynı iş frontmatter `summary` alanıyla tek kez yapılır.
  *
  * Usage (Astro/MDX):
  *   <HizliCevap question="Tüp bebek nedir?">
@@ -35,7 +34,7 @@ const { question, label = 'Hızlı Cevap' } = Astro.props;
 // We do NOT emit JSON-LD here. Real Q&A schema is owned by:
 //   - /sss/ (FAQPage with structured mainEntity array)
 //   - per-article FAQ blocks in MDX
-// This callout serves passage-level reader UX + visual citability, not schema duplication.
+// Bu kutu yalnızca okur deneyimi içindir; yapılandırılmış veri üretmez.
 ---
 
 <aside

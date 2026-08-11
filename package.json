@@ -18,6 +18,7 @@
     "verify:html-weight": "node scripts/verify-html-weight.mjs",
     "verify:ai-search": "npm run verify:article-template && npm run verify:llms-hygiene && npm run verify:llms-priority-targets && npm run verify:preferred-source-cta",
     "verify:article-template": "node scripts/verify-ai-search-readiness.mjs",
+    "verify:editorial-authenticity": "node scripts/verify-editorial-authenticity.mjs",
     "verify:ai-search-readiness": "node scripts/verify-ai-search-readiness.mjs",
     "verify:llms-hygiene": "node scripts/verify-llms-hygiene.mjs",
     "verify:llms-priority-targets": "node scripts/verify-llms-priority-targets.mjs",

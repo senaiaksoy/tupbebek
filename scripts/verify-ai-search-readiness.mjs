@@ -197,7 +197,7 @@ if (!fs.existsSync(articlesDir)) {
 
     const templateVersion = readScalar(frontmatter, 'templateVersion');
     if (templateVersion) {
-      if (!['2026-07', '2026-08'].includes(templateVersion)) {
+      if (!['2026-07', '2026-08', '2026-09'].includes(templateVersion)) {
         failures.push(`${relative(filePath)} has unsupported templateVersion: ${templateVersion}.`);
       }
 
@@ -222,6 +222,27 @@ if (!fs.existsSync(articlesDir)) {
 
       if (!readNestedScalar(frontmatter, 'author', 'name') || !readNestedScalar(frontmatter, 'author', 'url')) {
         failures.push(`${relative(filePath)} template author must include name and profile url.`);
+      }
+
+      if (templateVersion === '2026-09') {
+        const expertFields = ['question', 'text', 'author', 'answeredAt', 'approvalStatus'];
+        for (const fieldName of expertFields) {
+          if (!readNestedScalar(frontmatter, 'expertContribution', fieldName)) {
+            failures.push(`${relative(filePath)} is missing expertContribution.${fieldName} for templateVersion 2026-09.`);
+          }
+        }
+
+        if (readNestedScalar(frontmatter, 'expertContribution', 'author') !== 'Doç. Dr. Senai Aksoy') {
+          failures.push(`${relative(filePath)} expertContribution.author must be Doç. Dr. Senai Aksoy.`);
+        }
+        if (readNestedScalar(frontmatter, 'expertContribution', 'approvalStatus') !== 'approved') {
+          failures.push(`${relative(filePath)} expertContribution must have explicit approvalStatus: approved.`);
+        }
+
+        const answeredAt = parseLocalDate(readNestedScalar(frontmatter, 'expertContribution', 'answeredAt'));
+        if (!answeredAt || answeredAt > today) {
+          failures.push(`${relative(filePath)} has invalid or future expertContribution.answeredAt.`);
+        }
       }
 
       const summaryReferenceUrls = readListItemValues(frontmatter, 'summaryReferences', 'url');

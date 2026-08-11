@@ -61,9 +61,6 @@ const authorProfileUrl = isSenaiAksoy
     ? '/yazar/senai-aksoy/'
     : (rawAuthorUrl && !/youtube\.com/i.test(rawAuthorUrl) ? rawAuthorUrl : undefined);
 
-const publishDateStr = entry.data.publishDate
-    ? entry.data.publishDate.toLocaleDateString('tr-TR', { year: 'numeric', month: 'long', day: 'numeric' })
-    : undefined;
 const lastModifiedStr = entry.data.lastModified
     ? entry.data.lastModified.toLocaleDateString('tr-TR', { year: 'numeric', month: 'long', day: 'numeric' })
     : undefined;
@@ -76,7 +73,6 @@ const articleUrl = resolveCanonicalUrl({
     pathname: `/makaleler/${entry.slug}/`,
     canonical: entry.data.canonical,
 });
-const referenceCount = entry.data.references?.length || 0;
 const sanitizedImage = sanitizeImage(entry.data.image);
 const articleHub = getArticleHub(entry.slug);
 const imageSourceLabels = {
@@ -121,51 +117,18 @@ const heroSrcSet = getResponsiveImageSrcSet(sanitizedImage);
     <main id="main-content" tabindex="-1" class="pt-32 pb-24">
         <!-- Full-width article header -->
         <div class="max-w-3xl mx-auto px-4 md:px-6">
-            <header class="mb-10">
+            <header class="mb-8">
                 <!-- Title -->
                 <h1 class="font-serif text-3xl md:text-4xl lg:text-[2.75rem] font-bold text-gray-900 leading-[1.18] mb-5">
                     {entry.data.title}
                 </h1>
-
-            <!-- Hero Image — LCP adayı: H1'den hemen sonra (EEAT/kartlar öncesi) -->
-            {entry.data.image && (
-                <figure class="mb-8">
-                    <div class="aspect-video overflow-hidden rounded-xl border border-gray-100">
-                        <img
-                            src={sanitizedImage}
-                            alt={entry.data.imageAlt || entry.data.title}
-                            class="w-full h-full object-cover"
-                            width={heroDimensions.width}
-                            height={heroDimensions.height}
-                            loading="eager"
-                            fetchpriority="high"
-                            decoding="async"
-                            srcset={heroSrcSet}
-                            sizes="(min-width: 1024px) 768px, 100vw"
-                        />
-                    </div>
-                    {(entry.data.imageCaption || entry.data.imageCredit || imageSourceLabel) && (
-                        <figcaption class="mt-2 text-xs leading-relaxed text-gray-500">
-                            {entry.data.imageCaption && <span>{entry.data.imageCaption}</span>}
-                            {entry.data.imageCaption && (entry.data.imageCredit || imageSourceLabel) && <span aria-hidden="true"> · </span>}
-                            {(entry.data.imageCredit || imageSourceLabel) && (
-                                <span>
-                                    {entry.data.imageCredit && <>Görsel: {entry.data.imageCredit}</>}
-                                    {entry.data.imageCredit && imageSourceLabel && <span aria-hidden="true"> · </span>}
-                                    {imageSourceLabel}
-                                </span>
-                            )}
-                        </figcaption>
-                    )}
-                </figure>
-            )}
 
                 <!-- Description -->
                 {!entry.data.summary && entry.data.description && (
                     <p class="text-lg text-gray-500 leading-relaxed mb-8">{entry.data.description}</p>
                 )}
 
-                <!-- E-E-A-T Transparency Badge -->
+                <!-- Yazar ve tıbbi inceleme -->
                 <EEATBadge
                     author={authorName}
                     authorTitle={authorTitle}
@@ -174,20 +137,12 @@ const heroSrcSet = getResponsiveImageSrcSet(sanitizedImage);
                     authorYoutube={authorYoutube}
                     medicalReviewer={entry.data.medicalReviewer}
                     reviewerTitle={entry.data.reviewerTitle}
-                    approvedBy={entry.data.approvedBy}
                     reviewDate={reviewDateStr}
                     lastModified={lastModifiedStr}
-                    publishDate={publishDateStr}
-                    status={entry.data.status}
-                    referenceCount={referenceCount}
                 />
 
-                {!entry.data.hideEvidenceGrade && entry.data.recommendationGrade && (
-                    <EvidenceGradeCard grade={entry.data.recommendationGrade} />
-                )}
-
                 {entry.data.summary && (
-                    <section class="mt-5 rounded-2xl border border-primary-100 bg-primary-50/70 p-5" aria-labelledby="short-answer-title">
+                    <section class="mt-5 border-l-4 border-primary-500 bg-primary-50/60 px-5 py-4" aria-labelledby="short-answer-title">
                         <h2 id="short-answer-title" class="text-sm font-bold text-primary-900 uppercase tracking-wider mb-2">Kısa cevap</h2>
                         <p class="text-sm md:text-base text-gray-700 leading-relaxed">{entry.data.summary}</p>
                         {entry.data.summaryReferences && entry.data.summaryReferences.length > 0 && (
@@ -210,22 +165,42 @@ const heroSrcSet = getResponsiveImageSrcSet(sanitizedImage);
                     </section>
                 )}
 
-                {!entry.data.deferEditorialMeta && (
-                    <ArticleReviewInfo
-                        evidenceAsOf={entry.data.evidenceAsOf}
-                        reviewScope={entry.data.reviewScope}
-                        editorialMethodNote={entry.data.editorialMethodNote}
-                    />
+                {!entry.data.hideEvidenceGrade && entry.data.recommendationGrade && (
+                    <EvidenceGradeCard grade={entry.data.recommendationGrade} />
                 )}
 
-                <section class="mt-5 rounded-2xl border border-gray-200 bg-white p-5" aria-labelledby="topic-hub-title">
-                    <p id="topic-hub-title" class="text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Konu merkezi</p>
-                    <a href={articleHub.href} class="inline-flex items-center gap-2 text-primary-700 font-bold hover:underline">
-                        {articleHub.label}
-                        <span class="material-symbols-outlined text-base">arrow_forward</span>
-                    </a>
-                    <p class="text-sm text-gray-600 leading-relaxed mt-2 mb-0">{articleHub.description}</p>
-                </section>
+                <!-- Hero Image — başlık, kimlik ve kısa cevaptan sonra -->
+                {entry.data.image && (
+                    <figure class="mt-6 mb-0">
+                        <div class="aspect-video overflow-hidden rounded-xl border border-gray-100">
+                            <img
+                                src={sanitizedImage}
+                                alt={entry.data.imageAlt || entry.data.title}
+                                class="w-full h-full object-cover"
+                                width={heroDimensions.width}
+                                height={heroDimensions.height}
+                                loading="eager"
+                                fetchpriority="high"
+                                decoding="async"
+                                srcset={heroSrcSet}
+                                sizes="(min-width: 1024px) 768px, 100vw"
+                            />
+                        </div>
+                        {(entry.data.imageCaption || entry.data.imageCredit || imageSourceLabel) && (
+                            <figcaption class="mt-2 text-xs leading-relaxed text-gray-500">
+                                {entry.data.imageCaption && <span>{entry.data.imageCaption}</span>}
+                                {entry.data.imageCaption && (entry.data.imageCredit || imageSourceLabel) && <span aria-hidden="true"> · </span>}
+                                {(entry.data.imageCredit || imageSourceLabel) && (
+                                    <span>
+                                        {entry.data.imageCredit && <>Görsel: {entry.data.imageCredit}</>}
+                                        {entry.data.imageCredit && imageSourceLabel && <span aria-hidden="true"> · </span>}
+                                        {imageSourceLabel}
+                                    </span>
+                                )}
+                            </figcaption>
+                        )}
+                    </figure>
+                )}
 
             </header>
 
@@ -253,26 +228,32 @@ const heroSrcSet = getResponsiveImageSrcSet(sanitizedImage);
                         <Content />
                     </div>
 
-                    {entry.data.expertContribution && (
+                    {entry.data.expertContribution && entry.data.expertContribution.approvalStatus === 'approved' && (
                         <DoctorNote
                           title={entry.data.expertContribution.title}
                           topic={entry.data.category}
+                          question={entry.data.expertContribution.question}
                           note={entry.data.expertContribution.text}
                           author={entry.data.expertContribution.author}
                           authorTitle={entry.data.expertContribution.authorTitle}
                           authorUrl={entry.data.expertContribution.authorUrl}
+                          answeredAt={entry.data.expertContribution.answeredAt}
                         />
                     )}
 
-                    {entry.data.deferEditorialMeta && (
-                        <div class="mt-10">
-                            <ArticleReviewInfo
-                                evidenceAsOf={entry.data.evidenceAsOf}
-                                reviewScope={entry.data.reviewScope}
-                                editorialMethodNote={entry.data.editorialMethodNote}
-                            />
-                        </div>
-                    )}
+                    <ArticleReviewInfo
+                        evidenceAsOf={entry.data.evidenceAsOf}
+                        reviewScope={entry.data.reviewScope}
+                        editorialMethodNote={entry.data.editorialMethodNote}
+                    />
+
+                    <nav class="mt-5 text-sm leading-relaxed text-gray-600" aria-label="Konu merkezi">
+                        <span>Bu konuyla ilgili diğer başlıklar: </span>
+                        <a href={articleHub.href} class="font-semibold text-primary-700 underline underline-offset-2 hover:text-primary-900">
+                            {articleHub.label}
+                        </a>
+                        <span class="sr-only"> — {articleHub.description}</span>
+                    </nav>
 
                     <!-- Scientific References -->
                     {entry.data.references && (

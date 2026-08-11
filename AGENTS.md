@@ -49,6 +49,21 @@ Bu rehber tupbebek icin sade Turkce, BLUF, "Kisa cevap:", kanitli ama
 hasta-dostu Dr. Aksoy sesi ve pazarlama dili yasaklarini ust katman olarak
 tanimlar.
 
+### Dr. Aksoy gorusu — HARD GATE
+
+Yeni makale yazilirken veya okurun gordugu makale metni guncellenirken, konuya
+ozel ve klinik karar degeri tasiyan bir soru Doç. Dr. Senai Aksoy'a sorulur.
+Soru, gercek yanit, yanit tarihi ve acik yayin onayi frontmatter
+`expertContribution` alaninda kaydedilmeden yeni `templateVersion: "2026-09"`
+makale `published` yapilamaz. Yaniti model, editor veya kaynaklardan tureterek
+Dr. Aksoy'a atfetmek kesinlikle yasaktir; yanit gelmediyse status `draft` ya da
+`in_review` kalir. Yalnizca link, gorsel yolu veya teknik metadata gibi okurun
+gordugu tibbi metni degistirmeyen bakim islemleri yeni uzman yaniti gerektirmez.
+
+Belirsiz ve kalip bir arac kullanimi beyani makale metninde veya editoryal yontem
+notunda kullanilmaz. Yontem bilgisi gerekiyorsa yalnizca gercekte yapilan insan
+kontrolu ve guncellemenin somut kapsami yazilir.
+
 ## Teknik Mimari
 
 ### Teknoloji Yigini
@@ -120,7 +135,7 @@ Icerik statusleri (content/config.ts):
 
 `getPublishedArticles()` fonksiyonu sadece `published` statusundeki makaleleri dondurur.
 
-### SEO / Yapilandirilmis Veri & AEO / GEO Kuralları (Kritik - Yapay Zeka Arama Motorları)
+### SEO / Yapilandirilmis Veri & AEO / GEO Kuralları
 
 - **BaseLayout**: Genel `MedicalWebPage` JSON-LD + robots max-image-preview + og:image:alt
 - **ArticleSchema**: Makale bazlı `["MedicalWebPage", "Article"]` + `reviewedBy` + `citation`
@@ -128,9 +143,10 @@ Icerik statusleri (content/config.ts):
 - **Yazar Kimliği E-E-A-T Uyumlaştırması (Kritik AEO/GEO)**:
   - Doç. Dr. Senai Aksoy'un tüm şemalardaki benzersiz `@id` bilgisi kanonik olarak `https://senaiaksoy.net/#person` olmalıdır. Bu kimlik `ArticleSchema.astro`, `EditorKunyesi.astro` ve `yazar/senai-aksoy.astro` üzerinde ortaktır.
   - Hekim otoritesini güçlendirmek için biyografi sayfasında `sameAs` array'ine hekimin Wikidata (`Q139893832`), PubMed yazar arama adresi ve Doctoralia bağlantıları eklenmiştir.
-- **Metin İçi Alıntılar (AEO/GEO)**:
-  - AI alıntılarını artırmak için makalelerdeki `<QuoteBlock>` yazarları kurumsal yerine doğrudan hekim ismi (`author="Doç. Dr. Senai Aksoy"`) olarak atanır.
-  - ChatGPT ve Perplexity gibi yapay zeka motorlarının alıntıları çektiği ilk %30 dilimine (HizliCevap / BLUF) birincil kaynak linkleri (PubMed / DOI vb.) serpiştirilir.
+- **Uzman katkısı ve kısa cevap**:
+  - Eski `<QuoteBlock>` alanları tarafsız klinik çerçevedir; hekim alıntısı veya imzası taşımaz.
+  - Dr. Aksoy imzalı bir yaklaşım yalnızca kendisine sorulan konuya özel soru, gerçek yanıt, yanıt tarihi ve açık yayın onayı kaydedildiğinde `expertContribution` üzerinden gösterilir.
+  - İlk kısa cevap okurun sorusunu doğal biçimde yanıtlar. Kritik klinik sonuç varsa 1-2 birincil veya güçlü ikincil kaynakla izlenebilir kılınır; sırf alıntılanma amacıyla kaynak ya da anahtar kelime yığılmaz.
 - **Wikidata & Wikipedia Bağlantıları (Semantik Şema)**:
   - Makalenin konusu olan tıbbi entity (ör. PCOS, Endometriozis, AMH), `ArticleSchema.astro` içinde otomatik olarak eşlenen Wikidata (Wikidata Q-ID ve Wikipedia URL'leri) ile `about` alanı altındaki `sameAs` dizisi üzerinden arama motorlarına bildirilmelidir.
 - **VideoObject Şeması**:
@@ -151,6 +167,7 @@ Makale frontmatter'da kullanilabilir alanlar:
 title: "Makale Basligi"
 description: "Kisa aciklama"
 category: "Kategori"
+templateVersion: "2026-09"
 recommendationGrade: "B"     # A | B | C | D/E
 status: "published"          # draft | in_review | published
 publishDate: 2024-01-01
@@ -162,6 +179,15 @@ authorYoutube: "https://www.youtube.com/@DocentDrSenaiAksoy"  # varsa
 medicalReviewer: "Reviewer Adi"
 reviewerTitle: "Reviewer Unvani"
 reviewDate: 2026-04-01
+expertContribution:
+  title: "Dr. Aksoy'un yaklaşımı"
+  question: "Bu konuda klinik kararı en çok hangi bulgu değiştirir?"
+  text: "Dr. Aksoy'un verdiği ve onayladığı yanıt"
+  author: "Doç. Dr. Senai Aksoy"
+  authorTitle: "Kadın Hastalıkları ve Doğum Uzmanı"
+  authorUrl: "https://tupbebek.com/yazar/senai-aksoy/"
+  answeredAt: 2026-04-01
+  approvalStatus: "approved"
 image: "/images/..."
 imageAlt: "Gorsel aciklamasi"
 featured: false
@@ -222,6 +248,7 @@ Yeni bir makale eklenirken veya mevcut makale komple yenilenirken, final duzenle
 
 - Yazar adi
 - YouTube adresi (varsa)
+- Dr. Aksoy'a sorulacak konuya ozel soru; yayindan once gercek yanit, yanit tarihi ve onay kaydi
 
 ### Kod Kalitesi
 
@@ -257,4 +284,3 @@ When running shell commands or scripting on this Windows system:
 - **Avoid Complex Quote Escaping in Shells**: Writing inline Node/Python commands with escaped double quotes (`node -e "const fs=require('fs'); ... \"fr\" ... "`) fails on Windows CLI shells. Instead, write a clean temporary scratch script file and run it.
 - **UTF-8 Output Configuration**: Windows console defaults to Turkish `cp1254` encoding, which crashes on emojis or non-ASCII characters. Always reconfigure script output streams to UTF-8 (e.g. `sys.stdout.reconfigure(encoding='utf-8')` in Python or `process.stdout.setEncoding('utf-8')` in Node) when outputting logs.
 - **File Encoding Warnings**: Be aware that file checking logs might be output in `utf-16le` format, which can cause viewing tool failures. Transcode them to `utf-8` using commands like `Get-Content -Encoding UTF8` if they fail to open.
-

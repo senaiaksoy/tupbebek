@@ -10,7 +10,7 @@ const statusEnum = z.enum(['draft', 'in_review', 'published']);
 const recommendationGradeEnum = z.enum(['A', 'B', 'C', 'D/E']);
 const contentTypeEnum = z.enum(['portal_article', 'editor_column']).default('portal_article');
 const imageSourceTypeEnum = z.enum(['original', 'licensed', 'ai-assisted']);
-const templateVersionEnum = z.enum(['2026-07', '2026-08']);
+const templateVersionEnum = z.enum(['2026-07', '2026-08', '2026-09']);
 const referenceTypeEnum = z.enum([
   'journalArticle',
   'systematicReview',
@@ -61,10 +61,13 @@ const authorSchema = z.object({
 
 const expertContributionSchema = z.object({
   title: z.string().optional(),
+  question: z.string().min(10),
   text: z.string().min(1),
-  author: z.string().min(1),
+  author: z.literal('Doç. Dr. Senai Aksoy'),
   authorTitle: z.string().optional(),
   authorUrl: z.string().url().optional(),
+  answeredAt: z.date(),
+  approvalStatus: z.literal('approved'),
 });
 
 const articleFrontmatterSchema = z.object({
@@ -119,7 +122,8 @@ const articleFrontmatterSchema = z.object({
   reviewerTitle: z.string().optional(),
   reviewDate: z.date().optional(),
   approvedBy: z.string().optional(),
-  // Yalnızca gerçekten yazılmış, konuya özel ve imzalı katkılar gösterilir.
+  // Yalnızca Dr. Aksoy'a sorulmuş konuya özel soru, gerçek yanıt ve açık yayın
+  // onayı birlikte kaydedildiğinde imzalı katkı gösterilir.
   expertContribution: expertContributionSchema.optional(),
 
   // --- Bilimsel Referanslar ---
@@ -189,6 +193,14 @@ const articleFrontmatterSchema = z.object({
       code: z.ZodIssueCode.custom,
       path: ['recommendationGrade'],
       message: 'Published articles must include recommendationGrade or explicitly hide the grade card.',
+    });
+  }
+
+  if (data.templateVersion === '2026-09' && !data.expertContribution) {
+    ctx.addIssue({
+      code: z.ZodIssueCode.custom,
+      path: ['expertContribution'],
+      message: 'Published 2026-09 articles require a topic-specific Dr. Aksoy question, answer, date, and approval record.',
     });
   }
 });
