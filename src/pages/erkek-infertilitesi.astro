@@ -105,7 +105,12 @@ const itemListSchema = buildHubItemListSchema({
 });
 ---
 
-<BaseLayout title={pageTitle} description={pageDescription}>
+<BaseLayout
+    title={pageTitle}
+    description={pageDescription}
+    preloadImage="/images/library/hastalik/erkekinfertilite.webp"
+    preloadImageMedia="(min-width: 768px)"
+>
     <Header />
     <script type="application/ld+json" is:inline set:html={safeJsonLdStringify(faqSchema)} />
     <script type="application/ld+json" is:inline set:html={safeJsonLdStringify(itemListSchema)} />
