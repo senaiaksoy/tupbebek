@@ -11,11 +11,18 @@ authorYoutube: "https://www.youtube.com/@DocentDrSenaiAksoy"
 medicalReviewer: "tupbebek.com Editöryal Ekip"
 reviewerTitle: "Tıbbi Yayın Ekibi"
 reviewDate: 2026-05-14
-lastModified: 2026-07-13
+lastModified: 2026-08-19
+evidenceAsOf: 2026-08-19
+reviewScope: "ESHRE 2025 yumurtalık uyarımı güncellemesi, ASRM yumurtalık rezervi görüşü, AMH'nin gebelik öngörüsündeki sınırları, DHEA ve büyüme hormonu ifadeleri ile video metadata ve render yolu yeniden değerlendirildi."
 category: "Tanı ve Testler"
 recommendationGrade: B
 image: "/images/makaleler/dusuk-amh-hamilelik.webp"
 imageAlt: "Sakin oturma odasında kadın, düşük AMH ve yumurtalık rezervi üzerine bilgi notunu okuyor"
+videoId: "LyLGywUUipg"
+videoTitle: "Düşük AMH Hakkındaki 4 Korku ve Gerçekler"
+videoDescription: "Düşük AMH'nin ne anlama geldiğini, hangi bulgularla birlikte değerlendirilmesi gerektiğini ve sık sorulan tedavi beklentilerinin kanıt sınırlarını anlatan bilgilendirme videosu."
+videoUploadDate: 2025-09-17
+videoThumbnailUrl: "https://i.ytimg.com/vi/LyLGywUUipg/maxresdefault.jpg"
 references:
   - title: "Testing and interpreting measures of ovarian reserve: a committee opinion"
     authors: "Practice Committee of the American Society for Reproductive Medicine"
@@ -40,12 +47,12 @@ references:
     year: 2011
     doi: "10.1093/humupd/dmq034"
     pmid: "20667894"
-  - title: "ESHRE guideline: ovarian stimulation for IVF/ICSI"
-    authors: "Ovarian Stimulation TEGGO"
-    journal: "Human Reproduction Open"
-    year: 2020
-    doi: "10.1093/hropen/hoaa009"
-    pmid: "32395637"
+  - title: "Ovarian stimulation for IVF/ICSI: update 2025"
+    type: "guideline"
+    authors: "The ESHRE Guideline Group on Ovarian Stimulation; Ata B et al."
+    journal: "European Society of Human Reproduction and Embryology"
+    year: 2025
+    url: "https://www.eshre.eu/-/media/sitecore-files/Guidelines/COS/2025/ESHRE-OS-guideline-updateNov-2025v22.pdf"
   - title: "A new more detailed stratification of low responders to ovarian stimulation: from a poor ovarian response to a low prognosis concept"
     authors: "POSEIDON Group, Alviggi C, Andersen CY, Buehler K, Conforti A, De Placido G et al."
     journal: "Fertility and Sterility"
@@ -57,12 +64,11 @@ references:
 import HizliCevap from '../../components/HizliCevap.astro';
 import Accordion from "../../components/global/Accordion.astro";
 import MedicalInfoBox from '../../components/global/MedicalInfoBox.astro';
-import Video from '../../components/global/Video.astro';
 import InlineEvidence from '../../components/InlineEvidence.astro';
 import QuoteBlock from '../../components/global/QuoteBlock.astro';
 
 <HizliCevap question="Düşük AMH nedir, hamileliğe engel midir?">
-Azalmış yumurta rezervini düşündüren bir laboratuvar bulgusudur; ancak tek başına gebelik olup olmayacağını söylemez. AMH testi için kullanılan eşikler laboratuvara ve yaşa göre değişebilir; pratikte yaklaşık 1 ng/mL altı düşük rezerv açısından dikkat gerektirir, daha düşük değerlerde ise antral folikül sayısı (AFC) ve yaş yorumu daha da önem kazanır. ASRM komite görüşüne göre Anti-Müllerian hormon (AMH), yumurtalıkların uyarı tedavisine vereceği yanıtı ve elde edilecek yumurta sayısını öngörmede yararlıdır ([ASRM 2020](https://pubmed.ncbi.nlm.nih.gov/33280722/)); canlı doğum veya doğal gebelik olasılığını tek başına öngörmedeki gücü ise sınırlıdır ([Iliodromiti 2014](https://pubmed.ncbi.nlm.nih.gov/24532220/)). Bu nedenle “doğal gebelik mi, aşılama mı, tüp bebek mi?” sorusu yaş, AFC, FSH/E2, tüpler ve sperm analiziyle birlikte yanıtlanmalıdır.
+  AMH, yumurtalık rezervi hakkında fikir veren bir kan testidir; tek başına gebelik olup olmayacağını göstermez. Yaş, antral folikül sayısı (AFC), yumurtlama, tüpler, rahim ve sperm analizi birlikte değerlendirilir; tek bir AMH eşiği herkese aynı anlamı taşımaz. ASRM’ye göre AMH, IVF uyarımına verilecek yanıtı ve elde edilecek yumurta sayısını öngörmede yararlıdır; canlı doğum veya doğal gebelik olasılığını tek başına öngörme gücü sınırlıdır ([ASRM 2020](https://pubmed.ncbi.nlm.nih.gov/33280722/)).
 </HizliCevap>
 
 <div class="mesh-hero pt-12 pb-20 px-4 md:px-0 -mx-4 md:-mx-0 mb-12 rounded-3xl shadow-sm border border-white/40" style="background: linear-gradient(135deg, #fff1f2 0%, #fdf2f8 50%, #eff6ff 100%);">
@@ -78,12 +84,11 @@ Azalmış yumurta rezervini düşündüren bir laboratuvar bulgusudur; ancak tek
     </p>
   </div>
 </div>
-
 <div class="max-w-4xl mx-auto space-y-12 blog-content-reveal">
 
 <div data-reveal>
 <MedicalInfoBox title="Hızlı Bakış: Rezerv Sonucu Nasıl Okunmalı?" icon="AMH" color="rose">
-**AMH testi yumurta rezervini tahmin eder; yumurta kalitesini veya canlı doğumu tek başına ölçmez.** <InlineEvidence grade="B" /> Sonuç, yaş ve antral folikül sayısı (AFC) ile birlikte okunmalıdır. Özellikle 35 yaş üzeri, düzensiz adet, önceki düşük yanıtlı IVF veya ailede erken menopoz öyküsü varsa değerlendirmeyi geciktirmeyin. Polikistik over sendromunda AMH çoğu zaman yüksektir; azalmış rezervle karıştırılmamalıdır.
+**AMH testi yumurta rezervi hakkında fikir verir; yumurta kalitesini veya canlı doğumu tek başına ölçmez.** <InlineEvidence grade="B" /> Sonuç, yaş ve antral folikül sayısı (AFC) ile birlikte okunmalıdır. 35 yaş üzeri olmak, düzensiz adet görmek, önceki IVF yanıtının düşük olması veya ailede erken menopoz öyküsü bulunması gibi durumlarda değerlendirme zamanlamasını hekiminizle konuşun. Polikistik over sendromunda AMH çoğu zaman yüksektir; bu bulgu azalmış rezervle karıştırılmamalıdır.
 </MedicalInfoBox>
 </div>
 
@@ -99,18 +104,14 @@ Azalmış yumurta rezervini düşündüren bir laboratuvar bulgusudur; ancak tek
 - [Sıkça sorulan sorular](#faq)
 
 <div data-reveal>
-<Video id="LyLGywUUipg" />
-</div>
-
-<div data-reveal>
 <h2 id="amh-nedir">AMH Nedir? “Düşük” Ne Anlama Gelir?</h2>
 
 **AMH (Anti-Müllerian Hormon)**, yumurtalıklardaki küçük antral ve preantral foliküllerden salgılanır. Klinik pratikte en sık yumurta rezervini ve IVF uyarımına olası yanıtı tahmin etmek için kullanılır. <InlineEvidence grade="B" />
 
 - **Ne söyler?** Kalan yumurta havuzunun büyüklüğü hakkında yaklaşık bilgi verir.
 - **Ne söylemez?** Yumurta kalitesini, embriyo kromozom sağlığını veya gebelik olasılığını tek başına göstermez.
-- **Değeri kaç olmalıdır?** Tek “ideal sayı” yoktur. Laboratuvar aralığı, yaş ve AFC birlikte okunur. Pratikte ~1 ng/mL altı düşük rezerv açısından dikkat çeker.
-- **Neden değişebilir?** Laboratuvar yöntemi, yaş, ilaçlar, yumurtalık cerrahisi, endometriozis ve klinik tablo yorumu etkiler.
+- **Değeri kaç olmalıdır?** Tek “ideal sayı” yoktur. Laboratuvar aralığı, yaş ve AFC birlikte okunur; tek başına bir eşik üzerinden karar verilmez.
+- **Neden değişebilir?** Laboratuvar yöntemi, yaş, hormonal doğum kontrolü, yumurtalık cerrahisi, endometriozis ve klinik tablo sonucu etkileyebilir.
 
 ASRM’ye göre AMH ve AFC, düşük veya yüksek yanıtı öngörmede yararlıdır; canlı doğum gibi kalite odaklı sonuçlarla ilişkileri daha zayıftır. Bu yüzden tek bir sonuca bakıp karar vermek doğru değildir. Asıl soru “rakam kaç?” değil, “yaş ve AFC ile hangi yol daha rasyonel?” olmalıdır.
 
@@ -123,12 +124,12 @@ ASRM’ye göre AMH ve AFC, düşük veya yüksek yanıtı öngörmede yararlıd
 <div data-reveal>
 <h2 id="gebelik-sansi">Azalmış Rezerv ve Gebelik Şansı: Doğal mı, IVF mi?</h2>
 
-Doğal gebelik bazı hastalarda mümkündür; burada belirleyici olan yalnızca laboratuvar rakamı değildir. Özellikle kadının yaşı, yumurtlamanın olup olmadığı, tüplerin açık olup olmadığı, rahim içi patoloji varlığı ve sperm analizi birlikte değerlendirilir.
+Doğal gebelik düşük AMH ile de mümkün olabilir; burada belirleyici olan yalnızca laboratuvar rakamı değildir. Kadının yaşı, yumurtlamanın olup olmadığı, tüplerin açık olup olmadığı, rahim içi patoloji varlığı ve sperm analizi birlikte değerlendirilir.
 
 Gebelik planı için pratik yaklaşım:
 
-- **Genç yaş ve düzenli yumurtlama:** Kısa süreli doğal deneme veya seçilmiş hastada [aşılama (IUI)](/makaleler/iui-nedir/) değerlendirilebilir.
-- **35 yaş üzeri veya uzun infertilite süresi:** Zaman kaybını azaltmak için daha erken [tüp bebek süreci](/makaleler/tup-bebek-sureci-rehber/) konuşulabilir.
+- **Genç yaş ve düzenli yumurtlama:** Diğer bulgular da uygunsa doğal deneme veya seçilmiş hastada [aşılama (IUI)](/makaleler/iui-nedir/) değerlendirilebilir.
+- **35 yaş üzeri veya uzun infertilite süresi:** Zamanlamayı uzatmamak için [tüp bebek süreci](/makaleler/tup-bebek-sureci-rehber/) daha erken gündeme gelebilir.
 - **Çok düşük rezerv + düşük AFC:** IVF’de az yumurta beklenebilir; hedef “çok yumurta” değil, elde edilen yumurtaları en doğru protokolle değerlendirmektir.
 - **Şu an gebelik planı yoksa:** Yaş ve rezerv birlikte uygunsa [yumurta veya embriyo dondurma](/fertilite-koruma/) seçenekleri gündeme gelebilir.
 </div>
@@ -139,8 +140,8 @@ Gebelik planı için pratik yaklaşım:
 | Klinik durum | İlk değerlendirme | Stratejik soru | İlgili rehber |
 | :--- | :--- | :--- | :--- |
 | **35 yaş altı + azalmış rezerv** | AMH testi tekrarı/yorumu, AFC, FSH/E2, semen analizi | Gerçek rezerv azalması mı, laboratuvar/klinik uyumsuzluk mu? | [Hormon paneli](/hormon-paneli/) |
-| **35-40 yaş + azalmış rezerv** | Hızlandırılmış infertilite değerlendirmesi | Doğal deneme için süre var mı, IVF daha rasyonel mi? | [Kadın infertilitesi](/kadin-infertilitesi/) |
-| **40 yaş üzeri + azalmış rezerv** | Yaş, AFC ve önceki tedavi yanıtı birlikte okunur | Kendi yumurtasıyla gerçekçi hedef nedir? | [Tüp bebek süreci](/makaleler/tup-bebek-sureci-rehber/) |
+| **35-40 yaş + azalmış rezerv** | İnfertilite değerlendirmesini geciktirmemek | Doğal deneme için süre var mı, IVF ne zaman konuşulmalı? | [Kadın infertilitesi](/kadin-infertilitesi/) |
+| **40 yaş üzeri + azalmış rezerv** | Yaş, AFC ve önceki tedavi yanıtı birlikte okunur | Kişisel hedef ve zamanlama nasıl belirlenmeli? | [Tüp bebek süreci](/makaleler/tup-bebek-sureci-rehber/) |
 | **Gebelik planı yok + düşük rezerv riski** | Yaş, AMH, AFC, aile öyküsü | Yumurta dondurma için zaman penceresi var mı? | [Fertilite koruma](/fertilite-koruma/) |
 
 <figure class="my-8">
@@ -191,7 +192,7 @@ Evet, mümkün olabilir; ancak bu soru sadece AMH ile yanıtlanmaz. Yaşınız, 
 </Accordion>
 
 <Accordion title="AMH kaç olursa hamile kalınır?">
-Gebelik için tek bir AMH eşiği yoktur. Çok düşük AMH ile gebelik mümkün olabilir; normal AMH ise gebeliği garanti etmez. AMH daha çok yumurtalık rezervi ve tedaviye beklenen yumurta yanıtı hakkında bilgi verir.
+  Gebelik için tek bir AMH eşiği yoktur. Düşük AMH ile gebelik mümkün olabilir; normal AMH ise gebeliği garanti etmez. AMH daha çok yumurtalık rezervi ve tedaviye beklenen yumurta yanıtı hakkında bilgi verir.
 </Accordion>
 
 <Accordion title="AMH düşüklüğü adet düzensizliği yapar mı?">
@@ -199,11 +200,11 @@ AMH düşüklüğü tek başına her zaman adet düzensizliği yapmaz. Düzensiz
 </Accordion>
 
 <Accordion title="AMH 0.2 çok mu düşük? Hemen tüp bebeğe mi başlamalıyım?">
-AMH 0.2 genellikle belirgin düşük rezervle uyumludur; fakat tedavi kararı yaş, AFC, FSH/E2, infertilite süresi ve eşlik eden faktörlere göre verilir. Bazı hastalarda hızlı IVF değerlendirmesi rasyonel olurken, bazı hastalarda önce eksik tanı başlıkları tamamlanır.
+  AMH 0,2 ng/mL gibi bir değer düşük rezervle uyumlu olabilir; yine de tek başına tedavi kararı verdirmez. Yaş, AFC, FSH/E2, infertilite süresi ve eşlik eden faktörler birlikte değerlendirilir. Bazı hastalarda IVF değerlendirmesi erkenden konuşulurken, bazı hastalarda önce eksik tanı başlıkları tamamlanır.
 </Accordion>
 
 <Accordion title="AMH değerini yükseltmek mümkün mü?">
-AMH’yi güvenilir biçimde yükselttiği kanıtlanmış bir ilaç veya takviye yoktur. D vitamini eksikliği, yaşam tarzı ve laboratuvar farkları sonucu etkileyebilir; ama tedavide ana hedef AMH sayısını yükseltmek değil, mevcut rezervi doğru zamanda değerlendirmektir. Sık sorulan [DHEA ve büyüme hormonu desteği](/makaleler/dhea-buyume-hormonu-tup-bebek/) için de kanıt benzerdir: yumurta sayısını biraz etkileyebilseler bile canlı doğumu artırdıkları gösterilememiştir.
+  AMH’yi güvenilir biçimde yükselttiği kanıtlanmış bir ilaç veya takviye yoktur. Laboratuvar yöntemi, hormonal ilaçlar ve klinik durum sonucu etkileyebilir; tedavide ana hedef AMH sayısını yükseltmek değil, mevcut rezervi doğru zamanda değerlendirmektir. Sık sorulan [DHEA ve büyüme hormonu desteği](/makaleler/dhea-buyume-hormonu-tup-bebek/) için kanıt tutarlı değildir. ESHRE 2025 güncellemesine göre DHEA düşük yanıt verenlerde önerilmez; büyüme hormonu ise bu grupta muhtemelen önerilmez ([ESHRE 2025](https://www.eshre.eu/-/media/sitecore-files/Guidelines/COS/2025/ESHRE-OS-guideline-updateNov-2025v22.pdf)).
 </Accordion>
 
 <Accordion title="Düşük AMH yumurta kalitesinin de kötü olduğu anlamına gelir mi?">
@@ -221,30 +222,4 @@ Hayır. AMH daha çok yumurta sayısı ve tedaviye yanıtla ilişkilidir. Yumurt
 - [Kanser tedavisi öncesi fertilite koruma](/makaleler/kanser-ve-fertilite/)
 - [Tüp bebek süreci adım adım](/makaleler/tup-bebek-sureci-rehber/)
 </div>
-
 </div>
-
-export const amhFaqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Düşük AMH nedir, hamileliğe engel midir?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Düşük AMH yumurtalık rezervinin azaldığını düşündüren bir bulgudur; ancak tek başına hamileliğe engel anlamına gelmez. AMH gebelik şansını tek başına belirlemez; yaş, AFC, yumurtlama, tüpler, rahim ve sperm analizi birlikte değerlendirilmelidir."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "AMH kaç olursa hamile kalınır?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Gebelik için tek bir AMH eşiği yoktur. Düşük AMH ile gebelik mümkün olabilir; normal AMH ise gebeliği garanti etmez. AMH, yaş, AFC, yumurtlama, tüpler, rahim ve sperm analiziyle birlikte yorumlanmalıdır."
-      }
-    }
-  ]
-};
-
-<script type="application/ld+json" set:html={JSON.stringify(amhFaqSchema)} />
