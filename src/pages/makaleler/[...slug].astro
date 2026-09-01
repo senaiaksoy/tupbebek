@@ -75,6 +75,7 @@ const articleUrl = resolveCanonicalUrl({
 });
 const sanitizedImage = sanitizeImage(entry.data.image);
 const articleHub = getArticleHub(entry.slug);
+const isEditorColumn = entry.data.contentType === 'editor_column';
 const imageSourceLabels = {
     original: 'Özgün görsel',
     licensed: 'Lisanslı görsel',
@@ -118,6 +119,17 @@ const heroSrcSet = getResponsiveImageSrcSet(sanitizedImage);
         <!-- Full-width article header -->
         <div class="max-w-3xl mx-auto px-4 md:px-6">
             <header class="mb-8">
+                {isEditorColumn && (
+                    <a
+                        href="/bas-editor-kosesi/"
+                        class="mb-3 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-primary-700 hover:text-primary-900"
+                    >
+                        <span>Baş Editör Köşesi</span>
+                        <span aria-hidden="true">·</span>
+                        <span>İmzalı perspektif</span>
+                    </a>
+                )}
+
                 <!-- Title -->
                 <h1 class="font-serif text-3xl md:text-4xl lg:text-[2.75rem] font-bold text-gray-900 leading-[1.18] mb-5">
                     {entry.data.title}
@@ -142,8 +154,10 @@ const heroSrcSet = getResponsiveImageSrcSet(sanitizedImage);
                 />
 
                 {entry.data.summary && (
-                    <section class="mt-5 border-l-4 border-primary-500 bg-primary-50/60 px-5 py-4" aria-labelledby="short-answer-title">
-                        <h2 id="short-answer-title" class="text-sm font-bold text-primary-900 uppercase tracking-wider mb-2">Kısa cevap</h2>
+                    <section class="mt-5 border-l-4 border-primary-500 bg-primary-50/60 px-5 py-4" aria-labelledby="article-summary-title">
+                        <h2 id="article-summary-title" class="text-sm font-bold text-primary-900 uppercase tracking-wider mb-2">
+                            {isEditorColumn ? 'Baş editörün notu' : 'Kısa cevap'}
+                        </h2>
                         <p class="text-sm md:text-base text-gray-700 leading-relaxed">{entry.data.summary}</p>
                         {entry.data.summaryReferences && entry.data.summaryReferences.length > 0 && (
                             <p class="mt-3 text-xs md:text-sm text-gray-600 leading-relaxed">
