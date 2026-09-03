@@ -214,7 +214,7 @@ function canonicalRedirectFor(requestUrl) {
 
   // 410 Gone: template artifacts, legacy probes, and retired topic pages
   // without a relevant replacement. Avoid intent-mismatched 301 redirects.
-  const gone410Exact = new Set(gone410ExactPaths);
+  const gone410Exact = new Set(${JSON.stringify(gone410ExactPaths)});
   if (gone410Exact.has(url.pathname) || url.pathname.startsWith('/undefined/') || url.pathname.startsWith('/public/') || url.pathname.startsWith('/blog/sayfa/')) {
     return new Response('Gone', {
       status: 410,
