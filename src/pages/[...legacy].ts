@@ -1,5 +1,5 @@
 import type { APIRoute } from 'astro';
-import { normalizeInternalPath } from '../utils/routeAliases.mjs';
+import { gone410ExactPaths, normalizeInternalPath } from '../utils/routeAliases.mjs';
 
 export const prerender = false;
 
@@ -24,16 +24,10 @@ const WILDCARD_FALLBACKS: Array<[string, string]> = [
   ['/makaleler/endoskopik-cerrahi/', '/makaleler/'],
 ];
 
-// 410 Gone: paths that never had real content (template-render bug artifacts,
-// legacy PHP probes). Cloudflare Pages _redirects does not support 410, so
-// the Worker returns it directly. 410 is processed faster than 301-to-home
-// by Google and avoids the soft-404 risk Glenn Gabe documented for
-// 301s-to-less-relevant-pages.
-const GONE_410_EXACT = new Set<string>([
-  '/modules.php',
-  '/h2n.php',
-  '/undefined',
-]);
+// 410 Gone: template-render artifacts, legacy PHP probes, and retired topic
+// pages without a relevant replacement. Cloudflare Pages _redirects does not
+// support 410, so the Worker returns it directly and avoids irrelevant 301s.
+const GONE_410_EXACT = new Set<string>(gone410ExactPaths);
 const GONE_410_PREFIXES: string[] = [
   '/undefined/',
   '/public/',

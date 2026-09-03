@@ -11,6 +11,7 @@ const recommendationGradeEnum = z.enum(['A', 'B', 'C', 'D/E']);
 const contentTypeEnum = z.enum(['portal_article', 'editor_column']).default('portal_article');
 const imageSourceTypeEnum = z.enum(['original', 'licensed', 'ai-assisted']);
 const templateVersionEnum = z.enum(['2026-07', '2026-08', '2026-09']);
+const reviewTypeEnum = z.enum(['medical', 'editorial']);
 const referenceTypeEnum = z.enum([
   'journalArticle',
   'systematicReview',
@@ -63,6 +64,7 @@ const expertContributionSchema = z.object({
   title: z.string().optional(),
   question: z.string().min(10),
   text: z.string().min(1),
+  evidenceNote: z.string().min(20).optional(),
   author: z.literal('Doç. Dr. Senai Aksoy'),
   authorTitle: z.string().optional(),
   authorUrl: z.string().url().optional(),
@@ -120,6 +122,7 @@ const articleFrontmatterSchema = z.object({
   authorYoutube: z.string().url().optional(),
   medicalReviewer: z.string().optional(),
   reviewerTitle: z.string().optional(),
+  reviewType: reviewTypeEnum.optional(),
   reviewDate: z.date().optional(),
   approvedBy: z.string().optional(),
   // Yalnızca Dr. Aksoy'a sorulmuş konuya özel soru, gerçek yanıt ve açık yayın

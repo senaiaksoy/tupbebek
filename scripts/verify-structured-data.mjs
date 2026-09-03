@@ -136,15 +136,28 @@ function validateFaqPage(filePath, faqPage, visibleText) {
   }
 }
 
-function validateArticlePage(filePath, nodes) {
+function validateArticlePage(filePath, nodes, html) {
   const page = relative(filePath);
   const articleNodes = nodes.filter((node) => typeIncludes(node, 'Article'));
+  const hasEditorialReviewMarker =
+    /aria-label=(?:["'])Yazar ve editoryal kontrol bilgileri(?:["'])/u.test(html);
+  const claimsMedicalApproval =
+    /tıbbi doğruluk ve güncel klinik protokoller açısından incelenmiş ve onaylanmıştır/iu.test(html);
+  const disclosesEditorialReviewLimit =
+    /adlandırılmış bağımsız bir hekim incelemesi anlamına gelmez/iu.test(html);
 
   stats.articlePages += 1;
 
   if (articleNodes.length === 0) {
     failures.push(`${page} is an article route but has no Article JSON-LD node.`);
     return;
+  }
+
+  if (hasEditorialReviewMarker && claimsMedicalApproval) {
+    failures.push(`${page} editorial review is paired with a false medical-approval claim.`);
+  }
+  if (hasEditorialReviewMarker && !disclosesEditorialReviewLimit) {
+    failures.push(`${page} editorial review is missing its visible medical-review limitation.`);
   }
 
   for (const article of articleNodes) {
@@ -160,8 +173,14 @@ function validateArticlePage(filePath, nodes) {
     if (!article.author) {
       failures.push(`${page} Article node is missing author.`);
     }
-    if (!article.reviewedBy) {
+    if (hasEditorialReviewMarker && article.reviewedBy) {
+      failures.push(`${page} editorial review must not be represented as reviewedBy.`);
+    }
+    if (!hasEditorialReviewMarker && !article.reviewedBy) {
       failures.push(`${page} Article node is missing reviewedBy.`);
+    }
+    if (hasEditorialReviewMarker && article.lastReviewed) {
+      failures.push(`${page} editorial review must not be represented as lastReviewed.`);
     }
     if (!article.citation) {
       failures.push(`${page} Article node is missing citation.`);
@@ -277,7 +296,7 @@ if (!fs.existsSync(distDir)) {
     }
 
     if (isArticleDetail(filePath)) {
-      validateArticlePage(filePath, nodes);
+      validateArticlePage(filePath, nodes, html);
     }
   }
 }

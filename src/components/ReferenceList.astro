@@ -1,6 +1,6 @@
 ---
 /**
- * ReferenceList — Bilimsel referans/kaynak listesi
+ * ReferenceList — Bilimsel ve kurumsal kaynak listesi
  *
  * Makale iceriginin altinda bilimsel kaynaklari numarali
  * liste halinde gosterir. DOI ve URL linkleri iceriri.
@@ -10,6 +10,7 @@
  */
 interface Reference {
     title: string;
+    type?: 'journalArticle' | 'systematicReview' | 'guideline' | 'regulation' | 'officialWebPage' | 'book' | 'report';
     authors?: string;
     journal?: string;
     year?: number;
@@ -26,16 +27,26 @@ const { references } = Astro.props;
 const doiUrl = (doi: string) =>
     `https://doi.org/${doi.trim().replace(/[()]/g, (char) => (char === '(' ? '%28' : '%29'))}`;
 const pubMedUrl = (pmid: string) => `https://pubmed.ncbi.nlm.nih.gov/${pmid.trim()}/`;
+const referenceTypeLabel = (ref: Reference) => {
+    if (ref.type === 'officialWebPage') return 'Resmî web kaynağı';
+    if (ref.type === 'guideline') return 'Klinik rehber';
+    if (ref.type === 'regulation') return 'Mevzuat';
+    if (ref.type === 'book') return 'Kitap';
+    if (ref.type === 'report') return 'Rapor';
+    if (ref.type === 'systematicReview') return 'Sistematik derleme';
+    if (ref.type === 'journalArticle' || ref.pmid || ref.doi || ref.journal) return 'Bilimsel yayın';
+    return 'Kaynak';
+};
 ---
 
 {references && references.length > 0 && (
-    <section class="mt-12 pt-8 border-t border-gray-200" aria-label="Bilimsel kaynaklar">
+    <section class="mt-12 pt-8 border-t border-gray-200" aria-label="Kaynaklar">
         <div class="flex items-center gap-3 mb-6">
             <div class="w-10 h-10 rounded-xl bg-primary-50 flex items-center justify-center shrink-0">
                 <span class="material-symbols-outlined text-primary-600 text-xl">science</span>
             </div>
             <div>
-                <h2 class="font-headline text-lg font-bold text-gray-900">Bilimsel Kaynaklar</h2>
+                <h2 class="font-headline text-lg font-bold text-gray-900">Kaynaklar</h2>
                 <p class="text-xs text-gray-500">{references.length} referans</p>
             </div>
         </div>
@@ -52,6 +63,9 @@ const pubMedUrl = (pmid: string) => `https://pubmed.ncbi.nlm.nih.gov/${pmid.trim
                             <span class="font-semibold">{ref.title}</span>
                             {ref.journal && <span class="italic text-gray-500">. {ref.journal}</span>}
                             {ref.year && <span class="text-gray-500"> ({ref.year})</span>}
+                        </p>
+                        <p class="mt-1 text-[11px] font-semibold uppercase tracking-wide text-gray-500">
+                            {referenceTypeLabel(ref)}
                         </p>
                         <div class="flex items-center gap-3 mt-1">
                             {ref.pmid && (

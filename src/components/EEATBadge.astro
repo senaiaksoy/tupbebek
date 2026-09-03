@@ -11,6 +11,7 @@ interface Props {
     authorYoutube?: string;
     medicalReviewer?: string;
     reviewerTitle?: string;
+    reviewType?: 'medical' | 'editorial';
     reviewDate?: string;
     lastModified?: string;
 }
@@ -23,6 +24,7 @@ const {
     authorYoutube,
     medicalReviewer,
     reviewerTitle,
+    reviewType = 'medical',
     reviewDate,
     lastModified,
 } = Astro.props;
@@ -35,11 +37,16 @@ const normalizePerson = (value?: string) =>
         .toLocaleLowerCase('tr-TR');
 
 const isSameAuthorAndReviewer =
+    reviewType === 'medical' &&
     Boolean(medicalReviewer) &&
     normalizePerson(author) === normalizePerson(medicalReviewer);
+const reviewLabel = reviewType === 'editorial' ? 'Editoryal kontrol' : 'Tıbbi inceleme';
+const identityLabel = reviewType === 'editorial'
+    ? 'Yazar ve editoryal kontrol bilgileri'
+    : 'Yazar ve tıbbi inceleme bilgileri';
 ---
 
-<div class="border-y border-gray-200 py-3 text-sm text-gray-600" aria-label="Yazar ve tıbbi inceleme bilgileri">
+<div class="border-y border-gray-200 py-3 text-sm text-gray-600" aria-label={identityLabel}>
     <div class="flex flex-wrap items-center gap-x-2 gap-y-1 leading-relaxed">
         <span class="text-gray-500">{isSameAuthorAndReviewer ? 'Yazan ve tıbben inceleyen' : 'Yazan'}</span>
         {authorUrl ? (
@@ -71,7 +78,7 @@ const isSameAuthorAndReviewer =
     <div class="mt-1 flex flex-wrap gap-x-4 gap-y-1 text-xs text-gray-500">
         {medicalReviewer && !isSameAuthorAndReviewer && (
             <span>
-                Tıbbi inceleme: <strong class="font-semibold text-gray-700">{medicalReviewer}</strong>
+                {reviewLabel}: <strong class="font-semibold text-gray-700">{medicalReviewer}</strong>
                 {reviewerTitle && <> · {reviewerTitle}</>}
             </span>
         )}

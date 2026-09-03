@@ -149,6 +149,7 @@ const heroSrcSet = getResponsiveImageSrcSet(sanitizedImage);
                     authorYoutube={authorYoutube}
                     medicalReviewer={entry.data.medicalReviewer}
                     reviewerTitle={entry.data.reviewerTitle}
+                    reviewType={entry.data.reviewType}
                     reviewDate={reviewDateStr}
                     lastModified={lastModifiedStr}
                 />
@@ -161,7 +162,7 @@ const heroSrcSet = getResponsiveImageSrcSet(sanitizedImage);
                         <p class="text-sm md:text-base text-gray-700 leading-relaxed">{entry.data.summary}</p>
                         {entry.data.summaryReferences && entry.data.summaryReferences.length > 0 && (
                             <p class="mt-3 text-xs md:text-sm text-gray-600 leading-relaxed">
-                                <span class="font-semibold text-gray-700">Başlıca bilimsel dayanaklar:</span>{' '}
+                                <span class="font-semibold text-gray-700">Başlıca kaynaklar:</span>{' '}
                                 {entry.data.summaryReferences.map((source, index) => (
                                     <>
                                         {index > 0 && <span aria-hidden="true"> · </span>}
@@ -248,6 +249,7 @@ const heroSrcSet = getResponsiveImageSrcSet(sanitizedImage);
                           topic={entry.data.category}
                           question={entry.data.expertContribution.question}
                           note={entry.data.expertContribution.text}
+                          evidenceNote={entry.data.expertContribution.evidenceNote}
                           author={entry.data.expertContribution.author}
                           authorTitle={entry.data.expertContribution.authorTitle}
                           authorUrl={entry.data.expertContribution.authorUrl}
@@ -259,6 +261,7 @@ const heroSrcSet = getResponsiveImageSrcSet(sanitizedImage);
                         evidenceAsOf={entry.data.evidenceAsOf}
                         reviewScope={entry.data.reviewScope}
                         editorialMethodNote={entry.data.editorialMethodNote}
+                        reviewType={entry.data.reviewType}
                     />
 
                     <nav class="mt-5 text-sm leading-relaxed text-gray-600" aria-label="Konu merkezi">
@@ -281,7 +284,7 @@ const heroSrcSet = getResponsiveImageSrcSet(sanitizedImage);
 
                     <!-- Medical Disclaimer -->
                     <div class="mt-8">
-                        <MedicalDisclaimer />
+                        <MedicalDisclaimer reviewType={entry.data.reviewType} />
                     </div>
                 </article>
 

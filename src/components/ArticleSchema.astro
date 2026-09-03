@@ -36,6 +36,7 @@ interface Props {
             authorYoutube?: string;
             medicalReviewer?: string;
             reviewerTitle?: string;
+            reviewType?: 'medical' | 'editorial';
             publishDate?: Date;
             lastModified?: Date;
             reviewDate?: Date;
@@ -127,7 +128,7 @@ const authorSchema: Record<string, unknown> = isSenaiAksoy
 // Q139893832 entity'sini tek node olarak çözmesini sağlar.
 const isReviewerSenaiAksoy = d.medicalReviewer && /senai\s+aksoy/i.test(d.medicalReviewer);
 const isReviewerOrg = d.medicalReviewer ? /Kurul|Ekip/i.test(d.medicalReviewer) : false;
-const reviewerSchema = d.medicalReviewer
+const reviewerSchema = d.reviewType !== 'editorial' && d.medicalReviewer
     ? (isReviewerSenaiAksoy
         ? (isReviewerOrg
             ? [{ "@id": SENAI_AKSOY_PERSON_ID }, { "@id": EDITORIAL_BOARD_ID }]
@@ -422,7 +423,7 @@ const articleSchema = {
     ...(d.lastModified ? { "dateModified": d.lastModified.toISOString().split('T')[0] } : {}),
     "author": authorSchema,
     ...(reviewerSchema ? { "reviewedBy": reviewerSchema } : {}),
-    ...(d.reviewDate ? { "lastReviewed": d.reviewDate.toISOString().split('T')[0] } : {}),
+    ...(reviewerSchema && d.reviewDate ? { "lastReviewed": d.reviewDate.toISOString().split('T')[0] } : {}),
     "publisher": { "@id": ORG_ID },
     "isPartOf": { "@id": WEBSITE_ID },
     "about": aboutSchema,

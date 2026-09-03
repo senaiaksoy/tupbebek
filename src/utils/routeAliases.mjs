@@ -1,3 +1,21 @@
+export const gone410ExactPaths = [
+  '/modules.php',
+  '/h2n.php',
+  '/undefined',
+  '/blog/amniyon-sivisinin-azligi-da-coklugu-da-bebek-icin-tehlike-isareti',
+  '/blog/bebegin-gec-dogmasi-surmaturite-gun-asimi',
+  '/blog/bebegin-suyu-erken-gelirse-erken-membran-rupturu-emr',
+  '/blog/bebegin-suyu-fazla-ise',
+  '/blog/dogum-sonrasi-vucudumuzda-neler-oluyor',
+  '/blog/hamilelikte-hepatit-sarilik-ve-tedavisi',
+  '/blog/hamilelikte-kabizlik-basurlar-hemoroidler-ve-makat-catlaklari',
+  '/blog/hamilelikte-kabizlik-tehlikeli-midir',
+  '/blog/hamilelikte-tehlikeli-bir-enfeksiyon-sitomegalovirus',
+  '/blog/hamilelikte-yuksek-tansiyon-problemi-olan-anne-adaylari-nelere-dikkat-etmeli',
+  '/blog/plasentanin-erken-ayrilmasi-dekolman-plasenta',
+  '/blog/plasentanin-onde-olmasi-plasenta-previa',
+];
+
 export const routeAliases = {
   '/ar/blog/azoospermia-and-micro-tese': '/makaleler/azospermi-mikro-tese',
   '/ar/blog/bleeding-after-embryo-transfer': '/makaleler/embriyo-transferi-sonrasi-bakim',
@@ -329,14 +347,9 @@ export const routeAliases = {
   // (the '*' glob key here never matched — exact-string lookup, not pattern).
 
   // === 2026-07-06: 50 missing blog slug aliases (GSC redirect drilldown) ===
-  '/blog/amniyon-sivisinin-azligi-da-coklugu-da-bebek-icin-tehlike-isareti': '/makaleler/tup-bebek-sureci-rehber',
-  '/blog/bebegin-gec-dogmasi-surmaturite-gun-asimi': '/makaleler/tup-bebek-sureci-rehber',
-  '/blog/bebegin-suyu-erken-gelirse-erken-membran-rupturu-emr': '/makaleler/tup-bebek-sureci-rehber',
-  '/blog/bebegin-suyu-fazla-ise': '/makaleler/tup-bebek-sureci-rehber',
   '/blog/cep-telefonları-ve-sperm kalitesi': '/makaleler/cep-telefonu-sperm-kalitesi',
   '/blog/cogul-gebelikler-ve-riskleri': '/makaleler/tup-bebek-yanlis-bilinenler',
   '/blog/dis-gebelik-nedir': '/makaleler/beta-hcg-testi#ektopik',
-  '/blog/dogum-sonrasi-vucudumuzda-neler-oluyor': '/makaleler/tup-bebek-sureci-rehber',
   '/blog/dogurganlikbeslenme-iliskisi': '/beslenme-yasam',
   '/blog/dusuk-abortus-nedir': '/makaleler/dusuk-sonrasi-hamilelik-bekleme-suresi#neden-olur',
   '/blog/dusuk-amh-hamilelik-sansi': '/makaleler/dusuk-amh-hamilelik',
@@ -345,11 +358,6 @@ export const routeAliases = {
   '/blog/erkek-kisirligi-besin-takviyeleri': '/makaleler/erkek-dogurganlik-besin-takviyeleri',
   '/blog/erkekte-kisirlik-nedenleri': '/erkek-infertilitesi',
   '/blog/hamilelikte-aspirin-ve-progesteron': '/makaleler/ivf-protokolleri',
-  '/blog/hamilelikte-hepatit-sarilik-ve-tedavisi': '/makaleler/tup-bebek-sureci-rehber',
-  '/blog/hamilelikte-kabizlik-basurlar-hemoroidler-ve-makat-catlaklari': '/makaleler/tup-bebek-sureci-rehber',
-  '/blog/hamilelikte-kabizlik-tehlikeli-midir': '/makaleler/tup-bebek-sureci-rehber',
-  '/blog/hamilelikte-tehlikeli-bir-enfeksiyon-sitomegalovirus': '/makaleler/tup-bebek-sureci-rehber',
-  '/blog/hamilelikte-yuksek-tansiyon-problemi-olan-anne-adaylari-nelere-dikkat-etmeli': '/makaleler/tup-bebek-sureci-rehber',
   '/blog/ilacsiz-tup-bebek-ivm-yontemi-ne-kadar-basarili': '/makaleler/ivf-protokolleri',
   '/blog/izsiz-ameliyat-laparoskopi': '/makaleler/endoskopik-cerrahi-histeroskopi',
   '/blog/kadin-kisirligi-ve-tup-bebek-tedavisinin-onemi': '/kadin-infertilitesi',
@@ -365,8 +373,6 @@ export const routeAliases = {
   '/blog/mikroenjeksiyon-icsi-herkes-icin-uygun-mudur': '/makaleler/mikroenjeksiyon-icsi-nedir',
   '/blog/mol-gebelik-uzum-gebelik': '/makaleler/dusuk-sonrasi-hamilelik-bekleme-suresi#istisnalar',
   '/blog/opk-ve ivf': '/makaleler/opk-ve-ivf',
-  '/blog/plasentanin-erken-ayrilmasi-dekolman-plasenta': '/makaleler/tup-bebek-sureci-rehber',
-  '/blog/plasentanin-onde-olmasi-plasenta-previa': '/makaleler/tup-bebek-sureci-rehber',
   '/blog/polip-nedir-kisirliga-yol-acar-mi': '/makaleler/miyomlar-ve-tup-bebek',
   '/blog/preimplantasyon-genetik-tani-nedir': '/pgt-merkezi',
   '/blog/rahmin-ters-durmasi-kisirliga-neden-olmaz-retrovert-uterus': '/kadin-infertilitesi',

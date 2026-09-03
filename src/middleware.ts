@@ -1,5 +1,5 @@
 import { defineMiddleware } from 'astro:middleware';
-import { normalizeInternalPath } from './utils/routeAliases.mjs';
+import { gone410ExactPaths, normalizeInternalPath } from './utils/routeAliases.mjs';
 
 const TRACKING_QUERY_PARAMS = new Set([
   'fbclid',
@@ -36,16 +36,10 @@ const WILDCARD_FALLBACKS: Array<[string, string]> = [
   ['/makaleler/endoskopik-cerrahi/', '/makaleler/'],
 ];
 
-// 410 Gone paths: template-render artifacts and legacy PHP probes that
-// never had real content. Returning 410 (instead of 301-to-home) removes
-// them from Google's index faster and avoids the soft-404 risk Glenn Gabe
-// documented. Must be checked BEFORE WILDCARD_FALLBACKS so '/undefined/'
-// doesn't fall into the '/undefined/' wildcard.
-const GONE_410_EXACT = new Set<string>([
-  '/modules.php',
-  '/h2n.php',
-  '/undefined',
-]);
+// 410 Gone paths: template-render artifacts, legacy PHP probes, and retired
+// topic pages without a relevant replacement. Returning 410 instead of an
+// intent-mismatched 301 avoids soft-404s. Must be checked before fallbacks.
+const GONE_410_EXACT = new Set<string>(gone410ExactPaths);
 const GONE_410_PREFIXES: string[] = [
   '/undefined/',
   '/public/',

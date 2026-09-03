@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import fs from 'node:fs';
 import path from 'node:path';
+import { gone410ExactPaths } from '../src/utils/routeAliases.mjs';
 
 const rootDir = process.cwd();
 const distDir = path.join(rootDir, 'dist');
@@ -211,10 +212,9 @@ function canonicalRedirectFor(requestUrl) {
     });
   }
 
-  // 410 Gone: template-rendering artifacts and legacy PHP probes that
-  // never had real content. 410 removes from Google's index faster than
-  // 301-to-home and avoids soft-404 risk for less-relevant 301 targets.
-  const gone410Exact = new Set(['/modules.php', '/h2n.php', '/undefined', '/public/article.aspx', '/public/haber.aspx']);
+  // 410 Gone: template artifacts, legacy probes, and retired topic pages
+  // without a relevant replacement. Avoid intent-mismatched 301 redirects.
+  const gone410Exact = new Set(gone410ExactPaths);
   if (gone410Exact.has(url.pathname) || url.pathname.startsWith('/undefined/') || url.pathname.startsWith('/public/') || url.pathname.startsWith('/blog/sayfa/')) {
     return new Response('Gone', {
       status: 410,

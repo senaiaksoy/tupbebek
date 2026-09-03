@@ -3,9 +3,10 @@ interface Props {
     evidenceAsOf?: Date;
     reviewScope?: string;
     editorialMethodNote?: string;
+    reviewType?: 'medical' | 'editorial';
 }
 
-const { evidenceAsOf, reviewScope, editorialMethodNote } = Astro.props;
+const { evidenceAsOf, reviewScope, editorialMethodNote, reviewType = 'medical' } = Astro.props;
 const evidenceDate = evidenceAsOf?.toLocaleDateString('tr-TR', {
     year: 'numeric',
     month: 'long',
@@ -16,7 +17,7 @@ const evidenceDate = evidenceAsOf?.toLocaleDateString('tr-TR', {
 {(evidenceDate || reviewScope || editorialMethodNote) && (
     <details class="article-review-details mt-10 border-y border-gray-200 py-3 text-sm text-gray-600">
         <summary class="min-h-11 cursor-pointer select-none py-2 font-semibold text-gray-800 marker:text-primary-600">
-            Bilimsel inceleme ayrıntıları
+            {reviewType === 'editorial' ? 'Kaynak ve editoryal kontrol ayrıntıları' : 'Bilimsel inceleme ayrıntıları'}
         </summary>
         <dl class="space-y-2 pb-2 pt-1 leading-relaxed">
             {evidenceDate && (
