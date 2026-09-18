@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 const rootDir = process.cwd();
-const distDir = path.join(rootDir, 'dist');
+const distDir = path.resolve(process.argv[2] || path.join(rootDir, 'dist'));
 const failures = [];
 
 const expectations = [
@@ -30,6 +30,11 @@ const expectations = [
     route: 'makaleler/pgt-a-bas-editor-kosesi/index.html',
     hubUrl: 'https://tupbebek.com/pgt-merkezi/',
     links: ['/makaleler/pgt-m', '/makaleler/pgt-cinsiyet-secimi'],
+  },
+  {
+    route: 'makaleler/pgt-cinsiyet-secimi/index.html',
+    hubUrl: 'https://tupbebek.com/pgt-merkezi/',
+    links: ['/makaleler/pgt-m', '/makaleler/pgt-a-bas-editor-kosesi'],
   },
   {
     route: 'makaleler/endometriozis-tup-bebek/index.html',

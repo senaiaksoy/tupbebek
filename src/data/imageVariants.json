@@ -844,21 +844,16 @@
       "height": 720
     }
   ],
-  "/images/makaleler/pgt-cinsiyet-secimi.webp": [
+  "/images/makaleler/pgt-cinsiyet-secimi-genetik-danismanlik.webp": [
     {
-      "src": "/generated/article-heroes/makaleler-pgt-cinsiyet-secimi-w640.webp",
+      "src": "/generated/article-heroes/makaleler-pgt-cinsiyet-secimi-genetik-danismanlik-w640.webp",
       "width": 640,
       "height": 360
     },
     {
-      "src": "/generated/article-heroes/makaleler-pgt-cinsiyet-secimi-w960.webp",
+      "src": "/generated/article-heroes/makaleler-pgt-cinsiyet-secimi-genetik-danismanlik-w960.webp",
       "width": 960,
       "height": 540
-    },
-    {
-      "src": "/generated/article-heroes/makaleler-pgt-cinsiyet-secimi-w1280.webp",
-      "width": 1280,
-      "height": 720
     }
   ],
   "/images/makaleler/pgt-m.webp": [
