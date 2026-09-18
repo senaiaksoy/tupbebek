@@ -3,6 +3,7 @@ import { spawnSync } from 'node:child_process';
 const checks = [
   ['node', ['scripts/verify-no-placeholder-links.mjs']],
   ['node', ['scripts/verify-link-hygiene.mjs']],
+  ['node', ['scripts/verify-fragment-links.mjs']],
   ['node', ['scripts/verify-html-weight.mjs']],
   ['node', ['scripts/verify-title-lengths.mjs']],
   ['node', ['scripts/verify-nosnippet-boilerplate.mjs']],
