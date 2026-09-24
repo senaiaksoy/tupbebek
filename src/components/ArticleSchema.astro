@@ -199,7 +199,7 @@ const heroDims = absoluteImageUrl
     : null;
 
 const imageCreatorSchema = d.imageCreator
-    ? { "@type": "Person", "name": d.imageCreator }
+    ? { "@type": /Ekip|Kurul/i.test(d.imageCreator) ? "Organization" : "Person", "name": d.imageCreator }
     : { "@type": "Organization", "name": "tupbebek.com Yayın Kurulu" };
 
 const imageObject = absoluteImageUrl && heroDims ? {
@@ -239,7 +239,7 @@ const schemaImages = imageObject ? [imageObject, ...alternateImageObjects] : alt
 const WIKIDATA_MAP: Record<string, string[]> = {
     'adet-duzensizligi-pcos': ['https://www.wikidata.org/wiki/Q500816', 'https://en.wikipedia.org/wiki/Polycystic_ovary_syndrome'],
     'adet-gorememe': ['https://www.wikidata.org/wiki/Q193150', 'https://en.wikipedia.org/wiki/Amenorrhea'],
-    'akinti-kasinti-koku': ['https://www.wikidata.org/wiki/Q2615657', 'https://en.wikipedia.org/wiki/Vaginal_discharge'],
+    'akinti-kasinti-koku': ['https://www.wikidata.org/wiki/Q778502', 'https://en.wikipedia.org/wiki/Vaginal_discharge'],
     'akraba-evliligi': ['https://www.wikidata.org/wiki/Q1129330', 'https://en.wikipedia.org/wiki/Consanguinity'],
     'alkol-ve-fertilite': ['https://www.wikidata.org/wiki/Q153', 'https://en.wikipedia.org/wiki/Alcohol_and_health', 'https://www.wikidata.org/wiki/Q186557'],
     'asherman-sendromu': ['https://www.wikidata.org/wiki/Q725791', 'https://en.wikipedia.org/wiki/Asherman_syndrome'],
@@ -300,6 +300,11 @@ const WIKIDATA_MAP: Record<string, string[]> = {
 };
 
 const ABOUT_ENTITY_MAP: Record<string, { type: string; name: string; alternateName?: string[] }> = {
+    'akinti-kasinti-koku': {
+        type: 'MedicalSignOrSymptom',
+        name: 'Vajinal akıntı',
+        alternateName: ['Vajinal akıntı, kaşıntı ve koku']
+    },
     'era-testi-iluzyon': {
         type: 'MedicalTest',
         name: 'Endometriyal reseptivite testi',
