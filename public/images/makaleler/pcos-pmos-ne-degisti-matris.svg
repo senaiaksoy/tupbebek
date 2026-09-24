@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">PCOS adı PMOS olarak değişti</title>
+  <desc id="desc">Eski ad Polikistik Over Sendromu, yeni ad Poliendokrin Metabolik Over Sendromu. İsim değişikliği 2023 rehberindeki tanı ve tedavi önerilerini tek başına değiştirmez.</desc>
+  <rect width="1200" height="675" rx="28" fill="#f4f8f7"/>
+  <rect x="0" y="0" width="1200" height="16" fill="#3a8a66"/>
+  <text x="64" y="69" fill="#3a8a66" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="2">İSİM DEĞİŞİKLİĞİ</text>
+  <text x="64" y="134" fill="#173451" font-family="Inter, Arial, sans-serif" font-size="58" font-weight="750">PCOS → PMOS</text>
+  <text x="64" y="177" fill="#455769" font-family="Inter, Arial, sans-serif" font-size="26">Aynı klinik durum, daha açıklayıcı bir ad</text>
+
+  <rect x="64" y="216" width="507" height="274" rx="22" fill="#ffffff" stroke="#cbd7df" stroke-width="2"/>
+  <rect x="87" y="239" width="102" height="39" rx="19" fill="#e8eef2"/>
+  <text x="138" y="265" fill="#35516a" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="middle">ESKİ AD</text>
+  <text x="88" y="345" fill="#173451" font-family="Inter, Arial, sans-serif" font-size="55" font-weight="750">PCOS</text>
+  <text x="88" y="389" fill="#173451" font-family="Inter, Arial, sans-serif" font-size="25" font-weight="600">Polikistik Over Sendromu</text>
+  <line x1="88" x2="547" y1="421" y2="421" stroke="#dce5ea" stroke-width="2"/>
+  <text x="88" y="458" fill="#516372" font-family="Inter, Arial, sans-serif" font-size="23">“Kist” sözcüğü yanıltıcı olabilir.</text>
+
+  <rect x="629" y="216" width="507" height="274" rx="22" fill="#e8f3ed" stroke="#a4ceb6" stroke-width="2"/>
+  <rect x="652" y="239" width="103" height="39" rx="19" fill="#c9e7d5"/>
+  <text x="703" y="265" fill="#246a49" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="middle">YENİ AD</text>
+  <text x="653" y="345" fill="#173451" font-family="Inter, Arial, sans-serif" font-size="55" font-weight="750">PMOS</text>
+  <text x="653" y="387" fill="#173451" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="600">Poliendokrin Metabolik</text>
+  <text x="653" y="417" fill="#173451" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="600">Over Sendromu</text>
+  <line x1="653" x2="1112" y1="435" y2="435" stroke="#b4d6c2" stroke-width="2"/>
+  <text x="653" y="468" fill="#37644b" font-family="Inter, Arial, sans-serif" font-size="21">Hormon ve metabolizmayı da vurgular.</text>
+
+  <rect x="64" y="516" width="1072" height="91" rx="19" fill="#173451"/>
+  <rect x="82" y="536" width="6" height="52" rx="3" fill="#a9d4bb"/>
+  <text x="108" y="550" fill="#a9d4bb" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="1.2">TANI VE TEDAVİ</text>
+  <text x="108" y="582" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="600">İsim değişikliği, 2023 rehberindeki önerileri tek başına değiştirmez.</text>
+  <text x="64" y="643" fill="#647789" font-family="Inter, Arial, sans-serif" font-size="18">Kaynak: Teede ve ark., The Lancet (2026); Uluslararası PCOS Rehberi (2023).</text>
+</svg>
