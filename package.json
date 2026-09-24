@@ -27,6 +27,7 @@
     "verify:nosnippet-boilerplate": "node scripts/verify-nosnippet-boilerplate.mjs",
     "verify:title-lengths": "node scripts/verify-title-lengths.mjs",
     "verify:article-entities": "node scripts/verify-article-entities.mjs",
+    "verify:article-entities:online": "node scripts/verify-article-entities.mjs --online",
     "verify:hub-itemlists": "node scripts/verify-hub-itemlists.mjs",
     "verify:article-clusters": "node scripts/verify-article-clusters.mjs",
     "verify:structured-data": "node scripts/verify-structured-data.mjs",

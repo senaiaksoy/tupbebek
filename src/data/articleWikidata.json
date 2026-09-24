@@ -1,0 +1,279 @@
+{
+  "adet-duzensizligi-pcos": {
+    "qid": "Q500816",
+    "label": "polyendocrine metabolic ovarian syndrome",
+    "wikipedia": "https://en.wikipedia.org/wiki/Polyendocrine_metabolic_ovarian_syndrome"
+  },
+  "adet-gorememe": {
+    "qid": "Q334655",
+    "label": "amenorrhea",
+    "wikipedia": "https://en.wikipedia.org/wiki/Amenorrhea"
+  },
+  "akinti-kasinti-koku": {
+    "qid": "Q778502",
+    "label": "vaginal discharge",
+    "wikipedia": "https://en.wikipedia.org/wiki/Vaginal_discharge"
+  },
+  "akraba-evliligi": {
+    "qid": "Q774347",
+    "label": "consanguinity",
+    "wikipedia": "https://en.wikipedia.org/wiki/Consanguinity"
+  },
+  "alkol-ve-fertilite": {
+    "qid": "Q2647488",
+    "label": "alcohol consumption"
+  },
+  "asherman-sendromu": {
+    "qid": "Q725129",
+    "label": "adhesions of uterus",
+    "wikipedia": "https://en.wikipedia.org/wiki/Asherman%27s_syndrome"
+  },
+  "azospermi-mikro-tese": {
+    "qid": "Q794026",
+    "label": "azoospermia",
+    "wikipedia": "https://en.wikipedia.org/wiki/Azoospermia"
+  },
+  "bagisiklik-tedavileri": {
+    "qid": "Q1427096",
+    "label": "immunotherapy",
+    "wikipedia": "https://en.wikipedia.org/wiki/Immunotherapy"
+  },
+  "cep-telefonu-sperm-kalitesi": {
+    "qid": "Q2916689",
+    "label": "semen quality",
+    "wikipedia": "https://en.wikipedia.org/wiki/Semen_quality"
+  },
+  "cerrahi-sperm-arama-tese": {
+    "qid": "Q3733593",
+    "label": "Testicular sperm extraction",
+    "wikipedia": "https://en.wikipedia.org/wiki/Testicular_sperm_extraction"
+  },
+  "dhea-buyume-hormonu-tup-bebek": {
+    "qid": "Q408376",
+    "label": "dehydroepiandrosterone",
+    "wikipedia": "https://en.wikipedia.org/wiki/Dehydroepiandrosterone"
+  },
+  "dusuk-amh-hamilelik": {
+    "qid": "Q21108939",
+    "label": "Anti-Mullerian hormone",
+    "wikipedia": "https://en.wikipedia.org/wiki/Anti-M%C3%BCllerian_hormone"
+  },
+  "duygusal-dayaniklik-rehberi": {
+    "qid": "Q4105337",
+    "label": "psychological resilience",
+    "wikipedia": "https://en.wikipedia.org/wiki/Psychological_resilience"
+  },
+  "embriyo-transferi-gun-secimi": {
+    "qid": "Q237118",
+    "label": "embryo transfer",
+    "wikipedia": "https://en.wikipedia.org/wiki/Embryo_transfer"
+  },
+  "embriyo-transferi-sonrasi-bakim": {
+    "qid": "Q237118",
+    "label": "embryo transfer",
+    "wikipedia": "https://en.wikipedia.org/wiki/Embryo_transfer"
+  },
+  "embryoscope-yapay-zeka": {
+    "qid": "Q17013990",
+    "label": "Time-lapse embryo imaging",
+    "wikipedia": "https://en.wikipedia.org/wiki/Time-lapse_embryo_imaging"
+  },
+  "endometrioma": {
+    "qid": "Q5376367",
+    "label": "endometriosis of ovary",
+    "wikipedia": "https://en.wikipedia.org/wiki/Endometrioma"
+  },
+  "endometriozis-akilli-stratejiler": {
+    "qid": "Q205764",
+    "label": "endometriosis",
+    "wikipedia": "https://en.wikipedia.org/wiki/Endometriosis"
+  },
+  "endometriozis-tup-bebek": {
+    "qid": "Q205764",
+    "label": "endometriosis",
+    "wikipedia": "https://en.wikipedia.org/wiki/Endometriosis"
+  },
+  "endometrium-kalinligi-tup-bebek": {
+    "qid": "Q839508",
+    "label": "endometrium",
+    "wikipedia": "https://en.wikipedia.org/wiki/Endometrium"
+  },
+  "endoskopik-cerrahi-histeroskopi": {
+    "qid": "Q597058",
+    "label": "hysteroscopy",
+    "wikipedia": "https://en.wikipedia.org/wiki/Hysteroscopy"
+  },
+  "erkek-dogurganlik-besin-takviyeleri": {
+    "qid": "Q280156",
+    "label": "male infertility",
+    "wikipedia": "https://en.wikipedia.org/wiki/Male_infertility"
+  },
+  "hidrosalpinx-ve-kisirlik": {
+    "qid": "Q4138159",
+    "label": "Hydrosalpinx",
+    "wikipedia": "https://en.wikipedia.org/wiki/Hydrosalpinx"
+  },
+  "hiperprolaktinemi-ve-kisirlik": {
+    "qid": "Q1433936",
+    "label": "hyperprolactinemia",
+    "wikipedia": "https://en.wikipedia.org/wiki/Hyperprolactinaemia"
+  },
+  "hormonal-tedavi-adenomyozis": {
+    "qid": "Q2012569",
+    "label": "adenomyosis",
+    "wikipedia": "https://en.wikipedia.org/wiki/Adenomyosis"
+  },
+  "imsi-picsi-macs-sperm-secimi": {
+    "qid": "Q1968740",
+    "label": "Intracytoplasmic morphologically selected sperm injection (IMSI)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Intracytoplasmic_morphologically_selected_sperm_injection"
+  },
+  "istanbul-tup-bebek-doktoru": {
+    "qid": "Q200117",
+    "label": "in vitro fertilization",
+    "wikipedia": "https://en.wikipedia.org/wiki/In_vitro_fertilisation"
+  },
+  "iui-nedir": {
+    "qid": "Q13405500",
+    "label": "intrauterine insemination"
+  },
+  "ivf-oncesi-histeroskopi": {
+    "qid": "Q597058",
+    "label": "hysteroscopy",
+    "wikipedia": "https://en.wikipedia.org/wiki/Hysteroscopy"
+  },
+  "ivf-protokolleri": {
+    "qid": "Q200117",
+    "label": "in vitro fertilization",
+    "wikipedia": "https://en.wikipedia.org/wiki/In_vitro_fertilisation"
+  },
+  "iyi-tup-bebek-merkezi": {
+    "qid": "Q200117",
+    "label": "in vitro fertilization",
+    "wikipedia": "https://en.wikipedia.org/wiki/In_vitro_fertilisation"
+  },
+  "izotretinoin-sperm": {
+    "qid": "Q287029",
+    "label": "isotretinoin",
+    "wikipedia": "https://en.wikipedia.org/wiki/Isotretinoin"
+  },
+  "kac-yumurta-gerekir": {
+    "qid": "Q7835401",
+    "label": "transvaginal oocyte retrieval",
+    "wikipedia": "https://en.wikipedia.org/wiki/Transvaginal_oocyte_retrieval"
+  },
+  "kadin-kisirligi-tup-bebek": {
+    "qid": "Q648065",
+    "label": "female infertility",
+    "wikipedia": "https://en.wikipedia.org/wiki/Female_infertility"
+  },
+  "kanser-ve-fertilite": {
+    "qid": "Q5445580",
+    "label": "fertility preservation",
+    "wikipedia": "https://en.wikipedia.org/wiki/Fertility_preservation"
+  },
+  "kimyasal-gebelik": {
+    "qid": "Q137195884",
+    "label": "Chemical pregnancy"
+  },
+  "laboratuvar-raporu-yorumlama": {
+    "qid": "Q200117",
+    "label": "in vitro fertilization",
+    "wikipedia": "https://en.wikipedia.org/wiki/In_vitro_fertilisation"
+  },
+  "mikroenjeksiyon-icsi-nedir": {
+    "qid": "Q28700",
+    "label": "Intracytoplasmic sperm injection",
+    "wikipedia": "https://en.wikipedia.org/wiki/Intracytoplasmic_sperm_injection"
+  },
+  "miyom-ameliyati": {
+    "qid": "Q4115148",
+    "label": "uterine myomectomy",
+    "wikipedia": "https://en.wikipedia.org/wiki/Uterine_myomectomy"
+  },
+  "miyomlar-ve-tup-bebek": {
+    "qid": "Q556281",
+    "label": "uterine fibroid",
+    "wikipedia": "https://en.wikipedia.org/wiki/Uterine_fibroid"
+  },
+  "opk-ve-ivf": {
+    "qid": "Q500816",
+    "label": "polyendocrine metabolic ovarian syndrome",
+    "wikipedia": "https://en.wikipedia.org/wiki/Polyendocrine_metabolic_ovarian_syndrome"
+  },
+  "over-prp": {
+    "qid": "Q613879",
+    "label": "platelet-rich plasma",
+    "wikipedia": "https://en.wikipedia.org/wiki/Platelet-rich_plasma"
+  },
+  "pcos-yeni-adi-pmos": {
+    "qid": "Q500816",
+    "label": "polyendocrine metabolic ovarian syndrome",
+    "wikipedia": "https://en.wikipedia.org/wiki/Polyendocrine_metabolic_ovarian_syndrome"
+  },
+  "pgt-a-bas-editor-kosesi": {
+    "qid": "Q1501356",
+    "label": "preimplantation genetic diagnosis",
+    "wikipedia": "https://en.wikipedia.org/wiki/Preimplantation_genetic_diagnosis"
+  },
+  "pgt-cinsiyet-secimi": {
+    "qid": "Q1501356",
+    "label": "preimplantation genetic diagnosis",
+    "wikipedia": "https://en.wikipedia.org/wiki/Preimplantation_genetic_diagnosis"
+  },
+  "pgt-m": {
+    "qid": "Q1501356",
+    "label": "preimplantation genetic diagnosis",
+    "wikipedia": "https://en.wikipedia.org/wiki/Preimplantation_genetic_diagnosis"
+  },
+  "taze-dondurulmus-transfer": {
+    "qid": "Q237118",
+    "label": "embryo transfer",
+    "wikipedia": "https://en.wikipedia.org/wiki/Embryo_transfer"
+  },
+  "tup-bebek-nedir": {
+    "qid": "Q200117",
+    "label": "in vitro fertilization",
+    "wikipedia": "https://en.wikipedia.org/wiki/In_vitro_fertilisation"
+  },
+  "tup-bebek-sureci-rehber": {
+    "qid": "Q200117",
+    "label": "in vitro fertilization",
+    "wikipedia": "https://en.wikipedia.org/wiki/In_vitro_fertilisation"
+  },
+  "tup-bebek-yanlis-bilinenler": {
+    "qid": "Q200117",
+    "label": "in vitro fertilization",
+    "wikipedia": "https://en.wikipedia.org/wiki/In_vitro_fertilisation"
+  },
+  "vajinal-mikrobiyom-fiv": {
+    "qid": "Q537478",
+    "label": "vaginal flora",
+    "wikipedia": "https://en.wikipedia.org/wiki/Vaginal_flora"
+  },
+  "varikosel-nedir-ne-zaman-ameliyat-gerekir": {
+    "qid": "Q549229",
+    "label": "varicocele",
+    "wikipedia": "https://en.wikipedia.org/wiki/Varicocele"
+  },
+  "yasa-gore-tup-bebek-basari-oranlari": {
+    "qid": "Q648065",
+    "label": "female infertility",
+    "wikipedia": "https://en.wikipedia.org/wiki/Female_infertility"
+  },
+  "yumurta-dondurma-rehberi": {
+    "qid": "Q3561328",
+    "label": "Vitrification (ovocytes)",
+    "wikipedia": "https://en.wikipedia.org/wiki/Oocyte_cryopreservation"
+  },
+  "yumurtalik-kistleri-dogurganlik": {
+    "qid": "Q147362",
+    "label": "ovarian cyst",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ovarian_cyst"
+  },
+  "yumurtlama-takibi": {
+    "qid": "Q187082",
+    "label": "ovulation",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ovulation"
+  }
+}
