@@ -132,6 +132,13 @@ const expectations = [
     name: 'T\u00fcp bebek ba\u015far\u0131 oranlar\u0131',
     sameAsIncludes: 'Q648065',
   },
+  {
+    route: 'makaleler/kimyasal-gebelik/index.html',
+    type: 'MedicalCondition',
+    name: 'Kimyasal gebelik',
+    sameAsIncludes: 'Q137195884',
+    alternateNameIncludes: 'Biyokimyasal gebelik',
+  },
 ];
 
 const jsonLdScriptPattern =
