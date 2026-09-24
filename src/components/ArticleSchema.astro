@@ -268,7 +268,7 @@ const WIKIDATA_MAP: Record<string, string[]> = {
     'hormonal-tedavi-adenomyozis': ['https://www.wikidata.org/wiki/Q356262', 'https://en.wikipedia.org/wiki/Adenomyosis'],
     'imsi-picsi-macs-sperm-secimi': ['https://www.wikidata.org/wiki/Q1968740', 'https://en.wikipedia.org/wiki/Intracytoplasmic_morphologically_selected_sperm_injection'],
     'istanbul-tup-bebek-doktoru': ['https://www.wikidata.org/wiki/Q190290', 'https://en.wikipedia.org/wiki/In_vitro_fertilisation'],
-    'iui-nedir': ['https://www.wikidata.org/wiki/Q846279', 'https://en.wikipedia.org/wiki/Artificial_insemination'],
+    'iui-nedir': ['https://www.wikidata.org/wiki/Q13405500'],
     'ivf-oncesi-histeroskopi': ['https://www.wikidata.org/wiki/Q1641031', 'https://en.wikipedia.org/wiki/Hysteroscopy'],
     'ivf-protokolleri': ['https://www.wikidata.org/wiki/Q190290', 'https://en.wikipedia.org/wiki/In_vitro_fertilisation'],
     'iyi-tup-bebek-merkezi': ['https://www.wikidata.org/wiki/Q190290', 'https://en.wikipedia.org/wiki/In_vitro_fertilisation'],
@@ -319,6 +319,11 @@ const ABOUT_ENTITY_MAP: Record<string, { type: string; name: string; alternateNa
         type: 'MedicalProcedure',
         name: 'Tüp bebek (IVF)',
         alternateName: ['In vitro fertilizasyon', 'IVF']
+    },
+    'iui-nedir': {
+        type: 'MedicalProcedure',
+        name: 'Rahim içi aşılama (IUI)',
+        alternateName: ['Aşılama', 'Intrauterine insemination', 'IUI']
     },
     'embriyo-transferi-sonrasi-bakim': {
         type: 'MedicalProcedure',
