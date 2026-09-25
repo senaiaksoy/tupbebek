@@ -88,6 +88,13 @@ async function verifyOnline() {
 
 const expectations = [
   {
+    route: 'makaleler/kanser-ve-fertilite/index.html',
+    type: 'MedicalProcedure',
+    name: 'Fertilite koruma',
+    sameAsIncludes: 'Q5445580',
+    alternateNameIncludes: 'Onkofertilite',
+  },
+  {
     route: 'makaleler/tup-bebek-nedir/index.html',
     type: 'MedicalProcedure',
     name: 'T\u00fcp bebek (IVF)',
