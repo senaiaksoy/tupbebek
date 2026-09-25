@@ -22,6 +22,9 @@ lh-*.json
 # Local Codex worktrees
 .claude/worktrees/
 
+# Local plugin runtime data (e.g. healthcare Contracts Analyzer SQLite DB)
+.claude/data/
+
 # Local temp / logs
 .tmp/
 .cache/
