@@ -17,12 +17,25 @@ contentType: "portal_article"
 templateVersion: "2026-07"
 status: "published"
 publishDate: 2024-09-27
-lastModified: 2026-07-24
-evidenceAsOf: 2026-07-24
+lastModified: 2026-09-25
+evidenceAsOf: 2026-09-25
 reviewScope: "IVF tanımı; endikasyon nüansları (yaş/rezerv, endometriozis, hidrosalpinks, azospermi, açıklanamayan infertilite, PGT-M, FET/dondurulmuş yumurta ayrımı); ön değerlendirme zamanlaması; IVF-ICSI; başarı faktörleri; riskler; TR ÜYTE yönetmeliği (2014/2023); ASRM/ESHRE/Cochrane ve güncel RCT kaynakları"
 editorialMethodNote: "Temmuz 2026 klinik düzeltmeleri uygulandı: WHO bağlantısı, yaşa göre değerlendirme zamanlaması, IVF tanımı, FET ayrımı ve kaynak hizalaması. Bilimsel kaynaklar ve klinik ifadeler Baş Editör Doç. Dr. Senai Aksoy tarafından tıbbi olarak gözden geçirilmiştir."
 hideEvidenceGrade: true
 deferEditorialMeta: true
+expertContribution:
+  title: "Dr. Aksoy'un yaklaşımı"
+  question: "Hangi çiftte doğrudan tüp bebeğe geçmeyi, hangisinde önce yumurtlama tedavisi veya aşılamayı önerirsiniz; sizin için belirleyici eşikler neler?"
+  text: |-
+    Benim için ilk soru, daha basit tedavinin çözebileceği bir sorun olup olmadığı. Genç bir hastada temel sorun PCOS’a bağlı yumurtlamama ise, tüpler ve sperm açısından önemli bir engel yoksa önce letrozolle yumurtlama tedavisi öneririm. Yumurtlama düzenli, tüpler açık ve sperm aşılama için uygunsa; özellikle 35 yaşın altında açıklanamayan infertilitede 3–4 iyi planlanmış uyarılı aşılama makul bir basamaktır.
+
+    Doğrudan tüp bebeği ise iki tüp kapalıysa, ciddi erkek faktörü varsa veya uygun yapılmış aşılamalar sonuç vermediyse daha erken konuşurum. Yaş da eşiği değiştirir: 38 yaş ve üzerinde aylar sürecek aşılama denemelerinin kazancını daha dikkatli tartarım; 40 yaş üzerinde değerlendirme ve tedaviyi geciktirmem. İnfertilite süresi ve önceki tedaviler bu karara eklenir. AMH’yi de dikkate alırım, ama düşük AMH tek başına “aşılama olmaz, IVF şart” demek değildir; daha çok zaman ve beklenen yumurta yanıtı hakkında bilgi verir.
+  evidenceNote: "2023 Uluslararası PCOS Kılavuzu, PCOS'a bağlı yumurtlamamada letrozolü ilk basamak ilaç tedavisi olarak önerir. Açıklanamayan infertilitede ESHRE 2023 kılavuzu uyarılı aşılamayı ilk basamak olarak konumlandırır; ASRM 2020 kılavuzu da çoğu çift için genellikle 3–4 siklus uyarılı aşılama, ardından IVF önerir."
+  author: "Doç. Dr. Senai Aksoy"
+  authorTitle: "Kadın Hastalıkları ve Doğum Uzmanı"
+  authorUrl: "https://tupbebek.com/yazar/senai-aksoy/"
+  answeredAt: 2026-09-25
+  approvalStatus: "approved"
 author:
   name: "Doç. Dr. Senai Aksoy"
   title: "Kadın Hastalıkları, Doğum ve Üreme Tıbbı Uzmanı"
@@ -146,6 +159,20 @@ references:
     journal: "T.C. Resmî Gazete"
     year: 2023
     url: "https://www.resmigazete.gov.tr/eskiler/2023/05/20230527-2.htm"
+  - title: "Recommendations from the 2023 International Evidence-based Guideline for the Assessment and Management of Polycystic Ovary Syndrome"
+    authors: "Teede HJ, Tay CT, Laven JJE et al."
+    journal: "Journal of Clinical Endocrinology and Metabolism"
+    year: 2023
+    doi: "10.1210/clinem/dgad463"
+    pmid: "37580314"
+    url: "https://pubmed.ncbi.nlm.nih.gov/37580314/"
+  - title: "Evidence-based treatments for couples with unexplained infertility: a guideline"
+    authors: "Practice Committee of the American Society for Reproductive Medicine"
+    journal: "Fertility and Sterility"
+    year: 2020
+    doi: "10.1016/j.fertnstert.2019.10.014"
+    pmid: "32106976"
+    url: "https://pubmed.ncbi.nlm.nih.gov/32106976/"
 ---
 
 import Accordion from "../../components/global/Accordion.astro";
@@ -155,10 +182,6 @@ import QuoteBlock from '../../components/global/QuoteBlock.astro';
 Tüp bebek tek bir iğne veya tek bir işlem değildir. Yumurta, sperm, embriyo ve rahim hazırlığını birlikte yöneten planlı bir yoldur.
 
 Bu yazıda tedavinin ne olduğunu, kimlerde düşünülebileceğini, adımların sırasını, IVF ile ICSI farkını ve gerçekçi beklentiyi sade bir dille bulacaksınız. Gün gün takvim için [tüp bebek süreci rehberine](/makaleler/tup-bebek-sureci-rehber/) bakabilirsiniz.
-
-<MedicalInfoBox title="Dr. Aksoy'un yaklaşımı" icon="INFO" color="blue">
-Tüp bebeği “her infertilite öyküsünde ilk ve tek adım” gibi sunmam. Önce nedeni netleştiririm; gerekirse yumurtlama tedavisi, aşılama veya cerrahiyi konuşurum. Laboratuvarda klasik IVF mi ICSI mi kullanılacağına sperm ve önceki döllenme öyküsüyle karar veririm. Başarıyı tek bir yüzdeyle anlatmam; yaş, rezerv, embriyo ve rahim birlikte okunur. Güvenli uyarım, doğru transfer zamanı ve dürüst beklenti, embriyo elde etmek kadar önemlidir.
-</MedicalInfoBox>
 
 ## İçindekiler
 

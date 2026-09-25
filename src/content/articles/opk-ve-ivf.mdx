@@ -10,21 +10,34 @@ summaryReferences:
     url: "https://pubmed.ncbi.nlm.nih.gov/38099867/"
   - title: "Chen 2016 NEJM: PCOS hastalarında taze vs. dondurulmuş embriyo transferi randomize klinik çalışması"
     url: "https://pubmed.ncbi.nlm.nih.gov/27509101/"
-  - title: "Humaidan 2011: GnRH agonist trigger ve taze/dondurulmuş transfer luteal destek stratejileri"
-    url: "https://pubmed.ncbi.nlm.nih.gov/21896549/"
+  - title: "Humaidan 2011: Son oosit olgunlaşmasında GnRH agonist tetikleme derlemesi"
+    url: "https://pubmed.ncbi.nlm.nih.gov/21450755/"
 category: "Kadın Sağlığı"
 contentType: "portal_article"
 templateVersion: "2026-07"
 status: "published"
 publishDate: 2025-01-01
-lastModified: 2026-07-29
-evidenceAsOf: 2026-07-29
+lastModified: 2026-09-25
+evidenceAsOf: 2026-09-25
 reviewScope: "Polikistik Over Sendromu (PCOS / PMOS) olan kişilerde tüp bebek tedavisi, OHSS (Ovaryan Hiperstimülasyon Sendromu) önleme stratejileri, GnRH antagonist protokolleri, agonist tetikleme, freeze-all (tüm embriyoları dondurma) kararı ve metabolik yönetim International PCOS Guideline 2023, ASRM OHSS Guideline 2024, Chen 2016 ve Humaidan 2011 verileri doğrultusunda incelenmiştir."
 videoId: "NLvPH9mZIaE"
 videoTitle: "PCOS ve Tüp Bebek Protokolleri: OHSS Riski ve Güvenli Transfer"
 videoDescription: "Doç. Dr. Senai Aksoy PCOS ve tüp bebek tedavisinde OHSS riskinden korunma, antagonist protokol ve freeze-all embriyo dondurma stratejilerini detaylandırıyor."
 videoUploadDate: 2024-03-15
 videoDuration: "PT6M35S"
+expertContribution:
+  title: "Dr. Aksoy'un yaklaşımı"
+  question: "PCOS'ta freeze-all ve agonist tetiklemeyi rutin mi, seçici mi uyguluyorsunuz; taze transferi hangi PCOS hastasında hâlâ uygun bulursunuz?"
+  text: |-
+    Seçici uyguluyorum. PCOS tanısı hastayı OHSS açısından daha dikkatli izlememi gerektirir; fakat tek başına herkesin embriyolarını donduracağım anlamına gelmez. Başlangıçtaki AMH/AFC’ye ve özellikle uyarım sırasında gelişen folikül sayısı ile estradiole bakarım. Tetikleme gününde çok sayıda folikül varsa, estradiol belirgin yükselmişse, önceki OHSS öyküsü ya da gelişen şişlik ve yakınmalar varsa antagonist protokolde GnRH agonist tetikleme ve tüm uygun embriyoları dondurma tercih ederim. Böylece gebelikle ağırlaşabilecek geç OHSS riski de azalır.
+
+    Buna karşılık PCOS’u olan ama kontrollü sayıda folikül geliştiren, estradiolü ve klinik durumu güvenli aralıkta kalan, transfer için endometriumu uygun hastada taze tek embriyo transferi hâlâ makul olabilir. Bu kararı siklus başlamadan kesinleştirmem; yumurta toplama sonrasındaki durumunu da görürüm. Agonist tetikleme sonrası taze transfer özel luteal destek gerektirdiğinden, OHSS riski yüksek hastada taze transferi zorlamak için hCG eklemem.
+  evidenceNote: "ASRM 2024 OHSS kılavuzu yüksek riskli hastada antagonist protokol, GnRH agonist tetikleme ve tüm embriyoları dondurmayı önerir. Chen 2016 randomize çalışmasında PCOS'lu kadınlarda dondurulmuş transfer taze transfere göre daha yüksek canlı doğum ve daha az OHSS ile ilişkiliydi, ancak preeklampsi dondurulmuş grupta daha sıktı; bu nedenle taze ve dondurulmuş transfer arasındaki seçim bireysel risk dengesine göre yapılır."
+  author: "Doç. Dr. Senai Aksoy"
+  authorTitle: "Kadın Hastalıkları ve Doğum Uzmanı"
+  authorUrl: "https://tupbebek.com/yazar/senai-aksoy/"
+  answeredAt: 2026-09-25
+  approvalStatus: "approved"
 author:
   name: "Doç. Dr. Senai Aksoy"
   title: "Kadın Hastalıkları, Doğum ve Üreme Tıbbı Uzmanı"
@@ -65,13 +78,13 @@ references:
     doi: "10.1056/NEJMoa1513873"
     pmid: "27509101"
     url: "https://pubmed.ncbi.nlm.nih.gov/27509101/"
-  - title: "GnRH agonist trigger and LH activity luteal phase support versus hCG trigger and conventional luteal phase support in fresh embryo transfer IVF/ICSI cycles"
-    authors: "Humaidan P, Kol S, Papanikolaou EG"
-    journal: "Human Reproduction"
+  - title: "GnRH agonist for triggering of final oocyte maturation: time for a change of practice?"
+    authors: "Humaidan P, Kol S, Papanikolaou EG; Copenhagen GnRH Agonist Triggering Workshop Group"
+    journal: "Human Reproduction Update"
     year: 2011
-    doi: "10.1093/humrep/der277"
-    pmid: "21896549"
-    url: "https://pubmed.ncbi.nlm.nih.gov/21896549/"
+    doi: "10.1093/humupd/dmr008"
+    pmid: "21450755"
+    url: "https://pubmed.ncbi.nlm.nih.gov/21450755/"
 ---
 
 import Accordion from "../../components/global/Accordion.astro";
@@ -80,12 +93,6 @@ import QuoteBlock from '../../components/global/QuoteBlock.astro';
 import RevealScript from '../../components/global/RevealScript.astro';
 import Video from '../../components/global/Video.astro';
 import InlineEvidence from '../../components/InlineEvidence.astro';
-
-<div data-reveal>
-<MedicalInfoBox title="Dr. Aksoy'un yaklaşımı" icon="INFO" color="blue">
-PCOS tanısı, tüp bebekte gebelik şansının olmadığı anlamına gelmez. Bazı hastalarda folikül sayısı yüksektir; bu durum daha fazla yumurta elde etme olasılığı kadar OHSS riskini de artırabilir. Kararı başlangıçtaki yumurtalık rezervi, tedaviye verilen yanıt ve transfer güvenliğine göre veririz. Hedefimiz en çok yumurtayı toplamak değil, kontrollü ve güvenli bir yanıt elde etmektir.
-</MedicalInfoBox>
-</div>
 
 <div data-reveal>
 <MedicalInfoBox title="Hızlı Bakış: PCOS'ta Ana Risk OHSS'dir" icon="PCOS" color="green">
