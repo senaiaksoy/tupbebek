@@ -5,6 +5,19 @@ description: "IVF protokolü nasıl seçilir? Antagonist, uzun, mini IVF, DuoSti
 summary: "Tüp bebekte protokol seçimi; yaş, AMH, antral folikül sayısı (AFC), önceki tedaviye yanıt ve OHSS riski birlikte değerlendirilerek yapılır. Güncel rehberlerde GnRH antagonist protokol, canlı doğum sonuçları benzer olduğu ve özellikle OHSS riskini azaltabildiği için birçok hasta için güvenli bir başlangıç seçeneği olarak öne çıkar. Düşük yumurtalık rezervi veya zayıf yanıt öyküsünde doz ve zamanlama, POSEIDON ölçütleri ve önceki yanıtla birlikte kişiselleştirilir."
 publishDate: 2025-08-14
 status: "published"
+expertContribution:
+  title: "Dr. Aksoy'un yaklaşımı"
+  question: "Düşük rezervli hastada dozu artırmak, mild/mini stimülasyona geçmek veya DuoStim/embriyo biriktirme planlamak arasında karar ölçütleriniz nelerdir?"
+  text: |-
+    Düşük AMH tek başına “dozu yükseltelim” kararı verdirmez. AFC’yi, yaşı ve önceki siklusun sonucunu birlikte okurum: kaç folikül gelişti, kaç olgun yumurta toplandı, kaçı döllendi ve transfer edilebilir embriyo oluştu? İlk siklusta doz düşük kalmış ve beklenenden az folikül yanıtı alınmışsa makul bir doz veya protokol değişikliği yapabilirim. Ama yeterli uyarıma rağmen yalnızca 1–2 folikül gelişiyorsa daha fazla ilaçla yeni folikül yaratmayı beklemem; günlük 300 IU üzerindeki dozlar düşük yanıt beklenen hastada önerilmiyor. Bu durumda hastanın yükünü ve maliyeti azaltmak için mild/mini stimülasyonu konuşurum, fakat daha başarılı olacağını vaat etmem.
+
+    DuoStim veya embriyo biriktirmeyi taze transfer planlanmıyorsa ve kısa sürede birden fazla yumurta toplamak için somut bir neden varsa gündeme alırım; örneğin transferden önce tamamlanması gereken başka bir tedavi veya zaman kısıtı. DuoStim iki toplama arasındaki süreyi kısaltabilir, ancak iki ayrı uyarıma göre daha çok olgun yumurta ya da daha yüksek canlı doğum şansı sağladığı gösterilmiş değil. Elde transfer edilebilir bir embriyo varsa, özellikle zaman ve maliyet önemliyse, biriktirmeye otomatik devam etmek yerine transfer seçeneğini de hasta ile tartışırım.
+  evidenceNote: "ESHRE 2020 yumurtalık uyarımı kılavuzu, düşük yanıt beklenen hastada günlük 300 IU üzerindeki gonadotropin dozlarını önermez. Randomize BISTIM çalışmasında (Massin 2023) DuoStim, art arda iki klasik antagonist uyarıma göre daha fazla toplam veya olgun yumurta sağlamadı; kümülatif canlı doğumda anlamlı fark yoktu ve temel kazanç ikinci toplamaya kadar geçen sürenin kısalmasıydı."
+  author: "Doç. Dr. Senai Aksoy"
+  authorTitle: "Kadın Hastalıkları ve Doğum Uzmanı"
+  authorUrl: "https://tupbebek.com/yazar/senai-aksoy/"
+  answeredAt: 2026-09-25
+  approvalStatus: "approved"
 author: "Doç. Dr. Senai Aksoy"
 authorTitle: "Kadın Hastalıkları ve Doğum Uzmanı"
 authorCredentials: "Üreme Tıbbı ve Yardımcı Üreme Teknikleri"
@@ -16,8 +29,8 @@ medicalReviewer: "Doç. Dr. Senai Aksoy & Tıbbi Danışma Kurulu"
 reviewerTitle: "Kadın Hastalıkları, Doğum ve Üreme Tıbbı Uzmanı"
 approvedBy: "Doç. Dr. Senai Aksoy"
 reviewDate: 2026-08-08
-lastModified: 2026-08-08
-evidenceAsOf: 2026-08-08
+lastModified: 2026-09-25
+evidenceAsOf: 2026-09-25
 reviewScope: "ESHRE 2020 Yumurtalık Stimülasyonu Kılavuzu, ASRM 2024 OHSS Önleme Kılavuzu, Cochrane Antagonist Meta-Analizi, POSEIDON Zayıf Yanıt Stratifikasyonu ve Vaiarelli 2020 DuoStim Sistematik Derlemesi"
 category: "Tedavi Yöntemleri"
 recommendationGrade: B
@@ -68,6 +81,13 @@ references:
     year: 2020
     doi: "10.1080/03009734.2020.1734694"
     pmid: "32338123"
+  - title: "The BISTIM study: a randomized controlled trial comparing dual ovarian stimulation (duostim) with two conventional ovarian stimulations in poor ovarian responders undergoing IVF"
+    authors: "Massin N, Abdennebi I, Porcu-Buisson G et al."
+    journal: "Human Reproduction"
+    year: 2023
+    doi: "10.1093/humrep/dead038"
+    pmid: "36864699"
+    url: "https://pubmed.ncbi.nlm.nih.gov/36864699/"
 ---
 
 import Accordion from "../../components/global/Accordion.astro";
@@ -148,10 +168,6 @@ GnRH antagonist protokolünde uyarım genellikle adetin erken günlerinde başla
 
 Bu, antagonist protokolün her hastada üstün sonuç vereceği anlamına gelmez. Güncel kılavuzlarda benzer canlı doğum sonuçları ve daha iyi güvenlik profili nedeniyle birçok hasta için rasyonel bir başlangıç seçeneği olarak değerlendirilir.
 
-<MedicalInfoBox title="Dr. Aksoy'un yaklaşımı" icon="INFO" color="blue">
-İlaç protokolünü seçerken hedefimiz, en yüksek dozu vererek mümkün olan en fazla yumurtayı zorlamak değildir. Yaşı, yumurtalık rezervini, önceki yanıtı ve güvenlik sınırlarını —özellikle OHSS riskini— birlikte değerlendiririz. Düşük rezervde ilacı sınırsız artırmak her zaman daha fazla yumurta getirmez. Bu nedenle doz, zamanlama ve gerektiğinde embriyo biriktirme planını birlikte kurarız.
-</MedicalInfoBox>
-
 <h2 id="uzun">Uzun Agonist Protokol: Daha Fazla Kontrol, Daha Uzun Hazırlık</h2>
 
 Uzun agonist protokolde önce hipofiz baskılanır, ardından yumurtalık uyarımı başlar. Bu yaklaşım geçmişte daha sık kullanılırdı. Bugün ise hangi hasta için anlamlı olacağına göre seçilir.
@@ -185,6 +201,8 @@ Bu yöntemleri “daha doğal, o halde daha başarılı” diye düşünmemek ge
 <h2 id="duostim-ppos">DuoStim ve PPOS: Embriyo Biriktirme ve Freeze-All Planları</h2>
 
 **DuoStim**, aynı adet döngüsü içinde iki kez yumurtalık uyarımı ve iki kez yumurta toplama yapılmasıdır. Düşük rezerv, ileri yaş, zaman baskısı veya kısa sürede daha fazla oosit/embriyo biriktirme hedefi olan seçilmiş düşük yanıtlı olgularda ([Vaiarelli 2020](https://pubmed.ncbi.nlm.nih.gov/32338123/), [POSEIDON 2016](https://pubmed.ncbi.nlm.nih.gov/26921622/)) gündeme gelebilir. Kanıt kalitesi her hasta grubu için aynı değildir. Bu nedenle DuoStim, standart bir ilk seçenekten çok seçilmiş durumlarda kullanılan bir stratejidir. <InlineEvidence grade="C" />
+
+Düşük yanıtlı hastalarda DuoStim'i art arda iki klasik antagonist uyarımla karşılaştıran randomize BISTIM çalışmasında toplam ve olgun yumurta sayısı iki grupta benzer bulunmuş, kümülatif canlı doğumda anlamlı fark gösterilmemiştir. DuoStim'in belirgin kazancı ikinci yumurta toplamaya kadar geçen sürenin kısalması olmuştur ([Massin 2023](https://pubmed.ncbi.nlm.nih.gov/36864699/)). <InlineEvidence grade="B" />
 
 **PPOS (progestin-primed ovarian stimulation)** ise erken yumurtlamayı önlemek için progestin kullanılan bir uyarım yaklaşımıdır ([Wang 2025](https://pubmed.ncbi.nlm.nih.gov/40775480/)). Bu protokolde transfer genellikle aynı siklusta yapılmaz; embriyolar dondurulur. Bu nedenle PPOS, baştan freeze-all veya PGT planlanan hastalarda gündeme gelebilir. <InlineEvidence grade="B" />
 
