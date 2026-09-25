@@ -14,6 +14,7 @@
     "verify:preflight": "node scripts/run-qa-preflight.mjs",
     "verify:placeholder-links": "node scripts/verify-no-placeholder-links.mjs",
     "verify:link-hygiene": "node scripts/verify-link-hygiene.mjs",
+    "verify:reference-pmids": "node scripts/verify-reference-pmids.mjs",
     "verify:fragment-links": "node scripts/verify-fragment-links.mjs",
     "verify:broken-links": "node scripts/verify-broken-links.mjs",
     "verify:html-weight": "node scripts/verify-html-weight.mjs",

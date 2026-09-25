@@ -36,3 +36,5 @@ reports/pmid-enrichment-report.csv
 /reports/tmp-*.html
 /reports/capture_all.py
 
+reports/reference-pmid-audit.md
+reports/reference-pmid-audit.json
