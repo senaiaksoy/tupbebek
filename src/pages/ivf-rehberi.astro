@@ -4,6 +4,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { buildHubItemListSchema } from '../utils/hubStructuredData';
+import ReferenceList from '../components/ReferenceList.astro';
+
+const references = [
+    { title: "Fertility treatment 2022: preliminary trends and figures", type: "report" as const, authors: "Human Fertilisation and Embryology Authority (HFEA)", year: 2024, url: "https://www.hfea.gov.uk/about-us/publications/research-and-data/fertility-treatment-2022-preliminary-trends-and-figures/" },
+    { title: "Predicting the chances of a live birth after one or more complete cycles of in vitro fertilisation: population based study of linked cycle data from 113 873 women", authors: "McLernon DJ, Steyerberg EW, Te Velde ER, Lee AJ, Bhattacharya S", journal: "BMJ", year: 2016, doi: "10.1136/bmj.i5735", pmid: "27852632" }
+];
 
 const faqs = [
     {
@@ -241,24 +247,24 @@ const itemListSchema = buildHubItemListSchema({
                 </div>
                 <div class="bg-primary-container/30 border border-primary/10 rounded-2xl p-8">
                     <p class="text-on-surface-variant leading-relaxed mb-4">
-                        IVF başarı oranları yaş, over rezervi, infertilite nedeni ve embriyo kalitesine göre değişkenlik gösterir. Genel olarak:
+                        IVF başarı oranları yaş, yumurtalık rezervi, kısırlık nedeni ve embriyo kalitesine göre değişir. Aşağıdaki sayılar İngiltere'nin 2022 verisidir ve <strong>transfer edilen embriyo başına canlı doğumu</strong> gösterir (kendi yumurtası, taze IVF):<sup>[1]</sup>
                     </p>
                     <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-6">
                         <div class="text-center">
-                            <div class="text-3xl font-bold text-primary mb-1">%40-50</div>
-                            <div class="text-sm text-on-surface-variant">35 yaş altı</div>
+                            <div class="text-3xl font-bold text-primary mb-1">≈ %35</div>
+                            <div class="text-sm text-on-surface-variant">18-34 yaş</div>
                         </div>
                         <div class="text-center">
-                            <div class="text-3xl font-bold text-primary mb-1">%25-35</div>
-                            <div class="text-sm text-on-surface-variant">35-40 yaş arası</div>
+                            <div class="text-3xl font-bold text-primary mb-1">≈ %26</div>
+                            <div class="text-sm text-on-surface-variant">35-37 yaş</div>
                         </div>
                         <div class="text-center">
-                            <div class="text-3xl font-bold text-primary mb-1">%10-20</div>
-                            <div class="text-sm text-on-surface-variant">40 yaş üstü</div>
+                            <div class="text-3xl font-bold text-primary mb-1">≈ %10</div>
+                            <div class="text-sm text-on-surface-variant">40-42 yaş</div>
                         </div>
                     </div>
                     <p class="text-xs text-on-surface-variant mt-6 italic">
-                        Bu oranlar genel literatür verilerine dayanmaktadır. Bireysel başarı oranları doktorunuz tarafından değerlendirilmelidir.
+                        Bir yumurta toplamasından elde edilen tüm taze ve dondurulmuş transferler birlikte hesaplandığında (kümülatif) oranlar daha yüksektir.<sup>[2]</sup> Bu sayılar kişisel tahmin değildir; kendi durumunuzu hekiminizle değerlendirin.
                     </p>
                     <p class="text-sm text-on-surface-variant mt-4">
                         Daha ayrıntılı yorum için <a href="/makaleler/yasa-gore-tup-bebek-basari-oranlari" class="text-primary hover:underline">yaşa göre tüp bebek başarı oranları</a> ve <a href="/makaleler/kac-yumurta-gerekir" class="text-primary hover:underline">yumurta sayısı beklentisi</a> rehberlerini birlikte okuyabilirsiniz.
@@ -301,6 +307,9 @@ const itemListSchema = buildHubItemListSchema({
                 </div>
             </section>
         </div>
+        <section class="max-w-3xl mx-auto px-4 md:px-6 lg:px-8 mb-16">
+            <ReferenceList references={references} />
+        </section>
     </main>
 
     <Footer />

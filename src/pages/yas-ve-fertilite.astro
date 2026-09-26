@@ -5,6 +5,15 @@ import Footer from '../components/Footer.astro';
 import StatsStrip from '../components/StatsStrip.astro';
 import RelatedContent from '../components/RelatedContent.astro';
 import DisclaimerBar from '../components/DisclaimerBar.astro';
+import ReferenceList from '../components/ReferenceList.astro';
+
+// Her kaynak PubMed üzerinden doğrulandı (Eylül 2026).
+const references = [
+    { title: "Female age-related fertility decline. Committee Opinion No. 589", type: "guideline" as const, authors: "American College of Obstetricians and Gynecologists; Practice Committee of the American Society for Reproductive Medicine", journal: "Fertility and Sterility", year: 2014, doi: "10.1016/j.fertnstert.2013.12.032", pmid: "24559617" },
+    { title: "The nature of aneuploidy with increasing age of the female partner: a review of 15,169 consecutive trophectoderm biopsies evaluated with comprehensive chromosomal screening", authors: "Franasiak JM, Forman EJ, Hong KH et al.", journal: "Fertility and Sterility", year: 2014, doi: "10.1016/j.fertnstert.2013.11.004", pmid: "24355045" },
+    { title: "Consistent age-dependent declines in human semen quality: a systematic review and meta-analysis", type: "systematicReview" as const, authors: "Johnson SL, Dunleavy J, Gemmell NJ, Nakagawa S", journal: "Ageing Research Reviews", year: 2015, doi: "10.1016/j.arr.2014.10.007", pmid: "25462195" },
+    { title: "Predicting the chances of a live birth after one or more complete cycles of in vitro fertilisation: population based study of linked cycle data from 113 873 women", authors: "McLernon DJ, Steyerberg EW, Te Velde ER, Lee AJ, Bhattacharya S", journal: "BMJ", year: 2016, doi: "10.1136/bmj.i5735", pmid: "27852632" }
+];
 ---
 
 <BaseLayout title="Yaş ve Fertilite: Üreme Başarısı Üzerinde Yaşın Etkileri | tupbebek.com" description="Kadın ve erkek yaşının fertilite ve tüp bebek başarısı üzerindeki etkisi, yaşlanma ve oosit kalitesi, erkek yaşının sperm parametrelerine etkisi.">
@@ -44,8 +53,8 @@ import DisclaimerBar from '../components/DisclaimerBar.astro';
                 Üreme sağlığında yaş, en belirleyici etkenlerden biridir. Kadınlar sınırlı sayıda yumurta ile doğar; bu rezerv zamanla azalır ve yumurtaların kromozom açısından normal olma oranı düşer. Erkeklerde ise yaş, sperm parametrelerini ve DNA fragmentasyonunu etkiler. Bu rehberde yaşın üreme başarı üzerindeki bilimsel etkisini inceleyeceğiz.
             </p>
             <StatsStrip items={[
-              { icon: 'fertile', heading: 'En Verimli', text: '20-30 yaş arası en yüksek doğal fertilite' },
-              { icon: 'trending_down', heading: '35+ Kırılma', text: '35 yaşından sonra başarı oranları düşüş gösterir' },
+              { icon: 'fertile', heading: '32 yaş', text: 'Doğurganlık bu yaştan itibaren yavaş ama belirgin azalır [1]' },
+              { icon: 'trending_down', heading: '37+ hızlanma', text: '37 yaşından sonra düşüş hızlanır [1]' },
               { icon: 'science', heading: 'Kromozom', text: 'Yaş arttıkça kromozomu bozuk yumurta (anöploidi) oranı artıyor' }
             ]} />
         </section>
@@ -56,16 +65,17 @@ import DisclaimerBar from '../components/DisclaimerBar.astro';
                 <h2 class="font-headline text-3xl text-gray-900 mb-12">Kadın yaşı tüp bebek başarısını nasıl etkiler?</h2>
                 <div class="space-y-6 text-gray-600">
                     <p>
-                        Kadının yaşı, tüp bebek (IVF) başarısındaki en güçlü bağımsız değişkendir. Bunun nedeni, kadınların doğumda sahip oldukları yumurta (oosit) sayısının yaş ilerledikçe hem sayıca azalması hem de kalitesinin düşmesidir. Bu biyolojik gerçek, hormon tedavisi ile değiştirilemez.
+                        Kadının yaşı, tüp bebek (IVF) sonucunu belirleyen en güçlü etkendir.<sup>[4]</sup> Bunun nedeni, doğuştan var olan yumurta (oosit) havuzunun yaşla hem sayıca azalması hem de kromozomu normal yumurta oranının düşmesidir. Bu biyolojik süreç hormon tedavisiyle geri çevrilemez.
                     </p>
                     <div class="bg-white border-l-4 border-primary rounded-xl p-6">
-                        <h4 class="font-bold text-gray-900 mb-4">Yaşa Göre Doğal Gebelik Oranları:</h4>
+                        <h4 class="font-bold text-gray-900 mb-4">Yaşa göre doğurganlık:</h4>
                         <ul class="space-y-2 text-sm">
-                            <li>• <strong>20-25 yaş:</strong> Aylık doğal gebelik şansı yaklaşık %25</li>
-                            <li>• <strong>30-34 yaş:</strong> Aylık doğal gebelik şansı yaklaşık %15</li>
-                            <li>• <strong>35-39 yaş:</strong> Aylık doğal gebelik şansı yaklaşık %10</li>
-                            <li>• <strong>40+ yaş:</strong> Aylık doğal gebelik şansı yaklaşık %3-5</li>
+                            <li>• <strong>32 yaşa kadar:</strong> Doğurganlık en yüksek düzeydedir.</li>
+                            <li>• <strong>32-37 yaş:</strong> Yavaş ama belirgin bir azalma başlar.<sup>[1]</sup></li>
+                            <li>• <strong>37 yaş sonrası:</strong> Düşüş hızlanır; düşük riski de artar.<sup>[1]</sup></li>
+                            <li>• <strong>42-44 yaş:</strong> IVF'te blastokist elde edilen kadınların 42 yaşta yaklaşık üçte birinde, 44 yaşta yarısından fazlasında hiç kromozomu normal embriyo bulunmaz.<sup>[2]</sup></li>
                         </ul>
+                        <p class="text-sm mt-4">Bu nedenle 35 yaş üzerinde 6 ay denemeden sonra, 40 yaş üzerinde ise beklemeden değerlendirme önerilir.<sup>[1]</sup></p>
                     </div>
                     <p>
                         IVF başarısı da benzer trend gösterir. Yaşa göre ayrıntılı veriler <a href="/basari-oranlari/" class="text-primary-600 hover:underline">başarı oranları</a> sayfasında yer alıyor. Daha fazla bilgi için <a href="/kadin-infertilitesi/" class="text-primary-600 hover:underline">kadın kısırlığı</a> rehberine bakabilirsiniz.
@@ -79,15 +89,14 @@ import DisclaimerBar from '../components/DisclaimerBar.astro';
             <h2 class="font-headline text-3xl text-gray-900 mb-12">Erkek yaşı sperm kalitesi ve fertiliteyi nasıl etkiler?</h2>
             <div class="space-y-6 text-gray-600">
                 <p>
-                    Erkek yaşı, kadın yaşı kadar kritik değildir, ancak göz ardı edilmemelidir. Yaş ilerledikçe, sperm motilitesi, morfolojisi ve DNA bütünlüğü etkilenebilir. Özellikle 50 yaşından sonra bu etkiler daha belirgin hale gelir.
+                    Erkek yaşının etkisi kadın yaşı kadar belirgin değildir, ama yok sayılmamalıdır. 90 çalışmayı ve 93 binden fazla erkeği kapsayan bir meta-analizde, yaş ilerledikçe semen hacmi, hareketlilik ve normal şekilli sperm oranı azaldı, DNA hasarı arttı; sperm yoğunluğu ise yaşla belirgin değişmedi.<sup>[3]</sup>
                 </p>
                 <div class="bg-white border-l-4 border-primary rounded-xl p-6">
-                    <h4 class="font-bold text-gray-900 mb-4">Yaş ve Sperm Parametreleri:</h4>
+                    <h4 class="font-bold text-gray-900 mb-4">Yaşla değişen sperm özellikleri:<sup>[3]</sup></h4>
                     <ul class="space-y-2 text-sm">
-                        <li>• <strong>20-30 yaş:</strong> Optimal sperm parametreleri, düşük DNA fragmentasyonu</li>
-                        <li>• <strong>30-40 yaş:</strong> Minimal değişim, genellikle normal parametreler</li>
-                        <li>• <strong>40-50 yaş:</strong> DNA fragmentasyonunda hafif artış mümkün</li>
-                        <li>• <strong>50+ yaş:</strong> Motilite ve morfoloji bozulması, DNA fragmentasyonunda artış</li>
+                        <li>• <strong>Azalanlar:</strong> Semen hacmi, toplam ve ileri hareketlilik, normal şekil oranı</li>
+                        <li>• <strong>Artan:</strong> Sperm DNA hasarı (fragmantasyon)</li>
+                        <li>• <strong>Belirgin değişmeyen:</strong> Sperm yoğunluğu</li>
                     </ul>
                 </div>
                 <p>
@@ -102,6 +111,10 @@ import DisclaimerBar from '../components/DisclaimerBar.astro';
           { href: '/erkek-infertilitesi', icon: 'man', title: 'Erkeklerde Kısırlık', description: 'Erkek yaşının etkisi' },
           { href: '/basari-oranlari', icon: 'trending_up', title: 'Başarı Oranları', description: 'Yaşa göre IVF başarı verileri' }
         ]} />
+
+        <section class="max-w-3xl mx-auto px-4 md:px-6 lg:px-8 mb-16">
+            <ReferenceList references={references} />
+        </section>
 
         <!-- Doktor Onay -->
         <section class="max-w-3xl mx-auto px-4 md:px-6 lg:px-8 mb-16">

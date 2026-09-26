@@ -5,6 +5,14 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 
 import { buildHubItemListSchema } from '../utils/hubStructuredData';
+import ReferenceList from '../components/ReferenceList.astro';
+
+// Her kaynak PubMed üzerinden doğrulandı (Eylül 2026).
+const references = [
+    { title: "Performing the embryo transfer: a guideline", type: "guideline" as const, authors: "Practice Committee of the American Society for Reproductive Medicine", journal: "Fertility and Sterility", year: 2017, doi: "10.1016/j.fertnstert.2017.01.025", pmid: "28366416" },
+    { title: "Interventions to optimize embryo transfer in women undergoing assisted conception: a comprehensive systematic review and meta-analyses", type: "systematicReview" as const, authors: "Tyler B, Walford H, Tamblyn J et al.", journal: "Human Reproduction Update", year: 2022, doi: "10.1093/humupd/dmac009", pmid: "35325124" },
+    { title: "Bed rest after an embryo transfer: a systematic review and meta-analysis", type: "systematicReview" as const, authors: "Cozzolino M, Troiano G, Esencan E", journal: "Archives of Gynecology and Obstetrics", year: 2019, doi: "10.1007/s00404-019-05296-5", pmid: "31520259" }
+];
 
 const transferHubLinks = [
     {
@@ -105,7 +113,7 @@ const itemListSchema = buildHubItemListSchema({
                         </div>
                         <h2 class="text-2xl font-headline font-bold">Embriyo Transferi Nasıl Yapılır?</h2>
                     </div>
-                    <p class="text-gray-600 leading-relaxed mb-6">Embriyo transferi, tüp bebek tedavisinin en kritik aşamalarından biridir. İşlem genellikle ağrısızdır ve anestezi gerektirmez. Ultrason eşliğinde ince bir kateter ile embriyo(lar) rahim boşluğuna yerleştirilir.</p>
+                    <p class="text-gray-600 leading-relaxed mb-6">Embriyo transferi, tüp bebek tedavisinin en kritik aşamalarından biridir. İşlem genellikle ağrısızdır ve anestezi gerektirmez. Ultrason eşliğinde ince ve yumuşak bir kateter ile embriyo(lar) rahim boşluğuna yerleştirilir; ultrason rehberliği ve yumuşak kateter, gebelik oranını artıran yöntemler arasındadır.<sup>[1][2]</sup></p>
                     <div class="space-y-4">
                         <div class="flex items-start gap-3">
                             <span class="w-1.5 h-1.5 rounded-full bg-primary-600 mt-2 flex-shrink-0"></span>
@@ -173,7 +181,7 @@ const itemListSchema = buildHubItemListSchema({
                 </div>
 
                 <div class="bg-white p-8 md:p-12">
-                    <p class="text-gray-600 leading-relaxed text-lg mb-10 max-w-3xl">Bu endişe son derece anlaşılır ve yaygındır. Ancak modern IVF laboratuvarlarında uygulanan <strong class="text-gray-900">çok katmanlı güvenlik protokolleri</strong> sayesinde böyle bir karışıklık neredeyse imkansızdır. İşte nedeni:</p>
+                    <p class="text-gray-600 leading-relaxed text-lg mb-10 max-w-3xl">Bu endişe son derece anlaşılır ve yaygındır. Ancak modern IVF laboratuvarlarında uygulanan <strong class="text-gray-900">çok katmanlı güvenlik protokolleri</strong> sayesinde böyle bir karışıklık çok nadirdir. İşte nedeni:</p>
 
                     <!-- Güvenlik Katmanları -->
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
@@ -445,7 +453,7 @@ const itemListSchema = buildHubItemListSchema({
                             <span class="material-symbols-outlined text-green-500 mt-0.5">check</span>
                             <div>
                                 <p class="font-semibold text-gray-900">Normal günlük aktivitelere devam edin</p>
-                                <p class="text-sm text-gray-600">Hafif tempolu yürüyüşler ve normal ev işleri yapabilirsiniz. Yatak istirahati gerekli değildir.</p>
+                                <p class="text-sm text-gray-600">Hafif tempolu yürüyüşler ve normal ev işleri yapabilirsiniz. Transferden sonra yatak istirahatinin yararı yoktur; çalışmalarda gebelik oranını artırmadığı, hatta biraz düşürebileceği görülmüştür.<sup>[2][3]</sup></p>
                             </div>
                         </div>
                         <div class="flex items-start gap-3">
@@ -683,7 +691,7 @@ const itemListSchema = buildHubItemListSchema({
                             </span>
                             <div>
                                 <p class="font-bold text-gray-900">Mindfulness ve nefes egzersizleri</p>
-                                <p class="text-sm text-gray-600">Günde 10 dakika farkındalık meditasyonu, kaygıyı önemli ölçüde azaltabilir.</p>
+                                <p class="text-sm text-gray-600">Günde birkaç dakikalık farkındalık veya nefes egzersizi, bekleme dönemindeki kaygıyı hafifletmeye yardım edebilir.</p>
                             </div>
                         </div>
                         <div class="flex items-start gap-4">
@@ -762,6 +770,9 @@ const itemListSchema = buildHubItemListSchema({
                     Adım Adım IVF Rehberi
                 </a>
             </div>
+        </section>
+        <section class="max-w-3xl mx-auto px-4 md:px-6 lg:px-8 mb-16">
+            <ReferenceList references={references} />
         </section>
     </main>
 

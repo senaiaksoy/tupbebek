@@ -4,6 +4,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import MedicalDisclaimer from '../components/MedicalDisclaimer.astro';
 import { safeJsonLdStringify } from '../utils/seo';
+import ReferenceList from '../components/ReferenceList.astro';
 
 
 // FAQPage JSON-LD schema — questions mirror the <details> blocks below.
@@ -410,7 +411,7 @@ const faqSchema = {
                             <span class="text-xs text-gray-400">•</span>
                             <span class="text-xs font-medium text-gray-600 uppercase tracking-wide">tupbebek.com Yayın Kurulu</span>
                             <span class="text-xs text-gray-400">•</span>
-                            <span class="text-xs text-gray-500">Son güncelleme: 11 Temmuz 2026</span>
+                            <span class="text-xs text-gray-500">Son güncelleme: 26 Eylül 2026</span>
                         </div>
                     </div>
                 </section>
@@ -418,6 +419,13 @@ const faqSchema = {
                 <MedicalDisclaimer variant="full" />
             </div>
         </div>
+        <section class="max-w-3xl mx-auto px-4 md:px-6 lg:px-8 mb-16">
+            <ReferenceList references={[
+                { title: "Distribution of semen examination results 2020 - A follow up of data collated for the WHO semen analysis manual 2010", authors: "Campbell MJ, Lotti F, Baldi E et al.", journal: "Andrology", year: 2021, doi: "10.1111/andr.12983", pmid: "33528873" },
+                { title: "Preimplantation genetic testing for aneuploidies (abnormal number of chromosomes) in in vitro fertilisation", type: "systematicReview", authors: "Cornelisse S, Zagers M, Kostova E et al.", journal: "Cochrane Database of Systematic Reviews", year: 2020, doi: "10.1002/14651858.CD005291.pub3", pmid: "32898291" },
+                { title: "ESHRE guideline: routine psychosocial care in infertility and medically assisted reproduction - a guide for fertility staff", type: "guideline", authors: "Gameiro S, Boivin J, Dancet E et al.", journal: "Human Reproduction", year: 2015, doi: "10.1093/humrep/dev177", pmid: "26345684" }
+            ]} />
+        </section>
     </main>
 
     <Footer />
