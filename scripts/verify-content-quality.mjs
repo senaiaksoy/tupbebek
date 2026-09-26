@@ -166,6 +166,10 @@ if (!fs.existsSync(DIST)) {
       const n = Number(m[1]);
       if (n > articleCount && n < 10000) errors.push(`${url}: "${m[0]}" iddiası gerçek makale sayısını (${articleCount}) aşıyor.`);
     }
+    // 2b'. Klinik ağzı: tupbebek bağımsız yayın portalıdır, hasta kabul etmez.
+    for (const m of text.matchAll(/(?<!\p{L})(?:hastalarımız|kliniğimiz|merkezimiz)\p{L}*|uzman ekibimiz\p{L}*/giu)) {
+      errors.push(`${url}: klinik ağzı "${m[0]}" … "${text.slice(Math.max(0, m.index - 40), m.index + 60)}"`);
+    }
     // 2c. Üstünlük iddiası (uyarı).
     for (const m of text.matchAll(/(?<!\p{L})en iyi(?!\p{L})/giu)) warnings.push(`${url}: üstünlük ifadesi "en iyi" … "${text.slice(Math.max(0, m.index - 30), m.index + 40)}"`);
     // 2d. Türkçe karakteri bozuk breadcrumb (hata; URL slug'ı etiket yerine kullanılmamalı).
