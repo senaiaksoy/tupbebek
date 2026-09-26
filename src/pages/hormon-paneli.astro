@@ -2,6 +2,14 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import ReferenceList from '../components/ReferenceList.astro';
+
+// Her kaynak PubMed üzerinden doğrulandı (Eylül 2026).
+const references = [
+    { title: "Testing and interpreting measures of ovarian reserve: a committee opinion", type: "guideline" as const, authors: "Practice Committee of the American Society for Reproductive Medicine", journal: "Fertility and Sterility", year: 2020, doi: "10.1016/j.fertnstert.2020.09.134", pmid: "33280722" },
+    { title: "Association between biomarkers of ovarian reserve and infertility among older women of reproductive age", authors: "Steiner AZ, Pritchard D, Stanczyk FZ et al.", journal: "JAMA", year: 2017, doi: "10.1001/jama.2017.14588", pmid: "29049585" },
+    { title: "Subclinical hypothyroidism in the infertile female population: a guideline", type: "guideline" as const, authors: "Practice Committee of the American Society for Reproductive Medicine", journal: "Fertility and Sterility", year: 2015, doi: "10.1016/j.fertnstert.2015.05.028", pmid: "26239023" }
+];
 ---
 
 <BaseLayout
@@ -73,7 +81,7 @@ import Footer from '../components/Footer.astro';
                         <h2 class="font-headline text-3xl text-gray-900 mb-6">AMH (Anti-Müllerian Hormon) testi neyi gösterir?</h2>
                         <div class="space-y-4 text-gray-600">
                             <p>
-                                AMH, over içindeki küçük foliküllerden (antral foliküller) salgılanan bir hormondur ve over rezervinin en güvenilir göstergelerinden biridir. Menstrüel döngünün herhangi bir gününde ölçülebilir—diğer hormonlardan farklı olarak döngü aşamasından etkilenmez.
+                                AMH, yumurtalıktaki küçük foliküllerden (antral foliküller) salgılanan bir hormondur ve yumurtalık rezervinin en güvenilir göstergelerinden biridir. Döngünün hemen her gününde ölçülebilir. Önemli bir sınır: AMH, IVF'te kaç yumurta toplanabileceğini tahmin etmeye yardım eder; doğal yoldan gebe kalma şansını ise yaştan bağımsız olarak iyi öngörmez.<sup>[1][2]</sup>
                             </p>
                             <div class="bg-white border-l-4 border-primary rounded-xl p-6">
                                 <table class="w-full text-sm">
@@ -103,6 +111,7 @@ import Footer from '../components/Footer.astro';
                                     </tbody>
                                 </table>
                             </div>
+                            <p class="text-xs text-gray-500">Aralıklar yaklaşıktır; kullanılan test kitine ve yaşa göre yorumlanır.</p>
                             <p class="text-sm">
                                 AMH düşük çıktığında <a href="/fertilite-koruma" class="text-primary-600 hover:underline">fertilite koruma</a> seçenekleri değerlendirilmelidir. Detaylı bilgi için <a href="/tibbi-sozluk/#letter-A" class="text-primary-600 hover:underline">tıbbi sözlük - AMH</a> sayfamıza bakın.
                             </p>
@@ -113,8 +122,8 @@ import Footer from '../components/Footer.astro';
                             <img class="rounded-2xl shadow-xl w-full" src="/images/library/embriyo/yumurta-sayisi.webp" alt="Mikroenjeksiyon pipetleri arasında ışıkla aydınlatılmış yumurta hücreleri" width="512" height="512" loading="lazy"/>
                             <div class="absolute -bottom-6 -right-6 bg-gray-100 p-4 rounded-lg hidden md:block">
                                 <p class="text-xs font-bold text-primary-600 tracking-widest uppercase mb-1">Klinik Veri</p>
-                                <p class="text-2xl font-headline">35+</p>
-                                <p class="text-[10px] text-gray-600">Yaş sonrasında AMH düşüşe geçer</p>
+                                <p class="text-2xl font-headline">Yaşla</p>
+                                <p class="text-[11px] text-gray-600">AMH yıllar içinde kademeli azalır</p>
                             </div>
                         </div>
                     </div>
@@ -129,7 +138,7 @@ import Footer from '../components/Footer.astro';
                     <h2 class="font-headline text-3xl text-gray-900 mb-6">FSH (Folikül Stimüle Hormon) testi nedir ve hangi değerler önemlidir?</h2>
                     <div class="space-y-4 text-gray-600">
                         <p>
-                            FSH, hipofiz bezinden salgılanan ve overdeki folikül gelişimini uyaran hormondur. Menstrüel döngünün 2. veya 3. gününde ölçülür. Yüksek bazal FSH, over rezervinin azaldığını gösterir.
+                            FSH, hipofiz bezinden salgılanan ve overdeki folikül gelişimini uyaran hormondur. Adet döngüsünün 2-3. gününde ölçülür. Yüksek bazal FSH, yumurtalık rezervinin azaldığını düşündürür; ancak değer döngüden döngüye değişebilir ve tek başına doğal gebelik şansını öngörmez.<sup>[1][2]</sup>
                         </p>
                         <div class="bg-white border-l-4 border-primary rounded-xl p-6">
                             <table class="w-full text-sm">
@@ -141,16 +150,16 @@ import Footer from '../components/Footer.astro';
                                 </thead>
                                 <tbody>
                                     <tr class="border-b border-gray-200">
-                                        <td class="py-2 pr-4 font-bold text-green-700">&lt; 8</td>
-                                        <td class="py-2 pr-4 text-gray-600">Normal, iyi yanıt</td>
+                                        <td class="py-2 pr-4 font-bold text-green-700">&lt; 10</td>
+                                        <td class="py-2 pr-4 text-gray-600">Genellikle olağan</td>
                                     </tr>
                                     <tr class="border-b border-gray-200">
-                                        <td class="py-2 pr-4 font-bold text-amber-600">8-12</td>
-                                        <td class="py-2 pr-4 text-gray-600">Azalmış rezerv</td>
+                                        <td class="py-2 pr-4 font-bold text-amber-600">&ge; 10</td>
+                                        <td class="py-2 pr-4 text-gray-600">Azalmış rezerv düşündürür; ilaçlara düşük yanıt olasılığı artar<sup>[1]</sup></td>
                                     </tr>
                                     <tr>
-                                        <td class="py-2 pr-4 font-bold text-red-600">&gt; 12</td>
-                                        <td class="py-2 pr-4 text-gray-600">Düşük over fonksiyonu</td>
+                                        <td class="py-2 pr-4 font-bold text-gray-600">Not</td>
+                                        <td class="py-2 pr-4 text-gray-600">Yaş ve AMH ile birlikte değerlendirilir</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -184,14 +193,14 @@ import Footer from '../components/Footer.astro';
                                 <strong>Prolaktin (PRL)</strong> süt üretiminden sorumlu hormondur. Yüksek prolaktin (hiperprolaktinemi) ovülasyonu baskılayarak infertiliteye yol açar. Normal değer: &lt; 25 ng/mL. Düşük doz bromocriptine veya cabergoline ile tedavi edilebilir.
                             </p>
                             <p>
-                                <strong>Tiroit Stimule Hormon (TSH)</strong> tiroid fonksiyonlarını düzenler. Hem hipotiroid hem de hipertiroid, menstrüel düzensizlik ve infertiliteye neden olabilir. İnfertilite tedavisinde ideal TSH aralığı: 0.5-2.5 mIU/L.
+                                <strong>Tiroit Stimule Hormon (TSH)</strong> tiroid fonksiyonlarını düzenler. Hem hipotiroid hem de hipertiroid, menstrüel düzensizlik ve infertiliteye neden olabilir. TSH 4 mIU/L'nin üzerindeyse tedavi önerilir. 2,5-4 arasındaki değerlerde tedavinin gebelik sonuçlarını iyileştirdiğine dair kanıt yetersizdir; karar hekimle birlikte verilir.<sup>[3]</sup>
                             </p>
                             <div class="bg-white border-l-4 border-primary rounded-xl p-6">
                                 <h4 class="font-bold text-gray-900 text-sm mb-3">Prolaktin ve TSH Referans Değerleri</h4>
                                 <div class="space-y-2 text-sm">
                                     <p><strong>Prolaktin:</strong> &lt; 25 ng/mL (kadın)</p>
-                                    <p><strong>TSH:</strong> 0.5–2.5 mIU/L (infertilite hedefi)</p>
-                                    <p><strong>TSH (genel):</strong> 0.4–4.0 mIU/L</p>
+                                    <p><strong>TSH (genel):</strong> yaklaşık 0,4–4,0 mIU/L</p>
+                                    <p><strong>TSH &gt; 4:</strong> Tedavi önerilir<sup>[3]</sup></p>
                                 </div>
                             </div>
                             <p class="text-sm">
@@ -236,6 +245,10 @@ import Footer from '../components/Footer.astro';
                     <p class="text-xs text-gray-600 mt-1">Hormon ve semen analizi sonuçları</p>
                 </a>
             </div>
+        </section>
+
+        <section class="max-w-3xl mx-auto px-4 md:px-6 lg:px-8 mb-16">
+            <ReferenceList references={references} />
         </section>
 
         <!-- Doktor Onay -->

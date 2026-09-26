@@ -4,6 +4,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { buildHubItemListSchema } from '../utils/hubStructuredData';
+import ReferenceList from '../components/ReferenceList.astro';
 
 const treatmentDecisionLinks = [
     {
@@ -241,7 +242,7 @@ const itemListSchema = buildHubItemListSchema({
                     </div>
                     <div class="grid grid-cols-1 md:grid-cols-[0.8fr_1.2fr] gap-4 p-5">
                         <h3 class="font-bold text-gray-900">Kanıtı sınırlı add-onlar</h3>
-                        <p class="text-sm text-gray-600 leading-relaxed">ERA, EmbryoGlue, endometrial scratching, bazı bağışıklık tedavileri ve over PRP rutin çözüm gibi sunulmamalı; hasta öyküsü ve kanıt gücüyle tartışılmalıdır.</p>
+                        <p class="text-sm text-gray-600 leading-relaxed">ERA, EmbryoGlue, endometrial scratching, bazı bağışıklık tedavileri ve over PRP rutin çözüm gibi sunulmamalı; hasta öyküsü ve kanıt gücüyle tartışılmalıdır. ESHRE, bu ek uygulamaların büyük bölümünü rutin kullanım için önermez.<sup>[1]</sup></p>
                     </div>
                 </div>
             </div>
@@ -356,6 +357,13 @@ const itemListSchema = buildHubItemListSchema({
                     </div>
                 </div>
             </div>
+        </section>
+        <section class="max-w-3xl mx-auto px-4 md:px-6 lg:px-8 mb-16">
+            <ReferenceList references={[
+                { title: "Good practice recommendations on add-ons in reproductive medicine", type: "guideline", authors: "ESHRE Add-ons Working Group; Lundin K, Bentzen JG, Bozdag G et al.", journal: "Human Reproduction", year: 2023, doi: "10.1093/humrep/dead184", pmid: "37747409" },
+                { title: "Evidence-based guideline: unexplained infertility", type: "guideline", authors: "ESHRE Guideline Group on Unexplained Infertility; Romualdi D, Ata B, Bhattacharya S et al.", journal: "Human Reproduction", year: 2023, doi: "10.1093/humrep/dead150", pmid: "37599566" },
+                { title: "ESHRE guideline: ovarian stimulation for IVF/ICSI: an update in 2025", type: "guideline", authors: "Ata B, Bosch E, Broer S et al. (ESHRE Guideline Group)", journal: "Human Reproduction", year: 2026, doi: "10.1093/humrep/deag018", pmid: "41732035" }
+            ]} />
         </section>
     </main>
 

@@ -2,9 +2,16 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import ReferenceList from '../components/ReferenceList.astro';
+
+// Her kaynak PubMed üzerinden doğrulandı (Eylül 2026).
+const references = [
+    { title: "European Association of Urology Guidelines on Male Sexual and Reproductive Health: 2021 Update on Male Infertility", type: "guideline" as const, authors: "Minhas S, Bettocchi C, Boeri L et al.", journal: "European Urology", year: 2021, doi: "10.1016/j.eururo.2021.08.014", pmid: "34511305" },
+    { title: "Diagnosis and Treatment of Infertility in Men: AUA/ASRM Guideline Part I", type: "guideline" as const, authors: "Schlegel PN, Sigman M, Collura B et al.", journal: "The Journal of Urology", year: 2021, doi: "10.1097/JU.0000000000001521", pmid: "33295257" }
+];
 ---
 
-<BaseLayout title="Genetik Testler Rehberi | tupbebek.com" description="Klinefelter, Y-kromozom deleterasyonu, CFTR mutasyonu, monogenik hastalık taramaları. Genetik etkenlerin rolü ve tedavi seçenekleri.">
+<BaseLayout title="Genetik Testler Rehberi | tupbebek.com" description="Klinefelter, Y kromozomu mikrodelesyonu, CFTR mutasyonu, monogenik hastalık taramaları. Genetik etkenlerin rolü ve tedavi seçenekleri.">
     <Header />
 
     <main id="main-content" tabindex="-1" class="pb-24">
@@ -43,7 +50,7 @@ import Footer from '../components/Footer.astro';
                 Karyotip, Y-mikrodelezyon, CFTR, talasemi gibi <strong>çiftin kendisinde</strong> uygulanan testleri kapsar. Embriyoya uygulanan preimplantasyon testler (PGT-A, PGT-M, PGT-SR) için <a href="/pgt-merkezi/" class="text-primary-700 underline hover:no-underline">PGT Merkezi</a> sayfasına bakın.
             </aside>
             <p class="text-lg md:text-xl text-gray-600 leading-relaxed font-body italic mb-12">
-                Genetik etkenler infertilite vakalarının yaklaşık %15-20'sinde temel neden oluşturur. Kromozomal anomaliler ve tek gen kaynaklı (monogenik) hastalıklar, sperm veya yumurta fonksiyonunu etkileyebilir. Genetik testler, doğru tanı ve uygun tedavi planlaması için kritik adımlardır.
+                Genetik nedenler özellikle ağır erkek kısırlığında, yani spermin çok az olduğu ya da hiç bulunmadığı durumlarda önemli yer tutar; kılavuzlar bu erkeklerde genetik test önerir.<sup>[1][2]</sup> Kromozomal anomaliler ve tek gen kaynaklı (monogenik) hastalıklar, sperm veya yumurta fonksiyonunu etkileyebilir. Genetik testler, doğru tanı ve uygun tedavi planlaması için kritik adımlardır.
             </p>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
                 <div class="bg-gray-50 p-6 rounded-xl shadow-sm border-t-2 border-primary-200">
@@ -83,7 +90,7 @@ import Footer from '../components/Footer.astro';
                                 </ul>
                             </div>
                             <p class="text-sm">
-                                Kromozomal testler <a href="/tani-sureci/" class="text-primary-600 hover:underline">tanı süreci</a> içinde yapılır. Azoospermide veya ciddi oligozoospermide önerilir. Detaylı terminoloji için <a href="/tibbi-sozluk/" class="text-primary-600 hover:underline">tıbbi sözlüğe</a> bakın.
+                                Kromozomal testler <a href="/tani-sureci/" class="text-primary-600 hover:underline">tanı süreci</a> içinde yapılır. Kılavuzlar karyotip ve Y kromozomu mikrodelesyon testini, spermi hiç olmayan (azoospermi) veya çok az olan (ağır oligozoospermi) erkeklerde önerir.<sup>[1][2]</sup> Detaylı terminoloji için <a href="/tibbi-sozluk/" class="text-primary-600 hover:underline">tıbbi sözlüğe</a> bakın.
                             </p>
                         </div>
                     </div>
@@ -109,7 +116,7 @@ import Footer from '../components/Footer.astro';
                             <div class="bg-white border-l-4 border-primary rounded-xl p-6 mrd-container">
                                 <strong class="block text-gray-900 mb-2">CFTR (Kistik Fibrozis Transmembrane Conductance Regulator)</strong>
                                 <p class="text-xs text-gray-600 mb-1">
-                                    Vaz deferens yokluğunun (CBAVD) en yaygın nedeni. Mutasyon taşıyan erkekler azoospermi veya obstrüktif infertilite gösterebilir. Partnerin de CFTR testi önerilir (taşıyıcılık riski).
+                                    Vaz deferens yokluğunun (CBAVD) en yaygın nedeni. Mutasyon taşıyan erkekler azoospermi veya obstrüktif infertilite gösterebilir. Bu durumda eşin de CFTR taşıyıcılığı açısından test edilmesi önerilir.<sup>[2]</sup>
                                 </p>
                             </div>
                             <div class="bg-white border-l-4 border-primary rounded-xl p-6 mrd-container">
@@ -162,6 +169,10 @@ import Footer from '../components/Footer.astro';
                     <p class="text-xs text-gray-600 mt-1">Genetik nedenler ve tanı</p>
                 </a>
             </div>
+        </section>
+
+        <section class="max-w-3xl mx-auto px-4 md:px-6 lg:px-8 mb-16">
+            <ReferenceList references={references} />
         </section>
 
         <!-- Doktor Onay -->
