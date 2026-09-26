@@ -2,27 +2,85 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import ReferenceList from '../components/ReferenceList.astro';
+
+// Her kaynak PubMed üzerinden doğrulandı (Eylül 2026).
+const references = [
+    {
+        title: "Fertility evaluation of infertile women: a committee opinion",
+        type: "guideline" as const,
+        authors: "Practice Committee of the American Society for Reproductive Medicine",
+        journal: "Fertility and Sterility",
+        year: 2021,
+        doi: "10.1016/j.fertnstert.2021.08.038",
+        pmid: "34607703"
+    },
+    {
+        title: "Distribution of semen examination results 2020 - A follow up of data collated for the WHO semen analysis manual 2010",
+        authors: "Campbell MJ, Lotti F, Baldi E et al.",
+        journal: "Andrology",
+        year: 2021,
+        doi: "10.1111/andr.12983",
+        pmid: "33528873"
+    },
+    {
+        title: "A unique view on male infertility around the globe",
+        authors: "Agarwal A, Mulgund A, Hamada A, Chyatte MR",
+        journal: "Reproductive Biology and Endocrinology",
+        year: 2015,
+        doi: "10.1186/s12958-015-0032-1",
+        pmid: "25928197"
+    }
+];
+
+const steps = [
+    {
+        no: '01',
+        title: 'Öykü ve muayene',
+        text: 'Ne kadar süredir denediğiniz, adet düzeniniz, geçirilmiş ameliyat veya enfeksiyonlar, önceki gebelikler, kullandığınız ilaçlar ve iki partnerin sağlık öyküsü konuşulur. Bu görüşme, hangi testlerin gerçekten gerekli olduğunu belirler.'
+    },
+    {
+        no: '02',
+        title: 'Yumurtlama',
+        text: 'Düzenli adet görmek çoğu zaman yumurtlamanın sürdüğünü gösterir. Adetler düzensizse hormon testleri (ör. prolaktin, tiroid) ve gerekirse yumurtlama sonrası progesteron ölçümü yapılır.'
+    },
+    {
+        no: '03',
+        title: 'Yumurtalık rezervi',
+        text: 'AMH kan testi ve vajinal ultrasonla sayılan antral folikül sayısı, yumurtalıkların ilaçlara nasıl yanıt vereceğini tahmin etmeye yardım eder. Bu testler doğal yoldan gebe kalma şansını tek başına öngörmez.'
+    },
+    {
+        no: '04',
+        title: 'Tüpler ve rahim',
+        text: 'Tüplerin açık olup olmadığı genellikle rahim filmi (HSG) ya da köpüklü ultrasonla (HyCoSy) değerlendirilir. Rahim iç yapısı vajinal ultrasonla, gerekirse serum fizyolojikle yapılan ultrason veya histeroskopi ile incelenir.'
+    },
+    {
+        no: '05',
+        title: 'Erkek değerlendirmesi',
+        text: 'Temel test semen analizidir ve kadın testleriyle aynı dönemde yapılır. Sonuç sınırdaysa analiz birkaç hafta sonra tekrarlanır; belirgin bozuklukta üroloji/androloji değerlendirmesi, hormon ve gerekirse genetik testler eklenir.'
+    }
+];
 ---
 
 <BaseLayout title="İnfertilite Tanı Süreci | tupbebek.com" description="Kadın ve erkek infertilite değerlendirmesi, hormon testleri, semen analizi, genetik tarama ve tanı yöntemleri hakkında adım adım rehber.">
     <Header />
-    
+
     <main id="main-content" tabindex="-1" class="pt-24">
         <!-- Hero Section -->
         <section class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-20">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div>
-                    <span class="text-primary-600 font-semibold tracking-widest text-sm uppercase mb-4 block">Klinik Rehber</span>
+                    <span class="text-primary-600 font-semibold tracking-widest text-sm uppercase mb-4 block">Tanı Rehberi</span>
                     <h1 class="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
-                        İnfertilite Tanı Süreci: <span class="text-primary-dim">Adım Adım Yol Haritası</span>
+                        Kısırlık Tanı Süreci: <span class="text-primary-dim">Adım Adım Yol Haritası</span>
                     </h1>
-                    <p class="text-lg text-gray-600 leading-relaxed max-w-xl mb-8">
-                        Doğru tedavi, doğru teşhisle başlar. tupbebek.com olarak, tanı sürecinin her aşamasında bilimsel rigor ve hasta odaklı yaklaşımı birleştiriyoruz.
+                    <p class="text-lg text-gray-600 leading-relaxed max-w-xl mb-6">
+                        <strong class="text-gray-900">Kısa cevap:</strong> Değerlendirme iki partnerle birlikte başlar ve dört soruyu yanıtlar: yumurtlama var mı, yumurtalık rezervi ne durumda, tüpler ve rahim sağlıklı mı, sperm yeterli mi? Bu temel testlerle çoğu çiftte birkaç hafta içinde bir yol haritası çıkar.<sup>[1]</sup>
                     </p>
                     <div class="flex items-center gap-4 p-4 bg-gray-100 rounded-xl inline-flex">
                         <span class="material-symbols-outlined text-primary-600 text-2xl">verified</span>
                         <div>
-                            <p class="text-sm font-bold text-gray-900">Yayın Kurulu</p>
+                            <p class="text-sm font-bold text-gray-900">tupbebek.com Editöryal Ekip</p>
                             <p class="text-xs text-gray-600 uppercase tracking-tighter">Tıbbi İnceleme</p>
                         </div>
                     </div>
@@ -31,69 +89,61 @@ import Footer from '../components/Footer.astro';
                     <div class="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl bg-gray-50">
                         <img alt="Sabah ışığında düzenli bir tanı odası: ultrason cihazı ve muayene koltuğu" class="w-full h-full object-cover" src="/images/tani-sureci/dna-cells.webp" width="1600" height="900" loading="eager" fetchpriority="high"/>
                     </div>
-                    <div class="absolute -bottom-6 -left-6 bg-gray-50 p-6 rounded-2xl shadow-xl max-w-xs border border-gray-200">
-                        <p class="text-primary-600 font-bold text-xl mb-1">98% Doğruluk</p>
-                        <p class="text-xs text-gray-600 font-medium uppercase tracking-wider leading-tight">Modern laboratuvar teknikleri ile kesin sonuçlar</p>
-                    </div>
                 </div>
             </div>
+        </section>
+
+        <!-- Ne zaman? -->
+        <section class="max-w-3xl mx-auto px-4 md:px-6 lg:px-8 pb-20">
+            <h2 class="text-3xl font-headline font-bold text-gray-900 mb-4">Değerlendirme ne zaman başlamalı?</h2>
+            <p class="text-gray-600 leading-relaxed mb-4">
+                Korunmasız ve düzenli ilişkiye rağmen gebelik olmadıysa, kadın 35 yaşın altındaysa 12 ay, 35 yaş ve üzerindeyse 6 ay sonra değerlendirme önerilir. 40 yaşın üzerinde beklemeden başlanabilir.<sup>[1]</sup>
+            </p>
+            <p class="text-gray-600 leading-relaxed">
+                Adetlerin çok düzensiz olması veya hiç olmaması, bilinen endometriozis, geçirilmiş pelvik enfeksiyon ya da tüp ameliyatı, kemoterapi öyküsü veya erkekte bilinen bir sorun varsa süre dolmadan başvurmak mantıklıdır.<sup>[1]</sup>
+            </p>
         </section>
 
         <!-- Process Timeline Section -->
         <section class="bg-gray-50 py-24">
             <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
                 <div class="text-center mb-16">
-                    <h2 class="text-4xl font-headline font-bold text-gray-900 mb-4">Tanı Yolculuğunuz</h2>
+                    <h2 class="text-4xl font-headline font-bold text-gray-900 mb-4">Temel Değerlendirmenin Beş Adımı</h2>
                     <div class="w-24 h-1 bg-primary-600 mx-auto rounded-full"></div>
                 </div>
-                <!-- Bento Grid Process -->
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <!-- Step 1: Initial Consultation -->
-                    <div class="md:col-span-2 bg-gray-50 p-10 rounded-3xl shadow-sm flex flex-col justify-between">
-                        <div>
-                            <div class="flex items-center gap-4 mb-6">
-                                <span class="w-10 h-10 rounded-full bg-primary-50 text-primary-800 flex items-center justify-center font-bold">01</span>
-                                <h3 class="text-2xl font-headline font-bold">İlk Görüşme (Initial Consultation)</h3>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+                    <div class="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6">
+                        {steps.map((s) => (
+                            <div class="bg-white p-8 rounded-3xl shadow-sm">
+                                <div class="flex items-center gap-4 mb-4">
+                                    <span class="w-10 h-10 rounded-full bg-primary-50 text-primary-800 flex items-center justify-center font-bold shrink-0">{s.no}</span>
+                                    <h3 class="text-xl font-headline font-bold">{s.title}</h3>
+                                </div>
+                                <p class="text-sm text-gray-600 leading-relaxed">{s.text}</p>
                             </div>
-                            <p class="text-gray-600 leading-relaxed mb-6">
-                                Sürecin en kritik aşamasıdır. Doktorunuzla yapacağınız bu görüşmede, tıbbi geçmişiniz, yaşam tarzınız ve önceki denemeleriniz detaylıca analiz edilir. Bu aşama, kişiselleştirilmiş bir tanı planının temelini oluşturur.
-                            </p>
-                            <ul class="space-y-4 mb-8">
-                                <li class="flex items-start gap-4">
-                                    <span class="w-1.5 h-1.5 rounded-full bg-primary-600 mt-2 flex-shrink-0"></span>
-                                    <span class="text-sm font-medium">Tıbbi Özgeçmiş Analizi</span>
-                                </li>
-                                <li class="flex items-start gap-4">
-                                    <span class="w-1.5 h-1.5 rounded-full bg-primary-600 mt-2 flex-shrink-0"></span>
-                                    <span class="text-sm font-medium">Fiziksel Muayene</span>
-                                </li>
-                                <li class="flex items-start gap-4">
-                                    <span class="w-1.5 h-1.5 rounded-full bg-primary-600 mt-2 flex-shrink-0"></span>
-                                    <span class="text-sm font-medium">Psikolojik Destek Planlaması</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <img alt="İlk görüşmede hekimin karşısında oturan çift; gözlüklü kadın telefonuna not alıyor" class="rounded-2xl h-48 w-full object-cover" src="/images/tani-sureci/consultation.webp" width="1200" height="675" loading="lazy"/>
+                        ))}
                     </div>
-                    <!-- Step 2: Male Evaluation -->
-                    <div class="bg-gray-50 p-10 rounded-3xl shadow-sm">
-                        <div class="flex items-center gap-4 mb-6">
-                            <span class="w-10 h-10 rounded-full bg-gray-100 text-gray-700 flex items-center justify-center font-bold">02</span>
-                            <h3 class="text-2xl font-headline font-bold">Erkek Değerlendirmesi</h3>
-                        </div>
-                        <p class="text-sm text-gray-600 leading-relaxed mb-6">
-                            Erkek fertilitesi, infertilite vakalarının yaklaşık %40'ını oluşturur. Temel test olan Sperm Analizi (Spermiogram), Dünya Sağlık Örgütü (WHO) kriterlerine göre değerlendirilir.
-                        </p>
-                        <div class="bg-gray-100 p-6 rounded-2xl mb-6">
-                            <h4 class="text-xs font-bold uppercase tracking-widest mb-3 text-primary-600">Analiz Parametreleri</h4>
+                    <div class="flex flex-col gap-6">
+                        <img alt="İlk görüşmede hekimin karşısında oturan çift; gözlüklü kadın telefonuna not alıyor" class="rounded-2xl w-full object-cover" src="/images/tani-sureci/consultation.webp" width="1200" height="675" loading="lazy"/>
+                        <div class="bg-white p-6 rounded-2xl shadow-sm">
+                            <h3 class="text-xs font-bold uppercase tracking-widest mb-3 text-primary-600">Semen analizi: WHO 2021 alt referans değerleri</h3>
                             <div class="space-y-2">
-                                <div class="flex justify-between text-xs"><span>Sayı</span><span class="font-bold">15 Milyon+</span></div>
-                                <div class="flex justify-between text-xs"><span>Hareketlilik</span><span class="font-bold">%40+</span></div>
-                                <div class="flex justify-between text-xs"><span>Morfoloji</span><span class="font-bold">%4+ (Kruger)</span></div>
+                                <div class="flex justify-between text-sm"><span>Yoğunluk</span><span class="font-bold">16 milyon/mL</span></div>
+                                <div class="flex justify-between text-sm"><span>Toplam hareketlilik</span><span class="font-bold">%42</span></div>
+                                <div class="flex justify-between text-sm"><span>İleri hareketlilik</span><span class="font-bold">%30</span></div>
+                                <div class="flex justify-between text-sm"><span>Normal şekil (morfoloji)</span><span class="font-bold">%4</span></div>
                             </div>
+                            <p class="text-xs text-gray-500 mt-3 leading-relaxed">Bu değerler, çocuk sahibi olmuş erkeklerin alt yüzde 5'lik dilimidir. Doğurgan ile doğurganlığı azalmış erkeği kesin olarak ayıran sınırlar değildir.<sup>[2]</sup></p>
                         </div>
-                        <span class="material-symbols-outlined text-4xl text-primary-200">biotech</span>
                     </div>
+                </div>
+                <div class="max-w-3xl mx-auto text-gray-600 leading-relaxed space-y-4">
+                    <p>
+                        Çiftlerin yaklaşık yarısında erkek faktörü tek başına ya da kadın faktörüyle birlikte rol oynar.<sup>[3]</sup> Bu yüzden semen analizi kadın testleriyle aynı dönemde, kadında girişimsel testlere geçmeden önce yapılmalıdır.
+                    </p>
+                    <p>
+                        Temel testler sonunda belirgin bir neden bulunamazsa buna <a class="text-primary-600 underline" href="/aciklanamayan-infertilite">açıklanamayan kısırlık</a> denir. Bu, bir sorun olmadığı anlamına gelmez; mevcut testlerle saptanamadığı anlamına gelir. Ayrıntılı testler için <a class="text-primary-600 underline" href="/hormon-paneli">hormon paneli</a>, <a class="text-primary-600 underline" href="/erkek-infertilitesi">erkek kısırlığı</a> ve <a class="text-primary-600 underline" href="/genetik-testler">genetik testler</a> sayfalarına bakabilirsiniz.
+                    </p>
                 </div>
             </div>
         </section>
@@ -107,14 +157,22 @@ import Footer from '../components/Footer.astro';
                 <div class="relative z-10 max-w-2xl">
                     <h2 class="text-4xl lg:text-5xl font-headline font-bold mb-6">Sonraki Adımlar</h2>
                     <p class="text-lg opacity-90 mb-10 leading-relaxed">
-                        Tanı süreci tamamlandığında, elde edilen tüm veriler yayın kurulumuz tarafından multidisipliner bir yaklaşımla değerlendirilir. Size özel tedavi protokolü (IVF, IUI veya İlaç Tedavisi) bu aşamadan sonra belirlenir.
+                        Test sonuçları, sizi değerlendiren hekimle birlikte yorumlanır. Seçenekler; yaşa, yumurtalık rezervine, tüplerin durumuna, sperm bulgularına ve ne kadar süredir denendiğine göre değişir: yaşam tarzı düzenlemesi, yumurtlama tedavisi, aşılama (IUI) veya tüp bebek (IVF/ICSI).
                     </p>
                     <div class="flex flex-wrap gap-4">
                         <a href="/tedavi-yontemleri" class="bg-white text-primary-600 px-8 py-4 rounded-xl font-bold hover:bg-gray-100 transition-all inline-block">Tedavi Yöntemlerini İncele</a>
-                        <button class="border border-white/30 text-white px-8 py-4 rounded-xl font-bold hover:bg-gray-100/10 transition-all">Danışmanlık Al</button>
+                        <a href="/kadin-infertilitesi" class="border border-white/30 text-white px-8 py-4 rounded-xl font-bold hover:bg-white/10 transition-all inline-block">Kadın Kısırlığı Rehberi</a>
                     </div>
                 </div>
             </div>
+        </section>
+
+        <!-- Kaynaklar ve künye -->
+        <section class="max-w-3xl mx-auto px-4 md:px-6 lg:px-8 pb-16">
+            <ReferenceList references={references} />
+            <p class="text-sm text-gray-600 mt-8">
+                Bu rehber, Baş Editör Doç. Dr. Senai Aksoy liderliğindeki tupbebek.com Editöryal Ekip tarafından hazırlanmış ve gözden geçirilmiştir. Son gözden geçirme: Eylül 2026. İçerik tıbbi tanı ve tedavi yerine geçmez; mutlaka hekiminize danışın.
+            </p>
         </section>
     </main>
 
