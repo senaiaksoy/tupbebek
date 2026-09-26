@@ -48,8 +48,8 @@
     "height": 109
   },
   "/images/home/erkek-infertilitesi.webp": {
-    "width": 800,
-    "height": 533
+    "width": 1600,
+    "height": 900
   },
   "/images/home/fertilite-koruma.webp": {
     "width": 200,
@@ -84,8 +84,8 @@
     "height": 500
   },
   "/images/library/embriyo/pgt.webp": {
-    "width": 1440,
-    "height": 500
+    "width": 1600,
+    "height": 900
   },
   "/images/library/embriyo/pgt_sex.webp": {
     "width": 1440,
@@ -104,8 +104,8 @@
     "height": 725
   },
   "/images/library/hastalik/dusuk-amh.webp": {
-    "width": 1440,
-    "height": 500
+    "width": 1600,
+    "height": 900
   },
   "/images/library/hastalik/endometriosis_tedavi.webp": {
     "width": 1440,
@@ -152,16 +152,16 @@
     "height": 500
   },
   "/images/library/hastalik/prolakktin.webp": {
-    "width": 1440,
-    "height": 500
+    "width": 1200,
+    "height": 675
   },
   "/images/library/hastalik/prolaktin.webp": {
     "width": 1440,
     "height": 500
   },
   "/images/library/hastalik/varikosel.webp": {
-    "width": 1024,
-    "height": 559
+    "width": 1200,
+    "height": 675
   },
   "/images/library/istatistik/basari_oranlari_hero.webp": {
     "width": 512,
@@ -280,8 +280,8 @@
     "height": 2048
   },
   "/images/library/psikoloji/yas-iyilesmeler.webp": {
-    "width": 1024,
-    "height": 1024
+    "width": 1200,
+    "height": 675
   },
   "/images/library/psikoloji/yasam-kalitesi-wellness.webp": {
     "width": 1024,
@@ -296,16 +296,16 @@
     "height": 500
   },
   "/images/library/tedavi/intralipides.webp": {
-    "width": 758,
-    "height": 505
+    "width": 1200,
+    "height": 675
   },
   "/images/library/tedavi/ivf_tedavi_sureci.webp": {
     "width": 1080,
     "height": 281
   },
   "/images/library/tedavi/post_transfert.webp": {
-    "width": 1440,
-    "height": 500
+    "width": 1200,
+    "height": 675
   },
   "/images/library/tedavi/prp.webp": {
     "width": 1440,
@@ -896,8 +896,8 @@
     "height": 512
   },
   "/images/rehberler/hormone-tracking.webp": {
-    "width": 512,
-    "height": 512
+    "width": 1200,
+    "height": 675
   },
   "/images/rehberler/senai-aksoy-5.webp": {
     "width": 512,
