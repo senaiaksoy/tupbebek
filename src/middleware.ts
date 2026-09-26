@@ -110,6 +110,13 @@ export const onRequest = defineMiddleware((context, next) => {
   // sürüm parametreleri (ör. /fonts/deferred.css?rev=...) yönlendirilmemelidir.
   let changed = isPagePath(canonicalUrl.pathname) && removeTrackingParams(canonicalUrl.searchParams);
 
+  // Sayfa adresleri küçük harflidir; /makaleler/beta-hCG-testi/ gibi istekler 404 olmamalı.
+  // Yüzde kodlu baytlar (%C3) büyük harf sayılmaz.
+  if (isPagePath(canonicalUrl.pathname) && /[A-Z]/.test(canonicalUrl.pathname.replace(/%[0-9A-Fa-f]{2}/g, ''))) {
+    canonicalUrl.pathname = canonicalUrl.pathname.replace(/%[0-9A-Fa-f]{2}|[A-Z]+/g, (m) => (m.startsWith('%') ? m : m.toLowerCase()));
+    changed = true;
+  }
+
   if (
     isPagePath(canonicalUrl.pathname) &&
     canonicalUrl.pathname !== '/' &&

@@ -260,6 +260,13 @@ function canonicalRedirectFor(requestUrl) {
     }
   }
 
+  // Page slugs are lowercase ASCII; /makaleler/beta-hCG-testi/ etc. must not 404.
+  // Percent-encoded bytes (%C3) are ignored when checking for uppercase letters.
+  if (isPagePath(url.pathname) && /[A-Z]/.test(url.pathname.replace(/%[0-9A-Fa-f]{2}/g, ''))) {
+    url.pathname = url.pathname.replace(/%[0-9A-Fa-f]{2}|[A-Z]+/g, (m) => (m.startsWith('%') ? m : m.toLowerCase()));
+    changed = true;
+  }
+
   if (isPagePath(url.pathname) && url.pathname !== '/' && !url.pathname.endsWith('/')) {
     url.pathname = \`\${url.pathname}/\`;
     changed = true;
