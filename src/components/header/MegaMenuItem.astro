@@ -23,7 +23,7 @@ const { menu } = Astro.props;
   </button>
 
   <!-- Mega Menu Panel -->
-  <div class="mega-menu-panel absolute top-[100%] left-0 w-full bg-white shadow-2xl border-b border-gray-100 opacity-0 invisible transition-all duration-300 translate-y-2 z-50" role="menu">
+  <div class="mega-menu-panel absolute top-[100%] left-0 w-full max-h-[calc(100dvh-80px)] overflow-y-auto overscroll-contain bg-white shadow-2xl border-b border-gray-100 opacity-0 invisible transition-all duration-300 translate-y-2 z-50" role="menu">
     <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-10 grid grid-cols-3 gap-8">
       <!-- LEFT: Menu Items -->
       <div class="border-r border-gray-100 pr-8">
