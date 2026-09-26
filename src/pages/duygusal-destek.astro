@@ -5,6 +5,14 @@ import Footer from '../components/Footer.astro';
 import StatsStrip from '../components/StatsStrip.astro';
 import RelatedContent from '../components/RelatedContent.astro';
 import DisclaimerBar from '../components/DisclaimerBar.astro';
+import ReferenceList from '../components/ReferenceList.astro';
+
+// Her kaynak PubMed üzerinden doğrulandı (Eylül 2026).
+const references = [
+    { title: "The prevalence of depression symptoms among infertile women: a systematic review and meta-analysis", type: "systematicReview" as const, authors: "Kiani Z, Simbar M, Hajian S, Zayeri F", journal: "Fertility Research and Practice", year: 2021, doi: "10.1186/s40738-021-00098-3", pmid: "33663615" },
+    { title: "ESHRE guideline: routine psychosocial care in infertility and medically assisted reproduction - a guide for fertility staff", type: "guideline" as const, authors: "Gameiro S, Boivin J, Dancet E et al.", journal: "Human Reproduction", year: 2015, doi: "10.1093/humrep/dev177", pmid: "26345684" },
+    { title: "Emotional distress in infertile women and failure of assisted reproductive technologies: meta-analysis of prospective psychosocial studies", type: "systematicReview" as const, authors: "Boivin J, Griffiths E, Venetis CA", journal: "BMJ", year: 2011, doi: "10.1136/bmj.d223", pmid: "21345903" }
+];
 ---
 
 <BaseLayout title="İnfertilite ve Duygusal Destek | tupbebek.com" description="İnfertilite tedavi sürecinde duygusal destek, stres yönetimi, psikolojik zorluklar ve baş etme stratejileri.">
@@ -28,7 +36,7 @@ import DisclaimerBar from '../components/DisclaimerBar.astro';
                         </div>
                         <div>
                             <p class="font-headline italic text-gray-900 text-sm">İnceleme:</p>
-                            <p class="font-bold text-primary-600">Yayın Kurulu</p>
+                            <p class="font-bold text-primary-600">tupbebek.com Editöryal Ekip</p>
                         </div>
                     </div>
                 </div>
@@ -44,9 +52,9 @@ import DisclaimerBar from '../components/DisclaimerBar.astro';
                 İnfertilite tedavisi fiziksel kadar duygusal bir yolculuktur. İnfertilite tanısı, tedavi süreci ve başarısızlık deneyimleri çiftlerde anksiyete, depresyon, ilişki sorunları ve kimlik krizi yaratabilir. Bu rehberde duygusal destek ve baş etme stratejilerini inceleyeceğiz.
             </p>
             <StatsStrip items={[
-              { icon: 'favorite', heading: '%40-50', text: 'İnfertilite hastalarında klinik depresyon veya anksiyete' },
+              { icon: 'favorite', heading: '%28-44', text: 'Kısırlık yaşayan kadınlarda depresyon belirtisi sıklığı (ülkenin gelir düzeyine göre) [1]' },
               { icon: 'groups', heading: 'Destek', text: 'Profesyonel rehber ve topluluk desteği kritik' },
-              { icon: 'check_circle', heading: 'Bilimsel', text: 'Terapi sonuçları tedavi başarı oranını artırıyor' }
+              { icon: 'check_circle', heading: 'Güvence', text: 'Tedavi öncesi kaygı, gebelik şansını düşürmüyor [3]' }
             ]} />
         </section>
 
@@ -89,16 +97,16 @@ import DisclaimerBar from '../components/DisclaimerBar.astro';
                         <h2 class="font-headline text-3xl text-gray-900 mb-6">1. İnfertilite Teşhisinin Duygusal Etkisi</h2>
                         <div class="space-y-4 text-gray-600">
                             <p>
-                                İnfertilite tanısı beklenmeyen bir krizdir. Geleceğe dair beklentiler değişir, kendine dair varsayımlar sorgulanır. Çiftler sırasıyla inkar, öfke, pazarlık, depresyon ve kabul aşamalarından geçerler.
+                                İnfertilite tanısı beklenmeyen bir krizdir. Geleceğe dair beklentiler değişir, kendine dair varsayımlar sorgulanır. Pek çok kişi inkâr, öfke, pazarlık, çökkünlük ve kabul gibi duygular yaşar. Ancak bunlar sırayla aşılan sabit evreler değildir: duygular gidip gelebilir, bazıları hiç yaşanmayabilir. Hepsi olağandır.
                             </p>
                             <div class="space-y-4 text-sm">
                                 <div class="flex items-start gap-4 bg-white rounded-xl p-4 shadow-sm">
                                     <span class="font-mono font-bold text-red-600 shrink-0">1</span>
-                                    <span class="text-gray-600"><strong>İnkar:</strong> "Bunu yapamaz. Kesinlikle yanlış bir teşhis olmalı."</span>
+                                    <span class="text-gray-600"><strong>İnkar:</strong> "Bu olamaz. Teşhis yanlış olmalı."</span>
                                 </div>
                                 <div class="flex items-start gap-4 bg-white rounded-xl p-4 shadow-sm">
                                     <span class="font-mono font-bold text-amber-600 shrink-0">2</span>
-                                    <span class="text-gray-600"><strong>Öfke:</strong> "Neden ben? Bu adil değil. Hiç haklı değilim."</span>
+                                    <span class="text-gray-600"><strong>Öfke:</strong> "Neden ben? Bu adil değil. Bunu hak etmedim."</span>
                                 </div>
                                 <div class="flex items-start gap-4 bg-white rounded-xl p-4 shadow-sm">
                                     <span class="font-mono font-bold text-primary-600 shrink-0">3</span>
@@ -121,11 +129,6 @@ import DisclaimerBar from '../components/DisclaimerBar.astro';
                     <div class="md:w-1/2">
                         <div class="relative group">
                             <img class="rounded-2xl shadow-xl w-full" src="/images/library/psikoloji/duygusal-etki.webp" alt="Duygusal destek, duygu işleme süreci" width="512" height="512" loading="lazy"/>
-                            <div class="absolute -bottom-6 -right-6 bg-gray-100 p-4 rounded-lg hidden md:block">
-                                <p class="text-xs font-bold text-primary-600 tracking-widest uppercase mb-1">Gerçek</p>
-                                <p class="text-2xl font-headline">5 Aşama</p>
-                                <p class="text-[10px] text-gray-600">Duygusal işleme süreci</p>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -294,7 +297,7 @@ import DisclaimerBar from '../components/DisclaimerBar.astro';
                     <h2 class="font-headline text-3xl text-gray-900 mb-6">5. Kaynaklar ve İlerleyen Adımlar</h2>
                     <div class="space-y-4 text-gray-600">
                         <p>
-                            Duygusal destek alan çiftler, daha iyi tedavi seçimleri ve yaşam kalitesi rapor ederler. Tedavi başarısı da artar - çünkü kortizol (stres hormonu) infertilite tedavisini olumsuz etkiler.
+                            ESHRE, kısırlık tedavisi gören herkese rutin psikososyal destek sunulmasını önerir; bu destek kaygıyı azaltmaya, tedaviye uyumu ve iyi oluşu artırmaya yardım eder.<sup>[2]</sup> Stresin gebelik şansını düşürdüğü inancı ise kanıtla desteklenmez: 3.583 kadını kapsayan bir meta-analizde tedavi öncesi kaygı ve depresyon, gebelik sonucuyla ilişkili bulunmadı.<sup>[3]</sup> Yani destek almanın amacı "başarıyı artırmak" değil, bu süreçte kendinizi daha iyi hissetmenizdir. Kendinizi suçlamanıza gerek yok.
                         </p>
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <a href="/rehberler" class="border rounded-xl p-6 hover:shadow-lg transition-shadow">
@@ -318,6 +321,8 @@ import DisclaimerBar from '../components/DisclaimerBar.astro';
                                 <p class="text-xs text-gray-600 mt-1">Kadın infertilitesinin duygusal etkileri</p>
                             </a>
                         </div>
+                        <ReferenceList references={references} />
+                        <p class="text-sm text-gray-600 mt-6">Bu rehber, Baş Editör Doç. Dr. Senai Aksoy liderliğindeki tupbebek.com Editöryal Ekip tarafından hazırlanmış ve gözden geçirilmiştir. Son gözden geçirme: Eylül 2026.</p>
                     </div>
                 </div>
             </div>

@@ -4,6 +4,15 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { buildHubItemListSchema } from '../utils/hubStructuredData';
 import { safeJsonLdStringify } from '../utils/seo';
+import ReferenceList from '../components/ReferenceList.astro';
+
+// Her kaynak PubMed üzerinden doğrulandı (Eylül 2026).
+const references = [
+    { title: "ESHRE guideline: endometriosis", type: "guideline" as const, authors: "Becker CM, Bokor A, Heikinheimo O et al.", journal: "Human Reproduction Open", year: 2022, doi: "10.1093/hropen/hoac009", pmid: "35350465" },
+    { title: "Medical treatment before in-vitro fertilization in patients with adenomyosis: a systematic review and meta-analysis", type: "systematicReview" as const, authors: "Galati G, Olivieri C, Cosentino M et al.", journal: "Journal of Assisted Reproduction and Genetics", year: 2025, doi: "10.1007/s10815-024-03323-2", pmid: "39666211" },
+    { title: "GnRH agonist pretreatment prior to frozen embryo transfer in women with adenomyosis: a systematic review and meta-analysis", type: "systematicReview" as const, authors: "Steinmann M, Anthon C, Kohl Schwartz AS et al.", journal: "Reproductive BioMedicine Online", year: 2025, doi: "10.1016/j.rbmo.2025.105075", pmid: "41075426" },
+    { title: "Good practice recommendations on add-ons in reproductive medicine", type: "guideline" as const, authors: "ESHRE Add-ons Working Group; Lundin K, Bentzen JG, Bozdag G et al.", journal: "Human Reproduction", year: 2023, doi: "10.1093/humrep/dead184", pmid: "37747409" }
+];
 
 
 const sections = [
@@ -59,11 +68,10 @@ const itemListSchema = buildHubItemListSchema({
         "headline": "Endometriozis ve Adenomyozis Rehberi",
         "description": "Endometriozis ve adenomyozis nedir? Belirtileri, tanı yöntemleri, tedavi seçenekleri ve fertilite üzerindeki etkileri hakkında kapsamlı rehber.",
         "datePublished": "2025-03-15",
-        "dateModified": "2026-04-03",
+        "dateModified": "2026-09-26",
         "author": {
-            "@type": "Person",
-            "name": "tupbebek.com Yayın Kurulu",
-            "jobTitle": "Üreme Endokrinolojisi ve İnfertilite Uzmanı"
+            "@type": "Organization",
+            "name": "tupbebek.com Editöryal Ekip"
         },
         "publisher": {
             "@type": "Organization",
@@ -73,7 +81,7 @@ const itemListSchema = buildHubItemListSchema({
         "medicalAudience": { "@type": "Patient" },
         "reviewedBy": {
             "@type": "Organization",
-            "name": "Yayın Kurulu"
+            "name": "tupbebek.com Editöryal Ekip"
         },
         "mainEntityOfPage": {
             "@type": "WebPage",
@@ -160,7 +168,7 @@ const itemListSchema = buildHubItemListSchema({
             <div class="text-center mb-14">
                 <span class="text-error font-label uppercase tracking-[0.3em] text-xs font-bold mb-4 block">Endometriozis</span>
                 <h2 class="text-3xl md:text-4xl font-headline text-gray-900 mb-4">Endometriozis Nedir?</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto leading-relaxed">Rahim iç tabakasının (endometrium) rahim dışında büyümesidir. Kadınların yaklaşık %10-15'ini etkiler ve infertil kadınların %25-50'sinde görülür.</p>
+                <p class="text-gray-600 max-w-2xl mx-auto leading-relaxed">Rahim iç tabakasının (endometrium) rahim dışında büyümesidir. Üreme çağındaki kadınların yaklaşık onda birini etkiler ve kısırlık yaşayan kadınlarda belirgin olarak daha sık görülür.</p>
             </div>
 
             <!-- Tanım ve Belirtiler -->
@@ -207,10 +215,10 @@ const itemListSchema = buildHubItemListSchema({
                             <p class="text-sm text-gray-600"><strong class="text-error">Tanı gecikmesi:</strong> Belirtilerin başlaması ile tanı arasında ortalama 7-10 yıl geçmektedir.</p>
                         </div>
                         <div class="bg-white/80 backdrop-blur-sm p-5 rounded-xl shadow-sm">
-                            <p class="text-sm text-gray-600"><strong class="text-error">Görülme sıklığı:</strong> Üreme çağındaki kadınların %10-15'ini etkiler.</p>
+                            <p class="text-sm text-gray-600"><strong class="text-error">Görülme sıklığı:</strong> Üreme çağındaki kadınların yaklaşık onda biri.</p>
                         </div>
                         <div class="bg-white/80 backdrop-blur-sm p-5 rounded-xl shadow-sm">
-                            <p class="text-sm text-gray-600"><strong class="text-error">İnfertilite oranı:</strong> Endometriozisli kadınların %30-50'sinde infertilite görülür.</p>
+                            <p class="text-sm text-gray-600"><strong class="text-error">Doğurganlık:</strong> Endometriozisli kadınların önemli bir kısmında gebe kalmak zorlaşır; ancak çoğu kendiliğinden ya da tedaviyle gebe kalabilir.</p>
                         </div>
                         <div class="bg-white/80 backdrop-blur-sm p-5 rounded-xl shadow-sm">
                             <p class="text-sm text-gray-600"><strong class="text-error">Kronik hastalık:</strong> Kesin tedavisi yoktur, ancak belirtiler yönetilebilir.</p>
@@ -543,7 +551,7 @@ const itemListSchema = buildHubItemListSchema({
                                 <td colspan="2" class="p-5 text-center text-gray-600">
                                     <span class="inline-flex items-center gap-2 px-4 py-2 bg-primary-50 rounded-full text-primary-600 font-bold text-sm">
                                         <span class="material-symbols-outlined text-lg">link</span>
-                                        Hastaların ~%40'ında birlikte görülür
+                                        Sıklıkla birlikte görülür
                                     </span>
                                 </td>
                             </tr>
@@ -675,7 +683,7 @@ const itemListSchema = buildHubItemListSchema({
                             <span class="w-2 h-2 rounded-full bg-tertiary mt-2 flex-shrink-0"></span>
                             <div>
                                 <p class="font-semibold text-gray-900">İmplantasyon Penceresi</p>
-                                <p class="text-sm text-gray-600">Endometrial reseptivite bozulur. İmplantasyon penceresi kayabilir, ERA testi ile kişisel zamanlama belirlenebilir.</p>
+                                <p class="text-sm text-gray-600">Rahim iç zarının embriyoyu kabul etme özelliğinin etkilenebileceği düşünülmektedir. Ancak ERA gibi testlerle transfer zamanını kişiselleştirmenin canlı doğumu artırdığı gösterilmemiştir.<sup>[4]</sup></p>
                             </div>
                         </div>
                     </div>
@@ -694,15 +702,15 @@ const itemListSchema = buildHubItemListSchema({
                     <div class="space-y-4">
                         <div class="p-5 bg-white rounded-xl border-l-4 border-primary">
                             <p class="font-semibold text-gray-900 text-sm">Başarı Oranları</p>
-                            <p class="text-sm text-gray-600 mt-1">Endometriozis ve adenomyozis varlığı IVF başarı oranlarını %10-20 oranında düşürebilir. Ancak doğru strateji ile başarılı sonuçlar elde edilmektedir.</p>
+                            <p class="text-sm text-gray-600 mt-1">Endometriozisi olan kadınlar IVF ile gebe kalabilir. Sonuçların endometriozisi olmayanlara göre ne kadar farklı olduğu çalışmalar arasında tutarsızdır; belirleyici olan çoğu zaman yaş ve yumurtalık rezervidir.<sup>[1]</sup></p>
                         </div>
                         <div class="p-5 bg-white rounded-xl border-l-4 border-primary">
                             <p class="font-semibold text-gray-900 text-sm">Cerrahi Gerekliliği</p>
-                            <p class="text-sm text-gray-600 mt-1">Büyük endometriomalar (&gt;4cm) IVF öncesi cerrahi gerektirebilir. Ancak gereksiz cerrahi over rezervini azaltır; karar dikkatle verilmelidir.</p>
+                            <p class="text-sm text-gray-600 mt-1">ESHRE, yalnızca IVF sonucunu iyileştirmek amacıyla endometrioma ameliyatını önermez; ameliyat ağrı veya yumurta toplamayı engelleyen durumlarda düşünülebilir. Kist ameliyatı yumurtalık rezervini azaltabildiği için karar dikkatle verilmelidir.<sup>[1]</sup></p>
                         </div>
                         <div class="p-5 bg-white rounded-xl border-l-4 border-primary">
-                            <p class="font-semibold text-gray-900 text-sm">Uzun Protokol GnRH Agonist</p>
-                            <p class="text-sm text-gray-600 mt-1">Adenomyozis varlığında 2-3 ay GnRH agonist ön tedavisi implantasyon oranlarını artırabilir. "Ultra-long" protokol olarak bilinir.</p>
+                            <p class="font-semibold text-gray-900 text-sm">Uzun Süreli GnRH Agonist Ön Tedavisi</p>
+                            <p class="text-sm text-gray-600 mt-1">Endometriozisde IVF öncesi aylarca süren agonist ön tedavisi ESHRE tarafından önerilmez.<sup>[1]</sup> Adenomyozisde bazı merkezlerde 2-3 ay uygulanır; meta-analizlerde gebelik oranında olası bir artış görülse de canlı doğumu artırdığı gösterilmemiştir.<sup>[2][3]</sup></p>
                         </div>
                     </div>
                 </div>
@@ -719,14 +727,14 @@ const itemListSchema = buildHubItemListSchema({
                             <span class="material-symbols-outlined icon-filled text-primary-600 flex-shrink-0 mt-0.5">check_circle</span>
                             <div>
                                 <p class="font-semibold text-gray-900 text-sm">Cerrahi Sonrası IVF Zamanlaması</p>
-                                <p class="text-sm text-gray-600">Endometrioma cerrahisi sonrası 3-6 ay içinde IVF başlatılması önerilir. Gecikme nüks riskini artırır.</p>
+                                <p class="text-sm text-gray-600">Ameliyattan sonra gebelik isteniyorsa tedavinin gereksiz yere geciktirilmemesi önerilir; endometriozis zamanla tekrarlayabilir.</p>
                             </div>
                         </div>
                         <div class="flex items-start gap-3">
                             <span class="material-symbols-outlined icon-filled text-primary-600 flex-shrink-0 mt-0.5">check_circle</span>
                             <div>
                                 <p class="font-semibold text-gray-900 text-sm">Dienogest Ön Tedavi</p>
-                                <p class="text-sm text-gray-600">IVF öncesi 2-3 ay dienogest kullanımı endometriotik lezyonları baskılar ve implantasyon ortamını iyileştirir.</p>
+                                <p class="text-sm text-gray-600">Dienogest veya kombine hapla IVF öncesi ön tedavinin canlı doğumu artırdığına dair kanıt yetersizdir; ağrı kontrolü gerekiyorsa kullanılabilir.<sup>[1]</sup></p>
                             </div>
                         </div>
                         <div class="flex items-start gap-3">
@@ -767,7 +775,7 @@ const itemListSchema = buildHubItemListSchema({
                             <span class="material-symbols-outlined icon-filled text-primary-600 text-3xl">vital_signs</span>
                         </div>
                         <h3 class="font-headline font-bold text-gray-900 mb-3">Ağrı Yönetimi</h3>
-                        <p class="text-sm text-gray-600 leading-relaxed">NSAİİ ilaçlar, hormonal tedavi, sinir blokları, TENS cihazı ve akupunktur gibi farklı ağrı kontrol yöntemleri kombine edilebilir.</p>
+                        <p class="text-sm text-gray-600 leading-relaxed">Ağrı kesiciler (NSAİİ), hormonal tedavi ve gerektiğinde cerrahi temel seçeneklerdir. TENS ve akupunktur gibi tamamlayıcı yöntemlerin kanıtı sınırlıdır.<sup>[1]</sup></p>
                     </div>
                     <div class="bg-white p-8 rounded-2xl text-center shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
                         <div class="w-16 h-16 bg-mint-100 rounded-2xl flex items-center justify-center mx-auto mb-5">
@@ -844,7 +852,7 @@ const itemListSchema = buildHubItemListSchema({
                         <span class="material-symbols-outlined text-gray-600 group-open:rotate-180 transition-transform duration-300 flex-shrink-0">expand_more</span>
                     </summary>
                     <div class="px-6 pb-6">
-                        <p class="text-gray-600 leading-relaxed">Evet, her iki hastalık sıklıkla birlikte görülür. Araştırmalara göre endometriozisli hastaların yaklaşık %40'ında adenomyozis de mevcuttur. Her iki hastalık da östrojen bağımlıdır ve benzer risk etkenlerini paylaşır. Birlikte varlıkta tedavi stratejisi her iki hastalığın dikkate alınarak planlanmalıdır.</p>
+                        <p class="text-gray-600 leading-relaxed">Evet, her iki hastalık sıklıkla birlikte görülür; bildirilen oranlar çalışmadan çalışmaya belirgin farklılık gösterir. Her iki hastalık da östrojen bağımlıdır ve benzer risk etkenlerini paylaşır. Birlikte varlıkta tedavi stratejisi her iki hastalığın dikkate alınarak planlanmalıdır.</p>
                     </div>
                 </details>
 
@@ -864,7 +872,7 @@ const itemListSchema = buildHubItemListSchema({
                         <span class="material-symbols-outlined text-gray-600 group-open:rotate-180 transition-transform duration-300 flex-shrink-0">expand_more</span>
                     </summary>
                     <div class="px-6 pb-6">
-                        <p class="text-gray-600 leading-relaxed">Adenomyozis IVF başarı oranlarını bir miktar düşürebilir, ancak uygun ön tedavi ile başarı mümkündür. GnRH agonist ile 2-3 ay ön tedavi, frozen embriyo transferi ve uygun endometrial hazırlık ile implantasyon oranları belirgin olarak iyileşir. Hastalığın yaygınlığı, JZ kalınlığı ve hastanın yaşı sonucu etkileyer ana etkenlerdir.</p>
+                        <p class="text-gray-600 leading-relaxed">Adenomyozis IVF sonuçlarını bir miktar düşürebilir, ama gebelik mümkündür. GnRH agonist ön tedavisi ve dondurulmuş embriyo transferi sık kullanılır; ancak bu yaklaşımların canlı doğumu artırdığı henüz gösterilmemiştir.<sup>[2][3]</sup> Sonucu etkileyen ana etkenler kadının yaşı, hastalığın yaygınlığı ve rahim kas tabakasındaki tutulumun derecesidir.</p>
                     </div>
                 </details>
 
@@ -884,13 +892,19 @@ const itemListSchema = buildHubItemListSchema({
                         <span class="material-symbols-outlined text-gray-600 group-open:rotate-180 transition-transform duration-300 flex-shrink-0">expand_more</span>
                     </summary>
                     <div class="px-6 pb-6">
-                        <p class="text-gray-600 leading-relaxed">Anti-enflamatuar diyet tek başına hastalığı tedavi etmez, ancak belirtilerin şiddetini azaltmada destekleyici rolü kanıtlanmıştır. Omega-3 yağ asitleri, kürkumin ve antioksidanlar inflamasyonu azaltır. Kırmızı et, işlenmiş gıdalar ve şeker ise inflamasyonu artırır. Beslenme değişikliklerini tıbbi tedavinin yanında tamamlayıcı bir yaklaşım olarak değerlendirmek en doğru tutumdur.</p>
+                        <p class="text-gray-600 leading-relaxed">Belirli bir diyetin endometriozisi tedavi ettiği ya da belirtileri güvenilir biçimde azalttığı gösterilmemiştir; ESHRE bu konuda öneri yapabilecek yeterli kanıt bulamamıştır.<sup>[1]</sup> Dengeli ve işlenmiş gıdadan fakir beslenme genel sağlık için yararlıdır; bazı kişiler belirli yiyeceklerle belirtilerinin değiştiğini fark eder. Beslenme, tıbbi tedavinin yerine değil yanında düşünülmelidir.</p>
                     </div>
                 </details>
             </div>
         </section>
 
         <!-- ═══════════════════════════════════════════════════════════════ -->
+        <!-- Kaynaklar ve künye -->
+        <section class="max-w-3xl mx-auto mb-16">
+            <ReferenceList references={references} />
+            <p class="text-sm text-gray-600 mt-8">Bu rehber, Baş Editör Doç. Dr. Senai Aksoy liderliğindeki tupbebek.com Editöryal Ekip tarafından hazırlanmış ve gözden geçirilmiştir. Son gözden geçirme: Eylül 2026. İçerik tıbbi tanı ve tedavi yerine geçmez; mutlaka hekiminize danışın.</p>
+        </section>
+
         <!-- CTA Section -->
         <!-- ═══════════════════════════════════════════════════════════════ -->
         <section class="text-center pb-8">
