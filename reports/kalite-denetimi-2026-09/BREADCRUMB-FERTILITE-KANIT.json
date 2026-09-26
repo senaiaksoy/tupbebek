@@ -1,0 +1,265 @@
+{
+  "checkedAt": "2026-09-26T10:57:25.671Z",
+  "pages": 99,
+  "changedBreadcrumbs": [
+    {
+      "route": "/bas-editor-kosesi/",
+      "before": "Bas Editor Kosesi",
+      "after": "Baş Editör Köşesi"
+    },
+    {
+      "route": "/iletisim/",
+      "before": "Iletisim",
+      "after": "İletişim"
+    },
+    {
+      "route": "/makaleler/adet-duzensizligi-pcos/",
+      "before": "Adet Duzensizligi Pcos",
+      "after": "Adet Düzensizliği ve PCOS: Tanı, Gebelik Şansı ve Tedavi Yol Haritası"
+    },
+    {
+      "route": "/makaleler/adet-gorememe/",
+      "before": "Adet Gorememe",
+      "after": "Adet Görememe (Amenore): Sekonder Tip, Primer Nedenler ve Tanı"
+    },
+    {
+      "route": "/makaleler/akinti-kasinti-koku/",
+      "before": "Akinti Kasinti Koku",
+      "after": "Akıntı, Kaşıntı, Koku: Mantar mı Bakteriyel Vajinoz mu?"
+    },
+    {
+      "route": "/makaleler/akraba-evliligi/",
+      "before": "Akraba Evliligi",
+      "after": "Akraba Evliliği ve Genetik Risk: Taşıyıcılık Taraması, Genetik Danışmanlık ve PGT-M Yaklaşımı"
+    },
+    {
+      "route": "/makaleler/alkol-ve-fertilite/",
+      "before": "Alkol Ve Fertilite",
+      "after": "Alkol ve Fertilite: Sperm, IVF ve Gebelik Planı"
+    },
+    {
+      "route": "/makaleler/asherman-sendromu/",
+      "before": "Asherman Sendromu",
+      "after": "Asherman Sendromu (Rahim İçi Yapışıklık): Tanı, Histeroskopik Tedavi ve Sonraki Gebelik Yönetimi"
+    },
+    {
+      "route": "/makaleler/bagisiklik-tedavileri/",
+      "before": "Bagisiklik Tedavileri",
+      "after": "Tüp Bebekte Bağışıklık Tedavileri İşe Yarar mı? İntralipid, IVIG ve NK Testleri"
+    },
+    {
+      "route": "/makaleler/cep-telefonu-sperm-kalitesi/",
+      "before": "Cep Telefonu Sperm Kalitesi",
+      "after": "Cep Telefonu Sperm Kalitesini Etkiler mi? Kanıtlar ve Önlemler"
+    },
+    {
+      "route": "/makaleler/dhea-buyume-hormonu-tup-bebek/",
+      "before": "Dhea Buyume Hormonu Tup Bebek",
+      "after": "DHEA ve Büyüme Hormonu Tüp Bebekte İşe Yarar mı? Kanıt Temelli Değerlendirme"
+    },
+    {
+      "route": "/makaleler/dusuk-sonrasi-hamilelik-bekleme-suresi/",
+      "before": "Dusuk Sonrasi Hamilelik Bekleme Suresi",
+      "after": "Düşükten Sonra Ne Zaman Hamile Kalınabilir? Bekleme Süresi ve Tıbbi Gerçekler"
+    },
+    {
+      "route": "/makaleler/duygusal-dayaniklik-rehberi/",
+      "before": "Duygusal Dayaniklik Rehberi",
+      "after": "Tüp Bebek Stresi ve Psikolojik Destek: Duygusal Dayanıklılık Rehberi"
+    },
+    {
+      "route": "/makaleler/embryoglue-faydalari/",
+      "before": "Embryoglue Faydalari",
+      "after": "EmbryoGlue Nedir? Embriyo Yapıştırıcı Gerçekten İşe Yarar mı?"
+    },
+    {
+      "route": "/makaleler/embryoscope-yapay-zeka/",
+      "before": "Embryoscope Yapay Zeka",
+      "after": "EmbryoScope ve Yapay Zeka Destekli Embriyo Seçimi: Kanıtlar"
+    },
+    {
+      "route": "/makaleler/endometriozis-akilli-stratejiler/",
+      "before": "Endometriozis Akilli Stratejiler",
+      "after": "Endometriozis ve Kısırlık: Tanı, Rezerv ve IVF Stratejileri"
+    },
+    {
+      "route": "/makaleler/endometrium-kalinligi-tup-bebek/",
+      "before": "Endometrium Kalinligi Tup Bebek",
+      "after": "Endometrium Kalınlığı ve Tüp Bebek: Rahim Zarı Kaç mm Olmalı?"
+    },
+    {
+      "route": "/makaleler/endometriyal-scratching/",
+      "before": "Endometriyal Scratching",
+      "after": "Endometriyal Scratching İşe Yarar mı? IVF Add-On Kanıt Rehberi"
+    },
+    {
+      "route": "/makaleler/endoskopik-cerrahi-histeroskopi/",
+      "before": "Endoskopik Cerrahi Histeroskopi",
+      "after": "Histeroskopi Nedir? Rahim İçi Endoskopik Cerrahi Rehberi"
+    },
+    {
+      "route": "/makaleler/era-testi-bas-editor-kosesi/",
+      "before": "Era Testi Bas Editor Kosesi",
+      "after": "ERA Testi Üzerine Bir Not: Pahalı Bir Test, Belirsiz Bir Fayda"
+    },
+    {
+      "route": "/makaleler/era-testi-iluzyon/",
+      "before": "Era Testi Iluzyon",
+      "after": "ERA Testi Nedir? Tüp Bebekte Endometriyal Reseptivite Kanıtları"
+    },
+    {
+      "route": "/makaleler/erkek-dogurganlik-besin-takviyeleri/",
+      "before": "Erkek Dogurganlik Besin Takviyeleri",
+      "after": "Erkek Doğurganlığı ve Sperm Takviyeleri: Kanıt Ne Diyor?"
+    },
+    {
+      "route": "/makaleler/hidrosalpinx-ve-kisirlik/",
+      "before": "Hidrosalpinx Ve Kisirlik",
+      "after": "Hidrosalpinx (Hidrosalpinks): IVF Öncesi Tedavi Kararı"
+    },
+    {
+      "route": "/makaleler/hiperprolaktinemi-ve-kisirlik/",
+      "before": "Hiperprolaktinemi Ve Kisirlik",
+      "after": "Hiperprolaktinemi ve Kısırlık: Prolaktin Yüksekliği Gebeliği Etkiler mi?"
+    },
+    {
+      "route": "/makaleler/hormonal-tedavi-adenomyozis/",
+      "before": "Hormonal Tedavi Adenomyozis",
+      "after": "Adenomyozis ve Tüp Bebek: Hormonal Tedavi Ne Zaman Düşünülür?"
+    },
+    {
+      "route": "/makaleler/imsi-picsi-macs-sperm-secimi/",
+      "before": "Imsi Picsi Macs Sperm Secimi",
+      "after": "Tüp Bebekte IMSI, PICSI ve MACS: Sperm Seçim Yöntemlerinin Kanıta Dayalı Analizi"
+    },
+    {
+      "route": "/makaleler/istanbul-tup-bebek-doktoru/",
+      "before": "Istanbul Tup Bebek Doktoru",
+      "after": "İstanbul Tüp Bebek Merkezi ve Doktor Seçimi: İlk Görüşme Soruları"
+    },
+    {
+      "route": "/makaleler/iui-nedir/",
+      "before": "Iui Nedir",
+      "after": "Aşılama (IUI) Nedir? Kimlere Uygundur, Nasıl Yapılır?"
+    },
+    {
+      "route": "/makaleler/ivf-oncesi-histeroskopi/",
+      "before": "Ivf Oncesi Histeroskopi",
+      "after": "IVF Öncesi Histeroskopi Gerekir mi? Rahim İçi Değerlendirme Rehberi"
+    },
+    {
+      "route": "/makaleler/ivf-protokolleri/",
+      "before": "Ivf Protokolleri",
+      "after": "IVF Protokolleri: Antagonist, Uzun, Mini IVF ve DuoStim Rehberi"
+    },
+    {
+      "route": "/makaleler/iyi-tup-bebek-merkezi/",
+      "before": "Iyi Tup Bebek Merkezi",
+      "after": "Tüp Bebek Merkezi Seçimi: Laboratuvar, Ekip ve Kalite Kontrol Listesi"
+    },
+    {
+      "route": "/makaleler/izotretinoin-sperm/",
+      "before": "Izotretinoin Sperm",
+      "after": "İzotretinoin Sperm Kalitesini Etkiler mi? Erkek Fertilitesi ve Güvenlik"
+    },
+    {
+      "route": "/makaleler/kac-yumurta-gerekir/",
+      "before": "Kac Yumurta Gerekir",
+      "after": "Tüp Bebekte Kaç Yumurta Gerekir? Yaşa Göre Gerçekçi Rehber"
+    },
+    {
+      "route": "/makaleler/kadin-kisirligi-tup-bebek/",
+      "before": "Kadin Kisirligi Tup Bebek",
+      "after": "Kadın Kısırlığı ve Tüp Bebek: Nedenler, Tanı ve Tedavi Yolu"
+    },
+    {
+      "route": "/makaleler/kanser-ve-fertilite/",
+      "before": "Kanser Ve Fertilite",
+      "after": "Kanser ve Fertilite: Tedavi Öncesi Doğurganlık Koruma Rehberi"
+    },
+    {
+      "route": "/makaleler/kimyasal-gebelik/",
+      "before": "Kimyasal Gebelik",
+      "after": "Kimyasal Gebelik Nedir? Belirtiler, hCG Takibi ve Boş Gebelik Farkı"
+    },
+    {
+      "route": "/makaleler/laboratuvar-raporu-yorumlama/",
+      "before": "Laboratuvar Raporu Yorumlama",
+      "after": "4AA, 3BB, 5BC Embriyo Ne Demek? Laboratuvar Raporu Yorumlama"
+    },
+    {
+      "route": "/makaleler/miyom-ameliyati/",
+      "before": "Miyom Ameliyati",
+      "after": "Miyom Ameliyatı Ne Zaman Gerekir? Gebelik ve IVF İçin Karar Rehberi"
+    },
+    {
+      "route": "/makaleler/miyomlar-ve-tup-bebek/",
+      "before": "Miyomlar Ve Tup Bebek",
+      "after": "Miyomlar ve Tüp Bebek: Transfer Öncesi Ameliyat Gerekir mi?"
+    },
+    {
+      "route": "/makaleler/opk-ve-ivf/",
+      "before": "Opk Ve Ivf",
+      "after": "PCOS ve Tüp Bebek: OHSS Riski, Protokol ve Transfer Stratejisi"
+    },
+    {
+      "route": "/makaleler/over-prp-yumurtalik-genclestirme-bas-editor-kosesi/",
+      "before": "Over Prp Yumurtalik Genclestirme Bas Editor Kosesi",
+      "after": "Yumurtalık Gençleştirme (PRP): Mucize mi, Deneysel Umut mu?"
+    },
+    {
+      "route": "/makaleler/over-prp/",
+      "before": "Over Prp",
+      "after": "Yumurtalık PRP Enjeksiyonu: Düşük Rezervde Gerçekçi Değerlendirme"
+    },
+    {
+      "route": "/makaleler/pcos-yeni-adi-pmos/",
+      "before": "Pcos Yeni Adi Pmos",
+      "after": "PMOS Nedir? PCOS&#39;un Yeni Adı Ne Değiştirdi?"
+    },
+    {
+      "route": "/makaleler/taze-dondurulmus-transfer/",
+      "before": "Taze Dondurulmus Transfer",
+      "after": "Dondurulmuş Embriyo Transferi mi Taze Transfer mi?"
+    },
+    {
+      "route": "/makaleler/tup-bebek-sureci-rehber/",
+      "before": "Tup Bebek Sureci Rehber",
+      "after": "Tüp Bebek Süreci ve Aşamaları: Kaç Gün Sürer?"
+    },
+    {
+      "route": "/makaleler/tup-bebek-yanlis-bilinenler/",
+      "before": "Tup Bebek Yanlis Bilinenler",
+      "after": "Tüp Bebek Hakkında 10 Yaygın Yanlış İnanç ve Doğruları"
+    },
+    {
+      "route": "/makaleler/vajinal-mikrobiyom-fiv/",
+      "before": "Vajinal Mikrobiyom Fiv",
+      "after": "Vajinal Mikrobiyom IVF Başarısını Etkiler mi? Kanıtlar Ne Söylüyor?"
+    },
+    {
+      "route": "/makaleler/varikosel-nedir-ne-zaman-ameliyat-gerekir/",
+      "before": "Varikosel Nedir Ne Zaman Ameliyat Gerekir",
+      "after": "Varikosel Nedir, Belirtileri Nelerdir ve Ne Zaman Ameliyat Gerekir?"
+    },
+    {
+      "route": "/makaleler/yumurta-dondurma-rehberi/",
+      "before": "Yumurta Dondurma Rehberi",
+      "after": "Yumurta Dondurma Rehberi: Ne Zaman Düşünülür, Kaç Yumurta Gerekebilir?"
+    },
+    {
+      "route": "/makaleler/yumurtalik-kistleri-dogurganlik/",
+      "before": "Yumurtalik Kistleri Dogurganlik",
+      "after": "Yumurtalık Kistleri ve Doğurganlık: Hangi Kist İzlenir, Hangisi Tedavi Edilir?"
+    },
+    {
+      "route": "/makaleler/yumurtlama-takibi/",
+      "before": "Yumurtlama Takibi",
+      "after": "Yumurtlama Takibi ve Ovülasyon: En Verimli Günler Nasıl Belirlenir?"
+    }
+  ],
+  "seoIdentityUnchanged": true,
+  "breadcrumbHierarchyUnchanged": true,
+  "visibleSchemaParity": true,
+  "fertilityClaimsRemoved": 3
+}

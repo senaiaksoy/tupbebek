@@ -40,6 +40,8 @@ const labelMap: Record<string, string> = {
   'ivf-rehberi': 'IVF Rehberi',
   'tibbi-sozluk': 'Tıbbi Sözlük',
   'hakkimizda': 'Hakkımızda',
+  'iletisim': 'İletişim',
+  'bas-editor-kosesi': 'Baş Editör Köşesi',
   'editoryal-politika': 'Editöryal Politika',
   'gizlilik-politikasi': 'Gizlilik Politikası',
   'kullanim-kosullari': 'Kullanım Koşulları',
@@ -100,7 +102,7 @@ export function generateLabel(segment: string): string {
  * Generate breadcrumbs from pathname
  * "/erkek-infertilitesi" → [{ label: 'Ana Sayfa', href: '/' }, { label: 'Erkek İnfertilitesi', href: '/erkek-infertilitesi' }]
  */
-export function generateBreadcrumbs(pathname: string): BreadcrumbItem[] {
+export function generateBreadcrumbs(pathname: string, articleTitle?: string): BreadcrumbItem[] {
   if (pathname === '/') {
     return [];
   }
@@ -125,7 +127,7 @@ export function generateBreadcrumbs(pathname: string): BreadcrumbItem[] {
     return [
       { label: hub.label, href: hub.href },
       {
-        label: articleTitleMap[articleSlug] ?? generateLabel(articleSlug),
+        label: articleTitleMap[articleSlug] ?? articleTitle ?? generateLabel(articleSlug),
         href: `/makaleler/${articleSlug}/`
       }
     ];

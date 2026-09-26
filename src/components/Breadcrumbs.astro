@@ -2,9 +2,14 @@
 // Breadcrumbs.astro - Enhanced with utility function
 import { generateBreadcrumbs } from '../utils/breadcrumbs';
 import { safeJsonLdStringify } from '../utils/seo';
+import { getPublishedArticles } from '../utils/articles';
 
 const { pathname } = Astro.url;
-const breadcrumbs = generateBreadcrumbs(pathname);
+const articleSlug = pathname.match(/^\/makaleler\/([^/]+)\/?$/)?.[1];
+const article = articleSlug
+  ? (await getPublishedArticles()).find(entry => entry.slug === articleSlug)
+  : undefined;
+const breadcrumbs = generateBreadcrumbs(pathname, article?.data.title);
 const siteOrigin = Astro.site?.toString() ?? Astro.url.origin;
 
 // JSON-LD for SEO
