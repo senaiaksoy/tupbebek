@@ -24,8 +24,8 @@
     "height": 676
   },
   "/images/fertilite-koruma/oncofertility.webp": {
-    "width": 800,
-    "height": 800
+    "width": 1200,
+    "height": 675
   },
   "/images/fertilite-koruma/sperm-dondurma.webp": {
     "width": 800,
@@ -44,8 +44,8 @@
     "height": 512
   },
   "/images/home/duygusal-destek.webp": {
-    "width": 200,
-    "height": 109
+    "width": 640,
+    "height": 360
   },
   "/images/home/erkek-infertilitesi.webp": {
     "width": 1600,
@@ -80,8 +80,8 @@
     "height": 720
   },
   "/images/library/embriyo/kimyasal-gebelik.webp": {
-    "width": 1440,
-    "height": 500
+    "width": 1200,
+    "height": 675
   },
   "/images/library/embriyo/pgt.webp": {
     "width": 1600,
@@ -116,12 +116,12 @@
     "height": 500
   },
   "/images/library/hastalik/erkekinfertilite.webp": {
-    "width": 1440,
-    "height": 500
+    "width": 1600,
+    "height": 900
   },
   "/images/library/hastalik/hidrosalpinks.webp": {
-    "width": 1440,
-    "height": 500
+    "width": 1600,
+    "height": 900
   },
   "/images/library/hastalik/histeroskopi_resim.webp": {
     "width": 1408,
@@ -144,20 +144,20 @@
     "height": 500
   },
   "/images/library/hastalik/opkveivf.webp": {
-    "width": 1440,
-    "height": 500
+    "width": 1200,
+    "height": 675
   },
   "/images/library/hastalik/pkos-ve-ivf.webp": {
-    "width": 1440,
-    "height": 500
+    "width": 1600,
+    "height": 900
   },
   "/images/library/hastalik/prolakktin.webp": {
     "width": 1200,
     "height": 675
   },
   "/images/library/hastalik/prolaktin.webp": {
-    "width": 1440,
-    "height": 500
+    "width": 1200,
+    "height": 675
   },
   "/images/library/hastalik/varikosel.webp": {
     "width": 1200,
@@ -295,13 +295,13 @@
     "width": 1440,
     "height": 500
   },
+  "/images/library/tedavi/ilac-rehberi-hero.webp": {
+    "width": 1600,
+    "height": 900
+  },
   "/images/library/tedavi/intralipides.webp": {
     "width": 1200,
     "height": 675
-  },
-  "/images/library/tedavi/ivf_tedavi_sureci.webp": {
-    "width": 1080,
-    "height": 281
   },
   "/images/library/tedavi/post_transfert.webp": {
     "width": 1200,

@@ -89,3 +89,30 @@ Kurallar her sahnede geçerli:
 2. **`dr-senai-aksoy-istanbul-ivf-laboratuvar.webp`:** Dosya adı bağımsızlık ilkesiyle çelişiyor ve görsel URL'sinde görünüyor. Yeni görsel `library/laboratuvar/mikro-tese-laboratuvar.webp` adıyla kaydedilsin, iki sayfadaki referans güncellensin, eski dosya silinsin. Görsel URL'leri sıralanan sayfa olmadığı için SEO riski düşük.
 3. **Telif riski:** `library/laboratuvar/oocytes-prior-to-a-f-and-k-and-after-insemination.webp` bir bilimsel yayından alınmış gibi görünüyor (A–O harfli panel, İngilizce gün etiketleri). Kaynağı ve lisansı doğrulanamazsa değiştirilmeli.
 4. **Üretim sırası:** Tek tur mu (33 görsel), yoksa önce Öncelik 1 ile hero (12 görsel), sonra geri kalan mı?
+
+## Onay ve uygulama kaydı
+
+- **2026-09-26, Dr. Aksoy onayı:** Sahne listesinin tamamı. Üretim iki turda yapılacak. Gri filtre 10 hub hero'sunun hepsinden kalkacak. Hekim adlı laboratuvar dosyası yeni adla kaydedilip eskisi silinecek. Embriyo gelişim paneli değiştirilecek. PR #181 birleştirilecek.
+- **PR #181:** Birleştirildi (`6fca2ec5`).
+- **Tur 1:** Öncelik 1'deki 11 görsel ve ilaç rehberi hero'su üretildi.
+  - Model: Higgsfield `gpt_image_2_5`, high, 2k; 12 × 2,75 = 33 kredi.
+  - Görseller tam çözünürlükte gözle kontrol edildi.
+  - Alt metinler görsele bakılarak yazıldı; `width` ve `height` gerçek boyutlara çekildi.
+  - `grayscale` filtresi 10 hero'nun hepsinden kaldırıldı.
+  - `ivf_tedavi_sureci.webp` silindi.
+  - Build exit 0, ön kontrol 24/24. Hero'lar yerel önizlemede 1366 px genişlikte kontrol edildi.
+
+| Dosya | Higgsfield job |
+|---|---|
+| `makaleler/over-prp-2026-kapak.jpeg` | 95158a32-b392-451f-b720-394b19b7b2f1 |
+| `makaleler/varikosel-nedir-ne-zaman-ameliyat-gerekir.webp` | d5ff1704-b20c-4a67-94cb-f2a38a562312 |
+| `makaleler/endoskopik-cerrahi-histeroskopi.webp` | 46ffddfa-b719-4b73-b589-95b5e23901ca |
+| `library/hastalik/prolaktin.webp` | 03167261-1553-45a1-9f1f-3523939f3222 |
+| `library/hastalik/pkos-ve-ivf.webp` | 8006bc8f-c04d-4090-862d-01005d9ac67b |
+| `library/hastalik/opkveivf.webp` | eb76d99f-77ac-41f1-8a8e-e36dd0112672 |
+| `library/hastalik/hidrosalpinks.webp` | e9d919ab-a7f6-4680-9567-c98229917927 |
+| `library/hastalik/erkekinfertilite.webp` | abdc2035-2e8c-439d-bfa3-132b72e66273 |
+| `library/embriyo/kimyasal-gebelik.webp` | 880edde7-7cdc-44d3-8c0b-0ae146bcc638 |
+| `home/duygusal-destek.webp` | 797730db-948e-4e44-a390-21006cadc631 |
+| `fertilite-koruma/oncofertility.webp` | f7330e6e-9902-4e29-89a5-23aafbb3e1bc |
+| `library/tedavi/ilac-rehberi-hero.webp` (yeni) | 3c08e0ad-8189-413e-8969-fe6cbbe4bac1 |
