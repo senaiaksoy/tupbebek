@@ -12,12 +12,12 @@ const HUBS = {
   },
   female: {
     href: '/kadin-infertilitesi/',
-    label: 'Kadın İnfertilitesi',
+    label: 'Kadınlarda Kısırlık',
     description: 'PCOS, düşük AMH, endometriozis, tüp faktörü ve rahim kaynaklı başlıkları bir araya getiren konu merkezi.'
   },
   male: {
     href: '/erkek-infertilitesi/',
-    label: 'Erkek İnfertilitesi',
+    label: 'Erkeklerde Kısırlık',
     description: 'Semen analizi, varikosel, azospermi, ICSI ve yaşam tarzı başlıklarını bağlayan ana rehber.'
   },
   transfer: {
