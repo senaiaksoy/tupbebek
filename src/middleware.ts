@@ -106,7 +106,9 @@ export const onRequest = defineMiddleware((context, next) => {
     }
   }
 
-  let changed = removeTrackingParams(canonicalUrl.searchParams);
+  // İzleme parametreleri yalnızca sayfalarda temizlenir; statik dosyalardaki
+  // sürüm parametreleri (ör. /fonts/deferred.css?rev=...) yönlendirilmemelidir.
+  let changed = isPagePath(canonicalUrl.pathname) && removeTrackingParams(canonicalUrl.searchParams);
 
   if (
     isPagePath(canonicalUrl.pathname) &&

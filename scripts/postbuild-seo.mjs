@@ -251,7 +251,9 @@ function canonicalRedirectFor(requestUrl) {
     });
   }
 
-  for (const key of [...url.searchParams.keys()]) {
+  // Tracking params are stripped from pages only; static assets keep their
+  // version query (e.g. /fonts/deferred.css?rev=...) so cache-busting works.
+  for (const key of isPagePath(url.pathname) ? [...url.searchParams.keys()] : []) {
     if (TRACKING_QUERY_PARAMS.has(key.toLowerCase())) {
       url.searchParams.delete(key);
       changed = true;
