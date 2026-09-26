@@ -116,3 +116,51 @@ Kurallar her sahnede geçerli:
 | `home/duygusal-destek.webp` | 797730db-948e-4e44-a390-21006cadc631 |
 | `fertilite-koruma/oncofertility.webp` | f7330e6e-9902-4e29-89a5-23aafbb3e1bc |
 | `library/tedavi/ilac-rehberi-hero.webp` (yeni) | 3c08e0ad-8189-413e-8969-fe6cbbe4bac1 |
+
+### Tur 1 yayını
+- **PR #182:** Birleştirildi (`cef1932a`); Cloudflare Git build'i başarılı.
+- **Önbellek:** İlk kontrolde 21 adresin 4'ü önbellekten eski haliyle geliyordu. Bu 4 adres ve silinen infografiğin adresi Cloudflare Custom Purge ile temizlendi.
+- **Canlı doğrulama:** 21/21 adres yerel build ile aynı; `ivf_tedavi_sureci.webp` 404 veriyor.
+
+### Tur 2
+- **Kapsam:** Öncelik 2 ve Öncelik 3'teki 20 görsel ve 3 yeni dosya: `genetik-dizileme.webp`, `mikro-tese-laboratuvar.webp`, `tetikleme-zamanlamasi.webp`.
+  - Model: Higgsfield `gpt_image_2_5`, high, 2k.
+  - Maliyet: 22 × 2,75 = 60,5 kredi.
+- **Silinen dosyalar:**
+  - `dr-senai-aksoy-istanbul-ivf-laboratuvar.webp`: Dosya adı bağımsızlık ilkesiyle çelişiyordu. Yerine erkek infertilitesi sayfasında `mikro-tese-laboratuvar.webp`, PGT merkezindeki NIPT bölümünde `genetik-dizileme.webp` kullanılıyor.
+  - `oocytes-prior-to-a-f-and-k-and-after-insemination.webp`: Telif şüphesi vardı. Yerine tetikleme bölümünde `tetikleme-zamanlamasi.webp` kullanılıyor.
+- **Genetik testler sayfası:** Petri kabı yerine `genetik-dizileme.webp` kullanılıyor.
+- **Görünüm düzeltmeleri:**
+  - `/tani-sureci/` hero'sundan `mix-blend-multiply opacity-90` kaldırıldı.
+  - `/hakkimizda/` görselini tamamen gizleyen opak katman kaldırıldı; görsel önceden hiç görünmüyordu.
+  - `/tani-sureci/` sayfasındaki %10 opaklıklı dekoratif doku (`abstract-cells.webp`) için alt metin `alt=""` ve `aria-hidden="true"` yapıldı.
+- **Boyut:** Ana sayfanın öne çıkan görseli (`yas_gebelikorani_ivf.webp`) 512×512'den 1600×900'e çıktı.
+- **Doğrulama:**
+  - Build exit 0, ön kontrol 24/24.
+  - Yerel önizlemede kontrol edildi: ana sayfa öne çıkan görseli, `/tani-sureci/`, `/basari-oranlari/` ve `/hakkimizda/`.
+  - Yazı riski taşıyan görseller tam çözünürlükte kontrol edildi: dizileme ekranı, makale yığını, saat kadranı. Diyagram etiketleri doğru yazılmış.
+
+| # | Dosya | Higgsfield job |
+|---|---|---|
+| 1 | `library/istatistik/yas_gebelikorani_ivf.webp` | d2927ebf-3aee-4886-b3e4-9c83dd19d32c |
+| 2 | `library/istatistik/basari_oranlari_hero.webp` | 06789e03-c470-4ce1-abd6-5364fda2d075 |
+| 3 | `library/embriyo/pgt_sex.webp` | f7579864-7712-490b-8bda-930e862a6caa |
+| 4 | `library/laboratuvar/microbiota.webp` | b7c9c7d4-6b62-49fb-ba4c-4332e4a48926 |
+| 5 | `library/laboratuvar/genetik-dizileme.webp` (yeni) | ad10fc03-9b06-426d-9e1b-cdb02d537c29 |
+| 6 | `library/tedavi/sperm_supp.webp` | 69902afd-bc45-4d44-a383-e328f646ba26 |
+| 7 | `library/laboratuvar/mikro-tese-laboratuvar.webp` (yeni) | 50b6e9d6-af6f-495b-b972-7c659f18ed58 |
+| 8 | `library/laboratuvar/embryoscop.webp` | 5d6c9e33-247c-4799-a8ca-91df80bbc652 |
+| 9 | `library/laboratuvar/icsicizim.webp` (diyagram) | 7901a809-21bb-4917-a0c1-14c0f36a0642 |
+| 10 | `library/tedavi/prp.webp` | a086cf4c-e736-4ca1-8e27-2bb32cd32155 |
+| 11 | `library/tedavi/taze-donmus-transfert.webp` | 5f549fe5-8453-4248-8d7d-3961b19aee5d |
+| 12 | `library/tedavi/tup_bebek_muayene.webp` | 905b9c02-dc64-44b2-acab-0e0f4d42269e |
+| 13 | `library/hastalik/kisirlik_endometriozis.webp` | a81dbc28-7ae0-4c4c-930c-6a792d34cd4b |
+| 14 | `fertilite-koruma/hero.webp` | cc5c9953-6355-4bc5-9f04-8a2ec2f94055 |
+| 15 | `hakkimizda/clinical-review.webp` | 276261cd-2b9a-4a0f-b166-465cfe382f96 |
+| 16 | `home/kadin-infertilitesi.webp` | f9a41b44-d01c-4f08-b42e-4b7366fee8ed |
+| 17 | `home/tani-sureci.webp` | 013de835-7aac-4398-9fdf-64a042dd210c |
+| 18 | `home/tedavi-yontemleri.webp` | 05ea8634-7ae0-4ceb-b82f-a03d0915d57a |
+| 19 | `tani-sureci/abstract-cells.webp` | 31faaf55-8bf6-4825-a8a2-4a5ad9ba5616 |
+| 20 | `tani-sureci/consultation.webp` | 56a02396-608b-4f9f-aada-87f477babea8 |
+| 21 | `tani-sureci/dna-cells.webp` | f0d51d77-5dd6-458e-bae2-0dd913c485d6 |
+| 22 | `library/tedavi/tetikleme-zamanlamasi.webp` (yeni) | f70f4859-07c5-4178-acb3-7a87beafa5de |

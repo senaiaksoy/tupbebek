@@ -16,6 +16,23 @@
       "height": 669
     }
   ],
+  "/images/library/istatistik/yas_gebelikorani_ivf.webp": [
+    {
+      "src": "/generated/article-heroes/library-istatistik-yas_gebelikorani_ivf-w640.webp",
+      "width": 640,
+      "height": 360
+    },
+    {
+      "src": "/generated/article-heroes/library-istatistik-yas_gebelikorani_ivf-w960.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "src": "/generated/article-heroes/library-istatistik-yas_gebelikorani_ivf-w1280.webp",
+      "width": 1280,
+      "height": 720
+    }
+  ],
   "/images/library/klinik/era-testi.webp": [
     {
       "src": "/generated/article-heroes/library-klinik-era-testi-w640.webp",
