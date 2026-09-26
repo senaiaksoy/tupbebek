@@ -115,7 +115,7 @@ const heroSrcSet = getResponsiveImageSrcSet(sanitizedImage);
     <!-- Article-specific JSON-LD -->
     <ArticleSchema entry={entry} url={articleUrl} />
 
-    <main id="main-content" tabindex="-1" class="pt-32 pb-24">
+    <main id="main-content" tabindex="-1" class="pt-8 md:pt-12 pb-24">
         <!-- Full-width article header -->
         <div class="max-w-3xl mx-auto px-4 md:px-6">
             <header class="mb-8">
@@ -219,13 +219,18 @@ const heroSrcSet = getResponsiveImageSrcSet(sanitizedImage);
 
             </header>
 
-            <!-- Video Embed (if article has videoId) -->
+            <!-- Video remains available without delaying the written article. -->
             {entry.data.videoId && (
-                <YouTubeEmbed
-                    id={entry.data.videoId}
-                    title={entry.data.videoTitle || entry.data.title}
-                    caption={entry.data.videoDescription}
-                />
+                <details class="mb-8 rounded-xl border border-gray-200 bg-white px-4 [&_.yt-embed]:my-4">
+                    <summary class="min-h-11 cursor-pointer py-3 text-sm font-semibold leading-relaxed text-gray-800 marker:text-primary-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600">
+                        Video: {entry.data.videoTitle || entry.data.title}
+                    </summary>
+                    <YouTubeEmbed
+                        id={entry.data.videoId}
+                        title={entry.data.videoTitle || entry.data.title}
+                        caption={entry.data.videoDescription}
+                    />
+                </details>
             )}
         </div>
 
