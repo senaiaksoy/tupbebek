@@ -7,6 +7,7 @@
 - yapay zekâ kalıntısı yorum
 - menüde tekrar eden bağlantı ya da kaynaksız yüzde
 - standart dışı künye
+- URL slug'ından gelen, Türkçe karakterleri bozuk breadcrumb etiketi
 - abartılı sayım iddiası
 - "ücretsiz muayene" gibi vaat ifadeleri
 

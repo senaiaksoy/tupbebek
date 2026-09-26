@@ -168,9 +168,9 @@ if (!fs.existsSync(DIST)) {
     }
     // 2c. Üstünlük iddiası (uyarı).
     for (const m of text.matchAll(/(?<!\p{L})en iyi(?!\p{L})/giu)) warnings.push(`${url}: üstünlük ifadesi "en iyi" … "${text.slice(Math.max(0, m.index - 30), m.index + 40)}"`);
-    // 2d. Türkçe karakteri bozuk breadcrumb (uyarı).
+    // 2d. Türkçe karakteri bozuk breadcrumb (hata; URL slug'ı etiket yerine kullanılmamalı).
     const crumb = html.match(/aria-current="page">([^<]+)</)?.[1];
-    if (crumb && ASCII_TR.test(crumb)) warnings.push(`${url}: breadcrumb etiketi Türkçe karakter içermiyor: "${crumb.trim()}"`);
+    if (crumb && ASCII_TR.test(crumb)) errors.push(`${url}: breadcrumb etiketi Türkçe karakter içermiyor: "${crumb.trim()}"`);
   }
 
   for (const [src, alts] of altsBySrc) {
