@@ -5,6 +5,7 @@
  * Replaces both old QuickGuideCards and "Temel Eğitim Rehberleri" sections
  */
 import { guideCategories, getColorScheme } from '../../data/guideCategories';
+import EssentialReading from './EssentialReading.astro';
 
 // Hero cards — the two most important guides (with images)
 const heroCards = [
@@ -59,7 +60,7 @@ const compactCards = [
 ];
 ---
 
-<section class="py-16 lg:py-20 paper-canvas border-t border-gray-200/60">
+<section class="py-16 lg:py-20 paper-canvas border-t border-gray-200/60" id="durum-secin" aria-labelledby="home-guides-title">
   <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
 
     <!-- Section Header -->
@@ -67,7 +68,7 @@ const compactCards = [
       <span class="text-xs font-bold uppercase tracking-[0.25em] text-primary-700 block mb-2">
         BİLİMSEL REHBERLER
       </span>
-      <h2 class="text-3xl lg:text-4xl font-serif font-bold text-gray-900 mb-3">
+      <h2 id="home-guides-title" class="text-3xl lg:text-4xl font-serif font-bold text-gray-900 mb-3">
         Rehberler & Başvuru Kaynakları
       </h2>
       <p class="text-base text-gray-600 max-w-xl font-sans">
@@ -147,5 +148,6 @@ const compactCards = [
         );
       })}
     </div>
+    <EssentialReading />
   </div>
 </section>
