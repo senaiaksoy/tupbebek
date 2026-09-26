@@ -2,6 +2,17 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import ReferenceList from '../components/ReferenceList.astro';
+
+// Her kaynak PubMed üzerinden doğrulandı (Eylül 2026).
+const references = [
+    { title: "ESHRE good practice recommendations on recurrent implantation failure", type: "guideline" as const, authors: "ESHRE Working Group on Recurrent Implantation Failure; Cimadomo D, de los Santos MJ, Griesinger G et al.", journal: "Human Reproduction Open", year: 2023, doi: "10.1093/hropen/hoad023", pmid: "37332387" },
+    { title: "The nature of aneuploidy with increasing age of the female partner: a review of 15,169 consecutive trophectoderm biopsies evaluated with comprehensive chromosomal screening", authors: "Franasiak JM, Forman EJ, Hong KH et al.", journal: "Fertility and Sterility", year: 2014, doi: "10.1016/j.fertnstert.2013.11.004", pmid: "24355045" },
+    { title: "Preimplantation genetic testing for aneuploidies (abnormal number of chromosomes) in in vitro fertilisation", type: "systematicReview" as const, authors: "Cornelisse S, Zagers M, Kostova E et al.", journal: "Cochrane Database of Systematic Reviews", year: 2020, doi: "10.1002/14651858.CD005291.pub3", pmid: "32898291" },
+    { title: "Good practice recommendations on add-ons in reproductive medicine", type: "guideline" as const, authors: "ESHRE Add-ons Working Group; Lundin K, Bentzen JG, Bozdag G et al.", journal: "Human Reproduction", year: 2023, doi: "10.1093/humrep/dead184", pmid: "37747409" },
+    { title: "Predicting the chances of a live birth after one or more complete cycles of in vitro fertilisation: population based study of linked cycle data from 113 873 women", authors: "McLernon DJ, Steyerberg EW, Te Velde ER, Lee AJ, Bhattacharya S", journal: "BMJ", year: 2016, doi: "10.1136/bmj.i5735", pmid: "27852632" },
+    { title: "Infertility prevalence and the methods of estimation from 1990 to 2021: a systematic review and meta-analysis", type: "systematicReview" as const, authors: "Cox CM, Thoma ME, Tchangalova N et al.", journal: "Human Reproduction Open", year: 2022, doi: "10.1093/hropen/hoac051", pmid: "36483694" }
+];
 ---
 
 <BaseLayout title="Başarısız Tüp Bebek Denemesi Sonrası | tupbebek.com" description="Tüp bebek tedavisi başarısız olduysa ne yapmalı? Başarısızlık nedenleri, yeni stratejiler, ikinci deneme planlaması ve psikolojik destek rehberi.">
@@ -51,23 +62,23 @@ import Footer from '../components/Footer.astro';
                         <span class="material-symbols-outlined icon-filled text-gray-600">genetics</span>
                     </div>
                     <h3 class="text-lg font-headline font-bold text-gray-900 mb-3">Genetik Etkenler</h3>
-                    <p class="text-sm text-gray-600 leading-relaxed">Embriyodaki kromozomal anormallikler en sık başarısızlık nedenidir. 35 yaş üstünde anöploidi oranı %40'ı, 40 yaş üstünde %60'ı aşabilir.</p>
+                    <p class="text-sm text-gray-600 leading-relaxed">Embriyodaki kromozom sayı bozuklukları (anöploidi) tutunmamanın en sık nedenidir ve kadın yaşıyla artar. 15 binden fazla embriyo biyopsisinde, hiç kromozomu normal embriyosu çıkmayan kadınların oranı 26-37 yaşta %2-6 iken 42 yaşta %33, 44 yaşta %53'tü.<sup>[2]</sup></p>
                 </div>
 
                 <div class="group bg-gray-50 p-8 rounded-xl hover:shadow-xl transition-all duration-300 border border-transparent hover:border-gray-200">
                     <div class="w-12 h-12 bg-primary-50 rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
                         <span class="material-symbols-outlined icon-filled text-primary-600">immune</span>
                     </div>
-                    <h3 class="text-lg font-headline font-bold text-gray-900 mb-3">İmmünolojik Nedenler</h3>
-                    <p class="text-sm text-gray-600 leading-relaxed">Bağışıklık sisteminin embriyoyu "yabancı" olarak algılayıp reddetmesi. NK hücre aktivitesi, antifosfolipid antikorları ve otoimmün durumlar araştırılmalıdır.</p>
+                    <h3 class="text-lg font-headline font-bold text-gray-900 mb-3">Bağışıklık Sistemi</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Bağışıklık sisteminin embriyoyu "reddettiği" fikri yaygındır ama kanıtı zayıftır. ESHRE, NK hücre testlerini rutin önermez. Antifosfolipid antikorları gibi belirli testler ise bireysel olarak düşünülebilir.<sup>[1]</sup></p>
                 </div>
 
                 <div class="group bg-gray-50 p-8 rounded-xl hover:shadow-xl transition-all duration-300 border border-transparent hover:border-gray-200">
                     <div class="w-12 h-12 bg-mint-100 rounded-xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
                         <span class="material-symbols-outlined icon-filled text-mint-600">bloodtype</span>
                     </div>
-                    <h3 class="text-lg font-headline font-bold text-gray-900 mb-3">Trombofili</h3>
-                    <p class="text-sm text-gray-600 leading-relaxed">Pıhtılaşma bozuklukları plasental kan akışını etkileyebilir. Faktör V Leiden, MTHFR mutasyonu ve antitrombin eksikliği araştırılması gerekebilir.</p>
+                    <h3 class="text-lg font-headline font-bold text-gray-900 mb-3">Pıhtılaşma (Trombofili)</h3>
+                    <p class="text-sm text-gray-600 leading-relaxed">Faktör V Leiden gibi kalıtsal pıhtılaşma yatkınlıklarının taranması, tutunmama nedeniyle rutin önerilmez; MTHFR testi de önerilmez. Kişisel ya da ailesel pıhtı öyküsü varsa durum farklıdır ve hekiminizle konuşulmalıdır.<sup>[1]</sup></p>
                 </div>
 
                 <div class="group bg-gray-50 p-8 rounded-xl hover:shadow-xl transition-all duration-300 border border-transparent hover:border-gray-200">
@@ -75,7 +86,7 @@ import Footer from '../components/Footer.astro';
                         <span class="material-symbols-outlined icon-filled text-gray-600">mystery</span>
                     </div>
                     <h3 class="text-lg font-headline font-bold text-gray-900 mb-3">Açıklanamayan Başarısızlık</h3>
-                    <p class="text-sm text-gray-600 leading-relaxed">Tüm testler normal çıkmasına rağmen implantasyon gerçekleşmeyebilir. Bu durum hastaların yaklaşık %25'inde görülür ve yeni yaklaşımlar gerektirir.</p>
+                    <p class="text-sm text-gray-600 leading-relaxed">Tüm testler normal olsa da tutunma olmayabilir. Çoğu zaman bu, kromozomu normal görünen embriyolarda bile şansın her transferde sınırlı olmasının sonucudur. ESHRE, "tekrarlayan tutunma başarısızlığı" tanısını sabit bir deneme sayısına değil, o kişi için beklenen toplam şansın %60'ı aşıp aşmamasına bağlar.<sup>[1]</sup></p>
                 </div>
             </div>
         </section>
@@ -125,7 +136,7 @@ import Footer from '../components/Footer.astro';
                         </span>
                         <div>
                             <p class="font-bold text-gray-900">"Ek testlere ihtiyacım var mı?"</p>
-                            <p class="text-sm text-gray-600 mt-1">ERA testi, histeroskopi, immünolojik panel veya trombofili taraması gerekip gerekmediğini değerlendirin.</p>
+                            <p class="text-sm text-gray-600 mt-1">Her önerilen test için "Bu sonuç tedavimi nasıl değiştirecek?" diye sorun. Rahim içini gösteren ultrason veya histeroskopi kararı değiştirebilir; ERA, NK hücre ve kalıtsal trombofili testleri ise ESHRE tarafından rutin önerilmez.<sup>[1]</sup></p>
                         </div>
                     </div>
                     <div class="bg-white p-5 rounded-xl flex items-start gap-4 shadow-sm">
@@ -134,7 +145,7 @@ import Footer from '../components/Footer.astro';
                         </span>
                         <div>
                             <p class="font-bold text-gray-900">"PGT-A düşünmeli miyiz?"</p>
-                            <p class="text-sm text-gray-600 mt-1">Preimplantasyon genetik test, özellikle tekrarlayan başarısızlıklarda kromozomal olarak normal embriyo seçimini sağlar.</p>
+                            <p class="text-sm text-gray-600 mt-1">PGT-A embriyoları kromozom sayısına göre seçer ve boşa transfer sayısını azaltabilir. Ancak toplam canlı doğum şansını artırdığı gösterilmemiştir; artı ve eksilerini sizin için konuşun.<sup>[3]</sup></p>
                         </div>
                     </div>
                     <div class="bg-white p-5 rounded-xl flex items-start gap-4 shadow-sm">
@@ -179,7 +190,7 @@ import Footer from '../components/Footer.astro';
                         <span class="material-symbols-outlined icon-filled text-mint-600">genetics</span>
                         <h3 class="text-lg font-headline font-bold">PGT-A (Genetik Test)</h3>
                     </div>
-                    <p class="text-sm text-gray-600 leading-relaxed mb-4">Embriyoların transferden önce genetik taraması yapılarak kromozomal olarak normal (öploid) embriyolar seçilir. Özellikle 35+ yaş ve tekrarlayan başarısızlıklarda önerilir.</p>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-4">Embriyolardan transferden önce birkaç hücre alınıp kromozom sayısına bakılır. Başarısız transfer sayısını azaltabilir; ama ne genel IVF grubunda ne de ileri yaş veya tekrarlayan başarısızlıkta toplam canlı doğum şansını artırdığı gösterilmiştir. ESHRE rutin kullanımını önermez.<sup>[3][4]</sup></p>
                     <div class="flex flex-wrap gap-2">
                         <span class="text-xs px-3 py-1 bg-mint-50 text-mint-600 rounded-full font-semibold">Anöploidi Taraması</span>
                         <span class="text-xs px-3 py-1 bg-mint-50 text-mint-600 rounded-full font-semibold">Mozaisizm Analizi</span>
@@ -192,7 +203,7 @@ import Footer from '../components/Footer.astro';
                         <span class="material-symbols-outlined icon-filled text-gray-600">labs</span>
                         <h3 class="text-lg font-headline font-bold">ERA Testi (Endometrial Reseptivite)</h3>
                     </div>
-                    <p class="text-sm text-gray-600 leading-relaxed mb-4">Endometriumu biyopsi ile inceleyerek implantasyon penceresini kişiselleştirilmiş olarak belirler. Hastaların %25'inde pencere kayması tespit edilir.</p>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-4">Rahim iç zarından biyopsi alıp "tutunma penceresinin" zamanını tahmin etmeyi amaçlar. Bu teste göre transfer gününü değiştirmenin canlı doğumu artırdığı gösterilmemiştir; ESHRE rutin kullanımını önermez.<sup>[1][4]</sup></p>
                     <div class="flex flex-wrap gap-2">
                         <span class="text-xs px-3 py-1 bg-secondary/10 text-gray-600 rounded-full font-semibold">Biyopsi</span>
                         <span class="text-xs px-3 py-1 bg-secondary/10 text-gray-600 rounded-full font-semibold">Kişiselleştirilmiş Transfer</span>
@@ -205,11 +216,11 @@ import Footer from '../components/Footer.astro';
                         <span class="material-symbols-outlined icon-filled text-primary-600">microscope</span>
                         <h3 class="text-lg font-headline font-bold">Histeroskopi</h3>
                     </div>
-                    <p class="text-sm text-gray-600 leading-relaxed mb-4">Rahim iç yüzeyinin kamera ile doğrudan görüntülenmesi. Polip, myom, yapışıklık veya septum gibi yapısal sorunları hem tespit eder hem tedavi eder.</p>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-4">Rahim iç yüzeyinin kamera ile doğrudan görüntülenmesi. Polip, myom, yapışıklık veya septum gibi yapısal sorunları hem tespit eder hem tedavi eder. Rahim iç zarını "çizmek" (endometrial scratching) ise önerilmez.<sup>[4]</sup></p>
                     <div class="flex flex-wrap gap-2">
                         <span class="text-xs px-3 py-1 bg-primary-50 text-primary-600 rounded-full font-semibold">Tanısal</span>
                         <span class="text-xs px-3 py-1 bg-primary-50 text-primary-600 rounded-full font-semibold">Operatif</span>
-                        <span class="text-xs px-3 py-1 bg-primary-50 text-primary-600 rounded-full font-semibold">Endometrial Scratching</span>
+                        
                     </div>
                 </div>
 
@@ -217,9 +228,9 @@ import Footer from '../components/Footer.astro';
                 <div class="bg-gray-50 p-8 rounded-xl border-l-4 border-tertiary">
                     <div class="flex items-center gap-3 mb-4">
                         <span class="material-symbols-outlined icon-filled text-mint-600">immune</span>
-                        <h3 class="text-lg font-headline font-bold">İmmünolojik Tedaviler</h3>
+                        <h3 class="text-lg font-headline font-bold">Bağışıklık Tedavileri: Neden Önerilmiyor?</h3>
                     </div>
-                    <p class="text-sm text-gray-600 leading-relaxed mb-4">NK hücre aktivitesi yüksek hastalarda intralipid infüzyonu, steroid tedavisi veya IVIG gibi immünomodülatör tedaviler uygulanabilir.</p>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-4">İntralipid, IVIG ve steroid gibi tedavilerin tutunmama sonrası canlı doğumu artırdığı gösterilmemiştir; yan etki ve maliyet taşırlar. ESHRE bunları rutin olarak önermez.<sup>[1][4]</sup></p>
                     <div class="flex flex-wrap gap-2">
                         <span class="text-xs px-3 py-1 bg-mint-50 text-mint-600 rounded-full font-semibold">İntralipid</span>
                         <span class="text-xs px-3 py-1 bg-mint-50 text-mint-600 rounded-full font-semibold">Steroid</span>
@@ -233,7 +244,7 @@ import Footer from '../components/Footer.astro';
                         <span class="material-symbols-outlined icon-filled text-gray-600">science</span>
                         <h3 class="text-lg font-headline font-bold">Laboratuvar Teknikleri</h3>
                     </div>
-                    <p class="text-sm text-gray-600 leading-relaxed mb-4">Assisted hatching, time-lapse inkübatör kullanımı, PICSI veya IMSI gibi ileri laboratuvar tekniklerinin eklenmesi değerlendirilebilir.</p>
+                    <p class="text-sm text-gray-600 leading-relaxed mb-4">Assisted hatching, PICSI, IMSI ve time-lapse gibi ek laboratuvar yöntemlerinin canlı doğum oranını artırdığı gösterilmemiştir. ESHRE bunları rutin olarak önermez; önerildiğinde hangi kanıta dayandığını sorun.<sup>[4]</sup></p>
                     <div class="flex flex-wrap gap-2">
                         <span class="text-xs px-3 py-1 bg-secondary/10 text-gray-600 rounded-full font-semibold">Assisted Hatching</span>
                         <span class="text-xs px-3 py-1 bg-secondary/10 text-gray-600 rounded-full font-semibold">Time-Lapse</span>
@@ -248,34 +259,29 @@ import Footer from '../components/Footer.astro';
             <div class="text-center mb-12">
                 <span class="text-accent font-label uppercase tracking-[0.3em] text-xs font-bold mb-4 block">Veriler Ne Diyor?</span>
                 <h2 class="text-3xl md:text-4xl font-headline text-gray-900 mb-4">Birden fazla denemede kümülatif başarı oranı nedir?</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">İlk denemede başarısız olan çiftlerin büyük çoğunluğu sonraki denemelerde başarı elde eder. Umudunuzu kaybetmeyin.</p>
+                <p class="text-gray-600 max-w-2xl mx-auto">İlk denemenin olumsuz sonuçlanması, sonrakilerin de öyle olacağı anlamına gelmez. Şansın ne kadar arttığı ise en çok kadının yaşına ve ilk denemede elde edilen yumurta ve embriyo sayısına bağlıdır.<sup>[5]</sup></p>
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
                 <div class="bg-white p-8 rounded-xl text-center">
-                    <span class="text-4xl font-headline font-bold text-primary-600 block mb-2">%35-45</span>
-                    <p class="text-xs font-bold uppercase tracking-wider text-gray-600">1. Deneme Başarı Oranı</p>
-                    <p class="text-xs text-gray-600 mt-2 opacity-70">35 yaş altı, iyi prognoz</p>
+                    <span class="text-4xl font-headline font-bold text-primary-600 block mb-2">%29</span>
+                    <p class="text-xs font-bold uppercase tracking-wider text-gray-600">İlk tam siklus sonrası</p>
+                    <p class="text-xs text-gray-600 mt-2">Tüm yaşlar, kendi yumurtası ile IVF/ICSI</p>
                 </div>
                 <div class="bg-white p-8 rounded-xl text-center">
-                    <span class="text-4xl font-headline font-bold text-mint-600 block mb-2">%60-70</span>
-                    <p class="text-xs font-bold uppercase tracking-wider text-gray-600">2. Deneme Kümülatif</p>
-                    <p class="text-xs text-gray-600 mt-2 opacity-70">İki siklus sonunda toplam</p>
+                    <span class="text-4xl font-headline font-bold text-mint-600 block mb-2">%43</span>
+                    <p class="text-xs font-bold uppercase tracking-wider text-gray-600">Altı tam siklusa kadar</p>
+                    <p class="text-xs text-gray-600 mt-2">Aynı grup; tedaviyi bırakanlar da paydada</p>
                 </div>
                 <div class="bg-white p-8 rounded-xl text-center">
-                    <span class="text-4xl font-headline font-bold text-gray-600 block mb-2">%75-80</span>
-                    <p class="text-xs font-bold uppercase tracking-wider text-gray-600">3. Deneme Kümülatif</p>
-                    <p class="text-xs text-gray-600 mt-2 opacity-70">Üç siklus sonunda toplam</p>
-                </div>
-                <div class="bg-white p-8 rounded-xl text-center border-2 border-green-200">
-                    <span class="text-4xl font-headline font-bold text-green-600 block mb-2">%85-90</span>
-                    <p class="text-xs font-bold uppercase tracking-wider text-gray-600">4-6 Deneme Kümülatif</p>
-                    <p class="text-xs text-gray-600 mt-2 opacity-70">Altı siklus sonunda toplam</p>
+                    <span class="text-4xl font-headline font-bold text-gray-700 block mb-2">%46 → %79</span>
+                    <p class="text-xs font-bold uppercase tracking-wider text-gray-600">Model örneği</p>
+                    <p class="text-xs text-gray-600 mt-2">30 yaş, 2 yıllık açıklanamayan kısırlık: 1 ve 3 tam siklus sonunda tahmini şans</p>
                 </div>
             </div>
 
             <div class="p-6 bg-white rounded-xl border-l-4 border-primary">
-                <p class="text-sm text-gray-600 leading-relaxed"><strong class="text-gray-900">Önemli Not:</strong> Bu oranlar genel istatistiklerdir ve yaş, tanı, embriyo kalitesi gibi bireysel etkenlere göre değişir. Doktorunuz sizin özel durumunuza göre kişiselleştirilmiş bir değerlendirme yapacaktır. Kaynak: ESHRE ve SART verileri.</p>
+                <p class="text-sm text-gray-600 leading-relaxed"><strong class="text-gray-900">Bu sayıları nasıl okumalı?</strong> Veriler İngiltere'de 1999-2008 arasında tedavi gören 113.873 kadına aittir; "tam siklus", bir uyarımdan elde edilen taze ve dondurulmuş tüm transferleri kapsar.<sup>[5]</sup> Laboratuvarlar o günden bu yana gelişti; bugünkü oranlar merkeze ve yaşa göre farklı olabilir. Sizin için gerçekçi tahmini, yaşınızı ve ilk denemenizin verilerini bilen hekiminiz yapabilir.</p>
             </div>
         </section>
 
@@ -306,7 +312,7 @@ import Footer from '../components/Footer.astro';
                             </span>
                             <div>
                                 <p class="font-bold text-gray-900">Psikolojik Hazırlık: Kendinize Zaman Tanıyın</p>
-                                <p class="text-sm text-gray-600">Yas sürecini yaşamak önemlidir. Hazır hissetmeden başlamak stresi artırır ve tedaviye olumsuz yansıyabilir.</p>
+                                <p class="text-sm text-gray-600">Yas sürecini yaşamak önemlidir. Hazır hissetmeden başlamak, süreci duygusal olarak daha da zorlaştırabilir.</p>
                             </div>
                         </div>
                         <div class="flex items-start gap-4">
@@ -383,7 +389,7 @@ import Footer from '../components/Footer.astro';
                         <span class="material-symbols-outlined icon-filled text-mint-600 text-3xl">group</span>
                     </div>
                     <h3 class="font-headline font-bold text-gray-900 mb-3">Yalnız Değilsiniz</h3>
-                    <p class="text-sm text-gray-600 leading-relaxed">Her 6 çiftten 1'i infertilite yaşar. Online destek grupları, benzer deneyimleri paylaşan insanlarla bağ kurmanızı sağlar.</p>
+                    <p class="text-sm text-gray-600 leading-relaxed">Dünya genelinde yetişkinlerin yaklaşık altıda biri yaşamının bir döneminde kısırlık yaşar.<sup>[6]</sup> Destek grupları, benzer deneyimleri paylaşan insanlarla bağ kurmanızı sağlar.</p>
                 </div>
                 <div class="bg-white p-8 rounded-xl text-center">
                     <div class="w-16 h-16 bg-gray-100 rounded-2xl flex items-center justify-center mx-auto mb-5">
@@ -537,7 +543,7 @@ import Footer from '../components/Footer.astro';
                             </span>
                             <div>
                                 <h4 class="font-bold text-gray-900 mb-1">Ortalama Bekleme Süresi</h4>
-                                <p class="text-sm text-gray-600 leading-relaxed">Başvurudan yerleştirmeye kadar 1-3 yıl sürebilir. Yaş tercihi, sağlık durumu tercihi ve bölgesel talep yoğunluğu süreyi etkiler.</p>
+                                <p class="text-sm text-gray-600 leading-relaxed">Başvurudan yerleştirmeye kadar geçen süre birkaç yılı bulabilir. Yaş ve sağlık durumu tercihi ile bölgesel talep süreyi etkiler; güncel bilgiyi il müdürlüğünden alın.</p>
                             </div>
                         </div>
                     </div>
@@ -604,11 +610,17 @@ import Footer from '../components/Footer.astro';
                         <span class="material-symbols-outlined text-gray-600/20 text-6xl absolute top-4 left-6">format_quote</span>
                         <blockquote class="relative z-10 text-center max-w-2xl mx-auto">
                             <p class="text-gray-900 italic leading-relaxed text-lg mb-4">"Ebeveynlik bir insanın hayatına anlam katabilir, ama bir insanın değerini belirlemez. Siz tedavi sürecinde gösterdiğiniz güç ve dayanıklılıkla zaten olağanüstü insanlarsınız."</p>
-                            <cite class="text-xs text-gray-600 font-bold uppercase tracking-widest">Klinik Psikoloji Perspektifi</cite>
+                            <cite class="text-xs text-gray-600 font-bold uppercase tracking-widest">tupbebek.com Editöryal Ekip</cite>
                         </blockquote>
                     </div>
                 </div>
             </div>
+        </section>
+
+        <!-- Kaynaklar ve künye -->
+        <section class="max-w-3xl mx-auto mb-16">
+            <ReferenceList references={references} />
+            <p class="text-sm text-gray-600 mt-8">Bu rehber, Baş Editör Doç. Dr. Senai Aksoy liderliğindeki tupbebek.com Editöryal Ekip tarafından hazırlanmış ve gözden geçirilmiştir. Son gözden geçirme: Eylül 2026. İçerik tıbbi tanı ve tedavi yerine geçmez; mutlaka hekiminize danışın.</p>
         </section>
 
         <!-- CTA -->

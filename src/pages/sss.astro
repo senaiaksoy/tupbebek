@@ -31,7 +31,7 @@ const faqItems = [
 	},
 	{
 		q: 'PGT testi her hastaya uygulanmalı mıdır?',
-		a: 'Preimplantasyon Genetik Tanı (PGT), rutin bir uygulama olmayıp endikasyon bazlıdır. Genellikle ileri anne yaşı, tekrarlayan düşük öyküsü, başarısız tüp bebek denemeleri veya bilinen genetik hastalık taşıyıcılığı durumlarında klinik protokol olarak önerilir.',
+		a: 'Hayır. PGT-M ve PGT-SR, bilinen bir tek gen hastalığı veya kromozom yapı bozukluğu taşıyan çiftlerde tanı amacıyla kullanılır. Kromozom sayısını tarayan PGT-A ise tartışmalıdır: embriyo seçimini değiştirir ama toplam canlı doğum şansını artırdığı gösterilmemiştir; bu nedenle ileri yaş veya başarısız denemeler için de rutin önerilmez. Karar, artıları ve eksileri konuşularak kişiye göre verilir.',
 	},
 	{
 		q: 'Yaşın başarı oranları üzerindeki etkisi nedir?',
@@ -51,7 +51,7 @@ const faqItems = [
 	},
 	{
 		q: 'Erkek infertilitesi tanısı nasıl konur?',
-		a: 'Erkek infertilitesi tanısı, semen analizi ile başlar. WHO 2021 standartlarına göre en az 15 milyon/mL sperm konsantrasyonu, %40 toplam motilite ve %4 normal morfoloji normal kabul edilir. Analiz abnormal çıktığında hormon paneli (FSH, LH, Testosteron) yapılır.',
+		a: 'Erkek kısırlığı değerlendirmesi semen analiziyle başlar. WHO 2021 alt referans değerleri; yoğunluk için 16 milyon/mL, toplam hareketlilik için %42, ileri hareketlilik için %30 ve normal şekil için %4 olarak belirlenmiştir. Bu değerlerin altında kalmak tek başına kısırlık anlamına gelmez ama ileri değerlendirme gerektirebilir; sonuç anormalse analiz tekrarlanır ve hormon testleri (FSH, LH, testosteron) yapılır.',
 	},
 	{
 		q: 'Sperm kalitesi yaşam tarzından etkilenir mi?',
@@ -63,7 +63,7 @@ const faqItems = [
 	},
 	{
 		q: 'Erkek infertilitesinin duygusal etkileri nedir?',
-		a: 'Erkek infertilitesi, erkeklerde yetersizlik hissi, özgüven kaybı ve utanç duyguları yaratabilir. Erkeklerin duygusal destek araması ve profesyonel yardım alması tedavi başarısını ve ilişki kalitesini artırabilir.',
+		a: 'Erkek kısırlığı, yetersizlik hissi, özgüven kaybı ve utanç duyguları yaratabilir. Destek aramak ve gerektiğinde profesyonel yardım almak, bu süreçte iyi oluşu ve ilişki kalitesini korumaya yardım eder.',
 	},
 ];
 
@@ -243,7 +243,7 @@ const faqSchema = {
                             <div class="px-6 pb-8 pt-2">
                                 <div class="w-full h-px bg-gray-100 mb-6"></div>
                                 <div class="text-gray-600 leading-relaxed max-w-4xl">
-                                    <p>Preimplantasyon Genetik Tanı (PGT), rutin bir uygulama olmayıp endikasyon bazlıdır. Genellikle; ileri anne yaşı, tekrarlayan düşük öyküsü, başarısız tüp bebek denemeleri veya bilinen genetik hastalık taşıyıcılığı durumlarında klinik protokol olarak önerilir.</p>
+                                    <p>Hayır. PGT-M ve PGT-SR, bilinen bir tek gen hastalığı veya kromozom yapı bozukluğu taşıyan çiftlerde tanı amacıyla kullanılır. Kromozom sayısını tarayan PGT-A ise tartışmalıdır: embriyo seçimini değiştirir ama toplam canlı doğum şansını artırdığı gösterilmemiştir; bu nedenle ileri yaş veya başarısız denemeler için de rutin önerilmez. Karar, artıları ve eksileri konuşularak kişiye göre verilir.</p>
                                     <p class="mt-4"><a href="/genetik-testler/" class="text-primary-600 font-bold hover:underline inline-flex items-center gap-1">İlgili Makale: Genetik Tarama Teknolojileri <span class="material-symbols-outlined text-sm">open_in_new</span></a></p>
                                 </div>
                             </div>
@@ -345,7 +345,7 @@ const faqSchema = {
                             <div class="px-6 pb-8 pt-2">
                                 <div class="w-full h-px bg-gray-100 mb-6"></div>
                                 <div class="text-gray-600 leading-relaxed space-y-4 max-w-4xl">
-                                    <p>Erkek infertilitesi tanısı, semen analizi ile başlar. WHO 2021 standartlarına göre en az 15 milyon/mL sperm konsantrasyonu, %40 toplam motilite ve %4 normal morfoloji normal kabul edilir. Analiz abnormal çıktığında hormon paneli (FSH, LH, Testosteron) yapılır.</p>
+                                    <p>Erkek kısırlığı değerlendirmesi semen analiziyle başlar. WHO 2021 alt referans değerleri; yoğunluk için 16 milyon/mL, toplam hareketlilik için %42, ileri hareketlilik için %30 ve normal şekil için %4 olarak belirlenmiştir. Bu değerlerin altında kalmak tek başına kısırlık anlamına gelmez ama ileri değerlendirme gerektirebilir; sonuç anormalse analiz tekrarlanır ve hormon testleri (FSH, LH, testosteron) yapılır.</p>
                                     <p class="mt-4"><a href="/erkek-infertilitesi" class="text-primary-600 font-bold hover:underline inline-flex items-center gap-1">Detaylı Bilgi: Erkek İnfertilitesi Rehberi <span class="material-symbols-outlined text-sm">open_in_new</span></a></p>
                                 </div>
                             </div>
@@ -387,7 +387,7 @@ const faqSchema = {
                             <div class="px-6 pb-8 pt-2">
                                 <div class="w-full h-px bg-gray-100 mb-6"></div>
                                 <div class="text-gray-600 leading-relaxed space-y-4 max-w-4xl">
-                                    <p>Erkek infertilitesi, erkeklerde yetersizlik hissi, özgüven kaybı ve utanç duyguları yaratabilir. Erkeklerin duygusal destek araması ve profesyonel yardım alması tedavi başarısını ve ilişki kalitesini artırabilir.</p>
+                                    <p>Erkek kısırlığı, yetersizlik hissi, özgüven kaybı ve utanç duyguları yaratabilir. Destek aramak ve gerektiğinde profesyonel yardım almak, bu süreçte iyi oluşu ve ilişki kalitesini korumaya yardım eder.</p>
                                     <p class="mt-4"><a href="/duygusal-destek" class="text-primary-600 font-bold hover:underline inline-flex items-center gap-1">Detaylı Bilgi: Duygusal Destek ve Baş Etme <span class="material-symbols-outlined text-sm">open_in_new</span></a></p>
                                 </div>
                             </div>

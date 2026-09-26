@@ -5,6 +5,12 @@ import Footer from '../components/Footer.astro';
 import StatsStrip from '../components/StatsStrip.astro';
 import RelatedContent from '../components/RelatedContent.astro';
 import DisclaimerBar from '../components/DisclaimerBar.astro';
+import ReferenceList from '../components/ReferenceList.astro';
+
+// Kaynak PubMed üzerinden doğrulandı (Eylül 2026).
+const references = [
+    { title: "Evidence-based guideline: unexplained infertility", type: "guideline" as const, authors: "ESHRE Guideline Group on Unexplained Infertility; Romualdi D, Ata B, Bhattacharya S et al.", journal: "Human Reproduction", year: 2023, doi: "10.1093/humrep/dead150", pmid: "37599566" }
+];
 ---
 
 <BaseLayout title="Açıklanamayan İnfertilite: Nedenleri ve Tedavisi | tupbebek.com" description="Açıklanamayan (idiyopatik) infertilite tanısı, nedenleri, gizli etkenler ve tedavi seçenekleri.">
@@ -41,12 +47,12 @@ import DisclaimerBar from '../components/DisclaimerBar.astro';
         <!-- Introduction -->
         <section class="max-w-3xl mx-auto px-4 md:px-6 lg:px-8 mb-24">
             <p class="text-lg md:text-xl text-gray-600 leading-relaxed font-body italic mb-12">
-                Açıklanamayan infertilite, standart tanı testlerinde herhangi bir belirgin neden bulunamamasına rağmen gebelik oluşmamasıdır. İnfertilite vakalarının %10-15'i bu kategoriye girer. Ancak bu, problemin olmadığı anlamına gelmez; gözardı edilen veya saptanmayan nedenler vardır.
+                Açıklanamayan infertilite, standart tanı testlerinde herhangi bir belirgin neden bulunamamasına rağmen gebelik oluşmamasıdır. Kısırlık yaşayan çiftlerin önemli bir bölümü bu gruba girer. Bu, sorun olmadığı anlamına gelmez; mevcut testlerle saptanamadığı anlamına gelir. ESHRE, bu tanının ancak temel testler eksiksiz yapıldıktan sonra konmasını önerir.<sup>[1]</sup>
             </p>
             <StatsStrip items={[
-              { icon: 'question_mark', heading: '%10-15', text: 'İnfertilite vakalarında açıklanamayan durum' },
+              { icon: 'question_mark', heading: 'Dışlama tanısı', text: 'Temel testler normal olduğunda konur' },
               { icon: 'search', heading: 'Gizli Etkenler', text: 'Saptanmayan endometriozis, oosit kalitesi' },
-              { icon: 'biotech', heading: 'Tedavi', text: 'IVF sıklıkla etkili çözüm sunuyor' }
+              { icon: 'biotech', heading: 'İlk basamak', text: 'Yumurtlama uyarımı + aşılama (IUI)' }
             ]} />
         </section>
 
@@ -58,10 +64,10 @@ import DisclaimerBar from '../components/DisclaimerBar.astro';
                     <div class="bg-white border-l-4 border-primary rounded-xl p-6">
                         <h4 class="font-bold text-gray-900 text-sm mb-2 flex items-center gap-2">
                             <span class="material-symbols-outlined text-primary-600 text-lg">layers</span>
-                            Tanı Edilmemiş Endometriozis
+                            Tanı Konmamış Endometriozis
                         </h4>
                         <p class="text-sm text-gray-600">
-                            Endometriozis tanısı, çoğu zaman laparoskopi (cerrahi inceleme) ile konur. Basit ultrasound ile saptanması zordur. Hafif endometriozis, infertiliteye neden olabilir ancak standart testlerde görülmeyebilir.
+                            Endometriozis tanısı, çoğu zaman laparoskopi (cerrahi inceleme) ile konur. Hafif endometriozis ultrasonda görülmeyebilir. Ancak yalnızca bunu aramak için rutin tanısal laparoskopi önerilmez.<sup>[1]</sup>
                         </p>
                     </div>
 
@@ -71,7 +77,7 @@ import DisclaimerBar from '../components/DisclaimerBar.astro';
                             Oosit (Yumurta) Kalitesi
                         </h4>
                         <p class="text-sm text-gray-600">
-                            Yumurta sayısı normal bile olsa, kalitesi düşük olabilir. Bu, hormon testleri veya ultrasound ile ölçülmez. IVF süresi bu sorunları ortaya çıkarabilir. Genetik anormallikler (anöploidi) gözlemlenemeyebilir.
+                            Yumurta sayısı normal bile olsa, kalitesi düşük olabilir. Yumurta kalitesi hormon testleri veya ultrasonla ölçülemez. IVF sırasında döllenme ve embriyo gelişimi hakkında ek bilgi edinilebilir; yumurtadaki kromozom bozuklukları ise dışarıdan görülmez.
                         </p>
                     </div>
 
@@ -81,7 +87,7 @@ import DisclaimerBar from '../components/DisclaimerBar.astro';
                             Sperm DNA Fragmentasyonu
                         </h4>
                         <p class="text-sm text-gray-600">
-                            Semen analizi normal bile olsa, sperm DNA fragmentasyonu yüksek olabilir. Bu, IUI başarısını azaltır ama IVF/ICSI ile çözülebilir. Özel testler gerekir.
+                            Semen analizi normal olsa bile sperm DNA hasarı (fragmantasyon) yüksek olabilir. Ancak bu testin sonucunun tedavi kararını ve canlı doğum şansını değiştirdiği net olarak gösterilmediği için rutin önerilmez.<sup>[1]</sup>
                         </p>
                     </div>
 
@@ -91,7 +97,7 @@ import DisclaimerBar from '../components/DisclaimerBar.astro';
                             Implantasyon Kusurları
                         </h4>
                         <p class="text-sm text-gray-600">
-                            Embriyonun rahme tutunması (implantasyon) ile ilgili sorunlar (endometriyal alıcılık bozukluğu) tanısı kolay değildir. Endometrial taşma veya alıcılık testleri hâlâ araştırma aşamasındadır.
+                            Embriyonun rahme tutunması (implantasyon) ile ilgili sorunlar (endometriyal alıcılık bozukluğu) tanısı kolay değildir. Rahim iç zarının alıcılığını ölçtüğü iddia edilen testlerin yararı gösterilmemiştir; araştırma aşamasındadırlar.
                         </p>
                     </div>
                 </div>
@@ -109,28 +115,28 @@ import DisclaimerBar from '../components/DisclaimerBar.astro';
                     <div class="bg-white border-l-4 border-primary rounded-xl p-6">
                         <h4 class="font-bold text-gray-900 text-sm mb-3">Bekleme ve İzlem</h4>
                         <p class="text-sm text-gray-600">
-                            Ilk 2-3 yıl içinde ~50% doğal gebelik sağlanabilir. Nisbeten genç ve impatient olmayan çiftler için uygun olabilir.
+                            Kadın genç ve kısırlık süresi kısaysa, bir süre daha doğal yoldan denemek makul bir seçenek olabilir; birçok çift bu dönemde kendiliğinden gebe kalır. Yaş ilerledikçe beklemenin maliyeti artar.
                         </p>
                     </div>
 
                     <div class="bg-white border-l-4 border-primary rounded-xl p-6">
-                        <h4 class="font-bold text-gray-900 text-sm mb-3">Clomiphene/Letrozole + IUI</h4>
+                        <h4 class="font-bold text-gray-900 text-sm mb-3">Letrozol/Klomifen + IUI</h4>
                         <p class="text-sm text-gray-600">
-                            Over stimülasyonu ve yapay inseminasyon (IUI). Başarı oranı ~15-20% per döngü. 3-6 döngü denenmesi tavsiye edilir.
+                            Yumurtlama uyarımı ile birlikte aşılama (IUI). ESHRE bu yöntemi açıklanamayan kısırlıkta ilk basamak tedavi olarak önerir.<sup>[1]</sup> Kaç döngü deneneceği yaşa ve süreye göre hekimle birlikte belirlenir.
                         </p>
                     </div>
 
                     <div class="bg-white border-l-4 border-primary rounded-xl p-6">
                         <h4 class="font-bold text-gray-900 text-sm mb-3">IVF/ICSI</h4>
                         <p class="text-sm text-gray-600">
-                            Gizli etkenleri ortaya çıkarır. Yumurta kalitesi, embriyo gelişimi ve implantasyon değerlendirilir. <a href="/tedavi-yontemleri" class="text-primary-600 hover:underline">Tedavi yöntemleri</a> sayfasında detaylı bilgi bulabilirsiniz.
+                            Aşılama sonuç vermediğinde veya kadın yaşı ileriyse düşünülür. Döllenme ve embriyo gelişimi hakkında ek bilgi de sağlar. <a href="/tedavi-yontemleri" class="text-primary-600 hover:underline">Tedavi yöntemleri</a> sayfasında detaylı bilgi bulabilirsiniz.
                         </p>
                     </div>
 
                     <div class="bg-white border-l-4 border-primary rounded-xl p-6">
                         <h4 class="font-bold text-gray-900 text-sm mb-3">Endometriozis Cerrahisi</h4>
                         <p class="text-sm text-gray-600">
-                            Laparoskopi tanı amaçlı yapılabilir. Tespit edilen endometriozis cerrahi olarak tedavi edilir.
+                            Yalnızca açıklanamayan kısırlık nedeniyle rutin laparoskopi önerilmez.<sup>[1]</sup> Ağrı gibi endometriozisi düşündüren belirtiler varsa değerlendirme değişir.
                         </p>
                     </div>
                 </div>
@@ -143,6 +149,10 @@ import DisclaimerBar from '../components/DisclaimerBar.astro';
           { href: '/tedavi-yontemleri', icon: 'biotech', title: 'Tedavi Yöntemleri', description: 'IUI, IVF ve diğer seçenekler' },
           { href: '/kadin-infertilitesi', icon: 'woman', title: 'Kadın Kaynaklı Nedenler', description: 'Endometriozis ve diğer nedenler' }
         ]} />
+
+        <section class="max-w-3xl mx-auto px-4 md:px-6 lg:px-8 mb-16">
+            <ReferenceList references={references} />
+        </section>
 
         <!-- Doktor Onay -->
         <section class="max-w-3xl mx-auto px-4 md:px-6 lg:px-8 mb-16">
