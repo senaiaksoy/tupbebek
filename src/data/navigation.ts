@@ -150,7 +150,6 @@ export const navigationMenus: MegaMenuConfig[] = [
     submenu: [
       { label: 'Beslenme ve Yaşam', href: '/beslenme-yasam/', description: 'Diyet, takviye, egzersiz' },
       { label: 'Erkek Besin Takviyeleri', href: '/makaleler/erkek-dogurganlik-besin-takviyeleri/', description: 'Sperm kalitesi için takviyeler' },
-      { label: 'Erkek Doğurganlık Besinleri', href: '/makaleler/erkek-dogurganlik-besin-takviyeleri/', description: 'Erkek fertilitesi ve beslenme' },
       { label: 'Vajinal Mikrobiyom', href: '/makaleler/vajinal-mikrobiyom-fiv/', description: 'Mikrobiyom ve IVF başarısı' },
       { label: 'Cep Telefonu ve Sperm', href: '/makaleler/cep-telefonu-sperm-kalitesi/', description: 'Radyasyon ve sperm kalitesi' },
       { label: 'Duygusal Destek', href: '/duygusal-destek/', description: 'Psikolojik yardım kaynakları' },
@@ -373,7 +372,7 @@ export const situationOptions: SituationOption[] = [
       { title: 'Tüm Makaleler', description: 'Bilimsel makale arşivi', href: '/makaleler/', icon: 'article', tag: 'Popüler' },
       { title: 'Tıbbi Sözlük', description: 'Terimleri öğren', href: '/tibbi-sozluk/', icon: 'dictionary' },
       { title: 'SSS', description: 'En çok sorulan sorular', href: '/sss/', icon: 'help' },
-      { title: 'Rehberler', description: 'Konuya göre rehberler', href: '/rehberler/', icon: 'menu_book' }, // Wait, let's fix object properties
+      { title: 'Rehberler', description: 'Konuya göre rehberler', href: '/rehberler/', icon: 'menu_book' },
       { title: 'Hakkımızda', description: 'Misyon ve yayın kurulu', href: '/hakkimizda/', icon: 'info' },
     ]
   },
