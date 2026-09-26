@@ -22,15 +22,15 @@ const labelMap: Record<string, string> = {
   'sss': 'Sık Sorulan Sorular',
   'tani-sureci': 'Tanı Süreci',
   'tedavi-yontemleri': 'Tedavi Yöntemleri',
-  'erkek-infertilitesi': 'Erkek İnfertilitesi',
-  'kadin-infertilitesi': 'Kadın İnfertilitesi',
-  'aciklanamayan-infertilite': 'Açıklanamayan İnfertilite',
-  'yas-ve-fertilite': 'Yaş ve Fertilite',
+  'erkek-infertilitesi': 'Erkeklerde Kısırlık',
+  'kadin-infertilitesi': 'Kadınlarda Kısırlık',
+  'aciklanamayan-infertilite': 'Açıklanamayan Kısırlık',
+  'yas-ve-fertilite': 'Yaş ve Doğurganlık',
   'endometriozis-adenomyozis': 'Endometriozis & Adenomyozis',
   'hormon-paneli': 'Hormon Paneli',
   'genetik-testler': 'Genetik Testler',
   'pgt-merkezi': 'PGT Merkezi',
-  'fertilite-koruma': 'Fertilite Koruma',
+  'fertilite-koruma': 'Doğurganlığı Koruma',
   'ilac-rehberi': 'İlaç Rehberi',
   'beslenme-yasam': 'Beslenme & Yaşam',
   'duygusal-destek': 'Duygusal Destek',
@@ -100,7 +100,7 @@ export function generateLabel(segment: string): string {
 
 /**
  * Generate breadcrumbs from pathname
- * "/erkek-infertilitesi" → [{ label: 'Ana Sayfa', href: '/' }, { label: 'Erkek İnfertilitesi', href: '/erkek-infertilitesi' }]
+ * "/erkek-infertilitesi" → [{ label: 'Ana Sayfa', href: '/' }, { label: 'Erkeklerde Kısırlık', href: '/erkek-infertilitesi' }]
  */
 export function generateBreadcrumbs(pathname: string, articleTitle?: string): BreadcrumbItem[] {
   if (pathname === '/') {

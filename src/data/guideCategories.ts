@@ -15,7 +15,7 @@ export interface GuideCategory {
 export const guideCategories: GuideCategory[] = [
   {
     id: 'erkek-infertilitesi',
-    title: 'Erkek İnfertilitesi',
+    title: 'Erkeklerde Kısırlık',
     description: 'Sperm kalitesi, azospermi, DNA fragmentasyonu ve çözüm yolları',
     icon: 'male',
     href: '/erkek-infertilitesi',
@@ -23,7 +23,7 @@ export const guideCategories: GuideCategory[] = [
   },
   {
     id: 'kadin-infertilitesi',
-    title: 'Kadın İnfertilitesi',
+    title: 'Kadınlarda Kısırlık',
     description: 'PCOS, endometriozis, tüp kaynaklı nedenler ve tedavi seçenekleri',
     icon: 'female',
     href: '/kadin-infertilitesi',
@@ -47,7 +47,7 @@ export const guideCategories: GuideCategory[] = [
   },
   {
     id: 'fertilite-koruma',
-    title: 'Fertilite Koruma',
+    title: 'Doğurganlığı Koruma',
     description: 'Yumurta dondurma, sperm saklama ve gelecek için hazırlık',
     icon: 'favorite',
     href: '/fertilite-koruma',
@@ -56,7 +56,7 @@ export const guideCategories: GuideCategory[] = [
   {
     id: 'psikolojik-destek',
     title: 'Duygusal Destek',
-    description: 'İnfertilite yolculuğunda psikolojik rehber ve yaşam ipuçları',
+    description: 'Kısırlık tedavisi sürecinde psikolojik rehber ve yaşam ipuçları',
     icon: 'volunteer_activism',
     href: '/duygusal-destek',
     color: 'orange'
