@@ -2,8 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Hero from '../components/home/Hero.astro';
-import TransitionStages from '../components/home/TransitionStages.astro';
-import EssentialReading from '../components/home/EssentialReading.astro';
+import QuickGuideCards from '../components/home/QuickGuideCards.astro';
 import ArticleGrid from '../components/home/ArticleGrid.astro';
 import SymptomGuide from '../components/home/SymptomGuide.astro';
 import ExpertBoard from '../components/home/ExpertBoard.astro';
@@ -26,8 +25,7 @@ const lcpImage = featured ? sanitizeImage(featured.data.image) : undefined;
 
   <main id="main-content" tabindex="-1">
     <Hero />
-    <TransitionStages />
-    <EssentialReading />
+    <QuickGuideCards />
     <ArticleGrid />
     <SymptomGuide />
     <ExpertBoard />
