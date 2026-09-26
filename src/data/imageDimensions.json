@@ -20,8 +20,8 @@
     "height": 800
   },
   "/images/fertilite-koruma/hero.webp": {
-    "width": 1200,
-    "height": 676
+    "width": 1600,
+    "height": 900
   },
   "/images/fertilite-koruma/oncofertility.webp": {
     "width": 1200,
@@ -36,8 +36,8 @@
     "height": 800
   },
   "/images/hakkimizda/clinical-review.webp": {
-    "width": 512,
-    "height": 512
+    "width": 1200,
+    "height": 675
   },
   "/images/hakkimizda/senai-aksoy.webp": {
     "width": 512,
@@ -57,19 +57,19 @@
   },
   "/images/home/kadin-infertilitesi.webp": {
     "width": 800,
-    "height": 447
+    "height": 450
   },
   "/images/home/luxury-embryo.webp": {
     "width": 1024,
     "height": 1024
   },
   "/images/home/tani-sureci.webp": {
-    "width": 200,
-    "height": 112
+    "width": 640,
+    "height": 360
   },
   "/images/home/tedavi-yontemleri.webp": {
-    "width": 200,
-    "height": 112
+    "width": 640,
+    "height": 360
   },
   "/images/library/diyagram/histeroskopi_karar_algoritmasi.webp": {
     "width": 1536,
@@ -88,8 +88,8 @@
     "height": 900
   },
   "/images/library/embriyo/pgt_sex.webp": {
-    "width": 1440,
-    "height": 500
+    "width": 1600,
+    "height": 900
   },
   "/images/library/embriyo/schema_implantation.webp": {
     "width": 758,
@@ -128,8 +128,8 @@
     "height": 736
   },
   "/images/library/hastalik/kisirlik_endometriozis.webp": {
-    "width": 1440,
-    "height": 500
+    "width": 1600,
+    "height": 900
   },
   "/images/library/hastalik/miyom-ameliyati-ne-zaman-gerekir.webp": {
     "width": 1440,
@@ -164,8 +164,8 @@
     "height": 675
   },
   "/images/library/istatistik/basari_oranlari_hero.webp": {
-    "width": 512,
-    "height": 512
+    "width": 1600,
+    "height": 900
   },
   "/images/library/istatistik/canli_dogum_orani.webp": {
     "width": 1080,
@@ -176,8 +176,8 @@
     "height": 693
   },
   "/images/library/istatistik/yas_gebelikorani_ivf.webp": {
-    "width": 512,
-    "height": 512
+    "width": 1600,
+    "height": 900
   },
   "/images/library/klinik/181.webp": {
     "width": 1440,
@@ -235,25 +235,25 @@
     "width": 3072,
     "height": 2048
   },
-  "/images/library/laboratuvar/dr-senai-aksoy-istanbul-ivf-laboratuvar.webp": {
-    "width": 1440,
-    "height": 500
-  },
   "/images/library/laboratuvar/embryoscop.webp": {
-    "width": 1440,
-    "height": 500
+    "width": 1200,
+    "height": 675
+  },
+  "/images/library/laboratuvar/genetik-dizileme.webp": {
+    "width": 1200,
+    "height": 675
   },
   "/images/library/laboratuvar/icsicizim.webp": {
-    "width": 1440,
-    "height": 500
+    "width": 1200,
+    "height": 675
   },
   "/images/library/laboratuvar/microbiota.webp": {
-    "width": 1235,
-    "height": 338
+    "width": 1200,
+    "height": 675
   },
-  "/images/library/laboratuvar/oocytes-prior-to-a-f-and-k-and-after-insemination.webp": {
-    "width": 850,
-    "height": 505
+  "/images/library/laboratuvar/mikro-tese-laboratuvar.webp": {
+    "width": 1200,
+    "height": 675
   },
   "/images/library/psikoloji/cift-danismanlik.webp": {
     "width": 1024,
@@ -308,20 +308,24 @@
     "height": 675
   },
   "/images/library/tedavi/prp.webp": {
-    "width": 1440,
-    "height": 500
+    "width": 1200,
+    "height": 675
   },
   "/images/library/tedavi/sperm_supp.webp": {
-    "width": 1440,
-    "height": 500
+    "width": 1600,
+    "height": 900
   },
   "/images/library/tedavi/taze-donmus-transfert.webp": {
-    "width": 1440,
-    "height": 500
+    "width": 1200,
+    "height": 675
+  },
+  "/images/library/tedavi/tetikleme-zamanlamasi.webp": {
+    "width": 1200,
+    "height": 675
   },
   "/images/library/tedavi/tup_bebek_muayene.webp": {
-    "width": 2880,
-    "height": 1000
+    "width": 1600,
+    "height": 900
   },
   "/images/logo-tupbebek-sm.webp": {
     "width": 140,
@@ -928,16 +932,16 @@
     "height": 512
   },
   "/images/tani-sureci/abstract-cells.webp": {
-    "width": 512,
-    "height": 512
+    "width": 1200,
+    "height": 675
   },
   "/images/tani-sureci/consultation.webp": {
-    "width": 512,
-    "height": 512
+    "width": 1200,
+    "height": 675
   },
   "/images/tani-sureci/dna-cells.webp": {
-    "width": 512,
-    "height": 512
+    "width": 1600,
+    "height": 900
   },
   "/images/tani-sureci/senai-aksoy-3.webp": {
     "width": 512,
