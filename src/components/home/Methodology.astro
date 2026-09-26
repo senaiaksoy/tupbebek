@@ -1,3 +1,7 @@
+---
+import { getPublishedArticles } from "../../utils/articles";
+const publishedArticleCount = (await getPublishedArticles()).length;
+---
 <section class="py-16 lg:py-20 paper-canvas border-t border-gray-200/60">
   <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
     <div class="bg-white/80 rounded-2xl p-8 lg:p-14 border border-gray-200/80 shadow-2xs">
@@ -5,18 +9,18 @@
         <span class="text-xs font-bold uppercase tracking-[0.25em] text-primary-700 block mb-2">E-E-A-T ŞEFFAFLIK STANDARTLARI</span>
         <h2 class="text-3xl lg:text-4xl font-serif font-bold text-gray-900 mb-3">Editöryal Metodoloji ve Şeffaflık</h2>
         <p class="text-base text-gray-600 leading-relaxed font-sans">
-          tupbebek.com üzerindeki tüm içerikler ASRM ve ESHRE uluslararası kılavuzları doğrultusunda hazırlanır; Baş Editör Doç. Dr. Senai Aksoy ve Tıbbi Danışma Kurulu onayından geçer.
+          İçeriklerin bilimsel kaynakları, yazarları, inceleme bilgileri ve güncelleme tarihleri ilgili sayfalarda belirtilir.
         </p>
       </div>
 
       <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-gray-200/60">
         <div class="px-2">
-          <span class="text-3xl lg:text-5xl font-serif font-bold text-primary-700 block mb-1">30+ Yıl</span>
-          <p class="text-xs font-bold uppercase tracking-wider text-gray-600 font-sans">Klinik Tecrübe</p>
+          <span class="text-2xl lg:text-3xl font-serif font-bold text-primary-700 block mb-1">Kaynaklar</span>
+          <p class="text-xs font-bold uppercase tracking-wider text-gray-600 font-sans">Bilimsel Dayanak</p>
         </div>
         <div class="px-2">
-          <span class="text-3xl lg:text-5xl font-serif font-bold text-primary-700 block mb-1">100+</span>
-          <p class="text-xs font-bold uppercase tracking-wider text-gray-600 font-sans">Bilimsel Makale</p>
+          <span class="text-3xl lg:text-5xl font-serif font-bold text-primary-700 block mb-1">{publishedArticleCount}</span>
+          <p class="text-xs font-bold uppercase tracking-wider text-gray-600 font-sans">Yayındaki Makale</p>
         </div>
         <div class="px-2">
           <span class="text-3xl lg:text-5xl font-serif font-bold text-primary-700 block mb-1">ESHRE</span>

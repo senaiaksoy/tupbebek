@@ -75,7 +75,6 @@ export const navigationMenus: MegaMenuConfig[] = [
     centerContent: {
       title: 'Tedavi Seçenekleri',
       description: '"Tedavi planı; yaş, tanı, over rezervi ve önceki deneme sonuçlarına göre kişiye özel belirlenir."',
-      stat: { value: '40-50%', label: 'IVF başarı oranı (yaşa göre)' }
     },
     featuredArticle: {
       title: 'Başarı Oranları',
@@ -111,7 +110,6 @@ export const navigationMenus: MegaMenuConfig[] = [
     centerContent: {
       title: 'Cerrahi Yaklaşımlar',
       description: '"Bazı infertilite nedenleri önce cerrahi müdahale ile düzeltilir, ardından yardımcı üreme teknikleri uygulanır."',
-      stat: { value: '%30-40', label: 'cerrahi sonrası doğal gebelik şansı' }
     },
     featuredArticle: {
       title: 'Endometriyal Scratching',
@@ -143,7 +141,6 @@ export const navigationMenus: MegaMenuConfig[] = [
     centerContent: {
       title: 'Bütünsel Hazırlık',
       description: '"Tedavi başarısı sadece tıbbi müdahaleye değil, bedensel ve zihinsel hazırlığa da bağlıdır."',
-      stat: { value: '%25↑', label: 'yaşam tarzı değişikliği ile başarı artışı' }
     },
     featuredArticle: {
       title: 'Duygusal Destek Rehberi',

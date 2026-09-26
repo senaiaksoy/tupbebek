@@ -1,0 +1,103 @@
+{
+  "articles": 63,
+  "reviewerCount": 63,
+  "images": [
+    {
+      "path": "public/images/rehberler/hormone-tracking.webp",
+      "width": 1200,
+      "height": 675,
+      "bytes": 82178
+    },
+    {
+      "path": "public/images/makaleler/dusuk-amh-hamilelik.webp",
+      "width": 1600,
+      "height": 900,
+      "bytes": 70902
+    },
+    {
+      "path": "public/images/library/hastalik/dusuk-amh.webp",
+      "width": 1600,
+      "height": 900,
+      "bytes": 98328
+    },
+    {
+      "path": "public/images/makaleler/embriyo-transferi-sonrasi-bakim.webp",
+      "width": 1600,
+      "height": 900,
+      "bytes": 123004
+    },
+    {
+      "path": "public/images/library/tedavi/post_transfert.webp",
+      "width": 1200,
+      "height": 675,
+      "bytes": 75408
+    },
+    {
+      "path": "public/images/library/embriyo/pgt.webp",
+      "width": 1600,
+      "height": 900,
+      "bytes": 67976
+    },
+    {
+      "path": "public/images/library/hastalik/prolakktin.webp",
+      "width": 1200,
+      "height": 675,
+      "bytes": 55560
+    },
+    {
+      "path": "public/images/library/hastalik/varikosel.webp",
+      "width": 1200,
+      "height": 675,
+      "bytes": 40156
+    },
+    {
+      "path": "public/images/home/erkek-infertilitesi.webp",
+      "width": 1600,
+      "height": 900,
+      "bytes": 98906
+    },
+    {
+      "path": "public/images/makaleler/miyom-ameliyati.webp",
+      "width": 1600,
+      "height": 900,
+      "bytes": 84980
+    },
+    {
+      "path": "public/images/makaleler/iui-nedir.webp",
+      "width": 1600,
+      "height": 900,
+      "bytes": 78256
+    },
+    {
+      "path": "public/images/makaleler/taze-dondurulmus-transfer.webp",
+      "width": 1600,
+      "height": 900,
+      "bytes": 61100
+    },
+    {
+      "path": "public/images/library/psikoloji/yas-iyilesmeler.webp",
+      "width": 1200,
+      "height": 675,
+      "bytes": 63824
+    },
+    {
+      "path": "public/images/library/tedavi/intralipides.webp",
+      "width": 1200,
+      "height": 675,
+      "bytes": 62930
+    }
+  ],
+  "changedPrebuildSources": [],
+  "seoPages": 99,
+  "render": {
+    "pages": 14,
+    "views": 28,
+    "errors": [],
+    "desktop": "1366×900",
+    "mobile": "390×844",
+    "scrollStep": 700,
+    "scrollDelayMs": 250,
+    "cookieOverlay": "Rejected via UI before final captures",
+    "imageDecodeWait": "Visible images decoded; 3-second upper bound"
+  }
+}
