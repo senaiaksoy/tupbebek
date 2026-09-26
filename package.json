@@ -6,7 +6,7 @@
     "dev": "astro dev",
     "start": "astro dev",
     "prebuild": "node scripts/enrich-pmids.mjs --apply && node scripts/build-image-manifest.mjs && node scripts/build-search-index.mjs",
-    "build": "astro build && node scripts/postbuild-seo.mjs && echo _worker.js > dist/.assetsignore && npx pagefind --site dist --glob \"makaleler/**/*.html\" && node scripts/verify-content-quality.mjs --fast",
+    "build": "astro build && node scripts/postbuild-seo.mjs && echo _worker.js > dist/.assetsignore && npx pagefind --site dist --glob \"makaleler/**/*.html\" && node scripts/verify-content-quality.mjs --fast && node scripts/verify-icon-font.mjs",
     "deploy": "node scripts/deploy-pages.mjs",
     "preview": "astro preview",
     "astro": "astro",
@@ -40,7 +40,8 @@
     "verify:agentic-seo": "agentic-seo",
     "pmid:enrich": "node scripts/enrich-pmids.mjs",
     "pmid:enrich:apply": "node scripts/enrich-pmids.mjs --apply",
-    "indexnow:submit": "node scripts/submit-indexnow.mjs"
+    "indexnow:submit": "node scripts/submit-indexnow.mjs",
+    "icons:subset": "node scripts/collect-icons.mjs && python scripts/subset-icon-font.py scripts/fonts/material-symbols-full.woff2 scripts/fonts/icons.txt public/fonts/material-symbols.woff2 scripts/fonts/icon-manifest.json && node scripts/stamp-icon-font.mjs"
   },
   "dependencies": {
     "@astrojs/cloudflare": "^11.2.0",

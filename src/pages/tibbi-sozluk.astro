@@ -23,11 +23,11 @@ function getIcon(term: string): string {
     const t = term.toLowerCase();
     if (['amh', 'fsh', 'lh', 'e2', 'progesteron'].some(k => t.includes(k))) return 'science';
     if (['ivf', 'icsi', 'iui'].some(k => t.includes(k))) return 'biotech';
-    if (['pgt', 'karyotip'].some(k => t.includes(k))) return 'microscope';
+    if (['pgt', 'karyotip'].some(k => t.includes(k))) return 'genetics';
     if (['hsg', 'spermiogram'].some(k => t.includes(k))) return 'assignment';
     if (['endometriozis', 'adenomyozis', 'pcos', 'varikosel', 'azospermi'].some(k => t.includes(k))) return 'healing';
     if (['blastosist', 'vitrifikasyon', 'hatching'].some(k => t.includes(k))) return 'egg';
-    if (['endometrium', 'folikul', 'over'].some(k => t.includes(k))) return 'anatomy';
+    if (['endometrium', 'folikul', 'over'].some(k => t.includes(k))) return 'female';
     return 'menu_book';
 }
 
@@ -279,7 +279,7 @@ const glossarySchema = {
                     <p class="text-xs text-gray-500 mt-1">IVF, ICSI, IUI ve diğer teknikler</p>
                 </a>
                 <a href="/pgt-merkezi" class="border border-gray-200 rounded-xl p-5 hover:shadow-md hover:border-primary-200 transition-all block group">
-                    <span class="material-symbols-outlined text-primary-600 mb-2 text-2xl">microscope</span>
+                    <span class="material-symbols-outlined text-primary-600 mb-2 text-2xl">biotech</span>
                     <h3 class="font-bold text-gray-900 text-sm group-hover:text-primary-600 transition-colors">PGT Merkezi</h3>
                     <p class="text-xs text-gray-500 mt-1">Genetik tarama ve embriyo seçimi</p>
                 </a>
