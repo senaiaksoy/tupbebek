@@ -14,15 +14,15 @@ templateVersion: "2026-09"
 recommendationGrade: "B"
 status: "published"
 publishDate: 2026-03-31
-lastModified: 2026-09-18
-evidenceAsOf: 2026-09-18
-reviewDate: 2026-09-18
+lastModified: 2026-09-26
+evidenceAsOf: 2026-09-26
+reviewDate: 2026-09-26
 reviewType: "medical"
 medicalReviewer: "tupbebek.com Editöryal Ekip"
 reviewerTitle: "Tıbbi Yayın Ekibi"
 approvedBy: "Doç. Dr. Senai Aksoy"
-reviewScope: "Laboratuvar eşikleri, seri hCG artışının sınırları, ultrason ve dış gebelik güvenliği, ilaç kullanımı ve biyokimyasal gebelik. Düşük veya yavaş artan hCG'de acil değerlendirme kararına ilişkin uzman yanıtı ve tıbbi onay 18 Eylül 2026 tarihinde alındı."
-editorialMethodNote: "18 Eylül 2026 güncellemesi: Kaynak kimlikleri ve sayısal eşiklerin bağlamı kontrol edildi; ilaç kullanımı, dış gebelik ve biyokimyasal gebelik ifadeleri düzeltildi. Doç. Dr. Senai Aksoy'un acil değerlendirme kararına ilişkin yanıtı ve tıbbi onayı kaydedildi."
+reviewScope: "Laboratuvar eşikleri, seri hCG artışının sınırları, ultrason ve dış gebelik güvenliği, ilaç kullanımı ve biyokimyasal gebelik. Düşük veya yavaş artan hCG'de acil değerlendirme kararına ilişkin uzman yanıtı ve tıbbi onay 18 Eylül 2026 tarihinde alındı. Transfer gününe göre beta-hCG bölümü 26 Eylül 2026 tarihinde incelenerek onaylandı."
+editorialMethodNote: "26 Eylül 2026 güncellemesi: Transfer gününe göre beta-hCG değerleri bölümü eklendi (embriyo yaşı dönüşümü ve PubMed'de doğrulanmış altı çalışmanın eşikleri). 18 Eylül 2026 güncellemesi: Kaynak kimlikleri ve sayısal eşiklerin bağlamı kontrol edildi; ilaç kullanımı, dış gebelik ve biyokimyasal gebelik ifadeleri düzeltildi. Doç. Dr. Senai Aksoy'un acil değerlendirme kararına ilişkin yanıtı ve tıbbi onayı kaydedildi."
 deferEditorialMeta: true
 author:
   name: "Doç. Dr. Senai Aksoy"
@@ -157,6 +157,54 @@ references:
     authors: "National Institute for Health and Care Excellence (NICE)"
     year: 2019
     url: "https://www.nice.org.uk/guidance/ng137/chapter/Recommendations"
+  - title: "Serum human chorionic gonadotropin can predict live birth 7 days after frozen-thawed blastocyst transfer"
+    type: "journalArticle"
+    authors: "Kidera N, Ishikawa T, Kawamura T, Miyasaka N"
+    journal: "F&S Reports"
+    year: 2025
+    doi: "10.1016/j.xfre.2025.10.002"
+    pmid: "41473560"
+    url: "https://pubmed.ncbi.nlm.nih.gov/41473560/"
+  - title: "Initial β-hCG levels and 2-day-later increase rates effectively predict pregnancy outcomes in single blastocyst transfer in frozen-thawed or fresh cycles: A retrospective cohort study"
+    type: "journalArticle"
+    authors: "Ozer G"
+    journal: "Medicine (Baltimore)"
+    year: 2023
+    doi: "10.1097/MD.0000000000035605"
+    pmid: "37861533"
+    url: "https://pubmed.ncbi.nlm.nih.gov/37861533/"
+  - title: "Predictive value of serum HCG concentrations for outcomes of vitrified-warmed blastocyst transfers in women of different ages"
+    type: "journalArticle"
+    authors: "Qiu P, Wang Y, Ji H et al"
+    journal: "Reproductive BioMedicine Online"
+    year: 2021
+    doi: "10.1016/j.rbmo.2021.07.004"
+    pmid: "34565674"
+    url: "https://pubmed.ncbi.nlm.nih.gov/34565674/"
+  - title: "Predictive value of initial serum human chorionic gonadotropin levels for pregnancies after single fresh and frozen blastocyst transfer"
+    type: "journalArticle"
+    authors: "Zhao WE, Li YJ, Ou JP et al"
+    journal: "Journal of Huazhong University of Science and Technology [Medical Sciences]"
+    year: 2017
+    doi: "10.1007/s11596-017-1746-4"
+    pmid: "28585131"
+    url: "https://pubmed.ncbi.nlm.nih.gov/28585131/"
+  - title: "Early β-hCG levels predict live birth after single embryo transfer"
+    type: "journalArticle"
+    authors: "Hughes LM, Schuler A, Sharmuk M et al"
+    journal: "Journal of Assisted Reproduction and Genetics"
+    year: 2022
+    doi: "10.1007/s10815-022-02606-w"
+    pmid: "36074224"
+    url: "https://pubmed.ncbi.nlm.nih.gov/36074224/"
+  - title: "Predictive value of maternal serum human chorionic gonadotropin levels in pregnancies achieved by in vitro fertilization with single cleavage and single blastocyst embryo transfers"
+    type: "journalArticle"
+    authors: "Oron G, Esh-Broder E, Son WY, Holzer H, Tulandi T"
+    journal: "Fertility and Sterility"
+    year: 2015
+    doi: "10.1016/j.fertnstert.2015.02.028"
+    pmid: "25910571"
+    url: "https://pubmed.ncbi.nlm.nih.gov/25910571/"
 ---
 import Accordion from "../../components/global/Accordion.astro";
 import QuoteBlock from '../../components/global/QuoteBlock.astro';
@@ -171,6 +219,7 @@ Aşağıda test gününün nasıl belirlendiğini, negatif, pozitif veya gri ala
 1. [β-hCG nedir ve vücutta nasıl üretilir?](#nedir)
 2. [Transferden kaç gün sonra test yapılır?](#zamanlama)
 3. [Negatif, gri alan veya pozitif ne demektir?](#esikler)
+   - [Transferin 9., 10. ve 12. günü beta-hCG kaç olmalı?](#gunlere-gore)
 4. [Tek bir değer neden yeterli değildir?](#tek-deger)
 5. [Seri β-hCG artışı nasıl yorumlanır?](#seri)
 6. [Taze ve dondurulmuş transferde fark var mı?](#taze-fet)
@@ -225,7 +274,7 @@ Bekleyiş sürecinin 6. veya 7. gününde evde idrar testi yapmak son derece anl
 1. **Yalancı pozitiflik:** hCG içeren çatlatma iğnesi veya destek ilacı, testte gebelik varmış gibi sonuç verebilir. Bu durum ilacın kullanıldığı dondurulmuş transfer döngülerinde de olabilir. Örneğin rekombinant hCG ürün bilgisinde, enjeksiyondan sonra **10 güne kadar** kan ve idrar testlerinin etkilenebileceği belirtilir ([EMA ürün bilgisi](https://www.ema.europa.eu/en/documents/product-information/ovitrelle-epar-product-information_en.pdf)).
 2. **Yalancı negatiflik:** Erken dönemde idrardaki hormon, testin saptayabildiği düzeyin altında kalabilir. Negatif ev testi, planlanan klinik testin yerini tutmaz ([NHS hasta bilgisi](https://www.guysandstthomas.nhs.uk/health-information/ivf-treatment/results-your-pregnancy-test)).
 
-“8., 10. veya 12. günde kaç olmalı?” sorusunun herkes için tek yanıtı yoktur. Embriyonun gelişim günü ve test takvimi bilinmeden sonuçlar karşılaştırılamaz.
+“8., 10. veya 12. günde kaç olmalı?” sorusunun herkes için tek yanıtı yoktur. Embriyonun gelişim günü ve test takvimi bilinmeden sonuçlar karşılaştırılamaz. Çalışmalardaki gün bazlı değerleri ve nasıl okunacaklarını [aşağıdaki bölümde](#gunlere-gore) bulabilirsiniz.
 
 Bekleyiş günlerinde yaşanan yoğun kaygıyı yönetmek için [tüp bebekte duygusal dayanıklılık rehberimizden](/makaleler/duygusal-dayaniklik-rehberi/) yararlanabilirsiniz.
 
@@ -242,6 +291,43 @@ Sonucu, raporunuzdaki laboratuvar referans aralığı ve test günüyle birlikte
 **Progesteron, östrojen veya diğer destek ilaçlarınızı kendi kararınızla kesmeyin ya da uzatmayın.** Sonucu tedavi ekibinize bildirin ve size verilen ilaç planını izleyin. Planlanan gündeki negatif testten sonra ekip ilaçları bırakmanızı isteyebilir; bu, erken ev testine bakarak kendi başınıza bırakmaktan farklıdır ([NHS hasta bilgisi](https://www.guysandstthomas.nhs.uk/health-information/ivf-treatment/results-your-pregnancy-test)).
 
 Örneğin 15 mIU/mL sonucu tek başına “geç tutunma” tanısı koydurmaz. Test günü, kullanılan ilaçlar, sonraki ölçüm ve belirtiler birlikte değerlendirilir.
+
+<h2 id="gunlere-gore">Transferin 9., 10. ve 12. günü beta-hCG kaç olmalı?</h2>
+
+**Kısa cevap:** Herkes için geçerli tek bir sayı yoktur. Ancak büyük çalışmalar, belirli bir günde ölçülen değerin gebeliğin sürme olasılığıyla ilişkili olduğunu gösterir. Bu çalışmalardaki eşikler istatistiksel ayırma noktalarıdır: altında kalan değerlerin bir kısmı da sağlıklı doğumla sonuçlanır.
+
+### Önce "hangi gün" sorusunu netleştirin
+
+Forumlarda "transferin 10. günü" diye yan yana konan değerler aslında farklı günlere ait olabilir. 3. gün embriyosu, 5. gün embriyosundan (blastokist) iki gün daha erken bir evrede transfer edilir. Bu yüzden karşılaştırmanın doğru ölçüsü, embriyonun döllenmeden sonraki yaşıdır.
+
+| Embriyonun döllenmeden sonraki yaşı | 5. gün embriyosunda | 3. gün embriyosunda |
+| :--- | :--- | :--- |
+| 14. gün | Transferin 9. günü | Transferin 11. günü |
+| 15. gün | Transferin 10. günü | Transferin 12. günü |
+| 16. gün | Transferin 11. günü | Transferin 13. günü |
+| 17. gün | Transferin 12. günü | Transferin 14. günü |
+
+Aynı gün ölçülse bile tek blastokist transferinden sonra değerler, 3. gün embriyosu transferine göre genellikle daha yüksektir ([Oron 2015](https://pubmed.ncbi.nlm.nih.gov/25910571/)).
+
+### Çalışmalar ne gösteriyor?
+
+Aşağıdaki değerler, tek embriyo transferi sonrasında canlı doğumu en iyi ayıran eşiklerdir. Birimler mIU/mL'dir (IU/L ile aynı sayıdır).
+
+| Çalışma | Transfer tipi | Transferden sonraki gün | Canlı doğumla ilişkili eşik |
+| :--- | :--- | :--- | :--- |
+| [Kidera 2025](https://pubmed.ncbi.nlm.nih.gov/41473560/) (Japonya, 18.491 döngü) | Dondurulmuş blastokist | 7. / 8. / 9. / 10. / 11. gün | 31 / 47 / 72 / 95 / 160 |
+| [Özer 2023](https://pubmed.ncbi.nlm.nih.gov/37861533/) (İstanbul, 3.238 döngü) | Tek blastokist: taze / dondurulmuş | 9. gün | 117 / 132 |
+| [Qiu 2021](https://pubmed.ncbi.nlm.nih.gov/34565674/) (Çin, 772 döngü) | Dondurulmuş tek blastokist | 10. gün | 146 |
+| [Zhao 2017](https://pubmed.ncbi.nlm.nih.gov/28585131/) (Çin, 1.727 döngü) | Tek blastokist: taze / dondurulmuş | 12. gün | 223 / 411 |
+
+### Bu tabloyu nasıl okumalısınız?
+
+- **Eşikler merkezden merkeze değişir.** Aynı 10. gün için bir çalışmada eşik 95, diğerinde 146'dır. Laboratuvar yöntemi, hasta grubu ve test günü farklıdır; bu sayıları kendi sonucunuz için kesin sınır gibi kullanmayın.
+- **Dondurulmuş transferde değerler genellikle daha yüksektir.** Bu yüzden taze ve dondurulmuş transfer sonuçlarını aynı ölçüyle karşılaştırmak yanıltır ([Özer 2023](https://pubmed.ncbi.nlm.nih.gov/37861533/); [Zhao 2017](https://pubmed.ncbi.nlm.nih.gov/28585131/)).
+- **Eşiğin altında kalmak "olmadı" demek değildir.** İstanbul çalışmasında eşiğin altında kalan gebeliklerin yaklaşık yarısı yine canlı doğumla sonuçlandı ([Özer 2023](https://pubmed.ncbi.nlm.nih.gov/37861533/)).
+- **Eşiğin üstünde olmak da garanti değildir.** Asıl bilgi, yaklaşık 48 saat sonraki ikinci ölçümden ve ultrasondan gelir. Bir çalışmada değerin 48 saatte ikiye katlanması ve yumurta toplamadan sonraki 15. günde 100'ü geçmesi birlikte görüldüğünde, gebeliklerin yaklaşık %85'i canlı doğumla sonuçlandı ([Hughes 2022](https://pubmed.ncbi.nlm.nih.gov/36074224/)). <InlineEvidence grade="C" />
+
+Sonucunuzu hekiminizle konuşurken şu dört bilgiyi birlikte verin: embriyonun kaçıncı gün embriyosu olduğu, transferin taze mi dondurulmuş mu olduğu, testin transferden kaç gün sonra yapıldığı ve laboratuvarın raporladığı birim. Yeni ağrı, bayılma hissi veya yoğun kanama varsa sayıyı beklemeden değerlendirilmeniz gerekir; ayrıntılar [acil başvuru](#acil) bölümündedir.
 
 <h2 id="tek-deger">Tek bir değer neden yeterli değildir?</h2>
 
