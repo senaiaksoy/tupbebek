@@ -38,7 +38,7 @@ export interface MegaMenuConfig extends NavigationItem {
 export const navigationMenus: MegaMenuConfig[] = [
   {
     id: 'infertilite-101',
-    label: 'İnfertilite 101',
+    label: 'Kısırlık Rehberi',
     href: '/kadin-infertilitesi/',
     icon: 'school',
     centerContent: {
@@ -52,10 +52,10 @@ export const navigationMenus: MegaMenuConfig[] = [
       href: '/makaleler/tup-bebek-nedir/'
     },
     submenu: [
-      { label: 'Kadın İnfertilitesi', href: '/kadin-infertilitesi/', description: 'PCOS, tüp kaynaklı nedenler, endometriozis' },
-      { label: 'Erkek İnfertilitesi', href: '/erkek-infertilitesi/', description: 'Azospermi, varikosel, DNA hasarı' },
-      { label: 'Açıklanamayan İnfertilite', href: '/aciklanamayan-infertilite/', description: 'Tanısı konulamayan durumlar' },
-      { label: 'Yaş ve Fertilite', href: '/yas-ve-fertilite/', description: 'Over rezervi ve zamanlama' },
+      { label: 'Kadınlarda Kısırlık', href: '/kadin-infertilitesi/', description: 'PCOS, tüp kaynaklı nedenler, endometriozis' },
+      { label: 'Erkeklerde Kısırlık', href: '/erkek-infertilitesi/', description: 'Azospermi, varikosel, DNA hasarı' },
+      { label: 'Açıklanamayan Kısırlık', href: '/aciklanamayan-infertilite/', description: 'Tanısı konulamayan durumlar' },
+      { label: 'Yaş ve Doğurganlık', href: '/yas-ve-fertilite/', description: 'Over rezervi ve zamanlama' },
       { label: 'Tanı Süreci', href: '/tani-sureci/', description: 'Değerlendirme adımları' },
       { label: 'Hormon Paneli', href: '/hormon-paneli/', description: 'AMH, FSH, E2 değerleri' },
       { label: 'Genetik Testler', href: '/genetik-testler/', description: 'Kromozomal tarama' },
@@ -84,7 +84,7 @@ export const navigationMenus: MegaMenuConfig[] = [
     submenu: [
       { label: 'Tüp Bebek (IVF/ICSI)', href: '/tedavi-yontemleri/', description: 'Yumurta toplama → embriyo transferi' },
       { label: 'Mikroenjeksiyon (ICSI)', href: '/makaleler/mikroenjeksiyon-icsi-nedir/', description: 'ICSI tekniği detayları' },
-      { label: 'IVF Protokolleri', href: '/makaleler/ivf-protokolleri/', description: 'Uzun, kısa ve yeni yaklaşımlar' },
+      { label: 'Tüp Bebek Protokolleri', href: '/makaleler/ivf-protokolleri/', description: 'Uzun, kısa ve yeni yaklaşımlar' },
       { label: 'Aşılama (IUI)', href: '/tedavi-yontemleri/#iui', description: 'İntrauterin inseminasyon' },
       { label: 'PGT Genetik Tarama', href: '/pgt-merkezi/', description: 'Embriyo genetik seçimi' },
       { label: 'PGT-M Tek Gen', href: '/makaleler/pgt-m/', description: 'Tek gen hastalıkları tarama' },
@@ -93,6 +93,7 @@ export const navigationMenus: MegaMenuConfig[] = [
       { label: 'Taze vs Dondurulmuş Transfer', href: '/makaleler/taze-dondurulmus-transfer/', description: 'Hangi yöntem daha başarılı?' },
       { label: 'Kaç Yumurta Gerekir?', href: '/makaleler/kac-yumurta-gerekir/', description: 'Optimum yumurta sayısı' },
       { label: 'İlaç Rehberi', href: '/ilac-rehberi/', description: 'Gonadotropinler, GnRH' },
+      { label: 'Doğurganlığı Koruma', href: '/fertilite-koruma/', description: 'Yumurta/sperm dondurma' },
       { label: 'Başarı Oranları', href: '/basari-oranlari/', description: 'Veri şeffaflığı' },
       { label: 'Yaşa Göre Başarı Oranları', href: '/makaleler/yasa-gore-tup-bebek-basari-oranlari/', description: 'Yaş gruplarına göre IVF başarısı' },
       { label: 'Başarısız Denemeler', href: '/basarisiz-denemeler/', description: 'Tekrar stratejileri' },
@@ -127,7 +128,6 @@ export const navigationMenus: MegaMenuConfig[] = [
       { label: 'Endoskopik Cerrahi', href: '/makaleler/endoskopik-cerrahi-histeroskopi/', description: 'Minimal invaziv cerrahi' },
       { label: 'Endometriyal Scratching', href: '/makaleler/endometriyal-scratching/', description: 'Rahim çizme ve implantasyon' },
       { label: 'Hormonal Tedavi (Adenomyozis)', href: '/makaleler/hormonal-tedavi-adenomyozis/', description: 'Adenomyozis yönetimi' },
-      { label: 'Fertilite Koruma', href: '/fertilite-koruma/', description: 'Yumurta/sperm dondurma' },
       { label: 'Erkek Cerrahisi', href: '/erkek-infertilitesi/#cerrahi', description: 'Varikosel, TESE, mikro-TESE' },
       { label: 'Lab Raporu Yorumlama', href: '/makaleler/laboratuvar-raporu-yorumlama/', description: 'Cerrahi sonrası takip' },
     ]
@@ -154,7 +154,6 @@ export const navigationMenus: MegaMenuConfig[] = [
       { label: 'Cep Telefonu ve Sperm', href: '/makaleler/cep-telefonu-sperm-kalitesi/', description: 'Radyasyon ve sperm kalitesi' },
       { label: 'Duygusal Destek', href: '/duygusal-destek/', description: 'Psikolojik yardım kaynakları' },
       { label: 'Psikolojik Destek', href: '/psikolojik-destek/', description: 'Uzman psikolojik danışmanlık' },
-      { label: 'Fertilite Koruma', href: '/fertilite-koruma/', description: 'Geleceğe yatırım' },
       { label: 'Tüp Bebek Yanlış Bilinenler', href: '/makaleler/tup-bebek-yanlis-bilinenler/', description: 'Mitler vs gerçekler' },
       { label: 'E-Kitap İndir', href: '/e-kitap-indir/', description: '30 günlük beslenme planı' },
     ]
@@ -162,7 +161,7 @@ export const navigationMenus: MegaMenuConfig[] = [
 
   {
     id: 'kanun-maliyet',
-    label: 'Kanun, Maliyet ve Haklar',
+    label: 'SGK ve Hasta Hakları',
     href: '/sss/',
     icon: 'gavel',
     centerContent: {
@@ -177,10 +176,7 @@ export const navigationMenus: MegaMenuConfig[] = [
     },
     submenu: [
       { label: 'SSS — Maliyet & SGK', href: '/sss/#maliyet-sgk', description: 'Ücretler, devlet desteği ve hasta hakları' },
-      { label: 'Başarı Oranları', href: '/basari-oranlari/', description: 'Şeffaf veri ve istatistikler' },
       { label: 'Tıbbi Sorumluluk Reddi', href: '/tibbi-sorumluluk-reddi/', description: 'Yasal bilgilendirme' },
-      { label: 'Editöryal Politika', href: '/editoryal-politika/', description: 'İçerik standartları' },
-      { label: 'Hakkımızda', href: '/hakkimizda/', description: 'Misyon ve yayın kurulu' },
     ]
   },
 
@@ -190,9 +186,9 @@ export const navigationMenus: MegaMenuConfig[] = [
     href: '/bas-editor-kosesi/',
     icon: 'edit_note',
     centerContent: {
-      title: 'İmzalı Perspektif',
-      description: '"Doç. Dr. Senai Aksoy\'un birinci tekil sesinde, kanıt temelli ve klinik deneyime dayalı yazıları. Tartışmalı sınırlar, add-on testler, kılavuz okumaları."',
-      stat: { value: 'Dr. Aksoy', label: 'imzalı perspektif' }
+      title: 'Baş Editörün Yazıları',
+      description: '"Araştırmalar, ek testler ve tedavi seçenekleri üzerine Doç. Dr. Senai Aksoy\'un değerlendirmeleri."',
+      stat: { value: 'Dr. Aksoy', label: 'yazıları' }
     },
     featuredArticle: {
       title: 'ERA Testi Üzerine Bir Not',
@@ -200,8 +196,9 @@ export const navigationMenus: MegaMenuConfig[] = [
       href: '/makaleler/era-testi-bas-editor-kosesi/'
     },
     submenu: [
-      { label: 'Tüm Yazılar', href: '/bas-editor-kosesi/', description: 'Dr. Aksoy imzalı tüm perspektif yazıları' },
+      { label: 'Tüm Yazılar', href: '/bas-editor-kosesi/', description: 'Baş editörün tüm değerlendirme yazıları' },
       { label: 'Baş Editör Hakkında', href: '/yazar/senai-aksoy/', description: 'Doç. Dr. Senai Aksoy yazar profili' },
+      { label: 'Hakkımızda', href: '/hakkimizda/', description: 'Misyon ve yayın kurulu' },
       { label: 'Editöryal Politika', href: '/editoryal-politika/', description: 'İmzalı yazı ilkelerimiz' },
     ]
   },
@@ -213,11 +210,11 @@ export const navigationMenus: MegaMenuConfig[] = [
 
 export const footerLinks = [
   {
-    category: 'İnfertilite 101',
+    category: 'Kısırlık Rehberi',
     links: [
-      { label: 'Kadın İnfertilitesi', href: '/kadin-infertilitesi/' },
-      { label: 'Erkek İnfertilitesi', href: '/erkek-infertilitesi/' },
-      { label: 'Yaş ve Fertilite', href: '/yas-ve-fertilite/' },
+      { label: 'Kadınlarda Kısırlık', href: '/kadin-infertilitesi/' },
+      { label: 'Erkeklerde Kısırlık', href: '/erkek-infertilitesi/' },
+      { label: 'Yaş ve Doğurganlık', href: '/yas-ve-fertilite/' },
       { label: 'Tanı Süreci', href: '/tani-sureci/' },
       { label: 'PKOS ve Tüp Bebek', href: '/makaleler/opk-ve-ivf/' },
       { label: 'Tıbbi Sözlük', href: '/tibbi-sozluk/' },
@@ -227,11 +224,11 @@ export const footerLinks = [
     category: 'Tedavi & Cerrahi',
     links: [
       { label: 'Tedavi Yöntemleri', href: '/tedavi-yontemleri/' },
-      { label: 'IVF Protokolleri', href: '/makaleler/ivf-protokolleri/' },
+      { label: 'Tüp Bebek Protokolleri', href: '/makaleler/ivf-protokolleri/' },
       { label: 'Transfer Süreci', href: '/transfer-sureci/' },
       { label: 'İlaç Rehberi', href: '/ilac-rehberi/' },
       { label: 'Başarı Oranları', href: '/basari-oranlari/' },
-      { label: 'Fertilite Koruma', href: '/fertilite-koruma/' },
+      { label: 'Doğurganlığı Koruma', href: '/fertilite-koruma/' },
     ]
   },
   {
