@@ -17,9 +17,22 @@ contentType: "portal_article"
 templateVersion: "2026-07"
 status: "published"
 publishDate: 2025-01-17
-lastModified: 2026-07-28
-evidenceAsOf: 2026-07-28
+lastModified: 2026-09-25
+evidenceAsOf: 2026-09-25
 reviewScope: "Mikroenjeksiyon (ICSI) laboratuvar tekniğinin klasik IVF ile karşılaştırması, erkek faktörü infertilitesi, azospermi, cerrahi sperm kullanımı, döllenme başarısızlığı ve non-erkek faktörü indikasyonları Palermo 1992, ASRM 2020, Cochrane 2023 ve AUA/ASRM 2024 kılavuzları doğrultusunda incelenmiştir."
+expertContribution:
+  title: "Dr. Aksoy'un yaklaşımı"
+  question: "Semen parametreleri normal bir çiftte ICSI'yi hangi durumlarda tercih edersiniz (düşük oosit sayısı, önceki döllenme başarısızlığı, PGT, dondurulmuş oosit), hangilerinde gereksiz bulursunuz?"
+  text: |-
+    Sperm parametreleri normalse ICSI’yi otomatik seçmem. Önceki klasik IVF’de hiç döllenme olmamış veya beklenenden belirgin az döllenme olmuşsa bir sonraki denemede ICSI güçlü bir seçenektir. Dondurulup çözülmüş yumurtalarda da en yerleşik döllenme yöntemi ICSI’dir. PGT-M’de, testin yöntemine göre yumurta çevresindeki başka spermlerin örneği kirletme olasılığını azaltmak için embriyoloji ve genetik laboratuvarıyla birlikte ICSI kararı verebilirim.
+
+    Buna karşılık yalnızca az yumurta toplanması, düşük AMH, ileri yaş veya PGT-A yapılacak olması ICSI için yeterli gerekçe değildir; bu durumlarda klasik IVF’ye göre canlı doğumu artırdığı gösterilmedi. Az sayıda yumurtası olan hastanın “hiçbiri döllenmezse?” kaygısını anlarım, fakat ICSI’nin her yumurtayı döllendireceği sözünü veremem. Yeterli sayıda yumurta varsa ve döllenme konusunda özel bir belirsizlik bulunuyorsa iki yöntemi aynı siklusta karşılaştırmayı da konuşabilirim.
+  evidenceNote: "Dang 2021 randomize çalışmasında (1064 çift, normal sperm sayısı ve hareketliliği) ICSI klasik IVF'ye göre canlı doğumu artırmadı (%35'e karşı %31, anlamlı değil) ve döllenme başarısızlığı iki grupta benzerdi (%5'e karşı %6). Cochrane 2023 derlemesi ve ASRM 2020 görüşü de erkek faktörü dışındaki durumlarda rutin ICSI'yi desteklemez."
+  author: "Doç. Dr. Senai Aksoy"
+  authorTitle: "Kadın Hastalıkları ve Doğum Uzmanı"
+  authorUrl: "https://tupbebek.com/yazar/senai-aksoy/"
+  answeredAt: 2026-09-25
+  approvalStatus: "approved"
 author:
   name: "Doç. Dr. Senai Aksoy"
   title: "Kadın Hastalıkları, Doğum ve Üreme Tıbbı Uzmanı"
@@ -28,7 +41,7 @@ author:
 authorYoutube: "https://www.youtube.com/@DocentDrSenaiAksoy"
 medicalReviewer: "tupbebek.com Editöryal Ekip"
 reviewerTitle: "Tıbbi Yayın Ekibi"
-reviewDate: 2026-07-28
+reviewDate: 2026-09-25
 recommendationGrade: B
 image: "/images/makaleler/mikroenjeksiyon-icsi-nedir.webp"
 imageAlt: "Mikroenjeksiyon ICSI için embriyoloji laboratuvarında mikroskop ve hassas çalışma alanı"
@@ -65,6 +78,13 @@ references:
     journal: "AUA/ASRM Guideline"
     year: 2024
     url: "https://prod.asrm.org/practice-guidance/practice-committee-documents/diagnosis-and-treatment-of-infertility-in-men-aua-asrm-guideline-part2/"
+  - title: "Intracytoplasmic sperm injection versus conventional in-vitro fertilisation in couples with infertility in whom the male partner has normal total sperm count and motility: an open-label, randomised controlled trial"
+    authors: "Dang VQ, Vuong LN, Luu TM, Pham TD, Ho TM, Ha AN et al."
+    journal: "The Lancet"
+    year: 2021
+    doi: "10.1016/S0140-6736(21)00535-3"
+    pmid: "33894833"
+    url: "https://pubmed.ncbi.nlm.nih.gov/33894833/"
 ---
 
 import Accordion from "../../components/global/Accordion.astro";
@@ -73,12 +93,6 @@ import QuoteBlock from '../../components/global/QuoteBlock.astro';
 import RevealScript from '../../components/global/RevealScript.astro';
 import Video from '../../components/global/Video.astro';
 import InlineEvidence from '../../components/InlineEvidence.astro';
-
-<div data-reveal>
-<MedicalInfoBox title="Dr. Aksoy'un yaklaşımı" icon="INFO" color="blue">
-Mikroenjeksiyon (ICSI), özellikle ciddi erkek kısırlığında ve azospermi olgularında babalık şansını baştan yazan muazzam bir laboratuvar devrimidir. Ancak günümüzde sıkça karşılaştığımız yanlış bir inanış vardır: “ICSI daha pahalı ve teknolojik olduğu için her hastada klasik tüp bebekten daha başarılıdır.” Tıbbi veriler açıkça gösteriyor ki sperm sayısı ve hareketi normal olan çiftlerde klasik tüp bebek (IVF) ile mikroenjeksiyon arasında gebelik başarısı açısından bir fark yoktur. Tedavilerimizde hastamıza gereksiz laboratuvar müdahaleleri yüklemek yerine, sperm analizine ve yumurta kalitesine göre tam ihtiyacı olan yöntemi seçiyoruz.
-</MedicalInfoBox>
-</div>
 
 <div data-reveal>
 <MedicalInfoBox title="Hızlı Bakış: ICSI Ne Zaman Anlamlıdır?" icon="ICSI" color="blue">

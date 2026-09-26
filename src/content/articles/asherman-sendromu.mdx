@@ -18,9 +18,22 @@ templateVersion: "2026-07"
 recommendationGrade: B
 status: "published"
 publishDate: 2026-03-31
-lastModified: 2026-07-25
-evidenceAsOf: 2026-07-25
+lastModified: 2026-09-25
+evidenceAsOf: 2026-09-25
 reviewScope: "IUA–Asherman terminoloji ayrımı; cerrahi endikasyon ve obstetrik risk dili yumuşatıldı; Deans 2018 özet kaynaklarına alındı; Mortimer 2024 PAS riski eklendi; Fouks 2022 sınırlı örneklem olarak çerçevelendi; adezyolizis yazımı standartlaştırıldı."
+expertContribution:
+  title: "Dr. Aksoy'un yaklaşımı"
+  question: "Orta-ağır Asherman'da ilk adezyolizden sonra ikinci bakış histeroskopiyi ne zaman ve hangi bulguya göre planlıyorsunuz; bariyer veya östrojen desteğini kimde kullanıyor, kimde gereksiz buluyorsunuz?"
+  text: |-
+    Orta-ağır Asherman’da ikinci bakışı, transfer veya gebelik denemesinden önce rahim boşluğunun açık kaldığını görmek için planlarım. İlk ameliyatta yoğun yapışıklık, geniş karşılıklı çıplak yüzeyler veya tam açılamayan fundus ve tüp ağızları varsa yaklaşık 4–6 hafta içinde ofis histeroskopisi yaparım; yeniden oluşan ince yapışıklıklar varsa aynı aşamada ayrılabilir. Boşluk iyi açılmışsa genellikle 2–3 adet döngüsü içinde kontrol yeterlidir. Ameliyat sonrası adetin hiç gelmemesi veya belirgin azalması kontrolü öne çeker. Erken bakış yeniden yapışmanın azalmasıyla ilişkilidir; ancak canlı doğumu artırdığını kesin olarak söyleyemem.
+
+    Geniş ve birbirine temas eden yara yüzeyleri bırakan ağır olguda balon gibi mekanik bir bariyer düşünürüm; jel bariyerin yeniden yapışmayı önlemedeki yeri daha tartışmalıdır. Östrojen desteğini endometriumun yeniden gelişmesini umduğum seçilmiş olgularda kullanabilirim; her hastaya rutin veya yüksek doz vermem. Boşluk tamamen açılmış ve endometrium iyi görünüyorsa ek tedavinin yararı belirsizdir. Balonun yapışıklık tekrarını azaltabildiğine dair veri var, fakat canlı doğuma katkısı net değil. Östrojen verilen ve verilmeyen hastaları karşılaştıran randomize çalışmalarda da östrojenin yeniden yapışmayı azalttığı ya da gebelik ve canlı doğumu belirgin biçimde artırdığı gösterilmedi.
+  evidenceNote: "Guo J 2023 meta-analizinde balon ve ikinci bakış histeroskopi yeniden yapışmayı azaltırken jel anlamlı değildi. Östrojen için Yang 2022 ve Hanstede 2023 randomize çalışmalarında yeniden yapışma, gebelik ve canlı doğumda belirgin fark bulunmadı."
+  author: "Doç. Dr. Senai Aksoy"
+  authorTitle: "Kadın Hastalıkları ve Doğum Uzmanı"
+  authorUrl: "https://tupbebek.com/yazar/senai-aksoy/"
+  answeredAt: 2026-09-25
+  approvalStatus: "approved"
 author:
   name: "Doç. Dr. Senai Aksoy"
   title: "Kadın Hastalıkları ve Doğum Uzmanı"
@@ -29,7 +42,7 @@ author:
 authorYoutube: "https://www.youtube.com/@DocentDrSenaiAksoy"
 medicalReviewer: "tupbebek.com Editöryal Ekip"
 reviewerTitle: "Tıbbi Yayın Ekibi"
-reviewDate: 2026-07-25
+reviewDate: 2026-09-25
 image: "/images/makaleler/asherman-sendromu.webp"
 imageAlt: "Asherman sendromunda rahim içi yapışıklıkları ve histeroskopik tedaviyi gösteren tıbbi illüstrasyon"
 imageCaption: "Histeroskopik tedavinin amacı, sağlıklı endometriuma ek zarar vermeden rahim içi anatomiyi mümkün olduğunca düzeltmek ve yeniden yapışma ile sonraki gebelik risklerini yönetmektir."
@@ -102,20 +115,29 @@ references:
     doi: "10.3390/diagnostics15080955"
     pmid: "40310333"
     url: "https://pubmed.ncbi.nlm.nih.gov/40310333/"
+  - title: "The Effect of Estrogen in the Prevention of Adhesion Reformation after Hysteroscopic Adhesiolysis: A Prospective Randomized Control Trial"
+    authors: "Yang L, Ma N, Song D, Huang X, Zhou Q, Guo Y, Xia E, Shi X, Li TC"
+    journal: "Journal of Minimally Invasive Gynecology"
+    year: 2022
+    doi: "10.1016/j.jmig.2022.04.004"
+    pmid: "35439645"
+    url: "https://pubmed.ncbi.nlm.nih.gov/35439645/"
+  - title: "Hormonal support in women with Asherman syndrome does not lead to better outcomes: A randomized trial"
+    authors: "Hanstede MMF, van Stralen KJ, Molkenboer JFM, Veersema S, Emanuel MH"
+    journal: "Reproductive Medicine and Biology"
+    year: 2023
+    doi: "10.1002/rmb2.12526"
+    pmid: "37396823"
+    url: "https://pubmed.ncbi.nlm.nih.gov/37396823/"
 ---
 
 import Accordion from "../../components/global/Accordion.astro";
 import InlineEvidence from '../../components/InlineEvidence.astro';
 import QuoteBlock from '../../components/global/QuoteBlock.astro';
-import MedicalInfoBox from '../../components/global/MedicalInfoBox.astro';
 
 İntrauterin adezyon (IUA), rahim içindeki karşılıklı yüzeyler arasında skar dokusu ve yapışıklık gelişmesidir. Bu yapışıklıklar adet azalması veya kesilmesi, infertilite, tekrarlayan gebelik kaybı ya da siklik ağrı gibi klinik sorunlara yol açtığında tablo sıklıkla **Asherman sendromu** olarak adlandırılır ([Toma 2025](https://pubmed.ncbi.nlm.nih.gov/40310333/); [Yu 2008](https://pubmed.ncbi.nlm.nih.gov/18406834/)). Literatürde iki terim bazen birbirinin yerine kullanılır; hasta bilgilendirmesinde anatomik bulgu ile semptomatik tabloyu ayırmak daha doğrudur.
 
 Yapışıklıklar ince filmlerden, boşluğu tamamen kapatan yoğun bağ dokusuna kadar değişir. Çoğu olgu cerrahi travmaya bağlıdır ve bir kısmı önlenebilir. Tanı kaçırılırsa tekrarlayan IVF başarısızlığı, açıklanamayan infertilite veya düşük olarak yanlış yorumlanabilir.
-
-<MedicalInfoBox title="Dr. Aksoy'un yaklaşımı" icon="INFO" color="blue">
-Asherman’da acele ikinci, üçüncü ameliyat peşinde koşmam. İlk seansı deneyimli ekiple, mümkünse soğuk makas ve kontrollü diseksiyonla planlarım; çünkü her ek seans prognozu zorlaştırabilir. Düşük sonrası mümkünse küretaj yerine medikal veya bekleme yönetimini önce konuşurum. Ağır olguda ikinci seansa ancak kavite güvenli açıldıktan ve bariyer/hormon planı netleştikten sonra karar veririm. Gebelik olursa plasenta yerleşimini erken değerlendirir; riski bireysel öyküye göre izlerim.
-</MedicalInfoBox>
 
 ## İçindekiler
 
@@ -314,6 +336,7 @@ Adezyolizis sonrası yapışıklıkların yeniden oluşması önemli bir sorundu
 - Postoperatif östrojen (ör. 1–2 mg/gün × 1–3 ay) — endometriyal proliferasyonu desteklemek için sık kullanılır
 - Östrojen + progesteron kombinasyonu — düzenli kanama indüksiyonu için
 - Hormonal destek çoğu pratikte **mekanik bariyerlerle birlikte** düşünülür; tek başına “yeterli önleme” iddiası zayıftır
+- Randomize çalışmalarda rutin postoperatif östrojen yeniden yapışmayı azaltmamış ([Yang 2022](https://pubmed.ncbi.nlm.nih.gov/35439645/)); gebelik ve canlı doğum oranlarında da belirgin üstünlük göstermemiştir ([Hanstede 2023](https://pubmed.ncbi.nlm.nih.gov/37396823/)). <InlineEvidence grade="B" />
 
 **3. İkinci bakış (second-look) histeroskopi**
 

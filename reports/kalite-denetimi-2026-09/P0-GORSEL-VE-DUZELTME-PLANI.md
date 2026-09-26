@@ -289,4 +289,4 @@ P1 ayrı kapsamda kalır. P0 ile ortak dosyaların bulanık bantları bu değiş
 - Methodology ve üç menü istatistiği düzeltildi.
 - Tam build ve 23/23 preflight geçti. 99 yerel sayfanın H1, SEO başlığı ve canonical bilgileri korundu.
 - Ayrıntılı kayıt: [P0 uygulama ve doğrulama](P0-UYGULAMA-VE-DOGRULAMA.md).
-- Canlı yayın onayı alınmadı; merge/deploy yapılmadı.
+- Kullanıcının 26 Eylül 2026 tarihli ikinci “onay” mesajıyla yayın onayı da alındı. Son main birleştirmesi ve yayın kontrolü [yayın öncesi kayıt](P0-YAYIN-ONCESI-KONTROL.md) altında.

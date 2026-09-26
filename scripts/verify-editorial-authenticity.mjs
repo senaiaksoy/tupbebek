@@ -43,6 +43,11 @@ for (const filePath of targets.flatMap(collectFiles)) {
     if (/arama-niyeti/iu.test(source)) {
       failures.push(`${relative(filePath)} contains a search-production anchor.`);
     }
+    const frontmatter = source.match(/^---\r?\n([\s\S]*?)\r?\n---/);
+    const body = frontmatter ? source.slice(frontmatter[0].length) : source;
+    if (/Dr\. Aksoy[’']un yaklaşımı/u.test(body) && !/^expertContribution:/m.test(frontmatter?.[1] ?? '')) {
+      failures.push(`${relative(filePath)} shows a "Dr. Aksoy'un yaklaşımı" box without an approved expertContribution record.`);
+    }
   }
 }
 

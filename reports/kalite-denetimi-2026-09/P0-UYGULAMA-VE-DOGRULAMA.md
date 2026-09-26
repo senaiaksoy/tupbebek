@@ -33,4 +33,4 @@ Onaylanan 14 aktif görsel aynı adreslerde yeni Vogue/editoryal fotoğraf sahne
 - Tam kaynak PNG'ler Codex üretim klasöründe; seçilen son WebP'ler repoda. Tam ekranların tamamı yerelde tutulur, toplu kırpma ve görsel sayfaları PR'da incelenebilir.
 - Build, mevcut Cloudflare adaptörü / Sharp servis uyumu uyarısını veriyor; süreç başarıyla sona erdi ve statik dosyalar yüklendi. Bu çalışma adaptör ayarını değiştirmiyor.
 - P1 kapak yenilemeleri ayrı kapsamdır. Bu kayıt tıbbi iddiaların bütün site çapında yeniden kaynak denetimi yapıldığı anlamına gelmez.
-- Canlı custom-domain sürümü bu değişiklikleri içermiyor. Merge/deploy ayrı yayın onayı bekler; doğru hedef yalnızca `tupbebek`.
+- Bu ilk doğrulama, PR hazırlanırken ve yayın onayı öncesinde yapıldı. Kullanıcının 26 Eylül 2026 tarihli sonraki “onay” mesajıyla yayın izni alındı; son main birleştirmesi ve yayın öncesi kontroller [ayrı kayıtta](P0-YAYIN-ONCESI-KONTROL.md). Doğru deploy hedefi yalnızca `tupbebek`.
