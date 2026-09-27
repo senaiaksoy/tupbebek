@@ -128,3 +128,7 @@ export const POST: APIRoute = async ({ request, locals }) => {
     );
   }
 };
+
+// Yalnızca POST kabul edilir; diğer yöntemler 404 sayfası yerine 405 alır.
+export const ALL: APIRoute = () =>
+  new Response(null, { status: 405, headers: { Allow: 'POST', 'cache-control': 'no-store' } });

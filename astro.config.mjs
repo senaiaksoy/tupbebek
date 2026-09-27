@@ -32,10 +32,19 @@ function getArticleDates() {
 const articleDates = getArticleDates();
 
 // Static-page lastmod derived from git mtime of the source .astro file.
-// Falls back to filesystem mtime if git isn't available (e.g. preview environments).
+// git yoksa ya da klon sığsa static sayfalara lastmod verilmez.
 function getStaticPageDates() {
   const pagesDir = path.resolve('./src/pages');
   const dates = new Map();
+  // Cloudflare Pages build'i sığ (shallow) klonla çalışır; o durumda her dosyanın
+  // "son commit" tarihi deploy anına eşit olur. Sahte lastmod yerine hiç lastmod
+  // vermemek daha doğrudur (Google lastmod'a ancak tutarlıysa güvenir).
+  try {
+    const shallow = execSync('git rev-parse --is-shallow-repository', { encoding: 'utf-8', stdio: ['ignore', 'pipe', 'ignore'] }).trim();
+    if (shallow === 'true') return dates;
+  } catch {
+    return dates;
+  }
   function walk(dir, urlPrefix) {
     for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
       const fp = path.join(dir, entry.name);
@@ -57,9 +66,6 @@ function getStaticPageDates() {
         if (out) iso = out;
       } catch {
         // git unavailable — fall back below
-      }
-      if (!iso) {
-        try { iso = fs.statSync(fp).mtime.toISOString(); } catch {}
       }
       if (iso) dates.set(url, iso);
     }
