@@ -108,10 +108,11 @@ export default {
         "surface-subtle": "#f3f4f6",
       },
       fontFamily: {
-        "headline": ["Inter", "-apple-system", "BlinkMacSystemFont", "sans-serif"],
-        "body": ["Inter", "-apple-system", "BlinkMacSystemFont", "sans-serif"],
-        "label": ["Inter", "-apple-system", "BlinkMacSystemFont", "sans-serif"],
-        "mono": ["Fira Code", "JetBrains Mono", "monospace"]
+        "headline": ["var(--font-headline)"],
+        "serif": ["var(--font-headline)"], // Legacy class; headings share the selected family.
+        "body": ["var(--font-body)"],
+        "label": ["var(--font-label)"],
+        "mono": ["var(--font-mono)"]
       },
       // Fluid typography scales (responsive, no breakpoint jumps)
       fontSize: {

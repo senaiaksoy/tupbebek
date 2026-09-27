@@ -109,12 +109,12 @@
   --border-hairline: rgba(229, 231, 235, 0.85);
 
   /* ─────────────────────────────────────────────────────────────────── */
-  /* TYPOGRAPHY - FONT FAMILIES (Playfair Display Serif + Inter Sans) */
+  /* TYPOGRAPHY - FONT FAMILIES (Inter headings + Manrope body) */
   /* ─────────────────────────────────────────────────────────────────── */
 
-  --font-serif: "Playfair Display", Georgia, "Times New Roman", serif;
-  --font-headline: "Playfair Display", Georgia, serif;
-  --font-body: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-serif: var(--font-headline); /* Legacy alias retained for existing components. */
+  --font-headline: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: "Manrope", -apple-system, BlinkMacSystemFont, sans-serif;
   --font-label: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
   --font-mono: "Fira Code", "JetBrains Mono", monospace;
 

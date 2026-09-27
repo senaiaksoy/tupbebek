@@ -92,6 +92,12 @@ h1 {
   margin-bottom: var(--spacing-lg);
 }
 
+/* Heading emphasis uses one style; the highlighted words remain unchanged. */
+h1 .italic {
+  font-style: normal;
+  color: inherit;
+}
+
 h2 {
   font-size: clamp(1.5rem, 3.5vw, 2.25rem);
   line-height: 1.3;

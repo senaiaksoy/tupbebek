@@ -7,6 +7,7 @@ import YouTubeEmbed from '../components/YouTubeEmbed.astro';
 import ReferenceList from '../components/ReferenceList.astro';
 import MedicalDisclaimer from '../components/MedicalDisclaimer.astro';
 import EEATBadge from '../components/EEATBadge.astro';
+import KisaCevap from '../components/KisaCevap.astro';
 
 const references = [
     {
@@ -192,25 +193,21 @@ const pageDescription = "Fertilite koruma: yumurta, sperm ve embriyo dondurma ki
 
         <!-- BLUF / Quick Summary -->
         <section class="max-w-3xl mx-auto px-4 md:px-6 lg:px-8 mb-12">
-            <div class="border-l-4 border-primary bg-primary-50/30 p-6 rounded-r-xl">
-                <h2 class="font-bold text-gray-900 mb-3 flex items-center gap-2 text-lg">
-                    <span class="material-symbols-outlined text-primary-600">summarize</span>
-                    Hızlı Özet
-                </h2>
-                <p class="text-gray-700 leading-relaxed">
+            <KisaCevap id="fertilite-summary-title">
+                <p class="text-sm md:text-base text-gray-700 leading-relaxed">
                     <strong>Fertilite koruma (üreme potansiyelini saklama)</strong>, yumurtaların, spermin veya embriyonun ileride kullanılmak üzere dondurularak saklanmasıdır. Vitrifikasyon (ultra hızlı dondurma) sayesinde yumurtalarda çözme sonrası sağkalım oranı %80–97 düzeyine ulaştı. 2025 yılında güncellenen ASCO kılavuzu, kanser hastalarında doğurganlığı korumayı yalnızca tedavi öncesinde değil, tedavi boyunca ve sonrasında da ele alınması gereken bir standart olarak tanımladı. Sonucu en çok etkileyen, yumurtaların dondurulduğu yaştır; 35 yaşından önce dondurulan yumurtalarla gebelik olasılığı belirgin biçimde daha yüksektir.
                 </p>
-            </div>
+            </KisaCevap>
         </section>
 
-        <!-- Bu yazıda öğrenecekleriniz -->
+        <!-- İçindekiler -->
         <section class="max-w-3xl mx-auto px-4 md:px-6 lg:px-8 mb-12">
             <div class="bg-gray-50 p-6 rounded-xl">
-                <h2 class="font-bold text-gray-900 mb-4 flex items-center gap-2 text-base">
+                <h2 id="fertilite-contents-title" class="font-bold text-gray-900 mb-4 flex items-center gap-2 text-base">
                     <span class="material-symbols-outlined text-primary-600">list_alt</span>
-                    Bu yazıda öğrenecekleriniz
+                    İçindekiler
                 </h2>
-                <ol class="space-y-2 text-sm text-gray-700">
+                <ol class="space-y-2 text-sm text-gray-700 [&_a]:flex [&_a]:min-h-[44px] [&_a]:items-center">
                     <li><a href="#vitrifikasyon" class="hover:text-primary-600 transition-colors">1. Vitrifikasyon nedir, neden önemli?</a></li>
                     <li><a href="#yumurta-dondurma" class="hover:text-primary-600 transition-colors">2. Yumurta dondurma: kimler için, ne zaman?</a></li>
                     <li><a href="#sperm-dondurma" class="hover:text-primary-600 transition-colors">3. Sperm dondurma: hangi durumlarda gerekli?</a></li>
