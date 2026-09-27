@@ -7,6 +7,7 @@
 import { getPublishedArticles, sanitizeImage } from '../../utils/articles';
 import { EVIDENCE_GRADE_MAP, type RecommendationGrade } from '../../data/evidenceGrades';
 import HeroSearch from '../HeroSearch.astro';
+import TreatmentJourney from './TreatmentJourney.astro';
 
 const articles = await getPublishedArticles();
 const featured = articles.find(a => a.data.featured) || articles[0];
@@ -29,6 +30,11 @@ const formattedDate = featuredDate ? new Date(featuredDate).toLocaleDateString('
         <span class="text-primary-700 italic font-serif font-normal">Tüp Bebek ve Üreme Sağlığı Rehberiniz</span>
       </h1>
       <HeroSearch />
+    </div>
+
+    <!-- Süreç şeridi -->
+    <div class="mb-8 lg:mb-12 rounded-2xl bg-mint-50/60 border border-mint-100 px-3 py-4 lg:px-6 lg:py-6">
+      <TreatmentJourney />
     </div>
 
     <!-- Asymmetric 12-Column Magazine Grid -->

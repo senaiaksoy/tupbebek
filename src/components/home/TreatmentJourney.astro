@@ -1,0 +1,229 @@
+---
+/**
+ * Tüp bebek süreci şeridi (ana sayfa).
+ * Altı aşama, her biri ilgili rehbere bağlanır. Zamanlamalar
+ * tup-bebek-sureci-rehber makalesindeki tablodan alınmıştır.
+ * İkonlar satır içi, iki tonlu SVG çizimdir (bebek görseli yok).
+ * Her aşamanın rengi marka paletinden gelir: lacivert, nane, kayısı.
+ */
+type Tone = { c1: string; c2: string; ink: string; acc: string; soft: string };
+
+const tones: Record<string, Tone> = {
+  navy: { c1: '#f0f7ff', c2: '#b8d4e8', ink: '#0f2b4b', acc: '#2563a8', soft: '#ffffff' },
+  mint: { c1: '#e8faf6', c2: '#8bc9b0', ink: '#112f2a', acc: '#2d6d52', soft: '#ffffff' },
+  apricot: { c1: '#fef7f0', c2: '#f4c47e', ink: '#3a2410', acc: '#8b5a2b', soft: '#fffaf3' },
+  sky: { c1: '#f0f7ff', c2: '#7ca8d4', ink: '#0a1f35', acc: '#1a4d7a', soft: '#ffffff' },
+  sage: { c1: '#e8faf6', c2: '#5aaa8d', ink: '#091f1d', acc: '#1d4d3d', soft: '#f4fbf8' },
+  gold: { c1: '#fef7f0', c2: '#daa520', ink: '#1f1308', acc: '#5a3a1a', soft: '#fffaf3' },
+};
+
+const steps = [
+  { no: 1, title: 'Değerlendirme', timing: 'Tedavi öncesi', href: '/tani-sureci/', icon: 'assessment', tone: 'navy' },
+  { no: 2, title: 'Yumurtalık uyarımı', timing: 'Genellikle 8–14 gün', href: '/ilac-rehberi/', icon: 'stimulation', tone: 'mint' },
+  { no: 3, title: 'Yumurta toplama', timing: 'Tetikten 34–38 saat sonra', href: '/makaleler/tup-bebek-sureci-rehber/#opu', icon: 'retrieval', tone: 'apricot' },
+  { no: 4, title: 'Laboratuvar', timing: 'Genellikle 3–6 gün', href: '/makaleler/tup-bebek-sureci-rehber/#laboratuvar', icon: 'lab', tone: 'sky' },
+  { no: 5, title: 'Transfer', timing: 'Aynı veya sonraki siklus', href: '/transfer-sureci/', icon: 'transfer', tone: 'sage' },
+  { no: 6, title: 'Gebelik testi', timing: 'Ekibin belirlediği gün', href: '/makaleler/beta-hcg-testi/', icon: 'test', tone: 'gold' },
+];
+
+const styleFor = (index: number) => {
+  const t = tones[steps[index].tone];
+  const next = steps[index + 1] ? tones[steps[index + 1].tone] : t;
+  return `--c1:${t.c1};--c2:${t.c2};--ink:${t.ink};--acc:${t.acc};--soft:${t.soft};--next:${next.acc}`;
+};
+---
+
+<section class="journey" aria-labelledby="journey-title">
+  <div class="flex items-end justify-between gap-4 mb-5">
+    <div>
+      <span class="text-xs font-bold uppercase tracking-[0.2em] text-mint-600 block mb-1">Süreç haritası</span>
+      <h2 id="journey-title" class="text-xl lg:text-2xl font-serif font-bold text-gray-900">Tüp bebek tedavisinde hangi aşamadasınız?</h2>
+    </div>
+    <a href="/makaleler/tup-bebek-sureci-rehber/" class="hidden sm:inline-flex min-h-11 items-center gap-1.5 text-sm font-semibold text-primary-600 hover:text-primary-800 shrink-0">
+      Tüm süreç <span class="material-symbols-outlined text-base" aria-hidden="true">arrow_forward</span>
+    </a>
+  </div>
+
+  <ol class="journey-track">
+    {steps.map((step, index) => (
+      <li class="journey-step" style={styleFor(index)}>
+        <a href={step.href} class="journey-link group">
+          <span class="journey-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" width="44" height="44" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              {step.icon === 'assessment' && (
+                <>
+                  <rect x="11" y="8" width="23" height="31" rx="3.5" class="soft" />
+                  <rect x="17" y="5.5" width="11" height="5" rx="1.6" class="fill" />
+                  <path d="M16.5 17h12M16.5 22.5h9M16.5 28h6" class="line" />
+                  <circle cx="32" cy="32" r="6.5" class="soft" />
+                  <circle cx="32" cy="32" r="3.2" class="fill-soft" />
+                  <path d="M36.8 36.8l4.5 4.5" class="line-acc" stroke-width="2.6" />
+                </>
+              )}
+              {step.icon === 'stimulation' && (
+                <>
+                  <ellipse cx="24" cy="24.5" rx="15.5" ry="13.5" class="soft" />
+                  <circle cx="18.5" cy="21" r="4.6" class="fill" />
+                  <circle cx="28.5" cy="19" r="3.4" class="fill-soft" />
+                  <circle cx="28" cy="29.5" r="5" class="fill" />
+                  <circle cx="18" cy="30.5" r="2.6" class="fill-soft" />
+                  <circle cx="17.3" cy="19.8" r="1.1" class="shine" />
+                  <circle cx="26.6" cy="28" r="1.2" class="shine" />
+                </>
+              )}
+              {step.icon === 'retrieval' && (
+                <>
+                  <circle cx="30" cy="17.5" r="9.5" class="soft" />
+                  <circle cx="30" cy="17.5" r="4.4" class="fill" />
+                  <circle cx="28.6" cy="16.1" r="1.2" class="shine" />
+                  <path d="M8 41l14.5-14.5" class="line-acc" stroke-width="2.4" />
+                  <path d="M6 43l2.8-2.8" class="line" stroke-width="3" />
+                </>
+              )}
+              {step.icon === 'lab' && (
+                <>
+                  <ellipse cx="24" cy="31" rx="16" ry="6.5" class="soft" />
+                  <path d="M8 31v3.2c0 3.6 7.2 6.5 16 6.5s16-2.9 16-6.5V31" class="line" />
+                  <circle cx="20.5" cy="30" r="3" class="fill" />
+                  <circle cx="27" cy="30" r="3" class="fill-soft" />
+                  <circle cx="23.8" cy="25.4" r="3" class="fill" />
+                  <path d="M24 7v9M19.5 11.5h9" class="line-acc" stroke-width="2.2" />
+                </>
+              )}
+              {step.icon === 'transfer' && (
+                <>
+                  <path d="M7 13c4-2 8-1 11 3M41 13c-4-2-8-1-11 3" class="line" />
+                  <circle cx="7" cy="13" r="1.8" class="fill-soft" />
+                  <circle cx="41" cy="13" r="1.8" class="fill-soft" />
+                  <path d="M18 16h12c0 9-2 14-4 17v5h-4v-5c-2-3-4-8-4-17z" class="soft" />
+                  <circle cx="24" cy="22" r="2.8" class="fill" />
+                  <path d="M24 46V27" class="line-acc" stroke-width="2" />
+                </>
+              )}
+              {step.icon === 'test' && (
+                <>
+                  <path d="M17 6h13" class="line" stroke-width="2.4" />
+                  <path d="M19.5 6v26a4 4 0 008 0V6" class="soft" />
+                  <path d="M19.5 20h8v12a4 4 0 01-8 0z" class="fill-soft" />
+                  <circle cx="36" cy="33" r="7" class="fill" />
+                  <path d="M32.8 33.2l2.3 2.3 4.2-4.8" class="check" stroke-width="2.2" />
+                </>
+              )}
+            </svg>
+            <span class="journey-no">{step.no}</span>
+          </span>
+          <span class="journey-title">{step.title}</span>
+          <span class="journey-timing">{step.timing}</span>
+        </a>
+      </li>
+    ))}
+  </ol>
+</section>
+
+<style>
+  .journey-track {
+    list-style: none;
+    margin: 0;
+    padding: 0.25rem 0 0.5rem;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 40%;
+    gap: 0.75rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+  .journey-step {
+    scroll-snap-align: start;
+    position: relative;
+  }
+  /* Aşamaları birleştiren, bir sonraki aşamanın rengine geçen ince hat */
+  .journey-step:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 3rem;
+    left: calc(50% + 2.75rem);
+    right: calc(-50% + 2.75rem - 0.75rem);
+    height: 2px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, var(--acc), var(--next));
+    opacity: 0.35;
+    pointer-events: none;
+  }
+  .journey-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.3rem;
+    min-height: 100%;
+    padding: 0.75rem 0.5rem 1rem;
+    border-radius: 1.25rem;
+    color: #0f2b4b;
+    transition: background-color 200ms ease;
+  }
+  .journey-link:hover { background: rgba(255, 255, 255, 0.7); }
+  .journey-link:focus-visible { outline: 2px solid #2563a8; outline-offset: 2px; }
+  .journey-icon {
+    position: relative;
+    width: 4.75rem;
+    height: 4.75rem;
+    border-radius: 999px;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(150deg, var(--c1) 0%, var(--c2) 100%);
+    border: 3px solid #ffffff;
+    box-shadow:
+      0 10px 22px -12px rgba(15, 43, 75, 0.45),
+      inset 0 1px 0 rgba(255, 255, 255, 0.8);
+    color: var(--ink);
+    margin-bottom: 0.4rem;
+    transition: transform 250ms ease, box-shadow 250ms ease;
+  }
+  .journey-link:hover .journey-icon {
+    transform: translateY(-2px);
+    box-shadow:
+      0 14px 26px -12px rgba(15, 43, 75, 0.55),
+      inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  }
+  .journey-icon :global(.soft) { fill: var(--soft); stroke: var(--ink); }
+  .journey-icon :global(.fill) { fill: var(--acc); stroke: none; }
+  .journey-icon :global(.fill-soft) { fill: var(--acc); fill-opacity: 0.35; stroke: none; }
+  .journey-icon :global(.line) { stroke: var(--ink); }
+  .journey-icon :global(.line-acc) { stroke: var(--acc); }
+  .journey-icon :global(.shine) { fill: #ffffff; fill-opacity: 0.85; stroke: none; }
+  .journey-icon :global(.check) { stroke: #ffffff; }
+  .journey-no {
+    position: absolute;
+    top: -0.2rem;
+    right: -0.2rem;
+    min-width: 1.5rem;
+    height: 1.5rem;
+    padding: 0 0.3rem;
+    border-radius: 999px;
+    display: grid;
+    place-items: center;
+    background: var(--acc);
+    color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    border: 2px solid #ffffff;
+    font-variant-numeric: tabular-nums;
+  }
+  .journey-title {
+    font-weight: 700;
+    font-size: 0.95rem;
+    line-height: 1.25;
+  }
+  .journey-timing {
+    font-size: 0.8rem;
+    color: #4b5563;
+    line-height: 1.3;
+  }
+  @media (min-width: 1024px) {
+    .journey-track { overflow: visible; grid-auto-columns: 1fr; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .journey-link, .journey-icon { transition: none; }
+    .journey-link:hover .journey-icon { transform: none; }
+  }
+</style>
