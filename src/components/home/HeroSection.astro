@@ -40,7 +40,7 @@ const formattedDate = featuredDate ? new Date(featuredDate).toLocaleDateString('
           <a href={`/makaleler/${featured.slug}`} class="block flex flex-col gap-5">
 
             <!-- Image with tactile subtle shadow and clean rounded edges -->
-            <div class="relative rounded-xl overflow-hidden aspect-[16/9] bg-gray-100 border border-gray-200/70 shadow-sm">
+            <div class="photo-tone relative rounded-xl overflow-hidden aspect-[16/9] bg-gray-100 border border-gray-200/70 shadow-sm">
               <img
                 src={sanitizeImage(featured.data.image)}
                 alt={featured.data.imageAlt || featured.data.title}
@@ -50,7 +50,7 @@ const formattedDate = featuredDate ? new Date(featuredDate).toLocaleDateString('
                 loading="eager"
                 fetchpriority="high"
               />
-              <span class="absolute top-4 left-4 px-3 py-1 rounded-sm text-xs font-bold uppercase tracking-wider bg-white/95 text-primary-800 shadow-xs border border-gray-200/80">
+              <span class="absolute z-10 top-4 left-4 px-3 py-1 rounded-sm text-xs font-bold uppercase tracking-wider bg-white/95 text-primary-800 shadow-xs border border-gray-200/80">
                 {featured.data.category}
               </span>
             </div>

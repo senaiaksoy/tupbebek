@@ -41,7 +41,7 @@ const formatDate = (date?: Date) =>
                 return (
                 <article class="group flex flex-row sm:flex-col bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-md hover:border-primary-100 transition-all duration-300">
                     <!-- Image -->
-                    <a href={`/makaleler/${article.slug}`} class="block w-20 shrink-0 sm:w-auto sm:aspect-[16/10] overflow-hidden" aria-label={article.data.title}>
+                    <a href={`/makaleler/${article.slug}`} class="photo-tone block w-20 shrink-0 sm:w-auto sm:aspect-[16/10] overflow-hidden" aria-label={article.data.title}>
                         <img
                             src={imageSrc}
                             alt={article.data.imageAlt || article.data.title}

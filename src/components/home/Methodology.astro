@@ -1,37 +1,118 @@
 ---
 import { getPublishedArticles } from "../../utils/articles";
+import { EVIDENCE_GRADE_MAP, EVIDENCE_GRADE_ORDER } from "../../data/evidenceGrades";
 import ExpertBoard from './ExpertBoard.astro';
-const publishedArticleCount = (await getPublishedArticles()).length;
+
+const publishedArticles = await getPublishedArticles();
+const publishedArticleCount = publishedArticles.length;
+
+// Kanıt bandı: sayılar her build'de yayındaki makalelerden hesaplanır.
+const pubmedIds = new Set<string>();
+let referenceCount = 0;
+for (const article of publishedArticles) {
+  for (const ref of article.data.references ?? []) {
+    referenceCount += 1;
+    if (ref.pmid) pubmedIds.add(ref.pmid);
+  }
+}
+
+const gradeCounts = new Map(EVIDENCE_GRADE_ORDER.map((grade) => [grade, 0]));
+for (const article of publishedArticles) {
+  const grade = article.data.recommendationGrade;
+  if (grade) gradeCounts.set(grade, (gradeCounts.get(grade) ?? 0) + 1);
+}
+const gradedTotal = [...gradeCounts.values()].reduce((sum, n) => sum + n, 0);
+const maxGradeCount = Math.max(1, ...gradeCounts.values());
+
+const gradeBarClass: Record<string, string> = {
+  A: 'bg-emerald-400',
+  B: 'bg-sky-400',
+  C: 'bg-amber-400',
+  'D/E': 'bg-rose-400',
+};
+
+const latestUpdate = publishedArticles
+  .map((article) => article.data.lastModified ?? article.data.publishDate)
+  .filter((date): date is Date => date instanceof Date)
+  .sort((a, b) => b.getTime() - a.getTime())[0];
+const latestUpdateLabel = latestUpdate
+  ? latestUpdate.toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' })
+  : null;
+
+const formatNumber = (n: number) => n.toLocaleString('tr-TR');
 ---
 <section id="home-editorial" class="py-6 lg:py-20 paper-canvas border-t border-gray-200/60">
   <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
     <div class="bg-white/80 rounded-2xl p-5 lg:p-10 border border-gray-200/80 shadow-2xs">
       <ExpertBoard />
-      <div class="mt-6 lg:mt-10 mb-6 lg:mb-10 max-w-3xl">
-        <span class="text-xs font-bold uppercase tracking-[0.25em] text-primary-700 block mb-2">E-E-A-T ŞEFFAFLIK STANDARTLARI</span>
-        <h2 class="text-3xl lg:text-4xl font-serif font-bold text-gray-900 mb-3">Editöryal Metodoloji ve Şeffaflık</h2>
-        <p class="text-base text-gray-600 leading-relaxed font-sans">
-          İçeriklerin bilimsel kaynakları, yazarları, inceleme bilgileri ve güncelleme tarihleri ilgili sayfalarda belirtilir.
+    </div>
+  </div>
+</section>
+
+<section class="bg-primary-900 text-white" aria-labelledby="evidence-band-title">
+  <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-10 lg:py-16 grid gap-10 lg:grid-cols-12 lg:gap-14">
+    <div class="lg:col-span-5 flex flex-col gap-6">
+      <div>
+        <span class="text-xs font-bold uppercase tracking-[0.25em] text-mint-200 block mb-3">E-E-A-T şeffaflık standartları</span>
+        <h2 id="evidence-band-title" class="text-3xl lg:text-4xl font-serif font-bold text-white mb-3">Editöryal Metodoloji ve Şeffaflık</h2>
+        <p class="text-base text-primary-100 leading-relaxed">
+          İçeriklerin bilimsel kaynakları, yazarları, inceleme bilgileri ve güncelleme tarihleri ilgili sayfalarda belirtilir. Makalelerin ana önerisi, dayandığı kanıtın gücüne göre derecelendirilir.
         </p>
       </div>
 
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-gray-200/60">
-        <div class="px-2">
-          <span class="text-2xl lg:text-3xl font-serif font-bold text-primary-700 block mb-1">Kaynaklar</span>
-          <p class="text-xs font-bold uppercase tracking-wider text-gray-600 font-sans">Bilimsel Dayanak</p>
+      <dl class="grid grid-cols-2 gap-x-6 gap-y-5 border-t border-white/15 pt-6">
+        <div>
+          <dt class="text-xs font-semibold uppercase tracking-wider text-primary-200">Yayındaki makale</dt>
+          <dd class="text-4xl lg:text-5xl font-serif font-bold tabular-nums mt-1">{formatNumber(publishedArticleCount)}</dd>
         </div>
-        <div class="px-2">
-          <span class="text-3xl lg:text-5xl font-serif font-bold text-primary-700 block mb-1">{publishedArticleCount}</span>
-          <p class="text-xs font-bold uppercase tracking-wider text-gray-600 font-sans">Yayındaki Makale</p>
+        <div>
+          <dt class="text-xs font-semibold uppercase tracking-wider text-primary-200">PubMed kaynağı</dt>
+          <dd class="text-4xl lg:text-5xl font-serif font-bold tabular-nums mt-1">{formatNumber(pubmedIds.size)}</dd>
         </div>
-        <div class="px-2">
-          <span class="text-3xl lg:text-5xl font-serif font-bold text-primary-700 block mb-1">ESHRE</span>
-          <p class="text-xs font-bold uppercase tracking-wider text-gray-600 font-sans">Uluslararası Standart</p>
+        <div>
+          <dt class="text-xs font-semibold uppercase tracking-wider text-primary-200">Toplam kaynak kaydı</dt>
+          <dd class="text-2xl lg:text-3xl font-serif font-bold tabular-nums mt-1">{formatNumber(referenceCount)}</dd>
         </div>
-        <div class="px-2">
-          <span class="text-3xl lg:text-5xl font-serif font-bold text-primary-700 block mb-1">%100</span>
-          <p class="text-xs font-bold uppercase tracking-wider text-gray-600 font-sans">Bağımsız & Reklamsız</p>
-        </div>
+        {latestUpdateLabel && (
+          <div>
+            <dt class="text-xs font-semibold uppercase tracking-wider text-primary-200">Son güncelleme</dt>
+            <dd class="text-2xl lg:text-3xl font-serif font-bold mt-1">{latestUpdateLabel}</dd>
+          </div>
+        )}
+      </dl>
+
+      <p class="text-sm text-primary-200">Bağımsız ve reklamsız yayın · ESHRE, ASRM ve WHO rehberleri esas alınır.</p>
+    </div>
+
+    <div class="lg:col-span-7">
+      <div class="rounded-2xl bg-white/[0.06] border border-white/10 p-5 lg:p-8">
+        <h3 class="text-lg font-bold text-white">Kanıt derecesi nasıl okunur?</h3>
+        <p class="text-sm text-primary-100 mt-1 mb-6">Makalelerin başındaki harf, ana önerinin dayandığı en güçlü ve tutarlı kanıtı gösterir. Çubuklar, kanıt derecesi verilmiş {formatNumber(gradedTotal)} makalenin dağılımıdır.</p>
+        <ul class="flex flex-col gap-5">
+          {EVIDENCE_GRADE_ORDER.map((grade) => {
+            const config = EVIDENCE_GRADE_MAP[grade];
+            const count = gradeCounts.get(grade) ?? 0;
+            const width = Math.round((count / maxGradeCount) * 100);
+            return (
+              <li class="grid grid-cols-[3.25rem_1fr] gap-4 items-start">
+                <span class:list={['inline-flex h-11 w-[3.25rem] items-center justify-center rounded-lg text-base font-bold', config.badgeClass]}>{grade}</span>
+                <div class="min-w-0">
+                  <div class="flex items-baseline justify-between gap-3">
+                    <span class="font-semibold text-white">{config.label}</span>
+                    <span class="text-sm tabular-nums text-primary-200">{count} makale</span>
+                  </div>
+                  <p class="text-sm text-primary-100 leading-snug mt-0.5">{config.strength}</p>
+                  <div class="mt-2 h-1.5 rounded-full bg-white/10" aria-hidden="true">
+                    <div class:list={['h-full rounded-full', gradeBarClass[grade]]} style={`width: ${width}%`}></div>
+                  </div>
+                </div>
+              </li>
+            );
+          })}
+        </ul>
+        <a href="/editoryal-politika" class="mt-6 inline-flex min-h-11 items-center gap-1.5 text-sm font-semibold text-mint-200 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+          Kanıt dereceleri ve editöryal politika <span class="material-symbols-outlined text-base" aria-hidden="true">arrow_forward</span>
+        </a>
       </div>
     </div>
   </div>
