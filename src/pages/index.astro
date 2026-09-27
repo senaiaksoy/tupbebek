@@ -5,7 +5,6 @@ import Hero from '../components/home/Hero.astro';
 import QuickGuideCards from '../components/home/QuickGuideCards.astro';
 import ArticleGrid from '../components/home/ArticleGrid.astro';
 import SymptomGuide from '../components/home/SymptomGuide.astro';
-import ExpertBoard from '../components/home/ExpertBoard.astro';
 import Methodology from '../components/home/Methodology.astro';
 import PreferredSourceCTA from '../components/PreferredSourceCTA.astro';
 import Footer from '../components/home/Footer.astro';
@@ -28,9 +27,8 @@ const lcpImage = featured ? sanitizeImage(featured.data.image) : undefined;
     <QuickGuideCards />
     <ArticleGrid />
     <SymptomGuide />
-    <ExpertBoard />
     <Methodology />
-    <section class="max-w-5xl mx-auto px-4 md:px-6 lg:px-8 py-14">
+    <section class="max-w-5xl mx-auto px-4 md:px-6 lg:px-8 py-6 lg:py-14">
       <PreferredSourceCTA placement="home_footer" pagePath={Astro.url.pathname} />
     </section>
   </main>

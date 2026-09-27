@@ -1,11 +1,13 @@
 ---
 import { getPublishedArticles } from "../../utils/articles";
+import ExpertBoard from './ExpertBoard.astro';
 const publishedArticleCount = (await getPublishedArticles()).length;
 ---
-<section class="py-16 lg:py-20 paper-canvas border-t border-gray-200/60">
+<section id="home-editorial" class="py-6 lg:py-20 paper-canvas border-t border-gray-200/60">
   <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-    <div class="bg-white/80 rounded-2xl p-8 lg:p-14 border border-gray-200/80 shadow-2xs">
-      <div class="mb-10 max-w-3xl">
+    <div class="bg-white/80 rounded-2xl p-5 lg:p-10 border border-gray-200/80 shadow-2xs">
+      <ExpertBoard />
+      <div class="mt-6 lg:mt-10 mb-6 lg:mb-10 max-w-3xl">
         <span class="text-xs font-bold uppercase tracking-[0.25em] text-primary-700 block mb-2">E-E-A-T ŞEFFAFLIK STANDARTLARI</span>
         <h2 class="text-3xl lg:text-4xl font-serif font-bold text-gray-900 mb-3">Editöryal Metodoloji ve Şeffaflık</h2>
         <p class="text-base text-gray-600 leading-relaxed font-sans">

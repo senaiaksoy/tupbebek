@@ -16,11 +16,11 @@ const featuredDate = featured?.data.lastModified || featured?.data.publishDate;
 const formattedDate = featuredDate ? new Date(featuredDate).toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' }) : '';
 ---
 
-<section class="pt-8 pb-12 lg:pt-10 lg:pb-16 flex flex-col paper-canvas">
+<section class="pt-8 pb-8 lg:pt-10 lg:pb-16 flex flex-col paper-canvas">
   <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 w-full flex flex-col">
 
     <!-- Hero Header & Search -->
-    <div class="mb-8 lg:mb-12 max-w-4xl">
+    <div class="mb-6 lg:mb-12 max-w-4xl">
       <span class="text-xs font-bold uppercase tracking-[0.25em] text-primary-700 bg-primary-50/80 border border-primary-100/70 px-3 py-1 rounded-sm mb-4 inline-block">
         BAĞIMSIZ TIBBİ BİLGİ PORTALI
       </span>
@@ -32,7 +32,7 @@ const formattedDate = featuredDate ? new Date(featuredDate).toLocaleDateString('
     </div>
 
     <!-- Asymmetric 12-Column Magazine Grid -->
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start border-t border-gray-200/80 pt-8">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-start border-t border-gray-200/80 pt-6 lg:pt-8">
 
       <!-- LEFT COLUMN: Featured Cover Story (8 Cols / ~65%) -->
       {featured &&
@@ -89,7 +89,7 @@ const formattedDate = featuredDate ? new Date(featuredDate).toLocaleDateString('
       }
 
       <!-- RIGHT COLUMN: Editorial Side Spotlights (4 Cols / ~35%) -->
-      <aside class="lg:col-span-4 flex flex-col gap-6 bg-white/70 p-6 rounded-xl border border-gray-200/80 shadow-2xs">
+      <aside class="lg:col-span-4 flex flex-col gap-4 lg:gap-6 bg-white/70 p-4 lg:p-6 rounded-xl border border-gray-200/80 shadow-2xs">
         <div class="flex items-center justify-between border-b border-gray-200/80 pb-3">
           <h3 class="text-xs font-bold uppercase tracking-[0.2em] text-primary-800 flex items-center gap-1.5">
             <span class="material-symbols-outlined text-primary-600 text-lg">auto_stories</span>

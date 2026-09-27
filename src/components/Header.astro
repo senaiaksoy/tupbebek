@@ -21,21 +21,21 @@ const instagramUrl = 'https://www.instagram.com/tupbebekdergi/';
         <div id="header-inner" class="flex justify-between items-center h-20 transition-all duration-500">
             <!-- Logo Section -->
             <div class="flex-shrink-0">
-                <a href="/" class="text-2xl font-bold text-gray-900 tracking-tight flex items-center gap-2 group/logo transition-all" style="font-family: var(--font-headline);">
+                <a href="/" class="text-2xl lg:text-xl xl:text-2xl font-bold text-gray-900 tracking-tight flex items-center gap-2 group/logo transition-all" style="font-family: var(--font-headline);">
                     <img id="logo-icon" src="/images/logo-tupbebek-sm.webp" alt="tupbebek.com logosu" class="h-8 w-auto transition-all" width="140" height="62" decoding="async" />
                     <span id="logo-text" class="transition-all origin-left">tupbebek.com</span>
                 </a>
             </div>
 
             <!-- Desktop Navigation (Mega-Menu) -->
-            <nav class="hidden lg:flex items-center space-x-1 h-full" aria-label="Ana navigasyon">
+            <nav class="hidden xl:flex items-center h-full" aria-label="Ana navigasyon">
                 {navigationMenus.map((menu) => (
                     <MegaMenuItem menu={menu} />
                 ))}
             </nav>
 
             <!-- Right Actions -->
-            <div class="flex items-center gap-3 ml-auto">
+            <div class="flex items-center gap-1 xl:gap-2 ml-auto">
                 <a
                     href={instagramUrl}
                     target="_blank"
@@ -53,7 +53,7 @@ const instagramUrl = 'https://www.instagram.com/tupbebekdergi/';
                 </button>
 
                 <!-- Mobile Menu Toggle -->
-                <button id="mobile-menu-toggle" type="button" class="lg:hidden min-w-[44px] min-h-[44px] flex items-center justify-center rounded-lg hover:bg-gray-100 transition-colors group" aria-label="Menüyü aç" aria-expanded="false" aria-controls="mobile-menu">
+                <button id="mobile-menu-toggle" type="button" class="xl:hidden min-w-[44px] min-h-[44px] flex items-center justify-center rounded-lg hover:bg-gray-100 transition-colors group" aria-label="Menüyü aç" aria-expanded="false" aria-controls="mobile-menu">
                     <span class="material-symbols-outlined text-gray-600 group-hover:text-primary-600">menu</span>
                 </button>
             </div>
@@ -62,7 +62,7 @@ const instagramUrl = 'https://www.instagram.com/tupbebekdergi/';
 </header>
 
 <!-- Mobile Sidebar Menu -->
-<div id="mobile-menu-backdrop" class="hidden lg:hidden fixed inset-0 top-20 bg-black/30 z-[105]" aria-hidden="true"></div>
+<div id="mobile-menu-backdrop" class="hidden xl:hidden fixed inset-0 top-20 bg-black/30 z-[105]" aria-hidden="true"></div>
 
 <div id="mobile-menu" class="fixed right-0 top-20 h-[calc(100vh-80px)] w-80 bg-white shadow-2xl border-l border-gray-100 transform translate-x-full transition-transform duration-300 z-[110] overflow-y-auto" role="dialog" aria-label="Mobil menü" aria-hidden="true" data-nosnippet>
     <div class="p-6 space-y-2">

@@ -91,4 +91,48 @@ Performans: 390×844 DPR2, soğuk önbellek, 150 ms, 1,6 Mbps, CPU×4, çerez re
 - [Ana sayfa](tasarim-tur-2-b/ana-sayfa-once-sonra.webp), [beta-hCG](tasarim-tur-2-b/beta-hcg-once-sonra.webp), [fertilite-koruma](tasarim-tur-2-b/fertilite-koruma-once-sonra.webp), [ilaç rehberi](tasarim-tur-2-b/ilac-rehberi-once-sonra.webp), [varikosel](tasarim-tur-2-b/varikosel-sonra.webp), [tanı süreci](tasarim-tur-2-b/tani-sonra.webp).
 - Kanıt: `output/playwright/tasarim-tur-2-b/{before-b,after-b}/{qa,perf}.json`, `freeze-before-b.json`, `integrity.json`; `tmp/_design-round2-b-{build,preflight}.log`.
 
-**Durum:** PR-B incelemeye hazır; PR-B’ye özel Dr. Aksoy “onay”ı gelmeden birleştirilmez. PR-C kart seçenekleri örnek ekran görüntüleriyle ayrıca sunulacak.
+**Durum:** Dr. Aksoy’un #209’a özel “onay”ıyla [PR-B #209](https://github.com/senaiaksoy/tupbebek/pull/209) 27 Eylül 2026 07:28:11 UTC’de birleşti (`56a996aae500bda5ae2d8491f073dc48e36d985e`). Cloudflare production `tupbebek` / `639a608c-f952-47ec-968c-edf97f993fdb`; güncel check-run `108575122326` 07:31:29 UTC’de completed/success. Benzersiz `?c=` + no-cache curl ile 6/6 canlı sayfada SEO kimliği, footer çerez bağlantısı ve makalelerde iki künye satırı, kanıt rozeti, mobil hero sınıfları, manuel İçindekiler ve JSON-LD koruması doğrulandı. Kanıt: `output/playwright/tasarim-tur-2-b/live/{check-runs,verification}.json`.
+
+
+## PR-C — Mevcut fotoğraflar ve kompakt ana sayfa
+
+Dr. Aksoy, 390/1366 px üç kart örneğini gördükten sonra **“3 tercih ediyorum”** dedi. Mevcut altı QuickGuideCards fotoğrafı; yolları, alt metinleri ve boyut verileri korundu. İki ana kartta da “Yapay zekâ ile üretilmiş temsili görsel.” notu gösterilir. Bu içerik tercihi PR-C birleştirme onayı değildir.
+
+Dal: `codex/tasarim-tur-2-c`, temel: PR-B merge `56a996aa`.
+
+### Uygulama
+
+- Dört güven etiketi tek yatay şeritte; hepsi korunur. Şerit klavyeyle kaydırılabilir; mobil yüksekliği 50 px.
+- Yayın Kurulu ve Editöryal Metodoloji, tüm metinleri/istatistikleri/bağlantıları korunarak tek bölümde toplandı. Tıbbi Uyarı ayrı ve görünür kaldı.
+- Son güncellenen altı rehber mobilde küçük resim + metin yerleşiminde; seçim/sıra ve mevcut başlık/açıklama kısaltma kuralları aynı. Masaüstü kart yerleşimi korunur. Temel okumalar ve bölüm boşlukları mobilde azaltıldı.
+- Alfabetik arşiv mobilde kapalı details; harf düğmesi açıp ilgili bölüme gider. Türkçe harf içeren doğrudan URL çapaları ve hash değişiklikleri çalışır. Masaüstünde açık; JavaScript kapalıysa arşiv sunucudan açık gelir ve erişilebilir kalır. Tüm 63 bağlantı HTML’de korunur.
+- Ana sayfa SSS cevapları mobilde kapalı details, masaüstünde açık. Üç soru ve cevap metni aynı; native klavye aç/kapa kontrolü çalışır.
+- Menü etiketleri aynı. Küçük SVG ok, 12 px yazı, nowrap ve daha az boşlukla 1280/1366/1440 px’te altı başlık tek satırdır. 1024–1279 px tabletlerde menü düğmesi kullanılır; 44 px eylem alanları ve 48 px mega menü düğmeleri korunur.
+
+### Doğrulama
+
+Final `npm run build` çıkışı 0; ardından `npm run verify:preflight` 26/26, çıkış 0. 101/101 sayfada **URL/title/meta description/canonical/H1 değişmedi**. 101 sayfadaki mevcut paragraf/başlık metinleri, bağlantılar, img src/alt/boyutları ve JSON-LD aynı; tek ek paragraf kadın ana kartındaki temsili görsel notu. 63 makalenin kaynak dosyaları, gövdesi, frontmatter/summary ve şeması değişmedi.
+
+390/1366 px altı hedefte yatay taşma yok. 1280/1366/1440 px menüde tek satır, ≥44 px alan, klavye ArrowDown/Escape ve taşma/çakışma kontrolleri geçti; 1024 px tablet menüsü aç/kapa çalışıyor. Arşiv/SSS Space ile açılır; harf tıklama, doğrudan `#harf-İ`, güven şeridinde ArrowRight + ≥2 px odak ve footer çerez tercihleri çalışır. Alfabe/arşiv bağlantıları ≥44 px.
+
+Mobil ana sayfa **19795 → 11906 px** (−%39,9): ≤12000 px hedefi sağlandı. Bu normal ilk yükleme, arşiv ve SSS cevapları kapalıyken ölçülür; okur açtığında sayfa uzar. Masaüstü ana sayfa 10002 → 10182 px; arşiv/SSS açık ve dokunma alanları daha geniştir. Makale/hub yükseklikleri ve ilk gövde mesafeleri aynı kaldı.
+
+390×844 DPR2, soğuk cache, 150 ms, 1,6 Mbps, CPU×4, yüklemeden önce çerez reddi; üç ölçüm medyanı. Yerel laboratuvar verisi, saha verisi değil. Ana sayfa LCP +32 ms (%1,4); küçük değişimden performans artışı iddiası çıkarılmıyor. CLS aynı.
+
+| Sayfa | Yükseklik px önce → sonra | İlk paragraf px önce → sonra | LCP ms önce → sonra | CLS önce → sonra |
+|---|---:|---:|---:|---:|
+| / | 19795 → 11906 | 930 → 788 | 2332 → 2364 | 0.0036 → 0.0036 |
+| /makaleler/beta-hcg-testi/ | 30389 → 30389 | 1133 → 1133 | 2028 → 2056 | 0.0058 → 0.0046 |
+| /fertilite-koruma/ | 24285 → 24285 | 696 → 696 | 1888 → 1888 | 0.0036 → 0.0033 |
+| /ilac-rehberi/ | 16050 → 16050 | 606 → 606 | 1860 → 1876 | 0.0036 → 0.0046 |
+
+### Ekran görüntüleri ve dosyalar
+
+`tmp/_design.mjs` ile 24 önce + 24 sonra görüntü alındı. Teslim edilen karşılaştırmalar aynı statik eski/yeni build’lerden, tüm görseller yüklenerek alındı ve gözle incelendi. Bölüm görüntülerinde yalnız incelemeyi kolaylaştırmak için sabit üst/alt navigasyon gizlendi; ana hedeflerin ilk ekran görüntüleri gerçek navigasyonu gösterir.
+
+- [Ana sayfa](tasarim-tur-2-c/ana-sayfa-once-sonra.webp), [beta-hCG](tasarim-tur-2-c/beta-hcg-once-sonra.webp), [fertilite-koruma](tasarim-tur-2-c/fertilite-koruma-once-sonra.webp), [ilaç rehberi](tasarim-tur-2-c/ilac-rehberi-once-sonra.webp).
+- [Arşiv](tasarim-tur-2-c/archive-once-sonra.webp), [SSS](tasarim-tur-2-c/faq-once-sonra.webp), [yayın kurulu/metodoloji](tasarim-tur-2-c/editorial-once-sonra.webp), [güncel rehberler](tasarim-tur-2-c/recent-once-sonra.webp), [menü üç genişlik](tasarim-tur-2-c/menu-3-genislik.webp).
+- `src/pages/index.astro`; `src/components/Header.astro`, `header/MegaMenuItem.astro`, `RecentArticlesCarousel.astro`, `FAQHighlights.astro`; `home/Hero.astro`, `HeroSection.astro`, `QuickGuideCards.astro`, `EssentialReading.astro`, `AlphabetIndex.astro`, `ExpertBoard.astro`, `Methodology.astro`, `SymptomGuide.astro`; bu rapor ve 11 WebP.
+- Kanıt `output/playwright/tasarim-tur-2-c/{before-c,after-c}/{qa,perf}.json`, `freeze-before-c.json`, `integrity.json`, `interactions.json`; build/preflight logları `tmp/_design-round2-c-*.log`.
+
+**Durum:** PR-C incelemeye hazır. Devir §1 uyarınca bu PR’a özel Dr. Aksoy **“onay”ı** gelmeden birleştirilmez. Onaydan sonra Cloudflare güncel check-run ve cache-bypass canlı curl ile doğrulanacak.
