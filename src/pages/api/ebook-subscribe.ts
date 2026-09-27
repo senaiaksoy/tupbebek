@@ -14,6 +14,8 @@ export const POST: APIRoute = async ({ request, locals }) => {
   try {
     const data = await request.json();
     const { fullname, email, phone, status } = data;
+    // İsteğe bağlı bilgilendirme izni; işaretlenmediyse false kabul edilir.
+    const bilgilendirmeIzni = data.bilgilendirmeIzni === true;
 
     // Validasyon
     if (!fullname || !email) {
@@ -38,6 +40,7 @@ export const POST: APIRoute = async ({ request, locals }) => {
       email,
       phone,
       status,
+      bilgilendirmeIzni,
       timestamp: new Date().toISOString()
     });
 
