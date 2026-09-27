@@ -18,6 +18,19 @@ for (const entry of terms) {
 }
 const sortedLetters = Object.keys(grouped).sort((a, b) => a.localeCompare(b, 'tr'));
 
+// Her terim için Türkçe karakterleri sadeleştirilmiş, benzersiz çapa (#term-...).
+const TR_MAP: Record<string, string> = { ç: 'c', ğ: 'g', ı: 'i', i: 'i', ö: 'o', ş: 's', ü: 'u', â: 'a', î: 'i', û: 'u' };
+function termSlug(term: string): string {
+    return term
+        .toLocaleLowerCase('tr-TR')
+        .replace(/[çğıöşüâîû]/g, (ch) => TR_MAP[ch] ?? ch)
+        .normalize('NFKD')
+        .replace(/[̀-ͯ]/g, '')
+        .replace(/[^a-z0-9]+/g, '-')
+        .replace(/^-+|-+$/g, '');
+}
+const withSlash = (href: string) => (/[?#]/.test(href) || href.endsWith('/') ? href : `${href}/`);
+
 // Icon mapping by category keyword
 function getIcon(term: string): string {
     const t = term.toLowerCase();
@@ -41,10 +54,11 @@ const glossarySchema = {
     "inLanguage": "tr-TR",
     "hasDefinedTerm": terms.map(entry => ({
         "@type": "DefinedTerm",
-        "@id": entry.href ? `https://tupbebek.com${entry.href}` : `https://tupbebek.com/tibbi-sozluk/#term-${entry.term.toLowerCase()}`,
+        "@id": `https://tupbebek.com/tibbi-sozluk/#term-${termSlug(entry.term)}`,
         "name": entry.term,
         "description": entry.definition,
-        "url": entry.href ? `https://tupbebek.com${entry.href}` : undefined
+        "inDefinedTermSet": "https://tupbebek.com/tibbi-sozluk/#definedtermset",
+        "url": entry.href ? `https://tupbebek.com${withSlash(entry.href)}` : `https://tupbebek.com/tibbi-sozluk/#term-${termSlug(entry.term)}`
     }))
 };
 ---
@@ -188,7 +202,7 @@ const glossarySchema = {
 
                     <div class="space-y-4">
                         {grouped[letter].map(entry => (
-                            <div class="glossary-term group bg-white border border-gray-200 rounded-xl p-5 hover:border-primary-200 hover:shadow-sm transition-all" data-term={entry.term.toLowerCase()}>
+                            <div id={`term-${termSlug(entry.term)}`} class="glossary-term group bg-white border border-gray-200 rounded-xl p-5 scroll-mt-24 hover:border-primary-200 hover:shadow-sm transition-all" data-term={entry.term.toLowerCase()}>
                                 <div class="flex items-start gap-4">
                                     <div class="w-10 h-10 rounded-xl bg-mint-50 flex items-center justify-center shrink-0 group-hover:bg-mint-100 transition-colors">
                                         <span class="material-symbols-outlined text-mint-600 text-xl">{getIcon(entry.term)}</span>

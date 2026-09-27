@@ -1,6 +1,9 @@
 #!/usr/bin/env node
 import fs from 'node:fs';
 import path from 'node:path';
+
+// esbuild Astro/Vite ile birlikte kurulu gelir; yoksa kontrol atlanır.
+const esbuildTransform = await import('esbuild').then((m) => m.transformSync).catch(() => null);
 import {
   gone410ExactPaths,
   normalizeAliasTarget,
@@ -203,6 +206,7 @@ async function fetchStaticAsset(request, env) {
 
 // Takma ad araçları kendi kapsamında tutulur; paketlenmiş worker'daki
 // aynı adlı değişkenlerle çakışmaz.
+const __tbPagePaths = new Set(${JSON.stringify(workerPagePaths)});
 const __tbAliasTools = (() => {
   const routeAliases = ${JSON.stringify(routeAliases)};
   const wildcardFallbacks = ${JSON.stringify(wildcardFallbacks)};
@@ -228,6 +232,24 @@ function canonicalRedirectFor(requestUrl) {
       status: 301,
       headers: redirectHeaders(url.toString()),
     });
+  }
+
+  // Kopya adresler tek kanonik adrese toplanır: // → /, /x/index.html → /x/,
+  // ve yalnızca gerçek bir sayfa klasörü varsa /x.html → /x/ (dosya .html'ler etkilenmez).
+  const collapsedPath = url.pathname.replace(/\\/{2,}/g, '/');
+  if (collapsedPath !== url.pathname) {
+    url.pathname = collapsedPath;
+    changed = true;
+  }
+  if (url.pathname.endsWith('/index.html')) {
+    url.pathname = url.pathname.slice(0, -'index.html'.length);
+    changed = true;
+  } else if (url.pathname.endsWith('.html')) {
+    const pageCandidate = \`\${url.pathname.slice(0, -'.html'.length)}/\`;
+    if (__tbPagePaths.has(pageCandidate)) {
+      url.pathname = pageCandidate;
+      changed = true;
+    }
   }
 
   // 410 Gone: template artifacts, legacy probes, and retired topic pages
@@ -349,7 +371,19 @@ const __astrojsSsrVirtualEntry = {
     },
 };`;
 
-  fs.writeFileSync(workerPath, original.replace(marker, replacement), 'utf8');
+  const patched = original.replace(marker, replacement);
+  // Şablon içindeki kaçış hataları build'i geçip yayında worker'ı bozabilir;
+  // yamalanan worker esbuild ile ayrıştırılır, hata varsa build durur.
+  if (esbuildTransform) {
+    try {
+      esbuildTransform(patched, { loader: 'js', format: 'esm' });
+    } catch (error) {
+      throw new Error(`Patched worker is not valid JavaScript: ${error.message}`);
+    }
+  } else {
+    console.warn('SEO postbuild: esbuild bulunamadı, worker sözdizimi kontrolü atlandı.');
+  }
+  fs.writeFileSync(workerPath, patched, 'utf8');
   return true;
 }
 
@@ -379,6 +413,12 @@ function assertRedirectsDoNotShadowPages(files) {
   }
 }
 assertRedirectsDoNotShadowPages(htmlFiles);
+
+// Worker'ın kopya-adres kontrolü için gerçek sayfa klasörleri (/x/index.html → /x/).
+const workerPagePaths = htmlFiles
+  .map((filePath) => '/' + path.relative(distDir, filePath).split(path.sep).join('/'))
+  .filter((rel) => rel.endsWith('/index.html') || rel === '/index.html')
+  .map((rel) => rel.slice(0, -'index.html'.length));
 const rewrittenHtmlFiles = htmlFiles.reduce((count, filePath) => count + rewriteHtml(filePath), 0);
 const sitemapAliasWritten = writeSitemapAlias();
 const routesPatch = patchCloudflareRoutes();

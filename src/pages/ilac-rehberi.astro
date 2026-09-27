@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import ReferenceList from '../components/ReferenceList.astro';
+import { safeJsonLdStringify } from '../utils/seo';
 
 // Her kaynak PubMed üzerinden doğrulandı (Eylül 2026).
 const references = [
@@ -72,10 +73,26 @@ const references = [
 ];
 ---
 
-<BaseLayout title="İlaç Rehberi: IVF İlaçları, Dozajlar ve Yan Etkiler | tupbebek.com" description="IVF sürecinde kullanılan gonadotropinler, GnRH analogları, progesteron, hCG ve diğer ilaçların detaylı açıklamaları, yan etkileri ve kullanım talimatları.">
+<BaseLayout pageType="MedicalWebPage" title="İlaç Rehberi: IVF İlaçları, Dozajlar ve Yan Etkiler | tupbebek.com" description="IVF sürecinde kullanılan gonadotropinler, GnRH analogları, progesteron, hCG ve diğer ilaçların detaylı açıklamaları, yan etkileri ve kullanım talimatları.">
     <Header />
 
     <main id="main-content" tabindex="-1" class="pb-24">
+        <!-- JSON-LD: MedicalWebPage (hub) -->
+        <script type="application/ld+json" is:inline set:html={safeJsonLdStringify({
+            "@context": "https://schema.org",
+            "@type": "MedicalWebPage",
+            "name": "IVF İlaç Rehberi: Kullanım, Dozaj ve Yan Etkiler",
+            "url": "https://tupbebek.com/ilac-rehberi/",
+            "inLanguage": "tr-TR",
+            "datePublished": "2026-04-02",
+            "dateModified": "2026-09-26",
+            "lastReviewed": "2026-09-26",
+            "author": { "@type": "Person", "@id": "https://senaiaksoy.net/#person", "name": "Doç. Dr. Senai Aksoy" },
+            "reviewedBy": { "@type": "Organization", "name": "tupbebek.com Editöryal Ekip" },
+            "about": { "@type": "MedicalTherapy", "name": "Tüp bebek (IVF) tedavisinde kullanılan ilaçlar" },
+            "medicalAudience": { "@type": "MedicalAudience", "audienceType": "Patient" },
+            "publisher": { "@type": "Organization", "name": "tupbebek.com", "url": "https://tupbebek.com/" }
+        })} />
         <!-- Hero Section -->
         <header class="max-w-5xl mx-auto px-4 md:px-6 lg:px-8 mb-20">
             <div class="flex flex-col md:flex-row gap-12 items-start">
