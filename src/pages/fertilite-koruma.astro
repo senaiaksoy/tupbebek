@@ -10,6 +10,14 @@ import EEATBadge from '../components/EEATBadge.astro';
 
 const references = [
     {
+        title: "Üremeye Yardımcı Tedavi Uygulamaları ve Üremeye Yardımcı Tedavi Merkezleri Hakkında Yönetmelik (Madde 20)",
+        type: "regulation" as const,
+        authors: "T.C. Sağlık Bakanlığı",
+        journal: "Resmî Gazete",
+        year: 2014,
+        url: "https://www.resmigazete.gov.tr/eskiler/2014/09/20140930-4.htm"
+    },
+    {
         title: "Clinical outcomes of vitrified-warmed autologous oocyte cycles with 15-year follow-up at a single UK centre",
         authors: "Garratt J, Shah T, Mclaughlin A et al.",
         journal: "RBMO",
@@ -70,11 +78,11 @@ const references = [
 const faqItems = [
     {
         question: "Yumurta dondurma kaç yaşına kadar yapılabilir?",
-        answer: "Teknik bir üst sınır yoktur, ancak başarı oranları 35 yaşından sonra belirgin biçimde düşer. 40 yaş üstünde transfer başına canlı doğum oranı %5–10'a iner. Sonucu en çok etkileyen, yumurtaların dondurulduğu yaştır; 35 yaşından önce dondurulan yumurtalarla gebelik olasılığı belirgin biçimde daha yüksektir."
+        answer: "Tıbbi olarak kesin bir üst sınır yoktur, ancak başarı 35 yaşından sonra belirgin biçimde düşer ve 40 yaşın üzerinde dondurulan yumurtalarla canlı doğum olasılığı düşüktür. Sonucu en çok etkileyen, yumurtaların dondurulduğu yaştır; 35 yaşından önce dondurulan yumurtalarla gebelik olasılığı belirgin biçimde daha yüksektir. Türkiye'de işlem ayrıca yönetmelikteki tıbbi koşullara bağlıdır."
     },
     {
         question: "Dondurulmuş yumurtalar ne kadar süre saklanabilir?",
-        answer: "Sıvı nitrojende -196°C'de saklanan yumurtalar için 20 yılı aşan güvenli saklama verisi mevcuttur. Düzgün saklama koşullarında biyolojik yaşlanma durmaktadır."
+        answer: "Sıvı azotta -196°C'de saklanan yumurtalarda uzun saklama süresinin sonucu belirgin biçimde etkilemediği bildirilmiştir; biyolojik yaşlanma bu koşullarda durur. Türkiye'de ise yönetmelikteki azami saklama süresi beş yıldır; saklamanın sürdürülmesi için yıllık yazılı rıza gerekir ve daha uzun saklama Sağlık Bakanlığı iznine bağlıdır."
     },
     {
         question: "Yumurta dondurma bebek sağlığını etkiler mi?",
@@ -86,15 +94,15 @@ const faqItems = [
     },
     {
         question: "Yumurtalık doku dondurma SGK kapsamında mı?",
-        answer: "Tıbbi gerekçe (kanser, üreme hücrelerine zarar veren tedavi) varsa bazı durumlarda kısmi SGK desteği olabilir. Kliniğinizle görüşmenizi öneririz."
+        answer: "SGK'nın hangi durumlarda ödeme yaptığı Sağlık Uygulama Tebliği'ne (SUT) bağlıdır ve zaman içinde değişebilir. Tıbbi gerekçe olmaksızın yapılan saklama kapsam dışıdır. Güncel koşulu tedavi merkezinizden ve SGK'dan teyit edin."
     },
     {
         question: "Embriyo dondurma için partner olmak zorunda mıyım?",
-        answer: "Türkiye'de evet — embriyo dondurma yasal olarak yalnızca evli çiftlere tanınmıştır. Bekar kadınlar yumurta dondurabilir."
+        answer: "Türkiye'de evet — embriyo dondurma yalnızca evli çiftlerde, eşlerin kendi üreme hücreleriyle yapılabilir. Bekar kadınlar yumurta dondurabilir; ancak bu da yönetmelikte sayılan tıbbi durumlara bağlıdır: yumurtalara zarar verecek tedavi (kemoterapi, radyoterapi) veya doğurganlığı kaybettirecek ameliyat öncesi, ya da düşük over rezervi olup henüz doğum yapmamış olma veya erken menopoz aile öyküsünün üç uzman hekimden oluşan sağlık kurulu raporuyla belgelenmesi."
     },
     {
         question: "Sosyal (seçimlik) doğurganlık koruma nedir?",
-        answer: "Tıbbi bir neden olmaksızın, ileriki yaşta anne olmak amacıyla yumurta dondurulmasıdır. Türkiye'de yasal olup bireysel karar ve masraftır; SGK kapsamına girmez."
+        answer: "Tıbbi bir neden olmaksızın, yalnızca gebeliği ileri bir yaşa ertelemek amacıyla yumurta dondurulmasıdır. Bazı ülkelerde uygulanır. Türkiye'de ÜYTE Yönetmeliği üreme hücrelerinin saklanmasını tıbbi zorunluluklarla sınırladığı için bu gerekçe tek başına yeterli değildir. Düşük over rezervi olup henüz doğum yapmamış olmak ise yönetmelikte sayılan durumlardan biridir."
     },
     {
         question: "Kaç yumurta dondurmalıyım?",
@@ -103,7 +111,7 @@ const faqItems = [
 ];
 
 const pageTitle = "Fertilite Koruma: Yumurta, Sperm ve Embriyo Dondurma | tupbebek.com";
-const pageDescription = "Vitrifikasyon yöntemiyle yumurta, sperm ve embriyo dondurma; kanser hastalarında fertilite koruma (onkofertilite); yumurtalık doku dondurma ve 2025 ASCO kılavuzu güncellemeleri. Doç. Dr. Senai Aksoy tarafından hazırlanmıştır.";
+const pageDescription = "Fertilite koruma: yumurta, sperm ve embriyo dondurma kimler için, ne zaman? Kanser hastalarında seçenekler, yumurtalık dokusu dondurma ve Türkiye'de yasal koşullar.";
 ---
 
 <BaseLayout title={pageTitle} description={pageDescription}>
@@ -118,7 +126,7 @@ const pageDescription = "Vitrifikasyon yöntemiyle yumurta, sperm ve embriyo don
             "url": "https://tupbebek.com/fertilite-koruma",
             "description": pageDescription,
             "datePublished": "2026-04-12",
-            "dateModified": "2026-04-14",
+            "dateModified": "2026-09-26",
             "lastReviewed": "2026-04-12",
             "reviewedBy": {
                 "@type": "Person",
@@ -172,7 +180,7 @@ const pageDescription = "Vitrifikasyon yöntemiyle yumurta, sperm ve embriyo don
                         authorYoutube="https://www.youtube.com/@DocentDrSenaiAksoy"
                         medicalReviewer="tupbebek.com Editöryal Ekip"
                         reviewerTitle="Tıbbi Yayın Ekibi"
-                        reviewDate="12 Nisan 2026"
+                        reviewDate="26 Eylül 2026"
                         lastModified="26 Eylül 2026"
                     />
                 </div>
@@ -403,7 +411,7 @@ const pageDescription = "Vitrifikasyon yöntemiyle yumurta, sperm ve embriyo don
                             <li class="flex gap-3"><div class="w-1.5 h-1.5 rounded-full bg-primary-600 mt-2 shrink-0"></div>Endometriozis ve yumurtalık cerrahisi planlananlarda</li>
                             <li class="flex gap-3"><div class="w-1.5 h-1.5 rounded-full bg-primary-600 mt-2 shrink-0"></div>Erken menopoz aile öyküsü olanlarda (POI riski)</li>
                             <li class="flex gap-3"><div class="w-1.5 h-1.5 rounded-full bg-primary-600 mt-2 shrink-0"></div>Genetik hastalık nedeniyle erken yumurtalık yetmezliği riski</li>
-                            <li class="flex gap-3"><div class="w-1.5 h-1.5 rounded-full bg-primary-600 mt-2 shrink-0"></div>Sosyal doğurganlık koruma (gelecekte anne olmayı planlayan kadınlar)</li>
+                            <li class="flex gap-3"><div class="w-1.5 h-1.5 rounded-full bg-primary-600 mt-2 shrink-0"></div>Yalnızca gebeliği ertelemek için (sosyal) dondurma bazı ülkelerde yapılır; Türkiye'de tek başına yasal gerekçe değildir</li>
                             <li class="flex gap-3"><div class="w-1.5 h-1.5 rounded-full bg-primary-600 mt-2 shrink-0"></div>Azalmış yumurtalık rezervi (düşük AMH) saptananlarda</li>
                         </ul>
                     </div>
@@ -832,7 +840,15 @@ const pageDescription = "Vitrifikasyon yöntemiyle yumurta, sperm ve embriyo don
         <section id="yasal" class="bg-gray-50 py-24 mb-24">
             <div class="max-w-5xl mx-auto px-4 md:px-6 lg:px-8">
                 <h2 class="font-headline text-3xl text-gray-900 mb-4">Türkiye'de fertilite koruma yasal çerçevesi ve SGK kapsamı nedir?</h2>
-                <p class="text-gray-600 leading-relaxed mb-8">Türkiye'de yumurta ve sperm dondurma hem evliler hem bekarlar için mümkündür. Embriyo dondurma yalnızca evli çiftlere tanınmıştır. SGK, kanser gibi tıbbi durumlarda belirli koşullarda doğurganlık koruma masraflarını karşılayabilir; seçimlik yumurta dondurma kapsamda değildir.</p>
+                <p class="text-gray-600 leading-relaxed mb-4"><strong>Kısa cevap:</strong> Türkiye'de yumurta, sperm ve gonad dokusu dondurma evlilik şartına bağlı değildir; ancak yalnızca Üremeye Yardımcı Tedavi (ÜYTE) Yönetmeliği'nin 20. maddesinde sayılan tıbbi durumlarda yapılabilir. Embriyo dondurma yalnızca evli çiftlerde, eşlerin kendi üreme hücreleriyle yapılabilir. Yalnızca gebeliği ertelemek amacıyla yapılan (sosyal) yumurta dondurma bu durumlar arasında yer almaz.</p>
+                <div class="text-gray-600 leading-relaxed mb-8 text-sm">
+                    <p class="mb-2">Yönetmelikte sayılan tıbbi durumlar (<a href="https://www.resmigazete.gov.tr/eskiler/2014/09/20140930-4.htm" target="_blank" rel="noopener noreferrer" class="text-primary-600 underline">ÜYTE Yönetmeliği, Madde 20</a>):</p>
+                    <ul class="list-disc pl-5 space-y-1">
+                        <li><strong>Kadında:</strong> kemoterapi veya radyoterapi gibi yumurtalara zarar veren tedaviler öncesi; yumurtalıkların alınması gibi doğurganlığı kaybettirecek ameliyatlar öncesi; düşük over rezervi olup henüz doğum yapmamış olma veya aile öyküsünde erken menopoz olduğunun üç uzman hekimden oluşan sağlık kurulu raporuyla belgelenmesi.</li>
+                        <li><strong>Erkekte:</strong> cerrahi yöntemle sperm elde edilmesi; kemoterapi veya radyoterapi öncesi; testislerin alınması gibi ameliyatlar öncesi; spermin çok az olduğu durumlar (kriptozoospermi).</li>
+                        <li><strong>Saklama süresi:</strong> Azami beş yıldır; saklamanın sürmesi için yıllık yazılı rıza gerekir, daha uzun saklama Sağlık Bakanlığı iznine bağlıdır.</li>
+                    </ul>
+                </div>
 
                 <!-- Yasal Tablo -->
                 <div class="border-l-4 border-primary bg-white p-6 rounded-r-xl shadow-sm mb-8">
@@ -853,9 +869,9 @@ const pageDescription = "Vitrifikasyon yöntemiyle yumurta, sperm ve embriyo don
                             <tbody class="text-gray-600">
                                 <tr class="border-b border-gray-200">
                                     <td class="py-2 pr-4 font-semibold">Yumurta dondurma</td>
-                                    <td class="py-2 pr-4 text-mint-600 font-semibold">Evet</td>
-                                    <td class="py-2 pr-4 text-mint-600 font-semibold">Evet</td>
-                                    <td class="py-2">Serbest</td>
+                                    <td class="py-2 pr-4 text-mint-600 font-semibold">Evet*</td>
+                                    <td class="py-2 pr-4 text-mint-600 font-semibold">Evet*</td>
+                                    <td class="py-2">Yalnızca tıbbi durumlarda</td>
                                 </tr>
                                 <tr class="border-b border-gray-200">
                                     <td class="py-2 pr-4 font-semibold">Embriyo dondurma</td>
@@ -865,19 +881,20 @@ const pageDescription = "Vitrifikasyon yöntemiyle yumurta, sperm ve embriyo don
                                 </tr>
                                 <tr class="border-b border-gray-200">
                                     <td class="py-2 pr-4 font-semibold">Sperm dondurma</td>
-                                    <td class="py-2 pr-4 text-mint-600 font-semibold">Evet (eş için)</td>
-                                    <td class="py-2 pr-4 text-mint-600 font-semibold">Evet</td>
-                                    <td class="py-2">Serbest</td>
+                                    <td class="py-2 pr-4 text-mint-600 font-semibold">Evet* (eş için)</td>
+                                    <td class="py-2 pr-4 text-mint-600 font-semibold">Evet*</td>
+                                    <td class="py-2">Yalnızca tıbbi durumlarda</td>
                                 </tr>
                                 <tr>
                                     <td class="py-2 pr-4 font-semibold">Yumurtalık doku</td>
                                     <td class="py-2 pr-4 text-mint-600 font-semibold">Evet</td>
                                     <td class="py-2 pr-4 text-mint-600 font-semibold">Evet</td>
-                                    <td class="py-2">Tıbbi gerekçeyle</td>
+                                    <td class="py-2">Yalnızca tıbbi durumlarda</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
+                    <p class="text-xs text-gray-500 mt-3">* Yukarıda sayılan tıbbi durumlardan biri bulunması koşuluyla.</p>
                 </div>
 
                 <!-- SGK Kapsamı -->
@@ -886,7 +903,7 @@ const pageDescription = "Vitrifikasyon yöntemiyle yumurta, sperm ve embriyo don
                         <span class="material-symbols-outlined text-mint-600">health_and_safety</span>
                         SGK Kapsamı
                     </h3>
-                    <p class="text-sm text-gray-600">SGK, belirli tıbbi durumlarda (kanser, erken menopoz riski, kalıtsal hastalık) doğurganlığı koruma işlemlerine kısmi destek sağlayabilmektedir. Tıbbi gerekçe olmaksızın yapılan yumurta dondurma SGK kapsamında değildir. Güncel bilgi için kliniğinizle görüşmenizi öneririz.</p>
+                    <p class="text-sm text-gray-600">SGK'nın doğurganlığı koruma işlemlerini hangi koşullarda karşıladığı Sağlık Uygulama Tebliği'ne (SUT) bağlıdır ve zaman içinde değişebilir. Tıbbi gerekçe olmaksızın yapılan saklama kapsam dışıdır. Güncel koşulu tedavi merkezinizden ve SGK'dan teyit edin.</p>
                 </div>
             </div>
         </section>
