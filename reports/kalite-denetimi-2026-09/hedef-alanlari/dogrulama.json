@@ -1,0 +1,1211 @@
+{
+  "baselineCommit": "a7a0e25ac856d3dad3d410f3a83d59c8bce4f0a5",
+  "buildExit": 0,
+  "preflightExit": 0,
+  "preflightPassed": 26,
+  "integrity": {
+    "pages": 101,
+    "articles": 63,
+    "referencePages": 78,
+    "SEOIdentityTextsLinksImagesSchemasIdsProse": true,
+    "articleSourcesUnchanged": true
+  },
+  "allrefs": {
+    "pages": 78,
+    "targets": 998,
+    "viewport": 390,
+    "minimum44": true,
+    "rows": [
+      {
+        "route": "/aciklanamayan-infertilite/",
+        "targets": 2,
+        "minHeight": 44,
+        "minWidth": 136.90625
+      },
+      {
+        "route": "/basarisiz-denemeler/",
+        "targets": 12,
+        "minHeight": 44,
+        "minWidth": 134.203125
+      },
+      {
+        "route": "/beslenme-yasam/",
+        "targets": 6,
+        "minHeight": 44,
+        "minWidth": 136.390625
+      },
+      {
+        "route": "/duygusal-destek/",
+        "targets": 6,
+        "minHeight": 44,
+        "minWidth": 134.78125
+      },
+      {
+        "route": "/endometriozis-adenomyozis/",
+        "targets": 8,
+        "minHeight": 44,
+        "minWidth": 133.796875
+      },
+      {
+        "route": "/fertilite-koruma/",
+        "targets": 9,
+        "minHeight": 44,
+        "minWidth": 68.640625
+      },
+      {
+        "route": "/genetik-testler/",
+        "targets": 4,
+        "minHeight": 44,
+        "minWidth": 132.71875
+      },
+      {
+        "route": "/hormon-paneli/",
+        "targets": 6,
+        "minHeight": 44,
+        "minWidth": 135.984375
+      },
+      {
+        "route": "/ilac-rehberi/",
+        "targets": 14,
+        "minHeight": 44,
+        "minWidth": 132.09375
+      },
+      {
+        "route": "/ivf-rehberi/",
+        "targets": 3,
+        "minHeight": 44,
+        "minWidth": 68.640625
+      },
+      {
+        "route": "/makaleler/adet-duzensizligi-pcos/",
+        "targets": 20,
+        "minHeight": 44,
+        "minWidth": 133.234375
+      },
+      {
+        "route": "/makaleler/adet-gorememe/",
+        "targets": 16,
+        "minHeight": 44,
+        "minWidth": 68.640625
+      },
+      {
+        "route": "/makaleler/akinti-kasinti-koku/",
+        "targets": 16,
+        "minHeight": 44,
+        "minWidth": 68.640625
+      },
+      {
+        "route": "/makaleler/akraba-evliligi/",
+        "targets": 18,
+        "minHeight": 44,
+        "minWidth": 68.640625
+      },
+      {
+        "route": "/makaleler/alkol-ve-fertilite/",
+        "targets": 20,
+        "minHeight": 44,
+        "minWidth": 68.640625
+      },
+      {
+        "route": "/makaleler/asherman-sendromu/",
+        "targets": 22,
+        "minHeight": 44,
+        "minWidth": 129.6875
+      },
+      {
+        "route": "/makaleler/azospermi-mikro-tese/",
+        "targets": 15,
+        "minHeight": 44,
+        "minWidth": 68.640625
+      },
+      {
+        "route": "/makaleler/bagisiklik-tedavileri/",
+        "targets": 16,
+        "minHeight": 44,
+        "minWidth": 68.640625
+      },
+      {
+        "route": "/makaleler/beta-hcg-testi/",
+        "targets": 37,
+        "minHeight": 44,
+        "minWidth": 68.640625
+      },
+      {
+        "route": "/makaleler/cep-telefonu-sperm-kalitesi/",
+        "targets": 10,
+        "minHeight": 44,
+        "minWidth": 132.046875
+      },
+      {
+        "route": "/makaleler/cerrahi-sperm-arama-tese/",
+        "targets": 20,
+        "minHeight": 44,
+        "minWidth": 130.125
+      },
+      {
+        "route": "/makaleler/dhea-buyume-hormonu-tup-bebek/",
+        "targets": 11,
+        "minHeight": 44,
+        "minWidth": 68.640625
+      },
+      {
+        "route": "/makaleler/dusuk-amh-hamilelik/",
+        "targets": 10,
+        "minHeight": 44,
+        "minWidth": 68.640625
+      },
+      {
+        "route": "/makaleler/dusuk-sonrasi-hamilelik-bekleme-suresi/",
+        "targets": 7,
+        "minHeight": 44,
+        "minWidth": 68.640625
+      },
+      {
+        "route": "/makaleler/duygusal-dayaniklik-rehberi/",
+        "targets": 13,
+        "minHeight": 44,
+        "minWidth": 134.296875
+      },
+      {
+        "route": "/makaleler/embriyo-transferi-gun-secimi/",
+        "targets": 20,
+        "minHeight": 44,
+        "minWidth": 130.90625
+      },
+      {
+        "route": "/makaleler/embriyo-transferi-sonrasi-bakim/",
+        "targets": 18,
+        "minHeight": 44,
+        "minWidth": 133.28125
+      },
+      {
+        "route": "/makaleler/embryoglue-faydalari/",
+        "targets": 16,
+        "minHeight": 44,
+        "minWidth": 68.640625
+      },
+      {
+        "route": "/makaleler/embryoscope-yapay-zeka/",
+        "targets": 12,
+        "minHeight": 44,
+        "minWidth": 132.359375
+      },
+      {
+        "route": "/makaleler/endometrioma/",
+        "targets": 7,
+        "minHeight": 44,
+        "minWidth": 68.640625
+      },
+      {
+        "route": "/makaleler/endometriozis-akilli-stratejiler/",
+        "targets": 9,
+        "minHeight": 44,
+        "minWidth": 68.640625
+      },
+      {
+        "route": "/makaleler/endometriozis-tup-bebek/",
+        "targets": 8,
+        "minHeight": 44,
+        "minWidth": 68.640625
+      },
+      {
+        "route": "/makaleler/endometrium-kalinligi-tup-bebek/",
+        "targets": 23,
+        "minHeight": 44,
+        "minWidth": 68.640625
+      },
+      {
+        "route": "/makaleler/endometriyal-scratching/",
+        "targets": 11,
+        "minHeight": 44,
+        "minWidth": 68.640625
+      },
+      {
+        "route": "/makaleler/endoskopik-cerrahi-histeroskopi/",
+        "targets": 15,
+        "minHeight": 44,
+        "minWidth": 68.640625
+      },
+      {
+        "route": "/makaleler/era-testi-bas-editor-kosesi/",
+        "targets": 10,
+        "minHeight": 44,
+        "minWidth": 68.640625
+      },
+      {
+        "route": "/makaleler/era-testi-iluzyon/",
+        "targets": 16,
+        "minHeight": 44,
+        "minWidth": 68.640625
+      },
+      {
+        "route": "/makaleler/erkek-dogurganlik-besin-takviyeleri/",
+        "targets": 18,
+        "minHeight": 44,
+        "minWidth": 68.640625
+      },
+      {
+        "route": "/makaleler/hidrosalpinx-ve-kisirlik/",
+        "targets": 8,
+        "minHeight": 44,
+        "minWidth": 132.5625
+      },
+      {
+        "route": "/makaleler/hiperprolaktinemi-ve-kisirlik/",
+        "targets": 10,
+        "minHeight": 44,
+        "minWidth": 131.65625
+      },
+      {
+        "route": "/makaleler/hormonal-tedavi-adenomyozis/",
+        "targets": 12,
+        "minHeight": 44,
+        "minWidth": 133.984375
+      },
+      {
+        "route": "/makaleler/imsi-picsi-macs-sperm-secimi/",
+        "targets": 22,
+        "minHeight": 44,
+        "minWidth": 68.640625
+      },
+      {
+        "route": "/makaleler/istanbul-tup-bebek-doktoru/",
+        "targets": 12,
+        "minHeight": 44,
+        "minWidth": 68.640625
+      },
+      {
+        "route": "/makaleler/iui-nedir/",
+        "targets": 20,
+        "minHeight": 44,
+        "minWidth": 68.640625
+      },
+      {
+        "route": "/makaleler/ivf-oncesi-histeroskopi/",
+        "targets": 12,
+        "minHeight": 44,
+        "minWidth": 132.328125
+      },
+      {
+        "route": "/makaleler/ivf-protokolleri/",
+        "targets": 14,
+        "minHeight": 44,
+        "minWidth": 132.09375
+      },
+      {
+        "route": "/makaleler/iyi-tup-bebek-merkezi/",
+        "targets": 14,
+        "minHeight": 44,
+        "minWidth": 68.640625
+      },
+      {
+        "route": "/makaleler/izotretinoin-sperm/",
+        "targets": 8,
+        "minHeight": 44,
+        "minWidth": 130.125
+      },
+      {
+        "route": "/makaleler/kac-yumurta-gerekir/",
+        "targets": 11,
+        "minHeight": 44,
+        "minWidth": 68.640625
+      },
+      {
+        "route": "/makaleler/kadin-kisirligi-tup-bebek/",
+        "targets": 12,
+        "minHeight": 44,
+        "minWidth": 68.640625
+      },
+      {
+        "route": "/makaleler/kanser-ve-fertilite/",
+        "targets": 12,
+        "minHeight": 44,
+        "minWidth": 68.640625
+      },
+      {
+        "route": "/makaleler/kimyasal-gebelik/",
+        "targets": 17,
+        "minHeight": 44,
+        "minWidth": 68.640625
+      },
+      {
+        "route": "/makaleler/laboratuvar-raporu-yorumlama/",
+        "targets": 17,
+        "minHeight": 44,
+        "minWidth": 68.640625
+      },
+      {
+        "route": "/makaleler/mikroenjeksiyon-icsi-nedir/",
+        "targets": 9,
+        "minHeight": 44,
+        "minWidth": 68.640625
+      },
+      {
+        "route": "/makaleler/miyom-ameliyati/",
+        "targets": 4,
+        "minHeight": 44,
+        "minWidth": 68.640625
+      },
+      {
+        "route": "/makaleler/miyomlar-ve-tup-bebek/",
+        "targets": 11,
+        "minHeight": 44,
+        "minWidth": 68.640625
+      },
+      {
+        "route": "/makaleler/opk-ve-ivf/",
+        "targets": 8,
+        "minHeight": 44,
+        "minWidth": 133.25
+      },
+      {
+        "route": "/makaleler/over-prp/",
+        "targets": 9,
+        "minHeight": 44,
+        "minWidth": 68.640625
+      },
+      {
+        "route": "/makaleler/over-prp-yumurtalik-genclestirme-bas-editor-kosesi/",
+        "targets": 5,
+        "minHeight": 44,
+        "minWidth": 68.640625
+      },
+      {
+        "route": "/makaleler/pcos-yeni-adi-pmos/",
+        "targets": 12,
+        "minHeight": 44,
+        "minWidth": 130.515625
+      },
+      {
+        "route": "/makaleler/pgt-a-bas-editor-kosesi/",
+        "targets": 7,
+        "minHeight": 44,
+        "minWidth": 68.640625
+      },
+      {
+        "route": "/makaleler/pgt-cinsiyet-secimi/",
+        "targets": 14,
+        "minHeight": 44,
+        "minWidth": 68.640625
+      },
+      {
+        "route": "/makaleler/pgt-m/",
+        "targets": 10,
+        "minHeight": 44,
+        "minWidth": 68.640625
+      },
+      {
+        "route": "/makaleler/taze-dondurulmus-transfer/",
+        "targets": 12,
+        "minHeight": 44,
+        "minWidth": 133.984375
+      },
+      {
+        "route": "/makaleler/tup-bebek-nedir/",
+        "targets": 32,
+        "minHeight": 44,
+        "minWidth": 68.640625
+      },
+      {
+        "route": "/makaleler/tup-bebek-sureci-rehber/",
+        "targets": 15,
+        "minHeight": 44,
+        "minWidth": 68.640625
+      },
+      {
+        "route": "/makaleler/tup-bebek-yanlis-bilinenler/",
+        "targets": 21,
+        "minHeight": 44,
+        "minWidth": 68.640625
+      },
+      {
+        "route": "/makaleler/vajinal-mikrobiyom-fiv/",
+        "targets": 13,
+        "minHeight": 44,
+        "minWidth": 68.640625
+      },
+      {
+        "route": "/makaleler/varikosel-nedir-ne-zaman-ameliyat-gerekir/",
+        "targets": 6,
+        "minHeight": 44,
+        "minWidth": 68.640625
+      },
+      {
+        "route": "/makaleler/yasa-gore-tup-bebek-basari-oranlari/",
+        "targets": 20,
+        "minHeight": 44,
+        "minWidth": 68.640625
+      },
+      {
+        "route": "/makaleler/yumurta-dondurma-rehberi/",
+        "targets": 16,
+        "minHeight": 44,
+        "minWidth": 68.640625
+      },
+      {
+        "route": "/makaleler/yumurtalik-kistleri-dogurganlik/",
+        "targets": 21,
+        "minHeight": 44,
+        "minWidth": 68.640625
+      },
+      {
+        "route": "/makaleler/yumurtlama-takibi/",
+        "targets": 16,
+        "minHeight": 44,
+        "minWidth": 68.640625
+      },
+      {
+        "route": "/sss/",
+        "targets": 6,
+        "minHeight": 44,
+        "minWidth": 134.953125
+      },
+      {
+        "route": "/tani-sureci/",
+        "targets": 6,
+        "minHeight": 44,
+        "minWidth": 134.40625
+      },
+      {
+        "route": "/tedavi-yontemleri/",
+        "targets": 6,
+        "minHeight": 44,
+        "minWidth": 133.984375
+      },
+      {
+        "route": "/transfer-sureci/",
+        "targets": 6,
+        "minHeight": 44,
+        "minWidth": 133.796875
+      },
+      {
+        "route": "/yas-ve-fertilite/",
+        "targets": 8,
+        "minHeight": 44,
+        "minWidth": 134.046875
+      }
+    ]
+  },
+  "comparisons": [
+    {
+      "route": "/",
+      "kind": "mobile",
+      "heightBefore": 11906,
+      "heightAfter": 11906,
+      "firstParagraphBefore": 788,
+      "firstParagraphAfter": 788,
+      "refsBefore": [],
+      "refsAfter": [],
+      "quickBefore": [],
+      "quickAfter": [],
+      "summaryBefore": [],
+      "summaryAfter": [],
+      "overflowX": 0
+    },
+    {
+      "route": "/",
+      "kind": "desktop",
+      "heightBefore": 10182,
+      "heightAfter": 10182,
+      "firstParagraphBefore": 1130,
+      "firstParagraphAfter": 1130,
+      "refsBefore": [],
+      "refsAfter": [],
+      "quickBefore": [],
+      "quickAfter": [],
+      "summaryBefore": [],
+      "summaryAfter": [],
+      "overflowX": 0
+    },
+    {
+      "route": "/makaleler/beta-hcg-testi/",
+      "kind": "mobile",
+      "heightBefore": 30389,
+      "heightAfter": 31089,
+      "firstParagraphBefore": 1133,
+      "firstParagraphAfter": 1133,
+      "refsBefore": [
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24
+      ],
+      "refsAfter": [
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44
+      ],
+      "quickBefore": [],
+      "quickAfter": [],
+      "summaryBefore": [],
+      "summaryAfter": [],
+      "focus": {
+        "text": "link PubMed: 15229000",
+        "href": "https://pubmed.ncbi.nlm.nih.gov/15229000/",
+        "w": 136.328125,
+        "h": 44,
+        "outlineWidth": "2px",
+        "outlineStyle": "solid",
+        "outlineColor": "rgb(37, 99, 168)"
+      },
+      "overflowX": 0
+    },
+    {
+      "route": "/makaleler/beta-hcg-testi/",
+      "kind": "desktop",
+      "heightBefore": 19873,
+      "heightAfter": 20333,
+      "firstParagraphBefore": 1242,
+      "firstParagraphAfter": 1242,
+      "refsBefore": [
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24
+      ],
+      "refsAfter": [
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44
+      ],
+      "quickBefore": [],
+      "quickAfter": [],
+      "summaryBefore": [],
+      "summaryAfter": [],
+      "focus": {
+        "text": "link PubMed: 15229000",
+        "href": "https://pubmed.ncbi.nlm.nih.gov/15229000/",
+        "w": 136.328125,
+        "h": 44,
+        "outlineWidth": "2px",
+        "outlineStyle": "solid",
+        "outlineColor": "rgb(37, 99, 168)"
+      },
+      "overflowX": 0
+    },
+    {
+      "route": "/fertilite-koruma/",
+      "kind": "mobile",
+      "heightBefore": 24285,
+      "heightAfter": 24465,
+      "firstParagraphBefore": 696,
+      "firstParagraphAfter": 696,
+      "refsBefore": [
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24
+      ],
+      "refsAfter": [
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44
+      ],
+      "quickBefore": [
+        46,
+        46,
+        46,
+        46,
+        46,
+        46,
+        46
+      ],
+      "quickAfter": [
+        46,
+        46,
+        46,
+        46,
+        46,
+        46,
+        46
+      ],
+      "summaryBefore": [],
+      "summaryAfter": [],
+      "focus": {
+        "text": "Vitrifikasyon",
+        "href": "#vitrifikasyon",
+        "w": 114.390625,
+        "h": 46,
+        "outlineWidth": "2px",
+        "outlineStyle": "solid",
+        "outlineColor": "rgb(37, 99, 168)"
+      },
+      "overflowX": 0
+    },
+    {
+      "route": "/fertilite-koruma/",
+      "kind": "desktop",
+      "heightBefore": 16630,
+      "heightAfter": 16810,
+      "firstParagraphBefore": 623,
+      "firstParagraphAfter": 623,
+      "refsBefore": [
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24
+      ],
+      "refsAfter": [
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44
+      ],
+      "quickBefore": [
+        46,
+        46,
+        46,
+        46,
+        46,
+        46,
+        46
+      ],
+      "quickAfter": [
+        46,
+        46,
+        46,
+        46,
+        46,
+        46,
+        46
+      ],
+      "summaryBefore": [],
+      "summaryAfter": [],
+      "focus": {
+        "text": "Vitrifikasyon",
+        "href": "#vitrifikasyon",
+        "w": 114.390625,
+        "h": 46,
+        "outlineWidth": "2px",
+        "outlineStyle": "solid",
+        "outlineColor": "rgb(37, 99, 168)"
+      },
+      "overflowX": 0
+    },
+    {
+      "route": "/ilac-rehberi/",
+      "kind": "mobile",
+      "heightBefore": 16050,
+      "heightAfter": 16338,
+      "firstParagraphBefore": 465,
+      "firstParagraphAfter": 465,
+      "refsBefore": [
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24
+      ],
+      "refsAfter": [
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44
+      ],
+      "quickBefore": [
+        36,
+        36,
+        36,
+        36,
+        36
+      ],
+      "quickAfter": [
+        44,
+        44,
+        44,
+        44,
+        44
+      ],
+      "summaryBefore": [],
+      "summaryAfter": [],
+      "focus": {
+        "text": "Gonadotropinler",
+        "href": "#gonadotropin",
+        "w": 141.109375,
+        "h": 44,
+        "outlineWidth": "2px",
+        "outlineStyle": "solid",
+        "outlineColor": "rgb(37, 99, 168)"
+      },
+      "quickHash": "#enjeksiyon",
+      "quickTargetTop": 96.234375,
+      "quickBarBottom": -5435.953125,
+      "overflowX": 0
+    },
+    {
+      "route": "/ilac-rehberi/",
+      "kind": "desktop",
+      "heightBefore": 10159,
+      "heightAfter": 10307,
+      "firstParagraphBefore": 450,
+      "firstParagraphAfter": 450,
+      "refsBefore": [
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24,
+        24
+      ],
+      "refsAfter": [
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44
+      ],
+      "quickBefore": [
+        36,
+        36,
+        36,
+        36,
+        36
+      ],
+      "quickAfter": [
+        44,
+        44,
+        44,
+        44,
+        44
+      ],
+      "summaryBefore": [],
+      "summaryAfter": [],
+      "focus": {
+        "text": "Gonadotropinler",
+        "href": "#gonadotropin",
+        "w": 141.109375,
+        "h": 44,
+        "outlineWidth": "2px",
+        "outlineStyle": "solid",
+        "outlineColor": "rgb(37, 99, 168)"
+      },
+      "quickHash": "#enjeksiyon",
+      "quickTargetTop": 95.765625,
+      "quickBarBottom": -3887.21875,
+      "overflowX": 0
+    },
+    {
+      "route": "/makaleler/varikosel-nedir-ne-zaman-ameliyat-gerekir/",
+      "kind": "mobile",
+      "heightBefore": 23498,
+      "heightAfter": 23618,
+      "firstParagraphBefore": 1511,
+      "firstParagraphAfter": 1511,
+      "refsBefore": [
+        24,
+        24,
+        24,
+        24,
+        24,
+        24
+      ],
+      "refsAfter": [
+        44,
+        44,
+        44,
+        44,
+        44,
+        44
+      ],
+      "quickBefore": [],
+      "quickAfter": [],
+      "summaryBefore": [],
+      "summaryAfter": [],
+      "focus": {
+        "text": "link PubMed: 39145501",
+        "href": "https://pubmed.ncbi.nlm.nih.gov/39145501/",
+        "w": 133.3125,
+        "h": 44,
+        "outlineWidth": "2px",
+        "outlineStyle": "solid",
+        "outlineColor": "rgb(37, 99, 168)"
+      },
+      "overflowX": 0
+    },
+    {
+      "route": "/makaleler/varikosel-nedir-ne-zaman-ameliyat-gerekir/",
+      "kind": "desktop",
+      "heightBefore": 17510,
+      "heightAfter": 17590,
+      "firstParagraphBefore": 1582,
+      "firstParagraphAfter": 1582,
+      "refsBefore": [
+        24,
+        24,
+        24,
+        24,
+        24,
+        24
+      ],
+      "refsAfter": [
+        44,
+        44,
+        44,
+        44,
+        44,
+        44
+      ],
+      "quickBefore": [],
+      "quickAfter": [],
+      "summaryBefore": [],
+      "summaryAfter": [],
+      "focus": {
+        "text": "link PubMed: 39145501",
+        "href": "https://pubmed.ncbi.nlm.nih.gov/39145501/",
+        "w": 133.3125,
+        "h": 44,
+        "outlineWidth": "2px",
+        "outlineStyle": "solid",
+        "outlineColor": "rgb(37, 99, 168)"
+      },
+      "overflowX": 0
+    },
+    {
+      "route": "/tani-sureci/",
+      "kind": "mobile",
+      "heightBefore": 8704,
+      "heightAfter": 8804,
+      "firstParagraphBefore": 665,
+      "firstParagraphAfter": 665,
+      "refsBefore": [
+        24,
+        24,
+        24,
+        24,
+        24,
+        24
+      ],
+      "refsAfter": [
+        44,
+        44,
+        44,
+        44,
+        44,
+        44
+      ],
+      "quickBefore": [],
+      "quickAfter": [],
+      "summaryBefore": [],
+      "summaryAfter": [],
+      "focus": {
+        "text": "link PubMed: 34607703",
+        "href": "https://pubmed.ncbi.nlm.nih.gov/34607703/",
+        "w": 136.46875,
+        "h": 44,
+        "outlineWidth": "2px",
+        "outlineStyle": "solid",
+        "outlineColor": "rgb(37, 99, 168)"
+      },
+      "overflowX": 0
+    },
+    {
+      "route": "/tani-sureci/",
+      "kind": "desktop",
+      "heightBefore": 4785,
+      "heightAfter": 4845,
+      "firstParagraphBefore": 576,
+      "firstParagraphAfter": 576,
+      "refsBefore": [
+        24,
+        24,
+        24,
+        24,
+        24,
+        24
+      ],
+      "refsAfter": [
+        44,
+        44,
+        44,
+        44,
+        44,
+        44
+      ],
+      "quickBefore": [],
+      "quickAfter": [],
+      "summaryBefore": [],
+      "summaryAfter": [],
+      "focus": {
+        "text": "link PubMed: 34607703",
+        "href": "https://pubmed.ncbi.nlm.nih.gov/34607703/",
+        "w": 136.46875,
+        "h": 44,
+        "outlineWidth": "2px",
+        "outlineStyle": "solid",
+        "outlineColor": "rgb(37, 99, 168)"
+      },
+      "overflowX": 0
+    },
+    {
+      "route": "/e-kitap-indir/",
+      "kind": "mobile",
+      "heightBefore": 5712,
+      "heightAfter": 5712,
+      "firstParagraphBefore": 300,
+      "firstParagraphAfter": 300,
+      "refsBefore": [],
+      "refsAfter": [],
+      "quickBefore": [],
+      "quickAfter": [],
+      "summaryBefore": [
+        26.390625,
+        26.390625,
+        26.390625,
+        52.78125
+      ],
+      "summaryAfter": [
+        74.390625,
+        74.390625,
+        74.390625,
+        100.78125
+      ],
+      "faqOpenHeightBefore": 5803,
+      "faqOpenHeightAfter": 5803,
+      "paddingClickBefore": false,
+      "paddingClickAfter": true,
+      "spaceOpens": true,
+      "spaceCloses": true,
+      "focus": {
+        "text": "E-kitaba erişim koşulu nedir? ▼",
+        "href": null,
+        "w": 358,
+        "h": 74.390625,
+        "outlineWidth": "2px",
+        "outlineStyle": "solid",
+        "outlineColor": "rgb(37, 99, 168)"
+      },
+      "overflowX": 0
+    },
+    {
+      "route": "/e-kitap-indir/",
+      "kind": "desktop",
+      "heightBefore": 2962,
+      "heightAfter": 2962,
+      "firstParagraphBefore": 287,
+      "firstParagraphAfter": 287,
+      "refsBefore": [],
+      "refsAfter": [],
+      "quickBefore": [],
+      "quickAfter": [],
+      "summaryBefore": [
+        26.390625,
+        26.390625,
+        26.390625,
+        26.390625
+      ],
+      "summaryAfter": [
+        74.390625,
+        74.390625,
+        74.390625,
+        74.390625
+      ],
+      "faqOpenHeightBefore": 3028,
+      "faqOpenHeightAfter": 3028,
+      "paddingClickBefore": false,
+      "paddingClickAfter": true,
+      "spaceOpens": true,
+      "spaceCloses": true,
+      "focus": {
+        "text": "E-kitaba erişim koşulu nedir? ▼",
+        "href": null,
+        "w": 832,
+        "h": 74.390625,
+        "outlineWidth": "2px",
+        "outlineStyle": "solid",
+        "outlineColor": "rgb(37, 99, 168)"
+      },
+      "overflowX": 0
+    }
+  ]
+}

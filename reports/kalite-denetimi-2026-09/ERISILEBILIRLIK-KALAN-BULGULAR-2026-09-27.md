@@ -1,5 +1,7 @@
 # Kalan erişilebilirlik bulguları — 27 Eylül 2026
 
+**Takip:** Dokunma alanları için ilk teknik paket yerelde uygulandı ve doğrulandı. [Uygulama ve karşılaştırmalar](ERISILEBILIRLIK-HEDEF-ALANLARI-2026-09-27.md). Birleştirme onayı bekleniyor; başlık hiyerarşisi ve küçük yazı bulguları sonraki işlerde ele alınacak. Aşağıdaki metin ilk denetim kaydıdır.
+
 ## Kapsam ve yöntem
 
 Tasarım tur 2 sonrasındaki `29a316a1ac730e6b319191865bf83e93c7d04edc` sürümü incelendi. Bu çalışma denetimdir; uygulama kodu veya tıbbi metin değiştirilmedi, form gönderilmedi.
