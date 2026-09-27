@@ -1,0 +1,211 @@
+[
+  {
+    "pr": 208,
+    "prUrl": "https://github.com/senaiaksoy/tupbebek/pull/208",
+    "commit": "b391d20d2e8d924452e5c56118fa190ad1160514",
+    "checkedAt": "2026-09-27T06:53:19.973Z",
+    "checkRun": {
+      "id": 108568699806,
+      "headSha": "b391d20d2e8d924452e5c56118fa190ad1160514",
+      "conclusion": "success",
+      "completedAt": "2026-09-27T06:46:18Z",
+      "deploymentUrl": "https://dash.cloudflare.com/?to=/4797b38bf5bfb1b15a30ac27f0a9a78f/pages/view/tupbebek/16db12ce-b12c-4b41-bb02-a2e51da7b832"
+    },
+    "liveVerification": {
+      "commit": "b391d20d2e8d924452e5c56118fa190ad1160514",
+      "checkedAt": "2026-09-27T06:53:19.973Z",
+      "method": "curl + unique c + no-cache",
+      "results": [
+        {
+          "route": "/",
+          "frozenIdentity": true,
+          "expectedDesign": true
+        },
+        {
+          "route": "/makaleler/beta-hcg-testi/",
+          "frozenIdentity": true,
+          "expectedDesign": true
+        },
+        {
+          "route": "/fertilite-koruma/",
+          "frozenIdentity": true,
+          "expectedDesign": true
+        },
+        {
+          "route": "/ilac-rehberi/",
+          "frozenIdentity": true,
+          "expectedDesign": true
+        },
+        {
+          "route": "/makaleler/varikosel-nedir-ne-zaman-ameliyat-gerekir/",
+          "frozenIdentity": true,
+          "expectedDesign": true
+        },
+        {
+          "route": "/tani-sureci/",
+          "frozenIdentity": true,
+          "expectedDesign": true
+        }
+      ]
+    }
+  },
+  {
+    "pr": 209,
+    "prUrl": "https://github.com/senaiaksoy/tupbebek/pull/209",
+    "commit": "56a996aae500bda5ae2d8491f073dc48e36d985e",
+    "checkedAt": "2026-09-27T07:32:43.749Z",
+    "checkRun": {
+      "id": 108575122326,
+      "headSha": "56a996aae500bda5ae2d8491f073dc48e36d985e",
+      "conclusion": "success",
+      "completedAt": "2026-09-27T07:31:29Z",
+      "deploymentUrl": "https://dash.cloudflare.com/?to=/4797b38bf5bfb1b15a30ac27f0a9a78f/pages/view/tupbebek/639a608c-f952-47ec-968c-edf97f993fdb"
+    },
+    "liveVerification": {
+      "commit": "56a996aae500bda5ae2d8491f073dc48e36d985e",
+      "checkedAt": "2026-09-27T07:32:43.749Z",
+      "method": "curl unique c + no-cache",
+      "results": [
+        {
+          "route": "/",
+          "frozenIdentity": true,
+          "designVerified": true
+        },
+        {
+          "route": "/makaleler/beta-hcg-testi/",
+          "frozenIdentity": true,
+          "designVerified": true
+        },
+        {
+          "route": "/fertilite-koruma/",
+          "frozenIdentity": true,
+          "designVerified": true
+        },
+        {
+          "route": "/ilac-rehberi/",
+          "frozenIdentity": true,
+          "designVerified": true
+        },
+        {
+          "route": "/makaleler/varikosel-nedir-ne-zaman-ameliyat-gerekir/",
+          "frozenIdentity": true,
+          "designVerified": true
+        },
+        {
+          "route": "/tani-sureci/",
+          "frozenIdentity": true,
+          "designVerified": true
+        }
+      ]
+    }
+  },
+  {
+    "pr": 210,
+    "prUrl": "https://github.com/senaiaksoy/tupbebek/pull/210",
+    "commit": "29a316a1ac730e6b319191865bf83e93c7d04edc",
+    "checkedAt": "2026-09-27T09:32:48.104Z",
+    "checkRun": {
+      "id": 108592950663,
+      "headSha": "29a316a1ac730e6b319191865bf83e93c7d04edc",
+      "conclusion": "success",
+      "completedAt": "2026-09-27T09:31:15Z",
+      "deploymentUrl": "https://dash.cloudflare.com/?to=/4797b38bf5bfb1b15a30ac27f0a9a78f/pages/view/tupbebek/69be4da2-20de-416f-a8cf-59d0f79f90d8"
+    },
+    "liveVerification": {
+      "commit": "29a316a1ac730e6b319191865bf83e93c7d04edc",
+      "deploymentUrl": "https://dash.cloudflare.com/?to=/4797b38bf5bfb1b15a30ac27f0a9a78f/pages/view/tupbebek/69be4da2-20de-416f-a8cf-59d0f79f90d8",
+      "checkRunId": 108592950663,
+      "completedAt": "2026-09-27T09:31:15Z",
+      "checkedAt": "2026-09-27T09:32:48.104Z",
+      "method": "curl unique c + no-cache; offline DOM integrity comparison",
+      "results": [
+        {
+          "route": "/",
+          "frozenIdentity": true,
+          "textSame": true,
+          "linksSame": true,
+          "imagesSame": true,
+          "schemasSame": true,
+          "bodySame": true,
+          "cookieInFooter": true,
+          "floatingCookieAbsent": true,
+          "archiveOpenFallback": true,
+          "faqCount": 3,
+          "aiNotes": 2,
+          "editorialGrouped": true,
+          "trustLabels": 4
+        },
+        {
+          "route": "/makaleler/beta-hcg-testi/",
+          "frozenIdentity": true,
+          "textSame": true,
+          "linksSame": true,
+          "imagesSame": true,
+          "schemasSame": true,
+          "bodySame": true,
+          "cookieInFooter": true,
+          "floatingCookieAbsent": true,
+          "faqCount": 0,
+          "aiNotes": 0,
+          "editorialGrouped": false
+        },
+        {
+          "route": "/fertilite-koruma/",
+          "frozenIdentity": true,
+          "textSame": true,
+          "linksSame": true,
+          "imagesSame": true,
+          "schemasSame": true,
+          "bodySame": true,
+          "cookieInFooter": true,
+          "floatingCookieAbsent": true,
+          "faqCount": 0,
+          "aiNotes": 0,
+          "editorialGrouped": false
+        },
+        {
+          "route": "/ilac-rehberi/",
+          "frozenIdentity": true,
+          "textSame": true,
+          "linksSame": true,
+          "imagesSame": true,
+          "schemasSame": true,
+          "bodySame": true,
+          "cookieInFooter": true,
+          "floatingCookieAbsent": true,
+          "faqCount": 0,
+          "aiNotes": 0,
+          "editorialGrouped": false
+        },
+        {
+          "route": "/makaleler/varikosel-nedir-ne-zaman-ameliyat-gerekir/",
+          "frozenIdentity": true,
+          "textSame": true,
+          "linksSame": true,
+          "imagesSame": true,
+          "schemasSame": true,
+          "bodySame": true,
+          "cookieInFooter": true,
+          "floatingCookieAbsent": true,
+          "faqCount": 0,
+          "aiNotes": 0,
+          "editorialGrouped": false
+        },
+        {
+          "route": "/tani-sureci/",
+          "frozenIdentity": true,
+          "textSame": true,
+          "linksSame": true,
+          "imagesSame": true,
+          "schemasSame": true,
+          "bodySame": true,
+          "cookieInFooter": true,
+          "floatingCookieAbsent": true,
+          "faqCount": 0,
+          "aiNotes": 0,
+          "editorialGrouped": false
+        }
+      ]
+    }
+  }
+]

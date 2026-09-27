@@ -1,0 +1,44 @@
+[
+  {
+    "name": "home-etiketler",
+    "route": "/",
+    "selector": "main aside",
+    "width": 390
+  },
+  {
+    "name": "footer-yazilar",
+    "route": "/",
+    "selector": "footer[role=\"contentinfo\"] > div > div:nth-of-type(3)",
+    "width": 390
+  },
+  {
+    "name": "kaynak-hedefleri",
+    "route": "/makaleler/beta-hcg-testi/",
+    "selector": "section[aria-label=\"Kaynaklar\"]",
+    "width": 390
+  },
+  {
+    "name": "ilac-hizli-gezinme",
+    "route": "/ilac-rehberi/",
+    "selector": "#quick-nav",
+    "width": 390
+  },
+  {
+    "name": "ilac-kucuk-yazi",
+    "route": "/ilac-rehberi/",
+    "selector": "#tetikleme p[class*=\"11px\"]",
+    "width": 1366
+  },
+  {
+    "name": "e-kitap-sss",
+    "route": "/e-kitap-indir/",
+    "selector": "main section:last-child",
+    "width": 390
+  },
+  {
+    "name": "makale-sidebar",
+    "route": "/makaleler/beta-hcg-testi/",
+    "selector": "main aside[class*=\"lg:block\"] h4",
+    "width": 1366
+  }
+]
