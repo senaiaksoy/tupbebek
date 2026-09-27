@@ -6,6 +6,12 @@
       "runtimeExecutable": "npx",
       "runtimeArgs": ["astro", "dev", "--host", "--port", "4399"],
       "port": 4399
+    },
+    {
+      "name": "dist-static",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "4410", "--directory", "dist"],
+      "port": 4410
     }
   ]
 }
