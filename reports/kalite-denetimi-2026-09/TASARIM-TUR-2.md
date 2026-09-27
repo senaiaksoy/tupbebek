@@ -2,6 +2,8 @@
 
 ## Başlama kararı — 27 Eylül 2026
 
+**Tur tamamlandı:** PR-A #208, PR-B #209 ve PR-C #210 ayrı kullanıcı onaylarıyla birleşti ve canlıda doğrulandı. Depoda taşınabilir yayın kanıtı: [TASARIM-TUR-2-YAYIN-KANITI.json](TASARIM-TUR-2-YAYIN-KANITI.json). Sonraki dar denetim: [kalan erişilebilirlik bulguları](ERISILEBILIRLIK-KALAN-BULGULAR-2026-09-27.md).
+
 Dr. Aksoy, §0 seçenekleri sunulduktan sonra “şimdi başla” dedi. 10 Kasım civarındaki GSC yeniden ölçümünü beklemeden tasarım turu başlatıldı; önce/sonra GSC değerlendirmesinde bu değişiklikler hesaba katılmalı. Bu karar, PR-A/B/C'nin birleştirme onayı değildir; her PR için ayrıca onay alınacak.
 
 ## PR-A — Inter seçimi ve uygulama
@@ -135,4 +137,4 @@ Mobil ana sayfa **19795 → 11906 px** (−%39,9): ≤12000 px hedefi sağlandı
 - `src/pages/index.astro`; `src/components/Header.astro`, `header/MegaMenuItem.astro`, `RecentArticlesCarousel.astro`, `FAQHighlights.astro`; `home/Hero.astro`, `HeroSection.astro`, `QuickGuideCards.astro`, `EssentialReading.astro`, `AlphabetIndex.astro`, `ExpertBoard.astro`, `Methodology.astro`, `SymptomGuide.astro`; bu rapor ve 11 WebP.
 - Kanıt `output/playwright/tasarim-tur-2-c/{before-c,after-c}/{qa,perf}.json`, `freeze-before-c.json`, `integrity.json`, `interactions.json`; build/preflight logları `tmp/_design-round2-c-*.log`.
 
-**Durum:** PR-C incelemeye hazır. Devir §1 uyarınca bu PR’a özel Dr. Aksoy **“onay”ı** gelmeden birleştirilmez. Onaydan sonra Cloudflare güncel check-run ve cache-bypass canlı curl ile doğrulanacak.
+**Durum:** Dr. Aksoy’un #210’a özel “onay”ıyla [PR-C #210](https://github.com/senaiaksoy/tupbebek/pull/210) 27 Eylül 2026 09:28:29 UTC’de birleşti (`29a316a1ac730e6b319191865bf83e93c7d04edc`). Cloudflare production `tupbebek` / `69be4da2-20de-416f-a8cf-59d0f79f90d8`; güncel check-run `108592950663` 09:31:15 UTC’de completed/success. 09:32:48 UTC’de benzersiz `?c=` + no-cache curl ile 6/6 canlı sayfa doğrulandı: URL/title/meta description/canonical/H1, mevcut paragraf/başlık metinleri, bağlantılar, görseller ve JSON-LD aynı; yalnız kadın kartına temsili görsel notu eklendi. Ana sayfada dört güven etiketi, iki temsili görsel notu, üç SSS details, arşiv ve birleşik editoryal bölüm mevcut; mobil/masaüstü arşiv-SSS durumunu ayarlayan ve eski harf çapalarını açan JavaScript canlıda. Footer çerez bağlantısı korunuyor, yüzen düğme yok. Fertilite-koruma “Tıbbi Rehber” ve makale kısa cevap tekrarının kalkması da doğrulandı. Kanıt: `output/playwright/tasarim-tur-2-c/live/{check-runs,verification}.json` ve canlı HTML/JS çıktıları. PR-A/B/C tamamlandı ve canlıda. Bu yayın sonuç satırı birleştirme sonrasında yerel rapora eklendi.

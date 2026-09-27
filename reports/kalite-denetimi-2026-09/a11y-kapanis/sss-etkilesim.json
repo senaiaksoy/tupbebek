@@ -1,0 +1,58 @@
+[
+  {
+    "kind": "mobile",
+    "paddingOpens": false,
+    "spaceOpens": true,
+    "spaceCloses": true,
+    "sizes": [
+      {
+        "text": "E-kitaba erişim koşulu nedir? ▼",
+        "w": 310,
+        "h": 26.390625
+      },
+      {
+        "text": "Verilerim nasıl kullanılacak? ▼",
+        "w": 310,
+        "h": 26.390625
+      },
+      {
+        "text": "PDF'i her zaman indirebilir miyim? ▼",
+        "w": 310,
+        "h": 26.390625
+      },
+      {
+        "text": "Tüp bebek haricinde de uygulanabilir mi? ▼",
+        "w": 310,
+        "h": 52.78125
+      }
+    ]
+  },
+  {
+    "kind": "desktop",
+    "paddingOpens": false,
+    "spaceOpens": true,
+    "spaceCloses": true,
+    "sizes": [
+      {
+        "text": "E-kitaba erişim koşulu nedir? ▼",
+        "w": 784,
+        "h": 26.390625
+      },
+      {
+        "text": "Verilerim nasıl kullanılacak? ▼",
+        "w": 784,
+        "h": 26.390625
+      },
+      {
+        "text": "PDF'i her zaman indirebilir miyim? ▼",
+        "w": 784,
+        "h": 26.390625
+      },
+      {
+        "text": "Tüp bebek haricinde de uygulanabilir mi? ▼",
+        "w": 784,
+        "h": 26.390625
+      }
+    ]
+  }
+]
