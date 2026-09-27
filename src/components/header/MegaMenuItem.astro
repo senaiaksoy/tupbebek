@@ -11,15 +11,13 @@ const { menu } = Astro.props;
 <div class="mega-menu-group h-full flex items-center">
   <!-- Menu Button -->
   <button
-    class="mega-menu-btn px-4 py-3 min-h-[48px] text-sm font-bold text-gray-800 hover:text-primary-600 transition-colors flex items-center gap-1 rounded-lg"
+    class="mega-menu-btn px-2 py-3 min-h-[48px] text-xs font-bold text-gray-800 hover:text-primary-600 transition-colors flex items-center gap-1 whitespace-nowrap rounded-lg"
     aria-haspopup="true"
     aria-expanded="false"
     data-menu-label={menu.label}
   >
     {menu.label}
-    <span class="material-symbols-outlined text-xs transition-transform mega-menu-chevron">
-      expand_more
-    </span>
+    <svg class="w-3 h-3 shrink-0 transition-transform mega-menu-chevron" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="m3 4.5 3 3 3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg>
   </button>
 
   <!-- Mega Menu Panel -->
