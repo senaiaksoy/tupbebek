@@ -34,7 +34,7 @@ export const POST: APIRoute = async ({ request, locals }) => {
       );
     }
 
-    // Kişisel veri (ad, e-posta, telefon) loglanmaz; yalnızca kimliksiz alanlar.
+    // Kişisel veri (ad, e-posta) loglanmaz; yalnızca kimliksiz alanlar.
     console.log('📧 E-Kitap İndir İsteği:', {
       status: status || null,
       bilgilendirmeIzni,

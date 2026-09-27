@@ -142,20 +142,6 @@ import Footer from '../components/Footer.astro';
                                     />
                                 </div>
 
-                                <!-- Telefon (Opsiyonel) -->
-                                <div>
-                                    <label for="phone" class="block text-sm font-semibold text-gray-900 mb-2">
-                                        Telefon Numarası <span class="text-gray-500 text-xs">(opsiyonel)</span>
-                                    </label>
-                                    <input
-                                        type="tel"
-                                        id="phone"
-                                        name="phone"
-                                        placeholder="+90 5__ ___ __ __"
-                                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-mint-600 focus:border-transparent outline-none text-gray-900 placeholder-gray-500"
-                                    />
-                                </div>
-
                                 <!-- Harita Durumu -->
                                 <div>
                                     <label for="status" class="block text-sm font-semibold text-gray-900 mb-2">
@@ -341,7 +327,6 @@ import Footer from '../components/Footer.astro';
 
         const fullname = getElement<HTMLInputElement>('fullname').value;
         const email = getElement<HTMLInputElement>('email').value;
-        const phone = getElement<HTMLInputElement>('phone').value || '';
         const status = getElement<HTMLSelectElement>('status').value || '';
         const kvkk = getElement<HTMLInputElement>('kvkk').checked;
         const bilgilendirmeIzni = getElement<HTMLInputElement>('bilgilendirme').checked;
@@ -361,7 +346,7 @@ import Footer from '../components/Footer.astro';
                 await fetch('/api/ebook-subscribe', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ fullname, email, phone, status, bilgilendirmeIzni })
+                    body: JSON.stringify({ fullname, email, status, bilgilendirmeIzni })
                 });
             } catch (err) {
                 console.log('Sunucuya kaydedilemedi, ancak indirme devam ediyor.');
