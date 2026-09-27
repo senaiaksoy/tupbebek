@@ -13,7 +13,11 @@ const checks = [
   },
   {
     file: 'src/components/Footer.astro',
-    selectors: ['<footer '],
+    selectors: ['<footer ', '<button id="cookie-preferences-toggle"'],
+  },
+  {
+    file: 'src/pages/instagram.astro',
+    selectors: ['<button id="cookie-preferences-toggle"'],
   },
   {
     file: 'src/components/SearchAutocomplete.astro',
@@ -23,7 +27,6 @@ const checks = [
     file: 'src/components/CookieConsent.astro',
     selectors: [
       '<div\n  id="cookie-consent-overlay"',
-      '<button\n  id="cookie-preferences-toggle"',
     ],
   },
 ];

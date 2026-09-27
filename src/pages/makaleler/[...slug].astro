@@ -30,6 +30,8 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const { Content, headings } = await entry.render();
+// Display-only: keep the original summary available to metadata and schema.
+const displaySummary = entry.data.summary?.replace(/^\s*k[ıi]sa\s+cevap\s*:\s*/i, '');
 
 // Resolve author identity without rewriting an editorial-board author as a physician.
 const DEFAULT_AUTHOR_TITLE = 'Kadın Hastalıkları ve Doğum Uzmanı';
@@ -159,7 +161,7 @@ const heroSrcSet = getResponsiveImageSrcSet(sanitizedImage);
                         <h2 id="article-summary-title" class="text-sm font-bold text-primary-900 uppercase tracking-wider mb-2">
                             {isEditorColumn ? 'Baş editörün notu' : 'Kısa cevap'}
                         </h2>
-                        <p class="text-sm md:text-base text-gray-700 leading-relaxed">{entry.data.summary}</p>
+                        <p class="text-sm md:text-base text-gray-700 leading-relaxed">{displaySummary}</p>
                         {entry.data.summaryReferences && entry.data.summaryReferences.length > 0 && (
                             <p class="mt-3 text-xs md:text-sm text-gray-600 leading-relaxed">
                                 <span class="font-semibold text-gray-700">Başlıca kaynaklar:</span>{' '}

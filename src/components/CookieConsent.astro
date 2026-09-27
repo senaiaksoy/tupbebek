@@ -48,16 +48,6 @@ const { version = "1.4" } = Astro.props;
   </div>
 </div>
 
-<button
-  id="cookie-preferences-toggle"
-  type="button"
-  class="fixed left-3 bottom-20 md:left-5 md:bottom-5 z-[95] hidden rounded-full border border-gray-300 bg-white px-4 py-2 text-xs font-bold text-gray-800 shadow-lg transition-colors hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary-300 focus:ring-offset-2"
-  aria-controls="cookie-consent"
-  data-nosnippet
->
-  Çerez tercihleri
-</button>
-
 <script define:vars={{ version }}>
   // Default-hidden; reveal only if consent is missing.
   // GA4 loads separately with Consent Mode denied until this choice is made.
@@ -146,7 +136,6 @@ const { version = "1.4" } = Astro.props;
   const hide = () => {
     overlay.classList.add('opacity-0');
     banner.setAttribute('aria-hidden', 'true');
-    toggle.classList.remove('hidden');
     document.removeEventListener('keydown', keepFocusInModal);
     unlockPage();
     setTimeout(() => {
@@ -162,7 +151,6 @@ const { version = "1.4" } = Astro.props;
     lastFocusedElement = document.activeElement;
     overlay.classList.remove('hidden');
     overlay.classList.add('grid');
-    toggle.classList.add('hidden');
     lockPage();
     requestAnimationFrame(() => {
       overlay.classList.remove('opacity-0');
@@ -182,8 +170,6 @@ const { version = "1.4" } = Astro.props;
     } else {
       window.addEventListener('load', scheduleShow, { once: true });
     }
-  } else {
-    toggle.classList.remove('hidden');
   }
 
   acceptButton.addEventListener('click', () => {
@@ -196,7 +182,7 @@ const { version = "1.4" } = Astro.props;
     hide();
   });
 
-  toggle.addEventListener('click', show);
+  toggle?.addEventListener('click', show);
 </script>
 
 <style>
