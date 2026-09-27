@@ -238,7 +238,7 @@ import Footer from '../components/Footer.astro';
                 message: (document.getElementById('contact-message') as HTMLTextAreaElement).value,
             };
 
-            const response = await fetch('/api/contact', {
+            const response = await fetch('/api/contact/', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(formData),

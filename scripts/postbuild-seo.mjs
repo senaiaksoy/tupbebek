@@ -269,6 +269,16 @@ function canonicalRedirectFor(requestUrl) {
     });
   }
 
+  // API adresleri trailingSlash: 'always' ile yalnızca eğik çizgili biçimde
+  // eşleşir. Eğik çizgisiz istekler 308 ile yönlendirilir (308, POST yöntemini
+  // ve gövdesini korur; 301 POST'u GET'e çevirirdi).
+  if (url.pathname.startsWith('/api/') && !url.pathname.endsWith('/') && !/\\.[a-z0-9]+$/iu.test(url.pathname)) {
+    return new Response(null, {
+      status: 308,
+      headers: redirectHeaders(\`\${url.pathname}/\${url.search}\`),
+    });
+  }
+
   // Tracking params are stripped from pages only; static assets keep their
   // version query (e.g. /fonts/deferred.css?rev=...) so cache-busting works.
   for (const key of isPagePath(url.pathname) ? [...url.searchParams.keys()] : []) {
