@@ -9,6 +9,7 @@ import { execSync } from 'node:child_process';
 import remarkInlineEvidence from './src/utils/remarkInlineEvidence.mjs';
 import remarkMedicalCompliance from './src/utils/remarkMedicalCompliance.mjs';
 import remarkRemoveFaqSchema from './src/utils/remarkRemoveFaqSchema.mjs';
+import rehypeArticleContents from './src/utils/rehypeArticleContents.mjs';
 
 function getArticleDates() {
   const articlesDir = path.resolve('./src/content/articles');
@@ -164,6 +165,7 @@ export default defineConfig({
   output: 'hybrid',
   trailingSlash: 'always',
   markdown: {
+    rehypePlugins: [rehypeArticleContents],
     remarkPlugins: [remarkMedicalCompliance, remarkRemoveFaqSchema, remarkInlineEvidence],
   },
   adapter: cloudflare({

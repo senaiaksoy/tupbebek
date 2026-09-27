@@ -1,0 +1,39 @@
+<script>
+  const desktop = window.matchMedia('(min-width: 1024px)');
+  const setContentsState = () => {
+    document.querySelectorAll<HTMLDetailsElement>('details.article-contents').forEach(contents => {
+      contents.open = desktop.matches;
+    });
+  };
+  setContentsState();
+  desktop.addEventListener('change', setContentsState);
+</script>
+
+<style is:global>
+  .prose-medical .article-contents {
+    margin: 2rem 0;
+    padding: 0 1rem;
+    border: 1px solid var(--color-gray-200);
+    border-radius: 0.75rem;
+    background: white;
+  }
+  .article-contents > summary {
+    min-height: 44px;
+    padding: 0.75rem 0;
+    cursor: pointer;
+    color: var(--color-gray-800);
+  }
+  .prose-medical .article-contents > summary > h2 {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+  .prose-medical .article-contents a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+  }
+</style>
