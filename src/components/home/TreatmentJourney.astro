@@ -1,0 +1,209 @@
+---
+/**
+ * Tüp bebek süreci şeridi (ana sayfa).
+ * Altı aşama, her biri ilgili rehbere bağlanır. Zamanlamalar
+ * tup-bebek-sureci-rehber makalesindeki tablodan alınmıştır.
+ * İkonlar satır içi SVG çizgi çizimdir (bebek görseli yok).
+ */
+const steps = [
+  {
+    no: 1,
+    title: 'Değerlendirme',
+    timing: 'Tedavi öncesi',
+    href: '/tani-sureci/',
+    icon: 'assessment',
+  },
+  {
+    no: 2,
+    title: 'Yumurtalık uyarımı',
+    timing: 'Genellikle 8–14 gün',
+    href: '/ilac-rehberi/',
+    icon: 'stimulation',
+  },
+  {
+    no: 3,
+    title: 'Yumurta toplama',
+    timing: 'Tetikten 34–38 saat sonra',
+    href: '/makaleler/tup-bebek-sureci-rehber/#opu',
+    icon: 'retrieval',
+  },
+  {
+    no: 4,
+    title: 'Laboratuvar',
+    timing: 'Genellikle 3–6 gün',
+    href: '/makaleler/tup-bebek-sureci-rehber/#laboratuvar',
+    icon: 'lab',
+  },
+  {
+    no: 5,
+    title: 'Transfer',
+    timing: 'Aynı veya sonraki siklus',
+    href: '/transfer-sureci/',
+    icon: 'transfer',
+  },
+  {
+    no: 6,
+    title: 'Gebelik testi',
+    timing: 'Ekibin belirlediği gün',
+    href: '/makaleler/beta-hcg-testi/',
+    icon: 'test',
+  },
+];
+---
+
+<section class="journey" aria-labelledby="journey-title">
+  <div class="flex items-end justify-between gap-4 mb-4">
+    <div>
+      <span class="text-xs font-bold uppercase tracking-[0.2em] text-mint-600 block mb-1">Süreç haritası</span>
+      <h2 id="journey-title" class="text-xl lg:text-2xl font-serif font-bold text-gray-900">Tüp bebek tedavisinde hangi aşamadasınız?</h2>
+    </div>
+    <a href="/makaleler/tup-bebek-sureci-rehber/" class="hidden sm:inline-flex min-h-11 items-center gap-1.5 text-sm font-semibold text-primary-600 hover:text-primary-800 shrink-0">
+      Tüm süreç <span class="material-symbols-outlined text-base" aria-hidden="true">arrow_forward</span>
+    </a>
+  </div>
+
+  <ol class="journey-track">
+    {steps.map((step) => (
+      <li class="journey-step">
+        <a href={step.href} class="journey-link group">
+          <span class="journey-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              {step.icon === 'assessment' && (
+                <>
+                  <rect x="12" y="9" width="22" height="30" rx="3" />
+                  <path d="M18 9v-2h10v2" />
+                  <path d="M17 18h12M17 24h8" />
+                  <circle cx="31" cy="32" r="6" class="accent" />
+                  <path d="M35.5 36.5l4 4" class="accent" />
+                </>
+              )}
+              {step.icon === 'stimulation' && (
+                <>
+                  <circle cx="24" cy="24" r="14" />
+                  <circle cx="19" cy="20" r="4" class="accent" />
+                  <circle cx="28" cy="19" r="3" class="accent" />
+                  <circle cx="27" cy="29" r="4.5" class="accent" />
+                  <circle cx="18" cy="29" r="2.5" class="accent" />
+                </>
+              )}
+              {step.icon === 'retrieval' && (
+                <>
+                  <circle cx="30" cy="18" r="8" />
+                  <circle cx="30" cy="18" r="3" class="accent" />
+                  <path d="M8 40l16-16" />
+                  <path d="M6 42l3-3" />
+                </>
+              )}
+              {step.icon === 'lab' && (
+                <>
+                  <ellipse cx="24" cy="30" rx="16" ry="6" />
+                  <path d="M8 30v3c0 3.3 7.2 6 16 6s16-2.7 16-6v-3" />
+                  <circle cx="21" cy="29" r="2.5" class="accent" />
+                  <circle cx="26" cy="29" r="2.5" class="accent" />
+                  <circle cx="23.5" cy="25" r="2.5" class="accent" />
+                  <path d="M24 8v8M20 12h8" />
+                </>
+              )}
+              {step.icon === 'transfer' && (
+                <>
+                  <path d="M7 13c4-2 8-1 11 3M41 13c-4-2-8-1-11 3" />
+                  <path d="M18 16h12c0 9-2 14-4 17v5h-4v-5c-2-3-4-8-4-17z" />
+                  <circle cx="24" cy="22" r="2.4" class="accent" />
+                  <path d="M24 46v-19" class="accent" />
+                </>
+              )}
+              {step.icon === 'test' && (
+                <>
+                  <path d="M18 6h12M20 6v26a4 4 0 008 0V6" />
+                  <path d="M20 22h8" class="accent" />
+                  <path d="M34 32l3 3 6-7" class="accent" />
+                </>
+              )}
+            </svg>
+          </span>
+          <span class="journey-no">{step.no}</span>
+          <span class="journey-title">{step.title}</span>
+          <span class="journey-timing">{step.timing}</span>
+        </a>
+      </li>
+    ))}
+  </ol>
+</section>
+
+<style>
+  .journey-track {
+    list-style: none;
+    margin: 0;
+    padding: 0.25rem 0 0.5rem;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 40%;
+    gap: 0.75rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    position: relative;
+  }
+  .journey-step {
+    scroll-snap-align: start;
+    position: relative;
+  }
+  /* Aşamaları birleştiren ince hat */
+  .journey-step:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 2.5rem;
+    left: calc(50% + 2rem);
+    right: calc(-50% + 2rem - 0.75rem);
+    border-top: 1.5px dashed #8bc9b0;
+    pointer-events: none;
+  }
+  .journey-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.25rem;
+    min-height: 100%;
+    padding: 0.75rem 0.5rem 1rem;
+    border-radius: 1rem;
+    color: #0f2b4b;
+    transition: background-color 200ms ease;
+  }
+  .journey-link:hover { background: #e8faf6; }
+  .journey-link:focus-visible { outline: 2px solid #2563a8; outline-offset: 2px; }
+  .journey-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 999px;
+    display: grid;
+    place-items: center;
+    background: #ffffff;
+    border: 1.5px solid #c2e8dc;
+    color: #1a4d7a;
+    margin-bottom: 0.25rem;
+  }
+  .journey-icon :global(.accent) { stroke: #3a8a66; }
+  .journey-link:hover .journey-icon { border-color: #3a8a66; }
+  .journey-no {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: #3a8a66;
+  }
+  .journey-title {
+    font-weight: 700;
+    font-size: 0.95rem;
+    line-height: 1.25;
+  }
+  .journey-timing {
+    font-size: 0.8rem;
+    color: #4b5563;
+    line-height: 1.3;
+  }
+  @media (min-width: 1024px) {
+    .journey-track { overflow: visible; grid-auto-columns: 1fr; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .journey-link { transition: none; }
+  }
+</style>
