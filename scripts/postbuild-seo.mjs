@@ -1,7 +1,14 @@
 #!/usr/bin/env node
 import fs from 'node:fs';
 import path from 'node:path';
-import { gone410ExactPaths } from '../src/utils/routeAliases.mjs';
+import {
+  gone410ExactPaths,
+  normalizeAliasTarget,
+  normalizeInternalPath,
+  routeAliases,
+  splitPathQueryHash,
+  wildcardFallbacks,
+} from '../src/utils/routeAliases.mjs';
 
 const rootDir = process.cwd();
 const distDir = path.join(rootDir, 'dist');
@@ -194,6 +201,17 @@ async function fetchStaticAsset(request, env) {
   return null;
 }
 
+// Takma ad araçları kendi kapsamında tutulur; paketlenmiş worker'daki
+// aynı adlı değişkenlerle çakışmaz.
+const __tbAliasTools = (() => {
+  const routeAliases = ${JSON.stringify(routeAliases)};
+  const wildcardFallbacks = ${JSON.stringify(wildcardFallbacks)};
+  ${splitPathQueryHash.toString()}
+  ${normalizeAliasTarget.toString()}
+  ${normalizeInternalPath.toString()}
+  return { normalizeInternalPath, wildcardFallbacks };
+})();
+
 function canonicalRedirectFor(requestUrl) {
   const url = new URL(requestUrl);
   let changed = false;
@@ -260,6 +278,24 @@ function canonicalRedirectFor(requestUrl) {
     }
   }
 
+  // Takma adlar ve eski ad alanları, büyük harf ve eğik çizgi düzeltmesinden
+  // ÖNCE çözülür; böylece /makaleler/yumurta-takibi tek 301 ile hedefe gider
+  // (önce /yumurta-takibi/, sonra hedef şeklinde iki adımlı zincir oluşmaz).
+  if (isPagePath(url.pathname)) {
+    const pathAndSearch = \`\${url.pathname}\${url.search}\`;
+    const aliased = __tbAliasTools.normalizeInternalPath(pathAndSearch);
+    if (aliased !== pathAndSearch) {
+      return new Response(null, { status: 301, headers: redirectHeaders(aliased) });
+    }
+
+    const loweredPath = url.pathname.replace(/%[0-9A-Fa-f]{2}|[A-Z]+/g, (m) => (m.startsWith('%') ? m : m.toLowerCase()));
+    for (const [prefix, destination] of __tbAliasTools.wildcardFallbacks) {
+      if (loweredPath.startsWith(prefix)) {
+        return new Response(null, { status: 301, headers: redirectHeaders(\`\${destination}\${url.search}\`) });
+      }
+    }
+  }
+
   // Page slugs are lowercase ASCII; /makaleler/beta-hCG-testi/ etc. must not 404.
   // Percent-encoded bytes (%C3) are ignored when checking for uppercase letters.
   if (isPagePath(url.pathname) && /[A-Z]/.test(url.pathname.replace(/%[0-9A-Fa-f]{2}/g, ''))) {
@@ -312,6 +348,27 @@ if (!fs.existsSync(distDir)) {
 }
 
 const htmlFiles = walk(distDir).filter((filePath) => filePath.endsWith('.html'));
+
+// Worker takma adları ve eski ad alanlarını statik sayfalardan önce çözer.
+// Gerçek bir sayfa bu kurallara takılırsa yönlendirilir ve kaybolur; build durdurulur.
+function assertRedirectsDoNotShadowPages(files) {
+  const pagePaths = files
+    .map((filePath) => '/' + path.relative(distDir, filePath).split(path.sep).join('/'))
+    .filter((rel) => rel !== '/404.html')
+    .map((rel) => rel.replace(/index\.html$/, '').replace(/\.html$/, '/'));
+  const shadowed = [];
+  for (const pagePath of pagePaths) {
+    const withoutSlash = pagePath.replace(/\/+$/, '') || '/';
+    if (routeAliases[withoutSlash] || routeAliases[withoutSlash.toLowerCase()]) shadowed.push(`${pagePath} (takma ad)`);
+    for (const [prefix] of wildcardFallbacks) {
+      if (pagePath.startsWith(prefix)) shadowed.push(`${pagePath} (önek ${prefix})`);
+    }
+  }
+  if (shadowed.length) {
+    throw new Error(`Yönlendirme kuralları gerçek sayfaları gölgeliyor: ${shadowed.join(', ')}`);
+  }
+}
+assertRedirectsDoNotShadowPages(htmlFiles);
 const rewrittenHtmlFiles = htmlFiles.reduce((count, filePath) => count + rewriteHtml(filePath), 0);
 const sitemapAliasWritten = writeSitemapAlias();
 const routesPatch = patchCloudflareRoutes();

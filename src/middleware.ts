@@ -1,5 +1,5 @@
 import { defineMiddleware } from 'astro:middleware';
-import { gone410ExactPaths, normalizeInternalPath } from './utils/routeAliases.mjs';
+import { gone410ExactPaths, normalizeInternalPath, wildcardFallbacks } from './utils/routeAliases.mjs';
 
 const TRACKING_QUERY_PARAMS = new Set([
   'fbclid',
@@ -18,23 +18,7 @@ const TRACKING_QUERY_PARAMS = new Set([
   'ved',
 ]);
 
-const WILDCARD_FALLBACKS: Array<[string, string]> = [
-  ['/blog/', '/makaleler/'],
-  ['/treatment/', '/tedavi-yontemleri/'],
-  ['/videolar/', '/makaleler/'],
-  ['/ar/', '/'],
-  ['/fr/', '/'],
-  ['/ivf-in-turkey/', '/'],
-  ['/ivf-explained/', '/ivf-rehberi/'],
-  ['/cost-of-ivf/', '/sss/'],
-  ['/about-us/', '/hakkimizda/'],
-  ['/contact-us/', '/iletisim/'],
-  ['/before-you-come/', '/tani-sureci/'],
-  ['/makaleler/kisirlik/', '/makaleler/'],
-  ['/makaleler/hamilelik-ve-dogum/', '/makaleler/'],
-  ['/makaleler/tup-bebek/', '/makaleler/'],
-  ['/makaleler/endoskopik-cerrahi/', '/makaleler/'],
-];
+const WILDCARD_FALLBACKS = wildcardFallbacks as Array<[string, string]>;
 
 // 410 Gone paths: template-render artifacts, legacy PHP probes, and retired
 // topic pages without a relevant replacement. Returning 410 instead of an

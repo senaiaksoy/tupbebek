@@ -416,6 +416,27 @@ export const routeAliases = {
   '/blog/yumurtaliklarin-uyarilmasinda-kullanilan-ilaclar-ve-kanser': '/makaleler/ivf-protokolleri',
 };
 
+// Bilinen eski ad alanları: özel bir takma adı olmayan bilinmeyen adresler
+// bu öneklerle başlıyorsa hedefe yönlendirilir. Worker, middleware ve
+// [...legacy].ts aynı listeyi kullanır.
+export const wildcardFallbacks = [
+  ['/blog/', '/makaleler/'],
+  ['/treatment/', '/tedavi-yontemleri/'],
+  ['/videolar/', '/makaleler/'],
+  ['/ar/', '/'],
+  ['/fr/', '/'],
+  ['/ivf-in-turkey/', '/'],
+  ['/ivf-explained/', '/ivf-rehberi/'],
+  ['/cost-of-ivf/', '/sss/'],
+  ['/about-us/', '/hakkimizda/'],
+  ['/contact-us/', '/iletisim/'],
+  ['/before-you-come/', '/tani-sureci/'],
+  ['/makaleler/kisirlik/', '/makaleler/'],
+  ['/makaleler/hamilelik-ve-dogum/', '/makaleler/'],
+  ['/makaleler/tup-bebek/', '/makaleler/'],
+  ['/makaleler/endoskopik-cerrahi/', '/makaleler/'],
+];
+
 export function normalizeInternalPath(value) {
   if (!value || typeof value !== 'string' || !value.startsWith('/')) {
     return value;
@@ -429,7 +450,7 @@ export function normalizeInternalPath(value) {
   return target ? normalizeAliasTarget(target, source) : value;
 }
 
-function splitPathQueryHash(value) {
+export function splitPathQueryHash(value) {
   const hashIndex = value.indexOf('#');
   const beforeHash = hashIndex >= 0 ? value.slice(0, hashIndex) : value;
   const hash = hashIndex >= 0 ? value.slice(hashIndex) : '';
@@ -440,7 +461,7 @@ function splitPathQueryHash(value) {
   return { path, query, hash };
 }
 
-function normalizeAliasTarget(target, source) {
+export function normalizeAliasTarget(target, source) {
   const targetParts = splitPathQueryHash(target);
   const path = targetParts.path;
   const query = source.query || targetParts.query;
