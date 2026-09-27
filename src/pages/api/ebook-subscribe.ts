@@ -13,7 +13,9 @@ export const POST: APIRoute = async ({ request, locals }) => {
 
   try {
     const data = await request.json();
-    const { fullname, email, phone, status } = data;
+    const { fullname, email, status } = data;
+    // İsteğe bağlı bilgilendirme izni; işaretlenmediyse false kabul edilir.
+    const bilgilendirmeIzni = data.bilgilendirmeIzni === true;
 
     // Validasyon
     if (!fullname || !email) {
@@ -32,12 +34,10 @@ export const POST: APIRoute = async ({ request, locals }) => {
       );
     }
 
-    // Log
+    // Kişisel veri (ad, e-posta, telefon) loglanmaz; yalnızca kimliksiz alanlar.
     console.log('📧 E-Kitap İndir İsteği:', {
-      fullname,
-      email,
-      phone,
-      status,
+      status: status || null,
+      bilgilendirmeIzni,
       timestamp: new Date().toISOString()
     });
 
@@ -90,18 +90,17 @@ export const POST: APIRoute = async ({ request, locals }) => {
 
               <p style="color: #374151; margin-bottom: 5px;">Sağlıklı kalın,</p>
               <p style="color: #374151; font-weight: bold; margin-top: 5px;">
-                Doç. Dr. Senai Aksoy<br>
-                <span style="font-size: 13px; font-weight: normal; color: #6b7280;">Üreme Tıbbı Uzmanı</span>
+                tupbebek.com Editöryal Ekip
               </p>
 
               <footer style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #e5e7eb; color: #9ca3af; font-size: 12px; text-align: center;">
-                <p>© 2024 tupbebek.com - Tüp Bebek Rehberi</p>
+                <p>© ${new Date().getFullYear()} tupbebek.com - Tüp Bebek Rehberi</p>
               </footer>
             </div>
           `
         });
 
-        console.log('✅ Email gönderildi:', email);
+        console.log('✅ E-kitap e-postası gönderildi');
       } catch (emailError) {
         console.warn('⚠️ Email gönderimi başarısız:', emailError);
         // Email hatası indirmeyi engellemesin

@@ -185,7 +185,22 @@ import Footer from '../components/Footer.astro';
                                             class="w-5 h-5 rounded border-gray-300 text-mint-600 mt-0.5"
                                         />
                                         <span class="text-xs text-gray-600 leading-relaxed">
-                                            Kişisel verilerim <a href="/gizlilik-politikasi" class="text-mint-600 hover:underline font-semibold">Gizlilik Politikası</a>'na uygun şekilde işlenebilir. E-kitap içeriği ve Doç. Dr. Senai Aksoy'dan bilgilendirme mesajları almak için haberleşebilirsiniz. <span class="text-red-500">*</span>
+                                            <a href="/gizlilik-politikasi" class="text-mint-600 hover:underline font-semibold">Gizlilik Politikası ve KVKK Aydınlatma Metni</a>'ni okudum. Formdaki bilgilerim yalnızca e-kitabın gönderilmesi için işlenecektir. <span class="text-red-500">*</span>
+                                        </span>
+                                    </label>
+                                </div>
+
+                                <!-- İsteğe bağlı bilgilendirme izni -->
+                                <div>
+                                    <label class="flex items-start gap-3 cursor-pointer">
+                                        <input
+                                            type="checkbox"
+                                            id="bilgilendirme"
+                                            name="bilgilendirme"
+                                            class="w-5 h-5 rounded border-gray-300 text-mint-600 mt-0.5"
+                                        />
+                                        <span class="text-xs text-gray-600 leading-relaxed">
+                                            tupbebek.com'dan e-posta ile bilgilendirme mesajları almak istiyorum. (İsteğe bağlı; bilgi@tupbebek.com adresine yazarak istediğiniz zaman vazgeçebilirsiniz.)
                                         </span>
                                     </label>
                                 </div>
@@ -267,7 +282,7 @@ import Footer from '../components/Footer.astro';
                             <span class="group-open:rotate-180 transition-transform">▼</span>
                         </summary>
                         <p class="text-gray-700 px-6 pb-6 text-sm leading-relaxed">
-                            E-kitap bilgilendirme amacıyla paylaşılır. Herhangi bir ücret talep edilmez; e-posta yalnızca içerik paylaşımı ve bilgilendirme için kullanılır.
+                            E-kitap bilgilendirme amacıyla paylaşılır. Herhangi bir ücret talep edilmez. E-postanız e-kitabın gönderilmesi için, ayrıca yalnızca izin verirseniz bilgilendirme mesajları için kullanılır.
                         </p>
                     </details>
 
@@ -277,7 +292,7 @@ import Footer from '../components/Footer.astro';
                             <span class="group-open:rotate-180 transition-transform">▼</span>
                         </summary>
                         <p class="text-gray-700 px-6 pb-6 text-sm leading-relaxed">
-                            E-postanız e-kitabı indirme ve ileride önemli bilgiler yapıldığında haber gönderme amacıyla kullanılır. Üçüncü taraflarla paylaşılmaz, <a href="/gizlilik-politikasi" class="text-mint-600 hover:underline font-semibold">Gizlilik Politikası</a>'nı okuyabilirsiniz.
+                            E-postanız, e-kitabın indirme bağlantısını göndermek için kullanılır. Formda ayrıca izin verdiyseniz ileride bilgilendirme mesajları da gönderilebilir. Adresiniz satılmaz ve reklam amacıyla başkalarıyla paylaşılmaz; yalnızca e-posta gönderimi gibi teknik hizmetler için hizmet sağlayıcılarımızca işlenir. Ayrıntılar için <a href="/gizlilik-politikasi" class="text-mint-600 hover:underline font-semibold">Gizlilik Politikası</a>'nı okuyabilirsiniz.
                         </p>
                     </details>
 
@@ -329,9 +344,10 @@ import Footer from '../components/Footer.astro';
         const phone = getElement<HTMLInputElement>('phone').value || '';
         const status = getElement<HTMLSelectElement>('status').value || '';
         const kvkk = getElement<HTMLInputElement>('kvkk').checked;
+        const bilgilendirmeIzni = getElement<HTMLInputElement>('bilgilendirme').checked;
 
         if (!kvkk) {
-            alert('Lütfen KVKK onayını işaretleyiniz');
+            alert('Lütfen Aydınlatma Metni onay kutusunu işaretleyiniz');
             return;
         }
 
@@ -345,7 +361,7 @@ import Footer from '../components/Footer.astro';
                 await fetch('/api/ebook-subscribe', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ fullname, email, phone, status })
+                    body: JSON.stringify({ fullname, email, phone, status, bilgilendirmeIzni })
                 });
             } catch (err) {
                 console.log('Sunucuya kaydedilemedi, ancak indirme devam ediyor.');
