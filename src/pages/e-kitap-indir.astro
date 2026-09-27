@@ -343,7 +343,7 @@ import Footer from '../components/Footer.astro';
         try {
             // İndirme işlemini kaydet ve e-posta gönder (arka planda)
             try {
-                await fetch('/api/ebook-subscribe', {
+                await fetch('/api/ebook-subscribe/', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ fullname, email, status, bilgilendirmeIzni })
