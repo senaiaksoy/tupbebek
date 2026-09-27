@@ -826,3 +826,21 @@ i {
 .prose-medical tbody tr:hover {
   background-color: #e3ecf8;
 }
+
+/* Ana sayfa fotoğraf tonu: farklı kaynaklardan gelen fotoğrafları
+   marka paletine (lacivert → nane) yaklaştırır. Görsel dosyaları değişmez. */
+.photo-tone {
+  position: relative;
+  isolation: isolate;
+}
+.photo-tone img {
+  filter: saturate(0.6) contrast(1.05);
+}
+.photo-tone::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(160deg, rgba(37, 99, 168, 0.55) 0%, rgba(58, 138, 102, 0.45) 100%);
+  mix-blend-mode: soft-light;
+}

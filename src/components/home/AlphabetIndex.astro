@@ -76,9 +76,9 @@ const totalArticles = articles.length;
         </div>
 
         <!-- Grouped Article List -->
-        <details id="home-article-archive" open class="bg-white rounded-2xl border border-gray-200 p-4 md:p-8 lg:p-10">
-            <summary class="min-h-11 cursor-pointer py-3 font-semibold text-gray-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600 lg:hidden">Tüm Makaleler ({totalArticles})</summary>
-            <div class="columns-1 sm:columns-2 lg:columns-3 gap-x-10 gap-y-0 mt-4 lg:mt-0">
+        <details id="home-article-archive" class="bg-white rounded-2xl border border-gray-200 px-4 py-2 md:px-6 md:py-3">
+            <summary class="min-h-11 cursor-pointer py-3 font-semibold text-gray-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600">Tüm Makaleler ({totalArticles}) · başlıkları göster</summary>
+            <div class="columns-1 sm:columns-2 lg:columns-3 gap-x-10 gap-y-0 mt-4">
                 {lettersInOrder.map(letter => (
                     <div class="break-inside-avoid mb-8" id={`harf-${letter}`}>
                         <div class="flex items-baseline gap-3 mb-3 pb-2 border-b-2 border-primary-100">
@@ -125,7 +125,6 @@ const totalArticles = articles.length;
 
 <script>
     const archive = document.querySelector<HTMLDetailsElement>('#home-article-archive');
-    const desktop = window.matchMedia('(min-width: 1024px)');
     const openFragment = () => {
         let fragment: string;
         try { fragment = decodeURIComponent(window.location.hash.slice(1)); } catch { return; }
@@ -137,8 +136,6 @@ const totalArticles = articles.length;
         }
     };
     if (archive) {
-        archive.open = desktop.matches;
-        desktop.addEventListener('change', () => { archive.open = desktop.matches; openFragment(); });
         document.querySelectorAll<HTMLAnchorElement>('.alphabet-chip').forEach(link => {
             link.addEventListener('click', () => { archive.open = true; });
         });
