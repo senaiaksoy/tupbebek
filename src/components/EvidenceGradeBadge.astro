@@ -1,0 +1,16 @@
+---
+import { EVIDENCE_GRADE_MAP, type RecommendationGrade } from '../data/evidenceGrades';
+interface Props { grade: RecommendationGrade; }
+const { grade } = Astro.props;
+const activeGrade = EVIDENCE_GRADE_MAP[grade];
+const badgeColors = {
+  A: 'bg-emerald-100 text-emerald-900',
+  B: 'bg-sky-100 text-sky-900',
+  C: 'bg-amber-100 text-amber-900',
+  'D/E': 'bg-rose-100 text-rose-900',
+};
+---
+
+<span class:list={['inline-flex items-center rounded-full px-2.5 py-1 text-xs font-bold', badgeColors[grade]]} aria-label={`Kanıt durumu: ${activeGrade.grade} · ${activeGrade.label}. ${activeGrade.strength}`}>
+  {activeGrade.grade} · {activeGrade.label}
+</span>

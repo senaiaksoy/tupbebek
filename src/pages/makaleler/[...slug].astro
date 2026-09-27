@@ -12,6 +12,7 @@ import ArticleSchema from '../../components/ArticleSchema.astro';
 import ArticleReviewInfo from '../../components/ArticleReviewInfo.astro';
 import EEATBadge from '../../components/EEATBadge.astro';
 import KisaCevap from '../../components/KisaCevap.astro';
+import ArticleContentsBehavior from '../../components/ArticleContentsBehavior.astro';
 import EvidenceGradeCard from '../../components/EvidenceGradeCard.astro';
 import ReferenceList from '../../components/ReferenceList.astro';
 import MedicalDisclaimer from '../../components/MedicalDisclaimer.astro';
@@ -145,6 +146,8 @@ const heroSrcSet = getResponsiveImageSrcSet(sanitizedImage);
 
                 <!-- Yazar ve tıbbi inceleme -->
                 <EEATBadge
+                    compact
+                    evidenceGrade={!entry.data.hideEvidenceGrade ? entry.data.recommendationGrade : undefined}
                     author={authorName}
                     authorTitle={authorTitle}
                     authorCredentials={authorCredentials}
@@ -180,14 +183,10 @@ const heroSrcSet = getResponsiveImageSrcSet(sanitizedImage);
                     </KisaCevap>
                 )}
 
-                {!entry.data.hideEvidenceGrade && entry.data.recommendationGrade && (
-                    <EvidenceGradeCard grade={entry.data.recommendationGrade} />
-                )}
-
                 <!-- Hero Image — başlık, kimlik ve kısa cevaptan sonra -->
                 {entry.data.image && (
                     <figure class="mt-6 mb-0">
-                        <div class="aspect-video overflow-hidden rounded-xl border border-gray-100">
+                        <div class="h-32 sm:h-44 md:h-auto md:aspect-video overflow-hidden rounded-xl border border-gray-100">
                             <img
                                 src={sanitizedImage}
                                 alt={entry.data.imageAlt || entry.data.title}
@@ -269,6 +268,10 @@ const heroSrcSet = getResponsiveImageSrcSet(sanitizedImage);
                         reviewType={entry.data.reviewType}
                     />
 
+                    {!entry.data.hideEvidenceGrade && entry.data.recommendationGrade && (
+                        <EvidenceGradeCard grade={entry.data.recommendationGrade} />
+                    )}
+
                     <nav class="mt-5 text-sm leading-relaxed text-gray-600" aria-label="Konu merkezi">
                         <span>Bu konuyla ilgili diğer başlıklar: </span>
                         <a href={articleHub.href} class="font-semibold text-primary-700 underline underline-offset-2 hover:text-primary-900">
@@ -315,5 +318,6 @@ const heroSrcSet = getResponsiveImageSrcSet(sanitizedImage);
         </div>
     </main>
 
+    <ArticleContentsBehavior />
     <Footer />
 </BaseLayout>

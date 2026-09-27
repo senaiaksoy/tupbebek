@@ -1,4 +1,6 @@
 ---
+import EvidenceGradeBadge from './EvidenceGradeBadge.astro';
+import type { RecommendationGrade } from '../data/evidenceGrades';
 /**
  * Makale başında yalnızca okurun güven kararına yarayan kimlik bilgilerini
  * gösterir. Ayrıntılı inceleme yöntemi sayfanın sonunda yer alır.
@@ -14,6 +16,8 @@ interface Props {
     reviewType?: 'medical' | 'editorial';
     reviewDate?: string;
     lastModified?: string;
+    compact?: boolean;
+    evidenceGrade?: RecommendationGrade;
 }
 
 const {
@@ -27,6 +31,8 @@ const {
     reviewType = 'medical',
     reviewDate,
     lastModified,
+    compact = false,
+    evidenceGrade,
 } = Astro.props;
 
 const normalizePerson = (value?: string) =>
@@ -46,6 +52,34 @@ const identityLabel = reviewType === 'editorial'
     : 'Yazar ve tıbbi inceleme bilgileri';
 ---
 
+{compact ? (
+    <div class="article-byline grid gap-2 border-y border-gray-200 py-2 text-[13px] leading-relaxed text-gray-600" aria-label={identityLabel}>
+        <div class="article-byline-row grid grid-cols-[minmax(0,1fr)_auto] items-start gap-2">
+            <p class="m-0">
+                <span>{isSameAuthorAndReviewer ? 'Yazan ve tıbben inceleyen' : 'Yazan'}</span>{' '}
+                {authorUrl ? (
+                    <a href={authorUrl} class="inline-flex min-h-11 items-center font-semibold text-gray-900 underline decoration-gray-300 underline-offset-2 hover:text-primary-700">{author}</a>
+                ) : <strong class="font-semibold text-gray-900">{author}</strong>}
+                {authorTitle && <span> · {authorTitle}</span>}
+                {authorCredentials && <span> · {authorCredentials}</span>}
+            </p>
+            {authorYoutube && (
+                <a href={authorYoutube} target="_blank" rel="noopener noreferrer" class="inline-flex min-h-11 min-w-11 items-center justify-center rounded-full text-red-600 hover:bg-red-50" aria-label={`${author} YouTube kanalı`} title="YouTube">
+                    <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" /></svg>
+                </a>
+            )}
+        </div>
+        <div class="article-byline-row grid grid-cols-[minmax(0,1fr)_auto] items-start gap-2">
+            <p class="m-0">
+                {medicalReviewer && !isSameAuthorAndReviewer && <span>{reviewLabel}: <strong class="font-semibold text-gray-700">{medicalReviewer}</strong>{reviewerTitle && <> · {reviewerTitle}</>}{' · '}</span>}
+                {reviewDate && <span>İnceleme: {reviewDate}</span>}
+                {reviewDate && lastModified && <span> · </span>}
+                {lastModified && <span>Son güncelleme: {lastModified}</span>}
+            </p>
+            {evidenceGrade && <EvidenceGradeBadge grade={evidenceGrade} />}
+        </div>
+    </div>
+) : (
 <div class="border-y border-gray-200 py-3 text-sm text-gray-600" aria-label={identityLabel}>
     <div class="flex flex-wrap items-center gap-x-2 gap-y-1 leading-relaxed">
         <span class="text-gray-500">{isSameAuthorAndReviewer ? 'Yazan ve tıbben inceleyen' : 'Yazan'}</span>
@@ -86,3 +120,4 @@ const identityLabel = reviewType === 'editorial'
         {lastModified && <span>Son güncelleme: {lastModified}</span>}
     </div>
 </div>
+)}
