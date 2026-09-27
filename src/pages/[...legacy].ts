@@ -1,28 +1,12 @@
 import type { APIRoute } from 'astro';
-import { gone410ExactPaths, normalizeInternalPath } from '../utils/routeAliases.mjs';
+import { gone410ExactPaths, normalizeInternalPath, wildcardFallbacks } from '../utils/routeAliases.mjs';
 
 export const prerender = false;
 
 // Wildcard fallback prefixes: any unknown path starting with one of these
 // gets redirected to the destination. Used as a safety net for legacy URLs
 // that aren't covered by specific routeAliases entries.
-const WILDCARD_FALLBACKS: Array<[string, string]> = [
-  ['/blog/', '/makaleler/'],
-  ['/treatment/', '/tedavi-yontemleri/'],
-  ['/videolar/', '/makaleler/'],
-  ['/ar/', '/'],
-  ['/fr/', '/'],
-  ['/ivf-in-turkey/', '/'],
-  ['/ivf-explained/', '/ivf-rehberi/'],
-  ['/cost-of-ivf/', '/sss/'],
-  ['/about-us/', '/hakkimizda/'],
-  ['/contact-us/', '/iletisim/'],
-  ['/before-you-come/', '/tani-sureci/'],
-  ['/makaleler/kisirlik/', '/makaleler/'],
-  ['/makaleler/hamilelik-ve-dogum/', '/makaleler/'],
-  ['/makaleler/tup-bebek/', '/makaleler/'],
-  ['/makaleler/endoskopik-cerrahi/', '/makaleler/'],
-];
+const WILDCARD_FALLBACKS = wildcardFallbacks as Array<[string, string]>;
 
 // 410 Gone: template-render artifacts, legacy PHP probes, and retired topic
 // pages without a relevant replacement. Cloudflare Pages _redirects does not
@@ -35,7 +19,7 @@ const GONE_410_PREFIXES: string[] = [
   '/treatment/embryo-freezing/treatment/',
 ];
 
-const handle: APIRoute = ({ url, redirect }) => {
+const handle: APIRoute = async ({ url, redirect, locals, request }) => {
   if (GONE_410_EXACT.has(url.pathname) || GONE_410_PREFIXES.some((p) => url.pathname.startsWith(p)) || url.pathname.includes('/undefined')) {
     return new Response('Gone', {
       status: 410,
@@ -57,8 +41,32 @@ const handle: APIRoute = ({ url, redirect }) => {
     }
   }
 
-  return new Response('Not found', { status: 404 });
+  return notFound(url, request, locals);
 };
+
+// Bilinmeyen sayfa adreslerinde düz metin yerine sitenin 404 sayfası,
+// 404 durum koduyla gösterilir (menü ve arama okura açık kalır).
+async function notFound(url: URL, request: Request, locals: App.Locals): Promise<Response> {
+  const assets = (locals as { runtime?: { env?: { ASSETS?: { fetch: typeof fetch } } } }).runtime?.env?.ASSETS;
+  // Pages, .html uzantısını 308 ile kaldırabildiği için önce /404 denenir.
+  for (const candidate of assets ? ['/404', '/404.html'] : []) {
+    try {
+      const page = await assets!.fetch(new Request(new URL(candidate, url), { method: 'GET', redirect: 'manual' }));
+      if (page.status === 200) {
+        return new Response(request.method === 'HEAD' ? null : page.body, {
+          status: 404,
+          headers: {
+            'content-type': 'text/html; charset=utf-8',
+            'cache-control': 'public, max-age=300',
+          },
+        });
+      }
+    } catch {
+      // 404 sayfası okunamazsa düz metne düşülür.
+    }
+  }
+  return new Response('Not found', { status: 404, headers: { 'content-type': 'text/plain; charset=utf-8' } });
+}
 
 // Export every common HTTP method so HEAD/POST/etc are also redirected,
 // not just GET (e.g. curl -I sends HEAD and would otherwise get a 404).
