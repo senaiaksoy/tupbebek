@@ -4,6 +4,10 @@
 
 `humanize` istendiğinde [AGENTS.md içindeki kapsamlı humanize ve gerçek hekim yanıtları kurallarını](AGENTS.md#humanize-komutu--kapsamlı-düzenleme-ve-gerçek-hekim-yanıtları) oku ve uygula. Bu akış tüm metni kapsar; SSS yanıtları Dr. Aksoy'dan alınır. Ayrıntılar tek yerde, AGENTS.md'de tutulur.
 
+## Bekleyen hekim SSS soruları (her oturum)
+
+İçerik veya makale işinde, işin başında ve teslimde `docs/editorial/pending-physician-faq.md` dosyasını oku; bekleyen soru varsa Dr. Aksoy'a hangi makale için olduğunu belirterek en fazla üçer soruluk gruplarla hatırlat. Zorunlu "Dr. Aksoy'a en sık sorulan sorular" kuralı: AGENTS.md.
+
 ## Proje Tanimi
 
 tupbebek.com, Turkiye'nin ilk bagimsiz, reklamsiz, bilimsel ureme sagligi ve infertilite referans portalidir. Bas Editor **Doc. Dr. Senai Aksoy** liderliginde, **Egitici Pazarlama** stratejisiyle etik ve organik hasta (lead) uretimi hedeflenmektedir.
