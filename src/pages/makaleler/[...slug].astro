@@ -147,7 +147,9 @@ const heroSrcSet = getResponsiveImageSrcSet(sanitizedImage);
                 <!-- Yazar ve tıbbi inceleme -->
                 <EEATBadge
                     compact
-                    evidenceGrade={!entry.data.hideEvidenceGrade ? entry.data.recommendationGrade : undefined}
+                    evidenceGrade={!entry.data.hideEvidenceGrade
+                        ? entry.data.recommendationGrade
+                        : (!entry.data.recommendationGrade ? 'mixed' : undefined)}
                     author={authorName}
                     authorTitle={authorTitle}
                     authorCredentials={authorCredentials}

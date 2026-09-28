@@ -136,7 +136,8 @@ const articleFrontmatterSchema = z.object({
   // {{kanit:C}} veya {{kanit:D/E}} inline etiketleri kullanilir.
   recommendationGrade: recommendationGradeEnum.optional(),
   // Ulusal kayit / mevzuat / coklu kanit turu iceren makalelerde
-  // tekil "A-B-C oneri derecesi" kartini gizler.
+  // tekil "A-B-C oneri derecesi" kartini gizler. recommendationGrade de yoksa
+  // makale "Karma kanit" sayilir; kunyede ve makale sonunda bu rozet gosterilir.
   hideEvidenceGrade: z.boolean().optional(),
   // Bilimsel inceleme ve editoryal yontem notunu ustten alta tasiir.
   deferEditorialMeta: z.boolean().optional(),
