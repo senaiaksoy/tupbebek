@@ -271,6 +271,9 @@ const heroSrcSet = getResponsiveImageSrcSet(sanitizedImage);
                     {!entry.data.hideEvidenceGrade && entry.data.recommendationGrade && (
                         <EvidenceGradeCard grade={entry.data.recommendationGrade} />
                     )}
+                    {entry.data.hideEvidenceGrade && !entry.data.recommendationGrade && (
+                        <EvidenceGradeCard grade="mixed" />
+                    )}
 
                     <nav class="mt-5 text-sm leading-relaxed text-gray-600" aria-label="Konu merkezi">
                         <span>Bu konuyla ilgili diğer başlıklar: </span>

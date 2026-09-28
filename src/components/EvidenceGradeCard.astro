@@ -2,17 +2,27 @@
 import { EVIDENCE_GRADE_MAP, type RecommendationGrade } from '../data/evidenceGrades';
 
 interface Props {
-  grade: RecommendationGrade;
+  grade: RecommendationGrade | 'mixed';
 }
 
 const { grade } = Astro.props;
-const activeGrade = EVIDENCE_GRADE_MAP[grade];
+// 'mixed': tek derece verilmeyen karma kanıtlı genel rehberler (hideEvidenceGrade, derece yok).
+const activeGrade = grade === 'mixed' ? null : EVIDENCE_GRADE_MAP[grade];
 ---
 
 <p class="mt-4 flex flex-wrap items-center gap-2 text-sm text-gray-600" aria-label="Kanıt durumu">
   <span class="font-semibold text-gray-700">Kanıt durumu:</span>
-  <span class:list={['inline-flex items-center rounded-full px-2.5 py-1 text-xs font-bold', activeGrade.badgeClass]}>
-    {activeGrade.grade} · {activeGrade.label}
-  </span>
-  <span>{activeGrade.strength}</span>
+  {activeGrade ? (
+    <>
+      <span class:list={['inline-flex items-center rounded-full px-2.5 py-1 text-xs font-bold', activeGrade.badgeClass]}>
+        {activeGrade.grade} · {activeGrade.label}
+      </span>
+      <span>{activeGrade.strength}</span>
+    </>
+  ) : (
+    <>
+      <span class="inline-flex items-center rounded-full px-2.5 py-1 text-xs font-bold bg-gray-600 text-white">Karma kanıt</span>
+      <span>Birden fazla kanıt düzeyi içeren genel rehber; kaynaklar ilgili iddianın yanında verilir</span>
+    </>
+  )}
 </p>
