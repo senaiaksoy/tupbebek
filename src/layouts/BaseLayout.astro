@@ -38,6 +38,8 @@ interface Props {
 	ogType?: string;
 	/** Page schema type. MedicalWebPage is reserved for actual medical content. */
 	pageType?: 'WebPage' | 'MedicalWebPage';
+	/** ISO date of the last medical review; emitted on MedicalWebPage only. */
+	lastReviewed?: string;
 	canonical?: string;
 	noindex?: boolean;
 	robots?: string;
@@ -59,6 +61,7 @@ const {
 	imageHeight,
 	ogType = "website",
 	pageType = "WebPage",
+	lastReviewed,
 	canonical,
 	noindex = false,
 	robots,
@@ -172,6 +175,7 @@ const siteGraph = {
       "publisher": { "@id": ORG_ID },
       ...(ogType === 'article' ? { "mainEntity": { "@id": `${canonicalUrl}#article` } } : {}),
       ...(pageType === 'MedicalWebPage' ? {
+        ...(lastReviewed ? { "lastReviewed": lastReviewed } : {}),
         "medicalAudience": {
           "@type": "MedicalAudience",
           "audienceType": "Patient"
