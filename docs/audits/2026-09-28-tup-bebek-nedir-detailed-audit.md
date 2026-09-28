@@ -268,3 +268,11 @@ Değişmeyenler: `expertContribution`, yazar/reviewer/tarih alanları, kaynakça
 Açık kalanlar: özet altındaki dört kaynak (P3), görseldeki “Yumurtalık uyarısı” etiketi ve 1–10 günlük uyarım aralığının metindeki 8–12 günle görsel uyumsuzluğu (görsel yeniden üretilirse düzeltilmeli), görünür ilk yayın tarihi, genel kanıt derecesi politika farkı.
 
 Doğrulama: `check-fidelity` sayı/süre/atıf farkı yok (yalnızca bağlantı birleştirmeleri); `editorial-check` 0 aday; `npm run build` başarılı (hedef dışı 7 mevcut uyarı); `npm run verify:preflight` tüm kontroller geçti; render'da 1 H1, yinelenen ID yok, figcaption HFEA bağlantısı ve `#faq` iç bağlantısı çalışıyor. Commit, push ve deploy yapılmadı.
+
+## 12. P3 kapanışları — görsel, kanıt durumu, ilk yayın tarihi
+
+- **Süreç görseli yeniden üretildi** (Higgsfield `gpt_image_2_5`, 1200×675 WebP, 67 KB). Mutlak gün etiketleri yerine metindeki kaynaklı göreli süreler kullanıldı: uyarım genellikle 8–12 gün, toplama çatlatmadan ~36 saat sonra, embriyo 3–5 gün, transfer 3. veya 5. gün, test transferden ~12 gün sonra. Etiket “Yumurtalıkların uyarılması” oldu. Türkçe yazım kontrol edildi. Alt metin ve altyazı yeni görsele göre güncellendi.
+- **Kanıt durumu “Karma kanıt”:** Derece verilmeyen ve `hideEvidenceGrade: true` taşıyan makalelerde (ana sayfadaki Karma sınıfıyla aynı ölçüt; şu an 5 makale) makale sonunda görünür rozet gösteriliyor. Makaleye tek harf derece atanmadı; inline derece etiketi eklenmedi.
+- **İlk yayın tarihi:** Web Archive'da bu URL'nin ilk kaydı 10 Nisan 2026; o kopyadaki `datePublished` zaten 2024-09-27. Tarihin kökeni doğrulanamadığı için değer değiştirilmedi ve görünür künyeye eklenmedi.
+
+Doğrulama: `npm run build` başarılı; `verify:preflight` 26/26; yerel önizlemede rozet görüldü.
