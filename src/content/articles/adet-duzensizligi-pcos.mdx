@@ -1,8 +1,8 @@
 ---
 title: "Adet Düzensizliği ve PCOS: Tanı, Gebelik Şansı ve Tedavi Yol Haritası"
 seoTitle: "Adet Düzensizliği ve PCOS"
-description: "Adet düzensizliği ve PCOS ilişkisi: 2023 PCOS tanı kriterleri, AMH/ultrason yorumu, hormon paneli, gebelik isteyenlerde letrozol ve IVF yol haritası."
-summary: "Düzensiz adet tek başına PCOS anlamına gelmez; en sık neden PCOS olsa da ayırıcı tanı gerekir. Tanı; hiperandrojenizm, ovülasyon bozukluğu ve ultrason/AMH bulgularından en az ikisinin birlikte değerlendirilmesiyle konur. Gebelik isteği yoksa tedavi siklus ve metabolik korumaya, gebelik isteğinde ise önce letrozol ile yumurtlama uyarımına odaklanır; tüp bebek, başka bir infertilite faktörü (tüp, erkek faktörü, yaş, düşük rezerv) varsa veya ilk basamak yanıt yetersizse gündeme gelir."
+description: "Adet düzensizliği her zaman PCOS mudur? Tanı ölçütleri, AMH ve ultrasonun yeri, gebelik planına göre tedavi seçenekleri ve uzun vadeli takip."
+summary: "Düzensiz adet tek başına PCOS anlamına gelmez; benzer belirtilere yol açan nedenler dışlanmalıdır. Erişkinlerde tanı, yumurtlama bozukluğu, androjen fazlalığı ve ultrason ya da AMH ile değerlendirilen yumurtalık bulgularından en az ikisine dayanır. Tedavi gebelik planınıza göre değişir: gebelik istemiyorsanız adet düzeni ve uzun vadeli sağlık korunur; gebelik istiyorsanız yumurtlama ve diğer infertilite nedenleri birlikte değerlendirilir, uygun hastalarda ilk ilaç seçeneği letrozoldür."
 summaryReferences:
   - title: "2023 Uluslararası PCOS Rehberi"
     url: "https://pubmed.ncbi.nlm.nih.gov/37580037/"
@@ -10,12 +10,12 @@ summaryReferences:
     url: "https://pubmed.ncbi.nlm.nih.gov/25006718/"
 category: "Kadın Sağlığı"
 contentType: "portal_article"
-templateVersion: "2026-07"
+templateVersion: "2026-09"
 status: "published"
 publishDate: 2026-03-31
-lastModified: 2026-08-05
+lastModified: 2026-09-28
 evidenceAsOf: 2026-08-05
-reviewScope: "Klinik doğruluk, 2023 Rotterdam/uluslararası PCOS tanı kriterleri, hormon paneli önerileri ve gebelik isteyen hastalarda tedavi yol haritası. 2026-08-05 güncellemesi: endometriyal kanser ve metabolik risk kaynakları yeniden doğrulandı; T2DM/KVS risk rakamları ve inositol/kaynak bilgisi güncel meta-analiz ve JCEM 2025 kohort verisiyle uyumlu hale getirildi; metabolik tarama, anti-androjen/metformin ve endometriyal koruma dili kişiselleştirme ilkesine göre yumuşatıldı."
+reviewScope: "2026-08-05 incelemesi: PCOS tanı ölçütleri, hormon testleri ve gebelik tedavileri; endometriyal kanser ve metabolik risk kaynakları; tip 2 diyabet ve kalp-damar hastalığı risk rakamları; inositol kanıtı. Metabolik tarama, antiandrojen/metformin kullanımı ve rahim iç tabakasının korunmasında kişiye göre karar verilmesi gereken noktalar belirtildi."
 author:
   name: "Doç. Dr. Senai Aksoy"
   title: "Kadın Hastalıkları ve Doğum Uzmanı"
@@ -25,6 +25,16 @@ authorYoutube: "https://www.youtube.com/@DocentDrSenaiAksoy"
 medicalReviewer: "tupbebek.com Editöryal Ekip"
 reviewerTitle: "Tıbbi Yayın Ekibi"
 reviewDate: 2026-08-05
+expertContribution:
+  title: "Dr. Aksoy'un yaklaşımı"
+  question: "Adet düzensizliği ve PCOS ile başvuran, gebelik isteyen bir kadında yumurtlama tedavisine başlamadan önce hangi bulgu yaklaşımınızı en çok değiştirir; hangi durumda önce başka bir nedeni araştırırsınız?"
+  text: >-
+    Adet düzensizliği olan bir hastada ultrasonda polikistik görünüm saptanması, yumurtlamama nedeninin mutlaka PCOS olduğu anlamına gelmez. Önce gebeliği dışlarım. Yaklaşımımı en çok değiştiren bulgu, FSH yüksekliğiyle birlikte düşük estradiol saptanmasıdır; bu durumda PCOS için letrozol başlamadan önce yumurtalık yetmezliği olasılığını araştırırım. Belirgin prolaktin veya tiroit bozukluğunda da önce o nedeni değerlendiririm. Hızla gelişen tüylenme ya da ses kalınlaşması varsa farklı bir androjen fazlalığı nedenini araştırmak gerekir. PCOS’a bağlı yumurtlamama doğrulanmış ve önemli başka infertilite faktörü yoksa ilk ilaç tercihim letrozoldür; eşin sperm sonucu ve tüplerle ilgili riskler de tedavi planına girer.
+  author: "Doç. Dr. Senai Aksoy"
+  authorTitle: "Kadın Hastalıkları ve Doğum Uzmanı"
+  authorUrl: "https://tupbebek.com/yazar/senai-aksoy/"
+  answeredAt: 2026-09-28
+  approvalStatus: "approved"
 recommendationGrade: A
 image: "/images/makaleler/adet-duzensizligi-pcos.webp"
 imageAlt: "Aydınlık bir odada koltukta oturmuş, çenesini eline dayayarak düşünen kadın"
@@ -104,63 +114,66 @@ references:
 
 import InlineEvidence from '../../components/InlineEvidence.astro';
 import MedicalInfoBox from '../../components/global/MedicalInfoBox.astro';
-import QuoteBlock from '../../components/global/QuoteBlock.astro';
 
-<MedicalInfoBox title="Terminoloji Güncellemesi (Mayıs 2026)" icon="INFO" color="blue">
-**PCOS, 12 Mayıs 2026'da *The Lancet*'te yayımlanan global konsensüsle "poliendokrin metabolik over sendromu" (PMOS) olarak yeniden adlandırıldı.** Tanı kriterleri ve tedavi yaklaşımı değişmedi; sadece isim güncellendi. Bu rehber PCOS terimini kullanmaya devam ediyor çünkü Türkiye'de geçiş kademeli ilerliyor. İsim değişikliğinin neyi değiştirip neyi değiştirmediği için [PCOS'un yeni adı PMOS](/makaleler/pcos-yeni-adi-pmos/) rehberini okuyun.
+Ultrason raporunda “polikistik görünüm” yazıyor; adetleriniz de gecikiyor. Bu iki bulgu PCOS'u akla getirir, ama aynı tabloyu başka nedenler de oluşturabilir. Muayenede önce gecikmenin nedeni aranır: yumurtlama düzeni, hormon sonuçları ve benzer belirtiler yapan diğer durumlar birlikte değerlendirilir.
+
+**Polikistik over sendromu (PCOS)**, üreme çağındaki kadınların **%8-13'ünü** etkiler. <InlineEvidence grade="A" /> Adı yumurtalıkları öne çıkarsa da kan şekeri, kan yağları ve ruh sağlığı da tablonun parçasıdır.
+
+<MedicalInfoBox title="Terminoloji güncellemesi (Mayıs 2026)" icon="INFO" color="blue">
+12 Mayıs 2026'da *The Lancet*'te yayımlanan uluslararası uzlaşıyla PCOS için **poliendokrin metabolik over sendromu (PMOS)** adı benimsendi. Bu isim değişikliği tanı ölçütlerini ve tedavi yaklaşımını değiştirmedi. Türkiye'de yeni ada geçiş kademeli ilerlediği için bu yazıda PCOS terimini kullanıyoruz; adlandırmanın gerekçesini [PCOS'un yeni adı PMOS](/makaleler/pcos-yeni-adi-pmos/) rehberinde bulabilirsiniz.
 </MedicalInfoBox>
-
-Adet döngüsü, üreme çağındaki bir kadının hormonal sağlığının en görünür göstergesidir. Düzensizliği görmezden gelinmemesi gereken bir sinyaldir: arkasında endometriyal hiperplazi, obeziteyle ilişkili anovulasyon, tiroid disfonksiyonu, hiperprolaktinemi ve en sık karşılaşılan tablo olarak **Polikistik Over Sendromu (PCOS)** yer alabilir. PCOS, üreme çağı kadınların **%8-13'ünü** etkileyen, hem fertiliteyi hem de uzun dönem metabolik sağlığı belirleyen kompleks bir endokrin sendromudur. <InlineEvidence grade="A" />
-
-> Bu rehber, [kadın infertilitesi](/kadin-infertilitesi/) konu haritasının ovülasyon ve hormon kaynaklı nedenler bölümünü derinleştirir. Adet düzensizliğiyle birlikte AMH, FSH, LH, prolaktin veya TSH değerlendirmesi gerekiyorsa [hormon paneli](/hormon-paneli/) sayfası; prolaktin yüksekliği düşünülüyorsa [hiperprolaktinemi ve kısırlık](/makaleler/hiperprolaktinemi-ve-kisirlik/) rehberi tamamlayıcıdır.
 
 ## İçindekiler
 
-- [Merak edilen PCOS ve adet düzensizliği soruları](#merak-edilen-pcos-ve-adet-düzensizliği-soruları)
-- [Adet düzensizliği nedir?](#adet-düzensizliği-nedir)
-- [PCOS tanısı nasıl konur?](#pcos-tanısı-rotterdam-kriterleri-ve-2023-güncellemesi)
-- [PCOS belirtileri nelerdir?](#pcos-belirtileri-dört-boyut)
-- [Hangi testler istenir?](#teşhis-sürecinde-yapılan-testler)
-- [Gebelik istemeyen hastalarda yaklaşım](#tedavi-gebelik-i%CC%87stemeyen-hastalar)
-- [Gebelik isteyen hastalarda yol haritası](#tedavi-gebelik-i%CC%87steyen-hastalar)
-- [Sıkça sorulan sorular](#sıkça-sorulan-sorular)
+1. [PCOS ve gebelik planı](#pcos-kadın-i̇nfertilitesinde-nereye-oturur)
+2. [Adet gecikmesiyle ilgili kısa yanıtlar](#merak-edilen-pcos-ve-adet-düzensizliği-soruları)
+3. [Adet düzensizliği nedir?](#adet-düzensizliği-nedir)
+4. [PCOS tanısı nasıl konur?](#pcos-tanısı-rotterdam-kriterleri-ve-2023-güncellemesi)
+5. [PCOS belirtileri nelerdir?](#pcos-belirtileri-dört-boyut)
+6. [PCOS neden olur?](#pcos-patofizyolojisi-neden-olur)
+7. [Hangi testler istenir?](#teşhis-sürecinde-yapılan-testler)
+8. [Gebelik istemeyenlerde tedavi](#tedavi-gebelik-i%CC%87stemeyen-hastalar)
+9. [Gebelik isteyenlerde tedavi](#tedavi-gebelik-i%CC%87steyen-hastalar)
+10. [Uzun vadeli sağlık ve takip](#pcosun-uzun-vadeli-sağlık-riskleri)
+11. [Sıkça sorulan sorular](#sıkça-sorulan-sorular)
+12. [İlgili rehberler](#i̇lgili-rehberler)
 
 ## PCOS Kadın İnfertilitesinde Nereye Oturur?
 
-PCOS, kadın infertilitesinde özellikle **yumurtlama bozukluğu** başlığının merkezindedir. Bu nedenle değerlendirme yalnızca ultrason görüntüsüne veya tek bir hormon sonucuna dayanmaz; adet düzeni, klinik hiperandrojenizm, metabolik riskler, eşin semen analizi, tüp açıklığı ve yaş birlikte okunur.
+[Kadın infertilitesi](/kadin-infertilitesi/) nedenleri arasında PCOS, **yumurtlama bozukluğuna bağlı gebe kalma güçlüğünün en sık nedenidir**. Gebelik planında ilk sorulardan biri yumurtlama olup olmadığıdır. Yaşınız, yumurtalık rezerviniz, eşinizin sperm sonucu ve tüplerin durumu, bundan sonra hangi tedavinin seçileceğini etkiler.
 
-Kısa klinik yol haritası şöyledir:
-
-- **Düzensiz adet + tüylenme/akne varsa:** PCOS güçlü olasılıktır; yine de TSH, prolaktin ve adrenal nedenler dışlanmalıdır.
-- **Düzensiz adet + düşük AMH veya ileri yaş varsa:** sadece PCOS değil, over rezervi de ayrıca değerlendirilmelidir; [düşük AMH rehberi](/makaleler/dusuk-amh-hamilelik/) bu noktada yardımcıdır.
-- **PCOS + gebelik isteği varsa:** önce yumurtlama düzeni ve eşlik eden faktörler ele alınır; gerekirse [aşılama](/makaleler/iui-nedir/) veya tüp bebek planına geçilir. Tüp bebek gündeme geldiğinde PCOS'a özgü OHSS riski ve protokol seçimi ayrı bir değerlendirme konusudur; bunu [PCOS ve tüp bebek rehberi](/makaleler/opk-ve-ivf/) ayrıntılandırır.
+- **Adet düzensizliğine tüylenme veya akne eşlik ediyorsa:** PCOS değerlendirilir; tiroit, prolaktin ve böbreküstü beziyle ilgili nedenler de araştırılır.
+- **AMH düşükse veya yaş ileriyse:** yumurtalık rezervi ayrıca ele alınır. [Düşük AMH rehberi](/makaleler/dusuk-amh-hamilelik/) bu ayrımı açıklar.
+- **Gebelik istiyorsanız:** bulgulara göre yumurtlama tedavisi, [aşılama](/makaleler/iui-nedir/) veya tüp bebek gündeme gelebilir.
 
 ## Merak Edilen PCOS ve Adet Düzensizliği Soruları
 
 | Soru | Kısa cevap |
 | :--- | :--- |
-| **Her adet düzensizliği PCOS mudur?** | Hayır. Gebelik, tiroid, prolaktin, hipotalamik amenore, POI ve ilaçlar da adet düzensizliği yapabilir. |
-| **Adet düzensizliği olmadan PCOS olur mu?** | Olabilir; tanı Rotterdam/2023 kriterlerine göre ovulasyon, hiperandrojenizm ve ultrason/AMH bulgularının birlikte yorumlanmasıyla konur. |
-| **PCOS adet gecikmesi ne kadar sürer?** | Kişiden kişiye değişir; 35 günden uzun aralıklar veya 3 ay adet olmama değerlendirme gerektirir. |
-| **Polikistik over adet gecikmesi hamilelik belirtisi mi?** | Gecikme PCOS kaynaklı olabilir ama gebelik ihtimali varsa önce gebelik testiyle dışlanmalıdır. |
+| **Her adet düzensizliği PCOS mudur?** | Hayır. Gebelik, tiroit bozuklukları, prolaktin yüksekliği, yumurtalık yetmezliği, yumurtlamayı yöneten beyin merkezlerinin baskılanması ve bazı ilaçlar da adet düzenini değiştirebilir. |
+| **Adetler düzenliyken PCOS olabilir mi?** | Evet. Düzenli adet görenlerde de hormon ve yumurtalık bulguları PCOS ile uyumlu olabilir. |
+| **PCOS'ta adet gecikmesi ne kadar sürer?** | Süre kişiden kişiye değişir. Erişkinlerde 35 günden uzun aralıklar veya 3 ay adet olmama değerlendirme gerektirir. |
+| **Gecikme PCOS'tan mı, gebelikten mi kaynaklanır?** | Yalnızca gecikmeye bakarak ayırt edilemez. Gebelik olasılığı varsa önce gebelik testi yapılır. |
 
 ## Adet Düzensizliği Nedir?
 
-Normal bir adet döngüsü 21-35 gün arasında sürer ve kanama 2-7 gün devam eder. Bunun dışındaki örüntüler "anormal uterin kanama" başlığı altında sınıflandırılır:
+Adet düzensizliği bazen aylar süren bir gecikme, bazen sık kanama ya da beklenmedik bir ara kanama olarak karşınıza çıkar. PCOS değerlendirmesinde erişkinlerde **21 günden kısa, 35 günden uzun döngüler ya da yılda 8'den az adet** dikkate alınır. (Kaynak: 2023 Uluslararası PCOS Rehberi, bölüm 1.1)
 
-- **Amenore:** Adet kanamasının hiç olmaması veya 90 günden uzun süre yokluğu — birincil/ikincil ayrımı için [adet görememe rehberi](/makaleler/adet-gorememe/)
-- **Oligomenore:** Adet döngüsünün 35 günden uzun olması (yılda 8'den az menstruasyon)
-- **Polimenore:** Adet döngüsünün 21 günden kısa olması
-- **Menoraji:** Adet süresinin uzaması veya kanama miktarının fazlalığı
-- **Metroraji:** Düzensiz aralıklarla görülen, beklenmedik kanama
+Raporlarda bu durumlar için şu terimler kullanılır:
 
-Üreme çağında kronik oligomenore veya amenore en sık PCOS'a bağlıdır; ancak hipotiroidi, hiperprolaktinemi, prematür over yetmezliği, hipotalamik amenore ve nadiren konjenital adrenal hiperplazi de benzer tabloya yol açabilir. Bu nedenle "düzensiz adet eşittir PCOS" sloganı doğru değildir — ayırıcı tanı yapılmalıdır.
-
-<QuoteBlock>
-Düzensiz adet, PCOS'un imzası olabilir ama tek başına kimliği değildir. Aynı örüntü tiroidden hipotalamik amenoreye kadar birçok farklı tabloya çıkabilir; asıl iş, adı koymadan önce doğru kapıyı bulmaktır.
-</QuoteBlock>
+- **Amenore:** Adet görememe. Daha önce adet gören bir kişide 90 günü aşan ara değerlendirme gerektirir; hiç adet görmemeyle arasındaki farkı [adet görememe rehberi](/makaleler/adet-gorememe/) açıklar.
+- **Oligomenore:** Adetlerin seyrek gelmesi.
+- **Polimenore:** Adetlerin sık gelmesi.
+- **Menoraji:** Kanamanın fazla olması veya uzun sürmesi.
+- **Metroraji:** Beklenmedik zamanlarda, düzensiz kanama görülmesi.
 
 ## PCOS Tanısı: Rotterdam Kriterleri ve 2023 Güncellemesi
+
+Erişkinlerde, benzer belirtilere yol açan nedenler dışlandıktan sonra aşağıdaki üç ölçütten **en az ikisi** varsa PCOS tanısı konabilir. 2003 Rotterdam ölçütlerini temel alan bu yaklaşım, 2023 uluslararası rehberinde güncellenmiştir. <InlineEvidence grade="A" />
+
+1. **Androjen fazlalığı (hiperandrojenizm):** Tüylenme gibi muayene bulguları veya kanda testosteron yüksekliği.
+2. **Yumurtlama bozukluğu:** Yumurtlamanın seyrek olması ya da olmaması; çoğunlukla seyrek veya gelmeyen adetlerle kendini gösterir.
+3. **Yumurtalıklarda polikistik görünüm:** Ultrasonda küçük foliküllerin, yani yumurta içeren keseciklerin fazla olması. Erişkinlerde bu ölçüt, uygun koşullarda ultrason yerine AMH testiyle de değerlendirilebilir.
 
 <figure>
   <img
@@ -172,118 +185,77 @@ Düzensiz adet, PCOS'un imzası olabilir ama tek başına kimliği değildir. Ay
     decoding="async"
   />
   <figcaption>
-    Rotterdam Kriterleri (2003, 2023 güncellemesi): PCOS tanısı için üç ana bulgudan en az ikisinin bulunması gerekir — oligo/anovulasyon, klinik veya biyokimyasal hiperandrojenizm, polikistik over morfolojisi. (Kaynak: International Evidence-based PCOS Guideline 2023)
+    Rotterdam ölçütleri: androjen fazlalığı, yumurtlama bozukluğu ve yumurtalıklarda polikistik görünüm. (Kaynak: 2023 Uluslararası PCOS Rehberi)
   </figcaption>
 </figure>
 
-PCOS tanısı 2003'te Rotterdam konsensüsünde tanımlanan ve 2018 ile 2023'te güncellenen kriterler ile konur. 2023 uluslararası kanıt tabanlı rehber, tanı için üç kriterden **en az ikisinin** bulunmasını gerektirir: <InlineEvidence grade="A" />
+**Ultrason veya AMH her hastada gerekli değildir.** Adet düzensizliği ve androjen fazlalığı birlikte varsa, diğer nedenler dışlandıktan sonra bu testler olmadan da tanı konabilir. AMH tek başına PCOS testi değildir; sonuç kullanılan laboratuvar yöntemine özgü eşikle yorumlanır.
 
-1. **Hiperandrojenizm** — klinik (hirsutizm, akne, androjenetik alopesi) veya biyokimyasal (yüksek total veya hesaplanmış serbest testosteron)
-2. **Ovülasyon disfonksiyonu** — düzensiz veya bulunmayan adet, oligo- veya anovulasyon
-3. **Polikistik over morfolojisi** — pelvik ultrasonografide her overde antral folikül sayısı (AFC) ≥ 20 veya over hacmi > 10 mL **veya** alternatif olarak yüksek serum AMH düzeyi
+**Ergenlikte değerlendirme farklıdır.** Küçük foliküllerin fazla görünmesi ve AMH yüksekliği bu dönemde normal gelişimin parçası olabilir. Bu yüzden ergenlerde ultrason ve AMH tanı için önerilmez; yaşa uygun biçimde değerlendirilen yumurtlama bozukluğu ile androjen fazlalığı birlikte aranır.
 
-2023 güncellemesinin getirdiği üç önemli yenilik şunlardır:
-
-- **AMH ultrason yerine alternatif tanı aracı** — serum anti-Müllerian hormon ölçümü, ultrasonografiye erişimin sınırlı olduğu birinci basamak ortamlarda polikistik over morfolojisinin alternatifi olarak, erişkinlerde kullanılabilir. AMH tek başına bir tanı testi değildir; sonuç, assay'a özgü eşikle yorumlanır.
-- **Basitleştirilmiş algoritma** — düzensiz adet + hiperandrojenizm birlikte saptanırsa ultrason veya AMH yapılmasına gerek yoktur; tanı doğrudan konur.
-- **Adolesan kuralları** — ergenlik çağındaki kız çocuklarında polikistik morfoloji ve yüksek AMH normal fizyolojinin parçası olabilir; bu yaş grubunda tanı için yalnızca hiperandrojenizm + ovülasyon disfonksiyonu birlikteliği aranır.
-
-LH/FSH oranı, insülin direnci veya kistik görüntü tek başına tanı koydurucu değildir. PCOS bir **dışlama tanısıdır** — tiroid disfonksiyonu, hiperprolaktinemi, konjenital adrenal hiperplazi (17-OH progesteron) ve androjen üreten tümörler önce ekarte edilmelidir.
+Tiroit bozuklukları, prolaktin yüksekliği, doğuştan gelen bazı böbreküstü bezi hastalıkları ve androjen üreten tümörler de aynı bulgulara yol açabildiği için tanı sırasında araştırılır. **Tüylenme kısa sürede belirginleşiyorsa veya ses kalınlaşması eşlik ediyorsa**, androjen üreten bir tümör gibi farklı bir neden ayrıca araştırılır. İnsülin direnci ise sağlık takibinde önem taşır; yukarıdaki üç tanı ölçütünden biri değildir.
 
 ## PCOS Belirtileri: Dört Boyut
 
-PCOS'un klinik tablosu tek bir organa değil dört boyuta yayılır.
+Bir kişiyi muayeneye getiren şikâyet adet gecikmesiyken, bir başkasında tüylenme veya gebe kalma güçlüğü ön planda olabilir. PCOS'un etkileri dört alanda ele alınır:
 
-**Reprodüktif boyut:**
+**Adet düzeni ve doğurganlık:** Seyrek adet, adet görememe, ara kanama ve yumurtlama olmamasına bağlı gebe kalma güçlüğü görülebilir. Erken gebelik kaybı riski de PCOS olmayan kadınlara göre artmıştır.
 
-- Oligomenore veya amenore (en sık başvuru şikayeti)
-- Anovulatuar infertilite — PCOS, anovulatuar infertilitenin **en sık nedenidir**
-- Düzensiz kanama, ara kanaması
-- Erken gebelik kaybı oranı normal popülasyona kıyasla artmış
+**Cilt ve saç:** Yüz, çene, göğüs veya karında belirgin tüylenme; ergenlikten sonra devam eden akne ve saçın tepe ya da ön bölgesinde incelme olabilir. Tüylenmenin değerlendirilmesinde kullanılan değiştirilmiş Ferriman-Gallwey ölçeğinde eşik, etnik kökene göre **4-6** arasında değişir. Tek başına akne veya saç seyrelmesi, androjen fazlalığını tüylenme kadar güçlü göstermez. (Kaynak: 2023 Uluslararası PCOS Rehberi, bölüm 1.3)
 
-**Hiperandrojenik boyut:**
+**Metabolik sağlık:** İnsülin direncinde vücut insüline beklenen yanıtı veremez ve kandaki insülin düzeyi yükselebilir. Bu durum normal kilodaki kişilerde de görülebilir. Bel çevresinde yağlanma, kan şekeri yüksekliği, tip 2 diyabet riski ve kan yağlarında bozulma da değerlendirilir.
 
-- Hirsutizm — yüz, çene, göğüs, sırt, karın orta hattında erkek tipi tüylenme. Ferriman-Gallwey skoru ≥ 6-8 (etnik gruba göre eşik değişir) anlamlı kabul edilir.
-- Akne ve seboreik dermatit, özellikle ergenliğe ait olmayan persistan akne
-- Androjenetik alopesi — saçın tepe ve frontal bölgesinde incelme
+**Ruh sağlığı:** Depresyon ve kaygı belirtileri daha sık görülür. Beden algısı, yeme davranışı ve yaşam kalitesi de etkilenebilir. <InlineEvidence grade="B" />
 
-**Metabolik boyut:**
-
-- İnsülin direnci ve kompansatuar hiperinsülinemi — PCOS'lu kadınların önemli bir kısmında, BMI'den bağımsız olarak görülebildiği bildirilir
-- Santral obezite, kilo alımı eğilimi
-- Bozulmuş glukoz toleransı, prediyabet, T2DM riski
-- Dislipidemi (yüksek trigliserid, düşük HDL)
-- Metabolik sendrom
-
-**Psikolojik boyut:**
-
-- Depresyon prevalansı normal popülasyona göre belirgin yüksektir <InlineEvidence grade="B" />
-- Anksiyete belirtileri de sık görülür
-- Beden imajı sorunları, yeme bozukluğu riski artmış
-- Yaşam kalitesinde anlamlı düşüş
-
-Bu nedenle PCOS yönetimi salt jinekolojik bir mesele değil; multidisipliner — endokrinolog, jinekolog, beslenme uzmanı ve psikolog iş birliğini gerektiren — bir süreçtir.
+PCOS takibinde kadın hastalıkları ve doğum uzmanı, endokrinoloji uzmanı, diyetisyen ve ruh sağlığı uzmanı birlikte çalışabilir.
 
 ## PCOS Patofizyolojisi: Neden Olur?
 
-PCOS'un tek bir genetik veya hormonal nedeni yoktur. Tablo, öne sürülen mekanizmaların birbirini beslediği bir döngü olarak açıklanır:
+PCOS'u tek bir hormonla açıklamak mümkün değildir. Anne veya kız kardeşte PCOS bulunması riski artırır; bu yatkınlığın nasıl ortaya çıkacağını çevresel etkenler ve yaşam alışkanlıkları da etkileyebilir.
 
-**1. İnsülin direnci → hiperinsülinemi.** Karaciğer ve adipoz dokuda insülin sinyalizasyonu bozulur; ancak overdeki teka hücreleri insüline aşırı duyarlı kalmaya devam eder. Sonuç olarak kompansatuar olarak yükselen insülin, hedef olmayan dokuda biyolojik etkisini sürdürür.
+Üzerinde durulan mekanizmalardan biri insülin direncidir. Karaciğer ve yağ dokusu insüline daha az yanıt verdiğinde kandaki insülin yükselir. Yumurtalığın hormon üreten hücreleri ise insüline yanıt vermeyi sürdürebilir. Yüksek insülin, LH hormonuyla birlikte testosteron üretimini artırırken onu kanda bağlayan SHBG proteinini azaltır. Sonuçta serbest, yani biyolojik olarak etkin testosteron miktarı yükselir.
 
-**2. Hiperinsülinemi → androjen artışı.** Yüksek insülin, ovaryal teka hücrelerinde LH ile birlikte testosteron üretimini stimüle eder. Aynı anda karaciğerden SHBG (cinsiyet hormonu bağlayıcı globulin) üretimini baskılayarak serbest (biyoaktif) testosteron oranını yükseltir.
+Artan androjenler, yumurtlamaya ilerleyecek folikülün seçilmesini zorlaştırabilir. Küçük foliküller gelişimlerini tamamlayamadan birikir; ultrasondaki polikistik görünüm bununla ilişkilidir.
 
-**3. Androjen artışı → folikül arrest.** Yüksek intra-ovaryal androjen, folikül seçim sürecini bozar. Küçük antral foliküller dominant folikül oluşturamadan birikir — ultrasonografide "polikistik" görüntü bu mekanizmanın sonucudur.
-
-**4. Anovulasyon → unopposed estrojen.** Düzenli ovülasyon olmadığında korpus luteum oluşmaz, progesteron salgılanmaz. Endometriyum aylarca estrojene maruz kalır ancak progesteron koruması almaz — bu, uzun vadede endometriyal hiperplazi ve kansere zemin hazırlayan önemli bir mekanizmadır.
-
-**Genetik yatkınlık:** PCOS'un gelişiminde genetik etki belirgin kabul edilir; anne veya kız kardeşinde PCOS olan kadınlarda risk artmıştır. Çevresel ve yaşam tarzı faktörleri bu genetik zeminin üzerinde fenotipi şekillendirir.
+Yumurtlama olmadığında progesteron salgılayan yapı da gelişmez. Rahim iç tabakası (endometriyum) östrojen etkisinde kalır. Bu durum uzun sürdüğünde aşırı kalınlaşmaya ve kanser riskinde artışa katkıda bulunabilir; seyrek adet görenlerde rahim iç tabakasını koruyan tedaviler bu riski hedefler.
 
 ## Teşhis Sürecinde Yapılan Testler
 
-PCOS tanısı klinik değerlendirme, laboratuvar ve görüntülemenin birleşimi ile konulur.
+Değerlendirme, adet öykünüz ve muayenenizle başlar. Görüşmede adet aralıkları, kanama miktarı ve düzensizliğin ne zamandır sürdüğü sorulur. Muayenede tüylenme, akne ve saç dökülmesine bakılır; boy, kilo, vücut kitle indeksi (VKİ), bel çevresi ve tansiyon ölçülür.
 
-**Klinik değerlendirme:**
+Kan testleri hem PCOS bulgularını hem de benzer belirtiler yapan diğer nedenleri araştırır. Hangi testlerin ve adetin hangi döneminde isteneceğini hekiminiz öykünüze ve muayene bulgularına göre belirler:
 
-- Detaylı adet öyküsü — siklus uzunluğu, kanama miktarı, ne zamandan beri düzensiz olduğu
-- Hiperandrojenizm muayenesi — Ferriman-Gallwey hirsutizm skoru, akne dağılımı, saç dökülmesi
-- Antropometrik ölçümler — kilo, boy, BMI, bel çevresi, kan basıncı
+- **AMH:** Yumurtalıktaki küçük foliküllerle ilişkili bir göstergedir. Erişkinlerde tanı değerlendirmesinde ultrasonun yerini alabilir.
+- **FSH ve LH:** Yumurtlamayı yöneten hormonlardır; yumurtalık yetmezliği gibi başka yumurtlama bozukluklarını ayırmaya yardımcı olur.
+- **Total ve serbest testosteron:** Androjen fazlalığını araştırır. SHBG, DHEAS ve androstenedion ölçümleri de değerlendirmeye eklenebilir.
+- **17-OH progesteron:** Doğuştan gelen bazı böbreküstü bezi hastalıklarını dışlamak için kullanılır.
+- **Prolaktin ve TSH:** Prolaktin yüksekliği ve tiroit bozukluklarını araştırır.
 
-**Hormonal panel (adet siklusunun 2-5. günü):**
+Bu testlerin ne anlattığını [hormon paneli](/hormon-paneli/) ve [hiperprolaktinemi ve kısırlık](/makaleler/hiperprolaktinemi-ve-kisirlik/) rehberleri açıklar.
 
-- **AMH** — over folikül havuzunun göstergesi; 2023 update sonrası tanı kriteri olarak da kabul edilir
-- FSH, LH — alternatif anovulasyon nedenlerini ekarte etmek için
-- Total testosteron + hesaplanmış serbest testosteron (veya bioavailable testosteron)
-- SHBG, DHEAS, androstendion
-- **17-OH progesteron** — konjenital adrenal hiperplaziyi dışlamak için seçilmiş hastalarda istenir
-- Prolaktin, TSH — alternatif anovulasyon nedenlerinin taraması
+**Ultrason gerektiğinde** vajinal veya karından yapılabilir. Erişkinlerde, uygun görüntü kalitesiyle **en az bir yumurtalıkta 20 veya daha fazla folikül** görülmesi polikistik görünüm ölçütüdür. Foliküller güvenilir biçimde sayılamıyorsa, en az bir yumurtalıkta **10 mL veya üzeri hacim** ölçütü kullanılabilir. Bu eşikler ergenlere uygulanmaz. (Kaynak: 2023 Uluslararası PCOS Rehberi, bölüm 1.4)
 
-**Görüntüleme:**
-
-- Transvajinal (cinsel aktif kadınlarda) veya transabdominal pelvik ultrason
-- AFC ≥ 20 her overde **veya** over hacmi > 10 mL
-- Adolesanlarda US **önerilmez** — false positive oranı yüksek
-
-**Metabolik tarama:**
-
-- 75 g 2 saatlik OGTT — 2023 uluslararası rehber, PCOS'ta açlık glukoz ve HbA1c ile karşılaştırıldığında bozulmuş glukoz toleransını saptamada en doğru test olarak, BMI'den bağımsız biçimde 75 g OGTT'yi önermektedir.
-- Açlık glukoz, HbA1c ve lipid paneli; tanıda açlık insülin düzeyi rutin olarak kullanılmaz.
-- Karaciğer fonksiyon testleri ve gerektiğinde ultrasonografi (MASLD taraması)
+**Metabolik taramada** kan şekeri ve kan yağları değerlendirilir. 2023 rehberi, PCOS'ta kan şekeri durumunu değerlendirmek için VKİ'den bağımsız olarak **75 g, 2 saatlik oral glukoz tolerans testini (OGTT; şeker yükleme testi)** en doğru test olarak belirtir. Açlık kan şekeri ve HbA1c de kullanılabilir; rutin insülin ölçümü tanı testi değildir. Karaciğer testleri ve gerektiğinde görüntüleme, yağlı karaciğer değerlendirmesinin parçası olabilir.
 
 ## Tedavi: Gebelik İstemeyen Hastalar
 
-Bu grupta hedefler: siklus düzenleme, hiperandrojenik semptom kontrolü, metabolik koruma ve endometriyal koruma.
+Gebelik planlamıyorsanız öncelik, sizi rahatsız eden belirtileri azaltmak ve uzun vadeli sağlığı korumaktır. Adetlerin aylarca gelmemesiyle tüylenmenin artması aynı tedavi kararını gerektirmeyebilir.
 
-**1. Yaşam tarzı değişiklikleri — birinci basamak.** Fazla kilosu olan hastalarda **%5-10 kilo kaybı**, ovülasyon ve siklus düzenini destekleyebilir, hiperandrojenizmi azaltabilir ve insülin duyarlılığını iyileştirebilir. <InlineEvidence grade="A" /> Akdeniz tipi beslenme, düzenli aerobik egzersiz (haftada en az 150 dakika), uyku düzeni ve stres yönetimi temel taşlardır.
+Beslenme, hareket ve uyku düzeni tedavinin temelindedir. Fazla kilosu olan kişilerde **%5-10 kilo kaybı**, yumurtlamayı ve adet düzenini destekleyebilir; androjen fazlalığını azaltabilir ve insülin duyarlılığını iyileştirebilir. <InlineEvidence grade="A" /> Akdeniz tipi beslenme, haftada en az 150 dakika orta şiddette aerobik egzersiz ve stresle baş etme bu yaklaşımın parçalarıdır.
 
-**2. Kombine oral kontraseptifler (KOK).** Etinil estradiol + progestin içerikli KOK'lar siklus düzenler, endometriyumu progestin etkisi ile korur ve SHBG seviyesini yükselterek serbest testosteronu düşürür. KOK, hirsutizm ve akne gibi hiperandrojenik bulgularda hormonal doğum kontrolü isteyen kadınlarda ilk basamak farmakolojik seçenektir; 2023 rehberi belirli bir KOK türünü ya da belirli bir progestini üstün görmemektedir. KOK aynı zamanda **endometriyal kanser riskini azaltır** — uzun süreli oligomenore/amenore olan hastalarda bu boyut önemlidir.
+Adet düzeni, tüylenme ve akne için **kombine doğum kontrol hapları** düşünülebilir. İçerdikleri östrojen ve progestin, rahim iç tabakasını korur ve serbest testosteronu azaltır. Hormonal doğum kontrolü isteyenlerde ilk ilaç seçeneklerindendir; 2023 rehberi belirli bir hapı veya progestini diğerlerinden üstün tutmaz.
 
-**3. Anti-androjenler.** Anti-androjenler ilk basamak seçenek değildir. 2023 rehberine göre, hirsutizm için kombine oral kontraseptif ve yaşam tarzı önlemlerine rağmen yetersiz yanıt alındığında veya hormonal kontrasepsiyon uygun olmadığında değerlendirilir; etkinliğine ilişkin kanıt sınırlıdır. Bu grupta spironolakton en yaygın kullanılan seçenektir; doz ve süre, hastanın klinik durumuna göre yalnızca hekim tarafından belirlenir. Anti-androjenler teratojeniktir; gebelik ihtimali olan kadında güvenilir kontraseptifle birlikte kullanılmalıdır.
+Tüylenme bu önlemlere rağmen sürüyorsa veya hormonal doğum kontrolü uygun değilse, spironolakton gibi **antiandrojen ilaçlar** gündeme gelebilir. Androjenlerin etkisini azaltırlar; etkinliklerine ilişkin kanıt sınırlıdır. **Gebelikte fetüse zarar verebildikleri için, gebelik olasılığı varsa güvenilir bir korunma yöntemi gerekir.**
 
-**4. Metformin.** İnsülin duyarlılığını artırmaya yardımcı olabilir, hiperinsülinemiyi azaltabilir ve T2DM önlemede önemli bir seçenektir; siklus düzenlemesindeki etkisi ise sınırlıdır ve tek başına ovülasyon indüksiyonu amacıyla önerilmez. Doz, kademeli titrasyonla başlanır ve hastanın toleransı ile klinik durumuna göre yalnızca hekim tarafından kişiselleştirilir. Hirsutizm üzerinde tek başına etkisi zayıftır.
+Kan şekeri ve insülin direnciyle ilgili sorunlar ön plandaysa **metformin** değerlendirilir. Adet düzenine de katkı sağlayabilir, fakat tüylenme üzerindeki etkisi sınırlıdır. Dozu, yan etkilere ve toleransa göre kademeli ayarlanır. (Kaynak: 2023 Uluslararası PCOS Rehberi, bölüm 4.3)
 
-**5. Myo-inositol.** 2023 PCOS rehberinin sistematik derlemesine göre inositol kanıtı "umut vadeden ancak henüz sınırlı" düzeydedir ve rutin tedavi olarak önerilmemektedir. <InlineEvidence grade="B" /> Kanıt özetinde myo-inositolün düzenli siklus oranını bir miktar artırdığı ve metformine kıyasla daha az gastrointestinal yan etkiye eşlik ettiği bildirilmiştir; ancak 40:1 benzeri sabit oranlar kanıt nedeniyle standart bir öneri oluşturmaz ve kişiye özel değerlendirilmelidir.
+**Miyo-inositolün yeri daha belirsizdir.** Yumurtlama, tüylenme ve kilo üzerindeki klinik yararı sınırlı kanıta dayandığı için kişisel tercihe göre, hekimle konuşularak değerlendirilebilir. Metformine göre daha az mide-bağırsak yan etkisi bildirilmiştir; belirli bir doz veya **40:1** gibi sabit bir oran ise standart öneri değildir. İnfertilite tedavisinde deneysel kabul edilir. (Kaynak: 2023 Uluslararası PCOS Rehberi, bölüm 4.7 ve 5.8; Fitz ve ark., 2024)
+
+İlaçların dozu, kullanım süresi ve kontrolleri hekimle planlanır; seçimde adet düzeni, metabolik bulgular ve gebelik olasılığı birlikte ele alınır.
 
 ## Tedavi: Gebelik İsteyen Hastalar
+
+Gebelik istiyorsanız önce yumurtlama sorunu ve gebeliği etkileyen diğer etkenler değerlendirilir. Başka önemli infertilite nedeni yoksa, yumurtlamayı uyarmak için ilk ilaç seçeneği genellikle **letrozoldür**. Metformin bazı hastalarda tek başına kullanılabilse de yumurtlamayı uyarmada daha etkili ilaçlar vardır. (Kaynak: 2023 Uluslararası PCOS Rehberi, bölüm 5.4)
 
 <figure>
   <img
@@ -295,39 +267,46 @@ Bu grupta hedefler: siklus düzenleme, hiperandrojenik semptom kontrolü, metabo
     decoding="async"
   />
   <figcaption>
-    Letrozol, klomifene kıyasla PCOS hastalarında %27,5 vs %19,1 daha yüksek kümülatif canlı doğum oranıyla ilişkilendirilmiş ve 2023 uluslararası PCOS rehberinde birinci basamak ovülasyon indüksiyonu olarak önerilmektedir. (Kaynak: Legro RS et al., NEJM 2014 PPCOS II; International Evidence-based PCOS Guideline 2023)
+    PPCOS II çalışmasında (yumurtlama bozukluğu olan 750 PCOS hastası, en fazla beş tedavi döngüsü) kadın başına kümülatif canlı doğum letrozol grubunda %27,5, klomifen grubunda %19,1 idi. (Kaynak: Legro ve ark., NEJM, 2014)
   </figcaption>
 </figure>
 
-Bu grupta hedef ovülasyonun düzenlenmesi, eşlik eden infertilite faktörlerinin dışlanması ve kişiye uygun gebelik planının seçilmesidir.
+**1. Letrozol: yumurtlamayı uyarmak için ilk seçenek**
 
-**1. Letrozole — birinci basamak ovülasyon indüksiyonu**
+2014'te yayımlanan **PPCOS II** çalışmasında, yumurtlama bozukluğu olan **750 PCOS hastası** letrozol veya klomifen tedavisine rastgele ayrıldı. En fazla beş tedavi döngüsünün değerlendirildiği bu çalışmada canlı doğum oranı letrozol grubunda daha yüksekti. <InlineEvidence grade="A" />
 
-Legro ve ark. tarafından NEJM 2014'te yayımlanan **PPCOS II** randomize kontrollü çalışması (n=750), letrozole'un anovulatuar PCOS'ta clomiphene'e göre daha yüksek canlı doğum oranıyla ilişkili olduğunu göstermiştir: <InlineEvidence grade="A" />
+| Ölçülen sonuç | Letrozol | Klomifen |
+| :--- | :--- | :--- |
+| Kadın başına kümülatif canlı doğum | **%27,5** | **%19,1** |
+| Tedavi döngüsü başına yumurtlama | **%61,7** | **%48,3** |
 
-- Kümülatif canlı doğum: **letrozole %27.5 vs clomiphene %19.1** (rate ratio 1.44; %95 GA 1.10-1.87)
-- Kümülatif ovülasyon: letrozole %61.7 vs clomiphene %48.3
-- İkiz gebelik oranı: gruplar arasında anlamlı fark yok
-- Gebelik kaybı oranı: gruplar arasında fark yok
-- Yan etki profili: clomiphene daha fazla hot flush, letrozole biraz daha fazla yorgunluk
+Canlı doğum için oran oranı **1,44**, %95 güven aralığı **1,10-1,87** idi. İkiz gebelik ve gebelik kaybı açısından gruplar arasında anlamlı fark saptanmadı. Klomifen grubunda sıcak basması, letrozol grubunda ise yorgunluk daha sık görüldü. Bu oranlar çalışmaya katılan grubu tanımlar; sizin olasılığınız yaşınıza ve diğer infertilite etkenlerine göre farklı olabilir. (Kaynak: Legro ve ark., NEJM, 2014)
 
-Bu kanıt temelinde **2023 PCOS uluslararası rehberi letrozole'u, başka infertilite faktörü olmayan anovulatuar PCOS hastalarında birinci basamak ovülasyon indüksiyon ilacı olarak önermektedir**. Uygulama dozu ve izlem planı kişisel risklere göre hekim tarafından belirlenmelidir; kontrolsüz kullanım çoğul gebelik ve over yanıtı açısından güvenli değildir.
+Bu bulgular, 2023 uluslararası rehberinin letrozolü başka infertilite faktörü olmayan ve yumurtlamayan PCOS hastalarında ilk seçenek olarak önermesinin dayanakları arasındadır. **Yumurtlama ilaçlarının dozu ve takibi hekimle planlanır;** yumurtalık yanıtı ve çoğul gebelik riski nedeniyle kontrolsüz kullanımları güvenli değildir.
 
-**2. Clomiphene citrate (CC).** Letrozole'a erişimin olmadığı veya kontrendike olduğu durumlarda seçenek olabilir. Anti-estrojenik endometriyal etkisi nedeniyle bazı hastalarda implantasyon açısından daha sınırlı olabilir; kullanım süresi ve doz artışı hekim kontrolünde planlanmalıdır.
+**2. Klomifen sitrat**
 
-**3. Gonadotropinler.** Letrozole ve clomiphene'a dirençli PCOS vakalarında kullanılabilir. **Düşük doz step-up protokolü** çoğul gebelik ve OHSS riskini azaltmak için tercih edilir; yakın transvajinal ultrason ve gerektiğinde estradiol takibi gerekir.
+Letrozole erişilemediğinde veya kullanımı uygun olmadığında bir diğer seçenektir. Rahim iç tabakasında östrojen etkisini azaltması, bazı hastalarda embriyonun tutunmasını olumsuz etkileyebilir.
 
-**4. IVF ve OHSS riski — PCOS'ta önemli bir IVF konusu**
+**3. Gonadotropinler**
 
-PCOS hastaları **ovaryan hiperstimülasyon sendromu (OHSS) açısından yüksek risk grubundadır**. <InlineEvidence grade="A" /> Modern IVF pratiğinde risk azaltmak için üç strateji öne çıkar:
+Ağızdan kullanılan yumurtlama ilaçlarına yeterli yanıt alınamazsa, yumurtalıkları uyaran bu iğneler değerlendirilebilir. Düşük dozla başlayıp dozu kademeli artırmak, çoğul gebelik ve aşırı yumurtalık yanıtı riskini azaltmayı amaçlar. Yakın ultrason takibi ve gerektiğinde estradiol ölçümü gerekir.
 
-- **GnRH antagonist protokol** — agonist protokole kıyasla OHSS insidansını anlamlı düşürür; siklus uzunluğu daha kısadır.
-- **GnRH-a trigger** (hCG yerine) — korpus luteumu hızla luteolize eder, vasküler endotelyal growth factor (VEGF) salınımını azaltarak OHSS patofizyolojisine doğrudan etki eder.
-- **Freeze-all stratejisi** — taze transfer yapılmaz; tüm embriyolar dondurulup ileride hormonu normalleşmiş ortamda transfer edilir. Uygun hastada bu yaklaşım şiddetli OHSS riskini belirgin azaltabilir.
+**4. Tüp bebek ve OHSS riski**
 
-Adjuvan tedaviler arasında cabergoline ve dengeli sıvı yönetimi yer alabilir. GnRH-a trigger + freeze-all kombinasyonu bile yüksek yanıtlı PCOS hastalarında tam koruma sağlamaz; bu yüzden seçilmiş hastalarda **erken transfer iptal kararı** ve yakın klinik takip önemlidir.
+Tüp bebek, önceki tedavilerle yanıt alınamadığında veya ek infertilite nedenleri olduğunda gündeme gelebilir. PCOS'ta **yumurtalıkların aşırı uyarılması sendromu (OHSS)** riski yüksek olduğundan protokol bu riske göre seçilir. <InlineEvidence grade="A" />
+
+- **GnRH antagonist protokolü:** OHSS riskini azaltmak ve son yumurta olgunlaşması için kullanılacak ilacı seçebilmek açısından tercih edilebilir.
+- **GnRH agonistiyle son olgunlaştırma:** Uygun protokolde hCG yerine bu ilacın kullanılması, OHSS riskini azaltmaya yardımcı olur.
+- **Tüm embriyoların dondurulması:** Taze transfer yapılmaz; embriyolar daha sonraki bir döngüde transfer edilir. Bu yaklaşım uygun hastalarda ağır OHSS riskini azaltabilir.
+
+Gerekli durumlarda kabergolin gibi ek ilaçlar ve sıvı dengesinin takibi de planlanabilir. Son olgunlaştırmada ilaç değişikliği ve tüm embriyoların dondurulması birlikte uygulansa da **risk tamamen ortadan kalkmaz**; yüksek yumurtalık yanıtı gelişen hastalar yakından izlenir. Ayrıntılar [PCOS ve tüp bebek rehberinde](/makaleler/opk-ve-ivf/) yer alır.
 
 ## PCOS'un Uzun Vadeli Sağlık Riskleri
+
+Adetler düzelse veya gebelik gerçekleşse de PCOS takibi bitmez. Kan şekeri, kalp-damar sağlığı, rahim iç tabakası ve ruh sağlığı yaşamın sonraki dönemlerinde de değerlendirilir.
+
+Bu bölümdeki risk artışları, araştırmalardaki grupların karşılaştırmasına dayanır; kişisel hastalık olasılığınızı vermez. Gözlemsel bir ilişkiden, PCOS'un o hastalığa doğrudan neden olduğu sonucu da çıkarılamaz.
 
 <figure>
   <img
@@ -339,50 +318,43 @@ Adjuvan tedaviler arasında cabergoline ve dengeli sıvı yönetimi yer alabilir
     decoding="async"
   />
   <figcaption>
-    PCOS, tip 2 diyabet ve kardiyovasküler hastalık riskini artırır; 2025 JCEM kohort çalışmasında PCOS'lu kadınlarda tip 2 diyabet riski yaklaşık 1,5 kat, tüm kardiyovasküler hastalık riski yaklaşık 1,8 kat yüksek bulunmuştur. Düzenli aerobik egzersiz ve %5-10 kilo kaybı insülin direncini ve ovulasyon düzenini belirgin iyileştirir. (Kaynak: International Evidence-based PCOS Guideline 2023; JCEM 2025)
+    PCOS takibi yalnızca adet düzenine odaklanmaz. Kan şekeri, kan yağları ve günlük yaşam alışkanlıkları da uzun vadeli sağlık değerlendirmesinin parçasıdır. (Kaynak: 2023 Uluslararası PCOS Rehberi)
   </figcaption>
 </figure>
 
-PCOS yalnızca üreme dönemiyle sınırlı bir sendrom değildir. Ömür boyu metabolik ve onkolojik etkileri vardır — bu yüzden tanı konan her hasta menopoz sonrası da takipli kalmalıdır.
+**Tip 2 diyabet.** PCOS'lu kadınlarda risk, aynı yaş ve vücut kitle indeksine sahip kadınlara göre artmıştır. <InlineEvidence grade="A" /> Henney ve arkadaşlarının 2025'te JCEM'de yayımlanan kohort çalışmasında risk yaklaşık **1,5 kat** bulundu (HR 1,47; %95 güven aralığı 1,11-1,95). Kan şekeri değerlendirmesi, kişisel risklere göre genellikle **1-3 yılda bir** tekrarlanır.
 
-**Tip 2 diyabet.** PCOS'lu kadınlarda tip 2 diyabet riski, aynı yaş ve vücut kitle indeksine sahip kadınlara göre belirgin şekilde artmıştır. <InlineEvidence grade="A" /> 2025 JCEM kohort verisi, PCOS'lu kadınlarda tip 2 diyabet riskinin kontrollere göre yaklaşık 1,5 kat (HR 1.47; %95 GA 1.11-1.95) ve tüm kardiyovasküler hastalık riskinin yaklaşık 1,8 kat (HR 1.76; %95 GA 1.35-2.30) yüksek olduğunu göstermektedir. 2023 rehberi, glisemik değerlendirmeyi BMI'den bağımsız olarak 75 g OGTT ile önerir; tekrar sıklığı (genelde 1-3 yılda bir) kişisel risk faktörlerine göre belirlenir. Diyabet veya bozulmuş glukoz toleransı olanlarda tekrarlayan vajinal mantar şikayeti de sık görülür; ayırıcı tanı için [akıntı, kaşıntı ve koku rehberi](/makaleler/akinti-kasinti-koku/) yararlıdır.
+Diyabet veya glukoz tolerans bozukluğu olanlarda tekrarlayan vajinal mantar şikâyeti de görülebilir. Benzer belirtilerin ayrımı için [akıntı, kaşıntı ve koku rehberini](/makaleler/akinti-kasinti-koku/) inceleyebilirsiniz.
 
-**Kardiyovasküler hastalık ve metabolik sendrom.** Hipertansiyon, dislipidemi, santral obezite ve insülin direnci bir araya geldiğinde koroner arter hastalığı, atriyal fibrilasyon ve inme riskini artırabilir. 2025 JCEM kohort verisinde PCOS'lu kadınlarda tüm nedenlere bağlı kardiyovasküler hastalık riski yaklaşık 1,8 kat bulunmuştur. Aynı çalışmada hepatik steatoz (yağlı karaciğer) prevalansı PCOS'lu kadınlarda kontrollere göre belirgin yüksek saptanmıştır (PCOS'ta %35,9 ve kontrollerde %23,9; p=0.02).
+**Kalp-damar sağlığı ve yağlı karaciğer.** Yüksek tansiyon, kan yağlarında bozulma, bel çevresinde yağlanma ve insülin direnci birlikte değerlendirilir. Aynı 2025 kohort çalışmasında kalp-damar hastalığı riski yaklaşık **1,8 kat** bulundu (HR 1,76; %95 güven aralığı 1,35-2,30). Görüntülemeyle değerlendirilen grupta yağlı karaciğer oranı PCOS'ta **%35,9**, kontrol grubunda **%23,9** idi (p=0,02).
 
-**Endometriyal kanser.** Anovulasyona bağlı uzun süreli unopposed estrojen maruziyeti endometriyumda hiperplazi ve karsinom riskini artırır. 13 çalışmayı içeren 2025 sistematik derlemesi ve meta-analizi PCOS'lu kadınlarda endometriyal kanser **rölatif riskini 2.91 (%95 GA 2.29-3.70) olarak hesaplamıştır**. <InlineEvidence grade="B" /> Bu, uzun süreli amenore/oligomenoresi olan hastalarda endometriyumun düzenli progestojen ya da kombine oral kontraseptifle korunmasının önemini gösterir. Protokol evrensel bir "yılda birkaç kez" kuralı değildir; siklus düzenleme ve çekilme kanaması hedefi, hastanın klinik durumuna ve isteğine göre kişiselleştirilir. Persistan anormal kanama veya tedaviye rağmen düzelmeyen kalınlık/lezyon şüphesi varsa endometriyal örnekleme ayrıca değerlendirilmelidir.
+**Rahim iç tabakasında kalınlaşma ve kanser.** Risk, uzun süre yumurtlama olmamasına bağlı progesteron eksikliğiyle ilişkilendirilir. Ghaempanah ve arkadaşlarının 13 çalışmayı içeren 2025 meta-analizinde, PCOS'lu kadınlarda endometriyal kanser için **göreli risk 2,91** bulundu (%95 güven aralığı 2,29-3,70). <InlineEvidence grade="B" />
 
-**Over ve meme kanseri.** PCOS-over kanseri ilişkisi için kanıtlar zayıftır ve net bir artmış risk gösterilmemiştir. Meme kanseri verisi de tutarsızdır; mevcut kanıt belirgin bir risk artışı göstermemektedir.
+Seyrek adet gören veya uzun süre adet olmayan kişilerde, progestojen ya da kombine doğum kontrol hapıyla rahim iç tabakasını korumak değerlendirilebilir. Herkese uygulanacak bir “yılda birkaç kez kanama” takvimi yoktur; plan kişiye göre belirlenir. Devam eden anormal kanama, tedaviye rağmen düzelmeyen kalınlaşma veya şüpheli bir alan varsa rahim iç tabakasından örnek alınması ayrıca değerlendirilir.
 
-**Psikolojik komorbidite.** Depresyon ve anksiyete prevalansı PCOS'lu kadınlarda anlamlı yüksektir. Yeme bozukluğu, özellikle binge eating, beden imajı ve insülin direnciyle çift yönlü etkileşim gösterir. Multidisipliner takipte psikoterapi ve gerektiğinde psikiyatrik destek yer almalıdır.
+**Yumurtalık ve meme kanseri.** İki kanser için de belirgin bir risk artışı gösterilmemiştir. Yumurtalık kanserine dair kanıt zayıf, meme kanseri verileri ise tutarsızdır.
+
+**Ruh sağlığı.** Kaygı, depresyon, beden algısıyla ilgili güçlükler ve tıkınırcasına yeme gibi sorunlar takipte ele alınmalıdır. Gerektiğinde psikoterapi veya psikiyatrik destek tedavi planına eklenir.
 
 ## Sıkça Sorulan Sorular
 
-**Her adet düzensizliği PCOS mudur?**  
-Hayır. PCOS sık bir nedendir ama gebelik, tiroid bozuklukları, prolaktin yüksekliği, hipotalamik amenore, prematür over yetmezliği ve bazı ilaçlar da adet düzenini bozabilir.
-
-**Adet düzensizliği olmadan PCOS olur mu?**  
-Evet, bazı hastalarda adetler görece düzenli olabilir. Bu durumda hiperandrojenizm, ultrason/AMH bulguları ve diğer nedenlerin dışlanması tanıda belirleyici olur.
-
-**Polikistik over adet gecikmesi yapar mı?**  
-Evet. PCOS ovulasyonun seyrekleşmesine yol açarak adet gecikmesi yapabilir. Ancak gebelik olasılığı varsa ilk adım gebelik testidir.
-
 **PCOS tanısı için ultrason şart mı?**
-Hayır. 2023 güncellemesinden itibaren düzensiz adet ile hiperandrojenizm bir aradaysa tanı doğrudan konur — ultrason veya AMH gerekli değildir. Ultrasonografiye erişimin sınırlı olduğu yerlerde, erişkinlerde serum AMH ölçümü alternatif olarak kullanılabilir; ancak AMH tek başına tanı testi değildir ve sonuç assay'a özgü eşikle yorumlanır.
+Hayır. Erişkinlerde adet düzensizliği ve androjen fazlalığı birlikteyse, benzer belirtiler yapan diğer nedenler dışlandıktan sonra ultrason veya AMH olmadan tanı konabilir.
 
 **LH/FSH oranının yüksek olması PCOS demek midir?**
-Hayır. LH/FSH > 2 oranı PCOS'lu kadınların yaklaşık yarısında görülür ancak Rotterdam kriterlerinde **tanısal değildir**. Tanı için klinik veya biyokimyasal hiperandrojenizm, ovülasyon disfonksiyonu ve polikistik over morfolojisi değerlendirilir.
+Hayır. LH/FSH oranı Rotterdam tanı ölçütleri arasında yer almaz; yüksek çıkması PCOS tanısı için yeterli değildir.
 
 **Kilom normal, PCOS'um olabilir mi?**
-Evet. "Lean PCOS" (zayıf PCOS) olarak bilinen normal BMI'li fenotip yaygındır. İnsülin direnci ve hiperandrojenizm BMI'den bağımsız olarak görülebilir; bu yüzden sadece kilolu kadınlarda görüldüğüne dair yaygın inanç yanlıştır.
+Evet. Normal kiloda da PCOS, insülin direnci ve androjen fazlalığı görülebilir.
 
-**Myo-inositol metformine alternatif midir?**
-2023 PCOS rehberinin sistematik derlemesi, inositol kanıtını "umut vadeden ancak henüz sınırlı" düzeyinde değerlendirmekte ve inositolü rutin tedavi olarak önermemektedir. Mevcut veriler, inositolün siklus düzenine bir miktar katkı ve metformine kıyasla daha az gastrointestinal yan etki ile ilişkilendirilebileceğini düşündürse de sonuçlar kesin değildir. T2DM önleme endikasyonunda kanıtı güçlü olan metformin birinci basamaktır; inositol, kişiye özel olarak hekimle değerlendirilmelidir.
+**Miyo-inositol metforminin yerine geçer mi?**
+İkisi aynı işi görmez. Metformin daha çok kan şekeri ve insülin direnciyle ilgili sorunlarda değerlendirilir; inositolün klinik yararına dair kanıt ise sınırlıdır. Seçim, tedavi hedefiniz ve yan etki olasılıkları konuşularak yapılır. İnositol, infertilite tedavisinde etkinliği gösterilmiş ilaçların yerine kullanılmamalıdır.
 
 **PCOS'um varsa çocuk sahibi olabilir miyim?**
-Büyük çoğunluk evet. PCOS anovulatuar infertilitenin en sık nedenidir ama uygun tedaviye yanıt verebilen bir tablodur. Letrozole, başka infertilite faktörü olmayan anovulatuar PCOS hastalarında birinci basamak ovülasyon indüksiyon seçeneğidir; Legro 2014 çalışmasında kümülatif canlı doğum oranı letrozol grubunda yaklaşık %27.5 bildirilmiştir. Yanıt alınamayan veya başka faktörler eklenen olgularda IVF değerlendirilebilir; PCOS'ta OHSS riskine karşı protokol seçimi kişiselleştirilmelidir.
+PCOS'lu birçok kadın gebe kalabilir. Yumurtlama sorunu tedaviye yanıt verebilir; sonuç yaşınıza ve diğer infertilite etkenlerine de bağlıdır. Başka infertilite nedeni yoksa letrozol ilk ilaç seçeneğidir; yeterli yanıt alınmadığında diğer tedaviler değerlendirilir.
 
 **PCOS varsa doğrudan tüp bebek gerekir mi?**
-Hayır. Eşlik eden ciddi erkek faktörü, tüp tıkanıklığı, ileri yaş, düşük rezerv veya uzun süreli infertilite yoksa ilk adım çoğu zaman yumurtlamayı düzenlemek ve zamanlanmış ilişki ya da aşılama seçeneklerini değerlendirmektir. Tüp bebek, yanıt alınamayan veya ek infertilite faktörü olan olgularda daha erken gündeme gelir. Tüp bebek planlanırsa OHSS riski ve protokol seçimi ayrı bir konudur; ayrıntı için [PCOS ve tüp bebek rehberi](/makaleler/opk-ve-ivf/)'ne bakabilirsiniz.
+Hayır. Ciddi sperm sorunu, tüp tıkanıklığı, ileri yaş, düşük rezerv veya uzun süren infertilite yoksa önce yumurtlama tedavisi düşünülebilir. Zamanlanmış ilişki, aşılama veya tüp bebek kararı çiftin bulgularına göre verilir. Tüp bebek planlanırsa OHSS riskine uygun bir protokol seçilir.
 
 ## İlgili Rehberler
 
