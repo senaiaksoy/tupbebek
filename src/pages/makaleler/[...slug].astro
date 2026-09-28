@@ -110,6 +110,9 @@ const heroSrcSet = getResponsiveImageSrcSet(sanitizedImage);
     imageHeight={entry.data.image ? heroDimensions.height : undefined}
     ogType="article"
     pageType="MedicalWebPage"
+    lastReviewed={entry.data.reviewType !== 'editorial' && entry.data.medicalReviewer && entry.data.reviewDate
+        ? entry.data.reviewDate.toISOString().split('T')[0]
+        : undefined}
     canonical={articleUrl}
     noindex={entry.data.noindex}
 >
