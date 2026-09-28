@@ -20,7 +20,7 @@ status: "published"
 publishDate: 2026-03-31
 lastModified: 2026-09-28
 evidenceAsOf: 2026-09-25
-reviewScope: "Eylül 2026: Metin sade Türkçeyle yeniden düzenlendi; terimler ilk geçişte açıklandı. Dr. Aksoy'un yanıtladığı üç soruyla 'Dr. Aksoy'a en sık sorulan sorular' bölümü eklendi. Sayılar, kaynaklar ve kanıt değerlendirmesi değiştirilmedi."
+reviewScope: "Eylül 2026: Metin sade Türkçeyle yeniden düzenlendi; terimler ilk geçişte açıklandı. Dr. Aksoy'un yanıtladığı üç soruyla 'Dr. Aksoy'a en sık sorulan sorular' bölümü ve tedavi, üreme ve tüp bebek bölümlerine üç imzalı katkı eklendi. AAGL/ESGE 2017 atfı tam metinle doğrulandı. Sayılar, kaynaklar ve kanıt değerlendirmesi değiştirilmedi."
 expertContribution:
   title: "Dr. Aksoy'un yaklaşımı"
   question: "Orta-ağır Asherman'da ilk adezyolizden sonra ikinci bakış histeroskopiyi ne zaman ve hangi bulguya göre planlıyorsunuz; bariyer veya östrojen desteğini kimde kullanıyor, kimde gereksiz buluyorsunuz?"
@@ -133,6 +133,7 @@ references:
 
 import Accordion from "../../components/global/Accordion.astro";
 import InlineEvidence from '../../components/InlineEvidence.astro';
+import DoctorNote from "../../components/global/DoctorNote.astro";
 
 İntrauterin adezyon (IUA), rahim içindeki karşılıklı yüzeyler arasında skar dokusu gelişmesi ve bu yüzeylerin birbirine yapışmasıdır. Yapışıklıklar adetin belirgin azalmasına ya da kesilmesine, gebe kalmada güçlüğe, tekrarlayan gebelik kaybına veya adet dönemlerinde tekrarlayan ağrıya yol açtığında tablo sıklıkla **Asherman sendromu** olarak adlandırılır ([Toma 2025](https://pubmed.ncbi.nlm.nih.gov/40310333/); [Yu 2008](https://pubmed.ncbi.nlm.nih.gov/18406834/)). Literatürde iki terim zaman zaman birbirinin yerine kullanılır. Yine de görüntülemede saptanan yapışıklığı, şikâyete yol açan sendromdan ayırmak hangi durumda tedavi gerektiğini anlamayı kolaylaştırır.
 
@@ -279,6 +280,17 @@ Semptomu, gebe kalma sorunu veya gebelik planı olan uygun hastalarda temel teda
 
 Adezyolizis, yapışıklıkların histeroskopla görülerek açılmasıdır ve deneyimli bir cerrah tarafından yapılması önerilir ([AAGL/ESGE 2017](https://pubmed.ncbi.nlm.nih.gov/28473177/)). Amaç rahim boşluğunun normal şeklini geri kazandırmak, tüp ağızlarını görünür hale getirmek ve sağlıklı endometriumun yeniden büyümesine zemin hazırlamaktır. Şikâyet oluşturmayan hafif yapışıklıklarda karar kişiye göre verilir; çünkü ameliyatın kendisi de yeniden yapışma ve rahim delinmesi (perforasyon) riski taşır.
 
+<DoctorNote
+  title="Dr. Aksoy'un yaklaşımı"
+  question="Histeroskopide yapışıklık gördüğünüzde tedavi kararınızı en çok ne belirliyor?"
+  note="Benim için belirleyici olan, yapışıklığın rahim boşluğunu ne kadar bozduğu ve sağlıklı rahim iç tabakasından ne kadar kaldığıdır. İnce, tesadüfen görülmüş ve şikâyet yaratmayan bir bandı her zaman açmam. Adet azalması, gebe kalamama veya gebelik kaybı varsa, özellikle boşluğun önemli bir kısmı kapanmışsa tedavi öneririm. Yoğun yapışıklıkta sağlıklı dokuya zarar vermeden ne kadar ilerleyebileceğimi de hesaba katarım."
+  evidenceNote="Tedavinin belirti varlığında düşünülmesi ve yoğun yapışıklıkta deneyimli bir histeroskopist önerisi AAGL/ESGE 2017 rehberiyle uyumludur."
+  author="Doç. Dr. Senai Aksoy"
+  authorTitle="Kadın Hastalıkları ve Doğum Uzmanı"
+  authorUrl="https://tupbebek.com/yazar/senai-aksoy/"
+  answeredAt={new Date("2026-09-28")}
+/>
+
 ### Cerrahi teknik seçenekleri
 
 - **Mini makas / soğuk kesi (cold knife):** Isı hasarı en az olan yöntemdir; özellikle ince ve hafif yapışıklıklarda sık tercih edilir.
@@ -343,6 +355,17 @@ Pratikte tek bir yöntem yerine, yapışıklığın şiddetine göre bariyer, ho
 "Tedaviden sonra gebe kalabilir miyim?" sorusunun kısa cevabı: mümkün olabilir, ama herkes için aynı değil. Rahim boşluğunun küçük bir bölümünü tutan hafif bir yapışıklıkla, boşluğun büyük kısmını kapatan şiddetli bir Asherman'ı aynı grupta değerlendirmek doğru olmaz.
 
 Aşağıdaki oranları okurken iki noktayı akılda tutmak gerekir. Çalışmalar farklı hasta gruplarına ve farklı paydalara dayanır. Gebelik oranı ile canlı doğum oranı da aynı şey değildir.
+
+<DoctorNote
+  title="Dr. Aksoy'un yaklaşımı"
+  question="Ameliyattan sonra “Gebe kalabilir miyim?” diye soran hastaya cevabınızı neye göre veriyorsunuz?"
+  note="Evet, ameliyattan sonra gebelik mümkün olabilir. Ama cevabımı yalnızca yapışıklığın açılmış olmasına göre vermem: kontrolde rahim boşluğu açık kalmış mı, iç tabaka yeniden gelişiyor mu ve başlangıçtaki hasar ne kadar ağırdı, bunlara bakarım. Yaş, tüpler ve sperm durumu da doğal gebelik ile tüp bebek seçeneklerini değiştirir. Ağır yapışıklığı olan bir hastaya, hafif olguların başarı oranını kendi şansıymış gibi sunmam."
+  evidenceNote="Yapışıklık şiddetinin gebelik olasılığını etkilemesi Guo 2019 ile uyumludur; aşağıdaki oranların hangi hasta grubuna ait olduğu tablolarda belirtilmiştir."
+  author="Doç. Dr. Senai Aksoy"
+  authorTitle="Kadın Hastalıkları ve Doğum Uzmanı"
+  authorUrl="https://tupbebek.com/yazar/senai-aksoy/"
+  answeredAt={new Date("2026-09-28")}
+/>
 
 <figure class="my-8">
   <img
@@ -432,6 +455,17 @@ Fouks 2022, tedavi edilmiş Asherman sendromu olan 51 tüp bebek hastasını eş
 Mortimer 2024'te tedavi edilmiş yapışıklık öyküsü olan tüp bebek hastalarında genel canlı doğum oranı kontrollere benzer bulunmuştur; ancak iki veya daha fazla adezyolizis geçiren alt grupta canlı doğum daha düşük kalmıştır ([Mortimer 2024](https://pubmed.ncbi.nlm.nih.gov/38777163/)).
 
 Bu yüzden değerlendirme yalnızca rahim boşluğunun açılıp açılmadığıyla sınırlı kalmaz. Bazal tabakadaki hasarın derinliği, endometriumun ne kadar canlı olduğu, önceki ameliyat sayısı ve gebelik olursa plasentanın nereye tutunacağı birlikte düşünülür; beklenti de buna göre gerçekçi tutulur. İlk ameliyatın sağlıklı dokuyu koruyarak yapılması, ikinci bir ameliyat ihtiyacını azaltmak açısından önemlidir.
+
+<DoctorNote
+  title="Dr. Aksoy'un yaklaşımı"
+  question="Asherman öyküsü olan bir hastada embriyo transferine karar verirken neye bakıyorsunuz, hangi durumda erteliyorsunuz?"
+  note="Asherman öyküsünde embriyodan önce rahmin transfere hazır olduğundan emin olmak isterim. Kontrolde yeniden yapışıklık varsa, boşluk tam açılamamışsa veya rahim iç tabakası hazırlığa rağmen belirgin biçimde yetersiz gelişiyorsa transferi ertelerim. Tek bir kalınlık ölçümüne dayanarak karar vermem; boşluğun görünümünü, önceki ameliyatları ve o siklustaki gelişimi birlikte değerlendiririm. Zaman önemliyse yumurta toplama ve embriyo dondurma planını transfer kararından ayrı ele alabiliriz."
+  evidenceNote="Transfer öncesi rahim boşluğunun kontrolü, AAGL/ESGE 2017'nin ameliyat sonrası rahim boşluğunu tercihen histeroskopiyle yeniden değerlendirme önerisiyle uyumludur."
+  author="Doç. Dr. Senai Aksoy"
+  authorTitle="Kadın Hastalıkları ve Doğum Uzmanı"
+  authorUrl="https://tupbebek.com/yazar/senai-aksoy/"
+  answeredAt={new Date("2026-09-28")}
+/>
 
 Tüp bebek sürecinde dikkat edilen noktalar:
 
