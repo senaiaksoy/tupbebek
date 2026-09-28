@@ -18,9 +18,9 @@ templateVersion: "2026-07"
 recommendationGrade: B
 status: "published"
 publishDate: 2026-03-31
-lastModified: 2026-09-25
+lastModified: 2026-09-28
 evidenceAsOf: 2026-09-25
-reviewScope: "IUA–Asherman terminoloji ayrımı; cerrahi endikasyon ve obstetrik risk dili yumuşatıldı; Deans 2018 özet kaynaklarına alındı; Mortimer 2024 PAS riski eklendi; Fouks 2022 sınırlı örneklem olarak çerçevelendi; adezyolizis yazımı standartlaştırıldı."
+reviewScope: "Eylül 2026: Metin sade Türkçeyle yeniden düzenlendi; terimler ilk geçişte açıklandı. Dr. Aksoy'un yanıtladığı üç soruyla 'Dr. Aksoy'a en sık sorulan sorular' bölümü eklendi. Sayılar, kaynaklar ve kanıt değerlendirmesi değiştirilmedi."
 expertContribution:
   title: "Dr. Aksoy'un yaklaşımı"
   question: "Orta-ağır Asherman'da ilk adezyolizden sonra ikinci bakış histeroskopiyi ne zaman ve hangi bulguya göre planlıyorsunuz; bariyer veya östrojen desteğini kimde kullanıyor, kimde gereksiz buluyorsunuz?"
@@ -133,11 +133,10 @@ references:
 
 import Accordion from "../../components/global/Accordion.astro";
 import InlineEvidence from '../../components/InlineEvidence.astro';
-import QuoteBlock from '../../components/global/QuoteBlock.astro';
 
-İntrauterin adezyon (IUA), rahim içindeki karşılıklı yüzeyler arasında skar dokusu ve yapışıklık gelişmesidir. Bu yapışıklıklar adet azalması veya kesilmesi, infertilite, tekrarlayan gebelik kaybı ya da siklik ağrı gibi klinik sorunlara yol açtığında tablo sıklıkla **Asherman sendromu** olarak adlandırılır ([Toma 2025](https://pubmed.ncbi.nlm.nih.gov/40310333/); [Yu 2008](https://pubmed.ncbi.nlm.nih.gov/18406834/)). Literatürde iki terim bazen birbirinin yerine kullanılır; hasta bilgilendirmesinde anatomik bulgu ile semptomatik tabloyu ayırmak daha doğrudur.
+İntrauterin adezyon (IUA), rahim içindeki karşılıklı yüzeyler arasında skar dokusu gelişmesi ve bu yüzeylerin birbirine yapışmasıdır. Yapışıklıklar adetin belirgin azalmasına ya da kesilmesine, gebe kalmada güçlüğe, tekrarlayan gebelik kaybına veya adet dönemlerinde tekrarlayan ağrıya yol açtığında tablo sıklıkla **Asherman sendromu** olarak adlandırılır ([Toma 2025](https://pubmed.ncbi.nlm.nih.gov/40310333/); [Yu 2008](https://pubmed.ncbi.nlm.nih.gov/18406834/)). Literatürde iki terim zaman zaman birbirinin yerine kullanılır. Yine de görüntülemede saptanan yapışıklığı, şikâyete yol açan sendromdan ayırmak hangi durumda tedavi gerektiğini anlamayı kolaylaştırır.
 
-Yapışıklıklar ince filmlerden, boşluğu tamamen kapatan yoğun bağ dokusuna kadar değişir. Çoğu olgu cerrahi travmaya bağlıdır ve bir kısmı önlenebilir. Tanı kaçırılırsa tekrarlayan IVF başarısızlığı, açıklanamayan infertilite veya düşük olarak yanlış yorumlanabilir.
+Yapışıklıklar ince zarlardan rahim boşluğunu tamamen kapatan yoğun bağ dokusuna kadar değişir. Olguların çoğu rahim içine yapılan cerrahi girişimlerle ilişkilidir ve bir kısmı önlenebilir. Tanı gözden kaçtığında tablo tekrarlayan tüp bebek başarısızlığı, açıklanamayan infertilite veya düşük olarak yanlış yorumlanabilir.
 
 ## İçindekiler
 
@@ -152,83 +151,84 @@ Yapışıklıklar ince filmlerden, boşluğu tamamen kapatan yoğun bağ dokusun
 9. [Üreme sonuçları](#ureme)
 10. [Gebelik takibi](#gebelik)
 11. [IVF ve Asherman](#ivf)
-12. [Sıkça sorulan sorular](#faq)
+12. [Dr. Aksoy'a en sık sorulan sorular](#faq)
+13. [Diğer sık sorulan sorular](#diger-sorular)
 
 <h2 id="sik-aranan">Merak Edilen Asherman ve Rahim İçi Yapışıklık Soruları</h2>
 
 | Soru | Kısa cevap |
 | :--- | :--- |
-| **Asherman sendromu nedir?** | Rahim içi yapışıklıkların adet, infertilite veya ağrı gibi klinik sorunlara yol açtığı tablodur; anatomik bulgu ise intrauterin adezyondur. |
-| **Rahim içi yapışıklık belirtileri nelerdir?** | Adetin azalması veya kesilmesi, infertilite, tekrarlayan gebelik kaybı veya işlem sonrası ağrı ile fark edilebilir. |
-| **Rahim içi yapışıklık ultrasonda görülür mü?** | Bazen şüphe verir; kesin tanıda referans yöntem histeroskopidir. SIS/HSG tarama ve ön değerlendirmede yardımcı olabilir. |
-| **Asherman sonrası hamile kalınır mı?** | Tedavi sonrası mümkün olabilir; olasılık yapışıklık şiddetine, endometrium kalitesine ve eşlik eden faktörlere bağlıdır. |
+| **Asherman sendromu nedir?** | Rahim içi yapışıklıkların adet, gebe kalma veya ağrı sorunlarına yol açtığı tablodur. Yapışıklığın kendisine ise intrauterin adezyon denir. |
+| **Rahim içi yapışıklık belirtileri nelerdir?** | Adetin azalması veya kesilmesi, gebe kalamama, tekrarlayan düşük ya da rahim içi işlemden sonra başlayan adet ağrısıyla fark edilebilir. |
+| **Rahim içi yapışıklık ultrasonda görülür mü?** | Ultrason şüphe uyandırabilir ama kesin tanı koydurmaz. Kesin tanıda referans yöntem histeroskopidir; salin infüzyon sonografi (SIS) ve HSG ön değerlendirmede yardımcı olur. |
+| **Asherman sonrası hamile kalınır mı?** | Tedaviden sonra gebelik mümkün olabilir. Olasılık yapışıklığın şiddetine, endometriumun iyileşmesine ve eşlik eden diğer etkenlere bağlıdır. |
 
 <h2 id="olusum">Asherman Sendromu Nasıl Oluşur?</h2>
 
-Bazal endometriyum hasar görürse aylık yenilenme bozulur; iyileşme fibrotik yapışıklığa kayabilir.
+Rahim iç tabakasının derindeki bazal katmanı hasar görürse aylık yenilenme bozulur ve iyileşme normal doku yerine yapışıklık dokusuyla sonuçlanabilir.
 
-Sağlıklı rahim iç tabakası iki katmandan oluşur:
+Rahim iç tabakası (endometrium) iki katmandan oluşur:
 
-- **Fonksiyonel katman** — her ay siklusla oluşan ve adetle atılan üst tabaka
-- **Bazal katman** — derin ve sürekli kalan; fonksiyonel katmanı her ay yeniden üreten rezerv
+- **Fonksiyonel katman:** Her adet döngüsünde hormonların etkisiyle kalınlaşan ve gebelik olmazsa adet kanamasıyla dökülen üst tabaka.
+- **Bazal katman:** Derindeki kalıcı tabaka. Fonksiyonel katmanı her ay yeniden üreten rezerv burasıdır.
 
-Bazal katman travma, enfeksiyon veya inflamasyonla hasar görürse fonksiyonel katman bir daha düzgün yenilenemez. Bu noktada iyileşme normal epitelizasyon yerine **fibrotik yapışıklıklar** ile sonuçlanır. Yapışıklıklar zamanla kalıcı bağ dokusuna dönüşür ve boşluğu daraltır veya kapatır. Tarihsel çerçeve için [Yu 2008](https://pubmed.ncbi.nlm.nih.gov/18406834/) derlemesi hâlâ yararlıdır.
+Bazal katman travma, enfeksiyon veya iltihapla (inflamasyon) hasar görürse fonksiyonel katman düzgün yenilenemez. Yara, normal yüzey dokusuyla (epitel) örtülmek yerine **fibrotik yapışıklıklarla** iyileşir. Bu yapışıklıklar zamanla kalıcı bağ dokusuna dönüşür ve rahim boşluğunu daraltır ya da kapatır. Konunun tarihsel çerçevesi için [Yu 2008](https://pubmed.ncbi.nlm.nih.gov/18406834/) derlemesi hâlâ yararlıdır.
 
 <h2 id="nedenler">Neden Olur? — Etiyoloji ve Risk Faktörleri</h2>
 
-En sık neden gebelikle ilişkili rahim travmasıdır; özellikle düşük sonrası tahliye.
+En sık neden gebelikle ilişkili rahim içi girişimlerdir; başta düşük sonrası rahmin cerrahi olarak boşaltılması gelir.
 
-Asherman’ın çoğu olgusu gebe rahimde yapılan girişimlerden sonra gelişir. Gebe endometriyum, gebelik dışı endometriyumdan daha frajildir ([Yu 2008](https://pubmed.ncbi.nlm.nih.gov/18406834/); [Munro 2025](https://pubmed.ncbi.nlm.nih.gov/40914965/)).
+Asherman olgularının çoğu gebe ya da yeni doğum yapmış rahimde yapılan girişimlerden sonra gelişir. Gebelikteki endometrium, gebelik dışındakine göre daha kırılgandır ([Yu 2008](https://pubmed.ncbi.nlm.nih.gov/18406834/); [Munro 2025](https://pubmed.ncbi.nlm.nih.gov/40914965/)).
 
-### Başlıca etiyolojik nedenler
+### Başlıca nedenler
 
-| Etiyoloji | Risk notu |
+| Neden | Risk notu |
 |---|---|
-| Erken gebelik kaybı sonrası ürün tahliyesi / küretaj | En sık bağlam; kümülatif risk artabilir |
-| Doğum sonrası rezidü plasenta küretajı | Yüksek risk |
-| Tekrarlanan rahim içi girişimler | Risk her tekrarda artabilir |
+| Erken gebelik kaybı sonrası cerrahi tahliye / küretaj | En sık görülen bağlam; tekrarlanan işlemlerle risk birikebilir |
+| Doğum sonrası kalan plasenta parçası için küretaj | Yüksek risk |
+| Tekrarlanan rahim içi girişimler | Her tekrarda risk artabilir |
 | Sezaryen sonrası kanama için cerrahi | Orta–yüksek risk |
-| Histeroskopik miyomektomi (özellikle çoklu) | Orta risk; ayrıntı: [miyom ameliyatı](/makaleler/miyom-ameliyati/) |
-| Endometrit (gebelik sırası veya sonrası) | Bağımsız risk |
-| Pelvik tüberküloz | Endemik bölgelerde önemli neden |
-| Genital şistosomiyaz | Bazı bölgelerde |
+| Histeroskopik miyomektomi (özellikle çoklu miyomlarda) | Orta risk; ayrıntı: [miyom ameliyatı](/makaleler/miyom-ameliyati/) |
+| Endometrit (gebelik sırasında veya sonrasında rahim iç tabakası enfeksiyonu) | Bağımsız risk etkeni |
+| Pelvik tüberküloz | Tüberkülozun sık görüldüğü bölgelerde önemli neden |
+| Genital şistosomiyaz | Bazı coğrafi bölgelerde |
 
-### İnsidans — ne biliyoruz?
+### Görülme sıklığı: ne biliyoruz?
 
-Erken gebelik kaybı sonrası ürün tahliyesi sonrası yeni IUA riski, 2025 sistematik derlemede yaklaşık **%17** (%95 GA 11–25; 13 çalışma, yüksek heterojenite) olarak özetlenmiştir ([Munro 2025](https://pubmed.ncbi.nlm.nih.gov/40914965/)). <InlineEvidence grade="B" />
+Erken gebelik kaybından sonra yapılan cerrahi tahliyenin ardından yeni yapışıklık gelişme riski, 2025 tarihli bir sistematik derlemede yaklaşık **%17** olarak özetlenmiştir (%95 GA 11–25; 13 çalışma, çalışmalar arasında yüksek heterojenite) ([Munro 2025](https://pubmed.ncbi.nlm.nih.gov/40914965/)). <InlineEvidence grade="B" />
 
-Aynı derleme, primer önlemede (yapışıklık oluşmadan önce) jel bariyerlerin göreli riski düşürebileceğini bildirir. Bu bulgu, **adezyolizis sonrası sekonder önleme** ile karıştırılmamalıdır. Sekonder önlemede anti-adezyon jel için meta-analiz anlamlı fayda göstermemiştir ([Guo J 2023](https://pubmed.ncbi.nlm.nih.gov/37778374/)).
+Aynı derlemeye göre yapışıklık henüz oluşmadan, yani birincil önlemede, jel bariyerler göreli riski düşürebilir. Bu bulgu, yapışıklıklar açıldıktan sonra yeniden oluşmalarını önlemeye (ikincil önleme) taşınamaz. İkincil önlemede anti-adezyon jel için meta-analiz anlamlı fayda göstermemiştir ([Guo J 2023](https://pubmed.ncbi.nlm.nih.gov/37778374/)).
 
-Munro 2025 ayrıca histeroskopik miyomektomi sonrası IUA riskini yaklaşık %16, septum metroplastisi sonrası yaklaşık %28 olarak özetler. Bu oranlar çalışma kalitesi ve yöntem farkına göre değişir.
+Munro 2025 ayrıca histeroskopik miyomektomi sonrası yapışıklık riskini yaklaşık %16, rahim perdesinin (septum) düzeltilmesi sonrası yaklaşık %28 olarak özetler. Bu oranlar çalışmaların kalitesine ve yöntemine göre değişir.
 
 <h2 id="belirtiler">Belirtiler ve Klinik Spektrum</h2>
 
-En sık başvuru azalmış veya kesilmiş adet, infertilite ve tekrarlayan kayıptır; bazı hastalar asemptomatiktir.
+En sık başvuru nedenleri azalmış ya da kesilmiş adet, gebe kalamama ve tekrarlayan gebelik kaybıdır.
 
-### 1. Menstrüel bozukluklar
+### 1. Adet değişiklikleri
 
-- **Hipomenore:** Adet kanamasının belirgin azalması — en sık başvuru şikayeti
-- **Amenore:** Adetin tamamen kesilmesi; ayırıcı tanı için [adet görememe](/makaleler/adet-gorememe/) rehberi yararlıdır
-- **Dismenore:** Yapışıklıklar nedeniyle menstrüel kanın sıkışması — siklik pelvik ağrı
-- **Hematometra:** Kapalı boşlukta kan birikmesi (ileri olgularda)
+- **Hipomenore:** Adet kanamasının belirgin azalması; en sık başvuru şikâyetidir.
+- **Amenore:** Adetin tamamen kesilmesi. Diğer nedenlerden ayırmak için [adet görememe](/makaleler/adet-gorememe/) rehberine bakabilirsiniz.
+- **Dismenore:** Yapışıklıklar kanın dışarı akışını engellediğinde adet dönemlerinde tekrarlayan kasık ağrısı.
+- **Hematometra:** İleri olgularda kapanmış rahim boşluğunda kan birikmesi.
 
 ### 2. Üreme sorunları
 
-- **Sekonder infertilite** — daha önce gebe kalmış hastada açıklanamayan infertilite
-- **Tekrarlayan implantasyon başarısızlığı** — IVF’de sebebi bilinmeyen transfer yetmezliği
-- **Tekrarlayan düşükler** — özellikle birinci trimester; [kimyasal gebelik](/makaleler/kimyasal-gebelik/) bağlamında da yapısal nedenler düşünülür
+- **Sekonder infertilite:** Daha önce gebe kalmış bir kadında açıklanamayan gebe kalamama.
+- **Tekrarlayan implantasyon başarısızlığı:** Tüp bebek tedavisinde nedeni bulunamayan başarısız embriyo transferleri.
+- **Tekrarlayan düşükler:** Özellikle ilk üç ayda. [Kimyasal gebelik](/makaleler/kimyasal-gebelik/) tekrarladığında da yapısal nedenler akla gelir.
 
-### 3. Obstetrik komplikasyonlar (gebelik süresince)
+### 3. Gebelikte ortaya çıkabilecek sorunlar
 
-- Plasenta yerleşim anomalileri
-- İntrauterin gelişme geriliği
+- Plasentanın yerleşim ve yapışma sorunları
+- Rahim içi gelişme geriliği
 - Erken doğum
 
-Bazı hastalar tamamen asemptomatik olabilir. Adezyon yalnızca infertilite araştırması veya IVF öncesi histeroskopide tesadüfen saptanabilir.
+Bazı kadınlarda hiçbir belirti olmaz. Bu durumda yapışıklık yalnızca infertilite araştırması veya tüp bebek öncesi histeroskopide tesadüfen fark edilebilir.
 
 <h2 id="tani">Tanı: Histeroskopi Referans Yöntem</h2>
 
-Kısa cevap: Ultrason şüphe yaratabilir. Kesin tanıda referans yöntem histeroskopidir; uygun olgularda aynı seansta tedaviye olanak sağlar.
+Ultrason ve rahim filmi şüpheyi güçlendirebilir. Kesin tanıda referans yöntem histeroskopidir; uygun olgularda aynı seansta tedaviye de olanak verir.
 
 <figure class="my-8">
   <img
@@ -247,115 +247,114 @@ Kısa cevap: Ultrason şüphe yaratabilir. Kesin tanıda referans yöntem hister
 
 ### Birinci basamak görüntüleme
 
-- **Transvajinal ultrason:** Şüphe oluşturur ama kesin tanı koymaz. Endometrium kalınlığında düzensizlik, ince endometriyum, kavitede ekojen bantlar görülebilir. İnce endometrium ayrıntısı: [endometrium kalınlığı ve tüp bebek](/makaleler/endometrium-kalinligi-tup-bebek/).
-- **Sonohisterografi (salin infüzyon sonografi):** Sıvıyla kavitenin distansiyonu yapışıklığı daha net gösterebilir.
-- **HSG (histerosalpingografi):** Kavite şekil bozukluğu, dolma defektleri görülebilir; yapışıklığın tipini histeroskopi kadar doğrudan göstermez.
-- **MRI:** Pelvik tüberküloz şüphesinde veya kompleks anatomide yardımcı olabilir.
+- **Transvajinal ultrason:** Şüphe uyandırır ama kesin tanı koydurmaz; normal bir ultrason da yapışıklığı dışlamaz ([AAGL/ESGE 2017](https://pubmed.ncbi.nlm.nih.gov/28473177/)). Düzensiz veya ince endometrium ya da rahim boşluğunda parlak (ekojen) bantlar görülebilir. İnce endometrium konusu için: [endometrium kalınlığı ve tüp bebek](/makaleler/endometrium-kalinligi-tup-bebek/).
+- **Sonohisterografi (salin infüzyon sonografi, SIS):** Rahim boşluğu serum fizyolojikle genişletilerek yapılan ultrasondur; yapışıklıkları standart ultrasondan daha net gösterebilir.
+- **HSG (ilaçlı rahim filmi):** Rahim boşluğundaki şekil bozukluğunu ve dolma defektlerini gösterebilir; yapışıklığın tipini histeroskopi kadar doğrudan göstermez.
+- **MR:** Pelvik tüberküloz şüphesinde veya karmaşık anatomide yardımcı olabilir.
 
-### Histeroskopi — tanı + tedavi
+### Histeroskopi: tanı ve tedavi aynı seansta
 
-**Histeroskopi kesin tanıda referans yöntemdir** ve uygun olgularda aynı seansta tedavi imkânı sunar ([AAGL/ESGE 2017](https://pubmed.ncbi.nlm.nih.gov/28473177/)). <InlineEvidence grade="B" /> Hem ofis (anestezisiz, mini histeroskop) hem operatif (genel anestezi altında) versiyonları kullanılır. Genel histeroskopi çerçevesi için [endoskopik cerrahi / histeroskopi](/makaleler/endoskopik-cerrahi-histeroskopi/) ve [IVF öncesi histeroskopi](/makaleler/ivf-oncesi-histeroskopi/) yazıları tamamlayıcıdır.
+Histeroskopi, rahim boşluğunun ince bir kamerayla doğrudan incelenmesidir. **Kesin tanıda referans yöntemdir** ve uygun olgularda aynı seansta tedaviye olanak verir ([AAGL/ESGE 2017](https://pubmed.ncbi.nlm.nih.gov/28473177/)). <InlineEvidence grade="B" /> Ofiste anestezisiz, ince (mini) histeroskopla ya da ameliyathanede genel anestezi altında yapılabilir. Genel çerçeve için [endoskopik cerrahi / histeroskopi](/makaleler/endoskopik-cerrahi-histeroskopi/) ve [IVF öncesi histeroskopi](/makaleler/ivf-oncesi-histeroskopi/) yazılarına bakabilirsiniz.
 
-Histeroskopi sırasında değerlendirilen kritik parametreler:
+Histeroskopide şu noktalar değerlendirilir:
 
-- Yapışıklığın yaygınlığı (kavite yüzdesi)
-- Yapışıklığın tipi (filmsi / fibromusküler / yoğun bağ dokusu)
-- Tubal ostiumların görülebilirliği
-- Endometriyumun genel durumu
+- Yapışıklığın rahim boşluğunun ne kadarını kapladığı
+- Yapışıklığın tipi: ince zar (filmsi), kas lifi içeren (fibromusküler) veya yoğun bağ dokusu
+- Tüp ağızlarının (tubal ostiumlar) görülüp görülmediği
+- Endometriumun genel durumu
 
 <h2 id="siniflandirma">Sınıflandırma: AFS, ESGE ve March Sistemleri</h2>
 
-Üç sistem de şiddeti tarif eder; canlı doğum öngörüsü sınırlıdır. En önemli prognostik faktör adezyon şiddetidir.
+Bu sistemler yapışıklığın yaygınlığını ve tipini ortak bir dille kaydetmeye yarar; kişinin gebelik olasılığını tek başına hesaplamaz.
 
 ### AFS (American Fertility Society)
 
-Kavite tutulumu, yapışıklık tipi ve menstrüel patern üzerinden puanlama yapılır:
+Rahim boşluğunun ne kadarının tutulduğu, yapışıklığın tipi ve adet düzeni puanlanır:
 
 - **Evre I (hafif):** AFS skoru 1–4
 - **Evre II (orta):** AFS skoru 5–8
 - **Evre III (şiddetli):** AFS skoru 9–12
 
-### ESGE (Avrupa)
+### ESGE (Avrupa Jinekolojik Endoskopi Derneği)
 
-Rahim kavitesi tutulumuna göre Grade I–V ayrımı yapar (şiddet artar).
+Rahim boşluğunun tutulumuna göre Derece I–V arasında sınıflar; derece yükseldikçe şiddet artar.
 
-### March sınıflaması — pratik ve yaygın
+### March sınıflaması: pratikte yaygın
 
-- **Hafif (filmsi):** İnce, kolay kırılan yapışıklıklar; kavitenin &lt; %25’i
-- **Orta (fibromusküler):** Daha kalın, kas elementi içeren yapışıklıklar; kavitenin %25–75’i
-- **Şiddetli (bağ dokusu):** Yoğun sklerotik bağ dokusu; kavitenin &gt; %75’i, tubal ostiumlar sıklıkla görülmez
+- **Hafif (filmsi):** İnce, kolayca ayrılan yapışıklıklar; rahim boşluğunun %25'inden azı.
+- **Orta (fibromusküler):** Kas lifi içeren, daha kalın yapışıklıklar; boşluğun %25–75'i.
+- **Şiddetli (bağ dokusu):** Yoğun, sert bağ dokusu; boşluğun %75'inden fazlası. Tüp ağızları çoğu zaman görülmez.
 
-Her üç sistem de **canlı doğum öngörüsünde** sınırlı doğruluğa sahiptir. <InlineEvidence grade="B" /> En önemli prognostik faktör adezyon **şiddeti**dir ([Guo 2019](https://pubmed.ncbi.nlm.nih.gov/30713131/)).
+Üç sistem de **canlı doğumu öngörmede** sınırlı doğruluğa sahiptir. <InlineEvidence grade="B" /> Prognozu en çok etkileyen etken yapışıklığın **şiddetidir**: şiddet arttıkça cerrahi sonrası gebelik oranı düşer ([Guo 2019](https://pubmed.ncbi.nlm.nih.gov/30713131/)).
 
 <h2 id="tedavi">Tedavi: Histeroskopik Adezyolizis</h2>
 
-Kısa cevap: Semptomu veya gebelik planı bulunan uygun hastalarda temel tedavi histeroskopik adezyolizistir; her saptanan adezyon otomatik cerrahi gerektirmez.
+Semptomu, gebe kalma sorunu veya gebelik planı olan uygun hastalarda temel tedavi histeroskopik adezyolizistir. Tesadüfen saptanan her yapışıklık ameliyat gerektirmez.
 
-Semptomu, infertilitesi veya gebelik planı bulunan uygun hastalarda temel tedavi, deneyimli bir cerrah tarafından yapılan **histeroskopik adezyolizis**tir — yani yapışıklıkların kamera eşliğinde açılmasıdır ([AAGL/ESGE 2017](https://pubmed.ncbi.nlm.nih.gov/28473177/)). Tesadüfen saptanan ve klinik sorun oluşturmayan hafif adezyonlarda yaklaşım kişiselleştirilir; cerrahinin olası yeniden yapışma ve perforasyon riskleri de tartılır.
+Adezyolizis, yapışıklıkların histeroskopla görülerek açılmasıdır ve deneyimli bir cerrah tarafından yapılması önerilir ([AAGL/ESGE 2017](https://pubmed.ncbi.nlm.nih.gov/28473177/)). Amaç rahim boşluğunun normal şeklini geri kazandırmak, tüp ağızlarını görünür hale getirmek ve sağlıklı endometriumun yeniden büyümesine zemin hazırlamaktır. Şikâyet oluşturmayan hafif yapışıklıklarda karar kişiye göre verilir; çünkü ameliyatın kendisi de yeniden yapışma ve rahim delinmesi (perforasyon) riski taşır.
 
-### Cerrahi yaklaşım seçenekleri
+### Cerrahi teknik seçenekleri
 
-- **Mini makas / soğuk bıçak (cold knife):** Filmsi hafif yapışıklıklarda en az termal hasar — sık tercih edilen yaklaşım
-- **Bipolar elektrokoter:** Daha kalın yapışıklıklarda kullanılır; çevre dokuya termal hasar riski vardır
-- **Lazer (Nd:YAG, KTP):** Sınırlı merkezde kullanılır
-- **Resektoskop tel:** Geleneksel; termal hasar riski daha yüksek olabilir
+- **Mini makas / soğuk kesi (cold knife):** Isı hasarı en az olan yöntemdir; özellikle ince ve hafif yapışıklıklarda sık tercih edilir.
+- **Bipolar elektrokoter:** Daha kalın yapışıklıklarda kullanılır; çevre dokuya ısı hasarı riski vardır.
+- **Lazer (Nd:YAG, KTP):** Sınırlı sayıda merkezde kullanılır.
+- **Resektoskop teli:** Geleneksel yöntemdir; ısı hasarı riski daha yüksek olabilir.
 
-Teknik seçimi, yapışıklık tipine ve cerrah deneyimine göre kişiselleştirilir. “Tek doğru alet” iddiası yoktur.
+Teknik, yapışıklığın tipine ve cerrahın deneyimine göre seçilir. Her olguda üstün olduğu gösterilmiş tek bir alet yoktur.
 
-### Şiddetli vakalarda
+### Şiddetli olgularda
 
-Tubal ostiumlar görünmüyor ve kavite tamamen kapalıysa:
+Rahim boşluğu tamamen kapalı ve tüp ağızları görünmüyorsa:
 
-- Ultrasonografi rehberliğinde adezyolizis
-- İki aşamalı tedavi (önce kısmi rekanalizasyon, 4–6 hafta sonra ikinci seans)
-- Bazı vakalarda 2–3 ardışık histeroskopi gerekebilir
+- Adezyolizis ultrason eşliğinde yapılabilir.
+- Tedavi iki aşamaya bölünebilir: önce boşluk kısmen açılır, 4–6 hafta sonra ikinci seans yapılır.
+- Bazı olgularda 2–3 ardışık histeroskopi gerekebilir.
 
-### Adezyolizis sonrası hastane çıkışı
+### Ameliyattan sonra
 
-- Çoğu hasta aynı gün taburcu olur
-- Antibiyotik profilaksisi **rutin önerilmez**; balon veya stent döneminde bazı merkezler kısa süreli profilaksi kullanabilir, bu evrensel standart değildir
-- Hafif vajinal kanama 1–2 hafta sürebilir
+- Çoğu hasta aynı gün eve döner.
+- Koruyucu antibiyotik **rutin olarak önerilmez**. Balon veya stent kullanılan dönemde bazı merkezler kısa süreli antibiyotik verebilir; bu evrensel bir standart değildir.
+- Hafif vajinal kanama 1–2 hafta sürebilir.
 
 <h2 id="rekurrens">Yeniden Yapışmayı Önleme</h2>
 
-Yeniden yapışma sık bir sorundur; hangi adjuvanın en iyi olduğu kaynaklara göre ayrışır.
+Yapışıklıkların yeniden oluşması sık görülen bir sorundur ve hangi koruyucu yöntemin daha iyi olduğu konusunda kaynaklar ayrışır.
 
-Adezyolizis sonrası yapışıklıkların yeniden oluşması önemli bir sorundur. Adjuvanlar bu yüzden sık kullanılır; ancak kanıt tek bir “en iyi paket” göstermez. Anatomik yeniden yapışmanın azalması ile menstrüel düzelme, klinik gebelik, canlı doğum ve obstetrik güvenlik aynı sonuç değildir ([Guo J 2023](https://pubmed.ncbi.nlm.nih.gov/37778374/)).
+Bu yüzden ameliyattan sonra koruyucu (adjuvan) yöntemler sık kullanılır; ancak kanıtlar tek bir yöntemin açıkça üstün olduğunu göstermez. Yapışıklığın daha az tekrarlaması, adetin düzelmesi, gebelik, canlı doğum ve gebelikte güvenlik ayrı sonuçlardır; birinde görülen iyileşme diğerlerine kendiliğinden yansımaz ([Guo J 2023](https://pubmed.ncbi.nlm.nih.gov/37778374/)).
 
-### Mevcut önleme seçenekleri
+### Koruyucu seçenekler
 
-**1. İntrauterin mekanik bariyerler**
+**1. Rahim içi mekanik bariyerler**
 
-- **Foley / sürekli intrauterin balon** — postoperatif 7–14 gün sık uygulanır
-- **Hyaluronik asit jel** — biyobozunur; **sekonder** önlemede meta-analizde anlamlı fayda gösterilememiştir (RR 0.80, %95 GA 0.58–1.10) ([Guo J 2023](https://pubmed.ncbi.nlm.nih.gov/37778374/)). <InlineEvidence grade="B" /> Primer önlemede (küretaj/tahliye sonrası yeni IUA) jel bariyerlerin faydası ayrı bir kanıt hattıdır ([Munro 2025](https://pubmed.ncbi.nlm.nih.gov/40914965/)).
-- **Rahim içi araç (RİA)** — bakırlı T tipi alternatif olabilir
-- Daha yeni biyobozunur bariyerler araştırma aşamasındadır; klinik rutine genelleme için erken olabilir
+- **Foley veya rahim içi balon kateter:** Ameliyattan sonra genellikle 7–14 gün rahim içinde bırakılır; karşılıklı yüzeylerin birbirine değmesini engellemeyi amaçlar.
+- **Hyaluronik asit jel:** Vücutta çözünen bir bariyerdir. Yapışıklık açıldıktan sonraki (ikincil) önlemede meta-analizde anlamlı fayda gösterilememiştir (RR 0.80, %95 GA 0.58–1.10) ([Guo J 2023](https://pubmed.ncbi.nlm.nih.gov/37778374/)). <InlineEvidence grade="B" /> Küretaj sonrası yeni yapışıklığı önlemedeki (birincil) etkisi ayrı bir kanıt alanıdır ([Munro 2025](https://pubmed.ncbi.nlm.nih.gov/40914965/)).
+- **Rahim içi araç (RİA, spiral):** Bakırlı T tipi spiral literatürde seçenekler arasında yer alır.
+- Daha yeni, çözünebilen bariyerler hâlâ araştırma aşamasındadır; rutin kullanım için erken olabilir.
 
-**2. Hormonal tedavi**
+**2. Hormon desteği**
 
-- Postoperatif östrojen (ör. 1–2 mg/gün × 1–3 ay) — endometriyal proliferasyonu desteklemek için sık kullanılır
-- Östrojen + progesteron kombinasyonu — düzenli kanama indüksiyonu için
-- Hormonal destek çoğu pratikte **mekanik bariyerlerle birlikte** düşünülür; tek başına “yeterli önleme” iddiası zayıftır
-- Randomize çalışmalarda rutin postoperatif östrojen yeniden yapışmayı azaltmamış ([Yang 2022](https://pubmed.ncbi.nlm.nih.gov/35439645/)); gebelik ve canlı doğum oranlarında da belirgin üstünlük göstermemiştir ([Hanstede 2023](https://pubmed.ncbi.nlm.nih.gov/37396823/)). <InlineEvidence grade="B" />
+- Ameliyattan sonra endometriumun yeniden büyümesini desteklemek amacıyla 1–3 ay östrojen sık kullanılır; düzenli kanama sağlamak için progesteron eklenebilir.
+- Hormon desteği pratikte çoğu zaman **mekanik bariyerle birlikte** düşünülür; tek başına yeterli önleme sağladığı iddiası zayıftır.
+- Randomize çalışmalarda rutin östrojen yeniden yapışmayı azaltmamış ([Yang 2022](https://pubmed.ncbi.nlm.nih.gov/35439645/)); gebelik ve canlı doğum oranlarında da belirgin üstünlük göstermemiştir ([Hanstede 2023](https://pubmed.ncbi.nlm.nih.gov/37396823/)). <InlineEvidence grade="B" /> Bu nedenle östrojen herkese aynı şablonla verilmez.
 
 **3. İkinci bakış (second-look) histeroskopi**
 
-- İlk operasyondan 4–6 hafta sonra kontrol histeroskopi
-- Yeni filmsi yapışıklıkların erken ofis düzeyinde ayrılması
-- Özellikle orta–şiddetli olgularda sık tercih edilir
-- Guo J 2023’te sekonder önlemede second-look histeroskopi anlamlı risk azalması ile ilişkilendirilmiştir (RR 0.21) ([Guo J 2023](https://pubmed.ncbi.nlm.nih.gov/37778374/)). <InlineEvidence grade="B" />
+- İlk ameliyattan 4–6 hafta sonra yapılan kontrol histeroskopisidir.
+- Yeniden oluşmaya başlayan ince yapışıklıklar erken dönemde, ofis koşullarında ayrılabilir.
+- Özellikle orta–şiddetli olgularda sık tercih edilir.
+- Guo J 2023'te ikincil önlemede anlamlı risk azalmasıyla ilişkili bulunmuştur (RR 0.21) ([Guo J 2023](https://pubmed.ncbi.nlm.nih.gov/37778374/)). <InlineEvidence grade="B" />
 
 ### Kaynaklar neden ayrışıyor?
 
-Guo J 2023 (sekonder önleme meta-analizi): sürekli balon (RR 0.18), second-look (RR 0.21) ve amnion greft (RR 0.63) anlamlı görünürken anti-adezyon jel anlamlı değildir.
+Guo J 2023, yapışıklık açıldıktan sonraki önlemeyi inceleyen bir meta-analizdir. Sürekli balon (RR 0.18), ikinci bakış histeroskopi (RR 0.21) ve amniyon zarı grefti (RR 0.63) yeniden yapışmayı anlamlı biçimde azaltırken anti-adezyon jel anlamlı fark göstermemiştir.
 
-Munro 2025: adjuvansız yeniden yapışma yaklaşık %35; balonla %43; RİA ile %43; jelle %28 (jel için az çalışma, yüksek heterojenite). Bu özet, balonu otomatik “en iyi” seçenek gibi sunmayı zorlaştırır.
+Munro 2025'in özetinde tablo farklıdır: koruyucu yöntem kullanılmadan yeniden yapışma yaklaşık %35, balonla %43, spiralle %43, jelle %28'dir. Jel için çalışma sayısı azdır ve çalışmalar arasında heterojenite yüksektir. Bu farklılık, balonu otomatik olarak tek doğru seçenek gibi sunmayı zorlaştırır.
 
-Pratik mesaj: tek bir adjuvan yerine **kişiye göre** bariyer + hormon + (gerekiyorsa) ikinci bakış kombinasyonu konuşulur; “balon her zaman en iyidir” demek mevcut derlemelerle uyumsuz olur. <InlineEvidence grade="B" />
+Pratikte tek bir yöntem yerine, yapışıklığın şiddetine göre bariyer, hormon desteği ve gerekiyorsa ikinci bakış histeroskopiyi birleştiren **kişiye özel bir plan** konuşulur. "Her hastaya balon" yaklaşımı mevcut derlemelerle uyumlu değildir. <InlineEvidence grade="B" />
 
 <h2 id="ureme">Üreme Sonuçları — Tedavi Sonrası Gebelik Şansı</h2>
 
-Tedavi sonrası gebelik mümkün olabilir; oranlar çalışmaya ve paydaya göre değişir. Canlı doğum ile gebelik oranı aynı tabloda karıştırılmamalıdır.
+Tedaviden sonra gebelik mümkün olabilir; ancak oranlar çalışmaya, yapışıklığın şiddetine ve hangi paydanın kullanıldığına göre değişir. Gebelik oranı ile canlı doğum oranı aynı şey değildir.
 
 <figure class="my-8">
   <img
@@ -372,121 +371,127 @@ Tedavi sonrası gebelik mümkün olabilir; oranlar çalışmaya ve paydaya göre
   </figcaption>
 </figure>
 
-### Guo 2019 — sistematik derleme (54 çalışma, 4.640 kadın)
+### Guo 2019: sistematik derleme (54 çalışma, 4.640 kadın)
 
-Bu derleme **gebelik oranı** ve obstetrik komplikasyonları havuzlar; canlı doğum oranını aşağıdaki Deans kohortuyla karıştırmamak gerekir ([Guo 2019](https://pubmed.ncbi.nlm.nih.gov/30713131/)). <InlineEvidence grade="B" />
+Bu derleme cerrahi sonrası **gebelik oranını** ve gebelik komplikasyonlarını havuzlar. Buradaki gebelik oranı, aşağıdaki Deans kohortundaki canlı doğum oranıyla karıştırılmamalıdır ([Guo 2019](https://pubmed.ncbi.nlm.nih.gov/30713131/)). <InlineEvidence grade="B" />
 
 | Sonuç (Guo 2019) | Havuzlanmış oran | Not |
 |---|---|---|
-| Gebelik oranı | **%50.7** (%95 GA 49.1–52.3) | 53 çalışmada |
-| Erken gebelik kaybı | %17.7 (%95 GA 15.9–19.6) | 31 çalışma |
-| Ektopik gebelik | %4.2 (%95 GA 2.8–6.3) | 9 çalışma |
-| İkinci trimester kayıp | %11.5 (%95 GA 7.6–17.8) | 7 çalışma |
-| Servikal yetersizlik | %12.5 (%95 GA 3.3–33.5) | yalnızca 2 çalışma; geniş güven aralığı |
+| Gebelik oranı | **%50.7** (%95 GA 49.1–52.3) | 53 çalışma |
+| Erken gebelik kaybı (düşük) | %17.7 (%95 GA 15.9–19.6) | 31 çalışma |
+| Dış gebelik (ektopik) | %4.2 (%95 GA 2.8–6.3) | 9 çalışma |
+| İkinci üç aylık dönemde kayıp | %11.5 (%95 GA 7.6–17.8) | 7 çalışma |
+| Rahim ağzı yetmezliği (servikal yetmezlik) | %12.5 (%95 GA 3.3–33.5) | Yalnızca 2 çalışma; güven aralığı geniş |
 | Plasenta akreta spektrumu (PAS) | **%10.1** (%95 GA 8.6–11.8) | 23 çalışma |
 
-Şiddetli adezyonda gebelik oranı, hafif adezyona göre anlamlı daha düşüktür ([Guo 2019](https://pubmed.ncbi.nlm.nih.gov/30713131/)).
+Şiddetli yapışıklıkta gebelik oranı, hafif yapışıklığa göre anlamlı olarak daha düşüktür ([Guo 2019](https://pubmed.ncbi.nlm.nih.gov/30713131/)).
 
-### Deans 2018 — iki merkezli retrospektif kohort (154 kadın)
+### Deans 2018: iki merkezli retrospektif kohort (154 kadın)
 
-Bu çalışma sistematik derleme değildir. Gebelik isteyen 124 kadında sonuçlar ([Deans 2018](https://pubmed.ncbi.nlm.nih.gov/30239778/)):
+Bu çalışma sistematik derleme değil, seçilmiş bir hasta grubunu geriye dönük inceleyen bir kohorttur. Gebelik isteyen 124 kadında sonuçlar şöyledir ([Deans 2018](https://pubmed.ncbi.nlm.nih.gov/30239778/)):
 
-| Sonuç (Deans 2018; n=124 isteyen) | Oran |
+| Sonuç (Deans 2018; gebelik isteyen n=124) | Oran |
 |---|---|
 | Gebelik | **%79.0** (98/124) |
 | Canlı doğum | **%63.7** (79/124) |
 | Düşük | %23.4 (29/124) |
 
-Detaylı obstetrik verisi olan 85 canlı doğumda anormal plasentasyon %17.6, prematürite %29.4, postpartum histerektomi %4.7 bildirilmiştir. Bu nedenle tedavi sonrası gebeliklerde risk temelli obstetrik takip gerekir.
+Ayrıntılı doğum verisi bulunan 85 canlı doğumda anormal plasentasyon (plasentanın anormal yerleşmesi veya tutunması) %17.6, erken doğum %29.4 ve doğum sonrası rahmin alınması (postpartum histerektomi) %4.7 oranında bildirilmiştir. Bu yüzden tedaviden sonra oluşan gebeliklerde risk temelli takip gerekir.
 
-### En iyi prognostik faktörler
+### Daha iyi sonuçla ilişkili etkenler
 
-- Daha genç yaş (&lt; 35)
-- İlk trimester girişiminden sonra gelişmiş Asherman
-- Hafif–orta düzey adezyon
-- Adezyolizis sonrası ilk gebelikte kayıp olmaması
+- 35 yaşın altında olmak
+- Yapışıklığın ilk üç aydaki bir girişimden (örneğin erken düşük sonrası küretaj) sonra gelişmiş olması
+- Yapışıklığın hafif veya orta düzeyde olması
+- Adezyolizisten sonraki ilk gebeliğin kayıpla sonuçlanmaması
 
-### Tek adezyolizis vs tekrar operasyon
+### Tek ameliyat ile tekrarlanan ameliyatlar
 
-İki veya daha fazla adezyolizis geçiren hastalarda üreme sonuçları genellikle daha zayıftır. <InlineEvidence grade="B" /> Bu yüzden:
+İki veya daha fazla adezyolizis geçiren hastalarda üreme sonuçları genellikle daha zayıftır. <InlineEvidence grade="B" /> Bu nedenle:
 
-- İlk operasyonu deneyimli ekibe yaptırmak kritiktir
-- Adjuvan önleme planını eksiksiz uygulamak önemlidir
-- Çoklu operasyon kararı dikkatli ve gerekçeli alınmalıdır
+- İlk ameliyatın deneyimli bir ekip tarafından yapılması önemlidir.
+- Yeniden yapışmayı önleme planı eksiksiz uygulanmalıdır.
+- Yeni bir ameliyat kararı dikkatle ve gerekçesiyle verilmelidir.
 
 <h2 id="gebelik">Asherman Sonrası Gebelik: Risk Temelli Takip</h2>
 
-Tedavi sonrası gebelik mümkün olabilir; ancak anormal plasenta yerleşimi ve erken doğum açısından risk artabilir. Takip, bireysel risk faktörlerine göre planlanır.
+Tedaviden sonra gebelik mümkün olabilir; ancak plasentanın anormal yerleşmesi ve erken doğum riski artabilir. Takip, kişisel risk etkenlerine göre planlanır.
 
-Tedavi edilmiş IUA/Asherman öyküsünde plasenta akreta spektrumu, plasenta previa, doğum sonu kanama ve prematürite riski artabilir ([Guo 2019](https://pubmed.ncbi.nlm.nih.gov/30713131/); [Deans 2018](https://pubmed.ncbi.nlm.nih.gov/30239778/); [Munro 2025](https://pubmed.ncbi.nlm.nih.gov/40914965/); [Mortimer 2024](https://pubmed.ncbi.nlm.nih.gov/38777163/)). Bireysel risk; hastalığın şiddeti, önceki küretajlar, sezaryen, plasenta yerleşimi ve cerrahi öyküye göre değişir. Her hastayı otomatik “yüksek riskli gebelik birimine” yönlendirmek yerine **risk temelli takip** ve gerektiğinde perinatoloji değerlendirmesi daha savunulabilirdir.
+Tedavi edilmiş rahim içi yapışıklık veya Asherman öyküsünde plasenta akreta spektrumu (plasentanın rahim duvarına anormal derin tutunması), plasenta previa (plasentanın rahim ağzını örtmesi), doğum sonrası kanama ve erken doğum riski artabilir ([Guo 2019](https://pubmed.ncbi.nlm.nih.gov/30713131/); [Deans 2018](https://pubmed.ncbi.nlm.nih.gov/30239778/); [Munro 2025](https://pubmed.ncbi.nlm.nih.gov/40914965/); [Mortimer 2024](https://pubmed.ncbi.nlm.nih.gov/38777163/)). Kişisel risk; hastalığın şiddetine, önceki küretaj ve sezaryenlere, plasentanın yerleşim yerine ve cerrahi öyküye göre değişir. Her hastayı otomatik olarak yüksek riskli gebelik birimine yönlendirmek yerine **risk temelli takip** ve gerektiğinde perinatoloji değerlendirmesi daha savunulabilir bir yaklaşımdır.
 
 ### Önerilen takip çerçevesi
 
-- **Erken transvajinal USG** (6–7. gebelik haftası) — kese yerleşimi ve canlılık
-- **İlk trimester sonu pelvik USG** — plasenta yerleşimi
-- **Anatomik tarama** (18–22. hafta) — detaylı plasenta morfolojisi, PAS belirteçleri (clear zone kaybı, plasental laküna, vezikouterin vaskülarite)
-- **Gerekirse MRI** — şüpheli plasenta akretada
-- **Erken doğum / akreta planı** — şüphe varsa multidisipliner hazırlık (obstetrik + anestezi + neonatoloji; gerekirse üroloji)
+- **Erken transvajinal ultrason (6–7. hafta):** Gebelik kesesinin yeri ve gebeliğin canlılığı.
+- **İlk üç ayın sonunda ultrason:** Plasentanın yerleşimi.
+- **Ayrıntılı ultrason (18–22. hafta):** Plasentanın yapısı ve PAS belirteçleri (plasenta arkasındaki ince hipoekoik bölgenin kaybı, plasental lakünler, rahim ile mesane arasında artmış damarlanma).
+- **Gerekirse MR:** Plasenta akretadan şüphelenildiğinde.
+- **Doğum planı:** Akreta şüphesinde kadın doğum, anestezi, yenidoğan ve gerekirse üroloji ekipleriyle önceden hazırlık.
 
-### Plasenta akreta riskinin önemi
+### Plasenta akreta riski neden önemli?
 
-Guo 2019’da havuzlanmış PAS oranı yaklaşık %10.1’dir. Mortimer 2024, tedavi edilmiş IUA öykülü IVF kohortunda advers plasenta sonuçlarının (PAS, previa veya vasa previa) kontrollere göre daha sık olduğunu bildirmiştir (düzeltilmiş RR 2.08, %95 GA 1.25–3.46); risk, önceki adezyolizis sayısı arttıkça yükselme eğilimindedir ([Mortimer 2024](https://pubmed.ncbi.nlm.nih.gov/38777163/)). Genel popülasyonda PAS taban insidansı çok daha düşüktür; Asherman sonrası gebelikte göreli risk artmış kabul edilir. Pratikte şunlar önceden konuşulmalıdır:
+Guo 2019'da havuzlanmış PAS oranı yaklaşık %10.1'dir. Mortimer 2024, tedavi edilmiş yapışıklık öyküsü olan tüp bebek hastalarında olumsuz plasenta sonuçlarının (PAS, plasenta previa veya vasa previa) kontrol grubuna göre daha sık olduğunu bildirmiştir (düzeltilmiş RR 2.08, %95 GA 1.25–3.46). Bu risk, geçirilen adezyolizis sayısı arttıkça yükselme eğilimindedir ([Mortimer 2024](https://pubmed.ncbi.nlm.nih.gov/38777163/)). Genel toplumda PAS'ın temel sıklığı çok daha düşüktür; Asherman sonrası gebelikte göreli risk artmış kabul edilir. Bu nedenle şu konular önceden konuşulmalıdır:
 
-- Erken plasenta değerlendirmesi
-- Gerekirse tersiyer merkez / perinatoloji konsültasyonu
-- Doğum sonrası hemoraji hazırlığı (kan ürünleri, vasküler erişim)
+- Plasentanın erken değerlendirilmesi
+- Gerekirse ileri düzey bir merkezde perinatoloji konsültasyonu
+- Doğum sonrası kanamaya hazırlık (kan ürünleri, damar yolu)
 
 <h2 id="ivf">IVF ve Asherman Sendromu</h2>
 
-Kısa cevap: IVF denenebilir. Sınırlı retrospektif veriler, orta–ağır hastalığın sonuçlarla olumsuz ilişkili olabileceğini düşündürür; bu kesin bir prognostik kural değildir.
+Tedaviden sonra tüp bebek denenebilir. Sınırlı sayıdaki geriye dönük çalışma, orta–ağır hastalığın daha olumsuz sonuçlarla ilişkili olabileceğini düşündürür; ancak bu kesin bir kural değildir.
 
-Fouks 2022, tedavi edilmiş Asherman’lı 51 IVF hastasını eşleştirilmiş kontrollerle karşılaştıran retrospektif bir vaka–kontrol çalışmasıdır. Orta–ağır AS grubunda transfer öncesi endometrium daha ince bulunmuş (ortalama 6.95 mm vs 8.7 mm), canlı doğuma ulaşma süresi uzamış ve orta–ağır hastalık canlı doğum için bağımsız olumsuz faktör olarak kalmıştır (düzeltilmiş OR 0.174, %95 GA 0.032–0.955) ([Fouks 2022](https://pubmed.ncbi.nlm.nih.gov/35970266/)). <InlineEvidence grade="C" /> Örneklem küçüktür; bulgu genellenebilir bir kural gibi okunmamalıdır.
+Fouks 2022, tedavi edilmiş Asherman sendromu olan 51 tüp bebek hastasını eşleştirilmiş kontrollerle karşılaştıran geriye dönük bir vaka–kontrol çalışmasıdır. Orta–ağır hastalık grubunda transfer öncesi endometrium daha ince bulunmuş (ortalama 6.95 mm'ye karşı 8.7 mm) ve canlı doğuma ulaşma süresi uzamıştır. Orta–ağır hastalık, canlı doğum için bağımsız olumsuz etken olarak kalmıştır (düzeltilmiş OR 0.174, %95 GA 0.032–0.955) ([Fouks 2022](https://pubmed.ncbi.nlm.nih.gov/35970266/)). <InlineEvidence grade="C" /> Örneklem küçük olduğundan bu bulgu genel bir kural gibi okunmamalıdır.
 
-Mortimer 2024’te tedavi edilmiş IUA öykülü IVF hastalarında genel canlı doğum oranı kontrollere benzer bulunmuş; ancak ≥2 adezyolizis geçiren alt grupta canlı doğum daha düşük kalmıştır ([Mortimer 2024](https://pubmed.ncbi.nlm.nih.gov/38777163/)). Pratik çerçeve: IVF denenebilir; beklenti gerçekçi tutulmalı; endometrium kalınlığı, kavite bütünlüğü ve önceki cerrahi sayısı birlikte değerlendirilmelidir.
+Mortimer 2024'te tedavi edilmiş yapışıklık öyküsü olan tüp bebek hastalarında genel canlı doğum oranı kontrollere benzer bulunmuştur; ancak iki veya daha fazla adezyolizis geçiren alt grupta canlı doğum daha düşük kalmıştır ([Mortimer 2024](https://pubmed.ncbi.nlm.nih.gov/38777163/)).
 
-Dikkat gerektiren noktalar:
+Bu yüzden değerlendirme yalnızca rahim boşluğunun açılıp açılmadığıyla sınırlı kalmaz. Bazal tabakadaki hasarın derinliği, endometriumun ne kadar canlı olduğu, önceki ameliyat sayısı ve gebelik olursa plasentanın nereye tutunacağı birlikte düşünülür; beklenti de buna göre gerçekçi tutulur. İlk ameliyatın sağlıklı dokuyu koruyarak yapılması, ikinci bir ameliyat ihtiyacını azaltmak açısından önemlidir.
 
-- **Embriyo transferi öncesi histeroskopik kavite kontrolü** — yeni adezyon var mı?
-- **Endometriyal kalınlık değerlendirmesi** — &lt; 7 mm’de implantasyon ihtimali düşebilir; karar bireyseldir ([endometrium kalınlığı](/makaleler/endometrium-kalinligi-tup-bebek/))
-- **Dondurulmuş–çözülmüş embriyo transferi** tercih edilebilir — endometriyal hazırlık daha kontrollü olabilir
-- **Çoğul gebelikten kaçınma** — tek embriyo transferi tercih edilir; çoğul gebelik obstetrik riski artırır
+Tüp bebek sürecinde dikkat edilen noktalar:
 
-<QuoteBlock>
-Asherman’da başarıyı “kavite açıldı mı?” sorusuna indirgemem. Asıl soru şudur: bazal hasar ne kadar derin, endometrium ne kadar canlı ve gebelik olursa plasenta nereye yapışacak? İlk ameliyatı doğru yapmak, ikinciyi gereksiz bırakmak kadar önemlidir.
-</QuoteBlock>
+- **Transfer öncesi rahim boşluğunun histeroskopiyle kontrolü:** Yeni yapışıklık oluşmuş mu?
+- **Endometrium kalınlığı:** 7 mm'nin altında tutunma olasılığı düşebilir; karar kişiye göre verilir ([endometrium kalınlığı](/makaleler/endometrium-kalinligi-tup-bebek/)).
+- **Dondurulmuş embriyo transferi:** Rahim iç tabakasının hazırlığı daha kontrollü olabildiği için tercih edilebilir.
+- **Tek embriyo transferi:** Çoğul gebelik obstetrik riskleri artırdığından tek embriyo transferi tercih edilir.
 
 <p class="mt-6 text-sm text-gray-600 leading-relaxed">
-  Yazının başındaki öneri derecesi şu ana klinik çerçeveyi kapsar: şüphede histeroskopi ile tanı; semptomu veya gebelik planı olan uygun hastalarda adezyolizis; bireyselleştirilmiş yeniden yapışma önleme; gebelikte risk temelli obstetrik takip. Üreme oranları çoğunlukla gözlemseldir; adjuvan karşılaştırmaları derlemeler arasında ayrışır. IVF’ye özgü Fouks 2022 bulgusu sınırlı örneklem nedeniyle daha düşük kanıt gücündedir.
+  Yazının başındaki öneri derecesi şu ana klinik çerçeveyi kapsar: şüphe varsa histeroskopiyle tanı; semptomu veya gebelik planı olan uygun hastalarda adezyolizis; kişiye göre planlanan yeniden yapışma önlemi ve gebelikte risk temelli takip. Üreme oranları çoğunlukla gözlemsel çalışmalardan gelir; koruyucu yöntemlerin karşılaştırmaları derlemeler arasında ayrışır. Tüp bebeğe özgü Fouks 2022 bulgusu sınırlı örneklem nedeniyle daha düşük kanıt gücündedir.
 </p>
 
-<h2 id="faq">Sıkça Sorulan Sorular</h2>
+<h2 id="faq">Dr. Aksoy'a En Sık Sorulan Sorular</h2>
+
+Bu bölümdeki yanıtlar Doç. Dr. Senai Aksoy'a aittir.
+
+<Accordion title="Rahim içi yapışıklık açıldıktan sonra tekrarlamasını nasıl önlersiniz?">
+En çok güvendiğim adım, yapışıklığı rahim dokusuna mümkün olduğunca zarar vermeden açmak ve sonrasında rahim boşluğunu yeniden kontrol etmektir. Hafif yapışıklıkta herkese spiral ya da balon koymam. Orta ve ağır olgularda rahim duvarlarının tekrar birleşmesini önlemek için kısa süreli balon kateter veya uygun bir bariyer düşünebilirim. Östrojeni de rahim iç tabakasının durumuna göre kullanırım; tek başına tekrar yapışmayı kesin önlediğini söylemem. Bakırlı veya hormonlu spirali bu amaçla tercih etmem.
+</Accordion>
+
+<Accordion title="Ameliyattan sonra gebelik veya embriyo transferi için ne kadar beklemek gerekir?">
+Herkese aynı bekleme süresini vermem. Hafif yapışıklıkta iyileşme ve ilk adet sonrası değerlendirme yeterli olabilir; orta veya ağır yapışıklıkta ise genellikle birkaç hafta ile birkaç ay içinde kontrol planlarım. Benim için takvimden önemlisi, rahim boşluğunun açık kaldığını görmektir. Özellikle ağır olguda kontrol histeroskopisi yapmadan embriyo transferine geçmem; gerekirse yeniden oluşan ince yapışıklıkları o sırada açarım. Ameliyat sonrası rahim boşluğunun, tercihen histeroskopiyle yeniden değerlendirilmesi AAGL/ESGE rehberinde önerilir; kontrol zamanı olgunun ağırlığına göre değişebilir ([AAGL/ESGE 2017](https://pubmed.ncbi.nlm.nih.gov/28473177/)).
+</Accordion>
+
+<Accordion title="Küretajdan sonra adetim azaldı ama ultrason normal; histeroskopi için beklemeli miyim?">
+Kürtajdan sonra adet miktarı belirgin biçimde azaldıysa veya adet kesildiyse, "ultrason normal" diye yapışıklık olasılığını elemem. Önce gebelik ve adet değişikliğinin diğer nedenlerini değerlendiririm. Kanama önceki adetlerine göre belirgin azalmışsa, özellikle bu durum sonraki adette de sürüyorsa ya da gebe kalamama ve adet döneminde ağrı eşlik ediyorsa aylarca beklemem; rahim boşluğunu serumlu ultrasonla veya doğrudan ofis histeroskopisiyle değerlendiririm. Histeroskopi, yapışıklığı görmede en güvenilir yöntemdir. Normal iki boyutlu ultrason rahim içi yapışıklığı dışlamaz ([AAGL/ESGE 2017](https://pubmed.ncbi.nlm.nih.gov/28473177/)).
+</Accordion>
+
+<h2 id="diger-sorular">Diğer Sık Sorulan Sorular</h2>
 
 <Accordion title="Düşük sonrası mutlaka küretaj olmalı mıyım?">
-Hayır. Erken (&lt; 13 hafta) düşüklerde medikal tedavi (misoprostol) veya bekleme yönetimi çoğu durumda küretaj kadar etkili olabilir ve Asherman riskini azaltmaya yardımcı olabilir. Cerrahi; medikal tedavi başarısızlığı, ağır kanama veya enfeksiyon durumunda düşünülür. Bu kararı hekiminizle konuşun.
+Hayır, her düşükte küretaj gerekmez. Erken (13. haftadan önceki) düşüklerde ilaç tedavisi (misoprostol) veya bekleme yönetimi çoğu durumda küretaj kadar etkili olabilir ve Asherman riskini azaltmaya yardımcı olabilir. Ağır kanama, enfeksiyon veya ilaç tedavisinin yetersiz kaldığı durumlarda cerrahi düşünülür. Hangi yolun size uygun olduğunu hekiminizle konuşun.
 </Accordion>
 
 <Accordion title="Asherman sendromu kendiliğinden iyileşir mi?">
-Hayır. Yapışıklıklar zamanla kendiliğinden açılmaz; fibrotik yapı olgunlaşıp kalınlaşabilir. Tanı konulduğunda mümkün olan en kısa sürede değerlendirme prognoz açısından önemlidir. Her hafif adezyon otomatik ameliyat gerektirmez.
-</Accordion>
-
-<Accordion title="Histeroskopik adezyolizis sonrası ne zaman gebe kalmaya çalışabilirim?">
-Genellikle 2–3 normal menstrüel siklus sonrası gebelik denemesi konuşulur. Bu süre endometriyal iyileşme ve yeniden yapışma kontrolü içindir. Bazı merkezler 1–2 ay sonra ikinci bakış histeroskopiden sonra denemeye izin verir. Süre kişiselleştirilir.
+Hayır. Yapışıklıklar kendiliğinden açılmaz; zamanla olgunlaşıp kalınlaşabilir. Tanı konduğunda erken değerlendirme prognoz açısından önemlidir. Yine de şikâyet oluşturmayan her hafif yapışıklık ameliyat gerektirmez.
 </Accordion>
 
 <Accordion title="Asherman sonrası doğal yolla gebe kalmak mümkün mü?">
-Evet, özellikle hafif–orta olgularda doğal gebelik mümkün olabilir. Oran kişiye göre değişir; tek bir yüzde tüm hastalara genellenemez. IVF; eşlik eden ovaryan rezerv, erkek faktörü, yaş veya uzun süreli denemeye rağmen gebelik olmaması durumlarında gündeme gelir.
-</Accordion>
-
-<Accordion title="Adezyolizis sonrası balon stent ne kadar kalır?">
-Tipik uygulama 7–14 gündür. Daha uzun süre (3–4 hafta) tartışılan yaklaşımlar vardır; hasta konforu ve enfeksiyon riski birlikte değerlendirilir. Antibiyotik profilaksisi rutin zorunluluk değildir; balon döneminde bazı merkezler kısa süreli profilaksi kullanabilir.
+Evet, özellikle hafif–orta olgularda doğal gebelik mümkün olabilir. Olasılık kişiden kişiye değişir; tek bir yüzde herkese uygulanamaz. Yumurtalık rezervinin düşük olması, erkek faktörü, ileri yaş veya uzun süreli denemeye rağmen gebelik olmaması gibi durumlarda tüp bebek gündeme gelir.
 </Accordion>
 
 <Accordion title="Birden fazla küretaj geçirdim; Asherman riskim ne kadar?">
-Her ek rahim içi girişim riski artırabilir. En güvenilir güncel özet, erken gebelik kaybı sonrası ürün tahliyesinde yaklaşık %17’lik yeni IUA riskidir (%95 GA 11–25; [Munro 2025](https://pubmed.ncbi.nlm.nih.gov/40914965/)). Mümkün olduğunca gereksiz küretajdan kaçınmak ve primer önleme seçeneklerini hekiminizle konuşmak daha doğrudur.
+Rahim içine yapılan her ek girişim riski artırabilir. Güncel bir derlemede erken gebelik kaybı sonrası cerrahi tahliyeden sonra yeni yapışıklık riski yaklaşık %17 olarak özetlenmiştir (%95 GA 11–25; [Munro 2025](https://pubmed.ncbi.nlm.nih.gov/40914965/)). Doğum sonrası yapılan küretaj ve rahim içi enfeksiyon da riski artıran etkenler arasındadır. Gereksiz küretajdan kaçınmak ve yapışıklığı önleme seçeneklerini hekiminizle konuşmak yerinde olur.
 </Accordion>
 
-<Accordion title="Şiddetli Asherman’da canlı doğum şansı nedir?">
-Tek bir evrensel yüzde yoktur. Guo 2019, şiddetli adezyonda gebelik oranının hafife göre daha düşük olduğunu gösterir; Deans 2018 ise seçilmiş iki merkez kohortunda gebelik isteyenlerde canlı doğumu %63.7 bulmuştur — bu oran şiddet alt gruplarına doğrudan taşınamaz. Prognoz şiddet, endometrium kalitesi, yaş ve kaç adezyolizis geçirildiğine bağlıdır. Tedavi sonrası gebeliklerde risk temelli obstetrik takip ayrı bir başlıktır.
+<Accordion title="Şiddetli Asherman sendromunda canlı doğum şansı nedir?">
+Herkese uyan tek bir yüzde yoktur. Guo 2019, şiddetli yapışıklıkta gebelik oranının hafif yapışıklığa göre daha düşük olduğunu gösterir. Deans 2018'de seçilmiş iki merkezli kohortta gebelik isteyen kadınlarda canlı doğum oranı %63.7 bulunmuştur; bu oran şiddetli olgulara doğrudan uygulanamaz. Sonucu yapışıklığın şiddeti, endometriumun durumu, yaş ve geçirilen adezyolizis sayısı birlikte belirler. Tedaviden sonraki gebeliklerde ayrıca risk temelli takip gerekir.
 </Accordion>
 
 ## Tıbbi Uyarı
