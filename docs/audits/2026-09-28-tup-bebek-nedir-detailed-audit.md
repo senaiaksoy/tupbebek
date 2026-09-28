@@ -276,3 +276,22 @@ Doğrulama: `check-fidelity` sayı/süre/atıf farkı yok (yalnızca bağlantı 
 - **İlk yayın tarihi:** Web Archive'da bu URL'nin ilk kaydı 10 Nisan 2026; o kopyadaki `datePublished` zaten 2024-09-27. Tarihin kökeni doğrulanamadığı için değer değiştirilmedi ve görünür künyeye eklenmedi.
 
 Doğrulama: `npm run build` başarılı; `verify:preflight` 26/26; yerel önizlemede rozet görüldü.
+
+## 13. Dördüncü audit ve düzeltmeleri
+
+Yetki: kullanıcının 28 Eylül 2026 mesajı, “hepsini düzelt hekim onayı tamam”. Hekim yanıtlarındaki dil düzeltmeleri bu onayla yapıldı; onaylı `expertContribution` metnine dokunulmadı.
+
+| Öncelik | Bulgu | Düzeltme |
+| --- | --- | --- |
+| P2 | Yöntem notu, onay teyidinden sonraki aynı gün değişikliklerini kapsamıyordu | `editorialMethodNote` sonraki dil geçişi, görsel ve kaynak eklerini ve hekim onayını belirtecek şekilde genişletildi; tarih/onay alanı üretilmedi |
+| P2 | Karma kanıt yalnızca makale sonunda görünüyordu | `EvidenceGradeBadge`/`EEATBadge` `mixed` destekliyor; derecesiz `hideEvidenceGrade` makalelerinde künyede de “Karma kanıt” |
+| P2 | Tek embriyo, heterotopik gebelik ve toplama komplikasyonu iddialarında kaynak yoktu | ESHRE 2024 embriyo sayısı kılavuzu (PMID 38364208), Srisajjakul 2022 derleme (PMID 34535828), Levi-Setti 2018 (PMID 29871795; İtalya, tek merkez, 23.827 işlem, yatış ~%0,3) eklendi; PubMed ile doğrulandı |
+| P3 | “38–40 yaş ve üzerinde”, WHO cümlesi, “olgu”, uzun AMH/PGT-M/progesteron cümleleri | Yeniden kuruldu / bölündü |
+| P3 | “değerlendirilir”, “tedavi ekibi” tekrarı | İkişer azaltıldı |
+| P3 | Süreç görseli listeden uzaktı | Görsel 8 adımın hemen arkasına taşındı |
+| P3 | Özet 4 cümle, 4 kaynak | 3 cümle, 2 kaynak |
+| Hekim | “AMH'yi de”, yaş cümlesi, mikro-TESE ek bağlantısı, “kliniği” | “AMH'yi”, “herkese uyan, bir günde aşılan kesin bir yaş sınırı”, tekrarlı bağlantı kaldırıldı, “tedavi ekibinizi” |
+
+Açık bırakılanlar: AUA/ASRM 2024 PDF bağlantısı otomatik erişimde 403 verdiği için doğrulanamadı, 2020 kaynağı korundu. PMOS/PCOS için gövdedeki “PMOS (eski adıyla PCOS)” köprüsü yeterli görüldü; onaylı hekim kutusu değiştirilmedi. İlk yayın tarihi ve güncel konsolide mevzuat doğrulaması önceki bölümlerdeki gibi açık.
+
+Doğrulama: fidelity farkları yalnızca yetkili değişiklikler; editoryal yardımcı 0 aday; `npm run build` başarılı; `verify:preflight` 26/26; yeni PMID'ler uyarısız; render'da 1 H1, yinelenen ID yok, künye ve sonda Karma rozeti, dereceli-gizli makalelerde rozet yok. Commit, push, deploy yapılmadı.
