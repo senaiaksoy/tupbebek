@@ -1,5 +1,9 @@
 # CLAUDE.md — tupbebek.com Proje Rehberi
 
+## Humanize komutu
+
+`humanize` istendiğinde [AGENTS.md içindeki kapsamlı humanize ve gerçek hekim yanıtları kurallarını](AGENTS.md#humanize-komutu--kapsamlı-düzenleme-ve-gerçek-hekim-yanıtları) oku ve uygula. Bu akış tüm metni kapsar; SSS yanıtları Dr. Aksoy'dan alınır. Ayrıntılar tek yerde, AGENTS.md'de tutulur.
+
 ## Proje Tanimi
 
 tupbebek.com, Turkiye'nin ilk bagimsiz, reklamsiz, bilimsel ureme sagligi ve infertilite referans portalidir. Bas Editor **Doc. Dr. Senai Aksoy** liderliginde, **Egitici Pazarlama** stratejisiyle etik ve organik hasta (lead) uretimi hedeflenmektedir.
