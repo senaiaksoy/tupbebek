@@ -61,6 +61,8 @@ Her tibbi icerik sayfasinda bulunmasi gereken unsurlar:
 
 ### Makale preflight — HARD GATE
 
+Vault’un Git deposu [senaiaksoy/Senai-Wiki](https://github.com/senaiaksoy/Senai-Wiki). Yerel yol bulunamazsa, durmadan önce [AGENTS.md erişim sırasını](AGENTS.md#obsidian-vault--senai-wiki-erişimi) uygula; aynı kanonik dosyayı yetkili GitHub erişimiyle oku.
+
 Her yeni makale, makale guncellemesi, rewrite veya humanize isinde taslak
 yazmadan once canonical rehber okunur:
 `D:\A-klasör\obsidian-vaults\draksoyivf-knowledge\wiki\brand\senai-aksoy-makale-stil-rehberi.md`.
