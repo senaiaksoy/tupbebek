@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import vm from 'node:vm';
 
 const root = process.cwd();
 const baseLayout = fs.readFileSync(path.join(root, 'src/layouts/BaseLayout.astro'), 'utf8');
@@ -28,13 +29,15 @@ const checks = [
       !baseLayout.includes('if (!hasAnalyticsConsent()) return;'),
   },
   {
-    name: 'GA4 waits for idle time or user interaction and records only one automatic page view',
+    name: 'GA4 loads on page open with consent queued first and one automatic page view',
     pass:
       baseLayout.includes('window.__loadGA = loadMeasurement;') &&
       baseLayout.includes('window.__loadGA = loadMeasurement;\n\n\t\t\twindow.__trackGaEvent') &&
-      baseLayout.includes('function scheduleMeasurement()') &&
-      baseLayout.includes('window.requestIdleCallback(loadMeasurement') &&
-      baseLayout.includes('\n\t\t\tscheduleMeasurement();\n\n\t\t\twindow.addEventListener') &&
+      baseLayout.includes('\n\t\t\tloadMeasurement();\n\t\t</script>') &&
+      !baseLayout.includes('function scheduleMeasurement()') &&
+      !baseLayout.includes('window.requestIdleCallback(loadMeasurement') &&
+      baseLayout.indexOf("window.gtag('consent', 'default'") < baseLayout.indexOf("window.gtag('config', gaMeasurementId") &&
+      baseLayout.indexOf('document.head.appendChild(script)') > baseLayout.indexOf("window.gtag('config', gaMeasurementId") &&
       !baseLayout.includes("window.gtag('event', 'page_view'"),
   },
   {
@@ -89,6 +92,49 @@ const checks = [
 ];
 
 const failures = checks.filter((check) => !check.pass);
+
+const analyticsScript = baseLayout.match(/<!-- Google Analytics \(GA4\)[\s\S]*?<script define:vars=\{\{[^>]+\}\}>([\s\S]*?)<\/script>/)?.[1];
+if (!analyticsScript) {
+  failures.push({ name: 'GA4 inline script can be extracted for a startup check' });
+} else {
+  for (const status of [null, 'accepted', 'rejected']) {
+    const appendedScripts = [];
+    const listeners = new Map();
+    const window = {
+      addEventListener(name, handler) { listeners.set(name, handler); },
+    };
+    const document = {
+      createElement(tag) { return { tag }; },
+      head: { appendChild(script) { appendedScripts.push(script); } },
+    };
+    const localStorage = { getItem() { return status; } };
+    vm.runInNewContext(analyticsScript, {
+      window,
+      document,
+      localStorage,
+      gaMeasurementId: 'G-K3VE72CSDJ',
+      googleAdsId: '',
+      googleAdsConversionLabels: {},
+      Date,
+      encodeURIComponent,
+    });
+
+    const calls = window.dataLayer.map((args) => Array.from(args));
+    const commands = calls.map((args) => args[0] === 'js' ? 'js' : `${args[0]}:${args[1]}`);
+    const expected = status
+      ? ['consent:default', 'js', 'consent:update', 'config:G-K3VE72CSDJ']
+      : ['consent:default', 'js', 'config:G-K3VE72CSDJ'];
+    const pass =
+      appendedScripts.length === 1 &&
+      appendedScripts[0].async === true &&
+      appendedScripts[0].src.endsWith('/gtag/js?id=G-K3VE72CSDJ') &&
+      commands.join('|') === expected.join('|') &&
+      calls[0][2].analytics_storage === 'denied' &&
+      (!status || calls[2][2].analytics_storage === (status === 'accepted' ? 'granted' : 'denied')) &&
+      listeners.has('cookie-consent:updated');
+    if (!pass) failures.push({ name: `GA4 immediate startup and consent order (${status || 'new visitor'})` });
+  }
+}
 
 if (failures.length > 0) {
   console.error('Consent Mode v2 verification failed:');

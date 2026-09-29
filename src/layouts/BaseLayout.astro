@@ -289,51 +289,24 @@ const siteGraph = {
 			function loadMeasurement() {
 				if (window.gaLoaded) return;
 				window.gaLoaded = true;
-				window.__loadGA = loadMeasurement;
-				
-				const injectScript = () => {
-					// Load script
-					const script = document.createElement('script');
-					script.async = true;
-					script.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(gaMeasurementId || googleAdsId)}`;
-					document.head.appendChild(script);
 
-					// Init measurement destinations.
-					window.gtag('js', new Date());
-					const consentStatus = getAnalyticsConsentStatus();
-					if (consentStatus === 'accepted' || consentStatus === 'rejected') {
-						updateAnalyticsConsent(consentStatus);
-					}
-					if (gaMeasurementId) {
-						window.gtag('config', gaMeasurementId);
-					}
-					if (googleAdsId) {
-						window.gtag('config', googleAdsId);
-					}
-				};
-
-				if (document.readyState === 'complete') {
-					requestAnimationFrame(injectScript);
-				} else {
-					window.addEventListener('load', injectScript, { once: true });
+				// Queue consent and the initial page view before the async tag executes.
+				window.gtag('js', new Date());
+				const consentStatus = getAnalyticsConsentStatus();
+				if (consentStatus === 'accepted' || consentStatus === 'rejected') {
+					updateAnalyticsConsent(consentStatus);
 				}
-			}
-
-			function scheduleMeasurement() {
-				const schedule = () => {
-					if (window.gaLoaded) return;
-					if ('requestIdleCallback' in window) {
-						window.requestIdleCallback(loadMeasurement, { timeout: 4000 });
-					} else {
-						window.setTimeout(loadMeasurement, 1500);
-					}
-				};
-
-				if (document.readyState === 'complete') {
-					schedule();
-				} else {
-					window.addEventListener('load', schedule, { once: true });
+				if (gaMeasurementId) {
+					window.gtag('config', gaMeasurementId);
 				}
+				if (googleAdsId) {
+					window.gtag('config', googleAdsId);
+				}
+
+				const script = document.createElement('script');
+				script.async = true;
+				script.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(gaMeasurementId || googleAdsId)}`;
+				document.head.appendChild(script);
 			}
 
 			window.__loadGA = loadMeasurement;
@@ -360,8 +333,6 @@ const siteGraph = {
 				});
 			};
 
-			scheduleMeasurement();
-
 			window.addEventListener('cookie-consent:updated', function(event) {
 				const status = event.detail?.status;
 				updateAnalyticsConsent(status);
@@ -373,6 +344,8 @@ const siteGraph = {
 					non_interaction: true
 				});
 			});
+
+			loadMeasurement();
 		</script>
 
 		<!-- Latin-ext + icon fonts deferred — keeps critical path to inter/manrope latin + LCP image -->
