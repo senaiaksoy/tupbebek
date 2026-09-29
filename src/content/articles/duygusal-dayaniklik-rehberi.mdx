@@ -18,9 +18,9 @@ templateVersion: "2026-07"
 recommendationGrade: C
 status: "published"
 publishDate: 2026-04-07
-lastModified: 2026-09-25
+lastModified: 2026-09-29
 evidenceAsOf: 2026-07-25
-reviewScope: "Boivin kapsam sınırlaması; Gameiro nedensellik düzeltmesi; Chai keşifsel çerçeve; ESHRE 2015 ve ACOG 2023 kaynakları; profesyonel destek, ilaç güvenliği ve kriz yönlendirmesi güncellemesi."
+reviewScope: "Eylül 2026 editoryal geçişi: Boivin, Gameiro ve Chai iddiaları kaynaklarıyla karşılaştırıldı; tekrar eden kısa yanıt tablosu kaldırıldı; giriş, bölüm sonları ve pratik araçlar listesindeki yinelenen Boivin ve destek uyarıları birleştirildi, anlatım ve liste dili sadeleştirildi. Transfer sonrası ağlama sorusunda Dr. Aksoy'un onaylı yanıtı kullanıldı; antidepresan sorusuna ve pratik araçlardaki ara verme ölçütlerine Dr. Aksoy'un 2026-09-29 tarihli onaylı yanıtları eklendi; diğer SSS yanıtları için hekim katkısı bekleniyor."
 expertContribution:
   title: "Dr. Aksoy'un yaklaşımı"
   question: "Kaygı veya depresif belirtisi olan bir IVF hastasında siklusu erteleme ya da ruh sağlığı uzmanına yönlendirme eşiğiniz nedir; hangi durumda devam etmeyi güvenli bulursunuz?"
@@ -39,7 +39,7 @@ author:
 authorYoutube: "https://www.youtube.com/@DocentDrSenaiAksoy"
 medicalReviewer: "tupbebek.com Editöryal Ekip"
 reviewerTitle: "Tıbbi Yayın Ekibi"
-reviewDate: 2026-07-25
+reviewDate: 2026-09-29
 image: "/images/makaleler/duygusal_dayaniklik.webp"
 imageAlt: "Sıcak ve yumuşak ışıkta, sakin bir ifadeyle hafifçe gülümseyen kadın portresi"
 imageCaption: "Stres yönetiminin amacı kaygıyı sıfırlamak değil; günlük işlevi ve tedavi kararlarını taşınabilir kılmaktır."
@@ -101,90 +101,78 @@ references:
 
 import Accordion from "../../components/global/Accordion.astro";
 import InlineEvidence from "../../components/InlineEvidence.astro";
-import QuoteBlock from '../../components/global/QuoteBlock.astro';
-import MedicalInfoBox from '../../components/global/MedicalInfoBox.astro';
 
 İnfertilite tanısı ve tüp bebek (IVF) süreci çoğu çift için stres ve kaygıyı artırır ([Paraskevi 2021](https://pubmed.ncbi.nlm.nih.gov/34012353/)). Bu duygular “zayıf karakter” işareti değildir; belirsizlik, tedavi uygulamaları, zaman baskısı ve tekrarlayan bekleyişlerle birlikte gelen anlaşılır bir yüktür.
 
-Prospektif çalışmaların meta-analizinde, kadınlarda tedavi başlamadan önce ölçülen genel duygusal sıkıntı ile tek bir ART siklusu sonrasındaki gebelik oluşumu arasında anlamlı ilişki gösterilmemiştir ([Boivin 2011](https://pubmed.ncbi.nlm.nih.gov/21345903/)). Bu bulgu, günlük stres nedeniyle tedavi başarısızlığından kişinin kendisini sorumlu tutmaması gerektiğini destekler; ağır veya tedavisiz psikiyatrik hastalıkların önemsiz olduğu anlamına gelmez. Destek almak gebelik şansını “garanti etmek” için değil; suçluluğu azaltmak, günlük işlevi korumak ve psikolojik yükün tedaviyi bırakma kararına katkıda bulunabildiği durumları erken fark etmek içindir ([ESHRE 2015](https://pubmed.ncbi.nlm.nih.gov/26345684/); [Gameiro 2012](https://pubmed.ncbi.nlm.nih.gov/22869759/)).
+Bu rehberde araştırmaların stres ile IVF sonucu arasındaki ilişki hakkında ne söylediğini, bekleyiş ve olumsuz sonuç günlerinde neyin işe yarayabileceğini ve hangi durumda profesyonel destek gerektiğini bulacaksınız.
 
 ## İçindekiler
 
-1. [Kısa yanıtlar](#sik-aranan)
-2. [Stres neden yoğundur?](#neden)
-3. [Stres IVF sonucunu bozar mı?](#sonuc)
-4. [Bekleyiş dönemi](#bekleyis)
-5. [Başarısız siklus sonrası](#basarisiz)
-6. [Eş ve asimetrik yas](#es)
-7. [Ne zaman profesyonel destek?](#destek)
-8. [Antidepresan ve IVF](#ilac)
-9. [Pratik araçlar](#araclar)
-10. [Sıkça sorulan sorular](#faq)
-
-<h2 id="sik-aranan">Tüp Bebek Stresi: Kısa Yanıtlar</h2>
-
-| Soru | Kısa cevap |
-| :--- | :--- |
-| **Tüp bebekte stres sonucu bozar mı?** | Kadınlarda tedavi öncesi ölçülen genel sıkıntı ile tek bir ART siklusu sonrasındaki gebelik oluşumu arasında tutarlı ilişki gösterilememiştir; suçluluk çoğu zaman haksızdır. |
-| **Psikolojik destek şart mı?** | Herkese zorunlu psikoterapi değildir; psikososyal ihtiyaçlar rutinin parçası olabilir. Günlük işlev, depresyon veya ilişki zorlanması varsa yararlıdır. |
-| **Transfer sonrası bekleyiş nasıl yönetilir?** | Belirti takibini azaltmak, küçük rutin kurmak ve test gününe kadar aşırı aramayı sınırlamak yardımcı olabilir. |
-| **Ağlamak tutunmayı engeller mi?** | Ağlamanın veya geçici duygusal yoğunluğun embriyo implantasyonunu engellediğini gösteren klinik kanıt yoktur. |
+1. [Stres neden yoğundur?](#neden)
+2. [Stres IVF sonucunu bozar mı?](#sonuc)
+3. [Bekleyiş dönemi](#bekleyis)
+4. [Olumsuz sonuç veya kayıp sonrası](#basarisiz)
+5. [Eşler kaybı farklı yaşayabilir](#es)
+6. [Ne zaman profesyonel destek?](#destek)
+7. [Antidepresan ve IVF](#ilac)
+8. [Pratik araçlar](#araclar)
+9. [Sıkça sorulan sorular](#faq)
 
 <h2 id="neden">Tüp Bebek Stresi Neden Bu Kadar Yoğundur?</h2>
 
-IVF; belirsizlik, zaman baskısı, tedavi uygulamaları, finansal ve ailesel yükler ile tekrarlayan sonuç bekleyişini bir araya getirir. Sistematik derleme özetleri, fertilite tedavisinde stres ve anksiyetenin yükseldiğini bildirir; sonuçlara etki konusunda ise çalışmalar çelişkilidir ([Paraskevi 2021](https://pubmed.ncbi.nlm.nih.gov/34012353/)). <InlineEvidence grade="C" />
+IVF; belirsizlik, zaman baskısı, tedavi uygulamaları, finansal ve ailesel yükler ile tekrarlayan sonuç bekleyişini bir araya getirir. Sistematik derlemeleri bir araya getiren bir çalışma, fertilite tedavisinde stres ve anksiyetenin yükseldiğini bildiriyor; tedavi sonucuna etkisi konusunda ise çalışmalar çelişkili ([Paraskevi 2021](https://pubmed.ncbi.nlm.nih.gov/34012353/)). <InlineEvidence grade="C" />
 
-ESHRE, infertilite ve medikal destekli üremede rutin psikososyal bakımı fertilite ekibinin görevi olarak ele alır: ihtiyaçlar tedavinin farklı aşamalarında değerlendirilmeli, destek “ekstra lüks” gibi değil bakımın parçası gibi düşünülmelidir ([ESHRE 2015](https://pubmed.ncbi.nlm.nih.gov/26345684/)). <InlineEvidence grade="B" /> Rutin psikososyal bakım; duyarlı iletişim, uygun bilgi sunumu, ihtiyaçların taranması ve gerektiğinde ruh sağlığı uzmanına yönlendirmeyi kapsar. Her hastanın uzun süreli psikoterapi alması anlamına gelmez.
-
-Stres yönetiminin amacı “hiç kaygı duymamak” değildir. Amaç, kaygının günlük işlevi ve tedavi kararlarını yönetilebilir düzeyde tutmaktır.
+ESHRE, infertilite ve medikal destekli üremede rutin psikososyal bakımı fertilite ekibinin görevi sayar: ihtiyaçlar tedavinin farklı aşamalarında değerlendirilmeli, destek bakımın olağan bir parçası olarak sunulmalıdır ([ESHRE 2015](https://pubmed.ncbi.nlm.nih.gov/26345684/)). <InlineEvidence grade="B" /> Bu bakım; duyarlı iletişimi, anlaşılır bilgi vermeyi, ihtiyaçları taramayı ve gerektiğinde ruh sağlığı uzmanına yönlendirmeyi kapsar.
 
 <figure class="my-8">
   <img src="/images/makaleler/duygusal-dayaniklik-stres-harita.webp" alt="IVF sürecinde stres kaynakları ve dayanıklılık kaldıraçlarını gösteren şema: belirsizlik, tedavi yükü, finansal baskı; bilgi sınırı, rutin ve profesyonel destek" width="1200" height="675" loading="lazy" class="rounded-2xl border border-slate-200" />
-  <figcaption class="text-sm text-slate-600 mt-3 text-center italic">Stres yönetiminin amacı kaygıyı sıfırlamak değil, günlük işlevi ve tedavi kararlarını yönetilebilir düzeyde tutmaktır.</figcaption>
+  <figcaption class="text-sm text-slate-600 mt-3 text-center italic">Stres kaynakları (belirsizlik, tedavi yükü, finansal baskı) ve dayanıklılığı destekleyen üç alan: bilgi sınırı, rutin ve profesyonel destek.</figcaption>
 </figure>
 
 Sürecin aşamaları için [tüp bebek süreci rehberi](/makaleler/tup-bebek-sureci-rehber/) tamamlayıcıdır. Mitlere takılı kalmamak için [yanlış bilinenler](/makaleler/tup-bebek-yanlis-bilinenler/) yazısı da yardımcı olur.
 
 <h2 id="sonuc">Stres IVF Sonucunu Bozar mı?</h2>
 
-Kısa cevap: Kadınlarda tedavi öncesi ölçülen genel duygusal sıkıntı ile tek bir ART siklusu sonrası gebelik oluşumu arasında anlamlı ilişki gösterilememiştir. “Stres yaptım diye gebe kalamıyorum” düşüncesi çoğu zaman haksız bir suçluluk üretir.
+Kısa cevap: Tedaviden önce yaşanan duygusal sıkıntının gebelik şansını azalttığı gösterilmedi. “Stres yaptım diye gebe kalamıyorum” düşüncesi çoğu zaman haksız bir suçluluk yükü getirir.
 
-Boivin, Griffiths ve Venetis’in 2011 BMJ meta-analizi, 14 prospektif çalışma ve 3.583 kadını kapsar. Tedavi başlamadan önce ölçülen duygusal sıkıntı ile tek siklus sonrası gebelik sonucu arasında anlamlı ilişki bulunmamıştır (standartlaştırılmış ortalama fark −0.04, %95 GA −0.11 ile 0.03) ([Boivin 2011](https://pubmed.ncbi.nlm.nih.gov/21345903/)). <InlineEvidence grade="B" /> Bu bulgu; tedavi sırasında gelişen ağır depresyonu, erkek partnerin psikolojik durumunu, canlı doğumu veya kronik psikiyatrik hastalığı tek başına “etkisiz” ilan etmez. Yazarlar, bulguların kadınları ve hekimleri rahatlatması gerektiğini; doğurganlık sorunlarının veya tedaviyle eş zamanlı yaşam olaylarının yarattığı duygusal sıkıntının gebe kalma şansını azaltmadığını vurgular.
+Boivin, Griffiths ve Venetis’in 2011 BMJ meta-analizi 14 prospektif çalışmayı ve 3.583 kadını kapsar. Tedavi başlamadan önce ölçülen duygusal sıkıntı ile tek siklus sonrası gebelik sonucu arasında anlamlı ilişki bulunmadı (standartlaştırılmış ortalama fark −0.04, %95 GA −0.11 ile 0.03) ([Boivin 2011](https://pubmed.ncbi.nlm.nih.gov/21345903/)). <InlineEvidence grade="B" /> Yazarlar, doğurganlık sorunlarının veya tedaviyle aynı döneme denk gelen yaşam olaylarının yarattığı sıkıntının gebe kalma şansını azaltmadığını, bu bulgunun kadınları ve hekimleri rahatlatması gerektiğini vurgular.
 
-Rooney ve Domar 2018 derlemesi de benzer bir çerçeve çizer: infertilitenin stres yarattığı açıktır; stresin infertiliteye yol açıp açmadığı ise belirsiz kalır. Psikolojik girişimlerin gebelik oranlarıyla ilişkili bulunabildiğini bildirirler; bu, “stres kesin kısırlık yapar” iddiası değildir ([Rooney 2018](https://pubmed.ncbi.nlm.nih.gov/29946210/)). <InlineEvidence grade="C" />
+Analizin kapsamı ise sınırlıdır: yalnızca kadınlarda, tedavi başlamadan önce yapılan ölçümlere ve gebelik sonucuna bakar. Tedavi sırasında gelişen ağır depresyon, erkek eşin psikolojik durumu, canlı doğum ve kronik psikiyatrik hastalıklar hakkında bir sonuç vermez.
+
+Rooney ve Domar’ın 2018 derlemesi de benzer bir çerçeve çizer: infertilitenin stres yarattığı açıktır; stresin infertiliteye yol açıp açmadığı ise belirsiz kalır. Yazarlar psikolojik girişimlerin gebelik oranlarıyla ilişkili bulunabildiğini bildirir; stresin tek başına kısırlığa yol açtığını söylemezler ([Rooney 2018](https://pubmed.ncbi.nlm.nih.gov/29946210/)). <InlineEvidence grade="C" />
 
 Chai ve arkadaşlarının küçük, keşifsel çalışmasında anksiyete ve kortizol düzeyleri ile IVF sonuçları incelenmiştir. Yüksek anksiyete veya kortizol düzeylerinde daha düşük gebelik oranları gözlense de karıştırıcı faktörler ve çoklu tedavi protokolleri nedeniyle bağımsız bir etki doğrulanamamıştır. Bu çalışma nedensellik göstermez ve tek başına klinik karar belirlememelidir ([Chai 2023](https://pubmed.ncbi.nlm.nih.gov/37383394/)). <InlineEvidence grade="C" />
 
-**Tedaviyi bırakma veya tedaviden çekilme** ayrı bir konudur. Psikolojik yük, bazı hastalarda tedaviyi sürdürmeyi zorlaştıran etkenlerden biridir ([Gameiro 2012](https://pubmed.ncbi.nlm.nih.gov/22869759/)). Psikososyal destek bu yükü azaltmak ve karar sürecini desteklemek amacıyla sunulabilir; ancak mevcut derleme tek başına desteğin tedaviyi bırakmayı önlediğini kanıtlamaz. Destek burada “embriyo tutunmasını artırmak” vaadiyle değil, süreci insan gibi taşıyabilmek için anlam kazanır.
+Tedaviyi bırakma kararı ise ayrı bir sorudur. Gameiro ve arkadaşlarının sistematik derlemesine göre psikolojik yük, bazı hastalarda tedaviyi sürdürmeyi zorlaştıran etkenlerden biridir ([Gameiro 2012](https://pubmed.ncbi.nlm.nih.gov/22869759/)). Psikososyal destek bu yükü hafifletmek ve karar sürecine yardımcı olmak için sunulabilir; ancak derleme, desteğin tedaviyi bırakmayı önlediğini göstermez.
 
-<h2 id="bekleyis">Transfer Sonrası Bekleyiş (Two-Week Wait)</h2>
+<h2 id="bekleyis">Transfer Sonrası Bekleyiş</h2>
 
-Transfer ile [beta-hCG testi](/makaleler/beta-hcg-testi/) arasındaki günler çoğu kişi için en zor dilimdir. Belirti aramak, forum okumak ve erken ev testi yapmak kaygıyı hızla büyütür.
+Transfer ile [beta-hCG testi](/makaleler/beta-hcg-testi/) arasındaki günler çoğu kişi için en zor dilimdir. Belirti aramak, forum okumak ve erken ev testi yapmak kaygıyı kısa sürede büyütebilir.
 
 Yardımcı olabilecek çerçeve:
 
-- Her lekelenmeyi, kasığı veya göğüs hissini sonuç gibi yorumlamayın; [transfer sonrası bakım](/makaleler/embriyo-transferi-sonrasi-bakim/) yazısı bu noktayı netleştirir.
-- Test gününe kadar internette “tutundu mu?” aramalarını sınırlayın.
-- Günü küçük parçalara bölün: kısa yürüyüş, iş/okul rutini, kısa nefes molası.
-- Partnerinizle “bugün nasıl hissediyorsun?” sorusunu kısa ama düzenli tutun.
+- Her lekelenmeyi, kasık batmasını veya göğüs hassasiyetini sonuç gibi yorumlamayın; [transfer sonrası bakım](/makaleler/embriyo-transferi-sonrasi-bakim/) rehberi bu ayrımı netleştirir.
+- Test gününe kadar internette “tutunma belirtileri” aramalarını sınırlayın.
+- Günü küçük parçalara bölün: hafif yürüyüşler, iş veya ev rutini, dinlenme molaları.
+- Eşinizle “bugün nasıl hissediyorsun?” sorusunu kısa ama düzenli tutun.
 
-Amaç sonucu kontrol etmek değil; bekleyişi taşınabilir kılmaktır.
+Ağlamanın veya birkaç gün yoğun kaygılanmanın embriyonun tutunmasını etkileyip etkilemediği sorusunu Dr. Aksoy [aşağıda](#faq) yanıtlıyor.
 
-<h2 id="basarisiz">Başarısız Siklus veya Erken Kayıp Sonrası</h2>
+<h2 id="basarisiz">Olumsuz Sonuç veya Erken Kayıp Sonrası</h2>
 
-Negatif test veya [kimyasal gebelik](/makaleler/kimyasal-gebelik/) sonrası yas, öfke, boşluk ve “ben neyi bozdum?” sorusu sık görülür. Bu duyguların varlığı sonraki denemenin “mahvolduğu” anlamına gelmez.
+Negatif test veya [kimyasal gebelik](/makaleler/kimyasal-gebelik/) sonrası yas, öfke, boşluk ve “ben neyi bozdum?” sorusu sık görülür. Bu duygular yasın parçasıdır; sonraki denemenin sonucu hakkında bir şey söylemez.
 
 Pratik yaklaşım:
 
-- Fiziksel iyileşme ile duygusal hazırlığı ayırın; ikisi aynı gün hizalanmayabilir.
-- Suçlama dili yerine “bu siklusun verisi ne söyledi?” sorusuna dönün.
+- Fiziksel iyileşme ile duygusal hazırlığı ayrı düşünün; bedeniniz toparlanmış olsa da kendinizi yeni bir denemeye hazır hissetmeyebilirsiniz.
+- Suçlu aramak yerine hekiminizle bu siklusta neler öğrenildiğini konuşun.
 - Başarısız siklus veya kayıp sonrasında yas günlük işlevi, uykuyu, ilişkiyi ya da tedavi kararlarını belirgin biçimde etkiliyorsa profesyonel destek düşünülebilir. Bunun için belirli sayıda başarısız denemeyi beklemek gerekmez.
 
-<h2 id="es">Eş ile Asimetrik Yas</h2>
+<h2 id="es">Eşler Kaybı Farklı Yaşayabilir</h2>
 
-Çiftler aynı kaybı çoğu zaman aynı tempoda yaşamaz. Biri konuşmak isterken diğeri “işe odaklanarak” dayanır. Bu fark, sevgi eksikliği demek değildir; başa çıkma stilleri farklıdır.
+Çiftler aynı kaybı çoğu zaman aynı tempoda yaşamaz. Biri konuşmak isterken diğeri “işe odaklanarak” dayanabilir. Bu fark çoğunlukla sevginin azlığından değil, başa çıkma biçimlerinin farklı olmasından kaynaklanır.
 
-Yardımcı olanlar:
+Yardımcı olabilecekler:
 
 - Suçlama yerine görev paylaşımı (ilaç, randevu, bilgi filtreleme)
 - Kısa ama düzenli duygu paylaşımı
@@ -194,7 +182,7 @@ Gerekirse çift görüşmesi, bireysel destek kadar değerli olabilir.
 
 <h2 id="destek">Ne Zaman Profesyonel Destek Alınmalı?</h2>
 
-Herkese zorunlu uzun psikoterapi yoktur; psikososyal ihtiyaçların değerlendirilmesi ise rutinin parçası olabilir ([ESHRE 2015](https://pubmed.ncbi.nlm.nih.gov/26345684/)). Aşağıdakiler varsa psikolog veya psikiyatri değerlendirmesi düşünülmelidir:
+Herkesin uzun süreli psikoterapi alması gerekmez. Psikososyal ihtiyaçların değerlendirilmesi ise rutin bakımın parçasıdır ([ESHRE 2015](https://pubmed.ncbi.nlm.nih.gov/26345684/)). Aşağıdaki durumlarda psikolog veya psikiyatrist desteği değerlendirilmelidir:
 
 - Günlük işlevi bozan kaygı veya panik
 - Kalıcı veya giderek artan umutsuzluk, ağlama ya da keyif alamama
@@ -202,68 +190,66 @@ Herkese zorunlu uzun psikoterapi yoktur; psikososyal ihtiyaçların değerlendir
 - Çift ilişkisinde yoğun çatışma veya iletişim kopukluğu
 - Tedavi kararlarını veremeyecek düzeyde bilgi arama ve kontrol ihtiyacı
 - Yeniden alevlenme riski taşıyan depresyon, anksiyete veya travma öyküsü
-- Tedaviye devam etmek istememe ile “kaçmak” arasındaki çizginin bulanıklaşması
+- Tedaviyi gerçekten bırakmak mı istediğinizi, yoksa yalnızca bu yükten bir süre uzaklaşmak mı istediğinizi ayırt edememek
 
-Portalın [psikolojik destek](/psikolojik-destek/) sayfası genel çerçeveyi tamamlar; klinik karar kişiselleştirilir.
+Portalın [psikolojik destek](/psikolojik-destek/) sayfası genel çerçeveyi tamamlar; size özel karar, sizi değerlendiren hekimle birlikte verilir.
 
 <h2 id="ilac">Antidepresan ve IVF</h2>
 
-Antidepresan kullanımı sık sorulan bir konudur. Gebelik planı nedeniyle antidepresanlar otomatik olarak kesilmez. Kararda ilacın türü ve dozu kadar hastalığın şiddeti, geçmiş nüksler ve tedavisiz kalmanın riskleri de değerlendirilir ([ACOG 2023](https://pubmed.ncbi.nlm.nih.gov/37486661/)). <InlineEvidence grade="B" /> Bazı ilaçların aniden kesilmesi yoksunluk belirtilerine veya hastalığın tekrarlamasına yol açabilir. İlaç değişikliği gerekiyorsa psikiyatri ve üreme sağlığı ekipleri tarafından kişiye özel planlanmalıdır.
+Gebelik planı nedeniyle antidepresanlar otomatik olarak kesilmez. Kararda ilacın türü ve dozu kadar hastalığın şiddeti, geçmiş nüksler ve tedavisiz kalmanın riskleri de değerlendirilir ([ACOG 2023](https://pubmed.ncbi.nlm.nih.gov/37486661/)). <InlineEvidence grade="B" /> ACOG kılavuzu IVF’ye özel değildir; gebelik planı ve perinatal dönemde ruh sağlığı ilaçlarının yönetimi için çerçeve sunar. Bazı ilaçların aniden kesilmesi yoksunluk belirtilerine veya hastalığın tekrarlamasına yol açabilir.
 
 Gebelik planı veya IVF döneminde ilaç kullanıyorsanız:
 
-- Dozu kendi başınıza değiştirmeyin
-- Psikiyatristiniz ve üreme hekiminizle açık paylaşın
-- Alternatif veya doz ayarı gerekiyorsa zamanlamayı birlikte planlayın
+- İlaç dozunu kendi başınıza değiştirmeyin veya ilacı aniden bırakmayın.
+- Kullandığınız tüm ilaçları psikiyatristiniz ve tüp bebek hekiminizle açıkça paylaşın.
+- Doz ayarı ya da ilaç değişimi gerekiyorsa bunu iki hekimle birlikte, size özel bir planla zamanlayın.
 
-Bu bölüm tedavi reçetesi değildir; güvenlik ve iletişim çağrısıdır. ACOG kılavuzu IVF’ye özel değildir; gebelik planı ve perinatal ruh sağlığı ilaç yönetimi için uygun çerçeve sağlar.
+Dr. Aksoy’un bu konudaki yanıtını [sıkça sorulan sorular](#faq) bölümünde bulabilirsiniz.
 
 <h2 id="araclar">Pratik Dayanıklılık Araçları</h2>
 
-Aşağıdaki öneriler gebelik oranını artırdığı kanıtlanmış müdahaleler değildir; bekleyiş dönemindeki yükü ve günlük işlev kaybını azaltmaya yardımcı olabilecek pratik seçeneklerdir.
+Bu adımların gebelik oranını artırdığı gösterilmedi; amaçları tedavi sürecindeki yükü ve günlük işlev kaybını azaltmaktır. Küçük ve tekrarlanabilir adımları sürdürmek, kusursuz bir sakinlik aramaktan çoğu zaman daha kolaydır:
 
-Küçük, tekrarlanabilir adımlar çoğu zaman “mükemmel sakinlik” arayışından daha işe yarar:
-
-- Bilgi kaynağını sınırlayın; forum ve yorum okumayı azaltın.
+- Bilgi kaynağını sınırlayın; kontrolsüz forum ve hasta yorumu okumayı azaltın.
 - Günlük rutini tamamen bırakmayın; hekiminiz izin veriyorsa hafif yürüyüşleri sürdürün.
-- Transfer sonrası her belirtiyi gebelik sonucu gibi yorumlamayın.
-- Yakın çevreyle paylaşım sınırı belirleyin.
-- Gerekirse çift olarak görüşmeye gidin; infertilite çiftin ortak sürecidir.
-- Ara verme kararı panikle değil, dinlenmiş bir konuşmayla verilsin.
+- Yakın çevreyle neyi, ne kadar paylaşacağınıza siz karar verin.
+- Tedaviye ara verme kararını panik anında değil, sakin ve dinlenmiş bir değerlendirmeyle verin.
+
+**Dr. Aksoy’un ara verme ölçütleri:** Tükenmişlik tek başına tedaviyi erteleme nedeni değildir. Ancak çiftte belirgin uyku bozukluğu, işlev kaybı, yoğun çatışma, panik düzeyinde kaygı, sürekli ağlama, tedaviye devam etmeye dair kararsızlık, ilaç uyumunun bozulması veya günlük yaşamı belirgin etkileyen depresif belirtiler varsa ara vermeyi konuşurum. Özellikle kişi “bu siklusu kaldıramıyorum” dediğinde, bir ay ertelemek çoğu zaman tıbbi bir kayıp yaratmadan süreci daha sağlıklı yönetmeye yardımcı olabilir.
 
 <figure class="my-8">
   <img src="/images/makaleler/duygusal-dayaniklik-gunluk-rutin.webp" alt="Keten örtülerle çevrili odada yere oturmuş, deftere not yazan kadın" width="1200" height="675" loading="lazy" class="rounded-2xl border border-slate-200" />
-  <figcaption class="text-sm text-slate-600 mt-3 text-center italic">Günlük küçük rutinler — kısa yürüyüş, günlük tutma, bilinçli paylaşım sınırı — dayanıklılığı zaman içinde inşa eder.</figcaption>
+  <figcaption class="text-sm text-slate-600 mt-3 text-center italic">Kısa yürüyüş, not tutma ve paylaşım sınırı gibi küçük rutinler günleri daha taşınabilir kılabilir.</figcaption>
 </figure>
 
-<QuoteBlock>
-Psikolojik destek, “daha çok gebe kalmak için bir teknik” değildir. Çoğu zaman süreci insan gibi taşıyabilmek, gereksiz suçluluğu bırakmak ve doğru zamanda doğru tıbbi kararı verebilmek için vardır.
-</QuoteBlock>
-
 <p class="mt-6 text-sm text-gray-600 leading-relaxed">
-  Sayfa başındaki öneri derecesi psikososyal destek çerçevesini kapsar: tedavi öncesi genel duygusal sıkıntı tek başına IVF sonucunu açıklamaz; destek sürdürülebilirlik ve yaşam kalitesi içindir. Boivin bulgusu kapsamıyla sınırlıdır. Kanıt büyük ölçüde gözlemsel ve derleme düzeyindedir.
+  Sayfa başındaki öneri derecesi psikososyal destek çerçevesini kapsar. Kanıt büyük ölçüde gözlemsel çalışmalara ve derlemelere dayanır; Boivin meta-analizi yalnızca tedavi öncesi ölçülen sıkıntıyı ve tek siklustaki gebelik sonucunu inceler.
 </p>
 
 <h2 id="faq">Sıkça Sorulan Sorular</h2>
 
 <Accordion title="Stres yaptığım için hamile kalamıyor olabilir miyim?">
-Bu düşünce çoğu zaman kişiyi gereksiz suçluluğa iter. Boivin 2011, kadınlarda tedavi öncesi ölçülen genel duygusal sıkıntı ile tek ART siklusu sonrası gebelik oluşumu arasında anlamlı ilişki göstermemiştir. Bu, ağır psikiyatrik hastalığın önemsiz olduğu anlamına gelmez. Stres süreci zorlaştırabilir; IVF sonucunu tek başına açıklayan neden gibi görülmemelidir.
+Bu düşünce çoğu zaman kişiyi gereksiz suçluluğa iter. Boivin 2011 meta-analizinde kadınlarda tedavi öncesi ölçülen genel duygusal sıkıntı ile tek ART siklusu sonrası gebelik arasında anlamlı ilişki bulunmadı. Stres süreci zorlaştırabilir, ama IVF sonucunu tek başına açıklayan bir neden olarak görülmemelidir. Ağır depresyon gibi psikiyatrik hastalıklar ise ayrıca değerlendirilmesi gereken durumlardır.
 </Accordion>
 
 <Accordion title="Psikolojik destek şart mı?">
-Herkese zorunlu uzun psikoterapi değildir. ESHRE, psikososyal ihtiyaçların rutinde değerlendirilmesini önerir. Kaygı, depresyon, ilişki zorlanması veya tedaviyi sürdürme güçlüğü varsa profesyonel destek yararlı olabilir. Destek, gebelik garantisi veya tedaviyi bırakmayı kesin önleme vaadiyle sunulmaz.
+Herkesin uzun süreli psikoterapi alması gerekmez. ESHRE, psikososyal ihtiyaçların rutin bakımda değerlendirilmesini önerir. Kaygı, depresif belirtiler, ilişkide zorlanma veya tedaviyi sürdürme güçlüğü varsa profesyonel destek yararlı olabilir. Bu destek gebelik ya da tedaviye devam etme garantisi değildir.
 </Accordion>
 
-<Accordion title="Transfer sonrası ağlamak zararlı mı?">
-Ağlamanın embriyonun tutunmasını engellediğine ilişkin kanıt yoktur. Uzun süren yoğun kaygı, panik veya uykusuzluk günlük işlevi bozuyorsa profesyonel destek alınabilir.
+<Accordion title="Transfer sonrası ağlamak embriyonun tutunmasını engeller mi?">
+**Dr. Aksoy'un yanıtı:** Ağlamak, üzülmek veya birkaç gün kaygı yaşamak nedeniyle embriyonun tutunmasının engellendiğini gösteren kanıt yok. Hastalarıma bu dönemde kendilerini sürekli sakin olmak zorunda hissetmemelerini, normal günlük yaşamlarını sürdürmelerini, aşırı fiziksel zorlanmadan kaçınmalarını, ilaçlarını düzenli kullanmalarını ve her bedensel belirtiyi sonuç işareti gibi yorumlamamaya çalışmalarını öneriyorum.
+</Accordion>
+
+<Accordion title="Tüp bebek tedavisinde antidepresan kullanımı: ilacı kesmek gerekir mi?">
+**Dr. Aksoy'un yanıtı:** IVF sırasında antidepresan kullanan bir hastada ilacı otomatik olarak kesmek doğru değildir. Özellikle ilacı düzenli kullanan ve iyi yanıt alan hastalarda ani kesilme; yoksunluk belirtileri ve depresyon ya da kaygının alevlenmesi açısından daha fazla sorun yaratabilir. Karar; ilacın türüne, dozuna, psikiyatrik öyküye ve gebelik planına göre psikiyatriyle birlikte verilir. Yeni başlanacaksa gebelikte güvenlilik verisi daha güçlü seçenekler tercih edilir.
 </Accordion>
 
 <Accordion title="Eşimle bu süreçte nasıl iletişim kurmalıyım?">
-Suçlama yerine görev paylaşımı, randevu/ilaç takibi ve duygu paylaşımı için kısa ama düzenli konuşmalar yardımcı olabilir. Herkes aynı tempoda yas tutmaz; bu fark çoğu zaman normaldir.
+Suçlamak yerine randevu ve ilaç takibi gibi görevleri paylaşmak, duygular için de kısa ama düzenli konuşmalar yapmak yardımcı olabilir. Herkes aynı tempoda yas tutmaz; bu fark çoğu zaman normaldir.
 </Accordion>
 
 <Accordion title="Tedaviye ara vermek yenilgi midir?">
-Hayır. Bazen kısa bir ara, uyku, ruh hali ve çift iletişimi toparlamak için gereklidir. Kararı panik anında değil; hekim ve gerekirse ruh sağlığı desteğiyle birlikte vermek daha güvenlidir.
+Hayır. Kısa bir ara bazen uykuyu, ruh halini ve çift iletişimini toparlamaya yardımcı olabilir. Kararı panik anında değil; hekim ve gerekirse ruh sağlığı desteğiyle birlikte vermek daha güvenlidir.
 </Accordion>
 
 ## Güvenlik Notu
