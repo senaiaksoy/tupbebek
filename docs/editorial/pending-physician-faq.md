@@ -7,7 +7,55 @@ Zorunlu "Dr. Aksoy'a en sık sorulan sorular" bölümü için Dr. Aksoy'a sorulm
 
 _Şu an bekleyen soru yok._
 
+Doğrulama notu (2026-09-29): Search Console `sc-domain:tupbebek.com`, 28 Haziran–27 Eylül 2026, `duygusal-dayaniklik-rehberi` sayfa filtresi: 272 toplam gösterim ve 7 görünür sorgu; aşağıda kaydedilen üç soru ifadesi (transfer sonrası ağlama, antidepresan, ara verme) bu sorgular arasında yok. PAA görünürlüğü soru konusunu destekler, "en yüksek hacimli sorgu" sıralamasını kanıtlamaz.
+
 ## Yanıtlanan sorular (editoryal kayıt)
+
+### duygusal-dayaniklik-rehberi (tr) — antidepresan ve tükenmişlik soruları; yanıt tarihi 2026-09-29
+
+**Soru 1:** Tüp bebek tedavisi sırasında antidepresan kullanan veya yeni başlaması gereken bir hastada yaklaşımınız nedir; ilacı kesmek mi yoksa devam etmek mi daha güvenlidir?
+
+**Arama verisi (Soru 1):** Google otomatik tamamlama, `hl=tr&gl=tr`, 2026-09-29, arama terimi "tüp bebek antidepresan": "tüp bebek tedavisinde antidepresan kullanımı", "tüp bebek sürecinde antidepresan kullanımı", "tüp bebek tedavisinde antidepresan kullananlar kadınlar kulübü". Editoryal soru bu konudan uyarlanmıştır; otomatik tamamlama sayısal arama hacmi vermez. Durum: **veri doğrulandı**.
+
+**Özgün yanıt 1 (kullanıcının 2026-09-29 tarihli mesajı, değiştirilmeden):**
+
+> IVF sırasında antidepresan kullanan bir hastada ilacı otomatik olarak kesmek doğru değildir; özellikle düzenli kullanan ve iyi yanıt alan hastalarda ani kesilme, yoksunluk ve depresyon/anksiyete alevlenmesi açısından daha fazla sorun yaratabilir. Karar ilacın türüne, dozuna, psikiyatrik öyküye ve gebelik planına göre psikiyatri ile birlikte verilir; yeni başlanacaksa da gebelikte güvenlilik verisi daha güçlü seçenekler tercih edilir.
+
+**Makaleye giren düzenlenmiş yanıt 1 (2026-09-29'da kullanıcı tarafından "onay" ile görünür kullanım onayı verildi; SSS'ye eklendi):**
+
+> IVF sırasında antidepresan kullanan bir hastada ilacı otomatik olarak kesmek doğru değildir. Özellikle ilacı düzenli kullanan ve iyi yanıt alan hastalarda ani kesilme; yoksunluk belirtileri ve depresyon ya da kaygının alevlenmesi açısından daha fazla sorun yaratabilir. Karar; ilacın türüne, dozuna, psikiyatrik öyküye ve gebelik planına göre psikiyatriyle birlikte verilir. Yeni başlanacaksa gebelikte güvenlilik verisi daha güçlü seçenekler tercih edilir.
+
+**Anlam ve kaynak kontrolü 1:** Yalnızca cümle bölündü ve "depresyon/anksiyete" yazıya çevrildi; gerekçe, oran veya yeni öneri eklenmedi. Makaledeki [ACOG 2023](https://pubmed.ncbi.nlm.nih.gov/37486661/) çerçevesiyle (otomatik kesmeme; ilaç türü, hastalık şiddeti ve nüks öyküsüne göre karar) çelişki yok.
+
+**Soru 2:** Tedavi sürecinde yoğun duygusal yıpranma veya tükenmişlik yaşayan bir çiftte "tedaviye ara verme" veya "siklusu erteleme" kararını hangi belirtilere göre verirsiniz?
+
+**Arama verisi (Soru 2):** Google otomatik tamamlama, `hl=tr&gl=tr`, 2026-09-29: "tüp bebek tedavisine ara", "tüp bebek ara vermek", "tüp bebek ertelemek", "tüp bebek mola", "tüp bebek tedavisini bırakmak" öneri üretmedi. "tüp bebek tedavisi ara" terimi "iki tüp bebek tedavisi arası ne kadar olmalı" ve "tüp bebek tedavisi kaç ay arayla yapılır" önerilerini verdi; bunlar siklus aralığıyla ilgilidir, psikolojik nedenle ertelemeyle birebir eşleşmez. Durum: **veri doğrulanmadı**; "en sık" SSS'ye alınmadı.
+
+**Özgün yanıt 2 (kullanıcının 2026-09-29 tarihli mesajı, değiştirilmeden):**
+
+> Tükenmişlik tek başına tedaviyi erteleme nedeni değildir; ancak çiftte belirgin uyku bozukluğu, işlev kaybı, yoğun çatışma, panik düzeyinde kaygı, sürekli ağlama, tedaviye devam etmeye dair kararsızlık, ilaç uyumunun bozulması veya depresif belirtilerin günlük yaşamı belirgin etkilemesi varsa ara vermeyi konuşurum. Özellikle kişinin “bu siklusu kaldıramıyorum” dediği noktada, bir ay ertelemek çoğu zaman tıbbi bir kayıp yaratmadan süreci daha sağlıklı yönetmeye yardımcı olabilir.
+
+**Kullanım durumu 2:** Veri doğrulanmadığı için SSS'ye alınmadı. 2026-09-29'da kullanıcı "ikinciyi pratik araçlara ekle" talimatı verdi; yanıt `#araclar` bölümüne "Dr. Aksoy’un ara verme ölçütleri" başlıklı paragraf olarak eklendi. Düzenleme: ilk cümle ikiye bölündü, "depresif belirtilerin günlük yaşamı belirgin etkilemesi" → "günlük yaşamı belirgin etkileyen depresif belirtiler", "dediği noktada" → "dediğinde"; gerekçe, oran veya öneri eklenmedi.
+
+> Tükenmişlik tek başına tedaviyi erteleme nedeni değildir. Ancak çiftte belirgin uyku bozukluğu, işlev kaybı, yoğun çatışma, panik düzeyinde kaygı, sürekli ağlama, tedaviye devam etmeye dair kararsızlık, ilaç uyumunun bozulması veya günlük yaşamı belirgin etkileyen depresif belirtiler varsa ara vermeyi konuşurum. Özellikle kişi “bu siklusu kaldıramıyorum” dediğinde, bir ay ertelemek çoğu zaman tıbbi bir kayıp yaratmadan süreci daha sağlıklı yönetmeye yardımcı olabilir. Tıbbi dikkat notu: "bir ay ertelemek çoğu zaman tıbbi kayıp yaratmaz" ifadesi ileri yaş veya düşük over rezervinde bireysel değerlendirme gerektirebilir; yanıttaki "çoğu zaman" sınırı korunmalıdır.
+
+### duygusal-dayaniklik-rehberi (tr) — yanıt tarihi 2026-09-29; görünür kullanım onayı 2026-09-29
+
+**Soru:** Transferden sonraki iki haftalık bekleme sürecinde ağlamak ya da yoğun kaygı yaşamak embriyonun tutunmasını engeller mi; hastalarınıza bu günlerde ne öneriyorsunuz?
+
+**Arama verisi:** Google "Diğer sorular": "Stres bebeğin tutunmasını engeller mi?" ve "Tüp bebek transferinden sonra stresli bir dönem yaşanır mı?"; [TR/Türkiye araması](https://www.google.com/search?q=t%C3%BCp+bebek+stres+psikolojik+destek&hl=tr&gl=tr), 2026-09-29. Editoryal soru iki ifadeden uyarlanmıştır; PAA sayısal arama hacmi vermez. Search Console `sc-domain:tupbebek.com`, 28 Haziran–27 Eylül 2026, hedef makale filtresinde 272 toplam gösterim ve 7 görünür sorgu; bu soru ifadesi listede yok.
+
+**Özgün yanıt (kullanıcının 2026-09-29 tarihli mesajı, değiştirilmeden):**
+
+> Ağlamak, üzülmek ya da birkaç gün yoğun kaygı yaşamak embriyonun tutunmasını engellemez; implantasyon bu tür kısa süreli duygusal dalgalanmalarla “bozulacak” kadar kırılgan bir süreç değildir. Hastalarıma bu dönemde kendilerini sürekli sakin olmak zorunda hissetmemelerini, normal günlük yaşamlarına devam etmelerini, aşırı fiziksel zorlanmadan kaçınmalarını, ilaçlarını düzenli kullanmalarını ve özellikle belirti arayıp her hissi yorumlamamaya çalışmalarını öneriyorum.
+
+**Makaleye giren düzenlenmiş yanıt (2026-09-29'da kullanıcı tarafından "onay" ile görünür kullanım onayı verildi):**
+
+> Ağlamak, üzülmek veya birkaç gün kaygı yaşamak nedeniyle embriyonun tutunmasının engellendiğini gösteren kanıt yok. Hastalarıma bu dönemde kendilerini sürekli sakin olmak zorunda hissetmemelerini, normal günlük yaşamlarını sürdürmelerini, aşırı fiziksel zorlanmadan kaçınmalarını, ilaçlarını düzenli kullanmalarını ve her bedensel belirtiyi sonuç işareti gibi yorumlamamaya çalışmalarını öneriyorum.
+
+**Anlam ve kaynak kontrolü:** Özgün yanıttaki "engellemez" kesinliği ile "implantasyon ... kırılgan ... değildir" açıklaması doğrudan klinik sonuç verisiyle doğrulanmış değildir; öneride kanıt yokluğu ifadesine çekildi. [Boivin 2011](https://pubmed.ncbi.nlm.nih.gov/21345903/) tedavi öncesi sıkıntı ve tek ART siklusundaki gebelik sonucunu inceler; transfer sonrası kısa süreli ağlamayı ölçmez. [Miller 2019](https://pubmed.ncbi.nlm.nih.gov/31085094/) 72 IVF hastasında transfer öncesi stres ölçümleriyle klinik gebelik arasında ilişki bulmadı; ağlamayı veya transferden sonraki birkaç günü doğrudan test etmedi. [ASRM 2017](https://www.asrm.org/practice-guidance/practice-committee-documents/performing-the-embryo-transfer-a-guideline-2017/) transfer sonrası yatak istirahatini önermiyor; "aşırı fiziksel zorlanma" sınırını tanımlamıyor. İlaçları düzenli kullanma ve belirti yorumlamama önerileri özgün hekim yanıtından korunmuştur.
+
+**Durum:** Hekim yanıtı alındı ve düzenlenen metnin görünür kullanımı 2026-09-29 tarihli "onay" mesajıyla onaylandı. Yanıt makalenin mevcut tek SSS yüzeyindeki transfer sonrası ağlama sorusuna, Dr. Aksoy'a açık atıfla işlendi. Diğer SSS cevapları için hekim onayı varsayılmadı. Bu kayıt commit, deploy veya yayın doğrulaması anlamına gelmez.
 
 ### asherman-sendromu (tr) — yanıt tarihi 2026-09-28
 
