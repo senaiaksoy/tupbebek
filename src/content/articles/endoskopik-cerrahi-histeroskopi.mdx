@@ -2,7 +2,7 @@
 title: "Histeroskopi Nedir? Rahim İçi Endoskopik Cerrahi Rehberi"
 seoTitle: "Histeroskopi Nedir? Rahim İçi Cerrahi"
 description: "Histeroskopi nedir, ne zaman yapılır? Polip, submüköz miyom, septum, rahim içi yapışıklık, anormal kanama ve IVF öncesi değerlendirme rehberi."
-summary: "Histeroskopi, rahim ağzından ince bir optik sistemle girilerek rahim boşluğunun doğrudan incelenmesidir. Polip, submüköz miyom ve rahim içi yapışıklıkların doğrudan değerlendirilmesi ve tedavisinde önemli bir yöntemdir. Uterin septum şüphesinde ise rahmin iç ve dış yapısını ayırt etmek için öncelikle 3D ultrason gibi görüntüleme yöntemleri gerekir; seçilmiş hastalarda histeroskopik septum kesisi uygulanabilir."
+summary: "Histeroskopi, rahim ağzından ilerletilen ince bir kamerayla rahim boşluğunun doğrudan incelenmesidir. Ultrason, SIS veya HSG'de polip, submüköz miyom ya da yapışıklık şüphesi olduğunda işe yarar; uygun lezyonlar aynı seansta çıkarılabilir. Herkese, tüp bebek öncesinde de rutin tarama olarak yapılmaz. Septum şüphesinde önce rahmin dış yapısını da gösteren 3D ultrason gibi bir görüntüleme gerekir."
 summaryReferences:
   - title: "ACOG: Rahim içi patolojilerin tanı ve tedavisinde histeroskopi"
     url: "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2020/03/the-use-of-hysteroscopy-for-the-diagnosis-and-treatment-of-intrauterine-pathology"
@@ -12,12 +12,13 @@ summaryReferences:
     url: "https://www.nice.org.uk/guidance/ng257/chapter/Procedures-used-during-in-vitro-fertilisation-IVF"
 category: "Tedavi Yöntemleri"
 contentType: "portal_article"
-templateVersion: "2026-07"
+templateVersion: "2026-09"
 status: "published"
 publishDate: 2025-03-02
-lastModified: 2026-09-25
+lastModified: 2026-09-29
 evidenceAsOf: 2026-07-26
 reviewScope: "Tanısal ve operatif histeroskopinin endikasyonları; polip, submüköz miyom, septum ve rahim içi yapışıklıklardaki rolü; IVF öncesi rutin tarama ve tekrarlayan implantasyon başarısızlığındaki yeri ACOG, ASRM, ESHRE ve NICE önerileri ile Cochrane verileri çerçevesinde değerlendirilmiştir."
+editorialMethodNote: "29 Eylül 2026 güncellemesi: Makale dili, iddia-kaynak ilişkisi ve güvenlik ifadeleri gözden geçirildi; yinelenen başlık, özet kutusu ve soru-cevap tablosu kaldırıldı. Miyom ve septum cerrahisine ilişkin ASRM ifadeleri kılavuz metniyle yeniden karşılaştırıldı. SSS bölümü, Google Türkiye arama sonuçlarındaki sorulardan seçilen ve Doç. Dr. Senai Aksoy'un yanıtladığı sorularla yenilendi."
 expertContribution:
   title: "Dr. Aksoy'un yaklaşımı"
   question: "Normal TVUSG/SIS'e rağmen histeroskopi istediğiniz bir IVF hasta profili var mı; ofis mi operatif histeroskopi mi kararını neye göre veriyorsunuz?"
@@ -107,198 +108,125 @@ references:
 ---
 
 import Accordion from "../../components/global/Accordion.astro";
-import MedicalInfoBox from '../../components/global/MedicalInfoBox.astro';
-import QuoteBlock from '../../components/global/QuoteBlock.astro';
 import InlineEvidence from '../../components/InlineEvidence.astro';
 import RevealScript from '../../components/global/RevealScript.astro';
 
-<div class="mesh-hero pt-12 pb-20 px-4 md:px-0 -mx-4 md:-mx-0 mb-12 rounded-3xl shadow-sm border border-white/40" style="background: linear-gradient(135deg, #f8fafc 0%, #eff6ff 48%, #fff7ed 100%);">
-  <div class="max-w-4xl mx-auto" data-reveal>
-    <div class="inline-block px-4 py-1 rounded-full bg-sky-100 text-sky-800 text-sm font-bold mb-4">
-      Rahim İçi Görüntüleme ve Tedavi
-    </div>
-    <h1 class="text-4xl md:text-6xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-sky-800 to-slate-900 leading-tight">
-      {frontmatter.title}
-    </h1>
-    <p class="text-xl md:text-2xl text-slate-700 font-medium max-w-2xl leading-relaxed">
-      Histeroskopi, rahim içini doğrudan görmenin ve seçilmiş sorunları aynı seansta düzeltmenin en hedefli yollarından biridir.
-    </p>
-  </div>
-</div>
-
 <div class="max-w-4xl mx-auto space-y-12 blog-content-reveal">
 
-<div data-reveal>
-<MedicalInfoBox title="Hızlı Bakış: Histeroskopinin Asıl Gücü" icon="HYS" color="blue">
-**Histeroskopi her hastada tarama testi değildir; rahim boşluğuyla ilgili gerçek bir klinik soru olduğunda değerlidir.** Ultrason, SIS veya HSG’de polip, submüköz miyom ya da yapışıklık şüphesi varsa doğrudan görüntüleme ve tedavi sağlayabilir. Uterin septum şüphesinde ise rahmin dış konturunu da değerlendiren 3D ultrason gibi görüntüleme yöntemleriyle birlikte planlanmalıdır. <InlineEvidence grade="B" />
-</MedicalInfoBox>
-</div>
-
-> IVF öncesi rutin kullanım tartışması için [IVF öncesi histeroskopi](/makaleler/ivf-oncesi-histeroskopi/) rehberi daha ayrıntılıdır. Bu sayfa işlemin kendisini, endikasyonlarını ve iyileşme sürecini açıklar.
+> Tüp bebek öncesi rutin kullanımın kanıtları [IVF öncesi histeroskopi](/makaleler/ivf-oncesi-histeroskopi/) rehberinde ayrıntılıdır. Bu sayfa işlemin nasıl yapıldığını, ne zaman düşünüldüğünü ve iyileşme sürecini açıklar.
 
 ## İçindekiler
 
 - [Histeroskopi nasıl bir işlemdir?](#nedir)
-- [Merak edilen histeroskopi soruları](#temel-sorular)
 - [Tanısal ve operatif histeroskopi farkı](#turler)
 - [Ne zaman yapılır?](#endikasyonlar)
 - [Histeroskopi nasıl yapılır?](#surec)
 - [Riskler ve güvenlik](#riskler)
 - [İyileşme ve transfer planı](#iyilesme)
-- [Sıkça sorulan sorular](#faq)
+- [Dr. Aksoy'a en sık sorulan sorular](#faq)
 
 <div data-reveal>
 <h2 id="nedir">Histeroskopi Nasıl Bir İşlemdir?</h2>
 
-Histeroskopi, rahim ağzından içeri ilerletilen ince optik kamera ile rahim iç boşluğunun görülmesidir. Rahim boşluğu sıvıyla genişletilir; böylece endometrium, tüp ağızları ve kavitenin şekli doğrudan değerlendirilir.
+Histeroskopi, rahim ağzından ilerletilen ince bir kamerayla rahim boşluğunun incelenmesidir. İşlem sırasında boşluk sıvıyla genişletilir; rahim iç zarı (endometrium), tüp ağızları ve boşluğun şekli ekranda görülür. Karında kesi yapılmaz.
 
-Şu sorunları anlamak için kullanılabilir:
-
-- Endometriyal polip
-- Submüköz miyom
-- Rahim içi yapışıklık, [Asherman sendromu](/makaleler/asherman-sendromu/)
-- Rahim içi perde, septum
-- Spiral kayması veya ipinin görünmemesi
-- Anormal uterin kanama
-- Tekrarlayan düşük veya seçilmiş infertilite durumları
-
-ASRM, infertilite değerlendirmesinde rahim içi anatomisinin önemini vurgular; histeroskopi, rahim içi patolojileri doğrudan görme ve bazılarını tedavi etme avantajı sağlar. <InlineEvidence grade="B" />
-
-<h2 id="temel-sorular">Merak Edilen Histeroskopi Soruları</h2>
-
-Rahim içi endoskopik değerlendirme (histeroskopi) hakkında en çok sorulan ve internette aranan temel başlıkları derledik.
-
-| Soru | Kısa cevap |
-| :--- | :--- |
-| **Histeroskopi nedir?** | Rahim iç boşluğunu ince kamera ile doğrudan görmeye yarayan tanı ve tedavi işlemidir. |
-| **Histeroskopi neden yapılır?** | Polip, submüköz miyom, septum, yapışıklık, anormal kanama veya IVF öncesi şüpheli rahim içi bulgular için yapılabilir. |
-| **Histeroskopi nasıl yapılır?** | Vajinal yoldan rahim içine ince kamera ile girilir; tanısal işlem kısa sürebilir, operatif işlemde anestezi gerekebilir. |
-| **Histeroskopi ne işe yarar?** | Rahim içi sorunu doğrudan göstermeye ve bazı lezyonları aynı seansta tedavi etmeye yardımcı olur. |
+Ultrason, SIS veya HSG rahim içindeki bir sorunu düşündürebilir. Histeroskopi ise o bölgeyi doğrudan gösterir ve polip, yapışıklık ya da rahim boşluğuna uzanan miyom gibi bazı lezyonların aynı seansta tedavisine olanak verir. ASRM de infertilite araştırmasında rahim boşluğunun doğru değerlendirilmesini temel adımlardan biri sayar. <InlineEvidence grade="B" />
 </div>
 
 <div data-reveal>
 <h2 id="turler">Tanısal ve Operatif Histeroskopi Farkı</h2>
 
-Histeroskopi uygulamaları, işlemin amacına ve yapılacak müdahaleye göre tanısal (ofis) ve operatif olmak üzere iki ana sınıfa ayrılır.
+Aradaki fark işlemin amacındadır: tanısal histeroskopi bakmak, operatif histeroskopi görülen sorunu düzeltmek için yapılır.
 
-| Tür | Amaç | Nerede Yapılır? | Örnek |
+| Tür | Amaç | Nerede yapılır? | Örnek |
 | :--- | :--- | :--- | :--- |
-| **Tanısal/ofis histeroskopi** | Rahim içini görmek | Muayenehane veya küçük işlem odası | Şüpheli polip var mı? Yapışıklık var mı? |
-| **Operatif histeroskopi** | Görülen sorunu tedavi etmek | Çoğu zaman ameliyathane | Polip çıkarma, septum kesme, submüköz miyom alma |
+| **Tanısal (ofis) histeroskopi** | Rahim içini doğrudan görmek | Muayenehane veya küçük işlem odası | Şüpheli polip, yapışıklık veya boşluk düzensizliği var mı? |
+| **Operatif histeroskopi** | Görülen sorunu tedavi etmek | Çoğunlukla ameliyathane | Polip veya submüköz miyom çıkarma, septum kesme, yapışıklık açma |
 
-Tanısal işlem kısa ve daha hafif olabilir. Operatif işlemde ise kullanılan aletler, işlem süresi, anestezi ve iyileşme planı değişir.
+Tanısal işlem ince bir histeroskopla yapılır; bazı hastalarda anestezi gerekmez, bazılarında ağrı kontrolü veya sedasyon planlanır. Operatif işlemde kullanılan aletler, anestezi ve takip yapılacak müdahaleye göre değişir.
 </div>
 
 <div data-reveal>
 <h2 id="endikasyonlar">Histeroskopi Ne Zaman Yapılır?</h2>
 
-Histeroskopi kararında en önemli soru şudur: Rahim iç boşluğunu doğrudan görmemiz veya aynı seansta tedavi etmemiz gereken bir durum var mı?
+Histeroskopi, rahim boşluğunu doğrudan görmeyi ya da orada bir sorunu düzeltmeyi gerektiren net bir gerekçe olduğunda yapılır. Başlıca durumlar şunlardır:
 
-Sık endikasyonlar:
+- **Anormal uterin kanama:** Ara kanama, uzamış adet veya menopoz sonrası kanamada klinik duruma göre ultrason, endometriyal örnekleme ve histeroskopi değerlendirilir. Özellikle menopoz sonrası kanamada yalnızca rahim içini görmek, gerekli doku örneklemesinin yerini tutmaz.
+- **Endometriyal polip şüphesi:** Ultrason veya SIS'te (serumla rahim boşluğunu görüntüleme) odak lezyon görülürse tanı ve gerektiğinde çıkarma için düşünülebilir.
+- **Submüköz miyomlar:** Rahim içine doğru büyüyen ve boşluğun yapısını bozan miyomların histeroskopik rezeksiyonu planlanabilir.
+- **Rahim içi yapışıklık şüphesi:** Küretaj, enfeksiyon veya cerrahi sonrasında adetin belirgin azalması, kesilmesi ya da endometriumun ince görünmesi araştırma gerektirebilir. Yapışıklık saptanırsa açılması ayrıca değerlendirilir; ayrıntılar [Asherman sendromu](/makaleler/asherman-sendromu/) rehberindedir.
+- **Uterin septum (rahim içi perde):** Önce 3D ultrasonla rahmin iç ve dış yapısı değerlendirilir. Septum doğrulanırsa, özellikle tekrarlayan düşük öyküsünde histeroskopik kesi ortak kararla düşünülebilir; yalnızca infertilite varlığında canlı doğuma katkısı kesin değildir.
+- **Spiral (RİA) sorunları:** İpi muayenede görülemeyen ya da rahim duvarına gömülmüş spiral, doğrudan görülerek çıkarılabilir.
+- **Seçilmiş tüp bebek durumları:** Yeterli ve normal rahim içi görüntülemesi bulunan kadınlarda tekrarlayan transfer başarısızlığı tek başına histeroskopi gerekçesi değildir. Önceki görüntüleme yetersizse veya rahim içi lezyon şüphesi sürüyorsa histeroskopi değerlendirilebilir.
 
-- **Anormal uterin kanama:** Ara kanama, uzamış adet veya menopoz sonrası kanamada klinik duruma göre ultrason, endometriyal örnekleme ve histeroskopi birlikte değerlendirilebilir.
-- **Polip şüphesi:** Ultrason veya SIS'te odak lezyon görülmesi
-- **Submüköz miyom:** Rahim içine uzanan miyomun çıkarılması
-- **Yapışıklık şüphesi:** Kürtaj, enfeksiyon veya rahim içi cerrahi sonrası ince endometrium
-- **Uterin septum:** Öncelikle 3D ultrasonla uterusun iç ve dış konturu değerlendirilir. Septum doğrulanırsa, özellikle tekrarlayan düşük öyküsünde histeroskopik kesi ortak karar modeliyle tartışılabilir; yalnız infertilite varlığında canlı doğum faydası kesin değildir.
-- **Spiral sorunu:** İpi görünmeyen veya yer değiştiren spiral
-- **Seçilmiş IVF/RIF durumları:** Normal ve yeterli rahim içi görüntüleme varsa RIF tek başına rutin histeroskopi endikasyonu değildir. Önceki görüntüleme yetersizse veya rahim içi patoloji şüphesi varsa histeroskopi düşünülebilir.
-
-Histeroskopik erişime uygun submüköz miyomlarda cerrahi, rahim içi boşluğun düzeltilmesi için önemli bir seçenek olabilir. Kaviteyi bozan ancak ağırlıklı olarak rahim duvarı içinde bulunan miyomlarda farklı cerrahi yaklaşımlar gerekebilir. ASRM, kaviteyi bozan miyomlarda cerrahinin klinik gebelik oranını iyileştirebileceğine dair orta düzey kanıt bildirir. <InlineEvidence grade="B" />
+Histeroskopiyle yalnızca rahim boşluğuna uzanan (submüköz) miyomlar çıkarılabilir; ağırlıklı olarak rahim kas tabakasında yer alan miyomlarda farklı bir cerrahi yaklaşım gerekebilir. [ASRM kılavuzuna](https://www.asrm.org/practice-guidance/practice-committee-documents/removal-of-myomas-in-asymptomatic-patients-to-improve-fertility-andor-reduce-miscarriage-rate-a-guideline-2017/) göre submüköz miyomun histeroskopik çıkarılması klinik gebelik oranını artırabilir; düşük ve canlı doğum üzerindeki etkisi için kanıt yetersizdir. <InlineEvidence grade="B" />
 </div>
 
 <div data-reveal>
 <h2 id="surec">Histeroskopi Nasıl Yapılır?</h2>
 
-Genellikle adet kanamasının bitiminden sonraki erken dönemde planlanır; bu dönemde endometrium ince olduğu için rahim içi daha net görülür.
+İşlem çoğunlukla adet kanaması bittikten sonraki ilk günlerde planlanır; rahim iç zarı inceyken boşluk daha net görülür. Bu zamanlama gebeliği tek başına dışlamaz, o yüzden gebelik olasılığı işlemden önce ayrıca kontrol edilir.
 
 Genel akış:
 
-1. Gebelik olasılığı ve aktif enfeksiyon dışlanır.
-2. İşlemin tanısal mı operatif mi olacağı netleştirilir.
-3. Ağrı kontrolü için gerekirse lokal anestezi, sedasyon veya genel anestezi planlanır.
-4. İnce kamera rahim ağzından rahim içine ilerletilir.
-5. Rahim içi sıvıyla genişletilir ve kavite değerlendirilir.
-6. Önceden planlanmış ve hastanın onamı alınmışsa polip, uygun submüköz miyom, yapışıklık veya septum aynı seansta tedavi edilebilir.
+1. Gebelik olasılığı ve aktif pelvik enfeksiyon dışlanır.
+2. İşlemin yalnızca tanısal mı olacağı, yoksa aynı seansta tedavi de içerip içermeyeceği netleştirilir.
+3. Gerekirse ağrı kontrolü için lokal anestezi, sedasyon veya genel anestezi planlanır.
+4. İnce kamera (histeroskop) vajinal yoldan rahim ağzına, oradan rahim içine ilerletilir.
+5. Rahim boşluğu sıvıyla genişletilir; endometrium, tüp ağızları ve olası lezyonlar ekranda incelenir.
+6. Önceden planlanmış ve onamı alınmışsa polip, uygun submüköz miyom, yapışıklık veya perde aynı seansta tedavi edilebilir.
 
-ACOG hasta bilgilendirmesinde histeroskopinin rahim içindeki sorunları tanılamak ve tedavi etmek için kullanılabileceğini; işlem öncesinde gebelik, enfeksiyon ve anestezi konularının değerlendirilmesi gerektiğini belirtir. <InlineEvidence grade="B" />
+ACOG da histeroskopiyi rahim içindeki sorunları hem tanımak hem de tedavi etmek için kullanılabilecek bir işlem olarak tanımlar. <InlineEvidence grade="B" />
 </div>
 
 <div data-reveal>
 <h2 id="riskler">Riskler ve Güvenlik</h2>
 
-Histeroskopi sık uygulanan ve çoğu hastada güvenli kabul edilen bir işlemdir. Yine de risksiz değildir.
+Histeroskopi çoğu hastada güvenle uygulanır; yine de risksiz değildir. Kısa bir ofis histeroskopisiyle geniş bir miyom ameliyatının riskleri aynı olmadığından, risk işlemin türüne ve kapsamına göre değişir.
 
-Olası riskler:
+- **Kramp ve lekelenme:** İşlemden sonraki birkaç gün adet sancısına benzer kramp veya az miktarda lekelenme olağandır.
+- **Enfeksiyon:** Seyrek görülür.
+- **Rahim duvarının zedelenmesi (perforasyon):** Seyrek görülür; oluşursa duruma göre izlem veya tedavi gerekir.
+- **Belirgin kanama:** Seyrektir; daha kapsamlı cerrahide daha çok önem kazanır.
+- **Sıvı yüklenmesi ve elektrolit bozukluğu:** Operatif işlemlerde rahmi genişletmek için kullanılan sıvı dolaşıma fazla emilebilir. Bu yüzden işlem boyunca sıvı dengesi izlenir.
+- **Anesteziye bağlı sorunlar:** Kullanılan anestezinin türüne göre değişir.
+- **Yeni yapışıklık:** Özellikle rahim iç yüzeyini geniş etkileyen operatif işlemlerden sonra gelişebilir.
 
-- Kramp ve ağrı
-- Hafif kanama veya lekelenme
-- Enfeksiyon
-- Rahim perforasyonu
-- Anlamlı kanama
-- Sıvı yüklenmesi veya elektrolit sorunu
-- Anesteziye bağlı riskler
-- Operatif işlemlerden sonra yeni yapışıklık gelişimi
-
-Risk, işlemin türüne ve kapsamına göre değişir. Tanısal işlem ile geniş tabanlı submüköz miyom çıkarımı aynı risk düzeyinde değildir. Bu nedenle “histeroskopi basit bir işlemdir” demek kadar “mutlaka yapılmalıdır” demek de eksik olur.
+İşlemden sonra kanama artarsa, ağrı şiddetlenirse, ateş veya kötü kokulu akıntı olursa gecikmeden tıbbi değerlendirme gerekir.
 </div>
 
 <div data-reveal>
 <h2 id="iyilesme">İyileşme ve Transfer Planı</h2>
 
-Tanısal/ofis histeroskopi sonrası çoğu hasta aynı gün günlük yaşama dönebilir. Birkaç gün hafif kramp veya lekelenme olabilir. Operatif histeroskopide iyileşme, yapılan işleme göre değişir.
+Tanısal (ofis) histeroskopiden sonra çoğu kadın aynı gün ya da ertesi gün olağan yaşamına döner. Operatif histeroskopide iyileşme, yapılan müdahalenin boyutuna bağlıdır. Kanama, günlük yaşam ve ilk adetle ilgili ayrıntılar aşağıdaki soru-cevap bölümündedir.
 
-Transfer veya gebelik planı açısından pratik yaklaşım:
+Transfer veya gebelik planı ise yapılan işleme göre değişir:
 
-- **Sadece tanısal işlem:** Komplikasyon yoksa çoğu hastada uzun bir bekleme gerekmez; zamanlama transfer protokolüne göre belirlenir.
-- **Küçük polip çıkarımı:** Zorunlu bekleme süresi sabit değildir; kavite görünümü, patoloji sonucu ve tedavi planına göre transfer zamanlanır.
-- **Submüköz miyom veya septum cerrahisi:** İşlemin kapsamına göre iyileşme ve kontrol değerlendirmesi gerekebilir.
-- **Yaygın yapışıklık tedavisi:** Seçilmiş hastalarda hormon desteği, bariyer yöntemi veya ikinci bakış histeroskopi değerlendirilebilir.
+- **Yalnızca tanısal işlem yapıldıysa:** Komplikasyon yoksa çoğu hastada uzun bir bekleme gerekmez; zamanlama transfer planına göre belirlenir.
+- **Küçük polip çıkarıldıysa:** Sabit bir bekleme süresi yoktur; rahim boşluğunun görünümü, patoloji sonucu ve tedavi planı birlikte değerlendirilir.
+- **Submüköz miyom veya septum cerrahisi yapıldıysa:** İyileşme ve kontrol gereksinimi işlemin kapsamına göre belirlenir. Septum kesisinden sonra [ASRM](https://www.asrm.org/practice-guidance/practice-committee-documents/evidence-based-diagnosis-and-treatment-for-uterine-septum-a-guideline-2024/), zayıf kanıta dayanan bir öneriyle, fertilite tedavisine 1–2 ay içinde geçilebileceğini belirtir.
+- **Geniş rahim içi yapışıklık (Asherman) açıldıysa:** Yapışıklığın yeniden oluşup oluşmadığı, gerektiğinde kontrol histeroskopisiyle değerlendirilir; transfer zamanı buna göre planlanır.
 
-Kişisel takvimi işlem notu belirler: hangi lezyonun alındığı, rahim içi yüzeyin ne kadar etkilendiği, kanama, enfeksiyon riski ve sonraki ultrason/SIS bulgusu önemlidir.
+Kişisel takvimi ameliyat notu belirler: çıkarılan lezyonun niteliği, rahim iç yüzeyinin ne kadar etkilendiği ve sonraki döngüde endometriumun nasıl geliştiği birlikte değerlendirilir.
 </div>
 
 <div data-reveal>
-<QuoteBlock>
-Histeroskopi kararında amaç rahim içini “meraktan” görmek değil, tedavi kararını değiştirecek bir soruyu yanıtlamaktır.
-</QuoteBlock>
-</div>
+<h2 id="faq">Dr. Aksoy'a en sık sorulan sorular</h2>
 
-<div data-reveal>
-<h2 id="faq">Sıkça Sorulan Sorular</h2>
+Bu bölümdeki yanıtlar Doç. Dr. Senai Aksoy'a aittir.
 
-Histeroskopi öncesi hazırlık, işlem süreci, ağrı durumu ve sonrasındaki hamilelik planlamasına dair sıkça sorulan soruları aşağıda yanıtladık.
-
-<Accordion title="Histeroskopi ağrılı mı?">
-Ofis histeroskopisinde kramp tarzı ağrı olabilir; çoğu zaman kısa sürer. Operatif histeroskopide sedasyon veya genel anestezi tercih edilebilir. Ağrı yönetimi işlem türüne ve hastanın konforuna göre planlanır.
+<Accordion title="Histeroskopi sonrası kanama kaç gün normal kabul edilir; hangi durumlarda kliniğe başvurulmalıdır?">
+Histeroskopi sonrası birkaç gün hafif kanama veya lekelenme normaldir; bazı hastalarda, özellikle polip veya miyom çıkarılması gibi operatif işlemlerden sonra 7–10 güne kadar uzayabilir. Kanamanın giderek artması, saatte 1 ped dolduracak düzeye gelmesi, büyük pıhtılar, şiddetlenen karın ağrısı, ateş veya [kötü kokulu akıntı](/makaleler/akinti-kasinti-koku/) varsa kliniğe başvurulmalıdır ([ACOG](https://www.acog.org/womens-health/faqs/hysteroscopy)).
 </Accordion>
 
-<Accordion title="Histeroskopi kaç dakika sürer?">
-Tanısal işlemler çoğu zaman kısa sürer. Operatif işlemlerde polip, miyom, septum veya yapışıklığın durumuna göre süre uzayabilir.
+<Accordion title="Histeroskopiden sonra cinsel ilişki ve günlük hayata dönüş için ne kadar beklemek gerekir?">
+Tanısal histeroskopiden sonra çoğu hasta ertesi gün normal günlük yaşamına dönebilir. Duş genellikle aynı gün yapılabilir; cinsel ilişki için ise en azından kanama ve ağrının bitmesini, pratikte çoğunlukla yaklaşık 1 hafta beklemeyi öneririm. Operatif histeroskopide çıkarılan dokunun büyüklüğüne ve işlemin kapsamına göre bu süreyi 1–2 haftaya veya gerektiğinde daha uzun bir süreye çıkarabiliriz ([ACOG](https://www.acog.org/womens-health/faqs/hysteroscopy)).
 </Accordion>
 
-<Accordion title="Histeroskopi sonrası kanama normal mi?">
-Hafif lekelenme veya kramp birkaç gün sürebilir. Şiddetli kanama, ateş, [kötü kokulu akıntı](/makaleler/akinti-kasinti-koku/) veya giderek artan ağrı varsa doktorla görüşülmelidir.
-</Accordion>
-
-<Accordion title="Histeroskopi tüp bebek öncesi herkese yapılır mı?">
-Hayır. Normal ve yeterli rahim içi görüntüleme varsa ilk IVF öncesinde veya yalnızca tekrarlayan transfer başarısızlığı nedeniyle rutin histeroskopi önerilmez. Görüntüleme yetersizse veya rahim içi patoloji şüphesi varsa değerlendirilebilir.
-</Accordion>
-
-<Accordion title="Histeroskopi ile miyom alınır mı?">
-Rahim içine uzanan submüköz miyomlar histeroskopik olarak alınabilir. Rahim duvarı içinde veya rahim dışına büyüyen miyomlarda laparoskopi veya açık cerrahi gerekebilir.
-</Accordion>
-
-<Accordion title="Histeroskopi sırasında biyopsi yapılabilir mi?">
-Evet. Şüpheli endometrium veya anormal kanama varlığında histeroskopi sırasında hedefli biyopsi alınabilir. Özellikle menopoz sonrası kanamada yalnızca rahim içinin görülmesi, gerekli endometriyal örneklemenin yerini her zaman tutmaz.
-</Accordion>
-
-<Accordion title="Histeroskopi sonrası ne zaman hamile kalınır?">
-Sadece tanısal işlem sonrası bekleme kısa olabilir. Polip, miyom, septum veya yapışıklık tedavisi yapıldıysa iyileşme süresi işleme göre kişisel planlanır.
+<Accordion title="Histeroskopi sonrası ilk adet genellikle ne zaman beklenir; gecikme normal midir?">
+Histeroskopi sonrası ilk adet çoğunlukla kişinin normal siklus zamanına yakın gelir; ancak özellikle endometriuma müdahale edilmişse birkaç gün, bazen birkaç hafta gecikme ve ilk adetin miktarında artma veya azalma görülebilir. Tek başına küçük bir zamanlama değişikliği genellikle endişe vermez; belirgin gecikme, çok yoğun kanama veya birkaç siklus devam eden düzensizlik varsa değerlendirmek gerekir.
 </Accordion>
 </div>
-
-
 
 <div data-reveal class="mt-12 bg-slate-50 p-8 rounded-3xl border border-slate-200">
 **Sizin İçin Seçtiğimiz Diğer Rehberler:**

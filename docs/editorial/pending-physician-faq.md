@@ -11,6 +11,58 @@ Doğrulama notu (2026-09-29): Search Console `sc-domain:tupbebek.com`, 28 Hazira
 
 ## Yanıtlanan sorular (editoryal kayıt)
 
+### endoskopik-cerrahi-histeroskopi (tr) — kanama, günlük yaşama dönüş ve ilk adet soruları; yanıt tarihi 2026-09-29
+
+**Soru 1 (Kanama ve acil başvuru):** Histeroskopi sonrasında kanama veya lekelenme kaç gün normal kabul edilir; hastanın hangi belirtilerde hemen kliniğe başvurması gerekir?
+
+**Arama verisi (Soru 1):** Search Console `sc-domain:tupbebek.com`, 28 Haziran–27 Eylül 2026, `endoskopik-cerrahi-histeroskopi` sayfa filtresi: 147 gösterim, 15 görünür sorgu; bu soru listede yok. Google Türkiye ["histeroskopi sonrası kanama" araması](https://www.google.com/search?q=histeroskopi+sonras%C4%B1+kanama&hl=tr&gl=tr), 2026-09-29, "Diğer sorular" ham ifadesi: "Histeroskopiden sonra kanama kaç gün sürer?" Editoryal soru bu ifadeye başvuru belirtilerini ekler. PAA sayısal arama hacmi vermez.
+
+**Özgün yanıt 1 (kullanıcının 2026-09-29 tarihli mesajı, değiştirilmeden):**
+
+> Histeroskopi sonrası birkaç gün hafif kanama veya lekelenme normaldir; bazı hastalarda, özellikle polip veya miyom çıkarılması gibi operatif işlemlerden sonra 7–10 güne kadar uzayabilir. Kanamanın giderek artması, saatte 1 ped dolduracak düzeye gelmesi, büyük pıhtılar, şiddetlenen karın ağrısı, ateş veya kötü kokulu akıntı varsa kliniğe başvurulmalıdır. [ACOG](https://www.acog.org/womens-health/faqs/hysteroscopy?utm_source=chatgpt.com)
+
+**Makaleye giren düzenlenmiş yanıt 1:**
+
+> Histeroskopi sonrası birkaç gün hafif kanama veya lekelenme normaldir; bazı hastalarda, özellikle polip veya miyom çıkarılması gibi operatif işlemlerden sonra 7–10 güne kadar uzayabilir. Kanamanın giderek artması, saatte 1 ped dolduracak düzeye gelmesi, büyük pıhtılar, şiddetlenen karın ağrısı, ateş veya [kötü kokulu akıntı](/makaleler/akinti-kasinti-koku/) varsa kliniğe başvurulmalıdır ([ACOG](https://www.acog.org/womens-health/faqs/hysteroscopy)).
+
+**Anlam ve kaynak kontrolü 1:** Kaynak linkindeki `?utm_source=chatgpt.com` parametresi temizlendi. Akıntı ifadesine site içi ilgili rehber linki verildi; hekimin verdiği gün ve başvuru eşiği korundu. Codex'in eklediği "gecikmeden" sözcüğü özgün yanıtta olmadığı için 2026-09-29 denetiminde kaldırıldı. ACOG hasta bilgilendirmesi ağır kanama, ateş ve titremede başvuruyu destekler; 7–10 gün ve saatte 1 ped ayrıntılarını birebir doğrulamaz. Görünür kullanım onayı: bkz. aşağıdaki durum notu.
+
+---
+
+**Soru 2 (İyileşme ve kısıtlamalar):** Histeroskopiden sonra cinsel ilişki, banyo ve günlük hayata dönüş için hastalarınıza önerdiğiniz güvenli bekleme süresi nedir; bu süre tanısal ve operatif işlemde nasıl değişir?
+
+**Arama verisi (Soru 2):** Aynı Search Console mülkü, dönem ve sayfa filtresinde bu soru görünmüyor. Google Türkiye ["histeroskopi sonrası" araması](https://www.google.com/search?q=histeroskopi+sonras%C4%B1&hl=tr&gl=tr), 2026-09-29, "Diğer sorular" ham ifadeleri: "Histeroskopiden ne kadar sonra ilişkiye girilir?" ve "Histeroskopiden sonra nelere dikkat edilmeli?" Editoryal soru günlük yaşama dönüşü de kapsar; PAA hacim sıralaması değildir.
+
+**Özgün yanıt 2 (kullanıcının 2026-09-29 tarihli mesajı, değiştirilmeden):**
+
+> Tanısal histeroskopiden sonra çoğu hasta ertesi gün normal günlük yaşamına dönebilir. Duş genellikle aynı gün yapılabilir; cinsel ilişki için ise en azından kanama ve ağrının bitmesini, pratikte çoğunlukla yaklaşık 1 hafta beklemeyi öneririm. Operatif histeroskopide çıkarılan dokunun büyüklüğüne ve işlemin kapsamına göre bu süreyi 1–2 haftaya veya gerektiğinde daha uzun bir süreye çıkarabiliriz. [ACOG](https://www.acog.org/womens-health/faqs/hysteroscopy?utm_source=chatgpt.com)
+
+**Makaleye giren düzenlenmiş yanıt 2:**
+
+> Tanısal histeroskopiden sonra çoğu hasta ertesi gün normal günlük yaşamına dönebilir. Duş genellikle aynı gün yapılabilir; cinsel ilişki için ise en azından kanama ve ağrının bitmesini, pratikte çoğunlukla yaklaşık 1 hafta beklemeyi öneririm. Operatif histeroskopide çıkarılan dokunun büyüklüğüne ve işlemin kapsamına göre bu süreyi 1–2 haftaya veya gerektiğinde daha uzun bir süreye çıkarabiliriz ([ACOG](https://www.acog.org/womens-health/faqs/hysteroscopy)).
+
+**Anlam ve kaynak kontrolü 2:** Kaynak linkindeki `?utm_source=chatgpt.com` parametresi temizlendi. Hekimin önerileri korundu. ACOG hasta bilgilendirmesi cinsel ilişkiye ne zaman dönüleceğinin hekimle görüşülmesini söyler; 1–2 haftalık süreyi birebir desteklemez. Görünür kullanım onayı: bkz. aşağıdaki durum notu.
+
+---
+
+**Soru 3 (İlk adet ve gecikme):** Histeroskopi sonrası ilk adet genellikle ne zaman beklenir; adetin gecikmesi veya miktarının değişmesi olağan mıdır?
+
+**Arama verisi (Soru 3):** Aynı Search Console mülkü, dönem ve sayfa filtresinde bu soru görünmüyor. Google Türkiye ["histeroskopi sonrası" araması](https://www.google.com/search?q=histeroskopi+sonras%C4%B1&hl=tr&gl=tr), 2026-09-29, "Diğer sorular" ham ifadesi: "Histeroskopi sonrası ne zaman adet olunur?" Editoryal soru gecikme durumunu da kapsar; PAA hacim sıralaması değildir.
+
+**Özgün yanıt 3 (kullanıcının 2026-09-29 tarihli mesajı, değiştirilmeden):**
+
+> Histeroskopi sonrası ilk adet çoğunlukla kişinin normal siklus zamanına yakın gelir; ancak özellikle endometriuma müdahale edilmişse birkaç gün, bazen birkaç hafta gecikme ve ilk adetin miktarında artma veya azalma görülebilir. Tek başına küçük bir zamanlama değişikliği genellikle endişe vermez; belirgin gecikme, çok yoğun kanama veya birkaç siklus devam eden düzensizlik varsa değerlendirmek gerekir.
+
+**Makaleye giren düzenlenmiş yanıt 3:**
+
+> Histeroskopi sonrası ilk adet çoğunlukla kişinin normal siklus zamanına yakın gelir; ancak özellikle endometriuma müdahale edilmişse birkaç gün, bazen birkaç hafta gecikme ve ilk adetin miktarında artma veya azalma görülebilir. Tek başına küçük bir zamanlama değişikliği genellikle endişe vermez; belirgin gecikme, çok yoğun kanama veya birkaç siklus devam eden düzensizlik varsa değerlendirmek gerekir.
+
+**Anlam ve kaynak kontrolü 3:** Codex'in son cümlede yaptığı "hekim tarafından değerlendirilmelidir" değişikliği 2026-09-29 denetiminde geri alındı; yanıt özgün metinle birebir aynıdır. Görünür kullanım onayı: bkz. aşağıdaki durum notu.
+
+**Durum:** Makaleye giren üç yanıtın görünür kullanımı, Dr. Aksoy'un 2026-09-30 tarihli "onay" mesajıyla onaylandı; makale `published` durumunda tutuldu. Bu kayıt commit, deploy veya yayın doğrulaması anlamına gelmez.
+
+---
+
 ### duygusal-dayaniklik-rehberi (tr) — antidepresan ve tükenmişlik soruları; yanıt tarihi 2026-09-29
 
 **Soru 1:** Tüp bebek tedavisi sırasında antidepresan kullanan veya yeni başlaması gereken bir hastada yaklaşımınız nedir; ilacı kesmek mi yoksa devam etmek mi daha güvenlidir?
