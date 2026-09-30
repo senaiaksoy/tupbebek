@@ -115,6 +115,20 @@ Doğrulama notu (2026-09-29): Search Console `sc-domain:tupbebek.com`, 28 Hazira
 
 ---
 
+### endoskopik-cerrahi-histeroskopi (tr) — gövde katkısı, `#iyilesme`; onay tarihi 2026-09-30
+
+**Kaynak:** Dış model (ChatGPT) okur değerlendirmesinin önerdiği birinci tekil cümle. Dr. Aksoy 2026-09-30'da bu oturumdaki seçimle cümleyi kendi sözü olarak onayladı; model cümleyi hekim adına üretmedi, öneri hekime gösterildi ve hekim seçti.
+
+**Makaleye giren cümle (değiştirilmeden):**
+
+> Transfer zamanını takvimden çok, işlem sırasında ne yaptığımız belirler. Küçük bir polip çıkarılmasıyla geniş bir yapışıklığın açılması aynı şekilde değerlendirilmez; gerektiğinde sonraki ultrason veya SIS sonucunu da görmeden transfer planlamam.
+
+**Yerine geçtiği cümle:** "Kişisel takvimi işlem notu belirler: çıkarılan lezyonun niteliği, rahim iç yüzeyinin ne kadar etkilendiği, kanama ve enfeksiyon riski, sonraki ultrason veya SIS bulgusu ve sonraki döngüde endometriumun nasıl geliştiği birlikte değerlendirilir."
+
+**Anlam kontrolü:** Kanama ve enfeksiyon riski ile sonraki döngüde endometrium gelişimi ölçütleri bu cümleden çıktı; Dr. Aksoy bu farkı görerek seçti. Endometrium ve kontrol değerlendirmesi aynı bölümdeki Asherman ve polip maddelerinde kısmen karşılanıyor; kanama/enfeksiyon belirtileri "Riskler ve Güvenlik" bölümünde ve SSS'de duruyor.
+
+---
+
 ### duygusal-dayaniklik-rehberi (tr) — antidepresan ve tükenmişlik soruları; yanıt tarihi 2026-09-29
 
 **Soru 1:** Tüp bebek tedavisi sırasında antidepresan kullanan veya yeni başlaması gereken bir hastada yaklaşımınız nedir; ilacı kesmek mi yoksa devam etmek mi daha güvenlidir?
