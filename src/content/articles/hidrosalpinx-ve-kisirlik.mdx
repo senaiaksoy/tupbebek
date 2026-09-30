@@ -10,12 +10,12 @@ summaryReferences:
     url: "https://pubmed.ncbi.nlm.nih.gov/33091963/"
 category: "Kadın Sağlığı"
 contentType: "portal_article"
-templateVersion: "2026-07"
+templateVersion: "2026-09"
 status: "published"
 publishDate: 2025-01-06
-lastModified: 2026-09-25
+lastModified: 2026-09-30
 evidenceAsOf: 2026-07-26
-reviewScope: "Hidrosalpinx varlığında IVF öncesi salpenjektomi, proksimal tüp kapatma, skleroterapi ve aspirasyonun klinik gebelik ve canlı doğum sonuçları üzerindeki etkileri; ASRM görüşü, Cochrane derlemesi ve 2025 ağ meta-analizi çerçevesinde değerlendirilmiştir."
+reviewScope: "Hidrosalpinx varlığında IVF öncesi salpenjektomi, proksimal tüp kapatma, skleroterapi ve aspirasyonun klinik gebelik ve canlı doğum sonuçları üzerindeki etkileri; ASRM görüşü, Cochrane derlemesi ve 2025 ağ meta-analizi çerçevesinde değerlendirilmiştir. Sık sorulan sorular bölümü 30 Eylül 2026'da Dr. Aksoy'un doğrulanmış klinik yanıtlarıyla güncellenmiştir."
 expertContribution:
   title: "Dr. Aksoy'un yaklaşımı"
   question: "Salpenjektomi, proksimal oklüzyon ve önce embriyo dondurma arasında seçimi hangi hastada nasıl yapıyorsunuz; yalnız HSG'de görülen, ultrasonda izlenmeyen hidrosalpinxte de cerrahi öneriyor musunuz?"
@@ -63,7 +63,7 @@ references:
     pmid: "33091963"
     url: "https://pubmed.ncbi.nlm.nih.gov/33091963/"
   - title: "Hydrosalpinx treatment before in-vitro fertilization: systematic review and network meta-analysis"
-    authors: "Pérez-Milán F, Caballero-Campo M, De la Oliva J et al."
+    authors: "Pérez-Milán F, Caballero-Campo M, Carrera-Roig M et al."
     journal: "Ultrasound in Obstetrics & Gynecology"
     year: 2025
     doi: "10.1002/uog.27697"
@@ -79,42 +79,18 @@ references:
 ---
 
 import Accordion from "../../components/global/Accordion.astro";
-import MedicalInfoBox from '../../components/global/MedicalInfoBox.astro';
 import InlineEvidence from '../../components/InlineEvidence.astro';
-
-<div class="mesh-hero pt-12 pb-20 px-4 md:px-0 -mx-4 md:-mx-0 mb-12 rounded-3xl shadow-sm border border-white/40" style="background: linear-gradient(135deg, #eff6ff 0%, #ecfeff 48%, #fff7ed 100%);">
-  <div class="max-w-4xl mx-auto" data-reveal>
-    <div class="inline-block px-4 py-1 rounded-full bg-blue-100 text-blue-800 text-sm font-bold mb-4">
-      Tüp Faktörü, HSG ve IVF Hazırlığı
-    </div>
-    <h1 class="text-4xl md:text-6xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-800 to-cyan-700 leading-tight">
-      {frontmatter.title}
-    </h1>
-    <p class="text-xl md:text-2xl text-slate-700 font-medium max-w-2xl leading-relaxed">
-      Hidrosalpinx kararında hedef, tüpü mutlaka “açmak” değil, embriyonun yerleşeceği rahim ortamını korumaktır.
-    </p>
-  </div>
-</div>
 
 <div class="max-w-4xl mx-auto space-y-12 blog-content-reveal">
 
-<div data-reveal>
-<MedicalInfoBox title="Hızlı Bakış: IVF Öncesi En Kritik Soru" icon="IVF" color="blue">
-Hidrosalpinx, fallop tüpünün sıvıyla genişlemesidir. Bu sıvı rahim içine doğru akarsa IVF'de embriyo tutunmasını zorlaştırabilir. ASRM, hidrosalpinx varlığında IVF öncesi salpenjektomi veya proksimal tüp kapatma seçeneklerinin düşünülmesini destekler; Cochrane derlemesi de salpenjektominin klinik gebelik oranını artırabileceğini bildirir. <InlineEvidence grade="B" />
-</MedicalInfoBox>
-</div>
-
-> Bu rehber, [kadın infertilitesi](/kadin-infertilitesi/) konu haritasındaki **tüp faktörü** başlığını derinleştirir. Endometriozis eşlik ediyorsa [endometriozis ve kısırlık](/makaleler/endometriozis-akilli-stratejiler/), transfer planı gündemdeyse [taze ve dondurulmuş embriyo transferi](/makaleler/taze-dondurulmus-transfer/) rehberleri tamamlayıcıdır.
-
 ## İçindekiler
 
-- [Hidrosalpinx nedir?](#nedir)
-- [Merak edilen hidrosalpinx soruları](#temel-sorular)
-- [Neden gebeliği zorlaştırır?](#etki)
-- [Tanı nasıl konur?](#tani)
-- [IVF öncesi tedavi seçenekleri](#tedavi)
-- [Karar nasıl kişiselleştirilir?](#karar)
-- [Sık sorulan sorular](#faq)
+1. [Hidrosalpinx nedir?](#nedir)
+2. [Neden gebeliği zorlaştırır?](#etki)
+3. [Tanı nasıl konur?](#tani)
+4. [IVF öncesi tedavi seçenekleri](#tedavi)
+5. [Karar nasıl kişiselleştirilir?](#karar)
+6. [Dr. Aksoy'a en sık sorulan sorular](#faq)
 
 <h2 id="nedir">Hidrosalpinx Nedir?</h2>
 
@@ -141,73 +117,61 @@ Hidrosalpinx, fallop tüpünün uç kısmında tıkanıklık gelişmesi ve tüp 
   </div>
 </div>
 
-Hidrosalpinx her zaman iki tüpte birden olmaz. Tek taraflı olsa bile IVF sonuçlarını etkileyebilir; çünkü sorun yalnızca yumurtanın tüpten geçememesi değil, tüp içindeki sıvının rahim içi ortamı bozabilmesidir.
-
-<h2 id="temel-sorular">Merak Edilen Hidrosalpinx Soruları</h2>
-
-Hidrosalpinx (hidrosalpinks) tanısı alan hastaların en çok merak ettiği temel konuları ve en çok merak edilen soruları kısa yanıtlarla derledik.
-
-| Soru | Kısa cevap |
-| :--- | :--- |
-| **Hidrosalpenks nedir?** | “Hidrosalpenks”, hidrosalpinks için internette sık kullanılan bir yazım varyantıdır. Terim, fallop tüpünün sıvıyla genişlemesini ifade eder. |
-| **Hidrosalpenks tedavisi nedir?** | IVF öncesi belirgin olgularda salpenjektomi, proksimal tüp kapatma veya seçilmiş durumlarda aspirasyon/skleroterapi tartışılabilir. |
-| **Hidrosalpenks ameliyatı sonrası hamile kalınır mı?** | Gebelik mümkün olabilir; ancak olasılık yaş, diğer tüp, sperm, rezerv ve IVF planına göre değişir. |
-| **Hidrosalpenks USG'de görülür mü?** | Belirgin sıvı dolu tüp ultrasonla görülebilir; karar çoğu zaman HSG ve klinik öyküyle birlikte verilir. |
+Hidrosalpinx tek tüpte de gelişebilir. Diğer tüp açık olsa bile rahme ulaşan sıvı, IVF'de embriyonun tutunmasını zorlaştırabilir ([ASRM 2021](https://pubmed.ncbi.nlm.nih.gov/33642065/)).
 
 <h2 id="etki">Neden Gebeliği Zorlaştırır?</h2>
 
-Hidrosalpinx gebeliği birkaç yolla etkileyebilir:
+Tüpün tıkanması doğal gebeliği zorlaştırır. IVF'de ise tüpler kullanılmasa bile hidrosalpinx rahim içi ortamı etkileyebilir:
 
-- **Mekanik engel:** Tüp tıkalıysa yumurta ve spermin karşılaşması zorlaşır.
-- **Rahim içine sıvı akışı:** Tüp içindeki sıvı rahim içine ulaşırsa embriyonun tutunmasını bozabilir.
-- **Enflamatuar ortam:** Geçirilmiş enfeksiyon veya yapışıklıklar tüp-yumurtalık ilişkisini etkileyebilir.
-- **Dış gebelik riski:** Tüp kısmen hasarlıysa embriyo rahme ulaşmadan tüpte yerleşebilir.
+- **Tüpün tıkanması:** Tüpün dış ucu kapalıysa yumurta ve sperm o tüpte doğal yoldan buluşamaz. Diğer tüpün durumu da önemlidir.
+- **Rahme sıvı akışı:** Biriken sıvı rahme ulaşırsa embriyonun tutunmasını zorlaştırabilir. Sıvının embriyoyu rahimden uzaklaştırması veya tutunma ortamını etkilemesi olası açıklamalardır; tek bir mekanizma kesinleşmiş değildir ([ASRM 2021](https://pubmed.ncbi.nlm.nih.gov/33642065/)).
+- **Dış gebelik:** Hasarlı tüpte doğal gebelik oluşursa embriyo rahim yerine tüpe yerleşebilir.
 
-Bu yüzden hidrosalpinx, özellikle IVF öncesi ayrı bir başlık olarak değerlendirilir. IVF tüpleri baypas eder; ancak hidrosalpinx sıvısı rahim içine akıyorsa transfer sonucunu yine etkileyebilir. <InlineEvidence grade="B" />
+Bu nedenle IVF planında tüpün yalnızca açık olup olmadığına değil, rahim içine sıvı geçişi olasılığına da bakılır. Özellikle ultrasonda görülen hidrosalpinxte olumsuz IVF sonuçlarına ilişkin kanıt daha güçlüdür. <InlineEvidence grade="B" />
 
 <figure class="my-8">
   <img src="/images/makaleler/hidrosalpinx-mekanizma.webp" alt="Sağlıklı tüp ve hidrosalpinks karşılaştırması: mekanik tıkanıklık, sıvının rahim içine geri akışı ve embriyo tutunmasında bozulma" width="1200" height="675" loading="lazy" class="rounded-2xl border border-slate-200" />
-  <figcaption class="text-sm text-slate-600 mt-3 text-center italic">Hidrosalpinks, mekanik tıkanıklık ve tüp sıvısının rahim içi ortam üzerindeki etkileri dahil olmak üzere birden fazla mekanizmayla gebelik şansını azaltabilir.</figcaption>
+  <figcaption class="text-sm text-slate-600 mt-3 text-center italic">Tüp tıkanıklığı doğal gebeliği zorlaştırabilir; rahme ulaşan sıvı ise IVF sonucunu etkileyebilir. Çizim olası mekanizmaları gösterir.</figcaption>
 </figure>
 
 <h2 id="tani">Tanı Nasıl Konur?</h2>
 
-Tanıda tek bir test her zaman yeterli olmayabilir. Klinik öykü, ultrason bulgusu ve tüp açıklığı testleri birlikte yorumlanır.
+Hidrosalpinx tanısında tek bir görüntüleme yöntemi her zaman kesin karar için yeterli olmayabilir. Klinik öykü, ultrason bulguları ve tüp açıklığı testleri birlikte değerlendirilir.
 
-| Test | Ne Gösterir? | Not |
-| --- | --- | --- |
-| **Transvajinal ultrason** | Genişlemiş, sıvı dolu tüpü gösterebilir | Belirgin hidrosalpinxte güçlü ipucu verir |
-| **HSG** | Rahim boşluğu ve tüplerin açık/kapalı durumunu değerlendirir | ASRM, tüp açıklığının infertilite değerlendirmesinde özel olarak ele alınmasını önerir ([ASRM 2021](https://pubmed.ncbi.nlm.nih.gov/34607703/)) |
-| **SIS / HyCoSy** | Sıvı veya kontrastla tüp geçişini değerlendirebilir | Operatör deneyimine bağlıdır |
-| **Laparoskopi** | Tüp, yapışıklık ve endometriozisi doğrudan gösterebilir | Rutin ilk test değildir; cerrahi plan varsa değerlidir |
+| İnceleme | Ne Gösterir? | Klinik Önemi |
+| :--- | :--- | :--- |
+| **Transvajinal ultrason (TVUS)** | Genişlemiş, içi sıvı dolu tüp yapısını gösterebilir | Ultrasonda belirgin görülen hidrosalpinxin IVF başarısını düşürdüğüne dair kanıtlar güçlüdür. |
+| **Rahim filmi (HSG)** | Rahim boşluğu ile tüplerin şeklini ve açıklığını değerlendirir | Tüp açıklığı için ilk basamak testlerden biridir ([ASRM 2021](https://pubmed.ncbi.nlm.nih.gov/34607703/)). |
+| **Serumlu ultrason (SIS) / kontrastlı ultrason (HyCoSy)** | SIS rahim boşluğunu gösterir; karında sıvı görülmesi en az bir tüpün açık olabileceğini düşündürür. HyCoSy tüp geçişini kontrastla değerlendirir. | SIS tek başına hangi tüpün açık olduğunu göstermez; HyCoSy sonucu uygulayıcının deneyiminden etkilenebilir ([ASRM 2021](https://pubmed.ncbi.nlm.nih.gov/34607703/)). |
+| **Laparoskopi** | Tüpleri, pelvik yapışıklıkları ve endometriozisi doğrudan gösterir | Rutin ilk tanı aracı değildir; cerrahi tedavi planlandığında kesin değerlendirme sağlar. |
 
-HSG'de iki taraflı tıkanıklık şüphesi çıkarsa, bazen geçici tüp spazmı veya teknik nedenler sonucu etkileyebilir. Bu nedenle karar, tek bir rapor cümlesine değil bütün tabloya göre verilmelidir. <InlineEvidence grade="B" />
+HSG'de özellikle tüpün rahme yakın kısmında görülen tıkanıklık, geçici kasılma veya teknik nedenlerle yanlış pozitif olabilir ([ASRM 2021](https://pubmed.ncbi.nlm.nih.gov/34607703/)). Bu, tüpün dış ucunda sıvıyla genişlemiş görünümle aynı bulgu değildir. Şüpheli bir hidrosalpinx için cerrahi kararı, film, ultrason ve klinik öykü birlikte değerlendirilerek verilir. <InlineEvidence grade="B" />
 
 <h2 id="tedavi">IVF Öncesi Tedavi Seçenekleri</h2>
 
-Hidrosalpinx saptanan hastalarda IVF transferi öncesinde gebelik şansını artırmak amacıyla uygulanan cerrahi ve alternatif tedavi yaklaşımları şunlardır:
+Ultrasonda belirgin hidrosalpinx varsa IVF transferinden önce tüpün çıkarılması veya rahimle bağlantısının kesilmesi değerlendirilir. Cochrane derlemesinde tüpün alınması klinik gebeliği olasılıkla artırırken, canlı doğum ve cerrahi zararlar için veri yetersizdir ([Cochrane 2020](https://pubmed.ncbi.nlm.nih.gov/33091963/)). Seçenekler, ameliyatın güçlüğüne ve gebelik planına göre değişir:
 
-### Salpenjektomi
+### Salpenjektomi (Tüpün Alınması)
 
-Salpenjektomi, hasarlı tüpün alınmasıdır. Hidrosalpinx belirginse ve cerrahi risk kabul edilebilir düzeydeyse IVF öncesi en sık tartışılan seçenektir. Amaç, sıvının rahim içine akmasını engellemek ve transfer ortamını iyileştirmektir.
+Salpenjektomi, sıvı dolu hasarlı tüpün çoğunlukla laparoskopiyle çıkarılmasıdır. Böylece tüpten rahme sıvı akışı kesilir. IVF öncesinde başlıca cerrahi seçeneklerden biridir ([ASRM 2021](https://pubmed.ncbi.nlm.nih.gov/33642065/)).
 
-Cerrahi kararında yumurtalık rezervi de önemlidir. Tüp, yumurtalığa yakın damarlarla komşudur; bu yüzden daha önce cerrahi geçirmiş, yapışıklığı fazla olan veya rezervi düşük hastalarda ameliyat tekniği ve zamanlama dikkatle planlanmalıdır.
+Tüp, yumurtalığa yakın damarlarla komşudur. Yumurtalık rezervi sınırlıysa, önceki ameliyatlar veya yoğun yapışıklıklar varsa cerrahinin yumurtalık dolaşımına etkisi ve zamanlaması özellikle tartışılır.
 
-### Proksimal Tüp Kapatma
+### Proksimal Tüp Kapatma (Oklüzyon)
 
-Proksimal tüp kapatma, tüpün rahme yakın kısmının kapatılmasıdır. Böylece hidrosalpinx sıvısının rahim içine akması önlenir. ASRM görüşü, proksimal tüp kapatmanın hidrosalpinx sıvısının rahim boşluğuna ulaşmasını engelleyebileceğini ve IVF gebelik sonuçlarında salpenjektomiye alternatif olabileceğini belirtir. Ancak yöntemleri doğrudan karşılaştıran kanıtların kesinliği sınırlıdır. <InlineEvidence grade="B" />
+Proksimal tüp kapatmada tüpün rahme yakın bölümü kapatılır; tüp yerinde kalır. Amaç, biriken sıvının rahme ulaşmasını önlemektir. ASRM bunu salpenjektomiye alternatif olarak değerlendirir; iki yöntemin karşılaştırmalı üstünlüğü kesin değildir ([ASRM 2021](https://pubmed.ncbi.nlm.nih.gov/33642065/), [Cochrane 2020](https://pubmed.ncbi.nlm.nih.gov/33091963/)). <InlineEvidence grade="B" />
 
-Bu yöntem özellikle tüpü almak teknik olarak riskliyse veya yoğun yapışıklık bekleniyorsa gündeme gelebilir. Ancak kapatma sonrasında tüpteki sıvı genişlemeye devam edebilir; bu olasılık hastaya açıkça anlatılmalıdır.
+Yoğun yapışıklıklar tüpü çıkarmayı güçleştiriyorsa bu seçenek konuşulabilir. Tüp yerinde kaldığı için sıvı birikiminin sürmesi veya artması olasılığı da değerlendirilir.
 
-### Aspirasyon ve Skleroterapi
+### Sıvı Aspirasyonu ve Skleroterapi
 
-Ultrason eşliğinde aspirasyon, tüpteki sıvının iğneyle boşaltılmasıdır. Skleroterapi ise sıvı boşaltıldıktan sonra tüp içinde tekrar sıvı birikimini azaltmayı hedefleyen girişimsel bir yöntemdir. 2025 ağ meta-analizinde bazı yöntemler klinik ve devam eden gebelik sonuçlarında avantaj göstermiştir; ancak hiçbir tedavinin canlı doğum oranını artırdığı kesin olarak gösterilememiştir. <InlineEvidence grade="C" />
+Ultrason eşliğinde aspirasyon, tüpteki sıvının iğneyle boşaltılmasıdır. Skleroterapide sıvı boşaltıldıktan sonra yeniden birikmeyi azaltmak amacıyla tüpe bir madde verilir. 2025 ağ meta-analizinde aspirasyonun devam eden gebelik, skleroterapinin ise gözlemsel çalışmaların da eklendiği analizde canlı doğum açısından olumlu sinyalleri vardır. Yalnızca randomize çalışmaları birleştiren ana analiz, hiçbir yöntemin canlı doğumu artırdığını kesin olarak göstermemiştir ([Pérez-Milán 2025](https://pubmed.ncbi.nlm.nih.gov/38764191/)). <InlineEvidence grade="C" />
 
-Bu seçenekler cerrahinin riskli olduğu hastalarda konuşulabilir; fakat her merkezde standart yaklaşım değildir ve tekrar sıvı birikimi ihtimali vardır.
+Aspirasyon sonrası sıvı yeniden birikebilir. Bu girişimler cerrahinin güç olduğu seçilmiş durumlarda tartışılır; salpenjektomi veya tüp kapatmanın rutin yerine geçmez.
 
-### Antibiyotik
+### Antibiyotik Tedavisi
 
-Aktif enfeksiyon varsa antibiyotik gerekir. Ancak antibiyotik, oluşmuş yapısal tüp hasarını veya kalıcı hidrosalpinx sıvısını tek başına düzeltmez. Bu nedenle “ilaçla tamamen geçer” beklentisi doğru değildir.
+Aktif pelvik enfeksiyon varsa hekim antibiyotik tedavisi planlar. Antibiyotik, tüpün ucundaki kalıcı tıkanıklığı açmaz. Bu nedenle kronik hidrosalpinxin yalnızca ilaçla düzelmesi beklenmez.
 
 <figure class="my-8">
   <img src="/images/makaleler/hidrosalpinx-konsultasyon.webp" alt="HSG filmi ve tablet üzerinde tüp anatomisi inceleyen kadın hasta, doktoruyla tedavi seçeneklerini sakin bir ortamda değerlendiriyor" width="1200" height="675" loading="lazy" class="rounded-2xl border border-slate-200" />
@@ -216,53 +180,37 @@ Aktif enfeksiyon varsa antibiyotik gerekir. Ancak antibiyotik, oluşmuş yapısa
 
 <h2 id="karar">Karar Nasıl Kişiselleştirilir?</h2>
 
-Tedavi planı her hasta için aynı değildir; hidrosalpinksin boyutu ve ultrason görünürlüğü, rahim boşluğunda sıvı bulunup bulunmaması, hastanın yaşı, yumurtalık rezervi ve önceki cerrahiler gibi faktörlere göre karar verilir.
+Kararda önce hidrosalpinx tanısının kesinliğine ve ultrasonda görülüp görülmediğine bakılır. Yaş, yumurtalık rezervi, diğer tüpün durumu, önceki ameliyatlar ve IVF planı da seçimi değiştirir.
 
 <div class="overflow-x-auto my-8">
 
-| Durum | Genellikle Tartışılan Yaklaşım | Tamamlayıcı Rehber |
-| --- | --- | --- |
-| **Ultrasonda belirgin hidrosalpinx** | IVF transferinden önce salpenjektomi veya tüp kapatma | [IVF rehberi](/ivf-rehberi/) |
-| **Rahim içine sıvı akışı şüphesi** | Transfer öncesi tüp faktörünü düzeltme | [Taze/dondurulmuş transfer](/makaleler/taze-dondurulmus-transfer/) |
-| **Düşük AMH veya ileri yaş** | Cerrahi risk ile zaman kaybını birlikte tartma | [Düşük AMH](/makaleler/dusuk-amh-hamilelik/) |
-| **Endometriozis veya yoğun yapışıklık** | Deneyimli cerrahi planlama; gereksiz müdahaleden kaçınma | [Endometriozis ve IVF](/makaleler/endometriozis-tup-bebek/) |
-| **Tek taraflı hidrosalpinx ve diğer tüp açık** | Doğal gebelik olasılığı, dış gebelik riski ve IVF planı birlikte değerlendirilir | [Kadın infertilitesi](/kadin-infertilitesi/) |
+| Klinik Durum | Genellikle Değerlendirilen Yaklaşım | Tamamlayıcı Okuma |
+| :--- | :--- | :--- |
+| **Ultrasonda belirgin hidrosalpinx** | Transfer öncesi laparoskopik salpenjektomi veya proksimal kapatma | [IVF hazırlık rehberi](/ivf-rehberi/) |
+| **Rahim içinde sıvı izlenmesi** | Kaynağını araştırma; hidrosalpinxle ilişkiliyse transfer zamanlamasını yeniden değerlendirme | [Taze ve dondurulmuş transfer](/makaleler/taze-dondurulmus-transfer/) |
+| **Düşük AMH veya ileri yaş** | Cerrahi gecikmeye yol açacaksa önce yumurta toplama ve embriyo dondurmayı görüşme; tüp işlemini transfer öncesine planlama | [Düşük AMH rehberi](/makaleler/dusuk-amh-hamilelik/) |
+| **Yoğun yapışıklık veya derin endometriozis** | Cerrahi güçlüğü ve yumurtalık dolaşımını tartma; uygun olguda proksimal kapatmayı görüşme | [Endometriozis ve tüp bebek](/makaleler/endometriozis-tup-bebek/) |
+| **Tek taraflı hidrosalpinx ve diğer tüp sağlıklı** | Yaş, infertilite süresi, sperm durumu ve dış gebelik riskiyle doğal gebelik denemesini veya IVF'yi görüşme | [Kadın infertilitesi yol haritası](/kadin-infertilitesi/) |
 
 </div>
 
-Buradaki önemli denge şudur: Hidrosalpinx tedavisi IVF sonucunu iyileştirebilir; ancak her cerrahi işlem zaman, maliyet ve komplikasyon riski taşır. Bu yüzden karar “herkese aynı protokol” şeklinde değil, hastanın yaşı, rezervi, embriyo sayısı, cerrahi öyküsü ve hedefi üzerinden verilmelidir.
+Cerrahi IVF'de klinik gebelik olasılığını artırabilir; canlı doğum üzerindeki etki ve ameliyat riskleri için kanıt daha sınırlıdır ([Cochrane 2020](https://pubmed.ncbi.nlm.nih.gov/33091963/)). Yaş, yumurtalık rezervi, ameliyatın güçlüğü ve transfer planı birlikte tartılır.
 
 <div data-reveal>
-<h2 id="faq">Sıkça Sorulan Sorular</h2>
+<h2 id="faq">Dr. Aksoy'a en sık sorulan sorular</h2>
 
-Tüpte sıvı birikimi (hidrosalpinks) ve IVF öncesi süreçle ilgili en sık sorulan soruları ve yanıtlarını aşağıda bulabilirsiniz.
+Bu bölümdeki yanıtlar Doç. Dr. Senai Aksoy'a aittir.
 
-<Accordion title="Hidrosalpinx kendiliğinden geçer mi?">
-Bazen ultrason bulguları değişebilir veya şüpheli görüntü doğrulanmayabilir; ancak gerçek hidrosalpinx çoğu zaman kalıcı tüp hasarıyla ilişkilidir. Kendiliğinden düzelmesini beklemek, özellikle IVF transferi planlanıyorsa her hasta için doğru olmayabilir.
+<Accordion title="Hidrosalpinx kendiliğinden geçer mi; ultrasonda bir görünüp bir kaybolması ne anlama gelir?">
+Hidrosalpinx genellikle kendiliğinden iyileşen bir durum değildir. Ultrasonda bir muayenede görülüp diğerinde kaybolması, tüp içindeki sıvının zaman zaman boşalmasına veya görüntüleme koşullarına bağlı olabilir; bu nedenle tek bir ultrasonla kesin karar vermem. Tekrarlayan ultrason, gerekirse HSG/HyCoSy ve klinik öyküyle gerçekten hidrosalpinx olup olmadığını netleştirmeye çalışırım. Özellikle ultrasonda belirgin görülen hidrosalpinx IVF başarısını olumsuz etkileyebilir ([ASRM](https://pubmed.ncbi.nlm.nih.gov/33642065/)).
 </Accordion>
 
-<Accordion title="Hidrosalpinx varsa IVF yapılabilir mi?">
-IVF teknik olarak yapılabilir; fakat belirgin hidrosalpinx varsa transferden önce tüp sıvısının rahim içine akmasını engelleyen tedaviler değerlendirilir. Bazı merkezler yumurta toplama ve embriyo dondurmayı önce, tüp tedavisini transferden önce planlayabilir.
+<Accordion title="Tek taraflı hidrosalpinx varlığında doğrudan tüp bebek veya ameliyat gerekir mi?">
+Tek taraflı hidrosalpinx varsa herkese doğrudan IVF veya ameliyat önermem. Yaş, yumurtalık rezervi, infertilite süresi, diğer tüpün gerçekten sağlıklı olup olmadığı ve sperm faktörü önemlidir. Genç, rezervi iyi, diğer tüpü normal ve başka infertilite nedeni bulunmayan bir hastada doğal gebelik için belirli bir süre tanınabilir; ancak ileri yaşta, uzun infertilite öyküsünde veya IVF planlanıyorsa hidrosalpinxin tedavisi daha fazla önem kazanır. Çünkü tek taraflı hidrosalpinx bile IVF gebelik oranlarını düşürebilir ([ASRM](https://pubmed.ncbi.nlm.nih.gov/33642065/)).
 </Accordion>
 
-<Accordion title="Tek tüpte hidrosalpinx varsa diğer tüp yeterli olur mu?">
-Bazı hastalarda doğal gebelik mümkün olabilir; ancak tek taraflı hidrosalpinx bile IVF sonuçlarını etkileyebilir ve dış gebelik riski artabilir. Karar yaş, infertilite süresi, sperm analizi, diğer tüpün durumu ve gebelik hedefiyle birlikte verilmelidir.
-</Accordion>
-
-<Accordion title="Salpenjektomi yumurtalık rezervini azaltır mı?">
-Çoğu çalışmada hidrosalpinx için yapılan salpenjektominin IVF yanıtını belirgin bozmadığı bildirilse de cerrahi anatomi kişiden kişiye değişir. Yoğun yapışıklık, endometriozis, önceki ameliyatlar veya düşük rezerv varsa risk daha dikkatli tartılmalıdır.
-</Accordion>
-
-<Accordion title="HSG hidrosalpinx tanısı için yeterli mi?">
-HSG tüp açıklığı ve tüp şekli hakkında önemli bilgi verir; fakat her bulgu tek başına karar için yeterli değildir. Ultrason, klinik öykü ve gerekirse ileri değerlendirme ile birlikte yorumlanmalıdır.
-</Accordion>
-
-<Accordion title="Hidrosalpenks tedavisi ilaçla olur mu?">
-Aktif enfeksiyon varsa antibiyotik gerekir; ancak kalıcı tüp hasarı ve sıvı birikimi çoğu zaman yalnızca ilaçla düzelmez. IVF planında cerrahi veya girişimsel seçenekler ayrıca değerlendirilir.
-</Accordion>
-
-<Accordion title="Hidrosalpinx ameliyatı sonrası IVF ne zaman yapılır?">
-Zamanlama ameliyatın kapsamına, iyileşmeye, yumurtalık rezervine ve embriyo planına göre değişir. Bazı hastalarda önce yumurta toplama ve embriyo dondurma, sonra tüp tedavisi planlanabilir.
+<Accordion title="Tüp ameliyatından ne kadar sonra tüp bebek veya embriyo transferi yapılabilir?">
+Salpenjektomi veya proksimal tüp kapatılması sonrası aylarca beklemek zorunlu değildir. Komplikasyonsuz laparoskopik ameliyattan sonra hasta iyileştiğinde IVF stimülasyonuna çoğu zaman sonraki siklusta başlanabilir; dondurulmuş embriyo transferini ise genellikle ameliyat sonrası iyileşme tamamlandıktan sonra, yaklaşık 4–6 hafta veya bir sonraki adet sonrası planlamak mümkündür. Daha zor cerrahi, enfeksiyon veya geniş adezyolizis (yapışıklık açılması) varsa süreyi kişiye göre uzatırım. Hidrosalpinxin IVF öncesinde cerrahi olarak ortadan kaldırılması veya tüpün rahimle bağlantısının kesilmesi gebelik sonuçlarını iyileştiren yerleşik yaklaşımlardandır ([ASRM](https://pubmed.ncbi.nlm.nih.gov/33642065/)).
 </Accordion>
 </div>
 
