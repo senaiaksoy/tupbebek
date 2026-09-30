@@ -61,7 +61,7 @@ Doğrulama notu (2026-09-29): Search Console `sc-domain:tupbebek.com`, 28 Hazira
 
 **Anlam ve kaynak kontrolü 3:** Kaynak parametresi temizlendi ve PubMed bağlantısına bağlandı. "Uterustan ayrılması" ifadesi Türkçe portal diline uygun biçimde "rahimle bağlantısının kesilmesi" şeklinde açıklaştırıldı; 4–6 hafta ve bir sonraki siklus takvimi korundu.
 
-**Durum:** Hekim yanıtları 2026-09-30 tarihinde alındı; düzenlenmiş karşılıkları makalenin `#faq` bölümüne yerleştirildi. Bu düzenlenmiş biçimler için ayrıca açık yayın onayı kaydı bulunamadı. Mevcut yayındaki makale yayında kalır; bu çalışma kopyası onay tamamlanmadan yayımlanmaz.
+**Durum:** Hekim yanıtları 2026-09-30 tarihinde alındı; düzenlenmiş karşılıkları makalenin `#faq` bölümüne yerleştirildi. Düzenlenmiş biçimlerin görünür kullanımı Dr. Aksoy'un 2026-09-30 tarihli "onay" mesajıyla onaylandı (PR #238). Makale 2026-09-30'da yayına alındı; canlı sayfada SSS başlığı ve üç yanıt doğrulandı.
 
 ### endoskopik-cerrahi-histeroskopi (tr) — kanama, günlük yaşama dönüş ve ilk adet soruları; yanıt tarihi 2026-09-29
 
