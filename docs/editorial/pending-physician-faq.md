@@ -115,6 +115,26 @@ Doğrulama notu (2026-09-29): Search Console `sc-domain:tupbebek.com`, 28 Hazira
 
 ---
 
+### hidrosalpinx-ve-kisirlik (tr) — gövde katkıları, `#tedavi` ve `#karar`; onay tarihi 2026-09-30
+
+**Kaynak:** Dış model (ChatGPT) okur değerlendirmesinde geçen ifadeler. Dr. Aksoy 2026-09-30'da "metindeki ifadeler bana aittir, kullanabilirsin" diyerek kendi sözü olarak kullanımını onayladı.
+
+**`#tedavi` bölüm girişine eklenen cümle** (önceki sürümün başlık alt metninden, #238'de kalkmıştı):
+
+> Hidrosalpinx kararında hedef, tüpü mutlaka "açmak" değil, embriyonun yerleşeceği rahim ortamını korumaktır.
+
+**`#karar` bölüm girişi** (yalnızca "hidrosalpinkste" yazımı makaledeki "hidrosalpinx" ile eşitlendi):
+
+> Ben hidrosalpinxte yalnızca tüpün varlığına bakmam. Ultrasonda belirgin olup olmadığı, rahim içine sıvı geçişi, hastanın yaşı, yumurtalık rezervi ve daha önce geçirdiği ameliyatlar kararımı değiştirir.
+>
+> Örneğin rezervi düşük bir hastada önce embriyoyu güvence altına alıp, tüp cerrahisini transferden önce yapmak daha doğru olabilir.
+
+**Yerine geçtiği cümle:** "Kararda önce hidrosalpinx tanısının kesinliğine ve ultrasonda görülüp görülmediğine bakılır. Yaş, yumurtalık rezervi, diğer tüpün durumu, önceki ameliyatlar ve IVF planı da seçimi değiştirir."
+
+**Anlam kontrolü:** Eski cümledeki "tanının kesinliği" SSS 1'de, "diğer tüpün durumu" ve "IVF planı" aynı bölümdeki karar tablosunda ve SSS 2'de karşılanıyor. "Rezervi düşük" örneği tablodaki "Düşük AMH veya ileri yaş" satırıyla aynı kararı anlatır; hekim sesi ve tarama satırı olarak ikisi birlikte tutuldu. Değerlendirmenin geri kalanı #238 öncesi sürüme aitti (Hızlı Bakış, Sık aranan sorular tablosu zaten kaldırılmıştı).
+
+---
+
 ### endoskopik-cerrahi-histeroskopi (tr) — gövde katkısı, `#iyilesme`; onay tarihi 2026-09-30
 
 **Kaynak:** Dış model (ChatGPT) okur değerlendirmesinin önerdiği birinci tekil cümle. Dr. Aksoy 2026-09-30'da bu oturumdaki seçimle cümleyi kendi sözü olarak onayladı; model cümleyi hekim adına üretmedi, öneri hekime gösterildi ve hekim seçti.
