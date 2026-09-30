@@ -11,6 +11,83 @@ Doğrulama notu (2026-09-29): Search Console `sc-domain:tupbebek.com`, 28 Hazira
 
 ## Yanıtlanan sorular (editoryal kayıt)
 
+### dusuk-sonrasi-hamilelik-bekleme-suresi (tr) — ilk adet öncesi gebelik, cinsel ilişkiye dönüş ve ilk adet kanaması soruları; yanıt tarihi 2026-09-30
+
+**Soru verisi kontrolü (2026-09-30):** Hedef mülk `sc-domain:tupbebek.com`, sayfa `https://tupbebek.com/makaleler/dusuk-sonrasi-hamilelik-bekleme-suresi/`. Search Console sorgu raporu için dönem, sayfa filtresi ve gösterimler bu kayıtta bulunmuyor; bu kaynak doğrulanmış sayılmaz. Türkiye/Türkçe Google Autocomplete yanıtları (`hl=tr&gl=tr`, `client=firefox`) önceki editoryal turda sorgulandı. Aşağıdaki ham öneriler konu ilgisini gösterir; arama hacmi sırası veya sayısal sıklık ölçümü değildir.
+
+**Soru 1 (İlk adet öncesi gebelik ve bekleme süresi):** Düşükten hemen sonra, ilk adet kanaması görülmeden hamile kalınabilir mi; ilk adeti beklemek tıbben şart mıdır?
+
+**Arama verisi (Soru 1):** [Google Autocomplete TR, "düşükten hemen sonra hamile"](https://suggestqueries.google.com/complete/search?client=firefox&hl=tr&gl=tr&q=d%C3%BC%C5%9F%C3%BCkten%20hemen%20sonra%20hamile), 2026-09-30 canlı tekrar kontrolü. Ham öneriler: "düşükten hemen sonra hamile kalmak riskli mi", "dusukten hemen sonra hamile kalınır mı". Önceki kayıttaki "kürtaj sonrası en erken ne zaman hamile kalınır" bu sorguda görünmedi; doğrulanmış öneri olarak kullanılmıyor. Makale sorusu ilk adet koşulunu editoryal olarak ekler; gösterim sayısı yok.
+
+**Özgün yanıt 1 (kullanıcının 2026-09-30 tarihli mesajı, değiştirilmeden):**
+
+> Erken ve komplikasyonsuz bir düşükten sonra, ilk adet görülmeden yeniden gebe kalmanın sonraki gebeliği daha riskli yaptığına dair güçlü bir kanıt yoktur; ovulasyon ilk adetten önce gerçekleşebileceği için gebelik mümkündür. Ben ilk adeti beklemeyi daha çok rahmin toparlanmasını görmek, gebelik haftasını daha kolay tarihlendirmek ve kanamanın tamamen bittiğinden emin olmak için öneririm; tıbbi olarak her hastada zorunlu bir bekleme süresi değildir. [Royal Kadın Doğum Derneği](https://www-preview.rcog.org.uk/for-the-public/browse-our-patient-information/recovering-from-surgical-management-of-a-miscarriage/?utm_source=chatgpt.com)
+
+**Makaleye giren düzenlenmiş yanıt 1:**
+
+> Erken ve komplikasyonsuz bir düşükten sonra, ilk adet görülmeden yeniden gebe kalmanın sonraki gebeliği daha riskli yaptığına dair güçlü bir kanıt yoktur; yumurtlama ilk adetten önce gerçekleşebileceği için gebelik mümkündür. Ben ilk adeti beklemeyi daha çok rahmin toparlanmasını görmek, gebelik haftasını daha kolay tarihlendirmek ve kanamanın tamamen bittiğinden emin olmak için öneririm; tıbbi olarak her hastada zorunlu bir bekleme süresi değildir ([RCOG](https://www.rcog.org.uk/for-the-public/browse-our-patient-information/recovering-from-surgical-management-of-a-miscarriage/)).
+
+**Anlam ve kaynak kontrolü 1:** Kaynak linkindeki `www-preview` önizleme alt alanı prodüksiyon alan adına (`www.rcog.org.uk`) çekildi ve `?utm_source=chatgpt.com` parametresi temizlendi. "Ovulasyon" terimi portal diline uygun biçimde "yumurtlama" olarak sadeleştirildi; önceki turda eklenen "biyolojik olarak" ifadesi 2026-09-30 humanize denetiminde özgün yanıta uyması için çıkarıldı. Hekimin klinik gerekçeleri (rahmin toparlanması, tarihlendirme, kanama bitimi) ve zorunlu olmama sınırı tam olarak korundu.
+
+---
+
+**Soru 2 (Cinsel ilişkiye dönüş süresi ve enfeksiyon):** Düşük veya kürtaj sonrasında cinsel ilişkiye ne zaman başlanabilir?
+
+**Arama verisi (Soru 2):** [Google Autocomplete TR, "düşükten sonra ilişki"](https://suggestqueries.google.com/complete/search?client=firefox&hl=tr&gl=tr&q=d%C3%BC%C5%9F%C3%BCkten%20sonra%20ili%C5%9Fki), 2026-09-30 canlı tekrar kontrolü. Ham öneri: "düşükten sonra ilişkiye ne zaman girilir". Makale sorusu kürtajı da kapsayacak biçimde düzenlenmiştir; gösterim sayısı yok.
+
+**Özgün yanıt 2 (kullanıcının 2026-09-30 tarihli mesajı, değiştirilmeden):**
+
+> Sabit olarak “iki hafta ilişki yasaktır” demekten çok, kanama ve ağrının belirgin şekilde azalmasını ve hastanın kendini iyi hissetmesini beklemek daha doğru olur. Aktif kanama ve düşük süreci devam ederken enfeksiyon riski nedeniyle ilişkiyi önermem; komplikasyonsuz cerrahi düşük sonrası RCOG da hasta kendini iyi hissettiğinde ve kanama/ağrı belirgin azaldığında ilişkiye dönülebileceğini belirtiyor. [Royal Kadın Doğum Derneği](https://www-preview.rcog.org.uk/for-the-public/browse-our-patient-information/recovering-from-surgical-management-of-a-miscarriage/?utm_source=chatgpt.com)
+
+**Makaleye giren düzenlenmiş yanıt 2:**
+
+> Sabit olarak “iki hafta ilişki yasaktır” demekten çok, kanama ve ağrının belirgin şekilde azalmasını ve hastanın kendini iyi hissetmesini beklemek daha doğru olur. Aktif kanama ve düşük süreci devam ederken enfeksiyon riski nedeniyle ilişkiyi önermem; komplikasyonsuz cerrahi düşük sonrası RCOG hasta bilgilendirmesi de kişi kendini iyi hissettiğinde ve kanama ile ağrı belirgin azaldığında ilişkiye dönülebileceğini belirtir ([RCOG](https://www.rcog.org.uk/for-the-public/browse-our-patient-information/recovering-from-surgical-management-of-a-miscarriage/)).
+
+**Anlam ve kaynak kontrolü 2:** RCOG linkindeki takip parametresi ve önizleme alt alanı temizlendi. Aktif kanamada enfeksiyon riski uyarısı ile bireyselleştirilmiş iyileşme kriteri tam olarak korundu.
+
+---
+
+**Soru 3 (İlk adet zamanlaması ve kanama özellikleri):** Düşük sonrası ilk adet ne zaman gelir; kanama miktarında değişiklik olması normal midir?
+
+**Arama verisi (Soru 3):** [Google Autocomplete TR, "düşük sonrası ilk adet"](https://suggestqueries.google.com/complete/search?client=firefox&hl=tr&gl=tr&q=d%C3%BC%C5%9F%C3%BCk%20sonras%C4%B1%20ilk%20adet), 2026-09-30 canlı tekrar kontrolü. Ham öneriler: "düşük sonrası ilk adet", "düşük sonrası ilk adet kanaması fazlalığı", "düşük sonrası ilk adet kanaması nasıl olur". Makale sorusu zamanlama ve miktarı birleştirir; gösterim sayısı yok.
+
+**Özgün yanıt 3 (kullanıcının 2026-09-30 tarihli mesajı, değiştirilmeden):**
+
+> İlk adet çoğunlukla düşükten yaklaşık 4–6 hafta sonra gelir; ovulasyonun ne zaman yeniden başladığına göre biraz daha erken veya geç olabilir. İlk adet normalden daha yoğun, daha uzun veya bazen daha hafif olabilir. Çok yoğun kanama, giderek artan ağrı, ateş veya kötü kokulu akıntı varsa; ya da adet belirgin şekilde gecikiyorsa gebelik testi ve gerekirse ultrasonla kontrol ederim.
+
+**Makaleye giren düzenlenmiş yanıt 3:**
+
+> İlk adet çoğunlukla düşükten yaklaşık 4–6 hafta sonra gelir; yumurtlamanın ne zaman yeniden başladığına göre biraz daha erken veya geç olabilir. İlk adet normalden daha yoğun, daha uzun veya bazen daha hafif olabilir. Çok yoğun kanama, giderek artan ağrı, ateş veya [kötü kokulu akıntı](/makaleler/akinti-kasinti-koku/) varsa; ya da adet belirgin şekilde gecikiyorsa gebelik testi ve gerekirse ultrasonla kontrol ederim.
+
+**Anlam ve kaynak kontrolü 3:** "Ovulasyon" terimi "yumurtlama" olarak düzenlendi; akıntı ifadesi portal içi ilgili rehber sayfasına bağlandı. 4–6 haftalık zamanlama ve hekimin kontrol eşikleri (yoğun kanama, artan ağrı, ateş, gecikme) aynen korundu.
+
+---
+
+### dusuk-sonrasi-hamilelik-bekleme-suresi (tr) — uzman katkısı (`expertContribution`), yanıt tarihi 2026-09-30
+
+**Soru:** Erken bir gebelik kaybından sonra çift "hemen yeniden deneyelim mi, yoksa bekleyelim mi?" diye sorduğunda, klinik kararınızı ve önerdiğiniz süreyi en çok hangi tıbbi bulgular veya hastaya ait koşullar değiştirir?
+
+**Özgün yanıt (kullanıcının 2026-09-30 tarihli mesajı, değiştirilmeden):**
+
+> “Hemen deneyebilir miyiz?” sorusunda benim için asıl belirleyici takvim değil, düşüğün gerçekten tamamlanmış olması ve hastanın durumudur. Ultrasonda kavitenin temiz olması, kanamanın bitmesi, enfeksiyon bulunmaması ve β-hCG'nin uygun şekilde gerilemesi varsa erken bir kayıptan sonra uzun süre beklemek çoğu hastada gerekli değildir. Buna karşılık dış gebelik veya mol gebelik öyküsü, enfeksiyon, ciddi kanama/anemi, geç gebelik kaybı, tekrarlayan düşükler, kontrolsüz tiroid veya diyabet gibi hastalıklar ya da çiftin psikolojik olarak hazır olmaması bekleme süresini ve yaklaşımımı değiştirir. Tekrarlayan kayıplarda da gerekli incelemelerin sonucu bir sonraki gebeliğin planını etkileyebilir. [rcog.org.uk](https://www.rcog.org.uk/for-the-public/browse-our-patient-information/recurrent-miscarriage/?utm_source=chatgpt.com)
+
+**Makale frontmatter'ına giren yanıt:**
+
+> “Hemen deneyebilir miyiz?” sorusunda benim için asıl belirleyici takvim değil, düşüğün gerçekten tamamlanmış olması ve hastanın durumudur. Ultrasonda rahim içinin temiz olması, kanamanın bitmesi, enfeksiyon bulunmaması ve beta-hCG'nin uygun şekilde gerilemesi varsa erken bir kayıptan sonra uzun süre beklemek çoğu hastada gerekli değildir. Buna karşılık dış gebelik veya molar gebelik öyküsü, enfeksiyon, ciddi kanama ya da anemi, ileri hafta gebelik kaybı, tekrarlayan düşükler, kontrolsüz tiroid veya diyabet gibi hastalıklar ya da çiftin psikolojik olarak hazır olmaması bekleme süresini ve yaklaşımımı değiştirir. Tekrarlayan kayıplarda da gerekli incelemelerin sonucu bir sonraki gebeliğin planını etkileyebilir.
+
+**Anlam ve kaynak kontrolü:** RCOG bağlantısındaki takip parametresi temizlendi. "Kavitenin temiz olması" ifadesi "rahim içinin temiz olması", "mol gebelik" ifadesi "molar gebelik", "β-hCG" ise "beta-hCG" olarak portal standardına uyarlandı; hekimin tüm klinik karar kriterleri ve psikolojik hazır oluş koşulu tam olarak korundu. 2026-09-30 humanize denetiminde önceki aktarımın özgün yanıttan sapmaları geri alındı: "aylarca" → özgün "uzun süre", eklenen "sistemik" ve "doğrudan" çıkarıldı, "tiroit" → özgün ve site genelindeki "tiroid", "geç gebelik kaybı" tekil "ileri hafta gebelik kaybı" olarak tutuldu.
+
+**Durum (2026-09-30 audit):** Hekim yanıtları 2026-09-30 tarihinde alındı; düzenlenmiş SSS karşılıkları makalenin `#faq` bölümünde inceleme taslağı olarak duruyor. Bu makale için düzenlenmiş yanıtların görünür kullanım onayı, uzman katkısının açık yayın onayı ve yeni tıbbi metnin inceleme onayı kayıtta bulunamadı. Bu nedenle `approvedBy`, yeni `reviewDate` ve `expertContribution.approvalStatus: approved` alanları yerel taslaktan çıkarıldı; `status: in_review` olarak tutuldu. Özgün uzman yanıtı yukarıda korunuyor; onay sonrası frontmatter'a aktarılabilir. Canlı sürümün kontrolü aşağıda kayıtlıdır.
+
+**Kaynak/iddia düzeltmesi (2026-09-30 audit):** NICE NG126, komplikasyonsuz kendiliğinden ve ilaçla yönetilen düşükte üç hafta sonra evde gebelik testi öneriyor; seri serum beta-hCG ve ultrason herkese rutin zorunluluk değildir. ASRM 2026, ikinci kayıpta kromozom incelemesini ve açıklanamayan tekrarlayan kayıpta rahim boşluğu değerlendirmesini önerirken APS testi ile ebeveyn karyotipini koşula bağlı tutuyor. Kangatharan 2017 meta-analizi altı aydan kısa ve uzun aralıkları karşılaştırıyor; "ilk altı ay ideal" veya herkes için canlı doğum üstünlüğü sonucunu desteklemiyor. RCOG cerrahi düşük sonrası iyileşme sayfasının görünen yayın tarihi Ekim 2015; kaynakça yılı buna göre düzeltildi. ([NICE](https://www.nice.org.uk/guidance/ng126/chapter/management-of-miscarriage), [ASRM](https://www.asrm.org/practice-guidance/practice-committee-documents/recurrent-pregnancy-loss-a-committee-opinion-2026/), [meta-analiz](https://pubmed.ncbi.nlm.nih.gov/27864302/), [RCOG](https://www.rcog.org.uk/for-the-public/browse-our-patient-information/recovering-from-surgical-management-of-a-miscarriage/))
+
+**Canlı kontrol (2026-09-30):** `https://tupbebek.com/makaleler/dusuk-sonrasi-hamilelik-bekleme-suresi/?audit=20260930` HTTP 200 döndü; HTML'de eski "Sıkça Sorulan Sorular" başlığı var, yeni "Dr. Aksoy'a en sık sorulan sorular" başlığı yok. Yerel taslak üretime yansımamış. `in_review` durumuyla alınan yerel derleme makale rotasını üretmediği ve başka makalelerde ilişkili yazı uyarısı oluşturduğu için bu derleme yayımlanmamalı; önce gerçek yanıtların düzenlenmiş görünür kullanımı, uzman katkısı ve tıbbi metin onayı tamamlanmalı.
+
+**Hekim incelemesi için kaynak ayrımı:** Cerrahi düşük sonrası cinsel ilişkiye dönüşte [RCOG hasta bilgilendirmesi](https://www.rcog.org.uk/for-the-public/browse-our-patient-information/recovering-from-surgical-management-of-a-miscarriage/) kişi kendini hazır hissettiğinde ve ağrı/kanama belirgin azaldığında dönüşü anlatır. [ACOG hasta SSS'si](https://www.acog.org/womens-health/faqs/early-pregnancy-loss) ise enfeksiyon önlemi olarak 1–2 hafta vajinal penetrasyondan kaçınmayı önerir. Hekimin özgün yanıtı RCOG yaklaşımını seçiyor; iki kaynağın farklı hasta önerileri gizlenmeden nihai tıbbi incelemede değerlendirilmelidir.
+
+**Onay ve güncel durum (2026-09-30):** Kullanıcı bu oturumda "Düzenlenmiş yanıtların görünür kullanım onayı, uzman katkısının yayın onayı ve güncellenen tıbbi metnin inceleme onayı tamam" diyerek üç onayı birlikte verdi. Bu kayıt yukarıdaki audit sırasında eksik olan onay durumunu günceller. Üç SSS yanıtının düzenlenmiş karşılıkları `#faq` bölümünde, uzman katkısının düzenlenmiş karşılığı `expertContribution` alanında kullanıldı; `approvalStatus: approved`, `approvedBy: "Doç. Dr. Senai Aksoy"`, `reviewDate: 2026-09-30` ve `status: published` işlendi. Özgün yanıtlar ve yanıt tarihi değiştirilmedi. Bu onay commit, push veya deploy işlemini kapsamaz; canlı sayfa durumu ayrıca doğrulanır.
+
+
 ### hidrosalpinx-ve-kisirlik (tr) — kendiliğinden gerileme, tek taraflı hidrosalpinx ve transfer zamanlaması soruları; yanıt tarihi 2026-09-30
 
 **Soru verisi kontrolü (2026-09-30):** Hedef mülk `sc-domain:tupbebek.com`, sayfa `https://tupbebek.com/makaleler/hidrosalpinx-ve-kisirlik/`. Bu oturumda Search Console sorgu raporuna erişilemedi; bu sayfa için dönem, sorgu ve gösterim sayıları doğrulanamadı. Türkiye/Türkçe Google Autocomplete yanıtları (`hl=tr&gl=tr`, `client=firefox`) canlı sorgulandı. Aşağıdaki ham öneriler yalnızca konu ilgisini gösterir; soru sıklığını veya hacim sırasını ölçmez.
