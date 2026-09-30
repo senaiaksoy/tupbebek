@@ -88,6 +88,16 @@ Doğrulama notu (2026-09-29): Search Console `sc-domain:tupbebek.com`, 28 Hazira
 **Onay ve güncel durum (2026-09-30):** Kullanıcı bu oturumda "Düzenlenmiş yanıtların görünür kullanım onayı, uzman katkısının yayın onayı ve güncellenen tıbbi metnin inceleme onayı tamam" diyerek üç onayı birlikte verdi. Bu kayıt yukarıdaki audit sırasında eksik olan onay durumunu günceller. Üç SSS yanıtının düzenlenmiş karşılıkları `#faq` bölümünde, uzman katkısının düzenlenmiş karşılığı `expertContribution` alanında kullanıldı; `approvalStatus: approved`, `approvedBy: "Doç. Dr. Senai Aksoy"`, `reviewDate: 2026-09-30` ve `status: published` işlendi. Özgün yanıtlar ve yanıt tarihi değiştirilmedi. Bu onay commit, push veya deploy işlemini kapsamaz; canlı sayfa durumu ayrıca doğrulanır.
 
 
+### dusuk-sonrasi-hamilelik-bekleme-suresi (tr) — gövdeye giren birinci tekil hekim cümleleri; onay tarihi 2026-09-30
+
+**Kaynak:** Kullanıcının 2026-09-30 tarihinde yapıştırdığı dış (ChatGPT) okur değerlendirmesi iki birinci tekil cümle önerdi. Dr. Aksoy aynı gün seçenekli soruda "Kendi sözüm olarak ekle" seçeneğini işaretledi; bu onay yalnızca aşağıdaki iki cümleyi kapsar.
+
+> Tek bir erken düşükten sonra geniş bir test paneli istemem; önce kaybın nasıl gerçekleştiğine ve hastada hangi bulguların olduğuna bakarım.
+
+> İki veya daha fazla kayıpta inceleme alanı genişler, ama yine de her testi herkese istemem.
+
+**Kullanım:** Birinci cümle `#testler`, ikincisi `#tekrarlayan-kayip` bölümünün ilk cümlesidir; cümleler aynen kullanıldı. Kaynaklı genel ifade (kılavuzların kapsamlı paneli çoğu kişi için gerekli görmemesi; ASRM 2026'nın adım adım planlaması) hekim görüşünden ayrı cümlede ve atıfla korundu. Aynı turda `#neden-olur` başlığı "Erken Düşüğün En Sık Nedenleri" olarak nötrleştirildi; anchor değişmedi.
+
 ### hidrosalpinx-ve-kisirlik (tr) — kendiliğinden gerileme, tek taraflı hidrosalpinx ve transfer zamanlaması soruları; yanıt tarihi 2026-09-30
 
 **Soru verisi kontrolü (2026-09-30):** Hedef mülk `sc-domain:tupbebek.com`, sayfa `https://tupbebek.com/makaleler/hidrosalpinx-ve-kisirlik/`. Bu oturumda Search Console sorgu raporuna erişilemedi; bu sayfa için dönem, sorgu ve gösterim sayıları doğrulanamadı. Türkiye/Türkçe Google Autocomplete yanıtları (`hl=tr&gl=tr`, `client=firefox`) canlı sorgulandı. Aşağıdaki ham öneriler yalnızca konu ilgisini gösterir; soru sıklığını veya hacim sırasını ölçmez.
