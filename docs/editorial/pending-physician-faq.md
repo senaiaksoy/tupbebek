@@ -7,9 +7,31 @@ Zorunlu "Dr. Aksoy'a en sık sorulan sorular" bölümü için Dr. Aksoy'a sorulm
 
 _Şu an bekleyen soru yok._
 
+**Bu makale için arama veri sınırı (2026-09-30):** Hedef Search Console mülkü `sc-domain:tupbebek.com`, sayfa `https://tupbebek.com/makaleler/over-prp-yumurtalik-genclestirme-bas-editor-kosesi/`, önerilen karşılaştırma dönemi son 3 ay. Bu oturumda Search Console sorgu raporunun mülk, dönem ve sayfa filtresi oturum açılarak görüntülenemedi; sorular Türkiye/Türkçe Google Autocomplete canlı yanıtından seçildi. Otomatik tamamlama görünürlüğü gösterim sayısı veya hacim sırası değildir. Dr. Aksoy üç soruyu 2026-09-30 tarihinde tek yanıtla karşıladı; düzenlenmiş görünür kullanımını aynı tarihte onayladı. Yerel makaleye SSS eklendi; bu kayıt canlı yayına yansıdığı anlamına gelmez.
+
 Doğrulama notu (2026-09-29): Search Console `sc-domain:tupbebek.com`, 28 Haziran–27 Eylül 2026, `duygusal-dayaniklik-rehberi` sayfa filtresi: 272 toplam gösterim ve 7 görünür sorgu; aşağıda kaydedilen üç soru ifadesi (transfer sonrası ağlama, antidepresan, ara verme) bu sorgular arasında yok. PAA görünürlüğü soru konusunu destekler, "en yüksek hacimli sorgu" sıralamasını kanıtlamaz.
 
 ## Yanıtlanan sorular (editoryal kayıt)
+
+### over-prp-yumurtalik-genclestirme-bas-editor-kosesi (tr) — üç SSS sorusu; yanıt tarihi 2026-09-30
+
+**Soru verisi (2026-09-30):** `sc-domain:tupbebek.com` mülkünün hedef sayfa sorgu raporuna erişilemedi; gösterim sayısı yok. Google Autocomplete Türkiye/Türkçe, [arama terimi `yumurtalık PRP`](https://suggestqueries.google.com/complete/search?client=firefox&hl=tr&gl=tr&q=yumurtal%C4%B1k%20PRP): ham ifadeler “yumurtalık prp ne zaman etkisini gösterir” ve “yumurtalık prp etkisi ne kadar sürer”. [Arama terimi `yumurtalık prp sonrası`](https://suggestqueries.google.com/complete/search?client=firefox&hl=tr&gl=tr&q=yumurtal%C4%B1k%20prp%20sonras%C4%B1): ham ifade “yumurtalık prp sonrası nelere dikkat edilmeli”. Makale soruları yalnızca yazım ve kişi eki yönünden düzenlendi; otomatik tamamlama hacim sırası vermez.
+
+**Dr. Aksoy'un özgün birleşik yanıtı (kullanıcının 2026-09-30 tarihli mesajı, değiştirilmeden):**
+
+> **Yumurtalık PRP’sinde “etki ne zaman başlar ve ne kadar sürer?” sorusunun bugün için kesin bir cevabı yok**, çünkü yöntem hâlâ deneysel kabul edilmeli ve protokoller standart değil. Çalışmalarda AMH, FSH veya antral folikül sayısındaki değişiklikler çoğunlukla **1–3 ay içinde** değerlendirilmiş; ancak bu değişikliklerin gerçekten daha fazla gebelik veya canlı doğuma dönüştüğü kontrollü çalışmalarda tutarlı biçimde gösterilememiştir. [PubMed](https://pubmed.ncbi.nlm.nih.gov/38760869/?utm_source=chatgpt.com) Bu nedenle “etkisi 6 ay sürer” gibi kesin süreler vermemek gerekir. PRP sonrası özel bir diyet veya takviye zorunluluğu yoktur; işlemden sonraki ilk günlerde ağır egzersiz ve cinsel ilişkiyi kısa süre sınırlamak, ateş, giderek artan ağrı, belirgin karın şişliği veya olağandışı kanama olursa kliniğe başvurmak yeterlidir. En önemlisi, PRP yapılmış olsa bile yaş ve yumurtalık rezervi açısından değerli zamanı kaybetmeden IVF planının geciktirilmemesidir.
+
+**Makaleye giren düzenlenmiş karşılık — görünür kullanım onaylandı (2026-09-30):**
+
+1. **Yumurtalık PRP ne zaman etkisini gösterir?** Kesin bir başlangıç zamanı söyleyemeyiz; yöntem deneysel ve uygulama protokolleri standart değil. Çalışmalarda AMH ve FSH çoğunlukla işlemden 1–3 ay sonra ölçülmüştür. Bu ölçüm zamanı, gebelik veya canlı doğum yararının başladığını göstermez ([Éliás ve arkadaşları, 2024](https://pubmed.ncbi.nlm.nih.gov/38760869/)).
+2. **Yumurtalık PRP etkisi ne kadar sürer?** Güvenilir bir süre bilinmiyor. “Etkisi 6 ay sürer” gibi kesin bir söz verilemez; ara göstergelerdeki değişimlerin gebelik veya canlı doğuma dönüştüğü kontrollü çalışmalarda tutarlı biçimde gösterilmemiştir ([Cochrane, 2024](https://pubmed.ncbi.nlm.nih.gov/38682756/); [HFEA, 2026](https://www.hfea.gov.uk/treatments/treatment-add-ons/platelet-rich-plasma-prp/)).
+3. **Yumurtalık PRP sonrasında nelere dikkat edilmeli?** Özel bir diyet veya takviye zorunlu değildir. İlk günlerde ağır egzersiz ve cinsel ilişki kısa süre sınırlanır. Ateş, giderek artan ağrı, belirgin karın şişliği veya olağandışı kanama olursa işlemi yapan kliniğe başvurun. PRP nedeniyle IVF planını geciktirmeyin.
+
+**Anlam ve kaynak kontrolü:** Özgün yanıttaki `utm_source=chatgpt.com` takip parametresi yayına taşınmayacak. [Éliás ve arkadaşları 2024](https://pubmed.ncbi.nlm.nih.gov/38760869/) insan çalışmalarının ağırlıkla gözlemsel olduğunu ve AMH/FSH ölçümlerini 1–3. aylarda raporladığını doğruluyor; aynı zaman aralığı AFC için açıkça verilmediğinden düzenlenmiş ilk yanıtta AFC zamanlaması çıkarıldı. Derlemedeki canlı doğum *oranı* PRP'nin kontrol grubuna göre canlı doğumu artırdığını kanıtlamaz. Kontrollü sonuç belirsizliği [Cochrane 2024](https://pubmed.ncbi.nlm.nih.gov/38682756/) ve [HFEA 2026](https://www.hfea.gov.uk/treatments/treatment-add-ons/platelet-rich-plasma-prp/) ile ayrıca karşılaştırıldı. Diyet, takviye, kısa süreli egzersiz/cinsel ilişki sınırlaması ve IVF planı özgün hekim önerisidir; bunlar Éliás derlemesinin sonucu olarak sunulmayacak. HFEA işlem sonrası kanama ve enfeksiyon riskini belirtir; özgün uyarı işaretleri korunmuştur.
+
+**Durum:** Gerçek yanıt 2026-09-30'da alındı. Düzenlenmiş üç yanıt aynı oturumda Dr. Aksoy'a gösterildi; Dr. Aksoy “bunlara onay veriyorum” mesajıyla hem üç yanıtın görünür kullanımını hem güncel köşe yazısının tamamının tıbbi incelemesini 2026-09-30 tarihinde onayladı. `reviewDate: 2026-09-30` ve `approvedBy: "Doç. Dr. Senai Aksoy"` işlendi. Bu kayıt commit, deploy veya canlı yayın doğrulaması değildir.
+
+---
 
 ### dusuk-sonrasi-hamilelik-bekleme-suresi (tr) — ilk adet öncesi gebelik, cinsel ilişkiye dönüş ve ilk adet kanaması soruları; yanıt tarihi 2026-09-30
 
