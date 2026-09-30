@@ -61,7 +61,7 @@ Doğrulama notu (2026-09-29): Search Console `sc-domain:tupbebek.com`, 28 Hazira
 
 **Anlam ve kaynak kontrolü 3:** Kaynak parametresi temizlendi ve PubMed bağlantısına bağlandı. "Uterustan ayrılması" ifadesi Türkçe portal diline uygun biçimde "rahimle bağlantısının kesilmesi" şeklinde açıklaştırıldı; 4–6 hafta ve bir sonraki siklus takvimi korundu.
 
-**Durum:** Hekim yanıtları 2026-09-30 tarihinde alındı; düzenlenmiş karşılıkları makalenin `#faq` bölümüne yerleştirildi. Düzenlenmiş biçimlerin görünür kullanımı Dr. Aksoy'un 2026-09-30 tarihli "onay" mesajıyla onaylandı (PR #238). Makale 2026-09-30'da yayına alındı; canlı sayfada SSS başlığı ve üç yanıt doğrulandı.
+**Durum:** Hekim yanıtları 2026-09-30 tarihinde alındı; düzenlenmiş karşılıkları makalenin `#faq` bölümüne yerleştirildi. Düzenlenmiş biçimlerin görünür kullanımı Dr. Aksoy'un 2026-09-30 tarihli "onay" mesajıyla onaylandı (PR #238). Makale 2026-09-30'da yayına alındı; canlı sayfada SSS başlığı ve üç yanıt doğrulandı. Tıbbi kontrol: Dr. Aksoy makalenin 2026-09-30 sürümü için tıbbi kontrol onayını 2026-09-30'da verdi; `reviewDate: 2026-09-30` ve `approvedBy: "Doç. Dr. Senai Aksoy"` işlendi.
 
 ### endoskopik-cerrahi-histeroskopi (tr) — kanama, günlük yaşama dönüş ve ilk adet soruları; yanıt tarihi 2026-09-29
 
@@ -111,7 +111,7 @@ Doğrulama notu (2026-09-29): Search Console `sc-domain:tupbebek.com`, 28 Hazira
 
 **Anlam ve kaynak kontrolü 3:** Codex'in son cümlede yaptığı "hekim tarafından değerlendirilmelidir" değişikliği 2026-09-29 denetiminde geri alındı; yanıt özgün metinle birebir aynıdır. Görünür kullanım onayı: bkz. aşağıdaki durum notu.
 
-**Durum:** Makaleye giren üç yanıtın görünür kullanımı, Dr. Aksoy'un 2026-09-30 tarihli "onay" mesajıyla onaylandı; makale `published` durumunda tutuldu. Bu kayıt commit, deploy veya yayın doğrulaması anlamına gelmez.
+**Durum:** Makaleye giren üç yanıtın görünür kullanımı, Dr. Aksoy'un 2026-09-30 tarihli "onay" mesajıyla onaylandı; makale `published` durumunda tutuldu. Bu kayıt commit, deploy veya yayın doğrulaması anlamına gelmez. Tıbbi kontrol: Dr. Aksoy makalenin 2026-09-30 sürümü için tıbbi kontrol onayını 2026-09-30'da verdi; `reviewDate: 2026-09-30` ve `approvedBy: "Doç. Dr. Senai Aksoy"` işlendi.
 
 ---
 
