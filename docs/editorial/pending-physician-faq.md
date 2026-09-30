@@ -33,6 +33,8 @@ Doğrulama notu (2026-09-29): Search Console `sc-domain:tupbebek.com`, 28 Hazira
 
 **İkinci humanize turu (2026-09-30):** Gövdede dil düzenlemesi yapıldı (folikül bölümündeki üçlü uyarı tek cümlede birleşti, "araştırma ≠ yerleşik tedavi" fikri yalnızca Son Söz'de bırakıldı, "over" ve "trombosit" ilk geçişte açıklandı, HFEA "kırmızı" derecelendirmesi canlı sayfaya göre netleştirildi, kişisel görüş notu "siz" diline çevrildi). SSS yanıtları, kaynaklar ve linkler değişmedi. Dr. Aksoy yeni metni aynı gün "onaylıyorum" mesajıyla onayladı.
 
+**Üçüncü küçük düzenleme (2026-09-30):** Dış değerlendirme sonrası, folikül paragrafında önceki onaylı metindeki kısa cümle ("Klinik gözlemim genel etkinlik kanıtı sayılamaz.") geri getirildi; "değişimin PRP'den kaynaklandığını da göstermez" sınırı korundu. Yeni iddia eklenmedi. Dr. Aksoy uygulanmasını aynı gün onayladı.
+
 ---
 
 ### dusuk-sonrasi-hamilelik-bekleme-suresi (tr) — ilk adet öncesi gebelik, cinsel ilişkiye dönüş ve ilk adet kanaması soruları; yanıt tarihi 2026-09-30
