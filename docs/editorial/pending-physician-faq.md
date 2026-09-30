@@ -31,6 +31,8 @@ Doğrulama notu (2026-09-29): Search Console `sc-domain:tupbebek.com`, 28 Hazira
 
 **Durum:** Gerçek yanıt 2026-09-30'da alındı. Düzenlenmiş üç yanıt aynı oturumda Dr. Aksoy'a gösterildi; Dr. Aksoy “bunlara onay veriyorum” mesajıyla hem üç yanıtın görünür kullanımını hem güncel köşe yazısının tamamının tıbbi incelemesini 2026-09-30 tarihinde onayladı. `reviewDate: 2026-09-30` ve `approvedBy: "Doç. Dr. Senai Aksoy"` işlendi. Bu kayıt commit, deploy veya canlı yayın doğrulaması değildir.
 
+**İkinci humanize turu (2026-09-30):** Gövdede dil düzenlemesi yapıldı (folikül bölümündeki üçlü uyarı tek cümlede birleşti, "araştırma ≠ yerleşik tedavi" fikri yalnızca Son Söz'de bırakıldı, "over" ve "trombosit" ilk geçişte açıklandı, HFEA "kırmızı" derecelendirmesi canlı sayfaya göre netleştirildi, kişisel görüş notu "siz" diline çevrildi). SSS yanıtları, kaynaklar ve linkler değişmedi. Dr. Aksoy yeni metni aynı gün "onaylıyorum" mesajıyla onayladı.
+
 ---
 
 ### dusuk-sonrasi-hamilelik-bekleme-suresi (tr) — ilk adet öncesi gebelik, cinsel ilişkiye dönüş ve ilk adet kanaması soruları; yanıt tarihi 2026-09-30
