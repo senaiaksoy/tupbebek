@@ -11,6 +11,58 @@ Doğrulama notu (2026-09-29): Search Console `sc-domain:tupbebek.com`, 28 Hazira
 
 ## Yanıtlanan sorular (editoryal kayıt)
 
+### hidrosalpinx-ve-kisirlik (tr) — kendiliğinden gerileme, tek taraflı hidrosalpinx ve transfer zamanlaması soruları; yanıt tarihi 2026-09-30
+
+**Soru verisi kontrolü (2026-09-30):** Hedef mülk `sc-domain:tupbebek.com`, sayfa `https://tupbebek.com/makaleler/hidrosalpinx-ve-kisirlik/`. Bu oturumda Search Console sorgu raporuna erişilemedi; bu sayfa için dönem, sorgu ve gösterim sayıları doğrulanamadı. Türkiye/Türkçe Google Autocomplete yanıtları (`hl=tr&gl=tr`, `client=firefox`) canlı sorgulandı. Aşağıdaki ham öneriler yalnızca konu ilgisini gösterir; soru sıklığını veya hacim sırasını ölçmez.
+
+**Soru 1 (Kendiliğinden gerileme ve tanı değişkenliği):** Hidrosalpinx (tüpte sıvı birikimi) kendiliğinden geçer mi; ultrasonda zaman zaman kaybolup tekrar görülen şüpheli durumlarda yaklaşımınız nedir?
+
+**Arama verisi (Soru 1):** [Google Autocomplete TR, "hidrosalpenks kend"](https://suggestqueries.google.com/complete/search?client=firefox&hl=tr&gl=tr&q=hidrosalpenks%20kend), 2026-09-30. Ham öneri: "hidrosalpenks kendiliğinden geçer mi". Makaledeki soru, aynı soruya ultrason görünümündeki değişkenliği ekler; gösterim sayısı yok.
+
+**Özgün yanıt 1 (kullanıcının 2026-09-30 tarihli mesajı, değiştirilmeden):**
+
+> Hidrosalpinx genellikle kendiliğinden iyileşen bir durum değildir. Ultrasonda bir muayenede görülüp diğerinde kaybolması, tüp içindeki sıvının zaman zaman boşalmasına veya görüntüleme koşullarına bağlı olabilir; bu nedenle tek bir ultrasonla kesin karar vermem. Tekrarlayan ultrason, gerekirse HSG/HyCoSy ve klinik öyküyle gerçekten hidrosalpinx olup olmadığını netleştirmeye çalışırım. Özellikle ultrasonda belirgin görülen hidrosalpinx IVF başarısını olumsuz etkileyebilir. [AsRM](https://prod.asrm.org/practice-guidance/practice-committee-documents/role-of-tubal-surgery-in-the-era-of-assisted-reproductive-technology-a-committee-opinion-2021/?utm_source=chatgpt.com)
+
+**Makaleye giren düzenlenmiş yanıt 1:**
+
+> Hidrosalpinx genellikle kendiliğinden iyileşen bir durum değildir. Ultrasonda bir muayenede görülüp diğerinde kaybolması, tüp içindeki sıvının zaman zaman boşalmasına veya görüntüleme koşullarına bağlı olabilir; bu nedenle tek bir ultrasonla kesin karar vermem. Tekrarlayan ultrason, gerekirse HSG/HyCoSy ve klinik öyküyle gerçekten hidrosalpinx olup olmadığını netleştirmeye çalışırım. Özellikle ultrasonda belirgin görülen hidrosalpinx IVF başarısını olumsuz etkileyebilir ([ASRM](https://pubmed.ncbi.nlm.nih.gov/33642065/)).
+
+**Anlam ve kaynak kontrolü 1:** Kaynak linkindeki `?utm_source=chatgpt.com` parametresi temizlendi; [ASRM 2021](https://pubmed.ncbi.nlm.nih.gov/33642065/) kılavuzuna bağlandı. Hekimin klinik karar değişkenleri ve takip adımları birebir korundu.
+
+---
+
+**Soru 2 (Tek taraflı hidrosalpinx ve doğal gebelik):** Tek taraflı hidrosalpinxi olan ve diğer tüpü açık görünen bir kadında hemen ameliyat veya tüp bebek mi önerirsiniz, yoksa doğal gebelik denemesi için süre tanır mısınız?
+
+**Arama verisi (Soru 2):** [Google Autocomplete TR, "hidrosalpenks ile gebe"](https://suggestqueries.google.com/complete/search?client=firefox&hl=tr&gl=tr&q=hidrosalpenks%20ile%20gebe), 2026-09-30. Ham öneri: "hidrosalpenks ile gebe kalanlar". Bu öneri doğal gebelik konusuna ilgiyi gösterir; tek taraflı olgu, ameliyat ve IVF kararı editoryal sorunun klinik genişletmesidir. Önceki kayıtta geçen "hidrosalpenks ile hamile kalınır mı" ve "hidrosalpenks varken" tam sorguları bu kontrolde öneri döndürmedi; gösterim sayısı yok.
+
+**Özgün yanıt 2 (kullanıcının 2026-09-30 tarihli mesajı, değiştirilmeden):**
+
+> Tek taraflı hidrosalpinx varsa herkese doğrudan IVF veya ameliyat önermem. Yaş, over rezervi, infertilite süresi, diğer tüpün gerçekten sağlıklı olup olmadığı ve sperm faktörü önemlidir. Genç, rezervi iyi, diğer tüpü normal ve başka infertilite nedeni olmayan bir hastada doğal gebelik için belirli bir süre tanınabilir; ancak ileri yaşta, uzun infertilite öyküsünde veya IVF planlanıyorsa hidrosalpinxin tedavisi daha fazla önem kazanır. Çünkü tek taraflı hidrosalpinx bile IVF gebelik oranlarını düşürebilir. [ASRM Integration](https://integration.asrm.org/practice-guidance/practice-committee-documents/role-of-tubal-surgery-in-the-era-of-assisted-reproductive-technology-a-committee-opinion-2021/?_t_hit.id=ASRM_Models_Pages_ContentPage%2F_a0778cc7-32c4-4bcb-967e-d0dbe43a3863_en&_t_hit.pos=27&_t_tags=siteid%3A01216f06-3dc9-4ac9-96da-555740dd020c%2Clanguage%3Aen&utm_source=chatgpt.com)
+
+**Makaleye giren düzenlenmiş yanıt 2:**
+
+> Tek taraflı hidrosalpinx varsa herkese doğrudan IVF veya ameliyat önermem. Yaş, yumurtalık rezervi, infertilite süresi, diğer tüpün gerçekten sağlıklı olup olmadığı ve sperm faktörü önemlidir. Genç, rezervi iyi, diğer tüpü normal ve başka infertilite nedeni bulunmayan bir hastada doğal gebelik için belirli bir süre tanınabilir; ancak ileri yaşta, uzun infertilite öyküsünde veya IVF planlanıyorsa hidrosalpinxin tedavisi daha fazla önem kazanır. Çünkü tek taraflı hidrosalpinx bile IVF gebelik oranlarını düşürebilir ([ASRM](https://pubmed.ncbi.nlm.nih.gov/33642065/)).
+
+**Anlam ve kaynak kontrolü 2:** ASRM linkindeki entegrasyon ve chatgpt takip parametreleri temizlendi; PubMed bağlantısına bağlandı. "Over rezervi" portal standardına uygun olarak "yumurtalık rezervi" olarak sadeleştirildi; hekimin klinik karar değişkenleri ve doğal gebelik süresi tanıma ölçütleri tam olarak korundu.
+
+---
+
+**Soru 3 (Ameliyat sonrası transfer zamanlaması):** Hidrosalpinx nedeniyle tüpü alınan veya kapatılan bir hastada ameliyattan ne kadar sonra tüp bebek (veya dondurulmuş embriyo transferi) planlıyorsunuz?
+
+**Arama verisi (Soru 3):** [Google Autocomplete TR, "hidrosalpenks ameliyatı sonrası"](https://suggestqueries.google.com/complete/search?client=firefox&hl=tr&gl=tr&q=hidrosalpenks%20ameliyat%C4%B1%20sonras%C4%B1), 2026-09-30. Ham öneriler: "hidrosalpenks ameliyatı sonrası iyileşme" ve "hidrosalpenks ameliyatı sonrası tüp bebek kadınlar kulübü". Makaledeki soru ameliyat sonrası IVF/transfer zamanlamasını tıbbi ve nötr biçimde sorar. Önceki kayıttaki "hidrosalpenks ameliyatı sonrası tüp bebek" tam ifadesi tek başına öneri olarak dönmedi; gösterim sayısı yok.
+
+**Özgün yanıt 3 (kullanıcının 2026-09-30 tarihli mesajı, değiştirilmeden):**
+
+> Salpenjektomi veya proksimal tüp kapatılması sonrası aylarca beklemek zorunlu değildir. Komplikasyonsuz laparoskopik ameliyattan sonra hasta iyileştiğinde IVF stimülasyonuna çoğu zaman sonraki siklusta başlanabilir; dondurulmuş embriyo transferini ise genellikle ameliyat sonrası iyileşme tamamlandıktan sonra, yaklaşık 4–6 hafta veya bir sonraki adet sonrası planlamak mümkündür. Daha zor cerrahi, enfeksiyon veya geniş adezyolizis varsa süreyi kişiye göre uzatırım. Hidrosalpinxin IVF öncesinde cerrahi olarak ortadan kaldırılması veya tüpün uterustan ayrılması gebelik sonuçlarını iyileştiren yerleşik yaklaşımlardandır. [AsRM](https://prod.asrm.org/practice-guidance/practice-committee-documents/role-of-tubal-surgery-in-the-era-of-assisted-reproductive-technology-a-committee-opinion-2021/?utm_source=chatgpt.com)
+
+**Makaleye giren düzenlenmiş yanıt 3:**
+
+> Salpenjektomi veya proksimal tüp kapatılması sonrası aylarca beklemek zorunlu değildir. Komplikasyonsuz laparoskopik ameliyattan sonra hasta iyileştiğinde IVF stimülasyonuna çoğu zaman sonraki siklusta başlanabilir; dondurulmuş embriyo transferini ise genellikle ameliyat sonrası iyileşme tamamlandıktan sonra, yaklaşık 4–6 hafta veya bir sonraki adet sonrası planlamak mümkündür. Daha zor cerrahi, enfeksiyon veya geniş adezyolizis (yapışıklık açılması) varsa süreyi kişiye göre uzatırım. Hidrosalpinxin IVF öncesinde cerrahi olarak ortadan kaldırılması veya tüpün rahimle bağlantısının kesilmesi gebelik sonuçlarını iyileştiren yerleşik yaklaşımlardandır ([ASRM](https://pubmed.ncbi.nlm.nih.gov/33642065/)).
+
+**Anlam ve kaynak kontrolü 3:** Kaynak parametresi temizlendi ve PubMed bağlantısına bağlandı. "Uterustan ayrılması" ifadesi Türkçe portal diline uygun biçimde "rahimle bağlantısının kesilmesi" şeklinde açıklaştırıldı; 4–6 hafta ve bir sonraki siklus takvimi korundu.
+
+**Durum:** Hekim yanıtları 2026-09-30 tarihinde alındı; düzenlenmiş karşılıkları makalenin `#faq` bölümüne yerleştirildi. Bu düzenlenmiş biçimler için ayrıca açık yayın onayı kaydı bulunamadı. Mevcut yayındaki makale yayında kalır; bu çalışma kopyası onay tamamlanmadan yayımlanmaz.
+
 ### endoskopik-cerrahi-histeroskopi (tr) — kanama, günlük yaşama dönüş ve ilk adet soruları; yanıt tarihi 2026-09-29
 
 **Soru 1 (Kanama ve acil başvuru):** Histeroskopi sonrasında kanama veya lekelenme kaç gün normal kabul edilir; hastanın hangi belirtilerde hemen kliniğe başvurması gerekir?
