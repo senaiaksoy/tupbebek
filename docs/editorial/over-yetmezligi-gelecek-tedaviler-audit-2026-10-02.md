@@ -102,3 +102,7 @@ Son doğrulama: `npm run build` başarılı; `npm run verify:preflight` 26/26 ge
 Bu editoryal sürüm yereldedir; yeni commit/push/deploy yapılmamıştır. Bekleyen hekim sorusu yoktur.
 
 **Bu editoryal sürüm için sonraki yayın yetkisi:** Dr. Aksoy, yerel düzenleme ve doğrulama tesliminden sonra “Commit, push, deploy.” talimatını verdi. Bu talimat yukarıda tanımlanan üç dosyanın yayın işlemlerini kapsar; yerel aşama notu tarihsel kayıttır. Gerçek hekim yanıtları ve tıbbi inceleme metadata'sı değişmedi.
+
+## Doğal gebelik yüzdeleri geri getirildi — 2 Ekim 2026
+
+Dr. Aksoy, ikinci audit sonrasında önceki sürümde çıkarılan doğal gebelik yüzdelerinin uyarıyla geri getirilmesini istedi. ESHRE/ASRM/IMS 2024 kılavuzunun tam PDF metni (INTERNATIONAL-GUIDELINE-ON-POI_2024_2.pdf) yeniden okundu: s. 85 gerekçe bölümü, ovarian activity olan non-surgical POI'de doğal gebeliğin "up to 15% in those women, although probably in <5% overall" olduğunu söyler; s. 84, bilginin donör yumurta bekleyen kadınlardaki gözlemlerden türetildiğini belirtir (Sauer 1995: 200 kadından 5'i, %2,5, tanıdan 2-8 yıl içinde; van Kasteren 1999: gözlemsel çalışmalarda %4,8, kontrollü çalışmalarda %1,5). Makaledeki "Doğal gebelik" maddesi bu rakamları, "kişisel gebelik şansı değildir" uyarısı ve tasarım/izlem farkı notuyla yazdı. Altı gerçek SSS yanıtı ve hekim kutusu değişmedi. Bu kayıt push, merge veya deploy anlamına gelmez.
