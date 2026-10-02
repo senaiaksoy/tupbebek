@@ -34,6 +34,8 @@ const { entry } = Astro.props;
 const { Content, headings } = await entry.render();
 // Display-only: keep the original summary available to metadata and schema.
 const displaySummary = entry.data.summary?.replace(/^\s*k[ıi]sa\s+cevap\s*:\s*/i, '');
+// This reference article brings its recorded clinical decision guidance into the opening.
+const expertContributionInOpening = entry.slug === 'over-yetmezligi-gelecek-tedaviler';
 
 // Resolve author identity without rewriting an editorial-board author as a physician.
 const DEFAULT_AUTHOR_TITLE = 'Kadın Hastalıkları ve Doğum Uzmanı';
@@ -188,6 +190,22 @@ const heroSrcSet = getResponsiveImageSrcSet(sanitizedImage);
                     </KisaCevap>
                 )}
 
+                    {expertContributionInOpening && entry.data.expertContribution && entry.data.expertContribution.approvalStatus === 'approved' && (
+                        <div data-pagefind-body>
+                        <DoctorNote
+                          title={entry.data.expertContribution.title}
+                          topic={entry.data.category}
+                          question={entry.data.expertContribution.question}
+                          note={entry.data.expertContribution.text}
+                          evidenceNote={entry.data.expertContribution.evidenceNote}
+                          author={entry.data.expertContribution.author}
+                          authorTitle={entry.data.expertContribution.authorTitle}
+                          authorUrl={entry.data.expertContribution.authorUrl}
+                          answeredAt={entry.data.expertContribution.answeredAt}
+                        />
+                        </div>
+                    )}
+
                 <!-- Hero Image — başlık, kimlik ve kısa cevaptan sonra -->
                 {entry.data.image && (
                     <figure class="mt-6 mb-0">
@@ -252,7 +270,7 @@ const heroSrcSet = getResponsiveImageSrcSet(sanitizedImage);
                         <Content />
                     </div>
 
-                    {entry.data.expertContribution && entry.data.expertContribution.approvalStatus === 'approved' && (
+                    {!expertContributionInOpening && entry.data.expertContribution && entry.data.expertContribution.approvalStatus === 'approved' && (
                         <DoctorNote
                           title={entry.data.expertContribution.title}
                           topic={entry.data.category}

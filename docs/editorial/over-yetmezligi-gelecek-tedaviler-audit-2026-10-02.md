@@ -69,3 +69,15 @@ Erişim: 2 Ekim 2026, Türkçe/Türkiye, `client=firefox&hl=tr&gl=tr`. Yeni soru
 - Arama terimi: **yumurtalık yaşlanması**. [Canlı uç nokta](https://suggestqueries.google.com/complete/search?client=firefox&hl=tr&gl=tr&q=yumurtal%C4%B1k+ya%C5%9Flanmas%C4%B1). Ham ifadeler: “yumurtalık yaşlanması tedavisi”; “yumurtalık yaşlanması neden olur”; “yumurtalık yaşlanması kadınlar kulübü”; “yumurtalık yaşlanması nedir”; “yumurtalık yaşlanması”; “yumurtalık yaşlanmasi belirtileri”; “kadınlarda yumurtalık yaşlanması”; “erken yumurtalık yaşlanması”.
 
 Ek karşılaştırma: Columbia dahil edilme ölçütleri düzenli adet gören kadınları kapsar; çok az/hiç folikülü olmayanlar dışlanır. Li çalışmasında 100 kişinin tamamı ilacı almamıştır; iki randomize gruptan biri rapamisin almıştır. Bu popülasyon ve müdahale açıklamaları da düzeltildi.
+
+## Gemini değerlendirmesi sonrası yerleşim düzenlemesi — 2 Ekim 2026
+
+Dr. Aksoy, kapsamlı yeniden yazım yerine gerçek hekim katkısının girişe yaklaştırılması ve araştırma ayrıntılarının ikinci okuma katmanında sunulması önerisine “ok yap” yanıtıyla izin verdi. Başlangıç sürümü, tıbbi incelemesi tamamlanan `167b3eaf` commit'idir. Bu bölüm yerel düzenleme kaydıdır; yeni commit, push veya deploy gerçekleştiği anlamına gelmez.
+
+- Kayıtlı `expertContribution`, yalnızca bu makalede kısa cevaptan hemen sonra bir kez gösterilir. Ortak şablonun diğer makalelerdeki yerleşimi korunur. Katkının sorusu, klinik metni, tarihi ve onayı değiştirilmedi.
+- Mevcut karşılaştırma tablosu, bugünkü standart bakım bölümünün ardından ve araştırma ayrıntılarından önce taşındı; tablonun metni ve bölüm ankrajı korundu.
+- Finerenon, IVA, rapamisin ve kök hücre bölümlerindeki yoğun çalışma ayrıntıları dört yerel HTML `details` alanına alındı. Bölüm yanıtları, finerenonun sınırları, IVA riskleri ve önerilmemesi, rapamisinin gebelik güvenliği ve kök hücre kanıtının genel sınırları kapalı alanların dışında bırakıldı. Ayrıntılar JavaScript gerektirmeden açılabilir ve üretilen HTML içinde bulunur.
+- Önce/sonra anlam kontrolü: bütün özgün dolu MDX satırlarının çoklu kümesi eşit; klinik sayı, payda, popülasyon, belirsizlik ve kaynak metni çıkarılmadı veya yeniden yazılmadı. Frontmatter ve altı gerçek SSS bloğu birebir korundu. Yeni soru, deneyim, tıbbi iddia veya onay eklenmedi; bekleyen soru yok.
+- Son doğrulama: `npm run build` başarılı; son `verify:preflight` 26/26 geçti. Üretilen HTML'de dört araştırma alanı, tek hekim katkısı ve korunan Pagefind arama kapsamı doğrulandı. Tek H1, tek kısa cevap, 29 geçerli sayfa içi bağlantı, yinelenen ID olmaması ve SSS ankrajı korundu. Yerel Chrome'da finerenon ayrıntısı tıklamayla açıldı ve odaklanmış düğmede boşluk tuşuyla kapandı; araştırma paragrafları Markdown kalıntısı olmadan render edildi. Bu kontroller yeni canlı yayın kanıtı değildir.
+
+**Bu yerleşim için sonraki yayın yetkisi:** Dr. Aksoy, yerel düzenleme tesliminden sonra “Commit, push, deploy.” talimatını verdi. Bu talimat yerleşim değişikliğinin commit/push/deploy yetkisidir; yukarıdaki yerel aşama notu tarihsel olarak korunur. Klinik metin, gerçek hekim yanıtları ve mevcut tıbbi inceleme kaydı değiştirilmedi.
