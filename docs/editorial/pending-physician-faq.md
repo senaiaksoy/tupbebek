@@ -28,7 +28,7 @@ Doğrulama notu (2026-09-29): Search Console `sc-domain:tupbebek.com`, 28 Hazira
 
 **Sahiplik ve kapsam kararı (2026-10-02):** Dr. Aksoy, etiketlerin ChatGPT çıktısından kaldığı sorusuna "ifadeler bana ait" yönünde yanıt verdi (seçenek B) ve donör oosit cümlesinin kutudan çıkarılmasını istedi. Gerekçe: 2238 sayılı Kanun donör yumurtayı Türkiye'de yasaklıyor; makalenin ilgili bölümü bu yasağı kanun metnine dayanarak anlatıyor. Kutuda donör konusu geçmeyecek.
 
-**Düzenlenmiş karşılık:** Onay bekliyor (bkz. sohbet; onaydan sonra bu satır güncellenecek).
+**Düzenlenmiş karşılık (görünür kullanım onaylandı, 2026-10-02):** Yanıt anlam değişmeden dört paragrafa bölündü ve makalede "Dr. Aksoy'un yaklaşımı" kutusu olarak yayımlanmak üzere `expertContribution` alanına girdi. Yapılan düzenlemeler: over/ovulasyon/oosit/estradiol/hipergonadotropik terimleri portal diline çevrildi ("östradiol" için kısa açıklama eklendi); ChatGPT etiketleri temizlendi; kılavuz cümlesine PubMed bağlantısı (Panay 2024, PMID 39660328) eklendi (kılavuz tam metni daha önce okunup doğrulandı); donör oosit cümlesi Dr. Aksoy'un kararıyla kutudan çıkarıldı ve ikinci paragraf "standart seçenekleri vakit kaybetmeden konuşurum" ile bitirildi. Dr. Aksoy aynı gün "Onaylıyorum, yayına hazırla" yanıtıyla açık yayın onayını verdi; `authorTitle` ve `answeredAt: 2026-10-02` teyit edildi.
 
 ### over-yetmezligi-gelecek-tedaviler (tr) — üç SSS sorusu; yanıt tarihi 2026-10-02
 
