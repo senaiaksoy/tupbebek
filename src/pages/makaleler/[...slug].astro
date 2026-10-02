@@ -14,6 +14,7 @@ import EEATBadge from '../../components/EEATBadge.astro';
 import KisaCevap from '../../components/KisaCevap.astro';
 import ArticleContentsBehavior from '../../components/ArticleContentsBehavior.astro';
 import EvidenceGradeCard from '../../components/EvidenceGradeCard.astro';
+import EvidenceGradeBadge from '../../components/EvidenceGradeBadge.astro';
 import ReferenceList from '../../components/ReferenceList.astro';
 import MedicalDisclaimer from '../../components/MedicalDisclaimer.astro';
 import DoctorNote from '../../components/global/DoctorNote.astro';
@@ -152,9 +153,9 @@ const heroSrcSet = getResponsiveImageSrcSet(sanitizedImage);
                 <!-- Yazar ve tıbbi inceleme -->
                 <EEATBadge
                     compact
-                    evidenceGrade={!entry.data.hideEvidenceGrade
+                    evidenceGrade={expertContributionInOpening ? undefined : (!entry.data.hideEvidenceGrade
                         ? entry.data.recommendationGrade
-                        : (!entry.data.recommendationGrade ? 'mixed' : undefined)}
+                        : (!entry.data.recommendationGrade ? 'mixed' : undefined))}
                     author={authorName}
                     authorTitle={authorTitle}
                     authorCredentials={authorCredentials}
@@ -166,6 +167,16 @@ const heroSrcSet = getResponsiveImageSrcSet(sanitizedImage);
                     reviewDate={reviewDateStr}
                     lastModified={lastModifiedStr}
                 />
+
+                {expertContributionInOpening && entry.data.recommendationGrade && (
+                    <div class="mt-3 text-sm leading-relaxed text-gray-600">
+                        <p class="m-0 flex flex-wrap items-center gap-2">
+                            <span class="font-semibold">Deneysel yaklaşımlar için genel kanıt düzeyi:</span>
+                            <EvidenceGradeBadge grade={entry.data.recommendationGrade} />
+                        </p>
+                        <p class="mt-1 mb-0">Bu derece POI'nin standart tanı ve bakımına değil, POI'yi geri çevirme veya yumurtalık yaşlanmasını durdurma iddialarına aittir.</p>
+                    </div>
+                )}
 
                 {entry.data.summary && (
                     <KisaCevap id="article-summary-title" title={isEditorColumn ? 'Baş editörün notu' : 'Kısa cevap'} class="mt-5">

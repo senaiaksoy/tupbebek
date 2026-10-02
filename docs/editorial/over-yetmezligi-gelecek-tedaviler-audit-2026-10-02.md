@@ -81,3 +81,24 @@ Dr. Aksoy, kapsamlı yeniden yazım yerine gerçek hekim katkısının girişe y
 - Son doğrulama: `npm run build` başarılı; son `verify:preflight` 26/26 geçti. Üretilen HTML'de dört araştırma alanı, tek hekim katkısı ve korunan Pagefind arama kapsamı doğrulandı. Tek H1, tek kısa cevap, 29 geçerli sayfa içi bağlantı, yinelenen ID olmaması ve SSS ankrajı korundu. Yerel Chrome'da finerenon ayrıntısı tıklamayla açıldı ve odaklanmış düğmede boşluk tuşuyla kapandı; araştırma paragrafları Markdown kalıntısı olmadan render edildi. Bu kontroller yeni canlı yayın kanıtı değildir.
 
 **Bu yerleşim için sonraki yayın yetkisi:** Dr. Aksoy, yerel düzenleme tesliminden sonra “Commit, push, deploy.” talimatını verdi. Bu talimat yerleşim değişikliğinin commit/push/deploy yetkisidir; yukarıdaki yerel aşama notu tarihsel olarak korunur. Klinik metin, gerçek hekim yanıtları ve mevcut tıbbi inceleme kaydı değiştirilmedi.
+
+## İkinci dış değerlendirme sonrası editoryal geçiş — 2 Ekim 2026
+
+Başlangıç `e0ce2842`: yayındaki, doğrulanmış yerleşim sürümü. Dr. Aksoy yapıştırdığı değerlendirme için kapsam sorusuna “Uygun önerileri makaleye uygula” yanıtını verdi. Bu aşama editoryal düzenlemedir; yeni klinik deneyim, hekim yanıtı veya tıbbi inceleme onayı üretilmedi.
+
+| Konum | Önceki sorun | Uygulama ve anlam sınırı |
+|---|---|---|
+| Üst kanıt rozeti | D/E derecesinin bütün yazıyı veya standart POI bakımını nitelediği düşünülebiliyordu | Yalnızca hedef makalede rozet “Deneysel yaklaşımlar için genel kanıt düzeyi” başlığıyla sunuldu. Gövdedeki mevcut kapsam açıklaması ilk ekrana alındı; derece değiştirilmedi. |
+| Özet ve giriş | Beş cümlelik özet ve metni duyuran iki giriş paragrafı | Özet üç cümlede aynı sonuçları taşıyor. Giriş hasta sorusuyla açılıyor; “muayenede sık duyuyorum” veya uydurma hasta alıntısı eklenmedi. |
+| Araştırma okuma rehberleri | “Araştırmalar Nasıl Okunur?” ve “Haber Başlıklarını Okurken Beş Soru” aynı kontrolleri ayrı yerlerde anlatıyordu | Beş soru ilk rehbere taşındı; çalışma türleri tablosu aynı bölümde açılabilir. Sonuç/payda, güvenlik, kayıt-protokol uyumu ve araştırmanın standart tedaviyi geciktirmemesi sınırları korunuyor. |
+| Güncel seçenekler | Yaş çerçevesi ve yapılabilecekler ayrı kapanış bölümleriydi | “Bugün Hangi Seçenekler Var?” altında birleştirildi. POI bakım adımları, HFEA yaş oranları ve paydaları, Steiner popülasyonu/sonlanımı, DHEA kanıtı ve ilgili bağlantılar korunuyor. |
+| Yumurta kalitesi ve laboratuvar araştırmaları | Altı teknik yaklaşım ana okumayı uzatıyordu | Bütün mevcut çalışma paragrafları, sayılar ve atıflar ek bir açılır alana alındı. Fertilo'nun yumurta olgunlaştırma amacı IVG'den ayrı tutuldu; klinik kullanımın “yakında” olacağı veya “10 yıl” süreceği gibi süre tahmini eklenmedi. |
+| Finerenon | Tam metin erişim sınırı; klinik karara katkı sağlamayan araştırmacı isim parantezi | Science sayfası bu oturumda 403 döndü. [HKU 371375](https://hub.hku.hk/handle/10722/371375) ve [HKU 371061](https://hub.hku.hk/handle/10722/371061) kayıtlarında ilişkili dosya yok; özet ve abonelik gerektirebilecek yayıncı bağlantısı var. Tam metin okunmuş sayılmadı. Üniversite bültenine açıkça bağlanan 14 kişilik ayrıntı ve eş zamanlı uyarım sınırı korundu; gereksiz araştırmacı adı paragrafı çıkarıldı. |
+
+Kapsamlı kontrol sonucunda bilimsel omurga, 61 kaynak, altı gerçek SSS yanıtı ve `expertContribution` korunmuştur. Birinci tekil yeni hekim yorumları gerçek yanıt olmadığı için eklenmedi. %20 budama veya AI hissi yüzdesi hedef yapılmadı. İçindekiler 14'ten 12 başlığa indirildi; değişen veya birleşen başlıkların eski ankrajları bırakıldı. Sayı/birim/kaynak yardımcı kontrolünde gövde farkı yok; `review_changes` sonucu yalnızca özet frontmatter değişikliğine işaret ediyor. Bu otomatik sonuç anlam eşitliği ya da tıbbi onay değildir; görünür özet ve yeni bölüm açıklamaları ayrıca elle karşılaştırıldı. Etiket tekrarları çalışma ayrıntılarında karşılaştırmayı kolaylaştırdığı için bütünüyle silinmedi.
+
+Son doğrulama: `npm run build` başarılı; `npm run verify:preflight` 26/26 geçti. Önce/sonra karşılaştırmasında gerçek hekim katkısı, altı SSS ve 61 kaynak birebir aynı. Üretilen HTML'de tek H1, yinelenen ID olmaması, 25 geçerli sayfa içi bağlantı, altı araştırma açılır alanı ve FAQPage bulunmaması doğrulandı. Yerel Chrome'da yeni üst kanıt açıklaması görüldü; çalışma türleri tablosu ve laboratuvar ayrıntıları tıklamayla açıldı, laboratuvar alanı tekrar kapandı. Eski bölüm ankrajları korunuyor.
+
+Bu editoryal sürüm yereldedir; yeni commit/push/deploy yapılmamıştır. Bekleyen hekim sorusu yoktur.
+
+**Bu editoryal sürüm için sonraki yayın yetkisi:** Dr. Aksoy, yerel düzenleme ve doğrulama tesliminden sonra “Commit, push, deploy.” talimatını verdi. Bu talimat yukarıda tanımlanan üç dosyanın yayın işlemlerini kapsar; yerel aşama notu tarihsel kayıttır. Gerçek hekim yanıtları ve tıbbi inceleme metadata'sı değişmedi.
