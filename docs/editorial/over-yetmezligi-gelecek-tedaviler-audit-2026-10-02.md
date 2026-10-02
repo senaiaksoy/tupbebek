@@ -1,6 +1,6 @@
 # Over yetmezliği ve gelecek tedaviler: geniş audit ve humanize kaydı
 
-Tarih: 2 Ekim 2026. Hedef: `src/content/articles/over-yetmezligi-gelecek-tedaviler.mdx`. Başlangıç sürümü: `173939b2`; çalışma başında Git temizdi. Yetki: geniş audit, humanize ve kaynakla sınırlı düzeltme. Commit, push veya deploy yapılmadı. Başlangıç makalesi zaten yayındaydı; mevcut yayın durumu korundu. Bu yerel sürümün yeni tıbbi incelemesi henüz yapılmadı.
+Tarih: 2 Ekim 2026. Hedef: `src/content/articles/over-yetmezligi-gelecek-tedaviler.mdx`. Başlangıç sürümü: `173939b2`; çalışma başında Git temizdi. İlk audit tesliminin yetkisi geniş audit, humanize ve kaynakla sınırlı düzeltmeydi; o aşamada commit, push, deploy veya yeni tıbbi onay yoktu. Başlangıç makalesi zaten yayındaydı; mevcut yayın durumu korundu. Sonraki gerçek tıbbi onay ve yayın talimatı aşağıda ayrıca kaydedilmiştir.
 
 ## Üç ayrı audit sonucu
 
@@ -47,9 +47,13 @@ Search Console canlı kontrolü: doğru mülk `sc-domain:tupbebek.com`, Web, 30 
 - PubMed'deki 50 kaydın bibliyografisi ve özetleri; dört ClinicalTrials.gov JSON kaydı; ilgili ASRM/ESHRE, HFEA ve etiket kaynakları okundu. Li, Khattak, ESHRE ek uygulamalar ve Marti Gutierrez tam metinleri Europe PMC XML üzerinden ayrıca incelendi. Finerenon tam metni ve bütün 50 yayının tam metni okunmadı; bu audit sistematik derleme değildir.
 - Kanun PDF'si bu oturumdaki web isteğinde zaman aşımına uğradı. Mevcut kanun atfı korundu; ÜYTE saklama koşulları Sağlık Bakanlığı il müdürlüğünün yayımladığı Madde 20 metninden kontrol edildi. Bu kontrol resmi mevzuat uygunluk onayı değildir.
 
-## Yeniden tıbbi inceleme için somut kapsam
+## Sonraki tıbbi incelemenin kapsamı
 
-Finerenonun eş zamanlı uyarımı ve bülten sınırı; FSH tanı bağlamı; IVA randomizasyon tasarımları; rapamisin gebelik uyarısı ve eksik canlı doğum izlemi; doku nakli paydaları; düşük rezerv sonuçlarının POI'ye genellenmemesi. İlk sürümün gerçek onayı korunmuştur; bu değişikliklere yeni onay tarihi veya kimliği eklenmemiştir. Commit/push/deploy yoktur.
+Finerenonun eş zamanlı uyarımı ve bülten sınırı; FSH tanı bağlamı; IVA randomizasyon tasarımları; rapamisin gebelik uyarısı ve eksik canlı doğum izlemi; doku nakli paydaları; düşük rezerv sonuçlarının POI'ye genellenmemesi. İlk audit tesliminde bu değişiklikler için yeni onay yoktu; sonraki gerçek onay aşağıda kayıtlıdır.
+
+## Tıbbi onay ve yayın yetkisi — 2 Ekim 2026
+
+Dr. Aksoy bu oturumda önce “commit push deploy” talimatını verdi. Yeni sürümün tıbbi incelemesinin beklediği açıklanınca, “tıbbi inceleme tamam” mesajıyla incelemenin tamamlandığını doğruladı. Bu gerçek mesaj, yukarıdaki düzeltmeler için tıbbi inceleme kaydıdır; yayın yetkisi aynı oturumdaki açık commit/push/deploy talimatıdır. Frontmatter `reviewScope` ve yöntem notu bu doğrulamaya göre güncellendi. Gerçek SSS yanıtları ve `expertContribution` klinik metni yeniden üretilmedi. İlk düzeltme commit'i `3b8fce8c`; push/deploy ve canlı doğrulama ayrıca gerçekleştirilir, bu yetki kaydı tek başına gerçekleşmiş deploy kanıtı değildir.
 
 ## Canlı Google Autocomplete ham kayıtları
 

@@ -5,7 +5,7 @@ Zorunlu "Dr. Aksoy'a en sık sorulan sorular" bölümü için Dr. Aksoy'a sorulm
 | Makale (slug) | Dil | Soru | Veri kaynağı (sorgu, tarih) | Soruluş tarihi |
 |---|---|---|---|---|
 
-**Sonraki audit kaydı (2026-10-02, over-yetmezligi-gelecek-tedaviler):** Bekleyen soru yok; altı mevcut gerçek soru/yanıt bloğu korundu. Canlı Search Console kontrolü (`sc-domain:tupbebek.com`, 30 Haziran–29 Eylül 2026, hedef sayfa filtresi) 0 gösterim ve sorgu verisi olmadığını gösterdi; dönem yayından önce bitiyor. Sekiz Google Autocomplete sorgusu canlı yenilendi. Ham ifadeler, kaynak düzeltmeleri ve bu yerel sürüm için bekleyen yeni tıbbi inceleme [geniş audit kaydında](over-yetmezligi-gelecek-tedaviler-audit-2026-10-02.md) bulunur. Aşağıdaki önceki erişim ve yayın notları kendi oturumlarının tarihsel kayıtlarıdır.
+**Sonraki audit kaydı (2026-10-02, over-yetmezligi-gelecek-tedaviler):** Bekleyen soru yok; altı mevcut gerçek soru/yanıt bloğu korundu. Canlı Search Console kontrolü (`sc-domain:tupbebek.com`, 30 Haziran–29 Eylül 2026, hedef sayfa filtresi) 0 gösterim ve sorgu verisi olmadığını gösterdi; dönem yayından önce bitiyor. Sekiz Google Autocomplete sorgusu canlı yenilendi. Ham ifadeler, kaynak düzeltmeleri ve Dr. Aksoy'un aynı oturumdaki “tıbbi inceleme tamam” doğrulaması [geniş audit kaydında](over-yetmezligi-gelecek-tedaviler-audit-2026-10-02.md) bulunur. Aşağıdaki önceki erişim ve yayın notları kendi oturumlarının tarihsel kayıtlarıdır.
 
 **Yayın notu (2026-10-02):** Makale PR #247 ile birleştirildi ve deploy edildi; canlı sayfa ve beş iç link doğrulandı. `expertContribution` sorusu yanıtlandı, bekleyen listeden çıkarıldı (kayıt aşağıdaki "Yanıtlanan sorular" bölümünde).
 
