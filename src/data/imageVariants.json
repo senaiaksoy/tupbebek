@@ -827,6 +827,23 @@
       "height": 720
     }
   ],
+  "/images/makaleler/over-yetmezligi-gelecek-tedaviler.webp": [
+    {
+      "src": "/generated/article-heroes/makaleler-over-yetmezligi-gelecek-tedaviler-w640.webp",
+      "width": 640,
+      "height": 360
+    },
+    {
+      "src": "/generated/article-heroes/makaleler-over-yetmezligi-gelecek-tedaviler-w960.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "src": "/generated/article-heroes/makaleler-over-yetmezligi-gelecek-tedaviler-w1280.webp",
+      "width": 1280,
+      "height": 720
+    }
+  ],
   "/images/makaleler/pcos-yeni-adi-pmos.webp": [
     {
       "src": "/generated/article-heroes/makaleler-pcos-yeni-adi-pmos-w640.webp",
