@@ -136,8 +136,9 @@ const expectations = [
   {
     route: 'makaleler/yasa-gore-tup-bebek-basari-oranlari/index.html',
     type: 'Thing',
-    name: 'T\u00fcp bebek ba\u015far\u0131 oranlar\u0131',
-    sameAsIncludes: 'Q648065',
+    name: 'Ya\u015f ve kad\u0131n do\u011furganl\u0131\u011f\u0131',
+    sameAsIncludes: 'Q4691854',
+    alternateNameIncludes: 'Ya\u015fa g\u00f6re t\u00fcp bebek ba\u015far\u0131 oranlar\u0131',
   },
   {
     route: 'makaleler/kimyasal-gebelik/index.html',
