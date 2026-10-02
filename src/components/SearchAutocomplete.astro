@@ -191,12 +191,18 @@ const {
 
   // Open modal
   function openSearchModal() {
-    modal?.classList.remove('hidden');
-    setTimeout(() => {
-      modal?.classList.remove('opacity-0', 'invisible');
+    // Make the modal visible in the same step it leaves display:none, so no
+    // visibility transition runs and the input can take focus right away.
+    // Focusing inside the click also lets iOS open the keyboard. A delayed
+    // focus() landed while the modal was still visibility:hidden and was
+    // silently ignored, so typed text went nowhere.
+    modal?.classList.remove('hidden', 'invisible');
+    input?.focus({ preventScroll: true });
+    requestAnimationFrame(() => {
+      modal?.classList.remove('opacity-0');
       modal?.classList.add('modal-active');
-      input?.focus();
-    }, 10);
+      if (document.activeElement !== input) input?.focus({ preventScroll: true });
+    });
     loadPagefind(); // Preload
   }
 
@@ -335,7 +341,7 @@ const {
             const rawImage = result.meta?.image || '';
             const image = escapeAttr(rawImage.split(',')[0].trim());
             const safeTitle = escapeHtml(title);
-            const safeExcerpt = escapeHtml(excerpt);
+            const safeExcerpt = renderExcerpt(excerpt);
             const safeCategory = escapeHtml(category);
             
             const style = getCategoryStyle(category);
@@ -405,13 +411,29 @@ const {
     return escapeHtml(value);
   }
 
+  // Pagefind excerpts are HTML with <mark> around matched words. Escaping the
+  // whole string showed the tags as literal text. Parse it in an inert
+  // <template>, keep only <mark> as markup and escape every text node.
+  function renderExcerpt(value) {
+    const tpl = document.createElement('template');
+    tpl.innerHTML = String(value);
+    const walk = (node) => {
+      if (node.nodeType === Node.TEXT_NODE) return escapeHtml(node.textContent || '');
+      const inner = Array.from(node.childNodes).map(walk).join('');
+      return node.nodeName === 'MARK'
+        ? '<mark class="bg-primary-100 text-primary-800 font-semibold rounded-sm px-0.5 group-hover/item:bg-white/20 group-hover/item:text-white">' + inner + '</mark>'
+        : inner;
+    };
+    return Array.from(tpl.content.childNodes).map(walk).join('');
+  }
+
   // Keyboard navigation in results
   input?.addEventListener('keydown', (e) => {
     if (e.key === 'Enter') {
       e.preventDefault();
       const trimmed = input.value.trim();
       if (trimmed) {
-        window.location.href = `/makaleler?q=${encodeURIComponent(trimmed)}`;
+        window.location.href = `/makaleler/?q=${encodeURIComponent(trimmed)}`;
       }
       return;
     }
