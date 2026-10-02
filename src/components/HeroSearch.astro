@@ -185,7 +185,7 @@ const {
       e.preventDefault();
       const query = input.value.trim();
       if (query) {
-        let url = '/makaleler?q=' + encodeURIComponent(query);
+        let url = '/makaleler/?q=' + encodeURIComponent(query);
         if (activeCategory) {
           url += '&category=' + encodeURIComponent(activeCategory);
         }

@@ -38,7 +38,7 @@ function buildIndex() {
       id: slug,
       title,
       description: parseFrontmatterField(content, 'description') || undefined,
-      url: `/makaleler/${slug}`,
+      url: `/makaleler/${slug}/`,
       category: parseFrontmatterField(content, 'category') || undefined,
       image: sanitizeImage(parseFrontmatterField(content, 'image')) || undefined,
       type: 'article',
