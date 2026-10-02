@@ -231,6 +231,35 @@ if (online) {
       failures.push(`${expectation.route} about.alternateName does not include "${expectation.alternateNameIncludes}".`);
     }
   }
+
+  // Every Wikidata-mapped published article must name its own entity in `about`.
+  // Falling back to the category name (e.g. "Kadın Sağlığı") while sameAs points at a
+  // specific condition sends search engines a contradictory entity signal.
+  for (const [slug, entry] of Object.entries(wikidata)) {
+    const articleFile = ['mdx', 'md'].map((ext) => path.join(articlesDir, `${slug}.${ext}`)).find((file) => fs.existsSync(file));
+    if (!articleFile) continue;
+    const source = fs.readFileSync(articleFile, 'utf8');
+    if (!/^status:\s*["']?published/mu.test(source)) continue;
+    const category = source.match(/^category:\s*["']?([^"'\r\n]+)/mu)?.[1]?.trim();
+    const route = `makaleler/${slug}/index.html`;
+    const filePath = path.join(distDir, ...route.split('/'));
+    if (!fs.existsSync(filePath)) {
+      failures.push(`${route} is missing from dist.`);
+      continue;
+    }
+    const article = parseJsonLd(fs.readFileSync(filePath, 'utf8'), route).find((node) => typeIncludes(node, 'Article'));
+    const about = article?.about;
+    if (!about || typeof about !== 'object' || !about.name) {
+      failures.push(`${route} Article.about has no entity name.`);
+      continue;
+    }
+    if (category && about.name === category) {
+      failures.push(`${route} about.name falls back to the category "${category}"; add an ABOUT_ENTITY_MAP entry in src/components/ArticleSchema.astro.`);
+    }
+    if (!toArray(about.sameAs).join(' ').includes(entry.qid)) {
+      failures.push(`${route} about.sameAs does not include ${entry.qid}.`);
+    }
+  }
 }
 
 if (failures.length > 0) {
