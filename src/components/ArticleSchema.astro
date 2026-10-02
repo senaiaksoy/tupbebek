@@ -345,6 +345,178 @@ const ABOUT_ENTITY_MAP: Record<string, { type: string; name: string; alternateNa
         type: 'MedicalCondition',
         name: 'Kimyasal gebelik',
         alternateName: ['Biyokimyasal gebelik', 'Chemical pregnancy', 'Biochemical pregnancy']
+    },
+    'adet-duzensizligi-pcos': {
+        type: 'MedicalCondition',
+        name: 'Polikistik over sendromu (PCOS/PMOS)',
+        alternateName: ['PCOS', 'PMOS', 'Polikistik over sendromu']
+    },
+    'adet-gorememe': {
+        type: 'MedicalCondition',
+        name: 'Adet görememe (amenore)',
+        alternateName: ['Amenore', 'Amenorrhea']
+    },
+    'akraba-evliligi': {
+        type: 'MedicalRiskFactor',
+        name: 'Akraba evliliği',
+        alternateName: ['Consanguinity']
+    },
+    'asherman-sendromu': {
+        type: 'MedicalCondition',
+        name: 'Asherman sendromu (rahim içi yapışıklık)',
+        alternateName: ['Asherman sendromu', 'Rahim içi yapışıklık']
+    },
+    'bagisiklik-tedavileri': {
+        type: 'MedicalTherapy',
+        name: 'Bağışıklık (immün) tedavileri',
+        alternateName: ['İmmünoterapi']
+    },
+    'cep-telefonu-sperm-kalitesi': {
+        type: 'Thing',
+        name: 'Semen kalitesi',
+        alternateName: ['Sperm kalitesi']
+    },
+    'dhea-buyume-hormonu-tup-bebek': {
+        type: 'Drug',
+        name: 'Dehidroepiandrosteron (DHEA)',
+        alternateName: ['DHEA']
+    },
+    'duygusal-dayaniklik-rehberi': {
+        type: 'Thing',
+        name: 'Psikolojik dayanıklılık'
+    },
+    'embryoscope-yapay-zeka': {
+        type: 'MedicalProcedure',
+        name: 'Time-lapse embriyo izleme',
+        alternateName: ['EmbryoScope', 'Time-lapse embryo imaging']
+    },
+    'endometriozis-akilli-stratejiler': {
+        type: 'MedicalCondition',
+        name: 'Endometriozis'
+    },
+    'endometrium-kalinligi-tup-bebek': {
+        type: 'AnatomicalStructure',
+        name: 'Endometriyum (rahim iç zarı)',
+        alternateName: ['Endometriyum', 'Rahim iç zarı']
+    },
+    'endoskopik-cerrahi-histeroskopi': {
+        type: 'MedicalProcedure',
+        name: 'Histeroskopi'
+    },
+    'erkek-dogurganlik-besin-takviyeleri': {
+        type: 'MedicalCondition',
+        name: 'Erkek kısırlığı',
+        alternateName: ['Erkek infertilitesi']
+    },
+    'hiperprolaktinemi-ve-kisirlik': {
+        type: 'MedicalCondition',
+        name: 'Hiperprolaktinemi'
+    },
+    'hormonal-tedavi-adenomyozis': {
+        type: 'MedicalCondition',
+        name: 'Adenomyozis'
+    },
+    'imsi-picsi-macs-sperm-secimi': {
+        type: 'MedicalProcedure',
+        name: 'IMSI (morfolojik seçilmiş sperm enjeksiyonu)',
+        alternateName: ['IMSI']
+    },
+    'istanbul-tup-bebek-doktoru': {
+        type: 'MedicalProcedure',
+        name: 'Tüp bebek (IVF)',
+        alternateName: ['IVF']
+    },
+    'ivf-oncesi-histeroskopi': {
+        type: 'MedicalProcedure',
+        name: 'Histeroskopi'
+    },
+    'ivf-protokolleri': {
+        type: 'MedicalProcedure',
+        name: 'Tüp bebek (IVF)',
+        alternateName: ['IVF']
+    },
+    'iyi-tup-bebek-merkezi': {
+        type: 'MedicalProcedure',
+        name: 'Tüp bebek (IVF)',
+        alternateName: ['IVF']
+    },
+    'izotretinoin-sperm': {
+        type: 'Drug',
+        name: 'İzotretinoin',
+        alternateName: ['Isotretinoin']
+    },
+    'kac-yumurta-gerekir': {
+        type: 'MedicalProcedure',
+        name: 'Yumurta toplama (OPU)',
+        alternateName: ['Oosit toplama', 'OPU']
+    },
+    'kadin-kisirligi-tup-bebek': {
+        type: 'MedicalCondition',
+        name: 'Kadın kısırlığı (infertilite)',
+        alternateName: ['Kadın infertilitesi']
+    },
+    'laboratuvar-raporu-yorumlama': {
+        type: 'MedicalProcedure',
+        name: 'Tüp bebek (IVF)',
+        alternateName: ['IVF']
+    },
+    'mikroenjeksiyon-icsi-nedir': {
+        type: 'MedicalProcedure',
+        name: 'Mikroenjeksiyon (ICSI)',
+        alternateName: ['ICSI']
+    },
+    'miyom-ameliyati': {
+        type: 'MedicalProcedure',
+        name: 'Miyomektomi (miyom ameliyatı)',
+        alternateName: ['Miyomektomi']
+    },
+    'miyomlar-ve-tup-bebek': {
+        type: 'MedicalCondition',
+        name: 'Miyom (rahim fibroidi)',
+        alternateName: ['Miyom', 'Uterin fibroid']
+    },
+    'opk-ve-ivf': {
+        type: 'MedicalCondition',
+        name: 'Polikistik over sendromu (PCOS/PMOS)',
+        alternateName: ['PCOS', 'PMOS', 'Polikistik over sendromu']
+    },
+    'over-prp': {
+        type: 'MedicalProcedure',
+        name: 'Yumurtalık içi PRP (trombositten zengin plazma)',
+        alternateName: ['PRP', 'Ovaryan PRP']
+    },
+    'over-yetmezligi-gelecek-tedaviler': {
+        type: 'MedicalCondition',
+        name: 'Erken over yetmezliği (POI)',
+        alternateName: ['Primer over yetmezliği', 'Prematür over yetmezliği', 'Primary ovarian insufficiency']
+    },
+    'taze-dondurulmus-transfer': {
+        type: 'MedicalProcedure',
+        name: 'Embriyo transferi'
+    },
+    'tup-bebek-sureci-rehber': {
+        type: 'MedicalProcedure',
+        name: 'Tüp bebek (IVF)',
+        alternateName: ['IVF']
+    },
+    'tup-bebek-yanlis-bilinenler': {
+        type: 'MedicalProcedure',
+        name: 'Tüp bebek (IVF)',
+        alternateName: ['IVF']
+    },
+    'vajinal-mikrobiyom-fiv': {
+        type: 'Thing',
+        name: 'Vajinal mikrobiyom',
+        alternateName: ['Vajinal flora']
+    },
+    'varikosel-nedir-ne-zaman-ameliyat-gerekir': {
+        type: 'MedicalCondition',
+        name: 'Varikosel'
+    },
+    'yumurtlama-takibi': {
+        type: 'Thing',
+        name: 'Yumurtlama (ovülasyon)',
+        alternateName: ['Ovülasyon']
     }
 };
 
