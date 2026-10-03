@@ -72,6 +72,34 @@ const expertContributionSchema = z.object({
   approvalStatus: z.literal('approved'),
 });
 
+// Dr. Aksoy dışındaki hekimlerin makaleye imzalı kısa görüşü. Yalnızca metnin
+// son halini yazarı onayladığında (approvalStatus: approved + approvedAt) görünür.
+const peerCommentarySchema = z.object({
+  author: z.string().min(3),
+  authorTitle: z.string().optional(),
+  affiliation: z.string().optional(),
+  text: z.string().min(20),
+  receivedAt: z.date(),
+  approvedAt: z.date().optional(),
+  approvalStatus: z.enum(['pending', 'approved']),
+}).superRefine((item, ctx) => {
+  if (item.approvalStatus === 'approved' && !item.approvedAt) {
+    ctx.addIssue({
+      code: z.ZodIssueCode.custom,
+      path: ['approvedAt'],
+      message: 'Approved peer commentary must record the date the author approved the final text.',
+    });
+  }
+  // Tanıtım yönetmeliği: fiyat, kampanya ve ücretsiz teklif dili yayınlanmaz.
+  if (/(€|\beuro\b|\bTL\b|\$|ücretsiz|indirim|kampanya)/i.test(item.text)) {
+    ctx.addIssue({
+      code: z.ZodIssueCode.custom,
+      path: ['text'],
+      message: 'Peer commentary must not contain prices, discounts or free-offer language.',
+    });
+  }
+});
+
 const articleFrontmatterSchema = z.object({
   // --- Temel Icerik ---
   title: z.string(),
@@ -128,6 +156,9 @@ const articleFrontmatterSchema = z.object({
   // Yalnızca Dr. Aksoy'a sorulmuş konuya özel soru, gerçek yanıt ve açık yayın
   // onayı birlikte kaydedildiğinde imzalı katkı gösterilir.
   expertContribution: expertContributionSchema.optional(),
+  // Makale gövdesinde <PeerCommentary items={frontmatter.peerCommentary} /> ile
+  // ilgili bölümde gösterilir; ArticleSchema onaylıları contributor olarak işler.
+  peerCommentary: z.array(peerCommentarySchema).optional(),
 
   // --- Bilimsel Referanslar ---
   // Makale duzeyindeki editoryal kanit derecesi (opsiyonel).

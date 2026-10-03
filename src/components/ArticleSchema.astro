@@ -67,6 +67,13 @@ interface Props {
                 url?: string;
             }>;
             references?: Reference[];
+            peerCommentary?: Array<{
+                author: string;
+                authorTitle?: string;
+                affiliation?: string;
+                approvalStatus: 'pending' | 'approved';
+                approvedAt?: Date;
+            }>;
         };
         slug?: string;
     };
@@ -574,6 +581,16 @@ const videoSchema = d.videoId && d.videoUploadDate && videoWatchUrl
     }
     : undefined;
 
+// Approved signed commentary from other physicians, shown in the article body.
+const contributorSchema = (d.peerCommentary ?? [])
+    .filter((item) => item.approvalStatus === 'approved' && item.approvedAt)
+    .map((item) => ({
+        "@type": "Person",
+        "name": item.author,
+        ...(item.authorTitle ? { "jobTitle": item.authorTitle } : {}),
+        ...(item.affiliation ? { "affiliation": { "@type": "Organization", "name": item.affiliation } } : {}),
+    }));
+
 // Main Article schema. Publisher + WebSite + WebPage live in BaseLayout's graph.
 const articleSchema = {
     "@context": "https://schema.org",
@@ -590,6 +607,7 @@ const articleSchema = {
     ...(d.publishDate ? { "datePublished": d.publishDate.toISOString().split('T')[0] } : {}),
     ...(d.lastModified ? { "dateModified": d.lastModified.toISOString().split('T')[0] } : {}),
     "author": authorSchema,
+    ...(contributorSchema.length > 0 ? { "contributor": contributorSchema } : {}),
     ...(reviewerSchema ? { "reviewedBy": reviewerSchema } : {}),
     ...(reviewerSchema && d.reviewDate ? { "lastReviewed": d.reviewDate.toISOString().split('T')[0] } : {}),
     "publisher": { "@id": ORG_ID },
