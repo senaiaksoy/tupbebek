@@ -125,3 +125,17 @@ Rapamune etiketi (labeling.pfizer.com, "Revised: 10/2024"): renal nakil ve LAM e
 **Kimlik doğrulaması:** Unvan ve kurum Amerikan Hastanesi profili ve LinkedIn'den; yayın kurulu üyeliği `src/pages/yayin-kurulu.astro` kaydı ve canlı `/yayin-kurulu/#doc-dr-cengiz-alatas` ankrajından doğrulandı.
 
 **Uygulama:** Frontmatter `peerCommentary` (yeni alan; onay tarihi olmadan veya fiyat/kampanya dili içerirse build durur). Kutu eksozom paragrafının ardında "Yayın kurulu üyesi görüşü" başlığıyla, isim kurul profiline bağlı ve "Görüş yazarına aittir" notuyla gösterilir. JSON-LD `contributor` kurul sayfasındaki Person `@id`'sini kullanır. `lastModified` 2026-10-03 yapıldı. Makalenin bilimsel metni, kaynakları, altı SSS yanıtı ve `expertContribution` değişmedi; tıbbi inceleme kaydı (2 Ekim 2026) bu ekle yenilenmiş sayılmaz.
+
+## Yayın kurulu üyesi görüşü (Prof. Dr. Bülent Urman) — 3 Ekim 2026
+
+**Kaynak:** Prof. Dr. Bülent Urman, 3 Ekim 2026'da Dr. Aksoy'a WhatsApp'tan iki mesaj yazdı. Dr. Aksoy tutumun net olmadığını belirtip "sunulmasından yana mısın, değil misin" diye sordu; Prof. Urman ikinci mesajında, faydanın anlaşılması için bu tedavilerin ücret karşılığında değil, kayıtlı klinik çalışmalar içinde sunulabileceğini açıkladı. Özel yazışma olduğu için özgün mesajlar depoya alınmadı.
+
+**İçerik kontrolü:** Fiyat, hasta olgusu veya belirli bir kişi ya da kurumu hedef alan ifade yok. "Maddi kazanç etik açıdan tartışmalı" ve "mucize gibi reçete ediliyor" cümleleri genel uygulamaya yönelik eleştiridir; makalenin kanıt değerlendirmesiyle uyumludur.
+
+**Editoryal düzenleme:** İki mesaj ve açıklama yanıtı tek metinde birleştirildi; Türkçe karakterler düzeltildi; "register edilmiş" → "kamuya açık olarak kaydedilmiş", "halihazırda olan" → "bugün ise". Anlam değiştirilmedi.
+
+**Onay:** Dr. Aksoy, düzenlenmiş metnin ve imza satırının ("Prof. Dr. Bülent Urman · Kadın Hastalıkları ve Doğum Uzmanı, Üreme Endokrinolojisi ve İnfertilite · VKV Amerikan Hastanesi ve Koç Üniversitesi Tıp Fakültesi · tupbebek.com Yayın Kurulu üyesi") Prof. Urman tarafından 3 Ekim 2026'da onaylandığını bildirdi. Onay Dr. Aksoy üzerinden iletildi.
+
+**Kimlik doğrulaması:** Unvan `src/pages/yayin-kurulu.astro` kaydından; kurumlar Amerikan Hastanesi ve Koç Üniversitesi Hastanesi hekim profillerinden; canlı `/yayin-kurulu/#prof-dr-bulent-urman` ankrajı ve Person `@id`'si doğrulandı.
+
+**Uygulama:** İkinci `peerCommentary` kaydı olarak eklendi; kutu Dr. Alataş'ın görüşünün hemen altında gösterilir. JSON-LD `contributor` iki kurul üyesini kurul sayfasındaki `@id`'leriyle listeler. Bilimsel metin, kaynaklar, SSS yanıtları ve `expertContribution` değişmedi.
