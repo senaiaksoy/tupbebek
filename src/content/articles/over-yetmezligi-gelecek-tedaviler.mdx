@@ -18,7 +18,7 @@ templateVersion: "2026-09"
 recommendationGrade: "D/E"
 status: "published"
 publishDate: 2026-10-02
-lastModified: 2026-10-02
+lastModified: 2026-10-03
 evidenceAsOf: 2026-10-02
 reviewScope: "2 Ekim 2026: Dr. Aksoy ilk yayın metnini ve iki grupta toplam altı gerçek SSS yanıtını onayladı. Aynı gün geniş audit ve dil düzenlemesi sonrası çalışma tasarımları, hasta grupları, sonuç paydaları, araştırma takvimleri ve ilaç güvenliği ifadeleri düzeltilen sürümün tıbbi incelemesinin tamamlandığını ayrıca doğruladı. Düzeltmeler ve gerçek onaylar editoryal kayıtta izlenmektedir."
 editorialMethodNote: "2 Ekim 2026 tarihli ilk yayın ve altı gerçek hekim yanıtının kayıtları korunmuştur. Aynı gün geniş kaynak karşılaştırması ve dil düzenlemesi yapıldı: çalışma tasarımları, hasta grupları, sonuç paydaları, araştırma takvimleri ve ilaç güvenliği ifadeleri düzeltildi. PubMed kayıtları, dört ClinicalTrials.gov kaydı, ilgili kılavuzlar, HFEA verileri ve ilaç etiketleri karşılaştırıldı. Li 2025, Marti Gutierrez 2025, ESHRE 2023 ve Khattak 2022 tam metinleri incelendi. Finerenonun insan verisi makale özeti ve açıkça belirtilen üniversite bülteniyle sınırlıdır; tam metni incelenmedi. Dr. Aksoy düzeltilmiş sürümün tıbbi incelemesinin tamamlandığını 2 Ekim 2026 tarihinde doğruladı; aynı oturumda commit, push ve deploy talimatı verdi."
@@ -33,6 +33,23 @@ reviewerTitle: "Tıbbi Yayın Ekibi"
 reviewType: "medical"
 reviewDate: 2026-10-02
 approvedBy: "Doç. Dr. Senai Aksoy"
+peerCommentary:
+  - author: "Doç. Dr. Cengiz Alataş"
+    authorTitle: "Kadın Hastalıkları ve Doğum Uzmanı, Üreme Endokrinolojisi"
+    affiliation: "Amerikan Hastanesi Kadın Sağlığı ve Tüp Bebek Merkezi"
+    boardProfile: "/yayin-kurulu/#doc-dr-cengiz-alatas"
+    text: "Rapamisinle ilgili çalışmaları izliyordum, ama finerenon verisini ilk kez bu yazıda gördüm. Bu alanda yolun uzun olduğunu düşünüyorum: bilim insanlarının yıllarca çalışması, sonuçların kontrollü çalışmalarla doğrulanması gerekecek. Benim asıl kaygım, henüz deneysel olan yöntemlerin televizyonda ve sosyal medyada tedavi gibi sunulması. Bu yöntemleri başka yerlerde duyup gelen hastalarla beklentiyi ve kanıtın bugünkü durumunu uzun uzun konuşuyorum."
+    receivedAt: 2026-10-03
+    approvedAt: 2026-10-03
+    approvalStatus: "approved"
+  - author: "Prof. Dr. Bülent Urman"
+    authorTitle: "Kadın Hastalıkları ve Doğum Uzmanı, Üreme Endokrinolojisi ve İnfertilite"
+    affiliation: "VKV Amerikan Hastanesi ve Koç Üniversitesi Tıp Fakültesi"
+    boardProfile: "/yayin-kurulu/#prof-dr-bulent-urman"
+    text: "Biyolojik olarak makul görünse de etkinliği kanıtlanmamış tedavilerin, hastalara yalnızca klinik araştırma kapsamında sunulmasından yanayım. Faydası olup olmadığını anlamak için bu tedavilerin denenmesi gerekir; ama ücret karşılığında değil, kamuya açık olarak kaydedilmiş klinik çalışmalar içinde. Aksi halde faydası kanıtlanmamış bir tedavinin olası yan etki ve zararlarından biz sorumlu oluruz. Bu tedaviler üzerinden maddi kazanç sağlanması da etik ve ahlaki açıdan tartışmalıdır. Bugün ise bu yöntemler çoğu zaman hastalara mucize gibi reçete ediliyor."
+    receivedAt: 2026-10-03
+    approvedAt: 2026-10-03
+    approvalStatus: "approved"
 expertContribution:
   title: "Dr. Aksoy'un yaklaşımı: Yumurtalık gençleştirme ya da araştırma protokolü sorulduğunda neye bakıyorum?"
   question: "Erken over yetmezliği olan ve gebelik isteyen bir hasta, \"yumurtalık gençleştirme\" ya da bir araştırma protokolüne katılma konusunda size sorduğunda kararınızı en çok hangi bulgu veya hasta özelliği belirler? Hangi durumda araştırma protokolünü konuşmayı makul bulursunuz, hangi durumda \"beklemeyin, standart seçeneğe geçin\" dersiniz?"
@@ -529,6 +546,7 @@ references:
 
 import Accordion from "../../components/global/Accordion.astro";
 import InlineEvidence from '../../components/InlineEvidence.astro';
+import PeerCommentary from '../../components/global/PeerCommentary.astro';
 
 "Yumurtalıkları yeniden çalıştıran bir tedavi bulundu mu?" Erken menopoz ya da düşük rezerv tanısından sonra bir araştırma haberi gördüğünüzde, asıl merak ettiğiniz bunun sizin için ne değiştireceğidir. "Yumurtalık gençleştirme" ya da "laboratuvarda yumurta üretildi" başlığı tek başına bu soruyu yanıtlamaz.
 
@@ -717,6 +735,8 @@ Hücrelerin salgıladığı büyüme faktörlerinin yumurtalık dokusunu onarabi
 **Genel tablo:** Hücre tedavilerini inceleyen sistematik derlemede 27 çalışma, 694 hasta vardı ve çalışmaların %77,8'inde kontrol grubu yoktu. Tedavi edilen 522 kişinin 60’ında, 172 kontrolün 13’ünde gebelik bildirildi. Özetteki %11,7 ile 60/522 hesabı (%11,5) tam uyuşmuyor. Farklı hasta grupları ve çoğu kontrolsüz çalışma bir araya getirildiğinden, bu iki toplam tedavinin yararını ölçen randomize bir karşılaştırma değildir. Yazarlar, 7-12 aylık izlemin güvenlik için yetersiz olabileceğini belirtti ([Seyihoglu 2025](https://pubmed.ncbi.nlm.nih.gov/40705268/)). Canlı doğumu ölçen, randomize ve hakemli bir kök hücre çalışması bulunmuyor. ESHRE 2023 ek uygulamalar kılavuzu kök hücre tedavisini önermiyor; gerekçeler arasında tümör oluşumu kaygısı ve bu tedavilerle doğan bebeklerin sağlığına dair verinin olmaması var ([ESHRE 2023](https://pubmed.ncbi.nlm.nih.gov/37747409/)).
 
 **Eksozom:** Hayvan çalışmalarını birleştiren bir ağ meta-analizinde 33 hayvan çalışması vardı; eksozomlar AMH düzeyini artırdı. Ancak bu çalışmalardaki fark sayıları (standardize ortalama fark 8,99 gibi) klinik büyüklük olarak yorumlanamaz ([Yu 2026](https://pubmed.ncbi.nlm.nih.gov/41790362/)). Taramada bulunan tek hakemli insan çalışması Venezuela'daki tek bir doğurganlık merkezinden geliyor. Çalışmada 38-46 yaş arası 30 kadın vardı (grup başına 10 kişi). Kişinin kendi eksozomu, PRP ve serum fizyolojik karşılaştırıldı; yazarlar eksozom grubunda rezerv göstergeleri, elde edilen yumurtalar ve gebelik sonuçları açısından iyileşme bildirdi; bu küçük düşük rezerv grubundan POI’de canlı doğum yararı çıkarılamaz ([Navarro 2025](https://pubmed.ncbi.nlm.nih.gov/40678344/)). Bağımsız bir merkezde doğrulanmadı. Bu kanıt düzeyi, "yumurtalık gençleştirme" diye sunulan eksozom uygulamalarını desteklemiyor.
+
+<PeerCommentary items={frontmatter.peerCommentary} />
 
 **PRP (trombositten zengin plazma):** Konu ayrı bir yazıda ayrıntılı işlendi: [yumurtalık PRP değerlendirmesi](/makaleler/over-prp/) ve [baş editör notu](/makaleler/over-prp-yumurtalik-genclestirme-bas-editor-kosesi/). Özetle:
 

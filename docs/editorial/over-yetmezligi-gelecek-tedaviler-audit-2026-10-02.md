@@ -110,3 +110,32 @@ Dr. Aksoy, ikinci audit sonrasında önceki sürümde çıkarılan doğal gebeli
 ## Rapamune etiketi ve Li 2025 doğrulaması — 2 Ekim 2026
 
 Rapamune etiketi (labeling.pfizer.com, "Revised: 10/2024"): renal nakil ve LAM endikasyonları, embriyo-fetal toksisite uyarısı ve son dozdan sonra 12 hafta yüksek etkili korunma, yan etkilerde yumurtalık kistleri ve adet bozuklukları makale metniyle uyumlu bulundu. Li 2025 tam metni (Europe PMC PMC12711675): 100 kadın randomize (50/50), 21-28 gün rapamisin, transfer tamamlayan 40 ve 39 kadın, klinik gebelik %50,0 ve %28,2 (oran oranı 1,77; %95 GA 0,98-3,19; p=0,047), canlı doğum 10/14 ve 6/8 (doğum tarihine kadar izlenenler), "blind/placebo" ifadesi yok: makale metniyle uyumlu. İki küçük ifade düzeltmesi yapıldı: "embriyo sayısı ve kalitesi arttı" kaynağın ölçtüğü blastokist sayısı ve kalitesine daraltıldı (blastokist ortanca 2,0'a karşı 1,0, p=0,012; en kaliteli blastokist 1,0'a karşı 0, p=0,043); gebelik sayıları (20/40, 11/39) metinde açıkça verilmediği ve aynı kesirler embriyo aşamasına göre transfer sayıları olarak da geçtiği için kaldırıldı, yalnızca yüzdeler ve transfer yapılan kadın sayıları bırakıldı. Bu kayıt push, merge veya deploy anlamına gelmez.
+
+## Yayın kurulu üyesi görüşü (Doç. Dr. Cengiz Alataş) — 3 Ekim 2026
+
+**Kaynak:** Doç. Dr. Cengiz Alataş, yayındaki makaleyi okuduktan sonra 3 Ekim 2026'da Dr. Aksoy'a WhatsApp'tan iki mesaj yazdı. Özel yazışma olduğu ve yayınlanamayacak bölümler içerdiği için özgün metin bu kamuya açık depoya alınmadı.
+
+**Çıkarılan bölümler ve gerekçe:**
+- Meslektaşlarla ilgili küçümseyici ifade: TTB etik kuralları, haksız rekabet ve kişilik hakları.
+- Fiyat bilgisi: Sağlık Bakanlığı 12 Kasım 2025 Tanıtım ve Bilgilendirme Yönetmeliği.
+- Kendi hastasına uygulanan bir girişimin anlatısı: sitede hasta deneyimi anlatılmaz; tek olgu kanıt sayılmaz; makalenin kendi kanıt değerlendirmesiyle çelişir; yazar için hukuki risk taşıyabilir.
+
+**Yayımlanan metin:** Kalan bölümlerden editoryal olarak sadeleştirilen dört cümle; "uzun uzun konuşuyorum" cümlesi özgün mesajdaki tek görüşmeden genelleştirildi. Dr. Aksoy, metnin ve imza satırının ("Doç. Dr. Cengiz Alataş · Kadın Hastalıkları ve Doğum Uzmanı, Üreme Endokrinolojisi · Amerikan Hastanesi Kadın Sağlığı ve Tüp Bebek Merkezi · tupbebek.com Yayın Kurulu üyesi") Dr. Alataş tarafından 3 Ekim 2026'da değişiklik istenmeden onaylandığını bildirdi. Onay Dr. Aksoy üzerinden iletildi; Dr. Alataş'ın onay mesajı depoda saklanmaz.
+
+**Kimlik doğrulaması:** Unvan ve kurum Amerikan Hastanesi profili ve LinkedIn'den; yayın kurulu üyeliği `src/pages/yayin-kurulu.astro` kaydı ve canlı `/yayin-kurulu/#doc-dr-cengiz-alatas` ankrajından doğrulandı.
+
+**Uygulama:** Frontmatter `peerCommentary` (yeni alan; onay tarihi olmadan veya fiyat/kampanya dili içerirse build durur). Kutu eksozom paragrafının ardında "Yayın kurulu üyesi görüşü" başlığıyla, isim kurul profiline bağlı ve "Görüş yazarına aittir" notuyla gösterilir. JSON-LD `contributor` kurul sayfasındaki Person `@id`'sini kullanır. `lastModified` 2026-10-03 yapıldı. Makalenin bilimsel metni, kaynakları, altı SSS yanıtı ve `expertContribution` değişmedi; tıbbi inceleme kaydı (2 Ekim 2026) bu ekle yenilenmiş sayılmaz.
+
+## Yayın kurulu üyesi görüşü (Prof. Dr. Bülent Urman) — 3 Ekim 2026
+
+**Kaynak:** Prof. Dr. Bülent Urman, 3 Ekim 2026'da Dr. Aksoy'a WhatsApp'tan iki mesaj yazdı. Dr. Aksoy tutumun net olmadığını belirtip "sunulmasından yana mısın, değil misin" diye sordu; Prof. Urman ikinci mesajında, faydanın anlaşılması için bu tedavilerin ücret karşılığında değil, kayıtlı klinik çalışmalar içinde sunulabileceğini açıkladı. Özel yazışma olduğu için özgün mesajlar depoya alınmadı.
+
+**İçerik kontrolü:** Fiyat, hasta olgusu veya belirli bir kişi ya da kurumu hedef alan ifade yok. "Maddi kazanç etik açıdan tartışmalı" ve "mucize gibi reçete ediliyor" cümleleri genel uygulamaya yönelik eleştiridir; makalenin kanıt değerlendirmesiyle uyumludur.
+
+**Editoryal düzenleme:** İki mesaj ve açıklama yanıtı tek metinde birleştirildi; Türkçe karakterler düzeltildi; "register edilmiş" → "kamuya açık olarak kaydedilmiş", "halihazırda olan" → "bugün ise". Anlam değiştirilmedi.
+
+**Onay:** Dr. Aksoy, düzenlenmiş metnin ve imza satırının ("Prof. Dr. Bülent Urman · Kadın Hastalıkları ve Doğum Uzmanı, Üreme Endokrinolojisi ve İnfertilite · VKV Amerikan Hastanesi ve Koç Üniversitesi Tıp Fakültesi · tupbebek.com Yayın Kurulu üyesi") Prof. Urman tarafından 3 Ekim 2026'da onaylandığını bildirdi. Onay Dr. Aksoy üzerinden iletildi.
+
+**Kimlik doğrulaması:** Unvan `src/pages/yayin-kurulu.astro` kaydından; kurumlar Amerikan Hastanesi ve Koç Üniversitesi Hastanesi hekim profillerinden; canlı `/yayin-kurulu/#prof-dr-bulent-urman` ankrajı ve Person `@id`'si doğrulandı.
+
+**Uygulama:** İkinci `peerCommentary` kaydı olarak eklendi; kutu Dr. Alataş'ın görüşünün hemen altında gösterilir. JSON-LD `contributor` iki kurul üyesini kurul sayfasındaki `@id`'leriyle listeler. Bilimsel metin, kaynaklar, SSS yanıtları ve `expertContribution` değişmedi.
