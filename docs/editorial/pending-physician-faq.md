@@ -5,6 +5,8 @@ Zorunlu "Dr. Aksoy'a en sık sorulan sorular" bölümü için Dr. Aksoy'a sorulm
 | Makale (slug) | Dil | Soru | Veri kaynağı (sorgu, tarih) | Soruluş tarihi |
 |---|---|---|---|---|
 
+**PGT-A köşesi humanize kaydı (2026-10-03):** Bu makale için seçilen üç SSS sorusu aynı gün soruldu ve yanıtlandı; ayrıntılı kayıt "Yanıtlanan sorular" bölümünde. Hedef sayfa filtresiyle (`*/makaleler/pgt-a-bas-editor-kosesi/`, 30 Haziran–29 Eylül 2026) Search Console 18 gösterim, 0 tıklama, ortalama konum 35,1 ve tek sorgu olarak "site:tupbebek.com" (4 gösterim) verdi; sorular bu nedenle konu kümesi sorgularından ve otomatik tamamlamadan seçildi. Otomatik tamamlama hacim sırası vermez. Açılış sahnesi için Dr. Aksoy 2026-10-03'te seçenekli soruda "Sık duyduğum soru" yanıtını verdi: sahne gerçek, birden çok görüşmeden birleşik; yaş, broşür alıntısı ve hasta ağzından "Hocam" sözü çıkarıldı, verdiği yanıtın özü korundu.
+
 **Sonraki audit kaydı (2026-10-02, over-yetmezligi-gelecek-tedaviler):** Bekleyen soru yok; altı mevcut gerçek soru/yanıt bloğu korundu. Canlı Search Console kontrolü (`sc-domain:tupbebek.com`, 30 Haziran–29 Eylül 2026, hedef sayfa filtresi) 0 gösterim ve sorgu verisi olmadığını gösterdi; dönem yayından önce bitiyor. Sekiz Google Autocomplete sorgusu canlı yenilendi. Ham ifadeler, kaynak düzeltmeleri ve Dr. Aksoy'un aynı oturumdaki “tıbbi inceleme tamam” doğrulaması [geniş audit kaydında](over-yetmezligi-gelecek-tedaviler-audit-2026-10-02.md) bulunur. Aşağıdaki önceki erişim ve yayın notları kendi oturumlarının tarihsel kayıtlarıdır.
 
 **Yayın notu (2026-10-02):** Makale PR #247 ile birleştirildi ve deploy edildi; canlı sayfa ve beş iç link doğrulandı. `expertContribution` sorusu yanıtlandı, bekleyen listeden çıkarıldı (kayıt aşağıdaki "Yanıtlanan sorular" bölümünde).
@@ -16,6 +18,30 @@ Zorunlu "Dr. Aksoy'a en sık sorulan sorular" bölümü için Dr. Aksoy'a sorulm
 Doğrulama notu (2026-09-29): Search Console `sc-domain:tupbebek.com`, 28 Haziran–27 Eylül 2026, `duygusal-dayaniklik-rehberi` sayfa filtresi: 272 toplam gösterim ve 7 görünür sorgu; aşağıda kaydedilen üç soru ifadesi (transfer sonrası ağlama, antidepresan, ara verme) bu sorgular arasında yok. PAA görünürlüğü soru konusunu destekler, "en yüksek hacimli sorgu" sıralamasını kanıtlamaz.
 
 ## Yanıtlanan sorular (editoryal kayıt)
+
+### pgt-a-bas-editor-kosesi (tr) — üç SSS sorusu; yanıt tarihi 2026-10-03
+
+**Soru verisi (2026-10-03):** Hedef sayfa filtresi (`sc-domain:tupbebek.com`, Web, 30 Haziran–29 Eylül 2026, `*/makaleler/pgt-a-bas-editor-kosesi/`) yalnızca "site:tupbebek.com" sorgusunu (4 gösterim) verdi. Konu kümesi (sorgu "pgt" içerir, site geneli, aynı dönem): "pgt sonucu kaç günde çıkar kadınlar kulübü" 45 gösterim, "pgt sonucu kaç günde çıkar" 1 gösterim, "pgt a ve nipt test temiz cikmasi ne demek" 5 gösterim. Google Autocomplete Türkiye/Türkçe (`hl=tr&gl=tr`, `client=firefox`), 2026-10-03: `pgt sonucu` → "pgt sonucu kaç günde çıkar"; `pgt testi` → "pgt testi kaç günde çıkar"; `mozaik embriyo` → "mozaik embriyo transfer edilir mi", "mozaik embriyo ile hamile kalanlar". Otomatik tamamlama hacim sırası vermez. Soru başlıkları Dr. Aksoy'un yanıtında yazdığı biçimiyle kullanıldı.
+
+**Dr. Aksoy'un özgün yanıtları (kullanıcının 2026-10-03 tarihli mesajı, değiştirilmeden):**
+
+> PGT-A sonucu ne kadar sürede çıkar? Laboratuvara göre değişmekle birlikte sonuç çoğu merkezde yaklaşık 2 -3hafta içinde çıkar. PGT-A için blastosistten biyopsi alındıktan sonra embriyo genellikle dondurulur; bu nedenle transfer aynı taze siklusta değil, sonuç geldikten sonra planlanan bir dondurulmuş embriyo transferi ile yapılır. Yani test çoğu zaman transferi birkaç hafta sonraki siklusa taşır.
+>
+> Mozaik embriyo transfer edilir mi? Evet, bazı mozaik embriyolar transfer edilebilir; ancak bunu “normal embriyoyla aynı” kabul etmeyiz. Kararda öncelikle euploid embriyo olup olmadığına, mozaisizmin düzeyine ve hangi kromozomu etkilediğine, segmental mı tüm kromozomu mu kapsadığına, laboratuvarın raporlama eşiklerine ve hastanın başka embriyo seçeneğine bakarım. Mozaik embriyolarda implantasyon oranı daha düşük, düşük riski daha yüksek olabilir; buna rağmen sağlıklı doğumlar bildirilmiştir. ASRM, mozaik transferi düşünülüyorsa genetik danışmanlık öneriyor. Amerikan Üreme Tıbbı Derneği
+>
+> “Temiz” PGT-A ve düşük riskli NIPT ne anlama gelir? Euploid PGT-A sonucu, biyopsi alınan hücrelerde test edilen kromozomlar açısından belirgin anöploidi saptanmadığı anlamına gelir; “genetik olarak tamamen sağlıklı bebek garantisi” değildir. NIPT de tanı testi değil, güçlü bir tarama testidir. Bu nedenle PGT-A yapılmış olsa bile gebelikte standart ultrason ve prenatal taramalar yine yapılır; ayrıca CVS veya amniyosentez gibi tanısal test seçenekleri hastayla konuşulmalıdır. ACOG, PGT sonrasında da prenatal tarama ve tanı seçeneklerinin sunulmasını öneriyor. ACOG Mozaik embriyo transferinden sonra tanısal test düşünülüyorsa, amniyosentez fetal hücreleri değerlendirdiği için CVS’ye göre mozaisizmi yorumlamada daha doğrudan bilgi sağlayabilir.
+
+**Makaleye giren düzenlenmiş karşılık (`#faq`, 2026-10-03):** Anlam değiştirilmeden yalnızca dil düzenlendi: "2 -3hafta" → "2–3 hafta"; "euploid" → "öploid (kromozom sayısı normal)"; "mozaisizm" → "mozaiklik" (makale terimi); "segmental mı tüm kromozomu mu" → "kromozomun bir parçasını (segmental) mı yoksa tamamını mı"; "implantasyon" → "tutunma (implantasyon)"; "anöploidi", "NIPT" ve "CVS" için kısa açıklama; "prenatal" → "doğum öncesi"; yapışık kaynak etiketleri ("Amerikan Üreme Tıbbı Derneği", "ACOG") PubMed bağlantısına çevrildi; ilk yanıtta "dondurulmuş embriyo transferi" ifadesi `/makaleler/taze-dondurulmus-transfer/` iç bağlantısına bağlandı. Yeni gerekçe, oran veya öneri eklenmedi.
+
+**Kaynak kontrolü (2026-10-03):**
+
+- ASRM 2023 mozaik sonuç görüşü (Fertil Steril 2023;120:973-982, PMID 37678731; ASRM sitesindeki tam metin): mozaik embriyolarda tutunma oranı morfoloji kontrol edildiğinde bile anlamlı olarak daha düşük; mozaik transferlerde kendiliğinden düşük oranı öploid transferlerin iki katından fazla; mozaik transferi düşünenlere ve sonrasında gebe kalanlara genetik danışmanlık önerilir; amniyosentez fetal hücreleri doğrudan inceler, CVS plasenta kökenli hücre analizinin sınırlarını taşır; düşük mozaiklik yüzdesi ve segmental mozaiklik daha iyi sonuçla ilişkili. Yanıtla uyumlu. Not: ASRM, belirli bir kromozomun üreme sonucu ile bilinen bir ilişkisi olmadığını yazar; Dr. Aksoy'un "hangi kromozomu etkilediği" ölçütü karar etkenlerinden biri olarak kaldı (sonuç değil, olası risk değerlendirmesi açısından); tıbbi incelemede ayrıca gösterildi.
+- ACOG Committee Opinion 799 (Obstet Gynecol 2020;135:e133-e137, PMID 32080053) özeti: "normal" PGT sonucu genetik anomalisiz yenidoğan garantisi değildir; PGT-A yapılmış tüm hastalara geleneksel tanısal test veya anöploidi taraması sunulmalıdır. Yanıtla uyumlu.
+- "2–3 hafta" süresi ve dondurulmuş transfer akışı Dr. Aksoy'un klinik bilgisidir; ayrı kaynakla bağlanmadı.
+
+**Durum:** Gerçek yanıtlar 2026-10-03'te alındı. Düzenlenmiş üç yanıt aynı oturumda Dr. Aksoy'a gösterildi; Dr. Aksoy "onaylıyorum, PR aç" mesajıyla hem yanıtların görünür kullanımını hem güncel köşe yazısının tamamının tıbbi incelemesini 2026-10-03 tarihinde onayladı. Bu onay, aynı mesajda açık bırakılan iki noktayı da mevcut hâliyle kapsar: ileri yaş eşiği "yaklaşık 38 yaş ve üzeri" olarak kaldı, tekrarlayan düşükteki "3 ve üzeri" sayısı çıkarıldı. `reviewDate: 2026-10-03`, `reviewType: medical` ve `approvedBy: "Doç. Dr. Senai Aksoy"` işlendi. Bu kayıt merge, deploy veya canlı yayın doğrulaması değildir.
+
+---
 
 ### over-yetmezligi-gelecek-tedaviler (tr) — ikinci SSS grubu (üç soru); yanıt tarihi 2026-10-02
 
