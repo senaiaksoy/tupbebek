@@ -71,6 +71,7 @@ interface Props {
                 author: string;
                 authorTitle?: string;
                 affiliation?: string;
+                boardProfile?: string;
                 approvalStatus: 'pending' | 'approved';
                 approvedAt?: Date;
             }>;
@@ -586,6 +587,8 @@ const contributorSchema = (d.peerCommentary ?? [])
     .filter((item) => item.approvalStatus === 'approved' && item.approvedAt)
     .map((item) => ({
         "@type": "Person",
+        // Board members reuse the Person @id published on /yayin-kurulu/.
+        ...(item.boardProfile ? { "@id": `https://tupbebek.com${item.boardProfile}`, "memberOf": { "@id": ORG_ID } } : {}),
         "name": item.author,
         ...(item.authorTitle ? { "jobTitle": item.authorTitle } : {}),
         ...(item.affiliation ? { "affiliation": { "@type": "Organization", "name": item.affiliation } } : {}),

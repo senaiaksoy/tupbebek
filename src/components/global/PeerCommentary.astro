@@ -9,6 +9,7 @@ interface Commentary {
   author: string;
   authorTitle?: string;
   affiliation?: string;
+  boardProfile?: string;
   text: string;
   receivedAt: Date | string;
   approvedAt?: Date | string;
@@ -20,18 +21,20 @@ interface Props {
   title?: string;
 }
 
-const { items = [], title = 'Meslektaş görüşü' } = Astro.props;
+const { items = [], title } = Astro.props;
 const approved = items.filter((item) => item.approvalStatus === 'approved' && item.approvedAt);
 
 const formatDate = (value: Date | string) =>
   new Date(value).toLocaleDateString('tr-TR', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
 ---
 
-{approved.map((item) => (
-  <aside class="not-prose my-8 rounded-xl border border-mint-200 bg-mint-50/50 p-5 shadow-2xs md:p-6" aria-label={`${title}: ${item.author}`}>
+{approved.map((item) => {
+  const label = title ?? (item.boardProfile ? 'Yayın kurulu üyesi görüşü' : 'Meslektaş görüşü');
+  return (
+  <aside class="not-prose my-8 rounded-xl border border-mint-200 bg-mint-50/50 p-5 shadow-2xs md:p-6" aria-label={`${label}: ${item.author}`}>
     <p class="!mb-3 !mt-0 inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-mint-800">
       <span class="material-symbols-outlined text-base" aria-hidden="true">forum</span>
-      {title}
+      {label}
     </p>
 
     <!-- Makale gövdesindeki .prose-medical blockquote kutusunu bu çerçevede sıfırla. -->
@@ -40,12 +43,18 @@ const formatDate = (value: Date | string) =>
     </blockquote>
 
     <footer class="mt-4 border-t border-mint-200/70 pt-3 text-xs leading-relaxed text-gray-600">
-      <strong class="font-semibold text-gray-800">{item.author}</strong>
+      {item.boardProfile ? (
+        <a href={item.boardProfile} class="font-semibold text-primary-700 underline underline-offset-2 hover:text-primary-800">{item.author}</a>
+      ) : (
+        <strong class="font-semibold text-gray-800">{item.author}</strong>
+      )}
       {item.authorTitle && <span> · {item.authorTitle}</span>}
       {item.affiliation && <span> · {item.affiliation}</span>}
+      {item.boardProfile && <span> · tupbebek.com Yayın Kurulu üyesi</span>}
       <span class="block mt-1">
         Makaleyi okuduktan sonra {formatDate(item.receivedAt)} tarihinde yazılı iletildi; metnin son halini yazarı {formatDate(item.approvedAt!)} tarihinde onayladı. Görüş yazarına aittir.
       </span>
     </footer>
   </aside>
-))}
+  );
+})}

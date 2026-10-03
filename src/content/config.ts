@@ -78,6 +78,9 @@ const peerCommentarySchema = z.object({
   author: z.string().min(3),
   authorTitle: z.string().optional(),
   affiliation: z.string().optional(),
+  // Yazar tupbebek.com yayın kurulundaysa kurul sayfasındaki kimliği; yalnızca
+  // site içi kurul bağlantısına izin verilir (klinik sitesine link verilmez).
+  boardProfile: z.string().regex(/^\/yayin-kurulu\/#[a-z0-9-]+$/).optional(),
   text: z.string().min(20),
   receivedAt: z.date(),
   approvedAt: z.date().optional(),
