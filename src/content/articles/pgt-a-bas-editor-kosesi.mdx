@@ -28,6 +28,23 @@ reviewerTitle: "Tıbbi Yayın Ekibi"
 reviewType: "medical"
 reviewDate: 2026-10-03
 approvedBy: "Doç. Dr. Senai Aksoy"
+peerCommentary:
+  - author: "Doç. Dr. Cengiz Alataş"
+    authorTitle: "Kadın Hastalıkları ve Doğum Uzmanı, Üreme Endokrinolojisi"
+    affiliation: "Amerikan Hastanesi Kadın Sağlığı ve Tüp Bebek Merkezi"
+    boardProfile: "/yayin-kurulu/#doc-dr-cengiz-alatas"
+    text: "İki blastosist transferinden sonra gebelik oluşmayan bir çiftte önce kromozom analizi (karyotip) ve yakın tarihli değilse rahim filmi (HSG) isterim. Karyotipler normalse, varsa kalan embriyoları aynı şekilde kullanmayı; kalan embriyo yoksa yeni bir siklusa PGT planıyla başlamayı öneririm. Öte yandan iki negatif sonuçtan sonra kalan embriyoları çözüp PGT yaptığım ve öploid embriyo transferiyle gebelik oluşan hastalarım da oldu. Bu yüzden PGT-A'nın artılarını ve eksilerini hastalarla konuşurken hâlâ dikkatli olunması gerektiğini düşünüyorum."
+    receivedAt: 2026-10-03
+    approvedAt: 2026-10-03
+    approvalStatus: "approved"
+  - author: "Prof. Dr. Ramazan Mercan"
+    authorTitle: "Kadın Hastalıkları ve Doğum Uzmanı, Üreme Tıbbı"
+    affiliation: "Amerikan Hastanesi Kadın Sağlığı ve Tüp Bebek Merkezi"
+    boardProfile: "/yayin-kurulu/#prof-dr-ramazan-mercan"
+    text: "Bana göre PGT-A'nın bugün net bir endikasyonu yok. İngiltere'de HFEA, PGT-A'yı canlı doğum açısından hâlâ \"kırmızı\" ile işaretliyor ve canlı doğum şansını azaltabileceğini belirtiyor; düşük oranını azaltabileceği ise ayrıca not edilmiş. Sonuçlardaki farkın sık sık embriyoloji laboratuvarlarına bağlanmasını inandırıcı bulmuyorum; bu yaklaşım embriyologları haksız yere zan altında bırakıyor. Düşük oranını değerlendirirken öploid embriyo transferlerindeki düşük oranı esas alınmalı. SART verilerini Fertility and Sterility'de yayımlanan mektubumda (2025) yeniden hesapladığımda, PGT-A'nın öploid düşük oranını anlamlı olmasa da artırıyor gibi göründüğünü gördüm. Gebeliğe ulaşma süresini kısalttığı savunmasını da inandırıcı bulmuyorum: PGT-A'da embriyolar zaten dondurulduğu için fark en fazla bir ay civarındadır. Mozaik embriyo transferinin yaygınlaşması sonuçları biraz değiştirebilir, ama kümülatif gebelik oranını artırması teorik olarak mümkün değil. Sonuçta PGT-A bir seçme değil, eleme yöntemidir: hastayı en fazla düşük sonrası rahim boşaltma işleminden (D/C) kurtarabilir. Bu hastaların ne kadarında bu işlemin gerektiğine dair de veri yok."
+    receivedAt: 2026-10-03
+    approvedAt: 2026-10-03
+    approvalStatus: "approved"
 image: "/images/makaleler/pgt-a-bas-editor-kosesi.webp"
 imageAlt: "Sonbahar parkında bankta oturup elindeki bilgi formu üzerine konuşan bir çift"
 featured: false
@@ -83,6 +100,20 @@ references:
     pmid: "32080053"
     doi: "10.1097/AOG.0000000000003714"
     url: "https://pubmed.ncbi.nlm.nih.gov/32080053/"
+  - title: "Preimplantation genetic testing for aneuploidy and cumulative pregnancy rates: a closer look at the evidence"
+    type: "journalArticle"
+    authors: "Mercan R."
+    journal: "Fertility and Sterility (Letter)"
+    year: 2025
+    pmid: "40273971"
+    doi: "10.1016/j.fertnstert.2025.04.016"
+    url: "https://pubmed.ncbi.nlm.nih.gov/40273971/"
+  - title: "Pre-implantation genetic testing for aneuploidy (PGT-A)"
+    type: "officialWebPage"
+    authors: "Human Fertilisation and Embryology Authority (HFEA)"
+    journal: "HFEA treatment add-on assessment"
+    year: 2023
+    url: "https://www.hfea.gov.uk/treatments/treatment-add-ons/pre-implantation-genetic-testing-for-aneuploidy-pgt-a/"
   - title: "Healthy babies after intrauterine transfer of mosaic aneuploid blastocysts"
     authors: "Greco E, Minasi MG, Fiorentino F."
     journal: "New England Journal of Medicine"
@@ -93,6 +124,7 @@ references:
 ---
 
 import InlineEvidence from '../../components/InlineEvidence.astro';
+import PeerCommentary from '../../components/global/PeerCommentary.astro';
 
 > Bu yazı imzalı bir baş editör köşesidir. PGT türleri, işleyişi ve sonuç raporları için [PGT merkezi](/pgt-merkezi/) sayfasına bakabilirsiniz.
 
@@ -170,6 +202,8 @@ Ben teste karşı değilim; testin her hastaya rutin olarak satılmasına karş�
 Ailede dengeli translokasyon gibi yapısal bir kromozom değişikliği ya da bilinen bir tek gen hastalığı varsa soru artık PGT-A değildir. Bu durumda hedefe yönelik [PGT-SR veya PGT-M](/makaleler/pgt-m/) konuşulur.
 
 Otuzlu yaşlarının başında, ilk ya da ikinci denemesine hazırlanan ve yeterli embriyosu olan bir çiftte ise rutin PGT-A beklenen yararı göstermedi. Kullanılabilir embriyo sayısını azaltabilir, maliyeti artırır ve bekleme sürecine yeni bir kaygı ekler.
+
+<PeerCommentary items={frontmatter.peerCommentary} />
 
 ---
 
