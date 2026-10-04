@@ -81,6 +81,25 @@ function getStaticPageDates() {
 }
 const staticPageDates = getStaticPageDates();
 
+// public/ altındaki indekslenebilir bağımsız HTML sayfaları (ör. e-kitap).
+// lastmod, sayfanın kendi JSON-LD dateModified alanından okunur; içerik
+// değişince yalnız o alan güncellenir.
+function getPublicHtmlPageDates() {
+  const pages = ['/e-kitap/tup-bebek-beslenme-plani.html'];
+  const dates = {};
+  for (const p of pages) {
+    try {
+      const html = fs.readFileSync(path.resolve('./public' + p), 'utf-8');
+      const m = html.match(/"dateModified"\s*:\s*"(\d{4}-\d{2}-\d{2})"/);
+      if (m) dates[p] = m[1];
+    } catch {
+      // Dosya yoksa sitemap'e eklenmez.
+    }
+  }
+  return dates;
+}
+const publicHtmlPageDates = getPublicHtmlPageDates();
+
 const redirectOnlyRoutePatterns = [
   // Legacy language/English URLs are not content routes. Let Cloudflare Pages
   // _redirects handle them before Astro can render a 200 fallback.
@@ -201,6 +220,8 @@ export default defineConfig({
   integrations: [
     tailwind(),
     sitemap({
+      // public/ altındaki bağımsız HTML sayfaları Astro rotası olmadığı için elle eklenir.
+      customPages: Object.keys(publicHtmlPageDates).map((p) => `https://tupbebek.com${p}`),
       // Exclude pages that 301 to another canonical URL — they should not appear in the sitemap.
       // See public/_redirects for the matching 301 rules.
       filter: (page) => {
@@ -277,6 +298,10 @@ export default defineConfig({
         try {
           const u = new URL(item.url);
           const pathOnly = u.pathname;
+          if (publicHtmlPageDates[pathOnly]) {
+            item.lastmod = new Date(publicHtmlPageDates[pathOnly]).toISOString();
+            return item;
+          }
           const iso = staticPageDates.get(pathOnly);
           if (iso) item.lastmod = iso;
         } catch {}
