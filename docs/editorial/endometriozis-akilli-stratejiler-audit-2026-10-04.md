@@ -81,7 +81,8 @@ Dr. Aksoy üç SSS sorusunu yanıtladı ve aynı mesajda "Tıbbi inceleme yapıl
 
 Dr. Aksoy aynı gün seçenekli soruda düzenlenmiş SSS karşılıklarını "İfadeler bana ait, onaylıyorum" ile onayladı ve "Commit, push, PR aç" seçeneğini seçti. Merge ve deploy kararı Dr. Aksoy'tadır.
 
+İkinci SSS grubu: Dr. Aksoy "Endometriozis AMH'yi düşürür mü?" ve "Evre 4 endometriozisle hamile kalınır mı?" sorularını da aynı gün yanıtladı; iki yanıt SSS'ye eklendi (bölümde toplam beş soru), ASRM 2020 (PMID 33280722) kaynakçaya girdi, `reviewScope` ve `editorialMethodNote` beş soruya göre güncellendi. Ayrıntı `pending-physician-faq.md` kaydında.
+
 ## Açık işler
 
-1. İkinci SSS grubu (iki aday) henüz sorulmadı.
-2. Search Console sayfa sorgusu erişimi olduğunda soru seçiminin GSC ile karşılaştırılması.
+1. Search Console sayfa sorgusu erişimi olduğunda soru seçiminin GSC ile karşılaştırılması.
