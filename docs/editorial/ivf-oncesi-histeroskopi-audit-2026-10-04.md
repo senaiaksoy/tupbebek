@@ -22,7 +22,7 @@ Son onaylı sürüm `966e69f9` (11 Ağustos 2026; `expertContribution.answeredAt
 | 10 | `histeroskopi-hazirlik-yansima.webp` süs görseli; `histeroskopi-intrauterin-bulgular.webp` içinde "Myom" yazım hatası; figcaption'lar kaynaksız. | Görsel |
 | 11 | `seoTitle` "IVF Öncesi Histeroskopi" — otomatik tamamlamada kullanıcı dili "histeroskopi tüp bebek …". | SEO |
 
-Kapsam dışı notlar (düzeltilmedi): video gömmesinde `id="GP809hiOu_Y"` iki kez (ortak şablon); `src/data/glossary.ts` içinde Submüköz Miyom "mutlaka önerilir", Uterin Septum "düzeltilir", Polip "önerilir" ifadeleri kanıtın ötesinde; "Laparoskopi" ve "Hidrosalpinks" maddeleri bu makaleye bağlanıyor.
+Kapsam dışı notlar (düzeltilmedi): `src/data/glossary.ts` içinde Submüköz Miyom "mutlaka önerilir", Uterin Septum "düzeltilir", Polip "önerilir" ifadeleri kanıtın ötesinde; "Laparoskopi" ve "Hidrosalpinks" maddeleri bu makaleye bağlanıyor.
 
 ## Yerel düzeltmeler ve dayanakları
 
@@ -76,4 +76,26 @@ Seçilen üç soru ve `expertContribution` sorusu 2026-10-04'te Dr. Aksoy'a soru
 ## Açık işler
 
 1. Search Console erişimi olduğunda soru seçiminin karşılaştırılması.
-2. Kapsam dışı: `glossary.ts` aşırı ifadeleri ve yanlış hedefler; video gömmesinde yinelenen `id`.
+2. ~~Kapsam dışı: `glossary.ts` aşırı ifadeleri ve yanlış hedefler; video gömmesinde yinelenen `id`.~~ Sözlük #273 ve #274 ile canlıda. Video `id` bulgusu yanlış pozitifti: arama `data-yt-id` ve `data-youtube-id` özniteliklerini yakalamıştı; canlı HTML'de yinelenen gerçek `id` yok.
+
+## İkinci geniş audit ve düzeltme (4 Ekim 2026, PR #272 yayımlandıktan sonra)
+
+Kullanıcı istekleri: "tekrar geniş audit yap", ardından "hepsini yap, IndexNow da gönder".
+
+**Search Console (servis hesabı, `sc-domain:tupbebek.com`, 3 Temmuz–1 Ekim 2026):** Sayfa 323 gösterim, 3 tık, ort. konum 10,2 (güncelleme öncesi sürüm). URL denetimi: "Gönderildi ve dizine eklendi", Google ve kullanıcı canonical'ı aynı, son tarama 2026-09-28 (bugünkü güncellemeden önce). Sorgu ayrıntıları `pending-physician-faq.md` IVF öncesi histeroskopi notunda.
+
+**IndexNow:** 2026-10-04'te `scripts/submit-indexnow.mjs` ile makale, `endoskopik-cerrahi-histeroskopi` ve `/tibbi-sozluk/` gönderildi; servis 3 URL'yi kabul etti.
+
+| # | Bulgu | Düzeltme |
+| --- | --- | --- |
+| 1 | "İlgili Makaleler" kutusu DHEA, IMSI/PICSI ve yumurtalık PRP gösteriyordu; `RelatedArticles.astro` içinde bu makale için konu kümesi yoktu, aynı kategorinin en yeni yazılarına düşüyordu. Kardeş histeroskopi makalesinde de küme yoktu. | İki makale için küme eklendi: histeroskopi kardeşi, Asherman, miyomlar ve tüp bebek. |
+| 2 | "Kısa cevap" 5 kez (özet kutusu + 4 bölüm). | `#kimlerde`, `#surec`, `#sonrasi` düz açılış cümlesine çevrildi; özet kutusu ve `#rif` kaldı. `#sonrasi` açılışı SSS'deki hekim yanıtına bağlandı. |
+| 3 | `#rif` "Pratik çerçeve" Dr. Aksoy'un öploid RIF yaklaşımına değinmiyordu. | Kutudaki onaylı yanıtı özetleyen ve kutuya yönlendiren madde eklendi; yeni klinik iddia yok. |
+| 4 | ESHRE meta-analizi cümlesinde bitişik kaynak yoktu. | ESHRE 2023 bağlantısı eklendi. |
+| 5 | Kaldırılan laparoskopi SSS'sinin GSC karşılığı vardı. | `#alternatifler` sonuna, 11 Ağustos onaylı eski SSS yanıtına dayanan tek paragraf; endometriozis `#laparoskopi` bağlantısı. Eklenen tek yeni ifade laparoskopinin karın içini gösterdiğine dair anatomik açıklamadır. |
+| 6 | İki uzun cümle (septum/ASRM 29 kelime, TROPHY 30 kelime); ESHRE "değerlendirilmedi" notu figcaption ve `#rif`'te tekrar. | Cümleler bölündü; tekrar figcaption'dan çıkarıldı. |
+| 7 | İki audit kaydında video `id` notu açık iş olarak duruyordu. | Yanlış pozitif olarak işaretlendi. |
+
+Korunanlar: tıbbi iddialar, kaynaklar, SSS yanıtları, uzman kutusu, onay ve tarih alanları.
+
+**Kanıt derecesi (Dr. Aksoy kararı, 2026-10-04, seçenekli soru "A yap"):** `recommendationGrade` B → A; inSIGHT ve TROPHY satırlarındaki satır içi etiket B → A (iki büyük RKÇ; ana öneri "rutin histeroskopi önerilmez"). Cochrane 2019 satırı B kaldı (havuzlanmış kanıt düşük kaliteli); ASRM 2021 satırı B, Lensen 2021 satırı A değişmedi. Dr. Aksoy aynı gün "Onaylıyorum, PR aç ve deploy et" ile ikinci düzeltme paketini onayladı.

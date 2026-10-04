@@ -22,7 +22,7 @@ Son onaylı sürüm `966e69f9` (11 Ağustos 2026; `expertContribution.answeredAt
 | 10 | Dil: "Bu tablo … açıklar" ve "… anlamına gelmez" kalıpları; "hidrosalpinx/hidrosalpinksin" yazım tutarsızlığı; "şikayet"; AFC/AMH ilk geçişte açıklanmamış; "oldu mu?" ile siz dili kırılması; ultrason/MRI–MR karışık. | Gramer, yerel ifade, humanizasyon |
 | 11 | Üç sütunlu iki tablo için mobil sarma stili yoktu (endometrioma makalesinde aynı sorun 4 Ekim'de çözülmüştü). | Teknik |
 
-Kapsam dışı not: Video gömmesi `id="-FxkIwmlO9g"` HTML'de iki kez geçiyor; aynı durum endometrioma sayfasında da var, ortak şablon kaynaklı. Düzeltilmedi.
+~~Kapsam dışı not: Video gömmesi `id="-FxkIwmlO9g"` HTML'de iki kez geçiyor.~~ **Düzeltme (2026-10-04):** Yanlış pozitif. Arama `data-yt-id` ve `data-youtube-id` özniteliklerini yakalamıştı; canlı sayfada yinelenen gerçek `id` özniteliği yok (endometrioma ve endometriozis sayfaları tarandı). Düzeltme gerekmez.
 
 ## İddia ve anlam kaydı (yerel düzeltme)
 
