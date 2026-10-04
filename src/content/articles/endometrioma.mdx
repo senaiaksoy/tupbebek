@@ -37,7 +37,7 @@ approvedBy: "Doç. Dr. Senai Aksoy"
 lastModified: 2026-10-04
 recommendationGrade: B
 evidenceAsOf: 2026-10-04
-reviewScope: "4 Ekim 2026: Dr. Aksoy düzenlenmiş metnin tamamını tıbben inceledi ve beş SSS yanıtının düzenlenmiş görünür kullanımını onayladı. Endometrioma tanımı ve görüntüleme, ağrı ve cerrahi endikasyonları, AMH/yumurtalık rezervi, IVF öncesi endometrioma cerrahisi, nüks ve fertilite zamanlaması; WHO 2025, ESHRE 2022, Hamdan 2015, Younis 2022, Younis ve Taylor 2024, Paik ve Jee 2024, Gu 2023, Murdock 2025 ve Van Holsbeke 2010 kaynaklarıyla değerlendirildi."
+reviewScope: "4 Ekim 2026: Editöryal Ekip kapsamında Dr. Aksoy metnin tamamını ve beş SSS yanıtının görünür kullanımını tıbben inceledi ve onayladı. Geniş audit sonrası düzeltilen ameliyat gerekçeleri ve acil değerlendirme ayrımı, AMH takip dönemleri ve çalışmalar arasındaki farklılık, rezerv ile gebelik olasılığının ayrımı, menopoz öncesi ultrason bağlamı ve gebelik zamanlamasına göre ameliyat sonrası hormonal tedavi açıklamaları için de tıbbi inceleme ve yayın onayı verildi. Kapsam: endometrioma tanımı ve görüntüleme, ağrı ve cerrahi endikasyonları, AMH/yumurtalık rezervi, IVF öncesi cerrahi, nüks ve fertilite zamanlaması; WHO 2025, ESHRE 2022, Hamdan 2015, Younis 2022, Younis ve Taylor 2024, Paik ve Jee 2024, Gu 2023, Murdock 2025, Van Holsbeke 2010 ve ASRM 2020."
 editorialMethodNote: "11 Ağustos 2026'da WHO kaynak tarihi, cerrahi sonrası AMH dili, fertilite koruma belirsizliği ve yinelenen giriş yüzeyleri gözden geçirildi. Dr. Aksoy'un konuya özel yanıtı, yanıt tarihi ve yayın onayı kaydedildi. 4 Ekim 2026'da metnin dili ve akışı yeniden düzenlendi; ameliyat sonrası AMH bulgusu ve IVF öncesi ameliyat kararı ilgili kaynaklara bağlandı, terimler ilk geçtikleri yerde açıklandı. SSS, Search Console ve Google otomatik tamamlama verisinden seçilen beş soruya Dr. Aksoy'un verdiği yanıtlarla yenilendi; eski SSS'deki bilgiler gövdeye taşındı. Aynı gün yapılan ikinci geçişte CA-125, FSH/östradiol, kistin rezerve kendi etkisi, ameliyat yöntemi ve fertilite koruma cümleleri kaynaklara göre netleştirildi; Murdock 2025 meta-analizi eklendi. Dr. Aksoy yaklaşım kutusuna bir cümle ekledi. Aynı gün tanı bölümüne IOTA (Van Holsbeke 2010) kaynaklı ultrason görünümü tanımı ve şematik çizim, ameliyat bölümüne karar tablosu eklendi."
 image: "/images/makaleler/endometrioma.webp"
 imageAlt: "Pencere önünde oturup elindeki fincanla dışarı bakan bir kadın"
@@ -49,11 +49,12 @@ imageWidth: 1600
 imageHeight: 900
 references:
   - title: "Endometriosis"
+    type: "officialWebPage"
     authors: "World Health Organization"
-    journal: "WHO Fact Sheet"
     year: 2025
     url: "https://www.who.int/news-room/fact-sheets/detail/endometriosis"
   - title: "ESHRE guideline: endometriosis"
+    type: "guideline"
     authors: "Becker CM, Bokor A, Heikinheimo O et al."
     journal: "Human Reproduction Open"
     year: 2022
@@ -109,6 +110,14 @@ references:
     doi: "10.1002/uog.7668"
     pmid: "20503240"
     url: "https://pubmed.ncbi.nlm.nih.gov/20503240/"
+  - title: "Testing and interpreting measures of ovarian reserve: a committee opinion"
+    type: "guideline"
+    authors: "Practice Committee of the American Society for Reproductive Medicine"
+    journal: "Fertility and Sterility"
+    year: 2020
+    doi: "10.1016/j.fertnstert.2020.09.134"
+    pmid: "33280722"
+    url: "https://pubmed.ncbi.nlm.nih.gov/33280722/"
 videoId: "-FxkIwmlO9g"
 videoTitle: "Endometriozis ve Kısırlık: 2025 Yeni Tedavi Stratejileri"
 videoDescription: "Endometriozis ve endometriomanın gebelik planına etkisini, cerrahi ile IVF arasındaki karar başlıklarını ve yumurtalık rezervini koruma seçeneklerini ele alan video."
@@ -119,25 +128,27 @@ videoDuration: "PT13M46S"
 import Accordion from "../../components/global/Accordion.astro";
 import InlineEvidence from '../../components/InlineEvidence.astro';
 
-<div class="max-w-4xl mx-auto space-y-12 blog-content-reveal">
+<div class="max-w-4xl mx-auto space-y-12 blog-content-reveal endometrioma-article">
 
 > Bu yazı, [endometriozis ve kısırlık](/makaleler/endometriozis-akilli-stratejiler/) konusunun bir parçası olan çikolata kistine odaklanır. Kadın kısırlığının genel haritası için [kadın infertilitesi](/kadin-infertilitesi/), ameliyat ile tüp bebek (IVF) arasındaki sıralama için [endometriozis ve tüp bebek](/makaleler/endometriozis-tup-bebek/) rehberine bakabilirsiniz.
 
 ## İçindekiler
 
-- [Çikolata kisti (endometrioma) nedir?](#nedir)
-- [Belirtiler ve tanı](#tani)
-- [Çikolata kisti, AMH ve yumurtalık rezervi](#rezerv)
-- [Ameliyat ne zaman düşünülür?](#ameliyat)
-- [Tüp bebek öncesi yaklaşım](#ivf)
-- [Dr. Aksoy'a en sık sorulan sorular](#faq)
+1. [Çikolata kisti (endometrioma) nedir?](#nedir)
+2. [Belirtiler ve tanı](#tani)
+3. [Çikolata kisti, AMH ve yumurtalık rezervi](#rezerv)
+4. [Ameliyat ne zaman düşünülür?](#ameliyat)
+5. [Tüp bebek öncesi yaklaşım](#ivf)
+6. [Dr. Aksoy'a en sık sorulan sorular](#faq)
 
 <div data-reveal>
 <h2 id="nedir">Çikolata Kisti (Endometrioma) Nedir?</h2>
 
 Çikolata kisti, tıbbi adıyla endometrioma, endometriozisin yumurtalıkta oluşturduğu kisttir. İçinde eski kana bağlı koyu renkli bir sıvı bulunabilir; “çikolata kisti” adı da buradan gelir.
 
-Endometriozis, rahim içini döşeyen dokuya benzer dokunun rahim dışında bulunmasıyla ortaya çıkan, uzun süreli (kronik) bir hastalıktır ve dünyada üreme çağındaki kadınların yaklaşık %10'unu etkiler ([WHO, 2025](https://www.who.int/news-room/fact-sheets/detail/endometriosis)). Her endometrioma endometriozisle ilişkilidir; ancak her endometriozis hastasında çikolata kisti gelişmez ve endometrioma her zaman kısırlık anlamına gelmez. Doğal gebelik bazı kadınlarda mümkündür; olasılık yaş, yumurtalık rezervi, tüplerin durumu, sperm analizi ve ne kadar süredir denendiğine göre değişir.
+Endometriozis, rahim içini döşeyen dokuya benzer dokunun rahim dışında bulunmasıyla ortaya çıkan, uzun süreli (kronik) bir hastalıktır. Dünyada üreme çağındaki kadınların yaklaşık %10'unu etkiler ([WHO, 2025](https://www.who.int/news-room/fact-sheets/detail/endometriosis)). Her endometrioma endometriozisle ilişkilidir; ancak her endometriozis hastasında çikolata kisti gelişmez.
+
+Endometrioma her zaman kısırlık anlamına gelmez. Doğal gebelik bazı kadınlarda mümkündür; olasılık yaş, yumurtalık rezervi, tüplerin durumu, sperm analizi ve ne kadar süredir denendiğine göre değişir.
 
 Kist saptandığında karar iki soru üzerinden verilir:
 
@@ -153,7 +164,7 @@ Endometrioma bazen hiçbir belirti vermez ve rutin bir ultrasonda fark edilir. B
 
 Tanıda başvurulan başlıca yöntemler şunlardır:
 
-- **Transvajinal ultrason (vajinal yoldan ultrason):** Endometriomada ilk basamaktır ve çoğu zaman yeterlidir. Tipik endometrioma ultrasonda, içi ince ve eşit dağılmış yankılarla dolu “buzlu cam” görünümlü, çoğunlukla tek bölmeli ve katı alan içermeyen bir kist olarak görülür. Büyük bir uluslararası ultrason çalışmasında (IOTA) ameliyat edilen endometriomaların yaklaşık yarısı tek bölmeli ve buzlu cam görünümlüydü ([Van Holsbeke ve ark., 2010](https://pubmed.ncbi.nlm.nih.gov/20503240/)).
+- **Transvajinal ultrason (vajinal yoldan ultrason):** Endometriomada ilk basamaktır ve çoğu zaman yeterlidir. Menopoz öncesinde tipik endometrioma, ince ve eşit dağılmış yankılarla dolu “buzlu cam” görünümlü bir kisttir. Çoğunlukla tek bölmelidir ve katı alan içermez. Büyük bir uluslararası ultrason çalışmasında (IOTA) ameliyat edilen endometriomaların yaklaşık yarısı tek bölmeli ve buzlu cam görünümlüydü. Menopoz sonrasında bu görünüm aynı güvenle endometrioma olarak yorumlanmaz; kötü huylu kitle olasılığı ayrıca değerlendirilir ([Van Holsbeke ve ark., 2010](https://pubmed.ncbi.nlm.nih.gov/20503240/)).
 - **MR:** Derin endometriozis, çok büyük kist, karmaşık anatomi veya şüpheli bulgu varsa ek bilgi verir.
 - **Laparoskopi (kapalı ameliyat):** Tanı için her hastada ilk adım değildir. Ameliyat kararı verildiğinde hem tanı hem tedavi amacıyla kullanılabilir.
 - **CA-125 (kan testi):** Endometrioma veya endometriozis tanısını koymak ya da dışlamak için kullanılmaz ([ESHRE, 2022](https://pubmed.ncbi.nlm.nih.gov/35350465/)). Başka bir klinik soru nedeniyle istenebilir; sonucu ultrason ve muayene bulgularından bağımsız yorumlanmaz.
@@ -171,7 +182,7 @@ Görüntüleme raporunda kistin boyutu, tek ya da iki yumurtalıkta olması, duv
        height="675" />
   </picture>
   <figcaption>
-    Şematik illüstrasyon: Tipik endometrioma “buzlu cam” içerikli, düzgün duvarlı ve çoğunlukla tek bölmelidir. Katı alan, papiller çıkıntı, katı alanda kanlanma, hızlı büyüme veya menopoz sonrası yeni kist ileri değerlendirme gerektirir. (Kaynak: Van Holsbeke ve ark., 2010)
+    Şematik illüstrasyondur; gerçek ultrason görüntüsü değildir. Menopoz öncesinde tipik endometrioma “buzlu cam” içerikli, düzgün duvarlı ve çoğunlukla tek bölmelidir. Katı alan, papiller çıkıntı veya katı alanda kanlanma varsa kist ayrıca değerlendirilir. Menopoz sonrası “buzlu cam” görünüm de güvenli bir endometrioma tanısı koydurmaz. (Kaynak: <a href="https://pubmed.ncbi.nlm.nih.gov/20503240/">Van Holsbeke ve ark., 2010</a>)
   </figcaption>
 </figure>
 </div>
@@ -181,9 +192,13 @@ Görüntüleme raporunda kistin boyutu, tek ya da iki yumurtalıkta olması, duv
 
 Kistin kendisinin yumurtalık rezervini ne kadar etkilediği konusunda veriler tam tutarlı değil ([Younis ve Taylor, 2024](https://pubmed.ncbi.nlm.nih.gov/38800489/)). Kisti çıkarmak için yapılan ameliyatın sağlıklı yumurtalık dokusuna veya kanlanmaya zarar verebildiği ise daha iyi gösterilmiştir. Bu yüzden amaç yalnızca kisti ortadan kaldırmak değildir.
 
-Ameliyatın etkisini inceleyen bir sistematik derlemede, kistin soyularak çıkarıldığı ameliyattan (kistektomi) sonra AMH düzeyi ilk haftalardan 18. aya kadar yapılan her ölçümde anlamlı olarak düşük bulundu; ultrasonda sayılan antral folikül sayısı ise anlamlı değişmedi ([Younis ve ark., 2022](https://pubmed.ncbi.nlm.nih.gov/34265271/)). Otuz çalışmayı birleştiren daha yeni bir meta-analizde de laparoskopik kistektomi sonrası AMH düşüşü kısa, orta ve uzun dönemde, 18 aya kadar görüldü ([Murdock ve ark., 2025](https://pubmed.ncbi.nlm.nih.gov/40179834/)). <InlineEvidence grade="B" />
+Kistin soyularak çıkarıldığı ameliyattan (kistektomi) sonra AMH düşebilir. Bir sistematik derlemede, ameliyat sonrası üç takip döneminde — ilk haftalar, 2–6 ay ve 9–18 ay — birleştirilmiş grup sonuçlarında ortalama AMH anlamlı olarak düşük bulundu. Ultrasonda sayılan antral folikül sayısı ise anlamlı değişmedi; çalışmalar arasında sonuçların büyüklüğü açısından belirgin farklılık vardı ([Younis ve ark., 2022](https://pubmed.ncbi.nlm.nih.gov/34265271/)). Otuz çalışmayı birleştiren daha yeni bir meta-analizde de laparoskopik kistektomi sonrası AMH düşüşü kısa, orta ve uzun dönemde, 18 aya kadar görüldü ([Murdock ve ark., 2025](https://pubmed.ncbi.nlm.nih.gov/40179834/)). <InlineEvidence grade="B" />
 
-Yumurtalık rezervini değerlendirirken şu bilgiler birlikte okunur:
+İki taraflı ameliyatın etkisine ilişkin çalışmalar aynı sonuca ulaşmıyor. Younis ve Taylor 2024, iki taraflı kistektomide rezerv kaybının daha belirgin olduğunu bildirirken Murdock 2025 uzun dönemde tek ve iki taraflı ameliyat arasında anlamlı AMH farkı bulmadı ([Younis ve Taylor, 2024](https://pubmed.ncbi.nlm.nih.gov/38800489/); [Murdock ve ark., 2025](https://pubmed.ncbi.nlm.nih.gov/40179834/)). Bu grup sonuçları, sizin ameliyat sonrası AMH değişiminizi kesin olarak öngörmez.
+
+AMH, yumurta sayısıyla ilişkili bir rezerv göstergesidir; yumurta kalitesini veya kişisel gebelik olasılığını tek başına ölçmez. Bu nedenle AMH'deki düşüş, gebelik şansınızın aynı oranda azaldığı anlamına gelmez ([ASRM, 2020](https://pubmed.ncbi.nlm.nih.gov/33280722/)).
+
+Yumurtalık rezervini değerlendirirken şu bilgiler birlikte okunur ([ASRM, 2020](https://pubmed.ncbi.nlm.nih.gov/33280722/)):
 
 | Değerlendirme | Ne anlatır? | Neden önemli? |
 | :--- | :--- | :--- |
@@ -207,20 +222,41 @@ Karar tek bir bulguya değil, birkaç etkenin birlikte tartılmasına dayanır. 
 | **Kanser şüphesi (katı alan, papiller çıkıntı, hızlı büyüme veya menopoz sonrası yeni kist)** | İleri değerlendirme; ameliyat lehine en güçlü bulgu |
 | **İlaçla veya izlemle kontrol altına alınamayan ağrı** | Ameliyat lehine |
 | **Yumurta toplama sırasında iğnenin foliküllere güvenli biçimde ulaşamaması** | Ameliyat veya başka bir girişim lehine |
-| **Torsiyon (yumurtalığın kendi etrafında dönmesi), rüptür (kistin yırtılması) veya enfeksiyon** | Acil ya da acile yakın ameliyat |
-| **Derin endometriozise bağlı bağırsak, mesane veya üreter (böbrekten mesaneye idrar taşıyan kanal) tutulumu** | Ameliyat lehine |
+| **Torsiyon (yumurtalığın kendi etrafında dönmesi), rüptür (kistin yırtılması) veya enfeksiyon şüphesi** | Acil değerlendirme; ameliyat gerekip gerekmediği komplikasyonun türüne ve ağırlığına göre belirlenir |
+| **Derin endometriozise bağlı üreter (böbrekten mesaneye idrar taşıyan kanal) veya bağırsak tıkanıklığı gibi organ komplikasyonları** | Organ güvenliği açısından ameliyat lehine |
 | **Tanının belirsiz kalması ve tedaviyi değiştirecek doku tanısına ihtiyaç duyulması** | Ameliyat lehine |
 | **İleri yaş, düşük AMH, iki yumurtalıkta birden kist veya geçirilmiş yumurtalık ameliyatı** | Yumurtalık rezervini korumak için tüp bebek (IVF) lehine |
 | **İki tüpte de belirgin hasar veya belirgin erkek faktörü** | Doğurganlık için ameliyattan beklenen yarar azalır, tüp bebek öne çıkar; ağrı gibi ameliyat gerekçeleri ayrıca değerlendirilir |
 | **Belirti vermeyen, tipik görünümlü ve boyutu değişmeyen kist** | Çoğu zaman izlem |
 | **Kistin yalnızca büyüklüğü** | Tek başına karar verdirmez (aşağıya bakın) |
 
+Tablodaki organ komplikasyonu, yalnızca bağırsak, mesane veya üreterde endometriozis saptanmasından farklıdır. Derin endometriozis için ameliyat kararı ağrı, organ işlevi ve hasta tercihiyle birlikte değerlendirilir; IVF sonuçlarına sağlayacağı yarar ise belirsizdir ([ESHRE, 2022](https://pubmed.ncbi.nlm.nih.gov/35350465/)).
+
+**Ani başlayan, şiddetli ve geçmeyen karın ağrısında acil değerlendirme gerekir.** Kistin patlaması, yumurtalık torsiyonu ve başka acil nedenler birbirinden ayrılmalıdır; rüptürde bazı olgularda ameliyat gerekebilir ([Gu ve ark., 2023](https://pubmed.ncbi.nlm.nih.gov/37865796/)).
+
 <h3 id="kac-cm">Çikolata kisti kaç cm olursa ameliyat gerekir?</h3>
 
 Tek bir santimetre sınırı yoktur. Kötü huylu bir hastalık şüphesi ya da yumurta toplamada erişim sorunu yoksa, kistin yalnızca büyüklüğü tek başına ameliyat gerekçesi değildir; “4 cm oldu, ameliyat gerekir” gibi evrensel bir eşik yoktur. Karar ağrı, ultrason görünümü, büyüme hızı, kanser şüphesi, yumurta toplamaya engel olup olmadığı, yaş ve yumurtalık rezervi birlikte değerlendirilerek verilir.
 
 Ameliyat gerekiyorsa amaç, sağlıklı yumurtalık dokusunu olabildiğince korumaktır. Kist iki yumurtalıktaysa, daha önce ameliyat yapılmışsa ya da rezerv zaten düşükse bu denge daha da hassaslaşır. Ameliyat yöntemi de dengeyi etkiler: kist duvarının çıkarılması (kistektomi) tekrarlamayı daha iyi azaltabilir, kist duvarının yakılması (ablasyon) ise AMH'yi daha az düşürebilir ([Paik ve Jee, 2024](https://pubmed.ncbi.nlm.nih.gov/38509401/)). Hangi yöntemin uygun olduğu kistin özelliklerine ve önceki ameliyatlara göre belirlenir.
+
+Ameliyat sonrası plan, gebelik zamanlamanıza göre değişir. Hemen gebelik istemeyen kadınlarda ESHRE, kistin ve yakınmaların tekrarlamasını azaltmak için uzun süreli hormonal tedavi önerir. Bu yaklaşım, hemen gebelik isteyen kadınların planından ayrı değerlendirilir ([ESHRE, 2022](https://pubmed.ncbi.nlm.nih.gov/35350465/)).
 </div>
+
+<style>{`
+  @media (max-width: 767px) {
+    .prose-medical .endometrioma-article table {
+      display: table;
+      table-layout: fixed;
+      width: 100%;
+    }
+    .prose-medical .endometrioma-article th,
+    .prose-medical .endometrioma-article td {
+      padding: 0.65rem 0.45rem;
+      overflow-wrap: anywhere;
+    }
+  }
+`}</style>
 
 <div data-reveal>
 <h2 id="ivf">Tüp Bebek (IVF) Öncesi Endometrioma Varsa Ne Yapılır?</h2>
