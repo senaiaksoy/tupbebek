@@ -63,11 +63,11 @@ export const POST: APIRoute = async ({ request, locals }) => {
               <div style="background-color: #f0f7ff; padding: 20px; border-radius: 8px; margin: 20px 0;">
                 <h3 style="color: #1a4d7a; margin-top: 0;">E-Kitap İçeriği:</h3>
                 <ul style="color: #374151; line-height: 1.8;">
-                  <li>4 Klinik Fazlı Beslenme Planı</li>
-                  <li>30 Günlük Detaylı Beslenme Tablosu</li>
-                  <li>Besin Rehberi & Vitamin Tablosu</li>
-                  <li>Akdeniz Diyeti Temelli Tarifler</li>
-                  <li>60+ Yaşanması Kolay Tarif</li>
+                  <li>Tedavi dönemlerine göre 4 bölümlük örnek plan</li>
+                  <li>30 günlük örnek menü</li>
+                  <li>Besin ve vitamin rehberi (folik asit dahil)</li>
+                  <li>Akdeniz tipi beslenme: çalışmalar ne gösteriyor?</li>
+                  <li>Pratik tarifler ve bilimsel kaynaklar</li>
                 </ul>
               </div>
 
@@ -79,7 +79,7 @@ export const POST: APIRoute = async ({ request, locals }) => {
               </div>
 
               <p style="color: #6b7280; line-height: 1.6; font-size: 14px;">
-                <strong>Tıpkı başarıyla indirdiğiniz gibi,</strong> bu linki kullanarak istediğiniz zaman e-kitabı tekrar indirebilirsiniz.
+                Bu bağlantıyla e-kitabı istediğiniz zaman yeniden indirebilirsiniz.
               </p>
 
               <hr style="border: none; border-top: 1px solid #e5e7eb; margin: 30px 0;">
