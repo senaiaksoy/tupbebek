@@ -86,3 +86,21 @@ Dr. Aksoy aynı gün seçenekli soruda düzenlenmiş SSS karşılıklarını "İ
 ## Açık işler
 
 1. Search Console sayfa sorgusu erişimi olduğunda soru seçiminin GSC ile karşılaştırılması.
+
+## Dış değerlendirme sonrası SEO/hasta dili turu (4 Ekim 2026, PR #266 yayımlandıktan sonra)
+
+**Kaynak:** Kullanıcının yapıştırdığı dış (ChatGPT) değerlendirme. **Sürüm eşleştirmesi:** yedi alıntı PR #266 öncesi metne aitti ve güncel dosyada yoktu: "rahim dışında yerleşmesiyle tanımlanan", "Tanıda artık tek yol 'hemen laparoskopi'", "Endometrioma, bazı hastalarda yumurtalık yanıtını azaltabilir", eski aşılama satırı, kutudaki "bilateral", "over cerrahisi", "Malignite" ve "ultrason/MRI". Bunlara dayalı öneriler (kutunun yeniden yazımı dahil) uygulanmadı; kutu zaten onaylı sadeleştirilmiş dildedir ve değerlendirmenin önerdiği yeniden ifade hekim sözü olmadığı için kullanılmadı.
+
+**Uygulananlar (Dr. Aksoy seçenekli soruda "Onaylıyorum, PR aç ve deploy et"):**
+
+- H1 "Endometriozis ve Kısırlık: Gebelik, Ameliyat ve Tüp Bebek (IVF)"; `seoTitle` "Endometriozis ve Kısırlık: Gebelik, Ameliyat ve Tüp Bebek" (sayfa başlığı 72 karakter); description ve summary'de "çikolata kisti", "yumurtalık rezervi", "tüp bebek (IVF)"; `public/llms.txt` başlığı eşitlendi.
+- `#tani` içinde endometriozis–çikolata kisti ilişkisi (genel hastalık / yumurtalıktaki biçim; her hastada gelişmez). Yeni klinik iddia değildir; endometrioma makalesinde onaylı ayrımın aynısıdır.
+- Yeni H2 `#laparoskopi` "Endometriozis Tanısı İçin Laparoskopi Şart mı?"; mevcut görüntüleme paragrafları buraya taşındı, "Hayır, her zaman değil." doğrudan cevabıyla açılır. İçindekiler 7 maddeye çıktı; eski bağlantılar (`#tani`, `#mekanizma`, `#rezerv`, `#strateji`, `#gebelik`, `#faq`) korundu.
+- H2 adları: "Endometriozis Hamile Kalmayı Nasıl Etkiler?", "Çikolata Kisti (Endometrioma) ve Yumurtalık Rezervi", "Endometrioziste Doğal Gebelik, Ameliyat ve Tüp Bebek Sırası Nasıl Seçilir?" ("Tek bir doğru sıra yoktur" lede'i), "Endometriozisle Gebelik: Riskler ve Takip".
+- Terimler: AMH ve AFC ilk geçişte (mekanizma tablosu), OHSS, adenomyozis (iç bağlantıyla), MR (manyetik rezonans), ilk gövde "tüp bebek (IVF)" kullanımı; hasta metninde "rezerv" → "yumurtalık rezervi".
+- Rezerv cümlesi: kistin kendi etkisi tutarsız, ameliyatın etkisi daha iyi gösterilmiş, iki taraflı/tekrarlayan ameliyatta daha belirgin olabilir — Younis ve Taylor 2024 (PMID 38800489; endometrioma makalesinde doğrulanmış) kaynakçaya eklendi.
+- IUI satırına "tüpler açıksa ve belirgin erkek faktörü yoksa" koşulu (aşılamanın genel ön koşulu; ESHRE metni evre I–II için bu koşulu ayrıca yazmaz, Dr. Aksoy onayladı).
+
+**Uygulanmayanlar:** Gövdeye "Endometriozis hamile kalmayı engeller mi?" H2'si (aynı soru Dr. Aksoy'un SSS yanıtında; tekrar edilmedi). "Önce ameliyat mı, tüp bebek mi?" H2 adı (kardeş makale `endometriozis-tup-bebek` "cerrahi mi IVF mi?" niyetini hedefliyor; yamyamlaşmayı önlemek için "sıra nasıl seçilir" ifadesi seçildi). "Tüp bebek başarısını düşürür mü?" ayrı bölümü (`#rezerv`'de Hamdan 2015 ile karşılanıyor; ayrıntı kardeş makalede). Değerlendirmedeki `utm_source=chatgpt.com` bağlantıları ve AI yüzdesi kullanılmadı.
+
+**Doğrulama:** `npm run build` başarılı; `npm run verify:preflight` 26/26; `editorial-check.mjs` 0 aday; derlenmiş sayfada tek H1, 7 bölüm bağlantısı.
