@@ -307,6 +307,17 @@ Yeni bir makale eklenirken veya mevcut makale komple yenilenirken, final duzenle
 - Stres azaltici renk paleti (nane yesili, yumusak kayisi, koyu lacivert)
 - Fotograflarda klinik/laboratuvar gorselleri tercih edilir
 
+### Makale içi görsel, tablo, şema ve infografik (zorunlu, 2026-10-04)
+
+Dr. Aksoy'un 2026-10-04 kararı tupbebek ve draksoyivf için geçerlidir. Kanonik kurallar stil rehberinin "Makale içi görsel, tablo, şema ve infografik" bölümündedir (`wiki/brand/senai-aksoy-makale-stil-rehberi.md`). Gövdeye görsel, tablo veya şema eklemeden önce bu bölüm okunur; aşağıdaki özet onun yerine geçmez.
+
+- Karar ve karşılaştırma bilgisi tabloyla verilir. Satırlar yalnızca makalede zaten kaynaklı veya hekim onaylı içerikten kurulur.
+- Görsel yalnızca yazıyla zor anlatılanı gösterir (anatomi, görüntüleme, süreç takvimi). Süs görseli eklenmez.
+- Görseldeki her önemli bilgi metinde ve kaynaklı `<figcaption>` içinde de bulunur.
+- Görsel, görüntü modeliyle **yazısız** üretilir; Türkçe etiketler, numaralar ve kaynak satırı sonradan HTML/SVG ile eklenir. Her tıbbi etiket yayından önce Dr. Aksoy'a gösterilir.
+- Telefon için dikey sürüm hazırlanır (`<picture>`). Klinik görüntüye benzeyen illüstrasyonda "Şematik illüstrasyondur; gerçek … görüntüsü değildir" uyarısı bulunur.
+- Dosya: `public/images/makaleler/<slug>-<anahtar>.webp`; WebP, `loading="lazy"`, `width`/`height` tanımlı. Örnek uygulama: `endometrioma.mdx` (PR #262).
+
 ### Icerik Kurallari
 
 - Bilimsel dogruluk onceliklidir
