@@ -400,8 +400,8 @@ export const glossary: Record<string, GlossaryEntry> = {
   // ── Tıbbi Durumlar (Ek) ──
   Endometrioma: {
     term: 'Endometrioma (Çikolata Kisti)',
-    definition: 'Yumurtalık içinde gelişen endometriozis kistleri. Eski kanın koyu kahverengi görünümü nedeniyle "çikolata kisti" olarak bilinir. Over rezervini ve IVF başarısını olumsuz etkileyebilir; cerrahi karar dikkatli verilmelidir.',
-    href: '/makaleler/endometrioma',
+    definition: 'Endometriozisin yumurtalıkta oluşturduğu kist. İçindeki eski kanın koyu görünümü nedeniyle halk arasında "çikolata kisti" denir. Tüp bebek öncesi rutin ameliyat önerilmez; ameliyat yumurtalık rezervini (AMH) azaltabileceği için karar dikkatle verilir.',
+    href: '/makaleler/endometrioma/',
   },
   PMOS: {
     term: 'PMOS (Poliendokrin Metabolik Over Sendromu)',

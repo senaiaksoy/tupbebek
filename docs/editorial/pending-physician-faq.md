@@ -95,6 +95,19 @@ Doğrulama notu (2026-09-29): Search Console `sc-domain:tupbebek.com`, 28 Hazira
 
 **Uygulanmayan:** Kutu başlığını "Ben ameliyat mı IVF mi kararını nasıl veriyorum?" yapma önerisi. Dr. Aksoy "Mevcut başlık kalsın" dedi; "Dr. Aksoy'un yaklaşımı" site genelindeki standart kutu adıdır. Görsel önerisi (ultrason görünümünü anlatan öğretici şema) açık iş olarak bırakıldı.
 
+**Yayın notu:** PR #261 ile birleştirildi (ed390d76) ve 2026-10-04'te korumalı deploy edildi; canlı sayfa doğrulandı.
+
+### endometrioma (tr) — ultrason şeması, karar tablosu ve sözlük; 2026-10-04
+
+**Kapsam (Dr. Aksoy'un 2026-10-04 isteği: "1, 2 ve sözlük düzeltmesini yap"):**
+
+- **Ultrason şeması:** `endometrioma-ultrason-gorunumu.webp` (1200×675) ve telefon için dikey `endometrioma-ultrason-gorunumu-mobil.webp` (800×1307), `<picture>` ile `#tani` bölümünde. Görseller Dr. Aksoy'un "daha profesyonel, premium yap; yazıları sonradan ekle" isteğiyle yumurtalık kesiti illüstrasyonları Higgsfield üzerinden GPT Image 2.5 modeliyle yazısız üretildi (iş kimlikleri 17fb3ed5…, a75db219…); Türkçe etiketler, numaralar ve kaynak satırı HTML ile eklenip Puppeteer ile işlendi. Görsel gerçek bir ultrason görüntüsü değildir ve üzerinde "Şematik illüstrasyondur; gerçek ultrason görüntüsü değildir" yazar. Etiketler Van Holsbeke ve ark. 2010'a (IOTA, Ultrasound Obstet Gynecol, PMID 20503240) dayanır: endometriomaların %51'i tek bölmeli ve buzlu cam görünümlü; önerilen kural "menopoz öncesi, buzlu cam içerik, 1–4 bölme, katı alan yok"; menopoz sonrası buzlu cam görünümlü kitlelerde kötü huylu olma riski yüksek. Kaynak kaynakçaya eklendi.
+- **Metin eşitlemesi:** `#tani` bölümündeki "içi koyu ve düzgün (homojen)" tanımı, yumurtalık kistleri yazısıyla da uyumlu olacak biçimde "buzlu cam" tanımıyla değiştirildi ve IOTA bulgusu bağlamıyla (ameliyat edilen endometriomalar) eklendi.
+- **Karar tablosu:** `#ameliyat` bölümündeki altı maddelik liste, "Durum / Kararı hangi yöne çeker?" tablosuna dönüştürüldü. Satırlar yalnızca makalede zaten onaylı içerikten gelir: gövde listesi, `expertContribution` yanıtı ve "ne zaman ameliyat" SSS yanıtı ("izlem çoğu zaman makuldür"). `#ivf` bölümündeki tüp/erkek faktörü cümlesi tabloya taşındı; yerine tabloya bağlantı verildi.
+- **Sözlük:** `src/data/glossary.ts` Endometrioma tanımındaki "Over rezervini ve IVF başarısını olumsuz etkileyebilir" ifadesi, Hamdan 2015 (canlı doğum benzer) ve Younis ve Taylor 2024 (kistin kendi etkisi belirsiz) ile çeliştiği için "Tüp bebek öncesi rutin ameliyat önerilmez; ameliyat yumurtalık rezervini (AMH) azaltabileceği için karar dikkatle verilir" olarak düzeltildi. Bağlantıya sondaki eğik çizgi eklendi.
+
+**Onay:** Dr. Aksoy 2026-10-04'te premium görselleri, karar tablosunu, ultrason tanımını ve sözlük düzeltmesini "Onaylıyorum, PR aç" seçeneğiyle onayladı. Bu kayıt merge, deploy veya canlı yayın doğrulaması değildir.
+
 ### pgt-a-bas-editor-kosesi (tr) — üç SSS sorusu; yanıt tarihi 2026-10-03
 
 **Soru verisi (2026-10-03):** Hedef sayfa filtresi (`sc-domain:tupbebek.com`, Web, 30 Haziran–29 Eylül 2026, `*/makaleler/pgt-a-bas-editor-kosesi/`) yalnızca "site:tupbebek.com" sorgusunu (4 gösterim) verdi. Konu kümesi (sorgu "pgt" içerir, site geneli, aynı dönem): "pgt sonucu kaç günde çıkar kadınlar kulübü" 45 gösterim, "pgt sonucu kaç günde çıkar" 1 gösterim, "pgt a ve nipt test temiz cikmasi ne demek" 5 gösterim. Google Autocomplete Türkiye/Türkçe (`hl=tr&gl=tr`, `client=firefox`), 2026-10-03: `pgt sonucu` → "pgt sonucu kaç günde çıkar"; `pgt testi` → "pgt testi kaç günde çıkar"; `mozaik embriyo` → "mozaik embriyo transfer edilir mi", "mozaik embriyo ile hamile kalanlar". Otomatik tamamlama hacim sırası vermez. Soru başlıkları Dr. Aksoy'un yanıtında yazdığı biçimiyle kullanıldı.
