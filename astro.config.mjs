@@ -151,7 +151,9 @@ const redirectOnlyRoutePatterns = [
   '/tup-bebekte-ozel-uygulamalar*',
   '/yasiniz-ve-kisirlik*',
   '/yayin-sureci*',
-  '/yazar*',
+  // '/yazar*' bilinçli olarak yok: /yazar/senai-aksoy/ gerçek bir sayfa ve
+  // Worker'ın kopya-adres kuralları ona da uygulanmalı. /yazar ve /yazar/
+  // routeAliases ile Worker'da tek 301'de /yayin-kurulu/'ya gider.
   '/yumurtaliklarin-asiri-uyarilmasi*',
   '/yumurtalik-rezervi-degerlendirme*',
   '/yumurtlama-takibi*',

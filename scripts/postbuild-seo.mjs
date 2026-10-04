@@ -204,6 +204,27 @@ async function fetchStaticAsset(request, env) {
   return null;
 }
 
+// 404 sayfasının kendi adresleri 404 durum koduyla döner. Aksi halde Pages
+// /404/ isteğini 308 ile /404'e, eğik çizgi kuralı da /404'ü /404/'e
+// gönderip sonsuz döngü kurar; /404.html de 200 döner.
+const __tbNotFoundPagePaths = new Set(['/404', '/404/', '/404.html']);
+
+async function fetchNotFoundPage(request, env) {
+  for (const candidate of ['/404', '/404.html']) {
+    const page = await env.ASSETS.fetch(new Request(new URL(candidate, request.url), { method: 'GET', redirect: 'manual' }));
+    if (page.status === 200) {
+      return new Response(request.method === 'HEAD' ? null : page.body, {
+        status: 404,
+        headers: {
+          'content-type': 'text/html; charset=utf-8',
+          'cache-control': 'public, max-age=300',
+        },
+      });
+    }
+  }
+  return null;
+}
+
 // Takma ad araçları kendi kapsamında tutulur; paketlenmiş worker'daki
 // aynı adlı değişkenlerle çakışmaz.
 const __tbPagePaths = new Set(${JSON.stringify(workerPagePaths)});
@@ -359,6 +380,11 @@ const __astrojsSsrVirtualEntryBase = _exports.default;
 const __astrojsSsrVirtualEntry = {
     ...__astrojsSsrVirtualEntryBase,
     async fetch(request, env, context) {
+        if (env.ASSETS && __tbNotFoundPagePaths.has(new URL(request.url).pathname)) {
+            const notFoundPage = await fetchNotFoundPage(request, env);
+            if (notFoundPage) return notFoundPage;
+        }
+
         const canonicalRedirect = canonicalRedirectFor(request.url);
         if (canonicalRedirect) return canonicalRedirect;
 
