@@ -64,6 +64,37 @@ Doğrulama notu (2026-09-29): Search Console `sc-domain:tupbebek.com`, 28 Hazira
 
 **Durum:** Dr. Aksoy 2026-10-04'te seçenekli soruda "İfadeler bana ait, onaylıyorum" seçeneğiyle iki yanıtın sahipliğini ve düzenlenmiş görünür kullanımını onayladı. Bu kayıt merge, deploy veya canlı yayın doğrulaması değildir.
 
+**Yayın notu:** PR #260 ile birleştirildi (c5176ee8) ve 2026-10-04'te korumalı deploy edildi; canlı sayfada başlık, beş SSS sorusu ve kaynaklar doğrulandı.
+
+### endometrioma (tr) — dış değerlendirme sonrası rafine; 2026-10-04
+
+**Kaynak:** Kullanıcının 2026-10-04'te yapıştırdığı dış (ChatGPT) değerlendirme. Sürüm eşleştirmesi: alıntılanan ifadelerin tümü PR #260 ile yayına çıkan güncel metinde bulundu. Değerlendirmenin "ameliyat tekniği hiç açılmıyor" bulgusu gövde için geçerliydi; SSS'deki tekrarlama yanıtı bu konuya zaten değiniyordu.
+
+**Uygulanan kanıta dayalı düzeltmeler (Dr. Aksoy "Onaylıyorum, PR aç" seçeneğiyle onayladı):**
+
+- CA-125: "yardımcı olabilir" ifadesi kaldırıldı. ESHRE 2022 tam metni (PMC8951218): "Clinicians should not use measurement of biomarkers in endometrial tissue, blood, menstrual or uterine fluids to diagnose endometriosis" (güçlü öneri).
+- FSH/östradiol tablo satırı ikincil konuma alındı ("AMH ve AFC'nin yerine geçmez"). Ayrı kaynak bağlanmadı; ASRM 2020 (PMID 33280722) özeti bu ayrıntıyı içermiyor.
+- Kistin kendisinin rezerve etkisi: Younis ve Taylor 2024 (PMID 38800489) "kanıt sağlam değil" ifadesine göre yumuşatıldı. Dr. Aksoy'un SSS AMH yanıtıyla uyumlu.
+- Murdock ve ark. 2025 (Gynecol Obstet Invest, PMID 40179834; 30 çalışma) eklendi: laparoskopik kistektomi sonrası AMH kısa, orta ve uzun dönemde (18 aya kadar) anlamlı düşük.
+- Ameliyat yöntemi: Paik ve Jee 2024'e dayalı kistektomi/ablasyon cümlesi eklendi. Değerlendirmedeki "cerrahın deneyimi" ölçütü kaynakta olmadığı için alınmadı.
+- Fertilite koruma: ESHRE 2022 "The true benefit of fertility preservation in women with endometriosis remains unknown" ifadesine göre "henüz bilinmiyor; her kadına rutin yumurta dondurma önerilmesini destekleyen kanıt yoktur" eklendi.
+
+**Dr. Aksoy'un seçenekli sorulardaki kararları (2026-10-04):**
+
+- Tüp/erkek faktörü cümlesi: "Gövdede yumuşat, kutu kalsın." Gövdede "ameliyattan çok IVF tercih edilir" ifadesi "doğurganlık amacıyla ameliyattan beklenen yarar azalır ve IVF daha erken öne çıkar; ağrı veya şüpheli görüntü gibi ameliyat gerekçeleri ayrıca değerlendirilir" oldu. `expertContribution` kutusundaki özgün ifade değişmedi.
+- Kendi sözü olarak iki ekleme: (1) `expertContribution.text` sonuna "Benim için kararın merkezi kistin çapı değil, ameliyatın bu hastaya bugün sağlayacağı somut faydadır." (2) Gövdede "'4 cm oldu, ameliyat gerekir' gibi evrensel bir eşik yoktur." Her iki cümle dış değerlendirmenin önerisidir; Dr. Aksoy kendi sözü olarak seçti. Onay yalnızca bu iki cümleyi kapsar. Kutunun `answeredAt` değeri (2026-08-11) özgün yanıtın tarihi olarak korundu; eklenen cümlenin tarihi 2026-10-04.
+- SSS AMH yanıtındaki "iki taraflı … daha belirgin olabilir": "Olduğu gibi kalsın." Younis ve Taylor 2024 iki taraflı olgularda hasarın daha belirgin olduğunu söyler; Murdock 2025 uzun dönemde tek ve iki taraflı kistektomi arasında AMH açısından anlamlı fark bulmamıştır. Fark kayıtta tutulur.
+
+### endometrioma (tr) — ikinci dış değerlendirme (SEO/GEO); 2026-10-04
+
+**Kaynak:** Kullanıcının 2026-10-04'te yapıştırdığı ikinci dış (ChatGPT) değerlendirme. Sürüm eşleştirmesi: alıntılar güncel metinle eşleşti. Teknik SEO önerileri zaten karşılanıyordu: canlı JSON-LD'de `dateModified` 2026-10-04 ve yazar `@id: https://senaiaksoy.net/#person`. Değerlendirmede yarışan klinik sitelerine verilen bağlantılar ve doğrulanmamış Google duyuru iddiaları (FAQ rich result) kullanılmadı.
+
+**Uygulananlar (Dr. Aksoy seçenekli soruda "Onaylıyorum, PR #261'e ekle" ile onayladı):** H1 "Çikolata Kisti (Endometrioma): Ameliyat, AMH ve Tüp Bebek Kararı"; `seoTitle` "…AMH, Ameliyat ve Tüp Bebek"; description ve summary'de terim sırası ve "tüp bebek (IVF)"; `#nedir` başlığı "Çikolata Kisti (Endometrioma) Nedir?"; giriş tanımı "Çikolata kisti, tıbbi adıyla endometrioma…", WHO 2025'e dayanan tek cümlelik endometriozis tanımı ve "her endometriozis hastasında çikolata kisti gelişmez" ayrımı; `#ivf` başlığı "Tüp Bebek (IVF) Öncesi Endometrioma Varsa Ne Yapılır?"; `#ameliyat` içinde yeni alt başlık "Çikolata kisti kaç cm olursa ameliyat gerekir?" (`#kac-cm`). Alt başlığın yanıtı yalnızca metinde zaten onaylı olan ölçütlerden kuruldu. Bölüm bağlantıları değişmedi. Önerilen "Çikolata Kisti Varken Tüp Bebek Yapılır mı?" H2'si, SSS'deki aynı soruyu tekrarlamamak için kullanılmadı.
+
+**`expertContribution` dil düzenlemesi (Dr. Aksoy seçenekli soruda "Onaylıyorum"):** "Malignite şüphesi" → "Kanser (malignite) şüphesi"; "foliküllere erişimi engelleyen endometrioma" → "yumurta toplama sırasında iğnenin foliküllere güvenli biçimde ulaşmasını engelleyen endometrioma"; "bilateral endometrioma" → "iki yumurtalıkta birden endometrioma"; "geçirilmiş over cerrahisi" → "geçirilmiş yumurtalık ameliyatı"; "over rezervi" → "yumurtalık rezervi"; "bilateral tubal hasar" → "iki tüpte de belirgin hasar veya tıkanıklık"; ikinci "malignite şüphesi" → "kanser şüphesi"; "folikül erişim sorunu" → "yumurta toplamaya engel". Anlam değişmedi; onay yalnızca bu dil düzenlemelerini kapsar.
+
+**Uygulanmayan:** Kutu başlığını "Ben ameliyat mı IVF mi kararını nasıl veriyorum?" yapma önerisi. Dr. Aksoy "Mevcut başlık kalsın" dedi; "Dr. Aksoy'un yaklaşımı" site genelindeki standart kutu adıdır. Görsel önerisi (ultrason görünümünü anlatan öğretici şema) açık iş olarak bırakıldı.
+
 ### pgt-a-bas-editor-kosesi (tr) — üç SSS sorusu; yanıt tarihi 2026-10-03
 
 **Soru verisi (2026-10-03):** Hedef sayfa filtresi (`sc-domain:tupbebek.com`, Web, 30 Haziran–29 Eylül 2026, `*/makaleler/pgt-a-bas-editor-kosesi/`) yalnızca "site:tupbebek.com" sorgusunu (4 gösterim) verdi. Konu kümesi (sorgu "pgt" içerir, site geneli, aynı dönem): "pgt sonucu kaç günde çıkar kadınlar kulübü" 45 gösterim, "pgt sonucu kaç günde çıkar" 1 gösterim, "pgt a ve nipt test temiz cikmasi ne demek" 5 gösterim. Google Autocomplete Türkiye/Türkçe (`hl=tr&gl=tr`, `client=firefox`), 2026-10-03: `pgt sonucu` → "pgt sonucu kaç günde çıkar"; `pgt testi` → "pgt testi kaç günde çıkar"; `mozaik embriyo` → "mozaik embriyo transfer edilir mi", "mozaik embriyo ile hamile kalanlar". Otomatik tamamlama hacim sırası vermez. Soru başlıkları Dr. Aksoy'un yanıtında yazdığı biçimiyle kullanıldı.
