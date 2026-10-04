@@ -404,7 +404,7 @@ export const routeAliases = {
   '/blog/opk-ve ivf': '/makaleler/opk-ve-ivf',
   '/blog/polip-nedir-kisirliga-yol-acar-mi': '/makaleler/miyomlar-ve-tup-bebek',
   '/blog/preimplantasyon-genetik-tani-nedir': '/pgt-merkezi',
-  '/blog/rahmin-ters-durmasi-kisirliga-neden-olmaz-retrovert-uterus': '/kadin-infertilitesi',
+  '/blog/rahmin-ters-durmasi-kisirliga-neden-olmaz-retrovert-uterus': '/makaleler/retrovert-uterus',
   '/blog/tup-bebek-efsaneler-ve-gercekler': '/makaleler/tup-bebek-yanlis-bilinenler',
   '/blog/tup-bebek-oncesi-histeroskopi-laparoskopi-basariyi-artirir-mi': '/makaleler/ivf-oncesi-histeroskopi',
   '/blog/tup-bebek-sureci-adim-adim-rehber': '/makaleler/tup-bebek-sureci-rehber',

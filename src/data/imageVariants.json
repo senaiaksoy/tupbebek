@@ -907,6 +907,23 @@
       "height": 720
     }
   ],
+  "/images/makaleler/retrovert-uterus.webp": [
+    {
+      "src": "/generated/article-heroes/makaleler-retrovert-uterus-w640.webp",
+      "width": 640,
+      "height": 360
+    },
+    {
+      "src": "/generated/article-heroes/makaleler-retrovert-uterus-w960.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "src": "/generated/article-heroes/makaleler-retrovert-uterus-w1280.webp",
+      "width": 1280,
+      "height": 720
+    }
+  ],
   "/images/makaleler/taze-dondurulmus-transfer.webp": [
     {
       "src": "/generated/article-heroes/makaleler-taze-dondurulmus-transfer-w640.webp",
