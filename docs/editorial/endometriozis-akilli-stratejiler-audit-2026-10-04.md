@@ -104,3 +104,16 @@ Dr. Aksoy aynı gün seçenekli soruda düzenlenmiş SSS karşılıklarını "İ
 **Uygulanmayanlar:** Gövdeye "Endometriozis hamile kalmayı engeller mi?" H2'si (aynı soru Dr. Aksoy'un SSS yanıtında; tekrar edilmedi). "Önce ameliyat mı, tüp bebek mi?" H2 adı (kardeş makale `endometriozis-tup-bebek` "cerrahi mi IVF mi?" niyetini hedefliyor; yamyamlaşmayı önlemek için "sıra nasıl seçilir" ifadesi seçildi). "Tüp bebek başarısını düşürür mü?" ayrı bölümü (`#rezerv`'de Hamdan 2015 ile karşılanıyor; ayrıntı kardeş makalede). Değerlendirmedeki `utm_source=chatgpt.com` bağlantıları ve AI yüzdesi kullanılmadı.
 
 **Doğrulama:** `npm run build` başarılı; `npm run verify:preflight` 26/26; `editorial-check.mjs` 0 aday; derlenmiş sayfada tek H1, 7 bölüm bağlantısı.
+
+## Üçüncü dış değerlendirme — mikro düzeltmeler (4 Ekim 2026, PR #267 yayımlandıktan sonra)
+
+**Sürüm eşleştirmesi:** Alıntıların tümü canlı ve güncel metinle eşleşti. İki öneri zaten karşılanıyordu: EFI ilk geçişte açıklanıyordu; "Hafif (evre I–II)" ifadesi mevcuttu.
+
+**Uygulananlar (Dr. Aksoy seçenekli sorularda onayladı):**
+
+- `expertContribution`: "üreter ya da bağırsak obstrüksiyonu" → "üreterde ya da bağırsakta tıkanıklık"; "doğrudan IVF lehine" → "doğrudan tüp bebek (IVF) lehine". Önerilen "tüp bebeği daha erken seçme" ifadesi, "doğrudan" (ameliyatsız) anlamını zayıflattığı için kullanılmadı. Dr. Aksoy "İkisini de, anlamı koruyarak" seçeneğini seçti. `answeredAt` (2026-08-11) korundu.
+- Giriş bağlantı metni "kadın kısırlığı (infertilite)"; hedef URL değişmedi.
+- EFI'nin kan testi değil, ameliyat bulguları ve öyküden hesaplanan bir puan olduğu tek cümleyle belirtildi (ESHRE 2022 tanımıyla uyumlu; yeni klinik iddia yok).
+- Çikolata kisti boyutu sorusu için endometrioma rehberinin `#kac-cm` bölümüne iç bağlantı.
+
+**Uygulanmayan:** SSS'ye "Endometriozis varsa önce ameliyat mı, tüp bebek mi?" sorusu. Türkiye/Türkçe otomatik tamamlama 2026-10-04'te "endometriozis önce ameliyat", "endometriozis ameliyat mı tüp bebek mi", "endometriozis ameliyat mı" ve "endometriozis tüp bebek mi" için öneri döndürmedi; soru ayrıca kardeş `endometriozis-tup-bebek` makalesinin ana konusu. Dr. Aksoy "Ekleme" seçeneğini seçti. AI yüzdesi tahmini kalite ölçütü olarak kullanılmadı.
