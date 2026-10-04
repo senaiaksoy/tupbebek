@@ -186,6 +186,23 @@ function collectRoutesJsonIssues(filePath) {
       failures.push(`${path.relative(rootDir, filePath)} must allow worker canonicalization for route: ${pattern}`);
     }
   }
+
+  // Gerçek bir sayfa klasörü exclude desenine takılırsa Worker'ın kopya-adres
+  // kuralları (?utm, //, index.html) o sayfada çalışmaz (ör. eski '/yazar*').
+  const excludeMatchers = [...excludes].map((pattern) => [
+    pattern,
+    new RegExp(`^${pattern.replace(/[.+?^${}()|[\]\\]/g, '\\$&').replace(/\*/g, '.*')}$`),
+  ]);
+  const pagePaths = walk(distDir)
+    .map((file) => '/' + path.relative(distDir, file).split(path.sep).join('/'))
+    .filter((rel) => rel.endsWith('/index.html'))
+    .map((rel) => rel.slice(0, -'index.html'.length));
+  for (const pagePath of pagePaths) {
+    const match = excludeMatchers.find(([, regex]) => regex.test(pagePath) || regex.test(pagePath.replace(/\/$/, '')));
+    if (match) {
+      failures.push(`${path.relative(rootDir, filePath)} excludes real page ${pagePath} from the Worker via ${match[0]}`);
+    }
+  }
 }
 
 function collectWorkerEntrypointIssues(filePath) {
@@ -200,6 +217,9 @@ function collectWorkerEntrypointIssues(filePath) {
   }
   if (!content.includes("'Strict-Transport-Security': 'max-age=63072000; includeSubDomains; preload'")) {
     failures.push(`${path.relative(rootDir, filePath)} is missing HSTS on edge redirects`);
+  }
+  if (!content.includes('__tbNotFoundPagePaths')) {
+    failures.push(`${path.relative(rootDir, filePath)} is missing the /404 status guard (/404/ redirect loop)`);
   }
 }
 
