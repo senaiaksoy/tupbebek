@@ -72,7 +72,7 @@ export const POST: APIRoute = async ({ request, locals }) => {
               </div>
 
               <div style="text-align: center; margin: 30px 0;">
-                <a href="https://tupbebek.com/e-kitap/tup-bebek-beslenme-plani.pdf"
+                <a href="https://tupbebek.com/e-kitap/tup-bebek-beslenme-plani.pdf?v=20261004"
                    style="background-color: #2563a8; color: white; padding: 12px 30px; text-decoration: none; border-radius: 6px; display: inline-block; font-weight: bold;">
                   E-Kitabı İndir (PDF)
                 </a>
