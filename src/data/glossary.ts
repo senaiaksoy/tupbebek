@@ -108,18 +108,18 @@ export const glossary: Record<string, GlossaryEntry> = {
   // ── Tanı ve Cerrahi Yöntemler ──
   Histeroskopi: {
     term: 'Histeroskopi',
-    definition: 'İnce bir kamera (histeroskop) ile rahim iç boşluğunun doğrudan görüntülenmesi işlemi. Vajinadan girilerek yapılır, kesi gerektirmez. Polip, miyom, septum ve yapışıklık gibi sorunların hem tanısında hem tedavisinde kullanılır.',
-    href: '/makaleler/ivf-oncesi-histeroskopi',
+    definition: 'İnce bir kamera (histeroskop) ile rahim iç boşluğunun doğrudan görüntülenmesi işlemi. Rahim ağzından ilerletilerek yapılır, karında kesi gerektirmez. Polip, miyom, septum ve yapışıklık gibi sorunların hem tanısında hem tedavisinde kullanılır. Rahim içi normal görünen tüp bebek hastalarında rutin uygulanmasının canlı doğumu artırdığı gösterilmemiştir.',
+    href: '/makaleler/ivf-oncesi-histeroskopi/',
   },
   Laparoskopi: {
     term: 'Laparoskopi',
-    definition: 'Karın boşluğunun küçük kesilerden girilen kamera ile incelenmesi ve tedavi edilmesi işlemi. Genel anestezi altında yapılır. Endometriozis, hidrosalpinks ve büyük miyomların değerlendirilmesinde kullanılır.',
-    href: '/makaleler/ivf-oncesi-histeroskopi',
+    definition: 'Karın boşluğunun küçük kesilerden girilen kamera ile incelenmesi ve tedavi edilmesi işlemi (kapalı ameliyat). Genel anestezi altında yapılır. Endometriozis, hidrosalpinks ve büyük miyomların değerlendirilmesinde ve tedavisinde kullanılır; kısırlık değerlendirmesinde rutin değildir.',
+    href: '/makaleler/endometriozis-akilli-stratejiler/#laparoskopi',
   },
   Hidrosalpinks: {
     term: 'Hidrosalpinks',
-    definition: 'Fallop tüplerinin içinde sıvı birikmesi durumu. Bu sıvı embriyoya toksik etki yapabilir ve IVF başarısını düşürür. Tedavide etkilenen tüpün laparoskopik olarak alınması veya bağlanması önerilir.',
-    href: '/makaleler/ivf-oncesi-histeroskopi',
+    definition: 'Fallop tüpünün sıvıyla dolarak genişlemesi. Bu sıvı rahim boşluğuna geçerek embriyonun tutunmasını olumsuz etkileyebilir; özellikle ultrasonda görülen belirgin hidrosalpinks tüp bebek başarısını azaltabilir. Transferden önce etkilenen tüpün alınması (salpenjektomi) veya rahimle bağlantısının kapatılması klinik gebelik şansını artırabilir.',
+    href: '/makaleler/hidrosalpinx-ve-kisirlik/',
   },
   HSG: {
     term: 'HSG',
@@ -330,7 +330,7 @@ export const glossary: Record<string, GlossaryEntry> = {
   },
   TSH: {
     term: 'TSH (Tiroid Stimülan Hormon)',
-    definition: 'Hipofizden salgılanan ve tiroid bezini uyaran hormon. Tiroid fonksiyonunun en hassas göstergesidir. IVF öncesi TSH değerinin 2,5 mIU/L altında olması, implantasyon ve gebelik başarısı için önerilir.',
+    definition: 'Hipofizden salgılanan ve tiroid bezini uyaran hormon. Tiroid fonksiyonunun en hassas göstergesidir. Gebelik planlayan kadınlarda TSH 4 mIU/L\'nin üzerindeyse tedavi önerilir; 2,5–4 mIU/L arasındaki değerlerde tedavinin gebelik sonuçlarını iyileştirdiğine dair kanıt yetersizdir ve karar hekimle birlikte verilir.',
     href: '/hormon-paneli',
   },
   Hipofiz: {
@@ -410,8 +410,8 @@ export const glossary: Record<string, GlossaryEntry> = {
   },
   Asherman: {
     term: 'Asherman Sendromu',
-    definition: 'Rahim iç boşluğunda yapışıklıkların (intrauterin sineşi) oluşması. Genellikle küretaj, doğum sonrası enfeksiyon veya rahim cerrahisi sonrası gelişir. Adet azlığı/yokluğu, infertilite ve tekrarlayan gebelik kaybına yol açar; tedavisi histeroskopik adezyolizdir.',
-    href: '/makaleler/asherman-sendromu',
+    definition: 'Rahim iç boşluğunda yapışıklıkların (intrauterin sineşi) oluşması. Genellikle küretaj, doğum sonrası enfeksiyon veya rahim cerrahisi sonrası gelişir. Adet azlığına veya kesilmesine, kısırlığa ve tekrarlayan gebelik kaybına yol açabilir. Tedavisi, yapışıklıkların histeroskopiyle açılmasıdır (adezyoliz).',
+    href: '/makaleler/asherman-sendromu/',
   },
   POI: {
     term: 'POI / POF (Prematür Over Yetmezliği)',
@@ -419,23 +419,23 @@ export const glossary: Record<string, GlossaryEntry> = {
   },
   Polip: {
     term: 'Endometrial Polip',
-    definition: 'Rahim iç tabakasından (endometrium) boşluğa doğru büyüyen iyi huylu doku çıkıntısı. Düzensiz kanamaya ve implantasyon güçlüğüne neden olabilir. IVF öncesi histeroskopik polipektomi ile çıkarılması önerilir.',
-    href: '/makaleler/ivf-oncesi-histeroskopi',
+    definition: 'Rahim iç tabakasından (endometrium) boşluğa doğru büyüyen iyi huylu doku çıkıntısı. Düzensiz kanamaya neden olabilir ve embriyonun tutunmasını zorlaştırabileceği düşünülür. Tüp bebek öncesinde saptanırsa histeroskopiyle çıkarılması (polipektomi) değerlendirilir; küçük bir polip çıkarıldıktan sonra çoğu hastada uzun süre beklemek gerekmez.',
+    href: '/makaleler/ivf-oncesi-histeroskopi/#kimlerde',
   },
   SubmukozMiyom: {
     term: 'Submüköz Miyom',
-    definition: 'Rahim iç boşluğuna doğru büyüyen miyom tipi. Boyut küçük bile olsa implantasyonu ve gebeliği belirgin etkilediğinden histeroskopik olarak çıkarılması mutlaka önerilir. Intramural ve subseröz miyomlardan ayırt edilmesi tedavi kararı için kritiktir.',
-    href: '/makaleler/miyomlar-ve-tup-bebek',
+    definition: 'Rahim iç boşluğuna doğru büyüyen miyom tipi. Rahim boşluğunu bozarak gebe kalmayı güçleştirebilir. ASRM\'ye göre histeroskopiyle çıkarılması klinik gebelik oranını artırabilir; canlı doğuma ve düşüğe etkisi için kanıt yetersizdir. Rahim kas tabakasındaki (intramural) ve dış yüzeydeki (subseröz) miyomlardan ayırt edilmesi tedavi kararı için önemlidir.',
+    href: '/makaleler/miyomlar-ve-tup-bebek/',
   },
   UterinSeptum: {
     term: 'Uterin Septum',
-    definition: 'Rahim boşluğunun gelişimsel olarak ortadan bir doku perdesiyle (septum) bölünmüş olması. En sık görülen müllerian anomalidir; tekrarlayan düşük ve implantasyon başarısızlığı ile ilişkilidir. Histeroskopik septum rezeksiyonu ile düzeltilir.',
-    href: '/makaleler/ivf-oncesi-histeroskopi',
+    definition: 'Rahim boşluğunun gelişimsel olarak ortadan bir doku perdesiyle (septum) bölünmüş olması. Doğumsal rahim anomalilerinin en sık görülenidir; düşük, erken doğum ve gebe kalmada güçlük riskiyle ilişkilendirilmiştir. Histeroskopiyle septum kesisi tekrarlayan düşükte sonuçları iyileştirebilir; yalnızca kısırlık söz konusuysa yararı randomize çalışmada gösterilmemiştir ve karar ayrıntılı bilgilendirmeden sonra birlikte verilir.',
+    href: '/makaleler/ivf-oncesi-histeroskopi/#kimlerde',
   },
   Sinesi: {
     term: 'İntrauterin Sineşi (Adezyon)',
     definition: 'Rahim iç duvarları arasında oluşan fibröz yapışıklıklar. Asherman sendromunun temel bulgusudur. Histeroskopik adezyoliz ile ayrılarak normal rahim boşluğu sağlanmaya çalışılır.',
-    href: '/makaleler/asherman-sendromu',
+    href: '/makaleler/asherman-sendromu/',
   },
   InsulinDirenci: {
     term: 'İnsülin Direnci (HOMA-IR)',
@@ -511,8 +511,8 @@ export const glossary: Record<string, GlossaryEntry> = {
   },
   Metformin: {
     term: 'Metformin',
-    definition: 'Biguanid grubu insülin duyarlaştırıcı ilaç. İnsülin direncini azaltarak PMOS\'ta ovulasyonu düzenler, gebelik diabeti riskini düşürür. Genellikle 1500-2000 mg/gün dozunda kullanılır; ovulasyon indüksiyon ilaçlarıyla kombine edildiğinde başarı oranını artırabilir.',
-    href: '/makaleler/adet-duzensizligi-pcos',
+    definition: 'Biguanid grubu, insüline duyarlılığı artıran ilaç. PMOS\'ta kan şekeri ve insülin direnciyle ilgili sorunlar ön plandaysa, herkese değil, klinik gerekçe varsa değerlendirilir; adet düzenine katkı sağlayabilir. Gebelik isteyenlerde yumurtlamayı uyarmak için ilk seçenek genellikle letrozoldür; metformin bazı hastalarda tek başına kullanılabilse de yumurtlamayı uyarmada daha etkili ilaçlar vardır. Dozu yan etkilere ve toleransa göre hekim tarafından kademeli ayarlanır.',
+    href: '/makaleler/adet-duzensizligi-pcos/',
   },
   Inositol: {
     term: 'İnositol (Myo + D-chiro)',
