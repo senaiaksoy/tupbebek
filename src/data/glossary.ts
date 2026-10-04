@@ -439,8 +439,8 @@ export const glossary: Record<string, GlossaryEntry> = {
   },
   InsulinDirenci: {
     term: 'İnsülin Direnci (HOMA-IR)',
-    definition: 'Hücrelerin insüline normal yanıt vermemesi sonucu pankreasın daha fazla insülin salgılama zorunda kalması. HOMA-IR ile ölçülür (>2,5 direnç). PMOS\'ta sık görülür, ovulasyonu bozar ve gebelik diabeti riskini artırır. Metformin ve myo-inositol tedavide kullanılır.',
-    href: '/makaleler/adet-duzensizligi-pcos',
+    definition: 'Hücrelerin insüline normal yanıt vermemesi sonucu pankreasın daha fazla insülin salgılama zorunda kalması. Açlık kan şekeri ve insülin değerinden hesaplanan HOMA-IR gibi göstergelerle tahmin edilebilir. PMOS\'ta sık görülür; yumurtlamayı bozabilir ve gebelik diyabeti (gestasyonel diyabet) riskiyle ilişkilidir. Kan şekeri ve insülin direnciyle ilgili sorunlar ön plandaysa metformin değerlendirilir; miyo-inositolün klinik yararına dair kanıt sınırlıdır.',
+    href: '/makaleler/adet-duzensizligi-pcos/',
   },
   KimyasalGebelik: {
     term: 'Kimyasal Gebelik',
