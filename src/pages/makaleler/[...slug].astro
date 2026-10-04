@@ -303,7 +303,7 @@ const heroSrcSet = getResponsiveImageSrcSet(sanitizedImage);
                     />
 
                     {!entry.data.hideEvidenceGrade && entry.data.recommendationGrade && (
-                        <EvidenceGradeCard grade={entry.data.recommendationGrade} />
+                        <EvidenceGradeCard grade={entry.data.recommendationGrade} scope={entry.data.recommendationGradeScope} />
                     )}
                     {entry.data.hideEvidenceGrade && !entry.data.recommendationGrade && (
                         <EvidenceGradeCard grade="mixed" />

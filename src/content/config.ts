@@ -169,6 +169,9 @@ const articleFrontmatterSchema = z.object({
   // Yazi ici kritik iddialar icin markdown/MDX icinde {{kanit:A}}, {{kanit:B}},
   // {{kanit:C}} veya {{kanit:D/E}} inline etiketleri kullanilir.
   recommendationGrade: recommendationGradeEnum.optional(),
+  // Derecenin dayandigi ana oneriyi sinirlar (or. sayfanin tamami degil,
+  // yalnizca ana klinik iddia A ise). Kanit kartinda "Ana öneri için:" olarak gorunur.
+  recommendationGradeScope: z.string().min(10).max(160).optional(),
   // Ulusal kayit / mevzuat / coklu kanit turu iceren makalelerde
   // tekil "A-B-C oneri derecesi" kartini gizler. recommendationGrade de yoksa
   // makale "Karma kanit" sayilir; kunyede ve makale sonunda bu rozet gosterilir.
