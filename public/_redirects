@@ -136,6 +136,22 @@ http://www.tupbebek.com/*                       https://tupbebek.com/:splat     
 # --------------------------------------------
 # 8. Videolar (eski YouTube embed sayfaları)
 # --------------------------------------------
+# Tekil video yönlendirmeleri genel joker kuraldan ÖNCE gelmeli: Astro, joker
+# kural yüzünden /videolar altını worker'dan hariç tutar; routeAliases.mjs burada çalışmaz.
+/videolar/cikolata-kisti-nedir                                  /makaleler/endometrioma/                        301
+/videolar/cikolata-kisti-nedir/                                 /makaleler/endometrioma/                        301
+/videolar/ovarian-torsion-yumurtalik-donmesi                    /makaleler/over-torsiyonu/                      301
+/videolar/ovarian-torsion-yumurtalik-donmesi/                   /makaleler/over-torsiyonu/                      301
+/videolar/mikroenjeksiyon-yontemi-hangi-durumlarda-uygulanir    /makaleler/mikroenjeksiyon-icsi-nedir/          301
+/videolar/mikroenjeksiyon-yontemi-hangi-durumlarda-uygulanir/   /makaleler/mikroenjeksiyon-icsi-nedir/          301
+/videolar/tup-bebek-tedavisi-nedir-animasyon                    /ivf-rehberi/                                   301
+/videolar/tup-bebek-tedavisi-nedir-animasyon/                   /ivf-rehberi/                                   301
+/videolar/tup-bebek-tedavisi-yumurta-takibi                     /makaleler/ivf-protokolleri/                    301
+/videolar/tup-bebek-tedavisi-yumurta-takibi/                    /makaleler/ivf-protokolleri/                    301
+/videolar/tup-bebek/tup-bebek-tedavisi-ve-tup-bebek-asamalari   /ivf-rehberi/                                   301
+/videolar/tup-bebek/tup-bebek-tedavisi-ve-tup-bebek-asamalari/  /ivf-rehberi/                                   301
+/videolar/rahim-ici-yapisikliklarinda-ofis-histeroskopi         /makaleler/ivf-oncesi-histeroskopi/             301
+/videolar/rahim-ici-yapisikliklarinda-ofis-histeroskopi/        /makaleler/ivf-oncesi-histeroskopi/             301
 /videolar/*                                     /makaleler/                                     301
 /videolar                                       /makaleler/                                     301
 
