@@ -99,3 +99,22 @@ Kullanıcı istekleri: "tekrar geniş audit yap", ardından "hepsini yap, IndexN
 Korunanlar: tıbbi iddialar, kaynaklar, SSS yanıtları, uzman kutusu, onay ve tarih alanları.
 
 **Kanıt derecesi (Dr. Aksoy kararı, 2026-10-04, seçenekli soru "A yap"):** `recommendationGrade` B → A; inSIGHT ve TROPHY satırlarındaki satır içi etiket B → A (iki büyük RKÇ; ana öneri "rutin histeroskopi önerilmez"). Cochrane 2019 satırı B kaldı (havuzlanmış kanıt düşük kaliteli); ASRM 2021 satırı B, Lensen 2021 satırı A değişmedi. Dr. Aksoy aynı gün "Onaylıyorum, PR aç ve deploy et" ile ikinci düzeltme paketini onayladı.
+
+## Dış değerlendirme (ChatGPT) sonrası rötuş (4 Ekim 2026, PR #275 yayımlandıktan sonra)
+
+**Sürüm eşleştirmesi:** Alıntılar ("Vajinal ultrason, serumlu ultrason (SIS) veya rahim filmi (HSG)…", "ASRM 2024 kılavuzuna göre kesi, tekrarlayan düşükte sonuçları iyileştirir", `recommendationGrade: A`) güncel canlı metinle eşleşti.
+
+**Kaynak kontrolü (ASRM sayfaları canlı okundu, 2026-10-04):**
+- ASRM 2021: "HSG has relatively a low sensitivity (50%) and positive predictive value (PPV) (30%) for the diagnosis of endometrial polyps and submucous myomas in asymptomatic infertile women"; sonohisterografi "has a high (>90%) PPV and negative predictive value for the detection of intrauterine pathologies". Değerlendirme doğru.
+- ASRM 2024: "It is recommended to offer hysteroscopic septum incision to patients with a septum and a history of recurrent miscarriage in a shared decision-making model"; kısırlıkta "may or may not be associated with an increase in live births". Önceki cümlemiz yalnızca kılavuz özetine ("shown to improve outcomes") dayanıyordu; değerlendirme doğru.
+- ACOG CO 800 özeti: tanısal histeroskopi için en uygun zaman adet sonrası foliküler evre; ofis işlemleri genel anesteziden kaçınma ve daha hızlı toparlanma sağlar.
+
+**Arama verisi (Google Autocomplete TR, 2026-10-04):** "histeroskopi adetin kaçıncı günü yapılır", "histeroskopi adetten kaç gün sonra yapılır", "histeroskopi ağrılı bir işlem mi", "ofis histeroskopi ağrılı mi", "histeroskopi anestezi ile mi yapılır", "histeroskopi anestezi olmadan yapılır mı", "salin infüzyon sonografisi nedir", "sonohisterografi nasıl yapılır". "tüp bebek öncesi histeroskopi şart mı", "histeroskopi şart" ve "histeroskopi mi hsg mi" öneri döndürmedi.
+
+**Dr. Aksoy'un seçenekli sorulardaki kararları:**
+- "Hepsini uygula": özet ve `#ilk-deneme` HSG/SIS ayrımı (ASRM 2021 sayılarıyla), SIS'in "salin infüzyon sonografisi, sonohisterografi" adıyla açılması, yöntem tablosunda SIS/HSG satırları, septum cümlesi (ASRM 2024 öneri ifadesi), "bölgesel (spinal) anestezi", `#surec` H2'si "Histeroskopi Ağrılı mı, Anestezi Gerekir mi?" ve H3'ler `#adet-gunu`, `#riskler`, `#scratch`. Bağlantı `#surec` korundu. Yeni içerik olarak yalnızca ACOG'un ofis işleminde genel anesteziden kaçınma bilgisi ve "kesin gün döngü uzunluğuna göre değişir" cümlesi eklendi; belirli gün sayısı verilmedi.
+- "Kapsam notu ekle": `recommendationGradeScope` isteğe bağlı şema alanı ve `EvidenceGradeCard` kapsam satırı eklendi; bu makalede "Ana öneri için: İlk tüp bebek denemesinden önce, rahim içi normal görünen kadınlarda rutin histeroskopinin canlı doğumu artırmaması". Diğer makaleler etkilenmez.
+- "Mevcut yanıtım kalsın": SSS 1 değişmedi.
+- "Ekleme": "Tüp bebek öncesi histeroskopi şart mı?" SSS'ye eklenmedi (arama verisi yok; `#ilk-deneme` H2'si aynı soruyu yanıtlıyor; önerilen yanıt hekim sözü değildi).
+
+Kullanılmayanlar: değerlendirmedeki `utm_source=chatgpt.com` bağlantıları ve "AI hissi" puanı.
