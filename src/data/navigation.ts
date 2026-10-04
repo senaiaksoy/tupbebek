@@ -120,7 +120,7 @@ export const navigationMenus: MegaMenuConfig[] = [
     submenu: [
       { label: 'Endometriozis & Adenomyozis', href: '/endometriozis-adenomyozis/', description: 'Laparoskopi, tıbbi tedavi' },
       { label: 'Endometriozis ve Tüp Bebek', href: '/makaleler/endometriozis-tup-bebek/', description: 'IVF\'de endometriozis yönetimi' },
-      { label: 'Endometrioma', href: '/makaleler/endometrioma/', description: 'Çikolata kisti ve fertilite' },
+      { label: 'Endometrioma (Çikolata Kisti)', href: '/makaleler/endometrioma/', description: 'AMH, ameliyat ve IVF kararı' },
       { label: 'Miyomlar ve Kısırlık', href: '/makaleler/miyomlar-ve-tup-bebek/', description: 'Miyom tipine göre tedavi' },
       { label: 'Miyom Ameliyatı', href: '/makaleler/miyom-ameliyati/', description: 'Miyomektomi süreci' },
       { label: 'Hidrosalpinks', href: '/makaleler/hidrosalpinx-ve-kisirlik/', description: 'Tüp tıkanıklığı ve tedavisi' },
