@@ -276,7 +276,9 @@ function canonicalRedirectFor(requestUrl) {
   // 410 Gone: template artifacts, legacy probes, and retired topic pages
   // without a relevant replacement. Avoid intent-mismatched 301 redirects.
   const gone410Exact = new Set(${JSON.stringify(gone410ExactPaths)});
-  if (gone410Exact.has(url.pathname) || url.pathname.startsWith('/undefined/') || url.pathname.startsWith('/public/') || url.pathname.startsWith('/blog/sayfa/')) {
+  // Eski WordPress adresleri sonda / ile gelir; liste / olmadan tutulur.
+  const goneKey = url.pathname.length > 1 && url.pathname.endsWith('/') ? url.pathname.slice(0, -1) : url.pathname;
+  if (gone410Exact.has(url.pathname) || gone410Exact.has(goneKey) || url.pathname.startsWith('/undefined/') || url.pathname.startsWith('/public/') || url.pathname.startsWith('/blog/sayfa/')) {
     return new Response('Gone', {
       status: 410,
       headers: {
