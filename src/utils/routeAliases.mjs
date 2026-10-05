@@ -401,7 +401,7 @@ export const routeAliases = {
   '/blog/laparoskopi-nedir': '/makaleler/endoskopik-cerrahi-histeroskopi',
   '/blog/mikroenjeksiyon-bebekleri-ve-anomaliler': '/makaleler/mikroenjeksiyon-icsi-nedir',
   '/blog/mikroenjeksiyon-icsi-herkes-icin-uygun-mudur': '/makaleler/mikroenjeksiyon-icsi-nedir',
-  '/blog/mol-gebelik-uzum-gebelik': '/makaleler/dusuk-sonrasi-hamilelik-bekleme-suresi#istisnalar',
+  '/blog/mol-gebelik-uzum-gebelik': '/makaleler/mol-gebelik',
   '/blog/opk-ve ivf': '/makaleler/opk-ve-ivf',
   '/blog/polip-nedir-kisirliga-yol-acar-mi': '/makaleler/miyomlar-ve-tup-bebek',
   '/blog/preimplantasyon-genetik-tani-nedir': '/pgt-merkezi',

@@ -103,6 +103,7 @@ export const navigationMenus: MegaMenuConfig[] = [
       { label: 'Kimyasal Gebelik', href: '/makaleler/kimyasal-gebelik/', description: 'Erken gebelik kaybı' },
       { label: 'Boş Gebelik', href: '/makaleler/bos-gebelik/', description: 'Kese var, embriyo yok' },
       { label: 'Düşük (Missed Abortus)', href: '/makaleler/missed-abortus/', description: 'Kalp atımı görülmeyen gebelik' },
+      { label: 'Mol Gebelik (Üzüm Gebelik)', href: '/makaleler/mol-gebelik/', description: 'Komplet ve parsiyel mol, hCG takibi' },
       { label: 'EmbryoScope ve Yapay Zeka', href: '/makaleler/embryoscope-yapay-zeka/', description: 'Time-lapse embriyo izleme' },
       { label: 'Over PRP', href: '/makaleler/over-prp/', description: 'Yumurtalık gençleştirme' },
     ]
