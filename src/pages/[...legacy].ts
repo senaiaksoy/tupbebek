@@ -20,7 +20,8 @@ const GONE_410_PREFIXES: string[] = [
 ];
 
 const handle: APIRoute = async ({ url, redirect, locals, request }) => {
-  if (GONE_410_EXACT.has(url.pathname) || GONE_410_PREFIXES.some((p) => url.pathname.startsWith(p)) || url.pathname.includes('/undefined')) {
+  const goneKey = url.pathname.length > 1 && url.pathname.endsWith('/') ? url.pathname.slice(0, -1) : url.pathname;
+  if (GONE_410_EXACT.has(url.pathname) || GONE_410_EXACT.has(goneKey) || GONE_410_PREFIXES.some((p) => url.pathname.startsWith(p)) || url.pathname.includes('/undefined')) {
     return new Response('Gone', {
       status: 410,
       headers: { 'content-type': 'text/plain; charset=utf-8', 'cache-control': 'public, max-age=86400' },

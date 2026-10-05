@@ -32,7 +32,9 @@ const GONE_410_PREFIXES: string[] = [
 ];
 
 function isGone(pathname: string): boolean {
-  return GONE_410_EXACT.has(pathname) || GONE_410_PREFIXES.some((p) => pathname.startsWith(p)) || pathname.includes('/undefined');
+  // Eski WordPress adresleri sonda / ile gelir; liste / olmadan tutulur.
+  const key = pathname.length > 1 && pathname.endsWith('/') ? pathname.slice(0, -1) : pathname;
+  return GONE_410_EXACT.has(pathname) || GONE_410_EXACT.has(key) || GONE_410_PREFIXES.some((p) => pathname.startsWith(p)) || pathname.includes('/undefined');
 }
 
 function withQuery(destination: string, search: string): string {
