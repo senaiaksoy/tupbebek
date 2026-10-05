@@ -173,7 +173,7 @@ Kaynak: Google Search Central rehberleri ("Using generative AI content", 2026-10
 
 - **Okur için yaz, botlar için değil**: İçerik AI sistemleri için parçalanmaz (chunking) veya yeniden yazılmaz; sırf alıntılanmak için kaynak/anahtar kelime yığılmaz, yapay alıntı kutusu veya inorganik "bahsetme" üretilmez. Üretken AI özellikleri için yapılandırılmış veri zorunlu değildir; şema, görünen içeriği doğru tarif etmek için kullanılır.
 - **AI destekli içerik kontrolü**: Yayından önce metin kadar başlık, meta description, görsel alt metni ve yapılandırılmış veri de insan tarafından doğrulanır. AI ile üretilen görseller sayfada etiketlenir ve `npm run images:tag-ai -- <dosya>` ile IPTC `trainedAlgorithmicMedia` etiketi alır (ayrıntı: AGENTS.md görsel bölümü).
-- **FAQ / llms.txt**: FAQ rich result'ları Google'da 2026-06-15 itibarıyla gösterilmiyor. Hub sayfalardaki `FAQPage` şeması zararsız olduğu için kalabilir ama hedef değildir; yeni makaleye eklenmez. `llms.txt` Google için gerekli değildir (zararlı da değildir).
+- **FAQ / llms.txt**: FAQ rich result'ları Google'da 7 Mayıs 2026'dan beri gösterilmiyor (doküman 2026-06-15'te kaldırıldı). Hub sayfalardaki `FAQPage` şeması zararsız olduğu için kalabilir ama hedef değildir; yeni makaleye eklenmez. `llms.txt` Google için gerekli değildir (zararlı da değildir).
 - **BaseLayout**: Genel `MedicalWebPage` JSON-LD + robots max-image-preview + og:image:alt
 - **ArticleSchema**: Makale bazlı `["MedicalWebPage", "Article"]` + `reviewedBy` + `citation`
   - Prosedür içeren `"Tedavi Yöntemleri"` ve `"Tüp Bebek"` kategorileri için `about` alanı otomatik olarak `MedicalProcedure` şemasına, diğer kategoriler ise `MedicalCondition` şemasına map edilir.
