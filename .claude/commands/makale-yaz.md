@@ -9,4 +9,5 @@ Use this command for every article-writing task in tupbebek.com.
 5. Keep Dr. Aksoy’s calm, explanatory, patient-friendly medical voice.
 6. Do not use promotional language, success guarantees, “mucize”, “kesin çözüm”, or “en iyi”.
 7. Include evidence and a measured disclaimer when medical claims need context.
-8. If the style guide cannot be read, stop and report the blocker.
+8. Before handoff, human-check the title, `seoTitle`, `description`, image alt text and structured data, not only the body; mark every AI image (`imageSourceType: "ai-assisted"` for the cover, `npm run images:tag-ai -- <file>` for every AI file) and never tag real photos. See the style guide section "Google Arama Güncellemeleri Kaydı (2026)".
+9. If the style guide cannot be read, stop and report the blocker.
