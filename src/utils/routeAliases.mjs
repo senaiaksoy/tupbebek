@@ -287,7 +287,7 @@ export const routeAliases = {
   '/blog/miyomlar-ve-tup-bebek': '/makaleler/miyomlar-ve-tup-bebek',
   '/blog/myomlar-ve-kisirlik': '/makaleler/miyomlar-ve-tup-bebek',
   '/blog/kimyasal-gebelik': '/makaleler/kimyasal-gebelik',
-  '/blog/bos-gebelik-nedir': '/makaleler/kimyasal-gebelik',
+  '/blog/bos-gebelik-nedir': '/makaleler/bos-gebelik',
   '/blog/hamile-kalamiyorsaniz-nedeni-hidrosalpinks-olabilir': '/makaleler/hidrosalpinx-ve-kisirlik',
   '/blog/hidrosalpinks-ve-tuplerin-alinmasi': '/makaleler/hidrosalpinx-ve-kisirlik',
   '/blog/hydrosalpinx-ve-kisirlik': '/makaleler/hidrosalpinx-ve-kisirlik',

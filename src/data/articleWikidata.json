@@ -172,6 +172,11 @@
     "label": "fertility preservation",
     "wikipedia": "https://en.wikipedia.org/wiki/Fertility_preservation"
   },
+  "bos-gebelik": {
+    "qid": "Q323040",
+    "label": "anembryonic gestation",
+    "wikipedia": "https://en.wikipedia.org/wiki/Blighted_ovum"
+  },
   "kimyasal-gebelik": {
     "qid": "Q137195884",
     "label": "Chemical pregnancy"
