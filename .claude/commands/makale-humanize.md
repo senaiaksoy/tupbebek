@@ -8,8 +8,9 @@ Use this command before publishing or revising any article-like text in tupbebek
 4. Keep headings and SEO intent, but remove artificial keyword repetition.
 5. Prefer short sentences, BLUF, and calm “doğru değerlendirme” endings.
 6. Avoid promotional phrasing, guarantees, miracle language, and panic-inducing warnings.
-7. End with this output format:
+7. Treat the title, `seoTitle`, `description`, image alt text, captions and structured-data fields as part of the text: check that they match the visible content, and never let alt text or captions present an AI-generated image as Dr. Aksoy's own illustration or as a real patient, procedure or result (Google generative AI content guidance, 2026-10-01; style guide section "Google Arama Güncellemeleri Kaydı (2026)").
+8. End with this output format:
    1. Humanize edilmiş metin
    2. Kısa değişiklik özeti
    3. Varsa tıbbi dikkat gerektiren iddialar
-8. If the style guide cannot be read, stop and report the blocker.
+9. If the style guide cannot be read, stop and report the blocker.
