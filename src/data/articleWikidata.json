@@ -172,6 +172,11 @@
     "label": "fertility preservation",
     "wikipedia": "https://en.wikipedia.org/wiki/Fertility_preservation"
   },
+  "missed-abortus": {
+    "qid": "Q28693",
+    "label": "miscarriage",
+    "wikipedia": "https://en.wikipedia.org/wiki/Miscarriage"
+  },
   "bos-gebelik": {
     "qid": "Q323040",
     "label": "anembryonic gestation",

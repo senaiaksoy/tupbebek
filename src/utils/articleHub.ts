@@ -86,6 +86,7 @@ const maleSlugs = new Set([
 const transferSlugs = new Set([
   'beta-hcg-testi',
   'bos-gebelik',
+  'missed-abortus',
   'embriyo-transferi-gun-secimi',
   'embriyo-transferi-sonrasi-bakim',
   'embryoglue-faydalari',
