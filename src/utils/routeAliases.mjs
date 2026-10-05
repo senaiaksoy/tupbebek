@@ -381,7 +381,7 @@ export const routeAliases = {
   '/blog/cogul-gebelikler-ve-riskleri': '/makaleler/tup-bebek-yanlis-bilinenler',
   '/blog/dis-gebelik-nedir': '/makaleler/beta-hcg-testi#ektopik',
   '/blog/dogurganlikbeslenme-iliskisi': '/beslenme-yasam',
-  '/blog/dusuk-abortus-nedir': '/makaleler/dusuk-sonrasi-hamilelik-bekleme-suresi#neden-olur',
+  '/blog/dusuk-abortus-nedir': '/makaleler/missed-abortus',
   '/blog/dusuk-amh-hamilelik-sansi': '/makaleler/dusuk-amh-hamilelik',
   '/blog/endometriyal_scratching_ivf': '/makaleler/endometriyal-scratching',
   '/blog/endoskopik-cerrahi-histeroskopi-nedir': '/makaleler/endoskopik-cerrahi-histeroskopi',

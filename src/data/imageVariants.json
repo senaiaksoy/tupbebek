@@ -776,6 +776,23 @@
       "height": 720
     }
   ],
+  "/images/makaleler/missed-abortus.webp": [
+    {
+      "src": "/generated/article-heroes/makaleler-missed-abortus-w640.webp",
+      "width": 640,
+      "height": 360
+    },
+    {
+      "src": "/generated/article-heroes/makaleler-missed-abortus-w960.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "src": "/generated/article-heroes/makaleler-missed-abortus-w1280.webp",
+      "width": 1280,
+      "height": 720
+    }
+  ],
   "/images/makaleler/miyom-ameliyati.webp": [
     {
       "src": "/generated/article-heroes/makaleler-miyom-ameliyati-w640.webp",
