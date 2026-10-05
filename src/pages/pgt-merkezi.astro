@@ -7,9 +7,9 @@ import HizliCevap from '../components/HizliCevap.astro';
 import QuoteBlock from '../components/global/QuoteBlock.astro';
 import { buildHubItemListSchema } from '../utils/hubStructuredData';
 
-// FAQPage JSON-LD — AI motorlarının (AI Overviews, ChatGPT, Perplexity) "pgt nedir"
-// sorgusunda alıntılayabilmesi için yapılandırılmış Q&A. Yanıtlar ASRM 2024 komite
-// görüşü ve Yan 2021 (NEJM) RKÇ ile uyumlu; PGT-A faydası abartılmadan çerçevelendi.
+// FAQPage JSON-LD — sayfadaki görünür "Sık Sorulan Sorular" bölümünü tarif eden
+// yapılandırılmış Q&A. Yanıtlar ASRM 2024 komite görüşü ve Yan 2021 (NEJM) RKÇ ile
+// uyumlu; PGT-A faydası abartılmadan çerçevelendi.
 const pgtFaqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -524,8 +524,7 @@ const itemListSchema = buildHubItemListSchema({
 
         <!-- Section 7: Sık Sorulan Sorular (FAQ) -->
         <!-- Görünür Q&A, FAQPage JSON-LD ile birebir aynı kaynaktan (pgtFaqSchema)
-             üretilir; böylece şema ile sayfa içeriği asla birbirinden sapmaz ve
-             AI motorları (AI Overviews / ChatGPT / Perplexity) alıntılayabilir. -->
+             üretilir; böylece şema ile sayfa içeriği birbirinden sapmaz. -->
         <section id="sss" class="max-w-3xl mx-auto px-4 md:px-6 lg:px-8 mb-24">
             <h2 class="font-headline text-3xl text-gray-900 mb-8">7. Sık Sorulan Sorular</h2>
             <div class="space-y-4">

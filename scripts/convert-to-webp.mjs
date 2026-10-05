@@ -1,5 +1,6 @@
 import sharp from 'sharp';
-import { readdirSync, statSync, existsSync, mkdirSync, unlinkSync } from 'fs';
+import { readdirSync, statSync, existsSync, mkdirSync, unlinkSync, readFileSync, writeFileSync } from 'fs';
+import { isTagged, tagBuffer } from './tag-ai-images.mjs';
 import { join, dirname, basename } from 'path';
 
 const PUBLIC_DIR = join(process.cwd(), 'public/images');
@@ -48,9 +49,8 @@ for (const file of files) {
     continue;
   }
 
-  await img
-    .webp({ quality, effort: 6 })
-    .toFile(webpPath);
+  // sharp metadata'yı atar; kaynaktaki IPTC yapay zekâ etiketini WebP'ye taşı.
+  writeFileSync(webpPath, isTagged(readFileSync(file)) ? tagBuffer(buf, '.webp') ?? buf : buf);
 
   const saved = originalSize - webpSize;
   const pct = ((saved / originalSize) * 100).toFixed(1);

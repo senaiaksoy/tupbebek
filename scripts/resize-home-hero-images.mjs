@@ -5,6 +5,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import sharp from 'sharp';
+import { isTagged, tagBuffer } from './tag-ai-images.mjs';
 
 const TARGET_WIDTH = 800;
 
@@ -22,10 +23,12 @@ async function resizeInPlace(relPath) {
   }
 
   const before = (await fs.stat(abs)).size;
-  const buffer = await sharp(abs)
+  let buffer = await sharp(abs)
     .resize({ width: TARGET_WIDTH, withoutEnlargement: true })
     .webp({ quality: 78, effort: 6 })
     .toBuffer();
+  // sharp metadata'yı atar; kaynaktaki IPTC yapay zekâ etiketini koru.
+  if (isTagged(await fs.readFile(abs))) buffer = tagBuffer(buffer, '.webp') ?? buffer;
 
   const outPath = `${abs}.new`;
   await fs.writeFile(outPath, buffer);

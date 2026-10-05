@@ -604,6 +604,11 @@ const videoSchema = d.videoId && d.videoUploadDate && videoWatchUrl
         "url": videoWatchUrl,
         "embedUrl": `https://www.youtube.com/embed/${d.videoId}`,
         "inLanguage": "tr-TR",
+        // Makale videolarinin tamami Dr. Aksoy'un YouTube kanalindan (@DocentDrSenaiAksoy);
+        // 2026-10-05'te oEmbed author_url ile 28/28 dogrulandi. Makale yazari farkli olsa da
+        // videonun sahibi aynidir. interactionStatistic eklenmez: gercek sayac verisi yok.
+        "author": { "@id": SENAI_AKSOY_PERSON_ID },
+        "creator": { "@id": SENAI_AKSOY_PERSON_ID },
         "publisher": { "@id": SENAI_AKSOY_PERSON_ID },
         "isPartOf": { "@id": `${canonicalUrl.toString()}#article` },
         ...(d.videoChapters && d.videoChapters.length > 0 ? {

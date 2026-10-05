@@ -190,7 +190,7 @@ Icerik statusleri (content/config.ts):
 - **Wikidata & Wikipedia Bağlantıları (Semantik Şema)**:
   - Makalenin konusu olan tıbbi entity (ör. PCOS, Endometriozis, AMH), `ArticleSchema.astro` içinde otomatik olarak eşlenen Wikidata (Wikidata Q-ID ve Wikipedia URL'leri) ile `about` alanı altındaki `sameAs` dizisi üzerinden arama motorlarına bildirilmelidir.
 - **VideoObject Şeması**:
-  - Makalelerin frontmatter alanında `videoId` ve `videoTitle` tanımlanırsa, otomatik olarak `VideoObject` JSON-LD şeması oluşturularak AI ve video arama sonuçları zenginleştirilir.
+  - Makalelerin frontmatter alanında `videoId` ve `videoUploadDate` tanımlıysa `VideoObject` JSON-LD üretilir (`videoTitle`, açıklama, süre ve bölümler varsa eklenir). Videolar Dr. Aksoy'un YouTube kanalından olduğu için `author`, `creator` ve `publisher` aynı Person `@id`'sini gösterir. Gerçek sayaç verisi olmadığından `interactionStatistic` eklenmez.
 - **Sözlük Terimleri (`DefinedTermSet`)**:
   - Sözlükteki tüm tıbbi kavramlar şema uyumlu `DefinedTerm` olarak işaretlenir.
 - **Link Parantez Hijyeni**:
@@ -317,6 +317,15 @@ Dr. Aksoy'un 2026-10-04 kararı tupbebek ve draksoyivf için geçerlidir. Kanoni
 - Görsel, görüntü modeliyle **yazısız** üretilir; Türkçe etiketler, numaralar ve kaynak satırı sonradan HTML/SVG ile eklenir. Her tıbbi etiket yayından önce Dr. Aksoy'a gösterilir.
 - Telefon için dikey sürüm hazırlanır (`<picture>`). Klinik görüntüye benzeyen illüstrasyonda "Şematik illüstrasyondur; gerçek … görüntüsü değildir" uyarısı bulunur.
 - Dosya: `public/images/makaleler/<slug>-<anahtar>.webp`; WebP, `loading="lazy"`, `width`/`height` tanımlı. Örnek uygulama: `endometrioma.mdx` (PR #262).
+
+### Yapay zekâ görsel etiketi (IPTC, 2026-10-05)
+
+Google'ın "Using generative AI content" rehberine (2026-10-01) uygun olarak yapay zekâ ile üretilen her görsel dosyası IPTC `DigitalSourceType = trainedAlgorithmicMedia` XMP etiketi taşır.
+
+- Hero, gövde veya hub görseli yapay zekâ ile üretildikten (ve WebP'ye çevrilip boyutlandırıldıktan) sonra çalıştır: `npm run images:tag-ai -- public/images/makaleler/<dosya>.webp`. Yapay zekâ çizimi üzerine HTML/SVG etiket bindirilen şemalar da etiketlenir. Kontrol: `npm run images:tag-ai -- --check <dosya>`.
+- Betik pikselleri yeniden sıkıştırmaz; yalnızca XMP bloğu ekler ve tekrar çalıştırılabilir. `build-image-manifest.mjs` responsive türevleri (`public/generated/article-heroes/`) etiketli kaynaktan üretirken etiketi otomatik taşır.
+- Gerçek fotoğraf, lisanslı görsel, yalnızca HTML/SVG/Puppeteer ile çizilmiş infografik, logo, ikon, yazar fotoğrafı ve OG şablonu etiketlenmez. Kaynağı belirsiz görseli etiketlemeden önce sor.
+- Sayfadaki görünür not ayrıca gerekir: makale kapağında `imageSourceType: "ai-assisted"` ("AI destekli görsel"), hub sayfalarda "Yapay zekâ ile üretilmiş temsili görsel." Etiketlenen dosyaların listesi: `docs/editorial/ai-images-iptc.txt`.
 
 ### Icerik Kurallari
 
