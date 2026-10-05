@@ -63,6 +63,7 @@ export const navigationMenus: MegaMenuConfig[] = [
       { label: 'PKOS ve Tüp Bebek', href: '/makaleler/opk-ve-ivf/', description: 'Polikistik over ve IVF' },
       { label: 'Hiperprolaktinemi', href: '/makaleler/hiperprolaktinemi-ve-kisirlik/', description: 'Prolaktin yüksekliği ve kısırlık' },
       { label: 'Asherman Sendromu', href: '/makaleler/asherman-sendromu/', description: 'Rahim içi yapışıklıklar' },
+      { label: 'Rahim Tersliği', href: '/makaleler/retrovert-uterus/', description: 'Retrovert uterus ve gebelik' },
       { label: 'Akraba Evliliği ve Genetik', href: '/makaleler/akraba-evliligi/', description: 'Genetik risk değerlendirmesi' },
     ]
   },
@@ -98,6 +99,7 @@ export const navigationMenus: MegaMenuConfig[] = [
       { label: 'Yaşa Göre Başarı Oranları', href: '/makaleler/yasa-gore-tup-bebek-basari-oranlari/', description: 'Yaş gruplarına göre IVF başarısı' },
       { label: 'Başarısız Denemeler', href: '/basarisiz-denemeler/', description: 'Tekrar stratejileri' },
       { label: 'Kimyasal Gebelik', href: '/makaleler/kimyasal-gebelik/', description: 'Erken gebelik kaybı' },
+      { label: 'Boş Gebelik', href: '/makaleler/bos-gebelik/', description: 'Kese var, embriyo yok' },
       { label: 'EmbryoScope ve Yapay Zeka', href: '/makaleler/embryoscope-yapay-zeka/', description: 'Time-lapse embriyo izleme' },
       { label: 'Over PRP', href: '/makaleler/over-prp/', description: 'Yumurtalık gençleştirme' },
     ]
@@ -121,6 +123,7 @@ export const navigationMenus: MegaMenuConfig[] = [
       { label: 'Endometriozis & Adenomyozis', href: '/endometriozis-adenomyozis/', description: 'Laparoskopi, tıbbi tedavi' },
       { label: 'Endometriozis ve Tüp Bebek', href: '/makaleler/endometriozis-tup-bebek/', description: 'IVF\'de endometriozis yönetimi' },
       { label: 'Endometrioma (Çikolata Kisti)', href: '/makaleler/endometrioma/', description: 'AMH, ameliyat ve IVF kararı' },
+      { label: 'Yumurtalık Dönmesi', href: '/makaleler/over-torsiyonu/', description: 'Over torsiyonu ve acil cerrahi' },
       { label: 'Miyomlar ve Kısırlık', href: '/makaleler/miyomlar-ve-tup-bebek/', description: 'Miyom tipine göre tedavi' },
       { label: 'Miyom Ameliyatı', href: '/makaleler/miyom-ameliyati/', description: 'Miyomektomi süreci' },
       { label: 'Hidrosalpinks', href: '/makaleler/hidrosalpinx-ve-kisirlik/', description: 'Tüp tıkanıklığı ve tedavisi' },

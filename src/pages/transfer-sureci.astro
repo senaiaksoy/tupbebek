@@ -46,6 +46,12 @@ const transferHubLinks = [
         description: 'Beta-hCG pozitifliği sonrası erken kayıp, sonraki deneme planı ve duygusal yük ayrı başlıklarda ele alınır.'
     },
     {
+        href: '/makaleler/bos-gebelik/',
+        icon: 'radio_button_checked',
+        title: 'Boş gebelik (anembriyonik gebelik)',
+        description: 'Ultrasonda kese görülüp embriyo görülmemesi, tanı ölçütleri ve bekleme, ilaç ve aspirasyon seçenekleri.'
+    },
+    {
         href: '/makaleler/era-testi-iluzyon/',
         icon: 'biotech',
         title: 'ERA, EmbryoGlue ve add-onlar',
@@ -57,7 +63,7 @@ const itemListSchema = buildHubItemListSchema({
     site: Astro.site,
     pagePath: '/transfer-sureci/',
     name: 'Embriyo transferi konu haritası',
-    description: 'Transfer günü, embriyo kalitesi, taze veya dondurulmuş transfer, beta-hCG, kimyasal gebelik ve transfer çevresi add-on uygulamalarını bağlayan okuma yolu.',
+    description: 'Transfer günü, embriyo kalitesi, taze veya dondurulmuş transfer, beta-hCG, kimyasal gebelik, boş gebelik ve transfer çevresi add-on uygulamalarını bağlayan okuma yolu.',
     items: transferHubLinks
 });
 ---
@@ -756,6 +762,10 @@ const itemListSchema = buildHubItemListSchema({
                 <a href="/makaleler/kimyasal-gebelik" class="inline-flex items-center gap-2 px-6 py-3 bg-primary-50 text-primary-600 font-bold rounded-full hover:shadow-lg transition-all">
                     <span class="material-symbols-outlined text-lg">science</span>
                     Kimyasal Gebelik
+                </a>
+                <a href="/makaleler/bos-gebelik" class="inline-flex items-center gap-2 px-6 py-3 bg-mint-100 text-mint-600 font-bold rounded-full hover:shadow-lg transition-all">
+                    <span class="material-symbols-outlined text-lg">science</span>
+                    Boş Gebelik
                 </a>
                 <a href="/makaleler/era-testi-iluzyon" class="inline-flex items-center gap-2 px-6 py-3 bg-mint-100 text-mint-600 font-bold rounded-full hover:shadow-lg transition-all">
                     <span class="material-symbols-outlined text-lg">biotech</span>
