@@ -118,6 +118,23 @@
       "height": 720
     }
   ],
+  "/images/makaleler/asherman-sendromu-tedavisi.webp": [
+    {
+      "src": "/generated/article-heroes/makaleler-asherman-sendromu-tedavisi-w640.webp",
+      "width": 640,
+      "height": 360
+    },
+    {
+      "src": "/generated/article-heroes/makaleler-asherman-sendromu-tedavisi-w960.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "src": "/generated/article-heroes/makaleler-asherman-sendromu-tedavisi-w1280.webp",
+      "width": 1280,
+      "height": 720
+    }
+  ],
   "/images/makaleler/asherman-sendromu.webp": [
     {
       "src": "/generated/article-heroes/makaleler-asherman-sendromu-w640.webp",
@@ -131,6 +148,23 @@
     },
     {
       "src": "/generated/article-heroes/makaleler-asherman-sendromu-w1280.webp",
+      "width": 1280,
+      "height": 720
+    }
+  ],
+  "/images/makaleler/asherman-sonrasi-gebelik-tup-bebek.webp": [
+    {
+      "src": "/generated/article-heroes/makaleler-asherman-sonrasi-gebelik-tup-bebek-w640.webp",
+      "width": 640,
+      "height": 360
+    },
+    {
+      "src": "/generated/article-heroes/makaleler-asherman-sonrasi-gebelik-tup-bebek-w960.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "src": "/generated/article-heroes/makaleler-asherman-sonrasi-gebelik-tup-bebek-w1280.webp",
       "width": 1280,
       "height": 720
     }

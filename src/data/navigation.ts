@@ -63,6 +63,8 @@ export const navigationMenus: MegaMenuConfig[] = [
       { label: 'PKOS ve Tüp Bebek', href: '/makaleler/opk-ve-ivf/', description: 'Polikistik over ve IVF' },
       { label: 'Hiperprolaktinemi', href: '/makaleler/hiperprolaktinemi-ve-kisirlik/', description: 'Prolaktin yüksekliği ve kısırlık' },
       { label: 'Asherman Sendromu', href: '/makaleler/asherman-sendromu/', description: 'Rahim içi yapışıklıklar' },
+      { label: 'Asherman Tedavisi', href: '/makaleler/asherman-sendromu-tedavisi/', description: 'Adezyolizis ve yeniden yapışma' },
+      { label: 'Asherman Sonrası Gebelik', href: '/makaleler/asherman-sonrasi-gebelik-tup-bebek/', description: 'Gebelik takibi ve tüp bebek' },
       { label: 'Rahim Tersliği', href: '/makaleler/retrovert-uterus/', description: 'Retrovert uterus ve gebelik' },
       { label: 'Akraba Evliliği ve Genetik', href: '/makaleler/akraba-evliligi/', description: 'Genetik risk değerlendirmesi' },
     ]
