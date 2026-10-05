@@ -52,6 +52,8 @@ const femaleSlugs = new Set([
   'adet-gorememe',
   'akinti-kasinti-koku',
   'asherman-sendromu',
+  'asherman-sendromu-tedavisi',
+  'asherman-sonrasi-gebelik-tup-bebek',
   'dusuk-amh-hamilelik',
   'endometrioma',
   'endometriozis-akilli-stratejiler',
