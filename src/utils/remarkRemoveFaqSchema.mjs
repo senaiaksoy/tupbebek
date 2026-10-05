@@ -1,8 +1,7 @@
 /**
  * Visible FAQ content remains in the article, but legacy FAQPage JSON-LD is
- * removed from MD/MDX output. Google restricts FAQ rich results to well-known
- * government and health authority sites; article templates should not emit it
- * as a generic GEO signal.
+ * removed from MD/MDX output. As of 2026-06-15 Google no longer shows FAQ rich
+ * results for any site, so article templates do not emit FAQPage markup.
  */
 function walk(node, visitor) {
   if (!node || typeof node !== 'object') return;

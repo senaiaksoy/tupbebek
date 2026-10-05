@@ -18,11 +18,11 @@
  *   </HizliCevap>
  *
  * Schema:
- *   - question prop varsa: Question + acceptedAnswer JSON-LD emit eder
- *   - Yoksa: sadece semantic <aside role="note"> bloğu
+ *   - Yapılandırılmış veri üretmez; her durumda semantic <aside role="note"> bloğudur.
+ *   - question prop varsa görünür soru başlığı ve aria-label olarak kullanılır.
  */
 interface Props {
-	/** Optional head question — if provided, emits Q&A JSON-LD */
+	/** Optional head question — shown as the visible heading and aria-label */
 	question?: string;
 	/** Optional override label; default: "Hızlı Cevap" */
 	label?: string;
@@ -30,8 +30,7 @@ interface Props {
 
 const { question, label = 'Hızlı Cevap' } = Astro.props;
 
-// Schema is only emitted when an explicit question is provided.
-// We do NOT emit JSON-LD here. Real Q&A schema is owned by:
+// We do NOT emit JSON-LD here. Q&A schema, where it exists, is owned by:
 //   - /sss/ (FAQPage with structured mainEntity array)
 //   - per-article FAQ blocks in MDX
 // Bu kutu yalnızca okur deneyimi içindir; yapılandırılmış veri üretmez.

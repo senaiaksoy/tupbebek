@@ -40,6 +40,7 @@
     "verify:agentic-seo": "agentic-seo",
     "pmid:enrich": "node scripts/enrich-pmids.mjs",
     "pmid:enrich:apply": "node scripts/enrich-pmids.mjs --apply",
+    "images:tag-ai": "node scripts/tag-ai-images.mjs",
     "indexnow:submit": "node scripts/submit-indexnow.mjs",
     "icons:subset": "node scripts/collect-icons.mjs && python scripts/subset-icon-font.py scripts/fonts/material-symbols-full.woff2 scripts/fonts/icons.txt public/fonts/material-symbols.woff2 scripts/fonts/icon-manifest.json && node scripts/stamp-icon-font.mjs"
   },

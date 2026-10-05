@@ -12,6 +12,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import sharp from 'sharp';
+import { isTagged, tagBuffer } from './tag-ai-images.mjs';
 
 const PUBLIC_DIR = path.resolve('public');
 const IMAGES_DIR = path.join(PUBLIC_DIR, 'images');
@@ -63,6 +64,9 @@ async function buildResponsiveVariants(imagePath) {
   if (!metadata.width || !metadata.height) return [];
 
   const sourceStat = await fs.stat(sourcePath);
+  // Kaynak IPTC "yapay zekâ ile üretildi" etiketi taşıyorsa (scripts/tag-ai-images.mjs),
+  // sharp'ın metadata'sız ürettiği türev de aynı etiketi alır.
+  const sourceIsAi = isTagged(await fs.readFile(sourcePath));
   const variants = [];
   for (const width of RESPONSIVE_WIDTHS.filter((candidate) => candidate < metadata.width)) {
     const fileName = generatedName(imagePath, width);
@@ -81,6 +85,11 @@ async function buildResponsiveVariants(imagePath) {
         .resize({ width, withoutEnlargement: true })
         .webp({ quality: 82, effort: 4 })
         .toFile(outputPath);
+    }
+
+    if (sourceIsAi) {
+      const tagged = tagBuffer(await fs.readFile(outputPath), '.webp');
+      if (tagged) await fs.writeFile(outputPath, tagged);
     }
 
     const generatedMeta = await sharp(outputPath).metadata();

@@ -167,21 +167,27 @@ Icerik statusleri (content/config.ts):
 
 `getPublishedArticles()` fonksiyonu sadece `published` statusundeki makaleleri dondurur.
 
-### SEO / Yapilandirilmis Veri & AEO / GEO Kuralları (Kritik - Yapay Zeka Arama Motorları)
+### SEO / Yapilandirilmis Veri & AEO / GEO Kuralları
 
+Kaynak: Google Search Central rehberleri ("Using generative AI content", 2026-10-01; "Optimizing for generative AI features", 2026-07). Aynı bölüm AGENTS.md'de de var; çelişkide AGENTS.md ile hizala.
+
+- **Okur için yaz, botlar için değil**: İçerik AI sistemleri için parçalanmaz (chunking) veya yeniden yazılmaz; sırf alıntılanmak için kaynak/anahtar kelime yığılmaz, yapay alıntı kutusu veya inorganik "bahsetme" üretilmez. Üretken AI özellikleri için yapılandırılmış veri zorunlu değildir; şema, görünen içeriği doğru tarif etmek için kullanılır.
+- **AI destekli içerik kontrolü**: Yayından önce metin kadar başlık, meta description, görsel alt metni ve yapılandırılmış veri de insan tarafından doğrulanır. AI ile üretilen görseller sayfada etiketlenir ve `npm run images:tag-ai -- <dosya>` ile IPTC `trainedAlgorithmicMedia` etiketi alır (ayrıntı: AGENTS.md görsel bölümü).
+- **FAQ / llms.txt**: FAQ rich result'ları Google'da 2026-06-15 itibarıyla gösterilmiyor. Hub sayfalardaki `FAQPage` şeması zararsız olduğu için kalabilir ama hedef değildir; yeni makaleye eklenmez. `llms.txt` Google için gerekli değildir (zararlı da değildir).
 - **BaseLayout**: Genel `MedicalWebPage` JSON-LD + robots max-image-preview + og:image:alt
 - **ArticleSchema**: Makale bazlı `["MedicalWebPage", "Article"]` + `reviewedBy` + `citation`
   - Prosedür içeren `"Tedavi Yöntemleri"` ve `"Tüp Bebek"` kategorileri için `about` alanı otomatik olarak `MedicalProcedure` şemasına, diğer kategoriler ise `MedicalCondition` şemasına map edilir.
-- **Yazar Kimliği E-E-A-T Uyumlaştırması (Kritik AEO/GEO)**:
+- **Yazar Kimliği (E-E-A-T)**:
   - Doç. Dr. Senai Aksoy'un tüm şemalardaki benzersiz `@id` bilgisi kanonik olarak `https://senaiaksoy.net/#person` olmalıdır. Bu kimlik `ArticleSchema.astro`, `EditorKunyesi.astro` ve `yazar/senai-aksoy.astro` üzerinde ortaktır.
-  - Hekim otoritesini güçlendirmek için biyografi sayfasında `sameAs` array'ine hekimin Wikidata (`Q139893832`), PubMed yazar arama adresi ve Doctoralia bağlantıları eklenmiştir.
-- **Metin İçi Alıntılar (AEO/GEO)**:
-  - AI alıntılarını artırmak için makalelerdeki `<QuoteBlock>` yazarları kurumsal yerine doğrudan hekim ismi (`author="Doç. Dr. Senai Aksoy"`) olarak atanır.
-  - ChatGPT ve Perplexity gibi yapay zeka motorlarının alıntıları çektiği ilk %30 dilimine (HizliCevap / BLUF) birincil kaynak linkleri (PubMed / DOI vb.) serpiştirilir.
+  - Biyografi sayfasında `sameAs` array'inde hekimin Wikidata (`Q139893832`), PubMed yazar arama adresi ve Doctoralia bağlantıları bulunur.
+- **Uzman katkısı ve kısa cevap** (AGENTS.md ile aynı kural):
+  - Eski `<QuoteBlock>` alanları tarafsız klinik çerçevedir; hekim alıntısı veya imzası taşımaz. QuoteBlock yazarı hekim adı olarak atanmaz.
+  - Dr. Aksoy imzalı bir yaklaşım yalnızca kendisine sorulan konuya özel soru, gerçek yanıt, yanıt tarihi ve açık yayın onayı kaydedildiğinde `expertContribution` üzerinden gösterilir.
+  - Kaynak linkleri iddianın geçtiği yerde, okura yardım ettiği ölçüde verilir. İlk kısa cevapta kritik klinik sonuç varsa 1-2 birincil veya güçlü ikincil kaynakla izlenebilir kılınır; belirli bir metin dilimine kaynak serpiştirme hedefi yoktur.
 - **Wikidata & Wikipedia Bağlantıları (Semantik Şema)**:
   - Makalenin konusu olan tıbbi entity (ör. PCOS, Endometriozis, AMH), `ArticleSchema.astro` içinde otomatik olarak eşlenen Wikidata (Wikidata Q-ID ve Wikipedia URL'leri) ile `about` alanı altındaki `sameAs` dizisi üzerinden arama motorlarına bildirilmelidir.
 - **VideoObject Şeması**:
-  - Makalelerin frontmatter alanında `videoId` ve `videoTitle` tanımlanırsa, otomatik olarak `VideoObject` JSON-LD şeması oluşturularak AI ve video arama sonuçları zenginleştirilir.
+  - Makalelerin frontmatter alanında `videoId` ve `videoUploadDate` tanımlıysa `VideoObject` JSON-LD üretilir (`videoTitle`, açıklama, süre ve bölümler varsa eklenir). Videolar Dr. Aksoy'un YouTube kanalından olduğu için `author`, `creator` ve `publisher` aynı Person `@id`'sini gösterir. Gerçek sayaç verisi olmadığından `interactionStatistic` eklenmez.
 - **Sözlük Terimleri (`DefinedTermSet`)**:
   - Sözlükteki tüm tıbbi kavramlar şema uyumlu `DefinedTerm` olarak işaretlenir.
 - **Link Parantez Hijyeni**:
