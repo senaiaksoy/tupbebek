@@ -93,7 +93,6 @@ public/images/makaleler/istanbul-tup-bebek-doktoru-ilk-gorusme.webp
 public/images/makaleler/iui-nedir.webp
 public/images/makaleler/ivf-antagonist-evde-stim-takibi.webp
 public/images/makaleler/ivf-oncesi-histeroskopi.webp
-public/images/makaleler/ivf-protokol-karar-agaci.webp
 public/images/makaleler/ivf-protokolleri.webp
 public/images/makaleler/iyi-tup-bebek-merkezi-ekip-cark.webp
 public/images/makaleler/iyi-tup-bebek-merkezi-konsultasyon.webp
