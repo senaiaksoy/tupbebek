@@ -861,6 +861,23 @@
       "height": 720
     }
   ],
+  "/images/makaleler/mol-gebelik.webp": [
+    {
+      "src": "/generated/article-heroes/makaleler-mol-gebelik-w640.webp",
+      "width": 640,
+      "height": 360
+    },
+    {
+      "src": "/generated/article-heroes/makaleler-mol-gebelik-w960.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "src": "/generated/article-heroes/makaleler-mol-gebelik-w1280.webp",
+      "width": 1280,
+      "height": 720
+    }
+  ],
   "/images/makaleler/opk-ve-ivf-yasam-tarzi.webp": [
     {
       "src": "/generated/article-heroes/makaleler-opk-ve-ivf-yasam-tarzi-w640.webp",

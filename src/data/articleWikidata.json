@@ -187,6 +187,11 @@
     "label": "miscarriage",
     "wikipedia": "https://en.wikipedia.org/wiki/Miscarriage"
   },
+  "mol-gebelik": {
+    "qid": "Q881855",
+    "label": "hydatidiform mole",
+    "wikipedia": "https://en.wikipedia.org/wiki/Hydatidiform_mole"
+  },
   "bos-gebelik": {
     "qid": "Q323040",
     "label": "anembryonic gestation",
