@@ -23,7 +23,7 @@ evidenceAsOf: 2026-09-25
 reviewType: "medical"
 reviewDate: 2026-10-05
 approvedBy: "Doç. Dr. Senai Aksoy"
-reviewScope: "5 Ekim 2026: “Asherman Sendromu Nedir?” makalesinin tedavi ve yeniden yapışmayı önleme bölümleri bu yazıya taşındı. Taşınan metin, sayılar, kaynaklar, hekim katkısı ve SSS yanıtı değiştirilmedi; yalnızca giriş, özet, içindekiler, görsel açıklaması ve geçiş cümleleri yeni yazıldı; Dr. Aksoy'un aynı gün yanıtladığı ikinci SSS sorusu (tedavi edilmeyen yapışıklık ve ilaç) eklendi. Dr. Aksoy bölünmüş yapıyı, görünür SSS metinlerini ve kapak görselini aynı gün tıbben inceleyip onayladı."
+reviewScope: "5 Ekim 2026: “Asherman Sendromu Nedir?” makalesinin tedavi ve yeniden yapışmayı önleme bölümleri bu yazıya taşındı. Taşınan metin, sayılar, kaynaklar, hekim katkısı ve SSS yanıtı değiştirilmedi; yalnızca giriş, özet, içindekiler, görsel açıklaması ve geçiş cümleleri yeni yazıldı; Dr. Aksoy'un aynı gün yanıtladığı ikinci SSS sorusu (tedavi edilmeyen yapışıklık ve ilaç) eklendi. Dr. Aksoy bölünmüş yapıyı, görünür SSS metinlerini ve kapak görselini aynı gün tıbben inceleyip onayladı. 5 Ekim 2026 (ikinci düzenleme): Balon süresi için sabit “7–14 gün” ifadesi kaldırıldı ve Şubat 2026 meta-analizi (Xu 2026) eklendi; çözünebilir bariyer için 2026 kollajen scaffold randomize çalışması (Wang 2026) yalnızca yeniden yapışma sonlanımı olarak, canlı doğum yararı gösterilmediği vurgusuyla eklendi."
 expertContribution:
   title: "Dr. Aksoy'un yaklaşımı"
   question: "Orta-ağır Asherman'da ilk adezyolizden sonra ikinci bakış histeroskopiyi ne zaman ve hangi bulguya göre planlıyorsunuz; bariyer veya östrojen desteğini kimde kullanıyor, kimde gereksiz buluyorsunuz?"
@@ -90,6 +90,20 @@ references:
     doi: "10.1002/rmb2.12526"
     pmid: "37396823"
     url: "https://pubmed.ncbi.nlm.nih.gov/37396823/"
+  - title: "Comparing durations of intrauterine balloon placement for intrauterine adhesions after hysteroscopic surgery: a systematic review and meta-analysis"
+    authors: "Xu P, Ling S, Hu E, Ma L, Yi B"
+    journal: "BMC Pregnancy and Childbirth"
+    year: 2026
+    doi: "10.1186/s12884-026-08778-y"
+    pmid: "41654781"
+    url: "https://pubmed.ncbi.nlm.nih.gov/41654781/"
+  - title: "Effect of collagen scaffold vs. intrauterine device on preventing recurrence of intrauterine adhesions: a multicenter randomized controlled trial"
+    authors: "Wang H, Gu X, Li T, Niu X, Zhang H et al."
+    journal: "Fertility and Sterility"
+    year: 2026
+    doi: "10.1016/j.fertnstert.2025.08.035"
+    pmid: "40907645"
+    url: "https://pubmed.ncbi.nlm.nih.gov/40907645/"
 ---
 
 import Accordion from "../../components/global/Accordion.astro";
@@ -143,10 +157,10 @@ Bu yüzden ameliyattan sonra koruyucu (adjuvan) yöntemler sık kullanılır; an
 
 **1. Rahim içi mekanik bariyerler**
 
-- **Foley veya rahim içi balon kateter:** Ameliyattan sonra genellikle 7–14 gün rahim içinde bırakılır; karşılıklı yüzeylerin birbirine değmesini engellemeyi amaçlar.
+- **Foley veya rahim içi balon kateter:** Karşılıklı yüzeylerin birbirine değmesini engellemeyi amaçlar. Balonun tipi ve rahimde kalma süresi standart değildir. Şubat 2026'da yayımlanan, 10 randomize çalışmayı birleştiren bir meta-analizde balonun bir haftadan uzun bırakılması, bir haftaya göre yapışıklığın yeniden oluşmasını azaltıyor göründü; bu etki Foley balonunda anlamlıydı, kalp şeklindeki (Cook) balonda anlamlı değildi. Canlı doğumda net bir fark gösterilmedi ve kanıt kalitesi düşük–orta olarak değerlendirildi ([Xu 2026](https://pubmed.ncbi.nlm.nih.gov/41654781/)).
 - **Hyaluronik asit jel:** Vücutta çözünen bir bariyerdir. Yapışıklık açıldıktan sonraki (ikincil) önlemede meta-analizde anlamlı fayda gösterilememiştir ([Guo J 2023](https://pubmed.ncbi.nlm.nih.gov/37778374/)). <InlineEvidence grade="C" /> Küretaj sonrası yeni yapışıklığı önlemedeki (birincil) etkisi ayrı bir kanıt alanıdır ([Munro 2025](https://pubmed.ncbi.nlm.nih.gov/40914965/)).
 - **Rahim içi araç (RİA, spiral):** Geçmişte kullanılmıştır; ancak AAGL/ESGE rehberi bakırlı veya hormonlu spiralleri bu amaçla önermez ([AAGL/ESGE 2017](https://pubmed.ncbi.nlm.nih.gov/28473177/)).
-- Daha yeni, çözünebilen bariyerler hâlâ araştırma aşamasındadır; rutin kullanım için erken olabilir.
+- Daha yeni, çözünebilen (biyobozunur) bariyerler araştırma aşamasındadır. 2026'da yayımlanan 195 hastalık çok merkezli randomize bir çalışmada, orta dereceli yapışıklıkta kollajen yapı iskelesi (scaffold), ikinci bakış histeroskopide yeniden yapışma görülmeyen hasta oranını çalışmada kullanılan rahim içi araç (RİA) karşılaştırıcısına göre daha yüksek buldu (%78,6'ya karşı %58,8); iki grup da ameliyattan sonra hormon tedavisi aldı. Çalışma gebelik veya canlı doğumu değil, yeniden yapışmayı ölçtü ([Wang 2026](https://pubmed.ncbi.nlm.nih.gov/40907645/)). Bu nedenle rutin standart tedavi olarak kabul etmek için erken.
 
 **2. Hormon desteği**
 
