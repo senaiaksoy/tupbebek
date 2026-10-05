@@ -206,6 +206,11 @@
     "label": "platelet-rich plasma",
     "wikipedia": "https://en.wikipedia.org/wiki/Platelet-rich_plasma"
   },
+  "over-torsiyonu": {
+    "qid": "Q552233",
+    "label": "ovarian torsion",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ovarian_torsion"
+  },
   "over-yetmezligi-gelecek-tedaviler": {
     "qid": "Q647630",
     "label": "premature ovarian failure",
@@ -230,6 +235,11 @@
     "qid": "Q1501356",
     "label": "preimplantation genetic diagnosis",
     "wikipedia": "https://en.wikipedia.org/wiki/Preimplantation_genetic_diagnosis"
+  },
+  "retrovert-uterus": {
+    "qid": "Q1069694",
+    "label": "retroverted uterus",
+    "wikipedia": "https://en.wikipedia.org/wiki/Retroverted_uterus"
   },
   "taze-dondurulmus-transfer": {
     "qid": "Q237118",

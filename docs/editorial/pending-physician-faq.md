@@ -29,6 +29,10 @@ Doğrulama notu (2026-09-29): Search Console `sc-domain:tupbebek.com`, 28 Hazira
 
 ## Yanıtlanan sorular (editoryal kayıt)
 
+### retrovert-uterus ve over-torsiyonu (tr) — audit sonrası hekim kararları; 2026-10-05
+
+Ayrıntı: [geniş audit kaydı](retrovert-over-torsiyonu-audit-2026-10-05.md). (1) Rahim tersliği SSS 2 ve SSS 4 yanıtlarının gövdeyle uyumlu yumuşatılmasına Dr. Aksoy "evet yap" dedi: SSS 2 "belirgin bir zararı yoktur ve gebelik şansını azalttığı gösterilmemiştir"; SSS 4 sonuna "yalnızca ilk aylarda kanama biraz daha sık görülebilir" (Schneider 2025). (2) Menopoz sonrası veya kötü huylu kitle şüphesinde torsiyonda yumurtalığın alınması: "alınmasından yanayım" — gövdeye kaynaklı genel karar cümlesi olarak işlendi (Ozcan 2016, Cohen 2017). (3) Over torsiyonu SSS 1'deki "5 cm" eşiği: "klinik görüş" — SSS'de kaldı. (4) Rahim tersliği transfer bölümündeki %55/%18 oranları: "oranlar çıkarılsın" — iki kaynak aynı cümlede korunarak çıkarıldı. (5) Histeropeksi paragrafı: "kısaltılsın" — önerilen üç cümlelik sürüm uygulandı. **Tıbbi onay (2026-10-05):** Değişen metnin özeti Dr. Aksoy'a gösterildi; iki makalenin güncel metnini aynı gün onayladı ("İkisini de onaylıyorum"). İki makalede `reviewDate: 2026-10-05`, `reviewScope` ve `editorialMethodNote` güncellendi.
+
 ### over-torsiyonu (tr) — üç SSS sorusu; yanıt tarihi 2026-10-04
 
 Veri kaynağı: yukarıdaki "Yumurtalık dönmesi (over-torsiyonu) soru verisi" notu (GSC `sc-domain:tupbebek.com`, 23 Mart–2 Ekim 2026). Düzenleme yalnızca dil: "fertilite tedavileri" → "doğurganlık tedavileri", "torsiyone olabilir" → "dönebilir", "iskemi" → "kansızlık (iskemi)", "jinekolojik acil" → "kadın hastalıklarında acil bir durum", "detorsiyon" parantezle açıklandı. **Onay durumu:** düzenlenmiş görünür metin 2026-10-04'te Dr. Aksoy'a gösterildi ve aynı gün onaylandı ("SSS onaylı"); Dr. Aksoy makalenin tamamını okuduğunu ve onayladığını bildirdi ("metni okudum onaylıyorum"), `reviewType: medical`, `reviewDate`, `approvedBy`, `reviewScope` işlendi. `expertContribution` sorusu aynı gün yanıtlandı (aşağıda).

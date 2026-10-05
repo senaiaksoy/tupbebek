@@ -64,7 +64,9 @@ const femaleSlugs = new Set([
   'miyomlar-ve-tup-bebek',
   'opk-ve-ivf',
   'over-prp',
+  'over-torsiyonu',
   'pcos-yeni-adi-pmos',
+  'retrovert-uterus',
   'vajinal-mikrobiyom-fiv',
   'yumurtalik-kistleri-dogurganlik',
   'yumurtlama-takibi'
