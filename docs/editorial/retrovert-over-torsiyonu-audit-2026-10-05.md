@@ -89,3 +89,22 @@ Değerlendirme yayındaki 4 Ekim sürümüne aitti; önerileri güncel yerel met
 
 1. ~~Dr. Aksoy'un değişen metinlerin tamamı için yeni tıbbi onayı~~ → 2026-10-05 alındı ("İkisini de onaylıyorum"); `reviewDate`, `reviewScope`, `editorialMethodNote` güncellendi.
 2. Search Console'da eski `/blog/` adresleri için yeniden tarama (isteğe bağlı "Dizine eklenmesini iste").
+
+## Dış değerlendirme (ChatGPT) eşleştirmesi — over torsiyonu, 2026-10-05
+
+Değerlendirme canlıdaki 4 Ekim sürümüne bakıyordu; PR #280 sürümüyle eşleştirildi. Kaynaklar PubMed E-utilities (Alsabri 2026, PMID 41947044; Gupta 2020, PMID 32476769) ve ACOG 2019 tam metni (acog.org, canlı okundu: "A cystectomy does not need to be performed at the time of detorsion because it may cause additional trauma… Ultrasonography to reevaluate the cyst at 6–12 weeks is recommended") ile doğrulandı.
+
+| Öneri | Karar |
+|---|---|
+| "Kansızlık (iskemi)" anemiyle karışıyor | Uygulandı: gövde, figcaption, Soh cümlesi → "kanlanma bozukluğuna bağlı doku hasarı (iskemi)"; SSS 3 → "kanlanma yetersizliği (iskemi)" (hekim onayı). Şema görselinde terim yok. |
+| "Aynı gün" → "hemen" | Uygulandı: "beklemeden acil değerlendirme". |
+| 5 cm kesin eşik gibi okunuyor | Hekim kararıyla SSS 1 yumuşatıldı (Gupta 2020). |
+| Kistektomi her zaman şart değil | Uygulandı; ergen ACOG görüşü olarak çerçevelendi, 6-12 hafta ultrason kontrolü eklendi. |
+| Ligasyon 8× ve %0,17 çıkarılsın | Hekim kararıyla çıkarıldı. |
+| Doppler-normal ayrı başlık | `#doppler-normal` H3 eklendi (Alsabri 2026: duyarlılık %78,6, özgüllük %92,4, 0-18 yaş). |
+| SSS'ye Doppler ve "mutlaka alınır mı" soruları | Uygulanmadı: arama verisi yok (GSC 1 Ocak–4 Ekim 2026); SSS 2 "alınır mı"yı zaten yanıtlıyor. |
+| Kanıt kalitesi ≠ öneri gücü | Bu makalede açıklama cümlesi; site geneli bileşen değişikliği yapılmadı. |
+| "Kadınların çoğunda" → "hastaların" | PR #280'de zaten "ergenlerin". |
+| Saat eşiği vermeyin | Zaten yok. |
+
+Değişen metin Dr. Aksoy tarafından aynı gün onaylandı.
