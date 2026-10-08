@@ -379,7 +379,7 @@ export const routeAliases = {
   // === 2026-07-06: 50 missing blog slug aliases (GSC redirect drilldown) ===
   '/blog/cep-telefonları-ve-sperm kalitesi': '/makaleler/cep-telefonu-sperm-kalitesi',
   '/blog/cogul-gebelikler-ve-riskleri': '/makaleler/tup-bebek-yanlis-bilinenler',
-  '/blog/dis-gebelik-nedir': '/makaleler/beta-hcg-testi#ektopik',
+  '/blog/dis-gebelik-nedir': '/makaleler/dis-gebelik',
   '/blog/dogurganlikbeslenme-iliskisi': '/beslenme-yasam',
   '/blog/dusuk-abortus-nedir': '/makaleler/missed-abortus',
   '/blog/dusuk-amh-hamilelik-sansi': '/makaleler/dusuk-amh-hamilelik',

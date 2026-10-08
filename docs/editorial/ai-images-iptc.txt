@@ -40,6 +40,7 @@ public/images/makaleler/cep-telefonu-sperm-kalitesi.webp
 public/images/makaleler/cep-telefonu-sperm-mekanizma.webp
 public/images/makaleler/cerrahi-sperm-arama-tese.webp
 public/images/makaleler/dhea-buyume-hormonu-kapak.webp
+public/images/makaleler/dis-gebelik.webp
 public/images/makaleler/dusuk-amh-degerlendirme.webp
 public/images/makaleler/dusuk-amh-folikul-havuzu.webp
 public/images/makaleler/dusuk-amh-hamilelik.webp
