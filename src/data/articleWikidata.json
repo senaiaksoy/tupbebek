@@ -320,5 +320,10 @@
     "qid": "Q207087",
     "label": "ectopic pregnancy",
     "wikipedia": "https://en.wikipedia.org/wiki/Ectopic_pregnancy"
+  },
+  "luteal-faz": {
+    "qid": "Q2363481",
+    "label": "luteal phase",
+    "wikipedia": "https://en.wikipedia.org/wiki/Luteal_phase"
   }
 }

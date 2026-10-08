@@ -62,6 +62,7 @@ export const navigationMenus: MegaMenuConfig[] = [
       { label: 'Tıbbi Sözlük', href: '/tibbi-sozluk/', description: 'Terimlerin açıklamaları' },
       { label: 'PKOS ve Tüp Bebek', href: '/makaleler/opk-ve-ivf/', description: 'Polikistik over ve IVF' },
       { label: 'Hiperprolaktinemi', href: '/makaleler/hiperprolaktinemi-ve-kisirlik/', description: 'Prolaktin yüksekliği ve kısırlık' },
+      { label: 'Luteal Faz', href: '/makaleler/luteal-faz/', description: 'Süresi, yetmezliği ve luteal destek' },
       { label: 'Asherman Sendromu', href: '/makaleler/asherman-sendromu/', description: 'Rahim içi yapışıklıklar' },
       { label: 'Asherman Tedavisi', href: '/makaleler/asherman-sendromu-tedavisi/', description: 'Adezyolizis ve yeniden yapışma' },
       { label: 'Asherman Sonrası Gebelik', href: '/makaleler/asherman-sonrasi-gebelik-tup-bebek/', description: 'Gebelik takibi ve tüp bebek' },
