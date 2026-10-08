@@ -90,6 +90,7 @@ const transferSlugs = new Set([
   'bos-gebelik',
   'missed-abortus',
   'mol-gebelik',
+  'dis-gebelik',
   'embriyo-transferi-gun-secimi',
   'embriyo-transferi-sonrasi-bakim',
   'embryoglue-faydalari',

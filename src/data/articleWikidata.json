@@ -315,5 +315,10 @@
     "qid": "Q187082",
     "label": "ovulation",
     "wikipedia": "https://en.wikipedia.org/wiki/Ovulation"
+  },
+  "dis-gebelik": {
+    "qid": "Q207087",
+    "label": "ectopic pregnancy",
+    "wikipedia": "https://en.wikipedia.org/wiki/Ectopic_pregnancy"
   }
 }
