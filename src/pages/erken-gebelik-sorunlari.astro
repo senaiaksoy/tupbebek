@@ -1,0 +1,163 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import ReferenceList from '../components/ReferenceList.astro';
+
+// Bu sayfa yeni tıbbi iddia içermez; bağlantı verdiği makalelerdeki onaylı bilgileri özetler.
+const references = [
+    {
+        title: "Ectopic pregnancy and miscarriage: diagnosis and initial management (NG126)",
+        type: "guideline" as const,
+        authors: "National Institute for Health and Care Excellence",
+        journal: "NICE guideline NG126",
+        year: 2026,
+        url: "https://www.nice.org.uk/guidance/ng126"
+    }
+];
+
+const situations = [
+    {
+        finding: 'Gebelik testi pozitif çıktı, sonra negatifleşti ya da adet kanaması başladı; ultrasonda kese hiç görülmedi',
+        meaning: 'Gebeliğin çok erken, kese görülecek aşamaya gelmeden sonlanması',
+        href: '/makaleler/kimyasal-gebelik/',
+        label: 'Kimyasal gebelik'
+    },
+    {
+        finding: 'Gebelik testi pozitif ama ultrasonda rahim içinde ya da dışında gebelik görülmüyor',
+        meaning: 'Yeri bilinmeyen gebelik; yeri netleşene kadar dış gebelik olasılığı açık tutulur',
+        href: '/makaleler/dis-gebelik/',
+        label: 'Dış gebelik'
+    },
+    {
+        finding: 'Rahim içinde gebelik kesesi var ama içinde embriyo görülmüyor',
+        meaning: 'Boş gebelik (anembriyonik gebelik) olabilir; tanı için ölçütler ve gerekirse tekrar ultrason gerekir',
+        href: '/makaleler/bos-gebelik/',
+        label: 'Boş gebelik'
+    },
+    {
+        finding: 'Embriyo görülüyor ama kalp atımı yok ya da önceden görülen kalp atımı durmuş',
+        meaning: 'Missed abortus (belirti vermeden sonlanmış gebelik) olabilir',
+        href: '/makaleler/missed-abortus/',
+        label: 'Missed abortus'
+    },
+    {
+        finding: 'Beta-hCG gebelik haftasına göre beklenenden çok yüksek; ultrasonda plasenta dokusu düzensiz ve kistik',
+        meaning: 'Mol gebelik (üzüm gebelik) olasılığı; kesin tanı patolojik incelemeyle konur',
+        href: '/makaleler/mol-gebelik/',
+        label: 'Mol gebelik'
+    },
+    {
+        finding: 'Beta-hCG değerinizin ne anlama geldiğini, 48 saatte nasıl değişmesi gerektiğini merak ediyorsunuz',
+        meaning: 'Tek değer değil, seri ölçüm ve ultrason birlikte yorumlanır',
+        href: '/makaleler/beta-hcg-testi/',
+        label: 'Beta-hCG testi'
+    },
+    {
+        finding: 'Gebelik kaybı yaşadınız ve ne zaman yeniden denemenin uygun olduğunu düşünüyorsunuz',
+        meaning: 'Bekleme süresi kaybın türüne ve nasıl tedavi edildiğine göre değişir',
+        href: '/makaleler/dusuk-sonrasi-hamilelik-bekleme-suresi/',
+        label: 'Düşük sonrası hamilelik'
+    }
+];
+
+const articles = [
+    { href: '/makaleler/dis-gebelik/', icon: 'warning', title: 'Dış gebelik (ektopik gebelik)', description: 'Belirtiler, beta-hCG ve ultrasonla tanı, izlem, metotreksat ve ameliyat; tüp bebekte dış gebelik riski.' },
+    { href: '/makaleler/kimyasal-gebelik/', icon: 'science', title: 'Kimyasal gebelik', description: 'Kese görülmeden sonlanan çok erken kayıp; hCG takibi ve sonraki deneme.' },
+    { href: '/makaleler/bos-gebelik/', icon: 'egg', title: 'Boş gebelik', description: 'Kese var, embriyo yok: tanı ölçütleri, bekleme, ilaç ve aspirasyon seçenekleri.' },
+    { href: '/makaleler/missed-abortus/', icon: 'monitor_heart', title: 'Missed abortus ve düşük çeşitleri', description: 'Kalp atımı görülmeyen gebelikte tanı, düşük çeşitleri ve sonraki gebelik.' },
+    { href: '/makaleler/mol-gebelik/', icon: 'radio_button_checked', title: 'Mol gebelik (üzüm gebelik)', description: 'Komplet ve parsiyel mol, patolojiyle tanı, hCG takibi ve sonraki gebelik.' },
+    { href: '/makaleler/beta-hcg-testi/', icon: 'bloodtype', title: 'Beta-hCG testi', description: 'Transfer sonrası test günü, seri artış, ultrason zamanı ve acil belirtiler.' },
+    { href: '/makaleler/dusuk-sonrasi-hamilelik-bekleme-suresi/', icon: 'event_repeat', title: 'Düşük sonrası hamilelik', description: 'Kayıptan sonra ne zaman yeniden denenir, hangi kontroller yapılır?' }
+];
+---
+
+<BaseLayout title="Erken Gebelik Sorunları: Hangi Durum, Hangi Rehber? | tupbebek.com" description="Gebelik testi pozitif çıktıktan sonra kanama, ağrı, beklenmedik beta-hCG veya ultrason bulgusu mu var? Kimyasal, boş, dış ve mol gebelik ile missed abortus rehberleri.">
+    <Header />
+
+    <main id="main-content" tabindex="-1" class="pt-24">
+        <section class="max-w-4xl mx-auto px-4 md:px-6 lg:px-8 py-16">
+            <span class="text-primary-600 font-semibold tracking-widest text-sm uppercase mb-4 block">Konu Rehberi</span>
+            <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight mb-6">
+                Erken Gebelik Sorunları: <span class="text-primary-dim">Hangi Durum, Hangi Rehber?</span>
+            </h1>
+            <p class="text-lg text-gray-600 leading-relaxed mb-6">
+                Gebelik testi pozitif çıktıktan sonraki ilk haftalarda kanama, ağrı, beklenmedik bir beta-hCG değeri ya da ultrasonda beklenen görüntünün görülmemesi farklı durumlara işaret edebilir. Bu sayfa, karşılaştığınız bulguya göre ilgili rehbere ulaşmanız için hazırlandı. Doğal yoldan ya da tüp bebekle elde edilen gebelikler için aynı yol haritası geçerlidir.
+            </p>
+            <div class="flex items-center gap-4 p-4 bg-gray-100 rounded-xl inline-flex">
+                <span class="material-symbols-outlined text-primary-600 text-2xl">verified</span>
+                <div>
+                    <p class="text-sm font-bold text-gray-900">tupbebek.com Editöryal Ekip</p>
+                    <p class="text-xs text-gray-600 uppercase tracking-tighter">Tıbbi İnceleme</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="max-w-4xl mx-auto px-4 md:px-6 lg:px-8 pb-12" aria-labelledby="acil-baslik">
+            <div class="rounded-2xl border border-rose-200 bg-rose-50 p-6">
+                <h2 id="acil-baslik" class="text-xl font-headline font-bold text-gray-900 mb-3">Önce şunu bilin: ne zaman beklemeden başvurmalı?</h2>
+                <p class="text-gray-700 leading-relaxed">
+                    Gebelik testiniz pozitifken ani veya giderek artan karın ağrısı, omuz ucunda ağrı, baş dönmesi, bayılma ya da yoğun kanama olursa randevu beklemeden en yakın acil servise başvurun. Bu belirtiler dış gebelik veya iç kanama gibi acil durumlara işaret edebilir.<sup>[1]</sup>
+                </p>
+            </div>
+        </section>
+
+        <section class="max-w-5xl mx-auto px-4 md:px-6 lg:px-8 pb-16" aria-labelledby="durum-baslik">
+            <h2 id="durum-baslik" class="text-3xl font-headline font-bold text-gray-900 mb-4">Bulgunuza göre hangi rehber?</h2>
+            <p class="text-gray-600 leading-relaxed mb-8">
+                Aşağıdaki tablo tanı koymaz; yalnızca hangi rehberin sizin durumunuzu anlattığını gösterir. Kesin değerlendirme ultrason, seri beta-hCG ölçümleri ve hekim muayenesiyle yapılır.
+            </p>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left text-sm border-collapse">
+                    <thead>
+                        <tr class="border-b border-gray-200">
+                            <th scope="col" class="py-3 pr-4 font-bold text-gray-900">Karşılaştığınız durum</th>
+                            <th scope="col" class="py-3 pr-4 font-bold text-gray-900">Ne olabilir?</th>
+                            <th scope="col" class="py-3 font-bold text-gray-900">İlgili rehber</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {situations.map((row) => (
+                            <tr class="border-b border-gray-100 align-top">
+                                <td class="py-4 pr-4 text-gray-700">{row.finding}</td>
+                                <td class="py-4 pr-4 text-gray-600">{row.meaning}</td>
+                                <td class="py-4"><a href={row.href} class="text-primary-600 font-semibold underline">{row.label}</a></td>
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="bg-gray-50 py-16" aria-labelledby="rehberler-baslik">
+            <div class="max-w-6xl mx-auto px-4 md:px-6 lg:px-8">
+                <h2 id="rehberler-baslik" class="text-3xl font-headline font-bold text-gray-900 mb-8">Bu konudaki rehberler</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    {articles.map((a) => (
+                        <a href={a.href} class="block bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                            <span class="material-symbols-outlined text-primary-600 text-2xl mb-3 block" aria-hidden="true">{a.icon}</span>
+                            <h3 class="text-lg font-headline font-bold text-gray-900 mb-2">{a.title}</h3>
+                            <p class="text-sm text-gray-600 leading-relaxed">{a.description}</p>
+                        </a>
+                    ))}
+                </div>
+            </div>
+        </section>
+
+        <section class="max-w-3xl mx-auto px-4 md:px-6 lg:px-8 py-16" aria-labelledby="destek-baslik">
+            <h2 id="destek-baslik" class="text-2xl font-headline font-bold text-gray-900 mb-4">Kayıptan sonra duygusal destek</h2>
+            <p class="text-gray-600 leading-relaxed">
+                Erken gebelik kaybı, ne kadar erken olursa olsun yas, kaygı ve sonraki gebelik korkusu yaratabilir. Bu duygular olağandır. Uzun sürüyor ya da günlük yaşamı zorlaştırıyorsa destek almak yararlı olabilir; <a class="text-primary-600 underline" href="/psikolojik-destek/">psikolojik destek</a> sayfasında bu konudaki yazıları bulabilirsiniz. Tüp bebek sürecindeki diğer adımlar için <a class="text-primary-600 underline" href="/transfer-sureci/">transfer süreci</a> rehberine bakabilirsiniz.
+            </p>
+        </section>
+
+        <section class="max-w-3xl mx-auto px-4 md:px-6 lg:px-8 pb-16">
+            <ReferenceList references={references} />
+            <p class="text-sm text-gray-600 mt-8">
+                Bu rehber, Baş Editör Doç. Dr. Senai Aksoy liderliğindeki tupbebek.com Editöryal Ekip tarafından hazırlanmış ve gözden geçirilmiştir. Son gözden geçirme: Ekim 2026. İçerik tıbbi tanı ve tedavi yerine geçmez; mutlaka hekiminize danışın.
+            </p>
+        </section>
+    </main>
+
+    <Footer />
+</BaseLayout>
