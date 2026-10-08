@@ -28,10 +28,10 @@ videoUploadDate: 2025-08-14
 medicalReviewer: "tupbebek.com Editöryal Ekip"
 reviewerTitle: "Tıbbi Yayın Ekibi"
 approvedBy: "Doç. Dr. Senai Aksoy"
-reviewDate: 2026-08-08
-lastModified: 2026-10-05
-evidenceAsOf: 2026-09-25
-reviewScope: "ESHRE 2020 Yumurtalık Stimülasyonu Kılavuzu, ASRM 2024 OHSS Önleme Kılavuzu, Cochrane Antagonist Meta-Analizi, POSEIDON Zayıf Yanıt Stratifikasyonu ve Vaiarelli 2020 DuoStim Sistematik Derlemesi"
+reviewDate: 2026-10-08
+lastModified: 2026-10-08
+evidenceAsOf: 2026-10-05
+reviewScope: "ESHRE 2020 Yumurtalık Stimülasyonu Kılavuzu, ASRM 2024 OHSS Önleme Kılavuzu, Cochrane Antagonist Meta-Analizi, POSEIDON Zayıf Yanıt Stratifikasyonu ve Vaiarelli 2020 DuoStim Sistematik Derlemesi. 5 Ekim 2026: Çatlatma (tetikleme) iğnesi bölümü eklendi (ESHRE 2025 güncellemesi, Cochrane 2014, Gan 2023, Andersen 1995, Nargund 2001, ikili çatlatma meta-analizleri); metindeki İngilizce “trigger” ifadeleri Türkçeleştirildi; 8 Ekim 2026'da Doç. Dr. Senai Aksoy tarafından incelendi ve onaylandı."
 category: "Tedavi Yöntemleri"
 recommendationGrade: B
 hideEvidenceGrade: true
@@ -89,6 +89,55 @@ references:
     doi: "10.1093/humrep/dead038"
     pmid: "36864699"
     url: "https://pubmed.ncbi.nlm.nih.gov/36864699/"
+  - title: "ESHRE guideline: ovarian stimulation for IVF/ICSI: an update in 2025†"
+    authors: "ESHRE Guideline Group on Ovarian Stimulation, Ata B, Bosch E et al."
+    journal: "Human reproduction (Oxford, England)"
+    year: 2026
+    doi: "10.1093/humrep/deag018"
+    pmid: "41732035"
+    url: "https://pubmed.ncbi.nlm.nih.gov/41732035/"
+  - title: "Gonadotropin-releasing hormone agonist versus HCG for oocyte triggering in antagonist-assisted reproductive technology"
+    authors: "Youssef MA, Van der Veen F, Al-Inany HG et al."
+    journal: "The Cochrane database of systematic reviews"
+    year: 2014
+    doi: "10.1002/14651858.CD008046.pub4"
+    pmid: "25358904"
+    url: "https://pubmed.ncbi.nlm.nih.gov/25358904/"
+  - title: "Time interval between hCG administration and oocyte retrieval and ART outcomes: an updated systematic review and meta-analysis"
+    authors: "Gan R, Huang X, Zhao J et al."
+    journal: "Reproductive biology and endocrinology : RB&E"
+    year: 2023
+    doi: "10.1186/s12958-023-01110-9"
+    pmid: "37400840"
+    url: "https://pubmed.ncbi.nlm.nih.gov/37400840/"
+  - title: "Time interval from human chorionic gonadotrophin (HCG) injection to follicular rupture"
+    authors: "Andersen AG, Als-Nielsen B, Hornnes PJ et al."
+    journal: "Human reproduction (Oxford, England)"
+    year: 1995
+    doi: "10.1093/oxfordjournals.humrep.a135888"
+    pmid: "8822444"
+    url: "https://pubmed.ncbi.nlm.nih.gov/8822444/"
+  - title: "GnRH agonist and hCG (dual trigger) versus hCG trigger for follicular maturation: a systematic review and meta-analysis of randomized trials"
+    authors: "Hu KL, Wang S, Ye X et al."
+    journal: "Reproductive biology and endocrinology : RB&E"
+    year: 2021
+    doi: "10.1186/s12958-021-00766-5"
+    pmid: "34059045"
+    url: "https://pubmed.ncbi.nlm.nih.gov/34059045/"
+  - title: "Triggering oocyte maturation in in vitro fertilization treatment in healthy responders: a systematic review and network meta-analysis"
+    authors: "Beebeejaun Y, Copeland T, Duffy JMN et al."
+    journal: "Fertility and sterility"
+    year: 2025
+    doi: "10.1016/j.fertnstert.2024.11.011"
+    pmid: "39547644"
+    url: "https://pubmed.ncbi.nlm.nih.gov/39547644/"
+  - title: "Human chorionic gonadotropin-to-oocyte collection interval in a superovulation IVF program. A prospective study"
+    authors: "Nargund G, Reid F, Parsons J"
+    journal: "Journal of assisted reproduction and genetics"
+    year: 2001
+    doi: "10.1023/a:1026530624575"
+    pmid: "11285986"
+    url: "https://pubmed.ncbi.nlm.nih.gov/11285986/"
 ---
 
 import Accordion from "../../components/global/Accordion.astro";
@@ -114,6 +163,7 @@ import InlineEvidence from '../../components/InlineEvidence.astro';
 - [Mini IVF ve doğal siklus](#mini-dogal)
 - [DuoStim ve PPOS](#duostim-ppos)
 - [PCOS, düşük AMH ve endometriozis için protokol seçimi](#karar-agaci)
+- [Çatlatma (tetikleme) iğnesi ne zaman yapılır?](#catlatma-ignesi)
 - [4 yumurta ile tüp bebek şansı](#4-yumurta)
 - [Sıkça sorulan sorular](#faq)
 
@@ -136,7 +186,7 @@ Protokol seçilirken genellikle şu veriler birlikte değerlendirilir:
 - **Yaş ve embriyo hedefi:** Yaş arttıkça embriyonun kromozom yapısı daha belirleyici hale gelir.
 - **AMH ve AFC:** Yumurtalıkların düşük, normal veya yüksek yanıt verme olasılığını öngörmeye yardım eder.
 - **Önceki IVF yanıtı:** Kaç folikül gelişti, kaç yumurta toplandı, olgunluk ve döllenme nasıldı?
-- **PCOS veya yüksek yanıt riski:** OHSS riski varsa antagonist, agonist trigger ve freeze-all seçenekleri gündeme gelebilir.
+- **PCOS veya yüksek yanıt riski:** OHSS riski varsa antagonist protokol, GnRH agonistiyle çatlatma ve freeze-all seçenekleri gündeme gelebilir.
 - **Düşük rezerv:** Yüksek dozun her zaman daha iyi sonuç vermediği; doz, zamanlama ve embriyo biriktirme planının birlikte ele alındığı gruptur.
 - **Transfer planı:** PGT, progesteron yüksekliği, OHSS riski veya rahim hazırlığı nedeniyle [dondurulmuş transfer](/makaleler/taze-dondurulmus-transfer/) tercih edilebilir.
 
@@ -152,7 +202,7 @@ Protokol seçilirken genellikle şu veriler birlikte değerlendirilir:
     decoding="async"
   />
   <figcaption>
-    Antagonist protokol, günümüzde IVF uyarımında sık kullanılan yaklaşımlardan biridir. Gonadotropinlerle uyarım başlar; foliküller büyürken klinik takibe göre, örneğin 12-14 mm civarında, antagonist eklenebilir. Trigger zamanı da yanıta göre belirlenir ve siklus çoğu zaman yaklaşık 9-12 gün sürer. (Kaynak: ESHRE Ovarian Stimulation Guideline 2020; ASRM Practice Committee 2024)
+    Antagonist protokol, günümüzde IVF uyarımında sık kullanılan yaklaşımlardan biridir. Gonadotropinlerle uyarım başlar; foliküller büyürken klinik takibe göre, örneğin 12-14 mm civarında, antagonist eklenebilir. Çatlatma (tetikleme) iğnesinin zamanı da yanıta göre belirlenir ve siklus çoğu zaman yaklaşık 9-12 gün sürer. (Kaynak: ESHRE Ovarian Stimulation Guideline 2020; ASRM Practice Committee 2024)
   </figcaption>
 </figure>
 
@@ -165,7 +215,7 @@ GnRH antagonist protokolünde uyarım genellikle adetin erken günlerinde başla
 - İlk IVF siklusunda daha kısa ve esnek bir plan gerektiğinde
 - Yumurta/embriyo dondurma veya PGT planı olduğunda
 
-**Neden güvenlik açısından güçlüdür?** Antagonist protokolün önemli avantajlarından biri, gerektiğinde hCG yerine GnRH agonist trigger kullanılabilmesidir. ASRM, OHSS riski olan hastalarda GnRH agonist trigger ve gerekirse freeze-only yaklaşımını güçlü güvenlik seçenekleri arasında değerlendirir. <InlineEvidence grade="A" />
+**Neden güvenlik açısından güçlüdür?** Antagonist protokolün önemli avantajlarından biri, çatlatma iğnesi olarak gerektiğinde hCG yerine GnRH agonisti kullanılabilmesidir. ASRM, OHSS riski olan hastalarda GnRH agonistiyle çatlatmayı ve gerekirse freeze-only yaklaşımını güçlü güvenlik seçenekleri arasında değerlendirir. <InlineEvidence grade="A" />
 
 Bu, antagonist protokolün her hastada üstün sonuç vereceği anlamına gelmez. Güncel kılavuzlarda benzer canlı doğum sonuçları ve daha iyi güvenlik profili nedeniyle birçok hasta için rasyonel bir başlangıç seçeneği olarak değerlendirilir.
 
@@ -215,7 +265,7 @@ IVF protokolü tek bir şablona göre seçilmez. AMH ve antral folikül sayısı
 
 | Hasta Profili | Sık Tartışılan Yaklaşım | Ana Hedef |
 | :--- | :--- | :--- |
-| **PCOS, yüksek AMH/AFC, OHSS riski** | Antagonist protokol, düşük başlangıç dozu, agonist trigger, gerekirse freeze-all | Güvenliği artırmak ve OHSS riskini azaltmak |
+| **PCOS, yüksek AMH/AFC, OHSS riski** | Antagonist protokol, düşük başlangıç dozu, GnRH agonistiyle çatlatma, gerekirse freeze-all | Güvenliği artırmak ve OHSS riskini azaltmak |
 | **Normal rezerv, ilk IVF siklusu** | Antagonist protokol veya seçilmiş olguda agonist protokol | Dengeli yumurta sayısı ve kontrollü takip |
 | **Düşük AMH veya zayıf yanıt öyküsü** | Antagonist, mini IVF, mikrodoz/flare veya kişisel doz ayarı | Gerçekçi yumurta hedefi ve siklus iptalini azaltma |
 | **PGT planı** | Antagonist veya PPOS; çoğunlukla freeze-all | Embriyo biyopsisi ve sonuç bekleme sürecini güvenli yönetmek |
@@ -226,13 +276,42 @@ PCOS için [adet düzensizliği ve PCOS](/makaleler/adet-duzensizligi-pcos/) reh
 
 <h2 id="riskler">Protokol Seçiminde Güvenlik Başlıkları</h2>
 
-**OHSS riski:** Karında şişkinlik, ağrı, bulantı, nefes darlığı veya hızlı kilo artışı gibi belirtiler görülebilir. Risk yüksekse antagonist protokol, GnRH agonist trigger, cabergoline ve freeze-only stratejileri gündeme gelebilir. <InlineEvidence grade="A" />
+**OHSS riski:** Karında şişkinlik, ağrı, bulantı, nefes darlığı veya hızlı kilo artışı gibi belirtiler görülebilir. Risk yüksekse antagonist protokol, GnRH agonistiyle çatlatma, cabergoline ve freeze-only stratejileri gündeme gelebilir. <InlineEvidence grade="A" />
 
 **Yüksek doz yanılgısı:** Daha yüksek gonadotropin dozu her zaman daha iyi embriyo sonucu anlamına gelmez. Özellikle düşük rezervde gereksiz doz artışı maliyeti ve yan etkileri artırabilir.
 
 **Takip aralığı:** Ultrason ve gerektiğinde estradiol/progesteron takibi; erken yumurtlama, aşırı yanıt veya yetersiz yanıt riskini yönetmeye yardımcı olur.
 
 **Taze transfer kararı:** Progesteron yüksekliği, OHSS riski veya endometriumla ilgili bir uyumsuzluk varsa taze transfer ertelenebilir. Bu, başarısızlık anlamına gelmez; bazı durumlarda güvenliği koruyan planın parçasıdır.
+
+<h2 id="catlatma-ignesi">Çatlatma (Tetikleme) İğnesi Ne Zaman Yapılır?</h2>
+
+Kısa cevap: Çatlatma iğnesi çoğunlukla öncü foliküllerin birkaçı 16-22 mm'ye ulaştığında yapılır. Yumurta toplama ise genellikle iğneden yaklaşık 34-38 saat sonra, yumurtlama başlamadan önce planlanır. Kesin gün ve saati folikül grubunuza göre tedavi ekibiniz belirler.
+
+Tıpta "son yumurta olgunlaşmasının tetiklenmesi" denen bu iğne, doğal döngüdeki LH hormonu yükselişinin yerini tutar. Yumurtaların son olgunlaşmasını başlatır ([Hu ve ark., 2021](https://pubmed.ncbi.nlm.nih.gov/34059045/)).
+
+### Ne zaman yapılır?
+
+ESHRE'nin 2025 güncel kılavuzu tek bir zorunlu folikül ölçüsü vermez; hangi boyutta tetikleme yapılacağının sonuca etkisi yeterince çalışılmamıştır. Uygulamada iğne çoğunlukla öncü foliküllerin birkaçı 16-22 mm arasındayken yapılır. Karar; büyüyen foliküllerin sayısı, hormon değerleri, uyarımın süresi, transfer planı ve önceki tedavi deneyimi birlikte değerlendirilerek verilir. Zamanlama yalnızca östradiol değerine bakılarak belirlenmez ([ESHRE 2025](https://pubmed.ncbi.nlm.nih.gov/41732035/)).
+
+### Kaç saat sonra yumurta çatlar, toplama ne zaman yapılır?
+
+Aşılama (IUI) döngülerinde saat saat ultrasonla yapılan küçük bir çalışmada ilk folikül çatlaması iğneden ortalama 38 saat sonra görüldü; en erken çatlama 34. saatteydi ([Andersen ve ark., 1995](https://pubmed.ncbi.nlm.nih.gov/8822444/)). Yumurta toplama, yumurtalar kendiliğinden atılmadan önce yapılmalıdır ve uygulamada genellikle 34-38 saat aralığında planlanır. 533 tüp bebek döngüsünü izleyen bir çalışmada iğneden 33 ile 41 saat sonra yapılan toplamalarda hiçbir kadında toplamadan önce yumurtlama görülmedi ([Nargund ve ark., 2001](https://pubmed.ncbi.nlm.nih.gov/11285986/)). Toplama aralığını karşılaştıran çalışmaların birleşik analizinde 36 saatten uzun aralıkta klinik gebelik oranı daha yüksekti, ancak canlı doğumda anlamlı fark yoktu; en uygun tek bir saat konusunda uzlaşı yoktur ([Gan ve ark., 2023](https://pubmed.ncbi.nlm.nih.gov/37400840/)). İğneyi size yazılan saatte yapın; bir aksilik olursa ekibinize hemen haber verin.
+
+### hCG ile GnRH agonisti arasındaki fark nedir?
+
+| | hCG ile çatlatma | GnRH agonisti (ör. triptorelin) ile çatlatma |
+| :--- | :--- | :--- |
+| **Hangi protokolde kullanılır?** | Antagonist ve agonist protokollerde | Hipofizi agonistle baskılanmamış döngülerde (antagonist veya progestinli protokol); uzun agonist protokolde etkili olmaz |
+| **OHSS riski** | Daha yüksek | Belirgin olarak daha düşük; Cochrane analizinde hCG ile %5 varsayılan risk agonistle %0-2'ye iniyor |
+| **Taze transfer yapılırsa** | Standart seçenek | Canlı doğum daha düşük; aynı analizde hCG ile %31 olan olasılık %12-24'e iniyor |
+| **Sık kullanıldığı plan** | Taze transfer planlanan çoğu döngü | OHSS riski olanlarda embriyoların dondurulması (freeze-all) ve yumurta dondurma döngüleri |
+
+Cochrane analizi antagonist protokolle yapılan 17 randomize çalışmayı birleştirdi. GnRH agonistiyle çatlatma OHSS'yi azalttı; ancak taze transferde canlı doğum oranı daha düşüktü ([Youssef ve ark., 2014](https://pubmed.ncbi.nlm.nih.gov/25358904/)). ESHRE 2025 kılavuzu bu nedenle GnRH agonistiyle çatlatmayı taze transfer yapılan genel hasta grubunda önermez; OHSS riski olan kadınlarda ise embriyoların dondurulduğu planla birlikte önerir ([ESHRE 2025](https://pubmed.ncbi.nlm.nih.gov/41732035/)). <InlineEvidence grade="B" />
+
+**İkili çatlatma (hCG ve GnRH agonistinin birlikte verilmesi)** bazı merkezlerde kullanılır. Randomize çalışmaları birleştiren analizlerde canlı doğumda olası bir artış sinyali görüldü; ancak sonuçlar sınırlı ve belirsizdir ([Hu ve ark., 2021](https://pubmed.ncbi.nlm.nih.gov/34059045/); [Beebeejaun ve ark., 2025](https://pubmed.ncbi.nlm.nih.gov/39547644/)). ESHRE 2025 kılavuzu ikili çatlatmayı normal, düşük ve yüksek yanıtlı hastalarda rutin olarak önermez ([ESHRE 2025](https://pubmed.ncbi.nlm.nih.gov/41732035/)). <InlineEvidence grade="C" />
+
+Yumurta toplama gününün nasıl geçtiğini [tüp bebek süreci rehberindeki](/makaleler/tup-bebek-sureci-rehber/#opu) yumurta toplama bölümünde bulabilirsiniz.
 
 <h2 id="4-yumurta">4 Yumurta ile Tüp Bebek Şansı Nasıl Okunur?</h2>
 
@@ -253,7 +332,7 @@ Hayır, tek bir doğru protokol yoktur. Yaş, AMH, AFC, PCOS/OHSS riski, önceki
 </Accordion>
 
 <Accordion title="Antagonist protokol neden sık kullanılır?">
-Antagonist protokol genellikle daha kısa ve esnektir. Erken yumurtlamayı kontrol eder ve OHSS riski olan hastalarda GnRH agonist trigger ile bir güvenlik planı kurulmasına olanak tanır. Bu nedenle PCOS ve yüksek yanıt beklenen hastalarda özellikle gündeme gelir.
+Antagonist protokol genellikle daha kısa ve esnektir. Erken yumurtlamayı kontrol eder ve OHSS riski olan hastalarda GnRH agonistiyle çatlatma ile bir güvenlik planı kurulmasına olanak tanır. Bu nedenle PCOS ve yüksek yanıt beklenen hastalarda özellikle gündeme gelir.
 </Accordion>
 
 <Accordion title="Düşük AMH varsa yüksek doz ilaç daha mı iyi sonuç verir?">
@@ -265,7 +344,7 @@ Herkese uygun değildir. DuoStim daha çok düşük rezerv, ileri yaş, zaman ba
 </Accordion>
 
 <Accordion title="PCOS hastalarında hangi protokol daha güvenlidir?">
-PCOS ve yüksek yanıt riski olan hastalarda antagonist protokol, düşük başlangıç dozu, GnRH agonist trigger ve gerekirse freeze-all yaklaşımı OHSS riskini azaltmaya yönelik sık kullanılan seçeneklerdir.
+PCOS ve yüksek yanıt riski olan hastalarda antagonist protokol, düşük başlangıç dozu, GnRH agonistiyle çatlatma ve gerekirse freeze-all yaklaşımı OHSS riskini azaltmaya yönelik sık kullanılan seçeneklerdir.
 </Accordion>
 
 <Accordion title="Tüp bebekte uzun protokol kimlere uygulanır?">
@@ -273,7 +352,7 @@ Endometriozis, adenomyozis, önceki senkronizasyon sorunları veya özel klinik 
 </Accordion>
 
 <Accordion title="Antagonist protokol kısa protokol mü?">
-Günlük kullanımda evet; antagonist protokol çoğu zaman daha kısa ve esnek bir IVF uyarım yaklaşımıdır. Trigger seçeneği ve freeze-all planı, uygun hastalarda güvenlik açısından avantaj sağlayabilir.
+Günlük kullanımda evet; antagonist protokol çoğu zaman daha kısa ve esnek bir IVF uyarım yaklaşımıdır. Çatlatma iğnesi seçeneği ve freeze-all planı, uygun hastalarda güvenlik açısından avantaj sağlayabilir.
 </Accordion>
 
 <div class="mt-12 bg-slate-50 p-8 rounded-3xl border border-slate-200">
@@ -313,7 +392,7 @@ export const ivfProtocolsFaqSchema = {
       "name": "Antagonist protokol neden sık kullanılır?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Antagonist protokol genellikle daha kısa ve esnektir. Erken yumurtlamayı kontrol eder ve OHSS riski olan hastalarda GnRH agonist trigger ile bir güvenlik planı kurulmasına olanak tanır. Bu nedenle PCOS ve yüksek yanıt beklenen hastalarda özellikle gündeme gelir."
+        "text": "Antagonist protokol genellikle daha kısa ve esnektir. Erken yumurtlamayı kontrol eder ve OHSS riski olan hastalarda GnRH agonistiyle çatlatma ile bir güvenlik planı kurulmasına olanak tanır. Bu nedenle PCOS ve yüksek yanıt beklenen hastalarda özellikle gündeme gelir."
       }
     },
     {
@@ -337,7 +416,7 @@ export const ivfProtocolsFaqSchema = {
       "name": "PCOS hastalarında hangi protokol daha güvenlidir?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "PCOS ve yüksek yanıt riski olan hastalarda antagonist protokol, düşük başlangıç dozu, GnRH agonist trigger ve gerekirse freeze-all yaklaşımı OHSS riskini azaltmaya yönelik sık kullanılan seçeneklerdir."
+        "text": "PCOS ve yüksek yanıt riski olan hastalarda antagonist protokol, düşük başlangıç dozu, GnRH agonistiyle çatlatma ve gerekirse freeze-all yaklaşımı OHSS riskini azaltmaya yönelik sık kullanılan seçeneklerdir."
       }
     },
     {
@@ -353,7 +432,7 @@ export const ivfProtocolsFaqSchema = {
       "name": "Antagonist protokol kısa protokol mü?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Günlük kullanımda evet; antagonist protokol çoğu zaman daha kısa ve esnek bir IVF uyarım yaklaşımıdır. Trigger seçeneği ve freeze-all planı, uygun hastalarda güvenlik açısından avantaj sağlayabilir."
+        "text": "Günlük kullanımda evet; antagonist protokol çoğu zaman daha kısa ve esnek bir IVF uyarım yaklaşımıdır. Çatlatma iğnesi seçeneği ve freeze-all planı, uygun hastalarda güvenlik açısından avantaj sağlayabilir."
       }
     }
   ]
