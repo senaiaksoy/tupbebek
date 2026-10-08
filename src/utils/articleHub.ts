@@ -40,6 +40,11 @@ const HUBS = {
     label: 'Beslenme ve Yaşam',
     description: 'Alkol, takviyeler, mikrobiyom, kilo, uyku ve yaşam tarzı kararlarını destekleyici çerçevede toplar.'
   },
+  earlyPregnancy: {
+    href: '/erken-gebelik-sorunlari/',
+    label: 'Erken Gebelik Sorunları',
+    description: 'Kimyasal, boş, dış ve mol gebelik ile missed abortus rehberlerini bulguya göre bir araya getiren konu merkezi.'
+  },
   psychology: {
     href: '/psikolojik-destek/',
     label: 'Psikolojik Destek',
@@ -86,17 +91,21 @@ const maleSlugs = new Set([
   'varikosel-nedir-ne-zaman-ameliyat-gerekir'
 ]);
 
+const earlyPregnancySlugs = new Set([
+  'bos-gebelik',
+  'dis-gebelik',
+  'dusuk-sonrasi-hamilelik-bekleme-suresi',
+  'kimyasal-gebelik',
+  'missed-abortus',
+  'mol-gebelik'
+]);
+
 const transferSlugs = new Set([
   'beta-hcg-testi',
-  'bos-gebelik',
-  'missed-abortus',
-  'mol-gebelik',
-  'dis-gebelik',
   'embriyo-transferi-gun-secimi',
   'embriyo-transferi-sonrasi-bakim',
   'embryoglue-faydalari',
   'era-testi-iluzyon',
-  'kimyasal-gebelik',
   'laboratuvar-raporu-yorumlama',
   'taze-dondurulmus-transfer'
 ]);
@@ -134,6 +143,7 @@ const lifestyleSlugs = new Set([
 
 export function getArticleHub(slug: string): ArticleHub {
   if (psychologySlugs.has(slug)) return HUBS.psychology;
+  if (earlyPregnancySlugs.has(slug)) return HUBS.earlyPregnancy;
   if (transferSlugs.has(slug)) return HUBS.transfer;
   if (pgtSlugs.has(slug)) return HUBS.pgt;
   if (femaleSlugs.has(slug)) return HUBS.female;
