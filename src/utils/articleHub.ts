@@ -71,7 +71,8 @@ const femaleSlugs = new Set([
   'retrovert-uterus',
   'vajinal-mikrobiyom-fiv',
   'yumurtalik-kistleri-dogurganlik',
-  'yumurtlama-takibi'
+  'yumurtlama-takibi',
+  'luteal-faz'
 ]);
 
 const maleSlugs = new Set([

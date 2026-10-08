@@ -106,6 +106,7 @@ public/images/makaleler/kadin-kisirligi-tani-degerlendirme.webp
 public/images/makaleler/kanser-ve-fertilite-hero-editorial-2026.webp
 public/images/makaleler/kimyasal-gebelik.webp
 public/images/makaleler/laboratuvar-raporu-yorumlama.webp
+public/images/makaleler/luteal-faz.webp
 public/images/makaleler/mikroenjeksiyon-icsi-nedir.webp
 public/images/makaleler/missed-abortus.webp
 public/images/makaleler/miyom-ameliyati.webp

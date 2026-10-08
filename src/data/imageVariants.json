@@ -810,6 +810,23 @@
       "height": 720
     }
   ],
+  "/images/makaleler/luteal-faz.webp": [
+    {
+      "src": "/generated/article-heroes/makaleler-luteal-faz-w640.webp",
+      "width": 640,
+      "height": 360
+    },
+    {
+      "src": "/generated/article-heroes/makaleler-luteal-faz-w960.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "src": "/generated/article-heroes/makaleler-luteal-faz-w1280.webp",
+      "width": 1280,
+      "height": 720
+    }
+  ],
   "/images/makaleler/mikroenjeksiyon-icsi-nedir.webp": [
     {
       "src": "/generated/article-heroes/makaleler-mikroenjeksiyon-icsi-nedir-w640.webp",
