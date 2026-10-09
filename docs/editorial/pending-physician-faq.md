@@ -876,4 +876,4 @@ Dış okur değerlendirmesinden sonra gövdeye hekim sesi eklemek için sorulan 
 1. "Çift yumurta ikizi nasıl olur; tek embriyo transferinde de ikiz görülebilir mi?" (arama verisi: "çift yumurta ikizi nasıl olur", "tek yumurta ikizi kesesi")
 2. "Tüp bebekte ikiz gebelik neden daha riskli kabul ediliyor; erken doğum ve bebeğin sağlığı açısından en önemli risk nedir?" (arama verisi: "ikiz gebelik riskleri" türü ifadeler; kaynak: ESHRE 2024, Yuan 2026)
 3. "Erken ultrasonda iki kese görülüp biri kaybolursa (vanişing twin) ne yapılır, kalan bebek için izlem nasıl planlanır?" (kaynak: Zhou 2020, Bereczki 2026)
-- **Onay:** Yanıtlar taslakta; yayın onayı bekleniyor. Yayın onayı verilene kadar makale `status: draft` kalır.
+- **Onay:** Dr. Aksoy tıbbi onayını 2026-10-09'da verdi; makale `published` olarak hazırlandı (merge bekliyor).
