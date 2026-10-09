@@ -95,6 +95,7 @@ export const navigationMenus: MegaMenuConfig[] = [
       { label: 'Transfer Süreci', href: '/transfer-sureci/', description: 'Embriyo transfer aşaması' },
       { label: 'Transfer Sonrası Bakım', href: '/makaleler/embriyo-transferi-sonrasi-bakim/', description: 'Transfer sonrası dikkat edilecekler' },
       { label: 'Taze vs Dondurulmuş Transfer', href: '/makaleler/taze-dondurulmus-transfer/', description: 'Hangi yöntem daha başarılı?' },
+      { label: 'Tüp Bebekte Çoğul Gebelik', href: '/makaleler/tup-bebekte-coklu-gebelik/', description: 'İkiz riski ve tek embriyo transferi' },
       { label: 'Kaç Yumurta Gerekir?', href: '/makaleler/kac-yumurta-gerekir/', description: 'Optimum yumurta sayısı' },
       { label: 'İlaç Rehberi', href: '/ilac-rehberi/', description: 'Gonadotropinler, GnRH' },
       { label: 'Doğurganlığı Koruma', href: '/fertilite-koruma/', description: 'Yumurta/sperm dondurma' },
