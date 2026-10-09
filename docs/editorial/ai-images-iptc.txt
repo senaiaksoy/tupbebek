@@ -126,6 +126,7 @@ public/images/makaleler/pcos-pmos-metabolik-bakim.webp
 public/images/makaleler/pcos-rotterdam-kriterleri.webp
 public/images/makaleler/pcos-uzun-vadeli-saglik.webp
 public/images/makaleler/pcos-yeni-adi-pmos.webp
+public/images/makaleler/pelvik-inflamatuvar-hastalik-toa.webp
 public/images/makaleler/pgt-a-bas-editor-kosesi.webp
 public/images/makaleler/pgt-cinsiyet-secimi-genetik-danismanlik.webp
 public/images/makaleler/pgt-m.webp

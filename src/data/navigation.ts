@@ -134,6 +134,7 @@ export const navigationMenus: MegaMenuConfig[] = [
       { label: 'Miyomlar ve Kısırlık', href: '/makaleler/miyomlar-ve-tup-bebek/', description: 'Miyom tipine göre tedavi' },
       { label: 'Miyom Ameliyatı', href: '/makaleler/miyom-ameliyati/', description: 'Miyomektomi süreci' },
       { label: 'Hidrosalpinks', href: '/makaleler/hidrosalpinx-ve-kisirlik/', description: 'Tüp tıkanıklığı ve tedavisi' },
+      { label: 'PID ve Tubo-Ovaryan Apse', href: '/makaleler/pelvik-inflamatuvar-hastalik-toa/', description: 'Pelvik enfeksiyon, bel soğukluğu ve kısırlık' },
       { label: 'Histeroskopi', href: '/makaleler/ivf-oncesi-histeroskopi/', description: 'IVF öncesi rahim değerlendirmesi' },
       { label: 'Endoskopik Cerrahi', href: '/makaleler/endoskopik-cerrahi-histeroskopi/', description: 'Minimal invaziv cerrahi' },
       { label: 'Endometriyal Scratching', href: '/makaleler/endometriyal-scratching/', description: 'Rahim çizme ve implantasyon' },

@@ -77,7 +77,8 @@ const femaleSlugs = new Set([
   'vajinal-mikrobiyom-fiv',
   'yumurtalik-kistleri-dogurganlik',
   'yumurtlama-takibi',
-  'luteal-faz'
+  'luteal-faz',
+  'pelvik-inflamatuvar-hastalik-toa'
 ]);
 
 const maleSlugs = new Set([
