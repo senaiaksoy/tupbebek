@@ -882,4 +882,4 @@ Dış okur değerlendirmesinden sonra gövdeye hekim sesi eklemek için sorulan 
 1. "Boş folikül sendromu gerçekten var mı; yumurta toplamada hiç yumurta çıkmaması ne anlama gelir?" (arama verisi: "boş folikül sendromu", "boş yumurta")
 2. "Yumurta toplamada hiç yumurta çıkmazsa, bir sonraki denemede önce neye bakarsınız?" (kaynak: Revelli 2017 — tetik zamanlaması ve gerçek/yanlış ayrımı)
 3. "Yumurtalık rezervi düşük olmayan bir hastada boş folikül olursa nasıl yorumlarsınız?" (kaynak: Madani 2015; Jehan 2020)
-- **Onay:** Bekliyor. Yanıt gelmeden makale `status: draft` kalır.
+- **Yanıtlar (2026-10-09):** Üç yanıt tek mesajla geldi; taslağa birebir işlendi (yalnızca kalın vurgular kaldırıldı). **Onay:** Yayın onayı bekleniyor; onay gelene kadar makale `status: draft` kalır.
