@@ -116,7 +116,7 @@ Doğrulama notu (2026-09-29): Search Console `sc-domain:tupbebek.com`, 28 Hazira
 - **SSS 3 — "Galaktoreye hangi ilaçlar neden olur; ilacı kendi başıma bırakabilir miyim?"** İlaç listesi hekim görüşüdür. Gövdedeki #nedenleri listesi (antipsikotik, antidepresan, bulantı ilaçları, tansiyon ilaçları) ile uyumlu; metoklopramid, domperidon ve opioid adları kaynakla ayrıca doğrulanmadı.
 - **Mevcut model yazımı SSS:** Silinmedi; "Diğer Sık Sorulan Sorular" başlığıyla altta kaldı (kural: yayındaki SSS silinmez). Ayrı iş olarak hekim yanıtlarıyla dönüştürülmeli.
 - **Bölüm denetimi:** Kaynak paketi arka planda hazırlandı (Huang ve Molitch 2012, Salzman 2019, ACR 2022, Stiles 2018, Ugwa 2016, Eftekhari 2008; kaynakların çoğu yalnız özet düzeyinde okundu). Bağımsız, metni yazmayan ajan iddia–kaynak denetimi yapıldı; 4 orta bulgu (dopamin agonisti niteleyicisi, tablo/akıntı tanımı, kapak paragrafının #tedavi'ye taşınması, kaynaksız gebelik cümlesi) uygulandı. Doğrulanamayanlar metne alınmadı: toplumda galaktore sıklığı, nedenlerin yüzde dağılımı, kabergolinin galaktoreyi azaltma oranı, gebelikte/emzirme sonrası salgı süresi.
-- **Onay:** Bekliyor (makale metniyle birlikte gösterilecek).
+- **Onay:** Dr. Aksoy üç yanıtı 2026-10-08'de gönderdi; yanıtlar PR #311 ile yayında (kayıt 2026-10-09'da güncellendi).
 
 ### luteal-faz (tr) — üç SSS sorusu ve `expertContribution`; yanıt tarihi 2026-10-08 (B grubu Paket 3)
 
@@ -877,3 +877,9 @@ Dış okur değerlendirmesinden sonra gövdeye hekim sesi eklemek için sorulan 
 2. "Tüp bebekte ikiz gebelik neden daha riskli kabul ediliyor; erken doğum ve bebeğin sağlığı açısından en önemli risk nedir?" (arama verisi: "ikiz gebelik riskleri" türü ifadeler; kaynak: ESHRE 2024, Yuan 2026)
 3. "Erken ultrasonda iki kese görülüp biri kaybolursa (vanişing twin) ne yapılır, kalan bebek için izlem nasıl planlanır?" (kaynak: Zhou 2020, Bereczki 2026)
 - **Onay:** Dr. Aksoy tıbbi onayını 2026-10-09'da verdi; makale `published` olarak hazırlandı (merge bekliyor).
+
+**Boş folikül (empty follicle syndrome) soru verisi (2026-10-09):** Yeni taslak `tup-bebekte-bos-folikul` (draft). Arama verisi: "boş folikül sendromu kadınlar kulübü" (39 gösterim, konum 8,7), "boş yumurta" (22 gösterim, konum 7,5); eski `/blog/tup-bebek-tedavisinde-bos-folikul-sendromu/` Nisan öncesi 453 gösterim, 5 tık; bugün `/makaleler/ivf-protokolleri/` hedefinde. Kaynak paketi: `kaynak-paketi-cogul-gebelik-ve-bos-folikul-2026-10-09.md` (F1–F4). Sorulacak sorular (en fazla üç, hekim onayı bekleniyor):
+1. "Boş folikül sendromu gerçekten var mı; yumurta toplamada hiç yumurta çıkmaması ne anlama gelir?" (arama verisi: "boş folikül sendromu", "boş yumurta")
+2. "Yumurta toplamada hiç yumurta çıkmazsa, bir sonraki denemede önce neye bakarsınız?" (kaynak: Revelli 2017 — tetik zamanlaması ve gerçek/yanlış ayrımı)
+3. "Yumurtalık rezervi düşük olmayan bir hastada boş folikül olursa nasıl yorumlarsınız?" (kaynak: Madani 2015; Jehan 2020)
+- **Yanıtlar (2026-10-09):** Üç yanıt tek mesajla geldi; taslağa birebir işlendi (yalnızca kalın vurgular kaldırıldı). **Onay:** Yayın onayı bekleniyor; onay gelene kadar makale `status: draft` kalır.
