@@ -997,6 +997,23 @@
       "height": 720
     }
   ],
+  "/images/makaleler/pelvik-inflamatuvar-hastalik-toa.webp": [
+    {
+      "src": "/generated/article-heroes/makaleler-pelvik-inflamatuvar-hastalik-toa-w640.webp",
+      "width": 640,
+      "height": 360
+    },
+    {
+      "src": "/generated/article-heroes/makaleler-pelvik-inflamatuvar-hastalik-toa-w960.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "src": "/generated/article-heroes/makaleler-pelvik-inflamatuvar-hastalik-toa-w1280.webp",
+      "width": 1280,
+      "height": 720
+    }
+  ],
   "/images/makaleler/pgt-a-bas-editor-kosesi.webp": [
     {
       "src": "/generated/article-heroes/makaleler-pgt-a-bas-editor-kosesi-w640.webp",

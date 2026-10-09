@@ -325,5 +325,10 @@
     "qid": "Q2363481",
     "label": "luteal phase",
     "wikipedia": "https://en.wikipedia.org/wiki/Luteal_phase"
+  },
+  "pelvik-inflamatuvar-hastalik-toa": {
+    "qid": "Q558070",
+    "label": "pelvic inflammatory diseases",
+    "wikipedia": "https://en.wikipedia.org/wiki/Pelvic_inflammatory_disease"
   }
 }
