@@ -97,6 +97,7 @@ export const navigationMenus: MegaMenuConfig[] = [
       { label: 'Taze vs Dondurulmuş Transfer', href: '/makaleler/taze-dondurulmus-transfer/', description: 'Hangi yöntem daha başarılı?' },
       { label: 'Tüp Bebekte Çoğul Gebelik', href: '/makaleler/tup-bebekte-coklu-gebelik/', description: 'İkiz riski ve tek embriyo transferi' },
       { label: 'Kaç Yumurta Gerekir?', href: '/makaleler/kac-yumurta-gerekir/', description: 'Optimum yumurta sayısı' },
+      { label: 'Boş Folikül (EFS)', href: '/makaleler/tup-bebekte-bos-folikul/', description: 'Yumurta toplamada hiç yumurta çıkmaması' },
       { label: 'İlaç Rehberi', href: '/ilac-rehberi/', description: 'Gonadotropinler, GnRH' },
       { label: 'Doğurganlığı Koruma', href: '/fertilite-koruma/', description: 'Yumurta/sperm dondurma' },
       { label: 'Başarı Oranları', href: '/basari-oranlari/', description: 'Veri şeffaflığı' },

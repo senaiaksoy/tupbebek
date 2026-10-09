@@ -121,6 +121,7 @@ const treatmentSlugs = new Set([
   'iui-nedir',
   'ivf-oncesi-histeroskopi',
   'ivf-protokolleri',
+  'tup-bebekte-bos-folikul',
   'kanser-ve-fertilite',
   'pgt-cinsiyet-secimi',
   'pgt-m',
