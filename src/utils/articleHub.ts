@@ -108,7 +108,8 @@ const transferSlugs = new Set([
   'embryoglue-faydalari',
   'era-testi-iluzyon',
   'laboratuvar-raporu-yorumlama',
-  'taze-dondurulmus-transfer'
+  'taze-dondurulmus-transfer',
+  'tup-bebekte-coklu-gebelik'
 ]);
 
 const treatmentSlugs = new Set([
