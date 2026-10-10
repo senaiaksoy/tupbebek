@@ -353,4 +353,5 @@ npm run build        # Uretim build + Pagefind indexing
 npm run preview      # Build onizleme
 node scripts/generate-pdf.js    # E-kitap PDF olusturma
 node scripts/convert-to-webp.mjs # Toplu WebP donusum
+npm run verify:readability -- <slug>  # Okunabilirlik raporu (her makale isinde; AGENTS.md "Okunabilirlik ve kanıt kutusu")
 ```
