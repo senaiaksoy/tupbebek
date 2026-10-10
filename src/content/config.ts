@@ -70,6 +70,8 @@ const expertContributionSchema = z.object({
   authorUrl: z.string().url().optional(),
   answeredAt: z.date(),
   approvalStatus: z.literal('approved'),
+  // false: kayıt editoryal arşivde kalır, kutu sayfada gösterilmez (yanıt gövdede hekim sesiyle yer alıyorsa).
+  showBox: z.boolean().optional(),
 });
 
 // Dr. Aksoy dışındaki hekimlerin makaleye imzalı kısa görüşü. Yalnızca metnin

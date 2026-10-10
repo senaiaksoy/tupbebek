@@ -201,7 +201,7 @@ const heroSrcSet = getResponsiveImageSrcSet(sanitizedImage);
                     </KisaCevap>
                 )}
 
-                    {expertContributionInOpening && entry.data.expertContribution && entry.data.expertContribution.approvalStatus === 'approved' && (
+                    {expertContributionInOpening && entry.data.expertContribution && entry.data.expertContribution.approvalStatus === 'approved' && entry.data.expertContribution.showBox !== false && (
                         <div data-pagefind-body>
                         <DoctorNote
                           title={entry.data.expertContribution.title}
@@ -281,7 +281,7 @@ const heroSrcSet = getResponsiveImageSrcSet(sanitizedImage);
                         <Content />
                     </div>
 
-                    {!expertContributionInOpening && entry.data.expertContribution && entry.data.expertContribution.approvalStatus === 'approved' && (
+                    {!expertContributionInOpening && entry.data.expertContribution && entry.data.expertContribution.approvalStatus === 'approved' && entry.data.expertContribution.showBox !== false && (
                         <DoctorNote
                           title={entry.data.expertContribution.title}
                           topic={entry.data.category}
