@@ -31,13 +31,18 @@ const WORD = /[\p{L}0-9%][\p{L}0-9’'%,\-]*/gu;
 function clean(s) {
   return s
     .replace(/^import .*$/gm, ' ')
+    // Tablolar karşılaştırma için önerilen biçimdir; cümle gibi puanlanmaz.
+    .replace(/^\s*\|.*\|\s*$/gm, '\n')
+    // Noktasız liste maddesi kendi başına bir cümledir.
+    .replace(/^(\s*(?:[-*]|\d+\.)\s+.*?)[,;]?\s*$/gm, (m, item) => (/[.!?:]$/.test(item) ? item : item + '.') + '\n\n')
+    .replace(/<figure[\s\S]*?<\/figure>/g, ' ')
     .replace(/<InlineEvidence[^>]*\/>/g, ' ')
     .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
     .replace(/<[^>]+>/g, ' ')
     .replace(/\(\s*(?:[A-ZÇĞİÖŞÜ][\p{L}\-]+(?: ve ark\.)? \d{4}[a-z]?(?:,\s*)?)+\s*\)/gu, ' ')
     .replace(/\(\s*(?:ESHRE|NICE|ACOG|ASRM|WHO|CDC)[^)]*\)/g, ' ')
     .replace(/[*#>|`]/g, ' ')
-    .replace(/^\s*(?:[-\d]+\.?)\s+/gm, ' ');
+    .replace(/^[ \t]*(?:[-\d]+\.?)[ \t]+/gm, ' ');
 }
 
 function sentences(text) {
@@ -77,7 +82,10 @@ function parse(file) {
     editorial = body.slice(0, faqStart) + body.slice(faqStart + faq.length);
   }
   editorial = editorial.replace(/^## İçindekiler[\s\S]*?(?=<div)/m, ' ');
-  return { body, summary, expert, faq, editorial };
+  // "Kanıt kutusu" isteğe bağlı ayrıntı katmanıdır: ayrı ölçülür, gövde hedefine katılmaz.
+  const box = [...editorial.matchAll(/<Accordion title="Kanıt kutusu[^"]*">([\s\S]*?)<\/Accordion>/g)].map((m) => m[1]).join('\n\n');
+  editorial = editorial.replace(/<Accordion title="Kanıt kutusu[^"]*">[\s\S]*?<\/Accordion>/g, ' ');
+  return { body, summary, expert, faq, editorial, box };
 }
 
 const fmt = (r) => r ? `BY ${r.by.toFixed(1)} | Ateşman ${r.atesman.toFixed(1)} | ${r.avgWords.toFixed(1)} kel/cümle | 25+: ${r.long.length}` : '—';
@@ -93,6 +101,7 @@ function report(slug) {
   console.log(`  Editoryal gövde    ${fmt(bodyR)} | nötr BY ${bodyN?.by.toFixed(1)}`);
   if (a.faq) console.log(`  Hekim SSS (dokunulmaz)  ${fmt(score(sentences(a.faq)))}`);
   if (a.expert) console.log(`  Uzman kutusu (dokunulmaz) ${fmt(score(sentences(a.expert)))}`);
+  if (a.box) console.log(`  Kanıt kutusu (gövde hedefine katılmaz) ${fmt(score(sentences(a.box)))}`);
   if (sumN && sumN.by > TARGET.summaryNeutral) warn.push(`Özet nötr BY ${sumN.by.toFixed(1)} > ${TARGET.summaryNeutral}`);
   if (bodyN && bodyN.by > TARGET.bodyNeutral) warn.push(`Gövde nötr BY ${bodyN.by.toFixed(1)} > ${TARGET.bodyNeutral}`);
   if (bodyR && (bodyR.avgWords < TARGET.minAvgWords || bodyR.avgWords > TARGET.maxAvgWords)) warn.push(`Ortalama cümle ${bodyR.avgWords.toFixed(1)} kelime (hedef ${TARGET.minAvgWords}–${TARGET.maxAvgWords})`);
@@ -102,7 +111,7 @@ function report(slug) {
     if (m[1] === 'faq') continue;
     const n = score(sentences(m[3]), true);
     if (!n) continue;
-    const outside = m[3].replace(/<Accordion[\s\S]*?<\/Accordion>/g, '');
+    const outside = m[3].replace(/<Accordion[\s\S]*?<\/Accordion>/g, '').replace(/^\s*\|.*\|\s*$/gm, '');
     const cites = Math.max(0, ...outside.split(/\n\s*\n|\n(?=\s*[-\d]+\.?\s)/).map((p) =>
       new Set(p.match(/\]\(https?:\/\/(?:pubmed|doi|www\.nice|academic|www\.cochrane)[^)]*\)/g) || []).size));
     const flag = [n.by > TARGET.sectionNeutral ? 'zor' : '', cites >= TARGET.citationsPerParagraphOutsideBox ? `bir paragrafta ${cites} çalışma → kanıt kutusu?` : ''].filter(Boolean).join(', ');
