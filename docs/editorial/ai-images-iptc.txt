@@ -86,6 +86,8 @@ public/images/makaleler/hiperprolaktinemi-sabah-degerlendirme.webp
 public/images/makaleler/hiperprolaktinemi-ve-kisirlik.webp
 public/images/makaleler/histeroskopi-intrauterin-bulgular-mobil.webp
 public/images/makaleler/histeroskopi-intrauterin-bulgular.webp
+public/images/makaleler/hormonal-tedavi-adenomyozis-diffuz-fokal-mobil.webp
+public/images/makaleler/hormonal-tedavi-adenomyozis-diffuz-fokal.webp
 public/images/makaleler/hormonal-tedavi-adenomyozis.webp
 public/images/makaleler/imsi-picsi-macs-sperm-secimi.webp
 public/images/makaleler/istanbul-tup-bebek-doktoru-hazirlik-yurusu.webp
