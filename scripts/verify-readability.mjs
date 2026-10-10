@@ -70,9 +70,17 @@ function score(ss, neutral = false) {
 function parse(file) {
   const t = readFileSync(file, 'utf8');
   const end = t.indexOf('\n---', 4);
-  const fm = t.slice(0, end), body = t.slice(end + 4);
+  const fm = t.slice(0, end);
+  // Markdown "## Başlık" bölümleri de <h2 id> gibi ele alınır; hekim SSS başlığı "faq" sayılır.
+  const slugify = (s) => s.toLocaleLowerCase('tr').replace(/[^\p{L}\p{N}]+/gu, '-').replace(/^-|-$/g, '');
+  const body = t.slice(end + 4)
+    // İçindekiler ve ilgili makale listeleri düzyazı değildir; ölçülmez.
+    .replace(/^## İçindekiler[\s\S]*?(?=^## |<div|<h2)/m, ' ')
+    .replace(/^## (?:İlgili|Benzer|Kaynaklar)[^\n]*\n[\s\S]*?(?=^## |<h2|<div|(?![\s\S]))/gm, ' ')
+    .replace(/^## +(.+)$/gm, (m, title) =>
+      `<h2 id="${/Dr\. Aksoy'a en sık sorulan sorular/i.test(title) ? 'faq' : slugify(title)}">${title}</h2>`);
   const summary = (fm.match(/^summary: "(.*)"$/m) || [])[1] || '';
-  const expert = (fm.match(/^  text: \|-\n((?: {4}.*\n|\n)+?)  \w/m) || [])[1] || '';
+  const expert = (fm.match(/^  text: [|>]-?\n((?: {4}.*\n|\n)+?)  \w/m) || [])[1] || '';
   const faqStart = body.indexOf('<h2 id="faq">');
   let faq = '', editorial = body;
   if (faqStart >= 0) {
@@ -112,7 +120,7 @@ function report(slug) {
     const n = score(sentences(m[3]), true);
     if (!n) continue;
     const outside = m[3].replace(/<Accordion[\s\S]*?<\/Accordion>/g, '').replace(/^\s*\|.*\|\s*$/gm, '');
-    const cites = Math.max(0, ...outside.split(/\n\s*\n|\n(?=\s*[-\d]+\.?\s)/).map((p) =>
+    const cites = Math.max(0, ...outside.split(/\n\s*\n|\n(?=\s*(?:[-*]|\d+\.)\s)/).map((p) =>
       new Set(p.match(/\]\(https?:\/\/(?:pubmed|doi|www\.nice|academic|www\.cochrane)[^)]*\)/g) || []).size));
     const flag = [n.by > TARGET.sectionNeutral ? 'zor' : '', cites >= TARGET.citationsPerParagraphOutsideBox ? `bir paragrafta ${cites} çalışma → kanıt kutusu?` : ''].filter(Boolean).join(', ');
     console.log(`    ${m[1].padEnd(26)} nötr BY ${n.by.toFixed(1).padStart(5)} | ${n.avgWords.toFixed(1)} kel/cümle${flag ? '  ⚠ ' + flag : ''}`);
