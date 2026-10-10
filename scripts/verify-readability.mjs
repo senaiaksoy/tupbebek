@@ -12,8 +12,8 @@ const TARGET = {
   bodyNeutral: 12, // Bezirci–Yılmaz, hastalık/ilaç adları nötrlenmiş gövde
   summaryNeutral: 12, // ilk ekran özeti
   sectionNeutral: 14, // tek bölüm
-  minAvgWords: 8, // aşırı kesik ritim uyarısı (stil rehberi: cümle uzunluğu çeşitlenmeli)
-  maxAvgWords: 18,
+  minAvgWords: 10, // stil rehberi: ortalama 10–16 kelime (2026-10-10 kararı)
+  maxAvgWords: 16,
   longSentence: 25,
   citationsPerParagraphOutsideBox: 3, // aynı paragrafta/maddede arka arkaya sıralanan çalışma
 };
