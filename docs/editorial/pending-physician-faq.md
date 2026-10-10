@@ -41,6 +41,13 @@ Doğrulama notu (2026-09-29): Search Console `sc-domain:tupbebek.com`, 28 Hazira
 
 ## Yanıtlanan sorular (editoryal kayıt)
 
+### hormonal-tedavi-adenomyozis (tr) — yayın sonrası üç küçük düzeltme; 2026-10-10
+
+- Okur notu (PR #337 sonrası) Dr. Aksoy'a sunuldu; yanıtı: "1 onaylıyorum, 2 için b".
+- **Kemik sağlığı paragrafı:** "Adenomyoziste de aynı ilaçlar kullanıldığı için hekiminiz benzer bir önlem düşünebilir." → "Ben adenomyoziste de iğnenin yanına destek hormon eklerim." (Dr. Aksoy onayı; #ne-zaman'daki "Yanına destek hormon (add-back) eklerim" sözüyle tutarlı.)
+- **Ağızdan GnRH antagonistleri cümlesi silindi** (seçenek b). "Türkiye'de bulunmuyor" gerekçesi eklenmedi; gerekçe hekime ait olmalı.
+- **Progestin listesi:** etiketsiz "Tüp bebekten önce hormonlu spiral…" maddesi hormonlu spiral maddesinin devamına alındı; metin değişmedi.
+
 ### hormonal-tedavi-adenomyozis (tr) — Dr. Aksoy'un yeniden yazdığı bölümler; 2026-10-10 (dördüncü güncelleme)
 
 - **Kaynak ve onay:** Dr. Aksoy'un kendi belgesi "Adenomyozis makalesi yeniden yazılan bölümler" (10 Ekim 2026). Sohbette onayı: "kendi sözlerim, belgedeki yeni hâl geçerli, hepsini uygula". Belgedeki metin aynen girdi; yalnız düz tırnaklar sitedeki tipografik tırnağa çevrildi.
