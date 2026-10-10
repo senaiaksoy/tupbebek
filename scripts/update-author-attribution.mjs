@@ -13,7 +13,7 @@ const ARTICLES_DIR = path.resolve('./src/content/articles');
 const TODAY = '2026-05-11';
 
 const NEW_AUTHOR = 'Doç. Dr. Senai Aksoy';
-const NEW_AUTHOR_TITLE = 'Kadın Hastalıkları ve Doğum Uzmanı';
+const NEW_AUTHOR_TITLE = 'Kadın Hastalıkları, Doğum ve Üreme Tıbbı Uzmanı';
 const NEW_AUTHOR_CREDENTIALS = 'Üreme Tıbbı ve Yardımcı Üreme Teknikleri';
 const NEW_AUTHOR_YOUTUBE = 'https://www.youtube.com/@DocentDrSenaiAksoy';
 const NEW_REVIEWER = 'tupbebek.com Tıbbi Danışma Kurulu';

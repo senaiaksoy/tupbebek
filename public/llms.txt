@@ -11,7 +11,7 @@
 
 ## Yazar Kimliği
 
-- Baş Editör: **Doç. Dr. Senai Aksoy** — Kadın Hastalıkları ve Doğum Uzmanı, Üreme Tıbbı ve Yardımcı Üreme Teknikleri. Cerrahpaşa Tıp Fakültesi (1985), Franche-Comté Üniversitesi Üreme Tıbbı diploması, Türkiye'deki ilk ICSI uygulamalarının (1994) katılımcısı. ESHRE ve TSRM üyesi.
+- Baş Editör: **Doç. Dr. Senai Aksoy** — Kadın Hastalıkları, Doğum ve Üreme Tıbbı Uzmanı; Yardımcı Üreme Teknikleri. Cerrahpaşa Tıp Fakültesi (1985), Franche-Comté Üniversitesi Üreme Tıbbı diploması, Türkiye'deki ilk ICSI uygulamalarının (1994) katılımcısı. ESHRE ve TSRM üyesi.
 - YouTube kanalı: [Doç. Dr. Senai Aksoy](https://www.youtube.com/@DocentDrSenaiAksoy)
 - Makaleler JSON-LD `Article` şeması kullanır. `author`, `reviewedBy` ve doğrudan kaynak kimlikleri yalnızca ilgili makalede açıkça kayıtlıysa yayımlanır.
 

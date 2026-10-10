@@ -234,7 +234,7 @@ expertContribution:
   question: "Bu konuda klinik kararı en çok hangi bulgu değiştirir?"
   text: "Dr. Aksoy'un verdiği ve onayladığı yanıt"
   author: "Doç. Dr. Senai Aksoy"
-  authorTitle: "Kadın Hastalıkları ve Doğum Uzmanı"
+  authorTitle: "Kadın Hastalıkları, Doğum ve Üreme Tıbbı Uzmanı"
   authorUrl: "https://tupbebek.com/yazar/senai-aksoy/"
   answeredAt: 2026-04-01
   approvalStatus: "approved"
