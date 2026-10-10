@@ -1145,6 +1145,23 @@
       "height": 720
     }
   ],
+  "/images/makaleler/tup-bebekte-bos-folikul.webp": [
+    {
+      "src": "/generated/article-heroes/makaleler-tup-bebekte-bos-folikul-w640.webp",
+      "width": 640,
+      "height": 360
+    },
+    {
+      "src": "/generated/article-heroes/makaleler-tup-bebekte-bos-folikul-w960.webp",
+      "width": 960,
+      "height": 540
+    },
+    {
+      "src": "/generated/article-heroes/makaleler-tup-bebekte-bos-folikul-w1280.webp",
+      "width": 1280,
+      "height": 720
+    }
+  ],
   "/images/makaleler/tup-bebekte-coklu-gebelik.webp": [
     {
       "src": "/generated/article-heroes/makaleler-tup-bebekte-coklu-gebelik-w640.webp",
