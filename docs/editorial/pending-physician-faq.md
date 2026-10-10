@@ -66,6 +66,11 @@ Doğrulama notu (2026-09-29): Search Console `sc-domain:tupbebek.com`, 28 Hazira
 
 **Durum:** Dr. Aksoy 2026-10-10'da seçenekli soruda "İfadeler bana ait, onaylıyorum" seçeneğiyle düzenlenmiş karşılıkların görünür kullanımını onayladı. Aynı gün "Tabloyu kaldır" ve kardeş makalelerdeki iki kayıtlı yanıt için "Hayır, üç soru yeterli" seçeneklerini seçti. Bu kayıt merge, deploy veya canlı yayın doğrulaması değildir.
 
+**Aynı gün sonraki kararlar (2026-10-10, Dr. Aksoy: "gövdeye hamdan verisi ekle 2ci görsel kalsın b kanıt doğru"):**
+- `#etki` bölümüne Hamdan ve ark. 2015 sonucu sade dille eklendi: canlı doğum benzer, toplanan yumurta daha az, siklus iptali daha sık, IVF öncesi kist ameliyatı canlı doğumu değiştirmedi; kanıtın sınırlılığı (az çalışma, çoğu geriye dönük) belirtildi. Tek kaynak olduğu için kanıt kutusu açılmadı (AGENTS.md). "Canlı doğum" tanımı bu ilk gövde kullanımına taşındı.
+- İkinci gövde görseli (`endometriozis-dinlenme-yansima.webp`) yerinde kalır; dış değerlendirmedeki "süs görsel" bulgusu bu kararla kapandı.
+- `recommendationGrade: B` doğru kabul edildi; değişmedi.
+
 ### hormonal-tedavi-adenomyozis (tr) — yayın sonrası üç küçük düzeltme; 2026-10-10
 
 - Okur notu (PR #337 sonrası) Dr. Aksoy'a sunuldu; yanıtı: "1 onaylıyorum, 2 için b".
