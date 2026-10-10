@@ -90,10 +90,14 @@ function parse(file) {
     editorial = body.slice(0, faqStart) + body.slice(faqStart + faq.length);
   }
   editorial = editorial.replace(/^## İçindekiler[\s\S]*?(?=<div)/m, ' ');
+  // Gövdedeki hekim metni (data-voice="hekim") hekimin kendi sözüdür: ayrı ölçülür, skor için değiştirilmez.
+  const voiceRe = /<div[^>]*data-voice="hekim"[^>]*>([\s\S]*?)<\/div>/g;
+  const voice = [...editorial.matchAll(voiceRe)].map((m) => m[1]).join('\n\n');
+  editorial = editorial.replace(voiceRe, ' ');
   // "Kanıt kutusu" isteğe bağlı ayrıntı katmanıdır: ayrı ölçülür, gövde hedefine katılmaz.
   const box = [...editorial.matchAll(/<Accordion title="Kanıt kutusu[^"]*">([\s\S]*?)<\/Accordion>/g)].map((m) => m[1]).join('\n\n');
   editorial = editorial.replace(/<Accordion title="Kanıt kutusu[^"]*">[\s\S]*?<\/Accordion>/g, ' ');
-  return { body, summary, expert, faq, editorial, box };
+  return { body, summary, expert, faq, editorial, box, voice };
 }
 
 const fmt = (r) => r ? `BY ${r.by.toFixed(1)} | Ateşman ${r.atesman.toFixed(1)} | ${r.avgWords.toFixed(1)} kel/cümle | 25+: ${r.long.length}` : '—';
@@ -109,6 +113,7 @@ function report(slug) {
   console.log(`  Editoryal gövde    ${fmt(bodyR)} | nötr BY ${bodyN?.by.toFixed(1)}`);
   if (a.faq) console.log(`  Hekim SSS (dokunulmaz)  ${fmt(score(sentences(a.faq)))}`);
   if (a.expert) console.log(`  Uzman kutusu (dokunulmaz) ${fmt(score(sentences(a.expert)))}`);
+  if (a.voice) console.log(`  Gövdedeki hekim metni (dokunulmaz) ${fmt(score(sentences(a.voice)))}`);
   if (a.box) console.log(`  Kanıt kutusu (gövde hedefine katılmaz) ${fmt(score(sentences(a.box)))}`);
   if (sumN && sumN.by > TARGET.summaryNeutral) warn.push(`Özet nötr BY ${sumN.by.toFixed(1)} > ${TARGET.summaryNeutral}`);
   if (bodyN && bodyN.by > TARGET.bodyNeutral) warn.push(`Gövde nötr BY ${bodyN.by.toFixed(1)} > ${TARGET.bodyNeutral}`);
@@ -116,7 +121,7 @@ function report(slug) {
 
   console.log('  Bölümler:');
   for (const m of a.body.matchAll(/<h2 id="([^"]+)">([^<]+)<\/h2>([\s\S]*?)(?=<h2 id=|$)/g)) {
-    if (m[1] === 'faq') continue;
+    if (m[1] === 'faq' || (a.voice && a.voice.includes(`id="${m[1]}"`))) continue;
     const n = score(sentences(m[3]), true);
     if (!n) continue;
     const outside = m[3].replace(/<Accordion[\s\S]*?<\/Accordion>/g, '').replace(/^\s*\|.*\|\s*$/gm, '');
